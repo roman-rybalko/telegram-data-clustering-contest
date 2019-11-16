@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://9to5google.com/2019/11/05/google-app-10-83-apk-insight-teardown/"/>
+    <meta property="og:site_name" content="9to5Google"/>
+    <meta property="article:published_time" content="2019-11-05T19:09:00+00:00"/>
+    <meta property="og:title" content="Google app 10.83 preps in-app browser, Voice Match for Assistant headphones [APK Insight]"/>
+    <meta property="og:description" content="The latest beta version of the Google app rolled out last night and it continues work on a handful of features. Google app 10.83..."/>
+  </head>
+  <body>
+    <article>
+      <h1>Google app 10.83 preps in-app browser, Voice Match for Assistant headphones [APK Insight]</h1>
+      <address><time datetime="2019-11-05T19:09:00+00:00">05 Nov 2019, 19:09</time> by <a rel="author" href="https://9to5google.com/author/technacity/" target="_blank">Abner Li</a></address>
+      <p>The latest beta version of the Google app rolled out last night and it continues work on a handful of features. Google app 10.83 provides our first look at the in-app browser and an early user interface for it. Elsewhere, there’s development on AR features and Voice Match for Assistant headphones.</p>
+      <p><b>About APK Insight</b>: In this “APK Insight” post, we’ve decompiled the latest version of an application that Google uploaded to the Play Store. When we decompile these files (called APKs, in the case of Android apps), we’re able to see various lines of code within that hint at possible future features. Keep in mind that Google may or may not ever ship these features, and our interpretation of what they are may be imperfect. We’ll try to enable those that are closer to being finished, however, to show you how they’ll look in the case that they do ship. With that in mind, read on.</p>
+      <h3>Voice Match on Assistant headphones</h3>
+      <p>Ahead of the <a href="https://9to5google.com/2019/10/15/pixel-buds-hands-on-video/">new Pixel Buds</a> launching in 2020, the Google app is readying support. There’s a new string about enabling Voice Match to authenticate you with “Hey Google.” This allows for Assistant commands even when your phone is locked. The setting interestingly <a href="https://9to5google.com/2019/10/10/pixel-buds-hey-google-hotword/">appeared last month</a> on the original Pixel Buds, but was never active.</p>
+      <blockquote>&lt;string name=”bisto_hotword_speaker_id_pref_summary”&gt;Setup Voice Match to access your Assistant with your voice, even when your phone is locked&lt;/string&gt;</blockquote>
+      <slideshow>
+        <figure>
+          <img src="https://9to5google.com/wp-content/uploads/sites/4/2019/11/google-app-10-83-pixel-buds.png"/>
+          <figcaption>Current</figcaption>
+        </figure>
+        <figure>
+          <img src="https://9to5google.com/wp-content/uploads/sites/4/2019/10/Screenshot_20191010-091543.jpg?quality=82&amp;strip=all"/>
+          <figcaption>Upcoming</figcaption>
+        </figure>
+      </slideshow>
+      <h3>Assistant settings page</h3>
+      <p>In Android 10, there is a dedicated page for Assistant in settings. Google app 10.83 tweaks the cover graphic on all devices except the Pixel 4, which is still using the old version. The new design is a nod to how the <a href="https://9to5google.com/2019/10/25/pixel-4-new-assistant-review/">new Google Assistant</a> is more compact and might signal wider availability down the road.</p>
+      <slideshow>
+        <figure>
+          <img src="https://9to5google.com/wp-content/uploads/sites/4/2019/11/google-app-10-83-assistant-page-p4.png"/>
+          <figcaption>Old</figcaption>
+        </figure>
+        <figure>
+          <img src="https://9to5google.com/wp-content/uploads/sites/4/2019/11/google-app-10-83-assistant-page-new.png"/>
+          <figcaption>New</figcaption>
+        </figure>
+      </slideshow>
+      <h3>AR: Occlusion and scale</h3>
+      <p>Google Search has augmented reality capabilities that let you view <a href="https://9to5google.com/2019/05/31/google-search-ar-animals/">life-sized animals</a>. Announced at I/O 2019, AR in Search is part of Google’s belief that the “easiest way to wrap your head around new information is to see it.” New strings make reference to occlusion, or virtual objects being hidden by real world items in the environment. This could aid in making more immersive experience.</p>
+      <blockquote>&lt;string name=”occlusion_popup_title”&gt;Occlusion&lt;/string&gt;<br/>&lt;string name=”occlusion_popup_content”&gt;”The object hides behind real world\nthings.”&lt;/string&gt;</blockquote>
+      <p>Another string describes how some AR objects — presumably from third-parties — cannot be shrunk down or expanded by pinching.</p>
+      <blockquote>&lt;string name=”scaling_disabled_notification”&gt;Object can only be viewed in true scale&lt;/string&gt;</blockquote>
+      <slideshow>
+        <figure>
+          <img src="https://9to5google.com/wp-content/uploads/sites/4/2019/05/google-search-ar-animals-4.png"/>
+        </figure>
+        <figure>
+          <img src="https://9to5google.com/wp-content/uploads/sites/4/2019/05/google-search-ar-animals-2.png"/>
+        </figure>
+        <figure>
+          <img src="https://9to5google.com/wp-content/uploads/sites/4/2019/05/google-search-ar-animals-1.png"/>
+        </figure>
+      </slideshow>
+      <h3>Google app browser</h3>
+      <p>Back in August, we spotted work on a “<a href="https://9to5google.com/2019/08/09/google-app-10-41-apk-insight-teardown/">Google app browser</a>” that looked to replace the current Chrome Custom Tab used to open Discover articles and Search results.</p>
+      <p>We’ve enable an early look at the interface. The app bar features a close button to the left, while sharing is prominently positioned and the overflow menu currently house three actions: Refresh, Open in browser, and Settings. The latter looks like what we enabled before with the new additions (listed below) not yet visible. In the center is the domain and lock icon to denote HTTPS status, while that blue highlight visible is the progress loading indicator.</p>
+      <slideshow>
+        <figure>
+          <img src="https://9to5google.com/wp-content/uploads/sites/4/2019/11/google-app-10-83-chrome-custom-tab.png"/>
+          <figcaption>Chrome Custom Tab</figcaption>
+        </figure>
+        <figure>
+          <img src="https://9to5google.com/wp-content/uploads/sites/4/2019/11/google-app-10-83-browser.png"/>
+          <figcaption>Upcoming</figcaption>
+        </figure>
+        <figure>
+          <img src="https://9to5google.com/wp-content/uploads/sites/4/2019/08/google-app-10-41-browser.png"/>
+          <figcaption>Upcoming</figcaption>
+        </figure>
+      </slideshow>
+      <p>Google app 10.83 introduces a slew of standard browser preferences.</p>
+      <blockquote>&lt;string name=”google_app_browser_settings_button”&gt;Settings&lt;/string&gt;</blockquote>
+      <blockquote>&lt;string name=”google_app_browser_clear_clearing_in_progress_title”&gt;Clearing data&lt;/string&gt;<br/>&lt;string name=”google_app_browser_clear_confirm_description”&gt;This will delete cookies, form data, saved passwords, site data and settings, and cached images and files&lt;/string&gt;</blockquote>
+      <blockquote>&lt;string name=”google_app_browser_setting_clear_cache_title”&gt;Cached images and files&lt;/string&gt;<br/>&lt;string name=”google_app_browser_setting_clear_cache_summary”&gt;Some sites may load more slowly on your next visit.&lt;/string&gt;</blockquote>
+      <blockquote>&lt;string name=”google_app_browser_setting_clear_data_title”&gt;Cookies and site data&lt;/string&gt;<br/>&lt;string name=”google_app_browser_setting_clear_data_summary”&gt;”Signs you out of most sites. You won’t be signed out of your Google Account.”&lt;/string&gt;</blockquote>
+      <p>Possible features available in the browser’s “context_menu” include shortcuts for copying text, links, and image addresses:</p>
+      <blockquote>&lt;string name=”webx_context_menu_copy_image_address_text”&gt;Copy image address&lt;/string&gt;<br/>&lt;string name=”webx_context_menu_copy_link_address_text”&gt;Copy link address&lt;/string&gt;<br/>&lt;string name=”webx_context_menu_copy_text”&gt;Copy&lt;/string&gt;<br/>&lt;string name=”webx_context_menu_copy_link_text_text”&gt;Copy link text&lt;/string&gt;</blockquote>
+      <p>The Google app looks capable of recognizing numbers to call and opening links in Google Maps when appropriate.</p>
+      <blockquote>&lt;string name=”webx_context_menu_call_number_text”&gt;Call %s&lt;/string&gt;<br/>&lt;string name=”webx_context_menu_open_in_maps_text”&gt;Open in Maps&lt;/string&gt;</blockquote>
+      <p>There will be sharing options, and recognizing what links or images to send.</p>
+      <blockquote>&lt;string name=”webx_share_url”&gt;Share&lt;/string&gt;<br/>&lt;string name=”webx_context_menu_send_email_text”&gt;Send email to %s&lt;/string&gt;<br/>&lt;string name=”webx_context_menu_share_image_address_text”&gt;Share image address&lt;/string&gt;<br/>&lt;string name=”webx_context_menu_share_link_text”&gt;Share link&lt;/string&gt;</blockquote>
+      <p>There are standard browser security warnings like connecting to “not secure” sites.</p>
+      <blockquote>&lt;string name=”webx_not_secure_connection_message_part_1″&gt;Your connection to this site is not secure.&lt;/string&gt;<br/>&lt;string name=”webx_not_secure_connection_message_part_2″&gt;You should not enter any sensitive information on this site (for example passwords or credit cards), because it could be stolen by attackers.&lt;/string&gt;</blockquote>
+      <blockquote>&lt;string name=”webx_secure_connection_message_part_1″&gt;Connection is secure.&lt;/string&gt;<br/>&lt;string name=”webx_secure_connection_message_part_2″&gt;Your information is private when it is sent to this site.&lt;/string&gt;</blockquote>
+      <p>One possible explanation for why the Google app is getting its own browser is feature parity. Google for iOS is basically already a browser, while Google Go has a similar implementation that allows for features like article text-to-speech. We spotted such a “<a href="https://9to5google.com/2019/07/29/google-app-10-33-apk-insight-teardown/">Read it</a>” feature for the Android Google app this July.</p>
+      <h3>How to update?</h3>
+      <p><a href="https://9to5google.com/2018/01/30/how-to-android-app-beta-play-store/">You can sign up</a> for the <a href="https://play.google.com/apps/testing/com.google.android.googlequicksearchbox">Google app’s beta program here</a> or by heading to the <a href="https://play.google.com/store/apps/details?id=com.google.android.googlequicksearchbox">Play Store listing on Android</a> and scrolling to the bottom. The latest beta version of the Google app is immediately rolled out when it’s available.</p>
+      <p>
+        <i>Thanks to <a href="https://www.pnfsoftware.com/?aid=9to5goog">JEB Decompiler</a>, from which some APK Insight teardowns benefit.</i>
+      </p>
+      <p>
+        <i><a href="https://9to5google.com/author/evowizzfr/">Dylan Roussel</a> contributed to this article.</i>
+      </p>
+      <p><i>FTC: We use income earning auto affiliate links.</i> <a href="https://9to5mac.com/about/#affiliate">More.</a></p>
+    </article>
+  </body>
+</html>

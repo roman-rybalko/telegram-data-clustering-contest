@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://www.heise.de/security/meldung/Malware-QSnatch-attackiert-QNAP-Netzwerkspeicher-auch-in-Deutschand-4573483.html"/>
+    <meta property="og:site_name" content="Security"/>
+    <meta property="article:published_time" content="2019-11-01T13:30:00+00:00"/>
+    <meta property="og:title" content="Malware &quot;QSnatch&quot; attackiert QNAP-Netzwerkspeicher – auch in Deutschand"/>
+    <meta property="og:description" content="QSnatch hat es auch hierzulande auf NAS von QNAP abgesehen. Ob ein Firmware-Update hilft, ist unklar – durchführen sollte man es dennoch."/>
+  </head>
+  <body>
+    <article>
+      <h1>Malware "QSnatch" attackiert QNAP-Netzwerkspeicher – auch in Deutschland</h1>
+      <h2>QSnatch hat es auch hierzulande auf NAS von QNAP abgesehen. Ob ein Firmware-Update hilft, ist unklar – durchführen sollte man es dennoch.</h2>
+      <address><time datetime="2019-11-01T13:30:00+00:00">01 Nov 2019, 13:30</time> by <a rel="author">Olivia von Westernhagen</a></address>
+      <p>Das Cyber Emergency Response Team (CERT) der finnischen Transport and Communications Agency (NCSC-FI) hat vergangene Woche eine Malware entdeckt, die Netzwerkspeicher (Network Attached Storages, NAS) des Herstellers QNAP befällt.</p>
+      <p>Der auf den Namen "QSnatch" getaufte Schädling nistet sich laut NCSC-FI dauerhaft auf Geräten ein, indem er deren Firmware modifiziert und künftige Hersteller-Updates verhindert. Weiterhin stiehlt er die Zugangsdaten der NAS, kommuniziert in regelmäßigen Abständen mit einem entfernten Command-and-Control-Server und ist theoretisch in der Lage, weitere Schadfunktionen als Module nachzuladen. Über den initialen Angriffsvektor ist bislang nichts bekannt.</p>
+      <p>Neben dem NCSC-FI warnt auch das CERT des BSI (CERT-Bund) vor QSnatch. In einem Tweet lässt es verlauten, dass derzeit etwa 7000 Geräte in Deutschland betroffen seien.</p>
+      <h3>Firmware-Update als Schutz vor QSnatch?</h3>
+      <p>CERT-Bund schreibt, dass nach aktuellen Erkenntnissen Geräte betroffen seien, die (über eine Port-Weiterleitung) aus dem Internet erreichbar seien und auf denen eine veraltete Firmware-Version laufe. Ähnlich äußert sich auch das finnische CERT in seiner <a href="https://www.kyberturvallisuuskeskus.fi/en/news/qsnatch-malware-designed-qnap-nas-devices">detaillierten QSnatch-Analyse</a>.</p>
+      <p>Die beste Schutzmaßnahme gegen QSnatch dürfte somit sein, <a href="https://www.heise.de/thema/NAS">NAS</a> gar nicht erst über das Internet erreichbar zu machen.</p>
+      <p>Gegen bestehende Infektionen hilft laut NCSC-FI das komplette Zurücksetzen der NAS auf Werkseinstellungen (Factory Reset). Auch ein Update des QNAP-Betriebssystems/Firmware QTS ist in jedem Fall ratsam – ob es allerdings bestehende Infektionen behebt, ist laut NCSC-FI bislang unklar: "NCSC-FI has not been able to confirm whether the update actually removes the malware, and this is also acknowledged by the manufacturer", heißt es in der Analyse. Ebenso wenig geht aus der Veröffentlichung des NCSC-FI hervor, ob das Update helfen kann, Infektionen von vornherein zu verhindern.</p>
+      <p>Einem <a href="https://www.qnap.com/en/security-advisory/nas-201902-13">Security Advisory von QNAP,</a> das allerdings schon von Februar dieses Jahres stammt und sehr allgemein auf Malwarebefall unter QTS abzielt, können NAS-Besitzer Angaben zu den aktuellen QTS-Versionen sowie eine Installationsanleitung entnehmen.</p>
+      <h3>Zusatzmaßnahmen nach der Infektion</h3>
+      <p>Im Anschluss an die Bereinigung eines Gerätes rät das finnische Forscherteam dazu,</p>
+      <ul>
+        <li>die Passwörter aller Accounts des NAS zu ändern,</li>
+        <li>unbekannte Nutzeraccounts zu entfernen</li>
+        <li>neben der Firmware auch alle Anwendungen zu aktualisieren,</li>
+        <li>unbekannte Anwendungen zu löschen,</li>
+        <li>den QNAP MalwareRemover zu installieren und</li>
+        <li>eine Zugangskontrolliste für das Gerät zu erstellen (Control panel -&gt; Security -&gt; Security level).</li>
+      </ul>
+      <p>Sofern Gerätebesitzer weitere Unterstützung benötigen, können sie <a href="https://www.qnap.com/en/support-ticket/">den QNAP-Support kontaktieren</a>.</p>
+      <p><b>Update 01.11.2019, 14:20:</b> Rechtschreib- und Logikfehler korrigiert. Danke für die Hinweise! (<a href="mailto:ovw@heise.de">ovw</a>)</p>
+    </article>
+  </body>
+</html>

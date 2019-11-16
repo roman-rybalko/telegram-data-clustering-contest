@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://www.bleepingcomputer.com/news/security/bluekeep-remote-code-execution-bug-in-rdp-exploited-en-masse/"/>
+    <meta property="og:site_name" content="BleepingComputer"/>
+    <meta property="article:published_time" content="2019-11-03T02:26:55+00:00"/>
+    <meta property="og:title" content="BlueKeep Remote Code Execution Bug in RDP Exploited En Masse"/>
+    <meta property="og:description" content="The BlueKeep remote code execution vulnerability in the Windows Remote Desktop Services is currently exploited in the wild. Vulnerable machines exposed to the web are apparently compromised for cryptocurrency mining purposes."/>
+  </head>
+  <body>
+    <article>
+      <h1>BlueKeep Remote Code Execution Bug in RDP Exploited En Masse</h1>
+      <address><time datetime="2019-11-03T02:26:55+00:00">03 Nov 2019, 02:26</time> by <a rel="author" href="https://www.bleepingcomputer.com/author/ionut-ilascu/" target="_blank">Ionut Ilascu</a></address>
+      <figure>
+        <img src="https://www.bleepstatic.com/content/posts/2019/11/02/BlueKeepExploit_.png"/>
+      </figure>
+      <p>The BlueKeep remote code execution vulnerability in the Windows Remote Desktop Services is currently exploited in the wild. Vulnerable machines exposed to the web are apparently compromised for cryptocurrency mining purposes.</p>
+      <p>The attempts have been recorded by honeypots that expose only port 3389, specific for remote assistance connections via the Remote Desktop Protocol (RDP).</p>
+      <h3>Not wormable</h3>
+      <p>Security researcher Kevin Beaumont noticed on Saturday that multiple honeypots in his EternalPot RDP honeypot network started to crash and reboot. They've been active for almost half a year and this is the first time they came down. For some reason, the machines in Australia did not crash, the researcher noted in a <a href="https://twitter.com/GossiTheDog/status/1190656348700258310?s=20">tweet</a>.</p>
+      <p>First details about BlueKeep being the cause of these events came from <a href="https://twitter.com/MalwareTechBlog">MalwareTech</a>, who investigated the crash dumps from Beaumont's machines. He said that he "found BlueKeep artifacts in memory and shellcode to drop a Monero Miner."</p>
+      <figure>
+        <img src="https://www.bleepstatic.com/images/news/u/1100723/BlueKeepExploit_tweet-MalwareTech.png"/>
+        <figcaption>source: <a href="https://twitter.com/malwaretechblog/status/1190730471321112577">MalwareTech</a></figcaption>
+      </figure>
+      <p>According to early analysis from MalwareTech, an initial payload runs an encoded PowerShell command that downloads a second PowerShell script, also encoded. The researcher says that the final payload is a cryptocurrency miner, likely for Monero, currently <a href="https://www.virustotal.com/gui/file/8a87a1261603af4d976faa57e49ebdd8fd8317e9dd13bd36ff2599d1031f53ce/detection">detected</a> by 25 out of 68 antivirus engines on the VirtusTotal scanning platform.</p>
+      <p>Talking to BleepingComputer, the researcher said that the malware may not be a worm but it is mass-exploiting the BlueKeep bug. This indicates that the cybercriminals are using a BlueKeep scanner to find vulnerable systems exposed on the web and drop the cryptocurrency miner on them.</p>
+      <p>In an update, MalwareTech says that analysis of the network traffic does not indicate self-propagation, meaning that the server doing the exploitation gets the target IP addresses from a predefined list.</p>
+      <figure>
+        <iframe data-src="https://twitter.com/MalwareTechBlog/status/1190802833324462081?ref_src=twsrc%5Etfw" data-embed-type="twitter-tweet" width="100%" height="0" data-service="Twitter" scrolling="no" nowide=""/>
+      </figure>
+      <p>The <a href="https://www.bleepingcomputer.com/news/security/public-bluekeep-exploit-module-released-by-metasploit/">first public BlueKeep exploit</a> was added to Metasploit in September but <a href="https://www.bleepingcomputer.com/news/security/finding-windows-systems-affected-by-bluekeep-remote-desktop-bug/">scanners</a> for the bug have been available before that date.</p>
+      <p>It is likely that whoever is behind these attacks is using public resources and did not develop a reliable, wormable threat, as proved by Beaumont's honeypot crashes.</p>
+      <p>A combination of cryptocurrency miner and a BlueKeep scanner was <a href="https://www.bleepingcomputer.com/news/security/bluekeep-scanner-discovered-in-watchbog-cryptomining-malware/">reported in July</a> in a piece of malware called Watchbog, which typically focused on vulnerable Linux servers.</p>
+      <p>At the time, cybersecurity company Intezer said that integrating the scanner module for the RDP vulnerability alongside the Linux exploits "suggests that WatchBog is preparing a list of vulnerable systems to target in the future or to sell to third party vendors for profit."</p>
+      <p>MalwareTech told us that the indicators of compromise Intezer provided for Watchbog do not seem to match the malware currently hitting machines vulnerable to BlueKeep.</p>
+      <p>These assaults generated over 26 million events on Beaumont's honeypot infrastructure, which makes determining the indicators of compromise a more time consuming task. However, the researcher promised to sort through them for the relevant sequence and provide the data.</p>
+      <figure>
+        <img src="https://www.bleepstatic.com/images/news/u/1100723/BlueKeepEvents-Beaumont.jpeg"/>
+        <figcaption>source: <a href="https://twitter.com/GossiTheDog/status/1190744823759851521?s=20">Kevin Beaumont</a></figcaption>
+      </figure>
+      <p> </p>
+      <h3>Brief BlueKeep history</h3>
+      <p>BlueKeep (CVE-2019-0708) is a serious vulnerability that can allow malware to spread across connected systems without user intervention. Microsoft patched it on May 14, followed by a barrage of alerts about its severity from governments and security companies, some reiterating their concern.</p>
+      <p>Exploiting this RDP flaw for remote code execution (RCE) is not easy and the most common result of this endeavor is a crash of the target system. Security researchers that created a working exploit <a href="https://www.bleepingcomputer.com/news/security/bluekeep-remote-desktop-exploits-are-coming-patch-now/">kept the details private</a> to delay attackers creating their version and compromise still unpatched systems.</p>
+      <p>Two private exploit modules were developed in June and July, <a href="https://www.bleepingcomputer.com/news/security/metasploit-module-created-for-bluekeep-flaw-private-for-now/">for Metasploit</a> and <a href="https://www.bleepingcomputer.com/news/security/bluekeep-rce-exploit-module-added-to-penetration-testing-tool/">CANVAS</a> penetration testing tools. Both were hard to get as the former was private and the latter was delivered to subscribers that paid at least $32,480.</p>
+      <p>At the enterprise level, the worldwide update rate was 83% in June. However, this statistic did not count consumer machines. This suggests that the cybercriminals are likely hitting consumer computers.</p>
+      <p>The vulnerability does not affect all versions of Windows operating system. Microsoft's <a href="https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2019-0708">advisory</a> lists Windows 7, Windows Server 2008 R2, and Windows Server 2008.</p>
+    </article>
+  </body>
+</html>

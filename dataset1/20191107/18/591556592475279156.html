@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://www.zdnet.com/article/microsofts-rust-experiments-are-going-well-but-some-features-are-missing/"/>
+    <meta property="og:site_name" content="ZDNet"/>
+    <meta property="article:published_time" content="2019-11-07T18:04:27+00:00"/>
+    <meta property="og:title" content="Microsoft's Rust experiments are going well, but some features are missing"/>
+    <meta property="og:description" content="Microsoft rewrote a low-level Windows component in Rust. Calls the experience &quot;generally positive.&quot;"/>
+  </head>
+  <body>
+    <article>
+      <h1>Microsoft's Rust experiments are going well, but some features are missing</h1>
+      <address><time datetime="2019-11-07T18:04:27+00:00">07 Nov 2019, 18:04</time> by <a rel="author" href="https://www.zdnet.com/meet-the-team/us/catalin.cimpanu/" target="_blank">Catalin Cimpanu</a></address>
+      <p>
+        <b>Microsoft rewrote a low-level Windows component in Rust. Calls the experience "generally positive."</b>
+      </p>
+      <figure>
+        <img src="https://zdnet1.cbsistatic.com/hub/i/2019/11/07/f5066df3-bca3-47df-95fe-2c41b6796f1a/a01264a3df8bc3dae8fb4301372a8b5a/rust-lang.png"/>
+      </figure>
+      <p>Microsoft gave a status update today on its experiments on using the Rust programming language instead of C and C++ to write Windows components.<br/><br/>In short, the experiments have gone well, and engineers described working with Rust as "generally positive;" however, some features are missing, but the company is willing to help and move the project forward.</p>
+      <h3>Microsoft's Rust experiments</h3>
+      <p><a href="https://www.zdnet.com/article/microsoft-to-explore-using-rust/">Microsoft began experimenting with Rust</a> over the summer. In a series of blog posts, the company announced that it would explore the idea of rewriting various products in Rust, a programming language that was built from the ground up with security in mind.<br/><br/>The Redmond-based software giant said it was interested in Rust because, over the past decade, more than 70% of the security patches it shipped out fixed memory-related bugs, an issue that Rust was created to address.<br/><br/>But while Microsoft didn't specifically say which products would be getting the Rust treatment, the company said it would keep users informed of how the experiments were going.</p>
+      <p>Today, almost four months later, we got the first feedback.<br/><br/>"I've been tasked with an experimental rewrite of a low-level system component of the Windows codebase (sorry, we can't say which one yet)," said Adam Burch, Software Engineer at the Microsoft Hyper-V team, <a href="https://msrc-blog.microsoft.com/2019/11/07/using-rust-in-windows/">in a blog post today</a>.</p>
+      <p>"Though the project is not yet finished, I can say that my experience with Rust has been generally positive," Burch added.<br/><br/>"In general, new components or existing components with clean interfaces will be the easiest to port to Rust," the Microsoft engineer said.</p>
+      <h3>Features missing, but willing to help</h3>
+      <p>However, not all things went smoothly. It would have been unrealistic if we expected they would. Burch cited the lack of safe transmutation, safe support for C style unions, fallible allocation, and a lack of support for at-scale unit testing, needed for Microsoft's sprawling code-testing infrastructure.<br/><br/>"I'm confident that we at Microsoft will be able to help in these endeavors to shape the future of the language to improve its usefulness in these scenarios," Burch said.<br/><br/>The Microsoft engineer said he sees a bright future for Rust in microcontrollers and low-level systems like kernels and hypervisors, where the language's security-first features will make it quite attractive once it matures.<br/><br/>Currently, efforts to <a href="https://developers.slashdot.org/story/19/08/31/1540225/intel-engineer-launches-working-group-to-bring-rust-full-parity-with-c">bring Rust at feature-parity with C are underway</a>, started and support by Intel, another major player on the microcontrollers market.<br/><br/>If Microsoft does go forward with approving Rust rewrites for some of Windows' components, then it should hurry up if it wants to be the first OS maker that does so, as the Linux project is <a href="https://linux.slashdot.org/story/19/08/31/2138249/should-the-linux-kernel-accept-drivers-written-in-rust">also looking into using Rust</a> for some of its kernel drivers.</p>
+    </article>
+  </body>
+</html>

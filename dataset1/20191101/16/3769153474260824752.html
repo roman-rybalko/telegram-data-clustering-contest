@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://www.blendernation.com/2019/11/01/behind-the-scenes-sculptober-3rd-day-jellyfish/"/>
+    <meta property="og:site_name" content="BlenderNation"/>
+    <meta property="article:published_time" content="2019-11-01T16:55:37+00:00"/>
+    <meta property="og:title" content="Behind the Scenes: Sculptober 3rd Day - Jellyfish"/>
+    <meta property="og:description" content="Who am I? Hello! My name is Carina Soares and I’m a 3D Artist living in Oporto, Portugal. I have a Bachelor's degree in Digital Game Design from EsACT-IPB, which is where my love for 3D began. In my free time, I embrace challenges like #Sculptober, and that’s where this jellyfish was born. Jellyfish ProcessRead More"/>
+  </head>
+  <body>
+    <article>
+      <h1>Behind the Scenes: Sculptober 3rd Day - Jellyfish</h1>
+      <address><time datetime="2019-11-01T16:55:37+00:00">01 Nov 2019, 16:55</time> by <a rel="author">Abby Crawford</a></address>
+      <h3>Who am I?</h3>
+      <p>Hello! My name is Carina Soares and I’m a 3D Artist living in Oporto, Portugal.</p>
+      <p>I have a Bachelor's degree in Digital Game Design from <a href="http://djd.esact.ipb.pt/">EsACT-IPB</a>, which is where my love for 3D began.</p>
+      <p>In my free time, I embrace challenges like #<a href="http://sculptober.com/">Sculptober</a>, and that’s where this jellyfish was born.</p>
+      <h3>Jellyfish Process</h3>
+      <h4>Research</h4>
+      <p>The theme of Day 3 of the Sculptober Challenge was “Deep Sea”.</p>
+      <p>To me, the theme was fascinating because I’ve often thought about the photoluminescent creatures that live at those depths.</p>
+      <slideshow>
+        <figure>
+          <img src="https://media.blendernation.com/wp-content/uploads/2019/10/image21.png"/>
+        </figure>
+        <figure>
+          <img src="https://media.blendernation.com/wp-content/uploads/2019/10/image21.png"/>
+        </figure>
+        <figure>
+          <img src="https://media.blendernation.com/wp-content/uploads/2019/10/image3-6.png"/>
+        </figure>
+        <figure>
+          <img src="https://media.blendernation.com/wp-content/uploads/2019/10/image3-6.png"/>
+        </figure>
+        <figure>
+          <img src="https://media.blendernation.com/wp-content/uploads/2019/10/image27.png"/>
+        </figure>
+        <figure>
+          <img src="https://media.blendernation.com/wp-content/uploads/2019/10/image27.png"/>
+        </figure>
+      </slideshow>
+      <h4>3D Modeling</h4>
+      <p>After doing some research, I had a good idea of the look and shape of the creature I wanted to create. It was pretty straightforward modeling.</p>
+      <p>I started with the “inner head”, because of the effect I wanted to create afterward.</p>
+      <figure>
+        <img src="https://media.blendernation.com/wp-content/uploads/2019/10/image5-6.png"/>
+      </figure>
+      <figure>
+        <img src="https://media.blendernation.com/wp-content/uploads/2019/10/image5-6.png"/>
+      </figure>
+      <p>Since I also like stylized and cute characters, I added eyes and cheeks. These facial features added a lot of character and expression to the creature. The eyes, the reflection on the eyes (they are 3D, as well), and the mouth are all separate shapes, ready to have materials of their own.</p>
+      <figure>
+        <img src="https://media.blendernation.com/wp-content/uploads/2019/10/image7-5.png"/>
+      </figure>
+      <figure>
+        <img src="https://media.blendernation.com/wp-content/uploads/2019/10/image7-5.png"/>
+      </figure>
+      <p>Next, I just duplicated the inner head, scaled it, and adjusted its shape using Sculpt mode in Blender 2.8. In the image below, you can see how the wireframe looks.</p>
+      <figure>
+        <img src="https://media.blendernation.com/wp-content/uploads/2019/10/image12-4.png"/>
+      </figure>
+      <figure>
+        <img src="https://media.blendernation.com/wp-content/uploads/2019/10/image12-4.png"/>
+      </figure>
+      <p>The tentacles were pretty straightforward as well. I used a set of bezier curves, and I played with the Geometry and Bevel from the Object Data. I added another bezier curve on the “taper object” option to create the pointy ends of the tentacles.</p>
+      <figure>
+        <img src="https://media.blendernation.com/wp-content/uploads/2019/10/image1-5-1024x311.png"/>
+      </figure>
+      <figure>
+        <img src="https://media.blendernation.com/wp-content/uploads/2019/10/image1-5-1024x311.png"/>
+      </figure>
+      <p>After I had given the right shape to the tentacles by adjusting the points in Edit Mode, I created two sets of tentacles by duplicating and rotating them to create different shapes; one was for interior tentacles that would have the same material as the inner head object (yellow material) and the other for exterior tentacles that would have the same material as the “outer head”.</p>
+      <figure>
+        <img src="https://media.blendernation.com/wp-content/uploads/2019/10/image14-3.png"/>
+      </figure>
+      <figure>
+        <img src="https://media.blendernation.com/wp-content/uploads/2019/10/image14-3.png"/>
+      </figure>
+      <p>The character was pretty much ready, but I still wanted to add some small details such as bubbles. The bubbles are simple spheres with random placement and sizes to give a more “natural” look. They also helped to add more depth to the scene.</p>
+      <figure>
+        <img src="https://media.blendernation.com/wp-content/uploads/2019/10/image4-6.png"/>
+      </figure>
+      <figure>
+        <img src="https://media.blendernation.com/wp-content/uploads/2019/10/image4-6.png"/>
+      </figure>
+      <h4>Materials and Shaders</h4>
+      <p>For organizational purposes, I started to work on the objects that shared the same material. I chose EEVEE as the render engine.</p>
+      <p>First I worked on the materials for the inner head and inner tentacles. The material has only an Emission node and is linked to a Material Output Surface. I chose a strong yellow to contrast with the background, which is set to be a deep blue.</p>
+      <figure>
+        <img src="https://media.blendernation.com/wp-content/uploads/2019/10/image16-3-1024x474.png"/>
+      </figure>
+      <figure>
+        <img src="https://media.blendernation.com/wp-content/uploads/2019/10/image16-3-1024x474.png"/>
+      </figure>
+      <p>On top of the inner head of the Jellyfish, I added the eyes and mouth material with a similar shader as the inner head, but with a different color. The shine on the eyes is pure white with Emission, and the mouth and eyes are a reddish-brown with Emission, as well.</p>
+      <figure>
+        <img src="https://media.blendernation.com/wp-content/uploads/2019/10/image18-1024x601.png"/>
+      </figure>
+      <figure>
+        <img src="https://media.blendernation.com/wp-content/uploads/2019/10/image18-1024x601.png"/>
+      </figure>
+      <p>Now comes the best part: the translucent material that uses a ColorRamp and Glass nodes to give it its flair. This shader is shared by the cheeks, the outer head and outer tentacles.</p>
+      <slideshow>
+        <figure>
+          <img src="https://media.blendernation.com/wp-content/uploads/2019/10/image6-5.png"/>
+        </figure>
+        <figure>
+          <img src="https://media.blendernation.com/wp-content/uploads/2019/10/image6-5.png"/>
+        </figure>
+        <figure>
+          <img src="https://media.blendernation.com/wp-content/uploads/2019/10/image20.png"/>
+        </figure>
+        <figure>
+          <img src="https://media.blendernation.com/wp-content/uploads/2019/10/image20.png"/>
+        </figure>
+      </slideshow>
+      <p>Above are the values I played with to get the right feel. Also notice that in “Settings”on the Texture Coordinate node, I’ve used the Additive blend mode, which was the one that helped me to create the almost glassy feel that the other modes did not create.</p>
+      <figure>
+        <img src="https://media.blendernation.com/wp-content/uploads/2019/10/image17-2-1024x430.png"/>
+      </figure>
+      <figure>
+        <img src="https://media.blendernation.com/wp-content/uploads/2019/10/image17-2-1024x430.png"/>
+      </figure>
+      <p>After setting up the Texture Coordinate as I mentioned above, I added a Mapping node because I wanted to define a “direction” for the gradient to work in the way I wanted. I played with the Point, setting the Y at 90º.</p>
+      <figure>
+        <img src="https://media.blendernation.com/wp-content/uploads/2019/10/image8-5-1024x454.png"/>
+      </figure>
+      <figure>
+        <img src="https://media.blendernation.com/wp-content/uploads/2019/10/image8-5-1024x454.png"/>
+      </figure>
+      <p>In order to create the colorful gradient, I added a Gradient Texture node, linked by vector with the Mapping node and by color with the ColorRamp node. I also added the Glass BSDFnode, but it is linked with Mix Shader like the ColorRamp is.</p>
+      <p>This one is really special because it is where I defined the 3 colors (blue, pink and yellow) that will give that dreamy feel to the image.</p>
+      <slideshow>
+        <figure>
+          <img src="https://media.blendernation.com/wp-content/uploads/2019/10/image2-5.png"/>
+        </figure>
+        <figure>
+          <img src="https://media.blendernation.com/wp-content/uploads/2019/10/image2-5.png"/>
+        </figure>
+        <figure>
+          <img src="https://media.blendernation.com/wp-content/uploads/2019/10/image26.png"/>
+        </figure>
+        <figure>
+          <img src="https://media.blendernation.com/wp-content/uploads/2019/10/image26.png"/>
+        </figure>
+        <figure>
+          <img src="https://media.blendernation.com/wp-content/uploads/2019/10/image25.png"/>
+        </figure>
+        <figure>
+          <img src="https://media.blendernation.com/wp-content/uploads/2019/10/image25.png"/>
+        </figure>
+        <figure>
+          <img src="https://media.blendernation.com/wp-content/uploads/2019/10/image19.png"/>
+        </figure>
+        <figure>
+          <img src="https://media.blendernation.com/wp-content/uploads/2019/10/image19.png"/>
+        </figure>
+      </slideshow>
+      <p>Notice that the yellow color is at the far right position of the ColorRamp. This is intentional because I wanted to create a connection with the yellow objects above.</p>
+      <p>To wrap this all up, the final nodes are the Mix Shader that blends the ColorRamp and the Glass BSDF, and the Material Output linked to the Surface.</p>
+      <figure>
+        <img src="https://media.blendernation.com/wp-content/uploads/2019/10/image24.png"/>
+      </figure>
+      <figure>
+        <img src="https://media.blendernation.com/wp-content/uploads/2019/10/image24.png"/>
+      </figure>
+      <p>In the end, the Translucent Material Shader should look like this:</p>
+      <figure>
+        <img src="https://media.blendernation.com/wp-content/uploads/2019/10/image9-3-1024x367.png"/>
+      </figure>
+      <figure>
+        <img src="https://media.blendernation.com/wp-content/uploads/2019/10/image9-3-1024x367.png"/>
+      </figure>
+      <p>The bubbles’ material is pretty much similar, only with a few changes in the ColorRamp node.</p>
+      <figure>
+        <img src="https://media.blendernation.com/wp-content/uploads/2019/10/image20-1.png"/>
+      </figure>
+      <figure>
+        <img src="https://media.blendernation.com/wp-content/uploads/2019/10/image20-1.png"/>
+      </figure>
+      <h4>Renders</h4>
+      <p>In the last part, I have to set up a camera to be able to render some images. The size of the images is width: 1080px, height: 720px.</p>
+      <figure>
+        <img src="https://media.blendernation.com/wp-content/uploads/2019/10/image10-1.png"/>
+      </figure>
+      <figure>
+        <img src="https://media.blendernation.com/wp-content/uploads/2019/10/image10-1.png"/>
+      </figure>
+      <p>After the camera is set up, I press F12 and let Blender do its magic.</p>
+      <slideshow>
+        <figure>
+          <img src="https://media.blendernation.com/wp-content/uploads/2019/10/image22-1024x683.jpg"/>
+        </figure>
+        <figure>
+          <img src="https://media.blendernation.com/wp-content/uploads/2019/10/image22-1024x683.jpg"/>
+        </figure>
+        <figure>
+          <img src="https://media.blendernation.com/wp-content/uploads/2019/10/image11-2-1024x683.jpg"/>
+        </figure>
+        <figure>
+          <img src="https://media.blendernation.com/wp-content/uploads/2019/10/image11-2-1024x683.jpg"/>
+        </figure>
+        <figure>
+          <img src="https://media.blendernation.com/wp-content/uploads/2019/10/image13-3-1024x683.jpg"/>
+        </figure>
+        <figure>
+          <img src="https://media.blendernation.com/wp-content/uploads/2019/10/image13-3-1024x683.jpg"/>
+        </figure>
+      </slideshow>
+      <h3>Epilogue</h3>
+      <p>The goal was to have a cute character, with an almost 2D feel, using 3D modeling and shaders.</p>
+      <p>You can see more renders of the artwork <a href="https://www.artstation.com/artwork/lV45kk">here</a>.</p>
+      <p>And here is a small GIF:</p>
+      <figure>
+        <iframe data-src="https://twitter.com/EtaCarinaGD/status/1187490179277295623?ref_src=twsrc%5Etfw" data-embed-type="twitter-tweet" width="100%" height="0" data-service="Twitter" scrolling="no" nowide=""/>
+      </figure>
+      <p>I am honored to have been contacted to write this article about the “Jellyfish” process.</p>
+      <p>I was just starting to learn Blender 2.8 when I was featured, and this inspires me to do much more for the program and the community.</p>
+      <h3>About the Author</h3>
+      <figure>
+        <img src="https://media.blendernation.com/wp-content/uploads/2019/10/image23-1024x768.jpg"/>
+      </figure>
+      <figure>
+        <img src="https://media.blendernation.com/wp-content/uploads/2019/10/image23-1024x768.jpg"/>
+      </figure>
+      <p><b>Carina Soares</b>, 3D Artist, proud Portuguese and Oporto citizen. Creating dreams with a creative mind.</p>
+      <p> </p>
+      <p> </p>
+      <h3>Links</h3>
+      <ul>
+        <li>
+          <a href="https://twitter.com/EtaCarinaGD">Carina on Twitter</a>
+        </li>
+        <li>
+          <a href="https://www.artstation.com/carinae_star_3d">Carina on Artstation</a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/carina-soares-550b7565/">Carina on LinkedIn</a>
+        </li>
+        <li>
+          <a href="https://blenderartists.org/t/sculptober-3rd-day-jellyfish/1183945">Sculptober 3rd Day - Jellyfish on Blenderartists</a>
+        </li>
+      </ul>
+    </article>
+  </body>
+</html>

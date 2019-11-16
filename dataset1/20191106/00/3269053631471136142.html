@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://elchapuzasinformatico.com/2019/11/intel-dice-que-su-xeon-platinum-9282-es-mas-rapido-que-el-amd-epyc-7742-en-el-mundo-real/"/>
+    <meta property="og:site_name" content="El Chapuzas Informático"/>
+    <meta property="article:published_time" content="2019-11-06T00:00:00+00:00"/>
+    <meta property="og:title" content="Intel dice que su Xeon Platinum 9282 es más rápido que el AMD EPYC 7742 «en el mundo real»"/>
+    <meta property="og:description" content="Intel vuelve a hablarnos del &quot;mundo real&quot;, y es que ha indicado que su CPU Intel Xeon Platinum 9282 de 56 núcleos es casi el doble de rápido que el AMD EPYC 7742 en dicho mundo."/>
+  </head>
+  <body>
+    <article>
+      <h1>Intel dice que su Xeon Platinum 9282 es más rápido que el AMD EPYC 7742 «en el mundo real»</h1>
+      <address><time datetime="2019-11-06T00:00:00+00:00">06 Nov 2019</time> by <a rel="author" href="https://elchapuzasinformatico.com/author/darktiger/" target="_blank">Borja Rodríguez</a></address>
+      <p><b>Intel</b> vuelve a hablarnos del "mundo real", y es que ha indicado que su CPU <b>Intel Xeon Platinum 9282</b> de 56 núcleos es casi <b>el doble de rápido que el AMD EPYC 7742</b> en dicho mundo.</p>
+      <p>Esta comparativa la hizo con su plataforma <b>Cascade Lake-AP</b> en un sistema Dual Socket con dos <b>Xeon Platinum 9282</b> de<b> 56 núcleos y 112 hilos</b> de procesamiento, cada uno, a una frecuencia Base/Turbo de<b> 2.60/3.80 GHz</b> con 77 MB de caché y un TDP de<b> 400W</b>. El punto fuerte es su controladora '<b>12-Channel</b>' frente a las 8 de AMD.</p>
+      <figure>
+        <img src="https://elchapuzasinformatico.com/wp-content/uploads/2019/05/AMD-EPYC-vs-Intel-Xeon-740x555.jpg"/>
+      </figure>
+      <p>El <b>AMD EPYC 7742</b>, para empezar, emplea el proceso de fabricación de<b> 7nm</b> (vs 14nm+++) con <b>64 núcleos y 128 hilos</b> de procesamiento @ <b>2.25/3.40 GHz</b> con 256 MB de caché L3, y su punto fuerte está en ofrecer <b>128 líneas PCI-Express 4.0</b> y un TDP de <b>225W</b>. Hablando de puntos fuertes, su precio oficial es de <b>6950 dólares</b>, mientras que el precio sugerido de la CPU de Intel se moverá entre los <b>25.000 y 50.000 dólares</b>.</p>
+      <p>Pues con estos datos en la mano, Intel dice que <b>sus Xeon Platinum 9282 son un 84% mas rápidos que los AMD EPYC 7742 "<i>en el mundo real</i>"</b> y este mundo se trata del mercado HPC (computación de alto rendimiento).</p>
+      <figure>
+        <img src="https://elchapuzasinformatico.com/wp-content/uploads/2019/11/Intel-Xeon-Platinum-9282-vs-AMD-EPYC-7742-1-740x416.png"/>
+      </figure>
+      <figure>
+        <img src="https://elchapuzasinformatico.com/wp-content/uploads/2019/11/Intel-Xeon-Platinum-9282-vs-AMD-EPYC-7742-2-740x413.png"/>
+      </figure>
+      <p> </p>
+      <p>Pero para empezar, la comparativa no tiene sentido, ya que <b>cada CPU de Intel tiene un TDP que prácticamente duplica el de los procesadores de AMD</b>, por no hablar de <b>una diferencia de precio mínima 3,5 veces más</b> a la de AMD, por lo que es imposible tomarnos estos datos como una comparativa directa.</p>
+      <p>"<b>Blablabla, pero el Intel es más potente</b>", pues curiosamente, <b>Patrick Kennedy</b>, del portal especializado en servidores ServerTheHome, se topó con que Intel ha hecho "trampa" en los benchmarks, ya que <b>usaron una versión obsoleta de GROMACS</b> donde, curiosamente, <b>no utiliza el ancho de banda de 256 bits para las instrucciones AVX2 SIMD</b>, algo que curiosamente<b> favorece a los procesadores de AMD </b>(se implementó en los Zen2), por lo que estas pruebas del "mundo real", realmente no están representando un rendimiento que existe realmente a día de hoy, pero tampoco es que nos extrañe, no es la primera vez que Intel recurre a este tipo de artimañas para intentar conseguir algo que no será real en hasta dentro de varios años, estar por delante de AMD.</p>
+      <p>Intel continúa afirmando que<b> los procesadores Xeon Platinum 9200 Series ofrecen un TCO</b> (Coste Total de la Propiedad) <b>más bajo</b>. Dado que el rendimiento de la serie Xeon Platinum 9200 es mayor, se necesitaría un menor número de nodos, lo que reduciría el coste de adquisición de los nodos y costes como los de la conmutación y cableado. También se menciona que mientras que el Xeon-AP tiene un TDP y un requerimiento de potencia más alto que los EPYC ROME de AMD (225W vs 400W), debería ser compensado por el menor número de nodos requeridos para alcanzar el mismo rendimiento.</p>
+      <p>vía: <a href="https://wccftech.com/intel-xeon-cascade-lake-ap-84-percent-faster-amd-epyc-rome-7742-server-cpu/">Wccftech</a></p>
+    </article>
+  </body>
+</html>

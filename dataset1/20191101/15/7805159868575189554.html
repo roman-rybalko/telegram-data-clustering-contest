@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://www.xda-developers.com/google-pixel-4-root-magisk/"/>
+    <meta property="og:site_name" content="XDA Developers"/>
+    <meta property="article:published_time" content="2019-11-01T15:58:00+00:00"/>
+    <meta property="og:title" content="How to root the Google Pixel 4 or Pixel 4 XL with Magisk"/>
+    <meta property="og:description" content="Looking to root your Google Pixel 4 or Pixel 4 XL? Here's how to unlock the bootloader and root the latest 2019 Pixel smartphones!"/>
+  </head>
+  <body>
+    <article>
+      <h1>How to root the Google Pixel 4 or Pixel 4 XL with Magisk</h1>
+      <address><time datetime="2019-11-01T15:58:00+00:00">01 Nov 2019, 15:58</time> by <a rel="author" href="https://www.xda-developers.com/author/mweinbach/" target="_blank">Max Weinbach</a></address>
+      <p>Android power users in the XDA community still consider root access really important. There are just some things you can only do with root access, like <a href="https://www.xda-developers.com/use-google-pixel-4-face-unlock-any-app/">enabling the Pixel 4’s face unlock in any app</a>. If you bought the Pixel 4 or Pixel 4 XL and want to learn how to root it, we’ll show you how in this <a href="https://www.xda-developers.com/category/tutorials/">tutorial</a>. Since <a href="https://www.xda-developers.com/how-to-install-twrp/">TWRP</a>, the most popular custom recovery there is, will <a href="https://www.xda-developers.com/twrp-lead-explains-android-10-support-custom-recovery/">take some time to be ported</a> to the latest Pixels, the current rooting method is a bit more involved than what you might be used to. Once stable TWRP is available, we’ll update this article to simplify the steps.</p>
+      <p>Before we get into how to root your phone, you are going to want to do a few things. First, you will want to back up all the data on your phone. That’s because <b>rooting requires wiping ALL the data on your phone, which includes not only installed apps but also all files saved to the internal storage. </b>You can save your files to your PC, Google Drive, Google Photos, etc., but just make sure it’s easily accessible. You also want to make sure you have about 10GB of available storage on your PC, as you will need storage for downloading the factory images. After you’re done, though, you can delete these files to free up space. Though, it’s a good idea to keep the factory images saved in case you have any problems in your post-root adventure and need to restore to stock.</p>
+      <p>It is important to note these steps <b>will NOT work on U.S. carrier models</b> of the Pixel 4 and Pixel 4 XL as carriers like to prevent bootloader unlocking, making it impossible to root your phone. Sometimes, though, people find workarounds, and we’ll let you know if any are found.</p>
+      <hr/>
+      <h3>How to root the <a href="https://forum.xda-developers.com/pixel">Google Pixel</a> 4</h3>
+      <h4>Step 1 – Get the Boot Image</h4>
+      <p>Before we can root, we need to get the boot image that matches the current software build you’re running. We will patch this boot image with <a href="https://forum.xda-developers.com/apps/magisk">Magisk</a> Manager. To get the boot image, you need to extract it from the Pixel 4 or Pixel 4 XL factory image, a file that contains ALL the images of your phone needed to make a full restore. To make sure you download the right factory image, you need to check which software version your phone is currently running. To check this, go to Settings &gt; About phone. At the bottom, look for the “Build number.” Find the matching build number on the factory image download page and download that file.</p>
+      <slideshow>
+        <figure>
+          <img src="https://www.xda-developers.com/files/2019/10/Pixel-4-Root-Build-Number.jpg"/>
+        </figure>
+        <figure>
+          <img src="https://www.xda-developers.com/files/2019/10/Flashing-Images.jpg"/>
+        </figure>
+      </slideshow>
+      <p><a href="https://developers.google.com/android/images#flame"><b>Pixel 4 Factory Images</b></a> ||| <a href="https://developers.google.com/android/images#coral"><b>Pixel 4 XL Factory Images</b></a></p>
+      <p>Next, extract the factory image .zip file and then extract the image-<i>devicecodename</i>–<i>version</i>.zip file (yes, there’s a zip within a zip). Pull the boot.img file from the latter folder. Transfer this boot.img file to your phone. You can either connect your phone to your PC or send it through a file transfer app. It doesn’t really matter how it gets there; it just needs to end up on your phone.</p>
+      <figure>
+        <img src="https://www.xda-developers.com/files/2019/10/Boot-File.jpg"/>
+      </figure>
+      <h4>Step 2 – Patch Boot Image in Magisk Manager</h4>
+      <p>With the boot image file on your phone, you are next going to need to download and install the latest Magisk Manager APK. This is the companion app for Magisk that you will use to patch the boot image. Download the APK linked below and install it.</p>
+      <p>In Magisk Manager, you will need to click “Install” button next to the “Magisk is not installed” text. Select “Install” then “Select and Patch a file.” This will open the Android file manager. Go ahead and find the boot.img you transferred from your PC and select that in Magisk Manager. Magisk will then patch the boot image and save a file called “magisk_patched.img” in your Downloads folder.</p>
+      <p>You must transfer this file back to your PC, because next, we’re going to unlock the bootloader which will wipe all data as we warned previously.</p>
+      <slideshow>
+        <figure>
+          <img src="https://www.xda-developers.com/files/2019/10/Magisk-Patch-Boot-2.jpg"/>
+        </figure>
+        <figure>
+          <img src="https://www.xda-developers.com/files/2019/10/Magisk-Patch-Boot-3.jpg"/>
+        </figure>
+        <figure>
+          <img src="https://www.xda-developers.com/files/2019/10/Magisk-Patch-Boot-4.jpg"/>
+        </figure>
+        <figure>
+          <img src="https://www.xda-developers.com/files/2019/10/Magisk-Patch-Boot-1.jpg"/>
+        </figure>
+      </slideshow>
+      <p>
+        <a href="https://github.com/topjohnwu/Magisk/releases/download/manager-v7.3.5/MagiskManager-v7.3.5.apk">
+          <b>Download Magisk Manager APK</b>
+        </a>
+      </p>
+      <p>Note: If you browse the XDA Forums for the <a href="https://forum.xda-developers.com/pixel-4">Pixel 4</a> or <a href="https://forum.xda-developers.com/pixel-4-xl">Pixel 4 XL</a>, you may be lucky enough to find a pre-patched boot image. This will save you the hassle of performing steps 1 &amp; 2, but make sure that any pre-patched boot image you download matches your software build version!</p>
+      <h4>Step 3 – Enable OEM Unlock</h4>
+      <p>First, go to Settings then “About phone.” Look for the “Build number” at the bottom and tap on this entry 7 times until you enable “Developer Options.” It’ll ask you to enter your phone’s password. After enabling Developer Options, go back to the main settings page and select “System,” then select the advanced dropdown at the bottom and go to “Developer Options.” From there, select “OEM unlocking” and enter your password.</p>
+      <slideshow>
+        <figure>
+          <img src="https://www.xda-developers.com/files/2019/10/OEM-Toggle-Pixel-4-1.jpg"/>
+        </figure>
+        <figure>
+          <img src="https://www.xda-developers.com/files/2019/10/OEM-Toggle-Pixel-4-2.jpg"/>
+        </figure>
+        <figure>
+          <img src="https://www.xda-developers.com/files/2019/10/OEM-Toggle-Pixel-4-3.jpg"/>
+        </figure>
+      </slideshow>
+      <h4>Step 4 – Unlock Bootloader</h4>
+      <p>After enabling OEM unlock, turn off your phone. Hold both the volume up and power buttons to turn your phone back on and boot into the bootloader menu. While here, plug your phone into your PC. I’m assuming you have<a href="https://www.xda-developers.com/install-adb-windows-macos-linux/"> ADB and </a><a href="https://www.xda-developers.com/google-releases-separate-adb-and-fastboot-binary-downloads/">Fastboot</a> installed already, but if not, you’ll want to install that before continuing. In a command prompt or terminal window, type:</p>
+      <p>
+        <code>fastboot flashing unlock</code>
+      </p>
+      <p>You will see a screen telling you that you are about to initiate the bootloader unlocking process. Use the volume button to navigate and the power button to accept. <b>Again, this will wipe all the data on your phone, so make sure you have your data backed up before proceeding.</b></p>
+      <p>After unlocking the bootloader, it will boot back up after a few minutes. You can either setup your phone now or wait until after your flash the Magisk-patched boot image. I recommend that you don’t set up your phone just yet.</p>
+      <slideshow>
+        <figure>
+          <img src="https://www.xda-developers.com/files/2019/10/Fastboot-unlock.jpg"/>
+        </figure>
+        <figure>
+          <img src="https://www.xda-developers.com/files/2019/10/Bootloader-Pixel-4.jpg"/>
+        </figure>
+      </slideshow>
+      <h4>Step 5 – Flash Magisk-Patched Boot Image</h4>
+      <p>After your boot image is patched and the bootloader is unlocked, you can finally flash the patched boot image to install Magisk (and gain root access). Turn off your phone as at this point it should be at the setup screen. You now want to boot back into the bootloader by holding the volume down and power buttons again. Once you are here, you are one step away from root.</p>
+      <p>Type</p>
+      <p>
+        <code>fastboot flash boot <i>path/to/</i>magisk_patched.img</code>
+      </p>
+      <p>As soon as you hit enter, the patched boot image will be flashed to your phone. As soon as you reboot using “fastboot reboot,” your phone will be rooted with Magisk. The Magisk Manager app should appear on your home screen, but if it doesn’t, just install the APK manually.</p>
+      <figure>
+        <img src="https://www.xda-developers.com/files/2019/10/Fastboot-Flash-Boot.jpg"/>
+      </figure>
+      <p>This is all it takes to root your Pixel 4 and Pixel 4 XL.</p>
+      <h4>Step 6 – What’s Next?</h4>
+      <p>Do note that you’ll have to repeat steps 1, 2, and 5 every time you update your phone because the boot image changes with each update. Since your phone is now rooted, you won’t be getting OTA updates, though. You’ll instead have to flash the latest update via the latest factory image, but <a href="https://www.xda-developers.com/flash-monthly-security-update-google-pixel/">you can do so without wiping any data</a>. This doesn’t apply if you’re running a custom ROM from the forums, though.</p>
+      <p>If you’re looking for things to do with your newly rooted Pixel 4, check out our forums for ideas:</p>
+      <p>
+        <b><a href="https://forum.xda-developers.com/pixel-4">Pixel 4 Forums</a> ||| <a href="https://forum.xda-developers.com/pixel-4-xl">Pixel 4 XL Forums</a></b>
+      </p>
+    </article>
+  </body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://habr.com/en/company/microsoft/blog/474234/"/>
+    <meta property="og:site_name" content="Habr"/>
+    <meta property="article:published_time" content="2019-11-07T07:00:01+00:00"/>
+    <meta property="og:title" content="SpaceFusion: Structuring the unstructured latent space for conversational AI"/>
+    <meta property="og:description" content="A palette makes it easy for painters to arrange and mix paints of different colors as they create art on the canvas before them. Having a similar tool that..."/>
+  </head>
+  <body>
+    <article>
+      <h1>SpaceFusion: Structuring the unstructured latent space for conversational AI</h1>
+      <address><time datetime="2019-11-07T07:00:01+00:00">07 Nov 2019, 07:00</time> by <a rel="author" href="https://habr.com/en/users/msgeek/" target="_blank">msgeek</a></address>
+      <p>A palette makes it easy for painters to arrange and mix paints of different colors as they create art on the canvas before them. Having a similar tool that could allow AI to jointly learn from diverse data sources such as those for conversations, narratives, images, and knowledge could open doors for researchers and scientists to develop AI systems capable of more general intelligence.</p>
+      <figure>
+        <a href="https://www.microsoft.com/en-us/research/uploads/prod/2019/05/neural_response_generation_figure_0.png.jpg">
+          <img src="https://habrastorage.org/getpro/habr/post_images/f0b/24b/8c9/f0b24b8c99c1f60f6bb9dbf9f70e9aee.jpg"/>
+        </a>
+      </figure>
+      <p><i>A palette allows a painter to arrange and mix paints of different colors. SpaceFusion seeks to help AI scientists do similar things for different models trained on different datasets.</i><br/><br/>For deep learning models today, datasets are usually represented by vectors in different latent spaces using different neural networks. In the paper "<a href="https://www.microsoft.com/en-us/research/publication/jointly-optimizing-diversity-and-relevance-in-neural-response-generation-2/">Jointly Optimizing Diversity and Relevance in Neural Response Generation</a>," my co-authors and I propose SpaceFusion, a learning paradigm to align these different latent spaces—arrange and mix them smoothly like the paint on a palette—so AI can leverage the patterns and knowledge embedded in each of them. This work, which we’re presenting at the <a href="https://naacl2019.org/">2019 Annual Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies (NAACL-HLT)</a>, is part of the <a href="https://www.microsoft.com/en-us/research/project/data-driven-conversation/">Data-Driven Conversation</a> project, and an implementation of it is available on <a href="https://github.com/golsun/SpaceFusion">GitHub</a>.</p>
+      <h3>Capturing the color of human conversation</h3>
+      <p>As a first attempt, we applied this technique to neural conversational AI. In our setup, a neural model is expected to generate relevant and interesting responses given a conversation history, or context. While promising advances in neural conversation models have been made, these models tend to play it safe, producing generic and dull responses. Approaches have been developed to diversify these responses and better capture the color of human conversation, but oftentimes, <a href="https://www.microsoft.com/en-us/research/publication/generating-informative-and-diverse-conversational-responses-via-adversarial-information-maximization/">there is a tradeoff, with relevancy declining</a>.</p>
+      <figure>
+        <a href="https://www.microsoft.com/en-us/research/uploads/prod/2019/05/mix_S2S_AE_v2.jpg">
+          <img src="https://habrastorage.org/getpro/habr/post_images/fbf/cf5/d8e/fbfcf5d8e666dc0a7785c937d4cbd3a9.jpg"/>
+        </a>
+      </figure>
+      <p><i>Figure 1: Like a palette allows for the easy combination of paints, SpaceFusion aligns, or mixes, the latent spaces learned from a sequence-to-sequence (S2S, red dots) model and an autoencoder (AE, blue dots) to jointly utilize the two models more efficiently.</i><br/><br/>SpaceFusion tackles this problem by aligning the latent spaces learned from two models (Figure 1):</p>
+      <ul>
+        <li>a sequence-to-sequence (S2S) model, which aims to produce relevant responses, but may lack diversity; and</li>
+        <li>an autoencoder (AE) model, which is capable of representing diverse responses, but doesn’t capture their relation to the conversation.</li>
+      </ul>
+      <p>The jointly learned model can utilize the strengths of both models and arrange data points in a more structured way.</p>
+      <figure>
+        <a href="https://www.microsoft.com/en-us/research/uploads/prod/2019/05/NAACL_Neural-Response-Generation_Site_1400x788.png">
+          <img src="https://habrastorage.org/getpro/habr/post_images/00e/b5e/6e6/00eb5e6e6f37deb6e1cfd1afb6fa5a4f.png"/>
+        </a>
+      </figure>
+      <p><i>Figure 2: The above illustrates one context and its multiple responses in the latent space induced by SpaceFusion. Distance and direction from the predicted response vector given the context roughly match the relevance and diversity, respectively.</i><br/><br/>For example, as illustrated in Figure 2, given a context—in this case, «Anyone want to start this game?»—the positive responses «I’d love to play it» and «Yes, I do» are arranged along the same direction. The negative ones—«I’m not interested in the game» and «No, I don’t»—are mapped on a line in another direction. Diversity in responses is achieved by exploring the latent space along different directions. Furthermore, the distance in the latent space corresponds to the relevancy. Responses farther away from the context—«Yes, I do» and «No, I don’t»—are usually generic, while those closer are more relevant to the specific context: «I’m not interested in the game» and «When will you?»<br/><br/>SpaceFusion disentangles the criteria of relevancy and diversity and represents them in two independent dimensions—direction and distance—making it easier to jointly optimize both. Our empirical experiments and human evaluation have shown that SpaceFusion performs better in these two criteria compared to competitive baselines.</p>
+      <h3>Learning a shared latent space</h3>
+      <p>So, how exactly does SpaceFusion align different latent spaces?<br/><br/>The idea is quite intuitive: For each pair of points from two different latent spaces, we first minimize their distance in the shared latent space and then encourage a smooth transition between them. This is done by adding two novel regularization terms—distance term and smoothness term—to the objective function.<br/><br/>Taking conversation as the example, the distance term measures the Euclidean distance between a point from the S2S latent space, which is mapped from the context and represents the predicted response, and the points from the AE latent space, which correspond to its target responses. Minimizing such distance encourages the S2S model to map the context to a point close to and surrounded by its responses in the shared latent space, as illustrated by Figure 2.<br/><br/>The smoothness term measures the likelihood of generating the target response from a random interpolation between the point mapped from the context and the one mapped from the response. By maximizing this likelihood, we encourage a smooth transition of the meaning of the generated responses as we move away from the context. This allows us to explore the neighborhood of the prediction point made by the S2S and thus generate diverse responses that are relevant to the context.<br/><br/>With these two novel regularizations added in the objective function, we put the distance and smoothness constraints on the learning of latent space, so the training will not only focus on the performance on each latent space, but also try to align them together by adding these desired structures. Our work focused on conversational models, but we expect that SpaceFusion can align the latent spaces learned by other models trained on different datasets. This makes it possible to bridge different abilities and knowledge domains learned by each specific AI system and is a baby step toward a more general intelligence.</p>
+      <related>
+        <h4>Similar posts</h4>
+        <a href="https://habr.com/en/post/446544/"/>
+        <a href="https://habr.com/en/post/444010/"/>
+        <a href="https://habr.com/en/post/444016/"/>
+      </related>
+    </article>
+  </body>
+</html>

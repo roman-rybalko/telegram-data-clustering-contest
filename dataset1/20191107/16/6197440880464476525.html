@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://9to5google.com/2019/11/07/high-brightness-mode-root-pixel-4-battery/"/>
+    <meta property="og:site_name" content="9to5Google"/>
+    <meta property="article:published_time" content="2019-11-07T16:22:31+00:00"/>
+    <meta property="og:title" content="‘High brightness mode’ lets you kill your rooted Pixel 4 battery even faster"/>
+    <meta property="og:description" content="If you're looking for a way to kill your Pixel 4's battery even faster, rooted phones can enable &quot;High brightness mode&quot; to make the display brighter."/>
+  </head>
+  <body>
+    <article>
+      <h1>‘High brightness mode’ lets you kill your rooted Pixel 4 battery even faster</h1>
+      <address><time datetime="2019-11-07T16:22:31+00:00">07 Nov 2019, 16:22</time> by <a rel="author" href="https://9to5google.com/author/skylled/" target="_blank">Kyle Bradshaw</a></address>
+      <p>One of the biggest complaints about the smaller Google Pixel 4 is its limited battery life, compared to other flagships, and even last year’s Pixel 3. In case you were looking for a way to kill that battery life <i>even faster</i>, a mod for rooted Pixel 4 phones can enable “high brightness mode” to make the display even brighter.</p>
+      <p>As noted by <a href="https://www.xda-developers.com/google-pixel-4-high-brightness-mode-fix/"><i>XDA-Developers</i></a>, the Pixel 4 is capable of a brightness level of approximately 450 nits when not viewing HDR content. While better than any Pixel phone before it, this isn’t great by comparison to other recent flagships like the iPhone 11 Pro (800 nits) and Galaxy Note10 (~700 nits). For some, this low brightness level makes for difficult use when outdoors or in other bright locations.</p>
+      <p>Interestingly, the Pixel 4’s display hardware is capable of running at an even higher brightness setting, but this hidden “high brightness mode” is disabled by default. As we’ve continued to learn over the past few weeks, almost anything is possible to change or fix on a rooted phone, and that includes the maximum brightness.</p>
+      <p>The folks at <i>XDA</i> have discovered that you can easily enable this high brightness mode on a rooted Pixel 4 with just two simple shell commands. Like anything else that you can only do to your phone with root, there may be some risks involved, but this particular mod seems fairly safe.</p>
+      <blockquote>
+        <i>su echo on &gt;&gt; /sys/class/backlight/panel0-backlight/hbm_mode</i>
+      </blockquote>
+      <p>Once the setting is toggled, your Pixel 4 will be capable of putting out approximately 610 nits, which is a solid 33% increase. Unfortunately, high brightness mode automatically turns itself off any time you lock your Pixel 4 or the screen turns off. To make the most of this mode, you’ll probably want to create an automatic trigger for it via an app like <a href="https://play.google.com/store/apps/details?id=net.dinglisch.android.taskerm">Tasker</a>.</p>
+      <p>Now the real question is, with the display being a phone’s biggest power consumer and the Pixel 4 already having terrible battery life, why would you want to drag it down further by cranking up the brightness? To each their own.</p>
+      <h3>More Pixel 4 root mods:</h3>
+      <ul>
+        <li>
+          <a href="https://9to5google.com/2019/11/06/pixel-4-root-mod-motion-sense-gestures-tasker/">Pixel 4 root mod lets you connect Motion Sense gestures to Tasker</a>
+        </li>
+        <li>
+          <a href="https://9to5google.com/2019/11/01/pixel-4-root-mods-force-face-unlock-motion-sense/">Pixel 4 mods enable face unlock in any app, Motion Sense in more regions for rooted users</a>
+        </li>
+      </ul>
+      <p><i>FTC: We use income earning auto affiliate links.</i> <a href="https://9to5mac.com/about/#affiliate">More.</a></p>
+    </article>
+  </body>
+</html>

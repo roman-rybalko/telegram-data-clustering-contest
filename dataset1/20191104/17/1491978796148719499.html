@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://www.theguardian.com/science/2019/nov/04/did-you-solve-it-would-you-get-into-oxford"/>
+    <meta property="og:site_name" content="the Guardian"/>
+    <meta property="article:published_time" content="2019-11-04T17:00:26+00:00"/>
+    <meta property="og:title" content="Did you solve it? Would you get into Oxford?"/>
+    <meta property="og:description" content="The solution to today’s puzzle"/>
+  </head>
+  <body>
+    <article>
+      <h1>Did you solve it? Would you get into Oxford?</h1>
+      <address><time datetime="2019-11-04T17:00:26+00:00">04 Nov 2019, 17:00</time> by <a rel="author" href="https://www.theguardian.com/profile/alexbellos" target="_blank">Alex Bellos</a></address>
+      <p>
+        <i>The solution to today’s puzzle</i>
+      </p>
+      <p><a href="https://www.theguardian.com/science/2019/nov/04/can-you-solve-it-would-you-get-into-oxford">Earlier today</a> I set you a question from Oxford university’s Mathematics Admissions Test.</p>
+      <p>
+        <i>You need to pack several items into your shopping bag without squashing anything. The items are to be placed one on top of the other. Each item has a <b>weight</b> and a <b>strength</b>, defined as the maximum weight that can be placed above that item without it being squashed. A packing order is <b>safe</b> if no item in the bag is squashed, that is, if, for each item, that item’s strength is at least the combined weight of what’s placed above that item. For example, here are three items and a packing order:</i>
+      </p>
+      <figure>
+        <img src="https://i.guim.co.uk/img/media/41bf0673488bf6fd7bb0b8968262d49fca28c441/0_146_1881_612/master/1881.jpg?width=620&amp;quality=45&amp;auto=format&amp;fit=max&amp;dpr=2&amp;s=b18386b67291744323766cb202c1b2a3"/>
+      </figure>
+      <p>This packing is not safe. The bread is squashed because the weight above it, 5, is greater than its strength, 4. Swapping the apples and the bread, however, gives a safe packing.</p>
+      <p>(i) Which of the other four orderings of apples, bread and carrots are safe or unsafe?</p>
+      <p><b>Solution: </b>All other orderings are unsafe.</p>
+      <p>(ii) Consider packing items in weight order, with the heaviest at the bottom. Show by giving an example – that is, invent some items and give them weights and strengths of your choosing – that this strategy might not produce a safe packing order, even if one exists.</p>
+      <p><b>Solution: </b>Here’s an example:</p>
+      <figure>
+        <img src="https://i.guim.co.uk/img/media/bc5b9c0053e908a2629e54ca547dffce4eae293b/133_230_1657_645/master/1657.jpg?width=620&amp;quality=45&amp;auto=format&amp;fit=max&amp;dpr=2&amp;s=3aa7b97eaae7d449c331b248246256df"/>
+      </figure>
+      <p>(iii) Consider packing items in strength order, with the strongest at the bottom. Show by giving an example – that is, invent some items and give them weights and strengths of your choosing – that this strategy might not produce a safe packing order, even if one exists.</p>
+      <p><b>Solution: </b>Here’s an example:</p>
+      <figure>
+        <img src="https://i.guim.co.uk/img/media/a6a40c1b56b56431b8ec1a6980bb08e55f7ea415/0_230_1920_773/master/1920.jpg?width=620&amp;quality=45&amp;auto=format&amp;fit=max&amp;dpr=2&amp;s=b1411d3da37b08fb5deb8994a34f6e6e"/>
+      </figure>
+      <p>(iv) Consider we have a safe packing order in our bag. Assume that item <i>j </i>sits directly on item <i>i</i>. Suppose also that:</p>
+      <p>(weight of <i>j</i>) – (strength of <i>i</i>) ≥ (weight of <i>i</i>) – (strength of <i>j</i>)</p>
+      <p>Show that if we swap items <i>i </i>and <i>j </i>we still have a safe packing order.</p>
+      <p><b>Solution. </b>First we need to write out what the question states in mathematical language. If the packing is safe, then we know that the following two inequalities hold. (Let the weight above <i>j</i> be W.)</p>
+      <p>W ≤ (strength of <i>j</i>)</p>
+      <p>(weight above <i>i</i>) ≤ (strength of <i>i</i>)</p>
+      <p>which is the same as</p>
+      <p>W + (weight of <i>j</i>) ≤ (strength of <i>i</i>)</p>
+      <p>If we swap items, <i>i </i>is now above <i>j</i>. Item <i>i </i>is not squashed because if it wasn’t squashed before the swap, it won’t be squashed after the swap when it has less weight on it. You could say this more rigorously by saying that the inequality above shows that W ≤ (strength of <i>i</i>).</p>
+      <p>What about item <i>j</i>?</p>
+      <p>Item <i>j </i>now has W + (weight of <i>i</i>) above it. We need to show that this value is less than or equal to (strength of <i>j</i>). We do this by using the inequality immediately above together with the inequality stated in the question, which rearranges as:</p>
+      <p>(weight of <i>i</i>) ≤ (weight of <i>j</i>) – (strength of <i>i</i>) + (strength of <i>j</i>)</p>
+      <p>Thus</p>
+      <p>W + (weight of <i>i</i>) ≤ W + (weight of <i>j</i>) – (strength of <i>i</i>) + (strength of <i>j</i>) ≤ (strength of <i>i</i>) – (strength of <i>i</i>) + (strength of <i>j</i>) = (strength of <i>j</i>)</p>
+      <p>And we are done.</p>
+      <p>(v) Hence suggest a practical method of producing a safe packing order if one exists. Explain why. (Listing all possible orderings is not possible.)</p>
+      <p>
+        <b>Solution</b>
+      </p>
+      <p>The insight here is to realise that the inequality in part (iv) can be rearranged to be</p>
+      <p>(weight of <i>j</i>) + (strength of <i>j</i>) ≥ (weight of <i>i</i>) + (strength of <i>i</i>)</p>
+      <p>In other words, (weight + strength of j) ≥ (weight + strength of i). So, if there is a packing order and the items are arranged by (weight + strength) order, then whenever we swap adjacent items, the packing remains safe.</p>
+      <p>A practical method of producing a safe packing order is to swap adjacent items until the whole bag is thus in (weight + strength) order.</p>
+      <p>I hope you enjoyed the puzzle. I’ll be back in two weeks.</p>
+      <p>
+        <i>I set a puzzle here every two weeks on a Monday. I’m always on the look-out for great puzzles. If you would like to suggest one, <a href="mailto:bellospuzzle@gmail.com">email me</a>.</i>
+      </p>
+      <figure>
+        <img src="https://i.guim.co.uk/img/media/b6d13212d260ce7ca1ed165647cda436eaa71446/0_0_3822_5000/master/3822.jpg?width=140&amp;quality=45&amp;auto=format&amp;fit=max&amp;dpr=2&amp;s=a8799b1753fbcd052647771aabb9f7b4"/>
+      </figure>
+      <p>
+        <i>If you you enjoy puzzles, you might enjoy my latest book, <a href="https://amzn.to/2oHlTKR">So You Think You’ve Got Problems?</a>, which is out this week. It contains about 200 problems from many different genres, including logic puzzles, word puzzles, physical puzzles and geometrical puzzles. The book also includes background material about the history of the puzzles and discusses the concepts involved.</i>
+      </p>
+      <p>If you want a signed copy of <i>So you Think You’ve Got Problems</i> a small number are available through <a href="https://mathsgear.co.uk/collections/books/products/signed-copy-of-so-you-think-youve-got-problems-by-alex-bellos-pre-order">Matt Parker’s Maths Gear site</a>.</p>
+    </article>
+  </body>
+</html>

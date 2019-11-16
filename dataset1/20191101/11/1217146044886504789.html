@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://www.bleepingcomputer.com/news/security/chrome-zero-day-bug-with-exploit-in-the-wild-gets-a-patch/"/>
+    <meta property="og:site_name" content="BleepingComputer"/>
+    <meta property="article:published_time" content="2019-11-01T11:20:03+00:00"/>
+    <meta property="og:title" content="Chrome Zero-Day Bug with Exploit in the Wild Gets A Patch"/>
+    <meta property="og:description" content="Google on Thursday night started to roll out an update for Chrome that patches two use-after-free vulnerabilities, one of them having at least one exploit in the wild."/>
+  </head>
+  <body>
+    <article>
+      <h1>Chrome Zero-Day Bug with Exploit in the Wild Gets A Patch</h1>
+      <address><time datetime="2019-11-01T11:20:03+00:00">01 Nov 2019, 11:20</time> by <a rel="author" href="https://www.bleepingcomputer.com/author/ionut-ilascu/" target="_blank">Ionut Ilascu</a></address>
+      <figure>
+        <img src="https://www.bleepstatic.com/content/hl-images/2019/07/04/Google_Chrome.jpg"/>
+      </figure>
+      <p>Google on Thursday night started to roll out an update for Chrome that patches two use-after-free vulnerabilities, one of them having at least one exploit in the wild.</p>
+      <p>Both security issues are serious as they could be leveraged to take control of a vulnerable system, reads an alert from the Cybersecurity and Infrastructure Security Agency (CISA).</p>
+      <h3>Exploit in the wild</h3>
+      <p>Google says it is aware that one of the flaws has an exploit in the wild. This bug received the tracking number CVE-2019-13720 and is in the audio component of the web browser.</p>
+      <p>Kaspersky Lab malware researchers Anton Ivanov, head of the advanced threats research and detection team, and Alexey Kulaev, senior malware analyst, are credited for reporting the vulnerability on October 29.</p>
+      <p>A second use-after-free vulnerability, identified as CVE-2019-13721, was reported by on October 12 by bug hunter bananapenguin, who received a bounty of $7,500.</p>
+      <p>A direct effect of triggering a use-after-free (UAF) vulnerability is typically a crash but in certain circumstances, this type of memory corruption problem may be exploited to execute arbitrary code.</p>
+      <p>Taking advantage of these bugs is not easy. They occur when a program continues to use a pointer to memory that has already been freed.</p>
+      <p>The Open Web Application Security Project (OWASP) lists the following <a href="https://www.owasp.org/index.php/Using_freed_memory">causes for a UAF glitch</a>, which are also valid for other memory-related issues like double-free errors and leaks:</p>
+      <ul>
+        <li>Error conditions and other exceptional circumstances</li>
+        <li>Confusion over which part of the program is responsible for freeing the memory</li>
+      </ul>
+      <p>Details for the bugs are not publicly available at the moment. As a rule, Google restricts access to this information until the patch is installed for most users.</p>
+      <p>The severity level for both vulnerabilities is considered high and a fix for them is delivered with Google Chrome 78.0.3904.87, available for Windows, Mac, and Linux users. The update will reach the entire user base of the browser in the coming days, possibly weeks, Google <a href="https://chromereleases.googleblog.com/2019/10/stable-channel-update-for-desktop_31.html">informs</a> in a blog post.</p>
+    </article>
+  </body>
+</html>

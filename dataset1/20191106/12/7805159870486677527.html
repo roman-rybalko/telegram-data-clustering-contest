@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://www.xda-developers.com/tasker-update-logcat-detection-automation/"/>
+    <meta property="og:site_name" content="XDA Developers"/>
+    <meta property="article:published_time" content="2019-11-06T12:39:00+00:00"/>
+    <meta property="og:title" content="Tasker update adds Logcat detection, allowing for a lot of new automation possibilities"/>
+    <meta property="og:description" content="Tasker, the most popular Android app for automation, is getting logcat detection in its latest update. This opens up a ton of new automation possibilities."/>
+  </head>
+  <body>
+    <article>
+      <h1>Tasker update adds Logcat detection, allowing for a lot of new automation possibilities</h1>
+      <address><time datetime="2019-11-06T12:39:00+00:00">06 Nov 2019, 12:39</time> by <a rel="author" href="https://www.xda-developers.com/author/mishaalrahman/" target="_blank">Mishaal Rahman</a></address>
+      <p>For power users who want to customize every part of their phone, there are a few must-have apps. Apps like MacroDroid, Automate, and Llama all provide automation features, but in my view, none of them hold a candle to <a href="https://forum.xda-developers.com/u/tasker-tips-tricks">Tasker</a>. While it might not have the best UI, Tasker is my personal favorite automation app because of how active the developer is, how many plugins are available for it, and how active the community is. Even though Android APIs are becoming more and more restricted with each new release, the Tasker developer and community have found ways around the restrictions. The latest v5.9.beta.8 release, for example, has added a new feature that opens up a whole new realm of possible automation use cases: logcat detection.</p>
+      <p>
+        <b>Logcat Detection</b>
+      </p>
+      <p>Last month, the developer of Tasker released a new beta that <a href="https://www.xda-developers.com/tasker-join-beta-clipboard-monitoring-android-10/">enabled clipboard monitoring on Android 10</a>. Since Android 10 <a href="https://www.xda-developers.com/android-q-blocks-background-clipboard-access/">prevents background apps from reading the clipboard</a>, you might be wondering how this was possible. The answer is through reading the logcat. <a href="https://www.xda-developers.com/guide-sending-a-logcat-to-help-debug-your-favorite-app/">Logcat is a shell tool</a> that pulls a log of all system events and other events contributed by apps. Whenever a new clipboard entry is written, the corresponding system log will contain the clipboard text. By reading this log, Tasker is able to detect what the current clipboard entry is.</p>
+      <p>Normally, apps aren’t allowed to read system logs, and they also can’t ask the user to grant them permission to do so. That’s because sensitive data may exist in the log, and allowing any app the ability to read logs opens up a whole can of worms related to privacy and security. However, it’s possible for a user to manually grant an app permission to read logs. If an app like Tasker declares the READ_LOGS permission, then the user can grant this permission manually via <a href="https://www.xda-developers.com/install-adb-windows-macos-linux/">ADB</a>. When you install the latest Tasker beta, it’ll ask you to do just that.</p>
+      <p>So what can you do with the new Logcat Entry event in Tasker? The developer himself gives you a few examples:</p>
+      <p>
+        <i>   •  <a href="https://twitter.com/MishaalRahman/status/1189935370420596736">Augment Pixel 4’s motion gestures<br/></a>   •  <a href="https://www.youtube.com/watch?v=3KWXBnX6z1Y">Do different stuff for each finger when unlocking the device<br/></a>   •  <a href="https://www.youtube.com/watch?v=3GSE1q6q_Q4">React to snoozing an alarm<br/></a>   •  Do different stuff for when you unlock your device with your finger or with a pattern<br/>   •  React to the Back button being held for 1 second in any app<br/>   •  React to the software keyboard being shown/hidden<br/>   •  Do different actions on Samsung devices depending on if the power button was double-clicked or the Bixby button was pressed</i>
+      </p>
+      <p>These are all just different use cases that the developer thought up, but this is far from a comprehensive list of things you can do with logcat detection.</p>
+      <p>Here’s a video demonstrating how to use Tasker to capture and filter the logcat for a desired entry:</p>
+      <figure>
+        <iframe src="https://www.youtube.com/embed/3GSE1q6q_Q4" width="560" height="315" data-service="Youtube" scrolling="no"/>
+      </figure>
+      <p>The two issues with logcat detection are that setting it up is far from user-friendly and it’s subject to change at any time if developers tweak the logs their apps send. Getting this set up will require a bit of trial and error, but once you’ve set something up, you probably won’t have to make changes to your configuration that often.</p>
+      <p>
+        <b>New Shortcut Action</b>
+      </p>
+      <p>The current developer of Tasker is actually <a href="https://www.xda-developers.com/tasker-joao-dias-autoapps-development/">not the original developer of the app</a>. The current dev used to primarily work on a suite of Tasker plugins called AutoApps, so when he took over development work on Tasker, he started migrating the functionality of some of his plugins into the main Tasker app. The latest Tasker beta release essentially deprecates the AutoShortcut plugin by adding a new Shortcut action.</p>
+      <figure>
+        <iframe src="https://www.youtube.com/embed/pcZWcnQfzDM" width="560" height="315" data-service="Youtube" scrolling="no"/>
+      </figure>
+      <hr/>
+      <p>The new logcat entry detection and shortcut action are the two biggest changes in the latest beta release, but there are other minor changes such as an improved Get Location action, variable previewing, and bug fixes for two long-standing bugs. You can read the full changelog <a href="https://www.reddit.com/r/tasker/comments/dsf5gj/dev_tasker_59beta8_the_game_changer/">here</a>. You can sign up for the <a href="https://play.google.com/apps/testing/net.dinglisch.android.taskerm">Tasker beta on Google Play</a> or download the APK <a href="https://www.dropbox.com/s/7j58vurja7vm4hj/Tasker.28.apk?dl=0">right now</a>.</p>
+    </article>
+  </body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://www.bleepingcomputer.com/news/security/qnap-warns-users-to-secure-devices-against-qsnatch-malware/"/>
+    <meta property="og:site_name" content="BleepingComputer"/>
+    <meta property="article:published_time" content="2019-11-07T16:54:16+00:00"/>
+    <meta property="og:title" content="QNAP Warns Users to Secure Devices Against QSnatch Malware"/>
+    <meta property="og:description" content="Network-attached storage (NAS) maker QNAP urges customers to secure their NAS devices against an ongoing malicious campaign that infects them with QSnatch malware capable of stealing user credentials."/>
+  </head>
+  <body>
+    <article>
+      <h1>QNAP Warns Users to Secure Devices Against QSnatch Malware</h1>
+      <address><time datetime="2019-11-07T16:54:16+00:00">07 Nov 2019, 16:54</time> by <a rel="author" href="https://www.bleepingcomputer.com/author/sergiu-gatlan/" target="_blank">Sergiu Gatlan</a></address>
+      <figure>
+        <img src="https://www.bleepstatic.com/content/hl-images/2019/11/07/QNAP1.jpg"/>
+      </figure>
+      <p>Network-attached storage (NAS) maker QNAP urges customers to secure their NAS devices against an ongoing malicious campaign that infects them with QSnatch malware capable of stealing user credentials.</p>
+      <p>QNAP advises users to install the latest version of the Malware Remover app for the QTS operating system running on the company's NAS devices as soon as possible.</p>
+      <p>Malware Remover 3.5.4.0 and 4.5.4.0 versions are now capable of removing QSnatch after new rules were added by the company updated it on November 1.</p>
+      <p>"Users are urged to install the latest version of the Malware Remover app from QTS App Center or by manual downloading from <a href="https://www.qnap.com/go/app_center/">the QNAP website</a>," <a href="https://www.qnap.com/en/news/2019/response-to-qsnatch-attacks-take-actions-to-secure-qnap-nas">says</a> QNAP.</p>
+      <p>"Users are advised to take actions listed in the <a href="https://www.qnap.com/en/security-advisory/nas-201911-01">security advisory</a> or, alternatively, contact QNAP for technical assistance. Instructions for creating a support request can be found <a href="https://www.qnap.com/go/support-ticket/">here</a>."</p>
+      <h3>QNAP NAS devices under attack</h3>
+      <p>Researchers at the National Cyber Security Centre of Finland (NCSC-FI) found in late October that <a href="https://www.bleepingcomputer.com/news/security/qsnatch-malware-infects-thousands-of-nas-devices-steals-credentials/">thousands of QNAP NAS devices infected with QSnatch</a> had their firmware injected with malicious code.</p>
+      <p>The malware harvests and exfiltrates user credentials found on compromised NAS devices, and it is also capable of loading malicious code retrieved from its command and control (C2) servers.</p>
+      <p>Germany's Computer Emergency Response Team (CERT-Bund) <a href="https://twitter.com/certbund/status/1189890405749460992">said</a> at the time that, based on sinkhole data, around 7,000 NAS devices in Germany were impacted by QSnatch infections.</p>
+      <p>NCSC-FI found that QSnatch gets injected into the firmware of QNAP NAS devices during the infection stage, with the malicious code being "run as part of normal operations within the device."</p>
+      <p>After infecting the firmware, the device is compromised and the malware uses "domain generation algorithms to retrieve more malicious code from C2 servers."</p>
+      <p>The payloads it downloads from the C2 server is launched on infected QNAP NAS devices with system rights and it will perform the following actions:</p>
+      <p>• Operating system timed jobs and scripts are modified (cronjob, init scripts)<br/>• Firmware updates are prevented via overwriting update sources completely<br/>• QNAP MalwareRemover App is prevented from being run<br/>• All usernames and passwords related to the device are retrieved and sent to the C2 server<br/>• The malware has modular capacity to load new features from the C2 servers for further activities<br/>• Call-home activity to the C2 servers is set to run with set intervals</p>
+      <h3>Protecting your QNAP NAS</h3>
+      <p>QNAP advises users to take the following measures to defend against infections:</p>
+      <ol>
+        <li>Update QTS to the latest version.</li>
+        <li>Install and update Security Counselor to the latest version.</li>
+        <li>Use a stronger admin password.</li>
+        <li>Enable IP and account access protection to prevent brute force attacks.</li>
+        <li>Disable SSH and Telnet connections if you are not using these services.</li>
+        <li>Avoid using default port numbers 443 and 8080.</li>
+      </ol>
+      <p>The company also <a href="https://www.qnap.com/en/security-advisory/nas-201911-01">provides detailed step-by-step procedures</a> on how to change device passwords, to enable IP and account access protection, to disable SSH and Telnet connections, and to change the system port number.</p>
+      <p>This is not the first time QNAP's NAS devices have been under siege with the company issuing a <a href="https://www.qnap.com/en/security-advisory/nas-201910-02">security advisory</a> in early October about devices with weak SQL server passwords and running phpMyAdmin being attacked by <a href="https://www.bleepingcomputer.com/news/security/muhstik-ransomware-victim-hacks-back-releases-decryption-keys/">Muhstik Ransomware</a>.</p>
+      <p>Another <a href="https://www.qnap.com/en/security-advisory/nas-201907-11">advisory</a> about an <a href="https://www.bleepingcomputer.com/news/security/new-ech0raix-ransomware-brute-forces-qnap-nas-devices/">eCh0raix Ransomware</a> (also known as QNAPCrypt) campaign targeting QNAP NAS devices with weak passwords and outdated QTS firmware was published in August. One week earlier, ransomware expert BloodDolly <a href="https://www.bleepingcomputer.com/ransomware/decryptor/ech0raix-ransomware-decryptor-restores-qnap-files-for-free/">released an eCh0raix decryptor for some variants</a> in a BleepingComputer support topic.</p>
+      <p>In May 2018, QNAP also notified its customers of <a href="https://www.qnap.com/en/security-advisory/nas-201805-24">ongoing VPNFilter malware attacks</a> trying to infect NAS devices with default administrator account passwords or running QTS 4.2.6 build 20170628, 4.3.3 build 20170703, and earlier versions.</p>
+    </article>
+  </body>
+</html>

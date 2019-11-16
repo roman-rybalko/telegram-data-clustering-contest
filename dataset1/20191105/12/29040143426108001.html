@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://www.androidcentral.com/pixel-4-face-unlock-actually-work?utm_source=feedburner&amp;utm_medium=feed&amp;utm_campaign=Feed%3A+androidcentral+%28Android+Central%29"/>
+    <meta property="og:site_name" content="Android Central"/>
+    <meta property="article:published_time" content="2019-11-05T12:30:03+00:00"/>
+    <meta property="og:title" content="How does the Pixel 4's Face Unlock actually work?"/>
+    <meta property="og:description" content="The Pixel 4 is a lot of things (good and bad) but its radar-powered face unlock is very impressive."/>
+  </head>
+  <body>
+    <article>
+      <h1>How does the Pixel 4's Face Unlock actually work?</h1>
+      <address>
+        <time datetime="2019-11-05T12:30:03+00:00">05 Nov 2019, 12:30</time>
+      </address>
+      <figure>
+        <img src="https://www.androidcentral.com/sites/all/themes/mbn2_twig/assets/images/4x3.png"/>
+      </figure>
+      <figure>
+        <img src="https://www.androidcentral.com/sites/androidcentral.com/files/styles/large_wm_brw/public/article_images/2019/10/pixel-4-face-unlock_0.jpg?itok=QbeMUN5I"/>
+      </figure>
+      <p>
+        <i>Source: Android Central</i>
+      </p>
+      <p>The <a href="https://www.androidcentral.com/google-pixel-4">Pixel 4</a> does not have a fingerprint sensor and relies on using your facial features for biometrics — that means unlocking the phone and accessing apps that depend on you proving your identity. A lot of folks <a href="https://www.androidcentral.com/do-you-pixel-4s-face-unlock">aren't happy</a> with the change, but the powers that be at Google want this for its future phones, so that's what we get.</p>
+      <p>Besides the back and forth about which method is better, the biggest question about face unlock is how it works. While I can't come up with any real answers to why Google dropped the fingerprint sensor, I <i>can</i> tackle this one: face unlock works by using infrared light to make a 3D map of your facial features. And believe it or not, it's not as complicated as you might think.</p>
+      <h3>The hardware</h3>
+      <figure>
+        <img src="https://www.androidcentral.com/sites/all/themes/mbn2_twig/assets/images/1x1.png"/>
+      </figure>
+      <figure>
+        <img src="https://www.androidcentral.com/sites/androidcentral.com/files/styles/large/public/article_images/2019/07/soli_pixel_4_sensor.max-1000x1000.jpg?itok=ndiXM83F"/>
+      </figure>
+      <p>
+        <i>Source: Google</i>
+      </p>
+      <p>There is a lot of stuff in the Pixel 4's top bezel. Too much to hide in a slim bezel or a notch, which is why there isn't one. And it's all important stuff if you want to securely unlock a phone using a face.</p>
+      <blockquote>The Pixel 4's bezel isn't there to look pretty. It's a necessity.</blockquote>
+      <p>The render above from Google lists the hardware involved, and outside of the front-facing camera and the audio port, all of it is needed for face unlock. Here's how it plays out.</p>
+      <p>The <b>Soli radar chip</b> notices that a hand is approaching the phone, which "primes" the display and wakes it up. When it's picked up, the phone detects that, too, using its accelerometer. This is a signal to turn on the rest of the hardware and get ready to scan and make a face unlock attempt. This is a big reason why face Unlock is so fast: it's ready and already working before it gets close to your face.</p>
+      <p>
+        <a href="https://www.androidcentral.com/how-does-googles-soli-chip-work">More: Here's how the Pixel 4's Soli radar works and why Motion Sense has so much potential</a>
+      </p>
+      <p>Once the phone is in position, the <b>Face unlock flood illuminator</b> turns on. This is an infrared LED that's pretty bright (that's a spectrum of light greater than the red end of the visible spectrum and we can't see it with our eyes). Its purpose is to flood your face in light so that all of it is illuminated. Since we can't see it, our features won't react to the bright light.</p>
+      <blockquote>Our eyes can't process IR light no matter how "bright" it is.</blockquote>
+      <p>While the flood illuminator is turned on, the <b>Face unlock dot projector</b> is engaged. This is also an infrared LED but it has two differences compared to the flood illuminator: it uses a contrasting color (infrared light also has numerous colors even though we can't see them) and instead of a single wide beam it's broken up into thousands of small points. This creates a matrix of dots on your face that are used to define the shape.</p>
+      <p>With your face illuminated and covered with dots using infrared light, the <b>Face unlock IR cameras</b> grab an image. These cameras have been specially tuned to get a good set of data about how and where the IR dots contrast with the flood illumination. Technically, a "regular" camera can be used to do this but it would be very slow and/or very insecure.</p>
+      <h3>Software magic</h3>
+      <figure>
+        <img src="https://www.androidcentral.com/sites/all/themes/mbn2_twig/assets/images/4x3.png"/>
+      </figure>
+      <figure>
+        <video src="https://www.androidcentral.com/sites/androidcentral.com/files/article_images/2019/10/pixel-4-biometrics-unlock.gif?itok=cUHMBlPR" autoplay="" loop=""/>
+      </figure>
+      <p>
+        <i>Source: Android Central</i>
+      </p>
+      <p>Once a good "image" of your face and the IR lighting is acquired, software magic comes into play. The IR dots projected on your face are not uniform. They are when they exit the projector, but once they meet your face they are skewed and misshapen based on the surface and movement of your facial features. Using this information, the brains inside the Pixel 4 can collect data about the shape of your face and create a token during face unlock's setup. Think of this as a number between one and infinity and you'll have an idea of how it works.</p>
+      <p>
+        <a href="https://www.androidcentral.com/how-optimize-face-unlock-pixel-4">More: How to optimize Face unlock on the Pixel 4</a>
+      </p>
+      <p>This token is stored inside the phone on the <a href="https://www.androidcentral.com/now-google-has-usb-c-titan-key-every-pixel-device-should-ship-one">Titan Security Module</a>. It never leaves your phone and nothing can access the data used to create it or the token itself. Every time you use face unlock, a token is created and sent to the Titan Security Module, where it is compared with the original. If the two are a close enough match, face unlock passes the check and your phone or app can be unlocked.</p>
+      <blockquote>The token itself and the data used to create it are not available to any software.</blockquote>
+      <p>How closely the two must match is based on a couple of things. The closer the match must be the slower it will be. The faster the operation is, the less secure it is. What Google had to do was fine-tune the software algorithm so it was fast enough <b>and</b> secure enough. That's where the real work is.</p>
+      <p>The process of gathering the data by means of IR light and sensors is actually pretty common. A lot of the things you use and eat every day have been sorted or graded using this type of technology, but when you add in a security factor, things get a lot more complicated. Because most of that process is software-based, we can expect face unlock to get <a href="https://www.androidcentral.com/having-eyes-open-setting-face-unlock-wont-make-it-any-more-secure-it-will-make-internet-feel-better">even better over time</a>.</p>
+      <h4>Get More Pixel 4</h4>
+      <figure>
+        <img src="https://www.androidcentral.com/sites/all/themes/mbn2_twig/assets/images/1x1.png"/>
+      </figure>
+      <figure>
+        <img src="https://www.androidcentral.com/sites/androidcentral.com/files/article_images/2019/10/google-pixel-4-cropped.png?itok=PWJUIzCg"/>
+      </figure>
+      <h4>
+        <a href="https://www.amazon.com/Google-Pixel-XL-Black-Unlocked/dp/B07YMNLXL3?tag=androidcentralb-20&amp;ascsubtag=UUacUdUtUpixel4YYw">Google Pixel 4 &amp; 4 XL</a>
+      </h4>
+      <ul>
+        <li>
+          <a href="https://www.androidcentral.com/google-pixel-4-review">Google Pixel 4 review</a>
+        </li>
+        <li>
+          <a href="https://www.androidcentral.com/google-pixel-4-xl-review">Google Pixel 4 XL review</a>
+        </li>
+        <li>
+          <a href="https://www.androidcentral.com/best-google-pixel-4-cases">Best Pixel 4 cases</a>
+        </li>
+        <li>
+          <a href="https://www.androidcentral.com/best-pixel-4-screen-protectors">Best Pixel 4 screen protectors</a>
+        </li>
+        <li>
+          <a href="https://www.androidcentral.com/best-google-pixel-4-xl-cases">Best Pixel 4 XL cases</a>
+        </li>
+        <li>
+          <a href="https://www.androidcentral.com/best-pixel-4-xl-screen-protectors">Best Pixel 4 XL screen protectors</a>
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <a href="https://www.amazon.com/Google-Pixel-XL-Black-Unlocked/dp/B07YMNLXL3?tag=androidcentralb-20&amp;ascsubtag=UUacUdUtUpixel4YYw">Pixel 4 From $799 at Amazon</a>
+        </li>
+        <li>
+          <a href="https://www.amazon.com/Google-Pixel-XL-Black-Unlocked/dp/B07YMG37J4?tag=androidcentralb-20&amp;ascsubtag=UUacUdUtUpixel4YYw">Pixel 4 XL From $899 at Amazon</a>
+        </li>
+      </ul>
+      <p>We may earn a commission for purchases using our links. <a href="https://www.mobilenations.com/external-links">Learn more</a>.</p>
+      <figure>
+        <img src="https://www.androidcentral.com/sites/all/themes/mbn2_twig/assets/images/1x1.png"/>
+      </figure>
+      <figure>
+        <img src="https://www.androidcentral.com/sites/androidcentral.com/files/styles/w200h150crop/public/article_images/2019/10/att-store-sign-ac1.jpg?itok=GI10JpsK"/>
+      </figure>
+      <p>
+        <a href="https://www.androidcentral.com/att-will-pay-60-million-after-hiding-data-throttling"><b>Unlimited Means Limited</b> AT&amp;T will pay $60 million after hiding data throttling The FTC has settled its case with AT&amp;T for $60 million. AT&amp;T was accused of failing to inform customers of its data throttling practice while marketing plans as "unlimited."</a>
+      </p>
+      <figure>
+        <img src="https://www.androidcentral.com/sites/all/themes/mbn2_twig/assets/images/1x1.png"/>
+      </figure>
+      <figure>
+        <img src="https://www.androidcentral.com/sites/androidcentral.com/files/styles/w200h150crop/public/article_images/2016/11/android-auto-phone-car-mount-01.jpg?itok=caHGeQrI"/>
+      </figure>
+      <p>
+        <a href="https://www.androidcentral.com/android-auto-phone-screens-resurrects-android-auto-android-10-phones"><b>It's Back</b> This new Android Auto app fixes a problem Google created for newer phones Android Auto for phone screens has finally been released for users who lost access to Android Auto after the Android 10 update.</a>
+      </p>
+      <figure>
+        <img src="https://www.androidcentral.com/sites/all/themes/mbn2_twig/assets/images/1x1.png"/>
+      </figure>
+      <figure>
+        <img src="https://www.androidcentral.com/sites/androidcentral.com/files/styles/w200h150crop/public/article_images/2019/09/nokia-6.2-hands-on-preview-4.jpg?itok=xvn7qOxp"/>
+      </figure>
+      <p>
+        <a href="https://www.androidcentral.com/nokia-62-arrives-us-android-one-249"><b>A decent mid-ranger</b> The Nokia 6.2 arrives in the U.S. with Android One for $249 The Nokia 6.2 with triple rear cameras and stock Android is now available in the U.S. for $249.</a>
+      </p>
+      <figure>
+        <img src="https://www.androidcentral.com/sites/all/themes/mbn2_twig/assets/images/1x1.png"/>
+      </figure>
+      <figure>
+        <img src="https://www.androidcentral.com/sites/androidcentral.com/files/styles/w200h150crop/public/article_images/2019/10/pixel-4-in-hand.jpg?itok=tthnETOV"/>
+      </figure>
+      <p>
+        <a href="https://www.androidcentral.com/best-clear-cases-pixel-4-xl">It's easy to see why these Pixel 4 XL cases are 'clear' winners The Pixel 4 XL is a big, beautiful phone. Keep it protected without covering its design with these stellar clear cases.</a>
+      </p>
+    </article>
+  </body>
+</html>

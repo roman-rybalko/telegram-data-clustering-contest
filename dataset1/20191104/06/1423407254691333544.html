@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://blogs.windows.com/windowsdeveloper/2019/11/04/developer-platform-updates-at-microsoft-ignite-2019/"/>
+    <meta property="og:site_name" content="Windows Developer Blog"/>
+    <meta property="article:published_time" content="2019-11-04T06:00:00+00:00"/>
+    <meta property="og:title" content="Developer platform updates at Microsoft Ignite 2019"/>
+    <meta property="og:description" content="Earlier this year, we announced some awesome advancements in how developers can better connect with their customers and build people-centric experiences using the Microsoft 365 platform. Today, we’re continuing that story and sharing how you can use these enhancements to build more innovative applications and be more productive. We are focusing on three key areas: […]"/>
+  </head>
+  <body>
+    <article>
+      <h1>Developer platform updates at Microsoft Ignite 2019</h1>
+      <address><time datetime="2019-11-04T06:00:00+00:00">04 Nov 2019, 06:00</time> by <a rel="author">Kevin Gallo</a></address>
+      <p>Earlier this year, we announced some awesome advancements in how developers can better connect with their customers and build people-centric experiences using the <a href="https://aka.ms/m365devignite2019">Microsoft 365 platform</a>. Today, we’re continuing that story and sharing how you can use these enhancements to build more innovative applications and be more productive. We are focusing on three key areas:</p>
+      <ul>
+        <li>Enhancing your applications</li>
+        <li>Optimizing your end to end workflow</li>
+        <li>Providing seamless deployment solutions</li>
+      </ul>
+      <h3>Enhancing your applications</h3>
+      <p>As the gap between Win32 and the Universal Windows Platform (UWP) shrinks, you can adopt the features and tools that work best for you. A top request from developers is to use the modern UI framework down-level. Today you can start using <a href="https://aka.ms/winui3releasenotes">WinUI 3</a> Alpha, an early preview of WinUI 3 that allows you to start writing apps that will work down to the Windows 10 April 2018 Update. You can also use the <a href="http://www.platform.uno/WinUI-on-Windows7-via-UnoPlatform">Uno platform</a> to bring your WinUI code anywhere WebAssembly runs – including Windows 7. Learn more about our vision and see the <a href="https://github.com/microsoft/microsoft-ui-xaml/blob/master/docs/roadmap.md">roadmap for WinUI</a> on GitHub.</p>
+      <figure>
+        <img src="https://46c4ts1tskv22sdav81j9c69-wpengine.netdna-ssl.com/wp-content/uploads/prod/sites/3/2019/11/33338da2785f5118086d09dbc1cf63de-1024x361.png"/>
+        <figcaption>Figure 1: Conceptual overview of WinUI 3</figcaption>
+      </figure>
+      <p>React Native for Windows v0.60 now matches React Native v0.60 and is available through the <a href="https://www.npmjs.com/package/react-native-windows">latest vnext npm package</a>. Partners like HP, Citrix, epam, and axsy are incorporating React Native for Windows capabilities such as keyboard and transitions, focus handling, and Acrylic to name a few so their apps can shine on Windows devices. You can also access nearly 80% of React Native core APIs on Windows including support for native extensions. Use our <a href="https://github.com/microsoft/react-native-windows/blob/master/vnext/docs/GettingStarted.md">Getting Started Guide</a> and <a href="https://aka.ms/reactnativewindowsdocs">other docs</a> to learn more.</p>
+      <h3>Optimizing your end to end workflow</h3>
+      <p>Today, the <a href="https://blogs.windows.com/msedgedev/2019/11/04/edge-chromium-release-candidate-get-ready/">final Beta of Microsoft Edge</a> is available. You can install the browser <a href="https://www.microsoftedgeinsider.com/en-us/download/">here</a>, select the appropriate channel, and add it to your test matrix now. That way your customers can have a great experience when they begin to upgrade. The new Microsoft Edge will include Internet Explorer mode for enterprise customers, and new privacy features like tracking prevention for end users. Microsoft Edge will be available to download on Windows and macOS in January 2020.</p>
+      <p>In addition to the web updates, you’ll notice significant improvements to <a href="https://aka.ms/wsl2">Windows Subsystem for Linux 2 (WSL 2)</a>. You can now access your sites and services running in your Linux distros via <a href="https://devblogs.microsoft.com/commandline/whats-new-for-wsl-in-insiders-preview-build-18945/">localhost:port</a> – allowing you to access a node site running in Windows Subsystem for Linux via http://localhost:3000 instead.</p>
+      <figure>
+        <img src="https://46c4ts1tskv22sdav81j9c69-wpengine.netdna-ssl.com/wp-content/uploads/prod/sites/3/2019/11/8fe6d2b4cfe20df65c2bbebf987d4faf-1024x354.png"/>
+        <figcaption>Figure 2: http://localhost:3000</figcaption>
+      </figure>
+      <p>WSL 2 distros will also release unused memory back to Windows so that as you run processes inside of your WSL 2 VM, it will <a href="https://aka.ms/wsl2memoryreclaimpost">grow and shrink</a> to fit your memory needs. Once the Linux process is finished, it will free the memory in the instance and the memory footprint of the WSL 2 VM in Windows.</p>
+      <h3>Providing seamless deployment solutions</h3>
+      <p>It’s great to see all of our <a href="https://docs.microsoft.com/en-us/windows/msix/partners">MSIX tool partners</a> provide additional tooling and support for MSIX scenarios and enhance the user experience in the application deployment space. Developers can use the MSIX Packaging Tool to improve signing apps and IT Pros can leverage <a href="https://docs.microsoft.com/en-us/windows/msix/package/signing-package-device-guard-signing">Device Guard signing</a> to sign their packages with their Azure AD tenant. You can also update your packaging workflows and edit your MSIX packages by using the right-click edit option to directly launch the package editor.</p>
+      <p>With the <a href="https://aka.ms/msixappattachblog">MSIX App Attach</a> preview you can use a single package type across physical and virtual desktops. This preview provides on-demand app availability, reduces network traffic, and improves user logon times because the applications are now separated from the user profiles and the OS layer and attached to a VM at user login. This optimizes application and OS image management for virtual environments – no need to bloat the VM image with unused applications or manage app streaming infrastructure. A single VM image can be used across different user/app groups.</p>
+      <p>We know you have a lot of options when choosing which tools and features to use when updating or creating new apps and websites, and we are committed to supporting you with great tools, features, and frameworks. Please continue to share your feedback with us so we can build the best operating system for all your development tasks.</p>
+    </article>
+  </body>
+</html>

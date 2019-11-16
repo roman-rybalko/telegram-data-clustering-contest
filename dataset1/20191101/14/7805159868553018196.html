@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://www.xda-developers.com/make-android-10-desktop-mode-useful/"/>
+    <meta property="og:site_name" content="XDA Developers"/>
+    <meta property="article:published_time" content="2019-11-01T14:16:00+00:00"/>
+    <meta property="og:title" content="Make Android 10’s Hidden Desktop Mode more useful on the OnePlus 7/7T and Essential Phone"/>
+    <meta property="og:description" content="If you have a smartphone running Android 10, then you may not know that there's a hidden desktop mode. Here's how to make it more useful."/>
+  </head>
+  <body>
+    <article>
+      <h1>Make Android 10’s Hidden Desktop Mode more useful on the OnePlus 7/7T and Essential Phone</h1>
+      <address><time datetime="2019-11-01T14:16:00+00:00">01 Nov 2019, 14:16</time> by <a rel="author" href="https://www.xda-developers.com/author/mishaalrahman/" target="_blank">Mishaal Rahman</a></address>
+      <h3>Sorry Pixel 4 owners, this won't work on your phone</h3>
+      <p>One of the most talked-about features <a href="https://www.xda-developers.com/android-q-dark-theme-desktop-mode-permission-revamp/">prior to the release of Android 10</a> was desktop mode. When we first heard that Google’s next major Android OS would natively support desktop mode, we were hoping it would be something akin to Samsung DeX or Huawei Easy Projection. Sadly, it <a href="https://www.xda-developers.com/android-q-desktop-mode/">was anything but</a>. Google built a barebones launcher for external displays <a href="https://www.xda-developers.com/google-more-information-desktop-mode-android-q/">so developers can test</a> what their apps might look like on large displays, but they didn’t even bother <a href="https://www.xda-developers.com/google-pixel-4-what-you-missed/">adding display out support on the Pixel 4</a>. Sadly, this means that Android 10’s hidden desktop mode is unusable on the latest Pixel smartphone, but if you have the <a href="https://forum.xda-developers.com/essential-phone">Essential Phone</a>, OnePlus 7/7 Pro, OnePlus 7T/7T Pro, or any other phone with video output over USB-C, then there’s a way to make it more useful.</p>
+      <slideshow>
+        <figure>
+          <img src="https://www.xda-developers.com/files/2019/10/Android-10-Stock-Desktop.jpg"/>
+          <figcaption>Stock Android 10 Desktop Mode with no UI tweaks.</figcaption>
+        </figure>
+        <figure>
+          <img src="https://www.xda-developers.com/files/2019/10/Android-10-Custom-Desktop.jpg"/>
+          <figcaption>Customized Android 10 Desktop Mode with UI tweaks. I am running Google Chrome, Google Docs, and YouTube simultaneously. The YouTube video plays without pausing when I switch focus to another app thanks to <a href="https://www.xda-developers.com/android-q-splitscreen-multitasking-multi-resume/">multi-resume in Android 10</a>.</figcaption>
+        </figure>
+      </slideshow>
+      <p>First, here are some requirements that you have to meet:</p>
+      <p>
+        <i><b>Requirements:<br/></b>  1. Your Android smartphone must be running Android 10.<br/>  2. Your Android smartphone needs to support <a href="https://vesa.org/featured-articles/vesa-highlights-growing-adoption-of-displayport-over-usb-c-new-codec-for-handheld-device-specific-display-interface-compression-at-mobile-world-congress/">DisplayPort Alt Mode.</a> Here’s a <a href="https://webcache.googleusercontent.com/search?q=cache:LAFp7ZoYWQsJ:https://en.wikipedia.org/wiki/List_of_devices_with_video_output_over_USB-C+&amp;cd=22&amp;hl=en&amp;ct=clnk&amp;gl=us">partial list of phones with support</a>. If you have a smartphone with the Qualcomm <a href="https://www.xda-developers.com/tag/qualcomm-snapdragon-835/">Snapdragon 835</a>, Qualcomm <a href="https://www.xda-developers.com/tag/qualcomm-snapdragon-845/">Snapdragon 845</a>, or Qualcomm Snapdragon 855 and a USB 3.1 Type-C port, then your smartphone should support DisplayPort Alt Mode unless the phone vendor deliberately disabled it. Google <a href="https://android.googlesource.com/kernel/msm/+/184170bea097dec34b9871fc724dcac9b5989427%5E%21/#F0">disabled it</a> on the Pixel 4, for example.<br/>  3. You need a USB 3.1 Type-C to HDMI adapter. <a href="https://www.amazon.com/AmazonBasics-USB-Type-C-HDMI-Adapter/dp/B01M3PTUV6/">I bought this one off of Amazon</a>. You’ll also need a Bluetooth mouse and keyboard if you want a more pleasant experience.</i>
+      </p>
+      <p>Next, here’s how to set it up:</p>
+      <ol>
+        <li>Enable Developer Options on your phone. Go to Settings &gt; About phone and tap on “build number” 7 times.</li>
+        <li>Go to Settings &gt; Developer options and scroll down until you reach the “APPS” section. Turn on “enable freeform windows” and “force desktop mode.”</li>
+        <li>Reboot your phone.</li>
+        <li><a href="https://github.com/farmerbb/libtaskbar-Lawnchair-Example/releases/download/libtaskbar/Lawnchair-quickstep-lawnchair-dev-debug.apk">Install this APK</a>. It’s a customized version of the popular <a href="https://play.google.com/store/apps/details?id=ch.deletescape.lawnchair.plah">Lawnchair</a> launcher with <a href="https://play.google.com/store/apps/details?id=com.farmerbb.taskbar">TaskBar</a> integrated into it. This APK was made by XDA Senior Member <a href="https://forum.xda-developers.com/member.php?u=4289533">farmerbb</a> as a proof-of-concept to show custom launcher developers how they can add desktop mode support*.</li>
+        <li>Go to Settings &gt; Apps &amp; notifications &gt; Default apps and set Lawnchair as the default launcher.</li>
+        <li>Plug your phone into your monitor/TV using the adapter.</li>
+        <li>In a few seconds, you should see the custom Android 10 desktop interface appear on the screen. You’ll have to grant TaskBar permission to “display over other apps” as requested in order to show the bottom bar. If you also want TaskBar to show your recent apps in the bottom bar, you should also grant it the “usage access” permission as requested.</li>
+      </ol>
+      <p>I would wager that everything looks way too big on your monitor/TV right now. That’s because the default DPI for desktop mode in Android 10 is 320, which makes everything look huge. Also, the navigation bar/Android 10 gestural navigation pill probably looks unsightly on your display. There’s a way to fix this, but it requires the installation of another app by farmerbb.</p>
+      <ol>
+        <li>Disconnect your phone from your monitor/TV and connect it to your PC.</li>
+        <li><a href="https://www.xda-developers.com/install-adb-windows-macos-linux/">Download and install ADB on your PC</a>.</li>
+        <li>Install <a href="https://play.google.com/store/apps/details?id=com.farmerbb.secondscreen.free">SecondScreen</a> from the Google Play Store. Make sure you’re on version 2.9.1 of the app with support for Android 10 Desktop Mode (as noted in the changelog.)</li>
+        <li>
+          <p>Run the following command from your PC, as instructed by the app:</p>
+          <p>
+            <code>adb shell pm grant com.farmerbb.secondscreen.free android.permission.WRITE_SECURE_SETTINGS</code>
+          </p>
+        </li>
+        <li>Now you can control the UI of the external display using this app! It uses the hidden <a href="https://android.googlesource.com/platform/frameworks/base/+/master/services/core/java/com/android/server/wm/WindowManagerShellCommand.java">WindowManagerShellCommand</a> to tweak the density to make UI elements appear smaller, overscan to hide the navigation bar, and/or resolution to match that of the external display. Play around with these values until you get something you’re comfortable with.</li>
+      </ol>
+      <p>That’s it! Enjoy desktop mode on your Android 10 smartphone. We’re not sure why Google disabled DisplayPort Alt Mode functionality on the Pixel 4, so we reached out for comment and will update you if we hear back. If you’re a custom launcher developer interested in integrating TaskBar into your launcher, you can find the instructions <a href="https://github.com/farmerbb/Taskbar/blob/master/lib/README.md">here</a>.</p>
+      <hr/>
+      <p>
+        <i>Update 1 (11/1/19 @ 2:17 PM ET): This article was updated to simplify the instructions on how to tweak the UI of the external display.</i>
+      </p>
+    </article>
+  </body>
+</html>

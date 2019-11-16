@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://www.nature.com/articles/d41586-019-03332-7"/>
+    <meta property="og:site_name" content="Nature"/>
+    <meta property="article:published_time" content="2019-11-07T00:00:00+00:00"/>
+    <meta property="og:title" content="AI Copernicus ‘discovers’ that Earth orbits the Sun"/>
+    <meta property="og:description" content="A neural network that teaches itself the laws of physics could help to solve quantum-mechanics mysteries."/>
+  </head>
+  <body>
+    <article>
+      <h1>AI Copernicus ‘discovers’ that Earth orbits the Sun</h1>
+      <h2>A neural network that teaches itself the laws of physics could help to solve quantum-mechanics mysteries.</h2>
+      <address><time datetime="2019-11-07T00:00:00+00:00">07 Nov 2019</time> by <a rel="author">Davide Castelvecchi</a></address>
+      <figure>
+        <img src="https://media.nature.com/w800/magazine-assets/d41586-019-03332-7/d41586-019-03332-7_17330908.jpg"/>
+        <figcaption>Physicists have designed artificial intelligence that thinks like the astronomer Nicolaus Copernicus by realizing the Sun must be at the centre of the Solar System.<br/>Credit: NASA/JPL/SPL</figcaption>
+      </figure>
+      <p>Astronomers took centuries to figure it out. But now, a machine-learning algorithm inspired by the brain has worked out that it should place the Sun at the centre of the Solar System, based on how movements of the Sun and Mars appear from Earth. The feat is one the first tests of a technique that researchers hope they can use to discover new laws of physics, and perhaps to reformulate quantum mechanics, by finding patterns in large data sets. The results are due to appear in <i>Physical Review Letters</i> [<sup><a href="https://www.nature.com/articles/d41586-019-03332-7#ref-CR1">1</a></sup>].</p>
+      <p>Physicist Renato Renner at the Swiss Federal Institute of Technology (ETH) in Zurich and his collaborators wanted to design an algorithm that could distill large data sets down into a few basic formulae, mimicking the way that physicists come up with concise equations like <i>E</i> = <i>mc</i> [<sup>2</sup>]. To do this, the researchers had to design a new type of neural network, a machine-learning system inspired by the structure of the brain.</p>
+      <p>Conventional neural networks learn to recognize objects — such as images or sounds — by training on huge data sets. They discover general features — for example, 'four legs' and 'pointy ears' might be used to identify cats. They then encode those features in mathematical 'nodes', the artificial equivalent of neurons. But rather than distilling that information into a few, easily interpretable rules, as physicists do, neural networks are something of a black box, spreading their acquired knowledge across thousands or even millions of nodes in ways that are unpredictable and difficult to interpret.</p>
+      <p>So Renner’s team designed a kind of ‘lobotomized’ neural network: two sub-networks that were connected to each other through only a handful of links. The first sub-network would learn from the data, as in a typical neural network, and the second would use that ‘experience’ to make and test new predictions. Because few links connected the two sides, the first network was forced to pass information to the other in a condensed format. Renner likens it to how an adviser might pass on their acquired knowledge to a student.</p>
+      <h3>Planet positioning</h3>
+      <p>One of the first tests was to give the network simulated data about the movements of Mars and the Sun in the sky, as seen from Earth. From this point of view, Mars’s orbit of the Sun appears erratic, for example it periodically goes ‘retrograde’, reversing its course. For centuries, astronomers thought that Earth was at the centre of the Universe, and explained Mars’s motion by suggesting that planets moved in small circles, called epicycles, in the celestial sphere. But in the 1500s, Nicolaus Copernicus found that the movements could be predicted with a much simpler system of formulas if both Earth and the planets were orbiting the Sun.</p>
+      <p>The team’s neural network came up with Copernicus-style formulas for Mars’s trajectory, rediscovering “one of the most important shifts of paradigms in the history of science”, says Mario Krenn, a physicist at the University of Toronto in Canada who works on applying artificial intelligence to scientific discovery.</p>
+      <p>Renner stresses that although the algorithm derived the formulae, a human eye is needed to interpret the equations and understand how they relate to the movement of planets around the Sun.</p>
+      <p>This work is important because it is able to single out the crucial parameters that describe a physical system, says roboticist Hod Lipson at Columbia University in New York City. “I think that these kinds of techniques are our only hope of understanding and keeping pace with increasingly complex phenomena, in physics and beyond,” he says.</p>
+      <p>Renner and his team want to develop machine-learning technologies that could help physicists to solve apparent contradictions in quantum mechanics. The theory <a href="https://www.nature.com/articles/d41586-018-06749-8">seems to produce conflicting predictions</a> about the outcome of an experiment and the way it is seen by an observer who is subjected to its laws [<sup><a href="https://www.nature.com/articles/d41586-019-03332-7#ref-CR2">2</a></sup>].</p>
+      <p>“It’s possible that the current way [quantum mechanics is] formulated is in some way just a historical artefact,” says Renner. He adds that a computer could come up with a formulation that is free of such contradictions, but the team’s latest techniques are not yet sophisticated enough to do so. To move towards that goal, he and his collaborators are trying to develop a version of their neural network that can not only learn from experimental data, but also propose entirely new experiments to test its hypotheses.</p>
+      <p>Nature <b>575</b>, 266-267 (2019)</p>
+      <p>doi: 10.1038/d41586-019-03332-7</p>
+      <h3>References</h3>
+      <p>1. <anchor name="ref-CR1"/>Iten, R., Metger, T., Wilming, H., del Rio, L. &amp; Renner, R. <i>Phys. Rev. Lett</i>. (in the press).</p>
+      <p>2. <anchor name="ref-CR2"/>Frauchiger, D. &amp; Renner, R. <i>Nature Commun.</i> <b>9</b>, 3711 (2018).</p>
+      <related>
+        <a href="http://www.nature.com/articles/d41586-019-03430-6"/>
+        <a href="http://www.nature.com/articles/s41586-019-1657-6"/>
+        <a href="http://www.nature.com/articles/d41586-019-03366-x"/>
+        <a href="http://www.nature.com/articles/d41586-019-03464-w"/>
+        <a href="http://www.nature.com/articles/d41586-019-03465-9"/>
+        <a href="http://www.nature.com/articles/d41586-019-03463-x"/>
+      </related>
+    </article>
+  </body>
+</html>

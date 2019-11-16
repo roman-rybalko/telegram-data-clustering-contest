@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://www.xatakamovil.com/desarrollo/pixel-4-tienen-modo-oculto-para-mejorar-brillo-pantalla-siempre-cuando-tengas-movil-rooteado?utm_source=feedburner&amp;utm_medium=feed&amp;utm_campaign=Feed%3A+xatakamovil+%28Xataka+M%C3%B3vil%29"/>
+    <meta property="og:site_name" content="Xataka Móvil"/>
+    <meta property="article:published_time" content="2019-11-07T08:02:01+00:00"/>
+    <meta property="og:title" content="Los Pixel 4 tienen un modo oculto para mejorar el brillo de la pantalla siempre y cuando tengas el móvil rooteado"/>
+    <meta property="og:description" content="Puede que a la hora de comprar un móvil sean muchos los usuarios que se guían por el tamaño de la pantalla, la cantidad de megapíxeles de la cámara o..."/>
+  </head>
+  <body>
+    <article>
+      <h1>Los Pixel 4 tienen un modo oculto para mejorar el brillo de la pantalla siempre y cuando tengas el móvil rooteado</h1>
+      <address><time datetime="2019-11-07T08:02:01+00:00">07 Nov 2019, 08:02</time> by <a rel="author" href="https://www.xatakamovil.com/autor/jose-antonio-carmona" target="_blank">Jose Antonio Carmona</a></address>
+      <p>Puede que a la hora de comprar un móvil sean muchos los usuarios que se guían por el tamaño de la pantalla, la cantidad de megapíxeles de la cámara o simplemente por el diseño. Muchos factores que controlar entre los que hay uno muy importante y que sin embargo pasa desapercibido: <b>el brillo de la pantalla</b>.</p>
+      <p>El Pixel 4 y ya lo vimos en nuestro <a href="https://www.xataka.com/analisis/google-pixel-4-xl-analisis-caracteristicas-precio-especificaciones">análisis</a>, es un móvil con una gran pantalla y brillo adecuado que sin embargo se puede quedar corto bajo ciertas circunstancias. Puede que con la barra de brillo situada al máximo, donde las mediciones realizadas le otorgan una luminosidad que no pasa de 450 nits, tengamos algún apuro. Un valor, esos 450 nits, que ahora sabemos que <b>se puede incrementar, eso sí, sólo en el caso de contar con acceso <i>root</i></b>.</p>
+      <h3>Mejorar el brillo</h3>
+      <figure>
+        <img src="https://i.blogs.es/94c071/pantalla/1366_2000.jpg"/>
+      </figure>
+      <p>Y es que si tienes root en un teléfono Pixel 4 puedes <b>acabar con la limitación de esos 450 nits de brillo</b> que pueden hacer que bajo una luz exterior fuerte o intensa (en la costa a pleno solo puede ser difícil ver la pantalla) la pantalla pierda casi toda la visibilidad.</p>
+      <p>Con root <b>se puede activar el modo alto brillo por medio de un menú oculto</b>, una posibilidad que no vamos a encontrar para activar de forma manual en ninguna parte de la "Configuración". Un modo que no es compatible con el "Brillo Adaptativo" y que se puede activar añadiendo los siguientes comandos en la consola adb. Adb es el terminal que usamos para introducir comandos en el teléfono:</p>
+      <blockquote>su<br/><br/>echo on &gt;&gt; /sys/class/backlight/panel0-backlight/hbm_mode</blockquote>
+      <p>Una vez habilitada la opción dentro del sistema, el modo de alto brillo <b>entra a funcionar sólo cuando la pantalla alcanza los niveles máximos de brillo</b> en la interfaz de usuario y desaparece una vez la pantalla entra en reposo. Eso sí, se puede usar un administrador de tareas como Tasker para automatizar su funcionamiento.</p>
+      <related>
+        <a href="https://www.xataka.com/moviles/google-pixel-4-pixel-4-xl-caracteristicas-precio-ficha-tecnica"/>
+      </related>
+      <p>Con este sistema <b>se pueden alcanzar los 610 nits de brillo</b>, una cantidad más acorde a lo que ofrecen otros modelos de la competencia, un salto que hace que la pantalla sea más usable bajo condiciones lumínicas adversas. Eso sí, hay que tener en cuenta que dejar activo por defecto el modo "alto brillo" puede repercutir en la autonomía del teléfono, por lo que desde <a href="https://www.xda-developers.com/google-pixel-4-high-brightness-mode-fix/">XDADevelopers</a> dejan claro que es aconsejable dejar habilitado "Brillo Adaptativo".</p>
+      <p>En este sentido hay que destacar como cuentan los descubridores de esta opción que, tras habilitar el modo de alto brillo, <b>es aconsejable restablecer el "Brillo Adaptativo"</b> en la ruta "Configuración &gt; Aplicaciones y notificaciones &gt; Todas las aplicaciones &gt; Servicios de salud del dispositivo &gt; Almacenamiento y caché &gt; Borrar almacenamiento".</p>
+      <h3>Rootear el móvil</h3>
+      <figure>
+        <img src="https://i.blogs.es/1d787e/root/1366_2000.jpg"/>
+      </figure>
+      <p>Rootear el teléfono es un paso que <a href="https://www.xatakandroid.com/tag/rootear">cada vez emplea menos la gente</a>, al menos la generalidad de los usuarios. Rootear el teléfono no es más que <b>conceder al usuario el poder para que las aplicaciones tengan acceso a una serie de permisos</b> a los que normalmente no pueden acceder, permisos que suelen denominarse como «permisos de super-usuario o root. Desde ese momento una app tiene acceso a todo el sistema. Podemos instalar un sistema de reinicio avanzado, roms de terceros o acceder a funciones ocultas del móvil, como esta que nos ocupa.</p>
+      <p>Para rootear un teléfono, es necesario realizar una serie de <b>pasos que pueden variar en cada modelo de teléfono a usar</b>. Se puede hacer de forma manual con la consola ADB o ejecutando alguna aplicación que haga todo el proceso y facilite la tarea. Una vez dicho todo esto, hay que tener en cuenta una serie de consideraciones:</p>
+      <ul>
+        <li>Hacer root a un teléfono no está exento de riesgo, así que hay que hacerlo sin desviarse de los pasos en cada caso establecidos.</li>
+        <li>Al rootear un teléfono en algunas marcas se puede perder la garantía.</li>
+        <li>Cada teléfono tiene un proceso distinto para lograr el rooteo.</li>
+      </ul>
+      <p>Fuente | <a href="https://www.xda-developers.com/google-pixel-4-high-brightness-mode-fix/">XDADevelopers</a></p>
+    </article>
+  </body>
+</html>

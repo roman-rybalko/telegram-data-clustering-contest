@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://www.tomshw.it/hardware/intel-o-amd-il-dilemma-che-affligge-netflix/"/>
+    <meta property="og:site_name" content="Tom's Hardware"/>
+    <meta property="article:published_time" content="2019-11-05T17:35:00+00:00"/>
+    <meta property="og:title" content="Intel o AMD? Il dilemma che affligge Netflix"/>
+    <meta property="og:description" content="Netflix ha bisogno di mantenere datacenter sempre al passo con i tempi. L'azienda valuta due soluzioni: piattaforma Intel con due CPU Xeon o una piattaforma AMD con una sola CPU EPYC."/>
+  </head>
+  <body>
+    <article>
+      <h1>Intel o AMD? Il dilemma che affligge Netflix</h1>
+      <address><time datetime="2019-11-05T17:35:00+00:00">05 Nov 2019, 17:35</time> by <a rel="author">Giulio Bagnato</a></address>
+      <p><b>Netflix potrebbe adottare CPU AMD EPYC per i propri datacenter</b>. Nulla di certo e definitivo, ma comunque un’opzione sul campo.</p>
+      <p><a href="https://2019.eurobsdcon.org/talk-speakers/#numa">In una presentazione</a> di Drew Gallatin (Senior Software Engineer) alla EuroBSDCon (diffusa su Twitter da <a href="https://twitter.com/david_schor/status/1191454633732059136">@DavidSchor</a>), l’azienda ha infatti dichiarato di voler raggiungere <b>un bandwidth di 200 Gbps con i propri server</b>, e per questo sta vagliando le proposte di Intel e AMD.</p>
+      <figure>
+        <img src="https://www.tomshw.it/images/images/2019/11/netflix-server-xeon-epyc-rome-60738.768x432.jpg"/>
+      </figure>
+      <p>Ad oggi Netflix dispone di server in grado di raggiungere facilmente i 100 Gbps, ma in vista di una futura espansione sta cercando di capire <b>qual è il tipo di piattaforma che potrebbe rispondere meglio alle sue necessità</b>.</p>
+      <p>L’attuale configurazione usata da Netflix consiste in una piattaforma Intel Xeon a singolo socket e, considerando che l’obiettivo è raddoppiare le prestazioni, la scelta potrebbe essere la seguente: <b>optare per una piattaforma Xeon dual socket o, in alternativa, una piattaforma AMD EPYC single socket.</b></p>
+      <p>Poiché entrambe le soluzioni hanno un TCO (Total Cost of Ownership – Costo totale di gestione) simile, la scelta probabilmente si concentrerà sulle mere caratteristiche tecniche dei due sistemi.</p>
+      <p><b>Oggi come oggi Netflix usa un mix di CPU Xeon Broadwell e Skyalake/Cascade Lake</b>. Gli Xeon basati su Broadwell hanno un bandwidth di memoria di 60 GB/s, oltre a 40 linee PCIe 3.0 (per un totale di 32 GB/s), mentre gli Xeon Intel Skylake/Cascade Lake Xeon offrono un bandwidth di memoria di 90 GB/s, oltre a 48 linee PCIe 3.0 (38 GB/s).</p>
+      <figure>
+        <img src="https://www.tomshw.it/images/images/2019/11/netflix-intel-amd-cpu-server-60892.768x432.jpg"/>
+      </figure>
+      <p>Questo sistema non è in grado di garantire i 200 GB/s totali che ricerca Netflix, quindi si stanno valutando due soluzioni: <b>la prima è un sistema con due Intel Xeon Silver 4116/4216</b>. Queste CPU garantirebbero un bandwidth di memoria di 180 GB/s (90 GB/s per ogni socket) e 96 linee PCIe 3.0 (per un totale di 75 GB/s). Le due CPU Xeon sarebbero collegate da 2 link UPI e garantirebbero a Netflix di ottenere i 200 GB/s.</p>
+      <figure>
+        <img src="https://www.tomshw.it/images/images/2019/11/netflix-intel-amd-cpu-server-60891.768x432.jpg"/>
+      </figure>
+      <p><b>La seconda soluzione invece comprenderebbe una CPU AMD EPYC Naples/Rome 7551 o 7502P</b>. Infinity Fabric collegherebbe i quattro chiplet all’interno della CPU EPYC, consentendo un bandwidth di memoria di 120-150 GB/s. La configurazione AMD darebbe inoltre accesso a 128 linee di PCIe 3.0 (4.0 nel caso del modello 7502P, per una larghezza di banda di memoria fino a 200 GB/s).</p>
+      <p>La presentazione conclude come la soluzione basata su processori Intel Xeon possa raggiungere un throughput, ossia la capacità di trasmissione dati, di 191 Gb/s. Qualcosa in meno dei 194 Gbps della piattaforma EPYC.</p>
+      <p>Considerando che entrambi i sistemi hanno un costo simile, Netflix potrebbe usare indifferentemente CPU Intel o AMD, anche se la soluzione basata su CPU EPYC garantirebbe prestazioni leggermente superiori.</p>
+      <figure>
+        <img src="https://www.tomshw.it/images/images/2019/11/netflix-server-xeon-epyc-rome-60736.768x432.jpg"/>
+      </figure>
+      <p>Essendo ancora in fase di valutazione iniziale è difficile dire su che hardware punterà Netflix, ma se da una parte AMD sembra in vantaggio sotto molti aspetti, potrebbe esserci la discriminante legata a eventuali costi di migrazione da un sistema Intel a uno AMD. Staremo a vedere!</p>
+    </article>
+  </body>
+</html>

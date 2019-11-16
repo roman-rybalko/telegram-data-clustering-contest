@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://www.androidworld.it/2019/11/01/avete-un-oneplus-77t-essential-phone-potete-provare-la-modalita-desktop-android-10-foto-677453/"/>
+    <meta property="og:site_name" content="AndroidWorld"/>
+    <meta property="article:published_time" content="2019-11-01T18:02:09+00:00"/>
+    <meta property="og:title" content="Se avete un OnePlus 7/7T o Essential Phone potete provare la modalità Desktop di Android 10 (foto)"/>
+    <meta property="og:description" content="Agli inizi dello sviluppo di Android 10 abbiamo trovato una interessante novità: la modalità desktop. Sono passati i mesi e..."/>
+  </head>
+  <body>
+    <article>
+      <h1>Se avete un OnePlus 7/7T o Essential Phone potete provare la modalità Desktop di Android 10 (foto)</h1>
+      <address><time datetime="2019-11-01T18:02:09+00:00">01 Nov 2019, 18:02</time> by <a rel="author" href="https://www.androidworld.it/author/robottin/" target="_blank">Matteo Bottin</a></address>
+      <p>Agli inizi dello sviluppo di <a href="https://www.androidworld.it/tag/android-10/">Android 10</a> abbiamo trovato una interessante novità: la <a href="https://www.androidworld.it/2019/03/14/beta-android-q-modalita-desktop-618556/">modalità desktop</a>. Sono passati i mesi e di questa modalità se ne è persa traccia. Anzi, non è corretto: Google la ha presa e la ha <b>nascosta sotto al tappeto</b>. Fortunatamente, alcuni smartphone supportano l’uscita video e hanno Android 10 (come gli <b>OnePlus 7/7 Pro</b> e <b>7T/7T Pro</b> e <b>Essential Phone</b>), dunque è possibile lavorare per farla funzionare in maniera “decente”.</p>
+      <p>Tutto il procedimento è <a href="https://www.xda-developers.com/make-android-10-desktop-mode-useful/">descritto su XDA Developers</a>, ma cercheremo di riassumerlo brevemente. I <b>requisiti</b> per questa modalità sono:</p>
+      <ul>
+        <li>Lo smartphone deve avere Android 10</li>
+        <li>Lo smartphone deve supportare la DisplayPort Alt Mode (<a href="https://webcache.googleusercontent.com/search?q=cache:LAFp7ZoYWQsJ:https://en.wikipedia.org/wiki/List_of_devices_with_video_output_over_USB-C+&amp;cd=22&amp;hl=en&amp;ct=clnk&amp;gl=us">qui una lista parziale</a>). Non tutti gli smartphone sono compatibili, perché il produttore potrebbe aver disabilitato la funzione (come accade con Pixel 4, <a href="https://android.googlesource.com/kernel/msm/+/184170bea097dec34b9871fc724dcac9b5989427%5E%21/#F0">vero Google?</a>)</li>
+        <li>È necessario un adattatore USB-C/HDMI. Inoltre, per facilitarvi la vita, dovreste tenere a portata di mano un mouse e una tastiera bluetooth.</li>
+      </ul>
+      <h3>Come lanciare la modalità desktop nascosta di Android 10</h3>
+      <ol>
+        <li>Abilitare le opzioni sviluppatore andando in Impostazioni &gt; Informazioni sul telefono e toccando 7 volte la Versione build</li>
+        <li>Entrate nelle impostazioni sviluppatore e cercate la sezione “APPS”. Qui abilitate “<i>enable freeform windows</i>” e “<i>force desktop mode</i>” (in italiano le voci potrebbero cambiare)</li>
+        <li>Riavviate il telefono</li>
+        <li>Installate <a href="https://github.com/farmerbb/libtaskbar-Lawnchair-Example/releases/download/libtaskbar/Lawnchair-quickstep-lawnchair-dev-debug.apk">questo APK</a> (è una versione modificata di Lewnchair launcher)</li>
+        <li>Impostate Lawnchair come launcher principale (Impostazioni &gt; App e notifiche &gt; App di default)</li>
+        <li>Collegate il telefono al monitor usando l’adattatore</li>
+        <li>Dopo qualche secondo dovreste veder comparire la modalità desktop sullo schermo. Accettate i permessi richiesti per mostrare la barra inferiore e le app recenti</li>
+      </ol>
+      <p>In questo modo potrete godervi una <b>rudimentale modalità desktop</b> (come la si vede nella prima immagine in galleria). Se voleste raffinare il tutto, potreste farlo tramite <b>alcuni comandi di ADB</b>. Quest’ultimo passaggio è più complesso e non adatto a tutti: se voleste comunque darci un’occhiata, vi lasciamo alla <a href="https://www.xda-developers.com/make-android-10-desktop-mode-useful/">spiegazione dettagliata di XDA</a>.</p>
+      <p>Fonte: <a href="https://www.xda-developers.com/make-android-10-desktop-mode-useful/">XDA Developers</a></p>
+    </article>
+  </body>
+</html>

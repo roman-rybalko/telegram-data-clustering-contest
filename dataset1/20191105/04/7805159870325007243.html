@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://www.xda-developers.com/google-file-manager-devs-submit-form-broad-file-storage-access-android-11/"/>
+    <meta property="og:site_name" content="XDA Developers"/>
+    <meta property="article:published_time" content="2019-11-05T04:47:00+00:00"/>
+    <meta property="og:title" content="Google will make file manager devs submit a form to get broad file storage access in Android 11"/>
+    <meta property="og:description" content="In order to bolster security, Google will require file manager developers to submit a form to get broad file storage access in Android 11."/>
+  </head>
+  <body>
+    <article>
+      <h1>Google will make file manager devs submit a form to get broad file storage access in Android 11</h1>
+      <address><time datetime="2019-11-05T04:47:00+00:00">05 Nov 2019, 04:47</time> by <a rel="author" href="https://www.xda-developers.com/author/pranobmehrotra/" target="_blank">Pranob Mehrotra</a></address>
+      <p>The Android 10 beta 2 <a href="https://www.xda-developers.com/android-q-beta-2-everything-new/">released earlier this year</a> revealed that Google was planning to limit the way apps can access your phone’s internal storage. For this purpose, Google introduced something called Scoped Storage. However, due to backlash from several developers, the company <a href="https://www.xda-developers.com/google-gives-developers-more-time-android-q-scoped-storage/">had to backtrack</a> on its implementation. The company allowed apps that don’t yet target Android 10 to work as they used to and gave developers time until November 1st, 2020 to update their apps to target Android 10.</p>
+      <p>Apps that already target Android 10 by default can only see files in their app-specific directory. In order to access files that other apps have created, such as photos, images, videos, and audio, the apps still have to request the READ_EXTERNAL_STORAGE permission, but getting this permission now no longer gives access to the entire /data/media partition. Instead, they only see files in the well-defined locations provided by the MediaStore API. While this implementation works for apps that require access to media files, it doesn’t work for file manager apps.</p>
+      <p>File managers need broad access to the external storage in order to work and if they target Android 10, the <a href="https://www.xda-developers.com/android-q-storage-access-framework-scoped-storage/">only way to get broad file access</a> is to use the Storage Access Framework (SAF) API. Even though SAF has been around since Android 5.0 Lollipop,  developers tend to not use it, as it has a difficult and poorly documented API, a poor user experience, poor performance, and poor reliability. Now, Google aims to address these issues with Android 11.</p>
+      <figure>
+        <img src="https://www.xda-developers.com/files/2019/11/Special-App-Access-Scoped-Storage.jpg"/>
+      </figure>
+      <p>According to a recent talk titled “Preparing for Scoped Storage” presented by Googlers Roxanna Aliabadi, Zimuzo Ezeozue, and Yacine Rezgui, Google is planning on granting “special app access for select use cases.” As part of the talk, they mention that this “special app access” is only given to apps that prove a “clear need” for full access to shared storage, “submit a declaration form” to Google, and don’t access “external app directories”.</p>
+      <figure>
+        <img src="https://www.xda-developers.com/files/2019/11/Special-App-Access-Scoped-Storage-2.jpg"/>
+      </figure>
+      <p>This means that file managers will have to ask Google for permission to access the external storage, much like how apps requesting SMS/Call Log permissions have to ask Google. Thus, there could be arbitrary enforcement issues, much like we’ve seen in the past with Google Play’s decisions. Lastly, another potential issue is the fact that file managers will no longer have access to external app directories. Therefore, things like mods for games won’t work anymore.</p>
+      <hr/>
+      <p>
+        <b>Source: <a href="https://youtu.be/UnJ3amzJM94?t=543">YouTube</a></b>
+      </p>
+      <p>
+        <b>Via: <a href="https://www.reddit.com/r/androiddev/comments/dr9p98/according_to_google_storage_permission_can_be/">Reddit</a></b>
+      </p>
+    </article>
+  </body>
+</html>

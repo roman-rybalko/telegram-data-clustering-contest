@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://www.forbes.com/sites/marcochiappetta/2019/11/06/mlperf-inference-benchmarks-show-nvidia-strength-company-expands-jetson-ai-edge-offerings/?utm_source=dlvr.it&amp;utm_medium=twitter"/>
+    <meta property="og:site_name" content="Forbes"/>
+    <meta property="article:published_time" content="2019-11-06T00:00:00+00:00"/>
+    <meta property="og:title" content="MLPerf Inference Benchmarks Show NVIDIA Strength, Company Expands Jetson AI Edge Offerings"/>
+    <meta property="og:description" content="The MLPerf consortium aims to provide some clarity on the subject and has just released the first wave of results from the Inference v0.5 benchmark, in which NVIDIA, Google, Intel, Alibaba and an array of others from around the globe are all represented."/>
+  </head>
+  <body>
+    <article>
+      <h1>MLPerf Inference Benchmarks Show NVIDIA Strength, Company Expands Jetson AI Edge Offerings</h1>
+      <address><time datetime="2019-11-06T00:00:00+00:00">06 Nov 2019</time> by <a rel="author">Marco Chiappetta</a></address>
+      <figure>
+        <img src="https://specials-images.forbesimg.com/imageserve/5dc33093ca425400073c3011/960x0.jpg?fit=scale"/>
+        <figcaption>NVIDIA EGX Platform.<cite>NVIDIA</cite></figcaption>
+      </figure>
+      <p>A few months back, I <a href="https://www.forbes.com/sites/marcochiappetta/2019/06/25/mlperf-to-provide-much-needed-clarity-in-the-field-of-machine-learning/">wrote about the MLPerf consortium</a> and the release of its Inference v0.5 benchmark. MLPerf had previously disclosed some performance results from its Training v0.6 benchmark, but training is only part of the machine learning equation. It is when the training process is complete and weightings have been assigned to the dataset that a neural network can intelligently infer things from that data — this process is what is referred to as inference.The processing and computing requirements for training and inference are quite different, however. The MLPerf consortium aims to provide some clarity on the subject though and has just released <a href="https://mlperf.org/press#mlperf-inference-v0.5-results">the first wave of results from the Inference v0.5 benchmark</a>, in which NVIDIA, Google, Intel, Alibaba and an array of others from around the globe are all represented. NVIDIA submitted the most results, spanning the widest array of scenarios, and incidentally, its Turing-based GPUs and Jetson Xavier platform also happened to perform well, comparatively speaking.</p>
+      <p>MLPerf Inference v0.5 consists of five massively-parallel benchmarks, focused on three common machine learning tasks including Image Classification, Object Detection, and Machine Translation. The benchmark uses models targeted to a wide array of applications, including autonomous driving, facial recognition, and natural language processing, for example. These applications also scale across a wide variety of form factors, including everything from smartphones, PCs, and low-power edge servers, to cloud computing platforms in the data center.</p>
+      <p>
+        <b>What Can We Infer From The MLPerf Results</b>
+      </p>
+      <figure>
+        <img src="https://specials-images.forbesimg.com/imageserve/5dc33122b4d5050007a502fb/960x0.jpg?fit=scale"/>
+        <figcaption>MLPerf Inference Per-Processor Comparisons.<cite>NVIDIA</cite></figcaption>
+      </figure>
+      <p>If you <a href="https://mlperf.org/inference-results">peruse the MLPerf data</a>, you’ll see that only a limited number of direct comparisons can be made, since many companies submitted only a few results. In the ImageNet ResNet-50 v1.5 Offline scenario though, a number of major players and start-ups submitted results and some interesting trends emerged. NVIDIA, for example, had the strongest performance on a <a href="https://hothardware.com/reviews/nvidia-titan-rtx-review-benchmarks-and-overclocking">per-processor basis with its Titan RTX</a>. Note that many of submissions are from systems with multiple processors. For example, the 2x Google Cloud TPU v3-8 leverages eight processors, while the SCAN 3XS DBP T496X2 Fluid uses four Titan RTX cards, though the two systems performed similarly (65,431.40 vs 66,250.40 inputs/second). We should note that the Titan RTX doesn’t support ECC memory though, so while performance is strong, its lack of this feature may preclude its use by some data center customers. What’s also interesting to note in the Cloud TPU vs. NVIDIA comparisons is that the Google’s performance is slashed nearly in half when moving from the Offline to Server scenario (also ImageNet ResNet-50 v1.5), whereas NVIDIA’s performance drops by only a few percentage points.</p>
+      <figure>
+        <img src="https://specials-images.forbesimg.com/imageserve/5dc33524b4d5050007a5034d/960x0.jpg?fit=scale"/>
+        <figcaption>NVIDIA Jetson Xavier NX<cite>NVIDIA</cite></figcaption>
+      </figure>
+      <p><i>“AI is at a tipping point as it moves swiftly from research to large-scale deployment for real applications,”</i> said Ian Buck, general manager and vice president of Accelerated Computing at NVIDIA. <i>“AI inference is a tremendous computational challenge. Combining the industry’s most advanced programmable accelerator, the CUDA-X suite of AI algorithms and our deep expertise in AI computing, NVIDIA can help data centers deploy their large and growing body of complex AI models.”</i></p>
+      <p>Habana Labs’ HL-102-Goya PCI-board also performed very well in the ImageNet ResNet-50 v1.5 Offline scenario with a single-processor result of 14,451.00 inputs/second, which appears to be the second best per-processor result in the data. A pair of <a href="https://hothardware.com/news/intel-10nm-ice-lake-nervana-nnp-ai-chips-32gb-hbm2">Intel Nervana NNP-I 1000s</a> scored 10,567.20 in the same test, but showed the smallest performance decrease moving from the Offline to Server scenario (10,262.63 QPS vs 10,567.20 inputs/second).</p>
+      <p>Note that these results don’t account for pricing or power consumption, and different form factors are employed as well – add-in accelerators, servers, the cloud, etc., but the data does level set expectations and highlight some standout performers.</p>
+      <figure>
+        <img src="https://specials-images.forbesimg.com/imageserve/5dc331cfca425400073c3024/960x0.jpg?fit=scale"/>
+        <figcaption>Edge And Mobile MLPerf Inference Comparisons.<cite>NVIDIA</cite></figcaption>
+      </figure>
+      <p>Though these charts have been created by NVIDIA, highlighting its performance, you can peruse the actually numbers in <a href="https://mlperf.org/inference-results">MLPerf’s database here for yourself</a>. The other notable is that some of the competitive solutions in the test comparisons are not commercially available product just yet, and some like Google’s TPU solutions can be utilized via the cloud.</p>
+      <p>
+        <b>NVIDIA’s New Tiny Jetson Xavier NX For Edge AI</b>
+      </p>
+      <p>In addition to touting its strong showing in the MLPerf Inference benchmarks, NVIDIA also announced <a href="https://hothardware.com/news/nvidia-jetson-nano">a new Jetson device for AI computing</a> on the edge. The new Jetson Xavier NX essentially shrinks Jetson Xavier-class performance down into a much smaller form factor built around a low-power version of the Xavier SoC used for the MLPerf results above.</p>
+      <figure>
+        <img src="https://specials-images.forbesimg.com/imageserve/5dc33245ca425400073c3027/960x0.jpg?fit=scale"/>
+        <figcaption>NVIDIA Jetson Family.<cite>NVIDIA</cite></figcaption>
+      </figure>
+      <p>The Jetson Xavier NX targets robotic and embedded computing devices at the edge. Despite the diminutive 70mm x 45mm form factor of the Jetson Xavier NX, it packs some serious horsepower. The SoC powering the module features a 6-core Carmel Arm 64-bit CPU with 6MB of L2 and 4MB of L3 cache, a Volta-based GPU with 384 CUDA cores, 48 Tensor cores, and two NVIDIA Deep Learning Accelerators. There is 8GB of LPDDR4x on-board, connected via a 128-bit interface, which offers up to 51.2GB/second of peak bandwidth. The Jetson Xavier NX module also supports up to six CSI cameras (36 via virtual channels), Gigabit Ethernet, and it can encode 2 x 4K30 video streams and decode 2 x 4K60 streams.</p>
+      <p>According to NVIDIA, the Jetson Xavier NX delivers up to 14 TOPS when configured for 10W or up to 21 TOPS at 15W. NVIDIA also made the <a href="https://hothardware.com/news/nvidia-jetson-nano">Jetson </a>Xavier NX pin-compatible with the Jetson Nano, which should enabled its customers to quickly integrate the more powerful Jetson Xavier NX into existing hardware designs. The Jetson Xavier NX runs on the same CUDA-X AI software architecture as all of the other members of the Jetson family as well.</p>
+      <p>The Jetson Xavier NX will be priced at $399 and is slated for availability in March.</p>
+    </article>
+  </body>
+</html>

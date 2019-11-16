@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://www.blendernation.com/2019/11/07/blender-2-82-alpha-cycles-gpu-render-comparison-with-different-tile-sizes-4k/"/>
+    <meta property="og:site_name" content="BlenderNation"/>
+    <meta property="article:published_time" content="2019-11-07T06:29:04+00:00"/>
+    <meta property="og:title" content="Blender 2.82 Alpha Cycles GPU Render Comparison with different tile sizes (4K)"/>
+    <meta property="og:description" content="Prof. Michael Klein writes: I found some time to update some research of 2018 with the latest Blender 2.82 Alpha from today. (A lot of) Blender artists maybe still using 2.79 and they are used to set higher tiles for faster GPU rendering. Usually by using the Auto Tile Size addon. This is still necessaryRead More"/>
+  </head>
+  <body>
+    <article>
+      <h1>Blender 2.82 Alpha Cycles GPU Render Comparison with different tile sizes (4K)</h1>
+      <address><time datetime="2019-11-07T06:29:04+00:00">07 Nov 2019, 06:29</time> by <a rel="author">Michael Klein</a></address>
+      <p>Prof. Michael Klein writes:</p>
+      <blockquote>I found some time to update some research of 2018 with the latest Blender 2.82 Alpha from today.<br/><br/>(A lot of) Blender artists maybe still using 2.79 and they are used to set higher tiles for faster GPU rendering. Usually by using the Auto Tile Size addon. This is still necessary in 2.79b for optimized GPU rendering.<br/><br/>But in the 2.80 official release and the 2.81 Beta / 2.82 Alpha daily builds there are significant improvements to support optimized hybrid rendering with CPU and GPU. The dev team has been working on multiple CPU/GPU support for single tiles with the goal that tiling doesn't matter anymore. This means you can use 16x16 for any case. This makes sense of course.<br/><br/>I revisited my 2018 comparison I created with Mecabricks a LEGO® scene with 25,999 LEGO parts and 40,825,145 faces using the principled shader with SSS and textures like scratches and fingerprints. Loading and rendering the scene in 2.82 Alpha works without issues like intended. I never experienced a software that extreme downward and upward compatible.<br/><br/>The comparison shows that rendering at 64x64 is the fastest GPU only method in this specific scene. 16x16 is faster than 256x256.<br/><br/>Schenker XMG NEO 16 – 32GB RAM – GTX 1060 6GB – i7-8750H<br/><br/>Blender 2.82 Alpha 0bee94f920f9 19.11.05<br/><br/>Path Tracing Samples: 256 + Internal Denoiser<br/>20m 32s @ 16x16<br/>19m 43s @ 64x64<br/>22m 13s @ 256x256<br/>14m 07s @ 16x16 GPU+CPU (Hybrid)<br/><br/>The video has been accelerated to 1,100%.</blockquote>
+      <figure>
+        <iframe src="https://www.youtube.com/embed/0SubJ49UVNI" width="711" height="400" data-service="Youtube" scrolling="no"/>
+      </figure>
+    </article>
+  </body>
+</html>

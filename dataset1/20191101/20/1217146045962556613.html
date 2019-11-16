@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://www.bleepingcomputer.com/news/security/office-365-phishing-campaign-baits-employees-with-pay-raises/"/>
+    <meta property="og:site_name" content="BleepingComputer"/>
+    <meta property="article:published_time" content="2019-11-01T20:40:40+00:00"/>
+    <meta property="og:title" content="Office 365 Phishing Campaign Baits Employees with Pay Raises"/>
+    <meta property="og:description" content="Pay raises were used by scammers to bait employees in a recent phishing campaign that tried to trick them into handing out their Microsoft Office 365 account credentials."/>
+  </head>
+  <body>
+    <article>
+      <h1>Office 365 Phishing Campaign Baits Employees with Pay Raises</h1>
+      <address><time datetime="2019-11-01T20:40:40+00:00">01 Nov 2019, 20:40</time> by <a rel="author" href="https://www.bleepingcomputer.com/author/sergiu-gatlan/" target="_blank">Sergiu Gatlan</a></address>
+      <figure>
+        <img src="https://www.bleepstatic.com/content/hl-images/2019/11/01/Microsoft_account_phishing.jpg"/>
+      </figure>
+      <p>Pay raises were used by scammers to bait employees in a recent phishing campaign that tried to trick them into handing out their Microsoft Office 365 account credentials.</p>
+      <p>The attackers posed as their targets' Human Resources department and asked them to open an Excel spreadsheet with a <i>salary-increase-sheet-November-2019.xls</i> filename hosted online and supposedly containing a list of salary increases.</p>
+      <p>"The threat actor attempts to make the email appear to come from the target company by manipulating the 'from' field in the headers," researchers at the Cofense Phishing Defense Center (PDC) found.</p>
+      <p>"In particular, the threat actor changes the part of the from field that dictates the “nickname” displayed in the mail client to make it appear as if it originated within the company."</p>
+      <figure>
+        <img src="https://www.bleepstatic.com/images/news/u/1109292/November%202019/Phishing%20email%20sample.jpg"/>
+        <figcaption>Phishing email sample <i>(Cofense)</i></figcaption>
+      </figure>
+      <p>The phishing email's body uses the following phrase as an incentive to click on the embedded link as Cofense also discovered: "As already announced, The Years Wage increase will start in November 2019 and will be paid out for the first time in December, with recalculation as of November."</p>
+      <p>However, instead of opening the spreadsheet with payment raises, the link will redirect the potential victims to the attackers' phishing landing page hosted at <code>hxxps://salary365[.]web[.]app/#/auth-pass-form/</code>.</p>
+      <p>Once the phishing page loads, the targets will see a fake Office 365 login page customized to display their email address and only asking them to input the password to sign in.</p>
+      <p>"The recipient email address is appended to the end of the URL that automatically populates the email box within the form, leaving just the password field blank to be submitted by the recipient," <a href="https://cofense.com/new-credential-phish-targets-employees-salary-increase-scam/">Cofense also found</a>.</p>
+      <p>Having the targets' email prominently displayed in the phishing page adds to the illusion that they're seeing a legitimate Office 365 login form, further decreasing the chance of raising any alarms.</p>
+      <figure>
+        <img src="https://www.bleepstatic.com/images/news/u/1109292/November%202019/Phishing%20landing%20page.jpg"/>
+        <figcaption>Phishing landing page<i><b> </b>(Cofense)</i></figcaption>
+      </figure>
+      <h3>Branded phishing pages used in previous attacks</h3>
+      <p>Another phishing campaign from August used <a href="https://www.bleepingcomputer.com/news/security/phishing-attacks-scrape-branded-microsoft-365-login-pages/">landing pages that cloned Microsoft 365 tenant login pages</a> and were customized for each target by dynamically inserting automatically scraped company-branded backgrounds and banners.</p>
+      <p>"Further examination of the domains included in the validated email addresses points to a phishing campaign at least initially targeting a spectrum of industry verticals, including financial, insurance, medical, telecom, and energy," found researchers part of Rapid7’s Managed Detection and Response (MDR) services team at the time.</p>
+      <p>As Rapid7 recommended, organizations targeted by Microsoft Office 365 credential harvesting campaigns should implement the following measures to avoid having their employees tricked by the scammers:</p>
+      <p>• enable multi-factor authentication via Office 365 or a third-party solution for all employees<br/>• enroll staff in phishing awareness training programs designed to help employees spot and report phishing attempts easier</p>
+    </article>
+  </body>
+</html>

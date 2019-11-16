@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://www.forbes.com/sites/daveywinder/2019/11/01/new-google-chrome-security-alert-update-your-browsers-as-high-severity-zero-day-exploit-confirmed/"/>
+    <meta property="og:site_name" content="Forbes"/>
+    <meta property="article:published_time" content="2019-11-01T00:00:00+00:00"/>
+    <meta property="og:title" content="New Google Chrome Security Alert: Update Your Browsers As ‘High Severity’ Zero-Day Exploit Confirmed"/>
+    <meta property="og:description" content="Google has confirmed that a high severity Chrome browser zero-day exploit exists in the wild - here's what you need to know"/>
+  </head>
+  <body>
+    <article>
+      <h1>New Google Chrome Security Alert: Update Your Browsers As ‘High Severity’ Zero-Day Exploit Confirmed</h1>
+      <address><time datetime="2019-11-01T00:00:00+00:00">01 Nov 2019</time> by <a rel="author">Davey Winder</a></address>
+      <figure>
+        <img src="https://specials-images.forbesimg.com/imageserve/33995588/960x0.jpg?fit=scale"/>
+        <figcaption>Google confirms updates are rolling out to fix a zero-day Chrome exploit that is in the wild<cite>BLOOMBERG NEWS</cite></figcaption>
+      </figure>
+      <p>It takes a lot to scare anyone on Halloween night, but Google Chrome engineers were spooked enough to issue an urgent update announcement for the browser across all platforms. So, what gave Google the heebie-jeebies? The answer is not one but two security vulnerabilities, one of which has a zero-day exploit out in the wild already.</p>
+      <h3>Here's what is known so far</h3>
+      <p>The October 31 disclosure from Google confirmed that the "stable channel" desktop Chrome browser is being updated to version 78.0.3904.87 across the Windows, Mac, and Linux platforms. This urgent update will start rolling out "over the coming days/weeks," according to Google. Unlike <a href="https://www.forbes.com/sites/daveywinder/2019/10/18/windows-10-security-alert-as-microsoft-warns-do-not-install-this-update/">recent Windows 10 security alerts advising not to install an update</a>, Chrome users should ensure they do install this one.</p>
+      <p>At this moment in time, it is proving hard to find out much specific detail about either of the vulnerabilities concerned, other than the fact that one of the two being fixed by the update is already being exploited in the wild.</p>
+      <p>Google <a href="https://chromereleases.googleblog.com/2019/10/stable-channel-update-for-desktop_31.html">said</a> that this is because: "Access to bug details and links may be kept restricted until a majority of users are updated with a fix. We will also retain restrictions if the bug exists in a third party library that other projects similarly depend on but haven’t yet fixed."</p>
+      <h3>What is the Google Chrome zero-day exploit?</h3>
+      <p>What is known is that the one that Google has said the exploit exists in the wild is for the <a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=2019-13720">CVE-2019-13720</a> vulnerability. This was reported by two Kaspersky researchers, Anton Ivanov and Alexey Kulaev, on October 29. According to a U.S. Department of Homeland Security Cybersecurity and Infrastructure Security Agency (CISA) <a href="https://www.us-cert.gov/ncas/current-activity/2019/10/31/google-releases-security-updates-chrome">statement</a>, the Google update "addresses vulnerabilities that an attacker could exploit to take control of an affected system," but that's as far as the detail goes.</p>
+      <p>Both this and CVE-2019-13721, are "use-after-free" vulnerabilities, which exploit memory corruption to escalate privileges on the attacked system. For CVE-2019-13721 this impacts the PDFium library that is involved with generating and viewing PDF files. It is the other, CVE-2019-13720, that has been reported as being exploited in the wild and this impacts the Chrome web browser audio component.</p>
+      <h3>How serious are these Chrome zero-day vulnerabilities?</h3>
+      <p>Although any vulnerability that is given a high severity rating has to be taken seriously, there remain different levels of risk for average users and those likely to be of interest to nation-state hackers for example. Unlike <a href="https://www.forbes.com/sites/daveywinder/2019/09/04/critical-android-warning-as-125-billion-smartphone-users-told-to-update-now/">recent Android security alerts</a> including the now <a href="https://www.forbes.com/sites/daveywinder/2019/09/06/android-warning-issued-as-joker-infects-nearly-half-a-million-devices/">infamous Joker malware</a>, it would appear that the real-world risk isn't too critical for most people.</p>
+      <p>"For me, it's relatively low risk, with Google quickly acknowledging the vulnerabilities," Mike Thompson, an application security specialist, "it's another day at the 'zero-day' office where, in my humble opinion, the likelihood of any real damage is minimal."</p>
+      <p>John Opdenakker, an ethical hacker, agrees that it's good to see Google acting so quickly, "particularly as far as the one that's already been exploited in the wild is concerned," he says.</p>
+      <p>Having done some further digging, as ethical hackers have a habit of doing, Opdenakker says, "this most severe vulnerability can only be exploited via specially crafted websites," which means, "the average user shouldn't lose any sleep."</p>
+      <h3>Mitigation advice</h3>
+      <p>That said, both Opdenakker and Thompson also advise users to ensure the Chrome browser update is installed as soon as possible to mitigate any risk.</p>
+      <p>This should happen automatically over the coming days and weeks; however, I would advise Chrome users to manually trigger the update process using the "Help | About Google Chrome" menu option.</p>
+    </article>
+  </body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://www.zdnet.com/article/libarchive-vulnerability-can-lead-to-code-execution-on-linux-freebsd-netbsd/"/>
+    <meta property="og:site_name" content="ZDNet"/>
+    <meta property="article:published_time" content="2019-11-06T00:53:28+00:00"/>
+    <meta property="og:title" content="Libarchive vulnerability can lead to code execution on Linux, FreeBSD, NetBSD"/>
+    <meta property="og:description" content="Bug discovered by Google. Impacts Linux and BSD distros, but not Windows and macOS."/>
+  </head>
+  <body>
+    <article>
+      <h1>Libarchive vulnerability can lead to code execution on Linux, FreeBSD, NetBSD</h1>
+      <address><time datetime="2019-11-06T00:53:28+00:00">06 Nov 2019, 00:53</time> by <a rel="author" href="https://www.zdnet.com/meet-the-team/us/catalin.cimpanu/" target="_blank">Catalin Cimpanu</a></address>
+      <p>
+        <b>Bug discovered by Google. Impacts Linux and BSD distros, but not Windows and macOS.</b>
+      </p>
+      <figure>
+        <img src="https://zdnet1.cbsistatic.com/hub/i/2019/11/06/b947f00a-2e53-4408-add5-24bf3f95ebc5/8388830ca6d8c679c88d3a41656f91b8/archive-compress.jpg"/>
+        <figcaption>Image: Angelo Giordano</figcaption>
+      </figure>
+      <p>A compression library included by default in <a href="https://www.debian.org/security/2019/dsa-4557">Debian</a>, <a href="https://usn.ubuntu.com/4169-1/">Ubuntu</a>, <a href="https://bugs.gentoo.org/show_bug.cgi?id=CVE-2019-18408">Gentoo</a>, <a href="https://www.archlinux.org/packages/?sort=&amp;q=libarchive&amp;maintainer=&amp;flagged=">Arch Linux</a>, FreeBSD, and NetBSD distros, contains a vulnerability that can allow hackers to execute code on user machines.<br/><br/>The macOS and Windows operating systems, where this library is also included and used as a default decompression utility, are not affected.</p>
+      <h3>CVE-2019-18408 in Libarchive</h3>
+      <p>The vulnerability impacts <a href="http://www.libarchive.org/">Libarchive</a>, a library for reading and creating compressed files. It is a powerful all-in-one toolkit for working with archive files that also bundles other Linux/BSD utilities like tar, cpio, and cat, making it ideal for a wide variety of operations, and the reason it's so widely adopted across operating systems.<br/><br/>Last week, details about a major bug impacting the library have <a href="https://seclists.org/bugtraq/2019/Nov/2">been made public</a> after several Linux and FreeBSD distros rolled out updates containing patches for the Libarchive version they had been shipping out to users.<br/><br/>The bug, tracked under the CVE-2019-18408 identifier, allows an attacker to execute code on a user's system via a malformed archive file.</p>
+      <p>Exploitation scenarios include users who receive malicious files from attackers or local apps that use Libarchive's various components for file decompression.<br/><br/>The bug was discovered and patched back in June, but it took some time for the patch to make its way upstream to all operating systems. The vulnerability <a href="https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=14689">was identified by Google security researchers</a> using two automated code testing tools called <a href="https://www.zdnet.com/article/google-weve-open-sourced-clusterfuzz-tool-that-found-16000-bugs-in-chrome/">ClusterFuzz</a> and <a href="https://www.zdnet.com/article/googles-automated-fuzz-bot-has-found-over-9000-bugs-in-the-past-two-years/">OSS-Fuzz</a>, and <a href="https://github.com/libarchive/libarchive/releases/tag/v3.4.0">patched in Libarchive 3.4.0</a>.</p>
+      <h3>Could have been much worse</h3>
+      <p><a href="https://github.com/libarchive/libarchive/wiki/LibarchiveUsers">The list</a> of vulnerable operating systems and software utilities that ship Libarchive is exhaustive, opening a huge attack surface for malicious threat actors.<br/><br/>It includes desktops and server operating systems, package managers, security utilities, file browsers, and multimedia processing tools. The bigger names include pkgutils, Pacman, CMake, Nautilus, KDE's ark, and Samba.<br/><br/>While the impacted operating systems have rolled out updates to address the reported bug, the patch status of Libarchive in the other apps is currently unknown.<br/><br/>Thankfully, Windows and macOS, today's two most popular operating systems are not impacted; otherwise, the bug would have caused major headaches to users all over the world, just like a <a href="https://www.zdnet.com/article/winrar-versions-released-in-the-last-19-years-impacted-by-severe-security-flaw/">19-year-old WinRAR bug</a> did <a href="https://www.zdnet.com/article/100-unique-exploits-and-counting-for-latest-winrar-security-bug/">earlier this spring</a>.<br/><br/>At the time of writing, ZDNet is unaware of any public proof-of-concept exploit code for this vulnerability or any in-the-wild exploitation attempts.</p>
+      <figure>
+        <img src="https://zdnet4.cbsistatic.com/hub/i/2019/11/06/99221eb6-0fdf-45bd-bf6c-ba92f36cbaf2/ded5e01727964b904accea01bb196828/libarchive-1.png"/>
+      </figure>
+    </article>
+  </body>
+</html>

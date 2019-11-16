@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://elchapuzasinformatico.com/2019/11/netflix-servidores-intel-xeon-por-amd-epyc/"/>
+    <meta property="og:site_name" content="El Chapuzas Informático"/>
+    <meta property="article:published_time" content="2019-11-05T00:00:00+00:00"/>
+    <meta property="og:title" content="Netflix está evaluando sustituir sus servidores Intel Xeon por AMD EPYC"/>
+    <meta property="og:description" content="El rey del contenido por streaming, Netflix, se encuentra evaluando sustituir todos sus centros de datos/servidores propulsados mediante una solución Intel Xeon por los nuevos procesadores AMD EPYC."/>
+  </head>
+  <body>
+    <article>
+      <h1>Netflix está evaluando sustituir sus servidores Intel Xeon por AMD EPYC</h1>
+      <address><time datetime="2019-11-05T00:00:00+00:00">05 Nov 2019</time> by <a rel="author" href="https://elchapuzasinformatico.com/author/darktiger/" target="_blank">Borja Rodríguez</a></address>
+      <p>El rey del contenido por streaming, <b>Netflix</b>, se encuentra evaluando sustituir todos sus centros de datos/servidores propulsados mediante una solución <b>Intel Xeon</b> por los nuevos procesadores <b>AMD EPYC</b>.</p>
+      <p>Esta información la dio a conocer <b>Drew Gallatin,</b> el ingeniero jefe de software de Netflix, durante la EuroBSDCon, donde la compañía quiere alcanzar un ambicioso para contar con una conectividad de <b>200 Gbps</b>, y para ello la compañía estaría tanteando emplear el hardware de AMD, por lo que aún no está confirmado que vaya a sustituir a Intel por AMD.</p>
+      <figure>
+        <img src="https://elchapuzasinformatico.com/wp-content/uploads/2019/11/Netflix-servidor-Intel-vs-AMD-1-740x412.jpg"/>
+      </figure>
+      <p>En la actualidad, <b>Netflix</b> tiene configuraciones de servidor ahora mismo que pueden alcanzar un objetivo de <b>100 Gbps</b> con bastante facilidad, pero con planes de expansión en mente, la compañía está considerando lo que tiene que hacer para alcanzar un objetivo de <b>200 Gbps</b> por cada servidor básico.</p>
+      <p>La configuración actual que Netflix está utilizando consiste en una única solución basada en<b> un procesador Intel Xeon por servidor</b>, y teniendo en cuenta que tiene que duplicar el rendimiento, la empresa puede ampliar la capacidad añadiendo un segundo Xeon en la ecuación o dar un salto más eficiente con una sola CPU <b>AMD EPYC</b>. Dado que tanto la parte EPYC como las partes de Intel Xeon<b> tienen TCOs similares</b> (coste total de propiedad), se trata esencialmente de un ejercicio de evaluación técnica meticulosa.</p>
+      <figure>
+        <img src="https://elchapuzasinformatico.com/wp-content/uploads/2019/11/Netflix-servidor-Intel-vs-AMD-2-740x415.jpg"/>
+      </figure>
+      <p>La configuración que Netflix está usando ahora mismo es una mezcla de CPUs Intel Xeon con microarquitecturas <b>Broadwell y Skylake</b>/<b>Cascade Lake</b>. Los Xeons basados en Broadwell tienen <b>60 GB/s</b> de ancho de banda de memoria y 40x líneas PCI-Express 3.0 (que son <b>32 GB/s</b> de ancho de banda I/O), mientras que los Xeons de Skylake/Cascade Lake tienen <b>90 GB/s</b> de ancho de banda de memoria y 48x líneas PCIe 3.0 (que son <b>38 GB/s</b> de ancho de banda I/O). Con este hardware, está claro que la compañía tendrá complicado alcanzar los 200 GB/s aunque emplee una plataforma Dual Socket.</p>
+      <figure>
+        <img src="https://elchapuzasinformatico.com/wp-content/uploads/2019/11/Netflix-servidor-Intel-vs-AMD-3-740x412.jpg"/>
+      </figure>
+      <p>En el lado de Intel, pueden ir con una configuración de <b>2x Intel Xeon Silver 4116</b>/<b>4216</b>. Éstos arrojarían un máximo de<b> 180 GB/s</b> de ancho de banda de memoria y ofrecerían 96x líneas PCIe 3.0 (para un total de <b>75 GB/s</b> de ancho de banda I/O).</p>
+      <p>Por otro lado, pueden ir con una solución <b>AMD EPYC Naples</b>/<b>ROME</b> que consiste en el<b> 7551</b> o el <b>7502P</b>. Infinity fabric conectaría los cuatro chiplets dentro de la parte EPYC y la empresa tendría acceso a un ancho de banda de memoria de <b>120-150 GB/s por CPU </b>(240-300 GB/s en Dual Socket). Esta configuración AMD tendría acceso a 128x líneas PCIe Gen3/Gen4 de forma respectiva, con unos anchos de banda I/O de <b>170 y 204 GB/s</b>.</p>
+      <figure>
+        <img src="https://elchapuzasinformatico.com/wp-content/uploads/2019/11/Netflix-servidor-Intel-vs-AMD-4-740x415.jpg"/>
+      </figure>
+      <p>La solución basada en Xeon puede alcanzar un rendimiento máximo de <b>191 Gbps</b>, mientras que la configuración EPYC puede alcanzar un rendimiento máximo de <b>194 Gbps</b>. Teniendo en cuenta que las dos opciones seleccionadas tienen un TCO similar (aunque en Intel sería Dual Socket vs Single Socket para AMD), esto deja claro que Netflix puede utilizar tanto Intel como AMD, pero <b>AMD tiene una ligera ventaja en rendimiento</b>, una ventaja de <b>consumo energético</b>, y una notable ventaja <b>de actualización futura</b>.</p>
+      <p>Si bien los servidores de Intel ya se encontrarán colapsados desde sus inicios, en los de AMD, <b>Netflix aún podría incorporar un segundo procesador</b> de hasta 64 núcleos para duplicar el rendimiento de una forma mucho más rápida y económica en el futuro. Tocará esperar para conocer el resultado final.</p>
+      <p>vía: <a href="https://wccftech.com/netflix-evaluating-replacing-intel-with-amd-epyc-processors-single-epyc-compared-to-dual-socket-xeon/">Wccftech</a></p>
+    </article>
+  </body>
+</html>

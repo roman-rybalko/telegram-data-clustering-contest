@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://blog.ethereum.org/2019/11/04/Eth2-at-ETHWaterloo/"/>
+    <meta property="og:site_name" content="blog.ethereum.org"/>
+    <meta property="article:published_time" content="2019-11-04T00:00:00+00:00"/>
+    <meta property="og:title" content="Eth2 at ETHWaterloo: Prizes for Eth2 education, tooling, and research"/>
+    <meta property="og:description" content="For the first time ever, the Ethereum Foundation will be sponsoring a range of hacker prizes related to Eth2 at a major hackathon. With Eth2 development proceeding rapidly, there are now many discrete areas of work that a team of motivated hackers can complete over a weekend. The bounties below..."/>
+  </head>
+  <body>
+    <article>
+      <h1>Eth2 at ETHWaterloo: Prizes for Eth2 education, tooling, and research</h1>
+      <address><time datetime="2019-11-04T00:00:00+00:00">04 Nov 2019</time> by <a rel="author">Ethereum Foundation Team</a></address>
+      <p>For the first time ever, the Ethereum Foundation will be sponsoring a range of hacker prizes related to Eth2 at a major hackathon.</p>
+      <p>With Eth2 development proceeding rapidly, there are now many discrete areas of work that a team of motivated hackers can complete over a weekend. The bounties below include useful educational tools for Eth2 development, necessary tooling, and valuable research.</p>
+      <p>Members of Eth2 teams will be available remotely during the hackathon to answer questions from hackers and provide advice related to these prizes.</p>
+      <p>The EF will offer 5 prizes of $1,000 each, for projects that tackle any (or more than one!) of the following ideas:</p>
+      <h3>Education</h3>
+      <ul>
+        <li>
+          <b>An interactive, educational visualization of the <a href="https://media.consensys.net/state-of-ethereum-protocol-2-the-beacon-chain-c6b6a9a69129">Beacon Chain</a></b>
+        </li>
+        <li>
+          <b>Help document/visualize the architecture of your <a href="https://eth.wiki/en/eth2/clients">favourite eth2 client</a></b>
+        </li>
+        <li><b>Visualize the cutting edge of <a href="https://docs.ethhub.io/ethereum-roadmap/ethereum-2.0/eth-2.0-phases/">phase 2</a></b> (suggestion: the <a href="https://hackmd.io/UzysWse1Th240HELswKqVA?view">phase 2 wiki</a> is very helpful)</li>
+      </ul>
+      <h3>Tooling</h3>
+      <ul>
+        <li><b>Implement the proposed BLS key standards</b> (EIPs <a href="https://github.com/ethereum/EIPs/pull/2333">2333</a>, <a href="https://github.com/ethereum/EIPs/pull/2334">2334</a>, <a href="https://github.com/ethereum/EIPs/pull/2335">2335</a>) in a language of your choice (suggestion: one of the <a href="https://eth.wiki/en/eth2/clients">eth2 client languages</a>)</li>
+        <li><b>Fast viz:</b> Given just a single BeaconState, visualize the last events and validator registry state (suggestion: use <a href="https://github.com/ChainSafe/lodestar">lodestar</a> code to work in the browser)</li>
+        <li><b>Attestation surround/double vote checker</b> (suggestion: look at <a href="https://github.com/ethereum/eth2.0-pm/issues/63">eth2.0-pm repo issue 63</a>)</li>
+        <li><b>Attestation pool:</b> make a bare bones tool that listens on the attestation aggregation subnets and global net, and show what’s there (suggestion: start with logging received attestations)</li>
+        <li><b>Beacon node load balancer:</b> implement a validator API that proxies traffic to any healthy up-to-date beacon node (suggestion: take existing http proxy, and focus on the nodes health status)</li>
+        <li><b>Netstats2</b>: log/visualize the health status of a list of eth2 testnet nodes (suggestion: <a href="https://github.com/prysmaticlabs/prysm">prysm</a> or <a href="https://github.com/sigp/lighthouse">lighthouse</a> testnet, start with simple api queries like latest block)</li>
+        <li><b>Merkle multi proof builder:</b> check out <a href="http://simpleserialize.com/">simpleserialize.com</a> and the tree visualization. This could be enhanced with checkboxes in each node to interactively create multiproofs with (suggestion: start with a simple proof encoding format - <a href="https://twitter.com/caymannan">Cayman Nava</a> and <a href="https://twitter.com/protolambda?lang=en">Proto</a> will be available to help on the ETHWaterloo discord)</li>
+        <li><b>Validator tracking:</b> a service that you can point at a validator and it notifies you if the validator is offline.</li>
+      </ul>
+      <h3>Research</h3>
+      <ul>
+        <li><b>Take the <a href="https://github.com/lightclient/sheth">EE interaction design from Quilt</a></b>, and extend it with your own experiment. (Curious to know more about this? Ask us <a href="http://ethwaterloo.com/chat">in the Discord</a> during the hackathon and we can point you in the right direction)</li>
+        <li><b>Model state size growth on beaconchain and shards</b> (suggestion: parametrize with constants config, <a href="https://github.com/ChainSafe/lodestar">lodestar</a> has a <a href="https://github.com/ChainSafe/lodestar/tree/master/packages/eth2.0-config">neat TS package</a>)</li>
+      </ul>
+      <h4>Interested in other bounties or prizes offered by the Ethereum Foundation?</h4>
+      <p>Here are a few other bounties currently live:</p>
+      <p>
+        <b>Ethereum.org Gitcoin Bounties</b>
+      </p>
+      <ul>
+        <li>We have <a href="https://gitcoin.co/hackathon/web3-world">several open bounties available on Gitcoin</a>, covering a variety of small updates and improvements to <a href="http://ethereum.org/">ethereum.org</a></li>
+      </ul>
+      <p>
+        <b>Legendre PRF</b>
+      </p>
+      <ul>
+        <li>The Legendre pseudo-random function is an extremely MPC-friendly one bit PRF. This PRF is currently slated to be used in the proof of custody scheme in Phase 1 of Eth 2.0, as it is the only known method to make the proof of custody possible in a shared secret setting. To encourage more research about this PRF, the Ethereum Foundation has set out a series of bounties here: <a href="https://legendreprf.org/bounties">legendreprf.org/bounties</a></li>
+      </ul>
+      <p>
+        <b>STARK-Friendly Hash Challenge</b>
+      </p>
+      <ul>
+        <li>The Ethereum Foundation has asked StarkWare to recommend a STARK-Friendly Hash (SFH). The StarkWare hash challenge is a public competition aimed at evaluating the security of current proposed SFH candidates. The challenge is proposed at four security levels: low-security, medium-security, target-security, and high-security in multiple scenarios. See <a href="https://starkware.co/hash-challenge/">starkware.co/hash-challenge</a> for more details about the competition and how to get started.</li>
+      </ul>
+    </article>
+  </body>
+</html>

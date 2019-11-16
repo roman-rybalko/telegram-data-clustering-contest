@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://www.xda-developers.com/enable-pixel-4-motion-sense-gestures/"/>
+    <meta property="og:site_name" content="XDA Developers"/>
+    <meta property="article:published_time" content="2019-11-01T16:36:00+00:00"/>
+    <meta property="og:title" content="Pixel 4’s Motion Sense gestures can be forced to work in any country at your own risk"/>
+    <meta property="og:description" content="Modders figured out how to enable the Google Pixel 4's Motion Sense gestures in any country using root access, but do so at your own risk."/>
+  </head>
+  <body>
+    <article>
+      <h1>Pixel 4’s Motion Sense gestures can be forced to work in any country at your own risk</h1>
+      <address><time datetime="2019-11-01T16:36:00+00:00">01 Nov 2019, 16:36</time> by <a rel="author" href="https://www.xda-developers.com/author/mishaalrahman/" target="_blank">Mishaal Rahman</a></address>
+      <p>Google’s Pixel 4 smartphones are the first commercial products with Google’s Soli radar. The Soli radar powers various Motion Sense gestures on the new Pixel smartphones, which includes gestures to skip media tracks and silence incoming calls, timers, or alarms. Because the Soli radar operates at the 60GHz radio frequency, its use in the Pixel 4 is subject to regulatory approval by the telecommunications authority of each country. That’s why, at launch, Motion Sense gestures only work if your Pixel 4 is connected to a carrier in <a href="https://www.xda-developers.com/google-pixel-4-motion-sense-list-countries-supported-apps/">1 of 53 whitelisted regions</a>. However, with root access, you can bypass this restriction.</p>
+      <p>We actually found this method ourselves before the release of the Pixel 4, but because it’ll enable the transmission of radio waves in unauthorized frequencies, we didn’t want to encourage people to illegally use it in unsupported countries. Now that the cat is out of the bag, though, this workaround can’t really be contained, mostly because it’s so easy to do. OsloFeedback, the app that’s responsible for handling Motion Sense gestures, has a hidden debug flag that disables all regional checks. With this debug flag set to true, your Pixel 4 will let you use the gestures no matter what carrier your SIM card is connected to.</p>
+      <p>In order to set this flag, you’ll need to first <a href="https://www.xda-developers.com/google-pixel-4-root-magisk/">unlock the bootloader and root your phone with Magisk</a>. Then, you can either run the shell commands <a href="https://forum.xda-developers.com/showpost.php?p=80729593&amp;postcount=5">listed here</a> or install the <a href="https://forum.xda-developers.com/xposed/modules">Xposed Module</a> mentioned <a href="https://forum.xda-developers.com/pixel-4-xl/themes/success-enable-soli-china-t3994917">here</a>. If you do the former method, I recommend setting the prop using <a href="https://forum.xda-developers.com/apps/magisk/module-magiskhide-props-config-t3789228">MagiskHide Props Config</a> so it persists across boots. If you do the latter, then you’ll have to install the Riru Core and EdXposed Magisk Modules as described <a href="https://forum.xda-developers.com/pixel-4-xl/how-to/xposed-discussion-thread-t3992607">here</a>. Either way, you’ll end up bypassing Google’s regional restriction on Motion Sense gestures.</p>
+      <p><a href="https://forum.xda-developers.com/pixel-4"><b>Pixel 4 Forums</b></a> ||| <a href="https://forum.xda-developers.com/pixel-4-xl"><b>Pixel 4 XL Forums</b></a></p>
+      <p>There shouldn’t be much harm in using this in unsupported countries since it’s so short-range, but you’re still taking a risk if you choose to do so.</p>
+    </article>
+  </body>
+</html>

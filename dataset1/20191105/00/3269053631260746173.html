@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://elchapuzasinformatico.com/2019/11/plan-energetico-1usmus-ryzen-3000/"/>
+    <meta property="og:site_name" content="El Chapuzas Informático"/>
+    <meta property="article:published_time" content="2019-11-05T00:00:00+00:00"/>
+    <meta property="og:title" content="El plan energético Custom ‘1usmus’ mejora el rendimiento de los AMD Ryzen 3000"/>
+    <meta property="og:description" content="Bien es conocido que los AMD Ryzen 3000 llegaron muy verdes al mercado, pero el paso del tiempo únicamente está trayendo buenas noticias a los usuarios, los cuales ya se han beneficiado de numerosas optimizaciones que han derivado en mejorar aún más el rendimiento desde su lanzamiento. Si bien por el lado de AMD todo está yendo bien, por donde las cosas no son un camino de rosas es en los sistemas operativos como Windows 10 y sus planes energéticos, los cuales llegan a quitar algo de rendimiento a estos procesadores."/>
+  </head>
+  <body>
+    <article>
+      <h1>El plan energético Custom ‘1usmus’ mejora el rendimiento de los AMD Ryzen 3000</h1>
+      <address><time datetime="2019-11-05T00:00:00+00:00">05 Nov 2019</time> by <a rel="author" href="https://elchapuzasinformatico.com/author/darktiger/" target="_blank">Borja Rodríguez</a></address>
+      <p>Bien es conocido que los <b>AMD Ryzen 3000</b> llegaron muy verdes al mercado, pero el paso del tiempo únicamente está trayendo buenas noticias a los usuarios, los cuales <b>ya se han beneficiado de numerosas optimizaciones</b> que han derivado en mejorar aún más el rendimiento desde su lanzamiento. Si bien por el lado de AMD todo está yendo bien, por donde las cosas no son un camino de rosas es en los sistemas operativos <b>como Windows 10 y sus planes energéticos</b>, los cuales llegan a quitar algo de rendimiento a estos procesadores.</p>
+      <figure>
+        <img src="https://elchapuzasinformatico.com/wp-content/uploads/2019/11/Plan-energetico-1usmus-en-un-AMD-Ryzen-3900X-1-740x395.png"/>
+      </figure>
+      <p>Para solventarlo llega un plan energético 'customizado', es decir,<b> un plan energético diseñado para sacar el máximo rendimiento de una CPU AMD Ryzen 3000</b>, el cual es llamado <b>1usmus</b> (<a href="https://www.techpowerup.com/download/1usmus-custom-power-plan-ryzen-3000-zen-2">descargar</a>). Para su instalación, <b>primero hay que acceder a la BIOS</b> y revisar que todos los ajustes de la pestaña "<b>CPU Features</b>" (características de la CPU) o "<b>AMD_CBS</b>" estén con la configuración de fábrica:</p>
+      <ul>
+        <li>Global C-state Control = Enabled</li>
+        <li>Power Supply Idle Control = Low Current Idle</li>
+        <li>CPPC = Enabled</li>
+        <li>CPPC Preferred Cores = Enabled</li>
+        <li>AMD Cool'n'Quiet = Enabled</li>
+        <li>PPC Adjustment = PState 0</li>
+      </ul>
+      <p>Si tu placa base no te muestra información de los ajustes "AMD Cool'n'Quiet" o "PPC Adjustment", se debe por que <b>algunos fabricantes suelen esconderlo</b>, así que no pasa nada, al estar escondido no habrás podido alterar la configuración original en el pasado.</p>
+      <p>Tras revisar, el plan energético 1usmus se instala bastante fácil. <b>Descomprime</b> el archivo, <b>ejecutas</b> el 'install.bat', y se acabó. Ahora en 'Opciones de Energía' te saldrá el <b>1usmus Ryzen PowerPlan</b>, lo activas, y a disfrutar de una pequeña mejora de rendimiento adicional.</p>
+      <figure>
+        <img src="https://elchapuzasinformatico.com/wp-content/uploads/2019/11/Plan-energetico-1usmus-en-un-AMD-Ryzen-3900X-2-740x271.png"/>
+      </figure>
+      <figure>
+        <img src="https://elchapuzasinformatico.com/wp-content/uploads/2019/11/Plan-energetico-1usmus-en-un-AMD-Ryzen-3900X-3-740x272.png"/>
+      </figure>
+      <p> </p>
+      <p>Según las pruebas de <a href="https://www.techpowerup.com/review/1usmus-custom-power-plan-for-ryzen-3000-zen-2-processors/2.html">TechPowerUp</a>, tras instalar este modo energético en un <b>AMD Ryzen 9 3900X</b>, se encontraron con <b>una mejoría de 200 MHz en su núcleo Turbo</b>, a lo que se le suma una mejor gestión de los mismos. Como prueba pusieron los núcleos que se activan a la hora de ejecutar Cinebech en la prueba mononúcleo, donde este nuevo plan únicamente <b>activa dos de sus mejores núcleos</b> (el 1º y el 3º), mientras que con el plan energético de Windows 10 <b>se activan los peores núcleos</b> (8º, 9º y 12º), lo que repercute en el rendimiento.</p>
+      <p>En lo que respecta al rendimiento, en el <b>Cinebench R15</b>, se pasó de una puntuación multinúcleo de 3023-3065 puntos a <b>3109 puntos</b>, una mejora de<b> hasta un 3% de rendimiento</b> de forma gratuita y rápida. Tocará esperar para conocer el rendimiento de otros procesadores con menos núcleos pero más rápidos y ver si la mejora es igual o superior.</p>
+    </article>
+  </body>
+</html>

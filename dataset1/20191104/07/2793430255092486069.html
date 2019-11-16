@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://habr.com/en/company/microsoft/blog/474200/"/>
+    <meta property="og:site_name" content="Habr"/>
+    <meta property="article:published_time" content="2019-11-04T07:00:02+00:00"/>
+    <meta property="og:title" content="Windows Terminal Preview 1910 Release"/>
+    <meta property="og:description" content="Another update to the Windows Terminal has just been released! As always, you can download the Terminal from the Microsoft Store, the Microsoft Store for B..."/>
+  </head>
+  <body>
+    <article>
+      <h1>Windows Terminal Preview 1910 Release</h1>
+      <address><time datetime="2019-11-04T07:00:02+00:00">04 Nov 2019, 07:00</time> by <a rel="author" href="https://habr.com/en/users/msgeek/" target="_blank">msgeek</a></address>
+      <p>Another update to the Windows Terminal has just been released! As always, you can download the Terminal from the <a href="https://www.microsoft.com/en-us/p/windows-terminal-preview/9n0dx20hk701">Microsoft Store</a>, the <a href="https://businessstore.microsoft.com/en-us/store/details/windows-terminal-preview/9N0DX20HK701">Microsoft Store for Business</a>, and <a href="https://github.com/microsoft/terminal/releases">GitHub</a>.<br/><br/><b>Note</b>: In the About popup within the Terminal, this version will appear as v0.6.</p>
+      <figure>
+        <a href="http://devblogs.microsoft.com/commandline/wp-content/uploads/sites/33/2019/10/tabview2.2.png">
+          <img src="https://habrastorage.org/getpro/habr/post_images/46a/2f6/98b/46a2f698bbf5888061a1d5579e9e8d6e.png"/>
+        </a>
+      </figure>
+      <h3>Dynamic Profiles</h3>
+      <p>Windows Terminal now automatically detects any Windows Subsystem for Linux (WSL) distribution installed on your machine along with PowerShell Core. If you install any of these after this update of the Terminal, they will appear in your profiles.json file!</p>
+      <figure>
+        <a href="http://devblogs.microsoft.com/commandline/wp-content/uploads/sites/33/2019/10/dynamic-profiles.png">
+          <img src="https://habrastorage.org/getpro/habr/post_images/787/940/73e/78794073e8dcc1bfcac24bc192160294.png"/>
+        </a>
+      </figure>
+      <p><b>Note</b>: If you don’t want a profile to appear in your dropdown, you can set <code>"hidden"</code> to <code>true</code> in your profiles.json file.</p>
+      <pre>"hidden": true</pre>
+      <h3>Cascading Settings</h3>
+      <p>The Terminal now has an improved settings model! It ships with a defaults.json file with all of the default settings included. If you’d like to see what’s included in the default settings file, you can hold down the <code>Alt</code> key and click on the settings button in the dropdown menu. This file is an auto-generated file and changes made to the file are ignored and overwritten. Your own profiles.json file is where you can add as many custom settings as you’d like. If you’d like to reset your settings, Scott Hanselman (<a href="https://twitter.com/shanselman">@shanselman</a>) has written an <a href="https://www.hanselman.com/blog/NowIsTheTimeToMakeAFreshNewWindowsTerminalProfilesjson.aspx">excellent blog post</a> on how to do just that!<br/><br/>If you add a new profile, scheme, key binding, or global setting in your profiles.json, it’ll be treated as an added setting. If you create a new profile whose GUID matches an existing one, then your new profile will override the old one. If there is a default key binding included in the defaults.json file that you would like to free up, you can set that key binding to <code>null</code> in your profiles.json.</p>
+      <pre>{<br/>"command": null, "keys": ["ctrl+shift+w"]<br/>}</pre>
+      <h3>New Launch Settings</h3>
+      <p>You can now set the Terminal to launch as maximized or set its initial position! Setting the Terminal to launch as maximized can be done by adding the global setting <code>"launchMode"</code>. This setting accepts either <code>"default"</code> or <code>"maximized"</code>.</p>
+      <pre>"launchMode": "maximized"</pre>
+      <p>If you’d like to set the Terminal’s initial position, you can add <code>"initialPosition"</code> as a global setting. This property accepts a string with the X and Y coordinates separated by a comma. For example, if you’d like the Terminal to launch at the top left of your primary screen, you’d add the following to your profiles.json:</p>
+      <pre>"initialPosition": "0,0"</pre>
+      <p><b>Note</b>: If you’re using multiple monitors and would like to set the Terminal to launch to the left or above your primary monitor, you will have to use negative coordinates.</p>
+      <h3>Updated UI</h3>
+      <p>The Terminal now has even better tabs! The <a href="https://docs.microsoft.com/en-us/windows/communitytoolkit/controls/tabview">WinUI TabView</a> used in the Terminal has been updated to version 2.2. This version has better color contrast, rounded corners on the dropdown, and tab separators. Also, when too many tabs fill the screen, you can now scroll through them with buttons!</p>
+      <figure>
+        <a href="http://devblogs.microsoft.com/commandline/wp-content/uploads/sites/33/2019/10/tabview2.2.png">
+          <img src="https://habrastorage.org/getpro/habr/post_images/46a/2f6/98b/46a2f698bbf5888061a1d5579e9e8d6e.png"/>
+        </a>
+      </figure>
+      <h3>Bug Fixes</h3>
+      <ul>
+        <li>You can now double-click on the tab bar to maximize the window!</li>
+        <li>One of the main bugs causing newline issues with copy and paste has been fixed!</li>
+        <li>HTML copy doesn’t leave the clipboard open anymore!</li>
+        <li>You can now use font names longer than 32 characters!</li>
+        <li>There is no longer text corruption when running two tabs at the same time!</li>
+        <li>General stability improvements (less crashes)!</li>
+      </ul>
+      <related>
+        <h4>Similar posts</h4>
+        <a href="https://habr.com/en/post/455333/"/>
+        <a href="https://habr.com/en/post/453042/"/>
+        <a href="https://habr.com/en/post/452460/"/>
+      </related>
+    </article>
+  </body>
+</html>

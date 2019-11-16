@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://www.techspot.com/news/82644-google-announces-opentitan-open-source-project-secure-chip.html?utm_referrer=https%3A%2F%2Fzen.yandex.com"/>
+    <meta property="og:site_name" content="TechSpot"/>
+    <meta property="article:published_time" content="2019-11-05T22:45:00+00:00"/>
+    <meta property="og:title" content="Google announces OpenTitan, an open source project for secure chip design"/>
+    <meta property="og:description" content="Google has announced that it is partnering with several companies and non-profits to start a new initiative called OpenTitan. The goal is to develop open source secure chip design to be used in data centers and infrastructure. These designs can&amp;hellip;"/>
+  </head>
+  <body>
+    <article>
+      <h1>Google announces OpenTitan, an open source project for secure chip design</h1>
+      <h2>Google wants everything to have a version of its Titan chip</h2>
+      <address><time datetime="2019-11-05T22:45:00+00:00">05 Nov 2019, 22:45</time> by <a rel="author">David Matthews</a></address>
+      <h4>Why it matters: While there are various means to infect applications running on a computer, the holy grail of cybersecurity is at the firmware and chip level. Google wants to make sure everyone can establish a Root of Trust at the chip level using its Open Titan project. This project aims to establish common reference design that is open sourced. This will allow many people to improve upon the initial design and strengthen the security of the implementation.</h4>
+      <p>Google has <a href="https://security.googleblog.com/2019/11/opentitan-open-sourcing-transparent.html">announced</a> that it is partnering with several companies and non-profits to start a new initiative called OpenTitan. The goal is to develop open source secure chip design to be used in data centers and infrastructure. These designs can be independently verified and built upon to become even stronger.</p>
+      <p>The project is named after Google's own Titan chip that's used in its data centers and Pixel phones that confirms boot from a known trustworthy state and verifies that the firmware hasn't been tampered with. The cryptographic element that is used to verify is called the Root of Trust (RoT) and is the heart of the OpenTitan project.</p>
+      <p>Google says that OpenTitan will be ran by the non-profit LowRisc with additional partners supporting it. Those partners include ETH Zurich, Nuvoton Technology, G+D Mobile Security, and Western Digital. That said, the point open-source nature of the project will ensure that it is platform agnostic and can be adapted to any device.</p>
+      <figure>
+        <img src="https://static.techspot.com/images2/news/bigimage/2019/11/2019-11-05-image.png"/>
+      </figure>
+      <p>The basic idea regarding RoT is that software can run on components that have been deemed secure using "authorized and verifiable code." According to Google's blog post, the benefits of silicon RoT include:</p>
+      <ul>
+        <li>Ensuring that devices boot with correct firmware, free from malware infection.</li>
+        <li>Provide a cryptographically unique machine identity, so an operator can verify that a server or a device is legitimate.</li>
+        <li>Protect secrets like encryption keys in a tamper-resistant way even for people with physical access (e.g., while a server or a device is being shipped).</li>
+        <li>Provide authoritative, tamper-evident audit records and other runtime security services.</li>
+      </ul>
+      <p>The company hopes that by fostering transparency through open source silicon design, it will increase trust and security while encouraging innovation. Issues will be able to be dealt with early and implementations can use common interfaces via an open reference design.</p>
+      <p>Apple uses its own proprietary RoT chip called the T2 in many of its devices. Samsung implements a version of secure boot in its Knox platform while many Windows PCs implement <a href="https://docs.microsoft.com/en-us/windows-hardware/design/device-experiences/oem-secure-boot">secure boot</a> as well.</p>
+      <p>While some may be skeptical of Google's motivations, the overall goal of the OpenTitan project seems noble enough and hopefully spurs chip manufacturers and platform designers to integrate RoT into their designs more readily.</p>
+      <related>
+        <h4>Related Reads</h4>
+        <a href="https://www.techspot.com/news/82337-google-adds-usb-c-option-titan-security-key.html"/>
+        <a href="https://www.techspot.com/news/82168-google-adding-password-checkup-feature-directly-chrome.html"/>
+        <a href="https://www.techspot.com/news/80495-you-can-now-use-android-smartphone-hardware-security.html"/>
+        <a href="https://www.techspot.com/news/80321-new-google-policies-make-chrome-extensions-more-trustworthy.html"/>
+      </related>
+    </article>
+  </body>
+</html>

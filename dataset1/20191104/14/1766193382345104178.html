@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://www.heise.de/ix/meldung/Wachabloesung-im-Rechenzentrum-NVMe-statt-SAS-und-SATA-4575877.html"/>
+    <meta property="og:site_name" content="iX Magazin"/>
+    <meta property="article:published_time" content="2019-11-04T14:55:00+00:00"/>
+    <meta property="og:title" content="Wachablösung im Rechenzentrum: NVMe statt SAS und SATA"/>
+    <meta property="og:description" content="Künftig übernimmt in Servern NVMe die Storage-Rolle. Die aktuelle iX 11/2019 erklärt, was Unternehmen mit der Technik ins Haus steht."/>
+  </head>
+  <body>
+    <article>
+      <h1>Wachablösung im Rechenzentrum: NVMe statt SAS und SATA</h1>
+      <h2>Künftig übernimmt in Servern NVMe die Storage-Rolle. Die aktuelle iX 11/2019 erklärt, was Unternehmen mit der Technik ins Haus steht.</h2>
+      <address><time datetime="2019-11-04T14:55:00+00:00">04 Nov 2019, 14:55</time> by <a rel="author">Moritz Förster</a></address>
+      <p>Nachdem NVMe schon länger zum guten Ton der PC-Topmodelle gehört, kommt die Technik zunehmend in der Profiwelt der IT an. Was Administratoren bei der Technik, den Standards und den Anbietern beachten müssen, erklärt Susanne Nolte in einem umfangreichen Artikel <a href="https://www.heise.de/select/ix/2019/11">der aktuellen iX 11/2019</a>.</p>
+      <p>Der Datendurchsatz bildet heute das größte Nadelöhr in Rechenzentren. Deshalb liebäugeln viele Unternehmen mit NVMe. Die neue Storage-Schnittstelle bindet Speichermedien direkt an den PCIe-Bus an, wodurch sich separate Storage-Busse wie SAS oder SATA erübrigen. Das beschleunigt den I/O nahezu auf den jeweils verfügbaren PCIe-Durchsatz – üblicherweise mit vier Kanälen.</p>
+      <p>Um die von PCIe bereitgestellten Ressourcen voll nutzen zu können, haben die Entwickler das NVMe-Protokoll, das die Adressierung der Geräte und die Kommunikationssteuerung übernimmt, an heutige Hardware angepasst. Der Befehlssatz zur Datenübertragung ist gegenüber dem SATA-Protokoll AHCI ​(Advanced Host Controller Interface) ​schlanker geworden, seine Queueing- und Parallelisierungs-Fähigkeiten haben massiv zugelegt.</p>
+      <h4>Im Rechenzentrum U.2 statt M.2</h4>
+      <p>Neu ist aber nicht nur das Protokoll. Der Wegfall von SAS und SATA schafft Raum für neue Formfaktoren. Zuerst existierten nur Adapterkarten für PCIe-Slots, sogenannte ​Add-in Cards (AICs). Ihre Zahl in einem Server ist aber durch die Zahl freier PCIe-Slots beschränkt. Außerdem lassen sie sich nicht im laufenden Betrieb austauschen – es mussten also andere Formfaktoren und Schnittstellen her. Für Client-Systeme ist die ​M.2-Schnittstelle (Mini) ​NVMe-fähig. Das Äquivalent für Server und Storage-Systeme heißt U.2 (Universial) und eignet sich für ​NVMe-, SAS- und SATA-­SSDs.</p>
+      <p>Bei den Formfaktoren dominieren derzeit noch 2,5 Zoll und AICs, doch bekommen sie zunehmens Konkurrenz von neuen Formaten. ​Von Samsung stammt das Format NGSFF (Next Generation Small Form Factor), das inzwischen NF1 und manchmal M.3 heißt. Intels Vorschlag namens Ruler, linealförmige SSDs, die keine eigenen Halterungen für Fronteinschübe mehr benötigen, hat die SNIA (Storage Networking Initiative Association) inzwischen als EDSFF (Enterprise &amp; Data­center Stor­age Form Factor) standardisiert – allerdings in unterschiedlichen Längen, Höhen und Breiten, genannt E1 und E3 als long und short.</p>
+      <p>Für Server und Storage-Systeme eröffnen sich durch die neuen Formate und durch den Wegfall des Storage-Busses ebenfalls neue Wege fürs Design. Referenzdesigns für Systeme mit den neuen SSD-Formaten hat die SNIA bereits vorgestellt. Obwohl Server aufgrund des schnellen Prozessor-Generationszyklus einem ebenfalls schnellem Generationswechsel unterliegen, sind bisher nur wenige Modelle auf dem Markt, die auf NVMe-SSD zugeschnitten sind. Noch dünner wird die Luft bei Storage-Arrays. Etwas besser sieht es derzeit bei JBOFs (Just a Bunch of Flash) aus.</p>
+      <p>Siehe dazu auch:</p>
+      <ul>
+        <li><a href="https://www.heise.de/select/ix/2019/11/1917115551256783103">Storage: NVMe im Rechenzentrum</a>, iX 11/2019, S. 82</li>
+      </ul>
+      <p>(<a href="mailto:fo@heise.de">fo</a>)</p>
+    </article>
+  </body>
+</html>

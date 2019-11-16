@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://www.adslzone.net/2019/11/04/android-beam-vulnerabiidad-nfc/"/>
+    <meta property="og:site_name" content="ADSLZone"/>
+    <meta property="article:published_time" content="2019-11-04T18:00:22+00:00"/>
+    <meta property="og:title" content="Un fallo de Android permite meterte virus a través del NFC"/>
+    <meta property="og:description" content="Google ha confirmado la existencia de una vulnerabilidad en Android Beam que permite a un atacante instalar malware en nuestro móvil."/>
+  </head>
+  <body>
+    <article>
+      <h1>Un fallo de Android permite meterte virus a través del NFC</h1>
+      <address><time datetime="2019-11-04T18:00:22+00:00">04 Nov 2019, 18:00</time> by <a rel="author">Alberto García</a></address>
+      <p>Google lanza cada mes un parche de seguridad en el que arregla las vulnerabilidades que se descubren durante el mes anterior en <b>Android</b>. El último parche lanzado es el de noviembre, pero en el pasado mes de octubre se arregló una gravísima vulnerabilidad que permite hackear cualquier móvil usando sólo el <b>NFC.</b></p>
+      <h3>Cualquier persona cercana a ti puede hacer que instales una aplicación con malware</h3>
+      <p>El NFC es muy útil si realizamos <a href="https://www.adslzone.net/reportajes/bancos-apps-pagar-movil/">pagos con el móvil</a>, además de otras muchas utilidades. Incluso si no lo usas, es una función que con casi total seguridad llevarás activada porque cuando configuramos un móvil por primera vez, la función ya viene activa, ya que puede usarse para enviar la configuración desde otro móvil en el proceso de configuración inicial, o también podemos enviar todo tipo de archivos con <b>Android Beam</b>.</p>
+      <figure>
+        <img src="https://www.adslzone.net/app/uploads/2019/11/android-beam-share-compartir.jpg"/>
+      </figure>
+      <p>Uno de los archivos que pueden enviarse son aplicaciones en <b>formato .apk</b>. Cuando las recibimos, aparece una notificación en la pantalla si pulsamos en la app, donde se pregunta al usuario si quiere instalar la aplicación que ha recibido de una fuente desconocida.</p>
+      <p>Sin embargo, tal y como descubrió un investigador de seguridad llamado Y. Shafranovich en enero, las aplicaciones enviadas a través de NFC en Android 8 y posterior no mostraban esa alerta al darle a ejecutar, a diferencia de lo que ocurre si instalamos la aplicación desde un navegador de archivos normal y corriente. Actualmente, cualquier cosa instalada desde fuera de la Play Store es considerada <b>insegura</b>.</p>
+      <p>Antes de Android 8, la opción de instalar de fuentes desconocidas se aplicaba a todo el sistema, donde sólo había que activarla una vez para que no preguntase más si queríamos o no instalarlas. Desde Android 8, hay que darle<b> permiso a una app</b> para que pueda ejecutar archivos .apk de fuentes desconocidas. Por ejemplo, podemos dar permiso al explorador de archivos para que instale otras aplicaciones.</p>
+      <h3>Puedes protegerte del fallo asegurándote de que tienes desactivado Android Beam</h3>
+      <p>Sin embargo, el fallo se encuentra en que Android Beam tenía permiso por defecto para instalar aplicaciones de fuentes desconocidas, recibiendo el mismo nivel de confianza que la <b>Play Store</b>. Esto es realmente peligroso, ya que con que alguien nos envíe una aplicación por NFC y le dé a ejecutar desde la notificación (un solo toque), puede infectar nuestro terminal. Muchos usuarios pueden interpretar que la aplicación viene de una fuente fiable, y si le dan por curiosidad a la notificación, la app se instala.</p>
+      <figure>
+        <img src="https://www.adslzone.net/app/uploads/2019/11/android-beam.jpg"/>
+      </figure>
+      <p>Para que un atacante pueda aprovecharse de la vulnerabilidad (código<b> CVE-2019-2114</b>), es necesario que su móvil esté en contacto con el nuestro durante tiempo suficiente para enviarnos la app maliciosa, como puede ser en el metro o zonas llenas de gente.</p>
+      <p>Si el fabricante de tu móvil es de los que tarda meses en actualizar el móvil, siempre puedes ir manualmente a la configuración de Android Beam en el menú de ajustes y asegurarte de que está desactivado. Si tienes Android 10, ya te encuentras protegido, porque esta versión elimina Android Beam. En el futuro será reemplazada por <b>Fast Share</b>.</p>
+    </article>
+  </body>
+</html>

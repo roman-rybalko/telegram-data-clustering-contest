@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://mspoweruser.com/edge-dev-build-80-0-320-3-changelog/"/>
+    <meta property="og:site_name" content="MSPoweruser"/>
+    <meta property="article:published_time" content="2019-11-05T20:29:00+00:00"/>
+    <meta property="og:title" content="Edge Dev Build updated to 80.0.320.3 with minor improvements (changelog)"/>
+    <meta property="og:description" content="The new Edge dev build 80.0.320.3 changelog is now available which brings a number of small improvements and also the new browser logo. Read about it here."/>
+  </head>
+  <body>
+    <article>
+      <h1>Edge Dev Build updated to 80.0.320.3 with minor improvements (changelog)</h1>
+      <address><time datetime="2019-11-05T20:29:00+00:00">05 Nov 2019, 20:29</time> by <a rel="author">Surur</a></address>
+      <p>After some excitement about a new logo for the Edge browser, Microsoft has finally pushed out<a href="https://techcommunity.microsoft.com/t5/Discussions/Dev-channel-update-to-80-0-320-3-is-live/m-p/984711"> a new Edge Dev build</a>, taking the browser to build 80.0.320.3.</p>
+      <p>The Edge Dev Build 80.0.320.3 changelog brings the following new features:</p>
+      <ul>
+        <li>The <a href="https://mspoweruser.com/microsoft-is-rolling-out-the-new-edge-logo-to-the-canary-dev-and-beta-channels/">new Edge logo for Windows 10 Insiders</a></li>
+        <li>Added the ability for websites installed as apps to be restored when a browser session is restored after update, crash, etc.</li>
+        <li>Added support for an upstream Chromium policy that allows a user to remember a decision to open a link using another application (for example, to join a meeting in Microsoft Teams).</li>
+        <li>Added support for periods in single-word intranet URLs.</li>
+        <li>Added the ability to delete Collections items using the Delete keyboard key.</li>
+        <li>Added a dialog for when browser sign-in is disabled by policy.</li>
+      </ul>
+      <p>There also also the following reliability improvements:</p>
+      <ul>
+        <li>Fixed an issue where Edge crashes shortly after launch for some users if sync is enabled.</li>
+        <li>Fixed an issue where right-clicking the back button crashes the browser.</li>
+        <li>Fixed an issue where editing text in the address bar sometimes causes a browser crash.</li>
+        <li>Fixed a browser crash when updating extensions.</li>
+        <li>Fixed an issue where using the built-in abusive ad blocker sometimes causes the browser to crash upon launch.</li>
+        <li>Fixed an issue where certain websites like YouTube rendered huge, making them unusable.</li>
+        <li>Fixed an issue where print preview does not load.</li>
+        <li>Fixed an issue where PDFs sometimes don’t load properly.</li>
+        <li>Fixed an issue where right-clicking on a PDF sometimes causes the tab to crash.</li>
+        <li>Fixed an issue where navigating to certain webpages with videos causes the tab to crash.</li>
+        <li>Fixed an issue where Application Guard windows hang upon startup.</li>
+        <li>Fixed an issue where all Edge windows open completely white with no UI, but disabling Application Guard mitigates the issue.</li>
+        <li>Fixed an issue where certain DRM-protected videos don’t play.</li>
+        <li>Fixed an issue where certain protected videos like from Netflix don’t work.</li>
+        <li>Fixed an issue where tooltips don’t appear.</li>
+        <li>Improved the reliability of history and favorites items appearing in the address bar suggestions dropdown.</li>
+        <li>Improved the reliability of installation.</li>
+      </ul>
+      <p>Changed behavior:</p>
+      <ul>
+        <li>Fixed an issue where Single Sign-On stops working and users unexpectedly see a username/password prompt to log into websites.</li>
+        <li>Fixed an issue where two Edge shortcuts are sometimes on the Taskbar after an update.</li>
+        <li>Fixed an issue where Work profiles that were erroneously added to the browser were unremovable.</li>
+        <li>Fixed an issue where Application Guard windows open when the browser is launched even though they shouldn’t.</li>
+        <li>Fixed an issue where enabling Application Guard sometimes causes downloads to be blocked in non-Application Guard windows.</li>
+        <li>Fixed an issue where the first run experience sometimes runs every time the browser is opened.</li>
+        <li>Fixed an issue where the profile Settings page has no way for the user to fix an issue with their browser sign-in when one is needed.</li>
+        <li>Fixed an issue where sync can’t be turned off while it’s in the “setting up” state.</li>
+        <li>Fixed an issue where certain UI buttons show $1 instead of their keyboard shortcut in their tooltip.</li>
+        <li>Fixed an issue where the favorites bar is shown when in full screen mode.</li>
+        <li>Fixed an issue where Collections content sometimes gets truncated.</li>
+        <li>Fixed an issue where Spellcheck squigglies appear in Collections items even though they aren’t actionable.</li>
+        <li>Fixed an issue where an incorrect image is used when adding certain webpages to a Collection.</li>
+        <li>Fixed an issue where clicking the button to open the text styles flyout in a Collection sometimes doesn’t work.</li>
+        <li>Fixed an issue where text styling in a Collection isn’t applied properly when using the keyboard to do the selection.</li>
+        <li>Fixed the text style dropdown when editing text in a Collection.</li>
+        <li>Fixed an issue where Collections contents sometimes can’t be deleted.</li>
+        <li>Fixed an issue where the cancel button isn’t functional in certain Collections dialogs.</li>
+        <li>Fixed some issues with the Mac Touch Bar when working with multiple tabs at the same time.</li>
+        <li>Fixed an issue where open tabs sometimes aren’t properly imported from Chrome.</li>
+        <li>Fixed an issue where extensions aren’t sorted by name on the Extensions management page.</li>
+        <li>Improved compatibility of certain websites with Tracking Prevention.</li>
+        <li>Fixed an issue where Edge shortcuts were created in the wrong location in the Start menu.</li>
+      </ul>
+      <p>The official Edge Dev Build 80.0.320.3 changelog  also notes the following known issues:</p>
+      <ul>
+        <li>Extensions that are installed from the Chrome Web Store aren’t getting automatically updated. We expect the fix for this issue to be in today’s Canary and next week’s Dev.</li>
+        <li>The fix for the issue where Edge’s first launch leads to a blank white window didn’t make it into this week’s build. We now expect it next week.</li>
+        <li>There are some issues where users with multiple audio output devices sometimes don’t get any sound from Edge. In one case, Edge becomes muted in the Windows Volume Mixer and unmuting it fixes it.  In another, restarting the browser fixes it.</li>
+        <li>At certain zoom levels, there is a noticeable line between the browser UI and the web contents.</li>
+        <li>Some users were still seeing screenshots that are automatically taken by the feedback tool turn out garbled or all black. Another potential fix for this is expected next week.</li>
+        <li>Jumplist entries are not consistent between the Start Menu and the Task Bar for some users. We believe this is due to the shortcut on the Start Menu not getting migrated properly after an Edge update and are working on a fix.</li>
+        <li>Sometimes the browser will appear to not respond to any user input (clicking or scrolling in webpages doesn’t do anything, hovering over UI doesn’t make it change), but clicking on certain buttons still works (like the … menu). The cause of this is due to an error in the GPU process, and opening the browser task manager (right-click near the window minimize/maximize/close buttons or hit shift+esc on the keyboard) will open a window that will allow you to end the GPU process, which will fix the issue.</li>
+      </ul>
+      <p>You can download the Edge Dev build<a href="https://www.microsoftedgeinsider.com/en-us/welcome?channel=dev&amp;version=74.1.96.24"> from Microsoft here.</a></p>
+    </article>
+  </body>
+</html>

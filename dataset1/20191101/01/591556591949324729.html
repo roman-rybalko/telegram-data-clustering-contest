@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://www.zdnet.com/article/mozilla-to-stop-supporting-sideloaded-extensions-in-firefox/"/>
+    <meta property="og:site_name" content="ZDNet"/>
+    <meta property="article:published_time" content="2019-11-01T01:16:26+00:00"/>
+    <meta property="og:title" content="Mozilla to stop supporting sideloaded extensions in Firefox"/>
+    <meta property="og:description" content="Firefox users won't be able to sideload extensions starting March 2020, with Firefox 74."/>
+  </head>
+  <body>
+    <article>
+      <h1>Mozilla to stop supporting sideloaded extensions in Firefox</h1>
+      <address><time datetime="2019-11-01T01:16:26+00:00">01 Nov 2019, 01:16</time> by <a rel="author" href="https://www.zdnet.com/meet-the-team/us/catalin.cimpanu/" target="_blank">Catalin Cimpanu</a></address>
+      <p>
+        <b>Firefox users won't be able to sideload extensions starting March 2020, with Firefox 74.</b>
+      </p>
+      <figure>
+        <img src="https://zdnet2.cbsistatic.com/hub/i/2019/11/01/a4fb8186-b7f3-4e61-8a77-16050e1b1fb6/132c3d218a38cf3ebaa1a37ef70052de/firefox.png"/>
+        <figcaption>Image: Mozilla</figcaption>
+      </figure>
+      <p>Mozilla has announced today plans to discontinue one of the three methods through which extensions can be installed in Firefox.<br/><br/>Starting next year, Firefox users won't be able to install extensions by placing an XPI extension file inside a special folder inside a user's Firefox directory.<br/><br/><a href="https://extensionworkshop.com/documentation/publish/distribute-sideloading/#standard-extension-folders">The method</a>, known as sideloading, was initially created to aid developers of desktop apps. In case they wanted to distribute a Firefox extension with their desktop app, the developers could configure the app's installer to drop a Firefox XPI extension file inside the Firefox browser's folder.</p>
+      <h3>Sideloading removed because of abuse</h3>
+      <p>This method has been available to Firefox extension developers since the browser's early days. However, today, Mozilla announced plans to discontinue supporting sideloaded extensions, citing security risks.<br/><br/>"Sideloaded extensions frequently cause issues for users since they did not explicitly choose to install them and are unable to remove them from the Add-ons Manager," said Caitlin Neiman, Add-ons Community Manager at Mozilla.</p>
+      <p>"This mechanism has also been employed in the past to install malware into Firefox," Neiman said.</p>
+      <h3>Two-phase removal plan</h3>
+      <p>As a result, Mozilla plans to stop supporting this feature next year in a two-phase plan.</p>
+      <p>The first will take place with the release of Firefox 73 in February 2020. Neiman says Firefox will continue to read sideloaded extensions, but they'll be slowly converted into normal add-ons inside a user's Firefox profile, and made available in the browser's Add-ons section.<br/><br/>By March 2020, with the release of Firefox 74, Mozilla plans to completely remove the ability to sideload an extension. By that point, Mozilla hopes that all sideloaded extensions will be moved inside users' Add-ons section.<br/><br/>Through the move, Mozilla also hopes to help clean up some Firefox installations where malware authors were secretly sideloading extensions behind users' backs. Since these extensions will now show up in the Add-ons sections, users will be able to remove any extensions they don't need or don't remember installing.</p>
+      <h3>Two methods of loading extensions remain</h3>
+      <p>Further, <a href="https://blog.mozilla.org/addons/2019/10/31/firefox-to-discontinue-sideloaded-extensions/">Mozilla's blog post</a> on the matter today also serves as a notice for extension developers, who will have to update their extensions and make them available through another installation mechanism.<br/><br/>There are currently two other ways through which developers can distribute extensions, and through which users can install them.<br/><br/>The first and the most widely known is by installing extensions from the official <a href="https://addons.mozilla.org/en-US/firefox/">addons.mozilla.org</a> (AMO) portal. Extensions listed here are verified by Mozilla, so most are relatively safe, albeit the security checks aren't 100% sure to catch all malicious code.<br/><br/>The second involves using the "<a href="https://extensionworkshop.com/documentation/publish/distribute-sideloading/">Install Add-on From File</a>" option in Firefox's Add-ons section. Users have to manually download a Firefox XPI extension file, visit the Add-ons section, and then use the "Install Add-on From File" option to load the extension in their browser. This option is usually employed for loading extensions that have to handle sensitive corporate data inside enterprise environments, and can't be distributed via the AMO portal.<br/><br/>There was also <a href="https://extensionworkshop.com/documentation/enterprise/enterprise-distribution/#installation-using-windows-registry">a fourth method</a> of loading extensions inside Firefox, but this was removed in September 2018, with the release of Firefox 62. This involved modifying Windows Registry keys to load custom extensions with Firefox installations. This, too, was abused by malware devs, and Mozilla decided to remove it.</p>
+    </article>
+  </body>
+</html>

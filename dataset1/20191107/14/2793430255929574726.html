@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://habr.com/en/post/474916/"/>
+    <meta property="og:site_name" content="Habr"/>
+    <meta property="article:published_time" content="2019-11-07T14:22:28+00:00"/>
+    <meta property="og:title" content="Apply Nix-Shell environment in Visual Studio Code"/>
+    <meta property="og:description" content="A lot of developers faced a problem with packages hell on their workstation. After a couple of months with experiments, including different languages and..."/>
+  </head>
+  <body>
+    <article>
+      <h1>Apply Nix-Shell environment in Visual Studio Code</h1>
+      <address><time datetime="2019-11-07T14:22:28+00:00">07 Nov 2019, 14:22</time> by <a rel="author" href="https://habr.com/en/users/RV170/" target="_blank">RV170</a></address>
+      <figure>
+        <img src="https://habrastorage.org/webt/41/gp/_e/41gp_emosvptu5py_t32zati-wo.png"/>
+      </figure>
+      <p>A lot of developers faced a problem with packages hell on their workstation. After a couple of months with experiments, including different languages and toolchains, I installed Elixir, Haskell-stack, Node.js/NVM, and other various stuff. Most exciting things happen when you need different versions of the same package for different projects. Humanity already invented a different solution for creating an isolated environment and switch them when needed. We are using NVM to manage Node.js versions, Python Virtual Env for selecting Python stuff versions or Docker for creating OS inside an OS. But none of the solutions satisfy all my requirements for the isolated development environment.</p>
+      <h3>Inroduction to requirements for managing isolated environment tool</h3>
+      <p>It was a cold autumn evening. I was sitting in my kitchen room and thought about perfect isolation for project workspace with their dependencies. Actually, I didn’t, but the paragraph should have an introduction.<br/><br/>After that, I wrote following criteria for my perfect isolation tool:</p>
+      <ol>
+        <li>Should cover different languages and packages: not just Node.js, Python or Haskell.</li>
+        <li>No virtualization. We are too young for all this shit. Lets save our time.</li>
+        <li>All workspace packages should be easy to remove.</li>
+        <li>All workspace environments should be easy to remove.</li>
+        <li>My IDE should be working with all this stuff without calling Molfars from the Ukrainian Carpathian mountains.</li>
+      </ol>
+      <h3>We need a cup of tea and Google, but cup of tea at first</h3>
+      <p>I remember that once I read about the declarative package manager that can produce an isolated environment and manage all system dependencies and Haskell project dependencies as well.<br/>Five minutes googling, 30 minutes reading, and 1-hour trying let me find out that the current tool is all I need. All I need is love. But stop, it’s another song. All I need is Nix.<br/><br/>Let’s compare the requirements I wrote above from actual Nix features.</p>
+      <ol>
+        <li>Compatible with macOS — yes.</li>
+        <li>Covers different languages and packages — yes.</li>
+        <li>No virtualization — really no virtualization.</li>
+        <li>All workspace packages should be easy to remove — maybe yes, but I don’t know how.</li>
+        <li>My IDE should be working with all this stuff — no. There no way to integrate Nix Environment to Visual Studio Code.</li>
+      </ol>
+      <details>
+        <summary>Spoiler alert</summary>
+        <p>It was a long time ago. When the autumn evening was cold, I told you, do you remember? But today is a completely different evening. It’s warm autumn and all of my problems disappeared.</p>
+      </details>
+      <h3>Help yourself. Writing Visual Studio Code extension</h3>
+      <p>The extension helps you integrate VS Code and Nix-shell together.<br/>I’m too lazy to write this chapter from scratch, so the text bellow is copy/paste from official README.md from my extension.</p>
+      <h4>Getting started</h4>
+      <ul>
+        <li>First of all, you should install <a href="https://nixos.org/nix/">Nix package manager</a>.</li>
+        <li>Restart VS Code to be sure path to run nix-shell configured properly</li>
+        <li>
+          <a href="https://marketplace.visualstudio.com/items?itemName=arrterian.nix-env-selector">Install the extension</a>
+        </li>
+        <li>Create nix env config, like default.nix in your project workspace root</li>
+        <li>Open commands pallet (Cmd/Ctrl + Shift + P) and type Select environment</li>
+        <li>From the list of nix virtual environments choose the one you’d like to apply</li>
+      </ul>
+      <h4>Haskell Project running example</h4>
+      <p>To run your Haskell application, you have to install the GHC compiler. To avoid global GHC installation and be able to use different compiler versions in your host lets do this by using nix virtual environment.<br/><br/>Example of GHC compiler inside the NIX store (shell.nix):</p>
+      <pre>{ nixpkgs ? import &lt;nixpkgs&gt; {} }:<br/>let<br/>  inherit (nixpkgs) pkgs;<br/>  inherit (pkgs) haskellPackages;<br/>  haskellDeps = ps: with ps; [<br/>    base<br/>    lens<br/>    mtl<br/>    random<br/>  ];<br/>  ghc = pkgs.haskell.packages.ghc864.ghcWithPackages haskellDeps;<br/>  nixPackages = [<br/>    ghc<br/>    pkgs.gdb<br/>    haskellPackages.cabal-install<br/>  ];<br/>in<br/>pkgs.stdenv.mkDerivation {<br/>  name = "snadbox-haskell-workspace";<br/>  buildInputs = nixPackages;<br/>}</pre>
+      <p>Now let’s try to open our project in Visual Studio Code.</p>
+      <figure>
+        <video src="https://habrastorage.org/getpro/habr/post_images/9db/ec8/7a3/9dbec87a3f5d96693b7d6f70f5e1453f.gif" autoplay="" loop=""/>
+      </figure>
+      <p>You can see, IDE can’t find a compiler. Let’s turn on shell.nix env.</p>
+      <figure>
+        <video src="https://habrastorage.org/getpro/habr/post_images/b80/578/604/b8057860413b38a6fb958cb6c952e8e4.gif" autoplay="" loop=""/>
+      </figure>
+      <p>Bingo! Everything is fine now.</p>
+      <h3>Conclusion</h3>
+      <p>I hope the article brought you some new ideas about how to make your life easier and manage your project without chaos in your file system.<br/><br/><i>The benefits of this approach are:</i></p>
+      <ul>
+        <li>All packages in a separate workspace and don’t affect the global scope against you want it implicit</li>
+        <li>Your IDE see all workspace staff and working as you expected</li>
+        <li>Simple project bootstrapping from a config file on different machines</li>
+      </ul>
+      <p>
+        <i>Nothing is perfect in our world:</i>
+      </p>
+      <ul>
+        <li>Need to learn a new language to write config files</li>
+        <li>Nix CLI option has no obvious meaning and all the time when you interact with CLI tools you need read command help</li>
+        <li>All programming languages have their stuff to install ecosystem libraries. Like NPM, Cabal, Cargo, Pip, etc. And when you install this kind of packages via Nix, you have a risk of getting not working from the box some linters, analyzing tools, etc.</li>
+      </ul>
+      <h3>External links</h3>
+      <ul>
+        <li>
+          <a href="https://nixos.org/nix/">Nix package manager</a>
+        </li>
+        <li>
+          <a href="https://github.com/arrterian/nix-env-selector">Extension GitHub Repository</a>
+        </li>
+        <li>
+          <a href="https://marketplace.visualstudio.com/items?itemName=arrterian.nix-env-selector">VS Code Marketplace</a>
+        </li>
+      </ul>
+      <related>
+        <h4>Similar posts</h4>
+        <a href="https://habr.com/en/post/462801/"/>
+        <a href="https://habr.com/en/post/462641/"/>
+        <a href="https://habr.com/en/post/461835/"/>
+      </related>
+    </article>
+  </body>
+</html>

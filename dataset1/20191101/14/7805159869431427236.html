@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://www.xda-developers.com/use-google-pixel-4-face-unlock-any-app/"/>
+    <meta property="og:site_name" content="XDA Developers"/>
+    <meta property="article:published_time" content="2019-11-01T14:23:00+00:00"/>
+    <meta property="og:title" content="Fingerface Xposed Module enables the Pixel 4’s Face Unlock in any app"/>
+    <meta property="og:description" content="With the Fingerface Xposed Module, you can use the Google Pixel 4's secure Face Unlock feature in any app that currently uses fingerprint authentication."/>
+  </head>
+  <body>
+    <article>
+      <h1>Fingerface Xposed Module enables the Pixel 4’s Face Unlock in any app</h1>
+      <address><time datetime="2019-11-01T14:23:00+00:00">01 Nov 2019, 14:23</time> by <a rel="author" href="https://www.xda-developers.com/author/mishaalrahman/" target="_blank">Mishaal Rahman</a></address>
+      <p>
+        <i><b>Update 1 (11/1/19 @ 2:24 PM ET):</b> A new fork of the project has appeared online.</i>
+      </p>
+      <p>The <a href="https://www.xda-developers.com/google-pixel-4-specs-features-pricing-availability/">Google Pixel 4</a> may not be the first Android smartphone with secure facial recognition hardware (it’s preceded by the OPPO Find X and Huawei Mate 20 Pro), but it is the first Android device with a face unlock implementation that’s recognized secure under Android’s BiometricPrompt API. That means the Pixel 4 is the first Android smartphone that lets you use your face to not only unlock the phone but also authenticate apps or payments. However, app developers <a href="https://www.xda-developers.com/google-pixel-4-users-wait-developers-add-face-unlock-support/">have to update their apps</a> to use BiometricPrompt, so it’s going to take some time for every banking and password manager app to support the new Face Unlock. Since the Pixel 4 doesn’t have a fingerprint scanner, apps that use the old API will simply fall back to asking you for manual password entry. Fortunately, there’s a way around that, provided you’re willing to root your Pixel 4 with <a href="https://forum.xda-developers.com/apps/magisk">Magisk</a> and install the <a href="https://forum.xda-developers.com/xposed">Xposed Framework</a>.</p>
+      <p>XDA Junior Member <a href="https://forum.xda-developers.com/member.php?u=5384808">SemonCat</a> developed an <a href="https://forum.xda-developers.com/xposed/modules">Xposed Module</a> called “Fingerface” that proxies the old fingerprint API to instead call the new BiometricPrompt API. That means that whenever an app using the old fingerprint API requests you to scan your fingerprint, the new BiometricPrompt dialog will appear to let you scan your face instead. It’s a simple, albeit crude, workaround, but it beats having to manually type your long passwords into all of your apps.</p>
+      <p>Here’s a quick screen recording from the developer that shows an app (in this case, Magisk Manager) asking for fingerprint authentication, but instead receiving facial authentication:</p>
+      <figure>
+        <iframe src="https://www.youtube.com/embed/CYN3XBapqfM" width="560" height="315" data-service="Youtube" scrolling="no"/>
+      </figure>
+      <p>In my view, this is a great demonstration of the power of the Xposed Framework. Xposed lets Modules hook into the methods of other apps to execute their own methods before, during, or in place of the original methods. That’s exactly what this Module is doing; FingerFaces <a href="https://github.com/SemonCat/Fingerface/blob/master/app/src/main/java/com/edison/fingerface/ModPackageManager.kt#L23">always returns “true”</a> when PackageManager checks to see if the device supports fingerprint hardware, and it also <a href="https://github.com/SemonCat/Fingerface/blob/master/app/src/main/java/android/hardware/fingerprint/MyFingerprintManager.java">hooks into</a> the (now deprecated) FingerprintManager API used by apps to instead call BiometricPrompt in its authenticate method. It won’t be easy to translate this hack into a Magisk Module because it’ll involve per-device and per-build modules that replace the framework, but the developer says he’s working on it.</p>
+      <p>I should note that installing this mod on the Google Pixel 4 currently isn’t easy. First of all, there’s no <a href="https://www.xda-developers.com/how-to-install-twrp/">TWRP</a> support for the Pixel 4 just yet, so you’ll have to manually install Magisk. That means you have to <a href="https://www.xda-developers.com/google-pixel-4-xl-factory-images-kernel-source-code/">download the factory image</a>, extract the boot image, patch the boot image <a href="https://www.xda-developers.com/magisk-v20-stable-release-android-10-support/">using the latest Magisk Manager</a>, and then <a href="https://www.xda-developers.com/google-releases-separate-adb-and-fastboot-binary-downloads/">fastboot</a> flash the patched boot image. To install Xposed, you’ll then have to install the Riru Core Magisk Module and then EdXposed, the unofficial successor to the Xposed Framework. Instructions on how to do that can be found <a href="https://forum.xda-developers.com/pixel-4-xl/how-to/xposed-discussion-thread-t3992607">here</a>. Finally, you can then install the Fingerface module.</p>
+      <p>Some might scoff at this mod over security concerns, but the Module is <a href="https://github.com/SemonCat/Fingerface">open source</a> and from a quick glance, it seems to only do what it’s supposed to do. Furthermore, the existence of this mod has no implication on the security of Android 10 or the Pixel 4 itself since it requires the user to manually gain root access after unlocking the bootloader. Lastly, this mod, like most other mods on our forum, is intended to be used by those who value convenience and more features despite the added risk of having an unlocked bootloader and root access.</p>
+      <p>If you’re interested in this mod, you can download it from the Google Play Store link embedded below. It costs $0.99 if you get it from the Play Store, but since the app is open source, you can also just compile it yourself. <a href="https://forum.xda-developers.com/pixel-4-xl/themes/xposed-fingerface-faceid-backward-t3993139">Visit the XDA forum thread</a> if you have any questions or feedback about this app. For any app developers that read this, Google <a href="https://android-developers.googleblog.com/2019/10/one-biometric-api-over-all-android.html">published a blog post</a> on implementing the Biometric API through the AndroidX Biometric Library. Update your apps so users won’t have to use this dirty hack!</p>
+      <hr/>
+      <h3>Update 1: <a href="https://forum.xda-developers.com/member.php?u=4470081">TopJohnWu</a> Fork</h3>
+      <p>XDA Recognized Developer topjohnwu, the developer of Magisk himself, decided to fork this project to clean up the code.</p>
+      <figure>
+        <iframe data-src="https://twitter.com/topjohnwu/status/1190258039867109377?ref_src=twsrc%5Etfw" data-embed-type="twitter-tweet" width="100%" height="0" data-service="Twitter" scrolling="no" nowide=""/>
+      </figure>
+      <p>Since the app was already open source and its code seemed innocuous, there wasn’t any harm in running it as is. However, if you want to try a version from a more reputable developer, then you can download it from <a href="https://github.com/topjohnwu/Fingerface">topjohnwu’s GitHub</a>.</p>
+    </article>
+  </body>
+</html>

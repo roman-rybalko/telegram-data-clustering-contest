@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://thenextweb.com/security/2019/11/01/chinese-state-backed-hackers-are-compromising-telecom-operators-to-steal-text-messages/"/>
+    <meta property="og:site_name" content="The Next Web"/>
+    <meta property="article:published_time" content="2019-11-01T07:30:51+00:00"/>
+    <meta property="og:title" content="Chinese state-backed hackers are compromising telecom operators to steal text messages"/>
+    <meta property="og:description" content="China's state-backed APT41 has developed MESSAGETAP malware to monitor and save SMS traffic from specific phone numbers for subsequent theft."/>
+  </head>
+  <body>
+    <article>
+      <h1>Chinese state-backed hackers are compromising telecom operators to steal text messages</h1>
+      <address><time datetime="2019-11-01T07:30:51+00:00">01 Nov 2019, 07:30</time> by <a rel="author" href="https://thenextweb.com/author/ravie/" target="_blank">Ravie Lakshmanan</a></address>
+      <p>APT41, one of China‘s prolific hacking groups, has developed a new kind of malware that can steal SMS messages from a cellular network.</p>
+      <p><a href="https://www.fireeye.com/blog/threat-research/2019/10/messagetap-who-is-reading-your-text-messages.html">According to latest research by cybersecurity vendor FireEye</a>, the state-backed threat actor — notorious for a barrage of espionage operations against geopolitical adversaries — developed the capabilities to monitor and save SMS traffic from specific phone numbers for subsequent theft.</p>
+      <p>The malware — dubbed MESSAGETAP — was discovered on a Short Message Service Center (SMSC) server that was being used by a telecom firm to route SMS messages to intended recipients.</p>
+      <p>Aside from employed to extract the SMS message content, the malware collects the source and destination phone numbers of targeted individuals, the mobile subscriber identity numbers, and data from call detail record (CDR) databases.</p>
+      <p>MESSAGETAP works by sniffing SMS traffic and stealing them if the contents contain certain special keywords of geopolitical interest, the messages were being sent from or to particular phone numbers, or specific devices with unique <a href="https://en.wikipedia.org/wiki/International_mobile_subscriber_identity">IMSI numbers</a>.</p>
+      <p>FireEye didn’t disclose the targets of the intrusion campaign, but said four telecom operators were tainted with MESSAGETAP in 2019. Furthermore, it discovered a separate state-backed group injected this malware into four additional cellular service providers’ networks.</p>
+      <p>“The use of MESSAGETAP and targeting of sensitive text messages and call detail records at scale is representative of the evolving nature of Chinese cyber espionage campaigns,” FireEye said.</p>
+      <h3>A resourceful hacking group</h3>
+      <p><a href="https://attack.mitre.org/groups/G0096/">Known as Barium</a> or <a href="https://attack.mitre.org/groups/G0044/">Winnti</a> by other companies, APT41 has been previously linked to <a href="https://www.welivesecurity.com/2019/10/14/connecting-dots-exposing-arsenal-methods-winnti/">various supply chain compromises</a> targeting Asus, NetSarang, and CCleaner utility in recent years.</p>
+      <p>Although state-sponsored cyber espionage missions are its primary objectives, the group is also known for <a href="https://thenextweb.com/security/2019/08/12/chinese-cyber-espionage-group-is-extorting-money-from-the-gaming-industry/">conducting financially-motivated side operations</a> by using ransomware against game companies and attacking cryptocurrency providers for personal profit.</p>
+      <p>With its wide range of tools and techniques, APT41 has proven itself to be a “Swiss Army knife” capable of data theft, running extortion campaigns, and surveilling anyone of interest to Beijing.</p>
+      <p>Indeed, a Reuters report published in September noted that hackers working for the Chinese government had broken into telecoms networks to <a href="https://www.reuters.com/article/us-china-cyber-uighurs-idUSKCN1VQ1A5">track the Uyghur Muslim minority</a> and <a href="https://thenextweb.com/security/2019/10/08/us-puts-chinese-surveillance-tech-firms-on-economic-blacklist-over-uyghur-abuse/">their whereabouts in the country</a>.</p>
+      <p>APT41’s campaign is the latest evidence of the group’s increasing technical prowess to mount such highly targeted surveillance attacks.</p>
+      <p>This necessitates organizations to isolate their critical network infrastructure and secure it behind strong firewall barriers so as to prevent unauthorized access to internal systems.</p>
+      <p>What’s more, the development highlights the risks associated with transmitting sensitive data over SMS, which are not only unencrypted but are also <a href="https://www.vice.com/en_us/article/vbqax3/hackers-sim-swapping-steal-phone-numbers-instagram-bitcoin">prone to hijacking attacks</a>. Users should therefore consider switching to more secure alternatives — such as Signal and WhatsApp — that enforce end-to-end encryption.</p>
+      <p>“The threat to organizations that operate at critical information junctures will only increase as the incentives for determined nation-state actors to obtain data that directly support key geopolitical interests remains,” FireEye researchers said.</p>
+    </article>
+  </body>
+</html>

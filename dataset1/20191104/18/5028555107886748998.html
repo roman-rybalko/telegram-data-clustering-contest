@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://arstechnica.com/information-technology/2019/11/researchers-hack-siri-alexa-and-google-home-by-shining-lasers-at-them/"/>
+    <meta property="og:site_name" content="Ars Technica"/>
+    <meta property="article:published_time" content="2019-11-04T18:00:24+00:00"/>
+    <meta property="og:title" content="Researchers hack Siri, Alexa, and Google Home by shining lasers at them"/>
+    <meta property="og:description" content="MEMS mics respond to light as if it were sound. No one knows precisely why."/>
+  </head>
+  <body>
+    <article>
+      <h1>Researchers hack Siri, Alexa, and Google Home by shining lasers at them</h1>
+      <h2>MEMS mics respond to light as if it were sound. No one knows precisely why.</h2>
+      <address><time datetime="2019-11-04T18:00:24+00:00">04 Nov 2019, 18:00</time> by <a rel="author">Dan Goodin</a></address>
+      <p>Siri, Alexa, and Google Assistant are vulnerable to attacks that use lasers to inject inaudible—and sometimes invisible—commands into the devices and surreptitiously cause them to unlock doors, visit websites, and locate, unlock, and start vehicles, researchers report in a research paper published on Monday. Dubbed Light Commands, the attack works against Facebook Portal and a variety of phones.</p>
+      <p>Shining a low-powered laser into these voice-activated systems allows attackers to inject commands of their choice from as far away as 360 feet (110m). Because voice-controlled systems often don’t require users to authenticate themselves, the attack can frequently be carried out without the need of a password or PIN. Even when the systems require authentication for certain actions, it may be feasible to brute force the PIN, since many devices don’t limit the number of guesses a user can make. Among other things, light-based commands can be sent from one building to another and penetrate glass when a vulnerable device is kept near a closed window.</p>
+      <p>The attack exploits a vulnerability in microphones that use <a href="https://en.wikipedia.org/wiki/Microelectromechanical_systems">micro-electro-mechanical systems</a>, or MEMS. The microscopic MEMS components of these microphones unintentionally respond to light as if it were sound. While the researchers tested only Siri, Alexa, Google Assistant, Facebook Portal, and a small number of tablets and phones, the researchers believe all devices that use MEMS microphones are susceptible to Light Commands attacks.</p>
+      <h3>A novel mode of attack</h3>
+      <p>The laser-based attacks have several limitations. For one, the attacker must have direct <a href="https://en.wikipedia.org/wiki/Line-of-sight_propagation">line of sight</a> to the targeted device. And for another, the light in many cases must be precisely aimed at a very specific part of the microphone. Except in cases where an attacker uses an infrared laser, the lights are also easy to see by someone who is close by and has line of sight of the device. What’s more, devices typically respond with voice and visual cues when executing a command, a feature that would alert users within earshot of the device.</p>
+      <p>Despite those constraints, the findings are important for a host of reasons. Not only does the research present a novel mode of attack against voice-controllable, or VC, systems, it also shows how to carry out the attacks in semi-realistic environments. Additionally, the researchers still don’t fully understand the physics behind their exploit. A better understanding in the coming years may yield more effective attacks. Last, the research highlights the risks that result when VC devices, and the peripherals they connect to, carry out sensitive commands without requiring a password or PIN.</p>
+      <p>“We find that VC systems are often lacking user authentication mechanisms, or if the mechanisms are present, they are incorrectly implemented (e.g., allowing for PIN bruteforcing),” the researchers wrote in a paper titled <a href="http://lightcommands.com/">Light Commands: Laser-Based Audio Injection Attacks on Voice-Controllable Systems</a>. “We show how an attacker can use light-injected voice commands to unlock the target’s smart-lock protected front door, open garage doors, shop on e-commerce websites at the target’s expense, or even locate, unlock and start various vehicles (e.g., Tesla and Ford) if the vehicles are connected to the target’s Google account.”</p>
+      <p>Below is a video explaining the Light Commands attack:</p>
+      <figure>
+        <iframe src="https://www.youtube.com/embed/ORji7Tz5GiI" width="560" height="315" data-service="Youtube" scrolling="no"/>
+        <figcaption>LightCommands v3 2</figcaption>
+      </figure>
+      <h3>Low cost, low power requirements</h3>
+      <p>The paper describes different setups used to carry out the attacks. One is composed of a simple laser pointer (price $18 for three), a <a href="https://www.teamwavelength.com/product/ld5cha-5-a-30-v-laser-diode-driver/">Wavelength Electronics LD5CHA</a> laser driver ($339), and a <a href="https://www.amazon.com/dp/B01MS22YWV/?tag=arstech20-20">Neoteck NTK059</a> audio amplifier ($27.99). The setup can use an optional <a href="https://www.amazon.com/dp/B001GKPOJK/?tag=arstech20-20">Opteka 650-1300mm</a> telephoto lens ($199.95) to focus the laser for long-range attacks. The laser driver and diodes are intended for lab use, a condition that requires an attacker to experience with lasers to successfully assemble and test the setups.</p>
+      <figure>
+        <iframe src="https://www.youtube.com/embed/ihRAwc24nXw" width="560" height="315" data-service="Youtube" scrolling="no"/>
+        <figcaption>Light Commands demo with inexpensive setup.</figcaption>
+      </figure>
+      <p>Another setup used an infrared laser that’s invisible to the human eye for more stealthy attacks. A third setup relied on an <a href="https://www.amazon.com/s?k=acebeam+w30&amp;hvadid=78615192598675&amp;hvbmt=be&amp;hvdev=c&amp;hvqmt=e&amp;tag=mh0b-20&amp;ref=pd_sl_54wtf039wz_e">Acebeam W30 500 lumens</a> laser-excited phosphor flashlight to eliminate the requirement to precisely aim a light on a specific part of a MEMS microphone.</p>
+      <p>One of the researchers’ attacks successfully injected a command through a glass window 230 feet away. In that experiment, a VC device was positioned next to a window on the fourth floor of a building, or about 50 feet above the ground. The attacker’s laser was placed on a platform inside a nearby bell tower, located about 141 feet above ground level. The laser then shined a light onto the Google Home device, which has only top-facing microphones.</p>
+      <figure>
+        <img src="https://cdn.arstechnica.net/wp-content/uploads/2019/11/building-to-building.jpg"/>
+        <figcaption>A diagram of the building-to-building attack using Light Commands.<br/>Sugawara et al.</figcaption>
+      </figure>
+      <figure>
+        <iframe src="https://www.youtube.com/embed/EtzP-mCwNAs" width="560" height="315" data-service="Youtube" scrolling="no"/>
+        <figcaption>Building-to-building Light Commands attack.</figcaption>
+      </figure>
+      <p>In a different experiment, the researchers used a telephoto lens to focus the laser to successfully attack a VC device 360 feet away. The distance was the maximum allowed in the test environment, raising the possibility that longer distances are possible.</p>
+      <figure>
+        <iframe src="https://www.youtube.com/embed/iK2PtdQs77c" width="560" height="315" data-service="Youtube" scrolling="no"/>
+        <figcaption>Light Commands in a corridor.</figcaption>
+      </figure>
+      <h3>Semantic gap</h3>
+      <p>The findings, the researchers wrote, identify a “semantic gap between the physics and specification of MEMS (microelectro-mechanical systems) microphones, where such microphones unintentionally respond to light as if it was sound.” The researchers are still determining precisely what causes MEMS microphones to respond this way. The microphones convert sound into electrical signals, but as the research demonstrates, the microphones also react to light aimed directly at them. By modulating the amplitude of a laser light, attackers can trick microphones into producing electrical signals as if they are receiving a specific audio sound, such as “Alexa, turn volume to zero” or “Siri, visit Ars Technica dot com.”</p>
+      <p>In an email, the researchers wrote:</p>
+      <blockquote>We know that light triggers some sort of movement in the microphone’s diaphragm, and that mics are built to interpret such movements as sound (as they’re typically resulting from sound pressure physically hitting the diaphragm). However, we do not completely understand the physics behind it, and we are currently working on investigating this. The semantic gap is that we implicitly assume that mics pick up sound, and only sound, while actually also picking up light in addition (as our work shows).</blockquote>
+      <p>The lasers used in the experiments ranged from common pointers, requiring just 5mW of laser power, to lights powered by 60mW. While the latter type of lasers are powerful enough to damage eyes for even a brief period of exposure, they require only a small battery to produce light.</p>
+      <p>The Light Commands research is the product of a joint team of the following academic researchers: <a href="https://www.sugawara-lab.jp/member/sugawara_e">Takeshi Sugawara</a> of the <a href="https://www.uec.ac.jp/eng/">University of Electro-Communications</a> in Japan and, from the <a href="https://cse.engin.umich.edu/">University of Michigan</a>, <a href="https://benjamin-cyr.com/">Benjamin Cyr</a>, <a href="https://sararampazzi.com/">Sara Rampazzi</a>, <a href="https://web.eecs.umich.edu/~genkin/">Daniel Genkin</a>, and <a href="https://web.eecs.umich.edu/~kevinfu/">Kevin Fu</a>.</p>
+      <p>In a statement, Amazon officials wrote: “Customer trust is our top priority and we take customer security and the security of our products seriously. We are reviewing this research and continue to engage with the authors to understand more about their work.”</p>
+      <p>Google's response, meanwhile was: "We are closely reviewing this research paper. Protecting our users is paramount, and we're always looking at ways to improve the security of our devices."</p>
+      <p>On background, an Amazon representative said the company doesn't think the research presents a threat to Alexa users, in part because the attack requires specialized equipment and line of sight to the device. Users can always set up PINs for sensitive functions and use the mute button to disconnect power to the mic or keep an eye on the device display to see if it's receiving or carrying out commands. A Google representative also said on background that the attack didn't pose a threat to users because it's based on conditions and setups that aren't common in homes. Google researchers will continue to investigate reports like this one, the representative added.</p>
+      <p>Apple officials declined to comment. Facebook wasn't immediately available for comment.</p>
+      <h3>Bypassing security protections</h3>
+      <p>The VC devices in the experiments had different security-related features. Some, for instance, required PINs or passwords to carry out sensitive tasks.</p>
+      <p>The researchers, however, found that it was possible to cause the devices to visit a specific website or, in the event they're connected to certain home security systems, to open a garage door with no PIN required. The devices also required no authentication when receiving a command to turn the volume to zero or turning on do-not-disturb settings. That last task can be useful in making the attacks more stealthy, since it prevents near-by users from hearing sound prompts when commands are being carried out. The researchers also found that, depending on the peripherals a VC system interacted with, it was possible to unlock doors or start or stop connected automobiles without providing a PIN.</p>
+      <p>Even when PINs are required, the researchers found that it was feasible to brute force four-digit codes. The researchers also believe that PINs are vulnerable to eavesdropping attacks. Another security protection is voice recognition, which accepts commands spoken only by an authorized user. But voice recognition is on by default only on the phones the researchers tested. What’s more, when voice recognition was enabled for Siri and Google Home, the devices verified only that wake words (“Siri” or “Hey Google”) were spoken in the authorized user’s voice. The commands that followed could be from any voice. This may make it easier to base attacks previously captured recordings or deep fakes that mimic a user’s voice.</p>
+      <p>Below is a summary of the results from experiments on various devices.</p>
+      <figure>
+        <img src="https://cdn.arstechnica.net/wp-content/uploads/2019/11/device-table-1280x508.jpg"/>
+        <figcaption>A list of devices tested for Light Commands attacks, along with results.<br/>Sugawara et al.</figcaption>
+      </figure>
+      <h3>A new threat model</h3>
+      <p>There are several ways that VC device makers may be able to prevent Light Commands attacks. One is to add a layer of authentication to the device by, for instance, requiring the user to provide a correct answer to a random question before carrying out a sensitive command. Manufacturers can also build devices with multiple microphones in them. Commands would be carried out only when a command was received by all the microphones, thwarting attacks that shined light into only one of them. Last, device makers can reduce the amount of light that reaches a microphone diaphragm by implementing barriers or covers that physically block light beams.</p>
+      <p>It’s almost a certainty that malicious Light Commands attacks haven't been used in the wild, and it’s likely attackers have much more work to do in making them practical. Still, the discovery of a viable way to inject light-based commands is significant, despite the limitations and challenges to making them work reliably and without detection in real-world settings. Until now, command-injection attacks required proximity to a targeted VC device. Light-based injections represent a novel attack vector that may require device makers to construct new defenses.</p>
+    </article>
+  </body>
+</html>

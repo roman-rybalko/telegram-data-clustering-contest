@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://www.androidpolice.com/2019/11/06/some-apps-like-whatsapp-offer-to-save-app-data-when-uninstalled-in-android-10/"/>
+    <meta property="og:site_name" content="Android Police"/>
+    <meta property="article:published_time" content="2019-11-06T18:48:09+00:00"/>
+    <meta property="og:title" content="Some apps like WhatsApp offer to keep app data when uninstalled in Android 10 (Updated)"/>
+    <meta property="og:description" content="Google has never been good at app backups, so uninstalling an app usually means losing all the data associated with it forever. Android 10 has a feature"/>
+  </head>
+  <body>
+    <article>
+      <h1>Some apps like WhatsApp offer to keep app data when uninstalled in Android 10 (Updated)</h1>
+      <address><time datetime="2019-11-06T18:48:09+00:00">06 Nov 2019, 18:48</time> by <a rel="author" href="https://www.androidpolice.com/author/ryan-whitwam/" target="_blank">Ryan Whitwam</a></address>
+      <p>
+        <a href="https://www.androidpolice.com/2019/11/06/some-apps-like-whatsapp-offer-to-save-app-data-when-uninstalled-in-android-10/#1">Update 1: 2019/11/08 4:44am PST<br/>XDA Developers have looked into this and explained how this feature works. Essentially, apps can save their data in three locations, one of them requires root to be accessed,</a>
+      </p>
+      <p>Google has never been good at app backups, so uninstalling an app usually means losing all the data associated with it forever. Android 10 has a feature that saves your app data, and it's just starting to appear in a handful of apps. One of them is WhatsApp, meaning you can save your accounts and chats even if you uninstall it from your phone.</p>
+      <p>For most apps, uninstalling clears the app itself along with the data it contains. However, Android 10 lets developers offer the option to keep that data. When you initiate an uninstall from the home screen or app settings menu, the dialog pop-up includes a check box to keep the data. See below for examples. Uninstalling from the Play Store <i>does not</i> offer the option to keep app data, though.</p>
+      <slideshow>
+        <figure>
+          <img src="https://www.androidpolice.com/wp-content/uploads/2019/11/screenshot_20190928-122430.png"/>
+        </figure>
+        <figure>
+          <img src="https://www.androidpolice.com/wp-content/uploads/2019/11/Screenshot_20191106-084743.png"/>
+        </figure>
+      </slideshow>
+      <p>If you keep the data, you can reinstall the app at a later date and pick up where you left off. For example, WhatsApp instantly has your account and chats ready to go. Unfortunately, there seem to be very few apps that do this right now. We've only spoted <a href="https://play.google.com/store/apps/details?id=com.whatsapp">WhatsApp</a> and <a href="https://play.google.com/store/apps/details?id=com.nll.asr">ASR Voice Recorder</a> with the option so far. There are probably others, and more apps will surely add support in the future.</p>
+      <anchor name="1">
+        <p>
+          <a href="https://www.androidpolice.com/2019/11/06/some-apps-like-whatsapp-offer-to-save-app-data-when-uninstalled-in-android-10/#1">Update 1: 2019/11/08 4:44am PST by Rita El Khoury</a>
+        </p>
+        <p><a href="https://www.xda-developers.com/android-10-manifest-flag-developers-retain-app-data-before-uninstalling/">XDA Developers</a> have looked into this and explained how this feature works. Essentially, apps can save their data in three locations, one of them requires root to be accessed, the second under /Android/data and reachable with the right permissions, and the third in the regular user-accessible storage on Android. When you uninstall an app, the first two are cleared automatically, but the third one remains and you usually have to manually clean it.</p>
+        <p>If developers add the flag "hasFragileUserData" to their app's manifest, uninstalling it will result in the dialog above. When users choose to keep app data, the first two folders are kept intact, so that installing the app again will resume things just as if it was never gone.</p>
+        <p>This is great when you want to revert to an older app version without having to reset everything, for example. However, keep in mind that if you do this, you'll need to be rooted to access and remove the app's remnant data if you no longer need it. Or you can install it again then fully uninstall.</p>
+        <p>End of Update</p>
+        <p><b>Thanks: <br/></b>Samarth</p>
+      </anchor>
+    </article>
+  </body>
+</html>

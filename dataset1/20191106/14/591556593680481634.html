@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://www.zdnet.com/article/emotet-resurgence-packs-in-new-binaries-malicious-functions/"/>
+    <meta property="og:site_name" content="ZDNet"/>
+    <meta property="article:published_time" content="2019-11-06T14:00:00+00:00"/>
+    <meta property="og:title" content="Emotet resurgence packs in new binaries, Trickbot functions"/>
+    <meta property="og:description" content="Updated: One of the most dangerous modular malware variants is back with new delivery functions."/>
+  </head>
+  <body>
+    <article>
+      <h1>Emotet resurgence packs in new binaries, Trickbot functions</h1>
+      <address><time datetime="2019-11-06T14:00:00+00:00">06 Nov 2019, 14:00</time> by <a rel="author" href="https://www.zdnet.com/meet-the-team/us/charlie-osborne/" target="_blank">Charlie Osborne</a></address>
+      <p>
+        <b>Updated: One of the most dangerous modular malware variants is back with new delivery functions.</b>
+      </p>
+      <figure>
+        <video src="http://android-streaming.techrepublic.com/media/2019/05/31/1530273347655/2019-05-31-wochit-emotet-is-this-years-big-malicious-threat-to-your-users_1863226_740.mp4"/>
+      </figure>
+      <p>Emotet, a Banking Trojan turned devastating modular threat, has returned with upgraded functions in a new wave of attacks.  <br/><br/>The malware, first discovered in 2014, has evolved <a href="https://www.zdnet.com/article/emotet-trojan-tweaks-tactics-in-fresh-attack-wave/">over the past few years</a> from a relatively basic, singular threat into a customizable modular package used to deploy additional payloads against financial institutions, the enterprise, and consumers worldwide. </p>
+      <p>Emotet, believed to be the work of a threat group dubbed Mealybug, differs due to its operator's pivot from standalone malware to malware-as-a-service. <br/><br/>By opening up the Trojan to use by other cybercriminals and tampering with its code to support bolt-ons, exploit kits, and varied functionality, Emotet has now become a prevalent and popular payload distributor -- and something far more dangerous.   <br/><br/><b>See also: </b><a href="https://www.zdnet.com/article/emotet-todays-most-dangerous-botnet-comes-back-to-life/">Emotet, today's most dangerous botnet, comes back to life</a></p>
+      <p>According to <a href="https://www.zdnet.com/article/malware-and-botnets-why-emotet-is-dominating-the-malicious-threat-landscape-in-2019/">Proofpoint researchers</a>, between January and March 2019, Emotet accounted for almost two-thirds of all payloads delivered through phishing emails. Botnets accounted for 61 percent of all spam messages during the same timeframe.  <br/><br/>Successful infections by Emotet can be costly, given its destructive nature, ability to steal credentials and forge backdoors into impacted systems. The malware has previously been detected harnessing Trickbot, a dangerous Trojan recently upgraded to be able to <a href="https://www.zdnet.com/article/trickbot-todays-top-trojan-adds-feature-to-aid-sim-swapping-attacks/">conduct SIM-swapping attacks</a>. </p>
+      <p>On Wednesday, cybersecurity researchers from Netscout said that Emotet activity <a href="https://www.netscout.com/blog/asert/emotet-whats-changed">started to decline</a> in May this year, but this hiatus was short-lived. In September, the team picked up a resurgence in activity, and with it, a number of changes to the malware's deployment and functionality.  <br/><br/>According to the team, Emotet has now begun sharing a number of obfuscation techniques already utilized by Trickbot. A new export function has also been found in executable binary functions -- used by both malware variants -- and this feature resolves API names through an export list of loaded DLLs. The API call resolution is present in both Emotet and Trickbot packers. <br/><br/><b>Update 18.11 GMT</b>: The Cryptolaemus team detected the packer link between Emotet and Trickbot <a href="https://paste.cryptolaemus.com/emotet/2019/09/18/emotet-malware-IoCs_09-18-19.html">a month previously</a>. Daily Emotet IOCs can be found <a href="https://paste.cryptolaemus.com/">here</a>. <br/><br/>When it comes to the main payload, Emotet has changed little in its core -- aside from command-and-control (C2) lists and RSA keys which change from version to version -- but the list of words used to create a process name for its bot has been refreshed.  <br/><br/>Words such as engine, finish, magnify, resapi, query, skip, and many more are used and updated alongside new binaries.  <br/><br/><b>CNET: </b><a href="https://www.cnet.com/news/lasers-can-seemingly-hack-alexa-google-home-and-siri/?ftag=CMG-01-10aaa1b">Lasers can seemingly hack Alexa, Google Home and Siri</a><br/><br/>Once researchers have secured these lists, they may be able to create signatures to root out Emotet infections on machines -- but should the list change, signature-based detection is more difficult.  <br/><br/><b>TechRepublic: </b><a href="https://www.techrepublic.com/article/wanted-more-women-hackers/?ftag=CMG-01-10aaa1b">Wanted: More women hackers</a> <br/><br/>Since September, new Emotet binaries have appeared almost every day. Netscout says that each binary contains roughly 40 - 80 C2 indicators, with C2 distribution spread worldwide rather than being concentrated in particular areas.  <br/><br/>"Observing the changes in the way Emotet malware authors pack their binaries and other distributed malware, constantly tweak portions of the code, and alter the configuration data to defeat signatures showcases the aggressive behavior of the malware authors in ensuring that not only their binaries avoid detection, but that of their distributed malware as well making this a very effective operation that persists despite efforts to eliminate the threat," the researchers conclude. </p>
+      <h3>Previous and related coverage</h3>
+      <ul>
+        <li>
+          <a href="https://www.zdnet.com/article/emotet-hijacks-email-conversation-threads-to-insert-links-to-malware/">Emotet hijacks email conversation threads to insert links to malware</a>
+        </li>
+        <li>
+          <a href="https://www.zdnet.com/article/malware-and-botnets-why-emotet-is-dominating-the-malicious-threat-landscape-in-2019/">Malware and botnets: Why Emotet is dominating the malicious threat landscape in 2019</a>
+        </li>
+        <li>
+          <a href="https://www.zdnet.com/article/emotet-trojan-tweaks-tactics-in-fresh-attack-wave/">Emotet malware tweaks tactics in fresh attack wave</a>
+        </li>
+      </ul>
+      <hr/>
+      <p><b>Have a tip?</b> Get in touch securely via WhatsApp | Signal at +447713 025 499, or over at Keybase: charlie0</p>
+      <hr/>
+    </article>
+  </body>
+</html>

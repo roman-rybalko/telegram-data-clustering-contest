@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://www.bleepingcomputer.com/news/security/microsoft-warns-of-more-harmful-windows-bluekeep-attacks-patch-now/"/>
+    <meta property="og:site_name" content="BleepingComputer"/>
+    <meta property="article:published_time" content="2019-11-07T23:01:49+00:00"/>
+    <meta property="og:title" content="Microsoft Warns of More Harmful Windows BlueKeep Attacks, Patch Now"/>
+    <meta property="og:description" content="The Microsoft Defender ATP Research Team says that the BlueKeep attacks detected on November 2 are connected with a coin mining campaign from September that used the same command-and-control (C2) infrastructure."/>
+  </head>
+  <body>
+    <article>
+      <h1>Microsoft Warns of More Harmful Windows BlueKeep Attacks, Patch Now</h1>
+      <address><time datetime="2019-11-07T23:01:49+00:00">07 Nov 2019, 23:01</time> by <a rel="author" href="https://www.bleepingcomputer.com/author/sergiu-gatlan/" target="_blank">Sergiu Gatlan</a></address>
+      <figure>
+        <img src="https://www.bleepstatic.com/content/hl-images/2019/11/07/Microsoft_Security_Intelligence.jpg"/>
+      </figure>
+      <p>The Microsoft Defender ATP Research Team says that the <a href="https://www.bleepingcomputer.com/news/security/windows-bluekeep-rdp-attacks-are-here-infecting-with-miners/">BlueKeep attacks detected on November 2</a> are connected with a coin mining campaign from September that used the same command-and-control (C2) infrastructure.</p>
+      <p>BlueKeep is an unauthenticated remote code execution vulnerability affecting Remote Desktop Services on Windows 7, Windows Server 2008, and Windows Server 2008 R2, and <a href="https://www.bleepingcomputer.com/news/security/microsoft-fixes-critical-remote-desktop-flaw-blocks-worm-malware/">patched by Microsoft on May 14</a>.</p>
+      <p>The Microsoft Defender ATP Research Team that unearthed this new info urges users to immediately patch Windows systems vulnerable to BlueKeep attacks.</p>
+      <p>Even though ransomware or other malware strains besides coin miners have not yet been dropped during this month's BlueKeep attacks on unpatched machines, Microsoft warns that more harmful attacks will come in the future stating that "<i>the BlueKeep exploit will likely be used to deliver payloads more impactful and damaging than coin miners</i>."</p>
+      <p>"While we currently see only coin miners being dropped, we agree w/ the research community that CVE-2019-0708 (BlueKeep) exploitation can be big. Locate and patch exposed RDP services now," Microsoft <a href="https://twitter.com/MsftSecIntel/status/1192549278507388929">tweeted</a>.</p>
+      <p>Customers are encouraged to identify and update vulnerable systems immediately. - Microsoft</p>
+      <p>"After extracting indicators of compromise and pivoting to various related signal intelligence, Microsoft security researchers found that an earlier coin mining campaign in September used a main implant that contacted the same command-and-control infrastructure used during the October BlueKeep Metasploit campaign, which, in cases where the exploit did not cause the system to crash, was also observed installing a coin miner," Microsoft <a href="https://www.microsoft.com/security/blog/2019/11/07/the-new-cve-2019-0708-rdp-exploit-attacks-explained/">says</a>.</p>
+      <p>"This indicated that the same attackers were likely responsible for both coin mining campaigns—they have been actively staging coin miner attacks and eventually incorporated the BlueKeep exploit into their arsenal."</p>
+      <p>Microsoft's researchers also confirmed that this BlueKeep campaign uses the exploit module released for the Metasploit penetration testing framework in September just as security researcher <a href="https://twitter.com/malwaretechblog/status/1190730471321112577">Marcus Hutchins</a> also found when analyzing the crash dumps collected by researcher <a href="https://twitter.com/GossiTheDog/status/1190656348700258310?s=20">Kevin Beaumont</a> from his EternalPot RDP honeypot network.</p>
+      <p>The coinminer payloads delivered in this campaign were spotted by Microsoft on systems from France, Russia, Italy, Spain, Ukraine, Germany, the United Kingdom, and various other countries, in attacks targeting machines with internet-facing RDP services found via port scans.</p>
+      <p>The attackers exploited the vulnerable RDP services and then downloaded and executed several obfuscated PowerShell scripts that dropped the coin miner as the final payload and created a scheduled task for persistence.</p>
+      <p>"Other coin miners deployed in earlier campaigns that did not exploit BlueKeep also connected to this same IP address," Microsoft adds.</p>
+      <figure>
+        <img src="https://www.bleepstatic.com/images/news/u/1109292/November%202019/BlueKeep%20RDP%20crashes.png"/>
+      </figure>
+      <p>While the BlueKeep Metasploit module used in these attacks also causes crashes, a future enhancement that will make it more effective is also highly probable according to Redmond's security research team.</p>
+      <p>"The new exploit attacks show that BlueKeep will be a threat as long as systems remain unpatched, credential hygiene is not achieved, and overall security posture is not kept in check," the researchers add.</p>
+      <p>Microsoft provides a <a href="https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/threat-analytics">threat analytics</a> report that can be generated by security operations teams using Microsoft Defender Advanced Threat Protection while investigating the BlueKeep threat in their organizations.</p>
+      <p><a href="https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-overview">Advanced hunting</a> queries are also available for Microsoft Defender ATP customers to help them search for multiple components of the attack easier.</p>
+      <figure>
+        <iframe data-src="https://twitter.com/GossiTheDog/status/1192567675903512578?ref_src=twsrc%5Etfw" data-embed-type="twitter-tweet" width="100%" height="0" data-service="Twitter" scrolling="no" nowide=""/>
+      </figure>
+    </article>
+  </body>
+</html>
