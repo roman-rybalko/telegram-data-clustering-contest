@@ -1,2 +1,3 @@
-# telegram-data-clustering-contest
-Telegram Data Clustering Contest
+# Telegram Data Clustering Contest
+
+- 18 Nov 2019
