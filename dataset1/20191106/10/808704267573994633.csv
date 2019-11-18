@@ -1,0 +1,86 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+
+Les enceintes connectées vulnérables à une attaque par laser
+
+
+06 Nov 2019, 10:09
+
+C’est le résultat d’un travail commun entre des scientifiques des universités du Michigan et de Tokyo. L’attaque est rendue possible par la présence sur les enceintes de micros exploitant des MEMS, des micropuces électromécaniques. Celles-ci peuvent malheureusement interpréter par erreur un signal lumineux comme un son.
+L’idée est donc de moduler l’amplitude d’un laser pour transmettre une commande à l’enceinte. Les chercheurs laissent imaginer une utilisation potentielle : un voleur qui aurait accès à une fenêtre donnant sur l’enceinte pourrait lui demander de couper l’alarme et désactiver les caméras.
+La technique n’est bien sûr pas sans contrainte, la principale étant d’avoir l’enceinte en ligne de mire, et de pouvoir cibler très précisément le micro qui, selon les modèles, n’est pas si simple à voir. En outre, l’enceinte ne manquera pas de répondre à haute voix à la commande, ce qui pourrait attirer l’attention.
+L’attaque ne nécessite en tout cas pas un énorme investissement : 18 dollars de pointeurs laser, 339 de driver laser, 28 pour un amplificateur de son et environ 200 dollars de lentilles. Elle n’est pas non plus limitée aux seules enceintes connectées, puisque de nombreux smartphones et tablettes incorporent des MEMS.
+L’iPhone XR et l’iPad 6 se sont ainsi révélés vulnérables. Mais les enceintes connectées représentent un danger largement accru puisqu’elles sont fixes.  Les Google Home et Home Mini, la Nest Cam IQ, plusieurs déclinaisons de l’Amazon Echo et la Portal Mini de Facebook ont ainsi été attaquées avec succès.
+Les chercheurs précisent qu’actuellement, aucune attaque de ce genre ne semble avoir été repérée dans la nature, ce qui rassurera les clients de ce type de produit. En outre, l’étude fournit plusieurs pistes d’améliorations, sur la base d’idées simples. Par exemple, s’assurer que les micros sont cachés, ou exiger qu’au moins deux d’entre eux aient capté la commande pour la valider. Après tout, toutes les enceintes en possèdent plusieurs. 
+Ils estiment également que chaque assistant (Alexa, Home, Siri…) devrait être accompagné d’une mesure d’authentification pour valider les commandes sensibles, comme tout ce qui touche à un système d’alarme.
+À Ars Technica, Amazon et Google ont confirmé qu’une enquête était en cours, en collaboration avec les chercheurs. Apple et Facebook n’ont pas encore réagi. Plusieurs vidéos ont été publiées par les chercheurs pour expliquer le fonctionnement global de leur technique et fournir des démonstrations. Elles sont toujours en anglais.
+
+
+Résumé de la technique
+
+
+Démonstration 1
+
+
+Démonstration 2
+
+
+Démonstration 3
+
+
+
+
+",fr,"
+
+
+
+
+
+
+
+
+
+
+
+
+Connected speakers vulnerable to laser attack
+
+
+06 Nov 2019, 10:09
+
+It is the result of a joint work between scientists from the Universities of Michigan and Tokyo. The attack is made possible by the presence on the speakers of microphones using MEMS, electromechanical microchips. These can unfortunately misinterpret a light signal as a sound.
+The idea is to modulate the amplitude of a laser to transmit a command to the enclosure. The researchers suggest a potential use: a thief who has access to a window on the speaker could ask him to turn off the alarm and turn off the cameras.
+The technique is of course not without constraint, the main one being to have the speaker in sight, and to be able to target very precisely the microphone which, according to the models, is not so simple to see. In addition, the speaker will not fail to respond loudly to the command, which could attract attention.
+The attack does not require in any case a huge investment: 18 dollars of laser pointers, 339 laser driver, 28 for a sound amplifier and about 200 dollars of lenses. It is also not limited to only connected speakers, since many smartphones and tablets incorporate MEMS.
+The iPhone XR and iPad 6 have proved vulnerable. But connected speakers represent a greatly increased danger since they are fixed. The Google Home and Home Mini, the Nest Cam IQ, several versions of the Amazon Echo and Facebook Portal Mini were successfully attacked.
+Researchers point out that currently, no such attack seems to have been detected in nature, which will reassure customers of this type of product. In addition, the study provides several avenues for improvement, based on simple ideas. For example, make sure the pickups are hidden, or require at least two of them to pick up the command to validate it. After all, all speakers have multiple speakers.
+They also believe that each assistant (Alexa, Home, Siri ...) should be accompanied by an authentication measure to validate the sensitive commands, as everything related to an alarm system.
+At Ars Technica, Amazon and Google confirmed that an investigation was underway, in collaboration with the researchers. Apple and Facebook have not reacted yet. Several videos have been published by the researchers to explain the overall operation of their technique and provide demonstrations. They are always in English.
+
+
+Summary of the technique
+
+
+Demonstration 1
+
+
+Demonstration 2
+
+
+Demonstration 3
+
+
+
+
+"

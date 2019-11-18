@@ -1,0 +1,70 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Cualquier mesa de cuatro patas que esté coja se puede estabilizar con sólo girarla un máximo de 90 grados
+01 Nov 2019 by Diario Tecnología
+
+
+
+En este vídeo de Numberphile el profesor Kreck explica y demuestra a grandes rasgos uno de esos hechos matemáticos tan llamativos como útiles. Si una mesa está coja tan solo hace falta girarla hasta encontrar el punto en que queda estable. Tampoco hace falta darle muchas vueltas: el giro será de hecho menor que un cuarto de vuelta (90°) y a veces hay incluso varios puntos de estabilidad.
+¿Cómo puede ser esto? Veamos: los taburetes de tres patas nunca cojean. La razón es que tienen tres puntos de apoyo, y tres puntos cualesquiera conforman un plano, de modo que los pongas donde los pongas siempre estarán estables. (Otra cosa es que ese plano sea paralelo al suelo, pero no es eso lo que se discute aquí, simplemente que no «cojee»).
+Con las sillas y mesas de cuatro patas, en cambio, sucede que a veces por la rugosidad del suelo o la longitud de las patas los cuatro puntos de contacto no están alineados en el mismo plano –el suelo– de modo que una de ellas queda más alta que las otras y al apoyarse todo desestabiliza, oscilando de un lado a otro. Pero se puede demostrar que siempre hay una solución para que queden alineadas, más allá de calzarlas con un papel doblado, claro.
+
+
+
+La «razón escondida» es el teorema del valor intermedio que dice que «si una función es continua en un intervalo, entonces toma todos los intermedios comprendidos entre los extremos del intervalo». Considerando la altura de la pata coja respecto al suelo (en un extremo positiva, en otro negativa) en función del ángulo de giro resulta que ha de pasar por el 0 (contacto con el suelo) obligatoriamente.
+… Y por eso las mesas de los matemáticos cuando están tomando cervezas en el bar nunca están cojas.
+– Profesor Kreck
+
+# Enlace Permanente
+
+
+Artículo original
+
+
+
+",es,"
+
+
+
+
+
+
+
+
+
+
+
+Any four-legged table that is lame can be stabilized by simply turning it a maximum of 90 degrees
+01 Nov 2019 by Diario Tecnología
+
+
+
+In this video by Numberphile Professor Kreck explains and demonstrates in broad strokes one of those mathematical facts as striking as they are useful. If a table is lame, you just have to turn it until you find the point where it is stable. Nor is it necessary to make many turns: the turn will be in fact less than a quarter turn (90 °) and sometimes there are even several stability points.
+How can this be? Let's see: three-legged stools never limp. The reason is that they have three points of support, and any three points make up a plane, so that you put them where you put them will always be stable. (Another thing is that this plane is parallel to the ground, but that is not what is discussed here, simply that it does not ""limp"").
+With the four-legged chairs and tables, on the other hand, it happens that sometimes due to the roughness of the floor or the length of the legs the four contact points are not aligned in the same plane - the floor - so that one of them remains higher than the others and by leaning everything destabilizes, swinging from side to side. But it can be shown that there is always a solution so that they are aligned, beyond putting them on with a folded paper, of course.
+
+
+
+The ""hidden reason"" is the intermediate value theorem that says that ""if a function is continuous in an interval, then it takes all the intermediates between the extremes of the interval."" Considering the height of the lame leg with respect to the ground (at a positive end, at another negative end), depending on the angle of rotation, it is mandatory to pass through the 0 (contact with the ground).
+… And that's why the tables of mathematicians when they are drinking beers at the bar are never lame.
+- Professor Kreck
+
+# Permanent Link
+
+
+Original article
+
+
+
+"

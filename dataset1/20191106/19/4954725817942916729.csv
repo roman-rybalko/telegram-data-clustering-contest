@@ -1,0 +1,64 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+「RPGツクールMV」データベースやイベントをCSVなどに変換するツールが配布、75%オフセールも実施中。4周年及び販売本数40万本を記念して
+06 Nov 2019, 19:30 by Keiichi Yokoyama
+KADOKAWAは11月6日、PC用RPG作成ツール「RPGツクールMV」の発売4周年と販売数40万本突破を記念して、新たなDLC販売とツールの配布を発表した。「RPGツクールMV」は、従来のWindowsだけでなくスマートフォンやブラウザなど、ツクールシリーズとしては初のマルチプラットフォームに対応し、「RPGツクールVX Ace」の後継として2015年に発売されたPC用ゲーム制作ソフト。データベースをCSV形式などに相互変換できるツール「RPGツクールMVツール・データベースコンバーターMV」の配布と、「RPGツクールDS」「RPGツクールVX Ace」「RPGツクールXP」などの素材を収録した新規DLCの販売が開始されている。
+
+
+
+「RPGツクールMVツール・データベースコンバーターMV」は、ユーザーからの要望が多かったというデータベースやイベントの内容を書き出したり、書き込みを可能にするWindosws用アプリケーション。本ツールを利用することで、データベースをExcelやCSV形式に相互変換可能になる。書き出したデータベースを表計算ソフトで扱うことにより、データベースの一括設定や編集、マクロやVBAなどが利用でき、利便性が高まるそうだ。
+動作環境はWindows7以降の64bit環境で、Intel Core2 Duo相当、4GB以上のメモリを搭載しているPCが想定されている。なお、「RPGツクールMVツール・データベースコンバーターMV」を開発したのは「RPGツクールMV」用のプラグインを多数公開しているトリアコンタン氏。「RPGツクールMV」の公式サイト上でダウンロード可能になっている。
+
+
+
+新たなDLCとして発売されるのは、「RPGツクールDS グラフィック＆音楽素材集for MV」「RPGツクールDS+ グラフィック＆音楽素材集for MV」「RPGツクールVXAce　＆　XP ヒーローパック」の3点。前者の2点は、「RPGツクールDS」及び「RPGツクールDS+」のマップ作成用のタイルや戦闘用背景、歩行グラフィックと、BGM20曲などが入った素材集で、それぞれ税込3122円。おまけとしてサンプルマップが40点ずつ収録されており、ツクール用マップの制作依頼を請け負っているLib氏が、サンプルマップの制作を担当している。同氏によれば、DS+のSFと戦国を混ぜて使用するのがオススメなのだとか。
+また、「RPGツクールVX Ace & XP ヒーローパック」は、「RPGツクールVX Ace」及び「RPGツクールXP」の素材を収録した素材集。おまけとして「RPGツクールVX」の戦闘用バトラー56種類も収録されており、価格は税込2178円となる。
+
+
+
+また、ツクール公式ストア及びSteamで、40万本突破を記念したセールが実施中だ。公式ストアとSteamで価格やセール期間がそれぞれ異なるが、Steamでは「RPGツクールMV」単体版の価格が75%オフの税込2032円となっているほか、DLCとセットになった「MV2019 Arigato Pack」「MV2019 Arigato Pack Deluxe」などのバンドルも販売されている。Steamでは11月8日2時59分まで、公式ストアでは同日12時までがセール期間となっているので、「RPGツクールMV」の購入を検討していた方は早めにストアをチェックしておくと良いだろう。
+
+
+",ja,"
+
+
+
+
+
+
+
+
+
+
+
+“RPG Maker MV” database and tools to convert events to CSV etc. are distributed, and 75% off sale is also in progress. To commemorate the 4th anniversary and 400,000 units sold
+06 Nov 2019, 19:30 by Keiichi Yokoyama
+On November 6, KADOKAWA announced new DLC sales and distribution of tools to commemorate the 4th anniversary of the RPG Maker MV for PC and the sales of over 400,000 units. “RPG Maker MV” is a PC game production software released in 2015 as the successor to “RPG Maker VX Ace”, supporting not only the conventional Windows but also smartphones and browsers, etc. . Distribution of tools such as “RPG Maker MV Tool / Database Converter MV” that can convert databases into CSV format, etc., and sales of new DLC with materials such as “RPG Maker DS”, “RPG Maker VX Ace”, and “RPG Maker XP” Has been started.
+
+
+
+""RPG Maker MV Tool / Database Converter MV"" is an application for Windows that can write and write database and event contents that many requests from users. By using this tool, the database can be converted to Excel or CSV format. By handling the exported database with spreadsheet software, it seems that convenience can be improved because batch setting and editing of the database, macros, VBA, etc. can be used.
+The operating environment is a Windows 7 or later 64-bit environment, Intel Core2 Duo equivalent, PC with 4GB or more memory is assumed. “RPG Maker MV Tool / Database Converter MV” was developed by Triacontán, who has released many plug-ins for “RPG Maker MV”. It can be downloaded on the official site of ""RPG Maker MV"".
+
+
+
+Three new DLCs will be released: “RPG Maker DS Graphic & Music Collection for MV”, “RPG Maker DS + Graphic & Music Collection for MV” and “RPG Maker VXAce & XP Hero Pack”. The first two are 3122 yen including tax, including tiles for creating maps for RPG Maker DS and RPG Maker DS +, combat backgrounds, walking graphics, and 20 BGM songs. As a bonus, 40 sample maps are included, and Lib, who is undertaking a request to create a map for Maker, is in charge of creating the sample map. According to him, it is recommended to use a mix of DS + SF and Sengoku.
+In addition, “RPG Maker VX Ace & XP Hero Pack” is a collection of materials that contain materials from “RPG Maker VX Ace” and “RPG Maker XP”. As a bonus, 56 types of battle butlers of “RPG Maker VX” are also included, and the price is 2178 yen including tax.
+
+
+
+In addition, a sale commemorating the breakthrough of 400,000 bottles is underway at the Tucour official store and Steam. The price and sale period are different between the official store and Steam, but the price of `` RPG Maker MV '' single version is 2032 yen including tax with 75% off on Steam, and `` MV2019 Arigato Pack '' set with DLC Bundles such as “MV2019 Arigato Pack Deluxe” are also on sale. Steam is on sale until 2:59 on November 8th, and until 12:00 on the same day in the official store, so if you are considering purchasing `` RPG Maker MV '' please check the store as soon as possible And would be good.
+
+
+"

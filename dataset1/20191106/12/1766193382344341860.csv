@@ -1,0 +1,78 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+TypeScript 3.7: Die ??? und der übersichtlichere Code
+Das aktuelle Release der Skriptsprache führt den Nullish-Coalescing-Operator und das Optional Chaining ein.
+06 Nov 2019, 12:37 by Rainald Menge-Sonnentag
+Microsoft hat turnusmäßig TypeScript 3.7 veröffentlicht. Das JavaScript-Superset bringt im aktuellen Release zahlreiche sprachliche Neuerungen mit und nimmt damit erneut einige kommende Features von ECMAScript vorab in die Syntax auf. Sowohl Optional Chaining als auch der Nullish-Coalescing-Operator sind Bestandteil des neuen TypeScript-Release, und beide sollen Einzug in den Kern von JavaScript halten.
+Ein Fragezeichen zum Verketten
+Das Optional Chaining gehört zu den ältesten Wünschen der Entwickler für TypeScript. Das zugehörige Issue hat die Nummer 16 von derzeit gut 23.000 Issues und existiert seit fünf Jahren. Optional Chaining, also die optionale Verkettung, soll auch Bestandteil von ECMAScript werden und gilt in JavaScript derzeit als experimentell.
+Die zugehörige Syntax sieht ein Fragezeichen vor, das innerhalb einer verketteten Anweisung eine null-Prüfung vornimmt. So ersetzt folgende Codezeile aus dem TypeScript-Blog
+let x = foo?.bar.baz();
+folgenden Block:
+let x = (foo === null || foo === undefined) ?  undefined :  foo.bar.baz();
+Konkret testet das ?, ob foo definiert ist und führt nur dann die weitere Berechnung durch. Ansonsten gibt die Anweisung undefined zurück. Erwähnenswert ist, dass die Prüfung sich nur auf den Wert vor dem ? bezieht. Sollte foo.bar nicht definiert sein, führt die Zeile zur einer Fehlermeldung.
+Zwei Fragezeichen für die Null
+Der Nullish-Coalescing-Operator soll ebenfalls Bestandteil von ECMAScript werden und befindet sich derzeit in der dritten und damit vorletzten Stufe (Candidate Stage) beim TC39-Komitee. In anderen Programmiersprachen heißt der Binäroperator auch Null Coalescing und existiert in unterschiedlichen Schreibweisen. Für TypeScript ist ebenso wie in ECMAScript ein doppeltes Fragezeichen dafür vorgesehen. Der Operator ersetzt undefinierte Werte durch einen Standardwert.
+Folgende Codezeile
+let x = foo ?? bar();
+weist der Variable x den Wert von foo zu, wenn er weder null noch undefined ist. Ansonsten erhält x das Ergebnis des Aufrufs von bar().
+Somit ersetzt die Zeile den folgenden Codeblock:
+let x = (foo !== null && foo !== undefined) ?  foo :  bar();
+Zusicherung und Funktionen ohne Rückkehr
+Außerdem bietet TypeScript 3.7 eine bessere Implementierung von Assertions und setzt dafür auf zwei Signaturen: Eine prüft, ob eine beliebige Bedingung true ergibt:
+function assert(condition: any, msg?: string): asserts condition {  if (!condition) {    throw new AssertionError(msg)  }}
+und die andere prüft den Typ einer Variablen. Die Syntax ist an die der assert-Funktion von Node.js angelehnt.
+Außerdem kann TypeScript nun Funktionen korrekt behandeln, die never zurückgeben, also den Programmfluss abbrechen. Der Typ selbst ist seit TypeScript 2.0 Bestandteil der Sprache. TypeScript erkennt nun den Einfluss auf den Programmfluss und behandelt die Funktionen entsprechend. Codebeispiele dazu und zu den Assertions finden sich in dem zugehörigen Pull Request auf GitHub.
+Weitere Neuerungen in TypeScript 3.7 wie zusätzliche rekursive Type Aliases und die neuerdings erlaubte Kombination der Flags --declaration und --allowJs, die sich bisher gegenseitig ausgeschlossen haben, lassen sich dem TypeScript-Blog entnehmen. (rme)
+
+
+",de,"
+
+
+
+
+
+
+
+
+
+
+
+TypeScript 3.7: The ??? and the clearer code
+The current release of the scripting language introduces the Nullish Coalescing Operator and Optional Chaining.
+06 Nov 2019, 12:37 by Rainald Crowd-Sun Day
+Microsoft has regularly released TypeScript 3.7. The JavaScript Superset brings in the current release a lot of linguistic innovations and thus takes again some upcoming features of ECMAScript in advance in the syntax. Both Optional Chaining and the Nullish Coalescing Operator are part of the new TypeScript release, and both are expected to be at the core of JavaScript.
+A question mark for linking
+The optional chaining is one of the oldest wishes of the developers for TypeScript. The issue has the number 16 of currently more than 23,000 issues and has existed for five years. Optional chaining, ie the optional chaining, should also be part of ECMAScript and is currently considered to be experimental in JavaScript.
+The associated syntax provides for a question mark, which makes a null check within a concatenated statement. So replaced the following line of code from the TypeScript blog
+let x = foo? .bar.baz ();
+following block:
+let x = (foo === null || foo === undefined)? undefined: foo.bar.baz ();
+Specifically, does that test whether foo is defined and only then performs the further calculation. Otherwise the statement returns undefined. It is worth noting that the test is only based on the value before? refers. If foo.bar is not defined, the line leads to an error message.
+Two question marks for the zero
+The Nullish Coalescing Operator will also be part of ECMAScript and is currently in the third and penultimate stage (Candidate Stage) of the TC39 Committee. In other programming languages, the binary operator is also called zero coalescing and exists in different spellings. TypeScript has a double question mark as well as ECMAScript. The operator replaces undefined values with a default value.
+Following line of code
+let x = foo ?? bar();
+assigns variable x the value of foo if it is neither null nor undefined. Otherwise, x receives the result of the call to bar ().
+Thus, the line replaces the following code block:
+let x = (foo! == null && foo! == undefined)? foo: bar ();
+Assurance and features without return
+Additionally, TypeScript 3.7 provides a better implementation of assertions, relying on two signatures: one checks if any condition returns true:
+function assert (condition: any, msg ?: string): asserts condition {if (! condition) {throw new AssertionError (msg)}}
+and the other checks the type of a variable. The syntax is similar to the assert function of Node.js.
+In addition, TypeScript can now properly handle functions that never return, thus aborting the program flow. The type itself is part of the language since TypeScript 2.0. TypeScript now recognizes the influence on the program flow and handles the functions accordingly. Code examples and the assertions can be found in the associated pull request on GitHub.
+Other new features in TypeScript 3.7 such as additional recursive type aliases and the recently allowed combination of flags --declaration and --allowJs, which have so far excluded each other, can be found in the TypeScript blog. (RME)
+
+
+"

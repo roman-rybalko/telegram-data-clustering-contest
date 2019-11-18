@@ -1,0 +1,84 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Developer platform updates at Microsoft Ignite 2019
+04 Nov 2019, 06:00 by Kevin Gallo
+Earlier this year, we announced some awesome advancements in how developers can better connect with their customers and build people-centric experiences using the Microsoft 365 platform. Today, we’re continuing that story and sharing how you can use these enhancements to build more innovative applications and be more productive. We are focusing on three key areas:
+
+Enhancing your applications
+Optimizing your end to end workflow
+Providing seamless deployment solutions
+
+Enhancing your applications
+As the gap between Win32 and the Universal Windows Platform (UWP) shrinks, you can adopt the features and tools that work best for you. A top request from developers is to use the modern UI framework down-level. Today you can start using WinUI 3 Alpha, an early preview of WinUI 3 that allows you to start writing apps that will work down to the Windows 10 April 2018 Update. You can also use the Uno platform to bring your WinUI code anywhere WebAssembly runs – including Windows 7. Learn more about our vision and see the roadmap for WinUI on GitHub.
+
+
+Figure 1: Conceptual overview of WinUI 3
+
+React Native for Windows v0.60 now matches React Native v0.60 and is available through the latest vnext npm package. Partners like HP, Citrix, epam, and axsy are incorporating React Native for Windows capabilities such as keyboard and transitions, focus handling, and Acrylic to name a few so their apps can shine on Windows devices. You can also access nearly 80% of React Native core APIs on Windows including support for native extensions. Use our Getting Started Guide and other docs to learn more.
+Optimizing your end to end workflow
+Today, the final Beta of Microsoft Edge is available. You can install the browser here, select the appropriate channel, and add it to your test matrix now. That way your customers can have a great experience when they begin to upgrade. The new Microsoft Edge will include Internet Explorer mode for enterprise customers, and new privacy features like tracking prevention for end users. Microsoft Edge will be available to download on Windows and macOS in January 2020.
+In addition to the web updates, you’ll notice significant improvements to Windows Subsystem for Linux 2 (WSL 2). You can now access your sites and services running in your Linux distros via localhost:port – allowing you to access a node site running in Windows Subsystem for Linux via http://localhost:3000 instead.
+
+
+Figure 2: http://localhost:3000
+
+WSL 2 distros will also release unused memory back to Windows so that as you run processes inside of your WSL 2 VM, it will grow and shrink to fit your memory needs. Once the Linux process is finished, it will free the memory in the instance and the memory footprint of the WSL 2 VM in Windows.
+Providing seamless deployment solutions
+It’s great to see all of our MSIX tool partners provide additional tooling and support for MSIX scenarios and enhance the user experience in the application deployment space. Developers can use the MSIX Packaging Tool to improve signing apps and IT Pros can leverage Device Guard signing to sign their packages with their Azure AD tenant. You can also update your packaging workflows and edit your MSIX packages by using the right-click edit option to directly launch the package editor.
+With the MSIX App Attach preview you can use a single package type across physical and virtual desktops. This preview provides on-demand app availability, reduces network traffic, and improves user logon times because the applications are now separated from the user profiles and the OS layer and attached to a VM at user login. This optimizes application and OS image management for virtual environments – no need to bloat the VM image with unused applications or manage app streaming infrastructure. A single VM image can be used across different user/app groups.
+We know you have a lot of options when choosing which tools and features to use when updating or creating new apps and websites, and we are committed to supporting you with great tools, features, and frameworks. Please continue to share your feedback with us so we can build the best operating system for all your development tasks.
+
+
+",en,"
+
+
+
+
+
+
+
+
+
+
+
+Developer platform updates at Microsoft Ignite 2019
+04 Nov 2019, 06:00 by Kevin Gallo
+Earlier this year, we announced some awesome advancements in how developers can better connect with their customers and build people-centric experiences using the Microsoft 365 platform. Today, we’re continuing that story and sharing how you can use these enhancements to build more innovative applications and be more productive. We are focusing on three key areas:
+
+Enhancing your applications
+Optimizing your end to end workflow
+Providing seamless deployment solutions
+
+Enhancing your applications
+As the gap between Win32 and the Universal Windows Platform (UWP) shrinks, you can adopt the features and tools that work best for you. A top request from developers is to use the modern UI framework down-level. Today you can start using WinUI 3 Alpha, an early preview of WinUI 3 that allows you to start writing apps that will work down to the Windows 10 April 2018 Update. You can also use the Uno platform to bring your WinUI code anywhere WebAssembly runs – including Windows 7. Learn more about our vision and see the roadmap for WinUI on GitHub.
+
+
+Figure 1: Conceptual overview of WinUI 3
+
+React Native for Windows v0.60 now matches React Native v0.60 and is available through the latest vnext npm package. Partners like HP, Citrix, epam, and axsy are incorporating React Native for Windows capabilities such as keyboard and transitions, focus handling, and Acrylic to name a few so their apps can shine on Windows devices. You can also access nearly 80% of React Native core APIs on Windows including support for native extensions. Use our Getting Started Guide and other docs to learn more.
+Optimizing your end to end workflow
+Today, the final Beta of Microsoft Edge is available. You can install the browser here, select the appropriate channel, and add it to your test matrix now. That way your customers can have a great experience when they begin to upgrade. The new Microsoft Edge will include Internet Explorer mode for enterprise customers, and new privacy features like tracking prevention for end users. Microsoft Edge will be available to download on Windows and macOS in January 2020.
+In addition to the web updates, you’ll notice significant improvements to Windows Subsystem for Linux 2 (WSL 2). You can now access your sites and services running in your Linux distros via localhost:port – allowing you to access a node site running in Windows Subsystem for Linux via http://localhost:3000 instead.
+
+
+Figure 2: http://localhost:3000
+
+WSL 2 distros will also release unused memory back to Windows so that as you run processes inside of your WSL 2 VM, it will grow and shrink to fit your memory needs. Once the Linux process is finished, it will free the memory in the instance and the memory footprint of the WSL 2 VM in Windows.
+Providing seamless deployment solutions
+It’s great to see all of our MSIX tool partners provide additional tooling and support for MSIX scenarios and enhance the user experience in the application deployment space. Developers can use the MSIX Packaging Tool to improve signing apps and IT Pros can leverage Device Guard signing to sign their packages with their Azure AD tenant. You can also update your packaging workflows and edit your MSIX packages by using the right-click edit option to directly launch the package editor.
+With the MSIX App Attach preview you can use a single package type across physical and virtual desktops. This preview provides on-demand app availability, reduces network traffic, and improves user logon times because the applications are now separated from the user profiles and the OS layer and attached to a VM at user login. This optimizes application and OS image management for virtual environments – no need to bloat the VM image with unused applications or manage app streaming infrastructure. A single VM image can be used across different user/app groups.
+We know you have a lot of options when choosing which tools and features to use when updating or creating new apps and websites, and we are committed to supporting you with great tools, features, and frameworks. Please continue to share your feedback with us so we can build the best operating system for all your development tasks.
+
+
+"

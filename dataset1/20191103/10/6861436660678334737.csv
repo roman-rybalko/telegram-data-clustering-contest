@@ -1,0 +1,634 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+ஆண்ட்ராய்டு தளத்தில் மேக்புக் லைட் டச் பார் அம்சம் பெறுவது எப்படி?
+03 Nov 2019, 10:54 by Meganathan S
+ஆப்பிள் நிறுவனம் 2016 ஆம் ஆண்டு அறிமுகம் செய்த மேக்புக் ப்ரோ மாடலில் டச்பார் அம்சத்தை சேர்த்து இருந்தது. இது மேக்புக் சாதனங்களுக்கென பிரத்யேக அம்சமாக இருந்து வந்தது. இதை கொண்டு பல்வேறு அம்சங்களின் செட்டிங்கை இயக்க முடியும். பயனர்கள் மத்தியில் இந்த அம்சம் அதிக பிரபலமாகவும், பயன்தரும் ஒன்றாகவும் இருந்து வருகிறது. இந்நிலையில் ஆல்காட்18 எனும் எக்ஸ்.டி.ஏ. டெவலப்பர்கள் டச்பார் எனும் செயலியை உருவாக்கி இருக்கின்றனர்.
+
+
+
+டச் பார் அம்சத்திற்கான ஆண்ட்ராய்டு செயலி ஸ்மார்ட்போனில் உள்ள கண்ட்ரோல் சென்டர் அம்சத்தை இயக்கும் வழி செய்கிறது. மேக்புக் போன்ற டச்பார் அம்சத்தை பெற சில வழிமுறைகள் இருக்கின்றன. டச்பார் செயலியை இலவசமாக டவுன்லோடு செய்வது மட்டுமின்றி இதனை ரூட் செய்த சாதனங்கள் மற்றும் ரூட் செய்யப்படாத சாதனங்களிலும் பயன்படுத்த முடியும்.
+ஆண்ட்ராய்டில் மேக்புக் போன்ற டச்பார் பெற என்ன செய்ய வேண்டும்?
+கீழே கொடுக்கப்பட்டுள்ள எளிய வழிமுறைகளை பின்பற்றி ஆண்ட்ராய்டில் மேக்புக் போன்ற டச்பார் பெறலாம்:
+வழிமுறை 1: ஆண்ட்ராய்டு செயலியை திறந்து செட்டிங்ஸ் -- செக்யூரிட்டி -- அன்-நோன் சோர்சஸ் ஆப்ஷனை செயல்படுத்த வேண்டும்.
+வழிமுறை 2: டச் பார் ஃபார் ஆண்ட்ராய்டு செயலியை டவுன்லோடு மற்றும் இன்ஸ்டால் செய்ய வேண்டும். இதனை கூகுள் பிளே ஸ்டோரில் இருந்து டவுன்லோடு செய்து கொள்ளலாம்.
+வழிமுறை 3: செயலியை திறந்து தேவையான அனுமதியை வழங்க வேண்டும். இவற்றில் Overlay, Write System Settings, Do Not Disturb Access போன்றவை இடம்பெற்று இருக்கிறது.
+வழிமுறை 4: ஆண்ட்ராய்டில் டச்பாரை செயல்படுத்த டச்பார் அம்சத்தை ஆக்டிவேட் செய்ய வேண்டும்.
+மேலே கொடுக்கப்பட்டுள்ள வழிமுறைகளை பின்பற்றி டச்பாரை ஆக்டிவேட் செய்ததும், அதனை உங்கள் விருப்பம் போல் மாற்றியமைத்துக் கொள்ள முடியும். இதன் உயரம் மற்றும் நீலத்தை மாற்றுவதோடு கஸ்டம் ஷார்ட்கட்களையும் செயல்படுத்த முடியும்.
+
+Most Read Articles
+
+
+
+
+
+
+
+வாட்ஸ்ஆப் பே சேவைக்கு இந்தியாவில் தடையா? காரணம் இதுதான்!
+
+
+
+
+
+
+
+ஆப்பிள் நிறுவனத்திற்கு ஐபோனை விட இந்தியா முக்கியமானதாக இருப்பதற்கு 6 காரணங்கள்!
+
+
+
+
+
+
+
+சந்திராயன் 2 செயல்படாததற்கு வடகொரியா ஹாக்கர்கள் காரணமா? உண்மை இதுதான்!
+
+
+
+
+
+
+
+ரூ.99-விலையில் ஆப்பிள் டிவி பிளஸ் சேவை இந்தியாவில் அறிமுகம்.!
+
+
+
+
+
+
+
+வோடபோனின் ரூ.255ப்ரீபெய்ட் திட்டத்தில் வழங்கப்பட்ட தரமான சலுகைகள்: என்ன தெரியுமா?
+
+
+
+
+
+
+
+விரைவில் அறிமுகமாகும் ஐபோன் எஸ்இ2 சாதனம்: விலை எவ்வளவு தெரியுமா?
+
+
+
+
+
+
+
+கேலக்ஸி ஏ50எஸ் மற்றும் கேலக்ஸி ஏ30எஸ் சாதனங்களுக்கு அதிரடி விலைகுறைப்பு.!
+
+
+
+
+
+
+
+ஐ.ஒ.எஸ். 13.2 இயங்குதளம் அறிமுகம்.! என்னென்ன சிறப்பம்சங்கள்.!
+
+
+
+
+
+
+
+ஜியோ செட் டாப் பாக்ஸ் சேவை: 150 நேரலை டிவி சேனல்கள்.! மகிழ்ச்சியில் வாடிக்கையாளர்கள்.!
+
+
+
+
+
+
+
+சரியான சமயத்தில் பெண்மணி உயிரை காப்பாற்றிய ஆப்பிள் வாட்ச்.! நடந்தது இதுதான்.!
+
+
+
+
+
+
+
+YAHOO வலைத்தளம் சேவை விடைபெறுகிறது: டிசம்பர் 14-ம் தேதி-க்குள் இதை செய்துவிடுங்கள்.!
+
+
+
+
+
+
+டிம் குக் அவர்களுக்கு விருது வழங்கிய செரஸ் நிறுவனம்: எதற்கு தெரியுமா?Best Mobiles in India
+
+
+Best Cameras
+
+
+Best Selling
+
+
+Upcoming
+
+
+
+
+
+
+
+ரெட்மி நோட் 8 ப்ரோ14,999
+
+
+
+
+
+சாம்சங் கேலக்ஸி A70s28,999
+
+
+
+
+
+ஒன்பிளஸ் 7T37,999
+
+
+
+
+
+ஆப்பிள்ஐபோன் 11 ப்ரோ மேக்ஸ்1,09,900
+
+
+
+
+
+ரியல்மி XT15,999
+
+
+
+
+
+ஒப்போ ரெனோ236,990
+
+
+
+
+
+சாம்சங் கேலக்ஸி நோட் 10 பிளஸ்79,999
+
+
+
+
+
+ரெட்மி K20 ப்ரோ25,999
+
+
+
+
+
+ஹுவாய் P30 ப்ரோ71,990
+
+
+
+
+
+நோக்கியா 9 பியூர்வியூ49,999
+
+
+
+
+
+ஆப்பிள்ஐபோன் 1164,900
+
+
+
+
+
+ரெட்மி நோட் 8 ப்ரோ14,999
+
+
+
+
+
+ரெட்மி நோட் 89,999
+
+
+
+
+
+ஒன்பிளஸ் 7T37,999
+
+
+
+
+
+ரியல்மி XT15,999
+
+
+
+
+
+ரெட்மி K20 ப்ரோ25,999
+
+
+
+
+
+ஆப்பிள்ஐபோன் XR44,900
+
+
+
+
+
+ரெட்மி K2019,999
+
+
+
+
+
+சாம்சங் கேலக்ஸி M4019,999
+
+
+
+
+
+ரியல்மி 3 ப்ரோ 9,999
+
+
+
+
+
+இசெட்டிஇ பிளேட் 10 பிரைம் 12,790
+
+
+
+
+
+இசெட்டிஇ பிளேட் A7 பிரைம் 7,090
+
+
+
+
+
+ஹுவாய் Y9s17,090
+
+
+
+
+
+Vivo Y5s15,500
+
+
+
+
+
+சியோமி Mi நோட் 10 ப்ரோ51,150
+
+
+
+
+
+ரெட்மி நோட் 8T15,670
+
+
+
+
+
+விவோ Y1916,400
+
+
+
+
+
+விவோ Y3 Standard எடிஷன்10,100
+
+
+
+
+
+விவோ Y315,100
+
+
+
+
+
+சியோமி Mi நோட் 1043,205
+
+
+",ta,"
+
+
+
+
+
+
+
+
+
+
+
+How To Get MacBook Light Touch Bar Feature On Android Site?
+03 Nov 2019, 10:54 by Meganathan S
+Apple's 2016 MacBook Pro model included the touchpad feature. This was a special feature for MacBook devices. With this you can enable different feature settings. This feature has become very popular and useful among users. In this case, Alcott 18 XDA. The developers have created a processor called Touchbar.
+
+
+
+The Android processor for the Touch Bar feature makes way for the Control Center feature on the smartphone. Here are some steps to get the TouchBar feature like the MacBook. The touchbar processor is free to download and can be used on both root and non-root devices.
+What to do to get a touchpad like MacBook on Android?
+You can get a MacBook-like touchpad on Android by following these simple steps:
+Step 1: Open the Android processor and activate the Settings - Security - Non-Sources option.
+Step 2: Download and install Touch for Android processor It can be downloaded from the Google Play Store.
+Step 3: Open the processor and give the necessary permission. These include Overlay, Write System Settings, Do Not Disturb Access.
+Step 4: To enable the touchpad on Android you need to activate the touchbar feature.
+Once the touchpad is activated following the steps given above, you can customize it. You can change the height and blue and implement custom shortcodes.
+
+Most Read Articles
+
+
+
+
+
+
+
+WhatsApp Bay service in India? The reason is this!
+
+
+
+
+
+
+
+6 reasons why India is more important than Apple to iPhone!
+
+
+
+
+
+
+
+Is North Korea hackers responsible for Chandrayaan 2? The truth is this!
+
+
+
+
+
+
+
+Apple TV Plus launched in India at Rs.99
+
+
+
+
+
+
+
+Vodafone's Rs.255 prepaid standard offers: Know what?
+
+
+
+
+
+
+
+IPhone SE2 device to be launched soon: Do you know how much it costs?
+
+
+
+
+
+
+
+Action discount for Galaxy A50S and Galaxy A30S devices!
+
+
+
+
+
+
+
+Aioes. 13.2 Introduction to the Operating System.! What a highlight.!
+
+
+
+
+
+
+
+Geo set top box service: 150 live TV channels.! Happy Customers.!
+
+
+
+
+
+
+
+Apple Watch Saves Woman's Life This is what happened.
+
+
+
+
+
+
+
+YAHOO Website Says Goodbye: Do It By December 14th.!
+
+
+
+
+
+
+Tim Cook awarded the award-winning Ceras company: Do You Know?
+
+
+Best Cameras
+
+
+Best Selling
+
+
+Upcoming
+
+
+
+
+
+
+
+Redmi Note 8 Pro 14,999
+
+
+
+
+
+Samsung Galaxy A70s28,999
+
+
+
+
+
+OnePlus 7T37,999
+
+
+
+
+
+Apple iPhone 11 Pro Max 1,09,900
+
+
+
+
+
+Realmy XT15,999
+
+
+
+
+
+Comparative Reno 236,990
+
+
+
+
+
+Samsung Galaxy Note 10 Plus 79,999
+
+
+
+
+
+Redmi K20 Pro 25,999
+
+
+
+
+
+Huawei P30 Pro 71,990
+
+
+
+
+
+Nokia 9 PureVue 49,999
+
+
+
+
+
+AppleIphone 1164,900
+
+
+
+
+
+Redmi Note 8 Pro 14,999
+
+
+
+
+
+Redmi Note 89,999
+
+
+
+
+
+OnePlus 7T37,999
+
+
+
+
+
+Realmy XT15,999
+
+
+
+
+
+Redmi K20 Pro 25,999
+
+
+
+
+
+AppleIphone XR44,900
+
+
+
+
+
+Redmi K2019,999
+
+
+
+
+
+Samsung Galaxy M4019,999
+
+
+
+
+
+Realmy 3 Pro 9,999
+
+
+
+
+
+IZETI Blade 10 Prime 12,790
+
+
+
+
+
+IZETI Blade A7 Prime 7,090
+
+
+
+
+
+Huawei Y9s17,090
+
+
+
+
+
+Vivo Y5s15,500
+
+
+
+
+
+Siomi Mi Note 10 Pro 51,150
+
+
+
+
+
+Redmi Note 8T15,670
+
+
+
+
+
+Vivo Y1916,400
+
+
+
+
+
+Vivo Y3 Standard Edition 10,100
+
+
+
+
+
+Vivo Y315,100
+
+
+
+
+
+Siomi Mi Note 1043,205
+
+
+"

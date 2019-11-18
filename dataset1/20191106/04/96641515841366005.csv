@@ -1,0 +1,48 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Facebook confirms 100 app developers retained member data from Groups
+The social network vows to conduct audits to ensure they delete members' data.
+06 Nov 2019, 04:40 by Mariella Moon
+Facebook became a lot stricter with the kind of user information app developers can access after the Cambridge Analytica scandal blew up last year. In April 2018, it rolled out changes to its Group API so that when an administrator authorizes an app for a Group, its developer can only see the Group name, its number of users and its post content. Before the change, developers could also see the names of members and their profile pictures. The social network has revealed, however, that some apps retained access to member names and profile pics even after the change -- further, up to 100 developers may have improperly accessed those information since then.
+Facebook says it has already removed the apps' access to Group members' names and photos. Those applications were primarily for managing social media and video streaming services, such as those used by companies to provide customer support online. The company has also reached out to the 100 developers, asking them to delete member data they may have retained.
+While Facebook believes that the actual number of developers that accessed member data is likely smaller than a hundred -- and says it found no evidence of abuse -- it has confirmed that 11 partners did access Group members' names and photos within the last 60 days. To make sure that the developers truly do delete the user information they accessed, the company vows to conduct audits for confirmation.
+The social network writes in its announcement:
+""We aim to maintain a high standard of security on our platform and to treat our developers fairly. As we've said in the past, the new framework under our agreement with the FTC means more accountability and transparency into how we build and maintain products. As we continue to work through this process we expect to find more examples of where we can improve, either through our products or changing how data is accessed. We are committed to this work and supporting the people on our platform.""
+Via: CNBCSource: Facebook for Developers
+
+
+",en,"
+
+
+
+
+
+
+
+
+
+
+
+Facebook confirms 100 app developers retained member data from Groups
+The social network vows to conduct audits to ensure they delete members' data.
+06 Nov 2019, 04:40 by Mariella Moon
+Facebook became a lot stricter with the kind of user information app developers can access after the Cambridge Analytica scandal blew up last year. In April 2018, it rolled out changes to its Group API so that when an administrator authorizes an app for a Group, its developer can only see the Group name, its number of users and its post content. Before the change, developers could also see the names of members and their profile pictures. The social network has revealed, however, that some apps retained access to member names and profile pics even after the change -- further, up to 100 developers may have improperly accessed those information since then.
+Facebook says it has already removed the apps' access to Group members' names and photos. Those applications were primarily for managing social media and video streaming services, such as those used by companies to provide customer support online. The company has also reached out to the 100 developers, asking them to delete member data they may have retained.
+While Facebook believes that the actual number of developers that accessed member data is likely smaller than a hundred -- and says it found no evidence of abuse -- it has confirmed that 11 partners did access Group members' names and photos within the last 60 days. To make sure that the developers truly do delete the user information they accessed, the company vows to conduct audits for confirmation.
+The social network writes in its announcement:
+""We aim to maintain a high standard of security on our platform and to treat our developers fairly. As we've said in the past, the new framework under our agreement with the FTC means more accountability and transparency into how we build and maintain products. As we continue to work through this process we expect to find more examples of where we can improve, either through our products or changing how data is accessed. We are committed to this work and supporting the people on our platform.""
+Via: CNBCSource: Facebook for Developers
+
+
+"

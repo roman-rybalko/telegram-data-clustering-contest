@@ -1,0 +1,60 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Wachablösung im Rechenzentrum: NVMe statt SAS und SATA
+Künftig übernimmt in Servern NVMe die Storage-Rolle. Die aktuelle iX 11/2019 erklärt, was Unternehmen mit der Technik ins Haus steht.
+04 Nov 2019, 14:55 by Moritz Förster
+Nachdem NVMe schon länger zum guten Ton der PC-Topmodelle gehört, kommt die Technik zunehmend in der Profiwelt der IT an. Was Administratoren bei der Technik, den Standards und den Anbietern beachten müssen, erklärt Susanne Nolte in einem umfangreichen Artikel der aktuellen iX 11/2019.
+Der Datendurchsatz bildet heute das größte Nadelöhr in Rechenzentren. Deshalb liebäugeln viele Unternehmen mit NVMe. Die neue Storage-Schnittstelle bindet Speichermedien direkt an den PCIe-Bus an, wodurch sich separate Storage-Busse wie SAS oder SATA erübrigen. Das beschleunigt den I/O nahezu auf den jeweils verfügbaren PCIe-Durchsatz – üblicherweise mit vier Kanälen.
+Um die von PCIe bereitgestellten Ressourcen voll nutzen zu können, haben die Entwickler das NVMe-Protokoll, das die Adressierung der Geräte und die Kommunikationssteuerung übernimmt, an heutige Hardware angepasst. Der Befehlssatz zur Datenübertragung ist gegenüber dem SATA-Protokoll AHCI ​(Advanced Host Controller Interface) ​schlanker geworden, seine Queueing- und Parallelisierungs-Fähigkeiten haben massiv zugelegt.
+Im Rechenzentrum U.2 statt M.2
+Neu ist aber nicht nur das Protokoll. Der Wegfall von SAS und SATA schafft Raum für neue Formfaktoren. Zuerst existierten nur Adapterkarten für PCIe-Slots, sogenannte ​Add-in Cards (AICs). Ihre Zahl in einem Server ist aber durch die Zahl freier PCIe-Slots beschränkt. Außerdem lassen sie sich nicht im laufenden Betrieb austauschen – es mussten also andere Formfaktoren und Schnittstellen her. Für Client-Systeme ist die ​M.2-Schnittstelle (Mini) ​NVMe-fähig. Das Äquivalent für Server und Storage-Systeme heißt U.2 (Universial) und eignet sich für ​NVMe-, SAS- und SATA-­SSDs.
+Bei den Formfaktoren dominieren derzeit noch 2,5 Zoll und AICs, doch bekommen sie zunehmens Konkurrenz von neuen Formaten. ​Von Samsung stammt das Format NGSFF (Next Generation Small Form Factor), das inzwischen NF1 und manchmal M.3 heißt. Intels Vorschlag namens Ruler, linealförmige SSDs, die keine eigenen Halterungen für Fronteinschübe mehr benötigen, hat die SNIA (Storage Networking Initiative Association) inzwischen als EDSFF (Enterprise & Data­center Stor­age Form Factor) standardisiert – allerdings in unterschiedlichen Längen, Höhen und Breiten, genannt E1 und E3 als long und short.
+Für Server und Storage-Systeme eröffnen sich durch die neuen Formate und durch den Wegfall des Storage-Busses ebenfalls neue Wege fürs Design. Referenzdesigns für Systeme mit den neuen SSD-Formaten hat die SNIA bereits vorgestellt. Obwohl Server aufgrund des schnellen Prozessor-Generationszyklus einem ebenfalls schnellem Generationswechsel unterliegen, sind bisher nur wenige Modelle auf dem Markt, die auf NVMe-SSD zugeschnitten sind. Noch dünner wird die Luft bei Storage-Arrays. Etwas besser sieht es derzeit bei JBOFs (Just a Bunch of Flash) aus.
+Siehe dazu auch:
+
+Storage: NVMe im Rechenzentrum, iX 11/2019, S. 82
+
+(fo)
+
+
+",de,"
+
+
+
+
+
+
+
+
+
+
+
+Changing of the guard in the data center: NVMe instead of SAS and SATA
+In the future, NVMe will take over the storage role in servers. The current iX 11/2019 explains what companies are into with their technology.
+04 Nov 2019, 14:55 by Moritz Förster
+After NVMe has long been part of the good sound of the PC top models, the technology is increasingly arriving in the professional world of IT. What administrators need to consider in terms of technology, standards and providers is explained by Susanne Nolte in a comprehensive article in the latest iX 11/2019.
+Data throughput is today the biggest bottleneck in data centers. That is why many companies flirt with NVMe. The new storage interface connects storage media directly to the PCIe bus, eliminating the need for separate storage busses such as SAS or SATA. This accelerates the I / O to nearly the available PCIe throughput - usually with four channels.
+To take full advantage of the resources provided by PCIe, developers have adapted the NVMe protocol, which handles device addressing and communication control, to today's hardware. The instruction set for data transmission has become leaner compared to the SATA protocol AHCI (Advanced Host Controller Interface), its queuing and parallelization capabilities have massively increased.
+In data center U.2 instead of M.2
+But not only the protocol is new. The omission of SAS and SATA creates space for new form factors. At first, only adapter cards for PCIe slots existed, so-called add-in cards (AICs). Their number in a server, however, is limited by the number of free PCIe slots. In addition, they can not be exchanged during operation - so other form factors and interfaces were needed. For client systems, the M.2 interface (mini) is NVMe-enabled. The equivalent for servers and storage systems is called U.2 (Universial) and is suitable for NVMe, SAS and SATA SSDs.
+The form factors are still dominated by 2.5 inches and AICs, but they are getting more and more competition from new formats. From Samsung comes the format NGSFF (Next Generation Small Form Factor), which is now called NF1 and sometimes M.3. Intel's proposal, Ruler, for ruler-style SSDs that do not require their own front-rack brackets, has been standardized by the SNIA (Storage Networking Initiative Association) as EDSFF (Enterprise & Datacenter Storage Form Factor) - but in different lengths, heights and widths, called E1 and E3 as long and short.
+For servers and storage systems, the new formats and the omission of the storage bus also open up new paths for design. Reference designs for systems with the new SSD formats have already been presented by SNIA. Although servers are also subject to a rapid generation change due to the fast processor generation cycle, there are only a few models on the market today that are tailored to NVMe SSD. The air gets even thinner in storage arrays. It looks a bit better at JBOFs (Just a Bunch of Flash).
+See also:
+
+Storage: NVMe in the Data Center, iX 11/2019, p. 82
+
+(Fo)
+
+
+"

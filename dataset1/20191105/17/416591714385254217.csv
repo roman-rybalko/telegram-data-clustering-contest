@@ -1,0 +1,66 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Teclado para Android com malware faz compras sem permissão do usuário
+ai.type se disfarça como ""Teclado Emoji Grátis"", mas na verdade clica em anúncios e assina serviços pagos sem que o usuário perceba
+05 Nov 2019, 17:33 by Rafael Rigues
+Um popular aplicativo de teclado para o Android, o ai.type, foi pego fazendo milhões de compras não autorizadas de conteúdo digital premium. Com mais de 40 milhões de downloads, o aplicativo estava até recentemente disponível no Google Play, e ainda pode ser encontrado em outras lojas de apps.
+O malware fornece milhões de visualizações e cliques falsos em anúncios invisíveis, além de fornecer dados sobre visualizações, cliques e compras reais feitas por seus usuários para redes de anúncios. O ai.type realiza algumas de suas atividades ocultas sob outras identidades, o que inclui a capacidade de se disfarçar de aplicativos populares como o Soundcloud.
+O alerta foi emitido pela Upstream, empresa inglesa especializada em tecnologia móvel. Até agora a plataforma de segurança da empresa, a Upstream Secure-D, detectou e bloqueou mais de 14 milhões de solicitações de transações suspeitas de vindas de 110.000 dispositivos únicos que baixaram o teclado ai.type.
+Se não bloqueadas, essas solicitações de transação teriam desencadeado a compra de serviços digitais premium, potencialmente custando aos usuários até US $ 18 milhões em cobranças indesejadas. A atividade suspeita foi registrada em 13 países, mas foi particularmente alta no Egito e no Brasil.
+O ai.type é um aplicativo de teclado personalizável desenvolvido pela empresa israelense ai.type LTD, que o descreve como um ""Teclado Emoji Grátis"". Apesar de o aplicativo ter sido removido do Google Play em junho de 2019, ele permanece instalado em milhões de dispositivos Android e ainda está disponível em outras lojas.
+Logo após a remoção do app do Google Play as atividades suspeitas dispararam exponencialmente por um período de dois meses. Desde então o volume de transações permaneceu alto, embora menor do que durante o pico registrado em meados deste ano.
+Dimitris Maniatis, Chefe do Secure-D na Upstream, explica mais sobre como o aplicativo engana os usuários: “O ai.type contém links pré-definidos para anúncios e inscreve os usuários em serviços premium sem o seu consentimento. Ele navega até os anúncios por meio de uma série de redirecionamentos e realiza cliques automaticamente para acionar as assinaturas. Isso é confirmado em segundo plano para que os usuários normais não percebam que está ocorrendo”.
+“Além disso, os links relevantes são ofuscados e código adicional de fontes externas é baixado para complicar a detecção, mesmo a partir de técnicas sofisticadas de análise. Conclusão: usuários inocentes estão pagando por essas compras não autorizadas e pelo consumo de dados relacionados cuja fonte está oculta no aplicativo. ”
+A recomendação aos usuários do ai.type é que desinstalem o aplicativo, e verifiquem suas contas telefônicas e faturas de cartão de crédito em busca de cobranças não reconhecidas. Um aumento súbito no uso de dados é um possível indicador de que um aplicativo mal-intencionado está consumindo dados em segundo plano.
+Fonte: Upstream Systems
+
+
+
+
+
+
+
+",pt,"
+
+
+
+
+
+
+
+
+
+
+
+Malicious Android keyboard makes purchases without user permission
+ai.type masquerades as ""Free Emoji Keyboard"", but actually clicks ads and subscribes to paid services without the user noticing
+Nov 05 2019, 17:33 by Rafael Rigues
+A popular Android keyboard app, ai.type, was caught making millions of unauthorized purchases of premium digital content. With over 40 million downloads, the app was until recently available on Google Play, and can still be found in other app stores.
+Malware provides millions of fake clicks and clicks on invisible ads, and provides data about actual views, clicks, and purchases made by its users to ad networks. Ai.type performs some of its hidden activities under other identities, including the ability to disguise itself as popular applications like Soundcloud.
+The warning was issued by Upstream, a British company specializing in mobile technology. To date, the company's security platform, Upstream Secure-D, has detected and blocked more than 14 million suspicious transaction requests from 110,000 unique devices that downloaded the ai.type keyboard.
+If not blocked, these transaction requests would have triggered the purchase of premium digital services, potentially costing users up to $ 18 million in unwanted charges. Suspicious activity was reported in 13 countries, but was particularly high in Egypt and Brazil.
+Ai.type is a customizable keyboard application developed by the Israeli company ai.type LTD, which describes it as a ""Free Emoji Keyboard"". Although the app was removed from Google Play in June 2019, it remains installed on millions of Android devices and is still available in other stores.
+Shortly after the Google Play app was removed, suspicious activity skyrocketed for a period of two months. Since then, transaction volume has remained high, although lower than during the mid-year peak.
+Dimitris Maniatis, Head of Secure-D at Upstream, explains more about how the app deceives users: “ai.type contains pre-defined advertising links and enters users into premium services without their consent. It navigates to ads through a series of redirects and automatically clicks to trigger subscriptions. This is confirmed in the background so normal users don't realize it's happening. ”
+“In addition, relevant links are overshadowed and additional code from external sources is downloaded to complicate detection even from sophisticated analysis techniques. Bottom line: Innocent users are paying for these unauthorized purchases and consumption of related data whose source is hidden in the app. ""
+Ai.type users are advised to uninstall the app, and check their phone bills and credit card bills for unrecognized charges. A sudden increase in data usage is a possible indicator that a malicious application is consuming background data.
+Source: Upstream Systems
+
+
+
+
+
+
+
+"

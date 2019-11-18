@@ -1,0 +1,52 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Apple pushes developers to update Push Notification Service API before November 2020
+04 Nov 2019, 20:13 by Michael Potuck
+Update: Apple has also shared a developer update about changes to age ratings in the App Store in Brazil. Find the details here.
+Apple has shared a warning today to developers who use its Push Notification Service about upcoming changes and requirements.
+Apple detailed the reminder on its developer site to change to the HTTP/2-based APNs provider API which comes with new features and benefits.
+If you send push notifications with the legacy binary protocol, we recommend updating to the HTTP/2-based APNs provider API as soon as possible. You’ll be able to take advantage of great modern features, such as authentication with a JSON Web Token, improved error messaging, and per-notification feedback.The Apple Push Notification service (APNs) will no longer support the legacy binary protocol as of November 2020.
+Read more about registering your app with APNs here.
+FTC: We use income earning auto affiliate links. More.
+
+
+
+
+
+",en,"
+
+
+
+
+
+
+
+
+
+
+
+Apple pushes developers to update Push Notification Service API before November 2020
+04 Nov 2019, 20:13 by Michael Potuck
+Update: Apple has also shared a developer update about changes to age ratings in the App Store in Brazil. Find the details here.
+Apple has shared a warning today to developers who use its Push Notification Service about upcoming changes and requirements.
+Apple detailed the reminder on its developer site to change to the HTTP/2-based APNs provider API which comes with new features and benefits.
+If you send push notifications with the legacy binary protocol, we recommend updating to the HTTP/2-based APNs provider API as soon as possible. You’ll be able to take advantage of great modern features, such as authentication with a JSON Web Token, improved error messaging, and per-notification feedback.The Apple Push Notification service (APNs) will no longer support the legacy binary protocol as of November 2020.
+Read more about registering your app with APNs here.
+FTC: We use income earning auto affiliate links. More.
+
+
+
+
+
+"

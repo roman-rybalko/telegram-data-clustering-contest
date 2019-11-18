@@ -1,0 +1,52 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Vulnerability in Asus Wi-Fi software put users at risk of fraud and robbery
+05 Nov 2019, 15:06 by Mix
+Researchers have discovered a data leak in Asus Wi-Fi software which would’ve given hackers unprecedented access to users’ networks and made it possible to hijack smart home devices like Amazon’s Alexa.
+The vulnerability, uncovered by vpnMentor, resides in AsusWRT, a web-based graphical interface that pairs with routers in order to set up private Wi-Fi networks. While the app serves as a centralized point of access for users’ internet-connected devices, including phones, tablets, laptops, and other smart devices, it also opened up users to attacks from hackers.
+Among other things, the researchers were able to sniff IP addresses, “users’ names” (we’ve asked vpnMentor if they meant usernames), devices’ names, usage information and IFTTT commands, longitude and latitude coordinates, as well as location info like countries and cities. They do, however, mention that no personally identifiable information was viewable.
+Still, cross-referencing all leaked data could easily allow hackers to identify a user and their address. “Using someone’s longitude & latitude coordinates and IP address, a hacker could pinpoint users’ physical street address,” the researchers wrote.
+Since the flaw made it possible to take over control of unprotected devices in AsusWRT networks, it also posed risks of robberies and frauds.
+“Hackers can use hijacked devices to track user behavior while at home, work out when a residence is unoccupied, and plan robberies with minimal risk to the thieves,” the researchers added. “If the targeted AsusWRT user has smart lock devices, hackers can access these to open doors via the compromised AsusWRT and Alexa devices.”
+“With this access, hackers and criminals can embed many attacks on these devices: malware, ransomware, spyware, viruses,” the researchers continue. “They can compromise users’ email addresses and personal accounts, extracting additional sensitive personally identifiable information.”
+The researchers note it appears the vulnerability had previously been spotted by other IT professionals, but wasn’t disclosed to Asus until now. It remains unclear if hackers were able to exploit it in the wild, but we’ve reached out to Asus for further comment and will update this piece accordingly if we hear back.
+According to vpnMentor, the leak has since been closed, but its researchers advise AsusWRT users to uninstall the app and contact Asus directly to find out what measures they can take to protect themselves.
+
+
+",en,"
+
+
+
+
+
+
+
+
+
+
+
+Vulnerability in Asus Wi-Fi software put users at risk of fraud and robbery
+05 Nov 2019, 15:06 by Mix
+Researchers have discovered a data leak in Asus Wi-Fi software which would’ve given hackers unprecedented access to users’ networks and made it possible to hijack smart home devices like Amazon’s Alexa.
+The vulnerability, uncovered by vpnMentor, resides in AsusWRT, a web-based graphical interface that pairs with routers in order to set up private Wi-Fi networks. While the app serves as a centralized point of access for users’ internet-connected devices, including phones, tablets, laptops, and other smart devices, it also opened up users to attacks from hackers.
+Among other things, the researchers were able to sniff IP addresses, “users’ names” (we’ve asked vpnMentor if they meant usernames), devices’ names, usage information and IFTTT commands, longitude and latitude coordinates, as well as location info like countries and cities. They do, however, mention that no personally identifiable information was viewable.
+Still, cross-referencing all leaked data could easily allow hackers to identify a user and their address. “Using someone’s longitude & latitude coordinates and IP address, a hacker could pinpoint users’ physical street address,” the researchers wrote.
+Since the flaw made it possible to take over control of unprotected devices in AsusWRT networks, it also posed risks of robberies and frauds.
+“Hackers can use hijacked devices to track user behavior while at home, work out when a residence is unoccupied, and plan robberies with minimal risk to the thieves,” the researchers added. “If the targeted AsusWRT user has smart lock devices, hackers can access these to open doors via the compromised AsusWRT and Alexa devices.”
+“With this access, hackers and criminals can embed many attacks on these devices: malware, ransomware, spyware, viruses,” the researchers continue. “They can compromise users’ email addresses and personal accounts, extracting additional sensitive personally identifiable information.”
+The researchers note it appears the vulnerability had previously been spotted by other IT professionals, but wasn’t disclosed to Asus until now. It remains unclear if hackers were able to exploit it in the wild, but we’ve reached out to Asus for further comment and will update this piece accordingly if we hear back.
+According to vpnMentor, the leak has since been closed, but its researchers advise AsusWRT users to uninstall the app and contact Asus directly to find out what measures they can take to protect themselves.
+
+
+"

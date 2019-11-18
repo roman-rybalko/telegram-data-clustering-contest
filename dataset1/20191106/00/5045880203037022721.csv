@@ -1,0 +1,106 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Virtual(ly) Private Network: NordVPN’s Breach and the Limitations of
+06 Nov 2019, 00:10 by Alexis Hancock
+
+UPDATE (11/8/2019): We have clarified that the NordVPN user credentials impacted were not in result of this breach.
+
+The popular VPN provider, NordVPN, recently announced a server breach at a third-party data center. NordVPN reassured users that its key services were not impacted by this breach in particular, however, NordVPN users credentials were used with credential stuffing attacks. NordVPN stresses that there is no indication the breach and the credential stuffing attacks are related. Concerned users can check to see if their credentials were leaked from previous breaches at haveibeenpwned.com.
+News of the breach has inspired questions around which tool is best for safety and security online. With commercial VPNs now saturating the market and many people being more concerned with their privacy, it’s important for users to know how VPNs work, and what their limitations are. VPNs can be useful in a user’s safety toolset, but there are some fundamental capabilities that are critical to understand: what VPNs do, what VPNs don’t do, and how a VPN service can better protect their users.
+
+What VPNs Are
+
+A virtual private network (or VPN) is a method for connecting your computer securely to the network of an organization on the other side of the Internet. When you connect to a VPN, all of your web browsing data appears to originate from the VPN itself, rather than your own Internet Service Provider (or ISP). Sensitive information could include submissions from contact forms or credit card information.
+Using a VPN masks the IP address assigned by your ISP from the sites that you access, adding a layer of privacy. Along with masking your origin IP address, it also encrypts your data while in transit to the site you are accessing.
+
+
+
+This diagram shows a user's computer on the left, and the server of the intended service (example.com) on the far right. HTTPS initially encrypts the user to the page visited. While the user's information travels from their computer, the VPN is hiding information such as metadata and page level information from the user's router and ISP.
+
+What VPNs Can Do
+
+If you are accessing sites on a public wifi network, such as a cafe, a VPN can help to protect your data from observers connected to that network.
+It can also help circumvent Internet censorship on a network that blocks certain sites or services, such as when you are working from a school’s Internet connection or in a country that blocks certain kinds of content.
+Before they came into higher commercial demand, VPNs were and still are used by corporations, so that their employees can access corporate-specific sites and services within their intranet.
+
+What VPNs Can’t Do
+
+Since commercial VPNs often have servers in different countries, their logs may be subject to law enforcement requests. In these cases, VPNs cannot fully prevent surveillance or access from law enforcement, nor can they completely anonymize your identity. Even though your browsing data is encrypted, it doesn’t mean that a VPN entirely shields who you are. You could still be subject to different kinds of tracking such as browser fingerprinting.
+It’s also important to note that VPNs and any other data-in-transit encryption methods such as usage of HTTPS:// sites do not ensure the integrity of the site you are visiting. VPNs cannot protect you from malicious attacks to a site’s servers or their compromised networks.
+
+What VPN Services Should Do
+
+It can be difficult to choose which VPN service best suits your needs, and there are a plethora available now that make compelling promises about their effectiveness. However, the VPN industry must not make the same missteps the antivirus industry has made over the years. Choosing a VPN still means trusting another party with one’s information and trusting them to not only encrypt information, but be transparent as possible about their service.
+
+DON'T: Make unrealistic security guarantees in advertisements to get more subscribers. When these promises don’t pan out, this will create apathetic users who will ultimately avoid and mistrust important services. Making statements like “bank grade encryption” or “military grade encryption” does a disservice to educating the general public on the capabilities and accessibility of strong encryption. Referencing cipher strength, or the algorithm for performing encryption or decryption, doesn’t necessarily mean strong infrastructure or detail to user privacy. Strong ciphers are accessible to if not all, most major VPN services.
+DON’T: Delay or neglect to disclose breaches. This means full and swift disclosure once an incident has occurred and has been analyzed, regardless if information was accessed or not.
+DO: Have transparent policies on usage and storage of user logs. This will help foster a more informed user base on how much of their information they are agreeing and trusting you to store.
+DO: Explicitly map and audit servers to outline what jurisdictions these services fall under. Providing this data allows users to make informed decisions about their level of risk in potential issues of law enforcement across varying jurisdictions.
+
+Commercial VPNs can be useful, especially on mobile devices where traffic can be unencrypted without any obvious indication or notification to the user. On desktop browsers, it can be argued that enforced HTTPS is enough, but many users cannot verify that HTTPS is being used in their mobile device’s application traffic. This is the gap that these services can step into and fill, but this is a responsibility they must take seriously.
+
+
+",en,"
+
+
+
+
+
+
+
+
+
+
+
+Virtual(ly) Private Network: NordVPN’s Breach and the Limitations of
+06 Nov 2019, 00:10 by Alexis Hancock
+
+UPDATE (11/8/2019): We have clarified that the NordVPN user credentials impacted were not in result of this breach.
+
+The popular VPN provider, NordVPN, recently announced a server breach at a third-party data center. NordVPN reassured users that its key services were not impacted by this breach in particular, however, NordVPN users credentials were used with credential stuffing attacks. NordVPN stresses that there is no indication the breach and the credential stuffing attacks are related. Concerned users can check to see if their credentials were leaked from previous breaches at haveibeenpwned.com.
+News of the breach has inspired questions around which tool is best for safety and security online. With commercial VPNs now saturating the market and many people being more concerned with their privacy, it’s important for users to know how VPNs work, and what their limitations are. VPNs can be useful in a user’s safety toolset, but there are some fundamental capabilities that are critical to understand: what VPNs do, what VPNs don’t do, and how a VPN service can better protect their users.
+
+What VPNs Are
+
+A virtual private network (or VPN) is a method for connecting your computer securely to the network of an organization on the other side of the Internet. When you connect to a VPN, all of your web browsing data appears to originate from the VPN itself, rather than your own Internet Service Provider (or ISP). Sensitive information could include submissions from contact forms or credit card information.
+Using a VPN masks the IP address assigned by your ISP from the sites that you access, adding a layer of privacy. Along with masking your origin IP address, it also encrypts your data while in transit to the site you are accessing.
+
+
+
+This diagram shows a user's computer on the left, and the server of the intended service (example.com) on the far right. HTTPS initially encrypts the user to the page visited. While the user's information travels from their computer, the VPN is hiding information such as metadata and page level information from the user's router and ISP.
+
+What VPNs Can Do
+
+If you are accessing sites on a public wifi network, such as a cafe, a VPN can help to protect your data from observers connected to that network.
+It can also help circumvent Internet censorship on a network that blocks certain sites or services, such as when you are working from a school’s Internet connection or in a country that blocks certain kinds of content.
+Before they came into higher commercial demand, VPNs were and still are used by corporations, so that their employees can access corporate-specific sites and services within their intranet.
+
+What VPNs Can’t Do
+
+Since commercial VPNs often have servers in different countries, their logs may be subject to law enforcement requests. In these cases, VPNs cannot fully prevent surveillance or access from law enforcement, nor can they completely anonymize your identity. Even though your browsing data is encrypted, it doesn’t mean that a VPN entirely shields who you are. You could still be subject to different kinds of tracking such as browser fingerprinting.
+It’s also important to note that VPNs and any other data-in-transit encryption methods such as usage of HTTPS:// sites do not ensure the integrity of the site you are visiting. VPNs cannot protect you from malicious attacks to a site’s servers or their compromised networks.
+
+What VPN Services Should Do
+
+It can be difficult to choose which VPN service best suits your needs, and there are a plethora available now that make compelling promises about their effectiveness. However, the VPN industry must not make the same missteps the antivirus industry has made over the years. Choosing a VPN still means trusting another party with one’s information and trusting them to not only encrypt information, but be transparent as possible about their service.
+
+DON'T: Make unrealistic security guarantees in advertisements to get more subscribers. When these promises don’t pan out, this will create apathetic users who will ultimately avoid and mistrust important services. Making statements like “bank grade encryption” or “military grade encryption” does a disservice to educating the general public on the capabilities and accessibility of strong encryption. Referencing cipher strength, or the algorithm for performing encryption or decryption, doesn’t necessarily mean strong infrastructure or detail to user privacy. Strong ciphers are accessible to if not all, most major VPN services.
+DON’T: Delay or neglect to disclose breaches. This means full and swift disclosure once an incident has occurred and has been analyzed, regardless if information was accessed or not.
+DO: Have transparent policies on usage and storage of user logs. This will help foster a more informed user base on how much of their information they are agreeing and trusting you to store.
+DO: Explicitly map and audit servers to outline what jurisdictions these services fall under. Providing this data allows users to make informed decisions about their level of risk in potential issues of law enforcement across varying jurisdictions.
+
+Commercial VPNs can be useful, especially on mobile devices where traffic can be unencrypted without any obvious indication or notification to the user. On desktop browsers, it can be argued that enforced HTTPS is enough, but many users cannot verify that HTTPS is being used in their mobile device’s application traffic. This is the gap that these services can step into and fill, but this is a responsibility they must take seriously.
+
+
+"

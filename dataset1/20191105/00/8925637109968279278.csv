@@ -1,0 +1,134 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Why the Sum of Three Cubes Is a Hard Math Problem
+Looking for answers in infinite space is hard. High school math can help narrow your search.
+05 Nov 2019 by Patrick Honner
+
+
+
+BIG MOUTH for Quanta Magazine
+
+
+Given that humans have been studying numbers for thousands of years, you might think we know everything about the number 3. But mathematicians recently discovered something new about 3: a third way to express it as the sum of three cubes. Expressing a number as the sum of three perfect cubes is a surprisingly interesting problem. It’s easy to show that most numbers can’t be written as one cube or the sum of two cubes, but it’s conjectured that most numbers can in fact be written as the sum of three cubes. Finding those three cubes, however, can be quite a challenge.
+For example, we knew we could write 3 as 1³ + 1³ + 1³ and also as 4³ + 4³ + (−5)³, but for over 60 years mathematicians wondered if there was another way. This past September, Andrew Booker and Andrew Sutherland finally found a third solution:
+3 = 569,936,821,221,962,380,720³ + (−569,936,821,113,563,493,509)³ + (−472,715,493,453,327,032)³
+(If you want to check, don’t bother grabbing your calculator: Most aren’t built to remember this many digits. But WolframAlpha can handle it.)
+In finding this new solution for 3, the mathematicians used techniques developed earlier this year, when Booker found the first-ever sum of three cubes for the number 33. But why did these breakthroughs take so long? Well, in the hunt for the right cubes, there is a lot of territory to cover, and there are few clues to lead us where we want to go. So the trick is to find smarter ways to search. To get a sense of the challenge and the solution, let’s start with a simpler question: How can we write 33 as a sum of three integers?
+We can write 33 = 19 + 6 + 8, or 33 = 11 + 11 + 11, or 33 = 31 + 1 + 1. We can use negative numbers too, so we can write 33 = 35 + (−1) + (−1). There are infinitely many ways we can do this, since we can always increase one or two of the numbers and decrease another to compensate, so that 33 = 36 + (−1) + (−2), 33 = 100 + 41 + (−108), and so on.
+What about writing 33 as a sum of three squares? We would need to find three “perfect squares” — numbers that are equal to an integer times itself, like 1 = 12, 9 = 32, and 64 = 82 — that add up to 33. After playing around, you might find that 33 = 42 + 42 + 12 and 33 = 52 + 22 + 22. Are there any more? Not really. You could replace a 4 with −4 and still get 33 = (-4)2 + 42 + 12, giving us a few different ways to write our solutions, but however you count them, there are only a handful of ways to write 33 as a sum of three squares.
+That’s because when summing squares we don’t have the same flexibility we have when summing integers. We have fewer choices, and, more importantly, adding will only ever increase our sum. This is because perfect squares are never negative: Squaring a positive or negative integer always results in a positive integer.
+The squares are more restrictive, but something good comes from those restrictions: Our search space is “bounded.” In trying to find three squares that sum to 33, we can’t use any number whose square is bigger than 33, because once our sum of squares exceeds 33, there’s no way to decrease it. This means we only have to consider combinations of 0², 1², 2², 3², 4² and 5² (we’ll ignore their negative counterparts, which don’t really add anything new).
+With only six options for each of our three squares, we have fewer than 6 × 6 × 6 = 216 ways that three squares could possibly sum to 33. That’s a small enough list to allow us to check each possibility and make sure we didn’t miss anything.
+Now let’s turn our attention back to the sum-of-three-cubes problem for 33. It’s not hard to see that it combines the limited choices of the sum-of-squares problem with the infinite search space of the sum-of-integers problem. As with the squares, not every number is a cube. We can use numbers like 1 = 1³, 8 = 2³ and 125 = 5³, but we can never use 2, 3, 4, 10, 108 or most other numbers. But unlike squares, perfect cubes can be negative — for example, (-2)³ = -8, and (-4)³ = -64 — which means we can decrease our sum if we need to. This access to negative numbers gives us unlimited options for our sum, meaning that our search space, as in the sum-of-integers problem, is unbounded.
+An unbounded search space means we might have to look for a very long time to find an answer. And people have been looking for decades. It took a supercomputer and some clever math to finally find the right combination of cubes. Let’s see how.
+Suppose you wanted to search for a solution to:
+33 = x³ + y³ + z³
+A simple approach would be to map out a region of numbers and try each one until something works. If you don’t find anything, then you define a new search space and start again. It’s kind of like using a telescope to methodically scan the sky for new planets.
+Imagine your initial search space is all the x’s, y’s and z’s between −100 and 100. So first you try:
+(−100)³ + (−100)³ + (−100)³
+No dice. Then you try:
+(−99)³ + (−100)³ + (−100)³
+This doesn’t work either. You keep going until you get to (100, −100, −100), at which point you flip to (−100, −99, −100) and continue the hunt. In the end you’ll check around 200 x 200 x 200 = 8,000,000 sets of numbers without finding anything that works. You’ll have to set up a new search space and start again.
+A better approach is to start by rewriting the equation like this:
+33 – (x³ + y³) = z³
+Now, instead of running through all the triples (x, y, z), we will run through the pairs (x, y). For each pair, we compute and then check a list of perfect cubes to see if our result (z3) is on it. If it is, we’ve found a combination that works. If it isn’t, we keep looking. This substantially reduces the size of our search space: Instead of the 8,000,00 triples (x, y, z), we’re now searching the 200 x 200 = 40,000 pairs (x, y). It’s a big savings, but it’s still not enough to make finding a solution computationally feasible.
+An even better approach is to rewrite the equation like this:
+33 – z³ = x³ + y³
+Now we search through the z’s. For each z, we compute, and then we use a neat little trick from math class. The expression x³ + y³ can always be factored in the following way:
+x³ + y³ = (x + y)(x² – xy + y²)
+This is known as the sum-of-cubes formula. To verify this, we just multiply out the right side using the distributive property:
+(x + y)(x² – xy + y²) = x³ – x²y + xy² + yx² – xy² + y³ = x³ + y³
+How does this formula help us in our search? Once we’ve computed 33 – z³, we factor it into primes, which is something computers are pretty good at, at least in the range of numbers we’re looking at. And once we’ve factored 33 – z³, we check if the factors can be arranged like (x + y)(x² – xy + y²). If they can, we’ve found a solution.
+For example, let’s say we were trying to find a way to write the number 34 as a sum of three cubes, and our search led us to z = −6. We compute 34 – z³ = 34 – (-6)³ = 34 – (-216) = 34 + 216 = 250, and then we see how we can factor 250.
+After some investigating, we realize that we can write 250 = 10 × 25 = (5+5)(5² – 5 × 5 + 5²). This is exactly (x + y)(x² – xy + y²) for x = 5 and y = 5, so the triple (x, y, z) = (5, 5, -6) should work for 34. Sure enough, 34 = 5³ + 5³ + (-6)³, and we’ve successfully found three cubes that sum to 34.
+With this method, instead of looking at 200³ = 8,000,000 triples or even 200² = 40,000 pairs, we just have to check 200 possible z values. There’s some additional work factoring and checking, but overall it’s a big improvement in search efficiency. Yet the search space being scoured for sums of cubes that add up to numbers like 33 is so vast that even these improvements couldn’t help supercomputers make a serious dent in the problem.
+Which is where Andrew Booker came in. Booker devised some additional techniques from algebra and number theory to improve his search efficiency even further. And when he turned his university’s supercomputer loose on the problem, in three weeks it came back with the first-ever representation of 33 as a sum of three cubes:
+33 = 8,866,128,975,287,528³ + (−8,778,405,442,862,239)³ + (−2,736,111,468,807,040)³
+After Booker solved this problem, and before he and Sutherland turned their attention to the number 3, they also solved the open problem for 42:
+42 = (−80,538,738,812,075,974)3 + 80,435,758,145,817,5153 + 12,602,123,297,335,6313
+It may be surprising that, after thousands of years, we still have things to learn about numbers like 3, 33 and 42. Perhaps even more surprising, abstract ideas from high school math can help, like the formula for the sum of cubes. But that’s the way math works, and that’s why we keep exploring. So keep an eye on 114, the smallest number for which the sum of three cubes question is currently undecided. I have a feeling that for Andrew Booker and other mathematicians, the search has already begun.
+
+
+
+
+
+
+
+",en,"
+
+
+
+
+
+
+
+
+
+
+
+Why the Sum of Three Cubes Is a Hard Math Problem
+Looking for answers in infinite space is hard. High school math can help narrow your search.
+05 Nov 2019 by Patrick Honner
+
+
+
+BIG MOUTH for Quanta Magazine
+
+
+Given that humans have been studying numbers for thousands of years, you might think we know everything about the number 3. But mathematicians recently discovered something new about 3: a third way to express it as the sum of three cubes. Expressing a number as the sum of three perfect cubes is a surprisingly interesting problem. It’s easy to show that most numbers can’t be written as one cube or the sum of two cubes, but it’s conjectured that most numbers can in fact be written as the sum of three cubes. Finding those three cubes, however, can be quite a challenge.
+For example, we knew we could write 3 as 1³ + 1³ + 1³ and also as 4³ + 4³ + (−5)³, but for over 60 years mathematicians wondered if there was another way. This past September, Andrew Booker and Andrew Sutherland finally found a third solution:
+3 = 569,936,821,221,962,380,720³ + (−569,936,821,113,563,493,509)³ + (−472,715,493,453,327,032)³
+(If you want to check, don’t bother grabbing your calculator: Most aren’t built to remember this many digits. But WolframAlpha can handle it.)
+In finding this new solution for 3, the mathematicians used techniques developed earlier this year, when Booker found the first-ever sum of three cubes for the number 33. But why did these breakthroughs take so long? Well, in the hunt for the right cubes, there is a lot of territory to cover, and there are few clues to lead us where we want to go. So the trick is to find smarter ways to search. To get a sense of the challenge and the solution, let’s start with a simpler question: How can we write 33 as a sum of three integers?
+We can write 33 = 19 + 6 + 8, or 33 = 11 + 11 + 11, or 33 = 31 + 1 + 1. We can use negative numbers too, so we can write 33 = 35 + (−1) + (−1). There are infinitely many ways we can do this, since we can always increase one or two of the numbers and decrease another to compensate, so that 33 = 36 + (−1) + (−2), 33 = 100 + 41 + (−108), and so on.
+What about writing 33 as a sum of three squares? We would need to find three “perfect squares” — numbers that are equal to an integer times itself, like 1 = 12, 9 = 32, and 64 = 82 — that add up to 33. After playing around, you might find that 33 = 42 + 42 + 12 and 33 = 52 + 22 + 22. Are there any more? Not really. You could replace a 4 with −4 and still get 33 = (-4)2 + 42 + 12, giving us a few different ways to write our solutions, but however you count them, there are only a handful of ways to write 33 as a sum of three squares.
+That’s because when summing squares we don’t have the same flexibility we have when summing integers. We have fewer choices, and, more importantly, adding will only ever increase our sum. This is because perfect squares are never negative: Squaring a positive or negative integer always results in a positive integer.
+The squares are more restrictive, but something good comes from those restrictions: Our search space is “bounded.” In trying to find three squares that sum to 33, we can’t use any number whose square is bigger than 33, because once our sum of squares exceeds 33, there’s no way to decrease it. This means we only have to consider combinations of 0², 1², 2², 3², 4² and 5² (we’ll ignore their negative counterparts, which don’t really add anything new).
+With only six options for each of our three squares, we have fewer than 6 × 6 × 6 = 216 ways that three squares could possibly sum to 33. That’s a small enough list to allow us to check each possibility and make sure we didn’t miss anything.
+Now let’s turn our attention back to the sum-of-three-cubes problem for 33. It’s not hard to see that it combines the limited choices of the sum-of-squares problem with the infinite search space of the sum-of-integers problem. As with the squares, not every number is a cube. We can use numbers like 1 = 1³, 8 = 2³ and 125 = 5³, but we can never use 2, 3, 4, 10, 108 or most other numbers. But unlike squares, perfect cubes can be negative — for example, (-2)³ = -8, and (-4)³ = -64 — which means we can decrease our sum if we need to. This access to negative numbers gives us unlimited options for our sum, meaning that our search space, as in the sum-of-integers problem, is unbounded.
+An unbounded search space means we might have to look for a very long time to find an answer. And people have been looking for decades. It took a supercomputer and some clever math to finally find the right combination of cubes. Let’s see how.
+Suppose you wanted to search for a solution to:
+33 = x³ + y³ + z³
+A simple approach would be to map out a region of numbers and try each one until something works. If you don’t find anything, then you define a new search space and start again. It’s kind of like using a telescope to methodically scan the sky for new planets.
+Imagine your initial search space is all the x’s, y’s and z’s between −100 and 100. So first you try:
+(−100)³ + (−100)³ + (−100)³
+No dice. Then you try:
+(−99)³ + (−100)³ + (−100)³
+This doesn’t work either. You keep going until you get to (100, −100, −100), at which point you flip to (−100, −99, −100) and continue the hunt. In the end you’ll check around 200 x 200 x 200 = 8,000,000 sets of numbers without finding anything that works. You’ll have to set up a new search space and start again.
+A better approach is to start by rewriting the equation like this:
+33 – (x³ + y³) = z³
+Now, instead of running through all the triples (x, y, z), we will run through the pairs (x, y). For each pair, we compute and then check a list of perfect cubes to see if our result (z3) is on it. If it is, we’ve found a combination that works. If it isn’t, we keep looking. This substantially reduces the size of our search space: Instead of the 8,000,00 triples (x, y, z), we’re now searching the 200 x 200 = 40,000 pairs (x, y). It’s a big savings, but it’s still not enough to make finding a solution computationally feasible.
+An even better approach is to rewrite the equation like this:
+33 – z³ = x³ + y³
+Now we search through the z’s. For each z, we compute, and then we use a neat little trick from math class. The expression x³ + y³ can always be factored in the following way:
+x³ + y³ = (x + y)(x² – xy + y²)
+This is known as the sum-of-cubes formula. To verify this, we just multiply out the right side using the distributive property:
+(x + y)(x² – xy + y²) = x³ – x²y + xy² + yx² – xy² + y³ = x³ + y³
+How does this formula help us in our search? Once we’ve computed 33 – z³, we factor it into primes, which is something computers are pretty good at, at least in the range of numbers we’re looking at. And once we’ve factored 33 – z³, we check if the factors can be arranged like (x + y)(x² – xy + y²). If they can, we’ve found a solution.
+For example, let’s say we were trying to find a way to write the number 34 as a sum of three cubes, and our search led us to z = −6. We compute 34 – z³ = 34 – (-6)³ = 34 – (-216) = 34 + 216 = 250, and then we see how we can factor 250.
+After some investigating, we realize that we can write 250 = 10 × 25 = (5+5)(5² – 5 × 5 + 5²). This is exactly (x + y)(x² – xy + y²) for x = 5 and y = 5, so the triple (x, y, z) = (5, 5, -6) should work for 34. Sure enough, 34 = 5³ + 5³ + (-6)³, and we’ve successfully found three cubes that sum to 34.
+With this method, instead of looking at 200³ = 8,000,000 triples or even 200² = 40,000 pairs, we just have to check 200 possible z values. There’s some additional work factoring and checking, but overall it’s a big improvement in search efficiency. Yet the search space being scoured for sums of cubes that add up to numbers like 33 is so vast that even these improvements couldn’t help supercomputers make a serious dent in the problem.
+Which is where Andrew Booker came in. Booker devised some additional techniques from algebra and number theory to improve his search efficiency even further. And when he turned his university’s supercomputer loose on the problem, in three weeks it came back with the first-ever representation of 33 as a sum of three cubes:
+33 = 8,866,128,975,287,528³ + (−8,778,405,442,862,239)³ + (−2,736,111,468,807,040)³
+After Booker solved this problem, and before he and Sutherland turned their attention to the number 3, they also solved the open problem for 42:
+42 = (−80,538,738,812,075,974)3 + 80,435,758,145,817,5153 + 12,602,123,297,335,6313
+It may be surprising that, after thousands of years, we still have things to learn about numbers like 3, 33 and 42. Perhaps even more surprising, abstract ideas from high school math can help, like the formula for the sum of cubes. But that’s the way math works, and that’s why we keep exploring. So keep an eye on 114, the smallest number for which the sum of three cubes question is currently undecided. I have a feeling that for Andrew Booker and other mathematicians, the search has already begun.
+
+
+
+
+
+
+
+"

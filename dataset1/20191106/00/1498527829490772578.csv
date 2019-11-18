@@ -1,0 +1,104 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Red Hat Enterprise Linux unterstützt jetzt Live-Kernel-Patching
+06 Nov 2019 by Stefan Bordel
+
+Für Red Hat Enterprise Linux ist ab sofort ein Update auf Version 8.1 erhältlich. Ein Highlight der neuen Version ist die Unterstützung von Live-Kernel-Patching, wodurch das Aufspielen von kritischen Updates im laufenden Betrieb möglich ist.
+
+
+Red Hat Enterprise Linux (RHEL) ist ab sofort in der neuen Version 8.1 erhältlich. Das Update beschert dem professionellen Betriebssystem laut Red Hat eine bessere Verwaltung, mehr Sicherheit sowie Performance-Zugewinne. Außerdem sind neue Tools für Entwickler mit an Bord.
+Der proaktive Analytics-Dienst ""Red Hat Insights"" ist jetzt standardmäßig in allen RHEL-Plänen enthalten und erlaubt ein intelligenteres IT-Management durch bessere Automatisierung. Der Service umfasst über 1.000 Regelsätze, mit denen sich der Betrieb von RHEL auf lokaler Hardware sowie in der Cloud optimieren lässt. Dies umfasst auch die korrekte Verwaltung von Workloads wie SAP HANA oder Microsoft SQL Server.
+Live-Kernel-Patching in RHEL 8.1
+Die neu hinzugekommene Unterstützung von Live-Kernel-Patching erlaubt es Unternehmen nun auch, auf kritische Schwachstellen und Gefahren mit Kernel-Updates zu reagieren, ohne dabei langwierige Ausfallzeiten in Kauf nehmen zu müssen. Aktualisierungen erfolgen stattdessen im laufenden Betrieb ohne Unterbrechung der Workloads.
+Speziell zur Absicherung von containerisierten Anwendungen sind im Rahmen des Updates neue SELinux-Profile hinzugekommen. Über diese steuern Unternehmen die Zugriffsberechtigungen von Anwendungs-Containern auf die darunterliegenden Hostsysteme. Dadurch lassen sich Produktionssystemen gegen Sicherheitsbedrohungen abhärten, die auf Cloud-native Anwendungen abzielen.
+Weitere Sicherheitsverbesserungen umfassen mitunter erweiterte CVE-Korrekturen, Speicherschutz auf Kernel-Ebene und Anwendungs-Whitelisting-Technologien.
+Eine neue Systemrolle in Version 8.1 verspricht indessen eine optimierte Einrichtung von RHEL-Subsystemen. Letztere dienen etwa für spezielle Funktionen in den Bereichen Storage, Netzwerk, Zeitsynchronisation, kdump und SElinux.
+Entwickler dürfen sich in RHEL 8.1 zudem über aktualisierte Developer-Tools und Programmiersprachen freuen, wie etwa golang und .NET Core.
+Alle weiteren Neuerungen von Red Hats neuestem Update finden sich in den offiziellen Release Notes.
+Verwandte Themen
+
+
+Betriebssystem
+
+
+Open Source
+
+
+Software
+
+
+Cloud
+
+
+Linux
+
+
+mehr >>
+
+
+
+
+
+",de,"
+
+
+
+
+
+
+
+
+
+
+
+Red Hat Enterprise Linux now supports live kernel patching
+06 Nov 2019 by Stefan Bordel
+
+An update to version 8.1 is now available for Red Hat Enterprise Linux. A highlight of the new version is the support of live kernel patching, which makes it possible to upload critical updates during operation.
+
+
+Red Hat Enterprise Linux (RHEL) is now available in the new version 8.1. The update gives the professional operating system, according to Red Hat better management, more security and performance gains. In addition, new tools for developers are on board.
+The proactive Red Hat Insights Analytics service is now included as standard in all RHEL plans, allowing smarter IT management through better automation. The service includes over 1,000 rule sets that can be used to optimize the operation of RHEL on local hardware as well as in the cloud. This includes the correct management of workloads such as SAP HANA or Microsoft SQL Server.
+Live kernel patching in RHEL 8.1
+The addition of live kernel patching support also allows organizations to address critical vulnerabilities and threats with kernel updates without the need for lengthy downtime. Instead, updates are made on the fly without interrupting workloads.
+Especially for the protection of containerized applications, new SELinux profiles have been added as part of the update. These companies control the access permissions of application containers to the underlying host systems. This allows production systems to be hardened against security threats that target cloud-native applications.
+Other security enhancements include sometimes advanced CVE fixes, kernel-level storage protection, and application whitelisting technologies.
+However, a new system role in version 8.1 promises optimized deployment of RHEL subsystems. The latter are used for special functions in the areas of storage, network, time synchronization, kdump and SElinux.
+Developers in RHEL 8.1 can also enjoy updated developer tools and programming languages, such as golang and .NET Core.
+All other updates to Red Hat's latest update can be found in the official release notes.
+Related topics
+
+
+operating system
+
+
+Open source
+
+
+software
+
+
+Cloud
+
+
+Linux
+
+
+more >>
+
+
+
+
+
+"

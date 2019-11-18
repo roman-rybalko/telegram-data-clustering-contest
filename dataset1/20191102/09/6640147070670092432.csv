@@ -1,0 +1,234 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Controllo Vocale di macOS Catalina, cos’è e come si usa
+02 Nov 2019, 09:30 by Fabio Meazza
+Con l’uscita di macOS Catalina, oltre a numerose misure di sicurezza, è stata introdotta un’interessante funzionalità chiamata Controllo Vocale, dedicata alle persone che potrebbero non essere in grado di utilizzare un mouse e una tastiera convenzionali, dando la possibilità di controllare il proprio Mac con la voce.
+Controllo Vocale è in grado sia di trascrivere un testo dettato in una email o in un programma di scrittura, che di eseguire comandi dettati al Mac, come “Apri Mail” o “Esci da Safari”.
+Naturalmente chiunque può usare Controllo Vocale per gestire con la voce il suo Mac, dopo un po’ di pratica. Apple non è stata troppo espansiva nella documentazione a riguardo, quindi vediamo un po’ da vicino come funziona questa tecnologia per controllare MacOS Catalina.
+Avvia Controllo vocale
+Per abilitare il controllo vocale dobbiamo recarci nel menù Accessibilità, raggiungibile da Mela > Preferenze di Sistema. Bisognerà scorrere parecchio in basso per trovare la voce “Controllo Vocale”, una scelta un po’ stramba considerando che dovrebbe essere rivolta prevalentemente a persone con qualche tipo di disabilità.
+
+
+
+
+
+
+
+
+
+
+
+In ogni caso, per abilitarlo bisogna cliccare sulla spunta “Abilita Controllo Vocale”. In alternativa, se si dispone di Siri, è possibile risvegliarla e chiedere “Abilita controllo vocale”.
+Comandi vocali
+Come già accennato, Controllo vocale può essere usato per dettare un testo, che sia in un editor o una e-mail, oppure per dettare comandi al Mac. Facendo clic sul pulsante “Comandi” con il mouse verrà visualizzato un elenco, ma visto che ora la funzione è già attiva, possiamo anche dire “Fai clic su Comandi”
+L’elenco dei comandi è piuttosto lungo da scorrere, ma sono divisi per categorie e soprattutto, ricercabili anche a voce. Per farlo, ad esempio diremo “documento”, e verranno mostrati tutti i comandi vocali per lavorare con i documenti. Dato che è il momento di passare ad altri argomenti, possiamo dire “Fai clic su Fine” ed “Esci da Preferenze di Sistema” per chiudere il menù.
+
+
+
+Facile come dire 1, 2, 3
+Il controllo vocale mette a disposizione una serie di opzioni per navigare nel tuo Mac. La prima che vedremo è l’assegnazione di numeri a collegamenti ed oggetti sullo schermo. Molti dei comandi chiave per svolgere azioni sul Mac si trovano nel menù Mela, quindi bisognerà dire “Fai clic sul menu Apple”.
+Controllo vocale aprirà il menù Mela ed assegnerà un numero ad ogni comando all’interno del menu, quindi dicendo “tre” aprirà l’App Store e dicendo “otto” spegnerà il Mac. Troverai comandi numerati simili nel menu File e in altri menu, nonché nei menu delle singole app con cui lavori.
+
+
+
+Trasformare il discorso in testo
+Controllo vocale è utile anche per dettare il testo nelle e-mail o in app di elaborazione testi come Microsoft Word o Pages di Apple.
+Puoi anche modificare il testo usando comandi vocali come “Seleziona tutto” o “elimina frase”. In caso di bisogno comunque è possibile in qualsiasi momento pronunciare “Mostra comandi”, per visualizzare da un elenco a discesa ogni comando utilizzabile per categoria di azioni.
+A onor del vero, molte di queste funzionalità di dettatura erano già disponibili nelle versioni precedenti di macOS, quindi meglio non soffermarcisi troppo, piuttosto andiamo avanti ed esploriamo le nuove funzionalità che ti consentono di controllare il Mac e altri tipi di app.
+
+
+
+Naviga sul Web con la voce
+Per iniziare la navigazione diciamo “Apri Safari”. È possibile utilizzare il controllo vocale per pronunciare comandi su qualsiasi pagina Web, ad esempio “Ingrandisci” o “Riduci” per migliorare la visibilità dei contenuti con lo zoom, oppure “scorri su” e “scorri giù” per navigare nella pagina.
+Per visualizzare la cronologia dei siti visitati in passato, dobbiamo dire “Apri Menu Cronologia”. Controllo vocale aprirà l’elenco ed assegnerà dei numeri a ciascun elemento proprio come il Menu Apple nel passaggio precedente. Tom’s Hardware è elencato come numero 7, quindi basta dire “sette” per visitare Tom’s Hardware.
+
+
+
+Controlli di navigazione web
+I menù e le loro relative voci sono perfettamente gestibili con il sistema dei numeri, ma una pagina web è una faccenda decisamente più complicata vista la moltitudine di elementi che puoi usare per la navigazione.
+Un sistema concettualmente simile può essere esteso a pagine web o ad altri tipi di app, basta pronunciare “Mostra numeri”.
+Così facendo, ogni link sulla pagina web sarà associato ad un numero, quindi dicendo “quarantadue” potrai aprire il link “Google Stadia” ed accedere a tutti gli articoli a riguardo. Puoi anche pronunciare comandi come “Fai clic su indietro” o “Fai clic su avanti” come utilizzeresti le frecce avanti e indietro per muoverti velocemente fra le pagine visitate nella sessione corrente. A onor del vero quest’ultima funzionalità a noi non ha sortito gli effetti sperati, ma forse è solo un bug che sarà risolto.
+
+
+
+Mostra la griglia
+Il sistema di numerazione è sicuramente un ottimo metodo per semplificare l’esplorazione di menù e pagine, ma ci sono situazioni in cui l’elemento che serve non viene numerato, magari la selezione di una zona colore durante la modifica di una foto.
+Tale limite è superabile con la griglia, pronunciamo quindi “Mostra griglia finestra” per visualizzare in sovrimpressione una griglia numerata che suddivide in riquadri la finestra in uso. Attraverso questi, si potrà accedere gradualmente all’elemento interessato.
+Come esempio puntiamo al pulsante “Riduci a icona” che si trova nello spazio 1. Dettiamo quindi al Mac, semplicemente “uno”.
+
+
+
+Zoom avanti con la griglia
+Completato il passo precedente avremo ora una griglia più piccola all’interno del riquadro selezionato. Il pulsante Riduci a icona che vogliamo è all’interno del riquadro 1 insieme a quello di chiusura, quindi se diciamo nuovamente “uno” il riquadro che include i pulsanti verrà visualizzato ingrandito, in un’area poco distante sullo schermo.
+
+
+
+Ora, pronunciando “Fai clic su 15” (o anche 9, 10 o 14, un qualsiasi spazio che racchiuda una parte del bottone da premere), la finestra dovrebbe ridursi nella dock.
+
+
+
+Questo caso specifico è un esempio è può essere risolto in altri modi meno ortodossi, ma è bene sapere che se si fosse detto soltanto “quindici” senza specificare l’azione “fai clic su”, Controllo vocale avrebbe ulteriormente suddiviso la zona 15 in una griglia sempre più piccola, visualizzata ingrandita. In questo modo, si può fruire di una visualizzazione sempre più dettagliata di un’area di interesse.
+Come modificare le foto con la voce
+Avendo menzionato la modifica foto nell’introdurre la griglia, vediamo ora come sfruttare anche questa possibilità. Diciamo quindi “Apri foto” per aprire l’app Foto, poi sfogliamo la libreria dicendo “scorri su” o “scorri giù”.
+Sfruttiamo il comando già visto “Mostra numeri” per agevolarci nella selezione della foto, diremo ad esempio “fai doppio clic su 21” per aprirla e infine “Fai clic su Modifica” per passare alla modalità di modifica.
+
+
+
+A scopo d’esempio vediamo un’azione che prevede un “clic generico” sull’area di lavoro, come un prelievo colore. Quindi decomprimiamo il pannello strumenti necessario dicendo “Fai clic su Colore Selettivo”, poi con l’ormai sdoganato “Mostra numeri” selezioniamo il contagocce con “Fai clic su 72”.
+
+
+
+A questo punto, pronunciando “Mostra griglia finestra” la foto sarà suddivisa in riquadri, ne selezioniamo uno dicendo il suo numero, facciamo il “nove”. Restringiamo l’area, ad esempio “diciassette” e “otto”. Per ultimare la selezione del colore interessato diremo “Fai clic su 8”.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Creare comandi personalizzati
+Se la vita dovesse complicarsi ulteriormente, e i comandi disponibili non fossero sufficienti a soddisfare tutte le esigenze, è comunque possibile creare nuovi comandi da far eseguire a Controllo Vocale, velocizzando operazioni magari molto complesse.
+Per procedere, apri il pannello delle preferenze di Controllo vocale (“Apri Preferenze di Sistema > Fai clic su accessibilità > Scorri in basso > Fai clic su Controllo Vocale” ed infine “Fai clic su Comandi”) per visualizzare l’elenco dei comandi vocali integrati.
+Fai clic sul simbolo “+” nell’angolo in basso a sinistra per creare i tuoi nuovi comandi. Così facendo possiamo specificare un comando vocale che è possibile utilizzare nelle singole app o nel Mac Finder sul desktop.
+È possibile quindi creare un azione personalizzata con un comando personalizzato, nell’esempio, dicendo “Visita Tom’s” usando Safari, si aprirà in automatico la homepage di Tom’s Hardware.
+
+
+
+
+
+",it,"
+
+
+
+
+
+
+
+
+
+
+
+Vocal control of macOS Catalina, what it is and how to use it
+02 Nov 2019, 09:30 by Fabio Meazza
+With the release of macOS Catalina, in addition to numerous security measures, an interesting feature called Voice Control was introduced, dedicated to people who might not be able to use a conventional mouse and keyboard, giving the possibility to control the own Mac with voice.
+Voice Control is able to either transcribe a text dictated in an email or a writing program, or to execute commands dictated to the Mac, such as ""Open Mail"" or ""Exit Safari"".
+Of course, anyone can use Voice Control to manage his Mac with his voice, after a little practice. Apple hasn't been too expansive in the documentation about it, so let's take a closer look at how this technology works to control MacOS Catalina.
+Start Voice Control
+To enable voice control we must go to the Accessibility menu, accessible from Apple> System Preferences. We will have to go a lot down to find the voice ""Voice Control"", a bit of a weird choice considering that it should be addressed mainly to people with some kind of disability.
+
+
+
+
+
+
+
+
+
+
+
+In any case, to enable it, click on the ""Enable Voice Control"" checkbox. Alternatively, if you have Siri, you can wake it up and ask for ""Enable voice control"".
+Voice commands
+As already mentioned, Voice Control can be used to dictate a text, either in an editor or an e-mail, or to dictate commands to the Mac. Clicking on the ""Commands"" button with the mouse will display a list, but since now the function is already active, we can also say ""Click Commands""
+The list of commands is rather long to scroll, but they are divided into categories and above all searchable even by voice. To do this, for example we will say ""document"", and all the voice commands will be shown to work with the documents. Since it's time to move on to other topics, we can say ""Click Finish"" and ""Exit System Preferences"" to close the menu.
+
+
+
+As easy as saying 1, 2, 3
+Voice control provides a number of options for navigating on your Mac. The first we'll see is assigning numbers to links and objects on the screen. Many of the key commands to perform actions on the Mac can be found in the Apple menu, so we will have to say ""Click on the Apple menu"".
+Voice control will open the Apple menu and assign a number to each command in the menu, then saying ""three"" will open the App Store and saying ""eight"" will shut down the Mac. You will find similar numbered commands in the File menu and in other menus, as well as in the menus of the individual apps you work with.
+
+
+
+Transforming speech into text
+Voice control is also useful for dictating text in e-mails or word processing apps such as Microsoft Word or Apple Pages.
+You can also edit the text using voice commands like ""Select all"" or ""delete phrase"". In case of need, however, it is possible at any time to pronounce ""Show commands"", to display from a drop-down list each command that can be used by category of actions.
+To be sure, many of these dictation features were already available in previous versions of macOS, so better not dwell too much, rather let's go ahead and explore the new features that let you control the Mac and other types of apps.
+
+
+
+Browse the web with voice
+To start browsing we say ""Open Safari"". You can use voice control to speak commands on any web page, such as ""Zoom in"" or ""Zoom out"" to improve the visibility of content with the zoom, or ""scroll up"" and ""scroll down"" to navigate the page.
+To view the history of sites visited in the past, we need to say ""Open History Menu"". Voice Control will open the list and assign numbers to each item just like the Apple Menu in the previous step. Tom's Hardware is listed as number 7, so just say ""seven"" to visit Tom's Hardware.
+
+
+
+Web browsing controls
+The menus and their related items are perfectly manageable with the number system, but a web page is a decidedly more complicated matter given the multitude of elements you can use for navigation.
+A conceptually similar system can be extended to web pages or other types of apps, just say ""Show numbers"".
+By doing so, each link on the web page will be associated with a number, so by saying ""forty two"" you will be able to open the ""Google Stadia"" link and access all the articles about it. You can also say commands like ""Click back"" or ""Click next"" as you would use the forward and backward arrows to move quickly between the pages visited in the current session. To tell the truth, this last feature has not had the desired effect, but maybe it's just a bug that will be solved.
+
+
+
+Show the grid
+The numbering system is certainly an excellent method to simplify the exploration of menus and pages, but there are situations in which the element that is needed is not numbered, perhaps the selection of a color area during the editing of a photo.
+This limit can be overcome with the grid, we then say ""Show window grid"" to display an overlaid numbered grid that subdivides the window in use into boxes. Through these, you can gradually access the element concerned.
+As an example we point to the ""Minimize"" button found in space 1. We then tell the Mac, simply ""one"".
+
+
+
+Zoom in with the grid
+Completed the previous step we will now have a smaller grid inside the selected box. The Minimize button we want is inside box 1 together with the closing one, so if we say ""one"" again, the box that includes the buttons will appear enlarged, in an area not far away on the screen.
+
+
+
+Now, saying ""Click on 15"" (or even 9, 10 or 14, any space that contains a part of the button to press), the window should shrink into the dock.
+
+
+
+This specific case is an example and can be solved in other less orthodox ways, but it is good to know that if you only said ""fifteen"" without specifying the action ""click on"", Voice control would have further divided the area 15 into a increasingly smaller grid, enlarged view. In this way, you can enjoy an increasingly detailed display of an area of interest.
+How to edit photos with voice
+Having mentioned the photo change in introducing the grid, let's see now how to exploit this possibility too. We then say ""Open photo"" to open the Photos app, then browse through the library saying ""scroll up"" or ""scroll down"".
+Let's take advantage of the command already seen ""Show numbers"" to help us in selecting the photo, we will say for example ""double click on 21"" to open it and finally ""Click on Edit"" to switch to edit mode.
+
+
+
+For example, we see an action that involves a ""generic click"" on the work area, like a color pick. Then unzip the necessary instrument panel saying ""Click on Selective Color"", then with the now cleared ""Show numbers"" select the eyedropper with ""Click on 72"".
+
+
+
+At this point, by saying ""Show window grid"" the photo will be divided into boxes, we select one by saying its number, we do the ""nine"". We restrict the area, for example ""seventeen"" and ""eight"". To complete the selection of the color concerned we will say ""Click on 8"".
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Create custom commands
+If life were to be complicated further, and the available commands were not sufficient to satisfy all the needs, it is still possible to create new commands to be executed by Voice Control, speeding up operations that may be very complex.
+To proceed, open the Voice Control preferences panel (""Open System Preferences> Click on accessibility> Scroll down> Click Voice Control"" and finally ""Click Commands"") to display the list of voice commands integrated.
+Click on the ""+"" symbol in the lower left corner to create your new commands. By doing so, we can specify a voice command that can be used in individual apps or in the Mac Finder on the desktop.
+It is therefore possible to create a custom action with a custom command, in the example, saying ""Visit Tom's"" using Safari, the Tom's Hardware homepage will open automatically.
+
+
+
+
+
+"

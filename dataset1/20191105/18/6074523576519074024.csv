@@ -1,0 +1,70 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Ether on Lightning Is the Latest Bridge Crossing Crypto’s Great Divide
+05 Nov 2019, 18:00 by Leigh Cuen
+Ethereum developers are using the Lightning payments network to build bridges into the bitcoin ecosystem.
+The venture-backed crypto startup Radar, best known for its decentralized exchange (DEX) relayers for 0x, just launched a service called RedShift, which allows people to pay a lightning invoice from an ethereum wallet.
+Radar product lead Brandon Curtis told CoinDesk:
+“There are some people out there who want to be bitcoin maximalists or only work on ethereum things. But I think there’s a large, silent majority of us that are interested in multiple chains, in multiple assets, and want to build things that bridge between them.”
+MetaMask wallet users with an in-browser widget can simply add a second widget to their browsers and paste a lightning invoice into the ethereum wallet, like a normal wallet address. On the back end, Radar will swap the ether for bitcoin and manage channels so the recipient is paid in bitcoin. This widget will eventually connect the user to a pool of market makers beyond Radar, Curtis said, and work for other ethereum-based tokens as well.
+“Our number one request from [DEX] users and market makers was somehow adding the ability to trade bitcoin,” Curtis said. “[Bitcoin has] more liquidity and just a lot of holders, users, a lot of interest.”
+Radar may see the move as a competitive differentiator as it jockeys for usage in the DEX space. Currently, IDEX and Kyber Network are the leading DEXs in terms of trading volume, according to Etherscan statistics.
+Building bridges
+Radar is now among a handful of projects working to connect various cryptocurrency ecosystems.
+Indeed, the Cross-Chain Working Group is already building a system for wrapped bitcoin tokens that can be used on the ethereum blockchain. Plus, the Electronic Coin Company is working on bridges for zcash into the ethereum network, according to ECC’s VP of marketing, Josh Swihart.
+Likewise, Arwen CEO Sharon Goldberg told CoinDesk her startup’s atomic swap and settlement service for centralized exchanges like KuCoin now offers ethereum mainnet capabilities.
+“You can take some bitcoin, buy some ETH, and do that settlement without losing custody,” she said. “The way we’re doing it is free of any third party. We don’t have any pegs, or any of the complexity we’re seeing from some of the other projects. You’re actually introducing new counterparty risk with those types of things.”
+Whether startups focus on sidechains, lightning or other layered protocols like Arwen, Radar’s Curtis said that bitcoin is still the best form of cryptographic money, due to open questions about how ethereum development will play out. However, from his perspective, bridges that allow flows of value into bitcoin from more experimental assets can add more value to the bitcoin ecosystem by opening it up to new users.
+“Right now, the hardest part about lightning is the onboarding process,” Curtis said, adding:
+“With tools like RedShift, we can allow people who already have digital assets to tap into the [lightning] network without all that setup.”
+
+Team photo courtesy of Radar Relay
+
+
+
+",en,"
+
+
+
+
+
+
+
+
+
+
+
+Ether on Lightning Is the Latest Bridge Crossing Crypto’s Great Divide
+05 Nov 2019, 18:00 by Leigh Cuen
+Ethereum developers are using the Lightning payments network to build bridges into the bitcoin ecosystem.
+The venture-backed crypto startup Radar, best known for its decentralized exchange (DEX) relayers for 0x, just launched a service called RedShift, which allows people to pay a lightning invoice from an ethereum wallet.
+Radar product lead Brandon Curtis told CoinDesk:
+“There are some people out there who want to be bitcoin maximalists or only work on ethereum things. But I think there’s a large, silent majority of us that are interested in multiple chains, in multiple assets, and want to build things that bridge between them.”
+MetaMask wallet users with an in-browser widget can simply add a second widget to their browsers and paste a lightning invoice into the ethereum wallet, like a normal wallet address. On the back end, Radar will swap the ether for bitcoin and manage channels so the recipient is paid in bitcoin. This widget will eventually connect the user to a pool of market makers beyond Radar, Curtis said, and work for other ethereum-based tokens as well.
+“Our number one request from [DEX] users and market makers was somehow adding the ability to trade bitcoin,” Curtis said. “[Bitcoin has] more liquidity and just a lot of holders, users, a lot of interest.”
+Radar may see the move as a competitive differentiator as it jockeys for usage in the DEX space. Currently, IDEX and Kyber Network are the leading DEXs in terms of trading volume, according to Etherscan statistics.
+Building bridges
+Radar is now among a handful of projects working to connect various cryptocurrency ecosystems.
+Indeed, the Cross-Chain Working Group is already building a system for wrapped bitcoin tokens that can be used on the ethereum blockchain. Plus, the Electronic Coin Company is working on bridges for zcash into the ethereum network, according to ECC’s VP of marketing, Josh Swihart.
+Likewise, Arwen CEO Sharon Goldberg told CoinDesk her startup’s atomic swap and settlement service for centralized exchanges like KuCoin now offers ethereum mainnet capabilities.
+“You can take some bitcoin, buy some ETH, and do that settlement without losing custody,” she said. “The way we’re doing it is free of any third party. We don’t have any pegs, or any of the complexity we’re seeing from some of the other projects. You’re actually introducing new counterparty risk with those types of things.”
+Whether startups focus on sidechains, lightning or other layered protocols like Arwen, Radar’s Curtis said that bitcoin is still the best form of cryptographic money, due to open questions about how ethereum development will play out. However, from his perspective, bridges that allow flows of value into bitcoin from more experimental assets can add more value to the bitcoin ecosystem by opening it up to new users.
+“Right now, the hardest part about lightning is the onboarding process,” Curtis said, adding:
+“With tools like RedShift, we can allow people who already have digital assets to tap into the [lightning] network without all that setup.”
+
+Team photo courtesy of Radar Relay
+
+
+
+"

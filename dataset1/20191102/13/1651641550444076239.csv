@@ -1,0 +1,46 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Want to use Pixel 4’s Motion Sensor in any country? Here’s how you can enable it
+02 Nov 2019, 13:45 by Anmol
+
+
+
+One of the highlights of the Google Pixel 4 was the Soli radar motion sensor and Google branded the Pixel 4 as the first smartphone to come with a radar. Unfortunately, The company couldn’t get approval from different countries to allow the use of radar. This forced Google into selling the device with the radar disabled in unapproved countries.
+Google, however, never physically removed the radar and that was one of the reasons why the Indian government banned it immediately after launch. That being said, if you bought the device in one of the supported countries but plan to carry the device in an unsupported country then the internet has got you covered. First spotted by the Reddit community, Google has left a Motion Sense debugging option inside the retail Pixel 4 unit. This option can be used to force enable motion sensor and gestures regardless of the physical location. To enable the sensor, users will need to run adb command: adb shell setprop pixel.oslo.allowed_override true to enable it temporarily. Alternatively users can run adb shell “setprop persist.pixel.oslo.allowed_override true; setprop ctl.restart zygote” to enable the sensor permanently.
+Disclaimer: Pixel 4’s motion sensors use radar technology which is governed at a national level. Enabling the senor without the explicit approval from the government is illegal and can get you in trouble. Proceed at your own risk.
+
+
+",en,"
+
+
+
+
+
+
+
+
+
+
+
+Want to use Pixel 4’s Motion Sensor in any country? Here’s how you can enable it
+02 Nov 2019, 13:45 by Anmol
+
+
+
+One of the highlights of the Google Pixel 4 was the Soli radar motion sensor and Google branded the Pixel 4 as the first smartphone to come with a radar. Unfortunately, The company couldn’t get approval from different countries to allow the use of radar. This forced Google into selling the device with the radar disabled in unapproved countries.
+Google, however, never physically removed the radar and that was one of the reasons why the Indian government banned it immediately after launch. That being said, if you bought the device in one of the supported countries but plan to carry the device in an unsupported country then the internet has got you covered. First spotted by the Reddit community, Google has left a Motion Sense debugging option inside the retail Pixel 4 unit. This option can be used to force enable motion sensor and gestures regardless of the physical location. To enable the sensor, users will need to run adb command: adb shell setprop pixel.oslo.allowed_override true to enable it temporarily. Alternatively users can run adb shell “setprop persist.pixel.oslo.allowed_override true; setprop ctl.restart zygote” to enable the sensor permanently.
+Disclaimer: Pixel 4’s motion sensors use radar technology which is governed at a national level. Enabling the senor without the explicit approval from the government is illegal and can get you in trouble. Proceed at your own risk.
+
+
+"

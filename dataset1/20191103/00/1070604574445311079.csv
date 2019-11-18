@@ -1,0 +1,110 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Relógio adiantado em uma hora? Saiba como corrigir esse erro
+Problema do relógio adiantado aconteceu nesta madrugada, e pode ser contornado rapidamente. Veja como arrumar o horário de seu celular e prevenir que isso aconteça novamente
+03 Nov 2019 by Victor Pacheco
+Usuários que acordaram na manhã deste domingo (03) tiveram uma breve surpresa ao pegarem seus smartphones: o relógio estava adiantado em uma hora. Em uma publicação recente, o Google explica o ocorrido:
+Nos últimos dois anos, o governo brasileiro realizou alterações no horário de verão. Inicialmente, a data de início passou do terceiro domingo de outubro para o primeiro domingo de novembro e, recentemente, foi assinado um decreto que determinou o fim da mudança.Todas essas modificações impactam diretamente no Banco de Dados Global da IANA (em português, Autoridade para Atribuição de Números de Internet), que é utilizado por smartphones e dispositivos eletrônicos para garantir que você esteja sempre na hora certa, onde quer que esteja.Na prática, isso significa que alguns celulares possivelmente não tenham a informação necessária para evitar que o relógio dos aparelhos seja alterado automaticamente como se o horário de verão ainda estivesse valendo.
+Porque acontece o erro do relógio adiantado
+Os smartphones passaram a informar o horário de Fernando de Noronha (GMT -2), ao invés de mostrar para todos o horário de Brasília (GMT -3), em aparelhos que possuem configurações de atualização automática de data e hora:
+
+
+Data e hora automáticas: geralmente, é melhor deixar isso ativado.
+
+Para os aparelhos que não forem impactados no dia 20 de outubro, existe a possibilidade de que a mudança automática aconteça no dia 3 de novembro, já que a regra mudou em 2018. Nesse caso, valem as mesmas recomendações dadas acima, ou seja, na noite anterior, você pode definir manualmente a hora do seu smartphone.
+Caso seu telefone não sofra nenhuma alteração de horário em nenhuma das duas datas, isso significa que o aparelho já foi atualizado pelos fabricantes ou, então, está seguindo as regras de rede da sua operadora (elas usam as antenas para enviar informações como a hora certa, por exemplo).
+Você pode manter as configurações manuais até 16 de fevereiro de 2020, que seria a data de fim do horário de verão.
+Como corrigir a hora
+Nesse artigo nós te ensinamos como reverter e evitar que esse problema ocorra novamente:
+iPhones:
+Os usuários de smartphones da Apple podem corrigir o problema do relógio adiantado entrando no menu de configurações, clicando no ícone “Ajustes”:
+
+
+Relógio Adiantado: o problema pode ser contornado com essas instruções
+
+Depois você deve ir até a opção “Geral“, e clicar em “Data e Hora”. Desabilite a opção “Automaticamente” de Fuso Horário.
+Em seguida, basta escolher o horário correto e confirmar.
+Se você usa o sistema operacional Android, temos um procedimento específico a seguir:
+Smartphones Android:
+Usuários que usam o sistema do Google também foram afetados. Para arrumar seu relógio adiantado você deve primeiro acessar suas “Configurações“, e depois clicar em “Sistema“. Em seguida basta selecionar “Data e hora“.
+
+
+Usuários de Android podem reverter erro sem muitos problemas
+
+Na tela seguinte, basta desmarcar  “Fuso horário automático“, mas também é válido você desabilitar a opção “Data e hora automáticas“. Depois disso você pode ajustar manualmente o horário e data de onde você está,  sem ficar dependendo de sua operadora.
+Ainda segundo as instruções do Blog do Google, você pode manter as configurações manuais do smartphone até 16 de fevereiro de 2020, que seria a data de fim do horário de verão.
+Leia também
+
+REVIEW: iPhone 11, 11 Pro ou 11 Pro Max: Qual a melhor escolha para você?
+
+
+Você foi afetado por esse erro no relógio de seu celular? Conte pra gente nos comentários!
+
+
+
+",pt,"
+
+
+
+
+
+
+
+
+
+
+
+Watch early in an hour? Learn how to fix this error
+Early clock problem happened this dawn, and can be bypassed quickly. Here's how to fix your phone time and prevent it from happening again.
+03 Nov 2019 by Victor Pacheco
+Users who woke up on Sunday morning had a brief surprise when they took their smartphones: the clock was one hour ahead. In a recent post, Google explains what happened:
+Over the past two years, the Brazilian government has made changes to daylight saving time. Initially, the start date went from the third Sunday of October to the first Sunday of November, and recently a decree was signed that determined the end of the change. All of these changes have a direct impact on the IANA Global Database. Internet Number Assignment), which is used by smartphones and electronic devices to make sure you're always on time, wherever you are. In practice, this means that some phones may not have the information you need to prevent your watch from devices will change automatically as if daylight saving time is still in effect.
+Why the early clock error happens
+Smartphones started reporting Fernando de Noronha time (GMT -2), instead of showing all Brasilia time (GMT -3) on devices that have automatic date and time update settings:
+
+
+Automatic date and time: Generally, it's best to leave this enabled.
+
+For appliances that are not impacted on October 20th, there is a possibility that automatic changeover will happen on November 3rd, as the rule changed in 2018. In this case, the same recommendations given above, ie in Last night, you can manually set the time on your smartphone.
+If your phone does not change its time on either date, it means the phone has already been updated by the manufacturers, or it is following your carrier's network rules (they use the antennas to send information as the time is right). , for example).
+You can keep your manual settings until February 16, 2020, which would be the daylight saving time end date.
+How to correct the time
+In this article we teach you how to reverse and prevent this problem from occurring again:
+iPhones:
+Apple smartphone users can fix the early clock issue by entering the settings menu by clicking the ""Settings"" icon:
+
+
+Early Clock: The issue can be circumvented with these instructions.
+
+Then you should go to the ""General"" option, and click ""Date and Time."" Disable the ""Automatically"" Time Zone option.
+Then simply choose the correct time and confirm.
+If you use the Android operating system, we have a specific procedure to follow:
+Android smartphones:
+Users using Google's system were also affected. To fix your watch early you must first go to your ""Settings"", and then click ""System"". Then simply select “Date and Time”.
+
+
+Android Users Can Reverse Error Without Many Problems
+
+In the next screen, just uncheck ""Automatic time zone"", but it is also valid to disable the ""Automatic date and time"" option. After that you can manually adjust the time and date from where you are, without depending on your carrier.
+According to the Google Blog instructions, you can keep your manual smartphone settings until February 16, 2020, which would be the end date for DST.
+Read too
+
+REVIEW: iPhone 11, 11 Pro, or 11 Pro Max: Which one is best for you?
+
+
+Have you been affected by this error on your mobile watch? Tell us in the comments!
+
+
+
+"

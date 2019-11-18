@@ -1,0 +1,202 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Nvidia uvádí adaptivní obnovování na televizích LG s HDMI VRR/G-Sync, podpora je tady
+První televize od LG dostaly podporu pro adaptivní obnovování HDMI Variable Refresh Rate/G-Sync Compatible a technologii už umí poslední ovladače.
+06 Nov 2019, 18:20 by Jan Olšan
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+VŠECHNY FOTOGRAFIE
+
+Už před několika týdny se objevila informace, že Nvidia chystá podporou adaptivního obnovování „G-Sync Compatible“ na televizích, mezi prvním měly být OLEDy od LG. A podpora by měla být založená na standardizované technologii HDMI 2.1 Variable Refresh Rate. Tato novinka měla čekat na vydání ovladačů a firmwarů, které ji zprovozní. A tyto nyní vyšly, takže ono adaptivní obnovování přes HDMI na televizích a grafikách GeForce je konečně tady a máme k němu i podrobnosti.
+Jak jsme psali před dvěma týdny, HDMI 2.1 VRR se už na grafikách Turing objevilo v Linuxových ovladačích vydání 440.26 Beta. Ovšem pozor, jde jen o tuto dílčí technologii, podpora vyšších rozlišení přirozeně přidána nebude. Výstupy těchto grafik jsou stále jen HDMI 2.0b. Nyní Nvidia oznámila, že podpora je již i v ovladači GeForce GameReady 441.08 WHQL pro Windows, jenž vyšel minulý týden (o novinkách, které se v něm objevily, jsme psali v tomto článku). Tehdy Nvidia tuto novinku neavizovala, zřejmě proto, že ještě nebyla dostupná podpora pro adaptivní obnovování na druhé straně – v televizích.
+Aktualizace firmwaru pro televize jsou tu, zatím jen v USA
+To ovšem přichází nyní. LG vydalo aktualizace firmwaru pro své 4K OLED televize řady E9, C9 a B9 letošní generace – měly by to být modely OLED55B9PUA, OLED65BP9PUA, OLED55C9PUA, OLED65C9PUA, OLED77C9PUB a konečně OLED55E9PUA a OLED65C9PUA (jde o modely s úhlopříčkami 55, 65 a 77 palců). Po nainstalování firmwaru 04.70.12 (C9 a E9) nebo 04.70.04 (B9) je u těchto televizí možné HDMI 2.1 VRR zapnout. Ovšem je tu jeden háček – zatím LG tyto firmwary distribuuje jen pro Severní Ameriku. U nás si tedy budeme ještě chvíli muset počkat. Údajně by tyto aktualizace pro další regiony měly přijít během letoška.
+
+
+ 
+
+V ovládacím panelu grafik GeForce je pak možné zapnout G-Sync, máte-li takovou (a aktualizovanou) televizi připojenou k jejich výstupu HDMI a karta má GPU generace Turing. Podle Nvidie by adaptivní obnovování mělo fungovat i na jiných televizích, které umí HDMI 2.1 VRR – firma přesněji řečeno uvádí něco ve smyslu, že máte zkusit podporu zapnout a uvidíte. Ovšem oficiálně garantuje jenom fungování s modely, které od ní mají certifikaci a značku G-Sync Compatible (což je asi zatím jen ono LG). V praxi by ale nejspíš měly i takové televize či monitory „bez štemplu“ fungovat normálně, podobně jako na kartách GeForce teď normálně fungují monitory s FreeSync, i když oficiálně se Nvidia snaží přesvědčovat, abyste kupovali monitory se značkou G-Sync Compatible.
+
+
+Podpora G-Sync Compatible na OLED televizorech od LG
+
+Až do 120 Hz v 2560×1440, ve 4K je rozsah frekvencí omezený
+Tyto modely LG mají rozlišení 4K a 120Hz panely, ale pro hraní na vysokých frekvencích se bohužel projevuje omezení toho, že grafiky Turing stále mají jen výstupy HDMI 2.0, které při rozlišení 4K zvládnou toliko 60 Hz (na GPU s podporou HDMI 2.1 zatím pořád jenom čekáme). U těchto televizí tedy budou dostupné jen omezené schopnosti výstupu s adaptivním obnovováním. V rozlišení 4K bude dostupné adaptivní obnovování jen v rozsahu 40–60 Hz, při poklesu frekvence níž je zřejmě vynuceno konstantních 40 Hz s tearingem či cukáním pohybu podle toho, jestli je aktivní V-Sync. Tento druh omezeného adaptivního obnovování Nvidia dříve u levných monitorů s FreeSync kritizovala či odmítala, ale zřejmě ho nyní vzala na milost (což je správně, omezený rozsah je pořád lepší než fixních 60 Hz).
+
+
+2560×1440 @ 120Hz for a 40-120Hz Variable Refresh Rate range
+
+
+3840×2160 @ 60Hz for a 40-60Hz Variable Refresh Rate range
+
+
+Vedle toho můžete ale zvolit snížené rozlišení 2560 × 1440 bodů, kdy již HDMI 2.0 umožní maximální frekvenci 120 Hz a obnovování v rozsahu 40–120 Hz, kdy by snad již měla fungovat kompenzace pomocí opakovaných snímků, takže by adaptivní obnovování mělo být úplné. Zde bude tedy kompromis s ostrostí a kvalitou, ale výměnou za to dostanete celkovou plynulost. Plných 120 Hz při rozlišení 4K bude možných až s nějakou novou generací GPU, která přinese výstupy HDMI 2.1, takže tady není moc co vyčítat, protože tuto technologii zatím nemají žádná GPU ani od konkurence – ať už samostatná nebo integrovaná.
+Galerie: Technologie HDMI 2.1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+VŠECHNY FOTOGRAFIE
+
+
+SOUVISEJÍCÍ ČLÁNKY
+
+
+
+
+
+
+
+
+",cs,"
+
+
+
+
+
+
+
+
+
+
+
+Nvidia introduces adaptive restoration on LG TVs with HDMI VRR / G-Sync, support is here
+LG's first TVs have received support for the HDMI Variable Refresh Rate / G-Sync Compatible adaptive refresh and the latest drivers have the technology.
+06 Nov 2019, 18:20 by Jan Olsan
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ALL PHOTOS
+
+Just a few weeks ago, information appeared that Nvidia was going to support adaptive ""G-Sync Compatible"" renewal on TV, the first to be LG's OLEDs. And support should be based on standardized HDMI 2.1 Variable Refresh Rate technology. This new release was expected to release drivers and firmware to make it work. And these have now come out, so the adaptive HDMI refresh on TVs and GeForce graphics is finally here and we have the details.
+As we wrote two weeks ago, HDMI 2.1 VRR has already appeared on Turing graphics in the Linux 440.26 Beta drivers. But beware, this is only a sub technology, naturally support for higher resolutions will not be added. The output of these graphics is still only HDMI 2.0b. Now Nvidia announced that support is already in the GeForce GameReady 441.08 WHQL driver for Windows, which was released last week (we wrote about this news in this article). At that time, Nvidia did not notice this news, probably because there was not yet available support for adaptive restoration on the other side - on TV.
+Firmware updates for TV are here, so far only in the US
+But this is coming now. LG released this year's E9, C9 and B9 Series 4K OLED Firmware Updates - this should be the OLED55B9PUA, OLED65BP9PUA, OLED55C9PUA, OLED65C9PUA, OLED77C9PUB, and finally OLED55E9PUA and OLED65C9PUA models (65-inch and 55-inch) . After installing the firmware 04.70.12 (C9 and E9) or 04.70.04 (B9), the HDMI 2.1 VRR can be turned on for these TVs. But there is one catch - so far LG is distributing these firmware only for North America. We will have to wait a little while for us. Reportedly, these updates for other regions should come later this year.
+
+
+
+
+In the GeForce graphics control panel, you can turn on G-Sync if you have such (and updated) TV connected to their HDMI output and the card has a Turing-generation GPU. According to Nvidia, adaptive restoration should work on other TVs that can HDMI 2.1 VRR - the company says something that you should turn on support and see. But officially guarantees only functioning with models that are certified and G-Sync Compatible (which is probably just the LG). In practice, however, such “no-stroke” TVs or monitors should work normally, just as monitors with FreeSync now work normally on GeForce cards, although Nvidia officially tries to persuade you to buy G-Sync Compatible monitors.
+
+
+G-Sync Compatible support on LG OLED TVs
+
+Up to 120 Hz at 2560 × 1440, at 4K, the frequency range is limited
+These LG models have 4K resolution and 120Hz panels, but for high frequency gaming, unfortunately, the limitation is that Turing graphics still have only HDMI 2.0 outputs that can handle only 60Hz at 4K resolution (on HDMI 2.1-enabled GPUs yet waiting). Therefore, only limited adaptive output output capabilities will be available on these televisions. In 4K resolution, adaptive refresh will only be available in the 40-60 Hz range, with a frequency drop below which a constant 40 Hz with tearing or jitter movement is likely to be forced, depending on whether V-Sync is active. This kind of limited adaptive restoration Nvidia had previously criticized or refused on cheap FreeSync monitors, but apparently has now taken it to mercy (which is right, the limited range is still better than the fixed 60 Hz).
+
+
+2560 x 1440 @ 120Hz for a 40-120Hz Variable Refresh Rate Range
+
+
+3840x2160 @ 60Hz for a 40-60Hz Variable Refresh Rate Range
+
+
+In addition, you can choose a reduced resolution of 2560 × 1440 pixels, with HDMI 2.0 already allowing a maximum frequency of 120 Hz and refreshing in the 40-120 Hz range, where repetitive frame compensation should work, so adaptive refresh should be complete. So there will be a compromise with sharpness and quality, but in exchange you will get total fluency. Full 120 Hz at 4K resolution will be possible with some new generation of GPUs that will deliver HDMI 2.1 outputs, so there's not much to blame, because no GPUs have this technology yet, either standalone or integrated.
+Gallery: HDMI 2.1 technology
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ALL PHOTOS
+
+
+RELATED ARTICLES
+
+
+
+
+
+
+
+
+"

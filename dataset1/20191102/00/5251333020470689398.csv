@@ -1,0 +1,56 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Google descubre un grave fallo de seguridad en Chrome y libera una actualización urgente
+02 Nov 2019 by Diario Tecnología
+Google ha actualizado Chrome de emergencia luego de descubrir un grave fallo de seguridad que ya está siendo explotado por un grupo de hackers.
+Si las películas de terror no son suficientes para esta semana, tal vez un nuevo fallo de seguridad de Chrome sea el pretexto para enchinarte la piel. Ingenieros de Google descubrieron dos vulnerabilidades en el navegador e instaron a los usuarios a actualizar a la versión más reciente para evitar una posible infección.
+De acuerdo con el blog del navegador, una nueva versión ha sido liberada con carácter de urgente luego de ser descubierta una vulnerabilidad zero-day que está siendo explotada por terceros. Dos ingenieros de Kaspersky detallaron el fallo en el componente de sonido de Chrome, que permite ejecutar código malicioso.
+Los ataques podrían estar vinculados a Corea del Norte
+Kaspersky reveló que los ataques son conocidos como Operation WizardOpium y a pesar de que no han sido asociados a un grupo de hackers en específico, tienen ligeras similitudes con Lazarus, una organización vinculada a Corea del Norte que a finales de 2016 sustrajo decenas de millones de dólares de cajeros automáticos al comprometer servidores de Asia y África.
+La nueva vulnerabilidad de Chrome fue aprovechada en un portal de noticias coreano por medio de código JavaScript que analiza el computador del usuario para saber si puede infectarlo. Después de eso realiza una serie de peticiones al servidor del atacante para descargar el código del exploit.
+Google no ha ofrecido detalles específicos de las dos vulnerabilidades hasta no asegurarse que la mayoría de los usuarios actualicen su navegador para evitar ser infectados. Por el lado de Kaspersky, los investigadores de seguridad han detallado el proceso de infección y los riesgos que conlleva el no actualizar Chrome a la versión más reciente.
+Para no ser víctima de estas vulnerabilidades es necesario actualizar el navegador de manera urgente. Por lo regular esto ocurre de manera automática al comenzar a utilizarlo, o al acceder al menú principal y seleccionar Ayuda > Acerca de Google Chrome.
+
+Artículo original
+
+
+
+",es,"
+
+
+
+
+
+
+
+
+
+
+
+Google discovers a serious security flaw in Chrome and releases an urgent update
+02 Nov 2019 by Diario Tecnología
+Google has updated Chrome emergency after discovering a serious security flaw that is already being exploited by a group of hackers.
+If horror movies aren't enough for this week, maybe a new Chrome security flaw is the pretext to skin your skin. Google engineers discovered two vulnerabilities in the browser and urged users to update to the latest version to avoid a possible infection.
+According to the browser blog, a new version has been released as a matter of urgency after a zero-day vulnerability has been discovered and is being exploited by third parties. Two Kaspersky engineers detailed the failure of the Chrome sound component, which allows malicious code to be executed.
+The attacks could be linked to North Korea
+Kaspersky revealed that the attacks are known as Operation WizardOpium and although they have not been associated with a specific group of hackers, they have slight similarities with Lazarus, an organization linked to North Korea that at the end of 2016 subtracted tens of millions of dollars of ATMs by committing servers in Asia and Africa.
+The new Chrome vulnerability was exploited in a Korean news portal through JavaScript code that analyzes the user's computer to know if it can infect it. After that it makes a series of requests to the attacker's server to download the exploit code.
+Google has not offered specific details of the two vulnerabilities until it is ensured that most users update their browser to avoid being infected. On the Kaspersky side, security researchers have detailed the infection process and the risks of not updating Chrome to the latest version.
+In order not to be a victim of these vulnerabilities it is necessary to update the browser urgently. This usually happens automatically when you start using it, or when you access the main menu and select Help> About Google Chrome.
+
+Original article
+
+
+
+"

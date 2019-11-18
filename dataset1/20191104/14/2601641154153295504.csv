@@ -1,0 +1,118 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Мобильный Office с фотосканером, дата выхода Microsoft Edge на базе Chromium и другие анонсы конференции Ignite 2019
+04 Nov 2019, 14:50 by Евгений Делюкин
+Коротко о новых сервисах и изменениях для пользователей и бизнеса, объявленных на Microsoft Ignite 2019.
+Универсальное мобильное приложение Office с Word, Excel, PowerPoint и Lens
+Microsoft запустила предварительную версию нового приложения Office для мобильных устройств, в котором объединила функции Word, Excel, PowerPoint и Office Lens. По словам представителей компании, теперь пользователям «не придётся загружать по отдельности каждое приложение для продуктивной работы на ходу».
+
+
+
+Кроме работы с пакетом офисных приложений в обновлённом Office можно добавлять заметки, создавать и подписывать PDF-документы, сканировать QR-коды и сканировать документы и таблицы, автоматически перенося информацию с фотографий в Word и Excel.
+С 4 ноября пользователям доступна публичная превью-версия приложения для Android и iOS.
+Запуск предварительной версии Microsoft Edge и анонс даты релиза
+Запуск Chromium-версии Microsoft Edge состоится 15 января 2020 года. Браузер будет доступен на Windows 7, Windows 8, Windows 10, macOS, iOS и Android. Приложения на всех устройствах пользователя получат получат общую синхронизацию паролей, настроек, избранного и истории.
+4 ноября выйдет предрелизная версия браузера Microsoft Edge Release Candidate. Ранее компания представила новый логотип браузера — он полностью отошёл от «наследия» Internet Explorer и выполнен в фирменном стиле Microsoft Fluent Design.
+
+
+
+Обновления Microsoft 365
+
+Возможности ИИ в Office для участников предварительного тестирования («инсайдеров») расширены: теперь Excel поддерживает запросы на естественном языке без необходимости писать формулу, а функция MyAcalytics в Outlook автоматизирует рабочую повестку, информирует коллег об отпуске, помогает в планировании встреч, создаёт итоги встреч и контролирует, чтобы рабочая почта отправлялась в рабочее время, а не в выходные или во время отпуска получателя.
+В корпоративном мессенджере Microsoft Teams появились защищенные приватные каналы, многооконные чаты, интеграция задач с сервисами To Do и Planner, интеграция с сервисом Yammer, а в Outlook появится кнопка чатов Teams для быстрого переключения между переписками.
+На конференции Build 2019 в апреле была анонсирована интерактивная веб-платформа Fluid Framework для совместной работы над материалами и интеграции виртуальных помощников. С 4 ноября пользователям доступна предварительная версия платформы и закрытая превью-версия для разработчиков.
+
+
+
+
+
+Голосовой ассистент Cortana будет интегрирован в Outlook. Функции Play my Emails и Scheduler позволят Cortana зачитывать вслух письма, напоминать о событиях, которые упомянуты в электронной почте, создавать план пользователя на день и проводить рассылки встреч с координацией их участников. Также у Cortana появится мужской голос.
+
+
+
+
+
+В Microsoft 365 запущен новый коммерческий сервис — Project Cortex. Он использует ИИ для организации данных предприятия и автоматической их сортировки по общим темам, таким как «Проекты» и «Клиенты», с карточками и тематическими страницами. По словам представителей Microsoft, Project Cortex «превращает контент в интерактивное хранилище знаний».
+В Microsoft 365 появился сервис Insider Risk Management для обеспечения безопасности внутри организации. Он анонимно анализирует и выявляет нестандартное поведение пользователей и предотвращает риски, например, утечку данных. Сервис находится в закрытом тестировании.
+Интеллектуальная система комплексного поиска Microsoft Search теперь подключена более чем к 100 источникам данных от сервисов Microsoft и партнёров компании, а новый графический API позволит подключать к системе сторонние приложения, необходимые для нужд организации.
+Сервис для управления проектами Microsoft Project получил редизайн, интеграцию с Teams и Office, а также функцию формирования интерактивных отчётов с помощью Power Bi.
+Запущена публичная версия UI Flows — сервиса для автоматизации процессор в Microsoft Flow. Он создает интерфейсных роботов для автоматизации действий, в том числе в приложениях, в которых нет для этого встроенных инструментов.
+В сервисе потоковой передачи видео Microsoft Stream теперь используется машинное обучение для удаления фонового шума в разговорах, что должно улучшить качество записи голоса собеседников.
+
+Новые сервисы Azure
+
+Запущена предварительная версия сервиса Azure Arc, который позволяет использовать инструменты, средства управления и сервисы Azure в любой инфраструктуре, включая облака Amazon, Google и других производителей.
+Анонсирован Azure Blockchain Tockens — сервис для токенизации физических и цифровых активов, их управления и использования на блокчейн-платформах. Среди примеров использования сервиса Microsoft называет цифровизацию цепочки поставок, создание программ лояльности и документооборот на блокчейне.
+
+
+
+",ru,"
+
+
+
+
+
+
+
+
+
+
+
+Mobile Office with a photo scanner, release date of Microsoft Edge based on Chromium and other announcements of the Ignite 2019 conference
+04 Nov 2019, 14:50 by Evgeny Delyukin
+Briefly about the new services and changes for users and businesses announced at Microsoft Ignite 2019.
+Office Universal Mobile Application with Word, Excel, PowerPoint and Lens
+Microsoft has launched a preview of the new Office mobile app, which combines Word, Excel, PowerPoint, and Office Lens. According to company representatives, now users ""will not have to download separately each application for productive work on the go.""
+
+
+
+In addition to working with the office application suite in the updated Office, you can add notes, create and sign PDF documents, scan QR codes and scan documents and tables, automatically transferring information from photos to Word and Excel.
+Since November 4, users have access to a public preview version of the application for Android and iOS.
+Launching Microsoft Edge Preview and Release Date Announcement
+The launch of the Chromium version of Microsoft Edge will take place on January 15, 2020. The browser will be available on Windows 7, Windows 8, Windows 10, macOS, iOS and Android. Applications on all user devices will receive a general synchronization of passwords, settings, favorites and history.
+On November 4, a pre-release version of the Microsoft Edge Release Candidate browser will be released. Previously, the company introduced a new browser logo - it completely departed from the ""legacy"" of Internet Explorer and is made in the corporate identity of Microsoft Fluent Design.
+
+
+
+Microsoft 365 Updates
+
+The capabilities of AI in Office for participants in preliminary testing (“insiders”) are expanded: Excel now supports queries in natural language without having to write a formula, and MyAcalytics in Outlook automates the work agenda, informs colleagues about vacations, helps in scheduling meetings, creates meeting results and controls that work mail is sent during business hours, and not on weekends or during vacation time of the recipient.
+In the Microsoft Teams corporate messenger, there are secure private channels, multi-window chats, task integration with To Do and Planner services, integration with Yammer service, and in Teams chat button will appear in Outlook for quick switching between correspondence.
+At the Build 2019 conference in April, the Fluid Framework’s interactive web platform was announced to collaborate on materials and integrate virtual assistants. Since November 4, users are available a preliminary version of the platform and a closed preview version for developers.
+
+
+
+
+
+Cortana Voice Assistant will be integrated into Outlook. The Play my Emails and Scheduler functions allow Cortana to read aloud letters, remind you of the events that are mentioned in the email, create a user plan for the day and send out meetings with coordination of their participants. Cortana will also have a male voice.
+
+
+
+
+
+Microsoft 365 launched a new commercial service - Project Cortex. It uses AI to organize enterprise data and automatically sort them by common topics, such as Projects and Clients, with cards and thematic pages. According to Microsoft, Project Cortex ""turns content into an online repository of knowledge.""
+Microsoft 365 introduced Insider Risk Management to provide security within the organization. It anonymously analyzes and identifies non-standard user behavior and prevents risks, such as data leakage. The service is in closed testing.
+The Microsoft Search integrated search system is now connected to more than 100 data sources from Microsoft services and company partners, and the new graphical API will allow you to connect third-party applications to the system that are necessary for the needs of the organization.
+Service for project management Microsoft Project received a redesign, integration with Teams and Office, as well as the function of generating interactive reports using Power Bi.
+A public version of UI Flows, a service for automating a processor in Microsoft Flow, has been launched. He creates interface robots to automate actions, including in applications that do not have built-in tools for this.
+The Microsoft Stream video streaming service now uses machine learning to remove background noise in conversations, which should improve the quality of voice recording of interlocutors.
+
+New Azure Services
+
+A preliminary version of the Azure Arc service has been launched, which allows you to use Azure tools, controls and services in any infrastructure, including the Amazon, Google and other cloud providers.
+Announced Azure Blockchain Tockens - a service for tokenizing physical and digital assets, their management and use on blockchain platforms. Among the examples of using the service, Microsoft names supply chain digitalization, the creation of loyalty programs, and document management on the blockchain.
+
+
+
+"

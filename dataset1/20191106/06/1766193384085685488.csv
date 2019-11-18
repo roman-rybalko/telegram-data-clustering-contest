@@ -1,0 +1,122 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Smart: Pi meldet Bewegungen per Telegram-Bot
+Ein wirklich smarter Bewegungsmelder im Eigenbau: Foto- und Video-Funktionen, Beleuchtungssteuerung, Internetanbindung und Steuerung per Telegram-App inklusive.
+06 Nov 2019, 06:52 by Michael Jentsch
+Übliche Bewegungsmelder, wie man sie im Baumarkt kaufen kann, sind nicht besonders smart; sie können zwar Bewegungen zuverlässig erkennen und die angeschlossenen Lampen ein- und nach einstellbarer Zeit wieder ausschalten, mehr aber auch nicht. Spätestens wenn man Philips-Hue-Leuchten verwendet, sind sie überfordert: Die Hue-Lampen müssen permanent mit Strom versorgt werden, um sie über die App oder beispielsweise Alexa steuern zu können. In dem Moment, in dem der Bewegungsmelder die Lampe elektrisch vom Netz trennt, ist sie nicht mehr mit der Bridge verbunden und kann per App nicht mehr geschaltet werden.
+Eine einfache fertige Lösung ist beispielsweise der Philips-Außenbewegungsmelder. Er kann über die App konfiguriert werden und die Leuchten steuern. Die Lampen bleiben dauerhaft mit der Bridge verbunden und können jederzeit per App gesteuert werden.
+Eine preiswertere Eigenbau-Lösung auf Basis eines Raspberry Pi Zero kann durchaus noch weitere Aufgaben übernehmen. So kann man dank des Mini-CSI-Ports ganz einfach eine Kamera anschließen und Bilder oder Videos bei Bewegung machen. Dank einer Verbindung mit dem Internet sind auch Benachrichtigungen auf dem Handy oder PC bei Bewegungen kein Problem.
+Immer mehr Wissen. Das digitale Abo für IT und Technik.
+
+Zugriff auf alle Inhalte von heise+
+exklusive Tests, Ratgeber & Hintergründe: unabhängig, kritisch fundiert
+c't, iX, Technology Review, Mac & i, Make, c't Fotografie direkt im Browser lesen
+einmal anmelden – auf allen Geräten lesen - jederzeit kündbar
+erster Monat gratis, danach monatlich 9,95 €
+Wöchentlicher Newsletter mit persönlichen Leseempfehlungen des Chefredakteurs
+
+heise+ bereits abonniert? Anmelden und lesen Jetzt anmelden und Artikel sofort lesen  Mehr Informationen zu heise+
+
+
+heise+ Immer mehr Wissen. Das digitale Abo für IT und Technik.
+
+
+
+
+Windows Festplatten mit Bordmitteln verschlüsseln
+Verschlüsselte Festplatten schützen die eigenen Daten vor fremden Blicken. Auf Windows können Sie bequem mit dem Bordmittel Bitlocker arbeiten.
+
+
+
+Tablet vs. Notebook Das iPad mit iPadOS als Notebook-Alternative
+Mit iPadOS erweitert Apple den Funktionsumfang seiner Tablets enorm. Wir zeigen, ob das iPad damit zur echten Notebook-Alternative wird.
+
+
+
+Bildbearbeitung ohne Photoshop Fotos in Gimp komponieren und optimieren
+Fotomontagen gelingen ohne Photoshop: Das freie Gimp 2.10 bietet dafür ebenso mächtige Werkzeuge. Mithilfe der Filtersammlung G’MIC optimieren Sie Fotos weiter.
+
+
+
+Single Board Computer Was Übertakten beim Raspberry Pi 4 bringt
+Der Raspi 4 wird schon ab Werk schnell so heiß, dass er seinen Takt senken muss. Wir zeigen, ob sich Übertakten dennoch für Sie lohnen kann.
+
+
+
+Musikmaschine iPad Was Apples Tablet in der Musikproduktion leistet
+iPads können professionellere Ansprüche bei der Musikproduktion erfüllen. Wir zeigen sinnvolles Zubehör sowie Apps und prüfen, ob ein iPad als Mac-Ersatz taugt.
+
+
+
+",de,"
+
+
+
+
+
+
+
+
+
+
+
+Smart: Pi reports movements via telegram bot
+A really smart self-made motion detector: photo and video functions, lighting control, internet connection and control via telegram app included.
+06 Nov 2019, 06:52 by Michael Jentsch
+Usual motion detectors, as you can buy in the hardware store, are not very smart; Although they can reliably detect movements and switch off the connected lamps once and again after an adjustable time, but nothing more. At least when you use Philips Hue lights, they are overwhelmed: The Hue lamps must be permanently powered to be able to control them via the app or Alexa for example. The moment the motion detector electrically disconnects the lamp from the mains, it is no longer connected to the bridge and can not be switched by the app.
+A simple finished solution, for example, the Philips outdoor motion detector. It can be configured via the app and control the lights. The lamps remain permanently connected to the bridge and can be controlled via the app at any time.
+A cheaper self-built solution based on a Raspberry Pi Zero can certainly take on more tasks. So you can easily connect a camera thanks to the mini CSI port and make pictures or videos on the move. Thanks to a connection to the internet, notifications on the mobile or PC during movement are no problem.
+More and more knowledge. The digital subscription for IT and technology.
+
+Access to all contents of heise +
+exclusive tests, guides & backgrounds: independent, critically sound
+c't, iX, Technology Review, mac & i, make, c't read photography directly in the browser
+register once - read on all devices - cancel anytime
+first month free, then monthly € 9.95
+Weekly newsletter with personal reading recommendations from the editor-in-chief
+
+heise + already subscribed? Log in and read Register now and read the article immediately More information about heise +
+
+
+heise + More and more knowledge. The digital subscription for IT and technology.
+
+
+
+
+Encrypt Windows hard disks with on-board resources
+Encrypted hard disks protect your own data from strangers eyes. On Windows, you can easily work with the on-board Bitlocker.
+
+
+
+Tablet vs. Notebook The iPad with iPadOS as a notebook alternative
+Apple expands the functionality of its tablets enormously with iPadOS. We show if the iPad will be a real alternative notebook.
+
+
+
+Image editing without Photoshop Composing and optimizing photos in Gimp
+Photo montages succeed without Photoshop: The free Gimp 2.10 offers just as powerful tools. With the G'MIC filter collection you can optimize your photos.
+
+
+
+Single Board Computer What overclocking the Raspberry Pi 4 brings
+The Raspi 4 gets so hot right from the factory that it has to lower its clock. We show if overclocking can be worthwhile for you.
+
+
+
+Music Machine iPad What Apple's tablet does in music production
+iPads can meet more professional demands in music production. We show useful accessories and apps and check whether an iPad as a Mac replacement is good.
+
+
+
+"

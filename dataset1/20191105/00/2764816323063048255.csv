@@ -1,0 +1,176 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Samsung kapituloval. Končí s vývojem vlastních mobilních procesorů
+05 Nov 2019 by Lukáš Václavík
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+VŠECHNY FOTOGRAFIE
+
+Co byl před měsícem ještě pouhý drb, se teď konečně potvrdilo. Samsung ohlásil texaským úřadům, že z továrny v Austinu do konce roku propustí 300 zaměstnanců. Magazínu Android Authority pak upřesnil, že čistka se týká divize, jež se starala o návrh a vývoj vlastních procesorových jader, která Korejci využívali ve svých nejlepších mobilech. Čipy Exynos Mx zastávaly roli výkonných jader, která Samsung doplnil o úsporná referenční jádra ARMu. Od stejné firmy odebírá také grafické obvody Mali.
+Mezi prvními spekulacemi a potvrzením zprávy Samsung paradoxně představil nový špičkový čipset Exynos 990, který obsahuje vlastní jádra Exynos M5 slibující 20% nárůst výkonu oproti čipům použitým v evropských edicích telefonů Galaxy S10 a Note10. Samsung tak evidentně chtěl zužitkovat již vyvinutý design. Exynos M6 již ale nepřijde a je otázkou, v jaké vývojové fázi se nacházel.
+
+
+Roadmapa výkonných jader ARM určených i pro notebooky a PC
+
+V čipsetech Samsungu tak od příštího roku budeme potkávat jen referenční procesory ARMu. Jenže které? Momentálně jsou hotové Cortexy-A77, ale od nich již Samsung pravděpodobně odvíjí své Exynosy M5, naznačuje to alespoň obdobný mezigenerační růst IPC o 20 %. Využít podobná jádra tedy zatím nedává smysl a v Koreji nejspíš budou upírat zrak k novým čipům, které zatím známe jen pod kódovým označením Hercules. V roadmapě ARMu se s nimi počítá na rok 2020 (představení je obvykle v létě) s tím, že budou připraveny pro 7nm i 5nm výrobu. Z hrubých náznaků zatím víme jen to, že zase přinese dvojciferný nárůst výkonu.
+Kromě toho panují i další nejasnosti. Max Weinbach, redaktor XDA Developers, objevil v kódu androidí nadstavby One UI 2.0 beta zmínky o Exynosu 9830 a Snapdragonu 865, což jsou údajné čipsety, které bude používat řada Samsung Galaxy S11. Sebevědomě pak tvrdí, že nedávno představený Exynos 990 není vlajkovým SoC pro rok 2020.
+
+
+
+O tom mám pochybnosti. Jednak má špičkové parametry, které jasně navazují na loňský Exynos 9820. A jednak jej Samsung představil na podzim přesně v době, kdy obvykle ukazuje čipy později použité právě v eskové řadě Galaxy. Jediné, čím se Exynos 990 vymyká, je trojciferné číslování. (No vlastně ještě nemá integrovaný modem, ale to může být důsledek optimalizace 7nm výroby. Menší čipy, méně zmetků.)
+Pokud tedy Exynos 990 a údajný Exynos 9830 není jeden a tentýž čip, co by Exynos 9830 mohl přinést navíc, aby stihl únorovou premiéru Galaxy S11? Nabízí se samozřejmě nová grafika, kterou si Samsung licencuje od AMD. Zdá se mi však velmi nepravděpodobné, že by její návrh obě firmy připravily za pouhých několik měsíců. Holt se budeme muset nechat překvapit.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+VŠECHNY FOTOGRAFIE
+
+
+SOUVISEJÍCÍ ČLÁNKY
+
+
+
+
+
+
+
+
+",cs,"
+
+
+
+
+
+
+
+
+
+
+
+Samsung surrendered. It ends with the development of its own mobile processors
+05 Nov 2019 by Lukas Vaclavik
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ALL PHOTOS
+
+What was just a gossip a month ago was finally confirmed. Samsung has announced to the Texas authorities that 300 employees will be fired from the Austin plant by the end of the year. He told the Android Authority that the purge was a division that was in charge of designing and developing their own processor cores, which the Koreans used in their best handsets. The Exynos Mx chips were powerful cores, complemented by Samsung's cost-effective ARM reference cores. It also draws graphic circuits from Mali from the same company.
+Paradoxically, between the first speculation and confirmation of the report, Samsung introduced the new high-end Exynos 990 chipset, which includes its own Exynos M5 cores promising a 20% performance boost over the chips used in the European editions of the Galaxy S10 and Note10. Samsung obviously wanted to take advantage of the design already developed. But the Exynos M6 will no longer come and it is a question of what stage it was in.
+
+
+Roadmap of powerful ARM cores for laptops and PCs
+
+As of next year, we will meet only ARM reference processors in Samsung chipsets. But which? The Cortexy-A77s are currently ready, but Samsung is probably already taking its Exynos M5 from them, suggesting at least a similar inter-generational IPC growth of 20%. Using similar kernels so far makes no sense and in Korea will probably be staring at the new chips, which we know only under the code name Hercules. In the ARM roadmap, they are foreseen for 2020 (the show is usually in summer) and will be ready for both 7nm and 5nm production. From the rough hints, we only know that it will bring a double-digit increase in performance.
+In addition, there are other uncertainties. Max Weinbach, editor of XDA Developers, has found references to Exynos 9830 and Snapdragon 865 in the android code for the One UI 2.0 beta, the alleged chipsets that will be used by the Samsung Galaxy S11. He then confidently claims that the recently introduced Exynos 990 is not the flagship SoC for 2020.
+
+
+
+I have doubts about that. Firstly, it has top parameters that clearly follow the last year's Exynos 9820. And secondly, Samsung introduced it in the fall exactly when it usually shows the chips later used just in the esca line Galaxy. The only thing the Exynos 990 stands out from is the three-digit numbering. (Well, he doesn't have an integrated modem yet, but that may be due to 7nm production optimization. Smaller chips, fewer rejects.)
+So if the Exynos 990 and the alleged Exynos 9830 are not the same chip, what could the Exynos 9830 bring in addition to the February premiere of the Galaxy S11? Of course there is a new graphics, which Samsung licensed from AMD. However, it seems to me very unlikely that both companies would prepare her proposal in just a few months. Holt will have to be surprised.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ALL PHOTOS
+
+
+RELATED ARTICLES
+
+
+
+
+
+
+
+
+"

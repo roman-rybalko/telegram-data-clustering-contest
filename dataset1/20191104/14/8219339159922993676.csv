@@ -1,0 +1,246 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Adobe MAX 2019: Photoshop on iPad arrives, Adobe Aero debuts on iOS, more updates to Creative Cloud apps
+04 Nov 2019, 14:00 by Michael Steeber
+Adobe is marking the start of its annual creativity conference today with significant updates to many of its desktop and mobile Creative Cloud apps. Headlining Adobe MAX 2019 is the release of Photoshop on iPad alongside the launch of Adobe Aero, a preview of Illustrator on iPad, and enhancements across the board to video apps.
+Adobe says it has been listening to customer feedback, and focused on making its Creative Cloud apps faster, more powerful, and more reliable. Performance improvements should be noticeable in the 2020 releases of many popular tools. 
+AR, 3D, and machine learning continue to be major themes at this year’s MAX conference. Many new Creative Cloud features are powered by Adobe Sensei, Adobe’s AI platform. Aero, the AR authoring tool, was announced in June 2018 and has been shaped by artists and beta testers over the past year. 
+Below, we’ve highlighted the top features coming to Creative Cloud today and in the future. Adobe has provided in-depth information for each update in separate linked blog posts. Creative Cloud plans begin at $9.99/mo. for a Photography Plan and up to $52.99/mo. for an All Apps subscription.
+Stay tuned for more coverage from Adobe MAX this week, and check out everything else Adobe announced today:
+
+
+Adobe previews Illustrator on iPad, shipping in 2020
+
+
+Hands-on with Aero, Adobe’s new AR creation app
+
+
+
+
+
+
+
+Photoshop CC 
+and
+ Photoshop on iPad
+
+
+Photoshop on iPad has easily been the most talked about new creative tool since it was announced last year at Adobe MAX. Over the past year, artists and photographers have been waiting — some more patiently than others — to start using the app themselves. Today, Adobe is finally offering version 1.0. 
+It’s worth noting up front that Photoshop on iPad as it exists today is very much a foundation of what’s to come, not a finished product. Adobe says it has started by building Photoshop’s top workflows, like compositing, masking, painting, blend modes, and retouching. More will be added over time. In other words: give it a chance. If Photoshop on iPad isn’t for you today, revisit it every few months to see what’s been added.
+
+
+
+One of the key features in Photoshop on iPad is PSD support for cloud documents, the file management system powered by Creative Cloud that first launched in Adobe XD. Photoshop files can be saved between the desktop and iPad, as well as in tools like Adobe Fresco (which is coming to Windows) and Adobe Aero, also launching today for iPad and iPhone. There is no quality discrepancy or degradation between apps. File export is currently supported to PNG, JPEG, PSD, and TIFF formats.
+If you’re an active Photoshop subscriber on the desktop, you already have access to Photoshop on iPad. You can download it in the App Store today. New users will need a subscription to Creative Cloud. Photoshop on iPad requires iPadOS 13.1 or later and any model of iPad Pro, iPad Air 2 or later, iPad mini 4 or later, or iPad 5th gen or later. There is full compatibility with both the 1st and 2nd generation Apple Pencil.
+
+
+
+Adobe today is also previewing a new iOS app called Photoshop Camera. The AI-powered tool will be available sometime in 2020, although Adobe isn’t saying when yet. 
+Photoshop Camera is designed to be a fun tool to capture and enhance photos with Photoshop effects and filters. Machine learning recognizes the subject in your photo and can automatically apply non-destructive edits. The app will also include a selection of Instagram and Snapchat-inspired lenses made by “well-known artists and influencers,” like Billie Eilish. Unlike Photoshop on iPad, which is designed with pro users in mind, Photoshop Camera is a consumer app for quick and shareable edits.
+
+
+
+
+New desktop Photoshop features.
+
+In addition to Photoshop updates on iOS, Adobe is improving the desktop version of Photoshop. Support for cloud documents has been added, eliminating the need to import and export PSDs across devices. Improvements to Sensei technology mean more powerful Content-Aware Fill and the debut of the Object Selection Tool, first previewed by Adobe in October. Smart Objects can now be converted back into component layers, and lens blur settings can take advantage of the depth map captured by cameras like the latest iPhones.
+Many more new features are discussed in depth on Adobe’s blog post.
+
+
+
+
+
+Aero
+
+
+We got our first look at Adobe’s Project Aero in June 2018 at The Festival of the Impossible, an augmented reality art exhibition that explored the future of creative storytelling. Using Aero, artists transformed static works into interactive exhibitions powered by iPhones and iPads.
+Over the past 16 months, Adobe has continued to work with artists, developers, and beta testers to refine Aero and build a tool for authoring augmented reality experiences. The company says it will be listening to feedback from the community following Aero’s initial release to further shape the tool’s features and purpose. Adobe Aero is available to download today on iOS and iPadOS.
+For more information on Aero, check out our hands-on first look here.
+
+
+
+Illustrator CC and Illustrator on iPad
+For its 2020 release, Illustrator on the desktop has seen major performance and stability improvements. Drop shadows and gaussian blurs should render faster. Adobe says large files with multiple artboards may open and save more than 2x faster than before. Speaking of saving, it now happens in the background.
+Spell check has been added to the type tool — finally. An updated Path Simplification tool removes unnecessary anchor points.
+Desktop updates are welcome, but the most noteworthy news about Illustrator is that it’s coming to the iPad next year. Like at the announcement of Photoshop on iPad, development is still in early stages. Adobe says it is reimagining the experience from the ground up for a touch interface. An exclusive private beta has begun, and signups are open for a chance at early access.
+You can learn more about what’s in store for Illustrator on iPad in our separate post here.
+
+
+
+
+
+Lightroom CC
+
+
+Lightroom CC, the Creative Cloud replacement to Adobe’s classic photo editing app, debuted two years ago at Adobe MAX with a pared-down set of features that kept many users from upgrading. Since then, Adobe has gradually reintroduced missing functionality and added new tools across platforms.
+Lightroom CC on the desktop is now gaining guided tutorials and interactive edits, both of which first premiered on iOS and Android. The features are designed to help you learn how to edit photos and be inspired by other professional photographers. 
+Advanced export is also coming to Lightroom CC on the desktop, and later to iOS. You’ll be able to export images as TIFF files, adjust output resolution, compression, metadata, file naming, output sharpening, and color space. For those with capable graphics cards, GPU accelerated editing has been added for a more responsive experience. That speed should come in handy when using Fill Edges, a new tool in the Panorama Merge dialog that leverages Content-Aware Fill technology.
+On iOS, batch editing of images is now possible. The feature first came to the desktop in 2018. Edits can be copied from a single photo and pasted onto a selected series of images.
+
+
+
+Premiere Pro and Premiere Rush
+At last year’s Adobe MAX conference, Adobe previewed a tool coming to Premiere Pro now known as Auto Reframe. The feature was again shown off this past September at IBC 2019 in Amsterdam. Starting today, you’ll be able to try out Auto Reframe yourself. 
+Auto Reframe makes the tedious job of reframing content for multiple aspect ratios and social platforms an automated process. Videos can be intelligently reformatted for square, vertical, 16×9, or any custom aspect ratio without clipping the subject out of the shot. The tool uses AI to identify the focus of each scene. 
+Premiere Pro’s graphics tools, like shapes, text, and Motion Graphics templates have been updated with more efficient workflows. Time Remapping is smoother with speed changes on a clip up to 20,000 percent supported. Audio gain range has been expanded to +15dB.
+Premiere Rush, Adobe’s cross-platform video editor tailored for creating short-form content, has partnered with social media platform TikTok. The app is now the first third-party tool that can publish directly to TikTok.
+
+
+
+More Creative Cloud Apps
+Adobe XD: Launching in beta, designers can now work together in XD in real time. With Coediting enabled, teammates can be invited to edit a document with you. A new document history view lets you see previous revisions of a file and copy elements into your current document or save an older version. Document history is available for 30 days.
+Share mode is a new interface in XD that combines sharing capabilities into one place for managing shared links, sharing presets, and sharing permissions. Components have been made more powerful with new component states that support multiple variations of a single interface.
+After Effects: Adobe focused on performance for this update. You can now expect smooth, fluid playback of cached video previews. Many most-used features like Content-Aware Fill have been sped up. A new version of Cinema 4D, bundled with After Effects, can be opened as a standalone application. Caps and bevel tools have been added.
+
+
+
+Character Animator: Scene cameras allow you to set up shots within your scenes, like wide, close-up, and zoom, creating camera moves between them. Keyframing is now supported. Scenes can be triggered with audio elements.
+Dimension: Multiple directional lights can be added and customized in a 3D scene. The Render Preview experience has been rebuilt with real-time rendering feedback. Dimension projects can be sent directly to Adobe Aero.
+Substance: Adobe acquired Allegorithmic, developers of Substance, earlier in 2019. The 3D texturing software will soon have a brush engine that more closely matches Photoshop’s.
+
+
+
+Audition: Improved routing for multichannel effects has been added. The behavior of audio clip stacking has been modified based on user feedback, and is now a session-level preference.
+Animate: A redesigned UI is easier to use and includes a customizable toolbar. You can now export animations in any video format. A new vector “Fluid Brush” is arriving alongside its debut in Adobe Fresco. 
+InDesign: Support for SVG file formats has been added. You can now use variable fonts. Launch time has been reduced by up to 50%.
+Unless noted, these Creative Cloud updates begin rolling out today and will be available in the App Store on iOS or the newly-redesigned Creative Cloud desktop app on macOS. 
+FTC: We use income earning auto affiliate links. More.
+
+
+
+
+
+",en,"
+
+
+
+
+
+
+
+
+
+
+
+Adobe MAX 2019: Photoshop on iPad arrives, Adobe Aero debuts on iOS, more updates to Creative Cloud apps
+04 Nov 2019, 14:00 by Michael Steeber
+Adobe is marking the start of its annual creativity conference today with significant updates to many of its desktop and mobile Creative Cloud apps. Headlining Adobe MAX 2019 is the release of Photoshop on iPad alongside the launch of Adobe Aero, a preview of Illustrator on iPad, and enhancements across the board to video apps.
+Adobe says it has been listening to customer feedback, and focused on making its Creative Cloud apps faster, more powerful, and more reliable. Performance improvements should be noticeable in the 2020 releases of many popular tools. 
+AR, 3D, and machine learning continue to be major themes at this year’s MAX conference. Many new Creative Cloud features are powered by Adobe Sensei, Adobe’s AI platform. Aero, the AR authoring tool, was announced in June 2018 and has been shaped by artists and beta testers over the past year. 
+Below, we’ve highlighted the top features coming to Creative Cloud today and in the future. Adobe has provided in-depth information for each update in separate linked blog posts. Creative Cloud plans begin at $9.99/mo. for a Photography Plan and up to $52.99/mo. for an All Apps subscription.
+Stay tuned for more coverage from Adobe MAX this week, and check out everything else Adobe announced today:
+
+
+Adobe previews Illustrator on iPad, shipping in 2020
+
+
+Hands-on with Aero, Adobe’s new AR creation app
+
+
+
+
+
+
+
+Photoshop CC 
+and
+ Photoshop on iPad
+
+
+Photoshop on iPad has easily been the most talked about new creative tool since it was announced last year at Adobe MAX. Over the past year, artists and photographers have been waiting — some more patiently than others — to start using the app themselves. Today, Adobe is finally offering version 1.0. 
+It’s worth noting up front that Photoshop on iPad as it exists today is very much a foundation of what’s to come, not a finished product. Adobe says it has started by building Photoshop’s top workflows, like compositing, masking, painting, blend modes, and retouching. More will be added over time. In other words: give it a chance. If Photoshop on iPad isn’t for you today, revisit it every few months to see what’s been added.
+
+
+
+One of the key features in Photoshop on iPad is PSD support for cloud documents, the file management system powered by Creative Cloud that first launched in Adobe XD. Photoshop files can be saved between the desktop and iPad, as well as in tools like Adobe Fresco (which is coming to Windows) and Adobe Aero, also launching today for iPad and iPhone. There is no quality discrepancy or degradation between apps. File export is currently supported to PNG, JPEG, PSD, and TIFF formats.
+If you’re an active Photoshop subscriber on the desktop, you already have access to Photoshop on iPad. You can download it in the App Store today. New users will need a subscription to Creative Cloud. Photoshop on iPad requires iPadOS 13.1 or later and any model of iPad Pro, iPad Air 2 or later, iPad mini 4 or later, or iPad 5th gen or later. There is full compatibility with both the 1st and 2nd generation Apple Pencil.
+
+
+
+Adobe today is also previewing a new iOS app called Photoshop Camera. The AI-powered tool will be available sometime in 2020, although Adobe isn’t saying when yet. 
+Photoshop Camera is designed to be a fun tool to capture and enhance photos with Photoshop effects and filters. Machine learning recognizes the subject in your photo and can automatically apply non-destructive edits. The app will also include a selection of Instagram and Snapchat-inspired lenses made by “well-known artists and influencers,” like Billie Eilish. Unlike Photoshop on iPad, which is designed with pro users in mind, Photoshop Camera is a consumer app for quick and shareable edits.
+
+
+
+
+New desktop Photoshop features.
+
+In addition to Photoshop updates on iOS, Adobe is improving the desktop version of Photoshop. Support for cloud documents has been added, eliminating the need to import and export PSDs across devices. Improvements to Sensei technology mean more powerful Content-Aware Fill and the debut of the Object Selection Tool, first previewed by Adobe in October. Smart Objects can now be converted back into component layers, and lens blur settings can take advantage of the depth map captured by cameras like the latest iPhones.
+Many more new features are discussed in depth on Adobe’s blog post.
+
+
+
+
+
+Aero
+
+
+We got our first look at Adobe’s Project Aero in June 2018 at The Festival of the Impossible, an augmented reality art exhibition that explored the future of creative storytelling. Using Aero, artists transformed static works into interactive exhibitions powered by iPhones and iPads.
+Over the past 16 months, Adobe has continued to work with artists, developers, and beta testers to refine Aero and build a tool for authoring augmented reality experiences. The company says it will be listening to feedback from the community following Aero’s initial release to further shape the tool’s features and purpose. Adobe Aero is available to download today on iOS and iPadOS.
+For more information on Aero, check out our hands-on first look here.
+
+
+
+Illustrator CC and Illustrator on iPad
+For its 2020 release, Illustrator on the desktop has seen major performance and stability improvements. Drop shadows and gaussian blurs should render faster. Adobe says large files with multiple artboards may open and save more than 2x faster than before. Speaking of saving, it now happens in the background.
+Spell check has been added to the type tool — finally. An updated Path Simplification tool removes unnecessary anchor points.
+Desktop updates are welcome, but the most noteworthy news about Illustrator is that it’s coming to the iPad next year. Like at the announcement of Photoshop on iPad, development is still in early stages. Adobe says it is reimagining the experience from the ground up for a touch interface. An exclusive private beta has begun, and signups are open for a chance at early access.
+You can learn more about what’s in store for Illustrator on iPad in our separate post here.
+
+
+
+
+
+Lightroom CC
+
+
+Lightroom CC, the Creative Cloud replacement to Adobe’s classic photo editing app, debuted two years ago at Adobe MAX with a pared-down set of features that kept many users from upgrading. Since then, Adobe has gradually reintroduced missing functionality and added new tools across platforms.
+Lightroom CC on the desktop is now gaining guided tutorials and interactive edits, both of which first premiered on iOS and Android. The features are designed to help you learn how to edit photos and be inspired by other professional photographers. 
+Advanced export is also coming to Lightroom CC on the desktop, and later to iOS. You’ll be able to export images as TIFF files, adjust output resolution, compression, metadata, file naming, output sharpening, and color space. For those with capable graphics cards, GPU accelerated editing has been added for a more responsive experience. That speed should come in handy when using Fill Edges, a new tool in the Panorama Merge dialog that leverages Content-Aware Fill technology.
+On iOS, batch editing of images is now possible. The feature first came to the desktop in 2018. Edits can be copied from a single photo and pasted onto a selected series of images.
+
+
+
+Premiere Pro and Premiere Rush
+At last year’s Adobe MAX conference, Adobe previewed a tool coming to Premiere Pro now known as Auto Reframe. The feature was again shown off this past September at IBC 2019 in Amsterdam. Starting today, you’ll be able to try out Auto Reframe yourself. 
+Auto Reframe makes the tedious job of reframing content for multiple aspect ratios and social platforms an automated process. Videos can be intelligently reformatted for square, vertical, 16×9, or any custom aspect ratio without clipping the subject out of the shot. The tool uses AI to identify the focus of each scene. 
+Premiere Pro’s graphics tools, like shapes, text, and Motion Graphics templates have been updated with more efficient workflows. Time Remapping is smoother with speed changes on a clip up to 20,000 percent supported. Audio gain range has been expanded to +15dB.
+Premiere Rush, Adobe’s cross-platform video editor tailored for creating short-form content, has partnered with social media platform TikTok. The app is now the first third-party tool that can publish directly to TikTok.
+
+
+
+More Creative Cloud Apps
+Adobe XD: Launching in beta, designers can now work together in XD in real time. With Coediting enabled, teammates can be invited to edit a document with you. A new document history view lets you see previous revisions of a file and copy elements into your current document or save an older version. Document history is available for 30 days.
+Share mode is a new interface in XD that combines sharing capabilities into one place for managing shared links, sharing presets, and sharing permissions. Components have been made more powerful with new component states that support multiple variations of a single interface.
+After Effects: Adobe focused on performance for this update. You can now expect smooth, fluid playback of cached video previews. Many most-used features like Content-Aware Fill have been sped up. A new version of Cinema 4D, bundled with After Effects, can be opened as a standalone application. Caps and bevel tools have been added.
+
+
+
+Character Animator: Scene cameras allow you to set up shots within your scenes, like wide, close-up, and zoom, creating camera moves between them. Keyframing is now supported. Scenes can be triggered with audio elements.
+Dimension: Multiple directional lights can be added and customized in a 3D scene. The Render Preview experience has been rebuilt with real-time rendering feedback. Dimension projects can be sent directly to Adobe Aero.
+Substance: Adobe acquired Allegorithmic, developers of Substance, earlier in 2019. The 3D texturing software will soon have a brush engine that more closely matches Photoshop’s.
+
+
+
+Audition: Improved routing for multichannel effects has been added. The behavior of audio clip stacking has been modified based on user feedback, and is now a session-level preference.
+Animate: A redesigned UI is easier to use and includes a customizable toolbar. You can now export animations in any video format. A new vector “Fluid Brush” is arriving alongside its debut in Adobe Fresco. 
+InDesign: Support for SVG file formats has been added. You can now use variable fonts. Launch time has been reduced by up to 50%.
+Unless noted, these Creative Cloud updates begin rolling out today and will be available in the App Store on iOS or the newly-redesigned Creative Cloud desktop app on macOS. 
+FTC: We use income earning auto affiliate links. More.
+
+
+
+
+
+"

@@ -1,0 +1,52 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+VMware setzt sich ein ehrgeiziges Ziel: Kubernetes soll langweilig werden
+Auf der VMworld zeigte VMware sein Projekt Pacific: Kubernetes will der Konzern in die ESXi-Welt integrieren und mit der vSphere-GUI administrieren lassen.
+07 Nov 2019, 11:41 by Jörg Riether
+VMware schickt sein Projekt Pacific in die Beta-Phase, wie der Virtualisierungsspezialist auf dem europäischen Zweig seiner Hausmesse VMworld bekanntgab. Pacific ist ein Bestandteil von Tanzu – darunter fasst VMware zukünftig verschiedene Kubernetes-Angebote zum Erstellen, Ausführen und Verwalten von Applikationen zusammen.
+Pacific kümmert sich um die Kubernetes-Integration in die ESXi und vSphere-Welt. Die mit vSphere gehosteten Container-Strukturen bindet VMware in die vSphere-GUI ein und unterwirft sie der eigenen Policy-Logik sowie den eigenen Techniken der Netzwerk-Virtualisierung und Storage-Anbindung. Damit kann die operative IT-Administration etwa Kubernetes-Namespaces, Cluster, Pods oder Container mit den gewohnten vSphere-Werkzeugen verwalten.
+Björn Brundert von VMware erläuterte im Gespräch mit iX, dass man Kubernetes als Multi-Cloud-API begreifen könne. Heute sei es noch ein Container-Orchestrierungstool, aber in Zukunft werde es ""eine Plattform, um Plattformen zu bauen"" sein. Den gesamten Lebenszyklus hinweg vom Erstellen über das Ausführen bis zum Verwalten solle die Infrastruktur stets stabil und fehlerfrei funktionieren. Dies gelte besonders für Sicherheitsupdates und sonstige Patches in der Kubernetes-Infrastruktur. All dies solle für Admins und Entwickler zukünftig eine Selbstverständlichkeit sein – Kubernetes solle langweilig werden.
+Ob VMware das umsetzen kann, entscheidet mit darüber, ob sich die Idee durchsetzt. Derzeit steht die Beta nur ausgewählten Kunden offen. Interessierte Firmen und Institutionen können sich aber auf vmw.re/PacificBeta um eine Teilnahme bewerben.
+Neues Schutzsystem für virtuelle Netze
+Außerdem gewährte VMware auf der VMworld Europe erstmals Einblick in ein neues verteiltes Eindringlingserkennungs- und Schutzsystem für virtuelle Netze. Derzeit heißt es NSX Distributed IDS/IPS. Im Hintergrund kommt Software des frisch akquirierten Herstellers Carbon Black zum Einsatz. Bis zur Markteinführung dürfte allerdings noch einige Zeit ins Land gehen; VMware geht momentan davon aus, dass die Beta-Phase spätestens Januar 2020 startet.
+VMware kann bereits heute den Datenverkehr im Netz auf Dienste und beteiligte Kommunikationspartner hin analysieren und die Ergebnisse eskalieren. Dazu nutzt der Hersteller die Mikro-Segmentierung von 2013 und die im März 2019 eingeführten Service-defined Firewall. VMware verspricht durch die zugekaufte Technik eine höhere Leistung und weniger falsch-positive Treffer.
+Keinerlei Informationen gab es auf der Veranstaltung darüber, wann und in welcher Form der Nachfolger von vSphere 6.7 erscheint. Die VMworld Europe fand diese Woche in Barcelona mit etwa 14.000 Teilnehmern statt, gut 2000 mehr als im letzten Jahr. (Jörg Riether) / (fo)
+
+
+",de,"
+
+
+
+
+
+
+
+
+
+
+
+VMware sets itself an ambitious goal: Kubernetes should be boring
+At VMworld, VMware showed its Pacific project: Kubernetes plans to integrate the group into the ESXi world and administer it with the vSphere GUI.
+07 Nov 2019, 11:41 by Jörg Riether
+VMware is sending its Pacific project into beta, as the virtualization specialist at the European branch of its in-house exhibition VMworld announced. Pacific is part of Tanzu, and that includes VMware adding Kubernetes offerings to build, run and manage applications.
+Pacific takes care of Kubernetes integration with the ESXi and vSphere world. The vSphere-hosted container fabric integrates VMware into the vSphere GUI, subjecting it to its own policy logic and proprietary network virtualization and storage connectivity techniques. This allows operational IT administration to manage, for example, Kubernetes namespaces, clusters, pods or containers with the familiar vSphere tools.
+Björn Brundert from VMware explained in an interview with iX that Kubernetes could be understood as a multi-cloud API. Today it is still a container orchestration tool, but in the future it will be ""a platform for building platforms"". Throughout the lifecycle, from creation to execution to management, the infrastructure should always be stable and error-free. This applies especially to security updates and other patches in the Kubernetes infrastructure. All this should be a matter of course for admins and developers in the future - Kubernetes should be boring.
+Whether VMware can implement that, decides whether the idea prevails. Currently, the beta is only open to selected customers. Interested companies and institutions can apply to participate in vmw.re/PacificBeta.
+New protection system for virtual networks
+In addition, at VMworld Europe, VMware provided insights into a new distributed intrusion detection and protection system for virtual networks. Currently it's called NSX Distributed IDS / IPS. In the background, software from the newly acquired manufacturer Carbon Black is used. However, there will be some time left until the market launch; VMware is currently assuming that the beta phase will start no later than January 2020.
+Already today, VMware can analyze traffic on the network for services and involved communication partners and escalate the results. For this purpose, the manufacturer uses the micro-segmentation of 2013 and the service-defined firewall introduced in March 2019. VMware promises higher performance and fewer false positives through the technology purchased.
+There was no information at the event about when and in what form the successor to vSphere 6.7 will be released. VMworld Europe took place this week in Barcelona with about 14,000 participants, a good 2000 more than last year. (Jörg Riether) / (fo)
+
+
+"

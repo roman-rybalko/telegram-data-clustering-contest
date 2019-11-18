@@ -1,0 +1,52 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+The Cloud with a Shiny Lining: The Advanced Data Visualization Tools Uncovering Hidden Biopharma Insight
+06 Nov 2019 by Cheryl Moody Bartel, head of product management, digital science, Thermo Fisher Scientific
+
+
+
+Read Time:
+The biopharmaceutical industry has access to more information than ever before, thanks to advanced high-throughput techniques such as next-generation sequencing and mass spectrometry that are capable of generating multi-dimensional data on an unprecedented scale. While these approaches are helping to accelerate the delivery of innovative treatments by allowing scientists to probe human biology in ever-greater detail, they also present significant challenges in terms of data management and interpretation.As laboratory technologies have evolved and biopharmaceutical research and development have advanced, the data generated has rapidly increased in both volume and complexity. The adoption of new techniques and disciplines has resulted in an avalanche of novel data types that must be appropriately stored, managed and ultimately analyzed in the most efficient way to advance the development of safe and effective treatments. To unlock the insights hidden among their results, scientists need powerful tools with which to process and interpret the very large amounts of multi-dimensional data that are generated.
+Revealing hidden insight faster through data visualization
+Digital solutions that visualize information have become increasingly important for scientists, helping them analyze and report results to obtain a keener understanding of the data. One of the most popular software packages for scientific data visualization is Shiny, an open-source tool that allows data scientists to easily build new and adapt existing interactive web apps using the R statistical programming language. These include dashboard-type apps with powerful functionality that allow users to interact with a visualization to select, for example, the types of data and parameters that are used. Often developed by scientists themselves to solve key challenges in drug discovery and development workflows, Shiny apps can be used to monitor processes to provide decision-makers with real-time information on key parameters. Many approaches also incorporate the latest statistical techniques, including supervised and unsupervised machine learning.The widespread use of Shiny apps within the scientific community has led to the establishment of marketplace websites such as RStudio Connect, which enable scientists to share tools they have developed to support others in their research. This is enhanced by the open-source nature of the programming language, which allows apps to be further customized to the specific needs of individual applications.
+Turning to the cloud to meet tomorrow’s data visualization challenges
+The growing use of data analytics and visualization tools presents a challenge for biopharmaceutical companies in terms of data management. With this trend set to continue, businesses need scalable and secure solutions that allow them to expand their capabilities as their R&D pipelines grow and their needs evolve, while also maintaining data security from collection through to visualization.To prepare for future changes in the types of data they handle, many forward-thinking biopharma companies are turning to cloud-based laboratory informatics platforms, which offer the flexibility and scalability necessary to support not only the analytical demands of today, but also the data pipelines of tomorrow.With data visualization a key part of modern biopharma workflows, some cloud-based laboratory informatics solutions now offer full integration with Shiny, allowing scientists to save time and streamline their data analytics by visualizing data through a single platform. Thermo Fisher Platform for Science software, for example, is a modular cloud-based laboratory informatics platform that allows scientists to create powerful Shiny apps, or leverage the multitude of Shiny apps that have been published on the RStudio Connect platform so that colleagues and collaborators can access this work directly. By bringing data visualization and management into a single system, these types of platforms are eliminating the need to transfer information between disparate tools, safeguarding data integrity and security whilst facilitating more efficient working.Vendors such as Thermo Fisher Scientific are further supporting scientists by publishing a growing catalog of Shiny apps to support a range of biopharma applications, including in vitro and in vivo data analysis, macromolecular drug discovery, genomics, and 3D sample rendering.With extensible laboratory informatics platforms making it easier than ever to visualize data using Shiny apps, scientists are better placed to uncover the insight hidden in their data in order to discover new ways of solving some of the most pressing healthcare challenges.
+
+
+",en,"
+
+
+
+
+
+
+
+
+
+
+
+The Cloud with a Shiny Lining: The Advanced Data Visualization Tools Uncovering Hidden Biopharma Insight
+06 Nov 2019 by Cheryl Moody Bartel, head of product management, digital science, Thermo Fisher Scientific
+
+
+
+Read Time:
+The biopharmaceutical industry has access to more information than ever before, thanks to advanced high-throughput techniques such as next-generation sequencing and mass spectrometry that are capable of generating multi-dimensional data on an unprecedented scale. While these approaches are helping to accelerate the delivery of innovative treatments by allowing scientists to probe human biology in ever-greater detail, they also present significant challenges in terms of data management and interpretation.As laboratory technologies have evolved and biopharmaceutical research and development have advanced, the data generated has rapidly increased in both volume and complexity. The adoption of new techniques and disciplines has resulted in an avalanche of novel data types that must be appropriately stored, managed and ultimately analyzed in the most efficient way to advance the development of safe and effective treatments. To unlock the insights hidden among their results, scientists need powerful tools with which to process and interpret the very large amounts of multi-dimensional data that are generated.
+Revealing hidden insight faster through data visualization
+Digital solutions that visualize information have become increasingly important for scientists, helping them analyze and report results to obtain a keener understanding of the data. One of the most popular software packages for scientific data visualization is Shiny, an open-source tool that allows data scientists to easily build new and adapt existing interactive web apps using the R statistical programming language. These include dashboard-type apps with powerful functionality that allow users to interact with a visualization to select, for example, the types of data and parameters that are used. Often developed by scientists themselves to solve key challenges in drug discovery and development workflows, Shiny apps can be used to monitor processes to provide decision-makers with real-time information on key parameters. Many approaches also incorporate the latest statistical techniques, including supervised and unsupervised machine learning.The widespread use of Shiny apps within the scientific community has led to the establishment of marketplace websites such as RStudio Connect, which enable scientists to share tools they have developed to support others in their research. This is enhanced by the open-source nature of the programming language, which allows apps to be further customized to the specific needs of individual applications.
+Turning to the cloud to meet tomorrow’s data visualization challenges
+The growing use of data analytics and visualization tools presents a challenge for biopharmaceutical companies in terms of data management. With this trend set to continue, businesses need scalable and secure solutions that allow them to expand their capabilities as their R&D pipelines grow and their needs evolve, while also maintaining data security from collection through to visualization.To prepare for future changes in the types of data they handle, many forward-thinking biopharma companies are turning to cloud-based laboratory informatics platforms, which offer the flexibility and scalability necessary to support not only the analytical demands of today, but also the data pipelines of tomorrow.With data visualization a key part of modern biopharma workflows, some cloud-based laboratory informatics solutions now offer full integration with Shiny, allowing scientists to save time and streamline their data analytics by visualizing data through a single platform. Thermo Fisher Platform for Science software, for example, is a modular cloud-based laboratory informatics platform that allows scientists to create powerful Shiny apps, or leverage the multitude of Shiny apps that have been published on the RStudio Connect platform so that colleagues and collaborators can access this work directly. By bringing data visualization and management into a single system, these types of platforms are eliminating the need to transfer information between disparate tools, safeguarding data integrity and security whilst facilitating more efficient working.Vendors such as Thermo Fisher Scientific are further supporting scientists by publishing a growing catalog of Shiny apps to support a range of biopharma applications, including in vitro and in vivo data analysis, macromolecular drug discovery, genomics, and 3D sample rendering.With extensible laboratory informatics platforms making it easier than ever to visualize data using Shiny apps, scientists are better placed to uncover the insight hidden in their data in order to discover new ways of solving some of the most pressing healthcare challenges.
+
+
+"

@@ -1,0 +1,44 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+الغرف التجارية تتوقع خفض سعر الفائدة لهذا السبب.. فيديو
+02 Nov 2019, 08:13 by حمزة شعيب
+حمزة شعيب أكد الدكتور علاء عز، أمين عام اتحادات الغرف المصرية والأفريقية والأورومتوسطية التجارية، أن النزول بسعر الفائدة قرار من البنك المركزي لتخفيض معدل التضخم، مشيرًا إلى أن هناك تكاملا بين السياسات النقدية والمالية بين الحكومة والبنك المركزي.وتوقع ""عز""، خلال لقائه ببرنامج ""صالة التحرير""، المذاع عبر قناة ""صدى البلد""، خفض سعر الفائدة الفترة المقبلة لجذب الاستثمار.ولفت أمين عام اتحادات الغرف المصرية والأفريقية والأورومتوسطية التجارية إلى أن الدولة أنجزت في قطاع إنشاء الشركات والحصول على كهرباء بشكل إلكتروني، مشيرًا إلى أن توسع الحكومة الإلكترونية في كافة نواحي الحياة سواء للمواطن أو القطاع الخاص سيوفر جهود كثيرة.
+
+
+
+
+
+",en,"
+
+
+
+
+
+
+
+
+
+
+
+Study Estimates 50% of WebAssembly Sites Are Using It For Malicious Purposes
+02 Nov 2019, 08:34 by EditorDavid
+InfoQ reports on surprising results from research sponsored by the Institutes for Application Security and System Security at Germany's Technische UniversitÃt Braunschweig: A study published in June 2019 reveals that in the Alexa Top 1 million websites, one out of 600 sites executes WebAssembly (Wasm) code. The study moreover finds that over 50% of those sites using WebAssembly apply it for malicious deeds, such as cryptocurrency mining and malware code obfuscation....BR> The team examined the websites in the Alexa sample over a time span of four days, and successfully studied 947,704 websites, eventually visiting 3,465,320 web pages... 1,950 Wasm modules were found on 1,639 sites... The research team manually categorized the Wasm modules in 6 categories, reflecting the purpose behind the use of WebAssembly: Custom, Game, Library, Mining, Obfuscation, and Test. Of these six categories, two (Mining -- 55.6% of website sample, and Obfuscation -- 0.2% of websites sample) represent malicious usage of WebAssembly. The study details, ""The largest observed category implements a cryptocurrency miner in WebAssembly, for which we found 48 unique samples on 913 sites in the Alexa Top 1 Million....""[The study] suggests that we are currently only seeing the tip of the iceberg of a new generation of malware.... In consequence, incorporating the analysis of WebAssembly code hence is going to be of essence for effective future defense mechanisms.""
+
+
+(infoq.com)
+
+
+
+
+"

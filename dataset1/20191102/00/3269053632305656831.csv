@@ -1,0 +1,48 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+El silicio AMD Navi 14 @ 7nm tendrá 5 variantes, las Radeon RX de gama media-baja
+02 Nov 2019 by Borja Rodríguez
+Gracias a Linux se han descubierto que el silicio Navi 14 estará presente en nada menos que 5 variantes, es decir, cinco tarjetas gráficas con un mismo silicio, aunque en diferentes configuraciones. Todas ellas compartirán el uso de la arquitectura RDNA junto a un proceso de fabricación de 7nm. Si bien no se dio a conocer ni el nombre de la gráfica que da vida a cada silicio, ni el número de Stream Processors, al menos se indican las frecuencias a las que trabaja cada silicio, mientras que la 'coletilla' de cada silicio da pistas de los modelos a los que dan vida.
+
+
+
+El primero de estos silicios es el Navi 14 XTX, el cual podría dar vida a una Radeon RX 5500 XT que alcanzará una frecuencia Turbo de 1717 MHz. Seguimos con un Navi 14 XTM que daría vida a una Radeon RX 5500M para equipos portátiles a una frecuencia de 1448 MHz; el silicio Navi 14 XT sería el que emplea la Radeon RX 5500 @ 1670 MHz; el Navi 14 XL es para una gráfica de gama de entrada como es la Radeon RX 5300 @ 1448 MHz; y por último la Navi 14 XLM, que sería su variante portátil, es decir, una Radeon RX 5300M @ 1181 MHz.
+El Navi 14 XTX (RX 5500 XT), como 'silicio completo', ofrece un total de 24 CUs, es decir: 1536 Stream Proccessos, mientras que por ejemplo el Navi 14 XT (RX 5500) ofrece 22 CUs (1408 SPs). El resto de silicios ofrecerán un menor número de núcleos.
+vía: Videocardz
+
+
+",es,"
+
+
+
+
+
+
+
+
+
+
+
+The AMD Navi 14 @ 7nm silicon will have 5 variants, the mid-low range Radeon RX
+02 Nov 2019 by Borja Rodríguez
+Thanks to Linux, it has been discovered that Navi 14 silicon will be present in no less than 5 variants, that is, five graphics cards with the same silicon, although in different configurations. All of them will share the use of RDNA architecture together with a 7nm manufacturing process. Although neither the name of the graph that gives life to each silicon, nor the number of Stream Processors was disclosed, at least the frequencies at which each silicon works are indicated, while the 'tail' of each silicon gives clues of the models to which they give life.
+
+
+
+The first of these silicons is the Navi 14 XTX, which could give life to a Radeon RX 5500 XT that will reach a Turbo frequency of 1717 MHz. We continue with a Navi 14 XTM that would give life to a Radeon RX 5500M for portable equipment at a 1448 MHz frequency; the silicon Navi 14 XT would be the one that uses the Radeon RX 5500 @ 1670 MHz; The Navi 14 XL is for an input range graph such as the Radeon RX 5300 @ 1448 MHz; and finally the Navi 14 XLM, which would be its portable variant, that is, a Radeon RX 5300M @ 1181 MHz.
+The Navi 14 XTX (RX 5500 XT), as 'full silicon', offers a total of 24 CUs, that is: 1536 Stream Proccessos, while for example the Navi 14 XT (RX 5500) offers 22 CUs (1408 SPs). The rest of the silicon will offer a smaller number of cores.
+via: Videocardz
+
+
+"

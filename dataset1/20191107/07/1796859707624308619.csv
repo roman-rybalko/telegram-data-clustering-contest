@@ -1,0 +1,56 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Не занадто розумні. Смарт-динаміки зламали лазерною указкою
+Розумні колонки стали для багатьох звичними, але дослідники показали, що хакери можуть зламати ці невеликі пристрої без жодного звуку.
+07 Nov 2019, 07:47 by Антон Ходоренко
+Було показано, що злом за допомогою лазера можливий на пристроях з Google Assistant, Amazon Alexa і Siri. Дослідники з університету Мічигану змусили вразливість працювати і на пристрої Facebook Portal.
+Виверт працює через мікро-електромеханічні системи, які вбудовані в розумні мікрофони. Ці крихітні компоненти можуть інтерпретувати світло як звук, що означає, що ними можна керувати за допомогою чогось простого, наприклад, лазерної указки.
+Всього вчені випробували 60-мілліваттний лазер в цілому на 16 пристроях, які активуються голосом. В результаті майже всі розумні колонки реагували на лазер з відстані до 50 метрів.
+З огляду на те, що такі колонки часто підключаються до розумних замків і інших пристроїв для домашньої безпеки, неважко уявити, як це можна використовувати, щоб проникнути в житло.
+«Ми знаємо, що світло викликає якийсь рух в діафрагмі мікрофона, і що мікрофони створені для того, щоб інтерпретувати такі рухи як звук, оскільки вони, як правило, є результатом звукового тиску, яке фізично впливає на діафрагму», — розповіли дослідники.
+Інтелектуальні динаміки не часто постачаються з додатковим захистом — якщо ви даєте голосову команду, вона просто працює. Команда зламала колонку через вікна, на відстані до 110 метрів, з комплектом вартістю всього кілька доларів США.
+Перш ніж ховати Amazon Echo в шафу, майте на увазі, що атака працює тільки на лінії прямої видимості з пристроєм. Ці колонки, як правило, також видають звуковий зворотний зв’язок, так що ви б дізналися, чи намагався хтось зробити покупки в Інтернеті або дистанційно відключити ваші розумні замки.
+Уразливість також потребує досить складного налаштування з потужним і сфокусованим лазером і обладнанням для перетворення звукових команд на модуляції лазерного випромінювання. Це не те, що швидко може зробити будь-яка людина, хоча ви можете тримати свої розумні динаміки подалі від вікон, на всякий випадок.
+Amazon і Google сказали, що вони стежать за незвичайним дослідженням. Загальна думка представників компаній полягає в тому, що насправді це не той практичний злом, який кожна людина могла б спробувати, але це, безумовно, «цікава ідея».
+
+
+
+",uk,"
+
+
+
+
+
+
+
+
+
+
+
+Not too smart. Smart speakers broke the laser pointer
+Smart speakers have become familiar to many, but researchers have shown that hackers can hack these small devices without any sound.
+07 Nov 2019, 07:47 by Anton Khodorenko
+Laser hacking has been shown to be possible on Google Assistant, Amazon Alexa and Siri devices. Researchers at the University of Michigan forced the vulnerability to work on the device Facebook Portal.
+The trick is working through micro-electromechanical systems that are built into smart microphones. These tiny components can interpret light as sound, which means they can be controlled with something simple, such as a laser pointer.
+In total, scientists tested a 60 milliwatt laser for a total of 16 voice-activated devices. As a result, almost all smart speakers responded to the laser from up to 50 meters away.
+Given that such speakers are often connected to smart locks and other home security devices, it is easy to imagine how this can be used to break into a home.
+""We know that light causes movement in the diaphragm of the microphone, and that microphones are designed to interpret such movements as sound, because they are usually the result of sound pressure that physically affects the diaphragm,"" the researchers said.
+Intelligent speakers are not often provided with additional protection - if you give a voice command, it just works. The team broke a column through windows, up to 110 meters away, with a kit costing just a few US dollars.
+Before hiding the Amazon Echo in the closet, keep in mind that the attack only works in line of sight with the device. These columns typically also provide audio feedback, so you would know if someone was trying to shop online or remotely disable your smart locks.
+The vulnerability also requires a rather sophisticated setup with a powerful and focused laser and equipment to convert sound commands to laser radiation modulation. It's not something anyone can do quickly, although you can keep your smart speakers out of the window, just in case.
+Amazon and Google have said they are following an unusual study. The common opinion of company representatives is that this is not really a practical hack that anyone could try, but it is definitely an ""interesting idea"".
+
+
+
+"

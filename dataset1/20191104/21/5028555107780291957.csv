@@ -1,0 +1,62 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Spanish companies’ networks shut down as result of ransomware
+Apparent BitPaymer variant strikes major IT consulting company, radio network.
+04 Nov 2019, 21:40 by Sean Gallagher
+A targeted ransomware attack has taken down the networks of at least two companies in Spain today, sending ripples across other companies as they moved to defend themselves. The targets included Everis—a major IT services and consulting subsidiary of Japan-based global communications company NTT—and the radio company Sociedad Española de Radiodifusión (Cadena SER). A technician at one company told Spanish broadcaster ABC, ""We are in hysteria mode.""
+Some other companies—including Spanish airport operator Aena—took down some of their services as a precautionary measure. They did so in part because Everis has staff on site at many Spanish corporations. But the attack may have affected other companies as well, though no others have publicly acknowledged the ransomware.
+The ransomware appears to be a variant of the BitPaymer family that is connected to the Dridex group of malware, according to security researcher Vitali Kremez and others who have analyzed the attack.
+A screenshot of the note delivered by the ransomware, posted by Spanish cryptocurrency news site Bitcoin.es, shows the hallmarks of a BitPaymer campaign.
+
+
+The ransomware note delivered to Everis.
+
+
+
+
+In July, researchers at the endpoint protection company Morphisec noted that Dridex was being used to deliver a BitPaymer variant in a campaign that had targeted a supply chain service provider in order to attack the provider's customers. As Ars reported last week, managed service providers have been increasingly targeted by ransomware operators—including the October 22 BitPaymer attack on billing service provider Billtrust.
+Spain's Department of National Security (DSN) reported the attack on SER but provided few details. ""Following the protocol established in cyber attacks, the SER has seen the need to disconnect all its operating computer systems,"" a DSN spokesperson said. The radio network continues to operate from Madrid, while technicians at local stations work on restoring systems in collaboration with Spain's National Institute of Cybersecurity (INCIBE).
+
+
+",en,"
+
+
+
+
+
+
+
+
+
+
+
+Spanish companies’ networks shut down as result of ransomware
+Apparent BitPaymer variant strikes major IT consulting company, radio network.
+04 Nov 2019, 21:40 by Sean Gallagher
+A targeted ransomware attack has taken down the networks of at least two companies in Spain today, sending ripples across other companies as they moved to defend themselves. The targets included Everis—a major IT services and consulting subsidiary of Japan-based global communications company NTT—and the radio company Sociedad Española de Radiodifusión (Cadena SER). A technician at one company told Spanish broadcaster ABC, ""We are in hysteria mode.""
+Some other companies—including Spanish airport operator Aena—took down some of their services as a precautionary measure. They did so in part because Everis has staff on site at many Spanish corporations. But the attack may have affected other companies as well, though no others have publicly acknowledged the ransomware.
+The ransomware appears to be a variant of the BitPaymer family that is connected to the Dridex group of malware, according to security researcher Vitali Kremez and others who have analyzed the attack.
+A screenshot of the note delivered by the ransomware, posted by Spanish cryptocurrency news site Bitcoin.es, shows the hallmarks of a BitPaymer campaign.
+
+
+The ransomware note delivered to Everis.
+
+
+
+
+In July, researchers at the endpoint protection company Morphisec noted that Dridex was being used to deliver a BitPaymer variant in a campaign that had targeted a supply chain service provider in order to attack the provider's customers. As Ars reported last week, managed service providers have been increasingly targeted by ransomware operators—including the October 22 BitPaymer attack on billing service provider Billtrust.
+Spain's Department of National Security (DSN) reported the attack on SER but provided few details. ""Following the protocol established in cyber attacks, the SER has seen the need to disconnect all its operating computer systems,"" a DSN spokesperson said. The radio network continues to operate from Madrid, while technicians at local stations work on restoring systems in collaboration with Spain's National Institute of Cybersecurity (INCIBE).
+
+
+"

@@ -1,0 +1,48 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+MIT и Ford представили новый метод навигации для роботов-курьеров
+06 Nov 2019, 03:37 by Игорь Савкин
+Инженеры из Массачусетского технологического института (MIT) и Ford Motor разработали новый метод ориентирования для роботов-доставщиков. Благодаря новому методу навигации роботы во время движения ориентируются по специальным подсказкам на местности без помощи GPS.
+
+
+
+Подсказки описаны в общих для различных ситуаций терминах — это может быть входная дверь, гараж, заметные здания или другие подобные объекты.
+В роботах-доставщиках установлены камеры, которые с помощью искусственного интеллекта маркируют окружающую среду, выделяя на ней семантические подсказки, такие как «тротуар» или «дверь». Затем нейросеть на основе подсказок строит карту, по которой робот двигается к месту назначения.
+Даже если робот доставляет посылку в район, в котором он никогда не был, то сможет ориентироваться по подсказкам, которые уже видел в других местах.
+
+
+",ru,"
+
+
+
+
+
+
+
+
+
+
+
+MIT and Ford Introduce New Navigation Method for Courier Robots
+06 Nov 2019, 03:37 by Igor Savkin
+Engineers from the Massachusetts Institute of Technology (MIT) and Ford Motor have developed a new orientation method for delivery robots. Thanks to the new navigation method, robots are guided by special prompts on the ground while not moving with GPS.
+
+
+
+Tips are described in terms common to different situations - it can be an entrance door, a garage, visible buildings or other similar objects.
+Cameras are installed in delivery robots, which with the help of artificial intelligence mark the environment, highlighting semantic clues on it, such as “sidewalk” or “door”. Then, based on the prompts, the neural network builds a map along which the robot moves to its destination.
+Even if the robot delivers the package to an area in which it has never been, it will be able to navigate by the prompts that it has already seen in other places.
+
+
+"

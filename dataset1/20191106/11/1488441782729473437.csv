@@ -1,0 +1,88 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Ecco come avere uno zoom 16x e personalizzare Motion Sense su Pixel 4 (foto)
+Entrambe le procedure implicano l'acquisizione dei permessi di root.
+06 Nov 2019, 11:29 by Vincenzo Ronca
+I nuovi Pixel 4 di Google sono arrivati da poche settimane e si stanno facendo conoscere anche per i loro dettagli non evidenti, a volte spiacevoli. Tra gli aspetti che ancora non hanno convinto pienamente c’è Motion Sense, la nuova modalità di interazione touchless di Google. Oggi riportiamo due guide provenienti da XDA che permettono la personalizzazione di questo aspetto e di quello fotografico.
+La funzionalità Motion Sense di Google si basa sul funzionamento del radar sviluppato nell’ambito del Project Soli di Google ed integrato fisicamente nei nuovi Pixel 4. Dal lato software, il componente era inizialmente non personalizzabile da sviluppatori di terze parti ma, grazie all’app Motion Sense Bridge, lo sviluppatore ashergray è riuscito ad accedere alla personalizzazione degli output del radar conseguenti ai gesti forniti in input. La procedura che è stata strutturata per permettere questa personalizzazione implica l’acquisizione dei permessi di root.
+
+
+
+
+
+
+Lo sviluppatore ha creato l’app OsloBridge che offre la personalizzazione del riconoscimento dei gesti, permettendo anche la gestione dei parametri di riconoscimento dei gesti, e la personalizzazione delle azioni software conseguenti ai gesti. Lo scopo essenziale di questa personalizzazione è l’automazione di Motion Sense con app simili a Tasker: al momento sono riconoscibili e personalizzabili quattro diverse tipologie di gesti. Nell’esempio che abbiamo riportato qui sotto viene mostrato come sia possibile con Tasker personalizzare il gesto di tipo FLICK per attivare il flash, se effettuato in una specifica direzione.
+
+
+
+
+
+
+L’installazione dell’app OsloBridge presuppone l’installazione del corrispondente modulo Magisk, a questo indirizzo trovate tutte le informazioni necessarie all’installazione. Chi l’ha provato consigli di disabilitare il riconoscimento dei gesti originariamente implementato da Google, attraverso le impostazioni di sistema.
+La seconda guida appena trapelata di XDA investe il comparto fotografico dei Pixel 4, in particolare la capacità di zoom. La versione stock della Google Camera offre uno zoom massimo 8x, ma attraverso questa procedura è possibile ottenere almeno il doppio della capacità d’ingrandimento. Grazie allo sviluppatore cstark27, già noto per i suoi numerosi porting della Google Camera, è possibile installare una versione modificata della Google Camera che ha abilitato lo zoom 16x: questa versione non necessita dei permessi di root.
+
+
+
+
+
+
+Inoltre e sempre grazie a cstark27, è possibile abilitare il livello di zoom massimo per l’obiettivo telephoto dei Pixel 4: stavolta saranno necessari i permessi di root perché bisogna installare un modulo Magisk e poi inviare il seguente comando ADB shell:
+adb shell su -c ""setprop persist.camera.maxzoom 51""
+Il comando abilita lo zoom oltre i 50x, ma chi l’ha provato consiglia di non andare oltre il 16x per avere degli scatti decenti. Nella galleria in basso potete vedere un esempio pratico delle performance dello zoom 16x, a questo indirizzo ne trovate altri. Per installare questa seconda mod vi consigliamo di leggere il thread dedicato su XDA, a questo post trovate le informazioni dettagliate su come abilitare lo zoom massimo sull’obiettivo telephoto.
+
+
+",it,"
+
+
+
+
+
+
+
+
+
+
+
+Here's how to get a 16x zoom and customize Motion Sense on Pixel 4 (photo)
+Both procedures involve the acquisition of root permissions.
+06 Nov 2019, 11:29 by Vincenzo Ronca
+The new Google Pixels 4 have arrived a few weeks ago and are also making themselves known for their not obvious, sometimes unpleasant details. Among the aspects that have not yet fully convinced is Motion Sense, Google's new touchless interaction mode. Today we report two guides coming from XDA that allow the personalization of this aspect and of the photographic aspect.
+The Motion Sense feature of Google is based on the functioning of the radar developed in the context of the Google Suns Project and physically integrated in the new Pixels 4. On the software side, the component was initially not customizable by third-party developers but, thanks to the app Motion Sense Bridge, the ashergray developer has managed to access the customization of the radar outputs following the gestures provided in input. The procedure that was structured to allow this customization involves the acquisition of root permissions.
+
+
+
+
+
+
+The developer has created the OsloBridge app that offers customization of gesture recognition, also allowing management of gesture recognition parameters, and customization of software actions following gestures. The essential purpose of this customization is the automation of Motion Sense with apps similar to Tasker: at the moment four different types of gestures are recognizable and customizable. In the example we have given below it is shown how it is possible with Tasker to customize the FLICK type gesture to activate the flash, if carried out in a specific direction.
+
+
+
+
+
+
+The installation of the OsloBridge app requires the installation of the corresponding Magisk module, to this address you will find all the information necessary for the installation. Those who tried it advise disabling gesture recognition originally implemented by Google, through system settings.
+The second newly leaked XDA guide covers the Pixel 4 photographic sector, in particular the zoom capability. The stock version of the Google Camera offers a maximum zoom of 8x, but through this procedure it is possible to obtain at least twice the magnification capacity. Thanks to the developer cstark27, already known for its many Google Camera ports, it is possible to install a modified version of the Google Camera that has enabled 16x zoom: this version does not need root permissions.
+
+
+
+
+
+
+Moreover and always thanks to cstark27, it is possible to enable the maximum zoom level for the telephoto lens of the Pixels 4: this time the root permissions will be required because you need to install a Magisk module and then send the following command ADB shell:
+adb shell su -c ""setprop persist.camera.maxzoom 51""
+The command enables zooming beyond 50x, but those who tried it advised not to go beyond 16x to get decent shots. In the gallery below you can see a practical example of the 16x zoom performance, you will find others at this address. To install this second mod we advise you to read the dedicated thread on XDA, to this post you will find detailed information on how to enable the maximum zoom on the telephoto lens.
+
+
+"

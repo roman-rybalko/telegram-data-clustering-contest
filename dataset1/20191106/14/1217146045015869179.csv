@@ -1,0 +1,94 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Subpoena Phishing Emails Serve Nasty Predator Thief Infection
+06 Nov 2019, 14:00 by Sergiu Gatlan
+
+
+
+Phishers have been spotted delivering subpoena-themed emails spoofed to look like they're coming from the UK Ministry of Justice and attempting to infect their targets with Predator the Thief information stealer malware payloads.
+This malspam campaign mainly targeted retail and insurance companies, with the attackers trying to trick their potential victims into opening an embedded link pointing to redirection chain leading to a Word document with malicious macros Cofense researchers who discovered the campaign found.
+A warning that the targets have to comply with the notice within two weeks is used in the phishing emails to add a sense of urgency that will entice the email readers to click on the link to find more information on why they have been ""subpoenaed.""
+
+
+Sample phishing email
+
+""You have 14 days to provide notice. If you do not so prepare yourself, the court will take place without you,"" the phishing email says.
+This campaign's operators also ask their potential victims to ""prepare all necessary documents that are listed in the attached file"" to maximize the user's incentive to click the malicious link.
+Once they click the link, the targets are sent through a multi-step redirection chain used to drop the final information stealer payload. 
+Thus, the link first opens a Google Docs document containing a redirector link to a OneDrive resource that downloads a Word document ""used as a first stage downloader to execute a sample of Predator the Thief.""
+""The macro, upon execution, downloads the malware via PowerShell, which is a sample of the Predator the Thief information stealer,"" the Cofense researchers also discovered.
+
+
+Redirection chain (Cofense)
+
+Predator the Thief is a publicly sold data stealer malware sold as a package containing a builder and a C2 panel. Its creators also provide customer support services via Telegram channels.
+After infecting a machine, this info stealer starts harvesting information from various folders including documents, and cryptocurrency .dat and .wallet Ethereum, Multibit, Electrum, Armory, Bytecoin, and Bitcoin files.
+The malware also collects cookies from an extensive list of web browsers including Chrome, Firefox, and a long list of lesser-known ones, account credentials for apps such as Filezilla, WinFTP, Steam, and Discord, as well as screen snapshots.
+All the data is then consolidated, packed, and sent to the malware's command-and-control (C2) server via HTTP POST requests, together with fingerprint data and network configurations.
+
+
+Stolen data prepared for exfiltration (fumik0)
+
+""Once the information is gathered and the sample has successfully exfiltrated the data to the C2, the binary then cleans up parts of the infection and self-terminates,"" the report also says.
+""This infection clean-up process makes it much harder for endpoint forensic investigations that do not leverage verbose event logs and an endpoint detection system.""
+An extensive list of indicators of compromise (IOCs) including IP addresses and domains for C2 servers and redirectors, as well as URLs for the documents used as lures in this campaign are available at the end of the Cofense report.
+
+
+",en,"
+
+
+
+
+
+
+
+
+
+
+
+Subpoena Phishing Emails Serve Nasty Predator Thief Infection
+06 Nov 2019, 14:00 by Sergiu Gatlan
+
+
+
+Phishers have been spotted delivering subpoena-themed emails spoofed to look like they're coming from the UK Ministry of Justice and attempting to infect their targets with Predator the Thief information stealer malware payloads.
+This malspam campaign mainly targeted retail and insurance companies, with the attackers trying to trick their potential victims into opening an embedded link pointing to redirection chain leading to a Word document with malicious macros Cofense researchers who discovered the campaign found.
+A warning that the targets have to comply with the notice within two weeks is used in the phishing emails to add a sense of urgency that will entice the email readers to click on the link to find more information on why they have been ""subpoenaed.""
+
+
+Sample phishing email
+
+""You have 14 days to provide notice. If you do not so prepare yourself, the court will take place without you,"" the phishing email says.
+This campaign's operators also ask their potential victims to ""prepare all necessary documents that are listed in the attached file"" to maximize the user's incentive to click the malicious link.
+Once they click the link, the targets are sent through a multi-step redirection chain used to drop the final information stealer payload. 
+Thus, the link first opens a Google Docs document containing a redirector link to a OneDrive resource that downloads a Word document ""used as a first stage downloader to execute a sample of Predator the Thief.""
+""The macro, upon execution, downloads the malware via PowerShell, which is a sample of the Predator the Thief information stealer,"" the Cofense researchers also discovered.
+
+
+Redirection chain (Cofense)
+
+Predator the Thief is a publicly sold data stealer malware sold as a package containing a builder and a C2 panel. Its creators also provide customer support services via Telegram channels.
+After infecting a machine, this info stealer starts harvesting information from various folders including documents, and cryptocurrency .dat and .wallet Ethereum, Multibit, Electrum, Armory, Bytecoin, and Bitcoin files.
+The malware also collects cookies from an extensive list of web browsers including Chrome, Firefox, and a long list of lesser-known ones, account credentials for apps such as Filezilla, WinFTP, Steam, and Discord, as well as screen snapshots.
+All the data is then consolidated, packed, and sent to the malware's command-and-control (C2) server via HTTP POST requests, together with fingerprint data and network configurations.
+
+
+Stolen data prepared for exfiltration (fumik0)
+
+""Once the information is gathered and the sample has successfully exfiltrated the data to the C2, the binary then cleans up parts of the infection and self-terminates,"" the report also says.
+""This infection clean-up process makes it much harder for endpoint forensic investigations that do not leverage verbose event logs and an endpoint detection system.""
+An extensive list of indicators of compromise (IOCs) including IP addresses and domains for C2 servers and redirectors, as well as URLs for the documents used as lures in this campaign are available at the end of the Cofense report.
+
+
+"

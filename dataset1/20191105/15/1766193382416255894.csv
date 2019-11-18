@@ -1,0 +1,96 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+VW optimiert Bus-Routen mit Quanten-Annealern
+Auf dem Web Summit in Lissabon steuern Busse erstmals mit einer Verkehrsnavigation, die auf Quanten-Annealern berechnet wird. Wir sind eine Tour mitgefahren.
+05 Nov 2019, 15:49 by Hartmut Gieselmann
+Volkswagen will den Verkehrsfluss in Städten optimieren. Zur Berechnung der optimalen Routen in Echtzeit arbeitet der Autohersteller mit D-Wave zusammen. Der kanadische Entwickler von Servern und Cloud-Dienstleistungen ist einer der ersten kommerziellen Anbieter von Quanten-Annealern. Diese sind darauf ausgerichtet, Optimierungsprobleme besonders schnell zu lösen.
+Nachdem VW die Routen von 418 Taxis in Bejing in einer nachträglichen Simulation optimiert hatte, läuft in Lissabon anlässlich des Web Summit der erste Realtime-Test. Neun Busse pendeln auf drei Linien zwischen dem Stadtzentrum und dem Konferenzgelände. Für den etwa halbstündigen Trip nutzen sie ein Navigationssystem, dessen Routen auf einem Quanten-Annealer von D-Wave in Vancouver berechnet werden.
+
+
+Im Cockpit der mittels VWs Quantum-Annealer-Projekt navigierenden Busse(Bild: heise online / Hartmut Gieselmann)
+
+Quanten-Annealer können als Vorbote des Quantencomputers betrachtet werden. Um die optimalen Routen zu berechnen, nutzt VW Verkehrsdaten von Here Maps. Die Busfahrer bekommen über ihr Navigationssystem auf einem Tablet alle zwei Minuten eine optimierte Route angezeigt.
+Rückkopplung auf den Verkehr
+Im Unterschied zu Google Maps berechnet das System den Einfluss, den jedes umgeleitete Fahrzeug auf den restlichen Verkehr haben wird. Bei einem Stau oder Verkehrsunfall werden etwa nicht alle Fahrzeuge auf dieselbe Ausweichroute umgeleitet, sondern auf die übrigen Straßen optimal verteilt, sodass ihre Fahrzeit möglichst kurz ausfällt.
+In Vorabsimulationen hat VW berechnet, dass eine solche Optimierung die Fahrzeit aller navigierten Fahrzeuge um bis zu 20 bis 30 Prozent verkürzen kann. In der Realität hängt viel von der allgemeinen Verkehrssituation ab. Sind alle Straßen verstopft, hilft auch keine Routen-Optimierung per Quanten-Annealer.
+Auf der Fahrt zum Web Summit verglichen wir die Route des Busses mit Berechnungen von Google Maps. Im Wesentlichen waren die Vorschläge identisch. Der VW-Algorithmus wählte jedoch an zwei Stellen Routen, die Google als ""gleichschnelle Alternativen"" markiert hatte.
+
+
+Akternativrouten bei Google Maps(Bild: heise online / Hartmut Gieselmann)
+
+Probelauf für öffentlichen Betrieb
+Dieser erste Feldtest soll zunächst beweisen, dass der auf Quanten-Annealer optimierte Algorithmus tatsächlich in Echtzeit funktioniert. Verbesserungen an die allgemeine Verkehrssituation sind durch ein solches System erst zu erwarten, wenn deutlich mehr Fahrzeuge durch die optimierte Wegfindung umgeleitet werden.
+Laut VW steht man mit Städten im Gespräch, die ihre Busflotten mit den Navigations-Geräten ausrüsten könnten. Als einer der ersten Kandidaten könnte München im kommenden Jahr seine Stadtbusse mit dem Navigationssystem von VW steuern. 2020 will D-Wave bereits seine nächste Generation von Quanten-Annealern fertig haben. Als Standort für einen ersten solchen Annealer in Europa nannte der Hersteller Jülich.
+
+Mehr zum Thema lesen Sie hier:
+
+
+
+Quanten-Annealer – Vorbote des Quantencomputers
+
+
+Verkehrsflussoptimierung mit einem D-Wave Quantum Annealer
+
+
+(emw)
+
+
+",de,"
+
+
+
+
+
+
+
+
+
+
+
+VW optimizes bus routes with quantum annealers
+At the Web Summit in Lisbon, buses will for the first time use a traffic navigation system calculated on quantum annealers. We took a tour with us.
+05 Nov 2019, 15:49 by Hartmut Gieselmann
+Volkswagen wants to optimize the flow of traffic in cities. The automaker works with D-Wave to calculate the optimal routes in real time. The Canadian developer of servers and cloud services is one of the first commercial providers of quantum annealers. These are designed to solve optimization problems very quickly.
+After VW optimized the routes of 418 taxis in Bejing in a subsequent simulation, the first real-time test will take place in Lisbon on the occasion of the Web Summit. Nine buses commute on three lines between the city center and the conference grounds. For the approximately half-hour trip, they use a navigation system whose routes are calculated on a quantum annealer by D-Wave in Vancouver.
+
+
+In the cockpit of the buses navigating by VW's Quantum Annealer project (Image: heise online / Hartmut Gieselmann)
+
+Quantum annealers can be seen as a harbinger of the quantum computer. To calculate the optimal routes, VW uses traffic data from Here Maps. Bus drivers get an optimized route every two minutes via their navigation system on a tablet.
+Feedback on the traffic
+Unlike Google Maps, the system calculates the impact each redirected vehicle will have on the rest of the traffic. In a traffic jam or traffic accident, for example, not all vehicles are diverted to the same alternative route, but optimally distributed to the remaining roads, so that their travel time is as short as possible.
+In pre-simulations, VW calculated that such an optimization can reduce the travel time of all navigated vehicles by up to 20 to 30 percent. In reality, much depends on the general traffic situation. If all roads are blocked, no route optimization via quantum annealer will help.
+On the way to the Web Summit, we compared the route of the bus with calculations from Google Maps. In essence, the proposals were identical. However, the VW algorithm chose routes in two places, which Google had labeled as ""equally fast alternatives"".
+
+
+Active routes on Google Maps (Image: heise online / Hartmut Gieselmann)
+
+Test run for public operation
+This first field test will first prove that the algorithm optimized for quantum annealer actually works in real time. Improvements to the general traffic situation can only be expected through such a system if significantly more vehicles are diverted through optimized route finding.
+According to VW, there is talk with cities that could equip their bus fleets with the navigation devices. As one of the first candidates, Munich could control its city buses with the VW navigation system next year. By 2020, D-Wave plans to complete its next generation of quantum annealers. The manufacturer named Jülich as the location for a first such annealer in Europe.
+
+Read more about this topic here:
+
+
+
+Quantum Annealer - Harbinger of the Quantum Computer
+
+
+Traffic flow optimization with a D-Wave Quantum Annealer
+
+
+(EMW)
+
+
+"

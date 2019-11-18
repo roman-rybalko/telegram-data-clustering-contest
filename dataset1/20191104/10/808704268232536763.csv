@@ -1,0 +1,56 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+
+OVHbills : nouvelle version pour l'outil de récupération de factures OVHcloud, qui passe en open source
+
+
+04 Nov 2019, 10:07
+
+Il est disponible depuis des années pour les clients de BlueRockTEL (une société proposant des solutions de facturation Telecom) sous la forme d'un script. Il s'agit désormais « d'une application Web, avec une interface graphique vous permettant de visualiser vos factures OVHcloud mois par mois, avec un récapitulatif mensuel et le détail de chaque facture ».
+Autres changements : il n'y a pas de limite sur le nombre de nic-handles OVHcloud gérés par l'application, il est possible d'ajouter un serveur FTP pour dupliquer les factures et enfin OVHbills est open source sur GitHub (licence MIT).
+
+
+Accéder au dépôt GitHub d'OVHbills
+
+
+
+
+",fr,"
+
+
+
+
+
+
+
+
+
+
+
+
+OVHbills: new version for the OVHcloud bill recovery tool, which goes into open source
+
+
+04 Nov 2019, 10:07
+
+It has been available for years for customers of BlueRockTEL (a company offering Telecom billing solutions) in the form of a script. It is now ""a web application, with a graphical interface allowing you to view your OVHcloud invoices month by month, with a monthly summary and details of each invoice.""
+Other changes: there is no limit on the number of OVHcloud nic-handles managed by the application, it is possible to add an FTP server to duplicate the invoices and finally OVHbills is open source on GitHub (MIT license) .
+
+
+Access OVHbills GitHub repository
+
+
+
+
+"

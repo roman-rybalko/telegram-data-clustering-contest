@@ -1,0 +1,74 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Actively exploited bug in fully updated Firefox is sending users into a tizzy
+Fraudulent tech-support sites cause Firefox to freeze while displaying scary message.
+05 Nov 2019, 13:00 by Dan Goodin
+Scammers are actively exploiting a bug in Firefox that causes the browser to lock up after displaying a message warning the computer is running a pirated version of Windows that has been hacked.
+The message, which appears without any user interaction upon visiting a site, reads:
+Please stop and do not close the PC... The registry key of your computer is locked. Why did we block your computer? The Windows registry key is illegal. The Windows desktop is using pirated software. The Window desktop sends viruses over the Internet. This Windows desktop is hacked. We block this computer for your safety.
+The message then advises the person to call a toll-free number in the next five minutes or face having the computer disabled. Below is a GIF showing the attack flow:
+
+
+Jérôme Segura
+
+The attack works on both Windows and Mac versions of the open source browser. The only way to close the window is to force-close the entire browser using either the Windows task manager or the Force Close function in macOS. Even then, Firefox will reopen previously open tabs, resulting in an endless loop. (Update: as a commenter pointed out, restore tabs is turned off by default.) To resolve the problem, users must force-close Firefox and then, immediately upon restarting it, quickly close the tab of the scammer site before it has time to load.
+Jérôme Segura, head of threat intelligence at security provider Malwarebytes, said the Firefox bug is being exploited by several sites, including d2o1sv4d11x6bc[.]cloudfront[.]net/firefox/index.html. He said the offending code on the site was written specifically to target the browser flaw.
+
+
+Jérôme Segura
+
+On Monday, Segura reported the bug to the Bugzilla forum. He said he has since received word Mozilla is actively working on a fix. In a statement sent seven hours after this post went live, a Mozilla representative wrote: """"We are working on a fix to the authentication prompt bug (https://bugzilla.mozilla.org/show_bug.cgi?id=1593795) that we expect to land in the next couple of releases (either in Firefox 71 or 72).""
+Firefox is hardly alone in having bugs that cause the browsers to hang indefinitely while displaying a confusing or scary page. Chrome has had its share of similar flaws, which have also been exploited in the wild. Google developers have since fixed both of them.
+The exploit spotted by Segura is a common subclass of browser lock attacks. This subclass relies on authentication popups. Earlier this year, Mozilla shipped a comprehensive fix for these types of attacks some 12 years after being reported. Chrome and other browsers have also been vulnerable to this variety of attacks.
+Segura said he's aware of a separate Firefox browser lock bug that remains unfixed two years after it was reported. Although it was actively exploited in the past, Segura said, he hasn't seen any recent attacks targeting the flaw.
+For many people, it's not clear what to do when a browser becomes unresponsive while displaying a scary or threatening message. The most important thing to do is to remain calm and not make any sudden response. Force quitting the browser can be helpful, but as Segura has found, that fix is far from ideal since the offending site can reload once the browser is restarted. Whatever else people may do, they should never call the phone number displayed.
+
+
+",en,"
+
+
+
+
+
+
+
+
+
+
+
+Actively exploited bug in fully updated Firefox is sending users into a tizzy
+Fraudulent tech-support sites cause Firefox to freeze while displaying scary message.
+05 Nov 2019, 13:00 by Dan Goodin
+Scammers are actively exploiting a bug in Firefox that causes the browser to lock up after displaying a message warning the computer is running a pirated version of Windows that has been hacked.
+The message, which appears without any user interaction upon visiting a site, reads:
+Please stop and do not close the PC... The registry key of your computer is locked. Why did we block your computer? The Windows registry key is illegal. The Windows desktop is using pirated software. The Window desktop sends viruses over the Internet. This Windows desktop is hacked. We block this computer for your safety.
+The message then advises the person to call a toll-free number in the next five minutes or face having the computer disabled. Below is a GIF showing the attack flow:
+
+
+Jérôme Segura
+
+The attack works on both Windows and Mac versions of the open source browser. The only way to close the window is to force-close the entire browser using either the Windows task manager or the Force Close function in macOS. Even then, Firefox will reopen previously open tabs, resulting in an endless loop. (Update: as a commenter pointed out, restore tabs is turned off by default.) To resolve the problem, users must force-close Firefox and then, immediately upon restarting it, quickly close the tab of the scammer site before it has time to load.
+Jérôme Segura, head of threat intelligence at security provider Malwarebytes, said the Firefox bug is being exploited by several sites, including d2o1sv4d11x6bc[.]cloudfront[.]net/firefox/index.html. He said the offending code on the site was written specifically to target the browser flaw.
+
+
+Jérôme Segura
+
+On Monday, Segura reported the bug to the Bugzilla forum. He said he has since received word Mozilla is actively working on a fix. In a statement sent seven hours after this post went live, a Mozilla representative wrote: """"We are working on a fix to the authentication prompt bug (https://bugzilla.mozilla.org/show_bug.cgi?id=1593795) that we expect to land in the next couple of releases (either in Firefox 71 or 72).""
+Firefox is hardly alone in having bugs that cause the browsers to hang indefinitely while displaying a confusing or scary page. Chrome has had its share of similar flaws, which have also been exploited in the wild. Google developers have since fixed both of them.
+The exploit spotted by Segura is a common subclass of browser lock attacks. This subclass relies on authentication popups. Earlier this year, Mozilla shipped a comprehensive fix for these types of attacks some 12 years after being reported. Chrome and other browsers have also been vulnerable to this variety of attacks.
+Segura said he's aware of a separate Firefox browser lock bug that remains unfixed two years after it was reported. Although it was actively exploited in the past, Segura said, he hasn't seen any recent attacks targeting the flaw.
+For many people, it's not clear what to do when a browser becomes unresponsive while displaying a scary or threatening message. The most important thing to do is to remain calm and not make any sudden response. Force quitting the browser can be helpful, but as Segura has found, that fix is far from ideal since the offending site can reload once the browser is restarted. Whatever else people may do, they should never call the phone number displayed.
+
+
+"

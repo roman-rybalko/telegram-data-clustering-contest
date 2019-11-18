@@ -1,0 +1,58 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Un año después, el famoso teclado ai.type sigue poniendo en peligro a sus usuarios: ahora con compras no autorizadas
+04 Nov 2019, 16:45 by Christian Collado
+Sus cerca de 40 millones de instalaciones en Google Play, y una valoración por parte de los usuarios de 4,2 sobre 5 estrellas esconden una realidad muy turbia: después de que a principios del año pasado se descubriese que el famoso teclado ai.type para Android había puesto en peligro a sus usuarios al almacenar datos privados en servidores desprotegidos, ahora la aplicación ha sido cazada por los expertos en seguridad de Upstream, utilizando técnicas fraudulentas de publicidad e intentando suscribir a sus usuarios en servicios de pago no autorizados.
+Según la investigación llevada a cabo por Upstream, la aplicación habría generado millones de dólares a través de estas y otras técnicas fraudulentas, consistentes en mostrar anuncios de manera invisible al usuario, así como recopilando “clicks” falsos con los que generar aún más ingresos. Además, para evitar sospechas, los creadores de la aplicación intentaban ocultar su actividad bajo otras identidades, a través de tácticas como la de intentar hacerse pasar por aplicaciones de terceros, entre ellas la de la popular plataforma de audio SoundCloud.
+Desinstala ai.type de tu móvil: la app intentó estafar cerca de 18 millones de dólares
+
+
+
+Desde Upstream aseguran que en los últimos meses han sido capaces de detectar y bloquear más de 14 millones de transacciones sospechosas provenientes de 110.000 dispositivos distintos con la app ai.type free emoji keyboard instalada. De no haber sido bloqueadas, las transacciones, correspondientes a compras de contenido digital premium, hubieran costado a las víctimas cerca de 18 millones de dólares.
+Lamentablemente, Google no ha procedido a la eliminación de dos de las apps de la compañía desarrolladora de ai.type de Play Store, y entre muchas otras apps publicadas por ai.type LTD, tanto la variante de pago del teclado, con cerca de 40 millones de instalaciones, como su versión gratuita ai.type lite siguen estando disponibles en la tienda.
+En el informe donde se detalla el procedimiento de la estafa, se indica que la aplicación contenía librerías –o SDK– de publicidad con código ofuscado, destinadas a mostrar publicidad a los usuarios, y posteriormente generar toques falsos en los anuncios.
+Esta técnica, entre otras cosas, podía causar un aumento en el consumo de energía, datos y memoria de los dispositivos afectados, que en última instancia se traducía en un rendimiento degradado.
+Por tanto, si tenías instalada la app en cuestión, probablemente sea buena idea eliminarla cuanto antes de tu dispositivo y asegurarte de que no has sido víctima de la estafa. Tampoco vendría mal deshacerse de cualquier otra herramienta creada por los desarrolladores de ai.type.
+Síguenos en Instagram Únete a nuestro canal de Telegram
+
+
+",es,"
+
+
+
+
+
+
+
+
+
+
+
+A year later, the famous ai.type keyboard continues to endanger its users: now with unauthorized purchases
+04 Nov 2019, 16:45 by Christian Collado
+Its nearly 40 million installations on Google Play, and an appraisal by users of 4.2 out of 5 stars hide a very murky reality: after at the beginning of last year it was discovered that the famous ai.type keyboard for Android had endangered its users by storing private data on unprotected servers, now the application has been hunted by Upstream security experts, using fraudulent advertising techniques and trying to subscribe its users to unauthorized payment services.
+According to the investigation carried out by Upstream, the application would have generated millions of dollars through these and other fraudulent techniques, consisting of displaying ads in an invisible way to the user, as well as collecting false clicks with which to generate even more income. In addition, to avoid suspicion, the creators of the application tried to hide their activity under other identities, through tactics such as trying to impersonate third-party applications, including the popular SoundCloud audio platform.
+Uninstall ai.type from your mobile: the app tried to scam about 18 million dollars
+
+
+
+From Upstream they say that in recent months they have been able to detect and block more than 14 million suspicious transactions from 110,000 different devices with the ai.type free emoji keyboard app installed. If they had not been blocked, the transactions, corresponding to purchases of premium digital content, would have cost the victims about $ 18 million.
+Unfortunately, Google has not removed two of the apps from the developer of ai.type from the Play Store, and among many other apps published by ai.type LTD, both the keyboard payment variant, with about 40 Millions of installations, such as its free version ai.type lite are still available in the store.
+In the report where the procedure of the scam is detailed, it is indicated that the application contained libraries - or SDK - of advertising with obfuscated code, intended to show advertising to users, and subsequently generate false touches in the advertisements.
+This technique, among other things, could cause an increase in the energy, data and memory consumption of the affected devices, which ultimately resulted in degraded performance.
+Therefore, if you had the app in question installed, it is probably a good idea to remove it as soon as possible from your device and make sure you have not been a victim of the scam. Nor would it hurt to get rid of any other tool created by the developers of ai.type.
+Follow us on Instagram Join our Telegram channel
+
+
+"

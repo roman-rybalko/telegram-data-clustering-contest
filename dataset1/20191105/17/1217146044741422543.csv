@@ -1,0 +1,110 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+WordPress Admins Infect Their Sites With WP-VCD via Pirated Plugins
+05 Nov 2019, 17:50 by Sergiu Gatlan
+
+
+
+WordPress sites have been the target of a highly active malicious campaign that infects them with a malware dubbed WP-VCD that hides in plain sight and quickly spreads to the entire website.
+The group of hackers behind it have also made sure that their malicious payload is also very hard to get rid of once it manages to compromise a site. To make things worse, the malware is also designed to scan its way through the hosting server and infect any other WordPress sites it finds.
+WP-VCD is spread by the most active malicious campaign impacting WordPress sites as of late, with the Wordfence threat intelligence team that took a closer look at it associating ""individual WP-VCD malware samples with a higher rate of new infections than any other WordPress malware since August 2019.""
+The malware is also ""installed on more new sites per week than any other malware in recent months"" and ""the campaign shows no signs of slowing down.""
+This is quite remarkable given that the malware has been doing rounds for more than two years, with the first publicly reported case of a WP-VCD infection going as far as February 2017, and users reporting infections and asking for advice on how to get rid of them on the WordPress Support forum [1, 2, 3, 4, 5] and in various other places on the Internet. [1, 2, 3]
+
+
+WP-VCD distribution sites in Google search results (Wordfence)
+
+Pirated plugins and compromised sites used for distribution
+While threat actors usually take advantage of CMS security vulnerabilities impacting the WordPress platform to infiltrate websites and inject malicious code, in the case of WP-VCD the webmasters are the ones who spread the infection to their websites.
+This happens because the malware is disseminated using pirated (also known as nulled) copies of WordPress themes and plugins currently distributed via a large network of malicious sites. These will usually be in the first few results in Google search results and that push legitimate sources of WordPress plugins way down the page.
+To be able to build such an efficient distribution platform promoting their malware riddled sites, WP-VCD's operators made use of extensive viral marketing via black hat SEO tricks like backlink and keyword injection within sites they compromised.
+
+
+WP-VCD distribution sites (Wordfence)
+
+""This functionality provides the fuel for the campaign’s viral marketing loop. A site owner finds a nulled theme due to its high search engine visibility, then installs it on their site,"" Wordfence found.
+Their nulled content distribution network uses ​download-freethemes[.]download as the central download server enabling the group to spread the same version of the malware through all malware shipping sites.
+WordPress site owners and webmasters can very easily prevent a WP-VCD infection according to Wordfence which recommends them to not install nulled themes and plugins. Also, ""if you’ve hired a developer to build a new WordPress site, ensure they are sourcing all of their content responsibly.""
+Wordfence also provides a site cleaning guide for owners of already infected sites and a detailed procedure on how to secure WordPress websites to prevent future attacks.
+WP-VCD infection and monetization
+""The WP-VCD malware propagates across that site, and potentially more if present in the same hosting environment, and injects backlinks into all of them. These backlinks go onto drive even more traffic to the infected nulled themes, and the cycle continues.""
+Once the pirated theme or plugin is activated on a WordPress site, the malware will execute a deployer script that injects a backdoor within all installed theme files and resets the timestamps to match the values before the injection process to evade detection.
+The backdoor ""can receive instructions via both inbound and outbound requests, making its activity more difficult to track"" and it allows the operators to deploy malicious code to all infected sites to ""activate malvertising injections or manipulate search engine results for their sites as needed, then remove it from their entire network simply by removing the code from their server.""
+The WP-VCD group uses the network of infected WordPress sites for viral marketing that allows them to quickly rack up ad revenue.
+If the money flow coming from siphoning ad revenue dries up, they can very easily switch the black hat SEO machine back on and boost their malware distribution sites in Google SERP to redirect search engine traffic which leads to more victims getting infected.
+
+
+Injecting the backdoor in a theme file (Wordfence)
+
+The malware deployer script is also responsible for phoning back home to the command-and-control (C2) server and to send the attackers the compromised site's address and the backdoor's hardcoded password. Wordfence detected more than one hundred WP-VCD C2 domains while monitoring the latest infections.
+Once it fully compromises a site, the deployer is also tasked with the removal of the malicious code from the nulled plugin or theme installed by the webmaster.
+""Behind the scenes, extensive command and control (C2) infrastructure and self-healing infections allow attackers to maintain a persistent foothold on these infected sites,"" Wordfence threat analyst Mikey Veenstra found.
+More details on the inner workings of this malware and a full list of indicators of compromised (IOCs) including nulled content distribution sites, C2 domains, black hat SEO domains, and propeller ads domains used in the campaign are available at the end of Wordfence's WP-VCD: The Malware You Installed On Your Own Site whitepaper.
+
+
+",en,"
+
+
+
+
+
+
+
+
+
+
+
+WordPress Admins Infect Their Sites With WP-VCD via Pirated Plugins
+05 Nov 2019, 17:50 by Sergiu Gatlan
+
+
+
+WordPress sites have been the target of a highly active malicious campaign that infects them with a malware dubbed WP-VCD that hides in plain sight and quickly spreads to the entire website.
+The group of hackers behind it have also made sure that their malicious payload is also very hard to get rid of once it manages to compromise a site. To make things worse, the malware is also designed to scan its way through the hosting server and infect any other WordPress sites it finds.
+WP-VCD is spread by the most active malicious campaign impacting WordPress sites as of late, with the Wordfence threat intelligence team that took a closer look at it associating ""individual WP-VCD malware samples with a higher rate of new infections than any other WordPress malware since August 2019.""
+The malware is also ""installed on more new sites per week than any other malware in recent months"" and ""the campaign shows no signs of slowing down.""
+This is quite remarkable given that the malware has been doing rounds for more than two years, with the first publicly reported case of a WP-VCD infection going as far as February 2017, and users reporting infections and asking for advice on how to get rid of them on the WordPress Support forum [1, 2, 3, 4, 5] and in various other places on the Internet. [1, 2, 3]
+
+
+WP-VCD distribution sites in Google search results (Wordfence)
+
+Pirated plugins and compromised sites used for distribution
+While threat actors usually take advantage of CMS security vulnerabilities impacting the WordPress platform to infiltrate websites and inject malicious code, in the case of WP-VCD the webmasters are the ones who spread the infection to their websites.
+This happens because the malware is disseminated using pirated (also known as nulled) copies of WordPress themes and plugins currently distributed via a large network of malicious sites. These will usually be in the first few results in Google search results and that push legitimate sources of WordPress plugins way down the page.
+To be able to build such an efficient distribution platform promoting their malware riddled sites, WP-VCD's operators made use of extensive viral marketing via black hat SEO tricks like backlink and keyword injection within sites they compromised.
+
+
+WP-VCD distribution sites (Wordfence)
+
+""This functionality provides the fuel for the campaign’s viral marketing loop. A site owner finds a nulled theme due to its high search engine visibility, then installs it on their site,"" Wordfence found.
+Their nulled content distribution network uses ​download-freethemes[.]download as the central download server enabling the group to spread the same version of the malware through all malware shipping sites.
+WordPress site owners and webmasters can very easily prevent a WP-VCD infection according to Wordfence which recommends them to not install nulled themes and plugins. Also, ""if you’ve hired a developer to build a new WordPress site, ensure they are sourcing all of their content responsibly.""
+Wordfence also provides a site cleaning guide for owners of already infected sites and a detailed procedure on how to secure WordPress websites to prevent future attacks.
+WP-VCD infection and monetization
+""The WP-VCD malware propagates across that site, and potentially more if present in the same hosting environment, and injects backlinks into all of them. These backlinks go onto drive even more traffic to the infected nulled themes, and the cycle continues.""
+Once the pirated theme or plugin is activated on a WordPress site, the malware will execute a deployer script that injects a backdoor within all installed theme files and resets the timestamps to match the values before the injection process to evade detection.
+The backdoor ""can receive instructions via both inbound and outbound requests, making its activity more difficult to track"" and it allows the operators to deploy malicious code to all infected sites to ""activate malvertising injections or manipulate search engine results for their sites as needed, then remove it from their entire network simply by removing the code from their server.""
+The WP-VCD group uses the network of infected WordPress sites for viral marketing that allows them to quickly rack up ad revenue.
+If the money flow coming from siphoning ad revenue dries up, they can very easily switch the black hat SEO machine back on and boost their malware distribution sites in Google SERP to redirect search engine traffic which leads to more victims getting infected.
+
+
+Injecting the backdoor in a theme file (Wordfence)
+
+The malware deployer script is also responsible for phoning back home to the command-and-control (C2) server and to send the attackers the compromised site's address and the backdoor's hardcoded password. Wordfence detected more than one hundred WP-VCD C2 domains while monitoring the latest infections.
+Once it fully compromises a site, the deployer is also tasked with the removal of the malicious code from the nulled plugin or theme installed by the webmaster.
+""Behind the scenes, extensive command and control (C2) infrastructure and self-healing infections allow attackers to maintain a persistent foothold on these infected sites,"" Wordfence threat analyst Mikey Veenstra found.
+More details on the inner workings of this malware and a full list of indicators of compromised (IOCs) including nulled content distribution sites, C2 domains, black hat SEO domains, and propeller ads domains used in the campaign are available at the end of Wordfence's WP-VCD: The Malware You Installed On Your Own Site whitepaper.
+
+
+"

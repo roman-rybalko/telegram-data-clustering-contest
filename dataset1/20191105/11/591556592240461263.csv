@@ -1,0 +1,84 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Canadian Nunavut government systems crippled by ransomware
+05 Nov 2019, 11:44 by Charlie Osborne
+
+The lockdown has impacted medical, legal, and social services.
+
+
+
+
+Canadian government IT systems have been forced into lockdown after a successful ransomware attack.  On Monday, government officials for the Nunavut region said that over the weekend, a ""new and sophisticated type of ransomware"" struck the territory. All government services -- with the exception of an energy corporation -- that rely on access to electronic information stored by the authority have been impacted. 
+This includes medical services, family and education, finance, and the Nunavut legal system. Government officials say that contingency plans are in place to restore uninterrupted service to these areas and recovery ""is a priority."" Some services are open but others are facing delays. When it comes to medical appointments, for example, as accessing patient data may be difficult, residents are being asked to bring their health cards and medication to appointments, for now. 
+""I want to assure Nunavummiut that we are working non-stop to resolve this issue,"" said Premier Joe Savikataaq. ""There will likely be some delays as we get back online, and I thank everyone for their patience and understanding."" See also: What is ransomware? Everything you need to know about one of the biggest menaces on the web
+Ransomware is a form of malware that attempts to exhort payment out of victims by focusing not on data theft, surveillance, or destruction, but rather by encrypting files and systems to lock users out or make it impossible to access their files.  New forms of ransomware are constantly appearing on the scene, and while cybersecurity researchers are constantly fighting against the threat by creating and releasing free decryption key generators when possible, some of us still do pay up rather than lose our content -- which ensures the criminal activities of operators remain lucrative.  In this case, the relatively new malware variant DoppelPaymer is suspected. The ransomware managed to infiltrate the Nunavut network, encrypting files on servers and workstations as a result. According to CrowdStrike, DoppelPaymer -- similar to BitPaymer in many respects -- uses a Tor-based payment portal and unique ID to identify victims. 2048-bit RSA and 256-bit AES encryption are used and impacted files are renamed with the .locked extension. CNET: Huawei ban: Full timeline as FCC says it'll cut off carriers using Chinese company's gear Ransom demands connected to DoppelPaymer range from 2 to 100 Bitcoin (BTC), or roughly $18,000 to $930,000 at the time of writing.  Speaking to CBC, Martin Joy, Nunavut's director of information, communications and technology said that all Word and PDF documents have been encrypted. Government employees are also locked out of their accounts and are unable to access email.  It is not believed that individual records or data has been put at risk. TechRepublic: Wanted: More women hackers Once the ransomware infection was identified, officials isolated the network, pulled in cybersecurity experts from companies including FireEye and Microsoft, and began to investigate.  Nunavut officials hope to restore the ""majority"" of files from backups but cannot provide recovery timelines at this stage. However, at least a week is estimated before services resume normal operation.
+Previous and related coverage
+
+
+Ransomware hits Spanish companies sparking WannaCry panic
+
+
+Paradise ransomware: Now victims can get their files back for free with this decryption tool
+
+
+Ransomware: These are the most common attacks targeting you right now
+
+
+
+Have a tip? Get in touch securely via WhatsApp | Signal at +447713 025 499, or over at Keybase: charlie0
+
+
+
+",en,"
+
+
+
+
+
+
+
+
+
+
+
+Canadian Nunavut government systems crippled by ransomware
+05 Nov 2019, 11:44 by Charlie Osborne
+
+The lockdown has impacted medical, legal, and social services.
+
+
+
+
+Canadian government IT systems have been forced into lockdown after a successful ransomware attack.  On Monday, government officials for the Nunavut region said that over the weekend, a ""new and sophisticated type of ransomware"" struck the territory. All government services -- with the exception of an energy corporation -- that rely on access to electronic information stored by the authority have been impacted. 
+This includes medical services, family and education, finance, and the Nunavut legal system. Government officials say that contingency plans are in place to restore uninterrupted service to these areas and recovery ""is a priority."" Some services are open but others are facing delays. When it comes to medical appointments, for example, as accessing patient data may be difficult, residents are being asked to bring their health cards and medication to appointments, for now. 
+""I want to assure Nunavummiut that we are working non-stop to resolve this issue,"" said Premier Joe Savikataaq. ""There will likely be some delays as we get back online, and I thank everyone for their patience and understanding."" See also: What is ransomware? Everything you need to know about one of the biggest menaces on the web
+Ransomware is a form of malware that attempts to exhort payment out of victims by focusing not on data theft, surveillance, or destruction, but rather by encrypting files and systems to lock users out or make it impossible to access their files.  New forms of ransomware are constantly appearing on the scene, and while cybersecurity researchers are constantly fighting against the threat by creating and releasing free decryption key generators when possible, some of us still do pay up rather than lose our content -- which ensures the criminal activities of operators remain lucrative.  In this case, the relatively new malware variant DoppelPaymer is suspected. The ransomware managed to infiltrate the Nunavut network, encrypting files on servers and workstations as a result. According to CrowdStrike, DoppelPaymer -- similar to BitPaymer in many respects -- uses a Tor-based payment portal and unique ID to identify victims. 2048-bit RSA and 256-bit AES encryption are used and impacted files are renamed with the .locked extension. CNET: Huawei ban: Full timeline as FCC says it'll cut off carriers using Chinese company's gear Ransom demands connected to DoppelPaymer range from 2 to 100 Bitcoin (BTC), or roughly $18,000 to $930,000 at the time of writing.  Speaking to CBC, Martin Joy, Nunavut's director of information, communications and technology said that all Word and PDF documents have been encrypted. Government employees are also locked out of their accounts and are unable to access email.  It is not believed that individual records or data has been put at risk. TechRepublic: Wanted: More women hackers Once the ransomware infection was identified, officials isolated the network, pulled in cybersecurity experts from companies including FireEye and Microsoft, and began to investigate.  Nunavut officials hope to restore the ""majority"" of files from backups but cannot provide recovery timelines at this stage. However, at least a week is estimated before services resume normal operation.
+Previous and related coverage
+
+
+Ransomware hits Spanish companies sparking WannaCry panic
+
+
+Paradise ransomware: Now victims can get their files back for free with this decryption tool
+
+
+Ransomware: These are the most common attacks targeting you right now
+
+
+
+Have a tip? Get in touch securely via WhatsApp | Signal at +447713 025 499, or over at Keybase: charlie0
+
+
+
+"

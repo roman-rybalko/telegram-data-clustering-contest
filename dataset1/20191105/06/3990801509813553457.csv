@@ -1,0 +1,54 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Spanish IT firm infected with ransomware in continued attacks on supply chains
+05 Nov 2019, 06:13 by Ravie Lakshmanan
+Two major Spanish companies, including radio company Sociedad Española de Radiodifusión (Cadena SER) and NTT-owned IT services firm Everis, have become the latest victims of a targeted ransomware attack.
+The attack is said to have begun in the early hours of Monday, according to Spanish daily ABC. Indications are that the ransomware strain that hit Everis is a version of BitPaymer, which has been used increasingly used by attackers to lock down compromised systems on a breached network.
+It’s worth pointing out that this is the second time Spanish businesses have been hit by ransomware infections, the first being the notorious WannaCry attacks of 2017.
+As a precautionary measure, both the impacted companies have shut down computers and disconnected their networks from the internet.
+The attackers reportedly demanded Everis for a €750,000 ($835,923) ransom to get a decryption key to unlock their files, bitcoin.es reported. But there is no indication that the amount has been paid.
+The ransomware strain that hit Cadena SER is not yet known publicly, although the National Cybersecurity Institute (INCIBE) is currently assisting the radio station in restoring their encrypted data and get their systems back online.
+The country’s Department of National Security (DSN) acknowledged the attack, stating the “objective is the encryption of files, which has had a widespread impact on all its computer systems.”
+Though not confirmed, multiple reports suspect that the attackers might have used the BlueKeep RDP vulnerability to remotely compromise the company’s servers.
+Incidentally, security researchers uncovered the first mass-hacking campaign that leverages the aforementioned remote code execution flaw — for which Microsoft had issued a fix back in May — in Windows Remote Desktop Services to take over unpatched target systems and install a cryptocurrency miner.
+As managed service providers increasingly become the target of cyber attacks, it highlights the need to safeguard the digital supply chain by segmenting critical network infrastructure using firewalls and conducting periodic security audits to identify gaps and weaknesses.
+
+
+",en,"
+
+
+
+
+
+
+
+
+
+
+
+Spanish IT firm infected with ransomware in continued attacks on supply chains
+05 Nov 2019, 06:13 by Ravie Lakshmanan
+Two major Spanish companies, including radio company Sociedad Española de Radiodifusión (Cadena SER) and NTT-owned IT services firm Everis, have become the latest victims of a targeted ransomware attack.
+The attack is said to have begun in the early hours of Monday, according to Spanish daily ABC. Indications are that the ransomware strain that hit Everis is a version of BitPaymer, which has been used increasingly used by attackers to lock down compromised systems on a breached network.
+It’s worth pointing out that this is the second time Spanish businesses have been hit by ransomware infections, the first being the notorious WannaCry attacks of 2017.
+As a precautionary measure, both the impacted companies have shut down computers and disconnected their networks from the internet.
+The attackers reportedly demanded Everis for a €750,000 ($835,923) ransom to get a decryption key to unlock their files, bitcoin.es reported. But there is no indication that the amount has been paid.
+The ransomware strain that hit Cadena SER is not yet known publicly, although the National Cybersecurity Institute (INCIBE) is currently assisting the radio station in restoring their encrypted data and get their systems back online.
+The country’s Department of National Security (DSN) acknowledged the attack, stating the “objective is the encryption of files, which has had a widespread impact on all its computer systems.”
+Though not confirmed, multiple reports suspect that the attackers might have used the BlueKeep RDP vulnerability to remotely compromise the company’s servers.
+Incidentally, security researchers uncovered the first mass-hacking campaign that leverages the aforementioned remote code execution flaw — for which Microsoft had issued a fix back in May — in Windows Remote Desktop Services to take over unpatched target systems and install a cryptocurrency miner.
+As managed service providers increasingly become the target of cyber attacks, it highlights the need to safeguard the digital supply chain by segmenting critical network infrastructure using firewalls and conducting periodic security audits to identify gaps and weaknesses.
+
+
+"

@@ -1,0 +1,84 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Кварцевое стекло позволит хранить данные сотни лет
+05 Nov 2019, 13:13 by Тимур Ягофаров
+Microsoft Research заявила о первом успешном опыте сохранения информации с применением технологии записи данных в толще кварцевого стекла, которая создавалась в рамках Project Silica.Суть  Project Silica заключается в том, что для долговременного хранения информации используется пластина кварцевого стекла толщиной 2 мм, в которой с помощью лазера формируются, так называемые, воксели. Это деформации структуры стекла, возникающие из-за воздействия инфракрасного лазера, впоследствии считываются, так как они вызывают поляризацию света.
+
+
+
+Плотность размещения вокселей такова, что в слое 2 мм стекла может разместиться свыше 100 слоев. При этом размер всей пластины составляет 75x75 мм, что позволяет вместить 75,6 Гб данных.Уникальность этой технологии заключается в том, что она чрезвычайно устойчива к воздействию окружающей среды и не боится ни сильных электромагнитных полей, ни механического воздействия на поверхность стекла. По признанию разработчиков, они даже натирали стекло металлической щеткой, что не помешало читывать информацию. Но не стоит рассчитывать на то, что эта технология выйдет на массовый рынок. Она изначально нацеливалась на применение в облачной среде для архивного хранения. Дело в том, что долгосрочные расходы на хранение обусловлены необходимостью многократно перезаписывать данные на новые носители, чтобы избежать потери информации. Жесткие диски могут износиться через три-пять лет. Магнитная лента может продержаться от пяти до семи лет. Форматы файлов устаревают, а обновления стоят дорого. Стеклянные носители могут стать более дешевым вариантом, поскольку записать данные на стекло достаточно всего один раз. Фемтосекундные лазеры с ультракороткими оптическими импульсами, обычно использующиеся в LASIK-хирургии, — перманентно изменяют структуру стекла, поэтому данные могут сохраняться веками. Кварцевое стекло не требует ни энерго-затратного кондиционирования для поддержания постоянной температуры, ни осушения воздуха, благодаря чему снижается воздействие на окружающую среду при больших объемах хранения данных.Примечательно, что в первом публичном эксперименте Project Silica на носитель из кварцевого стекла был записан фильм «Супермен» 1978 года. Это было сделано в рамках сотрудничества Microsoft и Warner Bros. Голливудская студия прикладывает большие усилия для сохранения своей объемной коллекции фильмов, записей радио-передач 1940-х годов, телесериалов и хроник киносъемок. Примечательно, что для повышенной надежности каждый из объектов хранилища дублируется в трех экземплярах – два в цифровой форме, а один в том исходном виде, в каком он был создан, будь то кино- или магнитная пленка.
+
+
+Старший исследователь оптики Джеймс Клегг загружает стекло в аппарат для чтения информации
+
+Что же касается Project Silica, то он нацелен на хранение так называемых «холодных» данных — ценных архивов или таких данных, которые компании обязаны хранить, но к которым не нужно часто обращаться. Сюда могут входить медицинские записи, требующие хранения в течение всей жизни пациента, финансовые отчеты, юридические контракты, информация о геологоразведке, планы градостроительства и т.д.
+
+
+
+На старте Project Silica, Microsoft начала сотрудничество с Центром оптоэлектронных исследований Университета Саутгемптона, где исследователи впервые продемонстрировали, как превратить стекло в хранилище данных с помощью фемтосекундных лазеров. Благодаря инвестициям от Azure, британская лаборатория Microsoft в Кембридже собрала для дальнейшего развития этой технологии команду специалистов из разных областей науки: физиков, экспертов по оптике, инженеров-электриков и исследователей, имеющих опыт разработки хранилищ данных. Исследователи тесно сотрудничали с коллегами из Azure, чтобы при разработке Project Silica учитывать повседневные задачи и требования коммерческого облачного хранилища.Признайтесь, а доводилось ли вам решать задачу переноса данных с вышедших из широкого применения форматов или с ушедших в историю носителей? Как считаете, может быть востребовано на массовом рынке нечто подобное?
+
+Вы можете подписаться на наш Telegram-канал для получения наиболее интересной информации
+
+
+Читайте также
+
+
+
+
+
+
+
+
+",ru,"
+
+
+
+
+
+
+
+
+
+
+
+Quartz glass allows you to store data for hundreds of years
+05 Nov 2019, 13:13 by Timur Yagofarov
+Microsoft Research announced the first successful data storage experience using data recording technology in the thickness of quartz glass, which was created as part of Project Silica. The essence of Project Silica is that a 2 mm thick quartz glass plate is used for long-term storage of information, in which using lasers form so-called voxels. These deformations of the glass structure resulting from the action of an infrared laser are subsequently read out, since they cause polarization of light.
+
+
+
+The density of voxels is such that more than 100 layers can be placed in a layer of 2 mm glass. At the same time, the size of the entire plate is 75x75 mm, which can accommodate 75.6 GB of data. The uniqueness of this technology lies in the fact that it is extremely resistant to environmental influences and is not afraid of either strong electromagnetic fields or mechanical effects on the glass surface. According to the developers, they even rubbed the glass with a metal brush, which did not stop reading the information. But do not count on the fact that this technology will enter the mass market. It initially aimed at using in a cloud environment for archival storage. The fact is that long-term storage costs are due to the need to repeatedly overwrite data on new media in order to avoid loss of information. Hard drives can wear out after three to five years. Magnetic tape can last from five to seven years. File formats are outdated, and updates are expensive. Glass media can be a cheaper option, as it is enough to write data to glass only once. Femtosecond lasers with ultrashort optical pulses, usually used in LASIK surgery, permanently change the structure of glass, so data can be stored for centuries. Quartz glass requires neither energy-consuming conditioning to maintain a constant temperature, nor air dehumidification, which reduces the environmental impact with large amounts of data storage. It is noteworthy that in the first public experiment Project Silica, the film “Superman” was recorded on a quartz glass carrier ""1978. This was done as part of a collaboration between Microsoft and Warner Bros. The Hollywood studio makes great efforts to maintain its voluminous collection of films, recordings of radio broadcasts of the 1940s, television series and film chronicles. It is noteworthy that for increased reliability, each of the storage facilities is duplicated in triplicate - two in digital form, and one in the original form in which it was created, whether it be film or magnetic tape.
+
+
+Optics senior researcher James Clegg loads glass into an information reader
+
+As for Project Silica, it aims to store the so-called “cold” data - valuable archives or such data that companies are required to store, but which do not need to be accessed often. This may include medical records that require storage throughout the patient’s life, financial reports, legal contracts, exploration information, urban development plans, etc.
+
+
+
+At the start of Project Silica, Microsoft began working with the University of Southampton's Optoelectronic Research Center, where researchers first demonstrated how to turn glass into a data warehouse using femtosecond lasers. Thanks to investments from Azure, the British laboratory in Cambridge, Microsoft, has assembled a team of specialists from various fields of science: physicists, optical experts, electrical engineers, and researchers with experience in developing data warehouses to further develop this technology. Researchers worked closely with colleagues from Azure to take into account the day-to-day tasks and requirements of commercial cloud storage when developing Project Silica. Admit it, did you ever manage to solve the problem of transferring data from formats that have gone out of widespread use or from history that has gone down in history? Do you think something similar may be in demand on the mass market?
+
+You can subscribe to our Telegram channel to receive the most interesting information.
+
+
+Read also
+
+
+
+
+
+
+
+
+"

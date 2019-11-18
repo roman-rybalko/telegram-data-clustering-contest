@@ -1,0 +1,66 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Nest Secure adds ‘Glass break detection’ using microphone on Guard
+06 Nov 2019, 16:36 by Abner Li
+Back in February, it emerged that the Nest Secure — specifically the Nest Guard — has a built-in microphone that was disabled until Google rolled out Assistant capabilities. Following the privacy furor, Google is now using that hardware to detect glass breaking in your home.
+“Glass break detection” listens for breaking glass when your security system is armed and sounds an alarm if it happens. Only the Nest Guard where you enter your code and tap Nest Tags is capable of listening, so — practically speaking — only one glass door or window can be monitored. This unit has to be placed within 15 feet, while there can be no heavy curtains, walls, or other obstructions.
+Google is fast to point out how Glass break detection on the Nest Secure is off by default and has to be manually enabled within the Nest app. It can be enabled for Home and Guarding mode, Away and Guarding, or both.
+It’s recommended that the security feature only be active “when your home is generally quiet such as when no one is home or people are sleeping.” Loud sounds might be misclassified as glass breaking.
+Behind the scenes, the Nest Secure works by capturing audio and analyzing it to “determine if the sound was actually glass breaking.” This processing works entirely on-device and is “not sent to Google servers.”
+Google first mentioned Glass break detection on the Nest Secure in February to explain the microphone’s inclusion, while it emerged in a teardown this August. It starts rolling out this month, and full instructions are below:
+
+Open your Nest app.
+Tap the Settings icon on the Nest app home screen.
+Select Security > Security levels.
+Choose Away and Guarding or Home and Guarding.
+Tap Glass break detection.
+Turn on Glass break detection and choose the amount of time you want before the alarm sounds.
+To set up glass break detection in another security level, go back to step 3.
+
+FTC: We use income earning auto affiliate links. More.
+
+
+",en,"
+
+
+
+
+
+
+
+
+
+
+
+Nest Secure adds ‘Glass break detection’ using microphone on Guard
+06 Nov 2019, 16:36 by Abner Li
+Back in February, it emerged that the Nest Secure — specifically the Nest Guard — has a built-in microphone that was disabled until Google rolled out Assistant capabilities. Following the privacy furor, Google is now using that hardware to detect glass breaking in your home.
+“Glass break detection” listens for breaking glass when your security system is armed and sounds an alarm if it happens. Only the Nest Guard where you enter your code and tap Nest Tags is capable of listening, so — practically speaking — only one glass door or window can be monitored. This unit has to be placed within 15 feet, while there can be no heavy curtains, walls, or other obstructions.
+Google is fast to point out how Glass break detection on the Nest Secure is off by default and has to be manually enabled within the Nest app. It can be enabled for Home and Guarding mode, Away and Guarding, or both.
+It’s recommended that the security feature only be active “when your home is generally quiet such as when no one is home or people are sleeping.” Loud sounds might be misclassified as glass breaking.
+Behind the scenes, the Nest Secure works by capturing audio and analyzing it to “determine if the sound was actually glass breaking.” This processing works entirely on-device and is “not sent to Google servers.”
+Google first mentioned Glass break detection on the Nest Secure in February to explain the microphone’s inclusion, while it emerged in a teardown this August. It starts rolling out this month, and full instructions are below:
+
+Open your Nest app.
+Tap the Settings icon on the Nest app home screen.
+Select Security > Security levels.
+Choose Away and Guarding or Home and Guarding.
+Tap Glass break detection.
+Turn on Glass break detection and choose the amount of time you want before the alarm sounds.
+To set up glass break detection in another security level, go back to step 3.
+
+FTC: We use income earning auto affiliate links. More.
+
+
+"

@@ -1,0 +1,54 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Google Chrome ha un blocco concreto per velocizzare la navigazione
+03 Nov 2019, 11:29 by Daniel Aka
+Google sta cercando di migliorare le prestazioni di Google Chrome. Come tutti i browser Internet, Chrome ha la tendenza a consumare molte risorse di sistema, in particolare la RAM . Tuttavia, non tutto è colpa degli sviluppatori di Google: alcuni contenuti, inclusa la pubblicità, sprecano inutilmente risorse: quando questi inserimenti non corretti vengono messi a capo, possono effettivamente rallentare il tuo PC.
+Google Chrome bloccherà gli annunci che affliggono le prestazioni del PC
+Ecco perché gli sviluppatori di Google ora vogliono integrare uno shock Adblock Chrome, per bloccare (e quindi penalizzare) gli annunci un po ‘troppo “pesanti”. Inoltre, questa nozione di “pubblicità pesante” di Google ora la definisce in modo molto preciso. Un annuncio verrà bloccato se:
+
+Utilizza il thread della CPU principale per più di 60 secondi in totale
+Usa il thread principale per più di 15 secondi in una finestra di 30 secondi
+Consuma più di 4 Mb di larghezza di banda per caricare le sue risorse
+
+Ogni volta che un annuncio viene bloccato, verrà invece visualizzato un messaggio per spiegare il motivo. Secondo Techradar le “bandiere” relative a questo blocco sono state individuate nell’ultima versione di Chrome Canary. Tuttavia, a questo punto va sottolineato che la funzione è ancora sperimentale: non dovrebbe finire in una versione stabile di Chrome per diversi mesi.
+Chrome sta già bloccando alcune pubblicità intrusive , in particolare quelle che riproducono palloncini musicali non appena viene aperta una pagina. Si prevede che questo nuovo blocco degli annunci migliorerà ulteriormente l’esperienza dell’utente scoraggiando gli inserzionisti che abusano del loro spazio pubblicitario.
+
+
+",it,"
+
+
+
+
+
+
+
+
+
+
+
+Google Chrome has a concrete block to speed up browsing
+03 Nov 2019, 11:29 by Daniel Aka
+Google is trying to improve Google Chrome's performance. Like all Internet browsers, Chrome has a tendency to consume many system resources, particularly RAM. However, not everything is the fault of Google's developers: some content, including advertising, unnecessarily waste resources: when these incorrect entries are put in charge, they can actually slow down your PC.
+Google Chrome will block ads that affect PC performance
+That's why Google developers now want to integrate an Adblock Chrome shock, to block (and therefore penalize) ads that are a bit ""too"" heavy. Furthermore, this notion of Google's ""heavy advertising"" now defines it very precisely. An ad will be blocked if:
+
+Use the main CPU thread for more than 60 seconds in total
+Use the main thread for more than 15 seconds in a 30-second window
+It consumes more than 4 Mb of bandwidth to load its resources
+
+Each time an ad is blocked, a message will appear instead to explain the reason. According to Techradar the ""flags"" related to this block have been identified in the latest version of Chrome Canary. However, at this point it should be emphasized that the function is still experimental: it should not end up in a stable version of Chrome for several months.
+Chrome is already blocking some intrusive ads, especially those that reproduce musical balloons as soon as a page is opened. It is expected that this new ad blocker will further enhance the user experience by discouraging advertisers who abuse their advertising space.
+
+
+"

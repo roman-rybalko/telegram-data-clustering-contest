@@ -1,0 +1,46 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Google gives in to pressure again and brings back Google Chrome Close Other Tab option
+01 Nov 2019, 08:00 by Surur
+Google has been working to simplify the menu options in the Google Chrome browser but has been getting a lot of push back every time they remove menu items.
+On the last occasion, Google had to restore the removed the Close Tab To The Right option, and today a new commit on the Chromium Gerrit repository confirms that Google is also returning the Close Other Tabs option, which lets you close all the tabs except the current one.
+The commit reads:
+Re-add “Close Other Tabs” to tabstrip context menu.
+It seems Google is fighting a losing battle against browser power users, and given that regular users probably never right-click on tabs,  we suggest the company may be better off focussing on other elements of the browser.
+Via Leo Varela on Reddit.
+
+
+",en,"
+
+
+
+
+
+
+
+
+
+
+
+Google gives in to pressure again and brings back Google Chrome Close Other Tab option
+01 Nov 2019, 08:00 by Surur
+Google has been working to simplify the menu options in the Google Chrome browser but has been getting a lot of push back every time they remove menu items.
+On the last occasion, Google had to restore the removed the Close Tab To The Right option, and today a new commit on the Chromium Gerrit repository confirms that Google is also returning the Close Other Tabs option, which lets you close all the tabs except the current one.
+The commit reads:
+Re-add “Close Other Tabs” to tabstrip context menu.
+It seems Google is fighting a losing battle against browser power users, and given that regular users probably never right-click on tabs,  we suggest the company may be better off focussing on other elements of the browser.
+Via Leo Varela on Reddit.
+
+
+"

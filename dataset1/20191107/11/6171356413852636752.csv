@@ -1,0 +1,52 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+The Google Pixel 4 has a hidden high brightness mode
+07 Nov 2019, 11:39 by Manuel Vonau
+While we said in our review that the Pixel 4 and 4 XL's displays are perfectly usable outdoors, they're still not emitting as much light as many competing handsets. A hidden high brightness mode fixes this and substantially increases the Pixels' maximum brightness. Root access is required to activate it, though, and your battery life will most likely suffer.
+If increased brightness is worth it to you, you can activate the mode after rooting. Simply enter the following commands in the Android shell:
+suecho on >> /sys/class/backlight/panel0-backlight/hbm_mode
+XDA Developers tested the high brightness setting and noticed that it only kicks in when the screen is at maximum brightness, so you should be relatively safe from burn-ins in regular use. Keep in mind that the Pixel 4's notoriously short battery life will be even shorter whenever this mode is used, which might be the reason why Google deactivated it in the first place.
+
+Source: 
+XDA Developers
+
+Thanks: Stuart, Jman100
+
+
+",en,"
+
+
+
+
+
+
+
+
+
+
+
+The Google Pixel 4 has a hidden high brightness mode
+07 Nov 2019, 11:39 by Manuel Vonau
+While we said in our review that the Pixel 4 and 4 XL's displays are perfectly usable outdoors, they're still not emitting as much light as many competing handsets. A hidden high brightness mode fixes this and substantially increases the Pixels' maximum brightness. Root access is required to activate it, though, and your battery life will most likely suffer.
+If increased brightness is worth it to you, you can activate the mode after rooting. Simply enter the following commands in the Android shell:
+suecho on >> /sys/class/backlight/panel0-backlight/hbm_mode
+XDA Developers tested the high brightness setting and noticed that it only kicks in when the screen is at maximum brightness, so you should be relatively safe from burn-ins in regular use. Keep in mind that the Pixel 4's notoriously short battery life will be even shorter whenever this mode is used, which might be the reason why Google deactivated it in the first place.
+
+Source: 
+XDA Developers
+
+Thanks: Stuart, Jman100
+
+
+"

@@ -1,0 +1,52 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Yubikey mit Fingerabdrucksensor angekündigt
+Auf Knopfdruck anmelden, ohne Passwort und PIN, aber mit Fingerabdruck: Genau das soll der neue Yubikey Bio unterstützen. Die Sicherheit von biometrischen Merkmalen ist allerdings umstritten.
+05 Nov 2019, 15:00 by Moritz Tremmel
+Auf der Microsoft-Konferenz hat Yubico einen neuen Sicherheitsschlüssel vorgestellt. Im Unterschied zu den anderen Yubikeys besitzt dieser einen Fingerabdrucksensor und lässt sich mit dem Fingerabdruck des Eigentümers entsperren. Mit dem Yubikey Bio soll ein passwortloses Anmelden an Windows Systemen oder Webdiensten per Webauthn/Fido2 möglich sein. Die Sicherheit von biometrischen Merkmalen ist allerdings umstritten.
+Nach Android unterstützt nun auch Yubico passwortloses Anmelden mit biometrischen Daten per Fido2/Webauthn. Ähnlich wie bei PGP oder SSH kommt hierbei Public-Key-Kryptografie zum Einsatz. Der öffentliche Schlüssel wird zwischen Nutzer und Webdienst ausgetauscht. Will sich der Nutzer einloggen, schickt der Dienst eine Challenge an ihn, mit der er beweist, dass er im Besitz des privaten Schlüssels ist - ohne dass der private Schlüssel das Gerät verlässt. Das Ergebnis wird an den Dienst geschickt, der über den öffentlichen Schlüssel überprüft, ob der Einloggende auch wirklich im Besitz des privaten Schlüssels ist.
+Fingerabdruck statt PIN oder Passwort
+Wird das System als zweiter Faktor verwendet, muss zusätzlich noch Benutzername und Passwort angegeben werden. Wird eine passwortlose Anmeldung durchgeführt, muss der Nutzer noch eine PIN, mit welcher der Schlüssel auf dem Fido2-Gerät gesichert ist, angeben. Alternativ kann hierzu auch ein biometrisches Merkmal wie der Fingerabdruck zum Einsatz kommen, wie es Android oder der nun angekündigte Yubikey Bio unterstützen. Alternativ kann auch mit dem Yubikey Bio eine PIN genutzt werden.
+""Diese Innovation wird dazu beitragen, die Einführung einer sichereren passwortlosen Anmeldung voranzutreiben, damit jeder Mensch sicherer und produktiver sein kann"", sagte Joy Chik von Microsoft. Ein entsprechendes Feature hätten sich die Nutzer bereits seit geraumer Zeit gewünscht, schreibt Yubico in der Produktankündigung. Es können mehrere Fingerabdrücke hinterlegt werden, welche in einem sicheren Speicher verwahrt würden, der auch vor physischen Angriffen geschützt sei. Der Yubikey Bio soll auf verschiedenen Geräten zum Einsatz kommen können. Das deutet auf eine Unterstützung von Linux, MacOS X sowie iOS und Android hin. Angekündigt wurde dies jedoch nicht explizit. Auch ein Preis oder Veröffentlichungstermin für den Yubikey Bio verriet Yubico noch nicht.
+Biometrische Verfahren lassen sich umgehen
+Biometrische Verfahren zur Authentifizierung lassen sich immer wieder überlisten. Wie leicht sich der Fingerabdrucksensor des Yubikey Bio im Falle eines Diebstahls umgehen lässt, wird sich zeigen müssen. Dem Sicherheitsforscher Jan Krissler alias Starbug gelang es in der Vergangenheit bereits mehrfach, biometrische Identifizierungsverfahren zu umgehen. Nach dem Hack der Venenerkennung im vergangenen Jahr gibt es laut Starbug kaum noch biometrische Systeme, die nicht bereits umgangen wurden. Auf dem 31C3 2014 hatte er Angriffe auf Gesichts- und Iriserkennungssysteme präsentiert, im Jahr davor konnte er binnen weniger Tage Apples Fingerabdrucksystem Touch ID des iPhone 5S überwinden.
+Erst kürzlich konnte der Fingerabdrucksensor des Smartphones Galaxy S10 mit Hilfe einer Folie überlistet werden. Samsung kündigte an, das Problem per Softwareupdate beheben zu wollen. Im Falle des Yubikeys dürfte dies keine Option sein: Yubico sieht keine Updatemöglichkeit für seine Sicherheitsschlüssel vor und musste bereits mehrfach Sicherheitsschlüssel austauschen, in deren Firmware eine Sicherheitslücke steckte. Dass es auch anderes geht, zeigen Nitrokey und Solokeys, deren Firmware offen einsehbar und aktualisierbar ist.
+
+
+",de,"
+
+
+
+
+
+
+
+
+
+
+
+Yubikey announced with fingerprint sensor
+Sign up at the touch of a button, without password and PIN, but with a fingerprint: That's exactly what the new Yubikey Bio should support. The safety of biometric features, however, is controversial.
+05 Nov 2019, 15:00 by Moritz Tremmel
+At the Microsoft conference, Yubico introduced a new security key. Unlike the other Yubikeys, this one has a fingerprint sensor and can be unlocked with the owner's fingerprint. With the Yubikey Bio a password-free login to Windows systems or web services via Webauthn / Fido2 should be possible. The safety of biometric features, however, is controversial.
+After Android, Yubico now supports password-free login with biometric data via Fido2 / Webauthn. Similar to PGP or SSH, public-key cryptography is used. The public key is exchanged between the user and the web service. If the user wants to log in, the service sends a challenge to him, proving that he has the private key - without the private key leaving the device. The result is sent to the service, which checks via the public key whether the log-in is actually in possession of the private key.
+Fingerprint instead of PIN or password
+If the system is used as the second factor, the username and password must also be specified. If a passwordless registration is performed, the user must specify a PIN with which the key is secured on the Fido2 device. Alternatively, a biometric feature such as the fingerprint can be used, as supported by Android or the now announced Yubikey Bio. Alternatively, a PIN can also be used with the Yubikey Bio.
+""This innovation will help drive the adoption of a more secure, passwordless login so that everyone can be safer and more productive,"" said Joy Chik of Microsoft. A corresponding feature would have users wished for quite some time, writes Yubico in the product announcement. Several fingerprints can be deposited, which would be kept in a secure memory, which was also protected against physical attacks. The Yubikey Bio should be able to be used on different devices. This indicates support for Linux, MacOS X as well as iOS and Android. However, this was not explicitly announced. Even a price or release date for the Yubikey Bio betrayed Yubico yet.
+Biometric methods can be bypassed
+Biometric authentication methods can always be outsmarted. How easily the fingerprint sensor of the Yubikey Bio can be avoided in the event of a theft will have to be shown. Security researcher Jan Krissler, aka Starbug, has repeatedly managed to bypass biometric identification procedures in the past. According to Starbug, after the hack of vein detection last year, there are hardly any biometric systems left that have not been bypassed. At the 31C3 in 2014, he had presented attacks on facial and iris recognition systems, the year before he was able to overcome within a few days Apple's fingerprint system Touch ID of the iPhone 5S.
+Just recently, the fingerprint sensor of the smartphone Galaxy S10 could be outsmarted with the help of a foil. Samsung announced that it would fix the problem by software update. In the case of the Yubikeys this should not be an option: Yubico does not provide an update option for his security key and had to replace multiple security keys, in the firmware was a security hole. Nitrokey and Solokeys, whose firmware is open to the public and can be updated, show that there is another way.
+
+
+"

@@ -1,0 +1,78 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Wie die Uber-Software den tödlichen Unfall begünstigte
+Neue Unterlagen geben detailliert Auskunft über die Ursachen des tödlichen Unfalls mit einem selbstfahrenden Uber-Auto. Der Taxidienst will die Software inzwischen verändert haben.
+06 Nov 2019, 11:30 by Friedhelm Greis
+Falsche Objekterkennung und unzureichende Trajektorienplanung der Software sowie die Unaufmerksamkeit der Testfahrerin haben im Wesentlichen zu dem tödlichen Unfall mit einem selbstfahrenden Uber-Auto beigetragen. Das geht aus Berichten hervor, die die US-Verkehrssicherheitsbehörde NTSB am 5. November 2019 veröffentlicht hat. Die 400-seitigen Unterlagen bestätigen die Ergebnisse des vorläufigen Untersuchungsberichts vom Mai 2018, wonach die Notbremsfunktion so programmiert war, trotz einer zu erwartenden Kollision zunächst nicht einzugreifen. Die NTSB will sich erst am 19. November 2019 final zu der Unfallursache äußern.
+Bei dem Unfall im März 2018 in Phoenix (Arizona) war ein Testfahrzeug vom Typ Volvo XC90 im nächtlichen Verkehr mit einer 49 Jahre alten Frau kollidiert, die mit ihrem Fahrrad in der Dunkelheit eine vierspurige Straße überquerte. Anschließend hatte das Unternehmen sein Testprogramm mit autonomen Autos dauerhaft gestoppt, der Gouverneur von Arizona hatte die Testautos in seinem Bundesstaat stillgelegt.
+Nicht als Fußgängerin erkannt
+Ein 16-seitiger Bericht zur damals eingesetzten Automatisierungstechnik bestätigt nun bisherige Ergebnisse, wonach die Radar- und Lidarsensoren des Autos die Frau schon 5,6 beziehungsweise 5,2 Sekunden vor der Kollision wahrgenommen hatten. Allerdings zeigt die Auswertung der Fahrzeugdaten, dass beide Sensorsysteme aufgrund der besonderen Silhouette der Frau mit ihrem Fahrrad nicht in der Lage waren, ihr ein konstantes Objekt zuzuweisen und sie als Fußgängerin zu erkennen.
+Dem Bericht zufolge unterscheidet die Software zwischen den vier Objekttypen Fahrzeug, Fahrradfahrer, Fußgänger und andere (unbekannt). Aus den Daten geht hervor, dass das Radar die Frau anfangs als Fahrzeug identifizierte. Der Lidar klassifizierte sie zunächst als ""andere"", schwankte dann zwischen Fahrzeug und ""andere"", um sie dann 2,6 Sekunden vor der Kollision als Fahrradfahrer zu identifizieren. Die Objektklassifizierung hat entscheidenden Einfluss auf den zu erwartenden Pfad, den das System für das Objekt berechnet.
+Positionen wurden wieder verworfen
+So geht das System nicht davon aus, dass Fußgänger die Fahrbahn außerhalb von Fußgängerüberwegen und Zebrastreifen kreuzen können (Jaywalking). Eine an sich sinnvolle Annahme, da sonst bei jedem Passanten, der an der Straße steht, gebremst werden müsste. Von Fußgängern kann jedoch eine Trajektorie berechnet werden, wenn diese kontinuierlich als Fußgänger erkannt wurden. Von Fahrradfahrern oder Fahrzeugen wiederum erwartet die Software, dass diese sich in Fahrtrichtung des eigenen Fahrzeugs bewegen, wenn diese auf der eigenen Spur erkannt werden.
+Bei der Pfadplanung spielen allerdings die vorher registrierten Positionen des Objekts eine Rolle. Daher sollte das System eigentlich erkennen können, wenn sich jemand quer zur Fahrbahn in Richtung der eigenen Fahrspur bewegt. Das Problem in diesem Fall: Jedes Mal, wenn die Software dem Objekt eine neue Klasse zuwies, wurde der Positionsverlauf des Objekts bei der Pfadplanung nicht mehr berücksichtigt. Unbekannte Objekte (""andere"") wurden zudem als unbeweglich eingestuft. Befand sich deren Position nicht auf dem eigenen Pfad, werden sie nicht als Hindernis eingeschätzt.
+System verhindert Notbremsung
+Noch 2,5 Sekunden vor dem Unfall identifizierte der Lidar die Frau als Fahrradfahrerin. Das System ging davon aus, dass sie ihren Weg auf der linken Geradeausspur fortsetzen und daher nicht mit dem Uber-Fahrzeug auf der rechten Geradeausspur kollidieren würde. Eine Sekunde später wurde aus dem Fahrrad wieder ein unbekanntes und damit statisches Objekt, der bisherige Positionsverlauf damit verworfen. Das System ging erstmals davon aus, dass sich dieses Objekt auf dem eigenen Pfad befinden würde und berechnete ein leichtes Ausweichmanöver.
+Die letzte Objektänderung erfolgte 1,2 Sekunden vor der Kollision: Der Lidar erkannte die Frau wieder als Fahrrad und berechnete einen Pfad, der zum Zusammenstoß führe würde. Das Ausweichmanöver wurde als zu gefährlich eingeschätzt. Doch anstatt eine Notbremsung einzuleiten, setzte nun eine ""Aktionsunterdrückung"" (""action suppression"") von einer Sekunde Dauer ein. In dieser Sekunde soll entweder das System den Notfall genauer analysieren und einen alternativen Pfad berechnen oder der Fahrer die Kontrolle übernehmen. Damit soll verhindert werden, dass es im Falle fehlerhaft erkannter Gefahrensituationen zu gefährlichen Fahr- und Bremsmanövern kommt.
+Volvo-System war deaktiviert
+Erst eine Sekunde nach der ""Aktionsunterdrückung"" startet das System eine Notbremsung mit der maximal erlaubten Verzögerung von 7 m/s(hoch 2), wenn dadurch eine Kollision noch verhindert werden kann. Falls nicht, wie im vorliegenden Fall, gibt es lediglich eine akustische Warnung an den Fahrer, während das Fahrzeug langsam gebremst wird. Erst 20 Millisekunden vor der Kollision übernahm die Testfahrerin bei einer Geschwindigkeit von 63 Kilometern pro Stunde das Steuer. Erst 0,7 Sekunden später trat die Fahrerin auf die Bremse.
+
+
+
+Möglicherweise hätte auch das serienmäßige Notbremssystem von Volvo den Unfall verhindern könne. Doch das wurde in Absprache mit dem Fahrzeughersteller deaktiviert, wenn sich das Testauto im autonomen Modus befand. Ein Grund dafür war, dass die Bremsaktoren nicht darauf ausgelegt waren, eines der beiden Steuerungssysteme priorisieren zu können. Zudem sollten sich die Radarsignale der beiden Systeme nicht gegenseitig stören.
+Software bereits angepasst
+Der Bericht macht deutlich, dass das autonome Testsystem von Uber darauf ausgelegt war, ständig von einem Sicherheitsfahrer überwacht zu werden. Gerade in tatsächlichen oder vermeintlichen Gefahrensituationen sollte der menschliche Fahrer noch eingreifen können, bevor das System möglicherweise eine falsche Entscheidung trifft und dadurch den Verkehr gefährdet. Die Testfahrerin gab jedoch in einem vorläufigen Bericht an, dass sie in den Sekunden vor dem Unfall den Monitor des autonomen Systems beobachtet habe. Ihre privaten und beruflichen Mobiltelefone habe sie nicht genutzt.
+Dem Bericht zufolge hat die Uber-Tochter ATG inzwischen die Software angepasst. So wurde die ""Aktionsunterdrückung"" deaktiviert. Die Fahrzeuge können nun Notbremsungen mit einem Ruck von bis zu 20 m/s(hoch3) einleiten. Die Pfadplanung berücksichtige jetzt den Positionsverlauf von Objekten auch dann, wenn sie anders klassifiziert würden. Auf Basis der Software-Änderungen habe eine Simulation im September 2018 ergeben, dass die Frau bereits 4,5 Sekunden vor der ursprünglichen Kollision korrekt als Fußgängerin erkannt und ein Pfad berechnet worden sei, der den des Testfahrzeugs kreuzen würde. Daher hätte das Auto bereits vier Sekunden vor dem möglichen Zusammenstoß eine kontrollierte Bremsung eingeleitet.
+Uber hatte mehrere Monate nach dem Unfall wieder seine Testfahrten aufgenommen, allerdings nicht in Arizona, sondern unter modifizierten Bedingungen in Pittsburgh im US-Bundesstaat Pennsylvania. Für den Unfall muss das Unternehmen jedoch nicht strafrechtlich haften. Allerdings könnte die Testfahrerin noch belangt werden.
+
+
+",de,"
+
+
+
+
+
+
+
+
+
+
+
+How the Uber software favored the fatal accident
+New documents give detailed information about the causes of the fatal accident with a self-driving Uber-car. The taxi service now wants to have changed the software.
+06 Nov 2019, 11:30 by Friedhelm Greis
+Incorrect object recognition and inadequate trajectory planning of the software as well as the inattentiveness of the test driver have essentially contributed to the fatal accident with a self-driving Uber-Auto. This is clear from reports published by the US National Road Traffic Safety Authority (NTSB) on 5 November 2019. The 400-page documents confirm the results of the preliminary investigation report of May 2018, according to which the emergency brake function was programmed to initially not intervene despite an expected collision. The NTSB wants to express itself only on 19 November 2019 final to the cause of the accident.
+In the accident in March 2018 in Phoenix, Arizona, a Volvo XC90 test vehicle collided in nocturnal traffic with a 49-year-old woman crossing a four-lane road in the dark with her bicycle. Then the company had stopped its test program with autonomous cars permanently, the Governor of Arizona had shut down the test cars in his state.
+Not recognized as a pedestrian
+A 16-page report on the automation technology used at that time now confirms previous results, according to which the car's radar and lidar sensors had already detected the woman 5.6 or 5.2 seconds before the collision. However, the evaluation of the vehicle data shows that both sensor systems due to the special silhouette of the woman with her bike were not able to assign her a constant object and recognize her as a pedestrian.
+According to the report, the software distinguishes between the four object types vehicle, cyclist, pedestrian and others (unknown). The data shows that the radar initially identified the woman as a vehicle. The Lidar first classified them as ""others"", then staggered between the vehicle and ""others"" to identify them as cyclists 2.6 seconds before the collision. Object classification has a decisive influence on the expected path that the system calculates for the object.
+Positions were discarded again
+Thus, the system does not assume that pedestrians can cross the lane outside of pedestrian crossings and crosswalks (jaywalking). An in itself sensible assumption, since otherwise every pedestrian standing on the street would have to be slowed down. Pedestrians can, however, calculate a trajectory if they have been continuously identified as pedestrians. For cyclists or vehicles in turn, the software expects them to move in the direction of travel of their own vehicle if detected on their own lane.
+In path planning, however, the previously registered positions of the object play a role. Therefore, the system should actually be able to detect when someone moves across the lane in the direction of their own lane. The problem in this case: Every time the software assigned a new class to the object, the object's position history was no longer taken into account during path planning. Unknown objects (""others"") were also classified as immobile. If their position was not on their own path, they are not considered an obstacle.
+System prevents emergency braking
+Just 2.5 seconds before the accident, the Lidar identified the woman as a cyclist. The system assumed that it would continue on the left straight lane and therefore not collide with the Uber vehicle on the right straight lane. A second later, the bicycle became an unknown and thus static object, thus discarding the previous course of the position. The system first assumed that this object would be on its own path and calculated a slight evasive maneuver.
+The last object change took place 1.2 seconds before the collision: The Lidar recognized the woman again as a bicycle and calculated a path that would lead to a collision. The evasive maneuver was considered too dangerous. But instead of initiating an emergency brake, now an ""action suppression"" of one second duration began. At this point, either the system should analyze the emergency more closely and calculate an alternative path or the driver take control. This is to prevent dangerous driving and braking maneuvers in the event of incorrectly recognized dangerous situations.
+Volvo system was disabled
+Only one second after the ""action suppression"" the system starts emergency braking with the maximum allowed deceleration of 7 m / s (high 2), if a collision can still be prevented. If not, as in the present case, there is only an audible warning to the driver while the vehicle is being braked slowly. Only 20 milliseconds before the collision took the test driver at a speed of 63 kilometers per hour the tax. Only 0.7 seconds later, the driver came on the brakes.
+
+
+
+Maybe the standard emergency braking system from Volvo could have prevented the accident. But this was deactivated in consultation with the vehicle manufacturer when the test car was in autonomous mode. One reason for this was that the brake actuators were not designed to prioritize one of the two control systems. In addition, the radar signals of the two systems should not interfere with each other.
+Software already adapted
+The report makes it clear that Uber's autonomous test system was designed to be constantly monitored by a safety driver. Especially in actual or alleged dangerous situations, the human driver should still be able to intervene before the system may make a wrong decision and thereby endanger the traffic. However, the test driver stated in a preliminary report that she had observed the autonomous system monitor in the seconds before the accident. Her private and professional mobile phones did not use them.
+According to the report, the Uber subsidiary ATG has since adapted the software. So the ""action suppression"" was deactivated. The vehicles can now initiate emergency braking with a jerk of up to 20 m / s (high3). Path planning now takes into account the position history of objects even if they were classified differently. Based on the software changes, a simulation in September 2018 showed that the woman was correctly identified as a pedestrian 4.5 seconds before the original collision and a path had been calculated that would cross the test vehicle. Therefore, the car had already initiated a controlled braking four seconds before the possible collision.
+Uber had resumed his test drives several months after the accident, but not in Arizona, but under modified conditions in Pittsburgh, Pennsylvania. However, the company does not have to be criminally liable for the accident. However, the test driver could still be prosecuted.
+
+
+"

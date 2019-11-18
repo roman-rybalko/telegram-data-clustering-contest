@@ -1,0 +1,42 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Jetzt patchen! Exploit-Code für Chrome-Lücke in Umlauf
+In der aktuellen Version des Webbrowsers Chrome haben die Entwickler zwei Sicherheitslücken geschlossen. Auf eine haben es Angreifer bereits abgesehen.
+01 Nov 2019, 10:12 by Dennis Schirrmacher
+Wer Chrome nutzt, sollte sicherstellen, dass die Ausgabe 78.0.3904.87 installiert ist. Vorige Versionen sind angreifbar. Google warnt vor möglichen Attacken.
+In der aktuellen Version haben die Entwickler zwei Schwachstellen (CVE-2019-13720, CVE-2019-13721) geschlossen. Nutzen Angreifer die Lücken aus, könnten sie in beiden Fällen Speicherfehler provozieren. Das ist ein gängiger Weg um Anwendungen abstürzen zu lassen oder sogar Schadcode auf Computer zu bringen und auszuführen. Der Bedrohungsgrad gilt als ""hoch"".
+Für die Lücke mit der Kennung CVE-2019-13720 hat Google bereits Exploit-Code gesichtet. Chrome-Nutzer sollten also zügig aktualisieren. Wie Angriffe im Detail vonstattengehen könnten, führt Google in einer Sicherheitswarnung nicht aus. (des)
+
+
+",de,"
+
+
+
+
+
+
+
+
+
+
+
+Patch now! Exploit code for Chrome gap in circulation
+In the current version of the web browser Chrome, the developers have closed two vulnerabilities. Attackers have already targeted one.
+01 Nov 2019, 10:12 by Dennis Schirrmacher
+If you're using Chrome, make sure you have 78.0.3904.87 installed. Previous versions are vulnerable. Google warns against possible attacks.
+In the current version, the developers have closed two vulnerabilities (CVE-2019-13720, CVE-2019-13721). If attackers fill in the gaps, they could provoke memory errors in both cases. This is a common way to crash applications or even bring malicious code to computers and execute. The threat level is considered ""high"".
+For the gap with the identifier CVE-2019-13720 Google has already spotted exploit code. Chrome users should update quickly. As attacks in detail could go by, Google does not execute in a security warning. (of)
+
+
+"

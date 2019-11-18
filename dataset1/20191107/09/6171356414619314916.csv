@@ -1,0 +1,92 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Chrome OS 78 Stable rolling out with Virtual Desks, improved printing, and YouTube app PiP (Updated)
+07 Nov 2019, 09:30 by Manuel Vonau
+
+Update 1: 2019/11/07 1:30am PSTOur friends at 9to5Google found some more changes in the latest release Google didn't care to mention. The YouTube Android app on Chrome OS now supports picture-in-picture playback. Videos automatically
+
+Whenever Chrome is updated to a new version, a Chrome OS release naturally isn't far out. The operating system receives the same additions as the browser, such as click-to-call and improved native file handling, and gets some exclusives on top: Virtual desktops are rolling out with this release, and all compatible printers will automatically show up on your device without setup in the future.
+Google has been offering Virtual Desks in pre-release versions since June. To create multiple workspaces, open the Overview and click or tap New desk in the top right corner of the interface. Then you can drag and drop windows between the spaces. If you're a keyboard shortcut junky like me, Google has you covered, too:
+   •  Create a new Desk with “Shift” + “Search ” + “=”   •  Switch between Desks with “Search ” + “]”   •  Move windows between Desks with “Shift” + “Search ” + “]”
+
+
+
+Printing initially caused headaches on Chrome OS, but the situation has much improved over the years. The update to version 78 makes it even easier. Any compatible printers will automatically show up in your list of targets when you press Ctrl + P on your keyboard. If you prefer a specific printer, you can save it as default now by heading to the printer section in Settings.
+Chrome OS 78 is currently rolling out to supported devices. You can manually check if it's available to you in the About Chrome OS section in Settings.
+
+
+Update 1: 2019/11/07 1:30am PST by Manuel Vonau
+
+Our friends at 9to5Google found some more changes in the latest release Google didn't care to mention.
+The YouTube Android app on Chrome OS now supports picture-in-picture playback. Videos automatically resume in the bottom right corner when you switch to another window or minimize the application.
+Google is also separating browser and device settings in the latest release. Browser settings are available through the three-dot overflow menu in any regular tabbed window, while system settings are accessible through the notification shade on the bottom right corner of the screen.
+Supposedly, the improved theming options that first went live in Chrome Canary 77 are also live in the latest build of Chrome OS, but you might still need to enable the corresponding flags to make them show up (chrome-colors and ntp-customization-menu-v2).
+
+Source: 
+9to5Google
+
+End of Update
+
+Source: 
+Google
+
+
+
+
+",en,"
+
+
+
+
+
+
+
+
+
+
+
+Chrome OS 78 Stable rolling out with Virtual Desks, improved printing, and YouTube app PiP (Updated)
+07 Nov 2019, 09:30 by Manuel Vonau
+
+Update 1: 2019/11/07 1:30am PSTOur friends at 9to5Google found some more changes in the latest release Google didn't care to mention. The YouTube Android app on Chrome OS now supports picture-in-picture playback. Videos automatically
+
+Whenever Chrome is updated to a new version, a Chrome OS release naturally isn't far out. The operating system receives the same additions as the browser, such as click-to-call and improved native file handling, and gets some exclusives on top: Virtual desktops are rolling out with this release, and all compatible printers will automatically show up on your device without setup in the future.
+Google has been offering Virtual Desks in pre-release versions since June. To create multiple workspaces, open the Overview and click or tap New desk in the top right corner of the interface. Then you can drag and drop windows between the spaces. If you're a keyboard shortcut junky like me, Google has you covered, too:
+   •  Create a new Desk with “Shift” + “Search ” + “=”   •  Switch between Desks with “Search ” + “]”   •  Move windows between Desks with “Shift” + “Search ” + “]”
+
+
+
+Printing initially caused headaches on Chrome OS, but the situation has much improved over the years. The update to version 78 makes it even easier. Any compatible printers will automatically show up in your list of targets when you press Ctrl + P on your keyboard. If you prefer a specific printer, you can save it as default now by heading to the printer section in Settings.
+Chrome OS 78 is currently rolling out to supported devices. You can manually check if it's available to you in the About Chrome OS section in Settings.
+
+
+Update 1: 2019/11/07 1:30am PST by Manuel Vonau
+
+Our friends at 9to5Google found some more changes in the latest release Google didn't care to mention.
+The YouTube Android app on Chrome OS now supports picture-in-picture playback. Videos automatically resume in the bottom right corner when you switch to another window or minimize the application.
+Google is also separating browser and device settings in the latest release. Browser settings are available through the three-dot overflow menu in any regular tabbed window, while system settings are accessible through the notification shade on the bottom right corner of the screen.
+Supposedly, the improved theming options that first went live in Chrome Canary 77 are also live in the latest build of Chrome OS, but you might still need to enable the corresponding flags to make them show up (chrome-colors and ntp-customization-menu-v2).
+
+Source: 
+9to5Google
+
+End of Update
+
+Source: 
+Google
+
+
+
+
+"

@@ -1,0 +1,68 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Secondo Intel per giocare non servono più di 8 core
+04 Nov 2019, 06:47 by Jacopo Ferrante
+Intel ha da poco annunciato il Core i9-9900KS “Special Edition”, andando a migliorare quello rappresenta il processore gaming più veloce, il 9900K (Amazon). Il nuovo arrivato è in grado di spingere tutti e otto i core a 5 GHz.
+A fronte di una AMD prossima a presentare una CPU a 16 core / 32 thread nella fascia mainstream, il Ryzen 9 3950X, Intel ha pensato bene di pigiare sull’acceleratore del marketing con un post su Medium del proprio Chief Performance Strategist, Ryan Shrout.
+
+
+
+Shrout, tramite una serie di test, ha cercato di dimostrare che non sempre aumentare il numero di core è una buona cosa per le prestazioni di gioco. Il posto difatti ha un titolo eloquente: “Core Scaling and Gaming Performance – How Many Cores Do You Need?“.
+“In Intel crediamo che il miglior processore per ogni operazione sia quello che bilancia tutti i vettori prestazionali, incluso il numero di core, la frequenza, l’IPC e il resto per avere prestazioni ottimali. […] A volte aumentiamo i core per fare di più per chi crea i contenuti, altre ottimizziamo all’interno dello stesso numero di core; cerchiamo sempre nuove strade per aggiungere valore all’esperienza degli utenti”.
+Secondo Shrout “8 core sono il numero ottimale per scalare le prestazioni nei moderni giochi per PC e a 8 core abbiamo il miglior scaling della frequenza dai nostri prodotti Coffee Lake e dall’attuale tecnologia a 14 nanometri. E la frequenza è ciò che alimenta i thread primari affamati degli attuali engine di gioco!”.
+Per illustrare la propria tesi, il CPS di Intel ha esaminato le prestazioni in-game di una CPU Core i9-9900K, bloccandola a 4 GHz e testandola con quattro, sei e otto core (disabilitando l’Hyper-Threading) in Full HD.
+I risultati mostrano che il passaggio da 4 a 6 core porta a un aumento delle prestazioni dal 7% al 33% a seconda del gioco. Solo tre giochi tra quelli testati scalano invece da 6 a 8 core.
+Assassin’s Creed Origins ha dimostrato un progresso prestazionale del 50%, Ashes of the Singularity: Escalation e Hitman 2 di oltre il 30%. Far Cry 5, Shadow of War e Rise of the Tomb Raider invece non hanno visto aumenti prestazionali dai 2 core in più.
+
+
+
+Shrout ha anche svolto dei test con un Core i9–9980XE, disattivandone l’HT e testandolo di nuovo alla frequenza fissa di 4 GHz con 8, 12 e 16 core. Dai test si evince che passare da 8 a 12 core porta a un miglioramento prestazionale inferiore al 10% in tutti i giochi.
+Il passaggio da 12 a 16 core invece mostra un ritorno minimo, se non inesistente, con il solo Ashes of the Singularity a migliorare e altri tre giochi che invece vedono persino scendere le loro prestazioni. “I dati sostengono quello che Intel dice sin dal suo rilascio: il Core i9-9900K è il miglior processore gaming al mondo e il nuovo Core i9-9900KS sarà persino più veloce”.
+“Aggiungere core solo perché puoi, senza un aumento corrispondente della frequenza sostenuta e decisioni architetturali per alimentare i core – come i sottosistemi di memoria a bassa latenza -, non porta a migliori prestazioni. I motori che muovono i giochi scalano meglio con la frequenza e l’IPC e Intel ha intenzione di guidare in questo settore per gli anni a venire”.
+
+
+",it,"
+
+
+
+
+
+
+
+
+
+
+
+According to Intel to play do not need more than 8 cores
+04 Nov 2019, 06:47 by Jacopo Ferrante
+Intel has recently announced the Core i9-9900KS ""Special Edition"", going to improve that represents the fastest gaming processor, the 9900K (Amazon). The newcomer is able to push all eight cores to 5 GHz.
+In the face of an AMD close to presenting a 16-core / 32-thread CPU in the mainstream segment, the Ryzen 9 3950X, Intel has seen fit to press on the marketing accelerator with a post on Medium by its Chief Performance Strategist, Ryan Shrout.
+
+
+
+Shrout, through a series of tests, tried to prove that not always increasing the number of cores is a good thing for gaming performance. The place in fact has an eloquent title: ""Core Scaling and Gaming Performance - How Many Cores Do You Need?"".
+""At Intel we believe that the best processor for every operation is the one that balances all performance vectors, including the number of cores, frequency, IPC and the rest for optimal performance. [...] Sometimes we increase the cores to do more for those who create the content, others we optimize within the same number of cores; we are always looking for new ways to add value to the user experience ”.
+According to Shrout ""8 cores are the optimal number for scaling performance in modern PC and 8 core games we have the best frequency scaling from our Coffee Lake products and current 14 nanometer technology. And frequency is what feeds the hungry primary threads of current game engines! "".
+To illustrate its thesis, Intel's CPS examined the in-game performance of a Core i9-9900K CPU, blocking it at 4 GHz and testing it with four, six and eight cores (disabling Hyper-Threading) in Full HD.
+The results show that the change from 4 to 6 cores leads to an increase in performance from 7% to 33% depending on the game. Only three of the tested games instead scale from 6 to 8 cores.
+Assassin's Creed Origins demonstrated a 50% performance improvement, Ashes of the Singularity: Escalation and Hitman 2 of over 30%. Far Cry 5, Shadow of War and Rise of the Tomb Raider instead did not see performance gains from the 2 extra cores.
+
+
+
+Shrout also did tests with a Core i9-9980XE, deactivating the HT and testing it again at the fixed 4 GHz frequency with 8, 12 and 16 cores. The tests show that going from 8 to 12 cores leads to a performance improvement of less than 10% in all games.
+The shift from 12 to 16 cores instead shows a minimal return, if not non-existent, with only Ashes of the Singularity improving and three other games that instead see even their performance go down. ""The data supports what Intel has been saying since its release: the Core i9-9900K is the best gaming processor in the world and the new Core i9-9900KS will be even faster"".
+""Adding cores just because you can, without a corresponding increase in sustained frequency and architectural decisions to feed cores - such as low latency memory subsystems - doesn't lead to better performance. The motors that move the games climb better with the frequency and the IPC and Intel intends to drive in this sector for years to come. ""
+
+
+"

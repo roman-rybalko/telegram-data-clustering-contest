@@ -1,0 +1,124 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Windows 10 Insider Build 19018 Released With New Quick Web Searches
+05 Nov 2019, 23:08 by Lawrence Abrams
+
+
+
+Microsoft has released Windows 10 Insider Preview Build 19018 (20H1) to Insiders in the Fast ring, bringing new quick web searches to the Windows Search home as well as bug fixes and slight improvements to existing features.
+If you are a Windows Insider in the Fast ring, you can update to the Insider Preview Build 19018 by going into Settings -> Update & Security -> Windows Update and then checking for new updates.
+To see the full release notes and fixes for this Windows 10 insider build, you can read the blog post.
+The most notable changes found in this new build released to Windows Insiders in the Fast ring are detailed below.
+
+
+
+New quick web search in Start Menu search
+Microsoft has added four new quick web searches to the Start Menu search home that allow you to quickly get your local weather, check for new movies, read the top news, and see historic events that happened this day.
+
+
+
+This feature is coming to Windows 10 1809 through to 20H1 in the USA. As this is a server side change, users will start to see this new functionality as it rolls out to different regions.
+Updated web preview design in search results
+This build also includes an updated design for the web preview in search results.
+
+
+
+General changes, improvements, and fixes for PC
+
+For Insiders that did not take the Cumulative Update to Build 19018, just a note that this build, vvnmcflr (like that update), also includes the fix for the issue resulting in black screens and disconnects over remote desktop in the last couple of flights.
+We’ve fixed an issue where the Settings app was hanging or crashing when accessing the System or Ease of Access sections.
+We fixed an issue where if a new account profile picture synced down from the cloud, your old one might not be listed in the picture history in Accounts Settings.
+We fixed an issue where Windows Update history might show an update having failed with error 0x80240017 even though the update had actually succeeded.
+We fixed an issue that could result in Search sometimes not rendering in the enter space available within the Search window.
+We fixed an issue that could result in exe using an unexpectedly high amount of CPU when your device was unplugged in recent builds.
+We fixed an issue that could result in Cortana not responding to Hey Cortana.
+We fixed an issue that could result in Cortana not being visible in the taskbar right after upgrading, or being visible but not working, until you restarted your PC.
+We fixed an issue resulting in not being able to keep the Shift key pressed in order to type capital letters in certain languages recently when typing with the onehanded touch keyboard.
+As some Insiders know, a few releases ago we announced a new keyboard shortcut (WIN + Ctrl + Shift + B) in order to help troubleshoot black screens. With today’s build, in this vein, we’re announcing a new keyboard shortcut (WIN + Ctrl + Shift + L) to help investigate issues with the login screen. Simply press the keyboard shortcut while your PC is locked, reproduce your issue, and then press the keyboard short again–a reference number will be displayed that you can share when reporting your issue. Please note, currently this is only supported for local sessions that have connected to the network and power, and for whom Diagnostic Data is set to Full.
+Narrator no longer announces changes in fonts when they have not changed.
+We updated Narrator’s autocorrect sound to be more consistent with the editing experience.
+We improved Narrator’s navigation and reading experience within Chrome.
+We’ve improved the Outlook experience with Magnifier when Magnifier is set to track the text cursor in the center of the screen. Arrowing up and down in a list of emails will no longer force the viewport to the left of the list of messages.
+
+Known issues
+
+BattlEye and Microsoft have found incompatibility issues due to changes in the operating system between some Insider Preview builds and certain versions of BattlEye anti-cheat software. To safeguard Insiders who might have these versions installed on their PC, we have applied a compatibility hold on these devices from being offered affected builds of Windows Insider Preview. See this article for details.
+We’ve heard that Settings still isn’t available outside of launching via the URI (ms-settings:) for some Insiders and are investigating.
+Some Insiders are reporting that after successfully installing printer drivers from the Optional Updates section, the same driver is still showing as available for install. We’re looking into the issue.
+If this build attempts to download an install before you have completed the first login of a prior install (such as Build 19018), you will experience a 2-hour window before you can install this new build.
+
+
+
+",en,"
+
+
+
+
+
+
+
+
+
+
+
+Windows 10 Insider Build 19018 Released With New Quick Web Searches
+05 Nov 2019, 23:08 by Lawrence Abrams
+
+
+
+Microsoft has released Windows 10 Insider Preview Build 19018 (20H1) to Insiders in the Fast ring, bringing new quick web searches to the Windows Search home as well as bug fixes and slight improvements to existing features.
+If you are a Windows Insider in the Fast ring, you can update to the Insider Preview Build 19018 by going into Settings -> Update & Security -> Windows Update and then checking for new updates.
+To see the full release notes and fixes for this Windows 10 insider build, you can read the blog post.
+The most notable changes found in this new build released to Windows Insiders in the Fast ring are detailed below.
+
+
+
+New quick web search in Start Menu search
+Microsoft has added four new quick web searches to the Start Menu search home that allow you to quickly get your local weather, check for new movies, read the top news, and see historic events that happened this day.
+
+
+
+This feature is coming to Windows 10 1809 through to 20H1 in the USA. As this is a server side change, users will start to see this new functionality as it rolls out to different regions.
+Updated web preview design in search results
+This build also includes an updated design for the web preview in search results.
+
+
+
+General changes, improvements, and fixes for PC
+
+For Insiders that did not take the Cumulative Update to Build 19018, just a note that this build, vvnmcflr (like that update), also includes the fix for the issue resulting in black screens and disconnects over remote desktop in the last couple of flights.
+We’ve fixed an issue where the Settings app was hanging or crashing when accessing the System or Ease of Access sections.
+We fixed an issue where if a new account profile picture synced down from the cloud, your old one might not be listed in the picture history in Accounts Settings.
+We fixed an issue where Windows Update history might show an update having failed with error 0x80240017 even though the update had actually succeeded.
+We fixed an issue that could result in Search sometimes not rendering in the enter space available within the Search window.
+We fixed an issue that could result in exe using an unexpectedly high amount of CPU when your device was unplugged in recent builds.
+We fixed an issue that could result in Cortana not responding to Hey Cortana.
+We fixed an issue that could result in Cortana not being visible in the taskbar right after upgrading, or being visible but not working, until you restarted your PC.
+We fixed an issue resulting in not being able to keep the Shift key pressed in order to type capital letters in certain languages recently when typing with the onehanded touch keyboard.
+As some Insiders know, a few releases ago we announced a new keyboard shortcut (WIN + Ctrl + Shift + B) in order to help troubleshoot black screens. With today’s build, in this vein, we’re announcing a new keyboard shortcut (WIN + Ctrl + Shift + L) to help investigate issues with the login screen. Simply press the keyboard shortcut while your PC is locked, reproduce your issue, and then press the keyboard short again–a reference number will be displayed that you can share when reporting your issue. Please note, currently this is only supported for local sessions that have connected to the network and power, and for whom Diagnostic Data is set to Full.
+Narrator no longer announces changes in fonts when they have not changed.
+We updated Narrator’s autocorrect sound to be more consistent with the editing experience.
+We improved Narrator’s navigation and reading experience within Chrome.
+We’ve improved the Outlook experience with Magnifier when Magnifier is set to track the text cursor in the center of the screen. Arrowing up and down in a list of emails will no longer force the viewport to the left of the list of messages.
+
+Known issues
+
+BattlEye and Microsoft have found incompatibility issues due to changes in the operating system between some Insider Preview builds and certain versions of BattlEye anti-cheat software. To safeguard Insiders who might have these versions installed on their PC, we have applied a compatibility hold on these devices from being offered affected builds of Windows Insider Preview. See this article for details.
+We’ve heard that Settings still isn’t available outside of launching via the URI (ms-settings:) for some Insiders and are investigating.
+Some Insiders are reporting that after successfully installing printer drivers from the Optional Updates section, the same driver is still showing as available for install. We’re looking into the issue.
+If this build attempts to download an install before you have completed the first login of a prior install (such as Build 19018), you will experience a 2-hour window before you can install this new build.
+
+
+
+"

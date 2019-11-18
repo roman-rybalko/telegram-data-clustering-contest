@@ -1,0 +1,96 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+NethServer 7.7: Esqueça o Windows Server, esta distro tem tudo
+06 Nov 2019, 23:02 by Pedro Pinto
+Ao contrário do que acontecia há uns anos, as empresas têm vindo a adotar cada vez mais sistemas baseados em Linux. Até a própria Microsoft, com o serviço de Cloud Azure é fã do Linux.
+Como sabemos, o GNU/Linux é extremamente flexível e muito usado para a implementação dos mais diversos serviços de rede… não esquecendo o preço. Para quem procura uma distribuição com vários serviços de rede prontos a funcionar tem de experimentar a distro NethServer.
+
+
+
+Chama-se NethServer e é uma distribuição baseada no fantástico CentOS. Esta distribuição Linux é extremamente modular, uma vez que disponibiliza os mais diversos serviços de rede. MailServer, WebServer, Groupware, Firewall, Web Filter, IPS/IDS, VPN, DNS, DHCP são alguns deles… que precisa mais?
+sta nova versão do NethServer pode substituir por completo uma máquina com Windows Server que esteja a funcionar como controlador de domínio.
+
+
+
+Para simplificar toda a configuração e administração de serviços, o NethServer oferece uma interface web muito bem organizada e fluída, facilitando todo o trabalho do administrador. De referir que esta distribuição não traz, por omissão, ambiente gráfico de trabalho.
+
+
+
+Novidades do NethServer 7.7
+
+Cockpit
+Nova interface e estatísticas para VPNs
+Nova interface para a firewall
+Nova interface para o fail2ban e Web Proxy
+Novo dashboard para o servidor de ficheiros, incluindo estatísticas de diretórios partilhados
+Webtop 5.7.3
+Mattermost 5.15 e NextCloud 16.0.5
+Novo sistema de relatórios
+Nova forma de gerir os backups
+entre outras novidades
+
+
+
+
+Se procuram uma distro Linux com vários serviços de rede prontos a funcionar, testem a distro NethServer. Num próximo tutorial iremos mostrar como podem experimentar esta distribuição. Estejam atentos ao Pplware.
+
+
+",pt,"
+
+
+
+
+
+
+
+
+
+
+
+NethServer 7.7: Forget Windows Server, this distro has it all
+06 Nov 2019, 23:02 by Pedro Pinto
+Unlike a few years ago, companies are increasingly adopting Linux-based systems. Even Microsoft itself, with Cloud Azure service is a fan of Linux.
+As we know, GNU / Linux is extremely flexible and widely used for the implementation of various network services… not forgetting the price. For those looking for a distribution with a number of ready-to-use network services, try the NethServer distro.
+
+
+
+It's called NethServer and it's a fantastic CentOS based distribution. This Linux distribution is extremely modular as it offers the most diverse network services. MailServer, WebServer, Groupware, Firewall, Web Filter, IPS / IDS, VPN, DNS, DHCP are some of them… you need more?
+This new version of NethServer can completely replace a Windows Server machine that is functioning as a domain controller.
+
+
+
+To simplify all configuration and administration of services, NethServer offers a well-organized and fluid web interface, making all administrator work easier. It should be noted that this distribution does not bring, by default, a graphical working environment.
+
+
+
+NethServer 7.7 What's New
+
+Cockpit
+New interface and statistics for VPNs
+New Firewall Interface
+New interface for fail2ban and web proxy
+New dashboard for file server, including shared directory statistics
+Webtop 5.7.3
+Mattermost 5.15 and NextCloud 16.0.5
+New reporting system
+New way to manage backups
+among other news
+
+
+
+
+If you are looking for a Linux distro with a number of out-of-box networking services, try the NethServer distro. In an upcoming tutorial we will show how you can try this distribution. Watch out for Pplware.
+
+
+"

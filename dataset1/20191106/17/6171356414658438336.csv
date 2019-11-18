@@ -1,0 +1,290 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+How to back up your Android phone before a factory reset
+06 Nov 2019, 17:11 by Corbin Davenport
+Even though most of your phone's data probably lives in the cloud, there could still be some locally-stored photos, videos, contacts, calendars, and other important files not backed up. In this post, we'll go over how to check that everything on your phone is properly backed up, so you can wipe it without thinking twice that you lost something.
+Check account sync status
+First, you definitely want to make sure that your Google account is syncing properly with your phone, so everything that should be backed up is actually being backed up. Open the Settings app, tap the Accounts option, select your Google account, and verify that all the apps and services under the account have been synced recently.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+If some of the services haven't been synced recently (for example, if you haven't opened one of the apps in a long time), tap the Sync Now button on the page. Depending on your version of Android, the Sync Now option might be under a menu.
+Make sure your photos are backed up
+If you use Google Photos to back up the photos and videos you take with your phone, you should make sure it's still doing that. All you have to do is open the Photos app and look for the cloud checkmark at the top, which indicates everything has been backed up.
+
+
+
+If you previously turned off cloud backups in Photos, open the side menu, tap 'Settings,' and select 'Back up & sync' to turn syncing on. Super easy.
+
+
+
+
+
+
+
+
+
+
+
+Of course, there are plenty of other photo backup apps for Android, including OneDrive and Dropbox. If you're using one of those, go into the app's settings and check the current sync status.
+If you don't like using photo backup services, you can also simply copy all the images and videos to a flash drive or your computer.
+Backing up photos/videos to a flash drive
+If you have a big enough flash drive, and an adapter if one is needed (either Type-C or microUSB), you can just copy your phone's entire camera folder to the drive. Plug the drive into your phone, then use the Files app on your device to copy the 'DCIM' folder on your phone to the drive.
+Every phone manufacturer has a different file manager, so if you can't figure it out, download Files by Google from the Play Store. Once you've opened the app, here's what you need to do:
+
+Go the 'Browse' tab.
+Select your internal storage
+Find the 'DCIM' folder in the list and hold down on it until a checkmark appears.
+Tap the menu button at the top-right and select 'Copy to'.
+Select your flash drive in the list.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Once your files are copied, you can disconnect the flash drive and back up the photos however you see fit.
+Backing up photos to a PC
+An easier option is just to connect your phone to your computer and copy the phone's DCIM folder, since all you need is the USB cable that (probably) came with your phone.
+Copy contacts and calendars to the cloud
+When you create a contact or calendar event, your phone might give you the option of saving the data in the phone's internal storage, instead of in the cloud. While that's a nice feature to have, especially for the privacy-conscious, it also means you might have saved some important data locally if you didn't pay close attention. Before you wipe our phone, you should check to see if any of your contacts or calendar events aren't backed up to the cloud.
+Some phones, like Google Pixel devices, don't even give you the option of saving contacts and calendars locally.
+The exact process for this varies by phone model, but you can start by opening the Contacts app and looking for a menu with all your accounts. For example, the Contacts application on recent Samsung phones displays 'Phone' alongside your Samsung and Google accounts. An option to move Phone contacts to an online account appears in a top menu.
+
+
+
+
+
+
+
+
+
+
+
+
+Copying a local contact to an online account, on a Samsung Galaxy phone
+
+It's also possible to store a limited number of contacts on your phone's SIM card, but this isn't a common practice anymore, so it's pretty hard to do it accidentally.
+Checking for locally-stored calendar events is mostly the same process: open your Calendar app and look for a calendar not linked to any accounts. It's usually called 'Phone' or 'My calendar'.
+
+
+
+
+
+
+
+
+
+Left: Phone calendar on LG phone; Right: Phone calendar on a Samsung Galaxy phone
+
+However, most mobile calendar apps don't give you an easy way to export calendars. The best way to do this is to install this utility from the Play Store, open it, select your phone's calendar, and tap the 'Export' button. This will give you an .ics calendar file, which you can import into Google Calendar, Outlook, or any other cloud service.
+Remove online accounts and disable Device Protection
+If you're selling your phone, or giving it to someone else, you'll need to log out from all accounts and remove any lock screen passwords. Android introduced a feature called 'Device Protection' back in 2015, which requires you to enter the password of the last Google/Samsung/etc. account used on the device, after the device has been wiped.
+To disable Device Protection, you'll first need to log out of all your online accounts. Open the Settings app on your phone, go to the Accounts section, and tap 'Remove account' under each account.
+
+
+
+
+
+
+
+
+
+
+
+
+Removing accounts on a Google Pixel phone
+
+
+
+
+
+
+
+
+
+
+
+
+
+Removing accounts on a Samsung Galaxy phone
+
+Once you've done that, disable any lock screen passwords you might have. This can be done from the Security section of the Settings app.
+
+
+",en,"
+
+
+
+
+
+
+
+
+
+
+
+How to back up your Android phone before a factory reset
+06 Nov 2019, 17:11 by Corbin Davenport
+Even though most of your phone's data probably lives in the cloud, there could still be some locally-stored photos, videos, contacts, calendars, and other important files not backed up. In this post, we'll go over how to check that everything on your phone is properly backed up, so you can wipe it without thinking twice that you lost something.
+Check account sync status
+First, you definitely want to make sure that your Google account is syncing properly with your phone, so everything that should be backed up is actually being backed up. Open the Settings app, tap the Accounts option, select your Google account, and verify that all the apps and services under the account have been synced recently.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+If some of the services haven't been synced recently (for example, if you haven't opened one of the apps in a long time), tap the Sync Now button on the page. Depending on your version of Android, the Sync Now option might be under a menu.
+Make sure your photos are backed up
+If you use Google Photos to back up the photos and videos you take with your phone, you should make sure it's still doing that. All you have to do is open the Photos app and look for the cloud checkmark at the top, which indicates everything has been backed up.
+
+
+
+If you previously turned off cloud backups in Photos, open the side menu, tap 'Settings,' and select 'Back up & sync' to turn syncing on. Super easy.
+
+
+
+
+
+
+
+
+
+
+
+Of course, there are plenty of other photo backup apps for Android, including OneDrive and Dropbox. If you're using one of those, go into the app's settings and check the current sync status.
+If you don't like using photo backup services, you can also simply copy all the images and videos to a flash drive or your computer.
+Backing up photos/videos to a flash drive
+If you have a big enough flash drive, and an adapter if one is needed (either Type-C or microUSB), you can just copy your phone's entire camera folder to the drive. Plug the drive into your phone, then use the Files app on your device to copy the 'DCIM' folder on your phone to the drive.
+Every phone manufacturer has a different file manager, so if you can't figure it out, download Files by Google from the Play Store. Once you've opened the app, here's what you need to do:
+
+Go the 'Browse' tab.
+Select your internal storage
+Find the 'DCIM' folder in the list and hold down on it until a checkmark appears.
+Tap the menu button at the top-right and select 'Copy to'.
+Select your flash drive in the list.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Once your files are copied, you can disconnect the flash drive and back up the photos however you see fit.
+Backing up photos to a PC
+An easier option is just to connect your phone to your computer and copy the phone's DCIM folder, since all you need is the USB cable that (probably) came with your phone.
+Copy contacts and calendars to the cloud
+When you create a contact or calendar event, your phone might give you the option of saving the data in the phone's internal storage, instead of in the cloud. While that's a nice feature to have, especially for the privacy-conscious, it also means you might have saved some important data locally if you didn't pay close attention. Before you wipe our phone, you should check to see if any of your contacts or calendar events aren't backed up to the cloud.
+Some phones, like Google Pixel devices, don't even give you the option of saving contacts and calendars locally.
+The exact process for this varies by phone model, but you can start by opening the Contacts app and looking for a menu with all your accounts. For example, the Contacts application on recent Samsung phones displays 'Phone' alongside your Samsung and Google accounts. An option to move Phone contacts to an online account appears in a top menu.
+
+
+
+
+
+
+
+
+
+
+
+
+Copying a local contact to an online account, on a Samsung Galaxy phone
+
+It's also possible to store a limited number of contacts on your phone's SIM card, but this isn't a common practice anymore, so it's pretty hard to do it accidentally.
+Checking for locally-stored calendar events is mostly the same process: open your Calendar app and look for a calendar not linked to any accounts. It's usually called 'Phone' or 'My calendar'.
+
+
+
+
+
+
+
+
+
+Left: Phone calendar on LG phone; Right: Phone calendar on a Samsung Galaxy phone
+
+However, most mobile calendar apps don't give you an easy way to export calendars. The best way to do this is to install this utility from the Play Store, open it, select your phone's calendar, and tap the 'Export' button. This will give you an .ics calendar file, which you can import into Google Calendar, Outlook, or any other cloud service.
+Remove online accounts and disable Device Protection
+If you're selling your phone, or giving it to someone else, you'll need to log out from all accounts and remove any lock screen passwords. Android introduced a feature called 'Device Protection' back in 2015, which requires you to enter the password of the last Google/Samsung/etc. account used on the device, after the device has been wiped.
+To disable Device Protection, you'll first need to log out of all your online accounts. Open the Settings app on your phone, go to the Accounts section, and tap 'Remove account' under each account.
+
+
+
+
+
+
+
+
+
+
+
+
+Removing accounts on a Google Pixel phone
+
+
+
+
+
+
+
+
+
+
+
+
+
+Removing accounts on a Samsung Galaxy phone
+
+Once you've done that, disable any lock screen passwords you might have. This can be done from the Security section of the Settings app.
+
+
+"

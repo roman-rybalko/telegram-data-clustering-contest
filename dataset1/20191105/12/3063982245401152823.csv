@@ -1,0 +1,48 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Active Directory bekommt zweiten Faktor aus eigenem Haus
+Auf der Ignite 2019 bringt Microsoft die Preview-Versionen von vielen Funktionen rund um Active Directory und Office 365. Es ist künftig möglich, die Authenticator-App als zweiten Faktor in AD zu nutzen. Office 365 wird durch eine Mustererkennung und eine Art Sandbox-Modus sicherer.
+05 Nov 2019, 12:22 by Oliver Nickel
+Microsoft hat diverse Neuerungen für seine Cloud-Infrastruktur Azure auf seiner eigenen Konferenz Ignite 2019 bekanntgegeben. Ein wichtiger Part ist die Nutzer- und Rechteverwaltung per Active Directory, die in Unternehmen verbreitet ist. Die Azure AD Connect Cloud soll es ermöglichen, Identitäten von existierenden und nicht verbundenen Active-Directory-Verzeichnissen in die Cloud-Umgebung zu übertragen. Das soll beispielsweise bei der Migration zu Azure helfen, die Microsoft so oft bewirbt. Das Angebot geht Ende November in eine erste Previewphase.
+Die Entwickler fügen dem Dienst zudem eine weitere Möglichkeit zur Zwei-Faktor-Authentifizierung hinzu. Azure-AD-Kunden sollen künftig den Microsoft Authenticator auf ihre Smartphones für die Anmeldung verwenden können. Das ""reduziert das Risiko durch Phishing und andere identitätsbasierte Angriffe um 99,9 Prozent"", sagt Microsoft in der Mitteilung. Zwei-Faktor-Authentifizierung an sich ist in AD nicht neu. Allerdings bietet der Microsoft Authenticator eine Lösung, die nicht von einem Drittanbieter stammt.
+Schutz in Office 365
+Für die Nutzung von Office in Unternehmen stellt Microsoft den Application Guard for Office als Preview bereit, dieser soll Anwender und Systeme vor schädlichen Word-, Excel- und anderen Dokumenten schützen. Das System funktioniert ähnlich wie geschützte Browsertabs im Sandbox-Modus des kommenden Microsoft Edge und anderen Browsern, indem ausgewählte Dokumente in einem abgeschotteten Container geöffnet werden. Die virtualisierte Umgebung wird dabei beim Anmeldevorgang in Office 365 immer wieder neu erzeugt.
+Das neue Insider Risk Management für Office 365 soll auf andere Weise Schutz bieten. Die Software analysiert mit Microsoft Graph diverse Prozesse innerhalb des Firmennetzwerkes - etwa Dateiaktivitäten oder Kommunikation. Verhalten außerhalb der Norm kann so identifiziert und bei Bedarf bekämpft werden. Das kann beispielsweise auch helfen, vor Datendiebstahl wichtiger Dokumente zu schützen, wenn ein Mitarbeiter im Unternehmen Dateien auf ein Wechselmedium kopiert und anschließend seine Anstellung aufkündigt.
+Eine komplette Liste der neuen Sicherheitsfunktionen stellt Microsoft in einem Blog-Eintrag zusammen.
+
+
+",de,"
+
+
+
+
+
+
+
+
+
+
+
+Active Directory gets second factor from its own house
+At the Ignite 2019, Microsoft is bringing the preview versions of many functions around Active Directory and Office 365. It will be possible to use the Authenticator app as a second factor in AD in the future. Office 365 is safer through pattern recognition and a kind of sandboxing mode.
+05 Nov 2019, 12:22 by Oliver Nickel
+Microsoft has announced a number of changes to its Azure cloud infrastructure at its own Ignite 2019 conference. An important part is the user and rights management via Active Directory, which is widespread in companies. The Azure AD Connect Cloud is designed to allow identities from existing and disconnected Active Directory directories to be transferred to the cloud environment. For example, this should help migrate to Azure, which Microsoft advertises so often. The offer goes into a first preview phase at the end of November.
+Developers are also adding another two-factor authentication capability to the service. Azure AD customers should be able to use the Microsoft Authenticator on their smartphones for logging in in the future. This ""reduces the risk of phishing and other identity-based attacks by 99.9 percent,"" says Microsoft in the release. Two-factor authentication itself is not new in AD. However, the Microsoft Authenticator provides a non-third party solution.
+Protection in Office 365
+Microsoft provides the Application Guard for Office as a preview for Office use, protecting users and systems from malicious Word, Excel and other documents. The system works much like protected browser tabs in the Sandbox mode of the upcoming Microsoft Edge and other browsers by opening selected documents in a locked container. The virtualized environment is recreated over and over again during the sign-on process in Office 365.
+The new Insider Risk Management for Office 365 is intended to provide other means of protection. The software uses Microsoft Graph to analyze various processes within the company network - such as file activities or communication. Out-of-norm behavior can be identified and combated as needed. For example, this can also help protect against data theft of important documents when an employee at the company copies files to removable media and subsequently terminates his or her employment.
+A complete list of new security features is provided by Microsoft in a blog post.
+
+
+"

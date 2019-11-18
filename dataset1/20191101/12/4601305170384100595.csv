@@ -1,0 +1,38 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Quiet.js broadcasts data from your browser as ultrasound
+01 Nov 2019, 12:44 by Rob Beschizza
+Quiet.js converts data to an audio signal--optionally beyond the range of human hearing--and plays it in the browser. If you can't imagine what this might be useful for, note that it can also receive such data. If you're still stumped, you might be a saint surely some tunes are obviously the devil's.
+This is a javascript binding for libquiet, a library for sending and receiving data via sound card. It can function either via speaker or cable (e.g., 3.5mm). Quiet comes included with a few transmissions profiles which can be selected for the intended use. For speaker transmission, there is a profile which transmits around the 19kHz range, which is essentially imperceptible to the human ear.
+
+
+",en,"
+
+
+
+
+
+
+
+
+
+
+
+Quiet.js broadcasts data from your browser as ultrasound
+01 Nov 2019, 12:44 by Rob Beschizza
+Quiet.js converts data to an audio signal--optionally beyond the range of human hearing--and plays it in the browser. If you can't imagine what this might be useful for, note that it can also receive such data. If you're still stumped, you might be a saint surely some tunes are obviously the devil's.
+This is a javascript binding for libquiet, a library for sending and receiving data via sound card. It can function either via speaker or cable (e.g., 3.5mm). Quiet comes included with a few transmissions profiles which can be selected for the intended use. For speaker transmission, there is a profile which transmits around the 19kHz range, which is essentially imperceptible to the human ear.
+
+
+"

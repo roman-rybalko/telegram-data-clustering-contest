@@ -1,0 +1,80 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Pixel 4 Motion Sense can be enabled in your country, here’s how
+04 Nov 2019, 14:30 by Rei Padla
+One of Pixel 4’s main features is Motion Sense as made possible by Project Soli. The project was first made known to us back in 2015. It applied radar tech to interface with wearables. Google soon demoed the Project Soli in action on an LG smartwatch. A few years later which is actually earlier this year, the search giant received FCC approval for the radar-based sensor. Before the Pixel 4 was officially launched, we learned the Motion Sence on the smartphone would work in maybe nine apps and 38 countries.
+Interestingly, it was recently noted the Motion Sense API will not be available for 3rd party developers (yet). But then again you know how genius devs can be so generous that they’re telling us you can enable Soli in any country. Of course, root is still needed.
+One redditor, u/jackerlass, shared instructions on how to enable Project Soli not just in the United States but for any country. The dev looked into the Motion Sense APK and discovered the restriction is based on the phone number country code. This can be bypassed, along with the fact, country checks can be disabled in the settings. It’s easy: simply change Android setting ‘pixel.oslo.allowed_override‘ to ‘true’ or ‘1’.
+Here are further instructions:
+Connect the Pixel 4 with developer mode and execute this command in adb shell:
+
+
+adb shell setprop pixel.oslo.allowed_override true
+
+
+or
+
+
+adb shell “setprop persist.pixel.oslo.allowed_override true; setprop ctl.restart zygote”or edit system/build.prop with some app
+
+
+Root this. Make sure you understand coding and development. You can also choose to use the ‘EnableSoliOnPixel4’ which is an Xposed module to do the change automatically.
+
+Story Timeline
+
+
+
+
+
+
+",en,"
+
+
+
+
+
+
+
+
+
+
+
+Pixel 4 Motion Sense can be enabled in your country, here’s how
+04 Nov 2019, 14:30 by Rei Padla
+One of Pixel 4’s main features is Motion Sense as made possible by Project Soli. The project was first made known to us back in 2015. It applied radar tech to interface with wearables. Google soon demoed the Project Soli in action on an LG smartwatch. A few years later which is actually earlier this year, the search giant received FCC approval for the radar-based sensor. Before the Pixel 4 was officially launched, we learned the Motion Sence on the smartphone would work in maybe nine apps and 38 countries.
+Interestingly, it was recently noted the Motion Sense API will not be available for 3rd party developers (yet). But then again you know how genius devs can be so generous that they’re telling us you can enable Soli in any country. Of course, root is still needed.
+One redditor, u/jackerlass, shared instructions on how to enable Project Soli not just in the United States but for any country. The dev looked into the Motion Sense APK and discovered the restriction is based on the phone number country code. This can be bypassed, along with the fact, country checks can be disabled in the settings. It’s easy: simply change Android setting ‘pixel.oslo.allowed_override‘ to ‘true’ or ‘1’.
+Here are further instructions:
+Connect the Pixel 4 with developer mode and execute this command in adb shell:
+
+
+adb shell setprop pixel.oslo.allowed_override true
+
+
+or
+
+
+adb shell “setprop persist.pixel.oslo.allowed_override true; setprop ctl.restart zygote”or edit system/build.prop with some app
+
+
+Root this. Make sure you understand coding and development. You can also choose to use the ‘EnableSoliOnPixel4’ which is an Xposed module to do the change automatically.
+
+Story Timeline
+
+
+
+
+
+
+"

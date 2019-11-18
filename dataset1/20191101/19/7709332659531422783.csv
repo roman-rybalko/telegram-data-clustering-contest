@@ -1,0 +1,82 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Become a Front-End Master in 2020 With These 10 Project Ideas
+Easily manage projects with monday.com
+This is a little updated cross-post from a quickie article I wrote on DEV. I'm publishing here 'cuz I'm all IndieWeb like that.
+I love this post by Simon Holdorf. He's got some ideas for how to level up your skills as a front-end developer next year. Here they are:
+
+Build a movie search app using React
+Build a chat app with Vue
+Build a weather app with Angular
+Build a to-do app with Svelte
+
+... and 5 more like that.
+All good ideas. All extremely focused on JavaScript frameworks.I like thinking of being a front-end developer as being someone who is a browser person. You deal with people who use some kind of client to use the web on some kind of device. That's the job.
+I love JavaScript frameworks, but knowing them isn't what makes you a good front-end developer. Being performance-focused and accessibility-focused, and thus user-focused is what makes you a front-end master, beyond executing the skills required to get the website built.
+In that vein, here's some more ideas.
+
+Go find a Dribbble shot that appeals to you. Re-build it in HTML and CSS in the cleanest and most accessible way you can.
+Find a component you can abstract in your codebase, and abstract it so you can re-use it efficiently. Consider accessibility as you do it. Could you make it more accessible in a way that benefits the entire site? How about your SVG icon component — how's that looking these days?
+Try out a static site generator (perhaps one that isn't particularly JavaScript focused, just to experience it). What could the data source be? What could you make if you ran the build process on a timed schedule?
+Install the Axe accessibility plugin for DevTools and run it on an important site you control. Make changes to improve the accessibility as it suggests.
+Spin up a copy of Fractal. Check out how it can help you think about building front-ends as components, even at the HTML and CSS level.
+Build a beautiful form in HTML/CSS that does something useful for you, like receive leads for freelance work. Learn all about form validation and see how much you can do in just HTML, then HTML plus some CSS, then with some vanilla JavaScript. Make the form work by using a small dedicated service.
+Read a bit about Serverless and how it can extend your front-end developer skillset.
+Figure out how to implement an SVG icon system. So many sites these days need an icon set. Inlining SVG is a great simple solution, but how you can abstract that to easily implement it with your workflow? How can it work with the framework you use?
+Try to implement a service worker. Read a book about them. Do something very small. Check out a framework centered around them.
+Let's say you needed to put up a website where the entire thing was the name and address of the company, and a list of hours it is open. What's the absolute minimum amount of work and technical debt you could incur to do it?
+
+
+
+",en,"
+
+
+
+
+
+
+
+
+
+
+
+Become a Front-End Master in 2020 With These 10 Project Ideas
+Easily manage projects with monday.com
+This is a little updated cross-post from a quickie article I wrote on DEV. I'm publishing here 'cuz I'm all IndieWeb like that.
+I love this post by Simon Holdorf. He's got some ideas for how to level up your skills as a front-end developer next year. Here they are:
+
+Build a movie search app using React
+Build a chat app with Vue
+Build a weather app with Angular
+Build a to-do app with Svelte
+
+... and 5 more like that.
+All good ideas. All extremely focused on JavaScript frameworks.I like thinking of being a front-end developer as being someone who is a browser person. You deal with people who use some kind of client to use the web on some kind of device. That's the job.
+I love JavaScript frameworks, but knowing them isn't what makes you a good front-end developer. Being performance-focused and accessibility-focused, and thus user-focused is what makes you a front-end master, beyond executing the skills required to get the website built.
+In that vein, here's some more ideas.
+
+Go find a Dribbble shot that appeals to you. Re-build it in HTML and CSS in the cleanest and most accessible way you can.
+Find a component you can abstract in your codebase, and abstract it so you can re-use it efficiently. Consider accessibility as you do it. Could you make it more accessible in a way that benefits the entire site? How about your SVG icon component — how's that looking these days?
+Try out a static site generator (perhaps one that isn't particularly JavaScript focused, just to experience it). What could the data source be? What could you make if you ran the build process on a timed schedule?
+Install the Axe accessibility plugin for DevTools and run it on an important site you control. Make changes to improve the accessibility as it suggests.
+Spin up a copy of Fractal. Check out how it can help you think about building front-ends as components, even at the HTML and CSS level.
+Build a beautiful form in HTML/CSS that does something useful for you, like receive leads for freelance work. Learn all about form validation and see how much you can do in just HTML, then HTML plus some CSS, then with some vanilla JavaScript. Make the form work by using a small dedicated service.
+Read a bit about Serverless and how it can extend your front-end developer skillset.
+Figure out how to implement an SVG icon system. So many sites these days need an icon set. Inlining SVG is a great simple solution, but how you can abstract that to easily implement it with your workflow? How can it work with the framework you use?
+Try to implement a service worker. Read a book about them. Do something very small. Check out a framework centered around them.
+Let's say you needed to put up a website where the entire thing was the name and address of the company, and a list of hours it is open. What's the absolute minimum amount of work and technical debt you could incur to do it?
+
+
+
+"

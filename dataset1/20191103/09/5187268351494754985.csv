@@ -1,0 +1,100 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Muitos falsos positivos no Windows Defender? É hora de adicionar exclusões
+03 Nov 2019, 09:00 by Pedro Simões
+Apesar de não ser a escolha de muitos, o Windows Defender consegue dar já a segurança necessária aos utilizadores do Windows. Esta foi uma aposta da Microsoft que foi claramente ganha e que está cada vez melhor.
+Apesar de toda a sua inteligência, esta solução tem ainda algumas melhorias e não são raros os falsos positivos. Para ajudar neste ponto podemos criar exclusões, que assim não vão gerar alarmes. Veja como pode acabar com os falsos positivos no Windows Defender.
+
+
+
+
+
+Os antivírus são principalmente essenciais no Windows e em outros sistemas. São a certeza de proteção e a salvaguarda contra problemas e ameaças de segurança. Com o Windows Defender a Microsoft conseguiu estabelecer-se e mostrar que também tem uma palavra nesta área.
+Farto de falsos positivos? Eis a forma de os tratar
+Não é anormal a existência de falsos positivos nos antivírus. Estes são aplicações ou ficheiros que são erradamente identificados como potenciais perigos. Para os excluir no Windows Defender precisam apenas de aceder a esta app e navegar para o sítio certo.
+
+
+
+
+
+Devem inicialmente escolher a opção Proteção contra vírus e ameaças. Ai dentro devem depois escolher a opção Gerir definições, na área com o mesmo nome. Por fim, devem escolher Adicionar ou remover exclusões, na área dedicada a este ponto.
+As exclusões que o Windows Defender oferece
+Disponíveis estão 4 tipos de exclusões possíveis. Devem recordar-se que ao escolher adicionar uma destas exclusões, estão a mantê-los fora do alcance do Windows Defender. Caso exista um problema de segurança, não haverá nenhuma proteção.
+
+
+
+
+
+As primeiras duas foram-se em ficheiros ou pastas, devendo o utilizador escolher quais quer isolar do Windows Defender. Deverá escolher cada uma das que quer manter fora desta proteção. O processo poderá ter de ser repetido para abranger todos.
+Só tem de escolher o que quer deixar de fora deste antivírus
+Outra possibilidade de exclusão está igualmente no tipo de ficheiro ou no processar. Estes isolam todos os tipos de ficheiros indicados ou os processos de aplicações que forem registados como exclusão.
+
+
+
+
+
+O Windows Defender só necessita que indiquem a extensão dos ficheiros a manter excluídos ou o nome dos processos a serem também isolados e colocados fora do controlo do antivírus do Windows.
+Esta é a forma simples e direta para controlarem os ficheiros, pastas ou processos que o Windows Defender irá ignorar. É assim que devem tratar os falsos positivos, com o cuidado de garantir que estes não representam nenhum perigo ou problema de segurança.
+
+
+",pt,"
+
+
+
+
+
+
+
+
+
+
+
+Too many false positives in Windows Defender? It's time to add exclusions
+03 Nov 2019, 09:00 by Pedro Simões
+Although not the choice of many, Windows Defender can now provide the necessary security for Windows users. This was a clearly winning Microsoft bet that is getting better and better.
+For all its intelligence, this solution still has some improvements and false positives are not uncommon. To help at this point we can create exclusions, which will not generate alarms. See how you can stop false positives in Windows Defender.
+
+
+
+
+
+Antiviruses are primarily essential on Windows and other systems. They are sure to protect and safeguard against problems and security threats. With Windows Defender Microsoft has been able to establish itself and show that it also has a word in this area.
+Fed up with false positives? Here's how to treat them
+False positives on antivirus software are not unusual. These are applications or files that are misidentified as potential hazards. To delete them in Windows Defender you just have to go to this app and navigate to the right place.
+
+
+
+
+
+They should initially choose the Virus and threat protection option. Inside you should then choose the Manage settings option in the area with the same name. Finally, they should choose Add or Remove Exclusions in the area dedicated to this point.
+The exclusions that Windows Defender offers
+Available are 4 types of possible exclusions. You should remember that by choosing to add one of these exclusions, you are keeping them out of reach of Windows Defender. If there is a security problem, there will be no protection.
+
+
+
+
+
+The first two were files or folders, and you should choose which ones to isolate from Windows Defender. You should choose each one you want to keep out of this protection. The process may need to be repeated to cover everyone.
+Just choose what you want to leave out of this antivirus
+Another possibility of deletion is also in the file type or processing. These isolate all indicated file types or application processes that are registered as deletion.
+
+
+
+
+
+Windows Defender only needs to indicate the extent of the files to be deleted or the names of the processes to be also isolated and placed outside the control of Windows antivirus.
+This is the simple and straightforward way to control the files, folders, or processes that Windows Defender will ignore. This is how false positives should be treated, taking care to ensure that they do not pose any safety hazards or problems.
+
+
+"

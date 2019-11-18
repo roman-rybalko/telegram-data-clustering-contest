@@ -1,0 +1,62 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Strongly typed documents, move aside—Microsoft Fluid is coming
+Remember collaborative typing in BBSes? It's making a comeback in Office 365.
+05 Nov 2019, 15:11 by Jim Salter
+Microsoft is getting ready to make some extremely big changes in Office. Ars spoke Monday with Rob Howard, VP of the Microsoft 365 Foundation team at the Ignite conference in Orlando, and he gave us some pretty eye-opening demonstrations.
+The first thing Howard showed us was Microsoft's new collaborative technology framework, Fluid. Fluid is a low-level platform available to developers who want to create extremely low-latency (under 20ms, network connection permitting) collaborative experiences that scale to hundreds or even thousands of simultaneous collaborators. Instead of just seeing a cursor hopping sporadically around a page and entire sentences appearing or disappearing every few seconds, one collaborator can see another typing into a document in real time, letter by letter.
+It's reasonable to wonder why you'd want such a collaborative platform to scale to thousands of users, and Howard posed exactly that hypothetical question. The idea of document-based performance art immediately sprang to mind—but Howard had a different answer. This kind of massive scale makes it easy for AI to collaborate directly alongside humans, in many of the same ways that humans might—and he showed us a demo of typing into a Word document, with AI routines translating the text in real time into eight different languages simultaneously.
+Fluid isn't only about low latency, though—it's also about transcending the traditional definitions and separations between kinds of documents. We also saw demonstrations of a table being copied from a Word document and pasted into a Teams (Office 365's instant messaging client) chat. Not only did the pasted table render correctly inside the instant message, it stayed editable—and as the Teams user who received it filled out blank cells in the table, their changes automatically populated in real time in the source document.
+
+
+We were mildly impressed that this copied Word table rendered properly in an instant message at all—let alone that the recipient could update the data inside the IM itself. (Click through to view the animated demo.)Microsoft
+
+Howard went on to tell us that his team expects to expand this technology throughout Office365 over time, and we can look forward to similar automatic, real-time collaborative efforts extending to email. Instead of sending someone a spreadsheet as an attachment, them saving the attachment and opening it in Excel and then saving it and attaching the updated spreadsheet to a new email, he envisions Fluid allowing one user to email another a live, embedded link to data that the recipient can update and modify, on the fly, without ever leaving the actual email.
+Fluid's weakly typed documents offer a lot of potential for workflow optimization, but there's also potential for confusion. Howard expanded, ""the interesting thing about this technology is there's a lot of new user behavior to figure out. Now this table doesn't behave like a table anymore. It behaves like a new thing.""
+The obvious possibilities of accidental loss—for example, when a user intends to show someone a copy of data, but accidentally gives them a portal to modify or even delete it—are in part mitigated by new possibilities of forking and branching documents, with revision histories, much like git commits. But it's going to take time for users—even the power users, who normally support and rescue the ones making the unintentional goofs—to come to grips with all of this.
+Howard emphasized that while Fluid is live, working code, the team is still experimenting with how best to present its new capabilities to end users. He showed me a briefly animated, rainbow-y border around a live-linked table inserted into an email. The animated border is a potential UI hint to catch users' attention and let them know the difference between static data and dynamically linked Fluid data, but it's still experimental.
+Fluid isn't ready for the general public yet, but in the next few weeks it will be made available to Office365 commercial customers at fluidpreview.com. ""Part of the preview,"" Howard said, ""is figuring out, well, what are the scenarios that most people want? What is the thing that makes the most sense to them, and how do we incorporate it? It takes time to figure out all the places it will show up.""
+
+
+",en,"
+
+
+
+
+
+
+
+
+
+
+
+Strongly typed documents, move aside—Microsoft Fluid is coming
+Remember collaborative typing in BBSes? It's making a comeback in Office 365.
+05 Nov 2019, 15:11 by Jim Salter
+Microsoft is getting ready to make some extremely big changes in Office. Ars spoke Monday with Rob Howard, VP of the Microsoft 365 Foundation team at the Ignite conference in Orlando, and he gave us some pretty eye-opening demonstrations.
+The first thing Howard showed us was Microsoft's new collaborative technology framework, Fluid. Fluid is a low-level platform available to developers who want to create extremely low-latency (under 20ms, network connection permitting) collaborative experiences that scale to hundreds or even thousands of simultaneous collaborators. Instead of just seeing a cursor hopping sporadically around a page and entire sentences appearing or disappearing every few seconds, one collaborator can see another typing into a document in real time, letter by letter.
+It's reasonable to wonder why you'd want such a collaborative platform to scale to thousands of users, and Howard posed exactly that hypothetical question. The idea of document-based performance art immediately sprang to mind—but Howard had a different answer. This kind of massive scale makes it easy for AI to collaborate directly alongside humans, in many of the same ways that humans might—and he showed us a demo of typing into a Word document, with AI routines translating the text in real time into eight different languages simultaneously.
+Fluid isn't only about low latency, though—it's also about transcending the traditional definitions and separations between kinds of documents. We also saw demonstrations of a table being copied from a Word document and pasted into a Teams (Office 365's instant messaging client) chat. Not only did the pasted table render correctly inside the instant message, it stayed editable—and as the Teams user who received it filled out blank cells in the table, their changes automatically populated in real time in the source document.
+
+
+We were mildly impressed that this copied Word table rendered properly in an instant message at all—let alone that the recipient could update the data inside the IM itself. (Click through to view the animated demo.)Microsoft
+
+Howard went on to tell us that his team expects to expand this technology throughout Office365 over time, and we can look forward to similar automatic, real-time collaborative efforts extending to email. Instead of sending someone a spreadsheet as an attachment, them saving the attachment and opening it in Excel and then saving it and attaching the updated spreadsheet to a new email, he envisions Fluid allowing one user to email another a live, embedded link to data that the recipient can update and modify, on the fly, without ever leaving the actual email.
+Fluid's weakly typed documents offer a lot of potential for workflow optimization, but there's also potential for confusion. Howard expanded, ""the interesting thing about this technology is there's a lot of new user behavior to figure out. Now this table doesn't behave like a table anymore. It behaves like a new thing.""
+The obvious possibilities of accidental loss—for example, when a user intends to show someone a copy of data, but accidentally gives them a portal to modify or even delete it—are in part mitigated by new possibilities of forking and branching documents, with revision histories, much like git commits. But it's going to take time for users—even the power users, who normally support and rescue the ones making the unintentional goofs—to come to grips with all of this.
+Howard emphasized that while Fluid is live, working code, the team is still experimenting with how best to present its new capabilities to end users. He showed me a briefly animated, rainbow-y border around a live-linked table inserted into an email. The animated border is a potential UI hint to catch users' attention and let them know the difference between static data and dynamically linked Fluid data, but it's still experimental.
+Fluid isn't ready for the general public yet, but in the next few weeks it will be made available to Office365 commercial customers at fluidpreview.com. ""Part of the preview,"" Howard said, ""is figuring out, well, what are the scenarios that most people want? What is the thing that makes the most sense to them, and how do we incorporate it? It takes time to figure out all the places it will show up.""
+
+
+"

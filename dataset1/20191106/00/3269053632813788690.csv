@@ -1,0 +1,48 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+El AMD Ryzen 9 3950X aparece por Geekbench 5 rindiendo como el Core i9-9980XE
+06 Nov 2019 by Borja Rodríguez
+El AMD Ryzen 9 3950X dejó ayer mismo su huella impregnada en el software de benchmarking Geekbech 5, día en el que este procesador debería haberse lanzado oficialmente, pero parece que tendremos que esperar a mañana para que este lanzamiento sea oficial.
+Hay que recordar que el AMD Ryzen 9 3950X se trata del primer procesador de consumo en ofrecer nada menos que 16 núcleos y 32 hilos de procesamiento a unas frecuencias Base/Turbo de 3.50/4.70 GHz con 72 MB de caché L3 y un TDP de 105W, el cual puntuó en dicho benchmark con 1363 puntos en la prueba mononúcleo y 16722 puntos en la multinúcleo.
+
+
+
+Para que nos hagamos una idea, en el rendimiento mononúcleo está lejos de los de los 1100-1150 puntos que alcanza el Intel Core i9-9980XE, la que aún se trata de la CPU tope de gama de Intel para la plataforma de alto rendimiento (HEDT), mientras que en la prueba multinúcleo las cosas están muy igualadas con una puntuación de 16786-16791 puntos. Esto es una muy buena noticia para AMD, por que si bien hay prácticamente un empate técnico en la prueba multinúcleo, Intel necesita de 2 núcleos y 4 hilos de procesamiento adicionales para igualar el rendimiento de AMD, y esto se traduce en un TDP de 165W.
+Si queremos verlo desde otra perspectiva, el AMD Ryzen Threadripper 2970WX se mueve en los 1107/16791 puntos, recordando que esta CPU ofrece 24 núcleos y 48 hilos de procesamiento bajo la arquitectura Zen+ @ 12nm, pudiendo ver así la notoria diferencia que arroja Zen2 @ 7nm.
+
+
+",es,"
+
+
+
+
+
+
+
+
+
+
+
+The AMD Ryzen 9 3950X appears on Geekbench 5 rendering as the Core i9-9980XE
+06 Nov 2019 by Borja Rodríguez
+The AMD Ryzen 9 3950X left its mark yesterday impregnated in the Geekbech 5 benchmarking software, the day on which this processor should have officially launched, but it seems that we will have to wait until tomorrow for this launch to be official.
+Remember that the AMD Ryzen 9 3950X is the first consumer processor to offer no less than 16 cores and 32 processing threads at Base / Turbo frequencies of 3.50 / 4.70 GHz with 72 MB of L3 cache and a TDP of 105W , which scored in said benchmark with 1363 points in the mononuclear test and 16722 points in the multicore.
+
+
+
+To give us an idea, the mononuclear performance is far from the 1100-1150 points reached by the Intel Core i9-9980XE, which is still the top-of-the-range Intel CPU for the high-performance platform ( HEDT), while in the multicore test things are very even with a score of 16786-16791 points. This is very good news for AMD, because although there is practically a technical tie in the multicore test, Intel needs 2 cores and 4 additional processing threads to match AMD performance, and this translates into a 165W TDP .
+If we want to see it from another perspective, the AMD Ryzen Threadripper 2970WX moves at 1107/16791 points, remembering that this CPU offers 24 cores and 48 threads of processing under the Zen + @ 12nm architecture, thus being able to see the notorious difference that Zen2 @ throws 7nm
+
+
+"

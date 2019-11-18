@@ -1,0 +1,234 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Cómo ver todas las páginas web en modo oscuro con Chrome
+03 Nov 2019, 13:00 by Rocío García
+El modo oscuro está cada vez más presente en aplicaciones y servicios para smartphones o en redes sociales que usamos día a día. Pero más allá de aplicaciones en el móvil o la interfaz del teléfono, puedes hacer que el modo oscuro esté en todas las páginas que visites. Explicamos cómo ver todas las webs en modo oscuro con Chrome. No sólo cambiará tu navegador sino el contenido del mismo.
+Con la versión de Google Chrome 78, podrás habilitar el modo oscuro en todas las páginas web que visitas. No solo aparecerá en tonos grises y negros el navegador, las opciones, la configuración o los menús sino que también aparecerá el contenido que estás viendo en el mismo, siempre lo admita.
+Para ver todas las webs en modo oscuro en Chrome deberás forzar este modo oscuro. No viene la opción por defecto pero la ventaja es que no tendrás que esperar que los sitios web vayan, poco a poco, actualizando sus páginas. Te servirá con cualquiera, con varias opciones disponibles y podrás elegir.
+
+
+
+Modo oscuro en Google Chrome
+Puedes activar el modo oscuro en Google Chrome para que el menú y los ajustes y la barra de marcadores o la barra de inicio pase a ser oscura. Pero esto no modificará el contenido de las páginas que visitas, que seguirán como siempre.
+Si quieres apostar por este diseño, sigue estos pasos:
+
+Abre Google Chrome
+Ve a Configuración
+Pulsa en el apartado “Aspecto”
+Ve a “Temas”
+Elige el tema oscuro (o descárgalo si no lo tienes)
+Todo se activará a tonos negros y grises automáticamente
+
+
+
+
+Webs en modo oscuro
+Si lo que quieres es cambiar el contenido que visitas, puedes hacerlo forzando Google Chrome. Está disponible de forma oculta en Chrome 78 y podrás activarlo aunque se trata de una opción experimental que podría sufrir cambios o desaparecer.
+Antes de nada, asegúrate que Google Chrome está actualizado a Chrome 78. Una vez que lo tengas, puedes seguir estos pasos para ver todas las webs en modo oscuro en Chrome:
+
+Abre el navegador
+En la barra de tareas escribe Chrome://flags
+Aparecerá una nueva ventana que indica “Experiments”
+En la barra de búsqueda en la parte superior, escribe “Dark Mode”
+Aparecerán varias opciones disponibles. Ve a “Available”
+Una vez aquí, debemos fijarnos en “Force Dark Mode for Web Contents”
+Marca “Enabled” en la casilla de la derecha
+Pulsa el botón de “Relaunch” en la parte inferior de la pantalla
+Podrás ver la página web con modo oscuro
+
+
+
+
+Como puedes ver en las imágenes, bastará con marcar “Enabled” en el desplegable de opciones para ver todas las webs en modo oscuro en Google Chrome. Si quieres que vuelvan a la normalidad, tendrás que seguir el mismo proceso explicado anteriormente pero marcando la casilla de “Disabled” en el desplegable disponible.
+
+Abre el navegador
+En la barra de tareas escribe Chrome://flags
+Aparecerá una nueva ventana que indica “Experiments”
+En la barra de búsqueda en la parte superior, escribe “Dark Mode”
+Aparecerán varias opciones disponibles. Ve a “Available”
+Una vez aquí, debemos fijarnos en “Force Dark Mode for Web Contents”
+Marca “Disabled” en la casilla de la derecha
+Pulsa el botón de “Relaunch” en la parte inferior de la pantalla
+Podrás ver la página web como siempre
+
+Modo oscuro en Chrome
+Pero no sólo hay un modo oscuro que puedes activar. Hay muchas opciones para forzar el modo oscuro y las páginas se verán de una forma u otra según las actives. Algunos oscurecen solo las imágenes, algunos oscurecen sólo los menús, cambian los colores e invierten las imágenes o las letras. Los resultados van variando en función del que elijas y puedes ir probando el modo oscuro que más te guste.
+Estas son todas las opciones que puedes activar para tener las webs en modo oscuro en Google Chrome y cómo quedarían una vez que eliges cada una de ellas. Cada página actuará de una forma diferente y no se trata de modos perfectos sino que tendremos que ir aplicándolos para ver cuál se ajusta más.
+Enabled
+El modo oscuro por defecto tal y como lo ves en la imagen mantendrá tonos oscuros para el fondo del texto aunque no alterará los colores de imágenes ni de los menús principales de la página web.
+
+
+
+Enabled with simple HSL-based inversion
+En este caso, la inversión del modo oscuro en Chrome se hace en base al modo de color HSL. Es decir, basándose en la deformación no lineal de RGB. Con especto al anterior, vemos que las letras sí cambian y apuestan por tonos negros con fondos blancos, que el menú cambia y apuesta por letras negras.
+
+
+
+Enabled with simple CIELAB-based inversion
+Una inversión selectiva basada en CIELAB, on mayor abanico de colores, resultados más precisos y agradables. La cabecera se mantiene, las letras pasan a tonos oscuros y también el fondo de los temas.
+
+
+
+Enabled with simple RGB-based inversion
+Modo oscuro en Chrome con inversión basado en RGB. En este caso, la cabecera se mantiene aunque algunos elementos de la página cambian al completo de color: las letras, las categorías.
+
+
+
+Enabled with selective image inversion
+En este caso vemos que la cabecera se invierte y también las letras de la misma: pasan a ser oscuras las letras blancas y los fondos más oscuros pasan a tonos claros casi blancos y mucho más luminosos.
+
+
+
+Enabled with selective inversion of non-image element
+Se invierten todos los elementos que no sean imágenes. Se cambian los fondos por tonos oscuros aunque se mantienen las imágenes y los pies de foto con el diseño habitual en la página.
+
+
+
+Enabled with inversión of everything
+Todos los fondos y tonos de los temas en la página web pasan a tener un modo oscuro en Chrome, invirtiendo lo habitual.
+
+
+
+Modo oscuro en Chrome desde tu móvil
+En tu teléfono móvil podrás probar todos los modos oscuros de Chrome que vemos en las imágenes anteriores. El proceso es exactamente el mismo y sólo tendrás que ir a la tienda de aplicaciones y asegurarte que tu aplicación de navegador es la última versión disponible.
+
+Abre el navegador en tu smartphone
+En la barra de tareas escribe Chrome://flags
+Aparecerá una nueva ventana que indica “Experiments”
+Ve a “Force Dark Mode for Web Contents”
+Marca “Disabled” en la casilla de la derecha
+Verás el contenido oscuro en Chrome en tu móvil
+
+
+
+
+
+
+",es,"
+
+
+
+
+
+
+
+
+
+
+
+How to view all web pages in dark mode with Chrome
+03 Nov 2019, 13:00 by Rocío García
+The dark mode is increasingly present in applications and services for smartphones or social networks that we use every day. But beyond applications on the mobile or phone interface, you can make the dark mode be on all the pages you visit. We explain how to view all websites in dark mode with Chrome. Not only will your browser change but the content of it.
+With the Google Chrome 78 version, you can enable dark mode on all web pages you visit. Not only will the browser, options, settings or menus appear in gray and black tones, but the content you are viewing in it will also appear, always support it.
+To see all the websites in dark mode in Chrome you must force this dark mode. The default option does not come but the advantage is that you will not have to wait for the websites to gradually update their pages. It will serve you with anyone, with several options available and you can choose.
+
+
+
+Dark mode in Google Chrome
+You can activate the dark mode in Google Chrome so that the menu and settings and the bookmarks bar or the start bar become dark. But this will not change the content of the pages you visit, which will continue as usual.
+If you want to bet on this design, follow these steps:
+
+Open Google Chrome
+Go to Settings
+Click on the ""Aspect"" section
+Go to ""Themes""
+Choose the dark theme (or download it if you don't have it)
+Everything will be activated in black and gray tones automatically
+
+
+
+
+Webs in dark mode
+If what you want is to change the content you visit, you can do so by forcing Google Chrome. It is available hidden in Chrome 78 and you can activate it even though it is an experimental option that could undergo changes or disappear.
+First of all, make sure that Google Chrome is updated to Chrome 78. Once you have it, you can follow these steps to see all the websites in dark mode in Chrome:
+
+Open the browser
+On the taskbar type Chrome: // flags
+A new window will appear indicating ""Experiments""
+In the search bar at the top, type ""Dark Mode""
+Several available options will appear. Go to ""Available""
+Once here, we must look at “Force Dark Mode for Web Contents”
+Check “Enabled” in the box on the right
+Press the ""Relaunch"" button at the bottom of the screen
+You can see the website with dark mode
+
+
+
+
+As you can see in the images, simply select “Enabled” in the drop-down options to see all the websites in dark mode in Google Chrome. If you want them to return to normal, you will have to follow the same process explained above but by checking the ""Disabled"" box in the available drop-down.
+
+Open the browser
+On the taskbar type Chrome: // flags
+A new window will appear indicating ""Experiments""
+In the search bar at the top, type ""Dark Mode""
+Several available options will appear. Go to ""Available""
+Once here, we must look at “Force Dark Mode for Web Contents”
+Check “Disabled” in the box on the right
+Press the ""Relaunch"" button at the bottom of the screen
+You can see the website as always
+
+Dark mode in Chrome
+But not only is there a dark mode that you can activate. There are many options to force the dark mode and the pages will be seen one way or another depending on the assets. Some obscure only the images, some obscure only the menus, change the colors and invert the images or the letters. The results vary depending on the one you choose and you can try the dark mode you like best.
+These are all the options that you can activate to have the websites in dark mode in Google Chrome and how they would look once you choose each one of them. Each page will act in a different way and it is not about perfect ways but we will have to apply them to see which one fits more.
+Enabled
+The dark mode by default as you see it in the image will keep dark tones for the background of the text although it will not alter the colors of images or the main menus of the web page.
+
+
+
+Enabled with simple HSL-based inversion
+In this case, the dark mode inversion in Chrome is based on the HSL color mode. That is, based on the non-linear deformation of RGB. With regard to the previous one, we see that the letters do change and bet on black tones with white backgrounds, that the menu changes and bets on black letters.
+
+
+
+Enabled with simple CIELAB-based inversion
+A selective investment based on CIELAB, with a greater range of colors, more precise and pleasant results. The header is maintained, the letters go to dark tones and also the background of the themes.
+
+
+
+Enabled with simple RGB-based inversion
+Dark mode in Chrome with RGB-based inversion. In this case, the header is maintained although some elements of the page change to full color: the letters, the categories.
+
+
+
+Enabled with selective image inversion
+In this case we see that the header is reversed and also the letters of it: the white letters become dark and the darker backgrounds become almost white and much brighter light tones.
+
+
+
+Enabled with selective inversion of non-image element
+All elements that are not images are inverted. The backgrounds are changed to dark tones although the images and captions are maintained with the usual design on the page.
+
+
+
+Enabled with inversion of everything
+All the backgrounds and tones of the themes on the website go to have a dark mode in Chrome, inverting the usual.
+
+
+
+Dark mode in Chrome from your mobile
+On your mobile phone you can try all the dark Chrome modes that we see in the previous images. The process is exactly the same and you just have to go to the app store and make sure your browser application is the latest version available.
+
+Open the browser on your smartphone
+On the taskbar type Chrome: // flags
+A new window will appear indicating ""Experiments""
+Go to ""Force Dark Mode for Web Contents""
+Check “Disabled” in the box on the right
+You'll see the dark content in Chrome on your mobile
+
+
+
+
+
+
+"

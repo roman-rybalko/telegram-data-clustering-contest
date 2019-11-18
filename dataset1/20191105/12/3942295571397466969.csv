@@ -1,0 +1,62 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Mozilla перестанет поддерживать стороннюю загрузку расширений в Firefox
+05 Nov 2019, 12:08 by Екатерина Быстрова
+
+
+
+Mozilla хочет избавиться от одного из трёх методов установки расширений для браузера Firefox. Со следующего года пользователи уже не смогут инсталлировать аддоны путём помещения XPI-файла в специальную папку, расположенную внутри директории Firefox.
+Этот метод известен как «sideloading» или, другими словами, сторонняя загрузка. Такой подход помогает разработчикам распространять свои расширения в связке с десктопными программами. Девелопер может сконфигурировать инсталлятор таким образом, что он поместит XPI-файл расширения в папку Firefox.
+Казалось бы, все удобно и продуманно реализовало, так почему же Mozilla решила отказаться от «сайдлоадинга»? Все дело, по словам компании, в рисках безопасности.
+«Расширения, устанавливаемые с помощью сторонней загрузки, часто создают пользователям проблемы, поскольку изначально люди могли и не хотеть их инсталлировать. Помимо этого, юзеры не могут удалить такие аддоны обычным способом — через соответствующий менеджер», — объясняет Кейтлин Нейман, отвечающая в Mozilla за управление аддонами.«Этот механизм ранее использовался для установки вредоносных расширений в Firefox».
+Оценив ситуацию, Mozilla приняла решение прекратить поддержку такого способа установки аддонов в следующем году.
+
+Читайте также
+
+
+
+
+
+
+",ru,"
+
+
+
+
+
+
+
+
+
+
+
+Mozilla will no longer support third-party extension downloads in Firefox
+05 Nov 2019, 12:08 by Ekaterina Bystrova
+
+
+
+Mozilla wants to get rid of one of three methods for installing extensions for the Firefox browser. Starting next year, users will no longer be able to install add-ons by placing the XPI file in a special folder located inside the Firefox directory.
+This method is known as “sideloading” or, in other words, third-party loading. This approach helps developers distribute their extensions in conjunction with desktop programs. The developer can configure the installer so that it places the XPI extension file in the Firefox folder.
+It would seem that everything was conveniently and thoughtfully implemented, so why did Mozilla decide to abandon sideloading? The thing, according to the company, is security risks.
+“Extensions that are installed using third-party downloads often create problems for users, because initially people might not want to install them. In addition, users cannot remove such add-ons in the usual way - through the appropriate manager, ""explains Caitlin Neumann, who is responsible for managing addons at Mozilla."" This mechanism was previously used to install malicious extensions in Firefox. ""
+Assessing the situation, Mozilla decided to stop supporting this method of installing add-ons next year.
+
+Read also
+
+
+
+
+
+
+"

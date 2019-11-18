@@ -1,0 +1,168 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Your Google Home or Amazon Echo can be hacked using laser pointers
+
+05 Nov 2019, 10:24
+
+
+
+
+
+
+
+
+Source: Harish Jonnalagadda / Android Central
+
+What you need to know
+
+Researchers have found that smart speakers such as Google Home, Apple HomePod, and Amazon Echo can be hacked with the help of laser-powered ""light commands.""
+Apart from smart speakers, Facebook's Portal devices as well as smartphones can also be easily tricked by ""light commands"" from as far as a few hundred feet away.
+Researchers suggest smart speaker makers can fix this vulnerability by adding a light shield around the microphone or using two different microphones on opposite sides to listen to voice commands.
+
+Researchers have discovered (via WIRED) that it is possible to ""speak"" to devices such as Google Home, Apple HomePod, and Amazon Echo smart speakers with the help of ""light commands."" In order to do this, they had to point a laser at the target device's microphone using a telephoto lens and a tripod to change the intensity to a specific frequency. This would trick the device's voice assistant into responding to the light that hit the microphone's membrane as if it were sound. In some cases, simply flooding the light was enough to get it to respond to commands.
+
+
+
+These ""light commands"" happen to be completely silent and can be transmitted from as far as 250 feet away. Researchers suggest hackers may even use an infrared laser, which isn't visible to the naked eye, to control your smart speakers.
+Fortunately, there are quite a few limitations as well. First, attempting a laser-based attack would require specialized equipment, although most of them are easily available on Amazon and aren't very expensive either. A targeted device must also be directly in line of sight so that the laser can be aimed at the specific part of the microphone on the device.
+
+
+
+However, it's not just smart speakers that are vulnerable to light commands. Smartphones, tablets, Facebook Portal, and other devices that use MEMS microphones and have a voice assistant were also found to be susceptible to such laser-based attacks. The researchers did their testing using quite a few popular devices such as the iPhone XR, a 6th Gen iPad, Samsung Galaxy S9, as well as a Google Pixel 2.
+According to the researchers, smart speaker makers can prevent such attacks by placing a light shield in front of the microphone and having two microphones on opposite sides to hear voice commands. In a statement sent to WIRED, both Google and Amazon have said that they are reviewing the research paper. Apple, however, declined to comment.
+
+Nest Mini vs. Google Home: Which should you buy?
+
+
+
+
+
+
+
+
+A decent mid-ranger The Nokia 6.2 arrives in the U.S. with Android One for $249 The Nokia 6.2 with triple rear cameras and stock Android is now available in the U.S. for $249.
+
+
+
+
+
+
+
+
+New patch time Have you downloaded the November 2019 security patch? Google is now rolling out the November 2019 security patch to Pixel devices. Have you gotten your hands on it yet?
+
+
+
+
+
+
+
+
+Facebook New Face Facebook's new corporate logo is as boring as they come Facebook has announced a new corporate logo design, as well as a corporate initiative to include the new logo on all of its major app and service properties.
+
+
+
+
+
+
+
+
+That Twilight Blue Tho What color Amazon Echo (3rd Gen) should you buy? Amazon has long offered the Echo in a dark (black-ish) or light (off-white) variety, but now there are four great color options to choose from. Which one should you get? Well, we have our favorites!
+
+
+
+",en,"
+
+
+
+
+
+
+
+
+
+
+
+Your Google Home or Amazon Echo can be hacked using laser pointers
+
+05 Nov 2019, 10:24
+
+
+
+
+
+
+
+
+Source: Harish Jonnalagadda / Android Central
+
+What you need to know
+
+Researchers have found that smart speakers such as Google Home, Apple HomePod, and Amazon Echo can be hacked with the help of laser-powered ""light commands.""
+Apart from smart speakers, Facebook's Portal devices as well as smartphones can also be easily tricked by ""light commands"" from as far as a few hundred feet away.
+Researchers suggest smart speaker makers can fix this vulnerability by adding a light shield around the microphone or using two different microphones on opposite sides to listen to voice commands.
+
+Researchers have discovered (via WIRED) that it is possible to ""speak"" to devices such as Google Home, Apple HomePod, and Amazon Echo smart speakers with the help of ""light commands."" In order to do this, they had to point a laser at the target device's microphone using a telephoto lens and a tripod to change the intensity to a specific frequency. This would trick the device's voice assistant into responding to the light that hit the microphone's membrane as if it were sound. In some cases, simply flooding the light was enough to get it to respond to commands.
+
+
+
+These ""light commands"" happen to be completely silent and can be transmitted from as far as 250 feet away. Researchers suggest hackers may even use an infrared laser, which isn't visible to the naked eye, to control your smart speakers.
+Fortunately, there are quite a few limitations as well. First, attempting a laser-based attack would require specialized equipment, although most of them are easily available on Amazon and aren't very expensive either. A targeted device must also be directly in line of sight so that the laser can be aimed at the specific part of the microphone on the device.
+
+
+
+However, it's not just smart speakers that are vulnerable to light commands. Smartphones, tablets, Facebook Portal, and other devices that use MEMS microphones and have a voice assistant were also found to be susceptible to such laser-based attacks. The researchers did their testing using quite a few popular devices such as the iPhone XR, a 6th Gen iPad, Samsung Galaxy S9, as well as a Google Pixel 2.
+According to the researchers, smart speaker makers can prevent such attacks by placing a light shield in front of the microphone and having two microphones on opposite sides to hear voice commands. In a statement sent to WIRED, both Google and Amazon have said that they are reviewing the research paper. Apple, however, declined to comment.
+
+Nest Mini vs. Google Home: Which should you buy?
+
+
+
+
+
+
+
+
+A decent mid-ranger The Nokia 6.2 arrives in the U.S. with Android One for $249 The Nokia 6.2 with triple rear cameras and stock Android is now available in the U.S. for $249.
+
+
+
+
+
+
+
+
+New patch time Have you downloaded the November 2019 security patch? Google is now rolling out the November 2019 security patch to Pixel devices. Have you gotten your hands on it yet?
+
+
+
+
+
+
+
+
+Facebook New Face Facebook's new corporate logo is as boring as they come Facebook has announced a new corporate logo design, as well as a corporate initiative to include the new logo on all of its major app and service properties.
+
+
+
+
+
+
+
+
+That Twilight Blue Tho What color Amazon Echo (3rd Gen) should you buy? Amazon has long offered the Echo in a dark (black-ish) or light (off-white) variety, but now there are four great color options to choose from. Which one should you get? Well, we have our favorites!
+
+
+
+"

@@ -1,0 +1,838 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Need some Routines inspiration? Here are the best ones for your home
+
+06 Nov 2019, 11:00
+
+
+
+
+
+
+
+
+Source: Android Central
+
+While the individual commands you can give your Amazon Echo are plenty diverse, you still have to give those commands one at a time. That can be more than a little tedious if you have multiple commands you regularly give, which is why Amazon created Routines for Alexa. Through the Routines system, you can set up multiple commands under a single spoken phrase. You get to say less, and your Echo does more. Everybody wins.
+These are my favorite routines, which I have set up to better automate my home through my Amazon Echo.
+Alexa, start my day
+Amazon gives everyone a ""Start My Day"" Routine. By default, it reads you the weather followed by traffic in your area and wraps up with your Flash Briefing. These are all useful, but not really what I need in the morning.
+Instead, I have this Routine edited to turn on my bedroom lights. Once the lights are at 50% brightness Alexa starts telling me the weather for the day. After this update, I have TuneIn set to play my local radio station.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+In the Alexa app, tap on Routines.
+Tap the + symbol in the top right corner.
+Tap When this happens.
+Select Voice from the two available options. Source: Android Central
+Type Start my morning into the text box.
+Tap Save.
+Tap Add Action. Source: Android Central
+Select Smart Home from the list.
+Tap All Devices.
+Find your light in the list and set it to 50% on.
+Tap Next.
+Tap Add Action. Source: Android Central, and Android Central /
+Select Weather from the list.
+Tap Next.
+Tap Add Action. Source: Android Central
+Select Music from the list.
+Add preferred radio station from TuneIn.
+Tap Next. Source: Android Central
+Tap From.
+Select your preferred device.
+Tap Create to finish. Source: Android Central /
+
+Alexa, I'm leaving
+It used to be that you'd have to manually create a routine from scratch to shut down your smart home when you left the house, but with the introduction of Alexa Guard, this has pretty much been taken care of for you. Nevertheless, it's a handy routine to mention, so here is how you set it up.
+Alexa Guard allows you to tie your smart home appliances to a sort of home security routine, so that when you set it up and then say something like ""Alexa, I'm leaving,"" your Echo devices can automate your smart lights, arm your security system, and listen for sounds of distress from your home like a window breaking or a smoke or CO alarm going off and alert you promptly.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+In the Alexa app tap on Settings.
+Scroll down the list of settings and tap on Guard.
+Tap on the gear-shaped icon in the top right corner. The Guard settings menu will appear, which will show you which of your Echo devices are enabled to work with Alexa Guard. Source: Android Central
+Tap on Smoke & CO Alarm Sounds to be notified if Alexa hears your carbon monoxide or smoke alarms sound off when set to Away mode.
+Tap on Security System to connect your Alexa Guard-enabled Ring or ADT security systems.
+Tap on Lights to connect your Alexa-enabled light products to turn on when Alexa Guard is set to Away mode.
+Tap on Notifications to have Alexa notify you when the system switches to Home mode or Away mode. Source: Android Central
+
+Alexa, chill out
+I live in the south where it's hot for practically 10 months out of the year. Despite being air conditioner afficionados, we do like to keep our utility expenses down and do our part to not waste energy. Creating a routine to run the air conditioner when only when we really need it is a great way to do just that.
+I've set up this simple automated routine to activate our Ecobee thermostats as soon as Alexa detects that I've left the office.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+In the Alexa app, tap on Routines.
+Tap the + symbol in the top right corner.
+Tap When this happens.
+Tap Location. Source: Android Central
+On the ""When this Device"" screen you should set or select your Work Address.
+After you select your Work Address choose Leaves.
+Tap Next. Source: Android Central
+Tap Add Action.
+Tap Smart Home.
+Tap All Devices.
+Select your smart thermostat from the device list.
+Tap Set Temperature.
+Tap Next. Source: Android Central
+Where it says Anytime tap on Change.
+On Active Days tap on M, T, W, T, and F so that this routine is only activated during the workweek.
+Where it says Active Between you can set the timeframe you want the routine to be active (perhaps only after noon but no later than 7 PM). Then tap Next.
+Tap Save and you're done! Source: Android Central
+
+I've also set up a similar routine to turn the temperature back up when I leave home for work during the week — I just repeated the steps above and changed the When this device leaves trigger to the home address, change the settings on the Ecobee thermostat to a higher temperature setting, and adjusted the timeframes accordingly.
+
+
+
+
+
+
+
+Source: Amazon
+
+Wake up the kids
+With a new Kids Edition Amazon Echo Dot in their rooms, I can now create time-based Routines to wake up the kids (but you can also do this for bedtime). This routine turns their lights on and starts with Alexa saying good morning and telling them a fun new fact about the world. If this wasn't enough to wake them up, Alexa starts playing Reville from Amazon Music.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Press the + symbol on the Routines page in the Alexa app.
+Tap When this happens.
+Tap Schedule from the two available options.
+Choose what time you want this Routine to activate, and how frequently. Source: Android Central
+Tap Add Action.
+Tap Smart Home.
+Find your light in the Control Group list.
+Set your light to on.
+Tap Next. Source: Android Central
+Tap Add Action.
+Tap Alexa says.
+Tap Good Morning. Source: Android Central
+Tap Add Action.
+Select Music from the list.
+Add Reveille from Amazon Music.
+Tap Next.
+Tap Chose Device under From.
+Tap Save to finish. Source: Android Central
+
+Alexa automation is awesome
+Now that you know how to set up some simple Routines, you can easily create your own - so go crazy! You can create routines with triggers based on voice commands, location information, schedules, or device behaviors, and you can string together all kinds of smart devices and actions. You can also always go to the Routines section of the Alexa app and modify or delete any existing routines if you feel you need to make any changes. Routines really are a powerful way to automate with Alexa!
+What are you using Routines for? Share your favorites in the comments!
+Perfect for Alexa Routines
+
+
+
+
+
+
+
+Echo Show 8
+
+The Goldilocks zone
+The Echo Show 8 comes in a more natural size that's easier to place than the Echo Show (2nd Gen). It's still comfy enough to watch recipes and videos on.
+
+
+$130 at Amazon
+
+
+We may earn a commission for purchases using our links. Learn more.
+
+
+
+
+
+
+
+Because I'm happppyyyy Are you happy with the Pixel 4? The Pixel 4 has received a lot of criticism since its release, but taking a look through the AC forums, many people are really happy with the phone. What about you?
+
+
+
+
+
+
+
+
+Unlimited Means Limited AT&T will pay $60 million after hiding data throttling The FTC has settled its case with AT&T for $60 million. AT&T was accused of failing to inform customers of its data throttling practice while marketing plans as ""unlimited.""
+
+
+
+
+
+
+
+
+It's Back This new Android Auto app fixes a problem Google created for newer phones Android Auto for phone screens has finally been released for users who lost access to Android Auto after the Android 10 update.
+
+
+
+
+
+
+
+
+That Twilight Blue Tho What color Amazon Echo (3rd Gen) should you buy? Amazon has long offered the Echo in a dark (black-ish) or light (off-white) variety, but now there are four great color options to choose from. Which one should you get? Well, we have our favorites!
+
+
+
+",en,"
+
+
+
+
+
+
+
+
+
+
+
+Need some Routines inspiration? Here are the best ones for your home
+
+06 Nov 2019, 11:00
+
+
+
+
+
+
+
+
+Source: Android Central
+
+While the individual commands you can give your Amazon Echo are plenty diverse, you still have to give those commands one at a time. That can be more than a little tedious if you have multiple commands you regularly give, which is why Amazon created Routines for Alexa. Through the Routines system, you can set up multiple commands under a single spoken phrase. You get to say less, and your Echo does more. Everybody wins.
+These are my favorite routines, which I have set up to better automate my home through my Amazon Echo.
+Alexa, start my day
+Amazon gives everyone a ""Start My Day"" Routine. By default, it reads you the weather followed by traffic in your area and wraps up with your Flash Briefing. These are all useful, but not really what I need in the morning.
+Instead, I have this Routine edited to turn on my bedroom lights. Once the lights are at 50% brightness Alexa starts telling me the weather for the day. After this update, I have TuneIn set to play my local radio station.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+In the Alexa app, tap on Routines.
+Tap the + symbol in the top right corner.
+Tap When this happens.
+Select Voice from the two available options. Source: Android Central
+Type Start my morning into the text box.
+Tap Save.
+Tap Add Action. Source: Android Central
+Select Smart Home from the list.
+Tap All Devices.
+Find your light in the list and set it to 50% on.
+Tap Next.
+Tap Add Action. Source: Android Central, and Android Central /
+Select Weather from the list.
+Tap Next.
+Tap Add Action. Source: Android Central
+Select Music from the list.
+Add preferred radio station from TuneIn.
+Tap Next. Source: Android Central
+Tap From.
+Select your preferred device.
+Tap Create to finish. Source: Android Central /
+
+Alexa, I'm leaving
+It used to be that you'd have to manually create a routine from scratch to shut down your smart home when you left the house, but with the introduction of Alexa Guard, this has pretty much been taken care of for you. Nevertheless, it's a handy routine to mention, so here is how you set it up.
+Alexa Guard allows you to tie your smart home appliances to a sort of home security routine, so that when you set it up and then say something like ""Alexa, I'm leaving,"" your Echo devices can automate your smart lights, arm your security system, and listen for sounds of distress from your home like a window breaking or a smoke or CO alarm going off and alert you promptly.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+In the Alexa app tap on Settings.
+Scroll down the list of settings and tap on Guard.
+Tap on the gear-shaped icon in the top right corner. The Guard settings menu will appear, which will show you which of your Echo devices are enabled to work with Alexa Guard. Source: Android Central
+Tap on Smoke & CO Alarm Sounds to be notified if Alexa hears your carbon monoxide or smoke alarms sound off when set to Away mode.
+Tap on Security System to connect your Alexa Guard-enabled Ring or ADT security systems.
+Tap on Lights to connect your Alexa-enabled light products to turn on when Alexa Guard is set to Away mode.
+Tap on Notifications to have Alexa notify you when the system switches to Home mode or Away mode. Source: Android Central
+
+Alexa, chill out
+I live in the south where it's hot for practically 10 months out of the year. Despite being air conditioner afficionados, we do like to keep our utility expenses down and do our part to not waste energy. Creating a routine to run the air conditioner when only when we really need it is a great way to do just that.
+I've set up this simple automated routine to activate our Ecobee thermostats as soon as Alexa detects that I've left the office.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+In the Alexa app, tap on Routines.
+Tap the + symbol in the top right corner.
+Tap When this happens.
+Tap Location. Source: Android Central
+On the ""When this Device"" screen you should set or select your Work Address.
+After you select your Work Address choose Leaves.
+Tap Next. Source: Android Central
+Tap Add Action.
+Tap Smart Home.
+Tap All Devices.
+Select your smart thermostat from the device list.
+Tap Set Temperature.
+Tap Next. Source: Android Central
+Where it says Anytime tap on Change.
+On Active Days tap on M, T, W, T, and F so that this routine is only activated during the workweek.
+Where it says Active Between you can set the timeframe you want the routine to be active (perhaps only after noon but no later than 7 PM). Then tap Next.
+Tap Save and you're done! Source: Android Central
+
+I've also set up a similar routine to turn the temperature back up when I leave home for work during the week — I just repeated the steps above and changed the When this device leaves trigger to the home address, change the settings on the Ecobee thermostat to a higher temperature setting, and adjusted the timeframes accordingly.
+
+
+
+
+
+
+
+Source: Amazon
+
+Wake up the kids
+With a new Kids Edition Amazon Echo Dot in their rooms, I can now create time-based Routines to wake up the kids (but you can also do this for bedtime). This routine turns their lights on and starts with Alexa saying good morning and telling them a fun new fact about the world. If this wasn't enough to wake them up, Alexa starts playing Reville from Amazon Music.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Press the + symbol on the Routines page in the Alexa app.
+Tap When this happens.
+Tap Schedule from the two available options.
+Choose what time you want this Routine to activate, and how frequently. Source: Android Central
+Tap Add Action.
+Tap Smart Home.
+Find your light in the Control Group list.
+Set your light to on.
+Tap Next. Source: Android Central
+Tap Add Action.
+Tap Alexa says.
+Tap Good Morning. Source: Android Central
+Tap Add Action.
+Select Music from the list.
+Add Reveille from Amazon Music.
+Tap Next.
+Tap Chose Device under From.
+Tap Save to finish. Source: Android Central
+
+Alexa automation is awesome
+Now that you know how to set up some simple Routines, you can easily create your own - so go crazy! You can create routines with triggers based on voice commands, location information, schedules, or device behaviors, and you can string together all kinds of smart devices and actions. You can also always go to the Routines section of the Alexa app and modify or delete any existing routines if you feel you need to make any changes. Routines really are a powerful way to automate with Alexa!
+What are you using Routines for? Share your favorites in the comments!
+Perfect for Alexa Routines
+
+
+
+
+
+
+
+Echo Show 8
+
+The Goldilocks zone
+The Echo Show 8 comes in a more natural size that's easier to place than the Echo Show (2nd Gen). It's still comfy enough to watch recipes and videos on.
+
+
+$130 at Amazon
+
+
+We may earn a commission for purchases using our links. Learn more.
+
+
+
+
+
+
+
+Because I'm happppyyyy Are you happy with the Pixel 4? The Pixel 4 has received a lot of criticism since its release, but taking a look through the AC forums, many people are really happy with the phone. What about you?
+
+
+
+
+
+
+
+
+Unlimited Means Limited AT&T will pay $60 million after hiding data throttling The FTC has settled its case with AT&T for $60 million. AT&T was accused of failing to inform customers of its data throttling practice while marketing plans as ""unlimited.""
+
+
+
+
+
+
+
+
+It's Back This new Android Auto app fixes a problem Google created for newer phones Android Auto for phone screens has finally been released for users who lost access to Android Auto after the Android 10 update.
+
+
+
+
+
+
+
+
+That Twilight Blue Tho What color Amazon Echo (3rd Gen) should you buy? Amazon has long offered the Echo in a dark (black-ish) or light (off-white) variety, but now there are four great color options to choose from. Which one should you get? Well, we have our favorites!
+
+
+
+"

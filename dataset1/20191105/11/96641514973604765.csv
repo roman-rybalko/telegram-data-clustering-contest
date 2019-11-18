@@ -1,0 +1,46 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+NVIDIA's AI will help USPS handle packages 10 times faster
+The tech will help USPS read address labels more quickly and effectively.
+05 Nov 2019, 11:00 by Christine Fisher
+The US Postal Service (USPS) delivers an estimated 146 billion pieces of mail annually, including 6 billion packages. In an attempt to process package data more efficiently, USPS is experimenting with AI. Today, NVIDIA announced that it will provide USPS with its AI tech. NVIDIA claims its system will process package data 10-times faster and with higher accuracy.
+For months, engineering teams from USPS and NVIDIA have been developing the AI models, which will help USPS read address labels more quickly and effectively. The system starts with high-performance servers powered by NVIDIA V100 Tensor Core GPUs and deep learning software, which train multiple algorithms. The trained models are then deployed to NVIDIA EGX edge computing systems at nearly 200 USPS facilities.
+Delivery and testing of the system will begin this year, and the AI is expected to be fully operational in spring of 2020. While USPS will get an efficiency boost, this is a big win for NVIDIA too. It shows that AI processes are finding more practical uses.
+USPS is also experimenting with self-driving mail trucks. This spring, it signed a contract with San Diego self-driving truck company TuSimple for a two-week pilot. That involved the company's trucks hauling USPS trailers on five round trips between the postal service's Phoenix, Arizona and Dallas, Texas distribution centers.
+Update 11/5/19 4:05PM ET: The story incorrectly stated that USPS is developing a drone 'airline' to deliver medical samples in the US. United Parcel Service (UPS) is working on that project.
+
+
+",en,"
+
+
+
+
+
+
+
+
+
+
+
+NVIDIA's AI will help USPS handle packages 10 times faster
+The tech will help USPS read address labels more quickly and effectively.
+05 Nov 2019, 11:00 by Christine Fisher
+The US Postal Service (USPS) delivers an estimated 146 billion pieces of mail annually, including 6 billion packages. In an attempt to process package data more efficiently, USPS is experimenting with AI. Today, NVIDIA announced that it will provide USPS with its AI tech. NVIDIA claims its system will process package data 10-times faster and with higher accuracy.
+For months, engineering teams from USPS and NVIDIA have been developing the AI models, which will help USPS read address labels more quickly and effectively. The system starts with high-performance servers powered by NVIDIA V100 Tensor Core GPUs and deep learning software, which train multiple algorithms. The trained models are then deployed to NVIDIA EGX edge computing systems at nearly 200 USPS facilities.
+Delivery and testing of the system will begin this year, and the AI is expected to be fully operational in spring of 2020. While USPS will get an efficiency boost, this is a big win for NVIDIA too. It shows that AI processes are finding more practical uses.
+USPS is also experimenting with self-driving mail trucks. This spring, it signed a contract with San Diego self-driving truck company TuSimple for a two-week pilot. That involved the company's trucks hauling USPS trailers on five round trips between the postal service's Phoenix, Arizona and Dallas, Texas distribution centers.
+Update 11/5/19 4:05PM ET: The story incorrectly stated that USPS is developing a drone 'airline' to deliver medical samples in the US. United Parcel Service (UPS) is working on that project.
+
+
+"

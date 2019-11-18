@@ -1,0 +1,218 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+iOS 13.2 tips: Check these security and privacy settings today
+01 Nov 2019, 07:00 by Adrian Kingsley-Hughes
+
+If you are the type that is security conscious, here are some steps you should take to lock down an iPhone running iOS 13.2 and iPad running iPadOS 13.2.
+
+
+
+
+iPhones and iPads are, out of the box, quite robust and secure platforms. But with a few tweaks you can harden that security dramatically without adding too much burden to your day-to-day usage of the device.
+#1: Security starts with a really strong passcode
+Good iOS security starts with having a really strong passcode. If this is something that's easily guessable then everything else you do is pretty much pointless.No matter whether you use Face ID or Touch ID to access your iPhone, you still need a passcode, and the longer the passcode you can use -- and remember -- the better.Go to Settings > Face ID & Passcode (or Touch ID & Passcode on older iPhones), enter your existing passcode, and then tap on Passcode Options to get a set of options. Choose between Custom Alphanumeric Code (the most secure) or Custom Numeric Code (second best option), or 4-Digit Numeric Code (I don't recommend this last option).
+#2: Block apps from having Bluetooth access
+After you install iOS 13 you might find a whole swathe of apps such as Facebook asking you for permission to transmit data over Bluetooth. You can either allow or deny access when the prompts are displayed, or you can head over to Settings > Privacy > Bluetooth and make the changes there.
+Note that this doesn't affect audio streaming to headphones and speakers.
+#3: Set brute-force protection
+iOS has built-in brute-force protection to prevent an unauthorized user from trying to guess your passcode.
+Go to Settings > Face ID & Passcode (or Touch ID & Passcode on older iPhones), enter your existing passcode, and scroll down to Erase Data.After 10 attempts (toward the end there will be a time lockout to slow down the entry process), the encryption key will be deleted and your data wiped.
+#4: Make sure iOS automatic updates are enabled
+iOS 13 has the ability to keep itself updated automatically, which is a great way to make sure that your iPhone is fully patched.This should be set up automatically, but you can check it over at Settings > General > Software Update and make sure Automatic Updates is enabled.
+#5: Reduce the lock screen timeout
+The shorter you set the lock screen timeout setting (there are options ranging from 30 seconds to never), the faster your iPhone or iPad display will require authentication to access it.You can change the auto-lock time by going to Settings > Display & Brightness > Auto-Lock.
+#6: Password AutoFill and third-party password managers
+iOS 13 now comes with both a password autofill feature that can use information stored in the iCloud Keychain along with the ability to connect to third-party password apps such as LastPass, Dashlane, and 1Password.Also: 5 reasons why you need a password manager You can find this feature in Settings > Passwords & Accounts > AutoFill Passwords.
+#7: Check for password reuse
+If you use the iCloud Keychain to store web passwords, you can now use this to check for password reuse (which is bad, so don't do it!).Go to Settings > Passwords & Accounts > Website & App Passwords and authenticate with either Face ID/Touch ID or your passcode.You will see a grey triangle with an exclamation mark next to any entry that is reused. To change the password, tap Change Password on Website.
+#8: Wi-Fi tracking is blocked
+Under iOS 12, it was possible to track iPhone and iPad users by the public Wi-Fi points the device was connecting to silently as the owner went about their business. This ability has now been blocked under iOS 13 so you can wander about without the fear of being tracked.
+#9: Take control over Location Sharing
+Another thing you might have noticed after installing iOS 13 is that you get notifications informing you that apps are using your locations data, and giving you the option of allowing this to continue or blocking it.Don't worry, you can change your mind by going to Settings > Privacy > Location Services, and changing permissions for your apps.
+#10: Find your devices
+iOS 13 has a cool new app called Find My which you can use to locate your friends and family, share your location, or find a missing device.This app has two cool features, one is Enable Offline Finding that helps you find lost devices that aren't connected to Wi-Fi or Bluetooth. The other is Send Last Location, which sends the device's location to Apple when the battery is low.
+#11: Control what Touch ID/Face ID is used to authenticate
+Do you want the convenience of Face ID or Touch ID, or do you prefer the additional protection that having to enter your passcode offers? iOS 13 allows you to switch Face ID/Touch ID on and off for:
+
+iPhone Unlock
+iTunes and App Store
+Apple Pay
+Password AutoFill
+
+Go to Settings > Face ID & Passcode (or Touch ID & Passcode on older iPhones), and enter your existing passcode to take control of this.
+#12: Control access to what's accessible when the iPhone or iPad is locked
+Control how much -- or how little -- you want to be accessible on a locked device. iOS 12 gives control over the following:
+
+Today View
+Notification Center
+Control Center
+Siri
+Reply with Message
+Home Control
+Wallet
+Return Missed Call
+USB Accessories
+
+The bottom line is that the more you lock down, the more secure your device and data will be. The USB Accessories feature is especially useful, because it will prevent the Lightning port being used to connect to any accessory if your iPhone or iPad has been locked for more than an hour.Go to Settings > Face ID & Passcode (or Touch ID & Passcode on older iPhones), and enter your existing passcode to take control of this.
+#13: Disable biometrics to force passcode entry
+Here's a simple trick to know that allows you to disable Face ID or Touch ID and force the use of the passcode.To do this press the power button five times (just be sure to cancel the SOS Emergency calling feature if you have this activated).
+#14: Set up two-factor authentication
+One of the best ways to protect your data is to set up and use two-factor authentication. This means that, even if an attacker has your iCloud username and password, Apple will send an authentication code of a device you've chosen, which should block most attacks.Go to Settings > and tap your name at the top of the screen, then go to Password & Security, then choose Two-Factor Authentication.Also: Protect yourself: How to choose the right two-factor authenticator app While setting up two-factor authentication you can also set up a Recovery Key.Once set, without this key, or another device signed in with your Apple ID, you will not be able to reset your password.
+#15: Delete your Siri and dictation history from Apple's servers
+This is a new feature in iOS 13.2 that allows you to erase your Siri and dictation data from Apple's servers.First download and install iOS 13.2 on your iPhone or iPad. Then fire up the Settings app and go to Siri & Search > Siri & Dictation History. From there tap the big, ominous-looking red button marked Delete Siri & Dictation History. Then you confirm that you want to carry out this action by tapping Delete Siri & Dictation History on the popup. You should finally get confirmation that the request has been received by Apple.
+#16: Opt-out of sharing your voice information with Apple
+Another new feature in iOS 13.2 that helps you prevent data leakage.Go to Settings > Privacy > Analytics & Improvements and look for Improve Siri & Dictation and toggle the switch to off.Done!
+#17: Control notification data leakage
+Notifications displayed on the lock screen can leak sensitive information.To stop this go to Settings > Notifications > Show Previews and change the setting to When Unlocked or Never.
+#18: More control with Safari
+Under iOS 13, the Safari browser now has the ability to control access to features such as the camera, the microphone, and current location on a per-site basis. Go to Settings > Safari and look for the toggles under Settings For Websites.
+#19: Block unknown callers
+This is a great way to get rid of nuisance and spam callers. To enable this feature, go to Settings > Phone > and toggle to Silence Unknown Callers.See also:
+
+
+iOS 13: New features you might have missed
+
+
+iOS 13 battery life bad? Top tips to fix battery drain issues
+
+
+Study shows that majority of second-hand hard drives contain previous owner's data
+
+
+Must-have productivity apps and accessories for the iPad Pro
+
+
+Best iOS apps (September 2019 edition)
+
+
+Does the iPhone 11 have a hidden feature waiting to be activated?
+
+
+When is Android 10 coming to my phone?
+
+
+iPhone 11, iPhone 11 Pro, and iPhone 11 Pro Max: What are the differences?
+
+
+
+
+",en,"
+
+
+
+
+
+
+
+
+
+
+
+iOS 13.2 tips: Check these security and privacy settings today
+01 Nov 2019, 07:00 by Adrian Kingsley-Hughes
+
+If you are the type that is security conscious, here are some steps you should take to lock down an iPhone running iOS 13.2 and iPad running iPadOS 13.2.
+
+
+
+
+iPhones and iPads are, out of the box, quite robust and secure platforms. But with a few tweaks you can harden that security dramatically without adding too much burden to your day-to-day usage of the device.
+#1: Security starts with a really strong passcode
+Good iOS security starts with having a really strong passcode. If this is something that's easily guessable then everything else you do is pretty much pointless.No matter whether you use Face ID or Touch ID to access your iPhone, you still need a passcode, and the longer the passcode you can use -- and remember -- the better.Go to Settings > Face ID & Passcode (or Touch ID & Passcode on older iPhones), enter your existing passcode, and then tap on Passcode Options to get a set of options. Choose between Custom Alphanumeric Code (the most secure) or Custom Numeric Code (second best option), or 4-Digit Numeric Code (I don't recommend this last option).
+#2: Block apps from having Bluetooth access
+After you install iOS 13 you might find a whole swathe of apps such as Facebook asking you for permission to transmit data over Bluetooth. You can either allow or deny access when the prompts are displayed, or you can head over to Settings > Privacy > Bluetooth and make the changes there.
+Note that this doesn't affect audio streaming to headphones and speakers.
+#3: Set brute-force protection
+iOS has built-in brute-force protection to prevent an unauthorized user from trying to guess your passcode.
+Go to Settings > Face ID & Passcode (or Touch ID & Passcode on older iPhones), enter your existing passcode, and scroll down to Erase Data.After 10 attempts (toward the end there will be a time lockout to slow down the entry process), the encryption key will be deleted and your data wiped.
+#4: Make sure iOS automatic updates are enabled
+iOS 13 has the ability to keep itself updated automatically, which is a great way to make sure that your iPhone is fully patched.This should be set up automatically, but you can check it over at Settings > General > Software Update and make sure Automatic Updates is enabled.
+#5: Reduce the lock screen timeout
+The shorter you set the lock screen timeout setting (there are options ranging from 30 seconds to never), the faster your iPhone or iPad display will require authentication to access it.You can change the auto-lock time by going to Settings > Display & Brightness > Auto-Lock.
+#6: Password AutoFill and third-party password managers
+iOS 13 now comes with both a password autofill feature that can use information stored in the iCloud Keychain along with the ability to connect to third-party password apps such as LastPass, Dashlane, and 1Password.Also: 5 reasons why you need a password manager You can find this feature in Settings > Passwords & Accounts > AutoFill Passwords.
+#7: Check for password reuse
+If you use the iCloud Keychain to store web passwords, you can now use this to check for password reuse (which is bad, so don't do it!).Go to Settings > Passwords & Accounts > Website & App Passwords and authenticate with either Face ID/Touch ID or your passcode.You will see a grey triangle with an exclamation mark next to any entry that is reused. To change the password, tap Change Password on Website.
+#8: Wi-Fi tracking is blocked
+Under iOS 12, it was possible to track iPhone and iPad users by the public Wi-Fi points the device was connecting to silently as the owner went about their business. This ability has now been blocked under iOS 13 so you can wander about without the fear of being tracked.
+#9: Take control over Location Sharing
+Another thing you might have noticed after installing iOS 13 is that you get notifications informing you that apps are using your locations data, and giving you the option of allowing this to continue or blocking it.Don't worry, you can change your mind by going to Settings > Privacy > Location Services, and changing permissions for your apps.
+#10: Find your devices
+iOS 13 has a cool new app called Find My which you can use to locate your friends and family, share your location, or find a missing device.This app has two cool features, one is Enable Offline Finding that helps you find lost devices that aren't connected to Wi-Fi or Bluetooth. The other is Send Last Location, which sends the device's location to Apple when the battery is low.
+#11: Control what Touch ID/Face ID is used to authenticate
+Do you want the convenience of Face ID or Touch ID, or do you prefer the additional protection that having to enter your passcode offers? iOS 13 allows you to switch Face ID/Touch ID on and off for:
+
+iPhone Unlock
+iTunes and App Store
+Apple Pay
+Password AutoFill
+
+Go to Settings > Face ID & Passcode (or Touch ID & Passcode on older iPhones), and enter your existing passcode to take control of this.
+#12: Control access to what's accessible when the iPhone or iPad is locked
+Control how much -- or how little -- you want to be accessible on a locked device. iOS 12 gives control over the following:
+
+Today View
+Notification Center
+Control Center
+Siri
+Reply with Message
+Home Control
+Wallet
+Return Missed Call
+USB Accessories
+
+The bottom line is that the more you lock down, the more secure your device and data will be. The USB Accessories feature is especially useful, because it will prevent the Lightning port being used to connect to any accessory if your iPhone or iPad has been locked for more than an hour.Go to Settings > Face ID & Passcode (or Touch ID & Passcode on older iPhones), and enter your existing passcode to take control of this.
+#13: Disable biometrics to force passcode entry
+Here's a simple trick to know that allows you to disable Face ID or Touch ID and force the use of the passcode.To do this press the power button five times (just be sure to cancel the SOS Emergency calling feature if you have this activated).
+#14: Set up two-factor authentication
+One of the best ways to protect your data is to set up and use two-factor authentication. This means that, even if an attacker has your iCloud username and password, Apple will send an authentication code of a device you've chosen, which should block most attacks.Go to Settings > and tap your name at the top of the screen, then go to Password & Security, then choose Two-Factor Authentication.Also: Protect yourself: How to choose the right two-factor authenticator app While setting up two-factor authentication you can also set up a Recovery Key.Once set, without this key, or another device signed in with your Apple ID, you will not be able to reset your password.
+#15: Delete your Siri and dictation history from Apple's servers
+This is a new feature in iOS 13.2 that allows you to erase your Siri and dictation data from Apple's servers.First download and install iOS 13.2 on your iPhone or iPad. Then fire up the Settings app and go to Siri & Search > Siri & Dictation History. From there tap the big, ominous-looking red button marked Delete Siri & Dictation History. Then you confirm that you want to carry out this action by tapping Delete Siri & Dictation History on the popup. You should finally get confirmation that the request has been received by Apple.
+#16: Opt-out of sharing your voice information with Apple
+Another new feature in iOS 13.2 that helps you prevent data leakage.Go to Settings > Privacy > Analytics & Improvements and look for Improve Siri & Dictation and toggle the switch to off.Done!
+#17: Control notification data leakage
+Notifications displayed on the lock screen can leak sensitive information.To stop this go to Settings > Notifications > Show Previews and change the setting to When Unlocked or Never.
+#18: More control with Safari
+Under iOS 13, the Safari browser now has the ability to control access to features such as the camera, the microphone, and current location on a per-site basis. Go to Settings > Safari and look for the toggles under Settings For Websites.
+#19: Block unknown callers
+This is a great way to get rid of nuisance and spam callers. To enable this feature, go to Settings > Phone > and toggle to Silence Unknown Callers.See also:
+
+
+iOS 13: New features you might have missed
+
+
+iOS 13 battery life bad? Top tips to fix battery drain issues
+
+
+Study shows that majority of second-hand hard drives contain previous owner's data
+
+
+Must-have productivity apps and accessories for the iPad Pro
+
+
+Best iOS apps (September 2019 edition)
+
+
+Does the iPhone 11 have a hidden feature waiting to be activated?
+
+
+When is Android 10 coming to my phone?
+
+
+iPhone 11, iPhone 11 Pro, and iPhone 11 Pro Max: What are the differences?
+
+
+
+
+"

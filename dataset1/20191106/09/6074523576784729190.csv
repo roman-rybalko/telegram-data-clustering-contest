@@ -1,0 +1,202 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+93 Days Dark: 8chan Coder Explains How Blockchain Saved His Troll Forum
+06 Nov 2019, 09:00 by Daniel Kuhn
+
+The Takeaway:
+
+
+Administrators at 8kun, the anarchic message board formerly known as 8chan, have been experimenting with blockchain and p2p technologies in an effort to build a website resistant to deplatforming and censorship.
+They found an ideologically aligned open-source blockchain to piggyback on, but the developers don’t seem keen on protecting 8kun from activist attacks.
+Ron Watkins, the principal 8kun dev, plans to launch the mysterious Project Odin in an attempt to bolster the publicly accessible and hidden versions of his site.
+
+
+8chan, the anarchic internet forum that disappeared in August, came back online this weekend as 8kun. This time, thanks to a decentralized web hosting network, it intends to stay online, no matter who its content offends.
+Following back-to-back shootings in El Paso, Texas and Dayton, Ohio, hosting service Cloudflare severed ties with 8chan, blaming its raucous community of anonymous posters for inciting the violence.
+“8chan has repeatedly proven itself to be a cesspool of hate,” said Cloudflare’s CEO Matthew Prince on the day it terminated service. Other major hosting providers, including Tencent and AliBaba in China, followed. For these corporate giants, 8chan amounted to little more than a pungent mix of pornography, extremism, and race-baiting, and hence not a brand with which they wanted to be associated.
+Yet while its many detractors saw 8chan as a vortex of fringe politics and looney-tune conspiracy theories, others defended it as a beacon of free speech in an age of political correctness and corporate media consolidation. Alongside the terrorist manifestos, there were WikiLeaks-style document dumps.
+And the founders didn’t give up.
+“We are at the forefront of the deplatforming war and developing tools and techniques that other websites can use when they too get deplatformed,” Ron Watkins, an 8chan admin, told CoinDesk.
+“Unlike other platforms that have faced controversy for banning relatively innocuous speech, 8chan features a full commitment to the promise of the First Amendment,” site owner Jim Watkins (Ron’s father), told the House Committee on Homeland Security in a closed-door session on Sept. 4. “At the same time, it has worked responsibly with law enforcement agencies when unprotected speech is discovered on its platform.”
+What follows is an inside account of 8chan’s rebirth, based on interviews with Ron Watkins. It also includes interviews with Fredrick Brennan, the now excommunicated and deeply critical creator of 8chan who quit after playing a key role in developing its blockchain solutions.
+While the clearnet, or publicly available, version of the site is down intermittently, and unlikely to survive an onslaught of continued compromising attacks, Watkins described a strategy to rebuild 8chan through decentralized workarounds instead of relying on consolidated services that become unusable in the face of controversy.
+Loki
+Three months after going dark, 8chan’s developers turned their backs on traditional internet service providers (ISPs) and found a permissionless, decentralized and censorship-resistant way to host discussions online.
+Chief among these is an open protocol called Lokinet that will soon be connected to a blockchain. The network, based on a fork of the monero cryptocurrency called Loki, functions like the privacy-protecting Tor network.
+Lokinet provides a pathway for hosting web content – including decentralized marketplaces, forums and other web applications – that is resistant to censorship and deplatforming.
+Any website accessed through the “.loki” top-level domain (TLD) is passed through an “onion-style” router that bounces user data packets, necessary to surf the web, through a distributed network of nodes to obfuscate users’ destinations and origins. Loki is open for anyone to use and the nonprofit that maintains the network was made aware of 8kun’s intentions only four days before launch.
+Watkins was clear that 8kun has not partnered with the Loki development team, but instead is “using the network that they set up and made available for anybody.”
+Simon Harman, director of the Loki nonprofit based in Melbourne, Australia, said he was surprised that the network withstood the influx of new users, many of whom likely downloaded the software to support 8chan’s relaunch.
+“Getting several thousand users to try out experimental software, that’s a plus,” he said. Since the Lokinet system went live in 2018 there have been 5,271 downloads of its routers, of which 3,600 happened since Sept. 24.
+Watkins said he set up a few Lokinet addresses and front ends that connect to the network and service the website. Nick Lim, CEO of VanwaTech, also built a content delivery network on Lokinet to serve 8kun’s service node apps (SNApps) – private websites or web services similar to Tor’s hidden services – and provide acceptable data speeds.
+“We chose lokinet because, while still experimental, it is already a technical powerhouse,” Watkins said.
+However, over the weekend, an influx of friendly and hostile users flooded 8kun and nearly crippled the website.
+To be clear: Loki (named after a mischievous mythological character) did not choose 8kun. And as antagonistic parties attack the message board served by Lokinet, lead developer Jeff Becker said he doesn’t “want to get involved.”
+“I have no intention of trying to get rid of 8kun or shut down the network, I’m just worried that it is quite easy to [attack] the network in this early state, and someone will probably do it, but it certainly won’t be me,” he said.
+Activist attacks
+As it stands, 8chan creator-turned-apostate Brennan has tweeted a few potential weaknesses that activists could exploit to take down or slow the clearnet and hidden darknet versions of the site. These include a coordinated distributed denial-of-service (DDoS), or flooding a website with unwanted requests.
+“8kun uses a rather ancient codebase with several vulnerabilities easily checked by anyone on Github,” said Gr3y, a web developer who goes by @L33TGUY on Twitter. A vocal group of opposition hackers is planning attacks on Twitter and internet relay chat (IRC), he told CoinDesk.
+Like Brennan, Gr3y is no friend of 8kun. After Cloudflare dumped 8chan, the two led a campaign lobbying other service providers to knock it off their platforms. They rallied an army of anonymous posters to alert companies about “8Chan, Jim Watkins, and his shady history,” in Gr3y’s words.
+“Jim or rather /pol has plenty of enemies, especially far-left activists, I’m not affiliated with any of these people but I know they exist,” Gr3y said, referring to the subset of users who post the edgiest content (“pol” is short for “politically incorrect,” the ironic name of a message board on predecessor 4chan). Only 20 minutes after 8kun launched, activists began DDoS attacks that are currently interrupting 8kun’s service, he pointed out.
+While Loki bills itself as a decentralized protocol, Viktor Shpak, chief technology officer for VisibleMagic, a blockchain consultancy, thinks adoption will be a hurdle for the relatively immature platform. What makes Tor a serviceable, reliable and secure router is the number of nodes that support the service, he noted.
+The limited number of nodes running Loki will make 8kun highly visible on the network, and vulnerable to government crackdowns, Shpak said. Plus, while it was in the testing phase the developers disconnected the relay from the Loki blockchain.
+Watkins said he lost confidence in Lokinet, and Becker, after the attacks.
+“Jeff’s actions as the lead dev do not align well with his project’s stated mission,” Watkins said. “User- and community-built nodes can sustain 8kun on lokinet with or without the lokinet dev team’s approval,” he said.
+Odin
+Watkins said he has another card up his sleeve if Lokinet proves unworkable.
+Project Odin, named for the ancient Norse god of wisdom (Loki’s blood brother in mythology), may provide a way to leverage 8kun’s users to run front-end nodes that support the website’s decentralized back end. Watkins suggests Odin will supplement the other models of security in his plan by enabling cross-platform interoperability, a shared user base and immutability.
+“Activists might be able to temporarily deplatform 8kun.net, but can they deplatform ten thousand mirrors maintained by the community?” said Watkins.
+He claims to be on the ninth iteration of the project. However, no previous versions of Odin were published and only traces of its development are available online. There are potential liabilities with having users run their own front ends, Watkins explained.
+With details scarce, those following the project are left to speculate.
+Justin Johnson, an IT security specialist in North Dakota and a frequent visitor of the “chans,” has high hopes.
+“This is the future of open source which maintains the values of openness and accessibility,” he said.
+Gr3y is less sanguine. The technology seems “way past Ron’s pay grade… at this point if they’re able to get 8KUN available on clearnet in a permanent capacity, I will be very surprised,” the developer said.
+Building a censorship-resistant network in the face of fevered opposition is certainly a tough assignment. But Odin isn’t Watkins’ first rodeo.
+Susucoin
+In 2018, when 8chan was still alive and alternately horrifying or thrilling people, Watkins and Brennan began developing a blockchain solution that would become known as susucoin.
+Motivated by a fear of corporate consolidation of online publishing, the susu team created a blockchain protocol “where anyone can securely voice their thoughts and opinions without fear of reprisals, bans, or deletions,” according to the susucoin white paper.
+Watkins hoped that susucoin would develop into a substrate from which a whole ecosystem of censorship-resistant platforms would spring forth, beyond the reach of authoritarian governments, censorious corporations, and overzealous moderators.
+A blockchain-based message board, susucoin amounted to a bitcoin fork that supports the exchange of “small blobs of text,” according to extensive CoinDesk interviews with Brennan.
+On Jun. 26, 2018, the Susucoin team created a genesis block. The idea was to use outputs created during cryptocurrency transactions to archive message board posts. While the code was based on the main bitcoin protocol, it included features from the splinter cryptocurrency known as bitcoin cash.
+Brennan refers to the protocol he built, SUMO, (storage utility memory object), as “a slight improvement on [bitcoin cash’s] memo system.”
+Like its namesake wrestlers, SUMO wasn’t pretty. “It is a technical wreck and not at all anonymous,” Brennan wrote in an email.
+Under the new system, users would have to pay to post. Because the messages were limited by susucoin’s 512 byte OP_RETURN field, a 100KB image would need approximately 195 transactions, totaling pennies in value, to go through.
+By tying messages to transactions, Brennan argued susucoin was part of a broader attempt by Watkins to monetize 8kun. In fact, prior to 8chan’s deplatforming, Jim Watkins implemented a “King of the Shekel” feature on the website, which enabled users to pay in susu to promote their posts.
+But 8chan users were not interested in having to download new software or pay fees to post, so susu garnered almost no users, according to Julian Feeld, co-host of the QAnon Anonymous podcast, which debunks conspiracy theories from online forums.
+The blockchain has long been touted as a boon for come-what-may freethinkers, but belief in its powers is hardly universal.
+Blockchains are “shitty, slow, and expensive databases that do not scale well at all for something like user-generated content across billions of data points,” said Andrew Torba, CEO of Gab, a social network that prioritizes free speech over mainstream sensitivities and was itself deplatformed amid a media controversy.
+Legal issues
+Ironically, susucoin’s unpopularity and technological weakness may have saved 8chan from legal jeopardy, namely the consequences of preserving illicit content on an immutable ledger.
+Though billed as the world’s online free speech haven, 8chan imposed some limits on what users could post. Moderators would remove content that violated the Digital Millennium Copyright Act (DMCA) and actively policed child pornography. However, the immutable susuchain would have made these workarounds harder to engineer.
+“Whatever is written into the blockchain will stay there and there is no easy way to remove anything short of a hard fork,” Watkins said. He added that he designed susu without the ability to easily post anything beyond text, to make it harder for ne’er-do-wells to add porn.
+While the First Amendment broadly protects free speech, there are exclusions to these constitutional covers. True threats — or statements expressing serious intent to commit acts of violence against individuals or groups— are not protected, for instance.
+“For liability to stick, one would, for example, need to prove a direct connection between a user’s post and an 8kun employee, or that 8kun knew of specific harmful behavior on its platform and chose not to report it — essentially, that 8chan had exercised editorial control over its contents, which can be difficult to prove in a court of law,” said Nicole Ligon, lecturing fellow at Duke University School of Law.
+Despite this, Watkins doesn’t see susu as an abject failure and is looking at how to integrate the blockchain into Project Odin.
+Chan, reborn
+As 8kun’s lights flickered on for the first time Saturday, Watkins told Twitter followers that the new rollout would take a few days to become stable.
+“That first wave of visitors totally crushed our servers,” said Watkins.
+And that’s not the only issue 8kun faces. While the platform now exists out of the reach of wantonly censorious corporations, anyone can attack an open-source protocol. Loki’s developers cited denial of service (DoS) as a particular threat, though there are multiple vectors of attack. Worse for Watkins, since Loki is still in a test phase, the developers aren’t actively attempting to prevent a torpedoing of the network, preferring to remain neutral.
+“The risk is that if we cannot defend against the attack then our presence will be on and off until we figure out how to defend it,” Watkins said. While he’s working on technical defenses now, he knows that after deployment, he will have to “react to the next attack.”
+Still, Watkins is optimistic.
+“I’m leading a small ragtag team of idealists, doing their best to bring a small-scale discussion board platform back online amidst a bizarrely unprecedented defamation campaign,” he said. Where this represents just one battle, by developing tools and techniques that other websites can use if they get deplatformed, he thinks he’ll win the war.
+Through this process, Watkins has begun to doubt that blockchain technology can save free speech, let alone save 8kun. Instead, he thinks it could play a role in building a defensive infrastructure.
+“Right now, all the blockchain-based platform experiments still impose too much technical friction for users, such that normal people won’t bother with them,” said Justin Murphy, an independent scholar who studies fringe online political groups.
+The answer probably lies in maligned sites going dark, whether that be through tor, loki, i2p or zeronet, Watkins said. “What matters on the deepnet is that large public corporations are not in control and don’t have a say in what content is online or not,” he said.
+8kun’s ongoing attempts to resurface against the tide of technocrats, media and politicians, might be the last time centralized authorities have the ability to shut down a website based on moral rather than legal decisions. Now the tech just has to work.
+
+Pepe the frog image via Twitter
+
+
+
+",en,"
+
+
+
+
+
+
+
+
+
+
+
+93 Days Dark: 8chan Coder Explains How Blockchain Saved His Troll Forum
+06 Nov 2019, 09:00 by Daniel Kuhn
+
+The Takeaway:
+
+
+Administrators at 8kun, the anarchic message board formerly known as 8chan, have been experimenting with blockchain and p2p technologies in an effort to build a website resistant to deplatforming and censorship.
+They found an ideologically aligned open-source blockchain to piggyback on, but the developers don’t seem keen on protecting 8kun from activist attacks.
+Ron Watkins, the principal 8kun dev, plans to launch the mysterious Project Odin in an attempt to bolster the publicly accessible and hidden versions of his site.
+
+
+8chan, the anarchic internet forum that disappeared in August, came back online this weekend as 8kun. This time, thanks to a decentralized web hosting network, it intends to stay online, no matter who its content offends.
+Following back-to-back shootings in El Paso, Texas and Dayton, Ohio, hosting service Cloudflare severed ties with 8chan, blaming its raucous community of anonymous posters for inciting the violence.
+“8chan has repeatedly proven itself to be a cesspool of hate,” said Cloudflare’s CEO Matthew Prince on the day it terminated service. Other major hosting providers, including Tencent and AliBaba in China, followed. For these corporate giants, 8chan amounted to little more than a pungent mix of pornography, extremism, and race-baiting, and hence not a brand with which they wanted to be associated.
+Yet while its many detractors saw 8chan as a vortex of fringe politics and looney-tune conspiracy theories, others defended it as a beacon of free speech in an age of political correctness and corporate media consolidation. Alongside the terrorist manifestos, there were WikiLeaks-style document dumps.
+And the founders didn’t give up.
+“We are at the forefront of the deplatforming war and developing tools and techniques that other websites can use when they too get deplatformed,” Ron Watkins, an 8chan admin, told CoinDesk.
+“Unlike other platforms that have faced controversy for banning relatively innocuous speech, 8chan features a full commitment to the promise of the First Amendment,” site owner Jim Watkins (Ron’s father), told the House Committee on Homeland Security in a closed-door session on Sept. 4. “At the same time, it has worked responsibly with law enforcement agencies when unprotected speech is discovered on its platform.”
+What follows is an inside account of 8chan’s rebirth, based on interviews with Ron Watkins. It also includes interviews with Fredrick Brennan, the now excommunicated and deeply critical creator of 8chan who quit after playing a key role in developing its blockchain solutions.
+While the clearnet, or publicly available, version of the site is down intermittently, and unlikely to survive an onslaught of continued compromising attacks, Watkins described a strategy to rebuild 8chan through decentralized workarounds instead of relying on consolidated services that become unusable in the face of controversy.
+Loki
+Three months after going dark, 8chan’s developers turned their backs on traditional internet service providers (ISPs) and found a permissionless, decentralized and censorship-resistant way to host discussions online.
+Chief among these is an open protocol called Lokinet that will soon be connected to a blockchain. The network, based on a fork of the monero cryptocurrency called Loki, functions like the privacy-protecting Tor network.
+Lokinet provides a pathway for hosting web content – including decentralized marketplaces, forums and other web applications – that is resistant to censorship and deplatforming.
+Any website accessed through the “.loki” top-level domain (TLD) is passed through an “onion-style” router that bounces user data packets, necessary to surf the web, through a distributed network of nodes to obfuscate users’ destinations and origins. Loki is open for anyone to use and the nonprofit that maintains the network was made aware of 8kun’s intentions only four days before launch.
+Watkins was clear that 8kun has not partnered with the Loki development team, but instead is “using the network that they set up and made available for anybody.”
+Simon Harman, director of the Loki nonprofit based in Melbourne, Australia, said he was surprised that the network withstood the influx of new users, many of whom likely downloaded the software to support 8chan’s relaunch.
+“Getting several thousand users to try out experimental software, that’s a plus,” he said. Since the Lokinet system went live in 2018 there have been 5,271 downloads of its routers, of which 3,600 happened since Sept. 24.
+Watkins said he set up a few Lokinet addresses and front ends that connect to the network and service the website. Nick Lim, CEO of VanwaTech, also built a content delivery network on Lokinet to serve 8kun’s service node apps (SNApps) – private websites or web services similar to Tor’s hidden services – and provide acceptable data speeds.
+“We chose lokinet because, while still experimental, it is already a technical powerhouse,” Watkins said.
+However, over the weekend, an influx of friendly and hostile users flooded 8kun and nearly crippled the website.
+To be clear: Loki (named after a mischievous mythological character) did not choose 8kun. And as antagonistic parties attack the message board served by Lokinet, lead developer Jeff Becker said he doesn’t “want to get involved.”
+“I have no intention of trying to get rid of 8kun or shut down the network, I’m just worried that it is quite easy to [attack] the network in this early state, and someone will probably do it, but it certainly won’t be me,” he said.
+Activist attacks
+As it stands, 8chan creator-turned-apostate Brennan has tweeted a few potential weaknesses that activists could exploit to take down or slow the clearnet and hidden darknet versions of the site. These include a coordinated distributed denial-of-service (DDoS), or flooding a website with unwanted requests.
+“8kun uses a rather ancient codebase with several vulnerabilities easily checked by anyone on Github,” said Gr3y, a web developer who goes by @L33TGUY on Twitter. A vocal group of opposition hackers is planning attacks on Twitter and internet relay chat (IRC), he told CoinDesk.
+Like Brennan, Gr3y is no friend of 8kun. After Cloudflare dumped 8chan, the two led a campaign lobbying other service providers to knock it off their platforms. They rallied an army of anonymous posters to alert companies about “8Chan, Jim Watkins, and his shady history,” in Gr3y’s words.
+“Jim or rather /pol has plenty of enemies, especially far-left activists, I’m not affiliated with any of these people but I know they exist,” Gr3y said, referring to the subset of users who post the edgiest content (“pol” is short for “politically incorrect,” the ironic name of a message board on predecessor 4chan). Only 20 minutes after 8kun launched, activists began DDoS attacks that are currently interrupting 8kun’s service, he pointed out.
+While Loki bills itself as a decentralized protocol, Viktor Shpak, chief technology officer for VisibleMagic, a blockchain consultancy, thinks adoption will be a hurdle for the relatively immature platform. What makes Tor a serviceable, reliable and secure router is the number of nodes that support the service, he noted.
+The limited number of nodes running Loki will make 8kun highly visible on the network, and vulnerable to government crackdowns, Shpak said. Plus, while it was in the testing phase the developers disconnected the relay from the Loki blockchain.
+Watkins said he lost confidence in Lokinet, and Becker, after the attacks.
+“Jeff’s actions as the lead dev do not align well with his project’s stated mission,” Watkins said. “User- and community-built nodes can sustain 8kun on lokinet with or without the lokinet dev team’s approval,” he said.
+Odin
+Watkins said he has another card up his sleeve if Lokinet proves unworkable.
+Project Odin, named for the ancient Norse god of wisdom (Loki’s blood brother in mythology), may provide a way to leverage 8kun’s users to run front-end nodes that support the website’s decentralized back end. Watkins suggests Odin will supplement the other models of security in his plan by enabling cross-platform interoperability, a shared user base and immutability.
+“Activists might be able to temporarily deplatform 8kun.net, but can they deplatform ten thousand mirrors maintained by the community?” said Watkins.
+He claims to be on the ninth iteration of the project. However, no previous versions of Odin were published and only traces of its development are available online. There are potential liabilities with having users run their own front ends, Watkins explained.
+With details scarce, those following the project are left to speculate.
+Justin Johnson, an IT security specialist in North Dakota and a frequent visitor of the “chans,” has high hopes.
+“This is the future of open source which maintains the values of openness and accessibility,” he said.
+Gr3y is less sanguine. The technology seems “way past Ron’s pay grade… at this point if they’re able to get 8KUN available on clearnet in a permanent capacity, I will be very surprised,” the developer said.
+Building a censorship-resistant network in the face of fevered opposition is certainly a tough assignment. But Odin isn’t Watkins’ first rodeo.
+Susucoin
+In 2018, when 8chan was still alive and alternately horrifying or thrilling people, Watkins and Brennan began developing a blockchain solution that would become known as susucoin.
+Motivated by a fear of corporate consolidation of online publishing, the susu team created a blockchain protocol “where anyone can securely voice their thoughts and opinions without fear of reprisals, bans, or deletions,” according to the susucoin white paper.
+Watkins hoped that susucoin would develop into a substrate from which a whole ecosystem of censorship-resistant platforms would spring forth, beyond the reach of authoritarian governments, censorious corporations, and overzealous moderators.
+A blockchain-based message board, susucoin amounted to a bitcoin fork that supports the exchange of “small blobs of text,” according to extensive CoinDesk interviews with Brennan.
+On Jun. 26, 2018, the Susucoin team created a genesis block. The idea was to use outputs created during cryptocurrency transactions to archive message board posts. While the code was based on the main bitcoin protocol, it included features from the splinter cryptocurrency known as bitcoin cash.
+Brennan refers to the protocol he built, SUMO, (storage utility memory object), as “a slight improvement on [bitcoin cash’s] memo system.”
+Like its namesake wrestlers, SUMO wasn’t pretty. “It is a technical wreck and not at all anonymous,” Brennan wrote in an email.
+Under the new system, users would have to pay to post. Because the messages were limited by susucoin’s 512 byte OP_RETURN field, a 100KB image would need approximately 195 transactions, totaling pennies in value, to go through.
+By tying messages to transactions, Brennan argued susucoin was part of a broader attempt by Watkins to monetize 8kun. In fact, prior to 8chan’s deplatforming, Jim Watkins implemented a “King of the Shekel” feature on the website, which enabled users to pay in susu to promote their posts.
+But 8chan users were not interested in having to download new software or pay fees to post, so susu garnered almost no users, according to Julian Feeld, co-host of the QAnon Anonymous podcast, which debunks conspiracy theories from online forums.
+The blockchain has long been touted as a boon for come-what-may freethinkers, but belief in its powers is hardly universal.
+Blockchains are “shitty, slow, and expensive databases that do not scale well at all for something like user-generated content across billions of data points,” said Andrew Torba, CEO of Gab, a social network that prioritizes free speech over mainstream sensitivities and was itself deplatformed amid a media controversy.
+Legal issues
+Ironically, susucoin’s unpopularity and technological weakness may have saved 8chan from legal jeopardy, namely the consequences of preserving illicit content on an immutable ledger.
+Though billed as the world’s online free speech haven, 8chan imposed some limits on what users could post. Moderators would remove content that violated the Digital Millennium Copyright Act (DMCA) and actively policed child pornography. However, the immutable susuchain would have made these workarounds harder to engineer.
+“Whatever is written into the blockchain will stay there and there is no easy way to remove anything short of a hard fork,” Watkins said. He added that he designed susu without the ability to easily post anything beyond text, to make it harder for ne’er-do-wells to add porn.
+While the First Amendment broadly protects free speech, there are exclusions to these constitutional covers. True threats — or statements expressing serious intent to commit acts of violence against individuals or groups— are not protected, for instance.
+“For liability to stick, one would, for example, need to prove a direct connection between a user’s post and an 8kun employee, or that 8kun knew of specific harmful behavior on its platform and chose not to report it — essentially, that 8chan had exercised editorial control over its contents, which can be difficult to prove in a court of law,” said Nicole Ligon, lecturing fellow at Duke University School of Law.
+Despite this, Watkins doesn’t see susu as an abject failure and is looking at how to integrate the blockchain into Project Odin.
+Chan, reborn
+As 8kun’s lights flickered on for the first time Saturday, Watkins told Twitter followers that the new rollout would take a few days to become stable.
+“That first wave of visitors totally crushed our servers,” said Watkins.
+And that’s not the only issue 8kun faces. While the platform now exists out of the reach of wantonly censorious corporations, anyone can attack an open-source protocol. Loki’s developers cited denial of service (DoS) as a particular threat, though there are multiple vectors of attack. Worse for Watkins, since Loki is still in a test phase, the developers aren’t actively attempting to prevent a torpedoing of the network, preferring to remain neutral.
+“The risk is that if we cannot defend against the attack then our presence will be on and off until we figure out how to defend it,” Watkins said. While he’s working on technical defenses now, he knows that after deployment, he will have to “react to the next attack.”
+Still, Watkins is optimistic.
+“I’m leading a small ragtag team of idealists, doing their best to bring a small-scale discussion board platform back online amidst a bizarrely unprecedented defamation campaign,” he said. Where this represents just one battle, by developing tools and techniques that other websites can use if they get deplatformed, he thinks he’ll win the war.
+Through this process, Watkins has begun to doubt that blockchain technology can save free speech, let alone save 8kun. Instead, he thinks it could play a role in building a defensive infrastructure.
+“Right now, all the blockchain-based platform experiments still impose too much technical friction for users, such that normal people won’t bother with them,” said Justin Murphy, an independent scholar who studies fringe online political groups.
+The answer probably lies in maligned sites going dark, whether that be through tor, loki, i2p or zeronet, Watkins said. “What matters on the deepnet is that large public corporations are not in control and don’t have a say in what content is online or not,” he said.
+8kun’s ongoing attempts to resurface against the tide of technocrats, media and politicians, might be the last time centralized authorities have the ability to shut down a website based on moral rather than legal decisions. Now the tech just has to work.
+
+Pepe the frog image via Twitter
+
+
+
+"

@@ -1,0 +1,50 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Mozilla Will Automatically Zap Annoying Notification Prompts
+06 Nov 2019, 19:30 by Victoria Song
+Notification permission prompts are, to put it lightly, annoying as hell. Just because you regularly visit a website, doesn’t mean you want them to bombard you with pop-up notifications. To combat the issue, Mozilla has decided Firefox 72 will automatically block such notifications, shunting them to a small icon in the URL bar.
+The change is coming in two steps. From Firefox 70, Mozilla will change the default “Not Now” option to “Never” – allowing users to banish prompts to the internet hell from which they came. With Firefox 72, Mozilla will require some form of user interaction to even display prompts. Otherwise, the prompt will show up as an icon in the URL bar.
+The decision comes after Mozilla ran some studies and experiments on reducing notification prompts back in April. No surprise, Mozilla found that everybody hates them. It found 99 per cent of prompts went unaccepted, while 48 per cent of users outright denied them. In a single month of the Firefox 63 Release, 1.45 billion prompts were shown to users – of which 23.6 million were accepted. That means that for every one prompt that was accepted, another 60 were denied or ignored.
+Mozilla also found that users weren’t fooled when the same website tried to show multiple prompts. It did find, however, that prompts shown as a result of user interaction fared much better.
+In general, limiting annoying pop-ups, notifications, and ads is great. Tools that help users navigate the internet more freely are objectively good. That said, Firefox users will have to be a bit patient as this feature won’t be widely available just yet. Firefox 72 is currently scheduled for an official release early next year.
+
+GIF: Mozilla
+
+
+
+",en,"
+
+
+
+
+
+
+
+
+
+
+
+Mozilla Will Automatically Zap Annoying Notification Prompts
+06 Nov 2019, 19:30 by Victoria Song
+Notification permission prompts are, to put it lightly, annoying as hell. Just because you regularly visit a website, doesn’t mean you want them to bombard you with pop-up notifications. To combat the issue, Mozilla has decided Firefox 72 will automatically block such notifications, shunting them to a small icon in the URL bar.
+The change is coming in two steps. From Firefox 70, Mozilla will change the default “Not Now” option to “Never” – allowing users to banish prompts to the internet hell from which they came. With Firefox 72, Mozilla will require some form of user interaction to even display prompts. Otherwise, the prompt will show up as an icon in the URL bar.
+The decision comes after Mozilla ran some studies and experiments on reducing notification prompts back in April. No surprise, Mozilla found that everybody hates them. It found 99 per cent of prompts went unaccepted, while 48 per cent of users outright denied them. In a single month of the Firefox 63 Release, 1.45 billion prompts were shown to users – of which 23.6 million were accepted. That means that for every one prompt that was accepted, another 60 were denied or ignored.
+Mozilla also found that users weren’t fooled when the same website tried to show multiple prompts. It did find, however, that prompts shown as a result of user interaction fared much better.
+In general, limiting annoying pop-ups, notifications, and ads is great. Tools that help users navigate the internet more freely are objectively good. That said, Firefox users will have to be a bit patient as this feature won’t be widely available just yet. Firefox 72 is currently scheduled for an official release early next year.
+
+GIF: Mozilla
+
+
+
+"

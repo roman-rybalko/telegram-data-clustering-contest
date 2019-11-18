@@ -1,0 +1,58 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+
+Red Hat Entrerprise Linux 8.1 apporte le « live kernel patching »
+
+
+06 Nov 2019, 10:09
+
+Il est rare qu’une version à point apporte des fonctions importantes sur une distribution, mais RHEL 8.1 fait manifestement partie des exceptions, avec l’ajout d’un mécanisme important : la modification du noyau sans redémarrage.
+Le live patching permet en effet d’apporter au noyau les correctifs de sécurité essentiels sans avoir à relancer le serveur, normalement la conséquence de tout travail effectué dans le noyau. Comme précisé dans le communiqué, cette capacité sera valable pour les correctifs ayant un niveau critique ou élevé.
+RHEL 8.1 introduit également Insights, un service de statistiques devant assurer aux administrateurs d’avoir, dans les grandes lignes, la bonne information au bon moment. Insights propose plus d’un millier de règles exploitables dans les installations sur site ou dans les clouds publics comme AWS ou Azure.
+
+
+Notes de version de RHEL 8.1
+
+
+
+
+",fr,"
+
+
+
+
+
+
+
+
+
+
+
+
+Red Hat Entrerprise Linux 8.1 brings the ""live kernel patching""
+
+
+06 Nov 2019, 10:09
+
+It is rare that a point-in-time version brings important functions to a distribution, but RHEL 8.1 is obviously one of the exceptions, with the addition of an important mechanism: kernel modification without reboot.
+Live patching makes it possible to provide the kernel with essential security patches without having to restart the server, normally the consequence of any work done in the kernel. As stated in the release, this capability will be valid for patches with a critical or high level.
+RHEL 8.1 also introduces Insights, a statistics service designed to provide administrators with the right information at the right time. Insights offers more than a thousand rules that can be used in on-premises installations or in public clouds such as AWS or Azure.
+
+
+RHEL 8.1 Release Notes
+
+
+
+
+"

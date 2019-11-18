@@ -1,0 +1,50 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+DarkUniverse: Trojaner aus ""Shadow Brokers""-Leak identifiziert
+Kaspersky-Forscher haben einen Trojaner analysiert, der im Leak der ""Shadow Brokers""-Hackergruppe von 2017 auftauchte. Seine Ziele lagen in Afrika und Asien.
+06 Nov 2019, 18:30 by Simon Koenigsdorff
+Sicherheitsforscher von Kaspersky haben einen zuvor unbekannten Trojaner identifiziert, auf den 2017 erstmals Hinweise im Leak der Hackergruppe ""Shadow Brokers"" gefunden worden waren. Bei dem nun analysierten Trojaner handelt es sich um ein mit zahlreichen Funktionen ausgestattetes Spionage-Framework, das Kaspersky ""DarkUniverse"" nennt und als ""Advanced Persistent Threat"" (APT) einstuft – eine Klassifizierung, die häufig mit staatlichen Hackergruppen in Verbindung gebracht wird.
+Erste Hinweise auf ""DarkUniverse"" waren 2017 aufgetaucht, als die Hackergruppe ""Shadow Brokers"" eine ganze Reihe von Spionagetools und Exploits der amerikanischen NSA im Internet veröffentlichte. Im Leak enthaltene Sicherheitslücken hatten unter anderem den Ausbruch des Verschlüsselungstrojaners WannaCry möglich gemacht. In den Daten enthalten war aber auch ein Skript namens sigs.py, das als eigener Malware-Scanner von der NSA eingesetzt werden konnte, um die Anwesenheit fremder APTs auf Systemen zu überprüfen, die man selbst infiziert hatte. Die Kaspersky-Forscher konnten nun nachvollziehen, was sich hinter der Nummer 27 von 44 in dem Skript genannten APTs verbarg – die Hacker hinter ""DarkUniverse"" hatten allerdings beim Bekanntwerden des Leaks aufgehört, den Trojaner weiter zu benutzen.
+Verbreitungsweg und Angriffsziele
+Wie die Forscher von Kaspersky nun in einem Blogeintrag berichten, war der Trojaner offenbar von 2009 bis 2017 im Einsatz. Infektionen erreichte man über Spear-Phishing-Methoden: Durch E-Mails mit infizierten Office-Dokumenten konnte die Malware in Rechner eindringen und weitere Malware nachladen. Der Trojaner konnte dann unter anderem als Keylogger fungieren, E-Mails abfangen, Zugangsdaten entschlüsseln sowie umfassende weitere Informationen aus dem System und dem Netzwerkverkehr des Opfers auslesen.
+Die Forscher konnten nach eigenen Angaben etwa 20 Ziele des Trojaners nachvollziehen. Dabei handelte es sich um zivile und militärische Organisationen aus Syrien, dem Iran, Afghanistan, den Vereinigten Arabischen Emiraten sowie Russland, Weißrussland, Äthiopien, Tansania und dem Sudan.
+Urheber von ""DarkUniverse"" noch unbekannt
+Wer hinter ""DarkUniverse"" stecken könnte, ist noch unklar. Die Kaspersky-Forscher geben an, im Code des Schädlings gewisse Überlappungen mit dem Trojaner ""ItaDuke"" gefunden zu haben, der mittels eines Zero-Day-Exploits im Adobe Reader infizierte PDF-Dateien hatte einschleusen können. Man sei sich ""relativ sicher"", dass zwischen den Trojanern eine Verbindung bestehe. Die Ziele waren damals offenbar Aktivisten der uigurischen und tibetischen Minderheiten in China. (siko)
+
+
+",de,"
+
+
+
+
+
+
+
+
+
+
+
+DarkUniverse: Trojan identified from ""Shadow Brokers"" leak
+Kaspersky researchers have analyzed a Trojan that appeared in the leak of the ""Shadow Brokers"" hacker group of 2017. His goals were in Africa and Asia.
+06 Nov 2019, 18:30 by Simon Koenigsdorff
+Security researchers from Kaspersky have identified a previously unknown Trojan, on which in 2017 for the first time hints were found in the leak of the hacker group ""Shadow Brokers"". The Trojans we analyze now are a feature-rich spy framework called ""DarkUniverse"" by Kaspersky and classified as Advanced Persistent Threat (APT), a classification often associated with state hacker groups.
+First indications of ""DarkUniverse"" surfaced in 2017, when the hacker group ""Shadow Brokers"" published a whole series of spy tools and exploits of the American NSA on the Internet. Vulnerabilities in the leak included the outbreak of the encryption trojan WannaCry. Also included in the data was a script called sigs.py, which could be used by the NSA as its own malware scanner to check for the presence of foreign APTs on systems that had been self-infected. The Kaspersky researchers were now able to understand what was behind the number 27 of 44 mentioned in the script APTs - the hacker behind ""DarkUniverse"" had, however, ceased to use the Trojan on the leak.
+Distribution path and targets
+As the researchers from Kaspersky now report in a blog entry, the Trojan was apparently from 2009 to 2017 in use. Infections were reached via spear-phishing methods: e-mails with infected Office documents allowed the malware to penetrate computers and reload additional malware. Among other things, the Trojan could then act as a keylogger, intercept e-mails, decrypt credentials, and read out all other information from the victim's system and network traffic.
+The researchers were able to understand about 20 targets of the Trojan. These were civilian and military organizations from Syria, Iran, Afghanistan, the United Arab Emirates and Russia, Belarus, Ethiopia, Tanzania and Sudan.
+Creator of ""DarkUniverse"" still unknown
+Who could be behind ""DarkUniverse"" is still unclear. The Kaspersky researchers claim to have found in the pest's code certain overlaps with the Trojan ""ItaDuke"", which could infect infected PDF files with a zero-day exploit in Adobe Reader. One is ""relatively sure"" that there is a connection between the Trojans. At the time, the targets were apparently activists of the Uyghur and Tibetan minorities in China. (Risk)
+
+
+"

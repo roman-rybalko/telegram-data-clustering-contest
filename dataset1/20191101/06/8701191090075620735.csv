@@ -1,0 +1,280 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Улучшения арендованного объекта: о Мудром Кролике и суслике, которого не видно
+01 Nov 2019, 06:30 by Сергей Верещагин
+Уже не первый год на форумах сайта идет оживленная дискуссия (иногда переходящая в полемику) о порядке учета неотделимых улучшений в арендованные объекты недвижимости. И довольно часто задают вопросы, типа: — А какой срок службы определить для проведенного ремонта арендованного помещения, который нам обошелся в почти полтора миллиона рублей?
+В общем случае к неотделимым относятся те улучшения арендованного объекта, которые нельзя от него отделить без нанесения вреда для арендованного объекта (п. 2 ст. 623 ГК РФ). После завершения договора аренды такие улучшения остаются у арендодателя.
+Неотделимые улучшения, как верно заметил в свое время Умный Кролик (друг Винни-Пуха) — бывают разные. Это же неоднократно подтверждал и подтверждает Минфин России (письма от 23.09.2016 № 03-03-06/1/55715, от 07.12.2017 № 03-03-06/2/81480, от 20.08.2018 № 03-03-07/58751).
+
+Отключить рекламу
+
+Оклейка обоями стен, окрашенных давно тому назад мрачной темно-зеленой краской, и изрядно уже облупившейся. Установка стеклопакетов взамен старых облезлых деревянных окон. Замена древней электропроводки и электроарматуры на современную.
+Все эти, и подобные им, улучшения арендованной недвижимости будут являться неотделимыми. Но с точки зрения правил ведения бухгалтерского учета, равно как и налогообложения прибыли таковые неотделимые улучшения признаются ремонтом арендованного объекта недвижимости.
+Какие конкретно улучшения объекта арендатор может провести самостоятельно, какие — только после получения разрешения от арендодателя, а на какие вообще не имеет права — оптимально заранее обговорить в заключенном договоре.
+Точно также оптимально заранее, «еще на берегу», также условиться, какие улучшения арендатор проводит за свой счет, а какие, полностью либо частично, ему обязан компенсировать арендодатель.Отключить рекламу
+В регистрах бухгалтерского учета, равно как и для целей налогообложения, их следует отразить как текущий ремонт.
+В общем случае по условиям договора арендодатель не обязан возмещать арендатору затраты на текущий ремонт арендованного объекта (п. 1 ст. 622 ГК РФ).
+Таким образом, вышеупомянутые неотделимые улучшения арендатор имеет право списать на свои расходы как в регистрах бухгалтерского учета (п. 27 ПБУ 6/01), так и для целей налогообложения (п. 2 ст. 260 НК РФ) записями:
+Проводки будут:
+
+Дебет счета 20 (23, 25, 26, 44) Кредит счета 60 — приняты затраты на ремонт арендованного имущества;
+Дебет счета 19 Кредит счета 60 — НДС по произведенному ремонту;
+Дебет счета 68 (субсчет «Расчеты по НДС») Кредит счета 19 — НДС по произведенному ремонту принят к вычету.
+
+Если ремонт производился собственными силами, то записи будут:Отключить рекламу
+
+Дебет счета 20 (23, 25, 26, 44) Кредит счетов 10, 70, 69 и пр.
+
+Замена (восстановление) строительных конструкций (либо их элементов), за исключением несущих, замена (или восстановление) систем или сетей инженерно-технического обеспечения (либо их элементов) — тоже неотделимые улучшения арендованного объекта. Их Градостроительный Кодекс РФ квалифицирует тоже, как ремонт, но только капитальный (п. 14.2 ст. 1 ГСК РФ).
+Законодательство и нормативные акты по бухгалтерскому учету и налогообложению разделения на текущий и капитальный ремонт не предусматривают. Вне зависимости от требований ГСК РФ капитальный ремонт, точно также, как и текущий, признается расходами текущего периода.
+Если по условиям договора затраты на капитальный ремонт также возлагаются на арендатора, то он имеет право списать их на свои расходы проводками указанными выше.
+
+Отключить рекламу
+
+Если капитальный ремонт — обязанность арендодателя, то потратившийся на его проведение арендатор имеет право на его возмещение.
+При возмещении понесенных затрат арендатор от своего имени выписывает собственнику передаточный акт на передачу результата работ, выполненного другой организацией, либо самим арендатором. Таким образом, арендатор признается подрядчиком (если ремонт выполнен своими силами), или генеральным подрядчиком (если ремонт выполняла привлеченная организация).
+Возмездная передача результата работ признается их реализацией (п. 1 ст. 39 НК РФ).
+Она, в свою очередь, включается в облагаемую базу по НДС (подп. 1 п. 1 ст. 146 НК РФ). Арендатор, следовательно, должен выставить собственнику и счет-фактуру на сумму затрат по передаваемым затратам по ремонту.
+
+Отключить рекламу
+
+И возмещение арендодателем произведенного арендатором ремонта у последнего должно быть отражено записями:
+
+Дебет счета 62 Кредит счета 90 (субсчет «Выручка») — передан собственнику результат работ;
+Дебет счета 90 (субсчет «НДС») Кредит счета 68 (субсчет «Расчеты по НДС») — НДС по передаваемым работам;
+Дебет счета 90 (субсчет «Себестоимость продаж») Кредит счета 20 — списаны затраты по переданному результату работ.
+
+Вероятнее всего, арендодатель, дабы не платить лишнего, потребует от арендатора первичные документы, подтверждающие затраты на произведенный ремонт. То есть арендатор не сможет заработать хоть какую-то копейку, и получит от собственника ровно столько, сколько он и заплатил. Следовательно, ни налог на прибыль, ни налог на добавленную стоимость при возмещении затрат арендодателем не увеличатся.Отключить рекламу
+Если будет принято решение о компенсации затрат на ремонт арендной платой, то ее зачет арендатор должен учесть записью:
+
+Дебет счета 60 Кредит счета 62 — переданный результат работ по ремонту арендованного объекта зачтен в счет арендной платы.
+
+Арендодатель, в свою очередь, затраты на проведенный ремонт отразит проводками:
+
+Дебет счета 20 (26, 44) Кредит счета 60 — принят от арендатора результат работ по ремонту сданного в аренду объекта;
+Дебет счета 19 Кредит счета 60 — НДС по проведенному ремонту;
+Дебет счета 68 (субсчет «Расчеты по НДС») Кредит счета 19 — предъявленный подрядчиком (арендатором) НДС принят к вычету;
+Дебет счета 60 Кредит счета 62 — оплата за произведенный ремонт зачтена в счет арендной платы.
+
+Если в результате произведенных неотделимых улучшений арендованного объекта изменятся его параметры (высота, количество этажей, площадь, объем), либо будут заменены (или восстановлены) несущие строительные конструкции, то они уже будут классифицироваться, как реконструкция (п. 14. ст. 1 ГСК РФ).Отключить рекламу
+Затраты на ее проведение увеличивают первоначальную стоимость объекта (п. 27 ПБУ 6/01, п. 2 ст. 257 НК РФ).
+Для проведения ремонта достаточно только решения руководства арендатора (если по условиям данного конкретного договора нет нужды согласовывать его с арендодателем). А вот реконструкцию арендованного объекта так просто не сделаешь, а иногда и не и вовсе не сможешь.
+Например, возможно ли провести реконструкцию отдельного офисного помещения в арендуемом здании?*
+
+*Если кто-то из коллег сможет положительно ответить на этот вопрос, просьба поделиться. В редакции есть мои координаты.
+
+Следовательно, все согласятся, что реконструкцию арендуемого объекта недвижимости можно произвести в том, и только в том случае, если данный объект (здание, сооружение) находится в ведении только одного арендатора.
+Кроме того, произвести капитальные вложения в арендуемый объект недвижимости без ведома и согласия собственника невозможно.Отключить рекламу
+Во-первых, для начала работ по реконструкции (модернизации) объекта недвижимости необходимо имеет в наличии документ, именуемый «Разрешение на строительство» (ст. 51 ГСК РФ)*. А он может быть выдан только собственнику этого объекта (там же). Арендатор на свое имя такой документ получить не имеет возможности.
+*По ст. 9.5 КоАП РФ проведение работ по реконструкции без наличия разрешения на строительство влечет за собой наложение административного штрафа на организацию в размере от 500 тыс. руб. до 1 млн. руб. или административное приостановление деятельности на срок до девяноста суток, кроме того, штраф на должностных лиц этой организации — от 20 тыс. руб. до 50 тыс. руб.
+Во-вторых, после завершения сего процесса опять-таки именно собственник должен получить (и опять именно на свое имя) документ под названием «Разрешение на ввод объекта в эксплуатацию» (ст. 55 ГСК РФ). Он же обязан внести изменения в документы государственного кадастрового учета реконструированного объекта недвижимости (п. 10 ст. 55 ГСК РФ).
+
+Отключить рекламу
+
+То есть реконструкция арендованного объекта возможна только при непосредственном участии в этом процессе (как минимум, в документальном его оформлении) арендодателя (точнее, собственника).
+И, внимание, вопрос. Много ли найдется арендаторов, согласных полностью за свой счет произвести такой непростой и недешевый процесс реконструкции арендованного объекта недвижимости?
+Нам кажется, что не особенно. Тем более, что никто не запретит арендодателю после того, как на месте его сданной в аренду развалюхи теперь стоит вполне себе приличное здание, расторгнуть договор, либо повысить арендную плату до какой-нибудь неподъемной для арендатора суммы. В результате договор будет расторгнут, и ему почти «за спасибо» достанется восстановленный из небытия объект. Арендатор же останется и без объекта, и без потраченных на него денег.
+
+Отключить рекламу
+
+Поэтому в настоящее время мало кто из арендаторов идет на риск реконструкции арендованных объектов недвижимости. Исключения встречаются, но крайне и крайне редко.
+И порядок отражения арендатором, как в регистрах бухгалтерского учета, так и для целей налогообложения, капитальных вложений в арендованные объекты недвижимости носит больше чисто теоретический характер.
+Это примерно как нелинейный метод расчета амортизации. Применять его можно, но довольно редко кто им пользуется.
+Хотя может возникнуть ситуация, в которой арендатор, проведя с согласия арендодателя реконструкцию арендуемого объекта недвижимости, будет вынужден принять к учету произведенные им капитальные вложения.
+Например, арендодатель соглашается принять частичное участие в финансировании производимой арендатором реконструкции. И, допустим, после завершения сего процесса он заплатит арендатору (зачтет в счет арендной платы) половину понесенных тем затрат.
+
+ООО «Альфа» (Арендатор) арендует у ООО «Бета» (Арендодатель) объект недвижимости. В какой-то момент Арендатор принимает решение, что ему необходимо провести реконструкцию арендуемого объекта. Арендодатель дает согласен на проведение этих капитальных вложений и обещает возместить половину понесенных ООО «Альфа» затрат.
+ Отключить рекламу
+
+Предположим, что все затраты на реконструкцию арендуемого объекта составили 6 000 000 руб. плюс 1 200 000 руб. налога на добавленную стоимость.
+Арендатор отразил их записями:
+
+Дебет счета 20 Кредит счета 60 — 6 000 000 руб.;
+Дебет счета 19 Кредит счета 60 — 1 200 000 руб.;
+Дебет счета 68 (субсчет «Расчеты по НДС») Кредит счета 19 — 1 200 000 руб.
+
+Передача Арендодателю половины этой суммы (3 000 000 руб.) для возмещения должна быть отражена проводками:
+
+Дебет счета 62 Кредит счета 90 (субсчет «Выручка») — 3 600 000 руб. — передан Арендодателю результат работ (3 000 000 руб. х 120%);
+Дебет счета 90 (субсчет «НДС») Кредит счета 68 (субсчет «Расчеты по НДС») — 600 000 руб. — начислен НДС от передачи результата работ (3 000 000 руб. х 20%);
+Дебет счета 90 (субсчет «Выручка») Кредит счета 20 — 3 000 000 руб. — списаны затраты по переданному результату работ.
+
+Зачет стоимости переданного результата работ в счет арендной платы нужно учесть записью:Отключить рекламу
+
+Дебет счета 60 Кредит счета 62 — 3 600 000 руб.
+
+Остальные 3 000 000 руб. ООО «Альфа» принимает себе к учету, как некий «виртуальный» объект основных средств, который нельзя узреть в его натуральном выражении воочию или предъявить инвентаризационной комиссии*. Но в его денежном выражении он будет отражен как в регистрах бухгалтерского учета, так и для целей налогообложения.
+*— Ты суслика видишь?
+— Нет.
+— И я не вижу. А он есть.
+И проводки будут:
+
+Дебет счета 08 Кредит счета 20 — 3 000 000 руб.;
+Дебет счета 01 Кредит счета 08 — 3 000 000 руб.
+
+И далее этот никому не видимый объект недвижимости будет числиться на учете арендатора. По нему, с месяца, следующего за месяцем принятия к учету (начала его эксплуатации) будет начисляться амортизация. Также он попадает (как объект недвижимости) в облагаемую базу при исчислении налога на имущество.
+
+
+
+Центр обучения «Клерка»Приобретай опыт для серьезных дел
+Научитесь составлять управленческую отчетность в нашем новом онлайн-курсе. Собственники готовы платить за управленческие отчеты больше, чем за налоговые. Дадим алгоритм настройки отчетов и покажем, как встроить их в ваш повседневный учет.
+Обучение дистанционно. Выдаем сертификат. Записывайтесь на курс «Все про управленческий учет: для бухгалтера, директора и ИП». Пока за 3500 вместо 6000 руб.
+
+
+
+Всё про управленческий учет: для бухгалтера, директора и ИПЛариса МагафуроваХочу купить за 3 500 ₽ 6 000 ₽ Узнать больше
+Сергей Верещагин, независимый эксперт по методологии бухгалтерского учета и налогообложения
+Источник: «Клерк».
+
+
+",ru,"
+
+
+
+
+
+
+
+
+
+
+
+Improvements to the leased object: about the Wise Rabbit and the gopher, which is not visible
+01 Nov 2019, 06:30 by Sergey Vereshchagin
+This is not the first year that a lively discussion has been going on at the site's forums (sometimes turning into controversy) about the procedure for accounting for inseparable improvements in rented real estate. And quite often they ask questions, such as: - And what is the service life to determine for the repair of the rented premises, which cost us almost one and a half million rubles?
+In the general case, those improvements that are inseparable include those that cannot be separated from it without harming the rented property (Clause 2, Article 623 of the Civil Code of the Russian Federation). Upon completion of the lease, such improvements remain with the lessor.
+Inseparable improvements, as the Smart Rabbit (a friend of Winnie the Pooh) correctly noted at one time, are different. The Ministry of Finance of Russia has repeatedly confirmed and confirms this (letters dated 09/23/2016 No. 03-03-06 / 1/55715, dated 12/07/2017 No. 03-03-06 / 2/81480, dated 08/20/2018 No. 03-03-07 / 58751).
+
+Disable Ads
+
+Wallpapering of walls painted long ago with dark dark green paint, and already pretty peeling off. Installation of double-glazed windows instead of old shabby wooden windows. Replacing ancient wiring and electrical fittings with a modern one.
+All of these, and similar ones, improvements to rented property will be inseparable. But from the point of view of accounting rules, as well as profit taxation, such inseparable improvements are recognized as repair of a rented property.
+What concrete improvements the tenant can carry out independently, which ones - only after obtaining permission from the landlord, and which he does not have the right to do - it is optimal to discuss in advance in the concluded contract.
+In the same way, it is optimal in advance, “still on the shore”, to also agree on what improvements the tenant makes at his own expense, and which, in whole or in part, the landlord must compensate him.
+In accounting registers, as well as for tax purposes, they should be reflected as current repairs.
+In the general case, under the terms of the contract, the lessor is not obligated to reimburse the lessee for the costs of the current repair of the leased object (Clause 1, Article 622 of the Civil Code of the Russian Federation).
+Thus, the tenant has the right to write off the above inseparable improvements both in accounting registers (paragraph 27 of PBU 6/01) and for tax purposes (paragraph 2 of article 260 of the Tax Code of the Russian Federation) by the entries:
+Postings will be:
+
+The debit of account 20 (23, 25, 26, 44) The credit of account 60 - accepted costs for the repair of leased property;
+Debit of account 19 Credit of account 60 - VAT on repairs;
+The debit of account 68 (sub-account “Calculations for VAT”) The credit of account 19 - VAT on repairs performed is accepted for deduction.
+
+If the repair was done on its own, the entries will be: Disable ads
+
+Debit of account 20 (23, 25, 26, 44) Credit of accounts 10, 70, 69, etc.
+
+Replacement (restoration) of building structures (or their elements), with the exception of supporting structures, replacement (or restoration) of systems or networks of engineering and technical support (or their elements) are also inseparable improvements to the leased object. Their Town Planning Code of the Russian Federation also qualifies as repair, but only major (paragraph 14.2 of article 1 of the Civil Code of the Russian Federation).
+Legislation and regulatory acts on accounting and taxation do not provide for separation of current and major repairs. Regardless of the requirements of the GSK of the Russian Federation, major repairs, just like the current one, are recognized as expenses of the current period.
+If, under the terms of the contract, the costs of major repairs are also borne by the tenant, then he has the right to write them off to his expenses with the postings indicated above.
+
+Disable Ads
+
+If the overhaul is the landlord's duty, then the tenant who spent on it is entitled to its reimbursement.
+When reimbursing the costs incurred, the tenant on his own behalf writes out a deed of transfer to the owner to transfer the result of the work performed by another organization, or by the lessee himself. Thus, the lessee is recognized as a contractor (if the repair was done on its own), or as a general contractor (if the repair was carried out by an involved organization).
+Compensation of the result of work is recognized as their implementation (paragraph 1 of article 39 of the Tax Code of the Russian Federation).
+It, in turn, is included in the taxable base for VAT (subparagraph 1 paragraph 1 of article 146 of the Tax Code of the Russian Federation). The tenant, therefore, must issue an invoice to the owner and the amount of the costs of the transferred repair costs.
+
+Disable Ads
+
+And the lessor's compensation for the repairs made by the lessee in the latter should be reflected in the entries:
+
+Debit of account 62 Credit of account 90 (sub-account “Revenue”) - the result of the work has been transferred to the owner;
+The debit of account 90 (sub-account “VAT”) The credit of account 68 (sub-account “Calculations for VAT”) - VAT on transferred work;
+The debit of account 90 (subaccount ""Cost of sales"") Credit account 20 - written off the costs of the transferred result of work.
+
+Most likely, the landlord, so as not to pay too much, will require the tenant primary documents confirming the cost of repairs. That is, the tenant will not be able to earn at least some penny, and will receive from the owner exactly as much as he paid. Consequently, neither income tax nor value added tax will be increased when the lessor reimburses expenses.
+If a decision is made to compensate for repair costs by rent, the lessee must take into account its offset by the following record:
+
+Debit of account 60 Credit of account 62 - the transferred result of the repair of the leased object is set off against the rent.
+
+The landlord, in turn, will reflect the costs of the repairs with the postings:
+
+The debit of account 20 (26, 44) The credit of account 60 - the result of work on the repair of the leased object was received from the tenant;
+Debit of account 19 Credit of account 60 - VAT on repairs;
+Debit of account 68 (sub-account “Calculations for VAT”) Credit of account 19 - VAT submitted by the contractor (tenant) was accepted for deduction;
+Debit of account 60 Credit of account 62 - payment for the repair performed is set off against the rent.
+
+If, as a result of the inextricable improvements made to the leased object, its parameters (height, number of floors, area, volume) change or the supporting building structures are replaced (or restored), then they will already be classified as reconstruction (Clause 14, Article 1 of the Civil Protection Code RF). Disable ads
+The costs of its implementation increase the initial cost of the object (paragraph 27 of PBU 6/01, paragraph 2 of Article 257 of the Tax Code).
+For repairs, only the decision of the tenant's management is sufficient (if, under the terms of this particular contract, there is no need to coordinate it with the lessor). But the reconstruction of the leased facility is so simple you can’t do it, and sometimes you can’t even do it at all.
+For example, is it possible to reconstruct a separate office space in a rented building? *
+
+* If one of the colleagues can positively answer this question, please share. The editors have my coordinates.
+
+Consequently, everyone will agree that the reconstruction of a leased property can be done if and only if the given object (building, structure) is under the jurisdiction of only one tenant.
+In addition, it is impossible to make capital investments in a rented property without the knowledge and consent of the owner.
+Firstly, in order to start reconstruction (modernization) of the property, a document called the “Building Permit” (article 51 of the GSK RF) * is required. And it can only be issued to the owner of this object (ibid.). The lessee is not able to receive such a document in his name.
+* According to Art. 9.5 Administrative Code of the Russian Federation carrying out reconstruction work without a building permit entails the imposition of an administrative fine on the organization in the amount of 500 thousand rubles. up to 1 million rubles or administrative suspension of activities for up to ninety days, in addition, a fine on officials of this organization - from 20 thousand rubles. up to 50 thousand rubles
+Secondly, after the completion of this process, again, it is the owner who must receive (and again in his own name) a document called ""Permission to put an object into operation"" (Article 55 of the GSK RF). He is also obliged to amend the documents of the state cadastral registration of the reconstructed real estate object (Clause 10, Article 55 of the Civil Code of the Russian Federation).
+
+Disable Ads
+
+That is, the reconstruction of the leased facility is possible only with the direct participation in this process (at least in its documentary design) of the landlord (more precisely, the owner).
+And, attention, a question. Are there many tenants who agree to completely at their own expense carry out such a difficult and expensive process of reconstruction of a rented property?
+It seems to us that not especially. Moreover, no one will forbid the landlord after a decent building is now standing in its place of a rented pimped place, to terminate the contract, or raise the rent to some amount that the renter cannot afford. As a result, the contract will be terminated, and he will almost ""for thanks"" get the object restored from nonexistence. The tenant will be left without an object, and without the money spent on it.
+
+Disable Ads
+
+Therefore, at present, few of the tenants are at risk of reconstructing the leased real estate. Exceptions are found, but extremely and extremely rare.
+And the procedure for reflection by the lessee, both in accounting registers and for tax purposes, capital investments in leased real estate is more of a purely theoretical nature.
+This is approximately like a non-linear method of calculating depreciation. You can use it, but quite rarely who uses it.
+Although a situation may arise in which the tenant, having reconstructed the leased property with the consent of the lessor, will be forced to take into account the capital investments made by him.
+For example, the landlord agrees to take part in the financing of the reconstruction made by the tenant. And, let's say, after thishe will pay the tenant (set off against the rent) half of the costs incurred.
+
+Alfa LLC (Lessee) rents a property from Beta LLC (Lessor). At some point, the Lessee decides that he needs to reconstruct the leased object. The landlord agrees to these capital investments and promises to reimburse half of the costs incurred by Alfa LLC.
+ Disable Ads
+
+Suppose that all costs for the reconstruction of a leased facility amounted to 6,000,000 rubles. plus 1 200 000 rub. value added tax.
+The tenant reflected them with notes:
+
+The debit of the account 20 Credit account 60 - 6 000 000 rubles .;
+The debit of account 19 Credit account 60 - 1 200 000 rubles .;
+The debit of account 68 (subaccount ""Calculations for VAT"") Credit account 19 - 1 200 000 rubles.
+
+The transfer to the Lessor of half of this amount (3,000,000 rubles) for compensation should be reflected in the postings:
+
+The debit of the account 62 Credit of the account 90 (sub-account “Revenue”) - 3 600 000 rubles. - the result of the work was transferred to the Lessor (3,000,000 rubles. X 120%);
+The debit of account 90 (sub-account “VAT”) The credit of account 68 (sub-account “Calculations for VAT”) - 600,000 rubles. - VAT was charged on the transfer of the result of work (3,000,000 rubles. X 20%);
+The debit of account 90 (subaccount ""Revenue"") Credit account 20 - 3 000 000 rubles. - written off the costs of the transferred result of the work.
+
+The offset of the cost of the transferred result of the work on account of the rent must be taken into account by the entry: Disable advertising
+
+Debit of account 60 Credit of account 62 - 3 600 000 rub.
+
+The remaining 3,000,000 rubles. Alfa LLC takes into account itself as a kind of “virtual” asset of fixed assets that cannot be seen in its physical terms personally or presented to the inventory commission *. But in its monetary value, it will be reflected both in accounting registers and for tax purposes.
+* - Do you see a gopher?
+- No.
+- And I do not see. But he is.
+And the postings will be:
+
+Debit of account 08 Credit of account 20 - 3 000 000 rub .;
+Debit of account 01 Credit of account 08 - 3 000 000 rub.
+
+And further, this invisible real estate will be registered with the tenant. For it, from the month following the month of acceptance for accounting (the beginning of its operation), depreciation will be charged. It also falls (as a property) into the taxable base when calculating property tax.
+
+
+
+Training Center ""Clerk"" Get experience for serious business
+Learn how to write management reporting in our new online course. Owners are willing to pay more for management reports than for tax reports. We will give an algorithm for setting up reports and show how to embed them in your daily accounting.
+Teaching remotely. We issue a certificate. Sign up for the course “Everything about management accounting: for an accountant, director and individual entrepreneur”. So far, for 3,500 instead of 6,000 rubles.
+
+
+
+All about management accounting: for an accountant, director and IPLaris Magafurov I want to buy for 3,500 ₽ 6,000 ₽ Learn more
+Sergey Vereshchagin, independent expert on accounting and taxation methodology
+Source: Clerk.
+
+
+"

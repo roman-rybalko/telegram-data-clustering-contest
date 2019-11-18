@@ -1,0 +1,118 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Auf der Suche nach dem Universalroboter
+Roboter erledigen am Band jetzt schon viele Arbeiten. Allerdings müssen sie oft noch von Menschen kontrolliert und ihre Fehler ausgebessert werden. Wissenschaftler arbeiten daran, dass das in Zukunft nicht mehr so ist. Ziel ist ein selbstständig lernender Roboter für die Automobilindustrie.
+
+06 Nov 2019, 11:03
+
+Industrieroboter gelten oft als Arbeitsplatzvernichter. Aber beim Aufbau oder beim Umstellen einer Fertigungsstraße müssen Menschen ran. Sie müssen die teuren Maschinen neu programmieren sowie Fehler erkennen und beheben. Wie teuer das werden kann, erlebte Elon Musk beim Aufbau der Produktion des Tesla Model 3. Die Integration der teuren Roboter zu einer funktionierenden Produktionslinie blieb hinter Musks ehrgeizigen Zielen zurück, Produktionsziele wurden verfehlt. Bis heute arbeitet in seiner Gigafactory eine komplette Fertigungsstraße ohne Roboter, um Ausfälle aufzufangen.
+Die Antwort deutscher Experten auf derartige Probleme besteht darin, Roboter intelligenter zu machen. Wissenschaftler der Universität Stuttgart und des ebenfalls in Stuttgart ansässigen Fraunhofer-Instituts für Produktionstechnik und Automatisierung (IPA) arbeiten in der Forschungsfabrik Arena 2036 an der Entwicklung sogenannter kognitiver Produktionssysteme. Deren intelligente Maschinen sollen selbstständig lernen und sich selbst programmieren können.
+Jedoch sind die selbstlernenden Roboter bislang erst im Versuchsstadium. Sie würden den Aufbau einer neuen Fertigung, schnelle Umstellungen oder größere Flexibilität bei den Produkten ermöglichen. Obwohl moderne Fertigungsstraßen stark automatisiert und vernetzt sind, arbeiten dort neben zahlreichen Produktionsrobotern weiterhin eine Menge Menschen. Viele ihrer Aufgaben lassen sich bislang nur schwer oder kaum automatisieren.
+
+
+
+Das gilt etwa für die Einrichtung oder Umstellung einer Produktionsstraße. Heute dauert die Errichtung einer neuen Anlage von der Planung über die Programmierung bis hin zur Inbetriebnahme viele Monate. Danach fallen oft weitere Optimierungsarbeiten an, bis der Betrieb reibungslos läuft.
+Was ein Mensch intuitiv lernt, muss einem Roboter erst einprogrammiert werden. ""Bis der Roboter zuverlässig funktioniert, vergeht viel Zeit, und die personalintensive Programmierung ist teuer"", sagte Marco Huber der Zeitschrift Forschung Leben von der Universität Stuttgart. Huber leitet dort die Abteilung Kognitive Produktionssysteme des Instituts für Industrielle Fertigung und Fabrikbetrieb.
+In einem kognitiven Produktionssystem programmieren sich die Roboter selbst. Sie lernen in einer Simulationsumgebung oder durch Imitation, welche Arbeitsschritte sie ausführen müssen. Daraus erzeugen sie dann ihre eigenen Ausführungsprogramme. Allerdings funktioniert diese Selbstprogrammierung erst unter Laborbedingungen in Teilbereichen wie der Objekterkennung.
+Ziel der Arbeit in der Versuchsfabrik ist jetzt, diese Erkenntnisse in die Praxis zu übertragen.
+Der Roboter lernt selbst
+Möglich geworden ist das durch Fortschritte in der Entwicklung künstlicher Intelligenz und ihrem Teilgebiet maschinelles Lernen, die Menschen helfen, mit den Datenmengen umzugehen, die die Industrie 4.0 erzeugt. ""Für Menschen ist es schwierig, hier ein analytisches Modell zu finden"", sagt Ira Effenberger, stellvertretende Leiterin des Zentrums für Cyber Cognitive Intelligence am Fraunhofer IPA.
+Zudem hat die schiere Datenmenge noch ein anderes Problem: Nicht alle Daten sind gute Daten. In der Produktion entstehen auch Daten, deren Qualität für das maschinelle Lernen nicht ausreicht. Manche sind verrauscht oder es fehlen komplette Datenfelder, weil Sensoren defekt sind oder in der Datenübermittlung Störungen auftreten.
+Manchmal tragen Daten auch unterschiedliche Zeitstempel, weil sie von Maschinen erzeugt wurden, deren interne Uhren minimal voneinander abweichen. ""Daten sind der Schlüssel für maschinelles Lernen"", sagt Huber, ""und da gilt das bekannte Prinzip garbage in, garbage out"". Anders ausgedrückt: Sind die Daten fehlerhaft, gilt das auch für die Auswertung. Künstliche Intelligenz kann in Zukunft Menschen helfen, die brauchbaren Daten aus dem Ozean von Rohmaterial herauszufiltern.
+Diese können dann dazu genutzt werden, einem Roboter seine Aufgaben beizubringen. Möglich wird das wiederum durch Fortschritte im Deep Learning. Dieser Teilbereich des maschinellen Lernens nutzt neuronale Netze und kann große Datenmengen verarbeiten. Hier haben Steigerungen der Rechenleistung, speziell durch das Aufkommen leistungsstarker Grafikkarten, den Einsatz von Deep Learning stark erleichtert. Technische Basis sind künstliche neuronale Netze.
+Künstliche Intelligenz wird erzeugt, indem man Trainingsmethoden benutzt, die auf großen Datenmengen und deren Analyse beruhen. Mit den vorhandenen Informationen und durch das neuronale Netz verknüpft das System das Gelernte mit neuen Inhalten und entwickelt so sein Wissen weiter. Dadurch kann die Maschine Prognosen und Entscheidungen treffen und diese bewerten. Sie werden dann entweder bestätigt oder in einem neuen Anlauf geändert. Der eigentliche Lernprozess geschieht unabhängig von menschlichen Eingriffen.
+In der Arena 2036 entstehen neue Fertigungstechnologien
+Obwohl diese Technologien bereits auf verschiedenen Feldern angewandt werden, steht die Entwicklung echter kognitiver Produktionsroboter noch am Anfang. Diese Roboter sind aber für die Industrie ein wichtiges Ziel. Werner Kraus, Leiter der Abteilung Roboter- und Assistenzsysteme des Fraunhofer IPA, spricht hier vom ""Universal-Roboter als Heiligem Gral der Robotik"", Vorbild sei das iPhone mit seiner Funktionsvielfalt.
+Die Forschungsfabrik Arena 2036 hat aber durchaus ein Spezialgebiet. Sie ist ausgerichtet auf neue Technologien für die Automobilproduktion.
+Ein Montageband aus einzelnen Modulen
+Beteiligt sind neben der Universität Stuttgart und der Fraunhofer-Gesellschaft Hersteller und Zulieferer aus der Automobilindustrie. ""2036"" bezeichnet dabei das Jahr, in dem das Automobil 150 Jahre alt sein wird. 1886 stellte Carl Benz den ""Benz Patent-Motorwagen Nr. 1"" vor. Deswegen gilt dieses Jahr als Geburtsjahr des modernen Automobils mit Verbrennungsmotor.
+Den Anstoß zur Gründung der Forschungsfabrik gab die Finanzkrise von 2007/2008. Damals konnte Daimler nicht genug S-Klasse-Fahrzeuge verkaufen und gleichzeitig nicht genug A-Klasse-Pkw produzieren, um auf die geänderte Nachfrage zu reagieren, wie Kraus sagt. Plötzlich stand man vor dem Problem, wie man auf der Produktionslinie für die S-Klasse auch A-Klasse-Fahrzeuge produzieren könnte. Zudem wurde am Markt eine größere Variantenvielfalt nachgefragt.
+Das hat sich zwar inzwischen wieder geändert, dafür werden aber jetzt von den einzelnen Modellen kleinere Stückzahlen produziert. Die Herausforderung, eine Produktionslinie möglichst zeitnah umzustellen, bleibt also bestehen. ""Die Neueinstellung der Produktion ist aufwendig"", sagt Effenberger, ""künstliche Intelligenz kann das unterstützen, speziell durch das im System gespeicherte Erfahrungswissen"".
+Einer der Forschungsschwerpunkte ist die Frage, wie eine wandlungsfähige Fahrzeugproduktion in Zukunft wohl aussehen würde. Die Produktion der Zukunft würde Leichtbaumaterialien in Großserie verarbeiten, dabei aber auch zahlreiche Varianten eines Grundmodells liefern. Deswegen soll die klassische Bandmontage überwunden werden. Zu diesem Zweck entsteht in der Forschungsfabrik eine Musterfabrik, in der neue Konzepte erprobt werden.
+Fluide Produktion (Flupro) ist eines der Projekte der Forschungsfabrik. Es wird unter Federführung des Fraunhofer IPA zusammen mit zahlreichen Industriepartnern durchgeführt. Ende 2019 soll der Prototyp einer Produktionsanlage fertig sein. Dabei besteht das Montageband aus miteinander verbundenen, rekonfigurierbaren und programmierbaren Fertigungsmodulen.
+
+
+
+Die bei Flupro genutzten Roboter-Assistenten können ohne IT-Kenntnisse programmiert werden: Mitarbeiter zeigen dem Roboter, was er tun soll. Dieser imitiert den Ablauf und wird, falls nötig, korrigiert. Die Fertigungsanlage selbst wird nicht als Ganzes geplant. Stattdessen stützen sich die Entwickler auf das Prinzip der Schwarmintelligenz. Jeder von ihnen optimiert seinen spezifischen Bereich, der dann wiederum ins größere System integriert wird.
+Anwendungen, die auch in einem zukünftigen kognitiven Produktionssystem ihren Platz hätten, existieren bereits.
+Lernen, wie man eine Schraube eindreht
+So konstruierten die Techniker und Forscher in der Arena 2036 einen Roboter, der Schrauben danach sortiert, ob er sie weiterverarbeiten kann oder nicht. Die passenden Schrauben drehte er dann an den passenden Stellen ein. Dazu musste diese eigentlich simple Tätigkeit in zahlreiche Einzelschritte zerlegt werden: Der Roboter muss zunächst einmal zwischen den zahlreichen Teilen die Schrauben in der richtigen Größe finden. Dann muss er sie korrekt anfassen, am Werkstück die passende Position finden und die Schraube in der richtigen Richtung eindrehen.
+In der nächsten Entwicklungsstufe sollen die Roboter nicht mehr von IT-Spezialisten programmiert werden, sondern die Menschen sollen ihnen einfach zeigen, was sie zu tun haben. Die Maschinen imitieren dann also die Menschen. Diese wiederum würden die Roboter auf intuitive Weise anlernen und bräuchten keine IT-Kenntnisse mehr. Matthias Reichenbach leitet das Team Futuretec von Daimler in der Forschungsfabrik. Unter seiner Ägide entstehen Roboter-Assistenten, die von jedermann programmiert werden können.
+Der Schraub-Roboter ist ein Ergebnis dieser Arbeit. In dem Gerät steckt eine Drehmoment-Sensorik, die ursprünglich am Deutschen Zentrum für Luft- und Raumfahrt (DLR) für den Roboterarm der Internationalen Raumstation entwickelt wurde. ""Der Roboter fühlt, was er tut"", sagte Reichenbach zu Forschung Leben. Der Roboter braucht knapp zehn Minuten, um den Ablauf zu erfassen und kann nun eigenständig arbeiten.
+
+
+
+Ein anderes Anwendungsgebiet ist die Qualitätssicherung. ""Bei solchen Aufgaben können lernfähige Systeme den Menschen entlasten und helfen, die endgültige Entscheidung zu treffen"", erläutert Effenberger. Außerdem können Daten aus der Maschine dazu dienen, die Qualität zu prognostizieren. Die Maschine kann dann nachgeregelt werden. ""Bei den fertigen Teilen reichen dann Stichproben."" Im Kunststoffspritzguss oder beim Ultraschallschweißen ist das bereits möglich.
+Diese einzelnen Anwendungen können als Elemente der zukünftigen intelligenten Industrieproduktion dienen. Die Herausforderung für die Forschung in der Arena 2036 besteht darin, aus diesen technologischen Voraussetzungen ein funktionierendes System zu machen.
+
+
+",de,"
+
+
+
+
+
+
+
+
+
+
+
+In search of the universal robot
+Robots are already doing a lot of work on the tape. However, they often need to be controlled by humans and their mistakes corrected. Scientists are working to ensure that this is no longer the case in the future. The goal is a self-learning robot for the automotive industry.
+
+06 Nov 2019, 11:03
+
+Industrial robots are often considered workplace killers. But people have to work on setting up or changing a production line. You have to reprogram the expensive machines and detect and correct errors. How expensive this can be, experienced Elon Musk in building the production of the Tesla Model 3. The integration of expensive robots to a functioning production line was behind Musk's ambitious goals back, production targets were missed. To date, a complete production line without robots is working in its Gigafactory to absorb failures.
+German experts' answer to such problems is to make robots smarter. Scientists at the University of Stuttgart and the Fraunhofer Institute for Production Technology and Automation (IPA), also based in Stuttgart, are working on the development of so-called cognitive production systems in the Research Factory Arena 2036. Their intelligent machines should be able to learn independently and program themselves.
+However, the self-learning robots are only in the experimental stage so far. They would allow the construction of a new production, quick changes or greater flexibility in the products. Although modern production lines are highly automated and networked, there are still a lot of people working alongside numerous production robots. Many of their tasks are difficult or impossible to automate.
+
+
+
+This applies, for example, to the establishment or conversion of a production line. Today, the construction of a new plant from planning to programming to commissioning takes many months. After that, often further optimization work is necessary until the operation runs smoothly.
+What a person intuitively learns first has to be programmed into a robot. ""It takes a long time for the robot to function reliably, and the labor-intensive programming is expensive,"" said Marco Huber of the journal Forschung Leben of the University of Stuttgart. Huber heads the Cognitive Production Systems Department of the Institute of Industrial Manufacture and Factory Operations.
+In a cognitive production system, the robots program themselves. They learn in a simulation environment or by imitation which work steps they have to perform. From this they then create their own execution programs. However, this self-programming only works under laboratory conditions in subareas such as object recognition.
+The aim of the work in the experimental factory is now to put these findings into practice.
+The robot learns by itself
+This has been made possible by advances in the development of artificial intelligence and its machine learning subsection, which help people deal with the amount of data generated by Industry 4.0. ""It's difficult for people to find an analytical model here,"" says Ira Effenberger, deputy director of the Center for Cyber Cognitive Intelligence at the Fraunhofer IPA.
+In addition, the sheer volume of data has another problem: not all data is good data. Production also produces data whose quality is not sufficient for machine learning. Some are noisy or complete data fields are missing because sensors are defective or faults occur in the data transmission.
+Sometimes, data also carries different timestamps because they were created by machines whose internal clocks differ slightly. ""Data is the key to machine learning,"" says Huber, ""and that's the well-known garbage in garbage out principle. In other words, if the data is incorrect, this also applies to the evaluation. Artificial intelligence can help people in the future to filter out the usable data from the ocean of raw material.
+These can then be used to teach a robot its tasks. This is made possible by advances in deep learning. This part of machine learning uses neural networks and can process large amounts of data. Here, increases in computing power, especially due to the emergence of high-performance graphics cards, greatly facilitated the use of deep learning. Technical basis are artificial neural networks.
+Artificial intelligence is created using training methods based on large amounts of data and their analysis. Using existing information and the neural network, the system links what has been learned with new content and thus further develops its knowledge. This allows the machine to make predictions and decisions and to evaluate them. They are then either confirmed or changed in a new start. The actual learning process happens independently of human intervention.
+In the Arena 2036, new production technologies are created
+Although these technologies are already being applied in different fields, the development of true cognitive robots is still in its infancy. But these robots are an important target for the industry. Werner Kraus, Head of the Robot and Assistance Systems Department of the Fraunhofer IPA, talks about the ""universal robot as a holy grail of robotics"", the role model is the iPhone with its variety of functions.
+However, the research factory Arena 2036 definitely has a special field. It is geared towards new technologies for automobile production.
+An assembly line of individual modules
+In addition to the University of Stuttgart and the Fraunhofer-Gesellschaft, manufacturers and suppliers from the automotive industry are also involved. ""2036"" designates the year in which the automobile will be 150 years old. In 1886, Carl Benz introduced the ""Benz Patent Motor Car No. 1"". That is why this year is considered the year of birth of the modern automobile with internal combustion engine.
+The impetus for founding the research factory was given by the financial crisis of 2007/2008. At that time, Daimler could not sell enough S-Class vehicles and at the same time not produce enough A-Class cars to respond to changing demand, Kraus says. Suddenly, they faced the problem of how to produce A-class vehicles on the production line for the S-Class. In addition, a larger variety of models was in demand on the market.
+Although this has changed again in the meantime, smaller quantities are now being produced by the individual models. The challenge of changing over a production line as soon as possible remains. ""The new production is complicated,"" says Effenberger, ""artificial intelligence can support that, especially through the knowledge of the system stored in the system"".
+One of the main research areas is the question of how adaptable vehicle production would look like in the future. The production of the future would process lightweight materials in mass production, but also provide numerous variants of a basic model. Therefore, the classic tape assembly is to be overcome. For this purpose, a model factory will be developed in the research factory in which new concepts will be tested.
+Fluid production (Flupro) is one of the projects of the research factory. It is being conducted under the auspices of the Fraunhofer IPA together with numerous industrial partners. At the end of 2019, the prototype of a production facility is to be completed. The assembly line consists of interconnected, reconfigurable and programmable production modules.
+
+
+
+The robot assistants used at Flupro can be programmed without IT skills: employees show the robot what to do. This imitates the process and is corrected if necessary. The manufacturing plant itself is not planned as a whole. Instead, the developers rely on the principle of swarm intelligence. Each of them optimizes their specific area, which in turn is integrated into the larger system.
+Applications that also have their place in a future cognitive production system already exist.
+Learn how to turn a screw
+So the technicians and researchers in the arena in 2036 constructed a robot that sorts screws according to whether he can process them or not. He then turned the matching screws in the right places. For this purpose, this actually simple activity had to be broken down into numerous individual steps: first of all, the robot had to find the right size screws between the numerous parts. Then he must grasp them correctly, find the right position on the workpiece and screw in the screw in the right direction.
+In the next stage of development, the robots should no longer be programmed by IT specialists, but people should simply show them what they have to do. The machines then imitate people. These in turn would teach the robots in an intuitive way and would no longer need IT skills. Matthias Reichenbach leads the team Futuretec from Daimler in the research factory. Under his aegis robot assistants are created that can be programmed by anyone.
+The screw robot is a result of this work. The device incorporates torque sensors originally developed at the German Aerospace Center (DLR) for the robot arm of the International Space Station. ""The robot feels what it is doing,"" said Reichenbach about research life. The robot takes just under ten minutes to record the process and can now work independently.
+
+
+
+Another area of application is quality assurance. ""With suchIn his job, learning systems can relieve people of their burden and help them make the final decision, ""says Effenberger, adding that data from the machine can be used to predict the quality and the machine can then be readjusted."" Sampling is sufficient for the finished parts ""In plastic injection molding or ultrasonic welding this is already possible.
+These individual applications can serve as elements of future intelligent industrial production. The challenge for research in the Arena 2036 is to turn these technological prerequisites into a functioning system.
+
+
+"

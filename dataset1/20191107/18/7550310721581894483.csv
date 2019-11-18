@@ -1,0 +1,188 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Желейный занавес
+Власть усиливает давление на Сеть, но «сувернет» выходит из-под контроля даже своих создателей
+07 Nov 2019, 18:55 by Вячеслав Половинко
+
+
+Петр Саруханов / «Новая газета»
+
+
+От редакции
+Рунет — не место для свободы 
+
+Россия обогнала Китай в международном рейтинге свободы интернета. Все хорошо, если не считать, что китайцы — последние
+
+Страна прожила первую неделю при «суверенном Рунете». Технически это почувствовали на себе разве что жители Урала, поскольку там вроде бы проходили учения и тестирование систем глубокого анализа трафика DPI, и уже 1 ноября стало известно, что Сеть при таком тестировании в какой-то момент просто «легла». Правда, IT-специалисты до сих пор недоумевают, что это вообще за таинственные учения, о которых мало что известно. Но даже если люди и структуры со статусом Дубины, Дельцов и Воеводы (см. предыдущий выпуск «Протоколов») что-то и нахимичили, то большая часть населения России этого пока не почувствовала.
+Зато очень заметно активное желание власти запустить «сувернет» как можно скорее. Тут вам спешно и максимально размыт составленный список гипотетических «угроз», при которых можно нажимать на рубильник; и активированные законопроекты об обязательной установке российского софта на смартфоны и об ограничении доли иностранного капитала в крупных интернет-компаниях. Интересно при этом, что те, кто изначально был против подобных законопроектов, перешли от стадии «отрицание» напрямую к стадии «торг»: они пытаются не остановить их прохождение, а договориться о наименее радикальных вариантах и предлагают свой компромиссный путь.
+Хитрость, как считают они сами, заключается в том, что так можно охладить пыл Охранителей, Куратора или хотя бы Номиналов, которые готовы штамповать новые безумные законопроекты, повинуясь голосу свыше. Но это так не работает: стоит согласиться на унизительные для себя переговоры с обладающим заведомо большим ресурсом противником один раз, и дальше прожорливый репрессивный аппарат отрывает от общества куски свободы еще и еще.
+На этом фоне симптоматичной выглядит новость о том, что Россия заняла одно из самых низких мест в рейтинге свободы интернета, который составляет организация Freedom House («патриотические» СМИ тут же назвали рейтинг «ангажированным» из-за того, что организация иностранная).
+Можно утешать себя тем, что мы еще не в Китае, где с контролем над интернетом все жестко, но даже братья белорусы чуть впереди нас.
+Удивительным образом выше даже Казахстан, хотя IT-эксперт Михаил Климарев, оценивая рейтинг, заявил «Новой», что по методике, которой пользовался Freedom House, Казахстану он бы баллы снизил. «Там до сих пор нет открытого реестра запрещенных ресурсов, правительство РК может блокировать любой неугодный сайт, и общественность об этом не узнает, — говорит Климарев. — Собственно, опасность «суверенного Рунета» в этом и заключается — если удастся построить такую систему, то Роскомнадзор (Дубина) сможет блокировать что угодно, и мы об этом узнаем уже постфактум».
+Но есть другое принципиальное различие: соседи пока пользователей не преследуют за неугодные твиты, а в России прецеденты уже есть. И, судя по нервической спешке Куратора и Охранителей в вопросе внедрения «сувернета», именно слов недовольства изнутри, а не гипотетических врагов снаружи, они боятся больше всего. «Сувернет» призван поставить все мысли относительно будущих политических событий под контроль Куратора.
+
+
+Вижу угрозу — жму на рубильник 
+
+Правительство составило список ситуаций, при которых Рунет будет отрезан от мировой Сети. Главную опасность упоминать никто не стал
+
+В среду, 6 ноября, стало известно, что правительство приготовило свой список того, что оно понимает под угрозами стабильной работе российского сегмента интернета и в каких случаях этот самый интернет можно отдать под централизованное управление Роскомнадзора. До этого список угроз от правительства уже выносился на публичное обсуждение на портале госуслуг, а также был подвергнут процедуре оценки регулирующего воздействия — и ее не прошел. Министерство экономического развития дало отрицательное заключение на законопроект (официально он называется «Об утверждении порядка централизованного управления сетью связи общего пользования»). Причем, как утверждает создатель сервиса статистики заблокированных IP-адресов Usher2.club Филипп Кулин, этот документ бурно обсуждался два раза.
+Минэк не устроило наличие «в проекте акта положений, вводящих избыточные обязанности, запреты ‎и ограничения для физических и юридических лиц в сфере предпринимательской и иной экономической деятельности или способствующих их введению, а также положений, приводящих к возникновению необоснованных расходов физических и юридических лиц… а также бюджетов всех уровней бюджетной системы Российской Федерации».
+Заключение ведомство Максима Орешкина вынесло в начале августа, но это не смутило авторов: Минкомсвязи (оно же Минцифры, оно же Мозговой центр) и соисполнителей в виде ФСБ и Роскомнадзора. Новый документ практически не отличается от старого. «Нам сообщают: разрабатывается незаконный норматив, против регламента работы правительства. Надо смотреть на формулировки, на то, как это будет влиять на деятельность и другие нормативы. Для этого по регламенту проекты документов должны быть размещены публично. Понятно, что в правительстве всем все равно, и документ будет принят без соответствующего обсуждения, — сокрушается Филипп Кулин. — Но меня очень расстраивает тема ОРВ и полного наплевательства на собственные законы».
+Сам список угроз устойчивой работе Рунета максимально размыт, но есть в нем один пункт, который выдержал все редакции. «Под угрозой безопасности функционирования в РФ интернета и сети связи общего пользования предлагается понимать нарушение способности сети связи противостоять попыткам несанкционированного доступа к ее техническим и программным средствам, дестабилизирующим внутренним или внешним информационным воздействиям, из-за которых может быть нарушена ее работа, а также связанным с распространением запрещенной в РФ информации, — цитирует Михаил Климарев и тут же изумляется. — Как «распространение запрещенной информации» может угрожать «безопасности функционирования»?»
+«Я правильно понял, что воззвание ИГИЛ (запрещенная в России организация. — Ред.) сможет обрушить сети?»
+Этот момент принципиально важен, отмечают специалисты, поскольку в таком случае интернет можно будет отключить практически при любой удобной ситуации. Продвигаемый правительством пункт является политическим, уверен политический географ Дмитрий Орешкин. «Рунет — это источник альтернативной информации. Независимая от Кремля информация разрушительна для этой вертикали. В виртуальном пространстве, которое создается вертикалью, мы заставили считаться с собой в Сирии, но когда переходишь в альтернативный информационный мир, то выясняется, что мы охраняем бесплодные пески, а нефтяные месторождения остались под контролем Штатов. Задача вертикального суверенного интернета объяснить, что победили мы. Поэтому власти не нужны альтернативные источники информации, и она хочет наложить лапу на все информационные ресурсы. Сам свободный интернет есть угроза властвующей вертикали, а с другой стороны — властвующая вертикаль есть прямая угроза свободному интернету», — говорит он «Новой».
+В числе других угроз устойчивой работе интернета называют кибератаки, а также DDoS-атаки на «информационные онлайн-ресурсы федеральной и региональной власти», и получается, что повод перевести интернет под «ручное управление» может появиться после любого сбоя на сайте госуслуг условной Твери.
+Принимать окончательное решение будет Роскомнадзор, и в этом главная угроза, констатирует Михаил Климарев. «Централизация управлением трафика и является главной угрозой во всех смыслах. В случае реальной атаки атакующим не нужно будет искать уязвимости в тысячах сетей. А достаточно найти одну в «центральном управлении». Это же классика», — говорит он. Но о такой возможности в своем списке правительство упоминать, конечно, не стало.
+
+
+
+Сотрудник «Лаборатории Касперского» в студии. Фото: РИА Новости
+
+
+Ломать по-русски 
+Таинственные испытания систем DPI на Урале прошли не так, как хотелось бы их авторам. Эксперты до сих пор не уверены в том, что это не мистификация
+Первыми радость от «суверенного Рунета» официально прочувствовали на себе жители Урала: о том, что тестовые испытания новой системы будут проходить в Тюмени, Екатеринбурге и Челябинске, власть сообщила загодя. Правда, как выяснила «Новая» еще во время начала испытаний, обойти систему блокировок и глубокого анализа трафика не составляло большого труда. Однако к моменту юридического старта проекта «Сувернет» выяснилось, что проблемы возникли у самих «испытателей». Издание The Bell утром 1 ноября сообщило о сбоях на каналах связи и ухудшении работы интернета при проведении ночных испытаний системы DPI. В некоторых случаях Сеть просто «легла», пишет издание со ссылкой на свои источники.
+Интеграцией оборудования занимается компания ДЦОА, сбои при проведении испытаний она отрицает. «С учениями все сложно, — говорит Филипп Кулин. — Некий вендор массово (но неясно, насколько: известно только, что география была обширной) проводил тесты своего оборудования. Вероятно, при дружеской моральной поддержке РКН. Но я не уверен, что это вообще напрямую связано с законом о ""суверенном интернете""».
+«Они сами еще не определились, что и как там должно работать, <до сих пор> нет нормативной базы».
+Поставщики услуг действительно хотят тестировать работу своих фильтров, добавляет Кулин, но из-за таинственности всего процесса при широком его пиаре со стороны Роскомнадзора создается ощущение, что «это мистификация самого РКН, чтобы была видимость бурной деятельности». «Кстати, им выгодно сказать, что все провалилось, чтобы иметь основания оттягивать сроки <введения системы>. Несмотря на то, что они два года мечтали о госфильтрах, создалось впечатление, что они немного охладели к этой идее. Вон который день вообще пиарят новый способ получать реестр», — отмечает эксперт. Речь идет об идее создания реестра распространителей «фейковых новостей» на сайте Роскомнадзора, которую активно рекламирует глава ведомства Александр Жаров и поддерживает замминистра цифрового развития Алексей Волин.
+Вероятно, проблема не столько в потере интереса к идее возможной изоляции Рунета, сколько в том, что в нынешнем техническом виде она малореализуема. Но, как утверждает The Bell, техспециалистов торопят Кураторы в администрации президента, которые не хотят проблем на ближайшей думской кампании. «К выборам нужно прийти с победной повесткой дня. Надо к каждой избирательной кампании подготовить убедительный доклад об очередных достижениях — как на съезде КПСС. Для этого остро необходим контроль не только над интернетом — шире: над всем информационным пространством. Интернет просто самый опасный, так как его труднее всего контролировать», — говорит Дмитрий Орешкин.
+Ради этой цели в АП готовы рискнуть и целостностью интернета, и тем, что теперь на «сувернет» будут вешать всех собак. 
+
+
+«Яндекс» — наш! 
+
+IT
+-компании сами идут на компромисс с властью в вопросе ограничения иностранного капитала
+
+
+
+Очередь в «Яндекс» за «умной колонкой». Фото: РИА Новости
+
+На неделе продолжилось обсуждение законопроекта, который предусматривает ограничение иностранной доли в «значимых информационных ресурсах». Номинально эту инициативу выдвинул депутат Госдумы Антон Горелкин, но ее сторонники есть и в администрации президента. Главное направление удара — «Яндекс»: Горелкин предложил ограничить долю иностранцев в акциях 20%, что заставило бы российского интернет-гиганта пересмотреть структуру своего менеджмента. И начался торг.
+В среду, 6 ноября, комиссия по связи и информационно-коммуникационным технологиям при Российском союзе промышленников и предпринимателей заявила о том, что IT-компании страны поддерживают компромиссный вариант законопроекта: он увеличивает предельную долю иностранного владения «значимыми информационными ресурсами» с 20% до 49%, и речь должна идти не обо всех акциях, а только о голосующих. Это существенно меняет ситуацию: тому же «Яндексу» не придется принципиально ничего переделывать, да и в целом законопроект становится относительно безобидным. Но компании не выступают против закона в принципе, что позволяет в будущем подумать о его ужесточении. В «Яндексе» комментариев давать не стали, в заседании комиссии компания не участвовала, но через СМИ неофициально дала понять, что лучше уж такой вариант, чем первоначальная задумка Горелкина.
+Такая склонность к компромиссу удивительна лишь на первый взгляд. Карен Казарян, ведущий аналитик Российской ассоциации электронных коммуникаций, объясняет это тем, что «большинство компаний РСПП сами живут в таких ограничениях». «Разница в том, как они прописаны: законы об иностранных инвестициях и инвестициях в стратегические предприятия вполне прозрачные, четкие, с ясными процедурами, а закон Горелкина — это какая-то шутка, — говорит Казарян. — Если этот закон будет принят в том виде, в котором он есть сейчас, то работать он точно не будет. Его работоспособность будет зависеть от решения правительства, а нынешнее правительство четко дало понять, что ему подобный закон не нравится».
+Это, однако, вовсе не означает, что у интернет-компаний есть возможность расслабиться.
+Несколько участников заседания комиссии, которым дозвонилась «Новая», публично отказались комментировать эту тему, заявив, что она «слишком чувствительная».
+«У нас так экономика построена, что все ключевые позиции находятся в руках вертикали, и если в РСПП поведут себя неправильно, то через две недели у них будут проблемы, связанные с налоговыми проверками. Так что, не дай бог ссориться с этой властью. С кем же тогда торгуется РСПП, если с правительством выступает на одной стороне? Для меня это значит, что торг идет с силовым крылом в нашей вертикали власти. В этом случае максимум, на который можно рассчитывать — почти половина акций», — объясняет нежелание бизнесменов обсуждать эту тему Дмитрий Орешкин.
+Добавим, что председателем комиссии является Андрей Кузяев, президент АО «ЭР-Телеком Холдинг» — компании, которая одна из немногих в стране имеет 100%-й контроль трафика с помощью отечественного DPI. Стоит зафиксировать этот занимательный факт.
+
+
+Это все свое, родное 
+
+Депутаты хотят запретить продавать смартфоны без российского ПО. Какие программы они имеют в виду?
+
+Госдума одобрила в первом чтении законопроект об обязательной предустановке отечественного программного обеспечения на смартфоны, поступающие в продажу в России. Законопроект был внесен представителями сразу всех думских фракций, но вообще-то такие инициативы предлагались и раньше: та же Федеральная антимонопольная служба говорила о необходимости установки российского ПО на смартфоны еще в начале года. Сами номинальные авторы говорят о защите российских интернет-компаний и о том, что это просто удобно для представителей старшего поколения.
+«Речь идет о наиболее необходимых программах для нашей страны, — пытается объяснить логику документа один из его соавторов, депутат Госдумы от «Единой России» Алексей Канаев. — Это могут быть поисковики, карты, социально значимые приложения — такие, как, например, «Госуслуги». Кроме того, это могут быть онлайн-кинотеатры. Культура потребления американской или европейской среды явно отличается от привычек российских телезрителей. Скажем, на Smart TV установлен тот пакет, на который мы повлиять не можем. Фактически производитель определяет таким образом, что должно доминировать. С нашей точки зрения это не совсем правильно. Гражданин должен иметь право выбрать, что ему удобнее использовать: российские приложения или предустановленные западные. Реализация закона позволит такой выбор сделать».
+Список приложений должно утвердить правительство, и можно предположить, что оно будет исходить из того, какие приложения установлены на их собственных смартфонах. Несколько авторов законопроекта поделились содержимым своих телефонов. Все они используют приложения «Госуслуги»; депутат Госдумы от фракции «Справедливая Россия» Олег Николаев использует также «приложения кредитных организаций, сервисы налоговой службы и службы судебных приставов»; депутат-коммунист Александр Ющенко использует мессенджер ТамТам.
+Против этой инициативы изначально выступала корпорация Apple. Компания даже грозилась уйти с российского рынка, если закон будет окончательно принят. В интервью «Медузе» авторы законопроекта и источник в Госдуме выразили сомнение, что это произойдет, однако позиция Apple была артикулирована достаточно четко: российский рынок корпорация приоритетным не считает, Россия — не Китай. Проблема, однако, в том, что тут нет ничего про рынок, считает Карен Казарян:
+«Закон надо рассматривать не через призму протекционизма, а лишь в рамках идиотизма. Закон безграмотный — и с точки зрения юридической техники, и с точки зрения логики».
+Законопроект — следствие страха перед общественным недовольством, помноженного на конъюнктурные интересы, считает политолог Аббас Галлямов. «После московских протестов, сильно напугавших режим, во власти возобладал запретительно-репрессивный тренд, — говорит он «Новой». — Этим решили воспользоваться разного рода лоббисты, в том числе и производители программного обеспечения. Свои бизнес-планы они пытаются прикрыть общегосударственными интересами и «патриотической риторикой». Расчет на то, что о долгосрочных последствиях таких шагов никто сейчас думать не станет, а сгоряча примут все что угодно. К тому же, очевидно, что и силовики тоже будут довольны. Отечественная IT-отрасль находится под их плотным контролем, а значит и они внакладе не останутся».
+
+
+
+",ru,"
+
+
+
+
+
+
+
+
+
+
+
+Jelly curtain
+Power increases pressure on the Web, but “sovereign” gets out of control even of its creators
+07 Nov 2019, 18:55 by Vyacheslav Polovinko
+
+
+Petr Sarukhanov / Novaya Gazeta
+
+
+From the editors
+Runet is not a place for freedom
+
+Russia has overtaken China in the international Internet freedom ranking. All is well, except for the fact that the Chinese are the last
+
+The country lived the first week at the “sovereign Runet”. Technically, it was only the residents of the Urals who felt this on themselves, since there seemed to be exercises and testing of DPI traffic analysis systems in depth, and already on November 1 it became known that the Network at this point simply “laid down” at some point. True, IT specialists are still perplexed by what mysterious exercises they are, of which little is known. But even if people and structures with the status of the Cudgel, Dealers and Voivode (see the previous issue of the Protocols) did something chemical, most of the Russian population has not yet felt this.
+But the active desire of the authorities to launch “sovereign” as soon as possible is very noticeable. Here, the compiled list of hypothetical “threats” in which you can click on the switch is hurriedly and maximally blurred; and activated bills on the mandatory installation of Russian software on smartphones and on limiting the share of foreign capital in large Internet companies. It is interesting at the same time that those who were initially opposed to such bills moved from the “denial” stage directly to the “bargaining” stage: they try not to stop their passage, but agree on the least radical options and offer their compromise path.
+The trick, as they themselves believe, is that it is possible to cool the ardor of the Guardians, the Curator, or at least Denominations, who are ready to stamp new crazy bills, obeying a voice from above. But it doesn’t work like this: it is worth agreeing to humiliating negotiations for oneself with an admittedly large resource enemy once, and then the gluttonous repressive apparatus tears pieces of freedom from society again and again.
+Against this background, the news that Russia has taken one of the lowest places in the Internet freedom rating made up by Freedom House looks symptomatic (the ""patriotic"" media immediately called the rating ""biased"" due to the fact that the organization is foreign).
+You can console yourself with the fact that we are not yet in China, where everything is tough with the control of the Internet, but even the Belarusians are a little ahead of us.
+Surprisingly, even Kazakhstan is higher, although IT expert Mikhail Klimarev, evaluating the rating, told Novaya Gazeta that he would have reduced points in Kazakhstan by the method used by Freedom House. “There is still no open registry of prohibited resources, the government of the Republic of Kazakhstan can block any objectionable site, and the public will not know about it,” Klimarev says. “Actually, the danger of the“ sovereign Runet ”lies in this - if it is possible to build such a system, then Roskomnadzor (Dubin) will be able to block anything, and we will learn about it after the fact.”
+But there is another fundamental difference: neighbors have not yet harassed users for objectionable tweets, but precedents already exist in Russia. And, judging by the nervous rush of the Curator and the Guardians in the matter of introducing “sovereignty,” namely the words of discontent from the inside, and not hypothetical enemies from the outside, they are most afraid. The sovereign is called upon to put all thoughts regarding future political events under the control of the Curator.
+
+
+I see a threat - I press the switch
+
+The government has compiled a list of situations in which the Runet will be cut off from the World Wide Web. Nobody began to mention the main danger
+
+On Wednesday, November 6, it became known that the government prepared its list of what it understands as threats to the stable operation of the Russian segment of the Internet and in which cases this same Internet can be placed under the central control of Roskomnadzor. Prior to this, the list of threats from the government was already put up for public discussion on the public services portal, and it was also subjected to a regulatory impact assessment procedure - and it did not go through. The Ministry of Economic Development gave a negative opinion on the bill (officially it is called “On Approving the Procedure for Centralized Management of a Public Communication Network”). Moreover, according to the creator of the service of statistics of blocked IP addresses Usher2.club Philip Culin, this document has been heatedly discussed twice.
+Minek was not satisfied with the presence of “in the draft act provisions introducing excessive duties, prohibitions and restrictions for individuals and legal entities in the field of entrepreneurial and other economic activities or facilitating their introduction, as well as provisions leading to unreasonable expenses of individuals and legal entities ... and as well as budgets of all levels of the budget system of the Russian Federation. ”
+The department of Maxim Oreshkin issued a conclusion in early August, but this did not bother the authors: the Ministry of Communications and Mass Media (aka the Ministry of Digital Communications, aka the Brain Center) and co-executors in the form of the FSB and Roskomnadzor. The new document is practically no different from the old. “We are informed: an illegal norm is being developed, against the government’s work schedule. We need to look at the wording, at how this will affect the activity and other standards. To do this, according to the regulations, draft documents must be publicly posted. It is clear that everyone doesn’t care in the government, and the document will be adopted without proper discussion, ”Philipp Kulin laments. “But the topic of ODS and complete disregard for my own laws upsets me very much.”
+The list of threats to the stable operation of the Runet itself is as blurred as possible, but there is one point in it that has withstood all editions. “Under the threat to the security of the functioning of the Internet and the public communications network in the Russian Federation, it is proposed to understand a violation of the communications network’s ability to withstand attempts to unauthorized access to its hardware and software, destabilizing internal or external information influences, which could interfere with its operation, as well as related with the distribution of information prohibited in the Russian Federation, ”Mikhail Klimarev quotes and is immediately amazed. “How can“ dissemination of prohibited information ”threaten“ operational safety ”?”
+""I correctly understood that the appeal of ISIS (a banned organization in Russia. - Ed.) Will bring down the networks?""
+This point is fundamentally important, experts say, because in this case the Internet can be turned off in almost any convenient situation. The point promoted by the government is political, I'm sure the political geographer Dmitry Oreshkin. “Runet is a source of alternative information. Independent information from the Kremlin is destructive for this vertical. In the virtual space created by the vertical, we forced ourselves to reckon with ourselves in Syria, but when you move into the alternative information world, it turns out that we are protecting barren sands, and oil fields have remained under US control. The task of the vertical sovereign Internet is to explain that we won. Therefore, the authorities do not need alternative sources of information, and it wants to put a paw on all information resources. The free Internet itself is a threat to the ruling vertical, and on the other hand, the ruling vertical is a direct threat to the free Internet, ”he says to Novaya.
+Other threats to the stable operation of the Internet are called cyber attacks, as well as DDoS attacks on “online information resources of the federal and regional authorities”, and it turns out that a reason to switch the Internet under “manual control” may appear after any failure on the Tver state service website.
+The final decision will be made by Roskomnadzor, and this is the main threat, says Mikhail Klimarev. “Centralization by traffic management is the main threat in every sense. In the event of a real attack, attackers will not need to look for vulnerabilities in thousands of networks. And it’s enough to find one in the “central administration”. This is a classic, ”he says. But of course, the government did not mention such an opportunity in its list.
+
+
+
+Kaspersky Lab employee in the studio. Photo: RIA Novosti
+
+
+Breaking in Russian
+The mysterious tests of DPI systems in the Urals did not pass as their authors would like. Experts are still not convinced that this is not a hoax
+The Ural residents were officially the first to feel the joy of the “sovereign Runet”: the authorities announced ahead of time that the test tests of the new system would be held in Tyumen, Yekaterinburg and Chelyabinsk. True, as Novaya found out even during the start of testing, it was not difficult to get around the blocking system and in-depth traffic analysis. However, at the time of the legal start of the “Sovetnet” project, it turned out that the “testers” themselves had problems. The publication of The Bell on the morning of November 1 reported a malfunction in the communication channels and the deterioration of the Internet when conducting nightly tests of the DPI system. In some cases, the Network simply ""lay down"", the newspaper writes with reference to its sources.
+The integration of equipment is carried out by the company DTsoa, it denies failures during the tests. “Everything is complicated with exercises,” says Philippe Culin. - A certain vendor massively (but it is not clear how much: it is only known that the geography was vast) conducted tests of his equipment. Probably with the friendly moral support of the ILV. But I'm not sure that this is directly related to the sovereign Internet law. ”
+""They themselves have not yet decided what and how it should work there, <till> no regulatory framework.""
+Service providers really want to test the operation of their filters, Kulin adds, but due to the mystery of the whole process with its wide PR, Roskomnadzor creates the feeling that ""this is a hoax of the ILV itself so that there is an appearance of violent activity."" “By the way, it’s beneficial for them to say that everything has failed, so that there is reason to postpone the deadlines for <introducing the system>. Despite the fact that they had been dreaming of state filters for two years, the impression was that they had cooled a little to this idea. Over that day they’re promoting a new way to get the registry, ”em expert. We are talking about the idea of creating a register of distributors of ""fake news"" on the website of Roskomnadzor, which is actively advertised by the head of the department, Alexander Zharov and supported by Deputy Minister of Digital Development Alexei Volin.
+Probably, the problem is not so much the loss of interest in the idea of a possible isolation of the Runet as the fact that in its current technical form it is unrealizable. But, according to The Bell, technical experts are rushing by curators in the presidential administration, who do not want problems in the next Duma campaign. “You need to come to the elections with a winning agenda. For each election campaign, it is necessary to prepare a convincing report on the next achievements - as at a congress of the CPSU. For this, control is urgently needed not only over the Internet - more broadly: over the entire information space. The Internet is simply the most dangerous since it is the most difficult to control, ”says Dmitry Oreshkin.
+For the sake of this goal, APs are ready to risk both the integrity of the Internet and the fact that now all dogs will be hanged on sovereign.
+
+
+Yandex is ours!
+
+IT
+companies themselves compromise with the authorities on the issue of restricting foreign capital
+
+
+
+The queue at Yandex for the smart column. Photo: RIA Novosti
+
+The week continued the discussion of the bill, which provides for the limitation of the foreign share in ""significant information resources."" Nominally this initiative was put forward by State Duma deputy Anton Gorelkin, but there are supporters in the presidential administration as well. The main direction of the strike is Yandex: Gorelkin proposed limiting the share of foreigners in shares to 20%, which would force the Russian Internet giant to reconsider its management structure. And the bargaining began.
+On Wednesday, November 6, the Commission on Communications and Information and Communication Technologies at the Russian Union of Industrialists and Entrepreneurs announced that the country's IT companies support a compromise version of the bill: it increases the marginal share of foreign ownership of “significant information resources” from 20% to 49 %, and we should not talk about all the shares, but only about the voters. This significantly changes the situation: the same Yandex will not have to fundamentally redo anything, and in general, the bill becomes relatively harmless. But companies do not oppose the law in principle, which allows us to think about toughening it in the future. They did not comment on Yandex, the company did not participate in the commission’s meeting, but through the media they unofficially made it clear that such an option is better than Gorelkin’s initial idea.
+Such a tendency to compromise is surprising only at first glance. Karen Ghazaryan, a leading analyst at the Russian Association of Electronic Communications, explains this by saying that ""most RSPP companies themselves live in such restrictions."" “The difference is how they are written: the laws on foreign investments and investments in strategic enterprises are quite transparent, clear, with clear procedures, and Gorelkin’s law is some kind of joke,” says Ghazaryan. - If this law is adopted in the form in which it is now, then it will definitely not work. Its performance will depend on the decision of the government, and the current government has made it clear that it does not like such a law. ”
+This, however, does not mean at all that Internet companies have the opportunity to relax.
+Several participants in the meeting of the commission, which dialed the ""New"", publicly refused to comment on this topic, saying that it is ""too sensitive.""
+“Our economy is built in such a way that all key positions are in the hands of the vertical, and if the RSPP behaves incorrectly, then in two weeks they will have problems associated with tax audits. So, God forbid, quarrel with this power. With whom, then, is the RSPP traded if it acts on the same side with the government? For me, this means that bargaining is going on with the power wing in our vertical of power. In this case, the maximum you can count on is almost half of the shares, ”Dmitry Oreshkin explains the reluctance of businessmen to discuss this topic.
+We add that the chairman of the commission is Andrey Kuzyaev, president of ER-Telecom Holding JSC, a company that is one of the few in the country that has 100% traffic control using domestic DPI. It is worth fixing this entertaining fact.
+
+
+This is all my own, dear
+
+Deputies want to ban selling smartphones without Russian software. What programs do they mean?
+
+The State Duma approved in the first reading a bill on the mandatory pre-installation of domestic software on smartphones that are on sale in Russia. The bill was introduced by representatives of all the Duma factions at once, but actually such initiatives were proposed earlier: the same Federal Antimonopoly Service spoke about the need to install Russian software on smartphones at the beginning of the year. Nominee authors themselves speak about the protection of Russian Internet companies and that it is simply convenient for representatives of the older generation.
+“We are talking about the most necessary programs for our country,” one of its co-authors, State Duma deputy from United Russia Alexei Kanaev is trying to explain the logic of the document. - It can be search engines, maps, socially significant applications - such as, for example, ""State services"". In addition, these can be online cinemas. The culture of consumption of the American or European environment is clearly different from the habits of Russian viewers. Let's say that the package that we cannot influence is installed on Smart TV. In fact, the manufacturer determines in this way what should dominate. From our point of view, this is not entirely correct. A citizen should have the right to choose what is more convenient for him to use: Russian applications or pre-installed Western ones. The implementation of the law will allow such a choice to be made. ”
+The list of applications should be approved by the government, and it can be assumed that it will come from what applications are installed on their own smartphones. Several authors of the bill shared the contents of their phones. All of them use government services applications; State Duma deputy from the Just Russia faction Oleg Nikolaev also uses “applications of credit organizations, tax services and bailiff services”; Communist deputy Alexander Yushchenko uses the TamTam messenger.
+This initiative was initially opposed by Apple. The company even threatened to leave the Russian market if the law was finally adopted. In an interview with Meduza, the authors of the bill and a source in the State Duma expressed doubt that this would happen, but Apple's position was articulated quite clearly: the corporation does not consider the Russian market a priority, Russia is not China. The problem, however, is that there is nothing about the market, says Karen Ghazaryan:
+“The law should not be considered through the prism of protectionism, but only within the framework of idiocy. The law is illiterate, both from the point of view of legal technology and from the point of view of logic. ”
+The bill is a consequence of fear of public discontent, multiplied by opportunistic interests, said political analyst Abbas Gallyamov. “After the Moscow protests, which greatly frightened the regime, a prohibitively repressive trend prevailed in power,” he told Novaya Gazeta. - This was decided by various lobbyists, including software manufacturers. They are trying to cover up their business plans with national interests and “patriotic rhetoric”. The expectation is that no one will now think about the long-term consequences of such steps, and anything will be accepted in haste. In addition, it is obvious that the security forces will also be pleased. The domestic IT industry is under their tight control, which means that they will not remain unpaid. ”
+
+
+
+"

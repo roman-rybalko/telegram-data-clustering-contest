@@ -1,0 +1,106 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Это лучший баг iOS 13. Его нельзя исправлять
+06 Nov 2019, 14:42 by Никита Горяинов
+Среди всех багов iOS 13 именно этот трогать нельзя. Слышишь, Apple?
+Может, это вовсе не баг, а фича, предусмотрительно оставленная каким-нибудь разработчиком.
+Некоторые с ним уже столкнулись пару раз. Не поняли, что происходит, или не заметили на ходу. А потом не смогли повторить.
+Сейчас покажу, как сделать приложение Музыка в iOS 13 реально красивым, хоть и ненадолго.
+Как включить диско-фон в Музыке
+
+
+
+▪ открываем приложение Музыка▪ запускаем любой трек, в котором есть слова (иконка кавычки слева внизу)▪ нажимаем на иконку кавычки, попадаем в режим Караоке▪ сворачиваем окно Караоке свайпом вниз, не останавливая воспроизведение▪ возвращаемся в основное меню медиатеки▪ выбираем любой трек другого исполнителя
+Заметили, что у плеера теперь появился фон? В цвет обложки альбома, между прочим. И даже анимированный: градиенты плывут по экрану. Смотрится здорово.
+Баг продолжит работать, пока не закроете приложение Музыка целиком или не откроете Караоке снова. Также он не сработает, если в треке есть слова – тогда они будут показываться вместо обложки.
+Почему так происходит?
+
+
+
+Эффект, который вы наблюдаете – это просто фон из режима Караоке, новой фичи iOS 13.
+Кто с давних пор пользуется гаджетами Apple, тот должен помнить: в iOS 8.4 вместе с запуском Apple Music фон приложения Музыка тоже стал подстраиваться под обложку альбома.
+Просто анимации с несколькими цветами не было. А позже эта фича исчезла вместе с редизайном.
+
+
+
+Имхо, Apple нужно сделать анимированные градиенты либо включаемым в Настройках, либо вообще стандартным для плеера. Смотрится здорово, точно лучше пресного и утилитарного чёрно-белого фона, используемого сейчас.
+P.S. На Android в приложении Apple Music фича не работает, там такого «бага» просто нет.
+
+👀 Читайте также. Всё по теме
+
+
+
+
+
+
+
+
+
+
+
+
+
+",ru,"
+
+
+
+
+
+
+
+
+
+
+
+This is the best bug in iOS 13. It cannot be fixed.
+06 Nov 2019, 14:42 by Nikita Goryainov
+Among all the bugs of iOS 13, this one should not be touched. Do you hear Apple?
+Maybe this is not a bug at all, but a feature prudently left by some developer.
+Some have already encountered him a couple of times. They did not understand what was happening, or did not notice on the go. And then they could not repeat.
+Now I’ll show you how to make the Music application in iOS 13 really beautiful, albeit not for long.
+How to enable disco background in Music
+
+
+
+▪ open the Music▪ application, launch any track that has words (quotation mark icon at the bottom left) ▪ click on the quotation mark icon, go to Karaoke▪ mode, turn the Karaoke window down to the bottom, without stopping playback, return to the main menu of the library, select any track of another performer
+Notice that the player now has a background? The color of the album cover, by the way. And even animated: gradients float across the screen. It looks great.
+The bug will continue to work until you close the entire Music application or open Karaoke again. Also, it will not work if there are words in the track - then they will be shown instead of the cover.
+Why is this happening?
+
+
+
+The effect you are observing is just the background from Karaoke mode, the new iOS 13 feature.
+Anyone who has been using Apple gadgets for a long time should remember: in iOS 8.4, along with the launch of Apple Music, the background of the Music application also began to adapt to the album cover.
+Just animation with several colors was not. And later this feature disappeared along with the redesign.
+
+
+
+IMHO, Apple needs to make animated gradients either included in the Settings, or generally standard for the player. It looks great, definitely better than the fresh and utilitarian black and white background used now.
+P.S. On Android in the Apple Music application the feature does not work, there is simply no such “bug” there.
+
+👀 Read also. Everything on the topic
+
+
+
+
+
+
+
+
+
+
+
+
+
+"

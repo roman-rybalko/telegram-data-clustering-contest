@@ -1,0 +1,106 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Microsoft Defender ATP Gets Advanced Hunting Capabilities, More
+06 Nov 2019, 08:00 by Sergiu Gatlan
+
+
+
+Microsoft announced today that several new Threat & Vulnerability Management (TVM) capabilities will go into public preview for Microsoft Defender ATP customers including vulnerability Assessment (VA) support for Windows Servers, advanced hunting with vulnerability data, and automated analysis of remediation on user impact.
+TVM itself was released in public preview in the Microsoft Defender ATP portal in April 2019 and it provides administrators and security operations teams with real-time endpoint detection and response (EDR) insights correlated with endpoint vulnerabilities, machine vulnerability context during incident investigations, and built-in remediation processes.
+The new TVM capabilities will ""improve time to detection and remediation, integration across platforms, and automated user-impact analysis"" according to Microsoft Principal Security PM Lead Tomer Teller.
+
+
+
+Threat & Vulnerability Management enhancements
+The full list of TVM additions Microsoft is releasing in public preview in the coming weeks, during November:
+• Vulnerability Assessment (VA) support for Windows Servers 2008 R2 and above• Integration with ServiceNow for improved IT/Security communication• Advanced hunting across vulnerabilities and security alerts• Role-based access controls (RBAC) for teams focusing on vulnerability management• Automated user-impact analysis
+While TVM can already be used for identifying, assessing, and remediating endpoint weaknesses on Windows 10 endpoints, these capabilities are not yet available for server endpoints.
+To address this, Microsoft is now expanding vulnerability assessment capabilities to also cover endpoints running Windows Servers 2008 R2, 2012 R2, 2016, and 2019.
+Once released in public preview, TVM VA will allow customers to also assess and remediate Windows Server vulnerabilities including but not limited to OS components, Microsoft apps, and third-party software.
+
+
+
+Microsoft will also add advanced hunting with vulnerability data for Microsoft Defender ATP users which will enable them to get additional security insight from correlating vulnerability and misconfiguration data with EDR signals.
+""Four new data schemata have been added to give customers the entities necessary for advanced hunting queries around vulnerabilities and misconfiguration: Vulnerability, Software, Recommendation, and Score,"" Teller said.
+For instance, this new capability allows customers to find which machines are affected by a certain vulnerability and what apps are the top most vulnerable on an organization-wide basis.
+
+
+
+Automated user-impact analysis is also going to land as a new TVM capability designed to make it easier for admins to avoid breaking critical user and business processes that might lead to productivity being impacted in the long run.
+""Through new intelligent data cloud analysis of signals from the past 30 days, Microsoft Defender ATP can now automatically determine which machines are considered safe for configuration change without impacting user productivity,"" Teller added.
+In the beginning, TVM security recommendations related to attack surface reduction rules will be the only ones that would use the newly added user impact insights, with plans to slowly expand support to more security recommendation areas.
+Slowly but steadily getting more powerful
+Redmond has been improving its cloud-powered and enterprise-focused security platform to better match the needs of security teams that want to provide their organization with ""preventative protection, post-breach detection, automated investigation, and response.""
+Microsoft bet on deep learning in early September to enhance the Microsoft Defender ATP malicious PowerShell detection feature with a new technique originally developed for natural language processing (NLP).
+In May, Microsoft announced the addition of live response capabilities to Microsoft Defender ATP which enable SecOps teams to perform system forensic analysis remotely.
+Further back, in March, the addition of tamper protection was announced, a feature designed to block changes to key security features and to prevent disabling the antimalware solution or deleting security updates.
+An overview of the Microsoft Defender ATP Threat & Vulnerability Management capabilities is available in the video embedded below.
+
+
+
+
+
+",en,"
+
+
+
+
+
+
+
+
+
+
+
+Microsoft Defender ATP Gets Advanced Hunting Capabilities, More
+06 Nov 2019, 08:00 by Sergiu Gatlan
+
+
+
+Microsoft announced today that several new Threat & Vulnerability Management (TVM) capabilities will go into public preview for Microsoft Defender ATP customers including vulnerability Assessment (VA) support for Windows Servers, advanced hunting with vulnerability data, and automated analysis of remediation on user impact.
+TVM itself was released in public preview in the Microsoft Defender ATP portal in April 2019 and it provides administrators and security operations teams with real-time endpoint detection and response (EDR) insights correlated with endpoint vulnerabilities, machine vulnerability context during incident investigations, and built-in remediation processes.
+The new TVM capabilities will ""improve time to detection and remediation, integration across platforms, and automated user-impact analysis"" according to Microsoft Principal Security PM Lead Tomer Teller.
+
+
+
+Threat & Vulnerability Management enhancements
+The full list of TVM additions Microsoft is releasing in public preview in the coming weeks, during November:
+• Vulnerability Assessment (VA) support for Windows Servers 2008 R2 and above• Integration with ServiceNow for improved IT/Security communication• Advanced hunting across vulnerabilities and security alerts• Role-based access controls (RBAC) for teams focusing on vulnerability management• Automated user-impact analysis
+While TVM can already be used for identifying, assessing, and remediating endpoint weaknesses on Windows 10 endpoints, these capabilities are not yet available for server endpoints.
+To address this, Microsoft is now expanding vulnerability assessment capabilities to also cover endpoints running Windows Servers 2008 R2, 2012 R2, 2016, and 2019.
+Once released in public preview, TVM VA will allow customers to also assess and remediate Windows Server vulnerabilities including but not limited to OS components, Microsoft apps, and third-party software.
+
+
+
+Microsoft will also add advanced hunting with vulnerability data for Microsoft Defender ATP users which will enable them to get additional security insight from correlating vulnerability and misconfiguration data with EDR signals.
+""Four new data schemata have been added to give customers the entities necessary for advanced hunting queries around vulnerabilities and misconfiguration: Vulnerability, Software, Recommendation, and Score,"" Teller said.
+For instance, this new capability allows customers to find which machines are affected by a certain vulnerability and what apps are the top most vulnerable on an organization-wide basis.
+
+
+
+Automated user-impact analysis is also going to land as a new TVM capability designed to make it easier for admins to avoid breaking critical user and business processes that might lead to productivity being impacted in the long run.
+""Through new intelligent data cloud analysis of signals from the past 30 days, Microsoft Defender ATP can now automatically determine which machines are considered safe for configuration change without impacting user productivity,"" Teller added.
+In the beginning, TVM security recommendations related to attack surface reduction rules will be the only ones that would use the newly added user impact insights, with plans to slowly expand support to more security recommendation areas.
+Slowly but steadily getting more powerful
+Redmond has been improving its cloud-powered and enterprise-focused security platform to better match the needs of security teams that want to provide their organization with ""preventative protection, post-breach detection, automated investigation, and response.""
+Microsoft bet on deep learning in early September to enhance the Microsoft Defender ATP malicious PowerShell detection feature with a new technique originally developed for natural language processing (NLP).
+In May, Microsoft announced the addition of live response capabilities to Microsoft Defender ATP which enable SecOps teams to perform system forensic analysis remotely.
+Further back, in March, the addition of tamper protection was announced, a feature designed to block changes to key security features and to prevent disabling the antimalware solution or deleting security updates.
+An overview of the Microsoft Defender ATP Threat & Vulnerability Management capabilities is available in the video embedded below.
+
+
+
+
+
+"

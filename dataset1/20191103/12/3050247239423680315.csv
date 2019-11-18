@@ -1,0 +1,130 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Analysis
+Are Stablecoin Futures Built to Last?
+03 Nov 2019, 12:58 by Andrew Singer
+OKEx, the world’s fifth-largest crypto exchange, announced on Oct. 29 plans to launch Tether (USDT) futures trading, featuring a linear contract with leverage of up to 100x. Stablecoin futures, the exchange said, offer a simpler and more efficient means to navigate the market, and could open the door for many new retail traders.
+
+
+Related: Bitfinex Cries Fraud as Crypto Capital Executive Indicted by US
+
+
+This news prompted a few murmurs. Stablecoin provider Tether, after all, has been the subject of some unsettling news stories, as Cointelegraph recently reported.
+Is USDT broken?
+Kevin Batteh, who serves as the Chamber of Digital Commerce’s chief policy advisor, a partner at Delta Strategy Group and CEO of Jenga Advisors, told Cointelegraph that stablecoins, by definition, are meant to be a stable proxy for the underlying measure of value they represent. 
+So, for example, one unit of USDT should be worth one United States dollar. The market may price in some small differential for ease of use, redemption costs, cost of carry, etc., but for something like a USD stablecoin, that differential should be marginal. Batteh added:
+“If there is great interest in a USDT futures contract that would tell me that USDT is broken and that there is a lack of trust in Tether. If a stable coin has auditable reserves backing the coin, transparent governance, etc, then there probably wouldn’t be interest in a futures contract — because there is very little risk to hedge.”
+Batteh added that the new USDT futures product would be illegal if offered to a U.S. person, because Malta-based OKEx is not a U.S.-registered exchange. 
+A Rorschach test?
+Others, however, don’t see it quite this way, particularly Asian-based traders and exchanges. Indeed, Tether, seems to present a kind of Rorschach test: Your perception of it depends on whether you look at it from an Asian or United States perspective. 
+USDT is actively traded and trusted in Asia, CEO of Seychelles-based crypto exchange CoinFLEX Mark Lamb told Cointelegraph. In the West, by contrast, trust in Tether is low. In January, CoinFLEX introduced a new stablecoin-to-stablecoin futures contract that offered Tether against Circle's USD Coin (USDC). 
+Tether is the most popular stablecoin by far, and its $4.2 billion in market capitalization ranks it fifth among all cryptocurrencies (stablecoins and nonstablecoins included). It is also among the most widely traded products in the cryptocurrency industry, with its current trading volume being the second-largest after Bitcoin, according to Coin360.
+Over the past year, USDT’s price has ranged from a low of $0.98 (Nov. 19, 2018) to a high of $1.03 (Dec. 29, 2018). By comparison, Gemini Dollar (GUSD) — a stablecoin collateralized by USD held at State Street Bank and audited every month by San Francisco accounting firm BPM to ensure its dollar reserves match up — fluctuated more over the same period, from a low of $0.98 (Dec. 14, 2018) to a high of $1.06 (Dec. 19, 2018). One might have expected the opposite to be the case if traders were seriously worried about Tether’s reserves.   
+An alternative to the banking system
+One attraction of crypto derivative exchanges is that they allow investors to sidestep the traditional banking system. At exchange BitMex, for instance, collateral can be posted in Bitcoin (BTC) as opposed to U.S. dollars. 
+In Asia, many retail customers do not have access to U.S. dollar accounts. But on stablecoin-supported crypto exchanges, they can trade Bitcoin (purchased with local fiat currency) against stablecoin dollars, without getting involved with the banking system. Lamb added:
+“Stablecoin creates something that is an alternative to an exchange using banking services. It is the bridge between the fiat world and the crypto world and it’s like a gateway for people to crypto from fiat.”
+Many U.S. and Western banks have been reluctant to work with crypto exchanges because they are unregulated, and this effectively means the exchanges can’t settle trades in USD. Timo Schlaefer, CEO of Kraken Futures, told Cointelegraph:
+""A trading platform may use stablecoins in settlement in an effort to avoid using U.S. dollars and associated payment rails.""
+Asked if his firm, which is based and regulated in the United Kingdom, would be introducing a stablecoin futures product in the future, he answered, “I would never say never, but one advantage we have as an exchange is that we are regulated, so we find it easier to settle in fiat currency.”
+At CoinFLEX, which focuses on the Asian professional retail trader market, traders can place bets with up to 20 times leverage. As noted, OKEx will allow up to 100 times leverage when its USDT Futures Contracts are launched on Nov. 14. In addition, BitMEX offers up to 100x leverage on its derivatives offerings.
+
+
+Related: Are Trading Vehicles Dragging Crypto Into Maturity?
+
+
+Leverage is a double-edged sword, though. It can be a hedge against risk, but it can also be a speculative tool, and too much speculation can upset markets. According to Batteh, who is also a former enforcement lawyer, stablecoin futures are arguably more of a speculative tool than hedge:
+“To the extent there is uncertainty around the stability of a ‘stablecoin’ then the futures contract can serve a risk management purpose. With 100x leverage, though, it seems to me they are marketing to speculators, not hedgers.”
+Lennix Lai, the financial market director at OKEx, rejected the implication that the new stablecoin futures product is inherently speculative or risky. He told Cointelegraph, however, that he would not recommend novice traders engage with such a highly leveraged product, adding that: 
+“We think a Tether-based product is definitely an easier product to understand than other futures in OKEX which are margined at its underlying [asset]. Btcusd futures mean you have to margin with BTC, for example.”
+He also emphasized that 100x is the maximum leverage that a trader can deploy, with 0.01 acting as the minimum accepted amount.  
+New records
+While Kraken Futures’ Schlaefer currently has no particular interest in stablecoin futures trading, he still expects derivatives to power the growth of the crypto markets. Over the past year, futures volumes have been gaining strongly versus spot trading. In late October, Kraken Futures set a record $368 million in trading volume over a single 24-hour period. 
+Lamb, too, anticipates that the crypto derivatives market will expand dramatically and dwarf — by twentyfold — the Bitcoin spot market by the end of 2020. It’s an evolutionary process, and derivatives will be the drivers of growth, he said. 
+But this kind of exponential growth is being held back by the lack of physical delivery, according to Lamb. Cash-settled trades, which are employed at the largest exchanges like the Chicago Mercantile Exchange, have eroded trust in the process, particularly in the prevention of index manipulation.
+This is because cash-settled futures exchanges use an index for settlements and margin calls. These indexes are constructed by tracking the average or median prices of some major spot exchanges, which are much less liquid than futures products, and that makes these cash-settled exchanges easily manipulable. Lamb added:
+“If you place an order that is big enough to move the price of one or more of these spot exchanges, you can make the index price move in your favor and benefit from the highly leveraged futures exchange at a relatively cheap cost.”
+But do other exchanges expect to introduce stablecoin derivatives in the near or distant future? Rahwa Berhe, head of digital assets at crypto exchange Bittrex, told Cointelegraph, “As the market matures, so do the needs of our customers and we at Bittrex are listening very closely.” She also added: 
+“The largest obstacle the industry faces for stablecoin derivatives to become viable is clear regulation and adequate protection for users.” 
+A necessary stopgap?
+Historically, price volatility has been one of the highest barriers inhibiting cryptocurrency acceptance. Futures trading has been seen as one hedge against this volatility. Stablecoins, too, were developed specifically to ensure the stability of a crypto’s price. 
+In a sense, stablecoin futures seem almost redundant. But given that many crypto exchanges are unregulated and lack access to Western banks, they may be using stablecoins as a proxy for U.S. dollars in settling trades. 
+As the industry matures, however, and these smaller exchanges grow and become regulated, they may gain access to U.S. dollars. At that point, it should become clear whether stablecoin futures are built to last — or are a short-term stopgap.
+
+
+",en,"
+
+
+
+
+
+
+
+
+
+
+
+Analysis
+Are Stablecoin Futures Built to Last?
+03 Nov 2019, 12:58 by Andrew Singer
+OKEx, the world’s fifth-largest crypto exchange, announced on Oct. 29 plans to launch Tether (USDT) futures trading, featuring a linear contract with leverage of up to 100x. Stablecoin futures, the exchange said, offer a simpler and more efficient means to navigate the market, and could open the door for many new retail traders.
+
+
+Related: Bitfinex Cries Fraud as Crypto Capital Executive Indicted by US
+
+
+This news prompted a few murmurs. Stablecoin provider Tether, after all, has been the subject of some unsettling news stories, as Cointelegraph recently reported.
+Is USDT broken?
+Kevin Batteh, who serves as the Chamber of Digital Commerce’s chief policy advisor, a partner at Delta Strategy Group and CEO of Jenga Advisors, told Cointelegraph that stablecoins, by definition, are meant to be a stable proxy for the underlying measure of value they represent. 
+So, for example, one unit of USDT should be worth one United States dollar. The market may price in some small differential for ease of use, redemption costs, cost of carry, etc., but for something like a USD stablecoin, that differential should be marginal. Batteh added:
+“If there is great interest in a USDT futures contract that would tell me that USDT is broken and that there is a lack of trust in Tether. If a stable coin has auditable reserves backing the coin, transparent governance, etc, then there probably wouldn’t be interest in a futures contract — because there is very little risk to hedge.”
+Batteh added that the new USDT futures product would be illegal if offered to a U.S. person, because Malta-based OKEx is not a U.S.-registered exchange. 
+A Rorschach test?
+Others, however, don’t see it quite this way, particularly Asian-based traders and exchanges. Indeed, Tether, seems to present a kind of Rorschach test: Your perception of it depends on whether you look at it from an Asian or United States perspective. 
+USDT is actively traded and trusted in Asia, CEO of Seychelles-based crypto exchange CoinFLEX Mark Lamb told Cointelegraph. In the West, by contrast, trust in Tether is low. In January, CoinFLEX introduced a new stablecoin-to-stablecoin futures contract that offered Tether against Circle's USD Coin (USDC). 
+Tether is the most popular stablecoin by far, and its $4.2 billion in market capitalization ranks it fifth among all cryptocurrencies (stablecoins and nonstablecoins included). It is also among the most widely traded products in the cryptocurrency industry, with its current trading volume being the second-largest after Bitcoin, according to Coin360.
+Over the past year, USDT’s price has ranged from a low of $0.98 (Nov. 19, 2018) to a high of $1.03 (Dec. 29, 2018). By comparison, Gemini Dollar (GUSD) — a stablecoin collateralized by USD held at State Street Bank and audited every month by San Francisco accounting firm BPM to ensure its dollar reserves match up — fluctuated more over the same period, from a low of $0.98 (Dec. 14, 2018) to a high of $1.06 (Dec. 19, 2018). One might have expected the opposite to be the case if traders were seriously worried about Tether’s reserves.   
+An alternative to the banking system
+One attraction of crypto derivative exchanges is that they allow investors to sidestep the traditional banking system. At exchange BitMex, for instance, collateral can be posted in Bitcoin (BTC) as opposed to U.S. dollars. 
+In Asia, many retail customers do not have access to U.S. dollar accounts. But on stablecoin-supported crypto exchanges, they can trade Bitcoin (purchased with local fiat currency) against stablecoin dollars, without getting involved with the banking system. Lamb added:
+“Stablecoin creates something that is an alternative to an exchange using banking services. It is the bridge between the fiat world and the crypto world and it’s like a gateway for people to crypto from fiat.”
+Many U.S. and Western banks have been reluctant to work with crypto exchanges because they are unregulated, and this effectively means the exchanges can’t settle trades in USD. Timo Schlaefer, CEO of Kraken Futures, told Cointelegraph:
+""A trading platform may use stablecoins in settlement in an effort to avoid using U.S. dollars and associated payment rails.""
+Asked if his firm, which is based and regulated in the United Kingdom, would be introducing a stablecoin futures product in the future, he answered, “I would never say never, but one advantage we have as an exchange is that we are regulated, so we find it easier to settle in fiat currency.”
+At CoinFLEX, which focuses on the Asian professional retail trader market, traders can place bets with up to 20 times leverage. As noted, OKEx will allow up to 100 times leverage when its USDT Futures Contracts are launched on Nov. 14. In addition, BitMEX offers up to 100x leverage on its derivatives offerings.
+
+
+Related: Are Trading Vehicles Dragging Crypto Into Maturity?
+
+
+Leverage is a double-edged sword, though. It can be a hedge against risk, but it can also be a speculative tool, and too much speculation can upset markets. According to Batteh, who is also a former enforcement lawyer, stablecoin futures are arguably more of a speculative tool than hedge:
+“To the extent there is uncertainty around the stability of a ‘stablecoin’ then the futures contract can serve a risk management purpose. With 100x leverage, though, it seems to me they are marketing to speculators, not hedgers.”
+Lennix Lai, the financial market director at OKEx, rejected the implication that the new stablecoin futures product is inherently speculative or risky. He told Cointelegraph, however, that he would not recommend novice traders engage with such a highly leveraged product, adding that: 
+“We think a Tether-based product is definitely an easier product to understand than other futures in OKEX which are margined at its underlying [asset]. Btcusd futures mean you have to margin with BTC, for example.”
+He also emphasized that 100x is the maximum leverage that a trader can deploy, with 0.01 acting as the minimum accepted amount.  
+New records
+While Kraken Futures’ Schlaefer currently has no particular interest in stablecoin futures trading, he still expects derivatives to power the growth of the crypto markets. Over the past year, futures volumes have been gaining strongly versus spot trading. In late October, Kraken Futures set a record $368 million in trading volume over a single 24-hour period. 
+Lamb, too, anticipates that the crypto derivatives market will expand dramatically and dwarf — by twentyfold — the Bitcoin spot market by the end of 2020. It’s an evolutionary process, and derivatives will be the drivers of growth, he said. 
+But this kind of exponential growth is being held back by the lack of physical delivery, according to Lamb. Cash-settled trades, which are employed at the largest exchanges like the Chicago Mercantile Exchange, have eroded trust in the process, particularly in the prevention of index manipulation.
+This is because cash-settled futures exchanges use an index for settlements and margin calls. These indexes are constructed by tracking the average or median prices of some major spot exchanges, which are much less liquid than futures products, and that makes these cash-settled exchanges easily manipulable. Lamb added:
+“If you place an order that is big enough to move the price of one or more of these spot exchanges, you can make the index price move in your favor and benefit from the highly leveraged futures exchange at a relatively cheap cost.”
+But do other exchanges expect to introduce stablecoin derivatives in the near or distant future? Rahwa Berhe, head of digital assets at crypto exchange Bittrex, told Cointelegraph, “As the market matures, so do the needs of our customers and we at Bittrex are listening very closely.” She also added: 
+“The largest obstacle the industry faces for stablecoin derivatives to become viable is clear regulation and adequate protection for users.” 
+A necessary stopgap?
+Historically, price volatility has been one of the highest barriers inhibiting cryptocurrency acceptance. Futures trading has been seen as one hedge against this volatility. Stablecoins, too, were developed specifically to ensure the stability of a crypto’s price. 
+In a sense, stablecoin futures seem almost redundant. But given that many crypto exchanges are unregulated and lack access to Western banks, they may be using stablecoins as a proxy for U.S. dollars in settling trades. 
+As the industry matures, however, and these smaller exchanges grow and become regulated, they may gain access to U.S. dollars. At that point, it should become clear whether stablecoin futures are built to last — or are a short-term stopgap.
+
+
+"

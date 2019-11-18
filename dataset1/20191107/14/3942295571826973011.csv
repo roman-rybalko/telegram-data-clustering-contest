@@ -1,0 +1,76 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+В первый день Pwn2Own 2019 хакеры заработали $195 000 за взлом девайсов
+07 Nov 2019, 14:46 by Екатерина Быстрова
+
+
+
+В первый день Pwn2Own, ежегодного состязания хакеров, специалистам удалось заработать в общей сложности $195 000 за обнаружение уязвимостей в телевизорах, маршрутизаторах и смартфонах. Напомним, что в этом году Pwn2Own проходит в Токио.
+Организатором этого мероприятия уже который год выступает проект Trend Micro Zero Day Initiative (ZDI). Для исследователей предусмотрены вознаграждения — выделили сумму в $750 000.
+По условиям конкурса, хакеры должны создать рабочие эксплойты для уязвимостей в 17 системах.
+«Подошёл к концу первый день Pwn2Own Токио 2019. В общей сложности за этот день мы выплатили $195 000 за 12 уязвимостей. Экспертам удалось девять раз успешно пробить защиту семи устройств, принадлежавших пяти категориям», — говорится в посте ZDI.
+
+
+
+Таким образом, Амат Кама и Ричард Чжу из команды Fluoroacetate заработали $15 000 за взлом Sony X800G TV. Специалисты использовали JavaScript-уязвимость чтения за пределами границ во встроенном браузере.
+В теории атакующий мог бы использовать эту брешь для установки шелла на устройстве. Понадобилось бы только заманить жертву на определённый вредоносный сайт.
+Помимо этого, Кама и Чжу получили $60 000 за взлом устройства Amazon Echo. Ещё $15 000 — за компрометацию Samsung Q60 TV.
+Не обошлось и без эксплойтов для смартфонов. Команда Fluoroacetate положила себе в карман $20 000 за уязвимость в Xiaomi Mi9. Согласно описанному исследователями сценарию, заманив пользователя на определённый ресурс, можно извлечь фотографии с этого смартфона.
+Ещё $30 000 Чжу и Кама получили за атаку, в ходе которой удалось украсть картинку с Samsung Galaxy S10. Для этого эксперты задействовали NFC.
+
+Читайте также
+
+
+
+
+
+
+",ru,"
+
+
+
+
+
+
+
+
+
+
+
+On the first day of Pwn2Own 2019, hackers earned $ 195,000 for hacking devices
+07 Nov 2019, 14:46 by Ekaterina Bystrova
+
+
+
+On the first day of Pwn2Own, the annual hacker contest, specialists earned a total of $ 195,000 for detecting vulnerabilities in televisions, routers and smartphones. Recall that this year Pwn2Own takes place in Tokyo.
+This year, the organizer of this event has been the Trend Micro Zero Day Initiative (ZDI). Remuneration is provided for researchers - they allocated an amount of $ 750,000.
+According to the competition, hackers must create exploits for vulnerabilities in 17 systems.
+“The first day of Pwn2Own Tokyo 2019 has come to an end. In total, we paid $ 195,000 for 12 vulnerabilities for that day. The experts succeeded nine times in successfully breaking through the protection of seven devices belonging to five categories, ”the ZDI post says.
+
+
+
+Thus, Amat Kama and Richard Zhu from the Fluoroacetate team earned $ 15,000 for hacking Sony X800G TV. Specialists used the JavaScript reading vulnerability outside borders in the built-in browser.
+In theory, an attacker could use this flaw to install a shell on the device. It would only be necessary to lure the victim to a specific malicious site.
+In addition, Kama and Zhu received $ 60,000 for hacking an Amazon Echo device. Another $ 15,000 for compromising the Samsung Q60 TV.
+Not without exploits for smartphones. Fluoroacetate team pocketed $ 20,000 for vulnerability in Xiaomi Mi9. According to the scenario described by the researchers, by luring the user to a specific resource, you can extract photos from this smartphone.
+Zhu and Kama received another $ 30,000 for the attack, during which they managed to steal a picture from the Samsung Galaxy S10. To do this, the experts involved NFC.
+
+Read also
+
+
+
+
+
+
+"

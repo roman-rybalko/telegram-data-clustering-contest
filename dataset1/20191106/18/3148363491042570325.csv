@@ -1,0 +1,68 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Facebook Reveals Another Leak: 100 Developers Had Access to User Data | Breitbart
+Facebook has revealed yet another data leak, this time stating that up to 100 third party developers still had access to users’ data through private groups.
+06 Nov 2019, 18:21 by Lucas Nolan
+Business Insider reports that over a year after Facebook cracked down on the amount of user data that third parties could access, the firm has found that some app developers still had access to people’s data through Facebook Groups. Facebook tightened its rules around user data following the Cambridge Analytica scandal, and in 2018, app developers’ access to groups was restricted to content rather than data of individuals belonging to those groups.
+Facebook’s director of platform partnerships Konstantinos Papamiltiadis published a blog post this week admitting that the new rule relating to groups had not been uniformly implemented and roughly 100 app developers still had access to group members’ personal data.
+Papamiltiadis stated in the blog post that there was “no evidence of abuse” but that at least 11 developers had accessed the data in the last 60 days. The blog post states:
+As part of our ongoing review, we recently found that some apps retained access to group member information, like names and profile pictures in connection with group activity, from the Groups API, for longer than we intended. We have since removed their access. Today we are also reaching out to roughly 100 partners who may have accessed this information since we announced restrictions to the Groups API, although it’s likely that the number that actually did is smaller and decreased over time. We know at least 11 partners accessed group members’ information in the last 60 days. Although we’ve seen no evidence of abuse, we will ask them to delete any member data they may have retained and we will conduct audits to confirm that it has been deleted.
+None of the apps were named but it was stated that they were “primarily social media management and video streaming apps, designed to make it easier for group admins to manage their groups more effectively and help members share videos to their groups.”
+Business Insider reached out to Facebook for comment but no further detail was provided.
+
+
+Lucas Nolan is a reporter for Breitbart News covering issues of free speech and online censorship. Follow him on Twitter 
+@LucasNolan 
+or email him at 
+
+lnolan@breitbart.com
+
+
+
+
+
+",en,"
+
+
+
+
+
+
+
+
+
+
+
+Facebook Reveals Another Leak: 100 Developers Had Access to User Data | Breitbart
+Facebook has revealed yet another data leak, this time stating that up to 100 third party developers still had access to users’ data through private groups.
+06 Nov 2019, 18:21 by Lucas Nolan
+Business Insider reports that over a year after Facebook cracked down on the amount of user data that third parties could access, the firm has found that some app developers still had access to people’s data through Facebook Groups. Facebook tightened its rules around user data following the Cambridge Analytica scandal, and in 2018, app developers’ access to groups was restricted to content rather than data of individuals belonging to those groups.
+Facebook’s director of platform partnerships Konstantinos Papamiltiadis published a blog post this week admitting that the new rule relating to groups had not been uniformly implemented and roughly 100 app developers still had access to group members’ personal data.
+Papamiltiadis stated in the blog post that there was “no evidence of abuse” but that at least 11 developers had accessed the data in the last 60 days. The blog post states:
+As part of our ongoing review, we recently found that some apps retained access to group member information, like names and profile pictures in connection with group activity, from the Groups API, for longer than we intended. We have since removed their access. Today we are also reaching out to roughly 100 partners who may have accessed this information since we announced restrictions to the Groups API, although it’s likely that the number that actually did is smaller and decreased over time. We know at least 11 partners accessed group members’ information in the last 60 days. Although we’ve seen no evidence of abuse, we will ask them to delete any member data they may have retained and we will conduct audits to confirm that it has been deleted.
+None of the apps were named but it was stated that they were “primarily social media management and video streaming apps, designed to make it easier for group admins to manage their groups more effectively and help members share videos to their groups.”
+Business Insider reached out to Facebook for comment but no further detail was provided.
+
+
+Lucas Nolan is a reporter for Breitbart News covering issues of free speech and online censorship. Follow him on Twitter 
+@LucasNolan 
+or email him at 
+
+lnolan@breitbart.com
+
+
+
+
+
+"

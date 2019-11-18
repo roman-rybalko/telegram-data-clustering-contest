@@ -1,0 +1,188 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+מדד הסיוט של המשקיעים בקרנות הסל
+מאז החלת רפורמת המדדים ב־2017, מדד SME60 מציג תשואות חסר לעומת שאר המדדים • מבדיקת כלכליסט עולה שהבעיה לא נובעת מאיכות החברות אלא מהמבנה שלו • רף הכניסה למדד מתבסס על שיעור אחזקות ציבור, וגורם לריבוי מניות ביומד קשות לתמחור • מחצית מהמניות שבו הן בעלות משקל מקסימלי, וכל אחת מהן יכולה לטלטל אותו • וכל שינוי בהרכב שלו מחייב את הקרנות להזרים מאות מיליוני שקלים ולנפח את מחזורי המסחר
+07 Nov 2019 by אורי טל טנא
+הרפורמה במדדי הבורסה שבוצעה בפברואר 2017 היטיבה עם מרבית מדדי המניות בתל אביב, ועם המשקיעים במוצרי המדדים. היא צמצמה את המשקל המקסימלי של כל מניה במדדים והרחיבה את מספר המניות שנכללות בכל מדד.
+כתוצאה הועבר כסף שתעודות הסל החזיקו במניות הגדולות, בעיקר בטבע, פריגו, הפועלים ולאומי, למניות הבינוניות והקטנות - העברה שתרמה לסחירות במניות. בנוסף, הקטנת משקל החברות במדדים המובילים צמצמה את הנזק שטבע ופריגו גרמו למדדי ת""א־35 ות""א־125.
+
+
+
+גם המשקל המקסימלי הנמוך במדד ת""א־90, שנקבע ל־2% (ועמד על 10% כשעוד היה זה מדד ת""א־75), הקטין במעט את התנודתיות של המדד, ויצר אלטרנטיבת השקעה טובה בחברות ישראליות. אך לא הכל טוב. הרפורמה יצרה גם מדד חולה אחד, SME60, שמבנה בעייתי שלו מוביל לתשואת חסר שיטתית למשקיעים עליו בקרנות הסל.
+מדד SME60 מכיל את 60 המניות עם שווי אחזקות הציבור הגבוה ביותר מבין מניות מאגר תמר שלא נכללות בת""א־125 (מאגר תמר הוא קבוצת מניות שעומדות בתנאים בסיסיים הנדרשים לצורך שייכות למדדים). מאז יישום הרפורמה ועד סוף אוקטובר איבד מדד SME60 יותר מ־27% מערכו, זאת לעומת ת""א־125 שעלה ביותר מ־28% באותה תקופה. וכפי הנראה, זה לא מקרי.
+כלכליסט ערך בדיקת השערות סטטיסטית, שבמסגרתה נלקח הפרש תשואות היומיות שבין שני המדדים לאורך התקופה (661 ימי מסחר), וחולק ממוצע תשואות היתר היומיות של מדד ת""א־125 יחסית למדד SME60 בסטיית התקן של המדגם. התקבל אומדן למובהקות התוצאה (P value) של 3.48.
+המשמעות היא שאם המדגם היה מתקבל מתצפיות שמתפלגות נורמלית, הסיכוי שתשואת החסר של מדד SME60 יחסית לת""א־125 הוא מקרי נמוך מ־1 ל־3,000. אבל סטטיסטיקה, כרגיל, נוטה להטעות, ולכן נדרש ניתוח זהיר יותר.
+ראשית, חשוב היה לנטרל את השפעת הרפורמה על המדד. עם יישום הרפורמה מרבית המניות במדד SME60 ובמדד הצמיחה זכו לביקושים גבוהים יחסית מתעודות הסל.
+היערכות השוק לביקושים אלה ניפחה את מחיר המניות בשני מדדים אלה ערב יישום הרפורמה, מניות אלו נמכרו לאחר יישומה, ותשואת שני המדדים נפגעה בחודשים הראשונים שלאחר השלמתה. כדי לנטרל את האפקט הזה נבחנה גם תשואת היתר של ת""א־125 לעומת SME60 מתחילת 2018 ועד סוף אוקטובר השנה.
+ניתוח זה יוצא מההנחה שעיוות בתמחור המניות, שנבע מביקוש חד־פעמי של תעודות הסל, התבטל לחלוטין בתוך עשרה וחצי חודשים. גם במדגם זה מתקבל P value של 2.86. כלומר, הסיכוי שתשואת החסר של מדד SME60 לעומת מדד ת""א־125 היא מקרית הוא 1 ל־476.
+
+
+מנכ""ל הבורסה איתי בן זאב. הבורסה יכולה לתקן את העיוות צילום: תומי הרפז
+
+
+השפעת המשקל הגבוה על המדדים
+
+בעיה נוספת של הניתוח עלולה לנבוע מכך שהשינויים במדדי המניות לא מתפלגים נורמלית. אחת הסיבות לכך היא משקל גבוה של מניות מסוימות בעלות השפעה גדולה על המדד, בגלל המתאם ביניהן והתנודתיות הגבוהה שלהן.
+במדד ת""א־125 טבע, פריגו, ובתקופה מסוימת גם מיילן יצרו עיוות, שנבע מההשפעה הגדולה של המשבר בתחום התרופות הגנריות בארה""ב על מחיר המניות הללו. אלה היוו בחלק מהתקופה 15% מהמשקל הכולל של ת""א־125.
+שלוש המניות הציגו תשואה שלילית מהותית, שצמצמה את הפער בין מדד ת""א־125 ובין מדד SME60, ולכן הן לא פוגעות בטענה שתשואת החסר של SME60 אינה מקרית, או במילים אחרות, החולשה של מדד SME60 נובעת מכללי המדד.
+מאז הרפורמה, מדד ת""א־90 הציג תשואת יתר יחסית למדד ת""א־125, שהציג בתורו תשואת יתר יחסית למדד ת""א־35.
+המנה בין פערי התשואות לסטיית התקן של המדגם במדדים אלו מקבלת P value של 2.0 ו־2.2 בהתאמה, אך בניגוד לפער בין מדד ת""א־125 ומדד SME60 לא ניתן לומר במקרים אלו שמדובר בתשואת יתר שיטתית; זאת מכיוון שחלקה הגדול נובע מהשילוב של מניות טבע, פריגו ומיילן שנכללו בת""א־125 (מיילן רק חלק מהזמן) ולא בת""א־90, ושהמשקל היחסי שלהן (21%) במדד ת""א־35 היה גבוה ממשקלן היחסי (15%) בת""א־125.
+לכן לא ניתן לקבוע שיש יתרון שיטתי בהשקעה בת""א־90 על פני ת""א־125 או בהשקעה בת""א־125 על פני ת""א־35.
+תנאי הכניסה ל־SME60 דורשים שיעור אחזקות ציבור של יותר מ־30% למניות שנכללות במאגר תמר ושל יותר מ־35% למניות שלא נכללות בתמר. זהו המדד היחיד בבורסה שהכניסה אליו והיציאה ממנו נקבעות לפי שווי אחזקות הציבור ולא לפי שווי השוק הכולל. כתוצאה, המדד מכיל מניות רבות, מרביתן ממגזר הביומד, שבהן שיעור אחזקות הציבור גבוה מאוד. זהו גם הסקטור שאחראי לחלק ניכר מתשואת החסר של המדד.
+הבעיה השנייה של SME60 היא מגבלת המשקל המקסימלית 2% למניה במדד. היא אמנם זהה לזו שבמדד ת""א־90, אך חלה על 60 מניות בלבד ולא על 90. לפיכך, ל־30 מתוך 57 המניות שנכללות כעת במדד (אחרי מחיקתן מהמסחר באוגוסט של חברת תוספי התזונה מעברות, חברת המיגון לרכב פוינטר וחברת הפתרונות הבלתי מאוישים אירונאוטיקס) יש משקל מקסימלי במדד.
+משקל מניה במדד בישראל נקבע לפי המכפלה של כמות המניות הרשומה (ממ""מ) כפול מחיר המניה כפול מדרגת אחזקות הציבור. השימוש במדרגות של אחזקות ציבור נועד לצמצם את תנודות המשקל, שמשתנה רק כשהמניה עוברת ממדרגה אחת לשנייה של אחזקות ציבור, ולא בעקבות כל שינוי קל בשיעור אחזקות הציבור.
+במועד הקובע לכל עדכון משקל חודשי, הבורסה מחשבת את משקל המניה לפי נוסחת המכפלה, והמשקל של כל מניה במדד שבו אין מגבלת משקל הוא התוצאה המתקבלת עבור אותה מניה, חלקי סכום המכפלות עבור כל מניות המדד.
+כשיש מגבלת משקל במדד, הבורסה מגבילה את משקל המניות באמצעות הכפלת השווי המתקבל עבורן בפקטור משקל שערכו נע בין אפס לאחד. פקטור המשקל נקבע כך שהמשקל היחסי של אותה מניה במדד יהיה זהה למשקל המקסימלי באותו מדד.
+עדכון המשקל החודשי נערך בשלב נעילת המסחר של יום חמישי הראשון בכל חודש. המועד הקובע שלפיו מחושב המשקל של כל מניה במדד הוא יום חמישי, שלושה שבועות לפני מועד העדכון החודשי. כך בכל חודש מחושב מחדש פקטור משקל לכמחצית ממניות מדד SME60, שמהוות 60% מהמשקל הכולל של מניות המדד. התאמות פקטור המשקל מובילות את קרנות הסל להזרים ביקוש או היצע לאותן מניות.
+ריבוי ביקושים והיצעים גדולים יוצרים עיוות במסחר במניות, ופוגעים במשקיעים בקרנות הסל על המדד. בהתאמות של פקטור המשקל הביקושים מגיעים למניות שמשקלן במדד ירד מתחת למשקל המקסימלי, ואילו ההיצעים מגיעים למניות שמשקלן מעליו.
+לכן, להיצעים יש השפעה שלילית גדולה יותר על המדד מאשר ההשפעה החיובית של הביקושים, והם גורמים, בממוצע, לירידה קלה במדד בעדכונים החודשיים.
+
+
+הבורסה בתל אביב צילום: בלומברג
+
+הבעיה מתעצמת כי שמונה ממניות SME60 שלהן יש פקטור משקל הן מסקטור הביומד, מניות חלום בסקטור שקשה יותר למשקיעים לתמחר, ולכן השפעת התאמת פקטור המשקל על מחירן גבוהה עוד יותר. התאמות פקטור משקל פוגעות גם במדדים אחרים, אך לרוב השפעתן זניחה.
+במדדי ת""א־35 ות""א־125 ההתאמה מתבצעת במניות עם סחירות גבוהה (טבע, פריגו, נייס, בנק הפועלים, בנק לאומי, איי.אף.אף, אורמת ולייבפרסון), ולכן השפעתה על מחירי מניות אלו נמוכה מאוד. גם במדד ת""א־90 ההתאמה מתבצעת במניות עם סחירות גבוהה יחסית והשפעתה עליו נמוכה.
+במדד צמיחה רק לשמונה מניות יש פקטור משקל, ומשקלן הכולל הוא 16%, ולכן השפעת התאמות פקטור המשקל עליו נמוכה.
+
+אי.בי.אי טכנולוגיה עילית כדוגמה לעיוות
+
+למדד SME60 תיכנס היום מניית קרן ההשקעות אי.בי.אי טכנולוגיה עילית. קרן זו, שגייסה 400 מיליון שקל להשקעה בחברות הזנק ישראליות, זכאית להגנה מהמדינה על הפסדים של עד 20% שינבעו לה מההשקעות שיושלמו עד חמש שנים מתחילת המסחר בקרן, אך לא יותר מ־50 מיליון שקל. היקף ההשקעות הנוכחי של הקרן בחברות הזנק נמוך, ועיקר נכסיה הוא מניות טכנולוגיה ואג""ח ישראליות.
+כניסת המניה למדדים נדחתה עד כה בגלל היעדר תיק השקעות מהותי לקרן. ההודעה על הכנסת המניה למדדים באה בהפתעה ומחיר המניה זינק ב־11% בעקבותיה. שווי נכסי החברה, שעומד על 435 מיליון שקל, מבוסס על מחיר של 107.6 אגורות למניה בעת כניסתה למסחר לפני כשנה, ונסחרת כעת במחיר של 89 אגורות. זאת בגלל חשש של משקיעים לגבי הצלחת ההשקעות שהקרן מתחילה לבצע ולאור דמי הניהול שהיא גובה.
+היום, בשלב הנעילה, קרנות הסל יזרימו לאי.בי.אי ביקוש של כ־9 מיליון שקל – גבוה פי 100 ממחזור המסחר היומי הממוצע במניה מתחילת השנה. משקיעים מוסדיים רבים מחזיקים במניה זו, וסביר להניח שאם הביקוש שיזרימו קרנות הסל יוביל להשפעה מהותית על מחיר המניה, חלקם ינצלו זאת כדי למכור אותה, ובכך ימתנו את השפעת הרכישה על מחירה.
+גם למניה זו יהיה פקטור משקל ב־SME60 שיגביל את משקלה במדד ל־2%. גם במקרה זה השילוב של ההתאמה החודשית של פקטור המשקל ושל הסחירות הנמוכה באי.בי.אי עלול לגרום להגברת העיוותים הפוגעים במדד SME60.
+ב־5 בדצמבר צפויה להיכנס למדד SME60 גם מניית פוורפליט, זאת במסגרת המסלול המהיר למניות חדשות. הסחירות במניה זו, בישראל ובארה""ב יחד, גבוהה יותר מזו של אי.בי.אי ועומדת בממוצע על יותר ממיליון שקל ביום בחודש האחרון, ולכן השפעת הכניסה למדד על מחיר המניה צפויה להיות נמוכה.
+קרנות הסל המשקיעות ב־SME60 מנהלות 400 מיליון שקל, סכום שמהווה מחצית מהכסף שהושקע בתעודות סל על המדד עם יישום הרפורמה במדדים.
+הבורסה מודעת לבעייתיות שמובילה לתשואת חסר למשקיעים בקרנות סל אלה, וסביר להניח שהיא תבצע תיקונים משמעותיים בכלליו בעתיד הקרוב. עד ביצועם של תיקונים אלו מומלץ לציבור להימנע מלהחזיק קרנות סל המשקיעות במדד זה.
+
+המיזוג של כלכלית י־ם לתוך מבני תעשייה
+
+עיוות נוסף נוצר לבורסה עם מיזוגה השבוע של מניית חברת הנדל""ן כלכלית ירושלים לתוך החברה־הבת מבני תעשייה. כל מי שהחזיק במניית כלכלית קיבל 1.935 מניות של מבני תעשייה. מיזוג מסוג זה, שבו התמורה היא במניות ולא במזומן, מקשה על הבורסה.
+על פי הכללים, בשלב הראשון מניית כלכלית ירושלים יוצאת מהמדדים וקרנות הסל נאלצות למכור אותה או את מניות מבני תעשייה שמתקבלות במקומה.
+המשקל של מניית מבני תעשייה במדדים לא משתנה באותו שלב, והוא יעלה ויכלול את השפעת המניות שנרשמו למסחר בעקבות המיזוג רק בעדכון המשקל החודשי הבא. כלומר, יש פער זמן של כחודש בין ההשפעה של מחיקת המניה המתמזגת ובין השפעת המניות החדשות שמתקבלות כתוצאה מהמיזוג.
+התוצאה היתה שקרנות הסל נאלצו למכור ממניית כלכלית ירושלים ב־180 מיליון שקל ביום חמישי שעבר, והן יצטרכו לרכוש את מניית מבני תעשייה ב־150 מיליון שקל ב־5 בדצמבר. עיוות זה צפוי לגרום לקרנות הסל למכור את מניית כלכלית ירושלים בזול, ומנגד לרכוש את מניית מבני תעשייה ביוקר, ובכך ייפגעו המשקיעים בהן.
+ב־30 באוקטובר פורסם ב""כלכליסט"" שהבורסה צפויה לפעול לפי הכללים ולא תמנע את ההיצע במניית כלכלית ירושלים. באותו יום, לאחר סיום המסחר, הבורסה פרסמה שלמחרת יאופס פקטור המשקל במניית כלכלית ירושלים, ולכן קרנות הסל נאלצו למכור את המניה באותו מועד.
+באותם שני ימי מסחר איבדה מניית כלכלית ירושלים 5.2% מערכה. ביום ראשון מחיר המניה תיקן ב־3.5%, אך קרנות הסל לא נהנו מתיקון זה כי משקל המניה במדדים כבר היה אפס. ב־5 בדצמבר, כאמור, צפוי עיוות נוסף שינבע מהתאמת הממ""מ ומדרגת אחזקות הציבור במניית מבני תעשייה, שתוביל לביקוש של 150 מיליון שקל שיזרימו קרנות הסל למניה.
+עיקר הנזק מעיוות זה מגיע למחזיקי קרנות הסל על מדדי ת""א־90, ת""א־125, ת""א־נדל""ן וסקטור באלאנס. גם מנהלי קרנות הסל סופגים נזק קטן הנובע מעמלות הקנייה והמכירה שהם משלמים.
+הבורסה יכלה לצמצם את העיוות, למנוע את ההיצע במניית כלכלית ירושלים ולהחליפו בהיצע קל של 30 מיליון שקל למניית מבני תעשייה שהיה מתבצע במועד הוצאת מניית כלכלית ירושלים מהמדדים, ולמנוע את הביקוש למניית מבני תעשייה בחודש הבא.
+הבעיה היא שלצורך צמצום העיוות היה צריך לקבוע ממ""מ מיוחד למניית מבני תעשייה, שיהיה שונה מאוד מכמות המניות הרשומה של החברה, ולקבוע פקטור משקל מיוחד למניה ושונה לכל אחד מהמדדים שבהם היא נסחרת. כך, המשקל של מניית מבני תעשייה במדדים, במועד מחיקת מניית כלכלית ירושלים מהמדדים, היה זהה למשקל הצפוי למניה לאחר הוספת המניות החדשות שמתקבלות מהמיזוג.
+לוועדת המדדים בבורסה יש סמכות לבצע את כל ההתאמות האלו, אך הן יוצרות תקופה של כחודש שבה הפרמטרים שלפיהם ייקבע המשקל של מבני תעשייה במדדים יהיו מותאמים אד־הוק לצורכי הבורסה, והם עלולים להטעות את המשקיעים שיחשבו בעצמם את משקל המניות במדדים. כלומר, התיקון היה צריך להיות מעין פלסטר לא אסתטי שמהווה חריגה מכללי המדדים השוטפים.
+הבורסה בחרה שלא להתערב ולא למנוע את העיוות. התוצאה היא מחזור מסחר של לפחות חצי מיליארד שקל. מחזור המסחר מורכב ממכירה ב־180 מיליון שקל של מניית כלכלית ירושלים ומרכישה של 180 מיליון שקל של יתר מניות המדדים שבהם נכללת המניה, לאור עליית המשקל היחסי של כל מניות המדדים עם איפוס משקלה במדדים. מכירות ורכישות אלו בוצעו ביום חמישי שעבר.
+בנוסף, צפוי ביקוש של 150 מיליון שקל למניית מבני תעשייה בדצמבר. סביר שבדצמבר יהיה גם היצע מצרפי לחלק ממניות המדדים, אך היקפו תלוי בגורמים נוספים. בגלל גודל העיוות היה נכון שהבורסה תמנע אותו, למרות חוסר האסתטיות של הפתרון למניעת העיוות.
+
+מבני תעשייה בדרך למדד ת""א־35
+
+שווי השוק של מבני תעשייה לאחר השלמת המיזוג צפוי לעמוד על 6 מיליארד שקל. עם כניסתה הצפויה למדד ת""א־35 בפברואר, ויציאתה ממדד ת""א־90, קרנות הסל צפויות להזרים למניה ביקושים של 80 מיליון שקל. במקביל, מניית אופקו צפויה לצאת מת""א־35 ולעבור לת""א־90.
+אופקו נכנסה לת""א־35 באוקטובר 2013 במחיר של 36.8 שקל למניה, מאז היא שרפה שווי רב למשקיעים במדד, והיא צפויה לצאת ממנו במחיר של 5.2 שקלים למניה אחרי שאיבדה 86% משווייה. בעקבות המעבר הצפוי של אופקו למדד ת""א־90 לא צפוי למניה ביקוש או היצע מהותי.
+מדד ת""א־90 מכיל כעת 93 מניות. אם מנייתה של רשת הקמעונאות יוחננוף תתחיל להיסחר עד 13 בנובמבר, היא תיכנס למדד במסגרת המסלול המהיר בינואר ותהיה המניה ה־94 בו. אם תחילת המסחר בה תהיה מאוחרת יותר, יוחננוף תיכנס למדד במסלול המהיר בפברואר, ולא תיכלל בחישוב של עדכון הרכב המדדים הרגיל (ולכן בפברואר מספר המניות במדד יהיה 91). בעדכון הרכב המדדים בפברואר מניית ערד תיכנס בוודאות למדדי ת""א־90 ות""א־125.
+המניות של חברת הביומד קומפיוג'ן, יצרנית המזון נטו מלינדה והחברה היזמית ויתניה צפויות להתמודד על מקומות נוספים שכנראה יתפנו במדדים אלה.
+מנגד, המניות של חברת הביומד אנלייבקס, חברת האחזקות מבטח שמיר, בנק מוניציפל, חברת התעשיות קליל ורשת הקמעונאות ויקטורי מצויות בסיכון גדול ליציאה ממדדי ת""א־90 ות""א־125. גם המניות של חברת הביומד קמהדע, חברת ניכיון הצ'קים נאוי וחברת ההשקעות צור (הבעלים של ביטוח ישיר) עלולות לצאת ממדדים אלו.
+
+הכותב הוא כלכלן בחברת הייטק
+
+
+
+",iw,"
+
+
+
+
+
+
+
+
+
+
+
+Index of investors' nightmare in ETFs
+Since the index reform was implemented in 2017, the SME60 index shows a lack of returns compared to the other indices • The Calcalist test shows that the problem does not stem from the quality of the companies but from its structure. • The entry threshold is based on a public holding rate, which causes a multiplicity of stocks in a difficult price pricing Maximum weight, and each can shake it • Any change in its composition requires the funds to raise hundreds of millions of shekels and inflate trading cycles
+07 Nov 2019 by Uri Tal Tana
+The stock exchange index reform that was carried out in February 2017 has benefited most of Tel Aviv's stock indices and investors in index products. It reduced the maximum weight of each share in the indices and expanded the number of shares included in each index.
+As a result, money that the ETFs held in the large stocks, especially in nature, Perrigo, Hapoalim and Leumi, was transferred to the medium and small stocks - a transfer that contributed to stock tradability. In addition, reducing the weight of the companies in the leading indices reduced the damage that was drowned and Frigo caused TA-35 and TA-125 indices.
+
+
+
+The low maximum weight in the TA-90 index, which was set at 2% (and stood at 10% when it was still the TA-75 index), also slightly reduced the volatility of the index, creating a good investment alternative for Israeli companies. But not everything is good. The reform has also created one sick measure, SME60, whose problematic structure leads to a systematic lackluster return on investors in ETFs.
+The SME60 index contains the 60 shares with the highest public holding value of the Tamar stock not included in TA-125 (the Tamar stock is a group of shares that meet the basic conditions required to belong to the indices). From the implementation of the reform until the end of October, the SME60 index has lost more than 27% of its value, compared with TA-125, which increased by more than 28% during that period. And apparently, it's not accidental.
+Calcalist conducted a statistical hypothesis test, in which the daily yield differential between the two indices over the period (661 trading days) was taken, and the average daily yield of the TA-125 index relative to the SME60 index was divided by the standard deviation of the sample. Of 3.48.
+This means that if the sample were obtained from normal distributed observations, the probability that the SME60 index relative to TA-125 is underestimated is less than 1 to 3,000. But statistics, as usual, tend to be misleading, so more careful analysis is required.
+First, it was important to counteract the impact of the reform on the index. With the implementation of most shares in the SME60 index and the growth index, demand was relatively high from the ETFs.
+The market's preparedness for these demands inflated the price of the shares in these two indices prior to the implementation of the reform, these shares were sold after its implementation, and the yield of the two indices hit in the first months after its completion. In order to counteract this effect, the TA-125 overhaul compared to the SME60 from early 2018 to the end of October this year was also examined.
+This analysis assumes that stock price distortion, which resulted from a one-time demand for ETFs, was completely eliminated within ten and a half months. In this sample too, a P value of 2.86 is obtained. That is, the chance that the SME60 index versus TA-125 index yield is accidental is 1 to 476.
+
+
+TASE CEO Itai Ben Zeev. Tortoise can correct the distortion Photo: Tommy Harpaz
+
+
+The effect of the high weight on the indices
+
+Another problem with the analysis may be that the changes in stock indices are not normally distributed. One of the reasons is the high weight of certain stocks that have a big impact on the index, because of their correlation and high volatility.
+In the TA-125 index, Perrigo, and at some point Milne also created a distortion, which was due to the large impact of the US generic drug crisis on the price of these shares. These accounted for 15% of the total weight of TA-125 during the period.
+The three stocks presented a material negative return, which narrowed the gap between the TA-125 index and the SME60 index, so they did not hurt the argument that the SME60 underperformance was not accidental, or in other words, the weakness of the SME60 index was due to the index rules.
+Since the reform, the TA-90 index has outperformed the TA-125 index, which in turn has outperformed the TA-35 index.
+The difference between the yield gaps and the standard deviation of the sample in these indices is given a P value of 2.0 and 2.2, respectively, but in contrast to the gap between the TA-125 index and the SME60 index, it is not possible to say in these cases that this is a systematic yield; this is because the large share is due to the combination of stocks. Teva, Perrigo and Milne included in TA-125 (Milne only part of the time) and not TA-90, and whose relative weight (21%) in the TA-35 index was higher than their relative weight (15%) in TA-125.
+Therefore, it is not possible to determine that there is a systematic advantage to investing in TA-90 over TA-125 or investing in TA-125 over TA-35.
+Conditions of entry into the SME60 require a public holding rate of more than 30% for shares included in the Tamar stock and more than 35% for shares not included in Tamar. This is the only index on the stock exchange that you enter and exit from is determined by the value of the public holding and not by the total market value. As a result, the index contains many stocks, most of them from the biomed sector, where the share of the public is very high. It is also the sector that is responsible for much of the index's underperforming yield.
+The second problem of SME60 is the maximum weight limit of 2% per share in the index. It is identical to the one in the TA-90 index, but only applies to 60 stocks and not 90. Therefore, 30 of the 57 stocks are currently included in the index (after the August delisting of the Nutrition Supplements Company Transfers, Pointer Car Protector and Non-Solutions Company). Manned aeronautics) has a maximum weight in the index.
+The weight of a share in the Israeli index is determined by the multiple of the number of shares (mm) multiplied by the price of the share twice the size of the public holding. The use of the staircase of public holdings is intended to reduce the fluctuation of weight, which changes only when the stock moves from one degree to another of public holdings, and does not follow any change. Easy in public holding rate.
+At the determining date for each monthly weight update, the Stock Exchange calculates the weight of the stock according to the multiplication formula, and the weight of each share in the index where there is no weight limit is the result obtained for the same share, divided by the sum of the multiples for all index shares.
+When there is a weight limit in the index, the stock exchange limits the weight of the shares by multiplying the value obtained for them by a weight factor whose value ranges from zero to one. The weight factor is determined so that the relative weight of the same stock in the index will be the same as the maximum weight in the same index.
+The monthly weight update was conducted during the first Thursday trading session of each month. The effective date by which the weight of each stock is calculated is Thursday, three weeks before the monthly update date. Thus, each month a weight factor is recalculated to about half of the SME60 index stock, which accounts for 60% of the total weight of the index stock. The weight factor adjustments lead the ETFs to stream demand or supply to those stocks.
+Large demand and supply create distortions in stock trading and hurt investors in the ETFs. By adjusting the weight factor, demand reaches stocks whose weight in the index has fallen below the maximum weight, while offerings are reaching stocks whose weight is above it.
+Therefore, supply has a greater negative impact on the index than the positive effect of demand, and on average causes a slight decrease in the index in the monthly updates.
+
+
+Tel Aviv Stock Exchange Photo: Bloomberg
+
+The problem is compounded by the fact that eight of their SME60 stocks have a weight factor from the biomedical sector, dream stocks in a sector that are more difficult for investors to price, and therefore the effect of adjusting the weight factor on their price is even higher. Weight factor adjustments also harm other metrics, but most often their impact is negligible.
+In the TA-35 and TA-125 indices, adjustments are made in high tradable stocks (Teva, Perrigo, NICE, Bank Hapoalim, Leumi Bank, AFF, Ormat and Leiferson), so its effect on these share prices is very low. In the TA-90 index, too, the adjustment is made on stocks with relatively high marketability and its effect on it.
+In the growth index only eight stocks have a weight factor, and their total weight is 16%, so the effect of weight factor adjustments on it is low.
+
+IBI high technology as an example of distortion
+
+The SME60 Index will today enter the stock of the IBI High Technology. This fund, which raised NIS 400 million to invest in Israeli start-ups, is entitled to protection from the state from losses of up to 20% that would result from investments completed up to five years from the beginning of the fund's trading, but not more than NIS 50 million. The fund's current volume of investments in start-ups is low, and most of its assets are Israeli technology stocks and bonds.
+The stock's entry into the index has so far been postponed due to a lack of a substantial portfolio of funds for the fund. The announcement of the stock's entry into the index came as a surprise and the share price soared 11%. The value of the company's assets, which stands at NIS 435 million, is based on the price of 107.6 pence per share when it entered the trade about a year ago, and is now trading at a price of 89 penny. This is due to concerns from investors about the success of the investments the fund is starting to make and in light of the management fees it charges.
+Today, at the closing stage, the ETFs will supply NIS 9 million in demand - 100 times higher than the average daily trading volume per share since the beginning of the year. Many institutional investors own this stock and it is likely that if the demand for ETFs will have a material effect on the share price, some will take advantage of it to sell it, thereby mitigating the effect of the purchase on price.
+This share will also have a weight factor in the SME60 that will limit its weight in the index to 2%. In this case, too, the combination of the monthly weight factor adjustment and the low marketability of the IBI may result in increased distortions affecting the SME60 index.
+On December 5, Powerfleet stock is expected to enter the SME60 index as well, as part of the fast track to new shares. The tradability of this stock, in Israel and the US together, is higher than that of the IBI and averages over NIS 1 million a day in the past month, so the effect of entering the index on the share price is expected to be low.
+The ETFs investing in SME60 manage NIS 400 million, an amount that is half of the money invested in index-linked ETFs with the implementation of index reform.
+The Stock Exchange is aware of the problem that leads to a lack of return for investors in these ETFs, and is likely to make significant revisions to its rules in the near future. Until these amendments are implemented, it is recommended that the public refrain from holding ETFs investing in this index.
+
+The merger of YM into industrial buildings
+
+Another distortion was created on the stock exchange with this week's merger of the Jerusalem-based economic real estate company into the subsidiary of industrial buildings. Everyone who owned the economic stock received 1,935 shares of industrial buildings. This kind of merger, where the consideration is in shares and not cash, makes it difficult for the stock exchange.
+According to the rules, in the first stage, the Jerusalem economic stock exits the indices and the basket funds are forced to sell it or the shares of industrial buildings that are replaced.
+The weight of the shares of industrial buildings in the indices does not change at that stage, and will increase and include the effect of the shares registered for trading following the merger only in the next monthly weight update. That is, there is a time lag of about a month between the effect of the merging stock delisting and the effect of the new shares that are received as a result of the merger.
+The result was that the ETFs had to sell NIS 180 million from the Jerusalem Economic Share last Thursday, and would have to buy NIS 150 million on December 5. This distortion is expected to cause the ETFs to sell the Jerusalem Economy share on the cheap and, on the other hand, to purchase the stock of industrial buildings dearly, thereby hurting their investors.
+On October 30, the Calcalist announced that the stock exchange is expected to follow the rules and will not prevent the supply of the Jerusalem stock. On the same day, after the trade ended, the stock exchange announced that the next day the weight factor in the Jerusalem stock would be reset, so the ETFs had to sell the stock at that time.
+During those two trading days, the Jerusalem Economic Share lost 5.2% of its value. On Sunday, the share price corrected 3.5%, but the ETFs did not enjoy this correction because the share weight in the indices was already zero. On December 5, as aforementioned, further distortion is expected to result from the adjustment of the VAT and the level of public holdings in the stock of industrial buildings, which will lead to demand of NIS 150 million that the ETFs will flow per share.
+Most of the damage from this distortion comes from holders of ETFs on TA-90, TA-125, TA real estate and the Balance Sector. The fund managers also absorb little damage resulting from the buying and selling commissionsThey pay.
+The exchange was able to reduce the distortion, prevent the supply of the Jerusalem economic stock and replace it with a light supply of NIS 30 million per share of industrial buildings that was being made at the time of the Jerusalem economic share from the indices, and prevent the demand for stock of industrial buildings next month.
+The problem is that in order to reduce the distortion, it was necessary to determine a special share price per share of industrial buildings, which would be very different from the company's registered share volume, and to determine a special weight factor per share and different for each of the indices on which it trades. Jerusalem's economic index, was the same as the expected weight per share after adding the new shares received from the merger.
+The stock exchange index committee has the authority to make all of these adjustments, but they create a period of about a month in which the parameters for determining the weight of industrial buildings in indices will be tailored to the needs of the stock exchange, and they may mislead investors who consider themselves the weight of the indices. That is, the amendment should have been a kind of non-aesthetic patch, which is an exception to the current index rules.
+The stock exchange chose not to interfere and prevent the distortion. The result is a turnover of at least half a billion shekels. The trading cycle consists of a sale of NIS 180 million of the Jerusalem economic stock and a purchase of NIS 180 million of the other index shares in which the stock is included, in view of the relative weighting of all index shares with the weight reset in the indices. These sales and purchases were made last Thursday.
+In addition, a demand of NIS 150 million is expected for stock of industrial buildings in December. It is likely that there will also be aggregate supply for some of the index stocks in December, but its scope depends on other factors. Because of the size of the distortion, it was true that the stock exchange would prevent it, despite the aesthetic nature of the distortion prevention solution.
+
+Industrial buildings on the way to the TA-35 index
+
+The market value of industrial buildings after completion of the merger is expected to be NIS 6 billion. With the expected entry into the TA-35 index in February, and exit from the TA-90 index, the ETFs are expected to inject NIS 80 million in demand. At the same time, Ofco's stock is expected to exit from TA-35 and move to TA-90.
+Ofco entered October-35 in October 2013 at NIS 36.8 per share, since it burned a lot of value to investors in the index, and is expected to exit at NIS 5.2 per share after losing 86% of its value. Expected per share demand or material supply.
+The TA-90 index now contains 93 shares. If the retail chain's share starts trading until November 13, it will enter the index as part of the fast track in January and become the 94th share. If trading begins later, then the index will enter the fast track index. In February, and will not be included in the calculation of the regular index composition update (therefore in February the number of shares in the index will be 91). In February index update composition Arad's stock will certainly enter TA-90 and TA-125 indices.
+The stocks of Biomed Compugen Company, the net food maker Melinda and the entrepreneurial company Vithanya are expected to contend for more places that are likely to vacate on these indices.
+On the other hand, the shares of Biomed Enlievex, Mivtach Shamir Holding Company, Municipal Bank, Klil Industries and the Victory Retail Network are at great risk of exceeding TA-90 and TA-125 indices. The shares of Biomed Kamdeh Company, Checking Discount Naoy and Tire Investment Company (the owner of direct insurance) may also come out of these indices.
+
+The writer is a high-tech economist
+
+
+
+"

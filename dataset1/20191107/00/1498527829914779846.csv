@@ -1,0 +1,104 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+YubiKey Bio rüstet PCs für eine biometrische Anmeldung aus
+07 Nov 2019 by Stefan Bordel
+
+Die Sicherheitsexperten von Yubico haben einen neuen Hardware-Token mit integriertem Fingerabdruckscanner angekündigt. Das Gerät soll eine sichere und einfache Anmeldung für Windows 10 und Azure AD ermöglichen.
+
+
+Windows 10 sowie viele andere Tools und Dienste aus dem Hause Microsoft unterstützen bereits seit geraumer Zeit eine passwortlose Anmeldung über biometrische Daten mittels Windows Hello. Für den Einsatz der Anmeldeoption muss allerdings auch die entsprechende Hardware in Form von Fingerabdruckscannern oder Infrarotkameras verfügbar sein. Die Sicherheitsexperten von Yubico haben nun einen neuen Hardware-Token angekündigt, mit dem sich eine biometrische Anmeldung per Fingerabdruck unkompliziert nachrüsten lässt.
+
+
+Der YubiKey Bio verfügt über einen integrierten Fingerabdruckscanner.
+
+Der Token trägt den naheliegenden Namen YubiKey Bio und ähnelt rein optisch den bisher verfügbaren USB-Sicherheitsschlüsseln. Der Fingerabdruckscanner ist auf der Oberseite des Tokens montiert und sollte daher beim Einsatz auf Notebooks komfortabel zu handhaben sein.
+Die technische Basis des YubiKey Bio stimmt im Wesentlichen mit deren der übrigen Tokens des Herstellers überein. So wird etwa neben der biometrischen Anmeldung auch ein klassischer Login per Pin für die Multi-Faktor-Authentifizierung (MFA) unterstützt. An Standards ist Support für die Spezifikationen von FIDO2 und WebAuthn gegeben. Spezielle Treiber oder eine Batterie für den Betrieb sind nicht erforderlich.
+In der Praxis eignet sich der Token laut Hersteller für die Anmeldung auf Windows 10 sowie auf Azure AD. Inwiefern sich die Hardware auch unter anderen Systemen wie Linux oder macOS einsetzen lässt, ist derzeit noch nicht bekannt. Auch über Preis und Marktstart liegen aktuell keine Informationen vor. Wer sich über Neuigkeiten zu dem biometrischen Token auf dem Laufenden halten will, kann sich auf einer Mailingliste von Yubico eintragen.
+Wie sich die Sicherheits-Token des Herstellers aus der Modellserie 5 im Einsatz schlagen, erfahren Sie in unserem Bericht ""YubiKey-Hardware-Token im Praxis-Check"".
+Verwandte Themen
+
+
+Hardware
+
+
+Sicherheit
+
+
+Verschlüsselung
+
+
+Windows
+
+
+Windows 10
+
+
+mehr >>
+
+
+
+
+
+",de,"
+
+
+
+
+
+
+
+
+
+
+
+YubiKey Bio equips PCs for biometric login
+07 Nov 2019 by Stefan Bordel
+
+Security experts at Yubico have announced a new hardware token with integrated fingerprint scanner. The device is designed to enable secure and easy login for Windows 10 and Azure AD.
+
+
+Windows 10 as well as many other tools and services from Microsoft have long been supporting a password-free login via biometric data using Windows Hello. To use the login option, however, the corresponding hardware in the form of fingerprint scanners or infrared cameras must be available. Yubico's security experts have now announced a new hardware token that can easily retrofit a biometric fingerprint login.
+
+
+The YubiKey Bio has an integrated fingerprint scanner.
+
+The token bears the obvious name YubiKey Bio and is similar in appearance to the previously available USB security keys. The fingerprint scanner is mounted on the top of the token and should therefore be comfortable to use on notebooks.
+The technical basis of the YubiKey Bio is essentially the same as the manufacturer's other tokens. For example, in addition to the biometric login, a classic login via pin for multi-factor authentication (MFA) is also supported. Standards are supported for the specifications of FIDO2 and WebAuthn. Special drivers or a battery for operation are not required.
+In practice, the token is suitable according to the manufacturer for logging on Windows 10 and Azure AD. To what extent the hardware can also be used under other systems such as Linux or macOS is currently unknown. There is currently no information available about price and market launch. If you want to keep up to date on the biometric token, you can sign up for a Yubico mailing list.
+To find out how the manufacturer's Series 5 security tokens work, see our ""YubiKey hardware token in practice check"" report.
+Related topics
+
+
+hardware
+
+
+safety
+
+
+encoding
+
+
+Windows
+
+
+Windows 10
+
+
+more >>
+
+
+
+
+
+"

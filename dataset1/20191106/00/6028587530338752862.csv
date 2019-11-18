@@ -1,0 +1,104 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+How To Maximize The Strengths Of A Multisite Team
+06 Nov 2019 by Frank Orozco
+
+
+
+Remote work is transforming the way companies hire, manage and expand technical teams. In theory, it has never been easier to employ the best possible talent because we aren’t limited by location. We can widen our search and find the right people for open positions, no matter where they live. But in practice, a distributed workforce introduces new and complex challenges. 
+In my experience, employees are typically more productive when colocated – in the same building or, more specifically, in the same room. No digital tool can replace gathering around the white board as a team or turning around to ask a colleague a question. 
+The reality is, however, that you must adopt a distributed work model as your company scales and you outgrow your local talent pool. How can you manage this transition most effectively?
+
+Types Of Colocated And Remote Teams
+
+People often look at organizational design in black and white – either a workplace is remote or colocated – while in reality, there are many different variations. Some popular models are: 
+• Single-site team: All employees work from the same location 
+• Remote-first team: All employees work from separate locations
+• Multisite team: A company has two or more teams working together from separate locations (for example: one team in San Jose and one in Seoul)
+Many technology companies have experimented with ending remote work policies, most famously Yahoo! and IBM. More traditional enterprises, such as Bank of America, followed suit. On the other end of the spectrum, tech companies like GitHub, Doist and Buffer have embraced a remote-first, fully distributed model. 
+Slickdeals has found what I consider an ideal balance: a multisite team with main offices in Los Angeles and Las Vegas, plus a few satellite workers. Colocation boosts our productivity, especially within software development, architecture and design; but we have the option to expand horizontally to more sites to support our company’s growth. 
+
+Tips For Building A Strong Multisite Team 
+
+Follow these best practices to help maximize strengths and minimize weaknesses of a multisite team. 
+
+Assign Ownership
+
+Design software development systems within a microservices architecture, so colocated teams take charge of smaller services or components within larger projects. If you’re working with teams in Boston and London, for example, give each site full ownership over a component that they can develop autonomously. Your goal is to reduce dependencies and time to market, so each group can move as quickly as possible to manage, deploy, update and monitor their discrete component. 
+Our company recently hired a development team based in Argentina to support a new project. Before onboarding that team, we had to determine how the Argentina developers could best augment our existing team and what those interconnections would look like. Which components could they own from start to finish? How would we push and retrieve data from them so they could work in an autonomous fashion?
+
+Map Objectives And Dependencies 
+
+On a quarterly basis, lead your teams in roadmap planning for the following quarter. Define each colocated team’s top objectives and KPIs, and address any potential obstacles. Your goal is to empower them to make real-time decisions about these objectives without needing outside approval. Your company may have complex software projects that span multiple teams, so this is also a good opportunity to identify dependencies ahead. Does Team A need to develop an API before Team B can begin another component? Plan the next quarter’s timeline accordingly. 
+At the end of the quarter, I also like to hold a retrospective to evaluate our progress. Did we hit our objectives? Which ones did we miss? Why did we miss them, and what can we do differently in the future to improve? 
+
+Support Good Communication 
+
+Pay attention to the communication patterns of your teams. What tools are you using to support your employees? Where are the gaps? Video chat, virtual white boards, distributed source control systems and cloud-based project management systems are crucial to facilitating good communication between different sites. 
+Think about how you can use travel as well as technology to build personal relationships among your teams. I like to fly my entire team out for quarterly roadmapping so we have facetime at least four times a year. It’s important for us to talk as a group about risks or roadblocks moving into the next quarter, and I make sure to budget for those travel expenses.  
+In a perfect world, all of your employees would work in the same office, within shouting distance if you needed to brainstorm an idea or tackle a problem. But a strong multisite team is the next best thing. By fostering autonomy, planning clear objectives and encouraging communication, you can build successful colocated teams and help your company grow.
+
+
+",en,"
+
+
+
+
+
+
+
+
+
+
+
+How To Maximize The Strengths Of A Multisite Team
+06 Nov 2019 by Frank Orozco
+
+
+
+Remote work is transforming the way companies hire, manage and expand technical teams. In theory, it has never been easier to employ the best possible talent because we aren’t limited by location. We can widen our search and find the right people for open positions, no matter where they live. But in practice, a distributed workforce introduces new and complex challenges. 
+In my experience, employees are typically more productive when colocated – in the same building or, more specifically, in the same room. No digital tool can replace gathering around the white board as a team or turning around to ask a colleague a question. 
+The reality is, however, that you must adopt a distributed work model as your company scales and you outgrow your local talent pool. How can you manage this transition most effectively?
+
+Types Of Colocated And Remote Teams
+
+People often look at organizational design in black and white – either a workplace is remote or colocated – while in reality, there are many different variations. Some popular models are: 
+• Single-site team: All employees work from the same location 
+• Remote-first team: All employees work from separate locations
+• Multisite team: A company has two or more teams working together from separate locations (for example: one team in San Jose and one in Seoul)
+Many technology companies have experimented with ending remote work policies, most famously Yahoo! and IBM. More traditional enterprises, such as Bank of America, followed suit. On the other end of the spectrum, tech companies like GitHub, Doist and Buffer have embraced a remote-first, fully distributed model. 
+Slickdeals has found what I consider an ideal balance: a multisite team with main offices in Los Angeles and Las Vegas, plus a few satellite workers. Colocation boosts our productivity, especially within software development, architecture and design; but we have the option to expand horizontally to more sites to support our company’s growth. 
+
+Tips For Building A Strong Multisite Team 
+
+Follow these best practices to help maximize strengths and minimize weaknesses of a multisite team. 
+
+Assign Ownership
+
+Design software development systems within a microservices architecture, so colocated teams take charge of smaller services or components within larger projects. If you’re working with teams in Boston and London, for example, give each site full ownership over a component that they can develop autonomously. Your goal is to reduce dependencies and time to market, so each group can move as quickly as possible to manage, deploy, update and monitor their discrete component. 
+Our company recently hired a development team based in Argentina to support a new project. Before onboarding that team, we had to determine how the Argentina developers could best augment our existing team and what those interconnections would look like. Which components could they own from start to finish? How would we push and retrieve data from them so they could work in an autonomous fashion?
+
+Map Objectives And Dependencies 
+
+On a quarterly basis, lead your teams in roadmap planning for the following quarter. Define each colocated team’s top objectives and KPIs, and address any potential obstacles. Your goal is to empower them to make real-time decisions about these objectives without needing outside approval. Your company may have complex software projects that span multiple teams, so this is also a good opportunity to identify dependencies ahead. Does Team A need to develop an API before Team B can begin another component? Plan the next quarter’s timeline accordingly. 
+At the end of the quarter, I also like to hold a retrospective to evaluate our progress. Did we hit our objectives? Which ones did we miss? Why did we miss them, and what can we do differently in the future to improve? 
+
+Support Good Communication 
+
+Pay attention to the communication patterns of your teams. What tools are you using to support your employees? Where are the gaps? Video chat, virtual white boards, distributed source control systems and cloud-based project management systems are crucial to facilitating good communication between different sites. 
+Think about how you can use travel as well as technology to build personal relationships among your teams. I like to fly my entire team out for quarterly roadmapping so we have facetime at least four times a year. It’s important for us to talk as a group about risks or roadblocks moving into the next quarter, and I make sure to budget for those travel expenses.  
+In a perfect world, all of your employees would work in the same office, within shouting distance if you needed to brainstorm an idea or tackle a problem. But a strong multisite team is the next best thing. By fostering autonomy, planning clear objectives and encouraging communication, you can build successful colocated teams and help your company grow.
+
+
+"

@@ -1,0 +1,46 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Amazon Ring Doorbells Exposed Home Wi-Fi Passwords To Hackers
+07 Nov 2019, 04:30 by BeauHD
+An anonymous reader quotes a report from TechCrunch: Security researchers have discovered a vulnerability in Ring doorbells that exposed the passwords for the Wi-Fi networks to which they were connected. Bitdefender said the Amazon-owned doorbell was sending owners' Wi-Fi passwords in cleartext as the doorbell joins the local network, allowing nearby hackers to intercept the Wi-Fi password and gain access to the network to launch larger attacks or conduct surveillance. ""When first configuring the device, the smartphone app must send the wireless network credentials. This takes place in an unsecure manner, through an unprotected access point,"" said Bitdefender. ""Once this network is up, the app connects to it automatically, queries the device, then sends the credentials to the local network."" But all of this is carried out over an unencrypted connection, exposing the Wi-Fi password that is sent over the air. Amazon fixed the vulnerability in all Ring devices in September, but the vulnerability was only disclosed today.
+
+
+(techcrunch.com)
+
+
+
+
+",en,"
+
+
+
+
+
+
+
+
+
+
+
+Amazon Ring Doorbells Exposed Home Wi-Fi Passwords To Hackers
+07 Nov 2019, 04:30 by BeauHD
+An anonymous reader quotes a report from TechCrunch: Security researchers have discovered a vulnerability in Ring doorbells that exposed the passwords for the Wi-Fi networks to which they were connected. Bitdefender said the Amazon-owned doorbell was sending owners' Wi-Fi passwords in cleartext as the doorbell joins the local network, allowing nearby hackers to intercept the Wi-Fi password and gain access to the network to launch larger attacks or conduct surveillance. ""When first configuring the device, the smartphone app must send the wireless network credentials. This takes place in an unsecure manner, through an unprotected access point,"" said Bitdefender. ""Once this network is up, the app connects to it automatically, queries the device, then sends the credentials to the local network."" But all of this is carried out over an unencrypted connection, exposing the Wi-Fi password that is sent over the air. Amazon fixed the vulnerability in all Ring devices in September, but the vulnerability was only disclosed today.
+
+
+(techcrunch.com)
+
+
+
+
+"

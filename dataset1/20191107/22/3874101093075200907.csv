@@ -1,0 +1,64 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Android için 5 RAM İpucu
+Eski telefonunuz zaman zaman yavaşlıyorsa, düşük RAM sorunlarını çözmenize yardımcı olacak bu ipuçlarına göz atın!
+07 Nov 2019, 22:30 by CHIP Online
+Eski Android'li telefonunuzda en son oyunları oynamaya çalışıyorsanız, zaman zaman bellek sorunlarıyla karşılaşabilirsiniz. Peki, Android'l cihazınızda bu sorunu çözmek için ne yapabilirsiniz?
+1. Çalışıyorsa, Onarmaya Çalışmayın
+Telefonunuzda yeterince RAM varsa, onu yönetmenize de gerek yok. Peki, ne kadarı yeterli? Bu, biraz da telefonunuzda ne yaptığınıza bağlı. Çoğunlukla internette dolaşıp sosyal medyaya bakıyorsanız, PUBG veya Call of Duty oynamaya kıyasla çok daha az RAM yeterli olacaktır.
+2. Ne Kadar RAM'e İhtiyacınız Var?
+Yoğun kullanımlar için 4GB'ın, daha hafif kullanımlar için 3GB'ın yeteceğini düşünüyoruz.
+Android ve Google Play Services'ın toplamda 1,5GB RAM harcadıklarını, PUBG gibi bir oyunun 1GB'tan fazla RAM kullandığını, tarayıcınızda birkaç sekme açtığınızda da benzer miktarda RAM kullanıldığını söyleyelim.
+3. RAM Kullanan Uygulamaları Bulun
+Android 6 Marshmallow ve sonrasında bulunan Bellek aracını kullanarak belleğin nasıl kullanıldığını görebilirsiniz. Android 6 ve 7'de Ayarlar > Bellek altında bulunan araç, Android 8 Oreo ve sonrasında geliştirici ayarlarında bulunuyor.
+4. Task Killer veya RAM Çoğaltıcı Kullanmayın
+Task Killer (görev sonlandırıcı) uygulamalarının Android'de faydalı olmadığını yıllarca okuduk. Ancak bu tür uygulamalar, Play Store'da hala milyonlarca kez indiriliyor. Dolayısıyla yeniden söylemekte fayda var: Task Killer, telefonunuzu hızlandırmayacaktır.
+Andorid, uygulamaları ve belleği etkin bir biçimde yönettiğinden, uygulamaları zorla kapatmak bu süreci olumsuz etkileyecek, uygulamaların başlama hızını da düşürecektir. Bu, pilin de daha hızlı tükenmesi anlamına geliyor.
+5. RAM Kullanımı Nasıl Azaltılır?
+Kullandığınız uygulamaların sayısını azaltmaya çalışarak RAM kullanımını azaltabilirsiniz, ancak bu o kadar kolay bir iş olmayabilir. Facebook, Snapchat gibi uygulamalar, RAM'i acımadan harcayan uygulamaların başında geliyor ancak bunları kullanıyorsanız, bir alternatifiniz yok.
+Bununla birlikte kullandığınız giriş ekranı sayısını azaltabilir, canlı duvar kağıdı kullanmaktan vazgeçebilir, kullanmadığınız uygulamaları kaldırabilir, kullanmadığınız ön yüklü uygulamaları kaldırabilir veya devre dışı bırakabilir, sistem güncellemelerini yükleyebilir, Android Go uygulamaları gibi daha az bellek tüketen alternatif uygulamaları tercih edebilirsiniz.
+
+
+",tr,"
+
+
+
+
+
+
+
+
+
+
+
+5 RAM Tip for Android
+If your old phone slows down from time to time, check out these tips to help you solve low RAM problems!
+07 Nov 2019, 22:30 by CHIP Online
+If you are trying to play the latest games on your old Android phone, you may experience memory problems from time to time. So, what can you do to solve this problem on your Android'l device?
+1. If it is running, do not attempt to repair it
+If your phone has enough RAM, you don't need to manage it. So, how much is enough? It depends a bit on what you do on your phone. If you're mostly surfing the web and looking at social media, you'll need far less RAM than playing PUBG or Call of Duty.
+2. How Much RAM Do You Need?
+We think 4GB for intensive use and 3GB for lighter use.
+Let's say that Android and Google Play Services spend a total of 1.5GB of RAM, a game like PUBG uses more than 1GB of RAM, and a similar amount of RAM is used when you open a few tabs in your browser.
+3. Find Applications Using RAM
+You can see how memory is used by using the Memory tool on Android 6 Marshmallow and later. Android 6 and 7 Settings> Memory under the tool, Android 8 Oreo and later in the developer settings.
+4. Do Not Use Task Killer or RAM Replicator
+We have read for years that Task Killer applications are not useful on Android. However, such applications are still downloaded millions of times in the Play Store. So again, Task Killer won't speed up your phone.
+Because Andorid manages applications and memory effectively, shutting down applications by force will adversely affect this process and reduce the speed at which applications start. This means the battery will run out faster.
+5. How to Reduce RAM Usage
+You can reduce RAM usage by trying to reduce the number of applications you use, but this may not be that easy. Applications such as Facebook and Snapchat are among the ones that spend RAM without mercy, but if you use them, you don't have an alternative.
+However, you can reduce the number of home screens you use, opt out of using live wallpaper, remove apps you don't use, remove or disable pre-installed apps that you don't use, install system updates, and use less memory-consuming alternative apps like Android Go apps.
+
+
+"

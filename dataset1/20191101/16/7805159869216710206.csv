@@ -1,0 +1,44 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Pixel 4’s Motion Sense gestures can be forced to work in any country at your own risk
+01 Nov 2019, 16:36 by Mishaal Rahman
+Google’s Pixel 4 smartphones are the first commercial products with Google’s Soli radar. The Soli radar powers various Motion Sense gestures on the new Pixel smartphones, which includes gestures to skip media tracks and silence incoming calls, timers, or alarms. Because the Soli radar operates at the 60GHz radio frequency, its use in the Pixel 4 is subject to regulatory approval by the telecommunications authority of each country. That’s why, at launch, Motion Sense gestures only work if your Pixel 4 is connected to a carrier in 1 of 53 whitelisted regions. However, with root access, you can bypass this restriction.
+We actually found this method ourselves before the release of the Pixel 4, but because it’ll enable the transmission of radio waves in unauthorized frequencies, we didn’t want to encourage people to illegally use it in unsupported countries. Now that the cat is out of the bag, though, this workaround can’t really be contained, mostly because it’s so easy to do. OsloFeedback, the app that’s responsible for handling Motion Sense gestures, has a hidden debug flag that disables all regional checks. With this debug flag set to true, your Pixel 4 will let you use the gestures no matter what carrier your SIM card is connected to.
+In order to set this flag, you’ll need to first unlock the bootloader and root your phone with Magisk. Then, you can either run the shell commands listed here or install the Xposed Module mentioned here. If you do the former method, I recommend setting the prop using MagiskHide Props Config so it persists across boots. If you do the latter, then you’ll have to install the Riru Core and EdXposed Magisk Modules as described here. Either way, you’ll end up bypassing Google’s regional restriction on Motion Sense gestures.
+Pixel 4 Forums ||| Pixel 4 XL Forums
+There shouldn’t be much harm in using this in unsupported countries since it’s so short-range, but you’re still taking a risk if you choose to do so.
+
+
+",en,"
+
+
+
+
+
+
+
+
+
+
+
+Pixel 4’s Motion Sense gestures can be forced to work in any country at your own risk
+01 Nov 2019, 16:36 by Mishaal Rahman
+Google’s Pixel 4 smartphones are the first commercial products with Google’s Soli radar. The Soli radar powers various Motion Sense gestures on the new Pixel smartphones, which includes gestures to skip media tracks and silence incoming calls, timers, or alarms. Because the Soli radar operates at the 60GHz radio frequency, its use in the Pixel 4 is subject to regulatory approval by the telecommunications authority of each country. That’s why, at launch, Motion Sense gestures only work if your Pixel 4 is connected to a carrier in 1 of 53 whitelisted regions. However, with root access, you can bypass this restriction.
+We actually found this method ourselves before the release of the Pixel 4, but because it’ll enable the transmission of radio waves in unauthorized frequencies, we didn’t want to encourage people to illegally use it in unsupported countries. Now that the cat is out of the bag, though, this workaround can’t really be contained, mostly because it’s so easy to do. OsloFeedback, the app that’s responsible for handling Motion Sense gestures, has a hidden debug flag that disables all regional checks. With this debug flag set to true, your Pixel 4 will let you use the gestures no matter what carrier your SIM card is connected to.
+In order to set this flag, you’ll need to first unlock the bootloader and root your phone with Magisk. Then, you can either run the shell commands listed here or install the Xposed Module mentioned here. If you do the former method, I recommend setting the prop using MagiskHide Props Config so it persists across boots. If you do the latter, then you’ll have to install the Riru Core and EdXposed Magisk Modules as described here. Either way, you’ll end up bypassing Google’s regional restriction on Motion Sense gestures.
+Pixel 4 Forums ||| Pixel 4 XL Forums
+There shouldn’t be much harm in using this in unsupported countries since it’s so short-range, but you’re still taking a risk if you choose to do so.
+
+
+"

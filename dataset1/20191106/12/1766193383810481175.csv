@@ -1,0 +1,42 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Der nächste Versuch: Desktop-Unix FuryBSD geht an den Start
+Unter dem Namen FuryBSD soll ein neues Desktop-Unix entstehen. Noch befindet sich das Projekt jedoch in der Planungsphase.
+06 Nov 2019, 12:36 by Moritz Förster
+Mit einem Manifest und einem ersten Demonstrationsvideo erblickt das Betriebssystem FuryBSD das Licht der Welt. Es handelt sich um ein Unix-Derivat für den Desktop, das auf FreeBSD aufsetzt. Wie aus der Webseite der Entwickler hervorgeht, sollen für den Nutzer essentielle Programme wie Firefox und ein Framework für proprietäre Treiber mit an Bord sein; auch das Drucken soll direkt funktionieren. Als Nutzeroberfläche soll standardmäßig XFCE zum Einsatz kommen. Viele Fragen sind aber noch offen, Interessierte können sich auf furybsd.org einbringen.
+Es handelt sich nicht um das einzige Desktop-Projekt im BSD-Umfeld, zum Beispiel basiert GhostBSD ebenfalls auf FreeBSD. Lange Zeit existierte außerdem PC-BSD, das nach der Umbenennung in TrueOS jedoch zunehmend auf Server-Dienste zugeschnitten ist. Als Ersatz starteten die Entwickler die Arbeit an Trident, das aber künftig auf Void Linux aufsetzen wird.
+Darüber hinaus können Nutzer mit FreeBSD, OpenBSD oder DragonFly BSD selbsttätig ein Desktop-System einrichten – alle Projekte bieten hierfür ausführliche Anleitungen in ihren Handbüchern an. FreeBSD ist die wohl populärste Ausgabe der freien Unix-Derivate, die auf der freien Unix-Version 4.4BSDLite2 beruhen. (fo)
+
+
+",de,"
+
+
+
+
+
+
+
+
+
+
+
+The next attempt: Desktop Unix FuryBSD launches
+A new desktop Unix is to be created under the name FuryBSD. However, the project is still in the planning phase.
+06 Nov 2019, 12:36 by Moritz Förster
+With a manifesto and a first demonstration video, the FuryBSD operating system sees the light of day. It is a desktop Unix derivative based on FreeBSD. According to the developer's website, essential programs such as Firefox and a framework for proprietary drivers should be on board for the user; also the printing should work directly. The user interface is XFCE as standard. Many questions are still open, but anyone interested can join furybsd.org.
+This is not the only desktop project in the BSD environment, for example GhostBSD is also based on FreeBSD. PC-BSD also existed for a long time, but after the renaming in TrueOS it is increasingly tailored to server services. As a replacement, the developers started work on Trident, which will be based on Void Linux in the future.
+In addition, FreeBSD, OpenBSD or DragonFly BSD users can automatically set up a desktop system - all projects provide detailed instructions in their manuals. FreeBSD is probably the most popular version of free Unix derivatives based on the free Unix version 4.4BSDLite2. (Fo)
+
+
+"

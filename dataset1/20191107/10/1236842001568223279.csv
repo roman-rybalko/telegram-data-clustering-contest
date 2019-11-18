@@ -1,0 +1,236 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Создание процедурной анимации всего из 13 кейфреймов — опыт разработчика Overgrowth
+07 Nov 2019, 10:32 by Владимир Семыкин
+Внимание к мелочам и поэтапное формирование движений героя.
+Аниматор Дэвид Розен из Wolfire Games на GDC 2014 выступил с докладом о создании анимации для игры Overgrowth. Спикер рассказал о каждом этапе анимирования персонажей и показал финальный результат своей работы. Мы выбрали из доклада главное.
+
+
+
+Сама Overgrowth была анонсирована ещё в 2008 году, но вышла только в 2017-м. Игра представляет собой экшен от третьего лица, в котором антропоморфные звери участвуют в кровавых битвах друг с другом.
+
+
+
+По словам спикера, при создании анимации всегда возникает вопрос того, насколько отзывчивой она должна быть. Например, с одной стороны есть Super Mario Bros., в которой герой мгновенно выполняет все команды игрока. При этом для анимирования его движений используется всего несколько кадров.
+На другой стороне находится Prince of Persia, в которой применяется ротоскопия, а все движения героя выглядят очень плавными. Из-за этого во время перехода от одной анимации к другой пользователь не может управлять героем. К тому же появляется задержка при передаче команд.
+Чтобы адекватно анимировать персонажа, важно уметь анализировать движения обычных людей. Например, если посмотреть на фигуриста, то можно увидеть, что его центр масс редко совершает резкие переходы от одного состояния к другому — траектория движения больше похожа на простую кривую преимущественно в горизонтальной плоскости.
+
+
+
+Но фигурист должен следовать некоторым правилам. Например, ему нужно держать центр масс над коньками, чтобы не упасть. Также он должен наклоняться в сторону, в которую будет ускоряться. А при вращении ему нужно контролировать скорость с помощью разведения рук.
+При создании анимации в Overgrowth Дэвид решил начать с базовых движений. Зелёная сфера соприкасается с объектами на высоте туловища героя, а белая реагирует на мелкие препятствия на земле. Главный принцип, который лежит в основе движений в Overgrowth — это отзывчивость управления и предсказуемость: если герой падает с утёса, то геймер понимает, что это его вина, а не игры.
+Такой подход означает, что именно движения имеют главный приоритет, а анимация должна накладываться на них, но не перекрывать.
+
+
+
+Первый шаг — подставить вместо сферы персонажа, который находится в idle-позе. При этом игрок может управлять лишь скоростью героя и направлением движения. А следующий шаг, это добавление наклона при ускорении. Поворот при этом происходит относительно центра масс.
+
+
+Здесь вы можете увидеть, как сперва герой просто передвигается в idle-позе, а потом к этому добавляется наклон
+
+Чтобы сымитировать бег, разработчик добавил две ключевые позы героя — переходную и конечную. Эти кейфреймы сменяются, когда персонаж делает шаг, а скорость смены зависит от скорости передвижения. На гифке можно увидеть, как колесо отсчитывает расстояние, которое проходит персонаж, а также отражает его скорость.
+
+
+
+Тем не менее это подходит для бега, но не для передвижения шагом. Поэтому Дэвид добавил ещё один набор анимации для низкой скорости. Здесь работает тот же принцип, но расстояние между шагами значительно меньше по сравнению с бегом.
+
+
+
+Чтобы смена анимаций не была рваной, автор смешал их, благодаря чему появились правдоподобные переходы между состояниями при изменении скорости.
+
+
+
+Также Дэвид добавил эффект незначительного подпрыгивания во время передвижения героя. Чем меньше скорость, тем больше дуга.
+
+
+
+Два кейфрейма — это слишком мало для полноценной анимации, поэтому разработчик добавил переходные состояния, которые нашёл с помощью вычисления среднего значения между ближайшими друг к другу кадрами.
+На анимации ниже можно увидеть, что при использовании линейной интерполяции переходы между действиями всё ещё достаточно резкие. Дэвид исправил это с помощью бикубической интерполяции, которая позволила сымитировать инерцию и сделать движения более плавными и естественными.
+
+
+
+Подобные манипуляции разработчик совершил и с анимацией приседания. Сперва у него было только две позы — в полный рост и пригнувшись. Он использовал линейную интерполяцию, чтобы сделать переходы между позами, а затем добавил небольшой эффект покачивания, чтобы движения выглядели правдоподобными.
+
+
+
+Следующий шаг — совмещение анимации бега и приседания.
+
+
+
+При создании анимации приземления Дэвиду не пришлось придумывать что-то новое — он просто использовал эффект подавления инерции при приседании.
+
+
+
+В игре есть возможность делать сальто во время прыжка, чтобы изменить направление героя. Если персонаж моментально совершает действие, то это выглядит неестественно. Поэтому Дэвид сделал так, чтобы герой прямо перед совершением сальто немного отклонялся в сторону и сохранял момент импульса.
+
+
+
+Перекат очень похож по анимации на сальто, но главное отличие заключается в том, что на земле герой делает кувырок через плечо.
+
+
+
+Вот так в движении выглядит персонаж, у которого готовы все основные анимации. Для получения этого результата Дэвид использовал всего 13 кейфреймов. Преимущество этого подхода заключается в том, что разработчик может без проблем добавлять новые элементы. Например, он может дать герою в руки копьё, и разработчику не придётся заново создавать все анимации.
+
+
+
+Несмотря на то, что основные анимации готовы, есть ещё множество деталей, которые требуют доработки. Например, Дэвид использовал инверсную кинематику, чтобы герой ставил ногу на камни под правильным углом. По словам разработчика, чтобы высчитать этот угол, достаточно простой тригонометрии.
+
+
+
+Такое же решение разработчик использовал и для анимации карабканья, которая состоит всего из одного кейфрейма.
+
+
+
+Разработчик также использовал инверсную кинематику, чтобы герой следил за противником. Это помогает сделать персонажа более живым.
+
+
+
+Ещё одна деталь, которая требовала доработки — это колебания частей тела героя при движении. Каждая анимация имеет свой параметр мягкости для каждой «кости». Например, ниже можно увидеть, что уши и руки персонажа колеблются при его движениях.
+
+
+
+Ближе к концу создания анимации разработчик занялся поиском ситуаций, в которых движения героя выглядят странно или глупо. Например, Дэвид заметил, что во время прыжка рядом со стеной персонаж просто утыкается в неё, но никак не реагирует на это препятствие. Поэтому автор добавил анимацию простого бега по стене, из-за чего одна из глупейших ситуаций в игре превратилась в одну из крутейших.
+
+
+
+При падениях персонажа используется ragdoll-физика — разработчик постарался сделать так, чтобы в такие моменты герой выглядел не как безжизненная кукла, а сохранял элементы обычного поведения.
+
+
+Здесь можно увидеть, как персонаж пытается идти в положении лёжа. Но у него это получается не очень хорошо
+
+Чтобы сделать поведение героя более правдоподобным, разработчик сделал так, чтобы персонаж пытался защищать свою голову и тело при падении. На заключительных кадрах анимации видно, что у него это получается не всегда хорошо.
+
+
+
+В заключение Дэвид рассказал о своих надеждах на будущее анимации. Его главным желанием было, чтобы со временем появилось больше инструментов, которые позволяют облегчить задачу аниматоров. Например, чтобы им не приходилось создавать множество переходных состояний.
+
+
+",ru,"
+
+
+
+
+
+
+
+
+
+
+
+Creating procedural animations from just 13 keyframes - Overgrowth developer experience
+07 Nov 2019, 10:32 by Vladimir Semykin
+Attention to detail and phased formation of the movements of the hero.
+Animator David Rosen of Wolfire Games at the GDC 2014 made a presentation on creating animations for Overgrowth. The speaker talked about each stage of character animation and showed the final result of his work. We have chosen the main thing from the report.
+
+
+
+Overgrowth itself was announced back in 2008, but was released only in 2017. The game is a third-person action game in which anthropomorphic animals participate in bloody battles with each other.
+
+
+
+According to the speaker, when creating an animation, the question always arises of how responsive it should be. For example, on the one hand there is Super Mario Bros., in which the hero instantly executes all the player's commands. At the same time, only a few frames are used to animate his movements.
+On the other side is Prince of Persia, which uses rotoscopy, and all the movements of the hero look very smooth. Because of this, during the transition from one animation to another, the user cannot control the hero. In addition, there is a delay in the transmission of commands.
+To adequately animate a character, it is important to be able to analyze the movements of ordinary people. For example, if you look at the skater, you can see that his center of mass rarely makes sharp transitions from one state to another - the trajectory of movement is more like a simple curve mainly in the horizontal plane.
+
+
+
+But the skater must follow some rules. For example, he needs to keep the center of mass above the skates so as not to fall. Also, it should lean toward which it will accelerate. And when spinning, he needs to control the speed with the help of his arms.
+When creating the animation in Overgrowth, David decided to start with basic movements. The green sphere is in contact with objects at the height of the hero’s body, and the white sphere reacts to small obstacles on the ground. The main principle that underlies the movements in Overgrowth is responsiveness and predictability: if a hero falls off a cliff, the gamer understands that it is his fault, not the game.
+This approach means that it is the movements that have the main priority, and the animation should be superimposed on them, but not overlap.
+
+
+
+The first step is to substitute the character in the idle position instead of the sphere. In this case, the player can only control the speed of the hero and the direction of movement. And the next step is to add a tilt when accelerating. The rotation in this case occurs relative to the center of mass.
+
+
+Here you can see how at first the hero simply moves in an idle position, and then a slope is added to this
+
+To simulate the run, the developer added two key poses of the hero - transitional and final. These keyframes change when the character takes a step, and the speed of the change depends on the speed of movement. On the gif you can see how the wheel counts the distance that the character goes, and also reflects its speed.
+
+
+
+However, it is suitable for running, but not for walking. Therefore, David added another set of animation for low speed. The same principle works here, but the distance between steps is much smaller compared to running.
+
+
+
+So that the change of animations was not torn, the author mixed them, due to which there appeared plausible transitions between states when the speed changed.
+
+
+
+Also, David added the effect of slight bouncing during the movement of the hero. The lower the speed, the larger the arc.
+
+
+
+Two keyframes is too small for full animation, so the developer added transition states, which he found by calculating the average value between the frames closest to each other.
+In the animation below, you can see that when using linear interpolation, the transitions between actions are still quite sharp. David corrected this by using bicubic interpolation, which allowed to simulate inertia and make movements more smooth and natural.
+
+
+
+The developer made similar manipulations with the squat animation. At first, he had only two poses - full-length and bent over. He used linear interpolation to make the transitions between poses, and then added a little wiggle effect to make the movements look believable.
+
+
+
+The next step is to combine running and squatting animation.
+
+
+
+When creating the landing animation, David did not have to invent something new - he just used the inertia suppression effect when squatting.
+
+
+
+The game has the ability to do somersaults during the jump to change the direction of the hero. If a character instantly performs an action, then it looks unnatural. Therefore, David made the hero right before committing a backflip deviate a little to the side and save the momentum.
+
+
+
+The roll is very similar in animation to a somersault, but the main difference is that on the ground the hero makes a somersault over his shoulder.
+
+
+
+This is how the character looks in motion, with all the main animations ready. David used only 13 keyframes to get this result. The advantage of this approach is that the developer can easily add new elements. For example, he can give the hero a lance, and the developer does not have to re-create all the animations.
+
+
+
+Despite the fact that the main animations are ready, there are many more details that need improvement. For example, David used inverse kinematics to make the hero put his foot on the stones at the right angle. According to the developer, simple trigonometry is enough to calculate this angle.
+
+
+
+The developer used the same solution for climbing animation, which consists of only one keyframe.
+
+
+
+The developer also used inverse kinematics so that the hero watched the enemy. This helps make the character more alive.
+
+
+
+Another detail that needed refinement was the vibrations of the parts of the hero’s body during movement. Each animation has its own softness setting for each bone. For example, below you can see that the character’s ears and hands fluctuate with his movements.
+
+
+
+Toward the end of the creation of the animation, the developer began to search for situations in which the hero's movements look strange or stupid. For example, David noticed that during the jump near the wall, the character simply bumps into it, but does not react to this obstacle. Therefore, the author added an animation of a simple run along the wall, which is why one of the stupidest situations in the game turned into one of the coolest.
+
+
+
+When the character falls, ragdoll physics is used - the developer tried to make the hero look like a lifeless doll at such moments, but retain elements of ordinary behavior.
+
+
+Here you can see how the character is trying to walk in a lying position. But he doesn’t do it very well
+
+To make the hero’s behavior more believable, the developer made the character try to protect his head and body in the fall. The final frames of the animation show that he is not always good at it.
+
+
+
+In conclusion, David spoke about his hopes for the future of animation. His main desire was that over time, more tools appear that make it easier for the animators. For example, so that they do not have to create many transition states.
+
+
+"

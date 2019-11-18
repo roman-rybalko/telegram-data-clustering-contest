@@ -1,0 +1,166 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+[정보] 영웅 스킨 및 다양한 바리에이션도 고려 중, 워크래프트3 리포지드
+03 Nov 2019, 00:35 by 윤서호 기자
+
+
+
+블리자드는 오늘(3일), 애너하임 컨벤션 센터에서 진행된 블리즈컨 2019에서 '워크래프트3: 리포지드'의 정보를 추가로 공개했다.
+지난 2일에 베타테스트를 통해 선공개된 오크와 인간 외에도 나이트엘프의 새로운 모델링 및 18종의 아트워크, 멀티플레이 스크린샷이 공개됐다. 오늘 세션에서는 전 워크래프트3 프로게이머 그루비, 브라이언 수사 리드 아티스트와 키스 사이즈모어 시니어 애니메이터, 피트 스틸웰 리드 프로듀서, 마이클 스키피오네 게임 디자이너가 워크래프트3: 리포지드의 특징을 설명하고 스크린샷을 추가로 공개하는 시간을 가졌다.
+
+모델링은 세련되게, 그러면서도 기존 워크래프트3의 느낌을 담아내다
+
+
+
+
+워크래프트3는 현재도 골드리그 등 다양한 e스포츠 리그가 활성화되어있는 종목이고, 기존 멀티플레이어 유저층도 확고히 존재하는 타이틀이다. 반면에 월드 오브 워크래프트의 기원이 되기도 한 작품인 만큼, 기존에 워크래프트3를 즐기지 않았더라도 월드 오브 워크래프트 유저이기 때문에 새로 접하거나 관심을 가질 유저도 있다. 따라서 두 유저층을 모두 어느 정도 만족시켜야 하는 과제가 있었다.
+아트 팀과 애니메이션 팀은 특히 기존의 느낌을 살리면서도, FHD 환경에 맞는 그래픽을 구현하기 위해서 노력을 했다. 특히 애니메이션은 단순히 동작을 비슷하게 잡는 것만으로는 불충분했다. 이전의 워크래프트3 유닛은 로우폴리곤에 가깝게 제작했고, 데포르메도 준 상태였기 때문이다.
+
+
+
+이를 최대한 기존의 느낌을 살리면서도 폴리곤 수를 늘리고, 현대적인 3D 그래픽에 맞춰 제작했기 때문에 동작 자체가 디테일한 부분에선 차이가 있을 수밖에 없었다. 그래서 애니메이션 팀은 기존 워크래프트3의 유닛 애니메이션과 모션은 조금 달라지더라도, 타임 싱크가 맞게끔 하나하나 디테일하게 조절하는 작업을 해나갔다.
+한편으로는 기존보다 더 나은, 차별화된 경험을 주기 위해서 개선해나갔다. 예전에는 체력바가 적이나 아군이나 동일한 색상이었기 때문에 쉽게 파악할 수 없었지만, 리포지드에서는 적과 아군 유닛의 체력바가 다르기 때문에 피아의 체력을 쉽게 구분할 수 있다. 또한 유닛별로 좀 더 확연히 구분이 가도록 옷이나 일부 디자인을 폴리싱하면서 개선해나갔다.
+아울러 기존에는 동일한 모델링을 공유했던 영웅이나 일부 엘리트 유닛, 고유 유닛 등도 월드 에디터 및 스토리 모드에서 각기 다른 모델링이나 바리에이션이 주어질 예정이다.
+
+
+
+
+
+▲ 동일한 모델링으로 때웠던 캐릭터 모델링도 다양하게 바리에이션을 줬다
+
+
+
+▲ 스킨 등도 다양하게 고려하고 있다
+
+
+매칭은 어떻게 잡히나? 종족별로 다르게 적용되는 MMR
+
+
+
+
+워크래프트3가 배틀넷 런처가 출시되기 전에 나온 게임인 만큼, 새로이 배틀넷 런처에 합류했을 때 어떤 식으로 매칭이 잡히게 될지 의문이 들 수밖에 없다. 스틸웰 리드 프로듀서는 기존의 래더 계정도 인정은 하지만, 점차 종족 기반의 MMR을 채택해나갈 것이라고 설명했다.
+최근 진행한 베타테스트에서 이와 관련해 유저들의 피드백을 받았으며, 다음 주부터 새로 3:3 모드를 추가해서 베타테스트를 진행할 예정이다. 매칭 시스템에 대해서는 기존 워크래프트3 매칭 데이터뿐만 아니라 스타크래프트 리마스터, 스타크래프트2의 매치메이킹 시스템을 분석했으며, 여기에 유저 피드백을 바탕으로 시스템을 갖출 것이라고 설명했다. 또한 UI도 개편되는 만큼 배틀넷에서 클랜 시스템, 채팅 시스템, 메뉴 시스템도 개편될 것이라고 덧붙였다.
+또한 기존의 래더맵 외에 다른 커스텀맵을 주기적으로 래더맵에 올릴 여지가 있냐는 그루비의 질문에는 가능성을 고려하고 있다고 답했다. 또한 터틀락 등 1:1 상황인데 위치에 따라 밸런스가 어긋나는 맵에 대해서도 고민 중에 있다고 덧붙였다. 그리고 앞으로 밸런스에 대해서는 계속 피드백을 해나갈 예정이라고 설명했다.
+
+캠페인은 그대로, 그러나 모델링과 맵은 다소 개편
+
+
+
+
+작년 블리즈컨 워크래프트3 리포지드 시연에서는 '정화' 미션이 공개됐다. 시연 버전에서 캠페인의 목표 자체는 바뀌지 않았지만, 스트라솔름의 맵이 월드 오브 워크래프트의 스트라솔름을 기반으로 제작된 걸 확인할 수 있었다. 사이즈모어 애니메이터는 그뿐만 아니라 애니메이션, 제스쳐까지도 한 차례 손을 봤다고 덧붙였다.
+뿐만 아니라 실버문 등 워크래프트3와 월드 오브 워크래프트 모두에 등장하는 지역은 월드 오브 워크래프트를 많이 참고로 해서 만들어지고 있다고 밝혔다. 기존에는 유닛들이나 건물들이 제한됐지만, 월드 오브 워크래프트 엔진의 툴을 응용했기 때문에 맵에 다양한 오브젝트를 구축하는 것이 가능해졌다. 월드 에디터에서 기본으로 주어지는 유닛의 바리에이션도 다양해졌다.
+현재 공개되지 않은 언데드의 모델링은 다음 주부터 진행하는 베타테스트를 통해 직접 확인할 수 있으며, 이후에도 출시 전에 나이트엘프의 밸런스 테스트를 위해서 추가로 테스트를 진행할 수 있다고 밝혔다. 워크래프트3 리포지드의 정확한 출시일은 현장에서 공개되지 않았으며, 그간 공개되지 않은 스크린샷과 고해상도로 새로 제작한 얼어붙은 왕좌 확장팩의 엔딩 장면 일부가 공개됐다.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+※ 11월 2일부터 11월 3일까지 미국 애너하임 컨벤션 센터에서 블리즈컨 2019이 진행됩니다. 현지 및 한국에서 작은 정보 하나까지 놓침없이 전해드리겠습니다. ▶ 인벤 블리즈컨 2019 뉴스센터: https://goo.gl/gkLqSp
+
+
+
+",ko,"
+
+
+
+
+
+
+
+
+
+
+
+[Information] Warcraft 3 Reposited, Considering Hero Skins and Various Variations
+03 Nov 2019, 00:35 by Yoon Seo Ho
+
+
+
+Blizzard today released additional information about Warcraft 3: Reposited at BlizzCon 2019 at the Anaheim Convention Center.
+In addition to the orcs and humans released during the beta test on the 2nd, new models of the Night Elves, 18 artworks and multiplayer screenshots were released. In today's session, former Warcraft3 pro gamer Groovy, Brother Brian Sr. lead artist and Keith Seymour senior animator, Pete Steelwell lead producer, and Michael Scipione game designers will be able to explain the features of Warcraft 3: Reposited and provide additional screenshots. Had time.
+
+Modeling is sophisticated, yet captures the feel of traditional Warcraft 3
+
+
+
+
+Warcraft 3 is still active in various esports leagues, including the Gold League, and is a solid title for existing multiplayer users. On the other hand, as the origin of World of Warcraft, even if you have not enjoyed Warcraft 3 before, because it is a World of Warcraft user, some new users may be interested in it. Therefore, there was a problem to satisfy both user bases to some extent.
+The art and animation teams have worked hard to create graphics that fit the FHD environment, especially while keeping the traditional feel. In particular, animation wasn't enough to simply make motion similar. Earlier Warcraft 3 units were made close to Low Poly and had Deformed.
+
+
+
+This increased the number of polygons while keeping the existing feel as much as possible, and made it to modern 3D graphics, so there was no difference in the details of the movement itself. So the animation team worked on fine-tuning each one to match the time sync, even if the Warcraft 3 unit animation and motion were slightly different.
+On the one hand, we made improvements to give a better, differentiated experience than before. Previously, the health bar was the same color as the enemy or allies, so it was not easy to identify, but in Repository, the health bars of the enemy and allied units are different, making it easier to distinguish between the Pia's health. We've also refined our clothing and some designs to make them more distinct by unit.
+In addition, heroes, some elite units, and unique units that previously shared the same modeling will be given different modeling or variations in the world editor and story mode.
+
+
+
+
+
+▲ The character modeling that I struck with the same modeling gave various variations.
+
+
+
+▲ We also consider various skins
+
+
+How is Matching Matched? MMR varies by race
+
+
+
+
+Since Warcraft 3 was released before the Battle.net Launcher, there is no question how it will be matched when you join the Battle.net Launcher. Stillwell Reed Producer explained that he would accept existing ladder accounts, but will gradually adopt race-based MMR.
+In the recent beta test, we received feedback from users about this, and next week we will be adding a new 3: 3 mode to beta test. For the matching system, we analyzed Starcraft Remaster and Starcraft 2's matchmaking system, as well as the existing Warcraft 3 matching data, and explained that the system will be based on user feedback. In addition, as the UI is being revamped, Clan system, chat system and menu system will be reorganized in Battle.net.
+In addition, Groovy's question of whether there is room for other custom maps on the ladder map periodically, he said, is considering the possibility. In addition, he added that he is also worried about a map that is out of balance depending on the location although it is 1: 1 situation such as turtlelock. He explained that he will continue to provide feedback on balance in the future.
+
+The campaign remains the same, but the modeling and maps are somewhat revamped
+
+
+
+
+Last year's BlizzCon Warcraft 3 Repository demonstration revealed the 'Junghwa' mission. In the demo version, the campaign's goal did not change, but we could see that the Stratholme map was based on the Stratholme of World of Warcraft. Sizemore Animator added that he had a hand at that, as well as animation and gestures.
+In addition, the areas that appear in both Warcraft 3 and World of Warcraft, including the Silvermoon, are said to be made with much reference to World of Warcraft. Previously, units and buildings were limited, but the tools of the World of Warcraft engine made it possible to build various objects on the map. The variations of the units that are provided in the world editor by default have also been varied.
+Undead modeling is currently unveiled through beta testing next week, and afterwards, it can be further tested to balance the night elves before launch. The exact release date of Warcraft 3 Repository was not released on site, but some of the ending scenes of the newly created Frozen Throne Expansion Pack were released with unreleased screenshots and high resolution.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+※ BlizzCon 2019 will be held at the Anaheim Convention Center in the US from November 2 to November 3. We will deliver the smallest information from local and Korean. ▶ Inventory BlizzCon 2019 News Center: https://goo.gl/gkLqSp
+
+
+
+"

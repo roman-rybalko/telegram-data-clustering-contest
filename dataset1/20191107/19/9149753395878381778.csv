@@ -1,0 +1,96 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Gears 5 update adds a new setting to sharpen graphics using AMD tech
+07 Nov 2019, 19:48 by Paul Lilly
+There is a new update available for Gears 5, and with it comes an implementation of AMD's FidelityFX technology. When enabled, images should look sharper on PCs outfitted with either a Radeon or GeForce graphics card.
+FidelityFX is AMD's open source image quality toolkit that is available to developers. It combines the Contrast Adaptive Sharpening (CAS) algorithm, which is a dynamic sharpening filter, with Luma Preserving Mapping (LPM) to sort of clean up images. Since it's open source, it's for all GPUs, not just Radeon cards. And according to AMD, there is not much of a performance penalty.
+""FidelityFX automatically collapses multiple effects into fewer shader passes to reduce overhead and free up your GPU for the visceral experience you demand. This, in turn, frees up your graphics card to experience sharper visuals at virtually no performance loss,"" AMD says.
+AMD also provided some screen comparisons showing two different scenes in Gears 5 with FidelityFX enabled and disabled. Have a look:
+Image 1 of 4
+
+
+AMD FidelityFX Off
+
+Image 2 of 4
+
+
+AMD FidelityFX On
+
+Image 3 of 4
+
+
+AMD FidelityFX Off
+
+Image 4 of 4
+
+
+AMD FidelityFX On
+
+The effect is easier to see if you view the images at full size on 4K resolution display, though it's still noticeable on lower resolutions. There is a bit less blur, and in the second scene, the vegetation pops a bit more.
+This is not mind blowing by any stretch—I doubt anyone is going to view the image comparisons and remove ""fancy new graphics card"" from their Black Friday deals shopping list just because this filter has found its way to Gears 5. But it is a visual upgrade, and we'll take it.
+
+
+
+To use this, fire up Gears 5 and look for a new Sharpening setting in Video options (shown above) that says, ""Use AMD FidelityFX Contrast-Adaptive Sharpening to increase the high frequency details in the scene. Higher values may have a minor effect on edge aliasing.""
+We have not done in-depth testing to see exactly what kind of performance hit this might add. But hey, if you want to give it a whirl, there you go.
+
+
+",en,"
+
+
+
+
+
+
+
+
+
+
+
+Gears 5 update adds a new setting to sharpen graphics using AMD tech
+07 Nov 2019, 19:48 by Paul Lilly
+There is a new update available for Gears 5, and with it comes an implementation of AMD's FidelityFX technology. When enabled, images should look sharper on PCs outfitted with either a Radeon or GeForce graphics card.
+FidelityFX is AMD's open source image quality toolkit that is available to developers. It combines the Contrast Adaptive Sharpening (CAS) algorithm, which is a dynamic sharpening filter, with Luma Preserving Mapping (LPM) to sort of clean up images. Since it's open source, it's for all GPUs, not just Radeon cards. And according to AMD, there is not much of a performance penalty.
+""FidelityFX automatically collapses multiple effects into fewer shader passes to reduce overhead and free up your GPU for the visceral experience you demand. This, in turn, frees up your graphics card to experience sharper visuals at virtually no performance loss,"" AMD says.
+AMD also provided some screen comparisons showing two different scenes in Gears 5 with FidelityFX enabled and disabled. Have a look:
+Image 1 of 4
+
+
+AMD FidelityFX Off
+
+Image 2 of 4
+
+
+AMD FidelityFX On
+
+Image 3 of 4
+
+
+AMD FidelityFX Off
+
+Image 4 of 4
+
+
+AMD FidelityFX On
+
+The effect is easier to see if you view the images at full size on 4K resolution display, though it's still noticeable on lower resolutions. There is a bit less blur, and in the second scene, the vegetation pops a bit more.
+This is not mind blowing by any stretch—I doubt anyone is going to view the image comparisons and remove ""fancy new graphics card"" from their Black Friday deals shopping list just because this filter has found its way to Gears 5. But it is a visual upgrade, and we'll take it.
+
+
+
+To use this, fire up Gears 5 and look for a new Sharpening setting in Video options (shown above) that says, ""Use AMD FidelityFX Contrast-Adaptive Sharpening to increase the high frequency details in the scene. Higher values may have a minor effect on edge aliasing.""
+We have not done in-depth testing to see exactly what kind of performance hit this might add. But hey, if you want to give it a whirl, there you go.
+
+
+"

@@ -1,0 +1,88 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Robinhood users are gravitating towards loss-making companies
+07 Nov 2019, 15:06 by Yaron Yitzhak
+
+Can Robinhood users actually call themselves Robinhood’s, or is it just another tool for the rich to rob the average Joe? In this 
+
+series
+
+ we’re diving deep into Robinhood’s public data, to uncover insights on its users’ activity. Welcome to part 1, where we give a general intro into the series, and touch the surface of the data.
+
+The Robinhood app has experienced a meteoric rise since 2013. Thanks to its revolutionary zero-fee trading model and easy-to-use interface, it’s accumulated over 4 million US users, and forced the whole brokerage industry to rethink its business model. Notably, US bank Charles Schwab recently announced it would eliminate commissions for online trading as well, making the company’s arm mostly reliant on interest gained from customers’ uninvested money.
+Making trading accessible to and alluring for the masses — including those with smaller pockets — and for the digital-native generation, sounds like a noble cause. The question however is, as always with trading and investing, how sensible are the actual trading and investment decisions being made?
+In Robinhood’s case, that question is even more pertinent and perhaps should even be rephrased to ‘Can Robinhood users make good trading decisions?’, as about half of the platform’s revenue comes from the selling of users’ order details to other financial institutions like high frequency trading firms. Do I smell a conflict of interest here?
+To figure this out, luckily, there’s loads of data, updated daily, about Robinhood users’ activity, specifically how many Robinhood users hold a particular stock over time. While the public data doesn’t contain total share buying volumes, it still provides us with a wealth of information, moreover when combined with other publicly available data about these publicly listed companies.
+So, let’s dive into some of the insights we could extract from this. Also, be sure to check our special Robinhood page for all articles in this series.
+
+The first thing we’re going to look at is the so called Robinhood Leaderboard, the publicly listed companies with the highest number of Robinhood users as shareholders, and compare that with the popularity of stocks in general.
+Top stocks, by Robinhood users holding them
+Top stocks, by market cap
+Robinhood users’ preferences clearly deviate from the broader market.
+
+Six of the ten publicly listed companies with the largest market cap can be considered as big tech, whereas Robinhood’s top ten only contains two of them. In fact, Robinhood’s list of most popular stocks is dominated by Canadian cannabis companies (Aurora, Cronos, HEXO), struggling US companies such as GE and Ford (dip buys?), and smaller tech players like GoPro and Fitbit (to be annexed by Google).
+The average market cap of the top ten publicly listed companies in the US by market cap concerns $672 billion, whereas Robinhood’s top ten companies have an average market cap of $262 billion.
+Five of the ten most held stocks by RH users declined in the past twelve months, on average -32%. Pot stocks in particular performed bad, with an average price decline of -43% in one year. The other five saw an average price increase of 19%, with Microsoft being the best performer (+29%).
+Only two of the top ten companies by market cap listed on US exchanges, did not see their price surge in the past twelve months. On average, their price declined 4.5%. The other eight saw an average price increase of 19.5%, also with Microsoft being the best performer (+29%).
+Concluding, we can observe that RH users are tempted to more risky and volatile stock picks than the broader market. They’re more hype sensitive, or are perhaps more focused on potential growth instead of value or actual earnings. In fact, six of the ten most popular companies among RH users (again, by unique users invested in it) made a loss in fiscal year 2018, compared to none among the top ten companies in general. RH users therefore buy more into dreams (or envisioned future success), not facts or numbers.
+
+
+Stay tuned for part 2 of our Robinhood series. Next week we’ll combine Robinhood’s data with other public sources to dive deeper into the level of risk RH users are taking, specifically how well (or badly) diversified their portfolios apparently are.
+
+
+
+",en,"
+
+
+
+
+
+
+
+
+
+
+
+Robinhood users are gravitating towards loss-making companies
+07 Nov 2019, 15:06 by Yaron Yitzhak
+
+Can Robinhood users actually call themselves Robinhood’s, or is it just another tool for the rich to rob the average Joe? In this 
+
+series
+
+ we’re diving deep into Robinhood’s public data, to uncover insights on its users’ activity. Welcome to part 1, where we give a general intro into the series, and touch the surface of the data.
+
+The Robinhood app has experienced a meteoric rise since 2013. Thanks to its revolutionary zero-fee trading model and easy-to-use interface, it’s accumulated over 4 million US users, and forced the whole brokerage industry to rethink its business model. Notably, US bank Charles Schwab recently announced it would eliminate commissions for online trading as well, making the company’s arm mostly reliant on interest gained from customers’ uninvested money.
+Making trading accessible to and alluring for the masses — including those with smaller pockets — and for the digital-native generation, sounds like a noble cause. The question however is, as always with trading and investing, how sensible are the actual trading and investment decisions being made?
+In Robinhood’s case, that question is even more pertinent and perhaps should even be rephrased to ‘Can Robinhood users make good trading decisions?’, as about half of the platform’s revenue comes from the selling of users’ order details to other financial institutions like high frequency trading firms. Do I smell a conflict of interest here?
+To figure this out, luckily, there’s loads of data, updated daily, about Robinhood users’ activity, specifically how many Robinhood users hold a particular stock over time. While the public data doesn’t contain total share buying volumes, it still provides us with a wealth of information, moreover when combined with other publicly available data about these publicly listed companies.
+So, let’s dive into some of the insights we could extract from this. Also, be sure to check our special Robinhood page for all articles in this series.
+
+The first thing we’re going to look at is the so called Robinhood Leaderboard, the publicly listed companies with the highest number of Robinhood users as shareholders, and compare that with the popularity of stocks in general.
+Top stocks, by Robinhood users holding them
+Top stocks, by market cap
+Robinhood users’ preferences clearly deviate from the broader market.
+
+Six of the ten publicly listed companies with the largest market cap can be considered as big tech, whereas Robinhood’s top ten only contains two of them. In fact, Robinhood’s list of most popular stocks is dominated by Canadian cannabis companies (Aurora, Cronos, HEXO), struggling US companies such as GE and Ford (dip buys?), and smaller tech players like GoPro and Fitbit (to be annexed by Google).
+The average market cap of the top ten publicly listed companies in the US by market cap concerns $672 billion, whereas Robinhood’s top ten companies have an average market cap of $262 billion.
+Five of the ten most held stocks by RH users declined in the past twelve months, on average -32%. Pot stocks in particular performed bad, with an average price decline of -43% in one year. The other five saw an average price increase of 19%, with Microsoft being the best performer (+29%).
+Only two of the top ten companies by market cap listed on US exchanges, did not see their price surge in the past twelve months. On average, their price declined 4.5%. The other eight saw an average price increase of 19.5%, also with Microsoft being the best performer (+29%).
+Concluding, we can observe that RH users are tempted to more risky and volatile stock picks than the broader market. They’re more hype sensitive, or are perhaps more focused on potential growth instead of value or actual earnings. In fact, six of the ten most popular companies among RH users (again, by unique users invested in it) made a loss in fiscal year 2018, compared to none among the top ten companies in general. RH users therefore buy more into dreams (or envisioned future success), not facts or numbers.
+
+
+Stay tuned for part 2 of our Robinhood series. Next week we’ll combine Robinhood’s data with other public sources to dive deeper into the level of risk RH users are taking, specifically how well (or badly) diversified their portfolios apparently are.
+
+
+
+"

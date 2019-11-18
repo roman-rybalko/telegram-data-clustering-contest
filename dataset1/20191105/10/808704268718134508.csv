@@ -1,0 +1,48 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+
+FreeBSD 12.1 déboule avec une ribambelle de correctifs
+
+
+05 Nov 2019, 10:06
+
+La première « version à point » de FreeBSD 12 lui apporte de nombreux correctifs, notamment de sécurité. Beaucoup concernent des soucis liés à la mémoire dans le noyau ou des dénis de service rendus possibles par des dépassements de mémoire tampon.
+Plusieurs nouveautés sont cependant incluses, comme GCC 4.2 abandonnant « -Werror » par défaut, le passage de la chaine LLVM Clang à la version 8.0.1, l’utilisation par défaut du linker LLD sur plateforme i386 ou encore l’inclusion de la bibliothèque libomp (pour OpenMP).
+ 
+
+
+",fr,"
+
+
+
+
+
+
+
+
+
+
+
+
+FreeBSD 12.1 tumbles with a string of patches
+
+
+05 Nov 2019, 10:06
+
+The first ""point version"" of FreeBSD 12 brings many fixes, including security. Many are related to kernel memory issues or denials of service caused by buffer overflows.
+Several new features are however included, such as GCC 4.2 abandoning ""-Werror"" by default, the transition from the LLVM Clang chain to version 8.0.1, the default use of the LLD linker on i386 platform or the inclusion of the library libomp (for OpenMP).
+
+
+
+"

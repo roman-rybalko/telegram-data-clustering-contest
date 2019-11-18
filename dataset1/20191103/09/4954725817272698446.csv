@@ -1,0 +1,316 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+『ディアブロ IV』BlizzCon発表内容まとめ。闇への回帰を目指す、シェアード・オープンワールド型アクションRPG
+03 Nov 2019, 09:44 by Ryuki Ishii
+BlizzCon 2019にて正式発表されたアクションRPGシリーズ新作『ディアブロ IV（Diablo IV）』。対応プラットフォームはPC/PayStation 4/Xbox One（日本国内では変更の可能性あり）とアナウンスされたが、まだ開発は初期段階であり、発売時期は決して近くない。とはいえ、BlizzCon 2019のパネルセッションでは『ディアブロ IV』に関する情報が多数公開されている。本稿ではそれらをまとめていきたい。
+
+
+
+発表から「Diablo IV: Unveiled」パネルまで
+物語の時系列的には、『ディアブロIII』から数十年後の世界が舞台となる。『ディアブロ III リーパー オブ ソウルズ』にてブラックソウルストーンが粉砕され、7体の悪魔が解き放たれたことを機にサンクチュアリは荒んでしまった。天国の扉も閉じてしまい、助けを求めることもできない。そんな中、サンクチュアリおよびネファリムの創造主であり、魔王メフィストの娘であるリリスが召喚される。
+
+
+
+初期作品のようなダークな作風への回帰を目指している本作。カートゥーンテイスト寄りであった『ディアブロ III』とは異なり、ビジュアル、サウンド、ストーリー、ゲームプレイが暗いトーンで統一されている。最新ゲームエンジンによる繊細な描写にも目に止まるだろう。
+
+シームレスなシェアード・オープンワールド
+
+
+
+
+『ディアブロ IV』では、シリーズで初めてシームレスなオープンワールド形式を採用。5つのリージョンに分かれたサンクチュアリを自由に行き来できる。ドルイドの故郷であるScosglen、過酷な荒野が広がるDry Stepps、ゴシックテイストの雪山地Fractured Peaks、黒魔術が広がる沼地Hawezar、崩壊した砂漠都市Kehjistan。物語も一本道ではなくノンリニア。新たな乗馬機能（マウント）によって馬にまたがり、広大なマップを移動するのだ。マウント自体も外見・性能をカスタマイズ可能。
+
+
+
+他のプレイヤーと共通の世界を旅するシェアード・ワールドとなっており、道中で突然他のプレイヤーと出くわすことも。パブリックイベントやワールドイベントも発生し、他プレイヤーと協力して強大なボスに挑むことができる。戦闘不可のソーシャルハブエリアでは、他プレイヤーとトレードしたり、仲間を募ることが可能。世界には天候システムと昼夜サイクルがあり、各地に無数のランダム生成ダンジョンが存在する（ダンジョンに関しては、後述する「Diablo IV: Systems & Features」パネルの情報を参照）。
+
+PvPを念頭において開発
+
+
+
+『ディアブロ IV』では、PC版でも回避アクションが使用可能に。『ディアブロIII』ではコンソール版のみ導入されていた
+
+『ディアブロ IV』にはPvPエリアもある。『ディアブロ III』のPvPはバランス調整に問題があったと、後述するQ&Aセッションで語られていたが、新作においてPvEとPvPの両方を踏まえてのバランス調整がうまくいくのかどうかは、気になるところである。
+
+バーバリアン、ソーサレス、ドルイド
+
+
+
+
+リリース時点でのクラスは5種類を予定。現在判明しているのはバーバリアン、ソーサレス、ドルイドの3種だ。バーバリアンは近接戦闘型のクラス。独自の「アーセナル」システムにより、発動スキルに応じて4つの武器スロットに装備した武器を素早く切り替えながら戦う。ソーサレスは氷や電撃といった強力な属性魔法を駆使。ドルイドはシェイプシフトにより狼や熊に形態を変え、大自然の怒りの力を解き放ちながら戦う。ペットも健在だ。『ディアブロ II』のドルイドはソーサレスとやや被る部分があったが、新作では炎系の魔法は使わず、ストーム/アース系に特化している。
+
+
+武器スロットが4つあるバーバリアン
+
+参考： 海外メディアGame Informerは、各クラスのスキル＆タレントツリーの一覧を掲載している（バーバリアン/ソーサレス/ドルイド）。
+
+アイテム、スキル、タレント、ルーン
+
+
+
+
+
+
+
+各クラスは性別だけでなく、顔型、髪型、肌色、目、傷、タトゥーなどをカスタマイズ可能。ビルド構築は、アイテム、スキル、タレント、ルーン/ルーンワードという複数のレイヤーから成り立つ。スキルをアンロック/強化するためのスキルポイントは振り直せないが、スキルランクを上げていけばいずれ全てをアンロックできる。一方、タレントツリーは途中でポイント振り分けを変更可能。タレントにより、シンプルなプレイスタイルから、複数スキルを組み合わせる複雑なプレイスタイルまで幅広くカバーする。
+アイテムに装着するルーンは、prefix（Condition Rune）とsuffix（Effect Rune）の組み合わせによってボーナス効果が決まる。たとえば「ヒーリングポーション使用時、次に差し込んだRuneの効果を発動」というCondition Runeと、「発動時、クリティカル攻撃確率が7秒間50％上昇」というEffect Runeを組み合わせると、「ヒーリングポーション使用時、クリティカル攻撃確率が7秒間50％上昇」という効果を付与。
+なお『ディアブロ III』ではセット装備に偏重しすぎたとして、『ディアブロ IV』ではビルド構築の幅を広げるべく、レジェンダリーアイテムに力を入れるとのことだ。レジェンダリーはセットアイテムと同等、もしくはセットアイテムよりも強力なアイテムにすることが目標とされている。
+「Diablo IV: Systems & Features」での補足情報
+11月3日に開催された「Diablo IV: Systems & Features」パネルは、前日に発表された情報を補足する内容となっていた。
+
+
+リリス
+
+
+シェアード/プライベートエリアの区別
+
+・オープンワールドは他プレイヤーと共有するシェアード・ワールド・ダンジョンとキャンペーンミッションはプライベートエリア・シェアード・ワールドへの参加人数はコンテンツによって変動。たとえばハブエリアやワールドイベントにはより多くの人数が参加できる予定
+
+
+さまざまなプレイスタイルに対応。ソロプレイでも最上級の戦利品を入手可能
+
+
+シームレスなランダム生成ダンジョン
+
+・屋内/屋内ダンジョンはいずれもランダム生成・階層移動時のロード画面が無い、シームレスなダンジョン探索体験を実現・各ダンジョンでは、ダンジョン・オブジェクティブとランダムイベントが発生
+
+
+
+
+エンドゲームダンジョン
+
+・エンドゲーム向けのダンジョンは、通常ダンジョンをクリアすることで手に入るダンジョンキーでアンロック・ダンジョンキーのランクとaffix（ダンジョンモディファイアー）によって、異なる難易度、異なる条件下で挑戦することになる・どんなダンジョンも、ダンジョンキーを入手することでエンドゲーム用ダンジョンに変化。自分のビルドに適したダンジョンを選んで追求できる
+
+
+
+
+エリートモンスターとワールドボス
+
+・エリートモンスターには強力なaffixが付く。同じ「マルチショット」効果を付与するaffixでも、シャーマンであれば蘇生する敵の数が増え、アーチャーであれば放たれる矢が増えるといった具合に、異なる効果が生じる・ボス戦での「Stagger」システム導入。ボスにクラウドコントロール系のスキルを使うと「Stagger」メーターが溜まり、フルになると一次的にスタン状態になる。たとえばBlizzConで紹介されたワールドボス「Ashava」をスタンすると部位の一部を破壊。Ashavaの攻撃を弱められる
+
+
+
+
+アイテムレアリティとaffix
+
+・アイテムのaffixにはタレントポイントを追加するタイプもあり、ビルド構築の幅を広げてくれる・アイテムaffixによるボーナス効果値は固定ではなく、一定幅からランダムで決まる・Mythicアイテムは同時に1つまで装備可、4つの特性付き。詳細は後日発表・アイテムレアリティは、以下の画像のとおり
+
+
+
+
+
+ルーンワードの例。ルーンにもプログレッションシステムを設ける予定
+
+
+リリース後のサポート
+
+・拡張パックの販売を予定。パワーは有料販売しない・シーズン制を採用予定。シーズンごとにプレイヤー体験を変えることが目標。たとえばシーズンごとに強力なスキル/ビルドを変えるなど
+「Diablo IV: Worlds & Lore」
+
+
+別途開催された「The Art of Diablo IV」パネルによると、画像右中央のScosglenはスコットランドの地形をもとにバイオームを作成したとのこと
+
+「Diablo IV: Worlds & Lore」は『ディアブロ IV』の世界やバックストーリーに焦点を当てるパネルセッション。アイデア出しのプロセスや、新作で足を踏み入れる5つのリージョンについて説明された。『ディアブロ IV』では、ただダークな世界観を構築するだけでなく、『ディアブロ』独自のムードを醸し出すことが目指されている。そしてコンセプト作りの段階では、映画、音楽、コミック、TRPGなどさまざまな作品から着想を得ていったという。
+また『ディアブロ IV』はヒーローや王国同士の争いといったハイファンタジーではなく、貧窮した世界の寂れた村で生存者から頼み事を聞くといった、荒廃した世界観にあうクエストおよびストーリーテリングになっている。ビジュアルとしても、荒涼した印象を与えるカラーパレットもそうだが、暗いダンジョン内では画面の四隅が見えなかったりと、閉塞感を与える絵作りとなっている。
+
+
+新登場の「Drowned」勢力
+
+
+
+トレイラーにて姿が確認できたDuriel。苦悩の帝王であり、蛆虫の王でもあるDurielの新たな側面が描かれるという
+
+Q&Aコーナーでは、ブッチャーのようなファン人気の高いキャラクターが復活する可能性について問われていたが、やはり現時点では公表できず。ただしファンに喜んでもらえるモンスターラインナップになっているはずだと、シニア・エンカウンターデザイナーのCandace Thomas氏より説明された。
+
+
+別途開催された「The Art of Diablo IV」によると、コンセプトアート段階ではゲームではなく中世絵画が参考にされたという
+
+開発者Q&A
+BlizzCon 2019では、リード・ゲームデザイナーのJoe Shely氏とシニア・プロデューサーのTiffany Wat氏がグループQ&Aにて来場者の質問に答えている。そのまとめはDiabloFanにも掲載されており、以下ではその一部を抜粋。
+
+
+
+・コンソール間のクロスプレイについては検討中であり、どのような選択肢があるのか模索している段階・PC版にはコントローラーサポートあり。ただし現時点ではコンソール版のキーボードサポートは予定していない・コンソール版は2人ローカルCo-opに対応・大規模なシェアード・ワールドとしてデザインされているため、オフラインモードはなし。ただしソロもしくはフレンドとだけ遊びたいプレイヤー向けのオプションは存在する
+・オークションハウスは実装しない・強力なアイテムにはトレード回数に制限を設け、最高峰のアイテムはトレード不可にする案を検討中・クラン/ギルドシステムあり・戦利品はキャラクター個別ドロップ・トレジャーゴブリンは引き続き登場
+・『ディアブロII』で育ったファンもいれば、『ディアブロIII』が初めてのディアブロ体験だったというファンもいる。そうした幅広いファン層が満足できるようにしたいとのこと。よってカジュアルに遊べるコンテンツがある一方で、ハードコアモードの実装も予定あり
+・同シリーズにおけるセット装備は、最大レベルに到達したプレイヤーに新鮮なプレイ体験を与えると同時に、アイテム同士の相乗効果やスキルバフについて学ぶガイドとして機能している。だが『ディアブロIII』ではセット装備に注力しすぎた。『ディアブロ IV』ではビルド構築の幅を広げるべく、数百ものレジェンダリーアイテムを制作中
+そのほかストリーマーQuin69氏による開発者インタビューでは、マネタイズ手段として外見アイテムの少額課金が予定されていることも明かされた。アイテムの外見を他のアイテムの外見に変えるTransmogについては検討中とのこと。
+
+
+
+さまざまな情報が公開され期待が高まる『ディアブロ IV』であるが、開発はまだまだ初期段階。Blizzard基準で考えても、発売までには時間がかかるということなので、気長に待つのが良いだろう。
+
+
+
+＊長年『ディアブロ』シリーズの情報を追っているRhykker氏のゲームプレイ
+
+
+",ja,"
+
+
+
+
+
+
+
+
+
+
+
+“Diablo IV” BlizzCon announcement summary. A shared open world action RPG aiming to return to the dark
+03 Nov 2019, 09:44 by Ryuki Ishii
+New action RPG series “Diablo IV” officially announced at BlizzCon 2019. The supported platform was announced as PC / PayStation 4 / Xbox One (subject to change in Japan), but the development is still in its early stages and the release date is by no means close. However, BlizzCon 2019 panel session has a lot of information about Diablo IV. I would like to summarize them in this article.
+
+
+
+From announcement to ""Diablo IV: Unveiled"" panel
+The timeline of the story is set in the world several decades after Diablo III. The Sanctuary was devastated when Black Soulstone was crushed in the Diablo III Reaper of Souls and seven demons were released. Heaven's door is also closed and you can't ask for help. Meanwhile, Lilith, the creator of Sanctuary and Nefalim, daughter of the Demon King Mephisto, is summoned.
+
+
+
+This work aims to return to a dark style like the initial work. Unlike ""Diablo III"", which was close to the cartoon taste, the visuals, sounds, stories, and gameplay are unified in dark tones. You will also notice the delicate depiction of the latest game engine.
+
+Seamless shared open world
+
+
+
+
+Diablo IV uses the first seamless open world format in the series. You can freely travel through the sanctuary divided into five regions. Scosglen, the druid's hometown, Dry Stepps, where the harsh wilderness spreads, Fractured Peaks, a Gothic-style snowy mountain, Hawezar, where the black magic is swamped, and the collapsed desert city Kehjistan. The story is not linear but nonlinear. A new riding function (Mount) moves across the horse and moves on a vast map. The mount itself can be customized in appearance and performance.
+
+
+
+It has become a shared world that travels in a common world with other players, and suddenly encounters other players along the way. Public events and world events also occur, and you can challenge powerful bosses in cooperation with other players. In a social hub area where you can't fight, you can trade with other players or recruit friends. There are weather systems and day / night cycles in the world, and there are a myriad of randomly generated dungeons everywhere (see the information on the Diablo IV: Systems & Features panel below for more information)
+
+Developed with PvP in mind
+
+
+
+In Diablo IV, the avoidance action is now available for the PC version. In Diablo III, only the console version was introduced
+
+Diablo IV also has a PvP area. Diablo III's PvP had a balance adjustment problem, which was told in the Q & A session described later, but whether the balance adjustment based on both PvE and PvP works well in the new work is a matter of concern. is there.
+
+Barbarian, Sorceress, Druid
+
+
+
+
+There will be 5 classes at the time of release. Three types are currently known: Barbarian, Sorceress and Druid. Barbarian is a close combat class. The unique “Arsenal” system allows you to quickly switch between the weapons in the four weapon slots according to your activation skills. Sorceress uses powerful attribute magic such as ice and electric shock. Druid changes shape to a wolf or a bear by shape shift and fights while releasing the power of nature's anger. Pets are alive and well. The Diablo II druids were somewhat covered by Sorceress, but the new work does not use fire-based magic, but specializes in storm / earth.
+
+
+Barbarian with 4 weapon slots
+
+Note: The overseas media Game Informer has a list of skills and talent trees for each class (Barbarian / Sorceress / Druid).
+
+Item, skill, talent, rune
+
+
+
+
+
+
+
+Each class can be customized not only for gender but also for face, hair, skin color, eyes, scratches, tattoos, etc. Build construction consists of multiple layers: items, skills, talents, and runes / runeswords. Skill points for unlocking / strengthening skills cannot be reassigned, but if you raise your skill rank, you can unlock all of them. On the other hand, in the talent tree, the point distribution can be changed on the way. Talents cover a wide range from simple play styles to complex play styles that combine multiple skills.
+The bonus effect is determined by the combination of prefix (Condition Rune) and suffix (Effect Rune). For example, if you combine the condition rune “Activate the effect of the next inserted Rune when using a healing potion” and the effect rune that “the critical attack probability increases by 50% for 7 seconds when activated,” The attack probability is increased by 50% for 7 seconds.
+Note that Diablo III is too focused on set equipment, but Diablo IV will focus on legendary items to expand the range of build construction. The goal is to make the legendary item the same as or stronger than the set item.
+Supplemental information on Diablo IV: Systems & Features
+The “Diablo IV: Systems & Features” panel held on November 3 supplemented the information published the previous day.
+
+
+Lilith
+
+
+Shared / private area distinction
+
+・ Open World is shared with other players Shared World Dungeon and Campaign Mission is Private Area ・ Shared World The number of participants varies depending on the content. For example, more people can participate in hub areas and world events
+
+
+Compatible with various play styles. Top-of-the-line loot available for solo play
+
+
+Seamless random generation dungeon
+
+・ Random generation for both indoor and indoor dungeons ・ Realizes a seamless dungeon exploration experience without loading screens when moving in the hierarchy ・ Dungeon objectives and random events occur in each dungeon
+
+
+
+
+End game dungeon
+
+-Dungeon for end game is a dungeon key that can be obtained by clearing the dungeon, and will be challenged under different difficulty and different conditions depending on the rank of the dungeon key and the fix (dungeon modifier)・ Every dungeon is converted into an end game dungeon by obtaining a dungeon key. Select and pursue dungeons suitable for your build
+
+
+
+
+Elite Monster and World Boss
+
+-Elite monsters have a powerful affix. Even with the Affix that gives the same “multi-shot” effect, the number of enemies to be revived will increase if it is a shaman, and the arrows released will increase if it is an archer. System introduction. If you use cloud control skills on the boss, the “Stagger” meter will accumulate, and when it becomes full, it will be in a stunned state. For example, if you stun the world boss “Ashava” introduced by BlizzCon, part of the site will be destroyed. Can weaken Ashava's attack
+
+
+
+
+Item rarity and fixix
+
+-There is also a type that adds talent points to the item's affix, which expands the range of build construction-The bonus effect value by the item affix is not fixed, it is determined randomly from a certain range-Up to one Mythic item at the same time Yes, with 4 characteristics. Details will be announced at a later date ・ Item rarity is as shown in the image below
+
+
+
+
+
+Rune word example. Scheduled to have a progression system in the rune
+
+
+Post-release support
+
+・ Expansion packs will be sold. Power will not be sold for a fee. The goal is to change the player experience every season. For example, changing powerful skills / builds every season
+""Diablo IV: Worlds & Lore""
+
+
+According to the separately held `` The Art of Diablo IV '' panel, Scosglen in the center right of the image created a biome based on Scottish terrain
+
+“Diablo IV: Worlds & Lore” is a panel session focusing on the world and back story of Diablo IV. He explained the idea creation process and the five regions that will be introduced in the new work. “Diablo IV” not only builds a dark worldview, but also aims to create a unique mood of “Diablo”. At the concept stage, he was inspired by various works such as movies, music, comics, and TRPG.
+Diablo IV is not a high fantasy such as a fight between heroes or kingdoms, but a quest and storytelling that meets a ruined world view, such as listening to a survivor's request in a lonely village in a poor world. As with visuals, color palettes that give a depressing impression are the same, but in a dark dungeon, the four corners of the screen are not visible, creating a picture that gives a sense of blockage.
+
+
+New “Drowned” forces
+
+
+
+Duiel, whose appearance was confirmed on the trailer. The new side of Duiel, the emperor and the worm king
+
+In the Q & A corner, there was a question about the possibility of a popular fan-like character such as Butcher reviving, but it cannot be announced at this time. However, Candace Thomas, senior encounter designer, explained that it should be a monster lineup that will please fans.
+
+
+According to ""The Art of Diablo IV"" held separately, medieval paintings were referenced in the concept art stage, not games.
+
+Developer Q & A
+At BlizzCon 2019, lead game designer Joe Shely and senior producer Tiffany Wat answer visitors' questions in a group Q & A. The summary is also published in DiabloFan, below is a partial excerpt.
+
+
+
+・ Cross-play between consoles is under consideration, and we are exploring what options are available. ・ PC version has controller support. However, the keyboard version of the console version is not planned at this time. The console version supports two local co-ops. Since it is designed as a large-scale shared world, there is no offline mode. However, there are options for players who want to play solo or only with friends
+・ Do not implement auction house ・ We are considering a plan to limit the number of trades for powerful items and make the highest peak items non-tradeable ・ There is a clan / guild system Appearance
+・ Some fans grew up with ""Diablo II"", while others said ""Diablo III"" was the first Diablo experience. I want to satisfy such a wide range of fans. Therefore, while there is content that can be played casually, implementation of hardcore mode is also planned
+-The set equipment in the series provides a fresh play experience for the player who has reached the maximum level, and at the same time serves as a guide to learn about synergies between items and skill buffs. But “Diablo III” was too focused on set equipment. ""Diablo IV"" is producing hundreds of legendary items to expand the range of build construction
+In addition, a developer interview by Streamer Quin69 revealed that a small charge for appearance items is planned as a monetization tool. Transmog that changes the appearance of items to the appearance of other items is under consideration.
+
+
+
+It is “Diablo IV”, where various information is released and expectations are rising, but development is still in its early stages. Considering Blizzard standards, it takes time to release, so you should wait patiently.
+
+
+
+* Rhykker's gameplay, which has been tracking the Diablo series for many years
+
+
+"

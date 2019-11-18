@@ -1,0 +1,58 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Hackers can hijack your Google Home or Amazon Echo with freakin' laser beams
+04 Nov 2019, 21:04 by Zach Laidlaw
+Google's smart home speakers already don't have the best privacy-conscious track record. Back in 2017, our very own Artem Russakovskii had his Home Mini record every word he said for days on end, resulting in Google permanently removing top touch functionality from all Home Minis. Even when hotword functionality is working as intended, we often assume that a user has to be within earshot to actually control one of these devices. It turns out that's not the case, thanks to a new hack that uses laser beams to remotely interact with smart speakers.
+Throughout a series of demonstrations at the University of Michigan and University of Electro-Communications in Tokyo, cybersecurity researcher Takeshi Sugarawa was able to simulate a human voice by modulating a 60 milliwatt laser beam pointed at a Google Home. The Google Home registered this laser light as a verbal input, allowing Sugarawa to recreate the tonal modulation of common voice commands, like opening a garage door.
+""It’s possible to make microphones respond to light as if it were sound,"" Sugarawa explained. ""This means that anything that acts on sound commands will act on light commands.""
+
+
+
+It's not just Google Home and Amazon Echo that are susceptible to this hack. Any device with a microphone and running voice-control software could virtually be taken over with a laser beam modulated by a voice signal. That means your smartphone, some wearables, and potentially a voice-enabled vehicle – regardless of make, model, and manufacturer – could be controlled using this method. That said, it is worth noting that Android devices were only successfully hijacked from within a 16-foot radius while smart speakers were successfully controlled from 164 feet away, likely a result of having a more sensitive microphone array. A 5 milliwatt laser beam, like those found in cheap consumer laser pointers, was mostly unsuccessful in recreating these results at long range.
+Google has taken notice of Sugarawa's work and confirms that it is ""closely reviewing this research paper."" The company added, ""Protecting our users is paramount, and we're always looking at ways to improve the security of our devices.""
+
+Source: 
+Wired
+
+
+
+",en,"
+
+
+
+
+
+
+
+
+
+
+
+Hackers can hijack your Google Home or Amazon Echo with freakin' laser beams
+04 Nov 2019, 21:04 by Zach Laidlaw
+Google's smart home speakers already don't have the best privacy-conscious track record. Back in 2017, our very own Artem Russakovskii had his Home Mini record every word he said for days on end, resulting in Google permanently removing top touch functionality from all Home Minis. Even when hotword functionality is working as intended, we often assume that a user has to be within earshot to actually control one of these devices. It turns out that's not the case, thanks to a new hack that uses laser beams to remotely interact with smart speakers.
+Throughout a series of demonstrations at the University of Michigan and University of Electro-Communications in Tokyo, cybersecurity researcher Takeshi Sugarawa was able to simulate a human voice by modulating a 60 milliwatt laser beam pointed at a Google Home. The Google Home registered this laser light as a verbal input, allowing Sugarawa to recreate the tonal modulation of common voice commands, like opening a garage door.
+""It’s possible to make microphones respond to light as if it were sound,"" Sugarawa explained. ""This means that anything that acts on sound commands will act on light commands.""
+
+
+
+It's not just Google Home and Amazon Echo that are susceptible to this hack. Any device with a microphone and running voice-control software could virtually be taken over with a laser beam modulated by a voice signal. That means your smartphone, some wearables, and potentially a voice-enabled vehicle – regardless of make, model, and manufacturer – could be controlled using this method. That said, it is worth noting that Android devices were only successfully hijacked from within a 16-foot radius while smart speakers were successfully controlled from 164 feet away, likely a result of having a more sensitive microphone array. A 5 milliwatt laser beam, like those found in cheap consumer laser pointers, was mostly unsuccessful in recreating these results at long range.
+Google has taken notice of Sugarawa's work and confirms that it is ""closely reviewing this research paper."" The company added, ""Protecting our users is paramount, and we're always looking at ways to improve the security of our devices.""
+
+Source: 
+Wired
+
+
+
+"

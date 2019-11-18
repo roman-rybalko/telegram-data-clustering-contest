@@ -1,0 +1,100 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+OpenAI has published the text-generating AI it said was too dangerous to share
+The lab says it’s seen ‘no strong evidence of misuse so far’
+07 Nov 2019, 12:24 by James Vincent
+The research lab OpenAI has released the full version of a text-generating AI system that experts warned could be used for malicious purposes.
+The institute originally announced the system, GPT-2, in February this year, but withheld the full version of the program out of fear it would be used to spread fake news, spam, and disinformation. Since then it’s released smaller, less complex versions of GPT-2 and studied their reception. Others also replicated the work. In a blog post this week, OpenAI now says it’s seen “no strong evidence of misuse” and has released the model in full.
+GPT-2 can write fake news articles, stories, poems, and code
+GPT-2 is part of a new breed of text-generation systems that have impressed experts with their ability to generate coherent text from minimal prompts. The system was trained on eight million text documents scraped from the web and responds to text snippets supplied by users. Feed it a fake headline, for example, and it will write a news story; give it the first line of a poem and it’ll supply a whole verse.
+It’s tricky to convey exactly how good GPT-2’s output is, but the model frequently produces eerily cogent writing that can often give the appearance of intelligence (though that’s not to say what GPT-2 is doing involves anything we’d recognize as cognition). Play around with the system long enough, though, and its limitations become clear. It particularly suffers with the challenge of long-term coherence; for example, using the names and attributes of characters consistently in a story, or sticking to a single subject in a news article.
+The best way to get a feel for GPT-2’s abilities is to try it out yourself. You can access a web version at TalkToTransformer.com and enter your own prompts. (A “transformer” is a component of machine learning architecture used to create GPT-2 and its fellows.)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Apart from the raw capabilities of GPT-2, the model’s release is notable as part of an ongoing debate about the responsibility of AI researchers to mitigate harm caused by their work. Experts have pointed out that easy access to cutting-edge AI tools can enable malicious actors; a dynamic we’ve seen with the use of deepfakes to generate revenge porn, for example. OpenAI limited the release of its model because of this concern.
+However, not everyone applauded the lab’s approach. Many experts criticized the decision, saying it limited the amount of research others could do to mitigate the model’s harms, and that it created unnecessary hype about the dangers of artificial intelligence.
+“The words ‘too dangerous’ were casually thrown out here without a lot of thought or experimentation,” researcher Delip Rao told The Verge back in February. “I don’t think [OpenAI] spent enough time proving it was actually dangerous.”
+In its announcement of the full model this week, OpenAI noted that GPT-2 could be misused, citing third-party research stating the system could help generate “synthetic propaganda” for extreme ideological positions. But it also admitted that its fears that the system would be used to pump out a high-volume of coherent spam, overwhelming online information systems like social media, have not yet come to pass.
+The lab also noted that its own researchers had created automatic systems that could spot GPT-2’s output with ~95% accuracy, but that this figure was not high enough “for standalone detection” and means any system used to automatically spot fake text would need to be paired with human judges. This, though, is not particularly unusual for such moderation tasks, which often rely on humans in the loop to spot fake images and videos.
+OpenAI says it will continue to watch how GPT-2 is used by the community and public, and will further develop its policies on the responsible publication of AI research.
+
+
+",en,"
+
+
+
+
+
+
+
+
+
+
+
+OpenAI has published the text-generating AI it said was too dangerous to share
+The lab says it’s seen ‘no strong evidence of misuse so far’
+07 Nov 2019, 12:24 by James Vincent
+The research lab OpenAI has released the full version of a text-generating AI system that experts warned could be used for malicious purposes.
+The institute originally announced the system, GPT-2, in February this year, but withheld the full version of the program out of fear it would be used to spread fake news, spam, and disinformation. Since then it’s released smaller, less complex versions of GPT-2 and studied their reception. Others also replicated the work. In a blog post this week, OpenAI now says it’s seen “no strong evidence of misuse” and has released the model in full.
+GPT-2 can write fake news articles, stories, poems, and code
+GPT-2 is part of a new breed of text-generation systems that have impressed experts with their ability to generate coherent text from minimal prompts. The system was trained on eight million text documents scraped from the web and responds to text snippets supplied by users. Feed it a fake headline, for example, and it will write a news story; give it the first line of a poem and it’ll supply a whole verse.
+It’s tricky to convey exactly how good GPT-2’s output is, but the model frequently produces eerily cogent writing that can often give the appearance of intelligence (though that’s not to say what GPT-2 is doing involves anything we’d recognize as cognition). Play around with the system long enough, though, and its limitations become clear. It particularly suffers with the challenge of long-term coherence; for example, using the names and attributes of characters consistently in a story, or sticking to a single subject in a news article.
+The best way to get a feel for GPT-2’s abilities is to try it out yourself. You can access a web version at TalkToTransformer.com and enter your own prompts. (A “transformer” is a component of machine learning architecture used to create GPT-2 and its fellows.)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Apart from the raw capabilities of GPT-2, the model’s release is notable as part of an ongoing debate about the responsibility of AI researchers to mitigate harm caused by their work. Experts have pointed out that easy access to cutting-edge AI tools can enable malicious actors; a dynamic we’ve seen with the use of deepfakes to generate revenge porn, for example. OpenAI limited the release of its model because of this concern.
+However, not everyone applauded the lab’s approach. Many experts criticized the decision, saying it limited the amount of research others could do to mitigate the model’s harms, and that it created unnecessary hype about the dangers of artificial intelligence.
+“The words ‘too dangerous’ were casually thrown out here without a lot of thought or experimentation,” researcher Delip Rao told The Verge back in February. “I don’t think [OpenAI] spent enough time proving it was actually dangerous.”
+In its announcement of the full model this week, OpenAI noted that GPT-2 could be misused, citing third-party research stating the system could help generate “synthetic propaganda” for extreme ideological positions. But it also admitted that its fears that the system would be used to pump out a high-volume of coherent spam, overwhelming online information systems like social media, have not yet come to pass.
+The lab also noted that its own researchers had created automatic systems that could spot GPT-2’s output with ~95% accuracy, but that this figure was not high enough “for standalone detection” and means any system used to automatically spot fake text would need to be paired with human judges. This, though, is not particularly unusual for such moderation tasks, which often rely on humans in the loop to spot fake images and videos.
+OpenAI says it will continue to watch how GPT-2 is used by the community and public, and will further develop its policies on the responsible publication of AI research.
+
+
+"

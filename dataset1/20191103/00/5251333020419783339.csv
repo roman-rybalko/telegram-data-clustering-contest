@@ -1,0 +1,48 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Cuidado: esta aplicación para Android ha infectado con un virus a 45.000 dispositivos
+03 Nov 2019 by Diario Tecnología
+
+
+
+La compañía de ciberseguridad Symantec ha detectado una aplicación maliciosa para dispositivos Android, conocida como Xhelper, que es en realidad un «malware» (virus informático) que ha infectado a 45.000 móviles en todo el mundo en los últimos seis meses. Xhelper se considera una amenaza persistente avanzada (APT, por sus siglas en inglés), ya que es capaz de permanecer en los dispositivos móviles tras desinstalar la «app» e incluso después del reseteo, según explica un informe de Symantec. Este «software» malicioso se esconde del usuario y no se muestra en la lista de «apps» instaladas, ya que no ofrece una interfaz de usuario normal, sino que es solo un componente, y tampoco puede activarse de forma manual, ya que no instala ningún icono. Xhelper se activa a través de eventos externos, como cuando el dispositivo se conecta o desconecta de una fuente de alimentación, cuando se instala o desinstala una aplicación e incluso cuando el móvil se resetea. El «malware» funciona en segundo plano para no resultar afectado por el ahorro de batería y está programado para reiniciarse automáticamente si se detiene. Una vez logra acceso al dispositivo, este virus carga su código malicioso en la memoria y conecta al dispositivo al servidor de los cibercriminales, desde donde difunde diversos programas maliciosos para el robo de dato s o incluso hacerse con el control del móvil, y otros usuarios también se han visto afectados por «malware» publicitarios. La aplicación ha afectado a 45.000 usuarios de móviles con sistema Android en todo el mundo en los últimos seis meses, desde su detección en marzo, aunque estos se concentran especialmente en Rusia, India y Estados Unidos. Ninguna de las aplicaciones afectadas se encontraban en Google Play.
+
+Artículo original
+
+
+
+",es,"
+
+
+
+
+
+
+
+
+
+
+
+Beware: this Android application has infected 45,000 devices with a virus
+03 Nov 2019 by Diario Tecnología
+
+
+
+The cybersecurity company Symantec has detected a malicious application for Android devices, known as Xhelper, which is actually a ""malware"" (computer virus) that has infected 45,000 mobiles worldwide in the last six months. Xhelper is considered an advanced persistent threat (APT), as it is able to remain on mobile devices after uninstalling the app and even after resetting, according to a Symantec report. This malicious ""software"" is hidden from the user and is not shown in the list of installed ""apps"", since it does not offer a normal user interface, but is only a component, and cannot be activated manually, since it does not Install any icon. Xhelper is activated through external events, such as when the device is connected or disconnected from a power source, when an application is installed or uninstalled and even when the mobile is reset. ""Malware"" works in the background so as not to be affected by battery saving and is programmed to restart automatically if it stops. Once you get access to the device, this virus loads its malicious code into memory and connects the device to the cybercriminal server, from where it spreads various malicious programs for data theft or even take control of the mobile, and other users too They have been affected by advertising ""malware."" The application has affected 45,000 mobile users with Android systems worldwide in the last six months, since its detection in March, although these are especially concentrated in Russia, India and the United States. None of the affected applications were on Google Play.
+
+Original article
+
+
+
+"

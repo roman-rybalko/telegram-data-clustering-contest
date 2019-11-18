@@ -1,0 +1,114 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Do ČR se vrací trojan Adwind, útočí nejen na Windows, ale i macOS
+01 Nov 2019, 10:00 by Marek Vacovský
+
+   •  Za 15 % kybernetických útoků na české uživatele v říjnu stojí trojské koně, které se pokoušejí získat hesla z internetových prohlížečů    •  Jejich výskyt nicméně od minulého měsíce klesl    •  Vyplývá to z pravidelné analýzy detekcí internetových hrozeb v České republice, kterou sestavují experti bezpečnostní společnosti ESET
+
+Trojské koně, které mají pro útočníky získávat přístupové údaje do internetových služeb, jsou na ústupu. V září společně dosahovaly na celou čtvrtinu detekcí, nyní již jen na 15 %. Přesto není toto riziko dobré podceňovat. Experti doporučují, aby uživatelé zůstávali při práci s hesly opatrní.
+
+Přečtěte si také
+
+
+„Trendy v kybernetických hrozbách se rychle mění. Tyto trojské koně patřily mezi nejčastější detekce tři měsíce v řadě. To je také patrně důvod, proč nyní výskyt tak zásadně poklesl. Zřejmě už nejsou pro útočníky dostatečně rentabilní a hledají jiné cesty,“ popisuje vývoj Martin Jirkal, vedoucí analytického oddělení v pražské pobočce firmy ESET. „Hesla ale tvoří základní bariéru mezi osobními informacemi a případnými útočníky. Proto by uživatelé nadále měli dbát na jejich ochranu, stejně jako chrání například PIN k platební kartě,“ dodává.
+Po několika měsících se na první příčku vyhoupl trojský kůň Spy.Agent.AES s 8 % detekcí. Útočníci jej zneužívají k získání hesel z internetových prohlížečů Chrome a Firefox. Tento malware se šíří prostřednictvím příloh podvodných e-mailů, které mají působit legitimně. Škodlivé přílohy obsahují anglické názvy jako „NEW ORDER” nebo „Delivery Note“.
+Výrazně poklesl podíl detekcí trojského koně Fareit. V říjnu jej analytici z ESET zaznamenali v 6 % případů, v září to přitom bylo 14 %. Na poklesu je zajímavé, že v září útočníci investovali značné množství času, aby se jim podařilo malware před bezpečnostními programy skrýt. Měnili tak například několikrát postup infikace zařízení. Fareit se zaměřuje na odcizení přístupových údajů z prohlížečů Chrome, Firefox, Opera či Internet Explorer.
+
+Přečtěte si také
+
+
+Na třetí příčce skončil s odstupem 3 % backdoor Adwind. Tento malware se po delší době vrací mezi nejvážnější hrozby v České republice. Nejaktivnější byl v roce 2016. Adwind vyvíjejí útočníci na Blízkém východě a je specifickým především svojí multiplatformitou.
+„Neútočí tedy jen na konkrétní operační systém, například Microsoft Windows, ale napadá i zařízení s macOS X. Adwind je nejsofistikovanější malware psaný v jazyce Java,“ vysvětluje rizika backdooru Jirkal. Jakmile je backdoor aktivní, je schopen odcizit informace o uživateli nebo je útočníci mohou zneužít k distribuci dalšího škodlivého kódu.
+Nejčastější kybernetické hrozby v České republice za říjen 2019:
+
+Trojan.MSIL/Spy.Agent.AES (8,19 %)
+Trojan.Win32/PSW.Fareit (6,32 %)
+Backdoor.Java/Adwind (2,84 %)
+Trojan.Win32/Formbook (2,23 %)
+Trojan.MSIL/Bladabindi (2,17 %)
+Trojan.Win32/Fynloski (1,80 %)
+Backdoor.MSIL/NanoCore (1,75 %)
+Trojan.ML/Augur (1,49 %)
+Backdoor.MSIL/Agent.BQC (1,48 %)
+Trojan.Win32/CrthRazy (1,26 %)
+
+Za pozornost stojí také trojský kůň Augur na osmé příčce, za jehož detekcí stojí nová technologie založená na strojovém učení, kterou společnost ESET používá k rozšíření vícevrstvé ochrany. V tomto případě technologie zachytává dosud neznámé a zero-day hrozby, které ještě neprošly reverzní analýzou, a nejsou proto přesně popsány.
+
+Související články
+
+
+
+
+
+
+
+
+
+",cs,"
+
+
+
+
+
+
+
+
+
+
+
+Trojan Adwind returns to the Czech Republic, attacking not only Windows but also macOS
+01 Nov 2019, 10:00 by Marek Vacovský
+
+• 15% of cyber attacks on Czech users in October are caused by Trojans trying to retrieve passwords from Internet browsers • However, their incidence has decreased since last month
+
+Trojans are retreating for attackers to access Internet services. Together in September, they achieved a quarter of the detection, now only 15%. Nevertheless, this risk should not be underestimated. Experts recommend that users remain cautious when working with passwords.
+
+Read also
+
+
+“Trends in cyber threats are changing rapidly. These Trojans were among the most common detections for three months in a row. This is also probably the reason why the incidence has now decreased so fundamentally. Apparently they are no longer profitable enough for the attackers and are looking for other ways, ”says Martin Jirkal, head of the analytical department at ESET's Prague branch. “But passwords are a basic barrier between personal information and potential attackers. Therefore, users should continue to take care of their protection, as well as protecting their credit card PIN, for example, ”he adds.
+After several months, Spy.Agent.AES Trojan with 8% detection reached the top spot. Attackers use it to retrieve passwords from Chrome and Firefox. This malware is spread through attachments to fraudulent e-mails that are intended to act legitimately. Malicious attachments contain English names such as ""NEW ORDER"" or ""Delivery Note"".
+Detection of Trojan horse Fareit dropped significantly. In October, ESET analysts recorded it in 6% of cases, while in September it was 14%. On the downside, it is interesting that in September the attackers invested a significant amount of time to hide malware from security programs. For example, they changed the procedure of infection of the device several times. Fareit focuses on stealing access data from Chrome, Firefox, Opera or Internet Explorer.
+
+Read also
+
+
+Adwind finished third with 3% backdoor. This malware returns after some time to the most serious threats in the Czech Republic. It was most active in 2016. Adwind is being developed by attackers in the Middle East and is particularly specific for its multiplatformity.
+""So it's not just attacking a specific operating system, such as Microsoft Windows, but it also attacks macOS X devices. Adwind is the most sophisticated malware written in Java,"" explains Jirkal's backdoor risks. Once a backdoor is active, it is able to steal user information or can be used by attackers to distribute additional malicious code.
+The most common cyber threats in the Czech Republic in October 2019:
+
+Trojan.MSIL / Spy.Agent.AES (8.19%)
+Trojan.Win32 / PSW.Fareit (6.32%)
+Backdoor.Java/Adwind (2.84%)
+Trojan.Win32 / Formbook (2.23%)
+Trojan.MSIL / Bladabindi (2.17%)
+Trojan.Win32 / Fynloski (1.80%)
+Backdoor.MSIL / NanoCore (1.75%)
+Trojan.ML/Augur (1.49%)
+Backdoor.MSIL / Agent.BQC (1.48%)
+Trojan.Win32 / CrthRazy (1.26%)
+
+Also noteworthy is the Augur Trojan horse, which is detected by ESET's new machine learning technology, which ESET uses to extend multilayer protection. In this case, the technology captures hitherto unknown and zero-day threats that have not yet undergone reverse analysis and are therefore not accurately described.
+
+related articles
+
+
+
+
+
+
+
+
+
+"

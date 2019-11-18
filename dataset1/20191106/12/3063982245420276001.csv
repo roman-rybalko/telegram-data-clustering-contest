@@ -1,0 +1,44 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Firefox Nightly unterstützt HTTP/3-Experimente
+Die aktuelle Nightly-Version des Firefox-Browsers von Mozilla bietet erstmals experimentelle Unterstützung von HTTP/3 und Quic. Noch reicht das aber nur für ein paar wenige Tests.
+06 Nov 2019, 12:29 by Sebastian Grüner
+Die aktuelle Version 72 von Firefox Nightly unterstützt erstmals experimentelles HTTP/3. Das geht aus dem Bugtracker von Hersteller Mozilla hervor. Zurzeit ist die Implementierung aber noch nicht standardmäßig aktiviert, sondern hinter einer Konfigurationsoption versteckt.
+Um HTTP/3 im Firefox also überhaupt testen zu können, müssen Nutzer den Wert der Option network.http.http3.enabled in about:config zunächst auf true setzen. Der Hauptentwickler des Kommandozeilenwerkzeugs Curl, Daniel Stenberg, hat auf einer Webseite bereits eine Liste von Webseiten bereitgestellt, die HTTP/3 serverseitig unterstützen. Damit soll sich eine Verbindung über das Protokoll aufbauen lassen.
+In einem kurzen Test konnten wir das zwar bestätigen, in unserem Fall stürzte der Firefox-Browser dabei unter Umständen jedoch ab oder ist eingefroren. Die Verwendung der Option ist entsprechend mit der gebotenen Vorsicht zu betrachten. Wohl auch wegen dieser noch recht fehleranfälligen Unterstützung ist die Nutzung von HTTP/3 nicht standardmäßig aktiviert. Vor wenigen Wochen hatte Cloudflare angekündigt, HTTP/3 gemeinsam mit den Browsern Chrome und Firefox unterstützen zu wollen.
+Bei HTTP/3 handelt es sich um das bei der IETF ursprünglich als HTTP-über-Quic erstellte Protokoll. Die IETF hatte die Arbeiten von Google an Quic für eine eigene Standardisierung übernommen. Dabei ist das IETF Quic im Gegensatz zur Ursprungsidee in ein Transportprotokoll und darüberliegende Schichten aufgeteilt worden. HTTP/3 übernimmt dabei sehr viele der Neuerungen von HTTP/2, enthält im Vergleich dazu aber wegen der Quic-Grundlage auch einige Änderungen, was eine neue Protokollversion notwendig gemacht hat.
+
+
+",de,"
+
+
+
+
+
+
+
+
+
+
+
+Firefox Nightly supports HTTP / 3 experiments
+The current Nightly version of Mozilla's Firefox browser provides experimental support for HTTP / 3 and Quic for the first time. But that's only enough for a few tests.
+06 Nov 2019, 12:29 by Sebastian Grüner
+The current version 72 of Firefox Nightly supports experimental HTTP / 3 for the first time. This is the result of the bugtracker from manufacturer Mozilla. Currently, the implementation is not yet enabled by default, but hidden behind a configuration option.
+To be able to test HTTP / 3 in Firefox, users must first set the value of the option network.http.http3.enabled in about: config to true. The main developer of the command line tool Curl, Daniel Stenberg, has already provided a list of websites that support HTTP / 3 on the server side. This should make it possible to establish a connection via the protocol.
+In a short test we were able to confirm that, in our case, the Firefox browser crashed under certain circumstances, or is frozen. The use of the option should be considered with due care. Probably because of this still quite error-prone support the use of HTTP / 3 is not activated by default. A few weeks ago Cloudflare had announced that it would support HTTP / 3 in conjunction with the browsers Chrome and Firefox.
+HTTP / 3 is the protocol IETF originally created as HTTP over Quic. The IETF had taken over Google's work on Quic for its own standardization. In contrast to the original idea, the IETF Quic has been split into a transport protocol and layers above it. HTTP / 3 takes over many of the new features of HTTP / 2, but also contains some changes because of the Quic basis, which made a new version of the protocol necessary.
+
+
+"

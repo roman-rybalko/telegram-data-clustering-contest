@@ -1,0 +1,92 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Cientistas estudam usar bactérias como dispositivos de internet das coisas
+Cientistas da Universidade de Queen Mary, em Londres, sugerem que bactérias podem ser usadas para transferir informações de forma tão eficiente quanto dispositivos eletrônicos
+06 Nov 2019, 15:39 by Luiz Nogueira
+Para que um dispositivo de internet das coisas (IoT) funcione, ele deve ter alguns pré-requisitos, como a capacidade de se comunicar com outros aparelhos, armazenar informações e monitorar seu ambiente com uma variedade de sensores.
+Com isso em mente, os pesquisadores Raphael Kim e Stefan Posla, da Queen Mary University, em Londres, apontaram para uma possibilidade bastante interessante: as bactérias podem funcionar como dispositivos IoT, pois possuem mecanismos e sensores embutidos, além de uma poderosa arquitetura de armazenamento e processamento de informações.
+Por esse motivo, eles sustentam a hipótese de usar bactérias para criar uma versão biológica de Internet das Coisas.
+A maneira como as bactérias armazenam e processam informações é algo que a ciência vem estudando há tempos. Grande parte da pesquisa está focada na bactéria Escherichia Coli, conhecida por armazenar suas estruturas de DNA em forma de anel, que transmitem informações de um organismo para outro em um processo chamado conjugação.
+
+O campo de pesquisa
+
+No ano passado, Federico Tavella, da Universidade de Pádua, e alguns de seus colegas construíram uma área de experimentos onde uma cepa de E. Coli transmitia uma mensagem simples do tipo ""Olá, mundo"" a uma cepa móvel, que levava as informações para outro local.
+Esse tipo de transmissão ocorre o tempo todo no mundo bacteriano, criando uma rede incrivelmente complexa. Mas o experimento que Tavella realizou conseguiu mostrar como esse sistema pode ser explorado para que uma rede de transmissão de informações seja criada de forma orgânica.
+A E. Coli é um meio perfeito para esta rede. Elas são móveis, possuem receptores em suas paredes celulares que detectam aspectos de seu ambiente, armazenam informações no DNA e as processam facilmente, além do fato de serem minúsculas, e conseguirem se instalar em ambientes que as tecnologias criadas pelo homem não conseguem acessar.
+
+Suas aplicações
+
+A E. Coli é relativamente fácil de manipular e projetar, por esse motivo, ela é uma potencial candidata para integrar uma bio-internet das coisas. Kim e Poslad conversaram sobre uma ampla gama de possibilidades. ""As bactérias podem ser programadas e implantadas em diferentes ambientes, como o mar e as 'cidades inteligentes', para detectar toxinas e poluentes, coletar dados e realizar processos de biorremediação"", afirmam.
+As bactérias podem até ser reprogramadas para tratar doenças. ""Abrigando DNA que codifica hormônios úteis, por exemplo, as bactérias podem se direcionar para um destino escolhido dentro do corpo humano, produzir e liberar hormônios específicos quando seus sensores forem acionados"", sugeremos os pesquisadores.
+
+Uso ilícito
+
+Obviamente, há algumas desvantagens. Enquanto a engenharia genética possibilita todos os tipos de experimento, sua facilidade de programação preocupa especialistas. Isso porque, não é difícil imaginar bactérias agindo como vetores para disseminação de doenças, seria como um malware humano.
+Também é fácil perder bactérias. Uma coisa que elas não possuem é algo equivalente ao GPS. Então, rastreá-las é difícil. É aí que mora o perigo da internet biológica das coisas.
+Um novo tipo de criminoso pode surgir e ""programar"" esses organismos para liberar doenças e outros agentes patógenos para o organismo de seres vivos. Biólogos observaram que é possível que as E. Coli transfiram material para leveduras, plantas e até células de mamíferos. 
+A evolução natural desses organismos também apresenta um papel que pode ser prejudicial. Por mais benigna que uma bactéria possa parecer, o processo de evolução natural pode causar estragos por mutação e seleção, com resultados difíceis de prever.
+Kim e Poslad reconhecem algumas dessas questões, dizendo que a criação de uma rede baseada em bactérias apresenta novas questões éticas. ""Esses desafios oferecem uma área para discussão sobre as implicações mais amplas dos sistemas de Internet das Coisas, impulsionadas por bactérias"", concluem.
+
+
+
+
+
+
+
+",pt,"
+
+
+
+
+
+
+
+
+
+
+
+Scientists study using bacteria as IoT devices
+Scientists at Queen Mary University in London suggest that bacteria can be used to transfer information as efficiently as electronic devices.
+06 Nov 2019, 15:39 by Luiz Nogueira
+For an IoT device to work, it must have some prerequisites, such as the ability to communicate with other devices, store information, and monitor your environment with a variety of sensors.
+With that in mind, researchers Raphael Kim and Stefan Posla of Queen Mary University in London pointed to a very interesting possibility: Bacteria can function as IoT devices because they have built-in mechanisms and sensors, and a powerful storage architecture. and information processing.
+For this reason, they support the hypothesis of using bacteria to create a biological version of the Internet of Things.
+The way bacteria store and process information is something that science has been studying for a long time. Much of the research is focused on the bacterium Escherichia Coli, known for storing its ring-shaped DNA structures, which transmit information from one organism to another in a process called conjugation.
+
+The search field
+
+Last year Federico Tavella of the University of Padua and some of his colleagues built an experiment area where an E. Coli strain conveyed a simple ""Hello world"" message to a mobile strain that carried the information to another location.
+This type of transmission occurs all the time in the bacterial world, creating an incredibly complex network. But Tavella's experiment was able to show how this system can be exploited so that an information transmission network can be created organically.
+E. Coli is a perfect medium for this network. They are mobile, have receptors on their cell walls that detect aspects of their environment, store information in DNA and process it easily, as well as being tiny, and can settle in environments that man-made technologies cannot access.
+
+Your applications
+
+E. Coli is relatively easy to manipulate and design, so it is a potential candidate to integrate a bio-internet of things. Kim and Poslad talked about a wide range of possibilities. ""Bacteria can be programmed and implanted in different environments such as the sea and 'smart cities' to detect toxins and pollutants, collect data and perform bioremediation processes,"" they say.
+Bacteria can even be reprogrammed to treat disease. ""By harboring DNA that encodes useful hormones, for example, bacteria can move to a chosen destination within the human body, produce and release specific hormones when their sensors are triggered,"" the researchers suggest.
+
+Illicit use
+
+Obviously, there are some disadvantages. While genetic engineering makes all kinds of experiments possible, its ease of programming worries experts. This is because it is not difficult to imagine bacteria acting as vectors for the spread of disease, it would be like human malware.
+It is also easy to lose bacteria. One thing they don't have is something equivalent to GPS. So tracking them down is hard. That's where the danger of the biological internet of things lies.
+A new type of criminal can emerge and ""program"" these organisms to release disease and other pathogens into the organism of living things. Biologists have observed that E. coli may transfer material to yeast, plants and even mammalian cells.
+The natural evolution of these organisms also plays a role that can be detrimental. As benign as a bacterium may seem, the process of natural evolution can wreak havoc on mutation and selection, with hard-to-predict results.
+Kim and Poslad acknowledge some of these issues, saying that creating a bacterial-based network presents new ethical issues. ""These challenges provide an area for discussion about the broader implications of bacterial-driven IoT systems,"" they conclude.
+
+
+
+
+
+
+
+"

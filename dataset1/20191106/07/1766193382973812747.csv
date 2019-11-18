@@ -1,0 +1,270 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Emotet, Trickbot, Ryuk – ein explosiver Malware-Cocktail
+Der aktuell ""zerstörerischste"" Schädling Emotet besteht eigentlich aus einer Kaskade mehrerer Schadprogramme, die zusammen vielstellige Millionenschäden verursachen.
+06 Nov 2019, 07:03 by Thomas Hungenberg
+Emotet hat in den vergangenen Monaten für viele Schlagzeilen gesorgt. Infektionen mit Emotet und insbesondere darüber nachgeladene weitere Schadprogramme wie Trickbot oder die im Anschluss in den Netzwerken der Opfer ausgerollte Ransomware Ryuk führten bereits weltweit und auch in Deutschland zu enormen finanziellen Schäden. Das Bundesamt für Sicherheit in der Informationstechnik (BSI) warnte mehrfach vor Emotet; das US-CERT bezeichntete Emotet als eines der ""kostenträchtigsten und zerstörerischsten"" Schadprogramme.
+In einer Vielzahl von Unternehmen, Krankenhäusern, Einrichtungen der kommunalen Verwaltungen und anderen Organisationen kam es zu großflächigen oder kompletten Ausfällen der IT-Infrastruktur. Dies hatte vieltägige Produktionsausfälle zur Folge, Dienstleistungen konnten über einen längeren Zeitraum nicht erbracht werden und Mitarbeiter mussten in den Zwangsurlaub geschickt werden. Nicht berichtet wird üblicherweise über die Schäden bei tausenden ebenfalls von Emotet betroffenen Privatnutzern durch den Missbrauch ausgespähter Zugangsdaten oder Online-Banking-Betrug.
+Wie alles begann
+Emotet basiert auf einer Weiterentwicklung des Online-Banking-Trojaners Cridex (auch Bugat oder Feodo genannt). Der Name Emotet wurde von dem IT-Sicherheitsdienstleister Trend Micro geprägt, der im Juni 2014 als Erster dazu berichtete. Verbreitet wurde die erste Version von Emotet – auch als Geodo bezeichnet – über Spam-Kampagnen mit gefälschten Rechnungen oder angeblichen Mitteilungen von Banken. Die Spam-Mails enthielten dabei das Schadprogramm entweder direkt im Dateianhang (teilweise in ein ZIP-Archiv verpackt) oder die Spam-Mails enthielten einen Link, über den der Empfänger die angebliche Rechnung bzw. Mitteilung herunterladen sollte. Durch doppelte Dateiendungen wie "".pdf.exe"" wurde verschleiert, dass es sich bei dem Anhang beziehungsweise der heruntergeladenen Datei um ein ausführbares Programm handelte.
+Geodo führte sogenannte ""Man-in-the-Browser""-Angriffe auf das Online-Banking der Opfer durch, indem es sich in den Webbrowser einklinkte und vom Nutzer eingegebene Anmeldedaten ausspähte. Dabei standen Kunden deutscher und österreichischer Banken im Fokus der Angreifer, die deshalb ihre Spam-Mails primär an E-Mail-Adressen mit den Endungen .de und .at versendeten. Zusätzlich spähte Geodo auf den Opfersystemen Zugangsdaten für E-Mail-Konten aus, um über diese anschließend weitere Spam-Mails zur Verbreitung des Schadprogramms zu versenden. Dabei verwendete es – wie auch heutige Emotet-Versionen noch – eine mitgelieferte Kopie des Passwort-Recovery-Tools Mail PassView des Herstellers NirSoft, um in E-Mail-Programmen wie Microsoft Outlook, Windows Mail oder Mozilla Thunderbird gespeicherte Zugangsdaten zu extrahieren.
+Die weitere Entwicklung
+Die zweite Generation von Emotet – welche von den Tätern ab Herbst 2014 in Umlauf gebracht wurde – hatte einen neuen, modularen Aufbau. Eine Infektion installierte zunächst nur eine Kernkomponente des Schadprogramms, welche dann Module für verschiedene Schadfunktionen nachladen konnte. Dies umfasste Module für Angriffe auf das Online-Banking, das Ausspähen von Zugangsdaten aus E-Mail-Clients und Webbrowsern, das Auslesen von Outlook-Adressbüchern, den Spam-Versand und zur Durchführung von DDoS-Angriffen. Das Banking-Modul nutzte jetzt (wie bereits einige andere Banking-Trojaner-Familien) sogenannte Web-Injects. Diese fügten während des Online-Bankings im Webbrowser des Nutzers unter anderem dynamisch zusätzliche Eingabefelder zur Abfrage von TANs ein, um damit im Hintergrund Überweisungen auszuführen. Außerdem unterdrückten sie Sicherheitswarnungen der Bank.
+Mit der dritten Version von Emotet – welche ab Januar 2015 verbreitet wurde – gerieten auch Kunden Schweizer Banken in den Fokus der Täter, die deshalb ihre Spam-Kampagnen auf Schweizer Nutzer ausweiteten. Zusätzlich wurden die Schutzfunktionen des Schadprogramms gegen Detektion und Analyse verbessert.
+Die aktuelle Emotet-Generation
+Die vierte Emotet-Generation namens Heodo, auf der auch die heutigen Varianten des Schadprogramms noch basieren, wurde erstmals im März 2017 gesichtet. Seitdem sind Nutzer weltweit von Emotets Spam-Kampagnen betroffen. Statt ausführbarer Dateien enthalten die Spam-Mails nun entweder ein Microsoft-Office-Dokument als Dateianhang oder einen Link, der zum Download eines solchen Dokuments führt. In einzelnen Kampagnen werden auch PDFs als Dateianhang versendet, welche den Download-Link zu einem schädlichen Office-Dokument enthalten. Die Infektion der Opfersysteme mit Emotet erfolgt über in den Dokumenten enthaltene Makros, welche das Schadprogramm aus dem Internet nachladen und ausführen.
+Das frühere Emotet-eigene Banking-Modul wurde in der vierten Generation entfernt. Stattdessen lädt Emotet im Auftrag anderer Tätergruppen (Affiliates) je nach Kampagne und Standort des Opfers (Geolokalisierung der IP-Adresse) andere Banking-Trojaner wie Trickbot, Ursnif, Panda ZeuS oder IcedID nach. Damit hat sich Emotet von einem eigenständigen Banking-Trojaner zu einem Dropper für andere Schadprogramme gewandelt.
+Im September 2017 wurde außerdem ein neues Spreader-Modul zur Verbreitung von Emotet im lokalen Netzwerk der Opfer hinzugefügt. Dieses Modul versucht, das Schadprogramm über administrative Netzwerkfreigaben auf andere Systeme zu kopieren und dort auszuführen. Dabei kommt eine mitgelieferte Kopie von Nirsofts Tool NetPass zum Einsatz, das Passwörter des angemeldeten Benutzers ausliest. Anschließend versucht Emotet, sich mit diesen als Administrator an den Netzwerkfreigaben der anderen Systeme anzumelden. Führt dies nicht zum Erfolg, probiert es bis zu 10.000 mitgelieferte Passwörter durch.
+Darüber hinaus wurde das Outlook Harvesting erweitert, um nicht nur das Adressbuch, sondern konkrete Kontaktbeziehungen zwischen Absendern und Empfängern aus den Outlook-Postfächern auf den Opfersystemen auszuspähen. Diese Kontaktbeziehungen verwendeten die Kriminellen anschließend, um den Empfängern der Spam-Mails einen ihnen bekannten Kommunikationspartner im Absender und der Signatur der E-Mail vorzutäuschen. Die teilweise in den Signaturen angegebenen Telefon- und Faxnummern wurden dabei zufällig generiert.
+Viele Empfänger haben sich vermutlich zunächst gewundert, warum ihnen die Schwiegertochter oder der Nachbar plötzlich eine Rechnung sendet, aber die Neugier und der vermeintlich bekannte Absender haben sie dann doch zum Öffnen des schädlichen Anhangs veranlasst. Im geschäftlichen Umfeld ist es vielleicht sogar üblich, dass der im vermeintlichen Absender genannte Kollege eine Rechnung weiterleitet.
+Im Oktober 2018 wurde das Harvesting-Modul erneut erweitert, um nicht nur Kontaktbeziehungen, sondern die ersten 16 KByte jeder E-Mail der letzten 180 Tage aus den Postfächern abzugreifen. Die so ausgespähten E-Mail-Inhalte nutzten die Täter zunächst, um aus darin befindlichen tatsächlichen Mitteilungen von bekannten Telekommunikationsanbietern, Paket-Dienstleistern, Hotelketten, Banken, Versandhändlern, Software-Herstellern und anderen Unternehmen neue Vorlagen für Spam-Mails zu erstellen, welche in verschiedenen Sprachen auf die Empfänger in unterschiedlichen Ländern zugeschnitten waren.
+
+Emotet: Spam-Mails (6 Bilder)
+
+
+
+
+08/15-Spam mit gefälschter Rechnung
+Diese Vorlagen wurden von Ende 2018 bis Anfang 2019 für massive weltweite Spam-Kampagnen eingesetzt. Die Screenshots der Bilderstrecke zeigen typische Beispiele von Spam-Mails, die in dieser Zeit auf deutsche Nutzer einprasselten. Auf diesem Weg kaperten die Täter eine Vielzahl weiterer E-Mail-Konten für den Spam-Versand und sammelten zigtausende weitere E-Mails aus den Outlook-Postfächern neuer Opfer ein.
+Das Social Engineering – also die gezielte Täuschung der Opfer, um diese zu bestimmten Aktionen zu verleiten – wurde immer weiter professionalisiert. Seit April 2019 gehen die Täter mit der Personalisierung noch einen Schritt weiter, indem sie die Spam-Mails als vermeintliche Antworten auf zuvor ausgespähte, tatsächliche E-Mails versenden. Die bekannten Betreffzeilen und Zitate einer vorhergehenden Kommunikation lassen die gefälschten E-Mails für die Empfänger noch authentischer erscheinen. In Anlehnung an das zielgerichtetete Spear Phishing hat Heise für dieses ausgefeilte Social Engineering den Begriff Dynamit Phishing geprägt.
+Trickbot und Ryuk
+In den Nachrichten zu den größeren IT-Ausfällen in Unternehmen und anderen Organisationen ist häufig nur von Emotet die Rede. Doch die eigentlichen Schäden verursacht üblicherweise das von Emotet nachgeladene Schadprogramm Trickbot sowie die in besonderen Fällen später ausgerollte Ransomware Ryuk.
+Bei Trickbot handelt es sich wie bei Emotet um ein modulares Schadprogramm. Ursprünglich primär als Online-Banking-Trojaner eingesetzt, wurde es im Lauf der Jahre zu einem universellen Angriffswerkszeug weiterentwickelt. Neben einer Komponente für den Online-Banking-Betrug gehören unter anderem Module zum Ausspähen von Zugangsdaten aus Webbrowsern, E-Mail-Programmen und weiteren Anwendungen zur Werkzeugkiste von Trickbot. Die ergänzen ein VNC-Server, ein SOCKS5-Proxy sowie Funktionen zur automatisierten Weiterverbreitung (Lateral Movement) und Verankerung des Schadprogramms im Netzwerk der Opfer (Persistence). Dabei nutzt Trickbot neben Windows-Bordmitteln auch verschiedene Tools wie das Framework Powershell Empire, PowerSploit und Mimikatz, die früher hauptsächlich bei gezielten Angriffen mit nachrichtendienstlichem Hintergrund gegen Unternehmen und andere Organisationen zum Einsatz kamen.
+Die Kernkomponente von Trickbot – der Loader – deaktiviert zunächst die Windows-Dienste und laufende Prozesse von Windows Defender und verschiedener anderer Antivirus-Programme. Er nutzt mehrere (öffentlich bekannte) Methoden zur Privilegienerweiterung wie UAC-Bypass, um administrative Rechte zu erlangen. So kann er alle nachfolgend geladenen Trickbot-Module mit hohen Rechten ausführen und damit zum Beispiel in der Local Security Authority (LSA) gespeicherte Zugangsdaten auslesen. Durch Setzen eines Schlüssels in der Windows-Registry sorgt Trickbot sogar dafür, dass die bei der Benutzeranmeldung eingegebenen Zugangsdaten im Klartext in der LSA gespeichert werden. Dadurch erhalten die Angreifer nicht nur die Hashes, sondern die Klartext-Passwörter aller Benutzer, die sich nachfolgend am System anmelden. Um die Klartext-Zugangsdaten für das aktuelle Benutzerkonto sofort zu erhalten, sperrt Trickbot den Bildschirm, sodass sich der Nutzer erneut anmelden muss.
+Anschließend späht Trickbot Informationen über das System (unter anderem zu Hardware, Benutzer­konten und installierten Anwendungen) und das Netzwerk aus (IP-Konfiguration, verfügbare Server, Domänencontroller und so weiter). Alle gesammelten Daten übermittelt die Malware danach an einen Kontroll­server der Täter im Internet. Anhand dieser Informationen können die Täter später bewerten, ob es sich bei einem Opfer um ein ""lohnendes"" Ziel handelt, welches eine weiter­gehende ""manuelle Bearbeitung"" verdient.
+Zur automatisierten Ausbreitung im Netzwerk versucht Trickbot, sich mit aus der LSA ausgespähten Zugangsdaten für lokale Administratorkonten auf administrative Netzwerkfreigaben (Admin$, C$) anderer Systeme zu verbinden, um diese ebenfalls zu infizieren. Erlangt Trickbot die Anmeldedaten für ein Benutzerkonto mit Domänen­administrator-Rechten und ist im Netzwerk keine strikte Rechte-Trennung im Rahmen eines 3-Tier-Modells implementiert, kann der Schädling das Windows-Netz einschließlich des Domänen-Controllers komplett übernehmen. Das Active Directory muss dann als komplett gefallen betrachtet und im Zuge der Bereinigung vollständig neu aufgebaut werden.
+Neben der Ausbreitung über ausgespähte Anmeldedaten versucht Trickbot, mittels des Eternal-Blue-Exploits eine Schwachstelle in der Implementierung des SMB-Protokolls von Windows-Betriebssystemen (MS17-010) auszunutzen. Dieser Exploit wurde unter anderem auch von der Schadsoftware WannyCry verwendet, die sich im Mai 2017 rasant weltweit ausbreitete und ebenfalls für enorme wirtschaftliche Schäden sorgte. Zwar stehen bereits seit März 2017 Sicherheitsupdates zur Verfügung, welche die kritische Schwachstelle schließen – die Erfahrung aus der Analyse von Vorfällen der letzten Monate hat jedoch gezeigt, dass viele Organisationen diese Updates bis heute nicht auf allen Systemen eingespielt haben.
+
+
+Der bösartige Dreischritt: Infektion mit Emotet, Sekundärinfektion mit Trickbot und dann das manuelle Ausrollen von Ryuk, das wichtige Daten verschlüsselt. (Bild: Heise)
+
+Zusätzlich zu Passwörtern für RDP- und VNC-Verbindungen späht Trickbot auf infizierten Systemen auch in Anwendungen wie PuTTY, FileZilla oder WinSCP gespeicherte Anmeldedaten für SSH- oder FTP-Zugänge aus. Auf diesem Weg können die Täter auch Zugriff auf weitere Systeme wie zum Beispiel Linux-basierte Datei- oder Backup-Server im Netzwerk erlangen.
+Ungeladener Besuch
+Erachten die Täter ein Opfer als ausreichend interessant, verbinden sie sich über die von Trickbot bereitgestellte Hintertür auf dessen Systeme und schauen sich manuell im Netzwerk um. Dabei ziehen sie weitere interne Informationen der betroffenen Organisation ab. Dies erfolgt häufig erst zwei bis drei Wochen nach der Erstinfektion, da die Täter aufgrund der Vielzahl weltweiter Opfer ein großes ""Angebot"" abzuarbeiten haben.
+Nach ihrer Kapertour entscheiden die Täter, ob sie sich den Zugang zum Netzwerk unauffällig offen halten, um das Opfer später weiter auszuspionieren. Alternativ verschlüsseln sie wichtige Daten und schreiten zur Erpressung. Das geschieht vor allem dann, wenn die Täter feststellen, dass sie große Teile der Organisation lahmlegen könnten und es sich um ein zahlungskräftiges Opfer handelt, das potenziell bereit ist, ein hohes Lösegeld im sechsstelligen Euro-Bereich für die Entschlüsselung zu bezahlen. Entscheiden sich die Täter für eine Verschlüsselung, rollen sie die Ransomware Ryuk aus.
+Dazu legen sie die Verschlüsselungssoftware üblicherweise auf einem Datei-Server im Netzwerk des Opfers ab und aktivieren anschließend eine Gruppenrichtlinie, welche die Software von dort gleichzeitig auf alle Server-Systeme kopiert und ausführt. Auf verschlüsselten Systemen wird eine Erpresserbotschaft angezeigt, welche die Opfer zu einer Kontaktaufnahme per E-Mail mit den Tätern auffordert. Typischerweise kommt es dabei zu Lösegeldforderungen, deren Höhe von Firmengröße und vermutetem Wert der Daten abhängt. Derzeit ist keine Schwachstelle in der Implementierung der Verschlüsselung bei Ryuk bekannt, um verschlüsselte Daten ohne Kenntnis des passenden Schlüssels wieder zu entschlüsseln.
+Ein typischer Emotet-Angriff
+Das folgende fiktive Beispielszenario soll das in den Spam-Kampagnen zur Verbreitung von Emotet genutzte ausgefeilte Social Engineering sowie den typischen Ablauf einer Emotet-Infektion mit anschließender Ausbreitung von Trickbot und der Verschlüsselung von Daten durch die Ransomware Ryuk veranschaulichen. Das Szenario basiert auf realen Vorfällen, alle hier verwendeten Namen und Adressen von Personen und Organisationen sind jedoch frei erfunden.
+
+Ausgangslage
+
+
+
+E-Mail mit Bestellung von Frau Meier
+
+Karin Meier arbeitet bei der Stadtverwaltung Beispieldorf und ist dort unter anderem für den Einkauf von Büromaterial zuständig. Dazu sendet sie seit mehreren Jahren regelmäßig E-Mails mit Bestellungen an ihren Ansprechpartner Rolf Schulz bei der Bürobedarf GmbH.
+
+Angriffsvorbereitung
+
+Vor drei Wochen wurde der Arbeitsplatz-PC von Rolf Schulz mit Emotet infizert, nachdem er ein schädliches Word-Dokument geöffnet und die Ausführung von Makros erlaubt hatte. In der Folge wurden alle E-Mails der letzten 180 Tage aus seinem Outlook-Postfach exfiltriert und an einen Emotet-Kontrollserver im Internet übermittelt. Dies betraf auch E-Mails mit Bestellungen von Frau Meier.
+John Smith hat vorletzte Woche auf seinem privaten PC in New York ein schädliches Dokument aus einer Emotet-Spam-Kampagne im Namen eines amerikanischen Paket-Dienstleisters geöffnet, wodurch auch sein System mit Emotet infiziert wurde. Dabei wurden die Zugangsdaten für sein E‑Mail-Konto ""smith@someprovider.com"" aus der Konfiguration seines E-Mail-Programms aus­gelesen und ebenfalls an einen Emotet-Kontrollserver übermittelt.
+Vor einigen Tagen wurde zudem der PC von Ingrid Svensson aus Stockholm mit Emotet infiziert, wobei auch das Spam-Modul nachgeladen und installiert wurde. Das Spam-Modul nimmt seitdem regelmäßig Kontakt zu Emotet-Kontrollservern im Internet auf und bittet um Anweisungen zum Spam-Versand.
+
+Der Angriff
+
+
+
+Gefälschte Antwort im Namen von Herrn Schulz
+
+Der Kontrollserver übermittelte dem Spam-Modul die bei John Smith ausgespähten Zugangsdaten für sein E-Mail-Konto sowie eine automatisch generierte vermeintliche Antwort auf eine bei Rolf Schulz ausgespähte Bestellung von Frau Meier mit einem schädlichen Word-Dokument als Dateianhang. Das Spam-Modul auf Ingrid Svenssons PC versendete darauf hin über das E-Mail-Konto von John Smith eine E-Mail an Karin Meier, wobei es den Absendernamen auf Rolf Schulz fälschte.
+Frau Meier wunderte sich ein wenig über die etwas ungewöhnliche Formulierung von Rolf Schulz in der E-Mail, aber da sie den Betreff und die zitierte Originalmail wiedererkannte, öffnete sie das Word-Dokument aus dem Dateianhang ohne sich den Absender der E-Mail genauer anzusehen. Bei der daraufhin angezeigten Meldung zu einer fehlenden Aktivierung von Word fragte sie sich kurz, was die Kollegen aus dem IT-Betrieb hier wohl verbockt haben – aber da sie neugierig war, was Herr Schulz ihr geschrieben hatte, stimmte sie der ""Aktivierung von Inhalten"" zu, wodurch das in dem Dokument enthaltene schädliche Makro ausgeführt wurde.
+
+
+Word-Dokument mit schädlichem Makro
+
+Dadurch wurde auch der Arbeitsplatz-PC von Frau Meier mit Emotet infiziert und die E‑Mails der letzten 180 Tage aus Ihrem Outlook-Postfach wurden an einen Emotet-Kontrollserver übermittelt, um daraus automatisiert maßgeschneiderte Spam-Vorlagen für Angriffe gegen alle ihre Kommunikationspartner zu erstellen.
+
+Der zweite Hieb
+
+Weiterhin wurde das Schadprogramm Trickbot nachgeladen, welches sich aufgrund unzureichender Sicherheitsmaßnahmen mittels ausgespähter Zugangsdaten für ein Benutzerkonto mit Domänenadministrator-Rechten im Netzwerk der Stadtverwaltung schnell automatisiert ausbreiten und einen Großteil der Systeme infizieren konnte. Die IT-Administratoren versuchten tagelang, das Problem in den Griff zu bekommen – jedoch waren neu aufgesetzte Systeme nach kurzer Zeit immer erneut von Trickbot befallen, da das Active Directory bereits vollständig kompromittiert war.
+
+Der finale Schlag
+
+Heute Morgen dann eine weitere böse Überraschung: Über Nacht haben die Täter die Ransomware Ryuk auf allen Servern der Stadtverwaltung ausgerollt und die darauf gespeicherten Daten verschlüsselt. Auch die Backup-Server sind der Verschlüsselung zum Opfer gefallen. Für die Entschlüsselung der Daten fordern die Täter ein Lösegeld in Höhe von 250 000 Euro in Bitcoin. Glücklicherweise existieren noch Offline-Backups, deren Datenstand jedoch bereits zwei Wochen alt ist.
+
+Konsequenzen
+
+Zunächst steht nun ein kompletter Neuaufbau von Netzwerk und Active Directory an. Nachdem anschließend die Offline-Backups zurückgespielt wurden, müssen die Daten der letzten zwei Wochen – soweit möglich – aus Handakten nachgetragen werden. Das wird für die Mitarbeiter viele Überstunden bedeuten. Bis dahin genießen Frau Meier und ihre Kolleginnen und Kollegen jedoch erst mal den angeordneten zehntägigen Zwangsurlaub. Es wird wohl noch einige Wochen dauern, bis die Stadtverwaltung von Beispieldorf wieder komplett arbeitsfähig ist …
+Gezielt vorbeugen
+Privatnutzer finden Tipps zum Schutz vor Emotet auf der Website BSI für Bürger. Für Unternehmen, Behörden und andere Organisationen stellt das BSI einen umfangreichen Katalog von Maßnahmen zum Schutz vor derartigen Angriffen bereit. Darüber hinaus bietet heise Security mit dem Webinar Emotet bei Heise - Lernen aus unseren Fehlern eine Analyse des eigenen Emotet-Vorfalls an, welche auch ein strukturiertes Schutzkonzept vorstellt.
+Wo es infolge einer Infektionen mit Emotet und darüber installierter weiterer Schadsoftware zu größeren Störungen bis hin zu kompletten Ausfällen der IT‑Infrastruktur kam, waren meist folgende Schwachpunkte im IT-Betrieb ursächlich:
+
+Schlechtes Patch-Management (wichtige Sicherheitsupdates wurden nicht ausgerollt),
+mangelhafte Backup-Konzepte (Backups waren von infizierten Systemen aus modifizierbar, keine Offline-Backups),
+fehlende Netzwerk-Segmentierung,
+keine strikte Rechte-Trennung im Active Directory,
+großzügige Vertrauensstellung zwischen Forests im Active Directory (welche eine standortübergreifende Kompromittierung ermöglichte) sowie
+lokale Administratorkonten (teils mit identischen Passwörtern für verschiedene Systeme).
+
+Insbesondere die in vielen Netzwerken nicht oder unvollständig implementierte strikte Rechte-Trennung im Active Directory (3‑Tier-Modell) wurde vielen betroffenen Organisationen zum Verhängnis, da dies eine Kompro­mittierung der Domänencontroller durch Trickbot vereinfachte. Der beste Schutz dagegen ist ein klar strukturiertes Verwaltungsebenenmodell, dessen Einrichtung Microsoft ausgiebig dokumentiert.
+Präventivmaßnahmen
+Aufgrund der immer weitergehenden Professionalisierung von Angriffen ist es keine Frage ob, sondern nur wann Ihre Organisation von einem größeren Sicherheitsvorfall betroffen sein wird! IT-Sicherheitsverantwortliche sollten deshalb insbesondere folgende Präventivmaßnahmen beherzigen:
+
+Überprüfen und aktualisieren Sie regelmäßig die Sicherheitskonzepte für alle Systeme und Netzwerke Ihrer Organisation in Zusammenarbeit mit dem IT-Betrieb,
+lassen Sie regelmäßig Netzwerk-Audits und Penetrationstests durchführen, um potenzielle Schwachstellen in Ihrem Netzwerk aufzudecken,
+hinterfragen Sie Ihre Backup-Strategie (Offline-Backups!),
+erstellen Sie Notfallkonzepte,
+sensibilisieren Sie Ihre Mitarbeiter regelmäßig (insbesondere für den vorsichtigen Umgang mit Dateianhängen und Links in E-Mails – auch von vermeintlich bekannten Absendern – sowie die möglichen Gefahren durch Makros in Office-Dokumenten) und
+proben Sie den Ernstfall.
+
+Spezielle Informationen
+Die mit den Spam-Kampagnen versendeten schädlichen Dokumente sowie die darüber nachgeladenen Schadprogramme werden von den Tätern regelmäßig modifiziert, um eine Erkennung durch Virenschutzprogramme zu erschweren. Tagesaktuelle Indikatoren zur Erkennung von Emotet (IP‑Adressen der Kontrollserver, Nachlade-URLs sowie Hash-Werte der schädlichen Dateien) stellt die Emotet Working-Group Cryptolaemus – ein internationaler Zusammenschluss von Analysten – über ihren Twitter-Kanal zur Verfügung. Der Name der Arbeitsgruppe rührt übrigens daher, dass der IT-Sicherheitsdienstleister Symantec die Tätergruppierung hinter Emotet als Mealybug (deutsch Woll- oder Schmierlaus) bezeichnet, zu dessen biologischer Bekämpfung der Australische Marienkäfer (Cryptolaemus montrouzieri) eingesetzt wird.
+Weitere aktuelle und kostenfreie Indikatoren zu Emotet und Trickbot stellt das Schweizer Abuse.ch-Team mit Feodo Tracker und URLhaus bereit. Diese kann man verwenden, um auf Web-Proxies beziehungsweise Firewalls den Zugriff aus dem internen Netzwerk auf bekannte Download-URLs und Kontrollserver zu blockieren oder zumindest Alarmmeldungen zu erzeugen. So kann man erfolgreiche Infektionen frühzeitig erkennen und im Idealfall sogar das Nachladen von Schad­programmen sowie den Abfluss von Informationen verhindern.
+Wenn es brennt
+Kommt es in Ihrer Organisation zu einem Sicherheitsvorfall, bewahren Sie Ruhe! Treffen Sie keine voreiligen Maßnahmen, welche die Situation noch verschlimmern oder für die Analyse wertvolle Spuren vernichten könnten. Eine überaus wichtige Regel lautet:
+
+Melden Sie sich niemals mit einem Konto mit erhöhten Privilegien (Administratorkonto) an einem infizierten System an, solange dieses noch mit dem Netzwerk verbunden ist.
+
+Denn dies führt dazu, dass die verwendeten Zugangsdaten in den Händen der Kriminellen landen und diese damit schlimmstenfalls sofort das gesamte Windows-Netz übernehmen. Bei einer erkannten Trickbot-Infektion sollte das betroffene Netzwerk umgehend vom Internet isoliert werden, um einen weiteren Zugriff der Täter auf das interne Netz und ein Ausrollen der Ransomware Ryuk zu unterbinden.
+Holen Sie sich frühzeitig Unter­stützung durch einen erfahrenen externen Krisenmanager ins Haus, der Sie bei der Bewältigung des Vorfalls begleitet. Stellen Sie Strafanzeige bei der Zentralen Ansprechstelle Cybercrime (ZAC) des für Sie zuständigen Landeskriminalamts und melden Sie den Vorfall an das BSI. Beim Abfluss personenbezogener Daten – was bei Emotet-Infektionen bereits durch das Ausspähen von E‑Mails aus Outlook-Postfächern geschieht – ist außerdem eine Meldung an Ihren Landesdatenschutzbeauftragten in der Regel innerhalb von 72 Stunden verpflichtend (Art. 33 DSGVO). Formulieren Sie gemeinsam mit Ihrer Öffentlichkeitsarbeit eine Sprachregelung zum Vorfall und informieren Sie Ihre Mitarbeiter.
+Zahlen oder nicht?
+Im Fall einer Verschlüsselung von Daten sollten Sie grundsätzlich nicht auf die Erpressung eingehen und Lösegeld bezahlen. Stattdessen sollten die Daten nach einem Neuaufbau des Netzwerks aus Backups zurückgespielt werden. Wurden die Backups ebenfalls verschlüsselt und Sie erwägen den Versuch, durch Zahlung des Lösegelds einen Schlüssel zur Entschlüsselung der Daten zu erhalten, lassen Sie die Lösegeldverhandlung unbedingt von einem erfahrenen Verhandlungsspezialisten durchführen. In vielen Fällen gelang es, die Höhe des Lösegelds in professionellen Verhandlungen deutlich zu reduzieren.
+Bedenken Sie jedoch, dass Sie auch bei Zahlung keine Garantie haben, tatsächlich einen passenden Schlüssel zu erhalten – Sie verhandeln schließlich mit Kriminellen. Fordern Sie zu Beginn von den Tätern die beispielhafte Entschlüsselung einiger Dateien, um zu verifizieren, dass diese überhaupt im Besitz des korrekten Schlüssels sind. Beachten Sie weiterhin, dass eine erfolgreiche Entschlüsselung nicht die Neuinstallation der kompromittierten Systeme ersetzt. Wurde die Ransomware Ryuk ausgerollt, ist das Active Directory mit hoher Wahrscheinlichkeit vollständig kompromittiert und muss neu aufgesetzt werden. Um einen weiteren Zugriff der Täter auf das interne Netzwerk und die erneute Ausbreitung der Schadprogramme wirksam auszuschließen, müssen nach der Entschlüsselung zwingend alle Daten gesichert und nach einem Neuaufbau des Netzwerks auf die neu installierten Systeme zurückgespielt werden. (ju)
+
+
+",de,"
+
+
+
+
+
+
+
+
+
+
+
+Emotet, Trickbot, Ryuk - an explosive malware cocktail
+The currently ""most devastating"" pest Emotet actually consists of a cascade of malicious programs that together cause millions of millions.
+06 Nov 2019, 07:03 by Thomas Hungenberg
+Emotet has been making headlines in recent months. Infections with Emotet and in particular over it further loaded malicious programs like Trickbot or the following in the networks of the victims ransomware Ryuk led already world-wide and also in Germany to enormous financial damages. The Federal Office for Information Security (BSI) warned several times before Emotet; the US CERT named Emotet one of the ""most costly and destructive"" malware programs.
+Large-scale or complete outages of the IT infrastructure have occurred in a large number of companies, hospitals, local government institutions and other organizations. This resulted in many-day production losses, services could not be provided over a longer period and employees had to be sent on forced leave. It usually does not report on the damage to thousands of private users also affected by Emotet through the misuse of spied access data or online banking scams.
+How it all started
+Emotet is based on a development of the online banking Trojan Cridex (also called Bugat or Feodo). The name Emotet was coined by the IT security service provider Trend Micro, which was the first to report in June 2014. The first version of Emotet - also known as Geodo - was widely distributed via spam campaigns with fake bills or alleged messages from banks. The spam emails contained either the malicious program directly in the file attachment (partially packed in a ZIP archive) or the spam emails contained a link via which the recipient should download the alleged invoice or message. Duplicate extensions such as "".pdf.exe"" obfuscated that the attachment or the downloaded file was an executable program.
+Geodo launched so-called ""man-in-the-browser"" attacks on victims' online banking by logging into their web browser and spying on user-entered credentials. Customers of German and Austrian banks were the focus of the attackers, who therefore sent their spam mails primarily to e-mail addresses with the endings .de and .at. In addition, Geodo spied out access data for e-mail accounts on the victims' systems, in order to use them to send further spam e-mails to spread the malicious program. It used - as well as today's Emotet versions still - a supplied copy of the password recovery tool Mail PassView of the manufacturer NirSoft to extract stored in e-mail programs such as Microsoft Outlook, Windows Mail or Mozilla Thunderbird access data.
+The further development
+The second generation of Emotet - which was put into circulation by the perpetrators from autumn 2014 - had a new, modular design. Initially, an infection only installed one core component of the malicious program, which was then able to reload modules for various malicious functions. This included modules for attacking online banking, spying on access data from email clients and web browsers, reading out Outlook address books, spamming, and performing DDoS attacks. The banking module now uses so-called Web-Injects (like some other Banking Trojan families). During online banking, these users dynamically inserted additional input fields for querying TANs in the user's web browser in order to make transfers in the background. They also suppressed security warnings from the bank.
+With the third version of Emotet - which was distributed from January 2015 - customers were also Swiss banks in the focus of the perpetrators, which therefore expanded their spam campaigns on Swiss users. In addition, the protection functions of the malware against detection and analysis have been improved.
+The current generation of Emotet
+The fourth generation of Emotet named Heodo, on which today's variants of the malicious program are still based, was first spotted in March 2017. Since then, users worldwide have been affected by Emotet's spam campaigns. Instead of executable files, the spam emails now contain either a Microsoft Office document as a file attachment or a link that leads to the download of such a document. Individual campaigns also send PDFs as file attachments that contain the download link to a malicious Office document. Infection of victim systems with Emotet is done via macros included in the documents, which reload and execute the malicious program from the Internet.
+The former Emotet's own banking module was removed in the fourth generation. Instead, Emotet charges other banking trojans, such as Trickbot, Ursnif, Panda ZeuS, or IcedID, on behalf of other offender groups (affiliates), depending on the victim's location and location (geolocation of the IP address). This has changed Emotet from a standalone banking Trojan to a dropper for other malicious programs.
+In September 2017, a new spreader module was also added to spread Emotet on the victim's local network. This module attempts to copy the malicious program to other systems via administrative network shares and execute them there. A supplied copy of Nirsoft's Tool NetPass will be used to read out passwords of the logged in user. Emotet then tries to log in to the network shares of the other systems with them as an administrator. If this does not work, try up to 10,000 supplied passwords.
+In addition, the Outlook Harvesting has been extended to spy not only the address book, but concrete contact relations between senders and recipients from the Outlook mailboxes on the victim systems. These contacts then used the criminals to pretend to the recipients of the spam e-mails a known communication partner in the sender and the signature of the e-mail. Some of the phone numbers and fax numbers given in the signatures were randomly generated.
+Many recipients may have wondered why their daughter-in-law or neighbor suddenly sent them a bill, but curiosity and the supposedly well-known sender prompted them to open the harmful attachment. In the business environment, it may even be the case that the colleague named in the supposed sender passes on an invoice.
+In October 2018, the Harvesting module was extended again to pick not only contact relationships, but the first 16 KB of every e-mail from the last 180 days from the mailboxes. The e-mail content spied on in this way was first used by the perpetrators to create new templates for spam mails from actual messages from well-known telecommunications providers, package service providers, hotel chains, banks, mail order companies, software manufacturers and other companies different languages to recipients in different countries.
+
+Emotet: Spam Mails (6 images)
+
+
+
+
+08/15 spam with forged invoice
+These templates were used from late 2018 to early 2019 for massive worldwide spam campaigns. The screenshots of the photo gallery show typical examples of spam emails that were pounding on German users during this time. In this way, the perpetrators hijacked a variety of other e-mail accounts for spam and collected thousands more e-mails from the Outlook mailboxes of new victims.
+Social engineering - the deliberate deception of the victims, in order to tempt them into certain actions - was further professionalized. Since April 2019, the perpetrators have gone one step further with personalization by sending the spam emails as alleged responses to previously spied out, actual emails. The familiar subject lines and citations of a previous communication make the counterfeit emails even more authentic for the recipients. Based on the targeted spear phishing, Heise coined the term dynamite phishing for this sophisticated social engineering.
+Trickbot and Ryuk
+The news of the major IT outages in businesses and other organizations often speaks only of Emotet. But the actual damage usually causes the malicious program Trickbot reloaded by Emotet as well as the rukomware Ryuk, which was later rolled out in special cases.
+Trickbot, like Emotet, is a modular malicious program. Originally used primarily as an online banking Trojan, it has evolved over the years into a universal attack tool. In addition to a component for online banking scams include modules for spying access data from web browsers, e-mail programs and other applications to the toolbox of Trickbot. They complement a VNC server, a SOCKS5 proxy, as well as functions for the automated propagation (lateral movement) and anchoring of the malicious program in the victim's network (persistence). In addition Trickbot uses Windows tools as well as various tools such as the framework Powershell Empire, PowerSploit and Mimikatz, which used to be used primarily in targeted attacks with intelligence background against companies and other organizations.
+The core component of Trickbot - the Loader - initially disables the Windows services and running processes of Windows Defender and various other antivirus program. He uses several (publicly known) privilege escalation methods, such as UAC bypass, to gain administrative privileges. So he can execute all subsequent loaded Trickbot modules with high rights and read out for example in the Local Security Authority (LSA) stored access data. By setting a key in the Windows Registry Trickbot even ensures that the access data entered during the user logon is stored in clear text in the LSA. As a result, the attackers not only receive the hashes, but also the plain-text passwords of all users who subsequently log on to the system. Trickbot locks the screen in order to get the cleartext access data for the current user account immediately, so that the user has to log in again.
+Trickbot then scans information about the system (including hardware, user accounts, and installed applications) and the network (IP configuration, available servers, domain controllers, and so on). All collected data is then transmitted to a control server of the perpetrators on the Internet. Based on this information, the perpetrators can later assess whether a victim is a ""worthwhile"" target, which deserves further ""manual processing"".
+For automated network propagation, Trickbot attempts to connect to local administrator account access data spewed out of the LSA on administrative network shares (Admin $, C $) of other systems in order to infect them as well. If Trickbot obtains credentials for a user account with domain administrator rights, and the network does not implement strict rights separation in a 3-tier model, the malware can completely take over the Windows network, including the domain controller. The Active Directory must then be regarded as completely dropped and completely rebuilt in the course of the cleanup.
+In addition to spreading through spied logon credentials, Trickbot attempts to exploit a vulnerability in the implementation of the SMB protocol of Windows operating systems (MS17-010) by using the Eternal Blue exploit. This exploit was also used among other things by the malicious software WannyCry, which spread rapidly worldwide in May 2017 and also caused enormous economic damage. Although security updates have been available since March 2017 to address the critical vulnerability, experience from analyzing incidents in recent months has shown that many organizations have not yet brought these updates to all systems.
+
+
+The vicious three-step game: Infection with Emotet, Secondary Infection with Trickbot, and then Ryuk's Manual Unroll, which encrypts important data. (Picture: Heise)
+
+In addition to passwords for RDP and VNC connections, Trickbot also spins on infected systems for SSH or FTP access credentials stored in applications such as PuTTY, FileZilla, or WinSCP. In this way, the perpetrators can also gain access to other systems such as Linux-based file or backup servers in the network.
+Unloaded visit
+If the perpetrators consider a victim to be sufficiently interesting, they connect to the system via the back door provided by Trickbot and look around the network manually. In doing so, they subtract further internal information from the organization concerned. This often takes two to three weeks after the first infection, because the perpetrators have to work off a large ""offer"" due to the large number of victims worldwide.
+After their caper tour, the perpetrators decide whether they keep their access to the network inconspicuously open in order to later spy on the victim. Alternatively, they encrypt important data and resort to blackmail. This happens especially when the perpetrators find that they could paralyze large parts of the organization and that they are a solvent victim who is potentially willing to pay a high ransom in the six-digit euro range for decryption. If the perpetrators opt for encryption, they roll out ransomware Ryuk.
+For this purpose, they usually store the encryption software on a file server in the victim's network and then activate a group policy, which simultaneously copies and executes the software from there to all server systems. On encrypted systems, a blackmail message is displayed, which prompts victims to contact the perpetrators by e-mail. Typically, there are ransom demands, the amount of which depends on the size of the company and the assumed value of the data. Currently, there is no known vulnerability in the implementation of encryption at Ryuk to decrypt encrypted data without knowing the appropriate key.
+A typical Emotet attack
+The following fictitious example scenario is intended to illustrate the sophisticated social engineering used in Emotet's spam campaigns, as well as the typical course of an Emotet infection with the subsequent spread of Trickbot and the encryption of data by the Ryuk ransomware. The scenario is based on real incidents, but all the names and addresses of people and organizations used here are fictitious.
+
+starting position
+
+
+
+E-mail with order from Mrs. Meier
+
+Karin Meier works at the city council of Beispieldorf, where she is responsible, among other things, for the procurement of office supplies. For this purpose, she has been sending regular e-mails with orders to her contact person Rolf Schulz at Bürobedarf GmbH for several years.
+
+attack preparation
+
+Three weeks ago, Rolf Schulz's workstation PC became infected with Emotet after opening a malicious Word document and allowing macros to run. As a result, all e-mails of the last 180 days have been exfiltrated from his Outlook mailbox and sent to an Emotet control server on the Internet. This also affected emails with orders from Ms. Meier.
+Last week, John Smith opened a malicious document from an Emotet spam campaign on behalf of an American parcel service provider on his personal computer in New York, which also infected his system with Emotet. The access data for his e-mail account ""smith@someprovider.com"" was read from the configuration of his e-mail program and also sent to an Emotet control server.
+A few days ago, Ingrid Svensson's computer from Stockholm was also infected with Emotet, with the spam module also being reloaded and installed. Since then, the spam module has been in regular contact with Emotet control servers on the Internet and is asking for spam instructions.
+
+The attack
+
+
+
+Fake answer on behalf of Mr Schulz
+
+The control server forwarded to the spam module the access data for his e-mail account spied on at John Smith, as well as an automatically generated alleged response to an order Rolf Schulz spied on Ms. Meier with a malicious Word document as file attachment. The spam module on Ingrid Svensson's PC sent an e-mail to Karin Meier via John Smith's e-mail account, forging the sender's name on Rolf Schulz.
+Ms. Meier wondered a little about the somewhat unusual formulation of Rolf Schulz in the e-mail, but since she recognized the subject and the cited original mail, she opened the Word document from the file attachment without looking at the sender of the e-mail , At the following message about a missing activation of Word, she wondered briefly, what the colleagues from the IT-operation probably screwed up here - but since she was curious, what Mr. Schulz had written to her, she agreed to the ""activation of content"" which executed the malicious macro contained in the document.
+
+
+Word document with harmful macro
+
+This also infected the workstation PC of Ms. Meier with Emotet and the e-mails of the last 180 days from your Outlook mailbox were sent to an Emotet control server to automatically create tailor-made spam templates for attacks against all their communication partners ,
+
+The second blow
+
+Furthermore, the malicious program Trickbot was reloaded, which due to insufficient security measures by means of spied access data for a user account with domain administrator rights in the network of the city administration quickly spread automated and could infect a large part of the systems. The IT administrators tried for days to get the problem under control - but new systems were re-infected after a short time again by Trickbot, because the Active Directory was already completely compromised.
+
+The final blow
+
+This morning, another nasty surprise: overnight, the perpetrators rolled out the ransomware Ryuk on all servers of the city administration and encrypted the data stored on it. The backup servers have also fallen victim to encryption. For the decryption of the data, the perpetrators demand a ransom of 250,000 euros in Bitcoin. Fortunately, there are still offline backups, but their data is already two weeks old.
+
+consequences
+
+First, there is now a complete rebuilding of network and Active Directory. After the offline backups have been played back afterwards, the data of the last two weeks must - as far as possible - be added from manuals. That will mean a lot of overtime for the employees. Until then, however, Ms. Meier and her colleagues will first enjoy the ordered ten-day forced leave. It will probably take a few weeks until the city administration of example village is fully operational again ...
+Targeted prevention
+Privat users can find tips for protecting them from emoticons on the BSI website for citizens. For companies, government agencies and other organizations, the BSI provides a comprehensive catalog of measures to protect against such attacks. In addition, heise Security offers with the webinar Emotet at Heise - Learning from our mistakes an analysis of their own Emotet incident, which also presents a structured protection concept.
+Where it came due to an infection with Emotet and more malicious software installed on it to major disruptions to complete failures of the IT infrastructure, were usually the following weaknesses in IT operations cause:
+
+Bad patch management (important security updates have not been rolled out)
+poor backup concepts (backups were modifiable from infected systems, not offline backups),
+missing network segmentation,
+no strict rights separation in Active Directory,
+generous trust between Forests in the Active Directory (which allowed cross-site compromise) as well
+Local administrator accounts (some with identical passwords for different systems).
+
+In particular, the strict separation of rights in the Active Directory (3-tier model), which was not or not fully implemented in many networks, was a disaster for many of the organizations concerned, as Trickbot made it easier to compromise the domain controllers. The best protection against this is a clearly structured administrative level model, the establishment of which Microsoft documents extensively.
+preventive measures
+Due to the ever more professionalization of attacks, it is not a question of whether, but only when your organization will be affected by a major security incident! IT security officers should therefore take particular note of the following preventive measures:
+
+Review and regularly update the security concepts for all your organization's systems and networks in collaboration with IT operations,
+Have regular network audits and penetration tests to identify potential vulnerabilities in your network
+question your backup strategy (offline backups!),
+create emergency concepts,
+sensitize your employees on a regular basis (especially for the careful handling of file attachments and links in e-mails - also of supposedly known senders - as well as the potential dangers of macros in office documents) and
+rehearse the emergency.
+
+Special information
+The malicious documents sent with the spam campaigns as well as the malicious programs that have been downloaded are regularly modified by the perpetrators in order to make detection by anti-virus programs more difficult. Up-to-date Emotet detection indicators (IP addresses of control servers, reload URLs, and hash values of malicious files) are provided by Emotet Working Group Cryptolaemus - an international analyst association - via its Twitter channel. Incidentally, the name of the working group stems from the fact that the IT security service provider Symantec the perpetrator grouping behind Emotet as Mealybug (German Woll or lice) refers to the biological control of the Australian ladybug (Cryptolaemus montrouzieri) is used.
+Further up-to-date and free indicators for Emotet and Trickbot are provided by the Swiss Abuse.ch team with Feodo Tracker and URLhaus. This can be used to block on web proxies or firewalls the access from the internal network to known download URLs and control servers or at least to generate alerts. So you can detect successful infections early and ideally even prevent the reloading of malicious programs and the outflow of information.
+When it burns
+If a security incident occurs in your organization, keep calm! Do not take any hasty measures that could exacerbate the situation or destroy valuable traces for analysis. An extremely important rule is:
+
+Never log in to an infected system with an account with elevated privileges (administrator account) while it is still connected to the network.
+
+Because this means that the access data used end up in the hands of the criminals and, in the worst case, they immediately take over the entire Windows network. If a Trickbot infection is detected, the affected network should be immediately isolated from the Internet to prevent further access of the perpetrators to the internal network and rollout of Ryuk ransomware.
+Get early assistance from an experienced external crisis manager who will assist you in managing the incident. File a criminal complaint to the central cybercrime office (ZAC) of your state criminal investigation office and report the incident to the BSI. In the event of the outflow of personal data - which is the result of spying e-mails from Outlook mailboxes in Emotet infections - a notification to your national data protection officer is generally obligatory within 72 hours (Art. 33 DSGVO). Formulate a language regulation for the incident together with your public relations work and inform your employees.
+Numbers or not?
+In the case of encryption of data you should basically not respond to the blackmail and pay ransom. Instead, the data should be restored from a backup after rebuilding the network. If the backups are also encrypted and you are considering trying to get a key to decrypt the data by paying the ransom, have the ransom negotiation done by an experienced negotiation specialist. In many cases, it was possible to significantly reduce the amount of the ransom in professional negotiations.
+Remember, however, that even with payment you have no guarantee that you will actually get a matching key - after all, you are dealing with criminals. Begin by requesting the perpetrators to decrypt some of the files to verify that they have the correct key at all. Also note that successful decryption does not replace reinstalling the compromised systems. If the Ryuk ransomware has been rolled out, the Active Directory is highly likely to be completely compromised and rebuilt. In order to effectively exclude further access of the perpetrators to the internal network and the renewed spread of the malicious programs, all data must be backed up after decryption and returned to the newly installed systems after a rebuild of the network. (Ju)
+
+
+"

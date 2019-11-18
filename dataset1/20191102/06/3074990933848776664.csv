@@ -1,0 +1,162 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+[인터뷰] ""악당 사령관의 매력 즐겨주시길..."" 블리즈컨에서 만난 스타2 개발자들
+02 Nov 2019, 06:00 by 김경범 기자
+스타크래프트 2는 2010년 자유의 날개 출시 이후 10년 가까운 세월 동안 많은 사랑을 받은 실시간 전략 게임(RTS)입니다. 사실상 게임 장르에서 RTS는 사양세인 상황에서도 많은 이들이 스타2 이스포츠에 환호하며, 협동전 같은 Co-op 플레이로도 꾸준한 흥행을 이어가고 있습니다.
+스타2 팬들에게 있어 가장 중요한 이벤트라면 스타2 이스포츠를 마무리 짓는 WCS 글로벌 파이널일텐데, 마지막 우승자를 가리게 되는 블리즈컨의 1일 차 현장에서 개발자인 팀 모튼 프로덕션 디렉터와 케빈 동 수석 협동전 디자이너를 만나 스타2의 여러 이야기를 들어볼 기회를 얻었습니다.
+
+
+▲ 팀 모튼 프로덕션 디렉터(좌)와 케빈 동 수석 협동전 디자이너(우)
+
+
+Q. 이번 블리즈컨에서 새로운 협동전 사령관 ""아크튜러스 멩스크""가 추가되었습니다. 사실 지금까지 추가된 사령관은 대략 주인공의 편이었는데, 이번에 유독 악당인 멩스크를 사령관으로 추가한 이유가 있을까요?
+
+그런 점 때문에 이번에 멩스크가 사령관으로 추가되었습니다. 아크튜러스 멩스크는 스타크래프트2의 스토리에 있어서 높은 비중을 가진 캐릭터였는데, 막상 그의 입장에서 플레이할 기회가 없었다는 점이 참 아쉬웠죠. 이번 기회를 통해서 여러분은 악당의 플레이를 경험해 보실 수 있을 것입니다.
+
+
+▲ 스타크래프트 시리즈의 가장 유명한 악당 멩스크
+
+
+Q. 내년 WCS 체계의 주목할 만한 변화나 블리자드 차원에서 기획하고 있는 부분이 있나요?
+
+아직 내년 계획에 대해 발표할 만한 내용은 없는 상태입니다. 다만, 내년에도 좋은 해가 될 수 있도록 내부적으로 논의를 계속하고 있습니다.
+
+Q. 조만간 워크래프트3 리포지드가 발매됩니다. 게임 시장에서 RTS가 약세를 보이는 가운데, 리포지드의 출시가 자칫 스타2와 경쟁하는 상황이 발생할 수도 있을 것 같은데 어떻게 생각하나요?
+
+제가 좋아하는 두 개의 게임이 워크3와 스타2입니다. 그렇기 때문에 이 두 게임이 경쟁을 하기보다는 서로 상생하는 관계가 되지 않을까 생각합니다.
+
+
+▲ 리포지드와 Win-Win할까?
+
+
+Q. 노바 비밀 미션 이후로 인게임에서의 스토리는 사실상 마무리된 상태입니다. 차후에 이러한 미션팩 등을 출시해 이야기를 전개할 계획은 있나요?
+
+현재 워체스트에서 제공되는 만화를 통해 스토리 전개는 점진적으로 이어 나가는 중입니다. 그 외의 미션팩 발매나 DLC 추가 계획은 아직 없습니다.
+또, 협동전에서 제공되는 사령관도 스타2의 스토리와 어느 정도 연관이 된다. 완벽하게 정식 역사라고 할 수는 없겠지만, 예전에 출시된 이곤 스텟먼 같은 경우도 워체스트 코믹스나 스타크래프트 유니버스에 등장하는 것을 생각하면 이런 방향으로의 스토리를 전개하는 방법도 있다고 생각합니다.
+
+Q. 플레이어들이 가장 관심 갖는 부분이 밸런스일 것입니다. 최근에는 어느 측면을 중점적으로 보고 있나요?
+
+그런 부분을 우리도 알고 있기에 지난 29일 밸런스 변경과 관련한 공지를 한 바 있습니다. 이번 밸런스 변경은 11월 후반에 적용될 예정인데, 무감타(무리군주-감염충-타락귀) 조합과 관련한 밸런스를 손보고 있습니다. 게임이 장기전이 되면 저그는 이 조합을 갖추게 되고, 별다른 상성을 타지 않는 양상을 보여주는데, 그렇게 조합하지 않더라도 다양하게 게임을 즐길 수 있도록 하게 할 생각입니다.
+
+Q. 최근의 저그 강세는 식충을 쓰는 군단숙주와 무리군주, 공짜 히드라리스크라 불리는 여왕, 저렴하게 뚫어 대는 땅굴벌레처럼 자원 소모가 없거나 매우 적은 고효율 유닛이 좋아서라는 의견이 많은데 어떻게 생각하나요?
+
+공짜 유닛에 대한 부분은 우리도 인지하고 있고, 이에 대한 조정 사항도 지난 밸런스 변경 공지에 포함되어 있습니다.
+그 예가 감염충에게서 감염된 테란 능력을 삭제하고 대신 세균장막(가칭. Microbal Shroud)을 추가한 것인데, 일정 지역에 장막을 펼쳐 공중 유닛에게 받는 피해를 줄일 수 있게 했습니다. 이 효과는 중복되는 것이 아니기에 기존처럼 다수의 감염충으로 공짜 감염된 테란을 쓰는 플레이가 어려워질 것이고, 따라서 무감타 조합도 약점이 생기게 될 것입니다.
+
+Q. 블리즈컨 오프닝 세레모니에서 구글 딥마인드로 학습한 알파스타와 관련된 이야기가 언급되었습니다.
+
+현재는 알파스타의 성장과 관련해 구글과 활발히 논의를 하는 단계입니다. 현재 공개된 내용 이상의 특별한 계획은 없지만, 블리즈컨 시연 현장에서 알파스타로 학습된 2종류의 AI와 겨뤄 보실 수 있습니다.
+
+
+▲ 그랜드마스터 급 AI의 실력? 인간 시대의 끝이 도래했다!
+
+
+Q. 작년부터 비 한국계 선수들이 이스포츠에서 강세를 보이고 있습니다. 이들의 활약이 WCS의 흥행에 어느 정도의 영향을 준다고 생각합니까?
+
+세랄이나 레이너처럼 스타2 이스포츠에서 두각을 나타내는 비 한국인 선수가 늘었는데, 이들의 실력이 좋기도 하고 다양한 선수들이 활약하면서 시청자도 많이 늘어난 것 같습니다.
+
+Q. 매 패치가 진행될 때마다 조작의 복잡성을 늘리는 사용 기술의 수가 늘어나는 느낌입니다. 보는 재미는 좋지만 플레이하기는 어려워진다는 평에 대해서 의견이 있을까요?
+
+사실 저희는 패치 과정에서 되도록 사용 기술과 지속 효과 간의 비율에 있어 균형이 잡힐 수 있도록 노력을 하고 있습니다. 프로토스의 분열기는 광역 공격이 강력하지만 조작이 어렵고, 거신은 조작이 간단하지만 광역 공격의 효율은 분열기만 못한 식으로 말이죠.
+
+Q. 마지막으로 한국 팬들에게 한마디 부탁합니다.
+
+팀 모튼 : WCS 글로벌 파이널은 스타2 커뮤니티의 절정이 되는 이슈라고 할 수 있습니다. 블리자드에선 한국 팬들의 성원과 관심에 항상 감사하는 마음을 갖고 있고, 이번 글로벌 파이널도 재미있게 즐겨 주시면 좋겠습니다.
+케빈 동 : 저나 개발팀 내부의 많은 사람들이 스타2를 좋아합니다. 개인적으로는 항공기 격납고에서 진행된 스타리그를 하는 것을 보며 자라왔기 때문에 한국인과 한국 선수들이 스타에 갖는 관심에 매번 고맙다는 마음을 가지고 있습니다.
+
+※ 11월 2일부터 11월 3일까지 미국 애너하임 컨벤션 센터에서 블리즈컨 2019이 진행됩니다. 현지 및 한국에서 작은 정보 하나까지 놓침없이 전해드리겠습니다. ▶ 인벤 블리즈컨 2019 뉴스센터: https://goo.gl/gkLqSp
+
+
+
+",ko,"
+
+
+
+
+
+
+
+
+
+
+
+[Interview] ""Enjoy the charm of the villain commander ..."" Star 2 developers met at BlizzCon
+02 Nov 2019, 06:00 by Gyungbum Kim
+StarCraft 2 is a real-time strategy game (RTS) that has been loved for nearly 10 years since the launch of the Wings of Liberty in 2010. In fact, in the game genre, RTS continues to be a huge hit even in the face of bleak stances, even with Co-op play like co-op.
+The most important event for Star 2 fans would be the WCS Global Finals, which finalizes Star 2 eSports, where they meet Tim Morton, Production Director and Kevin Dong's co-op designer, on the first day of BlizzCon's final scene. I've got a chance to hear several stories.
+
+
+▲ Tim Morton Production Director (left) and Kevin Dong Chief Collaborative Designer (right)
+
+
+Q. At BlizzCon, a new co-op commander, Arcturus Mengsk, has been added. In fact, the commander added so far has been on the side of the protagonist. Is there a reason why he added the poisonous villain Mengsk as the commander?
+
+That's why Mengsk was added as Commander. Arcturus Mengsk was a high-profile character in the story of StarCraft II, but it was a pity that he had no chance to play from his point of view. This is your chance to experience the villain's play.
+
+
+▲ The most famous villain Mengsk of the StarCraft series
+
+
+Q. Are there any notable changes in the WCS system or planned at the Blizzard level next year?
+
+There is nothing to announce next year's plan. However, we will continue to discuss internally to be a good year next year.
+
+Q. Soon, Warcraft 3 Repository will be released. With the RTS weak in the gaming market, how do you think the release of Reposited might be competing against Star 2?
+
+Two of my favorite games are Walk 3 and Star 2. That's why I think these two games will be a win-win relationship rather than a competition.
+
+
+▲ Should I Win and Win?
+
+
+Q. Since the Nova Secret Mission, the in-game story has actually been completed. Do you have plans to release these mission packs in future?
+
+The storytelling is now continuing gradually with the cartoons available in Warchester. There are no other mission pack releases or additional DLC plans yet.
+In addition, the commander provided in the cooperative war is somewhat related to the story of Star 2. It may not be a complete history, but Igon Stetman, which was released in the past, thinks that the story appears in the War Chest Comics or StarCraft Universe.
+
+Q. The player is most interested in balance. Which aspect are you focusing on recently?
+
+We know that, so we posted a notice on the balance change on the 29th. The balance change will be applied in late November, and we're working on a balance with the Mugamta (Mullord-Infector-Drake) combination. When the game is in a long game, the Zerg will have this combination and show no aspect of the game, and I will make it possible to enjoy the game in various ways without the combination.
+
+Q. What do you think is the recent Zerg bullish because of the lack of resource-consuming or very high-efficiency units, such as insectivorous legion hosts and herd monarchs, queens called free hydralisks and inexpensive drills?
+
+We are aware of the free unit, and adjustments have been included in past balance changes.
+An example is the removal of infected terran abilities from infected insects and the addition of a microbal shroud instead, allowing them to spread over a certain area to reduce damage from air units. This effect is not a duplicate, so it will be difficult to play free terrane infected with a large number of infected insects as before, so the Mugamta combination will also have weaknesses.
+
+Q. In the BlizzCon Opening Ceremony, a story about Alphastar that I learned with Google Deep Mind was mentioned.
+
+We are actively discussing with Google about the growth of Alphastar. There are no special plans beyond what is currently available, but you can compete with two AI stars who have been trained as Alpha Stars at the BlizzCon demonstration.
+
+
+▲ The skills of Grandmaster-class AI? The end of human age has arrived!
+
+
+Q. Since last year, non-Korean athletes have been strong in this sport. To what extent do you think their activities affect the success of the WCS?
+
+More non-Korean players like Starr e-Sports, such as Seral and Rainer, have increased their viewers as well as their ability and various players.
+
+Q. I feel that as each patch goes on, the number of techniques used increases the complexity of the operation. Do you have any opinions about the fact that it's fun to watch but it's hard to play?
+
+In fact, we try to be as balanced as possible in the patching process between the skill used and the sustained effect. The Protoss splitter has a powerful attack on the area, but it's difficult to manipulate, and the Colossus is simple to manipulate, but the effectiveness of the area attack is just a splitter.
+
+Q. Finally, please say something to Korean fans.
+
+Team Morton: The WCS Global Finals is the culmination of the Star 2 community. Blizzard always appreciates the support and interest of Korean fans, and I hope you enjoy this global final.
+Kevin Dong: I and many people in the development team love Star 2. Personally, I grew up watching the star leagues in the aircraft hangar, so I am grateful for the interest that Koreans and Korean players have in their stars.
+
+※ BlizzCon 2019 will be held at the Anaheim Convention Center in the US from November 2 to November 3. We will deliver the smallest information from local and Korean. ▶ Inventory BlizzCon 2019 News Center: https://goo.gl/gkLqSp
+
+
+
+"

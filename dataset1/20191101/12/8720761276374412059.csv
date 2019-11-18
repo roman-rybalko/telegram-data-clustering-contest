@@ -1,0 +1,46 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Facebook, Mozilla, and Cloudflare Announce New TLS Delegated Credentials Standard
+01 Nov 2019, 12:04 by msmash
+Facebook, Mozilla, and Cloudflare announced today a new technical specification called TLS Delegated Credentials, currently undergoing standardization at the Internet Engineering Task Force (IETF). From a report: The new standard will work as an extension to TLS, a cryptographic protocol that underpins the more widely-known HTTPS protocol, used for loading websites inside browsers via an encrypted connection. The TLS Delegate Credentials extension was specifically developed for large website setups, such as Facebook, or for website using content delivery networks (CDNs), such as Cloudflare. For example, a big website like Facebook has thousands of servers spread all over the world. In order to support HTTPS traffic on all, Facebook has to place a copy of its TLS certificate private key on each one. This is a dangerous setup. If an attacker hacks one server and steals the TLS private key, the attacker can impersonate Facebook servers and intercept user traffic until the stolen certificate expires. The same thing is also valid with CDN services like Cloudflare. Anyone hosting an HTTPS website on Cloudflare's infrastructure must upload their TLS private key to Cloudflare's service, which then distributes it to thousands of servers across the world. The TLS Delegate Credentials extension allows site owners to create short-lived TLS private keys (called delegated credentials) that they can deploy to these multi-server setups, instead of the real TLS private key.
+
+
+(zdnet.com)
+
+
+
+
+",en,"
+
+
+
+
+
+
+
+
+
+
+
+Facebook, Mozilla, and Cloudflare Announce New TLS Delegated Credentials Standard
+01 Nov 2019, 12:04 by msmash
+Facebook, Mozilla, and Cloudflare announced today a new technical specification called TLS Delegated Credentials, currently undergoing standardization at the Internet Engineering Task Force (IETF). From a report: The new standard will work as an extension to TLS, a cryptographic protocol that underpins the more widely-known HTTPS protocol, used for loading websites inside browsers via an encrypted connection. The TLS Delegate Credentials extension was specifically developed for large website setups, such as Facebook, or for website using content delivery networks (CDNs), such as Cloudflare. For example, a big website like Facebook has thousands of servers spread all over the world. In order to support HTTPS traffic on all, Facebook has to place a copy of its TLS certificate private key on each one. This is a dangerous setup. If an attacker hacks one server and steals the TLS private key, the attacker can impersonate Facebook servers and intercept user traffic until the stolen certificate expires. The same thing is also valid with CDN services like Cloudflare. Anyone hosting an HTTPS website on Cloudflare's infrastructure must upload their TLS private key to Cloudflare's service, which then distributes it to thousands of servers across the world. The TLS Delegate Credentials extension allows site owners to create short-lived TLS private keys (called delegated credentials) that they can deploy to these multi-server setups, instead of the real TLS private key.
+
+
+(zdnet.com)
+
+
+
+
+"

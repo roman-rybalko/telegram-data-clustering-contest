@@ -1,0 +1,46 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Magisk v20.1 introduce la nuova “hiding mode” anche per chi si trova ancora su Android Pie
+04 Nov 2019, 19:47 by Roberto Artigiani
+Magisk è uno degli strumenti più utili, potenti e diffusi per chi gli appassionati di modding su Android, anche grazie alla sua abilità nel bypassare i controlli effettuati da SafetyNet (il sistema di sicurezza implementato da Google che blocca le applicazioni bancarie, giochi, ecc. se viene rilevato il root del dispositivo). Poco più di un paio di settimane fa si è aggiornato con il supporto totale ad Android 10 anche per quei dispositivi con partizione A-only, ora riceve un nuovo aggiornamento che introduce una comoda novità.
+Oltre i soliti bug fixing Magisk v20.1 e Magisk Manager 7.4.0 introducono la “hiding mode” anche sugli smartphone ‘fermi’ ad Android Pie (condizione comune e moltissimi modelli purtroppo). La nuova modalità consente di nascondere alcuni pacchetti attraverso l’offuscamento dell’APK. Le risorse necessarie per il Manager vengono scaricate e nascoste tra i suoi file e caricate solamente quando necessario.
+Inoltre è anche possibile rinominare il pacchetto mentre è nascosto. Questa modalità potrebbe essere intralciata dal funzionamento delle interfacce proprietarie sviluppate da alcuni produttori, per cui l’aggiornamento contiene anche uno strumento per verificare la compatibilità della funzione col proprio dispositivo, per evitare spiacevoli sorprese.
+Changelog Magisk v20.1[MagiskSU] Support component name agnostic communication (for stub APK)[MagiskBoot] Set proper header_size in boot image headers (fix vbmeta error on Samsung devices)[MagiskHide] Scan zygote multiple times[MagiskInit] Support recovery images without /sbin/recovery binary. This will fix some A/B devices unable to boot to recovery after flashing Magisk[General] Move acct to prevent daemon being killed[General] Make sure “–remove-modules” will execute uninstall.sh after removal Magisk Manager v7.4.0Hide Magisk Manager with stub APKs on Android 9.0+Allow customizing app name when hiding Magisk ManagerGenerate random keys to sign the hidden Magisk Manager to prevent signature detectionsFix fingerprint UI infinite loop
+Via: XDA Developers
+Fonte: XDA Developers, GitHub
+
+
+",it,"
+
+
+
+
+
+
+
+
+
+
+
+Magisk v20.1 introduces the new ""hiding mode"" even for those still on Android Pie
+04 Nov 2019, 19:47 by Roberto Artigiani
+Magisk is one of the most useful, powerful and popular tools for those who are fans of modding on Android, also thanks to its ability to bypass the checks made by SafetyNet (the security system implemented by Google that blocks banking applications, games, etc.). if the device root is detected). Just over a couple of weeks ago it has been updated with full support for Android 10 even for those devices with A-only partition, now it receives a new update that introduces a convenient new feature.
+In addition to the usual bug fixes, Magisk v20.1 and Magisk Manager 7.4.0 introduce ""hiding mode"" even on smartphones ""fixed"" to Android Pie (common condition and many models unfortunately). The new mode allows you to hide some packages through the APK obfuscation. The resources needed for the Manager are downloaded and hidden between his files and loaded only when necessary.
+It is also possible to rename the package while it is hidden. This mode could be hampered by the operation of the proprietary interfaces developed by some manufacturers, so the update also contains a tool to check the compatibility of the function with your device, to avoid unpleasant surprises.
+Changelog Magisk v20.1 [MagiskSU] Support component name agnostic communication (for stub APK) [MagiskBoot] Set proper header_size in boot image headers (fix vbmeta error on Samsung devices) [MagiskHide] Scan multiple times zygote [MagiskInit] Support recovery images without / sbin / recovery binary. I will fix some flashes [General] Make sure ""–remove-modules"" will execute uninstall.sh after removal Magisk Manager v7.4.0Hide Magisk Manager with stub APKs on Android 9.0 + Allow customizing app name when hiding Magisk Manager Generate random keys to sign the hidden Magisk Manager to prevent signature detectionsFix fingerprint UI infinite loop
+Via: XDA Developers
+Source: XDA Developers, GitHub
+
+
+"

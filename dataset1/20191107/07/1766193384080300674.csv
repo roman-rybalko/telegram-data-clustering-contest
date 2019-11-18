@@ -1,0 +1,122 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Windows: Festplatten mit Bordmitteln verschlüsseln
+Verschlüsselte Festplatten schützen die eigenen Daten vor fremden Blicken. Auf Windows können Sie bequem mit dem Bordmittel Bitlocker arbeiten.
+07 Nov 2019, 07:55 by Marvin Strathmann
+Dokumente, Fotos, Videos: Die Daten auf dem eigenen Rechner gehen Dritte nichts an. Damit sie zuverlässig vor fremden Zugriff geschützt sind, hilft eine Verschlüsselung der kompletten Festplatte, die Daten sind so für andere unbrauchbar. Unter Windows müssen Sie dafür nicht einmal ein zusätzliches Tool installieren, Nutzer von Windows 10 Pro, Enterprise oder Education können einfach die Bitlocker-Verschlüsselung aktivieren, um das gesamte Systemlaufwerk zu schützen. Besitzer von Windows 10 Home müssen zu einem Trick greifen, um Bitlocker einzuschalten.
+Weitere wichtige Voraussetzung für den Einsatz von Bitlocker: Sie müssen Microsoft Ihr Vertrauen schenken, dass es zuverlässig Ihre Daten verschlüsselt und keine Hintertüren für Geheimdienste offenlässt, die Ihre Daten ausspähen.
+Der typische Gegner ist normalerweise eher nicht die National Security Agency. Der Alltag ist meist banaler: Ein Dieb klaut Ihren Laptop, Sie verlieren Ihren USB-Stick, ein Reparaturdienst untersucht Ihren PC. Oft gehts ums Prinzip: Es sind Ihre Daten und andere Leute sollen darauf nicht zugreifen können. Briefe verschicken Sie ja auch nicht als Postkarte. Ein Umschlag schützt Briefe vor fremden Blicken, Verschlüsselung Dateien. Die Laufwerkverschlüsselung schützt nur, wenn andere an Ihren ausgeschalteten Rechner gelangen. Eingeschaltet ist das Laufwerk entsperrt und damit wieder für alle sichtbar.
+Immer mehr Wissen. Das digitale Abo für IT und Technik.
+
+Zugriff auf alle Inhalte von heise+
+exklusive Tests, Ratgeber & Hintergründe: unabhängig, kritisch fundiert
+c't, iX, Technology Review, Mac & i, Make, c't Fotografie direkt im Browser lesen
+einmal anmelden – auf allen Geräten lesen - jederzeit kündbar
+erster Monat gratis, danach monatlich 9,95 €
+Wöchentlicher Newsletter mit persönlichen Leseempfehlungen des Chefredakteurs
+
+heise+ bereits abonniert? Anmelden und lesen Jetzt anmelden und Artikel sofort lesen  Mehr Informationen zu heise+
+
+
+heise+ Immer mehr Wissen. Das digitale Abo für IT und Technik.
+
+
+
+
+Windows Festplatten mit Bordmitteln verschlüsseln
+Verschlüsselte Festplatten schützen die eigenen Daten vor fremden Blicken. Auf Windows können Sie bequem mit dem Bordmittel Bitlocker arbeiten.
+
+
+
+Tablet vs. Notebook Das iPad mit iPadOS als Notebook-Alternative
+Mit iPadOS erweitert Apple den Funktionsumfang seiner Tablets enorm. Wir zeigen, ob das iPad damit zur echten Notebook-Alternative wird.
+
+
+
+Bildbearbeitung ohne Photoshop Fotos in Gimp komponieren und optimieren
+Fotomontagen gelingen ohne Photoshop: Das freie Gimp 2.10 bietet dafür ebenso mächtige Werkzeuge. Mithilfe der Filtersammlung G’MIC optimieren Sie Fotos weiter.
+
+
+
+Single Board Computer Was Übertakten beim Raspberry Pi 4 bringt
+Der Raspi 4 wird schon ab Werk schnell so heiß, dass er seinen Takt senken muss. Wir zeigen, ob sich Übertakten dennoch für Sie lohnen kann.
+
+
+
+Musikmaschine iPad Was Apples Tablet in der Musikproduktion leistet
+iPads können professionellere Ansprüche bei der Musikproduktion erfüllen. Wir zeigen sinnvolles Zubehör sowie Apps und prüfen, ob ein iPad als Mac-Ersatz taugt.
+
+
+
+",de,"
+
+
+
+
+
+
+
+
+
+
+
+Windows: Encrypt disks with on-board resources
+Encrypted hard disks protect your own data from strangers eyes. On Windows, you can easily work with the on-board Bitlocker.
+07 Nov 2019, 07:55 by Marvin Strathmann
+Documents, photos, videos: The data on your own computer does not concern third parties. To ensure that they are reliably protected against unauthorized access, encryption of the entire hard disk helps ensure that the data is thus unusable for others. On Windows, you do not even need to install an additional tool; Windows 10 Pro, Enterprise, or Education users can simply enable Bitlocker encryption to protect the entire system drive. Owners of Windows 10 Home must resort to a trick to turn on Bitlocker.
+Another key requirement for using Bitlocker is that you must trust Microsoft to reliably encrypt your data and not leave any backdoors to intelligence agencies who are spying on your data.
+The typical enemy is usually not the National Security Agency. Everyday life is usually more banal: A thief steals your laptop, you lose your USB stick, a repair service examines your PC. Often it's about the principle: it's your data and other people should not be able to access it. You do not send letters as a postcard. An envelope protects letters from strangers, encryption files. Drive encryption only protects when others get to your turned off computer. When switched on, the drive is unlocked and thus visible to all.
+More and more knowledge. The digital subscription for IT and technology.
+
+Access to all contents of heise +
+exclusive tests, guides & backgrounds: independent, critically sound
+c't, iX, Technology Review, mac & i, make, c't read photography directly in the browser
+register once - read on all devices - cancel anytime
+first month free, then monthly € 9.95
+Weekly newsletter with personal reading recommendations from the editor-in-chief
+
+heise + already subscribed? Log in and read Register now and read the article immediately More information about heise +
+
+
+heise + More and more knowledge. The digital subscription for IT and technology.
+
+
+
+
+Encrypt Windows hard disks with on-board resources
+Encrypted hard disks protect your own data from strangers eyes. On Windows, you can easily work with the on-board Bitlocker.
+
+
+
+Tablet vs. Notebook The iPad with iPadOS as a notebook alternative
+Apple expands the functionality of its tablets enormously with iPadOS. We show if the iPad will be a real alternative notebook.
+
+
+
+Image editing without Photoshop Composing and optimizing photos in Gimp
+Photo montages succeed without Photoshop: The free Gimp 2.10 offers just as powerful tools. With the G'MIC filter collection you can optimize your photos.
+
+
+
+Single Board Computer What overclocking the Raspberry Pi 4 brings
+The Raspi 4 gets so hot right from the factory that it has to lower its clock. We show if overclocking can be worthwhile for you.
+
+
+
+Music Machine iPad What Apple's tablet does in music production
+iPads can meet more professional demands in music production. We show useful accessories and apps and check whether an iPad as a Mac replacement is good.
+
+
+
+"

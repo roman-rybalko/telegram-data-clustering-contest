@@ -1,0 +1,56 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Yeni telefonlardaki tehlikeli özellik! Hackerlar faydalanıyor
+Akıllı telefonlara yeni özellikler eklenmeye devam ederken bazıları sık kullanılmadığı halde büyük sıkıntılara sebep olabiliyor. Her ne kadar ülkemizde aktif olarak kullanılmasa da NFC özelliği birçok alanda kullanıcıların imdadına koşuyor.
+
+02 Nov 2019, 13:24
+
+Akıllı telefonlarda yer alan NFC özelliği bazı durumlarda büyük tehlikelere yol açabiliyor.
+NFC ile ödeme özelliğinin aktif olduğu bir mağazada kredi kartı ve nakit taşımadan işleminizi hızlı bir şekilde halledebilirsiniz.
+Bu temassız özellik daima açık olursa cihazınızı tehlikeye atabilir.
+HABERİNİZ OLMADAN UYGULAMA YÜKLENEBİLİYOR
+Shiftdelete’de yer alan habere göre NFC özelliği ile veri alışverişi yapıldığında cihaz bildirim ile kullanıcıları uyarıyor.
+Sistem NFC ile APK dosyası gönderildiğinde de benzer şekilde çalışmakta. Ancak Ocak ayında bir güvenlik araştırmacısı Android 8 (Oreo) ve sonraki sürümlerde APK dosyası gönderilirken kullanıcılara bildirim gitmediğini keşfetti.
+Android güvenlik modeline göre Google Play Store harici uygulama yükleme işlemleri güvensiz olarak nitelendiriliyor.
+Bildirim özelliğinin olmaması ise güvenlik modeline aykırı işlem yapılabileceği anlamına geliyor. Cihazınızda bulunan NFC Beam özelliğini kapatarak bu sorundan kurtulabilirsiniz.
+
+
+",tr,"
+
+
+
+
+
+
+
+
+
+
+
+Dangerous feature in new phones! Hackers benefit
+New features continue to be added to smartphones, but some of them are not used frequently, but can cause great troubles. Although not actively used in our country, the NFC feature runs to the rescue of users in many areas.
+
+02 Nov 2019, 13:24
+
+The NFC feature on the smartphone can in some cases pose a great danger.
+In a NFC-enabled store, you can process your transaction quickly without carrying credit cards and cash.
+This non-contact feature can always endanger your device if it is switched on.
+THE APPLICATION CAN BE INSTALLED WITHOUT YOUR NEWS
+According to the news in Shiftdelete, the device notifies users when data is exchanged with the NFC feature.
+The system works similarly when the APK file is sent via NFC. However, in January, a security researcher discovered that Android 8 (Oreo) and later versions did not send notification to users when sending the APK file.
+According to the Android security model, Google Play Store external application installation process is considered unsafe.
+Lack of notification feature means that transactions can be done contrary to the security model. You can avoid this problem by turning off the NFC Beam feature on your device.
+
+
+"

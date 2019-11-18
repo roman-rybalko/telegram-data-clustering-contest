@@ -1,0 +1,76 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+MIT engineers are teaching delivery robots how to navigate to your doorstep
+Without compromising your privacy
+04 Nov 2019, 21:47 by Cohen Coberly
+In context: Technology has solved many of the world's problems, but not without introducing a few of its own -- some worse than others. On the less-serious end of that scale, we have autonomous delivery robots. These bots promise faster and more convenient shipping for customers, but they've also forced tech companies to figure out the best way to safely guide the machines to your doorstep.
+Mapping neighborhoods in detail beforehand is one solution, but that becomes much less reliable over time. Front yard layouts change (due to holidays, the weather, remodeling, or new homeowners), and it risks compromising customer privacy.
+So, what's the alternative? The Massachusetts Institute of Technology (MIT), in partnership with Ford, may have found an answer to that question. MIT's engineers recently developed a preliminary navigation method that uses environmental clues to help delivery robots plan out a route to their destination on-the-fly.
+This method relies primarily on machine learning and artificial intelligence algorithms as opposed to specific or semi-specific GPS coordinates.
+
+
+
+You can see the technology in action in the video above (sort of -- it's a digital environment), but in short, MIT's robots have been taught to put various pieces of information together to form one complete path. For example, if you tell an MIT bot to deliver a package to someone's garage, it may look for a nearby sidewalk, which often leads into a driveway, which will almost certainly be connected to a garage.
+This method, MIT's researchers believe, is much more efficient than older systems that relied more heavily on exploration (and were more time consuming as a result). MIT trained its robot using satellite images pulled from Bing Maps. The research team reportedly assigned ""semantic labels"" to ""context features"" in the images such as the color grey for a front door, blue for a driveway, green for a hedge, and so on.
+We look forward to seeing how MIT's technology performs in the wild, but it will likely be a while before that day comes. Researchers will undoubtedly want to test this navigation system further before they release it or license it out to tech companies like Amazon or Google.
+
+Image credit: Business Insider
+
+
+Related Reads
+
+
+
+
+
+
+
+",en,"
+
+
+
+
+
+
+
+
+
+
+
+MIT engineers are teaching delivery robots how to navigate to your doorstep
+Without compromising your privacy
+04 Nov 2019, 21:47 by Cohen Coberly
+In context: Technology has solved many of the world's problems, but not without introducing a few of its own -- some worse than others. On the less-serious end of that scale, we have autonomous delivery robots. These bots promise faster and more convenient shipping for customers, but they've also forced tech companies to figure out the best way to safely guide the machines to your doorstep.
+Mapping neighborhoods in detail beforehand is one solution, but that becomes much less reliable over time. Front yard layouts change (due to holidays, the weather, remodeling, or new homeowners), and it risks compromising customer privacy.
+So, what's the alternative? The Massachusetts Institute of Technology (MIT), in partnership with Ford, may have found an answer to that question. MIT's engineers recently developed a preliminary navigation method that uses environmental clues to help delivery robots plan out a route to their destination on-the-fly.
+This method relies primarily on machine learning and artificial intelligence algorithms as opposed to specific or semi-specific GPS coordinates.
+
+
+
+You can see the technology in action in the video above (sort of -- it's a digital environment), but in short, MIT's robots have been taught to put various pieces of information together to form one complete path. For example, if you tell an MIT bot to deliver a package to someone's garage, it may look for a nearby sidewalk, which often leads into a driveway, which will almost certainly be connected to a garage.
+This method, MIT's researchers believe, is much more efficient than older systems that relied more heavily on exploration (and were more time consuming as a result). MIT trained its robot using satellite images pulled from Bing Maps. The research team reportedly assigned ""semantic labels"" to ""context features"" in the images such as the color grey for a front door, blue for a driveway, green for a hedge, and so on.
+We look forward to seeing how MIT's technology performs in the wild, but it will likely be a while before that day comes. Researchers will undoubtedly want to test this navigation system further before they release it or license it out to tech companies like Amazon or Google.
+
+Image credit: Business Insider
+
+
+Related Reads
+
+
+
+
+
+
+
+"

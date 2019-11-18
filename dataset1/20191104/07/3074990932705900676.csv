@@ -1,0 +1,112 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+윤송이 엔씨소프트 사장이 말하는 'AI 시대의 윤리'
+04 Nov 2019, 07:08 by 이두현 기자
+
+
+▲ 엔씨소프트 윤송이 사장
+
+기술이 가진 힘은 강력합니다. 인류 발전의 결정적인 순간에는 항상 과학 기술이 있었기에 그 힘은 의심할 여지가 없습니다. 현재도 과학 기술은 하루가 다르게 발전하고 있고 이는 새로운 세상으로의 진입 속도를 더 빠르게 앞당기고 있습니다.
+그럼 우리는, 기술을 받아들이는 준비 또한 그 속도에 맞춰서 잘하고 있는 걸까요. AI가 현실과 점점 더 밀접해지고 있는 지금 문제가 되는 건 정말 우리의 일자리뿐일까요. 'SCIENCE to the Future' 시리즈의 마지막은 도래하는 AI시대에 생각해봐야 할 윤리 문제를 다룹니다. 기술을 바라보는 시각을 넘어, 미래를 바라보는 시각을 달리하게 되는 계기가 될 것입니다.
+윤송이 사장은 현재 미국 스탠포드대학 인간 중심 AI연구소(Human-Centered AI Institute, HAI)의 자문 위원을 맡고 있다. 인간 중심 AI연구소는 AI와 데이터가 더 광범위하게 쓰이는 사회에서 야기될 수 있는 문제들에 의식을 가진 각계의 인사들을 주축으로 운영되며, 에릭 슈미트 전 구글 회장, 제리 양 야후 공동 창업자, 제프 딘 구글 AI 책임자 등이 자문위원으로 활동하고 있다. 자문위원들은 미래 사회에서 기술 개발, 교육, 정책, 법제 마련은 어떤 식으로 되어야 하는지 의견을 낸다. 자문위원들의 의견은 일반 대중을 위한 지침서와 제안서를 마련하고 이들을 위한 교육 시행에 활용된다.
+
+AI도 선입견이 있다자율 주행 자동차가 도입되는 세상을 이야기할 때 흔히 거론되는 문제가 있습니다. 바로 트롤리 딜레마(Trolley Problem)에 관한 것입니다. 자율 주행 자동차가 왼쪽으로 꺾으면 탑승자, 즉 차 주인이 다치게 되고 오른쪽으로 꺾으면 여러 명의 유치원생들이 다치게 되는 상황에서 핸들을 어느 쪽으로 꺾도록 프로그램이 되어야 할까 하는 문제가 그것입니다.
+
+
+▲ 트롤리 딜레마
+
+자율 주행 자동차가 주행 중 맞닥뜨릴 수 있는 여러 상황에서의 도덕적 판단을 프로그래밍 하기 위해서는 판단의 기준은 누가 정할 것인지, 어떤 기준으로 판단할 것인지에 대한 논의가 선행되어야 합니다. 하지만 이 논의의 배경에 얼마나 많은 가정들이 고려되었는지, 이와 관련된 상위 인지 문제를 풀기 위해서 얼마나 많은 단계를 거쳐야 하는지에 대해서는 정작 충분하게 논의되지 못하고 있습니다.
+상위 인지(metacognition): 자신의 인지활동에 대한 인지를 뜻한다. 자신이 무엇을 알고 무엇을 모르는지에 대해 아는 것에서부터 모르는 부분을 보완하기 위한 계획을 세우고 이를 실행하는 전 과정을 말한다.
+2018년 초 미국 매사추세츠공과대학(MIT)에서 발표한 내용에 따르면, 오픈 소스로 흔하게 쓰이고 있는 얼굴 인식 알고리즘은 피부색과 성별에 따라 인식률에 차이가 있다고 합니다. 백인 남성의 경우 98%의 정확도로 인식하는 반면, 유색 여성의 경우 70%가 채 안 되는 인식률을 보인 것입니다. 자율 주행 자동차는 이런 카메라 기반의 얼굴 인식 알고리즘 외에도 다양한 센서로 작동합니다. 하지만 이 얼굴 인식 알고리즘이 왼쪽에는 사람이 있고, 오른쪽에는 유인원이 있다는 결론을 내린다면, 앞서 언급한 상위 인지 문제에 도달하기도 전에 특정 인종에 불합리한 의사 결정을 하게 될 수 있다는 결론에 이르게 됩니다.
+이런 편견과 불합리성이 내재된 소프트웨어는 어떻게 만들어졌을까요? 엔지니어들이 지독한 편견을 가지고 있어서일까요? 그렇게 생각되지는 않습니다. 그들이 AI를 학습시키는데 사용한 데이터 자체에 백인 남성의 데이터가 더 많다 보니 그렇게 학습되었을 가능성이 높습니다.
+지금은 그렇지 않지만, 몇 년 전까지만 해도 구글 검색창에 CEO라는 단어를 치면 이미지 검색 결과의 상위 50개는 모두 백인 남성의 사진이었습니다. 여성과 관련된 사진 중 가장 상위에 나오는 건 사람의 사진도 아닌 미국 완구업체 마텔사에서 만든 CEO 모습을 한 바비 인형 사진이었습니다. 이런 데이터로 학습된 AI에게 ’CEO는 어떤 사람일까’라는 질문을 했을 때 어떤 대답이 나올지는 자명한 일입니다.
+그런데 AI가 이런 선입견을 가지는 게 잘못된 것일까요? 누군가는 편견을 가지고 있는 AI가 불편할 수 있습니다. 또 다른 누군가는 그것이 사회의 현실이기 때문에 편향된 시각을 가지는 게 제대로 된 AI라고 생각할 수도 있습니다. 그럼 우리가 꿈꾸는 미래의 사회는 어떤 모습일까요? AI를 더 많이 만들어 보급해야 한다고 말하기 전에, 이런 질문에 대한 성숙한 사회적 논의가 먼저 이루어져야 하지 않을까요?
+기술은 편견이나 불공정함을 여과 없이 담는다배심원제도는 미국 재판제도의 대표적인 특징 중 하나입니다. 미국의 경우 법정에 나오는 판사, 변호사, 검사 모두 법정에서 보내는 시간에 대한 보상과 처우를 받습니다. 그러나 일반 시민 중 무작위로 선출되는 배심원들은 무료로 참여합니다. 국민의 의무로 기꺼이 봉사하는 셈입니다.
+하지만 재판은 하루 이틀 안에 끝나는 것이 아니라 사안에 따라 한 달가량 지속되기도 합니다. 일용직 노동자들에겐 여간 부담되는 일이 아닐 수 없습니다. 이런 사람들은 대부분 불참 사유서를 제출해 면제를 받게 되지만, 국민의 의견을 골고루 받겠다고 만든 시스템에 특정 경제 계층의 의견이 반영되지 못하는 문제를 초래합니다. 여러 가지로 보완해야 할 점이 있는 제도입니다.
+
+
+▲ 우리나라 대법원 정의의 여신상
+
+그런데 이런 제도에서 나온 판결의 결과로 학습된 AI 시스템은 어떤 판결을 내리게 될까요? 이미 미국 법원에서는 보석 결정을 위해 AI 기반의 소프트웨어를 쓰고 있습니다. 이 시스템은 특정 인종과 소득 계층의 피고인에게 불리한 결과를 내는 경향이 있다는 문제가 지적되고 있습니다. 우리 제도가 가지고 있는 편견과 불합리함을 그대로 학습한 AI 시스템이 불편해지고 있는 것입니다. 그렇다면 어떤 판결이 합리적이고 공정한 것인지 AI에게 누가 이야기해줘야 하는 걸까요?
+데이터 기반으로 약을 만드는 정밀의료(precision medicine: 환자마다 다른 유전체 정보, 환경적 요인, 생활 습관 등을 분자 수준에서 종합적으로 분석하여 최적의 치료방법을 제공하는 의료서비스)도 마찬가지입니다. 인종, 체질, 성별에 따라서 어떤 약이 더 효과적일지 차이가 있다는 건 쉽게 유추할 수 있습니다. 하지만 이런 약을 만드는데 쓰이는 데이터의 대부분은 병원을 더 자주 찾는, 또 이런 실험에 기꺼이 참가할 시간과 여유가 있는 사람들의 것이라는 사실은 쉽게 간과되곤 합니다. 이런 약을 만드는데 정부의 보건 예산이 쓰이는 건 정당한 일일까요? 이러한 편견은 이미 사회에 널리 퍼져 있습니다. 하지만 같은 이야기가 기계를 통해 나오는 순간 사람들은 왠지 더 공정하고 객관적일 것이라 믿습니다. 결국 믿음의 오류는 결과의 정당화를 초래하게 되고 맙니다.
+편견이 학습된 AI의 결과가 구글 검색의 첫 페이지에 있다면기술은 쉽게 디지털화 되어 획일적으로 많은 사람들에게 퍼지게 할 수 있습니다. 편견을 그대로 전파하게 되는 위험을 더하는 것입니다. 과거에는 아이들이 궁금한 게 있으면, 어른에게 물어보거나 백과사전을 찾아보기도 하고 도서관에 가서 책을 찾아보기도 하면서 다양한 해결 방법을 통해 답을 얻을 수 있었습니다. 요즘은 다들 궁금한 내용이 있으면 구글 같은 검색 엔진에서 검색하고 첫 페이지에 나오는 내용을 읽습니다. 그리고 더 이상 궁금해하지 않습니다. 이렇게 답을 찾았다고 생각하는 것이 창의력 향상에 저해가 된다는 글을 읽은 적이 있습니다.
+무한 복제가 가능한 디지털 서비스가 갖는 폐해입니다. 편견을 가진 AI가 바로 이렇게 무한 복제가 되어 모든 사람들 앞에 동시에 서게 될 경우 폐해가 더 커질 수 있기 때문에 이 문제가 더 염려됩니다.
+AI는 편견의 타래를 푸는 열쇠가 될 수 있다하지만 AI가 언제나 우리 사회의 편견을 심화시키기만 하는 것은 아닙니다. AI는 인간 본성을 드러내고 이에 대한 근본적인 질문을 던지는, 그리고 대답을 요구하는 계기를 제공하기도 합니다. 아마존의 인공지능 플랫폼 알렉사가 남성의 목소리를 가졌을 때와 여성 목소리를 가졌을 때 사람들이 각각을 대하는 방법이나 쓰는 단어, 목소리가 달라진다는 연구 결과가 있습니다. 이 결과는 우리 사회의 불편한 단면을 드러내기도 합니다.
+기기에 말을 함부로 하거나, 심지어 욕설을 하는 건 정당한 일일까요? 아니라면 왜 불편하게 생각해야 하는 일일까요? 흔히 로봇은 인권이 없는 존재로 생각합니다. 그러면 사이보그는 어떤가요? 팔다리를 인공 팔다리로 교체한 사람의 인권이 그렇지 않은 사람의 인권보다 덜하다고 생각하는 사람은 아무도 없을 것입니다.
+이렇게 사고를 하나씩 확장해 나가다 보면, 인간의 존엄은 물리적인 육체가 아니라 생각과 사고에서 나온다는 결론에 도달할 수 있습니다. 때문에 개개인의 생김새나 신체적 조건 때문에 차별을 한다는 건 너무나 부당한 것임을 알 수 있습니다. 이렇게 AI의 기술로 발견된 편견과 부당함은 오히려 편견이 어디서 오게 되었는지 풀 수 있는 실마리가 될 수 있습니다.
+
+
+▲ 이미지 이용: pixabay
+
+인간과 AI의 조화로운 공존최근 제기되는 다양한 편견의 문제들은 이미 우리 사회 곳곳에 내재되어 있었습니다. 어떻게 실타래를 풀어가야 할지 생각할 겨를이 없어 미뤄 놓았던 문제들인 것도 많습니다. 하지만 AI와 디지털 기술의 도입이 미루어 놓았던 문제들의 신속한 해결을 촉구하고 있습니다. 이미 해외 유수 대학들에서는 컴퓨터 사이언스 과목에 윤리 모듈을 접목시키는 것을 의무화하는 제도의 도입을 검토하고 있습니다.
+기술이 가지는 파급력이 커지는 만큼, 이를 다루고 만드는데 따르는 책임도 커지고 있습니다. 우리가 만들어 내는 기술이 사회에 어떤 영향을 미치는지, 의도하지 않았던 결과를 초래할 위험은 없는지 충분한 고민이 필요한 시점입니다. 뿐만 아니라 편견이 반영된 기술을 받아들이지 않는 사회의 의식 또한 성숙해져야 할 것입니다.
+파급력있는 기술을 만드는 입장에서 어떤 기준으로 기술을 만들고 발전시켜 나갈 것인지 고민하는 건 당연합니다. 그리고 그 기준을 만드는 데 참여하는 것은 의무입니다. 인공지능은 더 이상 하나의 새로운 기술에 그치지 않습니다. 이 기술이 사회에 올바르게 작동하기 위해선 교육, 정책, 법률 등 다양한 부문에서 이 문제를 함께 고민해야 할 것입니다.
+
+
+",ko,"
+
+
+
+
+
+
+
+
+
+
+
+Yoon Song Lee, President of NCsoft
+04 Nov 2019, 07:08 by Lee Du-hyun
+
+
+▲ President of NCsoft Yoon Song-yi
+
+The power of technology is powerful. There has always been science and technology at the decisive moment of human development, so the power is beyond doubt. Today, science and technology is developing differently each day, which is speeding up the pace of entering a new world.
+So, are we doing well at the pace of getting ready to accept technology? Is it really our job that AI is getting closer to reality? The end of the 'SCIENCE to the Future' series deals with ethical issues to think about in the coming AI era. Beyond looking at technology, it will be a chance to change the way you look at the future.
+Yoon Song is currently an advisory board member of the Human-Centered AI Institute (HAI) at Stanford University. The Human-Centered AI Lab is led by people from all walks of life who are conscious of the issues that may arise in a society where AI and data are more widely used. Former Google Chairman, Jerry Yang Yahoo Co-Founder, Jeff Dean Google AI The director is acting as an advisory board. Advisors comment on how technology development, education, policy and legislation should be in the future. The opinions of the advisors are used to prepare guidelines and proposals for the general public and to conduct training for them.
+
+AI is Prejudiced When talking about a world where autonomous cars are introduced, there is a common problem. It's about the Trolley Problem. If the autonomous car is to be turned to the left, the occupant, the owner of the car, will be injured, and if it is to the right, which kind of kindergarten students will be injured, which direction should be programmed to turn the steering wheel?
+
+
+▲ Trolley Dilemma
+
+In order to program moral judgments in various situations that an autonomous vehicle may encounter while driving, it is necessary to discuss who should decide which criteria and how to judge them. However, it is not enough to discuss how many assumptions are considered in the background of this discussion and how many steps to take to solve the higher cognitive problems associated with it.
+Metacognition: Recognition of one's cognitive activity. From knowing what you know and what you don't know, it's the whole process of making a plan to make up for what you don't know and doing it.
+According to a statement released by the Massachusetts Institute of Technology (MIT) in early 2018, face recognition algorithms commonly used as open source differ in recognition rate according to skin color and gender. White men recognize 98 percent accuracy, while colored women recognize less than 70 percent. In addition to these camera-based face recognition algorithms, autonomous cars work with a variety of sensors. However, if the face recognition algorithm concludes that there are people on the left and apes on the right, it leads to the conclusion that it may make irrational decisions for a particular race before reaching the above-mentioned higher cognitive problems.
+How was the software built with this prejudice and irrationality built? Is it because engineers have terrible prejudice? I don't think so. The data they used to learn AI has more white male data, so it's likely that they've learned it.
+Not now, but a few years ago, if you typed the word CEO in the Google search box, the top 50 of the image search results were all white male photos. At the top of the picture about women was the photo of Barbie, not the picture of a man, but a CEO made by American toy maker Mattel. When you ask the AI, who is trained with such data, what kind of person is the CEO?
+But is it wrong for AI to have this prejudice? Someone may feel uncomfortable with AI. Another might think that having a biased view is the right AI because it is the reality of society. What will our future society look like? Shouldn't we have a mature social discussion of these questions before we say we should make more and more AI?
+Technology captures prejudice and unfairness The jury system is one of the hallmarks of the US trial system. In the United States, judges, lawyers, and prosecutors in court all receive compensation and treatment for time spent in court. However, randomly elected juries from ordinary citizens participate free of charge. We are willing to serve the duties of the people.
+But the trial doesn't end in a day or two, but it can last for about a month, depending on the case. It is a burden for daily workers. Most of these people are exempted by submitting a letter of excus- ance, but the problem is that the opinions of a particular class of economy are not reflected in the system that they have designed to receive public opinion. This is a system that needs to be supplemented in many ways.
+
+
+▲ Statue of Justice of the Supreme Court of Korea
+
+But what is the judgment of the AI system learned as a result of the ruling from this system? Already, US courts are using AI-based software to make jewelry decisions. It is pointed out that this system tends to have adverse consequences for defendants of certain races and income classes. AI systems that have learned from the prejudice and irrationality of our system are becoming uncomfortable. So who should tell AI which ruling is reasonable and fair?
+The same is true for precision medicine, which makes data-based medicines and provides optimal treatments by analyzing the genomic information, environmental factors, and lifestyles that differ from patient to patient. It can be easily inferred that there are differences in which drugs will be more effective depending on race, constitution or gender. But it's easy to overlook the fact that most of the data used to make these drugs comes from people who visit hospitals more often and are willing to take the time to participate in these experiments. Is it justified that the government's health budget will be used to make these drugs? This prejudice is already widespread in society. But as soon as the same story comes out of a machine, people believe it will be fairer and more objective. Eventually, the error of faith leads to the justification of the result.
+If the biased AI results are on the first page of Google search, the technology can be easily digitized and spread to a large number of people uniformly. It adds to the danger of spreading prejudice. In the past, if a child had a question, they could ask the adult, browse an encyclopedia, go to the library, and search for a book. These days, when everyone has a question, they search on a search engine like Google and read what's on the first page. And do not wonder anymore. I've read that thinking that you've found the answer hinders your creativity.
+It's the evil of digital services that allows for infinite replication. We are more concerned about this because the prejudiced AI would be so infinitely duplicated that it would stand in front of everyone at once.
+AI can be the key to skewing prejudice, but AI doesn't always just deepen our society's prejudice. AI can also reveal human nature, ask fundamental questions about it, and provide an opportunity to ask for answers. Amazon's AI platform, Alexa, says that when people have a male voice and when they have a female voice, the way people treat each other, the words they use, and the voices are different. This result also reveals an uncomfortable aspect of our society.
+Is it fair to just say anything to your device or even swear it? If not, why should you feel uncomfortable? Robots are often thought of as non-human rights. What about cyborgs? No one thinks that the human rights of those who have replaced their limbs with artificial ones are less than those of those who do not.
+As we expand our thinking one by one, we can come to the conclusion that human dignity comes not from physical bodies but from thoughts and thoughts. That's why it is so unfair to discriminate against you because of your appearance or physical condition. The biases and injustices found in AI's technology can be a clue to where the bias came from.
+
+
+▲ Use image: pixabay
+
+Harmonious Coexistence between Humans and AI Recently, various prejudiced issues have been inherent in our society. There are many problems that I have put off because I have no time to think about how to loosen the thread. But it is calling for a quick resolution to the problems that have been delayed by the introduction of AI and digital technology. International universities are already considering the introduction of a system that requires the integration of ethics modules in computer science courses.
+As the power of technology grows, so does the responsibility for dealing with and creating it. It's time to think about how the technology we create affects society, and whether there's a risk of unintended consequences. In addition, society's consciousness of not accepting biased technology must also mature.
+From the standpoint of creating a powerful technology, it is natural to think about what standards to develop and develop. And it is a duty to participate in making that standard. AI is no longer just a new technology. In order for this technology to work properly in society, it is necessary to consider this issue in a variety of areas, including education, policy and law.
+
+
+"

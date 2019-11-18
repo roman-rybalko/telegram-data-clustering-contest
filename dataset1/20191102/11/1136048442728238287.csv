@@ -1,0 +1,68 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Пользователи жалуются, что iOS 13.2 выбивает приложения из памяти
+02 Nov 2019, 11:00 by Александр Богданов
+Все больше пользователей iPhone и iPad жалуются на чрезмерное потребление оперативной памяти в iOS 13 и iPadOS 13, что приводит к частой перезагрузке таких приложений, как Safari, YouTube и «Почта» вскоре после их открытия. Одним из первых на проблему обратили внимание читатели издания MacRumors, но вскоре тревогу забили в Твиттере и на официальном форуме поддержки Apple.
+
+
+
+В iOS 13 приложения работали корректно, в iOS 13.2 все поломалось
+Чаще всего пользователи жалуются на неожиданную «перезагрузку» приложений, если работать в одной программе, переключиться на другое приложение и после этого вернуться обратно. Контент в первом приложении автоматически сбрасывается, что свидетельствует о нехватке оперативной памяти (или некорректной работе всей системы, что более вероятно).
+Почему вылетают приложения в iOS 13
+Я смотрел видео в приложении YouTube на своем iPhone 11 Pro. Приостановил воспроизведение, чтобы ответить на текстовое сообщение. Открыл iMessage всего на минуту. Когда я вернулся в YouTube, приложение перезагрузилось, и я потерял видео, которое я смотрел. То же самое заметил на своем iPad Pro: приложения и вкладки Safari сбрасываются гораздо чаще, чем в iOS 12. Очень раздражает, — пишет один из пострадавших.
+Судя по всему, чаще всего проблема касается просмотра видео в приложении YouTube и в iOS 13.2:
+Я работал над таблицей в Excel, затем переключился на видео YouTube примерно на 10 минут или около того, и когда я вернулся обратно, приложение выбилось из оперативной памяти. Кроме того, вкладки Safari тоже сбросились. Ни одна из игр не остается в памяти после 20 минут работы в фоновом режиме.
+В то же время другие отмечают, что баг кроется в работе фоновых приложений:
+Я заметил это с первых бета-версий iOS 13.2, и пользователи Overcast также сообщают об этом: фоновые приложения выбиваются из памяти НАМНОГО быстрее, чем раньше.
+Вряд ли проблема кроется в нехватке оперативной памяти. iPhone 11, iPhone 11 Pro и iPhone 11 Pro Max получили 4 ГБ оперативной памяти, что в сравнении с прошлогодним iPhone XR и его 3 ГБ является существенным увеличением. Не говоря уже про устройства вроде iPad Pro, которые никогда не отличались малым количеством ОЗУ. Пользователи считают, что проблема целиком кроется в программном обеспечении (iOS 13.2) и надеятся на ее исправление с ближайшим обновлением.
+
+Читайте также - Как iPadOS 13.1 работает на iPad Air 2
+
+Даже в iPad mini 5 установлен мощный процессор A12 Bionic, произведенный тайваньской компанией TSMC. Помимо этого, планшет оснащен 3 ГБ оперативной памяти (у прошлого поколения было 2 ГБ), чего более чем достаточно для работы. По крайней мере с двумя приложениями планшет должен взаимодействовать без нареканий. А вы заметили нехватку оперативки в iOS 13.2? Поделитесь в комментариях и в нашем Telegram-чате.
+
+
+",ru,"
+
+
+
+
+
+
+
+
+
+
+
+Users complain that iOS 13.2 knocks apps out of memory
+02 Nov 2019, 11:00 by Alexander Bogdanov
+More and more iPhone and iPad users are complaining about excessive memory consumption in iOS 13 and iPadOS 13, which leads to frequent reboots of applications such as Safari, YouTube and Mail shortly after they are opened. MacRumors readers were one of the first to notice the problem, but they soon sounded the alarm on Twitter and the official Apple Support Forum.
+
+
+
+In iOS 13, applications worked correctly, in iOS 13.2 everything broke
+Most often, users complain about the unexpected ""restart"" of applications, if you work in one program, switch to another application and then return back. Content in the first application is automatically reset, which indicates a lack of RAM (or incorrect operation of the entire system, which is more likely).
+Why apps crash in iOS 13
+I watched the video in the YouTube app on my iPhone 11 Pro. Paused playback to reply to a text message. Opened iMessage for just a minute. When I returned to YouTube, the application rebooted and I lost the video that I watched. I noticed the same thing on my iPad Pro: Safari apps and tabs are reset much more often than in iOS 12. Very annoying, one of the victims writes.
+Apparently, most often the problem concerns watching videos in the YouTube application and in iOS 13.2:
+I worked on a spreadsheet in Excel, then switched to a YouTube video for about 10 minutes or so, and when I got back, the application got out of RAM. In addition, Safari tabs also reset. None of the games remain in memory after 20 minutes of running in the background.
+At the same time, others note that the bug lies in the work of background applications:
+I noticed this from the first beta versions of iOS 13.2, and Overcast users also report this: background applications get out of memory MUCH much faster than before.
+It is unlikely that the problem lies in the lack of RAM. iPhone 11, iPhone 11 Pro and iPhone 11 Pro Max received 4 GB of RAM, which is a significant increase compared to last year's iPhone XR and its 3 GB. Not to mention devices like the iPad Pro, which have never had a small amount of RAM. Users believe that the problem lies entirely in the software (iOS 13.2) and hope to fix it with the next update.
+
+See also - How iPadOS 13.1 works on iPad Air 2
+
+Even the iPad mini 5 has a powerful A12 Bionic processor manufactured by Taiwanese TSMC. In addition, the tablet is equipped with 3 GB of RAM (the previous generation had 2 GB), which is more than enough to work. With at least two applications, the tablet should interact flawlessly. Have you noticed a lack of RAM in iOS 13.2? Share in the comments and in our Telegram chat.
+
+
+"

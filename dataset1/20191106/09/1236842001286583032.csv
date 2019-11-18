@@ -1,0 +1,52 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+В Epic Games Store нашли баг, позволяющий запускать игры с чужого аккаунта и те, за которые совершен возврат средств
+06 Nov 2019, 09:29 by Матвей Трухан
+Об этом рассказало издание CNN.
+
+
+
+25 октября 2019 года издание CNN выпустило статью, посвященную проблемам безопасности Epic Games Store.
+Одна из них оказалась весьма интересной. Если игрок зайдет с одного аккаунта, скачает с него игры, а потом перейдет на другой аккаунт на этом же компьютере, то у него будут доступны игры с первого аккаунта.
+Журналист проверил данный баг с несколькими играми и компьютерами. И везде он работает. Он рассказал, что зашел под одним аккаунтом на три компьютера, потом на них перешел на другие аккаунты, и игры с первого аккаунта работали на всех трех компьютерах. Судя по этому, ограничений у бага нет.
+Но и это еще не все. Можно запускать игры, за которые игрок вернул деньги. «Философия» бага не меняется. Главное — чтобы игра оставалась установленной на компьютере.
+Неизвестно, поправили ли эту ошибку на данный момент.
+
+
+",ru,"
+
+
+
+
+
+
+
+
+
+
+
+The Epic Games Store found a bug that allows you to run games from someone else’s account and those for which a refund has been made
+06 Nov 2019, 09:29 by Matvey Trukhan
+This was reported by CNN.
+
+
+
+On October 25, 2019, CNN released an article on the security issues of the Epic Games Store.
+One of them turned out to be very interesting. If a player logs in from one account, downloads games from him, and then transfers to another account on the same computer, then games from the first account will be available to him.
+The journalist checked this bug with several games and computers. And everywhere it works. He said that he logged into three computers under one account, then switched to other accounts on them, and the games from the first account worked on all three computers. Judging by this, the bug has no limitations.
+But that is not all. You can run games for which the player returned the money. The “philosophy” of the bug does not change. The main thing is that the game remains installed on the computer.
+It is not known whether this error has been corrected at the moment.
+
+
+"

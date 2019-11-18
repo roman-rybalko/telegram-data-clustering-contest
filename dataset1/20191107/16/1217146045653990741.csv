@@ -1,0 +1,94 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+QNAP Warns Users to Secure Devices Against QSnatch Malware
+07 Nov 2019, 16:54 by Sergiu Gatlan
+
+
+
+Network-attached storage (NAS) maker QNAP urges customers to secure their NAS devices against an ongoing malicious campaign that infects them with QSnatch malware capable of stealing user credentials.
+QNAP advises users to install the latest version of the Malware Remover app for the QTS operating system running on the company's NAS devices as soon as possible.
+Malware Remover 3.5.4.0 and 4.5.4.0 versions are now capable of removing QSnatch after new rules were added by the company updated it on November 1.
+""Users are urged to install the latest version of the Malware Remover app from QTS App Center or by manual downloading from the QNAP website,"" says QNAP.
+""Users are advised to take actions listed in the security advisory or, alternatively, contact QNAP for technical assistance. Instructions for creating a support request can be found here.""
+QNAP NAS devices under attack
+Researchers at the National Cyber Security Centre of Finland (NCSC-FI) found in late October that thousands of QNAP NAS devices infected with QSnatch had their firmware injected with malicious code.
+The malware harvests and exfiltrates user credentials found on compromised NAS devices, and it is also capable of loading malicious code retrieved from its command and control (C2) servers.
+Germany's Computer Emergency Response Team (CERT-Bund) said at the time that, based on sinkhole data, around 7,000 NAS devices in Germany were impacted by QSnatch infections.
+NCSC-FI found that QSnatch gets injected into the firmware of QNAP NAS devices during the infection stage, with the malicious code being ""run as part of normal operations within the device.""
+After infecting the firmware, the device is compromised and the malware uses ""domain generation algorithms to retrieve more malicious code from C2 servers.""
+The payloads it downloads from the C2 server is launched on infected QNAP NAS devices with system rights and it will perform the following actions:
+• Operating system timed jobs and scripts are modified (cronjob, init scripts)• Firmware updates are prevented via overwriting update sources completely• QNAP MalwareRemover App is prevented from being run• All usernames and passwords related to the device are retrieved and sent to the C2 server• The malware has modular capacity to load new features from the C2 servers for further activities• Call-home activity to the C2 servers is set to run with set intervals
+Protecting your QNAP NAS
+QNAP advises users to take the following measures to defend against infections:
+
+Update QTS to the latest version.
+Install and update Security Counselor to the latest version.
+Use a stronger admin password.
+Enable IP and account access protection to prevent brute force attacks.
+Disable SSH and Telnet connections if you are not using these services.
+Avoid using default port numbers 443 and 8080.
+
+The company also provides detailed step-by-step procedures on how to change device passwords, to enable IP and account access protection, to disable SSH and Telnet connections, and to change the system port number.
+This is not the first time QNAP's NAS devices have been under siege with the company issuing a security advisory in early October about devices with weak SQL server passwords and running phpMyAdmin being attacked by Muhstik Ransomware.
+Another advisory about an eCh0raix Ransomware (also known as QNAPCrypt) campaign targeting QNAP NAS devices with weak passwords and outdated QTS firmware was published in August. One week earlier, ransomware expert BloodDolly released an eCh0raix decryptor for some variants in a BleepingComputer support topic.
+In May 2018, QNAP also notified its customers of ongoing VPNFilter malware attacks trying to infect NAS devices with default administrator account passwords or running QTS 4.2.6 build 20170628, 4.3.3 build 20170703, and earlier versions.
+
+
+",en,"
+
+
+
+
+
+
+
+
+
+
+
+QNAP Warns Users to Secure Devices Against QSnatch Malware
+07 Nov 2019, 16:54 by Sergiu Gatlan
+
+
+
+Network-attached storage (NAS) maker QNAP urges customers to secure their NAS devices against an ongoing malicious campaign that infects them with QSnatch malware capable of stealing user credentials.
+QNAP advises users to install the latest version of the Malware Remover app for the QTS operating system running on the company's NAS devices as soon as possible.
+Malware Remover 3.5.4.0 and 4.5.4.0 versions are now capable of removing QSnatch after new rules were added by the company updated it on November 1.
+""Users are urged to install the latest version of the Malware Remover app from QTS App Center or by manual downloading from the QNAP website,"" says QNAP.
+""Users are advised to take actions listed in the security advisory or, alternatively, contact QNAP for technical assistance. Instructions for creating a support request can be found here.""
+QNAP NAS devices under attack
+Researchers at the National Cyber Security Centre of Finland (NCSC-FI) found in late October that thousands of QNAP NAS devices infected with QSnatch had their firmware injected with malicious code.
+The malware harvests and exfiltrates user credentials found on compromised NAS devices, and it is also capable of loading malicious code retrieved from its command and control (C2) servers.
+Germany's Computer Emergency Response Team (CERT-Bund) said at the time that, based on sinkhole data, around 7,000 NAS devices in Germany were impacted by QSnatch infections.
+NCSC-FI found that QSnatch gets injected into the firmware of QNAP NAS devices during the infection stage, with the malicious code being ""run as part of normal operations within the device.""
+After infecting the firmware, the device is compromised and the malware uses ""domain generation algorithms to retrieve more malicious code from C2 servers.""
+The payloads it downloads from the C2 server is launched on infected QNAP NAS devices with system rights and it will perform the following actions:
+• Operating system timed jobs and scripts are modified (cronjob, init scripts)• Firmware updates are prevented via overwriting update sources completely• QNAP MalwareRemover App is prevented from being run• All usernames and passwords related to the device are retrieved and sent to the C2 server• The malware has modular capacity to load new features from the C2 servers for further activities• Call-home activity to the C2 servers is set to run with set intervals
+Protecting your QNAP NAS
+QNAP advises users to take the following measures to defend against infections:
+
+Update QTS to the latest version.
+Install and update Security Counselor to the latest version.
+Use a stronger admin password.
+Enable IP and account access protection to prevent brute force attacks.
+Disable SSH and Telnet connections if you are not using these services.
+Avoid using default port numbers 443 and 8080.
+
+The company also provides detailed step-by-step procedures on how to change device passwords, to enable IP and account access protection, to disable SSH and Telnet connections, and to change the system port number.
+This is not the first time QNAP's NAS devices have been under siege with the company issuing a security advisory in early October about devices with weak SQL server passwords and running phpMyAdmin being attacked by Muhstik Ransomware.
+Another advisory about an eCh0raix Ransomware (also known as QNAPCrypt) campaign targeting QNAP NAS devices with weak passwords and outdated QTS firmware was published in August. One week earlier, ransomware expert BloodDolly released an eCh0raix decryptor for some variants in a BleepingComputer support topic.
+In May 2018, QNAP also notified its customers of ongoing VPNFilter malware attacks trying to infect NAS devices with default administrator account passwords or running QTS 4.2.6 build 20170628, 4.3.3 build 20170703, and earlier versions.
+
+
+"

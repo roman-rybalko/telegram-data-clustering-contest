@@ -1,0 +1,84 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Google announces OpenTitan, an open source project for secure chip design
+Google wants everything to have a version of its Titan chip
+05 Nov 2019, 22:45 by David Matthews
+Why it matters: While there are various means to infect applications running on a computer, the holy grail of cybersecurity is at the firmware and chip level. Google wants to make sure everyone can establish a Root of Trust at the chip level using its Open Titan project. This project aims to establish common reference design that is open sourced. This will allow many people to improve upon the initial design and strengthen the security of the implementation.
+Google has announced that it is partnering with several companies and non-profits to start a new initiative called OpenTitan. The goal is to develop open source secure chip design to be used in data centers and infrastructure. These designs can be independently verified and built upon to become even stronger.
+The project is named after Google's own Titan chip that's used in its data centers and Pixel phones that confirms boot from a known trustworthy state and verifies that the firmware hasn't been tampered with. The cryptographic element that is used to verify is called the Root of Trust (RoT) and is the heart of the OpenTitan project.
+Google says that OpenTitan will be ran by the non-profit LowRisc with additional partners supporting it. Those partners include ETH Zurich, Nuvoton Technology, G+D Mobile Security, and Western Digital. That said, the point open-source nature of the project will ensure that it is platform agnostic and can be adapted to any device.
+
+
+
+The basic idea regarding RoT is that software can run on components that have been deemed secure using ""authorized and verifiable code."" According to Google's blog post, the benefits of silicon RoT include:
+
+Ensuring that devices boot with correct firmware, free from malware infection.
+Provide a cryptographically unique machine identity, so an operator can verify that a server or a device is legitimate.
+Protect secrets like encryption keys in a tamper-resistant way even for people with physical access (e.g., while a server or a device is being shipped).
+Provide authoritative, tamper-evident audit records and other runtime security services.
+
+The company hopes that by fostering transparency through open source silicon design, it will increase trust and security while encouraging innovation. Issues will be able to be dealt with early and implementations can use common interfaces via an open reference design.
+Apple uses its own proprietary RoT chip called the T2 in many of its devices. Samsung implements a version of secure boot in its Knox platform while many Windows PCs implement secure boot as well.
+While some may be skeptical of Google's motivations, the overall goal of the OpenTitan project seems noble enough and hopefully spurs chip manufacturers and platform designers to integrate RoT into their designs more readily.
+
+Related Reads
+
+
+
+
+
+
+
+",en,"
+
+
+
+
+
+
+
+
+
+
+
+Google announces OpenTitan, an open source project for secure chip design
+Google wants everything to have a version of its Titan chip
+05 Nov 2019, 22:45 by David Matthews
+Why it matters: While there are various means to infect applications running on a computer, the holy grail of cybersecurity is at the firmware and chip level. Google wants to make sure everyone can establish a Root of Trust at the chip level using its Open Titan project. This project aims to establish common reference design that is open sourced. This will allow many people to improve upon the initial design and strengthen the security of the implementation.
+Google has announced that it is partnering with several companies and non-profits to start a new initiative called OpenTitan. The goal is to develop open source secure chip design to be used in data centers and infrastructure. These designs can be independently verified and built upon to become even stronger.
+The project is named after Google's own Titan chip that's used in its data centers and Pixel phones that confirms boot from a known trustworthy state and verifies that the firmware hasn't been tampered with. The cryptographic element that is used to verify is called the Root of Trust (RoT) and is the heart of the OpenTitan project.
+Google says that OpenTitan will be ran by the non-profit LowRisc with additional partners supporting it. Those partners include ETH Zurich, Nuvoton Technology, G+D Mobile Security, and Western Digital. That said, the point open-source nature of the project will ensure that it is platform agnostic and can be adapted to any device.
+
+
+
+The basic idea regarding RoT is that software can run on components that have been deemed secure using ""authorized and verifiable code."" According to Google's blog post, the benefits of silicon RoT include:
+
+Ensuring that devices boot with correct firmware, free from malware infection.
+Provide a cryptographically unique machine identity, so an operator can verify that a server or a device is legitimate.
+Protect secrets like encryption keys in a tamper-resistant way even for people with physical access (e.g., while a server or a device is being shipped).
+Provide authoritative, tamper-evident audit records and other runtime security services.
+
+The company hopes that by fostering transparency through open source silicon design, it will increase trust and security while encouraging innovation. Issues will be able to be dealt with early and implementations can use common interfaces via an open reference design.
+Apple uses its own proprietary RoT chip called the T2 in many of its devices. Samsung implements a version of secure boot in its Knox platform while many Windows PCs implement secure boot as well.
+While some may be skeptical of Google's motivations, the overall goal of the OpenTitan project seems noble enough and hopefully spurs chip manufacturers and platform designers to integrate RoT into their designs more readily.
+
+Related Reads
+
+
+
+
+
+
+
+"

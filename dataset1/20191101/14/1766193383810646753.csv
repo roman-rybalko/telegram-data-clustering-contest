@@ -1,0 +1,46 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Site Kit: WordPress-Plugin holt Google-Statistiken ins CMS
+Mit dem WordPress-Plugin Site Kit von Google holen Seitenbetreiber wichtige Statistiken ins CMS. Diese stammen von Analytics und anderen Google-Diensten.
+01 Nov 2019, 14:14 by Daniel Berger
+Google hat sein WordPress-Plugin Site Kit weltweit für alle Nutzer freigegeben, nachdem es erfolgreich die Testphase durchlaufen hat. Mit der kostenlosen Erweiterung können Nutzer diverse Google-Dienste in das populäre Content-Management-System einbinden und beispielsweise die Besucherstatistiken von Google Analytics abrufen. Das Plugin unterstützt außerdem die Search Console, PageSpeed Insights sowie Google AdSense. Alle Dienste sind übersichtlich an einem zentralen Ort im WordPress-Dashboard untergebracht.
+Nach der Installation über das WordPress-Backend führt Site Kit den Nutzer schrittweise durch die Einrichtung. Anschließend hilft das Plugin bei der Optimierung der Online-Präsenz: Die Abrufstatistiken von Google Analytics zeigen etwa, welche Blog-Einträge erfolgreich laufen – und welche nicht. Die schwächelnden Beiträge kann der Seitenbetreiber dann gezielt optimieren.
+Zudem ist es mit Site Kit möglich, den Tag-Manager von Google zu nutzen, um Code-Elemente (Tags) schnell in den Quelltext der Website einzubinden. Mit diesen Tags wird etwa der Traffic auf einer Seite gemessen und das Nutzerverhalten analysiert. Google hat zu Site Kit eine Hilfeseite eingerichtet und bietet weitere Unterstützung in einem Support-Forum an. Das Plugin ist im offiziellen WordPress-Verzeichnis zu finden; es wurde bislang noch nicht ins Deutsche übersetzt.
+Plugin ist Open Source
+Google hatte Site Kit vor knapp einem Jahr angekündigt und auf dem diesjährigen WordCamp Europe in Berlin veröffentlicht – zunächst aber nur als Vorabversion für Entwickler. Der Code ist seitdem als Open Source auf GitHub verfügbar. Innerhalb von sechs Monaten setzten die Entwickler einige Änderungswünsche aus der Community um. Sie vereinfachten etwa die Einrichtung und beseitigten viele Bugs, erklärt Google-Produktmanagerin Mariya Moeva. Nach dem jetzigen Release von Version 1.0.0 planen die Entwickler, weitere Dienste in Site Kit einzubinden. Dabei wollen sie die Wünsche der Nutzer berücksichtigen. (dbe)
+
+
+",de,"
+
+
+
+
+
+
+
+
+
+
+
+Site Kit: WordPress plugin gets Google statistics into the CMS
+With the WordPress Plugin Site Kit from Google, site owners get important statistics into the CMS. These come from Analytics and other Google services.
+01 Nov 2019, 14:14 by Daniel Berger
+Google has released its WordPress Plug-in Site Kit to all users worldwide after successfully completing the testing phase. With the free extension, users can integrate various Google services into the popular content management system and, for example, retrieve the visitor statistics from Google Analytics. The plugin also supports Search Console, PageSpeed Insights, and Google AdSense. All services are clearly arranged in a central location in the WordPress dashboard.
+After installation via the WordPress backend, Site Kit guides the user through the setup step by step. Then, the plugin helps to optimize the online presence: The retrieval statistics from Google Analytics show, for example, which blog entries are successful - and which are not. The weakening contributions can be optimized by the site operator.
+In addition, it is possible with Site Kit to use the Google Tag Manager to quickly integrate code elements (tags) into the source code of the website. These tags measure traffic on a page and analyze user behavior. Google has set up a help page for Site Kit and offers additional support in a support forum. The plugin can be found in the official WordPress directory; it has not yet been translated into German.
+Plugin is open source
+Google had announced Site Kit less than a year ago and published it at this year's WordCamp Europe in Berlin - but initially only as a pre-release version for developers. The code is now available as open source on GitHub. Within six months, the developers implemented some change requests from the community. They simplified the setup and eliminated many bugs, says Google product manager Mariya Moeva. After the current release of version 1.0.0, developers plan to include more services in Site Kit. They want to consider the wishes of the users. (DBE)
+
+
+"

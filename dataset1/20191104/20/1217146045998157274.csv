@@ -1,0 +1,108 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Malwarebytes 4.0 Released With New UI and Scanning Engine
+04 Nov 2019, 20:39 by Lawrence Abrams
+
+
+
+Malwarebytes has released version 4.0 of their flagship antivirus product and with it comes a new scanning engine, a new user interface, threat statistics and more.
+At this time, Malwarebytes 3.x is not automatically upgrading to Malwarebytes 4.0. If you wish to upgrade to this new version you will need to download the installer directly from Malwarebytes site.
+Below we will take a look at what has changed in this new version.
+A look at the new interface
+The biggest change users will experience is the new user interface. With Malwarebytes 4.0, the main sections consisting of the quarantine, scanner, and real-time protection settings are clearly shown on the dashboard.
+
+
+Caption
+
+Clicking on a section will cause a flyout overlay to appear where you can changing settings, view the quarantine, or perform a scan
+Of all the sections, the Real-Time Protection screen has changed the most. In this sections users can now easily manage the different protections, but also see stats on the malicious sites, ransomware, exploits, or malware and PUPs that Malwaerbytes 4.0 has prevented.
+In addition, this section will also display the latest posts from the Malwarebyte's blog.
+
+
+Malwarebytes Protection Settings
+
+Other than that, the rest of the sections contain the same functionaality as the previous version.
+
+
+Scanner section
+
+Under the hood
+Malwarebytes 4.0 comes with a new scanning engine called ""Katana"" that includes the following features:
+
+Improved zero-hour detection – pinpoints new threats as they arise and before they can wreak havoc on your device
+Expanded malware detection – blocks even more malware for improved protection
+Signature-less behavioral detection – identifies the latest variants of dangerous malware families that attempt to evade traditional signatures through runtime packing, obfuscation and encryption, offering instant protection against new threats that traditional AV has a hard time detecting
+
+With this release, Malwarebytes considers itself an antivirus replacement and will now register itself with the Windows Security settings as the primary antivirus solution on the computer. This makes it easy to manage from Windows and will allow Windows 10 to alert if you if the real-time protection feature is disabled.
+
+
+
+Unfortunately, for users running Windows XP or Windows Vista, Malwarebytes 4.0 will no longer work on those operating systems. If you are running Windows XP or Vista, you can continue using Malwarebytes 3.x, which will be supported for the foreseeable future.
+In full disclosure, BleepingComputer is an affiliate of Malwarebytes.
+
+
+",en,"
+
+
+
+
+
+
+
+
+
+
+
+Malwarebytes 4.0 Released With New UI and Scanning Engine
+04 Nov 2019, 20:39 by Lawrence Abrams
+
+
+
+Malwarebytes has released version 4.0 of their flagship antivirus product and with it comes a new scanning engine, a new user interface, threat statistics and more.
+At this time, Malwarebytes 3.x is not automatically upgrading to Malwarebytes 4.0. If you wish to upgrade to this new version you will need to download the installer directly from Malwarebytes site.
+Below we will take a look at what has changed in this new version.
+A look at the new interface
+The biggest change users will experience is the new user interface. With Malwarebytes 4.0, the main sections consisting of the quarantine, scanner, and real-time protection settings are clearly shown on the dashboard.
+
+
+Caption
+
+Clicking on a section will cause a flyout overlay to appear where you can changing settings, view the quarantine, or perform a scan
+Of all the sections, the Real-Time Protection screen has changed the most. In this sections users can now easily manage the different protections, but also see stats on the malicious sites, ransomware, exploits, or malware and PUPs that Malwaerbytes 4.0 has prevented.
+In addition, this section will also display the latest posts from the Malwarebyte's blog.
+
+
+Malwarebytes Protection Settings
+
+Other than that, the rest of the sections contain the same functionaality as the previous version.
+
+
+Scanner section
+
+Under the hood
+Malwarebytes 4.0 comes with a new scanning engine called ""Katana"" that includes the following features:
+
+Improved zero-hour detection – pinpoints new threats as they arise and before they can wreak havoc on your device
+Expanded malware detection – blocks even more malware for improved protection
+Signature-less behavioral detection – identifies the latest variants of dangerous malware families that attempt to evade traditional signatures through runtime packing, obfuscation and encryption, offering instant protection against new threats that traditional AV has a hard time detecting
+
+With this release, Malwarebytes considers itself an antivirus replacement and will now register itself with the Windows Security settings as the primary antivirus solution on the computer. This makes it easy to manage from Windows and will allow Windows 10 to alert if you if the real-time protection feature is disabled.
+
+
+
+Unfortunately, for users running Windows XP or Windows Vista, Malwarebytes 4.0 will no longer work on those operating systems. If you are running Windows XP or Vista, you can continue using Malwarebytes 3.x, which will be supported for the foreseeable future.
+In full disclosure, BleepingComputer is an affiliate of Malwarebytes.
+
+
+"

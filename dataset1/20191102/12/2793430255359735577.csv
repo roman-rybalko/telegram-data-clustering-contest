@@ -1,0 +1,48 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Datacenter TCP explained
+02 Nov 2019, 12:38 by Omrigan
+Modern networking contains a number of improvements over the basic TCP/IP stack. One of this, particularly useful inside datacenter was developed by Microsoft Research in 2010 and called, surprisingly, DataCenter TCP (DCTCP).DCTCP is a set of modification to TCP, targeting to fulfill two properties: 1. Improve latency for latency-sensitive small messages2. Not to decrease the throughput for throughput-sensitive big flowsThe latency inside the network comes out of queueing inside routers. Therefore, DCTCP tries to keep the queue small. Queue remains small when its size is lower than K messages.The proposed algorithm adaptively shrinks the TCP congestion window such that queue remains small.The improvements over TCP requires modification of all three components: router, receiver, sender:1. Marking packets with Congestion Experienced (CE) flag while queue becomes longer than K by a router.2. Transforming a stream of CE flags into a stream of ACK TCP packets by a receiver. More specifically, the receiver immediately sends ACK if CE flag in current packet is different from the previous one. While the CE flag is unchanged, it sends normal Delayed ACKs. ACK packet always contains the last value of the CE flag.3. Adapting congestion window size based on the aggregated ECN-Echo packet stream by the sender. First, sender calculates the Congestion Ratio (CR) — the exponential moving average among CE flags. DCTCP scales down the window size proportionally to CR. If CR is equal to 1 (every packet had CE flag), window size would be halved, just like TCP.The evaluation shows that query latency is significantly better for short transfers. Performance for throughput-sensitive requests is not worse. Although, since 2010 there were several papers with review and improvements of DCTCP.«Ease the Queue Oscillation: Analysis and Enhancement of DCTCP» from 2013 makes an experiment and finds out that DCTCP is subject to severe oscillation of actual queue size. This happens because between first packet with CE flag and the reaction of sender there is at least RTT delay. The paper proposes to split a single threshold K into two threshold K1 < K < K2 such that setting CE flags starts when queue size equal to K1, before actual congestion is experienced, and stops at K2, before queue size will be too much reduced. Another paper is «An early congestion feedback and rate adjustment schemes for many-to-one communication in cloud-based data» published in 2015, which proposes NewDCTCP — which includes two improvements: 1. CE flags are set even for packets arrived before the congestion2. Different scheme of window size adjustmentOne of the latest papers is «Multiple Congestion Points and Congestion Reaction Mechanisms for Improving DCTCP Performance in Data Center Networks» published in June 2018, which shows that the topic remains up-to-date and the problem is yet unsolved. Anyway, the paper combines the double threshold approach and introduce a new idea — congestion window adjustment. It takes into account the number of sent packages and received ACKs during the window size change.
+
+Similar posts
+
+
+
+
+
+
+",en,"
+
+
+
+
+
+
+
+
+
+
+
+Datacenter TCP explained
+02 Nov 2019, 12:38 by Omrigan
+Modern networking contains a number of improvements over the basic TCP/IP stack. One of this, particularly useful inside datacenter was developed by Microsoft Research in 2010 and called, surprisingly, DataCenter TCP (DCTCP).DCTCP is a set of modification to TCP, targeting to fulfill two properties: 1. Improve latency for latency-sensitive small messages2. Not to decrease the throughput for throughput-sensitive big flowsThe latency inside the network comes out of queueing inside routers. Therefore, DCTCP tries to keep the queue small. Queue remains small when its size is lower than K messages.The proposed algorithm adaptively shrinks the TCP congestion window such that queue remains small.The improvements over TCP requires modification of all three components: router, receiver, sender:1. Marking packets with Congestion Experienced (CE) flag while queue becomes longer than K by a router.2. Transforming a stream of CE flags into a stream of ACK TCP packets by a receiver. More specifically, the receiver immediately sends ACK if CE flag in current packet is different from the previous one. While the CE flag is unchanged, it sends normal Delayed ACKs. ACK packet always contains the last value of the CE flag.3. Adapting congestion window size based on the aggregated ECN-Echo packet stream by the sender. First, sender calculates the Congestion Ratio (CR) — the exponential moving average among CE flags. DCTCP scales down the window size proportionally to CR. If CR is equal to 1 (every packet had CE flag), window size would be halved, just like TCP.The evaluation shows that query latency is significantly better for short transfers. Performance for throughput-sensitive requests is not worse. Although, since 2010 there were several papers with review and improvements of DCTCP.«Ease the Queue Oscillation: Analysis and Enhancement of DCTCP» from 2013 makes an experiment and finds out that DCTCP is subject to severe oscillation of actual queue size. This happens because between first packet with CE flag and the reaction of sender there is at least RTT delay. The paper proposes to split a single threshold K into two threshold K1 < K < K2 such that setting CE flags starts when queue size equal to K1, before actual congestion is experienced, and stops at K2, before queue size will be too much reduced. Another paper is «An early congestion feedback and rate adjustment schemes for many-to-one communication in cloud-based data» published in 2015, which proposes NewDCTCP — which includes two improvements: 1. CE flags are set even for packets arrived before the congestion2. Different scheme of window size adjustmentOne of the latest papers is «Multiple Congestion Points and Congestion Reaction Mechanisms for Improving DCTCP Performance in Data Center Networks» published in June 2018, which shows that the topic remains up-to-date and the problem is yet unsolved. Anyway, the paper combines the double threshold approach and introduce a new idea — congestion window adjustment. It takes into account the number of sent packages and received ACKs during the window size change.
+
+Similar posts
+
+
+
+
+
+
+"

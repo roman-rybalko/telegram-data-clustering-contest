@@ -1,0 +1,196 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+AMD’s debut third-gen Threadripper chips will be released on November 25th
+Alongside the Ryzen 9 3950X
+07 Nov 2019, 14:00 by Jon Porter
+AMD has announced its first two third-generation Ryzen Threadripper processors: the $1,399 Threadripper 3960X and the $1,999 Threadripper 3970X. Both processors feature higher clock speeds and more PCIe lanes than their second-generation predecessors, and they also support PCIe version 4.0. You’ll be able to get your hands on the new chips on November 25th when AMD has also announced that it’ll be launching its mainstream AM4 flagship: the 16-core, 32-thread Ryzen 9 3950X.
+You can see how the specs of the new Threadripper processors compare to the previous generation below, but outside of these, there are a couple of other improvements. Both chips are built using AMD’s 7nm Zen 2 microarchitecture, and they feature a total of 72 usable PCIe 4.0 lanes. They also use AMD’s new TRX40 platform and sTRX4 socket, a change that AMD says was necessary in part because of the number of PCIe lanes between the processor and the chipset has doubled from four to eight.
+Threadripper 3rd-gen comparison
+
+
+Threadripper Processor
+2920X
+2950X
+2970WX
+2990WX
+3960X
+3970X
+
+
+Cores
+12
+16
+24
+32
+24
+32
+
+
+Threads
+24
+32
+48
+64
+48
+64
+
+
+Base
+3.5 GHz
+3.5 GHz
+3.0 GHz
+3.0 GHz
+3.8 GHz
+3.7 GHz
+
+
+Boost
+4.3 GHz
+4.4 GHz
+4.2 GHz
+4.2 GHz
+4.5 GHz
+4.5 GHz
+
+
+Cache
+38MB
+40MB
+76MB
+80MB
+140MB
+144MB
+
+
+Price
+$649
+$899
+$1,299
+$1,799
+$1,399
+$1,999
+
+
+Threadripper Processor
+2920X
+2950X
+2970WX
+2990WX
+3960X
+3970X
+
+
+A step down from the Threadripper lineup is the 3950X, which finally has a release date after being announced back in June. This chip has the highest number of cores and threads out of AMD’s mainstream AM4 socket CPU lineup, but it also has the highest single-thread performance, which AMD says should make it the best gaming performer in the lineup. Sure, the $749 3950X’s single-thread performance is only 1 percent better than the $499 Ryzen 3900X, but it’s also got four more cores to boot.
+Along with a release date for the flagship AM4 chip, AMD has also announced a new eco-mode feature for the processor, which allows you to run it at a lower power level and with lower power consumption if you need lots of cores but you’d prefer lower temperatures to higher performance. Along with the 3950X, AMD says that eco-mode will be available on all third-generation chips from Ryzen 5 upwards.
+Finally, at the other end of the spectrum, AMD has also announced a new $49 budget CPU, the AMD Athlon 3000G. Compared to the high end of AMD’s lineup, the chip’s 2 cores and 4 threads sound absolutely tiny, but AMD says the chip is unlocked and ready to be overclocked, so you should be able to squeeze a little more power out of it with the right hardware. The new budget chip will be available on November 19th.
+
+
+",en,"
+
+
+
+
+
+
+
+
+
+
+
+AMD’s debut third-gen Threadripper chips will be released on November 25th
+Alongside the Ryzen 9 3950X
+07 Nov 2019, 14:00 by Jon Porter
+AMD has announced its first two third-generation Ryzen Threadripper processors: the $1,399 Threadripper 3960X and the $1,999 Threadripper 3970X. Both processors feature higher clock speeds and more PCIe lanes than their second-generation predecessors, and they also support PCIe version 4.0. You’ll be able to get your hands on the new chips on November 25th when AMD has also announced that it’ll be launching its mainstream AM4 flagship: the 16-core, 32-thread Ryzen 9 3950X.
+You can see how the specs of the new Threadripper processors compare to the previous generation below, but outside of these, there are a couple of other improvements. Both chips are built using AMD’s 7nm Zen 2 microarchitecture, and they feature a total of 72 usable PCIe 4.0 lanes. They also use AMD’s new TRX40 platform and sTRX4 socket, a change that AMD says was necessary in part because of the number of PCIe lanes between the processor and the chipset has doubled from four to eight.
+Threadripper 3rd-gen comparison
+
+
+Threadripper Processor
+2920X
+2950X
+2970WX
+2990WX
+3960X
+3970X
+
+
+Cores
+12
+16
+24
+32
+24
+32
+
+
+Threads
+24
+32
+48
+64
+48
+64
+
+
+Base
+3.5 GHz
+3.5 GHz
+3.0 GHz
+3.0 GHz
+3.8 GHz
+3.7 GHz
+
+
+Boost
+4.3 GHz
+4.4 GHz
+4.2 GHz
+4.2 GHz
+4.5 GHz
+4.5 GHz
+
+
+Cache
+38MB
+40MB
+76MB
+80MB
+140MB
+144MB
+
+
+Price
+$649
+$899
+$1,299
+$1,799
+$1,399
+$1,999
+
+
+Threadripper Processor
+2920X
+2950X
+2970WX
+2990WX
+3960X
+3970X
+
+
+A step down from the Threadripper lineup is the 3950X, which finally has a release date after being announced back in June. This chip has the highest number of cores and threads out of AMD’s mainstream AM4 socket CPU lineup, but it also has the highest single-thread performance, which AMD says should make it the best gaming performer in the lineup. Sure, the $749 3950X’s single-thread performance is only 1 percent better than the $499 Ryzen 3900X, but it’s also got four more cores to boot.
+Along with a release date for the flagship AM4 chip, AMD has also announced a new eco-mode feature for the processor, which allows you to run it at a lower power level and with lower power consumption if you need lots of cores but you’d prefer lower temperatures to higher performance. Along with the 3950X, AMD says that eco-mode will be available on all third-generation chips from Ryzen 5 upwards.
+Finally, at the other end of the spectrum, AMD has also announced a new $49 budget CPU, the AMD Athlon 3000G. Compared to the high end of AMD’s lineup, the chip’s 2 cores and 4 threads sound absolutely tiny, but AMD says the chip is unlocked and ready to be overclocked, so you should be able to squeeze a little more power out of it with the right hardware. The new budget chip will be available on November 19th.
+
+
+"

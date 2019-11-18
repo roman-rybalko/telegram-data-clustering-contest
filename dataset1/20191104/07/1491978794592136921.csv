@@ -1,0 +1,104 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Can you solve it? Would you get into Oxford?
+04 Nov 2019, 07:10 by Alex Bellos
+
+Try your luck at its fiendish maths entrance examUPDATE: To read the solution click here
+
+Last week about 3,500 of Britain’s most mathematically gifted sixth formers sat Oxford university’s annual Mathematics Admissions Test.
+The exam is designed to test “mathematical understanding…rather than a breadth of knowledge.” Today’s puzzle is taken from a recent paper. It’s about stacking items in a shopping bag.
+If you get full marks in parts (i), (ii) and (iii), well done. Most of the applicants who got in to Oxford did too. But on average, successful applicants did not score full marks in either of parts (iv) or (v).
+Can you do better than them?
+
+You need to pack several items into your shopping bag without squashing anything. The items are to be placed one on top of the other. Each item has a weight and a strength, defined as the maximum weight that can be placed above that item without it being squashed. A packing order is safe if no item in the bag is squashed, that is, if, for each item, that item’s strength is at least the combined weight of what’s placed above that item. For example, here are three items and a packing order:
+
+
+
+
+
+This packing is not safe. The bread is squashed because the weight above it, 5, is greater than its strength, 4. Swapping the apples and the bread, however, gives a safe packing.
+
+(i) Which of the other four orderings of apples, bread and carrots are safe or unsafe?
+(ii) Consider packing items in weight order, with the heaviest at the bottom. Show by giving an example – that is, invent some items and give them weights and strengths of your choosing – that this strategy might not produce a safe packing order, even if one exists.
+(iii) Consider packing items in strength order, with the strongest at the bottom. Show by giving an example – that is, invent some items and give them weights and strengths of your choosing – that this strategy might not produce a safe packing order, even if one exists.
+(iv) Consider we have a safe packing order in our bag. Assume that item j sits directly on item i. Suppose also that:
+(weight of j) – (strength of i) ≥ (weight of i) – (strength of j)
+Show that if we swap items i and j we still have a safe packing order.
+(v) Hence suggest a practical method of producing a safe packing order if one exists. Explain why. (Listing all possible orderings is not possible.)
+I’ll be back with the solutions – and workings! – at 5pm UK. Meanwhile, NO SPOILERS!
+
+UPDATE: To read the solution click here.
+
+(The Mathematics Admissions Test is taken by students applying to study maths, computer science and joint honours, at Oxford, Imperial and Warwick universities. This question was for those applying for computer science courses. It has been rephrased slightly to make it more suitable for a newspaper column. Thanks to James Munro at Oxford’s Mathematical Institute. )
+
+I set a puzzle here every two weeks on a Monday. I’m always on the look-out for great puzzles. If you would like to suggest one, email me.
+
+
+
+
+If you you enjoy puzzles, you might enjoy my latest book, So You Think You’ve Got Problems?, which is out this week. It contains about 200 problems from many different genres, including logic puzzles, word puzzles, physical puzzles and geometrical puzzles. The book also includes background material about the history of the puzzles and discusses the concepts involved.
+
+
+",en,"
+
+
+
+
+
+
+
+
+
+
+
+Can you solve it? Would you get into Oxford?
+04 Nov 2019, 07:10 by Alex Bellos
+
+Try your luck at its fiendish maths entrance examUPDATE: To read the solution click here
+
+Last week about 3,500 of Britain’s most mathematically gifted sixth formers sat Oxford university’s annual Mathematics Admissions Test.
+The exam is designed to test “mathematical understanding…rather than a breadth of knowledge.” Today’s puzzle is taken from a recent paper. It’s about stacking items in a shopping bag.
+If you get full marks in parts (i), (ii) and (iii), well done. Most of the applicants who got in to Oxford did too. But on average, successful applicants did not score full marks in either of parts (iv) or (v).
+Can you do better than them?
+
+You need to pack several items into your shopping bag without squashing anything. The items are to be placed one on top of the other. Each item has a weight and a strength, defined as the maximum weight that can be placed above that item without it being squashed. A packing order is safe if no item in the bag is squashed, that is, if, for each item, that item’s strength is at least the combined weight of what’s placed above that item. For example, here are three items and a packing order:
+
+
+
+
+
+This packing is not safe. The bread is squashed because the weight above it, 5, is greater than its strength, 4. Swapping the apples and the bread, however, gives a safe packing.
+
+(i) Which of the other four orderings of apples, bread and carrots are safe or unsafe?
+(ii) Consider packing items in weight order, with the heaviest at the bottom. Show by giving an example – that is, invent some items and give them weights and strengths of your choosing – that this strategy might not produce a safe packing order, even if one exists.
+(iii) Consider packing items in strength order, with the strongest at the bottom. Show by giving an example – that is, invent some items and give them weights and strengths of your choosing – that this strategy might not produce a safe packing order, even if one exists.
+(iv) Consider we have a safe packing order in our bag. Assume that item j sits directly on item i. Suppose also that:
+(weight of j) – (strength of i) ≥ (weight of i) – (strength of j)
+Show that if we swap items i and j we still have a safe packing order.
+(v) Hence suggest a practical method of producing a safe packing order if one exists. Explain why. (Listing all possible orderings is not possible.)
+I’ll be back with the solutions – and workings! – at 5pm UK. Meanwhile, NO SPOILERS!
+
+UPDATE: To read the solution click here.
+
+(The Mathematics Admissions Test is taken by students applying to study maths, computer science and joint honours, at Oxford, Imperial and Warwick universities. This question was for those applying for computer science courses. It has been rephrased slightly to make it more suitable for a newspaper column. Thanks to James Munro at Oxford’s Mathematical Institute. )
+
+I set a puzzle here every two weeks on a Monday. I’m always on the look-out for great puzzles. If you would like to suggest one, email me.
+
+
+
+
+If you you enjoy puzzles, you might enjoy my latest book, So You Think You’ve Got Problems?, which is out this week. It contains about 200 problems from many different genres, including logic puzzles, word puzzles, physical puzzles and geometrical puzzles. The book also includes background material about the history of the puzzles and discusses the concepts involved.
+
+
+"

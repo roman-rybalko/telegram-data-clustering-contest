@@ -1,0 +1,44 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Google legt Software für Cardboard offen
+Nach der Aufgabe des VR-Dienstes Daydream beendet Google nun auch die Unterstützung seiner erste VR-Lösung, dem Cardboard. Das Unternehmen legt die Software dafür aber offen und hofft, dass die Community die Weiterentwicklung übernimmt.
+07 Nov 2019, 10:50 by Sebastian Grüner
+Die VR-Brille aus Pappe, Googles Cardboard, sollte einen günstigen Einstieg in die VR-Welt bieten. Das Unternehmen beendet nun aber seine direkte Unterstützung für die Cardboard-Software und stellt diese als Open Source auf Github bereit, wie das Unternehmen in seinem Entwicklerblog schreibt. Erst vor rund drei Wochen hatte Google den VR-Dienst Daydream aufgegeben. Offenbar sieht das Unternehmen keine große wirtschaftliche Zukunft mehr für VR-Technik.
+Zusätzlich zu der nun verfügbaren Software für das Cardboard hatte Google zuvor schon einen Bausatz für die VR-Brille aus Pappe veröffentlicht. Das Projekt selbst kann damit also auch künftig von interessierten Entwicklern weiter genutzt werden. Allerdings muss sich die Community um die weitere Pflege selbst kümmern.
+So kündigt Google in der Mitteilung zur Offenlegung explizit an, dass das SDK durch das Unternehmen nicht mehr aktiv weiterentwickelt werden soll. Es soll künftig aber noch vereinzelte Beiträge von Google zu dem Projekt geben. Zwar sei die Nutzung der Cardboard zurückgegangen, in einigen Bereichen wie Unterhaltung und Bildung werde das Gerät aber weiter aktiv eingesetzt. Die Offenlegung des Codes soll damit weiter die einfache Verfügbarkeit des Cardboard-Ökosystems gewährleisten.
+Der nun verfügbare Code umfasst Bibliotheken für Entwickler von iOS und Android-Apps sowie zum Rendern der VR-Ansicht auf den Geräten selbst. Hinzu kommen Schnittstellen zum Überwachen von Kopfbewegungen, zum Verarbeiten von Eingaben und auch zum Rendern von Linsenverzerrungen. Mittels einer QR-Code-Bibliothek sollen Geräte künftig außerdem auch ohne die offizielle Cardboard-App genutzt werden können.
+
+
+",de,"
+
+
+
+
+
+
+
+
+
+
+
+Google discloses software for Cardboard
+After the abandonment of the VR service Daydream Google now also ends the support of its first VR solution, the Cardboard. However, the company leaves the software open and hopes that the community will take over the development.
+07 Nov 2019, 10:50 by Sebastian Grüner
+The VR glasses made of cardboard, Google's Cardboard, should offer a low-priced entry into the VR world. The company is now ending its direct support for the Cardboard software and provides it as open source on Github, as the company writes in its developer blog. Only about three weeks ago, Google had given up the VR service Daydream. Apparently, the company sees no great economic future for VR technology.
+In addition to the software now available for the Cardboard, Google had previously released a kit for the cardboard VR glasses. The project itself can thus continue to be used by interested developers in the future. However, the community has to take care of the further care itself.
+For example, Google explicitly states in the disclosure disclosure that the SDK should no longer be actively developed by the company. It will be in the future but still isolated contributions from Google to the project. Although the use of Cardboard has declined, in some areas such as entertainment and education, the device will continue to be actively used. The disclosure of the code is thus intended to further ensure the easy availability of the Cardboard ecosystem.
+The code now available includes libraries for developers of iOS and Android apps, as well as rendering the VR view on the devices themselves. There are also interfaces for monitoring head movements, processing inputs, and also rendering lens distortions. In future, devices will also be able to be used without the official Cardboard app using a QR code library.
+
+
+"

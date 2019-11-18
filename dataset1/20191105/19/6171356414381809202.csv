@@ -1,0 +1,98 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Pixel 4 throttles down to 60Hz when these blacklisted apps are on screen (Update: WeChat leaving list)
+05 Nov 2019, 19:30 by David Oh
+
+Update 1: 2019/11/05 11:30am PSTAccording to a recent commit posted to AOSP, the 90Hz screen refresh rate blacklist has been scheduled for change. Starting from version 7.0.8, WeChat is to be taken
+
+One of the headline features of the new Pixel 4 is its Smooth Display, a screen with a 90Hz refresh rate which garnered a top A+ rating from the experts at DisplayMate. It became apparent soon after the phone's launch, however, that the Pixel 4 doesn't always operate in 90Hz mode all the time — it only does so above certain brightness levels. Turns out, there is yet another scenario wherein the Pixel 4 will refuse to run at 90Hz — when certain apps are visible on the screen, full-screen or partial (split-screen or picture-in-picture), the refresh rate goes down to 60Hz.
+The Pixel 4's 90Hz app blacklist was discovered inside the AOSP source code. Four apps are currently on that list: Google Maps, Pokemon Go, Waze, and WeChat. In terms of explanation, a comment near the code merely states that these apps ""do not work well when the display refreshes at 90Hz."" As it was in the case of Pokemon Go, it appears app developers will need to put in more work to resolve performance issues with high refresh rate displays.
+When we ran Google Maps and Waze on our Pixel 4, we confirmed that the refresh rate does indeed drop down to 60Hz from 90Hz.
+
+
+
+
+
+
+
+
+
+Left: With Google Maps on the screen, the refresh rate dropped down to 60Hz. Right: With Maps no longer visible, it went back up to 90Hz.
+
+Interestingly, when we toggled on the ""Force 90 Hz"" developer option, the refresh rate remained at 90Hz, even with Google Maps running and visible in split-screen mode. However, the scrolling inside Maps showed no signs of actually rendering at a higher frame rate.
+After our experiment with Maps, we understand why Google created such a blacklist — running apps at 90Hz for the sake of it while the user experience suffers doesn't make much sense. Hopefully, as phones with high refresh rates become ever more common, performance issues like these can be minimized going forward.
+
+
+Update 1: 2019/11/05 11:30am PST by David Oh
+
+According to a recent commit posted to AOSP, the 90Hz screen refresh rate blacklist has been scheduled for change. Starting from version 7.0.8, WeChat is to be taken off the list after earlier versions got blacklisted for ""poor performance under 90Hz."" According to the words of the Googler, the updated version of WeChat has demonstrated ""improved jank,"" thus justifying its removal.
+Before you experience the change on your Pixel 4 or 4 XL, however, there are still a couple of hurdles that you have to get past first. WeChat, which is still on version 7.0.5 in the Play Store, needs to be updated and released. And second, Google has to integrate the new blacklist into one of its monthly security patches before sending them out to everyone. Unfortunately, yesterday's November security patch did not come with the newer list, although it did improve how Smooth Display operates. Perhaps we'll get it with the December security patch.
+End of Update
+
+Source: 
+Google Git
+
+Via: 9to5Google (1), (2), Mishaal Rahman
+
+
+
+",en,"
+
+
+
+
+
+
+
+
+
+
+
+Pixel 4 throttles down to 60Hz when these blacklisted apps are on screen (Update: WeChat leaving list)
+05 Nov 2019, 19:30 by David Oh
+
+Update 1: 2019/11/05 11:30am PSTAccording to a recent commit posted to AOSP, the 90Hz screen refresh rate blacklist has been scheduled for change. Starting from version 7.0.8, WeChat is to be taken
+
+One of the headline features of the new Pixel 4 is its Smooth Display, a screen with a 90Hz refresh rate which garnered a top A+ rating from the experts at DisplayMate. It became apparent soon after the phone's launch, however, that the Pixel 4 doesn't always operate in 90Hz mode all the time — it only does so above certain brightness levels. Turns out, there is yet another scenario wherein the Pixel 4 will refuse to run at 90Hz — when certain apps are visible on the screen, full-screen or partial (split-screen or picture-in-picture), the refresh rate goes down to 60Hz.
+The Pixel 4's 90Hz app blacklist was discovered inside the AOSP source code. Four apps are currently on that list: Google Maps, Pokemon Go, Waze, and WeChat. In terms of explanation, a comment near the code merely states that these apps ""do not work well when the display refreshes at 90Hz."" As it was in the case of Pokemon Go, it appears app developers will need to put in more work to resolve performance issues with high refresh rate displays.
+When we ran Google Maps and Waze on our Pixel 4, we confirmed that the refresh rate does indeed drop down to 60Hz from 90Hz.
+
+
+
+
+
+
+
+
+
+Left: With Google Maps on the screen, the refresh rate dropped down to 60Hz. Right: With Maps no longer visible, it went back up to 90Hz.
+
+Interestingly, when we toggled on the ""Force 90 Hz"" developer option, the refresh rate remained at 90Hz, even with Google Maps running and visible in split-screen mode. However, the scrolling inside Maps showed no signs of actually rendering at a higher frame rate.
+After our experiment with Maps, we understand why Google created such a blacklist — running apps at 90Hz for the sake of it while the user experience suffers doesn't make much sense. Hopefully, as phones with high refresh rates become ever more common, performance issues like these can be minimized going forward.
+
+
+Update 1: 2019/11/05 11:30am PST by David Oh
+
+According to a recent commit posted to AOSP, the 90Hz screen refresh rate blacklist has been scheduled for change. Starting from version 7.0.8, WeChat is to be taken off the list after earlier versions got blacklisted for ""poor performance under 90Hz."" According to the words of the Googler, the updated version of WeChat has demonstrated ""improved jank,"" thus justifying its removal.
+Before you experience the change on your Pixel 4 or 4 XL, however, there are still a couple of hurdles that you have to get past first. WeChat, which is still on version 7.0.5 in the Play Store, needs to be updated and released. And second, Google has to integrate the new blacklist into one of its monthly security patches before sending them out to everyone. Unfortunately, yesterday's November security patch did not come with the newer list, although it did improve how Smooth Display operates. Perhaps we'll get it with the December security patch.
+End of Update
+
+Source: 
+Google Git
+
+Via: 9to5Google (1), (2), Mishaal Rahman
+
+
+
+"

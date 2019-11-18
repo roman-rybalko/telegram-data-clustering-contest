@@ -1,0 +1,70 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+AMD lanza sus Radeon Adrenalin 19.11.1 para que disfrutes del Red Dead Redemption II
+04 Nov 2019 by Borja Rodríguez
+Hoy parece que es el 'Día D' de los controladores gráficos, y no es para menos, y es que los AMD Radeon Adrenalin 19.11.1 llegan para ofrecer plena compatibilidad al Red Dead Redemption II, título que llegará mañana mismo PC en diferentes plataformas.
+
+Adicionalmente, se amplía el soporte de la API Vulkan con 7 nuevas extensiones:
+
+
+VK_KHR_timeline_semaphore Esta extensión introduce un nuevo tipo de semáforo que utiliza una carga útil entera para identificar un punto en una línea de tiempo. La extensión soporta la consulta del semáforo, las operaciones de espera/señal del host y las operaciones de espera/señal del dispositivo.
+VK_KHR_shader_clock Esta extensión permite a un sombreador consultar un contador en tiempo real o de incremento monótono a nivel de subgrupo o a través del nivel de dispositivo.
+VK_KHR_shader_subgroup_extended_types Esta extensión permite que las operaciones de grupo no uniformes en SPIR-V soporten enteros de 8 bits, enteros de 16 bits, enteros de 64 bits, coma flotante de 16 bits y vectores de estos tipos.
+VK_KHR_pipeline_executable_properties Esta extensión permite que las herramientas de depuración y rendimiento y las aplicaciones en general consulten las propiedades y estadísticas sobre el proceso de compilación de tuberías.
+VK_KHR_spirv_1_4 Esta extensión permite el uso de módulos de sombreado SPIR-V 1.4, lo que a su vez permite una traducción más fácil de idiomas de alto nivel a spirv.
+VK_EXT_subgroup_size_control Esta extensión permite que una implementación controle el tamaño del subgrupo permitiendo un tamaño variable de subgrupo y también especificando un tamaño de subgrupo requerido. La función opcional para permitir subgrupos de cálculo completos está habilitada.
+Clustered Subgroup Operations Este bit de característica permite que las invocaciones realicen operaciones de clúster como añadir, mul, min, max, y, o, xor entre las particiones de un subgrupo. Las operaciones sólo se realizan dentro de las invocaciones de subgrupos dentro de una partición.
+
+
+
+
+Para acabar, solventan problemas con The Outer Worlds, donde algunos usuarios estaban experimentando el cierre o congelación del juego cuando abren el inventario del personaje y un mal renderizado de los modelos al hacerlo; el limite de 60 FPS en juegos basados en API Vulkan; la gran caída de rendimiento al realizar streaming con OBS con la codificación AMF; y problemas al conectarse en Twitch para realizar streaming desde la aplicación Radeon.
+Puedes descargar los AMD Radeon Adrenalin 19.11.1 desde el siguiente enlace.
+
+
+",es,"
+
+
+
+
+
+
+
+
+
+
+
+AMD launches its Radeon Adrenalin 19.11.1 to enjoy the Red Dead Redemption II
+04 Nov 2019 by Borja Rodríguez
+Today it seems that it is the 'D-Day' of the graphic controllers, and it is not for less, and that is that the AMD Radeon Adrenalin 19.11.1 arrive to offer full compatibility to the Red Dead Redemption II, title that will arrive tomorrow PC on different platforms .
+
+Additionally, Vulkan API support is extended with 7 new extensions:
+
+
+VK_KHR_timeline_semaphore This extension introduces a new type of traffic light that uses an entire payload to identify a point in a timeline. The extension supports traffic light query, host wait / signal operations and device wait / signal operations.
+VK_KHR_shader_clock This extension allows a shader to query a real-time or monotonous increment counter at the subgroup level or through the device level.
+VK_KHR_shader_subgroup_extended_types This extension allows non-uniform group operations in SPIR-V to support 8-bit integers, 16-bit integers, 64-bit integers, 16-bit floating point and vectors of these types.
+VK_KHR_pipeline_executable_properties This extension allows debugging and performance tools and applications in general to consult properties and statistics about the pipeline compilation process.
+VK_KHR_spirv_1_4 This extension allows the use of SPIR-V 1.4 shader modules, which in turn allows for easier translation of high-level languages to spirv.
+VK_EXT_subgroup_size_control This extension allows an implementation to control the size of the subgroup by allowing a variable subgroup size and also specifying a required subgroup size. The optional function to allow full calculation subgroups is enabled.
+Clustered Subgroup Operations This feature bit allows invocations to perform cluster operations such as add, mul, min, max, and, or, xor between partitions of a subgroup. Operations are only performed within subgroup invocations within a partition.
+
+
+
+
+Finally, they solve problems with The Outer Worlds, where some users were experiencing the closing or freezing of the game when they open the character's inventory and a bad rendering of the models when doing so; the limit of 60 FPS in games based on Vulkan API; the big drop in performance when streaming with OBS with AMF coding; and problems connecting to Twitch to stream from the Radeon application.
+You can download the AMD Radeon Adrenalin 19.11.1 from the following link.
+
+
+"

@@ -1,0 +1,194 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+10nm Xeony Ice Lake-SP budou mít 38 jader, ale TDP až 270 W. Cooper Lake až 300 W
+Přes prezentaci Asusu se dostaly ven počty jader a také TDP pro 10nm Xeony Ice Lake, které Intel vydá příští rok, i jejich 14nm souputníka Cooper Lake.
+01 Nov 2019, 15:30 by Jan Olšan
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+VŠECHNY FOTOGRAFIE
+
+V notebookových procesorech má nyní Intel zvláštní strategii, kdy současně vydal 10nm procesory Ice Lake s novou architekturou CPU i GPU, ale s nimi opět také další inkarnaci architektury Skylake z roku 2015, stále 14nm čipy Comet Lake. A podobně se to možná zopakuje příští rok. Z uniklých roadmap to ale vypadá, že stejný hybridní plán má Intel také v serverech. Tam mají být příští rok konečně vydány první 10nm Xeony, ale sekundovat (pokud těmi sekundanty nebudou naopak ty 10nm čipy) jim bude další 14nm generace Cooper Lake, kterou už Intel papírově oznámil v létě. Nyní k oběma těmto rozdílným rodinám procesorů unikly částečné specifikace, mezi nimiž jsou počty jader, ale také TDP. A ta jsou zrovna dost překvapivá.
+Xeony Cooper Lake-SP: až 48 jader a 300W TDP
+Pohled na specifikace Cooper Lake-SP a Ice Lake-SP máme zřejmě díky Asusu, který prezentoval v Koreji své serverové produkty, nafocené slajdy se dostaly na web Brainbox.co.kr. Mezi nimi byl zřejmě nedopatřením jeden se specifikacemi pro obě rodiny Xeonů, který byl pravděpodobně pod NDA.
+Asus o Xeonech Cooper Lake-SP – tedy oněch 14nm – uvádí, že budou mít až 48 jader. To jde proti oficiálně oznámenému údaji ze srpna, že poskytnou až 56 jader (patrně ve dvou 28jádrových čipech). Jak si také můžete všimnou, je uvedeno, že maximální konfigurace je zřejmě 2S, tedy dvousocketový systém. Ovšem celý slajd je jenom o 2S serverech, takže teoreticky je možné, že separátně budou nějaké jiné procesory určené pro 4S a 8S servery existovat a teoreticky by možná mohly mít 56 jader ty (nebo by to naopak mohla být nějaká speciální konfigurace pro jen 1S procesory, uvidíme).
+Vysoký počet jader (a dost možná složení ze dvou čipů) se promítne do vyšších spotřeb, než jaké mají současné serverové procesory. Asus uvádí, že TDP bude až 300 W. U modelů s nižšími počty jader samozřejmě bude nižší, nicméně top modely s nejvyšším výkonem mají jít takto vysoko (pravda, proti až 400W BGA Xeonům Platinum 9200 to není tolik).
+
+
+Slajd Asusu k procesorům Intel Xeon Cooper Lake a Ice Lake (Zdroj: Brainbox.co.kr, říjen 2019)
+
+Ice Lake také půjde až na 270 W, 38 jader
+Že další masivní přidání jader na starém 14nm procesu zvýší značně spotřeby, se ovšem dalo čekat. Překvapivé ale je, že Intel chystá značné navýšení TDP i u Ice Lake-SP, tedy už 10nm čipů, kde by nový proces měl dovolit nacpat více jader do stejného TDP jako bylo dříve – díky tomu, že má (nebo by měl mít) lepší energetickou efektivitu. Slajd uvádí, že také Ice Lake-SP má mít TDP až 270 W. Možná je to další znak, že jádra Sunny Cove (zde navíc budou mít výkonnější AVX-512) mají sice vyšší IPC, ale taky poněkud vyšší spotřebu.
+Ice Lake-SP má paradoxně také nižší počet jader než Cooper Lake-SP: podle slajdů od Asusu „jen“ 38. Proč je jich méně, není moc jasné. Možná kvůli vyššímu IPC a tedy vyššímu výkonu na jedno jádro. Možná byly parametry takto dány dlouho dopředu (toto číslo uniklo už před dvěma lety) a Intel nepočítal s tím, že konkurence bude mezi tím už nabízet 64 jader se 7nm Epycem 7002. Zda chystá Intel v této generaci ještě nějaký silnější 10nm Xeon než s 38 jádry, zatím nevíme. Je možné, že na víc jader dojde až o generaci později s procesory Sapphire Rapids, což už ale zase bude na nové platformě.
+10nm Xeony Ice Lake-SP mají jít na trh zřejmě o něco později než 14nm Cooper Lake. To má vyjít na jaře (v Q2 2020). Xeny s čipy Ice Lake-SP podle Asusu budou až v druhé půlce roku, v Q3 2020. Možná, že tou dobou by už AMD mohlo představit Epyc třetí generace s jádry Zen 3 („Milan“), ten by zdá se mohl být uveden v září nebo říjnu 2020.
+Osmikanálové paměti, víc linek PCI Express, PCIe 4.0 u Ice Lake
+Jak už víme, Cooper Lake-SP i Ice Lake-SP mají společný socket, LGA 4189 (nedávno se objevily jeho fotky a schémata). Zde ve slajdech je ovšem označený jako „Socket P+“, zatímco LGA 3647 používaný dnes jako „Socket P“. Celá platforma má označení Whitley, zatímco LGA 3647 se kódově jmenuje Purley.
+Tato platforma bude mít osmikanálové paměti s podporou až 16 slotů na jeden socket (čímž se vyrovná Epycům od AMD). Jak Cooper Lake, tak Ice Lake budou podporovat paměti DDR4 na 3200 MHz, samozřejmě s ECC. U Ice Lake bude také podporována druhá generace Optane DC Persistent Memory, u Cooper Lake to zmíněno není. Tyto procesory také budou mít řadič pro 64 linek PCI Express, ale odlišnost je v tom, že Cooper Lake bude stále podporovat jen PCIe 3.0. Jenom Ice Lake už bude umět PCI Express 4.0 s dvojnásobnou propustností, jako od letoška AMD Epyc 7002/Ryzen 3000.
+
+
+Socket LGA 4189 pro procesory Intel Xeon Ice Lake a Cooper Lake (Zdroj: PC Watch)
+
+Galerie: Socket LGA 4189 pro procesory Intel Xeon Ice Lake-SP a Cooper Lake-SP
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+VŠECHNY FOTOGRAFIE
+
+
+SOUVISEJÍCÍ ČLÁNKY
+
+
+
+
+
+
+
+
+",cs,"
+
+
+
+
+
+
+
+
+
+
+
+The 10nm Ice Lake-SP Xeons will have 38 cores, but TDPs up to 270 W. Cooper Lake up to 300 W
+Despite the Asus presentation, the number of cores and TDP for the 10nm Xeony Ice Lake, which Intel will release next year, as well as their 14nm companion Cooper Lake, got out.
+01 Nov 2019, 15:30 by Jan Olsan
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ALL PHOTOS
+
+In notebook processors, Intel now has a special strategy of simultaneously releasing 10nm Ice Lake processors with new CPU and GPU architecture, as well as another 2015 Skylake incarnation, still 14nm Comet Lake chips. Similarly, it may happen again next year. From the leaked roadmaps, however, it seems that Intel has the same hybrid plan in servers as well. There will be finally released the first 10nm Xeons next year, but second (if the second is not the 10nm chips) will be the next 14nm generation of Cooper Lake, which Intel has already announced in the paper in the summer. Now both of these different processor families have leaked partial specifications, including the number of cores, but also TDP. And they are just quite surprising.
+Xeony Cooper Lake-SP: up to 48 cores and 300W TDP
+We have a look at the specifications of Cooper Lake-SP and Ice Lake-SP thanks to Asus, who presented his server products in Korea, and the captured slides reached the Brainbox.co.kr website. Among them was apparently inadvertently one with specifications for both Xeon families, which was probably under the NDA.
+Asus on the Xeon Cooper Lake-SP - 14nm - says they will have up to 48 cores. This goes against the officially announced August data to provide up to 56 cores (probably in two 28-core chips). As you may also notice, it is stated that the maximum configuration is probably 2S, a two-socket system. But the whole slide is only about 2S servers, so theoretically it is possible that some other processors for 4S and 8S servers may exist separately and theoretically maybe 56 cores (or it could be some special configuration for only 1S processors) , we'll see).
+The high number of cores (and possibly two-chip composition) translates into higher power consumption than current server processors. Asus says the TDP will be up to 300W. Of course, it will be lower for models with lower cores, but the top models with the highest performance are supposed to go that high.
+
+
+Asus Slides to Intel Xeon Cooper Lake and Ice Lake (Source: Brainbox.co.kr, October 2019)
+
+Ice Lake also goes up to 270 watts, 38 cores
+However, it was to be expected that further massive addition of cores on the old 14nm process would increase consumption considerably. Surprisingly, however, Intel is planning a significant increase in TDP on the Ice Lake-SP, already 10nm chips, where the new process should allow more cores to be packed into the same TDP as before - because it has (or should have) better energy efficiency. Slajd says that the Ice Lake-SP is also expected to have a TDP of up to 270 W. Perhaps it is another feature that Sunny Cove cores (here will have more powerful AVX-512) have a higher IPC, but also somewhat higher consumption.
+Paradoxically, the Ice Lake-SP also has a lower number of cores than Cooper Lake-SP: according to the Asus slides ""only"" 38. Why less is not very clear. Maybe because of higher IPC and hence higher performance per core. Perhaps the parameters were long in advance (this figure had been leaked two years ago), and Intel did not expect competitors to offer 64 cores with the 7nm Epyc 7002. Whether Intel is going to have a stronger 10nm Xeon in this generation than 38 kernels, we don't know yet. It is possible that more kernels will be released a generation later with Sapphire Rapids processors, but that will be on a new platform.
+The 10nm Xeony Ice Lake-SP is supposed to go on the market probably later than the 14nm Cooper Lake. It is due out in the spring (in Q2 2020). Xens with Ice Lake-SP chips according to Asus will be in the second half of the year, at Q3 2020. Perhaps by then AMD could introduce the third-generation Epyc with Zen 3 (""Milan"") cores, which seems to be introduced in September or October 2020.
+Eight channel memory, multiple PCI Express lines, PCIe 4.0 at Ice Lake
+As we already know, Cooper Lake-SP and Ice Lake-SP have a common socket, the LGA 4189 (his photos and diagrams have recently appeared). Here in the slides, however, it is referred to as ""Socket P +"", while LGA 3647 used today as ""Socket P"". The whole platform is called Whitley, while LGA 3647 is code-named Purley.
+This platform will have eight-channel memory with support for up to 16 slots per socket (to match the AMD Epyas). Both Cooper Lake and Ice Lake will support DDR4 memories at 3200 MHz, of course with ECC. Ice Lake will also support the second generation Optane DC Persistent Memory, Cooper Lake is not mentioned. These processors will also have a controller for 64 PCI Express lines, but the difference is that Cooper Lake will still support only PCIe 3.0. Only Ice Lake will be able to do PCI Express 4.0 with double throughput, as from this year's AMD Epyc 7002 / Ryzen 3000.
+
+
+LGA 4189 Socket for Intel Xeon Ice Lake and Cooper Lake (Source: PC Watch)
+
+Gallery: LGA 4189 socket for Intel Xeon Ice Lake-SP and Cooper Lake-SP processors
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ALL PHOTOS
+
+
+RELATED ARTICLES
+
+
+
+
+
+
+
+
+"

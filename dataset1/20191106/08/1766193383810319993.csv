@@ -1,0 +1,52 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Vitess wird zum vollwertigen Projekt der Cloud Native Computing Foundation
+Nach etwas mehr als anderthalb Jahren im CNCF-Incubator wurde das Datenbanksystem nun aufgewertet und entspricht nun einem vollwertigen Projekt der Stiftung.
+06 Nov 2019, 08:35 by Alexander Neumann
+Das Datenbank-Cluster-System Vitess ist dem Incubator der Cloud Native Computing Foundation (CNCF) entwachsen und nun ein vollwertiges Projekt der von der Linux Foundation geförderten gemeinnützigen Stiftung, die das Cloud-native Computing und die Zusammenarbeit zwischen Herstellern, Entwicklern und Anwendern in dem Umfeld fördern möchte.
+Wofür ist Vitess gedacht?
+Vitess ist mittlerweile vorrangig für den Einsatz in Container-Umgebungen konzipiert. Dabei soll die Software wichtige Features der Datenbank MySQL mit der Skalierbarkeit einer NoSQL-Datenbank kombinieren und es MySQL-Anwendungen erlauben, in der Cloud betrieben zu werden. Ursprünglich handelt es sich bei Vitess um eine intern von YouTube genutzte Speichersoftware, die sich seit 2010 in der Entwicklung befindet. Sie wurde ursprünglich entwickelt, um große Speichermengen besser in den Griff zu bekommen.
+In der Zwischenzeit hat sich Vitess jedoch zu einem Datenbank-Orchestrierungssystem entwickelt, mit dessen Hilfe eine horizontale Skalierung von MySQL in Cloud-native-Anwendungen möglich ist. Das geschieht über Sharding – eine Methode, die dazu dient, Daten über mehrere Maschinen zu verteilen.
+Außerdem hat Vitess nun die Version 4.0 erreicht. Das neue Release soll signifikante Verbesserungen bei der Unterstützung von SQL-Abfragen aufweisen und eine experimentelle Unterstützung für VReplication bieten. Außerdem hat man den Fokus wohl auf die Benutzerfreundlichkeit gelegt, um den Einstieg für neue Benutzer zu erleichtern.
+Nicht nur YouTube als Nutzer
+Neben YouTube nutzen Unternehmen wie GitHub, JD.com, Pinterest, Slack, Square und Stitch Labs Vitess, wie Cdie Foundation in ihrer Pressemeldung zur Beförderung schildert. Weitere Informationen zu Vitess finden sich auf der Projekt-Website.
+Weitere vollwertige Projekte der CNCF sind Kubernetes, Prometheus, Envoy, CoreDNS, containerd, Fluentd, und Jaeger. Sie konnten eine offenbar erfolgreiche Umsetzung, einen dokumentierten, strukturierten Governance-Prozess und ein starkes Engagement der Community sowie in Sachen Nachhaltigkeit und Integration nachweisen. (ane)
+
+
+",de,"
+
+
+
+
+
+
+
+
+
+
+
+Vitess becomes a full-fledged project of the Cloud Native Computing Foundation
+After just over one and a half years in the CNCF incubator, the database system has now been upgraded and now corresponds to a full-fledged project of the foundation.
+06 Nov 2019, 08:35 by Alexander Neumann
+The Vitess database clustering system has outgrown the Incubator of the Cloud Native Computing Foundation (CNCF) and is now a full-fledged project funded by the Linux Foundation's nonprofit foundation that promotes cloud-native computing and collaboration between vendors, developers, and users Encourage environment.
+What is Vitess intended for?
+Vitess is now primarily designed for use in container environments. The software will combine important features of the MySQL database with the scalability of a NoSQL database and allow MySQL applications to run in the cloud. Originally, Vitess is an internal storage software used by YouTube, which has been in development since 2010. It was originally developed to handle large amounts of storage better.
+In the meantime, however, Vitess has evolved into a database orchestration system that can scale MySQL horizontally into native cloud applications. This is done via sharding - a method that is used to distribute data across multiple machines.
+In addition, Vitess has now reached version 4.0. The new release is expected to provide significant improvements in support for SQL queries and provide experimental support for VReplication. In addition, the focus has probably put on the user-friendliness, to facilitate the entry for new users.
+Not just YouTube as a user
+In addition to YouTube, companies such as GitHub, JD.com, Pinterest, Slack, Square, and Stitch Labs use Vitess, as Cdie Foundation describes in their press release on promotion. More information about Vitess can be found on the project website.
+Other full-fledged CNCF projects include Kubernetes, Prometheus, Envoy, CoreDNS, containerd, Fluentd, and Jaeger. They were able to demonstrate an apparently successful implementation, a documented, structured governance process and strong community engagement, sustainability and integration. (Ane)
+
+
+"

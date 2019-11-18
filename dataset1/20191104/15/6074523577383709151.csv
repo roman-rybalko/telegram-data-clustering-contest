@@ -1,0 +1,62 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+BitMEX Says Quality Check ‘Failure’ Led to Email Privacy Breach
+04 Nov 2019, 15:25 by William Foxley
+BitMEX says its internal processes “failed” last week, subsequently exposing thousands of the exchange’s clients to privacy risks.
+In a company blog posting on Monday, the crypto-derivatives exchange said its mass emailing operation failed causing “most BitMEX users” to have their email addresses publicly exposed via carbon copy (CC) on Nov. 1.
+Data provider Skew says BitMEX has some 22,000 daily users, though the number of email addresses exposed is likely significantly higher.
+With major email servers imposing restrictions on bulk emailing, the firm said:
+“To remedy this, we built an in-house system to handle the necessary rendering, translation, staging, and piecemeal (as not to trigger rate limits) sending of important email.”
+The exchange said it sends emails to all users very rarely, the last one of this size shipping in 2017. To expedite the process, the exchange’s email systems API was changed at the last minute, but did not undergo the typical checking process.
+“BitMEX is a global business that sends emails to many different email providers,” said deputy chief operating officer Vivien Khoo in the blog posting. “Unfortunately, this makes the job of large services such as BitMEX difficult at times.”
+The exchange says it stopped further batches of emails being sent out upon recognition of the issue.
+In response to the leak, BitMEX says they employed password resets and human review on endangered accounts. All users lacking two-factor authentication (2FA) and also holding account balances had passwords reset after the exchange noted hostile attempts to access accounts.
+In an email to CoinDesk last Friday, Khoo reiterated that no other personal information was divulged.
+“Beyond email addresses, at no point during this issue has any personal data or account information been disclosed.”
+
+BitMEX CEO Arthur Hayes image via BitMEX
+
+
+
+",en,"
+
+
+
+
+
+
+
+
+
+
+
+BitMEX Says Quality Check ‘Failure’ Led to Email Privacy Breach
+04 Nov 2019, 15:25 by William Foxley
+BitMEX says its internal processes “failed” last week, subsequently exposing thousands of the exchange’s clients to privacy risks.
+In a company blog posting on Monday, the crypto-derivatives exchange said its mass emailing operation failed causing “most BitMEX users” to have their email addresses publicly exposed via carbon copy (CC) on Nov. 1.
+Data provider Skew says BitMEX has some 22,000 daily users, though the number of email addresses exposed is likely significantly higher.
+With major email servers imposing restrictions on bulk emailing, the firm said:
+“To remedy this, we built an in-house system to handle the necessary rendering, translation, staging, and piecemeal (as not to trigger rate limits) sending of important email.”
+The exchange said it sends emails to all users very rarely, the last one of this size shipping in 2017. To expedite the process, the exchange’s email systems API was changed at the last minute, but did not undergo the typical checking process.
+“BitMEX is a global business that sends emails to many different email providers,” said deputy chief operating officer Vivien Khoo in the blog posting. “Unfortunately, this makes the job of large services such as BitMEX difficult at times.”
+The exchange says it stopped further batches of emails being sent out upon recognition of the issue.
+In response to the leak, BitMEX says they employed password resets and human review on endangered accounts. All users lacking two-factor authentication (2FA) and also holding account balances had passwords reset after the exchange noted hostile attempts to access accounts.
+In an email to CoinDesk last Friday, Khoo reiterated that no other personal information was divulged.
+“Beyond email addresses, at no point during this issue has any personal data or account information been disclosed.”
+
+BitMEX CEO Arthur Hayes image via BitMEX
+
+
+
+"

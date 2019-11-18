@@ -1,0 +1,56 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Хакеры научились похищать личные СМС через операторов связи
+
+01 Nov 2019, 12:02
+
+Китайские правительственные хакеры из группировки APT41 создали вредоносную программу, способную получать и сохранять информацию об отправке и получении СМС. Об этом сообщают эксперты компании FireEye в своем блоге.
+По данным специалистов, программное обеспечение написано для Linux-машин и размещается на серверах SMSC (Short Message Service Center), которые осуществляют работу служб передачи коротких сообщений операторов связи.
+Зловред носит название MESSAGETAP. Исследователи обнаружили его в сети неназванного оператора мобильной связи. Они не уточнили, как именно произошло заражение опасным ПО.
+Программа способна оставлять на потом СМС, чтобы в дальнейшем их выкрасть. Нужные тексты определяются по содержащимся в них ключевым словам. По информации FireEye, среди них — субъекты и объекты, имеющие геополитический интерес для спецслужб КНР, в том числе имена политических лидеров, названия военных и разведывательных организаций и политических движений.
+После установки на сервера MESSAGETAP также находит и сохраняет сообщения определенных мобильных номеров или международного идентификатора мобильного абонента (IMSI), перебирая весь проходящий через него и уже хранящийся на серверах трафик. Специалисты подчеркнули, что нашли в базе зловреда множество номеров и идентификаторов, СМС с которых интересовали хакеров.
+В октябре 2018 года сообщалось о том, что китайская военная разведка следила за американскими компаниями, в том числе Amazon и Apple. Для этого они использовали установленные в серверы чипы-шпионы. При этом американская разведка знала о плане спецслужб КНР.
+
+Что происходит в России и в мире? Объясняем на нашем YouTube-канале. Подпишись!
+
+
+
+",ru,"
+
+
+
+
+
+
+
+
+
+
+
+Hackers have learned to steal personal SMS through telecom operators
+
+01 Nov 2019, 12:02
+
+Chinese government hackers from the APT41 group have created a malicious program that can receive and store information about sending and receiving SMS. This was reported by experts of the company FireEye in his blog.
+According to experts, the software is written for Linux-based machines and is hosted on SMSC (Short Message Service Center) servers, which provide communication service providers with short message services.
+The malware is called MESSAGETAP. Researchers discovered it on the network of an unnamed mobile operator. They did not specify exactly how the malware infection occurred.
+The program is able to leave SMS for later in order to steal them later. The necessary texts are determined by the keywords contained in them. According to FireEye, among them are subjects and objects of geopolitical interest for the Chinese special services, including the names of political leaders, the names of military and intelligence organizations and political movements.
+After installation on the server, MESSAGETAP also finds and saves messages of certain mobile numbers or the international mobile subscriber identifier (IMSI), sorting through all traffic passing through it and already stored on the servers. Experts emphasized that they had found a lot of numbers and identifiers in the malware database, SMS from which hackers were interested.
+In October 2018, it was reported that Chinese military intelligence monitored U.S. companies, including Amazon and Apple. To do this, they used spy chips installed in the servers. At the same time, American intelligence knew about the plan of the PRC special services.
+
+What is happening in Russia and in the world? We explain on our YouTube channel. Subscribe!
+
+
+
+"

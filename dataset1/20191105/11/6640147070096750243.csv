@@ -1,0 +1,106 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Core i9-9900KS garantiti fino a 5,2 GHz su tutti i core da Silicon Lottery
+05 Nov 2019, 11:38 by Jacopo Ferrante
+Silicon Lottery ha iniziato a vendere processori Intel Core i9-9900KS Special Edition pre-selezionati sul proprio negozio online.
+Come noto, il Core i9-9900KS rappresenta già un Core i9-9900K selezionato in fabbrica da Intel (per questo è in grado di sostenere 5 GHz su 8 core), quindi un’ulteriore selezione (binning) da parte di Silicon Lottery garantisce agli appassionati di OC di avere accesso solamente a processori di alto livello.
+
+
+
+L’azienda ha anche rilasciato le sue statistiche di overclock dei questo chip a 8 core in edizione speciale. Attualmente Silicon Lottery commercializza tre versioni differenti: la prima raggiunge i 5 GHz in Turbo Boost all-core, come pubblicizzato da Intel, con una tensione di 1,250 V e viene venduta a 599,99 dollari.
+La seconda arriva a 5,1 GHz su otto core con una vCore di 1,287 V e costa 749,99 dollari. La terza versione, andata subito esaurita, può operare a 5,2 GHz su tutti i core con una vCore di 1,332 V a un prezzo di 1.199,99 dollari. Silicon Lottery usa un offset AVX di 2 e valori LLC (Load-Line Calibration) di default durante il test e la certificazione dei propri prodotti.
+Silicon Lottery dichiara che tutte le CPU Core i9-9900KS testate hanno raggiunto i 5 GHz a 1,25 V. Solo il 31% dei chip è riuscito a raggiungere 5,1 GHz a 1,287 V. Infine, solo il 3% dei campioni ha raggiunto 5,2 GHz a 1,325 V.
+L’azienda ha enfatizzato tuttavia che sebbene i sample a 5,1 GHz non siano riusciti a lavorare stabilmente a 5,2 GHz a 1,325 V, è comunque possibile raggiungere quella frequenza alzando ulteriormente la tensione. Silicon Lottery ha tuttavia scelto di non andare oltre 1,325 V per problemi di natura termica.
+
+
+Statistiche di OC del Core i9-9900KS (Silicon Lottery)
+
+
+Frequenza
+Tensione
+% di successo
+
+
+5 GHz
+1,25 V
+100%
+
+
+5,1 GHz
+1,287 V
+31%
+
+
+5,2 GHz
+1,325 V
+3%
+
+
+Ruolo cruciale nell’estrarre le massime prestazioni dal Core i9-9900KS lo gioca il comparto di alimentazione della scheda madre. Silicon Lottery consiglia schede madre di fascia alta come l’Asus ROG Maximus XI Apex (Amazon) o la Gigabyte Z390 Aorus Xtreme (Amazon), che consentono di “spremere” ulteriori 100 MHz alla stessa tensione o impostare un offset AVX inferiore rispetto alle schede madre di fascia bassa.
+Come prevedibile, Silicon Lottery afferma che i suoi prodotti godono di una garanzia limitata ad un anno che copre una sola sostituzione. L’azienda offre anche un servizio di delidding per 49,99 dollari se si desidera avere temperature più basse.
+
+
+",it,"
+
+
+
+
+
+
+
+
+
+
+
+Core i9-9900KS guaranteed up to 5.2 GHz on all cores from Silicon Lottery
+05 Nov 2019, 11:38 by Jacopo Ferrante
+Silicon Lottery has started selling pre-selected Intel Core i9-9900KS Special Edition processors on its online store.
+As is known, the Core i9-9900KS already represents a Core i9-9900K selected by Intel at the factory (for this reason it is able to support 5 GHz on 8 cores), so a further selection (binning) by Silicon Lottery guarantees to OC enthusiasts only have access to high-end processors.
+
+
+
+The company also released its overclocking statistics for this special-edition 8-core chip. Currently Silicon Lottery sells three different versions: the first reaches 5 GHz in all-core Turbo Boost, as advertised by Intel, with a voltage of 1.250 V and is sold for $ 599.99.
+The second reaches 5.1 GHz on eight cores with a vCore of 1.287 V and costs $ 749.99. The third version, immediately sold out, can operate at 5.2 GHz on all cores with a 1.332 V vCore at a price of $ 1.199.99. Silicon Lottery uses an AVX offset of 2 and LLC values (Load-Line Calibration) by default during testing and certification of its products.
+Silicon Lottery declares that all tested Core i9-9900KS CPUs reached 5 GHz at 1.25 V. Only 31% of the chips managed to reach 5.1 GHz at 1.287 V. Finally, only 3% of the samples has reached 5.2 GHz at 1.325 V.
+However, the company emphasized that although 5.1 GHz samples failed to work steadily at 5.2 GHz at 1.325 V, it is still possible to reach that frequency by raising the voltage further. However, Silicon Lottery has chosen not to go beyond 1.325 V due to thermal problems.
+
+
+OC statistics of the Core i9-9900KS (Silicon Lottery)
+
+
+Frequency
+Voltage
+% successfull
+
+
+5 GHz
+1.25 V
+100%
+
+
+5.1 GHz
+1,287 V
+31%
+
+
+5.2 GHz
+1.325 V
+3%
+
+
+The motherboard's power supply compartment plays a crucial role in extracting maximum performance from the Core i9-9900KS. Silicon Lottery recommends high-end motherboards such as the Asus ROG Maximus XI Apex (Amazon) or the Gigabyte Z390 Aorus Xtreme (Amazon), which allow you to ""squeeze"" an additional 100 MHz to the same voltage or set a lower AVX offset than the boards low-end mother.
+As expected, Silicon Lottery claims that its products have a one-year limited warranty covering only one replacement. The company also offers a delidding service for $ 49.99 if you want lower temperatures.
+
+
+"

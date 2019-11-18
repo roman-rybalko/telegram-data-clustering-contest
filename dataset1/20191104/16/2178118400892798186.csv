@@ -1,0 +1,154 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Простая настройка личного MTProxy для Telegram за 5 минут
+04 Nov 2019, 16:30 by Гайк Даллакян
+В 21 веке люди всё чаще вынуждены пользоваться средствами обхода блокировок. Несмотря на безуспешную блокировку Telegram, соединение в мессенджере часто подвисает, из-за чего необходимо мучаться с поиском достойных прокси-серверов, выручающих в нужный момент. Но зачем искать какие-либо MTProxy, если всего за несколько минут можно вручную настроить собственный? В сегодняшнем материале рассказываем, как это сделать.
+
+
+
+Для начала вам необходимо приобрести VPS (Virtual Private Server) на последней версии Ubuntu. Тут выбор достаточно большой: вы можете взять DigitalOcean и получить $50 на первый месяц бесплатно по нашей ссылке, либо же воспользоваться арендой любого другого VPS — благо, компаний предоставляющих их, в наше время очень много.
+
+
+
+Сразу после того, как сервер сконфигурируется, вы должны подключиться к нему: для Windows необходимо скачать программу PuTTY, а в macOS это возможно сделать с помощью терминала. Далее вам нужно поменять пароль с временного, который вам выслал по почте Digital Ocean, на постоянный. Затем следуйте нашей лёгкой инструкции:
+
+
+Загрузка скрипта
+
+
+
+
+curl -L -o install https://git.io/JeOSr && chmod +x install
+
+
+
+
+
+2. Быстрая установка
+
+
+./install
+
+
+По умолчанию: порт 443, генерируется рандомный секретный ключ, домен — www.google.com
+2.1. Пользовательский порт/домен
+
+
+./install -H=1337 -D=www.facebook.com
+
+
+Спустя некоторое время скрипт выведет ссылку для подключения к прокси-серверу
+
+Если у вас возникли трудности с предыдущим скриптом, можно воспользоваться альтернативным методом:
+
+
+curl -L -o mtp_install.sh https://git.io/fj5ru && bash mtp_install.sh -p 443 -a tls -d www.google.com
+
+
+В определённый момент нужно будет ответить «y»:
+
+
+
+Соглашаемся:
+
+
+
+На включение DD-режима не соглашаемся — для этого отвечаем «n»:
+
+
+
+Далее запустится процесс установки и через некоторое время на экран выведутся ссылки для подключения к прокси-серверу — нас интересует 3-я сверху:
+
+
+
+Вот такие простые действия позволяют вам обрести собственный MTProxy для Telegram. Желаем вам комфортной работы с мессенджером!
+
+
+",ru,"
+
+
+
+
+
+
+
+
+
+
+
+Easy setup of personal MTProxy for Telegram in 5 minutes
+04 Nov 2019, 16:30 by Hayk Dallakyan
+In the 21st century, people are increasingly forced to use means to bypass locks. Despite the unsuccessful blocking of Telegram, the connection in the messenger often freezes, which is why you need to worry about finding decent proxy servers that help out at the right time. But why look for any MTProxy if you can manually configure your own in just a few minutes? In today's article, we’ll show you how to do this.
+
+
+
+To get started, you need to purchase VPS (Virtual Private Server) on the latest version of Ubuntu. Here the choice is quite large: you can take DigitalOcean and get $ 50 for the first month for free via our link, or use the rental of any other VPS - fortunately, there are a lot of companies that provide them today.
+
+
+
+Immediately after the server is configured, you should connect to it: for Windows you need to download the PuTTY program, and in macOS it is possible to do this using the terminal. Next, you need to change the password from the temporary one that was sent to you by Digital Ocean mail to a permanent one. Then follow our easy instructions:
+
+
+Script loading
+
+
+
+
+curl -L -o install https://git.io/JeOSr && chmod + x install
+
+
+
+
+
+2. Quick installation
+
+
+./install
+
+
+By default: port 443, a random secret key is generated, the domain is www.google.com
+2.1. User port / domain
+
+
+./install -H = 1337 -D = www.facebook.com
+
+
+After some time, the script will display a link to connect to the proxy server
+
+If you are having difficulty with the previous script, you can use the alternative method:
+
+
+curl -L -o mtp_install.sh https://git.io/fj5ru && bash mtp_install.sh -p 443 -a tls -d www.google.com
+
+
+At some point, you will need to answer ""y"":
+
+
+
+We agree:
+
+
+
+We do not agree to the inclusion of DD-mode - for this we answer ""n"":
+
+
+
+Next, the installation process will start and after a while the links for connecting to the proxy server will appear on the screen - we are interested in the 3rd from the top:
+
+
+
+These simple steps allow you to find your own MTProxy for Telegram. We wish you comfortable work with the messenger!
+
+
+"

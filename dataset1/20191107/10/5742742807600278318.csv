@@ -1,0 +1,260 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Uživatelé Pixelů 4 nyní mohou alternativní cestou získat až 16násobný zoom
+07 Nov 2019, 10:00 by Ioannis Papadopoulos
+
+   •  Upravená aplikace fotoaparátu umožňuje až 16× hybridní přiblížení    •  16násobný zoom u teleobjektivu je dostupný pouze uživatelům s rootem
+
+Pixely 4 se po dlouhých letech vzdorování zařadily po bok většiny ostatních výrobců a hlavní kamerku doplnily o druhý fotoaparát, kterým se stal dvojnásobný teleobjektiv. Tento 16Mpx snímač o světelnosti f/2.4 a ohniskové vzdáleností 45 mm se chlubí, pomineme-li základní dvojnásobné optické přiblížení, až osminásobným hybridním zoomem. Díky chytrým algoritmům Super Res Zoom navíc pořízené fotografie vypadají více než slušně, avšak vyšší než osminásobné přiblížení výrobce nepovolí. To se rozhodl změnit člen XDA-Developers pod přezdívkou cstark27, který je známý svými modifikacemi aplikace fotoaparátu od Googlu.
+
+
+
+S využitím funkce Super Res Zoom se podařilo mu dosáhnout až 16násobného hybridního zoomu. Instalace modifikované aplikace, která umožňuje vyšší maximální zoom na Pixelu 4 (XL), ale i jiných Pixelech, navíc nevyžaduje root. To ovšem platí pouze u hlavního snímače. Pokud tedy chcete, aby byl 16× zoom dostupný i u teleobjektivu (jenž byl poprvé nasazen u Pixelů 4), je root potřeba.
+
+
+
+Technologicky vzato je údajně možné 16násobný zoom zajistit uživatelům bez rootu, zabere to však údajně ještě nějaký ten pátek. Pokud se chcete dozvědět více, můžete zamířit přímo na stránku tvůrce módu.
+Technické parametry Google Pixel 4 128 GB
+
+Kompletní specifikace
+
+
+
+Konstrukce
+147,1 × 68,8 × 8,2 mm, 162 g, konstrukce: klasická, odolnost: IP68
+
+
+Displej
+OLED, 5,7"" (2 440 × 1 080 px)
+
+
+Fotoaparát
+12,2 Mpx (4 032 × 3 024), LED dioda, autofocus, video: 3 840 × 2 410 px, 30 FPS
+
+
+Chipset
+Qualcomm Snapdragon 855, CPU: 1×2,88 GHz + 3×2,42 GHz + 4×1,8 GHz, GPU: Adreno 640
+
+
+Paměť
+RAM: 6 GB, vnitřní paměť: 128 GB, paměťové karty: ne
+
+
+Datové funkce
+HSPA: 42 Mb/s, LTE: ano, Wi-Fi: 802.11a/b/g/n/ac, Bluetooth: 5.0, NFC: ano
+
+
+Operační systém
+Android 10
+
+
+Navigace
+vestavěná GPS: ano (A-GPS), Google Mapy, elektronický kompas
+
+
+Akumulátor
+2 800 mAh, bezdrátové nabíjení: ano
+
+
+Dostupnost
+listopad 2019, 28 990 Kč
+
+
+Technické parametry Google Pixel 4 XL 128 GB
+
+Kompletní specifikace
+
+
+
+Konstrukce
+160,4 × 75,1 × 8,2 mm, 193 g, konstrukce: klasická, odolnost: IP68
+
+
+Displej
+OLED, 6,3"" (3 040 × 1 440 px)
+
+
+Fotoaparát
+12,2 Mpx (4 032 × 3 024), LED dioda, autofocus, video: 3 840 × 2 410 px, 30 FPS
+
+
+Chipset
+Qualcomm Snapdragon 855, CPU: 1×2,88 GHz + 3×2,42 GHz + 4×1,8 GHz, GPU: Adreno 640
+
+
+Paměť
+RAM: 6 GB, vnitřní paměť: 128 GB, paměťové karty: ne
+
+
+Datové funkce
+HSPA: 42 Mb/s, LTE: ano, Wi-Fi: 802.11a/b/g/n/ac, Bluetooth: 5.0, NFC: ano
+
+
+Operační systém
+Android 10
+
+
+Navigace
+vestavěná GPS: ano (A-GPS), Google Mapy, elektronický kompas
+
+
+Akumulátor
+3 700 mAh, bezdrátové nabíjení: ano
+
+
+Dostupnost
+listopad 2019, 30 990 Kč
+
+
+
+Související články
+
+
+
+
+
+
+
+
+
+",cs,"
+
+
+
+
+
+
+
+
+
+
+
+Pixel 4 users can now get up to 16x zoom in an alternative way
+07 Nov 2019, 10:00 by Ioannis Papadopoulos
+
+• Modified camera application allows up to 16 × hybrid zoom • 16x telephoto zoom is only available to root users
+
+After many years of defiance, Pixels 4 have joined the side of most other manufacturers and added a second camera to the main camera, a double telephoto lens. This 16Mpx sensor with an aperture of f / 2.4 and a focal length of 45mm boasts, aside from the basic double optical zoom, up to eight times the hybrid zoom. In addition, thanks to clever algorithms Super Res Zoom, captured photos look more than decent, but higher than eight times the zoom will not allow the manufacturer. This was decided to change the member of XDA-Developers under the nickname cstark27, which is known for its modifications to the camera application from Google.
+
+
+
+Using the Super Res Zoom, he has achieved up to 16x hybrid zoom. In addition, installing a modified application that allows higher maximum zoom on Pixel 4 (XL) as well as other Pixels does not require root. However, this only applies to the main sensor. So if you want 16x zoom to be available with a telephoto lens (first deployed on Pixels 4), root is needed.
+
+
+
+Technologically, it is reportedly possible to provide 16x zoom to users without root, but it will take some Friday. If you want to know more, you can go directly to the fashion creator site.
+Specifications Google Pixel 4 128 GB
+
+Complete specifications
+
+
+
+Construction
+147.1 x 68.8 x 8.2 mm, 162 g, construction: classical, resistance: IP68
+
+
+Display
+OLED 5.7 ""(2,440 × 1,080 px)
+
+
+Camera
+12.2 MP (4,032 × 3,024), LED, autofocus, 3,840 × 2,410 px, 30 FPS
+
+
+Chipset
+Qualcomm Snapdragon 855, CPU: 1 × 2.88 GHz + 3 × 2.42 GHz + 4 × 1.8 GHz, GPU: Adreno 640
+
+
+Memory
+RAM: 6 GB, internal memory: 128 GB, memory cards: no
+
+
+Data functions
+HSPA: 42 Mbps, LTE: yes, Wi-Fi: 802.11a / b / g / n / ac, Bluetooth: 5.0, NFC: yes
+
+
+Operating system
+Android 10
+
+
+Navigation
+built-in GPS: yes (A-GPS), Google Maps, electronic compass
+
+
+Accumulator
+2,800 mAh, wireless charging: yes
+
+
+Availability
+November 2019, CZK 28,990
+
+
+Specifications Google Pixel 4 XL 128 GB
+
+Complete specifications
+
+
+
+Construction
+160.4 x 75.1 x 8.2 mm, 193 g, construction: classical, resistance: IP68
+
+
+Display
+OLED, 6.3 ""(3,040 × 1,440 px)
+
+
+Camera
+12.2 MP (4,032 × 3,024), LED, autofocus, 3,840 × 2,410 px, 30 FPS
+
+
+Chipset
+Qualcomm Snapdragon 855, CPU: 1 × 2.88 GHz + 3 × 2.42 GHz + 4 × 1.8 GHz, GPU: Adreno 640
+
+
+Memory
+RAM: 6 GB, internal memory: 128 GB, memory cards: no
+
+
+Data functions
+HSPA: 42 Mbps, LTE: yes, Wi-Fi: 802.11a / b / g / n / ac, Bluetooth: 5.0, NFC: yes
+
+
+Operating system
+Android 10
+
+
+Navigation
+built-in GPS: yes (A-GPS), Google Maps, electronic compass
+
+
+Accumulator
+3,700 mAh, wireless charging: yes
+
+
+Availability
+November 2019, 30 990 CZK
+
+
+
+related articles
+
+
+
+
+
+
+
+
+
+"

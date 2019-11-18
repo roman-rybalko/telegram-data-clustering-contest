@@ -1,0 +1,46 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Chrome OS 78 Rolling Out With Picture-In-Picture Support For YouTube, Split Browser/Device Settings, More
+07 Nov 2019, 07:10 by BeauHD
+The latest version of Chrome OS, version 78, adds separate browser and device settings, click-to-call, and picture-in-picture support for YouTube. It also introduces virtual desktop support for the operating system with a feature called Virtual Desks. 9to5Google reports: Chrome is getting another cross-device sharing feature after ""Send this page"" widely rolled in September. With ""click-to-call,"" you can right-click on phone number links -- like tel:800-800-8000 -- to have them sent to your Android device. It's quicker than manually entering those digits or transferring via email. Chrome OS 78 will separate browser and device settings. The former is accessible directly at chrome://settings and what opens when clicking ""Settings"" at the bottom of the Overflow menu in the top-right corner of any browser window. It opens as a tab and provides web-related preferences. Meanwhile, chrome://os-settings opens as its own window, and can be accessed from the quick settings sheet. It provides device options like Wi-Fi, Bluetooth, and Assistant in a white Material Theme UI with an icon in the launcher/app shelf. YouTube for Android now supports picture-in-picture with Chrome OS 78. After starting a video in the mobile client, switching to another window, covering, or minimizing the app will automatically open a PiP in the bottom-right corner. Available controls include switching to audio, play/pause, and skipping to the next track. In the top-left, you can expand the window and a settings gear on the other side allows you to open system settings. Tapping in the center expands and returns you to the YouTube Android app. Chrome OS 78 simplifies the printing experience by automatically listing compatible printers without any prior setup required. There are also a number of Linux on Chrome OS enhancements in this version: - Backups of Linux apps and files can now be saved to local storage, external drive, or Google Drive. That copy can be then restored when setting up a new computer.- Crostini GPU support will be enabled by default for a ""crisp, lower-latency experience.""- You'll be warned when using a Linux app that does not support virtual keyboard in tablet mode.
+
+
+(9to5google.com)
+
+
+
+
+",en,"
+
+
+
+
+
+
+
+
+
+
+
+Chrome OS 78 Rolling Out With Picture-In-Picture Support For YouTube, Split Browser/Device Settings, More
+07 Nov 2019, 07:10 by BeauHD
+The latest version of Chrome OS, version 78, adds separate browser and device settings, click-to-call, and picture-in-picture support for YouTube. It also introduces virtual desktop support for the operating system with a feature called Virtual Desks. 9to5Google reports: Chrome is getting another cross-device sharing feature after ""Send this page"" widely rolled in September. With ""click-to-call,"" you can right-click on phone number links -- like tel:800-800-8000 -- to have them sent to your Android device. It's quicker than manually entering those digits or transferring via email. Chrome OS 78 will separate browser and device settings. The former is accessible directly at chrome://settings and what opens when clicking ""Settings"" at the bottom of the Overflow menu in the top-right corner of any browser window. It opens as a tab and provides web-related preferences. Meanwhile, chrome://os-settings opens as its own window, and can be accessed from the quick settings sheet. It provides device options like Wi-Fi, Bluetooth, and Assistant in a white Material Theme UI with an icon in the launcher/app shelf. YouTube for Android now supports picture-in-picture with Chrome OS 78. After starting a video in the mobile client, switching to another window, covering, or minimizing the app will automatically open a PiP in the bottom-right corner. Available controls include switching to audio, play/pause, and skipping to the next track. In the top-left, you can expand the window and a settings gear on the other side allows you to open system settings. Tapping in the center expands and returns you to the YouTube Android app. Chrome OS 78 simplifies the printing experience by automatically listing compatible printers without any prior setup required. There are also a number of Linux on Chrome OS enhancements in this version: - Backups of Linux apps and files can now be saved to local storage, external drive, or Google Drive. That copy can be then restored when setting up a new computer.- Crostini GPU support will be enabled by default for a ""crisp, lower-latency experience.""- You'll be warned when using a Linux app that does not support virtual keyboard in tablet mode.
+
+
+(9to5google.com)
+
+
+
+
+"

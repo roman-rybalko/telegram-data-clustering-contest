@@ -1,0 +1,62 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+CPU AMD EPYC per tenere a bada le testate nucleari britanniche
+06 Nov 2019, 06:04 by Jacopo Ferrante
+L’Atomic Weapons Establishment (AWE) – responsabile della progettazione, produzione e supporto delle testate per le armi nucleari del Regno Unito – ha selezionato il supercomputer Cray Shasta per garantire la difesa e la sicurezza del paese.
+Shasta darà vita a un nuovo sistema chiamato Vulcan, formato da processori AMD EPYC e in grado di fornire una potenza di calcolo di 7 petaflops.
+
+
+
+“Il supercomputer rappresenta un aspetto fondamentale per AWE”, ha affermato Andy Herdman, a capo degli HPC presso AWE. “È alla base della stragrande maggioranza dei nostri programmi scientifici e siamo continuamente alla ricerca di modi per migliorare e supportare questo importante lavoro. Questo è il motivo per cui abbiamo scelto Shasta, per le sue caratteristiche uniche e potenti, nonché per la sua capacità di fornire un TCO (costo totale di possesso) ottimale”.
+AWE è sotto il controllo del Ministero della Difesa del Regno Unito, responsabile del programma e della gestione. Questo compito richiede che AWE verifichi continuamente la sicurezza e l’affidabilità delle testate nucleari mediante calcoli e simulazioni tramite i supercomputer.
+L’architettura Shasta di Vulcan includerà l’interconnessione Cray Slingshot, i processori AMD EPYC 7542 e lo storage Cray ClusterStor Lustre. Il sistema di archiviazione ad alte prestazioni offrirà quasi 100 gigabyte al secondo di prestazioni I/O.
+“Siamo lieti di collaborare ancora una volta con Cray per fornire un nuovo potente supercomputer che supporterà le attività di ricerca critiche nel Regno Unito”, ha affermato Forrest Norrod, vicepresidente senior e direttore generale di AMD Datacenter e Embedded Systems Group.
+“I nostri processori AMD EPYC di seconda generazione offrono prestazioni senza precedenti, contribuendo nel contempo a ridurre il TCO, elementi chiave per il successo di AWE negli anni a venire”.
+Ricordiamo che recentemente, sempre nel Regno Unito, lo UK Research and Innovation (UKRI) ha annunciato lo sviluppo di un nuovo supercomputer chiamato ARCHER2 sempre basato sulla piattaforma Cray Shasta con processori AMD EPYC.
+ARCHER2 dovrebbe offrire una potenza di picco di 28 petaflops grazie a 5.848 nodi di calcolo, ciascuno con doppia CPU AMD EPYC Rome da 64 core a 2,2 GHz, per un totale di 748.544 core e 1,57 petabyte di memoria RAM.
+Il tutto dovrebbe rientrare in 23 armadi Shasta Mountain raffreddati a liquido. Si parla inoltre della presenza di ulteriori 4 nodi di calcolo con 16 GPU AMD di prossima generazione non meglio identificate.
+Vi piacciono i computer e la tecnologia e volete leggere qualche libro in merito? Date un’occhiata ai nostri consigli per farvi una cultura su questo ampio e variopinto mondo.
+
+
+",it,"
+
+
+
+
+
+
+
+
+
+
+
+AMD EPYC CPU to keep British nuclear warheads at bay
+06 Nov 2019, 06:04 by Jacopo Ferrante
+The Atomic Weapons Establishment (AWE) - responsible for the design, production and support of the nuclear weapons publications of the United Kingdom - selected the Cray Shasta supercomputer to ensure the defense and security of the country.
+Shasta will give life to a new system called Vulcan, made up of AMD EPYC processors and able to provide a computing power of 7 petaflops.
+
+
+
+""The supercomputer is a key issue for AWE,"" said Andy Herdman, head of HPC at AWE. ""It is the basis of the vast majority of our scientific programs and we are constantly looking for ways to improve and support this important work. This is the reason why we chose Shasta, for its unique and powerful characteristics, as well as for its ability to provide an optimal TCO (total cost of ownership) "".
+AWE is under the control of the UK Ministry of Defense, responsible for the program and management. This task requires that AWE continuously test the safety and reliability of nuclear warheads through calculations and simulations using supercomputers.
+Vulcan's Shasta architecture will include Cray Slingshot interconnection, AMD EPYC 7542 processors and Cray ClusterStor Luster storage. The high-performance storage system will offer nearly 100 gigabytes per second of I / O performance.
+""We are pleased to once again collaborate with Cray to provide a powerful new supercomputer that will support critical research activities in the UK,"" said Forrest Norrod, senior vice president and general manager of AMD Datacenter and Embedded Systems Group.
+""Our second-generation AMD EPYC processors offer unprecedented performance, while helping to reduce TCO, key elements for AWE's success in the years to come.""
+We recall that recently, still in the United Kingdom, the UK Research and Innovation (UKRI) announced the development of a new supercomputer called ARCHER2 always based on the Cray Shasta platform with AMD EPYC processors.
+ARCHER2 should offer a peak power of 28 petaflops thanks to 5,848 calculation nodes, each with dual AMD EPYC Rome 64-core 2.2 GHz CPUs, for a total of 748,544 cores and 1.57 petabytes of RAM.
+Everything should fit into 23 liquid cooled Shasta Mountain cabinets. There is also talk of the presence of an additional 4 calculation nodes with 16 next-generation AMD GPUs not better identified.
+Do you like computers and technology and do you want to read some books about it? Take a look at our tips to make you a culture about this wide and colorful world.
+
+
+"

@@ -1,0 +1,50 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Chrome 79 Beta brings over VR to the web, Adaptive Icons for installed PWAs, and more
+01 Nov 2019, 07:19 by Aamir Siddiqui
+Chrome is the world’s most popular browser, enjoying a market share of about 65% as of September 2019. The second position goes to Safari with a 16% market share, so one can see how wide the disparity really is in terms of user preference and choice. Google Chrome gets updated regularly, with features like Site Isolation, Alt-text auto-generation, ability to send tabs and numbers to different devices, and possibly upcoming features like Game Hub. Everyone’s favorite browser is all set to gain more functionality in the future as the newest Chrome 79 Beta is bringing over improved VR experiences to the web with the new WebXR Device API. For Android, this release extends the adaptive icon functionality for installed Progressive Web Apps.
+Chrome 79 Beta ships with the new WebXR Device API enabled by default, an API that provides the interfaces necessary to enable developers to build compelling, comfortable, and safe immersive applications on the web across a wide variety of hardware form factors. This will allow developers to create immersive experiences for smartphones and head-mounted displays. The GamePad API is also being updated to extend the advanced use of controllers to VR. This launch sets the foundation for more immersive features to come, such as supporting augmented reality (AR), tools, and expanding the real-world understanding of immersive experiences. Other browsers will also be supporting these specs soon, including Firefox Reality and Oculus Browser.
+This Beta release also brings over Android Oreo‘s adaptive icon support to Progressive Web App (PWAs). Now with Chrome 79 on Android Oreo and later, the system will automatically mask irregularly shaped icons to a uniform appearance. This should bridge the aesthetic difference between installed apps and progressive web apps on your homescreen, and should be especially handy if you have a fair few of them installed.
+These, and more changes, are coming over to the Chrome beta release channel for Android, Chrome OS, Linux, macOS, and Windows.
+
+
+Source: Chromium Blog
+
+
+
+",en,"
+
+
+
+
+
+
+
+
+
+
+
+Chrome 79 Beta brings over VR to the web, Adaptive Icons for installed PWAs, and more
+01 Nov 2019, 07:19 by Aamir Siddiqui
+Chrome is the world’s most popular browser, enjoying a market share of about 65% as of September 2019. The second position goes to Safari with a 16% market share, so one can see how wide the disparity really is in terms of user preference and choice. Google Chrome gets updated regularly, with features like Site Isolation, Alt-text auto-generation, ability to send tabs and numbers to different devices, and possibly upcoming features like Game Hub. Everyone’s favorite browser is all set to gain more functionality in the future as the newest Chrome 79 Beta is bringing over improved VR experiences to the web with the new WebXR Device API. For Android, this release extends the adaptive icon functionality for installed Progressive Web Apps.
+Chrome 79 Beta ships with the new WebXR Device API enabled by default, an API that provides the interfaces necessary to enable developers to build compelling, comfortable, and safe immersive applications on the web across a wide variety of hardware form factors. This will allow developers to create immersive experiences for smartphones and head-mounted displays. The GamePad API is also being updated to extend the advanced use of controllers to VR. This launch sets the foundation for more immersive features to come, such as supporting augmented reality (AR), tools, and expanding the real-world understanding of immersive experiences. Other browsers will also be supporting these specs soon, including Firefox Reality and Oculus Browser.
+This Beta release also brings over Android Oreo‘s adaptive icon support to Progressive Web App (PWAs). Now with Chrome 79 on Android Oreo and later, the system will automatically mask irregularly shaped icons to a uniform appearance. This should bridge the aesthetic difference between installed apps and progressive web apps on your homescreen, and should be especially handy if you have a fair few of them installed.
+These, and more changes, are coming over to the Chrome beta release channel for Android, Chrome OS, Linux, macOS, and Windows.
+
+
+Source: Chromium Blog
+
+
+
+"

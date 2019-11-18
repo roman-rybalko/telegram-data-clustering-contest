@@ -1,0 +1,56 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+PSA: Apple releases critical Xcode 11.2.1 update for developers
+05 Nov 2019, 23:30 by Filipe Espósito
+Apple has just released an emergency Xcode 11.2.1 update for developers — the tool used to create iOS, macOS, watchOS and tvOS apps. That comes a week after the official release of Xcode 11.2, which featured SDK support for iOS 13.2, macOS Catalina 10.15.1 and other updates released last week.
+According to the company, today’s update fixes a critical issue that could cause apps using UITextView to crash when run on previous versions of iOS, iPadOS, or tvOS. With the latest Xcode update, Storyboards containing a UITextView will no longer cause the app to crash on operating system versions earlier than iOS 13.2 and tvOS 13.2.
+Developers facing this issue should update Xcode now. The new version is only available on the Apple Developer website for now, but it should be available on the Mac App Store anytime soon.
+You can read the full release notes here.
+
+
+
+FTC: We use income earning auto affiliate links. More.
+
+
+
+
+
+",en,"
+
+
+
+
+
+
+
+
+
+
+
+PSA: Apple releases critical Xcode 11.2.1 update for developers
+05 Nov 2019, 23:30 by Filipe Espósito
+Apple has just released an emergency Xcode 11.2.1 update for developers — the tool used to create iOS, macOS, watchOS and tvOS apps. That comes a week after the official release of Xcode 11.2, which featured SDK support for iOS 13.2, macOS Catalina 10.15.1 and other updates released last week.
+According to the company, today’s update fixes a critical issue that could cause apps using UITextView to crash when run on previous versions of iOS, iPadOS, or tvOS. With the latest Xcode update, Storyboards containing a UITextView will no longer cause the app to crash on operating system versions earlier than iOS 13.2 and tvOS 13.2.
+Developers facing this issue should update Xcode now. The new version is only available on the Apple Developer website for now, but it should be available on the Mac App Store anytime soon.
+You can read the full release notes here.
+
+
+
+FTC: We use income earning auto affiliate links. More.
+
+
+
+
+
+"

@@ -1,0 +1,120 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Ciberataques los fines de semana: así actúan los ransomware de moda, BitPaymer y Ryuk
+05 Nov 2019, 11:01 by Javier Pastor
+Ayer se vivieron momentos difíciles tanto en Everis como en La Cadena SER. Ambas empresas fueron atacadas por un ransomware que hizo que se tomaran medidas para desconectar equipos de las redes y atajar un problema que cifra los datos de los equipos y exige un rescate para recuperarlos.
+Según fuentes de la SER el ransomware utilizado fue Ryuk, mientras que los expertos apuntaban ayer a otra opción muy conocida: el llamado BitPaymer/iEncrypt. Ambos son ataques distintos al caos que creó WannaCry: se trata de ransomware dirigido a grandes empresas que pueden estar más dispuestas a resolver el problema rápido pagando el rescate. Eso, advertía el INCIBE, es justo lo que nunca se debe hacer.
+BitPaymer lleva ya mucho tiempo actuando
+Bernardo Quintero, fundador de VirusTotal, explicaba cómo por ejemplo la familia de ransomware BitPaymer/iEncrypt ""lleva ya 3 años entre nosotros, siendo utilizado para ataques dirigidos contra empresas"". La idea no es atacar de forma indiscriminada como sucedió con WannaCry en 2017: entonces hubo grandes empresas como Telefónica afectadas, pero también acabaron afectados muchos usuarios individuales.
+
+
+
+Los ciberataques realizados con BitPaymer/iEncrypt llevan tiempo afectando a empresas muy concretas en Alemania, Canadá, Reino Unido o Estados Unidos ""con variantes creadas para la ocasión"", destacaba Quintero.
+
+
+
+El pasado mes de octubre la empresa alemana Pilz sufría un ataque de este tipo, y en DarkReading hacían un análisis de esa amenaza creciente de BitPaymer, un ransomware adaptable que había afectado al menos a 15 empresas con entre 200 y 1.000 empleados en Estados Unidos en los últimos meses.
+El correo es el origen (pero hay otras muchas opciones), el fin de semana es clave
+La forma de actuar de BitPaymer comienza en muchos casos con correos maliciosos de phishing que por ejemplo se distribuyen con Dridex, un malware muy conocido que roba datos y credenciales.
+
+
+
+Con este malware los ciberatacantes pueden acceder a credenciales del Directorio Activo de Windows utilizadas en las redes internas de la empresa víctima, y a partir de ahí realizan un reconocimiento de esa infraestructura para detectar servidores con información sensible y aquellos que pueden ser infectados.
+
+
+
+Cuando tienen esos datos y el ciberataque preparado, planifican su puesta en marcha, pero lo hacen con una táctica muy peculiar: los inician el fin de semana, cuando el personal de la empresa, incluido el que se encarga de proteger los sistemas informáticos, está descansando. Morphisec, una empresa de seguridad, indicaba que los ataques ""se dispersan a medida que los primeros empleados que vuelven al trabajo tras el fin de semana se autentican en la red comprometida"".
+
+
+
+Hay otros vectores de ataque, como explicaba Quintero. ""Todas son posibles, este grupo ha utilizado en el pasado típicos adjuntos por email, drive-by download, accesos RDP, exploits... y una vez en la red interna empiezan a realizar movimientos laterales"".
+Este experto también destacaba que con BitPaymer/iEncrypt ese estudio previo de la red interna para infectarla antes de lanzar la ""carga útil"" (payload) y que los usuarios vean bloqueado el acceso a sus datos. ""En este sentido es mucho más dañino que WannaCry"", comentaba Quintero, porque entre otras cosas ""si pueden te pillan hasta los sistemas de backup antes de lanzar el payload"".
+Ryuk, otro ransomware muy de moda
+En octubre de 2019 un ransomware llamado Ryuk dejó KO la infraestructura del sistema sanitario de Alabama. Tres hospitales vieron toda su operativa afectada, lo que obligó a tomar una decisión difícil: acabaron pagando el rescate para poder volver a recuperar el control del sistema.
+
+
+Mensaje de aviso que aparece en sistemas afectados por el ransomware Ryuk. Fuente: CrowdStrike.
+
+El FBI ya había avisado esos días de un crecimiento en ciberataques con ransomware, y señalaban que en muchos casos estos ataques se basaban en campañas de correos de phishing, en vulnerabilidades del Remote Desktop Protocol de Windows y vulnerabilidades diversas del software como las que se dieron en herramientas de gestión de proveeodres de servicios remotos.
+
+
+
+El origen del ataque estuvo en el ransomware Ryuk, otro de los tristemente famosos códigos maliciosos que según los expertos está gestionado por un grupo criminal en Rusia -y no Corea del Norte, como se asumió inicialmente- llamado Wizard Spider y que tiene un grupo operativo llamado Grim Spider. Dicho grupo había logrado amasar 3,7 millones de dólares en forma de bitcoin gracias a este tipo de actividad.
+Este ransomware lleva actuando desde (al menos) agosto de 2018 según CrowdStrike, y como ocurre con BitPaymer el objetivo son grandes empresas que permiten lograr a menudo mayores posibilidades de pago de rescate. Este ransomware parece estar derivado de otro llamado Hermes que está a la venta en la dark web y que se puede personalizar para escenarios como el que ha acabado afectando a estas empresas.
+El completo análisis de esta firma de seguridad revela cómo actúa un ransomware que realiza ese estudio previo de la red que acabará siendo víctima del ataque para luego activarlo. Eso provoca el cifrado de ficheros usando RSA-2048 y AES-256 con claves que se almacenan en el ejecutable, y el bloqueo afecta a ficheros, sistemas de almacenamiento(con llamadas como GetLogicalDrives) y máquinas remotas conectadas a la víctima (a través del protocolo ARP) y que acaban contagiándose con este malware.
+Ryuk tiene particularidades como la de incluir en una ""lista blanca"" una serie de ficheros y carpetas que no cifra, algo que permite mantener la estabilidad del anfitrión y atacar solo a aquellos ficheros sensibles. Van a lo importante, y logran un ataque persistente que hace que reiniciar el sistema no sirva de nada, por ejemplo.
+Este mismo ataque fue según El País el utilizado en la Cadena SER recientemente, aunque curiosamente esta empresa no recibió el mensaje .TXT en el que se suele pedir el rescate. Solo ""había un archivo con el nombre del virus y una cuenta de correo"". En la Cadena SER se han ""centrado en preservar la emisión [radiofónica], lo que hemos logrado"".
+Desde el Instituto Nacional de Ciberseguridad (INCIBE) ya se alertó ayer del problema y aseguraron estar trabajando ""en la mitigación y recuperación del incidente en coordinación con las empresas afectadas y las empresas de ciberseguridad que les dan soporte, como parte de nuestra operativa habitual"". Este organismo tiene una recomendación clara en este tipo de ataques: no pagar nunca el rescate, algo que anima a los ciberdelicuentes a seguir operando de esta forma.
+
+
+",es,"
+
+
+
+
+
+
+
+
+
+
+
+Cyber attacks on weekends: this is how fashion ransomware, BitPaymer and Ryuk act
+05 Nov 2019, 11:01 by Javier Pastor
+Yesterday there were difficult moments in both Everis and La Cadena SER. Both companies were attacked by a ransomware that caused measures to be taken to disconnect equipment from the networks and to tackle a problem that encrypts the data of the equipment and demands a rescue to recover them.
+According to SER sources, the ransomware used was Ryuk, while experts pointed to another well-known option yesterday: the so-called BitPaymer / iEncrypt. Both are attacks other than the chaos that WannaCry created: these are ransomware aimed at large companies that may be more willing to solve the problem quickly by paying the ransom. That, the INCIBE warned, is just what you should never do.
+BitPaymer has been acting for a long time
+Bernardo Quintero, founder of VirusTotal, explained how, for example, the BitPaymer / iEncrypt ransomware family ""has been among us for 3 years now, being used for targeted attacks against companies."" The idea is not to attack indiscriminately as it happened with WannaCry in 2017: then there were large companies like Telefónica affected, but many individual users were also affected.
+
+
+
+The cyberattacks carried out with BitPaymer / iEncrypt have been affecting very specific companies in Germany, Canada, the United Kingdom or the United States for some time ""with variants created for the occasion,"" Quintero said.
+
+
+
+Last October the German company Pilz suffered an attack of this type, and in DarkReading they made an analysis of this growing threat of BitPaymer, an adaptable ransomware that had affected at least 15 companies with between 200 and 1,000 employees in the United States in the last months.
+Mail is the source (but there are many other options), the weekend is key
+BitPaymer's way of acting begins in many cases with malicious phishing emails that for example are distributed with Dridex, a well-known malware that steals data and credentials.
+
+
+
+With this malware, cyber attackers can access Windows Active Directory credentials used in the internal networks of the victim company, and from there they perform a recognition of that infrastructure to detect servers with sensitive information and those that can be infected.
+
+
+
+When they have these data and cyber attack prepared, they plan their implementation, but they do it with a very peculiar tactic: they start them on the weekend, when the company's personnel, including those responsible for protecting computer systems, are Resting. Morphisec, a security company, said attacks ""disperse as the first employees returning to work after the weekend authenticate on the compromised network.""
+
+
+
+There are other attack vectors, as Quintero explained. ""All are possible, this group has used in the past typical attachments by email, drive-by download, RDP accesses, exploits ... and once in the internal network they begin to make lateral movements.""
+This expert also stressed that with BitPaymer / iEncrypt that previous study of the internal network to infect it before launching the ""payload"" (payload) and that users see access to their data blocked. ""In this sense it is much more harmful than WannaCry,"" Quintero said, because among other things ""if they can get you caught up to the backup systems before launching the payload.""
+Ryuk, another very fashionable ransomware
+In October 2019, a ransomware called Ryuk left KO the Alabama healthcare system infrastructure. Three hospitals saw all their operations affected, which forced them to make a difficult decision: they ended up paying the ransom in order to regain control of the system.
+
+
+Warning message that appears on systems affected by Ryuk ransomware. Source: CrowdStrike
+
+The FBI had already warned those days of a growth in cyber attacks with ransomware, and pointed out that in many cases these attacks were based on phishing email campaigns, Windows Remote Desktop Protocol vulnerabilities and various software vulnerabilities such as those that occurred in management tools of remote service providers.
+
+
+
+The origin of the attack was in the Ryuk ransomware, another of the sadly famous malicious codes that experts say is managed by a criminal group in Russia - and not North Korea, as initially assumed - called Wizard Spider and that has an operating group called Grim Spider. This group had amassed 3.7 million dollars in the form of bitcoin thanks to this type of activity.
+This ransomware has been operating since (at least) August 2018 according to CrowdStrike, and as with BitPaymer, the objective is large companies that often allow greater possibilities for rescue payment. This ransomware seems to be derived from another called Hermes that is for sale on the dark web and that can be customized for scenarios such as the one that has ended up affecting these companies.
+The complete analysis of this security firm reveals how a ransomware performs that previous study of the network that will end up being a victim of the attack and then activate it. That causes the encryption of files using RSA-2048 and AES-256 with keys that are stored in the executable, and the blocking affects files, storage systems (with calls such as GetLogicalDrives) and remote machines connected to the victim (through the ARP protocol) and they end up becoming infected with this malware.
+Ryuk has particularities such as including a ""white list"" a series of files and folders that do not encrypt, something that allows to maintain the stability of the host and attack only those sensitive files. They go to the important thing, and achieve a persistent attack that makes restarting the system useless, for example.
+This same attack was according to El País the one used in the SER Chain recently, although curiously this company did not receive the .TXT message in which the ransom is usually requested. Only ""there was a file with the name of the virus and an email account"". In the SER chain they have ""focused on preserving the [radio] broadcast, which we have achieved"".
+The National Cybersecurity Institute (INCIBE) already warned yesterday of the problem and said they were working ""on the mitigation and recovery of the incident in coordination with the affected companies and the cybersecurity companies that support them, as part of our usual operations"" . This agency has a clear recommendation in these types of attacks: never pay the ransom, something that encourages cyber-criminals to continue operating in this way.
+
+
+"

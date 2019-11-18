@@ -1,0 +1,104 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Getting your sites ready for the new Microsoft Edge
+04 Nov 2019, 06:00 by Kyle Pflug, John Jansen
+This morning, we released Microsoft Edge Beta version 79, which is the final Beta before the new Microsoft Edge is generally available, also known as the “Release Candidate.” On January 15th, we expect to release the “Stable” channel, at which point Microsoft Edge will be generally available to download on Windows and macOS.
+The new Microsoft Edge is built on the Chromium engine, providing best in class compatibility with extensions and web sites, with great support for the latest rendering capabilities, modern web applications, and powerful developer tools across all supported platforms.
+For Enterprise customers, the new Microsoft Edge also includes Internet Explorer mode, providing a seamless experience across internal sites and LOB apps with legacy dependencies. And for end users, it includes new privacy-enhancing features like tracking prevention that’s on by default and a new InPrivate mode across your entire web experience, so your online searches and browsing are not attributed to you.
+You can learn more about how the new Microsoft Edge and Bing work together to be the browser and search engine for business over on the Windows blog. In this post, we’ll share more about how you can add the new Microsoft Edge to your automated browser testing, so your customers have a great experience as they begin to upgrade. We’ll also share resources you can use to file bugs, get support, and see what’s next for the new Microsoft Edge.
+Microsoft Edge Insider Channels
+
+
+
+For customers looking for a snapshot of what is coming in the next major version, the Beta channel represents an early preview of the next Stable release. For example, today’s Beta 79 is our “Release Candidate” build for our Stable release on January 15th. To install the browser, simply browse here and select the appropriate channel.
+Automated testing
+Because the new Microsoft Edge is built on Chromium, it is fully compatible with popular automated testing frameworks like Selenium WebDriver and Puppeteer. With general availability coming in January, we recommend incorporating the new Microsoft Edge into your existing automated tests now – testing the Beta channel will give you six weeks advance notice of any potential issues that may impact your site.
+Selenium WebDriver
+The most common framework for browser automation is Selenium WebDriver. To configure WebDriver with Microsoft Edge, you’ll need to download the corresponding version of our WebDriver, MSEdgeDriver. So, for example, if you downloaded the Developer channel for Microsoft Edge, you would want to click on the Settings and More link in the browser and then click on “Settings”. From there, you can click on “About Microsoft Edge” and see your Version. It will say something like “79.0.308.0”. Once you know that, you can download the matching version of MSEdgeDriver that is appropriate for your Operating System.
+If you prefer to automate that process, you can check the following registry key for the version of Microsoft Edge that is installed:
+HKEY_CURRENT_USER\Software\Microsoft\Edge{ CHANNEL}\BLBeacon (e.g., Computer\HKEY_CURRENT_USER\Software\Microsoft\Edge Dev\BLBeacon)
+And then you can download the driver by building a URL to the server that looks like this:
+https://msedgedriver.azureedge.net/{VERSION}/edgedriver_{ARC}.zip (e.g., https://msedgedriver.azureedge.net/79.0.308.1/edgedriver_win32.zip)
+Microsoft Edge should be fully compatible with existing tests written to run in Chrome or other Chromium-based browsers – simply modify the “binary_location” to point to Microsoft Edge, and modify the “executable_path” to point to msedgedriver.exe. MSEdgeDriver.exe currently supports Chrome options, but we do plan on updating the Selenium language bindings in Selenium 4 to account for our new browser. For the time being, the language bindings will default to creating the legacy Microsoft Edge connections, so you will pass in a parameter indicating that these tests should run against the new Microsoft Edge browser:
+Here is an example for how you would do that in C#:
+Puppeteer
+Another popular automation framework is Puppeteer, a Node library which provides a high-level API to control Chromium-based Browsers over the DevTools Protocol. By default, Puppeteer will launch a version of Chromium (the core upon which Google Chrome, Microsoft Edge, Brave, Vivaldi, and others are built). However, you can also pass in the path to the browser exe you would like to run instead.
+You would write something like this (in JavaScript):
+Automating Internet Explorer mode
+In addition to running tests written for Chrome on Microsoft Edge, we’ve also made it easy to migrate tests written for Internet Explorer 11. The new Microsoft Edge includes “Internet Explorer mode,” which allows a tab to render content using IE11 in certain Enterprise contexts (e.g., for Intranet sites or sites  specified by your Enterprise Mode Site List).
+The new Microsoft Edge allows you to run IE11 validation for legacy sites in addition to your modern experiences. To run your IE11 tests in Microsoft Edge, download the IEDriverServer from Selenium. Then you must pass in a capability to put Microsoft Edge into IE Mode and then run your tests.
+Because this capability puts the whole browser into IE11 Mode, you cannot simultaneously test content that should render in the modern Chromium engine, but you should be able to run all of your IE11 tests and validate the rendering in Microsoft Edge. Note that this code requires an update to IEDriverServer which should be included in the next release of Selenium.
+After you download the new IEDriverServer from SeleniumHQ and follow the directions for the “Required Configuration” as documented here, you can run the following code to launch the new Microsoft Edge in IE11 mode and run some tests:
+Filing bugs and sharing feedback
+As you test your sites in Microsoft Edge, you may encounter issues that appear to be caused by a bug in the browser. For any issue, the quickest way to give feedback is simply to click the “Send feedback” button in the “Help and Feedback” menu (or Alt-Shift-I on Windows). You can describe your issue and share additional details such as screenshots, diagnostic details, or contact information here.
+This is also the best place to provide general end-user feedback such as feature suggestions. To date, we’ve received over 230,000 pieces of feedback from users and developers – thank you, and we truly embrace your input!
+What’s next for the new Microsoft Edge
+Alongside today’s announcements, we’ve updated our Platform Status feature roadmap to reflect the new Microsoft Edge capabilities and an early look at what’s in development for future versions. If you have questions about whether we plan to implement an upcoming HTML/CSS/JS feature, you can search for the corresponding entry here. If you don’t see the feature you’re looking for, simply open an issue on GitHub to get it added.
+We’re also continuing to innovate through new standards proposals and by implementing experimental features in Chromium. You can track our focus areas on GitHub in the MSEdgeExplainers repository, where we publish public explainers and “intent to implement” notices as our first step towards shipping new features. We are committed to contributing as a member of the open source community, and have published over 30 explainers to date – and more importantly, we hope to make the web better for everyone.
+Get started today by downloading the Microsoft Edge Release Candidate build and adding it to your test matrix, and be sure to share any feedback or issues you might have. We’ll see you in January!
+– Kyle Pflug, Senior PM Lead, Microsoft Edge– John Jansen, Principal Software Engineering Manager, Microsoft Edge
+
+
+",en,"
+
+
+
+
+
+
+
+
+
+
+
+Getting your sites ready for the new Microsoft Edge
+04 Nov 2019, 06:00 by Kyle Pflug, John Jansen
+This morning, we released Microsoft Edge Beta version 79, which is the final Beta before the new Microsoft Edge is generally available, also known as the “Release Candidate.” On January 15th, we expect to release the “Stable” channel, at which point Microsoft Edge will be generally available to download on Windows and macOS.
+The new Microsoft Edge is built on the Chromium engine, providing best in class compatibility with extensions and web sites, with great support for the latest rendering capabilities, modern web applications, and powerful developer tools across all supported platforms.
+For Enterprise customers, the new Microsoft Edge also includes Internet Explorer mode, providing a seamless experience across internal sites and LOB apps with legacy dependencies. And for end users, it includes new privacy-enhancing features like tracking prevention that’s on by default and a new InPrivate mode across your entire web experience, so your online searches and browsing are not attributed to you.
+You can learn more about how the new Microsoft Edge and Bing work together to be the browser and search engine for business over on the Windows blog. In this post, we’ll share more about how you can add the new Microsoft Edge to your automated browser testing, so your customers have a great experience as they begin to upgrade. We’ll also share resources you can use to file bugs, get support, and see what’s next for the new Microsoft Edge.
+Microsoft Edge Insider Channels
+
+
+
+For customers looking for a snapshot of what is coming in the next major version, the Beta channel represents an early preview of the next Stable release. For example, today’s Beta 79 is our “Release Candidate” build for our Stable release on January 15th. To install the browser, simply browse here and select the appropriate channel.
+Automated testing
+Because the new Microsoft Edge is built on Chromium, it is fully compatible with popular automated testing frameworks like Selenium WebDriver and Puppeteer. With general availability coming in January, we recommend incorporating the new Microsoft Edge into your existing automated tests now – testing the Beta channel will give you six weeks advance notice of any potential issues that may impact your site.
+Selenium WebDriver
+The most common framework for browser automation is Selenium WebDriver. To configure WebDriver with Microsoft Edge, you’ll need to download the corresponding version of our WebDriver, MSEdgeDriver. So, for example, if you downloaded the Developer channel for Microsoft Edge, you would want to click on the Settings and More link in the browser and then click on “Settings”. From there, you can click on “About Microsoft Edge” and see your Version. It will say something like “79.0.308.0”. Once you know that, you can download the matching version of MSEdgeDriver that is appropriate for your Operating System.
+If you prefer to automate that process, you can check the following registry key for the version of Microsoft Edge that is installed:
+HKEY_CURRENT_USER\Software\Microsoft\Edge{ CHANNEL}\BLBeacon (e.g., Computer\HKEY_CURRENT_USER\Software\Microsoft\Edge Dev\BLBeacon)
+And then you can download the driver by building a URL to the server that looks like this:
+https://msedgedriver.azureedge.net/{VERSION}/edgedriver_{ARC}.zip (e.g., https://msedgedriver.azureedge.net/79.0.308.1/edgedriver_win32.zip)
+Microsoft Edge should be fully compatible with existing tests written to run in Chrome or other Chromium-based browsers – simply modify the “binary_location” to point to Microsoft Edge, and modify the “executable_path” to point to msedgedriver.exe. MSEdgeDriver.exe currently supports Chrome options, but we do plan on updating the Selenium language bindings in Selenium 4 to account for our new browser. For the time being, the language bindings will default to creating the legacy Microsoft Edge connections, so you will pass in a parameter indicating that these tests should run against the new Microsoft Edge browser:
+Here is an example for how you would do that in C#:
+Puppeteer
+Another popular automation framework is Puppeteer, a Node library which provides a high-level API to control Chromium-based Browsers over the DevTools Protocol. By default, Puppeteer will launch a version of Chromium (the core upon which Google Chrome, Microsoft Edge, Brave, Vivaldi, and others are built). However, you can also pass in the path to the browser exe you would like to run instead.
+You would write something like this (in JavaScript):
+Automating Internet Explorer mode
+In addition to running tests written for Chrome on Microsoft Edge, we’ve also made it easy to migrate tests written for Internet Explorer 11. The new Microsoft Edge includes “Internet Explorer mode,” which allows a tab to render content using IE11 in certain Enterprise contexts (e.g., for Intranet sites or sites  specified by your Enterprise Mode Site List).
+The new Microsoft Edge allows you to run IE11 validation for legacy sites in addition to your modern experiences. To run your IE11 tests in Microsoft Edge, download the IEDriverServer from Selenium. Then you must pass in a capability to put Microsoft Edge into IE Mode and then run your tests.
+Because this capability puts the whole browser into IE11 Mode, you cannot simultaneously test content that should render in the modern Chromium engine, but you should be able to run all of your IE11 tests and validate the rendering in Microsoft Edge. Note that this code requires an update to IEDriverServer which should be included in the next release of Selenium.
+After you download the new IEDriverServer from SeleniumHQ and follow the directions for the “Required Configuration” as documented here, you can run the following code to launch the new Microsoft Edge in IE11 mode and run some tests:
+Filing bugs and sharing feedback
+As you test your sites in Microsoft Edge, you may encounter issues that appear to be caused by a bug in the browser. For any issue, the quickest way to give feedback is simply to click the “Send feedback” button in the “Help and Feedback” menu (or Alt-Shift-I on Windows). You can describe your issue and share additional details such as screenshots, diagnostic details, or contact information here.
+This is also the best place to provide general end-user feedback such as feature suggestions. To date, we’ve received over 230,000 pieces of feedback from users and developers – thank you, and we truly embrace your input!
+What’s next for the new Microsoft Edge
+Alongside today’s announcements, we’ve updated our Platform Status feature roadmap to reflect the new Microsoft Edge capabilities and an early look at what’s in development for future versions. If you have questions about whether we plan to implement an upcoming HTML/CSS/JS feature, you can search for the corresponding entry here. If you don’t see the feature you’re looking for, simply open an issue on GitHub to get it added.
+We’re also continuing to innovate through new standards proposals and by implementing experimental features in Chromium. You can track our focus areas on GitHub in the MSEdgeExplainers repository, where we publish public explainers and “intent to implement” notices as our first step towards shipping new features. We are committed to contributing as a member of the open source community, and have published over 30 explainers to date – and more importantly, we hope to make the web better for everyone.
+Get started today by downloading the Microsoft Edge Release Candidate build and adding it to your test matrix, and be sure to share any feedback or issues you might have. We’ll see you in January!
+– Kyle Pflug, Senior PM Lead, Microsoft Edge– John Jansen, Principal Software Engineering Manager, Microsoft Edge
+
+
+"

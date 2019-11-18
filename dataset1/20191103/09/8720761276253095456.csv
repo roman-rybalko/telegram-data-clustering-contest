@@ -1,0 +1,46 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Chrome Tries APIs That Allow Changing A User's Files, Receiving SMS Verification Texts
+03 Nov 2019, 09:34 by EditorDavid
+""Web pages have never been able to directly access your computer's (or phone's) file system, unless there was a plugin like Java or ActiveX involved somewhere,"" reports Android Police. The new Native File System API in Chrome 78 changes that... Here's how the API works: A web page can bring up a file picker dialog, just like you would see when clicking an Upload button on any web site. One file, a group of files, or an entire folder can be selected (it's up to the web page). The page can later save changes to those files, if it wants.Before you start freaking out that web sites can now alter your files, there are a lot of security precautions built into this already, and the Chrome team will likely add more before the feature is ready for widespread use. Sites can only see the files you specifically select, they can only save changes back to those files if granted permission, an indicator is added to the address bar if a site has file permissions (on the desktop, anyway), and right now the permission only stays granted until the site is closed.I can't wait to see what gets done with this functionality. We could get online code editors that can actually work with several local files at once, or maybe Google Docs could edit Word files directly on your PC without uploading/converting them first. The article also describes one possible application from Chrome's SMS Receiver API (currently in ""Origin Trial"" status): Many apps and services ask you to verify your phone number by sending a code via SMS. In most cases, you have to leave the app, open the messaging app, copy the code, return to the original app, and paste the code. Google just added an API for Android apps that can automate this process, and now a similar feature is in the works for Chrome.
+
+
+(androidpolice.com)
+
+
+
+
+",en,"
+
+
+
+
+
+
+
+
+
+
+
+Chrome Tries APIs That Allow Changing A User's Files, Receiving SMS Verification Texts
+03 Nov 2019, 09:34 by EditorDavid
+""Web pages have never been able to directly access your computer's (or phone's) file system, unless there was a plugin like Java or ActiveX involved somewhere,"" reports Android Police. The new Native File System API in Chrome 78 changes that... Here's how the API works: A web page can bring up a file picker dialog, just like you would see when clicking an Upload button on any web site. One file, a group of files, or an entire folder can be selected (it's up to the web page). The page can later save changes to those files, if it wants.Before you start freaking out that web sites can now alter your files, there are a lot of security precautions built into this already, and the Chrome team will likely add more before the feature is ready for widespread use. Sites can only see the files you specifically select, they can only save changes back to those files if granted permission, an indicator is added to the address bar if a site has file permissions (on the desktop, anyway), and right now the permission only stays granted until the site is closed.I can't wait to see what gets done with this functionality. We could get online code editors that can actually work with several local files at once, or maybe Google Docs could edit Word files directly on your PC without uploading/converting them first. The article also describes one possible application from Chrome's SMS Receiver API (currently in ""Origin Trial"" status): Many apps and services ask you to verify your phone number by sending a code via SMS. In most cases, you have to leave the app, open the messaging app, copy the code, return to the original app, and paste the code. Google just added an API for Android apps that can automate this process, and now a similar feature is in the works for Chrome.
+
+
+(androidpolice.com)
+
+
+
+
+"

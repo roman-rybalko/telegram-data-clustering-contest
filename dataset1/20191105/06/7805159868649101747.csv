@@ -1,0 +1,64 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Live Transcribe 2.1 prepares to add Emergency siren detection, Smart Segments, and Speaker ID
+05 Nov 2019, 06:45 by Pranob Mehrotra
+Earlier this year at Google I/O, the company introduced two new apps for Android to help people with hearing disabilities — Live Transcribe and Sound Amplifier. While both the apps were originally geared towards the hearing impaired, Google later updated the Live Transcribe app to help students and journalists as well. Following the update, the app allowed users to save transcriptions locally on their device and it even got the ability to detect sound events during the transcription. Now, Google seems to be prepping up the app to introduce three more features.
+
+
+An APK teardown can often predict features that may arrive in a future update of an application, but it is possible that any of the features we mention here may not make it in a future release. This is because these features are currently unimplemented in the live build and may be pulled at any time by the developers in a future build.
+
+
+A teardown of the latest update for Live Transcribe (version 2.1.276871059) reveals strings of code that hint at upcoming features, including Show Emergency Sirens, Smart Segment, and Speaker ID. The Show Emergency Sirens feature will allow the app to identify emergency sirens and alert users of the same. The strings also include a dialog for the feature that states, “Please exercise caution when sirens are reported. Remember that not all sirens require action or indicate a relevant emergency (sirens on TV, for example). Furthermore, our siren detection will occasionally make mistakes.”
+
+<string name=""show_emergency_siren_dialog_message"">Please exercise caution when sirens are reported. Remember that not all sirens require action or indicate a relevant emergency (sirens on TV, for example). Furthermore, our siren detection will occasionally make mistakes.</string> <string name=""show_emergency_siren_title"">Show Emergency Sirens</string> <string name=""smart_segment"">Smart segment</string> <string name=""smart_segment_summary"">Segment transcript based on performance (rather than text length)</string> <string name=""speaker_id_title"">Enable speaker ID</string>
+
+The Smart Segment feature will divide transcripts based on performance, instead of text length, and the Speaker ID feature will help the app identify and label the speakers in an ongoing conversation. Our Editor-in-Chief, Mishaal Rahman, also took a look at the Live Transcribe GitHub repository which contains the Android client libraries used to communicate with Google’s Cloud Speech API and found that the Automatic Speech Recognition (ASR) module has support for built-in speaker identification. However, the speaker ID implementation isn’t provided and it doesn’t look like the app currently has it, but that could change in the near future.
+
+
+Thanks to PNF Software for providing us a license to use JEB Decompiler, a professional-grade reverse engineering tool for Android applications.
+
+
+
+",en,"
+
+
+
+
+
+
+
+
+
+
+
+Live Transcribe 2.1 prepares to add Emergency siren detection, Smart Segments, and Speaker ID
+05 Nov 2019, 06:45 by Pranob Mehrotra
+Earlier this year at Google I/O, the company introduced two new apps for Android to help people with hearing disabilities — Live Transcribe and Sound Amplifier. While both the apps were originally geared towards the hearing impaired, Google later updated the Live Transcribe app to help students and journalists as well. Following the update, the app allowed users to save transcriptions locally on their device and it even got the ability to detect sound events during the transcription. Now, Google seems to be prepping up the app to introduce three more features.
+
+
+An APK teardown can often predict features that may arrive in a future update of an application, but it is possible that any of the features we mention here may not make it in a future release. This is because these features are currently unimplemented in the live build and may be pulled at any time by the developers in a future build.
+
+
+A teardown of the latest update for Live Transcribe (version 2.1.276871059) reveals strings of code that hint at upcoming features, including Show Emergency Sirens, Smart Segment, and Speaker ID. The Show Emergency Sirens feature will allow the app to identify emergency sirens and alert users of the same. The strings also include a dialog for the feature that states, “Please exercise caution when sirens are reported. Remember that not all sirens require action or indicate a relevant emergency (sirens on TV, for example). Furthermore, our siren detection will occasionally make mistakes.”
+
+<string name=""show_emergency_siren_dialog_message"">Please exercise caution when sirens are reported. Remember that not all sirens require action or indicate a relevant emergency (sirens on TV, for example). Furthermore, our siren detection will occasionally make mistakes.</string> <string name=""show_emergency_siren_title"">Show Emergency Sirens</string> <string name=""smart_segment"">Smart segment</string> <string name=""smart_segment_summary"">Segment transcript based on performance (rather than text length)</string> <string name=""speaker_id_title"">Enable speaker ID</string>
+
+The Smart Segment feature will divide transcripts based on performance, instead of text length, and the Speaker ID feature will help the app identify and label the speakers in an ongoing conversation. Our Editor-in-Chief, Mishaal Rahman, also took a look at the Live Transcribe GitHub repository which contains the Android client libraries used to communicate with Google’s Cloud Speech API and found that the Automatic Speech Recognition (ASR) module has support for built-in speaker identification. However, the speaker ID implementation isn’t provided and it doesn’t look like the app currently has it, but that could change in the near future.
+
+
+Thanks to PNF Software for providing us a license to use JEB Decompiler, a professional-grade reverse engineering tool for Android applications.
+
+
+
+"

@@ -1,0 +1,152 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Vodafone dimostra che il 5G rende auto e mobilità più intelligenti e sicure. Ora serve un ecosistema unico e condiviso
+Il 5g, anche nelle sue applicazioni più complesse, diventa realtà: sulla pista di Arese, Vodafone ha dimostrato dei prototipi pienamente funzionanti di auto connesse in 5G che interagiscono tra loro, regolano il traffico e permettono di viaggiare più sicuri. Ma saranno solo studi sterili se non nascerà velocemente un ecosistema condiviso.
+07 Nov 2019, 12:11 by Gianfranco Giardina
+Finalmente il 5G esce dalle presentazioni Powerpoint delle telco e scende in pista. Nel vero senso della parola, come è successo cui circuito ACI di Arese, nei pressi di Milano, per mano di Vodafone, che ha dimostrato i suoi quattro progetti pilota in ambito ""smart mobility"" basati sul 5G. Una vera e propria dimostrazione, con sistemi reali e funzionanti e non solo prototipi o simulatori, che ha funzionato perfettamente malgrado il meteo decisamente inclemente che poteva far pensare a potenziali problemi di qualità del segnale radio.
+Il 5G in auto: a cosa serve?
+Per fortuna sulla pista di Arese ci si è mossi lontani dai luoghi comuni: niente 5G proposto per scaricare più velocemente un film o per trasmettere contenuti 4K in streaming. Vodafone ha parlato di mobilità più intelligente, maggiore sicurezza e comfort di guida, consumi da ridurre e scambio di informazioni tra veicoli.
+
+
+
+La bassissima latenza del 5G, la sua maggiore affidabilità e, perché no, anche la larghezza di banda, sono ingredienti ghiotti per cucinare una serie di servizi di bordo fino a ieri solo ipotizzati. Infatti, con la latenza che si attesta a 5-7 millisecondi, si lavora  sotto la soglia dei 10 millisecondi, considerata la finestra entro la quale il nostro sistema percettivo non rileva ritardi: ovverosia, con latenze di questo tipo, come accade nei videogame online, un umano vive l'interazione come pienamente in tempo reale. E il tempo reale è il fattore necessario quando si chiede, per esempio, a un autoveicolo di correggere automaticamente i parametri di guida (come frenare autonomamente) sulla base delle informazioni che arrivano da altri veicoli e dalla strada. Se poi, a questo ""tempo reale"", volessimo aggiungere anche la componente video, utilissima per aumentare sensibilmente le informazioni e l'ausilio all'autista, serve anche banda a sufficienza e la capacità della rete di reggere un grande traffico.
+Il video delle demo dalla pista di Arese
+
+
+
+
+L'Edge Computing a bordo pista
+Per i test che abbiamo potuto sperimentare, Vodafone ha portato un nodo di edge computing direttamente alla pista di Lainate, in modo tale che il potere computazionale chiesto dagli algoritmi alla rete fosse certamente più vicino, senza alcun rischio di ritardi: ""Ma se avessimo usato il nostro MEC nella sede di Milano, in realtà, non sarebbe cambiato nulla - ci ha confessato un manager di Vodafone"". Ma non c'è dubbio che la sicurezza, doppia e tripla, è stata alla base delle demo che Vodafone ha realizzato in pista con partner come FCA e Pirelli.
+
+
+
+E non poteva essere altrimenti, visto che le tante autorità presenti (tra gli altri, il rettore del Politecnico di Milano Ferruccio Resta, l'on. Alessandro Morelli, presidente della Commissione trasporti e tlc, l'assessore del Comune di Milano Granelli e quello della regione Lombardia Sala) sono state lanciate su un'auto verso un impatto con un altro veicolo in un incrocio cieco. Il 5G e i sistemi computazionali così connessi hanno scatenato una frenata automatica che in tutti i casi ha bloccato il veicolo ed evitato l'impatto.
+L'incrocio cieco: la rete controlla il traffico, avvisa e, se serve, frena
+La prima demo, alla quale siamo sopravvissuti senza problemi, si svolgeva proprio in questo modo: due veicoli connessi in 5G al nodo di edge computing, condividendo posizione e velocità, sono state lanciate in un incrocio cieco, ovviamente sincronizzandone (manualmente) l'arrivo e quindi il potenziale impatto.
+
+
+
+Il veicolo in arrivo dalla destra è stato segnalato all'auto che avrebbe dovuto dare la precedenza, prima solo sul display; poi con un segnale acustico. Infine, in tempo utile per una frenata sicura, il veicolo riceve l'ordine dalla rete di fermarsi qualche metro prima di un altrimenti inevitabile impatto.
+
+
+
+Il sorpasso assistito, gli occhi oltre la coda
+In un'altra esperienza, è stata dimostrata la possibilità di utilizzare la camera montata su un veicolo che precede per avere una completa visibilità sulla strada: noi eravamo su una macchina la cui visuale era parzialmente ostruita da un furgone.
+
+
+
+La rete intelligente ha quindi ridirezionato sul nostro display le immagini della camera montata sull'auto davanti al furgone, permettendoci di capire che non c'erano veicoli in arrivo nel senso opposto e consentendo quindi un sorpasso sicuro.
+
+
+
+Il ""trenino"" di auto è meglio della fila
+Altra dimostrazione interessante è stata quella, già impiegata per esempio dei convogli di molti TIR accodati, di creare un vero e proprio ""trenino"" coordinato di auto che, invece di fare la classica fila ad elastico (dovuta ai diversi tempi di reazione e stili di guida), porta tutti i veicoli a procedere alla medesima velocità e con distanze di sicurezza coordinate ad essa.
+
+
+
+In questo modo, come è facilmente dimostrabile, aumenta di molto la capacità veicolare del tratto di strada, diminuiscono i tempi di percorrenza e i consumi, e cresce la sicurezza. Un coordinamento dinamico tra tanti mezzi richiede ovviamente una latenza minima che il 5G può garantire.
+Gli pneumatici connessi informano gli altri veicoli sullo stato della strada
+Vodafone ha poi dimostrato l'integrazione dei propri pneumatici sensorizzati (per ora prototipi ma nel 2020 dovrebbero arriveranno su un'auto di produzione) che, oltre a dare informazioni in tempo reale all'autista sul grip sul terreno, le condividono anche con la rete e quindi gli altri veicoli connessi.
+
+
+
+In questo modo chi percorre una strada può sapere con anticipo e con precisione dove ci saranno potenziali problemi di tenuta di strada. L'esperienza fatta in pista ha riguardato l'aquaplaning: non appena il veicolo test passava sul tratto di pista inondato, gli altri veicoli sulla pista hanno ricevuto una notifica. 
+
+
+
+Tutto bellissimo e funzionante. Ma ora si lavori all'ecosistema
+Vodafone ha fatto la sua parte, dimostrare che quanto ipotizzato e ipotizzabile come ausilio del 5G alla mobilità smart si può fare. E tanto c'è ancora da dimostrare e di dimostrabile, se oltre all'interazione veichle-to-veichle si introduce anche la comunicazione tra veicolo e infrastruttura.
+
+
+
+Per esempio, un veicolo connesso può riceve informazioni non solo dagli altri veicoli ma anche dalla ""città smart"", che coopera, in termini di sensoristica, videocamere, semafori intelligenti, illuminazione pubblica, con il traffico veicolare. Anzi, la comunicazione tra veicolo e infrastruttura è anche più semplice. Ma sia l'una che l'altra richiedono innanzitutto uno standard, piattaforme condivise ed ecosisitemi capaci di interlavorare tra loro.
+Se per esempio, un gruppo di produttori automobilistici (il pensiero va spontaneamente ai tedeschi) dovessero adottare uno standard di comunicazione non perfettamente compatibile con quello di altri produttori, tutto lo sforzo sarebbe vanificato. Allo stesso modo, se la diffusione dei veicoli connessi e cooperativi fosse troppo lenta, si tarderebbero a vedere i risultati. Insomma, ad Arese è iniziata una rivoluzione della mobilità che non è destinata a realizzarsi in maniera compiuta se non tra almeno un decennio. O forse, se la politica sarà sorda, anche mai. E la presenza di alcuni politici in pista a sperimentare le novità fa sperare che qualcosa possa muoversi nella giusta direzione.
+
+
+",it,"
+
+
+
+
+
+
+
+
+
+
+
+Vodafone shows that 5G makes cars and mobility smarter and safer. Now we need a unique and shared ecosystem
+The 5g, even in its most complex applications, becomes a reality: on the Arese track, Vodafone demonstrated fully functional prototypes of connected cars in 5G that interact with each other, regulate traffic and allow safer travel. But they will only be sterile studies if a shared ecosystem is not born quickly.
+07 Nov 2019, 12:11 by Gianfranco Giardina
+Finally the 5G comes out of the Telco Powerpoint presentations and goes on the track. In the true sense of the word, as happened with the ACI circuit in Arese, near Milan, at the hands of Vodafone, which demonstrated its four ""smart mobility"" pilot projects based on 5G. A real demonstration, with real and working systems and not just prototypes or simulators, which worked perfectly despite the decidedly inclement weather that could suggest potential problems with the quality of the radio signal.
+The 5G in the car: what's the use?
+Fortunately, on the Arese track, we moved away from the clichés: no 5G proposed to download a film faster or to stream 4K content. Vodafone spoke of smarter mobility, greater safety and driving comfort, reduced fuel consumption and information exchange between vehicles.
+
+
+
+The very low latency of the 5G, its greater reliability and, why not, even the bandwidth, are tempting ingredients for cooking a series of on-board services until recently only hypothesized. In fact, with the latency of 5-7 milliseconds, one works below the threshold of 10 milliseconds, considering the window within which our perceptive system does not detect delays: that is, with latencies of this type, as happens in online video games , a human lives the interaction as fully in real time. And real time is the necessary factor when, for example, a vehicle is asked to automatically correct the driving parameters (how to brake autonomously) based on the information coming from other vehicles and from the road. And if we wanted to add the video component to this ""real time"", very useful to significantly increase information and help the driver, we also need enough bandwidth and the capacity of the network to withstand heavy traffic.
+The video of the demos from the Arese track
+
+
+
+
+Edge Computing on the track
+For the tests we have been able to experiment, Vodafone has brought an edge computing node directly to the Lainate track, so that the computational power demanded by the algorithms to the network was certainly closer, without any risk of delays: ""But if we had used our MEC in Milan, in reality, would not have changed anything - a Vodafone manager has confessed to us "". But there is no doubt that double and triple security was the basis of the demos that Vodafone created on the track with partners like FCA and Pirelli.
+
+
+
+And it could not be otherwise, given that the many authorities present (among others the rector of the Polytechnic University of Milan Ferruccio Resta, the Hon. Alessandro Morelli, president of the Transport and TLC commission, the councilor of the Municipality of Milan Granelli and that of the Lombardy region Sala) were launched on a car towards an impact with another vehicle in a blind intersection. The 5G and the computational systems connected in this way triggered an automatic braking that in all cases blocked the vehicle and avoided the impact.
+The blind crossing: the network controls the traffic, warns and, if needed, brakes
+The first demo, which we survived without problems, took place just like this: two vehicles connected in 5G to the edge computing node, sharing position and speed, were launched in a blind intersection, obviously synchronizing (manually) the arrival and therefore the potential impact.
+
+
+
+The vehicle coming from the right was signaled to the car that it should have given priority, first only on the display; then with an acoustic signal. Finally, in time for safe braking, the vehicle receives the order from the network to stop a few meters before an otherwise inevitable impact.
+
+
+
+Assisted overtaking, eyes over the tail
+In another experience, the possibility of using the camera mounted on a vehicle in front to be fully visible on the road was demonstrated: we were on a car whose view was partially obstructed by a van.
+
+
+
+The intelligent network then redirected the images of the car-mounted room in front of the van to our display, allowing us to understand that there were no vehicles coming in the opposite direction and thus allowing a safe overtaking.
+
+
+
+The ""train"" of cars is better than the line
+Another interesting demonstration was the one, already used for example of convoys of many queued-top TIRs, to create a real coordinated ""train"" of cars that, instead of making the classic elastic row (due to the different reaction times and styles of driving), leads all vehicles to proceed at the same speed and with coordinated safety distances to it.
+
+
+
+In this way, as can be easily demonstrated, the vehicular capacity of the road section is greatly increased, travel times and consumption are reduced, and safety is increased. Dynamic coordination between many media obviously requires a minimum latency that 5G can guarantee.
+Connected tires inform other vehicles about the state of the road
+Vodafone then demonstrated the integration of its sensorized tires (for now prototypes but in 2020 should arrive on a production car) which, in addition to giving real-time information to the driver on the grip on the ground, also share them with the network and therefore the other connected vehicles.
+
+
+
+In this way, those who travel along a road can know in advance and precisely where there will be potential problems with road holding. The experience on the track involved aquaplaning: as soon as the test vehicle passed on the flooded stretch of track, the other vehicles on the track received a notification.
+
+
+
+All beautiful and working. But now work on the ecosystem
+Vodafone has done its part, demonstrating that what is hypothesized and conceivable as an aid to 5G for smart mobility can be done. And there is still so much to prove and prove, if in addition to the veichle-to-veichle interaction, the communication between vehicle and infrastructure is also introduced.
+
+
+
+For example, a connected vehicle can receive information not only from other vehicles but also from the ""smart city"", which cooperates, in terms of sensors, video cameras, intelligent traffic lights, public lighting, with vehicle traffic. Indeed, the communication between vehicle and infrastructure is also simpler. But both one and the other require first of all a standard, shared platforms and ecosis capable of working together.
+If, for example, a group of automotive manufacturers (the thought goes spontaneously to the Germans) were to adopt a communication standard not perfectly compatible with that of other manufacturers, all the effort would be frustrated. Similarly, if the spread of connected and cooperative vehicles were too slow, they would delay in seeing the results. In other words, a mobility revolution has begun in Arese that is not destined to be accomplished in a complete way unless in at least a decade. Or maybe, if the policy is deaf, even never. And the presence of some politicians on the track to experiment with the innovations gives us hope that something can move in the right direction.
+
+
+"

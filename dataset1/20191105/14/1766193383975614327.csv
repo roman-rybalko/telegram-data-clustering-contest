@@ -1,0 +1,84 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Microsofts ""intelligente Datenbank"": Microsoft SQL Server 2019 ist erschienen
+Die neue Ausgabe des SQL Servers bewirbt Hersteller Microsoft als intelligente Datenbank.
+05 Nov 2019, 14:26 by Holger Schwichtenberg
+Microsoft hat im Rahmen der Ignite-Konferenz die 2019er Version seines Datenbankmanagementservers veröffentlicht. Hinter Marketingbegriffen wie ""Big Data Cluster"" und ""Intelligent Database"" verbergen sich eine Reihe von konkreten Verbesserungen im Bereich Clustering und Performance. Neu ist auch, dass der SQL Server nun Java intern ausführen kann.
+Microsoft vermarktet den neuen Server 2019 (interne Versionsnummer 15.0) direkt an mehreren Stellen mit dem Schlagwort ""intelligent"". Unter dem Oberbegriff ""Intelligent Database"" findet man in dem Dokument What's new in SQL Server 2019? die Unterrubriken Intelligent Query Processing, In-Memory-Database, Intelligent Performance und Monitoring.
+Leistungsverbesserungen
+Als Intelligent Query Processing (IQP) bezeichnet Microsoft eine Reihe von Optimierungen bei der Verarbeitung von Abfragen So gibt es nun eine Funktion APPROX_COUNT_DISTINCT(expression), die deutlich schneller ist als der Einsatz von COUNT(DISTINCT …), aber nicht ganz exakte Ergebnisse liefert, was bei der Verarbeitung großer Datenmengen in einigen Szenarien ein Kompromiss sein kann.Als ""Intelligent Performance"" bezeichnet das Unternehmen eine Reihe von darüber hinausgehenden Verbesserungen der Ausführungsgeschwindigkeit von Datenbankoperationen. Einige davon sind interner Art und ohne Zutun des Nutzers verfügbar. Das gilt zum Beispiel für die Erhöhung der Log Writer Workers. Andere Features muss der Datenbankadministrator oder Entwickler explizit aktivieren. So kann er nun beim Anlegen eines Index den Zusatz OPTIMIZE_FOR_SEQUENTIAL_KEY, angeben, was das Einfügen von Datensätzen in einen Index mit sequentiellen Schlüsselwerten beschleunigt.Im Bereich der In-Memory-Database, deren erste Features der Hersteller in SQL Server 2014 eingeführt hatte, bietet die 2019er Version nun auch an, die Metadaten der TempDB im RAM zu halten.Mit einem Database Snapshot kann eine Datenbankadministrator eine nicht beschreibbare Momentaufnahme der Datenbank erzeugen, etwa für eine Auswertung oder einen Bericht. Der Snapshot verbraucht dabei zu Beginn keinen Speicher. Erst wenn die Originaldatenbank sich verändert, muss der Snapshot die Abweichungen vom Original ablegen, um den Nutzer stets den Datenbestand zum Zeitpunkt seiner Erstellung zu liefern.
+Monitoring der Ausführungspläne
+Im Bereich des Monitorings bietet der SQL Server eine neue Ansicht der letzten Abfrage-Ausführungspläne (Last Query Plan Statistics). Diese Statistik muss der Datenbankadministrator mit der Konfigurationseinstellung LAST_QUERY_PLAN_STATS auf Datenbankebene aktivieren. Der Aufruf der Informationen kann dann mit der dynamic management function sys.dm_exec_query_plan_stats erfolgen. Die bereits in SQL Server 2014 eingeführte und in SQL Server 2016 verbesserte Lightweight Query Profiling Infrastructure (LWP) hat Microsoft verbessert. Sie ist nun im Standard für die Live QueryStatistics im SQL Server Management Studio aktiviert. Das Feature lässt sich jedoch über die Datenbank-Konfigurationseinstellung LIGHTWEIGHT_QUERY_PROFILING deaktivieren.
+Big Data Cluster
+Als SQL Server 2019 Big Data Cluster (BDC) bezeichnet Microsoft einen Linux-basierten Container-Verbund aus SQL Server und Apache Spark in Kubernetes oder Azure Kubernetes Services (AKS), jeweils ab Version 1.13. Die Speicherung erfolgt im Hadoop Distributed File System (HDFS) auf Basis verschiedener Storage-Provider (siehe Abbildung 1).
+
+
+SQL Server Big Data Cluster(Bild: Microsoft)
+
+Das in SQL Server 2016 eingeführt Feature PolyBase für den Zugriff auf externe Hadoop- und Azure Blog Storage-Datenquellen via T-SQL erweitert Microsoft in SQL Server 2019 um den Zugriff auf Oracle, MongoDB, Terradata und andere SQL Server-Instanzen. Auch einen Connector für ODBC gibt es nun. Hier spricht Microsoft im Marketing nun von ""Data Virtualization"".Bei den Zeichensätzen unterstützt der SQL Server 2018 nun auch UTF-8 bei der Sortierung von Zeichenketten sowie dem Im- und Export von Datensätzen. Bei der Match-Operation in einer Graph-Datenbank ist nun die Funktion SHORTEST_PATH erlaubt. Zudem ermöglicht eine Graph-Datenbank die bisher nur bei relationalen Datenbanken erlaubte Partitionierung von Tabellen und Index.
+Java im SQL Server
+Mit SQL Server 2019 bietet Microsoft erstmal an, Java-Code innerhalb des DBMS zu nutzen. Innerhalb eines SQL-Skripts kann der Nutzer die Stored Procedure ""sp_execute_external_script"" unter Angabe eines Java-Klassennamens aufrufen. Diese Java-Klasse muss eine der beiden abstrakten Klassen AbstractSqlServerExtensionExecutor oder AbstractSqlServerExtensionDataset aus dem Microsoft Extensibility SDK for Java for SQL Server implementieren. Das SDK ist als Open Source auf Github verfügbar.Bisher unterstütze der SQL Server in seinem Inneren nur Transact-SQL (T-SQL) und .NET-Klassen mit C# oder Visual Basic .NET. Zukünftig ist die Integration weiterer Programmiersprachen möglich auf Basis der SQL Server Language Extensions.
+Sichere Enklaven für verschlüsselte Daten
+Seit SQL Server 2016 bietet Microsoft mit Always Encrypted die Verschlüsselung von Daten vom Client bis zum DBMS an, sodass selbst Datenbankadministratoren die Daten nicht einsehen können. Dementsprechend war die Datenverarbeitung der verschlüsselten Spalten auf Gleichheitsoperationen beschränkt. In SQL Server 2019 ergänzt Microsoft mit Secure Enclaves die Möglichkeit, die verschlüsselten Daten in eine abgetrennten Blackbox auf dem Datenbankserver im Klartext zu verarbeiten (siehe Abbildung 2). Es gibt aber keine Möglichkeit, Daten oder Code innerhalb einer solchen Enklave von außen einzusehen, auch nicht mit DB-Administratorrechten und einem Debugger.
+
+
+Secure Enclaves als Erweiterung für Always Encrypted in Microsoft SQL Server 2019(Bild: Microsoft)
+
+Schnellere Wiederherstellung
+Die Datenbankwiederherstellung beschleunigt Microsoft durch Accelerated Database Recovery (ADR). Durch die Aktivierung dieses Features auf Datenbankebene (ACCELERATED_DATABASE_RECOVERY) soll auch ein Rollback langlaufender Transaktionen schneller werden.
+In einem Blogeintrag betont Microsoft, dass die neuen Features von SQL Server 2019 ohne eine Erhöhung der Lizenzkosten verfügbar sind. Kunden mit einem Software Assurance-Vertrag erhalten zusätzlich kostenfrei Disaster Recovery-Replikate in der Microsoft Azure-Cloud. (Holger Schwichtenberg) / (akl)
+
+
+",de,"
+
+
+
+
+
+
+
+
+
+
+
+Microsoft's ""intelligent database"": Microsoft SQL Server 2019 has been released
+The new edition of SQL Server promotes manufacturer Microsoft as an intelligent database.
+05 Nov 2019, 14:26 by Holger Schwichtenberg
+Microsoft has released the 2019 version of its database management server as part of the Ignite conference. Marketing terms such as ""Big Data Cluster"" and ""Intelligent Database"" hide a number of specific improvements in the area of clustering and performance. Also new is that SQL Server can now execute Java internally.
+Microsoft markets the new server 2019 (internal version number 15.0) directly in several places with the keyword ""intelligent"". Under the generic term ""Intelligent Database"" can be found in the document What's new in SQL Server 2019? the subheadings Intelligent Query Processing, In-Memory-Database, Intelligent Performance and Monitoring.
+performance improvements
+Microsoft calls a number of optimizations in the processing of queries as Intelligent Query Processing (IQP). So there is an APPROX_COUNT_DISTINCT (expression) function, which is much faster than the use of COUNT (DISTINCT ...), but does not yield exact results. which can be a compromise when processing large amounts of data in some scenarios. As an ""intelligent performance"", the company refers to a number of additional improvements in the speed of execution of database operations. Some of them are available internal and without user intervention. This applies, for example, to the increase in Log Writer Workers. Other features must be explicitly enabled by the database administrator or developer. Thus, when creating an index, he can now specify the addition OPTIMIZE_FOR_SEQUENTIAL_KEY, which speeds up the insertion of records into an index with sequential key values. In the area of the in-memory database, the first features of which the manufacturer introduced in SQL Server 2014, the In addition, the 2019 release will now hold the TempDB metadata in RAM. A database snapshot allows a database administrator to create an unwritable snapshot of the database, such as for an evaluation or report. The snapshot consumes no memory at the beginning. Only when the original database changes, the snapshot must discard the deviations from the original, to always provide the user with the data at the time of its creation.
+Monitoring of the execution plans
+In the monitoring area, SQL Server offers a new view of the last query execution plans (Last Query Plan Statistics). The database administrator must enable this statistic with the LAST_QUERY_PLAN_STATS configuration setting at the database level. The information can then be called with the dynamic management function sys.dm_exec_query_plan_stats. The Lightweight Query Profiling Infrastructure (LWP), which was already introduced in SQL Server 2014 and improved in SQL Server 2016, has improved Microsoft. It is now enabled by default for Live QueryStatistics in SQL Server Management Studio. However, the feature can be disabled through the database configuration setting LIGHTWEIGHT_QUERY_PROFILING.
+Big Data Cluster
+As a SQL Server 2019 Big Data Cluster (BDC), Microsoft identifies a Linux-based container cluster of SQL Server and Apache Spark in Kubernetes or Azure Kubernetes Services (AKS), both as of version 1.13. Storage takes place in the Hadoop Distributed File System (HDFS) based on various storage providers (see Figure 1).
+
+
+SQL Server Big Data Cluster (Image: Microsoft)
+
+SQL Server 2016's feature PolyBase for accessing external Hadoop and Azure Blog Storage data sources via T-SQL extends Microsoft SQL Server 2019 access to Oracle, MongoDB, Terradata, and other SQL Server instances. There is also a connector for ODBC now. This is where Microsoft is now talking about ""Data Virtualization"" in terms of marketing. With the character sets, SQL Server 2018 now also supports UTF-8 in the sorting of character strings as well as the import and export of data records. In the case of the match operation in a graph database, the function SHORTEST_PATH is now allowed. In addition, a graph database allows the partitioning of tables and index, which was previously only allowed for relational databases.
+Java in SQL Server
+With SQL Server 2019 Microsoft offers first to use Java code within the DBMS. Within an SQL script, the user can call the stored procedure ""sp_execute_external_script"" by specifying a Java class name. This Java class must implement one of the two abstract classes AbstractSqlServerExtensionExecutor or AbstractSqlServerExtensionDataset from the Microsoft Extensibility SDK for Java for SQL Server. The SDK is available as an open source on Github. Until now, SQL Server supports only Transact-SQL (T-SQL) and .NET classes with C # or Visual Basic .NET. In the future, the integration of additional programming languages based on the SQL Server Language Extensions is possible.
+Secure enclaves for encrypted data
+Since SQL Server 2016, Microsoft has been using Always Encrypted to encrypt data from the client to the DBMS, so even database administrators can not see the data. Accordingly, the data processing of the encrypted columns was limited to equality operations. In SQL Server 2019, Microsoft adds Secure Enclaves, which provides the ability to process the encrypted data in plain text on a black box on the database server (see Figure 2). However, there is no way to view data or code from outside within such an enclave, even with DB Administrator privileges and a debugger.
+
+
+Secure Enclaves as extension for Always Encrypted in Microsoft SQL Server 2019 (Image: Microsoft)
+
+Faster recovery
+Database recovery accelerates Microsoft through Accelerated Database Recovery (ADR). Enabling this feature at the database level (ACCELERATED_DATABASE_RECOVERY) should also make rolling back long-running transactions faster.
+In a blog post, Microsoft points out that the new features of SQL Server 2019 are available without an increase in license costs. Customers with a Software Assurance contract also receive free disaster recovery replicas in the Microsoft Azure cloud. (Holger Schwichtenberg) / (akl)
+
+
+"

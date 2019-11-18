@@ -1,0 +1,66 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+
+Chrome 79 bêta intronise l’API WebXR pour les développements AR/VR
+
+
+05 Nov 2019, 10:06
+
+La nouvelle version du navigateur sera moins riche que les quelques précédentes, particulièrement fournies pour les développeurs. Elle sonnera quand même l’arrivée de l’API WebXR, prenant la relève de l’ancienne WebVR.
+L’interface va beaucoup plus loin que la précédente. Elle fournit un lot commun de fonctions pour les réalités augmentée et virtuelle, supporte un nombre accru de types d’appareils ou encore autorise le mirroring vers d’autres écrans.
+Dans l’absolu, WebXR était déjà disponible dans Chrome depuis le printemps dernier, mais uniquement à travers un flag activer. Il est désormais activé par défaut. Dans sa mouture Android, WebXR sera compatible avec Google Daydream et Cardboard.
+On note quelques autres apports dans cette version. Par exemple, les web apps pourront scanner le Bluetooth à la recherche de périphériques LE (Low Energy), si elles en ont reçu l’autorisation de l’utilisateur. Côté développeurs, on notera la possibilité de pointer l’attention (focus) sur n’importe quel élément HTML d’une page à son chargement. 
+
+
+Télécharger Chrome bêta pour ordinateurs
+
+
+Télécharger Chrome bêta pour Android
+
+
+
+
+",fr,"
+
+
+
+
+
+
+
+
+
+
+
+
+Chrome 79 beta introduces the WebXR API for AR / VR developments
+
+
+05 Nov 2019, 10:06
+
+The new version of the browser will be less rich than the previous few, especially provided for developers. It will still ring the arrival of the WebXR API, taking over from the old WebVR.
+The interface goes much further than the previous one. It provides a common set of functions for augmented and virtual realities, supports an increased number of device types or allows mirroring to other screens.
+In absolute terms, WebXR was already available in Chrome since last spring, but only through an enable flag. It is now enabled by default. In its Android version, WebXR will be compatible with Google Daydream and Cardboard.
+There are some other contributions in this version. For example, web apps will be able to scan Bluetooth for LE (Low Energy) devices, if they have received permission from the user. On the developer side, you'll notice the possibility to focus on any HTML element of a page when loading it.
+
+
+Download Chrome Beta for Computers
+
+
+Download Chrome beta for Android
+
+
+
+
+"

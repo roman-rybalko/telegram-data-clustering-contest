@@ -1,0 +1,98 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Як штучний інтелект і чат-боти змінять наші подорожі
+У сучасному світі планувати подорожі можна за декілька кліків. За придбання квитків та бронювання житла відповідальними є тревел-агрегатори і чат-боти. Проте й ці технології змінюються настільки стрімко, що за ними складно встежити.
+
+01 Nov 2019, 18:00
+
+
+
+
+Марина Шумаєва
+Співзасновниця сервісу з підбору морських подорожей CruiseBe
+Під час тревел-конференцій неодноразово порушуються різні теми майбутнього сфери подорожей, при цьому часто-густо виходить, що ми класифікуємо тренди не більше ніж п'яти різних напрямків. Раніше ми говорили про віртуальну і доповнену реальності, а також про силу пошукачів і агрегаторів. Настав час проаналізувати майбутнє штучного інтелекту в сфері подорожей.
+Стисло тему штучного інтелекту і чат-ботів я вже викладала в цьому матеріалі. Не дивно, що тревел-індустрія стала однією з піонерів розвитку цього напряму. Умовно тему штучного інтелекту в сфері подорожей можна розділити на два різних сегменти: видимий для туриста і прихований.
+Що бачать користувачі?
+Чат-боти і віртуальні тревел-агенти належать якраз до видимого сегмента. Хоча, відверто кажучи, це визначення вже теж є досить умовним. Віртуальні асистенти щільно увійшли в наше життя. Нікого не дивує питання телефону про погоду на завтра, хтось просить смартфон зателефонувати до своєї доньки чи друга, дехто просить асистента увімкнути улюбленого виконавця. Але це вже фактично в минулому.
+Зараз ми перебуваємо на етапі звикання і практичного використання даних технологій. Дедалі більше людей починають користуватися різними інтерпретаціями «розумних будинків» у вигляді Google Home, Amazon Alexa або подібних до них. Це є вкрай популярним у США і Канаді, згодом цей тренд заполонить і Європу.
+І якщо такий помічник поки сприймається як розвага, і основні питання до нього — це питання про погоду, курс валют, програму передач або прохання вимкнути світло в спальні і закрити жалюзі, то згодом через нього будуть замовляти Uber або суші на вечерю.
+А далі подібні асистенти, чат-боти компаній, онлайн-агрегатори стануть віртуальними тревел-агентами, розміщеними у людини в телефоні або будинку. А отже, просто голосом можна буде спланувати собі подорож від А до Я. Програма буде здатна забронювати переліт, таксі до аеропорту, машину в оренду, готель, круїз, екскурсії, а втім, все що завгодно. Вона повністю замінить звичних нам тревел-агентів і при цьому дані послуги не братимуть з нас плату за їх використання, це буде вирішуватися на рівні B2B (бізнес-бізнесу).
+
+
+Фото: chance4traveller.com
+
+Якщо не заглиблюватися настільки в майбутнє, то можна впевнено стверджувати, що найближчі кілька років чат-боти, які спілкуються за допомогою діалогів в месенджерах, стануть такими, що абсолютно не відрізнятимуться від людини. У нашому стартапі CruiseBe ми проводили експеримент зі спілкування нашого бота з реальними людьми — дивно, але траплялися випадки, коли після 5 хвилин спілкування людина не усвідомлювала, що вона спілкується з роботом. При цьому ми використовували досить простий штучний інтелект з елементами нейролінгвістичного програмування.
+Наведена ситуація, до речі, цілком може бути застосована до багатьох туристичних лідерів. Незважаючи на те що практично всі вказують те, що турист спілкується з ботом, штучний інтелект настільки товариський, що неможливо відразу зрозуміти, що це робот. Сьогодні стандартні боти з розпізнаванням мови можуть підтримати понад 40 тис. різних тем!
+Що використовують компанії?
+Найцікавіше те, що все вищевикладене є лишень вершиною айсберга! Основна робота зі штучним інтелектом припадає на внутрішні розробки компаній, і пересічний турист навіть не помічає, що з ним «попрацювала» спеціальна програма.
+Уже зараз чимало компаній використовують ці методики для поліпшення досвіду туриста. Причому ця система взаємовигідна — клієнт отримує кращий досвід і він стає лояльним до глобального бренду. Будемо відвертими, адже лояльних користувачів booking важко перевести на airbnb іліexpedia і навпаки.
+Основою цих методик є так звані «детерміновані алгоритми» — процеси, які можуть передбачити подальші бажання мандрівника. Спочатку вони базувалися на банальних перевагах конкретної людини. Відтак було підключено машинне навчання, яке уніфікувало і об'єднало певні критерії для цілої категорії мандрівників.
+Отже, зараз сайт бронювання готелів вже заздалегідь знає ваші бажання і, базуючись на аналітиці та машинному навчанні, він зможе прогнозувати ваші наступні переваги. За фактом клієнт, сам не знаючи того, стає жертвою аналітичної обробки штучним інтелектом, за якої йому видаються кращі варіанти, які людина могла б самотужки не знайти. Хороший момент — життя стає простіше! Негативний момент — ми дедалі більше стаємо залежними від програм. Але в даному випадку ми навіть не можемо бути проти, бо ми не знаємо, що вони були використані. Або в майбутньому, що ми були використані ними.
+Штучний інтелект зможе пропонувати найзручніші варіанти
+Ця концепція цікава тим, що мандрівник стає байдужий до лідерів ринку або до конкретних брендів. Певні програми будуть просто генерувати найоптимальніші маршрути, при цьому пропонуючи конкретні готелі, машини і авіалінії. Наразі лідери ринку переконують нас у тому, що дані системи абсолютно автономні і незалежні, тобто програма не може лобіювати інтереси певного бренда. На перше місце виходять ціни, зручність, незалежні відгуки і рейтинги. І якщо бренди не зможуть на це впливати, то штучний інтелект зможе пропонувати найзручніші варіанти. Вірити чесності програм чи ні — час покаже.
+Сучасна «революція» штучного інтелекту приводить нас до одного дивовижного факту, за якого у виграші лишаються практично всі: сайти агрегатори і провайдери штучного інтелекту; готелі / тревел-агенти / сервіси з найкращим рейтингом і найбільш прийнятними показниками для клієнта, які вибирає безпристрасний ІІ; туристи, які покладаються на ІІ і, швидше за все, отримують максимально комфортний результат за критерієм ціна-якість-звички.
+Тож у найближчі кілька років, при використанні штучного інтелекту виграватимуть і якісні провайдери послуг, і благонадійні туристи. Можливо, за 5-10 років ми зустрінемо «тревел-тролів», які намагатимуться порушити алгоритми, але часто-густо штучний інтелект розумніший за такі атаки, адже завдяки машинному навчанню він постійно вдосконалюється. Відповідно, штучний інтелект так чи інакше захопить цю індустрію у найближчому майбутньому. Можна вести суперечку про терміни, проте факт очевидний.
+Окремо варто обговорити вплив соціальних мереж, але про це подискутуємо в наступному матеріалі.
+
+
+
+",uk,"
+
+
+
+
+
+
+
+
+
+
+
+How artificial intelligence and chatbots will change our travels
+In today's world, you can plan your trip in just a few clicks. Travel Aggregators and Chat Bots are responsible for purchasing tickets and booking accommodation. However, these technologies are changing so rapidly that it is difficult to keep track of them.
+
+01 Nov 2019, 17:00
+
+
+
+
+Marina Shumayeva
+Co-founder of CruiseBe marine travel service
+Travel conferences repeatedly address different topics of the future travel industry, and it often turns out that we classify trends in no more than five different destinations. Previously, we talked about virtual reality and augmented reality, as well as the power of search engines and aggregators. It is time to analyze the future of artificial intelligence in the field of travel.
+I have already summarized the topic of artificial intelligence and chatbots in this article. Not surprisingly, the travel industry has become one of the pioneers in the development of this direction. Conditionally, the topic of artificial intelligence in travel can be divided into two different segments: visible to the tourist and hidden.
+What do users see?
+Chatbots and virtual travel agents belong to the visible segment. Although, frankly, this definition is also quite conditional. Virtual assistants have firmly entered our lives. No one is surprised by the question of the phone about the weather tomorrow, someone asks for a smartphone to call their daughter or a friend, some ask the assistant to turn on a favorite artist. But this is actually in the past.
+We are now in the phase of getting used to and using these technologies. More and more people are beginning to use different interpretations of ""smart homes"" in the form of Google Home, Amazon Alexa or the like. This is extremely popular in the US and Canada, and this trend will eventually fill Europe.
+And if such a helper is still perceived as entertainment, and the main questions for him - is the question of the weather, exchange rates, gear or request to turn off the light in the bedroom and shut the blinds, then through it will order Uber or sushi for dinner.
+Further, such assistants, company chatbots, online aggregators will become virtual travel agents hosted by a person in a phone or home. So, by voice, you can plan your trip from A to Z. The program will be able to book your flight, taxi to the airport, car rental, hotel, cruise, excursions, and yet, anything. It will completely replace the usual travel agents, and at the same time these services will not charge us for their use, it will be solved at the level of B2B (business business).
+
+
+Photo by chance4traveller.com
+
+If you do not go so deep into the future, you can confidently say that the next few years, chatbots that communicate through dialogues in messengers, will become absolutely indistinguishable from humans. In our CruiseBe startup, we did an experiment on communicating our bot with real people - surprisingly, there were times when, after 5 minutes of communication, people did not realize that they were communicating with the robot. In doing so, we used a fairly simple artificial intelligence with elements of neurolinguistic programming.
+This situation, by the way, may well be applicable to many tourism leaders. Despite the fact that almost everyone indicates that the tourist communicates with the bot, artificial intelligence is so sociable that it is impossible to immediately understand that it is a robot. Today, standard speech recognition bots can support over 40,000 different themes!
+What do businesses use?
+The most interesting thing is that all of the above is just the tip of the iceberg! The main work with artificial intelligence falls on the internal developments of companies, and the average tourist does not even notice that a special program has worked with him.
+Already, many companies are using these techniques to improve the tourist experience. Moreover, this system is mutually beneficial - the client gets the best experience and he becomes loyal to the global brand. Let's be honest, since it is difficult for loyal booking users to translate to airbnb orexpedia and vice versa.
+The basis of these techniques is the so-called ""deterministic algorithms"" - processes that can predict the traveler's further desires. Initially, they were based on the banal preferences of a particular person. Machine learning was therefore connected, unifying and unifying certain criteria for the whole category of travelers.
+So now the hotel reservation website knows your wishes well in advance and, based on analytics and machine learning, will be able to predict your next benefits. In fact, the client, without knowing it, becomes a victim of analytical processing artificial intelligence, which gives him the best options that a person could not find alone. Good point - life gets easier! The downside is we are becoming more dependent on applications. But in this case, we cannot even object because we do not know that they were used. Or in the future that we used them.
+Artificial intelligence will be able to offer the most convenient options
+This concept is interesting because the traveler becomes indifferent to market leaders or to specific brands. Certain applications will simply generate the most optimal routes while offering specific hotels, cars and airlines. Market leaders are now convincing us that these systems are completely autonomous and independent, that is, the program cannot lobby for a particular brand. In the first place are prices, convenience, independent reviews and ratings. And if brands can't influence it, artificial intelligence will be able to offer the most convenient options. To believe the honesty of programs or not - time will tell.
+The modern ""revolution"" of artificial intelligence brings us to one amazing fact, for which virtually everyone is left in the win: sites aggregators and artificial intelligence providers; hotels / travel agents / services with the highest rating and the most acceptable rates for a client who chooses an impartial AI; tourists who rely on II and are likely to get the most comfortable result on the criterion of price-quality-habits.
+So in the next few years, using artificial intelligence will win both quality service providers and trustworthy tourists. Maybe in 5-10 years we will meet ""travel trolls"" who will try to break the algorithms, but often artificial intelligence is smarter than such attacks, because thanks to machine learning it is constantly being improved. Accordingly, artificial intelligence will somehow capture this industry in the near future. You can debate the timing, but the fact is clear.
+The impact of social networks should be discussed separately, but we will discuss this in the following material.
+
+
+
+"

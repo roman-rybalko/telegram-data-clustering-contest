@@ -1,0 +1,52 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Adobe’s latest experiment tracks your body to create super quick animations
+18 body joints, comin’ right up
+05 Nov 2019, 14:00 by Dami Lee
+Adobe is previewing an R&D feature for After Effects that can automatically track human movements and apply them to animations. The body tracker detects human body movement in source videos to generate track points for 18 joints across the arms, torso, and legs, which can then be transferred to the character that’s being animated. Similar to how Adobe’s Character Animator can track facial expressions, the feature could be a quick way to create 2D body animations.
+The feature can also create a contour mask around the body, which can be used in a variety of ways, like video color grading and highlighting the foreground. It can also be used to easily create an outline around a subject you want to remove with content-aware fill, which automatically fills in a selection based on its surroundings. The feature is also useful for adding motion graphics or other objects to the tracked body — for example, if you want to animate a scene in which the characters play basketball, you can make it so that the basketball stays tracked to the character’s hands.
+
+
+
+The feature makes use of Adobe’s artificial intelligence platform Sensei, which was trained on more than 10,000 images to manually identify the body points, Adobe research scientist Jimei Yang said during a demo. “I can easily link the tracking points to the corresponding controllers on my character, so that the keyframes can be transferred,” Yang said.
+Body tracker isn’t meant to replace the animation process, but rather to reduce manual keyframing and save time. It can be thought of as a powerful supplemental tool, much like third-party plug-ins such as Duik Bassel, a free character animation tool that automatically rigs humanoid structures and creates walk cycles. “We hope [animators will be] happy with the results as an early starting point, to save a lot time on their final product,” Yang says.
+The feature will be shown at Adobe’s annual Max design conference during the Sneaks keynote, where experimental lab features are showcased. Though not all Sneaks features make it to the final product, previous features shown at Sneaks like Content-Aware Fill have, so hopefully the Body Tracker will make it to After Effects soon.
+
+
+",en,"
+
+
+
+
+
+
+
+
+
+
+
+Adobe’s latest experiment tracks your body to create super quick animations
+18 body joints, comin’ right up
+05 Nov 2019, 14:00 by Dami Lee
+Adobe is previewing an R&D feature for After Effects that can automatically track human movements and apply them to animations. The body tracker detects human body movement in source videos to generate track points for 18 joints across the arms, torso, and legs, which can then be transferred to the character that’s being animated. Similar to how Adobe’s Character Animator can track facial expressions, the feature could be a quick way to create 2D body animations.
+The feature can also create a contour mask around the body, which can be used in a variety of ways, like video color grading and highlighting the foreground. It can also be used to easily create an outline around a subject you want to remove with content-aware fill, which automatically fills in a selection based on its surroundings. The feature is also useful for adding motion graphics or other objects to the tracked body — for example, if you want to animate a scene in which the characters play basketball, you can make it so that the basketball stays tracked to the character’s hands.
+
+
+
+The feature makes use of Adobe’s artificial intelligence platform Sensei, which was trained on more than 10,000 images to manually identify the body points, Adobe research scientist Jimei Yang said during a demo. “I can easily link the tracking points to the corresponding controllers on my character, so that the keyframes can be transferred,” Yang said.
+Body tracker isn’t meant to replace the animation process, but rather to reduce manual keyframing and save time. It can be thought of as a powerful supplemental tool, much like third-party plug-ins such as Duik Bassel, a free character animation tool that automatically rigs humanoid structures and creates walk cycles. “We hope [animators will be] happy with the results as an early starting point, to save a lot time on their final product,” Yang says.
+The feature will be shown at Adobe’s annual Max design conference during the Sneaks keynote, where experimental lab features are showcased. Though not all Sneaks features make it to the final product, previous features shown at Sneaks like Content-Aware Fill have, so hopefully the Body Tracker will make it to After Effects soon.
+
+
+"

@@ -1,0 +1,154 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Что такое дата-феминизм?
+Объясняет американская исследовательница и соавтор одноименной книги Кэтрин Д'Игнацио
+07 Nov 2019 by Дмитрий Муравьев
+
+Кэтрин Д'Игнацио и Лорен Кляйн пишут книгу «Дата-феминизм», в которой идеи и практики интерсекционального феминизма используются, чтобы иначе взглянуть на то, как устроена наша работа с данными. С Кэтрин Д'Игнацио поговорил Дмитрий Муравьев.
+
+
+— Первый вопрос, который я хотел бы вам задать, — не о самой книге, а о том, как вы ее пишете. Вы даете всем желающим возможность ее комментировать и предлагать правки.
+
+— Когда мы начинали писать эту книгу, MIT Press как раз запустил новую систему PubPub. Она тогда использовалась в основном для совместного авторства. Мы загрузили первую версию «Дата-феминизма» на PubPub, и любой мог оставить к ней комментарии. Нам казалось, что это очень в нашем духе: ведь один из принципов феминизма — это принятие плюрализма. Чем больше голосов вы подключаете к работе, тем более полное знание о мире вы получаете в итоге.
+
+— И у вас не было сомнений?
+
+— Конечно, были. Во-первых, мы боялись, что нас будут троллить, но этого не случилось (смеется). Во-вторых, мы переживали, будут ли вообще люди вовлекаться. Тут было много неизвестных.
+Но в конце концов я рада, что мы так сделали. Многие просто исправляли наши орфографические ошибки, что было приятно (смеется). Мы получили очень много содержательных комментариев — особенно от тех, кого мы пригласили быть частью этого процесса. Мы написали разным людям: «Мы тут цитируем вашу работу, не могли бы вы прочитать раздел и сказать, что вы думаете?» Наши друзья и коллеги в большинстве своем ответили, и даже несколько незнакомых нам людей великодушно дали классные комментарии. Некоторые вообще нас очень удивили: один человек распечатал всю книгу, оставил заметки от руки, а потом отдал ее мне. Это было очень мило. Нам было приятно работать в таком формате, и, повторяю, этот опыт хорошо отражает принципы, о которых мы пишем и которых сами придерживаемся.
+
+— Я думаю, что для многих само выражение «дата-феминизм» будет, в первую очередь, связано с широко обсуждаемой проблемой неравенства женщин в 
+
+IT
+
+-индустрии. Но вы говорите не только об этом: вы открыто указываете, что дата-феминизм — не только о женщинах и для женщин и не только о гендерных проблемах. Тем более что, когда мы используем такую категорию, как «женщина», не совсем понятно, какой именно опыт имеется в виду.
+
+— Да, когда я представляла свою работу о дата-феминизме, меня часто интерпретировали неверно. Однажды мне задали идиотский вопрос: «О, я думал, вы собираетесь представить такие визуализации данных, которые используют нежные и женственные тона, разве нет?» Нам нужно в этом отношении быть очень осторожными. Один из принципов, которым мы пытаемся следовать, — переосмыслить бинарности и иерархии, но часто мы к ним невольно возвращаемся и оказываемся запертыми внутри подобной логики. Вернуться к ней — это самый простой выход, намного сложнее пытаться поступить иначе.
+С узким пониманием дата-феминизма нам хотелось бы бороться. Мы бы хотели обсуждать это по-другому. Мы говорим не только о проблеме разнообразия в STEM-дисциплинах (имеется в виду понятие «STEM pipeline». — Ред.): исследования показывают, что женщины просто «пропадают» в какой-то момент из образовательных программ по математике и компьютерной науке. Мы производим дискриминирующие технологии в том числе потому, что в технологической индустрии, которая вроде бы должна служить глобальному и мультикультурному миру, доминируют белые мужчины, часть элиты. Мы имеем дело с чрезмерной представленностью мужчин, у которых, в свою очередь, проблемы с тем, чтобы делиться властью с людьми, непохожими на них.
+Но у нас идет речь о неравенстве не только гендерном, но и расовом. Нередко, используя слово «женщина» без каких-то добавлений, мы подразумеваем белую цисгендерную гетеросексуальную женщину. Когда мы говорим об интерсекциональности, мы хотим дать пространство для действия и высказывания и другим женщинам тоже. Благодаря тяжелой работе, проделанной представительницами черного феминизма, уже ясно, что основанное на гендере угнетение часто усугубляется и пересекается с такими категориями, как класс, раса, физические и ментальные способности. И анализ проблем неравенства должен иметь дело с пересекающимися аспектами идентичностей.
+Другая вещь, которую мы пытаемся сделать в книге, — это проявить солидарность с транс- и гендерно неконформными людьми. Потому что если мы говорим, что феминизм — это о женщинах, то что насчет транс-мужчин и транс-женщин? Как нам убедиться, что у нас небинарная концепция гендера, что мы берем в расчет и другие релевантные аспекты идентичности? Если вы проектируете автомобили, то наряду с гендером возраст, физические и ментальные способности могут быть очень важны, потому что это повлияет на то, как салон машины будет устроен и где будет, скажем, располагаться ремень безопасности. Если чьи-то физические и ментальные способности ограниченны, вам необходимо подумать о других опциях. Это я имею в виду, когда говорю, что надо учитывать множество категорий. Идеи феминистского дизайна предполагают, что точкой отсчета для проектирования продукта должен стать опыт наиболее маргинализированных людей. Нужно начинать с них, потому что системы, работающие для них, будут работать и для большинства.
+
+— Вы говорите, что для построения справедливого и равного мира нам нужно «вернуть тела в дискуссии вокруг науки о данных». Можете ли вы пояснить, что тут имеется в виду?
+
+— Есть книга «Невидимые женщины», написанная о том, что мир был спроектирован для мужчин, без принятия в расчет гендера, различий между мужскими и женскими телами. Но другая проблема связана с тем, как женские тела не замечают в вопросах технологического дизайна и сбора данных. Например, можно предположить, что у американских политических институтов или статистических агентств есть данные о том, сколько матерей умирает при родах в Штатах, но их нет. Потребовалось освещение материнской смертности в СМИ, чтобы федеральное правительство начало рассматривать эту проблему.
+Другой пример — фемициды, большая и обсуждаемая сегодня тема в Латинской Америке. Обычно фемицид происходит, когда женщина расстается с партнером или мужем: через какое-то время он возвращается и убивает ее. Опять же даже в таких государствах, как Мексика, где есть законы против фемицидов, это все равно происходит. У государства нет способов узнать о реальном масштабе проблемы. Активистов это злит, поэтому какие-то отдельные гражданские и феминистские группы начали самостоятельно пытаться это решать. Они стали собирать данные о том, что мы называем «отсутствующими телами», — в данном случае это тела, которые в буквальном смысле пропадают, когда люди пренебрежительно относятся к сбору о них данных.
+При этом мы не говорим, что сбор данных всегда имеет эмансипаторный потенциал, но есть ситуации, в которых нам необходимо требовать подсчета. Не всегда обладание конкретными цифрами может помочь что-то решить, но иногда требования подсчета — это тоже механизм протеста. Это способ сказать: «Эй, вы нас игнорируете».
+
+— Вы много говорите о том, что данные — это часто результат властного дисбаланса. Как дата-феминизм меняет наше отношение к тому, что должно стать данными, а что нет?
+
+— Думаю, очень важно быть солидарными с людьми, которые сопротивляются датафикации. Сейчас так много явлений и вещей оценивается количественно и превращается в данные, которые используют не те люди в неверных целях. Некоторые просто абсурдны: существуют системы, чтобы измерять задницу. Вы садитесь на сетку сенсоров, которые и заняты ее замером. Исследователи говорят, что они создают уникальный «отпечаток задницы», который можно в дальнейшем использовать в вашей машине, чтобы она вам ответила: «Привет, я узнаю твою задницу!». Мы заняты всеми этими странными и смехотворными вещами, но мы все еще не знаем про смертность при родах. Об этом — работа Мими Онуохи «Библиотека упущенных датасетов»: художественный проект, который выглядит как тумбочка с карточками. На карточках написаны названия несуществующих наборов данных. И это важные темы: например, те же фемициды в Мексике, транс-люди, которым отказывают в жилье. Когда вы достаете карточку, вы понимаете, что внутри ничего нет. Датафикация чем-то похожа на паровой каток — машину, проезжающую по участку и уничтожающую все на своем пути. Креативная экономика во многом поощряет такое поведение.
+Я думаю, дата-феминизм должен солидаризоваться с теми, кто выступает против повсеместной датафикации, особенно тогда, когда использование данных приводит к дискриминации — например, к отказу в программах социальной помощи. Это сейчас большая проблема в США. Сейчас это объект борьбы для активистов как внутри технологической индустрии, так и вне ее.
+
+— Вы критикуете современные практики визуализации данных за их «минимализм» и говорите о том, как из них исключается эмоциональное воздействие.
+
+— Мы говорим о том, что в визуализации данных нам нужно принять эмоции. У визуализации есть истории ее возникновения, и самая недавняя вышла из науки и технологий, где быть объективным значит быть минималистичным, нейтральным, не использовать декоративные элементы. Существует, например, идея, что ты не должен иллюстрировать информацию, потому что она становится менее объективной, ты входишь таким образом на территорию убеждения. А пытаться убеждать кого-то означает обращаться к его эмоциям, а это считается чем-то плохим, неправильным. Кроме того, в системе ложных бинарностей этот шаг часто ассоциируется с женщинами: разум против эмоций, мужчины против женщин. Причем это не нейтральные оппозиции, а иерархии, в которых одна вещь заведомо лучше другой.
+Мы предлагаем переоценку эмоций в визуализации данных. Мы утверждаем, что вся визуализация сопряжена с риторикой, с попыткой убедить. Часто минималистичная визуализация становится истинной из-за того, что воспринимается как нейтральная, как продукт экспертного знания высокого уровня. Мы не утверждаем, что нужно вообще не использовать визуальный минимализм. Я думаю, он может быть полезен, просто не нужно рассматривать его как высочайший стандарт. В визуализациях нужно дать больше пространства эмоциональному воздействию на разные органы чувств, апеллировать не только к зрению.
+Это связано и с разными физическими и ментальными способностями людей. В этом смысле тоже можно подумать о визуализации данных, которые можно услышать, потрогать и так далее. Есть примеры муралей с данными, вышивок, прогулок, перформансов — многообразия форм. И мы уверены, что их нужно ценить!
+
+— Вы обсуждаете множество активистских инициатив. Есть ли какие-то уроки, которые могут пригодиться для дата-феминистских проектов в других странах?
+
+— В книге мы предлагаем подумать о принципах. Вы, скорее всего, видели онлайн-версию книги, ее новая версия будет намного более понятной (смеется). В ней заголовок каждой главы — это принцип, который мы пытаемся объяснить. Вот они в наиболее общем виде.
+
+Исследуйте власть. Дата-феминизм начинается с анализа функционирования власти.
+Бросайте власти вызов. Дата-феминизм обязывает это делать и работать на достижение справедливости.
+Обращайтесь к эмоциям и телесности. Дата-феминизм учит нас ценить множественные формы знания, в том числе и тот его тип, который основан на опыте телесных ощущений.
+Думайте иначе о бинарностях и иерархиях. Дата-феминизм требует от нас бросать вызов гендерным бинарностям, а также системам подсчета и классификации, укрепляющим угнетение.
+Принимайте плюрализм. Дата-феминизм настаивает, что наиболее полное знание возможно получить при помощи синтеза из разных перспектив. В их соединении приоритет необходимо отдавать локальному знанию, экспериментальному мышлению и коренным народам.
+Учитывайте контекст. Дата-феминизм утверждает, что данные не нейтральны или объективны. Это продукты социальных отношений, и контекст жизненно важен для проведения точного и этичного анализа.
+Делайте труд видимым. Наука о данных, как и вся работа в мире, — продукт усилий многих людей. Дата-феминизм пытается сделать этот труд видимым, чтобы он был признан и соответствующе оценен.
+
+Мы пытаемся объяснить каждый из принципов разными способами: иногда это статья о предрассудках в машинном обучении, иногда карта. Мне очень интересно, будут ли эти принципы полезными для людей из других стран. Мы с Лорен работаем в американском контексте и преимущественно пишем о местных событиях и проектах. И, хотя мы, например, говорим о Латинской Америке, мы не претендуем на глобальный охват всей феминистской повестки. Мне очень любопытно получить обратную связь из других стран.
+
+— Проблемы технологической индустрии связаны с разными стратегиями их решений. Для некоторых они сугубо технические: писать код, который исключает возможность дискриминации. Но другие утверждают, что исключительно технических средств недостаточно и необходимо искать социальные, политические, правовые решения, чтобы исправить проблемы внутри индустрии технологий. Что вы об этом думаете?
+
+— Сейчас многие ребята из индустрии действительно говорят: «О, мы можем решить все проблемы технологически». Во многих случаях ясно видно, что этого не произойдет. Я поддерживаю реформистские усилия по написанию «этических кодексов» (хотя мне не слишком нравится, что их так называют) для инженеров, специалистов в области информатики и тех, кто пытается интегрировать их в преподавание, что может помочь вовлечь в эти сферы больше людей. Есть столько вещей, которые необходимо сделать, поэтому нужно работать во множестве направлений. Исключительно такого рода усилий будет недостаточно. В какой-то момент необходимо будет что-то менять за пределами датасета.
+ПОДПИСЫВАЙТЕСЬ НА КАНАЛ COLTA.RU В ЯНДЕКС.ДЗЕН, ЧТОБЫ НИЧЕГО НЕ ПРОПУСТИТЬ
+
+
+",ru,"
+
+
+
+
+
+
+
+
+
+
+
+What is date feminism?
+Explains the American researcher and co-author of the book of the same name, Catherine D'Ignazio
+07 Nov 2019 by Dmitry Muravyov
+
+Catherine D'Ignazio and Lauren Klein write the book “Date Feminism”, which uses the ideas and practices of intersectional feminism to take a different look at how our work with data works. With Katherine D'Ignazio, Dmitry Muravyov talked.
+
+
+- The first question that I would like to ask you is not about the book itself, but about how you write it. You give everyone the opportunity to comment on it and offer edits.
+
+- When we started writing this book, MIT Press just launched the new PubPub system. It was then used mainly for co-authorship. We uploaded the first version of Data Feminism to PubPub, and anyone could comment on it. It seemed to us that it was very in our spirit: after all, one of the principles of feminism is the acceptance of pluralism. The more votes you connect to work, the more complete knowledge about the world you get in the end.
+
+“And you had no doubt?”
+
+- Of course they were. Firstly, we were afraid that they would troll us, but this did not happen (laughs). Secondly, we were worried whether people would even get involved. There were many unknowns.
+But in the end, I'm glad we did it. Many simply corrected our spelling mistakes, which was nice (laughs). We received a lot of informative comments - especially from those whom we invited to be part of this process. We wrote to different people: “We are quoting your work here, could you read the section and say what you think?” Our friends and colleagues for the most part answered, and even a few strangers magnanimously gave cool comments. Some generally surprised us very much: one person printed an entire book, left notes by hand, and then gave it to me. That was very sweet. We were pleased to work in this format, and, I repeat, this experience reflects well the principles that we write about and which we ourselves adhere to.
+
+- I think that for many, the very expression “date-feminism” will be primarily associated with the widely discussed problem of women's inequality in
+
+IT
+
+industry. But you are not talking only about this: you are openly pointing out that date-feminism is not only about women and for women and not only about gender issues. Moreover, when we use a category such as “woman,” it is not entirely clear what kind of experience is meant.
+
+- Yes, when I presented my work on data feminism, I was often interpreted incorrectly. Once they asked me an idiotic question: “Oh, I thought you were going to present data visualizations that use gentle and feminine tones, aren't they?” We need to be very careful in this regard. One of the principles we are trying to follow is to rethink the binaries and hierarchies, but often we unwittingly return to them and find ourselves locked inside such logic. Returning to it is the easiest way, it is much more difficult to try to do otherwise.
+With a narrow understanding of date-feminism, we would like to fight. We would like to discuss it differently. We are not only talking about the problem of diversity in STEM disciplines (referring to the concept of “STEM pipeline.” - Ed.): Studies show that women simply “disappear” at some point from educational programs in mathematics and computer science. We produce discriminatory technologies, including because in the technology industry, which seems to serve the global and multicultural world, white men, part of the elite, dominate. We are dealing with an overrepresentation of men, who, in turn, have problems with sharing power with people unlike them.
+But we are talking about inequality not only gender, but also racial. Often, using the word “woman” without any additions, we mean a white cisgender heterosexual woman. When we talk about intersectionality, we want to give space for action and expression to other women too. Thanks to the hard work done by representatives of black feminism, it is already clear that gender-based oppression is often exacerbated and overlaps with categories such as class, race, physical and mental abilities. And the analysis of the problems of inequality must deal with the intersecting aspects of identities.
+Another thing we are trying to do in the book is to show solidarity with trans and gender non-conformal people. Because if we say that feminism is about women, then what about trans men and trans women? How can we make sure that we have a non-binary concept of gender, that we take into account other relevant aspects of identity? If you design cars, along with gender, age, physical and mental abilities can be very important, because this will affect how the car’s interior will be arranged and where, say, the seat belt will be located. If someone's physical and mental abilities are limited, you need to think about other options. I mean this when I say that many categories must be taken into account. Feminist design ideas suggest that the starting point for product design should be the experience of the most marginalized people. You need to start with them, because the systems that work for them will work for most.
+
+“You say that in order to build a fair and equal world, we need to“ bring bodies back into discussions around data science. ” Can you explain what is meant here?
+
+- There is a book “Invisible Women”, written about the fact that the world was designed for men, without taking into account the gender, the differences between male and female bodies. But another problem is related to how female bodies are not noticed in issues of technological design and data collection. For example, it can be assumed that American political institutions or statistical agencies have data on how many mothers die during childbirth in the States, but they are not. It took media coverage of maternal mortality in order for the federal government to consider this issue.
+Another example is femicides, a large and debated topic in Latin America today. Typically, femicide occurs when a woman breaks up with a partner or husband: after some time, he returns and kills her. Again, even in countries such as Mexico, where there are laws against femicides, this is still happening. The state has no way of knowing the real extent of the problem. This angers activists, so some separate civic and feminist groups began to try to solve this on their own. They began to collect data about what we call “missing bodies” —in this case, bodies that literally disappear when people are dismissive of collecting data about them.
+However, we do not say that data collection always has an emancipatory potential, but there are situations in which we need to require a calculation. Owning specific numbers may not always help you decide something, but sometimes counting requirements are also a protest mechanism. This is a way of saying, “Hey, you are ignoring us.”
+
+- You talk a lot about the fact that data is often the result of imbalance in power. How does date-feminism change our attitude towards what should become data and what should not?
+
+- I think it is very important to be in solidarity with people who resist datification. Now so many phenomena and things are quantified and converted into data that is used by the wrong people for the wrong purposes. Some are simply absurd: there are systems to measure your ass. You sit on the grid of sensors, which are busy measuring it. Researchers say that they create a unique ""imprint of the ass"", which can then be used in your car, so she answered you: ""Hello, I recognize your ass!"". We are busy with all these strange and ridiculous things, but we still do not know about mortality during childbirth. This is the work of Mimi Onuohi's “Library of Lost Datasets”: an art project that looks like a bedside table with cards. The cards contain the names of non-existent data sets. And these are important topics: for example, the same femicides in Mexico, trans people who are denied housing. When you take out a card, you understand that there is nothing inside. Datification is somewhat similar to a steam rink - a car driving through a site and destroying everything in its path. Creative economics greatly encourage this behavior.
+I think data feminism should be in solidarity with those who oppose ubiquitous datification, especially when the use of data leads to discrimination - for example, denial of social assistance programs. This is now a big problem in the USA. Now it is an object of struggle for activists both inside the technology industry and outside it.
+
+- You criticize modern practices of data visualization for their “minimalism” and talk about how emotional influence is excluded from them.
+
+- We are talking about the fact that in the visualization of data we need to accept emotions. Visualization has a history of its occurrence, and the most recent has come out of science and technology, where to be objective means to be minimalistic, neutral, not to use decorative elements. There is, for example, the idea that you should not illustrate information because it becomes less objective; in this way you enter the territory of persuasion. And trying to convince someone means turning to his emotions, and this is considered something bad, wrong. In addition, in a system of false binaries, this step is often associated with women: mind versus emotions, men versus women. Moreover, these are not neutral oppositions, but hierarchies in which one thing is obviously better than another.
+We offer a reassessment of emotions in data visualization. We affirm that all visualization is associated with rhetoric, with an attempt to convince. Often minimalistic visualization becomes true because it is perceived as neutral, as a product of high-level expert knowledge. We do not claim what is needed inGenerally do not use visual minimalism. I think it can be useful, you just do not need to consider it as the highest standard. In visualizations, you need to give more space to the emotional impact on different senses, to appeal not only to vision.
+This is due to the different physical and mental abilities of people. In this sense, you can also think about visualizing data that you can hear, touch, and so on. There are examples of murals with data, embroideries, walks, performances - a variety of forms. And we are sure that they need to be appreciated!
+
+- You discuss a lot of activist initiatives. Are there any lessons that might come in handy for data-feminist projects in other countries?
+
+“In the book, we suggest thinking about principles.” You most likely saw the online version of the book, its new version will be much more understandable (laughs). In it, the title of each chapter is a principle that we are trying to explain. Here they are in the most general form.
+
+Explore the power. Data feminism begins with an analysis of the functioning of power.
+Challenge the power. Data feminism obliges us to do this and work towards justice.
+Turn to emotions and physicality. Data feminism teaches us to appreciate the multiple forms of knowledge, including its type, which is based on the experience of bodily sensations.
+Think differently about binaries and hierarchies. Data feminism requires us to challenge gender binaries, as well as counting and classification systems that reinforce oppression.
+Take pluralism. Data feminism insists that the most complete knowledge can be obtained through synthesis from different perspectives. In combining them, priority must be given to local knowledge, experimental thinking, and indigenous peoples.
+Consider the context. Data feminism claims that data is not neutral or objective. These are products of social relationships, and context is vital for accurate and ethical analysis.
+Make work visible. Data science, like all work in the world, is the product of many people's efforts. Data feminism is trying to make this work visible so that it is recognized and appropriately valued.
+
+We try to explain each of the principles in different ways: sometimes this is an article about prejudices in machine learning, sometimes a map. I am very interested in whether these principles will be useful to people from other countries. Lauren and I work in an American context and primarily write about local events and projects. And, although we, for example, are talking about Latin America, we do not claim to have a global reach on the entire feminist agenda. I am very curious to get feedback from other countries.
+
+- The problems of the technology industry are associated with different strategies for their solutions. For some, they are purely technical: write code that eliminates the possibility of discrimination. But others argue that solely technical means are not enough and it is necessary to seek social, political, legal solutions to fix problems within the technology industry. What do you think of it?
+
+- Now many guys from the industry really say: “Oh, we can solve all problems technologically.” In many cases, it is clear that this will not happen. I support reformist efforts to write “codes of ethics” (although I don’t like that they are called that) for engineers, computer scientists, and those who are trying to integrate them into teaching, which can help get more people involved. There are so many things that need to be done, so you need to work in many directions. Exclusively this kind of effort will not be enough. At some point, it will be necessary to change something outside the dataset.
+SUBSCRIBE TO COLTA.RU CHANNEL IN YANDEX.ZEN TO NOT MISS ANYTHING
+
+
+"

@@ -1,0 +1,98 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Справа Moonwalk — що вб’є піратський бізнес
+
+01 Nov 2019, 14:38
+
+Антипіратські асоціації Європи та Америки об’єдналися та перекрили кисень багатьом російськомовним піратським сайтам.
+Нещодавно прихильники нелегально розміщеного контенту в інтернеті зіткнулися з проблемою: вони не змогли подивитись відео на своїх піратських сайтах. І на сусідніх також.  
+А тих, хто стоїть за кермом цього бізнесу, сколихнула новина: ліквідували піратський відеоплеєр Moonwalk CDN (Content Delivery Network), який був одним з найбільших провайдерів російськомовного відеоконтенту. 
+
+Читайте: 
+Чому не працює онлайн-плеєр Moonwalk
+
+Спецоперація закриття Moonwalk була проведена 18 жовтня 2019 року трьома міжнародними антипіратськими організаціями BREIN (Нідерландський фонд захисту авторських прав), ACE (Альянс креативності та розваг) і MPAA (Американська асоціація кінокомпаній). Це був удар по технічній інфраструктурі сервісу, внаслідок чого система, яка нелегально зберігала 28 258 фільмів та 14 549 телесеріалів (за даними Group-IB) припинила свою роботу назавжди.
+Що таке Moonwalk і як довго на нього полювали?
+Сервіс Moonwalk зараховують до масштабних світових мереж, що зберігають та доставляють контент (Content Delivery Network — CDN). Система запрацювала у 2013 році і стала знахідкою для піратів, тому що вирішувала одразу багато питань, з якими вони стикалися раніше. Піратам більше не треба було хвилюватися за якість і швидкість трансляції контенту, про закриття доменів та DoS-атаки (відмови в обслуговуванні). 
+Крім того, користувачі відеоплеєру отримували по $0,6 за тисячу переглядів. Монетизація відбувалася завдяки рекламі, яка йшла в комплекті з краденими фільмами. 
+Не дивно, що цей сервіс забезпечував контентом близько 80% російськомовних стрімінгових порталів, серед яких і найпопулярніші в українському інтернеті KinoGo, HDrezka, BasKino та ГідОнлайн.  
+Ще на початку 2019 року Group-IB висловила своє занепокоєння тим, що CDN-провайдери стрімко розвиваються і  збільшують свою аудиторію. Про Moonwalk вперше заговорили в лютому 2019, тоді спеціалісти Group-IB Anti-Piracy зазначили, що на піку своєї активності Moonwalk зібрав 42 807 фільмів і мав приблизно 400 млн відвідувачів на місяць. Вартість щомісячного утримання такої CDN-інфраструктури складала близько $100 тис.
+Силами трьох організацій ера Moonwalk закінчилася
+Минулого місяця силами трьох організацій ера Moonwalk закінчилася. 
+Інтернет бізнес влаштований так, що хоча користувачі серверів — власники піратських сайтів — можуть знаходитися в одній країні, самі сервери часто перебувають за її межами. У випадку Moonwalk сайти організовувались російськими “підприємцями”, а сервери знаходилися в Нідерландах. Тому нідерландська антипіратська асоціація BREIN активізувала свої зусилля та спільно з американськими організаціями ACE (Альянс креативності та розваг) і MPAA (Американська асоціація кінокомпаній) провела спецоперацію. 
+Боротьба з піратством ведеться глобально, і ми йдемо слідами операторів цих служб та їх хостингової інфраструктури, а також інших посередників, які підтримують ці незаконні послуги, – заявив керівник BREIN Тім Куїк.
+Підтвердженням цих слів стала хвиля технічних розладів на інших піратських сервісах з CDN — HDGO і Kodik, які спочатку втратили частину контенту, а 23 жовтня останній CDN з великої трійки перестав функціонувати. Проте все ще існують близько 10 подібних піратських мереж, які забезпечують відеоконтентом країни колишнього Радянського Союзу. 
+За оцінками Group-IB, у 2019 році ринок російськомовного інтернет-піратства вперше за 5 років не просто припинив зростати, а впав на 27%. Серед факторів впливу називають закриття Moonwalk, а також HDGO і Kodik, які забезпечували контентом до 90% російськомовних піратських онлайн-кінотеатрів. 
+Проте в Україні на це впливає кінцевий користувач. Дослідження, проведене компанію Gemius для антипіратської Ініціативи Чисте небо 2019 року, показало, що 31% українців готові платити за легальний контент, і це на 18% більше порівняно з минулим роком. 
+Поступово великий пірат втрачає своїх користувачів
+Відкритим залишається питання, куди перейдуть прихильники вище перерахованих піратських сайтів, де замість кіно тепер висять повідомленням про аварію в датацентрі. 
+У перші дні після закриття moonwalk.cc та інших піратських серверів, ми спостерігали збільшення трафіку приблизно на 10%. Проте ця кількість не конвертувалася в нових підписників і збільшення попиту на пробну підписку також не було. Це зрозуміло, тому що глядач все ще шукає, де подивитися контент безкоштовно. Поступово великий пірат втрачає своїх користувачів, а вони будуть переходити на менші ресурси з незручним інтерфейсом,  гіршою якістю та величезною кількістю інформаційного сміття, – заявив директор з маркетингу та стратегії найпопулярнішого в Україні легального відео сервісу MEGOGO Іван Шестаков
+Директор  платформи інтерактивного телебачення Divan.TV Аркадій Канюка вказав, що на їхньому сервісі не було суттєвого збільшення активності, однак вони помітили підвищену конверсію користувачів, які зареєструвалися для отримання пробного періоду підписки.
+Важко судити, чи існує  між цими подіями взаємозв’язок, адже наші  абоненти традиційно більше орієнтуються на перегляд лінійного ТВ, а не VOD, – додав Канюка.
+– Шанс, що користувачі піратських сайтів перейдуть на легальні платформи є, але це станеться з часом, не одразу. Лише після того, як піратські ресурси будуть закривати та погіршувати їм умови існування, – зазначає Іван Шестаков.
+Завдяки антипіратським ініціативам, як українським, так і міжнародним, боротьба з піратами триває. Виконавчий віце-президент і керівник відділу глобального захисту контенту в MPAA Ян Ван Воорн підкреслив, що міжнародна співпраця має вирішальне значення у цьому процесі сьогодні.
+– Для ефективної боротьби з піратством сьогодні потрібні міцні партнерські відносини на глобальному та місцевому рівні. Спецоперація, проведена BREIN, ACE та MPAА, — це важлива перемога та ще один крок до збереження здорової екосистеми, в якій творча спільнота може виробляти, поширювати та захищати свій контент, щоб аудиторія змогла ним насолоджуватися, – зазначив Ян Ван Воорн.
+Піратські сайти продовжать закривати, умови ведення цього бізнесу погрішуватимуться, і тоді інтернет-глядач поступово переходитиме на комфортний легальний перегляд. Але поки що більшість споживачів краденого продовжать шукати “малини”. 
+Раніше Факти ICTV писали, що з 1 листопада запрацював стрімінговий сервіс Apple TV+. Він доступний у 107 країнах світу, зокрема і в Україні.
+
+
+",uk,"
+
+
+
+
+
+
+
+
+
+
+
+The Moonwalk case is about to kill a pirate business
+
+01 Nov 2019, 13:38
+
+Anti-piracy associations of Europe and America have united and blocked oxygen to many Russian-language piracy sites.
+Recently, fans of illegally posted content on the Internet have encountered a problem: they have been unable to watch videos on their pirated sites. And on the neighbors as well.
+And those behind the wheel of the business got the news: they eliminated the pirated video player Moonwalk CDN (Content Delivery Network), which was one of the largest providers of Russian-language video content.
+
+Read:
+Why the Moonwalk online player doesn't work
+
+The Moonwalk closing operation was conducted on October 18, 2019 by three international anti-piracy organizations BREIN (the Netherlands Copyright Fund), ACE (Alliance for Creativity and Entertainment) and MPAA (American Film Association). It was a blow to the technical infrastructure of the service, causing the system, which illegally stored 28,258 films and 14,559 television series (according to Group-IB), to cease operations.
+What is Moonwalk and how long has it been hunted?
+Moonwalk is credited to the worldwide Content Delivery Network (CDN). The system was launched in 2013 and became a godsend for pirates, as it solved many of the issues they had previously encountered. Pirates no longer had to worry about the quality and speed of content streaming, domain closures and DoS attacks (denials of service).
+In addition, video player users received $ 0.6 per thousand views. The monetization was due to the ads that came with the stolen movies.
+Not surprisingly, this service provided content for about 80% of Russian-language streaming portals, including the most popular on the Ukrainian Internet KinoGo, HDrezka, BasKino and GidOnline.
+As early as early 2019, Group-IB expressed concern that CDN providers were growing rapidly and growing their audience. The Moonwalk was first talked about in February 2019, when Group-IB Anti-Piracy experts said that at the height of its activity, Moonwalk had made 42,807 films and had approximately 400 million monthly visitors. The cost of monthly maintenance of such CDN-infrastructure was about $ 100 thousand.
+Through the three organizations, the Moonwalk era is over
+Last month, the Moonwalk era ended by three organizations.
+The internet business is organized so that although the server users - the owners of pirated sites - can be in the same country, the servers themselves are often located outside it. In the case of Moonwalk, the sites were organized by Russian “entrepreneurs” and the servers were located in the Netherlands. Therefore, the Dutch Anti-Piracy Association BREIN has stepped up its efforts and, in conjunction with the American organizations ACE (Alliance of Creativity and Entertainment) and MPAA (American Association of Film Companies), conducted a special operation.
+Anti-piracy is being fought globally, and we are following in the footsteps of the operators of these services and their hosting infrastructure, as well as other intermediaries who support these illegal services, - said BREIN CEO Tim Quick.
+The confirmation of these words was a wave of technical strife on other piracy services from CDN - HDGO and Kodik, which initially lost some of the content, and on October 23, the last CDN of the Big Three ceased to function. However, there are still about 10 such pirated networks providing video content to the former Soviet Union.
+According to Group-IB estimates, in 2019, the Russian-language Internet piracy market for the first time in 5 years has not just stopped growing but has fallen by 27%. The influencers include the closure of Moonwalk, as well as HDGO and Kodik, which provided content for up to 90% of Russian-language pirated online theaters.
+However, in Ukraine this is affected by the end user. A study by Gemius for the Clean Sky Anti-Piracy Initiative in 2019 found that 31% of Ukrainians are willing to pay for legal content, up 18% from last year.
+Gradually, a large pirate loses its users
+The question remains, where will the followers of the above pirated sites go, where instead of cinema now hang a message about the accident in the datacenter.
+In the first days after moonwalk.cc and other pirated servers were shut down, we saw a traffic increase of about 10%. However, this number did not convert to new subscribers and there was no increase in demand for a trial subscription. This is understandable because the viewer is still looking for where to watch the content for free. Gradually, a large pirate loses its users, and they will switch to smaller resources with inconvenient interface, poorer quality and a lot of information waste, - said the director of marketing and strategy of Ukraine's most popular legal MEGOGO video service Ivan Shestakov
+The director of Divan.TV's interactive television platform, Arkady Kanyuk, said that their service did not significantly increase activity, but they noticed an increased conversion of users who signed up for the trial subscription period.
+It is difficult to judge whether there is a relationship between these events, as our subscribers are traditionally more oriented to watching linear TV rather than VOD, - said Kanyuk.
+- The chance that users of pirated sites will switch to legal platforms is, but it will happen in time, not immediately. Only after the pirated resources close and worsen their living conditions, - says Ivan Shestakov.
+Thanks to anti-piracy initiatives, both Ukrainian and international, the fight against piracy is ongoing. Executive Vice President and Head of Global Content Protection at the MPAA, Jan Van Voorn, stressed that international cooperation is crucial in this process today.
+- Today, effective counter-piracy efforts require strong partnerships, both globally and locally. The special operation conducted by BREIN, ACE and MPAA is an important victory and another step towards maintaining a healthy ecosystem in which the creative community can produce, disseminate and protect their content so that the audience can enjoy it, - said Jan Van Voorn.
+Pirate sites will continue to close, the business environment will deteriorate, and then the Internet viewer will gradually transition to a comfortable legal viewing. But for now, most consumers of stolen goods will continue to search for “raspberries”.
+Earlier, ICTV Facts reported that Apple TV + streaming service started operating on November 1. It is available in 107 countries, including Ukraine.
+
+
+"

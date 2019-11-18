@@ -1,0 +1,202 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Apex Legends gets a firing range and Daily Challenge re-rolls
+05 Nov 2019, 22:44 by Andy Chalk
+Courtesy of the 3.1 patch that went live today, Apex Legends now—finally—has a firing range. Players can enter the firing range from the Apex lobby, alone or with their squad, where they can test all the weapons, items, and characters available in the game.
+Players will have full access to each character's abilities and ultimates, and all loot items, including attachments and hop-ups, will also be on hand for testing. Target dummies will let you work on your headshot skills, and EA said that ""future improvements"" are coming. Even in its initial state, though, the firing range sounds like it's got all the important bases covered—and let me also take a moment to say that it's about damn time.
+The update also makes to Daily Challenges, which will now offer players one easy, one medium, and one hard challenge each day, and will enable players to reroll their Daily Challenges at an increasing cost in Legend Tokens: 200 tokens for the first reroll, 500 for the second, and 1000 for the third and beyond. 
+Legend Tokens are earned through gameplay, and have come under criticism in the past for not being especially useful: As redditor HisShoeIsHisPhone pointed out, heavy grinders can run out of things to spend them on relatively quickly, so Daily Challenge rerolls will hopefully alleviate some of that frustration, too. The reroll cost will reset each day.
+Other changes include ""improved flow from Lobby to Match,"" the elimination of a match-leaving penalty in ranked mode, some tweaks to Crypto and Bangalore, and bug fixes. And last but definitely not least, the time-limited Duos Mode announced last week is live too—it's scheduled to run until November 19.
+The full changelog is below.
+
+Firing Range:
+
+
+Can enter the firing range solo or with your squad.
+You can change to any Legend and use their abilities and ultimates.
+All loot items are available to play with including weapons, attachments, and hopups.
+ Target DUMMIES available to practice those headshots.
+Future improvements to come! Please give us your feedback. 
+
+
+Weapons:
+
+
+Wingman:
+
+
+Reduced the headshot multiplier: 2.15 -> 2.1
+
+Changes to Projectile Collision: We’ve increased the projectile width on the some weapons so they are easier to hit with. We made this change to the TripleTake in Season 2 and the following will be updated for this patch:
+
+Shotguns: All shotguns will have projectiles with a small amount of width.
+
+L-STAR
+
+Snipers: The Longbow DMR, Kraber, and G7 Scout.
+
+
+Quality of Life:
+
+
+In an effort to surface easier challenges to players more often and offer a balanced set of challenges each day, Daily Challenge distribution has been adjusted so players are guaranteed to receive 1 easy, 1 medium, and 1 hard challenge. 
+You can now spend Legend Tokens to reroll Daily Challenges: First reroll 200 Legend Tokens, second reroll 500 Legend Tokens, third reroll and beyond 1000 Legend Tokens for each reroll.
+Cost increases with each purchase before capping out at 1000 Legend Tokens.
+Cost resets every day
+You can now adjust the game cursor velocity in Settings -> Controller. This will apply to cursor velocity in all menus including the Lobby, Pause/Inventory menus, and Death Box inventories. 
+We now show you what Music Pack you have selected while dropping into the map. If you only have the “default” Pack selected you won’t see anything.
+Improved flow from Lobby to Match that fixes some minor bugs and will hopefully get players into matches a bit faster.
+Disabling pregame spawning of players before character selection. This will address cases where players might hear someone voice comms or other sounds before the Legend selection starts.
+The “Waiting for Players...” transition now shows the game world instead of a black screen.
+Removed the 5 second countdown that would start at the beginning of Legend selection.
+Player will now be able to view the ammo types of their squadmates equipped weapons when in the inventory menu.
+
+
+Ranked Mode: 
+
+
+Players will no longer receive a penalty for abandoning a match if they leave after 2 and a half minutes have passed since their Banner was picked up after dying. As a reminder: players will be warned via the menus if their leaving may trigger abandon penalties; if the warning does not show up players are free to leave.  
+[Controller] you can now open the quip wheel by holding down on the dpad (you can still do it the old way - open ping menu and press Y)
+[PC] Quick Chat binding should now auto bind to F1 if it isn’t bound to anything (assuming nothing is already bound to F1)
+
+
+Bug Fixes:
+
+
+Fixed a bug where players would stay in place while the train keeps moving when reviving another player.
+Updated the layout of the minimap that was previously showing a route that doesn’t exist.
+Fixed cases where players could drop into Out of Bounds areas without getting the timer.
+Fixed cases of some areas where players could take lava damage near the Volcano when there isn’t any lava.
+Fixed display issue with post game where it would show you earning 2 battle pass levels for levelling up via Stars.
+
+
+Legends:
+
+
+Crypto:
+
+
+EMP now will damage armor that players have dropped.
+Fixed a bug where Lifeline’s drone couldn’t heal Crypto while he was in the drone.
+Fix for friendly Caustic gas kicking Crypto out of his drone.
+
+
+Bangalore:
+
+
+Fixed bug where sometimes the missiles from Bangalore’s Ultimate would disappear after landing on the train.
+
+
+
+",en,"
+
+
+
+
+
+
+
+
+
+
+
+Apex Legends gets a firing range and Daily Challenge re-rolls
+05 Nov 2019, 22:44 by Andy Chalk
+Courtesy of the 3.1 patch that went live today, Apex Legends now—finally—has a firing range. Players can enter the firing range from the Apex lobby, alone or with their squad, where they can test all the weapons, items, and characters available in the game.
+Players will have full access to each character's abilities and ultimates, and all loot items, including attachments and hop-ups, will also be on hand for testing. Target dummies will let you work on your headshot skills, and EA said that ""future improvements"" are coming. Even in its initial state, though, the firing range sounds like it's got all the important bases covered—and let me also take a moment to say that it's about damn time.
+The update also makes to Daily Challenges, which will now offer players one easy, one medium, and one hard challenge each day, and will enable players to reroll their Daily Challenges at an increasing cost in Legend Tokens: 200 tokens for the first reroll, 500 for the second, and 1000 for the third and beyond. 
+Legend Tokens are earned through gameplay, and have come under criticism in the past for not being especially useful: As redditor HisShoeIsHisPhone pointed out, heavy grinders can run out of things to spend them on relatively quickly, so Daily Challenge rerolls will hopefully alleviate some of that frustration, too. The reroll cost will reset each day.
+Other changes include ""improved flow from Lobby to Match,"" the elimination of a match-leaving penalty in ranked mode, some tweaks to Crypto and Bangalore, and bug fixes. And last but definitely not least, the time-limited Duos Mode announced last week is live too—it's scheduled to run until November 19.
+The full changelog is below.
+
+Firing Range:
+
+
+Can enter the firing range solo or with your squad.
+You can change to any Legend and use their abilities and ultimates.
+All loot items are available to play with including weapons, attachments, and hopups.
+ Target DUMMIES available to practice those headshots.
+Future improvements to come! Please give us your feedback. 
+
+
+Weapons:
+
+
+Wingman:
+
+
+Reduced the headshot multiplier: 2.15 -> 2.1
+
+Changes to Projectile Collision: We’ve increased the projectile width on the some weapons so they are easier to hit with. We made this change to the TripleTake in Season 2 and the following will be updated for this patch:
+
+Shotguns: All shotguns will have projectiles with a small amount of width.
+
+L-STAR
+
+Snipers: The Longbow DMR, Kraber, and G7 Scout.
+
+
+Quality of Life:
+
+
+In an effort to surface easier challenges to players more often and offer a balanced set of challenges each day, Daily Challenge distribution has been adjusted so players are guaranteed to receive 1 easy, 1 medium, and 1 hard challenge. 
+You can now spend Legend Tokens to reroll Daily Challenges: First reroll 200 Legend Tokens, second reroll 500 Legend Tokens, third reroll and beyond 1000 Legend Tokens for each reroll.
+Cost increases with each purchase before capping out at 1000 Legend Tokens.
+Cost resets every day
+You can now adjust the game cursor velocity in Settings -> Controller. This will apply to cursor velocity in all menus including the Lobby, Pause/Inventory menus, and Death Box inventories. 
+We now show you what Music Pack you have selected while dropping into the map. If you only have the “default” Pack selected you won’t see anything.
+Improved flow from Lobby to Match that fixes some minor bugs and will hopefully get players into matches a bit faster.
+Disabling pregame spawning of players before character selection. This will address cases where players might hear someone voice comms or other sounds before the Legend selection starts.
+The “Waiting for Players...” transition now shows the game world instead of a black screen.
+Removed the 5 second countdown that would start at the beginning of Legend selection.
+Player will now be able to view the ammo types of their squadmates equipped weapons when in the inventory menu.
+
+
+Ranked Mode: 
+
+
+Players will no longer receive a penalty for abandoning a match if they leave after 2 and a half minutes have passed since their Banner was picked up after dying. As a reminder: players will be warned via the menus if their leaving may trigger abandon penalties; if the warning does not show up players are free to leave.  
+[Controller] you can now open the quip wheel by holding down on the dpad (you can still do it the old way - open ping menu and press Y)
+[PC] Quick Chat binding should now auto bind to F1 if it isn’t bound to anything (assuming nothing is already bound to F1)
+
+
+Bug Fixes:
+
+
+Fixed a bug where players would stay in place while the train keeps moving when reviving another player.
+Updated the layout of the minimap that was previously showing a route that doesn’t exist.
+Fixed cases where players could drop into Out of Bounds areas without getting the timer.
+Fixed cases of some areas where players could take lava damage near the Volcano when there isn’t any lava.
+Fixed display issue with post game where it would show you earning 2 battle pass levels for levelling up via Stars.
+
+
+Legends:
+
+
+Crypto:
+
+
+EMP now will damage armor that players have dropped.
+Fixed a bug where Lifeline’s drone couldn’t heal Crypto while he was in the drone.
+Fix for friendly Caustic gas kicking Crypto out of his drone.
+
+
+Bangalore:
+
+
+Fixed bug where sometimes the missiles from Bangalore’s Ultimate would disappear after landing on the train.
+
+
+
+"

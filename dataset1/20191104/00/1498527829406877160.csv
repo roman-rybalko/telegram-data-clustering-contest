@@ -1,0 +1,110 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Fedora erscheint in Version 31
+04 Nov 2019 by Stefan Bordel
+
+Das Fedora-Projekt hat Version 31 seiner gleichnamigen Linux-Distribution zum Download freigegeben. Das Update verspricht mehr Leistung für containerisierte Anwendungen, außerdem kommt der aktualisierte Gnome-Desktop in Version 3.34 zum Einsatz.
+
+
+Die von Red Hat unterstützte Entwickler-Community des Fedora-Projekts hat die Arbeiten an Fedora 31 abgeschlossen und die Linux-Distribution zum Download freigegeben. Im Rahmen des Updates haben die Entwickler zahlreiche Software-Pakete erneuert, wodurch mitunter die Leistung von containerisierten Anwendungen steigt. Desktop-Nutzern beschert indessen der Umstieg auf den Gnome-Desktop in Version 3.34 eine bessere Performance.
+
+
+Fedora 31 kommt mit Gnome 3.34 und den Linux-Kernel in Version 5.3.
+
+In Fedora 31 kommen die Control Groups in Version 2 zum Einsatz (cgroups v2). Mit dem Tool kann der Ressourcenzugriff von Prozessen verwaltet werden, was Vorteile beim Arbeiten mit containerisierten Anwendungen verspricht. Gleichzeitig ersetzen die Entwickler das Docker-Paket mit der Alternativlösung Podman, die Support für cgroups v2 mitbringt.
+Leistungsverbesserungen und höhere Kompatibilität zu neuer Hardware soll der Linux-Kernel in Version 5.3 gewährleisten. Im Zusammenspiel mit der aktualisierten Gnome-Umgebung reagiert Fedora 31 auf dem Desktop-PC jetzt deutlich responsiver. Diese Verbesserungen haben sich bereits beim Start von Ubuntu 19.10 gezeigt, das auf dieselben Software-Komponenten setzt.
+Der Firefox-Browser wird nun standardmäßig mit dem modernen Display-Server Wayland ausgeführt, der besser mit hochauflösenden Bildschirmen zurechtkommt.
+Daneben haben die Entwickler einige Updates für Compiler- und Programmiersprachen eingepflegt, darunter Node.js 12, Perl 5.30 und Golang 1.13. Die neue RPM-Kompression mit ztsd reduziert die erforderliche Kompressionszeit und verbessert die Gesamtperformance von Prozessen. Zusätzliche Optimierungen soll der RPM Package Manager in Version 4.15 bringen.
+32-Bit-Support wird eingestellt
+Mit Fedora 31 verabschiedet sich die Distribution zudem von der 32-Bit-Unterstützung von x86-Systemen. Abwärtskompatibilität zu 32-Bit-Programmen ist dank angepasster Bibliotheken aber weiterhin gewährleistet.
+Wie gehabt steht Fedora als Workstation-Variante für den Desktop-Einsatz sowie als Server-System zum Download bereit. Neben der standardmäßigen Gnome-Oberfläche werden über verschiedene Spin-Varianten auch weitere Desktop-Umgebungen angeboten.
+Verwandte Themen
+
+
+Betriebssystem
+
+
+Open Source
+
+
+Software
+
+
+DevOps
+
+
+Linux
+
+
+mehr >>
+
+
+
+
+
+",de,"
+
+
+
+
+
+
+
+
+
+
+
+Fedora appears in version 31
+04 Nov 2019 by Stefan Bordel
+
+The Fedora project has released version 31 of its Linux distribution of the same name for download. The update promises more performance for containerized applications, as well as the updated Gnome desktop version 3.34.
+
+
+The Red Hat-supported Fedora project development community has completed work on Fedora 31 and has released the Linux distribution for download. As part of the update, the developers have renewed numerous software packages, which sometimes increases the performance of containerized applications. For desktop users, however, moving to the Gnome desktop in version 3.34 gives better performance.
+
+
+Fedora 31 comes with Gnome 3.34 and the Linux kernel in version 5.3.
+
+Fedora 31 uses the Control Groups version 2 (cgroups v2). The tool can manage process resource access, which promises advantages when working with containerized applications. At the same time, the developers are replacing the Docker package with the alternative solution Podman, which brings support for cgroups v2.
+Performance improvements and higher compatibility with new hardware should be ensured by the Linux kernel in version 5.3. Combined with the updated Gnome environment, Fedora 31 is now more responsive on the desktop PC. These improvements have already been seen in the launch of Ubuntu 19.10, which uses the same software components.
+The Firefox browser is now running by default with the modern display server Wayland, which copes better with high-resolution screens.
+In addition, the developers have some updates for compiler and programming languages incorporated, including Node.js 12, Perl 5.30 and Golang 1.13. The new RPM compression with ztsd reduces the required compression time and improves the overall performance of processes. Additional optimizations should bring the RPM Package Manager in version 4.15.
+32-bit support is discontinued
+With Fedora 31, the distribution also bids farewell to the 32-bit support of x86 systems. Backward compatibility with 32-bit programs is still guaranteed thanks to adapted libraries.
+As usual, Fedora is available as a workstation version for desktop use and as a server system for download. In addition to the standard Gnome interface, various desktop variants are also offered via various spin variants.
+Related topics
+
+
+operating system
+
+
+Open source
+
+
+software
+
+
+DevOps
+
+
+Linux
+
+
+more >>
+
+
+
+
+
+"

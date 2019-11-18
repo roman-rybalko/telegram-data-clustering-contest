@@ -1,0 +1,100 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+When Might Apple Release an Arm-Based Mac?
+05 Nov 2019, 20:32 by Juli Clover
+There have been rumors suggesting Apple has an interest in Arm-based Macs for years now, but speculation about an Arm-based Mac has picked up over the course of the last year following rumors about Apple's work on its own chips designed for the Mac. Right now, Apple is reliant on Intel for the processors used across its Mac lineup, but that is perhaps set to change in the future as Apple works to transition over to Arm-based chips similar to the A-series chips used in its iPhones and iPads.
+Arm vs. Intel
+Right now, Apple uses x86 chips from Intel in all of its Mac products, while its iPhones and iPads use Arm-based chips. x86 chips and Arm chips are built using different architectures.
+
+
+
+Intel's chips are CISC (Complex Instruction Set Architecture) while Arm chips are RISC (Reduced Instruction Set Computer). Were Apple to switch from CISC Intel chips to RISC it would likely have a positive impact on power efficiency and compute efficiency for everyday users because most people don't use applications that take advantage of the more complex instructions of a CISC chip. A chip instruction set can be likened to different words in the English language that mean the same thing. As an example, someone might use the word ""hit"" multiple times in a day, but would rarely find a reason to use the word ""pummel."" An RISC chip in this scenario only knows the word ""hit,"" while a CISC chip knows the word ""pummel."" When there's a call for the ""hit"" instruction to be made multiple times, the RISC chip would need to use multiple ""hit"" instructions, while the CISC chip can more efficiently call up the ""pummel"" instruction instead. Because most people don't need to use ""pummel"" often, the RISC chip is, overall, more efficient for day to day use. For pro users, though, the CISC chip may be more the more efficient choice.
+Ditching Intel
+Apple has been using Intel's chips in its Mac lineup since 2006 after transitioning away from PowerPC processors. Because Apple is using Intel technology, Apple is subject to Intel's release timelines and chip delays. Over the course of the last several years, there have been multiple instances where Intel has seen significant chip delays that have undoubtedly impacted Apple's product plans. Swapping over to its own house-made chips would allow Apple to release updates on its own schedule and with perhaps more frequent technology improvements. Apple would also be able to differentiate its devices from competing products with chips designed by its own internal teams, introducing even tighter integration between hardware and software.
+Apple's Arm-Based Chips for iOS Devices
+Apple uses an Arm-based architecture for its A-series chips in the iPhone and iPad, and each year, those chips get faster and more efficient. In fact, when introducing the latest A12 and A13 chips, Apple has made it a point to emphasize that these chips are faster than many Intel-based chips in competing devices. The 2018 iPad Pro models with A12X chips, for example, are close in speed to the 2018 15-inch MacBook Pro models.
+
+
+
+With Apple closing the speed gap between Arm and x86, there's no reason why many of the company's notebook machines (and even desktop machines) couldn't be powered by Arm-based chips instead of standard Intel chips.
+
+
+
+Apple's A-series chip packages also include custom-built GPUs, Secure Enclave, memory and storage controllers, machine learning processors, Image Signal Processing, custom encryption, and more, all of which could also be applied to Mac processors.
+Arm Chips in Current Macs
+The ‌MacBook Pro‌, MacBook Air, iMac Pro, Mac mini and upcoming Mac Pro are already equipped with Arm processors, in the form of the T1 and T2 chips that power the Touch Bar and other features in these machines.
+
+
+
+The T2 chip in particular integrates several components, including the system management controller, image signal processor, SSD controller, and a Secure Enclave with a hardware-based encryption engine in addition to powering the Touch Bar and Touch ID.
+Arm Benefits
+Bringing Arm chips to a Mac could bring efficiency and battery life improvements without sacrificing speed, with Apple also perhaps able to cut down on the size of some of the internal components, thus perhaps allowing for slimmer devices. An Arm-based MacBook might not need a fan, for example, much like an ‌iPad‌. Apple's iPads also have superior battery life, another feature that could be brought to the Mac lineup.
+Apple's Rumored Work on Arm-Based Chips
+Rumors suggest that Apple employees are working on an initiative codenamed ""Kalamata"" to make iPhones, iPads, and Macs work more seamlessly together. One aspect of this involves new custom-built Mac chips that are designed by Apple much like its current iPhone and ‌iPad‌ chips. Apple eventually wants developers to be able to create an app that can run across all Apple devices, and along with custom-built chips, Apple has also been working on this on the software side with Mac Catalyst. Mac Catalyst lets developers port their ‌iPad‌ apps over to the Mac App Store with minimal effort.
+When Will Apple Release an Arm-Based Mac?
+Apple is said to be aiming to transition to its own Arm-based chips starting in 2020, though the transition period could take some time. It's possible one Mac line, such as the ‌MacBook Air‌, could see an update first ahead of the rest of the Mac family.
+Guide Feedback
+Have questions about Apple's work on Arm-based Macs or want to offer feedback on this guide? Send us an email here.
+
+
+",en,"
+
+
+
+
+
+
+
+
+
+
+
+When Might Apple Release an Arm-Based Mac?
+05 Nov 2019, 20:32 by Juli Clover
+There have been rumors suggesting Apple has an interest in Arm-based Macs for years now, but speculation about an Arm-based Mac has picked up over the course of the last year following rumors about Apple's work on its own chips designed for the Mac. Right now, Apple is reliant on Intel for the processors used across its Mac lineup, but that is perhaps set to change in the future as Apple works to transition over to Arm-based chips similar to the A-series chips used in its iPhones and iPads.
+Arm vs. Intel
+Right now, Apple uses x86 chips from Intel in all of its Mac products, while its iPhones and iPads use Arm-based chips. x86 chips and Arm chips are built using different architectures.
+
+
+
+Intel's chips are CISC (Complex Instruction Set Architecture) while Arm chips are RISC (Reduced Instruction Set Computer). Were Apple to switch from CISC Intel chips to RISC it would likely have a positive impact on power efficiency and compute efficiency for everyday users because most people don't use applications that take advantage of the more complex instructions of a CISC chip. A chip instruction set can be likened to different words in the English language that mean the same thing. As an example, someone might use the word ""hit"" multiple times in a day, but would rarely find a reason to use the word ""pummel."" An RISC chip in this scenario only knows the word ""hit,"" while a CISC chip knows the word ""pummel."" When there's a call for the ""hit"" instruction to be made multiple times, the RISC chip would need to use multiple ""hit"" instructions, while the CISC chip can more efficiently call up the ""pummel"" instruction instead. Because most people don't need to use ""pummel"" often, the RISC chip is, overall, more efficient for day to day use. For pro users, though, the CISC chip may be more the more efficient choice.
+Ditching Intel
+Apple has been using Intel's chips in its Mac lineup since 2006 after transitioning away from PowerPC processors. Because Apple is using Intel technology, Apple is subject to Intel's release timelines and chip delays. Over the course of the last several years, there have been multiple instances where Intel has seen significant chip delays that have undoubtedly impacted Apple's product plans. Swapping over to its own house-made chips would allow Apple to release updates on its own schedule and with perhaps more frequent technology improvements. Apple would also be able to differentiate its devices from competing products with chips designed by its own internal teams, introducing even tighter integration between hardware and software.
+Apple's Arm-Based Chips for iOS Devices
+Apple uses an Arm-based architecture for its A-series chips in the iPhone and iPad, and each year, those chips get faster and more efficient. In fact, when introducing the latest A12 and A13 chips, Apple has made it a point to emphasize that these chips are faster than many Intel-based chips in competing devices. The 2018 iPad Pro models with A12X chips, for example, are close in speed to the 2018 15-inch MacBook Pro models.
+
+
+
+With Apple closing the speed gap between Arm and x86, there's no reason why many of the company's notebook machines (and even desktop machines) couldn't be powered by Arm-based chips instead of standard Intel chips.
+
+
+
+Apple's A-series chip packages also include custom-built GPUs, Secure Enclave, memory and storage controllers, machine learning processors, Image Signal Processing, custom encryption, and more, all of which could also be applied to Mac processors.
+Arm Chips in Current Macs
+The ‌MacBook Pro‌, MacBook Air, iMac Pro, Mac mini and upcoming Mac Pro are already equipped with Arm processors, in the form of the T1 and T2 chips that power the Touch Bar and other features in these machines.
+
+
+
+The T2 chip in particular integrates several components, including the system management controller, image signal processor, SSD controller, and a Secure Enclave with a hardware-based encryption engine in addition to powering the Touch Bar and Touch ID.
+Arm Benefits
+Bringing Arm chips to a Mac could bring efficiency and battery life improvements without sacrificing speed, with Apple also perhaps able to cut down on the size of some of the internal components, thus perhaps allowing for slimmer devices. An Arm-based MacBook might not need a fan, for example, much like an ‌iPad‌. Apple's iPads also have superior battery life, another feature that could be brought to the Mac lineup.
+Apple's Rumored Work on Arm-Based Chips
+Rumors suggest that Apple employees are working on an initiative codenamed ""Kalamata"" to make iPhones, iPads, and Macs work more seamlessly together. One aspect of this involves new custom-built Mac chips that are designed by Apple much like its current iPhone and ‌iPad‌ chips. Apple eventually wants developers to be able to create an app that can run across all Apple devices, and along with custom-built chips, Apple has also been working on this on the software side with Mac Catalyst. Mac Catalyst lets developers port their ‌iPad‌ apps over to the Mac App Store with minimal effort.
+When Will Apple Release an Arm-Based Mac?
+Apple is said to be aiming to transition to its own Arm-based chips starting in 2020, though the transition period could take some time. It's possible one Mac line, such as the ‌MacBook Air‌, could see an update first ahead of the rest of the Mac family.
+Guide Feedback
+Have questions about Apple's work on Arm-based Macs or want to offer feedback on this guide? Send us an email here.
+
+
+"

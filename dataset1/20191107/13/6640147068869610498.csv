@@ -1,0 +1,72 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Ryzen Threadripper 3970X e 3960X, CPU con 32 e 24 core per la nuova piattaforma TRX40
+07 Nov 2019, 13:00 by Manolo De Agostini
+AMD ha annunciato i primi dettagli sui nuovi processori Ryzen Threadripper di terza generazione destinati al mercato HEDT – High-End DeskTop -, un settore che secondo l’azienda vale 1,2 miliardi di dollari.
+Si tratta di CPU basate su architettura Zen 2 a 7 nanometri, come i processori Ryzen 3000 e le CPU server EPYC di seconda generazione (da cui i Threadripper in questione derivano).
+
+
+
+Anzitutto è bene dire che le nuove CPU non potranno essere installate sulle schede madre X399 (socket TR4) compatibili con le due generazioni precedenti ma necessitano di nuove piattaforme dotate del nuovo socket sTRX4 con chipset TRX40.
+AMD ha spiegato che la nuova piattaforma nasce per due ragioni: aumentare il bandwidth tra CPU e chipset (e per questo serviva un socket con più pin), e per ragioni di scalabilità – ovvero arriveranno CPU con molti più core in futuro.
+
+
+
+In particolare tra la CPU e il chipset vi sono 8 linee PCIe 4.0, mentre in passato c’erano 4 linee PCIe 3.0. Questo permette ad AMD di quadruplicare il bandwidth tra CPU e chipset e di conseguenza gli utenti potranno usare molti più dispositivi collegati al chipset alle massime prestazioni.
+La piattaforma offre 88 linee PCI Express 4.0, di cui 72 disponibili all’utente. I processori Threadripper 3000, di per sé, offrono 48 linee PCI Express 4.0. Approfondiremo la piattaforma in un prossimo articolo dedicato, quindi concentriamoci sulla nuova gamma.
+Ryzen Threadripper 3970X è attualmente il modello top di gamma dell’offerta con 32 core e 64 thread che funzionano a una frequenza di 3,7 GHz / 4,5 GHz. Il processore ha ben 144 MB di cache. Arriverà in commercio a 1999 dollari (esentasse).
+Il fratello minore prende il nome di Ryzen Threadripper 3960X, ha “solo” 24 core e 48 thread attivi. Le frequenze operative sono del tutto simili al 3970X, con un clock base di 3,8 GHz (100 MHz in più) e 4,5 GHz in boost (identica). La cache scende a 140 MB. Il prezzo è di 1399 dollari (esentasse). Entrambe le CPU hanno un TDP di 280 watt.
+AMD ha diffuso una slide con alcuni benchmark in cui confronta i nuovi arrivati con il Core i9-9980XE di Intel, top di gamma Core X di Intel della scorsa generazione (comunque non troppo dissimile dal nuovo Core i9-10980XE), dotato di 18 core e 36 thread. Come si vede, AMD dichiara prestazioni nettamente superiori al chip Intel, ad esempio con un +22% e un +47% in Adobe Premiere CC 2019.
+
+
+
+Le due nuove CPU HEDT di AMD e le piattaforme compatibili arriveranno sul mercato il 25 novembre.
+
+
+",it,"
+
+
+
+
+
+
+
+
+
+
+
+Ryzen Threadripper 3970X and 3960X, CPU with 32 and 24 cores for the new TRX40 platform
+07 Nov 2019, 13:00 by Manolo De Agostini
+AMD announced the first details on the new third-generation Ryzen Threadripper processors destined for the HEDT market - High-End DeskTop -, a sector that according to the company is worth 1.2 billion dollars.
+These are CPUs based on 7-nanometer Zen 2 architecture, such as Ryzen 3000 processors and second-generation EPYC server CPUs (from which the Threadripper in question derives).
+
+
+
+First of all it is good to say that the new CPUs cannot be installed on X399 motherboards (socket TR4) compatible with the two previous generations but need new platforms equipped with the new sTRX4 socket with TRX40 chipset.
+AMD explained that the new platform was born for two reasons: to increase the bandwidth between CPU and chipset (and for this it needed a socket with more pins), and for reasons of scalability - that is, CPUs with many more cores will arrive in the future.
+
+
+
+In particular between the CPU and the chipset there are 8 PCIe 4.0 lines, while in the past there were 4 PCIe 3.0 lines. This allows AMD to quadruple the bandwidth between CPU and chipset and as a result users will be able to use many more devices connected to the chipset at maximum performance.
+The platform offers 88 PCI Express 4.0 lines, of which 72 are available to the user. The Threadripper 3000 processors themselves offer 48 PCI Express 4.0 lines. We will deepen the platform in a next dedicated article, so let's focus on the new range.
+Ryzen Threadripper 3970X is currently the top of the range offering with 32 cores and 64 threads running at 3.7 GHz / 4.5 GHz. The processor has a good 144 MB of cache. It will go on sale at $ 1999 (tax-free).
+The younger brother is called the Ryzen Threadripper 3960X, has ""only"" 24 cores and 48 active threads. The operating frequencies are very similar to the 3970X, with a base clock of 3.8 GHz (100 MHz more) and 4.5 GHz in boost (identical). The cache drops to 140 MB. The price is 1399 dollars (tax-free). Both CPUs have a TDP of 280 watts.
+AMD has released a slide with some benchmarks comparing newcomers with Intel's Core i9-9980XE, Intel's top-of-the-range Core X (still not too dissimilar to the new Core i9-10980XE), with 18 cores and 36 threads. As you can see, AMD declares performance well above the Intel chip, for example with + 22% and + 47% in Adobe Premiere CC 2019.
+
+
+
+The two new AMD HEDT CPUs and compatible platforms will hit the market on November 25th.
+
+
+"

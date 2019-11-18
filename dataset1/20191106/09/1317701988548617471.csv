@@ -1,0 +1,64 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Office 2016 Updates (5.11.2019)
+06 Nov 2019, 09:58 by moinmoin
+Kurz nachgereicht: Microsoft hat gestern die nicht-sicherheitsrelevanten Updates für Office 2016 bereitgestellt. Insgesamt neun Updates, die Offie, Word, Outlook, PowerPoint und Access betreffen.
+
+
+
+
+KB4484138 Excel kann abstürzen, wenn Sie eine Vorschau eines Pivot-Diagramms anzeigen. das Problem tritt auf, wenn es sich bei dem Pivotdiagramm um ein Kombinationsdiagramm mit Datenbeschriftungen handelt.
+KB4484137 Korrektur der Datei mso.dll. Dadurch wird unter Über Outlook wieder die korrekte Version angezeigt.
+KB4475588 Eingabe von koreanischen Zeichen in einer Tabelle hat die Tippgeschwindigkeit verlangsamt.
+KB4475552 Korrektur der Datei mso.dll. Dadurch wird unter Über Outlook wieder die korrekte Version angezeigt.
+KB4484145 Wenn Sie SharePoint-Websites im Legacy-Modus anzeigen, indem Sie Internet Explorer mit aktivierten ActiveX-Steuerelementen verwenden, kann Outlook gelegentlich in den Status Kennwort erforderlich versetzt werden.
+KB4484139 Dieses Update fügt einen PreferProvidedEmailInAutoDiscoverAuthPrompts-Registrierungsschlüssel hinzu, mit dem Exchange-Administratoren festlegen können, ob Benutzer mithilfe der konfigurierten Konto-E-Mail oder des Benutzer-Hauptnamens (UPN) während der AutoDiscover-Szenarien authentifiziert werden sollen.
+KB4484134 PowerPoint ist auch berechtigt, die Anzeige bei Präsentationen auf einem Desktop-Computer automatisch zu erweitern. Sie können einen AllowAutoExtendForDesktop-Registrierungsschlüssel verwenden, um diese Funktionalität zu aktivieren oder zu deaktivieren.
+KB4484135 Dieses Update behebt die folgenden Probleme: Ein Benutzer sendet eine Publisher-Seite, die Hyperlinks enthält, indem er Datei > Teilen > E-Mail > Aktuelle Seite senden wählt. Wenn Empfänger die E-Mail öffnen, geht die Formatierung auf der Seite verloren. UND: Wenn Sie ein Dokument drucken, wird die Füllfarbe der Tabelle auf der zweiten Seite aus der Tabelle gedruckt, während es in der Druckansicht einwandfrei aussieht.
+KB4475539 Access stürzt ab, wenn ein Formular Code hinter dem Resize-Ereignis hat, der auf die Eigenschaft Form.Recordset verweist. UND: Änderungen an einem Makro werden möglicherweise nicht gespeichert, wenn Sie den Fokus nach einer Änderung nicht ändern.
+
+
+
+",de,"
+
+
+
+
+
+
+
+
+
+
+
+Office 2016 Updates (5.11.2019)
+06 Nov 2019, 09:58 by moinmoin
+Shortly after: Microsoft provided the non-security updates for Office 2016 yesterday. A total of nine updates concerning Offie, Word, Outlook, PowerPoint and Access.
+
+
+
+
+KB4484138 Excel may crash when you preview a pivot chart. the problem occurs when the pivot chart is a combination chart with data labels.
+KB4484137 Correction of the mso.dll file. This returns the correct version under Outlook.
+KB4475588 Entering Korean characters in a table has slowed typing speed.
+KB4475552 Correction of the mso.dll file. This returns the correct version under Outlook.
+KB4484145 When you view SharePoint sites in legacy mode by using Internet Explorer with ActiveX controls enabled, Outlook may occasionally become in the Password Required state.
+KB4484139 This update adds a PreferProvidedEmailInAutoDiscoverAuthPrompts registry key that allows Exchange administrators to specify whether users should be authenticated using the configured account email or the user's main name (UPN) during the AutoDiscover scenarios.
+KB4484134 PowerPoint is also authorized to automatically expand the display for presentations on a desktop computer. You can use an AllowAutoExtendForDesktop registry key to enable or disable this functionality.
+KB4484135 This update fixes the following issues: A user sends a publisher page that contains hyperlinks by choosing File> Share> Email> Send Current Page. When recipients open the e-mail, formatting on the page is lost. AND: When you print a document, the fill color of the spreadsheet on the second page is printed from the spreadsheet, while it looks fine in print view.
+KB4475539 Access crashes if a form has code behind the Resize event that references the Form.Recordset property. AND: Changes to a macro may not be saved if you do not change the focus after making a change.
+
+
+
+"

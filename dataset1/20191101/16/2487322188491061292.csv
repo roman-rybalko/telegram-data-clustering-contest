@@ -1,0 +1,102 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Изоляция, локальные блокировки и кибератаки извне: главные вопросы к работе закона об автономном рунете
+01 Nov 2019, 16:45 by Дамир Камалетдинов
+Разбираемся, от каких угроз собираются защищать рунет, реально ли его изолировать и как будут проходить учения.
+1 ноября в России вступил в силу закон об автономном рунете. Теперь власти теоретически имеют право «отключить» страну от остального интернета и ограничить трансграничный трафик в случае угроз безопасности.
+
+
+
+Закон приняли ещё в апреле 2019 года, но даже спустя полгода в нём остаётся много размытых формулировок — как всё будет работать на деле, пока никто не знает. TJ собрал список главных вопросов к реализации закона и попытался найти на них ответы.
+Реально ли изолировать рунет технически, если многие российские сайты связаны с иностранными сервисами
+Скорее всего, нет. Как отмечал куратор школы IT и информационной безопасности HackerU Алексей Гришин, чтобы Россия смогла по-настоящему изолировать интернет, остальные страны должны согласиться, что не будут пропускать российский трафик, включая спутниковые сети.
+Кроме того, Россия слишком сильно привязана к иностранным технологиям, но при этом не имеет многих аналогов популярных сервисов. В стране нет дублирующей инфраструктуры даже для продолжения работы отечественных ресурсов: многие из них базируются на иностранных серверах или используют их в качестве хранилища данных.
+Из-за этого у российских властей даже при всём желании вряд ли выйдет «изолировать» рунет в буквальном смысле. В случае переключения «рубильника» они могут лишь сильно испортить работу отечественных сервисов и лишить россиян такого же простого доступа к зарубежным сайтам, как сейчас — придётся обходить ограничения.
+От каких угроз извне собираются защищать Россию
+Одной из главных угроз авторы законопроекта называли возможность отключения России от интернета для политического давления. Хотя до сих пор примеров подобного давления в мировой истории не было, а государства чаще сами отключали интернет на своей территории на фоне протестов.
+В мае Минкомсвязи перечислило три типа «угроз», при которых могут применить закон об автономном рунете. Среди них «угрозы целостности», «угрозы устойчивости» и «угрозы безопасности».
+Однако ведомство привело лишь общие описания без конкретики. Например, под угрозами целостности понимается невозможность связи между пользователями, под угрозами устойчивости — нарушение работы сети при отказе оборудования, природных или техногенных катастрофах, а под угрозами безопасности — попытки взломать провайдеров или «оказать дестабилизирующее информационное воздействие».
+Формально под эти формулировки может подойти слишком много всего — от сбоя на магистральной сети провайдеров до пожара в каком-нибудь ключевом российском дата-центре. При этом такие ситуации зачастую не «атака на рунет», а простая случайность или халатность.
+Поможет ли изоляция от угроз и кибератак, которых боятся российские власти
+В пояснительной записке к законопроекту говорится, скорее, о контентных угрозах, указал TJ генеральный директор Diphost и автор Telegram-канала Эшер II Филипп Кулин. По его мнению, закон не имеет ничего общего с заявленными Минкомсвязи «угрозами» и направлен против «разрушительных твитов».
+Автономный рунет и правда вряд ли поможет против реальной кибератаки на инфраструктуру, которой опасаются его авторы. Пожалуй, самым известным примером такой атаки является вирус Stuxnet — червь, целью которого был подрыв работы промышленных предприятий вроде электростанций, заводов или аэропортов.
+По данным The New York Times, Stuxnet создали американские спецслужбы в 2009 году, чтобы замедлить ядерную программу Ирана и успешно применили в действии против АЭС «Бушер». Однако вопреки страхам российских законодателей, для этого не понадобился интернет.
+Промышленные системы обычно и так не подключены к всемирной сети: чаще всего их делают независимыми или подключают к закрытым каналам. Но это не помешало вирусу Stuxnet нанести вред иранским предприятиям, потому что он распространялся офлайн — через USB-носители.
+Глобальные кибератаки можно провести и через интернет, но это просто даёт хакерам больше свободы. Ощутимый вред инфраструктуре обычно наносят иными способами.
+Как будут проходить учения по автономности рунета
+В октябре Дмитрий Медведев утвердил расписание учений по обеспечению автономности рунета. Их должны будут проводить каждый год, но в правительстве не раскрыли, как именно.
+Согласно документу, власти будут проверять, устойчивы ли точки обмена трафиком и отрабатывать восстановление сетей в случае ЧС. Будут ли для этого на какое-то время ограничивать зарубежный трафик — неизвестно.
+1 ноября The Bell сообщил о неудачных испытаниях DPI-оборудования на Урале. Собеседники издания рассказали, что во время тестирования произошли сбои, которые привели к отключению интернета.
+В учениях участвуют ФСБ, Роскомнадзор, другие ведомства, операторы связи и владельцы точек обмена трафиком, а также организаторы распространения информации — соцсети и мессенджеры. Дату ежегодно будет устанавливать Минкомсвязи, но учения могут быть и внеплановыми — если появится повод.
+О плановых учениях участников обязаны уведомить за два месяца, о внеплановых — хотя бы за 10 дней. Дата первых учений пока неизвестна: её должны внести в публичный график на сайте Минкомсвязи до 1 декабря.
+Как пояснил TJ Кулин, по нынешним нормативам почти «любая фантазия» организаторов может стать поводом для учений. Но он считает, что если операторы связи окажут сопротивление, то это превратится в «обмен бумажками».
+Смогут ли власти блокировать интернет более эффективно благодаря новому закону
+Закон об автономном рунете обязывает операторов устанавливать для сетях оборудование для глубокого анализа пакетов (DPI). Его упоминали ещё при принятии «пакета Яровой», но тогда провайдеров так и не заставили внедрить дорогостоящую фильтрацию. Теперь оборудование оплачивается из бюджета: только на это собираются выделить более 20 миллиардов рублей
+Благодаря DPI власти смогут блокировать конкретный тип трафика, а не просто сетевой адрес. Это позволит вводить более эффективные ограничения, однако использовать оборудование Роскомнадзор сможет только в случае переключения рунета в «автономный режим».
+Но для пользователей рунета пока вряд ли что-то изменится. На момент вступления в силу операторы ещё не получили и не сертифицировали оборудование — его ещё тестируют и пока неясно, когда начнут передавать провайдерам. Но даже после установки DPI по всей России формально использовать её постоянно нельзя — только в случае «угрозы».
+Как пояснил Кулин, оборудование позволит сильно расширить возможности Роскомнадзора по блокировкам, не утруждая себя обоснованиями. По его мнению, DPI позволит не афишировать, что именно блокируется, но при этом даже такую блокировку можно будет обойти при желании.
+Даже в Китае нет 100% блокировки. Нельзя так сделать.Филип Кулин генеральный директор Diphost автор Telegram-канала Эшер II
+
+
+",ru,"
+
+
+
+
+
+
+
+
+
+
+
+Isolation, local blocking and cyber attacks from the outside: the main issues to the work of the law on autonomous runet
+01 Nov 2019, 16:45 by Damir Kamaletdinov
+We figure out what threats the Runet is going to protect from, is it realistic to isolate it, and how the exercises will be held.
+On November 1, the law on autonomous Runet entered into force in Russia. Now the authorities theoretically have the right to “disconnect” the country from the rest of the Internet and restrict cross-border traffic in case of security threats.
+
+
+
+The law was adopted back in April 2019, but even after six months there are a lot of vague wording in it - how everything will work in practice, while no one knows. TJ put together a list of key questions for implementing the law and tried to find answers to them.
+Is it realistic to isolate Runet technically if many Russian sites are connected with foreign services
+Most probably not. According to Alexey Grishin, curator of the HackerU IT and information security school, for Russia to be able to truly isolate the Internet, the rest of the countries must agree that they will not allow Russian traffic, including satellite networks.
+In addition, Russia is too much attached to foreign technologies, but it does not have many analogues of popular services. There is no duplicating infrastructure in the country even to continue the work of domestic resources: many of them are based on foreign servers or use them as a data warehouse.
+Because of this, the Russian authorities, even with all their desire, are unlikely to “isolate” Runet in the literal sense. In the case of switching the “switch”, they can only greatly spoil the work of domestic services and deprive Russians of the same easy access to foreign sites as they are now - they will have to circumvent restrictions.
+What external threats are going to protect Russia
+The authors of the bill called one of the main threats the possibility of disconnecting Russia from the Internet for political pressure. Although so far there have been no examples of such pressure in world history, and states more often themselves turned off the Internet on their territory amid protests.
+In May, the Ministry of Communications and Mass Media listed three types of “threats” under which the law on autonomous runet could be applied. Among them are “threats to integrity”, “threats to sustainability” and “threats to security”.
+However, the agency provided only general descriptions without specifics. For example, integrity threats are understood as impossibility of communication between users, stability threats are network failure due to equipment failure, natural or technological disasters, and security threats are attempts to hack providers or “have a destabilizing information impact”.
+Formally, too many things can fit into these formulations - from a failure on the backbone network of providers to a fire in some key Russian data center. Moreover, such situations are often not “an attack on the runet,” but mere chance or negligence.
+Will isolation help from threats and cyber attacks that Russian authorities fear
+An explanatory note to the bill says more about content threats, said TJ CEO of Diphost and author of the Telegram channel, Asher II, Philip Culin. In his opinion, the law has nothing to do with the “threats” declared by the Ministry of Communications and is directed against “destructive tweets”.
+Autonomous runet and the truth is unlikely to help against a real cyber attack on the infrastructure, which its authors fear. Perhaps the most famous example of such an attack is the Stuxnet virus - a worm whose purpose was to undermine the work of industrial enterprises like power plants, factories or airports.
+According to The New York Times, Stuxnet created US intelligence in 2009 to slow down Iran’s nuclear program and was successfully used in action against the Bushehr nuclear power plant. However, contrary to the fears of Russian lawmakers, the Internet was not needed for this.
+Industrial systems are usually not connected to the world wide network: they are most often made independent or connected to closed channels. But this did not stop the Stuxnet virus from harming Iranian enterprises, because it was distributed offline - via USB-carriers.
+Global cyberattacks can also be conducted over the Internet, but it just gives hackers more freedom. Tangible damage to infrastructure is usually done in other ways.
+How will the exercises on runet autonomy take place
+In October, Dmitry Medvedev approved the schedule of exercises to ensure the autonomy of Runet. They should be held every year, but the government did not disclose exactly how.
+According to the document, the authorities will check whether traffic exchange points are stable and work out network restoration in case of emergency. Whether foreign traffic will be restricted for some time for this is unknown.
+On November 1, The Bell reported unsuccessful tests of DPI equipment in the Urals. The interlocutors of the publication said that during testing there were failures that led to the disconnection of the Internet.
+The exercises involve the FSB, Roskomnadzor, other departments, telecom operators and owners of traffic exchange points, as well as information dissemination organizers - social networks and instant messengers. The date will be set annually by the Ministry of Communications, but the exercises may be unscheduled - if there is a reason.
+Participants are required to notify of planned exercises in two months, of unscheduled exercises - at least 10 days in advance. The date of the first exercises is still unknown: it should be made publicly available on the website of the Ministry of Communications by December 1.
+As explained by TJ Kulin, according to current standards, almost “any imagination” of the organizers can be an occasion for training. But he believes that if telecom operators show resistance, then this will turn into a ""paper exchange.""
+Will the authorities be able to block the Internet more efficiently thanks to the new law
+The Autonomous Runet Act requires operators to install deep packet analysis (DPI) equipment for networks. He was mentioned even when the “Spring package” was adopted, but then the providers were not forced to introduce expensive filtering. Now the equipment is paid from the budget: they are going to allocate more than 20 billion rubles for this alone.
+Thanks to DPI, authorities will be able to block a specific type of traffic, not just a network address. This will allow introducing more effective restrictions, however, Roskomnadzor will be able to use the equipment only if the RuNet is switched to ""offline mode"".
+But for runet users, it is unlikely that anything will change. At the time of entry into force, the operators have not yet received or certified the equipment - it is still being tested and it is not yet clear when it will begin to be transferred to providers. But even after installing DPI throughout Russia, it is formally impossible to formally use it permanently - only in case of a “threat”.
+As Kulin explained, the equipment will greatly expand the Roskomnadzor’s blocking capabilities without bothering with justification. In his opinion, DPI will not advertise what exactly is being blocked, but even such a lock can be bypassed if desired.
+Even in China there is no 100% lock. You can’t do this. Philip Kulin CEO Diphost author of the Telegram channel Asher II
+
+
+"

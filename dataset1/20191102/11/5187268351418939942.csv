@@ -1,0 +1,384 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Consultório Pplware – Esclareça aqui as suas dúvidas
+02 Nov 2019, 11:00 by Pedro Simões
+Esta semana no consultório Pplware temos os seguintes temas para questões colocadas pelos nossos visitantes:
+Questões apresentadas
+
+
+Que solução escolho para alargar a minha rede de casa?
+
+
+Como consigo ter a minha Mi Band 4 em Inglês?
+
+
+Como é possível forjar um remetente de um email?
+
+
+Como fazer videochamadas via 4G com a câmara frontal?
+
+
+Onde está o gesto dos 3 dedos no novo macOS Catalina?
+
+
+Porque não funciona o powerline na minha rede?
+
+
+
+
+
+
+
+Este consultório pretende esclarecer as dúvidas principais que nos forem transmitidas pelos leitores e visitantes do Pplware, em todas as plataformas, locais e endereços onde estamos já representados.
+A escolha das questões é feita de forma a que sejam abrangidos os máximos de temas possíveis e que sejam apresentadas as que achamos mais relevantes e interessantes.
+As respostas apresentadas espelham o nosso entendimento e pretendem apresentar soluções possíveis. No entanto, contamos com os nossos leitores para as complementar, enriquecer ou até contrapor, para estas fiquem o mais ricas e completas possíveis.
+Para dar continuidade a esta rubrica escolhemos mais algumas questões que foram recebidas no email oficial do Consultório Pplware.
+
+Quer enviar uma questão para o consultório? Leia como o pode fazer no final deste consultório!
+
+
+Que solução escolho para alargar a minha rede de casa?
+
+
+
+
+
+Bom dia!
+Bem, antes demais, gostaria de dizer que adoro a vossa página e já a sigo há uns anos! Super interessante e tenho aprendido bastante.
+Mas como tudo, há certas áreas que não pesco mesmo nada e, uma delas, é a área dos routers, powerlines e repetidores de sinal.
+Enfim, a minha dúvida é a seguinte:
+Eu sou cliente NOS e, há coisa de uns meses, instalaram-me o novo router, o GiGA Router. O feedback que tenho é óptimo, velocidade consegue atingir 400 mbps em 5G, no meu macbook e ronda os 300 e tal mbps no meu telemóvel, os dois através de ligação wi-fi. Mas há um problema, o router está no corredor de minha casa, e as únicas divisões que apanham a velocidade quase toda, são a sala e o quarto dos meus pais, que é as divisões que estão em cada a um dos lados paralelos ao corredor.
+No meu quarto, que é um bocado mais à frente desse corredor, junto ao outro lado da casa, é quase impossível ver um filme em hd sem paragens ou jogar online sem que a ligação caia de x em x minutos.
+Qual seria a melhor forma de ter os mesmos 400mbps ou quase os mesmos 400mbps, no meu quarto? Usando um repetidor de sinal, router ou powerline? Lembrando que, quando uso 5Ghz consigo alcançar maiores velocidades, quando uso a ligação 2.4Ghz, só chega aos 100 mbps (na divisão da sala, no quarto nem nos 20 lhe toca).
+Agradecia muito se me pudessem ajudar neste problema, antes que cometa uma asneira ao ir gastar dinheiro sem perceber patavina do que estou a fazer.
+Resto de bom dia e continuem com o bom trabalho.
+Cumprimentos,
+João Canadinhas
+Resposta:
+João,
+A resposta à sua questão é simples e muito rápida. Avaliando as propostas que tem em cima da mesa, a mais prática, simples de implementar e fiável é a do Powerline.
+Este não está dependente de frequências, de distâncias e de outros elementos, garantindo uma largura de banda muito elevada entre os dispositivos que forem usados dentro da sua rede interna.
+Tem ainda a vantagem de poder ser alterado a qualquer momento, sem obrigar a que sejam feitos testes e novas avaliações de disposição dos repetidores.
+Tenha apenas atenção ao número de estações terminal que necessita, uma vez que os kits ficam mais baratos que os equipamentos unitários.
+[Respondido por Pedro Simões]
+
+Como consigo ter a minha Mi Band 4 em Inglês?
+
+
+
+
+
+Boa tarde
+Eu adquiri a mi band 4, mas é a versão chinesa, e não consigo colocar em português, mesmo em inglês, consigo, mas volta a ficar em chinês quase instantaneamente, têm alguma sugestão de como mudar a linguagem?
+Ricardo Costa
+Resposta:
+Ricardo,
+A versão chinesa da Mi Band 4 suporta apenas 2 idiomas para utilização. Falamos do Inglês e do Chinês.
+Para a usar no único idioma que lhe será útil, o seu smartphone deverá estar também nesse idioma. Por isso, ao mudar para PT ou EN, esta regressa ao seu idioma natural.
+Experimente alterar o idioma do seu smartphone para EN e altere novamente o idioma da Mi Band 4 para Inglês.
+Nesse momento a smartband deverá ficar no idioma que pretende.
+[Respondido por Pedro Simões]
+
+Como é possível forjar um remetente de um email?
+
+
+
+
+
+Bom dia,
+Eu recebi há três dias uma ameaça dessas mas não liguei nenhuma até porque o conteúdo que o hacker dizia ter gravado não podia existir de maneira nenhuma. Mas o que me deixou na dúvida foi o facto do remetente ser o meu próprio endereço de email.
+Assim, qual poderá ser a gravidade do caso? Obrigado
+A. Gomes
+Resposta:
+A Gomes,
+A gravidade desse caso é nula, porque se trata de um esquema conhecido.
+Chama-se “From” spoofing e consiste na manipulação do remetente, utilizando técnicas que não são controláveis pelos protocolos de email, nomeadamente por não ser necessária autenticação para o fazer.
+Se pesquisar por esse termo, encontrará imensa informação online, a começar na Wikipédia:
+
+
+https://en.wikipedia.org/wiki/Email_spoofing
+
+
+[Respondido por Hugo Cura]
+
+Como fazer videochamadas via 4G com a câmara frontal?
+
+
+
+
+
+Boas PPLWARE,
+Alguém consegue explicar porque é que smartphones com câmara frontal apenas fazem videochamadas através da net?
+Tenho um MiA2 e apenas permite usar apps para o efeito (google Duo, Wattsapp…).
+Tenho amigos surdos e nem sempre têm net (alguns, devido à idade, nem usam net).
+Podem explicar ou, melhor ainda, ajudar-me?
+Cumprimentos,
+Luis Chelinho
+Resposta:
+Luís,
+A tecnologia de fala é vídeochamada UMTS, disponível desde que surgiu o 3G e que faz (ou fazia) parte de alguns tarifários de rede móvel.
+Desde há vários anos para cá, a Samsung é a única marca de smartphones a disponibilizar vídeochamada UMTS. Todos os outros fabricantes utilizam o recurso das redes de dados para as videochamadas, em serviços como o Hangouts, Messenger, Viber, Skype ou outros.
+No entanto, parece que até a Samsung também seguiu o inevitável e está a abandonar essa tecnologia, até porque a videochamada UMTS tem recursos mais limitados, menos qualidade e piores resultados no geral.
+Por essa razão, o que há a fazer é adotar um novo serviço para as videochamadas, que implica haver sempre disponível uma rede de dados, Wi-Fi ou móvel.
+[Respondido por Hugo Cura]
+
+Onde está o gesto dos 3 dedos no novo macOS Catalina?
+
+
+
+
+
+Olá e saudações!
+Mais uma vez a pedir ajuda.
+Mac-OS e suas atualizações levantam desafios a quem usa o VoiceOver.
+Aqui mais uma. Como resolver?
+Antes da atualização do Mac-OS 10.15, acedia à função “Mission Control” utilizando o gesto de 3 dedos para cima, e não havia qualquer problema com isso.
+Desde que o Mac-OS atualizou, e agora para o OS 10.15.1, apenas consigo aceder a essa mesma funcionalidade utilizando a tecla FN+touchbar+F9. Simplesmente o gesto 3 dedos para cima deixou de funcionar. Porque será?
+Procurei nas preferências do sistema nas opções “Mission Control”, e é aqui que fiquei a saber do atalho de teclado, mas não como desactivar. Também entrei no opção “Trackpad” e o gesto “3 dedos para cima” está activo, mas, não adianta de nada. Utilizo 3 dedos para cima, e várias vezes o tenho tentado, e o problema é sempre o mesmo – ir ao Mission Control (que é bem mais fácil de aceder e rápido) não efectiva coisa alguma.
+Haverá alguma forma de solucionar esta situação?
+Com os melhores cumprimentos!
+Pedro Ferreira Braga
+Resposta:
+Pedro,
+Acabámos de verificar e o gesto dos 3 dedos está a funcionar perfeitamente no que toca ao Mission control.
+Para além de testarmos o gesto, acedemos às Preferências do sistema e depois a Trackpad.
+Aí dentro, no separador MAis gestos, vai encontrar a opção Mission Control. Deve garantir que a opção ativa é Três dedos para cima.
+Confirme esta configuração e vai garantir que o Mission Control está a funcionar como pretende.
+[Respondido por Pedro Simões]
+
+Porque não funciona o powerline na minha rede?
+
+
+
+
+
+Boa tarde,
+Venho mais uma vez, solicitar a vossa ajuda para o seguinte:
+Tenho 2 salas a onde não há possibilidade de ter acesso há internet, a não ser através de um powerline. Assim sendo, adquiri 2 Kits (uma vez que não estava disponível 1 kit com 1 emissor e 2 recetores), sendo que liguei o emissor na entrada do router e os outros coloquei no mesmo circuito elétrico em cada uma das salas.
+Acontece que quando ligo numa sala o recetor, na outra deixa de funcionar e começa a haver um conflito entre ambos. Foi-me dito que isto devia-se ao facto de os mesmos terem de partilhar o mesmo endereço de IP, e que teria de alterar o IP num deles e que o problema ficaria resolvido.
+Assim sendo, peço a vossa ajuda, para configurar corretamente os equipamentos, a fim, de poder ter acesso á net nas 2 salas já mencionadas.
+Desde já agradeço a vossa ajuda.
+Cumprimentos,
+Ruy Pacheco
+Resposta:
+Ruy,
+Numa configuração normal estes equipamentos recebem a sua configuração de forma diferenciada e adaptada à sua função.
+No que toca à configuração da rede, e do endereço IP, este é feito de forma automática e gerida pelo router central, tipicamente da operadora.
+É por isso estranho que este endereço esteja a ser atribuído a dois equipamentos de forma simultânea.
+O que recomendamos é que faça um reset às configurações dos 3 elementos da rede powerline e que repita a configuração.
+A forma de fazer este reset depende do fabricante, por isso deixamos para si a forma de o fazer.
+Depois desta “limpeza” deverá repetir a configuração de forma faseada (ponto central e um repetidor de cada vez) até ter os 3 elementos funcionais.
+Resista à tentação de alterar as configurações destes equipamentos, uma vez que pode introduzir erros e problemas.
+[Respondido por Pedro Simões]
+
+Agora que estão apresentadas as questões escolhidas e dadas as respostas, pedimos que os nossos leitores as comentem e que contribuam com informações adicionais que julguem serem necessárias.
+Todas e quaisquer questões que gostassem de ver aqui respondidas devem ser colocadas no canal de comunicação exclusivo e dedicado ao consultório Pplware.
+Falamos do email criado para esse fim: consultorio (arroba) pplware.com. Este é o único ponto de recepção das questões que nos enviarem. Usem-no para nos remeterem as vossas questões, as vossas dúvidas ou os vossos problemas. A vossa resposta surgirá muito em breve
+
+Lembrem-se de usar o email consultorio (@) pplware.com para nos enviarem as vossas questões
+
+
+
+",pt,"
+
+
+
+
+
+
+
+
+
+
+
+Pplware Office - Clarify your doubts here
+02 Nov 2019, 11:00 by Pedro Simões
+This week at the Pplware office we have the following topics for questions posed by our visitors:
+Questions presented
+
+
+What solution do I choose to extend my home network?
+
+
+How can I get my Mi Band 4 in English?
+
+
+How is it possible to forge a sender of an email?
+
+
+How to make 4G video calls with the front camera?
+
+
+Where is the 3 finger gesture on the new macOS Catalina?
+
+
+Why doesn't powerline work on my network?
+
+
+
+
+
+
+
+This office aims to clarify the main questions transmitted to us by Pplware readers and visitors on all platforms, locations and addresses where we are already represented.
+The choice of questions is made so that the maximum possible topics are covered and the ones we find most relevant and interesting are presented.
+The answers presented mirror our understanding and aim to provide possible solutions. However, we count on our readers to complement, enrich or even counteract them to make them as rich and complete as possible.
+To continue this section we chose some more questions that were received in the official email of the Pplware Office.
+
+Want to send a question to the office? Read how you can do it at the end of this office!
+
+
+What solution do I choose to extend my home network?
+
+
+
+
+
+Good Morning!
+Well, first of all I would like to say that I love your page and have been following it for a few years! Super interesting and I have learned a lot.
+But like everything, there are certain areas that do not even fish at all and one of them is the area of routers, powerlines and signal repeaters.
+Anyway, my question is as follows:
+I am an NOS client and a few months ago they installed the new router, the GiGA Router. The feedback I have is great, speed can reach 400 mbps in 5G, on my macbook and around 300 and such mbps on my mobile phone, both through wi-fi connection. But there is a problem, the router is in the hallway of my house, and the only divisions that catch almost all speed are my parents' room and bedroom, which are the divisions that are on either side parallel to the hallway. .
+In my room, which is a bit further down this corridor, across the house, it's almost impossible to watch a non-stop HD movie or play online without the connection falling every x minutes.
+What would be the best way to have the same 400mbps or almost the same 400mbps in my room? Using a signal repeater, router or powerline? Remembering that when I use 5Ghz I can reach higher speeds, when I use the 2.4Ghz connection, it only reaches 100 mbps (in the room division, the room doesn't even touch it).
+I would be very grateful if you could help me with this problem before you make a mistake of spending money without realizing what I am doing.
+Rest of good morning and keep up the good work.
+Best regards,
+John Canadinhas
+Answer:
+John,
+The answer to your question is simple and very quick. Evaluating the proposals you have on the table, the most practical, simple to implement and reliable is Powerline.
+It is not dependent on frequencies, distances and other elements, ensuring very high bandwidth between devices that are used within your internal network.
+It also has the advantage that it can be changed at any time, without requiring tests and new repeater disposition assessments.
+Just pay attention to the number of terminal stations you need as kits are cheaper than unitary equipment.
+[Answered by Pedro Simões]
+
+How can I get my Mi Band 4 in English?
+
+
+
+
+
+Good afternoon
+I got the mi band 4, but it's the chinese version, and I can't put it in portuguese, even in english, I can, but it gets back to chinese almost instantly, do you have any suggestions on how to change the language?
+Ricardo Costa
+Answer:
+Ricardo,
+The Chinese version of Mi Band 4 only supports 2 languages for use. We speak English and Chinese.
+To use it in the only language that will be useful to you, your smartphone must also be in that language. So when you switch to PT or EN, it returns to your natural language.
+Try changing the language of your smartphone to EN and change the language of Mi Band 4 back to English.
+At this point the smartband should be in the language you want.
+[Answered by Pedro Simões]
+
+How is it possible to forge a sender of an email?
+
+
+
+
+
+Good Morning,
+I received such a threat three days ago but didn't care about it either because the content the hacker claimed to have recorded could not exist at all. But what left me in doubt was that the sender was my own email address.
+So how serious can the case be? Thanks
+A. Gomes
+Answer:
+Gomes,
+The severity of this case is null because it is a known scheme.
+It is called ""From"" spoofing and consists of manipulating the sender using techniques that are not controllable by email protocols, namely because authentication is not required to do so.
+If you search for this term, you will find plenty of information online, starting at Wikipedia:
+
+
+https://en.wikipedia.org/wiki/Email_spoofing
+
+
+[Answered by Hugo Cura]
+
+How to make 4G video calls with the front camera?
+
+
+
+
+
+Good PPLWARE,
+Can anyone explain why front camera smartphones only make video calls over the net?
+I have a MiA2 and just lets use apps for that purpose (google duo, wattsapp…).
+I have deaf friends and don't always have a net (some due to age don't even use net).
+Can you explain or, even better, help me?
+Best regards,
+Luis Chelinho
+Answer:
+Luís,
+The technology of speech is called UMTS video, available since 3G came about and that is (or was) part of some mobile network tariffs.
+For several years now, Samsung has been the only smartphone brand to offer UMTS video calling. All other manufacturers use the data networks feature for video calling on services such as Hangouts, Messenger, Viber, Skype or others.
+However, it seems that even Samsung has also followed the inevitable and is abandoning this technology, not least because the UMTS video call has more limited features, lower quality and worse overall results.
+For this reason, the only thing to do is to adopt a new video call service, which means that a data, Wi-Fi or mobile network is always available.
+[Answered by Hugo Cura]
+
+Where is the 3 finger gesture on the new macOS Catalina?
+
+
+
+
+
+Hello and greetings!
+Once again asking for help.
+Mac-OS and its updates pose challenges for those using VoiceOver.
+Here one more. How to solve?
+Prior to the Mac-OS 10.15 upgrade, I accessed the “Mission Control” function using the 3-finger up gesture, and there was no problem with that.
+Since Mac-OS upgraded, and now to OS 10.15.1, I can only access that functionality using the FN + touchbar + F9 key. Simply the 3 finger up gesture no longer works. I wonder why?
+I searched the system preferences for the “Mission Control” options, and this is where I learned the keyboard shortcut, but not how to disable it. I also entered the “Trackpad” option and the “3 fingers up” gesture is active, but it's no use. I use 3 fingers up, and I have tried it several times, and the problem is always the same - going to Mission Control (which is much easier to access and fast) does nothing.
+Is there any way to remedy this?
+Best regards!
+Pedro Ferreira Braga
+Answer:
+Peter,
+We just checked and the 3 finger gesture is working perfectly for Mission control.
+In addition to testing the gesture, we go to System Preferences and then Trackpad.
+Inside, on the More gestures tab, you will find Mission Control. You must ensure that the active option is Three Fingers Up.
+Confirm this setting and you will ensure that Mission Control is working as intended.
+[Answered by Pedro Simões]
+
+Why doesn't powerline work on my network?
+
+
+
+
+
+Good afternoon,
+I come again, ask your help for the following:
+I have 2 rooms where there is no possibility of having access there is internet, except through a powerline. Therefore, I purchased 2 Kits (since 1 kit with 1 transmitter and 2 receivers was not available), and I turned the transmitter on the router's input and the others put in the same electrical circuit in each of the rooms.
+It turns out that when I call the receiver in one room, the other one stops working and there is a conflict between them. I was told that this was because they had to share the same IP address, and that I would have to change the IP on one of them and that the problem would be resolved.
+Therefore, I ask your help, to properly configure the equipment in order to have access to the net in the two rooms already mentioned.
+I thank you for your help.
+Best regards,
+Ruy pacheco
+Answer:
+Ruy,
+In a normal configuration these devices receive their configuration differently and adapted to their function.
+Regarding the configuration of the network, and the IP address, this is done automatically and managed by the central router, typically the operator.
+It is therefore strange that this address is being assigned to two devices simultaneously.
+What we recommend is that you reset the settings of the 3 powerline network elements and repeat the configuration.
+How you reset this depends on the manufacturer, so we leave it to you.
+After this “cleaning” you should repeat the configuration in a phased manner (center point and one repeater at a time) until you have the 3 functional elements.
+Resist the temptation to change the settings of these devices as it may introduce errors and problems.
+[Answered by Pedro Simões]
+
+Now that we have presented the chosen questions and given the answers, we ask that our readerscommenters and provide additional information they deem necessary.
+Any and all questions you would like to see answered here should be posted on the exclusive communication channel dedicated to the Pplware office.
+We are talking about the email created for this purpose: consulting (at) pplware.com. This is the only point of receipt of questions sent to us. Use it to send us your questions, your doubts or your problems. Your answer will come very soon
+
+Remember to use email consulting (@) pplware.com to send us your questions.
+
+
+
+"

@@ -1,0 +1,200 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Cross-Plattform-Entwicklung mit Ionic 4, Stencil und Capacitor, Teil 1
+Mit Version 4 hat sich Ionic nach Angular auch für die Frameworks React und Vue.js geöffnet. Grund genug, es sich im Detail anzusehen. 
+05 Nov 2019, 06:00 by Norbert Frank
+Ionic ist ein generisches UI-Framework zur einfachen Entwicklung von Apps mit Webtechniken. Die Ionic-Gründer sind vor einigen Jahren mit der Vision gestartet, Entwickler beim Erstellen mobiler Web-Apps zu unterstützen, die sich für Endanwender wie native Apps der jeweiligen Plattform darstellen. Für die ersten drei Versionen des Frameworks war Ionic noch zu einigen technischen Kompromissen gezwungen und stark an das JavaScript-Framework Angular gebunden. Mit Version 4 hat man sich mit Web Components von dieser Historie gelöst. Was das bedeutet und welche Möglichkeiten Ionic und die Schwesterprojekte Stencil und Capacitor nun bieten, betrachtet dieser Artikel.
+Was bisher geschah
+Wer heute Ionic einsetzt, wird in Support-Foren und bei der Suche nach Blogbeiträgen und Tutorials im Internet vor die Herausforderung gestellt, jeweils zuzuordnen, auf welche Version sich ein Beitrag bezieht. Das kann für Einsteiger verwirrend sein und lässt sich besser nachvollziehen, wenn man die Versionshistorie von Ionic kennt. Das Team hinter Ionic begann 2012 mit der Arbeit an einem UI-Framework für die Erstellung mobiler Apps. Am Anfang hatten sie noch das Ziel, die UI-Komponenten für alle damals verbreiteten Frontend-Frameworks anzubieten. Neben Angular 1 waren das Backbone und Knockout.js.
+Schnell mussten sie allerdings feststellen, dass dies zu drei verschiedenen Versionen des Ionic-Frameworks geführt hätte, die sie separat mit hohem Aufwand hätten entwickeln müssen. Da Angular 1 zu der Zeit massiv an Popularität gewann, war die Entscheidung naheliegend, sich nur darauf zu konzentrieren.
+Im November 2013 erschien das erste Alpha-Release, im Mai 2015 schließlich die finale Version 1.0. Auf Basis von Angular 1 konnten Anwender mit Ionic 1 mobile Apps mit Webtechniken erstellen. Auch in der ersten Version brachte Ionic schon einen eigenen Router und Funktionen wie Page-Transitions mit. Die Integration mit Cordova zur Kapselung als native App übernahm das Ionic Command Line Interface (CLI) weitgehend automatisch, was insbesondere für Anfänger ein großer Vorteil war und bis heute ist.
+Als sich mit Angular 2 viele Konzepte änderten, war auch das Ionic-Team gezwungen, Ionic 2 auf Basis davon neu zu entwickeln. Ionic 2 erschien Anfang 2017 und setzte zwar auf die neue Version des JavaScript-Frameworks, enthielt aber eigene Build-Tools und einen eigenen Router, da man damals die Angular-eigene Lösung für (noch) nicht geeignet hielt. Schon im März 2017 erschien Ionic 3 auf Basis von Angular 4. Ionic 3 wird weiterhin gewartet und ist noch sehr verbreitet.
+Framework-agnostische Web Components
+Da sich die Webentwicklung seit der ersten Version deutlich weiterentwickelt hatte, konnte das Framework mit Version 4 die ursprüngliche Vision wieder aufgreifen, ein Set von UI-Komponenten unabhängig von konkreten Frontend-Frameworks anbieten zu können. Der Schlüssel dazu sind Web Components. Mit der Anfang 2019 erschienenen Version 4 von Ionic liegen alle UI-Komponenten als eigenständige Web Components vor. Sie haben keine Abhängigkeiten zu weiteren Libraries und Frameworks und sind daher flexibel einsetzbar. Um den Entwicklungskomfort zu erhöhen, existieren fertige Integrationen für Angular, React und Vue.js. Im Rahmen der Entwicklung von Ionic 4 entstanden auch der Web-Components-Compiler Stencil und die Cordova-Alternative Capacitor. Ionic 4 ist dadurch deutlich mächtiger und flexibler als seine Vorgänger.
+Da die Ionic-Komponenten nun als Web Components vorliegen, können Entwickler sie wie normale HTML-Elemente einsetzen. Dazu reicht es, die JavaScript- und CSS-Definition der Library einzubinden:
+<link href=""https://unpkg.com/@ionic/core@latest/css/ionic.bundle.css"" rel=""stylesheet"" /><script src=""https://unpkg.com/@ionic/core@latest/dist/ionic.js""></script>
+Anschließend kann man die Ionic-Komponenten wie in folgendem Beispiel verwenden:
+<ion-app>    <ion-header>        <ion-toolbar mode=""ios"">            <ion-title>Ionic 4</ion-title>        </ion-toolbar>    </ion-header>    <ion-content>        <ion-card button=""true"" onclick=""helloWorld()"">            <img src=""https://images.unsplash.com/photo-1560732488-6b0df240254a?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80"" />            <ion-card-header>                <ion-card-subtitle>Ionic 4</ion-card-subtitle>                <ion-card-title>Ionic 4 Web Components</ion-card-title>            </ion-card-header>            <ion-card-content>                Die Ionic Web Components können wie normale HTML-Elemente eingesetzt werden!            </ion-card-content>        </ion-card>    </ion-content></ion-app>
+Obwohl hier ein einzelnes JavaScript-Bundle eingebunden ist, wird die Definition der einzelnen Komponenten erst asynchron geladen, wenn die jeweilige Komponente eingesetzt wird. Ionic nutzt dabei ein Verfahren, zunächst nur eine leere Proxy-Definition der Web Component zu registrieren. Dadurch bleibt der initiale Download auch für eine dreistellige Anzahl an Komponenten sehr klein. Erst wenn eine Web Component im DOM Verwendung findet, lädt Ionic deren Funktionen asynchron und stellt sie bereit. Dabei kommen in zeitgemäßen Browsern dynamische Importe von ES-Modulen zum Einsatz. Durch dieses Verfahren wird eine optimale Startzeit der App erzielt. Gleichzeitig kann das Framework nahezu beliebig viele UI-Komponenten enthalten. Für die Entwicklung ist es komfortabel, dass nur ein einziges Bundle einzubinden ist.
+Die Web Components können Nutzer über HTML-Attribute konfigurieren. Einige Web Components haben zusätzlich auch eine JavaScript-API. Um sie zu verwenden, benötigt man eine Referenz auf das zugehörige DOM-Element:
+const modalController = document.querySelector(""ion-modal-controller"");await modalController.componentOnReady();const modalElement = await modalController.create({    component: ""modal-content""});await modalElement.present();
+Das obige Beispiel ermittelt eine ion-modal-controller-Komponente im DOM, deren asynchrone Initiierung componentOnReady abwartet und anschließend die create-Methode aufruft, um einen modalen Dialog zu erzeugen. Die Anzeige des Dialogs erfolgt anschließend mit present.
+Um die Ionic-Komponenten einzusetzen, muss man keine Web Components selbst schreiben. Sie können aber sehr hilfreich sein, wenn man auf ein zusätzliches JavaScript-Framework verzichten möchte. So kann man zum Beispiel den Inhalt eines modalen Dialogs als Web Component definieren:
+customElements.define(    ""modal-content"",    class extends HTMLElement {        connectedCallback() {            this.innerHTML = `                <ion-header>                    <ion-toolbar>                    <ion-title>Ein modaler Dialog</ion-title>                    </ion-toolbar>                </ion-header>                <ion-content padding>                    Der Inhalt dieses Dialogs ist selbst eine Web Component!                </ion-content>`;        }    });
+Die hier definierte Web Component modal-content kann dann wie im vorhergehenden Beispiel gezeigt die ion-modal-controller-Komponente in der create-Methode referenzieren, um den Inhalt eines modalen Dialogs festzulegen.
+Styling von Ionic-Komponenten
+Auch wenn man keine eigenen Web Components entwickelt, ist etwas Verständnis des Shadow DOM in Bezug auf das Styling von Ionic-Komponenten von Vorteil. Wer von früheren Ionic-Versionen gewohnt war, über CSS das innere Aussehen der Ionic-Komponenten beliebig anpassen zu können, wird sich umgewöhnen müssen. Durch den Einsatz von Web Components mit einem Shadow DOM kann man nur noch die von Ionic offiziell vorgesehenen Attribute anpassen. Das mag nach einem Nachteil klingen, erzwingt aber, dass man die Komponenten tatsächlich nur in der vorgesehenen Weise einsetzt. Das ist spätestens beim nächsten Versions-Upgrade von Vorteil und erspart langfristig viel Wartungsaufwand.
+Ein einfaches Beispiel stellt die Möglichkeiten dar. Die Ionic-Komponente ion-title zur Anzeige eines Titels in Toolbars wird auf folgende Weise im Quellcode definiert:
+<ion-title>Ein modaler Dialog</ion-title>
+Das führt zur Laufzeit zu einer Darstellung, die in den Developer-Tools des Browsers ungefähr so aussieht:
+<ion-title>    #shadow-root (open)    <div class=""toolbar-title"">        <slot>          #text        </slot>    </div>    ""Ein modaler Dialog""</ion-title>
+Die Web Component ion-title hat im Shadow DOM ein div-Element mit der CSS-Klasse toolbar-title und darin ist ein Slot für den Titeltext gekapselt.
+Das umschließende ion-title ist das sogenannte Host-Element und ist über normales CSS erreichbar. Die folgende CSS-Regel führt daher zu einem roten Rand:
+ion-title {    border: 1px solid red;}
+Das div-Element mit der CSS-Klasse toolbar-title befindet sich hingegen im Shadow DOM. Daher hat folgende CSS-Regel keine Auswirkung:
+ion-toolbar .toolbar-title {    color: red;}
+CSS-Regeln im normalen DOM können keinen Einfluss auf den Shadow-DOM nehmen. Aber es gibt eine Ausnahme dafür: CSS-Custom-Properties werden auch an den Shadow-DOM weitergegeben. Die Ionic-Komponenten bieten daher viele Styling-Optionen in Form von CSS-Custom-Properties an. Für ion-title gibt es beispielsweise ein Attribut für die Farbdefinition: --color. Über folgendes CSS lässt sich daher ein roter Titel definieren:
+ion-title {    --color: red;}
+Innerhalb des div-Elements befindet sich wie zuvor gezeigt ein Slot als Platzhalter für weiteren Inhalt. Der Inhalt des Slots ist im Beispiel der Text ""Ein modaler Dialog"". Wie in den Developer-Tools angedeutet, befindet sich dieser Text nicht im Shadow-DOM, sondern im normalen DOM und wird lediglich in den Slot des Shadow-DOMs projiziert. Da sich der Inhalt im normalen DOM befindet, können Entwickler ihn über CSS ansprechen. Eine rote Farbe des Titels kann man daher auch so umsetzen:
+<ion-title><span class=""red"">Ein modaler Dialog</span></ion-title>.red {    color: red;}
+Das span-Element mit der CSS-Klasse red befindet sich im normalen DOM, weshalb die CSS-Regel für die Klasse den gewünschten Effekt hat.
+Da viele Ionic-Komponenten mit Slots arbeiten, sind die Einschränkungen in Bezug auf die Styling-Möglichkeiten durch den Shadow DOM in der Praxis eher selten ein Problem. Durch den Einsatz von CSS-Custom-Properties haben die Komponenten eine Styling-API und die interne Struktur ist sauber gekapselt. In Kombination mit den Slots ergeben sich vielfältige Anwendungsmöglichkeiten.
+Ionic mit Angular, React oder Vue.js
+Die Ionic-Komponenten können Entwickler als eigenständige Web Components direkt einsetzen. Für größere Projekte bringen moderne Frontend-Frameworks aber viele Vorteile mit. Es wäre möglich, die Ionic Web Components direkt in einem Framework wie Angular oder React einzusetzen, das erfordert aber, dass man selbst die Integration in das Komponentenkonzept des gewünschten Frameworks vornimmt.
+Um die Arbeit mit Ionic zu vereinfachen, hat das Ionic-Team die Integration für Angular, React und Vue.js übernommen und stellt sie fertig bereit. Dadurch lassen sich die Ionic-Komponenten einsetzen, als wären sie für das jeweilige Framework entwickelt worden. Zusätzlich ist für jedes der drei Frameworks dessen Standard-Router integriert. Dadurch wird es möglich, bei Seitenwechseln automatisch eine geeignete Animation einzublenden und dabei auch zwischen Vorwärts- und Rückwärtsnavigation zu unterscheiden.
+Vorsprung für Angular
+Angular hat aufgrund der Historie die ausgereifteste Unterstützung. Ein neues Projekt initiiert man mit dem Ionic CLI per ionic start. Das Ionic CLI nutzt den Angular-CLI-Befehl ng create zur Erzeugung des Projekts, so dass die Projektstruktur dem Angular-Standard entspricht. Es gibt verschiedene Start-Templates, die man als Ausgang für das eigene Projekt nutzen kann.
+Die Ionic-Komponenten lassen sich wie Angular-Komponenten nutzen und im Vergleich zu Ionic 3 hat sich in der Verwendung wenig geändert. Intern kommen aber nun leichtgewichtige Wrapper zum Einsatz, um die Web Components zu kapseln. Neben den Komponenten stellt Ionic einige Angular-Services zur Steuerung von Overlay-Komponenten wie modalen Dialogen, Popups und Alerts oder Funktionen wie virtuelles Scrolling zur Verfügung.
+Um einen modalen Dialog zu öffnen, benötigt man daher nicht wie im vorhergehenden Beispiel ein ion-modal-controller-Element im DOM, sondern erzeugt den Dialog über den ModalController-Service:
+import { Component } from ""@angular/core"";import { ModalController } from ""@ionic/angular"";import { UserEditPage } from ""../user-edit/user-edit.page"";@Component({    selector: ""app-home"",    templateUrl: ""home.page.html"",    styleUrls: [""home.page.scss""]})export class HomePage {    constructor(public modalCtrl: ModalController) {}    async openEditModal() {        const modal = await this.modalCtrl.create({            component: UserEditPage,        });        await modal.present();    }}
+Nun auch mit React
+Die React-Integration von Ionic ist mittlerweile allgemein verfügbar. Auch hier sorgt die Integration dafür, dass Entwickler die Komponenten so nutzen können, als ob es native React-Komponenten wären. Ein Projekt lässt sich per Ionic CLI mit ionic start --type=react initialisieren. Dafür nutzt das Ionic CLI intern create-react-app und erzeugt ein TypeScript-Projekt. Als Router dient der React-Router.
+Die Namen der Komponenten notiert man in Pascal Case im Gegensatz zum Kebab Case bei Angular: aus <ion-button> wird <IonButton>. Ansonsten ist die Verwendung sehr ähnlich zu Angular, da es sich natürlich auch weiterhin um die gleichen Web Components handelt.
+Da React kein Service-Konzept bietet, kann man die API für modale Dialoge und andere Funktionen über eine Wrapper-Komponente ansprechen. Ein modaler Dialog wird mittels IonModal definiert und die Sichtbarkeit über eine Variable gesteuert. Darüber können Anwender auch Lifecycle-Callbacks definieren. In folgendem Beispiel wird der Komponente UserEdit eine Funktion zum Schließen des Dialogs als Render Prop übergeben:
+<IonModal    isOpen={this.state.showEditModal}    onDidDismiss={() => this.setState(() => ({ showEditModal: false }))}>    <UserEdit        dismissModal={() => this.setState(() => ({ showEditModal: false }))}    ></UserEdit></IonModal>
+Zu beachten ist, dass man alle eingesetzten Komponenten aus @ionic/react importieren muss.
+Aller guten Dinge sind drei: Vue.js
+Die Vue.js-Integration befindet sich aktuell noch im Beta-Status. Das Ionic CLI unterstützt noch keine Erzeugung eines Ionic-Vue-Projekts. Stattdessen fügt man Ionic als Plug-in zu einem vorhandenen Vue-Projekt hinzu:
+npm install @ionic/vue
+In der main.js des Projekts wird das Plug-in geladen und zusätzlich eine Ionic-CSS-Datei eingebunden:
+import Vue from 'vue';import App from './App.vue';import router from './router';import Ionic from '@ionic/vue';import '@ionic/core/css/ionic.bundle.css';Vue.use(Ionic);Vue.config.productionTip = false;new Vue({  router,  render: h => h(App)}).$mount('#app');
+Das Plug-in registriert die Ionic-Komponenten global. Entwickler können sie daher direkt verwenden.
+Über eine Vue-Prototyp-Erweiterung macht Ionic die Controller der Overlay-Komponenten in der gesamten Anwendung verfügbar. Man kann sie über this.$ionic aufrufen.
+Ein modaler Dialog lässt sich somit wie folgt öffnen:
+const modal = await this.$ionic.modalController.create({    component: UserEdit,});await modal.present();
+Derzeit unterstützen die Formular-Komponenten von Ionic noch kein Binding mittels v-model. Da v-model aber nur eine Kurzform für die Übergabe des Werts und Registrierung eines Event-Listeners ist, können Entwickler folgende Form verwenden:
+<ion-input     :value=""name""    @ionInput=""name = $event.target.value""></ion-input>
+Upgrade von Ionic 3
+Da Ionic 3 nur für Angular zur Verfügung steht, kann ein Upgrade auch nur Angular-Projekte betreffen. Die empfohlene Vorgehensweise zum Upgrade auf Ionic 4 ist, ein neues Projekt mit Ionic 4 anzulegen und dann die Funktionen Schritt für Schritt aus der alten App zu übernehmen. Die meisten Ionic-Komponenten sind in ihrer Verwendung unverändert. Trotzdem kann ein Upgrade für eine komplexe Anwendung mehrere Tage Arbeit bedeuten, denn es findet gleichzeitig auch ein Angular-Upgrade von Version 4 auf 7 statt und es sind diverse kleinere Anpassungen zu berücksichtigen.
+Hier nun ein kurzer Überblick über die wesentlichen Änderungen:
+
+CSS: das Styling der Komponenten muss auf die Verwendung der CSS Custom Properties umgestellt werden.
+Die Projektstruktur wurde leicht angepasst und folgt nun der offiziell empfohlenen Struktur von Angular. Der Ordner ""pages"" entfällt und wird in den ""app""-Ordner integriert.
+Man muss vom Ionic-Router auf den Angular-Router umstellen.
+Angular 4 wird auf Angular 7 angehoben.
+Mit dem Angular-Upgrade ist auch ein Upgrade von RxJS 5 auf 6 verbunden.
+In den Templates gibt es diverse Markup-Anpassungen.
+Overlay-Komponenten haben nun eine asynchrone API.
+Mehrere Lifecycle-Events wurden auf Angular-Events umgestellt.
+
+Die meisten Umstellungsaktivitäten sind Fleißarbeit. Es gibt ein Set von TS-Lint-Regeln, die bei der Umstellung der Markup-Anpassungen unterstützen und einen Teil auch automatisch übernehmen können. Bei RxJS hat es von der Version 5 auf 6 größere Veränderungen gegeben. Über das Paket rxjs-compat kann man aber Kompatibilität zu Version 5 erreichen, sodass keine Anpassungen am eigenen Code erforderlich sind. Man sollte aber überlegen, ob nicht direkt die Umstellung auf die Syntax von Version 6 sinnvoll ist.
+Beim Umstellen auf den Angular-Router ist man damit konfrontiert, dass der Ionic-Router und die Controller für Overlays das Laden von Seiten über die Angabe der Seiten-ID als String erlaubten. Zukünftig wird eine Referenz auf die Komponente benötigt. Wenn man die Seiten in eigene Module kapselt, bedeutet das festzulegen, ob Overlay-Komponenten in einem eigenen Modul definiert werden oder zusätzlich im Modul der aufrufenden Seite integriert sind. Die Komponente muss man dann in den EntryComponents des Moduls aufführen. Weiterhin muss die API der Overlay-Komponenten von synchronen Aufrufen auf eine asynchrone API umgestellt werden.
+In der Ionic-Dokumentation unter ""Guide | Building | Migration"" ist die offiziell empfohlene Vorgehensweise dokumentiert.
+Fazit
+Die Ionic-UI-Komponenten können mit der Version 4 als generische Web Components flexibler als bisher eingesetzt werden. Für die bekannten Frontend-Frameworks Angular, React und Vue.js stehen fertige Integrationen bereit, die den Komfort erhöhen. Im zweiten Teil des Artikels werden die Schwesterprojekte Capacitor und Stencil betrachtet, die Ionic um interessante Möglichkeiten ergänzen. (bbo)
+
+Norbert Frankist seit mehr als 15 Jahren in der IT als Entwickler, Berater und Softwarearchitekt tätig. Er ist passionierter Full-Stack-Entwickler und JavaScript-Enthusiast bei der Lucom GmbH.
+
+
+
+",de,"
+
+
+
+
+
+
+
+
+
+
+
+Cross-Platform Development with Ionic 4, Stencil and Capacitor, Part 1
+With version 4 Ionic after Angular opened also for the frameworks React and Vue.js. Reason enough to look at it in detail.
+05 Nov 2019, 06:00 by Norbert Frank
+Ionic is a generic UI framework for easily developing apps using web techniques. The Ionic founders started a few years ago with the vision of helping developers create mobile web apps that look like end users' native apps on the platform. For the first three versions of the framework, Ionic was still forced to make technical compromises and was heavily tied to the Angular JavaScript framework. With version 4 one solved oneself with Web Components of this history. What this means and what opportunities Ionic and the sister projects Stencil and Capacitor now offer, looks at this article.
+What happened until now
+Anyone using Ionic today is challenged in support forums and when looking for blog posts and tutorials on the Internet, each of which is assigned to which version of a contribution relates. This can be confusing for beginners and is easier to understand if you know the version history of Ionic. The team behind Ionic started working on a UI framework for creating mobile apps in 2012. At the beginning, they still had the goal of offering the UI components for all frontend frameworks that were common at the time. Next to Angular 1 were the Backbone and Knockout.js.
+However, they quickly realized that this would have led to three different versions of the Ionic framework, which they would have had to develop separately at great expense. Since Angular 1 was gaining mass popularity at the time, the obvious choice was to focus on it.
+In November 2013, the first alpha release was released, in May 2015 finally the final version 1.0. Based on Angular 1, users could use Ionic 1 to create mobile apps using web techniques. In the first version, Ionic also brought its own router and features such as page transitions. The integration with Cordova for encapsulation as a native app took over the Ionic Command Line Interface (CLI) largely automatically, which was a big advantage, especially for beginners, and still is today.
+When many concepts changed with Angular 2, the Ionic team was forced to redevelop Ionic 2 based on it. Ionic 2 was released in early 2017 and relied on the new version of the JavaScript framework, but included its own build tools and its own router, because at that time Angular's own solution was not (yet) suitable. Ionic 3 was already released in March 2017 based on Angular 4. Ionic 3 is still being maintained and is still very common.
+Framework Agnostic Web Components
+Since Web development has evolved significantly since the first version, the Version 4 framework was able to revert to the original vision of offering a set of UI components independent of concrete front-end frameworks. The key to this is Web Components. With the beginning of 2019 published version 4 of Ionic all UI components exist as independent Web components. They have no dependencies on other libraries and frameworks and can therefore be used flexibly. In order to increase the development comfort, there are ready integrations for Angular, React and Vue.js. As part of the development of Ionic 4, the Web components compiler Stencil and the Cordova alternative Capacitor were also created. This makes Ionic 4 much more powerful and flexible than its predecessors.
+Since the Ionic components are now available as Web Components, developers can use them like normal HTML elements. All you have to do is to include the JavaScript and CSS definition of the library:
+<link href = ""https://unpkg.com/@ionic/core@latest/css/ionic.bundle.css"" rel = ""stylesheet"" /> <script src = ""https://unpkg.com/@ionic /core@latest/dist/ionic.js ""> </ script>
+Then you can use the Ionic components as in the following example:
+<ion-app> <ion-header> <ion-toolbar mode = ""ios""> <ion-title> Ionic 4 </ ion-title> </ ion-toolbar> </ ion-header> <ion-content> <ion-card button = ""true"" onclick = ""helloWorld ()""> <img src = ""https://images.unsplash.com/photo-1560732488-6b0df240254a?ixlib=rb-1.2.1&auto=format&fit=crop&w= 1950 & q = 80 ""/> <ion-card-header> <ion-card-subtitle> Ionic 4 </ ion-card-subtitle> <ion-card-title> Ionic 4 Web Components </ ion-card-title> < / ion-card-header> <ion-card-content> The Ionic Web Components can be used like normal HTML elements! </ ion-card-content> </ ion-card> </ ion-content> </ ion-app>
+Although a single JavaScript bundle is included here, the definition of each component is not loaded asynchronously until the component is deployed. Ionic uses a procedure to initially register only an empty proxy definition of the Web Component. As a result, the initial download remains very small even for a three-digit number of components. Only when a Web Component is used in the DOM does Ionic load its functions asynchronously and make them available. In this case, dynamic imports of ES modules are used in modern browsers. This method achieves an optimal start time of the app. At the same time, the framework can contain almost any number of UI components. For development, it is comfortable that only a single bundle is involved.
+The Web Components can configure users via HTML attributes. Some web components also have a JavaScript API. To use them, you need a reference to the associated DOM element:
+const modalController = document.querySelector (""ion-modal-controller""); await modalController.componentOnReady (); const modalElement = await modalController.create ({component: ""modal-content""}); await modalElement.present ();
+The example above identifies an ion-modal-controller component in the DOM whose asynchronous initiation waits for componentOnReady and then calls the create method to generate a modal dialog. The dialog is then displayed with present.
+To use the Ionic components, you do not have to write Web components yourself. But you can be very helpful if you want to do without an additional JavaScript framework. For example, you can define the content of a modal dialog as a Web Component:
+customElements.define (""modal-content"", class extends HTMLElement {connectedCallback () {this.innerHTML = `<ion-header> <ion-toolbar> <ion-title> A modal dialog </ ion-title> </ ion -toolbar> </ ion-header> <ion-content padding> The content of this dialog is itself a web component! </ ion-content> `;}});
+The modal-content web component defined here can then reference the ion-modal-controller component in the create method, as shown in the previous example, to specify the content of a modal dialog.
+Styling of Ionic components
+Even if you do not develop your own web components, some understanding of the Shadow DOM in terms of the styling of Ionic components is an advantage. Anyone who was accustomed to adapting the inner appearance of the Ionic components via CSS as it is known from earlier Ionic versions will have to get used to it. By using Web Components with a Shadow DOM, you can only customize the attributes officially provided by Ionic. This may sound like a downside, but it forces you to actually use the components only in the intended way. This is an advantage at the latest in the next version upgrade and saves a lot of maintenance in the long term.
+A simple example illustrates the possibilities. The ionic component ion-title for displaying a title in toolbars is defined in the source code as follows:
+<ion-title> A modal dialog </ ion-title>
+This results in a representation at runtime that looks something like this in the browser's developer tools:
+<ion-title> # shadow-root (open) <div class = ""toolbar-title""> <slot> #text </ slot> </ div> ""A modal dialog"" </ ion-title>
+The Web Component ion-title has in the Shadow DOM a div element with the CSS class toolbar-title and in it a slot for the title text is encapsulated.
+The enclosing ion-title is the so-called host element and is accessible via normal CSS. The following CSS rule therefore results in a red border:
+ion-title {border: 1px solid red;}
+The div element with the CSS class toolbar-title, on the other hand, is in the shadow DOM. Therefore, the following CSS rule has no effect:
+ion-toolbar .toolbar-title {color: red;}
+CSS rules in the normal DOM can not affect the shadow DOM. But there is one exception: CSS custom properties are also passed to the shadow DOM. The Ionic components therefore offer many styling options in the form of CSS custom properties. For ion-title, for example, there is an attribute for the color definition: --color. The following CSS can be used to define a red title:
+ion-title {--color: red;}
+Within the div element, as previously shown, there is a slot as a placeholder for additional content. The content of the slot in the example is the text ""A modal dialog"". As indicated in the developer tools, this text is not in the shadow DOM, but in the normal DOM and is merely projected into the slot of the shadow DOM. Since the content is in the normal DOM, developers can address it via CSS. A red color of the title can therefore alsoto implement:
+<ion-title> <span class = ""red""> A modal dialog </ span> </ ion-title> .red {color: red;}
+The span element with the CSS class red is in the normal DOM, so the CSS rule for the class has the desired effect.
+Since many Ionic components work with slots, the limitations on styling capabilities offered by the Shadow DOM are rarely a problem in practice. By using custom CSS properties, the components have a styling API and the internal structure is well-encapsulated. In combination with the slots there are many possible applications.
+Ionic with Angular, React or Vue.js
+The Ionic components can be used directly by developers as independent Web components. For larger projects, however, modern front-end frameworks bring many advantages. It would be possible to use the Ionic Web Components directly in a framework such as Angular or React, but this requires that you yourself be integrated into the component concept of the desired framework.
+To simplify the work with Ionic, the Ionic team has taken over the integration for Angular, React and Vue.js and ready them. As a result, the Ionic components can be used as if they had been developed for the respective framework. In addition, each of the three frameworks has its standard router integrated. This makes it possible to automatically display a suitable animation during page changes and also to differentiate between forward and backward navigation.
+Advantage for Angular
+Angular has the most mature support due to its history. A new project is being initiated with the ionic CLI per ionic start. The Ionic CLI uses the Angular CLI command ng create to create the project so that the project structure conforms to the Angular standard. There are different startup templates that you can use as an output for your own project.
+The Ionic components can be used like Angular components and compared to Ionic 3 has changed little in use. Internally, lightweight wrappers are now being used to encapsulate the web components. In addition to the components, Ionic also provides some Angular services for controlling overlay components such as modal dialogs, popups and alerts or functions such as virtual scrolling.
+Therefore, to open a modal dialog, you do not need an ion-modal-controller-element in the DOM like in the previous example, but you create the dialog via the ModalController-Service:
+import {Component} from ""@ angular / core""; import {ModalController} from ""@ ionic / angular""; import {UserEditPage} from ""../ user-edit / user-edit.page""; @ Component ({selector: ""app-home"", templateUrl: ""home.page.html"", styleUrls: [""home.page.scss""]}) export class HomePage {constructor (public modalCtrl: ModalController) {} async openEditModal () {const modal = await this.modalCtrl.create ({component: UserEditPage,}); await modal.present (); }}
+Well with React
+The React integration of Ionic is now widely available. Again, the integration ensures that developers can use the components as if they were native React components. A project can be initialized via ionic CLI with ionic start --type = react. To do this, the Ionic CLI internally uses create-react-app and generates a TypeScript project. The router is the React router.
+The names of the components are noted in Pascal Case, in contrast to the Kebab Case in Angular: <ion-button> becomes <IonButton>. Otherwise, the use is very similar to Angular, as it of course continues to be the same Web Components.
+Since React does not offer a service concept, the API for modal dialogs and other functions can be addressed via a wrapper component. A modal dialog is defined by IonModal and the visibility is controlled by a variable. In addition, users can also define lifecycle callbacks. In the following example, the UserEdit component is given a function to close the dialog as Render Prop:
+<IonModal isOpen = {this.state.showEditModal} onDidDismiss = {() => this.setState (() => ({showEditModal: false}))}> <UserEdit dismissModal = {() => this.setState (() ) => ({showEditModal: false}))}> </ UserEdit> </ IonModal>
+It should be noted that all components used must be imported from @ ionic / react.
+All good things come in threes: Vue.js
+The Vue.js integration is currently still in beta status. The Ionic CLI does not yet support generation of an Ionic Vue project. Instead, you add Ionic as a plug-in to an existing Vue project:
+npm install @ ionic / vue
+In the main.js of the project, the plug-in is loaded and an additional Ionic CSS file is included:
+import vue from 'vue'; import app from './App.vue'; import router from './router'; import Ionic from '@ ionic / vue'; import '@ ionic / core / css / ionic.bundle. css'; Vue.use (Ionic); Vue.config.productionTip = false; new Vue ({router, render: h => h (app)}). $ mount ('# app');
+The plug-in registers the Ionic components globally. Developers can therefore use them directly.
+Through a Vue prototype extension, Ionic makes the controllers of overlay components available throughout the application. You can call them via this. $ Ionic.
+A modal dialog can thus be opened as follows:
+const modal = await this. $ ionic.modalController.create ({component: UserEdit,}); await modal.present ();
+Currently, Ionic's form components do not yet support binding through v-model. However, because v-model is only a shorthand for passing the value and registering an event listener, developers can use the following form:
+<ion-input: value = ""name"" @ ionInput = ""name = $ event.target.value""> </ ion-input>
+Upgrade from Ionic 3
+Since Ionic 3 is only available for Angular, an upgrade can only affect Angular projects. The recommended way to upgrade to Ionic 4 is to create a new project with Ionic 4 and then take over the functions step by step from the old app. Most ionic components are unchanged in their use. Even so, upgrading to a complex application can take several days of work, as there is also an Angular upgrade from version 4 to 7, and there are several minor customizations to consider.
+Here is a brief overview of the main changes:
+
+CSS: the styling of the components must be switched to using the CSS Custom Properties.
+The project structure has been slightly adjusted and now follows the officially recommended structure of Angular. The folder ""pages"" is dropped and will be integrated into the ""app"" folder.
+You have to switch from the Ionic router to the Angular router.
+Angular 4 is raised to Angular 7.
+The Angular upgrade also upgrades from RxJS 5 to 6.
+There are various markup adjustments in the templates.
+Overlay components now have an asynchronous API.
+Several lifecycle events have been switched to angular events.
+
+Most conversion activities are hard work. There is a set of TS Lint rules that can assist with the conversion of the markup customizations and also take over a part automatically. RxJS has changed from version 5 to 6 major changes. The rxjs-compat package is compatible with version 5, so you do not need to make any custom code changes. However, one should consider whether the conversion to the syntax of version 6 does not make sense directly.
+When switching to the Angular router one is confronted with the fact that the Ionic router and the controllers for Overlays allowed the loading of pages by specifying the page ID as a string. In the future, a reference to the component will be needed. If you encapsulate the pages in your own modules, this means defining whether overlay components are defined in a separate module or are additionally integrated in the module of the calling page. The component must then be listed in the EntryComponents of the module. Furthermore, the API of the overlay components must be switched from synchronous calls to an asynchronous API.
+The official recommended procedure is documented in the Ionic documentation under ""Guide | Building | Migration"".
+Conclusion
+The Ionic UI components can be used more flexibly than before with Version 4 as generic Web components. For the well-known front-end frameworks Angular, React and Vue.js ready integrations are available, which increase the comfort. In the second part of the article the sister projects Capacitor and Stencil are considered, which complement Ionic with interesting possibilities. (BBO)
+
+Norbert Frank has been working in IT for more than 15 years as a developer, consultant and software architect. He is a passionate full-stack developer and JavaScript enthusiast at Lucom GmbH.
+
+
+
+"

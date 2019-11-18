@@ -1,0 +1,66 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Microsoft Issues November 2019 Office Updates With Memory Leak Fix
+05 Nov 2019, 21:05 by Sergiu Gatlan
+
+
+
+Microsoft released the November 2019 non-security Microsoft Office updates that fix issues and add improvements to Windows Installer (MSI) editions of Office 2016.
+For instance, this month's updates fix a memory leak when using Outlook 2016, an issue where ""changes to a macro may not be saved if you don't change focus after making a change,"" as well as an Outlook 2016 crash when copying attached email messages from the preview pane.
+The updates can be downloaded from the Download Center or from the Microsoft Update service for manual installation. None of the Microsoft Office updates released today apply to the Click-to-Run Office apps, like Microsoft Office 365 Home.
+Depending on the update, you might also need to install another update for the issue to be completely addressed on your Windows device, as is the case of the KB4484137 update that requires KB4475552 to also be installed.
+Office non-security updates
+Several of the Office November non-security updates released today only apply to certain programs like Word, Outlook, or PowerPoint.
+Others are designed to improve, enhance the stability, or fix issues impacting the entire suite of  Microsoft Office 2016 apps.
+The full list of updates issued today and the Office they apply to is available below.
+Product Knowledge Base article Microsoft Access 2016 KB4475539 Microsoft Office 2016 KB4484138 Microsoft Office 2016 KB4484137 Microsoft Office 2016 KB4475588 Microsoft Office 2016 KB4475552 Microsoft Office 2016 KB4484145 Microsoft Outlook 2016 KB4484139 Microsoft PowerPoint 2016 KB4484134 Microsoft Word 2016 KB4484135
+Some updates may require a restart
+Before updating, it is also important to mention that after applying these updates you may be required to reboot your computer.
+Just in case your Office installation starts misbehaving after updating, you can uninstall it using the following step by step procedure:
+Go to Start, enter View Installed Updates in the Search Windows box, and then press Enter. In the list of updates, locate and select the offending update, and then select Uninstall.
+
+
+",en,"
+
+
+
+
+
+
+
+
+
+
+
+Microsoft Issues November 2019 Office Updates With Memory Leak Fix
+05 Nov 2019, 21:05 by Sergiu Gatlan
+
+
+
+Microsoft released the November 2019 non-security Microsoft Office updates that fix issues and add improvements to Windows Installer (MSI) editions of Office 2016.
+For instance, this month's updates fix a memory leak when using Outlook 2016, an issue where ""changes to a macro may not be saved if you don't change focus after making a change,"" as well as an Outlook 2016 crash when copying attached email messages from the preview pane.
+The updates can be downloaded from the Download Center or from the Microsoft Update service for manual installation. None of the Microsoft Office updates released today apply to the Click-to-Run Office apps, like Microsoft Office 365 Home.
+Depending on the update, you might also need to install another update for the issue to be completely addressed on your Windows device, as is the case of the KB4484137 update that requires KB4475552 to also be installed.
+Office non-security updates
+Several of the Office November non-security updates released today only apply to certain programs like Word, Outlook, or PowerPoint.
+Others are designed to improve, enhance the stability, or fix issues impacting the entire suite of  Microsoft Office 2016 apps.
+The full list of updates issued today and the Office they apply to is available below.
+Product Knowledge Base article Microsoft Access 2016 KB4475539 Microsoft Office 2016 KB4484138 Microsoft Office 2016 KB4484137 Microsoft Office 2016 KB4475588 Microsoft Office 2016 KB4475552 Microsoft Office 2016 KB4484145 Microsoft Outlook 2016 KB4484139 Microsoft PowerPoint 2016 KB4484134 Microsoft Word 2016 KB4484135
+Some updates may require a restart
+Before updating, it is also important to mention that after applying these updates you may be required to reboot your computer.
+Just in case your Office installation starts misbehaving after updating, you can uninstall it using the following step by step procedure:
+Go to Start, enter View Installed Updates in the Search Windows box, and then press Enter. In the list of updates, locate and select the offending update, and then select Uninstall.
+
+
+"

@@ -1,0 +1,56 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Actualización urgente para Google Chrome por dos vulnerabilidades muy graves
+01 Nov 2019, 16:00 by Claudio Valero
+El pasado 23 de octubre se lanzaba la versión estable de Google Chrome 78. Esta llegaba con la posibilidad de forzar el modo oscuro en cualquier web y otras mejoras, además de cerrar varios agujeros de seguridad. Sin embargo, la compañía no ha tardado en lanzar una actualización urgente para esta versión de su navegador. Esto se debe a que han encontrado dos vulnerabilidades muy graves que están siendo aprovechadas por ciberdelincuentes para atacar a los usuarios. Por todo esto, corre y actualiza Google Chrome lo antes posible.
+Google Chrome 78 es la última versión disponible del navegador para Windows, Linux y Mac, además de iOS y Android. Entre sus novedades, tenemos mejoras en la sección Nueva pestaña, la posibilidad de forzar el modo oscuro de las webs mediante el menú de experimentos (chrome://flags), nueva información al pasar el ratón sobre las pestañas (Tab Hover Cards) o mejoras en la integración con Google Drive.
+A nivel de seguridad, se corrigieron 37 vulnerabilidades en esta versión, incluyendo una que permitía hacer spoofing de URL en el navegador (CVE-2019-13701). Google pagó la friolera de 36.000 dólares para los responsables de descubrir las vulnerabilidades. Sin embargo, eso no fue suficiente y ahora han tenido que lanzar una actualización urgente para Google Chrome por dos vulnerabilidades muy graves.
+Actualiza ya a Google Chrome 78.0.3904.87 para evitar los posibles ataques
+Google acaba de lanzar Chrome 78.0.3904.87 para todos los usuarios con Windows, macOS y Linux. Esta es una actualización urgente y muy importante ya que cierra dos agujeros de seguridad considerados como muy graves. Este parche ha sido lanzado de forma urgente y todos los usuarios deben actualizar a la mayor brevedad posible.
+
+
+
+El problema es que una de las dos vulnerabilidades críticas está siendo aprovechada por ciberdelincuentes para atacar a los usuarios. Aunque Google no ha desvelado datos técnicos de las vulnerabilidades por razones obvias (evitar que los ataques puedan aumentar), sí han confirmado que una de ellas afecta a los componentes de audio de Chrome (CVE-2019-13720) y la otra a la librería PDFium (CVE-2019-13721).
+Ambas son del tipo use-after-free (UAF). Estas permiten a un atacante el acceso a la memoria después de que ha sido liberada. Esto puede ocasionar un fallo en el programa, permitir la ejecución de código arbitrario o habilitar la ejecución de código remoto completo. Por eso, son consideradas de alta gravedad y la recomendación es actualizar lo antes posible.
+La vulnerabilidad que está siendo aprovechada para atacar el navegador es la relacionada con los componentes de audio de Chrome (CVE-2019-13720) y fue reportada por los investigadores Anton Ivanov y Alexey Kulaev de Kaspersky. Por el momento, se desconocen más detalles sobre los ataques, su cuantía o qué grupo de hackers podrían estar detrás.
+
+
+",es,"
+
+
+
+
+
+
+
+
+
+
+
+Urgent update for Google Chrome for two very serious vulnerabilities
+01 Nov 2019, 16:00 by Claudio Valero
+On October 23, the stable version of Google Chrome 78 was launched. This came with the possibility of forcing the dark mode on any website and other improvements, in addition to closing several security holes. However, the company has been quick to launch an urgent update for this version of its browser. This is because they have found two very serious vulnerabilities that are being exploited by cyber criminals to attack users. For all this, run and update Google Chrome as soon as possible.
+Google Chrome 78 is the latest version of the browser available for Windows, Linux and Mac, in addition to iOS and Android. Among its novelties, we have improvements in the New tab section, the possibility of forcing the dark mode of the websites through the menu of experiments (chrome: // flags), new information when hovering over the tabs (Tab Hover Cards) or improvements in integration with Google Drive.
+At the security level, 37 vulnerabilities were corrected in this version, including one that allowed URL spoofing in the browser (CVE-2019-13701). Google paid a whopping $ 36,000 for those responsible for discovering the vulnerabilities. However, that was not enough and now they have had to launch an urgent update for Google Chrome for two very serious vulnerabilities.
+Upgrade to Google Chrome 78.0.3904.87 now to avoid possible attacks
+Google has just launched Chrome 78.0.3904.87 for all users with Windows, macOS and Linux. This is an urgent and very important update since it closes two security holes considered as very serious. This patch has been released urgently and all users should update as soon as possible.
+
+
+
+The problem is that one of the two critical vulnerabilities is being exploited by cyber criminals to attack users. Although Google has not disclosed technical data of the vulnerabilities for obvious reasons (prevent attacks from increasing), they have confirmed that one of them affects Chrome's audio components (CVE-2019-13720) and the other to the library PDFium (CVE-2019-13721).
+Both are of the use-after-free (UAF) type. These allow an attacker access to memory after it has been released. This may cause the program to fail, allow arbitrary code execution or enable full remote code execution. Therefore, they are considered of high severity and the recommendation is to update as soon as possible.
+The vulnerability that is being exploited to attack the browser is related to Chrome's audio components (CVE-2019-13720) and was reported by researchers Anton Ivanov and Alexey Kulaev of Kaspersky. At the moment, more details about the attacks, their amount or what group of hackers could be behind are unknown.
+
+
+"

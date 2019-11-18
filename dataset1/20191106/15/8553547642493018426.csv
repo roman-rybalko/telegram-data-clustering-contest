@@ -1,0 +1,82 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Комбинация методов может улучшить безопасность устройств IoT
+06 Nov 2019, 15:05 by Леонид Бараш
+Многонаправленный подход к анализу данных, который может повысить безопасность устройств Интернета вещей (IoT), таких как интеллектуальные телевизоры, домашние видеокамеры и радионяни, от текущих рисков и угроз, разработан командой студентов из Penn State World Campus, получающих степень магистра в области информатики.
+«К 2020 году будет задействовано более 20 миллиардов IoT-устройств, и эти устройства могут сделать людей уязвимыми для нарушений безопасности, которые могут подвергнуть риску их личные данные или, что хуже, повлиять на их безопасность, - сказала Бьюла Самуэль (Beulah Samuel), студентка из Государственной программы кампуса информационных наук и технологий в Пенсильвании. - Тем не менее, не существует стратегии, позволяющей определить, когда и где происходит атака на сетевые устройства и как выглядит такая атака».
+Команда применила комбинацию подходов, часто используемых в традиционном управлении сетевой безопасностью, к сети IoT, смоделированной Университетом Нового Южного Уэльса в Канберре. В частности, она показала, как статистические данные, машинное обучение и другие методы анализа данных могут применяться для обеспечения безопасности систем IoT на протяжении всего их жизненного цикла. Затем был использованы инструменты обнаружения вторжений и визуализации, чтобы определить, произошла или нет атака в этой сети.
+Одним из методов анализа данных, который применила команда, был свободно доступный статистический пакет R с открытым исходным кодом, который они использовали для характеристики систем IoT, установленных в сети Канберры. Кроме того, они использовали решения машинного обучения для поиска шаблонов в данных, которые не были очевидны при использовании R.
+«Одной из проблем в поддержании безопасности для сетей IoT является простая идентификация всех устройств, которые работают в сети, - сказал Джон Холлер (John Haller), студент программы по информационным наукам и технологиям Penn State World Campus. - Статистические программы, такие как R, могут характеризовать и идентифицировать пользовательские агенты».
+Исследователи использовали широко доступный инструмент обнаружения вторжений Splunk, который включает в себя программное обеспечение для поиска, мониторинга и анализа сетевого трафика через веб-интерфейс.
+Используя эти и другие инструменты, команда определила три IP-адреса, которые активно пытались проникнуть в устройства сети Канберры. С этих адресов пытались подключиться к устройствам IoT несколько раз в течение определенного периода времени с использованием разных протоколов. Это ясно указывало на атаку с распределенным отказом в обслуживании, которая направлена на то, чтобы нарушить работу и / или сделать устройства недоступными для владельцев».
+В качестве основы для своего подхода исследователи сравнили его с общей структурой, используемой для управления рисками, - Системой управления рисками (RMF) Национального института стандартов и технологий (NIST).
+«NIST RMF не был создан для систем IoT, но он предоставляет структуру, которую организации могут использовать для адаптации, тестирования и мониторинга реализованных мер безопасности. Это повышает доверие к нашему подходу», - сказал Эндрю Брэндон (Andrew Brandon).
+В конечном счете, сказала научный сотрудник Мелани Сикинс (Melanie Seekins), способность анализировать данные IoT с использованием командного подхода может позволить специалистам по безопасности выявлять и управлять средствами контроля для снижения риска и анализа инцидентов по мере их возникновения.
+«Знание того, что произошло в реальной атаке, помогает нам писать скрипты и мониторы для поиска этих паттернов, - сказала она. - Эти прогностические модели и использование машинного обучения и искусственного интеллекта могут помочь нам предвидеть и готовиться к крупным атакам с использованием устройств IoT».
+Команда надеется, что их подход будет способствовать созданию стандартного протокола безопасности сети IoT.
+«Стандартизации безопасности IoT не существует, - сказала Сикинс. - Каждый производитель или поставщик создает свое собственное представление о том, как выглядит защита, и это может стать проприетарным и может работать, а может и не работать с другими устройствами. Наша стратегия является хорошим первым шагом к решению этой проблемы».
+
+Вы можете подписаться на наш Telegram-канал для получения наиболее интересной информации
+
+
+Читайте также
+
+
+
+
+
+
+
+
+",ru,"
+
+
+
+
+
+
+
+
+
+
+
+A combination of methods can improve the security of IoT devices
+06 Nov 2019, 15:05 by Leonid Barash
+A multidirectional data analysis approach that can increase the security of Internet of Things (IoT) devices, such as smart TVs, home camcorders and baby monitors, against current risks and threats, was developed by a team of students from Penn State World Campus who are receiving a master's degree in computer science.
+“By 2020, more than 20 billion IoT devices will be deployed, and these devices can make people vulnerable to security breaches that could compromise their personal information or, worse, affect their security,” said Beulah Samuel, student from the Pennsylvania State Campus for Information Science and Technology. “However, there is no strategy to determine when and where an attack occurs on network devices and what the attack looks like.”
+The team applied a combination of approaches often used in traditional network security management to the IoT network modeled by the University of New South Wales in Canberra. In particular, she showed how statistics, machine learning, and other data analysis techniques can be used to ensure the security of IoT systems throughout their entire life cycle. Then, intrusion detection and visualization tools were used to determine if an attack had occurred on this network.
+One of the data analysis methods that the team used was the open source statistical package R, which they used to characterize the IoT systems installed on the Canberra network. In addition, they used machine learning solutions to search for patterns in data that were not obvious when using R.
+“One of the challenges in maintaining security for IoT networks is the simple identification of all devices that are on the network,” said John Haller, a student at the Penn State World Campus IT and Technology program. “Statistical programs such as R can characterize and identify user agents.”
+Researchers used Splunk's widely available intrusion detection tool, which includes software for searching, monitoring and analyzing network traffic through a web interface.
+Using these and other tools, the team identified three IP addresses that were actively trying to penetrate the Canberra network devices. From these addresses, they tried to connect to IoT devices several times over a certain period of time using different protocols. This clearly indicated a distributed denial of service attack that seeks to disrupt and / or make devices inaccessible to owners. ”
+As a basis for their approach, the researchers compared it with the general structure used for risk management, the Risk Management System (RMF) of the National Institute of Standards and Technology (NIST).
+“NIST RMF was not created for IoT systems, but it provides a framework that organizations can use to adapt, test and monitor implemented security measures. This increases confidence in our approach, ”said Andrew Brandon.
+Ultimately, research scientist Melanie Seekins said, the ability to analyze IoT data using a team approach can enable security professionals to identify and manage controls to reduce risk and analyze incidents as they arise.
+“Knowing what happened in a real attack helps us write scripts and monitors to look for these patterns,” she said. “These predictive models and the use of machine learning and artificial intelligence can help us anticipate and prepare for major attacks using IoT devices.”
+The team hopes their approach will help create a standard IoT network security protocol.
+“There is no standardization for IoT security,” said Sikins. - Each manufacturer or supplier creates its own idea of what the protection looks like, and this may become proprietary and may work, or may not work with other devices. Our strategy is a good first step towards solving this problem. ”
+
+You can subscribe to our Telegram channel to receive the most interesting information.
+
+
+Read also
+
+
+
+
+
+
+
+
+"

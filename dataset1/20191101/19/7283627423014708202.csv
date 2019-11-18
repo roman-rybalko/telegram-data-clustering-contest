@@ -1,0 +1,124 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Сбои «суверенного рунета», цифровой спрут Сбербанка и Лев Левиев в «Русских норм!»
+
+01 Nov 2019, 19:41
+
+
+К чему может привести политическая спешка с запуском «суверенного рунета»
+
+В истории с «суверенным рунетом» появилось последнее звено, гарантирующее пользователям проблемы, — политическая спешка. Зато для исполнителей закона она, как война, может списать все — неизбежные сбои в работе интернета, неумелые действия чиновников и странную процедуру выбора поставщика оборудования на десятки, а то и сотни миллиардов рублей.
+Для интернет-пользователей с 1 ноября ничего не меняется, твердили вчера чиновники журналистам, писавшим статьи о вступлении в силу закона о «суверенном рунете». Это правда — для изоляции рунета от внешнего мира и блокировок сайтов и сервисов по новой технологии пока не готово ничего: ни нормативная база, ни оборудование. Зато теперь мы знаем, что нас уже точно ждет, когда закон начнет исполняться. Рассказываем главное коротко.
+
+Новая система блокировок может «уронить» интернет. Специалисты предупреждали об этом и заранее, а теперь тестирование оборудования DPI на Урале это доказало. В ходе тестов, проводившихся в сентябре-октябре, были зафиксированы сбои, рассказали The Bell трое сотрудников операторов связи и двое знакомых с ходом теста чиновников. «Оборудование тестировалось ночью, сеть легла», — сказал один из них. В некоторых случаях сеть просто переставала работать, подтвердил другой. Третий говорит, что случаев, когда сеть полностью «ложилась», не было, но в некоторых сценариях вместе с ресурсом, который должен был быть заблокирован, замедлялась работа других ресурсов или всего сервиса провайдера. Представитель компании ДЦОА, интегрировавшей оборудование, сбои отрицает.
+Кремлю система блокировок нужна к 2021 году. По мнению опрошенных The Bell специалистов, построить и отладить систему блокировок с помощью оборудования DPI, которая не имеет прямых аналогов в мире, за два года невозможно. Но администрация президента считает необходимым иметь возможность реагировать на угрозы в интернете к 2021 году, когда будут проходить выборы в Госдуму, говорят источники The Bell. В АП даже спорят с правительством о том, нужна ли новому оборудования сертификация, которая займет год, утверждают двое из них. Минкомсвязи настаивает на том, что она нужна — без технических требований непонятно, как обеспечить стабильную работу интернета. Этот спор должен разрешиться в ближайшее время.
+Цена вопроса — десятки миллиардов. Выбор исполнителя максимально непрозрачен. По словам источника в одном из крупных операторов связи, нынешняя оценка стоимости оборудования, необходимого для покрытия системой всей страны, — от 60 до 100 млрд рублей. Но операторы, в отличие от оборудования для «закона Яровой», платить за него не будут и штрафами не рискуют: на этот раз Роскомнадзор все делает сам. Зато и процедура закупки становится максимально закрытой. Поставщик оборудования — компания «РДП.РУ», 15% акций которой принадлежит «Ростелекому», — уже год как фактически определен: на Урале тестируются только его решения. Оборудование других производителей еще не прошло даже лабораторных испытаний, которые «РДП.РУ» прошла еще год назад.
+
+Что мне с этого?
+Проблемы у пользователей будут неизбежно, в особенности если чиновники пойдут по пути ускоренного внедрения нового оборудования без сертификации. Спешка и самоуверенность могут привести к непредсказуемым последствиям для всех. Специалисты операторов связи, с которыми поговорил The Bell, называют использование аппаратуры DPI для блокировок нетривиальной задачей, особенно в случае, если блокируемый ресурс будет оказывать активное сопротивление, как это было с Telegram.
+
+«Может статься так, что средства будут потрачены, оборудование поставлено, а в самый неподходящий момент какой-нибудь Навальный будет абсолютно спокойно вещать в Telegram, который будет полностью доступен, — рассуждает один из них. — А еще веселее будет, если весь интернет, благодаря умелым рукам, управляющим DPI, в отдельных протестных регионах “ляжет”. Люди даже не смогут купить ничего в магазине — все кассовые аппараты тоже подключены к сети. В этом случае господину Навальному даже делать ничего не придется».
+СДЕЛКА
+Цифровой спрут
+На этой неделе выяснилось, что Сбербанк собирается приобрести 20% голосующих акций Mail.Ru Group. Сделка, все подробности которой мы приводим здесь, окончательно оформит альянс трех тяжеловесов российского интернет-рынка: Германа Грефа, Алишера Усманова и Сергея Чемезова. У каждого из них свои цели, но вместе у них есть все шансы построить цифровую экосистему или спрута, который проникнет во все сферы жизни россиян. Сделка приблизит Сбербанк к тому, чтобы стать главным в стране агрегатором данных о людях. Чтобы убедиться в этом, достаточно посмотреть на это:
+
+
+
+BELL CLUB
+Закрытый показ «Гражданина Х»
+29 октября в BellClub состоялось уникальное событие — российская премьера новой работы выдающегося американского документалиста Алекса Гибни — фильма «Гражданин Х». До этого картина с большим успехом была показана на Венецианском кинофестивале. Ее высоко оценили российские и зарубежные критики.
+«Гражданин Х» еще не вышел в российский прокат, и пока неизвестно, когда это случится. Читатели и члены клуба стали первыми зрителями картины в России. Более 120 гостей, среди которых были российские политики, бизнесмены, актеры и кинокритики, 29 октября собрались в арт-пространстве Cube. Генеральным партнером вечера был Caméo Moscow Villas. Это камерный проект класса deluxe от девелопера STONE HEDGE, реализованный в формате «городские виллы» и расположенный в центре Москвы в 3 минутах от «Маяковской». За удобный трансфер на мероприятие отвечал премиальный сервис заказа автомобиля с личным водителем Wheely.
+Подробный отчет и фото вечера будут опубликованы во вторник. Не пропустите!
+«РУССКИЕ НОРМ!»
+Лев Левиев — о продаже «ВКонтакте» и ссоре с Павлом Дуровым
+Сооснователь «ВКонтакте» Лев Левиев никогда не рассказывал свою версию истории создания самой популярной российской соцсети. Все знали версию Павла Дурова: «ВКонтакте» вот-вот добилась бы мирового господства, но Левиев и третий сооснователь Вячеслав Мирилашвили впустили в компанию инвестора, совладельцем соцсети стал Алишер Усманов. В конце концов и Левиев, и Мирилашвили покинули компанию, когда политическая обстановка в стране накалилась.
+Спустя почти шесть лет с момента, когда Дуров окончательно покинул «ВКонтакте», Левиев впервые рассказал свою версию тех событий в новом интервью «Русским норм!». А также — о своих инвестициях в Ostrovok, киберспорт и марихуану, производство контента и уникальный журналистский коллектив, который превращается в сервис.
+Смотрите интервью с Левиевым на канале «Русские норм!» или читайте его короткую версию на сайте The Bell.
+THE BELL ОБЪЯСНЯЕТ
+Волшебная бумажка для обнальщиков и мошенников
+На этой неделе мы узнали, как работает обнальная схема из нашумевшего дела с кражей 5 млн рублей из «Тинькофф банка». С этого лета Росфинмониторинг относит ее к трем самым популярным способам обналичивания. А еще с ее помощью можно украсть деньги практически из любого банка, причем владелец счета даже не будет об этом подозревать.
+
+Ключ к банковскому счету лежит через удостоверения комиссии по трудовым спорам (КТС). Такую комиссию, по трудовому законодательству, можно создать в любой компании, если сотрудники и работодатель не могут мирно договориться о выплате зарплаты или премий. Она имеет право выдать удостоверение, по которому сотрудник может получить заветную сумму, обратившись в банк напрямую или через службу судебных приставов, причем прямо на карту — дальше ее легко обналичить.
+Схема удобна для мошенников в первую очередь тем, что банки обязаны выдавать деньги по удостоверению под угрозой крупного штрафа, а единой базы удостоверений или адекватного способа их проверки нет. Она пригодна как для обналички, что могло произойти в кейсе с «Тинькофф банком», так и для кражи средств.
+В первом случае мошенники создают компанию-однодневку с фиктивной КТС при ней, а банк переводит средства со счета компании на карту обладателя фиктивного же удостоверения. При этом для проверки банк может обратиться только к гендиректору фирмы, который, разумеется, все подтвердит.
+Примеры с кражей денег еще веселее: в этом случае мошенники на бумаге изобретают несуществующие региональные филиалы реальных московских компаний, рисуют удостоверения КТС такого филиала и отправляют их судебным приставам или в банк. Второй вариант — смена гендиректора компании по поддельным документам, дальше — та же самая фиктивная КТС.
+Вернуть украденные таким образом деньги через суд получается далеко не всегда: вот здесь мы рассказываем о нескольких случаях, когда предприниматели столкнулись с такой проблемой.
+
+
+Петр Мироненко
+
+
+
+",ru,"
+
+
+
+
+
+
+
+
+
+
+
+Failures of “sovereign runet”, digital octopus of Sberbank and Lev Leviev in “Russian norms!”
+
+01 Nov 2019, 19:41
+
+
+What can lead the political rush with the launch of ""sovereign runet""
+
+In the story with the “sovereign Runet”, the last link that guarantees users problems has appeared - a political rush. But for the law enforcement agencies, it can write off everything - the inevitable malfunctions of the Internet, the inept actions of officials and the strange procedure for choosing an equipment supplier for tens or even hundreds of billions of rubles.
+For Internet users, nothing has changed since November 1, officials told reporters yesterday who wrote articles on the entry into force of the sovereign runet law. It is true - so far nothing is ready to isolate Runet from the outside world and block websites and services using new technology: neither the regulatory framework, nor the equipment. But now we know that we are already waiting for us when the law begins to be implemented. We tell the main thing briefly.
+
+The new blocking system can “drop” the Internet. Experts warned about this in advance, and now testing DPI equipment in the Urals has proved this. During tests conducted in September-October, failures were recorded, three employees of telecom operators and two officials familiar with the test told The Bell. “The equipment was tested at night, the network went down,” one of them said. In some cases, the network simply stopped working, another confirmed. The third says that there were no cases when the network completely “lay down”, but in some scenarios, together with the resource that was supposed to be blocked, the work of other resources or the entire service of the provider slowed down. The representative of the company DTSOA, which integrated the equipment, denies failures.
+The Kremlin needs a blocking system by 2021. According to experts interviewed by The Bell, it is impossible to build and debug a blocking system using DPI equipment, which has no direct analogues in the world, in two years. But the presidential administration considers it necessary to be able to respond to threats on the Internet by 2021, when elections will be held in the State Duma, sources say The Bell. The AP even argues with the government about whether certification of the new equipment will take a year, two of them say. The Ministry of Communications insists that it is needed - without technical requirements it is not clear how to ensure the stable operation of the Internet. This dispute should be resolved soon.
+The price of the issue is tens of billions. The choice of the artist is as opaque as possible. According to a source in one of the major telecom operators, the current estimate of the cost of equipment needed to cover the entire country with a system is from 60 to 100 billion rubles. But the operators, unlike the equipment for the ""Spring Law"", will not pay for it and will not risk fines: this time Roskomnadzor does everything himself. But the procurement procedure is becoming as closed as possible. The equipment supplier, RDP.RU company, whose 15% stake is owned by Rostelecom, has been virtually determined for a year now: only its solutions are tested in the Urals. Equipment of other manufacturers has not even passed laboratory tests, which RDP.RU passed a year ago.
+
+What am I doing with this?
+Problems for users will be inevitable, especially if officials take the path of accelerated implementation of new equipment without certification. Haste and self-confidence can lead to unpredictable consequences for everyone. Telecommunications experts The Bell spoke to call the use of DPI hardware for blocking a non-trivial task, especially if the blocked resource will provide active resistance, as was the case with Telegram.
+
+“It may happen that the funds are spent, the equipment is delivered, and at the most inopportune moment, some Navalny will absolutely calmly broadcast on Telegram, which will be completely available,” one of them argues. - And it will be even more fun if the whole Internet, thanks to the skillful hands that control the DPI, “lies down” in certain protest regions. People will not even be able to buy anything at the store - all cash registers are also connected to the network. In this case, Mr. Navalny will not even have to do anything. ”
+DEAL
+Digital octopus
+This week it became clear that Sberbank is going to acquire 20% of the voting shares of Mail.Ru Group. The deal, the details of which we provide here, will finalize the alliance of three heavyweights of the Russian Internet market: German Gref, Alisher Usmanov and Sergei Chemezov. Each of them has their own goals, but together they have every chance to build a digital ecosystem or octopus that will penetrate into all spheres of life of Russians. The deal will bring Sberbank closer to becoming the country's main aggregator of data on people. To verify this, just look at this:
+
+
+
+Bell club
+Closed screening of Citizen X
+On October 29, a unique event took place at BellClub - the Russian premiere of the new work of the outstanding American documentary filmmaker Alex Gibney - the film “Citizen X”. Prior to this, the picture was shown with great success at the Venice Film Festival. She was praised by Russian and foreign critics.
+""Citizen X"" has not yet been released in Russian hire, and it is not yet known when this will happen. Readers and club members became the first spectators of the picture in Russia. More than 120 guests, including Russian politicians, businessmen, actors and film critics, gathered on October 29 in the Cube art space. The general partner of the evening was Caméo Moscow Villas. This is a deluxe chamber project from the developer STONE HEDGE, implemented in the urban city format and located in the center of Moscow 3 minutes from Mayakovskaya. For a convenient transfer to the event, the premium car booking service with a personal Wheely driver was responsible.
+A detailed report and photo of the evening will be published on Tuesday. Do not miss!
+""RUSSIAN NORMS!""
+Lev Leviev - on the sale of VKontakte and a quarrel with Pavel Durov
+Co-founder of VKontakte Lev Leviev never told his version of the story of the creation of the most popular Russian social network. Everyone knew the version of Pavel Durov: VKontakte would have achieved world domination, but Leviev and the third co-founder Vyacheslav Mirilashvili let the investor into the company, Alisher Usmanov became the co-owner of the social network. In the end, both Leviev and Mirilashvili left the company when the political situation in the country grew tense.
+Almost six years after the moment when Durov finally left VKontakte, Leviev first told his version of those events in a new interview with Russian Norms! And also about his investments in Ostrovok, e-sports and marijuana, content production and a unique journalistic team that is turning into a service.
+Watch an interview with Leviev on the Russian Norms! Channel or read a short version of it on The Bell website.
+THE BELL EXPLAINS
+Magic paper for cashiers and scammers
+This week we learned how the cash-out scheme works from the sensational case with the theft of 5 million rubles from Tinkoff Bank. Since this summer, Rosfinmonitoring has ranked it among the three most popular methods of cashing. And with its help, you can steal money from almost any bank, and the account holder will not even suspect about it.
+
+The key to the bank account is through the certificates of the Commission on Labor Disputes (CCC). Such a commission, according to labor law, can be created in any company if employees and the employer cannot peacefully agree on the payment of salaries or bonuses. She has the right to issue a certificate, according to which the employee can receive the treasured amount by contacting the bank directly or through the bailiff service, and directly on the card - it is easy to cash out later.
+The scheme is convenient for fraudsters primarily because banks are obliged to issue money on an identity card under the threat of a large fine, and there is no single database of certificates or an adequate way to verify them. It is suitable for cash withdrawal, which could happen in a case with Tinkoff Bank, and for theft of funds.
+In the first case, fraudsters create a one-day company with a fictitious CCC with it, and the bank transfers funds from the company’s account to the card of the holder of the fictitious certificate. At the same time, for verification, the bank can only contact the general director of the company, which, of course, will confirm everything.
+Examples of stealing money are even more fun: in this case, paper fraudsters invent non-existent regional branches of real Moscow companies, draw KTS certificates of such a branch and send them to the bailiffs or to the bank. The second option is to change the CEO of the company using fake documents, then the same fictitious CCC.
+It is by no means always possible to return the money stolen in this way through the court: here we talk about several cases in which entrepreneurs encountered such a problem.
+
+
+Petr Mironenko
+
+
+
+"

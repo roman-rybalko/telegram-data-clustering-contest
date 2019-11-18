@@ -1,0 +1,122 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Das sind die Hacker-Trends für 2020
+06 Nov 2019 by Alexandra Lindner
+
+Angriffe mit Ransomware werden weiter zunehmen und der Einsatz von Sicherheitssystemen mit Machine Learning könnte zum Bumerang werden. Zu diesen und weiteren Ergebnissen kommt der Sophos Threat Report 2020.
+
+
+Hacker-Trends für 2020: Auch unter Cyberkriminellen gibt es Trends. Welche das für das kommende Jahr voraussichtlich sind, zeigt der Threat Report von Sophos.
+Den Experten zufolge werden vor allem Angriffe mithilfe von Ransomware weiter zunehmen. Aktuell beliebt unter Hackern ist es, Anmeldeinformationen von Lösungen für Remote Monitoring und Management (RMM) zu erbeuten und auszunutzen. RMM-Dienste werden meist von Managed Service Providern (MSP) verwendet, um IT-Infrastrukturen remote zu verwalten. Problematisch ist vor allem die Tatsache, dass RMM-Lösungen in der Regel mit sehr umfangreichen Rechten ausgestattet sind. Gelangen die Anmeldeinformationen nun an Unbefugte, stehen den Angreifern unzählige Türen in das System des Opfers offen. Die Folgen sind Szenarien wie zum Beispiel in Geiselhaft genommene Daten und dergleichen.
+
+
+Nach dem ersten Launch verschwindet das App-Icon aus der Übersicht, um dem Nutzer die Deinstallation möglichst schwer zu machen.
+
+Für Kriminelle ebenfalls immer interessanter werden Apps, die aggressive Adware laden. Aber auch Browser-Plug-ins können eine ähnliche Gefahr mit sich bringen. Sophos beschreibt hier exemplarisch die Masche von sogenannter Hiddad-Malware. Diese Apps sind so konzipiert, dass sie möglichst unerkannt und so lange wie möglich auf dem befallenen Gerät verbleiben. Nach dem ersten Launch verschwindet das App-Icon aus dem Übersichtsmenü des Smartphones, wodurch die Software nur noch schwer wiederzufinden ist. Der Zweck dieser Schädlinge ist es nun, an allen möglichen Stellen im System Werbung auszuspielen, wodurch der Angriff monetarisiert wird.
+Um sich vor Angriffen zu schützen, setzen Unternehmen oft auch auf die Hilfe Machine-Learning-gestützter Sicherheitssysteme. Technik, die stetig dazu lernt und auch gegenwärtig noch unbekannte Angriffsszenarien erkennt und sich selbst trainiert. Aber genau hier liegt auch die Gefahr. Die Systeme lernen von ständig neuen Daten. Adressiert ein Hacker jedoch ganz gezielt gefälschte Inhalte an den Trainingsalgorithmus, kann der Sicherheitsmechanismus schnell ausgehebelt werden.
+Je komplexer und flexibler, desto anfälliger
+Völlig auf eine Maschine verlassen sollte sich ein Unternehmen also nie. Je komplexer und flexibler aber etwa Cloud-Systeme werden, desto wahrscheinlicher schleichen sich Fehlkonfigurationen ein. Es reichen schon minimale Fehler in Bereichen wie zum Beispiel dem Freigabe-Management, um sensible Daten offenzulegen.
+„Die Bedrohungslandschaft entwickelt sich weiter - rasant, in großem Ausmaß und immer weniger vorhersehbar. Die einzige worüber wir echte Gewissheit haben, ist das, was in diesem Moment passiert“, sagt John Shier, Senior Security Advisor bei Sophos. Der Report sei vor allem als Wegweiser zu betrachten, der Unternehmen dabei helfen soll, sich auf die kommenden Monate vorzubereiten.
+Den vollständigen Bericht stellt Sophos als PDF-Datei auf seiner Webseite bereit.
+Verwandte Themen
+
+
+Business-IT
+
+
+Mobile Geräte
+
+
+Netzwerk
+
+
+Cloud
+
+
+Malware
+
+
+Hacker
+
+
+Sicherheit
+
+
+mehr >>
+
+
+
+
+
+",de,"
+
+
+
+
+
+
+
+
+
+
+
+These are the hacker trends for 2020
+06 Nov 2019 by Alexandra Lindner
+
+Ransomware attacks will continue to increase and the use of machine learning security systems could become a boomerang. These and other results include the Sophos Threat Report 2020.
+
+
+Hacking trends for 2020: There are also trends among cybercriminals. Which the presumably for the coming year, shows the threat report of Sophos.
+According to the experts, especially ransomware attacks will continue to increase. Currently popular among hackers is to capture and exploit credentials from Remote Monitoring and Management (RMM) solutions. RMM services are typically used by Managed Service Providers (MSPs) to remotely manage IT infrastructures. Above all, the problem is that RMM solutions are usually equipped with very extensive rights. If the credentials now go to unauthorized persons, the attackers have countless doors open in the victim's system. The consequences are scenarios such as hostage-taking data and the like.
+
+
+After the first launch, the app icon disappears from the overview to make it as difficult as possible for the user to uninstall.
+
+For criminals also more and more interesting apps, the aggressive adware load. But also browser plug-ins can bring a similar danger. Sophos describes the mesh of so-called Hiddad malware as an example. These apps are designed to remain as unrecognized and as long as possible on the affected device. After the first launch, the app icon disappears from the overview menu of the smartphone, making the software difficult to find. The purpose of these pests is now to advertise in all possible places in the system, thereby monetizing the attack.
+To protect themselves against attacks, companies often rely on the aid of machine-learning-based security systems. Technology that is constantly learning and recognizes currently unknown attack scenarios and trains itself. But this is where the danger lies. The systems learn from constantly new data. However, if a hacker specifically targets fake content to the training algorithm, the security mechanism can be quickly compromised.
+The more complex and flexible, the more vulnerable
+A company should never rely completely on a machine. But the more complex and flexible cloud systems become, the more likely misconfiguration will be. Even minimal errors in areas such as release management are enough to disclose sensitive data.
+""The threat landscape continues to evolve - rapidly, on a large scale and less predictable. The only thing we really know about is what's happening right now, ""says John Shier, Senior Security Advisor at Sophos. Above all, the report should be seen as a guide that should help companies to prepare for the coming months.
+Sophos provides the full report as a PDF file on its website.
+Related topics
+
+
+Business IT
+
+
+mobile devices
+
+
+network
+
+
+Cloud
+
+
+Malware
+
+
+hacker
+
+
+safety
+
+
+more >>
+
+
+
+
+
+"

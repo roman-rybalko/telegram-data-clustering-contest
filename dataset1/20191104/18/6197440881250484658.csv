@@ -1,0 +1,64 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Pixel Ambient Services preps ‘Export’ for Now Playing history [APK Insight]
+04 Nov 2019, 18:11 by Kyle Bradshaw
+One of the handiest features of Google Pixel phones is “Now Playing,” its ability to listen to music playing around you and identify songs without you needing to ask first. Now, it looks like Google is working on a way to export your Now Playing history.
+About APK Insight: In this “APK Insight” post, we’ve decompiled the latest version of an application that Google uploaded to the Play Store. When we decompile these files (called APKs, in the case of Android apps), we’re able to see various lines of code within that hint at possible future features. Keep in mind that Google may or may not ever ship these features, and our interpretation of what they are may be imperfect. We’ll try to enable those that are closer to being finished, however, to show you how they’ll look in case they do ship. With that in mind, read on.
+Since the Google Pixel 2, Now Playing has enabled Pixel phones to proactively listen to songs playing on radios and stereos near your phone. The proactive nature is useful, as you can simply check that your Pixel 3 is always on display to see the current song, or look through your Now Playing history to remember a song that played earlier in the day.
+Now Playing is controlled by the Pixel Ambient Services app, which received an update today to version 1.0.277256491. In digging into the update, however, only one new string stood out — a new “Export” option for the Now Playing history page.
+<string name=”history_menu_export_title”>Export</string>
+Digging into the code, it seems that you may soon be able to export your Now Playing history into a comma-separated values (CSV) file, which should be perfect for opening and browsing in Google Sheets or Excel. We’re not sure yet what data will be included in the CSV file, but it’s safe to assume that at least the song and artist names will be featured, along with the timestamp that song was heard.
+Our Dylan Roussel was able to enable the initial UI for exporting your Now Playing history, but the code isn’t in place to actually generate the exported history output. Tapping the enabled option simply opens the share sheet and shares a nonexistent file to your selected app.
+
+
+
+Pixel Ambient Services version 1.0.277256491 is rolling out to Pixel phones now via the Google Play Store, but the ability to export your Now Playing history won’t be arriving until a later update.
+
+Dylan Roussel contributed to this article.
+
+FTC: We use income earning auto affiliate links. More.
+
+
+",en,"
+
+
+
+
+
+
+
+
+
+
+
+Pixel Ambient Services preps ‘Export’ for Now Playing history [APK Insight]
+04 Nov 2019, 18:11 by Kyle Bradshaw
+One of the handiest features of Google Pixel phones is “Now Playing,” its ability to listen to music playing around you and identify songs without you needing to ask first. Now, it looks like Google is working on a way to export your Now Playing history.
+About APK Insight: In this “APK Insight” post, we’ve decompiled the latest version of an application that Google uploaded to the Play Store. When we decompile these files (called APKs, in the case of Android apps), we’re able to see various lines of code within that hint at possible future features. Keep in mind that Google may or may not ever ship these features, and our interpretation of what they are may be imperfect. We’ll try to enable those that are closer to being finished, however, to show you how they’ll look in case they do ship. With that in mind, read on.
+Since the Google Pixel 2, Now Playing has enabled Pixel phones to proactively listen to songs playing on radios and stereos near your phone. The proactive nature is useful, as you can simply check that your Pixel 3 is always on display to see the current song, or look through your Now Playing history to remember a song that played earlier in the day.
+Now Playing is controlled by the Pixel Ambient Services app, which received an update today to version 1.0.277256491. In digging into the update, however, only one new string stood out — a new “Export” option for the Now Playing history page.
+<string name=”history_menu_export_title”>Export</string>
+Digging into the code, it seems that you may soon be able to export your Now Playing history into a comma-separated values (CSV) file, which should be perfect for opening and browsing in Google Sheets or Excel. We’re not sure yet what data will be included in the CSV file, but it’s safe to assume that at least the song and artist names will be featured, along with the timestamp that song was heard.
+Our Dylan Roussel was able to enable the initial UI for exporting your Now Playing history, but the code isn’t in place to actually generate the exported history output. Tapping the enabled option simply opens the share sheet and shares a nonexistent file to your selected app.
+
+
+
+Pixel Ambient Services version 1.0.277256491 is rolling out to Pixel phones now via the Google Play Store, but the ability to export your Now Playing history won’t be arriving until a later update.
+
+Dylan Roussel contributed to this article.
+
+FTC: We use income earning auto affiliate links. More.
+
+
+"

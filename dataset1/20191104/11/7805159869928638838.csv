@@ -1,0 +1,154 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+[Update: Rolling Out] Google tests Scheduling and Taking a Break from Focus Mode in Digital Wellbeing
+04 Nov 2019, 11:10 by Mishaal Rahman
+
+Update (11/4/19 @ 11:10 AM ET): As discovered last week, Digital Wellbeing is getting schedules for Focus Mode and it’s rolling out now.
+
+Back at Google I/O earlier this year, Google unveiled new features for Digital Wellbeing, the company’s digital wellness tool that’s now required on all Android devices. The most notable of the two features is Focus Mode, a toggle that blocks access to selected apps to eliminate distractions. In its current implementation, Focus Mode is fairly basic as it can only be manually toggled from within Digital Wellbeing or from a Quick Settings tile. However, we’ve enabled two new enhancements to Focus Mode in the latest Digital Wellbeing beta that should make it more useful.
+
+
+An APK teardown can often predict features that may arrive in a future update of an application, but it is possible that any of the features we mention here may not make it in a future release. This is because these features are currently unimplemented in the live build and may be pulled at any time by the developers in a future build.
+
+
+
+Scheduling
+
+As we spotted late last month, Google is working on a scheduling feature for Focus Mode. Once this feature goes live, you’ll be able to choose a start and end time as well as the days of the week during which you want Digital Wellbeing to automatically enable Focus Mode. About a minute before entering Focus Mode, Digital Wellbeing will post a notification asking if you’re “ready to focus.” You can either wait a minute to let Focus Mode automatically start, or you can tap on the “wait” action to postpone Focus Mode for 10 minutes. Once Focus Mode starts, the notification text updates to tell you when it’ll automatically turn off. The Focus Mode Quick Setting tile also shows scheduling information in the subtext.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Taking a break
+
+If you noticed in the last screenshot above, there’s a new “Take a Break” action in the Focus Mode notification. This feature, as we previously covered, was first spotted by Jane Manchun Wong through her analysis of Digital Wellbeing. The “take a break” action lets you take a 5, 15, or 30 minute-long break from Focus Mode. There’s not much of a point in taking a break when manually toggling Focus Mode, but it may come in handy when you’ve set up a schedule that you generally want to stick with but simply can’t at the moment.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Neither feature is currently live in Digital Wellbeing on any of the other devices that I have. Since these features are fully implemented, it shouldn’t take long for them to rollout. We’ll let you know when that happens.
+
+Thanks to PNF Software for providing us a license to use JEB Decompiler, a professional-grade reverse engineering tool for Android applications.
+
+
+Update: Rolling Out
+As we discovered in the APK teardown last week, Digital Wellbeing is getting new schedules for Focus Mode. You can schedule Focus Mode to be enabled at certain times. And because sometimes you’ll need to get through Focus Mode for a brief moment, you can “Take a break” (temporarily disable Focus Mode) for 5, 15, or 30 minutes. This can be done from within Digital Wellbeing or the notification shade.
+Google is positioning Focus Mode as a way to block distractions to focus on a task, but this mode can also be used as an app blocker. There are 3rd-party apps in the Play Store that allow you to block apps during specific times of the day. For example, maybe you want to block social media apps on the weekend so you don’t use your phone as much. Focus Mode’s schedules make that possible on the system level.
+Join the beta for Digital Wellbeing to get these features, or download version 1.02752 from APK Mirror.
+
+Via: Android Police
+
+
+
+",en,"
+
+
+
+
+
+
+
+
+
+
+
+[Update: Rolling Out] Google tests Scheduling and Taking a Break from Focus Mode in Digital Wellbeing
+04 Nov 2019, 11:10 by Mishaal Rahman
+
+Update (11/4/19 @ 11:10 AM ET): As discovered last week, Digital Wellbeing is getting schedules for Focus Mode and it’s rolling out now.
+
+Back at Google I/O earlier this year, Google unveiled new features for Digital Wellbeing, the company’s digital wellness tool that’s now required on all Android devices. The most notable of the two features is Focus Mode, a toggle that blocks access to selected apps to eliminate distractions. In its current implementation, Focus Mode is fairly basic as it can only be manually toggled from within Digital Wellbeing or from a Quick Settings tile. However, we’ve enabled two new enhancements to Focus Mode in the latest Digital Wellbeing beta that should make it more useful.
+
+
+An APK teardown can often predict features that may arrive in a future update of an application, but it is possible that any of the features we mention here may not make it in a future release. This is because these features are currently unimplemented in the live build and may be pulled at any time by the developers in a future build.
+
+
+
+Scheduling
+
+As we spotted late last month, Google is working on a scheduling feature for Focus Mode. Once this feature goes live, you’ll be able to choose a start and end time as well as the days of the week during which you want Digital Wellbeing to automatically enable Focus Mode. About a minute before entering Focus Mode, Digital Wellbeing will post a notification asking if you’re “ready to focus.” You can either wait a minute to let Focus Mode automatically start, or you can tap on the “wait” action to postpone Focus Mode for 10 minutes. Once Focus Mode starts, the notification text updates to tell you when it’ll automatically turn off. The Focus Mode Quick Setting tile also shows scheduling information in the subtext.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Taking a break
+
+If you noticed in the last screenshot above, there’s a new “Take a Break” action in the Focus Mode notification. This feature, as we previously covered, was first spotted by Jane Manchun Wong through her analysis of Digital Wellbeing. The “take a break” action lets you take a 5, 15, or 30 minute-long break from Focus Mode. There’s not much of a point in taking a break when manually toggling Focus Mode, but it may come in handy when you’ve set up a schedule that you generally want to stick with but simply can’t at the moment.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Neither feature is currently live in Digital Wellbeing on any of the other devices that I have. Since these features are fully implemented, it shouldn’t take long for them to rollout. We’ll let you know when that happens.
+
+Thanks to PNF Software for providing us a license to use JEB Decompiler, a professional-grade reverse engineering tool for Android applications.
+
+
+Update: Rolling Out
+As we discovered in the APK teardown last week, Digital Wellbeing is getting new schedules for Focus Mode. You can schedule Focus Mode to be enabled at certain times. And because sometimes you’ll need to get through Focus Mode for a brief moment, you can “Take a break” (temporarily disable Focus Mode) for 5, 15, or 30 minutes. This can be done from within Digital Wellbeing or the notification shade.
+Google is positioning Focus Mode as a way to block distractions to focus on a task, but this mode can also be used as an app blocker. There are 3rd-party apps in the Play Store that allow you to block apps during specific times of the day. For example, maybe you want to block social media apps on the weekend so you don’t use your phone as much. Focus Mode’s schedules make that possible on the system level.
+Join the beta for Digital Wellbeing to get these features, or download version 1.02752 from APK Mirror.
+
+Via: Android Police
+
+
+
+"

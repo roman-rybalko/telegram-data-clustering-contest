@@ -1,0 +1,46 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Microsoft removes support for BLE on Your Phone app
+01 Nov 2019, 03:11 by Ida Torres
+If you use your smartphone as a secondary work device along with your laptop or computer, then having the Your Phone app has probably been a big help. Well, if you had an Android phone and a Windows 10 computer that is. It allowed you to mirror your phone’s screen onto your computer so it would make it easier to work on it on a bigger screen However, because of some complaints about the Bluetooth connection, the supported devices have now become limited as they remove support for Bluetooth Low Energy.
+Having your phone connect with your computer using BLE allowed for more compatible devices. However, as we all know by now, Bluetooth isn’t always as reliable when it comes to connectivity. And so with the latest update to the Windows Insider build, they have dropped support for screen mirroring over BLE. Microsoft has been working with Samsung to develop the Link to Windows feature so you can connect the two devices through Wi-Fi. That seems to be the default connection option right now.
+The problem with this latest development is that now, there is a limited number of devices that can use the Your Phone companion app since the Link to Windows is still in early development and may be limited to Samsung devices for now. These devices namely are:
+* Samsung Galaxy Fold* Samsung Galaxy Note 10/ Note 10+* Samsung Galaxy S10/S10+/S10e* Samsung Galaxy A30s* Samsung Galaxy A50s* Samsung Galaxy A90
+If the phone model you’re using now isn’t any of these devices, then once you update to the Windows Insider build, the Your Phone node will disappear. Microsoft is advising users to unpair the devices so that you don’t have a connection that will no longer work anyway. They did promise that they will be adding more devices over the next few months and hopefully, that will eventually include non-Samsung Android phones as well.
+But if your phone is one of those listed above, then you will be able to enjoy the Your Phone mirroring through the Link to Windows option which connects them over Wi-Fi. Update your Samsung device to the recent software update in order for this connection to work.
+
+
+",en,"
+
+
+
+
+
+
+
+
+
+
+
+Microsoft removes support for BLE on Your Phone app
+01 Nov 2019, 03:11 by Ida Torres
+If you use your smartphone as a secondary work device along with your laptop or computer, then having the Your Phone app has probably been a big help. Well, if you had an Android phone and a Windows 10 computer that is. It allowed you to mirror your phone’s screen onto your computer so it would make it easier to work on it on a bigger screen However, because of some complaints about the Bluetooth connection, the supported devices have now become limited as they remove support for Bluetooth Low Energy.
+Having your phone connect with your computer using BLE allowed for more compatible devices. However, as we all know by now, Bluetooth isn’t always as reliable when it comes to connectivity. And so with the latest update to the Windows Insider build, they have dropped support for screen mirroring over BLE. Microsoft has been working with Samsung to develop the Link to Windows feature so you can connect the two devices through Wi-Fi. That seems to be the default connection option right now.
+The problem with this latest development is that now, there is a limited number of devices that can use the Your Phone companion app since the Link to Windows is still in early development and may be limited to Samsung devices for now. These devices namely are:
+* Samsung Galaxy Fold* Samsung Galaxy Note 10/ Note 10+* Samsung Galaxy S10/S10+/S10e* Samsung Galaxy A30s* Samsung Galaxy A50s* Samsung Galaxy A90
+If the phone model you’re using now isn’t any of these devices, then once you update to the Windows Insider build, the Your Phone node will disappear. Microsoft is advising users to unpair the devices so that you don’t have a connection that will no longer work anyway. They did promise that they will be adding more devices over the next few months and hopefully, that will eventually include non-Samsung Android phones as well.
+But if your phone is one of those listed above, then you will be able to enjoy the Your Phone mirroring through the Link to Windows option which connects them over Wi-Fi. Update your Samsung device to the recent software update in order for this connection to work.
+
+
+"

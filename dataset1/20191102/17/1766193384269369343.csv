@@ -1,0 +1,98 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Gaggle: Echtzeitüberwachung von US-Schülern mit Künstlicher Intelligenz
+Der Dienstleister Gaggle überwacht die digitale Arbeit und Kommunikation von rund fünf Millionen Schülern in den USA im Kampf gegen Selbstmorde und Amokläufe.
+02 Nov 2019, 17:15 by Stefan Krempl
+Schießereien, Massaker und Selbstmorde an US-Schulen erhöhen die Nachfrage nach technischen Lösungen, wie sie nach eigenen Angaben der in Illinois sitzende Anbieter Gaggle verfügbar macht. Die Firma setzt auf einen Mix aus einem proprietären System mit Künstlicher Intelligenz (KI) und menschlichen Begutachtern von als schädlich oder gefährlich erkannten Inhalten, um potenziell tödliche Taten zu verhindern. Zugleich soll das Programm dabei helfen, Kinder und Jugendliche zu ""guten Bürgern"" zu erziehen. Mit dem Ansatz wirft die Firma aber Fragen nicht nur zum Datenschutz der Betroffenen auf.
+Tiefer Eingriff in Privatsphäre
+Über 1400 US-Schulen mit rund fünf Millionen Auszubildenden glauben bereits den Versprechen von Gaggle und setzen die Software ein, um die digitale Arbeit und Kommunikation ihrer Schutzbefohlenen ""in Echtzeit"" zu überwachen. Das Programm klinkt sich in Googles G Suite und Microsoft Office 365 und damit in zwei der am weitesten verbreiteten Produktivitätspakete in der Cloud ein und analysiert den gesamten damit erzeugten Datenverkehr. Es bezieht zudem Nachrichten aus Twitter, Facebook, Instagram und anderen sozialen Netzwerken mit ein, die mit einer schulisch benutzten E-Mail-Adresse verknüpft sind.
+Gaggle gibt an, allein im Schuljahr 2018/19 722 Schüler von einem Suizid abgehalten zu haben. Interne Dokumente wie Hinweise für Prüfer von Inhalten, Fallberichte und Rechnungen aus 17 Schulbezirken, die das Online-Magazin BuzzFeed auf Basis des US-Informationsfreiheitsgesetzes erhalten und ausgewertet hat, zeigen jedoch, wie tief das System in die Privatsphäre der Betroffenen eingreift und dass die Erfolgsmeldungen auf nur schwer nachprüfbaren Kriterien beruhen. Zudem wird deutlich, dass Schulbezirke mehr als 60.000 US-Dollar für den Einsatz von Gaggle pro Jahr bezahlen, die in knappen Etats an anderer Stelle fehlen.
+Begriffe wie ""schwul"", ""lesbisch"", ""queer"" auf schwarzer Liste
+Die Software mit dem eingebauten KI-Filter scannt demnach E-Mails, Dokumente, Chats und Kalendereinträge und gleicht sie mit einer schwarzen Liste ab, auf der sich neben Ausdrücken mit Bezügen zu Selbstverletzungen, Gewalt, Mobbing oder Drogen auch ""vulgäre Ausdrücke"" befinden. Letztere machen dem Bericht zufolge 80 Prozent der von dem System zur weiteren Verfolgung markierten Inhalte aus. Auch Begriffe wie ""schwul"", ""lesbisch"" oder ""queer"" sind auf der Liste.
+Dazu kommt ein ""Anti-Pornografie-Scanner"", über dessen Trainingsdaten Gaggle aufgrund der sensiblen Thematik und geschützter Informationen rund um die Eigenlösung keine Auskunft geben wollte. Stellt ein Analyst der Firma fest, dass ein Schüler pornografische Inhalte selbst erstellt hat, wird die Datei automatisch an das National Center for Missing and Exploited Children (NCMEC) weitergeleitet für einen weiteren Abgleich mit der dortigen Datenbank für Bilder mit sexuellen Missbrauchsdarstellungen von Kindern.
+Schüler nach ""Regelverletzung"" in drei Risikogruppen eingeteilt
+Schlägt die Software Alarm, übergibt sie einschlägiges Material an einen von 125 ""Sicherheitsrepräsentanten 1. Grades"". Erkennen auch diese darin eine immanente Bedrohung für Schüler, schaut noch ein Mitglied einer 25-köpfigen Kerngruppe an besonders geschulten Prüfern darüber. Bleibt es bei der Einschätzung, werden umgehend Zuständige bei der Ausbildungsstätte oder bei deren Nichterreichbarkeit bei der örtlichen Polizei informiert.
+Generell speist Gaggle Erkenntnisse aus der Kommunikationsüberwachung in ein ""Dashboard"" für das ""Sicherheitsmanagement"" ein, auf das auch Schuladministratoren Zugriff haben. Daraus ersichtlich werden ""Regelverletzungen"" einzelner Schüler zusammen mit deren Ausweisnummern. Die Betroffenen werden dabei in drei Risikogruppen eingeteilt, die von hohen bis zu niedrigen Bedenken mit nur ""fragwürdigen Inhalten"" reichen.
+Fehlalarme: ""Gedichtsammlung"" als gefährlich eingestuft
+Das System befolgt auf dieser Basis eine ""Three Strikes""-Regel, wie sie ähnlich auch aus dem Umgang mit Urheberrechtsverletzungen mit Konsequenzen bis hin zu Netzsperren bekannt geworden ist. Demnach werden auch geringfügige Regelverstöße an eine Schule gemeldet, wenn sie wiederholt auftreten und ein Beobachteter etwa dreimal das Wort ""Fuck"" benutzt. Betroffene verlieren damit gewisse Nutzerprivilegien, bis ein Schulvertreter sie wieder freischaltet.
+
+Software meldet Selbstmordabsichten
+
+
+
+(Bild: dpa, Marc Tirl/Symbolbild)
+
+
+Schulcomputer in den USA können eine Software erhalten, die per KI aus dem Surfverhalten der Schüler Rückschlüsse auf mögliche Selbstmordabsichten ziehen soll.
+
+
+Internetfilter an US-Schulen soll Suizidabsichten erkennen
+
+
+
+Im jüngsten Schuljahr will das Unternehmen mithilfe des Programms 52.000 Hinweise auf Absichten für Selbstmorde und -verletzungen ausgemacht haben. Davon sollen 6000 so dringlich gewesen sein, dass man die Schule unverzüglich darüber in Kenntnis gesetzt habe. Aus den Papieren geht aber hervor, dass die Software auch Dateien mit Titeln wie ""Gedichtsammlung"" oder ""erzählerischer Aufsatz"" als brandgefährlich eingeschätzt und so Fehlalarme ausgelöst hat.
+Opt-out von Einzelnen schließt Schule von Softwarenutzung aus
+Gaggle ""empfiehlt"" Schulbezirken nach eigenem Bekunden, die Erlaubnis von Eltern und Schülern einzuholen, bevor sie die Software der Firma verwenden. Sollten sich einzelne Betroffene später für ein Opt-out entscheiden, könnten sie die von der Schule angebotenen Softwareprodukte und E-Mail-Dienste nicht mehr in Anspruch nehmen und müssten mit eigenen Alternativen arbeiten. Von einer echten freiwilligen Nutzung des Dienstes lässt sich damit nicht ausgehen.
+Experten sehen den Einsatz des Systems kritisch. Schulen seien zwar schon immer ""Trainingsstätten für die Persönlichkeit"" gewesen, erklärte Sarah Igo, Geschichtsprofessorin an der Vanderbilt-Universität, gegenüber BuzzFeed. Unter der ständigen Aufsicht von Diensten wie Gaggle brächten den Heranwachsenden auch vielleicht das ein oder andere bei, ""aber nicht das, was sie lernen sollen"". Es handle sich offenbar um eine ""Lösung auf der Suche nach einem Problem"", konstatierte Sarah Roberts, Expertin für ""Content Moderation"" an der University of California in Los Angeles. Das Ganze funktioniere nur, ""wenn wir akzeptieren, dass unsere Kinder bis auf Weiteres in einem digitalen System gefangen sein sollten schon letztlich von der Zeit an, in denen sie empfindungsfähig werden."" (tiw)
+
+
+",de,"
+
+
+
+
+
+
+
+
+
+
+
+Gaggle: Real-time monitoring of US students with Artificial Intelligence
+The service provider Gaggle monitors the digital work and communication of about five million students in the US in the fight against suicides and rampage.
+02 Nov 2019, 17:15 by Stefan Krempl
+Shooting, massacres and suicides at US schools are increasing the demand for technical solutions, according to their own account, the Illinois-based provider Gaggle makes available. The company relies on a mix of a proprietary artificial intelligence (AI) system and human assessors of malicious or dangerous content to prevent potentially fatal acts. At the same time, the program is intended to help educate children and adolescents to become ""good citizens"". With the approach, the company raises questions but not only on the privacy of those affected.
+Deep engagement in privacy
+More than 1,400 US schools with around five million trainees are already believing in Gaggle's promise and using the software to monitor the digital work and communications of their wards ""in real time."" The program integrates with Google's G Suite and Microsoft Office 365, two of the most popular productivity packages in the cloud, and analyzes all traffic generated with it. It also includes news from Twitter, Facebook, Instagram and other social networks linked to a school-used email address.
+Gaggle states that in the 2018/19 school year alone, 722 students were prevented from suicide. However, internal documents such as notices for content reviewers, case reports, and bills from 17 school districts received and evaluated by the BuzzFeed online magazine based on the US Freedom of Information Act show how deeply the system interferes with the privacy of the data subject and the success stories based on criteria that are difficult to verify. It also becomes clear that school districts pay more than $ 60,000 a year for Gaggle's use, which is missing in tight budgets elsewhere.
+Terms like ""gay"", ""lesbian"", ""queer"" on blacklist
+The software with the built-in AI filter scans e-mails, documents, chats and calendar entries and compares them with a black list, which contains ""vulgar expressions"" in addition to expressions with references to self-harm, violence, mobbing or drugs. The latter account for 80 percent of the content tagged by the system for further prosecution, according to the report. Also terms like ""gay"", ""lesbian"" or ""queer"" are on the list.
+In addition, there is an ""anti-pornography scanner"", whose training data Gaggle did not want to provide due to the sensitive topic and protected information about the intrinsic solution. If a company analyst finds that a student has created pornographic content himself, the file is automatically forwarded to the National Center for Missing and Exploited Children (NCMEC) for further reconciliation with the child sexual abuse images database there.
+Students divided into three risk groups after ""rule violation""
+If the software sounds alert, it will hand over relevant material to one of 125 ""1st degree security representatives"". If they too recognize an inherent threat to students, another member of a 25-member core group of specially trained examiners looks at it. If it remains in the assessment, immediately inform the responsible persons at the training center or their unavailability to the local police.
+In general, Gaggle feeds findings from communication monitoring into a ""dashboard"" for ""security management"", which is also accessible to school administrators. This shows ""violations"" of individual students together with their ID numbers. The victims are divided into three risk groups, ranging from high to low concerns with only ""questionable content"".
+False alarms: ""Poetry Collection"" classified as dangerous
+On this basis, the system adheres to a ""three-strikes"" rule, which has become known similarly from the handling of copyright infringements with consequences through to network bans. Accordingly, minor offenses are reported to a school if they occur repeatedly and an observer uses the word ""Fuck"" about three times. Affected lose certain user privileges until a school representative unlocks them again.
+
+Software reports suicidal intentions
+
+
+
+(Image: dpa, Marc Tirl / Symbolbild)
+
+
+School computers in the US can get a software that uses AI to draw conclusions from the surfing behavior of the students about possible suicidal intentions.
+
+
+Internet filters at US schools should identify suicidal intentions
+
+
+
+In its most recent year, the program aims to use the program to identify 52,000 indications of intentions for suicides and injuries. Of these, 6000 were said to be so urgent that the school was informed immediately. From the papers, however, it is clear that the software also rated files with titles such as ""poetry collection"" or ""narrative essay"" as fire-dangerous and thus triggered false alarms.
+Opt-out of individuals excludes school from software usage
+Gaggle ""recommends"" school districts by their own admission to obtain permission from parents and students before using the company's software. Individuals who opt out later may no longer be able to use the software products and e-mail services offered by the school and would need to work with their own alternatives. From a genuine voluntary use of the service can not be expected.
+Experts see the deployment of the system as critical. Although schools have always been ""training centers for the personality,"" Sarah Igo, history professor at Vanderbilt University, told Buzzfeed. Under the constant supervision of services such as Gaggle, the adolescents might also contribute one or the other ""but not what they should learn"". It seems to be a ""solution to finding a problem,"" said Sarah Roberts, a content moderation expert at the University of California, Los Angeles. The whole thing only works, ""if we accept that our children should be trapped in a digital system until further notice, ultimately from the time they become sentient."" (Tiw)
+
+
+"

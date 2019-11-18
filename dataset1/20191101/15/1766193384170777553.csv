@@ -1,0 +1,50 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+GitLab rudert auch bei der geplanten Telemetrie zurück
+Nach Protesten von Nutzern nimmt GitLab davon Abstand, das Anwenderverhalten in seinen Diensten mit dem Pendo-Service nachverfolgen zu wollen.
+01 Nov 2019, 15:50 by Matthias Parbel
+In einem Blogbeitrag unter dem Titel ""Update on free software and telemetry"" hatte GitLabs Vice President of Products, Scott Williamson, am 10. Oktober angekündigt, künftig das Nutzerverhalten nachvollziehen und analysieren zu wollen – mithilfe eines Telemetriedienstes. Bei den GitLab-Nutzern stieß die Ankündigung auf wenig Gegenliebe, obwohl das Unternehmen die Einhaltung von Datenschutzstandards sowie Unterstützung der Do-Not-Track-(DNT)-Funktionen in Web-Browsern versprach. In einem Update des Blogbeitrags ruderte Sid Sijbrandij, Mitgründer und CEO von GitLab, nun zurück: aufgrund des ""beträchtlichen"" Feedbacks von Kunden, Anwendern und der Community habe das Unternehmen die angekündigten Maßnahmen bereits wieder gestrichen, bevor sie in Kraft getreten seien.
+Telemetriedienst zur Überwachung des Nutzerverhaltens
+Der Vorstoß habe offenbar den Nerv der Community getroffen, räumte Sijbrandij ein und entschuldigte sich für diesen ""Fehler"". GitLab verpflichte sich daher auch, in seinen Produkten keine Telemetrie zu implementieren, die Nutzungsdaten an einen externen Produktanalysedienst sendet, versprach der CEO. Die Pläne hatten ursprünglich vorgesehen, das SaaS-Angebot auf GitLab.com sowie die proprietären Self-Managed-Packages (Starter, Premium und Ultimate) mit zusätzlichen JavaScript-Snippets zu versehen. Die Snippets – darunter proprietäre wie auch Open Source – sollten sowohl mit GitLab als auch dem Telemetriedienst eines Drittanbieters interagieren, um im Hinblick auf die Verbesserung der User Experience Informationen über das Nutzerverhalten zu sammeln.
+Um dabei eine möglichst datenschutzkonforme Vorgehensweise zu gewährleisten, sollte der nach SOC-2 (Service Organization Control 2) zertifizierte Telemetriedienst Pendo zum Einsatz kommen und Anwendern per DNT-Mechanismus im Browser die Freiheit eingeräumt werden, ein Tracking abzulehnen. Allein die Aussicht, dass Daten ""unkontrolliert"" aus ihren Installationen abfließen könnten, hat offenbar aber zahlreiche GitLab-Nutzer auf die Barrikaden gehen lassen. Insbesondere äußerten jene Anwender Bedenken, die schon aus Sorge vor der Datenkrake Microsoft GitHub kritischer betrachteten.
+Der Vorstoß von GitLab hat es offensichtlich Fingerspitzengefühl und eine angemessene Kommunikation vermissen lassen, wie auch CEO Sijbrandij eingesteht: ""Unser Hauptfehler war, dass wir unseren eigenen Kernwerten zur Zusammenarbeit nicht gerecht wurden, indem wir unsere Anwender, Kunden und die Community in die Strategiediskussion einbezogen haben – und das tut mir wirklich leid."" Das Unternehmen wolle daher nun einen neuen Entwurf zur Analyse des Nutzerverhaltens ausarbeiten, der frühzeitig zur Diskussion gestellt werden soll, bevor irgendwelche Änderungen in Kraft treten.
+Von einem Fettnäpfchen ins nächste
+GitLab tritt mit der Telemetrie-Initiative binnen weniger Wochen bereits zum zweiten Mal in ein Fettnäpfchen. Im September hatte der Plattformbetreiber einen Vorstoß unternommen, die eigenen Mitarbeiter per Firmenrichtlinie davon abzuhalten, sich während der Arbeit in politische Diskussionen zu verstricken. Darüber hinaus wurden Änderungen in den Statuten vorgenommen, die eine Zusammenarbeit mit Kunden betreffen, auch wenn diese möglicherweise nicht die Werte von GitLab vertreten. In beiden Fällen sah sich das Unternehmen mit einem Aufruhr konfrontiert, der GitLab zu einem Kurswechsel zwang. (map)
+
+
+",de,"
+
+
+
+
+
+
+
+
+
+
+
+GitLab also rows back in the planned telemetry
+Following protests from users, GitLab refrains from following user behavior in its services with the Pendo service.
+01 Nov 2019, 15:50 by Matthias Parbel
+In a blog post titled ""Update on free software and telemetry,"" GitLab's Vice President of Products, Scott Williamson, announced on October 10 that it wanted to understand and analyze user behavior in the future - using a telemetry service. GitLab users were not particularly pleased with the announcement, although the company promised compliance with privacy standards and support for Do-Not-Track (DNT) features in web browsers. In an update to the blog post, Sid Sijbrandij, co-founder and CEO of GitLab, has now rowed back: due to ""significant"" feedback from customers, users and the community, the company had already canceled the announced measures before they came into force.
+Telemetry service for monitoring user behavior
+The attack has apparently hit the nerve of the community, conceded Sijbrandij and apologized for this ""mistake"". GitLab also undertakes not to implement any telemetry in its products that sends usage data to an external product analysis service, the CEO promised. The plans had originally planned to add additional JavaScript snippets to the SaaS offering on GitLab.com and the proprietary self-managed packages (Starter, Premium and Ultimate). The snippets, including both proprietary and open source, should interact with both GitLab and a third-party telemetry service to collect user behavior information to improve the user experience.
+In order to ensure the most privacy-compliant approach possible, SOC-2 (Service Organization Control 2) certified Pendo telemetry service should be used and DNT-enabled users in the browser the freedom to refuse a tracking. But the prospect that data could flow out of their installations ""unchecked"", but apparently has let go numerous GitLab users on the barricades. In particular, those users expressed concerns that were more critical because of concerns about the data octopus Microsoft GitHub.
+The GitLab move has obviously lacked tact and appropriate communication, as CEO Sijbrandij admits: ""Our main flaw was that we did not live up to our own core values for collaboration by involving our users, customers and the community in the strategy discussion have - and I'm really sorry. "" The company now wants to work out a new user behavior analysis design, which should be discussed early, before any changes take effect.
+From one faux pancake to the next
+GitLab enters the world with the telemetry initiative within a few weeks already for the second time in a faux pas. In September, the platform operator made an effort to prevent its own employees by company policy from becoming involved in political discussions during work. In addition, changes have been made to the Articles of Association regarding cooperation with clients, even though they may not represent GitLab's values. In both cases, the company faced a turmoil that forced GitLab to change course. (Map)
+
+
+"

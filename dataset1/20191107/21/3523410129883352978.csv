@@ -1,0 +1,50 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+
+همکاری گوگل با شرکت های خصوصی برای اسکن اپ های پلی استور
+
+گوگل از سه شرکت خصوصی امنیت موبایل خواسته تا با یکپارچه سازی ابزارهای امنیتی، این کمپانی را در اسکن اپلیکیشن های پلی استور یاری کنند.
+07 Nov 2019, 21:39 by بولتن نیوز | bultannews.com
+گروه IT: شرکت گوگل به تازگی و با همکاری سه شرکت امنیت سایبری خصوصی به نام های ESET ،Lookout و Zimperium، پروژه جدیدی را به نام App Defense Alliance آغاز کرده است. به گفته گوگل، هدف این پروژه، یکپارچه سازی موتورهای تشخیص بدافزار و تهدیدات متعدد و بهبود اسکن های امنیتی برای اپلیکیشن های اندرویدی، پیش از انتشار آن ها در فروشگاه آنلاین پلی استور است.   به گزارش بولتن نیوز به نقل از کلیک، در حال حاضر، هر برنامه ای که به وسیله توسعه دهنده اپلیکیشن ساخته می شود، ابتدا باید به وسیله کارکنان گوگل و از طریق سیستم هایی به نام Bouncer و Google Play Protect مورد پویش و اسکن قرار گیرد. این دو سیستم در گذشته می توانستند هزاران برنامه اندرویدی مخرب را شناسایی کنند. اما با گذشت زمان و پیشرفت تکنولوژی، کارایی سیستم های امنیتی کاهش یافته است و اپلیکیشن های مخاطره آمیز متعدد، از تروجان های بانکداری گرفته تا باج افزارها، به پلی استور راه پیدا کرده اند. در طی سال های اخیر، تولیدکننده های بدافزارهای اندرویدی با اقدامات دفاعی سیستم های گوگل انطباق پیدا کرده و خلاق تر شده اند.
+
+
+
+یکی از راه های ممکن برای ورود برنامه های مخرب به فروشگاه رسمی پلی استور، یک سیستم تحویل چند مرحله ای به نام Malware Droppers است. به واسطه این سیستم، برنامه های مخاطره آمیز پس از نصب یک برنامه ظاهرا ایمن، روی دستگاه قربانی دانلود و نصب می شوند. روش دیگری نیز وجود دارد که اساس آن به سادگی یک تایمر است. بدین صورت که رفتار مخرب برای چند ساعت یا حتی چند روز نشان داده نمی شود تا سیستم های امنیتی گوگل نتوانند بدافزار را شناسایی کنند.تنها به وسیله همین دو روش ساده، برنامه های اندرویدی مخرب متعددی تاکنون توانسته اند از فرایند اسکن گوگل فرار کنند. حال این شرکت آمریکایی علاوه بر اعتراف مشکل، اولین گام جهت حل آن را برداشته است. این شرکت سیستم تشخیص Google Play Protect را با موتورهای اسکن کننده همکاران خود، یکپارچه سازی کرده تا عملیات یافتن اپلیکیشن های مخرب را پیش از ورود به پلی استور، بهبود بخشد.طبق گفته یکی از محققین امنیتی ESET، لوکاس استفانکو در سپتامبر سال جاری، 172 اپلیکیشن مخرب در فروشگاه پلی استور شناسایی شده اند که تعداد نصب آن ها به بیش از 335,952,400 مرتبه می رسد.
+
+
+",fa,"
+
+
+
+
+
+
+
+
+
+
+
+
+Google partnered with private companies to scan PlayStation apps
+
+Google has asked three private mobile security companies to integrate security tools to help the company scan for polyester apps.
+07 Nov 2019, 21:39 by Bulletin News | bultannews.com
+IT Group: Google has just launched a new project called App Defense Alliance, in collaboration with three private cyber security companies, ESET, Lookout and Zimperium. The goal of the project, according to Google, is to integrate malware and multiple threat detection engines and improve security scans for Android apps before releasing them into the online store. At present, any application developed by the app developer must first be scanned by Google staffers through systems such as Bouncer and Google Play Protect, the Bulletin News reported. . The two systems could detect thousands of malicious Android apps in the past. But with the advent of technology, the performance of security systems has diminished, and numerous risky applications, from banking trojans to ransomware, have begun to pop up. In recent years, Android malware manufacturers have adapted and become more creative with Google's defenses.
+
+
+
+One possible way to get malware into the official PlayStation Store is by a multi-stage delivery system called Malware Droppers. Because of this system, dangerous programs are downloaded and installed on the victim's device after installing an apparently secure application. There is another method that is simply a timer. This means that malicious behavior will not be displayed for hours or even days until Google's security systems cannot detect malware. Only with these two simple methods, many malicious Android apps have been able to escape the Google scanning process. In addition to admitting the problem, the American company has taken the first step to solve it. The company has integrated the Google Play Protect detection system with its peer-to-peer scanning engines to improve malware detection before it enters polystore. According to ESET security researcher Lucas Stefanko in September of this year, 172 malicious apps have been identified in the PlayStore store, with more than 335,952,400 installed.
+
+
+"

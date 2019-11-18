@@ -1,0 +1,178 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Programu Windows Insider chybí vedoucí, zato se ruší kanál Skip ahead
+Přestože program Windows Insider aktuálně postrádá vedení, dochází ke zrušení jednoho z testovacích okruhů. Bolet by to ale nikoho nemělo. Microsoft dále postupuje vpřed s vývojem Windows 10 „20H1“.
+06 Nov 2019, 18:21 by Petr Urban
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+VŠECHNY FOTOGRAFIE
+
+Možná jste zaznamenali, že nedávno roli vedoucí programu Windows Insider opustila Dona Sarkar, která našla jinou pozici ve firmě. Ke stanovení nástupce či nástupkyně zatím nedošlo, zato dochází k určitému zjednodušení programu Insider. Microsoft totiž ruší kanál Skip ahead. Představen byl až jako poslední a s určitým odstupem od ostatních.
+Skip ahead vznikl v létě 2017 a Microsoft do něj vždycky uvolňoval první raná sestavení určená pro veřejnost, a to ještě v době, kdy dobíhalo testování předchozí nové hlavní verze Windows 10. Jednalo se o sestavení, která zpravidla nenabízela žádné funkční novinky, protože se vývojový tým vrtal v jádře. Tím spíše mohla být nestabilní vyvstávala logická otázka: proč se jimi vůbec zaobírat?
+Pokud jste si nějaké důvody našli, neznamená to ale, že je tomuto typu testování konec. Microsoft má totiž okruhů pro tyto účely dostatek a vinou zvláštních okolností nám letos ukázal, jak by mohl vypadat nový řád. Ve chvíli, kdy už bude nová hlavní verze z větší části hotová, může ji přesunout do Slow ringu a Fast ring nechat vyhrazený právě čerstvým sestavením další vývojové větve.
+
+
+
+
+
+Jak to ale reálně bude, se musíme nechat překvapit. Pokud jste byli připojeni ke kanálu Skip ahead, budete automaticky převedeni do Fast ringu.
+Windows 10 Insider Preview build 19018
+Spolu s výše uvedenou změnou Microsoft oznámil dostupnost Windows 10 Insider Preview build 19018. Tedy ve Fast ringu. Novinky kromě oprav spočívají v doplnění předpřipravených hledání na síti, která by podle Microsoftu mohla být užitečná. Jedná se o informace o počasí, nových filmech, zprávách a shrnutí vybraných důležitých událostí daného dne, které se odehrály v historii.
+Pokud budete mít zájem i o tyto informace, klepnete na jedno z nových tlačítek a akce bude provedena. Najdete je v prostředí pro vyhledávání. Aktuálně si novinky mohou osahat jen v USA, chystá se ale rozšíření do dalších zemí. Funkce se pak objeví i ve starších řadách Desítek, a to od verze 1809. Pro upřesnění: výsledky se neotevírají v prohlížeči, Bing je zpracuje přímo v prostoru pro vyhledávání.
+Zdroj: Windows Experience Blog
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+VŠECHNY FOTOGRAFIE
+
+
+SOUVISEJÍCÍ ČLÁNKY
+
+
+
+
+
+
+
+
+",cs,"
+
+
+
+
+
+
+
+
+
+
+
+Windows Insider is missing a leader, but Skip ahead is being canceled
+Although Windows Insider currently lacks guidance, one of the test circuits is being canceled. But it wouldn't hurt anybody. Microsoft is moving forward with the development of Windows 10 ""20H1"".
+06 Nov 2019, 17:21 by Petr Urban
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ALL PHOTOS
+
+You may have noticed that Don Sarkar left the role of Windows Insider leader recently and found a different position in the company. The successor has not yet been established, but there is some simplification of the Insider program. Microsoft is canceling Skip ahead channel. It was introduced last and with some distance from the others.
+Skip ahead was created in the summer of 2017 and Microsoft was always releasing the first early builds for the public while it was still testing the previous major release of Windows 10. It was a build that usually didn't offer any functional news because the development team drilling in the core. All the more unstable might have been the logical question: why should they even deal with them?
+However, if you found any reasons, this does not mean that this type of testing is over. Microsoft has enough circuits for these purposes and due to special circumstances showed us this year what a new order could look like. When the new major release is largely complete, it can move it to the Slow Ring and leave the Fast Ring reserved for the fresh build of the next development branch.
+
+
+
+
+
+But as it really is, we must be surprised. If you were connected to the Skip ahead channel, you will be automatically transferred to the Fast ring.
+Windows 10 Insider Preview build 19017
+Along with the above change, Microsoft announced the availability of Windows 10 Insider Preview build 19018. That is, in the Fast ring. In addition to the fixes, the news consists in adding pre-built network searches that Microsoft believes could be useful. It includes information about the weather, new movies, news and a summary of selected important events of the day that have taken place in history.
+If you are interested in this information as well, click one of the new buttons to perform the action. You can find them in the search environment. Currently, news can only reach the US, but is going to expand to other countries. The function will then also appear in the older Tens series, starting from version 1809. To be precise: the results do not open in the browser, Bing processes them directly in the search space.
+Source: Windows Experience Blog
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ALL PHOTOS
+
+
+RELATED ARTICLES
+
+
+
+
+
+
+
+
+"

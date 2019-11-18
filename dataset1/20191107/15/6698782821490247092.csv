@@ -1,0 +1,118 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Зачем Microsoft инвестирует в OpenAI миллиард долларов
+07 Nov 2019, 15:51 by Даг Дринкуотер
+
+Гигант из Редмонда решил вложить огромные деньги в научно-исследовательскую лабораторию, и мы попытались разобраться почему.
+
+От укрепления позиций Azure в сообществе разработчиков до формирования этических норм искусственного интеллекта и повышения уровня доверия к нему. Инвестиции Microsoft в OpenAI в размере 1 млрд долл. показывают, что гигант из Редмонда активно готовится к вхождению в сложный мир искусственного интеллекта.
+Но сначала хотелось бы освежить в памяти происходящее. В последние годы искусственный интеллект из концепции превратился в реальность, объединив под общим термином целый ряд самых разных технологий. Наибольшей популярностью сегодня пользуются технологии машинного и глубинного обучения.
+Наработки, предназначенные для специфичных и программных нужд (распознавания объектов, лиц, языка или поиска шаблонов в данных) и считавшиеся ранними или «частными» примерами искусственного интеллекта, сегодня относят к искусственному интеллекту общего назначения (artificial general intelligence, AGI), называемому также «истинным» искусственным интеллектом. Но многие его аспекты по-прежнему ограничены рамками научной фантастики.
+Резюмируя ситуацию кратко, стоит отметить: возникла вера в то, что AGI сможет объединить человеческую природу, гибкое мышление и логику с преимуществами компьютеров – практически мгновенным откликом и способностью перемалывать и анализировать огромные наборы данных, делая соответствующие выводы.
+Все это, естественно, вызывает некоторые опасения, особенно в части долгосрочного влияния технологий на общество. Основатель Tesla (и OpenAI) Илон Маск ранее называл AGI «крупнейшей экзистенциальной угрозой» человечеству, а профессор Кембриджского университета Стивен Хокинг говорил в интервью BBC, что «создание полномасштабного искусственного интеллекта вполне способно положить конец существованию рода человеческого».
+Что касается ближайшего будущего, технический директор Google Рэй Курцвейл предсказал, что AGI, способный пройти тест Тьюринга, появится уже через десять лет, а к 2040 году компьютеры смогут выполнять за секунду тот же объем вычислений, что и совокупный мозг всего человечества.
+Адъюнкт-профессор университета Бата Джоанна Брайсон для разных людей трактует определение AGI по-разному.
+«На самом деле, AGI – это не нечто материальное, – пояснила она. – Когда люди думают, что AGI станет похожим на нас, в основе этого лежит чересчур дерзкая идея XVII века о том, что люди находятся на вершине эволюции. И вскоре на смену им придет нечто еще более быстрое».
+Вместо этого Брайсон предлагает сразу четыре определения. Для большинства AGI представляет собой две противоречивые вещи – систему, которая может знать все, и систему, которая похожа на человека.
+Несмотря на всю свою таинственность AGI – одна из причин, побудивших Microsoft инвестировать миллиард долларов в OpenAI, лабораторию по исследованию искусственного интеллекта, располагающуюся в Кремниевой долине.
+
+Что такое OpenAI?
+
+Главной задачей исследовательской лаборатории OpenAI, основанной в декабре 2015 года, является изучение будущего AGI. За свою недолгую историю она успела заручиться поддержкой целого ряда знаменитых сторонников, в том числе одного из  ее основателей, генерального директора компании Tesla Илона Маска, бывшего председателя совета директоров Y Combinator, а ныне генерального директора OpenAI Сэма Альтмана, основателя LinkedIn Рида Хоффмана, а теперь и Сатьи Наделлы, генерального директора Microsoft. Миссия лаборатории заключается в том, чтобы «искусственный интеллект общего назначения приносил пользу всему человечеству».
+«Мы хотим, чтобы передовые системы искусственного интеллекта помогали людям решать сложные задачи, затрагивающие сразу несколько дисциплин, включая глобальные проблемы изменения климата, получения доступных и высококачественных медицинских услуг, а также персонализированного образования», – заявил Альтман.
+Что касается технической части, для достижения первых результатов OpenAI использовала глубинное обучение – технологию, базирующуюся на нейронных сетях и имитирующую работу человеческого мозга. В настоящее время соответствующие работы ограничены отдельными экспериментами в области автоматической генерации текстов, манипулирования рукой робота и игр. Программное обеспечение OpenAI сумело, например, одержать победу над командой по киберспорту в видеоигре Dota 2.
+Интересно, что OpenAI начиналась как некоммерческая организация, но в начале года она получила лицензию на ведение бизнеса OpenAI LLP и теперь использует в своей деятельности бизнес-модель «рентабельности с ограничениями». Это позволило компании привлекать и возвращать инвестиционный капитал, подобно обычному стартапу, но при этом она должна придерживаться своего первоначального устава и заниматься развитием AGI на благо человечества.
+В модели ограниченной рентабельности прибыль, получаемая от любых инвестиций в OpenAI LLP, будет передаваться общей некоммерческой группе, которая затем сможет использовать эти фонды по своему усмотрению. Для инвесторов первой волны коэффициент ограничения рентабельности установлен на уровне 100. Таким образом, если сегодня вы инвестировали 10 млн долл., ограничение вступит в силу только после того, как первоначальные инвестиции принесут 1 млрд долл.
+В общем случае ограничения пока не определены и будут меняться по мере увеличения инвестиционного капитала, но предполагается, что они никогда не превысят рыночной стоимости крупнейших технологических компаний.
+«Ограничения станут актуальными, если мы преуспеем в создании AGI, который принесет беспрецедентную экономическую выгоду», – говорится в пресс-релизе лаборатории.
+
+Пояснения к сделке
+
+В свете приобретения DeepMind компанией Google проведенные инвестиции делают Microsoft «эксклюзивным» поставщиком облачных сервисов для OpenAI. Обе компании активно экспериментируют, разрабатывают и стремятся к потенциальной монетизации новых технологий AGI, формируя одновременно этические нормы и поднимая уровень доверия к новым технологиям.
+В краткосрочной перспективе они намерены выстраивать вычислительную платформу в облаке Azure, где будет проводиться обучение и запуск моделей искусственного интеллекта, наращивая аппаратные мощности на основе суперкомпьютерных технологий Microsoft.
+OpenAI будет передавать Microsoft лицензии на некоторые из своих технологий для последующей коммерциализации. При этом Microsoft сохранит статус «привилегированного коммерческого партнера» для OpenAI. Группа станет эксклюзивным облачным партнером Microsoft, тогда как в прошлом она «удовлетворяла свои вычислительные потребности, обращаясь к различным поставщикам». На вопрос о том, какие компетенции и ресурсы будут совместно использоваться двумя организациями, в OpenAI нам не ответили.
+«Совместными усилиями мы разрабатываем в Microsoft Azure аппаратную и программную платформу, которая позволит масштабировать AGI, – указал пресс-секретарь OpenAI. – Выстраивается последовательность все более мощных технологий искусственного интеллекта, которая потребует больших капиталовложений в вычислительные мощности. Самый очевидный способ окупить затраты заключается в создании продукта, но это потребует от нас изменения направленности. Поэтому мы намерены лицензировать некоторые промежуточные технологии AGI, а Microsoft становится нашим привилегированным партнером, на которого будет возлагаться задача их коммерциализации».
+Что касается структуры, совет директоров OpenAI продолжит самостоятельно принимать все решения по исследовательской повестке дня и использованию полученных наработок. В состав совета директоров лаборатории будет включен один представитель Microsoft.
+Зачем Microsoft инвестиции? Для привлечения талантов, встречных закупок у разработчика и консолидации искусственного интеллекта
+По мнению отраслевого аналитика Джека Голда, с учетом нынешних относительно небольших потребностей искусственного интеллекта в облачных вычислениях партнерство направлено на консолидацию рынка и формирование для Microsoft удобной позиции в будущем.
+«OpenAI пытается консолидировать различные структуры и платформы, доступные в настоящее время искусственному интеллекту, с тем чтобы уменьшить число компонентов экосистемы, – подчеркнул Голд. – В настоящее время здесь имеется множество различных платформ и инструментов. Процесс типичен для нового рынка, которому нужна консолидация. Вопрос заключается в том, кто ее возглавит? Microsoft конкурирует с Google, AWS и прочими, так что любое партнерство, способствующее привлечению потенциальных клиентов, идет компании на пользу».
+Вице-президент аналитической компании CCS Insight по корпоративным исследованиям Николас Маккуайр, признает, что инвестиции в OpenAI стали для него неожиданностью. Главным образом потому, что AGI остается темой для избранных – сверхпродвинутой и вместе с тем достаточно узкой исследовательской дисциплиной.
+В области искусственного интеллекта у Microsoft есть более актуальные темы, например, обработка естественного языка, кибербезопасность и квантовые вычисления.
+Таким образом, явных причин для инвестиций не так много. «На каком-то уровне Microsoft, наверное, захочет установить связь с исследователями, которые могут помочь компании стать идейным лидером, раздвинуть границы AGI а затем и использовать прорывные результаты исследований в своем бизнесе Azure, – указал Маккуайр. – Очевидно, те же цели Google преследует с DeepMind, пускай и не в столь явном виде».
+Если копнуть глубже, можно предположить, что инвестиции связаны с позиционированием Azure и подготовкой облачной платформы к пришествию AGI, который должен стать «рабочей нагрузкой суперкомпьютерных масштабов», особенно среди разработчиков, экспериментирующих с машинным обучением.
+Наличие у AGI дополнительных возможностей – хороший способ продемонстрировать сообществу разработчиков (особенно тем из них, кто занимается машинным обучением) передовые сценарии применения новых технологий.
+Несмотря на это существует общее понимание лидерства Google в области искусственного интеллекта, которое основано на неиспользуемых пока возможностях компании и ее кадровом резерве.
+Вот почему Джоанна Брайсон считает, что нынешняя сделка, как и прочие инициативы Microsoft, направлена прежде всего на привлечение талантов: «У компании реальные проблемы с тем, чтобы выглядеть круто. Ясно, что они чувствуют себя взрослыми в существующем окружении, стремясь таковыми и оставаться, и при этом хотят выглядеть круто, чтобы у людей появлялось желание работать с ними. Как и DeepMind, это помогает привлечь больше талантов. В случае успеха OpenAI будет напоминать Google образца 1998 года: обладая отличным продуктом, там заявляли, что деньги их не интересуют, таланты валили к ним косяком, и все вокруг знали, что самое лучшее создается именно в Google».
+Вместе с тем, активная реклама и привлечение талантов позволяют претендовать на большее. В идеале речь идет о проекте, который изменит жизнь людей. Но нельзя забывать о его коммерциализации.
+
+
+",ru,"
+
+
+
+
+
+
+
+
+
+
+
+Why Microsoft is investing a billion dollars in OpenAI
+07 Nov 2019, 15:51 by Doug Drinkwater
+
+The giant from Redmond decided to invest a lot of money in a research laboratory, and we tried to figure out why.
+
+From strengthening Azure’s position in the development community to building ethical standards for artificial intelligence and building credibility. Microsoft’s $ 1 billion OpenAI investment in RedA shows that the giant from Redmond is actively preparing to enter the complex world of artificial intelligence.
+But first I would like to refresh what is happening. In recent years, artificial intelligence has transformed from a concept into reality, combining a number of different technologies under a common term. The most popular technologies today are machine and deep learning.
+Developments intended for specific and programmatic needs (recognition of objects, faces, language, or searching for patterns in data) and considered to be early or “private” examples of artificial intelligence are today referred to as artificial general intelligence (AGI), also called “ true ""artificial intelligence. But many of its aspects are still limited by science fiction.
+Summarizing the situation briefly, it is worth noting: the belief has arisen that AGI will be able to combine human nature, flexible thinking and logic with the advantages of computers - with almost instant response and the ability to grind and analyze huge data sets, making the corresponding conclusions.
+All this, of course, raises some concerns, especially regarding the long-term impact of technology on society. Founder of Tesla (and OpenAI), Ilon Musk, previously called the AGI “the biggest existential threat” to humanity, and Cambridge University professor Stephen Hawking said in an interview with the BBC that “creating a full-blown artificial intelligence is quite capable of putting an end to the existence of the human race.”
+For the near future, Google’s CTO Ray Kurzweil predicted that an AGI capable of passing the Turing test would appear in ten years, and that by 2040 computers would be able to do the same amount of computing in a second as the combined brain of all mankind.
+Bata University associate professor Joanna Bryson interprets AGI differently for different people.
+“Actually, AGI is not something tangible,” she explained. - When people think that AGI will become like us, the basis of this is the overly bold idea of the 17th century that people are at the top of evolution. And soon they will be replaced by something even faster. ”
+Instead, Bryson offers four definitions at once. For most, the AGI is two conflicting things - a system that can know everything, and a system that looks like a person.
+Despite its mystery, AGI is one of the reasons Microsoft has invested a billion dollars in OpenAI, an artificial intelligence research lab located in Silicon Valley.
+
+What is OpenAI?
+
+The main objective of the OpenAI research laboratory, founded in December 2015, is to study the future of AGI. Over her short history, she managed to enlist the support of a number of famous supporters, including one of its founders, Tesla CEO Ilon Musk, former chairman of the board of directors of Y Combinator, and now OpenAI CEO Sam Altman, founder of LinkedIn, Reed Hoffman, and now and Satya Nadella, Microsoft CEO. The mission of the laboratory is to ""general-purpose artificial intelligence benefit all of humanity.""
+“We want advanced artificial intelligence systems to help people solve complex problems that affect several disciplines at once, including the global problems of climate change, access to affordable and high-quality medical services, as well as personalized education,” Altman said.
+As for the technical part, to achieve the first results, OpenAI used deep learning - a technology based on neural networks and simulating the work of the human brain. Currently, the relevant works are limited to individual experiments in the field of automatic text generation, robot manipulation and games. OpenAI software has, for example, managed to defeat the eSports team in the Dota 2 video game.
+It is interesting that OpenAI began as a non-profit organization, but at the beginning of the year it received a license to conduct OpenAI LLP business and now uses the “profitability with restrictions” business model in its activities. This allowed the company to attract and return investment capital, like a regular startup, but at the same time it should adhere to its original charter and be engaged in the development of AGI for the benefit of humanity.
+In the limited profitability model, the profit from any investment in OpenAI LLP will be transferred to a common nonprofit group, which will then be able to use these funds at its discretion. For investors of the first wave, the profitability restriction coefficient is set at 100. Thus, if you invested $ 10 million today, the restriction will come into force only after the initial investment brings $ 1 billion.
+In the general case, the restrictions have not yet been determined and will change as investment capital increases, but it is assumed that they will never exceed the market value of the largest technology companies.
+“The restrictions will become relevant if we succeed in creating an AGI that will bring unprecedented economic benefits,” the laboratory said in a press release.
+
+Transaction Explanations
+
+In light of Google’s acquisition of DeepMind, the investment made Microsoft an “exclusive” provider of cloud services for OpenAI. Both companies are actively experimenting, developing and striving for the potential monetization of new AGI technologies, at the same time forming ethical standards and raising the level of trust in new technologies.
+In the short term, they intend to build a computing platform in the Azure cloud, where they will train and launch artificial intelligence models, increasing hardware capacities based on Microsoft supercomputer technologies.
+OpenAI will transfer Microsoft licenses to some of its technologies for future commercialization. At the same time, Microsoft will retain the status of “privileged commercial partner” for OpenAI. The group will become Microsoft's exclusive cloud partner, while in the past it ""has met its computing needs by reaching out to various vendors."" When asked about what competencies and resources will be shared between the two organizations, OpenAI did not answer us.
+“Together, we are developing a hardware and software platform at Microsoft Azure that will scale AGI,” an OpenAI spokeswoman said. - A sequence of increasingly powerful artificial intelligence technologies is being built, which will require large investments in computing power. The most obvious way to recoup costs is to create a product, but that will require us to change focus. Therefore, we intend to license some of the intermediate technologies of AGI, and Microsoft is becoming our privileged partner, who will be entrusted with the task of commercializing them. ”
+As for the structure, the OpenAI Board of Directors will continue to independently make all decisions on the research agenda and the use of the findings. The board will include one Microsoft representative.
+Why is Microsoft an investment? To attract talent, counter purchases from the developer and the consolidation of artificial intelligence
+According to industry analyst Jack Gold, taking into account the current relatively small needs of artificial intelligence in cloud computing, the partnership aims to consolidate the market and create a convenient position for Microsoft in the future.
+“OpenAI is trying to consolidate the various structures and platforms currently available to artificial intelligence in order to reduce the number of ecosystem components,” Gold said. - Currently, there are many different platforms and tools. The process is typical of a new market that needs consolidation. The question is who will lead it? Microsoft competes with Google, AWS and others, so any partnership that helps attract potential customers is beneficial for the company. ”
+Vice President of CCS Insight Corporate Research, Nicholas McQuire, acknowledges that investing in OpenAI came as a surprise to him. Mainly because AGI remains a topic for the elite - a super-advanced and at the same time fairly narrow research discipline.
+In the field of artificial intelligence, Microsoft has more relevant topics, for example, natural language processing, cybersecurity and quantum computing.
+Thus, there are not many obvious reasons for investment. “At some level, Microsoft will probably want to connect with researchers who can help the company become an ideological leader, push the boundaries of the AGI and then use the breakthrough research results in its Azure business,” McQuire said. “Obviously, Google is pursuing the same goals with DeepMind, albeit not so explicitly.”
+If you dig deeper, it can be assumed that the investments are related to the positioning of Azure and the preparation of the cloud platform for the advent of AGI, which should become the “workload of supercomputer scale”, especially among developers experimenting with machine learning.
+The AGI’s added value is a good way to demonstrate to the developer community (especially those who are involved in machine learning) advanced scenarios for the application of new technologies.
+Despite this, suThere is a common understanding of Google’s leadership in the field of artificial intelligence, which is based on the unused opportunities of the company and its personnel reserve.
+That's why Joanna Bryson believes that the current deal, like other Microsoft initiatives, is aimed primarily at attracting talent: “The company has real problems in order to look cool. It is clear that they feel that they are adults in the existing environment, striving to remain so, and at the same time they want to look cool so that people have a desire to work with them. Like DeepMind, this helps attract more talent. If successful, OpenAI will remind Google of the 1998 model: having an excellent product, they stated that they were not interested in money, talents poured to them in a jamb, and everyone around knew that the best was created in Google. ”
+At the same time, active advertising and attracting talents make it possible to claim more. Ideally, this is a project that will change people's lives. But we must not forget about its commercialization.
+
+
+"

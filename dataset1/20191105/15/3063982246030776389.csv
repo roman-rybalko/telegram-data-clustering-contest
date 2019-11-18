@@ -1,0 +1,48 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Firefox soll Benachrichtigungs-Pop-ups unterdrücken
+Wollen Webseiten Benachrichtigungen an ihre Besucher schicken, müssen diese das in einem Pop-up bestätigen. Der Firefox-Browser soll das Pop-up künftig aber nicht mehr zeigen, da das Nutzer zu sehr nerve.
+05 Nov 2019, 15:15 by Sebastian Grüner
+Browser bieten Webseiten viele Möglichkeiten, auf bestimmte Zusatzfunktionen zuzugreifen, die allerdings erst nach einer expliziten Bestätigung durch Anwender auch tatsächlich genutzt werden können. Eine dieser Funktionen ist das Senden von Benachrichtigungen. Das Pop-up zum Bestätigten dieser Funktion soll die kommende Firefox-Version 72 jedoch nicht mehr standardmäßig anzeigen, wie der Hersteller Mozilla in einem Blog mitteilt.
+Zu dieser Entscheidung sei Mozilla nach einer großangelegten Nutzerstudie gekommen. Bereits im April hatte Mozilla das Ziel geäußert, ""nervige Aufforderungen für Berechtigungen"" reduzieren zu wollen. Und laut der Untersuchung des Herstellers seien die Fragen nach der Erlaubnis für Benachrichtigungen ""sehr unbeliebt"".
+Dem Blogeintrag zufolge blieben 99 Prozent aller derartigen Nachfragen der Webseiten durch die Nutzer schlicht nicht akzeptiert. In gut der Hälfte der Fälle werde der Erlaubnis sogar aktiv widersprochen, heißt es weiter. Mozilla schreibt dazu: ""Das zeugt von einem schrecklichen Bild des Nutzungserlebnisses im Web.""
+Aktive Einwilligung in Benachrichtigungen
+In der aktuellen Version 70 des Firefox hat das Team bereits die Antwortmöglichkeit ""Jetzt nicht"" durch ""Nie erlauben"" ersetzt. Das führt dazu, dass eine Webseite das Pop-up nur genau einmal anzeigt. Mit der kommenden Version 72, die Anfang Januar 2020 erscheinen soll, soll das Pop-up nur noch nach einer Nutzerinteraktion mit der Webseite angezeigt werden und nicht mehr automatisch wie bisher.
+Darüber hinaus integriert das Team ein kleines Icon in die URL-Zeile des Browsers, mit der Nutzer das Pop-up selbst aufrufen können - auch ohne direkte Interaktion mit einer Webseite. Mozilla will in seinem Entwicklerblog Hacks künftig weitere Informationen für Web-Entwickler dazu bereitstellen, wie entsprechende Nutzerinteraktionen designt und erstellt werden können.
+
+
+",de,"
+
+
+
+
+
+
+
+
+
+
+
+Firefox is designed to suppress notification pop-ups
+If websites want to send notifications to their visitors, they must confirm this in a pop-up. The Firefox browser should not show the pop-up but in the future, because the user too much nerve.
+05 Nov 2019, 15:15 by Sebastian Grüner
+Web browsers offer many options for accessing certain additional functions, which can only be used after an explicit confirmation by the user. One of these features is the sending of notifications. However, the pop-up to confirm this feature should not show the upcoming Firefox version 72 by default, as the manufacturer tells Mozilla in a blog.
+Mozilla came to this decision after a large-scale user study. Already in April, Mozilla had expressed the goal of wanting to reduce ""annoying requests for permissions"". And according to the manufacturer's investigation, questions about permission to notify are ""very unpopular"".
+According to the blog entry, 99 percent of all such requests from the websites were simply not accepted by the users. In just over half of the cases, permission is even actively opposed, it goes on to say. Mozilla writes: ""This testifies to a horrible picture of the user experience on the Web.""
+Active consent in notifications
+In the current version 70 of Firefox, the team has already replaced the answer option ""not now"" with ""never allow"". As a result, a web page only displays the pop-up exactly once. With the upcoming version 72, which should appear in early January 2020, the pop-up should only be displayed after a user interaction with the website and not automatically as before.
+In addition, the team includes a small icon in the URL line of the browser that allows users to access the pop-up themselves, even without direct interaction with a web page. In the future, Mozilla wants to provide further information for web developers in its developer blog Hacks, how appropriate user interactions can be designed and created.
+
+
+"

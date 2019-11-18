@@ -1,0 +1,94 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Com satélites e dados, projetos de competição da Nasa buscam reduzir impactos do óleo
+Equipe ganhadora da etapa de São Paulo monitora manchas do petróleo cru no mar
+06 Nov 2019, 09:09 by Marina Hortélio*
+Ganhadora da etapa local do Nasa Space App Challenge de São Paulo, a equipe MASSA busca identificar as manchas de óleo que chegam ao Nordeste ainda em alto mar a partir de imagens de satélites. Foram essas as imagens que permitiram que a Polícia Federal identificasse o navio grego Bouboulina como o principal suspeito pelo derramamento do resíduo.
+Por enquanto, o grupo ainda não conseguiu identificar as manchas em subsuperfície, que é como esses resíduos se movimentam no mar do Brasil. O trabalho é para aperfeiçoar o modelo, um tipo de algoritmo, que permite que sejam apontado o petróleo cru no oceano.
+O desenvolvedor  Ariel Betti fez parte da equipe que desenvolveu o projeto. Ele conta que o maior problema dos modelos utilizados é a grande quantidade de falsos positivos - uma nuvem, por exemplo, pode ser confundida com uma mancha de óleo.
+Antes das melhorias, o projeto do Posseidon já tinha uma grande precisão e poucos falsos positivos, mesmo tendo sido desenvolvido em cerca de 36 horas. Betti contou que a maior dificuldade foi encontrar o conjunto de imagens disponível para treinar o algoritmo.
+As imagens do satélite Sentinel-1, da Agência Espacial Europeia, foram liberadas perto do dia 18 de outubro, quando começou a competição. O grupo se reuniu para discutir temas e percebeu como os resíduos impactavam a região -  daí veio a ideia do Poseidon, uma semana antes do começo do hackathon.
+A equipe deve usar três mil imagens de satélite para conseguir treinar o modelo com assertividade. Para o campeonato, apenas cerca de 1100 imagens foram analisadas pelo algoritmo em 36h.
+O grupo ainda não recebeu o aval para utilizar o satélite que monitora a costa brasileira, por isso, se restringe a analisar imagens de eventos que já aconteceram no mundo. “Ter acesso a esse satélite que monitora a costa, facilitaria o trabalho”, disse Betti.
+O projeto usa um satélite com infravermelho, pois ele seria capaz de identificar manchas submersas que não são visualizadas com satélites normais. “Aprimoramos o modelo para que o infravermelho consiga ver as manchas mesmo submersas”, explicou Betti.
+Além do projeto da Nasa, Betti afirma que a ideia é criar um produto que possa ser usado por governos e outros setores para identificar as manchas. O grupo ainda quer adicionar outros satélites no Poseidon. “Vamos cruzar as imagens de satélite produzidas de forma simultânea para achar as manchas”, disse.
+A comunidade também deve ser beneficiada. Ainda há a ideia de criar uma área no projeto para o público dar alertas das manchas de óleo. “Até mesmo é possível que as pessoas consigam nos ajudar. Pescadores podem ter a informação e ir ao local da mancha para comprovar a presença do óleo com fotos”, ressaltou.
+Aplicativo da BahiaA mancha de óleo que atinge o litoral da Bahia serviu de inspiração para o projeto do MonitOil, que recebeu o segundo lugar da categoria Show the world the data! (mostre os dados ao mundo) na etapa local do Nasa Space App Challenge, um hackathon organizado pela agência espacial americana.
+Pesquisador em geocomunicação na Universidade Federal do Recôncavo Baiano (UFRB) e na Universidade Estadual de Feira de Santana (Uefs), Antônio Laranjeira teve a ideia de criar um mapa para juntar dados de fontes governamentais, cientistas, jornalistas e da população capaz de informar de forma atualizada sobre a chegada do petróleo cru nas praias do Brasil. As informações são atualizadas a cada 72 horas.
+O mapa ainda informa o trajeto da embarcação grega Bouboulina, apontada pela Polícia Federal como a responsável pelo derramamento de óleo. Possíveis pontos de derramamento de óleo também são indicados no mapa. (Confira mapa abaixo)
+
+
+
+No dia 12 de outubro, Laranjeira começou a trabalhar no monitoramento do petróleo cru com base em dados do Ibama. Depois, a ferramenta passou a ser fomentada com informações das comunidades. É possível auxiliar o projeto por meio de um formulário. Os elaboradores do projeto verificam as informações com as imagens que são compartilhadas pelos colaboradores.
+Para o pesquisador, a ferramenta permite que haja uma melhor comunicação sobre a situação das praias oleadas. “É uma forma de ajudar as pessoas a se informarem sobre como elas podem ajudar o governo e como o governo está agindo”, afirmou.
+Diferente do grupo que levou o primeiro lugar em São Paulo, o time de Salvador evitou as imagens de satélites devido à complexidade do uso das ferramentas. Como o objetivo é trazer informações sobre o desastre, Laranjeira acredita que o mapa permite a visualização da complexidade do problema.
+“A gente viu que não tinha um monitoramento via satélite que desse conta para o recado. Tem que se agir na mitigação, que é o impacto direto no turismo, direto para a vida dos bancos de corais. A única coisa que se pode fazer é monitorar a costa para tender reduzir o impacto”, pontuou.
+Durante o hackathon, quatro pessoas se juntaram ao projeto. Agora, dois membros da equipe vão representar a Bahia na etapa nacional da competição.
+
+*Com orientação do chefe de reportagem Jorge Gauthier
+
+
+
+
+
+
+
+
+",pt,"
+
+
+
+
+
+
+
+
+
+
+
+With satellites and data, NASA competition projects aim to reduce oil impacts
+Sao Paulo Stage Winning Team Monitors Spots of Crude Oil at Sea
+06 Nov 2019, 09:09 by Marina Hortélio *
+Winner of the local stage of the Nasa Space App Challenge of São Paulo, the MASSA team seeks to identify the oil slicks that reach the Northeast while still at sea from satellite images. These were the images that allowed the Federal Police to identify the Greek ship Bouboulina as the main suspect for the spill of the waste.
+For now, the group has not yet been able to identify subsurface spots, which is how these wastes move in the Brazilian sea. The work is to refine the model, a kind of algorithm, that allows to point the crude oil in the ocean.
+Developer Ariel Betti was part of the team that developed the project. He says that the biggest problem with the models used is the large number of false positives - a cloud, for example, can be mistaken for an oil slick.
+Prior to the improvements, the Posseidon project already had high accuracy and few false positives, even though it was developed in about 36 hours. Betti said that the biggest difficulty was finding the available set of images to train the algorithm.
+Images from the European Space Agency's Sentinel-1 satellite were released around October 18, when the competition began. The group met to discuss issues and realized how the waste impacted the region - hence the idea of Poseidon, a week before the start of the hackathon.
+The team must use three thousand satellite images to be able to train the model with assertiveness. For the championship, only about 1100 images were analyzed by the algorithm at 36h.
+The group has not yet received the approval to use the satellite that monitors the Brazilian coast, so it is restricted to analyzing images of events that have already happened in the world. “Having access to this satellite that monitors the coast would make the job easier,” said Betti.
+The project uses an infrared satellite as it would be able to identify submerged patches that are not viewed with normal satellites. “We've improved the model so that infrared can see even submerged spots,” said Betti.
+In addition to the NASA project, Betti says the idea is to create a product that can be used by governments and other industries to identify blemishes. The group still wants to add other satellites to Poseidon. ""We will cross over the satellite images produced simultaneously to find the spots,"" he said.
+The community must also benefit. There is still the idea of creating an area in the project for the public to give oil spot warnings. “It's even possible that people can help us. Fishermen can have the information and go to the spot to verify the presence of the oil with photos, ”he said.
+Bahia applicationThe oil slick that hits the coast of Bahia served as inspiration for the MonitOil project, which received second place in the Show the world the data! (show the data to the world) at the local stage of the Nasa Space App Challenge, a hackathon hosted by the US space agency.
+A geocommunication researcher at the Federal University of Recôncavo Baiano (UFRB) and the Feira de Santana State University (Uefs), Antônio Laranjeira had the idea of creating a map to gather data from government sources, scientists, journalists and the population able to inform from updated form on the arrival of crude oil on the beaches of Brazil. The information is updated every 72 hours.
+The map also informs the course of the Greek vessel Bouboulina, appointed by the Federal Police as responsible for the oil spill. Possible oil spill points are also indicated on the map. (Check map below)
+
+
+
+On October 12, Laranjeira began work on monitoring crude oil based on data from Ibama. Then, the tool was fostered with information from the communities. You can assist the project through a form. Project developers verify the information with the images that are shared by the collaborators.
+For the researcher, the tool allows better communication about the situation of oiled beaches. ""It's a way to help people learn how they can help the government and how the government is acting,"" he said.
+Unlike the group that took first place in Sao Paulo, Salvador's team avoided satellite imagery due to the complexity of using the tools. As the goal is to bring information about the disaster, Laranjeira believes that the map allows the visualization of the complexity of the problem.
+“We saw that there was no satellite monitoring that could account for the message. One has to act on mitigation, which is the direct impact on tourism, direct to the life of coral reefs. The only thing you can do is monitor the coast to reduce the impact, ”he said.
+During the hackathon, four people joined the project. Now two team members will represent Bahia at the national stage of the competition.
+
+* With guidance from reporting chief Jorge Gauthier
+
+
+
+
+
+
+
+
+"

@@ -1,0 +1,64 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Hackers Claim ‘Any’ Smartphone Fingerprint Lock Can Be Broken In 20 Minutes
+02 Nov 2019 by Davey Winder
+
+
+All fingerprint scanning technologies could have been broken if new hacker claims are confirmedGetty
+
+Owners of almost every Android smartphone, and iPhones up to and including the iPhone 8, could have a new security problem to worry about: Chinese hackers claim to be able to beat any fingerprint scanner in just 20 minutes.Unless you have invested in a smartphone such as the iPhone 11 that has done away with fingerprints as a biometric security measure, the chances are you rely upon that finger image to unlock your device and many of the apps within. Which could be bad news as Chinese hackers have demonstrated how, they say, any fingerprint scanner can be beaten using equipment costing $140 (£108) and an app that analyzes a photograph of your print.
+Who are the Chinese hackers that have cracked the fingerprint code?
+The hackers work as part of the X-Lab security research team at a Chinese company called Tencent. They demonstrated their fingerprint hacking methodology at the GeekPwn 2019 conference in Shanghai.
+How did the hackers defeat fingerprint security?
+The X-Lab team leader, Chen Yu, asked random audience members to touch a glass. The fingerprints left behind were then photographed using a smartphone and passed through an app that the hackers have developed. Although the precise methodology was not revealed, the app is thought to extract the data required to clone a fingerprint, presumably using a 3D printer.
+The physical part of the cloning wasn't revealed to the audience for security reasons, but the fingerprints the process created were then used to unlock three different smartphones that had been registered to the audience members concerned. Importantly, these used the three different fingerprint scanning technologies in use across the smartphone industry: capacitive, optical and ultrasonic. All three were defeated, and the entire process from photographing the fingerprint to unlocking the device took just 20 minutes.
+How easy would this smartphone hack be for others to replicate?
+Talking after the demonstration, Chen Yu told media that ""for this attack, the hardware cost more than RMB 1000 ($142, £110) in total, and the software is just one phone and one app."" Unfortunately, because the precise methodology wasn't revealed, it is impossible to say precisely how easy it would be for others to replicate the fingerprint hacking process. However, there have been numerous examples of fingerprint cloning that have worked in the recent past. These include the use of tinfoil and hot-glue guns, AI print cloning, and 3D printing itself. Most recently, Samsung confirmed that there was a flaw in the fingerprint technology used by the flagship Galaxy S10 and Note 10 smartphones that enabled the security to be bypassed using nothing more elaborate than a $3 (£2.30) screen protector.
+What should you do to mitigate the fingerprint hacking risk?
+While the researchers themselves suggested that to mitigate the risk all users needed to do was clean everything they have touched, this is hardly going to be readily adopted in the real-world. Given that it is possible that Samsung will be implementing a larger fingerprint reader in the forthcoming Galaxy S11 to combine PINs, passwords, and fingerprints in an all-in-one multi-factor authentication solution, any news about security vulnerabilities has to be taken seriously. However, despite the apparent breadth of this new methodology, and remember it is only a claim at this stage as the full technical process has not been revealed and only three smartphone models and two event fingerprint scanning machines have been seen being bypassed, I'm not suggesting anyone should panic just yet.
+The fingerprint problem has always been there, and most of the hacks that I have seen involve the capturing of an image of your print left behind on a glass or some such. I am still using my fingerprint reader to help secure my smartphone, and so should you. The benefits of the technology far outweigh the risk. Even if the X-Lab app and a step-by-step guide to the hardware and process were made available to the public, I wouldn't change my advice for most users, to be honest. You have to ask yourself who would want to go to the trouble of cloning your fingerprint in an attempt to access the data on your device? Remember also; the attacker would then need to have physical access to the smartphone for this to work. Unless you are in some high-risk occupation where such espionage jiggery-pokery has to be considered, and in such a case I'd hope you don't keep any sensitive data on your smartphone anyway, there's not a lot to see here.
+
+
+",en,"
+
+
+
+
+
+
+
+
+
+
+
+Hackers Claim ‘Any’ Smartphone Fingerprint Lock Can Be Broken In 20 Minutes
+02 Nov 2019 by Davey Winder
+
+
+All fingerprint scanning technologies could have been broken if new hacker claims are confirmedGetty
+
+Owners of almost every Android smartphone, and iPhones up to and including the iPhone 8, could have a new security problem to worry about: Chinese hackers claim to be able to beat any fingerprint scanner in just 20 minutes.Unless you have invested in a smartphone such as the iPhone 11 that has done away with fingerprints as a biometric security measure, the chances are you rely upon that finger image to unlock your device and many of the apps within. Which could be bad news as Chinese hackers have demonstrated how, they say, any fingerprint scanner can be beaten using equipment costing $140 (£108) and an app that analyzes a photograph of your print.
+Who are the Chinese hackers that have cracked the fingerprint code?
+The hackers work as part of the X-Lab security research team at a Chinese company called Tencent. They demonstrated their fingerprint hacking methodology at the GeekPwn 2019 conference in Shanghai.
+How did the hackers defeat fingerprint security?
+The X-Lab team leader, Chen Yu, asked random audience members to touch a glass. The fingerprints left behind were then photographed using a smartphone and passed through an app that the hackers have developed. Although the precise methodology was not revealed, the app is thought to extract the data required to clone a fingerprint, presumably using a 3D printer.
+The physical part of the cloning wasn't revealed to the audience for security reasons, but the fingerprints the process created were then used to unlock three different smartphones that had been registered to the audience members concerned. Importantly, these used the three different fingerprint scanning technologies in use across the smartphone industry: capacitive, optical and ultrasonic. All three were defeated, and the entire process from photographing the fingerprint to unlocking the device took just 20 minutes.
+How easy would this smartphone hack be for others to replicate?
+Talking after the demonstration, Chen Yu told media that ""for this attack, the hardware cost more than RMB 1000 ($142, £110) in total, and the software is just one phone and one app."" Unfortunately, because the precise methodology wasn't revealed, it is impossible to say precisely how easy it would be for others to replicate the fingerprint hacking process. However, there have been numerous examples of fingerprint cloning that have worked in the recent past. These include the use of tinfoil and hot-glue guns, AI print cloning, and 3D printing itself. Most recently, Samsung confirmed that there was a flaw in the fingerprint technology used by the flagship Galaxy S10 and Note 10 smartphones that enabled the security to be bypassed using nothing more elaborate than a $3 (£2.30) screen protector.
+What should you do to mitigate the fingerprint hacking risk?
+While the researchers themselves suggested that to mitigate the risk all users needed to do was clean everything they have touched, this is hardly going to be readily adopted in the real-world. Given that it is possible that Samsung will be implementing a larger fingerprint reader in the forthcoming Galaxy S11 to combine PINs, passwords, and fingerprints in an all-in-one multi-factor authentication solution, any news about security vulnerabilities has to be taken seriously. However, despite the apparent breadth of this new methodology, and remember it is only a claim at this stage as the full technical process has not been revealed and only three smartphone models and two event fingerprint scanning machines have been seen being bypassed, I'm not suggesting anyone should panic just yet.
+The fingerprint problem has always been there, and most of the hacks that I have seen involve the capturing of an image of your print left behind on a glass or some such. I am still using my fingerprint reader to help secure my smartphone, and so should you. The benefits of the technology far outweigh the risk. Even if the X-Lab app and a step-by-step guide to the hardware and process were made available to the public, I wouldn't change my advice for most users, to be honest. You have to ask yourself who would want to go to the trouble of cloning your fingerprint in an attempt to access the data on your device? Remember also; the attacker would then need to have physical access to the smartphone for this to work. Unless you are in some high-risk occupation where such espionage jiggery-pokery has to be considered, and in such a case I'd hope you don't keep any sensitive data on your smartphone anyway, there's not a lot to see here.
+
+
+"

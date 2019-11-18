@@ -1,0 +1,50 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+
+هشدار گوگل به کاربران در مورد آسیب پذیری خطرناک کروم
+
+شب گذشته و همزمان با پرپایی هالویین گوگل با انتشار یک به‌روزرسانی اضطراری ترسی را به جان کاربران انداخت که برخلاف نمایش های هالووین کاملا واقعی بود.
+03 Nov 2019, 13:31 by بولتن نیوز | bultannews.com
+گروه IT: به‌روزرسانی ۷۸.۰.۳۹ کروم برای رفع آسیب پذیری روز صفر CVE-2019-13720 منتشر شد که توسط دو مهندس کسپرسکی به نام های «آنتون ایوانف» و «الکسی کولائف» در نسخه ۷۸ این مرورگر شناسایی شده بود. این حفره امنیتی از نوع باگ های use after free است و در کامپوننت صوتی کروم کشف شده است.   به گزارش بولتن نیوز به نقل از دیجیاتو، این نوع باگ ناشی از تخریب حافظه است و زمانی رخ می دهد که یک اپلیکیشن در پی استفاده از فضایی در حافظه است که پس از آزادسازی به اپ دیگری اختصاص یافته. این سناریو معمولا باعث کرش اپ می شود اما گاهی اوقات عواقب بدتری نظیر اجرای کدهای مخرب را به دنبال دارد.آنطور که کسپرسکی می گوید از این آسیب پذیری روز صفر برای نصب بدافزار روی دستگاه های کاربران سوءاستفاده شده است. هرچند محققان امنیتی گروه خاصی را به عنوان عاملان این نفوذ معرفی نکرده اند اما کدهای پیدا شده شباهت هایی با بدافزار هکرهای منتسب به کره شمالی وجود دارد. کمپانی روسی در حال ردیابی حملات مبتنی بر این باگ روز صفر با اسم رمز Operation WizardOpium است.  
+
+
+
+این دومین بار در سال جاری میلادی است که سر و کله آسیب پذیری های روز صفر در مرورگر کروم پیدا می شود. اسفند گذشته محققان از آسیب پذیری بسیار خطرناکی در مرورگر مذکور خبر دادند که به هکرها اجازه می داد با اجرای کدهای مخرب، کنترل رایانه قربانی را از راه دور در اختیار بگیرند.در خبر دیگری مربوط به کروم، گوگل در نهایت واسط برنامه نویسی واقعیت افزوده WebXR API را منتشر کرد که امکان ارائه تجربیات بهینه VR و AR برای موبایل و هدست های واقعیت افزوده در این مرورگر را به توسعه دهندگان می دهد.
+
+
+",fa,"
+
+
+
+
+
+
+
+
+
+
+
+
+Google warns users about dangerous Chrome vulnerabilities
+
+Last night, as the Halloween hallucination of Google with the release of an emergency update, users feared that this was quite real, unlike the Halloween shows.
+03 Nov 2019, 13:31 by Bulletin News | bultannews.com
+IT Group: Chrome OS 2.0 update released for CVE-2019-13720 Day Zero Vulnerability released by Kaspersky engineers Anton Ivanov and Alexei Kulaev in version 2 of this browser. This security hole is of use after free bugs and has been discovered in Chrome's audio component. This type of bug is caused by memory corruption and occurs when an application seeks to use the memory space allocated to another application after release, Bulletin News reports. This scenario usually crashes, but sometimes has worse consequences, such as executing malicious code. As Kaspersky says, this zero-day vulnerability has been exploited to install malware on users' devices. Although security investigators have not identified a specific group as the perpetrators of the attack, the codes found are similar to those of North Korean hackers. The Russian company is tracking attacks based on this zero-day bug under the code Operation WizardOpium.
+
+
+
+This is the second time this year that zero-day vulnerabilities have been found in Chrome's browser. Last March, researchers reported a very dangerous vulnerability in the browser that allowed hackers to remotely control the victim's computer by executing malicious code. WebXR has released an API that allows developers to deliver optimized VR and AR experiences for mobile and augmented reality headsets.
+
+
+"

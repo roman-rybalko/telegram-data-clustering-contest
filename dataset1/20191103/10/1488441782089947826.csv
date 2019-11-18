@@ -1,0 +1,50 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Il Face Unlock dei Pixel 4 non è ancora sfruttato dalle app Android? Correte ai ripari, grazie a questo modulo Xposed
+03 Nov 2019, 10:09 by Edoardo Carlo Ceretti
+La caratteristica principale, che ha spinto molti addetti ai lavori a considerare i nuovi Pixel 4 come i primi veri iPhone con Android, è la presenza di un sistema di riconoscimento facciale in 3D, che ha soppiantato completamente qualsiasi altro metodo di sblocco biometrico (niente lettore di impronte, insomma). Google è però famosa per non spingersi fino in fondo nelle sue innovazioni e dunque, al momento, latitano le app capaci di sfruttare questa novità, chiaro indizio di un difetto di comunicazione tra Big G i suoi partner principali. Ma a tutto c’è rimedio, quando si parla di modding.
+Spazientito dal ritardo dell’implementazione del Face Unlock per sbloccare app di terze parti, lo sviluppatore indipendente SemonCat ha deciso di mettere a punto un modulo Xposed che aggirasse questa mancanza. È nata così Fingerface, un’app regolarmente pubblicata sul Play Store, che non fa altro che applicare un overlay in occasione della richiesta da parte di un’app dello sblocco tramite impronta digitale, permettendo all’utente di impiegare invece la funzionalità di Face Unlock del suo Pixel 4.
+Lo sviluppatore tiene a precisare l’assoluta sicurezza e rispetto della privacy dell’app, che non ha accesso alla rete e dunque non può in alcun modo inviare dati dal dispositivo locale a server esterni. Inoltre, come già accennato, l’app è un modulo Xposed a tutti gli effetti, quindi dovrete prima ricorrere a procedure di modding, che potrebbero non essere alla portata di qualsiasi utente.
+Se però per voi non rappresentasse un ostacolo, ma anzi non vedeste l’ora di poter utilizzare il Face Unlock dei Pixel 4 anche per le app di terze parti, Fingerface è al momento la migliore soluzione possibile. L’app è acquistabile sul Play Store al costo di 1,09€, un piccolo contributo per sostenere l’utile lavoro dello sviluppatore. Per maggiori informazioni sul progetto, vi rimandiamo al thread ufficiale nel forum di XDA.
+
+Disponibile su Google Play
+
+Via: Android Police
+
+
+",it,"
+
+
+
+
+
+
+
+
+
+
+
+Is the Pixel 4 Face Unlock not yet used by Android apps? Run for cover, thanks to this Xposed module
+03 Nov 2019, 10:09 by Edoardo Carlo Ceretti
+The main feature, which has led many experts to consider the new Pixels 4 as the first real iPhone with Android, is the presence of a 3D facial recognition system, which has completely supplanted any other biometric unlocking method (no reader of footprints, in short). However, Google is notorious for not pushing its innovations to the hilt and therefore, at the moment, apps that take advantage of this novelty are missing, a clear indication of a lack of communication between Big G and its main partners. But there is a remedy to everything when it comes to modding.
+Implied by the delay in implementing the Face Unlock to unlock third-party apps, the independent developer SemonCat has decided to develop an Xposed module that bypasses this lack. This is how Fingerface was born, an app regularly published on the Play Store, which does nothing but apply an overlay when an unlocking app is requested by fingerprint, allowing the user to use the Face Unlock feature instead of his Pixel 4.
+The developer is keen to specify the absolute security and respect for the privacy of the app, which has no access to the network and therefore cannot in any way send data from the local device to external servers. Moreover, as already mentioned, the app is a Xposed module for all purposes, so you will first have to resort to modding procedures, which may not be within the reach of any user.
+However, if for you it did not represent an obstacle, but rather you could not wait to use the Pixel 4 Face Unlock even for third-party apps, Fingerface is currently the best possible solution. The app can be purchased on the Play Store for € 1.09, a small contribution to support the developer's useful work. For more information on the project, we refer you to the official thread in the XDA forum.
+
+Available on Google Play
+
+Via: Android Police
+
+
+"

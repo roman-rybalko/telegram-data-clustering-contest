@@ -1,0 +1,102 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Opinion
+How We Got Ivy League Students to use Blockchain Tech
+05 Nov 2019, 16:20 by Nir Kabessa
+For most blockchain-enabled products and services, achieving mainstream adoption has been a nearly impossible goal. Even the most celebrated projects in the crypto ecosystem struggle to expand their community beyond blockchain-savvy users. Augur, the famous betting protocol whose REP token peaked with a market cap of more than $1 billion and was utilized by other respected projects such as Sequoia-backed Veil, is used by less than 200 users on a daily basis. Veil ultimately shut down after 6 months of activity because “it tried to do too much, didn’t offer a good onboarding experience, and existed in a netherworld between being decentralized and regulated,” according to founder Paul Fletcher-Hill. 
+Several months ago, a few of us at Columbia University started working on a project that would ultimately become Yup.io. Our vision is to accurately reflect and attribute online social capital by empowering people’s opinions, ultimately building a self-sovereign platform-agnostic identity based on social consensus. Our initial minimum-viable product is a browser extension that rewards users in money (via our YUPX token) and clout for rating anything on the web. It works on every site on the internet, but has overlaid  features for social sites like Twitter, Reddit, Google, and YouTube allowing users to vote directly on specific content such as tweets or subreddits. 
+
+
+
+We determined that our campus and fellow students would be the best target audience for our first beta launch. But how could we get students that know nothing about crypto/blockchain/dapps/wallets to use Yup? We’ll break down some of the most important decisions we made to grab the attention of 18-year-olds and build a product that was easy enough for them to use.
+On-Campus Campaign
+
+
+
+On Yup, we use colored underlines to reflect the agreed-upon social value of content in various categories: blue/green is highest, orange/red is lowest. On Thursday Sept 5, the day of our official beta launch, we covered Columbia’s campus in the same color-coding scheme as Yup’s online overlays.  Although this effort took ourselves and a dozen generous friends all night, we managed to tag buildings all over campus and the surrounding neighborhood for a total budget of $250. We used 500 feet of adhesive vinyl that we stuck on buildings, awnings, menus, statues, office doors, mailboxes, posters, and more.
+Additionally, we partnered with 16 bars, restaurants, and shops around Columbia’s campus for this campaign. Some of these venues were chains such as Famiglia Pizza and Junzi Kitchen, while others were local hotspots such as 1020 Bar and Mel’s Burger Bar. We laid the groundwork with these partners over two weeks prior to the color-coding campaign, but it was worth it to have the involvement of some of Columbia students’ favorite haunts. Most of these venues have decided to keep their colors up for now, even one month later. 
+
+
+
+The response to this campaign was positive, with both friends and influencers sharing our content on social media, speaking highly of the product. Bwog, the snarky Columbia news blog, even wrote a piece about us. We learned that building a great product wouldn’t be enough, and that our ability to think outside the box in how we marketed our new product would make or break us. 
+
+
+
+Making it relevant to students
+Yup is meant to be universal, functioning as a social layer for the whole web, but social networks like Twitter are so large that “yupping” on them today is like a tree falling in a forest — no one hears it. We knew that the only way to get college students excited about Yup was to build features that provide utility for them today and create school-wide consensus about something. 
+
+
+
+We concluded that the best way to go about this would be to add unique Yup features such as the ability to rate courses and professors. By overlaying Yup on top of existing Columbia websites, it made Yup relevant to the daily lives of Columbia students who are already trying to decide which courses to sign up for and professors to work with.  
+Yup is not trying to be a tool only for college students. But it helped us to reach a critical mass with one niche audience. I would imagine that any new product trying to reach mass adoption could start with tailoring its service to one subset of its users and then expand from there.
+Perfect is the enemy of adoption
+Because we wanted users who have never owned or interacted with crypto before to use Yup, we could not expect them to acquire cryptocurrencies in order to pay for transactions. That lead to our decision to build our MVP on the EOS blockchain. Although we are not necessarily fans of the centralization of the EOS chain, we had to make the best decision for making adoption as easy as possible. That meant that we couldn’t build our decentralized application on Ethereum given all of the intermediate steps involved with Metamask and KYC.
+On EOS, we can cover transaction costs via proxy staking. This cuts down the user signup process to just two steps: downloading the Yup extension and using it — just like any traditional app or extension. In order to manage our spending, we limited account creation to students and transactions to 10 per day. We learned that if Yup is really designed for all people, we must treat smart contract platforms as tools that enable us to build great products, not tribes that we need to remain loyal to. 
+While most of us — myself included — working in the blockchain space prefer pure decentralization, we went with a semi-decentralized distributed ledger to help us reduce friction for new users. If, as blockchain advocates and developers, we’re serious about achieving mass adoption, then we need to think more about the needs of the people we’re hoping to convince.
+
+Nir Kabessa is the co-founder of Yup.io and the President of Blockchain at Columbia. Currently a senior undergraduate student at Columbia University, Nir spent his academic years deep in the distributed ledger space serving as a teacher’s assistant for blockchain courses at Columbia and contributing to articles on Forbes, BigThink, Benzinga, Hackernoon, and more.
+
+
+
+",en,"
+
+
+
+
+
+
+
+
+
+
+
+Opinion
+How We Got Ivy League Students to use Blockchain Tech
+05 Nov 2019, 16:20 by Nir Kabessa
+For most blockchain-enabled products and services, achieving mainstream adoption has been a nearly impossible goal. Even the most celebrated projects in the crypto ecosystem struggle to expand their community beyond blockchain-savvy users. Augur, the famous betting protocol whose REP token peaked with a market cap of more than $1 billion and was utilized by other respected projects such as Sequoia-backed Veil, is used by less than 200 users on a daily basis. Veil ultimately shut down after 6 months of activity because “it tried to do too much, didn’t offer a good onboarding experience, and existed in a netherworld between being decentralized and regulated,” according to founder Paul Fletcher-Hill. 
+Several months ago, a few of us at Columbia University started working on a project that would ultimately become Yup.io. Our vision is to accurately reflect and attribute online social capital by empowering people’s opinions, ultimately building a self-sovereign platform-agnostic identity based on social consensus. Our initial minimum-viable product is a browser extension that rewards users in money (via our YUPX token) and clout for rating anything on the web. It works on every site on the internet, but has overlaid  features for social sites like Twitter, Reddit, Google, and YouTube allowing users to vote directly on specific content such as tweets or subreddits. 
+
+
+
+We determined that our campus and fellow students would be the best target audience for our first beta launch. But how could we get students that know nothing about crypto/blockchain/dapps/wallets to use Yup? We’ll break down some of the most important decisions we made to grab the attention of 18-year-olds and build a product that was easy enough for them to use.
+On-Campus Campaign
+
+
+
+On Yup, we use colored underlines to reflect the agreed-upon social value of content in various categories: blue/green is highest, orange/red is lowest. On Thursday Sept 5, the day of our official beta launch, we covered Columbia’s campus in the same color-coding scheme as Yup’s online overlays.  Although this effort took ourselves and a dozen generous friends all night, we managed to tag buildings all over campus and the surrounding neighborhood for a total budget of $250. We used 500 feet of adhesive vinyl that we stuck on buildings, awnings, menus, statues, office doors, mailboxes, posters, and more.
+Additionally, we partnered with 16 bars, restaurants, and shops around Columbia’s campus for this campaign. Some of these venues were chains such as Famiglia Pizza and Junzi Kitchen, while others were local hotspots such as 1020 Bar and Mel’s Burger Bar. We laid the groundwork with these partners over two weeks prior to the color-coding campaign, but it was worth it to have the involvement of some of Columbia students’ favorite haunts. Most of these venues have decided to keep their colors up for now, even one month later. 
+
+
+
+The response to this campaign was positive, with both friends and influencers sharing our content on social media, speaking highly of the product. Bwog, the snarky Columbia news blog, even wrote a piece about us. We learned that building a great product wouldn’t be enough, and that our ability to think outside the box in how we marketed our new product would make or break us. 
+
+
+
+Making it relevant to students
+Yup is meant to be universal, functioning as a social layer for the whole web, but social networks like Twitter are so large that “yupping” on them today is like a tree falling in a forest — no one hears it. We knew that the only way to get college students excited about Yup was to build features that provide utility for them today and create school-wide consensus about something. 
+
+
+
+We concluded that the best way to go about this would be to add unique Yup features such as the ability to rate courses and professors. By overlaying Yup on top of existing Columbia websites, it made Yup relevant to the daily lives of Columbia students who are already trying to decide which courses to sign up for and professors to work with.  
+Yup is not trying to be a tool only for college students. But it helped us to reach a critical mass with one niche audience. I would imagine that any new product trying to reach mass adoption could start with tailoring its service to one subset of its users and then expand from there.
+Perfect is the enemy of adoption
+Because we wanted users who have never owned or interacted with crypto before to use Yup, we could not expect them to acquire cryptocurrencies in order to pay for transactions. That lead to our decision to build our MVP on the EOS blockchain. Although we are not necessarily fans of the centralization of the EOS chain, we had to make the best decision for making adoption as easy as possible. That meant that we couldn’t build our decentralized application on Ethereum given all of the intermediate steps involved with Metamask and KYC.
+On EOS, we can cover transaction costs via proxy staking. This cuts down the user signup process to just two steps: downloading the Yup extension and using it — just like any traditional app or extension. In order to manage our spending, we limited account creation to students and transactions to 10 per day. We learned that if Yup is really designed for all people, we must treat smart contract platforms as tools that enable us to build great products, not tribes that we need to remain loyal to. 
+While most of us — myself included — working in the blockchain space prefer pure decentralization, we went with a semi-decentralized distributed ledger to help us reduce friction for new users. If, as blockchain advocates and developers, we’re serious about achieving mass adoption, then we need to think more about the needs of the people we’re hoping to convince.
+
+Nir Kabessa is the co-founder of Yup.io and the President of Blockchain at Columbia. Currently a senior undergraduate student at Columbia University, Nir spent his academic years deep in the distributed ledger space serving as a teacher’s assistant for blockchain courses at Columbia and contributing to articles on Forbes, BigThink, Benzinga, Hackernoon, and more.
+
+
+
+"

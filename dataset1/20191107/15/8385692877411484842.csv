@@ -1,0 +1,60 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Wandera Discovers Seven New Malware Apps On Google Play
+07 Nov 2019, 15:16 by https://www.facebook.com/ADSoomeet
+Researchers at Wandera have discovered another set of malicious apps on the Google Play Store. The threat research team at the London-based security firm recently caught seven Google Play apps that contained ""dropper malware"". All of these apps have now been removed from the Play Store.
+The seven apps in question were published by three different developer accounts but offered similar functionalities. Once installed, these apps could open backdoors onto the device and install more malware apps from third-party sources, GitHub in this case. Wandera has notified GitHub of the adware APKs being hosted in the repository.
+The seven newly discovered malicious Android apps include Magnifying Glass and Super Bright LED Flashlight by a developer named PumpApp, Magnifier, Magnifying Glass with Flashlight and Super-bright Flashlight by LizotMitis, and Alarm Clock, Calculator and Free Magnifying Glass by iSoft LLC.
+Advertisement
+If you have any of these apps installed, you should delete them immediately. You will also have to uninstall the adware that these apps may have installed on your device.
+Fortunately, these apps hadn't found their way into too many devices before they were caught and removed. Wandera says the seven apps collectively had around 11,000 downloads from the Play Store. And while the malicious intent of the apps was ad fraud, they do possess a more dangerous threat.
+A serious threat is lurking behind
+According to Wandera, these dropper apps had an obfuscated GitHub URL is embedded in the code, helping them bypass app store security checks. To further avoid detection, the apps wait for a while after launch before sending a request to GitHub. The server then communicates the configuration data for the dropper app, as well as URLs to the location of the adware APK.
+Advertisement
+On receiving the malicious payload from the hosting service, the dropper apps initiate an install process. The installed adware again waits for about 10 minutes before initiating malicious functionality. A similar trickery was also implemented by another Android adware campaign discovered last month.
+The adware apps are capable of displaying highly intrusive, overlaying fullscreen video ads without any user interaction. This results in a rapid battery drain and excessive consumption of mobile data, which may incur some cost as well. The adware cannot bypass the security of the device, and hence ads are triggered at regular intervals in an attempt to catch the device unlocked.
+As much as these ads are annoying and harmful for the device, the fact that the attacker could replace those adware APKs with much more serious malware types gives rise to a serious threat. Google needs to tighten Play Store security checks fast.
+Advertisement
+
+
+",en,"
+
+
+
+
+
+
+
+
+
+
+
+Wandera Discovers Seven New Malware Apps On Google Play
+07 Nov 2019, 15:16 by https://www.facebook.com/ADSoomeet
+Researchers at Wandera have discovered another set of malicious apps on the Google Play Store. The threat research team at the London-based security firm recently caught seven Google Play apps that contained ""dropper malware"". All of these apps have now been removed from the Play Store.
+The seven apps in question were published by three different developer accounts but offered similar functionalities. Once installed, these apps could open backdoors onto the device and install more malware apps from third-party sources, GitHub in this case. Wandera has notified GitHub of the adware APKs being hosted in the repository.
+The seven newly discovered malicious Android apps include Magnifying Glass and Super Bright LED Flashlight by a developer named PumpApp, Magnifier, Magnifying Glass with Flashlight and Super-bright Flashlight by LizotMitis, and Alarm Clock, Calculator and Free Magnifying Glass by iSoft LLC.
+Advertisement
+If you have any of these apps installed, you should delete them immediately. You will also have to uninstall the adware that these apps may have installed on your device.
+Fortunately, these apps hadn't found their way into too many devices before they were caught and removed. Wandera says the seven apps collectively had around 11,000 downloads from the Play Store. And while the malicious intent of the apps was ad fraud, they do possess a more dangerous threat.
+A serious threat is lurking behind
+According to Wandera, these dropper apps had an obfuscated GitHub URL is embedded in the code, helping them bypass app store security checks. To further avoid detection, the apps wait for a while after launch before sending a request to GitHub. The server then communicates the configuration data for the dropper app, as well as URLs to the location of the adware APK.
+Advertisement
+On receiving the malicious payload from the hosting service, the dropper apps initiate an install process. The installed adware again waits for about 10 minutes before initiating malicious functionality. A similar trickery was also implemented by another Android adware campaign discovered last month.
+The adware apps are capable of displaying highly intrusive, overlaying fullscreen video ads without any user interaction. This results in a rapid battery drain and excessive consumption of mobile data, which may incur some cost as well. The adware cannot bypass the security of the device, and hence ads are triggered at regular intervals in an attempt to catch the device unlocked.
+As much as these ads are annoying and harmful for the device, the fact that the attacker could replace those adware APKs with much more serious malware types gives rise to a serious threat. Google needs to tighten Play Store security checks fast.
+Advertisement
+
+
+"

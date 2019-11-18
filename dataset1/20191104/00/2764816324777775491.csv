@@ -1,0 +1,284 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Unikly specifikace procesorů Comet Lake pro desktop: takty až 5,1 GHz, jen dva čipy
+04 Nov 2019 by Jan Olšan
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+VŠECHNY FOTOGRAFIE
+
+Už v létě jsme zde uváděli informace o nových 14nm procesorech Intelu pro desktop Comet Lake-S, které vyjdou zřejmě někdy v první polovině příštího roku a přijdou na platformu LGA 1200 – tedy na nový nekompatibilní socket. Přes víkend unikly ke Comet Lake-S další slajdy, a to v poměrně hojném množství. Tyto slajdy jednak potvrzují předchozí únik (a definitivně vyvracejí fake specifikace, které se objevily předtím), ale také konečně přinášejí parametry chystaných procesorů včetně frekvencí. Ty jsou jen částečné a předběžné, ale vyplývá z nich, že Comet Lake-S přinese zvýšení maximálního taktu minimálně na 5,1 GHz.
+Comet Lake-S včetně frekvencí části modelů
+Tyto slajdy publikoval web WCCFtech, nicméně vypadají hodně legitimně a velký rozsah (18 stran) by se asi nikomu nechtělo falšovat. Většina stránek pro nás není tak zajímavá, nicméně můžete je všechny vidět v galerii včetně těch, nevložených přímo do článku, pokud je chcete pro jistotu pročesat sami.
+Úvodní slajd ukazuje schéma platformy a potvrzuje, že Comet Lake-S nebude přinášet nějaké radikálně nové technologie ve výbavě proti dnešním Coffee Lake (Refresh). Jak můžete vidět, na slajdu jsou červeným rámečkem zvýrazněné nové funkce, což je zejména to, že nejvýkonnější procesor této mainstreamové platformy bude desetijádorvý místo osmijádrového – toto už víme nějakou dobu. Druhá novinka je, že Intel do čipsetu integruje digitální část novějšího a výkonnějšího bezdrátového adaptéru – Wi-Fi 6 (802.11ax). Současné čipsety řady 300 takto poskytují jen Wi-Fi 5 (802.11ac).
+
+
+
+
+
+Zbylé červeně neorámované položky ve žlutých boxech by zřejmě měly pocházet už z dnešní platformy. Procesory Comet Lake-S budou mít dvoukanálový řadič DDR4 oficiálně stále podporující jen 2666 MHz (Intel plánuje podporu 2933 MHz s jen jením modulem na kanál, ale zatím není jasné, zda se podaří; v praxi ale paměti půjdou s XMP profily výš, stejně jako dnes). Zůstane také řadič PCI Express 3.0 ×16 v procesoru a připojení čipsetu rozhraním DMI 3.0 (ekvivalent PCI Expressu 3.0).
+
+
+
+
+
+Integrovaná grafika také zdá se bude mít stejné výstupy jako Skylake – DisplayPort 1.2, eDP 1.4 a nebo HDMI 1.4. Stále tedy není podporován výstup HDMI 2.0, což je způsobeno tím, že jsou stále používány 14nm IP bloky a Intel je zřejmě neaktualizoval. Výstup HDMI 2.0 na deskách se bude dát realizovat jen použitím přídavného převodníku z DisplayPortu („LSPCON“).
+Předběžné specifikace Core 10. generace pro desktop (Comet Lake-S)
+Tyto slajdy obsahují také parametry části chystaných procesorů. Nicméně to vypadá, že ještě nemusí být definitivní, v titulu slajdů se mluví o předběžných cílech. Je tady tedy asi ještě možnost, že se takty někde trošku změní. Druhá věc je, že tato prezentace je zřejmě pro OEM/embedded a firemní sektor a jsou v ní tedy zahrnuté jen zamčené modely procesorů Core, které budou mít 35W a 65W TDP a Xeony řady E (až 80 W). Z předchozích informací víme, že odemčené modely minimálně desetijader budou mít 125W TDP, ale tyto modely pro nadšence/hráče/taktovače nejsou součástí uniklé prezentace. (Mimochodem připomínka: TDP je stanoveno pro základní frekvenci, v boostu jej CPU může překračovat, což platí i pro 35W a 65W modely).
+Core i9: 10C/20T
+Mezi zamčenými CPU bude nejvýkonnější Core i9-10900 s deseti jádry/20 vlákny a taktem boostu až 5,1 GHz – tedy o 100 MHz vyšším, než co mají nejvýše taktované Coffee Lake Refresh 9. generace. A jde vůbec o rekord u x86 CPU. Nicméně základní takt bude jen 3,0 GHz. Model bude mít i 35W verzi Core i9-10900T, to má takty 2,0–4,5 GHz.
+
+
+
+
+
+Core i7: 8C/16T
+Pod tímto modelem budou osmijádra Core i7-10700. 65W budou mít takty 3,0 GHz v základu a maximální boost 4,8 GHz. Pozitivní je, že HT nebude vypnutý, takže tato CPU budou mít 16 vláken a tím pádem také lepší vícevláknový výkon. 35W verze i7-10700T má mít takty 2,0–4,4 GHz. Cache bude plných 16 MB (2 MB na jádro).
+Core i5 a i3 pořád s HT
+Také u Core i5 Intel zachová Hyper Threading, budou mít šest jader a 12 vláken, 12 MB L3 cache. Pro 65W model i5-10500 Intel plánuje frekvence 3,2–4,3 GHz, pro 35W i5-10500T pak 2,3–3,7 GHz. A také Core i3 bude čtyřjádro s HT, takže se potvrzuje nedávný únik. Pro Core i3-10100 plánuje Intel takty 3,2–3,8 GHz, pro 35W i3-10100T pak 2,3–3,6 GHz. Jen cache bude ořezaná na 1,5 MB na jádro (6 MB celkem, ale i3-10300 by možná mohlo mít 8 MB). Ve zkratce se nám tedy potvrdilo, že Intel v generaci Comet Lake-S přestane s umělou segmentací pomocí HT, kdy nižší modely zbytečně ztrácely výkon, pro který měly všechen křemík přítomný.
+
+
+
+
+
+Lowendové procesory se takto měnit nebudou. V tabulce můžete vidět specifikace i pro ně. Pentia budou dvoujádra s HT (čtyři vlákna) a 4MB L3 cache, Celerony zůstanou dvoujádry bez HT (2 vlákna) s 2MB L3 cache. Ani jedna z těchto řad také nedostane turbo, frekvence mají být do 3,8 GHz. Zajímavé je, že tyto modely mají možná mít 65W TDP (a 35W úspornými variantami), zatímco dříve u nich bývalo TDP trošku nižší (typicky 54 W).
+Jak by mohlo vypadat i9-10900K?
+Toto jsou však zamčené model a bohužel nám to neříká, jak budou vypadat odemčené verze, které nás zajímají nejvíce, například Core i9-10900K. Nicméně 9. generace Core i9 má u 65W modelu stejně vysoký jednovláknový boost jako u 95W odemčené, takže pokud by toto bylo zachováno, tak by eventuální Core i9-10900K mělo také mít boost minimálně 5,1 GHz. Základní frekvence je jiná otázka, asi by mohla být mezi 3,6 a 4,0 GHz. All Core boost bude asi také nižší než 5,1 GHz, snad mezi 4,6 až 4,8 GHz, ale pozor, to jsou všechno jenom střely naslepo.
+Všechno pod šest jader vyráběné deaktivací 6C křemíku?
+Intel ve slajdech také uvádí, z jakých křemíků budou čipy vznikat. Je implikováno, že nemá jít o starý křemík z generací Coffee Lake/Kaby Lake, ale vždy o nové čipy, takže by například měly být všechny zranitelnosti opravené a neměly by mezi nimi být zamíchané zranitelné modely jako je tomu v 9. generaci. Zajímavé je však, že Intel uvádí, že čipy Comet Lake-S budou fyzicky jen dva: CML-S 6+2 (šest jader a GPU GT2) a CML-S 10+2 (10 jader a GPU GT2). To znamená, že Core i7 i i9 se budou vyrábět ze stejného desetijádrového křemíku (ten by měl mít přes 200 mm²). Ale všechny zbylé procesory od šestijader až po dvoujádrová Pentia a Celerony se mají vyrábět z fyzicky šestijádrového křemíku. Tedy ve velké části produkce bude na čipu hodně povypínaných jader, která ze značné části zřejmě budou i funkční, protože chybovost 14nm procesu asi nebude moc velká.
+
+
+
+
+
+Intel se tedy zřejmě nebojí, že by v době prodeje Comet Lake-S už neměl dost výrobních kapacit a zároveň mu asi nevadí dopady prodeje zbytečně velkých křemíků na marže, jako tomu bylo v minulosti. Pokrýt celý desktopový segment od dvou jader po deset jen dvěma velikostmi křemíku je spíše něco, co dělává AMD, nicméně to je k tomu asi nucené kvůli úspoře nákladů na vývoj. Je nicméně možné, že Intel chce nastavit cenovou politiku tak, že většinu prodejů budou dělat deseti, osmi a šestijádra, takže nebude v praxi tratit mnoho.
+Socket LGA 1200 potvrzen
+Slajdy potvrzují, že Comet Lake-S bude používat socket LGA 1200, dokonce i explicitně potvrzují, že nebude zpětně ani dopředně kompatibilní. Fyzická podoba socketu bude změněná, takže procesory pro LGA 1151 do něj ani nijak vložit nepůjdou. Nicméně slajdy potvrzují, že se nezmění rozložení děr pro chladič a jeho upevňování, takže zde bude kompatibilita zachována a nebudou třeba revize ani adaptéry.
+
+
+
+
+
+Čipsety řady 400: pořád silně ořezaný lowend
+Slajdy odhalují také informace k čipsetům, přesněji k některým z nich, které budou relevantní pro firemní a embedded sféru, tedy H410, což je následník lowendového čipsetu H310. Pro enterprise sféru s podporou vPro a technologií vzdálené zprávy bude čipset Q470 (coby následovník Q370). patrně vybaveností blízký běžné uživatelské sadě H470 (ta bude existovat, už ji potvrdily úniky jmen desek). Intel dále chystá čipset W480, který bude určený pro Xeony E-2300. Jde o následníka sady C246, kterou používají Xeony E-2100 a E-2200 (Coffee Lake/Coffee Lake Refresh), zde tedy Intel změní značení. O čipsetu pro přetaktovávače (Z470, Z480 či Z490?) slajdy opět nic neuvádějí, ale můžete provizorně předpokládat, že se jeho specifikace budou podobat výbavě čipsetu Q470, jen navíc bude podporovat přetaktování.
+
+
+
+
+
+Ve výbavě těchto čipsetů ale zatím není vidět nic moc nového. W480 a Q470 budou poskytovat 24 linek PCI Express 3.0 a osm (W480) nebo šest (Q470) portů SATA 3.0. W480 bude umět osm portů USB 3.2 Gen 2 s rychlostí 10 Gb/s a 10 portů USB 3.2 Gen 1 s rychlostí 5,0 Gb/s. Čipset H470 bude mít o dva 10Gb/s porty méně.
+
+
+
+
+
+Lowendový čipset H410 Intel opět hodně oseká. Vůbec nebude poskytovat 10Gb/s porty USB 3.2 a 5Gb/s portů bude mít jenom čtveřici. Portů SATA bude mít také jen čtyřii a z čipsetu bude vyvedeno jen šest linek PCIe 2.0 s poloviční propustností. A také to vypadá, že nebude vůbec podporovat rozhraní PCIe ×2 nebo ×4 pro sloty M.2 a NVMe SSD (sloty M.2 na deskách by tedy uměly jen SATA moduly), kdežto druhé dva čipsetu umí až tři sloty. Chybí také podpora pro SATA RAID, připojení NVMe SSD přímo na PCIe linky procesoru a desky s H410 budou smět mít jen dva sloty pro paměťové moduly. Čipset H410 se také připojuje k procesoru rozhraním DMI 2.0 místo DMI 3.0, což znamená jako u PCIe 2.0 poloviční propustností.
+Galerie: Uniklé slajdy k desktopovým procesorům Intel Comet Lake-S/LGA 1200 (listopad 2019)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+VŠECHNY FOTOGRAFIE
+
+
+SOUVISEJÍCÍ ČLÁNKY
+
+
+
+
+
+
+
+
+",cs,"
+
+
+
+
+
+
+
+
+
+
+
+Comet Lake desktop specifications have escaped: up to 5.1 GHz bars, just two chips
+04 Nov 2019 by Jan Olsan
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ALL PHOTOS
+
+Already in the summer, we presented information about Intel's new 14nm desktop processors Comet Lake-S, which will probably be released sometime in the first half of next year and will come on the LGA 1200 platform - a new incompatible socket. Over the weekend, other slides leaked to Comet Lake-S in quite a lot. These slides confirm both the previous leak (and finally refute the fake specifications that appeared before), but also finally bring the parameters of the upcoming processors, including frequencies. These are only partial and preliminary, but show that Comet Lake-S will increase the maximum clock to at least 5.1 GHz.
+Comet Lake-S including frequency part models
+These slides were published by WCCFtech, but they look very legitimate and a large range (18 pages) would probably not want to fake. Most sites are not so interesting to us, but you can see them all in the gallery, including those not included in the article if you want to comb them for sure.
+The opening slides show the platform's scheme and confirm that Comet Lake-S will not bring any radically new technology to the equipment of today's Coffee Lake (Refresh). As you can see, new features are highlighted in the red frame at the slide, which is mainly that the most powerful processor of this mainstream platform will be a ten-core instead of an eight-core - we've known this for some time. The second innovation is that Intel integrates the digital portion of the newer and more powerful wireless adapter - Wi-Fi 6 (802.11ax) into the chipset. Today's 300 Series chipsets only provide Wi-Fi 5 (802.11ac).
+
+
+
+
+
+The remaining red-framed items in the yellow boxes should probably come from today's platform. Comet Lake-S processors will have a dual-channel DDR4 controller officially still supporting only 2666 MHz (Intel plans to support 2933 MHz with just one module per channel, but it is not yet clear whether they will succeed; today). It also retains the PCI Express 3.0 x 16 controller in the processor and the chipset connection through DMI 3.0 (equivalent to PCI Express 3.0).
+
+
+
+
+
+The integrated graphics also seem to have the same outputs as Skylake - DisplayPort 1.2, eDP 1.4 and or HDMI 1.4. Therefore, HDMI 2.0 output is still not supported, which is due to the fact that 14nm IP blocks are still in use and Intel does not appear to have updated them. HDMI 2.0 output on the boards can only be realized by using an additional DisplayPort converter (“LSPCON”).
+10th Generation Core Desktop Preliminary Specifications (Comet Lake-S)
+These slides also contain parameters of part of the upcoming processors. However, it seems that it may not yet be definitive; So there is probably the possibility that the bars will change somewhere. The second thing is that this presentation seems to be for the OEM / embedded and corporate sectors, and it only includes locked Core processors that will have 35W and 65W TDP and Xeony E Series (up to 80W). From the previous information, we know that unlocked models of at least 10 cores will have 125W TDP, but these models for enthusiasts / players / timers are not part of the leaked presentation. (Incidentally, TDP is set for base frequency, in boost it can exceed CPU, which is also true for 35W and 65W models).
+I9 Core: 10C / 20T
+Among the locked CPUs, the most powerful will be a 10-core / 20-threaded Core i9-10900 with a boost clock speed of up to 5.1 GHz - 100 MHz higher than the 9th Generation Coffee Lake Refresh. And it's a record for the x86 CPU at all. However, the basic clock will only be 3.0 GHz. The model will also have a 35W version of the Core i9-10900T, it has bars of 2.0 to 4.5 GHz.
+
+
+
+
+
+Core i7: 8c / 16t
+Under this model will be the Core i7-10700. 65W will have bars of 3.0 GHz in the base and a maximum boost of 4.8 GHz. The positive thing is that the HT will not be turned off, so these CPUs will have 16 threads and therefore better multithreaded performance. The 35W version of the i7-10700T should have bars of 2.0-4.4 GHz. The cache will be 16 MB (2 MB per kernel).
+Core i5 and i3 still with HT
+Also, Intel Core i5 will retain Hyper Threading, will have six cores and 12 threads, 12 MB L3 cache. For the 65W model, the i5-10500 Intel plans frequencies of 3.2-4.3 GHz, for the 35W i5-10500T, it plans 2.3-3.7 GHz. And the Core i3 will be a quad core with HT, so it confirms the recent leak. For Core i3-10100 Intel plans bars 3.2-3.8 GHz, for 35W i3-10100T 2.3-3.6 GHz. Only the cache will be clipped to 1.5 MB per kernel (6 MB total, but the i3-10300 might have 8 MB). In short, we confirmed that Intel in the Comet Lake-S generation will stop artificial segmentation using HT, when the lower models unnecessarily lost the power for which they had all the silicon present.
+
+
+
+
+
+Lowend processors will not change this way. You can also see the specifications for them in the table. Pentia will be dual-core with HT (four threads) and 4MB L3 cache, Celerons will remain dual-core without HT (2 threads) with 2MB L3 cache. Neither of these series will also receive a turbo, frequencies should be up to 3.8 GHz. Interestingly, these models may have a 65W TDP (and a 35W energy saving option), while previously TDPs were a bit lower (typically 54W).
+What could i9-10900K look like?
+However, these are locked models and unfortunately it does not tell us what the unlocked versions that we are most interested in will look like the Core i9-10900K. However, the 9th Generation Core i9 has the same high single-thread boost on the 65W model as the 95W unlocked, so if this were retained, the eventual Core i9-10900K should also have a boost of at least 5.1 GHz. The base frequency is another question, probably it could be between 3.6 and 4.0 GHz. The All Core boost will probably also be less than 5.1 GHz, perhaps between 4.6 and 4.8 GHz, but beware, these are all just blind shots.
+Everything below the six cores produced by deactivating 6C silicon?
+Intel also states in the slides that silicon chips will be produced from. It is implied that it should not be old silicon from the generations of Coffee Lake / Kaby Lake, but always new chips, so for example, all vulnerabilities should be repaired and there should be no mixed vulnerable models like the 9th generation. Interestingly, however, Intel states that Comet Lake-S chips will physically only be two: CML-S 6 + 2 (six cores and GPU GT2) and CML-S 10 + 2 (10 cores and GPU GT2). This means that both the i7 and i9 will be manufactured from the same 10-core silicon (which should be over 200 mm²). But all the remaining processors from six-core to dual-core Pentia and Celerons are to be manufactured from physically six-core silicon. So, in a large part of the production will be on the chip a lot of broken kernels, which will largely be even functional, because the error rate of 14nm process probably not very large.
+
+
+
+
+
+Thus, Intel is not afraid that it will no longer have enough production capacity at the time of Comet Lake-S, and it may not mind the impact of selling unnecessarily large silicon on margins, as it did in the past. Covering the entire desktop segment from two cores to ten with only two silicon sizes is something that AMD does, but it's probably forced to do so in order to save development costs. However, it is possible that Intel wants to set a pricing policy so that most of its sales will be ten, eight, and six-core, so it won't lose much in practice.
+LGA 1200 socket confirmed
+Slides confirm that Comet Lake-S will use the LGA 1200 socket, even explicitly confirming that it will not be backward or forward compatible. The physical appearance of the socket will be changed, so the processors for the LGA 1151 will not even fit into it. However, the slides confirm that the layout of the radiator holes and its mounting will not change, so compatibility here will be maintained and no revisions or adapters will be required.
+
+
+
+
+
+400 Series Chipsets: Always a very low-cut trimmer
+Slides also reveal information about chipsets, more specifically some of them, that will be relevant to the corporate and embedded realm, H410, which is the successor of the low-end chipset H310. For the enterprise industry with vPro support and remote messaging technology, the Q470 chipset will be the successor to the Q370. Apparently the equipment is close to the usual H470 user set (it will exist, it has already been confirmed by board name leaks). Intel is also preparing a W480 chipset, which will be designed for the Xeony E-2300. It is the successor to the C246 set used by the Xeons E-2100 and E-2200 (Coffee Lake / Coffee Lake Refresh), so Intel will change the marking. The slides for overclockers (Z470, Z480 or Z490?) Say nothing again, but you can temporarily assume that its specifications will resemble the Q470 chipset, but only support overclocking.
+
+
+
+
+
+But there is not much new in the chipset equipment. The W480 and Q470 will provide 24 PCI Express 3.0 lines and eight (W480) or six (Q470) SATA 3.0 ports. The W480 will have eight USB 3.2 Gen 2 ports at 10 Gbps and 10 USB 3.2 Gen 1 ports at 5.0 Gbps. The H470 chipset will have two 10Gbps ports less.
+
+
+
+
+
+The Intel low-end H410 chipset again cuts a lot. It will not provide 10Gb / s USB 3.2 ports at all and only 5Gb / s of ports will have four. SATA ports will also have only four, and only six half-throughput PCIe 2.0 lines will be routed from the chipset. And it also seems that it will not support PCIe × 2 or × 4 for M.2 slots and NVMe SSDs at all (the M.2 slots on the boards would only be SATA modules), while the other two chipsets can hold up to three slots. There is also no support for SATA RAID, an NVMe SSD connection directly to the PCIe processor lines, and H410 boards will only have two memory module slots. The H410 also connects to the processor through DMI 2.0 instead of DMI 3.0, which means half PCIe 2.0.
+Gallery: Leaked slides to Intel Comet Lake-S / LGA 1200 Desktop Processors (November 2019)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ALL PHOTOS
+
+
+RELATED ARTICLES
+
+
+
+
+
+
+
+
+"

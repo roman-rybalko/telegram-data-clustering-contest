@@ -1,0 +1,58 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Zakaj se ob določeni glasbi počutimo tako dobro? Odgovor pozna umetna inteligenca
+
+06 Nov 2019, 14:00
+
+Tehnologija strojnega učenja lahko določi kvalitete glasbe, ki sprožijo specifične fizične in emocionalne odzive. Nekega dne bi lahko ta tehnika bila uporabljena na področju glasbene terapije. Vsi dobro vemo, kako velik vpliv lahko ima glasba na ljudi. Si predstavljate film brez kakršne koli glasbe ali recimo trening v fitnesu brez svojega najljubšega ""pump-up"" seznama predvajanja? Ali obstaja način, kako kvantificirati naše odzive na glasbo?Če obstaja, ga je morda možno uporabiti v praksi in obrniti sebi v prid?
+V najnovejšem znanstvenem članku na to temo so raziskovalci na Univerzi Južna Karolina v ZDA ugotovili, kako lastnosti, kot sta recimo ritem in harmonija, vzbudita različne tipe možganske aktivnosti, fiziološke rekacije (vročina, potenje in spremembe v električnem odzivu) in čustva (veselje ali žalost). Poleg tega pa je bil njihov glavni cilj ugotoviti, kako tehnologija strojnega učenja uporabi te podatke in informacije o odnosih med lastnostmi za napovedovanje človeških odzivov na določeno glasbo. Rezultati raziskave, ki so bili predstavljeni na konferenci prejšnji teden, kažejo, da bi lahko bila dotična tehnika čez čas uporabljena za vzpodbujanje targetiranih glasbenih odzivov, seveda z namenom koristi za poslušalca - terapevtski namen.
+
+Kako je potekala raziskava?
+
+Raziskava je del širšega raziskovanja načinov, kako različni mediji, od filma, televizije in oglasov do glasbe, vplivajo na človeško telo in možgane. ""Ko enkrat dejansko razumemo, kako mediji vplivajo na naša čustva in fiziologijo, lahko podatke produktivno uporabimo za vzpodbujanje različnih emocij in želenih človeških odzivov ter izkušenj"", pravi Shrikanth Narayanan, profesor na Univerzi Južna Karolina in glavni raziskovalec laboratorija, ki se ukvarja s tem področjem. 
+Raziskovalci so v prvi fazi pregledali glasbene pretočne platforme, kot je recimo Spotify, kjer so skladbe označili z osnovnimi oznakami, na primer ""vesela"" ali ""žalostna"". Izogibali so se predvsem bolj znanim skladbam, da bi dobili karseda nepristranske rezultate. Preko testiranja posameznih skladb, 60 za vsako čustvo, so raziskovalci skrčili seznam na tri:dve, ki sta jasno izražali žalost (Ólafur Arnalds “Fyrsta” in Michael Kamen “Discovery of the Camp”) in eno skladbo, ki je jasno izražala veselje (Lullatone’s “Race Against the Sunset”). Skladbe je poslušalo 100 sodelujočih, ki do takrat še niso slišali izbranih skladb. Participanti so nosili fMRI skener ali merilec srčnega utripa, električne senzorje, prav tako pa so sami ocenjevali intenzivnost emocij na lestvici od 0 do 10.
+Raziskovalci, ki so obdelovali podatke, so 74 lastnosti skladb (kot so ritem, harmonija, dinamika ipd.) razdelili v različne algoritme strojnega učenja, kjer jih je zanimalo, katere od lastnosti so glavni prediktorji različnih odzivov. Na primer, ugotovili so, da svetlost skladbe (stopnja srednjih in visokih frekvenc) in moč tonov najbolj jasno vplivata na odziv poslušalca, in sicer na njegov srčni utrip in možgansko aktivnost.
+Raziskava je še v zelo začetni fazi in preteči bo moralo še kar nekaj časa, preden bodo lahko raziskovalci z visoko stopnjo natančnosti napovedali mentalne in fizične rekacije na določene skladbe. Kakorkoli že, raziskovalci so do sedanje faze zelo zadovoljni z rezultati, nadejajo pa se še večjega napredka pri kreaciji modelov, ki bi lahko bili še bolj uporabni: dizajn glasbe za točno določeno skupino ljudi, stvaritev personificirane filmske glasbe, ali pa pomoč pacientom z mentalnimi težavami, ki pa so dovzetni predvsem na dogajanja v določenih delih možganov. Laboratorij, ki se je podpisal pod raziskavo, že sodeluje s klinikami, ki zdravijo odvisneže različnih vrst. Trenutno preizkušajo, kateri mediji bi lahko najbolj optimalno pomagali pacientom. Naslednja faza bi naj bila inkorporacija glasbenih terapij.
+Če za konec povzamemo bistvo zgoraj napisanega s praktičnim, enostavnim primerom, lahko zaključimo nekako tako: z rezultati raziskave bi lahko ustvarili modele, po katerih bi generirali personalizirane sezname predvajanja. ""Tik pred spanjem verjetno ne bi želeli poslušati skladbe, ki vam močno poviša srčni utrip, na drugi strani pa bi takšna glasba prišla prav, ko je pred vami daljša možnja z avtomobilom, količna kave pa ni bila dovoljšnja, da bi vas lahko držala po konci"", zaključi Greer.
+
+
+",sl,"
+
+
+
+
+
+
+
+
+
+
+
+Why do we feel so good about certain music? Artificial intelligence knows the answer
+
+06 Nov 2019, 13:00
+
+Machine learning technology can determine the qualities of music that trigger specific physical and emotional responses. One day, this technique could be used in the field of music therapy. We all know how much influence music can have on people. Do you imagine a movie without any music or, say, fitness training without your favorite pump-up playlist? Is there a way to quantify our responses to music? If so, maybe it can be put into practice and turned to your advantage?
+In a recent scientific paper on the subject, researchers at the University of South Carolina in the United States have found how traits such as rhythm and harmony arouse different types of brain activity, physiological responses (fever, sweating, and changes in electrical response) and emotions (pleasure or sadness). In addition, their main goal was to identify how machine learning technology uses this data and information about the relationships between traits to predict human responses to particular music. The results of a survey presented at a conference last week indicate that the technique in question could be used over time to stimulate targeted musical responses, of course, for the benefit of the listener - a therapeutic purpose.
+
+How did the research go?
+
+The research is part of a broader exploration of how different media, from film, television and commercials to music, affect the human body and brain. ""Once we really understand how the media affects our emotions and physiology, we can use the data productively to stimulate a variety of emotions and desired human responses and experiences,"" says Shrikanth Narayanan, a professor at the University of South Carolina and a principal researcher at the lab. field.
+In the first phase, researchers looked at music streaming platforms such as Spotify, where they labeled tracks with basic tags, such as ""happy"" or ""sad."" They mostly avoided better known songs to get as unbiased results as possible. Through testing individual songs, 60 for each emotion, the researchers narrowed the list down to three: two that clearly expressed sadness (Ólafur Arnalds “Fyrsta” and Michael Kamen “Discovery of the Camp”) and one song that clearly expressed joy ( Lullatone's ""Race Against the Sunset""). The songs were listened to by 100 participants who had not heard the selected songs by then. Participants wore an fMRI scanner or heart rate monitor, electrical sensors, as well as self-rated emotions on a scale of 0 to 10.
+Researchers who processed the data divided 74 song properties (such as rhythm, harmony, dynamics, etc.) into different machine learning algorithms, where they were interested in which of the properties were the main predictors of different responses. For example, they found that the brightness of a song (midrange and treble) and tone power most clearly influence the listener's response, namely his heart rate and brain activity.
+The research is still in its very early stages, and it will take some time before researchers can predict the mental and physical responses to certain tracks with a high degree of accuracy. Anyway, researchers are very pleased with the results so far, hoping for even more progress in creating models that could be even more useful: designing music for a specific group of people, creating personalized movie music, or helping patients with mental health problems problems that are susceptible, in particular, to events in certain parts of the brain. The lab that has signed up for the research is already working with clinics that treat addictions of various kinds. They are currently testing what media could best help patients. The next phase is supposed to be the incorporation of music therapies.
+To sum up the essence of what was written above with a practical, simple example, we can conclude something like this: we could create models with the results of a survey to generate personalized playlists. ""Right at bedtime, you probably wouldn't want to listen to a song that greatly boosts your heart rate, but on the other hand, that kind of music would come in handy when you have a longer car ride and the amount of coffee wasn't enough to hold you down. threads, ”Greer concluded.
+
+
+"

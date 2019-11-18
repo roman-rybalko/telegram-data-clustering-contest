@@ -1,0 +1,116 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+投資初哥必學 拆解指數期權與股票期權分別｜蔡嘉民
+06 Nov 2019, 19:33 by 投資
+期權市場有不同標的物（Underlying），股票、債券、商品及外匯等等，而股票類期權中再分為指數期權以及股票期權，期權初哥可能會糾結於選擇期權市場的過程中；因此，今期筆者打算與讀者探討一下兩者的不同。
+撰文：蔡嘉民｜圖片：iStock、Unsplash
+以香港市場為例，期權可大分為兩個市場，一個是指數期權，以恒生指數及國企指數作為兩大標的物；另一個是股票期權，標的物暫時為比較流通的數十隻股票，藍籌股大多在內。股票期權標的物數量不斷增加，取決於股票的流通量，以及交易所能否找到期權莊家開價。
+指數期權與股票期權兩者最大分別，在於期權的種類，前者為歐式期權，後者則為美式期權。歐式期權不能在到期日前行使，即買賣指數期權不會出現到期前的交收或交貨，但股票期權則會出現此情況。
+
+
+圖片：Unsplash
+
+交收方式有分別
+倘若Short了Call，股價升穿行使價後，有機會被行使，對家想要股票，便要被逼補入股票後交貨；倘若Short了Put，股價跌穿行使價後，對家有機會放出股票，便要被動地接貨。因此炒賣美式期權要留意期權有否入價，以及預計被行使的機率。
+理論上，不會有太多人主動行使，因為會損失當中的時間值；不過如果市場參與者有不同派息預期，就有可能會行使。除了期權種類上的不同外，交收方式上兩者也有所不同。指數期權是現金交收，即期權於到期時入價後，所有盈虧都是從現金結算的，計算及手續都較簡單。股票期權則是實物交收，入價後便要交貨或接貨，沒貨的可能事先要買貨；有貨的，則事後要賣出，較指數期權麻煩一點。
+第三點不同在於流通性，指數期權有較多流通量提供者，亦即所稱的莊家。莊家負責開價，同時擺出買賣盤，製造市場出來，讓參與者可以及時買賣；莊家愈多，市場深度愈大，而且買賣差價愈小，對投機者來說則愈好。
+市場深度差異大
+市場深度大即可容納資金較多，指數期權每天買賣數千萬元的期權也是等閒事，但香港股票期權則明顯容納不了這個大小的資金；而買賣差價愈小，則能令投機者的買賣成本下降。指數期權買賣差價很窄，價外平均只有2至3點，約為指數的0.01%；而股票期權有較少莊家，有些買賣差價可以達到股價的1%。
+第四點不同在於行使價距離，恒指期權一般約為200點，國指期權約為100點，選擇較多；相反股票期權的行使價距離較大，以對沖值（Delta）來看，可能0.5delta下一個選擇就已經是0.3delta了，選擇較有限，會影響一些期權的跨價組合，不能有效以不同行使價對沖風險，變相增加當中的風險。
+第五點是涉及的風險，股票易受單一公司的新聞、消息、業績影響，風險較高；但指數大多是一籃子的公司，獨立風險較低。再者，一旦公司派息有變，會大大影響股票期權價格，期權玩家必須留意。綜合以上數點，相比股票期權市場，指數期權市場會較適合期權初哥學習及磨練。免責聲明：本專頁刊載的所有投資分析技巧，只可作參考用途。市場瞬息萬變，讀者在作出投資決定前理應審慎，並主動掌握市場最新狀況。若不幸招致任何損失，概與本刊及相關作者無關。而本集團旗下網站或社交平台的網誌內容及觀點，僅屬筆者個人意見，與新傳媒立場無關。本集團旗下網站對因上述人士張貼之資訊內容所帶來之損失或損害概不負責。
+相關文章
+
+
+
+
+認清增長股三大風險 投資策略要攻守兼備
+
+
+
+
+
+【投資心法】從失敗中淬煉出的成功秘密 墨守成規投資大敵｜吳瑞麟
+
+
+
+
+
+兩大投資心理偏誤 小心陷於進退失據地步 ｜港股分析｜G20｜投資有道
+
+
+
+
+
+順流五個浪基本原則 7月港股 好戲上演 ｜投資有道｜港股分析
+
+
+
+",zh-TW,"
+
+
+
+
+
+
+
+
+
+
+
+Investing in the first brother must learn to disassemble index options and stock options respectively | Cai Jiamin
+06 Nov 2019, 19:33 by investment
+The options market has different underlyings, stocks, bonds, commodities, foreign exchange, etc., while stock options are subdivided into index options and stock options. The options may be entangled in the process of selecting the options market; therefore, In this issue, the author intends to discuss with readers the difference between the two.
+Written by: Cai Jiamin | Photo: iStock, Unsplash
+Take the Hong Kong market as an example, options can be divided into two markets, one is an index option, with the Hang Seng Index and the HSCEI as the two main targets; the other is a stock option, the subject matter is temporarily a relatively circulated dozens of stocks, blue chip stocks Most of them are included. The number of stock option objects continues to increase, depending on the stock's liquidity and whether the exchange can find the option bookmaker's offer.
+The biggest difference between index options and stock options lies in the type of options, the former being European options and the latter being American options. European options cannot be exercised before the maturity date, ie the trading of the index options will not result in settlement or delivery before the expiration, but this will occur with stock options.
+
+
+Photo: Unsplash
+
+There are separate ways of settlement
+If the stock is short, the stock price will rise after the strike price, and if there is a chance to be exercised, if the stock wants the stock, it will be forced to make up the stock and deliver the goods. If the stock is short, the stock price will fall through the strike price and have a chance for the family. When the stock is released, it is necessary to receive the goods passively. Therefore, speculation on American options should pay attention to whether the option has an entry price and the probability of being expected to be exercised.
+In theory, not many people will take the initiative to exercise because they will lose the time value; however, if market participants have different dividend expectations, they may exercise. In addition to the differences in the types of options, the settlement method is different. Index options are cash settlements, that is, after the option is paid at the time of expiration, all profits and losses are settled from cash, and the calculations and procedures are relatively simple. Stock options are physical settlements. After the price is paid, they must be delivered or received. If there is no goods, they may buy goods in advance. If they are in stock, they will be sold afterwards, which is more troublesome than index options.
+The third difference is in liquidity. Index options have more liquidity providers, also known as bookmakers. The dealer is responsible for the price, and at the same time puts out the order and manufactures the market, so that the participants can buy and sell in time; the more the bookmaker, the greater the market depth, and the smaller the bid-ask spread, the better for the speculators.
+Large difference in market depth
+If the market is deep, it can accommodate more funds. The option to buy and sell tens of millions of yuan of options per day is also a hassle, but Hong Kong stock options can't accommodate this size of money; the smaller the bid-offer spread, the more profitable the speculators can buy and sell. Cost reduction. The spread of index options is very narrow, with an average price of only 2 to 3 points, which is about 0.01% of the index. Stock options have fewer bookmakers, and some bid-ask spreads can reach 1% of the stock price.
+The fourth difference is the exercise price distance. The HSI option is generally about 200 points, the national index option is about 100 points, and the choice is more. On the contrary, the exercise price of the stock option is larger, and the hedging value (Delta) may be The next choice for 0.5delta is already 0.3delta. The choice is limited, which will affect the cross-price combination of some options. It can't effectively hedge the risk with different exercise price and increase the risk in disguise.
+The fifth point is the risk involved. The stock is vulnerable to the news, news and performance of a single company, and the risk is high. However, the index is mostly a basket of companies with low independent risk. Moreover, once the company's dividend has changed, it will greatly affect the stock option price, and the option player must pay attention. Based on the above points, compared with the stock option market, the index option market will be more suitable for learning and honing the options. Disclaimer: All investment analysis techniques published on this page are for reference only. The market is changing rapidly, and readers should be cautious before making investment decisions and take the initiative to keep abreast of the latest market conditions. If you unfortunately incur any loss, it has nothing to do with this magazine and related authors. The content and opinions of the blogs of the Group's websites or social platforms are only personal opinions of the author and have nothing to do with the position of the new media. The Group's websites are not responsible for the loss or damage caused by the information content posted by the above persons.
+related articles
+
+
+
+
+Recognize the three major risks of growth stocks
+
+
+
+
+
+[Investment Mind] The secret of success that has been tempered from failure.
+
+
+
+
+
+Two major investment psychological errors, careful to fall into the wrong position | Hong Kong stocks analysis | G20 | investment has a way
+
+
+
+
+
+The basic principle of the five waves downstream, the Hong Kong stocks in July, the good performances | investment in the road | Hong Kong stocks analysis
+
+
+
+"

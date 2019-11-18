@@ -1,0 +1,62 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Qualcomm внедряет решение nuSIM от Deutsche Telekom в LTE-модемы
+
+07 Nov 2019, 11:05
+
+Компания Qualcomm Technologies сообщила о том, что планирует интегрировать решения nuSIM компании Deutsche Telekom в свой новый LTE-модем Qualcomm 9205. Как отмечается, это позволит производителям устройств портировать приложения, совместимые с nuSIM, на устройства с LTE-модемом Qualcomm. Технология nuSIM предлагает совершенно новый подход к созданию интегрированных SIM-карт и была разработана специально для использования в сфере интернета вещей (IoT), для которого первостепенное значение имеют простота решения, экономичность и низкое энергопотребление. С момента представления nuSIM на выставке Mobile World Congress 2019 компания Deutsche Telekom активно сотрудничает с лидерами в этой отрасли, включая Qualcomm Technologies, на всех стадиях разработки, чтобы создать общую, открытую и универсальную экосистему для новых IoT-решений.С помощью этой технологии поддержка функций SIM-карты может быть интегрирована непосредственно в микросхемы модема. Тем самым связанные с обычными SIM-картами затраты на логистику и хранение устраняются, при этом благодаря экономии места на печатной плате и уменьшению габаритов устройств IoT у разработчиков появляются совершенно новые возможности. Кроме того, технология предусматривает собственный процесс инициализации, который позволяет сохранить оптимизированные профили операторов размером менее 500 байт и загружать их на готовое устройство в любой момент его жизненного цикла.Для работы nuSIM, а также ряда других функций безопасности LTE-модема Qualcomm 9205 LTE, используется решение Qualcomm Trusted Execution Environment (TEE), в основе которого лежит технология ARM TrustZone — изолированная и безопасная среда для обработки программных функций, связанных с доверенными приложениями. LTE-модем Qualcomm 9205 — универсальный многорежимный чипсет нового поколения, который был специально разработан для поддержки надёжной и быстрой связи в устройствах IoT, например, в датчиках для учёта материальных активов, медицинских устройствах, системах безопасности, датчиках «умных» городов и «умных» счётчиках, а также в ряде носимых устройств. Благодаря своим характеристикам Qualcomm 9205 LTE идеально подходит для устройств IoT с питанием от батареи, которые должны работать в полевых условиях в течение нескольких лет, и решений интернета вещей малого форм-фактора с постоянным подключением к сети. Поэтому применение технологии nuSIM стало логичным шагом, который поможет повысить востребованность LTE-модема Qualcomm 9205 в этой сфере.    «Промышленный сектор находится в стадии цифровой трансформации, и мы сотрудничаем со многими компаниями промышленного интернета вещей. Мы гордимся тем, что работаем с Deutsche Telekom, создателями технологии nuSIM, с самого начала её разработки, — отметил Дино Флоре (Dino Flore), вице-президент направления технологий в Qualcomm Europe. — Эта технология позволит производителям устройств интернета вещей предложить конечным клиентам решения с поддержкой сотовой связи «из коробки». Именно такие инновации помогут им разрабатывать IoT-устройства нового поколения».
+
+Вы можете подписаться на наш Telegram-канал для получения наиболее интересной информации
+
+
+Читайте также
+
+
+
+
+
+
+
+
+",ru,"
+
+
+
+
+
+
+
+
+
+
+
+Qualcomm Deploys Deutsche Telekom's nuSIM Solution in LTE Modems
+
+07 Nov 2019, 11:05
+
+Qualcomm Technologies announced that it plans to integrate Deutsche Telekom's nuSIM solutions into its new Qualcomm 9205 LTE modem. As noted, this will allow device manufacturers to port nuSIM-compatible applications to devices with Qualcomm LTE modem. NuSIM technology offers a completely new approach to creating integrated SIM cards and has been developed specifically for use in the Internet of Things (IoT), for which simplicity of solution, economy and low power consumption are of paramount importance. Since the introduction of nuSIM at Mobile World Congress 2019, Deutsche Telekom has been actively collaborating with industry leaders, including Qualcomm Technologies, at all stages of development, to create a common, open and universal ecosystem for new IoT solutions. SIM cards can be integrated directly into modem chips. Thus, the costs associated with conventional SIM cards for logistics and storage are eliminated, while due to the saving of space on the printed circuit board and the reduction in the size of IoT devices, developers have completely new opportunities. In addition, the technology provides its own initialization process, which allows you to save optimized operator profiles of less than 500 bytes in size and upload them to the finished device at any time of its life cycle. For nuSIM, as well as a number of other security functions, Qualcomm 9205 LTE LTE modem is used Qualcomm Trusted Execution Environment (TEE), based on ARM TrustZone technology - an isolated and secure environment for processing software functions associated with trusted applications. Qualcomm 9205 LTE modem is a new generation universal multi-mode chipset that was specially designed to support reliable and fast communication in IoT devices, for example, sensors for accounting for tangible assets, medical devices, security systems, sensors for smart cities and smart meters, as well as in a number of wearable devices. Thanks to its features, the Qualcomm 9205 LTE is ideal for battery-powered IoT devices that have to run in the field for several years, and for the Internet of Things small form factor with a constant network connection. Therefore, the use of nuSIM technology was a logical step that will help to increase the demand for Qualcomm 9205 LTE modem in this area. “The industrial sector is undergoing a digital transformation, and we are collaborating with many companies on the industrial Internet of things. We are proud to work with Deutsche Telekom, the creators of nuSIM technology, from the very beginning of its development, ”said Dino Flore, vice president of technology at Qualcomm Europe. “This technology will enable manufacturers of IoT devices to offer end-to-end cellular solutions with end-to-end cellular support.” It is these innovations that will help them develop a new generation of IoT devices. ”
+
+You can subscribe to our Telegram channel to receive the most interesting information.
+
+
+Read also
+
+
+
+
+
+
+
+
+"

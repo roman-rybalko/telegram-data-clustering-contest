@@ -1,0 +1,56 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Bloqueio por impressão digital pode ser 'quebrado' em 20 minutos
+Empresa chinesa Tecent mostrou ser possível desbloquear qualquer celular com biometria em poucos minutos, por meio da clonagem das impressões digitais
+04 Nov 2019, 13:33 by Guilherme Preta
+A tecnologia de desbloqueio de celular por meio da impressão digital surgiu como uma forma segura e simples de proteger seu smartphone. Porém, a empresa chinesa Tecent mostrou, na conferência GeekPWN 2019, que essa forma de proteção pode não ser tão segura quanto se imagina.
+A equipe de pesquisa da empresa se mostrou capaz de vencer qualquer scanner de impressão digital em apenas 20 minutos. Para isso, pediu que pessoas aleatórias da plateia segurassem apenas um copo. Depois disso, fotografaram as impressões digitais deixadas com um smartphone e passaram por um aplicativo desenvolvido pelos hackers da companhia que, acredita-se, extraía os dados necessários para clonar as impressões digitais dos participantes e as usaram para desbloquear três celulares registrados pelos próprios voluntários. A empresa ressaltou que venceu todas as tecnologias diferentes de digitalização de impressões digitais usadas atualmente na indústria de smartphones: capacitiva, óptica e ultrassônica.
+Líder da equipe que desenvolveu o processo, Chen Yu afirmou que o hardware utilizado “custou mais de US$ 140, e o software é apenas um telefone e um aplicativo”. Como o processo de clonagem da digital não foi divulgado, fica difícil precisar o quão fácil seria para o processo ser replicado, porém, recentemente a Samsung confirmou que corrigiu uma falha na tecnologia de impressão digital utilizada no Galaxy S10 e no Note 10. Além disso, a Apple parou de usar desbloqueio por digital no seu último lançamento, o Iphone 11, como medida de segurança, já que existem diversos exemplos de clonagem de digital, inclusive utilizando materiais simples como pistolas de papel-alumínio e cola quente ou impressões 3D.
+Apesar de alertar os usuários, o aplicativo e o processo utilizados não foram divulgados pela Tecent por questões de segurança, e, mesmo que outras tecnologias sejam inventadas, é necessário que o invasor tenha acesso físico ao smartphone para que o ataque seja concluído. Além disso, a tecnologia parece longe de ser abandonada pela Samsung, que está desenvolvendo um leitor de digital para combinar PINs, senhas e digitais como solução multifatorial para o seu próximo lançamento, o Galaxy S11.
+Via: Forbes
+
+
+
+
+
+
+
+",pt,"
+
+
+
+
+
+
+
+
+
+
+
+Fingerprint lock can be 'broken' in 20 minutes
+Chinese company Tecent has shown it is possible to unlock any cell phone with biometrics within minutes by cloning fingerprints
+04 Nov 2019, 13:33 by Guilherme Preta
+Cell phone unlocking technology through fingerprint has emerged as a safe and simple way to protect your smartphone. However, the Chinese company Tecent showed at the GeekPWN 2019 conference that this form of protection may not be as safe as one might think.
+The company's research team proved capable of beating any fingerprint scanner in just 20 minutes. To do so, he asked random people from the audience to hold just one glass. After that, they photographed the fingerprints left with a smartphone and passed an application developed by the company's hackers believed to extract the data needed to clone participants' fingerprints and use them to unlock three cell phones registered by the volunteers themselves. The company pointed out that it has beaten all the different fingerprint scanning technologies currently used in the smartphone industry: capacitive, optical and ultrasonic.
+Leading the team that developed the process, Chen Yu said the hardware used ""cost more than $ 140, and the software is just a phone and an app."" Since the digital cloning process has not been made public, it is hard to tell how easy it would be for the process to be replicated, but Samsung has recently confirmed that it has fixed a flaw in the fingerprint technology used in the Galaxy S10 and Note 10. In addition , Apple stopped using digital unlocking in its latest release, the Iphone 11, as a safety precaution, as there are several examples of digital cloning, including using simple materials such as aluminum foil and hot glue guns or 3D prints.
+Despite alerting users, the application and process used were not disclosed by Tecent for security reasons, and even if other technologies are invented, the attacker must have physical access to the smartphone to complete the attack. In addition, the technology seems far from being abandoned by Samsung, which is developing a digital reader to combine PINs, passwords and digital as a multifactorial solution for its next release, the Galaxy S11.
+Via: Forbes
+
+
+
+
+
+
+
+"

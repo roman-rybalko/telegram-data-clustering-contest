@@ -1,0 +1,80 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Meet MLPerf, a benchmark for measuring machine-learning performance
+MLPerf benches both training and inference workloads across a wide ML spectrum.
+07 Nov 2019, 20:10 by Jim Salter
+When you want to see whether one CPU is faster than another, you have PassMark. For GPUs, there's Unigine's Superposition. But what do you do when you need to figure out how fast your machine-learning platform is—or how fast a machine-learning platform you're thinking of investing in is?
+Machine-learning expert David Kanter, along with scientists and engineers from organizations such as Google, Intel, and Microsoft, aims to answer that question with MLPerf, a machine-learning benchmark suite. Measuring the speed of machine-learning platforms is a problem that becomes more complex the longer you examine it, since both problem sets and architectures vary widely across the field of machine learning—and in addition to performance, the inference side of MLPerf must also measure accuracy.
+Training and inference
+If you don't work with machine learning directly, it's easy to get confused about the terms. The first thing you must understand is that neural networks aren't really programmed at all: they're given a (hopefully) large set of related data and turned loose upon it to find patterns. This phase of a neural network's existence is called training. The more training a neural network gets, the better it can learn to identify patterns and deduce rules to help it solve problems.
+The computational cost of the training phase is massive (we weren't kidding about the ""large"" dataset part). As an example, Google trained Gmail's SmartReply feature on 238,000,000 sample emails, and Google Translate trained on trillions of samples. Systems designed for training are generally enormous and powerful, and their job is to chew through data absolutely as fast as possible—which requires surprisingly beefy storage subsystems, as well as processing, in order to keep the AI pipeline fed.
+After the neural network is trained, getting useful operations and information back out of it is called inference. Inference, unlike training, is usually pretty efficient. If you're heavier on old-school computer science than you are on machine learning, this can be thought of as similar to the relationship between building a b-tree or other efficient index out of unstructured data and then finding the results you want from the completed index.
+Performance certainly still matters when running inference workloads, but the metrics—and the architecture—are different. The same neural network might be trained on massive supercomputers while performing inference later on budget smartphones. The training phase requires as many operations per second as possible with little concern for the latency of any one operation. The inference phase is frequently the other way around—there's a human waiting for the results of that inference query, and that human gets impatient very quickly while waiting to find out how many giraffes are in their photo.
+Large problem spaces require complex answers
+If you were hoping to get a single MLPerf score for your PC, you're out of luck. Simple holistic benchmarks like PassMark have the luxury of being able to assume that the CPUs they test are roughly similar in architecture and design. Sure, AMD's Epyc and Intel's Xeon Scalable have individual strengths and weaknesses—but they're both x86_64 CPUs, and there are some relatively safe assumptions you can make about the general relationships of performance between one task and the next on either CPU. It's unlikely that floating point performance is going to be orders of magnitude faster than integer performance on the same CPU, for example.
+Because Kanter and his colleagues wanted MLPerf to be applicable across not only a wide range of workloads but also a truly overwhelming number of architectures, they couldn't make similar assumptions, and so they can't give your machine-learning hardware a single score. Scores are first broken down into training workloads and inference workloads before being divided into tasks, models, datasets, and scenarios. So the output of MLPerf is not so much a score as a particularly wide row in a spreadsheet.
+The tasks are image classification, object detection, and natural language translation. Each task is measured against four scenarios:
+
+Single stream—performance measured in latencyExample: a smartphone camera app working with a single image at a time
+Multiple stream—performance measured in number of streams possible (subject to latency bound)Example: a driving-assistance algorithm sampling multiple cameras and sensors
+Server—performance measured in Queries per Second (subject to latency bound)Example: language-translation sites or other massively parallel but real-time applications
+Offline—performance measured in raw throughputExample: tasks such as photo sorting and automatic album creation, which are not initiated by the user and are not presented to the user until complete.
+
+MLPerf also separates benchmark result sets into Open and Closed ""divisions,"" with more stringent requirements set for the Closed division; from there, hardware is also separated into system categories of Available, Preview, and RDO (Research, Development, Other). This gives benchmark readers an idea of how close to real production the systems being benched are and whether one can be purchased right off the shelf.
+More information about tasks, models, datasets, and constraints for the inference benchmark suite can be found here.
+Initial results
+So far, nearly 600 benchmarks have been submitted to the project from cloud providers, system OEMs, chip and software vendors, and universities. Although interpreting the results still requires a fair amount of real-world knowledge, it's impressive to find a single comprehensive system that can benchmark a smartphone, a supercomputer, and a hyperscale cluster side by side in a meaningful way.
+MLPerf's training benchmark suite launched in May 2018, with initial results posted in December 2018. The inference suite launched June 24, 2019, and initial results went live yesterday, on November 6.
+
+
+",en,"
+
+
+
+
+
+
+
+
+
+
+
+Meet MLPerf, a benchmark for measuring machine-learning performance
+MLPerf benches both training and inference workloads across a wide ML spectrum.
+07 Nov 2019, 20:10 by Jim Salter
+When you want to see whether one CPU is faster than another, you have PassMark. For GPUs, there's Unigine's Superposition. But what do you do when you need to figure out how fast your machine-learning platform is—or how fast a machine-learning platform you're thinking of investing in is?
+Machine-learning expert David Kanter, along with scientists and engineers from organizations such as Google, Intel, and Microsoft, aims to answer that question with MLPerf, a machine-learning benchmark suite. Measuring the speed of machine-learning platforms is a problem that becomes more complex the longer you examine it, since both problem sets and architectures vary widely across the field of machine learning—and in addition to performance, the inference side of MLPerf must also measure accuracy.
+Training and inference
+If you don't work with machine learning directly, it's easy to get confused about the terms. The first thing you must understand is that neural networks aren't really programmed at all: they're given a (hopefully) large set of related data and turned loose upon it to find patterns. This phase of a neural network's existence is called training. The more training a neural network gets, the better it can learn to identify patterns and deduce rules to help it solve problems.
+The computational cost of the training phase is massive (we weren't kidding about the ""large"" dataset part). As an example, Google trained Gmail's SmartReply feature on 238,000,000 sample emails, and Google Translate trained on trillions of samples. Systems designed for training are generally enormous and powerful, and their job is to chew through data absolutely as fast as possible—which requires surprisingly beefy storage subsystems, as well as processing, in order to keep the AI pipeline fed.
+After the neural network is trained, getting useful operations and information back out of it is called inference. Inference, unlike training, is usually pretty efficient. If you're heavier on old-school computer science than you are on machine learning, this can be thought of as similar to the relationship between building a b-tree or other efficient index out of unstructured data and then finding the results you want from the completed index.
+Performance certainly still matters when running inference workloads, but the metrics—and the architecture—are different. The same neural network might be trained on massive supercomputers while performing inference later on budget smartphones. The training phase requires as many operations per second as possible with little concern for the latency of any one operation. The inference phase is frequently the other way around—there's a human waiting for the results of that inference query, and that human gets impatient very quickly while waiting to find out how many giraffes are in their photo.
+Large problem spaces require complex answers
+If you were hoping to get a single MLPerf score for your PC, you're out of luck. Simple holistic benchmarks like PassMark have the luxury of being able to assume that the CPUs they test are roughly similar in architecture and design. Sure, AMD's Epyc and Intel's Xeon Scalable have individual strengths and weaknesses—but they're both x86_64 CPUs, and there are some relatively safe assumptions you can make about the general relationships of performance between one task and the next on either CPU. It's unlikely that floating point performance is going to be orders of magnitude faster than integer performance on the same CPU, for example.
+Because Kanter and his colleagues wanted MLPerf to be applicable across not only a wide range of workloads but also a truly overwhelming number of architectures, they couldn't make similar assumptions, and so they can't give your machine-learning hardware a single score. Scores are first broken down into training workloads and inference workloads before being divided into tasks, models, datasets, and scenarios. So the output of MLPerf is not so much a score as a particularly wide row in a spreadsheet.
+The tasks are image classification, object detection, and natural language translation. Each task is measured against four scenarios:
+
+Single stream—performance measured in latencyExample: a smartphone camera app working with a single image at a time
+Multiple stream—performance measured in number of streams possible (subject to latency bound)Example: a driving-assistance algorithm sampling multiple cameras and sensors
+Server—performance measured in Queries per Second (subject to latency bound)Example: language-translation sites or other massively parallel but real-time applications
+Offline—performance measured in raw throughputExample: tasks such as photo sorting and automatic album creation, which are not initiated by the user and are not presented to the user until complete.
+
+MLPerf also separates benchmark result sets into Open and Closed ""divisions,"" with more stringent requirements set for the Closed division; from there, hardware is also separated into system categories of Available, Preview, and RDO (Research, Development, Other). This gives benchmark readers an idea of how close to real production the systems being benched are and whether one can be purchased right off the shelf.
+More information about tasks, models, datasets, and constraints for the inference benchmark suite can be found here.
+Initial results
+So far, nearly 600 benchmarks have been submitted to the project from cloud providers, system OEMs, chip and software vendors, and universities. Although interpreting the results still requires a fair amount of real-world knowledge, it's impressive to find a single comprehensive system that can benchmark a smartphone, a supercomputer, and a hyperscale cluster side by side in a meaningful way.
+MLPerf's training benchmark suite launched in May 2018, with initial results posted in December 2018. The inference suite launched June 24, 2019, and initial results went live yesterday, on November 6.
+
+
+"

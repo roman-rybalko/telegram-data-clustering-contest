@@ -1,0 +1,88 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+from the I'm-sorry-I-can't-do-that,-Dave dept
+Report Suggests Rampant Negligence In Uber Self Driving Car Fatality
+06 Nov 2019, 13:35 by Karl Bode
+Earlier this year you might recall that a self-driving Uber in Tempe, Arizona killed a woman who was trying to cross the street with her bike outside of a crosswalk. The driver wasn't paying attention, and the car itself failed to stop for the jaywalking pedestrian. Initial reporting on the subject, most of it based on anonymous Uber sources who spoke to the paywalled news outlet The Information, strongly pushed the idea that the car's sensors worked as intended and detected the woman, but bugs in the system software failed to properly identify the woman as something to avoid:
+
+""The car’s sensors detected the pedestrian, who was crossing the street with a bicycle, but Uber’s software decided it didn’t need to react right away. That’s a result of how the software was tuned. Like other autonomous vehicle systems, Uber’s software has the ability to ignore “false positives,” or objects in its path that wouldn’t actually be a problem for the vehicle, such as a plastic bag floating over a road. In this case, Uber executives believe the company’s system was tuned so that it reacted less to such objects. But the tuning went too far, and the car didn’t react fast enough, one of these people said.""
+
+Thanks to that report, a narrative emerged that the vehicle largely worked as designed, and the only real problem was a modest quirk in uncooked programming.
+But a new report by Bloomberg this week shatters that understanding. According to NTSB findings seen by Bloomberg, the vehicle in question wasn't even programmed to detect jaywalkers. Like, at all:
+
+""Uber Technologies Inc.’s self-driving test car that struck and killed a pedestrian last year wasn’t programmed to recognize and react to jaywalkers, according to documents released by U.S. safety investigators.""
+
+Assuming Bloomberg's read of the 400 page report (only a part of which has been made public) is accurate, that's a far cry from a bug. The NTSB report found that Uber staff had also disabled Volvo auto-detection and breaking software that could have at least slowed the vehicle if not avoided the pedestrian impact altogether. Investigators also noted that despite the fact that Uber was conducting risky trials on public streets, the company had little to no real system in place for dealing with safety issues. Again, not just underwhelming public safety protocols, but none whatsoever:
+
+""The Uber Advanced Technologies Group unit that was testing self-driving cars on public streets in Tempe didn’t have a standalone safety division, a formal safety plan, standard operating procedures or a manager focused on preventing accidents, according to NTSB.""
+
+Again, that's not just buggy or ""poorly tuned"" software, it's total negligence. Despite the fact the driver was distracted, the car was never adequately programmed to detect jaywalkers, some safety features were disabled, and Uber had little to no safety protocols in place, prosecutors have already absolved Uber of criminal liability (though the driver still may face a lawsuit). The NTSB also hasn't formally affixed blame for the crash (yet):
+
+""The documents painted a picture of safety and design lapses with tragic consequences but didn’t assign a cause for the crash. The safety board is scheduled to do that at a Nov. 19 meeting in Washington.""
+
+Self driving cars are remarkably safe, and most accidents involve autonomous vehicles getting confused when people actually follow the law (like rear ending a human-driven vehicle that stopped at a red light before turning right). But that's only true when the people designing and conducting trials are competent. If the NTSB report is anything to go by, Uber fell well short, yet got to enjoy a lot of press suggesting the problem was random bad programming luck, not total negligence and incompetence. Later this month we'll get to see if Uber faces anything resembling accountability for its failures.
+
+If you liked this post, you may also be interested in...
+
+
+
+
+
+
+
+
+",en,"
+
+
+
+
+
+
+
+
+
+
+
+from the I'm-sorry-I-can't-do-that,-Dave dept
+Report Suggests Rampant Negligence In Uber Self Driving Car Fatality
+06 Nov 2019, 13:35 by Karl Bode
+Earlier this year you might recall that a self-driving Uber in Tempe, Arizona killed a woman who was trying to cross the street with her bike outside of a crosswalk. The driver wasn't paying attention, and the car itself failed to stop for the jaywalking pedestrian. Initial reporting on the subject, most of it based on anonymous Uber sources who spoke to the paywalled news outlet The Information, strongly pushed the idea that the car's sensors worked as intended and detected the woman, but bugs in the system software failed to properly identify the woman as something to avoid:
+
+""The car’s sensors detected the pedestrian, who was crossing the street with a bicycle, but Uber’s software decided it didn’t need to react right away. That’s a result of how the software was tuned. Like other autonomous vehicle systems, Uber’s software has the ability to ignore “false positives,” or objects in its path that wouldn’t actually be a problem for the vehicle, such as a plastic bag floating over a road. In this case, Uber executives believe the company’s system was tuned so that it reacted less to such objects. But the tuning went too far, and the car didn’t react fast enough, one of these people said.""
+
+Thanks to that report, a narrative emerged that the vehicle largely worked as designed, and the only real problem was a modest quirk in uncooked programming.
+But a new report by Bloomberg this week shatters that understanding. According to NTSB findings seen by Bloomberg, the vehicle in question wasn't even programmed to detect jaywalkers. Like, at all:
+
+""Uber Technologies Inc.’s self-driving test car that struck and killed a pedestrian last year wasn’t programmed to recognize and react to jaywalkers, according to documents released by U.S. safety investigators.""
+
+Assuming Bloomberg's read of the 400 page report (only a part of which has been made public) is accurate, that's a far cry from a bug. The NTSB report found that Uber staff had also disabled Volvo auto-detection and breaking software that could have at least slowed the vehicle if not avoided the pedestrian impact altogether. Investigators also noted that despite the fact that Uber was conducting risky trials on public streets, the company had little to no real system in place for dealing with safety issues. Again, not just underwhelming public safety protocols, but none whatsoever:
+
+""The Uber Advanced Technologies Group unit that was testing self-driving cars on public streets in Tempe didn’t have a standalone safety division, a formal safety plan, standard operating procedures or a manager focused on preventing accidents, according to NTSB.""
+
+Again, that's not just buggy or ""poorly tuned"" software, it's total negligence. Despite the fact the driver was distracted, the car was never adequately programmed to detect jaywalkers, some safety features were disabled, and Uber had little to no safety protocols in place, prosecutors have already absolved Uber of criminal liability (though the driver still may face a lawsuit). The NTSB also hasn't formally affixed blame for the crash (yet):
+
+""The documents painted a picture of safety and design lapses with tragic consequences but didn’t assign a cause for the crash. The safety board is scheduled to do that at a Nov. 19 meeting in Washington.""
+
+Self driving cars are remarkably safe, and most accidents involve autonomous vehicles getting confused when people actually follow the law (like rear ending a human-driven vehicle that stopped at a red light before turning right). But that's only true when the people designing and conducting trials are competent. If the NTSB report is anything to go by, Uber fell well short, yet got to enjoy a lot of press suggesting the problem was random bad programming luck, not total negligence and incompetence. Later this month we'll get to see if Uber faces anything resembling accountability for its failures.
+
+If you liked this post, you may also be interested in...
+
+
+
+
+
+
+
+
+"

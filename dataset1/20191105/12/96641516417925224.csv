@@ -1,0 +1,166 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+macOS Catalina: A month with Apple's latest desktop update
+It's worth installing unless you have very specific software needs.
+05 Nov 2019, 12:00 by Nathan Ingraham
+Apple has settled into a comfortable cadence for macOS upgrades. Every fall, an updated version drops with a host of new features, most of which make life easier but don't radically change the experience of using a Mac. That's not necessarily a bad thing; there's something to be said for steady iteration. At first glance, Catalina falls into that bucket. As has often been the case, some features from iOS have been ported over to the Mac, including major updates to the Photos, Notes and Reminders apps. Apple Arcade went live as part of the Mac App Store, and the Screen Time monitoring features that arrived last year in iOS are now part of the Mac experience as well.
+But some changes are potentially more significant. Apple finally removed iTunes, splitting its features into three new apps: Music, TV and Podcasts. Sidecar lets you use an iPad as a secondary display or an external drawing tablet with the Apple Pencil. There's a host of significant new accessibility features. And perhaps the biggest change: 32-bit legacy apps are no longer supported, which could be disruptive if you rely on older software.
+As with all recent versions of macOS, Catalina is a free upgrade -- so it's not a question of value. Rather, it's about whether the changes Apple made enhance your Mac experience or hamper it. I've been using Catalina daily since just before launch day, starting with the final public beta, and the good news is that it has proven to be a solid, stable update with a number of little additions that I find quite useful.
+Compatibility check
+As with most new versions of macOS, Catalina is fairly well-supported on older hardware. If you have a MacBook Pro, MacBook Air or Mac mini from mid-2012 or later, it will work with Catalina. iMacs from late 2012 and later are supported, as is the 2013 ""trash can"" Mac Pro. All models of the 12-inch MacBook should work as well.
+Not all features work with every computer, though. Apple details all its various requirements here, but the most restrictive is probably the ""Hey Siri"" functionality. For that, you'll need a 2018 or newer MacBook Pro or Air or the iMac Pro. The rest of us will have to click the Siri button like peasants.
+On my 2018 13-inch MacBook Pro, installation was simple and straightforward. The 8GB installer downloaded quickly and the upgrade was all over after about 45 minutes. It's not exactly quick, but take a lunch break and enjoy being away from the screen for a bit.
+Updated apps galore
+
+
+
+If you use Apple's built-in applications, Catalina will feel like a significant change. Just as with iOS 13, Notes, Reminders and Photos have all received significant upgrades -- especially the latter two. For years, Reminders has been about the most basic task list you could imagine, but now it's been entirely rebuilt. There are new ""smart lists"" that show everything due today, scheduled for the future, items you've flagged or just everything you've ever added. Reminders also supports sub-tasks for the first time, and there are new ""quick add"" buttons to tack on due dates or locations.
+Before, Reminders had a single ""shared"" list that synced between you and other family members, but now you can share any list with anyone who has an Apple ID. Reminders is also better integrated with Apple's other apps. For example, you can set a reminder to show up when you're messaging a specific person, and Siri is better at recognizing natural language to set due dates when you're adding a to-do with your voice. Finally, you can add attachments, so if there are specific files that go along with a task, you can keep them close at hand.
+All told, this is a significant -- and sorely needed -- update. The new Reminders isn't quite as robust as other options like Things or Todoist, but it's far more capable than it was before and probably will be enough for most users.
+Apple Notes, by contrast, has been a surprisingly good app for a few years now, so changes in Catalina aren't nearly as significant. There's a gallery-style view that shows your notes as thumbnails. If you mostly just use Notes for text, that won't be terribly useful -- but if you store scans, sketches from an iPad, links, photos or any other more visual content, the gallery view is good for quickly finding what you're looking for. Other changes include improved sharing and search. These don't fundamentally change the app, but they're good improvements nonetheless.
+
+
+
+Photos was a pretty full-featured app as it was, but it still received a notable update. Even then, it's mostly a visual change. As in iOS 13, you can now drill down through your photos from a high-level yearly view into months, which show a handful of collections based on different locations. From there, a more detailed day-level view provides a curated gallery of significant shots. It's a nice way to browse highlights in your collection without having to look at every single capture (though of course there's still an ""all photos"" view).
+Music, TV and Podcasts
+
+
+
+Yup, iTunes is dead. And it's been removed entirely from Catalina. But, as expected, just about all of its features are intact. (So, is it really dead?) They're just split across three different apps: Music, TV and Podcasts. Whether or not you have an Apple Music subscription, the Music app should be quite familiar. The left navigation area contains all your playlists as well as buttons to view your library by artist, song or album. If you're an Apple Music subscriber, you'll also see links to the For You, Browse and Radio sections of the service. Finally, you can also access the iTunes Music Store if you turn it on in preferences.
+If you had a massive iTunes library, the good news is that most of that app's nerdier music organization features are still here. You can still make smart playlists, give songs five-star ratings, adjust metadata and artwork and more. I have a pretty large MP3 library I've built over the years, but I'm also an Apple Music subscriber, so it's great for me to be able to have both those options fully integrated. That said, if you didn't like how iTunes worked, Music isn't radically different. It's a single-purpose app, but its design and organization philosophy is essentially unchanged.
+The TV app will be familiar to anyone who has used an Apple TV. Just as iTunes did, the app plays back movies and TV shows you've purchased and rented from the iTunes Store. And, like the Apple TV, the app also has a ""watch now"" area that attempts to bring together content you're watching from iTunes alongside things from various Apple TV ""channels"" like Showtime, HBO, Starz, CBS All Access and more. Apple and others have long tried to pull together a unified vision of the many things we watch across various services, but it's still not there, mostly because major players like Hulu and Netflix aren't supported. For now, I imagine most people will pop the app open to watch their iTunes movie and TV collection (or try out Apple TV+) and otherwise do most of their viewing through Netflix in a web browser.
+Podcasts requires the least explanation; if you've used the Podcast app on iOS, you'll be right at home. It syncs everything across devices, so iPhone users who want to listen to podcasts on their Mac can still do that, just as they could in iTunes.
+Apple Arcade
+
+
+
+We've written about Apple Arcade already, and the basics apply to the Mac as well as iOS devices. Five dollars a month gets you access to more than one hundred games that work offline or online. Some games hit iOS first and the Mac a bit later, while others haven't yet made the transition (and it's not clear they ever will). But even with the catalog not being a one-to-one match, I've found plenty to play. Many of these games were built first for touchscreens, but everything I've tried -- from fast-paced titles Sayonarra Wild Hearts and Skate City to more relaxed titles like Mini Motorways and Where Cards Fall -- has worked with a PS4 controller hooked up by Bluetooth. Just note that they all make my laptop run hot and do a real number on the battery.
+Sidecar
+
+
+
+Apple
+
+
+For years, there have been apps that let you use an iPad as an external display for your Mac, but Sidecar makes this process dead simple. There's an area in preferences that automatically detects any compatible iPads on your local network that use your Apple ID. For me, connecting several different iPads worked without a hiccup. Once you're connected, you can use an iPad in Sidecar mode in a few ways. The most basic is just as a small external display, which is both handy but also slightly confusing. That's mostly because in display mode, the touchscreen isn't active, so I had to fight my natural urge to reach up and tap on the iPad and use my mouse instead.
+You can interact with the iPad using an Apple Pencil, though, if that appeals to you. You can also swipe up from the bottom of the iPad to return to the native iPad interface and quickly switch back to using it as a tablet; Sidecar keeps running as if it's any other iPad app. It's handy in a pinch and I can see myself using it to extend my screen real estate when I'm traveling.
+Perhaps more intriguing is the ability to use an iPad and Apple Pencil to work directly with apps like Photoshop, Illustrator, Affinity Photo, Final Cut Pro and others. Unfortunately, I'm not much of an artist and I didn't have any compatible apps to really try this out. But, you can drag any app that supports a stylus, like Adobe Illustrator, over to the iPad screen and start drawing away.
+There's also a few new features in macOS called Continuity Sketch and Continuity Markup. Sketch lets you create a drawing on the iPad that is then inserted into a Notes or Pages document. Markup lets you open up a photo or document and draw on it with the Pencil, the same way you can natively on the iPad. Both are handy if you want to edit files or notes you're working with on a Mac with an Apple Pencil. And for more advanced artists, I imagine many people will appreciate the ability to essentially bring the Apple Pencil experience to drawing apps on the Mac.
+32-bit app support and Catalyst apps
+
+
+
+You may recall a bit of drama about app compatibility when Catalina arrived. Long story short, the new version of macOS removes support for older 32-bit apps, including things like Microsoft Office 2011 and earlier versions of popular Adobe apps like Photoshop and Illustrator. If you didn't know this was coming, it certainly could be an unpleasant surprise. That said, Apple announced that the previous version of macOS, Mojave, would be the last to support 32-bit apps back in June of 2018. Since then, you'd get a warning when you launched an old app that it wouldn't be supported in the future. Furthermore, when you start installing Catalina, the OS checks if you have any incompatible apps and puts up a warning before you proceed with the installation; you can still back out at that point. So, honestly, not sure how you missed it.
+Of course, none of that was ever going to quell the backlash incubator that is the internet. But the good news is this shouldn't be a problem for most users. Before updating, you can check and see if you have any apps that won't work in Catalina by running the ""System Information"" app and seeing what, if anything, comes up under the ""legacy software"" menu.
+
+
+
+Some DJ software also didn't work out of the box with Catalina, but not because of the 32-bit issue. Apps that relied on an iTunes library had to be upgraded to work in Catalina's new Music app, which replaces iTunes. Serrato's DJ Pro, DJ Lite and Studio apps didn't work for a few weeks but were recently updated with full Catalina support.
+This was understandably frustrating to Mac users who had to deal with some compatibility breaks, but chances are most people won't run into these issues. Just check and make sure your mission-critical software is supported before updating. And that's something you should do before updating any computer's operating system.
+There's another change to apps in Catalina: For the first time, third-party developers can build ""Catalyst"" apps. Apple announced Catalyst at WWDC 2018 as a way to make it easy for developers to bring iPad apps to the Mac. Apple itself released the first ones with macOS Mojave: News, Home, Stocks and Voice Memos. But now, the first from third-party developers have hit the App Store.
+Probably the most significant is Twitter, which has returned to the Mac after it unceremoniously killed off its standalone Mac app in early 2018. Like Apple's first batch of Catalyst apps, Twitter is... fine. Twitter actually included a robust set of keyboard shortcuts and menus that make it feel a lot more native to the Mac than Apple's own apps. If you've used the official Twitter app on your iPhone or iPad, you'll be right at home. It's even smart enough to expand to a three-column view to include trends and a search bar if you resize it to use more of your screen.
+Right now, I can't say there are many other compelling Catalyst apps out there from big-name developers yet. That'll surely change, but we're very much in the early days. I will say it's disappointing that Apple's own Catalyst apps haven't really changed since last year. They were very bare-bones and basic on Mojave, and that's still the case here. You'd think Apple would lead the way with showing how to make these apps feels native to the Mac.
+Wrap-up
+
+
+
+Apple
+
+
+As with most macOS updates, there's almost no reason not to upgrade to Catalina. It's stable, free and has a nice set of new features that don't fundamentally change how the Mac works. That said, because of potential app compatibility issues, users should exercise a little more caution than in years past. On the other hand, it's easy enough to see if you're good to go. So, assuming all the software you need will work, go ahead and upgrade. Apple is laying some groundwork here, particularly with Catalyst apps, but right now the experience of using a Mac hasn't changed significantly.
+
+
+",en,"
+
+
+
+
+
+
+
+
+
+
+
+macOS Catalina: A month with Apple's latest desktop update
+It's worth installing unless you have very specific software needs.
+05 Nov 2019, 12:00 by Nathan Ingraham
+Apple has settled into a comfortable cadence for macOS upgrades. Every fall, an updated version drops with a host of new features, most of which make life easier but don't radically change the experience of using a Mac. That's not necessarily a bad thing; there's something to be said for steady iteration. At first glance, Catalina falls into that bucket. As has often been the case, some features from iOS have been ported over to the Mac, including major updates to the Photos, Notes and Reminders apps. Apple Arcade went live as part of the Mac App Store, and the Screen Time monitoring features that arrived last year in iOS are now part of the Mac experience as well.
+But some changes are potentially more significant. Apple finally removed iTunes, splitting its features into three new apps: Music, TV and Podcasts. Sidecar lets you use an iPad as a secondary display or an external drawing tablet with the Apple Pencil. There's a host of significant new accessibility features. And perhaps the biggest change: 32-bit legacy apps are no longer supported, which could be disruptive if you rely on older software.
+As with all recent versions of macOS, Catalina is a free upgrade -- so it's not a question of value. Rather, it's about whether the changes Apple made enhance your Mac experience or hamper it. I've been using Catalina daily since just before launch day, starting with the final public beta, and the good news is that it has proven to be a solid, stable update with a number of little additions that I find quite useful.
+Compatibility check
+As with most new versions of macOS, Catalina is fairly well-supported on older hardware. If you have a MacBook Pro, MacBook Air or Mac mini from mid-2012 or later, it will work with Catalina. iMacs from late 2012 and later are supported, as is the 2013 ""trash can"" Mac Pro. All models of the 12-inch MacBook should work as well.
+Not all features work with every computer, though. Apple details all its various requirements here, but the most restrictive is probably the ""Hey Siri"" functionality. For that, you'll need a 2018 or newer MacBook Pro or Air or the iMac Pro. The rest of us will have to click the Siri button like peasants.
+On my 2018 13-inch MacBook Pro, installation was simple and straightforward. The 8GB installer downloaded quickly and the upgrade was all over after about 45 minutes. It's not exactly quick, but take a lunch break and enjoy being away from the screen for a bit.
+Updated apps galore
+
+
+
+If you use Apple's built-in applications, Catalina will feel like a significant change. Just as with iOS 13, Notes, Reminders and Photos have all received significant upgrades -- especially the latter two. For years, Reminders has been about the most basic task list you could imagine, but now it's been entirely rebuilt. There are new ""smart lists"" that show everything due today, scheduled for the future, items you've flagged or just everything you've ever added. Reminders also supports sub-tasks for the first time, and there are new ""quick add"" buttons to tack on due dates or locations.
+Before, Reminders had a single ""shared"" list that synced between you and other family members, but now you can share any list with anyone who has an Apple ID. Reminders is also better integrated with Apple's other apps. For example, you can set a reminder to show up when you're messaging a specific person, and Siri is better at recognizing natural language to set due dates when you're adding a to-do with your voice. Finally, you can add attachments, so if there are specific files that go along with a task, you can keep them close at hand.
+All told, this is a significant -- and sorely needed -- update. The new Reminders isn't quite as robust as other options like Things or Todoist, but it's far more capable than it was before and probably will be enough for most users.
+Apple Notes, by contrast, has been a surprisingly good app for a few years now, so changes in Catalina aren't nearly as significant. There's a gallery-style view that shows your notes as thumbnails. If you mostly just use Notes for text, that won't be terribly useful -- but if you store scans, sketches from an iPad, links, photos or any other more visual content, the gallery view is good for quickly finding what you're looking for. Other changes include improved sharing and search. These don't fundamentally change the app, but they're good improvements nonetheless.
+
+
+
+Photos was a pretty full-featured app as it was, but it still received a notable update. Even then, it's mostly a visual change. As in iOS 13, you can now drill down through your photos from a high-level yearly view into months, which show a handful of collections based on different locations. From there, a more detailed day-level view provides a curated gallery of significant shots. It's a nice way to browse highlights in your collection without having to look at every single capture (though of course there's still an ""all photos"" view).
+Music, TV and Podcasts
+
+
+
+Yup, iTunes is dead. And it's been removed entirely from Catalina. But, as expected, just about all of its features are intact. (So, is it really dead?) They're just split across three different apps: Music, TV and Podcasts. Whether or not you have an Apple Music subscription, the Music app should be quite familiar. The left navigation area contains all your playlists as well as buttons to view your library by artist, song or album. If you're an Apple Music subscriber, you'll also see links to the For You, Browse and Radio sections of the service. Finally, you can also access the iTunes Music Store if you turn it on in preferences.
+If you had a massive iTunes library, the good news is that most of that app's nerdier music organization features are still here. You can still make smart playlists, give songs five-star ratings, adjust metadata and artwork and more. I have a pretty large MP3 library I've built over the years, but I'm also an Apple Music subscriber, so it's great for me to be able to have both those options fully integrated. That said, if you didn't like how iTunes worked, Music isn't radically different. It's a single-purpose app, but its design and organization philosophy is essentially unchanged.
+The TV app will be familiar to anyone who has used an Apple TV. Just as iTunes did, the app plays back movies and TV shows you've purchased and rented from the iTunes Store. And, like the Apple TV, the app also has a ""watch now"" area that attempts to bring together content you're watching from iTunes alongside things from various Apple TV ""channels"" like Showtime, HBO, Starz, CBS All Access and more. Apple and others have long tried to pull together a unified vision of the many things we watch across various services, but it's still not there, mostly because major players like Hulu and Netflix aren't supported. For now, I imagine most people will pop the app open to watch their iTunes movie and TV collection (or try out Apple TV+) and otherwise do most of their viewing through Netflix in a web browser.
+Podcasts requires the least explanation; if you've used the Podcast app on iOS, you'll be right at home. It syncs everything across devices, so iPhone users who want to listen to podcasts on their Mac can still do that, just as they could in iTunes.
+Apple Arcade
+
+
+
+We've written about Apple Arcade already, and the basics apply to the Mac as well as iOS devices. Five dollars a month gets you access to more than one hundred games that work offline or online. Some games hit iOS first and the Mac a bit later, while others haven't yet made the transition (and it's not clear they ever will). But even with the catalog not being a one-to-one match, I've found plenty to play. Many of these games were built first for touchscreens, but everything I've tried -- from fast-paced titles Sayonarra Wild Hearts and Skate City to more relaxed titles like Mini Motorways and Where Cards Fall -- has worked with a PS4 controller hooked up by Bluetooth. Just note that they all make my laptop run hot and do a real number on the battery.
+Sidecar
+
+
+
+Apple
+
+
+For years, there have been apps that let you use an iPad as an external display for your Mac, but Sidecar makes this process dead simple. There's an area in preferences that automatically detects any compatible iPads on your local network that use your Apple ID. For me, connecting several different iPads worked without a hiccup. Once you're connected, you can use an iPad in Sidecar mode in a few ways. The most basic is just as a small external display, which is both handy but also slightly confusing. That's mostly because in display mode, the touchscreen isn't active, so I had to fight my natural urge to reach up and tap on the iPad and use my mouse instead.
+You can interact with the iPad using an Apple Pencil, though, if that appeals to you. You can also swipe up from the bottom of the iPad to return to the native iPad interface and quickly switch back to using it as a tablet; Sidecar keeps running as if it's any other iPad app. It's handy in a pinch and I can see myself using it to extend my screen real estate when I'm traveling.
+Perhaps more intriguing is the ability to use an iPad and Apple Pencil to work directly with apps like Photoshop, Illustrator, Affinity Photo, Final Cut Pro and others. Unfortunately, I'm not much of an artist and I didn't have any compatible apps to really try this out. But, you can drag any app that supports a stylus, like Adobe Illustrator, over to the iPad screen and start drawing away.
+There's also a few new features in macOS called Continuity Sketch and Continuity Markup. Sketch lets you create a drawing on the iPad that is then inserted into a Notes or Pages document. Markup lets you open up a photo or document and draw on it with the Pencil, the same way you can natively on the iPad. Both are handy if you want to edit files or notes you're working with on a Mac with an Apple Pencil. And for more advanced artists, I imagine many people will appreciate the ability to essentially bring the Apple Pencil experience to drawing apps on the Mac.
+32-bit app support and Catalyst apps
+
+
+
+You may recall a bit of drama about app compatibility when Catalina arrived. Long story short, the new version of macOS removes support for older 32-bit apps, including things like Microsoft Office 2011 and earlier versions of popular Adobe apps like Photoshop and Illustrator. If you didn't know this was coming, it certainly could be an unpleasant surprise. That said, Apple announced that the previous version of macOS, Mojave, would be the last to support 32-bit apps back in June of 2018. Since then, you'd get a warning when you launched an old app that it wouldn't be supported in the future. Furthermore, when you start installing Catalina, the OS checks if you have any incompatible apps and puts up a warning before you proceed with the installation; you can still back out at that point. So, honestly, not sure how you missed it.
+Of course, none of that was ever going to quell the backlash incubator that is the internet. But the good news is this shouldn't be a problem for most users. Before updating, you can check and see if you have any apps that won't work in Catalina by running the ""System Information"" app and seeing what, if anything, comes up under the ""legacy software"" menu.
+
+
+
+Some DJ software also didn't work out of the box with Catalina, but not because of the 32-bit issue. Apps that relied on an iTunes library had to be upgraded to work in Catalina's new Music app, which replaces iTunes. Serrato's DJ Pro, DJ Lite and Studio apps didn't work for a few weeks but were recently updated with full Catalina support.
+This was understandably frustrating to Mac users who had to deal with some compatibility breaks, but chances are most people won't run into these issues. Just check and make sure your mission-critical software is supported before updating. And that's something you should do before updating any computer's operating system.
+There's another change to apps in Catalina: For the first time, third-party developers can build ""Catalyst"" apps. Apple announced Catalyst at WWDC 2018 as a way to make it easy for developers to bring iPad apps to the Mac. Apple itself released the first ones with macOS Mojave: News, Home, Stocks and Voice Memos. But now, the first from third-party developers have hit the App Store.
+Probably the most significant is Twitter, which has returned to the Mac after it unceremoniously killed off its standalone Mac app in early 2018. Like Apple's first batch of Catalyst apps, Twitter is... fine. Twitter actually included a robust set of keyboard shortcuts and menus that make it feel a lot more native to the Mac than Apple's own apps. If you've used the official Twitter app on your iPhone or iPad, you'll be right at home. It's even smart enough to expand to a three-column view to include trends and a search bar if you resize it to use more of your screen.
+Right now, I can't say there are many other compelling Catalyst apps out there from big-name developers yet. That'll surely change, but we're very much in the early days. I will say it's disappointing that Apple's own Catalyst apps haven't really changed since last year. They were very bare-bones and basic on Mojave, and that's still the case here. You'd think Apple would lead the way with showing how to make these apps feels native to the Mac.
+Wrap-up
+
+
+
+Apple
+
+
+As with most macOS updates, there's almost no reason not to upgrade to Catalina. It's stable, free and has a nice set of new features that don't fundamentally change how the Mac works. That said, because of potential app compatibility issues, users should exercise a little more caution than in years past. On the other hand, it's easy enough to see if you're good to go. So, assuming all the software you need will work, go ahead and upgrade. Apple is laying some groundwork here, particularly with Catalyst apps, but right now the experience of using a Mac hasn't changed significantly.
+
+
+"

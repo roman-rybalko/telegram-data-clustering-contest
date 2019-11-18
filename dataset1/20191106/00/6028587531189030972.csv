@@ -1,0 +1,124 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+5 Lessons in Digital Transformation From Brazil’s Retail Giant - Magalu
+06 Nov 2019 by John Rethans
+Lauded as “the Amazon of Brazil,” retailer Magazine Luiza, or Magalu, has cemented itself as one of the most spectacular digital transformation success stories in any industry. 
+
+
+Able to move faster, Magalu in 2016 launched a digital marketplace that enables third parties to sell under its banner.Getty
+
+From launching an online marketplace to speeding up deliveries with an Uber-like service, the company has aggressively harnessed technology to better serve its customers—and customers have responded, helping the company’s fortunes to skyrocket. Between January 2015 and summer 2019, Magalu’s stock price increased more than 18,000% in value—eye-popping in any context and truly remarkable given that Brazil was suffering its worst recession in history when Magalu’s rally started. 
+Less than a decade ago, few would have predicted this meteoric rise. Then known as Magazine Luiza, the company was a primarily a brick-and-mortar retailer beset by unstable economic conditions and increased pressure from digitally-native competitors. 
+How did the company transform itself so quickly? Here are five observations to help enterprise leaders apply lessons from Magalu’s success to accelerate their own businesses.
+
+Change comes from the top 
+
+Magalu CEO Federico Trajano’s vision has never been about single mobile apps or digital initiatives but rather transforming all processes, from application development to logistics, operations, marketing, and sales. 
+“Technology [must move] from the background to center stage — and [be] seen as the brain of the business,” he stated in the company’s Q4 2016 earning statement. “Hierarchical structures, paralyzed by excessive bureaucracy, the fear of change and attachment to past successes, usually strongly reject the digital culture.”
+This top-down approach is crucial because digital transformation involves culture and process changes as much as technology deployments. Employees concerned about how change can affect their careers may need to be reassured and retrained. Incentives and KPIs will need to be redefined. Silos will need to be broken. Vision statements that connect technology investments to organizational changes and new business strategies will need to be created. Without a clear vision and mandate from the C-Suite, an enterprise may be able to churn out run-of-the-mill apps or digitize the status quo—but to transform how a business operates, interacts with customers and suppliers, and makes money, requires change from the top.    
+
+Innovators need room to innovate
+
+Harnessing technology to transform a business starts with developers. Trajano addressed this need by establishing Luizalabs, an innovation team that began in 2012 with a handful of developers in an office but has since grown to more than 900 employees who occupy four buildings in two states. 
+Crucially, Trajano gave these developers access to the company’s core business systems, rather than sequestering them in an innovation lab to work on moonshots. He also freed Luizalabs from the company’s heavy governance processes, enabling them to operate more like a start-up, produce results faster, and create a blueprint to scale new approaches throughout the organization. 
+“The idea was to try to break the entire system — to show that it’s possible to have IT close to the business guys,” said Magalu CTO Andre Fatala, who has led Luizalabs from the beginning. “Before, there were very heavy processes. It would take two months to get all the information.” 
+By adopting modern agile development techniques and the automated, self-service, and lighter-touch governance and security tools that go with them, Luizalabs helped Magalu to dramatically accelerate its pace of innovation: instead of taking months or years, new digital products and experiences could be rolled out in just weeks or days. 
+
+IT agility is a precondition to business agility
+
+To enable agile development and speed up delivery of new digital products and experiences, Magalu needed the ability to modularly mix and match its business capabilities. The problem was, its IT systems were largely defined by older, monolithic development approaches that tightly coupled functionality. This made functionality hard to update or reuse and often precluded developers from working without getting in one another’s way. 
+Simultaneously shifting the entire company to new methods wasn’t practical, so Magalu adopted a two-speed IT approach to first accelerate the customer-facing parts of the business, then phase in new approaches elsewhere. This involved using application programming interfaces, or APIs, to decouple back-end systems from the front-end. 
+APIs make business data and functionality available by abstracting backend complexity behind a consistent and reusable interface. This enabled Magalu’s front-end developers to quickly begin iterating on end user experiences while back-end teams maintained system of records and adapted to new IT architectures at their own pace.
+“In 2013 we had an e-commerce platform, and even a library of APIs, but those APIs were accessing an overstretched backend application built with 150,000 lines of code,” CTO Fatala said in a Google Cloud blog post. “Deployment of new APIs was slow, we were burdened with undesirable dependencies, and we faced scalability challenges as well as distributed responsibilities across siloed teams,” 
+The two-speed approach evolved into a microservices-based architecture in which applications are assembled from many small, independently deployable services rather than built from tightly-coupled, monolithic blocks of code. By exposing the services via APIs, the company made them easy for developers to use, and by employing API management, Magalu could control how and by whom APIs were accessed, all while generating analytics into usage of its business functionality. 
+
+Digital platforms unlock new business strategies 
+
+Able to move faster, Magalu in 2016 launched a digital marketplace that enables third parties to sell under its banner. The marketplace replaced a legacy integrated sales and distribution system that supported fewer than 50,000 SKUs and dramatically expanded the company’s e-commerce inventory. It eclipsed 1 million SKUs by late 2017 and now includes more than 8,000 sellers who offer 7.5 millions SKUs. 
+Because the marketplace is powered by APIs, Magalu absorbs virtually no marginal cost each time a new merchant joins—and the company’s IT tools help it to curate this ecosystem by harnessing intelligent monitoring and automation to remove merchants who break rules. 
+Other new customer experiences included Lu, a virtual influencer that uses artificial intelligence to help shoppers find products—and the company’s ambitions only continue to grow. 
+“We are not only building an app, but rather a ‘superapp’: a digital environment where customers can go shopping, pay bills, top-up their mobile phones, hire transportation services, buy lunch,” Trajano said in Magalu’s Q4 2018 earning statement. “By attracting partners to the superapp environment we will increase our chances of attracting new customers, whose interactions with the company will be even more frequent and meaningful.”
+
+Digital transformation transforms how an enterprise operates, not just its customer-facing experiences
+
+Online marketplaces and other customer-facing digital experiences are a huge piece of the digital transformation puzzle—but Trajano recognized that to truly support and continue such innovations, the entire organization required a digital overhaul. For example, great digital experiences may fall flat if frontline employees can’t provide similarly satisfying experiences. Consequently, Magalu launched apps to help in-store employees optimize customer interactions around local inventory, accept payments anywhere inside a store without forcing customers to wait in a line, and guide a customer through digital credit verification. 
+Magalu has even leveraged its technology to improve delivery times for items bought online and to facilitate simpler in-store pickup. Thousands of contract delivery drivers use a Magalu app in a rideshare-like model.
+
+Final thoughts: Technology is a road to change, not change in and of itself
+
+Magalu’s success demonstrates that digital transformation is not about any single technology so much as using technology to keep up with today’s customers. When enterprises focus on cloud or machine learning or other finite technological concepts, their IT investments risk falling short of real transformation, amounting to modest efficiency gains but few evolutions in how the business interacts with partners and customers. Technology is a means to an end, not an end in and of itself—and if distinction is not at the root of a business’s digital transformation vision, success stories such as Magalu’s may be out of reach.
+
+
+",en,"
+
+
+
+
+
+
+
+
+
+
+
+5 Lessons in Digital Transformation From Brazil’s Retail Giant - Magalu
+06 Nov 2019 by John Rethans
+Lauded as “the Amazon of Brazil,” retailer Magazine Luiza, or Magalu, has cemented itself as one of the most spectacular digital transformation success stories in any industry. 
+
+
+Able to move faster, Magalu in 2016 launched a digital marketplace that enables third parties to sell under its banner.Getty
+
+From launching an online marketplace to speeding up deliveries with an Uber-like service, the company has aggressively harnessed technology to better serve its customers—and customers have responded, helping the company’s fortunes to skyrocket. Between January 2015 and summer 2019, Magalu’s stock price increased more than 18,000% in value—eye-popping in any context and truly remarkable given that Brazil was suffering its worst recession in history when Magalu’s rally started. 
+Less than a decade ago, few would have predicted this meteoric rise. Then known as Magazine Luiza, the company was a primarily a brick-and-mortar retailer beset by unstable economic conditions and increased pressure from digitally-native competitors. 
+How did the company transform itself so quickly? Here are five observations to help enterprise leaders apply lessons from Magalu’s success to accelerate their own businesses.
+
+Change comes from the top 
+
+Magalu CEO Federico Trajano’s vision has never been about single mobile apps or digital initiatives but rather transforming all processes, from application development to logistics, operations, marketing, and sales. 
+“Technology [must move] from the background to center stage — and [be] seen as the brain of the business,” he stated in the company’s Q4 2016 earning statement. “Hierarchical structures, paralyzed by excessive bureaucracy, the fear of change and attachment to past successes, usually strongly reject the digital culture.”
+This top-down approach is crucial because digital transformation involves culture and process changes as much as technology deployments. Employees concerned about how change can affect their careers may need to be reassured and retrained. Incentives and KPIs will need to be redefined. Silos will need to be broken. Vision statements that connect technology investments to organizational changes and new business strategies will need to be created. Without a clear vision and mandate from the C-Suite, an enterprise may be able to churn out run-of-the-mill apps or digitize the status quo—but to transform how a business operates, interacts with customers and suppliers, and makes money, requires change from the top.    
+
+Innovators need room to innovate
+
+Harnessing technology to transform a business starts with developers. Trajano addressed this need by establishing Luizalabs, an innovation team that began in 2012 with a handful of developers in an office but has since grown to more than 900 employees who occupy four buildings in two states. 
+Crucially, Trajano gave these developers access to the company’s core business systems, rather than sequestering them in an innovation lab to work on moonshots. He also freed Luizalabs from the company’s heavy governance processes, enabling them to operate more like a start-up, produce results faster, and create a blueprint to scale new approaches throughout the organization. 
+“The idea was to try to break the entire system — to show that it’s possible to have IT close to the business guys,” said Magalu CTO Andre Fatala, who has led Luizalabs from the beginning. “Before, there were very heavy processes. It would take two months to get all the information.” 
+By adopting modern agile development techniques and the automated, self-service, and lighter-touch governance and security tools that go with them, Luizalabs helped Magalu to dramatically accelerate its pace of innovation: instead of taking months or years, new digital products and experiences could be rolled out in just weeks or days. 
+
+IT agility is a precondition to business agility
+
+To enable agile development and speed up delivery of new digital products and experiences, Magalu needed the ability to modularly mix and match its business capabilities. The problem was, its IT systems were largely defined by older, monolithic development approaches that tightly coupled functionality. This made functionality hard to update or reuse and often precluded developers from working without getting in one another’s way. 
+Simultaneously shifting the entire company to new methods wasn’t practical, so Magalu adopted a two-speed IT approach to first accelerate the customer-facing parts of the business, then phase in new approaches elsewhere. This involved using application programming interfaces, or APIs, to decouple back-end systems from the front-end. 
+APIs make business data and functionality available by abstracting backend complexity behind a consistent and reusable interface. This enabled Magalu’s front-end developers to quickly begin iterating on end user experiences while back-end teams maintained system of records and adapted to new IT architectures at their own pace.
+“In 2013 we had an e-commerce platform, and even a library of APIs, but those APIs were accessing an overstretched backend application built with 150,000 lines of code,” CTO Fatala said in a Google Cloud blog post. “Deployment of new APIs was slow, we were burdened with undesirable dependencies, and we faced scalability challenges as well as distributed responsibilities across siloed teams,” 
+The two-speed approach evolved into a microservices-based architecture in which applications are assembled from many small, independently deployable services rather than built from tightly-coupled, monolithic blocks of code. By exposing the services via APIs, the company made them easy for developers to use, and by employing API management, Magalu could control how and by whom APIs were accessed, all while generating analytics into usage of its business functionality. 
+
+Digital platforms unlock new business strategies 
+
+Able to move faster, Magalu in 2016 launched a digital marketplace that enables third parties to sell under its banner. The marketplace replaced a legacy integrated sales and distribution system that supported fewer than 50,000 SKUs and dramatically expanded the company’s e-commerce inventory. It eclipsed 1 million SKUs by late 2017 and now includes more than 8,000 sellers who offer 7.5 millions SKUs. 
+Because the marketplace is powered by APIs, Magalu absorbs virtually no marginal cost each time a new merchant joins—and the company’s IT tools help it to curate this ecosystem by harnessing intelligent monitoring and automation to remove merchants who break rules. 
+Other new customer experiences included Lu, a virtual influencer that uses artificial intelligence to help shoppers find products—and the company’s ambitions only continue to grow. 
+“We are not only building an app, but rather a ‘superapp’: a digital environment where customers can go shopping, pay bills, top-up their mobile phones, hire transportation services, buy lunch,” Trajano said in Magalu’s Q4 2018 earning statement. “By attracting partners to the superapp environment we will increase our chances of attracting new customers, whose interactions with the company will be even more frequent and meaningful.”
+
+Digital transformation transforms how an enterprise operates, not just its customer-facing experiences
+
+Online marketplaces and other customer-facing digital experiences are a huge piece of the digital transformation puzzle—but Trajano recognized that to truly support and continue such innovations, the entire organization required a digital overhaul. For example, great digital experiences may fall flat if frontline employees can’t provide similarly satisfying experiences. Consequently, Magalu launched apps to help in-store employees optimize customer interactions around local inventory, accept payments anywhere inside a store without forcing customers to wait in a line, and guide a customer through digital credit verification. 
+Magalu has even leveraged its technology to improve delivery times for items bought online and to facilitate simpler in-store pickup. Thousands of contract delivery drivers use a Magalu app in a rideshare-like model.
+
+Final thoughts: Technology is a road to change, not change in and of itself
+
+Magalu’s success demonstrates that digital transformation is not about any single technology so much as using technology to keep up with today’s customers. When enterprises focus on cloud or machine learning or other finite technological concepts, their IT investments risk falling short of real transformation, amounting to modest efficiency gains but few evolutions in how the business interacts with partners and customers. Technology is a means to an end, not an end in and of itself—and if distinction is not at the root of a business’s digital transformation vision, success stories such as Magalu’s may be out of reach.
+
+
+"

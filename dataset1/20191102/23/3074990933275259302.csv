@@ -1,0 +1,220 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+[인터뷰] 데이비드 킴, ""디아블로4의 스토리는 엄청나게 거대하다""
+02 Nov 2019, 23:41 by 정재훈 기자
+디아블로4가 공개되고 하루가 지난 블리즈컨 2019의 이튿날, 디아블로4의 핵심 개발자들을 만나 게임에 대한 여러 의문을 해소할 기회를 얻을 수 있었다. 인터뷰에는 스타크래프트2에서 디아블로4로 둥지를 옮긴 수석 시스템 디자이너 '데이비드 킴'과 수석 인터랙티브 아티스트인 '크리스 라이더'가 참여해 게임의 전반적인 질문을 던질 수 있었다.
+
+
+▲ '데이비드 킴' 수석 시스템 디자이너(좌)와 '크리스 라이더' 수석 인터랙티브 아티스트
+
+
+해당 인터뷰는 여러 매체 및 미디어가 참여한 공동 인터뷰로 진행되었습니다.
+
+
+Q. 먼저, 지난 1년 간 어떤 마음이었는지 들어보고 싶다.
+
+크리스 라이더: 쉬운 시기는 아니었다. 하지만 게임 개발을 하다 보면 비밀을 유지해야 하는 시기도 있고, 발표를 늦춰야 할 때도 있다. 지난 1년 또한 게임 개발 과정에서 거치는 여러 단계 중 하나라고 생각하고 있으며, 필요한 절차였을지도 모른다고 생각한다.
+
+Q. 디아블로 최초의 어두운 분위기를 살리는 과정은 어떻게 이뤄졌는가?
+
+크리스 라이더: 우리는 성역을 굉장히 오랜 기간 표현해왔고, 다양한 모습으로 성역의 어두움을 표현해왔다. 디아블로4에서 어떤 방식으로 성역을 표현해야 하는지에 대해서도 오랜 기간 논의가 있었으며, 전체적으로 디아블로1과 2를 플레이할 때 느끼는 분위기를 다시 느낄 수 있게끔 방향을 잡았다.
+
+
+
+
+Q. 지금껏 등장한 모든 디아블로 시리즈는 결국 '아이템 파밍'이라는 최종 콘텐츠로 귀결되었다. 이번 작품은 이와 차별화된 별도의 엔드 콘텐츠가 마련되어 있는가?
+
+데이비드 킴: 디아블로3와 유사하게 매 시즌마다 다양한 콘텐츠를 소개할 예정이다. 플레이어가 지루하지 않게끔 다양한 요소를 추가해나갈 예정인데, 던전이나 몬스터의 속성 변화, 새로운 아이템의 추가 등을 염두에 두고 있다. 하지만 이런 '변수'에 대한 접근 방식은 아직 완전히 정해진 바가 아니며, 여러 가지 가능성을 염두에 두고 있다.
+
+Q. 다섯 종의 캐릭터 중 셋만이 먼저 공개되었고, 아직 두 종의 캐릭터는 감춰져 있다. 결정은 되었으나 공개만 하지 않은 것인가? 아니면 결정조차 되지 않았는가?
+
+데이비드 킴: 비교적 많은 부분이 완성된 세 영웅을 먼저 선보였고, 지금은 플레이어들의 의견을 수집하는 중이다. 기존의 영웅을 원하는지, 혹은 완전히 새로운 영웅을 원하는지에 따라 어떤 캐릭터가 등장할지 결정될지도 모르겠다.
+
+
+▲ 남은 두 영웅은 아직 공개되지 않았다.
+
+
+Q. 필드 PVP가 다시 도입되었다. 정확히 어떤 메커니즘으로 이뤄지는가?
+
+데이비드 킴: 성역 내에 PVP가 가능한 공간이 구분되어 있으며, 본인 의사로 PVP 기능을 켜거나 끌 수 있다. 디아블로2와 유사한 접근법이지만, 역시 최종 확정안은 아니다. PVP에 대해서는 꾸준히 논의 중에 있다.
+
+Q. 디아블로3의 콘솔 버전에서 볼 수 있었던 대쉬 기능과 대규모 협동 콘텐츠가 눈에 띈다. 왜 이런 기능을 도입한 것인가?
+
+데이비드 킴: 대쉬 기능은 여러모로 고민하던 기능이었으나, 여러 모델을 시험해본 결과 플레이어의 조작을 요구하면서도 역동적인 전투를 만들어낼 수 있는 기능이라 생각되어 도입하게 되었다. 또한, 협동 콘텐츠의 경우 디아블로4는 거대한 크기의 오픈월드 내에서 이뤄지게 되는데, 이 세계 곳곳을 다양하게 활용할 방법의 일환으로 개발되었다.
+크리스 라이더: 월드 이벤트(협동 콘텐츠)는 성역의 광활한 크기와 규모를 보여줄 수 있는 좋은 콘텐츠라 생각하고 있다. 디아블로4는 하나의 큰 세계를 추구하기 때문에 기획 의도에 매우 적합한 콘텐츠라고 생각한다.
+
+
+
+
+Q. 디아블로2의 확장팩에서 선보인 '룬워드' 시스템이 돌아왔다. 이번 작품의 룬워드에 대해 설명해줄 수 있나?
+
+데이비드 킴: 디아블로4의 룬은 두 종류로 나뉘는데, 조건을 설정하는 '컨디션 룬'과 실제 효과인 '이펙트 룬'이 그것이다. 컨디션 룬과 이펙트 룬을 조합하면 하나의 룬워드가 나오는데, 시연 버전에서는 '포션 사용 시'라는 컨디션 룬과 '극대화 확률 증가'라는 이펙트 룬이 등장했다. 이 조합으로 룬워드를 만들 경우 포션을 사용할 때마다 극대화 확률이 증가하는 효과를 얻게 돈다.
+아직 전작과 같은 고정형 룬워드는 준비되어 있지 않지만, 아직 룬워드와 관련된 세부 콘텐츠는 초기 단계에 머물러 있는 상황이기 때문에 여러 가지 가능성을 지니고 있다. 더 많은 자세한 사안은 개발이 진행되면서 자연스럽게 알려드릴 수 있을 것 같다.
+
+Q. 3편의 물약은 쿨다운만 존재했는데, 이번 작품에서 다시 소모품으로 바뀌었다. 디아블로4가 추구하는 개발기조와 관련이 있는 변경점인가?
+
+데이비드 킴: 이건 블리자드라는 회사가 가진 재미있는 특성과 관계되어 있다. 우리는 개발 과정에서 팀 내부적으로도 다양한 피드백을 하지만, 타 개발팀과도 많은 피드백을 주고받는다. 그렇게 받은 피드백 중 하나가 생명력의 자연 회복을 제한하는 것이었는데, 꽤 강하게 주장했기 때문에 테스트 빌드를 통해 실효성을 시험하고 있었다.
+이번 데모 버전에도 마찬가지로 적용되어 있으며, 스킬이나 전설 아이템 효과를 통해 제한적으로 회복을 할 수는 있지만, 그 외의 모든 체력 회복은 생명력 물약에 의존하게 만들어져 있다. 또한, 물약을 소모품 형태로 바꿔 물약의 사용 시점을 더욱 신중하게 결정하게끔 만들어져 있다.
+
+Q. 야만용사는 이번 작품을 통해 세 작품에 연속 출전한 유일한 캐릭터가 되었다. 혹시 이번 작품의 야만용사는 전작과 비교되는 새로운 메커니즘을 가지고 있는가?
+
+데이비드 킴: 이번 작품의 야만용사는 '무기고'라는 독자적인 메커니즘을 사용한다. 야만용사는 한번에 최대 네 개의 무기를 착용할 수 있는데, 사용하는 스킬에 따라 각각 다른 무기를 꺼내 휘두르게 된다. 여기서 플레이어는 특성 투자를 통해 무기를 교체할 때마다 버프를 얻는 등의 플레이 스타일을 창출할 수 있다.
+크리스 라이더: 외관적인 변화로는 새로운 렌더링 기법을 도입해 보다 현실적인 움직임을 구현해냈다. 전작의 움직임이나 액션과는 다른, 보다 자연스럽고 현실적인 움직임을 보여준다.
+
+
+▲ 4개의 무기를 다루는 야만용사
+
+
+Q. 전작의 경우 최초 경매장이 존재했고, 이후 업데이트를 통해 폐지 수순을 겪었다. 이번 작품에서 플레이어 간 거래는 지원되는가?
+
+데이비드 킴: 경매장은 아직 논의된 바가 없으며, 현재까지는 계획에 없다. 다만 플레이어 간 거래는 기획 중에 있는데, 너무 이른 시기에 하이엔드 아이템을 거래로 획득해 게임 진척도를 끌어올릴 수 없도록 내부 시스템을 다듬어가고 있는 상황이다.
+
+Q. 전작들과 다른 디아블로4만의 게임성은 어떤 방식으로 확보할 생각인가?
+
+데이비드 킴: 아마 후속작을 개발하는 모든 개발자가 가장 고민하는 부분이 아닐까 싶다. 게이머들은 후속작에서 원작의 감성과 플레이 감각을 원하지만, 동시에 새로운 경험을 기대하기 때문이다. 우리 또한 이런 점을 잘 알고 있으며 현재로서는 전작보다 훨씬 많은 변수를 통해 게임 플레이 다양성을 확보하는 방향을 고려하고 있다.
+
+Q. 다양한 유저들과 만나 함께 진행하는 콘텐츠는 어떻게 개발하게 되었나?
+
+데이비드 킴: 디아블로4의 성역을 거대한 오픈월드로 기획하면서, 우리는 여러 오픈월드 게임에서 많은 영감을 얻었다. 하지만, 우리가 만드는 타이틀은 결국 디아블로이기 때문에 여러가지 시스템 중에서 우리와 잘 맞는 것과 그렇지 않은 것을 가려내 취사선택해야 했다. 넷 이상의 플레이어가 모이는 협동 콘텐츠의 경우 반복 플레이가 용이하고 플레이 지속력을 높일 수 있는 콘텐츠이기 때문에 이번에 선보이게 도었고, 앞으로도 다양한 협력 콘텐츠가 등장할 예정이다.
+
+
+
+
+Q. '데이비드 킴'은 스타크래프트2의 개발자로 이름이 많이 알려져있는데, 어떻게 디아블로4의 개발에 참여하게 되었나?
+
+데이비드 킴: 스타크래프트2에서 내가 해야 할 일이 슬슬 끝나갈 무렵, 앞으로 어떤 일을 해야 할지에 대해 고민하게 되었다. 여러 기회가 있었지만 무엇지 나에게 맞을지 몰라 여러 사람들과 상의한 결과, 디아블로4가 가장 매력적으로 다가왔다. 먼저, 게임의 시작을 함께할 수 있다는 메리트가 있었고, 나 스스로 RPG 게임의 굉장한 팬이기도 하다. 그래서 면접을 보고, 팀에 지원한 끝에 시스템 디자이너로 합류하게 되었다.
+
+Q. 한 개발자가 최종 레벨이 40이라는 멘트를 했다. 사실이라면 콘텐츠 볼륨이 살짝 걱정될 것 같은데, 콘텐츠 볼륨은 어느 정도인가?
+
+데이비드 킴: 40레벨이라는 숫자는 현재의 상황일 뿐, 최종 확정 사안이 아니다. 또한, 스토리 분량은 말 그대로 어마어마하다. 개발팀 내에서도 이 방대한 시나리오를 어떻게 게임 내에서 모두 표현할지에 대해 수없이 고민하고 있는 상태이다.
+
+Q. 마지막으로, 디아블로4를 응원하는 한국의 게이머들에게 남기고자 하는 말이 있다면?
+
+크리스 라이더: 디아블로4가 공개된 후, 다양한 반응이 쏟아져 나오는 것을 보았다. 디아블로4에 보내주시는 다양한 반응에 대해 기쁘게 생각하고 있으며, 긍부정을 떠나 이런 많은 피드백이 우리가 힘을 낼 수 있는 원동력이 된다. 늘 감사한 마음이다.
+데이비드 킴: 인터뷰가 나가고, 관련 기사가 나가고 하다 보면 좋은 반응만큼 쓴소리도 많으리라 예상하고 있다. 이 모든 피드백을 겸허히 받아들일 준비를 마쳤으며, 아직 출시까지 적지 않은 시간이 남은 만큼 다양한 피드백을 주시길 기대하고 있다. 개발 팀 전체가 최선을 다해 디아블로4를 완성할 수 있도록 하겠다. 모두에게 감사의 마음을 전하고 싶다.
+
+※ 11월 2일부터 11월 3일까지 미국 애너하임 컨벤션 센터에서 블리즈컨 2019이 진행됩니다. 현지 및 한국에서 작은 정보 하나까지 놓침없이 전해드리겠습니다. ▶ 인벤 블리즈컨 2019 뉴스센터: https://goo.gl/gkLqSp
+
+
+
+",ko,"
+
+
+
+
+
+
+
+
+
+
+
+[Interview] David Kim, ""Diablo 4's story is huge
+02 Nov 2019, 23:41 by Jae Hoon Jung
+On the second day of BlizzCon 2019, one day after Diablo 4 was released, we were able to meet key developers of Diablo 4 and get a chance to answer some questions about the game. The interviews included senior system designer David Kim, who moved from StarCraft II to Diablo 4, and chief interactive artist Chris Rider, who asked questions about the game.
+
+
+▲ David Kim, Senior System Designer (Left) and 'Chris Rider,' Senior Interactive Artist
+
+
+The interview was a joint interview with multiple media and media.
+
+
+Q. First, I want to hear how you have been feeling for the past year.
+
+Chris Ryder: It wasn't easy. But in game development, there are times when you need to keep a secret, and sometimes you need to delay presentation. I think it's also one of the steps in the game development process over the past year, and I think it might be necessary.
+
+Q. How was the process of bringing Diablo's first dark atmosphere to life?
+
+Chris Ryder: We've been describing the ministry for a long time, and we've expressed the darkness of the ministry in various ways. There has been a long debate over how to represent the sanctuary in Diablo 4, and the overall direction is to recreate the atmosphere of playing Diablo 1 and 2.
+
+
+
+
+Q. All Diablo series that have appeared so far result in the final content called 'Item Farming'. Does this work have separate end content?
+
+David Kim: Similar to Diablo 3, we will be presenting various content every season. Various elements will be added so that the player is not bored, but he has in mind dungeons, monsters' property changes, and the addition of new items. However, this approach to ""variables"" is not yet fully defined, and there are many possibilities in mind.
+
+Q. Only three of the five characters were released first, but the two are still hidden. Was it decided but not just released? Or wasn't it even decided?
+
+David Kim: The first three heroes, with a relatively large portion, were introduced first, and are now gathering player feedback. Depending on whether you want an existing hero or an entirely new hero, you may decide which character will appear.
+
+
+▲ The remaining two heroes have not been released yet.
+
+
+Q. Field PVP has been reintroduced. What exactly is the mechanism?
+
+David Kim: There is a space within the sanctuary that allows for PVP, and you can turn PVP on or off at your disposal. A similar approach to Diablo 2, but also not a final decision. PVP is under constant discussion.
+
+Q. The dash features and massive cooperative content found in the console version of Diablo 3 are noticeable. Why did you introduce this feature?
+
+David Kim: The Dash feature was a feature that I thought about in many ways, but after experimenting with different models, I thought it was a feature that could create a dynamic battle while requiring player control. In addition, for cooperative content, Diablo 4 will be carried out in a huge open world, developed as a way of utilizing various parts of the world.
+Chris Ryder: I think the World Event (collaborative content) is good content to show the vast size and size of the sanctuary. Diablo 4 is a great content for planning purposes because it pursues one big world.
+
+
+
+
+Q. The Runeword system from Diablo 2's expansion pack is back. Can you explain the runeword of this piece?
+
+David Kim: Diablo 4's runes are divided into two types: conditional runes that set conditions and effect runes that are the actual effects. Combination of the condition runes and effect runes yields a rune word, and in the demo version, there is a condition run called 'When using potions' and an effect rune called 'Maximized probability of increase'. If you create a runeword with this combination, each time you use a potion, you will increase the chance of maximization.
+There are no fixed runewords like the previous ones, but there are many possibilities because the details related to the runeword are still in their infancy. More details are likely to come naturally as development progresses.
+
+Q. The three potions only had a cooldown, but this time they were replaced with consumables. Are the changes related to the development stance Diablo 4 is pursuing?
+
+David Kim: This is related to the interesting traits of a company called Blizzard. We give a lot of feedback within the team during the development process, but we also get a lot of feedback from other development teams. One of the feedbacks I received was to limit the natural recovery of vitality, which I argued quite strongly, testing for effectiveness through test builds.
+The same applies to this demo version, with limited recovery through skills and legendary item effects, but all other health relies on health potions. In addition, the potion is made to change the consumable form to determine the use time of the potion more carefully.
+
+Q. The barbarian became the only character in three consecutive films. Does the barbarian of this work have a new mechanism compared to the previous work?
+
+David Kim: The barbarian in this film uses a unique mechanism called 'weapons'. Barbarians can wear up to four weapons at a time, depending on the skill they are using and wielding different weapons. Here, players can create play styles such as earning a buff every time a weapon is changed by investing a talent.
+Chris Ryder: In terms of cosmetic changes, we introduced new rendering techniques to make the movements more realistic. It shows a more natural and realistic movement that is different from the previous movement or action.
+
+
+A barbarian handling four weapons
+
+
+Q. In the case of the previous work, the first auction house existed, and the update was followed by the abolition process. Is player-to-player trading supported in this work?
+
+David kim: The auction house hasn't been discussed yet and hasn't been planned yet. However, transactions between players are in the planning stage, and the internal system is being refined so that it is not possible to increase the progress of the game by acquiring high-end items as transactions at an early stage.
+
+Q. How will you secure the gameplay of Diablo 4 and other previous games?
+
+David Kim: Probably the biggest concern for every developer developing a sequel. Gamers want the original sensibility and sense of play in their sequel, but at the same time expect a new experience. We are also aware of this and are currently considering a way to secure gameplay diversity through far more variables than our predecessors.
+
+Q. How did you develop the content that you meet with various users?
+
+David Kim: In planning Diablo 4's Sanctuary as a huge open world, we've been inspired by many OpenWorld games. However, since the title we are making is Diablo, we had to choose from a variety of systems that matched us well and which didn't. Cooperative content, which is gathered by four or more players, has been shown to be easy to play repeatedly and can increase play duration, and various cooperative contents will be introduced in the future.
+
+
+
+
+Q. 'David Kim' is well known as a developer of StarCraft II. How did you become involved in the development of Diablo 4?
+
+David kim: By the end of my work in StarCraft II, I was thinking about what to do next. There were many opportunities, but I didn't know what might be right for me and after consulting with others, Diablo 4 was the most attractive. First of all, there was a merit of being able to start the game together, and I am a big fan of RPG games myself. So after interviewing and applying to the team, I joined as a system designer.
+
+Q. A developer mentioned that the final level is 40. If that's true, you might be a bit worried about the content volume.
+
+David Kim: The level 40 is a current situation, not a final decision. Also, the story volume is literally huge. Even within the development team, there are countless questions about how to represent this vast scenario in-game.
+
+Q. Finally, what would you say to Korean gamers supporting Diablo 4?
+
+Chris Ryder: After Diablo 4 was released, I saw a lot of reaction. We are pleased with the various reactions you send to Diablo 4 and, apart from being negative, many of these feedbacks are our driving force. I am always thankful.
+David kim: I expect the interviews and the articles to be as bitter as a good response. We are ready to humbly accept all of this feedback, and we look forward to your feedback as there is not much time left for release. The entire development team will do their best to complete Diablo 4. I want to thank everyone.
+
+※ BlizzCon 2019 will be held at the Anaheim Convention Center in the US from November 2 to November 3. We will deliver the smallest information from local and Korean. ▶ Inventory BlizzCon 2019 News Center: https://goo.gl/gkLqSp
+
+
+
+"

@@ -1,0 +1,38 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Blender Developer Notes: 4 November 2019
+05 Nov 2019, 19:00 by Bart Veldhuizen
+Dalai writes:
+Announcements ● Embark Studios joins  the Blender Foundation Development Fund  as gold level sponsor.Blender 2.81 ● At beginning of meeting still 15 issues on the bcon3:bugs track of the workboard  for 2.81. With release coming in closer developers are asked to pay attention to it.● Nathan Letwory aired the idea to maybe bump the release date a week, but will be discussing this with Dalai Felinto still and write the bf-committers list about it.● Module owners specifically are asked to check if the current items on the bugs track are absolutely necessary for 2.81.● Philipp Oeser checks if Dynamic Paint issue T62882 can be postponed.Blender 2.82 ● With the main focus being on 2.81 release there were no items raised during the dev meeting.New Features and Changes Blender 2.81 ● Keymap: Use Ctrl-F2 for batch rename ( Campbell Barton ).● UI: Add icon for drawing space key ( Campbell Barton ).● UI: Add old hotkeys to set start and end in timeline to the Blender 27x keymap ( Philipp Oeser ).● UV Editor: Add missing options to proportional editing falloff in uv editor ( Germano Cavalcante ).● UI: Toggle between play and pause icons in preview rendering ( Philipp Oeser ).● Cycles: Get OptiX devices ( Brecht Van Lommel ).● GPencil: Show selection in Stroke Mode for single points ( Antonio Vazquez ).● Paint: Option to disable antialiasing ( Pablo Dobarro ).● VSE: Show Seconds available in View menu ( Campbell Barton ).master ● UI: Hovering over UI elements now more consistent and further reaching ( Harley Acheson ).● Keymap: Maps bundled with Blender can no longer be deleted by the user ( Sebastion Parborg ).● VSE: Use all selected strips for Select Side operator ( Alessio Monti di Sopra ,  Campbell Barton ).● VSE: Set frame range added to Strips operator ( Alessio Monti di Sopra ,  Richard Antalik ).● Solidify Modifier: support non-manifold input ( Henrik Dick ,  Campbell Barton ).Weekly Reports ● Campbell Barton ● Germano ● Jacques ● Jeroen ● Julian ● Nathan ● Sybren ● Pablo Dobarro ● Philipp Oeser ● Sebastián Barschkis ● Sebastian Parborg ● Sergey Sharybin 
+
+
+",en,"
+
+
+
+
+
+
+
+
+
+
+
+Blender Developer Notes: 4 November 2019
+05 Nov 2019, 19:00 by Bart Veldhuizen
+Dalai writes:
+Announcements ● Embark Studios joins  the Blender Foundation Development Fund  as gold level sponsor.Blender 2.81 ● At beginning of meeting still 15 issues on the bcon3:bugs track of the workboard  for 2.81. With release coming in closer developers are asked to pay attention to it.● Nathan Letwory aired the idea to maybe bump the release date a week, but will be discussing this with Dalai Felinto still and write the bf-committers list about it.● Module owners specifically are asked to check if the current items on the bugs track are absolutely necessary for 2.81.● Philipp Oeser checks if Dynamic Paint issue T62882 can be postponed.Blender 2.82 ● With the main focus being on 2.81 release there were no items raised during the dev meeting.New Features and Changes Blender 2.81 ● Keymap: Use Ctrl-F2 for batch rename ( Campbell Barton ).● UI: Add icon for drawing space key ( Campbell Barton ).● UI: Add old hotkeys to set start and end in timeline to the Blender 27x keymap ( Philipp Oeser ).● UV Editor: Add missing options to proportional editing falloff in uv editor ( Germano Cavalcante ).● UI: Toggle between play and pause icons in preview rendering ( Philipp Oeser ).● Cycles: Get OptiX devices ( Brecht Van Lommel ).● GPencil: Show selection in Stroke Mode for single points ( Antonio Vazquez ).● Paint: Option to disable antialiasing ( Pablo Dobarro ).● VSE: Show Seconds available in View menu ( Campbell Barton ).master ● UI: Hovering over UI elements now more consistent and further reaching ( Harley Acheson ).● Keymap: Maps bundled with Blender can no longer be deleted by the user ( Sebastion Parborg ).● VSE: Use all selected strips for Select Side operator ( Alessio Monti di Sopra ,  Campbell Barton ).● VSE: Set frame range added to Strips operator ( Alessio Monti di Sopra ,  Richard Antalik ).● Solidify Modifier: support non-manifold input ( Henrik Dick ,  Campbell Barton ).Weekly Reports ● Campbell Barton ● Germano ● Jacques ● Jeroen ● Julian ● Nathan ● Sybren ● Pablo Dobarro ● Philipp Oeser ● Sebastián Barschkis ● Sebastian Parborg ● Sergey Sharybin 
+
+
+"

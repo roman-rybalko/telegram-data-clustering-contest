@@ -1,0 +1,140 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+GIGABYTE GeForce GTX 1660 SUPER Gaming OC, la recensione
+La recensione della GIGABYTE GeForce GTX 1660 SUPER Gaming OC ci mette di fronte a un modello dalle frequenze più spinte.
+02 Nov 2019 by Mattia Armani
+Indice
+
+
+Qualità costruttiva, connettività e novità software
+
+
+Prestazioni, overclock e temperature
+
+
+Commento
+
+
+La recensione della GIGABYTE GeForce GTX 1660 SUPER Gaming OC ci mette a confronto con una versione da tre ventole della nuova GPU di fascia media NVIDIA, lanciata direttamente costruttori vista l'assenza di una Founders Edition. Il cuore della GPU è il chip TU116 ed è lo stesso, caratterizzato da 1408 CUDA core, della GTX 1660 liscia, una GPU con cui questa nuova versione condivide anche le frequenze reference, sempre 1530Mhz di base e 1785MHz in boost, e la potenza nominale che ammonta sempre a 5TFLOPS FP32 e 5TOPS INT32. Può però contare su memorie GDDR6 a 14Gbps, combinate con un bus da 192-bit, che portano la banda passante da 192.1GB/sec a 336GB/sec lasciano libera di esprimersi una GPU che nella versione base risulta inevitabilmente castrata dall'uso di GDDR5 a 8Gbps. Un bel salto, dunque, per una scheda che per quanto riguarda la velocità della memoria supera anche la GTX 1660 Ti, ferma a 12Gbps e 288.1GB/sec.
+
+
+
+
+Qualità costruttiva, connettività e novità software
+La GeForce GTX 1660 SUPER, dicevamo, è una classica scheda Turing, senza tecnologie RTX, che monta il medesimo chip della versione base, ma arriva a 125W di consumo, anche se di soli 5W accontentandosi di un connettore ausiliario da 8-pin, e risulta più costosa della GTX 1660 a causa della memoria GDDR6 a 14Gbps. Promette però prestazioni commisurate all'aumento del prezzo consigliato che, almeno su carta e per le versioni base, è di 250 euro. Sappiamo infatti fin troppo bene che le schede video custom sono soggette a forti variazioni a seconda della tecnologia impiegata, dei rapporti con la casa madre e delle politiche aziendali, anche se in questo caso possiamo sperare che una volta superato il lancio, e gli inevitabili rincari, il prezzo si avvicini a quello consigliato, come abbiamo già visto succedere con i passati modelli GIGABYTE Gaming. D'altronde non parliamo di una linea di lusso anche se siamo di fronte a un modello equipaggiato di tutto punto con tre ingressi DiplayPort, una porta HDMI, ben tre ventole, un'armatura in plastica discretamente resistente e una sorta di backplate, sempre in plastica, che protegge il retro della scheda aggiungendo qualche apprezzabile fregio a un'estetica che si fa notare giusto per il logo illuminato. Non dobbiamo segnalare nessun particolare sacrificio, comunque, nonostante si tratti di una GPU che mira esplicitamente a limitare i costi di produzione, equipaggiando il medesimo chip della sorella minore.
+
+
+
+Anzi, proprio per questo che ci aspettiamo cali di prezzo piuttosto rapidi, giusto in tempo per lo shopping natalizio. Non dobbiamo invece aspettare neanche un minuto per godere dei nuovi driver dedicati alle GeForce che si sono arricchiti notevolmente con l'ottimizzazione dell'impatto sulle prestazioni del filtro image sharpening, un miglioramento della modalità low latency che include l'impostazione Ultra e ottimizzazioni anche per l'Encoder NVENC di Turing, già decisamente più efficiente di quello equipaggiato dalle GPU Pascal. Tra l'altro la tecnologia image sharpening è ora accessibile direttamente dal pannello di controllo NVIDIA dove troviamo la possibilità di tarare con precisione l'intensità del filtro, la riduzione della granulosità dell'immagine e un box per attivare l'upscaling, in questo caso 5-tap e quindi superiore a quello bilineare delle vecchie GeForce. Da notare inoltre l'integrazione del supporto per i filtri Reshade sia in FreeStyle che Ansel, cosa che permette di applicare rapidamente decine di filtri sia in gioco, sia catturando immagini a definizione estrema, rendendo più accessibili le mod grafiche di una community dedicata a esaltare, trasformare e migliorare la resa di centinaia di titoli. Migliora quindi a tutto tondo il supporto software di una NVIDIA che ha risposto a tono all'evoluzione del software della concorrenza, sfruttando l'occasione per mettere in luce questa nuova GPU di fascia media che abbiamo ovviamente messo alla prova con i classici test prestazionali.
+
+
+
+
+Prestazioni, overclock e temperature
+La GIGABYTE GeForce GTX 1660 SUPER Gaming OC si accontenta del clock base stabilito da NVIDIA, fermandosi a 1530MHz, ma si spinge oltre in modalità boost, con 1860MHz che arrivano fino a 1980MHz lasciando la gestione delle frequenze in mano al software. Possiamo quindi contare su frequenze sensibilmente più alte rispetto ai modelli base, senza che questo incida sulle temperature visti i 63 gradi in gioco, dovuti anche a dimensioni più generose dovute alle tre ventole. In idle, va detto, la scheda risulta leggermente più calda, con 32 gradi, ma risulta in linea con la media con 37 gradi durante la visione di video in alta definizione o altre operazioni desktop, senza che si senta alcun rumore. In questi casi infatti le ventole restano immobili e non si attivano fino al raggiungimento dei 59 gradi, cosa che capita solo quando la scheda viene messa effettivamente sotto sforzo. Questo almeno in un normale case mid-tower, con un sistema composto da scheda madre GIGABYTE AORUS Master X570, Ryzen R5 2600X e 16GB di G.Skill Trident Royal RBG da 3600MHz con CL16 che ci hanno permesso di ottenere 6257 punti alla voce GPU del test 3DMark Time Spy, sufficienti a entrare nella scia della GTX 1660 Ti. Questa resta superiore in alcuni giochi, come The Witcher 3, ma si ritrova marcata da vicino da una GPU che supera inevitabilmente le versioni base, arrivando a quota 80fps in 1080p e 54fps in 1440p nel caso del titolo CDProject.
+
+
+
+Raggiunge invece 83fps in 1080 e 54 in 1440p con Shadow of the Tomb Radier, 84fps in 1080p e 51fps in 1440p con Rage 2, 90fps in 1080p e 61 in 1440p con Battlefield V e 60fps in 1080p e 49fps in 1440p con Metro Exodus, unico caso in cui le prestazioni non mostrano incrementi rispetto alle GTX 1660 SUPER caratterizzate da clock inferiori. In generale, comunque, le frequenze maggiori pagano, garantendo con una discreta stabilità i 144fps in 1080p con un battle royale non particolarmente ottimizzato come Apex Legends, in questo caso inevitabilmente con le impostazioni grafiche al minimo, e avvicinando la GPU ai 60fps in 1440p. In alcuni casi per raggiungere l'obiettivo sono necessari compromessi, ma l'overclock può ridurli al minimo indispensabile, con la scheda che, spingendo il core a 2040MHz e la memoria a 7500MHz, spinge The Witcher 3 fino 56fps in 1440p, toccando quota 58 con il clock portato a 2100Mhz. In questo caso la stabilità non è perfetta, ma la temperatura non supera quota 65 gradi e c'è spazio per giocare con i voltaggi in cerca di risultati migliori. Certo, per puntare al 1440p senza alcun compromesso è necessario guardare più in alto, ma con un prezzo adeguato, come anticipato speriamo il più vicino possibile ai 250 euro consigliati per i modelli base, la GIGABYTE GeForce GTX 1660 SUPER Gaming OC può senza dubbio regalare diverse soddisfazioni.
+
+
+Verdetto di Multiplayer.it:  8.7
+La GIGABYTE GeForce GTX 1660 SUPER Gaming OC si avvicina tanto alla GeForce GTX 1660 Ti da mettere in discussione la sorella maggiore, avvantaggiata in alcuni titoli ma sensibilmente più costosa, almeno su carta. Non sappiamo infatti il prezzo ufficiale di questo modello, anche se conoscendo le politiche GIGABYTE possiamo aspettarci un rincaro relativo rispetto al prezzo consigliato, con un ribasso successivo, più marcato presso determinati rivenditori, come accaduto con i modelli Gaming della serie 1660 già in commercio.
+PRO
+
+Complessivamente l'aumento di frequenze si fa sentire
+Miglioramenti software a tutto tondo
+Piuttosto silenziosa nonostante le tre ventole
+
+CONTRO
+
+Le tre ventole aumentano l'ingombro
+Tutta in plastica
+Speriamo non ci siano brutte sorprese sul prezzo
+
+
+
+
+
+
+",it,"
+
+
+
+
+
+
+
+
+
+
+
+GIGABYTE GeForce GTX 1660 SUPER Gaming OC, the review
+The review of the GIGABYTE GeForce GTX 1660 SUPER Gaming OC puts us in front of a model with higher frequencies.
+02 Nov 2019 by Mattia Armani
+Index
+
+
+Build quality, connectivity and software news
+
+
+Performance, overclock and temperature
+
+
+Comment
+
+
+The review of the GIGABYTE GeForce GTX 1660 SUPER Gaming OC compares us with a three fan version of the new mid-range NVIDIA GPU, which was launched directly by manufacturers given the absence of a Founders Edition. The heart of the GPU is the TU116 chip and it is the same, characterized by 1408 CUDA cores, of the smooth GTX 1660, a GPU with which this new version also shares the reference frequencies, always basic 1530Mhz and 1785MHz in boost, and the nominal power which always amounts to 5TFLOPS FP32 and 5TOPS INT32. However, it can count on 14Gbps GDDR6 memories, combined with a 192-bit bus, which bring the passband from 192.1GB / sec to 336GB / sec leaving a GPU free to express itself, which in the basic version is inevitably castrated by the use of GDDR5 at 8Gbps. A big leap, therefore, for a card that, with regard to memory speed, also exceeds the GTX 1660 Ti, stops at 12Gbps and 288.1GB / sec.
+
+
+
+
+Build quality, connectivity and software news
+The GeForce GTX 1660 SUPER, we were saying, is a classic Turing card, without RTX technology, which mounts the same chip as the basic version, but reaches 125W of consumption, even if only 5W, being satisfied with an auxiliary 8-pin connector, and it is more expensive than the GTX 1660 due to the GDDR6 14Gbps memory. However, it promises services commensurate with the increase in the recommended price which, at least on paper and for the basic versions, is 250 euros. In fact, we know all too well that custom video cards are subject to strong variations depending on the technology used, relations with the parent company and company policies, although in this case we can hope that once the launch is over, and the inevitable price increases , the price is close to the recommended one, as we have already seen happen with the past GIGABYTE Gaming models. On the other hand we are not talking about a luxury line even if we are dealing with a fully equipped model with three DiplayPort inputs, an HDMI port, three fans, a fairly resistant plastic armor and a sort of backplate, always in plastic, which protects the back of the card by adding some appreciable frieze to an aesthetic that stands out rightly for the illuminated logo. We must not report any particular sacrifice, however, despite the fact that it is a GPU that explicitly aims to limit production costs, equipping the same chip as the younger sister.
+
+
+
+Indeed, precisely for this reason we expect rather rapid price declines, just in time for Christmas shopping. We should not wait for even a minute to enjoy the new drivers dedicated to the GeForce that have grown noticeably with the optimization of the performance impact of the image sharpening filter, an improvement in the low latency mode that includes the Ultra setting and optimizations also for the Turing NVENC encoder, already decidedly more efficient than the one equipped with Pascal GPUs. Among other things, the image sharpening technology is now accessible directly from the NVIDIA control panel where we find the possibility of precisely calibrating the intensity of the filter, the reduction of image graininess and a box to activate upscaling, in this case 5-tap and therefore superior to the bilinear one of the old GeForce. Note also the integration of support for Reshade filters in both FreeStyle and Ansel, which allows for the rapid application of dozens of filters both in-game and by capturing extreme definition images, making the graphic mods of a community dedicated to enhancing , transform and improve the yield of hundreds of titles. Therefore, the software support of an NVIDIA that fully responds to the evolution of the competition software is improving in its entirety, taking advantage of the opportunity to highlight this new mid-range GPU that we obviously put to the test with the classic performance tests.
+
+
+
+
+Performance, overclock and temperature
+The GIGABYTE GeForce GTX 1660 SUPER Gaming OC is satisfied with the base clock established by NVIDIA, stopping at 1530MHz, but goes further in boost mode, with 1860MHz reaching up to 1980MHz leaving the frequency management in the hands of the software. We can therefore count on significantly higher frequencies than the basic models, without affecting the temperatures given the 63 degrees in play, also due to more generous dimensions due to the three fans. In idle, it must be said, the card is slightly warmer, with 32 degrees, but is in line with the average at 37 degrees when watching high-definition video or other desktop operations, without any noise being heard. In these cases, in fact, the fans remain immobile and do not activate until they reach 59 degrees, which only happens when the board is actually put under stress. This at least in a normal mid-tower case, with a system composed of a GIGABYTE AORUS Master X570 motherboard, Ryzen R5 2600X and 16GB of G.Skill Trident Royal RBG 3600MHz with CL16 that allowed us to get 6257 points under the GPU entry of 3DMark Time Spy test, enough to get in the wake of the GTX 1660 Ti. This remains superior in some games, such as The Witcher 3, but finds itself closely marked by a GPU that inevitably exceeds the basic versions, reaching 80fps in 1080p and 54fps in 1440p in the case of the CDProject title.
+
+
+
+Reaches instead 83fps in 1080 and 54 in 1440p with Shadow of the Tomb Radier, 84fps in 1080p and 51fps in 1440p with Rage 2, 90fps in 1080p and 61 in 1440p with Battlefield V and 60fps in 1080p and 49fps in 1440p with Metro Exodus, single case in which the performances do not show increases compared to the GTX 1660 SUPER characterized by lower clocks. In general, however, the higher frequencies pay, guaranteeing with a discreet stability the 144fps in 1080p with a battle royale not particularly optimized as Apex Legends, in this case inevitably with the graphic settings at minimum, and approaching the GPU to 60fps in 1440p. In some cases compromises are necessary to reach the goal, but overclocking can reduce them to the minimum necessary, with the card pushing the core at 2040MHz and memory at 7500MHz, pushing The Witcher 3 up to 56fps in 1440p, touching 58 with the clock brought to 2100Mhz. In this case the stability is not perfect, but the temperature does not exceed 65 degrees and there is space to play with the voltages in search of better results. Of course, to aim for the 1440p without any compromise it is necessary to look higher, but with a suitable price, as we anticipated as soon as possible, as close as possible to the 250 euros recommended for the basic models, the GIGABYTE GeForce GTX 1660 SUPER Gaming OC can undoubtedly give away different satisfactions.
+
+
+Verdict of Multiplayer.it: 8.7
+The GIGABYTE GeForce GTX 1660 SUPER Gaming OC is so close to the GeForce GTX 1660 Ti as to question the older sister, who has an advantage in some titles but significantly more expensive, at least on paper. We do not know the official price of this model, although knowing the GIGABYTE policies we can expect a relative increase compared to the recommended price, with a subsequent reduction, more marked at certain retailers, as happened with the Gaming models of the 1660 series already on the market.
+PRO
+
+Overall, the increase in frequencies is felt
+All-round software improvements
+Quite silent despite the three fans
+
+VERSUS
+
+The three fans increase the footprint
+All in plastic
+We hope there are no unpleasant surprises on the price
+
+
+
+
+
+
+"

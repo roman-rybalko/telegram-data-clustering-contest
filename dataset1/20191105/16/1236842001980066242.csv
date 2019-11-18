@@ -1,0 +1,100 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Игроки столкнулись с ошибками и вылетами в ПК-версии Red Dead Redemption 2 — как от них избавиться
+05 Nov 2019, 16:12 by Artyom Kaleev
+«Эта игра хоть у кого-нибудь работает?»
+Обновлено Rockstar подтвердила, что в курсе проблемы — и предложила «запускать игру в режиме администратора». Патч уже в работе.
+
+
+
+После выхода Red Dead Redemption 2 на ПК игроки начали массово жаловаться на ошибки и вылеты в порте. Мы собрали все известные ошибки и приложили способы решения (если они есть).
+С какими проблемами сталкиваются
+Пользователи сообщают о самых разных случаях: у одних игра не запускается в собственном лаунчере от Rockstar, у других после релиза высвечивается бесконечное обновление. А те, кому всё же удалось включить игру, сталкиваются с зависшей загрузкой и проблемами с оптимизацией.
+Одна из самых распространённых ошибок на данный момент — это сообщение «Red Dead Redemption 2 exited unexpectedly» (Игра вылетела по непредвиденной причине) после запуска. По словам многих пользователей, порт даже не успевает включиться, а «Безопасный режим», который должен запускать игру со сниженными настройками графики, также вылетает.
+
+
+
+То же самое окошко всплывает у тех, кто пытается начать сюжетную кампанию во внутриигровом меню. Причём, некоторые отмечают, что бенчмарка производительности это также касается.
+«Rockstar Game Launcher exited unexpectedly»...Отличный запуск, Rockstar, прямо довольствуюсь игрой...obstsalat4 пользователь reddit
+Не могу поверить, что я взял ради этого выходной.RunningonSisu пользователь reddit
+Эта игра хоть у кого-нибудь работает? Только проснулся и теперь не уверен, стоит ли вообще вставать из кровати, чтобы её заценить.BobThePineapple пользователь reddit
+Отдельные игроки отмечают проблемы с производительностью: сборки ПК, которые подходят под системные требования, не выдерживают нагрузки.
+У меня GTX 1080 и i7 8700k. Не получается удерживать 60 fps даже на самых низких настройках. Кто-нибудь с этим сталкивался?davidmagh пользователь reddit
+FPS очень плохой... 60-75 кадров на средне-высоких настройках, в 1080р при 1080ti, 8700k и 32 гигабайт ОЗУ.deathStar97 пользователь reddit
+20-25 кадров и на низких, и на высоких настройках. Видеокарта — 2080.Leonidoss пользователь reddit
+Причём, у многих компьютер наоборот не нагружается, будто работает не на всю мощность.
+Есть проблемы с производительностью. У меня 1080ti, 9800k — 30 кадров в секунду на 1440р, в той сцене со снежным штормом. И это с видеокартой, нагруженной на 30% и процессором на 20%? Очень странно.Tescobag пользователь reddit
+Также встречаются жалобы на плохое качество звука, микрофризы и проблемы с активацией — лаунчер считает, что игрок не приобрёл порт, и отказывается его запускать.
+Судя по всему, проблема заключается именно в RDR 2 — так как, по наблюдениям пользователей, остальные игры в Rockstar Game Launcher работают без нареканий.
+Возможные способы решения
+На Reddit уже нашли решение, которое помогает в большинстве случаев — нужно отключить антивирус или добавить папку с игрой в «белый список». Также рекомендуют банально перезагрузить компьютер — того требует некоторое ПО, которое устанавливается вместе с игрой.
+Сама Rockstar рекомендует запускать игру в режиме администратора.
+В случае же с бесконечной загрузкой пользователи советуют отключить облачные сохранения и обновления в лаунчере Rockstar. Также некоторым помогло верифицировать файлы игры через настройки того же лаунчера — игроки упоминают некий патч на 4 гигабайта, который загружается в ходе проверки.
+Тем, у кого наблюдается падение fps и стоит видеокарта Nvidia, стоит попробовать переключить API с Vulcan на DirectX 12.
+Судя по первым тестам производительности, Red Dead Redemption 2 оказалась довольно требовательной — даже флагманские видеокарты не выдерживают игру в 4К и 60 fps.
+
+
+
+
+
+",ru,"
+
+
+
+
+
+
+
+
+
+
+
+Players faced bugs and crashes in the PC version of Red Dead Redemption 2 - how to get rid of them
+05 Nov 2019, 16:12 by Artyom Kaleev
+“Does this game work for anyone?”
+Updated Rockstar confirmed that it was aware of the problem - and suggested ""run the game in administrator mode."" The patch is already at work.
+
+
+
+After the release of Red Dead Redemption 2 on the PC, players began to massively complain about errors and crashes in the port. We collected all known errors and attached solutions (if any).
+What are the challenges
+Users report a variety of cases: for some, the game does not start in Rockstar's own launcher, for others, after the release, an endless update is displayed. And those who still managed to turn on the game are faced with freezing loading and problems with optimization.
+One of the most common errors at the moment is the message “Red Dead Redemption 2 exited unexpectedly” (the game crashed for an unexpected reason) after launch. According to many users, the port does not even have time to turn on, and the ""Safe Mode"", which should start the game with reduced graphics settings, also crashes.
+
+
+
+The same window pops up for those who are trying to start a story campaign in the in-game menu. Moreover, some note that the benchmark for performance also applies.
+“Rockstar Game Launcher exited unexpectedly” ... Great launch, Rockstar, just content with the game ... obstsalat4 user reddit
+I can’t believe that I took the day off for this. RunningSisu user reddit
+Does this game work for anyone? Just woke up and now I'm not sure whether to get out of bed at all to check it out. BobThePineapple user reddit
+Some players note performance problems: PC builds that fit system requirements do not withstand the load.
+I have a GTX 1080 and i7 8700k. I can’t keep 60 fps even at the lowest settings. Has anyone encountered this? Davidmagh user reddit
+FPS is very bad ... 60-75 frames at medium-high settings, in 1080p at 1080ti, 8700k and 32 gigabytes of RAM. DeathStar97 user reddit
+20-25 frames at both low and high settings. Video card - 2080. Leonidoss user reddit
+Moreover, for many, on the contrary, the computer does not load, as if it does not work at full capacity.
+There are performance issues. I have 1080ti, 9800k - 30 frames per second on 1440r, in that scene with a snow storm. And this with a graphics card loaded with 30% and a processor with 20%? Very strange. Tescobag user reddit
+There are also complaints about poor sound quality, microfreezes and activation problems - the launcher believes that the player has not purchased the port and refuses to launch it.
+Apparently, the problem lies precisely in RDR 2 - since, according to user observations, the rest of the games in Rockstar Game Launcher work flawlessly.
+Possible solutions
+Reddit has already found a solution that helps in most cases - you need to disable the antivirus or add the game folder to the white list. They also recommend corny rebooting the computer - some software that is installed with the game requires that.
+Rockstar itself recommends running the game in administrator mode.
+In the case of endless downloads, users are advised to disable cloud saving and updates in the Rockstar launcher. Also, some helped verify the game files through the settings of the same launcher - players mention a patch of 4 gigabytes, which is downloaded during the check.
+Those with a drop in fps and an Nvidia graphics card should try switching the API from Vulcan to DirectX 12.
+Judging by the first performance tests, Red Dead Redemption 2 turned out to be quite demanding - even the flagship video cards do not withstand the game in 4K and 60 fps.
+
+
+
+
+
+"

@@ -1,0 +1,196 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+What is Datashare? FAQs about our document analysis software
+04 Nov 2019, 23:50 by Soline Ledésert
+Datashare is free, open-source software built by the International Consortium of Investigative Journalists that helps users better analyze information, in all its forms.
+Datashare allows you to index, search, star, tag, filter and analyze the key content in your own documents – whatever the format (text, spreadsheets, pdf, slides, emails, etc). Datashare will automatically highlight and extract the names of people, locations and organizations in your documents, as well as email addresses.
+Who is Datashare for?
+Datashare is primarily designed to help investigative journalists. We want to help journalists get the most out of the leads encompassed in their files – and in a very efficient way.
+But Datashare’s usefulness is not limited to journalism – it can be used by anyone who needs to analyze and explore a set of documents.
+What makes Datashare different?
+Datashare is secure. You use it locally, on your computer, and you can even use it offline if necessary. Strictly no data comes out of Datashare, even to ICIJ. As Datashare is not an online service of text extraction, the risk of interception is considerably limited – this is especially important when working with sensitive documents.
+Datashare is free for all users. Here’s how to download and install it (including system requirements).
+Datashare can process documents in a number of different languages. The interface for the software (the buttons and menu items) is currently available in English, Spanish and French.
+
+
+
+Datashare won’t give you access to any of ICIJ’s leaks or data, of course. But it will help you search through your own documents.
+Datashare has been developed by ICIJ’s tech team under an open-source license. Anyone can read the code, use it and suggest contributions.
+How do I install Datashare?
+There are specific instructions to install Datashare on Mac, Windows and Linux.
+Why is ICIJ building Datashare?
+Part of ICIJ’s mission is to build tools that can help journalists with document-heavy cross-border investigations.
+Datashare is one of these tools and it is designed for two kinds of users:
+
+for individual reporters who need to safely work on their own documents on their own computer (local mode)
+for teams of investigative journalists who work together on the same documents, remotely (server mode)
+
+The local Datashare is available for free to anyone who needs to explore their own documents while the server version is not officially documented yet.
+How Datashare helps reporters (and others)
+Investigative journalists need to read documents and find facts – but anyone who needs to analyze documents can also use Datashare. Datashare will help:
+Index your documents
+Journalists need to have a general view of their documents.
+Datashare starts with indexing, which involves listing your documents and analyzing their basic properties (file format, size, language, name, etc.).
+See how to add documents in Datashare for Mac, Windows and Linux and then analyze your documents.
+Search your documents
+Journalists need to explore their documents, ask questions and find stories.
+But these documents can be PDFs, scans, images, Word documents, spreadsheets, emails, etc. Their formats vary and this makes them hard to search.
+Datashare solves this by extracting the text and data from the documents. For text contained in an image, Datashare will specifically run a process called Optical Character Recognition (OCR) that will recognize the letters, numbers or any characters from your images and turn it into searchable data.
+Once this information has been indexed, Datashare also becomes the search engine for these documents, with a simple search bar that helps you run any query.
+To help journalists navigate large datasets, Datashare’s search allows for common search operators like ‘AND’ and ‘NOT’, as well as exact phrase searches, wildcard and fuzzy searches, and more. Read more details here.
+There are also keyboard shortcuts (like Control/Command+F to search within documents) that help reporters navigate quickly within and between documents. Read more details here.
+You can also batch-search your documents: upload a list of queries and you will get the results for each query in a spreadsheet.
+Star and tag important documents
+Some data sets include thousands of documents, which can leave reporters feeling lost in a sea of data. Datashare allows users to star documents to make it easier to organize and retrieve important files.
+Journalists need to get organized in their searches. Tagging documents helps easily finding all the documents tagged.
+Quickly understand key content
+Datashare automatically detects, highlights and extracts names of people, locations and organizations in documents, as well as email addresses. This is called named entity recognition (NER).
+Within Datashare, these named entities are highlighted so reporters can spot important information quickly. Named entities are also listed in each document, and users can filter documents according to which named entities are mentioned.
+
+
+
+Filter documents for more refined searches
+To easily find interesting documents, Datashare allows filtering by: starred documents, file types, languages, named entities (people, organizations, locations and email addresses), file path, creation date, etc. Filters can be combined and used together with searches to refine results.
+What’s the plan for future Datashare updates?
+Datashare’s roadmap is determined by reporters’ needs. We’re constantly re-evaluating these needs as we speak with our journalists and survey Datashare users.
+Upcoming features include:
+
+Named entity export and import in a tabular format
+Cleaning or editing errors in named entity recognition
+Additional categories for named entity extraction, including dates, money amounts or phone numbers
+Document annotations
+Support for indexing files on external drives
+Enhanced collaboration features such as comments and annotation
+Sharing of documents within a trusted network of individuals
+
+ How can I follow Datashare updates?
+Follow Datashare’s updates on Twitter with the hashtag #ICIJDatashare.
+There are new versions of Datashare available on a regular basis. Get the newest version.
+Is there a user guide?
+Yes, you can read Datashare’s user guide here.
+How can I help?
+Please download and install Datashare, and let us know what you think! If you would like to suggest an improvement, send us your comments or report a bug, you can send an email to datashare@icij.org.
+When reporting a bug, please share:
+
+your OS (Mac, Windows or Linux) and version
+the problem, with screenshots if possible
+the actions that led to the problem
+
+Advanced users can post an issue with their logs on Datashare’s GitHub.
+
+Recommended reading
+
+
+
+
+
+
+",en,"
+
+
+
+
+
+
+
+
+
+
+
+What is Datashare? FAQs about our document analysis software
+04 Nov 2019, 23:50 by Soline Ledésert
+Datashare is free, open-source software built by the International Consortium of Investigative Journalists that helps users better analyze information, in all its forms.
+Datashare allows you to index, search, star, tag, filter and analyze the key content in your own documents – whatever the format (text, spreadsheets, pdf, slides, emails, etc). Datashare will automatically highlight and extract the names of people, locations and organizations in your documents, as well as email addresses.
+Who is Datashare for?
+Datashare is primarily designed to help investigative journalists. We want to help journalists get the most out of the leads encompassed in their files – and in a very efficient way.
+But Datashare’s usefulness is not limited to journalism – it can be used by anyone who needs to analyze and explore a set of documents.
+What makes Datashare different?
+Datashare is secure. You use it locally, on your computer, and you can even use it offline if necessary. Strictly no data comes out of Datashare, even to ICIJ. As Datashare is not an online service of text extraction, the risk of interception is considerably limited – this is especially important when working with sensitive documents.
+Datashare is free for all users. Here’s how to download and install it (including system requirements).
+Datashare can process documents in a number of different languages. The interface for the software (the buttons and menu items) is currently available in English, Spanish and French.
+
+
+
+Datashare won’t give you access to any of ICIJ’s leaks or data, of course. But it will help you search through your own documents.
+Datashare has been developed by ICIJ’s tech team under an open-source license. Anyone can read the code, use it and suggest contributions.
+How do I install Datashare?
+There are specific instructions to install Datashare on Mac, Windows and Linux.
+Why is ICIJ building Datashare?
+Part of ICIJ’s mission is to build tools that can help journalists with document-heavy cross-border investigations.
+Datashare is one of these tools and it is designed for two kinds of users:
+
+for individual reporters who need to safely work on their own documents on their own computer (local mode)
+for teams of investigative journalists who work together on the same documents, remotely (server mode)
+
+The local Datashare is available for free to anyone who needs to explore their own documents while the server version is not officially documented yet.
+How Datashare helps reporters (and others)
+Investigative journalists need to read documents and find facts – but anyone who needs to analyze documents can also use Datashare. Datashare will help:
+Index your documents
+Journalists need to have a general view of their documents.
+Datashare starts with indexing, which involves listing your documents and analyzing their basic properties (file format, size, language, name, etc.).
+See how to add documents in Datashare for Mac, Windows and Linux and then analyze your documents.
+Search your documents
+Journalists need to explore their documents, ask questions and find stories.
+But these documents can be PDFs, scans, images, Word documents, spreadsheets, emails, etc. Their formats vary and this makes them hard to search.
+Datashare solves this by extracting the text and data from the documents. For text contained in an image, Datashare will specifically run a process called Optical Character Recognition (OCR) that will recognize the letters, numbers or any characters from your images and turn it into searchable data.
+Once this information has been indexed, Datashare also becomes the search engine for these documents, with a simple search bar that helps you run any query.
+To help journalists navigate large datasets, Datashare’s search allows for common search operators like ‘AND’ and ‘NOT’, as well as exact phrase searches, wildcard and fuzzy searches, and more. Read more details here.
+There are also keyboard shortcuts (like Control/Command+F to search within documents) that help reporters navigate quickly within and between documents. Read more details here.
+You can also batch-search your documents: upload a list of queries and you will get the results for each query in a spreadsheet.
+Star and tag important documents
+Some data sets include thousands of documents, which can leave reporters feeling lost in a sea of data. Datashare allows users to star documents to make it easier to organize and retrieve important files.
+Journalists need to get organized in their searches. Tagging documents helps easily finding all the documents tagged.
+Quickly understand key content
+Datashare automatically detects, highlights and extracts names of people, locations and organizations in documents, as well as email addresses. This is called named entity recognition (NER).
+Within Datashare, these named entities are highlighted so reporters can spot important information quickly. Named entities are also listed in each document, and users can filter documents according to which named entities are mentioned.
+
+
+
+Filter documents for more refined searches
+To easily find interesting documents, Datashare allows filtering by: starred documents, file types, languages, named entities (people, organizations, locations and email addresses), file path, creation date, etc. Filters can be combined and used together with searches to refine results.
+What’s the plan for future Datashare updates?
+Datashare’s roadmap is determined by reporters’ needs. We’re constantly re-evaluating these needs as we speak with our journalists and survey Datashare users.
+Upcoming features include:
+
+Named entity export and import in a tabular format
+Cleaning or editing errors in named entity recognition
+Additional categories for named entity extraction, including dates, money amounts or phone numbers
+Document annotations
+Support for indexing files on external drives
+Enhanced collaboration features such as comments and annotation
+Sharing of documents within a trusted network of individuals
+
+ How can I follow Datashare updates?
+Follow Datashare’s updates on Twitter with the hashtag #ICIJDatashare.
+There are new versions of Datashare available on a regular basis. Get the newest version.
+Is there a user guide?
+Yes, you can read Datashare’s user guide here.
+How can I help?
+Please download and install Datashare, and let us know what you think! If you would like to suggest an improvement, send us your comments or report a bug, you can send an email to datashare@icij.org.
+When reporting a bug, please share:
+
+your OS (Mac, Windows or Linux) and version
+the problem, with screenshots if possible
+the actions that led to the problem
+
+Advanced users can post an issue with their logs on Datashare’s GitHub.
+
+Recommended reading
+
+
+
+
+
+
+"

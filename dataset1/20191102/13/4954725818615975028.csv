@@ -1,0 +1,82 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+『ハースストーン』にて『ハースストーン・バトルグラウンド』実装へ。「オートチェス」ライクな新モード
+02 Nov 2019, 13:12 by Takayuki Sawahata
+Blizzard Entertainmentは11月2日、自動戦闘ゲーム『ハースストーン・バトルグラウンド』を発表した。本作は既に配信中であるDTCG『ハースストーン』内に追加される新たなゲームモードとなっており、全ての機能を無料で楽しむことができる。
+また11月6日より早期アクセス、13日よりオープンβテストの実施が予定されている。そのうち早期アクセスの参加権は、バーチャルチケットを購入する、現地入場するなどしてBlizzCon 2019に参加したユーザー、若しくは、12月13日に実装予定であるハースストーン新拡張パック『激闘！ドラゴン大決戦』における「2種類ある先行購入バンドルのうち1種類以上購入したユーザー」に向けて与えられるため、注意が必要だ。一方βテストについては、全てのユーザーが参加できる。
+
+
+
+『ハースストーン・バトルグラウンド』は既に存在する『ハースストーン』のゲームシステムを基盤に、言うなれば『オートチェス』に代表される自動対戦ゲームの要素を組み混んだカードゲームである。最近のアドベンチャーモードでお馴染み「ボブ」の酒場に集った8人のプレイヤー達は、ミニオンの雇用による部隊の編成、その後に行われる自動戦闘を「１ラウンド」として繰り返しながら互いのライフを削り合い、ただ一人の勝利者となることを目指す。
+本作はあくまで『ハースストーン』の延長線上にあるゲームモードであり、ミニオンの能力や、「聖なる盾」といった固有のキーワード、ミニオン配置の重要性などさまざまな要素をそのままシステムとして流用している。故に、本ゲームモードを充分に楽しむには先ず『ハースストーン』の基本的なシステムを理解する必要があることに留意したい。
+
+
+
+ゲームを開始すると、先ず24人の中からランダムに提示される「ヒーロー」というプレイヤーキャラクターを選択することになる。原作である『WoW』に登場するキャラクターだけではなく、『ハースストーン』オリジナルのキャラクターも入り交じるヒーロー達はそれぞれ固有の能力を持っており、たとえば「ミリフィセント・マナストーム」であれば、「メカ」の種族カテゴリにあるミニオンの能力値をコスト無しで常に上昇させる常在能力を所持している。また、「アーサス」には限りある酒場のコインを消費して、一番右のミニオンに「蘇り」（ミニオンが戦闘などにより破壊されたとき、体力を1にした状態で再び召喚する）を付与する能力がある。この他にもPVでは「ラグナロス」がコインを2枚消費してランダムな敵に向け8ダメージを与える様子が確認できた。
+
+
+
+次にプレイヤーを迎えるのは「酒場の時間」だ。「酒場の時間」はゲーム開始直前と戦闘フェーズ間に発生し、ラウンドごとに一定数配られるコインを消費することで、ミニオンの雇用と編成を行う時間である。（ボブから提示されるミニオンのプールはリンク先参照）提示されるミニオンが気に食わなければコイン一枚でリセットできるほか、提示されたミニオン達の一時的な雇用保留、そもそもの提示カードプールのグレード向上などを図ることができる。また３体の同じミニオンを雇用すると１体のゴールデンver.ミニオン「トリプル」として合体、それまでの能力値を全て引き継ぐ強力な個体として運用できる。更に手札から場に出せば報酬として、現時点での酒場のグレードからワンランク上のミニオンを「発見」（３枚のカードが特定のカードプールからランダムに提示され、１枚選んで手札に加える）することが可能なカードを入手できるようだ。次回のラウンドに手元のコインは持ち越すことができないため、自らのヒーロー固有の能力と盤面を鑑みながら、時に慎重に、時に大胆にカードを切っていくことが重要である。
+
+
+
+編成を終えたプレイヤーは戦いの場に赴くことになる。酒場の時間の後に訪れる戦闘フェーズでは、８人からランダムに引き合わされた対戦相手と、どちらかの盤面が空になる、もしくはヒーローの体力が０になるまで自動戦闘を行う。ここで重要なことは、「全てのミニオンは左からランダムな対象に攻撃する」という法則と、ミニオン配置の重要性である。たとえば「ケンゴーの弟子」という“この戦闘で死亡した味方のメカカテゴリのミニオンを死亡した順に蘇生する”断末魔能力（破壊された時に発動する効果）を持つミニオンが存在する。彼を一番左ではなく右に配置することが重要であることはテキストを読めばひと目で理解できるだろう。隣接するミニオンに優先攻撃目標にさせる「挑発」とバフを与える「アルガスの守護者」の能力を充分に発揮させるには、強化予定のミニオンの配置を予め考える必要がある。この要素は一見リスペクト元である「オートチェス」に実装されている「駒同士のシナジー」システムのコピーに思えるが、ハースストーンに元々備わっていた要素でもある。他作品の特徴を取り込みながら、決してアイデンティティを崩すことはない、実に『ハースストーン』らしいゲームシステムになっていると言えるだろう。
+戦闘フェースが決着するとプレイヤーは再びボブの酒場で来る戦いに向け英気を養い、やがて次の戦場へと向かう。これを先述したとおり、自分のヒーローの体力が０になるか、最後の一人として勝ち残るまで繰り返していく。『ハースストーン・バトルグラウンド』には独自のプレイヤーレーティングが内蔵されており、４位以内に入賞すればレートは上昇、５位以下であれば下降する。将来的には公式HPにてトッププレイヤーを掲載するランキングのページを設ける予定ということもあり、本筋であるカードゲームの息抜きという範疇に収まらない熱いゲームシーンが展開されるかもしれない。
+
+
+
+ちなみに『ハースストーン』の最新拡張パックを一定数入手していく（イベントでの配布や、ゲーム内通貨を使用する無料分も含む）ことで、詳細な戦績の開示をはじめとした、細やかな機能がアンロックされていく。現在販売中である先行購入バンドルを予約すれば入手数の都合上、将来的に全ての機能がアンロックされるため、スタートダッシュを決めたいというプレイヤーは是非購入を検討してみてはいかがだろうか。これを機に『ハースストーン』自体のプレイを始めてみるというのもオススメである。
+
+
+",ja,"
+
+
+
+
+
+
+
+
+
+
+
+Implementation of “Heartstone Battleground” at “Heartstone”. ""Auto chess"" like new mode
+02 Nov 2019, 13:12 by Takayuki Sawahata
+On November 2, Blizzard Entertainment announced the automatic battle game Hearthstone Battlegrounds. This work is a new game mode that is added to the already distributed DTCG ""Heartstone"", and you can enjoy all the functions for free.
+Early access is scheduled for November 6th, and an open beta test is scheduled for 13th. Among them, the right to participate in early access is for users who participated in BlizzCon 2019 by purchasing virtual tickets, entering the field, etc., or the new Hearthstone expansion pack “Fight! Because it is given to “users who have purchased one or more of two types of pre-purchased bundles” in “Dragon Battle”, caution is required. On the other hand, all users can participate in the beta test.
+
+
+
+Hearthstone Battleground is a card game that is based on the existing game system of Hearthstone, in other words, a mix of elements of an automatic battle game such as Auto Chess. Eight players gathered at the “Bob” tavern, familiar in the recent adventure mode, scraped each other ’s lives by repeating the formation of troops by employing minions and then repeating the automatic battle as “one round”. Aim to be the only winner.
+This work is a game mode that is an extension of Hearthstone, and uses various elements such as minion ability, unique keywords such as “sacred shield”, and the importance of minion placement as a system. Therefore, it is important to understand the basic system of Hearthstone first to fully enjoy this game mode.
+
+
+
+When you start the game, you will first select a player character called “Hero” that will be presented randomly from 24 people. Heroes who mix not only the characters appearing in the original `` WoW '' but also the original characters of `` Heathstone '' have their own abilities, for example `` Millificent Manastorm '', `` Mecha '' Has a permanent ability that constantly increases the ability value of minions in the race category at no cost. In addition, “Arthurs” consumes limited bar coins and grants “Resurrection” to the rightmost minion (when the minion is destroyed by battle, etc., it is summoned again with 1 health) Have the ability to In addition, in the PV, it was confirmed that “Ragnaros” consumed 2 coins and caused 8 damage to random enemies.
+
+
+
+The next time the player is greeted is “Tavern Time”. “Tavern time” is the time for hiring and organizing minions by consuming a certain number of coins, which occur between just before the start of the game and during the battle phase and are distributed every round. (Refer to the link for the minion pool presented by Bob.) If you don't like the presented minion, you can reset it with a single coin, hold temporary employment of the presented minions, and the original card pool The grade can be improved. Also, if you hire three identical minions, they can be combined as one golden ver. Minion “triple” and operated as a powerful individual that inherits all of the previous ability values. Furthermore, if you put it into play from your hand, as a reward, you will “discover” a minion that is one rank higher than the current bar grade (3 cards are randomly presented from a specific card pool and select one to add to your hand) It seems that you can get a card that can. Since the coins at hand cannot be carried over to the next round, it is important to carefully and sometimes boldly cut the cards, taking into consideration the hero's unique abilities and board.
+
+
+
+Players who have finished organizing will go to battle. In the battle phase that comes after the tavern time, you will have an automatic battle with an opponent randomly drawn from 8 players until either board is empty or the hero's stamina is zero. What is important here is the law that ""all minions attack a random target from the left"" and the importance of minion placement. For example, there is a minion called “Kengo's apprentice” that has the ability to revive the minions in the mecha category that died in this battle in the order of death. You can understand at a glance by reading the text that it is important to place him on the right instead of on the left. In order to make full use of the “provocation” that makes adjacent minions a priority attack target and the “Argus guardian” who gives buffs, it is necessary to consider the arrangement of minions to be strengthened in advance. At first glance, this element seems to be a copy of the “Synergy between Pieces” system implemented in “Auto Chess”, which is the origin of respect, but it is also an element originally provided by Hearthstone. It can be said that it has become a game system like ""Heartstone"" that never loses its identity while incorporating the features of other works.
+Once the battle face is finalized, the player develops morale again for the battle coming to Bob's tavern, and eventually heads to the next battlefield. As described above, repeat until your hero's physical strength is 0 or you are the last one to win. “Heartstone Battleground” has its own player rating, and if you win within 4th place, the rate will go up and if you go below 5th place, it will go down. In the future, there will be a ranking page to post the top players on the official website, so a hot game scene that does not fit in the category of breathing of the main card game may be developed.
+
+
+
+By the way, by acquiring a certain number of the latest expansion packs of Hearthstone (including distribution at events and free use of in-game currency), detailed functions such as disclosure of detailed battle results Will be unlocked. If you reserve a pre-purchase bundle that is currently on sale, all functions will be unlocked in the future due to the availability, so why not consider the purchase if you want to decide the start dash? . It is also recommended that you start playing “Heartstone” itself.
+
+
+"

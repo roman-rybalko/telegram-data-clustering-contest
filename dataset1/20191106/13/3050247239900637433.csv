@@ -1,0 +1,86 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Follow up
+BitMEX Email Data Leak Fallout Is Serious, Many Users Already Affected
+06 Nov 2019, 13:50 by Shiraz Jagati
+On the first day of November, it came to light that popular crypto derivatives exchange BitMEX had accidentally leaked sensitive data related to its users, which occurred as a result of the company failing to apply a blind copy protocol to its mass mail servers.
+The lapse was acknowledged by the firm just a few hours later. BitMEX’s deputy chief operating officer, Vivien Khoo, released a statement saying that BitMEX had accidentally sent out a message to most of its users containing the email addresses of other users in the “to” field, adding:
+“We are deeply sorry for the concern this has caused to our users. The issue was caused by an error in the software used to send emails. As soon as we were made aware of the issue, we immediately prevented further emails from being sent and have since addressed the issue to ensure this does not happen again.”
+To make matters worse, unknown hackers were able to gain control of BitMEX’s official Twitter account for a short while following the leak. While in control, the miscreants were able to post several messages such as, “Take your BTC and run. Last day for withdrawals,” and “hacked” on the firm’s live feed. 
+In response, BitMEX’s PR team swiftly proceeded to delete these messages and released a statement claiming that the hack had in no way jeopardized the security of customer funds. In this regard, a Twitter account named “Bitmexdatabaseleak,” which has since been suspended, sprang up following the aforementioned hack, allegedly leaking a host of customer data, such as the individual user IDs and emails of many BitMEX customers.
+According to Larry Cermak, director of research for The Block, BitMEX’s recent data compromise coincided with an email dump of around 30,000 addresses on the dark web. This has led people to believe that some or all of the leaked customer data might have been sold online to illicit third-party individuals.
+BitMEX went on to temporarily disable withdrawals for customers who had changed their account passwords or security details following the email address leak. At the time of writing, the exchange has not responded to an inquiry from Cointelegraph to comment on the situation.
+Bitcoin withdrawals on BitMEX remain unaffected
+Following such a major security lapse, it’s reasonable to assume that BitMEX would have had to face some sort of backlash from its customers. However, according to data available online, it appears as though the trading platform’s total BTC withdrawal volume on Nov. 1 — one day after the email leak — remained largely unaffected. 
+Jeffery Liu Xun, CEO of the peer-to-peer fiat gateway XanPool, shared his thoughts with Cointelegraph on how a firm of BitMEX’s stature could allow such a mistake to happen:
+“Given that I have received Bitmex’s previous e-mails before, without this problem, this is likely due to either an internal marketing noob making a HUGE error, or their mass mailing service provider messing up. I think it is the former because services like MailChimp don’t make these mistakes. This issue definitely cannot be brushed aside.”
+He then proceeded to add that, as a result of the privacy risks posed by the leak, competitors of BitMEX can now send out mass emails to its customers in an attempt to poach them. Additionally, Xun believes that a second, more dangerous risk lies in the fact that the vast majority of people making use of trading platforms do not employ complex passwords, so serious hackers will now have the option of going through their password repositories to try to gain access to the wallets of unsuspecting users via a host of permutation and combination-based infiltration techniques. On the subject, he added:
+“Doxing users’ e-mails is oftentimes as damaging as doxing their passwords, as hackers have large repositories of passwords that people tend to use. Finally, releasing your users’ e-mails also opens them up to spam and phishing attacks.”
+Xun’s sentiments were echoed by Craig Russo, a crypto investor and owner of Peer, a Boston-based startup behind the popular media outlet SludgeFeed. In Russo’s view, this entire situation has been a terrible security lapse on BitMEX’s part and will be brought up against the exchange every time it is involved in any sort of controversy in the future. He told Cointelegraph:
+“Trust is paramount in this industry and the fallout of a doxxing event like this will likely linger for a while. I think the near term will see some investors leave the platform but overall, BitMEX can bounce back from the incident given its market share and resources at its disposal.”
+What’s next for BitMEX and its users?
+Any time a security lapse of this magnitude occurs, it is of utmost importance that the firm in question take immediate corrective measures to ensure that the trust of its clients remains unshaken. 
+In this regard, BitMEX released a blog post on Monday admitting that while its internal processes had indeed failed last week, the situation had been fixed thanks to the company’s newly devised in-house error-detection system that is capable of handling the necessary rendering, translation, staging and piecemeal sending of important emails.
+According to data provider Skew, personal information belonging to 22,000 BitMEX users has likely been exposed online. This, according to Primitive Crypto’s Dovey Wan, could result in the United States government making use of the leaked email addresses to investigate the tax filings of many individuals linked with BitMEX. The exchange is not registered with the Commodity Futures Trading Commission, and therefore, Americans are restricted from engaging with the platform.
+Additionally, the IRS recently released a fresh new set of rules that require crypto holders to report all of their crypto holdings with meticulous detail. Crypto owners are now being taxed on any capital gains (as well as other forms of revenue) that they may have acquired through the exchange or holding of such digital assets.
+Lastly, in regard to whether BitMEX faces the possibility of incurring any legal action as a result of this debacle, Aaron Wagener, co-founder and chief operations officer of the decentralized global data network MXC Foundation, told Cointelegraph that due to the terms and conditions put forth by BitMEX at the time of customer on-boarding, any potential legal action against the firm could prove extremely difficult. 
+Wagener also added that, since the situation clearly occurred because of a lack of human judgment, the larger issue will now revolve around BitMEX ensuring the safety of its users, especially since this information has now entered the public domain. Wagener went on:
+“It’s extremely difficult to simply state that the issue has been curtailed. Users are under a potential threat of phishing emails, scams and spam from a wide range of sources. This is an issue that will continue to be a thorn in the users’ sides for quite some time to come.”
+However, Ray Walsh, a digital privacy expert from education platform ProPrivacy, believes that under the General Data Protection Regulation, the firm could face large fines. Not only that, but he also pointed out that the Federal Trade Commission could very well launch an investigation, or BitMEX users could decide to pursue a class-action lawsuit against the firm for the mishandling of their personal data. Walsh further highlighted that it seems the data is already being abused:
+“Following the leak, BitMEX users did receive unusual emails and there seems no doubt that those emails were the result of the leak. It also appears that the leaked email addresses have already been sold on the dark web, meaning that very serious hackers will now be attempting to phish people’s passwords to steal crypto funds.”
+
+
+",en,"
+
+
+
+
+
+
+
+
+
+
+
+Follow up
+BitMEX Email Data Leak Fallout Is Serious, Many Users Already Affected
+06 Nov 2019, 13:50 by Shiraz Jagati
+On the first day of November, it came to light that popular crypto derivatives exchange BitMEX had accidentally leaked sensitive data related to its users, which occurred as a result of the company failing to apply a blind copy protocol to its mass mail servers.
+The lapse was acknowledged by the firm just a few hours later. BitMEX’s deputy chief operating officer, Vivien Khoo, released a statement saying that BitMEX had accidentally sent out a message to most of its users containing the email addresses of other users in the “to” field, adding:
+“We are deeply sorry for the concern this has caused to our users. The issue was caused by an error in the software used to send emails. As soon as we were made aware of the issue, we immediately prevented further emails from being sent and have since addressed the issue to ensure this does not happen again.”
+To make matters worse, unknown hackers were able to gain control of BitMEX’s official Twitter account for a short while following the leak. While in control, the miscreants were able to post several messages such as, “Take your BTC and run. Last day for withdrawals,” and “hacked” on the firm’s live feed. 
+In response, BitMEX’s PR team swiftly proceeded to delete these messages and released a statement claiming that the hack had in no way jeopardized the security of customer funds. In this regard, a Twitter account named “Bitmexdatabaseleak,” which has since been suspended, sprang up following the aforementioned hack, allegedly leaking a host of customer data, such as the individual user IDs and emails of many BitMEX customers.
+According to Larry Cermak, director of research for The Block, BitMEX’s recent data compromise coincided with an email dump of around 30,000 addresses on the dark web. This has led people to believe that some or all of the leaked customer data might have been sold online to illicit third-party individuals.
+BitMEX went on to temporarily disable withdrawals for customers who had changed their account passwords or security details following the email address leak. At the time of writing, the exchange has not responded to an inquiry from Cointelegraph to comment on the situation.
+Bitcoin withdrawals on BitMEX remain unaffected
+Following such a major security lapse, it’s reasonable to assume that BitMEX would have had to face some sort of backlash from its customers. However, according to data available online, it appears as though the trading platform’s total BTC withdrawal volume on Nov. 1 — one day after the email leak — remained largely unaffected. 
+Jeffery Liu Xun, CEO of the peer-to-peer fiat gateway XanPool, shared his thoughts with Cointelegraph on how a firm of BitMEX’s stature could allow such a mistake to happen:
+“Given that I have received Bitmex’s previous e-mails before, without this problem, this is likely due to either an internal marketing noob making a HUGE error, or their mass mailing service provider messing up. I think it is the former because services like MailChimp don’t make these mistakes. This issue definitely cannot be brushed aside.”
+He then proceeded to add that, as a result of the privacy risks posed by the leak, competitors of BitMEX can now send out mass emails to its customers in an attempt to poach them. Additionally, Xun believes that a second, more dangerous risk lies in the fact that the vast majority of people making use of trading platforms do not employ complex passwords, so serious hackers will now have the option of going through their password repositories to try to gain access to the wallets of unsuspecting users via a host of permutation and combination-based infiltration techniques. On the subject, he added:
+“Doxing users’ e-mails is oftentimes as damaging as doxing their passwords, as hackers have large repositories of passwords that people tend to use. Finally, releasing your users’ e-mails also opens them up to spam and phishing attacks.”
+Xun’s sentiments were echoed by Craig Russo, a crypto investor and owner of Peer, a Boston-based startup behind the popular media outlet SludgeFeed. In Russo’s view, this entire situation has been a terrible security lapse on BitMEX’s part and will be brought up against the exchange every time it is involved in any sort of controversy in the future. He told Cointelegraph:
+“Trust is paramount in this industry and the fallout of a doxxing event like this will likely linger for a while. I think the near term will see some investors leave the platform but overall, BitMEX can bounce back from the incident given its market share and resources at its disposal.”
+What’s next for BitMEX and its users?
+Any time a security lapse of this magnitude occurs, it is of utmost importance that the firm in question take immediate corrective measures to ensure that the trust of its clients remains unshaken. 
+In this regard, BitMEX released a blog post on Monday admitting that while its internal processes had indeed failed last week, the situation had been fixed thanks to the company’s newly devised in-house error-detection system that is capable of handling the necessary rendering, translation, staging and piecemeal sending of important emails.
+According to data provider Skew, personal information belonging to 22,000 BitMEX users has likely been exposed online. This, according to Primitive Crypto’s Dovey Wan, could result in the United States government making use of the leaked email addresses to investigate the tax filings of many individuals linked with BitMEX. The exchange is not registered with the Commodity Futures Trading Commission, and therefore, Americans are restricted from engaging with the platform.
+Additionally, the IRS recently released a fresh new set of rules that require crypto holders to report all of their crypto holdings with meticulous detail. Crypto owners are now being taxed on any capital gains (as well as other forms of revenue) that they may have acquired through the exchange or holding of such digital assets.
+Lastly, in regard to whether BitMEX faces the possibility of incurring any legal action as a result of this debacle, Aaron Wagener, co-founder and chief operations officer of the decentralized global data network MXC Foundation, told Cointelegraph that due to the terms and conditions put forth by BitMEX at the time of customer on-boarding, any potential legal action against the firm could prove extremely difficult. 
+Wagener also added that, since the situation clearly occurred because of a lack of human judgment, the larger issue will now revolve around BitMEX ensuring the safety of its users, especially since this information has now entered the public domain. Wagener went on:
+“It’s extremely difficult to simply state that the issue has been curtailed. Users are under a potential threat of phishing emails, scams and spam from a wide range of sources. This is an issue that will continue to be a thorn in the users’ sides for quite some time to come.”
+However, Ray Walsh, a digital privacy expert from education platform ProPrivacy, believes that under the General Data Protection Regulation, the firm could face large fines. Not only that, but he also pointed out that the Federal Trade Commission could very well launch an investigation, or BitMEX users could decide to pursue a class-action lawsuit against the firm for the mishandling of their personal data. Walsh further highlighted that it seems the data is already being abused:
+“Following the leak, BitMEX users did receive unusual emails and there seems no doubt that those emails were the result of the leak. It also appears that the leaked email addresses have already been sold on the dark web, meaning that very serious hackers will now be attempting to phish people’s passwords to steal crypto funds.”
+
+
+"

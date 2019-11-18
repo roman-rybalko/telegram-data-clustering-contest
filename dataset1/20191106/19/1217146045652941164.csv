@@ -1,0 +1,66 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Google Allies With Security Companies to Boost Play Store Safety
+06 Nov 2019, 19:24 by Sergiu Gatlan
+
+
+
+Google announced that it will join efforts with ESET, Lookout, and Zimperium to improve malicious Android app detection on submission before they get published on the Play Store are available for download.
+This project couldn't have come sooner seeing that malware has managed to infiltrate Google's app ecosystem more and more often despite the company's efforts to put a stop to it. [1, 2, 3]
+The fight against malicious apps will never end and the only thing to do is to enhance detection and blocking mechanisms as Product Manager for Google Play Andrew Ahn revealed in the Google Play Store 2018 yearly review issued in January 2019.
+Scanning engine integration
+The new partnership—dubbed App Defense Alliance—will allow Google to boost Play Store's safety by increasing detection efficiency by taking advantage of the increased number of scanning engines and direct communication channels with the new partners.
+""As part of this Alliance, we are integrating our Google Play Protect detection systems with each partner’s scanning engines,"" Dave Kleidermacher, VP, Android Security & Privacy said.
+""This will generate new app risk intelligence as apps are being queued to publish. Partners will analyze that dataset and act as another, vital set of eyes prior to an app going live on the Play Store.""
+The Google Play Protect went live in July 2017 and is scanning ""over 50 billion apps on users' devices each day to make sure apps installed on the device aren't behaving in harmful ways.""
+Better insight and detection
+App Defense Alliance partners can now send app analysis requests to the Google Play Protect (GPP) scanner service and receive the scan results whenever they found new Potentially Harmful Applications (PHAs) in the wild.
+The GPP scanner can also request the partners scanning engines to analyze newly discovered PHAs. All the results will be shared and consolidated, with the analysis results to be used for stopping bad apps from being published on the Play Store, and protect the Android app ecosystem and users from malware attacks.
+""The App Defense Alliance creates a secure two-way communication between Google and our partners to share threat information and new samples as soon as they become available. This results in early detection and mitigation of PHAs,"" Google says.
+""What was previously a reactive effort to catch security vulnerabilities is now a full-fledged and proactive campaign to protect billions of consumers and businesses at the source,"" ESET security evangelist Tony Anscombe added.
+
+
+",en,"
+
+
+
+
+
+
+
+
+
+
+
+Google Allies With Security Companies to Boost Play Store Safety
+06 Nov 2019, 19:24 by Sergiu Gatlan
+
+
+
+Google announced that it will join efforts with ESET, Lookout, and Zimperium to improve malicious Android app detection on submission before they get published on the Play Store are available for download.
+This project couldn't have come sooner seeing that malware has managed to infiltrate Google's app ecosystem more and more often despite the company's efforts to put a stop to it. [1, 2, 3]
+The fight against malicious apps will never end and the only thing to do is to enhance detection and blocking mechanisms as Product Manager for Google Play Andrew Ahn revealed in the Google Play Store 2018 yearly review issued in January 2019.
+Scanning engine integration
+The new partnership—dubbed App Defense Alliance—will allow Google to boost Play Store's safety by increasing detection efficiency by taking advantage of the increased number of scanning engines and direct communication channels with the new partners.
+""As part of this Alliance, we are integrating our Google Play Protect detection systems with each partner’s scanning engines,"" Dave Kleidermacher, VP, Android Security & Privacy said.
+""This will generate new app risk intelligence as apps are being queued to publish. Partners will analyze that dataset and act as another, vital set of eyes prior to an app going live on the Play Store.""
+The Google Play Protect went live in July 2017 and is scanning ""over 50 billion apps on users' devices each day to make sure apps installed on the device aren't behaving in harmful ways.""
+Better insight and detection
+App Defense Alliance partners can now send app analysis requests to the Google Play Protect (GPP) scanner service and receive the scan results whenever they found new Potentially Harmful Applications (PHAs) in the wild.
+The GPP scanner can also request the partners scanning engines to analyze newly discovered PHAs. All the results will be shared and consolidated, with the analysis results to be used for stopping bad apps from being published on the Play Store, and protect the Android app ecosystem and users from malware attacks.
+""The App Defense Alliance creates a secure two-way communication between Google and our partners to share threat information and new samples as soon as they become available. This results in early detection and mitigation of PHAs,"" Google says.
+""What was previously a reactive effort to catch security vulnerabilities is now a full-fledged and proactive campaign to protect billions of consumers and businesses at the source,"" ESET security evangelist Tony Anscombe added.
+
+
+"

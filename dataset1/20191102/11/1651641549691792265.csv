@@ -1,0 +1,48 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Update your browser immediately as Google urgently patch two new Chrome Zero-day exploits
+02 Nov 2019, 11:53 by Surur
+Two new zero-day exploits for the current stable version of the Google Chrome browser, one of which is already being used in the wild has been reported by the National Cyber Security service.
+CVE-2019-13720 and CVE-2019-13721 describe two memory corruption exploits which would allow execution of arbitrary code by hackers.
+Kaspersky notes:
+The exploit used a race condition bug between two threads due to missing proper synchronization between them. It gives an attacker an a Use-After-Free (UaF) condition that is very dangerous because it can lead to code execution scenarios, which is exactly what happens in our case.
+The first affects Chrome’s audio stack and the other the PDFium library, used for PDF document generation and rendering. Kaspersky researchers Anton Ivanov and Alexey Kulaev have confirmed that the audio hack is already being used in the wild.
+Google has released an urgent patch, which updates the Chrome browser to 78.0.3904.87. To see if you have the latest version go to Help -> About Google Chrome in the browser menu. If you do not have it installed this is also a way to prompt Google to download the update.
+Via PCMag
+
+
+",en,"
+
+
+
+
+
+
+
+
+
+
+
+Update your browser immediately as Google urgently patch two new Chrome Zero-day exploits
+02 Nov 2019, 11:53 by Surur
+Two new zero-day exploits for the current stable version of the Google Chrome browser, one of which is already being used in the wild has been reported by the National Cyber Security service.
+CVE-2019-13720 and CVE-2019-13721 describe two memory corruption exploits which would allow execution of arbitrary code by hackers.
+Kaspersky notes:
+The exploit used a race condition bug between two threads due to missing proper synchronization between them. It gives an attacker an a Use-After-Free (UaF) condition that is very dangerous because it can lead to code execution scenarios, which is exactly what happens in our case.
+The first affects Chrome’s audio stack and the other the PDFium library, used for PDF document generation and rendering. Kaspersky researchers Anton Ivanov and Alexey Kulaev have confirmed that the audio hack is already being used in the wild.
+Google has released an urgent patch, which updates the Chrome browser to 78.0.3904.87. To see if you have the latest version go to Help -> About Google Chrome in the browser menu. If you do not have it installed this is also a way to prompt Google to download the update.
+Via PCMag
+
+
+"

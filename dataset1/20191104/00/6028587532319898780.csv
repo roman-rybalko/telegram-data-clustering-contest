@@ -1,0 +1,140 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+How To Reach U.S. Net Zero Emissions By 2050: Decarbonizing Industry
+04 Nov 2019 by Energy Innovation: Policy and Technology
+Presidential candidates, state governments, and utilities are promoting “net zero” emissions targets to rapidly reduce greenhouse gas (GHG) emissions and preserve a safe climate future by helping to limit global warming to well below 2°C. But few of them are exploring exactly how the U.S. could achieve the ambitious goal of remaking its energy economy.The Paris Agreement targets net zero emissions by 2050. More than 60 countries, including Germany and the United Kingdom, have set net zero by 2050 goals, showing that political momentum can spur climate action – if the policy path forward is clear. 
+Energy Innovation previously modeled a scenario to achieve the U.S. Paris Agreement pledge using the peer-reviewed, free, and open-source Energy Policy Simulator (EPS); it now uses the EPS to explore an illustrative policy package to achieve net zero U.S. emissions. By 2050, the net zero pathway abates more than 6 Gt of emissions a year and saves more than 120,000 American lives per year due to reduced particulate pollution.
+This article focusing on the industrial sector is part one in a series of four identifying policy combinations that can achieve net zero U.S. GHG emissions by 2050. Other articles in the series cover the electricity, buildings, and transportation sectors. (While emissions reductions from land use and agriculture represent roughly a tenth of those needed to reach net zero emissions, this series does not focus on that sector.)
+
+Net Zero Emissions: U.S. Industry
+
+Reducing industrial emissions is a critical piece of the net zero puzzle. The U.S. industry sector is responsible for 35% of GHG emissions, or 29% if all emissions from generating electricity are grouped into a separate “electricity” sector (Figure 1).
+
+
+Figure 1: U.S. GHG Emissions by Sector in 2018, with electricity sector emissions assigned to demand ... [+] sectors (left) or represented as a separate sector (right). “Industry” includes manufacturing, construction, and the extraction, refining, and distribution of fossil fuels (including fugitive emissions from natural gas infrastructure). Fluorinated gas emissions are attributed to industry, which produced the gases, not to end users. “Other” includes emissions from water treatment, waste (e.g. landfills), and dedicated district heat plants. “Indirect” emissions are from the generation of purchased electricity. “Industrial Process” emissions are non-energy GHG emissions from the creation of industrial products, such as CO2 released by the chemical breakdown of limestone to make cement. Data from the U.S. Energy Policy Simulator 2.0.0.Energy Innovation
+
+Without policy intervention, industrial emissions are projected to rise from just over 2,000 million metric tons (Mt) of carbon dioxide equivalent (CO2e) per year today to over 2,750 Mt CO2e/yr – more than 35% – by 2050 (Figure 2). The most important contributor to these emissions is the natural gas and petroleum industry, responsible for 40% of direct industrial emissions in 2018. The second-largest contributor is the chemicals and plastics industry (27%). Other major contributors to U.S. industrial emissions are iron and steel (4%), coal mining (4%), and cement/concrete (4%).
+
+
+Figure 2: Direct emissions from U.S. Industry in a Business-as-Usual scenario, 2018-2050. “Natural ... [+] Gas and Petroleum Systems” includes emissions associated with the extraction, refining, and distribution of these fuels, including methane leakage from natural gas infrastructure. “Chemicals” includes the production of chemicals, plastics, fertilizers, etc. Emissions of fluorinated gases (F-gases; strong GHGs used as refrigerants, propellants, and electrical insulators) are attributed to the chemicals industry, not to the end users of those gases, and F-gas emissions are reported in the year those gases are produced, though some of these gases do not reach the atmosphere until the scrappage of the products (refrigerators, air conditioners, etc.) in which the gases are used. Data from the U.S. Energy Policy Simulator 2.0.0.Energy Innovation
+
+
+Policies To Decarbonize The Industry Sector
+
+Fortunately, smart policies and technologies can decarbonize U.S. industry, as part of an economy-wide transformation that achieves zero net emissions by 2050. Figure 3 depicts industry sector emissions reductions caused by each measure in this illustrative net zero pathway as a colored wedge. Industry sector emissions do not reach zero in 2050, because some residual industry sector emissions are counterbalanced by carbon sequestration in the land use and forestry sector.
+
+
+Figure 3: Policies’ contribution to abatement of direct U.S. industrial emissions in the Net Zero ... [+] Emissions scenario, 2018-2050. Data from the U.S. Energy Policy Simulator 2.0.0.Energy Innovation
+
+Ordered from largest to smallest contribution to cumulative 2018-2050 emissions abatement in a net zero scenario:
+
+Electrification and hydrogen (38% of abatement): Today’s industries burn fossil fuels for a variety of needs, especially heating input materials and boilers, but tomorrow’s industries must transition to zero-carbon fuel sources. Some industrial activities can be electrified, which eliminates energy-related emissions when on-site fuel burning is replaced with zero-carbon electricity. Certain processes are difficult or expensive to electrify due to requirements for high heat or chemical reactants, such as making virgin steel from iron ore. Hydrogen can be produced from zero-carbon electricity and used by industry as a thermal fuel and reactant in difficult-to-electrify processes.
+Material efficiency, longevity, and re-use (21%): A large share of industrial emissions are associated with creating materials used in products, buildings, and infrastructure, such as concrete and steel. Smart design and precise use of material (enabled by technologies such as automation and 3D printing) can produce products delivering equal or better services while requiring less material. Improved designs and materials can also lengthen the useful lifetime of buildings or products, so they don’t have to be replaced as often. Buildings and products can also be designed to facilitate re-use by a new owner, and approaches such as vehicle sharing may enable fewer vehicles to provide mobility services for more people.
+Replace fluorinated gases (14%): Fluorinated gases (F-gases) used as refrigerants, propellants, and electrical insulators can be replaced with more climate-friendly alternatives serving the same functions, such as propane, ammonia, isobutane, and various synthetic chemicals. The Montreal Protocol, an international treaty that phased out the use of refrigerants that damage the ozone layer in the 1990s-2000s, has now been extended to similarly phase out F-gases that harm the climate. The U.S. must ratify this extension, which has strong bipartisan and business support, and would create economy-wide benefits including manufacturing jobs and U.S. exports.
+Methane capture and destruction (8%): Methane is the main component of natural gas, with a heat-trapping ability 28 times that of CO2 per molecule over a 100-year timescale. Leaks from natural gas wellheads, pipelines, and equipment were responsible for 31% of U.S. methane emissions in 2015 while and coal mining was responsible for another 9%. Better monitoring and prompt repair of natural gas leaks and systems to destroy methane leaking from coal mines (or phasing out coal mining) can help reduce these emissions.
+Carbon tax (6%): A tax on industry for every unit of GHGs via a well-designed carbon tax (or an equivalent cap-and-trade system) financially incentivizes firms to find innovative ways to reduce emissions, without specifying particular technologies that must be used. Industry is more sensitive to carbon pricing than other sectors, such as buildings (where split incentives and other market and information barriers can prevent price signals from reaching decision makers).
+Industry energy efficiency standards (3%): Industrial energy efficiency investments reduce emissions and fuel expenditures, typically with short payback periods. There remains a great deal of untapped potential for efficiency improvements through new technologies and increased adoption of best practice existing technologies (such as variable speed drives and highly efficient boilers with heat recovery). Designing entire systems for efficiency, rather than simply buying efficient individual components (motors, pumps, etc.), is a crucial strategy. Note that potential abatement from efficiency standards appears low (3%) in this policy pathway because industry transitions to 100% clean energy by 2050 in this net zero scenario. Efficiency standards will drive more emissions reductions if industry fails to meet the 100% clean energy target, and even if industry does achieve this target, efficiency standards lower overall costs by reducing the amount of clean energy generation capacity that must be built by 2050.
+Other policies and technologies (12%): Other industry sector policies included in the net zero policy pathway include reducing the share of highly-emitting materials used in cement and improved worker training. Some non-industry-sector policies also reduce industry sector emissions, generally by raising the price of industrial products, which slightly lowers demand for these products. These policies include a carbon-free electricity standard, an electric vehicle sales mandate, building electrification, and transitioning hydrogen production to electrolysis. (These policies cause more abatement from other sectors than they do from the industry sector, but only abatement of direct industrial emissions is shown in Figure 3.)
+
+
+Fuel Use And Residual Emissions
+
+Reaching net zero emissions reduces overall industrial fuel use for energy purposes from about 19 quads/yr today to just under 9 quads/yr in 2050, while also transitioning to 100% electricity and hydrogen (Figure 4).
+
+
+Figure 4: U.S. industry fuel use by fuel in the Net Zero Emissions scenario, 2018-2050. This graph ... [+] shows only fuel used for energy purposes, not chemical feedstocks. Data from the U.S. Energy Policy Simulator 2.0.0.Energy Innovation
+
+Under the net zero pathway, remaining emissions are industrial process emissions, not energy-related emissions (Figure 5).
+
+
+Figure 5: U.S. industry GHG emissions by pollutant in the Net Zero Emissions scenario, 2018-2050. ... [+] This graph includes both energy-related and process emissions. Data from the U.S. Energy Policy Simulator 2.0.0.Energy Innovation
+
+The main sources of these residual emissions are CO2 from cement production, methane leaks, and F-gas production and use. Eliminating these emissions may require new low-carbon cement chemistry, replacing concrete with other materials (such as wood), eliminating all methane leaks or phasing out natural gas production, and completing F-gas replacement with safer chemicals.
+
+Achieving Low-Carbon Industry For Net Zero Emissions
+
+The industrial sector is a key partner in efforts to achieve net zero emissions. Manufacturers must produce the advanced materials, clean energy vehicles, and renewable electricity generation equipment that will be the cornerstone of a new energy economy, even as they find innovative ways to reduce their own emissions.
+The net zero pathway illustrates a combination of policies and technical measures that can cut industry emissions, helping to achieve a goal of economy-wide, net zero emissions in 2050.
+
+
+",en,"
+
+
+
+
+
+
+
+
+
+
+
+How To Reach U.S. Net Zero Emissions By 2050: Decarbonizing Industry
+04 Nov 2019 by Energy Innovation: Policy and Technology
+Presidential candidates, state governments, and utilities are promoting “net zero” emissions targets to rapidly reduce greenhouse gas (GHG) emissions and preserve a safe climate future by helping to limit global warming to well below 2°C. But few of them are exploring exactly how the U.S. could achieve the ambitious goal of remaking its energy economy.The Paris Agreement targets net zero emissions by 2050. More than 60 countries, including Germany and the United Kingdom, have set net zero by 2050 goals, showing that political momentum can spur climate action – if the policy path forward is clear. 
+Energy Innovation previously modeled a scenario to achieve the U.S. Paris Agreement pledge using the peer-reviewed, free, and open-source Energy Policy Simulator (EPS); it now uses the EPS to explore an illustrative policy package to achieve net zero U.S. emissions. By 2050, the net zero pathway abates more than 6 Gt of emissions a year and saves more than 120,000 American lives per year due to reduced particulate pollution.
+This article focusing on the industrial sector is part one in a series of four identifying policy combinations that can achieve net zero U.S. GHG emissions by 2050. Other articles in the series cover the electricity, buildings, and transportation sectors. (While emissions reductions from land use and agriculture represent roughly a tenth of those needed to reach net zero emissions, this series does not focus on that sector.)
+
+Net Zero Emissions: U.S. Industry
+
+Reducing industrial emissions is a critical piece of the net zero puzzle. The U.S. industry sector is responsible for 35% of GHG emissions, or 29% if all emissions from generating electricity are grouped into a separate “electricity” sector (Figure 1).
+
+
+Figure 1: U.S. GHG Emissions by Sector in 2018, with electricity sector emissions assigned to demand ... [+] sectors (left) or represented as a separate sector (right). “Industry” includes manufacturing, construction, and the extraction, refining, and distribution of fossil fuels (including fugitive emissions from natural gas infrastructure). Fluorinated gas emissions are attributed to industry, which produced the gases, not to end users. “Other” includes emissions from water treatment, waste (e.g. landfills), and dedicated district heat plants. “Indirect” emissions are from the generation of purchased electricity. “Industrial Process” emissions are non-energy GHG emissions from the creation of industrial products, such as CO2 released by the chemical breakdown of limestone to make cement. Data from the U.S. Energy Policy Simulator 2.0.0.Energy Innovation
+
+Without policy intervention, industrial emissions are projected to rise from just over 2,000 million metric tons (Mt) of carbon dioxide equivalent (CO2e) per year today to over 2,750 Mt CO2e/yr – more than 35% – by 2050 (Figure 2). The most important contributor to these emissions is the natural gas and petroleum industry, responsible for 40% of direct industrial emissions in 2018. The second-largest contributor is the chemicals and plastics industry (27%). Other major contributors to U.S. industrial emissions are iron and steel (4%), coal mining (4%), and cement/concrete (4%).
+
+
+Figure 2: Direct emissions from U.S. Industry in a Business-as-Usual scenario, 2018-2050. “Natural ... [+] Gas and Petroleum Systems” includes emissions associated with the extraction, refining, and distribution of these fuels, including methane leakage from natural gas infrastructure. “Chemicals” includes the production of chemicals, plastics, fertilizers, etc. Emissions of fluorinated gases (F-gases; strong GHGs used as refrigerants, propellants, and electrical insulators) are attributed to the chemicals industry, not to the end users of those gases, and F-gas emissions are reported in the year those gases are produced, though some of these gases do not reach the atmosphere until the scrappage of the products (refrigerators, air conditioners, etc.) in which the gases are used. Data from the U.S. Energy Policy Simulator 2.0.0.Energy Innovation
+
+
+Policies To Decarbonize The Industry Sector
+
+Fortunately, smart policies and technologies can decarbonize U.S. industry, as part of an economy-wide transformation that achieves zero net emissions by 2050. Figure 3 depicts industry sector emissions reductions caused by each measure in this illustrative net zero pathway as a colored wedge. Industry sector emissions do not reach zero in 2050, because some residual industry sector emissions are counterbalanced by carbon sequestration in the land use and forestry sector.
+
+
+Figure 3: Policies’ contribution to abatement of direct U.S. industrial emissions in the Net Zero ... [+] Emissions scenario, 2018-2050. Data from the U.S. Energy Policy Simulator 2.0.0.Energy Innovation
+
+Ordered from largest to smallest contribution to cumulative 2018-2050 emissions abatement in a net zero scenario:
+
+Electrification and hydrogen (38% of abatement): Today’s industries burn fossil fuels for a variety of needs, especially heating input materials and boilers, but tomorrow’s industries must transition to zero-carbon fuel sources. Some industrial activities can be electrified, which eliminates energy-related emissions when on-site fuel burning is replaced with zero-carbon electricity. Certain processes are difficult or expensive to electrify due to requirements for high heat or chemical reactants, such as making virgin steel from iron ore. Hydrogen can be produced from zero-carbon electricity and used by industry as a thermal fuel and reactant in difficult-to-electrify processes.
+Material efficiency, longevity, and re-use (21%): A large share of industrial emissions are associated with creating materials used in products, buildings, and infrastructure, such as concrete and steel. Smart design and precise use of material (enabled by technologies such as automation and 3D printing) can produce products delivering equal or better services while requiring less material. Improved designs and materials can also lengthen the useful lifetime of buildings or products, so they don’t have to be replaced as often. Buildings and products can also be designed to facilitate re-use by a new owner, and approaches such as vehicle sharing may enable fewer vehicles to provide mobility services for more people.
+Replace fluorinated gases (14%): Fluorinated gases (F-gases) used as refrigerants, propellants, and electrical insulators can be replaced with more climate-friendly alternatives serving the same functions, such as propane, ammonia, isobutane, and various synthetic chemicals. The Montreal Protocol, an international treaty that phased out the use of refrigerants that damage the ozone layer in the 1990s-2000s, has now been extended to similarly phase out F-gases that harm the climate. The U.S. must ratify this extension, which has strong bipartisan and business support, and would create economy-wide benefits including manufacturing jobs and U.S. exports.
+Methane capture and destruction (8%): Methane is the main component of natural gas, with a heat-trapping ability 28 times that of CO2 per molecule over a 100-year timescale. Leaks from natural gas wellheads, pipelines, and equipment were responsible for 31% of U.S. methane emissions in 2015 while and coal mining was responsible for another 9%. Better monitoring and prompt repair of natural gas leaks and systems to destroy methane leaking from coal mines (or phasing out coal mining) can help reduce these emissions.
+Carbon tax (6%): A tax on industry for every unit of GHGs via a well-designed carbon tax (or an equivalent cap-and-trade system) financially incentivizes firms to find innovative ways to reduce emissions, without specifying particular technologies that must be used. Industry is more sensitive to carbon pricing than other sectors, such as buildings (where split incentives and other market and information barriers can prevent price signals from reaching decision makers).
+Industry energy efficiency standards (3%): Industrial energy efficiency investments reduce emissions and fuel expenditures, typically with short payback periods. There remains a great deal of untapped potential for efficiency improvements through new technologies and increased adoption of best practice existing technologies (such as variable speed drives and highly efficient boilers with heat recovery). Designing entire systems for efficiency, rather than simply buying efficient individual components (motors, pumps, etc.), is a crucial strategy. Note that potential abatement from efficiency standards appears low (3%) in this policy pathway because industry transitions to 100% clean energy by 2050 in this net zero scenario. Efficiency standards will drive more emissions reductions if industry fails to meet the 100% clean energy target, and even if industry does achieve this target, efficiency standards lower overall costs by reducing the amount of clean energy generation capacity that must be built by 2050.
+Other policies and technologies (12%): Other industry sector policies included in the net zero policy pathway include reducing the share of highly-emitting materials used in cement and improved worker training. Some non-industry-sector policies also reduce industry sector emissions, generally by raising the price of industrial products, which slightly lowers demand for these products. These policies include a carbon-free electricity standard, an electric vehicle sales mandate, building electrification, and transitioning hydrogen production to electrolysis. (These policies cause more abatement from other sectors than they do from the industry sector, but only abatement of direct industrial emissions is shown in Figure 3.)
+
+
+Fuel Use And Residual Emissions
+
+Reaching net zero emissions reduces overall industrial fuel use for energy purposes from about 19 quads/yr today to just under 9 quads/yr in 2050, while also transitioning to 100% electricity and hydrogen (Figure 4).
+
+
+Figure 4: U.S. industry fuel use by fuel in the Net Zero Emissions scenario, 2018-2050. This graph ... [+] shows only fuel used for energy purposes, not chemical feedstocks. Data from the U.S. Energy Policy Simulator 2.0.0.Energy Innovation
+
+Under the net zero pathway, remaining emissions are industrial process emissions, not energy-related emissions (Figure 5).
+
+
+Figure 5: U.S. industry GHG emissions by pollutant in the Net Zero Emissions scenario, 2018-2050. ... [+] This graph includes both energy-related and process emissions. Data from the U.S. Energy Policy Simulator 2.0.0.Energy Innovation
+
+The main sources of these residual emissions are CO2 from cement production, methane leaks, and F-gas production and use. Eliminating these emissions may require new low-carbon cement chemistry, replacing concrete with other materials (such as wood), eliminating all methane leaks or phasing out natural gas production, and completing F-gas replacement with safer chemicals.
+
+Achieving Low-Carbon Industry For Net Zero Emissions
+
+The industrial sector is a key partner in efforts to achieve net zero emissions. Manufacturers must produce the advanced materials, clean energy vehicles, and renewable electricity generation equipment that will be the cornerstone of a new energy economy, even as they find innovative ways to reduce their own emissions.
+The net zero pathway illustrates a combination of policies and technical measures that can cut industry emissions, helping to achieve a goal of economy-wide, net zero emissions in 2050.
+
+
+"

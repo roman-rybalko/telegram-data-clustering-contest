@@ -1,0 +1,140 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Regulated ETH Futures? Not So Fast
+02 Nov 2019, 11:40 by Noelle Acheson
+
+Noelle Acheson is a veteran of company analysis and CoinDesk’s Director of Research. The opinions expressed in this article are the author’s own.
+
+The following article originally appeared in Institutional Crypto by CoinDesk, a weekly newsletter focused on institutional investment in crypto assets. Sign up for free here.
+
+Earlier this month, Heath Tarbert – the new chairman of the U.S. Commodity Futures Trading Commission (CFTC) – declared that ether, the token of the ethereum blockchain, was a commodity.
+This is significant, coming from the regulator of one of the largest derivatives markets in the world. Why? Because it opens the door to the possibility of regulated ether derivatives in the near future. The chairman was even more specific: “I’d say it is likely that you would see a futures contract in the next six months to a year.”
+The market got excited because this would enhance the token’s appeal to institutional investors. Derivatives enable hedging, which is a significant part of portfolio management and a solid support for long positions. A lively derivatives market, the reasoning goes, will encourage more investment, which will boost the price, which will encourage more investment, and so on.
+Yet, with respect, I believe the chairman is mistaken. We will not see ether futures in significant volume on a regulated U.S. exchange any time soon. If ever.
+Reputation risk
+Although it’s not just about the lack of demand, let’s look at that first.
+Ether futures currently trade on exchanges based outside the U.S., but volumes have been thin relative to the spot market. On BitMEX, Huobi and Deribit, three of the largest crypto platforms that offer ether futures, the average 24-hour volume is less than 10% that of bitcoin, while the equivalent ratio in the spot market is almost 25%.
+
+
+
+The difference could be due to ethereum’s relative youth, and the gap could close as the network matures. Or it could be that bitcoin will always be the institutional-grade asset of choice, rendering ether derivative demand too insignificant for major markets to profitably develop.
+Either way, demand can be flexible. The real barriers to a successful launch of ether derivatives go much deeper.
+Underlying risk
+Last week ethereum developers announced the target date for the next system-wide upgrade: December 4. This will be executed via a hard fork, in which the entire ecosystem needs to change – blocks processed on the old version will not be valid on the new. There are several of these coming up.
+This introduces an additional element of risk into the market. Earlier this year, an upgrade was delayed just 48 hours before it was due to launch, due to a “critical vulnerability.” And while it is extremely likely that bugs will be found and fixed in time, there is always the “what if?” that risk-takers have to focus on.
+Even more worrying for ether derivative watchers is the upcoming consensus algorithm shift. Ethereum currently runs on a proof-of-work consensus algorithm similar to that of bitcoin. It has long been working on a migration to a different system, called proof-of-stake, in which the amount of ether you “stake” gives you the credentials to validate transactions and append new blocks on the blockchain.
+This is like changing the motor of your car while it is speeding along the highway. No matter how much testing is done and no matter how many parallel systems are in operation, it’s risky.
+True, risk is precisely what derivatives were invented to mitigate – but the creators of derivative products like to have that risk reasonably quantifiable. While derivatives can help investors control risk, they don’t eliminate it; they redistribute it. The extra risk for exchanges will need to be compensated, and uncertainty of this magnitude could make ether derivatives prohibitively expensive.
+What’s more, when ethereum hard forks over to its new algorithm, there is always a risk that not all miners will switch. The current ethereum network could continue to exist and perhaps even thrive if enough participants wish it. Which token would derivative contracts track?
+Existential risk
+Another risk looming over ethereum is that of a network rewind. In 2016, in response to a ~$60 million hack of an ethereum-based application, ethereum’s core participants decided to rewind the blockchain to its pre-hack state, restoring the stolen funds and creating a split in the ecosystem that persists to this day.
+This was a few years ago, when ethereum was still young and many believed that such a large hack would stunt its growth prospects – few expect it to be able to successfully execute something similar today. But last weekend, ethereum’s creator Vitalik Buterin posted the following poll on Twitter:
+
+
+
+Thankfully, the “never rewind” majority should reassure the market of the blockchain’s integrity and stability. But almost 40% of voters think ethereum should be able to, and the fact that Vitalik is even asking the question is a reminder that it is possible.
+Ether may be a “commodity” in the eyes of the CFTC – but, traditionally, commodities can’t change their history or their characteristics. Has the regulator ever approved derivatives based on such a malleable asset? How would you even start ensuring that there is no information asymmetry and the risk is fairly priced in?
+But there’s an even more existential question.
+Regulatory risk
+Ethereum’s proposed algorithm change could lead to a bigger adjustment: ether could stop being a commodity and become a security.
+Under proof-of-stake, ether holders can “stake” their tokens in order to influence transaction validation and block creation. In exchange for doing so, they earn an income.
+This exchange isn’t dissimilar to how miners earn rewards on a proof-of-work blockchain such as bitcoin. In proof-of-stake, however, the rewards are distributed as annualized interest as opposed to randomized payout making for more regular and predictable returns on ether.
+Is this enough to make ether a security rather than a commodity? Maybe.
+This would not invalidate any outstanding ether derivatives. It would, however, move them into the joint jurisdiction of the CFTC and the U.S. Securities and Exchange Commission (SEC).
+This becomes significant when you compare the two securities regulators’ views towards crypto assets. The CFTC has long championed the innovation behind cryptocurrencies – former chairman Chris Giancarlo is affectionately known in the blockchain sector as “Crypto Dad” – and the new chairman’s recent comments referenced earlier show that he seems to feel the same.
+The SEC, on the other hand, has repeatedly blocked the issuance of ETFs based on bitcoin, on the grounds that it is too immature a market. If it thinks bitcoin is not ready, it’s a stretch to conclude it will think differently about ethereum.
+This is likely to give any regulated derivative platform pause.
+Investment risk
+So, given ethereum’s development stage and outlook, as well as little evidence of unsatisfied demand, ether derivatives on a U.S.-based regulated exchange are unlikely any time soon. There are a lot of issues to work out, in a sector that is already giving regulators and infrastructure providers more than enough to worry about.
+This shouldn’t affect the phenomenal amount of work underway on the platform. It is, however, likely to affect broad institutional acceptance of ether as an investment asset. Large investors rarely take unidirectional bets.
+Does that matter? Not necessarily – development will continue, and ethereum could still end up being a new operating system for the economy. Ether was not created as an investment asset.
+Then again, nor was bitcoin. Markets have a way of latching on to and commoditizing ideas, and ethereum may one day become the darling of the alternative investment world. It’s still very young, though, has many teething pains ahead of it, and a while to go before traditional financial infrastructure supports its entrance into the mainstream.
+
+Disclosure: The author holds a small amount of bitcoin and ether.
+
+
+Ethereum coin and keyboard image via Shutterstock
+
+
+
+",en,"
+
+
+
+
+
+
+
+
+
+
+
+Regulated ETH Futures? Not So Fast
+02 Nov 2019, 11:40 by Noelle Acheson
+
+Noelle Acheson is a veteran of company analysis and CoinDesk’s Director of Research. The opinions expressed in this article are the author’s own.
+
+The following article originally appeared in Institutional Crypto by CoinDesk, a weekly newsletter focused on institutional investment in crypto assets. Sign up for free here.
+
+Earlier this month, Heath Tarbert – the new chairman of the U.S. Commodity Futures Trading Commission (CFTC) – declared that ether, the token of the ethereum blockchain, was a commodity.
+This is significant, coming from the regulator of one of the largest derivatives markets in the world. Why? Because it opens the door to the possibility of regulated ether derivatives in the near future. The chairman was even more specific: “I’d say it is likely that you would see a futures contract in the next six months to a year.”
+The market got excited because this would enhance the token’s appeal to institutional investors. Derivatives enable hedging, which is a significant part of portfolio management and a solid support for long positions. A lively derivatives market, the reasoning goes, will encourage more investment, which will boost the price, which will encourage more investment, and so on.
+Yet, with respect, I believe the chairman is mistaken. We will not see ether futures in significant volume on a regulated U.S. exchange any time soon. If ever.
+Reputation risk
+Although it’s not just about the lack of demand, let’s look at that first.
+Ether futures currently trade on exchanges based outside the U.S., but volumes have been thin relative to the spot market. On BitMEX, Huobi and Deribit, three of the largest crypto platforms that offer ether futures, the average 24-hour volume is less than 10% that of bitcoin, while the equivalent ratio in the spot market is almost 25%.
+
+
+
+The difference could be due to ethereum’s relative youth, and the gap could close as the network matures. Or it could be that bitcoin will always be the institutional-grade asset of choice, rendering ether derivative demand too insignificant for major markets to profitably develop.
+Either way, demand can be flexible. The real barriers to a successful launch of ether derivatives go much deeper.
+Underlying risk
+Last week ethereum developers announced the target date for the next system-wide upgrade: December 4. This will be executed via a hard fork, in which the entire ecosystem needs to change – blocks processed on the old version will not be valid on the new. There are several of these coming up.
+This introduces an additional element of risk into the market. Earlier this year, an upgrade was delayed just 48 hours before it was due to launch, due to a “critical vulnerability.” And while it is extremely likely that bugs will be found and fixed in time, there is always the “what if?” that risk-takers have to focus on.
+Even more worrying for ether derivative watchers is the upcoming consensus algorithm shift. Ethereum currently runs on a proof-of-work consensus algorithm similar to that of bitcoin. It has long been working on a migration to a different system, called proof-of-stake, in which the amount of ether you “stake” gives you the credentials to validate transactions and append new blocks on the blockchain.
+This is like changing the motor of your car while it is speeding along the highway. No matter how much testing is done and no matter how many parallel systems are in operation, it’s risky.
+True, risk is precisely what derivatives were invented to mitigate – but the creators of derivative products like to have that risk reasonably quantifiable. While derivatives can help investors control risk, they don’t eliminate it; they redistribute it. The extra risk for exchanges will need to be compensated, and uncertainty of this magnitude could make ether derivatives prohibitively expensive.
+What’s more, when ethereum hard forks over to its new algorithm, there is always a risk that not all miners will switch. The current ethereum network could continue to exist and perhaps even thrive if enough participants wish it. Which token would derivative contracts track?
+Existential risk
+Another risk looming over ethereum is that of a network rewind. In 2016, in response to a ~$60 million hack of an ethereum-based application, ethereum’s core participants decided to rewind the blockchain to its pre-hack state, restoring the stolen funds and creating a split in the ecosystem that persists to this day.
+This was a few years ago, when ethereum was still young and many believed that such a large hack would stunt its growth prospects – few expect it to be able to successfully execute something similar today. But last weekend, ethereum’s creator Vitalik Buterin posted the following poll on Twitter:
+
+
+
+Thankfully, the “never rewind” majority should reassure the market of the blockchain’s integrity and stability. But almost 40% of voters think ethereum should be able to, and the fact that Vitalik is even asking the question is a reminder that it is possible.
+Ether may be a “commodity” in the eyes of the CFTC – but, traditionally, commodities can’t change their history or their characteristics. Has the regulator ever approved derivatives based on such a malleable asset? How would you even start ensuring that there is no information asymmetry and the risk is fairly priced in?
+But there’s an even more existential question.
+Regulatory risk
+Ethereum’s proposed algorithm change could lead to a bigger adjustment: ether could stop being a commodity and become a security.
+Under proof-of-stake, ether holders can “stake” their tokens in order to influence transaction validation and block creation. In exchange for doing so, they earn an income.
+This exchange isn’t dissimilar to how miners earn rewards on a proof-of-work blockchain such as bitcoin. In proof-of-stake, however, the rewards are distributed as annualized interest as opposed to randomized payout making for more regular and predictable returns on ether.
+Is this enough to make ether a security rather than a commodity? Maybe.
+This would not invalidate any outstanding ether derivatives. It would, however, move them into the joint jurisdiction of the CFTC and the U.S. Securities and Exchange Commission (SEC).
+This becomes significant when you compare the two securities regulators’ views towards crypto assets. The CFTC has long championed the innovation behind cryptocurrencies – former chairman Chris Giancarlo is affectionately known in the blockchain sector as “Crypto Dad” – and the new chairman’s recent comments referenced earlier show that he seems to feel the same.
+The SEC, on the other hand, has repeatedly blocked the issuance of ETFs based on bitcoin, on the grounds that it is too immature a market. If it thinks bitcoin is not ready, it’s a stretch to conclude it will think differently about ethereum.
+This is likely to give any regulated derivative platform pause.
+Investment risk
+So, given ethereum’s development stage and outlook, as well as little evidence of unsatisfied demand, ether derivatives on a U.S.-based regulated exchange are unlikely any time soon. There are a lot of issues to work out, in a sector that is already giving regulators and infrastructure providers more than enough to worry about.
+This shouldn’t affect the phenomenal amount of work underway on the platform. It is, however, likely to affect broad institutional acceptance of ether as an investment asset. Large investors rarely take unidirectional bets.
+Does that matter? Not necessarily – development will continue, and ethereum could still end up being a new operating system for the economy. Ether was not created as an investment asset.
+Then again, nor was bitcoin. Markets have a way of latching on to and commoditizing ideas, and ethereum may one day become the darling of the alternative investment world. It’s still very young, though, has many teething pains ahead of it, and a while to go before traditional financial infrastructure supports its entrance into the mainstream.
+
+Disclosure: The author holds a small amount of bitcoin and ether.
+
+
+Ethereum coin and keyboard image via Shutterstock
+
+
+
+"

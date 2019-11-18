@@ -1,0 +1,70 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Samsung Developer Conference 2019, queste le novità principali
+04 Nov 2019, 10:58 by Antonino Caffo
+La Samsung Developer Conference riunisce ogni anno migliaia di sviluppatori e creatori, per gettare uno sguardo a ciò che sarà possibile nel futuro della mobilità, e non solo. La conferenza, della durata di due giorni, è sempre un buon momento per scoprire annunci interessanti, in cui Samsung illustra i più recenti progressi tecnologici.
+In calce all’edizione 2019, la compagnia ha condiviso la propria vision per la prossima era del “Mobile and Connected Living”, ispirando sviluppatori, leader aziendali e consumatori a sperimentare esperienze innovative con i dispositivi che utilizzano ogni giorno. Questi gli annunci principali.
+Per aiutare le persone a scoprire come utilizzare Bixby e eseguire le attività in modo più semplice e rapido, all’inizio di quest’anno Samsung ha lanciato Bixby Marketplace, creando una risorsa che permette di presentare le proprie “capsule” Bixby a milioni di utenti. Negli ultimi sei mesi, le dimensioni della community di sviluppatori Bixby sono raddoppiate. Inoltre, a partire dal 2020, Bixby Marketplace si espanderà gradualmente, consentendo agli sviluppatori di offrire i propri servizi su più dispositivi Samsung.
+Per rendere più facile per gli sviluppatori creare nuove esperienze basate sulla piattaforma di intelligenza artificiale dell’azienda e garantire ai consumatori un’esperienza più intuitiva, nel corso della SDC19 Samsung ha annunciato le avanzate funzionalità disponibili in Bixby Developer Studio.
+Tra queste i nuovi modelli Bixby che rendono molto semplice per gli sviluppatori creare capsule utilizzando moduli preesistenti, in modo da evitare di dover iniziare da zero. Le visualizzazioni Bixby consentono agli sviluppatori di creare capsule con un design uniforme non solo per gli smartphone: anche per televisori, tablet, smartwatch e frigoriferi.
+Gli sviluppatori ora possono registrare le proprie capsule nelle categorie in linguaggio naturale. Quando gli utenti chiedono aiuto a Bixby in relazione a una categoria (ad esempio, radio, notizie o navigazione), l’IA suggerisce una capsula che può aiutarli a ottenere ciò di cui hanno bisogno in modo più facile e veloce, anche senza specificare il nome esatto della capsula.
+
+
+
+Per aiutare gli sviluppatori a sfruttare e integrare i dispositivi esistenti con la piattaforma SmartThings, Samsung ha annunciato la nuova API Rules per le Smart Home; automatizzate per riflettere le routine quotidiane individuali su un’ampia gamma di dispositivi SmartThings.
+Samsung prevede di lanciare il programma SmartThings Device SDK Beta all’inizio del 2020 per consentire a un maggior numero di produttori di terze parti di creare dispositivi compatibili con SmartThings.
+La personalizzazione software mobile casalinga, One UI 2, include ora nuove funzionalità che semplificano l’interfaccia utente, consentendo agli utenti di interagire facilmente in modo naturale e migliorando al tempo stesso la leggibilità.
+Inoltre, per rendere coerenti sia l’esperienza utente che quella di sviluppo su tutti i dispositivi, Samsung sta ampliando l’utilizzo di One UI 2 oltre gli smartphone, espandendolo a tablet, dispositivi indossabili e nuovi fattori di forma, tra cui i pieghevoli.
+Come promesso alla SDC lo scorso anno, Samsung continuerà a sperimentare una serie di nuovi fattori di forma nella categoria dei dispositivi pieghevoli. Alla SDC19, Samsung ha invitato sviluppatori e utenti a unirsi all’esplorazione di nuovi casi di utilizzo, ad esempio i foldable a conchiglia.
+Samsung sta anche investendo nelle tecnologie 8K. Con AI ScaleNet, ha reso possibile lo streaming di video 8K di alta qualità su reti con capacità di larghezza di banda inferiore. Ci sono anche nuove esperienze nei quasi 100 milioni di Smart TV basate su Tizen. Wits carica automaticamente una modifica del codice nella TV, consentendo agli sviluppatori di visualizzare l’aggiornamento in modo praticamente immediato e riducendo significativamente i tempi di sviluppo.
+EasyST semplifica il test della riproduzione dei contenuti, evitando agli sviluppatori di creare una propria app di test per verificare che il contenuto venga eseguito come previsto. TIFA (Tizen Identifier for Advertising) offre ai consumatori la possibilità di limitare il tracciamento degli annunci o ritirare il consenso per la pubblicità mirata.
+Infine Secure Development Lifecycle offre revisioni sistematiche in ogni fase del processo di sviluppo, supply chain e produzione. Per garantire la massima tranquillità per sviluppatori e utenti, Samsung offre Knox SDK, che consente ai partner e agli sviluppatori di app di integrare avanzate soluzioni di sicurezza nei propri servizi e applicazioni.
+Samsung ha inoltre collaborato con il BSI (l’agenzia governativa tedesca responsabile per la sicurezza informatica) e partner del settore allo sviluppo di un eID abilitato ai dispositivi mobili per i servizi digitali, in modo da supportare i clienti e le pubbliche amministrazioni attraverso una solida base per servizi di identità attendibili.
+
+
+",it,"
+
+
+
+
+
+
+
+
+
+
+
+Samsung Developer Conference 2019, these are the main innovations
+04 Nov 2019, 10:58 by Antonino Caffo
+The Samsung Developer Conference brings together thousands of developers and creators every year, to take a look at what will be possible in the future of mobility, and beyond. The two-day conference is always a good time to discover interesting announcements, in which Samsung illustrates the latest technological advances.
+At the bottom of the 2019 edition, the company shared its vision for the next era of ""Mobile and Connected Living"", inspiring developers, business leaders and consumers to experiment with innovative experiences with the devices they use every day. These are the main announcements.
+To help people find out how to use Bixby and perform tasks faster and easier, Samsung launched Bixby Marketplace earlier this year, creating a resource that allows them to present their Bixby ""capsules"" to millions of users. . In the last six months, the size of the Bixby developer community has doubled. Furthermore, starting in 2020, Bixby Marketplace will gradually expand, allowing developers to offer their services on multiple Samsung devices.
+To make it easier for developers to create new experiences based on the company's artificial intelligence platform and provide consumers with a more intuitive experience, during the SDC19 Samsung announced the advanced features available in Bixby Developer Studio.
+These include the new Bixby models that make it very easy for developers to create capsules using pre-existing modules, in order to avoid having to start from scratch. The Bixby views allow developers to create capsules with a uniform design not only for smartphones: even for televisions, tablets, smartwatches and refrigerators.
+Developers can now register their capsules in the natural language categories. When users ask Bixby for help in relation to a category (for example, radio, news or navigation), the AI suggests a capsule that can help them get what they need faster and easier, even without specifying the exact name of the capsule.
+
+
+
+To help developers exploit and integrate existing devices with the SmartThings platform, Samsung has announced the new API Rules for Smart Home; automated to reflect individual daily routines on a wide range of SmartThings devices.
+Samsung plans to launch the SmartThings Device SDK Beta program early in 2020 to allow more third-party vendors to create SmartThings-compatible devices.
+The home mobile software customization, One UI 2, now includes new features that simplify the user interface, allowing users to easily interact in a natural way while improving readability.
+Furthermore, to make both the user experience and the development experience consistent on all devices, Samsung is extending the use of One UI 2 beyond smartphones, expanding it to tablets, wearable devices and new form factors, including leaflets.
+As promised at the SDC last year, Samsung will continue to experiment with a number of new form factors in the folding device category. At SDC19, Samsung invited developers and users to join in exploring new use cases, such as foldable clamshells.
+Samsung is also investing in 8K technologies. With AI ScaleNet, it has made it possible to stream high quality 8K videos over networks with lower bandwidth capabilities. There are also new experiences in the nearly 100 million Tizen-based Smart TVs. Wits automatically uploads a code change to the TV, allowing developers to view the update almost immediately and significantly reduce development time.
+EasyST simplifies content playback testing, preventing developers from creating their own test app to verify that the content runs as expected. TIFA (Tizen Identifier for Advertising) offers consumers the ability to limit ad tracking or withdraw consent for targeted advertising.
+Finally, Secure Development Lifecycle offers systematic reviews at every stage of the development, supply chain and production process. To ensure peace of mind for developers and users, Samsung offers the Knox SDK, which allows partners and app developers to integrate advanced security solutions into their services and applications.
+Samsung has also collaborated with the BSI (the German government agency responsible for information security) and industry partner for the development of an eID-enabled mobile device for digital services, in order to support customers and public administrations through a solid basis for reliable identity services.
+
+
+"

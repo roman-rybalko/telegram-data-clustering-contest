@@ -1,0 +1,80 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Chrome Browser Had Two Serious Vulnerabilities: Google Fixed
+05 Nov 2019, 17:30 by Argam Artashyan
+Chrome Browser Had Two Serious Vulnerabilities: Google Fixed4 (80%) 1 vote
+The Google Chrome browser was found to have two high-risk vulnerabilities. They allow hackers to escalate privileges and thereby perform high-level malicious attacks on users’ computers.
+The Chrome Security Team said the use-after-free vulnerability allowed hackers to execute arbitrary code on infected devices. One of the vulnerabilities exists in the browser’s audio component (CVE-2019-13720), while the other exists in the PDFium library (CVE-2019-13721). All three major platforms of Windows, macOS, and GNU/Linux couldn’t pass this.
+
+
+
+Both of these vulnerabilities are highly rigorous. They allow hackers to execute arbitrary code in the Chrome browser, obtain sensitive information, and even bypass the host’s unauthorized security mechanisms to fully manipulate the computer.
+The Kaspersky researchers have named the CVE-2019-13720 vulnerability as Operation WizardOpium. That has its story. They have not been able to establish a definitive link of this vulnerability with any known threat actors. Many think the attack has come from the Darkhotel’s network army. By the way, the latter invaded a Korean website and hangs a JS script.
+Currently, Google has released an emergency patch for these two vulnerabilities and fixed them. The stable version of the Chrome browser has been upgraded to 78.0.3904.87. Google recommends that all Chrome users upgrade to the latest version as soon as possible.
+This version fixes both issues (focusing on fixes provided by external researchers. See the Chrome Security page for more information):
+
+
+[$7500] [1013868] High CVE-2019-13721: Use-after-free in PDFium components. Reported by Banananapenguin on 2019-10-12.
+
+
+
+
+[$TBD] [1019226] High CVE-2019-13720: Use-after-free in audio components. Anton Ivanov and Alexey Kulaev of Kaspersky Lab reported on 2019-10-29.
+
+
+
+
+
+
+
+",en,"
+
+
+
+
+
+
+
+
+
+
+
+Chrome Browser Had Two Serious Vulnerabilities: Google Fixed
+05 Nov 2019, 17:30 by Argam Artashyan
+Chrome Browser Had Two Serious Vulnerabilities: Google Fixed4 (80%) 1 vote
+The Google Chrome browser was found to have two high-risk vulnerabilities. They allow hackers to escalate privileges and thereby perform high-level malicious attacks on users’ computers.
+The Chrome Security Team said the use-after-free vulnerability allowed hackers to execute arbitrary code on infected devices. One of the vulnerabilities exists in the browser’s audio component (CVE-2019-13720), while the other exists in the PDFium library (CVE-2019-13721). All three major platforms of Windows, macOS, and GNU/Linux couldn’t pass this.
+
+
+
+Both of these vulnerabilities are highly rigorous. They allow hackers to execute arbitrary code in the Chrome browser, obtain sensitive information, and even bypass the host’s unauthorized security mechanisms to fully manipulate the computer.
+The Kaspersky researchers have named the CVE-2019-13720 vulnerability as Operation WizardOpium. That has its story. They have not been able to establish a definitive link of this vulnerability with any known threat actors. Many think the attack has come from the Darkhotel’s network army. By the way, the latter invaded a Korean website and hangs a JS script.
+Currently, Google has released an emergency patch for these two vulnerabilities and fixed them. The stable version of the Chrome browser has been upgraded to 78.0.3904.87. Google recommends that all Chrome users upgrade to the latest version as soon as possible.
+This version fixes both issues (focusing on fixes provided by external researchers. See the Chrome Security page for more information):
+
+
+[$7500] [1013868] High CVE-2019-13721: Use-after-free in PDFium components. Reported by Banananapenguin on 2019-10-12.
+
+
+
+
+[$TBD] [1019226] High CVE-2019-13720: Use-after-free in audio components. Anton Ivanov and Alexey Kulaev of Kaspersky Lab reported on 2019-10-29.
+
+
+
+
+
+
+
+"

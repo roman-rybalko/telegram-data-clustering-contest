@@ -1,0 +1,176 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+7nm mobilní Ryzeny/APU Renoir blízko. Šéfka AMD potvrdila vydání začátkem roku 2020
+05 Nov 2019, 06:00 by Jan Olšan
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+VŠECHNY FOTOGRAFIE
+
+Letos AMD vydalo 7nm Ryzeny 3000 pro desktop, ale APU (procesory s integrovanou grafikou) a na nich založené Ryzeny 3000 pro notebooky jsou stále vyráběné 12nm procesem a mají starší architekturu jader Zen 1. Kdy se také tato (velmi významná) část trhu dočká 7nm čipů a jader Zen 2 s vyšším IPC, bylo dlouho nejasné, doposud o tom, na kdy je vydání naplánováno, nic neuniklo. Nyní po finančních výsledcích za třetí čtvrtletí ale snad konečně něco víme. Vydání 7nm Ryzenů pro notebooky má nastat velmi brzo, možná už v lednu.
+7nm APU konečně blízko
+Informace neunikla pokoutně, ale pochází z oficiálních míst, přímo od šéfky AMD Lisy Su, která je sdělila v rozhovoru s webem VentureBeat, právě v závěsu za vydáním finančních výsledků. Ten se zeptal na nadcházející produkty (v kontextu toho, že i Intel má před vydáním novinek, například a highendových procesorů Core 10. generace a mainstreamových desktopových Comet Lake-S, k nimž čerstvě unikly parametry).
+Lisa Su uvedla, že po Ryzenu 9 3950X a Threadripperů 3000 (ty vyjdou v nynějším měsíci) jsou na řadě „mobilní produkty příští generace“. Ty podle Lisy Su přijdou někdy v počátečních fázích („early“) roku 2020. V další větě pak uvádí, že „uvidíme 7nm mobilní čipy, které teprve mají přijít na trh“. Striktně vzato by asi tyto dvě oddělené formulace mohly mluvit o dvou různých věcech, ale spíš je asi řeč o tomtéž, čili o 7nm procesem vyráběných APU. Ta mají mít podle starších úniků kódové označení Renoir.
+Co přesně znamená „early 2020“, nelze říct s jistotou, ale hned na začátku ledna se koná veletrh CES 2020, který na novinky působí tak trochu jako hromosvod. Je tedy hodně pravděpodobné, že AMD si odhalení mobilních Ryzenů 4000 vyhradí právě na tuto akci (bude to 7. až 10. ledna/januára). Letos právě na ní vypustila oficiálně 12nm APU Picasso. Toto odhalení může ovšem být papírové – první notebooky, v nichž poběží ony Ryzeny 4000, se mohou začít prodávat až později. Desktopová verze těchto APU Ryzenů 4000 pak určitě vyjde o dost později. Protože desktopové Picasso se letos začalo prodávat až v létě, bude Ryzen 4000/Renoir s grafikou pro socket AM4 také asi až záležitost Q3 2020.
+O APU Renoir, které by snad mělo být čipem tvořícím tyto Ryzeny 4000, se toho zatím ví dost málo. V Linuxových ovladačích uniklo, že tato mobilní APU budou snad konečně podporovat paměti LPDDR4 (LPDDR3 procesory AMD bohužel také neuměly/neumí). Aktualizované by měly být také obrazové výstupy a multimediální výbava (dekódování videa), technologie by měly být podobné jako u grafik Navi. Ale samotné GPU a jeho výpočetní jednotky zdá se budou založené stále na architektuře Vega. Obecně se očekává, že by čip měl být 7nm a obsahovat jádra Zen 2, ale myslím, že nějaké konkrétní důkazy pro toto ještě nemáme. Podobně není jasný počet jader. Hodně staré roadmapy počítaly stále se čtyřmi jádry, nedávno se zase objevily zmínky, že by tato APU mohla být osmijádrová, ale pořádně potvrzeno to také není, takže zde je to třeba brát s rezervou.
+
+
+Mobilní verze APU Raven Ridge v pouzdru BGA
+
+Zen 3 v roce 2020 potvrzen
+Lisa Su jinak také řekla, že Zen 3 přijde už příští rok, tedy jen s jednoletou prodlevou na Zen 2, zatímco ten přišel až dva roky po Zenu 1. Toto už říkaly roadmapy pro servery, ale je příjemné mít to potvrzeno z nejvyšších míst. Osobně jsem si dřív myslel, že AMD bude kvůli omezeným prostředkům opět mít dvouletý cyklus, takže desktopová CPU Ryzen 4000 by musela být nějakým refreshem generace Matisse (jako byly Ryzeny 2000 Pinnacle Ridge refreshem čipů Summit Ridge/Ryzenu 1000). Ale skutečnost je lepší a vypadá to, že refresh nebude a přijde úplně nový čip, dokonce i s novou architekturou jádra. Podle Lisy Su bude rok 2020 na nově uvedené produkty ještě zajímavějším rokem, než rok 2019, byť ten přinesl Zen 2, 7nm proces u Epycu, Ryzenů pro desktop a Threadripperů.
+Galerie: APU neboli procesory AMD Ryzen s integrovaným GPU
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+VŠECHNY FOTOGRAFIE
+
+
+SOUVISEJÍCÍ ČLÁNKY
+
+
+
+
+
+
+
+
+",cs,"
+
+
+
+
+
+
+
+
+
+
+
+7nm mobile Ryzeny / APU Renoir close. The AMD chief confirmed the release in early 2020
+05 Nov 2019, 06:00 by Jan Olsan
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ALL PHOTOS
+
+This year, AMD released 7nm Ryzeny 3000 for desktop, but APUs (integrated graphics processors) and based on it Ryzeny 3000 for laptops are still produced by the 12nm process and have the older Zen 1 core architecture. Zen 2 chips and cores with a higher IPC, have long been unclear, so far nothing has escaped when the release is scheduled. Now, after the financial results for the third quarter, perhaps we finally know something. The release of 7nm Rieslings for laptops is due to occur very soon, maybe in January.
+7nm APU finally close
+The information did not leak delicately, but comes from official sites, directly from AMD chief Lisa Su, who told it in an interview with VentureBeat, just in the wake of the financial results. He asked about upcoming products (in the context that Intel also has before release releases, such as high-end Core 10th generation processors and mainstream desktop Comet Lake-S, to which freshly leaked parameters).
+Lisa Su said that after the Ryzen 9 3950X and Threadripper 3000 (which will be released this month), the next-generation mobile products are next. According to Lisa Su, these will come sometime in the early (early) stages of 2020. In the next sentence, she states that ""we will see 7nm mobile chips that are yet to be launched"". Strictly speaking, these two separate formulations could talk about two different things, but rather about the same, or 7nm process produced by APUs. According to older releases, these should be coded Renoir.
+What precisely “early 2020” means cannot be said with certainty, but at the beginning of January, the CES 2020 fair is taking place, which looks a bit like a lightning conductor on news. It is therefore very likely that AMD will reserve the detection of the Riesen 4000 mobile for this event (7 to 10 January / January). This year it just released the official 12nm APU Picasso. However, this revelation can be made of paper - the first laptops that will run the Ryzeny 4000 can only be sold later. Desktop version of these APU Ryzenů 4000 will certainly be released much later. As the Picasso desktop will only be available this summer, the Ryzen 4000 / Renoir with graphics for the AM4 socket will also be about Q3 2020.
+So far little is known about APU Renoir, which should perhaps be the chip making up these Ryzens 4000. Linux drivers have escaped that these mobile APUs will hopefully finally support LPDDR4 memories (unfortunately, AMD LPDDR3 processors also cannot / cannot). Video output and multimedia equipment (video decoding) should also be updated, technologies should be similar to Navi graphics. But the GPU itself and its computing units seem to be still based on Vega architecture. It is generally expected that the chip should be 7nm and contain Zen 2 cores, but I think we do not have any concrete evidence for this yet. Similarly, the number of cores is unclear. A lot of old roadmaps still counted on four cores, recently there have been mentions that this APU could be eight-core, but it is not well confirmed, so here it is necessary to take it with caution.
+
+
+APU Raven Ridge mobile version in BGA package
+
+Zen 3 in 2020 confirmed
+Lisa Su also said that Zen 3 will be coming next year, with only a one-year delay on Zen 2, while it came up two years after Zen 1. This was already said by the server roadmaps, but it is nice to have it confirmed from the highest places. Personally, I thought AMD would have a two-year cycle again due to limited resources, so the Ryzen 4000 desktop CPU would have to be some sort of Matisse generation refresher (such as the Ryzeny 2000 Pinnacle Ridge Summit Ridge / Ryzen 1000 chips). But the reality is better and it looks like refresh will not come and a brand new chip will come, even with a new kernel architecture. According to Lisa Su, 2020 for the new products will be an even more interesting year than 2019, although it brought the Zen 2, 7nm process at Epyc, Riesling for the desktop and Threadripper.
+Gallery: APU or AMD Ryzen processors with integrated GPU
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ALL PHOTOS
+
+
+RELATED ARTICLES
+
+
+
+
+
+
+
+
+"

@@ -1,0 +1,74 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Blick in die Zukunft
+Leipziger Startup will resige Datenmengen beherschbar machen
+04 Nov 2019, 09:00 by Steffen Höhne
+
+   •  Das Leipzger Startup Get-ML will automatisierte Progosen erstellen können.   •  Damit sollen sehr große Datenmengen nutzbar gemacht werden.   •  Warum die Macher so einen Blick in die Zukunft werfen.
+
+Leipzig - Auf der Welt werden 2,5 Trillionen Bytes digitale Daten erzeugt - jeden Tag. Diese Menge entspricht, so hat es das amerikanische Software-Unternehmen Merlin-One ausgerechnet, der Speicherkapazität von 36 Millionen iPads. Ein großer Teil der Daten wird von Unternehmen erzeugt. Doch diese auszuwerten und damit vielleicht sogar Geld zu verdienen, damit tun sich viele Firmen schwer. Das Leipziger Start-up Get-ML hat nun vor wenigen Tagen eine Software auf den Markt gebracht, die nach Angaben von Alexander Uhlig automatisiert aus großen Datenmengen treffsichere Prognosen erstellt.
+Der Get-ML-Gründer verdeutlicht das an einem Beispiel. So würden Banken gern ermitteln, wie viele Kunden in den kommenden sechs Monaten ihr Konto kündigen. Dazu gebe es eine Vielzahl von Einflussgrößen wie die Zahl der Kontobewegungen, Höhe der Transaktionen, Daueraufträge, Zinshöhe und viele mehr. Doch welche Faktoren sind entscheidend? Und welcher zeitliche Rahmen ist bei den Kontobewegungen aussagekräftiger - 30 oder 60 Tage? „Viele Analysen scheitern oder sind ungenau, da wichtige Einflussfaktoren nicht erkannt oder die Zeit nicht ausreicht, sie zu ermitteln“, sagt der 31-jährige Firmenchef.
+Datenauswertung in Leipzig: Strategisch statt wahllos
+Vor zwei Jahren haben Uhlig und der Software-Entwickler Patrick Urbanke zusammen das Start-up The SQL Net Company gegründet, das inzwischen Get-ML (ML steht für Machine Learning) heißt. Beide haben sich in der Münchner Forschungseinrichtung für Künstliche Intelligenz von Volkswagen kennengelernt. Der studierte Physiker Uhlig arbeitete an Prognosemodellen aufbauend auf sogenannten relationalen Datenbanken. Dabei handelt es sich um Daten in Tabellen, die miteinander verknüpft sind. Wie etwa bei einem Online-Versand eine Kunden- mit einer Bestellnummer verknüpft ist. Uhlig und Urbanke erkannten schnell, dass der gesuchte Algorithmus industrieübergreifend funktioniert. „Ob es um Autoteile, abgewanderte Bankkunden oder verkaufte Brötchen geht, spielt keine entscheidende Rolle“, so Uhlig.
+
+
+In der Leipziger Baumwollspinnerei arbeiten zahlreiche Start-ups unter einem Dach. Organisiert wird das vom Spin-Lab.Foto: SpinLab
+
+Das Unternehmen in Leipzig anzusiedeln, hatte persönliche und pragmatische Gründe. Uhlig hatte bereits in Leipzig studiert, ihm gefällt die Stadt. „Entscheidend war für uns, dass wir hier einfacher als in München oder Berlin qualifizierte Mitarbeiter gewinnen können“, sagt er. Das siebenköpfige Team sitzt heute in einer Fabriketage einer ehemaligen Baumwollspinnerei im Leipziger Stadtteil Plagwitz. Die Halle teilt sich Get-ML mit etwa 20 anderen Start-ups. Häufig bildet nur ein Bücherregal die Trennwand zum nächsten Unternehmen. Sie alle sind Teil des Spin-Labs. Die Organisation der Handelshochschule Leipzig unterstützt die Gründer.
+Get-ML-Algorithmus soll klüger sein als die Konkurrenz
+Doch wie funktioniert nun der Algorithmus? Uhlig greift dafür das fiktive Beispiel der Bank auf. Diese wies 2018 eine Kundenabwanderung von zehn Prozent auf. Der Algorithmus sucht laut Uhlig in den Tiefen der Datenbanken nach Merkmalen, die die abgewanderten Kunden verbindet. Anschließend wird getestet, ob die gefundenen Merkmale auch die Kundenabwanderung von 2019 erklären. Tun sie dies, kann die Bank gezielt Maßnahmen ergreifen, um in dieser Kundengruppe 2020 die Verluste zu minimieren.
+Nach Angaben von Get-ML-Entwickler Johannes King testen die meisten Prognosemodelle bisher wahllos verschiedene Faktoren. „Wir haben einen dynamischen Algorithmus entworfen, der in der Lage ist, in einem strategischem Suchverfahren bedeutungsvolle Einflussgrößen zu bestimmen“, erklärt King. Die Prognosemodelle der Kunden würden durch die Get-ML-Software schneller und treffsicherer. Die Zeitersparnis bei der Suche liege bei bis zu 90 Prozent, so Uhlig. Der Algorithmus macht somit einen Blick in die Zukunft möglich.
+Startup Get-ML aus Leipzig: Investoren gesucht
+Zu den größeren Kunden des jungen Unternehmens zählen der Autobauer Volkswagen und der Optikkonzern Zeiss. Auch für einen Großbäcker wurde bereits ein Projekt durchgeführt. Als sogenannte Data-Scientist haben Uhlig und sein Team in den vergangenen zwei Jahren bereits als Dienstleister für andere Firmen gearbeitet. Get-ML schreibt daher schwarze Zahlen und kam bisher ohne Investoren aus.
+Mit der nun fertiggestellten Software will das Unternehmen expandieren. Uhligs Ziel ist es, weltweit Konzerne als Anwender zu finden. Dazu werden nun auch Investoren gesucht, die das Start-up bei der Entwicklung unterstützen. Uhlig ist optimistisch, dass dies gelingt. Fast alle großen Konzerne weltweit - nicht nur aus der IT-Wirtschaft - arbeiten an der Verbesserung ihrer Datensuche. Der Algorithmus aus Leipzig könnte ihnen dabei helfen.
+(mz)
+
+
+",de,"
+
+
+
+
+
+
+
+
+
+
+
+view in the future
+Leipzig startup wants to make resige data volumes manageable
+04 Nov 2019, 09:00 by Steffen Höhne
+
+• The Leipzig startup Get-ML wants to be able to create automated progos. • This should make very large amounts of data usable. • Why the makers throw a glance into the future.
+
+Leipzig - In the world 2.5 trillion bytes of digital data are generated - every day. This amount corresponds to the memory capacity of 36 million iPads, according to American software company Merlin-One. Much of the data is generated by companies. But evaluating them and maybe even earning money makes it difficult for many companies. Just a few days ago, the Leipzig start-up Get-ML has launched software that, according to Alexander Uhlig, automatically generates accurate forecasts from large amounts of data.
+The Get-ML founder illustrates this with an example. For example, banks would like to know how many customers will cancel their account over the next six months. There are a variety of factors such as the number of account transactions, amount of transactions, standing orders, interest rates and many more. But which factors are crucial? And which time frame is more meaningful for the account movements - 30 or 60 days? ""Many analyzes fail or are inaccurate because important influencing factors are not recognized or the time is not sufficient to determine them,"" says the 31-year-old CEO.
+Data analysis in Leipzig: Strategic instead of random
+Two years ago, Uhlig and software developer Patrick Urbanke founded the start-up The SQL Net Company, now called Get-ML (ML stands for Machine Learning). Both met in the Munich Artificial Intelligence Research Center of Volkswagen. The graduate physicist Uhlig worked on forecasting models based on so-called relational databases. These are data in tables that are linked together. For example, how a customer's order number is associated with online shipping. Uhlig and Urbanke quickly realized that the algorithm looked for across industries. ""Whether it's about car parts, bank customers or sold bread rolls, does not play a decisive role,"" said Uhlig.
+
+
+Many start-ups work under one roof in the Leipzig Cotton Mill. This is organized by the Spin-Lab.Photo: SpinLab
+
+The company in Leipzig had personal and pragmatic reasons. Uhlig had already studied in Leipzig, he likes the city. ""It was crucial for us to be able to recruit qualified employees more easily here than in Munich or Berlin,"" he says. The seven-member team is now located in a factory floor of a former cotton mill in the Leipzig district of Plagwitz. The hall shares Get-ML with about 20 other startups. Often only one bookshelf forms the dividing wall to the next company. They are all part of the spin lab. The organization of the Handelshochschule Leipzig supports the founders.
+Get-ML algorithm should be smarter than the competition
+But how does the algorithm work? Uhlig takes up the fictitious example of the bank. This exhibited 2018 a customer churn of ten percent. According to Uhlig, the algorithm searches in the depths of the databases for characteristics that connect the departing customers. It then tests whether the features found also explain the customer churn of 2019. If they do so, the bank can take specific measures to minimize losses in this customer group in 2020.
+According to Get-ML developer Johannes King, most predictive models have been randomly testing various factors. ""We have designed a dynamic algorithm capable of determining meaningful parameters in a strategic search process,"" explains King. Customers' forecasting models would become faster and more accurate through Get-ML software. The time savings in the search lie with up to 90 percent, so Uhlig. The algorithm thus makes it possible to look into the future.
+Startup Get-ML from Leipzig: Investors wanted
+Among the larger customers of the young company include the car maker Volkswagen and the optical group Zeiss. A project has also been carried out for a major baker. As a so-called data scientist, Uhlig and his team have already worked as service providers for other companies over the past two years. Get-ML is therefore in the black and has so far been without investors.
+With the now completed software, the company wants to expand. Uhlig's goal is to find companies worldwide as users. In addition, investors are now being sought, who support the start-up in the development. Uhlig is optimistic that this will succeed. Almost all major corporations worldwide - not just from the IT industry - are working on improving their data search. The algorithm from Leipzig could help you with that.
+(Mz)
+
+
+"

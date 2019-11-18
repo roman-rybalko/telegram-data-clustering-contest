@@ -1,0 +1,68 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Китайские хакеры: Мы можем взломать любой сканер отпечатков за 20 минут
+05 Nov 2019, 09:09 by Олег Иванов
+
+
+
+Пользователи практически любого смартфона на Android, а также владельцы iPhone до iPhone 8 включительно могут находиться в зоне риска. Китайские хакеры утверждают, что могут взломать любой сканер отпечатков пальцев буквально за 20 минут.
+Специалисты продемонстрировали, как можно взломать сканер, используя оборудование стоимостью $140 и приложение для снимка пользовательского отпечатка.
+Способ обхода аутентификации обнаружила команда исследователей X-Lab, работающих в компании Tencent. Свою технику взлома сканера эксперты продемонстрировали на конференции GeekPwn 2019, прошедшей в Шанхае.
+Чен Ю, руководитель команды X-Lab, попросил случайных участников конференции потрогать стекло. Затем оставшиеся на стекле отпечатки сфотографировали с помощью смартфона и загрузили в разработанное хакерами приложение.
+Цель приложения — извлечь данные, необходимые для клонирования отпечатка пальца. Для этого, предположительно, используется 3D-принтер. Точную методику специалисты не раскрыли из соображений безопасности.
+Тем не менее подделанные в процессе отпечатки были использованы для разблокировки трёх разных смартфонов. Стоит отметить, что все три устройства имели разные технологии санирования отпечатков пальцев: оптическую, ультразвуковую и ёмкостную.
+Весь процесс — от снятия снимка отпечатков до разблокировки смартфонов — занял у экспертов всего двадцать минут.
+Позже Ю объяснил, что его команда использовала аппаратную составляющую стоимостью $142.
+
+Читайте также
+
+
+
+
+
+
+",ru,"
+
+
+
+
+
+
+
+
+
+
+
+Chinese hackers: We can crack any fingerprint scanner in 20 minutes
+05 Nov 2019, 09:09 by Oleg Ivanov
+
+
+
+Users of almost any Android smartphone, as well as iPhone owners up to and including iPhone 8, may be at risk. Chinese hackers claim that they can crack any fingerprint scanner in literally 20 minutes.
+Experts have shown how to hack a scanner using equipment worth $ 140 and an application for taking a user fingerprint.
+A workaround for authentication has been discovered by a team of X-Lab researchers at Tencent. Experts demonstrated their technique of hacking a scanner at the GeekPwn 2019 conference held in Shanghai.
+Chen Yu, the head of the X-Lab team, asked random conference attendees to touch the glass. Then, the fingerprints remaining on the glass were photographed using a smartphone and downloaded into an application developed by hackers.
+The purpose of the application is to extract the data necessary for cloning a fingerprint. For this, a 3D printer is supposedly used. The experts did not disclose the exact technique for safety reasons.
+However, the forged prints were used to unlock three different smartphones. It is worth noting that all three devices had different fingerprint sanitation technologies: optical, ultrasonic and capacitive.
+The whole process - from taking a fingerprint to unlocking smartphones - took experts only twenty minutes.
+Yu later explained that his team used a $ 142 hardware component.
+
+Read also
+
+
+
+
+
+
+"

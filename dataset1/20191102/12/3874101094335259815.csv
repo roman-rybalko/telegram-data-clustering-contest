@@ -1,0 +1,42 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Linux Uzmanından Intel'e Güvenlik Eleştirisi!
+Intel, bu kez de işlemcilerinde kullanılan Hyper-Threading teknolojisi ile güvenlik tartışmalarına konu oldu!
+02 Nov 2019, 12:30 by CHIP Online
+ABD - Lyons'da düzenlenen Open Source Summit Europe 2019'da güvenlik konusunda mercek altına alınan Intel, bir kez daha güvenlik açığı endişelerini ateşledi. Daha önce Meltdown ve Spectre açıkları ile çokça manşetlere taşınan Intel, bu kez de Hyper-Threading teknolojisi ile gündeme geldi.
+Bilindiği gibi Intel işlemcilerde yer alan Hyper-Threading teknolojisi, tek bir fiziksel işlemcinin çok sayıda komut zincirini eş zamanlı olarak işleyerek ortaya performans artışı koymasına yardımcı oluyor. Bu işlemci verimliliğinden özellikle yüksek performans beklentisi içinde olan uygulamalardan yararlanılırken, genel performansa katkıda bulunan bu teknolojinin, öte yandan bir güvenlik açığı oluşturabileceği konusu ise etkinlikte sahne alan Linux Kernel geliştiricisi Kroah-Hartman tarafından ele alındı.
+Kroah-Hartman, Intel tabanlı PC'lerin tam anlamıyla güvenli olabilmesi için Hyper-Threading'in kapalı olması gerektiğini savunuyor. Güvenlik güncellemelerini yapan ortalama bir ev kullanıcısı için çok büyük risk oluşturmayacak olan bu konu, yine de Intel için güvenlik tartışmalarını bir kez daha alevlendirecek gibi. Şimdi gözler Intel'e çevrilmiş durumda. Bakalım işlemci devinden bu konuyla ilgili bir açıklama gelecek mi...
+
+
+",tr,"
+
+
+
+
+
+
+
+
+
+
+
+Linux Expert Criticizes Security to Intel!
+This time, Intel has been the subject of security discussions with the Hyper-Threading technology used in its processors!
+02 Nov 2019, 12:30 by CHIP Online
+In the Open Source Summit Europe 2019 held in Lyons, USA, Intel focused on security and once again sparked security concerns. Intel has previously made headlines with Meltdown and Specter deficits, and this time with Hyper-Threading technology.
+As it is known, the Hyper-Threading technology in Intel processors helps a single physical processor to process multiple command chains simultaneously, resulting in improved performance. While this processor efficiency is especially exploited by applications that expect high performance, the issue of whether this technology contributing to overall performance can create a security vulnerability was addressed by the Linux Kernel developer Kroah-Hartman.
+Kroah-Hartman argues that in order for Intel-based PCs to be fully secure, Hyper-Threading must be turned off. This will not pose a major risk to an average home user doing security upgrades, yet it is likely to fuel the security debate for Intel once again. Now eyes are turned to Intel. Let's see if there's any explanation from the CPU giant ...
+
+
+"

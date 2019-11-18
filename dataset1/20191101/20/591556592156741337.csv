@@ -1,0 +1,60 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Russia's new 'disconnect from the internet' law is actually about surveillance
+01 Nov 2019, 20:36 by Catalin Cimpanu
+
+Russia's slowly building its own Great Firewall model, centralizing internet traffic through government servers.
+
+
+
+
+Today, a new ""internet sovereignty"" law entered into effect in Russia, a law that grants the government the ability to disconnect the entire country from the global internet.The law was formally approved by President Putin back in May. The Kremlin government cited the need to have the ability to disconnect Russia's cyberspace from the rest of the world in the event of a national emergency or foreign threat, such as a cyberattack.In order to achieve these goals, the law mandates that all local ISPs route traffic through special servers managed by the Roskomnadzor, the country's telecoms regulator.These servers would act as kill-switches and disconnect Russia from external connections while re-routing internet traffic inside Russia's own internet space, akin to a country-wide intranet -- which the government is calling RuNet.The Kremlin's recent law didn't come out of the blue. Russian officials have been working on establishing RuNet for more than half a decade. Past efforts included passing laws that force foreign companies to keep the data of Russian citizens on servers located in Russia.
+However, internet infrastructure experts have called Russia's ""disconnect plan"" both impractical and idealistic, pointing to the global DNS system as the plan's Achille's heel.Even US officials doubt that Russia would be able to pull it off. Speaking on stage at the RSA 2019 security conference in March, NSA Director General Paul Nakasone said he didn't expect Russia to succeed and disconnect from the global internet.
+The technicalities of disconnecting an entire country are just to complex not to cripple Russia's entire economy, plunging modern services like healthcare or banking back into a dark age.
+It's a law about surveillance, not sovereignty
+The reality is that experts in Russian politics, human rights, and internet privacy have come up with a much more accurate explanation of what's really going on.Russia's new law is just a ruse, a feint, a gimmick. The law's true purpose is to create a legal basis to force ISPs to install deep-packet inspection equipment on their networks and force them to re-route all internet traffic through Roskomnadzor strategic chokepoints.These Roskomnadzor servers are where Russian authorities will be able to intercept and filter traffic at their discretion and with no judicial oversight, similar to China's Great Firewall.The law is believed to be an upgrade to Russia's SORM (System for Operative Investigative Activities). But while SORM provides passive reconnaissance capabilities, allowing Russian law enforcement to retrieve traffic metadata from ISPs, the new ""internet sovereignty"" law provides a more hands-on approach, including active traffic shaping capabilities.Experts say the law was never about internet sovereignty, but about legalizing and disguising mass surveillance without triggering protests from Russia's younger population, who has gotten accustomed to the freedom the modern internet provides.Experts at Human Rights Watch have seen through the law's true purpose ever since it was first proposed in the Russian Parliament. Earlier this year, they've called the law ""very broad, overly vague, and [that it vests] in the government unlimited and opaque discretion to define threats.""This vagueness in the law's text allows the government to use it whenever it wishes, for any circumstance.Many have pointed out that Russia is doing nothing more than copying the Beijing regime, which also approved a similarly vague law in 2016, granting its government the ability to take any actions it sees fit within the country's cyberspace.The two countries have formally cooperated, with China providing help to Russia in implementing a similar Great Firewall technology.
+Planned disconnect test
+But while Russia's new law entered into effect today, officials sill have to carry out a ton of tests. Last week, the Russian government published a document detailing a scheduled test to take place this month.No exact date was provided. Sources at three Russian ISPs have told ZDNet this week that they haven't been notified of any such tests; however, if they take place, they don't expect the ""disconnect"" to last more than a few minutes.Tens of thousands protested this new law earlier this year across Russia; however, the government hasn't relented, choosing to arrest protesters and go forward with its plans.
+
+
+",en,"
+
+
+
+
+
+
+
+
+
+
+
+Russia's new 'disconnect from the internet' law is actually about surveillance
+01 Nov 2019, 20:36 by Catalin Cimpanu
+
+Russia's slowly building its own Great Firewall model, centralizing internet traffic through government servers.
+
+
+
+
+Today, a new ""internet sovereignty"" law entered into effect in Russia, a law that grants the government the ability to disconnect the entire country from the global internet.The law was formally approved by President Putin back in May. The Kremlin government cited the need to have the ability to disconnect Russia's cyberspace from the rest of the world in the event of a national emergency or foreign threat, such as a cyberattack.In order to achieve these goals, the law mandates that all local ISPs route traffic through special servers managed by the Roskomnadzor, the country's telecoms regulator.These servers would act as kill-switches and disconnect Russia from external connections while re-routing internet traffic inside Russia's own internet space, akin to a country-wide intranet -- which the government is calling RuNet.The Kremlin's recent law didn't come out of the blue. Russian officials have been working on establishing RuNet for more than half a decade. Past efforts included passing laws that force foreign companies to keep the data of Russian citizens on servers located in Russia.
+However, internet infrastructure experts have called Russia's ""disconnect plan"" both impractical and idealistic, pointing to the global DNS system as the plan's Achille's heel.Even US officials doubt that Russia would be able to pull it off. Speaking on stage at the RSA 2019 security conference in March, NSA Director General Paul Nakasone said he didn't expect Russia to succeed and disconnect from the global internet.
+The technicalities of disconnecting an entire country are just to complex not to cripple Russia's entire economy, plunging modern services like healthcare or banking back into a dark age.
+It's a law about surveillance, not sovereignty
+The reality is that experts in Russian politics, human rights, and internet privacy have come up with a much more accurate explanation of what's really going on.Russia's new law is just a ruse, a feint, a gimmick. The law's true purpose is to create a legal basis to force ISPs to install deep-packet inspection equipment on their networks and force them to re-route all internet traffic through Roskomnadzor strategic chokepoints.These Roskomnadzor servers are where Russian authorities will be able to intercept and filter traffic at their discretion and with no judicial oversight, similar to China's Great Firewall.The law is believed to be an upgrade to Russia's SORM (System for Operative Investigative Activities). But while SORM provides passive reconnaissance capabilities, allowing Russian law enforcement to retrieve traffic metadata from ISPs, the new ""internet sovereignty"" law provides a more hands-on approach, including active traffic shaping capabilities.Experts say the law was never about internet sovereignty, but about legalizing and disguising mass surveillance without triggering protests from Russia's younger population, who has gotten accustomed to the freedom the modern internet provides.Experts at Human Rights Watch have seen through the law's true purpose ever since it was first proposed in the Russian Parliament. Earlier this year, they've called the law ""very broad, overly vague, and [that it vests] in the government unlimited and opaque discretion to define threats.""This vagueness in the law's text allows the government to use it whenever it wishes, for any circumstance.Many have pointed out that Russia is doing nothing more than copying the Beijing regime, which also approved a similarly vague law in 2016, granting its government the ability to take any actions it sees fit within the country's cyberspace.The two countries have formally cooperated, with China providing help to Russia in implementing a similar Great Firewall technology.
+Planned disconnect test
+But while Russia's new law entered into effect today, officials sill have to carry out a ton of tests. Last week, the Russian government published a document detailing a scheduled test to take place this month.No exact date was provided. Sources at three Russian ISPs have told ZDNet this week that they haven't been notified of any such tests; however, if they take place, they don't expect the ""disconnect"" to last more than a few minutes.Tens of thousands protested this new law earlier this year across Russia; however, the government hasn't relented, choosing to arrest protesters and go forward with its plans.
+
+
+"

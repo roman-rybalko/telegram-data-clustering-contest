@@ -1,0 +1,70 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Seagate: hard disk da 50 TB entro il 2026, soluzioni da 18 e 20 TB nel 2020
+06 Nov 2019, 04:44 by Manolo De Agostini
+In una conference call con gli analisti Seagate ha annunciato che il prossimo anno, nella seconda metà, porterà sul mercato i primi hard disk basati su tecnologia HAMR (Heat-Assisted Magnetic Recording). Prima però assisteremo all’arrivo degli hard disk da 18 terabyte, capacità su cui si sfiderà con Western Digital e Toshiba.
+Si prevede che la soluzione da 18 TB di Seagate sarà basata sulla stessa piattaforma a nove piatti che l’azienda usa per l’attuale modello Exos X16 da 16 terabyte, aspetto che depone a favore di una produzione in volumi in tempi piuttosto rapidi. L’unità registrerà i dati sui piatti applicando la tecnologia conventional magnetic recording (CMR), altro nome della Perpendicular Magnetic Recording.
+
+
+
+Il produttore statunitense però guarda già oltre e nei suoi piani c’è anche un modello da 20 terabyte in arrivo sempre nel 2020 – seppur probabilmente solo per clienti selezionati – basato su tecnologia shingled magnetic recording (SMR), anch’essa consolidata e marchio di fabbrica di Seagate – fu svelata nel 2013.
+Seagate ha spiegato agli analisti che gli hard disk Exos da 16 TB sono molto popolari tra i propri clienti e si aspetta di consegnare oltre un milione di unità nel trimestre in corso. L’azienda ritiene che l’arrivo del modello da 18 TB le permetterà di mantenere la leadership sul fronte della capacità anticipando Western Digital, concentrata nella produzione in volumi di modelli da 18 (HAMR+CMR) e 20 TB (HAMR+SMR).
+Come scritto in apertura, nel 2020 Seagate annuncerà un hard disk da 20 TB basato su tecnologia HAMR. In cosa consiste? La Heat-Assisted Magnetic Recording è una tecnologia di registrazione magnetica in cui i dati sono salvati in modo ancora più denso rispetto ad altre tecniche, pur mantenendo la stabilità magnetica.
+Un diodo laser collegato a ogni testina di registrazione scalda un piccolo punto del piatto di registrazione, e questo permette alla testina di invertire la polarità magnetica di ogni bit stabile, consentendo la scrittura del dato.
+Seagate ha già messo nelle mani di alcuni partner degli hard disk da 16 TB basati su tecnologia HAMR in modo da testare la soluzione. Interessante inoltre come l’azienda preveda di creare hard disk HAMR con uno o due attuatori, in modo da rispondere alle necessità di prestazioni e capacità dei diversi clienti.
+Ricordiamo infatti che Seagate ha creato “MACH.2”, un sistema che dovrebbe raddoppiare le prestazioni di un hard disk tradizionale grazie a due insiemi di bracci attuatori che operano in modo indipendente. Ognuno ha otto testine. Questo significa che il disco può leggere da due testine alla volta, a patto che siano collegate a differenti bracci.
+I test di qualche tempo fa indicavano un throughput sequenziale di 480 MB/s, più del doppio dei 235 MB/s garantiti da un hard disk enterprise da 7200 RPM.
+
+
+
+Dave Mosley, CEO di Seagate, ha affermato che l’azienda ha già iniziato a commercializzare soluzioni MACH.2 con due attuatori nel trimestre che si è concluso a settembre. “Stiamo lavorando con diversi clienti per certificare queste unità, inclusa un’azienda leader nel mondo hyperscale, che sta testando la tecnologia affinché rispetti livelli di servizio rigorosi senza dover applicare costosi aggiornamenti hardware”.
+Secondo la roadmap, la tecnologia HAMR consentirà di portare sul mercato nel 2023-2024 hard disk da oltre 30 TB, mentre si toccheranno e probabilmente supereranno i 50 TB nel 2026 (una stima che può apparire elevata, ma che è certamente più abbordabile dei 100 TB di qualche tempo fa).
+Intanto mentre gli hard disk puntano a capacità impensabili fino a qualche anno fa, sapete qual è uno degli hard disk più venduti? Questo modello da 1 TB di Seagate, a soli 40 euro.
+
+
+",it,"
+
+
+
+
+
+
+
+
+
+
+
+Seagate: 50 TB hard drives by 2026, 18 and 20 TB solutions by 2020
+06 Nov 2019, 04:44 by Manolo De Agostini
+In a conference call with analysts Seagate announced that next year, in the second half, it will bring to market the first HAMR (Heat-Assisted Magnetic Recording) technology-based hard drives. But first we will see the arrival of the 18 terabyte hard drives, a capacity on which they will compete with Western Digital and Toshiba.
+It is expected that Seagate's 18 TB solution will be based on the same nine-plate platform that the company uses for the current 16 terabyte Exos X16, an aspect that argues in favor of fairly rapid volume production. The unit will record data on the plates applying conventional magnetic recording technology (CMR), another name of the Perpendicular Magnetic Recording.
+
+
+
+The US manufacturer, however, is already looking beyond and in its plans there is also a model of 20 terabytes always arriving in 2020 - though probably only for selected customers - based on shingled magnetic recording technology (SMR), also consolidated and brand of Seagate factory - was unveiled in 2013.
+Seagate explained to analysts that Exos 16 TB hard drives are very popular among their customers and expects to deliver over a million units in the current quarter. The company believes that the arrival of the 18 TB model will allow it to maintain its leadership in terms of capacity in anticipation of Western Digital, concentrated in volume production of 18 (HAMR + CMR) and 20 TB (HAMR + SMR) models.
+As written at the beginning, in 2020 Seagate will announce a 20 TB hard drive based on HAMR technology. What's it about? The Heat-Assisted Magnetic Recording is a magnetic recording technology in which data is saved even more densely than other techniques, while maintaining magnetic stability.
+A laser diode connected to each recording head heats a small point of the recording plate, and this allows the head to invert the magnetic polarity of each stable bit, allowing the data to be written.
+Seagate has already put in the hands of some partners of the 16 TB hard drives based on HAMR technology in order to test the solution. Also interesting is how the company plans to create HAMR hard disks with one or two actuators, in order to meet the needs of performance and capacity of different customers.
+We remember that Seagate has created ""MACH.2"", a system that should double the performance of a traditional hard disk thanks to two sets of actuator arms that operate independently. Each has eight heads. This means that the disc can read from two heads at a time, as long as they are connected to different arms.
+The tests some time ago indicated a sequential throughput of 480 MB / s, more than double the 235 MB / s guaranteed by a 7200 RPM enterprise hard disk.
+
+
+
+Seagate CEO Dave Mosley said the company has already started marketing MACH.2 solutions with two actuators in the September quarter. ""We are working with several customers to certify these units, including a leading hyperscale company, which is testing the technology to meet stringent service levels without having to apply expensive hardware upgrades.""
+According to the roadmap, the HAMR technology will make it possible to bring over 30 TB hard disks to the market in 2023-2024, while they will touch and probably exceed 50 TB in 2026 (an estimate that may appear high, but which is certainly more affordable than the 100 TB some time ago).
+Meanwhile, while hard drives point to capacities unthinkable a few years ago, do you know which one of the best selling hard drives is? This 1 TB model from Seagate, for only 40 euros.
+
+
+"

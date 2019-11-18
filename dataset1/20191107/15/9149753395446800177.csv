@@ -1,0 +1,300 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+AMD's beastly third gen Ryzen Threadripper 3970X will cost $1,999
+07 Nov 2019, 15:23 by Jarred Walton
+We've been hearing about the upcoming Ryzen 9 3950X for months now. Originally set to launch in October, that was pushed back to November 25, when it will join the ranks of the best CPUs for gaming (and other tasks). It's also the same week as Black Friday deals, though I seriously doubt we'll see any sales on the newcomer. In fact, if it follows in the footsteps of the 3900X, it will probably sell out during the initial availability phase.
+November 25 will also see the introduction of two new third generation Threadripper parts, the 32-core/64-thread 3970X and the 24-core/48-thread 3960X. It makes sense that the naming has been consolidated, as there's little need for a 16-core/32-thread Threadripper this round. Sure, quad-channel memory might help some workloads, but such a chip isn't in the plans right now (as far as I know). At the other end of the spectrum is a new budget friendly Athlon 3000G processor that will support overclocking, unlike the Athlon 200GE. Let's hit each of these news bits.
+Image 1 of 9
+
+
+
+(Image credit: AMD)
+
+
+Image 2 of 9
+
+
+
+(Image credit: AMD)
+
+
+Image 3 of 9
+
+
+
+(Image credit: AMD)
+
+
+Image 4 of 9
+
+
+
+(Image credit: AMD)
+
+
+Image 5 of 9
+
+
+
+(Image credit: AMD)
+
+
+Image 6 of 9
+
+
+
+(Image credit: AMD)
+
+
+Image 7 of 9
+
+
+
+(Image credit: AMD)
+
+
+Image 8 of 9
+
+
+
+(Image credit: AMD)
+
+
+Image 9 of 9
+
+
+
+(Image credit: AMD)
+
+
+First, the Ryzen 9 3950X. This chip looks to be a potent multithreaded workhorse, with a price to match. It will feature a fully loaded 16-core configuration, with two 8-core 7nm chiplets and the 14nm cIO die all packaged together. It's basically like the Ryzen 9 3900X, an impressive CPU in its own right, with slightly higher clockspeeds and four extra cores. Priced at $749, it's the most expensive ""mainstream"" consumer CPU we've seen from AMD in … well, it might as well be forever.
+Unlike the other Ryzen 3000 CPUs, the Ryzen 9 3950X won't include a cooler, so that's an additional expense. AMD perhaps rightly suggests most enthusiasts will use a high-end aftermarket cooler regardless, and it's recommending liquid cooling for the 3950X. I've seen testing of the other Ryzen 3000 CPUs that shows they all perform a bit better with improved cooling, and AMD is pulling out all the stops with the 3950X.
+Alternatively, AMD is adding a new ""eco mode"" to all of its Ryzen 3000 CPUs, that drops the TDP level a full step. So 105W CPUs will run as 65W parts, and 65W CPUs can run as 45W parts. This obviously sacrifices performance in pursuit of lower power and thermal requirements, which AMD bills as a great fit for small form factor PCs. Or perhaps a 3950X using a basic air cooler.
+We'll have our review posted well in advance of retail availability, so you'll know exactly how the chip performs before it goes on sale.
+Image 1 of 4
+
+
+
+(Image credit: AMD)
+
+
+Image 2 of 4
+
+
+
+(Image credit: AMD)
+
+
+Image 3 of 4
+
+
+
+(Image credit: AMD)
+
+
+Image 4 of 4
+
+
+
+(Image credit: AMD)
+
+
+The Threadripper 3970X is the real star of the show, at least in terms of insane multithreading performance. Sure the Threadripper 2990WX already offered up a 32-core/64-thread CPU last year, but there were some inter-chiplet communication bottlenecks in the previous design. Third generation Threadripper changes a whole bunch of the underlying features and technology, however, and should hopefully eliminate any performance constraints.
+It will also eliminate any question of how AMD sees its CPUs compared to Intel's offerings, as the companies basically swaps places in terms of pricing. The Threadripper 3970X will cost $1,999 this round, $200 more than the outgoing 2990WX. Intel meanwhile appears to recognize that it has fallen behind in terms of CPU leadership on high-end desktop (HEDT) platforms and will have an updated 18-core/36-thread Core i9-10980XE ""Cascade Lake-X"" (CLX) chip for 'only' $979. That mostly puts it into direct competition with the 3950X, and I'm certainly curious to see how that plays out. My guess: Intel will win some performance comparisons, but only while using significantly more power. But let's get back to third gen Threadripper.
+Besides updating the CPU architecture to Zen 2, the 3970X and 3960X will run on a new platform: TRX40. It will look similar to the old X399 platform, but it is not backward compatible. That's because AMD is changing many of the underlying elements. TRX40 (socket sTRX4) will supper PCIe Gen4, just like the Ryzen 3000 CPUs on X570 chipset motherboards. It also increases the number of PCIe lanes, from 64 on the previous Threadripper CPUs to 72—but there's some very fuzzy math there, which I'll get to in a moment. Keep in mind that there are a whole lot of pins (4094) on the Threadripper socket, many unused (since it was built for the server-centric Epyc chips), so repurposing a few more is perhaps possible.
+The additional PCIe lanes are put to good use. First, TRX40 supports 48 general purpose PCIe lanes, two direct x4 links for NVMe drives (which can also be used for a generic x4 PCIe slot, if the motherboard makers desire—or four additional SATA ports), and four more lanes (I think?) are used for four USB 3.2 Gen 2 10Gbps ports. The bigger deal is a dedicated x8 link to the chipset, which is twice the width as on previous chips. Combined with the move from Gen3 to Gen4, it's four times the bandwidth between the CPU and chipset.
+
+
+
+(Image credit: AMD)
+
+
+(And yeah, I'm still not quite getting the math here… but you can look at the above slide and come up with your own number. It appears to be at least four more lanes than before, based on the x4 USB 3.2 Gen 2 ports off the CPU, but that would only be 68 lanes, not 72. And I'm pretty sure it's actually still 64 lanes, or maybe 68, but whatever. ¯\_(ツ)_/¯ If you include the chipset lanes, there are up to 88 total PCIe Gen4 lanes available for use, with eight more lanes reserved for linking the CPU and chipset.)
+One thing that's important to note is that the new Threadripper package, just like the new Ryzen 3000 CPU package, includes a dedicated cIO die. That handles all the links to the DDR4 memory, meaning the problems on first and second gen Threadripper where some cores had direct links to memory and others had to get routed through the other chiplets should be gone.
+That's all the underlying changes for third gen Threadripper, so let's quickly note the specs for the two new CPUs. The 3970X will clock at up to 4.5GHz, with a 3.7GHz base clock, and comes with 144MB of total L2+L3 cache (32MB L3 per CCX chiplet, and 512K L2 per core). The 3960X has the same 4.5GHz boost clock, with a 3.8GHz base clock, and 140MB of total cache (eight fewer cores with half a MB of L2 each are missing). Oh, and TDP for the two new parts tips the scales at an impressive (or shocking if you prefer) 280W. Bring a big cooler!
+Image 1 of 3
+
+
+
+(Image credit: AMD)
+
+
+Image 2 of 3
+
+
+
+(Image credit: AMD)
+
+
+Image 3 of 3
+
+
+
+(Image credit: AMD)
+
+
+Wrapping things up, on the polar opposite side of the CPU market sits the new Athlon 3000G. It's a 2-core/4-thread Zen+ based part with Vega 3 Graphics. Basically, a refresh of the Athlon 200GE. The price is a highly economical $49, and it has a 35W TDP but is also unlocked, so you can try overclocking. I don't really have much more to say than the above slide covers, as frankly the days where I can recommend a 2-core/4-thread CPU as a gaming solution are definitely long past. Still, if you're looking to build an extreme budget PC that can still run games (at 720p), it's worth a thought. It will be available on November 19.
+That's a ton of stuff coming down the pipeline, if you're keeping track. Reviews of the Ryzen 9 3950X will go live before the actual launch, while I believe the Third generation Threadripper reviews will come at launch. Somewhere in between those (I think?), we'll get Intel's Core i9-10980XE. And that's just the new CPUs. We're still waiting for AMD's RX 5500 (5500 XT?) retail graphics cards to arrive, which should happen soon, and Nvidia has GTX 1650 Super cards launching on November 22. It's going to be a hectic month as all the retailers prepare to get new product on shelves in advance of the Black Friday shopping spree. Better save those pennies if you're looking to upgrade!
+
+
+",en,"
+
+
+
+
+
+
+
+
+
+
+
+AMD's beastly third gen Ryzen Threadripper 3970X will cost $1,999
+07 Nov 2019, 15:23 by Jarred Walton
+We've been hearing about the upcoming Ryzen 9 3950X for months now. Originally set to launch in October, that was pushed back to November 25, when it will join the ranks of the best CPUs for gaming (and other tasks). It's also the same week as Black Friday deals, though I seriously doubt we'll see any sales on the newcomer. In fact, if it follows in the footsteps of the 3900X, it will probably sell out during the initial availability phase.
+November 25 will also see the introduction of two new third generation Threadripper parts, the 32-core/64-thread 3970X and the 24-core/48-thread 3960X. It makes sense that the naming has been consolidated, as there's little need for a 16-core/32-thread Threadripper this round. Sure, quad-channel memory might help some workloads, but such a chip isn't in the plans right now (as far as I know). At the other end of the spectrum is a new budget friendly Athlon 3000G processor that will support overclocking, unlike the Athlon 200GE. Let's hit each of these news bits.
+Image 1 of 9
+
+
+
+(Image credit: AMD)
+
+
+Image 2 of 9
+
+
+
+(Image credit: AMD)
+
+
+Image 3 of 9
+
+
+
+(Image credit: AMD)
+
+
+Image 4 of 9
+
+
+
+(Image credit: AMD)
+
+
+Image 5 of 9
+
+
+
+(Image credit: AMD)
+
+
+Image 6 of 9
+
+
+
+(Image credit: AMD)
+
+
+Image 7 of 9
+
+
+
+(Image credit: AMD)
+
+
+Image 8 of 9
+
+
+
+(Image credit: AMD)
+
+
+Image 9 of 9
+
+
+
+(Image credit: AMD)
+
+
+First, the Ryzen 9 3950X. This chip looks to be a potent multithreaded workhorse, with a price to match. It will feature a fully loaded 16-core configuration, with two 8-core 7nm chiplets and the 14nm cIO die all packaged together. It's basically like the Ryzen 9 3900X, an impressive CPU in its own right, with slightly higher clockspeeds and four extra cores. Priced at $749, it's the most expensive ""mainstream"" consumer CPU we've seen from AMD in … well, it might as well be forever.
+Unlike the other Ryzen 3000 CPUs, the Ryzen 9 3950X won't include a cooler, so that's an additional expense. AMD perhaps rightly suggests most enthusiasts will use a high-end aftermarket cooler regardless, and it's recommending liquid cooling for the 3950X. I've seen testing of the other Ryzen 3000 CPUs that shows they all perform a bit better with improved cooling, and AMD is pulling out all the stops with the 3950X.
+Alternatively, AMD is adding a new ""eco mode"" to all of its Ryzen 3000 CPUs, that drops the TDP level a full step. So 105W CPUs will run as 65W parts, and 65W CPUs can run as 45W parts. This obviously sacrifices performance in pursuit of lower power and thermal requirements, which AMD bills as a great fit for small form factor PCs. Or perhaps a 3950X using a basic air cooler.
+We'll have our review posted well in advance of retail availability, so you'll know exactly how the chip performs before it goes on sale.
+Image 1 of 4
+
+
+
+(Image credit: AMD)
+
+
+Image 2 of 4
+
+
+
+(Image credit: AMD)
+
+
+Image 3 of 4
+
+
+
+(Image credit: AMD)
+
+
+Image 4 of 4
+
+
+
+(Image credit: AMD)
+
+
+The Threadripper 3970X is the real star of the show, at least in terms of insane multithreading performance. Sure the Threadripper 2990WX already offered up a 32-core/64-thread CPU last year, but there were some inter-chiplet communication bottlenecks in the previous design. Third generation Threadripper changes a whole bunch of the underlying features and technology, however, and should hopefully eliminate any performance constraints.
+It will also eliminate any question of how AMD sees its CPUs compared to Intel's offerings, as the companies basically swaps places in terms of pricing. The Threadripper 3970X will cost $1,999 this round, $200 more than the outgoing 2990WX. Intel meanwhile appears to recognize that it has fallen behind in terms of CPU leadership on high-end desktop (HEDT) platforms and will have an updated 18-core/36-thread Core i9-10980XE ""Cascade Lake-X"" (CLX) chip for 'only' $979. That mostly puts it into direct competition with the 3950X, and I'm certainly curious to see how that plays out. My guess: Intel will win some performance comparisons, but only while using significantly more power. But let's get back to third gen Threadripper.
+Besides updating the CPU architecture to Zen 2, the 3970X and 3960X will run on a new platform: TRX40. It will look similar to the old X399 platform, but it is not backward compatible. That's because AMD is changing many of the underlying elements. TRX40 (socket sTRX4) will supper PCIe Gen4, just like the Ryzen 3000 CPUs on X570 chipset motherboards. It also increases the number of PCIe lanes, from 64 on the previous Threadripper CPUs to 72—but there's some very fuzzy math there, which I'll get to in a moment. Keep in mind that there are a whole lot of pins (4094) on the Threadripper socket, many unused (since it was built for the server-centric Epyc chips), so repurposing a few more is perhaps possible.
+The additional PCIe lanes are put to good use. First, TRX40 supports 48 general purpose PCIe lanes, two direct x4 links for NVMe drives (which can also be used for a generic x4 PCIe slot, if the motherboard makers desire—or four additional SATA ports), and four more lanes (I think?) are used for four USB 3.2 Gen 2 10Gbps ports. The bigger deal is a dedicated x8 link to the chipset, which is twice the width as on previous chips. Combined with the move from Gen3 to Gen4, it's four times the bandwidth between the CPU and chipset.
+
+
+
+(Image credit: AMD)
+
+
+(And yeah, I'm still not quite getting the math here… but you can look at the above slide and come up with your own number. It appears to be at least four more lanes than before, based on the x4 USB 3.2 Gen 2 ports off the CPU, but that would only be 68 lanes, not 72. And I'm pretty sure it's actually still 64 lanes, or maybe 68, but whatever. ¯\_(ツ)_/¯ If you include the chipset lanes, there are up to 88 total PCIe Gen4 lanes available for use, with eight more lanes reserved for linking the CPU and chipset.)
+One thing that's important to note is that the new Threadripper package, just like the new Ryzen 3000 CPU package, includes a dedicated cIO die. That handles all the links to the DDR4 memory, meaning the problems on first and second gen Threadripper where some cores had direct links to memory and others had to get routed through the other chiplets should be gone.
+That's all the underlying changes for third gen Threadripper, so let's quickly note the specs for the two new CPUs. The 3970X will clock at up to 4.5GHz, with a 3.7GHz base clock, and comes with 144MB of total L2+L3 cache (32MB L3 per CCX chiplet, and 512K L2 per core). The 3960X has the same 4.5GHz boost clock, with a 3.8GHz base clock, and 140MB of total cache (eight fewer cores with half a MB of L2 each are missing). Oh, and TDP for the two new parts tips the scales at an impressive (or shocking if you prefer) 280W. Bring a big cooler!
+Image 1 of 3
+
+
+
+(Image credit: AMD)
+
+
+Image 2 of 3
+
+
+
+(Image credit: AMD)
+
+
+Image 3 of 3
+
+
+
+(Image credit: AMD)
+
+
+Wrapping things up, on the polar opposite side of the CPU market sits the new Athlon 3000G. It's a 2-core/4-thread Zen+ based part with Vega 3 Graphics. Basically, a refresh of the Athlon 200GE. The price is a highly economical $49, and it has a 35W TDP but is also unlocked, so you can try overclocking. I don't really have much more to say than the above slide covers, as frankly the days where I can recommend a 2-core/4-thread CPU as a gaming solution are definitely long past. Still, if you're looking to build an extreme budget PC that can still run games (at 720p), it's worth a thought. It will be available on November 19.
+That's a ton of stuff coming down the pipeline, if you're keeping track. Reviews of the Ryzen 9 3950X will go live before the actual launch, while I believe the Third generation Threadripper reviews will come at launch. Somewhere in between those (I think?), we'll get Intel's Core i9-10980XE. And that's just the new CPUs. We're still waiting for AMD's RX 5500 (5500 XT?) retail graphics cards to arrive, which should happen soon, and Nvidia has GTX 1650 Super cards launching on November 22. It's going to be a hectic month as all the retailers prepare to get new product on shelves in advance of the Black Friday shopping spree. Better save those pennies if you're looking to upgrade!
+
+
+"

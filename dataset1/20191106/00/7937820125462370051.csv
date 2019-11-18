@@ -1,0 +1,102 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Toxin discovery reveals fresh ammunition for bacterial warfare
+A previously unknown bacterial toxin has now been characterized. The protein is secreted into neighbouring cells, depleting them of essential energy-carrying molecules and so leading to the cells’ demise.
+06 Nov 2019 by Brent W. Anderson & Jue D. Wang
+To survive, bacteria must monopolize valuable resources. One way to do this is to attack and outcompete neighbouring cells — for example using the type VI secretion system, which injects neighbours with a toxin that can inhibit their growth or kill them [1]. Writing in Nature, Ahmad et al. [2] describe a previously unknown toxin, Tas1, used in the type VI secretion system of the pathogen Pseudomonas aeruginosa. Tas1 launches a two-pronged attack on cells: not only does it rapidly deplete them of essential energy-carrying ATP molecules, but it also produces a signalling molecule that prevents the synthesis of more ATP.
+Ahmad et al. made their discovery when studying a highly virulent strain of P. aeruginosa. The authors identified a region of the bacterium’s genome that encodes a protein allowing P. aeruginosa to outcompete other bacteria. The amino-acid sequence of this toxin had no obvious similarity to any other proteins secreted by the type VI system.
+The authors found that the toxin was structurally similar to a class of enzyme that synthesizes the ‘alarmone’ molecules guanosine tetraphosphate (ppGpp) and guanosine pentaphosphate (pppGpp), collectively referred to as (p)ppGpp. Alarmones are signalling molecules produced by bacteria and plants to help them to survive stressful conditions. Production of (p)ppGpp is a near-universal response to stresses such as nutrient starvation in bacteria. Its production causes a decrease in bacterial growth [3], preventing excessive proliferation and so allowing bacteria to survive in low-nutrient conditions.
+It seems logical for a bacterial toxin to produce (p)ppGpp as a way of slowing the growth of competitor cells, so Ahmad and colleagues tested the enzymatic capabilities of the purified P. aeruginosa toxin. Unexpectedly, the protein did not produce (p)ppGpp. Instead, it produced the related alarmone (p)ppApp, which comprises adenosine tetraphosphate (ppApp) and adenosine pentaphosphate (pppApp) molecules. The authors therefore named the toxin type VI secretion effector (p)ppApp synthetase 1, or Tas1 for short. This is the first example of an alarmone-producing enzyme being transported between bacteria — a remarkable fact, given that these enzymes are found in nearly all bacteria.
+Type VI systems often secrete enzymes that destroy essential cellular structures, such as the cell wall, the cell membrane or the genome itself [4]. But Ahmad et al. found that the toxicity of Tas1 is linked to its synthesis of (p)ppApp from ATP (Fig. 1). ATP is crucial for almost every cellular process, from DNA replication to the production of proteins and maintenance of the cell’s structural integrity. Tas1 synthesizes (p)ppApp from ATP strikingly quickly — one molecule of toxin produces 180,000 (p)ppApp molecules per minute. At such a rate, the toxin depletes the target cell of ATP within minutes, simultaneously disrupting several essential metabolic pathways. Of note, P. aeruginosa secretes other toxins alongside Tas1, some of which attack cellular structures that require ATP for their synthesis, including the cell wall and membrane. Tas1 activity might therefore compound the effects of these other toxins.
+
+
+Figure 1 | A two-pronged attack system. Bacteria can attack target cells using cellular machinery called the type VI secretion system. Ahmad et al. [2] find that the type VI system of one bacterium, Pseudomonas aeruginosa, secretes a previously unknown toxin, which the authors name Tas1. Tas1 uses energy-carrying ATP molecules to produce the signalling molecule (p)ppApp, rapidly reducing ATP levels. In turn, (p)ppApp blocks production of ATP by inhibiting the first enzyme in the ATP-synthesis pathway, PurF. This two-pronged attack depletes target cells of essential ATP within minutes, causing death.
+
+Ahmad and colleagues went on to highlight the toxic role of (p)ppApp in influencing bacterial physiology. Little has been reported about how (p)ppApp is produced and what it does in bacteria [5]. The authors found that (p)ppApp blocks ATP synthesis in the target cell by binding and inhibiting PurF, a key enzyme in the synthesizing process. Thus, (p)ppApp probably prevents the cell from regenerating ATP and so escaping the death spiral induced by the alarmone’s own production. More work is needed to delineate how much this role for (p)ppApp contributes to the overall toxicity of Tas1 in target cells.
+Alarmone production is highly regulated to ensure that the molecules are synthesized only when needed, and degraded when stress has passed. Tas1 production of (p)ppApp overrides these rules — (p)ppApp is synthesized with abandon and, as the authors show, there are unlikely to be any enzymes that can degrade (p)ppApp quickly enough to avoid cell death. Nonetheless, this newfound understanding of (p)ppApp can augment our knowledge of other alarmones. (p)ppGpp, which is structurally similar to (p)ppApp, controls cell growth in part by inhibiting proteins involved in the synthesis of energy-carrying molecules such as ATP and GTP [3] [,] [6] [–] [8], including PurF. The fact that both (p)ppApp and (p)ppGpp inhibit this protein, along with the structural similarity between the two alarmones, led Ahmad et al. to hypothesize that the molecules could have many overlapping targets.
+Tas1 is the only dedicated (p)ppApp-synthesizing enzyme found so far. However, (p)ppApp has been detected in some bacteria, in which its physiological role has yet to be determined [8]. Clearly, it is unlikely to act as a toxin in these cells. Ahmad and colleagues’ discovery that (p)ppApp inhibits PurF is the first step towards mapping the network of targets regulated by this alarmone in healthy cells. Doing so should help us to gain a broader understanding of how alarmone regulatory pathways rewire bacterial physiology.
+Type VI secretion systems provide bacteria with weapons against competitors, increasing their ability to thrive in a range of environments — from plants to the human intestinal tract to hospitals [9] [,] [10]. The discovery of a toxin that so irreversibly suppresses competitor metabolism opens a new chapter in our understanding of the ammunition used in interbacterial warfare. It will be exciting to see whether other examples of this toxin are found across the bacterial domain, or perhaps even in bacterium–host interactions.
+doi: 10.1038/d41586-019-03217-9
+References
+1. Coulthurst, S. Microbiology 165, 503–515 (2019).
+2. Ahmad, S. et al. Nature https://doi.org/10.1038/s41586-019-1735-9 (2019).
+3. Gourse, R. L. et al. Annu. Rev. Microbiol. 72, 163–184 (2018).
+4. Durand, E., Cambillau, C., Cascales, E. & Journet, L. Trends Microbiol. 22, 498–507 (2014).
+5. Sobala, M., Bruhn-Olszewska, B., Cashel, M. & Potrykus, K. Front. Microbiol. 10, 859 (2019).
+6. Liu, K. et al. Mol. Cell 57, 735–749 (2015).
+7. Wang, B. et al. Nature Chem. Biol. 15, 141–150 (2019).
+8. Zhang, Y., Zborniková, E., Rejman, D. & Gerdes, K. mBio 9, e02188-17 (2018).
+9. Coyne, M. J. & Comstock, L. E. Microbiol. Spectrum 7, https://doi.org/10.1128/microbiolspec.PSIB-0009-2018 (2019).
+10. Bernal, P., Llamas, M. A. & Filloux, A. Environ. Microbiol. 20, 1–15 (2018).
+
+
+
+
+
+
+
+
+
+
+",en,"
+
+
+
+
+
+
+
+
+
+
+
+Toxin discovery reveals fresh ammunition for bacterial warfare
+A previously unknown bacterial toxin has now been characterized. The protein is secreted into neighbouring cells, depleting them of essential energy-carrying molecules and so leading to the cells’ demise.
+06 Nov 2019 by Brent W. Anderson & Jue D. Wang
+To survive, bacteria must monopolize valuable resources. One way to do this is to attack and outcompete neighbouring cells — for example using the type VI secretion system, which injects neighbours with a toxin that can inhibit their growth or kill them [1]. Writing in Nature, Ahmad et al. [2] describe a previously unknown toxin, Tas1, used in the type VI secretion system of the pathogen Pseudomonas aeruginosa. Tas1 launches a two-pronged attack on cells: not only does it rapidly deplete them of essential energy-carrying ATP molecules, but it also produces a signalling molecule that prevents the synthesis of more ATP.
+Ahmad et al. made their discovery when studying a highly virulent strain of P. aeruginosa. The authors identified a region of the bacterium’s genome that encodes a protein allowing P. aeruginosa to outcompete other bacteria. The amino-acid sequence of this toxin had no obvious similarity to any other proteins secreted by the type VI system.
+The authors found that the toxin was structurally similar to a class of enzyme that synthesizes the ‘alarmone’ molecules guanosine tetraphosphate (ppGpp) and guanosine pentaphosphate (pppGpp), collectively referred to as (p)ppGpp. Alarmones are signalling molecules produced by bacteria and plants to help them to survive stressful conditions. Production of (p)ppGpp is a near-universal response to stresses such as nutrient starvation in bacteria. Its production causes a decrease in bacterial growth [3], preventing excessive proliferation and so allowing bacteria to survive in low-nutrient conditions.
+It seems logical for a bacterial toxin to produce (p)ppGpp as a way of slowing the growth of competitor cells, so Ahmad and colleagues tested the enzymatic capabilities of the purified P. aeruginosa toxin. Unexpectedly, the protein did not produce (p)ppGpp. Instead, it produced the related alarmone (p)ppApp, which comprises adenosine tetraphosphate (ppApp) and adenosine pentaphosphate (pppApp) molecules. The authors therefore named the toxin type VI secretion effector (p)ppApp synthetase 1, or Tas1 for short. This is the first example of an alarmone-producing enzyme being transported between bacteria — a remarkable fact, given that these enzymes are found in nearly all bacteria.
+Type VI systems often secrete enzymes that destroy essential cellular structures, such as the cell wall, the cell membrane or the genome itself [4]. But Ahmad et al. found that the toxicity of Tas1 is linked to its synthesis of (p)ppApp from ATP (Fig. 1). ATP is crucial for almost every cellular process, from DNA replication to the production of proteins and maintenance of the cell’s structural integrity. Tas1 synthesizes (p)ppApp from ATP strikingly quickly — one molecule of toxin produces 180,000 (p)ppApp molecules per minute. At such a rate, the toxin depletes the target cell of ATP within minutes, simultaneously disrupting several essential metabolic pathways. Of note, P. aeruginosa secretes other toxins alongside Tas1, some of which attack cellular structures that require ATP for their synthesis, including the cell wall and membrane. Tas1 activity might therefore compound the effects of these other toxins.
+
+
+Figure 1 | A two-pronged attack system. Bacteria can attack target cells using cellular machinery called the type VI secretion system. Ahmad et al. [2] find that the type VI system of one bacterium, Pseudomonas aeruginosa, secretes a previously unknown toxin, which the authors name Tas1. Tas1 uses energy-carrying ATP molecules to produce the signalling molecule (p)ppApp, rapidly reducing ATP levels. In turn, (p)ppApp blocks production of ATP by inhibiting the first enzyme in the ATP-synthesis pathway, PurF. This two-pronged attack depletes target cells of essential ATP within minutes, causing death.
+
+Ahmad and colleagues went on to highlight the toxic role of (p)ppApp in influencing bacterial physiology. Little has been reported about how (p)ppApp is produced and what it does in bacteria [5]. The authors found that (p)ppApp blocks ATP synthesis in the target cell by binding and inhibiting PurF, a key enzyme in the synthesizing process. Thus, (p)ppApp probably prevents the cell from regenerating ATP and so escaping the death spiral induced by the alarmone’s own production. More work is needed to delineate how much this role for (p)ppApp contributes to the overall toxicity of Tas1 in target cells.
+Alarmone production is highly regulated to ensure that the molecules are synthesized only when needed, and degraded when stress has passed. Tas1 production of (p)ppApp overrides these rules — (p)ppApp is synthesized with abandon and, as the authors show, there are unlikely to be any enzymes that can degrade (p)ppApp quickly enough to avoid cell death. Nonetheless, this newfound understanding of (p)ppApp can augment our knowledge of other alarmones. (p)ppGpp, which is structurally similar to (p)ppApp, controls cell growth in part by inhibiting proteins involved in the synthesis of energy-carrying molecules such as ATP and GTP [3] [,] [6] [–] [8], including PurF. The fact that both (p)ppApp and (p)ppGpp inhibit this protein, along with the structural similarity between the two alarmones, led Ahmad et al. to hypothesize that the molecules could have many overlapping targets.
+Tas1 is the only dedicated (p)ppApp-synthesizing enzyme found so far. However, (p)ppApp has been detected in some bacteria, in which its physiological role has yet to be determined [8]. Clearly, it is unlikely to act as a toxin in these cells. Ahmad and colleagues’ discovery that (p)ppApp inhibits PurF is the first step towards mapping the network of targets regulated by this alarmone in healthy cells. Doing so should help us to gain a broader understanding of how alarmone regulatory pathways rewire bacterial physiology.
+Type VI secretion systems provide bacteria with weapons against competitors, increasing their ability to thrive in a range of environments — from plants to the human intestinal tract to hospitals [9] [,] [10]. The discovery of a toxin that so irreversibly suppresses competitor metabolism opens a new chapter in our understanding of the ammunition used in interbacterial warfare. It will be exciting to see whether other examples of this toxin are found across the bacterial domain, or perhaps even in bacterium–host interactions.
+doi: 10.1038/d41586-019-03217-9
+References
+1. Coulthurst, S. Microbiology 165, 503–515 (2019).
+2. Ahmad, S. et al. Nature https://doi.org/10.1038/s41586-019-1735-9 (2019).
+3. Gourse, R. L. et al. Annu. Rev. Microbiol. 72, 163–184 (2018).
+4. Durand, E., Cambillau, C., Cascales, E. & Journet, L. Trends Microbiol. 22, 498–507 (2014).
+5. Sobala, M., Bruhn-Olszewska, B., Cashel, M. & Potrykus, K. Front. Microbiol. 10, 859 (2019).
+6. Liu, K. et al. Mol. Cell 57, 735–749 (2015).
+7. Wang, B. et al. Nature Chem. Biol. 15, 141–150 (2019).
+8. Zhang, Y., Zborniková, E., Rejman, D. & Gerdes, K. mBio 9, e02188-17 (2018).
+9. Coyne, M. J. & Comstock, L. E. Microbiol. Spectrum 7, https://doi.org/10.1128/microbiolspec.PSIB-0009-2018 (2019).
+10. Bernal, P., Llamas, M. A. & Filloux, A. Environ. Microbiol. 20, 1–15 (2018).
+
+
+
+
+
+
+
+
+
+
+"

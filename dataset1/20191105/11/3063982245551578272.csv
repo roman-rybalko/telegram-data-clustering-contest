@@ -1,0 +1,52 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Sprachbefehle unhörbar per Laser übertragen
+Sprachbefehle müssen nicht unbedingt per Sprache übertragen werden: Forschern ist es gelungen, smarte Lautsprecher wie Amazon Echo oder Google Home mit einem Laser aus bis zu 110 Metern Entfernung zu steuern - und so beispielsweise ein Garagentor zu öffnen.
+05 Nov 2019, 11:57 by Moritz Tremmel
+Auch mit einem Laser lässt sich die Membran eines Mikrofons zum Schwingen bringen, mit den Schwingungen können Töne bis hin zu Sprachbefehlen erzeugt werden. Mit diesen für Menschen nicht hörbaren Sprachbefehlen können Sprachassistenten wie Amazons Alexa oder Apples Siri getriggert werden - und so beispielsweise ein Garagentor geöffnet werden. Selbst über Distanz und durch Fenster gelang es dem Sicherheitsforscher Takeshi Sugawara und einem Team der Universität in Michigan, die Befehle zu übertragen. Zuerst hatte das Magazin Wired berichtet.
+Anfangs führte Sugawara seine Versuche in einer abgeschirmten schwarzen Box durch, die ihn vor der Strahlung eines Lasers schützen sollte. Diesen hatte er in der Box platziert und auf das Mikrofon eines iPads gerichtet. Je nach Strahlungsintensität des Lasers begann die Membran des Mikrofons zu vibrieren und einen Fiepton aufzunehmen. Sugawara konnte das Licht des Lasers in ein elektrisches Signal umwandeln, wie bei einem Ton. Sugawara forschte gemeinsam mit einem Team der Universität Michigan rund um Professor Kevin Fu.
+Im Laufe eines halben Jahres wurde aus dem Fiepton Sprache. ""Mikrofone reagieren auf Licht wie auf Töne"", erklärt Sugawara Wired. ""So lassen sich alle Geräte, die auf Klang reagieren, auch mit Licht bedienen."" Damit konnten die Sicherheitsforscher lautlos Sprachbefehle an smarte Lautsprecher wie Amazon Echo, Google Home, Apple Homepod, aber auch an Smartphones und Tablets übertragen. Je nach angeschlossenen Geräten und unterstützten Befehlen können Angreifer den Haushalt des Besitzers steuern, das Garagentor öffnen oder online einkaufen. Auch Türschlösser könnten geöffnet oder Thermostate bedient werden. Den Forschern gelang dies aus einer Distanz von einigen Dutzend Metern sowie durch das geschlossene Fenster, während der Besitzer des smarten Lautsprechers nicht zu Hause war.
+Bis zu 110 Meter überwunden
+Mit einem 5-Milliwatt-Laser, was ungefähr einem billigen Laserpointer entspricht, schafften die Forscher eine Übertragung über 110 Meter. Rund 75 Meter schafften die Forscher durch ein Fenster in ein naheliegendes Gebäude. Insgesamt testeten die Sicherheitsforscher 16 Geräte. Bei den getesteten Smartphones schafften sie nur deutlich geringere Distanzen. Bei einem iPhone waren es rund 10 Meter, bei einem Testgerät mit Android schafften sie nicht einmal fünf Meter. Komplizierter mache es den Angriff auch, wenn das Aktivierungswort mit der Stimme des Besitzers gesprochen werden müsse, erklärten die Forscher.
+Zwar könnten anwesende Personen die Aktivierung des smarten Lautsprechers sowie das Licht des Lasers auf diesem wahrnehmen, eine Sprachausgabe lasse sich allerdings verhindern, indem zu Beginn des Angriffs die Sprachausgabe des smarten Lautsprechers per Sprachbefehl deaktiviert wird. Zudem könne der Flüstermodus von Alexa verwendet werden, erklärten die Forscher. Dies hätten sie allerdings noch nicht getestet.
+Der Laser muss bei dem Angriff auf das Mikrofon des smarten Lautsprechers gerichtet sein. Die Forscher waren sowohl mit einem gezielten Laserstrahl auf das Mikrofon als auch mit großflächiger Strahlung auf das ganze Gerät erfolgreich. Sind Personen anwesend, können diese das Licht des Lasers auf dem smarten Lautsprecher jedoch sehen. Das lasse sich jedoch über einen Infrarotlaser verhindern, dessen Licht von Menschen nicht wahrgenommen werden könne, erklärten die Forscher.
+Google und Amazon erklärten gegenüber Wired, dass sie die Forschungsergebnisse genau prüfen werden. Apple lehnte einen Kommentar ab. Die Forscher schlagen vor, die Geräte durch Anpassungen am Design zu schützen, beispielsweise durch eine Lichtschranke um das Mikrofon herum oder das Aufnehmen von Sprachbefehlen durch zwei gegenüberliegende Mikrofone. Zudem könne eine PIN zum Einsatz kommen, die der Besitzer beispielsweise bei Käufen einsprechen müsse. Ein erster Schritt ist es, die smarten Lautsprecher nicht im Sichtfeld eines Fensters zu platzieren, dann können sie auch nicht von außen mit einem Laser bestrahlt werden.
+
+
+",de,"
+
+
+
+
+
+
+
+
+
+
+
+Inaudible voice commands transmitted by laser
+Voice commands do not necessarily have to be transmitted by voice: researchers have managed to control smart speakers like the Amazon Echo or Google Home with a laser up to a distance of 110 meters - for example, to open a garage door.
+05 Nov 2019, 11:57 by Moritz Tremmel
+With a laser, the membrane of a microphone can be made to vibrate, with the vibrations can be generated sounds to voice commands. These voice commands, which are not audible to humans, can be used to trigger voice assistants such as Amazon's Alexa or Apple's Siri, opening a garage door, for example. Even over distance and through windows, security researcher Takeshi Sugawara and a team from the University of Michigan succeeded in transmitting the orders. First, the magazine had reported Wired.
+Initially, Sugawara performed his experiments in a shielded black box designed to protect him from the radiation of a laser. He had placed this in the box and aimed at the microphone of an iPad. Depending on the radiation intensity of the laser, the membrane of the microphone began to vibrate and pick up a beeping sound. Sugawara could turn the light of the laser into an electrical signal, just like a sound. Sugawara and a team from the University of Michigan conducted research on Professor Kevin Fu.
+Over the course of half a year, Fiepton became the language. ""Microphones respond to both light and sound,"" explains Sugawara Wired. ""This way, all devices that respond to sound can also be operated with light."" This allowed security researchers to silently transmit voice commands to smart speakers such as Amazon Echo, Google Home, Apple Homepod, as well as smartphones and tablets. Depending on connected devices and supported commands, attackers can control the owner's home, open the garage door, or shop online. Even door locks could be opened or thermostats operated. The researchers managed this from a distance of a few tens of meters and through the closed window, while the owner of the smart speaker was not at home.
+Overcome up to 110 meters
+With a 5-milliwatt laser, which roughly corresponds to a cheap laser pointer, the researchers managed a transmission over 110 meters. About 75 meters, the researchers managed through a window in a nearby building. Overall, the security researchers tested 16 devices. In the tested smartphones, they only managed significantly shorter distances. In an iPhone, it was about 10 meters, in a test device with Android they did not even five meters. It makes the attack even more complicated when the activation word needs to be spoken with the owner's voice, the researchers said.
+Although present persons could perceive the activation of the smart speaker as well as the light of the laser on this, but a voice output can be prevented by the speech of the smart speaker is deactivated by voice command at the beginning of the attack. In addition, the whispering mode of Alexa can be used, said the researchers. However, they have not tested this yet.
+The laser must be aimed at the attack on the microphone of the smart speaker. The researchers were successful both with a targeted laser beam on the microphone as well as with large-scale radiation on the whole device. However, if people are present, they can see the light from the laser on the smart speaker. However, this can be prevented by an infrared laser whose light can not be perceived by humans, the researchers explained.
+Google and Amazon told Wired that they will be scrutinizing the research results. Apple declined to comment. Researchers suggest protecting the devices through design adjustments, such as through a light barrier around the microphone, or recording voice commands through two opposing microphones. In addition, a PIN can be used, which the owner would have to speak for purchases, for example. A first step is not to place the smart speakers in the field of view of a window, then they can not be irradiated from the outside with a laser.
+
+
+"

@@ -1,0 +1,46 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Python Adopts a 12-month Release Cycle
+01 Nov 2019, 12:49 by msmash
+The steering council of Python said it is adopting a 12-month release cycle as it seeks to bring more consistency to schedule. In their mailing list they announced the change would mean developers would: 1. Know when to start testing the beta to provide feedback.2. Know when the expect the RC so the community can prepare their projects for the final release.3. Know when the final release will occur to coordinate their own releases (if necessary) when the final release of Python occurs.4. Allow core developers to more easily plan their work to make sure work lands in the release they are targeting.5. Make sure that core developers and the community have a shorter amount of time to wait for new features to be released. They added: It should also fit into the release schedule of Linux distributions like Fedora better than previously proposed so the distributions can test the RC when they start preparing for their own October releases. If this turns out to be a mistake after we try it out for Python 3.9 we can then discuss going back to longer betas and shorter RCs for the release after that. This will not change when feature development is cut off relative to PyCon US nor the core dev sprints happening just before the final release or the alpha of the next version.
+
+
+(lwn.net)
+
+
+
+
+",en,"
+
+
+
+
+
+
+
+
+
+
+
+Python Adopts a 12-month Release Cycle
+01 Nov 2019, 12:49 by msmash
+The steering council of Python said it is adopting a 12-month release cycle as it seeks to bring more consistency to schedule. In their mailing list they announced the change would mean developers would: 1. Know when to start testing the beta to provide feedback.2. Know when the expect the RC so the community can prepare their projects for the final release.3. Know when the final release will occur to coordinate their own releases (if necessary) when the final release of Python occurs.4. Allow core developers to more easily plan their work to make sure work lands in the release they are targeting.5. Make sure that core developers and the community have a shorter amount of time to wait for new features to be released. They added: It should also fit into the release schedule of Linux distributions like Fedora better than previously proposed so the distributions can test the RC when they start preparing for their own October releases. If this turns out to be a mistake after we try it out for Python 3.9 we can then discuss going back to longer betas and shorter RCs for the release after that. This will not change when feature development is cut off relative to PyCon US nor the core dev sprints happening just before the final release or the alpha of the next version.
+
+
+(lwn.net)
+
+
+
+
+"

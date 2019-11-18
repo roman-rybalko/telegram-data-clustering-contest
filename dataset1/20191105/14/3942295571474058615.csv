@@ -1,0 +1,70 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Google Chrome 78 сможет получать коды верификации из SMS-сообщений
+05 Nov 2019, 14:36 by Екатерина Быстрова
+
+
+
+На сегодняшний день многие приложения и сервисы требуют подтвердить номер телефона пользователя с помощью кода в SMS-сообщении. Чаще всего в ходе этой процедуры приходится выходить из приложения, искать в сообщениях код и возвращаться обратно — неудобно. Однако разработчики браузера Google Chrome решили упростить людям жизнь.
+Для этого был добавлен специальный API, работающий по схожему с реализованным в Android-приложениях принципу. Идея заключается в следующем: когда сайт отправляет код верификации в SMS-сообщении, Chrome ждёт его и автоматически подставляет в требуемое поле.
+У самого сайта не будет доступа к вашим сообщениям, только к самому короткому коду, отправленному непосредственно ресурсом.
+
+
+
+Помимо этого, разработчики предусмотрели и другие меры предосторожности, которые не позволят стороннему сайту прочитать текст ваших SMS-сообщений.
+Также сотрудники Google поработали над ещё одним API — Native File System. Его задача — предоставить веб-страницам доступ к файловой системе компьютера или смартфона.
+Поскольку таким образом можно загружать не только один файл, но и набор файлов и даже целую директорию, эти возможности будут крайне полезны для различных онлайн-редакторов кода. Google Docs, например, сможет редактировать файлы Word прямо на вашем компьютере, их не нужно будет загружать и конвертировать.
+
+Читайте также
+
+
+
+
+
+
+",ru,"
+
+
+
+
+
+
+
+
+
+
+
+Google Chrome 78 will be able to receive verification codes from SMS messages
+05 Nov 2019, 14:36 by Ekaterina Bystrova
+
+
+
+Today, many applications and services require you to confirm the user's phone number using the code in the SMS message. Most often, during this procedure, you have to exit the application, search for the code in messages and return back - it is inconvenient. However, the developers of the Google Chrome browser decided to make life easier for people.
+To do this, a special API was added, working on a principle similar to that implemented in Android applications. The idea is this: when the site sends a verification code in an SMS message, Chrome waits for it and automatically substitutes it in the required field.
+The site itself will not have access to your messages, only to the shortest code sent directly by the resource.
+
+
+
+In addition, the developers have provided other safety measures that will not allow a third-party site to read the text of your SMS messages.
+Also, Google employees worked on another API - Native File System. Its task is to provide web pages with access to the file system of a computer or smartphone.
+Since this way you can download not only one file, but also a set of files and even a whole directory, these features will be extremely useful for various online code editors. Google Docs, for example, will be able to edit Word files directly on your computer, they will not need to be downloaded and converted.
+
+Read also
+
+
+
+
+
+
+"

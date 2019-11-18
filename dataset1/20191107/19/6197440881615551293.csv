@@ -1,0 +1,140 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Android Auto 4.8 prepares persistent weather icon, more [APK Insight]
+07 Nov 2019, 19:19 by Ben Schoon
+One of my few complaints about the new Android Auto interface that rolled out earlier this year is that it killed useful cards such as one for the weather. Now, the latest Android Auto update brings back that functionality as well as delivering on a previously teased option.
+
+About APK Insight: In this “APK Insight” post, we’ve decompiled the latest version of an application that Google uploaded to the Play Store. When we decompile these files (called APKs, in the case of Android apps), we’re able to see various lines of code within that hint at possible future features. Keep in mind that Google may or may not ever ship these features, and our interpretation of what they are may be imperfect. We’ll try to enable those that are closer to being finished, however, to show you how they’ll look in the case that they do ship. With that in mind, read on.
+
+Persistent weather notification
+The biggest new addition in Android Auto 4.8 is the first hint at a persistent weather notification. This doesn’t quite replace the card that was present in the old Android Auto, but it at least shows the weather at all times while you’re in the car which is a nice addition. There’s a new option in the Android Auto settings menu to toggle this feature on or off depending on your preferences.
+The weather notification in Android Auto uses your phone’s location to update automatically as you travel. The functionality hasn’t actually started rolling out yet, but Android Police was able to enable it on their device.
+
+
+
+
+
+
+
+
+
+<string name=”settings_weather_summary”>Show weather information on the car screen status bar, obtained using your phone location</string>
+<string name=”settings_weather_title”>Weather</string>
+
+Launcher customization is imminent
+Somewhat surprisingly, launcher customization is also already live in Android Auto v4.8. Google has added a few more strings as seen below for the feature including a toast message that appears on your car’s display telling you to unlock the phone to customize the homescreen.
+Within the app, users can turn off apps they don’t want to appear on the car’s display, but not all apps are eligible such as Google Maps, Phone, and Settings. Weirdly, Google Play Music is also required if it’s installed on your device. You’ll have to relaunch Android Auto for any changes to take effect.
+
+
+
+
+
+
+
+
+
+<string name=”gearhead_launcher_unlock_to_access_customization_toast”>Unlock phone to customize app launcher</string>
+<string name=”gearhead_on_phone_activity_launcher_customization_label”>App launcher customization</string>
+<string name=”settings_customize_app_launcher_change_message”>Restart Android Auto for changes to take effect</string>
+
+How to update?
+Android Auto 4.8 is rolling out now via the Play Store.
+
+Thanks to JEB Decompiler, which some APK Insight teardowns benefit from.
+
+More on Android Auto:
+
+
+‘Android Auto for phone screens’ app now available on Google Play
+
+
+Hey Google, reporting features for Maps on Android Auto are long overdue
+
+
+Ford is bringing Android Auto Wireless to ‘select’ 2020 vehicles
+
+
+FTC: We use income earning auto affiliate links. More.
+
+
+",en,"
+
+
+
+
+
+
+
+
+
+
+
+Android Auto 4.8 prepares persistent weather icon, more [APK Insight]
+07 Nov 2019, 19:19 by Ben Schoon
+One of my few complaints about the new Android Auto interface that rolled out earlier this year is that it killed useful cards such as one for the weather. Now, the latest Android Auto update brings back that functionality as well as delivering on a previously teased option.
+
+About APK Insight: In this “APK Insight” post, we’ve decompiled the latest version of an application that Google uploaded to the Play Store. When we decompile these files (called APKs, in the case of Android apps), we’re able to see various lines of code within that hint at possible future features. Keep in mind that Google may or may not ever ship these features, and our interpretation of what they are may be imperfect. We’ll try to enable those that are closer to being finished, however, to show you how they’ll look in the case that they do ship. With that in mind, read on.
+
+Persistent weather notification
+The biggest new addition in Android Auto 4.8 is the first hint at a persistent weather notification. This doesn’t quite replace the card that was present in the old Android Auto, but it at least shows the weather at all times while you’re in the car which is a nice addition. There’s a new option in the Android Auto settings menu to toggle this feature on or off depending on your preferences.
+The weather notification in Android Auto uses your phone’s location to update automatically as you travel. The functionality hasn’t actually started rolling out yet, but Android Police was able to enable it on their device.
+
+
+
+
+
+
+
+
+
+<string name=”settings_weather_summary”>Show weather information on the car screen status bar, obtained using your phone location</string>
+<string name=”settings_weather_title”>Weather</string>
+
+Launcher customization is imminent
+Somewhat surprisingly, launcher customization is also already live in Android Auto v4.8. Google has added a few more strings as seen below for the feature including a toast message that appears on your car’s display telling you to unlock the phone to customize the homescreen.
+Within the app, users can turn off apps they don’t want to appear on the car’s display, but not all apps are eligible such as Google Maps, Phone, and Settings. Weirdly, Google Play Music is also required if it’s installed on your device. You’ll have to relaunch Android Auto for any changes to take effect.
+
+
+
+
+
+
+
+
+
+<string name=”gearhead_launcher_unlock_to_access_customization_toast”>Unlock phone to customize app launcher</string>
+<string name=”gearhead_on_phone_activity_launcher_customization_label”>App launcher customization</string>
+<string name=”settings_customize_app_launcher_change_message”>Restart Android Auto for changes to take effect</string>
+
+How to update?
+Android Auto 4.8 is rolling out now via the Play Store.
+
+Thanks to JEB Decompiler, which some APK Insight teardowns benefit from.
+
+More on Android Auto:
+
+
+‘Android Auto for phone screens’ app now available on Google Play
+
+
+Hey Google, reporting features for Maps on Android Auto are long overdue
+
+
+Ford is bringing Android Auto Wireless to ‘select’ 2020 vehicles
+
+
+FTC: We use income earning auto affiliate links. More.
+
+
+"

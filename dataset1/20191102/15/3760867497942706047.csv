@@ -1,0 +1,272 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Todas las opciones para encontrar la IP en tu dispositivo
+02 Nov 2019, 15:00 by Rocío García
+Seguro que alguna vez has escuchado hablar sobre la dirección IP o te la han pedido en alguna ocasión. No sabes cómo encontrarla desde tu smartphone o tu ordenador o puede que ni siquiera sepas qué es. Sigue leyendo si quieres resolver cómo encontrar la IP desde cualquier dispositivo en solo unos pasos o si simplemente quieres saber qué es la dirección IP, para qué sirve o por qué tienes una asignada.
+Todas las páginas web o todos los ordenadores o routers desde los que accedes a Internet tienen asignada una dirección IP. Siempre hay una dirección IP aunque tú “directamente” no la hayas creado o no sepas que está ahí. Así que vamos a explicarte todo lo que debes saber sobre ella o cómo puedes encontrar la IP.
+¿Qué es la IP?
+La dirección IP es una especie de matrícula que sirve para identificarnos en Internet o identificarnos dentro de una red. Se trata de la dirección de un dispositivo tanto en una red externa como en una red interna, o de un conjunto de dispositivos.  IP significa Internet Protocol (protocolo de Internet) y básicamente su misión es gestionar las comunicaciones en las redes. A través de este protocolo podemos usar las direcciones IP asignadas para identificarnos y comunicarnos. Cada IP es única, y cada dirección IP no se repiten: no pueden estar asignadas en dos dispositivos al mismo tiempo.
+Las direcciones IP están formada por códigos de 32 bits pero se simplifican utilizando cuatro conjuntos numéricos separados por puntos que hacen que sean más fácilmente reconocibles e identificables. Cada uno de estos conjuntos de números decimales puede tener valores entre 0 y 255 y, como decimos, están separados por puntos. Es decir, podrías tener una dirección IP como 192.111.22.98.
+La dirección IP permite que se sepa cuál es nuestro proveedor de Internet según sus cifras. Por ejemplo, a través de la IP se sabe si somos de Orange, Movistar, Jazztel… También permite conocer la ubicación o localización más o menos exacta (aproximada, no siempre debe acertar) desde la que nos conectamos.
+
+
+
+¿Quién te asigna la dirección IP?
+No puedes elegir qué dirección IP pública quieres tener a cada momento. Y para controlar todas las direcciones IP de todo el mundo, hay un encargado: la Autoridad de Números Asignados en Internet (IANA) aunque divide su labor en los Registros Regionales de Internet (RIR) que se dividen en cinco y cada uno de ellos cuenta con una zona asignada. En el caso de Europa (junto con Asia Central y Oriente Próximo), el encargado de asignar las direcciones IP es el Reseaux IP Européens Network Cordination Centre (RIPE NCC) y se encarga de los territorios mencionados. Entre ellos, claro, España.
+Este RIPE NCC es el encargado de repartir las direcciones IP que se dividirán a su vez en Registros Locales de Internet (LIR) o Registros Nacionales de Internet (NIR) y de ahí irán a los proveedores, a los subproveedores y finalmente al cliente: tú. Aunque hay muchos escalones superiores, tu proveedor será el encargado de asignarte la IP que necesitas a cada momento para identificarte en Internet.
+
+
+
+Tipos de IP
+Aunque todas las direcciones IP tienen como misión identificarnos, hay dos tipos de direcciones IP y su objetivo concreto es distinto. Hay direcciones IP públicas y direcciones IP privadas, unas te identifican en Internet y otra lo hacen dentro de una misma red que comparte IP pública. Por ejemplo, en tu casa.
+Direcciones IP Públicas
+La dirección IP pública es, básicamente, la que te ayuda a identificarte cuando te conectas a Internet. Tu matrícula para navegar o usar cualquier servicio. Se trata de la identificación que tu proveedor de Internet te asigna para ser reconocido en Internet. Para identificarte en Internet, tienes que tener una dirección IP pública que automáticamente se te ha asignado, aunque tú no supieses ni que existe.
+Las direcciones públicas suelen ser direcciones IP dinámicas o estáticas. Son dinámicas si te conectas a Internet desde tu router en casa, tu proveedor te asigna una dirección IP aleatoria que esté disponible. Y es la que usas para identificarte cuando navegas por Internet siempre que lo hagas. O estática si quieres mantener siempre la misma IP y que no rote nunca. Hay diferencias en cuanto a uso pero también en cuanto a gasto. Todos tenemos una dirección IP dinámica normalmente pero si queremos tener una dirección IP estática debemos pagar por ello. Además, otra de las grandes diferencias es que estas últimas disminuyen la privacidad porque es más sencillo monitorizarlas.
+
+Direcciones IP dinámicas. Son las que usan un número distinto cada vez que te conectas a Internet. Es lo más habitual por parte de los proveedores de Internet y las direcciones IP que suelen asignarte son direcciones IP dinámicas que en ese momento no están siendo utilizadas por otro.
+Direcciones IP fijas. También hay direcciones IP fijas en las que el número siempre es el mismo, nunca varía. No se modifica de ninguna manera ni cuando reiniciamos el router ni pasado un tiempo. Para servicios de correo electrónico, para bases de datos o para servidores dedicados al alojamiento de páginas web o de hosting, por ejemplo. Lo que hacen estas direcciones IP fijas es “traducir” una dirección IP en un nombre de dominio para que sea más fácilmente reconocible.
+
+Direcciones IP privadas
+Las direcciones IP pueden ser privadas. Estas no tienen como finalidad identificarte dentro del conjunto de Internet sino identificar cada dispositivo dentro de una misma red. Por ejemplo, cada dispositivo en una casa con sólo un router o cada ordenador en una oficina cuya IP pública se mantiene pero varían las privadas. Podrás identificar un smartphone, un ordenador, una tablet.
+La dirección IP privada se asigna a cada dispositivo para que pueda reconocerse. Por ejemplo, puedes tener una dirección IP privada en tu móvil, otra en tu impresora, otra en el smartphone y otra en tu tablet aunque todas estén conectadas a la red, al mismo WiFi o router.
+En cada uno de tus dispositivos puedes elegir si quieres una dirección IP dinámica que el router asignará de manera aleatoria o si prefieres establecer una IP fija que te servirá para recordarla con más facilidad. Por ejemplo, en el caso de que quieras acceder desde tu smartphone a tu PC de forma remota.
+¿Cuál es mi IP?
+Una vez que sabes la diferencia entre direcciones IP públicas o privadas o que sabes que las direcciones IP no son las mismas eternamente, llega lo más importante: ¿cuál es mi IP? Repasamos todas las formas para encontrar la IP, tanto pública como pivada y de todos los dispositivos.
+Cuál es mi IP pública
+Para saber tu IP pública, basta con que accedas al navegador desde cualquier dispositivo que tengas en casa. El ordenador, el smartphone o la tablet te permitirán saber cuál es la dirección IP pública que tienes actualmente en tu casa o en tu oficina, por ejemplo. Para ello, visita esta web para saber tu IP y en unos segundos obtendrás la respuesta
+Cuál es mi IP privada
+Para saber encontrar la IP privada de un dispositivo, tendrás que seguir una serie de pasos que variará según el sistema operativo utilizado en cada uno de ellos.
+En Windows
+
+Ve al buscador
+Busca “Ejecutar”
+Aparecerá una ventana emergente y escribe cmd
+Haz enter
+Aparecerá la pantalla del terminal
+Escribe ipconfig y pulsa ENTER
+Tu dirección IP privada será la correspondiente a “Dirección IPv4”
+
+
+
+
+También puedes consultar el IP desde Windows desde el panel de control:
+
+Ve al panel de control
+Haz clic en Redes e Internet
+Abre el Centro de redes y recursos compartidos
+Pulsa sobre la conexión a Internet activa
+Accede a las propiedades
+Haz clic en “Detalles…”
+Aquí encontrarás todos los detalles y tu dirección IP privada
+
+
+
+
+En Linux
+
+Ve al escritorio
+Haz clic en el icono de conexión de red
+Haz clic en “información de conexión”
+Ahí puedes encontrar la dirección IP
+
+
+
+
+Otra forma de hacerlo desde Linux es a través de la consola
+
+Pulsa Control + Alt + T
+Se abrirá la terminal
+Escribe ifconfig
+Pulsa enter
+Verás la dirección IP privada de ese dispositivo
+
+
+
+
+En Mac
+
+Ve al icono de preferencias del sistema
+Abre y accede al apartado Red
+Pulsa sobre “Avanzado…” en el botón inferior derecho
+Verás el apartado TCP/IP
+Encontrarás la dirección IPv4, la dirección IP privada de tu dispositivo
+
+
+
+
+Desde tu dispositivo Android
+
+Ve al apartado de Ajustes
+Busca la opción «Acerca del dispositivo»
+Pulsa en «Estado»
+Ahí verás indicada tu dirección IP privada
+
+Esta ruta puede variar según la capa de personalización que utilices y es posible que en lugar de encontrar “Acerca del dispositivo” encuentres sinónimos como “Acerca del teléfono”, por ejemplo.
+
+
+
+Desde tu móvil iPhone o tablet iPad
+
+Abre la app de Configuración
+Pulsa en WiFi
+Elige la red en la que estás conectado
+Pulsa sobre el icono de información
+Aquí podrás econtra la IP privada del iPhone/iPad y la de tu router
+
+
+
+
+Desde cualquier teléfono o tablet
+Una forma práctica de encontrar la IP privada de cualquier aparato que esté conectado a tu router es apostar por la app Fing. Fing es una aplicación gratuita que puedes descargar para iOS y para Android, intuitiva y muy práctica. Bastará con abrirla para que escanee todos los dispositivos conectados a tu red y puedas encontrar la IP privada de todos y cada uno de ellos para que siempre los tengas localizados o para que evites tener que buscar dispositivo por dispositivo. Todos en una misma pantalla.
+
+
+
+
+
+",es,"
+
+
+
+
+
+
+
+
+
+
+
+All options to find the IP on your device
+02 Nov 2019, 15:00 by Rocío García
+Surely you've ever heard about the IP address or have been asked on occasion. You don't know how to find it from your smartphone or your computer or you may not even know what it is. Keep reading if you want to solve how to find the IP from any device in just a few steps or if you simply want to know what the IP address is, what it is for or why you have one assigned.
+All web pages or all computers or routers from which you access the Internet are assigned an IP address. There is always an IP address even if you ""directly"" have not created it or do not know that it is there. So we will explain everything you need to know about it or how you can find the IP.
+What is the IP?
+The IP address is a kind of registration that serves to identify us on the Internet or identify us within a network. It is the address of a device in both an external network and an internal network, or a set of devices. IP stands for Internet Protocol and basically its mission is to manage communications in networks. Through this protocol we can use the assigned IP addresses to identify and communicate. Each IP is unique, and each IP address is not repeated: they cannot be assigned on two devices at the same time.
+IP addresses consist of 32-bit codes but are simplified using four numerical sets separated by dots that make them more easily recognizable and identifiable. Each of these sets of decimal numbers can have values between 0 and 255 and, as we say, are separated by dots. That is, you could have an IP address such as 192.111.22.98.
+The IP address allows us to know which is our Internet provider according to their figures. For example, through IP it is known if we are from Orange, Movistar, Jazztel ... It also allows us to know the location or location more or less accurate (approximate, it should not always be right) from which we connect.
+
+
+
+Who assigns you the IP address?
+You cannot choose which public IP address you want to have at all times. And to control all IP addresses around the world, there is a person in charge: the Internet Assigned Numbers Authority (IANA) although it divides its work into the Regional Internet Registries (RIR) that are divided into five and each of them counts with an assigned zone. In the case of Europe (together with Central Asia and the Middle East), the person in charge of assigning the IP addresses is the Reseaux IP Européens Network Cordination Center (RIPE NCC) and is in charge of the mentioned territories. Among them, of course, Spain.
+This RIPE NCC is in charge of distributing the IP addresses that will be divided into Local Internet Registries (LIR) or National Internet Registries (NIR) and from there they will go to the suppliers, to the sub-suppliers and finally to the client: you . Although there are many higher levels, your provider will be in charge of assigning you the IP you need at any time to identify yourself on the Internet.
+
+
+
+IP types
+Although all IP addresses have the mission of identifying us, there are two types of IP addresses and their specific objective is different. There are public IP addresses and private IP addresses, some identify you on the Internet and another do it within the same network that shares public IP. For example, in your house.
+Public IP Addresses
+The public IP address is basically the one that helps you identify yourself when you connect to the Internet. Your registration to navigate or use any service. This is the identification that your Internet provider assigns you to be recognized on the Internet. To identify yourself on the Internet, you have to have a public IP address that has been automatically assigned to you, even if you did not know or exist.
+Public addresses are usually dynamic or static IP addresses. They are dynamic if you connect to the Internet from your router at home, your provider assigns you a random IP address that is available. And it is the one you use to identify yourself when you browse the Internet whenever you do. Or static if you want to always keep the same IP and never rotate. There are differences in terms of use but also in terms of expenditure. We all have a dynamic IP address normally but if we want to have a static IP address we must pay for it. In addition, another major difference is that the latter decrease privacy because it is easier to monitor them.
+
+Dynamic IP addresses They are the ones that use a different number every time you connect to the Internet. It is the most common part of Internet providers and the IP addresses that are usually assigned to you are dynamic IP addresses that are not currently being used by another.
+Fixed IP addresses. There are also fixed IP addresses where the number is always the same, it never varies. It is not modified in any way or when we restart the router or after a while. For email services, for databases or for servers dedicated to hosting web pages or hosting, for example. What these fixed IP addresses do is ""translate"" an IP address into a domain name to make it more easily recognizable.
+
+Private IP addresses
+IP addresses can be private. These are not intended to identify you within the Internet as a whole but to identify each device within the same network. For example, each device in a house with only one router or each computer in an office whose public IP is maintained but the private ones vary. You can identify a smartphone, a computer, a tablet.
+The private IP address is assigned to each device so that it can be recognized. For example, you can have a private IP address on your mobile, another on your printer, another on your smartphone and another on your tablet even if they are all connected to the network, to the same WiFi or router.
+In each of your devices you can choose if you want a dynamic IP address that the router will assign randomly or if you prefer to establish a fixed IP that will help you remember it more easily. For example, if you want to access your PC from your smartphone remotely.
+What is my ip?
+Once you know the difference between public or private IP addresses or that you know that the IP addresses are not the same forever, the most important thing comes: what is my IP? We review all the ways to find the IP, both public and private and of all devices.
+What is my public IP
+To know your public IP, simply access the browser from any device you have at home. The computer, smartphone or tablet will let you know what the public IP address you currently have at home or in your office, for example. To do this, visit this website to know your IP and in a few seconds you will get the answer
+What is my private IP
+To know how to find the private IP of a device, you will have to follow a series of steps that will vary according to the operating system used in each of them.
+On windows
+
+Go to the search engine
+Search ""Run""
+A pop-up window will appear and type cmd
+Enter
+The terminal screen will appear
+Type ipconfig and press ENTER
+Your private IP address will be the one corresponding to “IPv4 Address”
+
+
+
+
+You can also check the IP from Windows from the control panel:
+
+Go to the control panel
+Click on Networks and Internet
+Open the Network and Sharing Center
+Click on the active Internet connection
+Access the properties
+Click on ""Details ...""
+Here you will find all the details and your private IP address
+
+
+
+
+On Linux
+
+Go to the desk
+Click on the network connection icon
+Click on “connection information”
+There you can find the IP address
+
+
+
+
+Another way to do it from Linux is through the console
+
+Press Control + Alt + T
+The terminal will open
+Type ifconfig
+Press enter
+You will see the private IP address of that device
+
+
+
+
+On Mac
+
+Go to the system preferences icon
+Open and access the Network section
+Click on “Advanced…” in the lower right button
+You will see the TCP / IP section
+You will find the IPv4 address, the private IP address of your device
+
+
+
+
+From your Android device
+
+Go to the Settings section
+Look for the ""About device"" option
+Click on ""Status""
+There you will see your private IP address indicated
+
+This route may vary depending on the personalization layer you use and it is possible that instead of finding “About the device” you will find synonyms such as “About the phone”, for example.
+
+
+
+From your iPhone mobile or iPad tablet
+
+Open the Settings app
+Click on WiFi
+Choose the network you are connected to
+Click on the information icon
+Here you can find the private IP of the iPhone / iPad and that of your router
+
+
+
+
+From any phone or tablet
+A practical way to find the private IP of any device that is connected to your router is to bet on the Fing app. Fing is a free application that you can download for iOS and Android, intuitive and very practical. Simply open it to scan all the devices connected to your network and you can find the private IP of each and every one of them so that you always have them located or to avoid having to search for device by device. All on one screen.
+
+
+
+
+
+"

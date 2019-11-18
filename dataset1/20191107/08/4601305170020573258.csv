@@ -1,0 +1,60 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+FTC takes action against stalkerware company Retina-X
+07 Nov 2019, 08:13 by Gennie Gebhart and Eva Galperin
+[We've been covering the grimy, sleazy stalkerware industry for years, and so it's nice to see that the FTC is finally taking action against the worst of the worst actors -- pity that they're still getting it wrong, as EFF's Gennie Gephart and Eva Galperin explain in this Deeplinks post that I've mirrored below. -Cory]
+The FTC recently took action against stalkerware developer Retina-X, the company behind apps Flexispy, PhoneSheriff, and Teenspy. The FTC settlement bars Retina-X from distributing its mobile apps until it can adequately secure user information and ensure its apps will only be used for “legitimate purposes.” But here’s the problem: there are simply no legitimate purposes for secret stalking apps.
+Retina-X, and its own James N. Johns Jr., seem to have come to the FTC’s attention not necessarily for making stalkerware, but for making stalkerware poorly. The company has suffered multiple security breaches over the past several years, including attacks from “vigilante hackers” who deleted petabytes of the company’s data—essentially, data that stalking app users had collected through spying on spouses, children, employees, and other targets. The FTC alleged that the poor security was a deceptive practice, which the FTC has authority to regulate under Section V of the FTC Act.
+In addition to requiring Retina X to demonstrate tighter security overall, the FTC alleged that the company violated the Children’s Online Privacy Protection Act (COPPA), which requires companies like Retina X to secure information—especially the kind of sensitive information Retina-X’s apps collect, like physical location and online activities—from children under 13.
+The FTC’s proposed settlement takes some good steps, but we’d like to see it go further.
+Noting that Retina-X’s apps often come with instructions on how to prevent their icons from showing up on a target’s screen, the FTC requires the company to include an icon with the name of the app on the mobile device. And in response to another trademark characteristic of malicious stalkerware, the FTC also prohibits Retina-X from selling apps that require users to “jailbreak,” root, or otherwise circumvent a device’s security protections to install. So far, so good.
+But the settlement is peppered with exceptions to these requirements when Retina-X’s apps are used for so-called “legitimate purposes,” which the FTC seems to think include spying on children or employees. The settlement spells out how Retina-X will have to take “reasonable steps” to ensure that its users “will only use the app to monitor a child or an employee, or another adult who has provided written consent.” This creates huge blind spots in the settlement: for example, the FTC hollows out the overall positive requirement to include a clear app icon and name by elaborating that such an icon can be “removable by a parent or legal guardian who has installed the app on their minor child’s phone.”
+There are two big problems with this framing. First, as a practical matter, it is nearly impossible for Retina-X to establish or monitor its users’ relationships to their targets, or to ensure that they will use the app how they say they will. Second, and more importantly, stalkerware like the apps Retina-X makes are fundamentally malicious technology. The FTC’s settlement ignores the trend of abusers repurposing “child safety” or “employee monitoring” tools for domestic violence against spouses, children, and others. The fact is that this technology is oppressive and invasive, regardless of who it is used on. There is no acceptable use case for running a consumer spying app secretly.
+Contrary to the FTC’s assertion that this is the agency’s first case against a “stalking” app, the Retina-X settlement is far from the first time the FTC has singled out this kind of malicious spying technology under Section V.
+In 2012, the FTC charged DesignerWare LLC, a company that provided spyware to rent-to-own computer providers, and entered into a consent decree with the company agreeing not to collect data from computers without giving clear and prominent notice and obtaining affirmative consent.
+Similarly, in 2008 the FTC sued CyberSpy Software, which sold a keylogger program. The company entered into a consent decree with the FTC in 2010 in which it agreed not to promote, sell, or distribute software to be installed on computers without the knowledge and consent of the computer’s owner.
+We look forward to seeing more enforcement against the companies that make stalkerware, spouseware, and tracking apps. And, next time, we hope the FTC and others take them to task not just for poor security or design, but for the full range of domestic abuse they enable.
+(Crossposted from EFF Deeplinks)
+
+
+",en,"
+
+
+
+
+
+
+
+
+
+
+
+FTC takes action against stalkerware company Retina-X
+07 Nov 2019, 08:13 by Gennie Gebhart and Eva Galperin
+[We've been covering the grimy, sleazy stalkerware industry for years, and so it's nice to see that the FTC is finally taking action against the worst of the worst actors -- pity that they're still getting it wrong, as EFF's Gennie Gephart and Eva Galperin explain in this Deeplinks post that I've mirrored below. -Cory]
+The FTC recently took action against stalkerware developer Retina-X, the company behind apps Flexispy, PhoneSheriff, and Teenspy. The FTC settlement bars Retina-X from distributing its mobile apps until it can adequately secure user information and ensure its apps will only be used for “legitimate purposes.” But here’s the problem: there are simply no legitimate purposes for secret stalking apps.
+Retina-X, and its own James N. Johns Jr., seem to have come to the FTC’s attention not necessarily for making stalkerware, but for making stalkerware poorly. The company has suffered multiple security breaches over the past several years, including attacks from “vigilante hackers” who deleted petabytes of the company’s data—essentially, data that stalking app users had collected through spying on spouses, children, employees, and other targets. The FTC alleged that the poor security was a deceptive practice, which the FTC has authority to regulate under Section V of the FTC Act.
+In addition to requiring Retina X to demonstrate tighter security overall, the FTC alleged that the company violated the Children’s Online Privacy Protection Act (COPPA), which requires companies like Retina X to secure information—especially the kind of sensitive information Retina-X’s apps collect, like physical location and online activities—from children under 13.
+The FTC’s proposed settlement takes some good steps, but we’d like to see it go further.
+Noting that Retina-X’s apps often come with instructions on how to prevent their icons from showing up on a target’s screen, the FTC requires the company to include an icon with the name of the app on the mobile device. And in response to another trademark characteristic of malicious stalkerware, the FTC also prohibits Retina-X from selling apps that require users to “jailbreak,” root, or otherwise circumvent a device’s security protections to install. So far, so good.
+But the settlement is peppered with exceptions to these requirements when Retina-X’s apps are used for so-called “legitimate purposes,” which the FTC seems to think include spying on children or employees. The settlement spells out how Retina-X will have to take “reasonable steps” to ensure that its users “will only use the app to monitor a child or an employee, or another adult who has provided written consent.” This creates huge blind spots in the settlement: for example, the FTC hollows out the overall positive requirement to include a clear app icon and name by elaborating that such an icon can be “removable by a parent or legal guardian who has installed the app on their minor child’s phone.”
+There are two big problems with this framing. First, as a practical matter, it is nearly impossible for Retina-X to establish or monitor its users’ relationships to their targets, or to ensure that they will use the app how they say they will. Second, and more importantly, stalkerware like the apps Retina-X makes are fundamentally malicious technology. The FTC’s settlement ignores the trend of abusers repurposing “child safety” or “employee monitoring” tools for domestic violence against spouses, children, and others. The fact is that this technology is oppressive and invasive, regardless of who it is used on. There is no acceptable use case for running a consumer spying app secretly.
+Contrary to the FTC’s assertion that this is the agency’s first case against a “stalking” app, the Retina-X settlement is far from the first time the FTC has singled out this kind of malicious spying technology under Section V.
+In 2012, the FTC charged DesignerWare LLC, a company that provided spyware to rent-to-own computer providers, and entered into a consent decree with the company agreeing not to collect data from computers without giving clear and prominent notice and obtaining affirmative consent.
+Similarly, in 2008 the FTC sued CyberSpy Software, which sold a keylogger program. The company entered into a consent decree with the FTC in 2010 in which it agreed not to promote, sell, or distribute software to be installed on computers without the knowledge and consent of the computer’s owner.
+We look forward to seeing more enforcement against the companies that make stalkerware, spouseware, and tracking apps. And, next time, we hope the FTC and others take them to task not just for poor security or design, but for the full range of domestic abuse they enable.
+(Crossposted from EFF Deeplinks)
+
+
+"

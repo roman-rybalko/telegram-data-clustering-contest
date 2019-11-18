@@ -1,0 +1,56 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Ignite 2019, Microsoft punta tutto su servizi IA
+05 Nov 2019, 05:09 by Antonino Caffo
+La conferenza annuale Ignite 2019 di Microsoft è sempre un ottimo modo per scoprire le novità che la compagnia dedica ai servizi per il business. Non sono mancate le sorprese anche questa volta, con una serie di funzionalità interessanti, impregnate di Intelligenza Artificiale.
+Si parte con Azure Synapse Analytics, un nuovo servizio che combina le capacità di Azure SQL Data Warehouse con nuove funzionalità che mirano ad aiutare gli utenti ad analizzare i dati provenienti da diverse fonti in modo più rapido e sicuro. Disponibile in preview da oggi, Azure Arc permette invece di accedere ai servizi di Azure da altri cloud o infrastrutture, inclusi quelli di Amazon e Google.
+Per quanto riguarda Microsoft Flow, questa cambia nome e diventa Power Automate e si dota di una nuova funzionalità di robotic process automation chiamata UI flows, disponibile in preview pubblica, che consente di trasformare compiti manuali in workflow automatizzati.
+Lo fa registrando e riproducendo le azioni guidate dagli esseri umani su software che non supportano l’automazione delle API, grazie a una semplice esperienza point-and-click. Con questo aggiornamento, Power Automate si conferma come piattaforma end-to-end di valore per l’automazione.
+Ma la prima vera novità di Ignite 2019 è Project Cortex per Microsoft 365. Incarna l’impegno della compagnia nel trasformare le modalità di apprendimento e condivisione delle informazioni. Il nuovo tool fa leva sull’intelligenza artificiale per analizzare i dati aziendali e organizzarli automaticamente per topic, assicurandosi di consegnare le informazioni alle giuste persone all’interno dell’organizzazione.
+
+
+
+Arriva anche Play My Emails in Outlook for iOS, disponibile a partire da oggi negli Stati Uniti. Speriamo lo sarà presto anche da noi perché si poggia su Cortana per usare il riconoscimento vocale e del linguaggio naturale e leggere ad alta voce le nuove email e gestire cambi nell’agenda, permettendo di rimanere aggiornati anche quando non si hanno le mani libere.
+Vengono potenziati con tool IA anche Microsoft Edge e Microsoft Bing, come la possibilità di combinare Internet con l’Intranet aziendale tramite Microsoft Search all’interno di Bing, oltre ad avanzate impostazioni di default per la protezione della privacy e la capacità di esportare informazioni direttamente da una ricerca sul web.
+Concludiamo con Yammer, che è stato completamente ridisegnato con decine di nuove funzionalità che migliorano la connessione, la creazione di community e la condivisione di informazioni all’interno delle aziende. La nuova versione offre un’esperienza intelligente e fluida su più dispositivi e introduce nuove possibilità di integrazione con Teams, SharePoint e Outlook.
+
+
+",it,"
+
+
+
+
+
+
+
+
+
+
+
+Ignite 2019, Microsoft relies on AI services
+05 Nov 2019, 05:09 by Antonino Caffo
+The annual Ignite 2019 conference from Microsoft is always a great way to discover the news that the company dedicates to business services. There were also surprises this time, with a series of interesting features, imbued with Artificial Intelligence.
+It starts with Azure Synapse Analytics, a new service that combines the capabilities of Azure SQL Data Warehouse with new features that aim to help users analyze data from different sources more quickly and safely. Available as a preview today, Azure Arc allows you to access Azure services from other clouds or infrastructures, including Amazon and Google.
+As for Microsoft Flow, it changes its name and becomes Power Automate and is equipped with a new robotic process automation feature called UI flows, available in public preview, which allows manual tasks to be transformed into automated workflows.
+It does this by recording and reproducing the actions guided by human beings on software that does not support API automation, thanks to a simple point-and-click experience. With this update, Power Automate is confirmed as an end-to-end value platform for automation.
+But the first real innovation of Ignite 2019 is Project Cortex for Microsoft 365. It embodies the company's commitment to transforming the ways of learning and sharing information. The new tool leverages artificial intelligence to analyze company data and automatically organize them by topic, making sure to deliver the information to the right people within the organization.
+
+
+
+Play My Emails also comes in Outlook for iOS, available starting today in the United States. We hope it will be soon also with us because it relies on Cortana to use voice recognition and natural language and read new emails aloud and manage changes in the agenda, allowing you to stay up to date even when you don't have your hands free.
+Microsoft Edge and Microsoft Bing are also enhanced with IA tools, such as the ability to combine the Internet with the company Intranet via Microsoft Search within Bing, as well as advanced default settings for privacy protection and the ability to export information directly from a web search.
+We conclude with Yammer, which has been completely redesigned with dozens of new features that improve the connection, the creation of communities and the sharing of information within companies. The new version offers an intelligent and fluid experience on multiple devices and introduces new possibilities for integration with Teams, SharePoint and Outlook.
+
+
+"

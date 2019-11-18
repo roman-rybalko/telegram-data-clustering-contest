@@ -1,0 +1,76 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+The distro is a fan of this new fangled packaging format
+elementary OS Now Has Support for Flatpak Apps
+03 Nov 2019, 16:31 by By Joey Sneddon
+Native Flatpak support is now available to users of the Ubuntu-based elementary OS Linux distribution.
+As shared in their latest monthly mail shot, the bods behind the pay-what-you-want distro have enabled Flatpak out of the box on elementary OS.
+This means elementary OS users can now search for, browse, and install Flatpak apps direct from the distro’s software store ‘AppCenter’.
+
+
+
+To handle situations where a single app is available from multiple sources (e.g., Flatpak, Repo, AppCenter) app listings display a drop-down source menu. Users simply select the ‘source’ they want to install from, then hit install to get it.
+Additionally, updates to Flatpak apps installed through AppCenter are listed and distributed alongside regular system and app updates in the App Center. There’s no “separate” app or update method required (unlike Flatpak in Ubuntu, which requires you to use Ubuntu Software > Updates).
+elementaryOS Flatpak Support
+But while Flatpak support in elementaryOS is now available by default, support for Flathub (and other third-party Flatpak repos) is not.
+This means that, unlike Linux Mint, you can’t browse and install apps available that are available on Flathub “out of the box”, with no set-up required.
+So to make it easier for users to install Flatpak apps downloaded as .flatpakref files from sites like Flathub, elementary have created a new Flatpak handler app called Sideload:
+“Sideload facilitates a safer way to help users get sandboxed apps,” elementary say, adding that they “recommend users visit AppCenter for quality curated apps made for elementary OS”.
+
+
+
+It should be noted that Sideload does not support .flatpakrepo files.
+In addition, a similar “untrusted app” warning will appear when users attempt to install an application distributed outside of the ‘curated’ elementary OS app set.
+As this could get annoying, it can be disabled.
+Elementary OS users wishing to benefit from these (and other) updates can  open the AppCenter > Update All to install them.
+
+
+",en,"
+
+
+
+
+
+
+
+
+
+
+
+The distro is a fan of this new fangled packaging format
+elementary OS Now Has Support for Flatpak Apps
+03 Nov 2019, 16:31 by By Joey Sneddon
+Native Flatpak support is now available to users of the Ubuntu-based elementary OS Linux distribution.
+As shared in their latest monthly mail shot, the bods behind the pay-what-you-want distro have enabled Flatpak out of the box on elementary OS.
+This means elementary OS users can now search for, browse, and install Flatpak apps direct from the distro’s software store ‘AppCenter’.
+
+
+
+To handle situations where a single app is available from multiple sources (e.g., Flatpak, Repo, AppCenter) app listings display a drop-down source menu. Users simply select the ‘source’ they want to install from, then hit install to get it.
+Additionally, updates to Flatpak apps installed through AppCenter are listed and distributed alongside regular system and app updates in the App Center. There’s no “separate” app or update method required (unlike Flatpak in Ubuntu, which requires you to use Ubuntu Software > Updates).
+elementaryOS Flatpak Support
+But while Flatpak support in elementaryOS is now available by default, support for Flathub (and other third-party Flatpak repos) is not.
+This means that, unlike Linux Mint, you can’t browse and install apps available that are available on Flathub “out of the box”, with no set-up required.
+So to make it easier for users to install Flatpak apps downloaded as .flatpakref files from sites like Flathub, elementary have created a new Flatpak handler app called Sideload:
+“Sideload facilitates a safer way to help users get sandboxed apps,” elementary say, adding that they “recommend users visit AppCenter for quality curated apps made for elementary OS”.
+
+
+
+It should be noted that Sideload does not support .flatpakrepo files.
+In addition, a similar “untrusted app” warning will appear when users attempt to install an application distributed outside of the ‘curated’ elementary OS app set.
+As this could get annoying, it can be disabled.
+Elementary OS users wishing to benefit from these (and other) updates can  open the AppCenter > Update All to install them.
+
+
+"

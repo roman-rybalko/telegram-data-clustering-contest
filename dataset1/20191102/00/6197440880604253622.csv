@@ -1,0 +1,64 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Google Keep prepares for universal Assistant integration, audio uploads on web
+02 Nov 2019, 00:01 by Ryan Kovatch
+Google Keep is getting ready for integration with the Google Assistant on all platforms, as well as the ability to upload audio from web. We’ve managed to enable a few features on  Keep which show us how they work.
+Manage your Keep notes on all devices
+Soon, Google will allow the Google Assistant to manage notes on Keep across all devices, including smart speakers and displays. Mobile devices have had the ability to create notes with the Assistant for a while, albeit through an odd implementation that exists in the Google app (separate from Keep). Google is now unifying the experience by switching to Google Keep as their note provider and allowing users to see their notes everywhere that it’s supported. We’ve enabled an inline promotion for this feature on web, which highlights the phrase, “Hey Google, what’s on my to-do list?”
+
+
+
+Clicking the “Learn more” button takes you to this support article, which states “If you’re using the Google Assistant on a speaker, follow these steps instead.” The steps on that page do not work yet, simply resulting in the Assistant saying, “Sorry, I can’t take notes yet.” The fact that a support article exists points to an imminent rollout of this functionality, if it hasn’t started already.
+Upload your audio notes on web
+On mobile, the Google Keep app allows you to record audio notes and transcribe them, while keeping the original recording attached to the bottom. On web, users have had the ability to view and listen to these notes, but not create them. Google is now experimenting with support for attaching audio files of various types to a note. Interestingly enough, support for recording audio is still not present.
+Enabling this feature will change the image upload button to a file upload button, switching the icon to a paperclip rather than a photo. Then, the user can upload audio files just like images (although audio files will not be transcribed this way). Google Keep supports uploading 3GPP, AAC, AMR-NB, and AMR-WB audio formats as of now. It does not support MP3, WAV, WMA, OGG, or FLAC formats, but hopefully will soon. It is also worth noting that uploading audio notes on web right now will cause the mobile Keep app to crash when opening them.
+
+
+
+We hope to see a rollout of both of these features soon. Keep integration with the Assistant has been a popular request since the beginning, and it will most likely be widely available in the coming weeks.
+FTC: We use income earning auto affiliate links. More.
+
+
+",en,"
+
+
+
+
+
+
+
+
+
+
+
+Google Keep prepares for universal Assistant integration, audio uploads on web
+02 Nov 2019, 00:01 by Ryan Kovatch
+Google Keep is getting ready for integration with the Google Assistant on all platforms, as well as the ability to upload audio from web. We’ve managed to enable a few features on  Keep which show us how they work.
+Manage your Keep notes on all devices
+Soon, Google will allow the Google Assistant to manage notes on Keep across all devices, including smart speakers and displays. Mobile devices have had the ability to create notes with the Assistant for a while, albeit through an odd implementation that exists in the Google app (separate from Keep). Google is now unifying the experience by switching to Google Keep as their note provider and allowing users to see their notes everywhere that it’s supported. We’ve enabled an inline promotion for this feature on web, which highlights the phrase, “Hey Google, what’s on my to-do list?”
+
+
+
+Clicking the “Learn more” button takes you to this support article, which states “If you’re using the Google Assistant on a speaker, follow these steps instead.” The steps on that page do not work yet, simply resulting in the Assistant saying, “Sorry, I can’t take notes yet.” The fact that a support article exists points to an imminent rollout of this functionality, if it hasn’t started already.
+Upload your audio notes on web
+On mobile, the Google Keep app allows you to record audio notes and transcribe them, while keeping the original recording attached to the bottom. On web, users have had the ability to view and listen to these notes, but not create them. Google is now experimenting with support for attaching audio files of various types to a note. Interestingly enough, support for recording audio is still not present.
+Enabling this feature will change the image upload button to a file upload button, switching the icon to a paperclip rather than a photo. Then, the user can upload audio files just like images (although audio files will not be transcribed this way). Google Keep supports uploading 3GPP, AAC, AMR-NB, and AMR-WB audio formats as of now. It does not support MP3, WAV, WMA, OGG, or FLAC formats, but hopefully will soon. It is also worth noting that uploading audio notes on web right now will cause the mobile Keep app to crash when opening them.
+
+
+
+We hope to see a rollout of both of these features soon. Keep integration with the Assistant has been a popular request since the beginning, and it will most likely be widely available in the coming weeks.
+FTC: We use income earning auto affiliate links. More.
+
+
+"

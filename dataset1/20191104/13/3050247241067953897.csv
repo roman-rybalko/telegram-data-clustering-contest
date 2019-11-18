@@ -1,0 +1,70 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+News
+Bitfinex Adds Bitcoin Bech32 Support — Hints at Lightning Network Next
+04 Nov 2019, 13:36 by Helen Partz
+Major global crypto exchange Bitfinex now supports Bitcoin (BTC) bech32 addresses generation and deposits to bech32 addresses. Following the launch of Bitcoin withdrawals on bech32 addresses on Oct. 29, Bitfinex officially announced on Nov. 4 that the exchange now also supports Bitcoin deposits to bech32.
+As previously announced, a bech32 Bitcoin address is a Segregated Witness (SegWit) address format specified by Bitcoin Improvement Proposal (BIP) 0173. Also known as ""bc1 addresses,” bech32 format starts with the alphanumeric characters bc1 and consists only of lowercase letters, making each address not case-sensitive.
+This updated address format provides better protection against typing errors and thus fixes transaction malleability. Moreover, SegWit increases the maximum block size limit, effectively increasing transaction capacity and lowering fees.
+Interoperability with platforms not supporting bech32
+Bitfinex notes that the introduction of bech32 addresses shows its commitment to speeding up the adoption of SegWit as well as developing and scaling Bitcoin.
+As bech32 format is not supported by all the exchanges, Bitfinex's traders will have the option to use either the original Pay to Script Hash (P2SH) SegWit deposit address or native SegWit bech32 address, the firm stated.
+Additionally, Bitfinex also hinted at adding support of the Lightning Network (LN) soon. Commenting on the news, Bitfinex’s CTO Paolo Ardoino seemingly referenced LN as a “Little Nice” thing in a tweet on Nov. 4:
+“Now there is only one Little Nice thing left for us to develop…”
+SegWit-spending BTC transactions hit 57%
+The news follows the recent uptick in SegWit-spending Bitcoin transactions on the network to over half of the total. Implemented as a major Bitcoin protocol upgrade in August 2017 to optimize block space usage.
+According to transactionfee.info statistics, the percentage of SegWit transactions has hit an all-time high of 57.7% on Oct. 8 and currently at 52.2%.
+
+
+
+
+Percentage of SegWit-spending Bitcoin payments. Source: transactionfee.info
+
+
+
+",en,"
+
+
+
+
+
+
+
+
+
+
+
+News
+Bitfinex Adds Bitcoin Bech32 Support — Hints at Lightning Network Next
+04 Nov 2019, 13:36 by Helen Partz
+Major global crypto exchange Bitfinex now supports Bitcoin (BTC) bech32 addresses generation and deposits to bech32 addresses. Following the launch of Bitcoin withdrawals on bech32 addresses on Oct. 29, Bitfinex officially announced on Nov. 4 that the exchange now also supports Bitcoin deposits to bech32.
+As previously announced, a bech32 Bitcoin address is a Segregated Witness (SegWit) address format specified by Bitcoin Improvement Proposal (BIP) 0173. Also known as ""bc1 addresses,” bech32 format starts with the alphanumeric characters bc1 and consists only of lowercase letters, making each address not case-sensitive.
+This updated address format provides better protection against typing errors and thus fixes transaction malleability. Moreover, SegWit increases the maximum block size limit, effectively increasing transaction capacity and lowering fees.
+Interoperability with platforms not supporting bech32
+Bitfinex notes that the introduction of bech32 addresses shows its commitment to speeding up the adoption of SegWit as well as developing and scaling Bitcoin.
+As bech32 format is not supported by all the exchanges, Bitfinex's traders will have the option to use either the original Pay to Script Hash (P2SH) SegWit deposit address or native SegWit bech32 address, the firm stated.
+Additionally, Bitfinex also hinted at adding support of the Lightning Network (LN) soon. Commenting on the news, Bitfinex’s CTO Paolo Ardoino seemingly referenced LN as a “Little Nice” thing in a tweet on Nov. 4:
+“Now there is only one Little Nice thing left for us to develop…”
+SegWit-spending BTC transactions hit 57%
+The news follows the recent uptick in SegWit-spending Bitcoin transactions on the network to over half of the total. Implemented as a major Bitcoin protocol upgrade in August 2017 to optimize block space usage.
+According to transactionfee.info statistics, the percentage of SegWit transactions has hit an all-time high of 57.7% on Oct. 8 and currently at 52.2%.
+
+
+
+
+Percentage of SegWit-spending Bitcoin payments. Source: transactionfee.info
+
+
+
+"

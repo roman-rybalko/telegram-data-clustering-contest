@@ -1,0 +1,92 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Google’s OpenTitan: A new open source silicon root of trust project debuts
+05 Nov 2019, 14:00 by Charlie Osborne
+
+Google wants to raise the bar for hardware security from the data center to the edge.
+
+
+
+
+Google has launched OpenTitan, a project designed to peel silicon root of trust (RoT) away from vendor lock-in and into an open source development model.  On Tuesday, the tech giant said OpenTitan aims to ""deliver a high-quality RoT design and integration guidelines for use in data center servers, storage, peripherals, and more.""
+A RoT is a lowest-level source within a trusted computing module that is always fully trusted by the system, serving as a foundation for critical elements in a process chain.  Critical in applications including public key infrastructures (PKIs), RoTs can link elements together with prior trusted elements, thereby -- in theory -- boosting the overall security of what may be a complicated system, such as an IoT application or data center.  Google currently accounts for 19 data centers across five continents -- not including enterprise cloud customers. Data centers, storage, and mission-critical applications all need to be protected, and in order to defend this large attack surface, Google originally built its own RoT, the Titan chip. 
+This design was proprietary to Google. After integrating Titan within the company's data center infrastructure and listening to customers concerned about the proprietary nature of not just Titan, but every other silicon RoT on the market, Google wanted to change the nature of the ""inflexible and incomplete"" RoT industry.  According to Royal Hansen, Vice President of Google and Dominic Rizzo, Google Titan Security Lead, open source silicon is the best way to improve the cybersecurity posture of data centers and processes along to the edge, and by opening silicon designs up to the open source community at large, systems utliizing the design will be ""more transparent, trustworthy, and ultimately, secure.""
+CNET: Enter for your chance to win* a Google Pixel 4 XL The initial stage of the project is the creation of a logical silicon RoT design including an open source microprocessor -- the lowRISC Ibex -- cryptographic processors, a hardware random number generator, key and memory hierarchies for both volatile and non-volatile storage, defensive mechanisms, IO peripherals, and secure boot processes.The OpenTitan RoT technology can be used in hardware including motherboards, network cards, routers, IoT devices, mobile and consumer gadgets, machine learning setups, and other appliances. 
+
+
+
+Google says that OpenTitan is based on three key principles: the ability for anyone to inspect and contribute to silicon RoT; increased flexibility by opening up a logically-secure design that is not impacted by vendor lock-in, and quality, established not only by the design itself but also through the creation of reference firmware and documentation. ""Current silicon roots of trust are highly proprietary and they claim security but you really have to take that as a leap of faith and you can't verify it for yourself,"" Rizzo says. ""For the first time, you can establish trustworthiness without the blind trust required of proprietary root of trust designs. So the foundation isn't just strong, its inspectable."" Rizzo added that OpenTitan could be considered ""radical design transparency versus the status quo."" OpenTitan will not be managed by Google. Instead, lowRISC, a non-profit which develops and maintains open source silicon designs and tools including processor and system-on-chip (SoC) design, alongside RISC-V tools and the LLVM compiler infrastructure project, will oversee the scheme.  In addition, a team of engineers based in Cambridge, UK, will have a hand in management. OpenTitan founding partners include ETH Zurich, G+D Mobile Security, Nuvoton Technology, and Western Digital. TechRepublic: Wanted: More women hackers ""As the volume and value of data continues to grow exponentially, so does the need to keep that data safe and secure,"" said Dr. Richard New, vice president of research and development at Western Digital. ""OpenTitan leverages the power and transparency of the open-source development model to enable root of trust chips that can be fully inspected and verified, thereby providing strong security against malware, physical hardware modifications and other threats.""  OpenTitan should not be considered a finished product by any means; rather, by opening up OpenTitan mid-development, it is hoped that additional partners will sign up, inspect, contribute to, and continue to improve the design.  ""We're taking the most valuable data, protecting it with the most secure hardware, and letting you -- and our customers -- inspect the design down to the core,"" Rizzo says. The OpenTitan repository is now available on GitHub. Interested implementation partners will undergo a certification process, and the OpenTitan team will provide integration guidelines for vendor and platform partners.
+Previous and related coverage
+
+
+Google brings the Titan Security Key to more countries
+
+
+Google announces new USB-C Titan Security Key
+
+
+Inside a Google Titan Bluetooth security key - high security, low durability
+
+
+
+Have a tip? Get in touch securely via WhatsApp | Signal at +447713 025 499, or over at Keybase: charlie0
+
+
+
+",en,"
+
+
+
+
+
+
+
+
+
+
+
+Google’s OpenTitan: A new open source silicon root of trust project debuts
+05 Nov 2019, 14:00 by Charlie Osborne
+
+Google wants to raise the bar for hardware security from the data center to the edge.
+
+
+
+
+Google has launched OpenTitan, a project designed to peel silicon root of trust (RoT) away from vendor lock-in and into an open source development model.  On Tuesday, the tech giant said OpenTitan aims to ""deliver a high-quality RoT design and integration guidelines for use in data center servers, storage, peripherals, and more.""
+A RoT is a lowest-level source within a trusted computing module that is always fully trusted by the system, serving as a foundation for critical elements in a process chain.  Critical in applications including public key infrastructures (PKIs), RoTs can link elements together with prior trusted elements, thereby -- in theory -- boosting the overall security of what may be a complicated system, such as an IoT application or data center.  Google currently accounts for 19 data centers across five continents -- not including enterprise cloud customers. Data centers, storage, and mission-critical applications all need to be protected, and in order to defend this large attack surface, Google originally built its own RoT, the Titan chip. 
+This design was proprietary to Google. After integrating Titan within the company's data center infrastructure and listening to customers concerned about the proprietary nature of not just Titan, but every other silicon RoT on the market, Google wanted to change the nature of the ""inflexible and incomplete"" RoT industry.  According to Royal Hansen, Vice President of Google and Dominic Rizzo, Google Titan Security Lead, open source silicon is the best way to improve the cybersecurity posture of data centers and processes along to the edge, and by opening silicon designs up to the open source community at large, systems utliizing the design will be ""more transparent, trustworthy, and ultimately, secure.""
+CNET: Enter for your chance to win* a Google Pixel 4 XL The initial stage of the project is the creation of a logical silicon RoT design including an open source microprocessor -- the lowRISC Ibex -- cryptographic processors, a hardware random number generator, key and memory hierarchies for both volatile and non-volatile storage, defensive mechanisms, IO peripherals, and secure boot processes.The OpenTitan RoT technology can be used in hardware including motherboards, network cards, routers, IoT devices, mobile and consumer gadgets, machine learning setups, and other appliances. 
+
+
+
+Google says that OpenTitan is based on three key principles: the ability for anyone to inspect and contribute to silicon RoT; increased flexibility by opening up a logically-secure design that is not impacted by vendor lock-in, and quality, established not only by the design itself but also through the creation of reference firmware and documentation. ""Current silicon roots of trust are highly proprietary and they claim security but you really have to take that as a leap of faith and you can't verify it for yourself,"" Rizzo says. ""For the first time, you can establish trustworthiness without the blind trust required of proprietary root of trust designs. So the foundation isn't just strong, its inspectable."" Rizzo added that OpenTitan could be considered ""radical design transparency versus the status quo."" OpenTitan will not be managed by Google. Instead, lowRISC, a non-profit which develops and maintains open source silicon designs and tools including processor and system-on-chip (SoC) design, alongside RISC-V tools and the LLVM compiler infrastructure project, will oversee the scheme.  In addition, a team of engineers based in Cambridge, UK, will have a hand in management. OpenTitan founding partners include ETH Zurich, G+D Mobile Security, Nuvoton Technology, and Western Digital. TechRepublic: Wanted: More women hackers ""As the volume and value of data continues to grow exponentially, so does the need to keep that data safe and secure,"" said Dr. Richard New, vice president of research and development at Western Digital. ""OpenTitan leverages the power and transparency of the open-source development model to enable root of trust chips that can be fully inspected and verified, thereby providing strong security against malware, physical hardware modifications and other threats.""  OpenTitan should not be considered a finished product by any means; rather, by opening up OpenTitan mid-development, it is hoped that additional partners will sign up, inspect, contribute to, and continue to improve the design.  ""We're taking the most valuable data, protecting it with the most secure hardware, and letting you -- and our customers -- inspect the design down to the core,"" Rizzo says. The OpenTitan repository is now available on GitHub. Interested implementation partners will undergo a certification process, and the OpenTitan team will provide integration guidelines for vendor and platform partners.
+Previous and related coverage
+
+
+Google brings the Titan Security Key to more countries
+
+
+Google announces new USB-C Titan Security Key
+
+
+Inside a Google Titan Bluetooth security key - high security, low durability
+
+
+
+Have a tip? Get in touch securely via WhatsApp | Signal at +447713 025 499, or over at Keybase: charlie0
+
+
+
+"

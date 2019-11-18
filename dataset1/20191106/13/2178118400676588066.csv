@@ -1,0 +1,56 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Mozilla запретит всплывающие запросы об уведомлениях от сайтов в Firefox
+06 Nov 2019, 13:08 by Владислав Войтенко
+Firefox станет первым десктопным браузером, который по умолчанию запретит сайтам вызывать всплывающие запросы на разрешение присылать веб-пуши. Об этом рассказывается в блоге Mozilla.
+
+
+
+С января следующего года браузер Mozilla Firefox перестанет показывать уведомления о разрешении на получение веб-пушей от сайтов. Окно подписки на уведомления с 72 версии браузера пользователям придётся активировать самостоятельно. Для этого необходимо будет нажать на соответствующую кнопку рядом с URL-строкой и согласиться на получение уведомлений от открытого сайта:
+
+
+Видео: Mozilla
+
+Решение отказаться от таких всплывающих запросов в Mozilla приняли после получения результатов исследования, которое показало, что 99% пользователей Firefox не принимают такие запросы, а 48% отказываются от получения веб-пушей. Повторная просьба подписаться на уведомления сайта достаточно редко вынуждает пользователей изменить своё решение.
+Борьбу с назойливыми всплывающими запросами в Mozilla начали, не дожидаясь полноценного релиза январского обновления. Начиная с 70 версии в браузере при запросе о веб-пушах ответ «Не сейчас» был изменён на «Никогда не разрешать». При выборе этого варианта сайт больше не сможет вызвать всплывающий запрос о подписке на уведомления повторно.
+
+
+",ru,"
+
+
+
+
+
+
+
+
+
+
+
+Mozilla will ban pop-up notification requests from sites in Firefox
+06 Nov 2019, 13:08 by Vladislav Voitenko
+Firefox will be the first desktop browser to prevent sites from causing pop-up permission requests to send web push by default. This is described on the Mozilla blog.
+
+
+
+Starting next January, the Mozilla Firefox browser will stop showing permissions to receive web push from sites. The notification subscription window from 72 browser versions users will have to activate themselves. To do this, you will need to click on the appropriate button next to the URL bar and agree to receive notifications from the open site:
+
+
+Video: Mozilla
+
+Mozilla made the decision to refuse such pop-up requests after receiving the results of a study that showed that 99% of Firefox users do not accept such requests, and 48% refuse to receive web push. A repeated request to subscribe to site notifications rarely forces users to change their minds.
+Mozilla began to deal with annoying pop-up requests without waiting for the full release of the January update. Starting with version 70 in the browser, when asked about web pushing, the answer “Not now” has been changed to “Never allow”. If you select this option, the site will no longer be able to trigger a pop-up request to subscribe to notifications again.
+
+
+"

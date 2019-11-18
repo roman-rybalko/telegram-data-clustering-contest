@@ -1,0 +1,282 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Почему Солнце вращается вокруг Земли
+05 Nov 2019, 16:43 by sergey-b
+
+
+
+В России одна известная организация под названием ВЦИОМ проводила социологическое исследование, на котором гражданам предлагали ответить на вопрос: «Согласны ли вы со следующим утверждением: Солнце вращается вокруг Земли?» Данные этого опроса многократно перепечатываются в СМИ, и на различных сетевых ресурсах в комментариях часто ссылаются на него при обсуждении различных общественно-политических проблем.
+Если бы я принял участие в этом опросе, я бы, скорее всего, был среди тех 30%, кто ответил утвердительно. Ниже я постараюсь объяснить, почему.
+Дело в том, что любое движение относительно. Движется объект или стоит неподвижно, и как он движется, зависит от выбранной системы отсчета. В утверждении «Солнце вращается вокруг Земли» нет никаких указаний на систему отсчета, есть только 2 объекта, Солнце и Земля.
+Предположим, имеется система из 2 точек A и B. Если в системе отсчета, связанной с точкой A, точка B движется по окружности с центром в точке A, то в системе отсчета, связанной с точкой B, точка A движется по окружности с центром в точке B.
+Это очень легко доказать. Достаточно записать уравнение вращения в полярных координатах.
+r = ABφ = ωt
+Расстояние до центра окружности не зависит от времени и равно начальной длине отрезка AB. Полярный угол равен произведению угловой скорости на время. При переходе к полярным координатам с центром в точке B расстояние между точками A и B останется точно такое же, а угол просто сместится на 180°.
+r = BAφ = π + ωt
+Вместо чертежа предлагаю взглянуть на наглядную иллюстрацию. Чтобы просматривать иллюстрации в данной статье, вам понадобится браузер, показывающий анимацию gif.
+
+Солнце-Земля
+
+
+
+
+
+Солнце-Земля с траекторией
+
+
+
+
+Здесь показано движение тел в системе Солнце-Земля в 3 системах отсчета. Слева — гелиоцентрическая система, т. е. система, в центре которой находится Солнце, справа — геоцентрическая система (с центром на Земле), а посередине — система координат, связанная с точкой посередине между Солнцем и Землей. Промежуточную систему я добавил специально для того, чтобы показать, что возможных систем отсчета гораздо больше двух, и все они равноправны. Если Земля вращается вокруг Солнца, то можно говорить и о ее вращении вокруг чего угодно.
+Собственно, на этом можно было бы поставить точку. Вопрос ВЦИОМ безграмотный и однозначного ответа не имеет. Можно как соглашаться с утверждением, что Солнце вращается вокруг Земли, так и не соглашаться, никаких выводов из этого не следует, и внимания подобные исследования не заслуживают. Однако тема, затронутая в этом вопросе, очень плодотворная. По ней можно рассказать много интересного. Поэтому продолжим.
+Характер движения небесных тел изучался людьми для решения практических задач. Солнце очевидно влияет на погоду, поэтому для планирования многих мероприятий, например, строительных или сельскохозяйственных работ, надо было уметь рассчитывать его траекторию. Ученые наблюдали за светилом, записывали результаты и составляли таблицы, в какой день, в каком месте на земле до какой высоты Солнце поднимется, сколько будет длиться ночь и т. д. Принимая Землю за центр, вокруг которого вращается Солнце, можно было все достаточно точно рассчитать. Результатом этих расчетов стал календарь, которым мы пользуемся и сейчас.
+Сложности возникают, когда появляется необходимость рассчитать траектории движения планет. Скажем, Венера. На погоду она не влияет, но игнорировать ее совершенно невозможно, потому что это 3-й по яркости объект на небе. Во время полновенерия ясной ночью при свете этой планеты можно даже читать. Давайте посмотрим, как выглядит орбита Венеры с учетом того, что мы о ней знаем. Надо заметить, что сделать изображение Солнечной Системы с соблюдением всех пропорций практически невозможно, поэтому на моих иллюстрациях, пропорции не соблюдены. Я старался соблюдать только отношения больше-меньше и медленнее-быстрее (Венера меньше Юпитера, Меркурий относительно Солнца движется быстрее Земли и т. п.).
+
+Солнце-Венера-Земля
+
+
+
+
+Вот, как выглядит траектория движения Венеры в различных системах отсчета.
+
+Венера с траекторией
+
+
+
+
+Попробуйте по такой траектории рассчитать, когда Венера окажется на одной линии между Солнцем и Землей или когда она скроется за Солнцем. Задача не из легких.
+
+
+
+А кроме Венеры с древних времен были известны и другие планеты. Например, самый близкий к Солнцу Меркурий. Его траектория в тех же координатах выглядит следующим образом.
+
+Солнце-Меркурий-Венера-Земля
+
+
+
+
+Если вы сделаете подряд несколько скриншотов, вы заметите, что в каждый момент времени состояние системы Солнце-Меркурий-Венера-Земля во всех трех системах одинаковое. Линии, которые рисуют планеты, на самом деле не существуют. Это математические абстракции, которые рисует наше воображение, чтобы лучше разобраться в предмете.
+
+Меркурий с траекторией
+
+
+
+
+Глядя на такую красоту, преимущества гелиоцентрической системы вовсе не кажутся очевидными.
+
+
+
+Поскольку предсказать разнообразные кульбиты планет в геоцентрической системе не удавалось, и имевшиеся таблицы с координатами расходились с наблюдениями, астрономы работали над другими системами. В середине XVI века Николай Николаевич Коперник опубликовал книгу с описанием гелиоцентрической системы. Таким образом возникло два взгляда на устройство окружающего нас пространства. Несмотря на серьезные различия, они обладали некоторым сходством.
+
+И там, и там центр, вокруг которого все вращается, считался Центром Мироздания.
+Обе системы были неточны, и их предсказания расходились с наблюдениями.
+
+Неудивительно, что книги о гелиоцентризме стали попадать в реестр запрещенной литературы, который вели представители церкви. 1-й пункт противоречит религиозным догматам и оскорбляет чувства верующих, а 2-й пункт исключает аргументы для оправдания.
+Понадобилось еще несколько десятков лет тщательных наблюдений, прежде чем Иоганн Генрихович Кеплер нашел, наконец, формулы, позволяющие с удовлетворительной точностью вычислить положение всех известных планет в различное время. Эти формулы работали в системе отсчета с неподвижным Солнцем, и таким образом гелиоцентрическая система мира утвердилась в качестве признанной теории.
+Современная наука уже давно отказалась от идеи, что тот объект, который неподвижен, тот главнее. Никто уже сейчас не ищет «Центр Мироздания». Система отсчета — это математическая абстракция, используемая как инструмент. Для одних задач нужна гелиоцентрическая система, для других задач подходит геоцентрическая, а есть задачи, для которых ни та, ни другая не подходит. Причем, подходит — не подходит, это субъективная оценка. Подходящей назначают ту систему отсчета, в которой необходимые расчеты с требуемой точностью выполнить проще. С появлением же вычислительной техники, эта граница стирается еще сильнее. При помощи простой программки на питоне в домашних условиях можно получить результат сразу в нескольких системах отсчета с одинаковой точностью. Какую систему задашь, в такой и получишь результат.
+
+Пример
+
+
+
+
+Так что когда в интернете кто-то начинает обсуждать, кто вокруг кого вращается, и сколько процентов населения не знакомо с этим «фактом», смело считайте этого пользователя гостем из прошлого, века примерно из XVI-XVIII.
+В конце XVII века Исаак Исаакович Ньютон сформулировал закон всемирного тяготения и законы механики, которые подтверждали формулы Иоганна Генриховича и работали с приемлемой точностью в гелиоцентрической системе отсчета. Это выделило гелиоцентрическую систему, где Земля вращается вокруг Солнца, среди всех остальных систем.
+Ньютоновская механика хорошо согласовывалась с известными на момент ее создания результатами наблюдений, но при этом ставила новые вопросы, требующие объяснения. И этим она прекрасна, потому что новые вопросы вдохновляют на поиск новых ответов. Законы Ньютона имеют следующие проблемы:
+
+Сила тяготения распространяется мгновенно и бесконечно. Многие эксперименты в разных областях физики за много лет дают основания утверждать, что в природе так не бывает, и если что-то распространяется мгновенно, то, скорее всего мы чего-то не понимаем.
+Орбита Меркурия со временем отклоняется от расчетной. Смещение не очень большое, но заметное.
+Законы Ньютона выполняются только в инерциальной системе отсчета.
+
+Последний пункт — самое слабое место классической механики. Законы выполняются в инерциальной системе отсчета, а что это за система, точного определения нет. Сколько ни ломали голову, ничего не придумали, кроме того, что инерциальная система отсчета — это такая система отсчета, в которой выполняются законы Ньютона. Получается зацикливание, определение термина через самого себя. Гелиоцентрическая система может считаться инерциальной только приближенно, а настоящих инерциальных систем вообще не существует.
+Тут самое время предоставить слово почетному академику АН СССР Альберту Генриховичу Эйнштейну:
+Можем ли мы сформулировать законы таким образом, чтобы они были справедливыми для всех систем координат, не только для систем, движущихся прямолинейно и равномерно, но и для систем, движущихся совершенно произвольно по отношению друг к другу? Если это можно сделать, то наши трудности будут разрешены. Тогда мы будем в состоянии применять законы природы в любой системе координат. Борьба между воззрениями Птолемея и Коперника, столь жестокая в ранние дни науки, стала бы тогда совершенно бессмысленной. Любая система координат могла бы применяться с одинаковым основанием. Два предложения — «Солнце покоится, а Земля движется» и «Солнце движется, а Земля покоится» — означали бы просто два различных соглашения о различных системах координат.Могли ли бы мы построить реальную релятивистскую физику, справедливую во всех системах координат; физику, в которой имело бы место не абсолютное, а лишь относительное движение? Это, в самом деле, оказывается возможным!Оригинал The Evolution of Physics, 1938Can we formulate physical laws so that they are valid for all c.s., not only those moving uniformly, but also those moving quite arbitrarily, relative to each other? If this can be done, our difficulties will be over. We shall then be able to apply the laws of nature to any c.s. The struggle, so violent in the early days of science, between the views of Ptolemy and Copernicus would then be quite meaningless. Either c.s. could be used with equal justification. The two sentences, ""the sun is at rest and the earth moves"", or ""the sun moves and the earth is at rest"", would simply mean two different conventions concerning two different c.s.Could we build a real relativistic physics valid in all c.s.; a physics in which there would be no place for absolute, but only for relative, motion? This is indeed possible!
+Товарищ Эйнштейн разработал теорию гравитации, которая не требует инерциальной системы отсчета. Его общая теория относительности объяснила аномалию орбиты Меркурия, нашла много других экспериментальных подтверждений и поставила перед наукой массу новых вопросов. И этим она прекрасна.
+После признания теории относительности спор о том, Солнце вращается вокруг Земли или наоборот, окончательно приравнялся к войне остроконечников и тупоконечников. И то, что у нас в обществе до сих пор приходится сталкиваться с устаревшими представлениями о законах природы, вызывает грусть и сожаление.
+Вспоминается эпизод из «Этюда в багровых тонах», блестяще экранизированный режиссером Игорем Федоровичем Масленниковым:
+
+Видео
+
+
+
+
+
+В оригинале было еще интереснее
+“But the Solar System!” I protested.“What the deuce is it to me?” he interrupted impatiently; “you say that we go round the sun. If we went round the moon it would not make a pennyworth of difference to me or to my work.”
+
+Ватсон, начитанный образованный человек, сообщает Холмсу о принятой в современной науке системе взглядов. При этом он совершает типичную ошибку обывателя. Он считает, что научная теория является абсолютной истиной и не допускает в этом сомнений. Между тем любая научная теория, во-первых, имеет границы применимости, во-вторых, в любой момент может быть опровергнута новым экспериментом, и тогда она обязательно будет пересмотрена.
+Холмс же не знаком с трудами великих физиков, и это незнание как раз помогает ему не зациклиться на одной точке зрения, оно заставляет его прямо во время беседы начать рассуждать над проблемой. Проницательный ум и большая эрудиция Холмса позволили ему заглянуть чуть дальше современной ему науки и сформулировать своими словами основной принцип новой теории: законы природы инвариантны относительно системы отсчета.
+Итого
+
+Вопрос о том, кто вокруг кого вращается, не имеет смысла, если не задана система отсчета.
+Если у кого-то из читателей возникнет желание нарисовать свои упрощенные схемы движения планет в разных системах отсчета, то они могут воспользоваться моим скриптом на питоне. Скрипт использует библиотеку matplotlib. Для точного моделирования Солнечной системы могу порекомендовать Solar System Scope.
+
+Послесловие
+Пока я готовил гифки для этой статьи, у меня возникла еще одна интересная, хотя не бесспорная, идея. Эта идея существенно меняет сделанный мною вывод, поэтому я решил, что не лишним будет ею поделиться.
+Поскольку движение относительно, говорить о нем можно только в контексте известной системы отсчета. Однако в повседневной жизни мы так не делаем. В каждой машине установлен прибор, показывающий скорость. Мы отлично знаем, что он показывает скорость относительно поверхности дороги. Возле дороги стоит знак с обозначением предельной скорости. Никто не оштрафует водителя за то, что он движется со скоростью 29 км/с относительно Солнца. И водители, и инспектора знают, что предельная скорость на знаке измеряется относительно этого знака. Прогнозы погоды, спортивные достижения, движение транспорта, навигация, все это требует обозначения скорости, но нигде система отсчета явно не указывается.
+Таким образом можно сделать вывод, что:
+
+Существует система отсчета по умолчанию, которая используется в обиходе тогда, когда нет явного указания на иную систему отсчета. Эта система является геоцентрической.
+
+Отсюда следует, что на вопрос ВЦИОМ существует единственный корректный ответ: «Да. Согласен. Солнце вращается вокруг Земли». Надеюсь, социологи не сожгут меня на костре за эту ересь.
+Результаты пресловутого «социологического исследования» теперь можно интерпретировать следующим образом:
+Вот до чего довели страну эффективные менеджеры! Всего треть населения в курсе, что Солнце вращается вокруг Земли. Остальные 2/3 — жертвы ЕГЭ. Правда, есть положительная тенденция, c 2007 по 2011 доля образованных граждан увеличилась с 28% до 32%, но этого явно недостаточно. Такими темпами мы достигнем всеобщей грамотности только к 2080-му году. Надо срочно что-то предпринимать.
+
+Similar posts
+
+
+
+
+
+
+",ru,"
+
+
+
+
+
+
+
+
+
+
+
+Why does the sun revolve around the earth
+05 Nov 2019, 16:43 by sergey-b
+
+
+
+In Russia, one well-known organization called VTsIOM conducted a sociological study in which citizens were asked to answer the question: “Do you agree with the following statement: The sun revolves around the Earth?” refer to him when discussing various socio-political problems.
+If I took part in this survey, I would most likely be among those 30% who answered in the affirmative. Below I will try to explain why.
+The fact is that any movement is relative. An object moves or stands motionless, and how it moves, depends on the chosen reference system. In the statement “The sun rotates around the Earth” there are no indications of a frame of reference, there are only 2 objects, the Sun and the Earth.
+Suppose there is a system of 2 points A and B. If, in the frame of reference connected with point A, point B moves in a circle centered at point A, then in the frame of reference associated with point B, point A moves in a circle centered at point B.
+This is very easy to prove. It is enough to write the equation of rotation in polar coordinates.
+r = ABφ = ωt
+The distance to the center of the circle does not depend on time and is equal to the initial length of the segment AB. The polar angle is equal to the product of the angular velocity by time. When moving to polar coordinates centered at point B, the distance between points A and B will remain exactly the same, and the angle will simply shift by 180 °.
+r = BAφ = π + ωt
+Instead of drawing, I propose to look at a visual illustration. To view the illustrations in this article, you will need a browser that displays gif animations.
+
+Sun earth
+
+
+
+
+
+Sun-Earth with a trajectory
+
+
+
+
+Shown here is the movement of bodies in the Sun-Earth system in 3 reference frames. On the left is the heliocentric system, i.e. the system in the center of which the Sun is located, on the right is the geocentric system (centered on the Earth), and in the middle is the coordinate system associated with the point in the middle between the Sun and the Earth. I added an intermediate system specifically in order to show that there are much more than two possible reference frames, and they are all equal. If the Earth revolves around the Sun, then we can talk about its rotation around anything.
+Actually, this could be the end. The VTsIOM question is illiterate and has no unequivocal answer. You can either agree with the statement that the Sun revolves around the Earth, or disagree, no conclusions can be drawn from this, and such studies do not deserve attention. However, the topic raised in this matter is very fruitful. On it you can tell a lot of interesting things. Therefore, we continue.
+The nature of the movement of celestial bodies was studied by people to solve practical problems. The sun obviously affects the weather, so for the planning of many activities, for example, construction or agricultural work, it was necessary to be able to calculate its trajectory. Scientists watched the luminary, recorded the results and compiled tables on what day, in what place on earth to what height the Sun rises, how long the night will last, etc. Taking Earth as the center around which the Sun rotates, everything could be quite accurate to calculate. The result of these calculations was the calendar, which we use now.
+Difficulties arise when it becomes necessary to calculate the trajectories of the planets. Say Venus. It does not affect the weather, but it is completely impossible to ignore it, because it is the third brightest object in the sky. During full-faith, on a clear night in the light of this planet, you can even read. Let's see what the orbit of Venus looks like, given what we know about it. It should be noted that to make an image of the Solar System in compliance with all proportions is almost impossible, therefore, in my illustrations, the proportions are not respected. I tried to observe only relations more-less and slower-faster (Venus is smaller than Jupiter, Mercury relative to the Sun moves faster than the Earth, etc.).
+
+Sun-Venus-Earth
+
+
+
+
+Here's what the trajectory of Venus looks like in various reference frames.
+
+Venus with a trajectory
+
+
+
+
+Try to calculate along such a trajectory when Venus is on the same line between the Sun and the Earth or when it hides behind the Sun. The task is not easy.
+
+
+
+And besides Venus, other planets have been known since ancient times. For example, the closest to the Sun is Mercury. Its trajectory in the same coordinates is as follows.
+
+Sun-Mercury-Venus-Earth
+
+
+
+
+If you take several screenshots in a row, you will notice that at each moment in time the state of the Sun-Mercury-Venus-Earth system is the same in all three systems. The lines that the planets draw do not really exist. These are mathematical abstractions that our imagination draws in order to better understand the subject.
+
+Mercury with a trajectory
+
+
+
+
+Looking at such beauty, the advantages of the heliocentric system do not seem obvious at all.
+
+
+
+Since it was not possible to predict various planetary somersaults of the planets in the geocentric system, and the available tables with coordinates diverged from observations, astronomers worked on other systems. In the middle of the XVI century, Nikolai Nikolaevich Copernicus published a book with a description of the heliocentric system. Thus, two glances arose on the structure of the space surrounding us. Despite serious differences, they had some similarities.
+
+Both there and there, the center around which everything revolves was considered the Center of the Universe.
+Both systems were inaccurate, and their predictions diverged from observations.
+
+It is not surprising that books on heliocentrism began to fall into the register of banned literature, which was kept by representatives of the church. The first paragraph contradicts religious dogma and offends the feelings of believers, and the second paragraph excludes arguments for justification.
+It took several dozens of years of careful observations before Johann Genrikhovich Kepler finally found formulas that could, with satisfactory accuracy, calculate the position of all known planets at different times. These formulas worked in a frame of reference with the motionless Sun, and thus the heliocentric system of the world established itself as a recognized theory.
+Modern science has long abandoned the idea that the object that is motionless is more important. Nobody is already looking for the ""Center of the Universe."" The reference system is a mathematical abstraction used as a tool. For some tasks, a heliocentric system is needed, for other tasks a geocentric system is suitable, and there are tasks for which neither one nor the other is suitable. Moreover, it is suitable - it is not suitable, it is a subjective assessment. The appropriate reference system is the one in which the necessary calculations with the required accuracy are easier to perform. With the advent of computer technology, this border is erased even more. Using a simple python program at home, you can get the result in several reference systems with the same accuracy. What system you ask, in such and you will receive result.
+
+Example
+
+
+
+
+So when someone starts discussing on the Internet who is spinning around, and how many percent of the population is not familiar with this “fact”, feel free to consider this user as a guest from the past century from about XVI-XVIII.
+At the end of the XVII century, Isaac Isaakovich Newton formulated the law of universal gravitation and the laws of mechanics, which confirmed the formulas of Johann Genrihovich and worked with reasonable accuracy in the heliocentric reference frame. This highlighted the heliocentric system, where the Earth revolves around the Sun, among all other systems.
+Newtonian mechanics were in good agreement with the observational results known at the time of their creation, but at the same time raised new questions that needed explanation. And by this she is beautiful, because new questions inspire the search for new answers. Newton's laws have the following problems:
+
+The force of gravity spreads instantly and endlessly. Many experiments in different fields of physics over many years give reason to argue that this does not happen in nature, and if something spreads instantly, then most likely we don’t understand something.
+The orbit of Mercury deviates from the calculated one over time. The offset is not very large, but noticeable.
+Newton's laws are satisfied only in the inertial reference frame.
+
+The last point is the weakest point in classical mechanics. Laws are implemented in an inertial reference frame, but what kind of system is there is no exact definition. No matter how much they puzzled, they did not come up with anything, except that the inertial reference frame is such a reference frame in which Newton's laws are satisfied. It turns out a loop, the definition of the term through itself. The heliocentric system can be considered inertial only approximately, and real inertial systems do not exist at all.
+Here is the time to give the floor to the Honorary Academician of the USSR Academy of Sciences Albert Genrikhovich Einstein:
+Can we formulate laws in such a way that they are valid for all coordinate systems, not only for systems moving rectilinearly and uniformly, but also for systems moving absolutely arbitrarily with respect to each other? If this can be done, then our difficulties will be resolved. Then we will be able to apply the laws of nature in any coordinate system. The struggle between the views of Ptolemy and Copernicus, so fierce in the early days of science, would then become completely meaningless. Any coordinate system could be applied with the same foundation. Two sentences - “The sun is resting, and the Earth is moving” and “The sun is moving and the Earth is resting” - would simply mean two different agreements on different coordinate systems. Could we build real relativistic physics, valid in all coordinate systems; physics, in which there would be no absolute, but only relative motion? This, in fact, is possible! Original The Evolution of Physics, 1938 Can we formulate physical laws so that they are valid for all c.s., not only those moving uniformly, but also those moving quite arbitrarily, relative to each other? If this can be done, our difficulties will be over. We shall then be able to apply the laws of nature to any c.s. The struggle, so violent in the early days of science, between the views of Ptolemy and Copernicus would then be quite meaningless. Either c.s. could be used with equal justification. The two sentences, ""the sun is at rest and the earth is at rest"", would simply mean two different conventions regarding two different cs ; a physics in which there would be no place for absolute, but only for relative, motion? This is indeed possible!
+Comrade Einstein developed the theory of gravity, which does not require an inertial reference frame. His general theory of relativity explained the anomaly of the orbit of Mercury, found many other experimental confirmations and posed a lot of new questions to science. And by this she is beautiful.
+After the recognition of the theory of relativity, the debate about whether the Sun revolves around the Earth, or vice versa, finally equated with the war of pointed and blunt points. And the fact that in our society we still have to deal with outdated ideas about the laws of nature causes sadness and regret.
+I recall an episode from ""Etudes in Scarlet"", brilliantly filmed by director Igor Fedorovich Maslennikov:
+
+Video
+
+
+
+
+
+The original was even more interesting.
+“But the Solar System!” I protested. “What the deuce is it to me?” He interrupted impatiently; “You say that we go round the sun. If we went round the moon it would not make a pennyworth of difference to me or to my work. ”
+
+Watson, a well-read educated man, informs Holmes about the frame of reference adopted in modern science. At the same time, he commits a typical mistake of the average man. He believes that scientific theory is an absolute truth and does not allow doubt. Meanwhile, any scientific theory, firstly, has limits of applicability, and secondly, at any moment it can be refuted by a new experiment, and then it will be necessarily revised.
+Holmes, on the other hand, is not familiar with the work of great physicists, and this ignorance just helps him not to focus on one point of view, it makes him begin to reason about the problem during the conversation. Holmes's insightful mind and great erudition allowed him to look a little further than modern science and formulate in his own words the basic principle of the new theory: the laws of nature are invariant with respect to the reference frame.
+Total
+
+The question of who revolves around whom does not make sense if a reference frame is not given.
+If one of the readers has a desire to draw their simplified diagrams of planetary motion in different reference systems, then they can use my python script. The script uses the matplotlib library. For accurate modeling of the solar system, I can recommend the Solar System Scope.
+
+Afterword
+While I was preparing GIFs for this article, I had another interesting, though not indisputable, idea. This idea significantly changes the conclusion I made, so I decided that it would not be superfluous to share it.
+Since the movement is relative, we can talk about it only in the context of the well-known reference frame. However, in everyday life we do not. Each machine has a device showing speed. We know very well that it shows speed relative to the surface of the road. Near the road there is a sign indicating the maximum speed. No one will fine the driver for moving at a speed of 29 km / s relative to the Sun. Both drivers and inspectors know that the speed limit on a sign is measured relative to that sign. Weather forecasts, sporting achievements, traffic, navigation, all this requires a designation of speed, but nowhere is the reference system explicitly indicated.
+Thus, we can conclude that:
+
+There is a default reference system, which is used in everyday life when there is no explicit indication of a different reference system. This system is geocentric.
+
+It follows that the VTsIOM question has the only correct answer: “Yes. I agree. The sun revolves around the earth. "" I hope that sociologists will not burn me at the stake for this heresy.
+The results of the notorious “case study” can now be interpreted as follows:
+That's what effective managers have brought the country to! Only a third of the population is aware that the Sun revolves around the Earth. The remaining 2/3 are victims of the exam. True, there is a positive trend, from 2007 to 2011 the share of educated citizens increased from 28% to 32%, but this is clearly not enough. At this pace, we will achieve universal literacy only by the year 2080. Something urgently needs to be done.
+
+Similar posts
+
+
+
+
+
+
+"

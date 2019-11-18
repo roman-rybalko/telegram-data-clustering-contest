@@ -1,0 +1,656 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Обзор Astra Linux, операционной системы для спецслужб и силовиков
+02 Nov 2019, 09:30 by Николай Маслов
+Пока американские санкции грозят Huawei, корпорация не дремлет. Судьба Android на борту её смартфонов пока не ясна, однако лэптопы для китайского рынка уже получили Deepin Linux.
+Что будет дальше? Кажется, российский рынок тоже получил собственный дистрибутив: компания объявила о том, что серверные решения будут поставляться с Astra Linux на борту.
+Что это такое?
+
+
+
+Astra Linux — операционная система специального назначения на базе ядра Linux, созданная для комплексной защиты информации и построения защищённых автоматизированных систем.
+Первоначальная разработка была организована для нужд российских силовиков, спецслужб и государственных органов. Для снижения порога входимости и популяризации релиз разделили на
+
+Astra Linux Сommon Edition (Орёл) (актуальная версия 2.12)
+Astra Linux Special Edition (Смоленск) (актуальная версия 1.9)
+
+Первая предназначена для рядовых пользователей и разработчиков. Вторая как раз и является «военной» ОС, соответствующей всем необходимым стандартам.
+Важной особенностью Astra Linux стала защита ОС, используемых данных и программ: система обеспечивает степень защиты обрабатываемой информации до уровня государственной тайны «особой важности» включительно.
+
+
+
+То есть даже самые важные документы не утекут, что подтверждает наличие сертификата Минобороны, ФСТЭК и ФСБ России. Даже «товарищ майор» без физического контакта с компьютером ничего не получит.
+Включена в Единый реестр российских программ Минкомсвязи России, поэтому может использоваться для исполнения перехода приказа о переходе на отечественный софт в коммерческих и некоммерческих организациях.
+Разработчикам системы в лице АО «НПО РусБИТех» удалось, по их словам, увязать законодательные требования Российской Федерации к операционным системам с «духом и требованиям лицензии GPL».
+
+
+У Astra есть даже свой комплекс виртуализации. Похвально
+
+Astra Linux неожиданно среди массы защищенных российских дистрибутивов оказалась самой удачливой: именно она станет основной для Министерства обороны.
+Первые движения начались уже в 2018: тогда военные приняли решение об отказе от Windows в пользу Astra, а в этом году появились предсерийные варианты планшетов для использования в особо ответственных задачах (об этом расскажем ниже).
+Основа Astra Linux и её варианты
+
+
+
+Базовым дистрибутивом для Astra cтал Debian, что позволяет использовать стандартные пакеты для устновки на базе .deb.
+Исходные коды к пользовательской версии ОС доступны на сайте разработчика. Доступ к исходникам продвинутых защищенных вариантов осуществляется по запросу.
+Благодаря этому Astra стала «официально признанной» веткой Debian, а АО «НПО РусБИТех» заключило партнерское соглашение с The Linux Foundation и The Document Foundation.
+
+
+Открытый исходный код, защита и нормальные программы? Реальность, если есть серьезные партнеры.
+
+Система оптимизирована для всех существующих платформ, включая дистрибутивы для
+
+настольных компьютеров и ноутбуков х86/х64 («Смоленск» и «Орел»),
+ARM-платформ («Новороссийск»),
+процессоров «Эльбрус» («Ленинград»),
+отказоусточивых серверов с архитектурой IBM System z («Мурманск»),
+MIPS-систем («Севастополь»),
+POWER-систем («Керчь»).
+
+Таким образом обеспечивается единая среда для разработки и эксплуатации одних и тех же пакетов на любых компьютерах, оборудовании и даже интегрированных решений. Унификация в таких случаях очень удобна.
+Кроме того, в ходе реализации партнерского соглашения с Huawei, в феврале 2019 года оптимизированная версия дистрибутива была внедрена на Тяньваньской АЭС в серверных системах китайского партнера.
+Как реализуется защита ОС?
+
+
+Стартовое окно не выдает терминатора среди ОС
+
+Astra Linux Special Edition рассматривает одного и того же пользователя в зависимости от действия как разных пользователей (так называемый «мандатный доступ») и создаёт для них отдельные домашние каталоги, одновременный прямой доступ пользователя к которым не допускается.
+Всего система использует 256 уровней доступа (от 0 до 255) и 64 категории доступа, разграничивающий допуск к различным операциям с файлами, файловой системой, стеком TCP/IP и многое другое.
+Принятие решения о запрете или разрешении доступа пользователя или программы к файлу или его блоку принимается на основе типа операции (чтение/запись/исполнение) и шаблонного эталона безопасности на основе собственной запатентованной модели, распространяющейся на информационные потоки в системе.
+Включающаяся в патент уникальная иерархия позволяет точно отличать пользователя от зловреда или несанкционированного управления извне и самостоятельно определять ОС скомпрометированные (несоответствующие правилам доступа) файлы и препятствовать доступу таким файлам или операциям к дистрибутиву и файловой системе.
+
+
+Система контролирует каждый шаг программ
+
+В Astra Linux отсутствует большая часть известных уязвимостей, которым подвержены операционные системы: зловреды не могут работать с памятью, встраиваться в код ОС или запускаться напрямую из сети.
+В том случае, если исполняемый код скачивается, его запуск осуществляется в защищенной области памяти, который ограничивает доступ к данным и системе на всех уровнях.
+Операционная система, её файлы и отдельные элементы хэшируются, протоколируются и сравниваются с эталонными, что позволяет полностью исключить подмену или изменение кода ОС.
+Пользовательские режимы работы
+
+
+
+После установки Astra готова к работе без предварительной настройки.
+Для тех случаев, когда необходима дополнительная защита, возможно создание новых пользователей с определенными правами и запуск рабочих сессий во вложенном режиме (что-то вроде «окно-в-окне»).
+
+
+Вложенная сессия
+
+При этом вложенное содержимое полностью изолировано от операционной системы и может быть удалено вместе со всем активным содержимым, при этом пакеты вернутся в исходное состояние до работы.
+Сессию можно завершать автоматически по таймеру, либо обычным путем.
+Процесс установки: проще, чем Windows
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Напрямую можно скачать только пользовательскую версию Common Edition, либо версию Special для разработчиков платформ x86-64 .
+Для конечного пользователя большой разницы нет: прокаченная версия имеет необходимые для оборонки сертификаты, у Common их нет. Однако обе работают по общим принципам Astra Linux, реализовывая раздельный доступ согласно заложенным сценариям.
+Процесс установки предельно прост и как две капли воды похож на прочие Linux-дистрибутивы.
+Из серьезных отличий стоит отметить русскую документацию с картинками по установке и понятный русскоязычный интерфейс с выбором важных мелочей.
+Среди прочих и те самые базовые элементы защиты, выделенные отдельным экраном предварительной настройки.
+Установка проходит стабильно как на обычный жесткий диск, так и на виртуальную машину.
+Для работы системы хватает даже одноядерного процессора с 512 Мб оперативной памяти и 30-гигабайтным накопителем. Комфортная работа предполагает наличие больше 1 Гб ОЗУ и поддержку современных инструкций вычислительных ядер.
+Внешний вид: привыкать не придется
+
+
+
+Внешний вид Astra Linux максимально оптимизирован для простых смертных. Даже загрузочный экран и меню «логин-пароль» привычны и просты.
+Рабочий стол спроектирован на основе привычных Windows-интерфейсов, но по умолчанию использует множество особенностей macOS/Linux. Например, по умолчанию действием для запуска файла или программы стал однократный клик вместо двойного.
+Пользователю предлагается 4 готовых рабочих стола, на каждом из которых сгруппирован набор значков для доступа к набору программ конкретного назначения.
+Есть Win-образный «Пуск» в стилистике старых версий ОС с группировкой встроенных приложений по виду деятельности.
+
+
+
+Настройка проводится как в фирменном терминале, так и с использованием графической оболочки через удобную панель управления с массой настроек.
+Базовый набор программ: на все случаи жизни
+Файл-менеджер наследует двухпанельную идеологию «Проводника» Windows, умеет монтировать архивы как папки и вычислять контрольные суммы, подтверждая целостность компонентов.
+Браузер — Mozilla Firefox или Chromium в стандартном облачении для Debian. Скромно и со вкусом.
+Редактором графики выступает GIMP, EasyPaint, Inkscape и ряд фирменных приложений для офисной работы с изображениями: сканирования, распознавания, создания скриншотов.
+Офисным пакетом выбрали LibreOffice со словариком GoldenDict, а дополняют их просмотрщик qpdfviewer и текстовый редактор JuffEd.
+Мультимедийные программы представлены VLC Media Pleer, QasMixer, Audacity, Clementine, guvcview.
+В целом, система готова к офисному использованию и не требует установки дополнительных приложений, даже предоставляя определенные альтернативы.
+Где брать софт?
+
+
+
+Для установки приложений используется apt-get, но базовые приложения Debian требуют ручной установки либо добавки их размешения в список разрешенных репозиториев.
+Устанавливается почти все, но ряд приложений потребует дополнительных разрешений или будет функционировать только внутри собственной папки расположения.
+Запретов на использование каких-либо приложений нет: защита осуществляется на уровне операционной системы, поэтому ограничения не предусмотрены и подключить можно любой репозиторий. Аналогично с установкой из скаченных пакетов.
+
+
+
+При необходимости можно установить и виртуальную машину (существует собственная разработка из состава Astra Dev.), и Wine для запуска Win-приложений.
+Единственной проблемой для начинающих пользователей может стать отсутствие пропиетарных видеодрайверов для карт Nvidia. Но поддержка Open GL и Direct X идет из коробки.
+При попытке программы совершить «лишнее» действие, например, самостоятельно обратившись к файловой системе вне собственного каталога, Astra предложит подтвердить его окном ввода пароля с подробностями операции.
+Настройки и возможности
+Полная русификация и удобный графический интерфейс позволяют производить любые настройки операционной системы, вплоть до тонкой отладки разрешений на то или иное действие.
+Большая часть настроек не требует терминала и видима из-под пользовательской учетной записи. Работа с ними возможна по вводу соответствующего пароля.
+Для выбора подготовлены готовые списки основных пользовательских настроек, вроде удобного изменения времени, способа переключения раскладки или действий системы при подключении того или иного устройства.
+Отрезать компьютер от внешних ресурсов или перевести ПК в полностью защищенный режим можно из терминала.
+Неудобство доставляет только странная реализация хоткеев: хотя они по умолчанию полностью повторяют аналоги из WIndows, в ряде случаев они перестают работать.
+Например, Esc, закрывающий активное окно на рабочем столе или в активной программе, вдруг отказывает действовать в панели настроек.
+Мобильные режимы работы
+
+
+Планшетный режим
+
+Особенно интересны дополнительные режимы работы Astra Linux, которые можно включить прямо на стартовом экране системы: «Планшетный режим» и «Мобильный режим».
+И тот, и другой интерфейсы представляют собой базовую оболочку, оптимизированную для работы на сенсорных экранах больших и малых диагоналей соответственно.
+
+
+Мобильный режим
+
+Курсор в планшетном режиме невидим, кнопка закрытия приложений вынесена на панель задач. Полноэкранные приложения работают несколько иначе, файлы в файл-менеджере также выбираются по-другому. Однако, в удобном интерфейсе запустятся только встроенные в дистрибутив приложения.
+
+
+Виджеты
+
+Мобильный режим предлагает собственный «лаунчер» fly, напоминающий по внешнему виду и в использовании Android: сходные рабочие столы, логика работы виджетов, долгий тап для вызова меню.
+Почему не китайский Deepin
+
+
+Huawei отказалась от красивого Deepin в пользу Astra. Она надежнее
+
+По всей видимости, Huawei будет использовать Astra для своих серверов в Европе, а так же планирует возможные продажи ноутбуков с Astra.
+Почему, ведь Huawei и Honor для внутреннего рынка Китая оснащаются именно предустановленным Deepin?
+Китайские разработчики имеют очень неплохой, красивый и удобный Deepin Linux, так же основанном на Debian с собственной средой Deepin Desktop Environment и набором утилит.
+Однако в апреле 2018 Deepin Linux версии 15.5 был скомпрометирован шпионским программным обеспечением, замаскированным под стандартную утилиту из ядра системы.
+Поэтому Россия стала для Huawei «третьей стороной», гарантом безопасности со стороны операционной системы.
+Ощущения от использования Astra
+
+
+Писать тексты, обрабатывать фотографии и работать с документацией можно
+
+Для тех, кто использовал популярные дистрибутивы Linux, Windows или macOS, Astra Linux станет интуитивно понятной и не потребует сколько-то значимого времени для привыкания.
+Интерфейс настолько приближен к существующим стандартам, что справится и бабушка. Аналогично собран набор базовых приложений: все они либо уже использовались пользователем, либо копируют интерфейсы других популярных приложений.
+
+
+Ресурсов нужно немного
+
+«Железо» определяет моментально, поэтому каких-либо проблем с установкой и запуском не предвится.
+На данный момент среди аппаратных партнеров Astra Linux, предоставляющих необходимые данные для оптимизации системы, числятся все свободно продаваемые в России пользовательские и профессиональные решения.
+Высшие строки на соответствующей странице занимают Acer, HP, Dell и множество других крупных поставщиков.
+Основываясь на всем вышесказанном и собственном опыте, можно подтвердить: Astra полностью готова к массовому внедрению и может использоваться для любых задач.
+Стоит ли попробовать?
+
+
+Одна система для ВСЕХ платформ. Мечты сбываются
+
+Другое дело, стоит ли устанавливать её сейчас? Как и любой уважающий себя Debian, Astra Linux может похвастаться довольно старым ядром и устаревшими репозиториями. Догнать Ubuntu у нее не получится.
+Соответственно, даже для «линуксоида» Ubuntu-совместимые дистрибутивы предпочтительнее. А ещё лучше — свежие версии macOS и Windows (выбирать и комбинировать по вкусу).
+
+
+Интересно использовать Astra в работе. Дома она не нужна
+
+В отсутствии необходимости особой секретности хранимых данных и проводимых операций они быстрее и предлагают больше возможностей в любых сценариях.
+Бэкдоры и удобство против старых версий программ с полной защитой? Каждый выбирает сам. Но с Astra не страшно, и довольно удобно.
+
+👀 Читайте также. Всё по теме
+
+
+
+
+
+
+
+
+
+
+
+
+
+",ru,"
+
+
+
+
+
+
+
+
+
+
+
+Overview of Astra Linux, an operating system for special services and security forces
+02 Nov 2019, 09:30 by Nikolai Maslov
+While US sanctions threaten Huawei, the corporation is on the alert. The fate of Android on board its smartphones is not yet clear, but laptops for the Chinese market have already received Deepin Linux.
+What will happen next? It seems that the Russian market also received its own distribution: the company announced that server solutions will ship with Astra Linux on board.
+What it is?
+
+
+
+Astra Linux is a special-purpose operating system based on the Linux kernel, designed to comprehensively protect information and build secure automated systems.
+The initial development was organized for the needs of Russian security forces, special services and government agencies. To lower the threshold of entry and popularization, the release was divided into
+
+Astra Linux Сommon Edition (Eagle) (current version 2.12)
+Astra Linux Special Edition (Smolensk) (current version 1.9)
+
+The first is intended for ordinary users and developers. The second is precisely the “military” OS, which meets all the necessary standards.
+An important feature of Astra Linux was the protection of the OS, the data and programs used: the system provides a degree of protection of the processed information to the level of state secrets of ""special importance"" inclusive.
+
+
+
+That is, even the most important documents will not leak, which confirms the presence of a certificate of the Ministry of Defense, FSTEC and the FSB of Russia. Even “Comrade Major” will not receive anything without physical contact with the computer.
+It is included in the Unified Register of Russian Programs of the Ministry of Communications of Russia, therefore it can be used to execute the transfer of the order to switch to domestic software in commercial and non-commercial organizations.
+The developers of the system represented by JSC NPO RusBITech managed, according to them, to link the legislative requirements of the Russian Federation to operating systems with the “spirit and requirements of the GPL license”.
+
+
+Astra even has its own virtualization suite. Commendable
+
+Astra Linux unexpectedly among the mass of protected Russian distributions turned out to be the most successful: it will become the main one for the Ministry of Defense.
+The first movements began already in 2018: then the military decided to abandon Windows in favor of Astra, and this year pre-production versions of tablets for use in especially demanding tasks appeared (we will talk about this below).
+The basis of Astra Linux and its variants
+
+
+
+Debian has become the base distribution for Astra, which allows you to use standard packages for .deb-based installations.
+Source codes for the user version of the OS are available on the developer's website. Access to the source of advanced protected options is available upon request.
+Thanks to this, Astra became the “officially recognized” Debian branch, and JSC NPO RusBITech entered into a partnership agreement with The Linux Foundation and The Document Foundation.
+
+
+Open source, protection and normal programs? Reality if there are serious partners.
+
+The system is optimized for all existing platforms, including distributions for
+
+x86 / x64 desktop computers and laptops (Smolensk and Oryol),
+ARM platforms (Novorossiysk),
+Elbrus processors (Leningrad),
+fault-tolerant servers with the architecture of IBM System z (""Murmansk""),
+MIPS-systems (""Sevastopol""),
+POWER systems (""Kerch"").
+
+This provides a unified environment for the development and operation of the same packages on any computers, equipment, and even integrated solutions. Unification in such cases is very convenient.
+In addition, during the implementation of the partnership agreement with Huawei, in February 2019, an optimized version of the distribution kit was introduced at the Tianwan NPP in the server systems of the Chinese partner.
+How is OS protection implemented?
+
+
+The start window does not issue a terminator among the OS
+
+Astra Linux Special Edition considers the same user depending on the action as different users (the so-called ""credential access"") and creates separate home directories for them, simultaneous direct user access to which is not allowed.
+In total, the system uses 256 access levels (from 0 to 255) and 64 access categories, delimiting access to various operations with files, file system, TCP / IP stack, and much more.
+The decision to ban or allow user or program access to a file or its block is made on the basis of the type of operation (read / write / execute) and the template security standard based on its own patented model that applies to information flows in the system.
+The unique hierarchy included in the patent allows you to accurately distinguish the user from malware or unauthorized control from the outside and independently determine the OS compromised (inappropriate access rules) files and prevent access to such files or operations to the distribution and file system.
+
+
+The system controls every program step.
+
+Astra Linux does not have much of the known vulnerabilities that affect operating systems: malware cannot work with memory, integrate into OS code, or run directly from the network.
+In the event that the executable code is downloaded, its launch is carried out in a protected area of memory, which restricts access to data and the system at all levels.
+The operating system, its files and individual elements are hashed, logged and compared with the reference ones, which completely eliminates the substitution or change of the OS code.
+User Modes
+
+
+
+After installation, Astra is ready to use without any configuration.
+For those cases when additional protection is needed, it is possible to create new users with certain rights and start working sessions in nested mode (something like “window-in-window”).
+
+
+Nested Session
+
+At the same time, the embedded content is completely isolated from the operating system and can be deleted along with all active content, while the packages will return to their original state before work.
+The session can be completed automatically by timer, or in the usual way.
+Installation process: easier than Windows
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Directly, you can only download the custom version of Common Edition, or the Special version for developers of x86-64 platforms.
+There is no big difference for the end user: the upgraded version has the necessary certificates for the defense, Common does not. However, both work according to the general principles of Astra Linux, implementing separate access according to the laid scenarios.
+The installation process is extremely simple and like two drops of water is similar to other Linux distributions.
+Of the major differences, it is worth noting the Russian documentation with installation pictures and an intuitive Russian-language interface with a choice of important details.
+Among others, the very basic security features highlighted in a separate preset screen.
+Installation is stable both on a regular hard drive and on a virtual machine.
+Even a single-core processor with 512 MB of RAM and a 30-gigabyte drive is enough for the system to work. Comfortable work requires the presence of more than 1 GB of RAM and support for modern instructions of the computing cores.
+Appearance: no need to get used to
+
+
+
+Appearance Astra Linux is optimized for mere mortals. Even the boot screen and the login-password menu are familiar and simple.
+The desktop is designed based on familiar Windows interfaces, but by default it uses many features of macOS / Linux. For example, by default, a single click instead of a double click is the action to launch a file or program.
+The user is offered 4 ready-made desktops, on each of which a set of icons is grouped to access a set of programs for a specific purpose.
+There is a Win-shaped “Start” in the style of old versions of the OS with a grouping of embedded applications by type of activity.
+
+
+
+Setup is carried out both in the corporate terminal, and using the graphical shell through a convenient control panel with a ton of settings.
+Basic set of programs: for all occasions
+The file manager inherits the two-panel ideology of the Windows Explorer, can mount archives as folders and calculate checksums, confirming the integrity of the components.
+Browser - Mozilla Firefox or Chromium in standard outfit for Debian. Modestly and tastefully.
+The graphics editor is GIMP, EasyPaint, Inkscape and a number of proprietary applications for office work with images: scanning, recognition, creating screenshots.
+We chose LibreOffice with GoldenDict dictionary as an office suite, and complemented by qpdfviewer viewer and JuffEd text editor.
+Multimedia programs are presented by VLC Media Pleer, QasMixer, Audacity, Clementine, guvcview.
+In general, the system is ready for office use and does not require the installation of additional applications, even providing certain alternatives.
+Where to get software?
+
+
+
+Apt-get is used to install applications, but basic Debian applications require manual installation or adding them to the list of allowed repositories.
+Almost everything is installed, but a number of applications will require additional permissions or will only function inside their own location folder.
+There are no bans on the use of any applications: protection is carried out at the operating system level, so there are no restrictions and you can connect any repository. Same as installing from downloaded packages.
+
+
+
+If necessary, you can install a virtual machine (there is a proprietary development from Astra Dev.), And Wine to run Win-applications.
+The only problem for novice users may be the lack of proprietary video drivers for Nvidia cards. But support for Open GL and Direct X comes out of the box.
+When an application attempts to perform an “unnecessary” action, for example, by independently accessing the file system outside its own directory, Astra will offer to confirm it with a password entry window with operation details.
+Settings and features
+Full Russification and user-friendly graphical interface posThey are willing to make any settings of the operating system, up to fine debugging permissions for a particular action.
+Most of the settings do not require a terminal and are visible from under the user account. Work with them is possible by entering the appropriate password.
+Ready-made lists of basic user settings are prepared for selection, such as a convenient change of time, a way to switch layouts or system actions when connecting a device.
+You can cut the computer from external resources or put the PC in fully protected mode from the terminal.
+The only inconvenience is the strange implementation of hotkeys: although by default they completely repeat the analogues from WIndows, in some cases they stop working.
+For example, Esc, which closes the active window on the desktop or in the active program, suddenly refuses to act in the settings panel.
+Mobile Modes
+
+
+Tablet mode
+
+Especially interesting are the additional modes of operation of Astra Linux, which can be enabled directly on the start screen of the system: “Tablet mode” and “Mobile mode”.
+Both of them are the basic shell optimized for working on touch screens of large and small diagonals, respectively.
+
+
+Mobile mode
+
+The cursor in the tablet mode is invisible, the application close button is placed on the taskbar. Full-screen applications work a little differently, files in the file manager are also selected differently. However, in a convenient interface, only applications built into the distribution kit will be launched.
+
+
+Widgets
+
+The mobile mode offers its own “launcher” fly, reminiscent of the appearance and use of Android: similar desktops, the logic of widgets, a long tap to open the menu.
+Why not Chinese Deepin
+
+
+Huawei has abandoned the beautiful Deepin in favor of Astra. She is more reliable
+
+Apparently, Huawei will use Astra for its servers in Europe, and is also planning possible sales of laptops with Astra.
+Why, after all, Huawei and Honor for the domestic market of China are equipped with the preinstalled Deepin?
+Chinese developers have very good, beautiful and convenient Deepin Linux, also based on Debian with its own Deepin Desktop Environment and a set of utilities.
+However, in April 2018, Deepin Linux version 15.5 was compromised by spyware disguised as a standard utility from the system core.
+Therefore, Russia has become a “third party” for Huawei, a guarantee of security on the part of the operating system.
+Astra Experience
+
+
+You can write texts, process photos and work with documentation
+
+For those who have used popular Linux, Windows, or macOS distributions, Astra Linux will become intuitive and will not require any significant time to get used to.
+The interface is so close to existing standards that grandma can handle it. A similar set of basic applications is compiled: all of them are either already used by the user or copy the interfaces of other popular applications.
+
+
+Resources need a little
+
+“Iron” determines instantly, therefore, any problems with installation and launch are not expected.
+Currently, among the hardware partners of Astra Linux that provide the necessary data for optimizing the system, there are all user and professional solutions that are freely sold in Russia.
+The top lines on the corresponding page are Acer, HP, Dell and many other major suppliers.
+Based on all the above and our own experience, we can confirm: Astra is completely ready for mass deployment and can be used for any tasks.
+Is it worth a try?
+
+
+One system for ALL platforms. Dreams Come True
+
+Another thing, is it worth it to install now? Like any self-respecting Debian, Astra Linux boasts a rather old kernel and outdated repositories. She will not be able to catch up with Ubuntu.
+Accordingly, even for a Linuxoid, Ubuntu-compatible distributions are preferable. And even better - the latest versions of macOS and Windows (choose and combine to taste).
+
+
+It is interesting to use Astra in work. She is not needed at home
+
+In the absence of the need for special secrecy of the stored data and operations, they are faster and offer more options in any scenario.
+Backdoors and convenience against older versions of programs with full protection? Everyone chooses for himself. But with Astra is not scary, and quite convenient.
+
+👀 Read also. Everything on the topic
+
+
+
+
+
+
+
+
+
+
+
+
+
+"

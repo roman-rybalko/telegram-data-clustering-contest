@@ -1,0 +1,54 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Facebook geht Verschlüsselung langsam an
+Auf dem WebSummit erklärt Facebook-Manager Jay Sullivan die Pläne für einen standardmäßig und umfassend verschlüsselten Facebook Messenger.
+06 Nov 2019, 16:42 by Sylvester Tremmel
+Facebook will mehr verschlüsseln, aber zumindest im Fall des Messenger wird es eher noch Jahre dauern, bis die Funktion ausgeweitet wird. Der Messenger beherrscht zwar schon seit 2016 Verschlüsselung nach dem Prinzip von WhatsApp und Signal, aber der Nutzer muss die etwas versteckte Funktion explizit aktivieren und sie steht nur für Unterhaltungen mit Einzelpersonen zur Verfügung.
+Facebook sieht es als Experiment in einer frühen Phase, obwohl das Unternehmen über WhatsApp bereits viel Erfahrung mit verschlüsselter Kommunikation habe und grundsätzlich die Verschlüsselung ausweiten wolle. Zumindest für den Messenger will Facebook sich aber erst mit anderen Interessensgruppen austauschen, erklärte Jay Sullivan auf dem WebSummit in Lissabon. Als Beispiel für solche Interessensgruppen erwähnt der Product Director für Privatsphäre und Integrität wiederholt Strafverfolgungsbehörden.
+Strafverfolger nicht glücklich
+Strafverfolger sorgen sich auch hierzulande, dass erweiterte Verschlüsselung ihre Fähigkeiten zur Verbrechensbekämpfung unterminiert. Das seien laut Sullivan durchaus berechtigte Bedenken. Aktuell liefere der (unverschlüsselte) Messenger deutlich mehr Beweismaterial als WhatsApp, etwa in Fällen von Kindesmissbrauch. Auch übliche Maßnahmen zum Eindämmen von strafbarem Material, etwa das PhotoDNA-System, das die Verbreitung von illegalem Bildmaterial bekämpfen kann, funktioniere nicht bei Ende-zu-Ende-verschlüsselter Kommunikation.
+Die Behörden würden daher grundsätzlich gerne weiter Zugriff auf die Nachrichteninhalte behalten. Das Problem sei, dass es keine technische Lösung gebe, die so einen Zugriff erlauben könnte und nicht anfällig für Missbrauch wäre, erläuterte Sullivan. Ein Ausweg ist die Funktion, dass Nutzer Nachrichten an Facebook melden können. Facebook sei der Meinung, dass Nutzer Rechte an bereits eingegangenen und lokal entschlüsselten Nachrichten hätten. Würde so eine Nachricht an Facebook gemeldet, könnte sie dem Konzern im Klartext zur Bewertung vorgelegt werden.
+Metadatenanalyse als Lösung
+Parallel dazu kann die Analyse von Metadaten und Verhaltensmustern ausgebaut werden, um illegale Kommunikation auch ohne Kenntnis des Inhalts einschränken zu können. Bei dieser Vorgehensweise würden etwa aus der Geschwindigkeit, mit der Gruppen neue Mitglieder aufnehmen oder der Breite, mit der Nachrichten weitergeleitet werden, Rückschlüsse auf die wahrscheinliche Art des Inhalts gezogen werden.
+Die Verschlüsselung soll bei Facebook also explizit nicht über den Inhalt hinausgehen – anders als bei Messengern wie Signal, die versuchen auch die beim Anbieter anfallenden Metadaten immer weiter zu reduzieren. Solche kleineren Konkurrenten haben aber möglicherweise auch nicht so sehr Probleme, die sich aus der enormen Verbreitung von WhatsApp und des Facebook Messenger ergeben, etwa die lawinenartige Verbreitung von Fake News. Facebook habe gute erste Erfahrungen gemacht, auch Fake News über Metadaten- statt Inhaltsanalysen zu bekämpfen, versicherte Sullivan.
+Genau darüber wolle Facebook sich jetzt mit Behörden austauschen, bevor die Verschlüsselung des Messengers auf Audiomaterial, Videos oder Gruppenchats ausgeweitet werde. Dabei gebe es zwar technische Hindernisse, aber die seien das kleinere Problem. Laut Sullivan werde sich dieser Austausch wahrscheinlich noch über ein paar Jahre hinziehen. (syt)
+
+
+",de,"
+
+
+
+
+
+
+
+
+
+
+
+Facebook is slowly attacking encryption
+At WebSummit, Facebook manager Jay Sullivan explains the plans for a standard and fully encrypted Facebook Messenger.
+06 Nov 2019, 16:42 by Sylvester Tremmel
+Facebook wants to encrypt more, but at least in the case of Messenger, it will take years before the feature expands. Although the messenger has mastered encryption based on WhatsApp and Signal encryption since 2016, the user must explicitly enable the somewhat hidden feature and is only available for conversations with individuals.
+Facebook sees it as an experiment at an early stage, although the company already has a lot of experience with encrypted communication via WhatsApp and basically wants to expand encryption. At least for the messenger Facebook wants to first exchange however with other interest groups, explained Jay Sullivan on the WebSummit in Lisbon. As an example of such stakeholders, the Product Director for Privacy and Integrity repeatedly mentions law enforcement agencies.
+Law enforcement is not happy
+Law enforcement is also worried in this country that advanced encryption undermines their ability to fight crime. That are according to Sullivan quite legitimate concerns. Currently, the (unencrypted) messenger delivers much more evidence than WhatsApp, for example in cases of child abuse. Also, standard measures to contain punishable material, such as the PhotoDNA system, which can combat the spread of illegal footage, do not work in end-to-end encrypted communication.
+The authorities would therefore generally like to keep access to the news content. The problem is that there is no technical solution that would allow such access and would not be prone to abuse, Sullivan explained. One way out is to let users report messages to Facebook. Facebook was of the opinion that users would have rights to already received and locally decrypted messages. If such a message was reported to Facebook, it could be presented to the company in plain text for evaluation.
+Metadata analysis as a solution
+In parallel, the analysis of metadata and behavioral patterns can be expanded to limit illegal communication even without knowledge of the content. This approach would draw conclusions about the likely nature of the content, for example, from the speed with which groups receive new members or the breadth with which messages are routed.
+The encryption on Facebook should therefore explicitly not go beyond the content - unlike messengers such as signal, which also try to reduce the provider's metadata on and on. However, such smaller competitors may not have the same problems that arise from the proliferation of WhatsApp and Facebook Messenger, such as the avalanche-like spread of Fake News. Facebook had good first experiences with fighting fake news about metadata rather than content analysis, Sullivan said.
+Exactly about it would like to exchange now Facebook with authorities, before the coding of the messenger on audio material, videos or group chats is extended. There are technical obstacles, but they are the smaller problem. According to Sullivan, this exchange will probably take a few more years. (SYT)
+
+
+"

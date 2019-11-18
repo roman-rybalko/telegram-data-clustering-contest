@@ -1,0 +1,48 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Robuster Flugroboter mit weichen Flügeln
+Forscher aus Harvard haben einen neuen Flugroboter namens ""RoboBee"" vorgestellt, der erstmals auch mit weichen Flügeln fliegt – und so Kollisionen übersteht.
+05 Nov 2019, 17:45 by Hans-Arthur Marsiske
+Besonders elegant fliegen die Roboter nicht gerade, die Wissenschaftler der Harvard University jetzt in einem Video präsentiert haben. Sie stoßen gegen Wände, drehen sich, stürzen auf den Boden. Doch eben das ist das Besondere an ihnen: Es macht ihnen nichts aus. Danach können sie problemlos weiterfliegen.
+Das Geheimnis dieser Robustheit liegt in den weichen Aktuatoren. Die Roboter heben ab mithilfe leichter, nachgiebiger Flügel, die, anders als etwa die starren Rotoren eines Multikopters, beim Aufprall nicht brechen. Bislang habe es solchen Flügeln an der nötigen Leistungsdichte und der erzielbaren Schlagfrequenz gemangelt, um sie als Antrieb für fliegende Roboter zu verwenden, schreiben Yufeng Chen und sein Forschungsteam in der aktuellen Ausgabe der Zeitschrift Nature. Mit einem Antrieb aus dielektrischen Elastomeren sei es aber nun gelungen, eine Leistungsdichte von 600 W/kg zu erzielen. Die Forscher haben damit Flügelmodule konstruiert, die lediglich 155 mg wiegen, Schlagfrequenzen bis zu 500 Hz erzielen und zu unterschiedlichen Konfigurationen miteinander kombiniert werden können. In Videoaufnahmen demonstrieren sie, wie Roboter mithilfe dieser Flügel kontrolliert über einer Stelle schweben, aber auch Kollisionen unbeschadet überstehen können.
+
+
+
+Diese Roboter sind noch auf eine externe Energieversorgung und ein Motion Capture System angewiesen. Im Vergleich mit anderen, durch piezoelektrische Aktuatoren angetriebenen Schlagflüglern liege zudem der Energieverbrauch noch zu hoch, räumen die Autoren der Studie ein. Sie nennen aber auch einige Ideen, wie die Effizienz ihres Verfahrens zukünftig weiter gesteigert werden kann. Zunächst sei es ihnen darum gegangen, zu zeigen, ""dass weich angetriebene Roboter agil, robust und kontrollierbar sein können“. Für zukünftige weiche Roboter, die unstrukturierte Umgebungen bei hohem Kollisionsrisiko erkunden sollen, seien das wichtige Charakteristika. (siko)
+
+
+",de,"
+
+
+
+
+
+
+
+
+
+
+
+Robust flying robot with soft wings
+Researchers from Harvard have unveiled a new robotic robot called ""RoboBee"", which flies for the first time with soft wings - and thus survives collisions.
+05 Nov 2019, 17:45 by Hans-Arthur Marsiske
+The robots are not flying particularly elegantly, which scientists from Harvard University have now presented in a video. They push against walls, turn and fall to the ground. But that is the special thing about them: they do not mind. Then they can continue to fly without any problems.
+The secret of this robustness lies in the soft actuators. The robots lift off with the help of lighter, more resilient wings, which, unlike the rigid rotors of a multicopter, do not break on impact. So far, such wings have lacked the necessary power density and achievable beat frequency to use as a flying robot drive, write Yufeng Chen and his research team in the latest issue of Nature magazine. However, with a drive made of dielectric elastomers, it has now been possible to achieve a power density of 600 W / kg. The researchers have thus designed wing modules that weigh only 155 mg, achieve beat frequencies of up to 500 Hz and can be combined with one another in various configurations. In video footage they demonstrate how robots use these wings to hover over a spot in a controlled manner, but also survive collisions without damage.
+
+
+
+These robots are still dependent on an external power supply and a motion capture system. Compared to other blowers powered by piezoelectric actuators, energy consumption is still too high, according to the study's authors. But they also give some ideas on how to further increase the efficiency of their process in the future. First, they wanted to show ""that soft-driven robots can be agile, robust, and controllable."" These are key characteristics for future soft robots designed to explore unstructured environments at high collision risk. (Siko)
+
+
+"

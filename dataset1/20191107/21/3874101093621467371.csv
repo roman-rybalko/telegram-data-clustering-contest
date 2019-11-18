@@ -1,0 +1,44 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Bluetooth Cihazları 1 Km'den Hack'lenebilir
+Bluetooth cihazları, düşündüğünzden çok daha uzun mesafelerden hack'lenebiliyormuş!
+07 Nov 2019, 21:03 by CHIP Online
+Yapılan güvenlik uyarısının ardından Bluetooth cihazlarınızın güvenliğini muhtemelen daha yakından takip etmek isteyeceksiniz. Bluetooth Special Interest Group (SIG), Bluetooth bağlantılarının bir kilometre mesafeye ulaşabildiğini, bunun bazı güvenlik riskleri getirdiğini söyledi.
+SIG'ye göre endişeler, en çok endüstriyel cihazlarda yoğunlaşıyor ancak bazı geniş ölçekli sensör ağları ve hatta insansız hava araçları (drone) da endişelere dahil. Her tür Bluetooth bağlantısının siber suçlular için potansiyel bir kapı olduğu, bunların bağlı cihazları, hatta ağın kendisini ele geçirmekte kullanılabileceği belirtiliyor.
+SIG'den Martin Wooley, menzili bir kilometreyi bulan Bluetooth bağlantılarının endüstriyel varlık takibi gibi yeni amaçlarla kullanılabileceğini söylüyor. Wooley, Bluetooth'un milyonlarca kullanıcının hayatını kolaylaştırdığını, ancak bu başarının Bluetooth'un yapabilecekleri açısından dar bir algı"" oluşturduğunu düşünüyor.
+Bluetooth'u kullanılacak olan geliştiricilerin, iki cihaz arasındaki bağlantı menzilini tahmin eden yeni ""Bluetooth Range Estimator"" aracını kullanmaları tavsiye ediliyor.
+
+
+",tr,"
+
+
+
+
+
+
+
+
+
+
+
+Bluetooth Devices Hackable From 1 Km
+Bluetooth devices can be hacked over longer distances than you think!
+07 Nov 2019, 21:03 by CHIP Online
+After a security warning, you'll probably want to keep a close eye on the security of your Bluetooth devices. The Bluetooth Special Interest Group (SIG) said that Bluetooth connections can reach a kilometer distance, posing some security risks.
+According to SIG, concerns are most concentrated in industrial devices, but some large-scale sensor networks and even drones are also involved. Any kind of Bluetooth connection is a potential gateway to cybercriminals, they can be used to take over the connected devices, even the network itself.
+SIG's Martin Wooley says that Bluetooth connections that range within a kilometer range can be used for new purposes, such as industrial asset tracking. Wooley thinks that Bluetooth makes the lives of millions of users easier, but this success creates a narrow perception of what Bluetooth can do.
+Developers who will use Bluetooth are advised to use the new ""Bluetooth Range Estimator"" tool, which estimates the range of connections between the two devices.
+
+
+"

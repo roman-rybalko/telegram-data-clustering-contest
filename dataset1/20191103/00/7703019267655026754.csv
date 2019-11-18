@@ -1,0 +1,88 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Red Hat se posiciona como la plataforma líder de automatización de Ti en Argentina
+La compañía estadounidense especialista en código abierto ofrece una solución aplicable a diversas industrias.
+03 Nov 2019 by El Cronista
+Red Hat, la multinacional líder en soluciones de código abierto empresarial que fue adquirida este año por IBM por varios millones de dólares, ofrece desde 2012 Ansible, una plataforma de automatización con capacidades múltiples y aplicable a diversas industrias.
+El foco de esta plataforma es la multitarea y la automatización, con una programación que dispone de un lenguaje de alto nivel humano, es decir, que su operación no requiere de conocimientos especiales más allá de los que habitualmente manejan los profesionales de tecnología.
+Ansible adquirió su nombre desde la imaginación y la ciencia ficción: su creador, el desarrollador Michael DeHaan, lo llamó así por el sistema de comunicación instantáneo del hiperespacio que postuló la escritora Ursula K. Le Guin en su novela “El mundo de Rocannon”, de 1986.
+Este comienzo ambicioso hoy se traslada a todos los ámbitos en donde se puede aplicar el entorno de automatización dado que, en primer lugar, pueden automatizarse múltiples tareas aunque corran en diferentes sistemas operativos como Unix, Linux e incluso Windows. Además, es posible automatizar tanto plataformas de nube pública como Amazon Web Services y Microsoft Azure -por nombrar dos de los más importantes-, como dispositivos de red de Juniper y Cisco. Hay que incluir también a esta lista los distintos dispositivos de seguridad, las nubes privadas y los productos de virtualización como los de VMWare y Veeam.
+
+
+
+En palabras simples, Red Hat Ansible “es una plataforma de virtualización para muchas tareas de TI que cuenta con múltiples módulos y está diseñada con la ideología DevOps, que permite que todos puedan trabajar al mismo nivel”, explica Roberto Calva, especialista en Gestión de Nube y Automatización en Red Hat. Es un sistema SaaS (software como servicio, en inglés) del que los clientes van a poder obtener, además, las configuraciones empaquetadas ya creadas por Red Hat junto a partners estratégicos, como Juniper y Cisco, para no tener que empezar de cero.
+“Tenemos seis casos de uso”, contó Calva en diálogo con Infotechnology. ”Aprovisionamiento de equipos físicos y virtuales, despliegue de aplicaciones, configuración de entornos, delivery continúo relacionado con DevOps, security compliance y orquestación. Se podría crear un ambiente completo interactuando con distintas plataformas”, aclaró Calva.
+Los datos que brinda un estudio realizado por la consultora internacional Forrester hablan por sí mismos: un cliente anónimo analizado por ellos mostró una reducción de costos de US$ 1,3 millones debido a una mayor eficiencia operacional y US$ 400.000 en infraestructura, junto con un 94% menos de horas-hombre en la resolución de incidentes. El retorno de la inversión fue de 146% y el repago fue en menos de tres meses, de acuerdo a estos especialistas.
+
+
+
+“Este tipo de soluciones permite optimizar y automatizar procesos, junto a una gran reducción de costos de infraestructura. Por tanto, posibilita a los departamentos de tecnología relocalizar sus equipos de trabajo en nuevos proyectos y distribuir la inversión de una forma más eficiente”, agrega Jorge Payró, Director Comercial de Red Hat Argentina.
+Para mensurar el interés que concita el producto de Red Hat, hay que recordar que en el último Ansible Fest, un evento dedicado exclusivamente a la plataforma de automatización, se reunió a más de 1.500 asistentes en Atlanta, Estados Unidos, en los últimos días de septiembre de 2019. “Tuvimos charlas de clientes y de partners que contaron cómo es trabajar con Ansible y los beneficios que obtienen para sus negocios”, recordó Calva.
+
+El mejor ejemplo
+
+Una buena muestra de los poderes de Ansible, y más aún cuando se combinan con las bondades de otros productos de Red Hat, es el caso de la Dirección Nacional de Migraciones (DNM) de la República Argentina.
+La repartición oficial necesitaba unificar los datos procedentes de fuentes nacionales e internacionales como Interpol, los gobiernos de otros países y de fuentes abiertas, como las redes sociales. Para lograrlo, trabajaron en conjunto con Red Hat para crear una plataforma de análisis de migración de nube privada basada en software empresarial de código abierto.
+
+
+
+Al cambiar de software propietario a uno open source, la DNM mejoró los costos de análisis predictivo y los costos de integración y gestión. De esta manera, consiguió además unificar las fuentes de datos de migración y la integración segura con otros grupos de seguridad y fuerzas de inteligencia nacionales e internacionales.
+“La seguridad de un país no tiene precio. La información nos ayuda a combatir el crimen transnacional y a mejorar la coordinación con otros organismos, incluso con los que se encuentran en otros países"", explicó Osmar Alza, director de Información de Inmigraciones de la DNM.
+Las soluciones de Automatización y otras ofertas de TI similares están disponibles en el sitio de Red Hat Portfolio.
+
+
+",es,"
+
+
+
+
+
+
+
+
+
+
+
+Red Hat is positioned as the leading Ti automation platform in Argentina
+The American open source company offers a solution applicable to various industries.
+03 Nov 2019 by El Cronista
+Red Hat, the leading multinational in open source business solutions that was acquired this year by IBM for several million dollars, offers since 2012 Ansible, an automation platform with multiple capabilities and applicable to various industries.
+The focus of this platform is multitasking and automation, with programming that has a high-level human language, that is, that its operation does not require special knowledge beyond those usually handled by technology professionals.
+Ansible acquired his name from imagination and science fiction: its creator, developer Michael DeHaan, named it that for the instant hyperspace communication system that the writer Ursula K. Le Guin postulated in his novel ""The World of Rocannon"", of 1986.
+This ambitious start today moves to all areas where the automation environment can be applied since, in the first place, multiple tasks can be automated even if they run on different operating systems such as Unix, Linux and even Windows. In addition, it is possible to automate both public cloud platforms such as Amazon Web Services and Microsoft Azure - to name two of the most important - such as Juniper and Cisco network devices. The different security devices, private clouds and virtualization products such as VMWare and Veeam must also be included in this list.
+
+
+
+In simple words, Red Hat Ansible “is a virtualization platform for many IT tasks that has multiple modules and is designed with the DevOps ideology, which allows everyone to work at the same level”, explains Roberto Calva, specialist in Management of Cloud and Automation in Red Hat. It is a SaaS system (software as a service, in English) from which customers will be able to obtain, in addition, the packaged configurations already created by Red Hat with strategic partners, such as Juniper and Cisco, so as not to have to start from scratch.
+""We have six use cases,"" Calva said in dialogue with Infotechnology. ”Provision of physical and virtual equipment, application deployment, environment configuration, continuous delivery related to DevOps, security compliance and orchestration. You could create a complete environment interacting with different platforms, ”said Calva.
+The data provided by a study conducted by the international consulting firm Forrester speak for themselves: an anonymous client analyzed by them showed a cost reduction of US $ 1.3 million due to greater operational efficiency and US $ 400,000 in infrastructure, along with 94% less man-hours in incident resolution. The return on investment was 146% and the repayment was in less than three months, according to these specialists.
+
+
+
+“This type of solutions allows to optimize and automate processes, together with a great reduction in infrastructure costs. Therefore, it enables technology departments to relocate their work teams in new projects and distribute the investment more efficiently, ”adds Jorge Payró, Commercial Director of Red Hat Argentina.
+To measure the interest in the Red Hat product, remember that at the last Ansible Fest, an event dedicated exclusively to the automation platform, more than 1,500 attendees gathered in Atlanta, United States, in the last days of September 2019. “We had talks from clients and partners who told what it is like to work with Ansible and the benefits they get for their businesses,” Calva recalled.
+
+The best example
+
+A good sample of Ansible's powers, and even more when combined with the benefits of other Red Hat products, is the case of the National Migration Directorate (DNM) of the Argentine Republic.
+The official distribution needed to unify data from national and international sources such as Interpol, governments of other countries and open sources, such as social networks. To achieve this, they worked together with Red Hat to create a private cloud migration analysis platform based on open source enterprise software.
+
+
+
+By switching from proprietary software to an open source, the DNM improved the costs of predictive analysis and the costs of integration and management. In this way, it also managed to unify migration data sources and secure integration with other national and international security groups and intelligence forces.
+“The security of a country is priceless. The information helps us fight transnational crime and improve coordination with other agencies, including those in other countries, ""said Osmar Alza, director of Immigration Information at DNM.
+Automation solutions and other similar IT offers are available on the Red Hat Portfolio site.
+
+
+"

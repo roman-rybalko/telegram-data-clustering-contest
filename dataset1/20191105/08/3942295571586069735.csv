@@ -1,0 +1,68 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Поднялась волна атак с использованием BlueKeep, жертвы получают майнер
+05 Nov 2019, 08:24 by Олег Иванов
+
+
+
+Печально известная уязвимость BlueKeep, получившая идентификатор CVE-2019-0708, в настоящее время используется в реальных атаках, цель которых — установить в систему жертвы вредоносный майнер криптовалюты. Напомним, что данная проблема безопасности затрагивает службы удалённого рабочего стола (RDS).
+Примечательно, что Microsoft устранила BlueKeep ещё в мае, попутно предупредив пользователей: уязвимость можно использовать для распространения червей вроде WannaCry.
+Успешная эксплуатация бреши позволяет злоумышленнику выполнить код, отправляя специально созданные RDP-запросы. Дошло до того, что не только Microsoft, но и различные госучреждения предупредили пользователей об опасности.
+Несмотря на выпуск патча и для довольно старых версий системы (например, Windows XP), аналитики полагают, что более 700 тысяч компьютеров до сих пор уязвимы для атак.
+Исследователь Кевин Бомонт, давший уязвимости BlueKeep имя, поддерживает ханипот-систему BluePot, чтобы обнаружить попытки эксплуатации бреши в реальных атаках.
+По словам Бомонта, последние атаки начались 23 октября — в этот день ханипоты эксперта начали сбоить и перезагружаться. 2 ноября стало ясно, что киберпреступники запустили атаки, в которых эксплуатируется BlueKeep.
+В частности, атакующие задействовали специальный модуль Metasploit, выпущенный в начале сентября. Специалисты в итоге выяснили, что целью злоумышленников была установка вредоносного майнера Monero в систему жертвы.
+Образец этого зловреда в настоящее время детектируется 31 антивирусом на VirusTotal.
+
+Читайте также
+
+
+
+
+
+
+",ru,"
+
+
+
+
+
+
+
+
+
+
+
+BlueKeep attacks surge, victims get miner
+05 Nov 2019, 08:24 by Oleg Ivanov
+
+
+
+The infamous BlueKeep vulnerability, which received the identifier CVE-2019-0708, is currently used in real-life attacks aimed at installing a malicious cryptocurrency miner in the victim’s system. Recall that this security issue affects Remote Desktop Services (RDS).
+It is noteworthy that Microsoft eliminated BlueKeep back in May, warning users in passing: the vulnerability can be used to spread worms like WannaCry.
+Successful exploitation of a flaw allows an attacker to execute code by sending specially crafted RDP requests. It got to the point that not only Microsoft, but also various government agencies warned users about the danger.
+Despite the release of the patch and for fairly old versions of the system (for example, Windows XP), analysts believe that more than 700 thousand computers are still vulnerable to attacks.
+Researcher Kevin Beaumont, who gave the BlueKeep vulnerability a name, supports the BluePot chanipot system to detect attempts to exploit gaps in real attacks.
+According to Beaumont, the last attacks began on October 23 - on this day, the expert’s handpots started to fail and reboot. On November 2, it became clear that cybercriminals launched attacks that exploit BlueKeep.
+In particular, the attackers used a special Metasploit module, released in early September. Experts eventually found out that the goal of the attackers was to install the malicious Monero miner in the victim's system.
+A sample of this malware is currently detected by 31 antivirus programs on VirusTotal.
+
+Read also
+
+
+
+
+
+
+"

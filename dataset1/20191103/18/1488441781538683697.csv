@@ -1,0 +1,156 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Permessi di root per Google Pixel 4 e Pixel 4 XL: la guida completa (foto)
+03 Nov 2019, 18:05 by Vincenzo Ronca
+I nuovi smartphone Made by Google sono arrivati da poche settimane e se non foste amanti dell’esperienza Android pura, o aveste comunque voglia di provare personalizzazioni particolari, non vi resta che affidarvi al mondo del modding. Di seguito riportiamo una guida dettagliata per acquisire i permessi di root sui nuovi Pixel 4 strutturata da XDA.
+La premessa che va fatta prima di iniziare si riferisce ai dati contenuti nello smartphone: acquisendo i permessi di root verrà effettuato il reset completo, dunque assicuratevi di aver completato il backup di ciò che non volete perdere.
+Scaricare la boot image
+Il primo passo consiste nel selezionare e scaricare la boot image corretta relativa al dispositivo che state usando. La boot image consiste in quella parte di sistema operativo che consente l’avvio dello stesso sistema e si trova appunto all’interno dell’immagine globale di sistema (factory image). Per essere sicuri di scaricare la factory image giusta controllate la corrispondenza tra il numero build che avete installato ed il numero build di quella che state per scaricare. Potete reperire il numero build attuale attraverso le impostazioni di sistema del dispositivo. Successivamente potete scaricare la factory image dal sito ufficiale Google, di seguito vi lasciamo i link:
+
+
+Factory Image Google Pixel 4 | Download
+
+
+Factory Image Google Pixel 4 XL | Download
+
+
+Una volta scaricata, bisognerà prima estrarre il contenuto del fil zip e successivamente estrarre il contenuto del file image-codicedispositivo–version.zip in esso contenuto. Successivamente, come mostrato dall’immagine qui sotto, dovrete individuare il file boot.img  dall’ultima cartella estratta e trasferirlo dal PC allo smartphone.
+
+
+
+Patch della boot image con Magisk Manager
+A questo punto è necessario installare l’app Magisk Manager, potete farlo scaricando ed installando manualmente l’apk direttamente da questo link. Una volta aperta l’app Magisk Manager, eseguite i seguenti passaggi:
+
+Tappate su Install (prima immagine qui sotto).
+Tappate su Select and Patch a file ed andate a selezionare il file boot.img che avete appena immesso nello smartphone.
+Magisk eseguirà il patch del file boot.img e lo salverà come magisk_patched.img nella cartella Download.
+Trasferite questo nuovo file nel vostro PC perché successivamente lo smartphone verrà resettato.
+
+
+
+
+
+
+
+Abilitare lo sblocco del bootloader
+Di default Android non consente lo sblocco del bootloader all’utente. Per abilitarlo sarà necessario attivare le Opzioni Sviluppatore andando a tappare 7 volte sulla voce Numero build, la quale si trova nelle impostazioni di sistema alla sezione Info dispositivo. Una volta abilitate sarà necessario recarsi alla voce Sblocco OEM contenuta nelle Opzioni Sviluppatore ed abilitarla.
+
+
+
+
+
+
+
+
+
+Sblocco del bootloader
+Attenzione perché è questo il passaggio dopo il quale il dispositivo verrà completamente resettato. Una volta abilitato lo sblocco OEM, spegnere lo smartphone e successivamente tenere premuto il tasto volume su e quello power finché il dispositivo non si avvia nel menù bootloader; successivamente collegare lo smartphone al PC e prepararsi ad eseguire i comandi ADB: se non li conoscete, leggete prima questa guida. Inviare il comando:
+fastboot flashing unlock
+Dopo aver completato lo sblocco del bootloader lo smartphone sarà anche riportato allo stato iniziale, completato resettato. A questo punto XDA non consiglia di riavviare il dispositivo per configurarlo da nuovo.
+
+
+
+
+
+
+Flash della boot image con patch Magisk
+A questo punto è giunto il momento di installare la boot image modificata con la patch da Magisk Manager, la quale permetterà l’avvio del sistema operativo anche con bootloader sbloccato. Rimanendo in ambiente ADB, con smartphone in modalità bootloader (volume su + tasto power), inviate il seguente comando:
+fastboot flash boot path/to/magisk_patched.img
+Ricordate di inserire il percorso del file magisk_patched.img che prima avete trasferito dallo smartphone al PC. Qui sotto abbiamo riportato un esempio pratico.
+
+
+
+Successivamente eseguite il comando ADB per riavviare lo smartphone:
+fastboot reboot
+Una volta riavviato dovreste vedere automaticamente l’app Magisk Manager tra quelle disponibili. Se doveste non vederla, reinstallatela manualmente tramite il link riportato sopra. Dopo aver acquisito i permessi di root siete ufficialmente pronti per tuffarvi nel mondo del modding.
+
+
+",it,"
+
+
+
+
+
+
+
+
+
+
+
+Root permissions for Google Pixel 4 and Pixel 4 XL: the complete guide (photo)
+03 Nov 2019, 18:05 by Vincenzo Ronca
+The new Made by Google smartphones have arrived a few weeks ago and if you weren't lovers of the pure Android experience, or you still wanted to try out special customizations, you just need to rely on the world of modding. Below is a detailed guide to acquiring root permissions on the new Pixels 4 structured by XDA.
+The premise that must be made before starting refers to the data contained in the smartphone: acquiring the root permissions, the complete reset will be carried out, so make sure you have completed the backup of what you do not want to lose.
+Download the boot image
+The first step is to select and download the correct boot image for the device you are using. The boot image consists of that part of the operating system that allows the boot of the same system and is located precisely within the global system image (factory image). To make sure you download the right factory image, check the correspondence between the build number you have installed and the build number of the one you are about to download. You can find the current build number through the device's system settings. Then you can download the factory image from the official Google site, here we leave the links:
+
+
+Factory Image Google Pixel 4 | Download
+
+
+Factory Image Google Pixel 4 XL | Download
+
+
+Once downloaded, you will first need to extract the contents of the zip file and then extract the contents of the image-codicedispositivo–version.zip file contained in it. Then, as shown in the image below, you will need to locate the boot.img file from the last extracted folder and transfer it from the PC to the smartphone.
+
+
+
+Boot image patch with Magisk Manager
+At this point you need to install the Magisk Manager app, you can do this by manually downloading and installing the apk directly from this link. Once the Magisk Manager app is open, perform the following steps:
+
+Plug in Install (first image below).
+Plug in Select and Patch a file and go to select the boot.img file that you have just entered on your smartphone.
+Magisk will patch the boot.img file and save it as magisk_patched.img in the Downloads folder.
+Transfer this new file to your PC because the smartphone will then be reset.
+
+
+
+
+
+
+
+Enable bootloader unlocking
+By default, Android does not allow the user to unblock the bootloader. To enable it you will need to activate the Developer Options going to plug 7 times on the Build number item, which is found in the system settings in the Device Info section. Once enabled, it will be necessary to go to the item OEM Unlock contained in the Developer Options and enable it.
+
+
+
+
+
+
+
+
+
+Unlocking the bootloader
+Attention because this is the step after which the device will be completely reset. Once the OEM unlock is enabled, turn off the smartphone and then hold down the volume up and power buttons until the device starts up in the bootloader menu; then connect the smartphone to the PC and prepare to execute the ADB commands: if you do not know them, read this guide first. Send the command:
+fastboot flashing unlock
+After completing the unlocking of the bootloader the smartphone will also be returned to the initial status, completed reset. At this point XDA does not recommend restarting the device to configure it again.
+
+
+
+
+
+
+Flash boot image with Magisk patch
+At this point it is time to install the boot image modified with the patch by Magisk Manager, which will allow the booting of the operating system even with unlocked bootloader. Remaining in ADB environment, with smartphone in bootloader mode (volume up + power button), send the following command:
+fastboot flash boot path / to / magisk_patched.img
+Remember to enter the path to the magisk_patched.img file that you previously transferred from your smartphone to your PC. Below is a practical example.
+
+
+
+Then execute the ADB command to restart the smartphone:
+fastboot reboot
+Once restarted you should automatically see the Magisk Manager app among those available. If you don't see it, reinstall it manually via the link above. After acquiring root permissions, you are officially ready to dive into the world of modding.
+
+
+"

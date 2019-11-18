@@ -1,0 +1,128 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Google'ın kuantum bilgisayarı devrim mi?
+01 Nov 2019, 05:30 by Faruk Can
+Google geçtiğimiz hafta teknoloji ve bilim dünyasının merakla beklediği bir gelişme olan ""kuantum üstünlüğü""ne ulaştığını iddia etti.
+Nature dergisinde yayınlanan bir makalede, Amerikalı şirket, Sycamore adını verdiği kuantum bilgisayarın çok zor bir problemi 200 saniyede çözdüğünü ileri sürdü. Google karşılaştırma olarak da halihazırda dünyanın en hızlı klasik bilgisayarının aynı problemi ancak 10 bin yılda çözebileceğini ileri sürdü.
+Bahsi geçen bilgisayar ise IBM'e ait olan iki basketbol sahası büyüklüğündeki Summit. Fakat IBM, Google'ın açıklamasına itiraz ederek Summit'in bu problemi 10 bin yılda değil iki buçuk günde çözebileceğini duyurdu.
+Aradaki fark Google'ın iddia ettiği gibi dramatik olmasa da teknoloji dünyasını heyecanlandırmaya yetti.
+Peki kuantum üstünlüğü ve kuantum bilgisayarı ne demek?
+Kuantum üstünlüğü nedir?
+Kuantum üstünlüğü ilk olarak Kaliforniya Teknik Üniversitesi (CalTech) profesörlerinden John Preskill tarafından kullanıma sokulan bir ifade. Kuantum üstünlüğü, bir kuantum bilgisayarının klasik bilgisayarların pratik anlamda çözemeyeceği bir problemi çözdüğü anda elde edilmiş oluyor.
+Google'ın ilan ettiği gibi bir problemin çözümüne 10 bin yılda ulaşılması aslında pratik anlamda çözülememesi demek. Bu nedenle böyle bir durumda kuantum üstünlüğünün elde edildiğini söylemek mümkün.
+Fakat IBM'in söylediği gibi 2,5 gün alması halinde Google'ın bu unvanı yakaladığını söylemek teorik olarak mümkün değil. Yine de 200 saniye ile iki buçuk gün arasındaki muazzam fark teknoloji dünyası için çok önemli bir gelişme.
+Bu da klasik bilgisayarlarla kuantum bilgisayarlar arasındaki farkın ne olduğu sorusunu getiriyor.
+
+
+
+Kuantum bilgisayarı nasıl çalışır?
+Kuantum bilgisayarın nasıl çalıştığına geçmeden önce klasik bilgisayarların çalışma prensibini hatırlamak faydalı olur.
+Klasik bilgisayarlar bir devre üzerindeki elektrik akımını anahtarlar yardımıyla açarak ve kapatarak çalışır. Bu anahtarın kapalı ya da açık olması sayesinde oluşturulan sıfır ve birler bilgisayar kodlarının temellerini oluşturur. Kodlamanın bilgi taşıyan en küçük yapıtaşı olan bu sıfır ve birlere bit ismi veriliyor.
+Sonuç olarak klasik bilgisayarlar elektriğin fiziksel kanunlarına bağlı olarak çalışıyor ve tüm işlemlerini bu 0 ve 1'ler üzerinden yani elektrik akımının geçip geçmemesi üzerinden yürütüyor.
+Kuantum bilgisayarları ise elektrik akımına bağlı olarak çalışmıyor. Onun yerine elektron ve proton gibi atom altı parçacıkların fiziksel özelliklerine dayanan bir sistemle işliyor. Bu sayede klasik bilgisayarlardan çok daha küçük bir alandan ve çok daha büyük bir hızla çalışabiliyorlar.
+Kuantum mekaniğinin geçerli olduğu bu sistemlerde klasik bilgisayarlardaki akımın varlığı ve yokluğu gibi kesin tanımlamalar yerine genlikler ele alınıyor çünkü bu maddeler aynı anda hem madde hem de dalga boyu olarak davranabildiği için tek fiziksel bir tanımlama kullanmak mümkün olmuyor. Ayrıca bu parçacıklar aynı anda birden fazla genliğe sahip olabilirken birbirleriyle bağlantılı ya da karşıt durumda da olabiliyorlar.
+""Elektronlar doğru rotayı kendileri buluyor""
+Klasik fizikçiler atom çeperinde dönen elektronların zamanla çekirdeğe yapışması gerektiğini söylerken Kuantum fizikçiler elektronun çekirdeğe yapışması için çok sayıda yol olmasına rağmen bunların birbirlerini iptal ettiğini savunuyor. Yani Austin Teksas Universitesi Bilgisayar Bilimcilerinden Scott Aaronson elektronların bir bilgisayar gibi diğer tüm olası yolları eleyerek doğru rotayı bulduğunu belirtiyor.
+Aaronson bunu ""Bir anlamda elektron kendi varoluşsal problemini kendi kendine çözmüş oluyor"" sözleriyle ifade ediyor.
+Bir kaos gibi görünen bu durum aslında kendi içindeki düzenle maddenin en temel taşlarını oluşturuyor. Kuantum bilgisayarları da bu kaos içindeki düzeni önceden belirlenen bir amaç için manipüle etmeyi hedefliyor. Bilim insanları kuantum bilgisayarını oluşturmak için kuantum hallerini etkileyebilecek donanım üretmeye çalışıyor. Aslında çalışmaların önemli bir kısmı en uygun donanımın nasıl bir şey olduğu üzerinde yapılıyor.
+Normal bir bilgisayarda bir bit sadece iki halde olabiliyor, açık ya da kapalı yani bir veya sıfır. Öte yandan 1 kuantum bit, kısa adıyla 'kubit', aynı anda birden fazla durumda olabiliyor. Bu da tek bir kubit'in standart bir bitten çok daha fazla bilgi taşıyabileceği anlamına geliyor.
+Kuantum bilgisayarının çok hızlı problem çözme yeteneği özellikle siber güvenlik alanında hem büyük fırsatlar hem de büyük riskler sunuyor. Öte yandan kimya ve ilaç endüstrisinde geliştirme süreçlerini çok hızlandırma potansiyeli de kuantum bilgisayarları ilgi çekici kılan bir diğer alan.
+Kuantum teknolojisi henüz yolun başında
+Bilim insanları kuantum bilgisayarlarının özellikle optimizasyon problemlerini kolaylaştıracağını düşünüyor. Önünüzde çok alternatifli bir yol olduğunda klasik bilgisayarlar her adımda bir seçeneği deneyerek ilerliyor ve tamamını ele alması bazen çok uzun zaman alabiliyor. Olası yolların tamamını bir anda deneyebilecekleri için kuantum bilgisayarların ise bu süreyi oldukça kısaltacağı tahmin ediliyor.
+Ama bu konudaki çalışmalar henüz emekleme aşamasında. Kuantum bilgisayarlarının üretimi oldukça zor ve hatalı sonuç verme ihtimali hala çok yüksek. Ayrıca üretimde kullanılan maddeler de çoğu zaman güvenli değil.
+
+
+
+Google'ın açıklaması bir devrim mi?
+Bu sorunun cevabı çok net olmamakla birlikte hem evet hem hayır.
+Bir kuantum bilgisayarın çalışıyor olması ve problem çözmede kullanılabilmesi bir devrim niteliğinde. Fakat Sycamore pratik manada faydalı olabilecek kadar gelişmiş bir bilgisayar değil. Prototip olarak üretilen bu bilgisayar sadece bir teknolojik kanıt olma özelliği taşıyor. Sycamore sadece 54 kubitle çalışıyor. Genel amaçlı olarak kullanılabilecek bir makinenin ise 1 milyon kubite ihtiyacı olacağı belirtiliyor.
+Öte yandan bilim insanları bunu modern havacılığın öncüsü olan Wright Kardeşler'in ilk uçuşuna benzetiyor. Wright kardeşler de ilk uçuş denemelerinde havada fazla kalamamıştı fakat insanlı bir aracın uçabileceğini ispatlayarak modern tarihin en büyük devrimlerinden birinin kapısını aralamıştı.
+Bu açıdan ele alındığında Google'ın çalışan bir kuantum bilgisayar ortaya koyması devrim olarak nitelendirilebilir öte yandan eleştirenler Sycamore'un kuantum üstünlüğünü yakalamadan çok uzak olduğunu belirtiyor.
+
+
+Hackerler dünya genelinde 20 üst düzey asker ve siyasinin cep telefonuna sızdı
+
+
+Kilogramın yeni tanımı nasıl? Eskisinden neden vazgeçildi?
+
+
+Video: Einstein'ın 140. doğumgünü anısına 110 adet el yazması belge ilk kez yayınlandı
+
+
+
+
+",tr,"
+
+
+
+
+
+
+
+
+
+
+
+Does Google's quantum computer revolution?
+01 Nov 2019, 05:30 by Faruk Can
+Last week, Google claimed that it had reached the ""quantum supremacy"", a development that the world of technology and science has been eagerly awaiting.
+In an article published in Nature magazine, the American company claimed that the quantum computer called Sycamore solves a very difficult problem in 200 seconds. In comparison, Google argues that the fastest classic computer in the world can solve the same problem in 10 thousand years.
+The computer is the Summit of IBM's two basketball courts. However, IBM objected to Google's announcement that Summit could solve this problem in two and a half days, not 10,000 years.
+The difference is not as dramatic as Google claims, but enough to excite the world of technology.
+What does quantum superiority and quantum computer mean?
+What is the quantum advantage?
+Quantum supremacy was first introduced by John Preskill, a professor at California Technical University (CalTech). Quantum supremacy is achieved when a quantum computer solves a problem that conventional computers cannot solve practically.
+As Google declared, reaching a solution in 10 thousand years means that it cannot be solved in a practical sense. Therefore, it is possible to say that in such a case, quantum superiority is achieved.
+But, as IBM says, it is not theoretically possible to say that Google has achieved this title if it takes 2.5 days. Nevertheless, the enormous difference between 200 seconds and two and a half days is a crucial development for the technology world.
+This raises the question of what is the difference between classical computers and quantum computers.
+
+
+
+How does the quantum computer work?
+Before moving on to how quantum computers work, it is helpful to remember the working principle of classical computers.
+Conventional computers operate by switching the electrical current on a circuit with the help of switches. Whether this switch is closed or open, the zero and the ones that are generated form the basis of computer codes. This is the smallest building block of coding, which is called bits and zeros.
+Consequently, conventional computers operate in accordance with the physical laws of electricity and carry out all of their operations through these 0 and 1s, ie whether or not the electric current passes.
+Quantum computers do not work due to electrical current. Instead, it works with a system based on the physical properties of subatomic particles such as electrons and protons. In this way, they can work in a much smaller space and at a much faster speed than conventional computers.
+In these systems where quantum mechanics is valid, amplitudes are considered instead of definite definitions such as the presence and absence of current in classical computers because it is not possible to use a single physical definition since these substances can act as both matter and wavelength at the same time. In addition, these particles may have more than one amplitude at the same time, but may also be interconnected or opposite.
+""Electrons find the right course themselves.""
+Classical physicists say that the electrons that rotate in the atomic wall need to stick to the nucleus over time, while quantum physicists argue that although there are many ways for the electron to adhere to the nucleus, they cancel each other out. So Scott Aaronson, a computer scientist at the University of Texas at Austin, says that electrons find the right course by eliminating all other possible paths, like a computer.
+Elektron In a sense, the electron has solved its existential problem by itself, Aar says Aaronson.
+This situation, which seems to be a chaos, is actually the most fundamental stones of the regulated matter in itself. Quantum computers also aim to manipulate the order in this chaos for a predetermined purpose. Scientists are trying to produce equipment that can affect quantum states to create a quantum computer. In fact, a significant part of the work is done on what the most appropriate hardware is.
+On a normal computer, a bit can only be in two states, on or off, ie one or zero. On the other hand, 1 quantum bit, shortly called 'cubit', can be in more than one case at a time. This means that a single cubite can carry much more information than a standard bit.
+The very fast problem-solving capability of the quantum computer presents both great opportunities and risks, especially in the field of cyber security. On the other hand, the potential for accelerating development processes in the chemical and pharmaceutical industries is another area that makes quantum computers interesting.
+Quantum technology just up the road
+Scientists think that quantum computers will facilitate optimization problems in particular. When you have a very alternative path ahead of you, classic computers move forward by trying an option at every step, and sometimes it takes a long time to handle it all. It is estimated that quantum computers will shorten this time considerably because they can try all of the possible paths at once.
+But studies on this subject are still in its infancy. Quantum computers are very difficult to produce and still have a high probability of producing erroneous results. In addition, substances used in production are often unsafe.
+
+
+
+Is Google's release a revolution?
+The answer to this question is not very clear, but yes and no.
+The fact that a quantum computer works and can be used to solve problems is a revolution. But Sycamore is not a computer that is sufficiently advanced to be useful in practice. This prototype is only a technological proof. Sycamore only works with 54 cubes. A machine that can be used for general purposes will need 1 million cubes.
+Scientists, on the other hand, compare this to the first flight of the Wright Brothers, the pioneer of modern aviation. The Wright brothers did not stay long in the air during their first flight attempts, but by proving that a manned vehicle could fly, they opened the door to one of the greatest revolutions in modern history.
+In this respect, Google's introduction of a working quantum computer can be regarded as a revolution, while critics say Sycamore is far from catching on to its quantum supremacy.
+
+
+Hackers infiltrated the cell phone of 20 senior soldiers and politicians around the world
+
+
+What's the new definition of the kilogram? Why was the old one abandoned?
+
+
+Video: 110 manuscripts commemorate Einstein's 140th birthday
+
+
+
+
+"

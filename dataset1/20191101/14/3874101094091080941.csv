@@ -1,0 +1,46 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Chrome, ""Ağır"" Reklamları Engelleyecek
+Chrome, PC'nizin kaynaklarını ve internetinizi savurganca harcayan ve yavaşlatan içeriklere karşı verdiği savaşını, şimdi de reklamlara kaydırdı!
+01 Nov 2019, 14:00 by CHIP Online
+Google, çok fazla kaynak kullanan reklamları durdurmaya yönelik bir reklam engelleyicisini Chrome'a eklemeye hazırlanıyor.
+Chrome'un RAM tüketimi konusunda tasarruflu davranmadığı bilinen bir gerçek, ancak bundan her zaman tarayıcı sorumlu olmayabiliyor. Bazen reklamlar da işlemci, RAM gibi kaynakların savurganca kullanılmasına yol açabiliyor. 9to5Google'a göre Chrome geliştiricileri, bu sorunu çözmek için ""ağır reklamları"" yüklemeyi durduracak bir araç üzerinde çalışıyorlar.
+İlk olarak bir Chromium geliştiricisinin mesajında görünen işlev, daha sonra Google tarafından da kısaca açıklandı ve ""ağır reklamın"" ne anlama geldiği açıklığa kavuşturuldu. Google'ın kılavuzuna göre reklamlar, ana işlemci iş parçacığını toplam 60 saniyeden fazla kullandığında, ana iş parçacığını 30 saniyelik bir süre içinde 15 saniyeden fazla kullandığında veya kaynaklarını yüklemek için 4MB'tan fazla veri aktarımı yaptığında ağır reklam olarak değerlendirilecek. Engellenen reklamların yerini, reklamın neden engellediğini açıklayan bir hata mesajı alacak.
+İşlev henüz deneysel aşamada olduğundan birkaç aydan önce Chrome'un final sürümüne gelmesi beklenmiyor. Chrome Canary'de işlevi etkinleştirmeye yönelik iki ayar bulunuyor.
+Google, gelirlerinin büyük bölümünü reklamlardan elde etse de, reklamların Chrome kullanıcılarının deneyimini yerle bir etmesini istemiyor. Bunu anlamak mümkün, çünkü reklamların kontrolden çıkması, reklam engelleyicilerin kullanımını çok yaygınlaştırabilir. Firma, zorlansa da bu konuda bir denge kurmaya çalışıyor.
+
+
+",tr,"
+
+
+
+
+
+
+
+
+
+
+
+Chrome Will Block ""Heavy"" Ads
+Chrome has now shifted its battle against content that wastes and slows down your PC's resources and the Internet, now advertising!
+01 Nov 2019, 14:00 by CHIP Online
+Google is preparing to add an ad blocker to Chrome to stop ads that use a lot of resources.
+It's a known fact that Chrome isn't cost-effective about RAM consumption, but the browser may not always be responsible for it. Sometimes advertisements can lead to wasteful use of resources such as CPU and RAM. According to 9to5Google, Chrome developers are working on a tool to stop uploading ""heavy ads"" to resolve this issue.
+First, the function that appeared in a Chromium developer's message was then briefly explained by Google and clarified what ""heavy advertising"" means. According to Google's guide, ads will be treated as heavy ads when the main processor thread uses a total of more than 60 seconds, the main thread uses more than 15 seconds in a 30-second period, or transfers more than 4MB of data to load resources. Blocked ads will be replaced with an error message explaining why the ad is blocked.
+Since the function is still in the experimental stage, it is not expected to come to the final version of Chrome a few months ago. Chrome Canary has two settings for enabling the function.
+Although Google generates a large portion of its revenue from ads, it doesn't want ads to destroy the Chrome users' experience. It is possible to understand this, because the out of control of ads can make the use of ad blockers widespread. The company is trying to find a balance on this issue, even if it is difficult.
+
+
+"

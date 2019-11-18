@@ -1,0 +1,66 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Новый баг Windows 10 1903 не даёт рабочему столу загрузиться
+05 Nov 2019, 10:14 by Олег Иванов
+
+
+
+Microsoft предупреждает пользователей о новом баге в Windows 10 версии 1903. Судя по всему, на этот раз ситуация действительно серьёзная — по завершении установки Windows или после перезагрузки пользователи видят ошибку «Try again».
+Корпорация из Редмонда опубликовала описание бага, в котором говорится:
+«После успешной установки и настройки Windows, а в некоторых случаях — после перезагрузки устройства пользователи видят экран с чёрными полосами сверху и снизу. Между этими полосами на голубом фоне всплывает ошибка ""Something went wrong but you can try again"" (""Что-то пошло не так, но вы можете попробовать снова""). Там же присутствует кнопка ""Try again""».
+По имеющейся информации, баг затрагивает устройства, подключаемые к интернету впервые, или новые установки Windows, которым не дали доступ в Сеть на этапе настройки OOBE (Out-of-box Experience).
+Процесс установки с помощью OOBE проводит пользователя через различные соглашения, настройку подключения к интернету, а также аутентификации в аккаунте Microsoft.
+«В процессе настройки с помощью OOBE у вас будет возможность подключиться к Сети, но делать это необязательно. А ошибка возникнет в момент первого подключения к интернету», — объясняет Microsoft.
+Разработчики работают над патчем для устранения этого бага. Однако есть и временное решение — просто перезагрузить устройство. В подавляющем большинстве случаев этого должно быть достаточно.
+
+Читайте также
+
+
+
+
+
+
+",ru,"
+
+
+
+
+
+
+
+
+
+
+
+The new Windows 10 1903 bug prevents the desktop from loading
+05 Nov 2019, 10:14 by Oleg Ivanov
+
+
+
+Microsoft warns users about a new bug in Windows 10 version 1903. Apparently, this time the situation is really serious - at the end of the Windows installation or after a reboot, users see a ""Try again"" error.
+A corporation from Redmond has published a description of the bug, which says:
+“After successfully installing and configuring Windows, and in some cases after rebooting the device, users see a screen with black bars at the top and bottom. Between these stripes on a blue background, the error ""Something went wrong but you can try again"" pops up (""Something went wrong, but you can try again""). There is also a button ""Try again"" ».
+According to available information, the bug affects devices that connect to the Internet for the first time, or new Windows installations that were not given access to the Network during the OOBE (Out-of-box Experience) setup phase.
+The installation process using OOBE guides the user through various agreements, setting up an Internet connection, and authenticating with a Microsoft account.
+“During the setup process using OOBE, you will have the opportunity to connect to the Web, but this is not necessary. And the error will occur at the time of the first Internet connection, ”Microsoft explains.
+Developers are working on a patch to fix this bug. However, there is a temporary solution - just restart the device. In the vast majority of cases this should be enough.
+
+Read also
+
+
+
+
+
+
+"

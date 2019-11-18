@@ -1,0 +1,420 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Баттл ученых: как технологии меняют нашу жизнь?
+Космические роботы и киборги, беспилотные автомобили и редактирование генома — какие технологии уже сейчас создаются в нашей стране? Какие разработки необходимо использовать с большой осторожностью и чем может быть опасен технический прогресс? «Фонтанка» посетила лекторий Science Slam в Петербурге и прослушала ученых стендаперов.
+
+07 Nov 2019, 07:30
+
+
+
+Победитель Science Slam Мария Чакчурина, фото: Алексей Рожнов
+
+
+Что такое Science Slam? 
+
+Это международный проект, который активно развивается и в России. Молодые ученые рассказывают со сцены о главных научных идеях и собственных исследованиях. За 10 минут слэмер должен успеть интересно и остроумно рассказать широкой публике про свои достижения. Победителя выбирают сами гости — насколько они симпатизируют каждому спикеру, замеряют специальным шумомером.
+Science Slam проводится в Петербурге не в первый раз, в этом году он прошел на Хэллоуин в пространстве KOD на территории бывшего завода «Арсенал». По задумке организаторов — петербургского издания «Бумага» и компании «Газпром нефть», — такие неформальные встречи должны развеять стереотипы об ученых и сделать науку ближе и понятнее обычному человеку.
+
+
+
+
+
+
+
+
+
+
+
+
+
+Баттл ученых: как технологии меняют нашу жизнь?
+
+На Science Slam в Петербурге 31 октября выступили шесть молодых ученых. Тема мероприятия — «Технологии и их обратная сторона». Спикеры не только рассказали о своих наработках, но и затронули ряд этических моментов, которые волнуют поколение Z. Если у вас не получилось посетить мероприятие, то мы подготовили краткий конспект лекций.
+Лектор: Дмитрий Перец, дата-сайентист научно-технического центра «Газпром нефти»
+
+
+
+ Фото: Алексей Рожнов
+
+Тема: «Искусственный интеллект: прогресс и побочные эффекты»
+
+Основная мысль: Искусственный интеллект позволяет найти рак у человека и «заболевшую» нефтяную скважину.   
+Идея создания искусственного интеллекта (ИИ) или его подобия витает в воздухе давным-давно. Примеры технологических помощников для человека можно встретить в кино и литературе, начиная с пражских големов или создания Франкенштейна. Каждый из нас хотя бы раз задумывался о том, чтобы отправить робота вместо себя в офис. Перспективы у ИИ достаточно радужные — ведь даже высококлассный эксперт склонен полагаться на свой опыт, а это не всегда идет на пользу делу. Но и искусственный интеллект без человека тоже не справится.
+Пример 1. Нейросеть создала фейковую цитату. Дмитрий Перец предложил гостям угадать, какое из трех высказываний является придуманным.
+
+
+
+Присутствующие в зале ошибочно приписали цитату американскому президенту. На самом деле, ее автор — нейросеть, которую в 2015 году создала и обучила на публикациях в Твиттере корпорация Google.
+Пример 2. ИИ плотно входит в нашу жизнь. С алгоритмами машинного обучения мы сталкиваемся ежедневно, когда нам предлагают нужный фильм для просмотра в Интернете или самые низкие цены для поездки на такси. Нейросети очень полезны в медицине: они помогают выявлять рак [подробнее об этом вы можете прочесть в материале «Наука в барах: Как нас будут лечить нейросети?» - Ред.] Те же математические подходы, которые помогают ИИ по снимкам МРТ прогнозировать риск онкологии, в нефтяной отрасли удалось применить, чтобы выявлять «заболевшую скважину». Например, если вместо нефти в нее начинает поступать вода.
+Доля скважин, которые подвержены «болезни», мала — около 1,2%. Для инженера это все равно, что искать иголку в стогу сена — к тому же по косвенным признакам. А нейросеть быстро обрабатывает данные и выдает свой прогноз. Модель машинного обучения с точностью 81% сообщает, есть ли «болезнь» на скважине или нет. Но в то же самое время она достаточно часто приписывает «недуг» здоровым скважинам и у 14 из 100 потенциально «больных» дает ложноположительный результат. То есть говорит, что вода есть, а на самом деле ее нет.
+
+
+
+Фото: Алексей Рожнов
+Что будет, если довериться такой программе? Специалисты будут лечить здоровых людей или тратить время и ресурсы на ненужный ремонт скважин. Таким образом, Дмитрий Перец делает вывод: искусственный интеллект на данном этапе — это всего лишь «умный» помощник человека, но ни в коем случае не замена ему. Получая рекомендации и расчеты машины, эксперт может не отвлекаться на рутинные вычисления, а сконцентрироваться на самом важном и проверить прогнозы алгоритмов. Финальное решение остается за нами — лечить или не лечить?
+Пример 3. Если доверить ИИ подобрать идеального кандидата на роль руководителя, то на практике, скорее всего, мы получим список лиц только мужского пола. Причина этого проста: исторически так сложилось, что раньше руководящие должности по большей части занимали мужчины, по ним собрано больше статистики — и машина отдаст предпочтение им. Но если посмотреть на последние годы, то очевидно: женщины все чаще становятся успешными руководителями в бизнесе и государственных структурах.
+Вывод: ИИ не заменит человека, зато машинное обучение может стать отличным помощником для нас в принятии осознанных и правильных решений на основе анализа больших массивов данных. Пока «умные» машины не готовы самостоятельно принимать решения и изменить наш мир.
+Лектор: Лариса Марарица, кандидат психологических наук, преподаватель СПбГУ, сотрудник лаборатории Интернет — исследований ВШЭ
+
+
+
+
+Фото: Алексей Рожнов 
+
+
+Тема: «Социальный почерк: цифровые данные и вычислительная психология».  
+
+Основная мысль: Цифровой след, который мы оставляем в Интернете, позволит ученым узнать о нас очень многое.
+Машинное обучение и большие данные помогают психологам изучать поведение людей. Наука «социальная психология» существует уже более 100 лет, а теперь с помощью современных технологий она может по цифровому следу, который человек оставляет в Интернете — постам в соцсетях, покупкам и заказам в Интернете, посещаемым сайтам, — более точно изучить его поведение.
+
+
+
+
+Фото: Алексей Рожнов 
+
+При помощи таких исследований психологи и социологи могут достаточно быстро и полно объяснить поведение индивидов и / или групп людей и предсказать грядущие изменения. А также изучить, в каких связях находятся эти люди. Социальный почерк — это паттерн внимания человека к друзьям и знакомым. Ученые говорят, что распределение этого внимания устойчиво, даже если меняются контакты человека, уходят старые и приходят новые друзья. На практике по социальному почерку человека можно, например, предсказать, когда человек уволится с работы. Задумываясь об увольнении, человек интуитивно начинает меньше общаться с коллегами в мессенджерах или в почте, и у него появляются новые контакты. Уже есть стартапы, которые на основе аналитики предлагают эффективные решения для HR в компаниях. Или другой пример: по постам в соцсетях уже можно понять, что человек находится в депрессии и, соответственно, не может быть хорошим сотрудником.
+
+
+
+
+Фото: Алексей Рожнов
+
+Социология, психология, политология никогда не будут прежними, потому что у них появились настоящие объективные большие данные. Так, если раньше привычные методы опроса или анкетирования населения занимали значительное время и были все-таки субъективными (опрашиваемый человек заведомо не был откровенен, а интервьюер вносил долю личного отношения при интерпретации ответов), то сейчас благодаря большим данным эта информация стала действительно объективной. Также достаточно быстро можно изучить поведение не 100 – 200 человек, а сотни тысяч — за такое же время. Всё это называется «вычислительная психология».
+Но есть и другая сторона вопроса — этическая. Цифровой след — это конфиденциальная информация о человеке, и исследователи спорят: где граница между тем, когда человек сам принял решение опубликовать о себе информацию (например, фотографии в соцсетях), и тем, когда информация о нем может стать предметом исследования.
+Вывод: Вычислительная психология позволяет рассказать о поведении человека или группы людей подробно: поступки, интересы, увлечения.
+Лектор: Андрей Афанасьев, биоинформатик, выпускник аспирантуры физического факультета МГУ, CEO генетической лаборатории 
+
+
+
+ Фото: Алексей Рожнов 
+
+Тема: «Слон в посудной лавке: чем опасно редактирование генома».  
+
+Основная мысль: Технический прогресс может помочь людям с тяжелыми наследственными заболеваниями, но до сих пор не найдены ответы на вопросы из области этики.    
+Человечество давно пытается изучить и исправить генетические ошибки. Как помочь людям с наследственными заболеваниями? Мы храним информацию, переданную нам миллионами предков, причем иногда люди с ошибками генома выглядят весьма привлекательными. Например, Анджелина Джоли — носительница сочетания генов, которое может вызвать рак молочной железы, но это не помешало ей построить хорошую карьеру и завести детей. А вот Дэвиду Веттеру — мальчику, страдавшему от редкого генетического заболевания, тяжёлого комбинированного иммунодефицита [о его истории мир узнал из голивудского фильма Bubble Boy – «Парень из пузыря». – Ред.], — повезло меньше. Он всю жизнь вынужденно жил в пластиковом пузыре, созданном специально для него, так как любой контакт с внешним миров был для него губителен. Дэвид умер во время трансплантации.
+
+
+
+
+Фото: Алексей Рожнов 
+
+Афанасьев отмечает, что ученые в XX и XXI веках активно работают над редактированием генома человека. В рамках генотерапии в конце 1980-х — в 90-е годы было проведено множество операций, однако после смерти пациента Джесси Джелсинджера в 1999 году такие опыты на долгое время прекратились.
+В наши дни ученые продолжают изучение этого процесса, и уже есть серьезные достижения в этой области. Так, в прошлом году китайский исследователь Хэ Цзянькуй заявил, что отредактировал геномы человеческих эмбрионов — и на свет появились две девочки с измененной ДНК. Они были зачаты от здоровой матери и ВИЧ-инфицированного отца, но благодаря тому, что Хэ Цзянькуй удалил у детей ген CCR5, получили пожизненный иммунитет к ВИЧ. Российский ученый Денис Ребриков заявил, что может повторить опыт коллеги из Китая, но, со слов Афанасьева, Минздрав России запретил ему ставить такие опыты.
+
+
+
+
+Фото: Алексей Рожнов 
+
+Но у прогресса в этой области есть и обратная сторона — этическая. Афанасьев со сцены Science Slam задал риторические вопросы публике: можем ли мы считать технологию редактирования генома безопасной, пока у нас нет точных данных о возможных последствиях? Какое влияние на здоровье детей оказывают вмешательства в наследственную структуру? Кто несет ответственность за возможные ошибки в ходе исследований? 
+Публика задумалась.
+Вывод: редактирование генома пока плохо изученный процесс, и какие результаты могут породить врачебные ошибки — сложно предсказать. «И если мы начнем играть с тем, в чем мы мало что понимаем, то человечество породит монстра», — уверен биоинформатик Афанасьев.  
+Лектор: Юрий Баулин, ведущий инженер ИЭФБ РАН им. Сеченова (Институт эволюционной физиологии и биохимии, аспирант НИУ ИТМО
+
+
+
+ Фото: Алексей Рожнов 
+
+Тема: «Биоботы: насекомые-киборги на службе людей».  
+
+Основная мысль: В будущем микророботы станут неотъемлемой частью нашей жизни. Но так ли это безопасно для цивилизации? 
+Человечество активно создает себе помощников — роботов. Еще сто лет назад труд человека был преимущественно ручным, но технологический прогресс позволил создать множество автоматизированных умных машин. Человечество при их создании многое заимствовало у природы, и с развитием технологий роботы становятся все меньше. Основываясь на этих двух трендах, Юрий Баулин представил концепцию робота-насекомого.
+
+
+
+
+Фото: Алексей Рожнов 
+
+Инженер занимается изучением поведения «киборгов»: это насекомые, чьим поведением можно управлять. Его подопытными стали мадагаскарские тараканы, а метод командования ими основан не на психологической дрессировке, а на воздействии на сенсорные системы. Поскольку тараканы убегают от раздражителей, то их движение изменяют с помощью стимулов — например, ударов током. Это воздействие воспроизводит либо виртуальное препятствие, которое тараканы огибают, либо сигнал опасности, от которого они убегают. Также во время опытов используют приманки: насекомые чувствуют запах еды за километр и готовы к нему приблизиться.  В идеале эта технология должна привести к созданию виртуальной реальности для особи.
+
+
+
+
+Фото: Алексей Рожнов 
+
+Баулин рассказал о том, что в будущем собирается изучить поведение насекомых, сделав из них «цифровых наркоманов»: заставить центры удовольствия тараканов давать организму мощный сигнал и направлять особь в нужную сторону. 
+Вывод: Если человечество сможет изучить поведение насекомых и на него воздействовать, а потом применить эти знания в робототехнике, то нас будут окружать миллионы крошечных роботов. «Что они принесут на своих спинках — ампулы с ядом, системы слежки или медоборудование? — задается вопросом Баулин. — Не знаю, я всего лишь разрабатываю технологию. А какой она будет — решают люди».
+Лектор: Игорь Даляев, кандидат технических наук, ведущий научный сотрудник ЦНИИ робототехники и технической кибернетики
+
+
+
+
+Фото: Алексей Рожнов 
+
+Тема: «Экстремальный космос: зачем нужны космические роботы».  
+Основная мысль: Роботы помогут космонавтам на орбите проводить различные исследования.  
+В далеком 1957 году, после запуска первого искусственного спутника Земли, начался этап освоения космического пространства, который продолжается до сих пор. Сейчас люди науки активно используют околоземное космическое пространство. В обозримом будущем человек будет делать это в тесной связке с роботами.
+Изучение космоса позволит нам защитить Землю от космических тел, которые регулярно приближаются к планете. А спутниковая связь и прогноз погоды — технологии, появившиеся благодаря изучению космоса, — оказывают огромное влияние на жизнь землян.
+
+
+
+
+Фото: Алексей Рожнов 
+
+Разработка космических роботов ведется уже давно: ученые хотят создать помощника, который будет переносить инструменты и аппаратуру к месту проведения эксперимента, выполнять некоторые рутинные измерения и манипуляции в открытом космосе — и тем самым помогать космонавтам в проведении различных исследований. 
+Петербургское ЦНИИ РТК занималось разработкой косморобота для российского сегмента МКС. Забегая вперед, скажем, что Роскосмос (со слов Игоря Даляева) пока приостановил реализацию проекта, который находится в завершающей стадии изготовления опытного образца.
+При создании первого робота исследователи долго собирали информацию: какими функциями прототип должен обладать, какими сенсорами, как должен двигаться — на все эти вопросы надо было дать ответ. После анализа внешней поверхности МКС пришли к выводу, что робот должен перемещаться методом шагания, при этом по траектории, отличной от той, по которой двигается космонавт. Человек и его помощник не должны мешать друг другу в открытом космосе.
+
+
+
+Фото: Алексей Рожнов 
+У косморобота должна быть модульная конструкция, чтобы можно было легко заменить вышедшие из строя механизмы, а его «питание» запланировано от специального блока аккумуляторных батарей — кстати, это отличает его от американских и канадских аналогов.. Для выполнения захватов и прочих операций его надо снабдить технологическими манипуляторами и набором сменных инструментов. Таким образом, он сможет выполнить часть рутинных дел космонавтов и тем самым обезопасить человека от лишних выходов в открытый космос. Правда, специалистам на МКС это может не очень понравиться: им же наверняка хочется как можно чаще бывать за пределами станции.
+Косморобот может сам перемещаться, и для этого ему необходима только связь, с которой в космосе могут возникнуть большие проблемы. Для того, чтобы робот мог вернуться в точку, где последний раз был уверенный сигнал связи, у него должен быть блок управления. Внутри станции будет находиться внутренний пульт, с помощью которого специалисты могут контролировать действия машины.
+Заканчивая свое выступление, лектор отметил, что на орбите Земли скопилось много космического мусора, поэтому надо проектировать таких роботов, которые никогда не выйдут из-под контроля и не пополнят мусорную орбиту планеты. А также искать возможности «почистить» околоземное пространство.
+Вывод:  Космороботы — помощники, которые позволят продолжить изучение космоса.    
+Лектор: Мария Чакчурина, участница проекта «Беспилотный автомобиль StarLine»
+
+
+
+ Фото: Алексей Рожнов 
+Тема: «Маршрут построен: будущее автономного транспорта».  
+Основная мысль: беспилотные автомобили активно развиваются, но пока население не готово видеть их на дорогах в качестве полноправных участников движения.
+Беспилотные автомобили, по мнению ученых, в будущем позволят населению планеты экономить время, а также сохранят жизни многих людей. Развитие такого транспорта изменит всю инфраструктуру крупных городов. Однако пока широкая общественность с опаской смотрит на автороботов. Основные страхи: сенсоры могут выйти из строя или возникнет ошибка в софте — и процесс вождения перестанет быть управляемым.
+Но все-таки беспилотники намного безопаснее, считают ученые, и вот почему. Во-первых, в автоматически управляемой машине собрано больше данных о пути следования, поэтому она лучше ориентируется на местности. Внутри есть сверхточная GPS-навигация, которая определяет размеры автомобиля с точностью до сантиметра. Там, где спутников недостаточно, — например, на парковке, — габариты автомобиля и окружающих предметов выявит одометр. Лидары — датчики, которые создают карту глубины окружающего пространства, — дают хорошее представление о препятствиях. Радары и камеры предоставят множество информации о пространстве вокруг автомобиля. HD-карты собирают данные о разметке и дорожных знаках. Все эти устройства позволяют видеть дорогу на 360 градусов.
+Во-вторых, в специальных школах автопилотов специалисты отрабатывают алгоритмы поведения для всех ситуаций, которые теоретически могут возникнуть на пути беспилотника. В-третьих, роботы-водители лучше управляют автомобилем, чем человек, ведь им неведомы сон, страх, усталость. Сегодня беспилотники — это не просто возможность, а необходимость. 
+
+
+
+
+
+
+
+
+
+
+Баттл ученых: как технологии меняют нашу жизнь?
+
+Но что будет, если, например, во время кибератаки угонят автомобиль с человеком внутри? Как отметила спикер, это сделать очень трудно, так как такое преступление требует большой подготовки. Кроме того, на автомобильных заводах, где разрабатывают беспилотники, программисты постоянно устраняют уязвимости, отлаживая все системы и алгоритмы.
+С развитием индустрии беспилотников произойдут изменения в транспортной инфраструктуре больших городов. Когда вы паркуете беспилотную машину, вам не нужно оставлять место, чтобы открывать двери. Беспилотники также могут переставлять друг друга  (чтобы один из них мог выехать) и разными другими способами экономить парковочное пространство. 
+Тестирование беспилотников уже ведется в нашей стране. В октябре 2018 года тестовый автомобиль проехал 2,5 тысячи километров из Петербурга в Казань, путь занял 10 дней. Этот беспилотник имеет третий уровень автономности, то есть машина может сама ехать по заданному маршруту, но за рулем постоянно должен находиться водитель, готовый перехватить управление в сложной ситуации. А в 2020 году беспилотный автомобиль на базе Skoda Superb будут тестировать в центральных районах Петербурга, в частности на Невском и Литейном проспектах, а также в Купчино, в районе Черной речки, на Васильевском острове и на скоростных магистралях — ЗСД и КАД.  
+Вывод: беспилотные автомобили в ближайшие годы станут неотъемлемой частью городской среды. 
+
+
+
+Победителем Science Slam стала Мария Чакчурина, рассказавшая о беспилотниках. Именно ей больше всего аплодировали присутствующие на мероприятии. Наградой для Марии стали настоящие боксерские перчатки — символ победы в научном поединке.
+
+Материал подготовлен в партнерстве с компанией ПАО «Газпром нефть»
+
+
+
+",ru,"
+
+
+
+
+
+
+
+
+
+
+
+Battle of scientists: how technology is changing our lives?
+Space robots and cyborgs, unmanned vehicles and genome editing - what technologies are already being created in our country? What developments must be used with great care and how can technical progress be dangerous? Fontanka visited the Science Slam lecture hall in St. Petersburg and listened to learned stand-up scientists.
+
+07 Nov 2019, 07:30
+
+
+
+Science Slam winner Maria Chakchurina, photo: Alexey Rozhnov
+
+
+What is a science slam?
+
+This is an international project that is actively developing in Russia. Young scientists tell from the stage about the main scientific ideas and their own research. In 10 minutes, the slamer should have time to interestingly and witty tell the general public about his achievements. The winner is chosen by the guests themselves - how much they sympathize with each speaker, measure with a special sound level meter.
+This is not the first time Science Slam has been held in St. Petersburg; this year it was held on Halloween in the KOD space on the territory of the former Arsenal plant. According to the idea of the organizers - the Petersburg edition of the Paper and Gazprom Neft - such informal meetings should dispel stereotypes about scientists and make science closer and more understandable to ordinary people.
+
+
+
+
+
+
+
+
+
+
+
+
+
+Battle of scientists: how technology is changing our lives?
+
+At Science Slam in St. Petersburg on October 31, six young scientists spoke. The theme of the event is “Technologies and their reverse side”. The speakers not only talked about their achievements, but also touched upon a number of ethical issues that concern generation Z. If you were unable to attend the event, we prepared a short lecture summary.
+Lecturer: Dmitry Perets, Data Scientist, Gazprom Neft Research and Technology Center
+
+
+
+Photo: Alexey Rozhnov
+
+Topic: “Artificial Intelligence: Progress and Side Effects”
+
+The main idea: Artificial intelligence allows you to find cancer in humans and the ""diseased"" oil well.
+The idea of creating artificial intelligence (AI) or its likeness is in the air a long time ago. Examples of technological assistants for humans can be found in films and literature, starting with the Prague golems or the creation of Frankenstein. Each of us at least once thought about sending a robot to our office instead. The prospects for AI are quite bright - after all, even a highly skilled expert is inclined to rely on his experience, and this does not always benefit the case. But artificial intelligence without humans, too, can not cope.
+Example 1. The neural network created a fake quote. Dmitry Perets invited guests to guess which of the three statements was invented.
+
+
+
+Those present in the hall mistakenly attributed the quote to the American president. In fact, its author is the neural network, which was created and trained on publications on Twitter by Google in 2015.
+Example 2. AI tightly enters our lives. We encounter machine learning algorithms every day when we are offered the right movie to watch on the Internet or the lowest prices for a taxi ride. Neural networks are very useful in medicine: they help detect cancer [you can read more about this in the article “Science in Bars: How will Neural Networks Treat Us?” - Ed.] The same mathematical approaches that help AI using MRI images to predict the risk of oncology, in the oil industry managed to apply to identify a ""diseased well."" For example, if instead of oil, water begins to flow into it.
+The proportion of wells that are prone to ""disease"" is small - about 1.2%. For an engineer, this is the same as looking for a needle in a haystack - moreover, by indirect signs. A neural network quickly processes the data and issues its forecast. The machine learning model with an accuracy of 81% reports whether there is a ""disease"" in the well or not. But at the same time, she often ascribes a “malaise” to healthy wells and in 14 out of 100 potentially “patients” she gives a false-positive result. That is, it says that there is water, but in fact it does not.
+
+
+
+Photo: Alexey Rozhnov
+What will happen if you trust such a program? Specialists will treat healthy people or spend time and resources on unnecessary well repairs. Thus, Dmitry Perets concludes: artificial intelligence at this stage is just a “smart” person’s assistant, but in no case can it be replaced. When receiving recommendations and calculations of a machine, an expert may not be distracted by routine calculations, but rather concentrate on the most important and check the forecasts of the algorithms. The final decision is ours - to treat or not to treat?
+Example 3. If you entrust the AI to select the ideal candidate for the role of leader, then in practice, most likely, we will get a list of only males. The reason for this is simple: historically, it used to be that men used to occupy leading positions for the most part, more statistics were collected on them - and the machine will give preference to them. But if you look at recent years, it’s obvious: women are increasingly becoming successful leaders in business and government.
+Conclusion: AI will not replace humans, but machine learning can be an excellent assistant for us in making informed and correct decisions based on the analysis of large data arrays. So far, smart cars are not ready to make decisions and change our world.
+Lecturer: Larisa Mararitsa, Candidate of Psychological Sciences, Lecturer at St. Petersburg State University, HSE Internet Research Lab
+
+
+
+
+Photo: Alexey Rozhnov
+
+
+Topic: “Social Handwriting: Digital Data and Computational Psychology.”
+
+The main idea: The digital footprint that we leave on the Internet will allow scientists to learn a lot about us.
+Machine learning and big data help psychologists study people's behavior. The science of “social psychology” has existed for more than 100 years, and now with the help of modern technology, it can follow its digital footprint that a person leaves on the Internet — posts on social networks, purchases and orders on the Internet, and visited sites — to more accurately study its behavior.
+
+
+
+
+Photo: Alexey Rozhnov
+
+With the help of such studies, psychologists and sociologists can quickly and fully explain the behavior of individuals and / or groups of people and predict future changes. And also to study in what connections these people are. Social handwriting is a pattern of a person’s attention to friends and acquaintances. Scientists say that the distribution of this attention is stable, even if a person’s contacts change, old friends leave and new friends come. In practice, according to the social handwriting of a person, for example, one can predict when a person will quit his job. Thinking about dismissal, a person intuitively begins to communicate less with colleagues in messengers or in the mail, and he has new contacts. There are already startups that, based on analytics, offer effective HR solutions in companies. Or another example: by posts on social networks it is already possible to understand that a person is depressed and, accordingly, cannot be a good employee.
+
+
+
+
+Photo: Alexey Rozhnov
+
+Sociology, psychology, political science will never be the same, because they have real objective big data. So, if earlier the usual methods of interviewing or questioning the population took considerable time and were nevertheless subjective (the person being interviewed was obviously not frank, and the interviewer contributed a fraction of the personal attitude in interpreting the answers), now thanks to great data this information has become really objective. Also, quite quickly you can study the behavior of not 100 - 200 people, but hundreds of thousands - in the same time. All this is called ""computational psychology.""
+But there is another side to the issue - ethical. A digital footprint is confidential information about a person, and researchers argue: where is the boundary between when the person himself decided to publish information about himself (for example, photos on social networks) and when the information about him can become the subject of research.
+Conclusion: Computational psychology allows you to talk about the behavior of a person or group of people in detail: actions, interests, hobbies.
+Lecturer: Andrei Afanasyev, bioinformatics, graduate of the postgraduate study at the Physics Department of Moscow State University, CEO of the genetic laboratory
+
+
+
+Photo: Alexey Rozhnov
+
+Subject: ""An elephant in a china shop: the danger of editing the genome.""
+
+Main idea: Technological progress can help people with severe hereditary diseases, but still no answers to questions from the field of ethics have been found.
+Mankind has long been trying to study and correct genetic errors. How to help people with hereditary diseases? We store information transmitted to us by millions of ancestors, and sometimes people with genome errors look very attractive. For example, Angelina Jolie is a carrier of a combination of genes that can cause breast cancer, but this did not stop her from building a good career and having children. But David Vetter - a boy suffering from a rare genetic disease, severe combined immunodeficiency [the world learned about its history from the Hollywood movie Bubble Boy - ""The guy from the bubble."" - Ed.], - less fortunate. All his life he had to live in a plastic bubble created especially for him, since any contact with the outside worlds was destructive for him. David died during a transplant.
+
+
+
+
+Photo: Alexey Rozhnov
+
+Afanasyev notes that scientists in the XX and XXI centuries are actively working on editing the human genome. As part of gene therapy, in the late 1980s and 90s, many operations were performed, but after the death of the patient Jesse Jelsinger in 1999, such experiments stopped for a long time.
+Today, scientists continue to study this process, and there are already significant achievements in this area. So, last year, Chinese researcher He Jiankui said that he had edited the genomes of human embryos - and two girls with altered DNA were born. They were conceived from a healthy mother and an HIV-infected father, but due to the fact that He Jianqui removed the CCR5 gene from children, they received a lifelong immunity to HIV. Russian scientist Denis Rebrikov said that he could repeat the experience of a colleague from China, but, according to Afanasyev, the Russian Ministry of Health banned him frommake such experiments.
+
+
+
+
+Photo: Alexey Rozhnov
+
+But progress in this area also has a downside - ethical. Afanasyev from the Science Slam scene asked rhetorical questions to the public: can we consider the technology of genome editing safe, as long as we do not have accurate data on the possible consequences? What is the impact on the hereditary structure of children's health? Who is responsible for possible errors during the research?
+The audience thought about it.
+Conclusion: editing the genome is still a poorly understood process, and what results can lead to medical errors is difficult to predict. “And if we start playing with something that we don’t understand much, then humanity will give birth to a monster,” Afanasyev is sure.
+Lecturer: Yuri Baulin, Leading Engineer, IEFB RAS Sechenova (Institute of Evolutionary Physiology and Biochemistry, graduate student of NRU ITMO
+
+
+
+Photo: Alexey Rozhnov
+
+Theme: “Biobots: Cyborg insects in the service of humans.”
+
+The main idea: In the future, microrobots will become an integral part of our life. But is it safe for civilization?
+Humanity is actively creating for itself assistants - robots. A hundred years ago, human labor was predominantly manual, but technological progress has allowed the creation of many automated smart machines. During their creation, mankind borrowed a lot from nature, and with the development of technology, robots become smaller. Based on these two trends, Yuri Baulin introduced the concept of an insect robot.
+
+
+
+
+Photo: Alexey Rozhnov
+
+An engineer is studying the behavior of cyborgs: these are insects whose behavior can be controlled. Madagascar cockroaches became his subjects, and the method of commanding them is based not on psychological training, but on exposure to sensory systems. Since cockroaches run away from stimuli, their movement is changed using stimuli - for example, electric shocks. This effect reproduces either a virtual obstacle that cockroaches bend around, or a danger signal from which they run away. Also, during the experiments, baits are used: insects smell the food per kilometer and are ready to approach it. Ideally, this technology should lead to the creation of virtual reality for the individual.
+
+
+
+
+Photo: Alexey Rozhnov
+
+Baulin said that in the future he was going to study the behavior of insects, making them “digital addicts”: to force the cockroach's pleasure centers to give the body a powerful signal and direct the individual in the right direction.
+Conclusion: If humanity can study the behavior of insects and act on it, and then apply this knowledge in robotics, then we will be surrounded by millions of tiny robots. “What will they bring on their backs - ampoules with poison, surveillance systems or medical equipment? - wonders Baulin. “I don't know, I'm just developing the technology.” And what it will be - people decide. ”
+Lecturer: Igor Dalyaev, Ph.D., leading researcher at the Central Research Institute of Robotics and Technical Cybernetics
+
+
+
+
+Photo: Alexey Rozhnov
+
+Theme: ""Extreme space: why space robots are needed.""
+Main idea: Robots will help astronauts in orbit to conduct various studies.
+Back in 1957, after the launch of the first artificial Earth satellite, the stage of space exploration began, which continues to this day. Now people of science are actively using near-Earth space. In the foreseeable future, people will do this in close conjunction with robots.
+Space exploration will allow us to protect the Earth from cosmic bodies that regularly approach the planet. And satellite communications and weather forecasts - technologies that have emerged from the study of space - have a huge impact on the life of earthlings.
+
+
+
+
+Photo: Alexey Rozhnov
+
+The development of space robots has been going on for a long time: scientists want to create an assistant who will transfer instruments and equipment to the place of the experiment, perform some routine measurements and manipulations in outer space - and thereby help astronauts in carrying out various studies.
+The Petersburg Central Research Institute of RTK was developing a space shuttle for the ISS Russian segment. Looking ahead, let's say that Roscosmos (according to Igor Dalyaev) has so far suspended the implementation of the project, which is in the final stages of manufacturing a prototype.
+When creating the first robot, researchers collected information for a long time: what functions a prototype should have, what sensors, how it should move - all these questions had to be answered. After analyzing the outer surface of the ISS, they came to the conclusion that the robot should move using the walking method, while along a path different from that along which the astronaut is moving. Man and his assistant should not interfere with each other in outer space.
+
+
+
+Photo: Alexey Rozhnov
+The spacecraft must have a modular design so that it is possible to easily replace failed mechanisms, and its “power” is planned from a special battery pack - by the way, this distinguishes it from its American and Canadian counterparts. For capturing and other operations, it must be equipped technological manipulators and a set of interchangeable tools. Thus, he will be able to carry out part of the routine work of astronauts and thereby protect a person from unnecessary spacewalks. True, the ISS specialists may not like this very much: they certainly would like to be outside the station as often as possible.
+A space robot can move itself, and for this it needs only a connection with which big problems can arise in space. In order for the robot to return to the point where the last time there was a reliable communication signal, it must have a control unit. Inside the station there will be an internal remote control, with which experts can control the actions of the machine.
+Concluding his presentation, the lecturer noted that a lot of space debris had accumulated in the Earth’s orbit, so it is necessary to design robots that will never get out of control and will not replenish the planet’s trash orbit. And also look for opportunities to ""clean"" the near-Earth space.
+Conclusion: Space robots are helpers who will continue to study space.
+Lecturer: Maria Chakchurina, participant in the StarLine Unmanned Vehicle project
+
+
+
+Photo: Alexey Rozhnov
+Topic: “The route is built: the future of autonomous transport.”
+The main idea: unmanned vehicles are actively developing, but so far the population is not ready to see them on the roads as full participants in the movement.
+Unmanned vehicles, according to scientists, in the future will allow the population of the planet to save time, and also save the lives of many people. The development of such transport will change the entire infrastructure of large cities. However, while the general public is cautiously looking at autobots. The main fears: sensors may fail or a software error will occur - and the driving process will cease to be controlled.
+But still drones are much safer, scientists say, and that's why. Firstly, in an automatically controlled car more data is collected on the route, so it is better oriented on the ground. Inside there is an ultra-precise GPS navigation, which determines the size of the car with an accuracy of a centimeter. Where there are not enough satellites - for example, in a parking lot - the dimensions of the car and surrounding objects will be detected by the odometer. Lidars - sensors that create a map of the depth of the surrounding space - give a good idea of the obstacles. Radars and cameras will provide a lot of information about the space around the car. HD maps collect markup and road sign data. All these devices allow you to see the road 360 degrees.
+Secondly, in special autopilot schools, specialists work out behavioral algorithms for all situations that could theoretically arise in the way of a drone. Thirdly, robotic drivers drive a car better than a person, because they don’t know sleep, fear, fatigue. Today, drones are not just an opportunity, but a necessity.
+
+
+
+
+
+
+
+
+
+
+Battle of scientists: how technology is changing our lives?
+
+But what happens if, for example, during a cyberattack a car is stolen with a person inside? As the speaker noted, this is very difficult to do, since such a crime requires a lot of preparation. In addition, in automobile factories where drones are being developed, programmers are constantly eliminating vulnerabilities by debugging all systems and algorithms.
+With the development of the drone industry, changes will occur in the transport infrastructure of large cities. When you park an unmanned vehicle, you do not need to leave space to open the doors. UAVs can also rearrange each other (so that one of them can leave) and save parking space in various other ways.
+Drone testing is already underway in our country. In October 2018, a test car drove 2.5 thousand kilometers from St. Petersburg to Kazan, the journey took 10 days. This drone has a third level of autonomy, that is, the car itself can go along a given route, but the driver must always be at the wheel, ready to take control in a difficult situation. And in 2020, an unmanned vehicle based on the Skoda Superb will be tested in the central regions of St. Petersburg, in particular, on Nevsky and Liteiny Prospects, as well as in Kupchino, in the area of the Black River, on Vasilyevsky Island and on highways - WHSD and KAD.
+Conclusion: unmanned vehicles in the coming years will become an integral part of the urban environment.
+
+
+
+The winner of Science Slam was Maria Chakchurina, who spoke about drones. It was she who was most applauded by those present at the event. The reward for Maria was real boxing gloves - a symbol of victory in a scientific duel.
+
+Material prepared in partnership with Gazprom Neft PJSC
+
+
+
+"

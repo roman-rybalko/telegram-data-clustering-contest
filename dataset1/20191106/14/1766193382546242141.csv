@@ -1,0 +1,48 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+8chan-Nachfolger: Zwischenzeitliche Rückkehr dank zwielichtiger IP-Aneignung
+Nur dank eines zwielichtigen russischen Hosting-Anbieters war das 8chan-Nachfolgeforum vorübergehend wieder online. Und dann hatten die Betreiber noch Glück.
+06 Nov 2019, 14:54 by Martin Holland
+Der Nachfolger des berüchtigten Onlineforums 8chan ist zwar schon nicht mehr im Internet erreichbar, inzwischen wird aber deutlicher, mit welch zweifelhaften Methoden die zwischenzeitliche Rückkehr vor wenigen Tagen überhaupt möglich gemacht wurde. Als 8kun hatten die Betreiber von 8chan das Imageboard am Wochenende wieder ins Netz gestellt, sonst aber nicht viel geändert. Dafür setzten sie offenbar nicht nur auf einen russischen Hosting-Anbieter, der illegal nicht zugewiesene IP-Adressen nutzt. Sie konnten wohl außerdem die 8chan-Server aus Kalifornien zu einem neuen Standort umziehen und damit einer möglichen Konfiszierung zuvorkommen.
+Nachdem mehrere rechtsextreme Terroristen auf 8chan Attentate angekündigt hatten und von anonymen Nutzern dafür Zuspruch bekommen hatten, war das Forum im August offline gegangen. Der US-Konzern Cloudflare hatte seine Verträge mit den Betreibern gekündigt und dem Forum damit den DDoS-Schutz entzogen. Die Seite war dann im Internet nicht mehr erreichbar, auch nicht während der Attentäter von Halle sich wohl darauf bezog. Die 8chan-Betreiber hatten derweil nicht aufgegeben und das Forum unter neuem Namen und unter Zuhilfenahme anderer Dienstleister wieder ins Internet – eine Variante gibt es auch im Darknet – gestellt. Nutzbar war es wegen der langen Ladezeiten aber nicht.
+Zweifelhafter Weg zurück ins Internet
+Wie ArsTechnica nun aufgearbeitet hat, war 8kun dabei unter der IP-Adresse 185.254.121.200 im Internet erreichbar, bei der es sich um einen sogenannten Bogon handelt. Dabei handelt es sich um nicht zugewiesene und damit eigentlich nicht aktive Netzbereiche. Der Adressbereich 185/8 wird von der RIPE verwaltet, 185.254.121.0/24 ist dabei aber gegenwärtig niemandem zugeteilt. Solche IP-Adressen werden zwar oft von Providern blockiert, ansonsten kann Traffic dahin aber von zwielichtigen Anbietern in der auf Vertrauen basierenden Infrastruktur regelwidrig auf eigene Dienste umgeleitet werden. Genau das bietet demnach der russische Hoster Media Land LLC an, auf den 8chan setzte. Damit nutzten sie einen Anbieter, auf den auch schon die Macher von Malware wie dem Zeus-Trojaner zurückgriffen, wie der Sicherheitsforscher Brian Krebs erklärt hat.
+Die Investigativseite Bellingcat wiederum macht noch einen ganz anderen Aspekt öffentlich. Demnach ist es dem 8chan-Gründer Fredrick Brennan in den vergangenen Monaten angeblich fast gelungen, sein Ziel zu erreichen und das Forum komplett zu stoppen. Brennan erklärt dort, dass er herausgefunden hat, dass die physischen Server von 8chan durch eine Firma in Kalifornien ans Netz angeschlossen waren. Die hätte aber wohl wegen Steuerunregelmäßigkeiten gar keine Geschäfte mehr in dem US-Bundesstaat machen können. Brennan hatte demnach eine Parlamentsabgeordnete darauf aufmerksam gemacht und der Hinweis an den zuständigen Minister sei schon fertig gewesen.
+Die Abgeordnete habe den dann aber nicht abgeschickt, nach Angaben ihres Mitarbeiters aus Angst vor Swatting. So werden falsche und missbräuchliche Notrufe genannt, mit denen schwer bewaffnete Polizisten unter falschen Angaben zu Adressen missliebiger Personen gelotst werden, wo es dann zu blutigen Situationen kommen kann. Diese Taktik wurde auch schon von 8chan-Nutzern angewandt. Wahrscheinlich ohne von diesem Vorhaben zu wissen, hatten die Betreiber von 8chan zu der Zeit aber einen physischen Umzug angestoßen und die Server an einen unbekannten Ort verlegt. Zumindest aktuell hilft ihnen das aber nichts, die Seite ist im Internet nicht mehr erreichbar. (mho)
+
+
+",de,"
+
+
+
+
+
+
+
+
+
+
+
+8chan-successor: intermediate return thanks to dubious IP appropriation
+Only thanks to a dodgy Russian hosting provider was the 8chan follow-up forum temporarily online again. And then the operators were lucky.
+06 Nov 2019, 14:54 by Martin Holland
+The successor of the infamous online forum 8chan is no longer accessible on the Internet, but now it is clearer, with what dubious methods the interim return was made a few days ago possible. As 8kun the operators of 8chan had put the imageboard on the weekend back on the net, but not much changed. For this they obviously did not only rely on a Russian hosting provider that uses illegally assigned IP addresses. They could also move the 8chan server from California to a new location and anticipate possible confiscation.
+After several right-wing terrorists had announced on 8chan attacks and had received an encouragement from anonymous users, the forum went offline in August. The US company Cloudflare had terminated its contracts with the operators and thus deprived the Forum of DDoS protection. The site was then no longer available on the Internet, even during the assassin of Halle probably referred to it. The 8chan operators had meanwhile not given up and the Forum under a new name and with the help of other service providers back on the Internet - a variant is also in the Darknet - asked. It was usable because of the long loading times but not.
+Doubtful way back to the internet
+As ArsTechnica has now worked up, 8kun was reachable on the Internet under the IP address 185.254.121.200, which is a so-called Bogon. These are unassigned and therefore not active network areas. The address range 185/8 is managed by the RIPE, but 185.254.121.0/24 is currently not assigned to anyone. Although such IP addresses are often blocked by providers, otherwise traffic can be routed by dodgy providers in the trust-based infrastructure foul on their own services. That's exactly what the Russian hoster Media Land LLC offers, which 8chan bet on. They used a provider that was already used by makers of malware such as the Zeus Trojan, as security researcher Brian Krebs explained.
+The Investigativseite Bellingcat in turn makes a very different aspect public. According to this, 8chan founder Fredrick Brennan has reportedly almost succeeded in the past months in achieving his goal and completely stopping the forum. Brennan explains that he has discovered that 8chan's physical servers were connected to the grid by a California company. But that would probably have done because of tax irregularities no more business in the US state. Brennan had accordingly made a Member of Parliament aware of this and the reference to the responsible minister had already been completed.
+The MP did not send it then, according to her coworker for fear of swatting. This is called false and abusive emergency calls, with which heavily armed police officers are misled under false information to addresses of unpopular persons, where it can then come to bloody situations. This tactic has also been used by 8chan users. Probably without realizing this, 8chan's operators had initiated a physical move and relocated the servers to an unknown location. At least for the time being, this does not help them, the site is no longer accessible on the internet. (Mho)
+
+
+"

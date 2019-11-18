@@ -1,0 +1,72 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Лаборатория Касперского идентифицировала таинственную хакерскую группу
+06 Nov 2019, 08:18 by Олег Иванов
+
+
+
+Все помнят, как в 2017 году хакерская группа Shadow Brokers опубликовала данные, принадлежащие Агентству национальной безопасности (АНБ) США. В одном из слитых файлов упоминались таинственные правительственные группировки (APT), о происхождении которых ничего не было известно. Теперь специалисты «Лаборатории Касперского» идентифицировали одну из этих хакерских групп.
+Среди слитых Shadow Brokers данных был файл sigs.py, который работал как встроенный антивирусный сканер. С его помощью АНБ проверяло компьютеры на наличие вредоносных программ и присутствие других киберпреступных групп.
+Скрипт sigs.py включал сигнатуры для детектирования 44 правительственных хакерских группировок, многие из которых были неизвестны сообществу специалистов в области кибербезопасности.
+Однако команде «Лаборатории Касперского» GReAT удалось идентифицировать одну из таинственных APT-групп, которая в sigs.py проходила под сигнатурой #27.
+
+
+
+По словам «Лаборатории Касперского», эта сигнатура вывела исследователей на файлы, принадлежащие группе «DarkUniverse». Эксперты считают, что DarkUniverse вела свою деятельность в период с 2009 по 2017 год.
+После утечки, организованной Shadow Brokers, группировка неожиданно затихла.
+«Прекращение деятельности этой APT-группы может быть следствием публикации данных под названием ""Lost in Translation"". Вторая возможная причина — атакующие просто решили переключиться на другие инструменты», — пишут специалисты «Лаборатории Касперского».
+
+Читайте также
+
+
+
+
+
+
+",ru,"
+
+
+
+
+
+
+
+
+
+
+
+Kaspersky Lab Identifies Mysterious Hacker Group
+06 Nov 2019, 08:18 by Oleg Ivanov
+
+
+
+Everyone remembers how in 2017, the hacker group Shadow Brokers released data belonging to the US National Security Agency (NSA). In one of the merged files, mysterious government groups (APTs) were mentioned, the origin of which was not known. Now, Kaspersky Lab experts have identified one of these hacker groups.
+Among the data Shadow Brokers merged was a sigs.py file that worked as a built-in antivirus scanner. With it, the NSA checked computers for malware and the presence of other cybercriminal groups.
+The sigs.py script included signatures to detect 44 government hacker groups, many of which were unknown to the cybersecurity community.
+However, the Kaspersky Lab team GReAT was able to identify one of the mysterious APT groups, which in sigs.py passed under signature # 27.
+
+
+
+According to Kaspersky Lab, this signature led researchers to files belonging to the DarkUniverse group. Experts believe that DarkUniverse conducted its activities from 2009 to 2017.
+After the leak, organized by Shadow Brokers, the group suddenly subsided.
+“The cessation of the activities of this APT group may be due to the publication of data under the name"" Lost in Translation "". The second possible reason is that the attackers simply decided to switch to other tools, ”Kaspersky Lab experts write.
+
+Read also
+
+
+
+
+
+
+"

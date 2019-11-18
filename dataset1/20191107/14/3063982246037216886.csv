@@ -1,0 +1,476 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+AMD nennt konkrete Termine für Ryzen 3950X und Threadripper
+Im November wird AMD gleich vier neue Prozessoren vorstellen: Den Anfang macht der Athlon 3000G als Dualcore, es folgen der 16-kernige Ryzen 9 3950X und zwei Threadripper-Modelle mit 24 Kernen und 32 Kernen.
+07 Nov 2019, 14:29 by Marc Sauter
+Die nächsten Wochen werden CPU-lastig, denn AMD und Intel bringen allerhand Chips in den Handel: Am 19. November, startet der Athlon 3000G als Dualcore-Einsteigerlösung mit integrierter Grafik. Am 25. November veröffentlicht AMD den Threadripper 3960X und den Threadripper 3970X, hier gibt es 24 Kerne und 32 Kerne für einen neuen Sockel, den sogenannten TR4+. Hinzu kommt der Ryzen 9 3950X als 16-kerniges Topmodell für den Sockel AM4, er folgt auf den Ryzen 9 3900X (Test).
+Zum Ryzen 9 3950X gibt es an dieser Stelle wenig zu sagen, er wurde von AMD mitsamt allen Spezifikationen bereits vorgestellt. Er hat 16 Kerne auf Basis der Zen-2-Architektur und taktet diese mit bis zu 4,7 GHz. Wir gehen davon aus, dass bis zum Release alle Partner eine auf Agesa 1004b basierende Firmware für ihre AM4-Platine anbieten, welche die hohen Frequenzen besser zur Geltung kommen lassen soll. Auch der Athlon 3000G ist so gesehen nicht neu: Er entspricht einem etwas schnelleren Athlon 200GE (Test), er wird wie alle Raven Ridge mit 14 nm gefertigt.
+Spannend wird es bei den Threadripper v3 alias Castle Peak: Dort gibt es vorerst weiterhin bis zu 32 Kerne, jedoch mit drastisch höheren Frequenzen dank 7-nm-Cores. Weil obendrein die thermische Verlustleistung von 250 Watt auf 280 Watt steigt, dürften die Geschwindigkeitszuwächse bei über 50 Prozent zu den Vorgängern wie dem Threadripper 2990WX (Test) liegen. Hinzu kommt, dass das neue Chiplet-Design mit nur einem I/O-Die unter Windows 10 besser funktioniert als der 4-Chip-Aufbau der bisherigen Threadripper-Modelle. Intels Cascade Lake X mit bis zu 18 Kernen können einzig über den Preis konkurrieren, weshalb selbst der Core i9-10980XE für knapp 1.000 US-Dollar angeboten wird.
+
+
+
+Ryzen 9 3950X (Bild: AMD)
+
+
+
+Ryzen 9 3950X (Bild: AMD)
+
+
+
+Athlon 3000G (Bild: AMD)
+
+
+
+Athlon 3000G (Bild: AMD)
+
+
+
+Athlon 3000G (Bild: AMD)
+
+
+
+Threadripper v3 (Bild: AMD)
+
+
+
+Threadripper v3 (Bild: AMD)
+
+
+
+Threadripper v3 (Bild: AMD)
+
+
+
+Threadripper v3 (Bild: AMD)
+
+
+Für die Threadripper v3 führt AMD allerdings den Sockel TR4+ (sTRX4) alias SP3r3 ein: Der TRX40-Chipsatz ist hier mit acht PCIe-Gen4-Lanes mit der CPU verbunden, beim X399 sind es nur vier PCIe-Gen3-Lanes, also ein Viertel der Bandbreite. Die Threadripper v3 laufen daher nicht in einem älteren Board mit Sockel TR4, dafür dürfte die neue Plattform auch 64-kernige Prozessoren wie den Threadripper 3990X aufnehmen. Der TRX40-Chipsatz ähnelt dem X570-Chipsatz für Sockel AM4, hat also ebenfalls 16 PCIe-Gen4-Lanes integriert. Ein Teil davon kann in bis zu acht Sata-6-GBit/s-Ports umgewandelt werden, regulär gibt es vier davon. Hinzu kommen acht USB-3.2-Gen2- und vier USB-2.0-Anschlüsse.
+
+
+
+Kerne
+L3$
+Takt
+iGPU
+Speicher
+cTDP
+Launch-Preis
+
+
+Ryzen 5 3400G
+4 + SMT
+4 MByte
+3,7 bis 4,2 GHz
+Vega 11 @ 1,4 GHz
+DDR4-2933
+65W (45W)
+150 USD (160 Euro)
+
+
+Ryzen 3 3200G
+4
+4 MByte
+3,6 bis 4,0 GHz
+Vega 8 @ 1,25 GHz
+DDR4-2933
+65W (45W)
+100 USD (110 Euro)
+
+
+Athlon 3000G*
+2 + SMT
+4 MByte
+3,5 GHz
+Vega 3 @ 1,2 GHz
+DDR4-2667
+35W
+50 USD (?)
+
+
+Spezifikationen von AMDs Ryzen 3000G (Picasso) *14 nm Raven Ridge
+
+
+
+Kerne
+Takt
+L3$
+Speicher
+TDP
+Launch-Preis
+
+
+Threadripper 3990X
+64 + SMT
+(?)
+256 MByte
+DDR4-3200
+(?)
+(?)
+
+
+Threadripper 3980X
+48 + SMT
+(?)
+256 MByte
+DDR4-3200
+(?)
+(?)
+
+
+Threadripper 3970X
+32 + SMT
+3,7 GHz bis 4,5 GHz
+128 MByte
+DDR4-3200
+280W
+2.000 USD
+
+
+Threadripper 3960X
+24 + SMT
+3,8 GHz bis 4,5 GHz
+128 MByte
+DDR4-3200
+280W
+1.400 USD
+
+
+Spezifikationen von AMDs Threadripper 3000 (Castle Peak) *vorläufig
+
+
+
+Kerne
+Takt
+L3$
+Speicher
+cTDP
+Launch-Preis
+
+
+Ryzen 9 3950X
+16 + SMT
+3,5 GHz bis 4,7 GHz
+64 MByte
+DDR4-3200
+105W (65W)
+750 USD
+
+
+Ryzen 9 3900X
+12 + SMT
+3,8 GHz bis 4,6 GHz
+64 MByte
+DDR4-3200
+105W (65W)
+500 USD (530 Euro)
+
+
+Ryzen 9 3900
+12 + SMT
+3,1 GHz bis 4,3 GHz
+64 MByte
+DDR4-3200
+65W (45W)
+OEM
+
+
+Ryzen 7 3800X
+8 + SMT
+3,9 GHz bis 4,5 GHz
+32 MByte
+DDR4-3200
+105W (65W)
+400 USD (430 Euro)
+
+
+Ryzen 7 3700X
+8 + SMT
+3,6 GHz bis 4,4 GHz
+32 MByte
+DDR4-3200
+65W (45W)
+320 USD (350 Euro)
+
+
+Ryzen 5 3600X
+6 + SMT
+3,8 GHz bis 4,4 GHz
+32 MByte
+DDR4-3200
+95W (65W)
+250 USD (265 Euro)
+
+
+Ryzen 5 3600
+6 + SMT
+3,6 GHz bis 4,2 GHz
+32 MByte
+DDR4-3200
+65W (45W)
+200 USD (210 Euro)
+
+
+Ryzen 5 3500X
+6
+3,6 GHz bis 4,1 GHz
+32 MByte
+DDR4-3200
+65W (45W)
+OEM
+
+
+Spezifikationen von AMDs Ryzen 3000 (Matisse)
+
+
+
+
+
+",de,"
+
+
+
+
+
+
+
+
+
+
+
+AMD names specific dates for Ryzen 3950X and Threadripper
+In November, AMD will introduce four new processors: the Athlon 3000G as a dual core, followed by the 16-core Ryzen 9 3950X and two 24-core and 32-core threadripper models.
+07 Nov 2019, 14:29 by Marc Sauter
+The next few weeks will be CPU-heavy, because AMD and Intel bring a lot of chips in the trade: On November 19, the Athlon 3000G starts as a dual-core entry-level solution with integrated graphics. On November 25, AMD released the thread ripper 3960X and the thread ripper 3970X, here are 24 cores and 32 cores for a new socket, the so-called TR4 +. In addition, the Ryzen 9 3950X comes as a 16-core top model for the base AM4, he follows on the Ryzen 9 3900X (test).
+For the Ryzen 9 3950X there is little to say at this point, it was already presented by AMD with all specifications. It has 16 cores based on the Zen 2 architecture and clocks them at up to 4.7 GHz. We expect all partners to offer Agesa 1004b-based firmware for their AM4 board by the time of release, to better accentuate the high frequencies. Also, the Athlon 3000G is not new in this sense: It corresponds to a slightly faster Athlon 200GE (test), it is made like all Raven Ridge with 14 nm.
+It is exciting in Threadripper v3 alias Castle Peak: There are still up to 32 cores, but with dramatically higher frequencies thanks to 7-nm cores. In addition, because the thermal power loss from 250 watts to 280 watts increases, the speed gains of more than 50 percent should be compared to its predecessors such as the thread ripper 2990WX (test). In addition, the new chiplet design with only one I / O die works better under Windows 10 than the 4-chip design of the previous thread ripper models. Intel's Cascade Lake X with up to 18 cores can only compete on the price, which is why even the Core i9-10980XE is offered for just under $ 1,000.
+
+
+
+Ryzen 9 3950X (Picture: AMD)
+
+
+
+Ryzen 9 3950X (Picture: AMD)
+
+
+
+Athlon 3000G (Picture: AMD)
+
+
+
+Athlon 3000G (Picture: AMD)
+
+
+
+Athlon 3000G (Picture: AMD)
+
+
+
+Thread Ripper v3 (Image: AMD)
+
+
+
+Thread Ripper v3 (Image: AMD)
+
+
+
+Thread Ripper v3 (Image: AMD)
+
+
+
+Thread Ripper v3 (Image: AMD)
+
+
+For the thread ripper v3, however, AMD introduces the socket TR4 + (sTRX4) alias SP3r3: The TRX40 chipset is connected to the CPU with eight PCIe Gen4 lanes, while the X399 is only four PCIe Gen3 lanes, ie a quarter the bandwidth. The Threadripper v3 therefore do not run in an older board with socket TR4, but the new platform should also accommodate 64-core processors such as the Threadripper 3990X. The TRX40 chipset is similar to the X570 chipset for socket AM4, so it also has 16 PCIe Gen4 lanes integrated. Part of it can be converted into up to eight Sata 6 Gb / s ports, four of them are regular. There are also eight USB 3.2 Gen2 and four USB 2.0 ports.
+
+
+
+cores
+L3 $
+clock
+iGPU
+Storage
+CTDP
+Launch price
+
+
+Ryzen 5 3400G
+4 + SMT
+4 MB
+3.7 to 4.2 GHz
+Vega 11 @ 1.4 GHz
+DDR4-2933
+65W (45W)
+150 USD (160 Euro)
+
+
+Ryzen 3 3200G
+4
+4 MB
+3.6 to 4.0 GHz
+Vega 8 @ 1.25 GHz
+DDR4-2933
+65W (45W)
+100 USD (110 Euro)
+
+
+Athlon 3000G *
+2 + SMT
+4 MB
+3.5 GHz
+Vega 3 @ 1.2 GHz
+DDR4-2667
+35W
+50 USD (?)
+
+
+Specifications of AMD's Ryzen 3000G (Picasso) * 14 nm Raven Ridge
+
+
+
+cores
+clock
+L3 $
+Storage
+TDP
+Launch price
+
+
+Thread Ripper 3990X
+64 + SMT
+(?)
+256 MB
+DDR4-3200
+(?)
+(?)
+
+
+Thread Ripper 3980X
+48 + SMT
+(?)
+256 MB
+DDR4-3200
+(?)
+(?)
+
+
+Thread Ripper 3970X
+32 + SMT
+3.7 GHz to 4.5 GHz
+128 MB
+DDR4-3200
+280W
+2,000 USD
+
+
+Thread Ripper 3960X
+24 + SMT
+3.8 GHz to 4.5 GHz
+128 MB
+DDR4-3200
+280W
+1,400 USD
+
+
+Specifications of AMD's Threadripper 3000 (Castle Peak) * preliminary
+
+
+
+cores
+clock
+L3 $
+Storage
+CTDP
+Launch price
+
+
+Ryzen 9 3950X
+16 + SMT
+3.5 GHz to 4.7 GHz
+64 MB
+DDR4-3200
+105W (65W)
+750 USD
+
+
+Ryzen 9 3900X
+12 + SMT
+3.8 GHz to 4.6 GHz
+64 MB
+DDR4-3200
+105W (65W)
+500 USD (530 Euro)
+
+
+Ryzen 9 3900
+12 + SMT
+3.1 GHz to 4.3 GHz
+64 MB
+DDR4-3200
+65W (45W)
+OEM
+
+
+Ryzen 7 3800X
+8 + SMT
+3.9 GHz to 4.5 GHz
+32 MB
+DDR4-3200
+105W (65W)
+400 USD (430 Euro)
+
+
+Ryzen 7 3700X
+8 + SMT
+3.6 GHz to 4.4 GHz
+32 MB
+DDR4-3200
+65W (45W)
+320 USD (350 Euro)
+
+
+Ryzen 5 3600X
+6 + SMT
+3.8 GHz to 4.4 GHz
+32 MB
+DDR4-3200
+95W (65W)
+250 USD (265 Euro)
+
+
+Ryzen 5 3600
+6 + SMT
+3.6 GHz to 4.2 GHz
+32 MB
+DDR4-3200
+65W (45W)
+200 USD (210 Euro)
+
+
+Ryzen 5 3500X
+6
+3.6 GHz to 4.1 GHz
+32 MB
+DDR4-3200
+65W (45W)
+OEM
+
+
+Specifications of AMDs Ryzen 3000 (Matisse)
+
+
+
+
+
+"

@@ -1,0 +1,50 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Microsoft überarbeitet C++ Extension für Visual Studio Code
+Das November-Update bringt zahlreiche Verbesserungen und neue Funktionen für das Refactoring, die Suche nach Symbol-Referenzen und die Lokalisierung.
+05 Nov 2019, 12:57 by Matthias Parbel
+Im Visual Studio Marketplace hat Microsoft das November-Update der C++ Extension für Visual Studio Code zum Download bereitgestellt. In die neue Version sind nicht nur eine Reihe von Fehlerbereinigungen eingeflossen, sondern die Extension bietet auch einige Verbesserungen sowie neue Funktionen. In der Ankündigung des Updates sind unter anderem die Funktion ""Find all References"", das Refactoring-Tool ""Rename Symbol"" sowie die erweiterte Lokalisierung der C++ Extension hervorgehoben.
+Symbol-Referenzen leichter finden
+Die Suche nach Instanzen eines Symbols innerhalb eines Workspace können Entwickler nun einfach über einen Rechtsklick auf das Symbol mit der Funktion ""Find all References"" aus dem Kontextmenü heraus starten. Die Ergebnisse präsentiert die Extension anschließend in einem zweiteiligen Fenster.
+Im oberen Bereich erscheinen alle Ergebnisse, für die IntelliSense sowohl die Textübereinstimmung als auch eine semantische Übereinstimmung für das gesuchte Symbol bestätigt. Alle weiteren Textübereinstimmungen erscheinen – kategorisiert nach der jeweiligen Fundstelle (Zeichenkette, Kommentar, inaktiver Makroblock etc.) – im unteren Bereich des Ergebnisfensters. Darüber hinaus stehen nach Löschen aller Ergebnisse früher getätigte Suchen für eine erneute Suche parat.
+Symbole schneller umbenennen
+Mit der Möglichkeit, Symbole einfach umbenennen zu können, steht nach Einschätzung von Microsoft eines der am stärksten nachgefragten Refactoring-Tools nun auch für die C++ Extension in Visual Studio Code zur Verfügung. ""Rename Symbol"" lässt sich über das Kontextmenü oder die Funktionstaste F2 aufrufen. Sobald sämtliche Referenzen des Symbols geprüft sind, übernimmt die Extension den neuen in der Textbox eingegebenen Namen. Andernfalls listet das Ergebnisfenster sämtliche in Frage kommenden Kandidaten auf.
+Im Zuge der erweiterten Lokalisierung gibt die C++ Extension nun auch Befehlsnamen, Tooltips, Warnungen und Fehlermeldungen in der vom Nutzer ausgewählten Sprache wieder. Zu den weiteren Neuerungen im Update zählen überarbeitete Navigations-Breadcrumbs sowie eine verbesserte Outline-Ansicht. Detaillierte Informationen zur neuen C++ Extension für Visual Studio Code finden sich im Blogbeitrag zur Ankündigung sowie im Changelog auf GitHub. (map)
+
+
+",de,"
+
+
+
+
+
+
+
+
+
+
+
+Microsoft is revising C ++ Extension for Visual Studio Code
+The November update brings numerous improvements and new features for refactoring, finding symbol references, and localization.
+05 Nov 2019, 12:57 by Matthias Parbel
+In the Visual Studio Marketplace, Microsoft has released the November update of the C ++ Extension for Visual Studio Code for download. In addition to a number of bug fixes, the new version also offers some improvements and new features. The announcement of the update highlights, among other things, the function ""Find all References"", the refactoring tool ""Rename Symbol"" and the extended localization of the C ++ extension.
+Find symbol references easier
+The search for instances of a symbol within a workspace can now be started by a right-click on the symbol with the function ""Find all References"" from the context menu. The results are then presented in a two-part window.
+The top panel displays all results for which IntelliSense confirms both the text match and a semantic match for the searched symbol. All other text matches appear - categorized according to the respective reference (string, comment, inactive macroblock, etc.) - in the lower part of the result window. In addition, after all results have been deleted, searches previously made are ready for a new search.
+Rename symbols faster
+With the ability to easily rename symbols, one of the most sought-after refactoring tools is now also available for the C ++ extension in Visual Studio Code. ""Rename Symbol"" can be called up via the context menu or the function key F2. As soon as all references of the symbol have been checked, the extension takes over the new name entered in the text box. Otherwise, the result window lists all candidate candidates.
+As part of the advanced localization, the C ++ extension now also displays command names, tooltips, warnings, and error messages in the user-selected language. Other new features in the update include redesigned navigation breadcrumbs and an improved outline view. Detailed information on the new C ++ extension for Visual Studio Code can be found in the blog post for announcement and in the changelog on GitHub. (Map)
+
+
+"

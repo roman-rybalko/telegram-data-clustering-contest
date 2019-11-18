@@ -1,0 +1,82 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Early reports confirm Pixel 4’s 90Hz refresh rate now works in more conditions
+04 Nov 2019, 19:40 by Ben Schoon
+The 90Hz display on the Pixel 4 is pretty sweet, but it’s not enabled in many conditions. Thankfully, though, the Pixel 4’s first update is promising to enable 90Hz in more conditions and based on early reports, it seems like it’s working.
+When it launched, the Pixel 4’s 90Hz display only worked in high-brightness situations, automatically going back to 60Hz when under 75% brightness.
+The November security patch that enables the 90Hz refresh rate in more conditions has only been out for the better part of an hour, so it’s impossible to tell exactly how much of a difference Google’s changes have made. However, we can look at what users are already reporting.
+In my case, 90Hz already seems more active than it was previously. Before the update, my Pixel 4 XL was running at 60Hz in my somewhat dimly-lit office at around 60% brightness. After the update, it’s running at 90Hz in the exact same conditions.
+It seems I’m not alone with these findings either. Other members of the press are reporting that 90Hz is sticking around at lower brightness levels as well. Further, there’s a growing Reddit thread with anecdotal evidence that 90Hz is working in more conditions. It does seem, though, that at very low brightness the display shows a green tint.
+If you want to see the difference yourself, there’s a handy ADB command (via Twitter) available to see how often your phone is using 90Hz. Simply type the command below and at the very bottom of the mountain of data it provides, you’ll see a breakdown of how much time your phone was running in 60Hz versus 90Hz.
+adb shell dumpsys SurfaceFlinger
+We’ll be testing over the next 24 hours to see how much of a difference this makes before and after the update. Notably, my Pixel 4 XL in regular usage was only in 90Hz about 5% of the time (2 hrs vs 37 hrs).
+
+
+
+More on Pixel 4:
+
+
+First Pixel 4 update adds camera and Smooth Display improvements
+
+
+November security patch rolling out to Google Pixel, factory images & OTAs live
+
+
+Google Pixel 4 drops from 90Hz refresh rate when you lower the brightness
+
+
+FTC: We use income earning auto affiliate links. More.
+
+
+",en,"
+
+
+
+
+
+
+
+
+
+
+
+Early reports confirm Pixel 4’s 90Hz refresh rate now works in more conditions
+04 Nov 2019, 19:40 by Ben Schoon
+The 90Hz display on the Pixel 4 is pretty sweet, but it’s not enabled in many conditions. Thankfully, though, the Pixel 4’s first update is promising to enable 90Hz in more conditions and based on early reports, it seems like it’s working.
+When it launched, the Pixel 4’s 90Hz display only worked in high-brightness situations, automatically going back to 60Hz when under 75% brightness.
+The November security patch that enables the 90Hz refresh rate in more conditions has only been out for the better part of an hour, so it’s impossible to tell exactly how much of a difference Google’s changes have made. However, we can look at what users are already reporting.
+In my case, 90Hz already seems more active than it was previously. Before the update, my Pixel 4 XL was running at 60Hz in my somewhat dimly-lit office at around 60% brightness. After the update, it’s running at 90Hz in the exact same conditions.
+It seems I’m not alone with these findings either. Other members of the press are reporting that 90Hz is sticking around at lower brightness levels as well. Further, there’s a growing Reddit thread with anecdotal evidence that 90Hz is working in more conditions. It does seem, though, that at very low brightness the display shows a green tint.
+If you want to see the difference yourself, there’s a handy ADB command (via Twitter) available to see how often your phone is using 90Hz. Simply type the command below and at the very bottom of the mountain of data it provides, you’ll see a breakdown of how much time your phone was running in 60Hz versus 90Hz.
+adb shell dumpsys SurfaceFlinger
+We’ll be testing over the next 24 hours to see how much of a difference this makes before and after the update. Notably, my Pixel 4 XL in regular usage was only in 90Hz about 5% of the time (2 hrs vs 37 hrs).
+
+
+
+More on Pixel 4:
+
+
+First Pixel 4 update adds camera and Smooth Display improvements
+
+
+November security patch rolling out to Google Pixel, factory images & OTAs live
+
+
+Google Pixel 4 drops from 90Hz refresh rate when you lower the brightness
+
+
+FTC: We use income earning auto affiliate links. More.
+
+
+"

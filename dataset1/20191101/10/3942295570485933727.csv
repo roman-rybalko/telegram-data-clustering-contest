@@ -1,0 +1,84 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Microsoft: Некоторые версии Windows обрывают TLS-соединения
+01 Nov 2019, 10:18 by Олег Иванов
+
+
+
+Microsoft признала новую проблему в нескольких версиях Windows. Столкнувшиеся с ней пользователи жалуются, что защищённые TLS- и SSL-соединения регулярно обрываются или загружаются настолько долго, что истекает время ожидания.
+Данный баг связан с уязвимостью TLS-спуфинга, получившей идентификатор CVE-2019-1318.
+Проблема обрывающихся или чрезмерно долгих соединений проявляется в момент, когда устройства пытаются установить TLS-коннект с другими устройствами без поддержки расширения Extended Master Secret (EMS).
+«Соединения между двумя устройствами, на которых установлена поддерживаемая версия Windows со всеми обновлениями, не должны быть затронуты этим багом», — добавили специалисты Microsoft.
+Также поводится список таких версий Windows:
+
+Windows 10 Version 1607
+Windows Server 2016
+Windows 10
+Windows 8.1
+Windows Server 2012 R2
+Windows Server 2012
+Windows 7 Service Pack 1
+Windows Server 2008 R2 Service Pack 1
+Windows Server 2008 Service Pack 2
+
+
+Читайте также
+
+
+
+
+
+
+",ru,"
+
+
+
+
+
+
+
+
+
+
+
+Microsoft: Some versions of Windows break TLS connections
+01 Nov 2019, 10:18 by Oleg Ivanov
+
+
+
+Microsoft has recognized a new problem in several versions of Windows. Faced with it, users complain that secure TLS and SSL connections are regularly disconnected or loaded for such a long time that the timeout expires.
+This bug is related to the TLS spoofing vulnerability that received the identifier CVE-2019-1318.
+The problem of disconnected or excessively long connections occurs when devices try to establish a TLS connection with other devices without support for the Extended Master Secret (EMS) extension.
+“Connections between two devices on which a supported version of Windows is installed with all updates should not be affected by this bug,” Microsoft experts added.
+A list of such versions of Windows is also included:
+
+Windows 10 Version 1607
+Windows Server 2016
+Windows 10
+Windows 8.1
+Windows Server 2012 R2
+Windows Server 2012
+Windows 7 Service Pack 1
+Windows Server 2008 R2 Service Pack 1
+Windows Server 2008 Service Pack 2
+
+
+Read also
+
+
+
+
+
+
+"

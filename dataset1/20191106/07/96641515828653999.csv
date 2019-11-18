@@ -1,0 +1,50 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Uber self-driving car involved in fatal crash couldn't detect jaywalkers
+The system had several serious software flaws, the NTSB said.
+06 Nov 2019, 07:45 by Steve Dent
+Uber's self-driving car that struck and killed a pedestrian in March 2018 had serious software flaws, including the inability to recognize jaywalkers, according to the NTSB. The US safety agency said that Uber's software failed to recognize the 49-year-old victim, Elaine Herzberg, as a pedestrian crossing the street. It didn't calculate that it could potentially collide with her until 1.2 seconds before impact, at which point it was too late to brake.
+More surprisingly, the NTSB said Uber's system design ""did not include a consideration for jaywalking pedestrians."" On top of that, the car initiated a one second braking delay so that the vehicle could calculate an alternative path or let the safety driver take control. (Uber has since eliminated that function in a software update.)
+Although the [system] detected the pedestrian nearly six seconds before impact ... it never classified her as a pedestrian, because she was crossing at a location without a crosswalk [and] the system design did not include a consideration for jaywalking pedestrians.
+Uber's autonomous test vehicles may have failed to identify roadway hazards in at least two other cases, according to the report. In one case, a vehicle struck a bicycle lane post that had bent into a roadway. In another, a safety driver was forced to take control to avoid an oncoming vehicle and ended up striking a parked car. In the seven months prior to the fatal crash, Uber vehicles were involved in 37 accidents, including 33 in which other vehicles struck the Uber test cars.
+When Uber resumed testing in December 2018, it used significantly revised software. According to the NTSB, Uber did a simulation of the new system using sensor data from the fatal Arizona accident. It determined that it would have detected the pedestrian 289 feet before impact and had four seconds to brake before impact at a speed of 43.2 mph. The average stopping distance for a human is about 130 feet at that speed, including reaction time, so it seems likely that the vehicle would have been able to stop in that distance.
+The NTSB will meet on November 19 to determine the cause of the accident that occurred in Tempe, Arizona in March of 2018. Prosecutors have already absolved Uber of criminal liability, but are still weighing criminal charges against the driver.
+Via: ReutersSource: NTSB via NBC News
+
+
+",en,"
+
+
+
+
+
+
+
+
+
+
+
+Uber self-driving car involved in fatal crash couldn't detect jaywalkers
+The system had several serious software flaws, the NTSB said.
+06 Nov 2019, 07:45 by Steve Dent
+Uber's self-driving car that struck and killed a pedestrian in March 2018 had serious software flaws, including the inability to recognize jaywalkers, according to the NTSB. The US safety agency said that Uber's software failed to recognize the 49-year-old victim, Elaine Herzberg, as a pedestrian crossing the street. It didn't calculate that it could potentially collide with her until 1.2 seconds before impact, at which point it was too late to brake.
+More surprisingly, the NTSB said Uber's system design ""did not include a consideration for jaywalking pedestrians."" On top of that, the car initiated a one second braking delay so that the vehicle could calculate an alternative path or let the safety driver take control. (Uber has since eliminated that function in a software update.)
+Although the [system] detected the pedestrian nearly six seconds before impact ... it never classified her as a pedestrian, because she was crossing at a location without a crosswalk [and] the system design did not include a consideration for jaywalking pedestrians.
+Uber's autonomous test vehicles may have failed to identify roadway hazards in at least two other cases, according to the report. In one case, a vehicle struck a bicycle lane post that had bent into a roadway. In another, a safety driver was forced to take control to avoid an oncoming vehicle and ended up striking a parked car. In the seven months prior to the fatal crash, Uber vehicles were involved in 37 accidents, including 33 in which other vehicles struck the Uber test cars.
+When Uber resumed testing in December 2018, it used significantly revised software. According to the NTSB, Uber did a simulation of the new system using sensor data from the fatal Arizona accident. It determined that it would have detected the pedestrian 289 feet before impact and had four seconds to brake before impact at a speed of 43.2 mph. The average stopping distance for a human is about 130 feet at that speed, including reaction time, so it seems likely that the vehicle would have been able to stop in that distance.
+The NTSB will meet on November 19 to determine the cause of the accident that occurred in Tempe, Arizona in March of 2018. Prosecutors have already absolved Uber of criminal liability, but are still weighing criminal charges against the driver.
+Via: ReutersSource: NTSB via NBC News
+
+
+"

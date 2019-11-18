@@ -1,0 +1,90 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Forscher hacken Sprachassistenten mit Laserattacke
+Dieser Angriff funktioniert sogar durch die Fensterscheibe: Wissenschaftler haben einen Weg gefunden, Sprachassistenten heimlich Befehle zu geben - per Laser. Die Forscher haben eine Schwachstelle entdeckt.
+
+05 Nov 2019, 16:37
+
+Stellen Sie sich vor, Sie nutzen einen Sprachassistenten wie Siri oder den Google Assistant und plötzlich führt dieser Befehle aus, die Sie ihm nie gegeben haben. Befehle, die niemand im Raum ausgesprochen hat, denn Sie sind allein. Doch auf dem Gerät, das den Sprachassistenten beherbergt, fällt Ihnen ein kleiner Lichtpunkt auf.
+Das Szenario klingt unheimlich - und jenseits von Forschungsexperimenten sind bislang glücklicherweise keine solchen Attacken bekannt. Unrealistisch ist es aber nicht. Das zeigen Erkenntnisse eines Wissenschaftler-Teams der University of Michigan und der Tokioter University of Electro-Communications, die jetzt ins Netz gestellt wurden. Die fünf Wissenschaftler zeigen unter dem Projektnamen ""Light Commands"", wie sich Sprachassistenten mit Lichtsignalen hacken lassen, per Laser.
+Mit einem solchen Angriff, so skizzieren es die Forscher, könnten Sprachassistenten zum Beispiel Befehle zum Öffnen von Haus- oder Garagentüren oder für Online-Einkäufe gegeben werden - je nachdem, wie die Geräte am Einsatzort vernetzt sind. Der Nutzer könnte die eingeschleusten Befehle selbst nicht hören, sondern - sofern er denn überhaupt anwesend ist - nur die akustische Reaktion des Geräts darauf, die teils von Leuchtanzeigen ergänzt wird. Erkennen lässt sich die Attacke sonst noch an der Reflektion des eingesetzten Laserstrahls auf dem Zielgerät.
+
+Prinzipiell sind viele Geräte gefährdet
+
+Für die Attacke anfällig sind den Forschern zufolge zahlreiche weit verbreitete Geräte, auf denen der Google Assistant, Apples Siri bis oder Amazons Alexa läuft. Das liegt an der verbauten Technik. Der vorgestellte Angriff fokussiert sich auf sogenannte MEMS-Mikrofone, die in Smart Speakern, aber auch in Smartphones, verbaut sind und mit denen die Assistenten Sprachbefehle ihrer Nutzer erkennen können. Dabei wird der Sound in elektrische Signale umgewandelt.
+Diese elektrischen Signale lassen sich den Mikrofonen jedoch auch entlocken, indem man sie Laserstrahlen unterschiedlicher Intensität aussetzt, fanden die Forscher heraus. Bei ihrem Angriff, der bislang nur in Testumgebungen erprobt wurde, zielten sie mit einem Laser auf ein Mikrofon, teils auch durch ein Fenster. Die Kommandos werden so - anders als die üblichen Sprachbefehle - unhörbar übermittelt. Es sei ""möglich, Mikrofone so auf Licht reagieren zu lassen, wie sie auf Geräusche reagieren"", sagte Forscher Takeshi Sugawara dem Tech-Magazin ""Wired"".
+Praktisch hat solch ein Angriff aber Grenzen, wie auch die Wissenschaftler selbst klarstellen. Zunächst einmal muss mit dem Laser auf das Mikrofon gezielt werden, was nicht immer leicht ist. Und selbst wenn es gelingt, würde in vielen Szenarien schon ein simples Wegstellen des Geräts vom Fenster die Attacke unmöglich machen.
+
+Man braucht das passende Equipment
+
+Zudem braucht ein Angreifer passendes, einige Hundert Euro teures Equipment, erst recht wenn er sich nicht in unmittelbarer Nähe zum Mikrofon befindet. Die Forscher berichten, dass ihnen auf einem Flur mitunter immerhin aus 110 Meter Entfernung eine Signalübermittlung gelungen sei - eine größere Entfernung sei nicht mehr getestet worden.
+Auf ihrer Website stellen die Forscher Untersuchungsergebnisse zu verschiedenen Geräten vor. So wird angegeben, welche Stärke ein Laser haben muss, damit der Angriff aus 30 Zentimeter Entfernung funktioniert. Beim Google Home etwa sind dies den Angaben zufolge 0,5 Milliwatt, bei einem Amazon Echo Plus der ersten Generation 2,4 Milliwatt, bei einem Echo Spot 29 Milliwatt. Bei einem Samsung Galaxy S9 (mit integriertem Google Assistant) werden mindestens 60 Milliwatt benötigt.
+Mit einem solchen Laser sei beim S9 ein Angriff aus maximal fünf Meter Entfernung möglich, heißt es in einer Tabelle. Bei den meisten anderen Testgeräten habe ein Angriff aber auch mit mehr als fünfzig Meter Abstand zum Mikrofon funktioniert.
+
+Eine Sprechererkennung schützt nicht unbedingt
+
+Bei der Abwehr der Laserangriffe hilft es den Forschern zufolge übrigens nicht, an einem Gadget eine Sprechererkennung zu aktivieren - das Gadget also so einzustellen, dass es nur auf die Befehle einer bestimmten Stimme reagiert. Die Laserkommandos ließen sich auch bei solchen Geräten anwenden, heißt es. In der Regel beziehe sich die Sprechererkennung auch nur auf die Aufweckwörter für ein Gerät, wird weiter ausgeführt: Im Zweifel ließe sich also auch ein Befehl des echten Nutzers abwarten, bevor man eigenen Kommandos per Laser einschleust.
+Ein sinnvoller Schutz wäre es den Forschern zufolge beispielsweise, wenn das Gerät vor dem Ausführen eines Befehls eine zufällige Frage an den Nutzer stellt und zunächst abwartet, ob diese korrekt beantwortet wird. Das würde zumindest Angreifer, die sich nicht in Hörweite des Geräts befinden, ausbremsen.
+Auch seitens der Hardware könnten die Hersteller ihre Produkte besser gegen Laserattacken schützen, heißt es. Ein Ansatz, den die Forscher vorschlagen, ist der Einbau weiterer Mikrofone. Empfängt dann, wie bei der vorgestellten Attacke, nur ein einziges Mikrofon ein Signal, könnte das Gerät dies als Anomalie werten: Das Ausführen des Befehls könnte es dann verweigern.
+Von Google und Amazon hieß es in einer Stellungnahme für ""Wired"", man werde die Forschungsergebnisse prüfen. Apple wollte dem Magazin zufolge keinen Kommentar zum Thema abgeben.
+
+mbö
+
+
+
+",de,"
+
+
+
+
+
+
+
+
+
+
+
+Researchers hack language assistant with laser attack
+This attack even works through the windowpane: Scientists have found a way to secretly give orders to language assistants - by laser. The researchers have discovered a weak spot.
+
+05 Nov 2019, 16:37
+
+Imagine you're using a voice assistant like Siri or the Google Assistant, and suddenly you're executing those commands you never gave him. Commands no one spoke in the room, because you are alone. But on the device that houses the voice assistant, you notice a small point of light.
+The scenario sounds scary - and beyond research experiments, fortunately no such attacks are known. It is not unrealistic. The findings of a team of scientists from the University of Michigan and the Tokyo University of Electro-Communications, which have now been put on the net. The five scientists use the project name ""Light Commands"" to show how speech assistants can hack speech assistants by laser.
+With such an attack, the researchers outlined, language assistants could, for example, be given orders to open house or garage doors or for online purchases - depending on how the devices are networked at the site. The user could not hear the inserted commands themselves, but - if he is present at all - only the acoustic response of the device on it, which is partly supplemented by illuminated displays. Otherwise, the attack can be detected by the reflection of the laser beam used on the target device.
+
+In principle, many devices are at risk
+
+According to the researchers, many widespread devices running the Google Assistant, Apple's Siri, or Amazon's Alexa are vulnerable to the attack. This is due to the built-in technology. The presented attack focuses on so-called MEMS microphones, which are installed in smart speakers, but also in smartphones, and with which the assistants can recognize voice commands of their users. The sound is converted into electrical signals.
+However, these electrical signals can also be elicited from the microphones by exposing them to laser beams of varying intensity, the researchers found. In their attack, which has so far only been tested in test environments, they aimed a laser at a microphone, partly through a window. The commands are thus - in contrast to the usual voice commands - transmitted inaudible. It is ""possible to let microphones react to light in such a way that they react to noises"", said researcher Takeshi Sugawara the tech magazine ""Wired"".
+Practically, however, such an attack has limits, as the scientists themselves clarify. First of all, the laser must be aimed at the microphone, which is not always easy. And even if it succeeds, in many scenarios even simply putting the device away from the window would make the attack impossible.
+
+You need the right equipment
+
+In addition, an attacker needs appropriate, a few hundred euros expensive equipment, especially if he is not in the immediate vicinity of the microphone. The researchers report that at least 110 meters away they were able to transmit signals in a corridor - a longer distance had not been tested.
+On their website, the researchers present test results on various devices. This tells you what strength a laser must have for the attack to work from a distance of 30 centimeters. In the case of the Google Home, for example, these are reportedly 0.5 milliwatts, for a first generation Amazon Echo Plus 2.4 milliwatts, for an echo spot 29 milliwatts. A Samsung Galaxy S9 (with integrated Google Assistant) requires at least 60 milliwatts.
+With such a laser S9 an attack from a maximum of five meters away is possible, it says in a table. For most other test equipment, an attack was more than fifty meters away from the microphone.
+
+A speaker recognition does not necessarily protect
+
+By the way, in the defense against laser attacks, it does not help to activate a speaker recognition on a gadget - so the gadget is set to respond only to the commands of a particular voice. The laser commands were also applicable to such devices, they say. In general, the speaker recognition refers only to the Aufweckwörter for a device, will continue to run: In case of doubt, so could wait for a command from the real user, before injecting their own commands via laser.
+For example, it would be useful protection if, prior to executing a command, the device poses a random question to the user and waits to see if it is correctly answered. That would at least slow down attackers who are not within earshot of the device.
+Also on the part of the hardware manufacturers could better protect their products against laser attacks, they say. One approach proposed by the researchers is the installation of additional microphones. Then, as in the case of the presented attack, if only a single microphone receives a signal, the device might consider this an anomaly: executing the command could then refuse it.
+Google and Amazon said in a statement for ""Wired"", they will examine the research results. According to the magazine, Apple did not want to comment on the topic.
+
+mboe
+
+
+
+"

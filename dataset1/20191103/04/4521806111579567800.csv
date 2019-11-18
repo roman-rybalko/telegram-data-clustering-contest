@@ -1,0 +1,50 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Google разрабатывает блокировщик «тяжелой» рекламы в Chrome
+Американская корпорация Google создает решение для блокировки в своем браузере рекламы, использующей много системных ресурсов.
+
+03 Nov 2019, 04:59
+
+Разработчики Google создают инструмент, который будет блокировать «тяжелую» рекламу во время веб-серфинга в браузере Chrome. Реклама будет блокироваться, если она использует больше 0,1% общего времени процессора, или загружает процессор больше, чем на 0,1% в минуту, или же в случае, если использует свыше 0,1% пропускной способности сети.
+В любом из вышеупомянутых случаев инструмент заменит рекламу на сообщение об ошибке с объяснением причины удаления рекламы.
+Внедрить новый инструмент планируется уже в ближайшее время. 
+ 
+Фото: из открытых источников
+
+
+",ru,"
+
+
+
+
+
+
+
+
+
+
+
+Google develops heavy ad blocker in Chrome
+The American corporation Google is creating a solution to block ads in its browser that use many system resources.
+
+03 Nov 2019, 04:59
+
+Google’s developers are creating a tool that will block “heavy” ads while surfing the web in the Chrome browser. Advertising will be blocked if it uses more than 0.1% of the total processor time, or loads the processor more than 0.1% per minute, or if it uses more than 0.1% of the network bandwidth.
+In any of the above cases, the tool will replace the advertisement with an error message explaining the reason for removing the advertisement.
+It is planned to introduce a new tool in the near future.
+
+Photo: open source
+
+
+"

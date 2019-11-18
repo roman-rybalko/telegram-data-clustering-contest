@@ -1,0 +1,56 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Augmented Reality ohne Programmieren
+Mit Aero veröffentlicht Adobe eine kostenlose App für iOS , die die Gestaltung von Inhalten für AR-Anwendungen auf Apple-Geräten stark vereinfacht.
+04 Nov 2019, 14:00 by Martin Wolf
+Die App Adobe Aero richtet sich an Designer, die schnell und unkompliziert Augmented-Reality-Welten erschaffen wollen. Programmierkenntnisse sind nicht nötig, es können Assets aus anderen Creative-Cloud-Anwendungen per Drag-and-Drop integriert werden.
+In einer Demo zeigte Adobe, dass die App zunächst die Umgebung scannt, um Ankerpunkte und Grundflächen in der Realität - etwa Tischoberflächen oder Wände - zu bestimmen. Dann wurde ein Photoshop-Bild von einem Wald virtuell auf den Tisch gestellt, dabei bekamen die einzelnen Ebenen eine dreidimensionale Anmutung - ähnlich wie ein Scherenschnittpanorama. Aus dem integrierten Baukasten mit über 200 Gegenständen wurden dann ein paar Bäume ausgewählt und in die virtuelle Landschaft gesetzt. Auch Interaktivität ist möglich: Mit wenigen Klicks kann ein gewünschtes Verhalten wie Bewegung oder Drehung mit Triggern gesteuert werden.
+Die App nutzt eine nicht näher spezifizierte Engine für Physically based rendering (PBR). In der Demo sahen Details, Texturen und Schattenwürfe sehr gut aus. Auch das Veröffentlichen und Teilen hat Adobe sehr einfach gehalten: Anderen Anwendern der Aero-App kann das Werk im eigenen Format zur Verfügung gestellt werden oder es lässt sich als .reality-Datei ausgeben. Dieses Format wird nativ auf allen aktuellen iOS-Geräten unterstützt. Für alle anderen kann auch einfach ein Video der Szene aufgenommen und geteilt werden.
+
+
+
+Unser erster Eindruck von Adobe Aero ist zwiegespalten: Einerseits ist es tatsächlich sehr einfach, eine erste Szene mit einigen Assets und Animationen zu erstellen, andererseits dürfte die simpel gehaltene App für komplexe Projekte nicht ausreichen. Das soll sie möglicherweise aber auch gar nicht, denn Adobe hat für 2020 eine Desktop-Version angekündigt.
+
+Offenlegung: Golem.de hat auf Einladung von Adobe an der Adobe Max in Los Angeles teilgenommen. Die Reisekosten wurden zur Gänze von Adobe übernommen. Unsere Berichterstattung ist davon nicht beeinflusst und bleibt gewohnt neutral und kritisch. Der Artikel ist, wie alle anderen auf unserem Portal, unabhängig verfasst und unterliegt keinerlei Vorgaben seitens Dritter.
+
+
+
+",de,"
+
+
+
+
+
+
+
+
+
+
+
+Augmented reality without programming
+With Aero, Adobe is releasing a free app for iOS that greatly simplifies the design of content for AR applications on Apple devices.
+04 Nov 2019, 14:00 by Martin Wolf
+The Adobe Aero app is aimed at designers who want to quickly and easily create augmented reality worlds. Programming skills are not required, and assets from other Creative Cloud applications can be integrated via drag-and-drop.
+In a demo, Adobe showed that the app first scans the environment to determine anchor points and footprints in reality - such as table surfaces or walls. Then a Photoshop image of a forest was virtually put on the table, the individual levels were given a three-dimensional appearance - similar to a Scherenschnittpanorama. From the integrated construction kit with over 200 objects, a few trees were selected and placed in the virtual landscape. Interactivity is also possible: a few clicks can be used to control desired behavior such as movement or rotation with triggers.
+The app uses an unspecified engine for physically based rendering (PBR). In the demo, details, textures and shadows looked very good. Adobe has also made publishing and sharing very easy: other users of the Aero app can have the work made available in their own format or it can be output as a .reality file. This format is natively supported on all current iOS devices. For all others, you can also just record and share a video of the scene.
+
+
+
+Our first impression of Adobe Aero is zwiegespalten: On the one hand, it is actually very easy to create a first scene with some assets and animations, on the other hand, the simple held app for complex projects is not sufficient. That should possibly not, because Adobe has announced a desktop version for 2020.
+
+Disclosure: Golem.de has been invited by Adobe to participate in Adobe Max in Los Angeles. The travel expenses were completely taken over by Adobe. Our reporting is unaffected and remains as usual neutral and critical. The article is, like all others on our portal, written independently and is not subject to any third party.
+
+
+
+"

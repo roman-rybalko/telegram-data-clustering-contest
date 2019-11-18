@@ -1,0 +1,78 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Synology выпустила Active Backup for Business 2.1 на базе Hyper-V
+
+07 Nov 2019, 16:45
+
+Компания Synology представила обновление для Active Backup for Business — интегрированного решения для резервного копирования, которое защищает данные компании — благодаря поддержке резервного копирования виртуальных машин Microsoft Hyper-V.
+Пользователи систем Synology NAS, которые поддерживают данное приложение, теперь могут выполнять резервное копирование неограниченного количества компьютеров под управлением Windows, физических серверов, файловых серверов и виртуальных машин, работающих на VMware и Hyper-V.
+«Synology Active Backup Suite завоевал популярность среди корпоративных клиентов с момента выпуска, — заявил Дженн Йе (Jenn Yeh), менеджер по маркетингу продукции компании Synology. — Решение Active Backup for Business было скачано более 150 000 раз менее чем за год. Благодаря поддержке Hyper-V мы ещё больше стали соответствовать требованиям предприятий к резервному копированию в виртуальной среде. Мы продолжим увеличивать количество поддерживаемых платформ, чтобы предприятия могли легко и эффективно выполнять централизованное резервное копирование распределенных рабочих нагрузок, минимизируя затраты на защиту цифровых ресурсов».
+Представленное решение поддерживает резервное копирование виртуальных машин, работающих на Microsoft Hyper-V 2016 и 2019, без установки агентов резервного копирования.
+Active Backup for Business теперь обеспечивает еще и поддержку защиты данных физического сервера последней версии Windows Server.
+Задачи резервного копирования могут запускаться определенными событиями, например блокировкой экрана компьютера, загрузкой или выходом из системы, что обеспечивает защиту данных в любых рабочих сценариях.
+Предусмотрено гибкое планирование — поддержка настройки окна резервного копирования для установления доступного временного интервала для выполнения планового резервного копирования в часы минимальной нагрузки.
+Производитель также обращает внимание на упрощенное массовое развертывание для ПК под управлением Windows. Используя интеграцию с Microsoft AD и самоопределяемые параметры, администратор может устанавливать агенты на ПК и настраивать автоматический вход в систему для пользователей в фоновом режиме, упрощая тем самым массовое развертывание для предприятий.
+Система позволяет восстановление тома вручную на любой диск ПК или физического сервера при выполнении восстановления платформы без ОС.
+
+Вы можете подписаться на наш Telegram-канал для получения наиболее интересной информации
+
+
+Читайте также
+
+
+
+
+
+
+
+
+",ru,"
+
+
+
+
+
+
+
+
+
+
+
+Synology Releases Hyper-V Active Backup for Business 2.1
+
+07 Nov 2019, 16:45
+
+Synology introduced an update to Active Backup for Business, an integrated backup solution that protects company data, with support for backing up Microsoft Hyper-V virtual machines.
+Users of Synology NAS systems that support this application can now back up an unlimited number of Windows computers, physical servers, file servers and virtual machines running on VMware and Hyper-V.
+“The Synology Active Backup Suite has gained popularity among corporate customers since its release,” said Jenn Yeh, product marketing manager for Synology. - Active Backup for Business has been downloaded over 150,000 times in less than a year. With support for Hyper-V, we have become even more compliant with enterprise backup requirements in a virtual environment. “We will continue to increase the number of supported platforms so that enterprises can easily and efficiently perform centralized backups of distributed workloads while minimizing the cost of protecting digital resources.”
+The presented solution supports backing up virtual machines running on Microsoft Hyper-V 2016 and 2019 without installing backup agents.
+Active Backup for Business now also provides data protection support for the physical server of the latest version of Windows Server.
+Backup tasks can be triggered by certain events, such as locking the computer screen, loading or logging out of the system, which ensures data protection in any working scenario.
+Flexible planning is provided - support for configuring the backup window to set an available time interval for scheduled backup during off-peak hours.
+The manufacturer also pays attention to the simplified mass deployment for Windows PCs. Using integration with Microsoft AD and self-defined settings, the administrator can install agents on a PC and configure automatic login for users in the background, thereby simplifying mass deployment for enterprises.
+The system allows you to restore the volume manually to any drive on a PC or physical server when performing platform recovery without an OS.
+
+You can subscribe to our Telegram channel to receive the most interesting information.
+
+
+Read also
+
+
+
+
+
+
+
+
+"

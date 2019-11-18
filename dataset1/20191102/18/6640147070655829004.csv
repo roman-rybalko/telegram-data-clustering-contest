@@ -1,0 +1,334 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Intel Core i9-10900 in arrivo: 10 core e 20 thread fino a 5,1 GHz
+02 Nov 2019, 18:41 by Manolo De Agostini
+A inizio 2020 Intel presenterà in ambito desktop i processori nome in codice Comet Lake, un progetto a 14 nanometri che porterà le CPU Core fino a 10 core e 20 thread. Le soluzioni Core di decima generazione in arrivo richiederanno una nuova piattaforma basata sui chipset della serie 400 con socket LGA 1200, mentre conserveranno il supporto alla memoria DDR4-2666 con 32 GB di capacità per canale.
+Queste sono tutte informazioni già note, ma in queste ore sono trapelati i dettagli su gran parte dei modelli in arrivo con le relative specifiche. Inizialmente dovremmo vedere nove modelli, con altri in arrivo in seguito. I processori dovrebbero rientrare nelle famiglie Core i9, Core i7, Core i5, Core i3, Pentium e Celeron, coprendo tutte le fasce di mercato.
+
+
+
+Stando a una slide, Intel prevede un miglioramento delle prestazioni del 18% con carichi di lavoro multi-thread rispetto alla nona generazione e un progresso dell’8% con carichi più generici. Per ora nelle slide trapelate non viene citato un modello K, per cui la CPU di punta di queste indiscrezioni è il Core i9-10900, un processore con 10 core / 20 thread che lavora di base a 3 GHz ma può accelerare fino a 5,1 GHz (Turbo Boost single-core).
+Le altre caratteristiche contemplano 20 MB di cache e un TDP di 65 watt. È chiaro che vedremo un modello K con un TDP più alto e probabilmente frequenze persino migliori. C’è anche un Core i9-10900T con un TDP di 35 watt con lo stesso numero di core e thread ma frequenze nettamente più basse di 2 / 4,5 GHz.
+La gamma Core i7 dovrebbe comporsi dei seguenti modelli, tutti con 8 core / 16 thread e 16 MB di cache: Core i7-10700K, Core i7-10700 e Core i7-10700T. Del modello K non si conoscono le specifiche, mentre il 10700 dovrebbe operare a 3 / 4,8 GHz con un TDP di 65 watt. Il modello T a basso consumo avrebbe invece un TDP di 35 watt e frequenze operative di 2 / 4,4 GHz.
+Anche la serie Core i5 dovrebbe contare su tre modelli: Core i5-10500K, Core i5-10500 e il Core i5-10500T. In base alle slide tutti dovrebbero avere 6 core / 12 thread e 12 MB di cache. Anche in questo caso del modello K non si hanno informazioni, mentre il 10500 opererebbe a frequenze di 3,2 / 4,3 GHz. Il 10500T funzionerebbe invece a 2,3 / 3,7 GHz, in virtù del TDP pari a 35 watt.
+
+
+Modelli
+Core / Thread
+Base Clock
+Boost Clock
+Cache
+TDP
+
+
+Intel Core i9-10900K
+10/20
+–
+–
+20 MB
+–
+
+
+Intel Core i9-10900
+10/20
+3.0 GHz
+5.1 GHz
+20 MB
+65W
+
+
+Intel Core i9-10900T
+10/20
+2.0 GHz
+4.5 GHz
+20 MB
+35W
+
+
+Intel Core i7-10700K
+8/16
+–
+–
+16 MB
+–
+
+
+Intel Core i7-10700
+8/16
+3.0 GHz
+4.8 GHz
+16 MB
+65W
+
+
+Intel Core i7-10700T
+8/16
+2.0 GHz
+4.4 GHz
+16 MB
+35W
+
+
+Intel Core i5-10500K
+6/12
+–
+–
+12 MB
+–
+
+
+Intel Core i5-10500
+6/12
+3.2 GHz
+4.3 GHz
+12 MB
+65W
+
+
+Intel Core i5-10500T
+6/12
+2.3 GHz
+3.7 GHz
+12 MB
+35W
+
+
+Intel Core i3-10100K
+4/8
+–
+–
+8 MB
+–
+
+
+Intel Core i3-10100
+4/8
+3.2 GHz
+3.8 GHz
+8 MB
+65W
+
+
+Intel Core i3-10100T
+4/8
+2.3 GHz
+3.6 GHz
+8 MB
+35W
+
+
+Intel Pentium G6400
+2/4
+3.8 GHz
+3.8 GHz
+4 MB
+65W
+
+
+Intel Pentium G6400T
+2/4
+3.2 GHz
+3.2 GHz
+4 MB
+35W
+
+
+Intel Celeron G5900
+2/2
+3.2 GHz
+3.2 GHz
+2 MB
+65W
+
+
+Intel Celeron G5900T
+2/2
+3.0 GHz
+3.0 GHz
+2 MB
+35W
+
+
+La gamma Core i3 conterebbe invece su 4 core / 8 thread e 8 MB di cache. Intel dovrebbe offrire un Core i3-10100K di cui non si hanno informazioni dettagliate. Per quanto concerne invece gli altri modelli, ecco un Core i3-10100 con frequenze di 3,2 / 3,8 GHz e un Core i3-10100T con TDP di 35 watt che funzionerebbe a 2,3 / 3,6 GHz.
+Passiamo alla gamma Pentium, con i modelli G6400 e G6400T dotati di 2 core e 4 thread. Il primo modello avrebbe un TDP di 65 watt, 4 MB di cache e funzionerebbe a 3,8 GHz. Il modello T con TDP di 35 watt avrebbe invece una frequenza di 3,2 GHz.
+L’offerta Celeron dovrebbe contemplare i modelli G5900 e G5900T, dotati di 2 core senza Hyper-Threading, 2 MB di cache e un TDP rispettivamente di 65 e 35 watt. Per il G5900 si prevede una frequenza operativa di 3,2 GHz, mentre il G5900T funzionerebbe a 3 GHz.
+
+
+",it,"
+
+
+
+
+
+
+
+
+
+
+
+Intel Core i9-10900 coming: 10 cores and 20 threads up to 5.1 GHz
+02 Nov 2019, 18:41 by Manolo De Agostini
+At the beginning of 2020 Intel will present in the desktop the processors code-named Comet Lake, a 14-nanometer project that will bring the Core CPUs up to 10 cores and 20 threads. Oncoming tenth generation Core solutions will require a new platform based on the 400 series chipsets with LGA 1200 sockets, while retaining DDR4-2666 memory support with 32 GB capacity per channel.
+These are all already known information, but in these hours the details on most of the models coming with the related specifications have been leaked. Initially we should see nine models, with others coming later. The processors should be part of the Core i9, Core i7, Core i5, Core i3, Pentium and Celeron families, covering all market segments.
+
+
+
+According to a slide, Intel expects an 18% performance improvement with multi-thread workloads compared to the ninth generation and an 8% progress with more generic loads. For now in the leaked slides a K model is not mentioned, so the main CPU of these rumors is the Core i9-10900, a processor with 10 cores / 20 threads that works at 3 GHz but can accelerate up to 5, 1 GHz (single core Turbo Boost).
+The other features include 20 MB of cache and a TDP of 65 watts. It is clear that we will see a K model with a higher TDP and probably even better frequencies. There is also a Core i9-10900T with a TDP of 35 watts with the same number of cores and threads but frequencies clearly lower than 2 / 4.5 GHz.
+The Core i7 range should include the following models, all with 8 cores / 16 threads and 16 MB of cache: Core i7-10700K, Core i7-10700 and Core i7-10700T. The K model does not know the specifications, while the 10700 should operate at 3 / 4.8 GHz with a TDP of 65 watts. The low consumption T model would have a TDP of 35 watts and operating frequencies of 2 / 4.4 GHz instead.
+The Core i5 series should also have three models: Core i5-10500K, Core i5-10500 and the Core i5-10500T. According to the slides everyone should have 6 cores / 12 threads and 12 MB of cache. Also in this case the K model has no information, while the 10500 would operate at frequencies of 3.2 / 4.3 GHz. The 10500T would work instead at 2.3 / 3.7 GHz, by virtue of the TDP equal to 35 watts .
+
+
+Models
+Core / Thread
+Base Clock
+Boost Clock
+Cache
+TDP
+
+
+Intel Core i9-10900K
+10/20
+-
+-
+20 MB
+-
+
+
+Intel Core i9-10900
+10/20
+3.0 GHz
+5.1 GHz
+20 MB
+65W
+
+
+Intel Core i9-10900T
+10/20
+2.0 GHz
+4.5 GHz
+20 MB
+35W
+
+
+Intel Core i7-10700K
+8/16
+-
+-
+16 MB
+-
+
+
+Intel Core i7-10700
+8/16
+3.0 GHz
+4.8 GHz
+16 MB
+65W
+
+
+Intel Core i7-10700T
+8/16
+2.0 GHz
+4.4 GHz
+16 MB
+35W
+
+
+Intel Core i5-10500K
+6/12
+-
+-
+12 MB
+-
+
+
+Intel Core i5-10500
+6/12
+3.2 GHz
+4.3 GHz
+12 MB
+65W
+
+
+Intel Core i5-10500T
+6/12
+2.3 GHz
+3.7 GHz
+12 MB
+35W
+
+
+Intel Core i3-10100K
+4/8
+-
+-
+8 MB
+-
+
+
+Intel Core i3-10100
+4/8
+3.2 GHz
+3.8 GHz
+8 MB
+65W
+
+
+Intel Core i3-10100T
+4/8
+2.3 GHz
+3.6 GHz
+8 MB
+35W
+
+
+Intel Pentium G6400
+2/4
+3.8 GHz
+3.8 GHz
+4 MB
+65W
+
+
+Intel Pentium G6400T
+2/4
+3.2 GHz
+3.2 GHz
+4 MB
+35W
+
+
+Intel Celeron G5900
+2/2
+3.2 GHz
+3.2 GHz
+2 MB
+65W
+
+
+Intel Celeron G5900T
+2/2
+3.0 GHz
+3.0 GHz
+2 MB
+35W
+
+
+The Core i3 range would instead count on 4 cores / 8 threads and 8 MB of cache. Intel should offer a Core i3-10100K of which there is no detailed information. As for the other models, here is a Core i3-10100 with frequencies of 3.2 / 3.8 GHz and a Core i3-10100T with a TDP of 35 watts that would work at 2.3 / 3.6 GHz.
+Let's move on to the Pentium range, with the G6400 and G6400T models equipped with 2 cores and 4 threads. The first model would have a TDP of 65 watts, 4 MB of cache and would run at 3.8 GHz. The T model with a TDP of 35 watts would have a frequency of 3.2 GHz instead.
+The Celeron offer should include the G5900 and G5900T models, equipped with 2 cores without Hyper-Threading, 2 MB of cache and a TDP of 65 and 35 watts respectively. For the G5900 an operating frequency of 3.2 GHz is expected, while the G5900T would operate at 3 GHz.
+
+
+"

@@ -1,0 +1,54 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Amazon Akan Buka Data Center di Indonesia Akhir 2021
+04 Nov 2019, 22:14 by Tempo.co, Erwin Prima
+TEMPO.CO, Jakarta - Country Leader Amazon Web Service (AWS) Indonesia Gunawan Susanto memastikan bahwa AWS akan membuka data center di Indonesia pada akhir 2021. Hal ini menyusul diumumkannya Jakarta sebagai salah satu region baru AWS di kawasan Asia Pasifik.
+""Jakarta menjadi salah satu region baru AWS yang akan mempunyai tiga availability zones (zona ketersediaan), di mana masing-masing zona ketersediaan akan memiliki minimal satu data center,"" kata Gunawan di acara AWS Media Briefing 2019 di Jakarta Selatan, Senin 4 November 2019.
+Sebelumnya di kawasan Asia Pasifik, AWS sudah memiliki enam region lainnya, termasuk Singapura, Sydney, Tokyo, Seoul, serta Hongkong.
+Secara global AWS sudah memiliki 22 region dengan 69 zona ketersediaan. ""Ke depannya, berbarengan dengan Jakarta, Milan dan Cape Town juga akan menjadi region baru AWS,"" kata Gunawan.
+Senior Technical Evangelist AWS ASEAN Donnie Prakoso mengungkapkan bahwa kehadiran tiga zona ketersediaan di region Jakarta akan memberikan manfaat bagi pelanggan AWS Indonesia. ""Di antaranya menghadirkan ketersediaan data yang tinggi, skalabilitas data yang tinggi, hingga tolerasi kesalahan data yang tinggi pula,"" ujar Donnie.
+Untuk menjamin hal tersebut, kata Gunawan, nantinya tiap-tiap zona ketersediaan akan dibangun dengan jarak tertentu. ""Sehingga kalau ada bencana seperti banjir atau gempa bumi di satu zona, nggak akan mengganggu operasional zona lainnya. Jadi zona ketersediaan ini saling back up satu sama lain,"" lanjutnya.
+Lebih jauh lagi Donnie menjelaskan zona ketersediaan yang di dalamnya terdapat minimal satu data center dibangun dengan desain tertentu. ""Pertama, zona ketersediaan itu terisolasi dan dibangung dengan jarak yang cukup jauh. Walau begitu, semua zona tetap terhubung dengan fiber optic yang low latency,"" ujar Donnie. ""Zona ketersediaan ini juga tersedia lebih dari 100 ribu server di mana kita operating-nya high speed,"" imbuhnya.
+Latensi yang rendah ini, kata Donnie, dapat memunculkan manfaat lainnya, salah satunya ialah pelanggan data mengakses data secara cepat. ""Semakin cepat aksesnya, akan semakin banyak pula demand. Karena banyaknya demand kan mendorong pelanggan kita untuk terus berinovasi,"" ujar Donnie.
+Menurut Gunawan, AWS menawarkan lebih dari 160 fitur yang bisa dimanfaatkan oleh para pelanggannya, mulai dari fitur keamanan, penyimpanan data, hingga IoT dan AI. Di Indonesia, AWS Indonesia telah membantu banyak pelanggan, di antaranya Kumparan, Halodoc, Grab, Traveloka, Kredivo, Elevenia, Zalora, DBS Bank, Iflix, hingga Sociolla.
+GALUH PUTRI RIYANTO
+
+
+",id,"
+
+
+
+
+
+
+
+
+
+
+
+Amazon Will Open Data Centers in Indonesia by the End of 2021
+04 Nov 2019, 22:14 by Tempo.co, Erwin Prima
+TEMPO.CO, Jakarta - Indonesian Amazon Web Service (AWS) Country Leader Gunawan Susanto ensured that AWS will open a data center in Indonesia by the end of 2021. This follows the announcement of Jakarta as one of the new AWS regions in the Asia Pacific region.
+""Jakarta is one of the new AWS regions which will have three availability zones (availability zones), where each availability zone will have at least one data center,"" Gunawan said at the AWS Media Briefing 2019 in South Jakarta, Monday 4 November 2019 .
+Previously in the Asia Pacific region, AWS already had six other regions, including Singapore, Sydney, Tokyo, Seoul, and Hong Kong.
+Globally AWS already has 22 regions with 69 availability zones. ""In the future, together with Jakarta, Milan and Cape Town will also become the new AWS region,"" said Gunawan.
+AWS ASEAN Senior Technical Evangelist Donnie Prakoso revealed that the presence of three availability zones in the Jakarta region would benefit AWS Indonesia's customers. ""Among them are high data availability, high data scalability and high data error tolerance,"" Donnie said.
+To guarantee this, said Gunawan, later each of the availability zones will be built with a certain distance. ""So if there are disasters such as floods or earthquakes in one zone, it will not interfere with the operation of other zones. So these availability zones back up with each other,"" he continued.
+Furthermore Donnie explained the availability zone in which there is at least one data center built with a particular design. ""First, the availability zone is isolated and built with a considerable distance. Even so, all zones remain connected with low-latency optical fibers,"" Donnie said. ""This availability zone is also available for more than 100 thousand servers where we are operating at high speed,"" he added.
+This low latency, said Donnie, can bring other benefits, one of which is data customers access data quickly. ""The faster access, the more demand will be. Because of the high demand, it will encourage our customers to continue to innovate,"" said Donnie.
+According to Gunawan, AWS offers more than 160 features that can be utilized by its customers, ranging from security features, data storage, to IoT and AI. In Indonesia, AWS Indonesia has helped many customers, including Coils, Halodoc, Grab, Traveloka, Kredivo, Elevenia, Zalora, DBS Bank, Iflix, to Sociolla.
+GALUH PRINCESS RIYANTO
+
+
+"

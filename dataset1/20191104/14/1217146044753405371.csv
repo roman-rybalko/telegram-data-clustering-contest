@@ -1,0 +1,78 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+ Microsoft 365 Now Helps Find and Review Insider Security Threats
+04 Nov 2019, 14:00 by Sergiu Gatlan
+
+
+
+Microsoft announced the addition of Insider Risk Management to its Microsoft 365 cloud services platform designed to detect and investigate insider security threats within organizations.
+""We are announcing a new insider risk management solution in Microsoft 365 to help identify and remediate threats stemming from within an organization,"" Microsoft said.
+""Now in private preview, this new solution leverages the Microsoft Graph along with third-party signals, like HR systems, to identify hidden patterns that traditional methods would likely miss.""
+Organizations that want to sign up for an Insider Risk Management private preview can do so at Microsoft Ignite. 
+Today, we announced Insider Risk Management in Microsoft 365 to help organizations quickly identify and remediate insider threats, risks, and code of conduct policy violations across Office, Windows, Azure and third-party apps such as HR systems. - Microsoft
+Security playbooks for easier detection
+The new Insider Risk Management Microsoft 365 feature comes with a collection of highly configurable playbooks specifically tailored for risks like security violations, confidentiality breach or digital IP (intellectual property) theft to assist in effectively spot threats and take action.
+Although insider risks can be malicious and accidental, both types can have a high impact given the level of damages they can inflict on an organization if not detected in due time.
+Insider Risk Management connects signals, including but not limited to file activity, communications sentiment, and abnormal user behaviors, to recognize concealed patterns and risks that other more traditional methods might miss.
+""We have also designed for privacy, so display names for risky users can be anonymized by default to maintain privacy at this level of the investigation and prevent conflicts of interest like seeing a friend or your boss on the list,"" Microsoft adds.
+""Finally, end-to-end integrated workflows ensure that the right people across security, HR, legal, and compliance are involved to quickly investigate and take action once a risk has been identified.""
+
+
+
+Focus on information exposure protection
+Microsoft is also working on including a new tenant-wide idle session timeout feature for Microsoft 365 web apps, a feature that should prevent information exposure stemming from unauthorized access to systems left unattended.
+The new policies will substitute and improve similar idle timeout settings already available for Outlook Web App (OWA), OneDrive, and SharePoint Online (SPO) users.
+Redmond also announced the addition of Azure Active Directory's Conditional Access capability to Microsoft 365 Business in June, to make it simpler for small and medium-sized businesses to control access to company assets conditionally based on user, location, device, data, or app.
+""By configuring Conditional Access policies you can maintain control over how and where your company data is accessed, making your business more secure. You can define exact criteria for who can gain access and block those who don't meet the criteria,"" Microsoft said at the time.
+
+
+",en,"
+
+
+
+
+
+
+
+
+
+
+
+ Microsoft 365 Now Helps Find and Review Insider Security Threats
+04 Nov 2019, 14:00 by Sergiu Gatlan
+
+
+
+Microsoft announced the addition of Insider Risk Management to its Microsoft 365 cloud services platform designed to detect and investigate insider security threats within organizations.
+""We are announcing a new insider risk management solution in Microsoft 365 to help identify and remediate threats stemming from within an organization,"" Microsoft said.
+""Now in private preview, this new solution leverages the Microsoft Graph along with third-party signals, like HR systems, to identify hidden patterns that traditional methods would likely miss.""
+Organizations that want to sign up for an Insider Risk Management private preview can do so at Microsoft Ignite. 
+Today, we announced Insider Risk Management in Microsoft 365 to help organizations quickly identify and remediate insider threats, risks, and code of conduct policy violations across Office, Windows, Azure and third-party apps such as HR systems. - Microsoft
+Security playbooks for easier detection
+The new Insider Risk Management Microsoft 365 feature comes with a collection of highly configurable playbooks specifically tailored for risks like security violations, confidentiality breach or digital IP (intellectual property) theft to assist in effectively spot threats and take action.
+Although insider risks can be malicious and accidental, both types can have a high impact given the level of damages they can inflict on an organization if not detected in due time.
+Insider Risk Management connects signals, including but not limited to file activity, communications sentiment, and abnormal user behaviors, to recognize concealed patterns and risks that other more traditional methods might miss.
+""We have also designed for privacy, so display names for risky users can be anonymized by default to maintain privacy at this level of the investigation and prevent conflicts of interest like seeing a friend or your boss on the list,"" Microsoft adds.
+""Finally, end-to-end integrated workflows ensure that the right people across security, HR, legal, and compliance are involved to quickly investigate and take action once a risk has been identified.""
+
+
+
+Focus on information exposure protection
+Microsoft is also working on including a new tenant-wide idle session timeout feature for Microsoft 365 web apps, a feature that should prevent information exposure stemming from unauthorized access to systems left unattended.
+The new policies will substitute and improve similar idle timeout settings already available for Outlook Web App (OWA), OneDrive, and SharePoint Online (SPO) users.
+Redmond also announced the addition of Azure Active Directory's Conditional Access capability to Microsoft 365 Business in June, to make it simpler for small and medium-sized businesses to control access to company assets conditionally based on user, location, device, data, or app.
+""By configuring Conditional Access policies you can maintain control over how and where your company data is accessed, making your business more secure. You can define exact criteria for who can gain access and block those who don't meet the criteria,"" Microsoft said at the time.
+
+
+"

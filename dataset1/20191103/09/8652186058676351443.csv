@@ -1,0 +1,124 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Los hackeos y fallos de seguridad más peligrosos de Android de 2019
+03 Nov 2019, 09:00 by Beatriz Alcántara
+
+
+
+2019 ha sido un año preocupante si hablamos de ciberseguridad, con graves hackeos protagonizando las noticias tecnológicas de manera habitual. Pese a la seguridad de la que presumen los responsables de Android, el sistema operativo también puede ser vulnerable ante fallos propios y ataques externos, como los de la herramienta “hackeadora” del FBI.
+Aunque tengas un móvil Android seguro, este ha podido estar en peligro durante varias ocasiones durante 2019 sin tu conocimiento. A continuación, repasamos cuáles han sido los fallos de seguridad más peligrosos del año, y cómo han podido afectar a tus dispositivos con el sistema operativo de Google.
+Los peores hackeos y fallos de seguridad de Android de 2019
+Malwares preinstalados en teléfonos Alcatel
+Pocos días habían pasado desde el comienzo de año cuando la firma de seguridad Upstream informó de que había encontrado un grave fallo en terminales Alcatel. Según sus expertos, la app Weather Forecast-World Weather Accurate Radar, preinstalada en los modelos Pixi 4 y A3 Max, contenía un malware que suscribía a los usuarios a servicios de pago sin su consentimiento.
+El archivo APK “com.tct.weather”, desarrollado por TCL Corporation, contenía un programa peligroso que también se dedicaba a recopilar y almacenar datos de localizaciones, correos electrónicos y números IMEI. No solo los usuarios de Alcatel estuvieron en peligro, también aquellos que descargaron la aplicación del tiempo desde Google Play, donde acumula más de 10 millones de instalaciones.
+El navegador Tor falla con apps de Android
+Poco después, en febrero, expertos italianos aseguraron haber desarrollado un algoritmo que podía reconocer el uso de apps de Android dentro de Tor, el navegador para entrar a la Deep y Dark Web. Aunque esta herramienta permite una navegación totalmente privada, el algoritmo podía revelar si el usuario estaba utilizando apps de Android como Instagram, YouTube o Spotify.
+
+
+
+Para conseguirlo, los responsables del sistema le entrenaron para reconocer los patrones de tráfico de esas aplicaciones. Tras el aprendizaje, el algoritmo era capaz de detectar el uso de esas apps con una precisión del 97,3%, poniendo en duda la privacidad y el anonimato que suponía navegar en Tor hasta el momento.
+La inseguridad del desbloqueo facial y dactilar
+El reconocimiento facial fue definido como una medida imprescindible para la seguridad de los nuevos teléfonos. Sin embargo, los últimos meses han puesto en duda esta creencia. En marzo, el canal de YouTube AndroidWorld.it demostró cómo el Samsung Galaxy S10 podía desbloquearse con una foto.
+El mismo Galaxy S10 ha sido protagonista por otro grave fallo de seguridad: cualquier huella podría desbloquear el teléfono. Así es, utilizando un protector de pantalla de gel, se podía acceder al teléfono con huellas dactilares que no estaban configuradas en el sistema.
+
+
+
+El problema del reconocimiento facial también está presente en el Pixel 4, un teléfono que se puede desbloquear con los ojos cerrados. Al respecto, Google ha asegurado que este fallo de seguridad será solucionado “en los próximos meses” con la llegada de una nueva actualización.
+Navegadores móviles sin detección de phishing
+Un fallo en los navegadores móviles Chrome, Safari y Firefox provocó que estos estuvieran más de un año sin alertar de amenazas de phishing a sus usuarios, según se descubrió en mayo. Para protegerte ante estos posibles fallos, te recomendamos conocer cómo detectar si te están intentando robar tus datos al navegar en Chrome para Android.
+Malwares de fábrica en cuatro móviles chinos
+En junio de 2019, la Oficina Federal Alemana de Seguridad de la Información (BSI) alertó a los ciudadanos de la presencia de malwares encontrados en al menos cuatro teléfonos móviles vendidos en el país. Hablaba del Doogee BL7000, el M-Horse Pure 1, el Keecoo P11 y el VKworld Mix Plus, cuatro modelos fabricados en China que contenían el troyano Andr/Xgen2-CY.
+Esta puerta trasera, de la que Sophos ya habló en octubre de 2018, se encontraba dentro de una app llamada SoundRecorder, y permitía a los hackers descargar, instalar y desinstalar apps, abrir enlaces en el navegador y ejecutar comandos de shell en el teléfono afectado.
+Pixel, Samsung, Xiaomi o Huawei, en grave riesgo
+El equipo Project Zero de Google descubrió en octubre una grave amenaza que ponía en serio peligro a varios modelos de Samsung, Xiaomi, Huawei y sus propios Pixel. Este malware, detectado en 2017, se creía eliminado, pero volvió a aparecer en las nuevas versiones del sistema.
+
+
+
+Detrás de su creación podría encontrarse la organización israelí NSO Group y, aunque no llegó a pasar, la aplicación maliciosa permitía a los hackers hacerse con el control total del móvil infectado. En concreto, los modelos en peligro eran los siguientes:
+
+Google Pixel, Pixel 2 y Pixel 3 con Android 9 o Android 10 Beta
+Huawei P20
+Samsung Galaxy S7, S8 y S9
+Xiaomi Redmi 5A
+Xiaomi Redmi Note 5
+Motorola Moto Z3
+Móviles de LG con Android 8 Oreo
+OPPO A3
+
+Estos han sido los hackeos y fallos de seguridad más peligrosos de Android de 2019, que han amenazado los datos privados de millones de usuarios. Para terminar, debemos destacar el trabajo de los expertos en ciberseguridad, esos que se dedican a encontrar los problemas y a darnos una solución antes de que se produzcan serias consecuencias.
+Síguenos en Instagram Únete a nuestro canal de Telegram
+
+
+",es,"
+
+
+
+
+
+
+
+
+
+
+
+The most dangerous hacks and security flaws of Android 2019
+03 Nov 2019, 09:00 by Beatriz Alcántara
+
+
+
+2019 has been a worrying year if we talk about cybersecurity, with serious hacks starring in technological news on a regular basis. Despite the security of those responsible for Android, the operating system can also be vulnerable to own failures and external attacks, such as those of the ""hacker"" tool of the FBI.
+Even if you have a secure Android phone, it has been in danger for several occasions during 2019 without your knowledge. Next, we review what have been the most dangerous security flaws of the year, and how they have been able to affect your devices with Google's operating system.
+The worst hacks and security flaws of Android in 2019
+Malwares preinstalled on Alcatel phones
+A few days had passed since the beginning of the year when the security firm Upstream reported that it had found a serious fault in Alcatel terminals. According to its experts, the Weather Forecast-World Weather Accurate Radar app, preinstalled on Pixi 4 and A3 Max models, contained malware that subscribed users to paid services without their consent.
+The APK file “com.tct.weather”, developed by TCL Corporation, contained a dangerous program that was also dedicated to collecting and storing data from locations, emails and IMEI numbers. Not only were Alcatel users in danger, but also those who downloaded the weather application from Google Play, where it accumulates more than 10 million installations.
+Tor browser fails with Android apps
+Shortly after, in February, Italian experts claimed to have developed an algorithm that could recognize the use of Android apps within Tor, the browser to enter the Deep and Dark Web. Although this tool allows a totally private navigation, the algorithm could reveal if the user was using Android apps like Instagram, YouTube or Spotify.
+
+
+
+To achieve this, the system managers trained him to recognize the traffic patterns of those applications. After learning, the algorithm was able to detect the use of these apps with an accuracy of 97.3%, doubting the privacy and anonymity involved in navigating Tor so far.
+The insecurity of facial and finger unlock
+Facial recognition was defined as an essential measure for the safety of new phones. However, recent months have cast doubt on this belief. In March, the AndroidWorld.it YouTube channel demonstrated how the Samsung Galaxy S10 could be unlocked with a photo.
+The Galaxy S10 itself has been the protagonist for another serious security breach: any fingerprint could unlock the phone. That's right, using a gel screen protector, you could access the phone with fingerprints that were not configured in the system.
+
+
+
+The problem of facial recognition is also present in the Pixel 4, a phone that can be unlocked with your eyes closed. In this regard, Google has ensured that this security breach will be resolved ""in the coming months"" with the arrival of a new update.
+Mobile browsers without phishing detection
+A failure in Chrome, Safari and Firefox mobile browsers caused them to be more than a year without alerting phishing threats to their users, as discovered in May. To protect you against these possible failures, we recommend knowing how to detect if you are trying to steal your data when browsing Chrome for Android.
+Factory Malwares in four Chinese mobiles
+In June 2019, the German Federal Office for Information Security (BSI) alerted citizens to the presence of malware found in at least four mobile phones sold in the country. He talked about the Doogee BL7000, the M-Horse Pure 1, the Keecoo P11 and the VKworld Mix Plus, four models made in China that contained the Andr / Xgen2-CY Trojan.
+This backdoor, of which Sophos already spoke in October 2018, was inside an app called SoundRecorder, and allowed hackers to download, install and uninstall apps, open links in the browser and execute shell commands on the affected phone .
+Pixel, Samsung, Xiaomi or Huawei, at serious risk
+Google's Project Zero team discovered in October a serious threat that seriously endangered several models of Samsung, Xiaomi, Huawei and their own Pixel. This malware, detected in 2017, was believed to be removed, but reappeared in the new system versions.
+
+
+
+Behind its creation could be the Israeli organization NSO Group and, although it did not happen, the malicious application allowed hackers to take full control of the infected mobile. Specifically, the models in danger were the following:
+
+Google Pixel, Pixel 2 and Pixel 3 with Android 9 or Android 10 Beta
+Huawei P20
+Samsung Galaxy S7, S8 and S9
+Xiaomi Redmi 5A
+Xiaomi Redmi Note 5
+Motorola Moto Z3
+LG phones with Android 8 Oreo
+OPPO A3
+
+These have been the most dangerous hacks and security flaws of Android in 2019, which have threatened the private data of millions of users. Finally, we must highlight the work of cybersecurity experts, those who are dedicated to finding the problems and giving us a solution before serious consequences occur.
+Follow us on Instagram Join our Telegram channel
+
+
+"

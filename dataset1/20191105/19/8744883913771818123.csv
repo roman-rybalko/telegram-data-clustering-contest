@@ -1,0 +1,54 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Ученые нашли уязвимость в «умных» колонках
+05 Nov 2019, 19:31 by Евгений Хвостик
+Ученые Мичиганского университета сообщили о потенциальной уязвимости «умных» колонок и других устройств с голосовым управлением. Специалисты пришли к выводу, что устройства можно «вскрыть» при помощи фотоакустического эффекта, создаваемого лазерным излучением малой мощности.
+Исследователи провели ряд опытов с «умной» колонкой Amazon Alexa, устройствами, использующими голосовые помощники Google Assistant и Apple Siri, а также Facebook Portal. Они выяснили, что при помощи лазера можно подать сигнал, который вызывает колебания диафрагмы встроенного микрофона и воспринимается устройством как голосовая команда. Как отмечают исследователи, это позволяет «получить контроль над такими устройствами на расстоянии до 110 м и между двумя отдельными помещениями».
+Подчеркивается, что система голосовой идентификации пользователя на таких устройствах либо отсутствует, либо является слабой. В связи с этим «злоумышленник может использовать фотоакустические команды для открытия дверей, гаражных замков, совершения покупок в интернете за счет жертвы и даже отслеживания и разблокирования некоторых видов транспорта, например Tesla и Ford, которые подключены к Google-аккаунту жертвы».
+Особенно тревожным, по мнению исследователей, является то, что такой лазерный сигнал может воздействовать на микрофон «умного» устройства даже через стекло, поэтому находящийся за пределами дома злоумышленник может открыть входную дверь при помощи колонки, если она находится в пределах его видимости — стоит на подоконнике или рядом с окном. Отмечается, что воздействовать на работу «умной» колонки можно даже при помощи обычной лазерной указки, если направить ее луч точно на встроенный микрофон устройства.
+Исследователи считают, что противостоять потенциальным хакерским атакам можно разными способами:
+
+усилить систему голосовой верификации;
+создать дополнительную защитную шторку/сетку у микрофона, которая бы препятствовала проникновению света лазера на диафрагму;
+разработать систему анализа полученного сигнала несколькими микрофонами устройства (если сигнал получает только один микрофон, а другие — нет, это может означать получение не настоящего голосового сигнала, а направленного лазерного луча — соответственно, такая команда должна игнорироваться устройством).
+
+
+
+",ru,"
+
+
+
+
+
+
+
+
+
+
+
+Scientists have found vulnerability in smart columns
+05 Nov 2019, 19:31 by Evgeny Khvostik
+Scientists at the University of Michigan reported the potential vulnerability of smart speakers and other voice-controlled devices. Specialists came to the conclusion that the devices can be ""opened"" using the photoacoustic effect created by low-power laser radiation.
+The researchers conducted a series of experiments with the “smart” column Amazon Alexa, devices using the voice assistants Google Assistant and Apple Siri, as well as Facebook Portal. They found that using a laser, you can give a signal that causes the diaphragm of the built-in microphone to oscillate and is perceived by the device as a voice command. According to the researchers, this allows “to gain control over such devices at a distance of up to 110 m and between two separate rooms”.
+It is emphasized that the user's voice identification system on such devices is either absent or weak. In this regard, “an attacker can use photoacoustic commands to open doors, garage locks, make purchases on the Internet at the expense of the victim, and even track and unlock certain types of vehicles, such as Tesla and Ford, which are connected to the victim’s Google account.”
+Particularly alarming, according to researchers, is that such a laser signal can affect the microphone of a “smart” device even through glass, so an attacker located outside the house can open the front door with a speaker, if it is within its visibility, it’s window sill or next to the window. It is noted that it is possible to influence the operation of a “smart” speaker even with the help of a conventional laser pointer, if you direct its beam precisely at the device’s built-in microphone.
+Researchers believe that there are several ways to counter potential hacker attacks:
+
+strengthen voice verification system;
+create an additional protective curtain / grid at the microphone, which would prevent the penetration of laser light on the diaphragm;
+to develop a system for analyzing the received signal by several microphones of the device (if the signal receives only one microphone and the others do not, this may mean receiving not a real voice signal, but a directed laser beam - accordingly, such a command should be ignored by the device).
+
+
+
+"

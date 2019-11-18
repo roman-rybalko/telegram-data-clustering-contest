@@ -1,0 +1,44 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+مقایسه بین توان اکتیو و راکتیو
+07 Nov 2019, 13:35 by پایگاه خبری صنعت برق - برق نیوز BarghNews
+تفاوت اصلی بین توان اکتیو و راکتیو در این است که توان اکتیو در واقع توان حقیقی یا واقعی است که در مدار مورد استفاده قرار می‌گیرد در حالی که توان راکتیو بین بار و منبع رفت و برگشت می‌کند و از نظر تئوری کاربردی ندارد. سرویس آموزش و آزمون برق نیوز،تفاوت اصلی بین توان اکتیو و راکتیو در این است که توان اکتیو در واقع توان حقیقی یا واقعی است که در مدار مورد استفاده قرار می‌گیرد در حالی که توان راکتیو بین بار و منبع رفت و برگشت می‌کند و از نظر تئوری کاربردی ندارد. مثلث توان که در زیر آمده ارتباط بین توان اکتیو، راکتیو و توان ظاهری را نشان می‌دهد. تمام این توان‌ها در مدارات AC به وجود می‌آیند که در آن‌ها جریان نسبت به ولتاژ پیش‌فاز یا پس‌فاز است یعنی اختلاف فاز (زاویه فاز Φ) بین ولتاژ و جریان وجود دارد.مثلث توان توان اکتیو چیست؟توانی که به صورت واقعی برای کار‌های مفید در مدارات AC یا DC مورد استفاده یا مصرف قرار می‌گیرد، توان اکتیو نامیده می‌شود. این توان، توان درست، حقیقی، مفید یا توان وات کامل نیز نامیده و با P نشان داده می‌شود و واحد آن وات (W)، کیلووات (kW) و مگاوات (MW) می‌باشد. مقدار متوسط توان اکتیو را می‌توان با استفاده از فرمول‌های زیر محاسبه نمود.فرمول‌های توان اکتیو:P = V x I… (DC مدار)P = V x I xCosθ … (تکفاز AC مدار)P = √۳ x VL xIL x Cosθ … (سه فاز AC مدار)kW = √ (kVA^۲ – kVAR^۲)توان راکتیو چیست؟توانی که بین منبع و بار در مدار حرکت می‌کند و بازمی‌گردد توان راکتیو نامیده می‌شود. این توان، توان غیرمفید یا توان بی وات نیز نامیده می‌شود و با Q نشان داده می‌شود و بر حسب وار (ولت آمپر راکتیو)، کیلووار (kVAR) و مگاوار (MVAR) بیان می‌گردد.توان راکتیو نیز مفید است بدان معنا که به تولید میدان الکتریکی و مغناطیسی کمک می‌کند و در مدار ذخیره و توسط ترانسفورماتور و موتور‌های القایی و ... تخلیه می‌گردد. فرمول‌های توان راکتیوQ = V x I x SinθVAR = √ (VA۲ – P۲)kVAR = √ (kVA۲ – kW۲)توان راکتیو = √ توان ظاهری^ ۲ – توان حقیقی^ ۲)مقایسه بین توان اکتیو و راکتیودر جدول زیر تفاوت‌های اصلی توان اکتیو و راکتیو آورده شده است.
+
+
+
+  منبع: توان راکتیو
+
+
+",fa,"
+
+
+
+
+
+
+
+
+
+
+
+Comparison between Active and Reactive Power
+07 Nov 2019, 13:35 by Electrical Industry News - Electricity News BarghNews
+The main difference between reactive power and reactive power is that the actual power is actually the actual or actual power used in the circuit while the reactive power circulates between the load and the source and is not theoretically applicable. The main difference between Active and Reactive Power is that the active power is actually the actual or actual power used in the circuit while the reactive power circulates between the load and the source Theory has no application. The power triangle below shows the relationship between active, reactive power and apparent power. All of these powers occur in AC circuits, where the current is at a pre-phase or post-phase voltage, meaning the phase difference (phase angle Φ) between the voltage and current. What is Active Power? AC or DC circuits are used or consumed, called active power. This power is also called true, true, useful, or full watt power, and is denoted by P and is unit watt (W), kW (kW) and megawatt (MW). The average amount of active power can be calculated using the following formulas. Active Power Formulas: P = V x I… (DC Circuit) P = V x I xCosθ… (Single Phase AC Circuit) P = 1 x VL xIL x Cosθ… (Three Phases AC Circuit) kW = √ (kVA ^ 1 - kVAR ^ 1) What is Reactive Power? The power that moves between the source and the load in the circuit is called reactive power. This power is also called unused power or watt power and is indicated by Q and is expressed in terms of Voltage Amperes, kVAR, and MVAR, respectively. The electric and magnetic field helps and is stored in the circuit and discharged by transformers and induction motors. Reactive Power Formulas Q = V x I x SinθVAR = √ (VA۲ - P۲) kVAR = √ (kVA۲ - kW۲) Reactive Power = ظ Apparent Power ۲ ۲ - Actual Power ۲) Comparison between Active Power and Reactor The table below shows the main differences of active power And reactive is brought.
+
+
+
+Source: Reactive Power
+
+
+"

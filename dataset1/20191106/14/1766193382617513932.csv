@@ -1,0 +1,52 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Graphdatenbank: Neo4j startet nativen Cloud-Service Aura
+Mit Neo4j Aura startet der Anbieter seinen ersten verwalteten Graphdatenbank-as-a-Service, der sich vor allem an kleine und mittelgroße Unternehmen richtet.
+06 Nov 2019, 14:46 by Matthias Parbel
+In dem Bemühen, die gleichnamige Graphdatenbank zu einer kompletten Serviceplattform für Graph Analytics auszubauen, hat Neo4j nun einen vollständig verwalteten und nativ implementierten Graphdatenbank-as-a-Service vorgestellt. Neo4j Aura soll es vor allem kleinen und mittelgroßen Unternehmen sowie deren Entwicklern einfacher und flexibler machen, auch komplexe Datenbankanwendungen zu bauen – beispielsweise in Bereichen wie Machine Learning, Betrugserkennung oder bei der Kundenbetreuung.
+Neo4j Aura bietet von der lokalen Graphdatenbank bekannte Funktionen wie ACID-konforme Transaktionen, TLS-verschlüsselte Passwortauthentifizierung und End-to-End-Datenverschlüsselung, um datenintensive Anwendungen nicht nur flexibel und performant, sondern auch sicher und mit solider Datenkonsistenz betreiben zu können. Als Managed Database Service verspricht Aura darüber hinaus eine bedarfsgerechte Skalierung, die sich den wechselnden Lastanforderungen anpasst, ohne Änderungen am Workflow vornehmen zu müssen.
+
+
+Neo4j Aura integriert das Graphdatenbank-Konzept in einem DBaaS.(Bild: Neo4j)
+
+Neben einem transparenten Preismodell, das pauschale Abrechnung nach Stundensatz und verwendeter Kapazität vorsieht, will Neo4j bei der angepeilten Kundenklientel mit einem geringen Administrationsaufwand punkten. Der Graphdatenbank-as-a-Service soll einfach und schnell für neue Projekte bereitstehen. Konfigurationsanpassungen wie das Cluster-Setup, Tuning oder das Einspielen von Software- und Security-Updates sollen unterbrechungsfrei erfolgen können. Die hohe Verfügbarkeit des Database-as-a-Service (DBaaS) ist dabei nach Aussage von Neo4j durch integrierte Fehlertoleranz sowie sogenannte Selbstheilungsfunktionen gewährleistet.
+Entwicklern steht wie bei Neo4j für Cloud-native Anwendungen die Abfragesprache Cypher in vollem Umfang zur Verfügung. Via GRANDstack lassen sich aber auch GraphQL und React-Frontends mit Neo4j Aura nutzen. Darüber hinaus stehen Entwicklern Integrationen von AWS Lambda oder Google Cloud Functions offen. Weitere Details zu Neo4j Aura finden sich in der offiziellen Ankündigung sowie im Blogbeitrag von CEO Emil Efrem. (map)
+
+
+",de,"
+
+
+
+
+
+
+
+
+
+
+
+Graph database: Neo4j launches native cloud service Aura
+With Neo4j Aura, the provider launches its first managed graph database as a service, aimed primarily at small and medium-sized businesses.
+06 Nov 2019, 14:46 by Matthias Parbel
+In an effort to expand the eponymous graph database into a complete service platform for Graph Analytics, Neo4j has now introduced a fully managed and natively implemented Graph Database as a Service. Neo4j Aura is designed to make it easier and more flexible, especially for small and mid-sized companies and their developers, to build complex database applications such as machine learning, fraud detection and customer care.
+Neo4j Aura provides familiar features from the local graph database, such as ACID-compliant transactions, TLS-encrypted password authentication, and end-to-end data encryption to enable data-intensive applications to be flexible, performant, and secure with solid data consistency. As a managed database service, Aura also promises needs-based scaling that adapts to changing load requirements without having to make changes to the workflow.
+
+
+Neo4j Aura integrates the graph database concept in a DBaaS. (Image: Neo4j)
+
+In addition to a transparent pricing model, which provides a flat-rate billing by hourly rate and capacity used Neo4j wants to score with the targeted customer clientele with a low administration cost. The Graph database as a service should be easily and quickly available for new projects. Configuration adjustments such as cluster setup, tuning or the import of software and security updates should be possible without interruption. According to Neo4j, the high availability of the Database-as-a-Service (DBaaS) is ensured by integrated fault tolerance and so-called self-healing functions.
+For developers, as with Neo4j, the query language Cypher is fully available for cloud-native applications. Via GRANDstack you can also use GraphQL and React frontends with Neo4j Aura. In addition, developers can integrate with AWS Lambda or Google Cloud Functions. Further details on Neo4j Aura can be found in the official announcement and in the blog post by CEO Emil Efrem. (Map)
+
+
+"

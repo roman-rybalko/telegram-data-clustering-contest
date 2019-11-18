@@ -1,0 +1,70 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Amazon, Xiaomi, Samsung, Sony e outras são derrotadas em evento hacker
+Pwn2Own reuniu hackers durante dois dias em Tóquio e distribuiu mais de US$ 350 mil em prêmios
+07 Nov 2019, 15:40 by Rafael Rigues
+Aconteceu em Tóquio, no Japão, a edição 2019 do Pwn2Own, evento hacker anual onde os participantes competem para ver quem consegue controle sobre um número maior de dispositivos definidos previamente pelos organizadores. A equipe vencedora foi a Fluoroacetate, composta pelos hackers Amat Cama e Richard Zhu, que já havia vencido duas edições anteriores.
+O propósito do concurso, organizado pela Zero Day Initiative, é demonstrar a vulnerabilidade de aparelhos e software usados em larga escala. Todas as vulnerabilidades descobertas durante a competição são relatadas aos fabricantes para que possam ser corrigidas. Cada dispositivo invadido com sucesso dá à equipe pontos e um prêmio em dinheiro, e vence quem acumular mais pontos ao final de dois dias.
+
+
+
+No primeiro dia a Fluoroacetate conseguiu controle sobre uma TV Sony X800G usando uma falha de JavaScript no navegador (2 pontos e US$ 15 mil), um Amazon Echo Show 5 usando um estouro de inteiros (6 pontos e US$ 60 mil), uma Smart TV Samsung Q60 (2 pontos, US$ 15 mil), um smartphone Xiaomi Mi 9 (2 pontos, US$ 20 mil), e um Samsung Galaxy S10 (3 pontos, US$ 30 mil).
+Já no segundo dia a equipe atacou um Galaxy S10, conseguindo enviar um arquivo para o aparelho, o que lhes rendeu US$ 50 mil e mais 5 pontos. Em seguida a equipe conseguiu uma vitória parcial contra um roteador NETGEAR Nighthawk Smart WiFi Router (R6700), e outra contra o navegador do Galaxy S10. Com um total de 18,5 pontos os hackers da Fluoroacetate foram coroados “Masters of Pwn” e levaram para casa um prêmio de US$ 195.000.
+
+
+
+No total o concurso distribuiu mais de US$ 315.000 em prêmios e conseguiu 18 diferentes bugs em vários produtos, que foram reportados aos respectivos fabricantes. Estes tem 90 dias para desenvovler uma correção, antes que os detalhes de como explorar as falhas sejam divulgados ao público.
+Fonte: Zero Day Initiative
+
+
+
+
+
+
+
+",pt,"
+
+
+
+
+
+
+
+
+
+
+
+Amazon, Xiaomi, Samsung, Sony and others are defeated in hacker event
+Pwn2Own gathered hackers for two days in Tokyo and distributed over $ 350,000 in prizes
+Nov 07 2019, 15:40 by Rafael Rigues
+The 2019th edition of Pwn2Own, the annual hacking event, took place in Tokyo, Japan, where participants compete to see who can control a larger number of devices previously set by the organizers. The winning team was Fluoroacetate, made up of hackers Amat Cama and Richard Zhu, who had already won two previous editions.
+The purpose of the contest, organized by Zero Day Initiative, is to demonstrate the vulnerability of large-scale handsets and software. All vulnerabilities discovered during competition are reported to manufacturers so that they can be corrected. Each successfully hacked device gives the team points and a cash prize, and wins who accumulates the most points after two days.
+
+
+
+On the first day Fluoroacetate gained control over a Sony X800G TV using a browser JavaScript bug (2 points and $ 15,000), an Amazon Echo Show 5 using an integer overflow (6 points and $ 60,000), a Samsung Q60 Smart TV (2 points, $ 15,000), a Xiaomi Mi 9 smartphone (2 points, $ 20,000), and a Samsung Galaxy S10 (3 points, $ 30,000).
+Already on the second day the team attacked a Galaxy S10, managing to send a file to the device, which earned them $ 50,000 plus 5 points. The team then won a partial victory against a NETGEAR Nighthawk Smart WiFi Router (R6700) router, and another against the Galaxy S10 browser. With a total of 18.5 points the Fluoroacetate hackers were crowned “Masters of Pwn” and took home a prize of $ 195,000.
+
+
+
+In total the contest distributed over $ 315,000 in prizes and got 18 different bugs in various products, which were reported to the respective manufacturers. They have 90 days to develop a fix before the details of how to exploit the flaws are made public.
+Source: Zero Day Initiative
+
+
+
+
+
+
+
+"

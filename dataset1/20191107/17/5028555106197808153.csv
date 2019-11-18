@@ -1,0 +1,134 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+The Pixel 4’s latest battery compromise? Artificially capped display brightness
+Hidden feature allows the Pixel 4 to approach semi-competitive display brightness.
+07 Nov 2019, 17:20 by Ron Amadeo
+
+
+
+The Google Pixel 4. Ron Amadeo
+
+
+
+The back of this one is white. Ron Amadeo
+
+
+
+Normally the forehead is jet black, but if you blast it with light, you can see all the sensors inside. Ron Amadeo
+
+
+
+The bottom houses one of the stereo speakers. Ron Amadeo
+
+
+
+Here you can see the camera bump. Ron Amadeo
+
+
+
+The side. Ron Amadeo
+
+
+
+The other side has this colorful power button. Ron Amadeo
+
+
+
+The new Google Assistant has this multi-colored design at the bottom. Ron Amadeo
+
+
+
+The G logo. Ron Amadeo
+
+
+There's a growing mountain of evidence that the Pixel 4 was saddled with a battery that's just too small, and Google's road to an acceptable runtime involved slashing the phone's abilities with software limits. The latest discovery comes from XDA Developers' Mishaal Rahman, who found an unused high brightness mode hidden in the Pixel 4's code.
+A ""high brightness mode"" has become a typical feature of smartphone display panels. Rather than a dedicated toggle, manufacturers usually enable a high-brightness mode when the user pegs the brightness slider all the way to the max or when the ambient brightness sensor detects sunlight. This usually negatively affects battery life, but when the choice is between seeing your phone or not seeing your phone in direct sunlight, the runtime tradeoff is a welcome option.
+The Pixel 4 display is not that bright, with a full-screen peak brightness of around 450 nits. The Galaxy S10, on the other hand, has a peak full-screen brightness of 800 nits, and a big difference seems to be the lack of this boosted brightness mode. Rahman found the Pixel 4's high brightness mode hidden in the Pixel 4's kernel, but it's not a mode normal users can freely switch into. It doesn't turn on via the slider or with high ambient brightness.
+As usual, Rahman figured out a way to toggle the feature on and off with root access, which will allow the Pixel 4 to hit a more acceptable peak brightness of 610 nits. It sounds like flipping the switch makes the feature work just like it does on a Samsung phone—it just uncaps the brightness slider, allowing the max setting to pump out more light.
+This is the second big discovery around the Pixel 4's totally wonky display implementation. Pixel 4 is advertised as having a ""Smooth display,"" which is a reference to the panel's 90Hz capabilities, but unlike every other 90Hz phone on the market, the Pixel 4 doesn't run at 90Hz mode all the time. Instead, Google tied the refresh rate to the display brightness and the ambient light, with the result being that the ""90Hz"" Pixel 4 runs in 60Hz mode most of the time. Google said the 90Hz mode was limited to ""preserve battery,"" so it's likely that the brightness caps were put in place following that same line of reasoning.
+The battery on the Pixel 4 has been a major concern since the phone was announced. The smaller Pixel 4 has only a 2800mAh battery, a downgrade from the 2915mAh battery on the Pixel 3 and a lot smaller than the similarly sized Galaxy S10's 3400mAh battery. For a Samsung flagship with a battery comparable to the Pixel 4, you'd have to go back to the Galaxy S6, which is five years old now. The Pixel 4 XL is a bit better but still not competitive, with a 3700mAh battery compared to Samsung's 4100mAh battery. Keep in mind that these phones are the same price when comparing like-for-like storage options.
+After the 90Hz mode's limitations were discovered, Google shipped a November patch that allowed 90Hz to work in slightly brighter conditions, but testing revealed the Pixel 4 still runs in 60Hz mode the vast majority of the time. Maybe we'll get a brightness-uncapping patch soon.
+
+Further Reading
+
+
+
+
+",en,"
+
+
+
+
+
+
+
+
+
+
+
+The Pixel 4’s latest battery compromise? Artificially capped display brightness
+Hidden feature allows the Pixel 4 to approach semi-competitive display brightness.
+07 Nov 2019, 17:20 by Ron Amadeo
+
+
+
+The Google Pixel 4. Ron Amadeo
+
+
+
+The back of this one is white. Ron Amadeo
+
+
+
+Normally the forehead is jet black, but if you blast it with light, you can see all the sensors inside. Ron Amadeo
+
+
+
+The bottom houses one of the stereo speakers. Ron Amadeo
+
+
+
+Here you can see the camera bump. Ron Amadeo
+
+
+
+The side. Ron Amadeo
+
+
+
+The other side has this colorful power button. Ron Amadeo
+
+
+
+The new Google Assistant has this multi-colored design at the bottom. Ron Amadeo
+
+
+
+The G logo. Ron Amadeo
+
+
+There's a growing mountain of evidence that the Pixel 4 was saddled with a battery that's just too small, and Google's road to an acceptable runtime involved slashing the phone's abilities with software limits. The latest discovery comes from XDA Developers' Mishaal Rahman, who found an unused high brightness mode hidden in the Pixel 4's code.
+A ""high brightness mode"" has become a typical feature of smartphone display panels. Rather than a dedicated toggle, manufacturers usually enable a high-brightness mode when the user pegs the brightness slider all the way to the max or when the ambient brightness sensor detects sunlight. This usually negatively affects battery life, but when the choice is between seeing your phone or not seeing your phone in direct sunlight, the runtime tradeoff is a welcome option.
+The Pixel 4 display is not that bright, with a full-screen peak brightness of around 450 nits. The Galaxy S10, on the other hand, has a peak full-screen brightness of 800 nits, and a big difference seems to be the lack of this boosted brightness mode. Rahman found the Pixel 4's high brightness mode hidden in the Pixel 4's kernel, but it's not a mode normal users can freely switch into. It doesn't turn on via the slider or with high ambient brightness.
+As usual, Rahman figured out a way to toggle the feature on and off with root access, which will allow the Pixel 4 to hit a more acceptable peak brightness of 610 nits. It sounds like flipping the switch makes the feature work just like it does on a Samsung phone—it just uncaps the brightness slider, allowing the max setting to pump out more light.
+This is the second big discovery around the Pixel 4's totally wonky display implementation. Pixel 4 is advertised as having a ""Smooth display,"" which is a reference to the panel's 90Hz capabilities, but unlike every other 90Hz phone on the market, the Pixel 4 doesn't run at 90Hz mode all the time. Instead, Google tied the refresh rate to the display brightness and the ambient light, with the result being that the ""90Hz"" Pixel 4 runs in 60Hz mode most of the time. Google said the 90Hz mode was limited to ""preserve battery,"" so it's likely that the brightness caps were put in place following that same line of reasoning.
+The battery on the Pixel 4 has been a major concern since the phone was announced. The smaller Pixel 4 has only a 2800mAh battery, a downgrade from the 2915mAh battery on the Pixel 3 and a lot smaller than the similarly sized Galaxy S10's 3400mAh battery. For a Samsung flagship with a battery comparable to the Pixel 4, you'd have to go back to the Galaxy S6, which is five years old now. The Pixel 4 XL is a bit better but still not competitive, with a 3700mAh battery compared to Samsung's 4100mAh battery. Keep in mind that these phones are the same price when comparing like-for-like storage options.
+After the 90Hz mode's limitations were discovered, Google shipped a November patch that allowed 90Hz to work in slightly brighter conditions, but testing revealed the Pixel 4 still runs in 60Hz mode the vast majority of the time. Maybe we'll get a brightness-uncapping patch soon.
+
+Further Reading
+
+
+
+
+"

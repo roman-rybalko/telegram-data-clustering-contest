@@ -1,0 +1,64 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Intel presenta la FPGA más grande del mundo, se llama Stratix 10 GX 10M y tiene 43.300M de transistores
+06 Nov 2019 by Borja Rodríguez
+Intel presentó hoy la FPGA (al castellano: matriz de puertas lógicas programable en campo​​) más grande del mundo, la cual se llama Intel Stratix 10 GX 10M, construida a un proceso de fabricación de 14nm y que cuenta con nada menos que 43.300 millones de transistores para conseguir tal hazaña.
+El Stratix 10 GX 10M alberga también más de 10,2 millones de células lógicas alojadas dentro de dos grandes matrices, las cuales están conectadas por mediante la interconexión Embedded Multi-die Interconnect Bridge (EMIB) de Intel.
+
+
+
+El Intel Stratix 10 GX 10M cuenta con cuatro matrices adicionales además de las dos de lógica, también conectadas por EMIB, que cuentan con 48 transceptores en total que tienen un ancho de banda combinado de hasta 4.5 Tbps. Si se pregunta sobre el ancho de banda entre todas las matrices, gracias a las 25.920 conexiones del EMIB, hay 6,5 Tbps de ancho de banda interno de la matriz, evitando así cualquier tipo de cuello de botella a la hora de transferir los datos. Además, hay 2.304 pines de I/O de usuario, lo que permite la integración de una gran cantidad de puertos para fines de desarrollo.
+
+
+
+Intel anuncia que este modelo también presenta un consumo de energía alrededor de un 40% menor en comparación con el uso de cuatro FPGA's Stratix 10 2800 con la misma capacidad lógica de la célula y la misma frecuencia, lo que significa que todos los usuarios de esta FPGA obtendrán una eficiencia adicional.
+El Stratix 10 GX 10M se anuncia como la plataforma definitiva para la creación de prototipos y la emulación de ASIC (Application Specific Integrated Circuit) a gran escala, ya que cuenta con los medios necesarios para superar el número cada vez mayor de transistores con los que las plataformas de emulación actuales están luchando.
+
+
+
+vía: TechPowerUp
+
+
+",es,"
+
+
+
+
+
+
+
+
+
+
+
+Intel introduces the world's largest FPGA, is called Stratix 10 GX 10M and has 43,300M of transistors
+06 Nov 2019 by Borja Rodríguez
+Intel today presented the world's largest FPGA (in Spanish: field programmable logic gate matrix), which is called Intel Stratix 10 GX 10M, built to a 14nm manufacturing process and which has no less than 43,300 millions of transistors to get such a feat.
+The Stratix 10 GX 10M also houses more than 10.2 million logical cells housed within two large arrays, which are connected through Intel's Embedded Multi-die Interconnect Bridge (EMIB) interconnection.
+
+
+
+The Intel Stratix 10 GX 10M has four additional arrays in addition to the two of logic, also connected by EMIB, which have 48 transceivers in total that have a combined bandwidth of up to 4.5 Tbps. If you ask about the bandwidth between all the matrices, thanks to the 25,920 connections of the EMIB, there are 6.5 Tbps of internal matrix bandwidth, thus avoiding any type of bottleneck when transferring data . In addition, there are 2,304 user I / O pins, which allows the integration of a large number of ports for development purposes.
+
+
+
+Intel announces that this model also has a power consumption around 40% lower compared to the use of four FPGA's Stratix 10 2800 with the same logical capacity of the cell and the same frequency, which means that all users of this FPGA will obtain additional efficiency.
+The Stratix 10 GX 10M is announced as the definitive platform for prototyping and emulation of ASIC (Application Specific Integrated Circuit) on a large scale, as it has the necessary means to overcome the increasing number of transistors with which The current emulation platforms are struggling.
+
+
+
+via: TechPowerUp
+
+
+"

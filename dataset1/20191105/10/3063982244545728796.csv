@@ -1,0 +1,54 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Microsoft schreibt Superman-Film in Glas
+Glas ist ein vergleichsweise robustes Material: Unsere Fensterscheiben halten lange Zeit stand, ohne dass Wetterunbilden oder andere Belastungen wie etwa Silvesterböller oder kleine Steine ihnen ernsthaft etwas anhaben können. Das macht sich Microsoft zunutze: Das Unternehmen hat ein Speichermedium aus Glas entwickelt und einen 40 Jahre alten Film darauf abgelegt.
+05 Nov 2019, 10:49 by Werner Pluta
+Superman in Glas: Microsoft hat den Film Superman in einem Speichermedium aus Glas gespeichert. Ziel von Project Silica ist, ein effektives, robustes Speichermedium für die Zukunft zu entwickeln.
+Das gläserne Speichermedium ist quadratisch und hat mit einer Kantenlänge von 7,5 cm und einer Dicke von 2 mm in etwa die Größe eines Bierdeckels. Beschrieben wird es mit einem Laser, der die Daten in winzigen dreidimensionalen Gittern anordnet. Neben der Position auf der x-,y- und z-Achse kommen als Parameter noch die Ausrichtung der Nanostruktur sowie die Größe der Struktur hinzu. Das Auslesen erfolgt mit Maschinenlernen-Algorithmen, die die Bilder und Muster decodieren, die entstehen, wenn polarisiertes Licht durch das Glas fällt.
+Vorteil des Glasspeichers ist seine Widerstandsfähigkeit: Das Quarzglas könne große Hitze aushalten, sei unempfindlich gegen magnetische Einflüsse und überstehe Überschwemmungen und andere Umweltbedrohungen, die unbezahlbare historische Archive oder kulturelle Schätze zerstören könnten, erklärt Microsoft.
+Die Idee, einen Film in dem Medium zu speichern, kam von Warner Bros. Das Filmunternehmen suchte für sein umfangreiches Archiv nach einem sicheren Speicher, der Wasser ebenso standhalte wie Sonneneruptionen und der keine konstante Temperatur und keine ständige Pflege benötige, sagte Vicky Colf, Technikchefin bei Warner. Dabei seien sie auf das Project Silica gestoßen und und hätten Microsoft kontaktiert.
+
+
+
+""Den ganzen Superman-Film in Glas zu speichern und ihn dann auch wieder auslesen zu können, ist ein wichtiger Meilenstein"", sagte Azure-Technikchef Mark Russinovich. ""Ich sage nicht, dass damit alle Fragen vollständig beantwortet wurden, aber es sieht so aus, als seien wir jetzt so weit, dass wir an der Verfeinerung und der Versuchsdurchführung arbeiten, anstatt uns die Frage zu stellen: 'Können wir das?'""
+Project Silica ist eine Kooperation von Microsoft Research und der Universität von Southampton in Südengland. Die Forscher um Peter Kazansky arbeiten schon seit mehreren Jahren an dem Glasspeicher. 2013 konnten sie erstmals eine 300 KByte große Testdatei in Glas speichern. 2016 präsentierten sie eine Glasscheibe von der Größe einer 2-Euro-Münze mit einer Kapazität von 360 TByte.
+
+
+",de,"
+
+
+
+
+
+
+
+
+
+
+
+Microsoft writes Superman film in glass
+Glass is a comparatively robust material: our window panes last for a long time, without weather or other burdens such as New Year's bulbs or small stones can seriously harm them. Microsoft takes advantage of this: The company has developed a storage medium made of glass and put a 40-year-old film on it.
+05 Nov 2019, 10:49 by Werner Pluta
+Superman in Glass: Microsoft has saved the movie Superman in a glass storage medium. The goal of Project Silica is to develop an effective, robust storage medium for the future.
+The glass storage medium is square and with an edge length of 7.5 cm and a thickness of 2 mm is about the size of a beer mat. It is described with a laser, which arranges the data in tiny three-dimensional grids. In addition to the position on the x, y and z axes, the alignment of the nanostructure as well as the size of the structure are added as parameters. The reading is done with machine learning algorithms that decode the images and patterns that are created when polarized light falls through the glass.
+The advantage of the glass storage is its resistance: The quartz glass can withstand high heat, be insensitive to magnetic influences and survive floods and other environmental threats that could destroy priceless historical archives or cultural treasures, Microsoft explains.
+The idea of saving a movie in the medium came from Warner Bros. The film company was looking for a secure storage that withstands water as well as solar flares and does not require constant temperature and maintenance, said Vicky Colf, chief technology officer at Warner. They came across the Project Silica and had contacted Microsoft.
+
+
+
+""Saving the entire Superman movie and then reading it again is an important milestone,"" said Azure Chief Technology Officer Mark Russinovich. ""I'm not saying that it answered all the questions completely, but it looks like we're now ready to work on refinement and experimentation, rather than asking ourselves, 'Can we do that?'""
+Project Silica is a collaboration between Microsoft Research and the University of Southampton in southern England. The researchers around Peter Kazansky have been working on the glass storage for several years. In 2013, they were able to save a 300 KB test file in glass for the first time. In 2016 they presented a glass panel the size of a 2-euro coin with a capacity of 360 TB.
+
+
+"

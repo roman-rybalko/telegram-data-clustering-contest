@@ -1,0 +1,56 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Optus is the new ACCC NBN speed report king
+07 Nov 2019, 06:09 by Chris Duckett
+
+However the ACCC has an interesting take on networking protocol headers not constituting network traffic.
+
+
+
+
+The latest installment of the broadband speed-monitoring report by the Australian Competition and Consumer Commission (ACCC) has landed, and along with it, Optus has taken the speed crown from TPG. In the report, only three ISPs were able to increase the bandwidth percentage delivered during busy periods compared to the maximum speed of the service being used, namely Optus, Telstra, and Exetel. Optus now sits on 87.6%, followed by TPG on 86.3%, Exetel with 84.8%, Aussie Broadband on 84.2%, MyRepublic with 84%, and Telstra with 83.8%. Bringing up the rear is iiNet on 82.6% and Dodo/iPrimus sitting on a measly 76.4%. The ACCC called out Dodo/iPrimus for advertising on average evening data speeds, rather than during busy periods. ""We will be following this up with Dodo/iPrimus as this approach means it will fall short whenever its speeds dip, as they did this quarter,"" ACCC chair Rod Sims said. ""Consumers should be able to trust RSPs to meet their advertised speed claims.""
+""If consumers are not getting what was promised by their providers, they should contact them to ask about getting the problem fixed or moving onto a cheaper plan where the speeds are attainable."" The report also showed hybrid fibre-coaxial was the NBN technology with the highest daily outage rate, sitting at one outage every two or three days.
+The ACCC also had an interesting interpretation of how networking protocols work, and asserted that customers will ""never make full use of their plan speed"". ""This is because headers, or tags, are added to consumers' communications when they are sent over a network, to ensure the communications are sent to the right network addresses,"" the ACCC said. ""The current capacity does not appear to allow for this extra data, preventing the communications from being sent at the maximum plan speed.""NBN Co could resolve this if it allowed services to run five percent faster before enforcing speed limits.""A spokesperson for NBN told ZDNet the company was consulting on whether to over-dimension its plans.""It's important to note that NBN Co operates as a wholesale layer 2 service provider -- and the protocol overhead, which causes the degradation to the download speeds received by customers, occurs at the layer 3 retail service,"" the spokesperson said.""Based on the industry's interest in this feature, NBN Co is considering expanding its proposed scope of works to over-dimension the downstream speed of the 50/20, 100/20, 110/40 and 250/25 product tiers.""NBN added it would announce the final outcome of its four-month consultation process towards the end of this month. Last week the ACCC said it would maintain the regulated pricing on seven declared services: Unconditioned local loop service, line sharing service, wholesale line rental, local carriage service, fixed originating and terminating access services, and wholesale ADSL. The consumer watchdog said once the main work of NBN construction is completed around June next year, with an 18 month migration period to follow which will ""mostly done"" by 2022, it expects this decision to be its last related to these services. ""Although the NBN rollout is almost finished, RSPs will still need to use these legacy networks to provide services to some consumers for a few more years,"" ACCC chair Rod Sims said on Friday. ""Maintaining the current prices and other terms of access will give the industry some certainty and stability as the NBN migration continues.""  
+Other Rod coverage
+ACCC keeps prices flat for legacy non-NBN fixed line servicesPrices for legacy wholesale ADSL, unconditioned local loop service, and fixed originating and terminating access services to remain unchanged until June 2024.ACCC to look into affordability of 12/1Mbps NBN plansRegulator worried people cannot get a basic NBN service at the same pricing level as ADSL.ACCC alleges Google mislead consumers over Android location data handlingConsumer watchdog says Google collected and used location data without providing users with an informed choice.ACCC loses legal battle to TPG over misleading consumer allegationsFederal Court dismisses case with ACCC to pay costs.ACCC flags shifting NBN rebates for late connections and faults to daily penaltyConsumer watchdog says NBN's existing service standard arrangements are not sufficiently robust.
+
+
+",en,"
+
+
+
+
+
+
+
+
+
+
+
+Optus is the new ACCC NBN speed report king
+07 Nov 2019, 06:09 by Chris Duckett
+
+However the ACCC has an interesting take on networking protocol headers not constituting network traffic.
+
+
+
+
+The latest installment of the broadband speed-monitoring report by the Australian Competition and Consumer Commission (ACCC) has landed, and along with it, Optus has taken the speed crown from TPG. In the report, only three ISPs were able to increase the bandwidth percentage delivered during busy periods compared to the maximum speed of the service being used, namely Optus, Telstra, and Exetel. Optus now sits on 87.6%, followed by TPG on 86.3%, Exetel with 84.8%, Aussie Broadband on 84.2%, MyRepublic with 84%, and Telstra with 83.8%. Bringing up the rear is iiNet on 82.6% and Dodo/iPrimus sitting on a measly 76.4%. The ACCC called out Dodo/iPrimus for advertising on average evening data speeds, rather than during busy periods. ""We will be following this up with Dodo/iPrimus as this approach means it will fall short whenever its speeds dip, as they did this quarter,"" ACCC chair Rod Sims said. ""Consumers should be able to trust RSPs to meet their advertised speed claims.""
+""If consumers are not getting what was promised by their providers, they should contact them to ask about getting the problem fixed or moving onto a cheaper plan where the speeds are attainable."" The report also showed hybrid fibre-coaxial was the NBN technology with the highest daily outage rate, sitting at one outage every two or three days.
+The ACCC also had an interesting interpretation of how networking protocols work, and asserted that customers will ""never make full use of their plan speed"". ""This is because headers, or tags, are added to consumers' communications when they are sent over a network, to ensure the communications are sent to the right network addresses,"" the ACCC said. ""The current capacity does not appear to allow for this extra data, preventing the communications from being sent at the maximum plan speed.""NBN Co could resolve this if it allowed services to run five percent faster before enforcing speed limits.""A spokesperson for NBN told ZDNet the company was consulting on whether to over-dimension its plans.""It's important to note that NBN Co operates as a wholesale layer 2 service provider -- and the protocol overhead, which causes the degradation to the download speeds received by customers, occurs at the layer 3 retail service,"" the spokesperson said.""Based on the industry's interest in this feature, NBN Co is considering expanding its proposed scope of works to over-dimension the downstream speed of the 50/20, 100/20, 110/40 and 250/25 product tiers.""NBN added it would announce the final outcome of its four-month consultation process towards the end of this month. Last week the ACCC said it would maintain the regulated pricing on seven declared services: Unconditioned local loop service, line sharing service, wholesale line rental, local carriage service, fixed originating and terminating access services, and wholesale ADSL. The consumer watchdog said once the main work of NBN construction is completed around June next year, with an 18 month migration period to follow which will ""mostly done"" by 2022, it expects this decision to be its last related to these services. ""Although the NBN rollout is almost finished, RSPs will still need to use these legacy networks to provide services to some consumers for a few more years,"" ACCC chair Rod Sims said on Friday. ""Maintaining the current prices and other terms of access will give the industry some certainty and stability as the NBN migration continues.""  
+Other Rod coverage
+ACCC keeps prices flat for legacy non-NBN fixed line servicesPrices for legacy wholesale ADSL, unconditioned local loop service, and fixed originating and terminating access services to remain unchanged until June 2024.ACCC to look into affordability of 12/1Mbps NBN plansRegulator worried people cannot get a basic NBN service at the same pricing level as ADSL.ACCC alleges Google mislead consumers over Android location data handlingConsumer watchdog says Google collected and used location data without providing users with an informed choice.ACCC loses legal battle to TPG over misleading consumer allegationsFederal Court dismisses case with ACCC to pay costs.ACCC flags shifting NBN rebates for late connections and faults to daily penaltyConsumer watchdog says NBN's existing service standard arrangements are not sufficiently robust.
+
+
+"

@@ -1,0 +1,78 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+50 лет назад родился Интернет 
+01 Nov 2019, 18:35 by Леонид Бараш
+ARPANET, предшественник Интернета, осуществила свой первый запрос на вход в систему 29 октября 1969 года.
+29 октября 1969 года в 22:30 по тихоокеанскому времени первые два письма были переданы через ARPANET. А потом произошел крах. Примерно через час, после некоторой отладки, было установлено первое фактическое удаленное соединение между двумя компьютерами, которое впоследствии превратилось в современный Интернет.
+ARPANET, финансируемая Агентством перспективных исследовательских проектов (предшественником DARPA), была разработана для изучения технологий, связанных с созданием военной сети командования и управления, способной выдержать ядерную атаку.
+ARPANET первоначально не разрабатывалась для создания системы командования и управления, которая бы выдержала ядерную атаку, как теперь утверждают многие. Очевидно, что создание такой системы было главной военной потребностью, но задача ARPA не заключалась в этом. Скорее, ARPANET была рождена разочарованием тем, что в стране было только ограниченное количество больших, мощных исследовательских компьютеров, и что многие исследователи, которые должны иметь к ним доступ, были географически удалены от них.
+В младенчестве у ARPANET было всего четыре «узла»: • Сетевой измерительный центр Калифорнийского университета в Лос-Анджелесе с компьютером SDS Sigma 7. • Сетевой информационный центр Стэнфордского научно-исследовательского института с его компьютером SDS 940, на котором работала NLS (ранняя гипертекстовая система и предшественник Всемирной паутины). • Culler-Fried Interactive Mathematics Center Калифорнийского университета в Санта-Барбаре, с его IBM 360/75 под управлением OS / MVT; а также • Школа вычислительной техники Университета Юты с ее цифровым оборудованием PDP-10, работающим под управлением операционной системы TENEX.
+Вместо прямого подключения компьютеры подключались через интерфейсные процессоры сообщений (IMP), которые были первыми сетевыми маршрутизаторами. Это позволило бы добавлять дополнительные системы в качестве узлов в сеть на каждом сайте по мере его развития и роста. Эта идея пришла от физика Уэсли Кларка (Wesley Clark), которому также приписывают проектирование LINC, первого в мире персонального компьютера.
+Первые письма, отправленные из Калифорнийского университета в Стэнфорд студентом-программистом Калифорнийского университета Чарли Клайном (Charley Kline), были «L» и «O». Со второй попытки полный текст сообщения, логин были переданы от Sigma 7 до SDS 940.
+ARPANET - это была прежде всего связь между исследователями и военными организациями. ARPANET эксплуатировалась военными до 1990 года, и до тех пор использование сети для чего-либо, кроме бизнеса и научных исследований, было незаконным. К тому времени ARPANET в значительной степени начала вытесняться сетью Национального научного фонда (NSFnet). Несмотря на то, что Министерство обороны в середине 1980-х годов отделило свои собственные сети под названием MILNET, военные подразделения все еще называли свои сетевые подключения ARPANET во многих внутренних документах в начале 1990-х годов.
+Когда ARPANET была отключена Винтон Серф, один из отцов современного Интернета, написал стихотворение в честь ARPANET:
+It was the first, and being first, was best, but now we lay it down to ever rest. Now pause with me a moment, shed some tears. For auld lang syne, for love, for years and years of faithful service, duty done, I weep. Lay down thy packet, now, O friend, and sleep.
+Без ARPANET не было бы Интернета.
+
+Вы можете подписаться на наш Telegram-канал для получения наиболее интересной информации
+
+
+Читайте также
+
+
+
+
+
+
+
+
+",ru,"
+
+
+
+
+
+
+
+
+
+
+
+50 years ago the Internet was born
+01 Nov 2019, 18:35 by Leonid Barash
+ARPANET, the predecessor of the Internet, completed its first login request on October 29, 1969.
+On October 29, 1969, at 10:30 p.m. PST, the first two letters were transmitted through ARPANET. And then there was a crash. About an hour later, after some debugging, the first actual remote connection was established between the two computers, which later turned into the modern Internet.
+ARPANET, funded by the Advanced Research Projects Agency (the forerunner of DARPA), was designed to study technologies related to building a military command and control network capable of withstanding a nuclear attack.
+ARPANET was not originally designed to create a command and control system that could withstand a nuclear attack, as many now claim. Obviously, the creation of such a system was the main military need, but the task of ARPA was not that. Rather, ARPANET was born of disappointment that the country had only a limited number of large, powerful research computers, and that many researchers who should have access to them were geographically removed from them.
+In infancy, ARPANET had only four “nodes”: • University of California Los Angeles Network Measurement Center with SDS Sigma 7. • Stanford Research Institute Network Information Center with its SDS 940 computer running NLS (an early hypertext system) and predecessor of the World Wide Web). • Culler-Fried Interactive Mathematics Center, University of California, Santa Barbara, with its IBM 360/75 OS / MVT; and • The University of Utah School of Computer Engineering with its PDP-10 digital equipment running the TENEX operating system.
+Instead of connecting directly, computers connected through front-end messaging processors (IMPs), which were the first network routers. This would allow adding additional systems as nodes to the network on each site as it develops and grows. This idea came from physicist Wesley Clark, who is also credited with designing LINC, the world's first personal computer.
+The first letters sent from Stanford University of California by University of California student Charley Kline were “L” and “O”. On the second attempt, the full text of the message, login were transferred from Sigma 7 to SDS 940.
+ARPANET - this was primarily a connection between researchers and military organizations. ARPANET was operated by the military until 1990, and until then using the network for anything other than business and research was illegal. By then, ARPANET had largely begun to be supplanted by the National Science Foundation (NSFnet) network. Although the Department of Defense in the mid-1980s separated its own networks under the name MILNET, military units still referred to their network connections as ARPANET in many internal documents in the early 1990s.
+When ARPANET was turned off by Vinton Cerf, one of the fathers of the modern Internet, wrote a poem in honor of ARPANET:
+It was the first, and being first, was best, but now we lay it down to ever rest. Now pause with me a moment, shed some tears. For auld lang syne, for love, for years and years of faithful service, duty done, I weep. Lay down thy packet, now, O friend, and sleep.
+Without ARPANET, there would be no Internet.
+
+You can subscribe to our Telegram channel to receive the most interesting information.
+
+
+Read also
+
+
+
+
+
+
+
+
+"

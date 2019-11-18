@@ -1,0 +1,54 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Kaspersky lança solução de segurança Antidrone
+O módulo de detecção principal faz a procura de um drone através de câmaras de vídeo combinadas com sensores de áudio, radar e tecnologia LIDAR, conforme as necessidades do cliente e do ambiente.
+
+05 Nov 2019, 12:31
+
+A Kaspersky lançou uma nova solução, concebida para defender empresas e particulares da invasão não autorizada de drones.
+O software da nova solução da Kaspersky coordena o trabalho de vários módulos de hardware fornecidos pela rede de parceiros e é capaz de distinguir os drones de outros objectos voadores.
+O módulo de detecção principal faz a procura de um drone através de câmaras de vídeo combinadas com sensores de áudio, radar e tecnologia LIDAR, conforme as necessidades do cliente e do ambiente. O uso de um scanner laser para determinar a posição/localização de um drone é uma funcionalidade exclusiva do Kaspersky Antidrone.
+Mas como é que tudo isto funciona, na prática? Em primeiro lugar, quando se detecta um objecto em movimento no céu, as suas coordenadas são transmitidas para um servidor específico que as envia para uma unidade especial.
+Consoante os dados de detecção principal, esta unidade gira até ao objecto, segue-o e depois a câmara amplia-o. Ao mesmo tempo, uma rede neuronal artificial, concebida para distinguir os drones de outros objectos em movimento, analisa o objecto que surge no vídeo. Se este for um drone, o servidor envia um comando ao módulo responsável por interferir com a comunicação entre o dispositivo e o seu controlador.
+Como resultado, o drone regressa ao lugar de onde foi lançado ou aterra na mesma localização onde perdeu o sinal com o controlador. Isto significa que o dispositivo é controlado sem que exista qualquer dano, uma vez que não há contacto físico com a aeronave.
+Este software pode ser entregue como solução única e independente num hardware de terceiros, como versão mobile (por exemplo, para ser utilizada na parte superior de veículos todo-o-terreno), ou integrada com outros sistemas de monitorização, incluída na infraestrutura dos “lares inteligentes”.
+
+
+",pt,"
+
+
+
+
+
+
+
+
+
+
+
+Kaspersky Launches Antidrone Security Solution
+The main detection module searches for a drone through camcorders combined with audio sensors, radar and LIDAR technology, according to customer and environmental needs.
+
+05 Nov 2019, 12:31
+
+Kaspersky has launched a new solution designed to defend companies and individuals from unauthorized drone invasion.
+Kaspersky's new solution software coordinates the work of various hardware modules provided by the partner network and is able to distinguish drones from other flying objects.
+The main detection module searches for a drone through camcorders combined with audio sensors, radar and LIDAR technology, according to customer and environmental needs. Using a laser scanner to determine the position / location of a drone is a unique feature of Kaspersky Antidrone.
+But how does all this work in practice? First, when a moving object is detected in the sky, its coordinates are transmitted to a specific server that sends them to a special unit.
+Depending on the main detection data, this unit rotates to the object, follows it, and then the camera zooms in on it. At the same time, an artificial neuronal network designed to distinguish drones from other moving objects analyzes the object that appears in the video. If this is a drone, the server sends a command to the module responsible for interfering with communication between the device and its controller.
+As a result, the drone returns to where it was launched or lands at the same location where it lost the signal with the controller. This means that the device is controlled without any damage as there is no physical contact with the aircraft.
+This software may be delivered as a standalone, standalone solution on third party hardware such as a mobile version (eg for use on top of off-road vehicles) or integrated with other monitoring systems included in the “ smart homes. ”
+
+
+"

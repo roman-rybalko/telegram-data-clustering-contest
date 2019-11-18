@@ -1,0 +1,122 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Amazon Alexa, Apple’s Siri and Google Assistant can be hacked using lasers, experts warn
+05 Nov 2019, 19:05 by James Rogers
+Voice assistants such as Amazon’s Alexa, Apple’s Siri and Google Assistant can be hacked by shining a laser on the devices' microphones, according to an international team of researchers.
+Dubbed “Light Commands,” the hack “allows attackers to remotely inject inaudible and invisible commands into voice assistants,” according to a statement from experts at the University of Electro-Communications in Tokyo and the University of Michigan.
+By targeting the MEMS (Microelectro-Mechanical Systems) microphones with lasers, the researchers say they were able to make the microphones respond to light as if it was sound. “Exploiting this effect, we can inject sound into microphones by simply modulating the amplitude of a laser light,” they wrote in the research paper.
+
+
+3 ESSENTIAL PRIVACY SETTINGS FOR YOUR AMAZON ECHO
+
+
+In their study the authors used lasers to gain full control of voice assistants at distances up to 110 meters (361 feet).
+“We show that user authentication on these devices is often lacking or non-existent, allowing the attacker to use light-injected voice commands to unlock the target’s smartlock-protected front doors, open garage doors, shop on e-commerce websites at the target’s expense, or even locate, unlock and start various vehicles (e.g., Tesla and Ford) that are connected to the target’s Google account,” they wrote.
+The researchers have shared their findings with Amazon, Apple, Google, Tesla and Ford. “We subsequently maintained contact with the security teams of these vendors, as well as with ICS-CERT and the FDA,” they said, noting that the findings were made public on “the mutually-agreed date” of Nov. 4.
+The Industrial Control Systems Cyber Emergency Response Team aims to reduce the risk to America’s critical infrastructure by forging strong partnerships between government and industry.
+
+
+AMAZON PUSHES ALEXA PRIVACY WITH NEW DELETE OPTIONS
+
+
+“Customer trust is our top priority and we take customer security and the security of our products seriously,” an Amazon spokesperson told Fox News via email. “We are reviewing this research and continue to engage with the authors to understand more about their work.”
+“We are closely reviewing this research paper. Protecting our users is paramount, and we're always looking at ways to improve the security of our devices,” a Google spokesperson told Fox News via email.
+Apple, Tesla and Ford have not yet responded to a request for comment on this story.
+Privacy concerns have swirled around voice assistants for a number of years. Amazon’s popular Echo device, for example, has repeatedly come under scrutiny for its handling of user data. Amid concerns about privacy, Amazon recently announced new tools to give Alexa users greater control over stored voice recordings.
+
+
+AMAZON'S ALEXA VOICE ASSISTANT ILLEGALLY RECORDS CHILDREN WITHOUT CONSENT, LAWSUITS CLAIM
+
+
+Alexa is at the forefront of Amazon’s efforts to harness the so-called Internet of Things, which aims to connect a vast array of consumer gadgets.
+To keep their data locked down, Amazon customers can set up voice PINs for shopping, smart home requests such as unlocking doors and accessing sensitive information such as banking.
+It should be noted that hacking a voice assistant with a laser requires both expertise and specialized equipment, as well as an unobstructed view of the targeted device.
+
+
+THOUSANDS OF AMAZON WORKERS LISTEN TO RECORDINGS FROM ALEXA: REPORTS
+
+
+Other factors also limited the extent of the researchers’ hacks. For example, in the study, the experts say that, while they were able to lock and unlock the doors and trunk of a Tesla Model S with Google Assistant's EV car app installed, they were unable to start the car without key proximity.
+On a Ford car, the researchers say they were able to remotely open the doors and start the engine via the Ford Pass app. However, shifting the vehicle out of ""park"" immediately stopped the engine and prevented the unlocked car from being driven, they wrote.
+
+
+CLICK HERE TO GET THE FOX NEWS APP
+
+
+
+Fox News’ Christopher Carbone contributed to this article.  Follow James Rogers on Twitter @jamesjrogers
+
+
+
+",en,"
+
+
+
+
+
+
+
+
+
+
+
+Amazon Alexa, Apple’s Siri and Google Assistant can be hacked using lasers, experts warn
+05 Nov 2019, 19:05 by James Rogers
+Voice assistants such as Amazon’s Alexa, Apple’s Siri and Google Assistant can be hacked by shining a laser on the devices' microphones, according to an international team of researchers.
+Dubbed “Light Commands,” the hack “allows attackers to remotely inject inaudible and invisible commands into voice assistants,” according to a statement from experts at the University of Electro-Communications in Tokyo and the University of Michigan.
+By targeting the MEMS (Microelectro-Mechanical Systems) microphones with lasers, the researchers say they were able to make the microphones respond to light as if it was sound. “Exploiting this effect, we can inject sound into microphones by simply modulating the amplitude of a laser light,” they wrote in the research paper.
+
+
+3 ESSENTIAL PRIVACY SETTINGS FOR YOUR AMAZON ECHO
+
+
+In their study the authors used lasers to gain full control of voice assistants at distances up to 110 meters (361 feet).
+“We show that user authentication on these devices is often lacking or non-existent, allowing the attacker to use light-injected voice commands to unlock the target’s smartlock-protected front doors, open garage doors, shop on e-commerce websites at the target’s expense, or even locate, unlock and start various vehicles (e.g., Tesla and Ford) that are connected to the target’s Google account,” they wrote.
+The researchers have shared their findings with Amazon, Apple, Google, Tesla and Ford. “We subsequently maintained contact with the security teams of these vendors, as well as with ICS-CERT and the FDA,” they said, noting that the findings were made public on “the mutually-agreed date” of Nov. 4.
+The Industrial Control Systems Cyber Emergency Response Team aims to reduce the risk to America’s critical infrastructure by forging strong partnerships between government and industry.
+
+
+AMAZON PUSHES ALEXA PRIVACY WITH NEW DELETE OPTIONS
+
+
+“Customer trust is our top priority and we take customer security and the security of our products seriously,” an Amazon spokesperson told Fox News via email. “We are reviewing this research and continue to engage with the authors to understand more about their work.”
+“We are closely reviewing this research paper. Protecting our users is paramount, and we're always looking at ways to improve the security of our devices,” a Google spokesperson told Fox News via email.
+Apple, Tesla and Ford have not yet responded to a request for comment on this story.
+Privacy concerns have swirled around voice assistants for a number of years. Amazon’s popular Echo device, for example, has repeatedly come under scrutiny for its handling of user data. Amid concerns about privacy, Amazon recently announced new tools to give Alexa users greater control over stored voice recordings.
+
+
+AMAZON'S ALEXA VOICE ASSISTANT ILLEGALLY RECORDS CHILDREN WITHOUT CONSENT, LAWSUITS CLAIM
+
+
+Alexa is at the forefront of Amazon’s efforts to harness the so-called Internet of Things, which aims to connect a vast array of consumer gadgets.
+To keep their data locked down, Amazon customers can set up voice PINs for shopping, smart home requests such as unlocking doors and accessing sensitive information such as banking.
+It should be noted that hacking a voice assistant with a laser requires both expertise and specialized equipment, as well as an unobstructed view of the targeted device.
+
+
+THOUSANDS OF AMAZON WORKERS LISTEN TO RECORDINGS FROM ALEXA: REPORTS
+
+
+Other factors also limited the extent of the researchers’ hacks. For example, in the study, the experts say that, while they were able to lock and unlock the doors and trunk of a Tesla Model S with Google Assistant's EV car app installed, they were unable to start the car without key proximity.
+On a Ford car, the researchers say they were able to remotely open the doors and start the engine via the Ford Pass app. However, shifting the vehicle out of ""park"" immediately stopped the engine and prevented the unlocked car from being driven, they wrote.
+
+
+CLICK HERE TO GET THE FOX NEWS APP
+
+
+
+Fox News’ Christopher Carbone contributed to this article.  Follow James Rogers on Twitter @jamesjrogers
+
+
+
+"

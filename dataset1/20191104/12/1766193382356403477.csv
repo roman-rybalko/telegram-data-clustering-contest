@@ -1,0 +1,52 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Die Schlange wird kürzer: Python soll jährlich eine neue Version bekommen
+Die Programmiersprache Python erscheint künftig alle 12 statt 18 Monate, das nächste Release ist für Oktober 2020 geplant. An Support-Zeiten ändert sich nichts.
+04 Nov 2019, 12:10 by Björn Bohn
+Der Releasezyklus der Programmiersprache Python wird kürzer: Künftig soll einmal im Jahr eine neue Version erscheinen. Das hat Brett Cannon, Mitglied des Steering Council der Programmiersprache, über die Mailing-Liste bekanntgegeben. Damit scheint die langwierige Diskussion darüber, vom bisherigen Zeitraum von rund 18 Monaten abzuweichen, nun ein Ende gefunden zu haben.
+Cannon begründet die Entscheidung damit, dass die Community durch einen konstanten jährlichen Rhythmus besser wisse, wann Betaphasen beginnen und Release Candidates vorliegen. Außerdem könnten Entwickler von Python-Werkzeugen ihre neuen Versionen entsprechend damit synchronisieren, und die Anzahl der neuen Features pro Release wird für Anwender überschaubarer. Zu guter Letzt sollen neue Features dadurch schneller in der Sprache landen können.
+Schnellere Releases, gleicher Support
+Mitte Oktober 2019 erschien mit Python 3.8 die jüngste Version der Programmiersprache. Demnach folgt Python 3.9 nun am 5. Oktober 2020, nach dem bisherigen Release-Plan wäre sie erst im April 2021 veröffentlicht worden. Die Betaphase soll drei Monate dauern, für Release Candidates (RC) sollen zwei zur Verfügung stehen. Die Python-Community behält sich aber vor, auf längere Beta- und kürzere RC-Zeiträume umzusteigen, falls das geplante Vorgehen nicht reibungslos funktioniert.
+Entwarnung will der Steering Council für diejenigen Unternehmen und Projekte bieten, die nicht jährlich auf eine neue Version aktualisieren können. Der Vorschlag zum neuen Releasezyklus sieht vor, dass Deprecations mindestens zwei Releases erhalten bleiben, bevor sie aus der Sprache entfernt werden. Bislang war diese Phase rund sechs Monate kürzer. Sicherheitsupdates gibt es weiterhin für fünf Jahre. Darüber hinaus hoffen die Sprachentwickler, dass durch die nun aufgeräumte stabile ABI ein Upgrade auf neuere Versionen leichter von der Hand gehen soll.
+Eine kurze Historie der Diskussion
+Das Ringen um die Dauer des Releasezyklus von Python herrscht schon eine Weile vor. Die jüngste Diskussion entfachte Łukasz Langa, Release-Manager von Python 3.8 und 3.9, mit einer Präsentation beim Python Language Summit 2018. Dort schlug er jährliche Releases vor, ein Jahr später forderte er eine Halbierung der jetzigen Dauer – also ein Release alle neun Monate. Das fanden die meisten allerdings etwas zu flott. Infolgedessen entstanden zwei Python Enhancement Proposals (PEP), die das Thema unterschiedlich angehen.
+Davon ist PEP 602 – Annual Release Cycle for Python, das nun akzeptierte. Der andere Vorschlag – PEP 605 – sah vor, den Pre-Release-Prozess dahingehend zu überarbeiten, dass es einen kontinuierlichen Strom an neuen Python-Features gibt (PEP 605), auf die Anwender via Opt-in zurückgreifen können. Das PEP 607 fasst die Diskussion noch einmal zusammen. (bbo)
+
+
+",de,"
+
+
+
+
+
+
+
+
+
+
+
+The queue is getting shorter: Python should get a new version every year
+The programming language Python will be published every 12 months instead of 18 months, the next release is scheduled for October 2020. At support times nothing changes.
+04 Nov 2019, 12:10 by Björn Bohn
+The release cycle of the Python programming language is getting shorter: in the future, a new version will be released once a year. That's what Brett Cannon, a member of the programming language steering council, said about the mailing list. Thus, the lengthy discussion about deviating from the previous period of about 18 months, now seems to have come to an end.
+Cannon justifies the decision by saying that the community knows better by having a constant annual rhythm, when beta phases begin and release candidates are available. In addition, developers of Python tools could synchronize their new versions accordingly, and the number of new features per release becomes more manageable for users. Finally, new features should be able to land faster in the language.
+Faster releases, same support
+In mid-October 2019, Python 3.8 released the latest version of the programming language. According to Python 3.9 now on October 5, 2020, according to the previous release plan, it would have been published in April 2021. The beta phase should last three months, for Release Candidates (RC) should be two available. However, the Python community reserves the right to switch to longer beta and shorter RC periods if the planned procedure does not work smoothly.
+The Steering Council wants to offer the all-clear for those companies and projects that can not annually update to a new version. The proposal for the new release cycle provides that deprecations are preserved for at least two releases before they are removed from the language. So far, this phase has been around six months shorter. Security updates will continue for five years. In addition, the language developers hope that the now tidy stable ABI an upgrade to newer versions easier to go by the hand.
+A short history of the discussion
+The struggle for the duration of the release cycle of Python has been going on for a while. The recent discussion sparked Łukasz Langa, release manager of Python 3.8 and 3.9, with a presentation at the Python Language Summit 2018. There he suggested annual releases, and a year later he called for a halving of the current duration - one release every nine months. However, most of them found it a bit too fast. As a result, two Python Enhancement Proposals (PEPs) came up, tackling the subject differently.
+This is PEP 602 - Annual Release Cycle for Python, which now accepted. The other suggestion - PEP 605 - was to revise the pre-release process to include a stream of new Python features (PEP 605) that users can access via opt-in. The PEP 607 summarizes the discussion again. (BBO)
+
+
+"

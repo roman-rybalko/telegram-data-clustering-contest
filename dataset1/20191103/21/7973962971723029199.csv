@@ -1,0 +1,54 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Após erro, Bitcoin cai até US$ 7.700 em exchange que reembolsará US$ 1,3 milhão a seus clientes
+03 Nov 2019, 21:06 by Portal do Bitcoin
+A bolsa de derivativos de criptomoedas Deribit pagará US$ 1,3 milhão (150 BTC) aos usuários afetados por um erro de sua plataforma que levou o preço do bitcoin a despencar para US$ 7.700 no dia 31 de outubro.
+De acordo com uma publicação em seu blog oficial, a empresa assumiu a responsabilidade pelo acidente ocorrido, que levou o preço do BTC a cair de US$ 9.000 para US$ 7.700 em segundos. A Deribit diz que reembolsará os clientes envolvidos no acidente.
+A Deribit também informou aos usuários que a bolsa não usará o dinheiro de seu fundo de segurança, usado para cobrir eventuais perdas, mas sim usar capital do seu próprio bolso.
+O que causou o crash
+O bug foi causado por um componente do índice de BTC usado pela exchange, que estava fornecendo preços incorretos que deveriam ter sido removidos e calculados como um desvio no cálculo do índice.
+“Um dos aspectos que garante um processo justo de liquidação é um índice resistente à manipulação. Sempre garantimos isso com vários constituintes de índice e excluindo valores discrepantes. Infelizmente, devido a um erro em nosso sistema, um dos outliers não foi excluído, o que causou a falha. Isso foi uma falha do nosso sistema; portanto, assumimos a responsabilidade pelo incidente.”
+A Deribit também confirmou que o problema já foi corrigido. “Nosso índice está robusto novamente e o incidente de ontem não pode mais acontecer. No entanto, estamos adotando medidas adicionais para aprimorá-lo ainda mais, para que existam mecanismos adicionais para proteger a exchange de situações como essa”.
+
+
+
+
+
+",pt,"
+
+
+
+
+
+
+
+
+
+
+
+Bitcoin Falls Up to $ 7,700 in Exchange After Mistake, Refunding $ 1.3 Million to Customers
+03 Nov 2019, 21:06 by Bitcoin Portal
+The Deribit Cryptocurrency Derivatives Exchange will pay $ 1.3 million (150 BTC) to users affected by a platform error that caused the price of bitcoin to plummet to $ 7,700 on October 31st.
+According to a posting on its official blog, the company took responsibility for the crash, which caused the BTC price to drop from $ 9,000 to $ 7,700 in seconds. Deribit says it will reimburse customers involved in the accident.
+Deribit has also informed users that the exchange will not use the money from its security fund, which is used to cover any losses, but will use capital from its own pocket.
+What caused the crash
+The bug was caused by a BTC index component used by exchange, which was providing incorrect prices that should have been removed and calculated as a deviation in index calculation.
+“One aspect that ensures a fair settlement process is a manipulation-resistant index. We always guarantee this with multiple index constituents and excluding outliers. Unfortunately, due to an error in our system, one of the outliers was not deleted, which caused the crash. This was a failure of our system; therefore, we take responsibility for the incident. ”
+Deribit has also confirmed that the problem has already been fixed. “Our index is robust again and yesterday's incident can no longer happen. However, we are taking additional steps to further refine it so that there are additional mechanisms to protect the exchange from situations like this. ”
+
+
+
+
+
+"

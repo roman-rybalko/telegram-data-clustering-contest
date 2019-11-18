@@ -1,0 +1,52 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Git 2.24 ermöglicht einfache Feature-Abos
+Die aktuelle Version 2.24 des Versionskontrollsystems Git ermöglicht es, neue Funktionen einfacher zu testen und zu nutzen. Umgesetzt wird das über Funktions-Makros. Das Durchsuchen der Git-Historie ist nun auch standardmäßig schneller.
+05 Nov 2019, 07:20 by Sebastian Grüner
+Das Versionskontrollsystem Git ist in Version 2.24 erschienen. Die Änderungen sind zahlreich, die Entwickler des Code-Hosters Github fassen einige der wichtigsten Neuerungen in einem Blogpost zusammen. Dazu zählen Feature-Makros, Commit Graphs und ein Werkzeug für schnelleres Suchen und Filtern.
+Feature-Makros als Funktionsabo
+Für neue Versionen von Git stellen die Entwickler nun sogenannte Feature-Makros bereit. Wollen Entwickler und Nutzer nicht alle neuen Optionen übernehmen, aber einige wichtige Funktionen und Einstellungen ausprobieren, lässt sich die Git-Konfiguration entsprechend anpassen. So ist es möglich, nur bestimmte Makro-Einträge zu aktivieren, etwa den Umgang mit vielen Dateien über git config feature.manyFiles true.
+Diese einzelne Option fasst damit sämtliche Funktionen und Neuerungen zusammen, welche die Git-Entwickler als wichtig für den Umgang mit vielen Dateien erachten. Werden in künftigen Versionen von Git weitere Neuerungen für diesen Anforderungsfall hinzugefügt, sollen diese bei Nutzern dank der gesetzten Option automatisch aktiviert werden.
+Die Commit Graphs sind seit Version 2.19 in Git verfügbar und verbessern die Performance beim Laden und Durchsuchen von Git-Commits. Mussten Anwender diese Funktionen in der Vergangenheit noch explizit einschalten, werden sie mit Git 2.24 standardmäßig aktiviert. Das sollte Operationen wie die Suche nach bestimmten Bugfixes beschleunigen.
+Schneller filtern
+Wer die Historie seines Git-Projekts durchsuchen will, um etwa ältere Commits zu entfernen, nutzte dafür bisher wahrscheinlich git filter-branch. Der Befehl zeigt laut dem Github-Blogpost und den Github-Entwicklern jedoch sein Alter: Der Einsatz des Tools sei nicht nur umständlich, sondern es arbeite auch langsam. Als Alternative dazu empfiehlt das Projekt git filter-repo. Das neue Werkzeug operiert auf einer Stream-Repräsentation der Commit-Historie, verwendet also eine effizientere Methode, um die oft vielen alten Commits eines Repositories zu durchsuchen.
+Zudem übernahm das Projekt den Contributor Covenant, einen populären Verhaltenskodex für einen respektvollen Umgang der Entwickler untereinander. 17 prominente Git-Entwickler unterzeichneten den Kodex.
+
+
+",de,"
+
+
+
+
+
+
+
+
+
+
+
+Git 2.24 enables easy feature subscriptions
+The current version 2.24 of the Git version control system makes it easier to test and use new functions. This is implemented via function macros. Searching the Git history is now also faster by default.
+05 Nov 2019, 07:20 by Sebastian Grüner
+The version control system Git has been released in version 2.24. The changes are numerous, and the developers of the code host Github summarize some of the most important news in a blog post. These include feature macros, commit graphs, and a tool for faster searching and filtering.
+Feature macros as a function subscription
+For new versions of Git, the developers now provide so-called feature macros. If developers and users do not want to adopt all new options, but try out some important functions and settings, the Git configuration can be adjusted accordingly. So it is possible to activate only certain macro entries, such as the handling of many files via git config feature.manyFiles true.
+This single option summarizes all the features and innovations Git developers consider important for handling many files. If new features for this requirement case are added in future versions of Git, they should be activated automatically for users thanks to the option set.
+The Commit Graphs are available in Git since version 2.19 and improve performance when loading and searching for git-commits. If users had to explicitly activate these functions in the past, they are activated by default with Git 2.24. This should speed up operations such as finding specific bug fixes.
+Filter faster
+If you want to search the history of your Git project to remove older commits, you probably used git filter-branch. However, according to the Github blog post and the Github developers, the command shows its age: The use of the tool is not only awkward, but it also works slowly. As an alternative, the project recommends git filter-repo. The new tool operates on a stream representation of the commit history, so it uses a more efficient way to search the often many old commits of a repository.
+The project also adopted the Contributor Covenant, a popular code of conduct for the developers to treat one another with respect. 17 prominent Git developers signed the code.
+
+
+"

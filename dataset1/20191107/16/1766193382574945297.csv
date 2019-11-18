@@ -1,0 +1,74 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Googles ""App Defense Alliance"" soll schädliche Apps aus Play Store aussperren
+Immer wieder landen schädliche Android-Anwendungen im Play Store. Zusammen mit ESET, Lookout und Zimperium will Google die Schutzmechanismen verbessern.
+07 Nov 2019, 16:28 by Olivia von Westernhagen
+Dank ""Play Protect""-Schutzmechanismen und klarer Richtlinien für Entwickler gilt Googles Play Store im Vergleich zu alternativen Stores als die sicherere Android-App-Quelle. Doch auch dort tummeln sich jede Menge Anwendungen dubioser Anbieter, hinter deren bunter Fassade Schadfunktionen lauern.
+Um die bereits bestehenden Schutzmechanismen des Play Stores zu verbessern, hat Google jetzt die ""App Defense Alliance"" ins Leben gerufen. Wie aus einer Ankündigung in Googles Security Blog hervorgeht, arbeitet das Unternehmen dabei mit den Sicherheitssoftware-Herstellern ESET, Lookout und Zimperium zusammen.
+Primäres Ziel der Zusammenarbeit soll es laut Blogeintrag sein, potenziell schädliche Apps (""Potential Harmful Apps"", PHAs) aufzuspüren. bevor sie im Play Store landen. Um dieses Ziel umzusetzen, will Google die Scan-Engines der drei Hersteller in die bereits bestehenden ""Play Protect""-Schutzmechanismen integrieren.
+Erweiterung des Play-Protect-Schutzes
+Play Protect wurde im Mai 2017 vorgestellt und besteht im Wesentlichen aus zwei Komponenten: Einem On-Device-Schutzmechanismus, der mobile Androidgeräte nach PHAs durchsucht und diese automatisch entfernt, und cloudbasierten Schutzmechanismen auf Googles Servern, die alle von Entwicklern übermittelten Apps analysieren, bevor sie in den Play Store gelangen. Wie Google auf der Play-Protect-Webseite erläutert, werden die Mechanismen zusätzlich um manuelle Analysen ergänzt, wenn sich Auffälligkeiten ergeben.
+Apps in der ""Warteschlange"" zum Play Store werden künftig auch von Googles neuen Partnern gescannt, um die Wahrscheinlichkeit, dass Schadfunktionen übersehen werden, zu verringern. Als weiteren Vorteil der Alliance betrachtet Google die Möglichkeit, Bedrohungsinformationen und (Android-)Malware-Samples aus verschiedenen Quellen zeitnah und auf direktem Wege untereinander auszutauschen, um PHAs früher zu erkennen.
+Weitere Informationen zur App Defense Alliance, PHAs und den Play-Protect-Schutzmechanismen sind der Play-Protect-Webseite zu entnehmen. Hinweise zum On-Device-Schutz durch Google Play Protect finden Gerätebesitzer außerdem in einem deutschsprachigen Support-Artikel.
+
+Mehr zum Thema:
+
+
+
+Google Play Protect: Mehr Warnungen sollen Android-Nutzer schützen
+
+
+Phishing-Angriff auf Regierungskritiker in Ägypten – mit Apps aus dem Play Store
+
+
+(ovw)
+
+
+",de,"
+
+
+
+
+
+
+
+
+
+
+
+Google's ""App Defense Alliance"" is designed to block malicious apps from Play Store
+Again and again, harmful Android applications end up in the Play Store. Together with ESET, Lookout and Zimperium Google wants to improve the protection mechanisms.
+07 Nov 2019, 16:28 by Olivia from Westernhagen
+With Play Protect protection and clear developer guidelines, Google's Play Store is the safer Android app source compared to alternative stores. But there are also plenty of dubious applications, behind whose colorful façade malicious features lurk.
+In order to improve the already existing protection mechanisms of the Play Store, Google has now launched the ""App Defense Alliance"". As evidenced by an announcement in Google's Security Blog, the company is working with security software vendors ESET, Lookout, and Zimperium.
+The primary goal of the collaboration, according to the blog entry, is to detect potentially harmful apps (""potential harmful apps"", PHAs). before they land in the Play Store. To implement this goal, Google wants to integrate the scan engines of the three manufacturers in the already existing ""Play Protect"" protection mechanisms.
+Extension of Play-Protect protection
+Launched in May 2017, Play Protect is essentially made up of two components: an on-device protection mechanism that scans and automatically removes PHAs from mobile Android devices, and cloud-based protection on Google's servers, which analyzes all apps submitted by developers before they start get into the Play Store. As explained by Google on the Play-Protect website, the mechanisms are supplemented by manual analysis, if abnormalities arise.
+Apps in the ""queue"" to the Play Store will also be scanned by Google's new partners in the future, in order to reduce the likelihood that malicious features will be overlooked. As a further benefit of the Alliance, Google considers the ability to swap threat information and (android) malware samples from multiple sources quickly and directly to detect PHAs earlier.
+For more information about the App Defense Alliance, PHAs, and Play Protect protections, see the Play Protect web page. In addition, device owners will find instructions for on-device protection by Google Play Protect in a German-language support article.
+
+More on the subject:
+
+
+
+Google Play Protect: More alerts to protect Android users
+
+
+Phishing attack on government critics in Egypt - with apps from the Play Store
+
+
+(Ovw)
+
+
+"

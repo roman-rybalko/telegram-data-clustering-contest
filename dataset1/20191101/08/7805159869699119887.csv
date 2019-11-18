@@ -1,0 +1,40 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+All updates to existing Play Store apps must now target Android 9 Pie
+01 Nov 2019, 08:00 by Mishaal Rahman
+Back in late 2017, Google made a bold decision: force Android app developers to target newer API levels by adding new Play Store requirements. Google’s goals are to improve ecosystem security (by making sure apps abide by all privacy and permission-related platform changes) and encourage the adoption of new APIs (so users can enjoy new features on their phones.) On August 1st of each year, Google requires that all new apps submitted to the Play Store target the major API level introduced in the previous year. On November 1st of each year, Google extends this requirement to cover updates to existing apps. Thus, as of August 1st, 2019, all new Android apps uploaded to Google Play must target API level 28, or Android 9 Pie. Starting today, that same requirement now applies to app updates.
+According to Google, Android 9 Pie was running on 22.6% of all Google Play certified devices in late August of this year. With the certification window for new Android 9 devices closing on January 31, 2020, the percentage of devices running API level 28 or higher is bound to get even bigger. With features like Adaptive Battery in Android 9 and Scoped Storage in Android 10, you’ll want to make sure that your existing app continues to work as intended, at the very least. Personally, I hope the new requirement pushes developers using the older FingerprintManager API to adopt BiometricPrompt so Pixel 4 owners can enjoy Face Unlock in all their apps.
+There are a ton of new APIs and tweaks to existing APIs in both Android 9 and Android 10, so you may even be able to create an innovative new app or enhance an existing feature once you take a look through the documentation. Unfortunately, this requirement will likely lead to a few developers abandoning the development of their apps, as we saw when the API level requirement was incremented last year. You can’t really blame Google here as they not only gave plenty of time for developers to update their apps but they also have a valid reason to force developers to target newer API levels.
+
+
+",en,"
+
+
+
+
+
+
+
+
+
+
+
+All updates to existing Play Store apps must now target Android 9 Pie
+01 Nov 2019, 08:00 by Mishaal Rahman
+Back in late 2017, Google made a bold decision: force Android app developers to target newer API levels by adding new Play Store requirements. Google’s goals are to improve ecosystem security (by making sure apps abide by all privacy and permission-related platform changes) and encourage the adoption of new APIs (so users can enjoy new features on their phones.) On August 1st of each year, Google requires that all new apps submitted to the Play Store target the major API level introduced in the previous year. On November 1st of each year, Google extends this requirement to cover updates to existing apps. Thus, as of August 1st, 2019, all new Android apps uploaded to Google Play must target API level 28, or Android 9 Pie. Starting today, that same requirement now applies to app updates.
+According to Google, Android 9 Pie was running on 22.6% of all Google Play certified devices in late August of this year. With the certification window for new Android 9 devices closing on January 31, 2020, the percentage of devices running API level 28 or higher is bound to get even bigger. With features like Adaptive Battery in Android 9 and Scoped Storage in Android 10, you’ll want to make sure that your existing app continues to work as intended, at the very least. Personally, I hope the new requirement pushes developers using the older FingerprintManager API to adopt BiometricPrompt so Pixel 4 owners can enjoy Face Unlock in all their apps.
+There are a ton of new APIs and tweaks to existing APIs in both Android 9 and Android 10, so you may even be able to create an innovative new app or enhance an existing feature once you take a look through the documentation. Unfortunately, this requirement will likely lead to a few developers abandoning the development of their apps, as we saw when the API level requirement was incremented last year. You can’t really blame Google here as they not only gave plenty of time for developers to update their apps but they also have a valid reason to force developers to target newer API levels.
+
+
+"

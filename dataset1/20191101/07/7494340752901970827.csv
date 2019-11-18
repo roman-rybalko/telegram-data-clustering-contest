@@ -1,0 +1,46 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+DNA Databases Are a National Security Leak Waiting To Happen
+01 Nov 2019, 07:20 by BeauHD
+schwit1 writes: A private DNA ancestry database that's been used by police to catch criminals is a security risk from which a nation-state could steal DNA data on a million Americans, according to security researchers. Security flaws in the service, called GEDmatch, not only risk exposing people's genetic health information but could let an adversary such as China or Russia create a powerful biometric database useful for identifying nearly any American from a DNA sample. GEDMatch, which crowdsources DNA profiles, was created by genealogy enthusiasts to let people search for relatives and is run entirely by volunteers. It shows how a trend toward sharing DNA data online can create privacy risks affecting everyone, even people who don't choose to share their own information. ""You can replace your credit card number, but you can't replace your genome,"" says Peter Ney, a postdoctoral researcher in computer science at the University of Washington. Ney, along with professors and DNA security researchers Luis Ceze and Tadayoshi Kohno, described in a report posted online how they developed and tested a novel attack employing DNA data they uploaded to GEDmatch. Using specially designed DNA profiles, they say, they were able to run searches that let them guess more than 90% of the DNA data of other users. The founder of GEDmatch, Curtis Rogers, confirmed that the researchers alerted him to the threat during the summer. ""The same attack wouldn't work on other genealogy sites, like 23andMe, because they don't permit data uploads,"" the report notes. ""Others, like MyHeritage, do allow uploads but don't give users as much information about their matches."" ""The problem with GEDmatch is the browser is too good, and searches too deeply,"" says Erlich. ""If I were them, I would remove it, fix it, then put it back.""
+
+
+(technologyreview.com)
+
+
+
+
+",en,"
+
+
+
+
+
+
+
+
+
+
+
+DNA Databases Are a National Security Leak Waiting To Happen
+01 Nov 2019, 07:20 by BeauHD
+schwit1 writes: A private DNA ancestry database that's been used by police to catch criminals is a security risk from which a nation-state could steal DNA data on a million Americans, according to security researchers. Security flaws in the service, called GEDmatch, not only risk exposing people's genetic health information but could let an adversary such as China or Russia create a powerful biometric database useful for identifying nearly any American from a DNA sample. GEDMatch, which crowdsources DNA profiles, was created by genealogy enthusiasts to let people search for relatives and is run entirely by volunteers. It shows how a trend toward sharing DNA data online can create privacy risks affecting everyone, even people who don't choose to share their own information. ""You can replace your credit card number, but you can't replace your genome,"" says Peter Ney, a postdoctoral researcher in computer science at the University of Washington. Ney, along with professors and DNA security researchers Luis Ceze and Tadayoshi Kohno, described in a report posted online how they developed and tested a novel attack employing DNA data they uploaded to GEDmatch. Using specially designed DNA profiles, they say, they were able to run searches that let them guess more than 90% of the DNA data of other users. The founder of GEDmatch, Curtis Rogers, confirmed that the researchers alerted him to the threat during the summer. ""The same attack wouldn't work on other genealogy sites, like 23andMe, because they don't permit data uploads,"" the report notes. ""Others, like MyHeritage, do allow uploads but don't give users as much information about their matches."" ""The problem with GEDmatch is the browser is too good, and searches too deeply,"" says Erlich. ""If I were them, I would remove it, fix it, then put it back.""
+
+
+(technologyreview.com)
+
+
+
+
+"

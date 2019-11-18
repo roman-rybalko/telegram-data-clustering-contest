@@ -1,0 +1,58 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Shadow Brokers data dump tipped researchers off to a mysterious APT dubbed DarkUniverse
+
+05 Nov 2019, 19:49
+
+Written by Jeff StoneNov 5, 2019 | CYBERSCOOP
+Clues about a hacking group that carried out attacks against targets in countries including Syria, Iran and Russia were included in files leaked by a mysterious group known as the Shadow Brokers, according to new findings.
+Researchers from the security vendor Kaspersky published a report Tuesday detailing an advanced persistent threat (APT) group the company has dubbed DarkUniverse. Documents published in 2017 by the Shadow Brokers — an elusive group that publicly disseminated NSA hacking tools — included a script that checked for other hacking groups lurking in a compromised system. DarkUniverse was among the groups the script could check for.
+The DarkUniverse group hit victims in Afghanistan, Tanzania, Ethiopia, Belarus and the United Arab Emirates, along with more common targets like Russia, Iran and Syria. All told, the APT group breached “around” 20 victims ranging from military agencies to private sector organizations like telecommunication firms, and medical institutions.
+“We believe the number of victims during the main period of activity between 2009 and 2017 was much greater,” the researchers wrote.
+Kaspersky did not speculate on what, if any, nation-state benefited from the DarkUniverse group’s cyber-espionage activity. The company did say they found that some of the code used by the group overlapped with the ItaDuke APT, which Kaspersky caught targeting China’s Uighur and Tibetan populations with malicious PDF files in 2013.
+“The malware contains all the necessary modules for collecting all kinds of information about the user and the infected system and appears to be fully developed from scratch,” Kaspersky wrote. “Due to unique code overlaps, we assume with medium confidence that DarkUniverse’s creators were connected with the ItaDuke set of activities. The attackers were resourceful and kept updating their malware during the full lifecycle of their operations, so the observed samples from 2017 are totally different from the initial samples from 2009.”
+DarkUniverse relied on a malicious software framework, also called DarkUniverse, to spy on its victims. The toolkit gave attackers the ability to capture screenshots, obtain specific lists of files, collect information the the machine’s registry, collect and decrypt the username and password credentials from Outlook Express, Internet Explorer, Windows Mail and other communication services, among many other capabilities.
+The question of who is behind this activity only is the latest mystery connected to the Shadow Brokers. More than three years after the group first published NSA hacking tools, the group’s identity is still unknown.
+Details on how the group obtained access to the NSA’s hacking tools also remains shrouded in secrecy.
+
+
+",en,"
+
+
+
+
+
+
+
+
+
+
+
+Shadow Brokers data dump tipped researchers off to a mysterious APT dubbed DarkUniverse
+
+05 Nov 2019, 19:49
+
+Written by Jeff StoneNov 5, 2019 | CYBERSCOOP
+Clues about a hacking group that carried out attacks against targets in countries including Syria, Iran and Russia were included in files leaked by a mysterious group known as the Shadow Brokers, according to new findings.
+Researchers from the security vendor Kaspersky published a report Tuesday detailing an advanced persistent threat (APT) group the company has dubbed DarkUniverse. Documents published in 2017 by the Shadow Brokers — an elusive group that publicly disseminated NSA hacking tools — included a script that checked for other hacking groups lurking in a compromised system. DarkUniverse was among the groups the script could check for.
+The DarkUniverse group hit victims in Afghanistan, Tanzania, Ethiopia, Belarus and the United Arab Emirates, along with more common targets like Russia, Iran and Syria. All told, the APT group breached “around” 20 victims ranging from military agencies to private sector organizations like telecommunication firms, and medical institutions.
+“We believe the number of victims during the main period of activity between 2009 and 2017 was much greater,” the researchers wrote.
+Kaspersky did not speculate on what, if any, nation-state benefited from the DarkUniverse group’s cyber-espionage activity. The company did say they found that some of the code used by the group overlapped with the ItaDuke APT, which Kaspersky caught targeting China’s Uighur and Tibetan populations with malicious PDF files in 2013.
+“The malware contains all the necessary modules for collecting all kinds of information about the user and the infected system and appears to be fully developed from scratch,” Kaspersky wrote. “Due to unique code overlaps, we assume with medium confidence that DarkUniverse’s creators were connected with the ItaDuke set of activities. The attackers were resourceful and kept updating their malware during the full lifecycle of their operations, so the observed samples from 2017 are totally different from the initial samples from 2009.”
+DarkUniverse relied on a malicious software framework, also called DarkUniverse, to spy on its victims. The toolkit gave attackers the ability to capture screenshots, obtain specific lists of files, collect information the the machine’s registry, collect and decrypt the username and password credentials from Outlook Express, Internet Explorer, Windows Mail and other communication services, among many other capabilities.
+The question of who is behind this activity only is the latest mystery connected to the Shadow Brokers. More than three years after the group first published NSA hacking tools, the group’s identity is still unknown.
+Details on how the group obtained access to the NSA’s hacking tools also remains shrouded in secrecy.
+
+
+"

@@ -1,0 +1,54 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Small or medium business? Neo4j wants to run a graph database for you in the cloud
+07 Nov 2019, 12:16 by Daphne Leprince-Ringuet
+
+The graph database company's new Neo4j Aura managed service is for smaller enterprises on tighter budgets.
+
+
+
+
+Neo4j, a popular name in the graph database field, says it is bringing its technology to the cloud as a fully managed service for small and medium enterprises, in an attempt to lure new customers with smaller budgets.The new service, dubbed Neo4j Aura, has been developed because the company's current offering for enterprises is not a financially viable option for a large chunk of the market. 
+Neo4j's original product is its community edition, an open-source native graph database that has been publicly available since 2007 for developers to work with on GitHub.However, scaling the program is complex. So the company then offers an enterprise edition that provides developers with the tools to design, develop, maintain, and operate the application at a business-wide level.SEE: Sensor'd enterprise: IoT, ML, and big data (ZDNet special report) | Download the report as a PDF (TechRepublic)
+It is not all that easy to take the leap from community to enterprise, explained Kurt Freytag, director for Neo4j Cloud. ""Because of the price point,"" he told ZDNet, ""Neo4j has only been available to a relatively small number of companies.""A small number, and with deep pockets: the company's CEO Emil Eifrem says over 80% of the Fortune 100 are now using Neo4j. ""The main challenge was to bring the same quality service to a wider audience,"" said Freytag.
+By taking customers' datasets off premises to a managed cloud service, Neo4j Aura wants developers to delegate the day-to-day management of the database to Neo4j engineers – and make upscaling the system a much less complicated affair, the company argues.""Instead of worrying about operating a database, practitioners can focus on innovating,"" said Eifrem. ""We've just made it simple for anybody to get started with a graph database.""The idea is, therefore, that developers should be able to scale up their application without thinking about the operational complexity of the process – whereas before they would have remained stuck in the community edition for want of resources. The other benefit put forward by Neo4j Aura's creators is its affordability. Where the company's enterprise edition can cost up to hundreds of thousands of dollars per year, the new Aura application is built for customers to scale up gradually.According to Eifrem, customers could get started from $50 a month if they wanted. The company said the pay-as-you-go approach, based on flat hourly rates by capacity, will let smaller businesses tailor the size of their database to their needs. Aura has been tried and tested in Colombia by fintech company Minka, which manages automated clearing-house payments across eight banks in the country.At first, Minka tried to deploy Neo4j's technology by scaling up the community edition. ""They soon figured out they wanted to focus on their business offering rather than spend time and energy operating Neo4j infrastructure,"" said Freytag. ""So we involved them in the early-access program. They got started in a couple of hours, and now they have 300 transactions per second running through Aura.""As innovative as it may sound, Neo4j is not the first company to commercialize graph database as a service (GDaaS). Earlier this year, TigerGraph announced the availability of TigerGraph Cloud, which it dubbed the first native GDaaS, along with $32m in series B funding. SEE: In love with the graph: Neo4j spreads the obsession of a new database one app at a timeThe company's promises are similar to those of Neo4j: customers who wish to store their database in the cloud won't have to take care of any provisioning or managing.And of course, Amazon's Neptune also looms large, providing, in its own terms, a ""fast, reliable, fully managed graph database service"" that similarly takes operations management out of the hands of customers.To make a difference, Neo4j is banking on the promise it has made that Aura will ""always be on"". ""The system is fault-tolerant and self-healing, so it will never go down for security or software updates,"" said Freytag.In other words, it claims a better customer service than its competitors. But the market is becoming ever-more competitive. Gartner predicts that graph database management systems will grow at 100% annually through 2022. Although Neo4j remains in a comfortable position, having secured $80m in series E funding last year, it will have to deliver on its promises to compete effectively. 
+
+
+",en,"
+
+
+
+
+
+
+
+
+
+
+
+Small or medium business? Neo4j wants to run a graph database for you in the cloud
+07 Nov 2019, 12:16 by Daphne Leprince-Ringuet
+
+The graph database company's new Neo4j Aura managed service is for smaller enterprises on tighter budgets.
+
+
+
+
+Neo4j, a popular name in the graph database field, says it is bringing its technology to the cloud as a fully managed service for small and medium enterprises, in an attempt to lure new customers with smaller budgets.The new service, dubbed Neo4j Aura, has been developed because the company's current offering for enterprises is not a financially viable option for a large chunk of the market. 
+Neo4j's original product is its community edition, an open-source native graph database that has been publicly available since 2007 for developers to work with on GitHub.However, scaling the program is complex. So the company then offers an enterprise edition that provides developers with the tools to design, develop, maintain, and operate the application at a business-wide level.SEE: Sensor'd enterprise: IoT, ML, and big data (ZDNet special report) | Download the report as a PDF (TechRepublic)
+It is not all that easy to take the leap from community to enterprise, explained Kurt Freytag, director for Neo4j Cloud. ""Because of the price point,"" he told ZDNet, ""Neo4j has only been available to a relatively small number of companies.""A small number, and with deep pockets: the company's CEO Emil Eifrem says over 80% of the Fortune 100 are now using Neo4j. ""The main challenge was to bring the same quality service to a wider audience,"" said Freytag.
+By taking customers' datasets off premises to a managed cloud service, Neo4j Aura wants developers to delegate the day-to-day management of the database to Neo4j engineers – and make upscaling the system a much less complicated affair, the company argues.""Instead of worrying about operating a database, practitioners can focus on innovating,"" said Eifrem. ""We've just made it simple for anybody to get started with a graph database.""The idea is, therefore, that developers should be able to scale up their application without thinking about the operational complexity of the process – whereas before they would have remained stuck in the community edition for want of resources. The other benefit put forward by Neo4j Aura's creators is its affordability. Where the company's enterprise edition can cost up to hundreds of thousands of dollars per year, the new Aura application is built for customers to scale up gradually.According to Eifrem, customers could get started from $50 a month if they wanted. The company said the pay-as-you-go approach, based on flat hourly rates by capacity, will let smaller businesses tailor the size of their database to their needs. Aura has been tried and tested in Colombia by fintech company Minka, which manages automated clearing-house payments across eight banks in the country.At first, Minka tried to deploy Neo4j's technology by scaling up the community edition. ""They soon figured out they wanted to focus on their business offering rather than spend time and energy operating Neo4j infrastructure,"" said Freytag. ""So we involved them in the early-access program. They got started in a couple of hours, and now they have 300 transactions per second running through Aura.""As innovative as it may sound, Neo4j is not the first company to commercialize graph database as a service (GDaaS). Earlier this year, TigerGraph announced the availability of TigerGraph Cloud, which it dubbed the first native GDaaS, along with $32m in series B funding. SEE: In love with the graph: Neo4j spreads the obsession of a new database one app at a timeThe company's promises are similar to those of Neo4j: customers who wish to store their database in the cloud won't have to take care of any provisioning or managing.And of course, Amazon's Neptune also looms large, providing, in its own terms, a ""fast, reliable, fully managed graph database service"" that similarly takes operations management out of the hands of customers.To make a difference, Neo4j is banking on the promise it has made that Aura will ""always be on"". ""The system is fault-tolerant and self-healing, so it will never go down for security or software updates,"" said Freytag.In other words, it claims a better customer service than its competitors. But the market is becoming ever-more competitive. Gartner predicts that graph database management systems will grow at 100% annually through 2022. Although Neo4j remains in a comfortable position, having secured $80m in series E funding last year, it will have to deliver on its promises to compete effectively. 
+
+
+"

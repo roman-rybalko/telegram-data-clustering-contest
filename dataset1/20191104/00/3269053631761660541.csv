@@ -1,0 +1,54 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Los Nvidia Studio 441.12 mejoran el rendimiento en Adobe, Autodesk y traen el RayTracing al diseño
+04 Nov 2019 by Borja Rodríguez
+Nvidia anunció sus nuevos controladores gráficos Nvidia Studio 441.12, y por si no lo recuerdas, hace unos meses Nvidia permitió a los usuarios con tarjetas gráficas gaming poder usar unos controladores gráficos profesionales (Nvidia Studio) sin necesidad de adquirir una costosa gráfica Quadro, por lo que entre semana el usuario puede elegir unos controladores para creadores de contenido para ayudarles en el trabajo diario, y los fines de semana instalar los controladores GeForce para disfrutar de sus juegos favoritos, es decir, poder sacar el doble de provecho a una tarjeta gráfica gaming, mientras que la Quadro no permitiría un correcto desempeño en juegos pese a que conllevaría un coste mucho más elevado.
+
+
+
+Con esta nueva actualización la compañía promete una notable mejora de rendimiento en Adobe y sus aplicaciones propulsadas mediante Inteligencia Artificial, y si hablamos de IA, obviamente nos referimos a las Nvidia GeForce RTX, que cuentan con un hardware dedicado para acelerarla. Gracias a estos controladores, Nvidia afirma que las nuevas características por IA de Adobe, como Premiere Pro, ahora serán un 400% más rápidas en una GPU GeForce RTX que en una CPU. De estas mejoras también se benefician Adobe Dimension, Sbstance Alchemist, etc.
+Por otro lado, permitirán a los usuarios de Adobe Dimension acelerar la renderización de los entornos 3D que utilizan iluminación dinámica, reflejos y sombras suaves. ""También estamos añadiendo el RayTracing que permitirá a los artistas renderizar fantásticas escenas fotorrealistas en 3D que llevan sus entornos al siguiente nivel"", dijo Ross McKegney, director de ingeniería en 3D y Realidad Aumentada de Adobe.
+Adicionalmente, se añade soporte a la potente API de RayTracing OptiX7, la cual se ha implementado en la popular aplicación Blender Cycles 2.81 Beta; también se ha mejorado el rendimiento en otras aplicaciones como Autodesk Arnold, REDCINE-X Pro, etcétera, y otorgado soporte al filtro ReShade. Puedes descargar los Nvidia Studio 441.12 desde el siguiente enlace.
+
+
+
+
+
+",es,"
+
+
+
+
+
+
+
+
+
+
+
+Nvidia Studio 441.12 improve performance in Adobe, Autodesk and bring RayTracing to design
+04 Nov 2019 by Borja Rodríguez
+Nvidia announced its new Nvidia Studio 441.12 graphics controllers, and if you don't remember it, a few months ago Nvidia allowed users with gaming graphics cards to be able to use professional graphics controllers (Nvidia Studio) without having to buy an expensive Quadro graphics, so that during the week the user can choose some drivers for content creators to help them in their daily work, and on the weekends install the GeForce controllers to enjoy their favorite games, that is, to be able to take advantage of a gaming graphic card twice , while the Quadro would not allow a correct performance in games although it would entail a much higher cost.
+
+
+
+With this new update, the company promises a remarkable performance improvement in Adobe and its applications powered by Artificial Intelligence, and if we talk about AI, we obviously refer to the Nvidia GeForce RTX, which have a dedicated hardware to accelerate it. Thanks to these drivers, Nvidia states that the new features by Adobe AI, such as Premiere Pro, will now be 400% faster on a GeForce RTX GPU than on a CPU. Adobe Dimension, Sbstance Alchemist, etc. also benefit from these improvements.
+On the other hand, they will allow Adobe Dimension users to accelerate the rendering of 3D environments that use dynamic lighting, highlights and soft shadows. ""We are also adding RayTracing that will allow artists to render fantastic 3D photorealistic scenes that take their environments to the next level,"" said Ross McKegney, director of 3D engineering and Augmented Reality at Adobe.
+Additionally, support is added to the powerful RayTracing OptiX7 API, which has been implemented in the popular Blender Cycles 2.81 Beta application; Performance has also been improved in other applications such as Autodesk Arnold, REDCINE-X Pro, etc., and has supported the ReShade filter. You can download the Nvidia Studio 441.12 from the following link.
+
+
+
+
+
+"

@@ -1,0 +1,64 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Tödlicher Crash mit autonomem Auto: Fußgänger auf Fahrbahn nicht vorgesehen
+In einem Unfall mit einem Roboterauto von Uber kam 2018 eine Frau ums Leben. Das Auto konnte verkehrswidrig die Straße überquerende Personen nicht erkennen.
+06 Nov 2019, 10:48 by Martin Holland
+Der autonom fahrende SUV von Uber, der vor anderthalb Jahren eine Frau in Arizona erfasste und tödlich verletzte, konnte keine Fußgänger erkennen, die regelwidrig die Straße überqueren (""jaywalking""). Das geht aus einem nun veröffentlichten Report der US-Behörde für Transportsicherheit (NTSB) hervor, der eine Reihe von Ergebnissen der Untersuchungen zusammenfasst.
+Unter anderem wird darin detailliert aufgelistet, wie die Software des Fahrzeugs die Frau mit ihrem Fahrrad in den Sekunden vor dem Crash immer wieder umklassifizierte und viel zu spät erkannte, dass es zu dem Zusammenstoß kommen würde. Selbst dann löste die Technik in dem Testfahrzeug aber keine hinreichende Reaktion aus.
+Erster tödlicher Unfall mit autonomem Auto
+Mitte März 2018 hatte ein autonom fahrendes Testfahrzeug des Fahrdienstvermittlers Uber in Tempe im US-Bundesstaat Arizona eine Fußgängerin erfasst und tödlich verletzt. Sie hatte ein Fahrrad, an dem mehrere Plastiktüten hingen, neben sich hergeschoben und so eine mehrspurige Straße überquert. Zwar war sie damit für das Auto schlecht zu erkennen, aber die bisher bekannten Informationen über den Hergang hatten trotzdem die Fragen aufgeworfen, wieso die Frau von dem Auto zwar erfasst worden war, aber der Wagen trotzdem nicht abbremste oder auswich. Die detaillierte Auflistung der NTSB gibt nun Antworten.
+Dem Bericht zufolge fuhr der autonom fahrende, umgebaute Volvo-SUV von Uber 70 km/h, als die Frau 5,6 Sekunden vor dem Crash erstmals erfasst wurde. Sie wurde aber nicht als die Straße überquerende Frau erkannt, sondern nur als ""Vehikel"" klassifiziert, dem keine Bewegungsrichtung zugeschrieben wurde. Innerhalb der nächsten Sekunden wurde diese Klassifikation andauernd geändert; hier wurde ein weiterer Aspekt der Software zum Problem: Mit jeder neuen Klassifikation wurden die zuvor registrierten Ortsangaben zurückgesetzt. Das Roboterauto meinte deswegen, andauernd ein neues stationäres ""Vehikel"", ""unbekanntes Objekt"" oder ""Fahrrad"" zu erkennen. Die Bewegung in Richtung der Autospur wurde sekundenlang nicht vorhergesehen.
+Erst 1,5 Sekunden vor dem Crash – und immer noch bei 70 km/h – wurde ein ""unbekanntes Objekt"" erfasst, das sich ""teilweise in die Spur des SUV"" bewegte. Die Algorithmen berechneten deswegen ein Ausweichmanöver, heißt es bei der NTSB. Genau 1,2 Sekunden vor dem Crash erkannte das System dann ein Fahrrad, das sich ""voll auf dem Weg in die Spur"" befände, das Ausweichmanöver war nicht mehr möglich. Hier zeigt sich nun ein weiteres Problem der damaligen Software. Wenn das System solch ein gefährliche Situation erkannte, pausierte es für eine Sekunde, um dem im Auto sitzenden Sicherheitsfahrer Zeit für ein Eingreifen zu geben. Ein Alarm war aber nicht vorgesehen. So sollten ungewollte Konsequenzen eines Fehlalarms vermieden werden. Der in dem Volvo eingebaute Notbrems-Assistent war abgeschaltet.
+Ungebremster Aufprall
+0,2 Sekunden vor der Kollision endete die einsekündige Pause, in der die anwesende Sicherheitsfahrerin nichts unternommen hatte, sie hatte die Straße nicht im Blick. Die Software war nun so programmiert, dass sie nur voll in die Bremsen steigt, wenn die Kollision auf diesem Weg verhindert werden konnte. Andernfalls war eine akustische Warnung vorgesehen und nur eine graduelle Bremsung. Im konkreten Fall übernahm die Sicherheitsfahrerin in diesem Moment das Steuer und deaktivierte damit die autonome Steuerung. Es kam zum tödlichen Crash und erst 0,7 Sekunden danach, bei einer Geschwindigkeit von immer noch 60 km/h, begann die Sicherheitsfahrerin das Auto abzubremsen.
+
+
+Draufsicht auf den Unfallhergang(Bild: NTSB)
+
+Fatal war in diesem Fall also nicht nur, dass das autonome Auto nicht darauf vorbereitet war, dass Menschen unachtsam oder regelwidrig Straßen überqueren (""jaywalking""), sondern noch weitere Entscheidungen der Software-Entwickler. Wie die NTSB schreibt, hat Uber bei seinen Testfahrzeugen nun unter anderem die einsekündige ""Action suppression"" deaktiviert. Wird eine gefährliche Situation erkannt, bremsen diese nun auch dann mit maximaler Kraft, wenn das einen Crash nicht verhindern wird. Außerdem werden nun bei der Prognose der Bewegung eines erkannten Objekts auch dann vorherige Standortmessungen einbezogen, wenn das Objekt neu klassifiziert wird. Simulationen hätten ergeben, dass die neue Software die Frau 4,5 Sekunden vor der Kollision korrekt erkannt und kurze Zeit später eine kontrollierte Bremsung eingeleitet hätte.
+Die NTSB-Ermittler wollen am 19. November in einer öffentlichen Sitzung über ihre Ergebnisse informieren. Uber hatte seine Testfahrten Ende 2018 wieder aufgenommen, aber nur auf einer kleinen Straßenschleife in der Nähe der Zentrale der Uber-Abteilung für autonomes Fahren in Pittsburgh. Dort gibt es eine Geschwindigkeitsbegrenzung von 25 Meilen pro Stunde (40 km/h). Das sei auch die höchste Geschwindigkeit, mit der die Testfahrzeuge auf öffentlichen Straßen unterwegs sind. Aus dem Bericht der NTSB geht nun auch noch hervor, dass es zwischen September 2016 und März 2018 (ohne den tödlichen Crash) insgesamt 37 Unfälle und ""Vorfälle"" unter Beteiligung eines autonomen fahrenden Roboterautos von Uber gab. (mho)
+
+
+",de,"
+
+
+
+
+
+
+
+
+
+
+
+Fatal crash with autonomous car: Pedestrians on the roadway not intended
+In an accident with a Uber robot car, a woman died in 2018. The car could not recognize the traffic crossing people crossing the street.
+06 Nov 2019, 10:48 by Martin Holland
+Uber's self-driving SUV, which seized and killed a woman in Arizona a year and a half ago, failed to detect any pedestrians crossing the street in an irregular manner (""jaywalking""). This is clear from a report released today by the US Department of Transportation Safety (NTSB), which summarizes a number of results from the research.
+Among other things, it is listed in detail how the software of the vehicle reclassified the woman with her bike in the seconds before the crash and realized far too late that it would come to the collision. Even then, the technique in the test vehicle did not trigger a sufficient response.
+First fatal accident with autonomous car
+In the middle of March 2018, an autonomously driving test vehicle owned by the car broker Uber in Tempe, Arizona, hit a pedestrian and fatally injured her. She had a bicycle, on which several plastic bags hung, pushed beside her and thus crossed a multi-lane road. Although she was so bad for the car to recognize, but the previously known information about the course had raised the questions anyway, why the woman was captured by the car, but the car still did not slow down or avoided. The detailed list of NTSB now gives answers.
+According to the report, the autonomously-driven, rebuilt Volvo SUV drove from over 70 km / h when the woman was captured 5.6 seconds before the crash. However, she was not recognized as a woman crossing the street, but classified only as a ""vehicle"" to which no direction of movement was attributed. Within the next few seconds this classification has been changed constantly; Here another aspect of the software became a problem: With each new classification, the previously registered locations were reset. The robotic car meant to constantly recognize a new stationary ""vehicle"", ""unknown object"" or ""bike"". The movement towards the car track was not anticipated for a second.
+Only 1.5 seconds before the crash - and still at 70 km / h - an ""unknown object"" was detected, which ""partially in the track of the SUV"" moved. The algorithms therefore calculated an evasive maneuver, it is said in the NTSB. Exactly 1.2 seconds before the crash, the system then recognized a bike that was ""fully on the way to the track"", the evasive maneuver was no longer possible. Here is another problem of the former software. If the system recognized such a dangerous situation, it paused for a second to allow time for the car-sitting security driver to intervene. An alarm was not provided. Thus, unwanted consequences of a false alarm should be avoided. The built-in emergency brake assistant in the Volvo was switched off.
+Unbraked impact
+0.2 seconds before the collision ended the one-second break, in which the security driver present had done nothing, they had the road not in sight. The software was now programmed so that it only fully in the brakes, if the collision could be prevented in this way. Otherwise, an audible warning was provided and only gradual braking. In this specific case, the security driver took over the wheel at that moment and thus deactivated the autonomous control system. It came to a deadly crash and only 0.7 seconds later, at a speed of still 60 km / h, the security driver began to slow down the car.
+
+
+Top view of the accident (Image: NTSB)
+
+It was not only fatal in this case, however, that the autonomous car was not prepared for the fact that people carelessly or irregularly cross roads (""jaywalking""), but also other decisions of the software developers. As the NTSB writes, Uber has now disabled in its test vehicles, among other things, the one-second ""Action suppression"". If a dangerous situation is detected, they now brake with maximum force even if that does not prevent a crash. In addition, in the prediction of movement of a detected object, prior location measurements are included even if the object is reclassified. Simulations have shown that the new software detected the woman correctly 4.5 seconds before the collision and shortly thereafter initiated controlled braking.
+The NTSB investigators want to inform about their results in a public meeting on 19 November. Uber resumed testing at the end of 2018, but only on a small road loop near the Uber Autonomous Driving Center in Pittsburgh. There is a speed limit of 25 miles per hour (40 km / h). This is also the highest speed with which the test vehicles are traveling on public roads. The NTSB report also indicates that between September 2016 and March 2018 (excluding the fatal crash) there were a total of 37 accidents and ""incidents"" involving a Uber autonomous mobile robot car. (Mho)
+
+
+"

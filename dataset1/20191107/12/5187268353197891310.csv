@@ -1,0 +1,102 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Politécnico da Guarda vai pôr à prova segurança dos novos routers da MEO
+07 Nov 2019, 12:33 by Pedro Pinto
+O projeto vai simular ataques para testar segurança dos equipamentos de nova geração que a MEO irá lançar no próximo ano. O objetivo é identificar potenciais vulnerabilidades e falhas.
+O Politécnico da Guarda (IPG) irá propor correções e ajustes ao nível da segurança.
+
+
+
+O projeto chama-se “Segurança em CPE: identificação e mitigação de vulnerabilidades que afetam a rede do fornecedor de serviço”. Os CPE são equipamentos de comunicação instalados na casa dos clientes, como são exemplo os “routers domésticos”.
+A análise será feita no âmbito do “Contrato de Prestação de Serviços de I&D e de Transferência e Partilha de Conhecimento” que foi assinado entre o presidente do Instituto Politécnico da Guarda, Joaquim Brigas, e o presidente do Conselho de Administração da Altice, Alexandre Fonseca.
+É um orgulho para o IPG continuar a merecer a confiança de um parceiro tão exigente como a Altice Labs. A Altice Labs é uma unidade de investigação e desenvolvimento com reputação europeia e que tem clientes em 40 países. Para além dos serviços que prestamos à Altice em matéria de cibersegurança e de testes de software antes da ida para o mercado, somos também responsáveis pela formação e atualização de conhecimentos de quadros da empresa.Os especialistas da Altice Labs estão a colaborar nos mestrados, pós-graduações e estágios profissionais do IPG. Os nossos professores vão começar a fazer licenças sabáticas nas instalações da Altice.
+Presidente do Politécnico da Guarda, Joaquim Brigas
+
+
+Presidente do IPG, Prof. Dr. Joaquim Brigas
+
+As novas “fiber gateways” que o IPG irá testar já estão a ser comercializadas pela Altice em França desde agosto. A multinacional quer, no entanto, fazer novos testes de segurança antes da entrada no mercado português.
+Neste mundo cada vez mais digital, a cibersegurança tornou-se um aspeto crítico que urge prevenir. O IPG possui competências reconhecidas na área da segurança e esta parceria vem reforçar o pioneirismo e inovação dos produtos que desenvolvemos na Altice Labs
+Alcino Lavrador, diretor-geral da Altice Labs
+
+
+Eng. Alcino Lavrador, diretor-geral da Altice Labs
+
+Primeiro investigar, depois partilhar o conhecimento
+O projeto tem como objetivo simular ataques aos próximos “routers” da MEO. No final serão feitas sugestões de correção/mitigação dos problemas eventualmente identificados.
+Pretende-se avaliar vulnerabilidades e falhas como a má configuração do sistema; a suscetibilidade a DoS; vulnerabilidades na aplicação de gestão; passwords fracas; ataques de injeção (SQL injection, XSS, packet injection, etc); Man-in-the-Midle; ou bypass da autenticação.
+O trabalho será iniciado pela análise do ecossistema, pelo mapeamento de rede e pela definição dos vetores de ataque a serem explorados. Seguir-se-á a identificação e a exploração de vulnerabilidades em serviços de rede expostos nas interfaces de rede externos e internos.
+O mesmo será feito às aplicações de gestão, à rede wireless e a outros vetores a explorar. O trabalho será concluído quando o IPG apresentar à Altice Labs a análise crítica dos resultados obtidos e fizer sugestões de melhoria. As mudanças serão depois implementadas em todos os países em que a Altice vende equipamentos iguais.
+
+
+
+Pelo lado do IPG, o trabalho será coordenado pelo professor e Engenheiro Informático Pedro Pinto. Contará ainda com a colaboração dos elementos do Centro de Competências em Cibersegurança do IPG e de dois bolseiros com experiência na área. “É uma forma de podermos contratar estudantes e de os colocar, logo a seguir, a trabalhar ao mais alto nível”, observa Joaquim Brigas.
+Após a conclusão do trabalho, serão levadas a cabo ações de transferência e de partilha do conhecimento do IPG para os técnicos da Altice Labs. Estão previstas sessões de formação, seminários, demonstrações ou outro tipo de ações, conforme planos a definir pelo IPG e pela Altice Labs.
+Leia também…
+
+
+
+
+
+",pt,"
+
+
+
+
+
+
+
+
+
+
+
+Guarda Polytechnic will test the security of the new MEO routers
+07 Nov 2019, 12:33 by Pedro Pinto
+The project will simulate attacks to test the safety of next-generation equipment that MEO will launch next year. The goal is to identify potential vulnerabilities and flaws.
+The Guard Polytechnic (IPG) will propose security corrections and adjustments.
+
+
+
+The project is called “CPE Security: Identification and Mitigation of Vulnerabilities Affecting the Service Provider Network”. FPCs are communication equipment installed at a customer's home, such as ""home routers"".
+The analysis will be carried out under the “R&D Service Agreement and Knowledge Transfer and Sharing Agreement” which was signed between the president of Guarda Polytechnic Institute, Joaquim Brigas, and the chairman of Altice's Board of Directors, Alexandre Fonseca. .
+IPG is proud to continue to earn the trust of such a demanding partner as Altice Labs. Altice Labs is a European-renowned research and development unit with clients in 40 countries. In addition to the services we provide to Altice for cybersecurity and pre-market software testing, we are also responsible for training and updating staff skills. Altice Labs specialists are collaborating on masters, postgraduate and postgraduate programs. - IPG professional degrees and internships. Our teachers will start taking sabbaticals at Altice facilities.
+President of the Guard Polytechnic, Joaquim Brigas
+
+
+IPG President, Prof. Dr. Joaquim Fights
+
+The new fiber gateways that IPG will test are already being marketed by Altice in France since August. However, the multinational wants to do new security tests before entering the Portuguese market.
+In this increasingly digital world, cybersecurity has become a critical aspect to be prevented. IPG has recognized safety competencies and this partnership reinforces the pioneering and innovation of the products we develop at Altice Labs
+Alcino Lavrador, Managing Director of Altice Labs
+
+
+Eng. Alcino Lavrador, Managing Director of Altice Labs
+
+First investigate, then share knowledge
+The project aims to simulate attacks on upcoming MEO routers. At the end suggestions will be made to correct / mitigate any problems identified.
+It is intended to assess vulnerabilities and failures such as poor system configuration; susceptibility to DoS; management application vulnerabilities; weak passwords; injection attacks (SQL injection, XSS, packet injection, etc.); Man-in-the-Midle; or bypass authentication.
+The work will be initiated by ecosystem analysis, network mapping and the definition of attack vectors to be explored. Identification and exploitation of vulnerabilities in network services exposed on external and internal network interfaces will follow.
+The same will be done for management applications, the wireless network and other vectors to explore. The work will be completed when the IPG submits to Altice Labs the critical analysis of the results obtained and makes suggestions for improvement. The changes will then be implemented in all countries where Altice sells equal equipment.
+
+
+
+On the IPG side, the work will be coordinated by Professor and Computer Engineer Pedro Pinto. It will also be supported by members of the IPG Cybersecurity Skills Center and two scholars with experience in the area. “It is a way for us to be able to hire students and get them working at the highest level right away,” notes Joaquim Brigas.
+Upon completion of the work, IPG knowledge transfer and knowledge sharing actions will be undertaken for Altice Labs technicians. Training sessions, seminars, demonstrations or other actions are planned, according to plans to be defined by IPG and Altice Labs.
+Read too…
+
+
+
+
+
+"

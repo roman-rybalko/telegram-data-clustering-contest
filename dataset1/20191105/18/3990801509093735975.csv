@@ -1,0 +1,66 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Remember that scary AI text-generator that was too dangerous to release? It’s out now
+05 Nov 2019, 18:22 by Tristan Greene
+OpenAI today published the final model in its staged release for GPT-2, the spooky text generator the AI community’s been talking about all year.
+GPT-2 uses machine learning to generate novel text based on a limited input. Basically, you can type a few sentences about anything you like and the AI will spit out some ‘related’ text. Unlike most ‘text generators’ it doesn’t output pre-written strings. GPT-2 makes up text that didn’t previously exist– at least according to OpenAI‘s research paper.
+
+
+
+The non-profit made headlines in February when it disclosed that it would not release the full-sized models for GPT-2 to the general public all at once. Instead, the company opted to release it in four parts over eight months.
+An OpenAI blog post from February explains:
+Due to our concerns about malicious applications of the technology, we are not releasing the trained model. As an experiment in responsible disclosure, we are instead releasing a much smaller model for researchers to experiment with, as well as a technical paper.
+The full model contains 1.5 billion parameters. The more parameters a model is trained with, the ‘smarter’ it appears to be – just like humans, practice makes perfect.
+Initially OpenAI released a model with 124 million parameters subsequently followed by releases with 355 and 774 million. Each iteration showed a significant improvement in capability over previous iterations. We checked out the 774M model and were blown away. You can try it yourself at this link where developer Adam King has translated the model into a UI.
+Along with the new model 1.5B model weights, OpenAI also released its GPT-2 detection models in an effort to preemptively combat misuse. Unfortunately, according to OpenAI, the detector isn’t as good as the generator. In a blog post today the company said:
+We conducted in-house detection research and developed a detection model that has detection rates of ~95% for detecting 1.5B GPT-2-generated, Specifically, we based a sequence classifier on RoBERTaBASE (125 million parameters) and RoBERTaLARGE (355 million parameters) and fine-tuned it to classify the outputs from the 1.5B GPT-2 model versus WebText, the dataset we used to train the GPT-2 model.We believe this is not high enough accuracy for standalone detection and needs to be paired with metadata-based approaches, human judgment, and public education to be more effective. We are releasing this model to aid the study of research into the detection of synthetic text, although this does let adversaries with access better evade detection.
+We’ll get into the adversarial (and positive) use cases for GPT-2’s full release once we’ve had the chance to experiment with the complete model. In the meantime, you can download the model here on Github, check out the model card here, and read OpenAI‘s blog post here.
+
+Read next: A beginner’s guide to the AI apocalypse: Misaligned objectives
+
+
+
+",en,"
+
+
+
+
+
+
+
+
+
+
+
+Remember that scary AI text-generator that was too dangerous to release? It’s out now
+05 Nov 2019, 18:22 by Tristan Greene
+OpenAI today published the final model in its staged release for GPT-2, the spooky text generator the AI community’s been talking about all year.
+GPT-2 uses machine learning to generate novel text based on a limited input. Basically, you can type a few sentences about anything you like and the AI will spit out some ‘related’ text. Unlike most ‘text generators’ it doesn’t output pre-written strings. GPT-2 makes up text that didn’t previously exist– at least according to OpenAI‘s research paper.
+
+
+
+The non-profit made headlines in February when it disclosed that it would not release the full-sized models for GPT-2 to the general public all at once. Instead, the company opted to release it in four parts over eight months.
+An OpenAI blog post from February explains:
+Due to our concerns about malicious applications of the technology, we are not releasing the trained model. As an experiment in responsible disclosure, we are instead releasing a much smaller model for researchers to experiment with, as well as a technical paper.
+The full model contains 1.5 billion parameters. The more parameters a model is trained with, the ‘smarter’ it appears to be – just like humans, practice makes perfect.
+Initially OpenAI released a model with 124 million parameters subsequently followed by releases with 355 and 774 million. Each iteration showed a significant improvement in capability over previous iterations. We checked out the 774M model and were blown away. You can try it yourself at this link where developer Adam King has translated the model into a UI.
+Along with the new model 1.5B model weights, OpenAI also released its GPT-2 detection models in an effort to preemptively combat misuse. Unfortunately, according to OpenAI, the detector isn’t as good as the generator. In a blog post today the company said:
+We conducted in-house detection research and developed a detection model that has detection rates of ~95% for detecting 1.5B GPT-2-generated, Specifically, we based a sequence classifier on RoBERTaBASE (125 million parameters) and RoBERTaLARGE (355 million parameters) and fine-tuned it to classify the outputs from the 1.5B GPT-2 model versus WebText, the dataset we used to train the GPT-2 model.We believe this is not high enough accuracy for standalone detection and needs to be paired with metadata-based approaches, human judgment, and public education to be more effective. We are releasing this model to aid the study of research into the detection of synthetic text, although this does let adversaries with access better evade detection.
+We’ll get into the adversarial (and positive) use cases for GPT-2’s full release once we’ve had the chance to experiment with the complete model. In the meantime, you can download the model here on Github, check out the model card here, and read OpenAI‘s blog post here.
+
+Read next: A beginner’s guide to the AI apocalypse: Misaligned objectives
+
+
+
+"

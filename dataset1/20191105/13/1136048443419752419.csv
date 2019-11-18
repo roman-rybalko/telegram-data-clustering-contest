@@ -1,0 +1,96 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Что такое транспортные экспресс-карты в Apple Pay и как ими пользоваться
+05 Nov 2019, 13:00 by Иван Кузнецов
+Apple нас балует, и даже не думайте со мной спорить. Из-за длительной программной поддержки фирменных устройств двухлетний цикл обновлений Android-смартфонов кажется нам смешным, а удобство и логичность Apple Pay заставляют буквально плеваться от использования Google Pay. Но если чаще всего причиной, по которой разработки Apple превосходят продукцию конкурентов, является грамотная реализация, то иногда всё-таки функциональные возможности берут своё. Например, как в случае с транспортными экспресс-картами.
+
+
+
+С iPhone оплачивать проезд гораздо удобнее, чем вы думали
+Оказывается, многие не знают, что iPhone можно использовать в качестве транспортной экспресс-карты. Эта функция имеет общую природу с Apple Pay, позволяя расплачиваться в транспорте при помощи банковской карты, привязанной к Wallet, бесконтактным способом. Однако, в отличие от Apple Pay, при использовании экспресс-карты, нет нужды подтверждать транзакцию биометрией или вводом код-пароля. Это позволяет сэкономить время, например, при проходе через турникет метро, аэроэкспресса или МЦК.
+Как добавить транспортную экспресс-карту
+
+Чтобы превратить банковскую карту в транспортную с экспресс-доступом, перейдите в Настройки — Wallet;
+Выберите раздел «Экспресс-карта»;
+
+
+
+
+Любую банковскую карту можно превратить в экспресс-карту для оплаты проезда
+
+В открывшемся окне выберите карту, которую хотите использовать для оплаты проезда;
+Проверьте работу механизма, когда окажетесь в метро или другом общественном транспорте.
+
+
+Читайте также: Карту «Тройка» можно будет добавить в Apple Pay
+
+Почему iPhone не требует верификации платежа биометрией? Ну, на это есть несколько причин. Во-первых, стоимость проезда, как правило, оказывается довольно невысокой, а значит, удобство от бесконтактной оплаты, совершённой быстро, значительно выше, чем риск возможной потери 30-60 рублей. Во-вторых, предполагается, что пользователь изначально знает, сколько стоит проезд, и его цена не может быть скорректирована кем-то посторонним, поскольку турникеты работают в автоматическом режиме. Ну, и, в-третьих, оплата экспресс-картой работает только на терминалах оплаты в транспорте и больше нигде.
+Как платить Apple Pay, если iPhone разряжен
+Однако удобство транспортной экспресс-карты не ограничивается отсутствием необходимости подтверждать платёж при помощи биометрии или код-пароля. Дело в том, что все модели iPhone, выпущенные после 2018 года, обладают возможностью платить за проезд бесконтактным способом, даже если их аккумулятор полностью разряжен. Судя по информации, предоставленной Apple, смартфоны автоматически резервируют небольшой объём энергии для обеспечения работы модуля NFC, который и отвечает за бесконтактную оплату. А поскольку он крайне нетребователен к ресурсам, резервных миллиампер хватит надолго.
+
+Подпишись на наш канал в Яндекс.Дзен. Там ты найдёшь ещё больше полезных советов и инструкций.
+
+«Даже если операционная система не загружается, потому что аккумулятор iPhone полностью разрядился, в нём всё ещё есть немного энергии, которой будет достаточно для проведения операций через экспресс-карты. При нажатии боковой клавиши на экране отобразится значок разряженной батареи, а также текст, указывающий на то, что экспресс-карты по-прежнему доступны для использования», — говорится в документе, посвящённом вопросам безопасности iOS 12.
+Безопасна ли транспортная экспресс-карта
+Важно понимать, что транспортная экспресс-карта – хоть и удобна, но всё-таки менее безопасна, чем обычные платежи через Apple Pay. Поэтому для вашего собственного успокоения рекомендуем время от времени проверять баланс той карты, которую вы используете для оплаты проезда. Впрочем, Apple могла бы существенно облегчить жизнь пользователей, если бы добавила в Wallet возможность ограничить сумму транзакции. Ведь стоимость проезда обычно строго фиксирована, а потому можно было ограничить размер каждого платежа по этой карте известной заранее суммой.
+
+
+",ru,"
+
+
+
+
+
+
+
+
+
+
+
+What are express transport cards in Apple Pay and how to use them
+05 Nov 2019, 13:00 by Ivan Kuznetsov
+Apple pampers us, and don’t even think about arguing with me. Due to the long-term software support for branded devices, the two-year update cycle of Android smartphones seems ridiculous to us, and the convenience and consistency of Apple Pay make you literally spit on using Google Pay. But if most often the reason why Apple's development is superior to competitors' products is a competent implementation, then sometimes the functionality still takes its toll. For example, as is the case with express transport cards.
+
+
+
+Paying with your iPhone is much more convenient than you thought.
+It turns out that many do not know that the iPhone can be used as a transport express card. This feature has a common nature with Apple Pay, allowing you to pay in transport using a bank card tied to Wallet, in a contactless manner. However, unlike Apple Pay, when using an express card, there is no need to confirm the transaction with biometrics or entering a password code. This saves time, for example, when passing through the turnstile of the metro, aeroexpress or MCC.
+How to add express transport card
+
+To turn a bank card into a transport card with express access, go to Settings - Wallet;
+Select the Express Card section;
+
+
+
+
+Any bank card can be turned into an express card to pay for travel
+
+In the window that opens, select the card that you want to use to pay for the fare;
+Check the operation of the mechanism when you are in the subway or other public transport.
+
+
+See also: Troika card can be added to Apple Pay
+
+Why doesn’t iPhone require biometric verification of payment? Well, there are several reasons for this. Firstly, the fare, as a rule, is quite low, which means that the convenience of contactless payments made quickly is much higher than the risk of a possible loss of 30-60 rubles. Secondly, it is assumed that the user initially knows how much the fare costs, and its price cannot be adjusted by someone else, since the turnstiles work in automatic mode. Well, and thirdly, payment by express card works only at payment terminals in transport and nowhere else.
+How to pay Apple Pay if iPhone is low
+However, the convenience of the express transport card is not limited to the lack of the need to confirm the payment using biometrics or a password code. The fact is that all iPhone models released after 2018 have the ability to pay for travel in a non-contact way, even if their battery is completely discharged. Judging by the information provided by Apple, smartphones automatically reserve a small amount of energy to ensure the operation of the NFC module, which is responsible for contactless payment. And since it is extremely undemanding to resources, standby milliamps will last for a long time.
+
+Subscribe to our channel in Yandex.Zen. There you will find even more useful tips and instructions.
+
+“Even if the operating system does not boot because the iPhone’s battery is completely exhausted, it still has some energy that will be enough to carry out operations via express cards. When you press the side key, the low battery icon will appear on the screen, as well as text indicating that express cards are still available for use, ”the iOS 12 security document says.
+Is the express transport card safe
+It is important to understand that the express transport card, although convenient, is still less secure than regular payments via Apple Pay. Therefore, for your own comfort, we recommend that you check from time to time the balance of the card that you use to pay for your fare. However, Apple could make life easier for users if it added the ability to limit the amount of the transaction to Wallet. After all, the fare is usually strictly fixed, and therefore it was possible to limit the size of each payment on this card by a known amount in advance.
+
+
+"

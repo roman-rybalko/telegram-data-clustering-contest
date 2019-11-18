@@ -1,0 +1,64 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Hackers can now control your Smart Home Assistant using lasers
+05 Nov 2019, 17:00 by Atiya
+To foil hackers, it’s already been established that you should place your electric car key fob away from your front door; but now, it looks like you have to take similar precautions for your Smart Home Assistant.
+According to a new study by researchers at the University of Michigan and the University of Electro-Communications in Tokyo; lasers can now be used to hijack voice assistant devices.
+While the scheme seems quite far-fetched, it’s actually a lot easier to carry out than you may think- especially if your device sits close to a window.
+The video below describes the mechanism in better detail, but in brief- a laser -modulated by a laser driver and audio amplifier- can focus its beam onto the micro-electro-mechanical systems (MEMS) microphones of smart home devices, to mimic a human voice.
+
+
+
+While Smart Home Assistants weren’t previously considered much of a target, they are increasingly linked to compatible Smart Home Devices- including garage doors and electric vehicles.
+“[User authentication on these devices is often lacking or non-existent, allowing the attacker to use light-injected voice commands to unlock the target’s smartlock-protected front doors, open garage doors, shop on e-commerce websites at the target’s expense, or even locate, unlock and start various vehicles (e.g., Tesla and Ford) that are connected to the target’s Google account.” –researchers at the University of Michigan and University of Electro-Communications in Tokyo
+In response to an inquiry regarding this research, an Amazon spokesperson has responded.
+“Customer trust is our top priority and we take customer security and the security of our products seriously. We are reviewing this research and continue to engage with the authors to understand more about their work.”
+Likewise, Google issued a response:
+We are closely reviewing this research paper. Protecting our users is paramount, and we’re always looking at ways to improve the security of our device.”
+If you feel like you’re at risk of this attack, you could take extra precautionary measures, like enabling pin codes on your devices; though it’s unlikely your neighbourhood cat burglar will pull off such a meticulous scheme in the near future.
+Source: Voicebot 
+
+
+",en,"
+
+
+
+
+
+
+
+
+
+
+
+Hackers can now control your Smart Home Assistant using lasers
+05 Nov 2019, 17:00 by Atiya
+To foil hackers, it’s already been established that you should place your electric car key fob away from your front door; but now, it looks like you have to take similar precautions for your Smart Home Assistant.
+According to a new study by researchers at the University of Michigan and the University of Electro-Communications in Tokyo; lasers can now be used to hijack voice assistant devices.
+While the scheme seems quite far-fetched, it’s actually a lot easier to carry out than you may think- especially if your device sits close to a window.
+The video below describes the mechanism in better detail, but in brief- a laser -modulated by a laser driver and audio amplifier- can focus its beam onto the micro-electro-mechanical systems (MEMS) microphones of smart home devices, to mimic a human voice.
+
+
+
+While Smart Home Assistants weren’t previously considered much of a target, they are increasingly linked to compatible Smart Home Devices- including garage doors and electric vehicles.
+“[User authentication on these devices is often lacking or non-existent, allowing the attacker to use light-injected voice commands to unlock the target’s smartlock-protected front doors, open garage doors, shop on e-commerce websites at the target’s expense, or even locate, unlock and start various vehicles (e.g., Tesla and Ford) that are connected to the target’s Google account.” –researchers at the University of Michigan and University of Electro-Communications in Tokyo
+In response to an inquiry regarding this research, an Amazon spokesperson has responded.
+“Customer trust is our top priority and we take customer security and the security of our products seriously. We are reviewing this research and continue to engage with the authors to understand more about their work.”
+Likewise, Google issued a response:
+We are closely reviewing this research paper. Protecting our users is paramount, and we’re always looking at ways to improve the security of our device.”
+If you feel like you’re at risk of this attack, you could take extra precautionary measures, like enabling pin codes on your devices; though it’s unlikely your neighbourhood cat burglar will pull off such a meticulous scheme in the near future.
+Source: Voicebot 
+
+
+"

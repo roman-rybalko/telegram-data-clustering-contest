@@ -1,0 +1,88 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Los Pixel 4 tienen un modo oculto para mejorar el brillo de la pantalla siempre y cuando tengas el móvil rooteado
+07 Nov 2019, 08:02 by Jose Antonio Carmona
+Puede que a la hora de comprar un móvil sean muchos los usuarios que se guían por el tamaño de la pantalla, la cantidad de megapíxeles de la cámara o simplemente por el diseño. Muchos factores que controlar entre los que hay uno muy importante y que sin embargo pasa desapercibido: el brillo de la pantalla.
+El Pixel 4 y ya lo vimos en nuestro análisis, es un móvil con una gran pantalla y brillo adecuado que sin embargo se puede quedar corto bajo ciertas circunstancias. Puede que con la barra de brillo situada al máximo, donde las mediciones realizadas le otorgan una luminosidad que no pasa de 450 nits, tengamos algún apuro. Un valor, esos 450 nits, que ahora sabemos que se puede incrementar, eso sí, sólo en el caso de contar con acceso root.
+Mejorar el brillo
+
+
+
+Y es que si tienes root en un teléfono Pixel 4 puedes acabar con la limitación de esos 450 nits de brillo que pueden hacer que bajo una luz exterior fuerte o intensa (en la costa a pleno solo puede ser difícil ver la pantalla) la pantalla pierda casi toda la visibilidad.
+Con root se puede activar el modo alto brillo por medio de un menú oculto, una posibilidad que no vamos a encontrar para activar de forma manual en ninguna parte de la ""Configuración"". Un modo que no es compatible con el ""Brillo Adaptativo"" y que se puede activar añadiendo los siguientes comandos en la consola adb. Adb es el terminal que usamos para introducir comandos en el teléfono:
+suecho on >> /sys/class/backlight/panel0-backlight/hbm_mode
+Una vez habilitada la opción dentro del sistema, el modo de alto brillo entra a funcionar sólo cuando la pantalla alcanza los niveles máximos de brillo en la interfaz de usuario y desaparece una vez la pantalla entra en reposo. Eso sí, se puede usar un administrador de tareas como Tasker para automatizar su funcionamiento.
+
+
+
+Con este sistema se pueden alcanzar los 610 nits de brillo, una cantidad más acorde a lo que ofrecen otros modelos de la competencia, un salto que hace que la pantalla sea más usable bajo condiciones lumínicas adversas. Eso sí, hay que tener en cuenta que dejar activo por defecto el modo ""alto brillo"" puede repercutir en la autonomía del teléfono, por lo que desde XDADevelopers dejan claro que es aconsejable dejar habilitado ""Brillo Adaptativo"".
+En este sentido hay que destacar como cuentan los descubridores de esta opción que, tras habilitar el modo de alto brillo, es aconsejable restablecer el ""Brillo Adaptativo"" en la ruta ""Configuración > Aplicaciones y notificaciones > Todas las aplicaciones > Servicios de salud del dispositivo > Almacenamiento y caché > Borrar almacenamiento"".
+Rootear el móvil
+
+
+
+Rootear el teléfono es un paso que cada vez emplea menos la gente, al menos la generalidad de los usuarios. Rootear el teléfono no es más que conceder al usuario el poder para que las aplicaciones tengan acceso a una serie de permisos a los que normalmente no pueden acceder, permisos que suelen denominarse como «permisos de super-usuario o root. Desde ese momento una app tiene acceso a todo el sistema. Podemos instalar un sistema de reinicio avanzado, roms de terceros o acceder a funciones ocultas del móvil, como esta que nos ocupa.
+Para rootear un teléfono, es necesario realizar una serie de pasos que pueden variar en cada modelo de teléfono a usar. Se puede hacer de forma manual con la consola ADB o ejecutando alguna aplicación que haga todo el proceso y facilite la tarea. Una vez dicho todo esto, hay que tener en cuenta una serie de consideraciones:
+
+Hacer root a un teléfono no está exento de riesgo, así que hay que hacerlo sin desviarse de los pasos en cada caso establecidos.
+Al rootear un teléfono en algunas marcas se puede perder la garantía.
+Cada teléfono tiene un proceso distinto para lograr el rooteo.
+
+Fuente | XDADevelopers
+
+
+",es,"
+
+
+
+
+
+
+
+
+
+
+
+The Pixel 4 have a hidden mode to improve the brightness of the screen as long as you have the mobile rooted
+07 Nov 2019, 08:02 by Jose Antonio Carmona
+It may be that when buying a mobile phone there are many users who are guided by the size of the screen, the amount of megapixels of the camera or simply by design. Many factors to control among which there is a very important one and that however goes unnoticed: the brightness of the screen.
+The Pixel 4 and we saw it in our analysis, is a mobile with a large screen and adequate brightness that however can fall short under certain circumstances. Maybe with the brightness bar located at the maximum, where the measurements made give it a brightness that does not exceed 450 nits, we have some trouble. A value, those 450 nits, which we now know can be increased, yes, only in the case of having root access.
+Improve brightness
+
+
+
+And is that if you have root on a Pixel 4 phone you can end the limitation of those 450 nits of brightness that can make under a strong or intense exterior light (on the coast in full it can only be difficult to see the screen) the screen loses Almost all visibility.
+With root you can activate the high brightness mode through a hidden menu, a possibility that we will not find to activate manually anywhere in the ""Settings"". A mode that is not compatible with ""Adaptive Brightness"" and can be activated by adding the following commands in the adb console. Adb is the terminal we use to enter commands on the phone:
+Suecho on >> / sys / class / backlight / panel0-backlight / hbm_mode
+Once the option within the system is enabled, the high brightness mode comes into operation only when the screen reaches the maximum brightness levels in the user interface and disappears once the screen goes to sleep. Of course, you can use a task manager like Tasker to automate its operation.
+
+
+
+With this system you can reach 610 nits of brightness, an amount more in line with what other competitive models offer, a jump that makes the screen more usable under adverse lighting conditions. Of course, we must bear in mind that leaving the ""high brightness"" mode active by default can have an effect on the autonomy of the phone, so from XDADevelopers they make it clear that it is advisable to leave ""Adaptive Brightness"" enabled.
+In this regard, it is important to note how the discoverers of this option count that, after enabling the high brightness mode, it is advisable to reset the ""Adaptive Brightness"" in the path ""Settings> Applications and notifications> All applications> Device health services > Storage and cache> Clear storage "".
+Root the mobile
+
+
+
+Rooting the phone is a step that less and less people employ, at least the majority of users. Rooting the phone is nothing more than granting the user the power so that applications have access to a series of permissions that they cannot normally access, permissions that are usually referred to as “super-user permissions or root. From that moment an app has access to the entire system. We can install an advanced restart system, third-party roms or access hidden mobile functions, such as this one.
+To root a phone, it is necessary to perform a series of steps that may vary on each model of phone to use. It can be done manually with the ADB console or by running an application that does the whole process and facilitates the task. Having said all this, one must take into account a number of considerations:
+
+Rooting a phone is not without risk, so you have to do it without deviating from the steps established in each case.
+By rooting a phone on some brands, the warranty may be lost.
+Each phone has a different process to achieve rooting.
+
+Source | XDADevelopers
+
+
+"

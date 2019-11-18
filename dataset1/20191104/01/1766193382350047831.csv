@@ -1,0 +1,46 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Android Beam erlaubt Einschleusen fremder Apps
+Über NFC könnten fast unbemerkt gefährliche Apps auf Android-Geräte gelangen. Betroffen sind Android 8, 9 und 10. Es gibt Abhilfe.
+04 Nov 2019, 01:55 by Daniel AJ Sokolov
+Die App Android Beam, die auf vielen Android-Geräten von Haus aus installiert ist, kann Einfallstor für gefährliche Apps sein. Android Beam erlaubt Übertragung und Empfang von Daten mittels Nahfunkverfahren NFC. Dabei können auch Installationsdateien für Apps empfangen werden. Irrtümlicherweise darf bei Android 8, 9 und 10 die Android-Beam-App andere Apps aus unbekannten Quellen installieren. Die übliche Warnung unterbleibt.
+Das könnte dazu führen, dass Nutzer nach dem Empfang einer Datei über Android Beam durch einen einfachen Tap oder Klick eine schädliche App installieren, etwa weil sie sie für ein Update halten. Da die NFC-Reichweite sehr kurz ist, muss ein Angreifer bis auf einige Zentimeter an das Zielhandy herankommen, um die App senden zu können. Ein präpariertes Bezahlterminal ist ein plausibles Angriffsszenario. Wenngleich Deutsche eher nicht mit dem Handy zahlen wollen, liegt das anderswo im Trend.
+So schützen Sie sich
+Abhilfe schafft das Oktober-Update für Android. Leider hinken viele Endgerätehersteller Monate nach, wenn es um das Schließen von Sicherheitslücken geht. Bis das Oktober-Update eingespielt ist, sollten Nutzer auf Geräten mit Android 8, 9 oder 10 mit Android Beam entweder die NFC-Funktion abschalten oder Android Beam beziehungsweise dem ""Nfc-Dienst"" die Berechtigung entziehen, Apps aus unbekannten Quellen zu installieren. NFC komplett abzuschalten ist die einfachere Vorgehensweise, die Berechtigungen Android Beams zu korrigieren die elegantere; sie bringt auch weniger Funktionseinschränkungen mit sich.
+Entdeckt hat das Problem der Sicherheitsforscher Yakov Shafranovich. Er hat es Google am 30. 01. 2019 gemeldet und dafür in der Folge auch eine Belohnung im Rahmen des Android-Bounty-Programms erhalten. Google stuft die Sicherheitsgefahr des Bugs CVE-2019-2114 als ""hoch"" ein. Dennoch hat der Konzern bis zum Oktober-Update Androids gebraucht, einen Patch anzubieten. (ds)
+
+
+",de,"
+
+
+
+
+
+
+
+
+
+
+
+Android Beam allows infiltration of third-party apps
+About NFC could get almost unnoticed dangerous apps on Android devices. Affected are Android 8, 9 and 10. There is a remedy.
+04 Nov 2019, 01:55 by Daniel AJ Sokolov
+The Android Beam app, installed on many Android devices, can be the gateway to dangerous apps. Android Beam allows transmission and reception of data using NFC near-field radio. You can also receive installation files for apps. By mistake, the Android Beam app may install other apps from unknown sources on Android 8, 9 and 10. The usual warning is omitted.
+This could result in users installing a malicious app after receiving a file through Android Beam with a simple tap or click, perhaps because they consider it an update. Since the NFC range is very short, an attacker has to get up to a few inches to the target phone to send the app. A prepared payment terminal is a plausible attack scenario. Although Germans do not want to pay with their mobile phones, this is the trend elsewhere.
+How to protect yourself
+Remedy the October update for Android. Unfortunately, many terminal manufacturers are lagging for months when it comes to closing security holes. Until the October update is up, users on Android 8, 9, or 10 devices should either turn off NFC functionality or deny Android Beam or the Nfc service permission to install apps from unknown sources. Turning off NFC completely is the simpler approach, the permissions Android Beams correct the more elegant; it also brings fewer functional limitations with it.
+The problem has been discovered by security researcher Yakov Shafranovich. He reported it to Google on 01/30/2019 and subsequently received a reward under the Android Bounty program. Google classifies the security risk of the bug CVE-2019-2114 as ""high"". Nevertheless, the group has until the October update Androids needed to offer a patch. (Ds)
+
+
+"

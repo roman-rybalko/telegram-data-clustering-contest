@@ -1,0 +1,60 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+GitHub ermöglicht eigene Runner für GitHub Actions
+Der Code-Hoster und CI/CD-Anbieter GitHub hat eine neue Funktion in der Beta freigeschaltet: GitHub Actions laufen jetzt auch auf Infrastruktur der Nutzer.
+06 Nov 2019, 10:33 by Jan Mahn
+Die CI/CD-Funktionen, die GitHub unter dem Namen GitHub Actions an seine Git-Hosting-Plattform eingebaut hat, befinden sich zwar noch in der Testphase, werden aber bereits rege genutzt.
+Jetzt hat das Unternehmen in seinem Blog eine neue Funktion angekündigt, die gleich für mehrere Nutzergruppen von GitHub Actions interessant sein dürften: Jobs können ab sofort nicht nur auf Servern laufen, die GitHub dafür angemietet und bereitgestellt hat, sondern auch auf Infrastruktur der Nutzer. Im eigenen Rechenzentrum, als VM oder physische Maschine.
+Solche ""Self-hosted Runner"" können zum Beispiel dann sinnvoll sein, wenn ein Job wie das Bauen einer Software Abhängigkeiten hat, die nicht automatisiert per Skript installiert werden können – oder wenn ein Unternehmen zum Entschluss kommt, dass es günstiger ist, eigene Rechenkapazitäten für CI/CD vorzuhalten, als die Minutenpakete bei GitHub einzukaufen.
+Vor allem Entwickler, die Jobs auf macOS laufen lassen, müssen mit den Freiminuten, die GitHub bereitstellt, gut haushalten. Dieses Ressourcen muss auch GitHub teuer bei einem Anbieter für Mac-Hosting einkaufen. Nach Apples Lizenzbedingungen dürfen Apps nur auf Apple-Hardware kompiliert werden. Ein eigener macPro als CI/CD-Runner kann sich da für macOS- und iOS-Entwicklungsfirmen auszahlen.
+Auch Jobs, die spezielle Hardware wie GPU-Kerne erfordern, können in selbstbetriebenen Runnern auf eigener Hardware sinnvoll untergebracht werden.
+Schnell eingerichtet
+
+
+
+Für die Einrichtung einer Linux-, macOS- oder Windows-Maschine als Runner gibt es einen Assistenten, der auf der Kommandozeile läuft – wer bereits für die Actions-Betaphase registriert ist, kann die Funktion direkt ausprobieren.
+In den ""Settings"" eines Repos findet man die Schaltfläche zum Hinzufügen eigener Runner im Menüpunkt ""Actions"". Die Befehle gibt es zum Rauskopieren. Dabei wird auf dem Runner ein Token hinterlegt. Anschließend wird er aus der Ferne von GitHub Actions angestoßen und mit den Jobs versorgt. Das Einrichten und Monitoren der Actions geschieht wie bei GitHubs eigenen Runnern auch in der Weboberfläche.
+Der Zeitpunkt der Veröffentlichung kommt etwas überraschend. Schon am 13. November beginnt GitHubs Konferenz ""GitHub Universe"" in San Francisco. Für diesen Termin ist auch das Ende der Beta-Phase von GitHub Actions vorgesehen. (jam)
+
+
+",de,"
+
+
+
+
+
+
+
+
+
+
+
+GitHub allows own runners for GitHub Actions
+The code hoster and CI / CD provider GitHub has released a new feature in the beta: GitHub Actions now also run on user infrastructure.
+06 Nov 2019, 10:33 by Jan Mahn
+The CI / CD features that GitHub has built into its Git hosting platform under the name of GitHub Actions are still in the testing phase, but are already being used extensively.
+Now the company has announced a new feature on its blog that may be of interest to several GitHub Actions users: Jobs can now run not just on servers GitHub rented and provisioned for, but also on users' infrastructure. In your own data center, as VM or physical machine.
+Such ""self-hosted runners"" can be useful, for example, when a job like building a software has dependencies that can not be automated scripted - or when a company decides that it's cheaper to have its own computing capacity CI / CD than buying the minute packages at GitHub.
+Especially developers who run jobs on macOS have to keep up well with the free minutes provided by GitHub. These resources must also buy GitHub expensive from a provider for Mac hosting. Apple's licensing terms allow apps to be compiled on Apple hardware only. A dedicated macPro as a CI / CD runner can pay off there for macOS and iOS development companies.
+Even jobs that require special hardware such as GPU cores can be meaningfully accommodated in self-powered runners on their own hardware.
+Quick set up
+
+
+
+To set up a Linux, macOS or Windows machine as a runner, there is a wizard that runs on the command line - anyone who is already registered for the Actions beta can try the function directly.
+In the ""Settings"" of a repos you will find the button for adding your own runner in the menu item ""Actions"". The commands are there to copy out. Thereby a token is deposited on the runner. Then it is remotely triggered by GitHub Actions and supplied with the jobs. The setting up and monitoring of the actions happens like in GitHubs own runners also in the web interface.
+The timing of the release comes as a surprise. GitHub's ""GitHub Universe"" conference begins in San Francisco on November 13th. For this appointment also the end of the beta phase of GitHub Actions is provided. (Jam)
+
+
+"

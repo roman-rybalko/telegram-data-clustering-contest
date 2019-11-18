@@ -1,0 +1,278 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Query JSON documents in the Terminal with GROQ
+Easily manage projects with monday.com
+JSON documents are everywhere today, but they are rarely structured the way you want them to be. They often include too much data, have weirdly named fields, or place the data in unnecessary nested objects. Graph-Relational Object Queries (GROQ) is a query language (like SQL, but different) which is designed to work directly on JSON documents. It basically lets you write queries you can quickly filter and then reformat JSON documents to get them into the most convenient shape.
+GROQ was developed by Sanity.io (where it’s used as the primary query language). It’s open source and it gives us built-in ways to use it in JavaScript and the command line on any JSON source. Together, we’ll add GROQ to the terminal toolkit, which will save you time whenever you need to wrangle some JSON data on a poject.
+Let’s install GROQ
+Like most things, we need to install the GROQ CLI tool and can do so with with npm (or Yarn) in the terminal:
+$ npm install -g groq-cli
+In order to play with it, we need to have a JSON file available. We’ll use curl to download an example dataset of todo data:
+$ curl -o todos.json https://jsonplaceholder.typicode.com/todos
+Let's take a quick look at a sample item in the data:
+{   ""userId"": 1,   ""id"": 1,   ""title"": ""delectus aut autem"",   ""completed"": false },
+Pretty straightforward. We have a user ID, a todo item ID, a todo title and a boolean specifying whether the todo item is completed or not.
+Now let’s run a basic GROQ query: finding all completed todos, but only return the todo titles and user IDs. It’s OK to copy/paste this line because we’ll walk through what it means in a bit.
+$ cat todos.json | groq '*[completed == true]{title, userId}' --pretty
+The groq command line tools accept a JSON document on standard input. This works very nicely with the Unix philosophy of “doing one thing and work on a text stream.” In order to read JSON from a file we’ll use the cat command. Also note that groq will output a minimal JSON on a single line by default, but by passing --pretty, we get a nicely indented and highlighted syntax.
+To store the result, we can pipe it to a new file using >:
+$ cat todos.json | groq '*[completed == true]{title, userId}' > result.json
+The query itself consists of three parts:
+
+* refers to the dataset (i.e. the data in the JSON file).
+[completed == true] is a filter that removes items that are marked as incomplete.
+{title, userId} is a projection that causes the query to only return the ""title"" and ""userId"" properties.
+
+Let’s warm up with some exercises
+You probably didn’t think you’d need to exercise to get through this post! Well, the good news is that we’re only exercising the mind with a few things to try out with GROQ before we get into more details.
+
+What happens if you remove [completed == true] and/or {title, userId}?
+How can you change the query to find all todos by the user with an ID of 2?
+How can you change the query to find uncompleted todos by the user with an ID of 2?
+What happens if the filter in the original query example swaps places with the projection?
+How would you write a single command (with pipes) that downloads the JSON and processes it with GROQ?
+
+We’ll put the answers at the end of the post for you to reference.
+Querying the Nobel prize winners
+The todo data is nice for a warmup, but let’s be honest: It’s not very motivating to look at a list that uses Latin as placeholder content. However, the Nobel Prize has a dataset of all past laureates available to use publicly.
+Here’s a sample return:
+{   ""laureates"": [     {       ""id"": ""1"",       ""firstname"": ""Wilhelm Conrad"",       ""surname"": ""Röntgen"",       ""born"": ""1845-03-27"",       ""died"": ""1923-02-10"",       ""bornCountry"": ""Prussia (now Germany)"",       ""bornCountryCode"": ""DE"",       ""bornCity"": ""Lennep (now Remscheid)"",       ""diedCountry"": ""Germany"",       ""diedCountryCode"": ""DE"",       ""diedCity"": ""Munich"",       ""gender"": ""male"",       ""prizes"": [...],     },     // ...   ] }
+Ah! This is much more interesting! Let’s download the dataset and find the first name of all Norwegian laureates. Here, we’re going to use --output flag for curl to save the data to a file.
+$ curl --output laureate.json http://api.nobelprize.org/v1/laureate.json $ cat laureate.json | groq '*.laureates[bornCountryCode == ""NO""]{firstname}' --pretty
+What do you get back? I received 12 Norwegian Nobel laureates. Not bad!
+Note that this query is not quite like the first query we wrote. We have an extra .laureates in this one. When we used * in the todo dataset, it represents the whole JSON document which is contained in an array at the top-level of the todo dataset. On the other hand, the laureate file uses an object at the top-level where the list of laureates is stored in the ""laureates"" property.
+To access a specific item, we can use the filter [0] and return just the first name. That ought to tell us who the first Norwegian was to win a Nobel prize.
+$ cat laureate.json | groq '*.laureates[bornCountryCode == ""NO""]{firstname}[0]' --pretty // Returned object {   ""firstname"": ""Ivar"" }
+More exercises!
+We’d be remiss not to play around with this new dataset a bit to see how the queries work.
+
+Write a query to find all Nobel laureates from your own country.
+Write a query to return the last Norwegian laureate. Hint: -1 refers to the last item.
+What happens if you try to filter directly on the root object? *[bornCountryCode == ""NO""]?
+What’s the difference between *.laureates\[bornCountryCode == ""NO""\][0] and *.laureates\[0\][bornCountryCode == ""NO""]?
+
+Like last time, answers will be at the end of this post.
+Working with filters
+Now we know that in total there have been 12 Norwegian Nobel laureates, how many of them were born after 1950? That’s no problem figuring out with GROQ:
+$ cat laureate.json | groq '*.laureates[bornCountryCode == ""NO"" && born >= ""1950-01-01""]{firstname}' --pretty // Sample return [   {     ""firstname"": ""May-Britt""   },   {     ""firstname"": ""Edvard I.""   } ]
+In fact, GROQ has a rich set of operators we can use inside a filter. We can compare numbers and strings with equal (==), not equal (!=), greater than (>), greater than or equal ( >=), less than (<), and less than or equal (<=). Plus, comparisons can be combined with AND (&&), OR (||) and NOT (!). The in operator even makes it possible to check for many cases at once (e.g. bornCountryCode in [""NO"", ""SE"", ""DK""]). And the defined function allows us to see if a field exists (e.g. defined(diedCountry)).
+Even more exercises!
+You know the drill: try playing with filters a bit to see how they work with the dataset. Answers are at the end, of course.
+
+Write a query that returns living laureates.
+Is there a difference between the filters [bornCountryCode == ""NO""][born >= ""1950-01-01""] and [bornCountryCode == ""NO"" && born >= ""1950-01-01""]?
+Can you find all laureates that won a prize in 1973?
+
+Working with projections
+The Nobel Prize dataset separates the first name and the surname for each laureate, but what if we want to combine them together into one field? Projections in GROQ can do exactly that!
+*.laureates[bornCountryCode == ""NO"" && born >= ""1950-01-01""]{   ""name"": firstname + "" "" + surname,    born,   ""prizeCount"": count(prizes), }
+Running this query tells us that May-Britt Moser and Edvard Moser received one prize (which was, in fact, the same prize):
+[   {     ""name"": ""May-Britt Moser"",     ""born"": ""1963-01-04"",     ""prizeCount"": 1   },   {     ""name"": ""Edvard I. Moser"",     ""born"": ""1962-04-27"",     ""prizeCount"": 1   } ]
+What happened here? Well, when we write a projection in GROQ what we’re really writing is a JSON object. Previously, we had simple projections (like {firstname}), but this is a shortcut way of writing {""firstname"": firstname}. By using the expanded object syntax, we can both rename keys and transform the values.
+GROQ has a rich set of operators and functions for transforming data, including string concatenation, arithmetic operators (+, -, *, /, %, **), counting arrays (count(prizes)), and rounding numbers (round(num, <amount of decimals>).
+Exercises
+Hopefully, you’re getting a good feel for things at this point, but here are some more ways to practice working with projections:
+
+Find all laureates who have won two or more prizes.
+Find how many prizes have been won by women.
+Format a fullname key that combines lastname and firstname in the result.
+
+Doing more at once
+Watch this:
+$ cat laureate.json | groq --pretty ' {   ""count"": count(*.laureates),   ""norwegians"": *.laureates[bornCountryCode == ""NO""]{firstname},  } '
+The result:
+{   ""count"": 928,   ""norwegians"": [     {       ""firstname"": ""Ivar""     },     {       ""firstname"": ""Lars""     },     …   ] }
+Catch that? A GROQ query doesn’t have to start with *. In this query, we’re creating a JSON object where the values are results from separate queries. This provides a lot of flexibility in what we can produce with GROQ. Maybe you want the total number of incomplete todos together with a list of the five last ones. Or maybe you want to split the todos into two separate lists: one for completed and one for incomplete. Or maybe you need to wrap everything inside an object because that is what another tool/library/framework expects. Whatever the case, GROQ has you covered.
+Let’s try one last exercise. Can you project an object where laureates contains an array with a rounded percentage of the total number of prizes that each laureate has run, returning the laureates’ first name? Then, try outputting the total number handed out.
+Summary
+There isn’t much you need to learn before getting some good use out of GROQ. If you have followed the exercises, you’re on a great path to becoming a GROQ guru. Naturally, this introduction doesn’t touch on all the different features and aspects of GROQ, so feel free to explore the specification and the project itself on GitHub. And feel free to reach out to the team at Sanity.io if you have questions about data wrangling with GROQ.
+
+Exercise answers
+Exercise 1
+Question 1
+If you remove [completed == true] you will get all todos, not only those that are completed. If you remove {title, userId} you will get all properties.
+Question 2
+*[userId == 2]
+Question 3
+*[userId == 2 && completed == false] or *[userId == 2 && !completed]
+Question 4
+If you change the order of the filter and the projection you will do the projection first and then apply the filter. This means that you’re filtering on a list of todos that only contain title and userId, and completed == true can never be true.
+Question 5
+curl https://jsonplaceholder.typicode.com/todos | groq '*[completed == true]{title, userId}' > result.json
+Exercise 2
+Question 1
+*.laureates[bornCountryCode == ""INSERT-YOUR-COUNTRY-HERE""]
+Question 2
+*.laureates\[bornCountryCode == ""NO""\][-1]
+Question 3
+*[bornCountryCode == ""NO""] will try to filter on an object. This doesn’t make any sense, so you’ll get null as the answer.
+Question 4
+*.laureates\[0\][bornCountryCode == ""NO""] doesn’t work as you might think. This will first find the first laureate (which happens to be Wilhelm Conrad) and then it will try to “filter” the object. This makes no sense so the answer is null.
+Exercise 3
+Question 1
+*.laureates[died == ""0000-00-00""]
+Question 2
+There’s no difference between the filters \[bornCountryCode == ""NO""\][born >= ""1950-01-01""] and [bornCountryCode == ""NO"" && born >= ""1950-01-01""]. The first one does the filtering in two “passes” but the end result is the same.
+Question 3
+*.laureates[""1973"" in prizes[].year]
+Exercise 4
+Question 1
+*.laureates[count(prizes) >= 2]
+Question 2
+count(*.laureates[gender == ""female""])
+Question 3
+*.laureates{""fullname"": surname + "", "" + firstname}
+Exercise 5
+*.laureates{""laureates"": {firstname, ""percentage"": round(count(prizes) / count(*.laureates[].prizes), 3) * 100}, ""total"": count(*.laureates[].prizes)}
+
+
+",en,"
+
+
+
+
+
+
+
+
+
+
+
+Query JSON documents in the Terminal with GROQ
+Easily manage projects with monday.com
+JSON documents are everywhere today, but they are rarely structured the way you want them to be. They often include too much data, have weirdly named fields, or place the data in unnecessary nested objects. Graph-Relational Object Queries (GROQ) is a query language (like SQL, but different) which is designed to work directly on JSON documents. It basically lets you write queries you can quickly filter and then reformat JSON documents to get them into the most convenient shape.
+GROQ was developed by Sanity.io (where it’s used as the primary query language). It’s open source and it gives us built-in ways to use it in JavaScript and the command line on any JSON source. Together, we’ll add GROQ to the terminal toolkit, which will save you time whenever you need to wrangle some JSON data on a poject.
+Let’s install GROQ
+Like most things, we need to install the GROQ CLI tool and can do so with with npm (or Yarn) in the terminal:
+$ npm install -g groq-cli
+In order to play with it, we need to have a JSON file available. We’ll use curl to download an example dataset of todo data:
+$ curl -o todos.json https://jsonplaceholder.typicode.com/todos
+Let's take a quick look at a sample item in the data:
+{   ""userId"": 1,   ""id"": 1,   ""title"": ""delectus aut autem"",   ""completed"": false },
+Pretty straightforward. We have a user ID, a todo item ID, a todo title and a boolean specifying whether the todo item is completed or not.
+Now let’s run a basic GROQ query: finding all completed todos, but only return the todo titles and user IDs. It’s OK to copy/paste this line because we’ll walk through what it means in a bit.
+$ cat todos.json | groq '*[completed == true]{title, userId}' --pretty
+The groq command line tools accept a JSON document on standard input. This works very nicely with the Unix philosophy of “doing one thing and work on a text stream.” In order to read JSON from a file we’ll use the cat command. Also note that groq will output a minimal JSON on a single line by default, but by passing --pretty, we get a nicely indented and highlighted syntax.
+To store the result, we can pipe it to a new file using >:
+$ cat todos.json | groq '*[completed == true]{title, userId}' > result.json
+The query itself consists of three parts:
+
+* refers to the dataset (i.e. the data in the JSON file).
+[completed == true] is a filter that removes items that are marked as incomplete.
+{title, userId} is a projection that causes the query to only return the ""title"" and ""userId"" properties.
+
+Let’s warm up with some exercises
+You probably didn’t think you’d need to exercise to get through this post! Well, the good news is that we’re only exercising the mind with a few things to try out with GROQ before we get into more details.
+
+What happens if you remove [completed == true] and/or {title, userId}?
+How can you change the query to find all todos by the user with an ID of 2?
+How can you change the query to find uncompleted todos by the user with an ID of 2?
+What happens if the filter in the original query example swaps places with the projection?
+How would you write a single command (with pipes) that downloads the JSON and processes it with GROQ?
+
+We’ll put the answers at the end of the post for you to reference.
+Querying the Nobel prize winners
+The todo data is nice for a warmup, but let’s be honest: It’s not very motivating to look at a list that uses Latin as placeholder content. However, the Nobel Prize has a dataset of all past laureates available to use publicly.
+Here’s a sample return:
+{   ""laureates"": [     {       ""id"": ""1"",       ""firstname"": ""Wilhelm Conrad"",       ""surname"": ""Röntgen"",       ""born"": ""1845-03-27"",       ""died"": ""1923-02-10"",       ""bornCountry"": ""Prussia (now Germany)"",       ""bornCountryCode"": ""DE"",       ""bornCity"": ""Lennep (now Remscheid)"",       ""diedCountry"": ""Germany"",       ""diedCountryCode"": ""DE"",       ""diedCity"": ""Munich"",       ""gender"": ""male"",       ""prizes"": [...],     },     // ...   ] }
+Ah! This is much more interesting! Let’s download the dataset and find the first name of all Norwegian laureates. Here, we’re going to use --output flag for curl to save the data to a file.
+$ curl --output laureate.json http://api.nobelprize.org/v1/laureate.json $ cat laureate.json | groq '*.laureates[bornCountryCode == ""NO""]{firstname}' --pretty
+What do you get back? I received 12 Norwegian Nobel laureates. Not bad!
+Note that this query is not quite like the first query we wrote. We have an extra .laureates in this one. When we used * in the todo dataset, it represents the whole JSON document which is contained in an array at the top-level of the todo dataset. On the other hand, the laureate file uses an object at the top-level where the list of laureates is stored in the ""laureates"" property.
+To access a specific item, we can use the filter [0] and return just the first name. That ought to tell us who the first Norwegian was to win a Nobel prize.
+$ cat laureate.json | groq '*.laureates[bornCountryCode == ""NO""]{firstname}[0]' --pretty // Returned object {   ""firstname"": ""Ivar"" }
+More exercises!
+We’d be remiss not to play around with this new dataset a bit to see how the queries work.
+
+Write a query to find all Nobel laureates from your own country.
+Write a query to return the last Norwegian laureate. Hint: -1 refers to the last item.
+What happens if you try to filter directly on the root object? *[bornCountryCode == ""NO""]?
+What’s the difference between *.laureates\[bornCountryCode == ""NO""\][0] and *.laureates\[0\][bornCountryCode == ""NO""]?
+
+Like last time, answers will be at the end of this post.
+Working with filters
+Now we know that in total there have been 12 Norwegian Nobel laureates, how many of them were born after 1950? That’s no problem figuring out with GROQ:
+$ cat laureate.json | groq '*.laureates[bornCountryCode == ""NO"" && born >= ""1950-01-01""]{firstname}' --pretty // Sample return [   {     ""firstname"": ""May-Britt""   },   {     ""firstname"": ""Edvard I.""   } ]
+In fact, GROQ has a rich set of operators we can use inside a filter. We can compare numbers and strings with equal (==), not equal (!=), greater than (>), greater than or equal ( >=), less than (<), and less than or equal (<=). Plus, comparisons can be combined with AND (&&), OR (||) and NOT (!). The in operator even makes it possible to check for many cases at once (e.g. bornCountryCode in [""NO"", ""SE"", ""DK""]). And the defined function allows us to see if a field exists (e.g. defined(diedCountry)).
+Even more exercises!
+You know the drill: try playing with filters a bit to see how they work with the dataset. Answers are at the end, of course.
+
+Write a query that returns living laureates.
+Is there a difference between the filters [bornCountryCode == ""NO""][born >= ""1950-01-01""] and [bornCountryCode == ""NO"" && born >= ""1950-01-01""]?
+Can you find all laureates that won a prize in 1973?
+
+Working with projections
+The Nobel Prize dataset separates the first name and the surname for each laureate, but what if we want to combine them together into one field? Projections in GROQ can do exactly that!
+*.laureates[bornCountryCode == ""NO"" && born >= ""1950-01-01""]{   ""name"": firstname + "" "" + surname,    born,   ""prizeCount"": count(prizes), }
+Running this query tells us that May-Britt Moser and Edvard Moser received one prize (which was, in fact, the same prize):
+[   {     ""name"": ""May-Britt Moser"",     ""born"": ""1963-01-04"",     ""prizeCount"": 1   },   {     ""name"": ""Edvard I. Moser"",     ""born"": ""1962-04-27"",     ""prizeCount"": 1   } ]
+What happened here? Well, when we write a projection in GROQ what we’re really writing is a JSON object. Previously, we had simple projections (like {firstname}), but this is a shortcut way of writing {""firstname"": firstname}. By using the expanded object syntax, we can both rename keys and transform the values.
+GROQ has a rich set of operators and functions for transforming data, including string concatenation, arithmetic operators (+, -, *, /, %, **), counting arrays (count(prizes)), and rounding numbers (round(num, <amount of decimals>).
+Exercises
+Hopefully, you’re getting a good feel for things at this point, but here are some more ways to practice working with projections:
+
+Find all laureates who have won two or more prizes.
+Find how many prizes have been won by women.
+Format a fullname key that combines lastname and firstname in the result.
+
+Doing more at once
+Watch this:
+$ cat laureate.json | groq --pretty ' {   ""count"": count(*.laureates),   ""norwegians"": *.laureates[bornCountryCode == ""NO""]{firstname},  } '
+The result:
+{   ""count"": 928,   ""norwegians"": [     {       ""firstname"": ""Ivar""     },     {       ""firstname"": ""Lars""     },     …   ] }
+Catch that? A GROQ query doesn’t have to start with *. In this query, we’re creating a JSON object where the values are results from separate queries. This provides a lot of flexibility in what we can produce with GROQ. Maybe you want the total number of incomplete todos together with a list of the five last ones. Or maybe you want to split the todos into two separate lists: one for completed and one for incomplete. Or maybe you need to wrap everything inside an object because that is what another tool/library/framework expects. Whatever the case, GROQ has you covered.
+Let’s try one last exercise. Can you project an object where laureates contains an array with a rounded percentage of the total number of prizes that each laureate has run, returning the laureates’ first name? Then, try outputting the total number handed out.
+Summary
+There isn’t much you need to learn before getting some good use out of GROQ. If you have followed the exercises, you’re on a great path to becoming a GROQ guru. Naturally, this introduction doesn’t touch on all the different features and aspects of GROQ, so feel free to explore the specification and the project itself on GitHub. And feel free to reach out to the team at Sanity.io if you have questions about data wrangling with GROQ.
+
+Exercise answers
+Exercise 1
+Question 1
+If you remove [completed == true] you will get all todos, not only those that are completed. If you remove {title, userId} you will get all properties.
+Question 2
+*[userId == 2]
+Question 3
+*[userId == 2 && completed == false] or *[userId == 2 && !completed]
+Question 4
+If you change the order of the filter and the projection you will do the projection first and then apply the filter. This means that you’re filtering on a list of todos that only contain title and userId, and completed == true can never be true.
+Question 5
+curl https://jsonplaceholder.typicode.com/todos | groq '*[completed == true]{title, userId}' > result.json
+Exercise 2
+Question 1
+*.laureates[bornCountryCode == ""INSERT-YOUR-COUNTRY-HERE""]
+Question 2
+*.laureates\[bornCountryCode == ""NO""\][-1]
+Question 3
+*[bornCountryCode == ""NO""] will try to filter on an object. This doesn’t make any sense, so you’ll get null as the answer.
+Question 4
+*.laureates\[0\][bornCountryCode == ""NO""] doesn’t work as you might think. This will first find the first laureate (which happens to be Wilhelm Conrad) and then it will try to “filter” the object. This makes no sense so the answer is null.
+Exercise 3
+Question 1
+*.laureates[died == ""0000-00-00""]
+Question 2
+There’s no difference between the filters \[bornCountryCode == ""NO""\][born >= ""1950-01-01""] and [bornCountryCode == ""NO"" && born >= ""1950-01-01""]. The first one does the filtering in two “passes” but the end result is the same.
+Question 3
+*.laureates[""1973"" in prizes[].year]
+Exercise 4
+Question 1
+*.laureates[count(prizes) >= 2]
+Question 2
+count(*.laureates[gender == ""female""])
+Question 3
+*.laureates{""fullname"": surname + "", "" + firstname}
+Exercise 5
+*.laureates{""laureates"": {firstname, ""percentage"": round(count(prizes) / count(*.laureates[].prizes), 3) * 100}, ""total"": count(*.laureates[].prizes)}
+
+
+"

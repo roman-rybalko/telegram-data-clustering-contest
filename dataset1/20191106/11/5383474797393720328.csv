@@ -1,0 +1,184 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Дичь. Самолёт по цене однушки в Калуге
+06 Nov 2019, 11:37 by Николай Маслов
+AliExpress — страна чудес, сюда вошел — на век исчез. А как иначе, когда на просторах этой онлайн-площадки можно найти все, даже самые неожиданные вещи?
+Думаете, набор ограничивается гаджетами и всяческим ширпотребом? Ничего подобного! Здесь можно даже самолет купить. И не абы какой игрушечный, а вполне настоящий.
+Даже из будущего, пожалуй. Знакомьтесь: огромный универсальный дрон с водородным движителем Eagle+ VTOL.
+Для надежных покупок используем расширение Letyshops: вычисляет мошенников, находит самые низкие цены и возвращает кэшбек. 1. Устанавливаем расширение Letyshops для своего браузера.2. Регистрируемся на сайте и вводим учетную запись.3. Заходим на страницу выбранного товара.Всё…
+Дизайн будущего из композита
+
+
+
+Удивительно, но китайский продавец авиамоделей и комплектующих среди довольно привычных, в целом, для моделистов товаров предлагает настоящий самолет. Иначе назвать Eagle+ VTOL язык не поворачивается.
+Eagle+ VTOL: двухбалочный дрон длиной 2 метра с размахом крыла 3,5 метра с аэродинамикой самолета (предназначен для классического горизонтального полета). Внушает?
+Конструкция состоит из 4 полунезависимых элементов, как на знаменитых P-38 Lightning (на таком летал Сент-Экзюпери) или Fw.189, известном у нас под прозвищем «Рама»:
+
+несущие балки-мотогондолы,
+фюзеляж-грузоотсек,
+крыло большого удлинения,
+горизонтальное оперение с трапецевидным профилем.
+
+С точки зрения современной аэродинамики — превосходная конструкция. С точки зрения авиамоделиста и авиаинженера — крайне удачная компоновка, которую придумать из пальца невозможно.
+Для снижения веса они отказались от металла, полностью изготовив дрон из промышленного стекловолокна (сотовый композит). Получилось всего 10 кг пустого веса при общей массе до 20 кг.
+Батарея на выбор
+
+
+
+Классические квадро-, гексо- и прочие многокоптеры страдают проблемой стабилизации полета и обладают фиксированным соотношением «полетный вес/длительность полета».
+За пределы часа на электрической тяге уйти почти невозможно. Обычно — не более получаса, если беспилотник несет груз. Водородные топливные элементы увеличивают продолжительность полета до 2 часов.
+Батареи дешевле и доступнее; водородные элементы опасны, но дают больше тяги и времени полета. Eagle+ VTOL не заставляет выбирать: он может летать на том и на другом.
+Батарейный отсек и сам планер рассчитаны на аккумулятор LiPo 12s, 10000 mAh. Так же возможно использование водородного элемента 9L/500W. Общая масса «топлива» не должна превышать 8,5 килограмм.
+Комбо с вертикальным взлетом и толкающим винтом
+
+
+
+Разработчики использовали комбинированную схему: 4 пропеллера на балках используются для вертикального взлета и посадки, толкающий винт на фюзеляже работает основным, создавая полетную тягу.
+Таким образом дрон стартует с площадок всего лишь 5×5 метров.
+Тем не менее, используется всего 1 мотор. По словам разработчика, его общая мощность составляет 500 кВт (?).
+Что это дает? После вертикального взлета дополнительные винты могут использоваться для стабилизации планера в сложных полетных условиях, либо отключаться.
+Тогда толкающий винт превращает дрон в обычный радиоуправляемый самолет, который может летать очень долго.
+Характеристики из будущего
+
+
+
+Расчетное время при использовании указанных элементов составляет не менее 5 часов в горизонтальной плоскости без дополнительных винтов. Неплохо?
+Максимальная скорость, на которую рассчитан Eagle+ VTOL, составляет 115 км/ч (32 м/с). Постоянная, так называемая «крейсерская» скорость — 100 км/ч (28 м/с).
+Впрочем, есть и недостатки: посадочная скорость при попытке садиться «по-самолетному» должна быть не меньше 86 км/ч (24 м/с), иначе махина просто рухнет вниз. С полной загрузкой эта операция дается подобным гигантам с трудом.
+Самые универсальные «мозги»
+С управлением все не слишком понятно. Продавец даёт понять, что система управления полетом умеет работать с компьютерами. При этом операционная система не имеет значения.
+Но что конкретно внутри — секрет. Универсальность говорит в пользу очень любимого китайскими компаниями ArduCopter — варианта ARM-микроконтроллера Arduino, специально разработанного для радиоуправляемых беспилотных систем.
+Прежде всего — для дронов, требующих сложной системы коррекции полета.
+Покупка, ввоз и другие сложности
+
+
+
+Продавец предлагает к прямой продаже только планер самолета. Двигатель, топливный элемент, винты и электроника в комплект не входят.
+Беглый поиск по магазину даёт определенные варианты, которые потребуется продумать самостоятельно.
+Сам продавец утверждает, что при покупке не только подскажет, из чего лучше собирать, но и предложит готовый вариант (и намекает, что он будет в комплекте). Почему нельзя рассказать до перевода денег? Кто знает.
+Данный дрон подлежит упрощенной регистрации. Как квадрокоптер, а не как полноценный самолет. Но от таможенной пошлины не убежать.
+А она от полной стоимости будет ощутимой. Стоит Eagle+ VTOL ни много ни мало целых 1 300 000 руб., или один миллион триста тысяч рублей.
+
+
+
+Кэшбек 84 400 рублей. Хватит на MacBook.
+Впрочем, для тех, кому может потребоваться подобный агрегат, сумма небольшая. Это же настоящий самолет: 5 часов полета, 10 килограмм полезной нагрузки.
+Хочешь — поля опрыскивай, хочешь — видео снимай, хочешь — разведку проводи. Только не забудь зарегистрировать и получить разрешение на полет.
+
+👀 Читайте также. Всё по теме
+
+
+
+
+
+
+
+
+
+
+
+
+
+",ru,"
+
+
+
+
+
+
+
+
+
+
+
+Game. Plane at the price of odnushki in Kaluga
+06 Nov 2019, 11:37 by Nikolai Maslov
+AliExpress is a wonderland, it entered here - it disappeared for a century. But how else, when in the vastness of this online platform you can find everything, even the most unexpected things?
+Do you think the set is limited to gadgets and all kinds of consumer goods? Nothing like this! Here you can even buy a plane. And not just any toy, but quite real.
+Even from the future, perhaps. Meet: a huge universal drone with a hydrogen propulsion Eagle + VTOL.
+For reliable purchases, we use the Letyshops extension: it calculates scams, finds the lowest prices and returns a cashback. 1. Install the Letyshops extension for your browser. 2. We register on the site and enter the account. 3. We go to the page of the selected product. All ...
+Composite future design
+
+
+
+Surprisingly, the Chinese seller of aircraft models and components among the rather familiar, in general, for the modelers of goods offers a real plane. Otherwise, to call Eagle + VTOL the language does not rotate.
+Eagle + VTOL: 2-meter two-beam drone with a wingspan of 3.5 meters with the aerodynamics of the aircraft (designed for classic horizontal flight). Inspires?
+The design consists of 4 semi-independent elements, such as the famous P-38 Lightning (on which Saint-Exupery flew) or the Fw.189, known to us under the nickname ""Rama"":
+
+bearing beams-nacelles,
+cargo compartment fuselage,
+large elongation wing
+horizontal plumage with a trapezoidal profile.
+
+From the point of view of modern aerodynamics - an excellent design. From the point of view of an aircraft modeller and an aircraft engineer, it’s an extremely successful layout that is impossible to think of from a finger.
+To reduce weight, they abandoned the metal, completely manufacturing a drone from industrial fiberglass (honeycomb composite). It turned out only 10 kg of empty weight with a total weight of up to 20 kg.
+Battery to choose from
+
+
+
+Classic quad, hex and other multi-copters suffer from the problem of flight stabilization and have a fixed ratio “flight weight / flight duration”.
+It is almost impossible to go beyond the hour on electric traction. Usually - no more than half an hour if the drone carries the load. Hydrogen fuel cells increase flight duration up to 2 hours.
+Batteries are cheaper and more affordable; hydrogen elements are dangerous, but give more traction and flight time. Eagle + VTOL does not make you choose: it can fly on both.
+The battery compartment and the glider itself are designed for a LiPo 12s, 10000 mAh battery. It is also possible to use a hydrogen element 9L / 500W. The total mass of ""fuel"" should not exceed 8.5 kilograms.
+Vertical take-off and push propeller combo
+
+
+
+The developers used a combined scheme: 4 propellers on the beams are used for vertical take-off and landing, the pushing screw on the fuselage works as the main one, creating flight thrust.
+Thus, the drone starts from sites only 5 × 5 meters.
+However, only 1 motor is used. According to the developer, its total power is 500 kW (?).
+What does it give? After vertical take-off, additional propellers can be used to stabilize the airframe in difficult flight conditions, or shut off.
+Then the propeller turns the drone into a regular radio-controlled aircraft that can fly for a very long time.
+Features from the future
+
+
+
+The estimated time when using these elements is at least 5 hours in a horizontal plane without additional screws. Not bad?
+The maximum speed for which Eagle + VTOL is designed is 115 km / h (32 m / s). Constant, the so-called ""cruising"" speed - 100 km / h (28 m / s).
+However, there are also drawbacks: landing speed when trying to land ""on an airplane"" should be at least 86 km / h (24 m / s), otherwise the engine will simply crash down. With a full load, this operation is difficult for such giants.
+The most versatile brains
+With management, everything is not too clear. The seller makes it clear that the flight control system can work with computers. In this case, the operating system does not matter.
+But what exactly is inside is a secret. The versatility speaks in favor of the ArduCopter, which is very beloved by Chinese companies, a variant of the Arduino ARM microcontroller, specially designed for radio-controlled unmanned systems.
+First of all, for drones requiring a complex flight correction system.
+Purchase, import and other difficulties
+
+
+
+The seller offers for direct sale only an airframe. Engine, fuel cell, screws and electronics not included.
+A quick search of the store gives you certain options that you need to consider yourself.
+The seller himself claims that when buying, he will not only tell you what to collect from, but also offer a ready-made version (and hints that he will be included). Why can’t you tell before transferring money? Who knows.
+This drone is subject to simplified registration. Like a quadrocopter, and not like a full-fledged aircraft. But there is no escaping customs duty.
+And it will be tangible of the full cost. Eagle + VTOL costs as much as as much as 1,300,000 rubles, or one million three hundred thousand rubles.
+
+
+
+Cashback 84,400 rubles. Enough on a MacBook.
+However, for those who may require a similar unit, the amount is small. This is a real plane: 5 hours of flight, 10 kilograms of payload.
+If you want, spray the fields, if you want, shoot the video, if you want, conduct reconnaissance. Just remember to register and get permission to fly.
+
+👀 Read also. Everything on the topic
+
+
+
+
+
+
+
+
+
+
+
+
+
+"

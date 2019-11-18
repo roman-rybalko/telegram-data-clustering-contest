@@ -1,0 +1,48 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+La Epic Games Store tiene un exploit que te permite jugar a cualquier juego sin comprarlo
+06 Nov 2019 by Borja Rodríguez
+La Epic Games Store es una plataforma muy joven, y es normal que tenga bugs y exploits, pero lo que no es normal es que uno de estos exploits te permita jugar a todo el catálogo de títulos disponibles en la tienda sin pagar por ellos. Quien descubrió la vulnerabilidad fue Willian Worrall, un trabajador de un portal enfocado a las criptomonedas, el cual ha dado a conocer esta vulnerabilidad que, que por si te interesa saber, aún no se ha solucionado.
+Por suerte para Epic Games, no es un serio problema, y es que para acceder a este exploit, primero tenemos que acceder a la cuenta de  un amigo que ha comprado el juego y descargarlo. Eso es bastante normal, vamos, no hay nada raro aquí. Sin embargo, los usuarios pueden cerrar la sesión, iniciar sesión en su propia cuenta y seguir disfrutando de dicho juego sin necesidad de comprarlo.
+
+
+
+Como señaló Worrall, esto se debe principalmente a la falta de un DRM. Para demostrar esta hazaña, Worrall utilizó Borderlands 3 como ejemplo. Este exploit puede ser fácilmente reproducido en las nuevas cuentas de la EGS, y lo más probable es que afecte a todos los juegos de la tienda. Aunque Borderlands 3 utiliza la tecnología antisabotaje Denuvo, el DRM no bloquea el acceso del título desde cualquier otra cuenta que no haya comprado el juego.
+Ahora tocará esperar a que la compañía lance una actualización para solventar el incidente.
+
+
+",es,"
+
+
+
+
+
+
+
+
+
+
+
+The Epic Games Store has an exploit that allows you to play any game without buying it
+06 Nov 2019 by Borja Rodríguez
+The Epic Games Store is a very young platform, and it is normal to have bugs and exploits, but what is not normal is that one of these exploits allows you to play the entire catalog of titles available in the store without paying for them. Who discovered the vulnerability was Willian Worrall, a cryptocurrency-focused portal worker, who has made this vulnerability known that, if you are interested in knowing, has not yet been resolved.
+Luckily for Epic Games, it is not a serious problem, and to access this exploit, we must first access the account of a friend who has bought the game and download it. That's pretty normal, come on, there's nothing weird here. However, users can log out, log in to their own account and continue enjoying the game without buying it.
+
+
+
+As Worrall pointed out, this is mainly due to the lack of a DRM. To demonstrate this feat, Worrall used Borderlands 3 as an example. This exploit can be easily reproduced in the new accounts of the EGS, and most likely affects all games in the store. Although Borderlands 3 uses Denuvo anti-sabotage technology, DRM does not block title access from any other account that has not purchased the game.
+Now it will be time to wait for the company to launch an update to resolve the incident.
+
+
+"

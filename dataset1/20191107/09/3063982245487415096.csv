@@ -1,0 +1,48 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Microsoft entfernt die Skip-Ahead-Option für Insider Builds
+Mit dem aktuellen Insider Build 19018 wird Microsoft die Option Skip Ahead wieder entfernen. Stattdessen sollen alle Windows Insider im Fast Ring immer als Erstes aktuelle Testversionen erhalten. In dieser Preview steht die Windows-Suche auf der Liste.
+07 Nov 2019, 09:55 by Oliver Nickel
+Microsoft veröffentlicht das Insider Build 19018 für das kommende Windows-10-Update 20H1. Mit dem Build wird Microsoft die Skip-Ahead-Option aus den Systemeinstellungen des OS entfernen. Damit war es Windows-Testern möglich, sich das darauffolgende Previewbuild anzuschauen. Microsoft will jetzt allen Fast-Ring-Teilnehmern eine möglichst aktuelle Testversion anbieten und migriert Skip-Ahead-Konten dahin zurück. ""Unser Ziel ist es, jeden im Fast-Ring zugleich mit den aktuellen Builds zu versorgen"", schreibt das Unternehmen in der Ankündigung.
+Die neue Version bringt zwei Neuerungen für die Suchleiste neben dem Startmenü. Microsoft hat der Suche vier Schnellabfragen - derzeit nur in den USA - hinzugefügt: Wetter, Top-News, neue Filme und ""Heute in der Geschichte"", eine Auflistung von vier Ereignissen, die am gleichen Tag in der Vergangenheit stattgefunden haben. Die Schnellsuchen werden als Schaltflächen an der unteren Seite des Menüs angezeigt und können mit einem Klick ausgeführt werden.
+Bugfixes und Verbesserungen
+Des Weiteren hat Microsoft die Vorschau für die Webseite etwas verändert. Diese Änderungen sind allerdings nur optischer Natur. Die Suche nach dem Wetter zeigt eine neu designte Übersichtskarte mit mehr Farben und etwas strikter aufgeteilten Elementen. Interessant: Vor kurzem hat Microsoft auf Testerwunsch den Downloadordner aus der Datenträgerbereinigung entfernt. Darin enthaltene Dateien werden für eine eventuelle Löschung nicht beachtet.
+Nebenbei enthält das neue Insider Build einige Bugfixes und kleine Änderungen. Der Entwickler stellt diese in der Ankündigung bereit. Es sind aber weitere Probleme bekannt. So funktioniert die Anti-Cheat-Software BattlEye mit dem Build nicht richtig. Auch werden wohl einige Druckertreiber vom Windows-Update-Server immer wieder erneut zum Download angeboten, obwohl diese offensichtlich schon installiert sind.
+Aus diesen Gründen gibt Microsoft immer wieder zu verstehen, dass es bei Preview Builds normal ist, dass Fehler häufiger auftauchen. Das sollten Tester beachten.
+
+
+",de,"
+
+
+
+
+
+
+
+
+
+
+
+Microsoft removes the skip-ahead option for insider builds
+With the current insider build 19018 Microsoft will remove the option Skip Ahead again. Instead, all Windows Insiders in the Fast Ring should always be the first to receive the latest trial versions. In this preview, the Windows search is on the list.
+07 Nov 2019, 09:55 by Oliver Nickel
+Microsoft releases Insider Build 19018 for the upcoming Windows 10 update 20H1. With the build, Microsoft will remove the skip-ahead option from the system settings of the OS. This allowed Windows testers to watch the upcoming preview build. Microsoft now wants to offer all Fast-Ring participants the most up-to-date trial version and migrates Skip-Ahead accounts back to there. ""Our goal is to provide everyone in the Fast-Ring with the latest builds at the same time,"" the company writes in the announcement.
+The new version brings two new features to the search bar next to the Start menu. Microsoft has added four quick queries - currently in the US only - to the search: Weather, Top News, New Movies and ""Today in History"", a listing of four events that took place on the same day in the past. The quick searches are displayed as buttons at the bottom of the menu and can be executed with one click.
+Bugfixes and improvements
+Furthermore, Microsoft has slightly changed the preview for the website. These changes are only visual. The search for the weather shows a redesigned outline map with more colors and somewhat more strictly divided elements. Interesting: Recently Microsoft removed the download folder from the disk cleanup on request of the tester. The files contained therein are ignored for any deletion.
+Incidentally, the new insider build contains some bugfixes and small changes. The developer provides these in the announcement. But there are more problems known. This is how the BattlEye anti-cheat software does not work properly with the build. Also, some printer drivers are offered by the Windows Update Server again and again to download, although they are obviously already installed.
+For these reasons, Microsoft repeatedly states that it is normal for preview builds that errors occur more frequently. That should be noted by testers.
+
+
+"

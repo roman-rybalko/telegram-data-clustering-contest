@@ -1,0 +1,66 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Mayor control tributario
+Esta es la mejor forma de gestionar el IVA si facturas cada mes
+06 Nov 2019, 10:05 by La Información
+
+Es una opción contable para gestionar la tributación del IVA de forma digital y mediante el suministro casi inmediato de los registros de facturación.
+
+Quienes ejercen una actividad empresarial o económica tienen una serie de obligaciones informativas y de autoliquidación respecto al Impuesto sobre el Valor Añadido (IVA) que dependen del régimen tributario en el que estén inscritos. Con el objetivo de facilitar la asistencia al contribuyente y mejorar el control tributario, la Agencia Española de la Administración Tributaria (AEAT) introdujo en 2017 el Suministro Inmediato de Información (SII), una nueva forma de gestionar el IVA con la implementación de la tecnología.
+En concreto, se trata de una nueva forma de llevar los libros registro del Impuesto sobre el Valor Añadido (IVA) a través de la Sede Electrónica de AEAT mediante el suministro casi inmediato de los registros de facturación. De esta manera, se acerca el momento del registro o contabilización de las facturas al de la realización efectiva de la operación económica que subyace a ellas.
+El SII se aplica de forma obligatoria a los sujetos pasivos que actualmente tienen obligación de autoliquidar el IVA mensualmente, pero también aquellos sujetos pasivos que de forma voluntaria se acojan a través del modelo 036. Entre quienes tienen obligación: los inscritos en el REDEME (Registro de Devolución Mensual del IVA), las grandes empresas, es decir, con facturación superior a 6 millones de euros al año, y los grupos de IVA.
+
+
+
+Por su parte, quienes decidan regirse por el SII de forma voluntaria deberán completar el modelo 036 en el mes de noviembre anterior al año en el que vaya a surtir efecto. Una vez solicitado, en caso de no presentar la renuncia, el contribuyente continuará con esta opción contable de forma automática.
+Los sujetos pasivos acogidos al SII deberán llevar, mediante el suministro electrónico de los registros de facturación, los siguientes Libros Registro: el Libro registro de facturas expedidas, el de facturas recibidas, el de bienes de inversión y el Libro registro de determinadas operaciones intracomunitarias.
+¿Cómo funciona?
+Los contribuyentes acogidos a este modelo deben presentar los detalles sobre su facturación a la AEAT y, a través del SII, se irán configurando casi a tiempo real los distintos Libros Registro. El envío de esta información se realizará por vía electrónica, concretamente mediante Servicios Web basados en el intercambio de mensajes XML.
+La estructura de este envío tendrá una cabecera común con la información del titular de cada libro registro, así como la información del ejercicio y período en el que se registran dichas operaciones. A esta cabecera le acompañará un bloque con el contenido de las facturas. Pero no hay que enviar las facturas completas, sino remitir cierta información sobre los registros de facturación.
+El SII presenta una serie de ventajas para el contribuyente: reducción de obligaciones formales, antes había que presentar los modelos 347, 340 y 390 y presentar los Libros Registros de IVA; obtención de datos fiscales procedentes de diferentes fuentes reduciendo errores y aumentando la seguridad jurídica; ampliación en diez días del plazo de presentación de las autoliquidaciones periódicas; reducción de plazos de devolución y comprobación; y disminución de los requerimientos de información.
+
+
+",es,"
+
+
+
+
+
+
+
+
+
+
+
+Greater tax control
+This is the best way to manage VAT if invoices every month
+06 Nov 2019, 10:05 by The Information
+
+It is an accounting option to manage VAT taxation digitally and by providing almost immediate billing records.
+
+Those who carry out a business or economic activity have a series of informative and self-assessment obligations regarding the Value Added Tax (VAT) that depend on the tax regime in which they are registered. In order to facilitate taxpayer assistance and improve tax control, the Spanish Tax Administration Agency (AEAT) introduced in 2017 the Immediate Supply of Information (SII), a new way to manage VAT with the implementation of technology .
+Specifically, it is a new way of keeping the books of Value Added Tax (VAT) through the Electronic Headquarters of AEAT through the almost immediate supply of billing records. In this way, the timing of the registration or accounting of the invoices is close to the effective completion of the economic operation that underlies them.
+The SII is mandatory for taxpayers who currently have an obligation to self-assess VAT monthly, but also for taxpayers who voluntarily accept the form 036. Among those who have an obligation: those registered in REDEME (Registration Monthly VAT Refund), large companies, that is, with a turnover of more than 6 million euros per year, and VAT groups.
+
+
+
+For their part, those who decide to abide by the SII voluntarily must complete the 036 model in the month of November prior to the year in which it will take effect. Once requested, in case of not presenting the waiver, the taxpayer will continue with this accounting option automatically.
+The taxable persons under the SII must keep, through the electronic supply of the billing records, the following Record Books: the Record Book of Invoices Issued, that of Received Invoices, that of Investment Assets and the Record Book of Certain Intra-Community Operations.
+How does it work?
+Taxpayers under this model must submit the details of their billing to the AEAT and, through the SII, the different Registration Books will be configured almost in real time. The sending of this information will be done electronically, specifically through Web Services based on the exchange of XML messages.
+The structure of this shipment will have a common heading with the information of the owner of each record book, as well as the information of the year and period in which said operations are recorded. This header will be accompanied by a block with the content of the invoices. But do not send the complete invoices, but send some information about the billing records.
+The SII presents a series of advantages for the taxpayer: reduction of formal obligations, previously it was necessary to present models 347, 340 and 390 and present the VAT Record Books; obtaining tax data from different sources reducing errors and increasing legal certainty; ten-day extension of the period for submission of periodic self-assessments; reduction of return and check deadlines; and decrease of information requirements.
+
+
+"

@@ -1,0 +1,46 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Samsung entwickelt keine eigenen CPU-Kerne mehr
+In künftigen Exynos-Prozessoren für Smartphones und Tablets dürften wieder ARMs Standard-Cortex-Rechenkerne stecken.
+04 Nov 2019, 15:31 by Mark Mantel
+Samsung entlässt bis zum 31. Dezember 2019 sämtliche Ingenieure, die in Austin und San Jose eigene ARM-Rechenkerne entwickelt haben. Das betrifft 290 Mitarbeiter hauptsächlich im Samsung Austin R&D Center (SARC), aber auch im Advanced Computer Lab (ACL) in San Jose. Die GPU-Abteilung ist von den Entlassungen nicht betroffen, soll aber umstrukturiert werden. Entsprechende Gerüchte kursierten bereits seit Wochen, inzwischen bestätigt sie Samsung in einer offiziellen Worker Adjustment and Retraining Notification (WARN).
+Samsungs ARM-Rechenkerne aus der Produktfamilie Mongoose kommen in Exynos-Prozessoren zum Einsatz, die in zahlreichen Galaxy-Smartphones und -Tablets sitzen. Zuletzt stellte Samsung den Exynos 990 mit zwei Mongoose-Kernen der fünften Generation (M5) vor, deren Leistungsprognose hinter ARMs Cortex-A77 liegt. Vor allem bei der Effizienz hinkt Samsung hinterher.
+Wenige ARM-CPU-Entwickler verbleiben
+Mit Samsung fällt einer der letzten verbliebenden Entwickler von ARM-Rechenkernen weg. Apple baut noch komplett eigene Systems-on-Chip (SoCs), zuletzt mit dem Bionic A13 der iPhone-11-Serie. Ebenso Nvidia: Die jüngsten Tegra-Kombiprozessoren wie der Tegra Xavier sind allerdings weniger für Endkunden gedacht und kommen vornehmlich in Automotive- und Machine-Learning-Anwendungen zum Einsatz. Qualcomm wiederum übernimmt die Cortex-Rechenkerne unter dem eigenen Namen Kryo in seinen Snapdragon-SoCs.
+Samsung dürfte künftig die Standard-Cortex-Rechenkerne von ARM lizenzieren. Für Aufgaben mit geringer Last kommen bereits die Cortex-A55 zum Einsatz. Als mittleres CPU-Cluster verbaut Samsung im Exynos 990 die Cortex-A76 – in einem kommenden Prozessor dürften dann die Cortex-A77 als High-Performance-Rechenkerne stecken. Das Entwicklerteam für Chipdesigns behält Samsung derweil, auf Qualcomms Snapdragon-SoCs werden die Südkoreaner also nicht vollständig umschwenken. (mma)
+
+
+",de,"
+
+
+
+
+
+
+
+
+
+
+
+Samsung no longer develops its own CPU cores
+In future Exynos processors for smartphones and tablets, ARM's standard cortex computing cores are likely to be back.
+04 Nov 2019, 15:31 by Mark Mantel
+Samsung will release all engineers who have developed their own ARM cores in Austin and San Jose by December 31, 2019. This affects 290 employees mainly at the Samsung Austin R & D Center (SARC), but also at the Advanced Computer Lab (ACL) in San Jose. The GPU department is not affected by the redundancies, but is to be restructured. Corresponding rumors have been circulating for weeks, now she confirms Samsung in an official Worker Adjustment and Retraining Notification (WARN).
+Samsung's ARM cores from the Mongoose family are used in Exynos processors, which are found in many Galaxy smartphones and tablets. Recently, Samsung introduced the Exynos 990 with two mongoose cores of the fifth generation (M5), whose performance prediction is behind ARM's Cortex-A77. Especially in terms of efficiency Samsung lags behind.
+Few ARM CPU developers remain
+Samsung is one of the last remaining developers of ARM computing cores away. Apple still builds its own system-on-chip (SoCs), most recently with the Bionic A13 of the iPhone 11 series. Likewise Nvidia: The latest Tegra combo processors such as the Tegra Xavier, however, are less intended for end customers and are used primarily in automotive and machine learning applications. Qualcomm in turn takes over the cortex cores under its own name Kryo in its Snapdragon SoCs.
+Samsung is likely to license ARM's standard cortex cores in the future. For tasks with low load, the Cortex-A55 are already being used. Samsung builds the Cortex-A76 in the Exynos 990 as a mid-range CPU cluster - in a future processor, the Cortex-A77 should then be used as high-performance computing cores. The development team for chip designs, meanwhile, keeps Samsung, so on Qualcomm's Snapdragon SoCs, the South Koreans will not completely swing. (MMA)
+
+
+"

@@ -1,0 +1,66 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Fake ransomware named after Donald Trump tries to trick victims out of a buck
+
+05 Nov 2019, 16:00
+
+Written by Jeff StoneNov 5, 2019 | CYBERSCOOP
+Donald Trump can add ransomware to the list of things named after him, thanks to scammers who again have demonstrated how current events create opportunities to steal data.
+Security researchers from Cisco’s Talos threat intelligence team on Tuesday published findings explaining how hackers are using the likeness of the president, his predecessor and other political figures to dupe victims into paying up. Numerous ransomware attacks, screenlockers and remote access trojans are named after Trump, Barack Obama, Hillary Clinton and Vladimir Putin. It’s the latest evidence that digital miscreants will use any trending topics to woo potential victims.
+“One of the unexpected aspects of the investigation was the presence of lures that dropped malware associated with multiple nation-state attacks in the past, showing how even advanced, sophisticated adversaries will use any means to achieve their nefarious goals,” researchers wrote.
+The scammers’ emails mention the world leaders to catch victims’ attention, or the malicious files themselves contain references to Trump or the others. One message that appeared to be from the director of global risk from Visa alerted recipients to an apparent fraud alert. Instead of including information about fraud prevention, though, the files has malicious email attachments with names like “trump.exe.”
+Attackers are trying to trick users into engaging with an emotional response where they “just click and don’t fully think things though,” said Craig Williams, Talos’ director of research. “They want someone to agree or disagree very strongly with whoever they position so that the user isn’t thinking, ‘Should I open this?’”
+One Trump-themed ransomware (it was actually called “THIS IS THE DONALD TRUMP RANSOMWARE”) wasn’t actually ransomware at all. Talos analyzed a sample file that “produced several errors when executed” and ultimately failed to encrypt any data, as it claimed.
+
+
+Donald Trump-themed ransomware often failed to encrypt user data, despite the impression it gave users (via Cisco Talos).
+
+An unrelated remote access trojan used a Kim Jong Un theme to infect victims with Neshta, a years-old malware strain that aims to stop researchers from analyzing suspicious code. Another RAT was delivered via a Microsoft Word file titled “12 things Trump should know about North Korea.doc.”
+Talos didn’t speculate on who may be behind these hacking attempts.
+Major news events almost always are accompanied by scammers trying to capitalize on that. Financial solicitations frequently follow natural disasters like hurricanes, even as the Department of Homeland Security has issued repeated advisories urging people to be cautious.
+
+
+",en,"
+
+
+
+
+
+
+
+
+
+
+
+Fake ransomware named after Donald Trump tries to trick victims out of a buck
+
+05 Nov 2019, 16:00
+
+Written by Jeff StoneNov 5, 2019 | CYBERSCOOP
+Donald Trump can add ransomware to the list of things named after him, thanks to scammers who again have demonstrated how current events create opportunities to steal data.
+Security researchers from Cisco’s Talos threat intelligence team on Tuesday published findings explaining how hackers are using the likeness of the president, his predecessor and other political figures to dupe victims into paying up. Numerous ransomware attacks, screenlockers and remote access trojans are named after Trump, Barack Obama, Hillary Clinton and Vladimir Putin. It’s the latest evidence that digital miscreants will use any trending topics to woo potential victims.
+“One of the unexpected aspects of the investigation was the presence of lures that dropped malware associated with multiple nation-state attacks in the past, showing how even advanced, sophisticated adversaries will use any means to achieve their nefarious goals,” researchers wrote.
+The scammers’ emails mention the world leaders to catch victims’ attention, or the malicious files themselves contain references to Trump or the others. One message that appeared to be from the director of global risk from Visa alerted recipients to an apparent fraud alert. Instead of including information about fraud prevention, though, the files has malicious email attachments with names like “trump.exe.”
+Attackers are trying to trick users into engaging with an emotional response where they “just click and don’t fully think things though,” said Craig Williams, Talos’ director of research. “They want someone to agree or disagree very strongly with whoever they position so that the user isn’t thinking, ‘Should I open this?’”
+One Trump-themed ransomware (it was actually called “THIS IS THE DONALD TRUMP RANSOMWARE”) wasn’t actually ransomware at all. Talos analyzed a sample file that “produced several errors when executed” and ultimately failed to encrypt any data, as it claimed.
+
+
+Donald Trump-themed ransomware often failed to encrypt user data, despite the impression it gave users (via Cisco Talos).
+
+An unrelated remote access trojan used a Kim Jong Un theme to infect victims with Neshta, a years-old malware strain that aims to stop researchers from analyzing suspicious code. Another RAT was delivered via a Microsoft Word file titled “12 things Trump should know about North Korea.doc.”
+Talos didn’t speculate on who may be behind these hacking attempts.
+Major news events almost always are accompanied by scammers trying to capitalize on that. Financial solicitations frequently follow natural disasters like hurricanes, even as the Department of Homeland Security has issued repeated advisories urging people to be cautious.
+
+
+"

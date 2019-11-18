@@ -1,0 +1,72 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+В российских тюрьмах будут блокировать сигналы сотовой связи
+
+06 Nov 2019, 10:55
+
+МВД совместно с ФСИН, ФСБ и Роскомнадзором должны до 30 июля 2020 года проработать вопрос об установке «блокираторов» сигнала сотовой связи на территории исправительных учреждений. Такое поручение ведомствам дала коллегия Министерства внутренних дел по итогам заседания, пишет сегодня, 6 ноября, РБК со ссылкой на источники в правоохранительных органах.
+Следует отметить, что еще год назад Госкомиссия по радиочастотам (ГКРЧ) создала рабочую группу по противодействию использованию мобильных устройств подозреваемыми, обвиняемыми и осужденными. Как пояснил замминистра цифрового развития, связи и массовых коммуникаций Олег Иванов, ГКРЧ рассмотрела несколько технических вариантов блокировки сигналов сотовой связи, но ни один из них не был признан оптимальным.
+«Поэтому комиссия рекомендовала дополнительно проработать вопрос в ходе соответствующей научно-исследовательской работы. На мой взгляд, наиболее эффективным способом будет ограничение сотовым оператором оказания услуг в определенной локации», — отметил Иванов.
+У сотрудников исправительных учреждений, по его словам, уже действует запрет на использование сотовой связи на их территории внутренним приказом, но этого недостаточно. По информации Иванова, в ближайшее время депутат Госдумы Александр Хинштейн планирует внести законопроект, который позволит руководителям исправительных учреждений через операторов отключать определенные номера от сотовой связи.
+Сам Хинштейн подтвердил информацию о подготовке поправок в законы «О связи», «Об учреждениях и органах, исполняющих уголовные наказания…» и «О содержании под стражей подозреваемых и обвиняемых…».
+«Тема с использованием средств связи в местах лишения свободы крайне актуальная. С помощью мобильных телефонов осужденные могут не только совершать мошенничества, но и давить на свидетелей, координировать преступные группировки и т. д.», — отметил депутат.
+По словам Хинштейна, ежегодно в учреждениях уголовно-исполнительной системы изымается порядка 60 тыс. телефонов. Теперь же ограничение прав подобных пользователей сотовой связи станет обязанностью операторов.
+До 1 апреля 2020 года коллегия поручила ввести в эксплуатацию систему «Дистанционное мошенничество», а также создать специальное мобильное приложение для него. В систему будут вноситься сведения об абонентских номерах и банковских картах, используемых преступниками, и т. д. Приложение для смартфонов сможет использовать эту информацию и блокировать входящий вызов от номера, находящегося в черном списке.
+Договорно-правовому управлению и главному управлению по противодействию экстремизму МВД поручили принять участие в разрабатываемых Минкомсвязью изменениях законодательства, которые запретят оператору связи пропускать голосовой трафик из сети передачи данных, если инициатор соединения не предоставил информацию об абонентском номере или идентификаторе пользователя (то есть если звонок на телефон идет, например, от неизвестного пользователя Skype).
+Пока преступники могут избегать идентификации, используя такие программы, как VPN, TOR, SSL, применяя технологии подменных абонентских номеров через SIP-телефонию. Кроме того, шифрование данных на распространенных интернет-сервисах не позволяет устанавливать IP-адреса серверов пользователей, отслеживать их активность. Есть у МВД вопросы и к существующему порядку оформления сим-карт, отсутствию электронного обмена информацией с органами госвласти, кредитными организациями, интернет-провайдерами, операторами связи и интернет-сервисами.
+В январе—августе 2019 года правоохранительные органы России зарегистрировали более 1,355 млн преступлений, что на 1,9% больше, чем за тот же период прошлого года, следует из статистики Генеральной прокуратуры. При этом количество преступлений, совершенных с использованием информационно-телекоммуникационных технологий или в сфере компьютерной информации, выросло на 67% до 180,15 тыс.
+По словам руководителя лаборатории компьютерной криминалистики Group-IB Валерия Баулина, в этом году телефонные мошенничества захлестнули клиентов российских банков. Одна из поставленных МВД задач связана с созданием единой полицейской базы данных с номерами телефонов мошенников, их сетевыми адресами и платежными реквизитами. Подобные данные уже есть и у Банка России, и у сотовых операторов. В июне-августе ЦБ отправил операторам связи информацию о более чем 2,5 тыс. номеров, с которых поступали звонки клиентам банков, но лишь 200 подменных номеров были заблокированы, и звонки продолжались, указал Баулин.
+«Наш опыт государственно-частного партнерства — совместной работы с МВД и международными полицейскими организациями — показывает, что эффективнее не расследовать уже совершенные преступления, а обезвреживать преступные группы, предотвращая новые преступления. В связи с этим вопрос об установке блокираторов сигнала сотовой связи на территории исправительных учреждений для борьбы с дистанционным мошенничеством является своевременным, поскольку большая часть мошеннических звонков совершается именно из мест лишения свободы. Другие мошеннические call-центры работают „на воле“, иногда за границей России — для их нейтрализации необходимо международное взаимодействие различных государств», — рассказал Баулин.
+Директор по методологии и стандартизации Positive Technologies Дмитрий Кузнецов указал, что необходимость принятия перечисленных мер обсуждалась давно. Если предложенные меры будут реализованы в полном объеме, потенциально это позволит выдавить мошенников с территории России.
+«Но те же звонки на номера клиентов российских банков с использованием тех же самых приемов социальной инженерии будут выполняться с территории сопредельных государств», — указал Кузнецов.
+По словам представителя «Лаборатории Касперского», для борьбы с дистанционными мошенничествами важно и правильно внедрять дополнительное регулирование IP-телефонии, и меры, направленные на предотвращение подмены номеров.
+«Создание единой базы сведений о телефонных номерах, сетевых адресах, идентификаторах устройств, банковских картах, используемых для совершения преступлений, также усложнит жизнь злоумышленникам, — считает Баулин. — Существенная часть жертв мошенничества попадается на достаточно простые методы социальной инженерии и обмана. Технические средства, такие как запрет на подмену номеров, полезны для борьбы с дистанционным мошенничеством, но они не смогут его полностью предотвратить».
+
+
+",ru,"
+
+
+
+
+
+
+
+
+
+
+
+In Russian prisons will block cellular signals
+
+06 Nov 2019, 10:55
+
+The Ministry of Internal Affairs, together with the FSIN, the FSB and Roskomnadzor, should work out the issue of installing “blockers” of the cellular signal on the territory of correctional facilities by July 30, 2020. This order was given to the departments by the board of the Ministry of the Interior following the meeting, RBC writes today, November 6, citing sources in law enforcement agencies.
+It should be noted that a year ago the State Commission on Radio Frequencies (SCRF) created a working group to counteract the use of mobile devices by suspects, accused and convicted. As Oleg Ivanov, Deputy Minister of Digital Development, Telecommunications and Mass Communications, explained, the SCRC examined several technical options for blocking cellular signals, but none of them was considered optimal.
+“Therefore, the commission recommended that the issue be further explored in the course of the relevant research work. In my opinion, the most effective way would be to restrict the cellular operator from providing services in a specific location, ”Ivanov said.
+Correctional staff, he said, already have a ban on the use of cellular communications on their territory by internal order, but this is not enough. According to Ivanov, in the near future, State Duma deputy Alexander Khinshtein plans to introduce a bill that will allow heads of correctional institutions to disconnect certain numbers from cellular communications through operators.
+Khinshtein himself confirmed the information on the preparation of amendments to the laws “On Communications”, “On institutions and bodies executing criminal sentences ...” and “On the detention of suspects and accused ...”.
+“The topic of using communications in prisons is extremely relevant. Using mobile phones, convicts can not only commit fraud, but also put pressure on witnesses, coordinate criminal groups, etc., ”the deputy noted.
+According to Khinshtein, about 60 thousand telephones are seized every year in the penitentiary system. Now, limiting the rights of such cellular users will be the responsibility of operators.
+Until April 1, 2020, the board ordered to commission the Remote Fraud system, as well as create a special mobile application for it. Information about subscriber numbers and bank cards used by criminals will be entered into the system, etc. An application for smartphones will be able to use this information and block an incoming call from a number on the black list.
+The contract-legal department and the main department for countering extremism of the Ministry of Internal Affairs were instructed to take part in amendments to the law developed by the Ministry of Communications and Telecommunications that would prohibit the telecom operator from passing voice traffic from the data network if the initiator of the connection did not provide information about the subscriber number or user ID (that is, if the call is to the phone comes, for example, from an unknown Skype user).
+For the time being, criminals can avoid identification using programs such as VPN, TOR, SSL, using the technology of exchange of subscriber numbers via SIP-telephony. In addition, data encryption on common Internet services does not allow you to set the IP addresses of user servers and monitor their activity. The Ministry of Internal Affairs has questions about the current procedure for issuing SIM cards, the lack of electronic exchange of information with state authorities, credit organizations, Internet providers, telecom operators and Internet services.
+In January-August 2019, Russian law enforcement agencies recorded more than 1.355 million crimes, which is 1.9% more than the same period last year, according to statistics from the General Prosecutor's Office. At the same time, the number of crimes committed using information and telecommunication technologies or in the field of computer information increased by 67% to 180.15 thousand.
+According to Valery Baulin, head of the Group-IB Computer Forensics Laboratory, telephone fraud has swept the banks of Russian banks this year. One of the tasks set by the Ministry of Internal Affairs is related to the creation of a unified police database with the phone numbers of fraudsters, their network addresses and payment details. The Bank of Russia and mobile operators already have similar data. In June-August, the Central Bank sent to telecom operators information on more than 2.5 thousand numbers from which calls were received from bank customers, but only 200 substitution numbers were blocked and calls continued, Baulin said.
+“Our experience of public-private partnerships - working together with the Ministry of Internal Affairs and international police organizations - shows that it is more efficient not to investigate crimes that have already been committed, but to neutralize criminal groups, preventing new crimes. In this regard, the question of installing cellular signal blockers on the territory of correctional institutions to combat remote fraud is timely, since most of the fraudulent calls are made from places of deprivation of liberty. Other fraudulent call centers operate “on the outside”, sometimes abroad of Russia - to neutralize them, international interaction between different states is necessary, ”said Baulin.
+Positive Technologies Director for Methodology and Standardization Dmitry Kuznetsov pointed out that the need to take these measures has been discussed for a long time. If the proposed measures are implemented in full, this will potentially allow squeezing out scammers from the territory of Russia.
+“But the same calls to the numbers of customers of Russian banks using the same methods of social engineering will be made from the territory of neighboring states,” Kuznetsov said.
+According to a representative of Kaspersky Lab, in order to combat remote fraud, it is important to correctly introduce additional regulation of IP-telephony and measures aimed at preventing the substitution of numbers.
+“Creating a single database of information about phone numbers, network addresses, device identifiers, bank cards used to commit crimes will also complicate the life of attackers,” said Baulin. - A significant part of the victims of fraud comes across fairly simple methods of social engineering and deception. ""Technical means, such as banning the substitution of numbers, are useful in combating remote fraud, but they cannot completely prevent it.""
+
+
+"

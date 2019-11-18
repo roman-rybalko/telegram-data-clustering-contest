@@ -1,0 +1,76 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Jetzt patchen! Attacken auf Windows-Lücke BlueKeep beobachtet
+Wer noch ältere Windows-Versionen betreibt, sollte sicherstellen, dass diese auf dem aktuellen Stand sind. Ansonsten könnte Malware auf Computer gelangen.
+04 Nov 2019, 11:20 by Dennis Schirrmacher
+Angreifer haben es derzeit auf eine als ""kritisch"" eingestufte Sicherheitslücke in Windows XP, 7, Vista, Server 2003 und Server 2008 abgesehen. Ist eine Attacke erfolgreich, könnte sich Malware wurmartig von einem Computer auf weitere PCs verbreiten. So könnten Angreifer ganze Netzwerke kompromittieren.
+Krypto-Miner im Gepäck
+Die Schwachstelle (CVE-2019-0708) ist unter dem Namen BlueKeep bekannt und steckt in Micrsofts Remote Desktop Protocol (RDP) für die Fernwartung von Windows-PCs. Die Lücke ist seit Ende Mai 2019 bekannt – seitdem gibt es auch Sicherheitsupdates. Patches gibt es sogar für XP und Vista, die eigentlich bereits vom offiziellen Update-Zweig abgeschnitten sind. Computer mit bedrohten Windows-Versionen sind nur gefährdet, wenn der RDP-Service aktiviert ist. Windows 8.1 und 10 sind generell nicht betroffen.
+Wie aus einem Beitrag hervorgeht, haben Sicherheitsforscher von Kryptos Logic nun erste Angriff auf ihre Honeypots dokumentiert. Dabei handelt es sich um PCs, die als Lockfalle für Angreifer im Netz hängen. Während ihrer Beobachtungen kam es zu Angriffen auf den von RDP genutzten TCP-Port 3389. Dabei stürzten die Honeypots mit einem Blue Screen of Death (BSOD) ab.
+Im Zuge ihrer Untersuchungen konnten die Sicherheitsforscher auch die Payload analysieren, die Angreifer über die Schwachstelle auf Windows-Computer schieben wollen. Dabei handelt es sich dem Online-Analyse-Service Virustotal zufolge um einen Krypto-Miner, der auf Kosten der Rechenleistung von Opfern die Kryptowährung Monero schürft.
+Einem Analysten von Malware Tech zufolge ist die Payload momentan nicht darauf ausgelegt, sich wurmartig im Netzwerk zu verbreiten und so weitere PCs zu infizieren.
+Sicherheitsupdates installieren
+Admins sollten nun dringend ihre Windows-PCs auf Aktualität prüfen und sie gegebenenfalls updaten. In welchem Ausmaß die Angriffe konkret stattfinden, führen die Sicherheitsforscher nicht aus. In ihrem Beitrag ist die Rede von einer ""massenhaften Ausnutzung"". Dort beschreiben sie auch technische Einzelheiten zum Exploit.
+
+Patch-Downloads:
+
+
+
+Sicherheitsupdates für Windows 7 und Windows Server 2008 (R2)
+
+
+Sicherheitsupdates für Windows XP, Vista und Server 2003
+
+
+(des)
+
+
+",de,"
+
+
+
+
+
+
+
+
+
+
+
+Patch now! Attacks on windows gap BlueKeep observed
+If you have older versions of Windows, make sure they are up to date. Otherwise malware could get on computer.
+04 Nov 2019, 11:20 by Dennis Schirrmacher
+Attackers are currently targeting a ""critical"" vulnerability in Windows XP, 7, Vista, Server 2003, and Server 2008. If an attack succeeds, malware could worm out from a computer to other PCs. This could allow attackers to compromise entire networks.
+Crypto-miner in the luggage
+The vulnerability (CVE-2019-0708) is known as BlueKeep and is included in Microsoft's Remote Desktop Protocol (RDP) for remote maintenance of Windows PCs. The gap has been known since the end of May 2019 - since then there have also been security updates. Patches are even available for XP and Vista, which are already cut off from the official update branch. Computers with Windows versions at risk are only vulnerable if the RDP service is enabled. Windows 8.1 and 10 are generally unaffected.
+As one article shows, security researchers from Kryptos Logic have now documented the first attack on their honeypots. These are PCs that hang as a trap for attackers in the network. During their observations, attacks on the used by RDP TCP port 3389, the honeypots crashed with a Blue Screen of Death (BSOD) from.
+In the course of their investigations, the security researchers were also able to analyze the payload that attackers want to push over the vulnerability on Windows computer. According to the Virustotal online analytics service, this is a crypto-miner that scrape the crypto-currency Monero at the expense of the computing power of victims.
+According to a Malware Tech analyst, payload is not designed to spread worm-like on the network and infect other PCs.
+Install security updates
+Admins should urgently check their Windows PCs for up-to-dateness and update them if necessary. To what extent the attacks take place concretely, the security researchers do not execute. In her contribution there is talk of a ""mass exploitation"". There they also describe technical details of the exploit.
+
+Patch Downloads:
+
+
+
+Security Updates for Windows 7 and Windows Server 2008 (R2)
+
+
+Security updates for Windows XP, Vista, and Server 2003
+
+
+(of)
+
+
+"

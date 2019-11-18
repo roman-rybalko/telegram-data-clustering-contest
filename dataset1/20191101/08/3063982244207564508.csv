@@ -1,0 +1,50 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Forscher bauen 3D-Tastdisplay für sehbehinderte Menschen
+Für CAD-Software und Blender: Ein Forscherteam entwickelt ein taktiles Display, das Querschnitte von 3D-Objekten räumlich darstellen kann. Ein erster Prototyp erscheint vielversprechend. Das Ziel: eine bessere Auflösung und eine preiswertere Herstellung.
+01 Nov 2019, 08:41 by Oliver Nickel
+Forscher der Stanford University haben ein taktiles Display entwickelt, das 3D-Objekte darstellen kann. Das soll blinden oder visuell beeinträchtigten Menschen helfen, ein auf dem Computer dargestelltes Bild zu erfühlen. Im Prinzip handelt es sich dabei um eine 12 x 24 Pixel große Matrix aus Metallstäben, die in unterschiedlicher Höhe ausgefahren werden können. Das ist laut Maschinenbau-Juniorprofessor Sean Follmer ein Unterschied zu existierenden taktilen Panels, die nur zwei Stufen darstellen können.
+Das Forscherteam will es mit seinem Display blinden Menschen ermöglichen, 3D-Modelle in Blender oder CAD-Software im Kopf zu visualisieren. Das Projekt stammt von der Master-Ingenieursstudentin Alexa Siu, die dazu mit dem blinden Wissenschaftler und Co-Autor Joshua Miele zusammenarbeitet. Das Team stellte seine Arbeit auf der ACM-Sigaccess-Konferenz vor. Fünf sehbehinderte Menschen probierten den Prototyp bereits aus.
+In einem Video wird der erste Prototyp des taktilen Displays gezeigt. Dieses wird an einen Host-Computer angeschlossen und stellt per Knopfdruck einen Ausschnitt des gezeigten Bildes dar. Es ist dabei auch möglich, ein 3D-Modell in Querschnitten nacheinander anzuzeigen. Anwender können mit ihrer Hand die jeweilige Ebene erfühlen und Variablen bei Bedarf Anpassungen in der Software vornehmen. Derzeit zeigt das System allerdings keine Bewegtbilder an.
+
+
+
+In Zukunft will das Entwicklerteam sein System größer und vor allem preiswerter machen. Es soll mehr Pixel anzeigen können. Dabei sollen einzelne Pins verkleinert werden, so dass mehr Pixel auf die anzeigbare Fläche passen. ""Wenn ein taktiles Display zu einem mit Unterhaltungselektronik vergleichbaren Preis - wie ein Smartphone oder Laptop - gebaut werden könnte, könnte es von visuell beeinträchtigten Menschen viel genutzt werden"", sagt der Student Kai Zhang, der an einem ähnlichen und kompakteren Projekt arbeitet. Für ihn wäre so auch Virtual Reality vorstellbar.
+
+
+",de,"
+
+
+
+
+
+
+
+
+
+
+
+Researchers are building 3D touch displays for visually impaired people
+For CAD Software and Blender: A research team is developing a tactile display that can spatially represent cross-sections of 3D objects. A first prototype looks promising. The goal: a better resolution and a cheaper production.
+01 Nov 2019, 08:41 by Oliver Nickel
+Stanford University researchers have developed a tactile display that can display 3D objects. This should help blind or visually impaired people to feel an image displayed on the computer. In principle, this is a 12 x 24 pixel matrix of metal rods that can be extended at different heights. This is a difference to existing tactile panels, which can only represent two stages, according to mechanical engineering junior professor Sean Follmer.
+The research team wants to use its display to enable blind people to visualize 3D models in Blender or CAD software in their heads. The project is by Master Engineer Alexa Siu, who works with blind scientist and co-author Joshua Miele. The team presented their work at the ACM Sigaccess conference. Five visually impaired people tried the prototype already.
+A video shows the first prototype of the tactile display. This is connected to a host computer and displays a section of the displayed image at the press of a button. It is also possible to display a 3D model in cross sections one after the other. Users can feel with their hands the respective level and make adjustments in the software if necessary. At the moment, the system does not show any moving pictures.
+
+
+
+In the future, the development team wants to make its system bigger and, above all, cheaper. It should be able to display more pixels. Here, individual pins are to be reduced so that more pixels fit on the displayable area. ""If a tactile display could be built to a price comparable to consumer electronics - like a smartphone or laptop - it could be used a lot by visually impaired people,"" says student Kai Zhang, who is working on a similar and more compact project. For him, virtual reality would be conceivable.
+
+
+"

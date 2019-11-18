@@ -1,0 +1,86 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Red Hat Enterprise Linux 8.1 mit Live-Kernel-Patches und Container-Neuerungen
+Das erste Minor Release der 8er-Versionsreihe bringt unter anderem diverse aktualisierte Programmpakete mit und beherrscht Kernel Live Patching.
+07 Nov 2019, 14:10 by Tim Schürmann
+Mit dem ersten Upgrade der 8er-Versionsreihe von Red Hat Enterprise Linux (RHEL) rüstet Red Hat in seiner Enterprise Linux-Distribution unter anderem volle Unterstützung für Live-Kernel-Patches nach, aktualisiert mehrere Programmpakete und gibt Administratoren neue Container-Werkzeuge an die Hand.
+Live-Kernel-Patches erhält RHEL 8.1 bei kritischen und anderen ausgewählten Sicherheitslücken. Einen Neustart des Systems erfordern sie nicht mehr. Die Sicherheitsflicken gelangen auch ohne Premium Subscription über die Standardwege und schließlich über Yum auf das System. Apropos Yum: Nachdem schon RHEL 8 den Paketmanager DNF als Yum 4 ausgegeben hat, heißt das Paket ""dnf-utils"" jetzt konsequenterweise ""yum-utils"".
+Neue Module Streams und GCC Toolset 9
+RHEL 8 führte ein neues Modulkonzept ein, über das Anwender bei ausgewählten Anwendungen auf neuere Versionen wechseln können. In RHEL 8.1 liefern neue Module Streams PHP 7.3, Ruby 2.6, Node.js 12 und nginx 1.16 aus. Wie lange Red Hat diese Streams pflegen will, ist auf Red Hats Webseite zum ""Application Streams Life Cycle"" aber noch nicht verzeichnet.
+Ebenfalls neu in 8.1 ist das GCC Toolset 9. Dieser Application Stream enthält unter anderem die GCC-Compiler in Version 9.1.1 sowie ""make"" in Version 4.9.2. Aktualisiert haben die RHEL-Entwickler zudem die Compiler Toolsets für LLVM, Rust und Go: Verfügbar sind jetzt LLVM 8.0.1, Rust 1.37 und Go 1.12.8.
+Zum Identity Management gehört zudem das neue Kommandozeilenwerkzeug ""Healthcheck"". Es testet, ob der zugehörige IdM-Server läuft und korrekt konfiguriert ist.
+Container-Neuerungen in RHEL 8.1
+Zahlreiche Neuerungen betreffen den Betrieb von Containern. So bietet die auf der Web-Admin-Software Cockbit basierende Web Console zusätzliche Verwaltungswerkzeuge an. Über das neue Werkzeug ""Udica"" lassen sich maßgeschneiderte SELinux Policies für Container generieren. Das ist vor allem dann nützlich, wenn die Standard-Policy für den konkreten Anwendungsfall zu strikt ist. Policies erzeugt Udica derzeit für Podman und Docker, die Unterstützung für CRI-O soll in Kürze folgen.
+RHEL 8.1 kann Container vollständig ohne Root-Rechte zünden (""Rootless Container""). Ein ""Toolbox"" getaufter Container hilft zudem beim Troubleshooting des Systems. Er enthält Werkzeuge, die bei der Analyse von Problemen helfen und erlaubt den Root-Zugriff auf das Host-System. Auf diese Weise müssen Administratoren, die Werkzeuge nicht einzeln auf dem entsprechenden System installieren und konfigurieren. Der Container lässt sich einfach via ""yum install toolbox"" hinzuholen.
+Sicherheits-Features
+Über das Ffapolicyd-Framework können Administratoren gezielt Programme auf eine Whitelist setzen. RHEL 8.1 führt dann nur noch diese Anwendungen aus, alle anderen lassen sich nicht mehr starten. Neue System Roles vereinfachen das Konfigurieren von Datenträgern/Storage, Netzwerk, Zeitsynchronisation, SELinux und entsprechenden weiteren Funktionen. Die System Roles ergänzen die bestehenden Ansible Roles.
+Wer eine gültige Red Hat Enterprise Linux Subscription besitzt, erhält automatisch Zugriff auf Red Hat Insights. Mit diesem ""proaktiven Analytikangebot"" lassen sich Konfigurations- und Systemprobleme aufdecken. Red Hat Insights bietet laut Red Hat mittlerweile über 1000 Regeln, mit denen Administratoren ein System auf Performance-, Sicherheits- und Stabilitätsprobleme überprüfen können.
+Pünktliche Neuheiten
+RHEL 8.1 ist das erste Minor Release, das im – mit RHEL8 angekündigten – Halbjahresrhythmus erschienen ist. RHEL 8.2 soll daher in rund einem halben Jahr erscheinen. RHEL 8.1 ist das erste Minor Release mit Extended Update Support, wodurch es der Hersteller (gemäß dem RHEL Linux Lifecycle) zwei Jahre lang pflegt. Zu dieser Ehre kommen zukünftig allerdings nur Updates mit einer geraden Zahl am Ende; zudem fällt (je nach gebuchter Subscription) unter Umständen ein Aufpreis an.
+Ab sofort erlaubt Red Hat In-Place Updates von RHEL 7.6 auf RHEL 8.1 auch auf Systemen mit einer 64-Bit ARM-, Pseries- oder Zseries-Architektur.
+Eine Übersicht über sämtliche Neuerungen bieten die 8.1-Release-Notes in der RHEL-Dokumentation.
+
+Mehr zu RHEL 8:
+
+
+
+Red Hat Enterprise Linux 8 freigegeben: Mehr Flexibilität bei Software-Versionen
+
+
+(ovw)
+
+
+",de,"
+
+
+
+
+
+
+
+
+
+
+
+Red Hat Enterprise Linux 8.1 with live kernel patches and container updates
+The first Minor Release of the 8-series version includes, among other things, various updated program packages and mastered Kernel Live Patching.
+07 Nov 2019, 14:10 by Tim Schürmann
+With the first upgrade of the Red Hat Enterprise Linux 8 Series (RHEL) release series, Red Hat's Enterprise Linux distribution includes full support for live kernel patches, updates several packages, and provides administrators with new container tools ,
+Live kernel patches get RHEL 8.1 for critical and other selected vulnerabilities. They do not require a reboot of the system. The security patches can also be accessed without Premium Subscription via the standard routes and finally via Yum to the system. Speaking of Yum: After RHEL 8 has already issued the package manager DNF as Yum 4, the package ""dnf-utils"" is now called ""yum-utils"".
+New Modules Streams and GCC Toolset 9
+RHEL 8 introduced a new module concept that allows users to switch to newer versions of selected applications. In RHEL 8.1, new modules deliver streams PHP 7.3, Ruby 2.6, Node.js 12 and nginx 1.16. How long Red Hat wants to maintain these streams is not yet listed on Red Hat's ""Application Streams Life Cycle"" website.
+Also new in 8.1 is the GCC Toolset 9. This application stream includes the GCC compilers in version 9.1.1 and ""make"" in version 4.9.2. The RHEL developers have also updated the compiler toolsets for LLVM, Rust and Go: LLVM 8.0.1, Rust 1.37 and Go 1.12.8 are now available.
+Identity management also includes the new command line tool ""Healthcheck"". It tests whether the associated IdM server is running and correctly configured.
+Container updates in RHEL 8.1
+Numerous innovations concern the operation of containers. For example, the Web Console, based on the Web Admin software Cockbit, offers additional administration tools. The new tool ""Udica"" can be used to generate customized SELinux policies for containers. This is especially useful if the default policy is too strict for the specific application. Policies are currently being created by Udica for Podman and Docker, with support for CRI-O coming soon.
+RHEL 8.1 can ignite containers completely without root privileges (""rootless container""). A ""Toolbox"" baptized container also helps troubleshoot the system. It contains tools that help analyze problems and allows root access to the host system. This way, administrators do not need to install and configure the tools individually on the appropriate system. The container can be easily added via ""yum install toolbox"".
+Security Features
+Using the Ffapolicyd framework, administrators can specifically set programs to a whitelist. RHEL 8.1 then only executes these applications, all others can not be started. New system roles make it easy to configure disks / storage, network, time synchronization, SELinux and other features. The system roles complement the existing Ansible Roles.
+If you have a valid Red Hat Enterprise Linux subscription, you will automatically have access to Red Hat Insights. This ""proactive analytics offer"" can be used to uncover configuration and system problems. Red Hat Insights now has more than 1000 rules that allow administrators to review a system for performance, security and stability issues, according to Red Hat.
+Punctual novelties
+RHEL 8.1 is the first minor release released in the semi-annual rhythm announced with RHEL8. RHEL 8.2 should therefore appear in about half a year. RHEL 8.1 is the first minor release with Extended Update Support, giving the manufacturer two years to maintain it (according to the RHEL Linux Lifecycle). In the future, however, only updates with an even number at the end will come to this honor; In addition (depending on the booked subscription) may incur an additional charge.
+From now on, Red Hat will allow in-place updates from RHEL 7.6 to RHEL 8.1 even on systems with a 64-bit ARM, Pseries or Zseries architecture.
+An overview of all the new features can be found in the 8.1 release notes in the RHEL documentation.
+
+More about RHEL 8:
+
+
+
+Red Hat Enterprise Linux 8 released: More flexibility in software versions
+
+
+(Ovw)
+
+
+"

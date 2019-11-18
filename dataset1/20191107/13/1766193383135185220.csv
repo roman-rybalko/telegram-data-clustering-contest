@@ -1,0 +1,66 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Das GitHub-Universum wächst auf über 40 Millionen Entwickler
+Data Science, ML und Programmiersprachen wie Python, Dart und Rust tragen laut GitHubs jährlichem Octoverse-Report zum rasanten Wachstum der Plattform bei.
+07 Nov 2019, 13:11 by Matthias Parbel
+Im Rahmen seiner eigenen Entwicklerkonferenz Universe hat GitHub seinen jährlichen Bericht ""The State of the Octoverse"" veröffentlicht. Dem aktuellen Report zufolge nutzen mittlerweile mehr als 40 Millionen Entwickler weltweit die Code-Hoster-Plattform. Seit der Übernahme durch Microsoft im Herbst vergangenen Jahres hat der Dienst demnach nochmals gut ein Drittel neue Anwender hinzugewonnen. GitHub verzeichne nun allein drei Millionen Accounts von Unternehmen, Non-Profit-Organisationen und Open-Source-Projekten. Alle Nutzer zusammen haben in den zurückliegenden 12 Monaten über 44 Millionen neue Repositorys angelegt.
+Zunehmende weltweite Vernetzung
+Während sich die auf GitHub vertretenen Entwickler weltweit auf immer mehr Länder verteilen – allein 70 sind es dem Report zufolge schon bei den Enterprise-Accounts – nimmt gleichzeitig deren Vernetzung untereinander immer weiter zu, wie die GitHub-Verantwortlichen anhand der Abhängigkeiten innerhalb und zwischen den gehosteten Projekten folgern. Dabei rücke vor allem Open-Source-Software zunehmend ins Zentrum der generellen Anwendungsentwicklung. Im Durchschnitt hänge jedes öffentliche und private Repository auf GitHub von mehr als 200 Paketen ab. Unter den Top-50-Open-Source-Projekten wie rails/rails, facebook/jest und axios/axios fallen die Repository-Dependencies noch deutlich stärker ins Gewicht – mit zum Teil über 3,5 Millionen Abhängigkeiten.
+
+
+Die Top 10 der Programmiersprachen mit den meisten Repository Contributors(Bild: GitHub)
+
+Open Source, Data Science und ML treiben das Wachstum an
+Im Zuge zahlreicher neuer Open-Source-Projekte aus Forschungsbereichen und populären Anwendungsfeldern wie Data Science, Machine Learning, Deep Learning sowie der Robotik gewinnen auch Programmiersprachen und Frameworks zunehmend an Bedeutung. So setzt Python seinen Siegeszug aus den vergangenen Jahren fort und platziert sich nach der Zahl der Repository Contributors nun auf Rang zwei hinter JavaScript – aber erstmals vor Java. Das größte Wachstum verzeichnet GitHub hingegen bei den Programmiersprachen Dart (>500%) und Rust (>200%), wobei die JavaScript-Alternative Dart insbesondere von der wachsenden Popularität von Googles Cross-Plattform-Framework Flutter profitiert. Flutter nimmt inzwischen Rang drei unter den Open-Source-Projekten mit der größten Zahl an Beitragenden ein.
+
+
+Die Top 10 der Open-Source-Projekte mit den meisten Contributors(Bild: GitHub)
+
+Kurz dahinter auf Position fünf findet sich das ML-Framework TensorFlow, das dem Octoverse-Report zufolge ebenfalls als anschauliches Beispiel für die zunehmende Vernetzung von Open-Source- und generellen Softwareprojekten gilt. Die durchschnittliche Anzahl der Community-Entwickler, die zu Repositorys beitragen, die von Python-Paketen abhängig sind, liegt demnach bei etwa 19.000. Von TensorFlow selbst seien mittlerweile insgesamt rund 46.000 Repositorys wie Numpy oder Pytest abhängig. Die wachsende Popularität von Python, TensorFlow sowie der rasante Anstieg bei der Nutzung von Jupyter Notebooks gehen dem GitHub-Report zufolge Hand in Hand mit einer immer größeren Zahl von Data Scientists, die diese Tools in ihrer täglichen Arbeit für Datenanalysen, ML-Projekte oder auch beim Natural Language Processing (NLP) nutzen.
+Diese und weitere Highlights des Octoverse-Reports 2019 fasst der Blogbeitrag von GitHub zusammen. Wer tiefer in die Ergebnisse einsteigen möchte, kann dies im frei zugänglichen Bericht selbst tun. (map)
+
+
+",de,"
+
+
+
+
+
+
+
+
+
+
+
+The GitHub universe grows to over 40 million developers
+Data Science, ML and programming languages such as Python, Dart and Rust contribute to the rapid growth of the platform, according to GitHub's annual Octoverse report.
+07 Nov 2019, 13:11 by Matthias Parbel
+As part of its own developer conference Universe, GitHub has published its annual report ""The State of the Octoverse"". According to the latest report, more than 40 million developers worldwide now use the code hoster platform. Since the takeover by Microsoft in the fall of last year, the service has therefore again gained a good third new users. GitHub now has three million accounts from companies, non-profit organizations and open source projects alone. All users have created more than 44 million new repositories in the past 12 months.
+Increasing worldwide networking
+While GitHub developers around the world are spreading to more and more countries - with the Enterprise accounts accounting for only 70, according to the report - their interconnectedness continues to grow, as do GitHub executives based on dependencies within and between hosted communities Conclude projects. In particular, open source software is increasingly becoming the focus of general application development. On average, every public and private repository on GitHub depends on more than 200 packages. Among the top 50 open source projects such as rails / rails, facebook / jest and axios / axios, the repository dependencies are even more significant - with over 3.5 million dependencies in some cases.
+
+
+Top 10 Programming Languages with Most Repository Contributors (Image: GitHub)
+
+Open Source, Data Science and ML drive growth
+Programming languages and frameworks are becoming increasingly important in the course of numerous new open source projects in research areas and popular fields of application such as data science, machine learning, deep learning and robotics. So Python continues its triumphal march from the past years and placed after the number of Repository Contributors now in second place behind JavaScript - but for the first time before Java. By contrast, GitHub recorded the greatest growth in the Dart (> 500%) and Rust (> 200%) programming languages, with the Dart JavaScript alternative benefiting in particular from the growing popularity of Google's Flutter cross-platform framework. Flutter now occupies third place among the open source projects with the largest number of contributors.
+
+
+The top 10 open source projects with the most contributors (Image: GitHub)
+
+Shortly behind in position five is the ML framework TensorFlow, which, according to the Octoverse report, also serves as a vivid example of the increasing networking of open source and general software projects. The average number of community developers contributing to repositories that rely on Python packages is about 19,000. TensorFlow itself is now dependent on around 46,000 repositories such as Numpy or Pytest. The growing popularity of Python, TensorFlow, and the rapid growth in the use of Jupyter notebooks, according to the GitHub report go hand in hand with an increasing number of data scientists who use these tools in their daily work for data analysis, ML projects or even in Natural Language Processing (NLP).
+These and other highlights of the Octoverse Report 2019 are summarized in the blog post by GitHub. If you want to go deeper into the results, you can do so in the freely accessible report itself. (Map)
+
+
+"

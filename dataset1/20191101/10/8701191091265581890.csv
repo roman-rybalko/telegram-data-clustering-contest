@@ -1,0 +1,86 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Фиктивная реализация и как ФНС научилась с ней бороться
+01 Nov 2019, 10:42 by «Налоговые адвокаты»
+
+
+
+
+Мы продолжаем рассказывать вам о схемах по уклонению от уплаты налогов и о том, как контролирующие органы их выявляют. Сегодня — о фиктивной реализации.
+
+Причины использования схемы: реализация товара с наименьшей наценкой или избавление от «виртуальных остатков».
+Первый вариант схемы: у компании есть товар, который она может продать за наличные, например, на рынках, в розничных магазинах и т.д. Или компания продает товар по высокой цене, но реализацию по высокой цене не хочет показывать.
+После фактической продажи товара за нал или по высокой цене встаёт задача — «нарисовать» реализацию с минимальной наценкой для исчисления минимальных налогов, а также для того, чтобы объяснить отсутствие товара.
+Для этого есть варианты:
+
+товар «на бумаге» продаётся технической компании;
+товар передаётся по договору комиссии другой организации, которая якобы продает его с минимальной наценкой;
+из компании-продавца выделяется другая компания, и товар передаётся выделенной компании, которая потом переводится в регион, теряется и через какое-то время пропадает с радаров. Вместе с несуществующим товаром.
+
+Второй вариант схемы: компания (назовем её компания А), как и в первом варианте схемы, преимущественно реализовывает товар за наличные. Далее, компания А находит компанию Б, которая готова купить нал. Эта компания покупает с минимальной наценкой «на бумаге» товар, официально переводит продавцу деньги и вместо товара получает фиктивные документы и кэш. Теперь как бы всё сходится — у продавца нет товара ни «на бумаге», ни реально, а перевод по безналу с минимальной наценкой — есть. Можно платить минимальный налог на прибыль. Кажется, что всё хорошо.
+Что в этой схеме не так и как ФНС разоблачает схему: в первом варианте схемы ФНС находит выгодоприобретателя схемы с помощью системы АСК НДС-2. О фиктивности реализации товара технической компании могут свидетельствовать: отсутствие оплаты за товар, отсутствие у покупателя-технической компании сотрудников, складов, техники и иных материальных ресурсов, отсутствие дальнейшей реализации якобы приобретенного товара и т.д. Такие формулировки приходится часто встречать в судебных актах.
+Во втором варианте схемы разоблачение происходит интереснее. Сейчас покажем на примере.
+Допустим, нал есть у сети АЗС, а он нужен фабрике по пошиву одежды. АЗС «на бумаге» продаёт фабрике тонны бензина. Проблема в том, что ФНС задастся вопросом — а зачем фабрике столько бензина? Где она его использует? Если нет большого количества транспорта, то зачем она купила этот бензин и что она с ним потом сделала? Если компании не смогут четко и убедительно ответить на этот вопрос, сделка будет признана нереальной, и прощай, вся выгода от неё.
+Схема может быть чуть сложнее: когда между АЗС и фабрикой имеется техническая компания. В этом варианте схемы фабрика «покупает» у технички одежду и переводит ей по безналу деньги. Техничка же «покупает» у АЗС бензин и переводит деньги на расчетный счет. АЗС передаёт фабрике нал.
+Только вот вопрос: как же так вышло, что техничка купила у АЗС бензин, а продала фабрике одежду? Инспекция вызывает на допрос директора технички и спрашивает:
+«Что у вас за специфика деятельности такая, вы вроде бы бензин покупаете, а одежду продаёте. Где же цепочка движения товара? Куда делся бензин и откуда взялась одежда?».
+Понятно, что номинальный директор технички на этот вопрос ничего внятного сказать не может. Инспекция делает вывод о нереальности сделки.
+Чем грозит применение схемы: инспекция решит, что сделка по купле-продаже на самом деле нереальна. Реализация с минимальной наценкой в адрес технической компании пересчитывается по рыночной цене. Продавцу доначисляют налоги и пени, а также штраф — 40% от неуплаченного налога, т.к. очевидно, что неуплата была умышленной. И конечно, директору грозит уголовное дело по ст. 199 УК РФ.
+Наш комментарий: описанная выше схема также известна контролирующим органам, против неё сейчас активно работают ФНС, Центробанк и Росфинмониторинг. СМИ заявляют, что имеется письмо Росфинмониторинга, в котором изложена эта схема, а также даны методы борьбы с ней.
+В связи с этим, в своей деятельности надо использовать менее популярные методы работы, которые бы не привлекали внимание проверяющих и не свидетельствовали бы об уклонении от уплаты налогов.
+
+
+",ru,"
+
+
+
+
+
+
+
+
+
+
+
+Dummy implementation and how the Federal Tax Service learned to deal with it
+01 Nov 2019, 10:42 by “Tax Lawyers”
+
+
+
+
+We continue to tell you about tax evasion schemes and how regulatory authorities identify them. Today is about fictitious implementation.
+
+Reasons for using the scheme: the sale of goods with the lowest margin or getting rid of ""virtual balances"".
+The first version of the scheme: the company has a product that it can sell for cash, for example, in markets, in retail stores, etc. Or the company sells the goods at a high price, but does not want to show the sale at a high price.
+After the actual sale of goods for cash or at a high price, the task arises - to ""draw"" the implementation with a minimum margin for calculating the minimum taxes, as well as in order to explain the absence of goods.
+There are options for this:
+
+goods “on paper” are sold to a technical company;
+the goods are transferred under a contract agreement to another organization, which allegedly sells it with a minimum margin;
+another company is separated from the seller’s company, and the goods are transferred to a separate company, which is then transferred to the region, is lost and after some time disappears from the radar. Together with non-existent goods.
+
+The second version of the scheme: the company (let's call it company A), as in the first version of the scheme, mainly sells goods for cash. Next, company A finds company B, which is ready to buy cash. This company buys goods with a minimum mark-up “on paper”, officially transfers money to the seller and receives fictitious documents and a cache instead of the goods. Now, as if everything fits together - the seller has no goods either “on paper” or real, but there is a wire transfer with a minimum mark-up. You can pay a minimum income tax. Everything seems to be fine.
+What is wrong with this scheme and how the Federal Tax Service exposes the scheme: in the first version of the scheme, the Federal Tax Service finds the beneficiary of the scheme using the ASK VAT-2 system. The fictitious sale of goods to a technical company may be indicated by the absence of payment for the goods, the absence of employees, warehouses, equipment and other material resources from the buyer-technical company, the absence of further sale of allegedly purchased goods, etc. Such formulations are often found in judicial acts.
+In the second version of the scheme, the exposure is more interesting. Now let's show an example.
+Let’s say that the gas station network has cash, and the factory for tailoring needs it. A gas station on paper sells tons of gas to the factory. The problem is that the Federal Tax Service will ask the question - why does the factory need so much gasoline? Where does she use it? If there is not a large amount of transport, then why did she buy this gasoline and what did she do with it then? If companies cannot clearly and convincingly answer this question, the transaction will be recognized as unrealistic, and goodbye, all the benefits from it.
+The scheme can be a little more complicated: when there is a technical company between the gas station and the factory. In this version of the scheme, the factory “buys” clothes from the technicians and transfers money to it via bank transfer. The technician, on the other hand, “buys” gas from the gas station and transfers the money to the current account. The gas station transfers cash to the factory.
+But the question is: how did it happen that the technician bought gas from a gas station and sold clothes to the factory? The inspection calls the technical director for questioning and asks:
+“What kind of activity do you have? You seem to be buying gas, and selling clothes. Where is the product chain? Where did gasoline go and where did the clothes come from? ”
+It is clear that the nominal technical director cannot say anything intelligible to this question. The inspection concludes that the transaction is unrealistic.
+What threatens the application of the scheme: the inspection will decide that the purchase and sale transaction is actually unrealistic. Sales with a minimum margin to a technical company are translated at the market price. The seller is charged additional taxes and penalties, as well as a fine - 40% of the unpaid tax, because it is clear that the non-payment was intentional. And of course, the director faces a criminal case under Art. 199 of the Criminal Code.
+Our comment: the scheme described above is also known to regulatory authorities, the Federal Tax Service, the Central Bank and Rosfinmonitoring are actively working against it. The media say that there is a letter from Rosfinmonitoring that outlines this scheme, and also gives methods for dealing with it.
+In this regard, in its activity it is necessary to use less popular methods of work that would not attract the attention of auditors and would not indicate tax evasion.
+
+
+"

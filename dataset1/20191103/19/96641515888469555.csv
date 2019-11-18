@@ -1,0 +1,44 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+The first in-the-wild BlueKeep cyberattack isn't as dangerous as feared
+It's not the fast-spreading worm that some expected.
+03 Nov 2019, 19:37 by Jon Fingas
+When word broke of the BlueKeep vulnerability in Windows, many feared a repeat of NotPetya and other widespread worms that have wreaked havoc. They might not have to worry quite so much, though. Kryptos Logic has discovered the first known in-the-wild BlueKeep exploit, and it isn't as vicious as feared. The initial attack from a ""low-level actor"" appears to have scanned the internet and infected vulnerable systems with a cryptocurrency miner, but little else. There are no data wipes, no automatic spreading or other signs of a worm in action.
+There's been a ""spike"" in traffic related to the flaw, Rendition Infosec's Jake Williams told Wired, but it hasn't hit ""critical mass.""
+This doesn't rule out the possibility of a more serious BlueKeep attack. There were still 735,000 computers open to BlueKeep as of August, according to Errata Security. However, the window of opportunity for a large-scale attack is closing. The longer it takes for someone to develop a large-scale attack, the more people patch their PCs against it. This may be one of those precious instances where a potentially serious vulnerability fizzles out due to both slow-to-move hackers and, importantly, an effective campaign to patch people's computers.
+Via: WiredSource: Kryptos Logic
+
+
+",en,"
+
+
+
+
+
+
+
+
+
+
+
+The first in-the-wild BlueKeep cyberattack isn't as dangerous as feared
+It's not the fast-spreading worm that some expected.
+03 Nov 2019, 19:37 by Jon Fingas
+When word broke of the BlueKeep vulnerability in Windows, many feared a repeat of NotPetya and other widespread worms that have wreaked havoc. They might not have to worry quite so much, though. Kryptos Logic has discovered the first known in-the-wild BlueKeep exploit, and it isn't as vicious as feared. The initial attack from a ""low-level actor"" appears to have scanned the internet and infected vulnerable systems with a cryptocurrency miner, but little else. There are no data wipes, no automatic spreading or other signs of a worm in action.
+There's been a ""spike"" in traffic related to the flaw, Rendition Infosec's Jake Williams told Wired, but it hasn't hit ""critical mass.""
+This doesn't rule out the possibility of a more serious BlueKeep attack. There were still 735,000 computers open to BlueKeep as of August, according to Errata Security. However, the window of opportunity for a large-scale attack is closing. The longer it takes for someone to develop a large-scale attack, the more people patch their PCs against it. This may be one of those precious instances where a potentially serious vulnerability fizzles out due to both slow-to-move hackers and, importantly, an effective campaign to patch people's computers.
+Via: WiredSource: Kryptos Logic
+
+
+"

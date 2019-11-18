@@ -1,0 +1,88 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+É urgente atualizar o seu Android! Bug permite instalar apps via NFC
+06 Nov 2019, 01:00 by Pedro Simões
+A segurança no Android continua a ser o seu ponto mais fraco. Com demasiada frequência surgem problemas e questões que colocam em causa a proteção dos utilizadores e dos seus dados.
+Uma nova falha foi descoberta recentemente e permite instalar apps no smartphone apenas ao estarmos perto do atacante. A falha está no Android Beam e a Google já a resolveu, sendo hora de atualizar todos os smartphones.
+
+
+
+
+
+Uma nova falha de segurança afeta o Android
+Este novo problema surgiu de uma área onde não era esperada. A partilha de ficheiros e de documentos por NFC no Android é o ponto de ataque, ficando qualquer utilizador vulnerável. Por norma esta é controlada, mas existe uma falha.
+Com a proximidade necessária e apenas com o Android Beam, qualquer atacante pode instalar apps num smartphone Android. Basta que este seja a versão 8 ou posterior e que o utilizador tenha a partilha NFC ativa. Este é um cenário muitas simples de alcançar, o que deixa ainda mais vulneráveis os utilizadores.
+
+
+
+
+
+É demasiado simples instalar apps via NFC
+A falha vem com a mudança feita pela Google no sistema de permissões de instalação de apps de fontes externas. Até à versão 8 esta era global e mudou para uma permissão com base em aplicações. Ora é aqui que reside o problema, porque a Google autoriza o Beam naturalmente no Android.
+Assim, e como referido antes, basta a proximidade para que um atacante se ligue via NFC e instale apps. Estas apps podem depois ter comportamentos maliciosos e atacar diretamente os dados do utilizador, já dentro do smartphone.
+
+
+
+
+
+Hora de atualizar urgentemente o smartphone
+A Google tratou de resolver o problema de imediato e tem uma correção. Esta surge na atualização de segurança de outubro, devendo por isso ser instalada assim que possível. Compete aos fabricantes a sua disponibilização.
+É, no entanto, aqui que reside novamente o problema. Mesmo com indicações da Google, muitos fabricantes insistem em retardar essas atualizações. Muitos casos há em que estas simplesmente não surgem. A fragmentação é, e será por muito tempo, o maior problema do Android.
+Fonte: CVE-2019-2114
+
+
+",pt,"
+
+
+
+
+
+
+
+
+
+
+
+It is urgent to update your Android! Bug lets you install apps via NFC
+06 Nov 2019, 01:00 by Pedro Simões
+Security on Android remains its weakest point. All too often, problems and issues arise that undermine the protection of users and their data.
+A new flaw has recently been discovered that lets you install apps on your smartphone only while being near the attacker. The flaw is in Android Beam and Google has already fixed it, so it's time to update all smartphones.
+
+
+
+
+
+A new security hole affects Android
+This new problem arose from an area where it was not expected. NFC file and document sharing on Android is the point of attack, leaving any user vulnerable. This is usually controlled, but there is a flaw.
+With the proximity required and only with Android Beam, any attacker can install apps on an Android smartphone. Just this is version 8 or later and the user has active NFC sharing. This is a very simple scenario to achieve, which makes users even more vulnerable.
+
+
+
+
+
+It's too simple to install apps via NFC
+The flaw comes with Google's change to the app install permissions system from external sources. Until version 8 this was global and changed to an application based permission. This is where the problem lies, because Google naturally authorizes Beam on Android.
+Thus, as noted above, proximity is sufficient for an attacker to connect via NFC and install apps. These apps can then behave maliciously and directly attack user data from within the smartphone.
+
+
+
+
+
+Time to urgently update the smartphone
+Google immediately resolved the issue and has a fix. This comes in the October security update and should be installed as soon as possible. It is up to the manufacturers to make it available.
+It is, however, here that the problem resides again. Even with indications from Google, many manufacturers insist on delaying these updates. There are many cases where they simply do not arise. Fragmentation is, and will be for a long time, Android's biggest problem.
+Source: CVE-2019-2114
+
+
+"

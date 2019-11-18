@@ -1,0 +1,64 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Esta tecnología nos dice si una foto ha sido modificada en Photoshop
+07 Nov 2019, 10:15 by Alberto García
+Photoshop es una herramienta inabarcable para la mayoría de mortales. En él podemos hacer cualquier cosa que se nos ocurra a una foto, y el retoque en caras y cuerpos es algo muy común. Ahora, gracias a una herramienta que ha publicado la propia Adobe, podrás saber si una cara ha sido modificada en Photoshop.
+About Face: la herramienta que detecta si una cara ha sido modificada en Photoshop
+Cada año, Adobe permite a sus trabajadores realizar experimentos y proyectos llamados «Sneaks» que luego muestran en la conferencia Max. Muchos de ellos acaban llegando incluso a formar parte del propio Photoshop, y no sería de extrañar que la función bautizada como «About Face» acabe por llegar a la versión final.
+
+
+
+Modificar una cara es realmente sencillo, y podemos ensanchar o estilizar la cara de alguien en segundos, así como eliminar imperfecciones de la piel y poner cara de «porcelana» en unos pocos minutos. Cada vez hay gente más especializada en este tipo de modificaciones, y se hacen tan bien que es muy difícil distinguirlas de imágenes reales.
+Lo que mejor se le da es detectar caras modificadas con la herramienta Licuar
+Con About Face por fin podremos salir de dudas. En lugar de comprobar la imagen en su conjunto con un algoritmo, la herramienta lo que hace es mirar píxeles individuales. Gracias a ello, puede detectar partes que hayan sido alteradas pudiendo cotejarlo con los píxeles que tenga alrededor. Gracias a ello, se pueden detectar sin problema cambios hechos con la herramienta de Licuar, donde se pueden detectar píxeles o grupos de ellos que hayan sido estirados, apretados o interpolados. Cuando se usa esta herramienta para, por ejemplo, modificar la sonrisa de alguien, lo que se está haciendo es estirar los píxeles, y eso es fácilmente detectable por la herramienta.
+El desarrollador de la función no sólo ha sido capaz de crear la herramienta que muestre el porcentaje de probabilidad de que la foto haya sido modificada, sino que además muestra un mapa de calor de las zonas que cree que han sido modificadas. Además, va un paso más allá y ha desarrollado una función que permite deshacer esos cambios.
+
+
+
+La creación de herramientas que sean capaces de devolver las imágenes a su estado original son cada vez más importantes en la era de las fake news y de las fotos manipuladas. Junto con estos algoritmos de detección se podría añadir también otro que haga una búsqueda inversa de varias fotos: de la modificada, y de la que el algoritmo cree que es la original.
+De momento no han confirmado que vayan a incluir la función, pero seguro que en el futuro deciden incluirla de alguna manera en Photoshop, ya que es realmente cómodo tener una herramienta que nos permita detectar si una imagen ha sido manipulada. Este tipo de funciones suelen ser lanzadas como webs independientes, por lo que no sería raro verlo en un futuro.
+
+
+",es,"
+
+
+
+
+
+
+
+
+
+
+
+This technology tells us if a photo has been modified in Photoshop
+07 Nov 2019, 10:15 by Alberto García
+Photoshop is an endless tool for most mortals. In it we can do anything that occurs to a photo, and the touch up on faces and bodies is very common. Now, thanks to a tool that Adobe itself has published, you will know if a face has been modified in Photoshop.
+About Face: the tool that detects if a face has been modified in Photoshop
+Each year, Adobe allows its workers to carry out experiments and projects called ""Sneaks"" that they later show at the Max conference. Many of them end up even becoming part of Photoshop itself, and it would not be surprising if the function called ""About Face"" ends up reaching the final version.
+
+
+
+Modifying a face is really simple, and we can widen or stylize someone's face in seconds, as well as eliminate skin imperfections and put a ""porcelain"" face in a few minutes. More and more people are specialized in these types of modifications, and they are done so well that it is very difficult to distinguish them from real images.
+What is best given is to detect modified faces with the Liquify tool
+With About Face we can finally get out of doubt. Instead of checking the image as a whole with an algorithm, what it does is look at individual pixels. Thanks to this, it can detect parts that have been altered and can be checked against the surrounding pixels. Thanks to this, changes made with the Liquify tool can be detected without problem, where you can detect pixels or groups of them that have been stretched, tightened or interpolated. When this tool is used to, for example, modify someone's smile, what is being done is to stretch the pixels, and that is easily detectable by the tool.
+The developer of the function has not only been able to create the tool that shows the percentage of probability that the photo has been modified, but also shows a heat map of the areas that he believes have been modified. In addition, it goes one step further and has developed a function that allows you to undo those changes.
+
+
+
+The creation of tools that are capable of returning images to their original state are increasingly important in the era of fake news and manipulated photos. Together with these detection algorithms, another one that does a reverse search of several photos could be added: the modified one, and the one that the algorithm thinks is the original one.
+At the moment they have not confirmed that they will include the function, but surely in the future they decide to include it in some way in Photoshop, since it is really comfortable to have a tool that allows us to detect if an image has been manipulated. These types of functions are usually launched as independent websites, so it would not be unusual to see it in the future.
+
+
+"

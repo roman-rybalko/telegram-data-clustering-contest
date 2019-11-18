@@ -1,0 +1,108 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Soft microbots programmed by nanomagnets
+Arrays of nanoscale magnets have been constructed to form the magnetized panels of microscopic robots — thus allowing magnetic fields to be used to control the robots’ shape and movement.
+06 Nov 2019 by Xuanhe Zhao & Yoonho Kim
+In science-fiction films, robots are often depicted as human-sized or larger machines made of rigid materials. However, robots made of soft materials or with flexible structures, and that can be much smaller than the human body, have attracted great interest in the past few years because they have the potential to interact with humans more safely than can rigid machines. Indeed, sufficiently small soft robots could even be used for biomedical applications in the human body. Various options are available to power these robots, but magnetic fields offer a safe and effective means of wireless operation in confined spaces in the body. Writing in Nature, Cui et al. [1] report a key step towards the fabrication of micrometre-scale robots that, in a programmable manner, can quickly morph into different shapes in applied magnetic fields.
+The ability of minerals known as lodestones to align with Earth’s magnetic field was first reported in the ancient Chinese manuscripts Gui Gu Zi and Han Fei Zi, and was later used in early magnetic compasses [2]. A similar principle has been used in the past few years in magnetic soft robots [3] [–] [10], in which magnets of varying sizes (nanometres to millimetres) are integrated into flexible structures or soft materials. The tendency of the magnets to orient in externally applied magnetic fields provides a way of quickly moving or changing the shape of these untethered robots remotely. This actuation mechanism allows much flexibility in the design of the robots’ structures, magnetization patterns and strengths, and in when and where magnetic fields are applied to control the robots. In addition, because the forces and torques exerted on magnets by external magnetic fields can be accurately calculated, models have been developed to quantitatively describe the actuation of specific robot designs [11].
+Magnetic soft robots have been developed for various uses, especially in biomedical applications in which they interact closely with the human body. For example, self-folding ‘origami’ robots have been reported that can crawl through the gut, patch wounds and dislodge swallowed objects [4]; and capsule-shaped robots have been made that roll along the inner surface of the stomach and can perform biopsies and deliver medicine [3]. Magnetically steerable robotic catheters have also been developed, which can perform minimally invasive surgery on the heart or inspect lung airways [5] [,] [7]. And much thinner, thread-like robots have been made that could potentially navigate the brain’s blood vessels to treat strokes or aneurysms [10]. These robots range in size from hundreds of micrometres to a few centimetres in diameter.
+Further miniaturization of magnetic soft robots could enable new applications, such as performing operations in the smallest blood vessels and manipulating single cells, but the fabrication of such tiny machines poses a considerable challenge. Existing methods for the construction of small magnetic soft robots have included the direct assembly of magnetic components [3] [–] [5] [,] [7], the magnetization of particle-loaded polymer sheets [6], and the printing of soft composite materials that contain aligned magnetic particles [9] [,] [10]. Cui and colleagues now push the technological boundaries further, by using a technique called electron-beam lithography to make magnetically reconfigurable robots at scales of just a few micrometres. More specifically, this technique enables them to prepare arrays of nanoscale cobalt magnets in panels on a thin, flexible substrate of silicon nitride (Si3N4).
+The authors’ cobalt nanomagnets can retain their magnetism after exposure to an external magnetic field. This behaviour is called hysteresis, and results, in part, from the nanomagnets’ shape. The authors could therefore tune the nanomagnets’ magnetic properties and hysteretic behaviour so that thinner nanomagnets were harder to magnetize than thicker ones; in other words, stronger magnetic fields were required to magnetize thinner nanomagnets. This, in turn, meant that it was easier to re-magnetize thicker magnets — to ‘over-write’ the strength and direction of their magnetization — using relatively weak fields.
+Cui and colleagues could therefore selectively tune the magnetization of the nanomagnets so that an actuating magnetic field (much weaker than the fields that initially magnetized them) caused different panels to fold in different ways. The resulting multi-panelled components were thus ‘programmed’ to morph into specific configurations in an actuating magnetic field (Fig. 1). These components could, in turn, be assembled to produce complex shapes, such as letters, and even to make a microscopic ‘bird’ that produces motions such as turning, flapping and slipping across a surface.
+
+
+Figure 1 | Magnetic soft microbots morph on cue. a, Cui et al. [1] have fabricated microscopic components consisting of magnetized panels connected by flexible hinges. When an external out-of-plane magnetic field is applied, the panels move in a direction that depends on the panels’ direction of magnetization (red arrows) and on the direction of the applied field. For example, this two-panel system bends at the hinge. b, Robots assembled from panels that have different magnetization directions can thus be made to undergo complex movements when a sequence of magnetic fields is applied, such as this bird producing flapping movements.
+
+Much work must still be done to achieve the full potential of magnetic soft robots for biomedical applications across various length scales. They must be designed using quantitative models to optimize their performance for specific tasks in relatively weak magnetic fields — that is, to work out which reconfigurations are needed, the sizes of the forces that the robot must exert on its environment, and the speeds at which reconfigurations should occur and with which the forces should be applied. Advanced fabrication platforms, such as the one used by Cui et al., will be crucial for implementing future designs.
+Methods for the real-time imaging and localization of robots deep in the human body are also needed, particularly in tight spaces, and must not interfere with the magnetic-actuation mechanisms. Artificial intelligence might be further developed to assist image analysis and robot control. Lastly, methods are needed for the safe retrieval or degradation of robots once they have performed their tasks. Degradation without toxicity or other adverse effects is particularly desirable.
+Magnetic soft robots are also being extensively studied for applications beyond biomedicine [8], such as in flexible electronics, reconfigurable surfaces and active metamaterials (engineered materials consisting of subunits that take in energy locally, and then translate it into movement that can produce large-scale dynamic motion). A parallel set of platforms for the design, fabrication, imaging and control of magnetic soft robots across various length scales are therefore under development. That work, together with developments such as those of Cui and colleagues, is laying the foundation for this nascent field.
+Nature 575, 58-59 (2019)
+doi: 10.1038/d41586-019-03363-0
+References
+1. Cui, J. et al. Nature 575, 164–168 (2019).
+2. du Trémolet de Lacheisserie, É. in Magnetism: Fundamentals (eds du Trémolet de Lacheisserie, É., Gignoux, D. & Schlenker, M.) 3–6 (Springer, 2005).
+3. Yim, S. & Sitti, M. IEEE Trans. Robot. 28, 183–194 (2012).
+4. Miyashita, S. et al. 2016 IEEE Int. Conf. Robot. Automat. 909–916 (IEEE, 2016).
+5. Edelmann, J., Petruska, A. J. & Nelson, B. J. J. Med. Robot. Res. 3, 1850002 (2018).
+6. Hu, W., Lum, G. Z., Mastrangeli, M. & Sitti, M. Nature 554, 81–85 (2018).
+7. Jeon, S. et al. Soft Robot. 6, 54–68 (2019).
+8. Kim, Y., Yuk, H., Zhao, R., Chester, S. A. & Zhao, X. Nature 558, 274–279 (2018).
+9. Xu, T., Zhang, J., Salehizadeh, M., Onaizah, O. & Diller, E. Sci. Robot. 4, eaav4494 (2019).
+10. Kim, Y., Parada, G. A., Liu, S. & Zhao, X. Sci. Robot. 4, eaax7329 (2019).
+11. Zhao, R., Kim, Y., Chester, S. A., Sharma, P. & Zhao, X. J. Mech. Phys. Solids 124, 244–263 (2019).
+
+
+
+
+
+
+
+
+
+
+
+",en,"
+
+
+
+
+
+
+
+
+
+
+
+Soft microbots programmed by nanomagnets
+Arrays of nanoscale magnets have been constructed to form the magnetized panels of microscopic robots — thus allowing magnetic fields to be used to control the robots’ shape and movement.
+06 Nov 2019 by Xuanhe Zhao & Yoonho Kim
+In science-fiction films, robots are often depicted as human-sized or larger machines made of rigid materials. However, robots made of soft materials or with flexible structures, and that can be much smaller than the human body, have attracted great interest in the past few years because they have the potential to interact with humans more safely than can rigid machines. Indeed, sufficiently small soft robots could even be used for biomedical applications in the human body. Various options are available to power these robots, but magnetic fields offer a safe and effective means of wireless operation in confined spaces in the body. Writing in Nature, Cui et al. [1] report a key step towards the fabrication of micrometre-scale robots that, in a programmable manner, can quickly morph into different shapes in applied magnetic fields.
+The ability of minerals known as lodestones to align with Earth’s magnetic field was first reported in the ancient Chinese manuscripts Gui Gu Zi and Han Fei Zi, and was later used in early magnetic compasses [2]. A similar principle has been used in the past few years in magnetic soft robots [3] [–] [10], in which magnets of varying sizes (nanometres to millimetres) are integrated into flexible structures or soft materials. The tendency of the magnets to orient in externally applied magnetic fields provides a way of quickly moving or changing the shape of these untethered robots remotely. This actuation mechanism allows much flexibility in the design of the robots’ structures, magnetization patterns and strengths, and in when and where magnetic fields are applied to control the robots. In addition, because the forces and torques exerted on magnets by external magnetic fields can be accurately calculated, models have been developed to quantitatively describe the actuation of specific robot designs [11].
+Magnetic soft robots have been developed for various uses, especially in biomedical applications in which they interact closely with the human body. For example, self-folding ‘origami’ robots have been reported that can crawl through the gut, patch wounds and dislodge swallowed objects [4]; and capsule-shaped robots have been made that roll along the inner surface of the stomach and can perform biopsies and deliver medicine [3]. Magnetically steerable robotic catheters have also been developed, which can perform minimally invasive surgery on the heart or inspect lung airways [5] [,] [7]. And much thinner, thread-like robots have been made that could potentially navigate the brain’s blood vessels to treat strokes or aneurysms [10]. These robots range in size from hundreds of micrometres to a few centimetres in diameter.
+Further miniaturization of magnetic soft robots could enable new applications, such as performing operations in the smallest blood vessels and manipulating single cells, but the fabrication of such tiny machines poses a considerable challenge. Existing methods for the construction of small magnetic soft robots have included the direct assembly of magnetic components [3] [–] [5] [,] [7], the magnetization of particle-loaded polymer sheets [6], and the printing of soft composite materials that contain aligned magnetic particles [9] [,] [10]. Cui and colleagues now push the technological boundaries further, by using a technique called electron-beam lithography to make magnetically reconfigurable robots at scales of just a few micrometres. More specifically, this technique enables them to prepare arrays of nanoscale cobalt magnets in panels on a thin, flexible substrate of silicon nitride (Si3N4).
+The authors’ cobalt nanomagnets can retain their magnetism after exposure to an external magnetic field. This behaviour is called hysteresis, and results, in part, from the nanomagnets’ shape. The authors could therefore tune the nanomagnets’ magnetic properties and hysteretic behaviour so that thinner nanomagnets were harder to magnetize than thicker ones; in other words, stronger magnetic fields were required to magnetize thinner nanomagnets. This, in turn, meant that it was easier to re-magnetize thicker magnets — to ‘over-write’ the strength and direction of their magnetization — using relatively weak fields.
+Cui and colleagues could therefore selectively tune the magnetization of the nanomagnets so that an actuating magnetic field (much weaker than the fields that initially magnetized them) caused different panels to fold in different ways. The resulting multi-panelled components were thus ‘programmed’ to morph into specific configurations in an actuating magnetic field (Fig. 1). These components could, in turn, be assembled to produce complex shapes, such as letters, and even to make a microscopic ‘bird’ that produces motions such as turning, flapping and slipping across a surface.
+
+
+Figure 1 | Magnetic soft microbots morph on cue. a, Cui et al. [1] have fabricated microscopic components consisting of magnetized panels connected by flexible hinges. When an external out-of-plane magnetic field is applied, the panels move in a direction that depends on the panels’ direction of magnetization (red arrows) and on the direction of the applied field. For example, this two-panel system bends at the hinge. b, Robots assembled from panels that have different magnetization directions can thus be made to undergo complex movements when a sequence of magnetic fields is applied, such as this bird producing flapping movements.
+
+Much work must still be done to achieve the full potential of magnetic soft robots for biomedical applications across various length scales. They must be designed using quantitative models to optimize their performance for specific tasks in relatively weak magnetic fields — that is, to work out which reconfigurations are needed, the sizes of the forces that the robot must exert on its environment, and the speeds at which reconfigurations should occur and with which the forces should be applied. Advanced fabrication platforms, such as the one used by Cui et al., will be crucial for implementing future designs.
+Methods for the real-time imaging and localization of robots deep in the human body are also needed, particularly in tight spaces, and must not interfere with the magnetic-actuation mechanisms. Artificial intelligence might be further developed to assist image analysis and robot control. Lastly, methods are needed for the safe retrieval or degradation of robots once they have performed their tasks. Degradation without toxicity or other adverse effects is particularly desirable.
+Magnetic soft robots are also being extensively studied for applications beyond biomedicine [8], such as in flexible electronics, reconfigurable surfaces and active metamaterials (engineered materials consisting of subunits that take in energy locally, and then translate it into movement that can produce large-scale dynamic motion). A parallel set of platforms for the design, fabrication, imaging and control of magnetic soft robots across various length scales are therefore under development. That work, together with developments such as those of Cui and colleagues, is laying the foundation for this nascent field.
+Nature 575, 58-59 (2019)
+doi: 10.1038/d41586-019-03363-0
+References
+1. Cui, J. et al. Nature 575, 164–168 (2019).
+2. du Trémolet de Lacheisserie, É. in Magnetism: Fundamentals (eds du Trémolet de Lacheisserie, É., Gignoux, D. & Schlenker, M.) 3–6 (Springer, 2005).
+3. Yim, S. & Sitti, M. IEEE Trans. Robot. 28, 183–194 (2012).
+4. Miyashita, S. et al. 2016 IEEE Int. Conf. Robot. Automat. 909–916 (IEEE, 2016).
+5. Edelmann, J., Petruska, A. J. & Nelson, B. J. J. Med. Robot. Res. 3, 1850002 (2018).
+6. Hu, W., Lum, G. Z., Mastrangeli, M. & Sitti, M. Nature 554, 81–85 (2018).
+7. Jeon, S. et al. Soft Robot. 6, 54–68 (2019).
+8. Kim, Y., Yuk, H., Zhao, R., Chester, S. A. & Zhao, X. Nature 558, 274–279 (2018).
+9. Xu, T., Zhang, J., Salehizadeh, M., Onaizah, O. & Diller, E. Sci. Robot. 4, eaav4494 (2019).
+10. Kim, Y., Parada, G. A., Liu, S. & Zhao, X. Sci. Robot. 4, eaax7329 (2019).
+11. Zhao, R., Kim, Y., Chester, S. A., Sharma, P. & Zhao, X. J. Mech. Phys. Solids 124, 244–263 (2019).
+
+
+
+
+
+
+
+
+
+
+
+"

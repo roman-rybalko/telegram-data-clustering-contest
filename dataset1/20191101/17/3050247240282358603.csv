@@ -1,0 +1,52 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+News
+Telegram’s Grams Wallet Is Available on GitHub in Test Mode
+01 Nov 2019, 17:14 by Helen Partz
+Telegram’s crypto wallet Grams Wallet is now available for MacOS, Windows and Ubuntu in testing mode, with the source code published on GitHub.
+Grams Wallet users can get test tokens
+Users can now download the test wallet client from its website, create an address and receive private keys as well as request and test Gram tokens in the app via a special Telegram bot called TestTonBot.
+Specifically, TestTonBot invites users to test out the service by requesting 5 to 20 tokens to the generated crypto address on the app. After users request a specific amount of tokens, the bot notifies them about the start of the request execution before sending a separate message that test Grams were credited to the wallet.
+Transactions are tracked on the TON testnet
+The test transactions are visible on the Telegram Open Network (TON) testnet explorer with details such as transaction time and amount as well as the TestTonBot’s wallet address (sender) and the last recorded transaction.
+The TON testnet explorer and node software were released on Sept. 6, 2019, in preparation for the Telegram’s subsequently aborted plans to launch the Gram digital currency in late October. The launch was delayed when the United States Securities and Exchange Commission deemed Telegram’s $1.7 billion Grams token offering illegal on Oct. 11.
+The launch of the test version of the Grams Wallet follows a report on Oct. 19 that the District Court for the Southern District of New York postponed a hearing on the SEC injunction filing against the TON. The court moved the hearing to Feb. 18–19, 2020.
+
+
+",en,"
+
+
+
+
+
+
+
+
+
+
+
+News
+Telegram’s Grams Wallet Is Available on GitHub in Test Mode
+01 Nov 2019, 17:14 by Helen Partz
+Telegram’s crypto wallet Grams Wallet is now available for MacOS, Windows and Ubuntu in testing mode, with the source code published on GitHub.
+Grams Wallet users can get test tokens
+Users can now download the test wallet client from its website, create an address and receive private keys as well as request and test Gram tokens in the app via a special Telegram bot called TestTonBot.
+Specifically, TestTonBot invites users to test out the service by requesting 5 to 20 tokens to the generated crypto address on the app. After users request a specific amount of tokens, the bot notifies them about the start of the request execution before sending a separate message that test Grams were credited to the wallet.
+Transactions are tracked on the TON testnet
+The test transactions are visible on the Telegram Open Network (TON) testnet explorer with details such as transaction time and amount as well as the TestTonBot’s wallet address (sender) and the last recorded transaction.
+The TON testnet explorer and node software were released on Sept. 6, 2019, in preparation for the Telegram’s subsequently aborted plans to launch the Gram digital currency in late October. The launch was delayed when the United States Securities and Exchange Commission deemed Telegram’s $1.7 billion Grams token offering illegal on Oct. 11.
+The launch of the test version of the Grams Wallet follows a report on Oct. 19 that the District Court for the Southern District of New York postponed a hearing on the SEC injunction filing against the TON. The court moved the hearing to Feb. 18–19, 2020.
+
+
+"

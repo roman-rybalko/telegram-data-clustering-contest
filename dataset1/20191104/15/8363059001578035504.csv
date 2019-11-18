@@ -1,0 +1,48 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+The Pixel 4 Seemingly Has USB Video Output but It's Been Disabled in the Source Code
+04 Nov 2019, 15:30 by Shabana Arif
+After some good, old-fashioned rooting around, it seems that Google disabled the Pixel 4's DisplayPort Alt Mode over USB in the kernel source code.
+XDA-Developers editor-in-chief, Mishaal Rahman, shared the discovery on Twitter, pointing out that there doesn't seem to be a reason as to why this is the case. The Qualcomm chips offer native support for DisplayPort Alt Mode, while Rahman adds that it's not even as if licensing fees could be the culprit.
+
+
+
+Of course, this has some people speculating that this is all part of Google's grand conspiracy to force users to shell out for Chromecast, and without an official statement on the issue, this theory is only going to gain momentum. There may be hardware restraints, but until Google pipes up, we'll never know.  There is some measure of disappointment given Android 10's desktop mode which isn't supported on the device.
+The Pixel 4 and 4XL launched just a couple of weeks ago, and you can pick them up on EE, O2, Three, and Vodafone, and you can check out the best deals available right here. [Android Police]
+
+
+",en,"
+
+
+
+
+
+
+
+
+
+
+
+The Pixel 4 Seemingly Has USB Video Output but It's Been Disabled in the Source Code
+04 Nov 2019, 15:30 by Shabana Arif
+After some good, old-fashioned rooting around, it seems that Google disabled the Pixel 4's DisplayPort Alt Mode over USB in the kernel source code.
+XDA-Developers editor-in-chief, Mishaal Rahman, shared the discovery on Twitter, pointing out that there doesn't seem to be a reason as to why this is the case. The Qualcomm chips offer native support for DisplayPort Alt Mode, while Rahman adds that it's not even as if licensing fees could be the culprit.
+
+
+
+Of course, this has some people speculating that this is all part of Google's grand conspiracy to force users to shell out for Chromecast, and without an official statement on the issue, this theory is only going to gain momentum. There may be hardware restraints, but until Google pipes up, we'll never know.  There is some measure of disappointment given Android 10's desktop mode which isn't supported on the device.
+The Pixel 4 and 4XL launched just a couple of weeks ago, and you can pick them up on EE, O2, Three, and Vodafone, and you can check out the best deals available right here. [Android Police]
+
+
+"

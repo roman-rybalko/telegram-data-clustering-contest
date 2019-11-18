@@ -1,0 +1,52 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+
+Xhelper, un malware Android capable de se réinstaller seul
+
+
+04 Nov 2019, 10:07
+
+Symantec et Malwarebytes ont averti récemment d’une menace grandissante, en tout cas en Inde, aux États-Unis et en Russie.
+Nommé Xhelper, le malware a des origines floues. Symantec pense à des applications infectées depuis des sources tierces d’installation, MalwareBytes affirme qu’il est distribué par des sites de jeux attirant l’utilisateur vers l’action qui déclenchera la récupération.
+La charge virale s’installe comme service en tâche de fond et se met aux ordres d’un serveur C&C (command and control). De nombreux autres outils peuvent alors être télécharger pour s’adapter au contexte ou aux envies des responsables.
+Selon Symantec, environ 45 000 appareils ont déjà été infectés. Le malware ne fait pour l’instant pas trop de dégâts : il se contente d’afficher de la publicité. Mais au vu de son fonctionnement (son retrait complet semble impossible), ses auteurs pourraient être tentés par des actions plus agressives, comme le vol de données personnelles.
+Les recommandations des sociétés de sécurité sont finalement toujours les mêmes : toujours télécharger les applications depuis des sources sûres, comme le Play Store de Google (même si ce n’est jamais une garantie absolue), et être très prudent quand on visite un site vers lequel on a été redirigé.
+
+
+",fr,"
+
+
+
+
+
+
+
+
+
+
+
+
+Xhelper, an Android malware that can reinstall itself
+
+
+04 Nov 2019, 10:07
+
+Symantec and Malwarebytes have recently warned of a growing threat, at least in India, the United States, and Russia.
+Named Xhelper, the malware has fuzzy origins. Symantec thinks of infected applications from third-party installation sources, MalwareBytes claims that it is distributed by game sites that attract the user to the action that will trigger the recovery.
+The viral load installs itself as a service in the background and puts itself at the command of a C & C (command and control) server. Many other tools can then be downloaded to suit the context or the desires of those in charge.
+According to Symantec, approximately 45,000 devices have already been infected. The malware does not do too much damage for now: it just displays advertising. But in view of its operation (complete withdrawal seems impossible), its authors could be tempted by more aggressive actions, such as theft of personal data.
+The recommendations of security companies are ultimately always the same: always download applications from safe sources, such as the Google Play Store (although this is never an absolute guarantee), and be very careful when visiting a site to which one has been redirected.
+
+
+"

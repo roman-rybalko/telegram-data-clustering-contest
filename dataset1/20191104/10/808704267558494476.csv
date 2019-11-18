@@ -1,0 +1,60 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+
+elementary OS prend maintenant en charge Flatpak
+
+
+04 Nov 2019, 10:07
+
+La distribution Linux, centrée sur la facilité d’utilisation, supporte ainsi les paquets Flatpak, via l’application Sideload, en cours de finition. Les utilisateurs intéressés peuvent l’installer via la commande : 
+sudo apt install io.elementary.sideload
+Une fois en place, ils pourront alors se rendre depuis n’importe quel navigateur sur Flathub et récupérer les applications qui les intéressent.
+Les développeurs notent qu’il reste préférable de récupérer des applications depuis AppCenter, puisqu’elles ont été adaptées spécifiquement à elementary OS. Mais ils comprennent que les besoins peuvent aller au-delà, Flatpak leur semblant de fait une bonne approche.
+
+
+Télécharger elementary OS
+
+
+
+
+",fr,"
+
+
+
+
+
+
+
+
+
+
+
+
+elementary OS now supports Flatpak
+
+
+04 Nov 2019, 10:07
+
+The Linux distribution, centered on ease of use, supports Flatpak packages via the Sideload application, which is currently being finished. Interested users can install it via the command:
+sudo apt install io.elementary.sideload
+Once in place, they can then go from any browser on Flathub and retrieve the applications that interest them.
+The developers note that it is still better to recover applications from AppCenter, since they have been specifically adapted to elementary OS. But they understand that the needs can go beyond, Flatpak seems to them a good approach.
+
+
+Download elementary OS
+
+
+
+
+"

@@ -1,0 +1,60 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Between 200,000 and 240,000 Magento online stores will reach EOL next year
+06 Nov 2019, 22:53 by Catalin Cimpanu
+
+Many online stores will need to upgrade their backends in the coming nine months if they want to avoid getting hacked.
+
+
+
+
+A large chunk of today's e-commerce ecosystem will run on unsupported software starting June 2020, next year, when the Magento 1.x branch is scheduled to reach End-of-Life (EOL) and won't receive security updates anymore.The number of impacted online stores is currently estimated to be between 200,000 and 240,000, according to different statistics sources.The owners of these online shops will need to migrate to the latest Magento version, the 2.x branch, where they can still receive security patches on a regular basis.Store owners who fail to do so will face the risk of having sites hacked and infected with code that steals customers' payment details. This is a pretty plausible scenario on the backdrop of an increase in the number of web skimming (Magecart) attacks.
+Most Magento stores today are running 1.x, not 2.x
+Magento is, by far, today's most popular technology for hosting an online store. It launched in 2007 and quickly rose through the ranks due to superior features and customizability options.
+In 2015, Magento 2.0 was released, an upgrade that was a total re-write and architectural re-design from the previous version.Due to the large amount of breaking changes between the two versions, many store owners did not upgrade to the newer 2.x branch, choosing to stay on the older release and avoid breakage or prolonged downtime -- which is a pretty common practice in the webdev community.
+This is why, even today, usage of the 1.x branch dwarfs the 2.x version, despite the newer release being both technically and feature-wise superior to the older one.Statistics gathered by HostingTribunal in February 2019 found over 250,00 online stores using Magento, of which only 11,000 were believed to be running the newer 2.x release.When Adobe announced the end of Magento 1.x support last year in September, it put the number of existing Magento 2.x shops at around 30,000, with 8,000 new stores added each quarter.Web statistics site BuiltWith currently puts the total number of Magento installs (including cloud-hosted versions) at around 270,000.All these stats, while they don't provide the exact number of Magento 1.x sites, they do show that the vast majority of Magento stores are not running the latest branch, and are still running soon-to-be outdated software.
+Magecart, Magecart, Magecart
+""It's no secret that a CMS without support will develop vulnerabilities,"" Art Martori, a security researcher for GoDaddy's Sucuri website security division, said today in a blog post.""Eventually, these lead to a compromised website - which cripples any ecommerce business,"" he said.The biggest danger to these sites comes from so-called Magecart gangs -- groups of online hackers who use vulnerabilities in online stores to take over shops and plant code that records payment card details, which they later sell to other cybercrime groups.Since their beginning back in 2015, Magecart (web skimming, or e-skimming) attacks have primarily focused on Magento stores, due to the software's popularity.While Adobe's cloud-based Magento-hosting platform is usually kept up to date with the latest patches, the self-hosted Magento installs are not, and that's were the bulk of the 1.x versions are currently installed.All these sites pose an attractive attack surface as they are, today. Once Magento 1.x goes EOL in June 2020, they'll be even more attractive to hackers, who will focus more efforts in finding bugs in the 1.x branch, knowing the Magento team won't be around to fix them.If Magento store owners hope Adobe will push the EOL back with one or two more years, they're not going to get their wishes. Adobe initially wanted to EOL Magento 1.x on November 17, 2018. Store owners are already living on Adobe's borrowed time as they are.
+
+
+",en,"
+
+
+
+
+
+
+
+
+
+
+
+Between 200,000 and 240,000 Magento online stores will reach EOL next year
+06 Nov 2019, 22:53 by Catalin Cimpanu
+
+Many online stores will need to upgrade their backends in the coming nine months if they want to avoid getting hacked.
+
+
+
+
+A large chunk of today's e-commerce ecosystem will run on unsupported software starting June 2020, next year, when the Magento 1.x branch is scheduled to reach End-of-Life (EOL) and won't receive security updates anymore.The number of impacted online stores is currently estimated to be between 200,000 and 240,000, according to different statistics sources.The owners of these online shops will need to migrate to the latest Magento version, the 2.x branch, where they can still receive security patches on a regular basis.Store owners who fail to do so will face the risk of having sites hacked and infected with code that steals customers' payment details. This is a pretty plausible scenario on the backdrop of an increase in the number of web skimming (Magecart) attacks.
+Most Magento stores today are running 1.x, not 2.x
+Magento is, by far, today's most popular technology for hosting an online store. It launched in 2007 and quickly rose through the ranks due to superior features and customizability options.
+In 2015, Magento 2.0 was released, an upgrade that was a total re-write and architectural re-design from the previous version.Due to the large amount of breaking changes between the two versions, many store owners did not upgrade to the newer 2.x branch, choosing to stay on the older release and avoid breakage or prolonged downtime -- which is a pretty common practice in the webdev community.
+This is why, even today, usage of the 1.x branch dwarfs the 2.x version, despite the newer release being both technically and feature-wise superior to the older one.Statistics gathered by HostingTribunal in February 2019 found over 250,00 online stores using Magento, of which only 11,000 were believed to be running the newer 2.x release.When Adobe announced the end of Magento 1.x support last year in September, it put the number of existing Magento 2.x shops at around 30,000, with 8,000 new stores added each quarter.Web statistics site BuiltWith currently puts the total number of Magento installs (including cloud-hosted versions) at around 270,000.All these stats, while they don't provide the exact number of Magento 1.x sites, they do show that the vast majority of Magento stores are not running the latest branch, and are still running soon-to-be outdated software.
+Magecart, Magecart, Magecart
+""It's no secret that a CMS without support will develop vulnerabilities,"" Art Martori, a security researcher for GoDaddy's Sucuri website security division, said today in a blog post.""Eventually, these lead to a compromised website - which cripples any ecommerce business,"" he said.The biggest danger to these sites comes from so-called Magecart gangs -- groups of online hackers who use vulnerabilities in online stores to take over shops and plant code that records payment card details, which they later sell to other cybercrime groups.Since their beginning back in 2015, Magecart (web skimming, or e-skimming) attacks have primarily focused on Magento stores, due to the software's popularity.While Adobe's cloud-based Magento-hosting platform is usually kept up to date with the latest patches, the self-hosted Magento installs are not, and that's were the bulk of the 1.x versions are currently installed.All these sites pose an attractive attack surface as they are, today. Once Magento 1.x goes EOL in June 2020, they'll be even more attractive to hackers, who will focus more efforts in finding bugs in the 1.x branch, knowing the Magento team won't be around to fix them.If Magento store owners hope Adobe will push the EOL back with one or two more years, they're not going to get their wishes. Adobe initially wanted to EOL Magento 1.x on November 17, 2018. Store owners are already living on Adobe's borrowed time as they are.
+
+
+"

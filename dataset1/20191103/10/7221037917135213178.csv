@@ -1,0 +1,62 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Milyarlarca kullanıcıyı ilgilendiriyor! Google Chrome’da kritik açık…
+Google Chrome dünyanın en popüler web tarayıcısı. Windows, macOS ve Linux'ün de içinde bulunduğu bir çok işletim sistemi tarafından kullanılıyor. Google Chrome şimdi ise keşfedilen kritik açık ile gündemde.
+
+03 Nov 2019, 10:34
+
+Kaspersky bünyesinde çalışan güvenlik araştırmacıları olan Anton Ivanov ve Alexey Kulaev tarafından tespit edilen iki güvenlik açığı nedeniyle, işletim sisteminde komut çalıştırmak mümkün hale gelebiliyor.
+İlk açık (CVE-2019-13720) Chrome'un ses bileşenleri tarafında, diğer açık ise (CVE-2019-13721) Chrome'un kullandığı PDFium kütüphanesinde tespit edildi.
+MİLYARLARI ETKİLİYOR
+Shiftdelete’de yer alan habere göre;tespit edilen iki güvenlik açığı, Windows, macOS ve Linux kullanıcılarının tümünü etkiliyor. Bu da potansiyel olarak bakıldığında, milyarlarca bilgisayarın tehlike altında olduğu anlamına geliyor.
+2015 yılında PDFium kütüphanesinde benzer bir güvenlik açığı, yine Kaspersky Güvenlik Takımı tarafından tespit edilerek Google‘a bildirilmişti.
+Keşfedilen iki açık da RAM üzerinde yazılımsal modifikasyonlara neden olarak işletim sistemi üzerinde yüksek yetkiler ile komut çalıştırılmasına neden oluyordu.
+AÇIK UZUN SÜREDİR KULLANILIYORDU
+Kaspersky‘ın açıkladığı rapora göre bu iki açık Güney Kore'nin en popüler haber sitelerinden birisini hackleyen hackerlar tarafından uzun süredir kullanılıyordu.
+HIZLI BİR YAMA İLE DÜZELTİLDİ
+Kaspersky Güvenlik Takımı'nın durumu Google'a raporlamasının ardından gelen hızlı bir yama ile iki kritik açık kapatıldı.
+Chrome 78.0.3904.87 versiyonu ve daha güncel versiyonlar bu kritik iki güvenlik açığına karşı yamalanmış durumda. Eğer Chrome kullanıcısı iseniz, tarayıcınızın versiyonunu kontrol etmenizi öneriyoruz.
+
+
+",tr,"
+
+
+
+
+
+
+
+
+
+
+
+Interested in billions of users! Critical vulnerability in Google Chrome…
+Google Chrome is the most popular web browser in the world. It is used by many operating systems, including Windows, macOS and Linux. Google Chrome is now on the agenda with the critical deficit discovered.
+
+03 Nov 2019, 10:34
+
+Due to two vulnerabilities identified by Kaspersky's security researchers Anton Ivanov and Alexey Kulaev, it is possible to run commands on the operating system.
+The first vulnerability (CVE-2019-13720) was detected by Chrome's audio components, and the other vulnerability (CVE-2019-13721) was detected in the PDFium library used by Chrome.
+BILLING THE BILLIONS
+According to the news in Shiftdelete, two identified vulnerabilities affect all Windows, macOS and Linux users. This means that, potentially, billions of computers are in danger.
+In 2015, a similar vulnerability in the PDFium library was identified by Kaspersky Security Team and reported to Google.
+Both discovered vulnerabilities caused software modifications to the RAM, leading to high command execution on the operating system.
+OPEN LONG USE
+According to the report released by Kaspersky, these two vulnerabilities have been in use for a long time by hackers hacking one of South Korea's most popular news sites.
+FIXED WITH A QUICK PATCH
+Two critical vulnerabilities were closed with a quick patch following Kaspersky Security Team reporting the status to Google.
+Chrome 78.0.3904.87 and more up-to-date versions are patched against these two critical vulnerabilities. If you are a Chrome user, we recommend that you check your browser version.
+
+
+"

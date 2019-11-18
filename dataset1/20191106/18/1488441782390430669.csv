@@ -1,0 +1,54 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+I File Manager di Android dovranno chiedere il permesso a Google per esistere (foto e video)
+06 Nov 2019, 18:37 by Matteo Bottin
+Ricordate la storia dei vincoli a SMS e chiamate introdotti da Google lo scorso anno e applicati alle app pubblicate sul Play Store? Una storia simile si è ripetuta con la funzionalità Scoped Storage introdotta con la Beta 2 di Android 10. Nella pratica, gli sviluppatori non potevano aver accesso a tutta la memoria interna del telefono ma solamente a quella relativa alla propria app.
+Per accedere ad altre parti della memoria, l’app deve richiedere il permesso READ_EXTERNAL_STORAGE delle API MediaStore, ma questo permesso si riferisce solamente a foto, video e audio posizionati in località specifiche definite all’interno dell’API.
+Va da sé che le app file manager, per come stanno le cose, non possono funzionare. E quindi, che soluzioni abbiamo? Una delle opzioni disponibili è l’utilizzo delle API Storage Access Framework (SAF). Purtroppo, però, queste API forniscono prestazioni scadenti, hanno una pessima documentazione e sono poco affidabili.
+Un’altra opzione viene fornita da Google, e arriverà con Android 11 (ricordiamo che gli sviluppatori hanno tempo fino al 1° novembre 2020 per preparare le proprie app a gestire Android 10). Tuttavia, si tratta di una opzione semplicemente assurda, ma che è l’unica al momento disponibile.
+Come presentato nel video che trovate a fine articolo (minuto 9:01), accessi speciali verranno forniti da Google alle app che proveranno di avere “chiaro bisogno” di accedere alla memoria interna del dispositivo. Come è possibile ricevere questi accessi? Semplice: compilando un modulo di dichiarazione e inviandolo a Google.
+Insomma, a partire dal prossimo anno i file manager presenti nel Play Store potrebbero cambiare completamente. Sì, perché uno dei vincoli presentati da Google è la impossibilità di accedere a cartelle di app esterne. Insomma, dovrete dire addio alle mod.
+
+
+
+Via: XDA Developers
+
+
+",it,"
+
+
+
+
+
+
+
+
+
+
+
+Android File Managers will have to ask Google for permission to exist (photos and videos)
+06 Nov 2019, 18:37 by Matteo Bottin
+Remember the history of constraints on text messages and calls introduced by Google last year and applied to the apps published on the Play Store? A similar story was repeated with the Scoped Storage feature introduced with the Android 2 Beta 2. In practice, the developers could not have access to all the internal memory of the phone but only to that relative to their app.
+To access other parts of the memory, the app must request the READ_EXTERNAL_STORAGE permission of the MediaStore API, but this permission refers only to photos, videos and audio positioned in specific locations defined within the API.
+It goes without saying that file manager apps, as things stand, cannot work. So what solutions do we have? One of the options available is the use of the API Storage Access Framework (SAF). Unfortunately, however, these APIs provide poor performance, have bad documentation and are not very reliable.
+Another option is provided by Google, and will come with Android 11 (remember that the developers have until November 1, 2020 to prepare their apps to manage Android 10). However, this is simply an absurd option, but that is the only one currently available.
+As presented in the video you find at the end of the article (minute 9:01), special accesses will be provided by Google to the apps that will prove to have ""clear need"" to access the internal memory of the device. How can these accesses be received? Simple: filling in a declaration form and sending it to Google.
+In short, starting next year the file managers in the Play Store could change completely. Yes, because one of the constraints presented by Google is the impossibility of accessing external app folders. In short, you will have to say goodbye to the mod.
+
+
+
+Via: XDA Developers
+
+
+"

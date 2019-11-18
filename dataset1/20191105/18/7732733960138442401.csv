@@ -1,0 +1,82 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Adobe's Project Awesome Audio turns the worst audio into professional sounding recordings
+What AI sorcery is this?
+05 Nov 2019, 18:07 by Cal Jeffrey
+The bleeding edge: Adobe is set to show off a cool new Audition tool Tuesday night at its annual MAX conference. The “sneak,” as Adobe calls their experimental features, is codenamed “Project Awesome Audio.” It leverages Adobe’s Sensei AI to clean up recordings with one click.
+Editing recorded audio can be a real chore. Unwanted noise and microphone artifacts can ruin a podcast. Fortunately, a lot of that can be cleaned up with audio editing software like Adobe’s Audition. However, each problem requires a specific tool and knowledge of how to adjust the parameters to eliminate the noise. It makes the editing process complicated and time-consuming.
+Zeyu Jin, Adobe’s head of research for Audition, has developed what he calls “end-to-end audio enhancement.” Instead of using several different tools for various situations, Project Awesome Audio cleans everything up with one click. It can even remove reverb and studio echo, which is virtually impossible to expunge with traditional methods.
+The tool does this by using Sensei to extract only the speech from the recording and use it to create a new file. It is not just a script that runs a bunch of audio clean-up tools. It is a whole new technology that does not use any existing Audition functions.
+“First, we want to make everything much simpler,” Jin told Engadget, which got a sneak peek of the “sneak” before tonight’s presentation. “No need to learn which tool to use in each situation. We want to reduce degradation in one go.”
+
+
+
+Jin demonstrated an example using a file where someone had “forgotten” to switch their input settings to an external microphone, so the whole recording was captured with the laptop’s internal mic. As you would imagine, the audio was terrible, with a lot of noise and barely audible voices.
+Once it was run through the Awesome Audio routine, “the result sounded like it was recorded with a professional microphone.""
+Another scenario where the tool works wonders is in situations where a recording has to be moved to another physical area. Room acoustics and ambient noise can make it clear that a session was relocated to a different location. However, after running it through Awesome Audio, it sounds like it was recorded entirely in a professional studio. It is not perfect, basic volume adjustments still need to be made, but all the noise and artifacts are gone.
+As with all Adobe sneaks, there is no guarantee Project Awesome Audio will make it into Audition. The company often uses feedback and audience reaction to experimental features before planning to go forward with them. However, with the magic-like capabilities of the tool, it is hard to imagine audio editors not screaming for it to be added.
+For more about the technology, check out Jin and his colleagues’ research paper ""Perceptually-Motivated Environment-Specific Speech Enhancement"" published by Princeton University. You can also see it and other surprises during Adobe’s MAX live stream today at 10am PST.
+
+Image credit: MikolajS via Shutterstock
+
+
+Related Reads
+
+
+
+
+
+
+
+",en,"
+
+
+
+
+
+
+
+
+
+
+
+Adobe's Project Awesome Audio turns the worst audio into professional sounding recordings
+What AI sorcery is this?
+05 Nov 2019, 18:07 by Cal Jeffrey
+The bleeding edge: Adobe is set to show off a cool new Audition tool Tuesday night at its annual MAX conference. The “sneak,” as Adobe calls their experimental features, is codenamed “Project Awesome Audio.” It leverages Adobe’s Sensei AI to clean up recordings with one click.
+Editing recorded audio can be a real chore. Unwanted noise and microphone artifacts can ruin a podcast. Fortunately, a lot of that can be cleaned up with audio editing software like Adobe’s Audition. However, each problem requires a specific tool and knowledge of how to adjust the parameters to eliminate the noise. It makes the editing process complicated and time-consuming.
+Zeyu Jin, Adobe’s head of research for Audition, has developed what he calls “end-to-end audio enhancement.” Instead of using several different tools for various situations, Project Awesome Audio cleans everything up with one click. It can even remove reverb and studio echo, which is virtually impossible to expunge with traditional methods.
+The tool does this by using Sensei to extract only the speech from the recording and use it to create a new file. It is not just a script that runs a bunch of audio clean-up tools. It is a whole new technology that does not use any existing Audition functions.
+“First, we want to make everything much simpler,” Jin told Engadget, which got a sneak peek of the “sneak” before tonight’s presentation. “No need to learn which tool to use in each situation. We want to reduce degradation in one go.”
+
+
+
+Jin demonstrated an example using a file where someone had “forgotten” to switch their input settings to an external microphone, so the whole recording was captured with the laptop’s internal mic. As you would imagine, the audio was terrible, with a lot of noise and barely audible voices.
+Once it was run through the Awesome Audio routine, “the result sounded like it was recorded with a professional microphone.""
+Another scenario where the tool works wonders is in situations where a recording has to be moved to another physical area. Room acoustics and ambient noise can make it clear that a session was relocated to a different location. However, after running it through Awesome Audio, it sounds like it was recorded entirely in a professional studio. It is not perfect, basic volume adjustments still need to be made, but all the noise and artifacts are gone.
+As with all Adobe sneaks, there is no guarantee Project Awesome Audio will make it into Audition. The company often uses feedback and audience reaction to experimental features before planning to go forward with them. However, with the magic-like capabilities of the tool, it is hard to imagine audio editors not screaming for it to be added.
+For more about the technology, check out Jin and his colleagues’ research paper ""Perceptually-Motivated Environment-Specific Speech Enhancement"" published by Princeton University. You can also see it and other surprises during Adobe’s MAX live stream today at 10am PST.
+
+Image credit: MikolajS via Shutterstock
+
+
+Related Reads
+
+
+
+
+
+
+
+"

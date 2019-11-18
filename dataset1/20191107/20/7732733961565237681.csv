@@ -1,0 +1,66 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+New iOS 13.2.2 update with fix for annoying app closing bug just went live
+Another day, another iOS bug fix
+07 Nov 2019, 20:17 by Cal Jeffrey
+In context: Ever since its launch on September 19, it seems like iOS 13 has had one problem after another. So much so that Apple has been issuing fixes at a lightning rate. In just the first week, Apple released three patches, including a day-one fix. It has since pushed out several more updates addressing a multitude of bugs.
+Last week, we reported that since the iOS 13 upgrade, users have been complaining that the operating system closes background tasks to aggressively. Presumably, this was in an attempt to conserve battery life. However, owners were finding that it would shut down apps, sometimes even losing unsaved work.
+On Thursday, Apple rolled out a patch to address the app closing issue. A beta for iOS 13.3 is already in testing, but in the meantime, Cupertino pushed version 13.2.2 with a fix for the problem as well as others.
+   •  Fixes an issue that could cause apps to quit unexpectedly when running in the background   •  Resolves an issue where iPhone may temporarily lose cellular service after a call   •  Addresses an issue where cellular data may temporarily not be available   •  Fixes an issue that caused replies to S/MIME encrypted email messages between Exchange accounts to be unreadable   •  Addresses an issue where using Kerberos single sign-on service in Safari may present an authentication prompt   •  Resolves an issue where charging may be interrupted on YubiKey Lightning-powered accessories
+In addition to fixing the multitasking bug (it’s not a bug — it’s a feature), iOS 13.2.2 patches a glitch that caused iPhone to lose cellular connectivity temporarily after a call. There was also an issue “where mobile data may temporarily not be available” that the update addresses.
+This last bug seemed to manifest when going from areas with no cellular coverage to locations with a signal. Even though the phone shows full bars, it would still not push data through the network.
+There are a few more issues that the update takes care of, but it seems to be fewer than past iOS 13 patches, which have been frequent and full of fixes. The mobile operating system has been struggling with bugs since launch. It appears that Apple may finally be getting a reasonable handle on the problems now that it has been out in the wild for nearly two months.
+The iOS 13.2.2 update is available now through the General Settings of your iPhone.
+
+Related Reads
+
+
+
+
+
+
+
+",en,"
+
+
+
+
+
+
+
+
+
+
+
+New iOS 13.2.2 update with fix for annoying app closing bug just went live
+Another day, another iOS bug fix
+07 Nov 2019, 20:17 by Cal Jeffrey
+In context: Ever since its launch on September 19, it seems like iOS 13 has had one problem after another. So much so that Apple has been issuing fixes at a lightning rate. In just the first week, Apple released three patches, including a day-one fix. It has since pushed out several more updates addressing a multitude of bugs.
+Last week, we reported that since the iOS 13 upgrade, users have been complaining that the operating system closes background tasks to aggressively. Presumably, this was in an attempt to conserve battery life. However, owners were finding that it would shut down apps, sometimes even losing unsaved work.
+On Thursday, Apple rolled out a patch to address the app closing issue. A beta for iOS 13.3 is already in testing, but in the meantime, Cupertino pushed version 13.2.2 with a fix for the problem as well as others.
+   •  Fixes an issue that could cause apps to quit unexpectedly when running in the background   •  Resolves an issue where iPhone may temporarily lose cellular service after a call   •  Addresses an issue where cellular data may temporarily not be available   •  Fixes an issue that caused replies to S/MIME encrypted email messages between Exchange accounts to be unreadable   •  Addresses an issue where using Kerberos single sign-on service in Safari may present an authentication prompt   •  Resolves an issue where charging may be interrupted on YubiKey Lightning-powered accessories
+In addition to fixing the multitasking bug (it’s not a bug — it’s a feature), iOS 13.2.2 patches a glitch that caused iPhone to lose cellular connectivity temporarily after a call. There was also an issue “where mobile data may temporarily not be available” that the update addresses.
+This last bug seemed to manifest when going from areas with no cellular coverage to locations with a signal. Even though the phone shows full bars, it would still not push data through the network.
+There are a few more issues that the update takes care of, but it seems to be fewer than past iOS 13 patches, which have been frequent and full of fixes. The mobile operating system has been struggling with bugs since launch. It appears that Apple may finally be getting a reasonable handle on the problems now that it has been out in the wild for nearly two months.
+The iOS 13.2.2 update is available now through the General Settings of your iPhone.
+
+Related Reads
+
+
+
+
+
+
+
+"

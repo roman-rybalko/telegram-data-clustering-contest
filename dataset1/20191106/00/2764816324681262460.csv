@@ -1,0 +1,180 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+AMD mění plány, dvoujádrové 12nm APU vyjde jako Athlon 3000G. Už máme parametry
+06 Nov 2019 by Jan Olšan
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+VŠECHNY FOTOGRAFIE
+
+Letos v červenci AMD vydalo Ryzeny 3000 a mezi 7nm CPU byla také 12nm APU Picasso se čtyřmi jádry Zen a grafikou Radeon Vega. Co tehdy ale chybělo, byla lowendová dvoujádra Athlon. Později při vydání Pro verze Ryzenů 3000 firma vydala Athlon Pro 300GE, ale ten zatím neexistuje v běžné ne-Pro verzi, kterou byste mohli normálně koupit v obchodech. Vypadá to, že to se teď změní, ale bude to s určitou změnou, minimálně v názvu.
+Tento týden totiž na internet začaly prosakovat zmínky ne o Athlonu 300GE (či 320GE, 330GE), ale o procesoru nazvaném Athlon 3000G. Proč AMD zavádí takovýto nový styl značení není úplně jasné, protože to vypadá, že samotné parametry se od zmíněného Athlon Pro 300GE (a předtím Athlonů 200GE) asi moc lišit nebudou. Pravděpodobně ve firmě usoudili, že by bylo lepší, aby značení přímo navazovalo na ostatní APU. „Athlon 3000G“ tvoří logické pokračování po Ryzenu 3 3200G a Ryzenu 5 3400G.
+3,5Ghz dvoujádro, grafika stále Radeon Vega 3?
+Základní parametry Pro Athlon 3000G se už dají najít například v seznamu podporovaných CPU desek Gigabyte, což by měl být zaručený zdroj. Jde podle něj o dvoujádrové a patrně čtyřvláknové APU pro socket AM4 s taktem 3,5 GHz, zatímco Athlon (Pro) 300GE má takt 3,4 GHz. Ekvivalentem modelu 3000G tedy bude asi spíše model Athlon (Pro) 320GE, jenž by měl být takt 3,5 GHz. Jiní výrobci desek (ASRock, Lenovo) už právě model označený Athlon 320GE dříve avizovali, takže to vypadá, že AMD změnilo plány s označením poměrně nedávno. Případně by teoreticky tyto procesory mohly existovat pod dvojím názvem, ale to nezní moc pravděpodobně.
+
+
+Athlon 3000G v CPU support listu Gigabyte
+
+Procesor má klasicky 512KB L2 cache v každém jádru a L3 cache je 4MB. Boost opět nebude, takže takt 3,5 GHz je maximem. Zajímavé je, že podle Gigabyte jde o stejný křemík jako v Ryzenech 3/5 3200G/3400G, tedy o 12nm čipy Picasso s dvěma vypnutými jádry. To by otevíralo možnost, že GPU bude mít více jednotek než jen 192 shaderů, ale spíš to vypadá, že AMD ji nevyužilo. Twitterista Momomo_us už zdá se našel výskyt v obchodě (označení je YD3000C6FHBOX), kde se píše, že procesor má stále jen grafiku Radeon Vega 3, čili oněch 192 stream procesorů. Může teoreticky jít o chybu, pravda, ale zatím počítejte s tím, že GPU proti předchozím Athlonům rozšířeno není. Jen frekvence o něco vzrostla, u tohoto modelu je 1100 MHz.
+
+
+
+Označení 3000G by teoreticky mělo říkat, že spotřeba bude 65 W, avšak to evidentně neplatí, Gigabyte uvádí, že TDP je stále 35W (což právě doteď implikovala přípona GE). Na druhou stranu má to i svou logiku, protože zatímco u čtyřjádra je 35W úsporná spotřeba, u dvoujádra logicky už ne, zde bychom od modelu se sníženou spotřebou čekali třeba 25 W. Ovšem u modelů řady Pro už značení GE zůstalo, takže minimálně v této generaci v tom bude nepořádek.
+Kdy toto dvoujádro přijde na trh, zatím nevíme. Web ComputerBase už ho našel v Německu i v internetovém obchodě za cenu 54 €, což by dávalo asi 1400 Kč. Ale nevíme, zda jde o definitivní částku.
+Galerie: APU Ryzen 3000 Picasso, odhalení na E3 2019
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+VŠECHNY FOTOGRAFIE
+
+
+SOUVISEJÍCÍ ČLÁNKY
+
+
+
+
+
+
+
+
+",cs,"
+
+
+
+
+
+
+
+
+
+
+
+AMD changes plans, dual-core 12nm APUs come out as Athlon 3000G. We already have parameters
+06 Nov 2019 by Jan Olsan
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ALL PHOTOS
+
+This July, AMD released the Ryzeny 3000, and among 7nm CPUs was also a 12nm APU Picasso with four Zen cores and Radeon Vega graphics. What was missing then was the Athlon low-end dual core. Later in the release of the Pro version of the Ryzens 3000, the company released the Athlon Pro 300GE, but it does not yet exist in the regular non-Pro version that you could normally buy in stores. It looks like it will change now, but it will be with some change, at least in the title.
+This week, the Internet began to leak not to mention the Athlon 300GE (or 320GE, 330GE), but the processor called the Athlon 3000G. Why AMD introduces such a new style of marking is not entirely clear, because it seems that the parameters themselves will not be much different from the Athlon Pro 300GE (and previously Athlon 200GE). They probably decided that it would be better for the label to be directly linked to the other APUs. The ""Athlon 3000G"" is a logical sequel to Ryzen 3 3200G and Ryzen 5 3400G.
+3.5Ghz dual core, graphics still Radeon Vega 3?
+Basic parameters For the Athlon 3000G, you can already find it in the list of supported Gigabyte CPU boards, which should be a guaranteed source. According to him, it is a dual-core and probably four-threaded APU for AM4 socket with a 3.5 GHz clock, while the Athlon (Pro) 300GE has a clock rate of 3.4 GHz. So the equivalent of the 3000G will probably be the Athlon (Pro) 320GE, which should be a 3.5 GHz clock. Other board manufacturers (ASRock, Lenovo) have just announced the model labeled Athlon 320GE earlier, so it looks like AMD changed plans with the designation quite recently. Alternatively, these processors could theoretically exist under a double name, but that doesn't sound very likely.
+
+
+Athlon 3000G in Gigabyte CPU support list
+
+The processor typically has 512KB L2 cache in each core and L3 cache is 4MB. Boost will not be again, so the 3.5 GHz clock is the maximum. Interestingly, according to Gigabyte, it is the same silicon as in Ryzenech 3/5 3200G / 3400G, 12nm Picasso chips with two cores turned off. This would open the possibility that the GPU will have more units than just 192 shaders, but rather it seems that AMD has not used it. Momomo_us, a Twitterist, has already found a store (called YD3000C6FHBOX), where it says the processor still has only Radeon Vega 3 graphics, or 192 stream processors. It may theoretically be a mistake, true, but for the time being, the GPU is not widespread against previous Athlons. Only the frequency increased slightly, with this model is 1100 MHz.
+
+
+
+The 3000G designation should theoretically say that power consumption will be 65W, but this is obviously not the case, Gigabyte says the TDP is still 35W (which has so far implied the GE suffix). On the other hand, it also has its logic, because while the quad-core is 35W power consumption, the dual-core logically no longer, here we would expect from the model with a reduced power consumption of 25 W. generation will be messed up.
+We do not yet know when this dual core will come to the market. ComputerBase has already found it in Germany and in an online store for 54 €, which would cost about 1400 CZK. But we do not know whether this is a definite amount.
+Gallery: APU Ryzen 3000 Picasso, unveiled at E3 2019
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ALL PHOTOS
+
+
+RELATED ARTICLES
+
+
+
+
+
+
+
+
+"

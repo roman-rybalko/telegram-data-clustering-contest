@@ -1,0 +1,78 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+AMD’s latest driver adds support for Red Dead Redemption 2, fixes a Twitch issue
+04 Nov 2019, 19:22 by Paul Lilly
+Tomorrow is the day Red Dead Redemption 2 rides over to PC, and if you are planning to play it, there are updated graphics drivers available from both AMD and Nvidia. We already wrote about Nvidia's latest GPU driver (444.12 WHQL), so let's talk about AMD's newest release (19.11.1).
+Adding support for RDR2 is the highlight here. AMD does not offer up any specific performance claims, but if you're raring to saddle up tomorrow, the 19.11.1 release will presumably offer the best overall experience (assuming there are no ill side effects).
+Beyond that, AMD added support for some additional Vulkan extensions, as outlined in the release notes, and fixed a few issues. One of them deals with a connection bug affecting Twitch, and there are also a couple of fixes related to The Outer Worlds. Here's a look:
+
+Some users may be unable to connect their Twitch account through the Connect page in Radeon Settings for live streaming.
+The Outer Worlds may sometimes experience an application crash when opening the characters inventory screen.
+The Outer Worlds may experience character models being rendered incorrectly on the inventory screen.
+Frame Rate may cap or remain limited to 60 fps in some Vulkan API games.
+OBS streaming may experience heavy frame drops when using AMF encoding..
+
+There are also a bunch of known issues that AMD has yet to fix. They include:
+
+Radeon RX 5700 series graphics products may experience stutter in some games at 1080p and low game settings.
+Performance Metrics Overlay may cause stutter or screen flashing on some applications.
+Radeon RX 5700 series graphics products may experience display loss when resuming from sleep or hibernate when multiple displays are connected.
+Toggling HDR may cause system instability during gaming when Radeon ReLive is enabled.
+Stutter may be experienced when Radeon FreeSync is enabled on 240Hz refresh displays with Radeon RX 5700 series graphics products.
+AMD Radeon VII may experience elevated memory clocks at idle or on desktop.
+Performance Metrics Overlay may report incorrect VRAM utilization.
+Invoking Radeon Overlay may cause games to lose focus or become minimized when HDR is enabled within Windows.
+
+In related news, Rockstar Games is getting a head start on the Black Friday deals season by offering a free upgrade to the Special Edition of RDR2—it's currently priced at $59.99 instead of $79.99. Likewise, the Ultimate Edition is on sale for $79.99, down from $99.99 right now.
+
+
+",en,"
+
+
+
+
+
+
+
+
+
+
+
+AMD’s latest driver adds support for Red Dead Redemption 2, fixes a Twitch issue
+04 Nov 2019, 19:22 by Paul Lilly
+Tomorrow is the day Red Dead Redemption 2 rides over to PC, and if you are planning to play it, there are updated graphics drivers available from both AMD and Nvidia. We already wrote about Nvidia's latest GPU driver (444.12 WHQL), so let's talk about AMD's newest release (19.11.1).
+Adding support for RDR2 is the highlight here. AMD does not offer up any specific performance claims, but if you're raring to saddle up tomorrow, the 19.11.1 release will presumably offer the best overall experience (assuming there are no ill side effects).
+Beyond that, AMD added support for some additional Vulkan extensions, as outlined in the release notes, and fixed a few issues. One of them deals with a connection bug affecting Twitch, and there are also a couple of fixes related to The Outer Worlds. Here's a look:
+
+Some users may be unable to connect their Twitch account through the Connect page in Radeon Settings for live streaming.
+The Outer Worlds may sometimes experience an application crash when opening the characters inventory screen.
+The Outer Worlds may experience character models being rendered incorrectly on the inventory screen.
+Frame Rate may cap or remain limited to 60 fps in some Vulkan API games.
+OBS streaming may experience heavy frame drops when using AMF encoding..
+
+There are also a bunch of known issues that AMD has yet to fix. They include:
+
+Radeon RX 5700 series graphics products may experience stutter in some games at 1080p and low game settings.
+Performance Metrics Overlay may cause stutter or screen flashing on some applications.
+Radeon RX 5700 series graphics products may experience display loss when resuming from sleep or hibernate when multiple displays are connected.
+Toggling HDR may cause system instability during gaming when Radeon ReLive is enabled.
+Stutter may be experienced when Radeon FreeSync is enabled on 240Hz refresh displays with Radeon RX 5700 series graphics products.
+AMD Radeon VII may experience elevated memory clocks at idle or on desktop.
+Performance Metrics Overlay may report incorrect VRAM utilization.
+Invoking Radeon Overlay may cause games to lose focus or become minimized when HDR is enabled within Windows.
+
+In related news, Rockstar Games is getting a head start on the Black Friday deals season by offering a free upgrade to the Special Edition of RDR2—it's currently priced at $59.99 instead of $79.99. Likewise, the Ultimate Edition is on sale for $79.99, down from $99.99 right now.
+
+
+"

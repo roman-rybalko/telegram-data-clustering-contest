@@ -1,0 +1,66 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Intip Cara Kerja Aplikasi Titip Motor Bikinan Mahasiswa Universitas Indonesia
+06 Nov 2019, 12:35 by Bambang Arifianto
+DEPOK, (PR).- Empat mahasiswa Program Studi Teknik Elektro dan Teknik Biomedik Fakultas Teknik Universitas Indonesia menciptakan aplikasi pintar untuk jasa titip motor yang bernama Timo.
+Keempat mahasiswa tersebut adalah Rakana Adian (Teknik Elektro angkatan 17), Rakha Kahansa Putra (Teknik Elektro 2017), Jason Antonio Gunawan (Teknik Elektro 2017), dan Ziyan Muhammad Aqsha (Teknik Biomedik 2018). Mereka‎ tergabung dalam Timoteam.
+Penelitian itu dilatarbelakangi oleh maraknya parkir ilegal yang disebabkan sempitnya lahan parkir yang tidak sejalan dengan peningkatan jumlah penggunaan sepeda motor. 
+Berdasarkan data Katadata, DKI Jakarta adalah daerah dengan jumlah pengguna motor terbesar kedua di Indonesia dengan jumlah 13,3 juta sepeda motor. Sementara itu, berdasarkan data dari BPS DKI Jakarta 2016, harga tanah di Jakarta semakin naik 10-15% per tahun. Maka dari itu pembangunan infrastruktur tidak sejalan dengan peningkatan jumlah sepeda motor. 
+“Berdasarkan permasalahan tersebut, Timoteam menawarkan solusi berupa mobile app Timo: Titip Motor. Aplikasi ini mengusung konsep sharing parking dengan mengoptimalisasi tanah di sekitar fasilitas publik seperti stasiun,"" kata Ziyan‎, perwakilan mahasiswa dalam keterangan tertulisnya, Selasa 5 November 2019.
+Melalui aplikasi tersebut, pemilik lahan dapat menyewakan lahannya menjadi lahan parkir bagi pengendara motor. Selain itu, pengendara motor juga akan mendapatkan kemudahan berupa reservasi parkir, pembayaran cashless, dan keamanan yang terjamin.‎ Sistem kerja dari aplikasi Timo dibagi menjadi dua, yakni dari sisi pengendara motor dan pemilik lahan (mitra).
+Untuk pengendara motor diawali dengan registrasi pengguna yang dinamakan OSSU (One Shot Sign Up). Proses registrasi pun cepat, yaitu pengguna hanya memindai surat-surat berkendara. Timoteam menggunakan Computer Vision untuk mengekstrak teks dari gambar. Kemudian, Timo dapat merekomendasikan lahan parkir terdekat dan terbaik bagi pengguna. Hal ini didukung dengan menerapkan Artificial Intelligence (AI). Setelah itu, pengguna harus memindai QR code untuk keluar masuk lahan parkir. Timo akan memberitahu biaya parkir dan durasi parkir. Pengguna juga dimudahkan untuk melakukan proses pembayaran menggunakan e-wallet.
+Sedangkan calon mitra yang memiliki lahan parkir dapat menyewakan lahannya, baik garasi rumah maupun lahan kosong. Dengan menggunakan chatboat yang dinamakan Siparkir, calon mitra diminta memindai SHM tanah serta identitas diri untuk proses registrasi. Oleh sebab itu, lahan parkir dapat bersifat legal karena disertai sertifikat tanah. Melalui aplikasi Timo, diharapkan parkir ilegal serta memudahkan masyarakat untuk menemukan parkir motor. Aplikasi Timo ini telah mendapatkan juara 1 pada ajang Hackathon BIOS UMN 2019 bulan Oktober 2019 yang lalu. ""Harapan ke depan, semoga aplikasi Timo dapat terealisasikan, tidak hanya prototype. Dan juga dapat berkompetisi Hackathon di Jepang 2020 setelah mengikuti program inkubasi,""  ucap Ziyan.***
+
+Baca Juga
+
+
+
+
+
+
+
+
+",id,"
+
+
+
+
+
+
+
+
+
+
+
+Take a peek at How the Application of Entrusted Motorbike Students Made by University of Indonesia
+Nov 6, 2019, 12:35 by Bambang Arifianto
+DEPOK, (PR) .- Four students of the Electrical Engineering and Biomedical Engineering Study Program at the Faculty of Engineering, University of Indonesia, created a smart application for motorbike services called Timo.
+The four students are Rakana Adian (Electrical Engineering class of 17), Rakha Kahansa Putra (Electrical Engineering 2017), Jason Antonio Gunawan (Electrical Engineering 2017), and Ziyan Muhammad Aqsha (Biomedical Engineering 2018). They are members of Timoteam.
+The research was motivated by the rise of illegal parking caused by the limited parking area that is not in line with the increasing number of motorcycle use.
+Based on Katadata data, DKI Jakarta is the region with the second largest number of motorcycle users in Indonesia with 13.3 million motorcycles. Meanwhile, based on data from the 2016 DKI Jakarta BPS, land prices in Jakarta are increasing by 10-15% per year. Therefore, infrastructure development is not in line with the increasing number of motorbikes.
+""Based on these problems, Timoteam offers a solution in the form of the Timo mobile app: Request Motor. This application carries the concept of sharing parking by optimizing land around public facilities such as stations, ""said Ziyan, student representative in his written statement, Tuesday, November 5, 2019.
+Through this application, landowners can rent out their land into parking lots for motorcyclists. In addition, motorists will also get convenience in the form of parking reservations, cashless payments, and guaranteed security.The work system of the Timo application is divided into two, namely in terms of motorcyclists and landowners (partners).
+For motorcyclists it starts with a user registration called OSSU (One Shot Sign Up). The registration process is also fast, ie the user only scans driving papers. Timoteam uses Computer Vision to extract text from images. Then, Timo can recommend the nearest and best parking space for users. This is supported by implementing Artificial Intelligence (AI). After that, users must scan the QR code to enter and exit the parking lot. Timo will tell you the parking fee and parking duration. Users are also facilitated to process payments using e-wallet.
+Whereas potential partners who have a parking lot can rent out their land, both the garage of the house and the vacant land. By using a chatboat called Sippark, potential partners are asked to scan the land's SHM and identity for the registration process. Therefore, parking lots can be legal because they are accompanied by land certificates. Through the Timo app, illegal parking is expected and makes it easier for the public to find motorcycle parking. This Timo application has won first place in the 2019 UMN BIOS Hackathon event last October 2019. ""Hopefully in the future, we hope that the Timo application can be realized, not just a prototype. And we can also compete in Hackathon in Japan 2020 after participating in the incubation program,"" Ziyan said. ***
+
+Also Read
+
+
+
+
+
+
+
+
+"

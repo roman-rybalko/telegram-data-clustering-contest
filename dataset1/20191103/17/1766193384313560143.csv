@@ -1,0 +1,52 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Logdatei-Leak: Spanische Pornowebsites enttarnen Betrachter und Sexarbeiterinnen
+Ein spanischer Betreiber von Pornoseiten hat massenhaft Logdaten in einer offenen Datenbank vorgehalten. Nutzer und 'Camgirls' lassen sich damit identifizieren.
+03 Nov 2019, 17:04 by Tilman Wittenhorst
+Mehrere vornehmlich in Spanien beliebte Porno-Websites haben durch eine offen im Internet zugängliche Datenbank mit den Inhalten von Logdateien hochsensible Informationen über die Betrachter der Videos enthüllt, aber auch über die Sexarbeiterinnen, die für das Angebot an Inhalten sorgen. Die Datenbank war über mehrere Wochen erreichbar. Das hat das Online-Magazin Techcrunch enthüllt.
+Datenbank mit Logdaten ohne Passwort zugänglich
+Betreiber der Websites ist das in Barcelona ansässige Unternehmen VTS Media, unter den betroffenen URLs sind 'sprechende' Bezeichnungen wie webcampornoxxx.net und placercams.com sowie die Website amateur.tv, die laut dem Techcrunch-Bericht in Traffic-Statistiken eine der beliebtesten in Spanien ist. Allerdings fanden sich auch zahlreiche Nutzer aus anderen europäischen Ländern in der Datenbank. Die pornografischen Inhalte liefern zumeist Frauen, die sich selbst per Webcam filmen sowie mit Kunden chatten und daher auch als ""camgirls"" bezeichnet werden.
+IT-Security-Spezialisten des Unternehmens Condition:Black entdeckten eine Back-end-Datenbank, die frei und ohne Passwort im Internet zugänglich war. Sie enthielt die aus Logdateien stammenden Daten über die Aktivitäten auf den Websites über einen Zeitraum von mehreren Monaten. Aufgeführt waren unter anderem Anmeldungen samt Nutzernamen, teilweise mit Useragent-Information und IP-Adresse, private Chat-Nachrichten zwischen Benutzern der Websites sowie Werbe-E-Mails, die die Nutzer von den Websites erhielten, woraus teils auch die E-Mail-Adresse der Benutzer hervorging. Solche Informationen können ausreichen, um einen Benutzer persönlich zu identifizieren.
+Angeschaute Videos mitgeloggt
+Insbesondere war aus den Daten auch ersichtlich, welche Videos ein Benutzer betrachtete oder mietete – woraus sich beispielsweise sexuelle Präferenzen ableiten lassen. Doch damit nicht genug: Bei fehlgeschlagenen Login-Versuchen zeichneten die Systeme sogar Nutzernamen und Passwort im Klartext auf. Außerdem waren teilweise die Nutzerdaten der Sexarbeiterinnen einsehbar, die die Videos für die Websites bereitstellen. Die Zahl der betroffenen Personen aus dem Leak gibt Techcrunch etwas vage mit mehreren Millionen an.
+Wie Techcrunch schreibt, wurde die Datenbank vergangene Woche vom Netz genommen. Ein Kontaktversuch mit VTS Media per E-Mail scheiterte. Die Spezialisten von Condition:Black verwiesen darauf, dass die Datenschutzrichtlinie der Websites nicht auf eine derart detaillierte Informationssammlung an Nutzerdaten hinweist. Da sich das verantwortliche Unternehmen und die betroffenen Server in der EU befinden, fallen das mutmaßlich unberechtigte Sammeln der Nutzerdaten und natürlich das unbeabsichtigte Offenlegen unter die EU-Datenschutzgrundverordnung. Ein Bußgeld nach DSGVO kann bis zu 4 Prozent des Jahresumsatzes eines Unternehmens betragen; mittlerweile sind die ersten Bußgelder verhängt worden.
+Wie heikel das Veröffentlichen persönlicher Informationen – insbesondere aus den intimsten Bereichen der Privatsphäre – sein kann, zeigt unter anderem der Fall des Seitensprung-Portals Ashley Madison im Jahr 2015. Damals waren Daten von ca. 36 Millionen Nutzern von einer Hackgruppe publik gemacht worden. In der Folge waren einige von ihnen Opfer von Verbrechen geworden, zwei Personen sollen Suizid begangen haben. (tiw)
+
+
+",de,"
+
+
+
+
+
+
+
+
+
+
+
+Log File Leak: Spanish porn websites are exposing viewers and sex workers
+A Spanish operator of porn sites has massed log data in an open database. Users and 'Camgirls' can be identified with it.
+03 Nov 2019, 17:04 by Tilman Wittenhorst
+Several porn websites, most of which are popular in Spain, have revealed highly sensitive information about the viewer of the videos through an openly accessible database containing the contents of log files, but also about the sex workers who provide the content. The database was available for several weeks. This has been revealed by the online magazine Techcrunch.
+Database with log data without password accessible
+The operator of the websites is the Barcelona-based company VTS Media, among the affected URLs are 'talking' names such as webcampornoxxx.net and placercams.com as well as the website amateur.tv, which according to the Techcrunch report is one of the most popular in traffic statistics Spain is. However, many users from other European countries were also in the database. The pornographic content is mostly provided by women who film themselves via webcam and chat with customers and are therefore also referred to as ""camgirls"".
+The company's IT security specialists Condition: Black discovered a back-end database that was freely accessible on the Internet without a password. It contained logfile data about activity on the sites over a period of several months. Listed were, among other things, logins including user names, sometimes with user agent information and IP address, private chat messages between users of the websites as well as advertising emails that users received from the websites, sometimes including the email address the user emerged. Such information may be sufficient to personally identify a user.
+Watched videos logged
+In particular, the data also showed which videos a user viewed or rented, from which, for example, sexual preferences could be derived. But that's not all: in the case of failed login attempts, the systems even recorded the user name and password in plain text. In addition, the user data of the sex workers who provide the videos for the websites were partially visible. The number of people affected by the leak indicates Techcrunch somewhat vaguely with several millions.
+As Techcrunch writes, the database was shut down last week. A contact attempt with VTS Media by e-mail failed. The specialists of Condition: Black pointed out that the privacy policy of websites does not point to such a detailed collection of information on user data. As the responsible company and the affected servers are located in the EU, the allegedly unauthorized collection of user data and, of course, unintentional disclosure are covered by the EU General Data Protection Regulation. A fine under DSGVO can amount to up to 4 percent of the annual turnover of a company; Meanwhile, the first fines have been imposed.
+The sensitivity of publishing personal information - especially from the most intimate areas of privacy - is illustrated by the case of Ashley Madison, an escapist portal in 2015. At the time, data from around 36 million users had been published by a hacking group. As a result, some of them were victims of crime, two people were alleged to have committed suicide. (Tiw)
+
+
+"

@@ -1,0 +1,104 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Закон об устойчивом Рунете вступил в силу: что дальше
+
+01 Nov 2019, 06:00
+
+
+В мае президент России Владимир Путин подписал закон, направленный на защиту устойчивой работы интернета в стране в случае возникновения угрозы его функционированию из-за рубежа.
+
+Закон об устойчивой работе Рунета вступает в силу с 1 ноября. С одной стороны, это правильный шаг - многие мировые государства переходят к ""островизации"" интернета, чтобы обезопасить себя от внешнеполитических угроз, но с другой - реализация закона сопряжена с рядом рисков, для минимизации которых необходим диалог IT-компаний с властями, считают опрошенные РИА Новости эксперты.
+Закон вступает в силу с ноября этого года, за исключением положений о криптографической защите информации и национальной системе доменных имен, которые вступят в силу с 1 января 2021 года. Внутренние сети, не имеющие выхода в интернет, не подпадают под действие закона.
+Островной Рунет
+По словам экспертов, мировые государства постепенно переходят к отделению, так называемой ""островизации"" интернета. Россия не отстает от этого тренда - закон об устойчивой работе Рунета позволит взять в руки штурвал и регулировать сеть внутри страны.""Эпоха примитивного понимания интернета, который существует отдельно от всего остального общества, заканчивается. Все понимают, что по мере врастания интернета в нашу с вами жизнь, когда он доходит до домохозяйства, когда он управляет светом в наших домах, энергией и всем остальным, существовать отдельно от государственных институтов он не может. Это не российская ситуация, это общемировая ситуация"", - отметил спецпредставитель президента России.
+
+
+
+Директор по продукту компании Waves Enterprise Артем Калихов отметил, что речь в законе идет не об изоляции и ограничениях Рунета, а о защите пользователей и страны от внешних угроз, в том числе вероятности отключения России от мирового интернета.""По сути закон не об изоляции. Исходя из текста закона, власти смогут контролировать точки соединения российской части сети с остальной глобальной сетью. Предусмотрена возможность создания необходимой инфраструктуры, которая позволит российскому сегменту функционировать автономно, если доступ к зарубежным корневым серверам DNS или другим ключевым узлам будет ограничен чем-то извне"", - пояснил он.Однако ограничение Рунета извне эксперт считает маловероятным. Он пояснил, что технически вся глобальная сеть поделена на автономные системы, распределенные между провайдерами услуг. Они передают друг через друга трафик, и если хотя бы одна автономная система в одном месте будет отключена, то трафик доберется до нужного места через другие. ""Даже если кто-то физически захочет отрубить кабели, сигнал все равно будет идти и автоматически дублироваться в другие сегменты"", - указал он.
+Калихов добавил, что Россия вряд ли пойдет по пути Китая и начнет ограничивать Рунет изнутри. ""Стоит учитывать, что наш опыт и опыт Китая совершенно разный, и мы не можем себе позволить идти по их пути, хотя бы потому, что в России сейчас нет собственной IT-инфраструктуры. А наша собственная самоизоляция подорвет нашу же информбезопасность от внешних угроз"", - сказал собеседник агентства.
+""Сам закон направлен на развитие собственного цифрового суверенитета России, и это правильные меры. Создаются превентивные меры и действия, направленные на усиление программ государственной кибербезопасности. ... Наша страна начнет развивать собственный цифровой суверенитет. Начнет выстраивать квалифицированные IT-кадры и создавать необходимое ПО"", - считает он.""Создание внутреннего интернета похоже на покорение космоса. Только самые экономически успешные и крупные государства могут сделать это в одиночку"", - подытожил президент аналитического агентства ""БизнесДром"", член экспертного совета Госдумы по цифровой экономике Арсений Поярков.
+
+
+
+Риски и пути их минимизации
+Закон об устойчивом Рунете предполагает проведение учений по обеспечению безопасного и целостного функционирования сети в стране. В середине октября правительство утвердило положение об учениях: они будут проводиться по решению Минкомсвязи не реже чем раз в год. Предполагается, что в ходе учений будут отрабатываться ситуации возникновения угроз работы сети в России.
+Сооснователь и генеральный директор маркетплейса Oskelly Альберт Осканов отметил, что закон, и в частности положение об учениях, вызывают много вопросов, например, не приведут ли они к сбоям в работе сети и убыткам для компаний, работающих онлайн.""Безусловно, со временем реализацию этого закона могут заметить все: и бизнес, и пользователи. Никто не знает, как именно будут проходить обязательные учения по изоляции"", - сказал Оснаков. По его словам, ""сейчас в законопроекте слишком много неизвестных: ощущение, что даже авторы не вполне осознают последствий"". ""Никто не говорил, как к этому готовиться"", - добавил он.По словам Пескова, риски при реализации закона существуют, и задача ответственных органов - быстро решать проблемы в случае, если они возникнут.""Риски при исполнении, внедрении этого закона, безусловно, существуют. Вероятны инциденты, когда попытки его прямого внедрения будут приводить к изменению качества работы отдельных сервисов. Например, может случиться ухудшение времени реакции отдельных сервисов крупных интернет-провайдеров. Здесь важно, чтобы те органы, которые отвечают за внедрение этого закона, быстро обрабатывали обратную связь и меняли архитектурные решения. ... Отдельные риски, безусловно существуют, но они вообще несопоставимы по масштабам с рисками непринятия закона"", - сказал спецпредставитель президента России.
+
+
+
+Гендиректор АНО ""Цифровые платформы"" Арсений Щельцин указал, что реализация закона может повлиять на качество и стоимость услуг, для минимизации подобных рисков нужен диалог компаний и регулятора.
+""В информационной безопасности модель угроз определяется не на основании прошлого неудачного опыта, а на основании всех возможных рисков. ... Безусловно, любая такая фундаментальная инициатива может повлиять на качество или стоимость услуг. Но для этого и нужен диалог IT-компаний и регулятора, чтобы минимизировать негативные организационные риски и найти понимание между качеством услуг связи и безопасностью инфраструктуры"", - считает он.
+Поярков также обратил внимание на вероятность удорожания некоторых сервисов.
+""Желание государства обезопасить интернет понятно. В нем действительно много опасностей: начиная от детской порнографии и торговли наркотиками, до призывов выходить на несанкционированной акции"", - отметил эксперт. Он добавил, что государство выбрало радикальный путь фильтрации всего исходящего трафика, а это несет риски удорожания услуг провайдеров и снижения скорости обмена пакетами.""Есть много вопросов к авторам документа, как будет осуществляться мониторинг и на ком будет финансовая нагрузка по созданию инфраструктуры, но в целом для отечественной IT-индустрии и цифровой экономики ""суверенный интернет"" - выгодная история"", - подытожил Калихов.
+
+Читайте также:
+
+
+Цукерберг поддержал идею госрегулирования интернета
+Спецслужбы России получат доступ к устройствам ""интернета вещей""
+
+
+
+",ru,"
+
+
+
+
+
+
+
+
+
+
+
+The Law on Sustainable Runet entered into force: what's next
+
+01 Nov 2019, 06:00
+
+
+In May, Russian President Vladimir Putin signed a law aimed at protecting the sustainable operation of the Internet in the country in the event of a threat to its functioning from abroad.
+
+The Law on the Sustainable Work of the Runet comes into force on November 1. On the one hand, this is the right step — many world states are moving to the “islandization” of the Internet in order to protect themselves from foreign policy threats, but on the other hand, the implementation of the law is fraught with a number of risks, to minimize which a dialogue between IT companies and the authorities is necessary, according to RIA respondents News experts.
+The law comes into force on November of this year, with the exception of the provisions on cryptographic protection of information and the national domain name system, which will enter into force on January 1, 2021. Internal networks that do not have Internet access are not subject to the law.
+Island Runet
+According to experts, world states are gradually moving to the separation, the so-called ""islandization"" of the Internet. Russia is not lagging behind this trend - the law on the stable operation of the Runet will allow us to pick up the helm and regulate the network within the country. ""The era of a primitive understanding of the Internet, which exists separately from the rest of society, is ending. Everyone understands that as the Internet grows into our country your life, when it comes to the household, when it controls the light in our homes, energy and everything else, it cannot exist separately from state institutions. This is not the Russian situation, this is a global situation, "" special envoy of the Russian president.
+
+
+
+Artem Kalikhov, Waves Enterprise product director, noted that the law is not about isolation and Runet restrictions, but about protecting users and the country from external threats, including the likelihood of Russia disconnecting from the world’s Internet. ""In fact, the law is not about isolation. Based on the text of the law, the authorities will be able to control the connection points of the Russian part of the network with the rest of the global network, and it is possible to create the necessary infrastructure that will allow the Russian segment to function autonomously if there is access to a foreign country DNS root servers or other key nodes will be limited by something from outside, ""he explained. However, an expert considers Runet’s restriction from outside to be unlikely. He explained that technically the entire global network is divided into autonomous systems distributed between service providers. They transmit traffic through each other, and if at least one autonomous system in one place is disconnected, then the traffic will get to the right place through others. ""Even if someone physically wants to cut off the cables, the signal will still go and be automatically duplicated into other segments,"" he said.
+Kalikhov added that Russia is unlikely to follow the path of China and begin to restrict the Runet from the inside. “It’s worth considering that our experience and China’s experience are completely different, and we can’t afford to follow their path, if only because Russia does not have its own IT infrastructure now. And our own isolation will undermine our information security from external threats.” - said the interlocutor of the agency.
+""The law itself is aimed at developing Russia's own digital sovereignty, and this is the right measure. Preventive measures and actions are being created to strengthen state cybersecurity programs. ... Our country will begin to develop its own digital sovereignty. It will begin to build qualified IT staff and create the necessary software "", - he believes."" Creating an internal Internet is like conquering space. Only the most economically successful and large states can do it alone, ""the president of analytics summed up eskogo agency ""BiznesDrom"", a member of the State Duma Expert Council on Digital Economy Arseniy Poyarkov.
+
+
+
+Risks and ways to minimize them
+The Law on Sustainable Runet involves conducting exercises to ensure the safe and integrated functioning of the network in the country. In mid-October, the government approved the provision on the exercises: they will be carried out by decision of the Ministry of Communications at least once a year. It is assumed that during the exercises situations of occurrence of network operation threats in Russia will be worked out.
+Albert Oskanov, co-founder and CEO of Oskelly marketplace, noted that the law, and in particular the provision on the exercises, raise many questions, for example, whether they will lead to network failures and losses for online companies. ""Of course, over time this will be realized everyone can notice the law: both business and users. Nobody knows how the mandatory isolation exercises will take place, ""Osnakov said. According to him, ""there are too many unknowns in the bill: the feeling that even the authors are not fully aware of the consequences."" “Nobody said how to prepare for this,” he added. According to Peskov, there are risks in implementing the law, and the task of the responsible authorities is to quickly solve problems if they arise. “Risks in the implementation and implementation of this law, of course There are probable incidents when attempts to directly implement it will lead to a change in the quality of the work of individual services, for example, there may be a deterioration in the response time of individual services of large Internet providers. It is important that those bodies that are responsible for outside renie this law, to quickly process feedback and changed the architectural solutions ... Individual risks certainly exist, but they are generally not comparable in scale to the risk aversion of the law "", -. special envoy of the Russian president said.
+
+
+
+Arseniy Shcheltsin, CEO of the Digital Platforms Autonomous Non-Profit Organization, pointed out that the implementation of the law can affect the quality and cost of services, and a dialogue between companies and the regulator is needed to minimize such risks.
+“In information security, the threat model is determined not on the basis of past bad experience, but on the basis of all possible risks. ... Of course, any such fundamental initiative can affect the quality or cost of services. But this requires a dialogue between IT companies and the regulator, in order to minimize negative organizational risks and find understanding between the quality of communication services and infrastructure security, ”he said.
+Poyarkov also drew attention to the likelihood of higher prices for some services.
+“The state’s desire to secure the Internet is understandable. There really are many dangers in it: from child pornography and drug trafficking to calls to go to unauthorized actions,” the expert noted. He added that the government has chosen a radical way of filtering all outgoing traffic, and this carries the risks of increasing the cost of provider services and reducing the speed of packet exchanges. ""There are many questions to the authors of the document, how monitoring will be carried out and who will bear the financial burden of creating infrastructure, but On the whole, for the domestic IT industry and the digital economy, “sovereign Internet” is a profitable story, ”Kalikhov concluded.
+
+Read also:
+
+
+Zuckerberg supported the idea of government regulation of the Internet
+Russian special services will get access to the Internet of Things devices
+
+
+
+"

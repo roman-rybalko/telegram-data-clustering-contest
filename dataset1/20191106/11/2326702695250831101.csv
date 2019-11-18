@@ -1,0 +1,72 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Netflix May Be the Next Big Firm to Switch Servers to AMD EPYC
+06 Nov 2019, 11:46 by Mike Sanders
+
+
+
+Despite only launching the EPYC platform around 2 years ago, AMD has been making some very impressive in-roads into the total domination that Intel once held on the server-based market. In fact, some market analysts are predicting that by before the end of 2020, Team Red’s market share may be as high as 10%. Admittedly, that doesn’t sound like a particularly impressive figure. It is, however, a significant improvement on the literal 0% they held in early 2017.
+2019 has, however, already seen some pretty big shifts in the market. For example, both Google and Twitter have already confirmed plans to switch to the AMD EPYC platform. Companies that I think many would agree are pretty major players in the online market.
+In a report via Phoronix, however, Netflix may be set to be the next to join them as a senior staff member is looking to urge their management to abandon the Intel Xeon platform in favour of AMD.
+
+
+
+Netflix to Move to AMD EPYC?
+In the report, Andrew Gallatin, a senior software engineer at Netflix has reportedly made a presentation to the ‘higher-ups’ indicating that the AMD EPYC platform may provide the service with overall better performance with a lower hardware requirement.
+“Not only is EPYC faster, but thanks to the 128 PCIe lanes per socket they are able to get by in one socket what they are using two Intel Xeon CPUs for otherwise.”
+
+
+
+What Do We Think?
+It takes a lot of motivation for any online company to consider swapping their server platform. What is clear, however, is that the AMD EPYC platform has a lot of fans out there. Fans who are seemingly very keen to see their respective companies make this transition.
+If this trend continues, then AMD may very shortly switch from merely being the preferential choice to the market leader within the next 10 years. If nothing else, it’s certainly giving Intel a lot to think about!
+What do you think? Should Intel be worried by this growing trend? – Let us know in the comments!
+
+
+",en,"
+
+
+
+
+
+
+
+
+
+
+
+Netflix May Be the Next Big Firm to Switch Servers to AMD EPYC
+06 Nov 2019, 11:46 by Mike Sanders
+
+
+
+Despite only launching the EPYC platform around 2 years ago, AMD has been making some very impressive in-roads into the total domination that Intel once held on the server-based market. In fact, some market analysts are predicting that by before the end of 2020, Team Red’s market share may be as high as 10%. Admittedly, that doesn’t sound like a particularly impressive figure. It is, however, a significant improvement on the literal 0% they held in early 2017.
+2019 has, however, already seen some pretty big shifts in the market. For example, both Google and Twitter have already confirmed plans to switch to the AMD EPYC platform. Companies that I think many would agree are pretty major players in the online market.
+In a report via Phoronix, however, Netflix may be set to be the next to join them as a senior staff member is looking to urge their management to abandon the Intel Xeon platform in favour of AMD.
+
+
+
+Netflix to Move to AMD EPYC?
+In the report, Andrew Gallatin, a senior software engineer at Netflix has reportedly made a presentation to the ‘higher-ups’ indicating that the AMD EPYC platform may provide the service with overall better performance with a lower hardware requirement.
+“Not only is EPYC faster, but thanks to the 128 PCIe lanes per socket they are able to get by in one socket what they are using two Intel Xeon CPUs for otherwise.”
+
+
+
+What Do We Think?
+It takes a lot of motivation for any online company to consider swapping their server platform. What is clear, however, is that the AMD EPYC platform has a lot of fans out there. Fans who are seemingly very keen to see their respective companies make this transition.
+If this trend continues, then AMD may very shortly switch from merely being the preferential choice to the market leader within the next 10 years. If nothing else, it’s certainly giving Intel a lot to think about!
+What do you think? Should Intel be worried by this growing trend? – Let us know in the comments!
+
+
+"

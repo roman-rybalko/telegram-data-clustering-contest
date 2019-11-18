@@ -1,0 +1,50 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+פייסבוק בוחנת מנגנון זיהוי פנים לאפליקציית המובייל
+הרשת החברתית מפתחת כלי שיסרוק את פני הגולש לאימות זהותו, ואף מערכת שתשווה בין התמונה ובין תמונת תעודה רשמית שלו; לא ידוע מתי יושקו הפיתוחים האמורים, אך פייסבוק התחייבה שלא תנצל לרעה את המידע האמור
+07 Nov 2019 by רפאל קאהאן
+פייסבוק בוחנת מנגנון זיהוי פנים שיתפקד כמנעול גישה לאפליקציית המובייל שלה - כך חשפה ג'יין מנצ'ן וונג, מפתחת שמתמחה באיתור תכונות חדשות בשלב הבדיקה, וכבר גילתה לא מעט מהן בפייסבוק בעבר. לדבריה, מקטעי קוד שבחנה מכילים מנגנון שידרוש שימוש במצלמת הסלפי של הטלפון לאימות זהות המשתמש, מנגנון שיבקש ממנו להזיז את ראשו בזוויות שונות כדי לשפר את דיוק הזיהוי. בכך, יעבוד הכלי בדומה לתכונת רישום הפנים במערכות הזיהוי של מכשירי אנדרואיד ואייפון. 
+הרשת החברתית מסרה לאתר Engadget שהתכונה האמורה אכן נועדה לזיהוי פנים ונמצאת בשלבי פיתוח, ותנועת הראש הנדרשת נועדה להוכיח שהמשתמש הוא אדם ולא תמונה או ניסיון הטעיה אחר. כמו כן, מסרה שנתוני זיהוי פנים לא יישמרו יותר משלושים יום לפני שיימחקו, ושאף גורם לא יקבל גישה לסרטוני הזיהוי. המערכת של פייסבוק דומה קצת ל-Face ID של אפל, אך היא פחות מאובטחת. יתכן שהחברה תשתמש בה בתור עוד שלב אימות ולא כנעילה עיקרית שתחליף את הסיסמה למשל.
+
+
+סריקת פנים במערכת Face ID של אפל צילום: רויטרס
+
+הסיבה לכך היא שאין לאפליקציה גישה למצלמת עומק שמשמשת בדרך כלל למיפוי הפנים באייפון או במכשירי אנדרואיד מסוימים; מצלמת סלפי פשוטה לא מסוגלת להעריך אם האובייקט מולה הוא דו ממדי כמו תצלום או תלת ממדי כמו אדם. כמו כן, אפל לא מאפשרת לאפליקציות חיצוניות לגשת למצלמת ה-Face ID. מעבר לזיהוי הפנים, וונג גם מצאה עדות לכך שפייסבוק עשויה לבקש בעתיד הזדהות עם ת''ז בעלת תמונה של המשתמש, מה שיסייע להוכיח לחברה שלפניה משתמש אמיתי; למרות כללי השימוש של הרשת החברתית, משתמשים רבים מזייפים או מעוותים את זהותם. המנגנון הנ""ל יאפשר לפייסבוק להשוות בין תמונת התעודה ותמונת המשתמש, לשיפור אמינות האימות.  בינתיים, מדובר בכלים שנמצאים בשלבי ניסוי פנימי ולא ידוע אם ומתי יושקו. כנראה שפייסבוק תמשוך הרבה אש כשתעשה זאת: לחברה היסטוריה עשירה של פגיעה בפרטיות גולשים וזכויותיהם, וניצול של כל פיסת מידע אישי שהצליחה לדלות מהקהל.
+
+
+",iw,"
+
+
+
+
+
+
+
+
+
+
+
+Facebook is looking into a face recognition mechanism for the mobile app
+The social network is developing a tool that will scan the user's face for verification of his identity, and any system that compares the image with his official photo ID; It is not known when these developments will be launched, but Facebook has pledged not to misuse the information
+Nov 07, 2019 by Rafael Kahan
+Facebook is exploring a face recognition mechanism that will act as a lock to access its mobile app - revealed Jane Manchan Wong, a developer who specializes in finding new features at the testing stage, and has already discovered quite a few of them in Facebook in the past. She said code snippets she examined contained a mechanism that would require the user's selfie camera to verify user identity, a mechanism that would ask him to move his head at various angles to improve detection accuracy. In doing so, the tool will work similar to the face registration feature on Android and iPhone devices.
+The social network told Engadget that the feature is intended for face recognition and is in development, and the required head movement is intended to prove that the user is a person and not another image or attempt at deception. It also stated that facial recognition data would not be stored for more than thirty days before being deleted, and that no individual would gain access to the identification videos. Facebook's system is somewhat similar to Apple's Face ID, but it's less secure. The company may use it as another verification step and not as a primary lock to replace the password, for example.
+
+
+Face scan on Apple's Face ID system Photo: Reuters
+
+This is because the app does not have access to a depth camera, which is typically used for mapping faces on certain iPhone or Android devices; A simple selfie camera is unable to assess whether the object in front of it is two-dimensional like a photograph or three-dimensional like a human being. Also, Apple does not allow external apps to access the Face ID camera. Beyond the facial recognition, Wong also found evidence that Facebook may in the future seek to identify with Thaz with a photo of the user, which will help prove to the company before them a real user; Despite the social networking rules, many users fake or distort their identity. The above mechanism will allow Facebook to compare the certificate image and user image, to improve authentication credibility. In the meantime, these are tools that are in-process and unknown whether and when they will be launched. Every piece of personal information that she managed to glean from the audience.
+
+
+"

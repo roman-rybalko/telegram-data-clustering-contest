@@ -1,0 +1,46 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Mozilla To Stop Supporting Sideloaded Extensions In Firefox
+01 Nov 2019, 09:00 by BeauHD
+An anonymous reader quotes a report from ZDNet: Mozilla has announced today plans to discontinue one of the three methods through which extensions can be installed in Firefox. Starting next year, Firefox users won't be able to install extensions by placing an XPI extension file inside a special folder inside a user's Firefox directory. The method, known as sideloading, was initially created to aid developers of desktop apps. In case they wanted to distribute a Firefox extension with their desktop app, the developers could configure the app's installer to drop a Firefox XPI extension file inside the Firefox browser's folder. This method has been available to Firefox extension developers since the browser's early days. However, today, Mozilla announced plans to discontinue supporting sideloaded extensions, citing security risks. Mozilla plans to stop supporting this feature next year in a two-phase plan. The first will take place with the release of Firefox 73 in February 2020. Firefox will continue to read sideloaded extensions, but they'll be slowly converted into normal add-ons inside a user's Firefox profile, and made available in the browser's Add-ons section. By March 2020, with the release of Firefox 74, Mozilla plans to completely remove the ability to sideload an extension. By that point, Mozilla hopes that all sideloaded extensions will be moved inside users' Add-ons section.
+
+
+(zdnet.com)
+
+
+
+
+",en,"
+
+
+
+
+
+
+
+
+
+
+
+Mozilla To Stop Supporting Sideloaded Extensions In Firefox
+01 Nov 2019, 09:00 by BeauHD
+An anonymous reader quotes a report from ZDNet: Mozilla has announced today plans to discontinue one of the three methods through which extensions can be installed in Firefox. Starting next year, Firefox users won't be able to install extensions by placing an XPI extension file inside a special folder inside a user's Firefox directory. The method, known as sideloading, was initially created to aid developers of desktop apps. In case they wanted to distribute a Firefox extension with their desktop app, the developers could configure the app's installer to drop a Firefox XPI extension file inside the Firefox browser's folder. This method has been available to Firefox extension developers since the browser's early days. However, today, Mozilla announced plans to discontinue supporting sideloaded extensions, citing security risks. Mozilla plans to stop supporting this feature next year in a two-phase plan. The first will take place with the release of Firefox 73 in February 2020. Firefox will continue to read sideloaded extensions, but they'll be slowly converted into normal add-ons inside a user's Firefox profile, and made available in the browser's Add-ons section. By March 2020, with the release of Firefox 74, Mozilla plans to completely remove the ability to sideload an extension. By that point, Mozilla hopes that all sideloaded extensions will be moved inside users' Add-ons section.
+
+
+(zdnet.com)
+
+
+
+
+"

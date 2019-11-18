@@ -1,0 +1,98 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Analysis
+The SEC Does Not Want Crypto ETFs — What Will It Take to Get Approval?
+05 Nov 2019, 14:35 by Kirill Bryanov
+October has been a busy month in the race to register the first crypto exchange-traded fund compliant with the requirements of United States regulators. Following the Chicago Board Options Exchange withdrawing its proposal for VanEck/SolidX Bitcoin ETF earlier in September, the ETF filing from Bitwise Asset Management and NYSE Arca was turned down by the Securities and Exchange Commission on Oct. 9. The regulatory authority remained unconvinced of the applicants’ ability to prevent manipulative practices to the extent required by a national securities exchange.
+For a brief moment, the only standing Bitcoin ETF application has been a bid by the investment management firm Wilshire Phoenix — a proposal that its sponsors amended in early October to include updated custody rules. It wasn’t too long, however, before a new contender entered the race. 
+Investment management firm Kryptoin Investment Advisors, with the former World Gold Council executive Jason Toussaint at the helm of the effort, turned in an initial registration statement to the SEC for a Bitcoin ETF. This latest submission may prove to be the latest in a series of fruitful attempts to convince the regulator to accept an ETF — or will it? What will it take for the commission to finally give the go-ahead for a crypto ETF, and is the new proposal up to par?
+The new gold
+The new proposal’s sponsor, Kryptoin Investment Advisors LLC, is a Delaware-domiciled subsidiary of the fintech company Kryptoin ETF Systems, which is registered in the Cayman Islands. The firm specializes in developing AI-driven products for crypto financial markets.
+Donnie Kim is the firm’s founder and CEO, while Toussaint — an industry veteran with more than 20 years of experience with exchange-traded instruments — holds the position of head of exchange-traded products at Kryptoin Investment Advisors.
+As CEO of World Gold Trust Services, Toussaint was instrumental in the creation of one of the first commodity-based ETFs — the SPDR Gold Shares (GLD), which was first listed on the New York Stock Exchange in November 2004 and had once been the world’s largest ETF.
+Toussaint’s involvement with gold-backed financial instruments is no coincidence as far as his new assignment goes. In serving as assets underlying ETFs, both Bitcoin (BTC) and gold differ from stocks of publicly traded companies, as they place additional regulatory scrutiny in terms of price discovery on the spot exchanges where they are traded. Indeed, the regulatory challenges faced by ETFs backed by gold and Bitcoin are in many ways similar: In both cases, the SEC first wants to get a solid grasp of what is going on in the underlying markets.
+What the SEC wants
+One of the regulator’s major concerns when evaluating new commodity-based ETFs is establishing whether the underlying market is resistant to manipulation, in accordance with Section 6(b)(5) of the Securities Exchange Act. So far, no proposal filed with the SEC has been able to demonstrate such in regard to Bitcoin markets. 
+Yet, the act outlines an alternative route by which an ETF can win approval: Showing that the listing exchange has entered a “comprehensive surveillance-sharing agreement with a regulated market of significant size.”
+Such agreements between exchanges and underlying markets — by facilitating the exchange of granular trading data — are supposed to provide additional transparency and enable regulators to investigate suspicious trading behavior should the need arise.
+In the 122-page order disapproving the Bitwise application, the SEC commissioners deemed that the evidence brought by the proposal’s sponsor insufficiently supported the claim that the “real” spot market for Bitcoin, when “fake and/or non-economic data is removed,” is sufficiently resistant to manipulation.
+Demonstrating that a “surveillance-sharing agreement with a regulated market of significant size” exists is a heavy burden as well. Even if there is an arrangement in place, the sponsor has to convince the regulator that the entity on the other side of it qualifies as a “significant, regulated market.” 
+In the Bitwise case, NYSE Arca — the proposal’s sponsor — tried to leverage the respectability of Bitcoin futures traded on the Chicago Mercantile Exchange, yet failed to show that the market was “significant.”
+The Kryptoin Investment Advisors’ hope to clear this hurdle rests with using the CME CF Bitcoin Reference Rate, which captures transaction information from five major trading platforms: Bitstamp, Coinbase Pro, itBit, Kraken and Gemini. The applicants argue that this aggregated index “provides an accurate reference to the average spot price of Bitcoin,” and is more resistant to manipulation than other measurement strategies.
+What are the odds?
+Most of the crypto finance professionals who have spoken to Cointelegraph on the matter were skeptical that any of Bitcoin ETF’s short-term prospects would win the SEC’s approval. However, many sounded more optimistic when talking about medium to long-term prospects. Michael Ou, CEO of the fintech security firm CoolBitX, expects that the latest proposal will share the fate of its predecessors:
+“It would seem that the cryptocurrency industry just doesn’t meet the SEC’s expectations of a well-behaved and well-regulated industry. This comes as no real surprise, as previously unregulated — and sometimes still unregulated —exchanges have been seen to be influential in manipulating market prices within the cryptocurrency sector.”
+Charles Lu, CEO of the confidential ledger protocol Findora, also noted issues with price manipulation at the hands of exchange platforms:
+“Though Bitwise is well known for analyzing ‘real’ exchange volume, the SEC noted that many of the exchanges used by the proposed Bitwise ETF are not regulated in the US. For instance, Binance, the largest platform identified by Bitwise as real, with 39% of the ‘real’ volume, is not registered with either FinCEN or NYSDFS.”
+Christophe de Courson, co-founder and CEO of crypto investment firm Olymp Capital, mentioned unregulated exchanges as a major hurdle as well, adding insufficient liquidity to the list of concerns:
+“Firstly, there is not enough liquidity on spot and derivative markets for institutional-grade investors to enter. This comes with a high level of volatility, making it difficult to manage in a portfolio. Secondly, operating in this market comes hand in hand with a lot of regulatory issues and unregulated cryptocurrency exchanges operating outside the US also play a crucial role in Bitcoin price movements.”
+As such, it appears that there is no single most important component to ensuring a successful crypto ETF. In addition to the points already raised, experts note that custody is an important precursor for any of the regulated crypto-based financial instruments, as evidenced, for example, by the Bakkt futures saga. Tyler Gallagher, CEO of investment firm Regal Assets, observed that there are three key pieces that must be in place before the first ETF is approved:
+“A regulated market for reliable pricing, proper market surveillance of exchanges to avoid market manipulation, and exceptional qualified custodians to ensure proper security and storage of the assets. The market has matured significantly over the past few years and is reaching a tipping point that should allow investors to see the approval of a Crypto ETF as early as next year.”
+Others believe that the progress on the Bitcoin ETF front will be commensurate with general regulatory advancements of the crypto industry. Nick Cowan, Managing Director and Founder of the Gibraltar Stock Exchange Group, commented:
+“Approval stems from a combination of two factors; time and understanding. Once the regulator has gotten to grips with the realities of this newly emerging asset class, only then will they become comfortable allowing such products into the market. This process will likely be a protracted one.”
+Tara Bogard, senior vice president of business development at the independent qualified custodian Kingdom Trust, said that it can take some time for an ETF to be approved, since, “Before the SEC can or will approve a crypto ETF, the need to first focus on generalized cryptocurrency regulation is necessary.” 
+With regard to the realistic timeline for the first crypto ETF approval, Lu is doubtful that the process will be expeditious: “For a bitcoin ETF proposal to gain SEC approval, the sponsor will need to prove that real price discovery is happening as opposed to market manipulation.” Lu does not believe this will happen in the near future, adding:
+“The SEC will require surveillance-sharing agreements with significant cryptocurrency exchanges — a requirement that few foreign-domiciled exchanges will agree to.”
+The general sentiment among industry professionals seems to be that of reserved optimism: Hardly anyone expects a breakthrough to occur very soon, yet most admit that it is only a matter of time. It could be the Kryptoin Investment Advisors’ proposal that will blaze the trail for crypto ETFs, or perhaps another one that is yet to be filed — at some point, the crypto industry will get its coveted prize, but not just yet.
+
+
+",en,"
+
+
+
+
+
+
+
+
+
+
+
+Analysis
+The SEC Does Not Want Crypto ETFs — What Will It Take to Get Approval?
+05 Nov 2019, 14:35 by Kirill Bryanov
+October has been a busy month in the race to register the first crypto exchange-traded fund compliant with the requirements of United States regulators. Following the Chicago Board Options Exchange withdrawing its proposal for VanEck/SolidX Bitcoin ETF earlier in September, the ETF filing from Bitwise Asset Management and NYSE Arca was turned down by the Securities and Exchange Commission on Oct. 9. The regulatory authority remained unconvinced of the applicants’ ability to prevent manipulative practices to the extent required by a national securities exchange.
+For a brief moment, the only standing Bitcoin ETF application has been a bid by the investment management firm Wilshire Phoenix — a proposal that its sponsors amended in early October to include updated custody rules. It wasn’t too long, however, before a new contender entered the race. 
+Investment management firm Kryptoin Investment Advisors, with the former World Gold Council executive Jason Toussaint at the helm of the effort, turned in an initial registration statement to the SEC for a Bitcoin ETF. This latest submission may prove to be the latest in a series of fruitful attempts to convince the regulator to accept an ETF — or will it? What will it take for the commission to finally give the go-ahead for a crypto ETF, and is the new proposal up to par?
+The new gold
+The new proposal’s sponsor, Kryptoin Investment Advisors LLC, is a Delaware-domiciled subsidiary of the fintech company Kryptoin ETF Systems, which is registered in the Cayman Islands. The firm specializes in developing AI-driven products for crypto financial markets.
+Donnie Kim is the firm’s founder and CEO, while Toussaint — an industry veteran with more than 20 years of experience with exchange-traded instruments — holds the position of head of exchange-traded products at Kryptoin Investment Advisors.
+As CEO of World Gold Trust Services, Toussaint was instrumental in the creation of one of the first commodity-based ETFs — the SPDR Gold Shares (GLD), which was first listed on the New York Stock Exchange in November 2004 and had once been the world’s largest ETF.
+Toussaint’s involvement with gold-backed financial instruments is no coincidence as far as his new assignment goes. In serving as assets underlying ETFs, both Bitcoin (BTC) and gold differ from stocks of publicly traded companies, as they place additional regulatory scrutiny in terms of price discovery on the spot exchanges where they are traded. Indeed, the regulatory challenges faced by ETFs backed by gold and Bitcoin are in many ways similar: In both cases, the SEC first wants to get a solid grasp of what is going on in the underlying markets.
+What the SEC wants
+One of the regulator’s major concerns when evaluating new commodity-based ETFs is establishing whether the underlying market is resistant to manipulation, in accordance with Section 6(b)(5) of the Securities Exchange Act. So far, no proposal filed with the SEC has been able to demonstrate such in regard to Bitcoin markets. 
+Yet, the act outlines an alternative route by which an ETF can win approval: Showing that the listing exchange has entered a “comprehensive surveillance-sharing agreement with a regulated market of significant size.”
+Such agreements between exchanges and underlying markets — by facilitating the exchange of granular trading data — are supposed to provide additional transparency and enable regulators to investigate suspicious trading behavior should the need arise.
+In the 122-page order disapproving the Bitwise application, the SEC commissioners deemed that the evidence brought by the proposal’s sponsor insufficiently supported the claim that the “real” spot market for Bitcoin, when “fake and/or non-economic data is removed,” is sufficiently resistant to manipulation.
+Demonstrating that a “surveillance-sharing agreement with a regulated market of significant size” exists is a heavy burden as well. Even if there is an arrangement in place, the sponsor has to convince the regulator that the entity on the other side of it qualifies as a “significant, regulated market.” 
+In the Bitwise case, NYSE Arca — the proposal’s sponsor — tried to leverage the respectability of Bitcoin futures traded on the Chicago Mercantile Exchange, yet failed to show that the market was “significant.”
+The Kryptoin Investment Advisors’ hope to clear this hurdle rests with using the CME CF Bitcoin Reference Rate, which captures transaction information from five major trading platforms: Bitstamp, Coinbase Pro, itBit, Kraken and Gemini. The applicants argue that this aggregated index “provides an accurate reference to the average spot price of Bitcoin,” and is more resistant to manipulation than other measurement strategies.
+What are the odds?
+Most of the crypto finance professionals who have spoken to Cointelegraph on the matter were skeptical that any of Bitcoin ETF’s short-term prospects would win the SEC’s approval. However, many sounded more optimistic when talking about medium to long-term prospects. Michael Ou, CEO of the fintech security firm CoolBitX, expects that the latest proposal will share the fate of its predecessors:
+“It would seem that the cryptocurrency industry just doesn’t meet the SEC’s expectations of a well-behaved and well-regulated industry. This comes as no real surprise, as previously unregulated — and sometimes still unregulated —exchanges have been seen to be influential in manipulating market prices within the cryptocurrency sector.”
+Charles Lu, CEO of the confidential ledger protocol Findora, also noted issues with price manipulation at the hands of exchange platforms:
+“Though Bitwise is well known for analyzing ‘real’ exchange volume, the SEC noted that many of the exchanges used by the proposed Bitwise ETF are not regulated in the US. For instance, Binance, the largest platform identified by Bitwise as real, with 39% of the ‘real’ volume, is not registered with either FinCEN or NYSDFS.”
+Christophe de Courson, co-founder and CEO of crypto investment firm Olymp Capital, mentioned unregulated exchanges as a major hurdle as well, adding insufficient liquidity to the list of concerns:
+“Firstly, there is not enough liquidity on spot and derivative markets for institutional-grade investors to enter. This comes with a high level of volatility, making it difficult to manage in a portfolio. Secondly, operating in this market comes hand in hand with a lot of regulatory issues and unregulated cryptocurrency exchanges operating outside the US also play a crucial role in Bitcoin price movements.”
+As such, it appears that there is no single most important component to ensuring a successful crypto ETF. In addition to the points already raised, experts note that custody is an important precursor for any of the regulated crypto-based financial instruments, as evidenced, for example, by the Bakkt futures saga. Tyler Gallagher, CEO of investment firm Regal Assets, observed that there are three key pieces that must be in place before the first ETF is approved:
+“A regulated market for reliable pricing, proper market surveillance of exchanges to avoid market manipulation, and exceptional qualified custodians to ensure proper security and storage of the assets. The market has matured significantly over the past few years and is reaching a tipping point that should allow investors to see the approval of a Crypto ETF as early as next year.”
+Others believe that the progress on the Bitcoin ETF front will be commensurate with general regulatory advancements of the crypto industry. Nick Cowan, Managing Director and Founder of the Gibraltar Stock Exchange Group, commented:
+“Approval stems from a combination of two factors; time and understanding. Once the regulator has gotten to grips with the realities of this newly emerging asset class, only then will they become comfortable allowing such products into the market. This process will likely be a protracted one.”
+Tara Bogard, senior vice president of business development at the independent qualified custodian Kingdom Trust, said that it can take some time for an ETF to be approved, since, “Before the SEC can or will approve a crypto ETF, the need to first focus on generalized cryptocurrency regulation is necessary.” 
+With regard to the realistic timeline for the first crypto ETF approval, Lu is doubtful that the process will be expeditious: “For a bitcoin ETF proposal to gain SEC approval, the sponsor will need to prove that real price discovery is happening as opposed to market manipulation.” Lu does not believe this will happen in the near future, adding:
+“The SEC will require surveillance-sharing agreements with significant cryptocurrency exchanges — a requirement that few foreign-domiciled exchanges will agree to.”
+The general sentiment among industry professionals seems to be that of reserved optimism: Hardly anyone expects a breakthrough to occur very soon, yet most admit that it is only a matter of time. It could be the Kryptoin Investment Advisors’ proposal that will blaze the trail for crypto ETFs, or perhaps another one that is yet to be filed — at some point, the crypto industry will get its coveted prize, but not just yet.
+
+
+"

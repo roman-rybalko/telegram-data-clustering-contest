@@ -1,0 +1,36 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+احذر.. خلل بـ هواتف آندرويد يتيح لـ الهاكرز اختراق جهازك
+02 Nov 2019, 03:03 by شيماء عبد المنعم
+شيماء عبد المنعم قامت شركة جوجل Google الأمريكية، خلال الشهر الماضي، بإصدار تحديث جديد لتصحيح أحد أخطاء نظام التشغيل Android، والتي يمكن أن تسمح للمتسللين بنشر البرامج الضارة إلى هاتف قريب عبر ميزة غير معروفة بالنظام تسمى NFC beaming.وبحسب ما ذكره موقع ""zdnet"" التقني، تعمل ميزة NFC beaming عبر خدمة داخل أندرويد تعرف باسم Android Beam، وتتيح هذه الخدمة لجهاز أندرويد إرسال بيانات مثل الصور أو الملفات أو مقاطع الفيديو أو حتى التطبيقات إلى جهاز آخر قريب يستخدم موجات الراديو NFC (الاتصال بالحقل القريب)، كبديل للواي فاي أو خاصية Bluetooth.وعادة يتم تخزين التطبيقات (أو ملفات APK) المرسلة عبر ميزة NFC beaming على القرص، ويظهر إشعار على الشاشة يسأل مالك الجهاز عما إذا كان يريد السماح لخدمة NFC بتثبيت تطبيق من مصدر غير معروف.ولكن في يناير من هذا العام، اكنشف باحث أمني يدعي ""Y.Shafranovich""، أن التطبيقات المرسلة عبر NFC على أندرويد 8 أو الإصدارات الأحدث لن تظهر هذا الإشعار، بدلا من ذلك سيسمح الإشعار للمستخدم بتثبيت التطبيق بنقرة واحدة دون أي تحذير أمان.ويعد عدم وجود هذا الإشعار خلل أمني خطير بنظام التشغيل، حيث لا يسمح لأجهزة أندرويد تثبيت التطبيقات من ""مصادر غير معروفة""، من خارج متجر تطبيقات أندرويد جوجل بلاي بحيث يعتبر النظام هذه المصادر غير موثوق بها وغير متحقق منها عبر أنظمة أمان جوجل.وإذا أراد المستخدمون تثبيت تطبيق من خارج متجر Play، فيجب عليهم زيارة قسم ""تثبيت التطبيقات من مصادر غير معروفة"" في نظام التشغيل أندرويد الخاص بهم وتمكين الزر بجوار تلك الميزة.وكان خيار ""التثبيت من مصادر غير معروفة"" إعدادًا مثبتًا على مستوى النظام حتي أندرويد 8، ولكن بدءًا منه أعادت جوجل تصميم هذه الآلية في إعداد قائم على التطبيق.وبدءًا من الإصدارات الحديثة لأندرويد، يمكن للمستخدمين زيارة قسم ""تثبيت التطبيقات غير المعروفة"" في إعدادات أمان النظام، والسماح للتطبيقات المحددة بتثبيت تطبيقات أخرى علي سبيل المثال، يسمح الإعداد لتطبيقات مثل كروم وDropbox لتثبيت تطبيقات آخرى دون أن يتم حظرها، علي غرار متجر Play.ويكمن الخلل رقم CVE-2019-2114 في تطبيق Android Beam والذي يعتبر ضمن تطبيقات جوجل ويتلقى نفس مستوى الثقة كتطبيق رسمي.وقالت شركة جوجل: ""إن هذا لم يكن مقصودًا أن يحدث ، لأن خدمة Android Beam لم تكن تعني أبدًا وسيلة لتثبيت التطبيقات، ولكن كطريقة لنقل البيانات من جهاز إلى جهاز""، وقامت بإزالة تصحيحات خدمة Android Beam من قائمة التطبيقات الموثوق بها في شهر أكتوبر الماضي.ومع ذلك، لا يزال العديد من ملايين المستخدمين في خطر، إذا كان لدى المستخدمين خدمة NFC وتم تمكين خدمة Android Beam ، فيمكن للمتسللون استغلال نقطة ضعف الخدمة وزرع برامج ضارة على هواتفهم.وبما أن لا توجد مطالبة بالتثبيت من مصدر غير معروف، فإن النقر علي الاشعار يبدأ بتثبيت التطبيق الضار، وللحفاظ على أمان الجهاز، يمكن لأي مستخدم تعطيل كل من ميزة NFC وخدمة Android Beam، أو تحديث الهاتف لتلقي تحديثات الأمان لشهر أكتوبر 2019.
+
+
+",ar,"
+
+
+
+
+
+
+
+
+
+
+
+Beware .. Bug with Android phones allows hackers to penetrate your device
+02 Nov 2019, 03:03 by Shaimaa Abdel Moneim
+Last month, Google released a new patch to fix an Android operating system bug that could allow hackers to spread malware to a nearby phone via an unknown feature called NFC beaming. NFC beaming works through an Android service, known as Android Beam, that allows an Android device to send data such as images, files, videos, or even apps to another nearby device using NFC radio (near field communication), as an alternative to WiFi or Applications (or APK files) are usually stored A basket via NFC beaming on disk, and a notification appears on the screen asking the device owner if he wants to allow the NFC service to install an application from an unknown source, but in January this year, a security researcher named ""Y.Shafranovich"", revealed that applications sent via NFC on Android 8 or later will not show this notification, instead the notification will allow the user to install the app with a single click without any security warning; the absence of this notification is a serious security flaw in the operating system, as Android devices are not allowed to install apps from ""unknown sources"" ', From outside the Android app store Google Play so that the system considers these sources non-Mo If users want to install an app from outside the Play Store, they should visit the ""Install apps from unknown sources"" section of their Android operating system and enable the button next to that feature. Not known ""is a system-wide setting installed up to Android 8, but starting with Google has redesigned this mechanism in an application-based setting. Starting with recent versions of Android, users can visit the"" Install unknown apps ""section in system security settings, allowing specific apps Install other applications as a pain No, the setting allows apps like Chrome and Dropbox to install other apps without being blocked, such as the Play Store. The flaw number CVE-2019-2114 lies in the Android Beam app which is considered within Google Apps and receives the same level of confidence as an official app. This was not meant to happen, because Android Beam never meant a way to install apps, but as a way to transfer data from device to device, ”she removed Android Beam patches from the list of trusted apps last October. Many millions of users are still at risk, if users have NFC and Android Beam is enabled, they can Since there is no prompt to install from an unknown source, clicking on the notification starts installing the malicious app, and to keep the device safe, any user can disable both NFC and Android Beam, or update Phone to receive security updates for October 2019.
+
+
+"

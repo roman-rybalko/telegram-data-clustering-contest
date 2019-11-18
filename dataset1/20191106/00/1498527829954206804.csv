@@ -1,0 +1,112 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Google veröffentlicht RoT-Design als Open Source
+06 Nov 2019 by Alexandra Lindner
+
+Google veröffentlicht sein Projekt Open Titan als Open Source auf Github. Zusammen mit Partnern arbeitet Google im Rahme der Initiative an einem offenen Silizium-Chip-Design zur Hardware- und Software-Absicherung in unzähligen Geräten.
+
+
+Google arbeitet gemeinsam mit Partnern an einem Open-Source-Projekt für ein offenes Silizium-Chip-Design. Dieses soll als Root-of-Trust (RoT) in möglichst vielen Geräten zum Einsatz kommen.
+
+
+Der Open-Titan-Standard beginnt bereits beim Systemstart mit der Überprüfung der Firmware.
+
+Open Titan - so der Name der Initiative - schickt sich an, ein hochwertiges Silizium-RoT-Design sowie Richtlinien zur Integration in Servern, Speicher- und Peripheriegeräten sowie Rechenzentren zu schaffen. Besonders wichtig ist es der Initiative dabei, das Design transparent, vertrauenswürdig und natürlich sicherer zu gestalten, schreibt Google auf seinem Securityblog.
+Sichere Chips können dabei unterstützen, den beabsichtigten beziehungsweise vertrauenswürdigen Zustand der verwendeten Hardware sowie die darauf ausgeführte Software zu gewährleisten. Das neue RoT sorgt dafür, dass auch kritische Systemkomponenten nur mit autorisiertem und überprüfbarem Code gestartet werden kann.
+Verifiziert wird dabei zum Beispiel die Firmware. Weitere Sicherheit bietet eine kryptografisch eindeutige Maschinenidentität. Ebenfalls geschützt werden können gespeicherte Verschlüsselungskeys - selbst dann, wenn ein Unbefugter physischen Zugriff auf das betreffende Gerät hat.
+Eingesetzt werden könne die Technologie in vielerlei Geräten. Angefangen bei Server-Motherboards und Netzwerkkarten, über Client-Geräten (Laptops, Smartphones, Tablets und dergleichen) und Routern bis hin zu IoT-Geräten und mehr.
+Silizium-RoT-Design in Titan-Security- Keys und Pixel-Geräten
+Open Titan ist eng verbunden mit Googles Hardware-Sicherheitstoken Titan Security-key. In dem auf dem FIDO-Standard basierenden Hardware-Token sind bereits Chips mit Silizium-RoT-Design verbaut. Aber auch in Googles hauseigenen Pixel-Geräten kommt das neu entwickelte Silizium-Chip-Design schon zum Einsatz.
+Geleitet wird die Initiative nicht von Google selbst, sondern von dem gemeinnützigen Unternehmen Lowrisc. Außerdem mit an Bord sind die ETH Zürich, G + D Mobile Security, Nuvoton Technologie und Western Digital.
+Der Code steht öffentlich auf Github bereit.
+Verwandte Themen
+
+
+Hardware
+
+
+Open Source
+
+
+Sicherheit
+
+
+Software
+
+
+Google
+
+
+mehr >>
+
+
+
+
+
+",de,"
+
+
+
+
+
+
+
+
+
+
+
+Google publishes RoT design as open source
+06 Nov 2019 by Alexandra Lindner
+
+Google publishes its Open Titan project as open source on Github. Together with partners, Google is working on an open silicon chip design for hardware and software protection in countless devices.
+
+
+Google is working with partners on an open source project for an open silicon chip design. This should be used as Root-of-Trust (RoT) in as many devices as possible.
+
+
+The Open Titan standard starts with the firmware check at system startup.
+
+Open Titan - the name of the initiative - is set to create a high-quality silicon RoT design and guidelines for integration with servers, storage and peripherals, and data centers. It is particularly important for the initiative to make the design transparent, trustworthy and, of course, safer, Google writes on its security blog.
+Secure chips can help to ensure the intended or trusted state of the hardware used and the software running on it. The new RoT ensures that even critical system components can only be started with authorized and verifiable code.
+For example, the firmware is verified. Further security is provided by a cryptographically unique machine identity. Stored encryption keys can also be protected - even if an unauthorized person has physical access to the device in question.
+The technology can be used in many devices. Starting with server motherboards and network cards, through client devices (laptops, smartphones, tablets and the like) and routers to IoT devices and more.
+Silicon RoT design in titanium security keys and pixel devices
+Open Titan is closely tied to Google's hardware security token Titan Security-key. The hardware token based on the FIDO standard already incorporates chips with silicon RoT design. But in Google's own pixel devices, the newly developed silicon chip design is already used.
+The initiative is led not by Google itself, but by the nonprofit company Lowrisc. Also on board are ETH Zurich, G + D Mobile Security, Nuvoton Technology and Western Digital.
+The code is publicly available on Github.
+Related topics
+
+
+hardware
+
+
+Open source
+
+
+safety
+
+
+software
+
+
+Google
+
+
+more >>
+
+
+
+
+
+"

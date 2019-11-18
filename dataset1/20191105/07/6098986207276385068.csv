@@ -1,0 +1,266 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+12 вещей, которые нужно сделать после установки Windows 10
+05 Nov 2019, 07:00 by Дмитрий Сажко
+Как настроить ОС, чтобы работать с ней стало проще и удобнее.
+1. Установите обновления
+
+
+
+Это первый шаг, который вы должны предпринять в новой системе. Наверняка за то время, что ваш компьютер находился на прилавке, Microsoft успела выпустить множество патчей и исправлений. Накопившиеся обновления могут устанавливаться довольно долго, так что стоит разобраться с этим сразу.
+Во‑первых, убедитесь, что ваш компьютер подключён к интернету. Затем выберите меню «Пуск» и последовательно откройте «Параметры» → «Центр обновления Windows» → «Проверить наличие обновлений». Подождите, пока система установит все имеющиеся обновления.
+2. Обновите драйверы (опционально)
+Как правило, Windows 10 справляется с установкой драйверов автоматически, так что в большинстве случаев вы можете пропустить этот шаг. Но иногда всё же приходится устанавливать их вручную. Например, если вы заметили, что какое‑то оборудование — динамики, видеокарта, веб‑камера — работает некорректно с драйвером, который предложила Windows 10. Помочь в этом вам может бесплатное приложение Snappy Driver Installer.
+3. Установите браузер
+
+
+
+Если вы чувствуете, что Edge не для вас, прежде всего стоит установить более комфортный браузер. У вас есть на выбор Chrome, Firefox, Opera, Vivaldi и масса менее популярных вариантов, если вы вдруг хотите экзотики.
+
+Загрузить Chrome →
+
+Загрузить Firefox →
+
+Загрузить Opera →
+
+Загрузить Vivaldi →
+
+Установив веб‑обозреватель, нужно добавить к нему несколько необходимых расширений, и прежде всего — блокировщики рекламы (например AdBlock). Также стоит синхронизировать историю и настройки браузера с другими вашими устройствами.
+Узнайте больше 💻
+
+
+10 типов расширений, которые должны быть установлены в любом браузере
+
+
+4. Защитите систему антивирусом
+
+
+
+Windows 10 оснащена встроенным Windows Defender, всегда включённым по умолчанию. Кроме того, если вы приобрели компьютер с предустановленной операционной системой, на нём может быть также установлена пробная версия какого‑нибудь антивируса.
+Windows Defender — неплохой антивирус, которого в большинстве случаев вполне хватает для защиты домашнего ПК. Однако его может быть недостаточно, чтобы справляться с возможными сетевыми угрозами, если вы активно устанавливаете новое ПО и посещаете непроверенные сайты. К счастью, у вас есть возможность выбрать из списка лучших бесплатных антивирусов.
+5. Удалите лишние приложения
+Windows 10 поставляется с большим количеством встроенных и предустановленных приложений как от Microsoft, так и от производителя вашего компьютера. Но вы можете удалить то, чем не планируете пользоваться, чтобы расчистить место. Для этого откройте «Параметры» → «Приложения» → «Приложения и возможности», а затем щёлкните по ненужной программе правой кнопкой мыши и выберите «Удалить».
+6. Установите необходимые приложения
+Теперь нужно установить ПО для каждодневной работы. Вот бесплатные приложения, без которых не обойтись на вашем домашнем компьютере.
+
+Офисный пакет: OpenOffice, LibreOffice, WPS Office.
+Просмотрщики PDF: Sumatra, SlimPDF, PDF‑XChange.
+Почтовый клиент: Thunderbird, Mailspring, Sylpheed.
+Менеджер паролей: LastPass, KeePass, BitWarden.
+Архиватор: 7‑Zip, PeaZip.
+Мессенджеры: Telegram, Skype.
+Клиент для облачного хранилища: Dropbox, Google Drive и другие.
+Менеджер заметок: OneNote, Evernote, Simplenote.
+Аудио- и видеопроигрыватель: AIMP, foobar2000, MPC‑HC, VLC.
+
+7. Отключите автозапуск ненужных приложений
+
+
+
+При запуске Windows 10 автоматически стартуют приложения, которыми вы, возможно, пользуетесь нечасто. А чем меньше программ у вас в автозапуске, тем резвее будет загружаться система. Так что стоит убрать оттуда лишние.
+Для этого запустите «Диспетчер задач» комбинацией Ctrl + Shift + Esc, нажмите «Подробнее» и выберите вкладку «Автозагрузка». Затем щёлкните правой кнопкой мыши по приложению, которое хотите убрать из автозапуска, и нажмите «Отключить».
+Возьмите на заметку 💽
+
+
+Как оставить в автозагрузке Windows 10 только нужные приложения
+
+
+8. Смените приложения по умолчанию
+
+
+
+Встроенные приложения Windows неплохо смотрятся на планшетах, но на компьютере стоит заменить их на более функциональные. Сделать это можно так: откройте «Параметры» в меню «Пуск», затем щёлкните пункт «Приложения» и выберите «Приложения по умолчанию». Здесь вы можете кликнуть на предпочтительный браузер, почтовый клиент, проигрыватели для музыки и видео и просмотрщик изображений.
+Кроме того, вы можете более тонко настроить предпочтительные приложения по типам файлов, которые хотите открывать. Для этого щёлкните «Выбор стандартных приложений по типу файлов», чтобы ассоциировать ваши программы с отдельными форматами — PDF, DOCX, TXT и так далее.
+9. Перенесите папки пользователя
+
+
+
+Windows 10 хранит данные пользователя (документы, фотографии, музыку и видео) на том же разделе диска, где находится сама. И если ваш системник достаточно вместителен, можно оставить всё как есть.
+Но перенос пользовательских папок на другой диск или раздел даст вам несколько преимуществ. Прежде всего вы перестанете захламлять системный диск фильмами и музыкой, а это особенно важно, если ОС у вас установлена на SSD небольшого объёма. А ещё вам больше не придётся заботиться о сохранении своих данных при переустановке системы.
+Чтобы перенести пользовательские папки, откройте «Параметры» и перейдите в раздел «Система» → «Память устройства», затем — «Изменить место сохранения нового содержимого». Выберите, на каком диске вы хотите сохранять свои данные.
+10. Соедините Windows 10 со своим смартфоном
+
+
+
+Это совсем не обязательно, но почему бы и нет? Подключив компьютер к смартфону, вы сможете отправлять сообщения и просматривать уведомления Android или iPhone прямо на рабочем столе, открывать фотографии с телефона и отправлять ссылки из мобильных браузеров в Edge на десктопе.
+Для этого откройте «Параметры» → «Телефон» и нажмите «Добавить телефон». Выберите, с каким смартфоном связать Windows 10 — на Android или с iPhone. Если понадобится, войдите в свою учётную запись Microsoft. Укажите номер телефона — вам отправят ссылку на приложение. После перехода по ней установите программу из Google Play и введите логин и пароль. Затем следуйте инструкциям приложения, чтобы предоставить ему необходимые права, и ваш телефон и компьютер будут связаны друг с другом.
+11. Создайте точку восстановления
+
+
+
+Теперь, когда вы практически завершили настройку новой Windows, неплохо бы сохранить прогресс, чтобы в случае неполадок ваши труды не пропали бесследно. Для этого создадим точку восстановления Windows и настроим систему так, чтобы она периодически создавала такие точки сама.
+Для этого нажмите кнопку «Пуск» и введите «Панель управления», а затем перейдите к пункту «Система и безопасность» → «Система». Откройте пункт «Защита системы» на панели слева. Щёлкните «Параметры восстановления», включите создание точек восстановления и укажите, сколько места вы хотите отвести под них.
+Затем ниже выберите «Создать». Введите описание точки восстановления, чтобы вы смогли при необходимости легко её обнаружить, и подождите, пока она не будет создана. Готово. Теперь, если с вашей системой что‑то будет не так, вы легко сможете её восстановить.
+Изучите вопрос 🖥
+
+
+4 верных способа восстановить Windows
+
+
+12. Настройте резервное копирование
+
+
+
+Существует множество программ для резервного копирования, в том числе коммерческие решения от Acronis и Paragon. Но Windows 10 оснащена и встроенным инструментом для бэкапов.
+Чтобы воспользоваться им, откройте «Параметры» и щёлкните «Обновление и безопасность» → «Служба архивации». Затем добавьте диск, где хотите размещать резервные копии, и настройте периодичность их создания.
+Теперь ваша Windows 10 готова к использованию.
+UPD. Текст обновлён 05 ноября 2019 года.
+Читайте также 🧐
+
+
+7 вещей в Windows 10, которые бесят больше всего
+
+
+Как в Windows 10 отключить раздражающие уведомления
+
+
+Как включить автоматическую очистку диска в Windows 10 Creators Update
+
+
+Обложка: RoSonic / Shutterstock / Lifehacker
+
+
+",ru,"
+
+
+
+
+
+
+
+
+
+
+
+12 things to do after installing Windows 10
+05 Nov 2019, 07:00 by Dmitry Sazhko
+How to configure the OS to work with it has become easier and more convenient.
+1. Install updates
+
+
+
+This is the first step you must take in the new system. Surely for the time that your computer was on the counter, Microsoft managed to release a lot of patches and corrections. The accumulated updates can be installed for a long time, so you should deal with it right away.
+First, make sure your computer is connected to the Internet. Then select the “Start” menu and open “Settings” → “Windows Update” → “Check for Updates”. Wait for the system to install all available updates.
+2. Update drivers (optional)
+As a rule, Windows 10 handles installing drivers automatically, so in most cases you can skip this step. But sometimes you still have to install them manually. For example, if you notice that some equipment - speakers, a video card, a web camera - does not work correctly with the driver that Windows 10 offered, it can help you with the free Snappy Driver Installer application.
+3. Install a browser
+
+
+
+If you feel that Edge is not for you, you should first install a more comfortable browser. You have a choice of Chrome, Firefox, Opera, Vivaldi and a ton of less popular options if you suddenly want exotic ones.
+
+Download Chrome →
+
+Download Firefox →
+
+Download Opera →
+
+Download Vivaldi →
+
+After installing a web browser, you need to add several necessary extensions to it, and above all, ad blockers (for example, AdBlock). It’s also worth synchronizing your browser history and settings with your other devices.
+Learn more 💻
+
+
+10 types of extensions to be installed in any browser
+
+
+4. Protect the system with antivirus
+
+
+
+Windows 10 comes with built-in Windows Defender, always on by default. In addition, if you purchased a computer with a preinstalled operating system, a trial version of some antivirus may also be installed on it.
+Windows Defender is a good antivirus, which in most cases is enough to protect your home PC. However, it may not be enough to deal with possible network threats if you actively install new software and visit unverified sites. Fortunately, you have the opportunity to choose from the list of the best free antiviruses.
+5. Remove unnecessary applications
+Windows 10 comes with a large number of built-in and pre-installed applications from both Microsoft and the manufacturer of your computer. But you can delete what you do not plan to use to clear the place. To do this, open “Options” → “Applications” → “Applications and Features”, and then right-click on an unnecessary program and select “Delete”.
+6. Install the necessary applications
+Now you need to install the software for everyday work. Here are free apps you can’t do without on your home computer.
+
+Office suite: OpenOffice, LibreOffice, WPS Office.
+PDF viewers: Sumatra, SlimPDF, PDF ‑ XChange.
+Email client: Thunderbird, Mailspring, Sylpheed.
+Password Manager: LastPass, KeePass, BitWarden.
+Archiver: 7 ‑ Zip, PeaZip.
+Messengers: Telegram, Skype.
+Cloud Storage Client: Dropbox, Google Drive and others.
+Note Manager: OneNote, Evernote, Simplenote.
+Audio and video player: AIMP, foobar2000, MPC ‑ HC, VLC.
+
+7. Disable autorun unnecessary applications
+
+
+
+When you start Windows 10, applications that you may use infrequently will automatically start. And the fewer programs you have at startup, the faster the system will load. So it’s worth removing the extra ones from there.
+To do this, launch the ""Task Manager"" with the combination Ctrl + Shift + Esc, click ""Details"" and select the ""Startup"" tab. Then right-click on the application that you want to remove from autorun, and click ""Disable.""
+Take note 💽
+
+
+How to leave only necessary applications in Windows 10 startup
+
+
+8. Change default applications
+
+
+
+Built-in Windows applications look good on tablets, but on a computer it’s worth replacing them with more functional ones. You can do this this way: open the “Options” in the “Start” menu, then click on “Applications” and select “Default Applications”. Here you can click on your preferred browser, email client, music and video players and image viewer.
+In addition, you can fine-tune your preferred applications by the types of files you want to open. To do this, click ""Select standard applications by file type"" to associate your programs with individual formats - PDF, DOCX, TXT, and so on.
+9. Transfer user folders
+
+
+
+Windows 10 stores user data (documents, photos, music and videos) on the same partition of the disk where it is located. And if your system unit is spacious enough, you can leave everything as it is.
+But moving user folders to another drive or partition will give you several advantages. First of all, you will stop cluttering the system drive with movies and music, and this is especially important if your OS is installed on a small SSD. And you no longer have to worry about saving your data when reinstalling the system.
+To transfer user folders, open “Settings” and go to “System” → “Device Memory”, then “Change the location for saving new content.” Choose on which drive you want to save your data.
+10. Connect Windows 10 to your smartphone
+
+
+
+This is not necessary, but why not? By connecting your computer to your smartphone, you can send messages and view Android or iPhone notifications right on your desktop, open photos from your phone and send links from mobile browsers to Edge on your desktop.
+To do this, open “Settings” → “Phone” and click “Add Phone”. Choose which smartphone to associate Windows 10 with Android or iPhone. If necessary, log in to your Microsoft account. Enter the phone number - they will send you a link to the application. After clicking on it, install the program from Google Play and enter the username and password. Then follow the instructions of the application to grant it the necessary rights, and your phone and computer will be connected to each other.
+11. Create a recovery point
+
+
+
+Now that you’ve practically completed the setup of the new Windows, it would be nice to save your progress so that in case of malfunctions your work will not go missing. To do this, create a Windows restore point and configure the system so that it periodically creates such points itself.
+To do this, click the ""Start"" button and enter ""Control Panel"", and then go to ""System and Security"" → ""System"". Open System Protection in the left pane. Click ""Recovery Options"", enable the creation of recovery points and specify how much space you want to allocate for them.
+Then select “Create” below. Enter a description for the recovery point so that you can easily find it if necessary, and wait until it is created. Done. Now, if something is wrong with your system, you can easily restore it.
+Learn the question 🖥
+
+
+4 surefire ways to restore Windows
+
+
+12. Set up backup
+
+
+
+There are many backup programs available, including commercial solutions from Acronis and Paragon. But Windows 10 also has a built-in backup tool.
+To use it, open “Options” and click “Update and Security” → “Archive Service”. Then add the disk where you want to place the backups, and configure the frequency of their creation.
+Your Windows 10 is now ready for use.
+UPD. Text updated November 05, 2019.
+Read also 🧐
+
+
+7 things in Windows 10 that infuriate most
+
+
+How to disable annoying notifications in Windows 10
+
+
+How to enable automatic disk cleanup in Windows 10 Creators Update
+
+
+Cover: RoSonic / Shutterstock / Lifehacker
+
+
+"

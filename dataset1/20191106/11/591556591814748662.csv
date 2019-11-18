@@ -1,0 +1,52 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Chinese police arrest operators of 200,000-strong DDoS botnet
+06 Nov 2019, 11:27 by Catalin Cimpanu
+
+One of China's largest crackdown against botnet operators.
+
+
+
+
+Chinese police have cracked down and arrested a criminal group that operated a botnet of more than 200,000 infected websites that were being used to launch DDoS attacks.This is the first major crackdown on the part of Chinese authorities against a thriving local DDoS-for-hire scene, and the largest DDoS botnet authorities have ever shut down.Ever since the release of the Mirai IoT botnet source code online in late 2016, Chinese hackers have gotten a taste for building monster botnets, which they rent to other users via special services called DDoS booters (or DDoS stressors).A Cisco Talos report published in 2017 showed a sudden spike in the availability of Chinese-based DDoS-for-hire services. The report blamed a lack of intervention from Chinese authorities for the rise in Chinese-based DDoS booters, a number which has only grown larger and larger in recent months.In the meantime, Chinese DDoS botnet operators have also broadened their horizons. They no longer rely solely on Mirai and IoT devices for their DDoS cannon power. Local botnets have also started using vulnerabilities in web servers and coding frameworks in order to take over vulnerable systems.
+However, as the number of botnets has grown tremendously over the past years, DDoS attacks can no longer be ignored, even by the usually lax Chinese police.The downfall of the largest Chinese DDoS botnet known to date began in August 2018. Local media reports that police officers from the Jiangsu region were alerted about a large collection of hacked servers on the network of Xuzhou Telecom.
+The servers were infected with backdoors that allowed hackers to control the servers. The subsequent investigation revealed an operation that used vulnerabilities to plant malicious code on more than 200,000 websites, including many local Chinese portals and government sites.Earlier this week, following more than a year of investigations, Chinese police cracked down and arrested 41 suspects across 20 cities, including the two botnet operators.According to local media, the botnet was primarily used for launching DDoS attacks, with some attacks peaking at 200 Gbps.Authorities also confiscated 10 million yuan ($1.4 million) from the suspects.Besides DDoS attacks, the same botnet was also being used to deploy spam on the hacked websites, display malicious adverts, and perform cryptocurrency mining.
+
+
+",en,"
+
+
+
+
+
+
+
+
+
+
+
+Chinese police arrest operators of 200,000-strong DDoS botnet
+06 Nov 2019, 11:27 by Catalin Cimpanu
+
+One of China's largest crackdown against botnet operators.
+
+
+
+
+Chinese police have cracked down and arrested a criminal group that operated a botnet of more than 200,000 infected websites that were being used to launch DDoS attacks.This is the first major crackdown on the part of Chinese authorities against a thriving local DDoS-for-hire scene, and the largest DDoS botnet authorities have ever shut down.Ever since the release of the Mirai IoT botnet source code online in late 2016, Chinese hackers have gotten a taste for building monster botnets, which they rent to other users via special services called DDoS booters (or DDoS stressors).A Cisco Talos report published in 2017 showed a sudden spike in the availability of Chinese-based DDoS-for-hire services. The report blamed a lack of intervention from Chinese authorities for the rise in Chinese-based DDoS booters, a number which has only grown larger and larger in recent months.In the meantime, Chinese DDoS botnet operators have also broadened their horizons. They no longer rely solely on Mirai and IoT devices for their DDoS cannon power. Local botnets have also started using vulnerabilities in web servers and coding frameworks in order to take over vulnerable systems.
+However, as the number of botnets has grown tremendously over the past years, DDoS attacks can no longer be ignored, even by the usually lax Chinese police.The downfall of the largest Chinese DDoS botnet known to date began in August 2018. Local media reports that police officers from the Jiangsu region were alerted about a large collection of hacked servers on the network of Xuzhou Telecom.
+The servers were infected with backdoors that allowed hackers to control the servers. The subsequent investigation revealed an operation that used vulnerabilities to plant malicious code on more than 200,000 websites, including many local Chinese portals and government sites.Earlier this week, following more than a year of investigations, Chinese police cracked down and arrested 41 suspects across 20 cities, including the two botnet operators.According to local media, the botnet was primarily used for launching DDoS attacks, with some attacks peaking at 200 Gbps.Authorities also confiscated 10 million yuan ($1.4 million) from the suspects.Besides DDoS attacks, the same botnet was also being used to deploy spam on the hacked websites, display malicious adverts, and perform cryptocurrency mining.
+
+
+"

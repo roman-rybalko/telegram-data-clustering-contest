@@ -1,0 +1,50 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Samsung dejará de diseñar sus própios núcleos ARM, cierra el grupo de diseño
+04 Nov 2019 by Borja Rodríguez
+Según el analista de la industria Patrick Moorhead, de Moor Insights and Strategy, Samsung Electronics se encuentra cerrando las puertas de su grupo de diseño de CPUs personalizadas dentro de la compañía. Conocido por los diseños de SoCs móviles como Exynos 9110, 9810 y 9820, los más recientes, parece que no habrá más desarrollos futuros de SoCs Exynos personalizados para los dispositivos móviles de Samsung.
+En lugar de diseñar sus propios núcleos, Samsung ahora va a usar la serie de CPUs Cortex-A7x de referencia de ARM basada en el conjunto de instrucciones ARM v8, con los Cortex-A76 o Cortex-A77 como posibles candidatos para las cargas de trabajo de alto rendimiento.
+
+
+
+Los motivos detrás de esta decisión están en que Samsung no puede competir con los SoCs de Qualcomm, donde los Snapdragon ofrecen velocidades más altas que sus SoCs Exynos con núcleos personalizados, un problema cuando estás vendiendo un smartphone basado en Qualcomm para Estados Unidos y China, y ese mismo smartphone lo ofreces al otro lado del mundo con un SoC Exynos que ofrece un desempeño inferior.
+Samsung licenciará así la Propiedad Intelectual (IP) de diseño de ARM, por lo que Qualcomm será la única que ofrezca núcleos personalizados mientras que ARM podrá solventar los problemas de rendimiento que tenía Samsung para ofrecer una mayor paridad.
+vía: TechPowerUp
+
+
+",es,"
+
+
+
+
+
+
+
+
+
+
+
+Samsung will stop designing its own ARM cores, the design group closes
+04 Nov 2019 by Borja Rodríguez
+According to industry analyst Patrick Moorhead of Moor Insights and Strategy, Samsung Electronics is closing the doors of its custom CPU design group within the company. Known for mobile SoC designs such as Exynos 9110, 9810 and 9820, the most recent ones, it seems that there will be no further developments of custom Exynos SoCs for Samsung mobile devices.
+Instead of designing their own cores, Samsung will now use the ARM reference series of Cortex-A7x CPUs based on the ARM v8 instruction set, with the Cortex-A76 or Cortex-A77 as possible candidates for workloads high perfomance.
+
+
+
+The reasons behind this decision are that Samsung cannot compete with Qualcomm SoCs, where Snapdragons offer higher speeds than their Exynos SoCs with custom cores, a problem when you're selling a Qualcomm-based smartphone to the United States and China, and that same smartphone you offer on the other side of the world with an Exynos SoC that offers inferior performance.
+Samsung will thus license the Intellectual Property (IP) of ARM design, so Qualcomm will be the only one that offers custom cores while ARM can solve Samsung's performance problems to offer greater parity.
+via: TechPowerUp
+
+
+"

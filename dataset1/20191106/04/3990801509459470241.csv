@@ -1,0 +1,50 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Facebook Groups members’ info left exposed to 100 app developers
+06 Nov 2019, 04:45 by Ravie Lakshmanan
+Facebook has revealed that an unspecified number of third-party apps from as many as 100 developers may have improperly accessed Groups members’ data without adequate permissions to do so.
+The social media behemoth said it found 11 developers to have gotten hold of group members’ information in the last 60 days, based on an ongoing review of third-party access to Facebook user data.
+It has since cut off all the partners from accessing this information.
+Facebook brought about major changes to third-party developer access in the wake of Cambridge Analytica data scandal. It restricted those that use the Groups API to be vetted by the company and removed their capabilities to access the member list of a group as well as the names and profile photos attached to posts or comments.
+The company’s ongoing security audit, however, revealed instances to the contrary, Facebook said, adding the violators were mostly social media management and video streaming apps.
+It didn’t disclose the names the developers or the apps that were flagged during the review. Nor did it reveal the number of users who may have been affected by the issue.
+“Although we’ve seen no evidence of abuse, we will ask them to delete any member data they may have retained and we will conduct audits to confirm that it has been deleted,” the company said.
+The disclosure is the latest in a string of privacy missteps by Facebook as it seeks to clean up its data practices, honor its $5 billion settlement with the Federal Trade Commission earlier this year, and embark on a privacy-focused vision for the social network.
+
+
+",en,"
+
+
+
+
+
+
+
+
+
+
+
+Facebook Groups members’ info left exposed to 100 app developers
+06 Nov 2019, 04:45 by Ravie Lakshmanan
+Facebook has revealed that an unspecified number of third-party apps from as many as 100 developers may have improperly accessed Groups members’ data without adequate permissions to do so.
+The social media behemoth said it found 11 developers to have gotten hold of group members’ information in the last 60 days, based on an ongoing review of third-party access to Facebook user data.
+It has since cut off all the partners from accessing this information.
+Facebook brought about major changes to third-party developer access in the wake of Cambridge Analytica data scandal. It restricted those that use the Groups API to be vetted by the company and removed their capabilities to access the member list of a group as well as the names and profile photos attached to posts or comments.
+The company’s ongoing security audit, however, revealed instances to the contrary, Facebook said, adding the violators were mostly social media management and video streaming apps.
+It didn’t disclose the names the developers or the apps that were flagged during the review. Nor did it reveal the number of users who may have been affected by the issue.
+“Although we’ve seen no evidence of abuse, we will ask them to delete any member data they may have retained and we will conduct audits to confirm that it has been deleted,” the company said.
+The disclosure is the latest in a string of privacy missteps by Facebook as it seeks to clean up its data practices, honor its $5 billion settlement with the Federal Trade Commission earlier this year, and embark on a privacy-focused vision for the social network.
+
+
+"

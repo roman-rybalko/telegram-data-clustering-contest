@@ -1,0 +1,80 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Баг актуальной версии Firefox позволяет заблокировать браузер
+06 Nov 2019, 10:12 by Олег Иванов
+
+
+
+Злоумышленники активно эксплуатируют баг в актуальной версии Firefox. Ошибка позволяет заблокировать работу браузера с помощью вывода мошеннических уведомлений.
+Внезапно возникающие окна сообщают пользователю, что на его компьютере установлена пиратская версия Windows.
+Жертве достаточно просто посетить злонамеренный сайт, уведомления будут появляться безо всякого взаимодействия с пользователем.
+«Пожалуйста, остановитесь и не выключайте компьютер... Ключ реестра вашего компьютера заблокирован. Почему мы заблокировали вашу систему? Потому что используется нелегальный ключ реестра Windows. Вы работаете на пиратской системе, которая оправляет вирусы в интернет. Ваша система взломана. Мы блокируем компьютер ради вашей безопасности», — гласит сообщение мошенников.
+Далее в сообщении пользователю предлагают позвонить по бесплатному номеру в течение пяти минут. В противном случае мошенники грозят отключить компьютер.
+
+
+
+Примечательно, что эта атака сработает как в Windows, так и в macOS. Единственный способ закрыть всплывающие окна — принудительно завершить работу браузера Firefox. Однако и здесь есть опасность, что интернет-обозреватель откроет те же вкладки, что приведёт к бесконечному циклу вывода мошеннических уведомлений.
+Исследователи предупреждают, что данный баг используется на нескольких сайтах, одним из которых является d2o1sv4d11x6bc[.]cloudfront[.]net/firefox/index.html. Джером Сегура из Malwarebytes предоставил код, который задействуется на злонамеренных ресурсах для атак на пользователей Firefox:
+
+
+
+Также Сегура сообщил компании о проблеме через баг-трекер. Специалисты Mozilla работают над патчем для этого бага.
+
+Читайте также
+
+
+
+
+
+
+",ru,"
+
+
+
+
+
+
+
+
+
+
+
+A bug of the current version of Firefox allows you to block the browser
+06 Nov 2019, 10:12 by Oleg Ivanov
+
+
+
+Attackers actively exploit the bug in the current version of Firefox. The error allows you to block the browser using the output of fraudulent notifications.
+Suddenly occurring windows inform the user that a pirated version of Windows is installed on his computer.
+It is enough for the victim to simply visit the malicious site, notifications will appear without any interaction with the user.
+“Please stop and do not turn off the computer ... The registry key of your computer is locked. Why did we block your system? Because it uses an illegal Windows registry key. You are working on a pirate system that sends viruses to the Internet. Your system is hacked. We lock the computer for your safety, ”the scam says.
+Further in the message, the user is prompted to call the toll free number within five minutes. Otherwise, fraudsters threaten to turn off the computer.
+
+
+
+It is noteworthy that this attack will work on both Windows and macOS. The only way to close pop-ups is to force the Firefox browser to shut down. However, there is a danger here that the Internet browser will open the same tabs, which will lead to an endless cycle of outputting fraudulent notifications.
+Researchers warn that this bug is used on several sites, one of which is d2o1sv4d11x6bc [.] Cloudfront [.] Net / firefox / index.html. Jerome Segura of Malwarebytes provided code that exploits malicious resources to attack Firefox users:
+
+
+
+Segura also informed the company about the problem through a bug tracker. Mozilla specialists are working on a patch for this bug.
+
+Read also
+
+
+
+
+
+
+"

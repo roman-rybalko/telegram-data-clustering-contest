@@ -1,0 +1,52 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Facebook: 100 app developers could have improperly accessed user data
+Data included names, profile pictures
+06 Nov 2019, 01:15 by Brian Fung, CNN Business
+(CNN) - Dozens of third-party apps may have had access to certain Facebook user data for months after the company moved to place limits on that information, the social media giant said on Tuesday.
+The company says that as many as 100 app developers could have accessed the user data, which included names and profile pictures, through a programming interface for Facebook groups.
+Following revelations concerning Cambridge Analytica in April 2018, Facebook clamped down on its software, restricting what information apps could collect from Facebook users. The changes aimed to restrict what information apps could collect from Facebook users. But a number of outside developers ""retained access to group member information, like names and profile pictures in connection with group activity, from the Groups API, for longer than we intended,"" Facebook said in a blog post.
+It was not immediately clear how many Facebook users or group members may have been affected by the issue. Facebook declined to share a numerical estimate with CNN.
+At least 11 software developers were confirmed to have accessed the information within the last 60 days, Facebook said in the blog post, though it said there was ""no evidence of abuse."" Facebook has since revoked their access to that information, and will conduct audits of the 11 developers to ensure they delete any data they had collected improperly.
+Asked whether the 11 developers could face punitive consequences, Facebook told CNN, ""The issue isn't with developers doing anything wrong; it's with Facebook permitting access for longer than should have happened.""
+The disclosure is the latest in a string of admissions by Facebook as it seeks to clean up its data practices, which were the subject of a $5 billion settlement with the Federal Trade Commission earlier this year. In September, the company said it was suspending tens of thousands of apps amid its internal review.
+""The new framework under our agreement with the FTC means more accountability and transparency into how we build and maintain products,"" Facebook wrote in the blog post. ""As we continue to work through this process we expect to find more examples of where we can improve, either through our products or changing how data is accessed.""
+
+
+",en,"
+
+
+
+
+
+
+
+
+
+
+
+Facebook: 100 app developers could have improperly accessed user data
+Data included names, profile pictures
+06 Nov 2019, 01:15 by Brian Fung, CNN Business
+(CNN) - Dozens of third-party apps may have had access to certain Facebook user data for months after the company moved to place limits on that information, the social media giant said on Tuesday.
+The company says that as many as 100 app developers could have accessed the user data, which included names and profile pictures, through a programming interface for Facebook groups.
+Following revelations concerning Cambridge Analytica in April 2018, Facebook clamped down on its software, restricting what information apps could collect from Facebook users. The changes aimed to restrict what information apps could collect from Facebook users. But a number of outside developers ""retained access to group member information, like names and profile pictures in connection with group activity, from the Groups API, for longer than we intended,"" Facebook said in a blog post.
+It was not immediately clear how many Facebook users or group members may have been affected by the issue. Facebook declined to share a numerical estimate with CNN.
+At least 11 software developers were confirmed to have accessed the information within the last 60 days, Facebook said in the blog post, though it said there was ""no evidence of abuse."" Facebook has since revoked their access to that information, and will conduct audits of the 11 developers to ensure they delete any data they had collected improperly.
+Asked whether the 11 developers could face punitive consequences, Facebook told CNN, ""The issue isn't with developers doing anything wrong; it's with Facebook permitting access for longer than should have happened.""
+The disclosure is the latest in a string of admissions by Facebook as it seeks to clean up its data practices, which were the subject of a $5 billion settlement with the Federal Trade Commission earlier this year. In September, the company said it was suspending tens of thousands of apps amid its internal review.
+""The new framework under our agreement with the FTC means more accountability and transparency into how we build and maintain products,"" Facebook wrote in the blog post. ""As we continue to work through this process we expect to find more examples of where we can improve, either through our products or changing how data is accessed.""
+
+
+"

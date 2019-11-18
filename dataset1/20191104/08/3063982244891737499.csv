@@ -1,0 +1,324 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Hurra, wir haben Gigabit!
+Die Fritzbox 6591 Cable für den Einsatz in Gigabit-Kabelnetzen ist seit Mai im Handel erhältlich. Wir haben getestet, wie schnell Vodafone mit Docsis 3.1 tatsächlich Daten überträgt und ob sich der Umstieg auf einen schnellen Router lohnt.
+04 Nov 2019, 08:05 by Friedhelm Greis
+Wie wird es sich künftig in einer Gigabit-Gesellschaft leben? Union und SPD haben in ihrem Koalitionsvertrag ""einen flächendeckenden Ausbau mit Gigabit-Netzen bis 2025"" versprochen. Schon jetzt bieten Netzbetreiber wie Vodafone einen Kabelanschluss mit Download-Raten von bis zu 1 Gigabit pro Sekunde. Wir haben bei einem Anschluss mit Docsis 3.1 in Berlin getestet, was diese Übertragungsgeschwindigkeit bringt und ob Vodafone seine Versprechen halten kann.
+Für den Test haben wir einen Fritzbox-Kabelrouter verwendet, der seit Mai 2019 im Handel frei erhältlich ist. Die Fritzbox 6591 Cable soll nach Angaben des Herstellers AVM im Download ""mehrfache Gigabit-Geschwindigkeiten"" erreichen. Von der Ausstattung her unterscheidet sie sich wenig von der Fritzbox 6590, die Golem.de ausführlich getestet hat. Beide Router verfügen über vier Gigabit-LAN-Anschlüsse, Multi-User-MIMO, WLAN-Mesh und unterstützen WLAN ac bis 1.733 MBit/s, 5 GHz und WLAN n bis 800 MBit/s, 2,4 GHz. Allerdings hat die Fritzbox 6591 Cable zwei schnelle USB-3.0-Anschlüsse.
+Unkomplizierter Umstieg
+Nach Angaben von Vodafone ist Docsis 3.1 seit April 2019 in ganz Berlin verfügbar. Vermarktet wird der Tarif Red Internet & Phone 1000 Cable mit ""bis zu"" 1.000 MBit/s maximal im Download und ""bis zu"" 50 MBit/s maximal im Upload. In den entsprechenden AGB (PDF) garantiert Vodafone einen minimalen Downstream von 600 MBit/s und einen ""normalen"" Downstream von 800 MBit/s. Beim Upstream liegt die Mindestrate bei 15 Mbit/s und die ""normale"" Rate bei 35 Mbit/s.
+Verhältnismäßig unkompliziert gestaltet sich der Software-Umstieg von der Fritzbox 6490 Cable zu dem neuen Topmodell. Zahlreiche Einstellungen lassen sich exportieren und in den neuen Router importieren. Dazu zählen die Einstellungen für die Heimnetzgeräte, Fritzbox-Nutzer, Telefonie und WLAN. Bei einem Wechsel von Geräten des gleichen Modells würden normalerweise alle Einstellungen übernommen, sagt AVM, allerdings nicht bei Kabelroutern. In diesem Fall müssen unter anderem noch die Internetzugangsdaten eingetragen werden. Die Anmeldung des neuen Routers bei Vodafone stellt ebenfalls kein Problem dar.
+Fritzbox passt nicht mehr in Multimediaschrank
+Nicht übernommen werden bei unserem Wechsel VPN-Einstellungen oder die Zugangsdaten von MyFritz. Was jedoch etwas ärgerlich ist: Die neue Fritzbox ist mit 85 mm deutlich höher als die 6490 mit 59 mm. Daher passt sie nicht mehr in den bisher genutzten Multimediaschrank mit dem darin befindlichen Patchfeld. Eine bessere WLAN-Durchdringung der Wohnung, vor allem im 5-Gigahertz-Bereich, ist trotz der Auslagerung aus dem Schrank nicht zu registrieren. Zwar findet sich ein Platz für die Box im Regal, doch die Patchkabel müssen nun aus dem Schrank durch die Wand gezogen werden.
+
+
+
+Die Fritzbox 6591 Cable bietet die Standardanschlüsse für LAN, Telefon und USB, sogar 3.0. (Foto: AVM)
+
+
+
+Die Box ist deutlich größer als die 6490 Cable. (Foto: AVM)
+
+
+
+Das sieht enttäuschend aus für einen Gigabit-Anschluss: Speedtest bei Computerbild. (Screenshot: Golem.de)
+
+
+
+Der Speedtest bei Deutsche Glasfaser ist nicht viel besser. (Screenshot: Golem.de)
+
+
+
+Das sieht schon gut aus: Fast.com wird von Netflix angeboten. (Screenshot: Golem.de)
+
+
+
+Docis 3.1 nutzt nur einen Kanal, und das nur in Empfangsrichtung. (Screenshot: Golem.de)
+
+
+
+Docsis 3.1 kann aber bei Bedarf auf die Kanäle von Docsis 3.0 zurückgreifen. (Screenshot: Golem.de)
+
+
+
+Im Tagesverlauf war die Downstream-Rate ziemlich konstant, auch zur Primetime am Abend. (Screenshot: Golem.de)
+
+
+
+Die 83,5 GByte von GTA V brauchen trotz Gigabitanschluss fast eine Stunde. (Screenshot: Golem.de)
+
+
+Die 6591 beherrscht selbstredend den Vorgängerstandard Docsis 3.0. Dieser ist ohnehin noch für den Upstream erforderlich, denn der Anschluss unterstützt in Senderichtung kein Docsis 3.1. Full Duplex als Ergänzung zu Docsis 3.1, auch als Docsis 4.0 bezeichnet, kommt erst in einigen Jahren. Die Fritzbox ist dafür ebenfalls noch nicht ausgelegt. Die Frequenzspektren beider Standards sind unabhängig voneinander, so dass eine starke Auslastung von Docsis 3.0 sich nicht auf Docsis 3.1 auswirkt. Andererseits kann Doscis 3.1 die Frequenzen von Docsis 3.0 nutzen, wenn die Bandbreite einmal nicht ausreichen sollte.
+Die entscheidende Frage beim Internetzugang lautet, wie viel von der versprochenen Übertragungsrate tatsächlich beim Nutzer ankommt.
+Hohe Downloadrate nachts um halb eins
+Das LAN innerhalb der Wohnung sollte zumindest ein Gigabit zwischen Router und Endgeräten garantieren. Erste Speedtests über Seiten wie Speedtest.computerbild.de und Deutsche-glasfaser.de verlaufen eher ernüchternd. Die Download-Werte schwanken zwischen 140 und 370 MBit pro Sekunde. Sehr weit von einem Gigabit entfernt.
+Besser sind die Werte beim Netflix-Angebot Fast.com. Dort wird nachts um halb eins immerhin ein Download von 930 MBit/s erreicht. Das ist schon sehr nahe dran am Gigabit. Möglicherweise wird in den Nachtstunden sogar der Maximalwert erreicht. Bekanntlich sinkt die Übertragungsrate im Kabelnetz vor allem in den Abendstunden, da es sich um ein Shared Medium handelt.
+Automatisierte Abfrage mit Speed-CLI
+Um nachts nicht für eine Bandbreitenmessung aufstehen zu müssen, suchen wir nach einer automatisierten Lösung. Solche Messungen nachts und tagsüber sind zudem unbeeinflusst von anderen Down- und Uploads der im Haushalt genutzten Endgeräte. Dazu gibt es unter anderem die Möglichkeit, über eine Kommandozeilenschnittstelle (CLI) die Seite von Speedtest.net aufzurufen. Speedtest.net wird von Ookla betrieben, dem weltweit größten kommerziellen Anbieter für Geschwindigkeitstests im Internet. Nach Ansicht von Providern liefert auch Speedtest nicht immer perfekte Ergebnisse, was insbesondere bei Bandbreiten von mehr als 500 oder 1.000 MBit der Fall sein soll. Für gute Messungen sei auch iPerf geeignet.
+Die Ergebnisse unseres Tests mit Speedtest-Cli lassen sich jedoch praktischerweise in eine MySQL-Datenbank (jetzt MariaDB) eintragen. Dazu gibt es eine gute Anleitung auf dem Blog Byte-style.de mit dem erforderlichen Python-Skript. Dieses lässt sich dann per Cronjob in beliebigen Zeitabständen aufrufen. Mit einem Kommandozeilenbefehl wie ""mariadb --user=username --password=password Datenbankname -B -e ""select * from Tabellenname;"" | sed ""s/'/\'/;s/\t/\"",\""/g;s/^/\""/;s/$/\""/;s/\n//g"" > dateiname.csv"" lässt sich die Tabelle in eine csv-Datei exportieren, die man dann mit Programmen wie Excel auswerten kann.
+Im Zeitraum vom 14. bis 27. September 2019 zeichnete ein Raspberry Pi 4 mit Hilfe der Skripte 1.163 Messungen auf (PDF). Diese ergaben eine maximale Übertragungsrate von 891 MBit/s bei einem Durchschnittswert aller Messungen von 761 MBit/s. Allerdings gab es auch 83 Messungen unter der garantierten Mindestübertragungsrate von 600 MBit/s. Der niedrigste Wert wurde nachts um 4.30 Uhr mit 322 MBit/s gemessen. Speedtest routete dabei in 140 Fällen über den Provider Syseleven, einmal über DNS:Net und in den restlichen Fällen über die Strato-Tochter Cronon.
+Kaum Schwankungen im Tagesverlauf
+Am oberen Limit lag hingegen der Upstream-Mittelwert mit 50,23 MBit, wobei es nur wenige Messwerte unter 40 MBit/s gab. Der Durchschnittswert beim Ping lag bei 18,8 Millisekunden und schwankte zwischen 15,3 und 23,7 Millisekunden. Damit entsprachen die Messungen den Erfahrungen, die Golem.de-Nutzer im vergangenen Mai in einer kleinen Umfrage geschildert hatten. Allerdings registrierten die meisten Golem.de-Nutzer kürzere Ping-Zeiten.
+Erstaunlicherweise lagen bei allen Messungen, die wir später im Oktober durchführten, die Upstream-Werte nie über 23 MBit/s und erreichten teilweise nicht einmal die versprochene Mindestrate von 15 MBit/s. Pünktlich in der Nacht zum 1. November sprangen die Werte dann wieder auf 50 MBit/s.
+
+
+
+Die Fritzbox 6591 Cable bietet die Standardanschlüsse für LAN, Telefon und USB, sogar 3.0. (Foto: AVM)
+
+
+
+Die Box ist deutlich größer als die 6490 Cable. (Foto: AVM)
+
+
+
+Das sieht enttäuschend aus für einen Gigabit-Anschluss: Speedtest bei Computerbild. (Screenshot: Golem.de)
+
+
+
+Der Speedtest bei Deutsche Glasfaser ist nicht viel besser. (Screenshot: Golem.de)
+
+
+
+Das sieht schon gut aus: Fast.com wird von Netflix angeboten. (Screenshot: Golem.de)
+
+
+
+Docis 3.1 nutzt nur einen Kanal, und das nur in Empfangsrichtung. (Screenshot: Golem.de)
+
+
+
+Docsis 3.1 kann aber bei Bedarf auf die Kanäle von Docsis 3.0 zurückgreifen. (Screenshot: Golem.de)
+
+
+
+Im Tagesverlauf war die Downstream-Rate ziemlich konstant, auch zur Primetime am Abend. (Screenshot: Golem.de)
+
+
+
+Die 83,5 GByte von GTA V brauchen trotz Gigabitanschluss fast eine Stunde. (Screenshot: Golem.de)
+
+
+Anders als erwartet gab es kaum Schwankungen im Tagesverlauf. Der höchste Stundenmittelwert wurde nachts zwischen 3 und 4 Uhr mit 789 MBit/s gemessen, der niedrigste zwischen 6 und 7 Uhr mit 714 MBit. Zur Primetime zwischen 20 und 21 Uhr lag die Downstreamrate mit 772 MBit/s immer noch recht hoch. Laut Vodafone ist Docsis 3.1 leistungsfähiger als Docsis 3.0, wenn viele Nutzer gleichzeitig Daten herunterladen. So nutze Docsis 3.1 zusammenhängende Frequenzblöcke und nicht mehr einzelne Kanäle sowie ein um 30 Prozent effizienteres Kodierungsverfahren. Durch eine andere Fehlerkorrektur sei der Standard stabiler in der Übertragung. Auch könne Docsis 3.1 mehr Frequenzen als der Vorgängerstandard nutzen.
+Doch wie erklärt Vodafone die vielen Messungen unterhalb der garantierten Mindestgeschwindigkeit?
+Fehlerquelle schwer zu identifizieren
+Vodafone kommentiert die Daten mit den Worten: ""Wir sind mit den wenigen Messergebnissen, die unterhalb von 600 Mbit/s lagen, nicht zufrieden. Auch wenn hier unklar ist, wo genau die Fehlerquelle für die nicht zufriedenstellende Übertragungsleistung liegt."" Auch sei nicht plausibel erklärbar, warum selbst zu Nachtzeiten, in denen das Netz nur schwach genutzt werde, Geschwindigkeiten von weniger als 600 MBit/s gemessen worden seien. ""Weitere mögliche Fehlerquellen außerhalb unserer eigenen Netzinfrastruktur müssen daher ebenfalls als potenziell leistungsreduzierend herangezogen werden - beispielsweise die für Geschwindigkeit- und Latenz-Messungen genutzten Server"", teilte Vodafone-Sprecher Thorsten Höpken mit.
+Die eigenen Performance-Messungen hätten allerdings gezeigt, dass das Datenaufkommen in dem betroffenen Netzsegment in den vergangenen Monaten kontinuierlich gestiegen sei. ""Damit das Kabelnetz erst gar nicht an seine Kapazitätsengpässe stößt, werden wir hier in den kommenden Wochen entsprechende Segmentierungsmaßnahmen zur Erhöhung durchführen"", sagte Höpken.
+40 Prozent der Neukunden wählen Gigabit-Tarif
+Doch selbst bei einer durchschnittlichen Übertragungsrate von 761 MBit/s stellt sich die Frage, ob sich der höhere Preis dafür lohnt. Zwar kostet der Gigabit-Tarif für Neukunden nur 19,99 Euro im Monat, doch im zweiten Jahr werden 69,99 Euro monatlich fällig. Dieser Preis gilt auch für Bestandskunden. Da es auch möglich ist, nach dem ersten Jahr wieder in einen günstigeren Tarif zu wechseln, wählen nach Angaben von Vodafone 40 Prozent der Neukunden den Gigabit-Tarif.
+Gigabit-Raten im Downstream lohnen sich vor allem, wenn gleichzeitig mehrere datenintensive Anwendungen laufen. Das kann abends beim parallelen 4K-Streamen in der Familie oder in einem Büro mit mehreren Mitarbeitern der Fall sein. Bei einem Download mit 1 GBit/s lässt sich rechnerisch innerhalb einer Stunde einen Datenvolumen von 450 GByte herunterladen. Damit dürften die meisten Festplatten schnell gefüllt werden. Vorteilhaft ist in jedem Fall der höhere Upload mit bis zu 50 MBit/s.
+Umstieg auf Docsis 3.1 auch bei 50 MBit möglich
+Zudem können nur die wenigsten Server solche Downloadraten bereitstellen. So dauert das Herunterladen der 83,5 GByte von Grand Theft Auto V über Steam bei uns trotz Gigabit-Verbindung fast eine Stunde. Laut Steam liegt dabei die maximale Downloadrate bei 58,3 MByte pro Sekunde (466 MBit/s). Bei vielen anderen Anwendungen lässt sich hingegen kaum ein Unterschied feststellen, ob die Leitung 100 oder 1.000 MBit übertragen kann. Wird innerhalb der Wohnung WLAN genutzt, sinken die Raten ohnehin beträchtlich.
+
+
+
+Die Fritzbox 6591 Cable bietet die Standardanschlüsse für LAN, Telefon und USB, sogar 3.0. (Foto: AVM)
+
+
+
+Die Box ist deutlich größer als die 6490 Cable. (Foto: AVM)
+
+
+
+Das sieht enttäuschend aus für einen Gigabit-Anschluss: Speedtest bei Computerbild. (Screenshot: Golem.de)
+
+
+
+Der Speedtest bei Deutsche Glasfaser ist nicht viel besser. (Screenshot: Golem.de)
+
+
+
+Das sieht schon gut aus: Fast.com wird von Netflix angeboten. (Screenshot: Golem.de)
+
+
+
+Docis 3.1 nutzt nur einen Kanal, und das nur in Empfangsrichtung. (Screenshot: Golem.de)
+
+
+
+Docsis 3.1 kann aber bei Bedarf auf die Kanäle von Docsis 3.0 zurückgreifen. (Screenshot: Golem.de)
+
+
+
+Im Tagesverlauf war die Downstream-Rate ziemlich konstant, auch zur Primetime am Abend. (Screenshot: Golem.de)
+
+
+
+Die 83,5 GByte von GTA V brauchen trotz Gigabitanschluss fast eine Stunde. (Screenshot: Golem.de)
+
+
+Der Umstieg auf einen Docsis-3.1-Router kann sich aber auch dann lohnen, wenn man keinen Gigabit-Anschluss möchte. So bietet Vodafone die Fritzbox 6591 Cable ab dem 100-MBit-Tarif für eine Miete von 6,99 Euro im Monat an. Wer den Einstiegstarif mit 50 MBit/s nutzt, kann mit einem Eigengerät dennoch von den Vorteilen von Docsis 3.1 profitieren. Ein gutes Beispiel dafür, dass die Routerfreiheit sinnvoll für die Endkunden ist. Ohnehin hat sich der Kauf bei einem aktuellen Preis von 240 Euro nach 35 Monaten amortisiert. Gigabit braucht derzeit längst nicht jeder. Aber von der erforderlichen Hardware kann man schon profitieren, bevor Deutschland im Jahr 2025 in einer Gigabit-Gesellschaft lebt.
+
+
+",de,"
+
+
+
+
+
+
+
+
+
+
+
+Hurray, we have gigabit!
+The Fritzbox 6591 Cable for use in Gigabit cable networks is available since May in the trade. We tested how fast Vodafone actually transmits data with Docsis 3.1 and whether switching to a fast router is worthwhile.
+04 Nov 2019, 08:05 by Friedhelm Greis
+How will it live in a gigabit society in the future? Union and SPD have promised in their coalition agreement ""a nationwide expansion with gigabit networks until 2025"". Network operators such as Vodafone already offer a cable connection with download rates of up to 1 gigabit per second. We have tested on a connection with Docsis 3.1 in Berlin, which brings this transfer speed and whether Vodafone can keep its promises.
+For the test, we have used a Fritzbox cable router, which is freely available since May 2019 commercially. The Fritzbox 6591 Cable should reach according to data of the manufacturer AVM in the Download ""multiple gigabit speeds"". From the equipment she differs little from the Fritzbox 6590, the Golem.de has tested extensively. Both routers have four Gigabit LAN ports, multi-user MIMO, WLAN mesh and support WLAN ac up to 1733 Mbps, 5 GHz and WLAN n up to 800 Mbps, 2.4 GHz. However, the Fritzbox 6591 Cable has two fast USB 3.0 ports.
+Uncomplicated change
+According to Vodafone, Docsis 3.1 has been available throughout Berlin since April 2019. The tariff Red Internet & Phone 1000 Cable is marketed with ""up to"" 1,000 MBit / s maximum in the download and ""up to"" 50 MBit / s maximum in the upload. In the corresponding GTC (PDF) Vodafone guarantees a minimum downstream of 600 MBit / s and a ""normal"" downstream of 800 MBit / s. In the upstream, the minimum rate is 15 Mbps and the ""normal"" rate is 35 Mbps.
+The software conversion from the Fritzbox 6490 Cable to the new top model is comparatively uncomplicated. Many settings can be exported and imported into the new router. These include the settings for the home network devices, Fritzbox users, telephony and WLAN. With a change of devices of the same model would normally take over all attitudes, says AVM, however not with cable routers. In this case, among other things, the Internet access data must be entered. Registration of the new router with Vodafone is also no problem.
+Fritzbox fits no longer in multimedia cabinet
+We do not take over VPN settings or the access data of MyFritz. What is a little annoying, however: The new Fritzbox is significantly higher with 85 mm than the 6490 with 59 mm. Therefore, it no longer fits in the previously used multimedia cabinet with its patch panel. A better Wi-Fi penetration of the apartment, especially in the 5-gigahertz range, despite the outsourcing from the cabinet not to register. Although there is a place for the box in the shelf, but the patch cables must now be pulled out of the cabinet by the wall.
+
+
+
+The Fritzbox 6591 Cable offers the standard connections for LAN, telephone and USB, even 3.0. (Photo: AVM)
+
+
+
+The box is significantly larger than the 6490 Cable. (Photo: AVM)
+
+
+
+That looks disappointing for a Gigabit connection: Speedtest at Computerbild. (Screenshot: Golem.de)
+
+
+
+The speed test on German fiber is not much better. (Screenshot: Golem.de)
+
+
+
+That looks good: Fast.com is offered by Netflix. (Screenshot: Golem.de)
+
+
+
+Docis 3.1 uses only one channel, and only in the receive direction. (Screenshot: Golem.de)
+
+
+
+However, Docsis 3.1 can use Docsis 3.0 channels as needed. (Screenshot: Golem.de)
+
+
+
+During the course of the day, the downstream rate was fairly constant, even at prime time in the evening. (Screenshot: Golem.de)
+
+
+
+The 83.5 GB of GTA V need almost an hour despite the gigabit connection. (Screenshot: Golem.de)
+
+
+The 6591 naturally dominates the previous standard Docsis 3.0. This is still required for upstream anyway, because the port does not support Docsis 3.1 in the send direction. Full Duplex as a supplement to Docsis 3.1, also known as Docsis 4.0, will be released in a few years. The Fritzbox is not yet designed for it. The frequency spectra of both standards are independent, so a heavy load on Docsis 3.0 will not affect Docsis 3.1. On the other hand, Doscis 3.1 can use the frequencies of Docsis 3.0, if the bandwidth should not be sufficient.
+The crucial question in Internet access is how much of the promised transfer rate actually arrives at the user.
+High download rate at half past twelve in the night
+The LAN inside the apartment should guarantee at least a gigabit between router and terminal devices. First speed tests on sites like Speedtest.computerbild.de and Deutsche-glasfaser.de are rather sobering. The download values vary between 140 and 370 MBit per second. Very far from a gigabit.
+Better are the values in the Netflix offer Fast.com. There at night at half past twelve at least a download of 930 MBit / s is reached. That's very close to the Gigabit. You may even reach the maximum value during the night hours. As is known, the transmission rate in the cable network drops, especially in the evening, because it is a shared medium.
+Automated query with Speed-CLI
+In order not to have to get up at night for a bandwidth measurement, we are looking for an automated solution. Such measurements at night and during the day are also unaffected by other downloads and uploads of household devices used in the home. Among other things, there is the option of calling the Speedtest.net page via a command line interface (CLI). Speedtest.net is powered by Ookla, the world's largest commercial speed testing provider on the Internet. According to Providern Speedtest does not always deliver perfect results, which should be the case especially for bandwidths of more than 500 or 1000 MBit. For good measurements, iPerf is also suitable.
+However, the results of our test with Speedtest-Cli can conveniently be entered into a MySQL database (now MariaDB). There is a good guide on the blog Byte-style.de with the required Python script. This can then be called by cronjob at any time intervals. With a command line command like ""mariadb --user = username --password = password database - name -B -e"" select * from tablename; ""| sed"" s / '/ \' /; s / \ t / \ "", \"" / g; s / ^ / \ ""/; s / $ / \"" /; s / \ n // g ""> filename.csv"" lets you export the table to a csv file, which you then evaluate with programs such as Excel can.
+In the period from 14 to 27 September 2019, a Raspberry Pi 4 recorded 1,163 measurements using the scripts (PDF). These gave a maximum transfer rate of 891 Mbps with an average of all measurements of 761 Mbps. However, there were also 83 measurements below the guaranteed minimum transmission rate of 600 Mbps. The lowest value was measured at 4.30pm at 322 Mbps at night. Speedtest routed in 140 cases via the provider Syseleven, once via DNS: Net and in the remaining cases via the Strato subsidiary Cronon.
+There are hardly any fluctuations during the day
+At the upper limit, however, the upstream average was 50.23 MBit, with only a few readings below 40 MBit / s. The average ping was 18.8 milliseconds, ranging from 15.3 to 23.7 milliseconds. Thus, the measurements corresponded to the experiences that Golem.de users had described in a small survey last May. However, most Golem.de users registered shorter ping times.
+Surprisingly, in all the measurements we performed later in October, the upstreams never exceeded 23 Mbps and sometimes did not even reach the promised minimum rate of 15 Mbps. On time in the night of November 1, the values jumped back to 50 MBit / s.
+
+
+
+The Fritzbox 6591 Cable offers the standard connections for LAN, telephone and USB, even 3.0. (Photo: AVM)
+
+
+
+The box is significantly larger than the 6490 Cable. (Photo: AVM)
+
+
+
+That looks disappointing for a Gigabit connection: Speedtest at Computerbild. (Screenshot: Golem.de)
+
+
+
+The speed test on German fiber is not much better. (Screenshot: Golem.de)
+
+
+
+That looks good: Fast.com is offered by Netflix. (Screenshot: Golem.de)
+
+
+
+Docis 3.1 uses only one channel, and only in the receive direction. (Screenshot: Golem.de)
+
+
+
+However, Docsis 3.1 can use Docsis 3.0 channels as needed. (Screenshot: Golem.de)
+
+
+
+During the course of the day, the downstream rate was fairly constant, even at prime time in the evening. (Screenshot: Golem.de)
+
+
+
+The 83.5 GB of GTA V need almost an hour despite the gigabit connection. (Screenshot: Golem.de)
+
+
+Unlike expected, there were hardly any fluctuations during the day. The highest hourly average was measured between 3 and 4 o'clock in the morning with 789 MBit / s, the lowest between 6 o'clock and 7 o'clock with 714 MBit. At prime time between 20 and 21 o'clock the downstream rate with 772 MBit / s was still quite high. According to Vodafone Docsis 3.1 is more powerful than Docsis 3.0 when many users download data at the same time. For example, Docsis 3.1 uses contiguous blocks of frequency, not individual channels, and a 30 percent more efficient coding process. By another error correction the standard is more stable in the transmission. Also Docsis 3.1 could use more frequencies than the previous standard.
+But how does Vodafone explain the many measurements below the guaranteed minimum speed?
+Error source difficult to identify
+Vodafone comments on the data with the words: ""We are not satisfied with the few measurement results that were below 600 Mbit / s, although it is unclear exactly where the source of the error isMoreover, it is not possible to explain plausibly why speeds of less than 600 Mbit / s were measured even at night when the network was only used to a limited extent. ""Further possible sources of error outside of our own network infrastructure must therefore be provided can also be used as a potential performance-reducing - for example, the servers used for speed and latency measurements, ""said Vodafone spokesman Thorsten Höpken.
+The own performance measurements would have shown, however, that the data volume in the affected network segment has increased continuously in recent months. ""So that the cable network does not meet its capacity bottlenecks at all, we will carry out corresponding segmentation measures here in the coming weeks to increase them,"" said Höpken.
+40 percent of new customers choose gigabit tariff
+But even with an average transfer rate of 761 MBit / s, the question arises whether the higher price is worthwhile. Although the gigabit tariff for new customers costs only 19.99 euros a month, but in the second year will be 69.99 euros monthly due. This price is also valid for existing customers. Since it is also possible to switch back to a more favorable tariff after the first year, according to Vodafone, 40 percent of new customers choose the gigabit tariff.
+Gigabit rates in the downstream are especially worthwhile if several data-intensive applications are running at the same time. This may be the case in the evening with parallel 4K streaming in the family or in a multi-person office. With a download with 1 GBit / s, a data volume of 450 GB can be calculated within one hour. This should fill most hard drives quickly. In any case, the higher upload is advantageous with up to 50 MBit / s.
+Switch to Docsis 3.1 also possible with 50 MBit
+In addition, only very few servers can provide such download rates. For example, downloading the 83.5 GB of Grand Theft Auto V via Steam takes almost an hour, despite the gigabit connection. According to Steam, the maximum download rate is 58.3 MB per second (466 MBit / s). For many other applications, however, there is little difference in whether the line can carry 100 or 1000 Mbps. If Wi-Fi is used within the apartment, the rates will drop considerably anyway.
+
+
+
+The Fritzbox 6591 Cable offers the standard connections for LAN, telephone and USB, even 3.0. (Photo: AVM)
+
+
+
+The box is significantly larger than the 6490 Cable. (Photo: AVM)
+
+
+
+That looks disappointing for a Gigabit connection: Speedtest at Computerbild. (Screenshot: Golem.de)
+
+
+
+The speed test on German fiber is not much better. (Screenshot: Golem.de)
+
+
+
+That looks good: Fast.com is offered by Netflix. (Screenshot: Golem.de)
+
+
+
+Docis 3.1 uses only one channel, and only in the receive direction. (Screenshot: Golem.de)
+
+
+
+However, Docsis 3.1 can use Docsis 3.0 channels as needed. (Screenshot: Golem.de)
+
+
+
+During the course of the day, the downstream rate was fairly constant, even at prime time in the evening. (Screenshot: Golem.de)
+
+
+
+The 83.5 GB of GTA V need almost an hour despite the gigabit connection. (Screenshot: Golem.de)
+
+
+Switching to a Docsis 3.1 router can also be worthwhile if you do not want a gigabit port. So Vodafone offers the Fritzbox 6591 Cable from the 100-Mbit tariff for a rent of 6.99 euros per month. If you use the entry-level tariff with 50 MBit / s, you can still benefit from the advantages of Docsis 3.1 with your own device. A good example of the fact that router freedom makes sense for the end customer. Anyway, the purchase has amortized at a current price of 240 euros after 35 months. At the moment, not everyone needs gigabit. But you can already benefit from the necessary hardware before Germany in 2025 lives in a gigabit society.
+
+
+"

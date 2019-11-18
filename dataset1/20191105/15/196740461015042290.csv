@@ -1,0 +1,130 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Cómo ajustar las aplicaciones a la pantalla de tu móvil Android
+¿Las aplicaciones de tu teléfono no se ven correctamente en la pantalla? Bordes negros, interfaz descolocada... Te enseñamos a arreglarlo.
+05 Nov 2019, 15:24 by Iván Linares
+Que las pantallas de los móviles han cambiado durante los últimos años es algo que se aprecia a simple vista: el tamaño que ahora nos parece normal, hace unos años nos hubiese sorprendido por ser gigantesco. No solo eso, que hay otro aspecto físico que ha ido evolucionando en las pantallas: su ratio o relación de aspecto.
+No es lo mismo tener una pantalla de 6 pulgadas (diagonal) y 19:9 (ratio) que disponer de un panel con idéntica diagonal y que su pantalla sea 21:9. Aparte de que las dimensiones del teléfono van a variar, y con ello la comodidad al sostenerlo y utilizarlo, existe un inconveniente que sufren a diario los desarrolladores de aplicaciones: que sus apps se adapten correctamente a la relación de aspecto de la pantalla.
+Android posee tal amalgama de fabricantes, tipos de pantalla, ratios, diagonales… que resulta imposible desarrollar una aplicación y que esta se vea perfectamente en todos los teléfonos. Por ello, siempre habrá móviles que, al iniciar una app o juego, tengan que incluir bandas negras para así adaptar la interfaz a la relación de aspecto de la pantalla. O lo que es peor: en ocasiones la interfaz se descoloca; dando como resultado una mala experiencia de uso.
+
+
+
+¿Cómo corregir estos problemas de visualización? Android provee de diversas herramientas que conviene conocer. Iremos paso por paso para que puedas ajustar correctamente tus aplicaciones a la pantalla del teléfono.
+Escalado de aplicaciones
+
+
+
+Con la llegada de los ratios de pantalla alargados, la mayoría de fabricantes introdujo una opción dentro de los ajustes para así adaptar las aplicaciones a las distintas relaciones de aspecto. Es muy sencillo de modificar, solo tienes que hacer lo siguiente:
+
+Accede a los ajustes de tu móvil y entra dentro de las opciones de Pantalla.
+Busca algo como Escalado de aplicaciones o Aplicaciones de pantalla completa. El nombre puede variar.
+Elige qué aplicaciones se ejecutarán aprovechando todo el tamaño de la pantalla. Lo mejor es marcar las que no estén adaptadas. También puedes activarlas todas y asegurarte de que se verán bien.
+
+A pesar de que lo puedes hacer directamente desde los ajustes anteriores, es probable que al arrancar una aplicación no optimizada te hayas encontrado con un mensaje en la parte inferior de la pantalla diciendo algo como Ajustar aplicación a tamaño completo. Pulsando ahí el escalado se realiza desde la ejecución de la app.
+Reduce o amplía el tamaño del contenido de la pantalla
+
+
+
+Ejemplo de una aplicación que no se adapta a las proporciones de pantalla
+Puedes conseguir que la interfaz de las aplicaciones (y del sistema) sea más grande o más pequeña; un cambio que permitirá a la aplicación adaptarse mejor a la relación de aspecto eliminando así el efecto que produce tener iconos y menús desordenados en pantalla. Su uso es muy sencillo:
+
+Entra en los ajustes de tu Android y ve a Pantalla.
+Acude a las opciones de ajustar el tamaño de la pantalla o contenido.
+Ajusta el selector al tamaño que desees: hacia la izquierda más pequeño; hacia la derecha más grande. Todos los elementos de la pantalla se graduarán en consecuencia, incluidas las aplicaciones.
+
+Esto es muy efectivo para aquellas apps y juegos que no se ven proporcionados: variando el tamaño del contenido consigues que la aplicación encaje mejor en las dimensiones y ratio disponibles. Conviene utilizarlo si con el escalado de aplicaciones no solucionaste el problema: asegúrate de que se visualiza la app completamente y no queda nada fuera de la pantalla.
+Fuerza una densidad de pantalla distinta desde los ajustes de desarrollador
+
+
+
+En el caso de que variando el tamaño del contenido la aplicación siga viéndose mal, siempre puedes probar a forzar la densidad de pantalla. Con esto consigues que el contenido de las aplicaciones sea más o menos grande, todo dependerá del número que marques. Si la interfaz no se ve correctamente porque los elementos se descolocan, hacer un cambio en la densidad puede conseguir que dichos elementos se ajusten mejor al espacio disponible.
+Para forzar un cambio en la densidad de pantalla debes hacer lo siguiente:
+
+Ve a los ajustes de tu Android y busca las opciones de sistema.
+Entra en la información del teléfono.
+Pulsa 10 veces sobre «Número de compilación«. Verás que se activan las opciones de desarrollador (quizá necesites introducir la contraseña del teléfono).
+Entra en las opciones de desarrollador y busca el ajuste marcado como «Ancho más pequeño«. Esto es la densidad de píxeles a la que está funcionando tu teléfono. Es importante que anotes el número actual.
+Para hacer que el contenido de la pantalla sea más grande solo tienes que reducir el número de la densidad. En nuestro caso es de 470, por lo que podemos ponerlo en 400, por ejemplo. Ve poco a poco comprobando el resultado hasta que veas las aplicaciones como desees.
+Para hacer la pantalla más pequeña tienes que hacer lo contrario, aumentar el número de la densidad. Debes ir poco a poco hasta ajustar correctamente el contenido.
+Debes tener en cuenta que la interfaz, aplicaciones y/o elementos de la pantalla quizá no se redimensionen bien a la densidad que has elegido. La única manera de ajustarlo todo correctamente es realizando pruebas de ensayo/error.
+Para volver a la densidad original solo necesitas escribir el valor por defecto en el ajuste de «Ancho más pequeño». También puedes acudir a los ajustes de pantalla y entrar en las opciones de tamaño de contenido.
+
+Variar la densidad de la pantalla no entraña riesgos más allá de perder una correcta visualización si te pasas de número; por más que baste escribir la densidad original para revertir el cambio. Como siempre decimos, prueba y adapta tu móvil a tu gusto: Android es el mejor en eso.
+
+
+",es,"
+
+
+
+
+
+
+
+
+
+
+
+How to adjust the applications to the screen of your Android mobile
+Are your phone's applications not displayed correctly on the screen? Black borders, faded interface ... We show you how to fix it.
+05 Nov 2019, 15:24 by Iván Linares
+That mobile screens have changed in recent years is something that can be seen with the naked eye: the size that now seems normal, a few years ago we would have been surprised to be gigantic. Not only that, there is another physical aspect that has evolved on the screens: their ratio or aspect ratio.
+It is not the same to have a screen of 6 inches (diagonal) and 19: 9 (ratio) that have a panel with identical diagonal and that its screen is 21: 9. Apart from the fact that the dimensions of the phone will vary, and with it the comfort when holding and using it, there is an inconvenience that application developers suffer daily: that their apps adapt correctly to the aspect ratio of the screen.
+Android has such an amalgamation of manufacturers, screen types, ratios, diagonals ... that it is impossible to develop an application and that it is perfectly visible on all phones. Therefore, there will always be mobiles that, when starting an app or game, have to include black bands to adapt the interface to the aspect ratio of the screen. Or what is worse: sometimes the interface fades; resulting in a bad use experience.
+
+
+
+How to correct these display problems? Android provides various tools that should be known. We will go step by step so you can correctly adjust your applications to the phone screen.
+Application scaling
+
+
+
+With the arrival of the elongated screen ratios, most manufacturers introduced an option within the settings in order to adapt the applications to the different aspect ratios. It is very simple to modify, you just have to do the following:
+
+Access your mobile settings and enter the Screen options.
+Look for something like Application Scaling or Full Screen Applications. The name may vary.
+Choose which applications will run taking advantage of the entire screen size. It is best to mark those that are not adapted. You can also activate them all and make sure they will look good.
+
+Although you can do it directly from the previous settings, it is likely that when you start an application that is not optimized, you have encountered a message at the bottom of the screen saying something like Fit application to full size. Pressing there the scaling is done from the execution of the app.
+Reduce or enlarge the screen content
+
+
+
+Example of an application that does not adapt to screen proportions
+You can make the interface of the applications (and the system) larger or smaller; a change that will allow the application to adapt better to the aspect ratio thus eliminating the effect of having messy icons and menus on the screen. Its use is very simple:
+
+Enter the settings of your Android and go to Screen.
+Go to the options to adjust the screen size or content.
+Set the selector to the size you want: to the smallest left; to the larger right. All screen elements will graduate accordingly, including applications.
+
+This is very effective for those apps and games that are not provided: by varying the size of the content you get the application to fit better in the available dimensions and ratio. It is convenient to use it if with the scaling of applications you did not solve the problem: make sure that the app is completely visualized and nothing is left out of the screen.
+Force a different screen density from developer settings
+
+
+
+In the event that by varying the size of the content the application continues to look bad, you can always try to force the screen density. With this you get that the content of the applications is more or less large, everything will depend on the number you dial. If the interface is not seen correctly because the elements fade, making a change in density can make these elements better fit the available space.
+To force a change in screen density you must do the following:
+
+Go to your Android settings and look for system options.
+Enter the phone information.
+Click on ""Build number"" 10 times. You will see that the developer options are activated (you may need to enter the phone password).
+Enter the developer options and look for the setting marked ""Smaller Width"". This is the pixel density at which your phone is working. It is important that you write down the current number.
+To make the screen content bigger you just have to reduce the density number. In our case it is 470, so we can put it in 400, for example. Go slowly checking the result until you see the applications as you wish.
+To make the screen smaller you have to do the opposite, increase the density number. You must go slowly until you adjust the content correctly.
+You should keep in mind that the interface, applications and / or screen elements may not be well resized to the density you have chosen. The only way to adjust everything correctly is to perform trial / error tests.
+To return to the original density you only need to write the default value in the ""Smaller Width"" setting. You can also go to the screen settings and enter the content size options.
+
+Varying the density of the screen does not entail risks beyond losing a correct display if you go over the number; however much it is enough to write the original density to reverse the change. As we always say, test and adapt your mobile to your liking: Android is the best at it.
+
+
+"

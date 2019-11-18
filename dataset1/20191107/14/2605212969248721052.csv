@@ -1,0 +1,108 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Entel comienza a utilizar el Protocolo de Internet versión 6 (IPv6) en su servicio fibra hogar
+07 Nov 2019, 14:05 by Jonathan Munizaga
+En la actualidad, nuestras conexiones a Internet, tanto fijas como móviles, operan usando el Protocolo de Internet versión 4, más conocido como IPv4.
+Pero este protocolo se está quedando sin direcciones a nivel mundial, ya no da abasto con tantos dispositivos, como computadores, smartphones, smartwatch, Smart TV, decodificadores, luces inteligentes, cámaras… etc.
+Por lo mismo, los proveedores de Internet están comenzando a migrar al Protocolo de Internet versión 6, conocido como IPv6, el que soporta 340.282.366.920.938.463.463.374.607.431.768.211.456 (2128 ó 340 sextillones) direcciones de red, a diferencia del IPv4 que soporta 4.294.967.296 (232) direcciones de red.
+¿Y esto qué tiene que ver con nosotros?
+Pues ahora, mucho. Ya que aparentemente el operador Entel ha comenzado a usar el Protocolo de Internet versión 6 (IPv6) en su servicio de fibra óptica hogar.
+Nuestro lector en Twitter, @torrentscl, nos reportó que su conexión a Internet de Entel, ahora cuenta con IPv6 usando “dual stack”, que significa que está usando IPv4 e IPv6 a la misma vez, para asegurar que dispositivos no compatibles con IPv6 continúen con Internet.
+Para demostrar lo anterior, nuestro lector nos mandó una captura de pantalla usando la web “ipv6 test“, la que es capaz de identificar si tu conexión a Internet está usando este protocolo o no.
+
+
+
+Por el momento, nosotros hemos verificado si la red móvil de Entel también está usando IPv6, pero al menos con nuestras pruebas no tuvimos éxito. También probamos con WOM y la conexión fija de VTR, pero sin éxito tampoco.
+
+
+
+
+
+
+
+
+
+
+
+Por el momento desconocemos si todos los clientes del servicio fibra hogar de Entel ya cuentan con IPv6, o es solo con algunos clientes, ya que no hemos tenido la confirmación del operador aún.
+Sin duda es un gran paso para el Internet de nuestro país, y es de esperar que el resto de los operadores locales, comiencen también a seguir los pasos de Entel e implementar el protocolo IPv6 en sus redes.
+
+
+¡Muchas gracias @
+
+
+
+torrentscl
+
+
+
+ por la captura!
+
+
+
+
+",es,"
+
+
+
+
+
+
+
+
+
+
+
+Entel starts using Internet Protocol version 6 (IPv6) in its home fiber service
+07 Nov 2019, 14:05 by Jonathan Munizaga
+Currently, our Internet connections, both fixed and mobile, operate using Internet Protocol version 4, better known as IPv4.
+But this protocol is running out of addresses worldwide, it is no longer supplying with so many devices, such as computers, smartphones, smartwatch, Smart TV, decoders, smart lights, cameras ... etc.
+Therefore, Internet providers are beginning to migrate to Internet Protocol version 6, known as IPv6, which supports 340.282.366.920.938.463.463.374.607.431.768.211.456 (2128 or 340 sextillion) network addresses, to Unlike IPv4 that supports 4,294,967,296 (232) network addresses.
+And what does this have to do with us?
+Well now, a lot. Since apparently the Entel operator has started using Internet Protocol version 6 (IPv6) in its home fiber optic service.
+Our Twitter reader, @torrentscl, informed us that his Entel Internet connection now has IPv6 using “dual stack”, which means that he is using IPv4 and IPv6 at the same time, to ensure that non-IPv6 compatible devices continue with Internet.
+To demonstrate the above, our reader sent us a screenshot using the web ""ipv6 test"", which is able to identify if your Internet connection is using this protocol or not.
+
+
+
+At the moment, we have verified if Entel's mobile network is also using IPv6, but at least with our tests we were unsuccessful. We also tested with WOM and the fixed VTR connection, but without success either.
+
+
+
+
+
+
+
+
+
+
+
+At the moment we do not know if all the clients of the Entel home fiber service already have IPv6, or it is only with some clients, since we have not had the confirmation of the operator yet.
+It is undoubtedly a great step for the Internet of our country, and it is expected that the rest of the local operators, also begin to follow the steps of Entel and implement the IPv6 protocol in their networks.
+
+
+Thank you @
+
+
+
+torrentscl
+
+
+
+ for the catch!
+
+
+
+
+"

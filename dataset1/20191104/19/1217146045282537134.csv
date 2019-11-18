@@ -1,0 +1,92 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Nemty Ransomware Now Spreads via Trik Botnet
+04 Nov 2019, 19:43 by Ionut Ilascu
+
+
+
+The operators of Nemty ransomware have found a new distributor for their file-encrypting malware, which now spreads via Trik, a botnet that pushes all sorts of threats.
+The malware is spread to systems that have the Server Message Block (SMB) network communication protocol exposed on the web and protected by weak credentials.
+Random spreading
+While Nemty is a threat first seen in August, activity from Trik botnet, also known as Phorpiex, can be traced as far back as 10 years ago.
+Since its discovery, Nemty has been under constant development, with researchers noticing modifications almost at each encounter. This lack of maturity, along with skepticism from highly respected members on an underground forum, is probably what kept affiliates away from this ransomware.
+Trik has been seen distributing sextortion emails not too long ago but a recent update added a SMB component and hardcoded credentials. The payload distributed this way is Nemty ransomware, note in a report today security researchers from Symantec.
+The component first searches in the compromised system's %AppData% directory for the presence of the file 'winsvcs.txt,' which indicates if Nemty is downloaded and executed.
+On machines that have the file, the SMB component checks if it runs as a service and then tries to spread through the SMB protocol, the researchers explain.
+
+
+
+Spreading is possible by generating random IP addresses and attempting to connect to them on port 139 using a hardcoded dictionary with authentication credentials. It combines the usernames 'Administrator,' 'administrator,' 'admin,' and 'Admin' with the following passwords:
+123, 1234, 12345, 123456, 1234567, 12345678, 123456789, 1234567890, 123123, 12321, 123321, 123abc, 123qwe, 123asd, 1234abcd, 1234qwer, 1q2w3e, a1b2c3, administrator,Administrator, admin, Admin, admin123, Admin123, admin12345, Admin12345, administrator123, Ad ministrator123, nimda, qwewq, qweewq, qwerty, qweasd, asdsa,asddsa, asdzxc, asdfgh, qweasdzxc, q1w2e3, qazwsx, qazwsxedc, zxcxz, zxccxz, zxcvb, zxcvbn,passwd, password, Password, login, Login, pass, mypass, mypassword,adminadmin,root, rootroot, test, testtest, temp, temptemp, foofoo, foobar, default, password1, password12,password123, admin1, admin12, admin123, pass1,pass12, pass123, root123, abc123, abcde, abcabc, qwe123, test123, temp123, sample, example, internet, Internet
+If one of them matches, the malware spreads to the remote machine via the SMB protocol and repeats the process that checks for Nemty.
+
+
+
+Nemty's evolution
+Nemty is currently at version 1.6 and there should not be a doubt about its capabilities, despite free decryption being available for versions 1.4 and 1.6, with one for 1.5 being on the way. It is worth noting that the decryptor does not work with all extensions.
+The ransomware started being advertised on underground forums after GandCrab shut down in the hope of attracting affiliates to the RaaS business but was met by criticism from respected members in the community.
+Several variants were developed and the authors tried to find a good distribution channel for the malware. In September, it was distributed through RIG exploit kit and continued through version 1.6.
+However, the authors kept looking for alternatives. For instance, security researcher nao_sec found Nemty delivered through a fake PayPal website, supporting the theory that the operators were trying out multiple delivery channels.
+Nemty's capabilities have evolved in time, adding the possibility to stop apps and services that would hinder the encryption of open assets, such as documents, databases, email, backups.
+The malware deletes volume shadow copies and backups before initiating the encryption and switched to Microsoft CryptoAPI from a custom, and flawed, implementation of the AES algorithm.
+""The developers behind the Nemty ransomware are constantly updating and improving its code, as well as its delivery methods, in an attempt to reach more victims.""
+Nemty's makers seem to learn from their mistakes fast and determined to make their RaaS business work. Symantec saw the malware deployed predominantly in China and Korea, archived in email attachments. Of the total infections, the U.S.accounted for 7%. This may change as the ransomware matures and starts making more money for affiliates.
+
+
+",en,"
+
+
+
+
+
+
+
+
+
+
+
+Nemty Ransomware Now Spreads via Trik Botnet
+04 Nov 2019, 19:43 by Ionut Ilascu
+
+
+
+The operators of Nemty ransomware have found a new distributor for their file-encrypting malware, which now spreads via Trik, a botnet that pushes all sorts of threats.
+The malware is spread to systems that have the Server Message Block (SMB) network communication protocol exposed on the web and protected by weak credentials.
+Random spreading
+While Nemty is a threat first seen in August, activity from Trik botnet, also known as Phorpiex, can be traced as far back as 10 years ago.
+Since its discovery, Nemty has been under constant development, with researchers noticing modifications almost at each encounter. This lack of maturity, along with skepticism from highly respected members on an underground forum, is probably what kept affiliates away from this ransomware.
+Trik has been seen distributing sextortion emails not too long ago but a recent update added a SMB component and hardcoded credentials. The payload distributed this way is Nemty ransomware, note in a report today security researchers from Symantec.
+The component first searches in the compromised system's %AppData% directory for the presence of the file 'winsvcs.txt,' which indicates if Nemty is downloaded and executed.
+On machines that have the file, the SMB component checks if it runs as a service and then tries to spread through the SMB protocol, the researchers explain.
+
+
+
+Spreading is possible by generating random IP addresses and attempting to connect to them on port 139 using a hardcoded dictionary with authentication credentials. It combines the usernames 'Administrator,' 'administrator,' 'admin,' and 'Admin' with the following passwords:
+123, 1234, 12345, 123456, 1234567, 12345678, 123456789, 1234567890, 123123, 12321, 123321, 123abc, 123qwe, 123asd, 1234abcd, 1234qwer, 1q2w3e, a1b2c3, administrator,Administrator, admin, Admin, admin123, Admin123, admin12345, Admin12345, administrator123, Ad ministrator123, nimda, qwewq, qweewq, qwerty, qweasd, asdsa,asddsa, asdzxc, asdfgh, qweasdzxc, q1w2e3, qazwsx, qazwsxedc, zxcxz, zxccxz, zxcvb, zxcvbn,passwd, password, Password, login, Login, pass, mypass, mypassword,adminadmin,root, rootroot, test, testtest, temp, temptemp, foofoo, foobar, default, password1, password12,password123, admin1, admin12, admin123, pass1,pass12, pass123, root123, abc123, abcde, abcabc, qwe123, test123, temp123, sample, example, internet, Internet
+If one of them matches, the malware spreads to the remote machine via the SMB protocol and repeats the process that checks for Nemty.
+
+
+
+Nemty's evolution
+Nemty is currently at version 1.6 and there should not be a doubt about its capabilities, despite free decryption being available for versions 1.4 and 1.6, with one for 1.5 being on the way. It is worth noting that the decryptor does not work with all extensions.
+The ransomware started being advertised on underground forums after GandCrab shut down in the hope of attracting affiliates to the RaaS business but was met by criticism from respected members in the community.
+Several variants were developed and the authors tried to find a good distribution channel for the malware. In September, it was distributed through RIG exploit kit and continued through version 1.6.
+However, the authors kept looking for alternatives. For instance, security researcher nao_sec found Nemty delivered through a fake PayPal website, supporting the theory that the operators were trying out multiple delivery channels.
+Nemty's capabilities have evolved in time, adding the possibility to stop apps and services that would hinder the encryption of open assets, such as documents, databases, email, backups.
+The malware deletes volume shadow copies and backups before initiating the encryption and switched to Microsoft CryptoAPI from a custom, and flawed, implementation of the AES algorithm.
+""The developers behind the Nemty ransomware are constantly updating and improving its code, as well as its delivery methods, in an attempt to reach more victims.""
+Nemty's makers seem to learn from their mistakes fast and determined to make their RaaS business work. Symantec saw the malware deployed predominantly in China and Korea, archived in email attachments. Of the total infections, the U.S.accounted for 7%. This may change as the ransomware matures and starts making more money for affiliates.
+
+
+"

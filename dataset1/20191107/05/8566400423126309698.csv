@@ -1,0 +1,38 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Опубликовано больше информации об инциденте с автомобилем Uber который сбил переходящую дорогу (в неположенном месте) велосипедистку
+07 Nov 2019, 05:28 by aa-dav
+How terrible software design decisions led to Uber’s deadly 2018 crashNTSB says the system ""did not include consideration for jaywalking pedestrians.""arstechnica.com
+Согласно расследованию в ситуации главным образом виноват софт, а не железо.Логи которые откладывались в бортовой компьютер показывают, что софт ""видел"" человека более чем за 5 секунд до столкновения, но крайне неудачная реализация алгоритма довела ситуацию до трагедии.По логам видна картина того что софт ""думал"" что видит на дороге:— 5.2 секунд до столкновения система классифицировала человека как ""другое""— 4.2 секунд — как ""транспортное средство""— Между 3.8 и 2.7 секундами до столкновения система несколько раз меняла классификацию между вариантами ""транспортное средство"" и ""другое""— 2.6 секунды: ""велосипед""— 1.5 секунды: ""неизвестно""— 1.2 секунды: ""велосипед""Если компьютер ""видел"" человека за целых пять секунд до столкновения то почему он не включил торможение?Дело в том, что для того чтобы вычислить скорость объекта алгоритм довольно логично интерполирует его предыдущие и текущую позицию. Но при смене классификации объект как бы обнулялся — старый исчезал и на его месте появлялся новый, без истории положения в пространстве, в результате чего система ""видела"" перед собой много появляющихся и исчезающих объектов стоящих на месте и не представляющих угрозы движению и когда человек с велосипедом оказался непосредственно на пути следования тормозить было уже поздно.
+
+
+",ru,"
+
+
+
+
+
+
+
+
+
+
+
+More information has been posted about an incident with a Uber who knocked down a crossing road (in the wrong place) to a cyclist
+07 Nov 2019, 05:28 by aa-dav
+How terrible software design decisions led to Uber’s deadly 2018 crashNTSB says the system ""did not include consideration for jaywalking pedestrians."" Arstechnica.com
+According to the investigation, the software is mainly to blame for the situation, not the hardware. Logs that were put on the on-board computer show that the software ""saw"" the person more than 5 seconds before the collision, but the extremely unsuccessful implementation of the algorithm brought the situation to tragedy. The logs show that the software ""thought"" what it sees on the road: - 5.2 seconds before the collision, the system classified the person as ""different"" - 4.2 seconds - as a ""vehicle"" - Between 3.8 and 2.7 seconds before the collision, the system changed the classification several times between var Antami “vehicle” and “other” - 2.6 seconds: “bicycle” - 1.5 seconds: “unknown” - 1.2 seconds: “bicycle” If the computer “saw” a person for as many as five seconds before a collision, why didn’t he turn on the braking? in that, in order to calculate the speed of an object, the algorithm quite logically interpolates its previous and current position. But when the classification was changed, the object seemed to nullify - the old one disappeared and a new one appeared in its place, without a history of position in space, as a result of which the system “saw” before itself many appearing and disappearing objects standing still and not posing a threat to movement and when a person with it turned out to be a brake directly on the route, it was too late.
+
+
+"

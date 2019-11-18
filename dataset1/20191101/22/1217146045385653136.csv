@@ -1,0 +1,242 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+The Week in Ransomware - November 1st 2019 - A Mix of Good and Bad
+01 Nov 2019, 22:16 by Lawrence Abrams
+
+
+
+This week has been a mix of good and bad news. The bad news is that ransomware disrupted legal work and court cases through the TrialWorks infection, schools having to shut down, and new campaigns targeting Italy.
+The good news, though, is that we have had two decryptors released that allow Paradise and Ouroboros Ransomware victims to recover their files for free.
+Otherwise, its been a mix of new ransomware and new variants of existing ransomware being released.
+Contributors and those who provided new ransomware information and stories this week include: @Seifreed, @BleepinComputer, @PolarToffee, @jorntvdw, @LawrenceAbrams, @malwareforme, @fwosar, @struppigel, @demonslay335, @malwrhunterteam, @DanielGallagher, @serghei, @Ionut_Ilascu, @FourOctets, @IntelAdvanced, @emsisoft, @GrujaRS, @JAMESWT_MHT, @JakubKroustek, @thepacketrat, @Renee_Dudley, @fbgwls245, and @Bitdefender
+October 26th 2019
+
+New SEV and LM Paradise Ransomware variant
+
+dnwls0719 found new variants of the Paradise Ransomwar that append the .sev or .lm extensions and drops a ransom note named —==%$$$open_me_up$$$==—.txt.
+October 27th 2019
+
+TrialWorks Ransomware Attack Disrupts Court Cases and Deadlines
+
+TrialWorks, one of the top-rated providers of legal case management software for law firms and attorneys, became the victim of a ransomware attack earlier this month.
+October 28th 2019
+
+New Nemty Revenge 2.0 version
+
+Michael Gillespie noticed that the Nemty Ransomware is back, but has renamed itself ""Nemty Revenge 2.0"" version. Michael thinks they may have fixed their crypto flaw.
+
+New XDA Dharma Ransomware variant
+
+Jakub Kroustek discovered a new variant of the Dharma Ransomware that appends the .xda extension to encrypted files.
+
+The Ransomware Superhero of Normal, Illinois
+
+Thanks to Michael Gillespie, an obscure programmer at a Nerds on Call repair store, hundreds of thousands of ransomware victims have recovered their files for free.
+
+Ouroboros Ransomware decryptor released
+
+BitDefender released a decryptor for the Ouroboros Ransomware.
+
+New WORM Paradise Ransomware variant
+
+Michael Gillespie found a new variant of the Paradise Ransomware that appends the .worm extension.
+
+New SamSam variant pays homage to JayTHL
+
+GrujaRS found a new SamSam variant that appends the .JayTHL extension to encrypted files. This variant is obviously paying homage to JayTHL.
+October 29th 2019
+
+Ransomware Actor Starting Young Makes Big Money, Gets Arrested
+
+A 21-year old arrested in Indonesia is suspected to have sent phishing emails that spread ransomware. He is believed to be a lone wolf that started as a teenager and reportedly made at least 300 bitcoins from cybercriminal activities.
+
+
+
+
+Ransomware Attack Causes School 'District-Wide Shutdown'
+
+A ransomware attack hitting Las Cruces Public Schools forced the district to shut down the entire computer system to contain the infection.
+
+New NAKW STOP Djvu Ransomware variant
+
+Michael Gillespie found a new variant of the STOP Djvu Ransomware that appends the .nakw extension.
+
+Maze Ransomware Attacks Italy in New Email Campaign
+
+The Maze Ransomware is conducting a new spam campaign that targets Italian users by pretending to be the country's Tax and Revenue Agency.
+
+
+
+October 30th 2019
+
+Paradise Ransomware Decryptor Gets Your Files Back for Free
+
+A decryptor for the Paradise Ransomware has been released by Emsisoft that allows victims to decrypt their files for free.
+
+New ASUS and START Dharma Ransomware variant
+
+Jakub Kroustek discovered new variants of the Dharma Ransomware that append the .asus or .start extensions to encrypted files.
+
+The count of managed service providers getting hit with ransomware mounts
+
+Threat researchers at the global cloud security provider Armor have been tracking publicly-reported incidents in which MSP and cloud service providers have been hit with ransomware. Thus far, they have documented 13 such incidents this year—with 6 of them reported in the past few months.
+
+New Noblis Ransomware variant
+
+MalwareHunterTeam found a new variant of the Noblis ransomware that appends the .sorryforthis extension.
+
+
+
+
+New MedusaLocker Ransomware variant
+
+dnwls0719 found a new variant of the MedusaLocker ransomware that appends the .decrypme and drops a ransom note named HOW_TO_OPEN_FILES.html.
+October 31st 2019
+
+New Sifreli Ransomware
+
+Michael Gillespie found a new ransomware that appends the .SIFRELI or .SIFRELI_DOSYA extension and drops a ransom note named fidye-uyari.txt. This could be related to a previous found by Karsten Hahn in January 2017.
+November 1st 2019
+
+GandCrab RaaS Was a Training Ground for Malware Distributors
+
+GandCrab operators changed the ransomware business from the ground up, establishing a model that is embraced and continued by other cybercriminals.
+
+New HiddenTear variant
+
+MalwareHunterTeam found a new HiddenTear variant from Poland that appends the .locked extension.
+That's it for this week! Hope everyone has a nice weekend!
+
+
+",en,"
+
+
+
+
+
+
+
+
+
+
+
+The Week in Ransomware - November 1st 2019 - A Mix of Good and Bad
+01 Nov 2019, 22:16 by Lawrence Abrams
+
+
+
+This week has been a mix of good and bad news. The bad news is that ransomware disrupted legal work and court cases through the TrialWorks infection, schools having to shut down, and new campaigns targeting Italy.
+The good news, though, is that we have had two decryptors released that allow Paradise and Ouroboros Ransomware victims to recover their files for free.
+Otherwise, its been a mix of new ransomware and new variants of existing ransomware being released.
+Contributors and those who provided new ransomware information and stories this week include: @Seifreed, @BleepinComputer, @PolarToffee, @jorntvdw, @LawrenceAbrams, @malwareforme, @fwosar, @struppigel, @demonslay335, @malwrhunterteam, @DanielGallagher, @serghei, @Ionut_Ilascu, @FourOctets, @IntelAdvanced, @emsisoft, @GrujaRS, @JAMESWT_MHT, @JakubKroustek, @thepacketrat, @Renee_Dudley, @fbgwls245, and @Bitdefender
+October 26th 2019
+
+New SEV and LM Paradise Ransomware variant
+
+dnwls0719 found new variants of the Paradise Ransomwar that append the .sev or .lm extensions and drops a ransom note named —==%$$$open_me_up$$$==—.txt.
+October 27th 2019
+
+TrialWorks Ransomware Attack Disrupts Court Cases and Deadlines
+
+TrialWorks, one of the top-rated providers of legal case management software for law firms and attorneys, became the victim of a ransomware attack earlier this month.
+October 28th 2019
+
+New Nemty Revenge 2.0 version
+
+Michael Gillespie noticed that the Nemty Ransomware is back, but has renamed itself ""Nemty Revenge 2.0"" version. Michael thinks they may have fixed their crypto flaw.
+
+New XDA Dharma Ransomware variant
+
+Jakub Kroustek discovered a new variant of the Dharma Ransomware that appends the .xda extension to encrypted files.
+
+The Ransomware Superhero of Normal, Illinois
+
+Thanks to Michael Gillespie, an obscure programmer at a Nerds on Call repair store, hundreds of thousands of ransomware victims have recovered their files for free.
+
+Ouroboros Ransomware decryptor released
+
+BitDefender released a decryptor for the Ouroboros Ransomware.
+
+New WORM Paradise Ransomware variant
+
+Michael Gillespie found a new variant of the Paradise Ransomware that appends the .worm extension.
+
+New SamSam variant pays homage to JayTHL
+
+GrujaRS found a new SamSam variant that appends the .JayTHL extension to encrypted files. This variant is obviously paying homage to JayTHL.
+October 29th 2019
+
+Ransomware Actor Starting Young Makes Big Money, Gets Arrested
+
+A 21-year old arrested in Indonesia is suspected to have sent phishing emails that spread ransomware. He is believed to be a lone wolf that started as a teenager and reportedly made at least 300 bitcoins from cybercriminal activities.
+
+
+
+
+Ransomware Attack Causes School 'District-Wide Shutdown'
+
+A ransomware attack hitting Las Cruces Public Schools forced the district to shut down the entire computer system to contain the infection.
+
+New NAKW STOP Djvu Ransomware variant
+
+Michael Gillespie found a new variant of the STOP Djvu Ransomware that appends the .nakw extension.
+
+Maze Ransomware Attacks Italy in New Email Campaign
+
+The Maze Ransomware is conducting a new spam campaign that targets Italian users by pretending to be the country's Tax and Revenue Agency.
+
+
+
+October 30th 2019
+
+Paradise Ransomware Decryptor Gets Your Files Back for Free
+
+A decryptor for the Paradise Ransomware has been released by Emsisoft that allows victims to decrypt their files for free.
+
+New ASUS and START Dharma Ransomware variant
+
+Jakub Kroustek discovered new variants of the Dharma Ransomware that append the .asus or .start extensions to encrypted files.
+
+The count of managed service providers getting hit with ransomware mounts
+
+Threat researchers at the global cloud security provider Armor have been tracking publicly-reported incidents in which MSP and cloud service providers have been hit with ransomware. Thus far, they have documented 13 such incidents this year—with 6 of them reported in the past few months.
+
+New Noblis Ransomware variant
+
+MalwareHunterTeam found a new variant of the Noblis ransomware that appends the .sorryforthis extension.
+
+
+
+
+New MedusaLocker Ransomware variant
+
+dnwls0719 found a new variant of the MedusaLocker ransomware that appends the .decrypme and drops a ransom note named HOW_TO_OPEN_FILES.html.
+October 31st 2019
+
+New Sifreli Ransomware
+
+Michael Gillespie found a new ransomware that appends the .SIFRELI or .SIFRELI_DOSYA extension and drops a ransom note named fidye-uyari.txt. This could be related to a previous found by Karsten Hahn in January 2017.
+November 1st 2019
+
+GandCrab RaaS Was a Training Ground for Malware Distributors
+
+GandCrab operators changed the ransomware business from the ground up, establishing a model that is embraced and continued by other cybercriminals.
+
+New HiddenTear variant
+
+MalwareHunterTeam found a new HiddenTear variant from Poland that appends the .locked extension.
+That's it for this week! Hope everyone has a nice weekend!
+
+
+"

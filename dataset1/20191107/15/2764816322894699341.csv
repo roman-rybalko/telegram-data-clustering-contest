@@ -1,0 +1,240 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+AMD Ryzen Threadripper 3000 je tady. Král výkonu, výbavy i konektivity, ale dost drahý
+7nm Threadrippery s jádry Zen 2 konečně přichází. Máme jejich parametry, představení jejich platformy TRX40 a také ceny, které jsou bohužel docela vysoké.
+07 Nov 2019, 15:28 by Jan Olšan
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+VŠECHNY FOTOGRAFIE
+
+Původně to prý mělo být 5. listopadu, nakonec je to až dnes, ale každopádně se zájemci o vysoký výkon v desktop PC dočkali: AMD oficiálně odhaluje procesory Ryzen Threadripper 3000, tedy highendovou verzi 7nm Ryzenů 3000 s jádry Zen 2. Nebo možná lépe řečeno Epyců 7002, protože Threadrippery jsou odvozené od nich. Podle parametrů to budou opravdu extrémně výkonná CPU posouvající hranice toho, co bylo dosud v PC možné, ale také to budou hodně drahé komponenty.
+AMD dnes tyto procesory oficiálně odhaluje a prozrazuje parametry, ale jde o papírové uvedení. Na prodej budou procesory až za necelé dva týdny, 19. listopadu. A tehdy také vyjdou recenze, zatím tedy ještě není k dispozici nezávislé ověření výkonu (nebo provozních vlastností). AMD jen publikovalo nějaké srovnávací grafy ve vybraných aplikacích, ale u takových oficiálních benchmarků musíte vždy myslet na to, že mohou být selektivní a tedy neukazovat celý obrázek, ale jen to, kde to vypadá nejlíp.
+Threadripper 3000: zatím 24jádro a 32jádro
+A teď konečně k parametrům, na které se čekalo dlouho a kupodivu neunikly předem. První model, který bude na prodej, je 24jádrový a jmenuje se Ryzen Threadripper 3960X (takže se zdá, že mezi ním a „normálním“ šestnáctijádrem Ryzen 9 3950X pro socket AM4 už nic dalšího nebude). Frekvence jsou hodně vysoké, na 24jádro. Základní takt je 3,8 GHz, takže uživatel nebude příliš obětovávat výkon na jedno jádro na oltář celkového výkonu. Maximální boost je 4,5 GHz, takže zde v „single-threadu“ je tento procesor o krůček, respektive dva zpátky za mainstreamovými modely Ryzen 9 3900X (4,6 GHz) a Ryzen 9 3950X (4,7 GHz).
+Procesor bude mít i SMT, takže 48 vláken. AMD uvádí „140 MB Cache“, což ovšem je součet 24 × 512KB L2 cache a 128 MB L3 cache. Také ta je kvůli čipletové stavbě dělená. Mělo by ji tvořit osm bloků pro 16 MB, takže toto CPU je asi tvořeno osmi CCX a tedy čtyřmi 7nm čiplety (mimo centrálního 12nm IO čipletu). V každém z CCX je jedno jádro ze čtyř vypnuto, čímž se dojde k celkovému počtu 24 jader. U boostu je jinak uvedeno „až“, takže AMD reflektuje, že jde o maximální, ne nutně typickou frekvenci při boostování v bežném provozu.
+
+
+Parametry procesorů AMD Ryzen Threadripper 3000
+
+Druhý model se jmenuje Ryzen Threadripper 3970X a je zřejmě postaven také ze čtyř 7nm CPU čipletů, ale již se všemi jádry aktivními. Má totiž 32 jader a 64 vláken. Frekvence jsou ovšem prakticky stejné jako u 24jádra: základní takt je 3,7 GHz a maximální boost je stejných 4,5 GHz (ale zase „až“). L3 cache je opět 128 MB (AMD k tomu na slajdu přičítá 32 × 512 KB L2 cache, odtud uvedených 144 MB).
+K těmto procesorům se později (v lednu) snad měl připojit ještě jeden vyšší model, nazvaný Ryzen Threadripper 3990X, pro nějž AMD ještě parametry nesdělilo. A ani nikde v tiskových materiálech není zmíněn, tento model tedy zatím není potvrzený, teprv uvidíme, zda/kdy ho AMD opravdu vydá. Momentálně o něm víme jenom z neoficiálního úniku. Ovšem Threadrippery 3960X a 3970X budou dostupné už tento měsíc, v obchodech se objeví za necelé dva týdny 19. listopadu, jak už bylo řečeno.
+Paměť RAM bez NUMA architektury
+Společný všem těmto procesorům je čtyřkanálový řadič pro paměti DDR-3200. Bohužel není uvedeno, že by bylo oficiálně podporováno ECC, to tedy asi bude jen na platformě Epyc, případně jestli AMD vydá ještě další (WX?) verzi Threadripperu pro profesionální pracovní stanice – modely X by měly být podle toho, jak je AMD charakterizovalo v generaci 2000, cosi jako „extrémní“ CPU, tedy zaměřené na hardwarové nadšence.
+
+Aktualizováno: v tabulce specifikací na webu nebo v prezentaci sice ECC uvedeno není, ale jak jste upozornili v komentářích, v textu na webu AMD je podpora pro ECC paměti zmíněná. Zároveň ovšem asi stále bude záviset na tom, zda ji implementuje i výrobce desky. Při rychlém pohledu na desky jsem našel zmínku o podpoře ECC pamětí v popisu modelů MSI a ASRocku, ale je otázka, zda podpora ECC modulů třeba neznamená, že sice poběží, ale bez toho, aby ochrana byla aktivní.
+
+Quad channel DDR4 with available ECC support for reliable throughput.
+Pro připomenutí: zatímco Threadrippery 1000 a 2000 měly řadič DDR4 distribuovaný v jednotlivých čipech s jádry a latence a propustnost tak nebyla uniformní podle toho, které jádro chtělo do které části paměti, Threadripper 3000 mají všechny kanály paměťového řadiče unifikovaně v centrálním IO čipletu. Chování paměti by tedy mělo být konzistentní se stejnou latencí a propustností bez ohledu na to, které jádro kam přistupuje.
+280W TDP…
+Extrémní bude ovšem ještě něco. TDP je 280 W (jako u vodního HPC Epycu 7H12), a to u všech modelů. Nebudou se tedy ve spotřebě nijak krotit, na druhou stranu je tato spotřeba rozložená mezi čtyři čiplety, takže na jeden připadá naštěstí „jen“ něco pod 70 W. U předchozích Threadripperů bylo TDP absolutním stropem spotřeby (na rozdíl od platformy AM4), zda to tak bude i zde, nebo bude moci boost jít i výš, nevíme. Doufejme, že platí první možnost. Pak by se teoreticky spotřeba v zátěži nemusela až tak moc lišit od Intelů, kde procesory pro platformu X299 sice nyní mají 165W TDP, ale v boostu ho výrazně překročí (zejména s instrukcemi AVX). Toto bude zajímavé sledovat v recenzích.
+
+
+AMD Ryzen Threadripper 3000
+
+Nový socket sTRX4 a platforma TRX40
+Oba procesory se budou osazovat do desek platformy TRX40 se socketem nazvaným sTRX4, bohužel není kompatibilita s platformou X399. Doteď moc nebylo jasné, proč je kompatibilita přerušená, jeden faktor teď ovšem možná vyvstal. Zatímco čipset X399 je připojený přes PCI Express 3.0 ×4, čipová sada TRX40 u Ryzenu Threadripperu 3000 je podle AMD připojená k procesoru osmi linkami (×8) PCI Express 4.0. Propustnost mezi CPU a čipsetem bude tedy čtyřikrát vyšší (16 GB/s obousměrně), ale toto mohlo způsobit, že CPU nejsou kompatibilní. AMD potvrdilo, že funkce některých pinů v socketu se změnila, což kompatibilitu znemožňuje.
+Další konektivitu bude dodávat čipset TRX40, jenž je založený asi na stejném křemíku jako čipset X570 na platformě AM4, takže bude mít celkem pokročilou výbavu. Jak už bylo řečeno, připojen je přes PCIe 4.0 ×8 (16 GB/s obousměrně), z čipsetu pak je vyvedených 16 linek PCIe 4.0 – osm prostě, další dvě čtveřice lze rozdělit, nebo opět přetransformovat do portů SATA. Při takovéto konfiguraci tedy z čipsetu máte 12 linek PCI Express 4.0 a osm portů SATA, nebo osm linek a 12× SATA, protože další čtyři porty SATA jsou z čipsetu vyvedené napevno a jsou dostupné vždy. Jinak čipset samozřejmě poskytuje také porty USB: 4× USB 2.0 a 8× SuperSpeed USB 10Gbps (USB 3.2 Gen 2). Mimochodem, další čtyři 10Gb/s porty jsou vyvedené i rovnou z procesoru (takže by mohly mít lepší výkon). Integrované síťové nebo bezdrátové adaptéry a podobné funkce jako u Intelu integrované nejsou, na deskách je bude řešit zcela samostatný adaptér.
+
+
+Schema konektivity na platformě AMD Ryzen Threadripper 3000 a TRX40
+
+Kromě propojení na čipset je z procesoru vyvedených 56 linek PCI Express 4.0 (zbylých 8 sežral čipset), což je o něco méně než 60 linek (ale PCIe 3.0) u prvních dvou generací. 48 linek je vždy konfigurováno jako PCIe 4.0. Další dvě čtveřice linek lze používat pro slot PCIe 4.0 ×4, nebo pro slot M.2 pro NVMe SSD (také PCIe 4.0 ×4), nebo tyto linky lze předělat na čtyři porty SATA, připojené přímo k CPU. Toto bude záviset vždy na návrhu základní desky.
+
+
+
+Výkon bude něco stát, cena až 55 tisíc
+Co nepotěší, je cena, zvlášť pokud jste si zvykli na poměrně dostupné 16jádrové modely 1950X a 2950X (po slevách, ale relativně i před nimi). Jak už jste mohli vidět na slajdu, AMD nastavilo ceny dokonce ještě o něco výš, než u loňských „WX“ modelů řady 2000, které také měly 24 a 32 jader (nicméně nové 7nm modely by proti nim měly být o dost rychlejší). 24jádro Ryzen Threadripper 3960X vás vyjde na 1399 dolarů, což u nás s DPH vychází na 39 000 Kč (v eurozóně 1529 €). 32jádrový model Ryzen Threadripper 3970X má stát rovnou 1999 dolarů, u nás 55 750 Kč (2185 €). Logicky z toho vyplývá, že model 3990X bude ještě dražší.
+Ceny jsou tedy nastavené tak nějak proti minulé generaci highendových modelů Intelu (Skylake-X) stojící před zlevněním také až 2000 dolarů, kdežto u Cascade Lake-X Intel ceny snížil na 600–1000 dolarů. Nicméně 32jádrový Threadripper by měl Core i9-10980XE výkonem o hodně předehnat (podle AMD jde celkově o úplně nejrychlejší desktopový procesor vůbec), takže cena nakonec ještě může být relativně adekvátní – to uvidíme v recenzích. Ryzen Threadripper 3990X pak možná bude něco jako cenový konkurent extrémního 28jádrového Xeonu W-3175X. Nejen ceny za CPU budou vysoké, drahé zdá se budou i desky, u nichž to vypadá na ještě vyšší ceny, než u platformy X399, kde již beztak byly nejlevnější modely o dost dražší, než nejlevnější desky pro platformu X299.
+
+
+Ryzen Threadripper 3000: oficiální benchmarky od AMD. Jako obvykle je berte s rezervou
+
+Zdá se, že platforma TRX40 cenou i výkonem/výbavou míří do vyššího pásma, než když vyšla X399 a Threadripperem 1950X v roce 2017, nebo by to tak alespoň AMD chtělo mít. Duchovním nástupcem v roli procesoru, který má mnoho jader, ale stojí v poměru k tomu ještě relativně málo peněz, se patrně místo toho stává 16jádrový Ryzen 9 3950X na platformě X570, kde ale mimo CPU výkon nebude dostupná tak silná konektivita PCI Express 4.0 (jen 16+4 linky z CPU) a čtyřkanálový řadič pamětí s možností osadit osm modulů DDR4. Jen doufejme, že se AMD spokojí s obsazením cenových pozic, které jednou už prošlapal Intel (který jsme za to tehdy kritizovali), a nebude je posouvat dál. Předchozí generace Ryzenů Threadripperů se daly naštěstí často koupit za o dost nižší než doporučené částky, což by teoreticky mohlo dost vylepšit jejich přístupnost i nyní. Ale je dost otázka, zda se takové výhodné akce teď budou opakovat, když má AMD nad Intelem v mnohojádrovém výkonu navrch.
+Galerie: AMD Ryzen Threadripper 3000 a platforma TRX40, prezentace při uvedení
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+VŠECHNY FOTOGRAFIE
+
+
+SOUVISEJÍCÍ ČLÁNKY
+
+
+
+
+
+
+
+
+",cs,"
+
+
+
+
+
+
+
+
+
+
+
+AMD Ryzen Threadripper 3000 is here. King of performance, equipment and connectivity, but quite expensive
+7nm Zen 2 Core Drivers are finally coming. We have their parameters, the introduction of their TRX40 platform and also the prices, which are unfortunately quite high.
+07 Nov 2019, 15:28 by Jan Olsan
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ALL PHOTOS
+
+Originally, it was supposed to be November 5th, but finally it is today, but in any case, those interested in high performance on the desktop PC lived to see: AMD officially unveils the Ryzen Threadripper 3000 processors, the highend version of 7nm Epscu 7002 because Threadrippers are derived from them. According to the parameters it will be really extremely powerful CPU pushing the limits of what was possible in the PC so far, but it will also be very expensive components.
+Today, AMD officially reveals these processors and reveals parameters, but it is a paper release. Processors will be available for sale in less than two weeks, November 19. And then there will be reviews, so there is not yet independent verification of performance (or performance). AMD only published some comparative charts in selected applications, but with such official benchmarks you must always think that they can be selective and not show the whole picture, but only where it looks best.
+Threadripper 3000: 24-core and 32-core
+Now, finally, the parameters that had been waiting for a long time and, oddly enough, did not escape in advance. The first model to be sold is the 24-core and is called the Ryzen Threadripper 3960X (so there seems to be nothing else between it and the ""normal"" 16-core Ryzen 9 3950X for AM4 socket). The frequencies are very high, at 24 core. The base clock is 3.8 GHz, so the user will not sacrifice too much core power per altar of total power. The maximum boost is 4.5 GHz, so here in the single-thread, this processor is a step or two back after the mainstream models Ryzen 9 3900X (4.6 GHz) and Ryzen 9 3950X (4.7 GHz).
+The processor will also have SMT, making 48 threads. AMD states ""140 MB Cache"", which is the sum of 24 × 512KB L2 cache and 128 MB L3 cache. It is also divided due to chiplet construction. It should consist of eight blocks for 16 MB, so this CPU is about eight CCXs and thus four 7nm chiplets (outside the central 12nm IC chiplet). In each of the CCXs, one of four cores is disabled, giving a total of 24 cores. The boost is otherwise indicated as 'to', so AMD reflects that this is the maximum, not necessarily typical, frequency of boost during normal operation.
+
+
+Parameters of AMD Ryzen Threadripper 3000 processors
+
+The second model is called Ryzen Threadripper 3970X and is probably built from four 7nm CPU chiplets, but with all cores active. It has 32 cores and 64 fibers. The frequencies, however, are virtually the same as the 24-core: the basic clock is 3.7 GHz and the maximum boost is the same 4.5 GHz (but again ""up""). The L3 cache is again 128 MB (AMD adds 32 × 512 KB L2 cache on the slide, hence the 144 MB).
+To these processors later (in January) was supposed to join another higher model, called the Ryzen Threadripper 3990X, for which AMD has not yet communicated the parameters. And even nowhere in the press materials is not mentioned, so this model is not yet confirmed, we will see whether / when AMD will really release it. At the moment we only know about it from an unofficial escape. However, the 3960X and 3970X Threadrippers will be available this month, and will appear in stores in less than two weeks on November 19, as already said.
+RAM without NUMA architecture
+Common to all these processors is the four-channel DDR-3200 memory controller. Unfortunately, it is not stated that ECC would be officially supported, so it will probably only be on the Epyc platform, or if AMD will release yet another (WX?) Version of Threadripper for professional workstations - the X models should be based on generation 2000, something like an ""extreme"" CPU, aimed at hardware enthusiasts.
+
+Updated: Although the ECC does not appear in the specification table on the website or in the presentation, as noted in the comments, support for ECC memory is mentioned in the text on the AMD website. At the same time, however, it may still depend on whether the board manufacturer implements it. Looking at the boards quickly, I found mention of ECC memory support in the MSI and ASRock model descriptions, but the question is whether ECC module support does not mean that it will run, but without the protection being active.
+
+Quad channel DDR4 with ECC support for reliable throughput.
+As a reminder, while Threadrippers 1000 and 2000 had a DDR4 controller distributed in individual chips with cores and latency, and the throughput was not uniform depending on which core wanted to which part of the memory, Threadripper 3000 has all memory controller channels unified in the central IC chiplet. Therefore, memory behavior should be consistent with the same latency and throughput no matter which kernel it accesses.
+280W TDP…
+However, something else will be extreme. TDP is 280 W (like the HPC Epycu 7H12 water), on all models. They will not be tamed in consumption, on the other hand, it is spread between four chiplets, so fortunately one falls just under 70 W. On previous Threadrippers TDP was the absolute ceiling of consumption (unlike the AM4 platform) so it will be here, or the boost will be able to go higher, we don’t know. Hopefully the first option applies. Then theoretically, the power consumption might not be so different from Intel, where the processors for the X299 platform now have 165W TDP, but in the boost it significantly exceeds (especially with AVX instructions). This will be interesting to watch in reviews.
+
+
+AMD Ryzen Threadripper 3000
+
+New sTRX4 socket and TRX40 platform
+Both processors will be mounted on TRX40 platforms with a socket called sTRX4, unfortunately it is not compatible with X399 platform. Until now, it wasn't very clear why compatibility was broken, but one factor might have arisen. While the X399 chipset is connected via PCI Express 3.0 × 4, the TRX40 chipset of the Ryzen Threadripper 3000 is, according to AMD, connected to the processor with eight (× 8) PCI Express 4.0 lines. The throughput between the CPU and the chipset will therefore be four times higher (16 GB / s bidirectionally), but this could cause the CPUs to be incompatible. AMD has confirmed that the function of some pins in the socket has changed, making compatibility impossible.
+Additional connectivity will be provided by the TRX40 chipset, which is based on about the same silicon as the X570 chipset on the AM4 platform, making it quite advanced. As already mentioned, it is connected via PCIe 4.0 × 8 (16 GB / s bidirectionally), then 16 PCIe 4.0 lines are brought out of the chipset - eight simply, two more quaternions can be split or transformed into SATA ports again. In such a configuration, you have 12 PCI Express 4.0 lines and eight SATA ports from the chipset, or eight lines and 12 × SATA because the other four SATA ports are stuck out of the chipset and are always available. Otherwise, the chipset also provides USB ports: 4 × USB 2.0 and 8 × SuperSpeed USB 10Gbps (USB 3.2 Gen 2). By the way, the other four 10Gb / s ports are routed straight out of the processor (so they could perform better). Integrated network or wireless adapters and similar functions as Intel are not integrated, the boards will be dealt with a completely separate adapter.
+
+
+Connectivity scheme on AMD Ryzen Threadripper 3000 and TRX40 platforms
+
+In addition to the chipset connection, 56 PCI Express 4.0 lines are routed from the processor (the remaining 8 have eaten the chipset), which is slightly less than 60 lines (but PCIe 3.0) for the first two generations. 48 lines are always configured as PCIe 4.0. The other four lines can be used for the PCIe 4.0 × 4 slot, or the M.2 slot for NVMe SSD (also PCIe 4.0 × 4), or these lines can be redesigned to four SATA ports connected directly to the CPU. This will always depend on the motherboard design.
+
+
+
+Performance will cost something, cost up to 55 thousand
+What is not pleasing is the price, especially if you have become accustomed to the relatively affordable 16-core 1950X and 2950X (after discounts, but also in front of them). As you could see on the slide, AMD set prices even a little higher than last year's 2000 WX models, which also had 24 and 32 cores (however, the new 7nm models should be much faster against them). The 24-core Ryzen Threadripper 3960X costs you $ 1399, which costs US $ 39,000 (1529 € in the euro area) with VAT. The 32-core model Ryzen Threadripper 3970X is supposed to cost $ 1999, 55 750 CZK (2185 €). Logically, the 3990X will be even more expensive.
+So prices are set somewhat against the previous generation of high-end Intel (Skylake-X) models facing a discount of up to $ 2,000, while Cascade Lake-X Intel lowered prices to $ 600-1,000. However, the 32-core Threadripper should outperform the Core i9-10980XE (according to AMD, it is the fastest desktop processor ever), so the price may still be relatively adequate in the end - we'll see that in the reviews. The Ryzen Threadripper 3990X may be a price competitor to the extreme 28-core Xeon W-3175X. Not only will the CPU cost be high, but it seems expensive to look at even higher prices than the X399, where the cheapest models were already much more expensive than the cheapest X299 boards.
+
+
+Ryzen Threadripper 3000: AMD's official benchmarks. Take them as usual as usual
+
+The price and performance / equipment of the TRX40 seem to be heading higher than when the X399 and Threadripper 1950X were released in 2017, or at least AMD would like to have it. Instead, a 16-core Ryzen 9 3950X on the X570 platform is likely to become the successor to a multi-core processor that has relatively little money in relation to it, but PCI Express 4.0 connectivity will not be available beyond CPU performance. 16 + 4 lines from CPU) and a four-channel memory controller with the ability to mount eight DDR4 modules. Let's just hope that AMD will settle for the price positions that Intel has already trampled (which we criticized for that), and will not move them further. Fortunately, previous generations of Threadripper Riesen could often be bought for well below the recommended amounts, which in theory couldcan not improve their accessibility even now. But the question is whether such beneficial actions will now recur when AMD has the upper hand in Intel's multi-core performance.
+Gallery: AMD Ryzen Threadripper 3000 and TRX40 platform, presentation at the launch
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ALL PHOTOS
+
+
+RELATED ARTICLES
+
+
+
+
+
+
+
+
+"

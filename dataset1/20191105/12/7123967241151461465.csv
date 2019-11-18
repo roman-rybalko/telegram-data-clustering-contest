@@ -1,0 +1,44 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Samsung chiude la sua divisione CPU mobile
+05 Nov 2019, 12:34 by Daniel Aka
+Samsung annuncia la chiusura di una divisione che ha personalizzato il SoC mobile Exynos. Samsung Systems Large Scale Integration (LSI) ha impiegato 290 ingegneri ad Austin, in Texas, e San Jose, in California. 
+Questi ultimi dovrebbero perdere il lavoro in base ai documenti a cui accede Android Authory il 31 dicembre 2019. Samsung ha dichiarato in una nota:  “Dopo aver esaminato la nostra divisione LSI System e la necessità di rimanere competitivi nel mercato globale, Samsung ha deciso di [ separare, tradotto dalla “transizione” nel testo originale, nella nota del redattore] di alcuni dei nostri team di ricerca e sviluppo di Austin e San José. ” 
+Samsung smette di personalizzare i cuori della CPU dei SoC Exynos
+Da quando Samsung ha costruito i propri SoC, l’azienda ha adattato i progetti ARM e dal 2016 Exynos 8890 del Galaxy S7, l’azienda ha incluso i propri core CPU personalizzati, soprannominati Mongoose. Questi sono spesso rimasti più efficienti dei loro equivalenti standard. Ma questo è meno vero per diverse generazioni. Ad esempio, il SoC S10 Exynos offre prestazioni single-core migliori dell’equivalente Snapdragon 855. Ma il chip Qualcomm, che equipaggia le versioni statunitensi di Galaxy, ha anche più successo in quasi ogni altra area.
+Il futuro è ancora piuttosto incerto: la fine dei cuori personalizzati nei SoC Exynos non significa affatto la fine dei SoC Exynos. Samsung ora potrebbe semplicemente costruire i suoi SoC da progetti ARM standard o da build semi-personalizzate. Potrebbe anche generalizzare abbastanza l’uso del SoC Snapdragon ma ancora una volta, a questo punto, questa è pura speculazione. 
+
+
+",it,"
+
+
+
+
+
+
+
+
+
+
+
+Samsung closes its mobile CPU division
+05 Nov 2019, 12:34 by Daniel Aka
+Samsung announces the closure of a division that customized the Exynos mobile SoC. Samsung Systems Large Scale Integration (LSI) employed 290 engineers in Austin, Texas, and San Jose, California.
+The latter should lose their job based on the documents accessed by Android Authory on December 31, 2019. Samsung stated in a note: “After examining our LSI System division and the need to remain competitive in the global market, Samsung has decided to [separate, translated from the ""transition"" in the original text, in the editor's note] of some of our research and development teams in Austin and San José. ""
+Samsung stops customizing the hearts of the Exynos SoC CPU
+Since Samsung built its SoCs, the company has adapted the ARM projects and since 2016 the Exynos 8890 of the Galaxy S7, the company has included its own custom CPU cores, dubbed Mongoose. These have often remained more efficient than their standard equivalents. But this is less true for several generations. For example, the S10 Exynos SoC offers better single-core performance than the equivalent Snapdragon 855. But the Qualcomm chip, which equips the US versions of Galaxy, is even more successful in almost every other area.
+The future is still rather uncertain: the end of custom hearts in Exynos SoCs by no means means the end of Exynos SoCs. Samsung could now simply build its SoCs from standard ARM projects or semi-custom builds. It could also generalize fairly the use of the Snapdragon SoC but again, at this point, this is pure speculation.
+
+
+"

@@ -1,0 +1,384 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Red Dead Redemption 2 on PC: More frames, more volumetric beauty, no Steam
+Want to get beyond 60fps? Go ahead. Want to buy and load the game on Steam? Not yet.
+05 Nov 2019, 20:15 by Sam Machkovech
+
+
+
+Let's get stoic again... this time on Windows PC. All images in this gallery were captured from live gameplay at near-max settings. Rockstar Games
+
+
+
+The first thing to call out is the incredible upgrades to volumetric particle fields. Every foggy, misty sequence looks jaw-dropping in action.
+
+
+
+The way light particles scatter in these dense fields of fog is remarkable. You normally want an HDR monitor to see colors fade and melt in the horizon like this. Bravo, Rockstar.
+
+
+
+Shadow resolution is also quite impressive for both close and distant shadows.
+
+
+
+It's a shame Rockstar didn't get a ray-tracing pipeline worked up in time for this PC launch, as the game's screen space reflection tech is a bit ho-hum (not really evidenced by this image, admittedly).
+
+
+
+Another look at high-res real-time light-and-shadow systems. Lights off.
+
+
+
+Lights on.
+
+
+
+I'm not sure the horse is gonna make it.
+
+
+
+Sorry about that last shot. Here's some horse friendship to make up for it.
+
+
+
+In general, texture resolution during real-time gameplay looks this good.
+
+
+
+Notice this zoomed shot's awful treatment of shadow resolution. This appears to be a PC launch-day bug on how a camera zoom isn't being met with a proper system to convert ""far"" shadows to ""near"" ones.
+
+
+
+Those kinds of shadow tweaks are less noticeable when the fortress in question is so distant.
+
+
+
+Why am I zooming on the sky here? Because this plume of smoke looks wonderful in action, with its every particle moving at a different speed.
+
+
+
+Clearer day, clumpier snow.
+
+
+
+Slow-mo kill shot.
+
+
+After years of waiting, we finally have a Red Dead Redemption game on Windows PCs... and it's the newer one from October of last year. Tuesday morning marked the PC launch of Red Dead Redemption 2—now available for purchase exclusively through the Rockstar Games Launcher for $60 and up—so we grabbed a copy to see how this PC port turned out.
+The meat of it all comes in the attached galleries, which all include near-max settings at native 1440p resolution and the game's temporal anti-aliasing (TAA) toggle turned to ""high."" I've only tested enough to get through the campaign's opening snowy portion, though the game's built-in benchmark mode (below) includes plenty of outdoor footage.
+In good news, RDR2's PC port works as a pretty, settings-cranked-high alternative to last year's console release. Its most obvious upgrade comes in the form of an unlocked frame rate. In one morning of testing, I was already able to crank performance (after downgrading a bunch of settings) to an apparent 120fps-and-up threshold, although random performative spikes—usually triggered by sharp cuts in cinematic scenes—made me glad I had a variable refresh rate monitor.
+Otherwise, my 1440p gameplay worked with near-max graphics settings at roughly 70fps, which only required a settings downscale of the game's ""distant volumetric"" settings (which got me nearly 18% of my frames back with zero apparent difference in terms of visuals). Keep that toggle in mind if you're using a system weaker than mine (i7-8770K, RTX 2080 Ti, 32GB of DDR-3000 RAM, SSD drive).
+In bad news, RDR2's facial and body animations were never built for these kinds of high speeds. What looks tolerable and fine enough on a console, locked to 30fps, comes off a bit last-gen when the camera sway and particles run at higher speeds. (To be clear: all animations of up-close characters appear to run at organic speeds, as opposed to some weird lock on 30fps. Whether that's the same for NPCs rendered in the distance isn't yet clear.)
+But that's more of an issue during cut scenes than in the live gameplay. Riding a horse, ducking into cover, and pumping vagrants full of shotgun shells feels so much better in this version of the game, especially when you go into your graphics card menu of choice and toggle low-latency settings. RDR2 famously came with control latency issues on console, and while you're not going to get the immediate twitchy response of a shooter in this PC version, we're back in respectable tap-and-response timing thanks to the luxuries of the PC platform.
+
+
+
+This first gallery is dedicated to the new Red Dead Redemption 2 benchmark app, exclusive to the new Windows version. It includes four scenes in all. The first primarily tests particle effects in the game's opening snow biome. RockStar Games
+
+
+
+Then we move into a swamp zone, where the game's volumetric haze and fog is most loudly tested. You'll want to pay attention to this with various effects enabled and disabled to see how the quality toggles look in action.
+
+
+
+All images in this gallery are set to their maximum values. In this shot's case, that means the volumetric clouds look a lot more convincing in motion.
+
+
+
+A wide-open vista, arguably best used to test HDR effects. Here it is with a hint of sunset...
+
+
+
+...and the same scene with zero hint of sun remaining.
+
+
+
+This benchmarking moment quietly pans over a sleepy town. Not much here in action beyond some lights turning on inside of homes and torches in the streets. I'll point out that Vulkan is the default renderer for the PC version; if you switch to DirectX 12, the lights and textures in this scene (and others) consistently stutter to load as of press time. Until Rockstar addresses this issue, stick with Vulkan.
+
+
+
+The final scene of the benchmark is the ""real gameplay"" sequence. It opens with petty larceny.
+
+
+
+Then our hero runs through a town, which works out the CPU's ability to render a variety of NPCs.
+
+
+
+Enjoy a couple of horse-racing shots to check out the game's shadows at maximum quality.
+
+
+
+More max-quality shadow shots.
+
+
+
+We've got company.
+
+
+
+Reminder that this whole gallery is rendered at 1440p with all effects cranked to maximum and TAA set to ""high.""
+
+
+
+Throw some dynamite, watch the carriage go kaboom.
+
+
+
+When you run the benchmark a few times, the fallen horses here sometimes derp out.
+
+
+
+Away we go, over this bridge.
+
+
+
+All settings at max, so this reflection is crisp.
+
+
+One more detail about the PC version lands in both the ""good"" and ""bad"" news columns: internal resolution scaling. Should you wish to crank up settings and still lock a 60fps refresh, you can pick some simple toggles to bring total rendering resolution down to a fraction like 50%, 75%, 90%, and so on (or go crazy and get up to 120% and more, if you're on a workstation). However, Rockstar has elected not to implement any kind of dynamic resolution scaling system, which could have simplified PC users' efforts to stick to either 30fps or 60fps with fewer hassles. (To be fair, this is consistent with the console versions, which also skipped any dynamic resolution scaling options.)
+In order to play this version of RDR2, you'll need to use the Rockstar Games Launcher, either by pumping it full of payment information or by using a partner service like Epic Games Store, which still redirects the game itself to load via RGL. For now, there's no way to purchase or download this game via Steam; Rockstar has clearly followed the likes of Epic, EA, and Ubisoft in using its own launcher to sidestep other retailers' percentage fees. A Steam version will reportedly follow in December of this year, though it looks like it too will require the Rockstar Games Launcher, much like how the Grand Theft Auto V PC version was patched to require RGL earlier this year.
+The bad news in the case of RDR2's launch on Rockstar Games Launcher came from the obnoxious pre-load process, which added a painfully long ""decryption"" process to my Tuesday morning installation. (In spite of my loading the game on my SSD the night before, I still had to wait 40 minutes for its 110GB install to unlock itself.) Other than that, the Launcher worked fine enough, particularly in terms of its cloud save feature working as advertised (though I only tested that on a single extra system as of press time).
+Dig through the galleries for more context, including an explainer on how Rockstar has buried the ability to rebind controls until you've loaded the campaign and hit the pause button—better than nothing, but still an accessibility barrier as of press time.
+
+
+
+Graphics menu time. We have four screens of toggles to pick from. Worth noting here: the ""quality preset level"" bar has more than a dozen toggles, but Rockstar hasn't built these to scale on a performance level. Many of the steps afforded my system nigh unnoticeable gains. RockStar Game
+
+
+
+Ignore the red highlighted parts. Something was always selected when I hit the screenshot button. Also, note that you can toggle TAA, FXAA, and MSAA simultaneously, if you want to pummel jaggies.
+
+
+
+Want to crank up performance while still otherwise running your game at peak settings? That ""far volumetric resolution"" toggle should be turned from ""ultra"" to ""high"" for seemingly identical visuals and a whopping 18% performance boost.
+
+
+
+Final graphics menu. Let's get that fur quality up! All the fur!
+
+
+
+Now for some very bad news, PC players. These two screens are the keyboard-and-mouse options...
+
+
+
+...and they don't include any remapping options. Where are they? Turns out, you have to go into the in-game settings menus to access rebinding. You cannot rebind controls until you've actually launched the game.
+
+
+
+This article has been updated to clarify the ability to rebind controls and the game's availability on third-party services.
+
+
+Listing image by Rockstar Games
+
+
+Further Reading
+
+
+
+
+",en,"
+
+
+
+
+
+
+
+
+
+
+
+Red Dead Redemption 2 on PC: More frames, more volumetric beauty, no Steam
+Want to get beyond 60fps? Go ahead. Want to buy and load the game on Steam? Not yet.
+05 Nov 2019, 20:15 by Sam Machkovech
+
+
+
+Let's get stoic again... this time on Windows PC. All images in this gallery were captured from live gameplay at near-max settings. Rockstar Games
+
+
+
+The first thing to call out is the incredible upgrades to volumetric particle fields. Every foggy, misty sequence looks jaw-dropping in action.
+
+
+
+The way light particles scatter in these dense fields of fog is remarkable. You normally want an HDR monitor to see colors fade and melt in the horizon like this. Bravo, Rockstar.
+
+
+
+Shadow resolution is also quite impressive for both close and distant shadows.
+
+
+
+It's a shame Rockstar didn't get a ray-tracing pipeline worked up in time for this PC launch, as the game's screen space reflection tech is a bit ho-hum (not really evidenced by this image, admittedly).
+
+
+
+Another look at high-res real-time light-and-shadow systems. Lights off.
+
+
+
+Lights on.
+
+
+
+I'm not sure the horse is gonna make it.
+
+
+
+Sorry about that last shot. Here's some horse friendship to make up for it.
+
+
+
+In general, texture resolution during real-time gameplay looks this good.
+
+
+
+Notice this zoomed shot's awful treatment of shadow resolution. This appears to be a PC launch-day bug on how a camera zoom isn't being met with a proper system to convert ""far"" shadows to ""near"" ones.
+
+
+
+Those kinds of shadow tweaks are less noticeable when the fortress in question is so distant.
+
+
+
+Why am I zooming on the sky here? Because this plume of smoke looks wonderful in action, with its every particle moving at a different speed.
+
+
+
+Clearer day, clumpier snow.
+
+
+
+Slow-mo kill shot.
+
+
+After years of waiting, we finally have a Red Dead Redemption game on Windows PCs... and it's the newer one from October of last year. Tuesday morning marked the PC launch of Red Dead Redemption 2—now available for purchase exclusively through the Rockstar Games Launcher for $60 and up—so we grabbed a copy to see how this PC port turned out.
+The meat of it all comes in the attached galleries, which all include near-max settings at native 1440p resolution and the game's temporal anti-aliasing (TAA) toggle turned to ""high."" I've only tested enough to get through the campaign's opening snowy portion, though the game's built-in benchmark mode (below) includes plenty of outdoor footage.
+In good news, RDR2's PC port works as a pretty, settings-cranked-high alternative to last year's console release. Its most obvious upgrade comes in the form of an unlocked frame rate. In one morning of testing, I was already able to crank performance (after downgrading a bunch of settings) to an apparent 120fps-and-up threshold, although random performative spikes—usually triggered by sharp cuts in cinematic scenes—made me glad I had a variable refresh rate monitor.
+Otherwise, my 1440p gameplay worked with near-max graphics settings at roughly 70fps, which only required a settings downscale of the game's ""distant volumetric"" settings (which got me nearly 18% of my frames back with zero apparent difference in terms of visuals). Keep that toggle in mind if you're using a system weaker than mine (i7-8770K, RTX 2080 Ti, 32GB of DDR-3000 RAM, SSD drive).
+In bad news, RDR2's facial and body animations were never built for these kinds of high speeds. What looks tolerable and fine enough on a console, locked to 30fps, comes off a bit last-gen when the camera sway and particles run at higher speeds. (To be clear: all animations of up-close characters appear to run at organic speeds, as opposed to some weird lock on 30fps. Whether that's the same for NPCs rendered in the distance isn't yet clear.)
+But that's more of an issue during cut scenes than in the live gameplay. Riding a horse, ducking into cover, and pumping vagrants full of shotgun shells feels so much better in this version of the game, especially when you go into your graphics card menu of choice and toggle low-latency settings. RDR2 famously came with control latency issues on console, and while you're not going to get the immediate twitchy response of a shooter in this PC version, we're back in respectable tap-and-response timing thanks to the luxuries of the PC platform.
+
+
+
+This first gallery is dedicated to the new Red Dead Redemption 2 benchmark app, exclusive to the new Windows version. It includes four scenes in all. The first primarily tests particle effects in the game's opening snow biome. RockStar Games
+
+
+
+Then we move into a swamp zone, where the game's volumetric haze and fog is most loudly tested. You'll want to pay attention to this with various effects enabled and disabled to see how the quality toggles look in action.
+
+
+
+All images in this gallery are set to their maximum values. In this shot's case, that means the volumetric clouds look a lot more convincing in motion.
+
+
+
+A wide-open vista, arguably best used to test HDR effects. Here it is with a hint of sunset...
+
+
+
+...and the same scene with zero hint of sun remaining.
+
+
+
+This benchmarking moment quietly pans over a sleepy town. Not much here in action beyond some lights turning on inside of homes and torches in the streets. I'll point out that Vulkan is the default renderer for the PC version; if you switch to DirectX 12, the lights and textures in this scene (and others) consistently stutter to load as of press time. Until Rockstar addresses this issue, stick with Vulkan.
+
+
+
+The final scene of the benchmark is the ""real gameplay"" sequence. It opens with petty larceny.
+
+
+
+Then our hero runs through a town, which works out the CPU's ability to render a variety of NPCs.
+
+
+
+Enjoy a couple of horse-racing shots to check out the game's shadows at maximum quality.
+
+
+
+More max-quality shadow shots.
+
+
+
+We've got company.
+
+
+
+Reminder that this whole gallery is rendered at 1440p with all effects cranked to maximum and TAA set to ""high.""
+
+
+
+Throw some dynamite, watch the carriage go kaboom.
+
+
+
+When you run the benchmark a few times, the fallen horses here sometimes derp out.
+
+
+
+Away we go, over this bridge.
+
+
+
+All settings at max, so this reflection is crisp.
+
+
+One more detail about the PC version lands in both the ""good"" and ""bad"" news columns: internal resolution scaling. Should you wish to crank up settings and still lock a 60fps refresh, you can pick some simple toggles to bring total rendering resolution down to a fraction like 50%, 75%, 90%, and so on (or go crazy and get up to 120% and more, if you're on a workstation). However, Rockstar has elected not to implement any kind of dynamic resolution scaling system, which could have simplified PC users' efforts to stick to either 30fps or 60fps with fewer hassles. (To be fair, this is consistent with the console versions, which also skipped any dynamic resolution scaling options.)
+In order to play this version of RDR2, you'll need to use the Rockstar Games Launcher, either by pumping it full of payment information or by using a partner service like Epic Games Store, which still redirects the game itself to load via RGL. For now, there's no way to purchase or download this game via Steam; Rockstar has clearly followed the likes of Epic, EA, and Ubisoft in using its own launcher to sidestep other retailers' percentage fees. A Steam version will reportedly follow in December of this year, though it looks like it too will require the Rockstar Games Launcher, much like how the Grand Theft Auto V PC version was patched to require RGL earlier this year.
+The bad news in the case of RDR2's launch on Rockstar Games Launcher came from the obnoxious pre-load process, which added a painfully long ""decryption"" process to my Tuesday morning installation. (In spite of my loading the game on my SSD the night before, I still had to wait 40 minutes for its 110GB install to unlock itself.) Other than that, the Launcher worked fine enough, particularly in terms of its cloud save feature working as advertised (though I only tested that on a single extra system as of press time).
+Dig through the galleries for more context, including an explainer on how Rockstar has buried the ability to rebind controls until you've loaded the campaign and hit the pause button—better than nothing, but still an accessibility barrier as of press time.
+
+
+
+Graphics menu time. We have four screens of toggles to pick from. Worth noting here: the ""quality preset level"" bar has more than a dozen toggles, but Rockstar hasn't built these to scale on a performance level. Many of the steps afforded my system nigh unnoticeable gains. RockStar Game
+
+
+
+Ignore the red highlighted parts. Something was always selected when I hit the screenshot button. Also, note that you can toggle TAA, FXAA, and MSAA simultaneously, if you want to pummel jaggies.
+
+
+
+Want to crank up performance while still otherwise running your game at peak settings? That ""far volumetric resolution"" toggle should be turned from ""ultra"" to ""high"" for seemingly identical visuals and a whopping 18% performance boost.
+
+
+
+Final graphics menu. Let's get that fur quality up! All the fur!
+
+
+
+Now for some very bad news, PC players. These two screens are the keyboard-and-mouse options...
+
+
+
+...and they don't include any remapping options. Where are they? Turns out, you have to go into the in-game settings menus to access rebinding. You cannot rebind controls until you've actually launched the game.
+
+
+
+This article has been updated to clarify the ability to rebind controls and the game's availability on third-party services.
+
+
+Listing image by Rockstar Games
+
+
+Further Reading
+
+
+
+
+"

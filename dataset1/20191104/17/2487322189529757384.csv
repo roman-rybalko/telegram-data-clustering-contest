@@ -1,0 +1,110 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+«Супермен» на кварцевом стекле, конструктор ботов без кода и вопросы в Excel: что показала Microsoft на Ignite 2019
+04 Nov 2019, 17:22 by Дамир Камалетдинов
+Кратко о главных анонсах с крупной конференции компании.
+4 ноября в США стартовала ежегодная конференция Ignite 2019 от Microsoft. Первый день компания посвятила анонсам новых продуктов и обновлений, TJ рассказывает о главном.
+«Супермен» на кварцевом стекле
+Microsoft рассказала об успехах Project Silica — концепции по использованию кварцевого стекла в качестве хранилища информации. Компания объединилась со студией Warner Bros. и впервые записала на кварцевое стекло фильм — «Супермена» 1978 года.
+
+
+​Кварцевое стекло с записанным «Суперменом»Фото Microsoft​
+
+Оригинальную запись с четырёх бобин плёнки перенесли на кусок стекла толщиной 2 миллиметра и размером с подставки для кружки — 75 на 75 миллиметров. Для записи использовали сверхбыстрый лазер, который кодировал данные на стекло, создавая слои трёхмерных наноразмерных решёток и деформацией на разных глубинах и под разными углами.
+За считывание данных отвечали алгоритмы машинного обучения, которые декодировали узоры. Твёрдое кварцевое стекло может выдержать кипячение в воде, нагревание в духовке и микроволновой печи, мытьё, чистку, размагничивание и другие воздействия окружающей среды.
+Конструктор ботов без кода Power Virtual Agents
+Новый инструмент Power Virtual Agents позволит создавать чат-ботов без умения писать код. В Microsoft отметили, что это позволит разрабатывать ботов так же просто, как писать текст в Word.
+
+
+Интерфейс создания чатбота в Power Virtual AgentsСкриншот Microsoft​
+
+Инструмент работает с чат-ботами по полному циклу от написания диалогов до интеграции в мессенджеры вроде Teams и Slack. Благодаря функциям ИИ от Microsoft, пользователям не придётся тратить много времени на описание каждого возможного вопроса и ответа, вместо этого они могут положиться на автоматическую систему и внести небольшие исправления после.
+Созданного бота всегда можно перевести в код, чтобы доработать его на другом уровне. Сервис также предоставит подробную статистику о взаимодействиях пользователей с ботом. Power Virtual Agents уже доступен для публичного тестирования.
+
+
+Детальная статистика по использованию чат-ботаСкриншот Microsoft​
+
+Общение с Excel на «естественном» языке
+Теперь таблице в Excel можно задавать вопросы как обычному человеку и получать быстрые ответы. Для этого не нужно будет составлять сложные формулы или запросы. В Microsoft считают, что это упростит взаимодействие с программой среди пользователей разного уровня и позволит быстрее получать информацию.
+Похожая функция есть в «Таблицах» от Google, однако даже там не всегда работает корректно. Пока новые возможности доступны пользователям программы тестирования Office Insider.
+Дата выхода Microsoft Edge на Chromium и новый логотип
+Новую версию браузера Edge на движке Chromium выпустят 15 января 2020 года на Windows и впервые macOS. Незадолго до релиза Microsoft сменила логотип программы с буквы «e» на «волну сёрфинга в интернете».
+
+
+
+Среди основных нововведений в Edge — «Коллекции», которые позволят собирать контент из интернета в некое подобие заметок прямо на страницах. В новом браузере Microsoft сделала ставку на приватность — он автоматически ограничивает отслеживание в интернете. Предрелизную версию могут скачать все желающие.
+Безопасность компаний на основе ИИ
+В Microsoft 365 добавят инструмент Insider Risk Management. Это новое решение для управления рисками в компаниях, который позволит идентифицировать и устранить угрозы внутри организации.
+Система анализирует нетипичное и подозрительное поведение сотрудников, например, действия с конкретными файлами. С помощью алгоритмов инструмент предупреждает начальство и позволяет предотвратить риски, которые нельзя обнаружить обычными методами.
+В Microsoft утверждают, что Insider Risk Management собирает данные анонимно из Microsoft Graph и сторонних источников вроде HR-систем для выявления закономерностей. Пока организациям доступна только закрытая ознакомительная версия.
+Автоматическая корпоративная «сеть данных» Project Cortex
+Первый новый сервис в пакете Microsoft 365 с момента запуска Microsoft Teams. Инструмент представляет собой нечто между автоматически классификатором контента и цифровым ассистентом.
+Он автоматически находит и распределяет разную информацию по темам, например, в приложениях Office, Outlook и Teams, определяет экспертов и создаёт «сеть знаний» компании. Пока доступно только в закрытом тестировании, публичный релиз намечен на первую половину 2020 года.
+
+
+",ru,"
+
+
+
+
+
+
+
+
+
+
+
+“Superman” on quartz glass, designer of bots without code and questions in Excel: what Microsoft showed on Ignite 2019
+04 Nov 2019, 17:22 by Damir Kamaletdinov
+Briefly about the main announcements from a major conference of the company.
+On November 4, the annual Ignite 2019 conference from Microsoft started in the United States. The first day the company devoted to announcements of new products and updates, TJ talks about the main thing.
+""Superman"" on quartz glass
+Microsoft talked about the success of Project Silica - a concept for using quartz glass as a repository of information. The company teamed up with Warner Bros. Studios. and first recorded on 1978 a quartz glass - Superman.
+
+
+Quartz glass with recorded ""Superman"" Microsoft Photo
+
+The original recording from four film reels was transferred to a piece of glass 2 mm thick and the size of a cup stand - 75 by 75 millimeters. For recording, an ultrafast laser was used, which encoded data onto glass, creating layers of three-dimensional nanoscale lattices and deformation at different depths and at different angles.
+For data reading, machine learning algorithms that decoded patterns were responsible. Hard quartz glass can withstand boiling in water, heating in the oven and microwave, washing, cleaning, demagnetizing and other environmental influences.
+Bot Designer without Power Virtual Agents Code
+The new Power Virtual Agents tool will allow you to create chatbots without writing code. Microsoft noted that this will allow developing bots as easy as writing text in Word.
+
+
+Power Virtual Agents Chatbot Creation Interface Microsoft Screenshot
+
+The tool works with chat bots in a complete cycle from writing dialogs to integration into instant messengers like Teams and Slack. Thanks to Microsoft’s AI functions, users don’t have to spend a lot of time describing every possible question and answer, instead they can rely on an automatic system and make minor corrections afterwards.
+You can always translate the created bot into code to modify it at a different level. The service will also provide detailed statistics on user interactions with the bot. Power Virtual Agents is now available for public testing.
+
+
+Detailed Chat Bot Usage Statistics Microsoft Screenshot
+
+Communication with Excel in the ""natural"" language
+Now the table in Excel can ask questions like an ordinary person and get quick answers. No complicated formulas or queries will be needed for this. Microsoft believes that this will simplify interaction with the program among users at various levels and will allow faster information.
+A similar feature is in the ""Sheets"" from Google, but even there it does not always work correctly. So far, new features are available to users of the Office Insider testing program.
+Chromium Microsoft Edge release date and new logo
+The new version of the Edge browser on the Chromium engine will be released on January 15, 2020 on Windows and for the first time macOS. Shortly before the release, Microsoft changed the program logo from the letter “e” to “a wave of surfing the Internet.”
+
+
+
+Among the main innovations in Edge - “Collections”, which will allow you to collect content from the Internet in a kind of notes directly on the pages. In the new browser, Microsoft has relied on privacy - it automatically limits tracking on the Internet. Everyone can download the pre-release version.
+AI-based company security
+Microsoft 365 will add the Insider Risk Management tool. This is a new risk management solution for companies that will identify and eliminate threats within the organization.
+The system analyzes the atypical and suspicious behavior of employees, for example, actions with specific files. Using algorithms, the tool warns superiors and helps prevent risks that cannot be detected by conventional methods.
+Microsoft claims that Insider Risk Management collects data anonymously from Microsoft Graph and third-party sources like HR systems to identify patterns. So far, only a closed trial version is available to organizations.
+Automated Enterprise Data Network Project Cortex
+The first new service in Microsoft 365 since the launch of Microsoft Teams. A tool is something between an automatic content classifier and a digital assistant.
+It automatically finds and distributes various information on topics, for example, in Office, Outlook and Teams applications, determines experts and creates a “knowledge network” of the company. While only available in closed testing, a public release is scheduled for the first half of 2020.
+
+
+"

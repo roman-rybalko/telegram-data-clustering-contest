@@ -1,0 +1,52 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+MIT and Ford help delivery robots navigate to your doorstep
+Their technique doesn't require mapping areas in advance.
+04 Nov 2019, 14:52 by Christine Fisher
+In order for delivery robots to drop your takeout, package or meal-kit at the door, they'll need to be able to find the door. In most cases, that requires mapping a location in advance so that the robot knows where to go. But to do that on a large scale is challenging and raises security and privacy concerns. Now, a team of engineers from MIT and Ford Motor Company think they might have an answer. They've created a technique that allows robots to navigate via clues, rather than maps.
+The clues can be described in general terms, like ""front door"" or ""garage."" As MIT explains, the robot might be trained to know that a driveway often leads to a sidewalk which likely leads to the front door.
+""Even if a robot is delivering a package to an environment it's never been to, there might be clues that will be the same as other places it's seen,"" said Michael Everett, a graduate student in MIT's Department of Mechanical Engineering. ""So the world may be laid out a little differently, but there's probably some things in common.""
+
+
+
+The technique uses pre-existing algorithms that looks at visual data and labels the scene with semantic clues, like ""sidewalk."" The researchers used those algorithms to build a map as their robot moved around. What's new about their approach is that they allowed the robot to make decisions and determine the most efficient path to a destination. The team will present their findings at the International Conference on Intelligent Robots and Systems this week.
+Source: MIT News
+
+
+",en,"
+
+
+
+
+
+
+
+
+
+
+
+MIT and Ford help delivery robots navigate to your doorstep
+Their technique doesn't require mapping areas in advance.
+04 Nov 2019, 14:52 by Christine Fisher
+In order for delivery robots to drop your takeout, package or meal-kit at the door, they'll need to be able to find the door. In most cases, that requires mapping a location in advance so that the robot knows where to go. But to do that on a large scale is challenging and raises security and privacy concerns. Now, a team of engineers from MIT and Ford Motor Company think they might have an answer. They've created a technique that allows robots to navigate via clues, rather than maps.
+The clues can be described in general terms, like ""front door"" or ""garage."" As MIT explains, the robot might be trained to know that a driveway often leads to a sidewalk which likely leads to the front door.
+""Even if a robot is delivering a package to an environment it's never been to, there might be clues that will be the same as other places it's seen,"" said Michael Everett, a graduate student in MIT's Department of Mechanical Engineering. ""So the world may be laid out a little differently, but there's probably some things in common.""
+
+
+
+The technique uses pre-existing algorithms that looks at visual data and labels the scene with semantic clues, like ""sidewalk."" The researchers used those algorithms to build a map as their robot moved around. What's new about their approach is that they allowed the robot to make decisions and determine the most efficient path to a destination. The team will present their findings at the International Conference on Intelligent Robots and Systems this week.
+Source: MIT News
+
+
+"

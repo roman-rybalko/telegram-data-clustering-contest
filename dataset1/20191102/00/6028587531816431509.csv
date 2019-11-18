@@ -1,0 +1,58 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+New Google Android Threat: NFC Exposes Devices To Malware Attack—Update Settings Now
+02 Nov 2019 by Zak Doffman
+
+
+
+Getty
+
+
+Convenience, it seems, continues to come at a price for smartphone users. As each new innovation reaches the market, so does the risk that a new security vulnerability will be introduced alongside it. In October, I reported on Samsung’s innovative in-display fingerprint being defeated by nothing more than a cheap gel screen protector. This time the tech is not that new—we’re talking about the technology behind contactless payments and access control. But a tweaked Google security setting has opened a serious vulnerability that has now been patched. Millions of users now need to apply the latest set of Android security updates or change their settings.NFC—Near Field Communication—has become almost as ubiquitous as Bluetooth. By holding your phone a few centimetres from another device or a reader, you open a wireless data link that is usually used to exchange payment or access credentials. But the same link can also be used to transfer large amounts of data between devices. With Android this takes the form of Android Beam, a convenient if little used means of passing data from one device to another without an external network or Bluetooth.
+Because this is a core feature, most new Android devices ship with NFC enabled for both payments and data transfers. No problem there. But in combination with another default Android option, this has caused a problem—an app by app security setting for installing unknown apps. “Unknown apps” are so-called because they originate from outside the Play Store—this carries risks and users should be warned before they allow any such app to install. Until Android 8, enabling or disabling such installations was systemwide. The problem is that Google then changed this, making the setting app-specific, and defaulted their own core apps to be trusted—including Android Beam.
+So, how would an attack manifest itself? A user would touch a malicious payment or access terminal, have their device touched by an attacker’s phone or place their phone on a surface with a terminal hidden within. The target device would show a prompt, a one-touch option to allow the app to be installed. It would not be a warning, as such. And so most users would assume this was a standard Play Store or Android update—why would you think otherwise?
+The bug has been confirmed, classified as high severity and fixed. CVE-2019-2114 is described as the “possible local bypass of user interaction requirements [in the default privileges of NFC] on package installation due to a default permission, [which] could lead to local escalation of privilege by installing an application with no additional execution privileges needed.” Now we know what this actually means. the bug was patched in October, alongside other key Android security fixes. With the patch applied, Android Beam has been removed as a trusted source, closing the vulnerability. Needless to say, as ever when serious security issues are highlighted, users should update their devices as soon as they can and keep them updated.
+While the vulnerability is serious, it is also relatively straightforward to defend against if you’re aware of the risk. If you see an app installation notification when away from home, don’t just click without any thought. And if this happens when you are out and about and may have recently touched a terminal or device, then err on the side of caution. Frankly, just change your settings or apply the update now and avoid the risk. Users can click on the NFC and payment setting option on their devices and disable NFC for Android Beam. Updates can be applied in the usual way for your device.
+Because the details of this vulnerability are now in the open, providing detail beyond the core CVE description, users should take extra care. There is a timing gap before systems are patched and users made aware, and this does open some risk. It is easily fixed though, and takes just seconds. As I’ve written multiple times before, the risk we take from the raft of cheap or free apps we allow onto our devices needs some common sense applied. This issue is different, of course, it’s a system issue and not a Play Store app vulnerability. That said, it does play on our casual approach to apps and installs which probably warrants some thought.
+
+
+",en,"
+
+
+
+
+
+
+
+
+
+
+
+New Google Android Threat: NFC Exposes Devices To Malware Attack—Update Settings Now
+02 Nov 2019 by Zak Doffman
+
+
+
+Getty
+
+
+Convenience, it seems, continues to come at a price for smartphone users. As each new innovation reaches the market, so does the risk that a new security vulnerability will be introduced alongside it. In October, I reported on Samsung’s innovative in-display fingerprint being defeated by nothing more than a cheap gel screen protector. This time the tech is not that new—we’re talking about the technology behind contactless payments and access control. But a tweaked Google security setting has opened a serious vulnerability that has now been patched. Millions of users now need to apply the latest set of Android security updates or change their settings.NFC—Near Field Communication—has become almost as ubiquitous as Bluetooth. By holding your phone a few centimetres from another device or a reader, you open a wireless data link that is usually used to exchange payment or access credentials. But the same link can also be used to transfer large amounts of data between devices. With Android this takes the form of Android Beam, a convenient if little used means of passing data from one device to another without an external network or Bluetooth.
+Because this is a core feature, most new Android devices ship with NFC enabled for both payments and data transfers. No problem there. But in combination with another default Android option, this has caused a problem—an app by app security setting for installing unknown apps. “Unknown apps” are so-called because they originate from outside the Play Store—this carries risks and users should be warned before they allow any such app to install. Until Android 8, enabling or disabling such installations was systemwide. The problem is that Google then changed this, making the setting app-specific, and defaulted their own core apps to be trusted—including Android Beam.
+So, how would an attack manifest itself? A user would touch a malicious payment or access terminal, have their device touched by an attacker’s phone or place their phone on a surface with a terminal hidden within. The target device would show a prompt, a one-touch option to allow the app to be installed. It would not be a warning, as such. And so most users would assume this was a standard Play Store or Android update—why would you think otherwise?
+The bug has been confirmed, classified as high severity and fixed. CVE-2019-2114 is described as the “possible local bypass of user interaction requirements [in the default privileges of NFC] on package installation due to a default permission, [which] could lead to local escalation of privilege by installing an application with no additional execution privileges needed.” Now we know what this actually means. the bug was patched in October, alongside other key Android security fixes. With the patch applied, Android Beam has been removed as a trusted source, closing the vulnerability. Needless to say, as ever when serious security issues are highlighted, users should update their devices as soon as they can and keep them updated.
+While the vulnerability is serious, it is also relatively straightforward to defend against if you’re aware of the risk. If you see an app installation notification when away from home, don’t just click without any thought. And if this happens when you are out and about and may have recently touched a terminal or device, then err on the side of caution. Frankly, just change your settings or apply the update now and avoid the risk. Users can click on the NFC and payment setting option on their devices and disable NFC for Android Beam. Updates can be applied in the usual way for your device.
+Because the details of this vulnerability are now in the open, providing detail beyond the core CVE description, users should take extra care. There is a timing gap before systems are patched and users made aware, and this does open some risk. It is easily fixed though, and takes just seconds. As I’ve written multiple times before, the risk we take from the raft of cheap or free apps we allow onto our devices needs some common sense applied. This issue is different, of course, it’s a system issue and not a Play Store app vulnerability. That said, it does play on our casual approach to apps and installs which probably warrants some thought.
+
+
+"

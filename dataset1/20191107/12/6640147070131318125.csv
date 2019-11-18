@@ -1,0 +1,52 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Gruppi Facebook, un altro problema di accesso ai dati che ha riguardato 100 sviluppatori
+07 Nov 2019, 12:18 by Dario D'Elia
+Facebook martedì ha confermato sul suo blog dedicato agli sviluppatori che sta cambiando le modalità di accesso a una serie di API per i gruppi dopo aver scoperto che circa 100 partner avrebbero goduto nel tempo a un accesso a informazioni (nomi e immagini profilo) per un periodo più lungo del previsto.
+Nello specifico si parla di almeno 11 sviluppatori coinvolti negli ultimi due mesi. “Anche se non abbiamo riscontrato prove di abuso, chiederemo loro di eliminare tutti i dati dei membri che potrebbero aver conservato e condurremo audit per confermare che sono stati eliminati”, ha assicurato Konstantinos Papamiltiadis, responsabile piattaforme partnership di Facebook.
+
+
+Photo credit - depositphotos.com
+
+E così a distanza di più di un anno dallo scandalo Cambridge Analytica, si ripropone un problema di  accesso ai dati, anche se in questo caso sono stati rilevati abusi e non sono neanche state citate le app coinvolte. L’unica certezza è che si è trattato di applicazioni di gestione dei social media o di streaming video “progettate per facilitare agli amministratori di gruppo una gestione più efficace dei gruppi e aiutare i membri a condividere i video con i loro gruppi”.
+“Ad esempio, se un’azienda gestiva una grande comunità composta da molti membri in più gruppi, potrebbe aver usato un’app di gestione dei social media per fornire assistenza clienti, comprese risposte personalizzate, su vasta scala. Anche se questo accesso ha fornito vantaggi a persone e gruppi su Facebook, abbiamo preso la decisione di rimuoverlo e stiamo seguendo questo approccio”, ha spiegato Papamiltiadis.
+Nel tempo Facebook ha effettuato diverse modifiche significati alle sue API, soprattutto a partire dal 2018. Il caso Cambridge Analytica è stato pagato a caro prezzo – l’accordo con la Federal Trade Commission è costato 5 miliardi di dollari – ma questo ultima criticità dimostra che la strada è ancora lunga. Anche perché persino a settembre è stata costretta a sospendere decine di migliaia di app di circa 400 sviluppatori poiché raccoglievano dati in modo inappropriato. Sono stati rilevati per lo più casi di mancanza di anonimizzazione dei dati, installazione di malware e violazioni dei termini di servizio.
+
+
+",it,"
+
+
+
+
+
+
+
+
+
+
+
+Facebook groups, another data access problem affecting 100 developers
+07 Nov 2019, 12:18 by Dario D'Elia
+Facebook on Tuesday confirmed on its blog dedicated to developers that it is changing the way to access a set of API for groups after discovering that around 100 partners would have enjoyed access to information (names and profile images) for a period of time longer than expected.
+Specifically we talk about at least 11 developers involved in the last two months. ""Even if we have not found any evidence of abuse, we will ask them to delete all the data of the members who may have kept and we will conduct audits to confirm that they have been eliminated,"" assured Konstantinos Papamiltiadis, Facebook partnership platform manager.
+
+
+Photo credit - depositphotos.com
+
+And so, after more than a year after the Cambridge Analytica scandal, there is a problem of access to data, even if in this case abuses have been detected and the apps involved have not even been mentioned. The only certainty is that it was social media management or video streaming applications ""designed to make it easier for group administrators to manage groups more effectively and help members share videos with their groups.""
+""For example, if a company ran a large community of many members in multiple groups, it could have used a social media management app to provide customer support, including personalized, large-scale responses. Although this access has benefited people and groups on Facebook, we have made the decision to remove it and we are following this approach, ""explained Papamiltiadis.
+Over time, Facebook has made several significant changes to its APIs, especially since 2018. The Cambridge Analytica case was paid for at a high price - the agreement with the Federal Trade Commission cost $ 5 billion - but this last criticality shows that the road is still long. Also because even in September it was forced to suspend tens of thousands of apps from around 400 developers because they collected data inappropriately. Most cases were found to be lacking data anonymization, malware installation and service terms violations.
+
+
+"

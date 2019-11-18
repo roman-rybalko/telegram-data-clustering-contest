@@ -1,0 +1,128 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Vorsicht bei der Nutzung von US-Cloud-Diensten
+05 Nov 2019 by Andreas Dumont
+
+Annähernd zur gleichen Zeit wie die DSGVO ist der CLOUD Act in den USA in Kraft getreten - dieser erlaubt US-Behörden den Zugriff auf sensible Daten zur Strafverfolgung. Das ist jedoch nicht DSGVO-konform.
+
+
+
+
+
+Das Tohuwabohu rund um die Datenschutz-Grundverordnung (DSVGO) im vergangenen Jahr war enorm. Wenig beachtet, ist in den USA - quasi im Windschatten der DSGVO - fast zeitgleich der CLOUD Act in Kraft getreten. Das Akronym steht für Clarifying Lawful Overseas Use of Data. Ziel und Zweck des CLOUD Act ist es, US-Behörden zu ermöglichen, im Rahmen der Strafverfolgung Zugriff auf Daten zu erlangen, die bei US-Unternehmen gespeichert sind. Das Gesetz verpflichtet US-Unternehmen zur Herausgabe von Daten, die auf ihren Servern vorhanden sind - auch dann, wenn sich diese im Ausland befinden, also etwa in Europa. Zusätzlich sollen bilaterale Rechtshilfeabkommen zwischen den USA und anderen Staaten abgeschlossen werden. Diese würden es auch nicht US-amerikanischen Behörden ermöglichen, Zugriff auf solche Daten zu erhalten.
+Microsofts Klage
+Der CLOUD Act ist die Folge einer ganzen Reihe von Rechtsstreitigkeiten um die Herausgabe von Daten an US-Behörden. Der prominenteste Fall war United States gegen Microsoft, der bis zur höchsten gerichtlichen Instanz ging, dem Supreme Court. Der CLOUD Act wurde just zu einem Zeitpunkt ratifiziert, als das Department of Jus­tice die Geduld mit Microsoft verlor - und beendete das Verfahren schlagartig. Damals wollte die US-Behörde von Microsoft die Daten eines US-Bürgers, die sich auf Cloud-Servern von Microsoft in Irland befanden. Microsoft verweigerte die Herausgabe und berief sich auf die Datenschutzgesetze Irlands und der EU. Beim CLOUD Act spielt es nun keine Rolle mehr, wo der Cloud-Provider seine Server betreibt, er zwingt ihn gewissermaßen dazu, die jeweiligen nationalen Gesetze zu brechen.
+Was der CLOUD Act besagt
+Selbst für gestandene Juristen ist es keine leichte Aufgabe, die Inhalte und Auswirkungen des CLOUD Act genau zu bestimmen. Michael Scheffler, Area Vice President EMEA beim Cloud-Security-Anbieter Bitglass, erklärt es so: „Der CLOUD Act dient dazu, US-Behörden die Ermittlungen in Strafverfahren zu erleichtern. Er ermöglicht ihnen den Zugriff auf Kommunikationsdaten, die Telekommunikations-, E-Mail- oder Cloud-Anbieter im Ausland gespeichert haben. Dafür wurde bislang das Verfahren des Rechtshilfeersuchens genutzt, bei dem US-Behörden mit Unterstützung der Ermittlungsbehörden im Ausland von den Unternehmen die entsprechenden Daten anfordern können. Gemäß CLOUD Act kann die Aushändigung von Kommunikationsdaten aus dem Ausland nun unmittelbar durch die Unternehmen auf Veranlassung der US-Behörden erfolgen.“
+Oft stößt man auf das Missverständnis, der CLOUD Act betreffe nur US-Unternehmen. Der CLOUD Act richtet sich aber an alle Unternehmen, die der US-Gerichtsbarkeit unter­liegen. Er gilt vielmehr unabhängig davon, ob Unternehmen in den USA oder in einem anderen Land niedergelassen sind. Das bedeutet, dass jedes Unternehmen mit einer Zweigstelle, einem kleinen Büro oder einer Tochtergesellschaft in den USA dem CLOUD Act unterliegt. Einzelne US-Gerichte gehen noch weiter: Sie haben geurteilt, dass der CLOUD Act selbst für Nicht-US-Webseiten gilt, die von Kunden mit Sitz in den Vereinigten Staaten genutzt werden. Zwar können die betroffenen Unternehmen gegen die Herausgabe der Daten Einspruch einlegen - dieses Vorgehen erscheint aber wenig erfolgversprechend.
+Eva-Maria Scheiter, Managing Consultant GRC beim Security-Dienstleister NTT Security, merkt an: „Es geht die Sorge um, US-Behörden könnten an den Gerichten vorbei agieren und an personenbezogene Daten oder gar Betriebsgeheimnisse gelangen, ohne betroffene Personen oder Unternehmen darüber informieren zu müssen.“ Es bestehe jedoch kein Automatismus zur Herausgabe solcher Daten. Unternehmen könnten gegen eine Herausgabe votieren, dann werde der Fall vor einem US-Gericht verhandelt, das die Regelungen eines Staates gegen die der USA abwägen solle. Eva Maria Scheiter sagt außerdem: „Der CLOUD Act bietet ein weiteres Rechtsinstrument, das für mehr Klarheit in der sich ständig ausweitenden internationalen Gesetzgebung im Bereich der Cyberkriminalität sorgt.“
+
+
+Teil: Vorsicht bei der Nutzung von US-Cloud-Diensten
+
+
+Teil: Widersprüche zur DSGVO
+
+
+Teil: Privacy Shield
+
+
+Teil: Schutz vor dem CLOUD Act
+
+
+Verwandte Themen
+
+
+Business-IT
+
+
+Datenschutz
+
+
+Cloud
+
+
+DSGVO
+
+
+mehr >>
+
+
+
+
+
+",de,"
+
+
+
+
+
+
+
+
+
+
+
+Beware of using US cloud services
+05 Nov 2019 by Andreas Dumont
+
+At approximately the same time as the GDPR, the US CLOUD Act entered into force, allowing US authorities access to sensitive data for law enforcement purposes. However, this is not DSGVO compliant.
+
+
+
+
+
+The hustle and bustle surrounding the General Data Protection Regulation (DSVGO) last year was enormous. Little noticed, in the US - almost in the slipstream of the DSGVO - almost simultaneously the CLOUD Act came into force. The acronym stands for Clarifying Lawful Overseas Use of Data. The aim and purpose of the CLOUD Act is to enable US authorities to gain access to data held by US companies through law enforcement. The law requires US companies to disclose data that exists on their servers - even if they are located abroad, such as in Europe. In addition, bilateral mutual legal assistance agreements are to be concluded between the USA and other states. These would also not allow US authorities to gain access to such data.
+Microsoft's lawsuit
+The CLOUD Act is the result of a series of litigation over the issuance of data to US authorities. The most prominent case was United States against Microsoft, which went to the highest judicial authority, the Supreme Court. The CLOUD Act was just ratified at a time when the Department of Justice lost patience with Microsoft - and abruptly ended the process. At the time, the US government wanted Microsoft's data from a US citizen residing on Microsoft's cloud servers in Ireland. Microsoft denied the publication and relied on the data protection laws of Ireland and the EU. With the CLOUD Act, it no longer matters where the cloud provider operates its servers; in a sense, it compels it to break the respective national laws.
+What the CLOUD Act says
+Even for seasoned lawyers, it is not an easy task to pinpoint the content and implications of the CLOUD Act. Michael Scheffler, area vice president of EMEA for cloud security provider Bitglass, said: ""The CLOUD Act is designed to help US authorities facilitate criminal investigations. It gives them access to communication data stored by telecommunications, e-mail or cloud providers abroad. So far, the process of letters rogatory was used, in which US authorities with the support of the investigative authorities abroad can request from companies the corresponding data. According to the CLOUD Act, the delivery of communications data from abroad can now be carried out directly by the companies at the instigation of the US authorities. ""
+Often one encounters the misconception that the CLOUD Act concerns only US companies. However, the CLOUD Act is addressed to all companies subject to US jurisdiction. Rather, it applies regardless of whether companies are established in the US or in another country. This means that any business with a branch office, small office or subsidiary in the US is subject to the CLOUD Act. Some US Courts go further: They have ruled that the CLOUD Act applies even to non-US websites used by United States customers. Although the companies concerned can object to the disclosure of the data - this approach seems less promising.
+Eva-Maria Scheiter, Managing Consultant GRC at security service provider NTT Security, comments: ""Concern is being expressed that US authorities could act on the courts and gain access to personal data or even company secrets without informing affected persons or companies But there is no automatic way to publish such data. Companies could vote against surrender, and then the case will be tried in a US court that should weigh the rules of one state against those of the US. Eva Maria Scheiter also says: ""The CLOUD Act provides another legal instrument that will provide greater clarity in the ever-expanding international legislation on cybercrime.""
+
+
+Part: Be careful when using US cloud services
+
+
+Part: Contradictions to the GDPR
+
+
+Part: Privacy Shield
+
+
+Part: Protection from the CLOUD Act
+
+
+Related topics
+
+
+Business IT
+
+
+data protection
+
+
+Cloud
+
+
+DSGVO
+
+
+more >>
+
+
+
+
+
+"

@@ -1,0 +1,78 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+В правительстве назвали условия для изоляции рунета
+
+06 Nov 2019, 07:52
+
+В правительстве определили список угроз рунету, которые могут стать причиной его изоляции и передачи контроля над управлением сетью Роскомнадзору. Среди них распространение запрещенной в РФ информации, хакерские атаки и катастрофы — то есть максимально широкий список угроз, узнал «Интерфакс».
+Читайте такжеСуверенный рунет: инструкция по выживанию
+
+Детали
+
+«Интерфакс» ознакомился с проектом постановления правительства, дающим определение угрозам, в случае которых рунет могут отключить от окружающего мира, и определяющим список таких угроз. Возможность изоляции российского сегмента сети предусмотрена законом о «суверенном рунете», вступившим в силу с 1 ноября.
+Под «угрозой безопасности функционирования в РФ интернета» власти понимают ситуацию, когда сеть не сможет противостоять попыткам несанкционированного доступа к техническому оборудованию, внешним информационным «дестабилизирующим» воздействиям и распространению запрещенной информации.
+Список конкретных угроз, позволяющих изолировать рунет, выглядит следующим образом:
+
+Кибератаки и другие воздействия на средства и сети связи, в результате которых может быть нарушено их функционирование.
+Нарушение доступности для граждан информационных онлайн-ресурсов органов федеральной и региональной власти и органов местного самоуправления.
+Предоставление доступа к информации или ресурсам, доступ к которым подлежит ограничению по закону.
+Нарушение информационной безопасности систем управления сетями, в том числе центра мониторинга и управления сетью (создается и управляется Роскомнадзором по требованию закона о «суверенном рунете». — The Bell), технических средств противодействия угрозам (оборудование DPI для блокировок запрещенных сайтов и сервисов. — The Bell), национальной системы доменных имен, критической информационной инфраструктуры.
+«Угроза устойчивости» сети — аварии или перегрузки узлов связи, из-за которых для граждан становятся недоступными услуги связи или невозможно вызвать экстренные службы, а «критически важные объекты» оказываются отключенными от интернета.
+
+Почему это важно. В случае возникновения угрозы централизованное управление трафиком в России может быть передано Роскомнадзору. Порядок этого централизованного управления еще предстоит определить, но в теории Роскомнадзор должен получить полный контроль над сетью. Несколько дней назад мы писали, что при тестировании нового оборудования DPI на сетях уральских провайдеров (помогающий блокировкам) были зафиксированы сбои, которые привели к ухудшению качества связи, и пока работа оборудования для обеспечения «суверенного рунета» может быть очень непредсказуема. 
+Контекст. С 1 ноября в России действует закон о «суверенном рунете», предусматривающий создание в РФ независимой инфраструктуры, обеспечивающей маршрутизацию в интернете при невозможности подключения к зарубежным корневым серверам. Операторы связи также теперь обязаны установить технические средства, способные определять источник трафика. Подробнее о том, что это значит для вас, — читайте здесь.
+
+Лада Шамардина
+
+
+
+",ru,"
+
+
+
+
+
+
+
+
+
+
+
+The government called the conditions for isolating Runet
+
+06 Nov 2019, 07:52
+
+The government has identified a list of threats to the Internet, which could cause its isolation and transfer of control over the management of the network to Roskomnadzor. Among them are the distribution of information prohibited in the Russian Federation, hacker attacks and disasters - that is, the widest possible list of threats, Interfax learned.
+Read also: Sovereign Runet: Survival Instructions
+
+Details
+
+Interfax familiarized itself with the draft government decree, which defines threats to which the Runet can be disconnected from the outside world, and defines a list of such threats. The possibility of isolating the Russian segment of the network is provided for by the sovereign runet law, which entered into force on November 1.
+Under the ""threat to the security of Internet functioning in the Russian Federation"" the authorities understand the situation when the network cannot resist attempts to unauthorized access to technical equipment, external information ""destabilizing"" influences and the dissemination of prohibited information.
+The list of specific threats to isolate the RuNet is as follows:
+
+Cyberattacks and other influences on communication facilities and networks, as a result of which their functioning may be disrupted.
+Violation of accessibility for citizens of online information resources of federal and regional authorities and local authorities.
+Providing access to information or resources, access to which is subject to restriction by law.
+Violation of the information security of network management systems, including the network monitoring and control center (created and managed by Roskomnadzor at the request of the “sovereign runet.” Law - The Bell), technical means of countering threats (DPI equipment for blocking prohibited sites and services. - The Bell), the national domain name system, critical information infrastructure.
+A “threat to the stability” of a network is an accident or overload of communication centers, due to which communication services become unavailable to citizens or emergency services cannot be called, and “critical facilities” are disconnected from the Internet.
+
+Why is it important. In the event of a threat, centralized traffic management in Russia may be transferred to Roskomnadzor. The order of this centralized management remains to be determined, but in theory, Roskomnadzor should gain full control over the network. A few days ago we wrote that when testing new DPI equipment on the networks of the Ural providers (which helps blocking), failures were recorded that led to a deterioration in the quality of communication, and so far the operation of the equipment to ensure ""sovereign runet"" can be very unpredictable.
+Context. Since November 1, Russia has been in force on the sovereign runet law, which provides for the creation of an independent infrastructure in the Russian Federation that provides Internet routing when it is not possible to connect to foreign root servers. Telecommunications operators are also now required to establish technical means that can determine the source of traffic. Read more about what this means for you - read here.
+
+Lada Shamardina
+
+
+
+"

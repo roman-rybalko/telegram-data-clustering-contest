@@ -1,0 +1,190 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Кассовые чеки: изменения и ответы на популярные вопросы
+05 Nov 2019, 06:17 by Дильнара Юмагулова
+Кассовые чеки в наше время самая актуальная тема, которая вызывает больше всего вопросов. Нужно ли пробивать чек с авансов, с передачи в рассрочку; а если это вообще поступления на расчетный счет — зачем нужен чек? А какой признак способа расчета выбрать? 
+Новые реквизиты в чеках ККТ с 1 июля 2019 г.
+С июля 2019 г. вступили в силу серьезные изменения в оформлении чеков ККТ (п. 2 ст. 4 192-ФЗ), которые повлекли за собой появление новых реквизитов для расчетов между организациями и ИП, что увеличило количество вопросов.
+При оформлении чеков действуют новые правила, а именно помимо старых реквизитов в чеки добавились пять новых:
+
+Наименование покупателя либо фамилия, имя, отчество индивидуального предпринимателя.
+ИНН клиента.
+Сведения о происхождении товара (если товар импортный).
+Сумма акциза (если применимо).
+Регистрационный номер таможенной декларации (если происходит реализация импортного товара).
+
+В программе «1С:Бухгалтерия 8», ред. 3.0, данный механизм реализован с релиза 3.0.71.69. Для того чтобы пробить чек с реквизитами о наименовании и ИНН клиента, необходимо создать документ «Приходный кассовый ордер» с видом операции оплата от покупателя и выбрать нужного клиента (при этом не забываем заполнять в карточке контрагента ИНН). Если вы проверили релиз и выполняете описанные действия, а данные в чеке все равно не отображаются — необходимо обновить драйвер кассы.Отключить рекламу
+
+
+
+При оплате по расчетному счету данные реквизиты необязательны, так как безналичные расчеты между юрлицами и ИП пока освобождены от применения онлайн-касс.
+Минфин сделал отдельное разъяснение ситуации (Письма Минфина РФ от 28.11.2018 № 03-01-15/86080 и № 03-01-15/86077), когда происходит выплата выигрыша в лотерее или азартной игре, так же пробивается чек с реквизитами наименования и ИНН клиента. Если это обычное физлицо и выигрыш составляет боле 15 000 руб., то также необходимо указывать ИНН. При этом если у отсутствует идентификационный номер налогоплательщика, в чек подтянутся паспортные данные (серия и номер).
+
+
+
+В программе так же реализовано автоматическое заполнение в чеке новых реквизитов в виде страны происхождения импортного товара и ГТД (номера таможенной декларации), но не во всех случаях. К примеру, если у нас предоплата от клиента за конкретный товар, мы оформляем банковскую выписку или приходный кассовый ордер и пробиваем чек именно с этих документов — страну происхождения и номер ГТД придется выбрать вручную в предварительном просмотре чека.
+
+Отключить рекламу
+
+Во всех остальных случаях данные по стране происхождения и номеру ГТД будут подставляться автоматически, т.е. если пробивать чек из реализации, либо из документов оплаты (если оплата создана на основании реализации).
+
+
+
+Для того чтобы заполнить данные по стране происхождения в чеке на предоплату необходимо в денежном документе (поступление наличных, поступление на расчетный счет) нажать на кнопку «Пробить чек» — «Откроется предварительный просмотр». Затем в табличной части для импортных товаров заполнить поле «Страна происхождения», номер ГТД и проверить в правой стороне отобразились ли эти реквизиты в чеке.
+Какой признак способа расчета в чеке выбрать
+Также часто задаваемым вопросом по кассам является выбор признака способа расчета. Раньше чеки пробивались только в момент расчетов, под которым понимается прием или выдача денег, а при передаче товара не было обязанности пробивать чек. Однако есть ситуации, когда товар отдают под раннее полученный аванс или, наоборот, с отсрочкой платежа, и при старых правилах нельзя было отследить движение расчетов. Именно для таких ситуаций используется специальный реквизит — «Признак способа расчета». Рассмотрим, какие варианты реквизита вообще выделяют и как их отразить в кассовом чеке:Отключить рекламу
+
+Аванс.
+Оплата кредита.
+Передача без оплаты.
+Передача с полной оплатой.
+Передача с частичной оплатой.
+Предоплата полная.
+Предоплата частичная.
+
+Начнем с авансов и предоплаты, в чем отличие и какой реквизит в каком случае проставляется.
+Аванс — денежная сумма или другая имущественная ценность, выдаваемая в счет предстоящих платежей за материальные ценности, работы и услуги; засчитывается в счет окончательного платежа при надлежащем исполнении договорного обязательства. Всякий предварительный платеж считается авансом, если в письменном соглашении сторон договора прямо не указано, что этот платеж является предоплатой.
+Предоплата — форма расчетов, заключающаяся в том, что продавец товара или услуг отпускает (отгружает, предоставляет) товары или оказывает услуги только после получения на свой счет причитающейся ему заранее оговоренной фиксированной суммы денег или процента от сделки.
+
+Отключить рекламу
+
+Другими словами, если заранее было оговорено в каком размере и конкретно за какие товары или услуги было перечисление денежных средств — это предоплата.
+Для того чтобы программа «1С» выдала такой признак расчета необходимо создать счет на оплату и подтянуть его в денежный документ (ПКО или банковская выписка).
+Соответственно, если в программе поле «Счет на оплату» оставить пустым — эту оплату она будет распознавать как аванс.
+
+
+
+Разберем полную ситуацию, когда произошла покупка с частичной предоплатой. К примеру, ООО «ИНКОМ ПЛЮС» сформировала счет на покупку журнального столика компанией ООО «1С-ГЭНДАЛЬФ», по которому уже была предоплата 1500 руб. В данном случае это частичная предоплата, поэтому в чеке отражаются этап оплаты наличными и последующая в размере 500 руб.
+
+Отключить рекламу
+
+Затем происходит отгрузка данного товара и у нас возникает обязанность пробить чек с реализации. В данном случае в чеке «Признак способа расчета» будет с видом «Передача с частичной оплатой». После реализации у нас еще числится задолженность от ООО «1С-ГЭНДАЛЬФ», соответственно, нужно создать поступление денежных средств на 500 руб., и это пойдет с признаком «Оплата кредита». Если бы изначально счет был оплачен на 2000 руб., то в чеке была бы «Передача с полной оплатой».
+
+
+
+Осталось разобраться, в каком случае будет «Передача без оплаты». Если происходит продажа товара с отсрочкой платежа без первоначального взноса, то в чеке будет проставлено «Передача в кредит». В «1С» для таких целей предназначен документ «Реализация товара», при этом нужно отследить, чтобы не было путаницы в ранних взаиморасчетах и в этом документе не пошел зачет аванса.
+
+Отключить рекламу
+
+В чеке всегда должны присутствовать так называемые обязательные реквизиты, перечисленные в п. 1 ст. 4.7 Закона № 54-ФЗ. Однако существуют особые случаи, когда они могут отсутствовать (п. 7 ст. 4.7 Закона № 54-ФЗ).
+Набор реквизитов и их выбор зависит от предпринимательской деятельности и проводимых операций. Необходимо формировать чеки с учетом этого и в соответствии с требованиями ФНС. А также реквизиты должны быть напечатаны четко и без затруднений читаться в течение не менее 6 месяцев со дня распечатки документа в бумажном варианте.
+
+
+
+Центр обучения «Клерка»Приобретай опыт для серьезных дел
+Научитесь составлять управленческую отчетность в нашем новом онлайн-курсе. Собственники готовы платить за управленческие отчеты больше, чем за налоговые. Дадим алгоритм настройки отчетов и покажем, как встроить их в ваш повседневный учет.
+Обучение дистанционно. Выдаем сертификат. Записывайтесь на курс «Все про управленческий учет: для бухгалтера, директора и ИП». Пока за 3500 вместо 6000 руб.
+
+
+
+Всё про управленческий учет: для бухгалтера, директора и ИПЛариса МагафуроваХочу купить за 3 500 ₽ 6 000 ₽ Узнать больше
+Дильнара Юмагулова, бухгалтер-консультант Линии консультаций компании «ГЭНДАЛЬФ»
+Источник: Материалы газеты «Прогрессивный бухгалтер».
+
+
+",ru,"
+
+
+
+
+
+
+
+
+
+
+
+Cashier Checks: Changes and Answers to Popular Questions
+05 Nov 2019, 06:17 by Dilnara Yumagulova
+Cash receipts in our time is the most relevant topic, which raises the most questions. Is it necessary to break a check from advance payments, from transfer by installments; and if it’s general receipts to the current account - why do I need a check? And what sign of a calculation method to choose?
+New details in CCP checks from July 1, 2019
+Since July 2019, serious changes have taken effect in the design of CCP checks (clause 2 of article 4 192-FZ), which entailed the emergence of new details for settlements between organizations and individual entrepreneurs, which increased the number of questions.
+When issuing checks, new rules apply, namely, in addition to the old details, five new ones were added to the checks:
+
+Name of buyer or surname, name, patronymic of individual entrepreneur.
+TIN of the client.
+Information about the origin of the goods (if the goods are imported).
+Excise amount (if applicable).
+Registration number of the customs declaration (if import goods are sold).
+
+In the program ""1C: Accounting 8"", ed. 3.0, this mechanism has been implemented since release 3.0.71.69. In order to break through the check with the details of the name and TIN of the client, you need to create a document “Cash receipt order” with the type of payment operation from the buyer and select the desired client (in this case, do not forget to fill in the TIN in the counterparty card). If you checked the release and performed the described actions, but the data in the check still does not appear, you need to update the box office driver.
+
+
+
+When paying with a current account, these details are optional, since non-cash payments between legal entities and individual entrepreneurs are free from the use of online cash desks.
+The Ministry of Finance made a separate explanation of the situation (Letters of the Ministry of Finance of the Russian Federation dated November 28, 2018 No. 03-01-15 / 86080 and No. 03-01-15 / 86077), when a prize is paid in the lottery or gambling, a check with the details of the name and TIN of the client. If this is an ordinary individual and the gain is more than 15 000 rubles, then the TIN must also be indicated. At the same time, if there is no taxpayer identification number, passport data (series and number) will be pulled into the check.
+
+
+
+The program also implements automatic filling in the check of new details in the form of the country of origin of the imported goods and the customs declaration (number of the customs declaration), but not in all cases. For example, if we have an advance payment from a client for a specific product, we issue a bank statement or cash receipt order and break the check from these documents - the country of origin and the number of the customs declaration will have to be selected manually in the preview of the check.
+
+Disable Ads
+
+In all other cases, data on the country of origin and the TBG number will be substituted automatically, i.e. if punching a check from the sale, or from payment documents (if the payment is based on the sale).
+
+
+
+In order to fill in the data on the country of origin in the prepayment check, you need to click on the button “Break check” - “Preview will open” in the monetary document (cash receipt, receipt in the current account). Then, in the tabular section for imported goods, fill in the “Country of Origin” field, the customs declaration number and check on the right side whether these details were displayed in the check.
+What is the sign of the method of calculation in the check to choose
+Another frequently asked question at the box office is the selection of a sign of the calculation method. Previously, checks were made only at the time of settlement, which is understood as the receipt or delivery of money, and when transferring goods there was no obligation to break the check. However, there are situations when the goods are given at an earlier advance payment or, conversely, with a deferred payment, and under the old rules it was impossible to track the movement of settlements. It is for such situations that a special attribute is used - “A sign of the calculation method”. Let's consider what options of props generally stand out and how to reflect them in a cash receipt: Turn off advertising
+
+Prepaid expense.
+Credit payment.
+Transfer without payment.
+Transfer with full payment.
+Partial payment transfer.
+Prepayment is full.
+Partial prepayment.
+
+Let's start with advances and prepayments, what is the difference and what props in which case is affixed.
+Advance - a sum of money or other property value issued against upcoming payments for material values, work and services; credited to the final payment upon proper performance of the contractual obligation. Any advance payment is considered an advance payment, unless the written agreement of the parties to the agreement expressly states that this payment is an advance payment.
+Prepayment - a form of settlement, which consists in the fact that the seller of goods or services releases (ships, provides) goods or provides services only after receiving a predetermined fixed amount of money or a percentage of the transaction due to him.
+
+Disable Ads
+
+In other words, if it was agreed in advance in what amount and specifically for what goods or services there was a transfer of funds - this is an advance payment.
+In order for the 1C program to issue such a sign of settlement, it is necessary to create an invoice for payment and pull it into a monetary document (PKO or bank statement).
+Accordingly, if the “Account for payment” field is left blank in the program, it will recognize this payment as an advance.
+
+
+
+We will analyze the full situation when a purchase with a partial prepayment occurred. For example, INCOM PLUS LLC formed an invoice for the purchase of a coffee table by 1C-GENDALF LLC, for which an advance payment of 1,500 rubles was already made. In this case, this is a partial prepayment, therefore, the cash payment stage and the subsequent one in the amount of 500 rubles are reflected in the check.
+
+Disable Ads
+
+Then there is a shipment of this product and we have a duty to break through the check from the sale. In this case, the check “Sign of the calculation method” will be with the form “Transfer with partial payment”. After the implementation, we still have debts from LLC 1C-GENDALF, accordingly, we need to create a cash flow of 500 rubles, and this will go with the sign “Payment of the loan”. If the bill had been initially paid for 2000 rubles, then the check would have been “Transfer with full payment”.
+
+
+
+It remains to figure out in which case there will be a “Transfer without payment”. If there is a sale of goods with deferred payment without down payment, then the check will be marked ""Transfer on credit."" In “1C”, the document “Sale of goods” is intended for such purposes, it must be monitored so that there is no confusion in the early mutual settlements and the advance credit is not set off in this document.
+
+Disable Ads
+
+The check must always contain the so-called mandatory details listed in paragraph 1 of Art. 4.7 of Law No. 54-FZ. However, there are special cases when they may be absent (paragraph 7 of article 4.7 of Law No. 54-FZ).
+The set of details and their choice depends on business activities and operations. It is necessary to form checks with this in mind and in accordance with the requirements of the Federal Tax Service. As well as details must be printed clearly and without difficulty to be read for at least 6 months from the date of printing the document in paper form.
+
+
+
+Training Center ""Clerk"" Get experience for serious business
+Learn how to write management reporting in our new online course. Owners are willing to pay more for management reports than for tax reports. We will give an algorithm for setting up reports and show how to embed them in your daily accounting.
+Teaching remotely. We issue a certificate. Sign up for the course “Everything about management accounting: for an accountant, director and individual entrepreneur”. So far, for 3,500 instead of 6,000 rubles.
+
+
+
+All about management accounting: for an accountant, director and IPLaris Magafurov I want to buy for 3,500 ₽ 6,000 ₽ Learn more
+Dilnara Yumagulova, Accountant Consultant, GANDALF Consulting Line
+Source: Materials of the newspaper Progressive Accountant.
+
+
+"

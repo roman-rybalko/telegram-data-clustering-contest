@@ -1,0 +1,48 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Google startet OSS-Projekt für Hardware-Security-Chip
+Gemeinsam mit Partnern hat Google das Projekt Open Titan angekündigt. Ziel ist ein komplett offen designter Chip auf Basis von RISC-V, der als Root-of-Trust in vielen verschiedenen Geräten genutzt werden soll.
+05 Nov 2019, 16:30 by Sebastian Grüner
+Vor rund zweieinhalb Jahren hat Google erstmals öffentlich seinen Titan-Sicherheitschip für seine Cloud-Server vorgestellt. Mit dem von Google und weiteren Partnern initiierten Projekt Open Titan folgt nun eine Initiative, die einen ähnlichen Chip erstellen soll, nur eben mit einem offenen Design auf Grundlage der freien Befehlssatzarchitektur RISC-V. Genutzt werden soll der Open-Titan-Chip als sogenannter Root-of-Trust (RoT), wie Google in seinem Security-Blog mitteilt.
+Mit Hilfe eines RoT sollen üblicherweise sowohl der Zustand der in einem Rechner verbauten Hardware sowie die darauf laufende Software verifiziert werden. Der RoT dient dabei, wie der Name andeutet, als vertrauenswürdiger Startpunkt für eine Kette von Sicherheitsmechanismen und Verifikationen, die mit der Firmware beginnen. Zusätzlich zu seinen eigenen Servern nutzt Google derartige Chips unter anderem in sämtlichen Chromebooks sowie auch in neueren Pixel-Geräten.
+Die Offenlegung des Chip-Designs soll dieses ""transparenter, vertrauenswürdiger und letztlich sicher"" machen, wie Google in der Ankündigung schreibt. Die Transparenz des Designs sowie der offene Gestaltungsprozess sollen dabei dafür sorgen, dass eventuelle Probleme bereits früh erkannt werden können und das ""blinde Vertrauen"" in die Hardware zumindest reduziert werde.
+Viele komplexe Bauteile
+Grundlage der Arbeiten bildet die CPU Ibex von Lowrisc. Hinzukommen sollen ""kryptographische Koprozessoren, ein Hardware-Zufallszahlengenerator, eine fortgeschrittene Schlüsselhierarchie, Speicherhierarchien für flüchtigen und nichtflüchtigen Speicher, Abwehrmechanismen, I/O-Peripheriegeräte, Secure Boot und mehr"". Eine Design-Übersicht liefert die Projekt-Dokumentation. Erst vor knapp zwei Wochen hatten die RISC-V-Spezialisten von Sifive angekündigt, ähnliche Technik in ihren Designs bereitzustellen.
+Offiziell verwaltet wird das Open-Titan-Projekt von Lowrisc, das als gemeinnütziges Unternehmen tätig ist. Zusätzlich zu Google und Lowrisc sind an den Arbeiten zunächst außerdem Western Digital, die ETH Zürich, der Halbleiterhersteller Nuvoton sowie G+D Mobile Security beteiligt. Der Code des Projekts findet sich auf Github.
+
+
+",de,"
+
+
+
+
+
+
+
+
+
+
+
+Google launches OSS project for hardware security chip
+Together with partners, Google has announced the project Open Titan. The goal is a completely open chip based on RISC-V, which is to be used as a root of trust in many different devices.
+05 Nov 2019, 16:30 by Sebastian Grüner
+About two and a half years ago, Google introduced its Titan security chip for its cloud servers. With the Open Titan project initiated by Google and other partners, an initiative is now underway to create a similar chip, but with an open design based on the free RISC-V instruction set architecture. The open-titanium chip is to be used as a so-called root-of-trust (RoT), as Google announces in its security blog.
+With the help of a RoT usually both the state of the hardware installed in a computer and the software running on it are to be verified. As the name implies, the RoT serves as a trusted starting point for a chain of security mechanisms and verifications that begin with the firmware. In addition to its own servers, Google also uses such chips in all Chromebooks as well as in newer Pixel devices.
+The disclosure of the chip design should make this ""more transparent, trustworthy and ultimately secure"", as Google writes in the announcement. The transparency of the design as well as the open design process should ensure that possible problems can be detected early on and that ""blind trust"" in the hardware is at least reduced.
+Many complex components
+The work is based on the Lowrisc CPU Ibex. In addition, ""cryptographic coprocessors, a hardware random number generator, an advanced key hierarchy, storage hierarchies for volatile and non-volatile memory, defense mechanisms, I / O peripherals, secure boot and more"" are added. A design overview provides the project documentation. Just two weeks ago, Sifive's RISC V specialists announced that they would be using similar technology in their designs.
+The Open Titan project is officially managed by Lowrisc, a non-profit company. In addition to Google and Lowrisc, Western Digital, ETH Zurich, semiconductor manufacturer Nuvoton and G + D Mobile Security are also involved in the work. The code of the project can be found on Github.
+
+
+"

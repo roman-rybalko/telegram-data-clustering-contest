@@ -1,0 +1,68 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Basta un láser para hackear a distancia un altavoz inteligente
+Por increíble que parezca, es posible acceder a un altavoz inteligente con el uso de un simple láser. Google Home, Amazon Echo... Ninguno se resiste.
+05 Nov 2019, 08:29 by Iván Linares
+Con el enorme avance de la tecnología, nos ha sido imposible cerrarle la puerta a sus bondades. Incluso podemos cerrar puertas con la propia tecnología: basta con que esté domotizada y que el sistema sea compatible con Google Home o Amazon Alexa, por ejemplo. El «Ok, Google. Abre el garaje» puede ser muy útil, pero deja un agujero de seguridad que se puede explotar con un láser.
+Puede parecer ciencia ficción o algo muy complicado de realizar, pero no: la luz del láser se puede adaptar para que interactúe con los micrófonos de un altavoz inteligente haciéndole creer que capta ondas sonoras; con lo que resulta posible mandar comandos a una distancia de hasta 50 metros. Si nos guiamos por el ejemplo de la puerta del garaje, sería posible abrirla desde fuera de la casa con solo apuntar con el láser al Google Home a través de la ventana.
+Un agujero de seguridad imposible de cubrir: un láser puede simular la voz humana a decenas de metros de distancia
+
+
+
+Funcionamiento de la modulación de voz a través de un láser
+Si bien supone un problema ya que cualquiera podría controlar un altavoz inteligente y ejecutar así comandos sumamente delicados (siempre con las herramientas necesarias), solucionarlo es imposible ya que forma parte de cómo funcionan los micrófonos de los dispositivos, ya sean altavoces inteligentes o móviles.
+El mecanismo de «hackeo», desarrollado por la Universidad de Michigan y la Universidad de Electro-Comunicaciones de Tokio, demuestra cómo resulta posible modular la voz humana a través de un láser corriente de 60 mW. La física que se esconde detrás del descubrimiento no es demasiado compleja: el láser calienta el micrófono del diafragma y expande el aire alrededor creando idéntica burbuja de presión a la que forma el sonido al atravesar dicho diafragma. De esta forma resulta posible transmitir comandos de voz usando la luz.
+
+
+
+El descubrimiento forma parte de un paper denominado «Comandos de luz» (Lights commands). Es imposible de parchear ya que el hackeo hace uso del funcionamiento natural de los micrófonos. La única solución es alejar los altavoces inteligentes de las zonas visibles de la casa, especialmente los que den a una ventana.
+
+Vía
+
+
+
+",es,"
+
+
+
+
+
+
+
+
+
+
+
+A laser is enough to hack a smart speaker from a distance
+Incredible as it may seem, it is possible to access a smart speaker with the use of a simple laser. Google Home, Amazon Echo ... None resist.
+05 Nov 2019, 08:29 by Iván Linares
+With the enormous advance of technology, it has been impossible for us to close the door to its benefits. We can even close doors with the technology itself: it is enough that it is domotized and that the system is compatible with Google Home or Amazon Alexa, for example. The «Ok, Google. Open the garage »can be very useful, but leave a security hole that can be exploited with a laser.
+It may seem like science fiction or something very complicated to do, but not: the laser light can be adapted to interact with the microphones of an intelligent speaker making it believe that it picks up sound waves; which makes it possible to send commands at a distance of up to 50 meters. If we are guided by the example of the garage door, it would be possible to open it from outside the house by simply pointing the laser to Google Home through the window.
+A security hole impossible to cover: a laser can simulate the human voice tens of meters away
+
+
+
+Operation of voice modulation through a laser
+Although it is a problem since anyone could control an intelligent speaker and thus execute extremely delicate commands (always with the necessary tools), solving it is impossible since it is part of how the microphones of the devices work, whether smart or mobile speakers.
+The hacking mechanism, developed by the University of Michigan and the Tokyo Electro-Communications University, demonstrates how it is possible to modulate the human voice through a 60 mW current laser. The physics that hide behind the discovery is not too complex: the laser heats the diaphragm's microphone and expands the surrounding air creating the same pressure bubble that the sound forms when passing through the diaphragm. In this way it is possible to transmit voice commands using the light.
+
+
+
+The discovery is part of a paper called ""Light commands"". It is impossible to patch as the hacking makes use of the natural operation of the microphones. The only solution is to move smart speakers away from visible areas of the house, especially those that overlook a window.
+
+Via
+
+
+
+"

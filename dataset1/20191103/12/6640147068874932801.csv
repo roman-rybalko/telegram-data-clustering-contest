@@ -1,0 +1,52 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Cinque varianti di GPU Navi 14: cosa nascondono?
+03 Nov 2019, 12:00 by Jacopo Ferrante
+Un utente di Reddit ha rintracciato all’interno di un driver per Linux quelle che potrebbero rappresentare cinque varianti di GPU Navi 14 in arrivo, con tanto “Game Clock”. Questa nuova scoperta dà credito alle precedenti voci secondo cui sarebbero in arrivo diverse GPU Navi 14.
+
+
+
+Il driver Linux elenca tre dispositivi Navi 10 con i suffissi XL, XT e XTX, che rappresentano le Radeon RX 5700, RX 5700 XT e RX 5700 XT 50th Anniversary Edition. Inoltre, l’elenco menziona anche i valori 1625, 1755 e 1830, che corrispondono effettivamente ai Game Clock delle GPU Navi 10.
+AMD ha già annunciato Radeon RX 5500 e RX 5500M con Game Clock rispettivamente di 1670 MHz e 1448 MHz. Ciò significa che la Radeon RX 5500 usa il chip Navi 14 XT, mentre la RX 5500M il chip Navi 14 XTM. Questo ci lascia con tre die da “decifrare”.
+La scelta logica per AMD sarebbe quella di usare il die Navi 14 XTX per la Radeon RX 5500 XT, che evidentemente raggiunge un Game Clock di 1717 MHz. Le rimanenti versioni di Navi 14 potrebbero corrispondere alla serie Radeon RX 5300 per il mercato entry-level .
+È possibile che le Radeon RX 5300 usino un die Navi 14 XL con un Game Clock di 1448 MHz, cosa che ci lascerebbe con una Radeon RX 5300M dotata di chip Navi 14 XLM con un Game Clock di 1181 MHz.
+A settembre un negozio ha messo nel proprio listino un PC desktop HP con Radeon RX 5300 XT, ma non sappiamo ancora se le GPU Radeon della serie RX 5300 saranno disponibili ai privati o saranno un’esclusiva per gli OEM.
+
+
+",it,"
+
+
+
+
+
+
+
+
+
+
+
+Five variants of Navi 14 GPUs: what are they hiding?
+03 Nov 2019, 12:00 by Jacopo Ferrante
+A Reddit user has tracked what might be five upcoming Navi 14 GPU variants into Linux drivers, with lots of ""Game Clock"". This new discovery gives credit to previous rumors that several Navi 14 GPUs are coming.
+
+
+
+The Linux driver lists three Navi 10 devices with the suffixes XL, XT and XTX, which represent the Radeon RX 5700, RX 5700 XT and RX 5700 XT 50th Anniversary Edition. Furthermore, the list also mentions the 1625, 1755 and 1830 values, which actually correspond to the Navi 10 GPU Game Clock.
+AMD has already announced Radeon RX 5500 and RX 5500M with Game Clock of 1670 MHz and 1448 MHz respectively. This means that the Radeon RX 5500 uses the Navi 14 XT chip, while the RX 5500M uses the Navi 14 XTM chip. This leaves us with three die to ""decipher"".
+The logical choice for AMD would be to use the die Navi 14 XTX for the Radeon RX 5500 XT, which evidently reaches a Game Clock of 1717 MHz. The remaining versions of Navi 14 could correspond to the Radeon RX 5300 series for the entry-level market .
+It is possible that the Radeon RX 5300s use a die Navi 14 XL with a Game Clock of 1448 MHz, which would leave us with a Radeon RX 5300M equipped with a Navi 14 XLM chip with an 1181 MHz Game Clock.
+In September, a store put an HP desktop PC with Radeon RX 5300 XT on its list, but we still don't know if the Radeon RX 5300 series GPUs will be available to individuals or will be exclusive to OEMs.
+
+
+"

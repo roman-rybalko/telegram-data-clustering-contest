@@ -1,0 +1,96 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Esta inteligencia artificial juega a StarCraft II mejor que el 99,8% de la gente
+02 Nov 2019 by Diario Tecnología
+En el universo de este videojuego los seres humanos luchan contra alienígenas pero, fuera de él, el rival a batir son las máquinas. Un equipo de investigadores de Google ha desarrollado el algoritmo AlphaStar, capaz de derrotar a jugadores profesionales y alcanzar el máximo nivel en la clasificación.
+Humanos y alienígenas llevan enzarzados en una cruenta guerra por el control de la galaxia desde 1998, cuando la empresa Blizzard publicó el videojuego StarCraft, pionero de los hoy llamados esports y cuya segunda parte vio la luz en 2010. Fuera de la pantalla, la lucha no tiene lugar contra insectoides, sino contra las máquinas: un algoritmo ha logrado colarse entre el 0,2 % de mejores jugadores del mundo. El avance se publica hoy en la revista Nature.
+El algoritmo AlphaStar ha sido desarrollado por DeepMind, una empresa de inteligencia artificial adquirida por Google en 2014. En diciembre de 2018 el programa ya logró vencer a varios jugadores profesionales. Hasta entonces, los ordenadores solo eran capaces de ganar en StarCraft II haciendo ‘trampas’ con reglas simplificadas. Esto ha cambiado.
+El algoritmo AlphaStar ha sido desarrollado por DeepMind, una empresa de inteligencia artificial adquirida por Google en 2014
+“AlphaStar juega ahora con las mismas restricciones que un humano”, explica a Sinc el investigador de DeepMind, líder del proyecto y coautor del estudio, Oriol Vinyals. Esto incluye la visión del mundo “a través de una cámara” y “límites más estrictos” en la frecuencia de las acciones. Además, juega en el servidor oficial, Battle.net, con las mismas condiciones que los jugadores humanos, donde ha alcanzado el máximo nivel posible en la clasificación, Grandmaster.
+El algoritmo ha mejorado desde que a finales del año pasado venciera por 5-0 a dos jugadores profesionales. Uno de ellos, Dario “TLO” Wünsch, colaboró con el equipo de investigadores para el trabajo. Ahora, AlphaStar puede jugar partidas uno contra uno encarnando a cada una de las tres razas de StarCraft II y también contra ellas, sin intervención humana. “Cada una de las facciones es una red neural diferente”, explica Vinyals.
+Estrategia en tiempo real
+StarCraft es uno de los videojuegos más importantes de la historia, tanto por ser uno de los más complejos en el género de la estrategia en tiempo real como por su relevancia para el mundo de los esports. También ha fascinado a los investigadores durante años por resistirse a sus esfuerzos por programar una inteligencia artificial capaz de derrotar a los seres humanos.
+La principal diferencia con el ajedrez para los programadores es que no ves el otro lado del tablero, sino que debes mandar piezas a explorar lo que hace el oponente
+Vinyals explica el atractivo que tiene el juego desde el punto de vista académico comparándolo con el ajedrez. “Lo principal es que no ves el otro lado del tablero, sino que debes mandar ‘piezas’ a explorar lo que hace el oponente”, explica.
+Esta ‘ceguera’ inicial es uno de los motivos por lo que las máquinas han tenido problemas para superar a los humanos. El jugador empieza con “solo unas pocas piezas” y “debe decidir en cuáles invertir para contrarrestar las elecciones del oponente”, comenta Vinyals. También “cuándo expandirse para obtener más recursos que permitan comprar más piezas, con los riesgos asociados”.
+A todo esto hay que sumar que cada pieza es más difícil de utilizar que un alfil o un peón. “En ajedrez, un caballo puede capturar otras piezas y tiene un patrón de movimiento concreto. En StarCraft, la unidad más básica puede hacer varias cosas, desde construir edificios a explorar, y debes hacerlas todas bien si quieres ser bueno”. Todo esto, recuerda el ingeniero, sucede en tiempo real.
+Más que videojuegos
+El interés de Vinyals por esta saga de videojuegos viene de lejos. Cuando StarCraft llegó al mercado en 1998, el ingeniero que hoy trabaja para Google DeepMind tenía unos 15 años. Pronto se vio atrapado por la creación de Blizzard y, hasta 2001, se mantuvo entre los diez mejores jugadores de España.
+Pero el estudio publicado en Nature va más allá del mundo de los videojuegos. Según los investigadores, el algoritmo se podría adaptar para solucionar otro tipo de problemas complejos que no impliquen conquistar razas alienígenas ficticias.
+“Estoy muy interesado en aplicar las técnicas de AlphaStar en áreas que he investigado anteriormente como el lenguaje y otros datos con una **estructura jerárquica similares* a las acciones que se requieren para jugar a StarCraft”, comenta Vinyals. ¿Por ejemplo? “En Spiral usamos el mismo agente pero, en vez de jugar, usa un programa como Paint para pintar imágenes”.
+Ajedrez, go y redes neuronales
+En 1997 el supercomputador Deep Blue fue el primero en derrotar a un campeón mundial de ajedrez, Gary Kaspárov, ayudado por un fallo informático. Desde hace unos 15 años el mejor ajedrecista del mundo es una máquina, según contaba a Sinc el periodista especializado en este deporte Leontxo García.
+El algoritmo se podría adaptar para solucionar otro tipo de problemas complejos que no impliquen conquistar razas alienígenas ficticias
+El interés de los investigadores en el campo de la inteligencia artificial se movió entonces a otros juegos más complejos, como el Go japonés, un reto mayor debido al número de posiciones existentes. En 2016 AlphaGo, otro programa de Google DeepMind, derrotaba por primera vez a un humano al vencer al campeón europeo. Desde entonces, la empresa se ha interesado por otros juegos como Hanabi.
+Vinyals explica por qué unos juegos se resisten más que otros y por qué han tenido que pasar más de 20 años entre Deep Blue y AlphaStar. “Los algoritmos clásicos de búsqueda [capaces de localizar el mejor movimiento en una base de datos] se han usado para juegos como ajedrez, pero para que funcionen bien el ‘espacio de búsqueda’ tiene que ser simple o requeriría demasiado tiempo calcular los movimientos óptimos”.
+El investigador asegura que en 2000 los ordenadores ya eran lo bastante potentes como para jugar al ajedrez a nivel profesional, pero el Go hubiera requerido “quizás hasta 2025”. ¿Cómo es posible que DeepMind se adelantara casi una década? La respuesta está en las redes neuronales que utilizan algoritmos como AlphaStar.
+“[Las redes neuronales] permiten analizar una situación de juego mediante aprendizaje automático, en lugar de con reglas específicas, y ver qué acción es mejor”, dice Vinyals. “A partir de esto empezamos a desarrollar sistemas que juegan contra sí mismos, mejorando la red neuronal para dar lugar a AlphaGo y AlphaStar”.
+AlphaStar ha llegado a nivel Grandmaster, pero todavía no lo sabe todo
+El resultado sería “impensable” con algoritmos de búsqueda. “En ajedrez hay unas 30 opciones por cada movimiento y unos 50 movimientos en total”, comenta el ingeniero. “En Go, 250 opciones por movimiento y hasta 200 movimientos en total”. En StarCraft, “existen 1026 opciones por cada ‘movimiento’ y miles de movimientos por juego”.
+¿Significa todo esto que el mejor jugador de StarCraft II del mundo es también un ordenador? AlphaStar ha llegado a nivel Grandmaster, pero todavía no lo sabe todo. “Es un hito muy importante y muy por encima de lo que se había logrado, con un nivel de juego por encima del 99,8 % de los jugadores, pero también perdió algunas partidas”.
+En otras palabras, el programa todavía no está por encima de ‘todos’ los profesionales. Vinyals confía en que su trabajo, accesible en internet, invite a otros investigadores a desarrollar más técnicas de inteligencia artificial: “Espero que algún día el 99,8 % se convierta en el 100 %”.
+Este artículo fue publicado originalmente en Agencia Sinc
+
+Artículo original
+
+
+
+",es,"
+
+
+
+
+
+
+
+
+
+
+
+This artificial intelligence plays StarCraft II better than 99.8% of people
+02 Nov 2019 by Diario Tecnología
+In the universe of this video game, human beings fight against aliens but, outside of it, the rival to beat is machines. A team of Google researchers has developed the AlphaStar algorithm, capable of defeating professional players and reaching the highest level in the ranking.
+Humans and aliens have been engaged in a bloody war for control of the galaxy since 1998, when the company Blizzard published the video game StarCraft, pioneer of today called esports and whose second part saw the light in 2010. Outside the screen, the fight It does not take place against insectoids, but against machines: an algorithm has managed to sneak into 0.2% of the world's best players. The advance is published today in the journal Nature.
+The AlphaStar algorithm has been developed by DeepMind, an artificial intelligence company acquired by Google in 2014. In December 2018 the program already managed to beat several professional players. Until then, computers were only able to win in StarCraft II by cheating ‘with simplified rules. This has changed.
+The AlphaStar algorithm has been developed by DeepMind, an artificial intelligence company acquired by Google in 2014
+""AlphaStar now plays with the same restrictions as a human,"" DeepMind researcher, project leader and co-author of the study, Oriol Vinyals, explains to Sinc. This includes the vision of the world ""through a camera"" and ""stricter limits"" on the frequency of actions. In addition, he plays on the official server, Battle.net, with the same conditions as human players, where he has reached the highest possible level in the ranking, Grandmaster.
+The algorithm has improved since the end of last year defeated two professional players 5-0. One of them, Dario “TLO” Wünsch, collaborated with the team of researchers for the work. Now, AlphaStar can play games one on one by embodying each of the three races of StarCraft II and also against them, without human intervention. ""Each of the factions is a different neural network,"" explains Vinyals.
+Real-time strategy
+StarCraft is one of the most important videogames in history, both for being one of the most complex in the real-time strategy genre and for its relevance to the world of esports. He has also fascinated researchers for years to resist his efforts to program an artificial intelligence capable of defeating human beings.
+The main difference with chess for programmers is that you don't see the other side of the board, but you must send pieces to explore what the opponent does
+Vinyals explains the appeal of the game from an academic point of view compared to chess. “The main thing is that you don't see the other side of the board, but you must send‘ pieces ’to explore what the opponent does,” he explains.
+This initial ‘blindness’ is one of the reasons why machines have had trouble surpassing humans. The player starts with ""just a few pieces"" and ""must decide which ones to invest in to counter the opponent's choices,"" says Vinyals. Also ""when to expand to obtain more resources to buy more pieces, with the associated risks.""
+To all this we must add that each piece is more difficult to use than a bishop or a pawn. “In chess, a horse can capture other pieces and has a concrete movement pattern. In StarCraft, the most basic unit can do several things, from building buildings to exploring, and you must do them all well if you want to be good. ” All this, the engineer recalls, happens in real time.
+More than video games
+Vinyals' interest in this videogame saga comes from afar. When StarCraft hit the market in 1998, the engineer who works for Google DeepMind today was about 15 years old. Soon he was caught by the creation of Blizzard and, until 2001, remained among the top ten players in Spain.
+But the study published in Nature goes beyond the world of video games. According to the researchers, the algorithm could be adapted to solve other complex problems that do not involve conquering fictitious alien races.
+""I am very interested in applying AlphaStar techniques in areas that I have previously investigated such as language and other data with a ** hierarchical structure similar * to the actions required to play StarCraft,"" says Vinyals. For example? ""In Spiral we use the same agent but, instead of playing, use a program like Paint to paint images.""
+Chess, go and neural networks
+In 1997 the supercomputer Deep Blue was the first to defeat a world chess champion, Gary Kasparov, helped by a computer failure. For about 15 years the best chess player in the world has been a machine, according to Sinc, the journalist specialized in this sport, Leontxo García.
+The algorithm could be adapted to solve other complex problems that do not involve conquering fictitious alien races
+The interest of researchers in the field of artificial intelligence then moved to other more complex games, such as the Japanese Go, a major challenge due to the number of existing positions. In 2016 AlphaGo, another Google DeepMind program, defeated a human for the first time by defeating the European champion. Since then, the company has been interested in other games like Hanabi.
+Vinyals explains why some games resist more than others and why they have had to spend more than 20 years between Deep Blue and AlphaStar. “The classic search algorithms [capable of locating the best movement in a database] have been used for games like chess, but for them to work well, the 'search space' has to be simple or it would take too much time to calculate the optimal movements ""
+The researcher says that in 2000 the computers were already powerful enough to play chess at a professional level, but the Go would have required ""maybe until 2025"". How is it possible that DeepMind advanced almost a decade? The answer is in neural networks that use algorithms such as AlphaStar.
+“[Neural networks] allow us to analyze a game situation through machine learning, rather than with specific rules, and see which action is better,” says Vinyals. ""From this we begin to develop systems that play against themselves, improving the neural network to give rise to AlphaGo and AlphaStar.""
+AlphaStar has reached Grandmaster level, but still doesn't know everything
+The result would be ""unthinkable"" with search algorithms. ""In chess there are about 30 options for each movement and about 50 movements in total,"" says the engineer. ""In Go, 250 options per movement and up to 200 movements in total."" In StarCraft, ""there are 1026 options for every‘ move ’and thousands of moves per game.""
+Does all this mean that the best StarCraft II player in the world is also a computer? AlphaStar has reached Grandmaster level, but still does not know everything. ""It is a very important milestone and well above what had been achieved, with a level of play above 99.8% of the players, but also lost some games.""
+In other words, the program is still not above ‘all’ professionals. Vinyals is confident that his work, accessible on the Internet, invites other researchers to develop more artificial intelligence techniques: ""I hope that one day 99.8% will become 100%.""
+This article was originally published in Sinc Agency
+
+Original article
+
+
+
+"

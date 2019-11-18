@@ -1,0 +1,92 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+This Startup’s Upgrade Code Can Be Used by Any Bitcoin-Based Blockchain
+04 Nov 2019, 13:00 by Brady Dale
+A small blockchain company out of Arizona has built open-source software that it says any bitcoin-based blockchain could use to improve its functionality.
+Nexus announced Monday what it called its seventh “activation” – a protocol upgrade that brings smart-contract functionality to the Nexus blockchain, which launched as a fork of the original bitcoin protocol in 2014. Deployed today, the activation goes into full effect Nov. 11.
+If all goes well, other blockchains can feel free to follow suit by borrowing the code.
+“Part of the intention was to use the original bitcoin code from the 2014 era to upgrade that into our framework,” Nexus founder Colin Cantrell told CoinDesk. “Any blockchain that uses the legacy UTXO can actually upgrade smart contracts over their live blockchain without having to do a chain reset or anything like that.”
+UTXO stands for “unspent transaction output” but it’s also become a shorthand for blockchains based on bitcoin. The basic idea is that such a blockchain verifies there is money to be spent before it spends it, which is part of preventing the double-spend problem.
+“All the bitcoin forks could essentially upgrade and potentially utilize it,” Cantrell said of his company’s latest release.
+Even if they didn’t want to add smart-contract functionality, Cantrell argued that the Nexus codebase offers other improvements for UTXO chains – like much faster syncing for nodes and lower disk space usage, for example.
+What is Nexus?
+Nexus launched in 2014 and it has self-funded so far by directing a portion of the newly minted coins to the team building the network.
+With a market cap at $19.4 million as of this writing and a token price that has steadily sat at about $0.30 since last November, the project has had to generate enough value for its emitted tokens to support the team’s work. (The price briefly rose as high as $13.00 in early 2018.)
+Nexus had no pre-mine, no venture capital and no initial coin offering.
+Cantrell said it started as a basic bitcoin fork, but Nexus has had several activations since it went live. Now it uses two different proof-of-work chains and a proof-of-stake system. And with the new Tritium upgrade, it also has smart-contract functionality with competitive transaction times.
+“One of the biggest things we’ve seen is that scalability is not a feature. It’s kind of a requirement,” Cantrell said. The startup claims it can manage anywhere from 2,000 to 25,000 transactions per second. (One of the highest-throughput blockchains, XRP, consistently hits 1,500 transactions per second.)
+Nexus uses a variety of strategies to achieve higher throughput, including sharding and proof-of-stake, but it also uses something familiar in basic computing but less discussed in the blockchain industry.
+“Our smart contracts run on a register-based virtual machine, and that’s one way we’ve achieved extra efficiency,” Cantrell said. That is, register-based as opposed to stack-based. Most existing blockchains are stack-based, which is an older style of computing.
+“The architecture is a lot more difficult to implement, but the efficiency is much higher if you implement it correctly,” Cantrell said.
+Developers will find it much easier to work with since much of its functionality is accessible through an API, he said.
+And regular people can manage access through a more traditional login that gives them control over a public-private key pair held for them online. “We believe blockchain is still a bit complicated for people to use,” Cantrell said.
+However, rather than simply storing them in the cloud, the company encrypts the keys in what he calls “mathematical hyperspace.”
+“There’s no central authority users are logging into,” he said.
+Who will use it?
+Nexus has primarily focused on technology and hasn’t done a lot of business development yet.
+However, at a tech event in Arizona, Apple co-founder Steve Wozniak announced a partnership with Nexus on a new education initiative that will be built on the Nexus blockchain.
+Cantrell said Nexus is ready to make a stronger case to potential business partners now because it understands what business customers need.
+A blockchain is not a good platform for full-on computing, he said, but it is a good way to verify things – such as identity, authenticity, ownership and logical soundness.
+These are the sorts of use cases that Nexus has been built around. “The internet can have a secure and immutable data layer,” Cantrell said.
+
+Nexus founder Colin Cantrell (left) with advisor Dino Farinacci, image via Nexus
+
+
+
+",en,"
+
+
+
+
+
+
+
+
+
+
+
+This Startup’s Upgrade Code Can Be Used by Any Bitcoin-Based Blockchain
+04 Nov 2019, 13:00 by Brady Dale
+A small blockchain company out of Arizona has built open-source software that it says any bitcoin-based blockchain could use to improve its functionality.
+Nexus announced Monday what it called its seventh “activation” – a protocol upgrade that brings smart-contract functionality to the Nexus blockchain, which launched as a fork of the original bitcoin protocol in 2014. Deployed today, the activation goes into full effect Nov. 11.
+If all goes well, other blockchains can feel free to follow suit by borrowing the code.
+“Part of the intention was to use the original bitcoin code from the 2014 era to upgrade that into our framework,” Nexus founder Colin Cantrell told CoinDesk. “Any blockchain that uses the legacy UTXO can actually upgrade smart contracts over their live blockchain without having to do a chain reset or anything like that.”
+UTXO stands for “unspent transaction output” but it’s also become a shorthand for blockchains based on bitcoin. The basic idea is that such a blockchain verifies there is money to be spent before it spends it, which is part of preventing the double-spend problem.
+“All the bitcoin forks could essentially upgrade and potentially utilize it,” Cantrell said of his company’s latest release.
+Even if they didn’t want to add smart-contract functionality, Cantrell argued that the Nexus codebase offers other improvements for UTXO chains – like much faster syncing for nodes and lower disk space usage, for example.
+What is Nexus?
+Nexus launched in 2014 and it has self-funded so far by directing a portion of the newly minted coins to the team building the network.
+With a market cap at $19.4 million as of this writing and a token price that has steadily sat at about $0.30 since last November, the project has had to generate enough value for its emitted tokens to support the team’s work. (The price briefly rose as high as $13.00 in early 2018.)
+Nexus had no pre-mine, no venture capital and no initial coin offering.
+Cantrell said it started as a basic bitcoin fork, but Nexus has had several activations since it went live. Now it uses two different proof-of-work chains and a proof-of-stake system. And with the new Tritium upgrade, it also has smart-contract functionality with competitive transaction times.
+“One of the biggest things we’ve seen is that scalability is not a feature. It’s kind of a requirement,” Cantrell said. The startup claims it can manage anywhere from 2,000 to 25,000 transactions per second. (One of the highest-throughput blockchains, XRP, consistently hits 1,500 transactions per second.)
+Nexus uses a variety of strategies to achieve higher throughput, including sharding and proof-of-stake, but it also uses something familiar in basic computing but less discussed in the blockchain industry.
+“Our smart contracts run on a register-based virtual machine, and that’s one way we’ve achieved extra efficiency,” Cantrell said. That is, register-based as opposed to stack-based. Most existing blockchains are stack-based, which is an older style of computing.
+“The architecture is a lot more difficult to implement, but the efficiency is much higher if you implement it correctly,” Cantrell said.
+Developers will find it much easier to work with since much of its functionality is accessible through an API, he said.
+And regular people can manage access through a more traditional login that gives them control over a public-private key pair held for them online. “We believe blockchain is still a bit complicated for people to use,” Cantrell said.
+However, rather than simply storing them in the cloud, the company encrypts the keys in what he calls “mathematical hyperspace.”
+“There’s no central authority users are logging into,” he said.
+Who will use it?
+Nexus has primarily focused on technology and hasn’t done a lot of business development yet.
+However, at a tech event in Arizona, Apple co-founder Steve Wozniak announced a partnership with Nexus on a new education initiative that will be built on the Nexus blockchain.
+Cantrell said Nexus is ready to make a stronger case to potential business partners now because it understands what business customers need.
+A blockchain is not a good platform for full-on computing, he said, but it is a good way to verify things – such as identity, authenticity, ownership and logical soundness.
+These are the sorts of use cases that Nexus has been built around. “The internet can have a secure and immutable data layer,” Cantrell said.
+
+Nexus founder Colin Cantrell (left) with advisor Dino Farinacci, image via Nexus
+
+
+
+"

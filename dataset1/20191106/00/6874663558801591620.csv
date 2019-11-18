@@ -1,0 +1,94 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+פיצוח האייפון בחודש והשמדה עצמית: סודות NSO נחשפים
+בתביעה של פייסבוק נגד NSO מופיע חוזה שחתמה החברה הישראלית עם ממשלת גאנה ב־2015, המספק הצצה לחבילה של NSO ללקוחותיה: מהמחיר הנדרש, דרך מהירות התגובה לגרסאות מערכת הפעלת האייפון ועד התרעות על מיקום יעד המעקב
+06 Nov 2019 by עומר כביר
+חברת NSO הצליחה לפצח את מערכת ההפעלה של האייפון בתוך חודש וחצי בלבד, תוכנת הריגול שלה פגסוס כוללת מנגנון השמדה עצמית שמופעל אוטומטית למנוע את חשיפתה, והיא מאפשרת למפעיל לקבל התרעות אוטומטיות על מיקום יעד המעקב. כך עולה מחוזה מפורט שעליו חתמה החברה עם ממשלת גאנה, שמציג את יכולותיה המגוונות.
+התביעה של פייסבוק נגד NSO בשל הפריצה לווטסאפ החזירה את החברה הישראלית למקום שהיא הכי לא אוהבת להיות בו: אור הזרקורים. כתב התביעה וכן דיווחים חדשותיים שהתפרסמו בעקבותיו, שבו והעלו את כל הטיעונים נגד החברה, ובראשם השימוש שנעשה בתוכנת הריגול שלה פגסוס כדי לעקוב אחרי עיתונאים, פעילי זכויות אדם וגורמי אופוזיציה.
+אבל כמה מהדברים המעניינים ביותר בכל הנוגע ל-NSO לא הופיעו בתביעה עצמה, אלא בנספחים הרבים אליה, ובפרט בחוזה שחתמה החברה ב-2015 עם ממשלת גאנה ובחוברת שיווקית שמציגה את השירותים והיכולות שלה. אלו חושפים מידע מעמיק ומסקרן על דרכי העבודה של החברה, התשלום שהיא גובה, השירותים שהיא מספקת ועוד.
+
+
+שלו חוליו מייסד ומנכ""ל NSO צילומים: אוראל כהן, אביטל פלג
+
+תמיכה 365 ימים בשנה
+אחד הפרטים המעניינים שניתן למצוא שם הוא התשלום שמקבלת NSO מלקוחותיה. תחקיר של הניו יורק טיימס שהתפרסם בשנה שעברה מצא מסמכים שמהם עולה שהחברה מכרה את פגסוס לאיחוד האמירויות ב-18 מיליון דולר לפחות, ומסמך אחר שלפיו נמכרה התוכנה דרך חברה בת בקפריסין בעלות של 11 מיליון דולר.
+מנגד, החוזה עם גאנה מדבר על סכומים נמוכים משמעותית, גם אם לא זניחים לחלוטין. לפי החוזה, שנחתם בדצמבר 2015, גאנה שילמה 8 מיליון דולר בעבור המערכת, סכום שכלל גם תמיכה לשנה. 50% מהסכום, הוסכם בחוזה, יועבר עד 28 בינואר 2016, 35% במועד אספקת החומרה ו-15% עם השלמת פריסת המערכת. החוזה לא נחתם ישירות מול NSO אלא מול חברה מקומית בשם Infralocs, שתפקדה כספקית התוכנה, כך שסביר שלא כל סכום העסקה זרם לכיס החברה הישראלית. למעשה, לפי דיווחים בתקשורת המקומית בגאנה, NSO קיבלה במסגרת העסקה 4 מיליון דולר בלבד.
+התשלום על פגסוס עצמה כולל לא רק את תוכנת הריגול, אלא שירות הקפי בדמות הדרכות (קורס בן שבועיים ועוד שבוע חפיפה מעשי באתר הלקוח) ואספקה של ציוד חומרה רב שדרוש להפעלתה. רשימת הציוד שתספק NSO, לצד החומרה ורישיונות השימוש הדרושים, נפרסת בחוזה על פני תשעה עמודים וכוללת מחשבים, נתבים ושרתים (כולל פירוט מעמיק של המפרט רמת ספק הכוח שיכלל), ואפילו מציינת את סוגי הכבלים ומספרם שתספק NSO. למשל, 20 כבלי כוח באורך 5 מטר ועוד 40 באורך 3 מטר.
+שנת האחריות של NSO כוללת עדכוני ושדרוגי תוכנה שוטפים, וכן הוספת תכונות ויכולות חדשות, ניטור 24/7 של תפקוד תקין, ומרכז תמיכה שפועל 24 שעות ביממה, 7 ימים בשבוע, 365 יום בשנה. לפי החוזה, NSO מספקת ""סיוע בתפעול, ניהול והגדרת המערכת וכן בפתרון כל התקלות הטכניות בתוכנה"". בין פעילויות התמיכה מוזכרת ספציפית תמיכת How To, ככל הנראה הדרכה שוטפת בביצוע פעולות מסוימות שהלקוח מתקשה בהם, עבודה עם הלקוח ""לשכפול ושחזור בעיות"" ו""בידוד, ניטור ותיקון סוגיות תפעוליות"".
+
+
+
+לקוחות שמעוניינים לפנות ל-NSO לקבלת תמיכה טכנית יכולים לעשות זאת באימייל (helpdesk@globalhelp.support), בטלפון (+44-20-3695-4101) או בסקייפ (NOC-HelpDesk).
+היקף תמיכה זה מצביע בבירור על כך ש-NSO לא עובדת בשיטת שגר ושכח, ושיש לה יכולת להתחבר מרחוק למערכות שמפעילים לקוחותיה ולקבל גישה עמוקה לפעולותיהם – דבר שדרוש על מנת לספק תמיכה יעילה. NSO יכולה לדעת מה לקוחותיה עושים עם פגסוס, וסביר להניח שיש לא מעט מקרים בהם היא גם ידעה בדיוק מה נעשה בה כאשר נדרשה לספק תמיכה בתקלות מסוימות.
+הקשר של NSO עם הלקוח לא מסתיים גם בתום שנת האחריות הראשונה. לפי החוזה, ממשלת גאנה יכולה להאריך את תקופת האחריות ב-12 חודשים כל פעם, בעלות של 22% מסכום החוזה המקורי, כלומר כ-1.76 מיליון דולר לכל שנת אחריות נוספת. כלומר, סביר שבמקרים רבים הקשר של NSO עם לקוחות, ולפיכך הידע שלה על פעילותם, הוא שוטף ומתמשך.
+חלק אחר בחוזה, וכן חלק ניכר מהחוברת התדמיתית, עוסקים ביכולות הטכניות של פגסוס. הקווים הכלליים של יכולות המערכת – שאיבת כל המידע על הטלפון, ניטור בזמן אמת, אפשרות להפעלה מרחוק של המצלמה או המיקרופון – כבר ידועים, אבל המידע המפורט רק מבהיר את עומק השליטה והיכולות של התוכנה.
+לפי החוזה עם גאנה, ניתן להפעיל את פגסוס על מכשירי iOS בגרסאות 7 עד 9.1, מכשירי אנדרואיד בגרסאות 4 עד 5 ובלקברי בגרסאות 5 עד 7.1. החוזה נחתם ב-17 דצמבר 2015, ומלמד על מהירות התגובה של NSO לגרסאות חדשות של מערכת הפעלה: גרסה 9.1 של iOS שוחררה ב-21 באוקטובר 2015, כך שהחברה הספיקה לצרף אותה למערך היכולות שלה בתוך פחות מחודשיים. מנגד, גרסה 9.2 שהושקה ב-8 בדצמבר עדיין לא נתמכת בחוזה. זמן התגובה של החברה, לפחות באותה עת, עמד על בין שבועיים לכחודש וחצי.
+""שהמטרה לא תחשוד""
+באשר לשיטות ההדבקה, באותה עת יכלה פגסוס להדביק מכשירי אנדרואיד ובלקברי באמצעות שליחת הודעת פוש זדונית ובאופן שלא מחייב פעולה אקטיבית מצד המשתמש. מכשירי אייפון (וכן אנדרואיד ובלקברי), מנגד, אפשר היה להדביק רק באמצעות לחיצה של המשתמש על קישור זדוני שנשלח ב-SMS, אימייל או בדרך אחרת. הפרצה לווטסאפ, שאפשרה להדביק אייפונים ללא שום פעולה מצד המשתמש, היתה לפיכך הישג משמעותי בעבור החברה.
+אחרי שהותקנה הרוגלה, היא נשארת על המכשיר גם במקרה של הפעלה מחדש, כיבוי או התרוקנות סוללה, ומסוגלת למנוע התקנת עדכוני תוכנה שעלולים להשבית אותה. ""המכשיר מתנהג כאילו יש לו את הגרסה העדכנית של מערכת ההפעלה, או שאינו מרשה לבצע עדכונים"", נכתב. רק במקרה של אנדרואיד, נכון ל-2015, יכולה פגסוס לשרוד גם במקרה שהמכשיר מאופס להגדרות יצרן.
+היכולת של פגסוס גם היא משתנה ממכשיר למכשיר. בכל מערכות ההפעלה, לדוגמה, מסוגלת התוכנה לשאוב פרטי אנשי קשר, הודעות SMS ואימיילים יוצאים ונכנסים ורישום שיחות. עם זאת, רק באנדרואיד ניתן היה לשאוב את רישום השיחות שנעשו בווטסאפ ובלקברי היא היחידה שלא אפשרה שאיבת היסטוריית הגלישה מהדפדפן המובנה.
+יכולות נוספות שמשותפות לכל מערכות ההפעלה: הפעלה וצילום המצלמה הקדמית או האחורית, צילום מסך בזמן אמת, גישה לרשימת הקבצים והעברת קבצים, קבלת נתוני מיקום והפעלת המיקרופון והאזנה בזמן אמת לשיחה. ""הפעלת המיקרופון מתבצעת באמצעות הוצאת שיחה שקטה למכשיר"", מוסבר בחוזה. ""שום אינדיקציה להקלטה או לשיחה מופיעה על המכשיר בשלב כלשהו. איכות השיחה תלויה ברגישות המיקרופון, ברעש הסביבתי ובדגם המכשיר"".
+באשר לאופן העברת המידע, בשעה שהמכשיר מחובר רק לרשת סלולר ""המידע נשלח בחבילות קטנות מאוד. לדבר יש השפעה קטנה על צריכת המידע של המכשיר"".
+במקרה של סוללה חלשה (מתחת ל-5%) לא מועבר מידע כלל. כאשר המכשיר מחוברת לרשת סלולר זרה, בחו""ל למשל, יועבר מידע רק דרך Wi-Fi, כדי להימנע מחיובים יקרים וחשודים.
+פגסוס גם מאפשרת למפעיל לקבוע התרעות אוטומטיות. התרעת Geo Fence מאפשרת לדעת מתי ""המטרה נכנסה לאזור חשוב"". התרעות אלו מבוססות על תחימת אזור גיאוגרפי, שנבחר על ידי המפעיל. למשל, מקום מפגש קבוע שאליו יוצא הקרבן. המערכת מסוגלת גם לספק התרעה על פגישה בין שני נעקבים. ""ההתרעה מופעלת כאשר שתי מטרות נמצאות באותו מוקם שהוגדר על ידי המשתמש. ההתרעה תופעל גם אם המטרות ביקרו באותו מיקום בזמנים שונים"". כן ניתן לקבל התרעה כאשר הקרבן מתכתב עם מספר טלפון שנבחר מראש או מקבל או יוזם שיחה למספר כלשהו.
+החוברת השיווקית חושפת את פעילותו של מנגנון השמדה עצמית מובנה בפגסוס. ""אנחנו מבינים שזה יותר חשוב שהמקור לא ייחשף ושהמטרה לא תחשוד בדבר מאשר להמשיך ולהפעיל את התוכנה"", מוסבר. המנגנון מופעל בשני תרחישים. הראשון, סכנת חשיפה: ""במקרים שבהם יש סיכוי גבוה לחשיפת קיום התוכנה, מנגנון השמדה עצמית יופעל אוטומטית והתוכנה תוסר. ניתן להתקין שוב את התוכנה במועד מאוחר יותר"". התרחיש השני מופעל כאשר פגסוס הפסיקה להגיב. ""במקרים שבהם התוכנה לא מגיבה ולא תקשרה עם השרתים במשך זמן רב, היא תוסר אוטומטית כדי למנוע חשיפה או שימוש לרעה"", נכתב.
+
+
+",iw,"
+
+
+
+
+
+
+
+
+
+
+
+Cracking the iPhone in a Month and Self-Destruction: NSO Secrets Revealed
+Facebook's lawsuit against NSO shows a contract signed by the Israeli government with the Ghanaian government in 2015, which provides a glimpse of NSO's package to its customers: from the required price, through the speed of response to versions of the iPhone operating system to alerts on the tracking target location
+06 Nov 2019 by Omar Kabir
+NSO has managed to crack the iPhone's operating system in just a month and a half, its Pegasus spyware includes a self-destruct mechanism that is automatically activated to prevent its exposure, and allows the operator to receive automatic alerts on the tracking target location. This emerges from a detailed contract signed by the company with the government of Ghana, which showcases its diverse capabilities.
+Facebook's lawsuit against NSO for breaking into Wattsap has brought Israeli society back to its most disliked place: the limelight. The lawsuit, as well as news reports that followed, reiterated all the allegations against the company, most notably the use of its Pegasus spyware to track journalists, human rights activists and opposition officials.
+But some of the most interesting things about the NSO did not appear in the lawsuit itself, but in the many appendices to it, notably in the 2015 contract the company signed with the Ghanaian government and a marketing brochure showing its services and capabilities. These reveal in-depth and intriguing information about the company's working methods, the payment it charges, the services it provides and more.
+
+
+Shalio Julio Founder and CEO of NSO Photos: Oral Cohen, Avital Peleg
+
+Support 365 days a year
+One of the interesting details that can be found there is the payment that NSO receives from its customers. An investigation by the New York Times last year found documents suggesting the company sold Pegasus to the United Arab Emirates for at least $ 18 million, and another document that said the software was sold through a subsidiary in Cyprus for $ 11 million.
+On the other hand, the contract with Ghana speaks for significantly lower amounts, even if not entirely negligible. Under the contract, signed in December 2015, Ghana paid $ 8 million for the system, an amount that also included one-year support. 50% of the amount, agreed in the contract, will be shipped by January 28, 2016, 35% at the time of hardware delivery and 15% upon completion of the system deployment. The contract was not signed directly with NSO but with a local company called Infralocs, which functioned as the software provider, so it is probable that not all the transaction amount went into the Israeli company pocket. In fact, according to local media reports in Ghana, NSO received only $ 4 million under the deal.
+The payment for Pegasus itself includes not only the spyware, but a tutorial in the form of tutorials (a two-week course and a practical on-site overlap week) and supplies of much hardware equipment needed to run it. The list of equipment NSO provides, along with the necessary hardware and usage licenses, is spread over a nine-page contract and includes computers, routers and servers (including a detailed breakdown of the level of power supply that will be included), and even specifies the types of cables and numbers provided by NSO. For example, 20 5-meter power cables plus 40 3-meter length cables.
+NSO's warranty year includes ongoing software updates and upgrades, as well as adding new features and capabilities, 24/7 proper functioning monitoring, and a 24-hour, 7-day, 365-day support center. Under the contract, NSO provides ""assistance in operating, managing and configuring the system as well as resolving all technical malfunctions in the software"". Specific support mentions include how-to support, probably ongoing training in performing certain customer-facing tasks, working with the client to ""replicate and restore issues"" and ""isolate, monitor, and correct operational issues.""
+
+
+
+Customers who wish to contact NSO for technical support can do so by email (helpdesk@globalhelp.support), by phone (+ 44-20-3695-4101) or by Skype (NOC-HelpDesk).
+This level of support clearly indicates that NSO does not work with a routine and forgotten method, and that it has the ability to remotely connect to systems that operate its customers and gain deep access to their operations - which is necessary to provide effective support. NSO can know what its customers are doing with Pegasus, and there are probably quite a few cases where it also knew exactly what it was doing when it needed to provide support for certain faults.
+NSO's relationship with the customer does not end even at the end of the first warranty year. Under the contract, the Ghanaian government can extend the 12-month warranty period at a cost of 22% of the original contract amount, which is about $ 1.76 million for each additional warranty year. That is, it is likely that in many cases NSO's relationship with clients, and therefore its knowledge of their operations, is ongoing and ongoing.
+Another part of the contract, as well as much of the promotional booklet, deals with Pegasus' technical capabilities. The general lines of system capabilities - pumping all the information on the phone, real-time monitoring, remote camera or microphone capability - are already known, but the detailed information only clarifies the depth of control and capabilities of the software.
+Under contract with Ghana, Pegasus can be run on iOS devices 7 to 9.1, Android devices 4 to 5, and BlackBerry 5 to 7.1. The contract was signed on December 17, 2015, and indicates the speed of NSO's response to new OS versions: iOS 9.1 was released on October 21, 2015, so the company was able to attach it to its capabilities in less than two months. On the other hand, version 9.2 launched on December 8 is not yet supported by the contract. The company's response time, at least at that time, was between two and a half months.
+""That goal won't be suspicious""
+As for the infection methods, at that time Pegasus could infect Android and BlackBerry devices by sending a malicious Push message and not requiring active user action. IPhones (as well as Android and BlackBerry), on the other hand, could only be pasted by the user clicking on a malicious link sent via SMS, email or otherwise. The breach of Wetsap, which allowed to paste iPhones without any user action, was therefore a significant achievement for the company.
+After the spyware is installed, it stays on the device even in the event of a restart, shutdown, or battery drain, and is capable of preventing software updates that may disable it. ""The device acts as if it has the latest version of the operating system, or does not allow updates,"" it said. Only in the case of Android, as of 2015, can Pegasus survive even if the device is reset to factory settings.
+Pegasus' ability also varies from device to device. In all operating systems, for example, the software is able to pump outgoing and incoming contact information, SMS messages and emails and record calls. However, it was only Android that could record the calls made on Wetsap and BlackBerry is the only one that did not allow browsing history extraction from the built-in browser.
+Other capabilities that are common to all operating systems: front and rear camera operation and photography, real-time screenshot, access to the file list and file transfer, obtaining location data and activating the microphone and listening in real-time for a call. ""The microphone is activated by taking out a silent call to the device,"" the contract explains. ""No indication of a recording or call appears on the device at any point. The quality of the call depends on the sensitivity of the microphone, the ambient noise and the model of the device.""
+As for how the information is transmitted, while the device is only connected to a cellular network ""The information is sent in very small packages. This has little impact on the consumption of the information of the device"".
+In the case of a weak battery (below 5%) no information is transmitted at all. When the device is connected to a foreign cellular network, abroad, for example, information will only be transmitted over Wi-Fi to avoid expensive and suspicious charges.
+Pegasus also allows the operator to set automatic alerts. Geo Fence alert lets you know when ""the target has entered an important area."" These alerts are based on the geographical area boundary selected by the operator. For example, a regular meeting place to which the victim goes. The system is also capable of providing an alert for a meeting between two trackers. ""The alert is triggered when two targets are in the same user-defined location. The alert will be triggered even if the targets visited the same location at different times."" You can also receive an alert when the victim writes with a preselected phone number or receives or initiates a call to any number.
+The marketing booklet reveals the activity of a built-in self-destruct mechanism in Pegasus. ""We understand that it is more important that the source is not disclosed and that the purpose is not to be suspected than to continue operating the software,"" explained. The mechanism is activated in two scenarios. The first, Exposure Danger: ""In cases where the software is highly likely to be exposed, the self-destruct mechanism will be activated automatically and the software will be uninstalled. The software may be reinstalled at a later date."" The second scenario is triggered when Pegasus stopped responding. ""In cases where the software does not respond or interact with the servers for a long time, it will be automatically removed to prevent exposure or misuse,"" it said.
+
+
+"

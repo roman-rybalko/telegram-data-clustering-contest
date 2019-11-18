@@ -1,0 +1,46 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Rilasciate le patch di sicurezza di novembre per la famiglia Pixel, è finito il supporto ufficiale per i primi Pixel?
+04 Nov 2019, 21:05 by Roberto Artigiani
+Di solito il rilascio delle patch di sicurezza, pur essendo un’operazione molto importante per la sicurezza dei dispositivi, è qualcosa che scorre con ordinarietà mese dopo mese. Stavolta però potrebbe rappresentare una rottura degna di nota con due eventi di rilievo in un colpo solo (se non tre). Questo novembre infatti non solo vede per la prima volta un update per i nuovissimi Pixel 4, ma rappresenta con tutta probabilità anche la fine del supporto ufficiale per i Pixel di prima generazione.
+I primi Pixel in effetti sono stati aggiornati ad Android 10 da poco e hanno ricevuto il solito carico di bugfix lo scorso mese, tuttavia non ci sono loro tracce nel bollettino odierno, per cui è davvero probabile che siano giunti al termine del supporto esteso. In assenza di una comunicazione ufficiale, rimane comunque la possibilità che ci sia semplicemente un ritardo.
+A proposito di detto bollettino, ci sono novità funzionali un po’ per tutti i Pixel supportati. Migliora la qualità audio di Pixel 3, migliora il riconoscimento della hotword di Assistant sui Pixel 2 e 3, e sui Pixel 4 migliorano fotocamera e smooth display, anche se non sappiamo in che modo di preciso.
+Il bollettino ufficiale riporta poi ben 17 problematiche risolte con il rilascio del primo del mese e altre 21 coperte dalla patch del 5 novembre. Le vulnerabilità affrontate sono di livello elevato e critico, ma la cosa non deve suonarvi allarmante. Infatti Google ha comunicato che nel corso del 2018 non è emersa pubblicamente nessuna problematica che non avesse già una soluzione pronta attraverso un aggiornamento di sicurezza o una mitigazione.
+Le patch di novembre portano infine anche una terza novità – forse meno interessante per la maggioranza dei nostri lettori: per la prima volta infatti il bollettino mensile per i Pixel riporta il dettaglio degli aggiornamenti funzionali accanto a bugfix e patch di sicurezza. Infine qui trovate l’elenco con le factory image e gli OTA per tutti i dispositivi da Pixel 2 a Pixel 4 XL.
+Via: 9To5Google (1), (2)
+
+
+",it,"
+
+
+
+
+
+
+
+
+
+
+
+Released the November security patches for the Pixel family, is the official support for the first Pixels finished?
+04 Nov 2019, 21:05 by Roberto Artigiani
+Usually the release of security patches, although a very important operation for the security of devices, is something that flows with ordinariness month after month. This time, however, it could represent a noteworthy break with two important events in one fell swoop (if not three). This November, in fact, not only does it see an update for the newest Pixel 4 for the first time, but it is also probably the end of official support for first-generation Pixels.
+The first Pixels were in fact updated to Android 10 recently and received the usual load of bugfixes last month, however there are no traces of them in today's bulletin, so it is really likely that they have reached the end of the extended support. In the absence of an official communication, the possibility remains that there is simply a delay.
+With regard to this bulletin, there are some functional innovations for all the supported pixels. It improves the audio quality of Pixel 3, improves the recognition of the Assistant hotword on Pixels 2 and 3, and on Pixels 4 they improve camera and smooth display, even if we don't know exactly how.
+The official bulletin then reports as many as 17 issues resolved with the release of the first of the month and a further 21 covered by the November 5 patch. The vulnerabilities addressed are high and critical, but this should not sound alarming to you. In fact, Google has announced that in 2018 no problems emerged that did not already have a solution ready through a security update or a mitigation.
+Lastly, the November patches also bring a third novelty - perhaps less interesting for the majority of our readers: for the first time the monthly Pixel bulletin reports the details of functional updates alongside bugfixes and security patches. Finally, here you find the list with factory images and OTAs for all devices from Pixel 2 to Pixel 4 XL.
+Via: 9To5Google (1), (2)
+
+
+"

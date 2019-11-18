@@ -1,0 +1,94 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+from the didn't-see-that-coming dept
+FBI's Top Lawyer From The Apple Encryption Fight Says Law Enforcement Needs To Suck It Up And Embrace Encryption
+05 Nov 2019, 09:43 by Mike Masnick
+Jim Baker was the FBI's General Counsel during its well-publicized attempt to use the San Bernardino shootings from 2016 as a wedge to force Apple to build a backdoor into its data encryption scheme. As we noted at the time, this seemed like a very clear, somewhat cynical attempt to use a high profile attack as an excuse to force Apple's hand in building back doors. When that battle happened, then FBI director Jim Comey took to the pages of Lawfare to insist that there were good reasons for the FBI to fight with Apple in court to force it to create a backdoor.
+Now, Baker has taken to the pages of Lawfare as well to... apparently point out that he and the FBI were totally wrong about all of that and that his former colleagues at the FBI and DOJ need to get it over it and embrace encryption. It's quite a piece.
+
+In the face of congressional inaction, and in light of the magnitude of the threat, it is time for governmental authorities—including law enforcement—to embrace encryption because it is one of the few mechanisms that the United States and its allies can use to more effectively protect themselves from existential cybersecurity threats, particularly from China. This is true even though encryption will impose costs on society, especially victims of other types of crime.
+
+Baker defends his own work on the San Bernardino case, but is now recognizing how dangerous backdoors can be and how important encryption is. He takes current Attorney General William Barr to task for his new anti-encryption propaganda campaign:
+The attorney general’s perspective on encryption is far from universal. A range of individuals and groups—including some tech companies, computer scientists, engineers, cybersecurity experts, and privacy and human rights organizations—think that encryption protects both our security and our privacy. See here and here for examples. Well-designed and well-implemented encryption makes it harder for malicious cyber actors to unlawfully hack and steal our communications, personal data and intellectual property. In their view, weakening encryption through the installation of “back doors” on smartphones or in communications systems, or providing law enforcement with “golden keys” to allow them access to encrypted data, jeopardizes all of us. Many would disagree strongly with the attorney general’s assessment that an acceptable technical solution to law enforcement’s problem—one that appropriately balances all of the equities at issue—actually exists.
+Baker even highlights a key point many of us have pointed out in the past. For all the talk of ""going dark,"" law enforcement has more access to information than ever before in history:
+
+Further, the situation for law enforcement may not actually be as bad as some claim. In fact, some argue that society is in a “golden age of surveillance” as substantially more data—especially metadata—than ever before is available for collection and analysis by law enforcement. Finally, critics charge that law enforcement agencies have not provided the public with comprehensive and reliable data to explain exactly how many encrypted devices or communications those agencies encounter as well as the number and type of investigations that encryption negatively impacts.
+
+Indeed, Baker highlights how misleading Barr and others (including Baker's old boss, Comey's) arguments are when they say that encryption leads to a lawless digital space:
+
+So, encryption has not, as the attorney general complained in his speech, really created a “law free zone.” It’s just that the law that applies in this area is not what Barr or the Justice Department want the law to be.
+
+Baker also highlights how undermining encryption puts us all at risk in a wide variety of ways, from basically handing over security services to non-US companies, to putting all our data at risk, to also creating a great opening for countries who wish to do us harm. There are a lot of really great points in this post, way beyond what I'm highlighting here, so I highly recommend reading the whole thing. Indeed, towards the end, Baker (correctly) highlights that protecting our own digital security almost certainly is a better way of protecting Americans than being able to hack into the phones of a few people:
+
+If I’m correct about the existential nature of cyber threats and about the risks that nation-states such as China, in particular, pose to the United States and its allies, then federal, state and local governments should be doing everything they can to enhance the cybersecurity status of the nation. All public safety officials should think of protecting the cybersecurity of the United States as an essential part of their core mission to protect the American people and uphold the Constitution. And they should be doing so even if there will be real and painful costs associated with such a cybersecurity-forward orientation. The stakes are too high and our current cybersecurity situation too grave to adopt a different approach.
+
+A key theme throughout the whole piece is that it's time for law enforcement to accept reality and to stop pretending there's some fantasy ""magic bullet"" or ""golden key"" that will allow them to safely backdoor their way into encrypted devices. He admits that this may, sometimes, make law enforcement's job harder, but the benefits for everyone's safety so vastly outweigh that potential downside as to suggest this shouldn't even be much of a debate.
+All of this is stuff that many of us who have fought against encryption backdoors have been saying for decades, but it's pretty surprising (to the level of almost shocking) that Baker is now expressing this view -- given his role in literally working to backdoor Apple's encryption. This is not a privacy activist. This is someone who was basically in charge of the FBI's last big effort to have the courts break encryption. Baker insists that his actual views haven't changed very much, though that does seem at least somewhat difficult to square with the FBI's position in the Apple legal fight. But, either way, it's great to see someone of his stature and experience now agreeing that undermining encryption would be very, very dangerous -- and that he's willing to tell his former colleagues, directly, that they, too, should embrace this position.
+
+If you liked this post, you may also be interested in...
+
+
+
+
+
+
+
+
+",en,"
+
+
+
+
+
+
+
+
+
+
+
+from the didn't-see-that-coming dept
+FBI's Top Lawyer From The Apple Encryption Fight Says Law Enforcement Needs To Suck It Up And Embrace Encryption
+05 Nov 2019, 09:43 by Mike Masnick
+Jim Baker was the FBI's General Counsel during its well-publicized attempt to use the San Bernardino shootings from 2016 as a wedge to force Apple to build a backdoor into its data encryption scheme. As we noted at the time, this seemed like a very clear, somewhat cynical attempt to use a high profile attack as an excuse to force Apple's hand in building back doors. When that battle happened, then FBI director Jim Comey took to the pages of Lawfare to insist that there were good reasons for the FBI to fight with Apple in court to force it to create a backdoor.
+Now, Baker has taken to the pages of Lawfare as well to... apparently point out that he and the FBI were totally wrong about all of that and that his former colleagues at the FBI and DOJ need to get it over it and embrace encryption. It's quite a piece.
+
+In the face of congressional inaction, and in light of the magnitude of the threat, it is time for governmental authorities—including law enforcement—to embrace encryption because it is one of the few mechanisms that the United States and its allies can use to more effectively protect themselves from existential cybersecurity threats, particularly from China. This is true even though encryption will impose costs on society, especially victims of other types of crime.
+
+Baker defends his own work on the San Bernardino case, but is now recognizing how dangerous backdoors can be and how important encryption is. He takes current Attorney General William Barr to task for his new anti-encryption propaganda campaign:
+The attorney general’s perspective on encryption is far from universal. A range of individuals and groups—including some tech companies, computer scientists, engineers, cybersecurity experts, and privacy and human rights organizations—think that encryption protects both our security and our privacy. See here and here for examples. Well-designed and well-implemented encryption makes it harder for malicious cyber actors to unlawfully hack and steal our communications, personal data and intellectual property. In their view, weakening encryption through the installation of “back doors” on smartphones or in communications systems, or providing law enforcement with “golden keys” to allow them access to encrypted data, jeopardizes all of us. Many would disagree strongly with the attorney general’s assessment that an acceptable technical solution to law enforcement’s problem—one that appropriately balances all of the equities at issue—actually exists.
+Baker even highlights a key point many of us have pointed out in the past. For all the talk of ""going dark,"" law enforcement has more access to information than ever before in history:
+
+Further, the situation for law enforcement may not actually be as bad as some claim. In fact, some argue that society is in a “golden age of surveillance” as substantially more data—especially metadata—than ever before is available for collection and analysis by law enforcement. Finally, critics charge that law enforcement agencies have not provided the public with comprehensive and reliable data to explain exactly how many encrypted devices or communications those agencies encounter as well as the number and type of investigations that encryption negatively impacts.
+
+Indeed, Baker highlights how misleading Barr and others (including Baker's old boss, Comey's) arguments are when they say that encryption leads to a lawless digital space:
+
+So, encryption has not, as the attorney general complained in his speech, really created a “law free zone.” It’s just that the law that applies in this area is not what Barr or the Justice Department want the law to be.
+
+Baker also highlights how undermining encryption puts us all at risk in a wide variety of ways, from basically handing over security services to non-US companies, to putting all our data at risk, to also creating a great opening for countries who wish to do us harm. There are a lot of really great points in this post, way beyond what I'm highlighting here, so I highly recommend reading the whole thing. Indeed, towards the end, Baker (correctly) highlights that protecting our own digital security almost certainly is a better way of protecting Americans than being able to hack into the phones of a few people:
+
+If I’m correct about the existential nature of cyber threats and about the risks that nation-states such as China, in particular, pose to the United States and its allies, then federal, state and local governments should be doing everything they can to enhance the cybersecurity status of the nation. All public safety officials should think of protecting the cybersecurity of the United States as an essential part of their core mission to protect the American people and uphold the Constitution. And they should be doing so even if there will be real and painful costs associated with such a cybersecurity-forward orientation. The stakes are too high and our current cybersecurity situation too grave to adopt a different approach.
+
+A key theme throughout the whole piece is that it's time for law enforcement to accept reality and to stop pretending there's some fantasy ""magic bullet"" or ""golden key"" that will allow them to safely backdoor their way into encrypted devices. He admits that this may, sometimes, make law enforcement's job harder, but the benefits for everyone's safety so vastly outweigh that potential downside as to suggest this shouldn't even be much of a debate.
+All of this is stuff that many of us who have fought against encryption backdoors have been saying for decades, but it's pretty surprising (to the level of almost shocking) that Baker is now expressing this view -- given his role in literally working to backdoor Apple's encryption. This is not a privacy activist. This is someone who was basically in charge of the FBI's last big effort to have the courts break encryption. Baker insists that his actual views haven't changed very much, though that does seem at least somewhat difficult to square with the FBI's position in the Apple legal fight. But, either way, it's great to see someone of his stature and experience now agreeing that undermining encryption would be very, very dangerous -- and that he's willing to tell his former colleagues, directly, that they, too, should embrace this position.
+
+If you liked this post, you may also be interested in...
+
+
+
+
+
+
+
+
+"

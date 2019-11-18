@@ -1,0 +1,116 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Гаджет, который отправит кассовый аппарат в прошлое
+В начале октября на форуме Kyiv Smart City презентовали новую отечественную разработку — Смарт Кассу. Это гаджет и соответствующее ПО, которые заменят для бизнеса кассовый аппарат, платежные терминалы и гроссбухи с отчетностью. Удобно и предпринимателям, и покупателям с картой. Проект создан украинскими разработчиками Ukrtrimex при поддержке мобильного оператора Vodafone Ukraine.
+
+07 Nov 2019, 07:29
+
+
+Насколько умна Смарт Касса?
+
+Смарт Касса — это, конечно, не просто касса в привычном нам понимании. В небольшом устройстве совмещены: цифровой кассовый аппарат, автоматизация торговли и учета, а также терминал для «безнала». То есть, все, что нужно для продажи и налоговой отчетности. Гаджет умеет принимать как оплату кэшем, так и картой, Google или Apple Pay. А предпринимателю меньше возни с документами — устройство само подготовит и отправит отчет налоговой.
+Предпринимателю меньше возни с документами — устройство само подготовит и отправит отчет налоговой.
+«Раньше бизнесмену нужна была касса, POS-терминал, РРО, принтер и другие устройства. Наше решение — аналогичный набор, но в одном девайсе. Теперь нет потребности брать в аренду у банка терминал. Таким образом, предприниматель экономит на стартовых затратах на технику, аренду, и получает от банка выгодные тарифы на эквайринг», — поясняет Вячеслав Скороход, директор по стратегическому маркетингу проекта Смарт Касса. По его словам, благодаря портативности устройства, оно подходит для любой сферы бизнеса, особо мобильных — как доставка или такси.
+В марте разработка Ukrtrimex получила предварительное «добро» от Минфина, осенью — прошла тест налоговой. Использование такого девайса получило зеленый свет и от парламента: соответствующий закон, который разрешает применение устройств типа Смарт Касcы вместо привычных кассовых аппаратов, приняли в сентябре этого года. Вступить в силу он должен с 19 апреля 2020 года.
+Кроме того, если в классических аппаратах кассир подписывает чек с помощью отдельного модуля безопасности от посредника, то в Смарт Кассе реализована опция квалифицированной электронной подписи с использованием Mobile ID.
+
+Безопасность по высшим стандартам
+
+Разработчик заверяет, что и «железная», и программная начинка Смарт Кассы отвечает международным стандартам безопасности. Надёжность аппаратной части подтверждена стандартом PCI PTS (Международный стандарт безопасности индустрии платежных карт). Также работа платёжного ПО построена на использовании технологий и методов лучших отраслевых стандартов (PCI DSS, ISO 8583, банковских и международных платёжных систем). Таким образом, для платежных операций на Смарт Кассе риски нарушения безопасности сведены к минимуму, добавляют в Ukrtrimex.
+
+
+Фото: Vodafone Украина
+
+Высокий уровень безопасности обеспечен также за счет использования технологии Mobile ID. Смарт Касса использует сим-карту с этим идентификатором для того чтобы подписывать чеки и отчеты для налоговой при помощи квалифицированной электронной подписи. Налоговая доверяет документам, подписанным при помощи Mobile ID, так как эта технология использует сертифицированное решение, все компоненты которого прошли государственную экспертизу. Причем, используемое решение соответствует не только украинским, но и европейским стандартам.
+В этом аспекте разработчиков Смарт Кассы поддержал оператор Vodafone Украина. Сама технология Mobile ID предоставляется тремя крупнейшими игроками мобильного рынка страны.
+«По сути, прохождение авторизации через Mobile ID — это как показать паспорт, только на сим-карте. Но паспорт можно потерять, а Mobile ID при утере легко блокируется», — объяснили в Vodafone. Среди преимуществ мобильного айди по сравнению с другими цифровыми способами идентификации человека в компании называют также то, что она работает на разных операционных системах (например, iOS или Android), при этом обеспечивая наивысший уровень защиты.
+У Mobile ID уже немало областей применения. Например, для подтверждения личности при участии в различных демократических проектах (подписание петиций или голосование за идеи касательно городского бюджета или других вопросов местного самоуправления). Кроме того, такое мобильное «удостоверение» используется при получении государственных электронных услуг. А также — как цифровая подпись для документов и отчетов в цифровом виде, как, например, у Смарт Кассы.
+
+
+Фото: Vodafone Украина
+
+«Как показывает наш опыт — а услуга Mobile ID уже более года доступна абонентам Vodafone — именно государственные сервисы стоят на первом месте у пользователей. Самым популярным на сегодняшний день является «Кабинет водителя» и «Кабинет плательщика налогов», — рассказывают в Vodafone. Также пользователи Mobile ID могут оформить заявление на субсидию, на финансовую помощь при рождении ребенка и многое другое через портал государственных услуг iGov.gov.ua.
+
+Смарт Касса и новые возможности бизнеса
+
+Разработчики уверены, что Смарт Касса станет незаменимым устройством для бизнеса, значительно упростив подход к организации платежей и ведению отчетности.
+На сайте разработчика уже запущена предпродажа. Кроме приобретения самого девайса, предусмотрен единый ежемесячный платеж для поддержки и автоматического обновления ПО.
+Команда проекта решила научить Смарт Кассу решать и ряд других бизнес-задач. А именно — анализ big data, большого массива информации о покупках. В компании-разработчике поясняют, что с помощью такой аналитики предприятие сможет лучше понять поведение своих клиентов или адаптировать программы лояльности (например, вычислить «счастливые часы»). «Раньше такие сервисы отчетов были доступны только крупному бизнесу и требовали затратной интеграции разных баз данных. С помощью Смарт Кассы такие документы составляются автоматически», — говорят в Ukrtrimex.
+
+
+Фото: Vodafone Україна
+
+В обозримой перспективе создатели Смарт Кассы готовятся запустить и внутреннюю экосистему — маркет-площадку приложений от сторонних разработчиков. В нем ожидают как минимум программы для товарного учета, CRM-системы, 1C, логистические приложения и многое другое. В разработке — и «виртуальная» Смарт Касса. «Мы понимаем, насколько важен контроль бизнеса для предпринимателя, поэтому работаем над запуском мобильного приложения специально для владельцев — прямо на телефоне можно будет отслеживать продажи в режиме реального времени», — добавляет Елизавета Хохлова, управляющий менеджер по стратегическому развитию проекта.
+В будущее команда смотрит с оптимизмом и уверена, что уже вскоре мобильный и компактный умный девайс начнет заменять морально устаревшие и громоздкие кассовые аппараты. А заодно — и переводить всю отчетность бизнеса на цифру, сводя потребность в «бумажках» до минимума.
+
+
+
+",ru,"
+
+
+
+
+
+
+
+
+
+
+
+The gadget that will send the cash register to the past
+In early October, at the forum Kyiv Smart City presented a new domestic development - Smart Kassu. This is a gadget and related software that will replace the cash register, payment terminals and ledgers for business with business reporting. It is convenient for both entrepreneurs and customers with a card. The project was created by Ukrainian developers Ukrtrimex with the support of the mobile operator Vodafone Ukraine.
+
+07 Nov 2019, 07:29
+
+
+How smart is Smart Cashier?
+
+Smart Cashier is, of course, not just a cashier in our usual sense. In a small device combined: a digital cash register, automation of trade and accounting, as well as a terminal for ""cashless"". That is, everything you need for the sale and tax reporting. The gadget can accept both payment by cache and by card, Google or Apple Pay. And the businessman is less busy with documents - the device itself will prepare and send a tax report.
+The businessman is less busy with documents - the device itself will prepare and send a tax report.
+“Previously, a businessman needed a cash register, POS terminal, PPO, printer, and other devices. Our solution is a similar set, but in one device. Now there is no need to rent a terminal from the bank. Thus, the entrepreneur saves on starting costs for equipment, rent, and receives favorable acquiring tariffs from the bank, ”explains Vyacheslav Skorokhod, Strategic Marketing Director of the Smart Cash desk project. According to him, due to the portability of the device, it is suitable for any business, especially mobile ones - like delivery or taxi.
+In March, the development of Ukrtrimex received preliminary ""approval"" from the Ministry of Finance, in the fall - it passed the tax test. The use of such a device received a green light from parliament: the corresponding law, which allows the use of devices such as Smart Cash, instead of the usual cash registers, was adopted in September this year. It should enter into force on April 19, 2020.
+In addition, if in classic machines the cashier signs a check using a separate security module from an intermediary, then Smart Cash has the option of qualified electronic signature using Mobile ID.
+
+Highest Security
+
+The developer assures that both the ""iron"" and the software filling Smart Cash desk meets international safety standards. The reliability of the hardware is confirmed by the PCI PTS (International Payment Card Industry Security Standard). Also, the work of payment software is based on the use of technologies and methods of the best industry standards (PCI DSS, ISO 8583, banking and international payment systems). Thus, for payment transactions at Smart Cashier, the risks of security breaches are minimized, add to Ukrtrimex.
+
+
+Photo: Vodafone Ukraine
+
+A high level of security is also ensured through the use of Mobile ID technology. Smart Cashier uses a SIM card with this identifier to sign checks and reports for tax with the help of a qualified electronic signature. The tax authority trusts documents signed using Mobile ID, as this technology uses a certified solution, all components of which have passed state examination. Moreover, the solution used meets not only Ukrainian, but also European standards.
+In this aspect, the developers of Smart Cashbox were supported by the operator Vodafone Ukraine. Mobile ID technology itself is provided by the three largest players in the country's mobile market.
+“In fact, authorization through Mobile ID is like showing a passport, only on a SIM card. But you can lose your passport, and Mobile ID is easily blocked when lost, ”Vodafone explained. Among the advantages of a mobile ID compared to other digital methods of identifying a person, the company also says that it works on different operating systems (for example, iOS or Android), while providing the highest level of protection.
+Mobile ID already has many applications. For example, to confirm identity when participating in various democratic projects (signing petitions or voting for ideas regarding the city budget or other issues of local government). In addition, such a mobile “certificate” is used when receiving state electronic services. And also - as a digital signature for documents and reports in digital form, as, for example, with Smart Cashbox.
+
+
+Photo: Vodafone Ukraine
+
+“As our experience shows - and the Mobile ID service has been available to Vodafone subscribers for over a year now - it’s government services that come first among users. The most popular today is the “Driver’s Office” and “Taxpayer’s Office,” Vodafone says. Also, Mobile ID users can apply for a subsidy, financial assistance at the birth of a child, and much more through the government services portal iGov.gov.ua.
+
+Smart Cashier and new business opportunities
+
+The developers are confident that Smart Cash Register will become an indispensable device for business, greatly simplifying the approach to organizing payments and reporting.
+A presale has already been launched on the developer's site. In addition to acquiring the device itself, a single monthly payment is provided for support and automatic software updates.
+The project team decided to teach Smart Cash to solve a number of other business problems. Namely, the analysis of big data, a large array of information about purchases. The development company explains that with the help of such analytics, the enterprise will be able to better understand the behavior of its customers or adapt loyalty programs (for example, calculate “happy hours”). “Previously, such reporting services were available only to large businesses and required costly integration of different databases. With the help of Smart Cashboxes, such documents are compiled automatically, ”they say in Ukrtrimex.
+
+
+Photo: Vodafone Ukraine
+
+In the foreseeable future, the creators of Smart Cashboxes are preparing to launch an internal ecosystem - a marketplace for applications from third-party developers. It expects at least software for commodity accounting, CRM-systems, 1C, logistics applications and much more. In development - and the ""virtual"" Smart Cashier. “We understand how important business control is for an entrepreneur, so we are working on launching a mobile application specifically for owners - it will be possible to track sales in real time right on the phone,” adds Elizaveta Khokhlova, project manager for strategic development.
+The team is optimistic about the future and is confident that soon a mobile and compact smart device will begin to replace obsolete and bulky cash registers. And at the same time - and translate all business reporting into digital, reducing the need for ""pieces of paper"" to a minimum.
+
+
+
+"

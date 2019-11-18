@@ -1,0 +1,68 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Digitalisierung im Gesundheitswesen
+Gesundheitsapps: „Unberechtigte Zugriffe sind nicht ausgeschlossen“
+03 Nov 2019, 10:56 by Fridolin Skala
+
+Datenschutzexpertin Hansen über Gesundheitsapps, die elektronische Patientenakte und die Schwachstellen im Digitale-Versorgung-Gesetz von Jens Spahn.
+
+Die Forschung soll nach dem Willen von Jens Spahn leichter auf Gesundheitsdaten aus der Gesetzlichen Krankenversicherung zugreifen können. Wie bewerten Sie diesen Aspekt des Digitale-Versorgung-Gesetzes?Wenn mit Forschung solche nach dem deutschen Verständnis, also von öffentlichen Forschungseinrichtungen gemeint ist, kann es sehr sinnvoll sein, den entsprechenden Instituten eine vereinfachte Möglichkeit der Datenanalyse zu bieten. Denn es ist erst einmal positiv, mit der Digitalisierung in der Medizin Fortschritte erreichen zu wollen. Allerdings muss es gesetzliche und technisch-organisatorische Garantien dafür geben, dass mit diesen sensiblen Informationen gut umgegangen wird und der Schutz und die Sicherheit der Daten aufrechterhalten wird. Das sehe ich noch nicht ausreichend gewährleistet.
+Das Gesetz sieht vor, die Patientendaten zu anonymisieren. Meinen Sie das, wenn Sie vom „guten Umgang“ mit Daten sprechen?Echte Anonymisierung, die bedeutet, dass ein Rückschluss nicht mehr möglich ist, ist zwar nicht unmöglich, aber sehr selten. Es gibt auch andere Wege, eine Zuordnung zu verhindern, etwa durch die Aggregation von Daten. Für eine echte Anonymisierung gibt es zwei Möglichkeiten: Zum einen die Generalisierung, beispielsweise wenn man in den Datensätzen nicht mehr das Geburtsdatum belässt, sondern Altersgruppen von zehn Jahren bildet. Zum anderen die Randomisierung, also eine Verfälschung der Daten in einer Weise, dass die direkte Verbindung zwischen Daten und betroffener Person entfernt wird, zum Beispiel durch Vertauschen von Datenfeldern verschiedener Datensätze. Diese Anonymisierungsmethoden führen allerdings zu Einbußen in der Aussagekraft der Daten, weil sich nicht mehr alles verwerten lässt. Ein weiterer Weg wäre die Pseudonymisierung, wobei hier verschiedene Datensätze zum selben Pseudonym zusammengeführt werden können – das ist dann aber keineswegs anonym, sondern personenbezogen.
+
+
+Marit Hansen ist seit 2015 Landesbeauftragte für Datenschutz in Schleswig-Holstein. Die Diplom-Informatikerin arbeitet seit mehr als 20 Jahren zu den Themen des Datenschutzes und der Informationssicherheit.© Markus Hansen
+
+Wo sehen Sie beim Digitale-Versorgung-Gesetz weitere Schwachstellen?Ein großer Kritikpunkt sind die Gesundheits-Apps. Ich sehe da insbesondere den Aspekt der technischen Gestaltung kritisch, weil hier die Kriterien noch nicht optimal vorgegeben sind. Leider ist die Datenschutzkonformität von Apps keine Selbstverständlichkeit. Die heutigen Apps verwenden häufig Tracking und Werbung, wodurch auch sensible Nutzerdaten an Unternehmen abfließen können. Leider hat sich dies auch mit der Einführung der DSGVo noch nicht geändert. Auch die Datenschutzpolicies der Marktplätze sind ein Problem.
+Inwiefern? Der Playstore von Google etwa bekommt Informationen, wenn wir Apps herunterladen oder aktualisieren. Schon bei einer Diabetes-App kann dies kritisch sein, aber erst recht. Wenn ich mir eine App für Depressionserkrankungen herunterlade, denn dann weiß Google das. Dazu kommt noch das Thema Smartphone-Sicherheit, weil oft unberechtigte Zugriffe auf die Daten nicht ausgeschlossen werden können. Die Verantwortung und die Sicherheit müssen also klar geregelt werden. Bei der Gestaltung der Digitalisierung erwarte ich, dass Ärzte und Patientenvertreter einbezogen werden. Die Digitalisierung im Gesundheitswesen geht nicht einfach ‚hoppladihopp‘.
+Für Geld, geben viele Versicherte ihre Daten heute schon freiwillig weiter. Sie lassen sich etwa von Fitness- oder Ernährungs-Trackern überwachen, um Bonusprogramme der Krankenkassen nutzen zu können. Was halten Sie davon?Es macht mir Angst, dass ein Druck entsteht, sich beobachten lassen zu müssen. Wenn der Effekt eintritt, dass ich mich für Vergünstigungen tracken lasse, haben chronisch Kranke im Vergleich zu Gesunden einen riesigen Nachteil – die Versicherungen sind aber Solidargemeinschaften.
+Nach der Einführung der elektronischen Gesundheitskarte, auf der meist nur administrative Daten gespeichert sind, soll 2021 die elektronische Patientenakte kommen. Welche Bedenken haben Sie da?Zunächst einmal geht es hier um viel sensiblere Daten, wenn Ärzte und Patienten beispielsweise Befunde, Behandlungsberichte und Therapiepläne austauschen können. Als große Gefahr sehe ich es daher an, alle Akten an einem oder wenigen Orten zu zentralisieren. Damit werden die sehr umfangreichen Sammlungen noch attraktiver etwa für Hackingangriffe. Außerdem sind noch viele Fragen offen, etwa bei der Zugriffsberechtigung: Möchte ich, dass mein Arzt die Therapiepläne meines Psychiaters sieht? Oder, soll mein Arzt sehen, dass ich vor ihm schon zwei andere Ärzte aufgesucht habe, und er die Drittmeinung ist? Mich überzeugt da bisher noch kein Modell, das den Zugriff sinnvoll regelt und gleichzeitig einfach benutzbar ist. Daneben müssen bei der Patientenakte eine geeignete Verschlüsselung und Zugriffsmöglichkeiten diskutiert werden. Beispielsweise muss eine Freischaltung nicht über eine PIN erfolgen, sondern man könnte an Token-Lösungen, etwa in Form eines Armbandes, denken.
+
+Interview: Fridolin Skala
+
+
+
+",de,"
+
+
+
+
+
+
+
+
+
+
+
+Digitization in health care
+Health apps: ""Unauthorized access is not excluded""
+03 Nov 2019, 10:56 by Fridolin scale
+
+Data protection expert Hansen on health apps, the electronic patient file and the vulnerabilities in the Digital Supply Act by Jens Spahn.
+
+According to Jens Spahn, the research should be able to access health data from the statutory health insurance more easily. How do you rate this aspect of the Digital Supply Act? If research is meant according to the German understanding, ie by public research institutions, it can be very useful to offer the institutes a simplified possibility of data analysis. After all, it is positive to want to make progress with digitization in medicine. However, there must be legal and technical and organizational guarantees that this sensitive information is handled well and the protection and security of the data is maintained. I do not see that enough.
+The law intends to anonymize the patient data. Do you mean that when you talk about ""good dealings with data?"" True anonymisation, which means that inference is no longer possible, is not impossible, but very rare. There are other ways to prevent association, such as the aggregation of data. There are two possibilities for a true anonymization: On the one hand, the generalization, for example, if the datasets no longer leave the date of birth but form age groups of ten years. On the other hand, the randomization, ie a corruption of the data in such a way that the direct connection between data and the person concerned is removed, for example by exchanging data fields of different data sets. However, these anonymization methods lead to losses in the validity of the data, because not everything can be recycled. Another way would be the pseudonymization, where different data sets can be merged into the same pseudonym - but this is by no means anonymous, but personal.
+
+
+Marit Hansen has been the Land Commissioner for Data Protection in Schleswig-Holstein since 2015. The computer scientist has been working on data protection and information security for more than 20 years © Markus Hansen
+
+Where do you see further weaknesses in the Digital Supply Act? One major criticism is the health apps. In particular, I see the aspect of the technical design as critical because the criteria are not yet optimally defined here. Unfortunately, the privacy of apps is not a matter of course. Today's apps often use tracking and advertising, which can also drain sensitive user data to companies. Unfortunately, this has not changed with the introduction of DSGVo. The privacy policies of the marketplaces are also a problem.
+In what way? Google's Playstore, for example, gets information when we download or update apps. Even with a diabetes app, this can be critical, but certainly. If I download an app for depression diseases, because then Google knows that. Added to this is the topic of smartphone security, because often unauthorized access to the data can not be excluded. Responsibility and security must therefore be clearly regulated. In designing digitization, I expect doctors and patient advocates to be involved. The digitization in health care is not easy, 'hoppladihopp'.
+For money, many insured people pass their data voluntarily today. They can be monitored by fitness or nutrition trackers, for example, to benefit from health insurance bonus programs. What do you think about it? It scares me that there is pressure to be watched. If the effect occurs that I can be tracked for perks, have chronically ill in comparison to healthy a huge disadvantage - the insurance but are solidarity communities.
+After the introduction of the electronic health card, on which usually only administrative data are stored, the electronic patient file should come in 2021. What do you have in mind? First of all, it's about much more sensitive data, for example, when doctors and patients can share findings, treatment reports and treatment plans. As a great danger, I therefore see it, centralize all the files in one or a few places. This makes the very extensive collections even more attractive, for example for hacking attacks. In addition, there are still many questions left, such as access rights: Do I want my doctor to see my psychiatrist's treatment plans? Or, should my doctor see that I have visited two other doctors before him, and he is the third opinion? So far, I am not convinced by any model that makes sense of access and is easy to use at the same time. In addition, a suitable encryption and access options must be discussed in the patient file. For example, an activation does not have to be via a PIN, but one could think of token solutions, for example in the form of a bracelet.
+
+Interview: Fridolin Skala
+
+
+
+"

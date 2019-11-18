@@ -1,0 +1,202 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Технологическая революция Украины
+О влиянии на страну открытых данных.
+
+03 Nov 2019, 22:45
+
+Сложно сейчас представить Украину без системы Prozorro. Или без открытых реестров юрлиц, судебных решений, данных о городском транспорте. Но всем им нет еще и пяти лет. Liga.net и TECHIIA продолжают рассказывать о 8 технологических революциях в Украине за время независимости. Сегодняшние герои — открытые государственные данные и API. Как они изменили быт, бизнес и политику?
+С приходом нынешнего президента на Банковую слово «диджитализация» зазвучало из каждого утюга. За считанные годы власти собрались оцифровать Украину с головой. Казалось бы, смартфоны уже есть у больше, чем половины украинцев. Но есть несколько «но».
+Во-первых, надо покрыть страну интернетом — стационарным и мобильным. Во-вторых, политики, эксперты и сочувствующие сходятся во мнении: загнать государство в смартфон не выйдет, пока не будет наведен порядок в базовых реестрах, а населению не будет открыт максимум данных. Сам министр цифровой трансформации держит вопрос на контроле.
+Так это сейчас, в 2019-м. А еще в нулевых о необходимости открывать госданные говорили единицы. Не то, что даже о каких-то электронных порядках. Зачем, когда в стране и интернета толком нет?
+
+Немного истории
+
+«В целом сфера открытых данных в мире — довольна молодая. Это современная концепция, которая предусматривает, что все данные, которые накапливает государство (кроме тех, что с ограниченным доступом) должны быть доступны для свободного использования гражданами и бизнесом».
+Алексей Выскуб, первый замминистра цифровой трансформации:
+- Лишь в 2011 году, когда у людей появились первые айфоны и робкая надежда на 3G, Верховная Рада сделала первый формальный шаг — приняла закон «О доступе к публичной информации». Благодаря нему, украинцы получили возможность бесплатно получить публичную информацию от госорганов.
+Норма появилась, но вот сама информация не спешила. Процесс заглох аж до Революции Достоинства. Потом курс на Запад и необходимость солидаризироваться с Европой толкнули власть предержащих вперед.
+Осенью 2015 года Кабинет министров принял судьбоносное постановление №835. Согласно ему государственные структуры обязывались опубликовать определенные наборы данных в формате открытых. Три сотни реестров и баз данных правительство распорядилось открыть для украинцев. Форматы описываются там же.
+Параллельно в Украине запустили площадку для госзакупок Prozorro. В декабре она была передана на баланс государства. Практически сразу ее идейный вдохновитель Макс Нефедов начал делиться невероятными цифрами экономии на тендерах.
+«Открытие данных и API для любой компании — это хорошая имиджевая история. Так она показывает свою прозрачность, дает ресурс для появления новых проектов. Аналогичная ситуация с госреестрами. Государство, открывая данные, которые могут видеть и использовать население и потенциальные стартапы, получает большой бонус в общей картине мира».
+Евгения Клепа, исполнительный директор 1991 Open Data Incubator:
+- В 2017 году правительство увеличило список необходимых к открытию наборов данных вдвое. А в этом апреле список снова заметно разросся — с 616 до 887. Обновленное постановление теперь определяет процедуру, благодаря которой можно следить за ходом опубликования наборов.
+Открытые данные — это, собственно, что? Сканы постановлений суда? Текстовые документы?
+Вообще — это любая информация, которая имеет общественную значимость и пользу. Но просто выложить в общий доступ мутные картинки с заседаний горсовета не выйдет. Данные должны быть в машиночитаемом формате. То есть информационные системы должны иметь возможность спокойно их вытаскивать и использовать без участия человека.
+
+Куда государство выливает наборы данных?
+
+С августа 2018 года действует обновленный национальный портал открытых данных — data.gov.ua. Там любой желающий может скачать нужный ему набор — например, ежедневно обновляются реестры юрлиц и судебных решений. Сейчас на портале почти 19 000 разнообразных пакетов - от запасов угля в Украине до, например, списка храмов Дрогобыча.
+Просто бери их и «пили» свой стартап!
+Надо сказать, за считанные годы Украина отметилась сразу во многих рейтингах открытости. В 2016 году — на 31 месте в Global Open Data Index, обойдя Индию, Италию и Словакию. В 2017-м набрала 47 баллов и заняла 17 место из 30 в Open Data Barometer — проекте, который оценивает качество реализации госполитики в сфере открытых данных. Здесь же Украину отметили на втором месте среди стран, добившихся наибольшего прогресса за последние четыре года. Правда, свежих исследований уже давно не было.
+а) хочешь использовать их для контроля населения, общественного мнения и государственных финансов в своих целях. Это актуально для авторитарных государств и, к счастью, это не об Украине.
+б) хочешь использовать их в бизнес-деятельности - и заработать за счёт большей осведомлённости, упрощения своих бизнес-процессов и т.п. Это развивается пропорционально росту малого и среднего бизнеса, а также улучшению благосостояния граждан. Хотя и здесь Украина пока не на самой прочной позиции.
+По мнению Олега Крота, сооснователя холдинга TECHIIA, данные нужны тогда, когда ты:
+В этом месте журналисты и расследователи в один голос скажут «работать стало легче!». Для СМИ и антикоррупционных инициатив реестры юрлиц, имущественных прав, деклараций, ГФС — как воздух. Собрать досье на человека и/или компанию стало в разы проще и быстрее. А сколько интересных тем и инсайтов таит в себе судебный реестр... Или выставленные на всеобщее обозрение миллионные тендеры Prozorro.
+Но это журналисты. А что же с открытых данных всем остальным?
+
+К чему же привело и приводит открытие данных в Украине?
+
+«Это открывает сумасшедшие перспективы для обеспечения прозрачности государства, развития удобных сервисов для граждан, развития бизнеса и, в целом, формирования новой мощной индустрии данных — это новые рабочие места и новые профессии».
+Алексей Выскуб, первый замминистра цифровой трансформации:
+- То есть если глобально — плюс в экономику. Например, по словам замминистра цифровой трансформации, в ЕС рынок открытых данных оценивается почти в 60 млрд евро. У нас целятся хотя бы в четверть этой суммы.
+Тут стоит напомнить исследование Киевской школы экономики и британского Open Data Institute, которое показало, что в 2017 году открытые данные принесли экономике Украины свыше $700 млн, или 0,67% ВВП. Исследователи напророчили, что если обороты не сбавлять, то к 2025 году можно увеличить эту долю почти до 1%.
+А если более приземленно, то польза все та же — можно быстро заметить рейдерство в документах, о котором раньше можно было месяцами ничего не знать. Генпланы, данные об очередях детей в детсады, городских бюджетах, ремонтных работах, строительных паспортах... Да и антикоррупционные расследования активистов прямо или косвенно, но позитивно отражаются на благосостоянии украинцев.
+Конечно, открытые данные о государственных закупках — далеко не панацея от всех жуликов, как рассказывает в эфире Слухов CEO ProZorro Василий Задворный. Он вспоминает случай в Тернополе. Чтобы не идти на открытые торги, тамошние дельцы ""нарезали"" дорогу по 20 метров и заключили 50 прямых контрактов на ее ремонт, уложившись по каждому из них в допороговый уровень.
+Но ProZorro, тем не менее, обеспечивает государству просто огромную экономию в закупках. По оценкам Задворного — около $1 млрд ежегодно. «Это около 25-30 млрд грн в год. Притом что сама площадка не получает ни копейки из бюджета», — говорит Василий.
+Самая близкая аналогия того, как функционирует ProZorro, — это Бессарабский рынок. Поставщики, чтобы принимать участие в торгах, платят сбор. Доходная часть государственной площадки — 60-70 млн грн в год. Чистая прибыль минимальная. И большая ее часть тоже уходит в госбюджет.
+Наконец, мало кто задумывается, но даже отследить троллейбус или трамвай на карте здесь-и-сейчас — тоже заслуга открытых данных. Органы местного самоуправления публикуют маршруты и динамически обновляют информацию о геолокации сотен транспортных средств в реальном времени. Так в транспортных приложениях начали ездить точечки и стрелочки. А мы перестали мерзнуть на остановках в неведении. Или, по крайней мере, теперь знаем, сколько осталось мерзнуть.
+Это один из главных эффектов открытых данных. Здесь уместна метафора. Представьте себе поле с подсолнечником. Использовать его можно очень по-разному. Один просто соберет и сделает декоративные цветы. Другой — выдавит масло. Третий — смолотит и рассортирует семечки.
+Так и с информацией. Украинцы быстро начали превращать сырые государственные терабайты в полезные сервисы: сайты, мобильные приложения или даже обычные боты.
+
+Да, приложения
+
+«Только у нас, в 1991 Open Data Incubator, за три года выпустилось больше 160 стартапов в разных инкубационных программах. Эти проекты и используют государственные открытые данные, и генерируют часть самостоятельно».
+Евгения Клепа, исполнительный директор 1991 Open Data Incubator:
+- Список сервисов, которые, так или иначе, работают с официальными реестрами, наборами, API, уже довольно большой и продолжает расти. Направления могут быть самые разнообразные.
+Для бизнеса и расследователей работают YouControl, Опендатабот, сервисы ЛІГА: ЗАКОН, ClarityProject, Dozorro, 007. Причем когда-то они начинали с простых досье на компании и анализа закупок. Но чем больше открывается новых наборов, тем более сложные мониторинг и аналитика становятся доступны.
+Судебную информацию приводят в порядок Суд на ладони, Прецедент и другие. Проект NORA оценивает досье игроков строительного рынка, чтобы минимизировать риски. Портал CoST Ukraine мониторит ремонт украинских дорог на предмет чьих-то интересов. А площадка Donor.UA благодаря открытым данным Минздрава проверяет запасы донорской крови.
+Около года назад мы вместе с проектом Tapas рассказывали о нескольких кейсах, которые реализовались благодаря открытию и упорядочиванию данных от гос- и горструктур.
+По мнению Сергея Мильмана, основателя и CEO сервиса YouControl, открытые данные — это уже успешный кейс для нашей страны. Они точно повлияли на культуру ведения бизнеса в Украине, а граждан сделали более осведомленными. Доступность данных побуждает предпринимателей к большей ответственности за свои поступки.
+И не только предпринимателей. Компаниям, работающим с открытыми данными, уже есть, что вспомнить по этому поводу. Например, в Опендатабот выделяют три значимых «открытия»:
+1) Реестр должников по алиментам. Это позволило людям мониторить себя и знать, что их не выпустят за границу. И, отмечают в компании, за последний год, количество неплательщиков уменьшилось.
+2) Реестр недвижимости. Это реальный способ сократить кол-во преступлений с недвижимостью. С одной стороны, это позволяет следить за статусом своей недвижимости и быстро реагировать, если что-то пошло не так, с другой — избегать мошенников при покупке и аренде жилья.
+3) «Отдельная победа — это запрет на удаление компаний. Именно благодаря открытым данным нам удалось понять, что некоторые компании исчезают из реестра. Многие из них были связаны с рейдерством», — вспоминает Дарина Даниленко, директор по коммуникациям Опендатабот. Также в этом году по инициативе сервиса президент Зеленский подписал закон о противодействии рейдерству, в который вошел запрет на удаление компаний.
+Понемногу меняется ситуация и с другими службами.
+«В Украине 1 млн украинских компаний с налоговыми долгами, а их общая сумма превышает 81 млрд грн! Долги перед государством имеют одно неприятное свойство — накапливаться в геометрической прогрессии, особенно если о них ничего не известно самому должнику», — рассказывает Ольга Таранова, директор направления бухгалтерских продуктов и сервисов компании ЛІГА:ЗАКОН.
+По ее словам, чтобы получить информацию о налоговом долге компании или предпринимателя, нужно было быть очень подкованным в этих вопросах. Коммерческие сервисы тоже не могли вытянуть эту информацию и объяснить ее понятным языком пользователям — ГФС держала ее закрытой. Но недавно налоговая начала приоткрывать доступы к своим API. Это уже удалось интегрировать в сервисы и бот-бухгалтер от ЛІГА:ЗАКОН.
+Однако, как говорит Ольга Таранова, пока что информации, которую могут получать компании из кабинета ГФС, недостаточно для понимания полной картины всех расчетов с государством.
+Один из наиболее неотложных наборов на сегодня — финансовая отчетность, считает Сергей Мильман из YouControl. Она нужна для возможности оценить реальную финансовую стойкость партнеров, избегать мошенников, банкротов. Также, по его словам, нужно открыть уставы компаний, чтобы понимать полномочия руководителя.
+Отдельная история — интероперабельность. Это давний застрявший вопрос связности госреестров.
+
+Какие еще завесы государство приоткроет? И какие хотелось бы бизнесам?
+
+«Нужно внедрение сквозных идентификаторов, которые бы сопровождали компанию или ФОП во всех реестрах. Это дало бы возможность максимально точно понять причастность компании, например, к судебным делам и избегать ситуаций, когда какие-то важные данные скрываются», — утверждает Мильман.
+По мнению Ольги Тарановой из ЛІГА:ЗАКОН, государству в направлении открытых данных еще предстоит поработать с таможней — до сих пор это отдельный и очень закрытый мир. Компанию также интересует сегмент подачи отчетности госкомпаниями-бюджетниками. Как говорит Ольга, у них есть всего несколько программ для этих целей, а в открытом доступе нет понимания требований и условий для выхода на этот рынок.
+«Открытие приоритетных данных, как и другие антикоррупционные реформы, на 100% зависят от политической воли. — На момент назначения нового правительства в августе этого года уровень выполнения постановления 835 (которое, напомним, регламентирует, какие наборы должны быть открыты - Ред.) был на уровне 43%. Это очень негативный результат», - Алексей Выскуб, замминистра цифровой трансформации.
+Чиновник говорит, что сейчас в фокусе правительства — открытие самых полезных данных для граждан и бизнеса и антикоррупционных данных. Среди них:
+- полное открытие бизнес-реестра (Минюст)
+- кадастровая карта (Геокадастр)
+- карта административно-территориального устройства Украины (Минрегион)
+- данные охраны здоровья (Минздрав)
+- преступность (МВД)
+- качество воздуха и прогноз погоды (Гидромет)
+- топографические карты
+- расписание общественного ЖД-транспорта (Мининфраструктуры)
+Из совсем свежего — Национальная служба здоровья открыла данные о реформе охраны здоровья. А на днях в парламенте прошел первое чтение важный законопроект по смежной теме - электронным публичным реестрам. Как резюмировал замглавы Комитета ВР по цифровой трансформации Егор Чернев, не нужно будет собирать справки по разным органам власти, государство само должно этим озаботиться. Также украинцев будут обязаны информировать, если кто-то запросит информацию о них. В целом же, работу госреестров должны оптимизировать и убрать лишние.
+«Сами по себе данные — новая нефть. И перспективы развития этого рынка — колоссальны. Но, как и в случае с нефтью, если тебе нечего заправлять, то как бы ценна и полезна ни была нефть — тебе до этого нет дела», - Олег Крот, сооснователь холдинга TECHIIA.
+Так что «третья технологическая революция» еще далека от своего завершения. Да и, пожалуй, ее невозможно завершить. Но когда процент положенных к открытию госданных перевалит хотя бы за 70, для Украины это уже будет победа.
+
+
+",ru,"
+
+
+
+
+
+
+
+
+
+
+
+The technological revolution of Ukraine
+On the impact of open data on the country.
+
+03 Nov 2019, 22:45
+
+It is difficult to imagine Ukraine without the Prozorro system. Or without open registries of legal entities, court decisions, data on public transport. But all of them are not even five years old. Liga.net and TECHIIA continue to talk about 8 technological revolutions in Ukraine during independence. Today's heroes are open government data and APIs. How did they change life, business and politics?
+With the advent of the current president to the Banking, the word “digitalization” came from every iron. In a matter of years, the authorities gathered to digitize Ukraine with their heads. It would seem that more than half of Ukrainians already have smartphones. But there are a few buts.
+Firstly, it is necessary to cover the country with the Internet - stationary and mobile. Secondly, politicians, experts and sympathizers agree: driving the state into a smartphone will not work until the basic registers are put in order and the maximum amount of data is revealed to the population. The Minister of Digital Transformation itself keeps the issue under control.
+So it is now, in 2019. And in the noughties, only a few spoke about the need to open state data. Not that even about some electronic orders. Why, when in the country and the Internet really is not?
+
+A bit of history
+
+“In general, the field of open data in the world is quite young. This is a modern concept, which provides that all data that the state collects (except for those with limited access) should be available for free use by citizens and businesses. ”
+Alexey Vyskub, First Deputy Minister of Digital Transformation:
+- Only in 2011, when people got their first iPhones and timid hope for 3G, did the Verkhovna Rada take the first formal step - it adopted the law “On Access to Public Information”. Thanks to him, Ukrainians got the opportunity to get public information from government agencies for free.
+Norma appeared, but the information itself was in no hurry. The process stalled right up to the Revolution of Dignity. Then the course to the West and the need to solidify with Europe pushed those in power forward.
+In the fall of 2015, the Cabinet of Ministers adopted fateful resolution No. 835. According to him, government agencies pledged to publish certain data sets in an open format. Three hundred registers and databases, the government ordered to open for Ukrainians. Formats are described there.
+At the same time in Ukraine launched a platform for public procurement Prozorro. In December, it was transferred to the balance of the state. Almost immediately, her ideological mastermind Max Nefedov began to share incredible savings on tenders.
+“The discovery of data and APIs for any company is a good image story. So it shows its transparency, provides a resource for the emergence of new projects. A similar situation with state registers. The state, revealing data that can be seen and used by the population and potential startups, receives a big bonus in the overall picture of the world. ”
+Evgenia Klepa, executive director of the 1991 Open Data Incubator:
+- In 2017, the government doubled the list of data sets required for opening. And this April, the list again noticeably expanded - from 616 to 887. The updated resolution now defines the procedure by which you can follow the progress of publication of sets.
+Open data is, in fact, what? Scans of court orders? Text documents?
+In general, this is any information that has public significance and benefit. But just sharing the muddy pictures from City Council meetings will not work. Data must be in machine readable format. That is, information systems should be able to calmly pull them out and use them without human intervention.
+
+Where does the state pour data sets?
+
+Since August 2018, an updated national open data portal has been operating - data.gov.ua. Anyone can download the set he needs - for example, the registries of legal entities and court decisions are updated daily. Now the portal has almost 19,000 various packages - from coal reserves in Ukraine to, for example, the list of Drogobych temples.
+Just take them and ""drink"" your startup!
+I must say that in a few years Ukraine was immediately noted in many ratings of openness. In 2016 - at 31 place in the Global Open Data Index, bypassing India, Italy and Slovakia. In 2017, she scored 47 points and took 17th place out of 30 in the Open Data Barometer, a project that evaluates the quality of implementation of state policy in the field of open data. Here, Ukraine was noted in second place among the countries that have achieved the greatest progress over the past four years. True, fresh research has long been gone.
+a) want to use them to control the population, public opinion and public finances for your own purposes. This is true for authoritarian states and, fortunately, it is not about Ukraine.
+b) if you want to use them in business activities - and make money through greater awareness, simplification of your business processes, etc. This is developing in proportion to the growth of small and medium-sized businesses, as well as improving the welfare of citizens. Although here, Ukraine is still not in the strongest position.
+According to Oleg Krot, co-founder of TECHIIA holding, the data is needed when you:
+At this point, journalists and investigators unanimously say, “It has become easier to work!” For the media and anti-corruption initiatives, registers of legal entities, property rights, declarations, SFS are like air. Collecting dossiers per person and / or company has become many times easier and faster. And how many interesting topics and insights are fraught with the judicial register ... Or the millions of tenders of Prozorro put up for public display.
+But these are journalists. And what about open data to everyone else?
+
+What did the discovery of data in Ukraine lead to?
+
+“This opens up crazy prospects for ensuring state transparency, developing convenient services for citizens, developing a business and, in general, creating a powerful new data industry - these are new jobs and new professions.”
+Alexey Vyskub, First Deputy Minister of Digital Transformation:
+- That is, if globally - a plus in the economy. For example, according to the deputy minister of digital transformation, in the EU the open data market is estimated at almost 60 billion euros. We aim at least a quarter of this amount.
+Here it is worth recalling a study by the Kiev School of Economics and the British Open Data Institute, which showed that in 2017, open data brought the Ukrainian economy over $ 700 million, or 0.67% of GDP. Researchers have predicted that if you do not slow down, then by 2025 you can increase this share to almost 1%.
+And if it is more mundane, then the benefits are the same - you can quickly notice the raiding in documents, which you could not know for months before. General plans, data on the queues of children in kindergartens, city budgets, repairs, construction passports ... Yes, and anti-corruption investigations of activists directly or indirectly, but positively affect the welfare of Ukrainians.
+Of course, open data on public procurement is far from a panacea for all crooks, as Vasily Zadvorny, CEO of ProZorro, says on the air of Rumors. He recalls a case in Ternopol. In order not to go to open bidding, the local businessmen “cut” the road 20 meters each and entered into 50 direct contracts for its repair, keeping within each of them at a sub-threshold level.
+But ProZorro, nevertheless, provides the state with simply huge savings in purchases. According to estimates of Zadvorny - about $ 1 billion annually. “This is about 25-30 billion UAH per year. Moreover, the site itself does not get a penny from the budget, ”says Vasily.
+The closest analogy to how ProZorro functions is the Bessarabian market. Suppliers pay a fee to bid. The revenue portion of the state platform is 60-70 million UAH per year. Net profit is minimal. And most of it also goes to the state budget.
+Finally, few people think, but even to track a trolley bus or tram on a map here-and-now is also a merit of open data. Local governments publish routes and dynamically update real-time geolocation information for hundreds of vehicles. So in transport applications dots and arrows began to ride. And we stopped freezing at stops in ignorance. Or, at least, now we know how much to freeze.
+This is one of the main effects of open data. A metaphor is appropriate here. Imagine a field with a sunflower. It can be used in very different ways. One will simply collect and make decorative flowers. Another - squeeze the oil. The third - grinds and sorts seeds.
+So with the information. Ukrainians quickly began to turn raw state terabytes into useful services: sites, mobile applications, or even ordinary bots.
+
+Yes applications
+
+“In our country alone, in 1991, Open Data Incubator, over three years more than 160 startups in various incubation programs were released. These projects use state open data and generate a part on their own. ”
+Evgenia Klepa, executive director of the 1991 Open Data Incubator:
+- The list of services that, one way or another, work with official registries, collections, APIs is already quite large and continues to grow. Directions can be very diverse.
+For business and investigators YouControl, Openendabot, LIGA services: ZAKON, ClarityProject, Dozorro, 007. But the more new sets open, the more sophisticated monitoring and analytics become available.
+Judicial information is put in order by the Court in the palm of the hand, Precedent and others. The NORA project evaluates the dossiers of construction market players to minimize risks. The CoST Ukraine portal monitors the repair of Ukrainian roads for someone else's interests. And the Donor.UA site, thanks to open data from the Ministry of Health, checks the supply of donated blood.
+About a year ago, together with the Tapas project, we talked about several cases that were realized thanks to the discovery and ordering of data from state and city structures.
+According to Sergey Milman, founder and CEO of YouControl, opendata is already a successful case for our country. They definitely influenced the culture of doing business in Ukraine, and they made citizens more informed. The availability of data encourages entrepreneurs to be more responsible for their actions.
+And not just entrepreneurs. Open data companies already have something to remember about this. For example, in Openendabot there are three significant “discoveries”:
+1) Register of debtors for alimony. This allowed people to monitor themselves and to know that they would not be allowed to go abroad. And, according to the company, over the past year, the number of defaulters has decreased.
+2) Real estate register. This is a real way to reduce real estate crime. On the one hand, this allows you to monitor the status of your property and react quickly if something goes wrong, on the other hand, to avoid scammers when buying and renting a home.
+3) “A separate victory is a ban on the removal of companies. Thanks to the open data, we were able to understand that some companies are disappearing from the registry. Many of them were related to raiding, ”recalls Darina Danilenko, communications director of Openendabot. Also this year, on the initiative of the service, President Zelensky signed a law to counter raiding, which included a ban on the removal of companies.
+The situation with other services is gradually changing.
+“In Ukraine, 1 million Ukrainian companies with tax debts, and their total amount exceeds 81 billion UAH! Debts to the state have one unpleasant property - to accumulate exponentially, especially if the debtor himself knows nothing about them, ”says Olga Taranova, director of accounting products and services at LIGA: ZAKON.
+According to her, to get information about the tax debt of a company or an entrepreneur, you had to be very savvy in these matters. Commercial services, too, could not draw out this information and explain it to users in a clear language - the SFS kept it closed. But recently, the tax authorities have begun to open access to their APIs. It was already possible to integrate LIGA: LAW into services and a bot accountant.
+However, as Olga Taranova says, so far the information that companies can receive from the SFS office is not enough to understand the full picture of all settlements with the state.
+One of the most pressing sets for today is financial reporting, says Sergey Milman from YouControl. It is needed to be able to assess the real financial stability of partners, to avoid fraudsters, bankrupt. Also, according to him, you need to open the charters of companies in order to understand the powers of the head.
+Another story is interoperability. This is a long-standing stuck issue in the connectivity of state registries.
+
+What other veils does the state open? And what would businesses like?
+
+“We need the introduction of end-to-end identifiers that would accompany the company or FOP in all registries. This would make it possible to accurately understand the company's involvement, for example, in court cases and to avoid situations where some important data is hidden, ”says Milman.
+According to Olga Taranova from LIGA: LAW, the state has yet to work with customs in the direction of open data - it is still a separate and very closed world. The company is also interested in the reporting segment of state-owned state-owned companies. According to Olga, they have only a few programs for these purposes, and in the public domain there is no understanding of the requirements and conditions for entering this market.
+“The discovery of priority data, like other anti-corruption reforms, is 100% dependent on political will. - At the time of the appointment of the new government in August this year, the level of implementation of resolution 835 (which, we recall, regulates which sets should be open - Ed.) Was at the level of 43%. This is a very negative result, ”- Alexey Vyskub, Deputy Minister of Digital Transformation.
+The official says that now the focus of the government is the discovery of the most useful data for citizens and businesses and anti-corruption data. Among them:
+- full opening of the business registry (Ministry of Justice)
+- cadastral map (Geocadastre)
+- map of the administrative-territorial structure of Ukraine (Ministry of Regional Development)
+- health data (Ministry of Health)
+- crime (MIA)
+- air quality and weather forecast (Hydromet)
+- topographic maps
+- schedule of public railway transport (Ministry of Infrastructure)
+From the freshest - the National Health Service has opened data on health care reform. And the other day, an important bill on a related topic, electronic public registries, was first read in parliament. As Yegor Chernev, deputy head of the Verkhovna Rada Committee on Digital Transformation, summarized, it would not be necessary to collect information on various authorities, the state itself should take care of this. Also, Ukrainians will be required to inform if someone asks for information about them. In general, the work of state registries should be optimized and removed unnecessary.
+“The data itself is new oil. And the prospects for the development of this market are enormous. But, as in the case of oil, if you have nothing to refuel, no matter how valuable and useful the oil is, you don't care, ”Oleg Krot, co-founder of TECHIIA Holding.
+So the ""third technological revolution"" is still far from complete. And, perhaps, it is impossible to complete. But when the percentage of state data set to be opened exceeds at least 70, for Ukraine this will already be a victory.
+
+
+"

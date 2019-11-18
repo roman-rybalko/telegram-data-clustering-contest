@@ -1,0 +1,90 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+CPF e endereço: falha em site da Vivo expõe dados de 24 milhões de clientes
+Furo de segurança que expunha milhões de brasileiros estava presente na página Meu Vivo
+05 Nov 2019, 16:15 by Helton Simões Gomes
+
+São Paulo | UOL
+
+Uma falha em um site da empresa de telecomunicação Vivo expôs as informações pessoais de pelo menos 24 milhões de clientes. O problema foi descoberto pelo grupo de pesquisadores de segurança Whitehat Brasil, que busca identificar brechas em sites que dispõem de grandes bases de dados. 
+Reportado inicialmente pelo Olhar Digital e confirmado por Tilt, o furo de segurança que expunha milhões de brasileiros estava presente na página ""Meu Vivo"".
+É por meio dela que clientes acessam seu perfil e podem ver detalhes dos serviços prestados pela empresa —internet, telefonia fixa, celular ou TV paga. O site saiu do ar no início da tarde desta terça-feira (5), provavelmente para corrigir o problema.
+
+
+Sede da Vivo em São Paulo; área Meu Vivo, do site da empresa, tinha brecha de segurança -Reuters
+
+Até então, era possível obter as seguintes informações de clientes da Vivo: endereço, telefone e celular, data de nascimento, CPF e nome da mãe. A Vivo informa que está apurando o caso e que ""revisa constantemente as políticas e os procedimentos de segurança"".
+Tilt conversou com um dos pesquisadores da Whitehat Brasil, que preferiu não se identificar. Ele classificou o erro encontrado na página da Vivo como ""tosco"" e ""bem besta"".
+Disse ainda que descobriu o erro quase que sem querer. Como sabe que qualquer plataforma está sujeita a falhas que podem deixar dados de clientes expostos, ele testa a segurança de serviços dos quais é cliente. Foi o caso da Vivo. Como o sistema já está fora do ar, é possível descrever como a brecha foi encontrada.
+O pesquisador usa um programa que registra os dados enviados a um servidor e aqueles que são mandados de volta. Após inserir login e senha no site da Vivo, ele recebeu uma URL, que correspondia ao endereço do seu perfil na Vivo, e um ""token"", uma sequência de números que serve como chave segura e deveria ser única.
+O problema foi que esse token não era único. Bastava trocar o último número da URL e usar o mesmo token para ter acesso à conta de outro cliente. Ele conta que isso funcionou quase que ininterruptamente entre os números 1 mil e 25 milhões.
+""É um erro bem besta, bem fácil de achar e provavelmente alguém já estava usando há muito tempo e com maldade. É muito simples. Você só precisa logar no site e já consegue ter acesso a qualquer outra conta. Não precisa hackear, fazer nada. É muito tosco.""
+
+
+
+Gallery: Dicas de segurança e privacidade em redes sociais
+
+
+Para mostrar que a falha estava ativa, o programa criou um site que mostrava os dados capturados. Tilt viu as informações de um dos perfis, provenientes de uma cliente de Minas Gerais.
+Essa página parou de funcionar porque o serviço da Vivo que o alimentava entrou em manutenção. O grupo que descobriu a falha é o mesmo que já havia revelado em outubro uma brecha no site do Detran do Rio Grande do Norte, que deixou expostas as informações pessoais de 70 milhões de pessoas, incluindo as de personalidades como o apresentador Luciano Huck e o youtuber Whindersson Nunes, e de pessoas influentes, como o presidente Jair Bolsonaro, e os empresários Eike Batista e Edir Macedo.
+O Brasil já possui uma lei que obriga empresas a protegerem os dados pessoais de seus consumidores: a LGPD (Lei Geral de Proteção de Dados Pessoais). Ela só passa a valor em agosto de 2020.
+A partir desta data, companhias que não assegurarem a integridade das informações que armazenam poderão ser punidas por vazamentos como os da Vivo. As sanções variam de processos administrativos a multas que podem chegar a 2% do faturamento da infratora, limitada a R$ 50 milhões.
+Ainda que a LGPD seja encarada por especialistas como um avanço, já há um projeto de lei pedindo que seus efeitos sejam prorrogados porque algumas companhias não conseguiriam se adaptar em tão pouco tempo. A LGPD foi sancionada pelo ex-presidente Michel Temer em dezembro de 2018.
+
+
+",pt,"
+
+
+
+
+
+
+
+
+
+
+
+CPF and address: Vivo site failure exposes data from 24 million customers
+Security hole that exposed millions of Brazilians was present on the My Vivo page
+05 Nov 2019, 16:15 by Helton Simões Gomes
+
+Sao Paulo | UOL
+
+A failure on a website of the telecommunication company Vivo exposed the personal information of at least 24 million customers. The problem was discovered by security group Whitehat Brazil, which seeks to identify gaps in websites that have large databases.
+Initially reported by Olhar Digital and confirmed by Tilt, the security hole that exposed millions of Brazilians was present on the ""My Vivo"" page.
+It is through it that customers access your profile and can view details of the services provided by the company - internet, fixed line, mobile or pay TV. The site went down early Tuesday afternoon (5), probably to correct the problem.
+
+
+Vivo headquarters in São Paulo; My Vivo area of the company's website had a security breach -Reuters
+
+Until then, it was possible to obtain the following Vivo customer information: address, telephone and mobile phone, date of birth, social security number and mother's name. Vivo reports that it is investigating the case and ""constantly reviews security policies and procedures.""
+Tilt talked to one of the researchers at Whitehat Brasil, who chose not to identify himself. He classified the error found on the Vivo page as ""rough"" and ""pretty stupid"".
+He said he discovered the error almost unintentionally. Because you know that any platform is subject to flaws that can leave customer data exposed, it tests the security of its customer services. It was the case of Vivo. Since the system is already down, it is possible to describe how the breach was found.
+The researcher uses a program that records data sent to a server and sent back. After entering a login and password on the Vivo website, he was given a URL, which corresponded to his Vivo profile address, and a ""token"", a sequence of numbers that serves as a secure key and should be unique.
+The problem was that this token was not unique. Just change the last URL number and use the same token to gain access to another customer's account. He says this worked almost uninterruptedly between the numbers 1 billion and 25 million.
+""It is a very silly mistake, very easy to find and probably someone was already using it for a long time and with malice. It is very simple. You just have to login to the site and can access any other account. No need to hack, do anything . It's very crude. ""
+
+
+
+Gallery: Social Security and Privacy Tips
+
+
+To show that the fault was active, the program created a website that showed the captured data. Tilt saw information from one of the profiles, coming from a Minas Gerais client.
+This page has stopped working because the Vivo service that powered it has been serviced. The group that discovered the flaw is the same one that had already revealed a breach in the Rio Grande do Norte Detran website in October, which exposed the personal information of 70 million people, including personalities such as host Luciano Huck and youtuber Whindersson Nunes, and influential people like President Jair Bolsonaro, and entrepreneurs Eike Batista and Edir Macedo.
+Brazil already has a law that requires companies to protect their consumers' personal data: the LGPD (General Personal Data Protection Act). It only becomes valuable in August 2020.
+As of this date, companies that do not ensure the integrity of the information they store may be punished for leaks such as Vivo's. Sanctions range from administrative proceedings to fines that can reach 2% of the offender's revenue, limited to $ 50 million.
+While LGPD is viewed by experts as a breakthrough, there is already a bill calling for its effects to be extended because some companies could not adapt in such a short time. The LGPD was sanctioned by former President Michel Temer in December 2018.
+
+
+"

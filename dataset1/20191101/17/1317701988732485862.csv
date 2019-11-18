@@ -1,0 +1,112 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+KB4528332 (Manueller Download) + KB4528336 als SSU Windows 10 19013.1000 steht für die Insider im Fast Ring und Skip Ahead bereit
+01 Nov 2019, 17:24 by moinmoin
+Microsoft zieht noch ein Update für die Windows 10 Insider im Fast Ring und Skip Ahead nach. Die KB4528332 macht aus der Windows 10 (20H1) 19013.1 die Windows 10 19013.1000. Das Update selber beinhaltet keine Änderungen. Es wird nur die Updatefunktion getestet.
+Es bleibt also bei der Changelog der 19013.1 Siehe hier: Windows 10 19013 steht für die Insider im Fast Ring und Skip Ahead bereit
+
+
+
+Manueller Download der KB4528336 als SSU
+
+Wichtig wer manuell installiert, muss das SSU zuerst installieren. Danach das normale Update
+windows10.0-kb4528336-x64.cab 14.27 MiB
+windows10.0-kb4528336-x86.cab 6.43 MiB
+ARM: windows10.0-kb4528336-arm64.cab 13.25 MiB
+Wie immer herunterladen, umbenennen und dann nach dieser Anleitung installieren
+
+Cab Update über DISM installieren Windows 10
+
+
+Manueller Download der KB4528332
+
+windows10.0-kb4528332-x64.cab 85.81 MiB
+windows10.0-kb4528332-x86.cab 16.56 MiB
+ARM windows10.0-kb4528332-arm64.cab 40.97 MiB
+Wie immer herunterladen, umbenennen und dann nach dieser Anleitung installieren
+
+Cab Update über DISM installieren Windows 10
+
+
+Windows 10 Tutorials und Hilfe
+In unserem Windows 10 Wiki findet ihr sehr viele hilfreiche Tipps und Tricks. Falls ihr Fragen habt, dann stellt diese ganz einfach bei uns im Forum.
+
+Installationsmedien: Aktuelle Installationsdateien findet ihr hier immer in der rechten Sidebar. Windows 10 1909 ISO (18363), oder 1903 ISO (18362)
+Installation: Windows 10 Clean installieren, Win 10 1909 neu installieren, Win 10 1903 neu installieren
+Aktuelle Probleme mit der: Windows 10 1909 und 1903
+Reparaturen: Inplace Upgrade Reparatur, Win 10 reparieren über DISM, sfc und weiteres, Windows Update reparieren, Startmenü reparieren, Apps reparieren, Store reparieren, Netzwerk reparieren
+Anmeldung: Win 10 automatische Anmeldung
+Entfernen, Deinstallieren: Cortana deaktivieren, Apps deinstallieren
+Datei Explorer: Ordner unter Dieser PC entfernen, Netzwerk, OneDrive u.a. im Explorer entfernen
+Richtige Nutzung: Startmenü richtig nutzen, Suche richtig nutzen,
+Wichtig: In jedem Tutorial steht, für welche Version es geeignet ist.
+
+
+
+",de,"
+
+
+
+
+
+
+
+
+
+
+
+KB4528332 (Manual download) + KB4528336 as SSU Windows 10 19013.1000 is available to insiders in Fast Ring and Skip Ahead
+01 Nov 2019, 17:24 by moinmoin
+Microsoft pulls still another update for the Windows 10 Insider in the Fast Ring and Skip Ahead after. The KB4528332 makes the Windows 10 19013.1000 out of the Windows 10 (20H1) 19013.1. The update itself contains no changes. Only the update function is tested.
+So it remains with the changelog the 19013.1 See here: Windows 10 19013 is available for the insiders in the Fast Ring and Skip Ahead
+
+
+
+Manual download of the KB4528336 as SSU
+
+Importantly, anyone who installs manually must first install the SSU. Then the normal update
+windows10.0-kb4528336-x64.cab 14.27 MiB
+windows10.0-kb4528336-x86.cab 6.43 MiB
+ARM: windows10.0-kb4528336-arm64.cab 13:25 MiB
+As always download, rename and then install after this guide
+
+Install Cab Update via DISM Windows 10
+
+
+Manual download of the KB4528332
+
+windows10.0-kb4528332-x64.cab 85.81 MiB
+windows10.0-kb4528332-x86.cab 16:56 MiB
+ARM windows10.0-kb4528332-arm64.cab 40.97 MiB
+As always download, rename and then install after this guide
+
+Install Cab Update via DISM Windows 10
+
+
+Windows 10 tutorials and help
+In our Windows 10 Wiki you will find many helpful tips and tricks. If you have any questions, then put it easily in our forum.
+
+Installation media: Current installation files can always be found in the right sidebar. Windows 10 1909 ISO (18363), or 1903 ISO (18362)
+Installation: Install Windows 10 Clean, reinstall Win 10 1909, reinstall Win 10 1903
+Current problems with the: Windows 10 1909 and 1903
+Repairs: Inplace upgrade repair, Win 10 repair via DISM, sfc and more, repair windows update, repair startup menu, fix apps, repair store, repair network
+Login: Win 10 automatic login
+Remove, Uninstall: Disable Cortana, Uninstall Apps
+File Explorer: Folder under Remove This PC, Network, OneDrive, and others. remove in explorer
+Proper use: Use start menu correctly, use search correctly,
+Important: In each tutorial is for which version it is suitable.
+
+
+
+"

@@ -1,0 +1,254 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Konečně výkonné jádro RISC-V: SiFive U84 je out-of-order a lepší než ARM Cortex-A72
+03 Nov 2019 by Jan Olšan
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+VŠECHNY FOTOGRAFIE
+
+Procesorová architektura RISC-V už získala značný zájem polovodičových a IT firem – a také popularitu u běžných zájemců o technologie či open source, neboť jde o otevřenou a „free“ instrukční sadu. Nicméně zatím se s ní počítá zejména jako s náhradou jader ARM či dalších pro potřeby embedded mikrořadičů často schovaných hluboko v jiných čipech a uživateli nepřístupných. RISC-V zatím nenabízí nějaký výkonný hardware, na němž by se dalo třeba provozovat alternativní stolní PC. Ovšem zde možná přichází zlom. Firma SiFive, která vyvíjí licenční jádra RISC-V jako komerční hotovou alternativu pro zájemce o tuto otevřenou architekturu, totiž teď odhalila první jádro s vyššími výkonnostními ambicemi. Architektura U84 a její pozdější odvozenina U87 mají atakovat až ARM Cortex-A72, což už by slibovalo celkem použitelný procesor.
+SiFive je firma založená v roce 2015 přímo některými autory architektury RISC-V (ovšem nyní v ní pracuje jako architekt také třeba Andy Glew, jenž prošel Intelem, AMD, MIPS a Nvidií). Vyvinula i vlastní RISC-V čipy a stojí například i za vývojářskou deskou HiFive1. Teoreticky by tedy tato firma mohla jednoho dne hrát podobnou ústřední úlohu pro ekosystém, jako ARM Holdings. Ale v případě RISC-V vzhledem k volné licenci instrukční sady a tím pádem možnosti ušetřit asi hodně firem bude raději vyvíjet vlastní jádro nebo používat nějaká bezplatně dostupná open source jádra, byť u těch má vývoj logicky menší „drajv“.
+První komerční out-of-order jádro RISC-V: lepší než ARM Cortex-A72?
+Všechna dosavadní jádra, která SiFive nabízela, byla nižšího výkonu s jednoduchou in-order architekturou. Nyní však firma nakročila do vyšších pater uvedením nové série jader U8, která používají out-of-order zpracování instrukcí, kdy procesor instrukce může zadávat výpočetním jednotkám nejen paralelně (to lze i u superskalárních in-order jader), ale i mimo pořadí, což dokáže značně zlepšit výkon za jeden MHz. Proti předchozím in-order jádrům má narůst několikanásobně.
+
+
+SiFive U84 má být konkurenceschopné s Cortexem-A72, ale bude údajně dvakrát efektivnější z hlediska plochy na čipu a 1,5× efektivnější co do spotřeby energie
+
+Plán či projekce jsou takové, že jádra U8 budou zhruba výkonem konkurenceschopná se starším (2015) ARM Cortexem-A72 vyrobeným na 16nm procesu TSMC. Ale má na to potřebovat jen polovinu plochy na čipu a má údajně mít až o 50 % lepší energetickou efektivitu. K tomu je třeba říct, že ARM už má lepší jádra (aktuální Cortex-A77 by měl být o hodně dál), není jasné, zda se porovnává stejný výrobní proces. V čem se porovnává výkon, to víme, mělo by jít o SPECint (ale není uvedeno, zda 2006, nebo 2017).
+Architektura jader U8 (U84 a U87)
+Web AnandTech dostal od SiFive podrobnější informace k architektuře nových out-of-order RISC-V jader, díky čemuž se na ně můžeme podívat. Architektura U8 by měla dát vzniknout zprvu dvěma verzím, U84 a U87. Měly by být podobné s tím rozdílem, že U84 má jen klasické celočíselné jednotky a skalární FPU, ale postrádá jinde dnes skoro neodmyslitelné SIMD (vektorové) rozšíření důležité pro intenzivnější výpočty, ale i multimédia – tedy ekvivalent SSE/AVX u x86 nebo ARM Neon). Jejich specifikace totiž zatím ještě není uzavřená. SIMD jednotky proto dostane právě až další verze jádra pojmenovaná U87, která bude k dispozici zřejmě až příští rok. Bližší parametry této architektury zatím SiFive neuvádí. Zatím se tedy bavíme jen o jádru U84 bez podpory SIMD.
+
+
+Architektura SiFive U8 zahrnuje jádro U84 se skalární FPU a pozdější U87 s přidanou SIMD jednotkou
+
+Jádro SiFive U84 má 12stupňovou pipeline (10 stupňů pro ALU pipeline, 12 stupňů pro operace load/store) a jedná se o 3-issue architekturu, schopnou zpracovávat tři instrukce za jeden cyklus – stylem out-of-order, jak už bylo řečeno. Design také používá fyzický soubor registrů (physical register file), což umožňuje snadné přejmenování registrů, aniž by se samotná data musela přesouvat. Ne všechny parametry byly sděleny (například jako je hloubka některých bufferů out-of-order vykonávání), některé snad mohou být i konfigurovatelné podle preferencí implementátora.
+
+
+Prezentace out of order RISC-V architektury SiFive U84 (Zdroj: AnandTech)
+
+Fetch instrukcí probíhá z instrukční L1 cache, přičemž v každém cyklu je možné dodat 16 bajtů, což by při 32bitové délce instrukční dávalo čtyři instrukce, ovšem RISC-V podporuje variabilní délku instrukcí, takže v případě užití komprimovaných 16bitových instrukcí by to mohlo být i více. Dekodér či dekodéry však zpracovávají maximálně čtyři instrukce za takt. Ovšem do fáze přejmenování registrů (rename) už mohou z instruction queue postoupit jen tři instrukce za takt.
+
+
+Prezentace out of order RISC-V architektury SiFive U84 (Zdroj: AnandTech)
+
+Fetch, decode a issue tedy dokáží zásobit více instrukcí, než lze za cyklus nasypat do výpočetních jednotek – toto by mělo být proto, aby frontend dokázal rychleji dohnat případné „bubliny“ nebo postih za špatně odhadnuté větvení. Je také možné, že 4-issue šířka frontendu už je připravená pro rozšíření backendu u budoucích následníků. Přítomnost spekulativního provádění s prediktorem větvení a out-of-order vykonáváním pravděpodobně znamená, že tato jádra již budou náchylná na zranitelnost Spectre V2 (Branch Target Injection), zatímco dříve se architektura RISC-V a SiFive honosily odolností čistě kvůli jednoduchým jádrům.
+
+
+Prezentace out of order RISC-V architektury SiFive U84 (Zdroj: AnandTech)
+
+Tři ALU, FPU zatím nebyla odhalená
+Za fází rename následuje reorder buffer o nespecifikované hloubce (takže nemůžeme porovnávat proti ARMům a x86), z nějž dispatch přiděluje tři dekódované instrukce/operace jednotlivým jednotkám. Celočíselná část má už tři ALU, které nejsou rovnocenné. Všechny zvládají jednoduché operace, ale celočíselná násobení a dělení jdou vždy jen přes jednu z nich. Jedna ze zbylých jednoduchých ALU pipeline pak zase vedle aritmetickologických operací také obsahuje jednotku pro zpracování větvení, pro které není separátní pipeline, jako často u jader ARM. Každá z těchto tří ALU pipeline má před sebou vlastní issue queue.
+
+
+Prezentace out of order RISC-V architektury SiFive U84 (Zdroj: AnandTech)
+
+Kromě vlastních ALU jednotek musí přirozeně být přítomné také load/store pipeline či AGU pro provádění přesunů dat mezi registry a pamětí (respektive L1/L2 cache). Nicméně k tomu, kolik jich je a kolik čtení a zápisů dat za cyklus zvládnou, SiFive neprozrazuje. Podobně nesděluje, kolik je vedle ALU v jádru FPU pipeline pro výpočty s plovoucí řádovou čárkou (floating point). Nevíme tedy, zda je jedna, dvě a striktně vzato ani, zda náhodou nefunguje in-order. Nicméně až přijde jádro U87 se SIMD rozšířením, pravděpodobně bude tato část také lépe popsána. Čistě skalární floating point operace možné na U84 asi nejsou zas takovou prioritou.
+U8 umožňuje vytvořit až devítijádrové CPU
+Jaké parametry mají L1 a L2 cache, SiFive také neuvádí. Zde je právě možné, že kapacity budou volitelné a s tím ruku v ruce možná i asociativita. Uvedené nejsou nicméně ani latence. V příkladu implementace se ale zmiňuje možnost mít čtyřjádrový klastr se sdílenou L2 cache o kapacitě 2 MB. L2 tedy může být sdílená a pravděpodobně by měla roli mezipaměti poslední úrovně.
+Klastr ovšem nemusí být jen čtyřjádrový, jednu L2 může takto sdílet až devět jader s plnou koherencí. Je také uvedeno, že lze zkombinovat heterogenní jádra, takže U84 může mít roli „big“ jader a lze přidat nějaká úsporná „little“ jádra (U7 či ještě jednodušší jádra SiFive řady S), jako u čipů ARM.
+
+
+Srovnání architektury SiFive U84 s in-order jádrem SiFive U74
+
+Takt až 2,6 GHz na 7nm procesu
+Jádro U84 má údajně dosahovat až o 40 % lepší frekvenci než předchozí in-order architektura U74. Na 7nm procesu má prý být schopné běžet až na 2,6 GHz. Ale uvidíme, zda třeba reálná implementace nezaostane – celkem často se stane, že na trhu jsou nakonec dostupné jen nižší frekvence, než bylo původně uvažované maximum. Výkon má být proti U74 až 3,1× lepší, z čehož část dělá pokrok ve frekvenci, zbytek vyšší IPC – to je údajně 2,1× lepší. Na 7nm procesu jinak prý pro jedno jádro bez L2 cache stačí plocha 0,28 mm². Čtyřjádrový klastr se společnou L2 cache o kapacitě 2 MB se má vejít do 2,63 mm².
+
+
+Srovnání architektury SiFive U84 s in-order jádry SiFive U74 a U54. Žluté sloupečky jsou na stejném procesu, oranžový sloupeček uvažuje U84 na novějším procesu, takž započítává i jeho efekt
+
+Výkonnější jádra by měla hodně posunout možnosti architektury RISC-V pokrýt různé segmenty trhu. Takovéto čipy by byly dobře použitelné například na jednodeskových počítačích, které ovšem potřebují také dost periférií, GPU, multimediální funkce a konektivitu, takže zde asi tak snadno nějaké „RISC-V Pi“ nevznikne. Také v mobilní oblasti asi nehrozí, že by se RISC-V rychle dostal do telefonních SoC, protože přechod například platformy Android by musel překonávat spoustu překážek. Pravděpodobně tak i tato jádra budou více používána hlavně v embedded oblasti a jako „služebná“ integrovaná jádra různých čipů – třeba výkonných SSD řadičů. Nicméně pokud se nějaké firmy pokusí na RISC-V založit přímo uživatelsky viditelný procesor pro nějakou aplikaci, budou tyto silnější architektury jedním z předpokladů, aby takový snaha byla úspěšná.
+Galerie: Out-of-order RISC-V architektura jádra SiFive U84
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+VŠECHNY FOTOGRAFIE
+
+
+SOUVISEJÍCÍ ČLÁNKY
+
+
+
+
+
+
+
+
+",cs,"
+
+
+
+
+
+
+
+
+
+
+
+Finally, the powerful RISC-V core: SiFive U84 is out-of-order and better than ARM Cortex-A72
+03 Nov 2019 by Jan Olsan
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ALL PHOTOS
+
+The RISC-V processor architecture has already gained considerable interest from semiconductor and IT companies - as well as popularity among ordinary people interested in technology or open source, as it is an open and ""free"" instruction set. However, it is still expected to replace ARM cores or other embedded microcontrollers often hidden deep in other chips and inaccessible to users. RISC-V does not yet offer any powerful hardware to run alternative desktop PCs. But maybe there is a turning point. SiFive, which is developing RISC-V licensing cores as a commercial ready-made alternative for those interested in this open architecture, has now unveiled the first core with higher performance ambitions. The U84 architecture and its later derivative U87 are expected to attack the ARM Cortex-A72, which would promise a fairly usable processor.
+SiFive is a company founded in 2015 directly by some authors of RISC-V architecture (but now also works as an architect also Andy Glew, who went through Intel, AMD, MIPS and Nvidia). It has also developed its own RISC-V chips and is behind the HiFive1 development board. Theoretically, this firm could one day play a similar central role to the ecosystem as ARM Holdings. But in the case of RISC-V due to the free instruction set license and thus the possibility to save about a lot of companies, it would prefer to develop their own kernel or use some free open source kernels, even though they have logically less ""development"".
+First commercial out-of-order RISC-V core: better than ARM Cortex-A72?
+All existing kernels that SiFive offered were of lower performance with a simple in-order architecture. Now, however, the company has stepped to the next level with the introduction of a new series of U8 cores that use out-of-order instruction processing, where the processor can issue instructions to computing units not only in parallel (this is possible with superscalar in-order cores) can greatly improve performance per MHz. Compared to previous in-order kernels is expected to grow several times.
+
+
+SiFive U84 to be competitive with Cortex-A72, but reportedly to be twice as efficient on chip and 1.5 times more efficient in power consumption
+
+The plan or projection is that the U8 cores will roughly compete in performance with the older (2015) ARM Cortex-A72 made on a 16nm TSMC process. But it only needs half the area on the chip and is supposed to have up to 50% better energy efficiency. In addition, ARM already has better kernels (the current Cortex-A77 should be much further away), it is unclear whether the same manufacturing process is being compared. Where we compare performance, we know it should be a SPECint (but it is not stated whether 2006 or 2017).
+U8 Core Architecture (U84 and U87)
+AnandTech website has received more detailed information from SiFive on the architecture of the new out-of-order RISC-V cores, so we can look at them. The U8 architecture should initially give rise to two versions, U84 and U87. They should be similar with the difference that U84 has only classic integer units and scalar FPUs, but lacks an almost inherent SIMD (vector) extension important for more intensive computing, but also multimedia - the SSE / AVX equivalent of x86 or ARM Neon) . Their specification is not yet finalized. SIMD units will get just another version of the kernel named U87, which will probably be available next year. SiFive does not provide detailed parameters of this architecture yet. So far, we are only talking about the U84 core without SIMD support.
+
+
+The SiFive U8 architecture includes a U84 core with a scalar FPU and a later U87 with an added SIMD unit
+
+The SiFive U84 core has a 12-stage pipeline (10 degrees for ALU pipelines, 12 degrees for load / store operations) and is a 3-issue architecture capable of handling three instructions per cycle — out-of-order, as already mentioned. The design also uses a physical register file, which makes it easy to rename registers without having to move the data itself. Not all parameters have been communicated (such as the depth of some out-of-order execution buffers), some may be configurable according to the implementer's preferences.
+
+
+Presentation of RISC-V SiFive U84 architecture (Source: AnandTech)
+
+The instruction fetches from the instruction L1 cache, with 16 bytes per cycle, which would give four instructions at a 32-bit instruction length, but RISC-V supports variable instruction lengths, so if using compressed 16-bit instructions, it could be more . However, the decoder (s) process a maximum of four instructions per clock. However, only three instructions per clock can go from the instruction queue to the rename phase.
+
+
+Presentation of RISC-V SiFive U84 architecture (Source: AnandTech)
+
+Fetch, decode, and issue are therefore able to supply more instructions than can be poured over the cycle into computing units - this should be done so that the frontend can catch up with any “bubbles” or punish badly-estimated branches. It is also possible that the 4-issue frontend width is already ready to extend the backend to future successors. The presence of speculative execution with branch predictor and out-of-order execution is likely to mean that these cores will already be vulnerable to Branch Target Injection (V2) vulnerability, while previously RISC-V and SiFive architecture boasts resilience purely due to simple cores.
+
+
+Presentation of RISC-V SiFive U84 architecture (Source: AnandTech)
+
+Three ALU, FPU has not yet been revealed
+The rename phase is followed by a reorder buffer of unspecified depth (so we cannot compare against ARMs and x86), from which the dispatch allocates three decoded instructions / operations to individual units. The integer part already has three ALUs that are not equivalent. They all handle simple operations, but integer multiplications and divisions always go through just one of them. One of the remaining simple ALU pipelines, in addition to arithmeticological operations, also includes a branch processing unit for which there is no separate pipeline, as is often the case with ARM cores. Each of the three ALU pipelines has its own issue queue.
+
+
+Presentation of RISC-V SiFive U84 architecture (Source: AnandTech)
+
+In addition to the ALUs itself, a load / store pipeline or AGU must naturally be present for data transfers between registers and memory (respectively L1 / L2 cache). However, SiFive does not reveal how many there are and how many read and write data per cycle they can handle. Similarly, it does not tell how much there is a pipeline for floating point calculations next to the ALU in the FPU kernel. So we do not know whether it is one, two, and strictly speaking, or whether in-order works by chance. However, when the U87 kernel comes with a SIMD extension, this section will probably be better described as well. Pure scalar floating point operations possible on U84 are not such a priority.
+The U8 allows you to create up to nine-core CPUs
+SiFive also does not specify what parameters the L1 and L2 cache have. Here it is possible that capacities will be optional and, with it, possible associativity. However, latencies are not mentioned either. However, the implementation example mentions the possibility of having a quad core cluster with a shared 2 MB L2 cache. Thus, L2 can be shared and would probably have a last-level cache role.
+However, the cluster does not have to be only quad-core, so one L2 can share up to nine cores with full coherence. It is also stated that heterogeneous cores can be combined, so the U84 can play the role of ""big"" cores and can add some low-power ""little"" cores (U7 or even simpler SiFive S-series cores), as with ARM chips.
+
+
+Comparison of SiFive U84 architecture with in-order core SiFive U74
+
+Clock up to 2.6 GHz at 7nm process
+The U84 core is supposed to achieve up to 40% better frequency than previous in-order U74 architecture. The 7nm process is said to be able to run at 2.6 GHz. But let's see if real implementation is left behind - quite often it happens that in the end, only lower frequencies than the originally considered maximum are available on the market. Performance should be up to 3.1 times better than U74, part of which makes progress in frequency, the rest higher IPC - that's reportedly 2.1 times better. For a 7nm process, another 0.28 mm² area is enough for a single core without L2 cache. A quad-core cluster with a common 2 MB L2 cache should fit within 2.63 mm².
+
+
+Comparison of SiFive U84 architecture with in-order SiFive U74 and U54 cores. The yellow bars are on the same process, the orange bar considers U84 on a newer process, so it counts its effect
+
+More powerful kernels should push the possibilities of RISC-V architecture to cover different market segments. Such chips would be well usable, for example, on single-board computers, but they also need enough peripherals, GPUs, multimedia features and connectivity, so some ""RISC-V Pi"" aren't so easy to do here. Also in the mobile area, there is probably no risk that the RISC-V will quickly get into the SoC phone, because the transition of the Android platform, for example, would have to overcome many obstacles. Probably also these cores will be more used mainly in the embedded area and as ""service"" integrated cores of various chips - such as powerful SSD controllers. However, if any company attempts to base a directly visible user-specific processor on an RISC-V, these stronger architectures will be one of the prerequisites for such efforts to be successful.
+Gallery: Out-of-order RISC-V architecture of SiFive U84 core
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ALL PHOTOS
+
+
+RELATED ARTICLES
+
+
+
+
+
+
+
+
+"

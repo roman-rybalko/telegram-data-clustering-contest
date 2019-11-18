@@ -1,0 +1,80 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Google запустила проект OpenTitan для укрепления «корней доверия»
+
+06 Nov 2019, 12:45
+
+
+
+
+Идея доверенной платформы, ожидаемое поведение которой всегда совпадает с реальным, основана на понятии «корень доверия» (англ. root-of-trust) — набор компонентов, которым можно доверять. В новых смартфонах Pixel 4 таким доверенным компонентом является микроконтроллер Titan M, блокирующий попытки взлома, проверяя целостность программной прошивки при каждом включении устройства.
+В целях поощрения разработки технологий root-of-trust для центров обработки данных и для потребительской электроники компания Google вчера анонсировала открытую инициативу OpenTitan.
+Посредством OpenTitan, Google рассчитывает предоставить индустрии базовые технологические строительные блоки для создания продуктов root-of-trust. Гигант поиска в настоящее время разрабатывает для этого проекта специализированный чип, базирующийся на популярной открытой процессорной архитектуре RISC-V. В работе находится и ряд других компонентов, включая микропрограммную прошивку, сопроцессоры для выполнения криптографических вычислений и физический генератор случайных чисел для создания шифровальных ключей.
+Ройял Хансен (Royal Hansen), глава Google по информационной безопасности, и руководитель OpenTitan Доминик Риццо (Dominic Rizzo) написали в блоге, что чип с открытыми спецификациями будет способствовать росту доверия благодаря прозрачности проектирования и внедрения. Кроме того, свободный доступ к ключевым технологиям станет стимулом к инновациям для сообщества посредством участия независимых разработчиков в совершенствовании конструкции чипов.
+Google активно формирует экосистему разработчиков для OpenTitan. С этой целью она передаёт руководство проектом отраслевой организации LowRisc, аффилированной с университетом Кембриджа, и привлекает внешних партнеров для поддержки разработки. Одними из первых инициативу поддержали Western Digital, чипмейкер Nuvoton Technology, G+D Mobile Security и ETH Zurich.
+Технологии, родившиеся в ходе коллективного участия этих и других организаций в проекте OpenTitan, окажутся полезными и для самой Google. Помимо смартфонов, компания использует чипы root-of-trust в планшете Pixel Slate и, что более важно, в своих ЦОД для защиты серверов от атак.
+Перспектива получения более эффективных чипов безопасности может даже побудить присоединиться к OpenTitan главных конкурентов Google. Компания Apple устанавливает собственный процессор root-of-trust, T2, в некоторые модели Mac, а Amazon Web Services использует в своей облачной платформе аппаратные модули безопасности.
+
+Вы можете подписаться на наш Telegram-канал для получения наиболее интересной информации
+
+
+Читайте также
+
+
+
+
+
+
+
+
+",ru,"
+
+
+
+
+
+
+
+
+
+
+
+Google launched the OpenTitan project to strengthen the ""roots of trust""
+
+06 Nov 2019, 12:45
+
+
+
+
+The idea of a trusted platform, the expected behavior of which always coincides with the real one, is based on the concept of “root of trust” (English root-of-trust) - a set of components that can be trusted. In the new Pixel 4 smartphones, such a trusted component is the Titan M microcontroller, which blocks hacking attempts by checking the integrity of the software firmware each time the device is turned on.
+To encourage the development of root-of-trust technologies for data centers and consumer electronics, Google yesterday announced an open initiative, OpenTitan.
+Through OpenTitan, Google expects to provide the industry with the basic technology building blocks for building root-of-trust products. The search giant is currently developing a specialized chip for this project, based on the popular open processor architecture RISC-V. There are a number of other components in the work, including firmware, coprocessors for performing cryptographic calculations and a physical random number generator for creating encryption keys.
+Royal Hansen, Google’s head of information security, and OpenTitan’s CEO Dominic Rizzo wrote in a blog post that the open-spec chip will help build trust through transparent design and implementation. In addition, free access to key technologies will stimulate innovation for the community through the participation of independent developers in improving the design of chips.
+Google is actively building an ecosystem of developers for OpenTitan. To this end, she transfers project management to the LowRisc industry organization affiliated with the University of Cambridge and engages external partners to support the development. Western Digital, chip maker Nuvoton Technology, G + D Mobile Security and ETH Zurich were among the first to support the initiative.
+The technologies born from the collective participation of these and other organizations in the OpenTitan project will also be useful for Google itself. In addition to smartphones, the company uses root-of-trust chips in the Pixel Slate tablet and, more importantly, in its data centers to protect servers from attacks.
+The prospect of better security chips may even encourage OpenTitan to join Google’s major rivals. Apple installs its own root-of-trust processor, T2, on some Mac models, while Amazon Web Services uses hardware-based security modules in its cloud platform.
+
+You can subscribe to our Telegram channel to receive the most interesting information.
+
+
+Read also
+
+
+
+
+
+
+
+
+"

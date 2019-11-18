@@ -1,0 +1,112 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+JFuture 2019 в ноябре: можно решить две задачи на JVM-языке и получить билет/скидку
+06 Nov 2019, 09:26 by Отдел информации dev.by
+Сообщество JProf запустило кодинг-конкурс для тех, кто хочет получить бесплатный билет или 50% скидки на JFuture 2019. Ежегодная международная конференция, объединяющая Java с современными технологиями, наукой и искусством, пройдёт в Минске 15–16 ноября.
+
+​JFuture 2019
+JFuture — преемница JavaDay, серии событий, которые были инициированы и поддержаны компанией Oracle по всему миру в 2012 году. В 2018 году организаторы, команда SPACE совместно с сообществами Java Professionals BY и Belarus Kotlin User Group, приняли решение расширить её контекст и сосредоточились на презентации новостей и технологий из всей экосистемы JVM языков и не только. 
+​
+
+Сообщество JProf запустило кодинг-конкурс для тех, кто хочет получить скидку на билет. За успешное решение двух задач участник получит 50% скидку на билет, студент — 100% (при предъявлении студенческого билета). Автор лучшего решения также сможет бесплатно посетить конференцию.
+
+Что нужно сделать
+
+Произвести расчеты для двух задач с использованием любого JVM-языка без СУБД.
+
+Задача
+
+Представьте себя разработчиком системы аналитики киноискусства, которому нужно собрать данные и произвести расчеты по следующим пунктам:
+
+Отобразить динамику выхода фильмов 5 любых жанров в Китае и США за последние три года.
+
+
+Составить топ-5 режиссеров с наиболее высоким рейтингом фильмов.
+
+Решение нужно оформить в публичном репозитории и добавить инструкцию для запуска в README. При этом оно должно включать все этапы сбора информации и расчетов. Ссылку на репозиторий необходимо прислать на имейл jug@jprof.by.
+Оценивать решения будут представители программного комитета.
+О чём будут доклады, и почему именно об этом
+В программу JFuture 2019 вошли два блока докладов:
+
+последние обновления в языке Java и использование современных JVM технологий;
+интеграция JVM-языков в науку, искусство, современные технологии и др.
+
+Список тем JFuture был сформировал по итогам независимого исследования профессиональных интересов среди белорусских девелоперов, работающих с Java и JVM-языками. Например, в 2018 году процентное соотношение участников по профессиональному уровню составило: 30% — Senior developers, 30% — Middle developers, 10% — Junior developers, 10% — Team leads. Эта статистика отразилась на формировании лайнапа, в который вошли доклады разного уровня сложности — для опытных разработчиков и новичков.
+Несмотря на всеобщий интерес и хайп вокруг AI, лишь около 10% респондентов сталкивались с ним на практике. Поэтому вместо абстрактного доклада про использование условного TensorFlow на Java один из спикеров JFuture 2019 расскажет о создании приложения, которое можно интегрировать в работу голосовых помощников Google и Alexa. Для этого участникам не нужно обладать особыми знаниями алгоритмов работы нейросетей и систем распознавания голоса.
+Опрос показал, что лишь 3% опрошенных регулярно участвуют в OSS-движении (Open Source Software). Но при этом практически все девелоперы пользуются открытым софтом и библиотеками. Поэтому в лайн-ап конференции вошёл доклад Марит ван Дейк — активного контрибьютора в Сucumber — инструмента поддерживающего BDD (Behavior Driven Development) проекты.
+Также в программе доклад Аманды Хинчман, senior инженера 47Degrees: «Exploring Neural Networking with Kotlin Metaprogramming: a Cheaper Alternative for Deep Learning?». Он потребует широкого технического кругозора от слушателей, базового понимания мета-программирования и некоторого опыта в области машинного обучения.
+
+
+​Работа для Java-разработчиков в Беларуси​.​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​
+1. Заполните анонимную форму — 5 минут.2. Укажите зарплатные (и другие) ожидания.3. Выберите желаемую индустрию или область деятельности.4. Получайте релевантные предложения​​.​​​​​​​​​​​​​
+
+Источник: SPACEФото: jfuture.dev
+
+
+",ru,"
+
+
+
+
+
+
+
+
+
+
+
+JFuture 2019 in November: you can solve two problems in the JVM language and get a ticket / discount
+06 Nov 2019, 09:26 by dev.by Information Department
+The JProf community has launched a coding contest for those who want to get a free ticket or a 50% discount on JFuture 2019. The annual international conference combining Java with modern technology, science and art will be held in Minsk on November 15-16.
+
+JFuture 2019
+JFuture is the successor to JavaDay, a series of events that were initiated and supported by Oracle around the world in 2012. In 2018, the organizers, the SPACE team, together with the Java Professionals BY and Belarus Kotlin User Group communities, decided to expand its context and focused on presenting news and technologies from the entire ecosystem of JVM languages ​​and not only.
+A.
+
+The JProf community has launched a coding contest for those who want a discount on a ticket. For the successful solution of two problems, the participant will receive a 50% discount on the ticket, the student - 100% (upon presentation of a student card). The author of the best solution will also be able to attend the conference for free.
+
+What should be done
+
+Perform calculations for two tasks using any JVM-language without a DBMS.
+
+A task
+
+Imagine yourself a developer of a cinema analytics system that needs to collect data and make calculations on the following points:
+
+Display the dynamics of the release of films of 5 any genres in China and the United States over the past three years.
+
+
+Compose the top 5 directors with the highest rated films.
+
+The solution needs to be issued in a public repository and add instructions to run in README. Moreover, it should include all stages of information collection and calculations. A link to the repository must be sent to jug@jprof.by.
+Representatives of the program committee will evaluate decisions.
+What the reports will be about, and why about it
+The JFuture 2019 program includes two blocks of reports:
+
+the latest updates in the Java language and the use of modern JVM technologies;
+Integration of JVM languages ​​in science, art, modern technologies, etc.
+
+The list of topics JFuture was formed as a result of an independent study of professional interests among Belarusian developers working with Java and JVM languages. For example, in 2018, the percentage of participants by professional level was: 30% - Senior developers, 30% - Middle developers, 10% - Junior developers, 10% - Team leads. These statistics were reflected in the formation of the lineup, which included reports of different levels of complexity - for experienced developers and beginners.
+Despite the general interest and hype around AI, only about 10% of respondents came across it in practice. Therefore, instead of an abstract report on the use of conditional TensorFlow in Java, one of the JFuture 2019 speakers will talk about creating an application that can be integrated into the work of Google and Alexa voice assistants. To do this, participants do not need to have special knowledge of the algorithms of neural networks and voice recognition systems.
+The survey showed that only 3% of respondents regularly participate in the OSS movement (Open Source Software). But at the same time, almost all developers use open software and libraries. Therefore, the line-up conference included a report by Marit van Dyck, an active contributor to Сucumber, a tool supporting BDD (Behavior Driven Development) projects.
+Also included is a report by Amanda Hinchman, Senior Engineer 47Degrees: “Exploring Neural Networking with Kotlin Metaprogramming: a Cheaper Alternative for Deep Learning?”. It will require a broad technical outlook from students, a basic understanding of meta-programming, and some experience in machine learning.
+
+
+Work for Java developers in Belarus.
+1. Fill out the anonymous form - 5 minutes. 2. Indicate salary (and other) expectations. 3. Select the industry or industry you want. 4. Receive relevant offers.
+
+Source: SPACE; Photo: jfuture.dev
+
+
+"

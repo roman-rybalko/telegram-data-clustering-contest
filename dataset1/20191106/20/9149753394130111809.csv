@@ -1,0 +1,96 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Rockstar is offering cash rewards for finding Red Dead Online security flaws
+06 Nov 2019, 20:21 by Andy Chalk
+Have you ever been improperly banned from Grand Theft Auto Online for ""false positive"" cheating, even though absolutely no cheating actually took place? Well here's the fact, Jack: Rockstar doesn't believe you. It doesn't believe you so much that if you can prove it—more precisely, if you can ""successfully identify a reproducible incorrect ban in Grand Theft Auto Online""—it'll give you $10,000.
+The bounty, offered through the HackerOne website, was actually first offered a year ago as part of a ""bug bounty"" program that's been running since 2016. But yesterday, with the launch of Red Dead Redemption 2 on PC, Rockstar expanded the program to encompass a wider range of games and vulnerabilities.
+""To date, the private program has been a targeted bounty campaign to root out a very specific type of potential vulnerability in Grand Theft Auto Online,"" Rockstar said in the update. ""However, we are happy to announce that beginning today, we will now be accepting a wider variety of vulnerability reports for in-scope vulnerability categories.""
+Rockstar is now taking reports from the following games:
+
+Grand Theft Auto 5 and Grand Theft Auto Online on the following platforms:
+
+
+PS4
+Xbox One
+PC
+
+
+Red Dead Redemption 2 and Red Dead Online on the following platforms:
+
+
+PS4
+Xbox One
+PC
+
+
+Mobile apps:
+
+
+Red Dead Redemption 2 Companion App
+iFruit Mobile App
+
+It's not as simple as posting a message in a forum, though. If you want to qualify for rewards you'll need to enroll in Rockstar's private bounty program, and you'll also have to follow some fairly strict rules about what to report, and how to report it. And if you happen to earn yourself a ban while ""testing for issues,"" that's tough noogies for you—it won't be reversed.
+The minimum bounty for discovered vulnerabilities is $150, but it goes up from there based on ""the severity and complexity of the identified potential vulnerability."" Researcher Mario Gomes, who tops Rockstar's ""thanks"" list, has claimed rewards ranging from $250 to $1000 over the past year.
+Rockstar's bug bounty program is essentially the same as one offered by Valve that we learned about last year, when it also went from private to public. At that time, Valve had paid out $109,000 to people who had discovered security flaws in Steam and games like CSGO, Team Fortress 2, and Dota 2; that amount is now up to more than $840,000.
+And in case you were wondering, yes: Rockstar confirmed that it is still offering ten large in its Incorrect Ban Bounty campaign. Good luck.
+
+
+",en,"
+
+
+
+
+
+
+
+
+
+
+
+Rockstar is offering cash rewards for finding Red Dead Online security flaws
+06 Nov 2019, 20:21 by Andy Chalk
+Have you ever been improperly banned from Grand Theft Auto Online for ""false positive"" cheating, even though absolutely no cheating actually took place? Well here's the fact, Jack: Rockstar doesn't believe you. It doesn't believe you so much that if you can prove it—more precisely, if you can ""successfully identify a reproducible incorrect ban in Grand Theft Auto Online""—it'll give you $10,000.
+The bounty, offered through the HackerOne website, was actually first offered a year ago as part of a ""bug bounty"" program that's been running since 2016. But yesterday, with the launch of Red Dead Redemption 2 on PC, Rockstar expanded the program to encompass a wider range of games and vulnerabilities.
+""To date, the private program has been a targeted bounty campaign to root out a very specific type of potential vulnerability in Grand Theft Auto Online,"" Rockstar said in the update. ""However, we are happy to announce that beginning today, we will now be accepting a wider variety of vulnerability reports for in-scope vulnerability categories.""
+Rockstar is now taking reports from the following games:
+
+Grand Theft Auto 5 and Grand Theft Auto Online on the following platforms:
+
+
+PS4
+Xbox One
+PC
+
+
+Red Dead Redemption 2 and Red Dead Online on the following platforms:
+
+
+PS4
+Xbox One
+PC
+
+
+Mobile apps:
+
+
+Red Dead Redemption 2 Companion App
+iFruit Mobile App
+
+It's not as simple as posting a message in a forum, though. If you want to qualify for rewards you'll need to enroll in Rockstar's private bounty program, and you'll also have to follow some fairly strict rules about what to report, and how to report it. And if you happen to earn yourself a ban while ""testing for issues,"" that's tough noogies for you—it won't be reversed.
+The minimum bounty for discovered vulnerabilities is $150, but it goes up from there based on ""the severity and complexity of the identified potential vulnerability."" Researcher Mario Gomes, who tops Rockstar's ""thanks"" list, has claimed rewards ranging from $250 to $1000 over the past year.
+Rockstar's bug bounty program is essentially the same as one offered by Valve that we learned about last year, when it also went from private to public. At that time, Valve had paid out $109,000 to people who had discovered security flaws in Steam and games like CSGO, Team Fortress 2, and Dota 2; that amount is now up to more than $840,000.
+And in case you were wondering, yes: Rockstar confirmed that it is still offering ten large in its Incorrect Ban Bounty campaign. Good luck.
+
+
+"

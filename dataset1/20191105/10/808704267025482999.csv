@@ -1,0 +1,54 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+
+Firefox 74 ne supportera plus le sideloading d’extensions
+
+
+05 Nov 2019, 10:06
+
+Mozilla se prépare à supprimer une capacité : pouvoir placer, via un installeur, des fichiers d’une extension dans un dossier spécifique de Firefox, afin qu’elle soit présente dans toutes les instances du navigateur.
+Bien que la méthode ait ses aspects pratiques, l’éditeur veut surtout se débarrasser d’un vecteur d’attaque, déjà utilisé selon lui par le passé. 
+En outre, depuis Firefox 68 et son outil de signalement, l’abus le plus souvent rapporté est la présence d’extensions que les utilisateurs ne se souviennent pas d’avoir installées. Si le sideloading a été utilisé, ces extensions n’apparaissent même pas dans le centre de gestion dédié.
+Le blocage de la capacité interviendra en deux temps. Firefox 73, prévu pour le 11 février, commencera par copier les fichiers dans un dossier spécifique à l’utilisateur en cours, tout en les rendant accessibles depuis le centre de gestion. Les utilisateurs pourront ainsi les voir et les supprimer si besoin.
+Le 10 mars, Firefox 74 bloquera toute nouvelle installation de type sideloading. Cependant, si le navigateur détecte d’anciennes extensions, il les laissera tranquille. Mozilla précise ne pas vouloir créer d’interruption dans l’expérience utilisateur. Globalement, le processus devrait donc être transparent.
+Les développeurs d’extensions qui auraient recours au sideloading n’auront donc plus le choix et devront s’adapter. À la fin de son billet de blog, Mozilla recommande de réfléchir dès à présent à la suite : installation manuelle depuis leur propre site web ou publication dans la boutique de Mozilla. Dans les deux cas, les règles des extensions doivent avoir été appliquées.
+
+
+",fr,"
+
+
+
+
+
+
+
+
+
+
+
+
+Firefox 74 will no longer support sideloading extensions
+
+
+05 Nov 2019, 10:06
+
+Mozilla is preparing to remove an ability: to be able to place, via an installer, files of an extension in a specific folder of Firefox, so that it is present in all instances of the browser.
+Although the method has its practical aspects, the editor especially wants to get rid of a vector of attack, already used according to him in the past.
+In addition, since Firefox 68 and its reporting tool, the most often reported abuse is the presence of extensions that users do not remember to have installed. If sideloading was used, these extensions do not even appear in the dedicated management center.
+The blocking of the capacity will intervene in two stages. Firefox 73, scheduled for February 11, will begin by copying the files to a specific folder for the current user, while making them accessible from the management center. Users will be able to view and delete them if necessary.
+On March 10, Firefox 74 will block any new sideloading installation. However, if the browser detects older extensions, it will leave them alone. Mozilla says it does not want to create an interruption in the user experience. Overall, the process should be transparent.
+Extender developers who use sideloading will no longer have a choice and will have to adapt. At the end of his blog post, Mozilla recommends thinking right away about the following: manual installation from their own website or publication in the Mozilla shop. In both cases, the extension rules must have been applied.
+
+
+"

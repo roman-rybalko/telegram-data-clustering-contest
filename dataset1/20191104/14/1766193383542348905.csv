@@ -1,0 +1,42 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Xcode: Lücken in Entwicklungsumgebung erlaubten beliebige Codeausführung
+Zwei Lücken in der macOS-Entwicklungsumgebung Xcode vor Version 11.2 erlaubten die beliebige Programmcode-Ausführung – möglicherweise auch aus der Ferne.
+04 Nov 2019, 14:28 by Olivia von Westernhagen
+Die in macOS integrierte Entwicklungsumgebung Xcode wies bis vor kurzem zwei Sicherheitslücken auf, die Angreifern unter bestimmten Voraussetzungen die Ausführung beliebigen Programmcodes ermöglichten.
+Laut einem Sicherheitshinweis des Deutschen Forschungsnetzes (DFN-CERT) waren Angriffe (auch) aus der Ferne möglich; Apple hingegen erwähnt dieses Detail in einem eigenen Hinweis zu den Lücken CVE-2019-8800 und CVE-2019-8806 nicht. Beiden Dokumenten ist übereinstimmend zu entnehmen, dass Angreifer zum Ausnutzen der Schwachstellen eine speziell präparierte Datei benötigten.
+Anwender sollten zügig auf die neue Xcode-Version 11.2 updaten, die die Sicherheitslücken laut Apple durch verbesserte Validierungsmechanismen behebt. Sie steht laut Release-Notes für macOS Mojave ab Version 10.14.4 aufwärts bereit. (ovw)
+
+
+",de,"
+
+
+
+
+
+
+
+
+
+
+
+Xcode: Gaps in development environment allowed arbitrary code execution
+Two holes in the macOS development environment Xcode before version 11.2 allowed any program code execution - possibly also remotely.
+04 Nov 2019, 14:28 by Olivia from Westernhagen
+The macOS development environment Xcode has until recently had two vulnerabilities that allowed attackers to execute arbitrary code under certain conditions.
+According to a security notice of the German Research Network (DFN-CERT), attacks (also) were possible from a distance; Apple, however, does not mention this detail in a separate note on the CVE-2019-8800 and CVE-2019-8806 gaps. Both documents agree that attackers needed a specially crafted file to exploit the vulnerabilities.
+Users should quickly update to the new Xcode version 11.2, which fixes the vulnerabilities according to Apple through improved validation mechanisms. It is ready to go up from version 10.14.4, according to release notes for macOS Mojave. (Ovw)
+
+
+"

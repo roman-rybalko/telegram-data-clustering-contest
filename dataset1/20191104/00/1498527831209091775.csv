@@ -1,0 +1,150 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Hacker nutzen BlueKeep-Lücke erstmals für Angriffe
+04 Nov 2019 by Stefan Bordel
+
+Cyberkriminelle nutzen erstmals die hochbrisante BlueKeep-Sicherheitslücke in Windows für Angriffe im Netz. Glücklicherweise arbeitet die eingesetzte Schadsoftware nicht sehr zuverlässig.
+
+
+Bereits im April hatte Microsoft einen umfangreichen Sicherheitspatch ausgerollt, um die BlueKeep-Sicherheitslücke zu schließen. Sogar der OS-Oldie Windows XP wurde von den Redmondern mit einem Update bedacht, was die Dringlichkeit des Patches noch einmal verdeutlicht.
+Der Fehler befindet sich in den Remote Desktop Services (RDP), die zur Fernwartung eingesetzt werden. Angreifer können hier über manipulierte Pakete den RDP-Dienst eines verwundbaren Windows-Systems als Zugangspunkt nutzen. Weder eine Authentifizierung, noch eine Eingabe des Anwenders ist erforderlich, um das betroffene System zu übernehmen.
+
+
+
+Jetzt sind Sicherheitsexperten von Krypto Logic erstmals auf einen Angriff in freier Wildbahn gestoßen, der offenbar die BlueKeep-Sicherheitslücke nutzt. Ein Honeypot der Forscher (ein verwundbares System als Köder für Angriffe) verzeichnete Attacken, die darauf abzielten, Rechenleistung für Cryptomining abzuziehen. Allerdings führte der Angriff auf dem Honeypot zu einem Systemabsturz, weshalb derzeit auch an der Wirksamkeit der eingesetzten Schadsoftware gezweifelt wird. Des Weiteren erläutern die Sicherheitsforscher, dass trotz des weitaus höheren Potenzials die Schadsoftware sich nicht wie ein selbständig arbeitender Wurm verhält. Stattdessen suchen die Angreifer nach verwundbaren Systemen und attackieren diese zielgerichtet.
+Furcht vor zweitem WannaCry
+Microsoft warnte seinerzeit davor, dass sich BlueKeep vergleichbar mit WannaCry automatisiert verbreiten und riesige Schäden anrichten könnte. Die Ransomware-Attacke ""WannaCry"" hatte im Mai 2017 in kürzester Zeit über 200.000 Windows-Systeme lahmgelegt. Betroffen waren neben unzähligen Rechnern von Privatpersonen auch die Systeme von Unternehmen, Behörden und Krankenhäusern. Zu den Geschädigten zählten unter anderem 48 Organisationen des staatlichen Gesundheitsdienstes NHS in England, der Telecom-Konzern Telefónica in Spanien sowie der US-amerikanische Versanddienst FedEx und der französische Autobauer Renault. Hierzulande waren teilweise digitale Anzeigetafeln sowie Ticketautomaten der Deutschen Bahn ausgefallen.
+Verwandte Themen
+
+
+Betriebssystem
+
+
+Microsoft
+
+
+Viren & Würmer
+
+
+Windows
+
+
+Windows 7
+
+
+Windows 8
+
+
+Windows Vista
+
+
+Windows XP
+
+
+Malware
+
+
+Trojaner
+
+
+Windows 10
+
+
+Hacker
+
+
+Sicherheit
+
+
+mehr >>
+
+
+
+
+
+",de,"
+
+
+
+
+
+
+
+
+
+
+
+Hackers use BlueKeep Gap for attacks for the first time
+04 Nov 2019 by Stefan Bordel
+
+For the first time, cybercriminals use the highly explosive BlueKeep vulnerability in Windows for attacks in the network. Fortunately, the malware used does not work very reliably.
+
+
+As early as April, Microsoft had rolled out a comprehensive security patch to close the BlueKeep vulnerability. Even the OS Oldie Windows XP was considered by the Redmondern with an update, which again illustrates the urgency of the patch.
+The error is in the Remote Desktop Services (RDP), which are used for remote maintenance. Attackers can use manipulated packets to access the RDP service of a vulnerable Windows system as an access point. Neither authentication nor user input is required to take over the affected system.
+
+
+
+Security experts at Krypto Logic have now first encountered an attack in the wild, apparently using the BlueKeep vulnerability. A research honeypot (a vulnerable system used as a bait for attacks) detected attacks designed to drain computing power for cryptomining. However, the attack on the honeypot led to a system crash, which is why the effectiveness of the malware used is currently in doubt. Furthermore, the security researchers explain that the malware does not behave like a self-sufficient worm, despite its much higher potential. Instead, the attackers search for vulnerable systems and attack them purposefully.
+Fear of second WannaCry
+At the time, Microsoft warned that BlueKeep would spread like WannaCry automated and could cause huge damage. In May 2017, the ransomware attack ""WannaCry"" had paralyzed more than 200,000 Windows systems in a very short time. In addition to countless computers of private individuals, the systems of companies, authorities and hospitals were also affected. Among the injured were 48 organizations of the National Health Service NHS in England, the Telecom Group Telefónica in Spain and the US American shipping service FedEx and the French carmaker Renault. In this country partly digital scoreboards as well as ticket machines of the German course had failed.
+Related topics
+
+
+operating system
+
+
+Microsoft
+
+
+Viruses & worms
+
+
+Windows
+
+
+Windows 7
+
+
+Windows 8
+
+
+Windows Vista
+
+
+Windows XP
+
+
+Malware
+
+
+Trojans
+
+
+Windows 10
+
+
+hacker
+
+
+safety
+
+
+more >>
+
+
+
+
+
+"

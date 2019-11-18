@@ -1,0 +1,90 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Что нового в iOS 13.3 beta 1
+06 Nov 2019, 10:00 by Иван Кузнецов
+Вчера вечером Apple возобновила программу бета-тестирования фирменных операционных систем, представив первую тестовую сборку iOS 13.3. Это уже шестое обновление, выходящее после iOS 13, с момента релиза которой - на минуточку - прошло меньше двух месяцев. Однако, в отличие от предыдущих апдейтов, этому предстоит стать по-настоящему самостоятельным, поскольку Apple уже реализовала все функции, которые представила на WWDC’2019, а значит, iOS 13.3, скорее всего, будет содержать несколько значимых нововведений, нигде не фигурировавших ранее.
+
+
+
+iOS 13.3 - третий функциональный апдейт, вышедший для iOS 13, вот только функциональных нововведений он практически не содержит
+
+Читайте также: Агентство по кибербезопасности США призывает срочно установить iOS 13.2
+
+Поскольку это только первая бета-версия, рассчитывать на большое количество новых функций не приходится. Обычно ключевые нововведения начинают появляться с выходом второй или даже третьей сборки, а до того момента Apple ограничивается незначительными изменениями и исправлениями, призванными сделать использование операционной системы более удобным. Тем более, что проблем предыдущие обновления доставили немало – от преждевременной разрядки до проблем с оперативной памятью.
+Какие изменения произошли с iOS 13.3
+
+Исправлен баг, который не позволял устройствам на iOS 13.2 удерживать в памяти большое количество приложений;
+В Настройках появился отдельный пункт для отключения клавиатуры с эмодзи;
+Появилась возможность ограничить общение с выбранными абонентами через «Экранное время»;
+Обновлённая иконка Apple Watch на пиктограмме приложения Watch;
+Появилась возможность настройки управления AirPods Pro через «Универсальный доступ»;
+На iPad появилась возможность переключаться между разными режимами AirPods Pro через Пункт управления.
+
+
+Читайте также: iPhone разряжается раньше времени? Установите iOS 13.2
+
+Список нововведений, прямо скажем, оказался довольно неприметным. В конце концов, ради всего того, что появилось в iOS 13.3, совершенно не стоило распыляться на обновление второго порядка, ведь, по сути, ничего, кроме исправлений, там нет. Однако не следует забывать, что это только первая бета, возможности которой, скорее всего, будут расширяться по мере выхода новых сборок. С iOS 13.2, к слову, было тоже самое. Если помните, поддержка технологии Deep Fusion появилась только во второй бета-версии, в то время как первая, кажется, имела ещё меньше нововведений, чем удалось найти в iOS 13.3.
+Исправная работа лучше новых функций
+Впрочем, не следует исключать и другой исход, при котором iOS 13.3 не сможет похвастать новыми функциями, а единственными нововведениями, которые появятся в обновлении, будут те, что уже описаны выше. Дело в том, что в последнее время Apple слишком уж активно взялась за выпуск обновлений для iOS, сосредотачиваясь в большей степени на исправлении ошибок и уязвимостей, а не на расширении её возможностей. Ведь какая разница, сколько функций в операционной системе, если они всё равно работают через раз? Поэтому, думаю, что выражу общее мнение, если признаю, что лучше бы Apple наладила работу iOS, а новых функций мы подождём и до выхода iOS 14.
+
+Подпишись на наш чат в Telegram. Там ты сможешь обсудить все баги, с которыми столкнулся в iOS 13.
+
+В целом, кажется, iOS 13 стала одним из самых неудачных релизов Apple за последнее время. Уже давно Apple не приходилось так много и так поспешно исправлять собственные ошибки, допущенные при проектировании обновления, коих оказалось откровенно много. Достаточно зайти на официальный форум технической поддержки Apple, чтобы понять, что проблемы, с которыми сталкиваются пользователи, не ограничиваются только «недержанием» оперативной памяти и преждевременной разрядкой. Среди популярных багов числятся сбои в работе Bluetooth, Wi-Fi, GSM-модуля, мелкие системные баги, провоцирующие вылеты приложений, а иногда даже — отказ беспроводных модулей зарядки.
+
+
+",ru,"
+
+
+
+
+
+
+
+
+
+
+
+What's New in iOS 13.3 beta 1
+06 Nov 2019, 10:00 by Ivan Kuznetsov
+Last night, Apple resumed the beta program of branded operating systems, introducing the first test build of iOS 13.3. This is the sixth update coming out after iOS 13, less than two months have passed since its release - just a minute. However, unlike previous updates, this will become truly independent, since Apple has already implemented all the functions that it introduced at WWDC’2019, which means that iOS 13.3 will most likely contain several significant innovations that have never been featured anywhere before.
+
+
+
+iOS 13.3 is the third functional update released for iOS 13, but it practically does not contain functional innovations
+
+See also: US Cybersecurity Agency urges to install iOS 13.2
+
+Since this is only the first beta version, you can’t count on a large number of new features. Usually, key innovations begin to appear with the release of the second or even third assembly, and until that moment Apple is limited to minor changes and corrections designed to make using the operating system more convenient. Moreover, the previous updates brought a lot of problems - from premature discharge to problems with RAM.
+What changes have occurred with iOS 13.3
+
+Fixed a bug that prevented devices on iOS 13.2 from holding a large number of applications in memory;
+A new item appeared in Settings for disabling the keyboard with emoji;
+There was an opportunity to limit communication with selected subscribers through “Screen time”;
+Updated Apple Watch icon on the Watch app icon;
+There is a possibility to configure AirPods Pro control through “Universal Access”;
+The iPad has the ability to switch between different modes of AirPods Pro through the Control Center.
+
+
+See also: iPhone discharges ahead of time? Install iOS 13.2
+
+The list of innovations, frankly, turned out to be quite inconspicuous. In the end, for the sake of everything that appeared in iOS 13.3, it was absolutely not worth spraying on a second-order update, because, in fact, there is nothing but corrections. However, we should not forget that this is only the first beta, the capabilities of which are likely to expand as new builds are released. With iOS 13.2, by the way, it was the same. If you remember, support for Deep Fusion technology appeared only in the second beta version, while the first one seemed to have even fewer innovations than were found in iOS 13.3.
+Good performance is better than new features
+However, another outcome should not be ruled out, in which iOS 13.3 will not be able to boast of new features, and the only innovations that will appear in the update will be those that are already described above. The fact is that recently Apple has too actively taken up the release of updates for iOS, focusing more on fixing bugs and vulnerabilities, rather than expanding its capabilities. After all, what's the difference, how many functions in the operating system, if they still work every other time? Therefore, I think that I will express a common opinion if I admit that it would be better if Apple adjusted the work of iOS, and we will wait until the release of iOS 14 for new features.
+
+Subscribe to our chat in Telegram. There you can discuss all the bugs you encountered in iOS 13.
+
+In general, it seems that iOS 13 has become one of the most unsuccessful releases of Apple in recent years. For a long time, Apple did not have so much and so hasty to correct its own mistakes made when designing the update, of which there were frankly many. It is enough to go to the official Apple Technical Support Forum to understand that the problems that users face are not limited only to “incontinence” of RAM and premature discharge. Among the popular bugs, there are malfunctions in the operation of Bluetooth, Wi-Fi, GSM-module, minor system bugs that provoke crashes of applications, and sometimes even the failure of wireless charging modules.
+
+
+"

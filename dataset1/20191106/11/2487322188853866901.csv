@@ -1,0 +1,62 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Mozilla по умолчанию запретит всплывающие запросы о пушах от сайтов в настольной версии Firefox к 2020 году
+06 Nov 2019, 11:08 by Дамир Камалетдинов
+Больше никаких «хотите получать уведомления?» при первом заходе на сайт.
+
+
+
+Mozilla изменит работу со всплывающими уведомлениями о веб-пушах от сайтов в настольной версии Firefox. С января 2020 года браузер перестанет их показывать, а окно для подписки нужно будет активировать вручную. Об этом говорится в блоге Mozilla.
+Нововведение появится в 72-й версии Firefox, которую собираются выпустить в январе 2020 года. Браузер перестанет показывать всплывающие окна с просьбой подписаться на веб-пуши: вместо этого пользователям придётся вручную вызвать форму, нажав на кнопку рядом с URL-адресом и согласиться на уведомления.
+
+
+​Как будут работать запросы после обновления FirefoxИзображение Mozilla
+
+Как пояснили в Mozilla, такое решение приняли после результатов исследования, которые показали, насколько непопулярны такие уведомления у пользователей. Согласно статистике компании, 99% пользователей не принимают эти уведомления, а 48% отказываются от веб-пушей. Исследование также показало, что повторная просьба подписаться на уведомления крайне редко заставляет пользователей изменить своё мнение.
+Как отметили на ZDNet, браузерные уведомления не просто раздражают пользователей, но и зачастую используются вредоносными сайтами для загрузки вирусов или показа рекламы. Один из опрошенных сайтом экспертов пояснил, что «спам уведомлениями» стал основным источником жалоб пользователей, заменив рекламные программы.
+Несмотря на то, что нововведение появится только в январском обновлении, в 70 версию Firefox добавили небольшие изменения для борьбы с уведомлениями. При посещении сайта, который хочет спросить о веб-пушах ответ «не сейчас» заменили на «никогда» и при его выборе сайт больше не сможет спросить об этом повторно.
+Mozilla стала первой компанией, объявившей о планах по борьбе с уведомлениями по умолчанию. Google пока только экспериментирует с такой же функцией в Chrome.
+
+
+",ru,"
+
+
+
+
+
+
+
+
+
+
+
+Mozilla by default will ban pop-up requests for push from sites in the desktop version of Firefox by 2020
+06 Nov 2019, 11:08 by Damir Kamaletdinov
+No more ""do you want to receive notifications?"" When you first visit the site.
+
+
+
+Mozilla will change work with pop-up notifications about web push from sites in the desktop version of Firefox. From January 2020, the browser will stop showing them, and the subscription window will need to be activated manually. This is stated on the Mozilla blog.
+The innovation will appear in the 72nd version of Firefox, which they are going to release in January 2020. The browser will stop showing pop-ups asking you to subscribe to web push: instead, users will have to manually call the form by clicking on the button next to the URL and agree to notifications.
+
+
+How Requests Will Work After Updating Firefox Mozilla Image
+
+As explained in Mozilla, this decision was made after the results of the study, which showed how unpopular such notifications are with users. According to company statistics, 99% of users do not accept these notifications, and 48% refuse web pushing. The study also found that repeated requests to subscribe to notifications rarely make users change their minds.
+As noted on ZDNet, browser notifications not only annoy users, but are also often used by malicious sites to download viruses or display ads. One of the experts polled by the site explained that “spam notifications” has become the main source of user complaints, replacing advertising programs.
+Despite the fact that the innovation will appear only in the January update, in the 70 version of Firefox added small changes to deal with notifications. When you visit a site that wants to ask about web pushing, the answer “not now” has been replaced by “never” and when you select it, the site will no longer be able to ask about it again.
+Mozilla was the first company to announce plans to deal with default notifications. Google is just experimenting with the same feature in Chrome.
+
+
+"

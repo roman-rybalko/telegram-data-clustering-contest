@@ -1,0 +1,56 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+
+iOS 13.3 déjà disponible en bêta pour les développeurs
+
+
+06 Nov 2019, 10:09
+
+Pas le temps de s’ennuyer décidément au pays d’iOS depuis la sortie de la version 13, la troisième révision étant déjà sur les rails, en deux mois et demi seulement.
+Disponible uniquement aux développeurs pour l’instant, elle apporte quelques changements bienvenus, comme la possibilité de masquer les autocollants Memojis dans le clavier virtuel, ou encore la limitation optionnelle dans Temps d’écran de la durée allouée à Téléphone, FaceTime et Messages pour tout ou partie des contacts.
+On attend cependant qu’Apple réagisse sur un problème dont les utilisateurs se plaignent beaucoup depuis iOS 13.2 : un changement dans la gestion de la mémoire provoquant des soucis réguliers avec les applications. Le symptôme le plus commun est la perte de l’état sauvegardé au passage en arrière-plan.
+En revenant à l’application, elle se recharge comme si elle était lancée pour la première fois, nécessitant plus de temps et des manipulations supplémentaires. Sur YouTube par exemple, mettre en pause une vidéo puis y revenir plus tard renverra vers l’écran d’accueil de l’application. Idem avec Safari quand un formulaire était ouvert, les données étant perdues.
+Les premiers retours ne sont pour l’instant guère optimistes. Sur Twitter, Aaron Zollo indiquait dans un premier temps qu’ouvrir 32 applications sur un iPhone 11 Pro Max et y revenir n’avait engendré aucun rechargement. Malheureusement, le même test quelques minutes plus tard a finalement provoqué le rechargement d’une partie des applications.
+On se demande si ce changement ne serait pas à l’origine des très forts ralentissements visibles dans Twitter depuis iOS 13.2, au point de figer l’application pendant de longues secondes. Une nouvelle version de Twitter est disponible depuis cette nuit, il faudra donc vérifier si le problème n’a pas été réglé de ce côté.
+La bêta d'iOS 13.3 devrait être prochainement disponible à tous via le programme de test public
+
+
+",fr,"
+
+
+
+
+
+
+
+
+
+
+
+
+iOS 13.3 already available in beta for developers
+
+
+06 Nov 2019, 10:09
+
+No time to get bored in the country of iOS since the release of version 13, the third review is already on track, in two months and a half.
+Available only to developers for now, it makes some welcome changes, such as the ability to hide Memojis stickers in the virtual keyboard, or the optional limitation in Screen Time of the time allotted to Phone, FaceTime and Messages for all or part of the contacts.
+However, Apple is expected to react to a problem that users have been complaining about since iOS 13.2: a change in memory management that causes regular problems with applications. The most common symptom is the loss of the saved state when passing in the background.
+Returning to the app, it recharges as if it were launched for the first time, requiring more time and additional manipulations. On YouTube, for example, pausing a video and then returning to it later will return to the home screen of the app. Ditto with Safari when a form was open, the data was lost.
+The first returns are for the moment hardly optimistic. On Twitter, Aaron Zollo said at first that opening 32 applications on an iPhone 11 Pro Max and return there had generated no reloading. Unfortunately, the same test a few minutes later finally caused the reloading of some of the applications.
+One wonders if this change would not be at the origin of the very strong slowdowns visible in Twitter since iOS 13.2, to the point of freezing the application during long seconds. A new version of Twitter is available since last night, so check if the problem has not been fixed on this side.
+The beta of iOS 13.3 should be available soon to all via the public test program
+
+
+"

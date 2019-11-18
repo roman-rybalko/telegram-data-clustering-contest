@@ -1,0 +1,84 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Sketchy Android keyboard app with 40M downloads makes money off unauthorized purchases
+04 Nov 2019, 03:12 by Ravie Lakshmanan
+Security researchers have issued warning for Ai.type, an Android third-party keyboard app, that’s been found stealthily signing up users for millions of unauthorized purchases of premium digital content.
+The findings — disclosed by mobile tech company Upstream’s security platform Secure-D — reveal the app was downloaded over 40 million times. Troublingly, it’s active on millions of devices to this date, despite being removed from the Google Play Store in June.
+In addition, Ai.type delivers invisible ads and generates phony clicks, while requiring broad permissions to use the app — including access to text messages, photos, videos, contacts, and on-device storage.
+“Ai.type carries out some of its activity hiding under other identities, including disguising itself to spoof popular apps such as Soundcloud. The app‘s tricks have also included a spike in suspicious activity once removed from the Google Play store,” the researchers outlined.
+The modus operandi
+Upstream said static and network traffic analysis of the app showed the APK file contained libraries (aka SDKs) with obfuscated code that tracked back to advertising trackers.
+“The embedded SDK frameworks Secure-D found were designed to stealthily connect the user to advertising services, then execute dynamically provided code that can be used to create fake ‘clicks’ on the mobile advertisements served to the user’s device,” the researchers noted.
+“The initial link for the advertising trackers was hidden, while the messages containing information needed by ai.type to perform the malicious actions was encrypted,” they added.
+The SDKs were found to use the ad tracker libraries to access online ads, and then downloading extra JavaScript code to perform automated clicks without any user intervention.
+An unintended consequence of the unseen background adware activity is the impact on battery life and the device’s overall performance, as well as depleting mobile data.
+
+
+Credit: Secure-DThe subscription verification texts to premium digital services
+
+It doesn’t stop there. The app also subscribed users to premium digital services by adding charges to their pre-paid mobile-airtime minutes, a mobile payment solution that’s popular in many emerging markets, allowing subscribers to exchange it for cash or spend in shops.
+In all, Upstream detected 14 million suspicious transaction requests from 110,000 unique devices that downloaded the Ai.type keyboard, leading the company to block the attempts.
+If these transactions had not been detected and blocked, the app could have potentially costed victims a collective $18 million in unwanted charges, the researchers said.
+Although the suspicious activity was recorded from as many as 13 countries, the rates were significantly higher in Egypt and Brazil.
+Growing mobile ad fraud problem
+The fact that an Android app removed from Google Play continues to be a source of adware points to the growing challenges associated with containing malware-infested apps on third-party Android marketplaces.
+It’s worth pointing out that the app is still available on Apple’s App Store, but it’s no longer present on Amazon Appstore. We’ve reached out to Ai.type for further clarification, and we’ll update the story if we hear back.
+Over the past several months, the official app stores for iOS and Android have been found to harbor several apps that commit ad fraud.
+For its part, Ai.type suffered from a security incident of its own after the personal data of over 31 million users was leaked online in 2017. What’s more, it was caught sending its users’ keystroke data to its servers in plaintext back in 2011.
+With compromised mobile apps and mobile ad fraud becoming a fast-growing problem, it’s crucial that you don’t fall victim to data theft and unwanted purchases or subscriptions
+To safeguard yourself, the same rules of security hygiene apply: stick to the Play Store for downloading apps and avoid sideloading from other sources. More importantly, scrutinize the reviews, developer details, and the list of requested permissions before installing any app.
+
+
+",en,"
+
+
+
+
+
+
+
+
+
+
+
+Sketchy Android keyboard app with 40M downloads makes money off unauthorized purchases
+04 Nov 2019, 03:12 by Ravie Lakshmanan
+Security researchers have issued warning for Ai.type, an Android third-party keyboard app, that’s been found stealthily signing up users for millions of unauthorized purchases of premium digital content.
+The findings — disclosed by mobile tech company Upstream’s security platform Secure-D — reveal the app was downloaded over 40 million times. Troublingly, it’s active on millions of devices to this date, despite being removed from the Google Play Store in June.
+In addition, Ai.type delivers invisible ads and generates phony clicks, while requiring broad permissions to use the app — including access to text messages, photos, videos, contacts, and on-device storage.
+“Ai.type carries out some of its activity hiding under other identities, including disguising itself to spoof popular apps such as Soundcloud. The app‘s tricks have also included a spike in suspicious activity once removed from the Google Play store,” the researchers outlined.
+The modus operandi
+Upstream said static and network traffic analysis of the app showed the APK file contained libraries (aka SDKs) with obfuscated code that tracked back to advertising trackers.
+“The embedded SDK frameworks Secure-D found were designed to stealthily connect the user to advertising services, then execute dynamically provided code that can be used to create fake ‘clicks’ on the mobile advertisements served to the user’s device,” the researchers noted.
+“The initial link for the advertising trackers was hidden, while the messages containing information needed by ai.type to perform the malicious actions was encrypted,” they added.
+The SDKs were found to use the ad tracker libraries to access online ads, and then downloading extra JavaScript code to perform automated clicks without any user intervention.
+An unintended consequence of the unseen background adware activity is the impact on battery life and the device’s overall performance, as well as depleting mobile data.
+
+
+Credit: Secure-DThe subscription verification texts to premium digital services
+
+It doesn’t stop there. The app also subscribed users to premium digital services by adding charges to their pre-paid mobile-airtime minutes, a mobile payment solution that’s popular in many emerging markets, allowing subscribers to exchange it for cash or spend in shops.
+In all, Upstream detected 14 million suspicious transaction requests from 110,000 unique devices that downloaded the Ai.type keyboard, leading the company to block the attempts.
+If these transactions had not been detected and blocked, the app could have potentially costed victims a collective $18 million in unwanted charges, the researchers said.
+Although the suspicious activity was recorded from as many as 13 countries, the rates were significantly higher in Egypt and Brazil.
+Growing mobile ad fraud problem
+The fact that an Android app removed from Google Play continues to be a source of adware points to the growing challenges associated with containing malware-infested apps on third-party Android marketplaces.
+It’s worth pointing out that the app is still available on Apple’s App Store, but it’s no longer present on Amazon Appstore. We’ve reached out to Ai.type for further clarification, and we’ll update the story if we hear back.
+Over the past several months, the official app stores for iOS and Android have been found to harbor several apps that commit ad fraud.
+For its part, Ai.type suffered from a security incident of its own after the personal data of over 31 million users was leaked online in 2017. What’s more, it was caught sending its users’ keystroke data to its servers in plaintext back in 2011.
+With compromised mobile apps and mobile ad fraud becoming a fast-growing problem, it’s crucial that you don’t fall victim to data theft and unwanted purchases or subscriptions
+To safeguard yourself, the same rules of security hygiene apply: stick to the Play Store for downloading apps and avoid sideloading from other sources. More importantly, scrutinize the reviews, developer details, and the list of requested permissions before installing any app.
+
+
+"

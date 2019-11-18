@@ -1,0 +1,82 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Malwarebytes 4 trägt sich als Premium jetzt in Windows-Sicherheit ein
+05 Nov 2019, 10:22 by moinmoin
+Malwarebytes 4 ist erschienen. Viele Änderungen wurden vorgenommen. Die Version 4 ist nun nur noch ab Windows 7 einsetzbar. Ältere Versionen müssen bei der Version 3.5 bleiben. Diese wird aber weiterhin aktualisiert.
+Die Kurzfassung der Änderungen: Auch die Oberfläche wurde komplett überarbeitet (Siehe Bilder). Unter Windows 10 wird die Premium-Version nun als primäre Antivirenlösung unter Windows-Sicherheit angezeigt. Die neue Katana Engine soll einen verbesserten und schnelleren Scan ermöglichen und bietet eine bessere Zero-Hour-Erkennung.
+
+
+
+
+
+
+
+
+
+Die Free-Version bietet weiterhin die Möglichkeit seinen Rechner nach Malware zu durchsuchen. Wer die alte Premium-Version hat, wird durch das Abo für 39,99 pro Jahr automatisch das Update erhalten.
+Aber es gibt auch bekannte Probleme
+
+A working internet connection is required for the installer (If you won’t have a connection after downloading then use the offline Installer)Under certain circumstances the installer requires a fully clean install to complete
+The UI can show issues under certain circumstances with High DPI and certain screen resolutions or configurations
+Copy can still be provisional in certain screens and or wrong or missing
+Self-Protection Early Start will prevent Windows Firewall Control from opening
+Controlled Folder Access (CFA) will block certain advanced Installer options
+
+Als Freeware und ab und an mal zusätzlich den Rechner scannen vielleicht ganz nett. Aber es gibt auch andere Möglichkeiten. Ob man Malwarebytes einsetzt oder nicht, muss jeder natürlich selbst entscheiden. Wer die komplette Changelog lesen möchte, findet alles weitere dazu hier: forums.malwarebytes. Download: de.malwarebytes
+
+Danke an Lutz für die Bilder.
+
+
+
+",de,"
+
+
+
+
+
+
+
+
+
+
+
+Malwarebytes 4 is now premium in Windows security
+05 Nov 2019, 10:22 by moinmoin
+Malwarebytes 4 has appeared. Many changes have been made. Version 4 can now only be used as of Windows 7. Older versions must stay with version 3.5. This will continue to be updated.
+The summary of the changes: The surface has been completely revised (see pictures). On Windows 10, the premium version will now appear as the primary antivirus solution under Windows security. The new Katana Engine is designed to provide an improved and faster scan and provides better zero-hour detection.
+
+
+
+
+
+
+
+
+
+The free version also offers the possibility to search his computer for malware. Those who have the old premium version will automatically receive the update by subscribing for $ 39.99 per year.
+But there are also known problems
+
+A working Internet connection is required for the installer. Under certain circumstances the installer requires a fully clean install to complete
+The UI can show issues with High DPI and certain screen resolutions or configurations
+Copy can be fixed in certain screens and or wrong or missing
+Self-Protection Early Start will prevent Windows Firewall Control from opening
+Controlled Folder Access (CFA) wants to block certain advanced installer options
+
+As freeware and from time to time additionally scan the calculator, maybe very nice. But there are other possibilities. Whether one uses Malwarebytes or not, everyone must of course decide for themselves. If you want to read the complete changelog, you will find everything else here: forums.malwarebytes. Download: de.malwarebytes
+
+Thanks to Lutz for the pictures.
+
+
+
+"

@@ -1,0 +1,120 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Analysis
+Analysts Laugh Off Recent 'One-Whale Theory' of BTC's 2017 Bull Run
+07 Nov 2019, 16:55 by Stephen O'Neal
+Just a single player or entity was allegedly responsible for Bitcoin’s historic price surge, as suggested by a recently updated academic paper titled “Is Bitcoin Really Un-Tethered?” Originally released in the summer of last year, the study claimed that major Bitcoin (BTC) price manipulation occurred in winter 2017, prompting top cryptocurrencies to reach their all-time highs. The Tether (USDT) stablecoin and its issuer Bitfinex played a key role in the alleged hoax, the researchers also argued.
+The newer version of the paper maintains the same assumption, but additionally asserts that a single whale controlled the price movement. Bitfinex denies all allegations, calling the publication “a transparent attempt to use the semblance of academia for a mercenary money grab.” Analysts are not convinced either — in their view, while the crypto market is not immune to manipulation, saying that someone could single-handedly drive the prices up to such an extent is quite a stretch.
+Tether untethered: Bitfinex’s legal troubles
+Originally launched in 2014 as Realcoin, Tether was one of the first stablecoins to claim that it is backed by the United States dollar at a 1:1 ratio. Bitfinex is a major Hong Kong-based crypto exchange. Both are operated by the same company, iFinex Inc., which is registered in the British Virgin Islands.
+The “Is Bitcoin Really Un-Tethered?” study was first published in June 2018. Its authors — John M. Griffin and Amin Shams of the University of Texas and University of Ohio respectively — came to the conclusion that Tether was “used to provide price support and manipulate cryptocurrency prices” after studying transaction patterns of the stablecoin.
+According to the researchers, Tether and Bitfinex were responsible for as much as half of the Bitcoin price rise in December 2017, when the cryptocurrency reached its all-time high at around $20,000 per token. “Using algorithms to analyze the blockchain data, we find that purchases with Tether are timed following market downturns and result in sizable increases in Bitcoin prices,” the paper read, elaborating:
+“Less than 1% of hours with such heavy Tether transactions are associated with 50% of the meteoric rise in Bitcoin and 64% of other top cryptocurrencies.”
+Griffin and Shams’ study was widely discussed in mainstream media, while select industry participants — namely fellow research firm Chainalysis — said the results “seem credible.” At the time, however, Tether and Bitfinex had already become subject to controversy.
+In 2017, Bitfinex failed to have its accounts audited by a third party to prove that “every tether is always backed 1-to-1, by traditional currency held in our reserves,” as the company’s website stated at the time.
+After the community urged Bitfinex to release the documents, the firm threatened legal action against critics. Then, United States regulators took notice of the situation. By the end of the year, Bitfinex had received government subpoenas from the Commodity Futures Trading Commission (CFTC).
+In June 2018, the company finally produced a document supposedly confirming that all Tethers were backed by a corresponding amount of U.S. dollars. However, the alleged piece of evidence turned out to be a memorandum completed by a law firm instead of a comprehensive audit. As Tether’s general counsel Stuart Hoegner explained at the time, mainstream accounting firms would not conduct official audits on cryptocurrency companies.
+This year, the firm continued to face legal problems. In April 2019, it was revealed that the New York Attorney General’s office had alleged that the crypto exchange lost $850 million and subsequently used funds from affiliated stablecoin operator Tether to secretly cover the shortfall. The funds were allegedly lost to a Panamanian payment processor known as Crypto Capital Corp.
+
+
+Related: Bitfinex Cries Fraud as Crypto Capital Executive Indicted by US
+
+
+Notably, the legal documents released by Tether during the CFTC probe showed that the company only had 74% of cash reserves in its bank accounts to back circulating Tether tokens. Prior to that, Tether had altered its website to state the full breakdown of how the coin is backed. Currently, the stablecoin’s website simply states that “all tethers are backed 100% by Tether's reserves,” therefore avoiding any direct mentions of U.S. dollars.
+Finally, in October this year, New York-headquartered legal firm Roche Freedman filed a class-action lawsuit against Tether and Bitfinex, accusing them of defrauding investors, manipulating markets and concealing illicit proceeds. According to the firm’s founding partner Kyle Roche, Tether and Bitfinex are responsible for creating the “largest bubble in history.”
+Tether has been refuting all allegations. Last month, the company released a statement in anticipation of the lawsuit:
+“All Tether tokens are fully backed by reserves and are issued pursuant to market demand, and not for the purpose of controlling the pricing of crypto assets. It is irresponsible to suggest that Tether enables illicit activity due to its efficiency, liquidity and wide-scale applicability within the cryptocurrency ecosystem.”
+One whale manipulated the whole market? Experts are skeptical
+Now, Griffin and Shams have updated their study to claim that a single whale was responsible for Bitcoin’s historic price surge. Specifically, they argue that an analysis of Tether and Bitcoin transactions on Bitfinex from March 1, 2017 through March 31, 2018 consolidates their view that a single entity is behind the manipulation: “This pattern is only present in periods following printing of Tether, driven by a single large account holder, and not observed by other exchanges.” The academics continue to claim that:
+“Simulations show that these patterns are highly unlikely to be due to chance. This one large player or entity either exhibited clairvoyant market timing or exerted an extremely large price impact on Bitcoin that is not observed in aggregate flows from other smaller traders.”
+According to Griffin and Shams, the patterns “are consistent either with one large player purchasing Tether with cash at Bitfinex and then exchanging it for Bitcoin, or Tether being printed without cash backup and pushed out through Bitfinex in exchange
+for Bitcoin.” Nevertheless, when contacted by Cointelegraph, the scholars could not specify who exactly was behind the price movement. “We don’t know the country of origin,” Griffin wrote in an email, “just that it’s a large percentage of the volume on Bitfinex.”
+Meanwhile, market analysts seem perplexed by the new development. Juan Villaverde and Martin Weiss of Weiss Ratings agency called it “preposterous” when speaking with Cointelegraph. “For one, it shows that multiple altcoins surged in different patterns at different times, often leading Bitcoin,” they wrote, adding:
+“Furthermore, there is abundant anecdotal evidence that throws great doubt on the one-large-player theory. For example, exchanges were swamped and not able to onboard new customers. Google searches for “Bitcoin” and “cryptocurrency” were off the charts. New crypto businesses and ICOs were popping up every day. All of this — and more — suggests that the crypto surge of 2017 was very much a mass phenomenon, with heavy public participation.”
+Similarly, eToro senior analyst Mati Greenspan told Cointelegraph that “this isn’t something that could have possibly been caused by one whale”:
+“Diligent readers will no doubt realize that this report is actually just a repost of an already debunked research paper, albeit with added details and peer review. The simple matter is though that there’s no amount of peer review that will make us forget what we’ve clearly witnessed.”
+A representative for WhaleAlert, a service dedicated to tracking large cryptocurrency transactions, is also skeptical about the academics’ one-whale theory. He told Cointelegraph: 
+“2017 was a crazy time and in our opinion it would be unlikely that one single entity was responsible for the price surges/drops, but in the near future we will have more historical transfer data that can possibly give a more clear answer on the matter.”
+Many community members share similar views. For instance, Jeremy Allaire, the CEO of payment company Circle, tweeted that the Bitcoin price highs in 2017 were not the result of a single trader on an exchange: “Exchanges use omni-bus wallets that pool all customer balances and transactions on and off the exchange.”
+Additionally, as reported by Cointelegraph, Tether’s market cap has risen fourfold from $1 billion to $4.1 billion since December 2017, while Bitcoin’s price is now 50% lower. Thus, the issuance of new USDT stablecoin tokens does not seem to directly correlate with the BTC/USD trading pair.
+Bitfinex also disavows the new paper
+The company strongly denies all allegations, arguing that the paper’s sole purpose was to launch “a parasitic lawsuit.” A section of a statement sent to Cointelegraph by the company’s representative — and authored by general counsel Stuart Hoegner — reads:
+“It’s important for the public to understand that the paper was likely authored for the very purpose of launching a parasitic lawsuit. In any event, this is a transparent attempt to use the semblance of academia for a mercenary money grab. Updates or not, the paper lacks academic rigor and is foundationally flawed because it employs a grossly incomplete data set, erroneous statistical methodology and offers no proof of market manipulation to support its conclusions.”
+Parts of this comment were published by Bloomberg on Nov. 4, which confuses Griffin. “When he made that statement the paper wasn’t public so not sure how he would know what’s in the paper,” the academic told Cointelegraph, adding:
+“They also said each tether was always backed with one US dollar. Our original paper as well as this one presents evidence that Tethers are not always backed with US dollars. You can check for yourself but i believe in Court statements that Bitfinex/tether has admitted that Tethers were not always backed with US dollars. Our study is quite robust. If they want to publish their own study and give internal data to prove their claims they certainly can but have yet to do so.”
+So, who was it? 
+Still, that does not seem to fully explain the new one-whale theory. “The correlation the authors find is there,” Villaverde and Weiss told Cointelegraph after looking through the updated research. “But correlation does not mean causation, and we would caution against drawing too many conclusions from such a one-dimensional look at crypto markets in the 2017 period.”
+The analysts added that while it is possible for large players to manipulate prices to some extent and to exaggerate certain price movements at any given time, no single individual is capable of creating such broad-based moves, “Nor was it possible for any player or group, no matter how large, to prevent the subsequent crash,” Villaverde and Weiss concluded.
+
+
+",en,"
+
+
+
+
+
+
+
+
+
+
+
+Analysis
+Analysts Laugh Off Recent 'One-Whale Theory' of BTC's 2017 Bull Run
+07 Nov 2019, 16:55 by Stephen O'Neal
+Just a single player or entity was allegedly responsible for Bitcoin’s historic price surge, as suggested by a recently updated academic paper titled “Is Bitcoin Really Un-Tethered?” Originally released in the summer of last year, the study claimed that major Bitcoin (BTC) price manipulation occurred in winter 2017, prompting top cryptocurrencies to reach their all-time highs. The Tether (USDT) stablecoin and its issuer Bitfinex played a key role in the alleged hoax, the researchers also argued.
+The newer version of the paper maintains the same assumption, but additionally asserts that a single whale controlled the price movement. Bitfinex denies all allegations, calling the publication “a transparent attempt to use the semblance of academia for a mercenary money grab.” Analysts are not convinced either — in their view, while the crypto market is not immune to manipulation, saying that someone could single-handedly drive the prices up to such an extent is quite a stretch.
+Tether untethered: Bitfinex’s legal troubles
+Originally launched in 2014 as Realcoin, Tether was one of the first stablecoins to claim that it is backed by the United States dollar at a 1:1 ratio. Bitfinex is a major Hong Kong-based crypto exchange. Both are operated by the same company, iFinex Inc., which is registered in the British Virgin Islands.
+The “Is Bitcoin Really Un-Tethered?” study was first published in June 2018. Its authors — John M. Griffin and Amin Shams of the University of Texas and University of Ohio respectively — came to the conclusion that Tether was “used to provide price support and manipulate cryptocurrency prices” after studying transaction patterns of the stablecoin.
+According to the researchers, Tether and Bitfinex were responsible for as much as half of the Bitcoin price rise in December 2017, when the cryptocurrency reached its all-time high at around $20,000 per token. “Using algorithms to analyze the blockchain data, we find that purchases with Tether are timed following market downturns and result in sizable increases in Bitcoin prices,” the paper read, elaborating:
+“Less than 1% of hours with such heavy Tether transactions are associated with 50% of the meteoric rise in Bitcoin and 64% of other top cryptocurrencies.”
+Griffin and Shams’ study was widely discussed in mainstream media, while select industry participants — namely fellow research firm Chainalysis — said the results “seem credible.” At the time, however, Tether and Bitfinex had already become subject to controversy.
+In 2017, Bitfinex failed to have its accounts audited by a third party to prove that “every tether is always backed 1-to-1, by traditional currency held in our reserves,” as the company’s website stated at the time.
+After the community urged Bitfinex to release the documents, the firm threatened legal action against critics. Then, United States regulators took notice of the situation. By the end of the year, Bitfinex had received government subpoenas from the Commodity Futures Trading Commission (CFTC).
+In June 2018, the company finally produced a document supposedly confirming that all Tethers were backed by a corresponding amount of U.S. dollars. However, the alleged piece of evidence turned out to be a memorandum completed by a law firm instead of a comprehensive audit. As Tether’s general counsel Stuart Hoegner explained at the time, mainstream accounting firms would not conduct official audits on cryptocurrency companies.
+This year, the firm continued to face legal problems. In April 2019, it was revealed that the New York Attorney General’s office had alleged that the crypto exchange lost $850 million and subsequently used funds from affiliated stablecoin operator Tether to secretly cover the shortfall. The funds were allegedly lost to a Panamanian payment processor known as Crypto Capital Corp.
+
+
+Related: Bitfinex Cries Fraud as Crypto Capital Executive Indicted by US
+
+
+Notably, the legal documents released by Tether during the CFTC probe showed that the company only had 74% of cash reserves in its bank accounts to back circulating Tether tokens. Prior to that, Tether had altered its website to state the full breakdown of how the coin is backed. Currently, the stablecoin’s website simply states that “all tethers are backed 100% by Tether's reserves,” therefore avoiding any direct mentions of U.S. dollars.
+Finally, in October this year, New York-headquartered legal firm Roche Freedman filed a class-action lawsuit against Tether and Bitfinex, accusing them of defrauding investors, manipulating markets and concealing illicit proceeds. According to the firm’s founding partner Kyle Roche, Tether and Bitfinex are responsible for creating the “largest bubble in history.”
+Tether has been refuting all allegations. Last month, the company released a statement in anticipation of the lawsuit:
+“All Tether tokens are fully backed by reserves and are issued pursuant to market demand, and not for the purpose of controlling the pricing of crypto assets. It is irresponsible to suggest that Tether enables illicit activity due to its efficiency, liquidity and wide-scale applicability within the cryptocurrency ecosystem.”
+One whale manipulated the whole market? Experts are skeptical
+Now, Griffin and Shams have updated their study to claim that a single whale was responsible for Bitcoin’s historic price surge. Specifically, they argue that an analysis of Tether and Bitcoin transactions on Bitfinex from March 1, 2017 through March 31, 2018 consolidates their view that a single entity is behind the manipulation: “This pattern is only present in periods following printing of Tether, driven by a single large account holder, and not observed by other exchanges.” The academics continue to claim that:
+“Simulations show that these patterns are highly unlikely to be due to chance. This one large player or entity either exhibited clairvoyant market timing or exerted an extremely large price impact on Bitcoin that is not observed in aggregate flows from other smaller traders.”
+According to Griffin and Shams, the patterns “are consistent either with one large player purchasing Tether with cash at Bitfinex and then exchanging it for Bitcoin, or Tether being printed without cash backup and pushed out through Bitfinex in exchange
+for Bitcoin.” Nevertheless, when contacted by Cointelegraph, the scholars could not specify who exactly was behind the price movement. “We don’t know the country of origin,” Griffin wrote in an email, “just that it’s a large percentage of the volume on Bitfinex.”
+Meanwhile, market analysts seem perplexed by the new development. Juan Villaverde and Martin Weiss of Weiss Ratings agency called it “preposterous” when speaking with Cointelegraph. “For one, it shows that multiple altcoins surged in different patterns at different times, often leading Bitcoin,” they wrote, adding:
+“Furthermore, there is abundant anecdotal evidence that throws great doubt on the one-large-player theory. For example, exchanges were swamped and not able to onboard new customers. Google searches for “Bitcoin” and “cryptocurrency” were off the charts. New crypto businesses and ICOs were popping up every day. All of this — and more — suggests that the crypto surge of 2017 was very much a mass phenomenon, with heavy public participation.”
+Similarly, eToro senior analyst Mati Greenspan told Cointelegraph that “this isn’t something that could have possibly been caused by one whale”:
+“Diligent readers will no doubt realize that this report is actually just a repost of an already debunked research paper, albeit with added details and peer review. The simple matter is though that there’s no amount of peer review that will make us forget what we’ve clearly witnessed.”
+A representative for WhaleAlert, a service dedicated to tracking large cryptocurrency transactions, is also skeptical about the academics’ one-whale theory. He told Cointelegraph: 
+“2017 was a crazy time and in our opinion it would be unlikely that one single entity was responsible for the price surges/drops, but in the near future we will have more historical transfer data that can possibly give a more clear answer on the matter.”
+Many community members share similar views. For instance, Jeremy Allaire, the CEO of payment company Circle, tweeted that the Bitcoin price highs in 2017 were not the result of a single trader on an exchange: “Exchanges use omni-bus wallets that pool all customer balances and transactions on and off the exchange.”
+Additionally, as reported by Cointelegraph, Tether’s market cap has risen fourfold from $1 billion to $4.1 billion since December 2017, while Bitcoin’s price is now 50% lower. Thus, the issuance of new USDT stablecoin tokens does not seem to directly correlate with the BTC/USD trading pair.
+Bitfinex also disavows the new paper
+The company strongly denies all allegations, arguing that the paper’s sole purpose was to launch “a parasitic lawsuit.” A section of a statement sent to Cointelegraph by the company’s representative — and authored by general counsel Stuart Hoegner — reads:
+“It’s important for the public to understand that the paper was likely authored for the very purpose of launching a parasitic lawsuit. In any event, this is a transparent attempt to use the semblance of academia for a mercenary money grab. Updates or not, the paper lacks academic rigor and is foundationally flawed because it employs a grossly incomplete data set, erroneous statistical methodology and offers no proof of market manipulation to support its conclusions.”
+Parts of this comment were published by Bloomberg on Nov. 4, which confuses Griffin. “When he made that statement the paper wasn’t public so not sure how he would know what’s in the paper,” the academic told Cointelegraph, adding:
+“They also said each tether was always backed with one US dollar. Our original paper as well as this one presents evidence that Tethers are not always backed with US dollars. You can check for yourself but i believe in Court statements that Bitfinex/tether has admitted that Tethers were not always backed with US dollars. Our study is quite robust. If they want to publish their own study and give internal data to prove their claims they certainly can but have yet to do so.”
+So, who was it? 
+Still, that does not seem to fully explain the new one-whale theory. “The correlation the authors find is there,” Villaverde and Weiss told Cointelegraph after looking through the updated research. “But correlation does not mean causation, and we would caution against drawing too many conclusions from such a one-dimensional look at crypto markets in the 2017 period.”
+The analysts added that while it is possible for large players to manipulate prices to some extent and to exaggerate certain price movements at any given time, no single individual is capable of creating such broad-based moves, “Nor was it possible for any player or group, no matter how large, to prevent the subsequent crash,” Villaverde and Weiss concluded.
+
+
+"

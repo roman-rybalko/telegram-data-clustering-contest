@@ -1,0 +1,118 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Computador quântico é uma ameaça ao futuro do Bitcoin? Entenda melhor
+03 Nov 2019, 19:41 by Rodrigo Borges Delfim
+O mundo da tecnologia foi sacudido pelo Google no último dia 23, quando a empresa anunciou o alcance da supremacia quântica, a partir do desenvolvimento de um computador com chip quântico.
+Considerado um marco histórico, o fato levanta uma série de questões sobre as operações criptografadas, que vão desde os sistemas bancários ao funcionamento da tecnologia blockchain – que permite a existência das criptomoedas, como o Bitcoin.
+A máquina equipada com o Sycamore, chip quântico desenvolvido pelo Google, conseguiu desvendar o segredo por trás de um gerador de números aleatórios em um espaço de apenas 200 segundos (ou seja, em 3 minutos e 20 segundos).
+Para comparação, o mesmo processo levaria nada menos que 10 mil anos para ser realizado pelo Summit, o supercomputador da IBM lançado em 2018 e considerado hoje o mais potente do mundo.
+Isso porque, na computação clássica, toda e qualquer informação é armazenada ou processada na forma de bits, em um intervalo de 0 e 1; já na na computação quântica, seus bits (ou simplesmente qubits) podem assumir inúmeros estados entre 0 e 1. Este fenômeno, chamado de superposição, cria o potencial para desenvolver cálculos de forma mais rápida do que computadores tradicionais – ou mesmo do que os chamados supercomputadores atuais, como o da IBM.
+Os computadores com capacidade quântica, portanto, podem testar um grande número de cálculos ao mesmo tempo, o que permite falsificar as assinaturas eletrônicas que assinalam transações na blockchain e fazer alterações nela – ou mesmo conceder acesso à rede para outros participantes.
+Para realizar tais operações, no entanto, os circuitos do computador quântico precisam ser mantidos em condições extremamente baixas de temperatura, próximas do zero Kelvin (simplesmente o zero grau absoluto, equivalente a -273ºC). Do contrário, tornam-se extremamente instáveis, inviabilizando qualquer operação.
+
+
+O supercomputador Summit, desenvolvido pela IBM, superado pelo Sycamore, do Google.Foto: Carlos Jones/ORNL
+
+Sendo assim, seria o computador quântico uma ameaça imediata às criptomoedas – como o Bitcoin – e à tecnologia blockchain como um todo?
+Esse debate já mobiliza a comunidade cripto há algum tempo, como mostrou o Portal do Bitcoin neste artigo de agosto de 2018. No entanto, o anúncio da operação quântica realizada pelo Google trouxe novos elementos à mesa.
+Mudança de paradigma
+Mas afinal, o que representa na prática e no cotidiano esse feito obtido pelo Google?
+Especialistas ouvidos pelo Portal do Bitcoin são unânimes em reconhecer que ocorreu de fato uma mudança de paradigma. Quanto ao impacto sobre o cidadão comum, eles avaliam que ainda vai levar algum tempo – mas não muito – para chegar ao cotidiano.
+“O que foi apresentado pela Google apenas resolve um problema pontual, nada de soluções gerais. Ainda é um computador dedicado, como tantos que já temos em indústrias de automação. Mas certamente sinaliza uma possibilidade de desenvolver um outro com outra solução dedicada, ainda sem sabermos em quê”, pondera Paulo Henrique Guimarães, doutor em Física pela Unb (Universidade de Brasília) e especialista em computação quântica.
+Na opinião do engenheiro de software e desenvolvedor de criptomoedas João Ferreira, o Girino Vey, a instabilidade do ambiente quântico ainda é um grande empecilho.
+“Por causa das limitações da própria computação quântica, essa “supremacia” não pode ser generalizada. É preciso mais avanços (em especial, computadores com mais qubits) para que operações mais complexas sejam realizadas.
+Para comparação, o chip Sycamore, do Google, continha 54 qubits, sendo que um deles pifou durante a operação histórica. O número ainda é considerado pequeno para aplicações mais práticas.
+O especialista em Bitcoin e segurança digital Hamilton Amorim, também conhecido como Algorista, aponta que tal tecnologia por enquanto deve ficar restrita ao meio militar ou a grandes laboratórios de pesquisa. Mas já arrisca uma previsão.
+“Eu acredito que em cinco anos teremos computadores quânticos embarcado em computadores comuns, como em uma placa 3D”, afirma Amorim.
+Ameaça à vista?
+E quanto à ameaça quântica às criptografias atuais? Amorim também prevê um prazo de validade para os atuais códigos diante do desenvolvimento da computação quântica. “Toda a criptografia atual no mundo tem somente mais uma década pela frente, com sorte”.
+
+
+Computação quântica vai representar um risco à criptografia atual de moedas digitais, como o Bitcoin? (Foto: Shutterstock)
+
+Apesar das vulnerabilidades do Bitcoin e da tecnologia blockchain atuais, os especialistas consultados pelo Portal do Bitcoin não enxergam as criptomoedas como ponto mais crítico.
+“Apenas parte dos algoritmos do Bitcoin são vulneráveis, e existem estratégias para se precaver contra ataques quânticos, como nunca reutilizar um mesmo endereço. O SHA256 e o RIPEMD160, usados na mineração e na geração de endereços do bitcoin, são resistentes, e apenas o ECDSA usado nas assinaturas seria vulnerável”, explica Ferreira.
+Essas possibilidades, no entanto, não são facilmente aplicadas ao setor bancário, altamente dependente dos padrões atuais de criptografia.
+“Toda a internet e todo o sistema bancário dependem de criptografia que é vulnerável a algoritmos quânticos. Você tem de considerar que a quantidade de dinheiro no sistema bancário é centenas ou mesmo milhares vezes maior que o valor de mercado do bitcoin. Nesse sentido, a economia tradicional seria a primeira a sofrer as consequências dos computadores quânticos”, pontua Ferreira.
+“No Bitcoin há desafios e temos como dar soluções. No caso dos bancos é a maior preocupação”, reforça Amorim. Ele crê ainda que os bancos, por serem “letárgicos”, só começarão a se mexer quando os primeiros ataques quânticos começarem a ganhar o noticiário.
+Período “pós-quântico”
+Ao mesmo tempo, também já estão em curso novas pesquisas na já chamada criptografia quântica, com o intuito de acompanhar esse novo patamar da computação. Uma tendência, que, inclusive, deve ser potencializada com o novo patamar estabelecimento pela operação quântica do Sycamore, do Google.
+“Hoje têm grupos de pesquisadores que trabalham com a Informação Quântica, uma área que buscam desenvolver protocolos de Criptografias Quânticas, para assim que ocorrer esse desenvolvimento já tenha algo posto para contrapor”, observa Guimarães.
+No Brasil, por exemplo, há grupos no CBPF (Centro Brasileiro de Pesquisas Físicas) e na UFRJ (Universidade Federal do Rio de Janeiro) dedicados ao desenvolvimento quântico e seus efeitos.
+Ferreira lembra que algumas moedas digitais já implementaram suporte a criptografia “pós quântica”, como a IOTA e o Decred. Essa possibilidade também pode ser aplicada ao Bitcoin, mas ainda depende de consenso junto à comunidade crypto sobre quais serão os algoritmos pós-quânticos.
+“Quando o dinheiro começar a ser afetado, a mudança vai acontecer. Quando a supremacia quântica na criptografia ficar próxima, você vai ver o movimento para substituição dos algoritmos aumentando rapidamente”, finaliza João Ferreira.
+
+
+
+
+
+",pt,"
+
+
+
+
+
+
+
+
+
+
+
+Is quantum computer a threat to Bitcoin's future? Understand better
+03 Nov 2019, 19:41 by Rodrigo Borges Delfim
+The world of technology was shaken by Google on the 23rd, when the company announced the reach of quantum supremacy from the development of a quantum chip computer.
+Considered a milestone, it raises a number of questions about encrypted operations, ranging from banking to blockchain technology - allowing cryptocurrencies such as Bitcoin to exist.
+The machine powered by Sycamore, the quantum chip developed by Google, was able to unlock the secret behind a random number generator in just 200 seconds (ie 3 minutes and 20 seconds).
+For comparison, the same process would take no less than 10,000 years to complete by Summit, IBM's supercomputer launched in 2018 and considered today the most powerful in the world.
+This is because, in classical computing, any and all information is stored or processed as bits in a range of 0 and 1; Already in quantum computing, its bits (or simply qubits) can assume numerous states between 0 and 1. This phenomenon, called superposition, creates the potential to develop calculations faster than traditional computers - or even so-called. current supercomputers like IBM's.
+Quantum-capable computers, therefore, can test a large number of calculations at the same time, which allows you to falsify electronic signatures that signal transactions on the blockchain and make changes to it - or even grant network access to other participants.
+To perform such operations, however, quantum computer circuits must be maintained at extremely low temperature conditions, close to zero Kelvin (simply the absolute zero degree, equivalent to -273 ° C). Otherwise, they become extremely unstable, making any operation unfeasible.
+
+
+The IBM-developed Summit supercomputer, surpassed by Google's Sycamore.Photo: Carlos Jones / ORNL
+
+So, would the quantum computer be an immediate threat to cryptocurrencies - like Bitcoin - and blockchain technology as a whole?
+This debate has been mobilizing the Crypto community for some time, as the Bitcoin Portal showed in this August 2018 article. However, the announcement of Google's quantum operation brought new elements to the table.
+Paradigm change
+But after all, what does this feat achieved by Google represent in practice and in everyday life?
+Experts heard by the Bitcoin Portal are unanimous in recognizing that a paradigm shift has indeed taken place. As for the impact on the average citizen, they estimate that it will take some time - but not much - to get to their daily lives.
+“What was presented by Google only solves a one-off problem, no general solutions. It's still a dedicated computer, like so many we already have in the automation industry. But it certainly signals a possibility of developing another with another dedicated solution, still not knowing in what ”, ponders Paulo Henrique Guimarães, PhD in Physics from Unb (University of Brasilia) and specialist in quantum computing.
+In the opinion of software engineer and cryptocurrency developer João Ferreira, Girino Vey, the instability of the quantum environment is still a major impediment.
+“Because of the limitations of quantum computing itself, this“ supremacy ”cannot be generalized. Further advancement (especially computers with more qubits) is needed for more complex operations to be performed.
+For comparison, Google's Sycamore chip contained 54 qubits, one of which crashed during the historic operation. The number is still considered small for more practical applications.
+Bitcoin and digital security expert Hamilton Amorim, also known as Algorista, points out that such technology should be restricted to the military or large research labs for now. But you already risk a prediction.
+""I believe that in five years we will have quantum computers embedded in ordinary computers, as in a 3D card,"" says Amorim.
+Threat in sight?
+What about the quantum threat to today's encryption? Amorim also provides an expiration date for current codes in the face of the development of quantum computing. ""All the current encryption in the world has just another decade to come, with luck.""
+
+
+Will quantum computing pose a risk to today's digital currency encryption, like Bitcoin? (Photo: Shutterstock)
+
+Despite current Bitcoin vulnerabilities and blockchain technology, experts consulted by the Bitcoin Portal do not see cryptocurrencies as the most critical point.
+“Only part of Bitcoin's algorithms are vulnerable, and there are strategies to guard against quantum attacks, such as never reusing the same address. The SHA256 and RIPEMD160 used in mining and bitcoin address generation are rugged, and only the ECDSA used in signatures would be vulnerable, ”explains Ferreira.
+These possibilities, however, are not easily applied to the banking industry, highly dependent on current encryption standards.
+“The entire internet and banking system all rely on encryption that is vulnerable to quantum algorithms. You have to consider that the amount of money in the banking system is hundreds or even thousands times the bitcoin market value. In this sense, the traditional economy would be the first to suffer the consequences of quantum computers ”, Ferreira points out.
+“Bitcoin has challenges and we have solutions. In the case of banks, this is the biggest concern ”, reinforces Amorim. He also believes that banks, being “lethargic”, will only start to move when the first quantum attacks begin to gain the news.
+Post-Quantum Period
+At the same time, new research is already under way in what is already called quantum cryptography, in order to keep up with this new level of computing. A trend, which must be enhanced by the new level established by the quantum operation of Google's Sycamore.
+“Today there are groups of researchers who work with Quantum Information, an area that seeks to develop Quantum Cryptography protocols, so that this development may already have something countered,” says Guimarães.
+In Brazil, for example, there are groups at CBPF (Brazilian Center for Physical Research) and UFRJ (Federal University of Rio de Janeiro) dedicated to quantum development and its effects.
+Ferreira points out that some digital currencies have already implemented support for ""post quantum"" encryption, such as IOTA and Decred. This possibility can also be applied to Bitcoin, but it still depends on consensus with the crypto community about what the post-quantum algorithms will be.
+“When money starts to be affected, change will happen. When the quantum supremacy in cryptography comes close, you will see the movement to replace algorithms increasing rapidly, ”concludes João Ferreira.
+
+
+
+
+
+"

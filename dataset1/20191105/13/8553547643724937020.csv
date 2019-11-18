@@ -1,0 +1,76 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Google Home и Amazon Echo воспринимают луч лазера как голосовой сигнал
+
+05 Nov 2019, 13:15
+
+
+
+
+В серии демонстраций, устроенных в Мичиганском университете и в Университете электрокоммуникаций в Токио (Япония), исследователь проблем кибербезопасности Такеши Сугарава (Takeshi Sugarawa) модулировал человеческим голосом луч лазера мощностью 60 милливатт, нацеленный на Google Home. Умный спикер воспринимал такой лазерный луч как голосовой ввод, что позволило Сугараве воссоздавать тональную модуляцию обычных речевых команд.
+«Можно заставить микрофоны реагировать на свет так, как если бы это был звук, — пояснил Сугарава. — Это значит, что всё, что действует, подчиняясь звуковым командам, будет срабатывать и от световых команд».
+Таким образом, для этого метода уязвимы не только Google Home и Amazon Echo, а вообще любые устройства с микрофоном и с ПО, управляемым голосом. Лазерный луч, модулированный голосовым сигналом, может использоваться, чтобы дистанционно контролировать смартфоны, носимую электронику и даже новейшие автомобили, независимо от модели или производителя.
+В экспериментах Сугараве удавалось успешно перехватывать голосовое управление Android-устройствами на расстояниях не более 5 метров, но для умных спикеров, оснащённых более чувствительными массивами микрофонов, дальность срабатывания по лазерному лучу достигала 50 метров. Исследователь также отметил, что лазеры, мощностью 5 мВт, используемые, например, в дешёвых лазерных указках, в основном непригодны для получения этого эффекта.
+Google сообщила, что внимательно изучает исследовательскую статью Сугаравы и «всегда ищет способы улучшить безопасность своих устройств».
+
+Вы можете подписаться на наш Telegram-канал для получения наиболее интересной информации
+
+
+Читайте также
+
+
+
+
+
+
+
+
+",ru,"
+
+
+
+
+
+
+
+
+
+
+
+Google Home and Amazon Echo perceive the laser beam as a voice signal
+
+05 Nov 2019, 13:15
+
+
+
+
+In a series of demonstrations at the University of Michigan and the University of Electrical Communications in Tokyo, Japan, cybersecurity researcher Takeshi Sugarawa modulated a 60 milliwatt laser beam with a human voice and targeted Google Home. The smart speaker perceived such a laser beam as a voice input, which allowed Sugarava to recreate the tonal modulation of ordinary speech commands.
+“You can make microphones respond to light as if it were a sound,” Sugarava explained. “This means that everything that acts in obedience to sound commands will also be triggered by light commands.”
+Thus, not only Google Home and Amazon Echo are vulnerable to this method, but generally any device with a microphone and voice-controlled software. A laser beam modulated by a voice signal can be used to remotely control smartphones, wearable electronics and even the latest cars, regardless of model or manufacturer.
+In the experiments, Sugarava was able to successfully intercept the voice control of Android devices at distances of no more than 5 meters, but for smart speakers equipped with more sensitive arrays of microphones, the laser beam response range reached 50 meters. The researcher also noted that lasers with a power of 5 mW, used, for example, in cheap laser pointers, are mainly unsuitable for obtaining this effect.
+Google said it’s carefully studying Sugarawa’s research article and “is always looking for ways to improve the security of its devices.”
+
+You can subscribe to our Telegram channel to receive the most interesting information.
+
+
+Read also
+
+
+
+
+
+
+
+
+"

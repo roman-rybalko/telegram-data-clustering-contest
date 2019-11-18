@@ -1,0 +1,74 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Researchers use lasers to launch Watch Dogs-style attacks against Alexa and Siri
+05 Nov 2019, 00:22 by Andy Chalk
+""Digital assistants"" like Siri and Alexa promise to make life more convenient by enabling users to activate and control complex systems with their voice. Andy Kelly explained it best a couple of years ago: ""If I want to hear Kiss From a Rose I just scream at a tube in a corner and there it is. Instant. High quality.""
+The problem inherent in such systems is that they have to be constantly listening in order to work, a ""feature"" that comes laden with some fairly obvious privacy concerns. But whether or not the NSA is eavesdropping while you yell at Alex Trebek may be just the beginning of our problems, as researchers in Japan and the University of Michigan have figured out how to hack Google Home, Amazon Alex, and Apple Siri devices ""from hundreds of feet away"" using laser pointers and flashlights.
+The research paper ""Light Commands: Laser-Based Audio InjectionAttacks on Voice-Controllable Systems"" delivers the full technical analysis if you'd like to dive into it, but the short version, explained at lightcommands.com, ""is that in addition to sound, microphones also react to light aimed directly at them. Thus, by modulating an electrical signal in the intensity of a light beam, attackers can trick microphones into producing electrical signals as if they are receiving genuine audio.""
+In one experiment, researchers set up a Google Home device in a fourth-floor office, then hit it with a laser set up in a bell tower, giving a distance of 75 meters (246 feet) between the two. ""We have successfully injected commands into the Google Home target in the above described conditions. We note that despite its low 5 mW power and windy conditions (which caused some beam wobbling due to laser movement), the laser beam successfully injected the voice command while penetrating a closed double-pane glass window,"" the paper says.
+""While causing negligible reflections, the double-pane window did not cause any visible distortion in the injected signal, with the laser beam hitting the target’s top microphones at an angle of 21.8 degrees. We conclude that cross-building laser command injection is possible, at large distances and under realistic attack conditions.""
+
+
+
+(Image credit: Light Commands: Laser-Based Audio InjectionAttacks on Voice-Controllable Systems)
+
+
+And while some functions enabled through digital assistants require a PIN, many do not: The paper says garage door openers with integrated digital assistant support generally don't require a PIN in order to function. Interestingly, requiring PINs on all devices isn't necessarily a guaranteed fix: Most people use the same PIN for multiple devices so increased PIN usage means increased opportunities for PIN eavesdropping, and devices with poor implementation (allowing short PINs, not limiting incorrect attempts) are susceptible to brute force attacks.
+Cars are vulnerable, too: The paper notes that some newer cars can be connected to a voice controllable system that enables things like door unlocks or pre-heating, and ""a compromised VC system might be used to gain access to the target's car."" Researchers said they were able to gain access to various features, including popping the doors and trunk, on both a Tesla Model S and a Ford vehicle with FordPass Google Assistant integration.
+It's wild stuff, made even wilder by the fact that it's basically Watch Dogs brought to life. People aren't running around jacking supercars with Radio Shack laser pointers, but the confluence of pervasive connectivity, accessible technology, and a relentless drive for convenience uber alles has managed to drag a lazy and frankly stupid plot device into the real world. It's amazing, really, and even if this is 99 percent theorycrafting right now, that toothpaste isn't going back into the tube.
+
+
+
+""This opens up an entirely new class of vulnerabilities,"" University of Michigan associate professor of electrical engineering and computer science Kevin Fu said. ""It’s difficult to know how many products are affected, because this is so basic.""
+""This is the tip of the iceberg. There is this wide gap between what computers are supposed to do and what they actually do. With the internet of things, they can do unadvertised behaviors, and this is just one example.""
+Oh, and in case you were thinking that only high-end intelligence agencies would ever be able to afford to actually put this kind of hardware into the field (and I don't know how reassuring that really is anyway), the research team said it cost a little less than 400 bucks for the hardware required to build a Light Commands attack unit, and a couple hundred more for an optional telephoto lens ""to focus the laser for long range attacks."" You can buy it all on Amazon.
+
+
+",en,"
+
+
+
+
+
+
+
+
+
+
+
+Researchers use lasers to launch Watch Dogs-style attacks against Alexa and Siri
+05 Nov 2019, 00:22 by Andy Chalk
+""Digital assistants"" like Siri and Alexa promise to make life more convenient by enabling users to activate and control complex systems with their voice. Andy Kelly explained it best a couple of years ago: ""If I want to hear Kiss From a Rose I just scream at a tube in a corner and there it is. Instant. High quality.""
+The problem inherent in such systems is that they have to be constantly listening in order to work, a ""feature"" that comes laden with some fairly obvious privacy concerns. But whether or not the NSA is eavesdropping while you yell at Alex Trebek may be just the beginning of our problems, as researchers in Japan and the University of Michigan have figured out how to hack Google Home, Amazon Alex, and Apple Siri devices ""from hundreds of feet away"" using laser pointers and flashlights.
+The research paper ""Light Commands: Laser-Based Audio InjectionAttacks on Voice-Controllable Systems"" delivers the full technical analysis if you'd like to dive into it, but the short version, explained at lightcommands.com, ""is that in addition to sound, microphones also react to light aimed directly at them. Thus, by modulating an electrical signal in the intensity of a light beam, attackers can trick microphones into producing electrical signals as if they are receiving genuine audio.""
+In one experiment, researchers set up a Google Home device in a fourth-floor office, then hit it with a laser set up in a bell tower, giving a distance of 75 meters (246 feet) between the two. ""We have successfully injected commands into the Google Home target in the above described conditions. We note that despite its low 5 mW power and windy conditions (which caused some beam wobbling due to laser movement), the laser beam successfully injected the voice command while penetrating a closed double-pane glass window,"" the paper says.
+""While causing negligible reflections, the double-pane window did not cause any visible distortion in the injected signal, with the laser beam hitting the target’s top microphones at an angle of 21.8 degrees. We conclude that cross-building laser command injection is possible, at large distances and under realistic attack conditions.""
+
+
+
+(Image credit: Light Commands: Laser-Based Audio InjectionAttacks on Voice-Controllable Systems)
+
+
+And while some functions enabled through digital assistants require a PIN, many do not: The paper says garage door openers with integrated digital assistant support generally don't require a PIN in order to function. Interestingly, requiring PINs on all devices isn't necessarily a guaranteed fix: Most people use the same PIN for multiple devices so increased PIN usage means increased opportunities for PIN eavesdropping, and devices with poor implementation (allowing short PINs, not limiting incorrect attempts) are susceptible to brute force attacks.
+Cars are vulnerable, too: The paper notes that some newer cars can be connected to a voice controllable system that enables things like door unlocks or pre-heating, and ""a compromised VC system might be used to gain access to the target's car."" Researchers said they were able to gain access to various features, including popping the doors and trunk, on both a Tesla Model S and a Ford vehicle with FordPass Google Assistant integration.
+It's wild stuff, made even wilder by the fact that it's basically Watch Dogs brought to life. People aren't running around jacking supercars with Radio Shack laser pointers, but the confluence of pervasive connectivity, accessible technology, and a relentless drive for convenience uber alles has managed to drag a lazy and frankly stupid plot device into the real world. It's amazing, really, and even if this is 99 percent theorycrafting right now, that toothpaste isn't going back into the tube.
+
+
+
+""This opens up an entirely new class of vulnerabilities,"" University of Michigan associate professor of electrical engineering and computer science Kevin Fu said. ""It’s difficult to know how many products are affected, because this is so basic.""
+""This is the tip of the iceberg. There is this wide gap between what computers are supposed to do and what they actually do. With the internet of things, they can do unadvertised behaviors, and this is just one example.""
+Oh, and in case you were thinking that only high-end intelligence agencies would ever be able to afford to actually put this kind of hardware into the field (and I don't know how reassuring that really is anyway), the research team said it cost a little less than 400 bucks for the hardware required to build a Light Commands attack unit, and a couple hundred more for an optional telephoto lens ""to focus the laser for long range attacks."" You can buy it all on Amazon.
+
+
+"

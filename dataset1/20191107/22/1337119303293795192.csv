@@ -1,0 +1,108 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Microsoft bet against Intel with its new Surfaces — and lost
+The chipmaking king keeps its crown, for now
+07 Nov 2019, 22:11 by Chaim Gartenberg
+Microsoft’s latest Surface hardware is now out in the world, and it’s clear that the biggest gamble that the company took with this year’s models — a move away from Intel’s market-dominating processors — hasn’t quite panned out.
+The focus on non-Intel chips was a big part of Microsoft’s 2019 Surface announcement. The company went out of its way to highlight the new, co-engineered Ryzen Surface Edition processor for the 15-inch Surface Laptop 3, which was optimized specifically for Microsoft’s design. And the ARM-powered Surface Pro X, with a next-generation design and a custom variant of Qualcomm’s Snapdragon 8cx chip, was supposed to represent the future of the Surface.
+Unfortunately, the reviews are in, and experience has shown that neither of those custom chips have achieved quite what Microsoft had hoped they would.
+
+
+
+Photo by Amelia Holowaty Krales / The Verge
+
+
+Let’s start with the Surface Laptop 3’s Ryzen Surface Edition chip from AMD. Microsoft said that the new chip was meant to offer faster speeds and improved graphics performance in particular, thanks to an extra core. But as my colleague Dan Seifert noted in his review, the AMD chipset still struggled with most games and even basic 4K video playback. More importantly, the AMD chip was crushed in a head-to-head contest when it came to exporting video against the 13-inch, Intel-powered Surface Laptop 3, which has more thermal limits due to its size and is cheaper than the larger model.
+The Intel chips crushed the AMD ones
+The AMD / Intel rivalry is a long-running one in technology. It’s been rekindled in recent years by a relatively stagnant Intel’s delays in shipping its next-gen chips that use its 10nm process, combined with a resurgent AMD actually shipping competitive products with its Ryzen line. It’s led to more competition in the processor space with AMD and Intel actually butting heads on premium-tier products like Asus’ ZenBook 14 or the Surface Laptop 3 for the first time in years.
+But the performance on the Surface Laptop 3 shows that AMD’s hardware still has a way to go before it can challenge Intel’s supremacy here. Intel’s finally started shipping its 10th-gen Ice Lake chips (found in the Surface Laptop 3), which bring big leaps in performance and battery life, and are likely a big factor in helping Intel keep the lead here.
+On paper, the high-profile partnership AMD has with Microsoft is one of Intel’s biggest nightmares: a major laptop manufacturer implicitly saying to customers that the Microsoft-approved option for their flagship laptops is AMD’s chips, not Intel’s. But the performance gap shows that Intel still seems to be better than AMD when it comes to raw power.
+
+
+
+Photo by Vjeran Pavic / The Verge
+
+
+Then there’s the Surface Pro X. Thinner and lighter than even the already compact Surface Pro 7, it’s an ARM-powered laptop whose very existence serves as an indictment of Intel’s failure to break into the mobile space over the past two decades. Featuring a custom 7nm SQ1 processor that Microsoft built together with Qualcomm to specifically boost the CPU and GPU performance over a regular Snapdragon 8cx, it’s supposed to be the herald of a new kind of computer — one that’s thin, light, powerful, long-lasting, and always connected to the internet.
+The dream of an ARM-based Windows laptop is still a half-baked idea for now
+But we’ve been hearing promises of ARM-powered laptops for years now, and the shipping hardware has yet to live up to any of these promises. The first waves of Snapdragon laptops failed to impress. Qualcomm promised to do better last December when it announced the 8cx — a dedicated processor for Windows instead of a repurposed one — but so far, the Surface Pro X is the only hardware so far to actually ship with the chip (or a variant of it).
+Again, the idea is compelling on paper. A laptop that can run all your regular laptop software, but with the days-long battery life, instant booting capabilities, and always-connected LTE of a phone or tablet? All in a computer that’s thinner and lighter than a traditional laptop? Who wouldn’t want that?
+Unfortunately, the Surface Pro X seems to prove once again that the dream of an ARM-based Windows laptop is still a half-baked idea. App compatibility is still a big issue, performance isn’t great, and the much-vaunted battery life doesn’t always hold up as well as promised. A lot of this is down to 32-bit app emulation: when apps are designed to run on ARM, the Surface Pro X actually does pretty well. But those apps are still few and far between — the hardware may be here, but the software isn’t. And if past history is anything to go by, Microsoft may have a hard time getting developers on board.
+This is all in what should be the marquee product for the ARM-based Windows computer, a device built by Microsoft with a custom processor built to its specifications. If Microsoft — who makes Windows and should have a bigger influence over developers building new apps for its platforms — can’t get an ARM-based Windows laptop right, what hope does Samsung or Dell or any other hardware company have?
+
+
+
+Photo by Amelia Holowaty Krales / The Verge
+
+
+Microsoft seems to be aware that these new processors aren’t magic bullets. The company is still selling Intel-powered Surfaces in every form factor: the 15-inch Surface Laptop 3 offers an Intel processor (for business customers, at least) in addition to the AMD offering. And the Surface Pro 7 still exists to offer traditional Intel chips in a tablet-style device for those not convinced by the Surface Pro X.
+It’s not the end of the fight
+It’s not the end of the fight, either. ARM apps will likely get better as more developers jump on board, which will solve a lot of the battery and performance issues. Qualcomm’s next chips will be faster and more power efficient, too, with even faster network connectivity — especially with 5G just around the corner that will only make ARM-powered devices more appealing compared to their traditional counterparts. AMD will continue to close the gap between its laptop processors and Intel’s, especially as more software starts to optimize for AMD’s hardware.
+But none of that is true today, and if you’re buying a Surface product in 2019, the answer is the same as it has been every other year: buy the Intel one. And while that’s great news for Intel, it’s a disappointing start to what could have been a more competitive era when it comes to the chips that are at the heart of our computers.
+
+
+",en,"
+
+
+
+
+
+
+
+
+
+
+
+Microsoft bet against Intel with its new Surfaces — and lost
+The chipmaking king keeps its crown, for now
+07 Nov 2019, 22:11 by Chaim Gartenberg
+Microsoft’s latest Surface hardware is now out in the world, and it’s clear that the biggest gamble that the company took with this year’s models — a move away from Intel’s market-dominating processors — hasn’t quite panned out.
+The focus on non-Intel chips was a big part of Microsoft’s 2019 Surface announcement. The company went out of its way to highlight the new, co-engineered Ryzen Surface Edition processor for the 15-inch Surface Laptop 3, which was optimized specifically for Microsoft’s design. And the ARM-powered Surface Pro X, with a next-generation design and a custom variant of Qualcomm’s Snapdragon 8cx chip, was supposed to represent the future of the Surface.
+Unfortunately, the reviews are in, and experience has shown that neither of those custom chips have achieved quite what Microsoft had hoped they would.
+
+
+
+Photo by Amelia Holowaty Krales / The Verge
+
+
+Let’s start with the Surface Laptop 3’s Ryzen Surface Edition chip from AMD. Microsoft said that the new chip was meant to offer faster speeds and improved graphics performance in particular, thanks to an extra core. But as my colleague Dan Seifert noted in his review, the AMD chipset still struggled with most games and even basic 4K video playback. More importantly, the AMD chip was crushed in a head-to-head contest when it came to exporting video against the 13-inch, Intel-powered Surface Laptop 3, which has more thermal limits due to its size and is cheaper than the larger model.
+The Intel chips crushed the AMD ones
+The AMD / Intel rivalry is a long-running one in technology. It’s been rekindled in recent years by a relatively stagnant Intel’s delays in shipping its next-gen chips that use its 10nm process, combined with a resurgent AMD actually shipping competitive products with its Ryzen line. It’s led to more competition in the processor space with AMD and Intel actually butting heads on premium-tier products like Asus’ ZenBook 14 or the Surface Laptop 3 for the first time in years.
+But the performance on the Surface Laptop 3 shows that AMD’s hardware still has a way to go before it can challenge Intel’s supremacy here. Intel’s finally started shipping its 10th-gen Ice Lake chips (found in the Surface Laptop 3), which bring big leaps in performance and battery life, and are likely a big factor in helping Intel keep the lead here.
+On paper, the high-profile partnership AMD has with Microsoft is one of Intel’s biggest nightmares: a major laptop manufacturer implicitly saying to customers that the Microsoft-approved option for their flagship laptops is AMD’s chips, not Intel’s. But the performance gap shows that Intel still seems to be better than AMD when it comes to raw power.
+
+
+
+Photo by Vjeran Pavic / The Verge
+
+
+Then there’s the Surface Pro X. Thinner and lighter than even the already compact Surface Pro 7, it’s an ARM-powered laptop whose very existence serves as an indictment of Intel’s failure to break into the mobile space over the past two decades. Featuring a custom 7nm SQ1 processor that Microsoft built together with Qualcomm to specifically boost the CPU and GPU performance over a regular Snapdragon 8cx, it’s supposed to be the herald of a new kind of computer — one that’s thin, light, powerful, long-lasting, and always connected to the internet.
+The dream of an ARM-based Windows laptop is still a half-baked idea for now
+But we’ve been hearing promises of ARM-powered laptops for years now, and the shipping hardware has yet to live up to any of these promises. The first waves of Snapdragon laptops failed to impress. Qualcomm promised to do better last December when it announced the 8cx — a dedicated processor for Windows instead of a repurposed one — but so far, the Surface Pro X is the only hardware so far to actually ship with the chip (or a variant of it).
+Again, the idea is compelling on paper. A laptop that can run all your regular laptop software, but with the days-long battery life, instant booting capabilities, and always-connected LTE of a phone or tablet? All in a computer that’s thinner and lighter than a traditional laptop? Who wouldn’t want that?
+Unfortunately, the Surface Pro X seems to prove once again that the dream of an ARM-based Windows laptop is still a half-baked idea. App compatibility is still a big issue, performance isn’t great, and the much-vaunted battery life doesn’t always hold up as well as promised. A lot of this is down to 32-bit app emulation: when apps are designed to run on ARM, the Surface Pro X actually does pretty well. But those apps are still few and far between — the hardware may be here, but the software isn’t. And if past history is anything to go by, Microsoft may have a hard time getting developers on board.
+This is all in what should be the marquee product for the ARM-based Windows computer, a device built by Microsoft with a custom processor built to its specifications. If Microsoft — who makes Windows and should have a bigger influence over developers building new apps for its platforms — can’t get an ARM-based Windows laptop right, what hope does Samsung or Dell or any other hardware company have?
+
+
+
+Photo by Amelia Holowaty Krales / The Verge
+
+
+Microsoft seems to be aware that these new processors aren’t magic bullets. The company is still selling Intel-powered Surfaces in every form factor: the 15-inch Surface Laptop 3 offers an Intel processor (for business customers, at least) in addition to the AMD offering. And the Surface Pro 7 still exists to offer traditional Intel chips in a tablet-style device for those not convinced by the Surface Pro X.
+It’s not the end of the fight
+It’s not the end of the fight, either. ARM apps will likely get better as more developers jump on board, which will solve a lot of the battery and performance issues. Qualcomm’s next chips will be faster and more power efficient, too, with even faster network connectivity — especially with 5G just around the corner that will only make ARM-powered devices more appealing compared to their traditional counterparts. AMD will continue to close the gap between its laptop processors and Intel’s, especially as more software starts to optimize for AMD’s hardware.
+But none of that is true today, and if you’re buying a Surface product in 2019, the answer is the same as it has been every other year: buy the Intel one. And while that’s great news for Intel, it’s a disappointing start to what could have been a more competitive era when it comes to the chips that are at the heart of our computers.
+
+
+"

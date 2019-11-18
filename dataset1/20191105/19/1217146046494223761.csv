@@ -1,0 +1,92 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Tech Support Scammers Are Abusing a New Firefox Browser Lock Bug
+05 Nov 2019, 19:44 by Sergiu Gatlan
+
+
+
+Tech support scammers are actively exploiting a Firefox browser lock (browlock) bug to persuade potential victims to call their fake Windows support line within 5 minutes to avoid having their systems disabled.
+The bug allows the crooks to lock the targets' browser, preventing them from closing the browser tab displaying the tech support scam page.
+This is done by spamming them with a large amount of authorization confirmation prompts because there is no rate limiting to prevent it and by stealing focus from the main page.
+To get control of Firefox and get around the browser lock, you will have to use Windows Task Manager to terminate the process associated with the web browser.
+A video demo of the tech support scam site spotted by Malwarebytes threat Intelligence researcher Jérôme Segura yesterday is embedded below.
+
+
+
+Segura says that this is a workaround for a fix issued to patch a similar Firefox bug in June that also allowed pages to display as many login popups as they wanted, leading to the browser tab getting locked up.
+According to Mozilla's Paul Zühlcke, the bug was discovered three months ago, and it affects Firefox 70.x Stable, 71.x Beta, and 72.x Nightly.
+Zühlcke is currently working on a fix that should be provided with a future Firefox release and block scammers from locking their victims' web browsers.
+Tech support scam abusing the new bug
+The scammers that were spotted by Segura while actively exploiting the new Firefox browlock are trying to scare their victims into calling their so-called ""support line"" by displaying the following message behind the countless auth confirmation pop-ups that lock the browser:
+Do not ignore this important warning Please stop and do not close the PC The registry key of your computer is locked. Why did we block your computer? The Windows registry key is illegal. This Windows desktop is using pirated software. This Windows desktop sends viruses over the Internet. This Windows desktop is hacked We block this computer for your safety. Please call us within 5 minutes to prevent your computer from being disabled.
+While their message is obviously gibberish meant to scare their targets and it will probably not work with most people reaching their scam page, some will be tricked and will reach out asking for their help.
+To block the browser, the scammers exploit the bug using the code Segura shared with the Firefox team when reporting the issue yesterday.‏ 
+
+
+
+At the time this article was published the scam site available at d2o1sv4d11x6bc[.]cloudfront[.]net/firefox/index.html was down but Mozilla provides a Proof-of-Concept site at https://eviltrap.site/trap/confirm-auth-prompt-spam/ if you want to get a closer look.
+Browlocks and tech support scams go hand in hand
+Browlocks prevent a web browser's users to perform certain actions such as opening a new tab or window, browsing to another website, or even being able to access the desktop.
+This type of issue has also affected Chrome users in the past, but reports of Firefox browlocks being actively exploited in tech support scam campaigns were a lot more prevalent [1, 2, 3].
+Tech support scammers use various methods to approach their targets, fake ads planted in Google search results and designed to mimic legitimate eBay advertisements, redirecting to tech support scam sites that will also attempt to lock up their browser instead of loading the eBay auction site.
+In December 2018, JavaScript was used by crooks to create an inescapable loop that would claim all CPU resources thus making it impossible for users to close the tab, the web browser, and even their computer without killing Chrome's process.
+As Symantec found in November 2018, tech support scam campaigns have also been more frequently spotted using obfuscation techniques like custom obfuscation routines, Base64 encoding, or AES encryption to make them even harder to detect and block.
+
+
+",en,"
+
+
+
+
+
+
+
+
+
+
+
+Tech Support Scammers Are Abusing a New Firefox Browser Lock Bug
+05 Nov 2019, 19:44 by Sergiu Gatlan
+
+
+
+Tech support scammers are actively exploiting a Firefox browser lock (browlock) bug to persuade potential victims to call their fake Windows support line within 5 minutes to avoid having their systems disabled.
+The bug allows the crooks to lock the targets' browser, preventing them from closing the browser tab displaying the tech support scam page.
+This is done by spamming them with a large amount of authorization confirmation prompts because there is no rate limiting to prevent it and by stealing focus from the main page.
+To get control of Firefox and get around the browser lock, you will have to use Windows Task Manager to terminate the process associated with the web browser.
+A video demo of the tech support scam site spotted by Malwarebytes threat Intelligence researcher Jérôme Segura yesterday is embedded below.
+
+
+
+Segura says that this is a workaround for a fix issued to patch a similar Firefox bug in June that also allowed pages to display as many login popups as they wanted, leading to the browser tab getting locked up.
+According to Mozilla's Paul Zühlcke, the bug was discovered three months ago, and it affects Firefox 70.x Stable, 71.x Beta, and 72.x Nightly.
+Zühlcke is currently working on a fix that should be provided with a future Firefox release and block scammers from locking their victims' web browsers.
+Tech support scam abusing the new bug
+The scammers that were spotted by Segura while actively exploiting the new Firefox browlock are trying to scare their victims into calling their so-called ""support line"" by displaying the following message behind the countless auth confirmation pop-ups that lock the browser:
+Do not ignore this important warning Please stop and do not close the PC The registry key of your computer is locked. Why did we block your computer? The Windows registry key is illegal. This Windows desktop is using pirated software. This Windows desktop sends viruses over the Internet. This Windows desktop is hacked We block this computer for your safety. Please call us within 5 minutes to prevent your computer from being disabled.
+While their message is obviously gibberish meant to scare their targets and it will probably not work with most people reaching their scam page, some will be tricked and will reach out asking for their help.
+To block the browser, the scammers exploit the bug using the code Segura shared with the Firefox team when reporting the issue yesterday.‏ 
+
+
+
+At the time this article was published the scam site available at d2o1sv4d11x6bc[.]cloudfront[.]net/firefox/index.html was down but Mozilla provides a Proof-of-Concept site at https://eviltrap.site/trap/confirm-auth-prompt-spam/ if you want to get a closer look.
+Browlocks and tech support scams go hand in hand
+Browlocks prevent a web browser's users to perform certain actions such as opening a new tab or window, browsing to another website, or even being able to access the desktop.
+This type of issue has also affected Chrome users in the past, but reports of Firefox browlocks being actively exploited in tech support scam campaigns were a lot more prevalent [1, 2, 3].
+Tech support scammers use various methods to approach their targets, fake ads planted in Google search results and designed to mimic legitimate eBay advertisements, redirecting to tech support scam sites that will also attempt to lock up their browser instead of loading the eBay auction site.
+In December 2018, JavaScript was used by crooks to create an inescapable loop that would claim all CPU resources thus making it impossible for users to close the tab, the web browser, and even their computer without killing Chrome's process.
+As Symantec found in November 2018, tech support scam campaigns have also been more frequently spotted using obfuscation techniques like custom obfuscation routines, Base64 encoding, or AES encryption to make them even harder to detect and block.
+
+
+"

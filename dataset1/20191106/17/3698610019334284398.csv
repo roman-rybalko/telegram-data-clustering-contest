@@ -1,0 +1,58 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Стало відомо, чому безпілотний автомобіль Uber збив пішохода
+Програмне забезпечення машини не знало, що пішоходи можуть переходити дорогу не по переходу.
+
+06 Nov 2019, 17:23
+
+Національна рада з безпеки на транспорті США опублікувала матеріали 20-місячного розслідування ДТП, в рамках якої безпілотний автомобіль Uber збив пішохода. Виявилося, що в програмне забезпечення машини не було закладено те, що пішоходи можуть переходити дорогу за межами пішохідного переходу, повідомляє Wired.
+Безпілотний автомобіль Uber збив 44-річну Елейн Херцберг, яка переходила дорогу в темряві. З якоїсь причини автопілот не зреагував на пішохода та в'їхав у неї на повній швидкості. Оператор Рафаела Васкез, яка сиділа за кермом автомобіля, також не встигла відреагувати.
+Результати розслідування показали, в програмному забезпеченні Uber були допущені помилки, які стосуються безпеки. Виявилося, що програмне забезпечення не було навчено реагувати на пішоходів, які переходять дорогу у недозволеному місці. Крім того, розробники Uber настільки боялися помилкових спрацьовувань, що заклали секундну затримку між сигналом про можливе зіткнення і реакцією на нього. Компанія також відключила автоматичну гальмівну систему Volvo, яка, за словами автовиробника, могла б істотно знизити швидкість, на якій було завдано удару, або навіть уникнути зіткнення.
+Все це може пояснити те, чому автопілот машини, який помітив Херцберг не знизив швидкість і врізався в неї, в результаті чого його відкинуло на 20 метрів. Автопілот помітив пішохода за 5,6 секунди до зіткнення, чого було достатньо, аби уникнути його. Разом з тим, спочатку він класифікував жінку як іншу машину, потім перевів її в розряд ""інше"", потім знову повернувся до машини, потім до велосипеда, потім знову до ""іншого"" і врешті зупинився на категорії ""велосипед"".
+Програмне забезпечення не змогло зрозуміти, що перед ним людина, оскільки його не навчили, що пішоходи можуть зустрічатися і за межами пішохідних переходів.
+Головна проблема для штучного інтелекту, який керував автомобілем, полягала в непередбачуваності поведінки пішохода — а не знаючи, куди і з якою швидкістю ""перешкода"" може зміститися, ШІ не уявляє, як від нього ухилитися. Фінальне рішення про те, що ж знаходиться перед машиною було прийнято всього за 1,2 секунди до зіткнення. Ще секунда до екстреного гальмування була витрачена на так зване ""придушення дії"". В цей час, якщо об'їхати перешкоду вже неможливо, автопілот бере коротку паузу для перевірки всіх даних ще раз. Оператор мав страхувати автоматику і в цей момент вже помітити Херцеберг з велосипедом. Разом з тим, Васкез стежила за показниками приладів і не дивилася на дорогу в цей момент. Вона натиснула на гальма через секунду після того як автомобіль збив пішохода.
+Підписуйтесь на наш Telegram-канал з новинами технологій та культури.
+Інцидент стався у 2016 році. Жінка померла в лікарні. Після чого компанія призупинила випробування безпілотних автомобілів на дорогах Каліфорнії.
+Ми повідомляємо тільки дійсно важливі новини. Долучайся до Telegram-каналу DT.UA
+
+
+",uk,"
+
+
+
+
+
+
+
+
+
+
+
+It became known why an unmanned Uber car knocked down a pedestrian
+Machine software did not know that pedestrians could cross the road without crossing.
+
+06 Nov 2019, 16:23
+
+The US National Transportation Safety Board released the materials of a 20-month road accident investigation into which an Uber unmanned vehicle crashed a pedestrian. It turned out that the car's software did not state that pedestrians could cross the road beyond the pedestrian crossing, Wired reports.
+An Uber drone hit 44-year-old Elaine Herzberg, who was crossing the road in the dark. For some reason, the autopilot did not respond to the pedestrian and drove at full speed. Operator Rafael Vasquez, who was driving the car, also failed to respond.
+Investigation results show that security-related bugs have been made in Uber software. It turned out that the software had not been trained to respond to pedestrians crossing the road in an unauthorized location. In addition, Uber developers were so afraid of false positives that they put a second delay between the signal of a potential collision and the reaction to it. The company also switched off Volvo's automatic brake system, which, according to the carmaker, could dramatically reduce the speed at which it was struck or even avoid a collision.
+All this may explain why the autopilot of the machine, which Herzberg noticed did not slow down and crashed into it, causing him to be thrown 20 meters away. The autopilot noticed the pedestrian 5.6 seconds before the collision, which was enough to avoid it. However, he initially classified the woman as another machine, then transferred her to the category ""other"", then returned to the car again, then to the bicycle, then again to ""other"" and finally settled on the category ""bicycle"".
+The software failed to understand the person in front of him because he had not been taught that pedestrians could meet outside pedestrian crossings.
+The main problem for the artificial intelligence that drove the car was the unpredictability of the pedestrian's behavior - not knowing where and at what speed the ""obstacle"" could shift, the AI did not imagine how to avoid it. The final decision on what was in front of the car was made just 1.2 seconds before the collision. Another second before emergency braking was spent on the so-called ""suppression of action"". At this time, if it is no longer possible to bypass the obstacle, the autopilot takes a brief pause to check all the data again. The operator had to insure the automation and at this point already noticed Herzberg with a bicycle. However, Vasquez monitored the indicators of the devices and did not look at the road at this time. She hit the brakes a second after the car hit the pedestrian.
+Subscribe to our Telegram channel with technology and culture news.
+The incident occurred in 2016. Woman died in hospital. The company then suspended testing of unmanned vehicles on California roads.
+We are only reporting really important news. Join the DT.UA Telegram
+
+
+"

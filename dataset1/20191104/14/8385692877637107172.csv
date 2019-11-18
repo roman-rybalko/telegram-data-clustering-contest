@@ -1,0 +1,60 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Now Third-Party Alexa Skills Can Recognize Your Voice Too
+04 Nov 2019, 14:31 by https://www.facebook.com/ADSoomeet
+Alexa Skill developers can now apply Alexa's voice profile feature in their custom skills. Amazon recently announced the general availability of skill personalization for developers. The feature was available in preview since September this year.
+Voice profile enables Alexa to respond differently to the same query based on who is speaking. Launched towards the end of 2017, these voice recognition capabilities, however, have been limited to first-party features like calling, messaging, news briefings, and shopping. For third-party apps like Uber, users first need to manually switch to their personal Amazon account before commanding Alexa to perform a skill.
+With the latest developments, third-party skills will have the ability to differentiate between multiple voices as well.
+Advertisement
+Third-party skills can now recognize different voices
+Alexa has been able to recognize different voices for a couple of years now. This made it possible for a group of people, such as a family or roommates, to get a personalized Alexa experience through the same device. These capabilities are now expanding to third-party skills as well.
+Skill developers can now leverage Alexa's voice profiles to provide personalized experiences, greetings, and prompts on their services. On receiving a command from a recognized voice, Alexa will generate and send a personID – an anonymous string of characters and numbers – to the skill. It will then respond based on who is speaking, without switching the user account. The device will remain connected to the default Amazon account.
+If a voice profile doesn't have an account linked to a particular request, say Uber, the request will go through the default account linked with the customer's Amazon account.
+Advertisement
+While the personID does not contain any personally identifiable information, Amazon is still letting users to opt-out of this skills personalization feature if they wish to. It can be done through the companion Alexa app. Further, Amazon is not making skill personalization available for child-directed applications, as well as skills that require sensitive user information.
+Amazon has named several third-party applications that are already offering this skill personalization feature on Alexa. The long list of early adopters include names like Uber, Vodafone, 7-Minute Workout, Excite Horoscope, Vanity Planet, OneBusAway, and others.
+Uber, for example, will now automatically detect which account to bill for a ride. Similarly, 7-Minute Workout can now quickly deliver the speaker's personalized fitness routine, history, and goals. As for other developers, Amazon is providing them with a guide to build a sample skill with personalization on GitHub.
+Advertisement
+
+
+",en,"
+
+
+
+
+
+
+
+
+
+
+
+Now Third-Party Alexa Skills Can Recognize Your Voice Too
+04 Nov 2019, 14:31 by https://www.facebook.com/ADSoomeet
+Alexa Skill developers can now apply Alexa's voice profile feature in their custom skills. Amazon recently announced the general availability of skill personalization for developers. The feature was available in preview since September this year.
+Voice profile enables Alexa to respond differently to the same query based on who is speaking. Launched towards the end of 2017, these voice recognition capabilities, however, have been limited to first-party features like calling, messaging, news briefings, and shopping. For third-party apps like Uber, users first need to manually switch to their personal Amazon account before commanding Alexa to perform a skill.
+With the latest developments, third-party skills will have the ability to differentiate between multiple voices as well.
+Advertisement
+Third-party skills can now recognize different voices
+Alexa has been able to recognize different voices for a couple of years now. This made it possible for a group of people, such as a family or roommates, to get a personalized Alexa experience through the same device. These capabilities are now expanding to third-party skills as well.
+Skill developers can now leverage Alexa's voice profiles to provide personalized experiences, greetings, and prompts on their services. On receiving a command from a recognized voice, Alexa will generate and send a personID – an anonymous string of characters and numbers – to the skill. It will then respond based on who is speaking, without switching the user account. The device will remain connected to the default Amazon account.
+If a voice profile doesn't have an account linked to a particular request, say Uber, the request will go through the default account linked with the customer's Amazon account.
+Advertisement
+While the personID does not contain any personally identifiable information, Amazon is still letting users to opt-out of this skills personalization feature if they wish to. It can be done through the companion Alexa app. Further, Amazon is not making skill personalization available for child-directed applications, as well as skills that require sensitive user information.
+Amazon has named several third-party applications that are already offering this skill personalization feature on Alexa. The long list of early adopters include names like Uber, Vodafone, 7-Minute Workout, Excite Horoscope, Vanity Planet, OneBusAway, and others.
+Uber, for example, will now automatically detect which account to bill for a ride. Similarly, 7-Minute Workout can now quickly deliver the speaker's personalized fitness routine, history, and goals. As for other developers, Amazon is providing them with a guide to build a sample skill with personalization on GitHub.
+Advertisement
+
+
+"

@@ -1,0 +1,100 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Dica: Não gosta dos cartões dos separadores do Chrome? Eis como os desligar
+02 Nov 2019, 09:00 by Pedro Simões
+A Google não para de melhorar o seu browser. Para além de o otimizar de forma frequente, traz também novidades que melhoram a sua utilização em várias áreas e de várias formas.
+Mesmo com todos os testes de usabilidade, é natural que nem todos fiquem satisfeitos com estas novidades. A mais recente, os cartões que temos com os separadores, é um exemplo. A Google tem uma forma simples de os remover do Chrome, como vamos ver hoje.
+
+
+
+
+
+São muitas as novidades que a Google tem colocado no Chrome ao longo dos anos. Muitas tornam-se uma referência e replicam-se por outros browsers, mostrando a sua utilidade. Há também algumas que igualmente nunca chegam a ver a luz do dia, mesmo depois de vários meses em testes.
+Os novos cartões que o Chrome traz
+De certeza que a maioria já viu a novidade que o Chrome 78 traz. Agora, e sempre que passamos com o rato por cima de um separador, surge um cartão com informação do site. Muitos utilizadores não querem este extra presente, por várias razões.
+
+
+
+
+
+Claro que não existe uma obrigatoriedade de usar, havendo formas simples de alterar esta presença e até o seu comportamento. Esta é uma das maiores vantagens deste browser.
+Como desligar esta novidade do browser da Google
+Dada a sua modularidade, o Chrome permite que ativemos ou desativemos algumas destas funcionalidades. Estes cartões são uma delas. Basta acederem ao normal endereço de controlo de flags, para que possam iniciar o processo: chrome://flags.
+
+
+
+
+
+Dentro desta área precisam de encontrar a opção Tab Hover Cards, colocando o seu nome na caixa de pesquisa no topo. Esta deverá estar ativa e com o valor Default.
+Só precisa de reiniciar este navegador da Internet
+Só precisam então de alterar o valor deste campo para o óbvio Disabled. Existem várias opções ali presentes, mas apenas esta irá desligar a presença dos cartões no browser.
+
+
+
+
+
+Com esta alteração realizada, o Chrome irá pedir para ser reiniciado. Bastará carregar no grande botão azul presente no final do browser para que este processo aconteça.
+Ao voltar a arrancar, os cartões vão ter desaparecido e o Chrome terá o seu comportamento normal. Recuperam assim o seu comportamento e uma “limpeza” maior na sua interface, como a maioria quer.
+
+
+",pt,"
+
+
+
+
+
+
+
+
+
+
+
+Tip: Don't like Chrome tab cards? Here's how to turn them off
+02 Nov 2019, 09:00 by Pedro Simões
+Google is constantly improving its browser. Besides optimizing it frequently, it also brings news that improve its use in various areas and in many ways.
+Even with all usability tests, it is natural that not everyone is satisfied with these news. The most recent, the cards we have with the tabs, is an example. Google has a simple way to remove them from Chrome, as we'll see today.
+
+
+
+
+
+There is a lot of news that Google has put into Chrome over the years. Many become a reference and replicate by other browsers, showing their usefulness. There are also some who never see the light of day, even after several months of testing.
+The new cards Chrome brings
+Surely most have seen the news that Chrome 78 brings. Now, and whenever we hover over a tab, a card with site information appears. Many users do not want this extra gift for several reasons.
+
+
+
+
+
+Of course there is no obligation to use, there are simple ways to change this presence and even your behavior. This is one of the biggest advantages of this browser.
+How to turn off this new browser feature from Google
+Given its modularity, Chrome allows us to enable or disable some of these features. These cards are one of them. Just go to the normal flag control address so they can start the process: chrome: // flags.
+
+
+
+
+
+Within this area you will need to find the Tab Hover Cards option by placing your name in the search box at the top. This must be active and with the Default value.
+Just restart this web browser
+They just need to change the value of this field to the obvious Disabled. There are several options present, but only this will turn off the presence of the cards in the browser.
+
+
+
+
+
+With this change made, Chrome will ask to be restarted. Simply press the large blue button at the bottom of the browser to make this process happen.
+Upon restarting, the cards will be gone and Chrome will behave normally. They thus regain their behavior and a greater ""cleanliness"" in their interface, as most want.
+
+
+"

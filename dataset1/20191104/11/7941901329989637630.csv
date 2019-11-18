@@ -1,0 +1,46 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Apple Now Rejects Electron Apps from Mac App Store
+04 Nov 2019, 11:45 by msmash
+Mac developers are reporting that apps made using Electron (which is a framework that allows companies to ship web apps in a native app wrapper) are now being rejected by the automated Mac App Store review process. From a report: The apps in question are getting flagged because of their usage of private API calls. These API calls are not in the app itself, but part of the underlying Electron framework. The detected private API symbols include:"" CAContext CALayerHost NSAccessibilityRemoteUIElement NSNextStepFrame NSThemeFrame NSURLFileTypeMappings."" Apparently, the Electron framework has used these APIs for years. What has happened is that Apple has upgraded its server-side app review processes to detect more violations of its App Review guidelines, and now this private API usage is being identified. Individual Electron app makers are a bit helpless as the issue can only really be fixed by pushing changes in the Electron code itself. It does not appear that Electron is doing anything extreme, certainly nothing malicious. App Review doesn't care about why an app is using private API, it's a hard and fast rule (at least in theory).
+
+
+(david.dev)
+
+
+
+
+",en,"
+
+
+
+
+
+
+
+
+
+
+
+Apple Now Rejects Electron Apps from Mac App Store
+04 Nov 2019, 11:45 by msmash
+Mac developers are reporting that apps made using Electron (which is a framework that allows companies to ship web apps in a native app wrapper) are now being rejected by the automated Mac App Store review process. From a report: The apps in question are getting flagged because of their usage of private API calls. These API calls are not in the app itself, but part of the underlying Electron framework. The detected private API symbols include:"" CAContext CALayerHost NSAccessibilityRemoteUIElement NSNextStepFrame NSThemeFrame NSURLFileTypeMappings."" Apparently, the Electron framework has used these APIs for years. What has happened is that Apple has upgraded its server-side app review processes to detect more violations of its App Review guidelines, and now this private API usage is being identified. Individual Electron app makers are a bit helpless as the issue can only really be fixed by pushing changes in the Electron code itself. It does not appear that Electron is doing anything extreme, certainly nothing malicious. App Review doesn't care about why an app is using private API, it's a hard and fast rule (at least in theory).
+
+
+(david.dev)
+
+
+
+
+"

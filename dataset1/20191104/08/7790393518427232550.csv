@@ -1,0 +1,72 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Trình duyệt Google Chrome gặp lỗi bảo mật nghiêm trọng
+Lỗ hổng lớn trên trình duyệt Google Chrome cho phép tội phạm mạng cài cắm mã khai thác vào các trang web người dùng hay truy cập hoặc lừa người dùng truy cập vào các trang web độc hại.
+04 Nov 2019, 08:45 by Minh Sơn (Vietnam+)
+
+
+(Ảnh minh họa: Nguồn fossbytes.com)
+
+Ngày 4/11, Cục An toàn thông tin (Bộ Thông tin và truyền thông) đưa ra cảnh báo người dùng Việt Nam về việc hiện trình duyệt Google Chrome đang dính lỗi bảo mật nghiêm trọng.
+Qua công tác theo dõi thông tin trên không gian mạng, và hoạt động hợp tác, chia sẻ thông tin với các tổ chức lớn về an toàn thông tin trong và ngoài nước, Cục An toàn thông tin ghi nhận xu hướng khai thác lỗ hổng (CVE-2019-13720) trong trình duyệt Google Chrome. Lỗ hổng này ảnh hưởng tới hầu hết các hệ điều hành (Microsoft Windows, Apple macOS và Linux) sử dụng trình duyệt Chrome trước phiên bản 78.0.3904.87.
+Đây là lỗ hổng cho phép đối tượng tấn công chèn và thực thi mã lệnh từ xa một cách tự động. Do vậy, tội phạm mạng có thể cài cắm mã khai thác vào các trang web người dùng hay truy cập hoặc lừa người dùng truy cập vào các trang web độc hại khiến máy tính/thiết bị của người dùng bị tấn công.
+Hiện tại, Google đã nhanh chóng phát hành phiên bản Chrome mới (mã 78.0.3904.87) đồng thời đưa ra cảnh báo hàng tỷ người dùng nên cài đặt bản cập nhật phần mềm khẩn cấp để vá hai lỗ hổng nghiêm trọng trên.
+
+
+
+Cục An toàn thông tin đã gửi thông báo đến các cơ quan, tổ chức, cá nhân và khuyến nghị quản trị viên tại các cơ quan, đơn vị và người dùng thực hiện ngay các biện pháp xử lý kịp thời./.
+
+Tin liên quan
+
+
+
+
+
+
+",vi,"
+
+
+
+
+
+
+
+
+
+
+
+Google Chrome browser has a serious security error
+A major flaw in the Google Chrome browser allows cyber criminals to install exploit codes on user websites or visit or trick users into accessing malicious websites.
+04 Nov 2019, 08:45 by Minh Son (Vietnam +)
+
+
+(Artwork: Source fossbytes.com)
+
+On November 4, the Department of Information Security (Ministry of Information and Communications) issued a warning to Vietnamese users that the Google Chrome browser is currently facing a serious security error.
+Through the monitoring of information on cyberspace, and cooperation and information sharing with major information security organizations at home and abroad, the Department of Information Security recognizes the trend of exploiting vulnerabilities. (CVE-2019-13720) in Google Chrome browser. This vulnerability affects most operating systems (Microsoft Windows, Apple macOS and Linux) using Chrome browser prior to version 78.0.3904.87.
+This is a vulnerability that allows the attacker to insert and execute remote code automatically. As a result, cybercriminals may install exploit codes on user websites or access or trick users into accessing malicious websites that could cause a user's computer / device to be attacked.
+Currently, Google has quickly released a new version of Chrome (code 78.0.3904.87) and issued a warning to billions of users to install an emergency software update to patch the two critical vulnerabilities.
+
+
+
+The Department of Information Security has sent a notice to agencies, organizations and individuals, and recommended administrators at agencies, units and users to immediately implement timely measures./.
+
+Related news
+
+
+
+
+
+
+"

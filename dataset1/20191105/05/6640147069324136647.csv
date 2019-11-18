@@ -1,0 +1,92 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+AMD, i driver per Red Dead Redemption 2 risolvono problemi con The Outer Worlds
+05 Nov 2019, 05:00 by Jacopo Ferrante
+I nuovi driver Radeon Software Adrenalin Edition 2019 19.11.1 assicurano il supporto alla versione PC di Red Dead Redemption 2 di Rockstar Games. Anche i possessori di schede video Nvidia hanno ricevuto i driver ottimizzati per il gioco poche ore fa.
+Il debutto di Red Dead Redemption 2 è previsto per oggi, su Rockstar Launcher ed Epic Games Store. Il gioco era in pre-load dalla settimana scorsa in virtù anche dei 109,47 GB occupati dal titolo. AMD non è entrata nei dettagli per quanto concerne il tipo di miglioramenti apportati dai driver Adrenalin 19.11.1 (nessuna percentuale di incremento prestazionale insomma), ma è consigliabile aggiornare prima di installare il gioco.
+
+
+
+AMD ha anche incluso il supporto per una serie di estensioni dell’API Vulkan, i cui dettagli potete trovarli nella pagina ufficiale dedicata driver con i link per il download e le altre note di rilascio. Riportiamo l’elenco dei problemi risolti da questa versione dei driver e i problemi su cui AMD sta ancora lavorando:
+
+Problemi risolti
+
+
+Alcuni utenti potrebbero non essere in grado di connettere il proprio account Twitch dalla pagina Connetti in Radeon Settings per lo streaming live.
+In The Outer Worlds a volte può verificarsi un arresto anomalo dell’applicazione quando si apre la schermata di inventario dei personaggi.
+In The Outer Worlds è possibile che i modelli dei personaggi vengano visualizzati in modo errato nella schermata dell’inventario.
+Frame rate limitato a 60 fps in alcuni giochi API Vulkan.
+Lo streaming con OBS potrebbe subire pesanti cadute di frame quando si usa la codifica AMF.
+
+
+Problemi noti
+
+
+Le GPU della serie Radeon RX 5700 potrebbero presentare cali di frame rate in alcuni giochi a 1080p e impostazioni di gioco basse.
+L’overlay delle prestazioni potrebbe causare stuttering o un lampeggiamento (flashing) dello schermo in alcune applicazioni.
+Le GPU della serie Radeon RX 5700 potrebbero non visualizzare i contenuti a schermo quando il PC si riprende dallo stato di sospensione o ibernazione con più schermi collegati.
+L’attivazione dell’HDR potrebbe causare instabilità del sistema durante il gioco con Radeon ReLive abilitato.
+Potrebbe verificarsi dello stuttering con Radeon FreeSync abilitato su display con refresh a 240 Hz con le schede della serie Radeon RX 5700.
+La Radeon VII potrebbe mostrare una frequenza di memoria elevata in idle o sul desktop.
+L’overlay delle prestazioni potrebbe riportare un uso della memoria VRAM errato.
+Richiamare Radeon Overlay potrebbe portare ad avere giochi sfocati o minimizzati quando l’HDR è attivato in Windows.
+
+
+
+",it,"
+
+
+
+
+
+
+
+
+
+
+
+AMD, drivers for Red Dead Redemption 2 solve problems with The Outer Worlds
+05 Nov 2019, 05:00 by Jacopo Ferrante
+The new Radeon Software Adrenalin Edition 2019 19.11.1 drivers ensure support for the PC version of Red Dead Redemption 2 from Rockstar Games. Even Nvidia video card owners received optimized game drivers a few hours ago.
+The debut of Red Dead Redemption 2 is scheduled for today, on Rockstar Launcher and Epic Games Store. The game was pre-loaded last week by virtue of the 109.47 GB occupied by the title. AMD has not entered into details regarding the type of improvements made by the Adrenalin drivers 19.11.1 (no performance increase percentage in short), but it is advisable to update before installing the game.
+
+
+
+AMD has also included support for a number of Vulkan API extensions, details of which can be found on the official driver page with download links and other release notes. Here is the list of problems solved by this version of the drivers and the problems on which AMD is still working:
+
+Problems solved
+
+
+Some users may not be able to connect their Twitch account from the Connect page in Radeon Settings for live streaming.
+The Outer Worlds can sometimes cause an application crash when opening the character inventory screen.
+In The Outer Worlds it is possible that character models are displayed incorrectly on the inventory screen.
+Frame rate limited to 60 fps in some API Vulkan games.
+Streaming with OBS may suffer heavy frame drops when using AMF encoding.
+
+
+Known problems
+
+
+The Radeon RX 5700 series GPUs may have dropped frame rates in some 1080p games and low game settings.
+Performance overlay may cause stuttering or flashing of the screen in some applications.
+The Radeon RX 5700 series GPUs may not display the on-screen contents when the PC resumes from sleep or hibernation with multiple displays connected.
+Activation of the HDR could cause system instability during the game with Radeon ReLive enabled.
+Stuttering may occur with Radeon FreeSync enabled on a 240 Hz refresh display with Radeon RX 5700 series cards.
+The Radeon VII may show a high memory frequency in idle or on the desktop.
+Performance overlay may indicate incorrect VRAM memory usage.
+Recalling Radeon Overlay could lead to blurry or minimized games when HDR is activated in Windows.
+
+
+
+"

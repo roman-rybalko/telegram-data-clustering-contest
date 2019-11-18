@@ -1,0 +1,106 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Spare your blushes and check that you're not affected by this particular issue
+Ubuntu 19.10 Bug Shares Your Media Folders Without Warning
+03 Nov 2019, 14:18 by By Joey Sneddon
+
+A major bug in Ubuntu 19.10 could be automatically sharing the contents of your Pictures, Video and Music folders with other users on the same network.
+
+
+“All my photos/videos were exposed without any kind of auth request both in my home network and ALL the company network.”
+affected user
+
+The problem is caused by Ubuntu’s new media sharing feature (powered the Rygel media server) which is supposed to disabled by default.
+But scores of users running Ubuntu 19.10 in a non-GNOME Shell/Ubuntu session report that rygel autostarts on log in, with no warning or indication provided that it is running in the background.
+As a result, the full contents of ~/Photos, ~/Videos and ~/Music folders are accessible on local area network, (LAN), i.e, available to anyone and anything else connected to the same Wi-Fi point.
+And that’s not good if you live in a house with others, especially with a content discovery device like a smart tv or games console active at the same time you are.
+Ubuntu 19.10 Bug: Rygel Autostarts
+A high priority bug filed against the rygel package in Ubuntu 19.10 explains more about the situation, with the original reporter writing:
+
+“I checked on a new VM [rygel] gets installed, starts but then is stopped. I’d assume if you are not using GNOME there might be an issue with stopping it after auto-start due to media-sharing being disabled.”
+
+Another affected Ubuntu 19.10 user chips in to say: “The same problem […] applies to me, too”.
+
+“After I have installed 19.10 at home and upgraded to 19.10 at work, all my photos/videos were exposed without any kind of auth request both in my home network and ALL the company network.”
+
+“It took me hours to identify which process was leaking my data. This is the first time in 15 years that I am indignant by Ubuntu,” they add.
+The culprit? An upstream configuration file that makes systemd enable media sharing globally. Systemd isn’t at fault; it’s just doing what it’s told.
+The good news is that a partial fix is already available. This means those who upgrade to Ubuntu 19.10 or install Ubuntu 19.10 for the first time are not ‘caught out’ by this issue.
+And a full fix that solves the accidental sharing issue entirely is on the way.
+If you run Ubuntu 19.10 and use GNOME Shell (be it a vanilla GNOME or the standard Ubuntu session) you shouldn’t be affected.
+That said you can check: head to Settings > Sharing > Media and make sure the media sharing toggle is set to off (you can turn it on, remove the redefined folders, and turn if off for added peace of mind.
+The issue is less distinct if you’re not running GNOME Shell as the rygel package isn’t being curtailed correctly and there’s (as of writing) no way to tell systemd not to share it.
+So the solution (for now) is to uninstall rygel:
+sudo apt remove rygel
+Reboot after uninstalling the rygel package to ensure that it’s properly and fully unloaded from your session.
+
+
+h/t julien
+
+
+
+
+",en,"
+
+
+
+
+
+
+
+
+
+
+
+Spare your blushes and check that you're not affected by this particular issue
+Ubuntu 19.10 Bug Shares Your Media Folders Without Warning
+03 Nov 2019, 14:18 by By Joey Sneddon
+
+A major bug in Ubuntu 19.10 could be automatically sharing the contents of your Pictures, Video and Music folders with other users on the same network.
+
+
+“All my photos/videos were exposed without any kind of auth request both in my home network and ALL the company network.”
+affected user
+
+The problem is caused by Ubuntu’s new media sharing feature (powered the Rygel media server) which is supposed to disabled by default.
+But scores of users running Ubuntu 19.10 in a non-GNOME Shell/Ubuntu session report that rygel autostarts on log in, with no warning or indication provided that it is running in the background.
+As a result, the full contents of ~/Photos, ~/Videos and ~/Music folders are accessible on local area network, (LAN), i.e, available to anyone and anything else connected to the same Wi-Fi point.
+And that’s not good if you live in a house with others, especially with a content discovery device like a smart tv or games console active at the same time you are.
+Ubuntu 19.10 Bug: Rygel Autostarts
+A high priority bug filed against the rygel package in Ubuntu 19.10 explains more about the situation, with the original reporter writing:
+
+“I checked on a new VM [rygel] gets installed, starts but then is stopped. I’d assume if you are not using GNOME there might be an issue with stopping it after auto-start due to media-sharing being disabled.”
+
+Another affected Ubuntu 19.10 user chips in to say: “The same problem […] applies to me, too”.
+
+“After I have installed 19.10 at home and upgraded to 19.10 at work, all my photos/videos were exposed without any kind of auth request both in my home network and ALL the company network.”
+
+“It took me hours to identify which process was leaking my data. This is the first time in 15 years that I am indignant by Ubuntu,” they add.
+The culprit? An upstream configuration file that makes systemd enable media sharing globally. Systemd isn’t at fault; it’s just doing what it’s told.
+The good news is that a partial fix is already available. This means those who upgrade to Ubuntu 19.10 or install Ubuntu 19.10 for the first time are not ‘caught out’ by this issue.
+And a full fix that solves the accidental sharing issue entirely is on the way.
+If you run Ubuntu 19.10 and use GNOME Shell (be it a vanilla GNOME or the standard Ubuntu session) you shouldn’t be affected.
+That said you can check: head to Settings > Sharing > Media and make sure the media sharing toggle is set to off (you can turn it on, remove the redefined folders, and turn if off for added peace of mind.
+The issue is less distinct if you’re not running GNOME Shell as the rygel package isn’t being curtailed correctly and there’s (as of writing) no way to tell systemd not to share it.
+So the solution (for now) is to uninstall rygel:
+sudo apt remove rygel
+Reboot after uninstalling the rygel package to ensure that it’s properly and fully unloaded from your session.
+
+
+h/t julien
+
+
+
+
+"

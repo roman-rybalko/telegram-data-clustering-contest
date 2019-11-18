@@ -1,0 +1,116 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Red Dead Redemption 2: cómo arrancar el juego y solucionar el error de cierre inesperado en PC
+05 Nov 2019 by Diario Tecnología
+Para muchos, la largamente soñada adaptación de Red Dead Redemption 2 a PC ha llegado de la mano de una problema inesperado: es bastante común que el juego se cierre incluso antes de mostrar el logo de Rockstar. Afortunadamente hay soluciones.
+Si bien el lanzamiento del ambicioso Western de los creadores de GTA estaba programado para la tarde de hoy, 5 de noviembre, se ha comenzado a detectar una serie de incidentes comunes en la experiencia que impedían ejecutar el propio juego, incluso tras la pre-carga y decodificación de sus más de 100 GB.
+Las opciones que nos ofrece el launcher de Rockstar se resumen en tres: Aceptar, Reintentar y Activar el Modo Seguro, sirviendo este último para que el juego arranque con unos ajustes gráficos reducidos. Una lástima si tenemos en cuenta el potentísimo despliegue visual prometido para esta adaptación.
+
+
+
+
+
+
+En Vida Extra Trucos para Red Dead Redemption 2: aquí tienes todos los códigos para PS4 y Xbox One
+Desde Rockstar se nos invita a actualizar los drivers de nuestras tarjetas gráficas, e incluso se nos deriva a la páginas oficiales donde podremos descargar las actualizaciones oficiales de NVIDIA y AMD. Además, se aporta la solución de ejecutar RDR2.exe como administrador.
+Por su parte, desde la cuenta oficial de Twitter se ha derivado a los jugadores al centro de asistencia de Rockstar, el cual está recibiendo una cantidad inusual de solicitudes recordando en todo momento actualizar los drivers de las gráficas.
+
+
+
+Por suerte, en VidaExtra hemos encontrado el modo de poder sumergirnos en Red Dead Redemprion 2. Y te explicamos el proceso.
+Soluciones testadas y comprobadas para ejecutar RDR2 en PC
+
+
+
+Lo principal: tal y como dice Rockstar, la actualización de las tarjetas gráficas es un paso obligado. El proceso es acceder a la web de NVIDIA y AMD, descargar el ejecutable y actualizar el software y el equipo.
+
+Los que posean una tarjeta NVIDIA: necesitarán tener los drivers actualizados al menos a la versión 441.12 o posterior. Es posible bajar la app de GeForce Experience con la actualización a través de este link.
+Los que posean una tarjeta AMD: necesitarán tener los drivers actualizados al menos a la versión 19.11.1 o posterior en la app de Radeon Software, la cual puedes bajar a través de este link.
+
+Lo cual nos puede llevar a una pregunta esencial: ¿Cómo averiguar mi tarjeta gráfica? ¿Qué características tiene? Basta con ejecutar el diagnóstico de DirectX (escribiendo en DXDIAG la barra de busqueda de Windows, justo al lado de la tecla Windows) e irnos a la pestaña de Pantalla.
+
+
+
+A partir de ahí, seleccionamos el driver que más se ajuste a nuestra tarjeta y actualizamos el equipo.
+Sin embargo, es probable que incluso tras ese paso no funcione. Lo cual nos lleva a otras alternativas.
+Una de las soluciones más comunes, aunque no universales,  encontradas por los propios usuarios es cerrar por completo el antivirus que tengamos usando en PC. Lo cual, por cierto, está lejos de ser la medida más recomendable a la hora de abordar el juego. Pero en VidaExtra hemos comprobado que, al menos, funciona.
+A tenor de los acontecimientos, Reddit se ha convertido en el lugar en el que convergen los jugadores en busca de respuestas y soluciones. Y lo cierto es que los problemas van más allá de no poder ejecutar el juego en los casos de quienes consiguen solventar ese obstáculo.
+
+
+
+Además, y según se ha mostrado en el hilo de Reddit, la versión de Red Dead Redemption 2 para PC cuenta con diversos problemas en diferentes usuarios, como fallos en el sonido, desplome de los FPS en equipos de diferentes características, y, por lo general el cierre inesperado del juego.
+Por nuestra parte, esperamos que todos estos problemas técnicos sean solventados con una actualización futura. 
+
+Artículo original
+
+
+
+",es,"
+
+
+
+
+
+
+
+
+
+
+
+Red Dead Redemption 2: how to start the game and fix the unexpected shutdown error on PC
+05 Nov 2019 by Diario Tecnología
+For many, the long-dreamed adaptation of Red Dead Redemption 2 to PC has come hand in hand with an unexpected problem: it is quite common for the game to close even before displaying the Rockstar logo. Fortunately there are solutions.
+Although the launch of the ambitious Western of the creators of GTA was scheduled for the afternoon of today, November 5, it has begun to detect a series of common incidents in the experience that prevented running the game itself, even after pre-loading and decoding of its more than 100 GB.
+The options offered by the Rockstar launcher are summarized in three: Accept, Retry and Activate the Safe Mode, serving the latter to start the game with reduced graphic settings. A pity if we consider the powerful visual display promised for this adaptation.
+
+
+
+
+
+
+In Extra Life Cheats for Red Dead Redemption 2: here are all the codes for PS4 and Xbox One
+From Rockstar we are invited to update the drivers of our graphics cards, and we are even referred to the official pages where we can download the official updates from NVIDIA and AMD. In addition, the solution to run RDR2.exe as an administrator is provided.
+For its part, from the official Twitter account, players have been referred to the Rockstar support center, which is receiving an unusual number of requests, remembering at all times to update the graphics drivers.
+
+
+
+Luckily, in VidaExtra we have found a way to dive into Red Dead Redemprion 2. And we explain the process.
+Tested and proven solutions to run RDR2 on PC
+
+
+
+The main thing: as Rockstar says, updating the graphics cards is a must. The process is to access the NVIDIA and AMD website, download the executable and update the software and equipment.
+
+Those with an NVIDIA card: they will need to have the drivers updated at least to version 441.12 or later. It is possible to download the GeForce Experience app with the update through this link.
+Those who have an AMD card: they will need to have the drivers updated at least to version 19.11.1 or later in the Radeon Software app, which you can download through this link.
+
+Which can lead us to an essential question: How to find out my graphics card? What characteristics does it have? Simply run the DirectX diagnostic (by typing in DXDIAG the Windows search bar, right next to the Windows key) and go to the Screen tab.
+
+
+
+From there, we select the driver that best suits our card and update the equipment.
+However, it is likely that even after that step it will not work. Which brings us to other alternatives.
+One of the most common solutions, although not universal, found by the users themselves is to completely close the antivirus that we have using on PC. Which, by the way, is far from being the most advisable measure when approaching the game. But in VidaExtra we have proven that at least it works.
+Under the events, Reddit has become the place where players converge in search of answers and solutions. And the truth is that the problems go beyond not being able to execute the game in the cases of those who manage to overcome that obstacle.
+
+
+
+In addition, and as shown in the Reddit thread, the version of Red Dead Redemption 2 for PC has several problems in different users, such as sound failures, FPS crash on computers of different characteristics, and, therefore, General the unexpected closing of the game.
+For our part, we hope that all these technical problems will be solved with a future update.
+
+Original article
+
+
+
+"

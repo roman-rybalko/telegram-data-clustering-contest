@@ -1,0 +1,90 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Math explains why arrhythmia drug doesn’t work for everyone
+01 Nov 2019, 15:35 by Brandie Jefferson-WUSTL
+A new mathematical model may offer a way to improve outcomes for people with irregular heartbeats, or arrhythmia, researchers say.
+As reported in the Journal of the American College of Cardiology: Basic to Translational Science, researchers developed the first computational model that shows the molecular groundwork of a popular drug’s effectiveness in a variety of ways.
+Current treatment for arrhythmia is the drug mexiletine, which is designed to block the extra current that travels through the sodium channel in the heart that causes it to beat too fast, too slow, or irregularly.
+However, the drug is not effective for every patient—and researchers are not clear why. The new model provides some answers.
+“What we found is that it doesn’t work because part of the channel is getting in the way,” says Jonathan Silva, associate professor of biomedical engineering in the McKelvey School of Engineering at Washington University in St. Louis.
+“What this study allowed us to do is use a computational model to give us insight to say if we pull that part (of the channel) out of the way, then the drug can come in and do its job.”
+Math and mexiletine
+The team used a model with two genetic mutations that cause arrhythmia in patients with long QT type 3 syndrome. One of the mutations, R1626P, allows the drug to work, while the other, M1652R, changes the channel to impede the drug’s access and makes the channel insensitive to the drug.
+The team is the first to use mathematical equations that show how the movements in the sodium channel open and close, and how those movements control where the drug blocks. The model showed that this shift in the voltage sensing domain is critical for the drug’s effectiveness.
+“That mathematical description at the molecular level then lets us take that and put it into a higher-level model and not only understand how those molecular movements affect the channel opening and closing,” Silva says, “as well as how the myocyte fires, how the arrhythmia happens, and how drugs can prevent an arrhythmia.”
+The researchers then put the model into practice to develop another model of a “booster” that made mexiletine perform better at reducing the amount of current coming through the sodium channel, even in the genetic mutation that does not allow the drug to work.
+Theoretically, administering this booster along with the drug to patients with arrhythmia would reduce or even stop the arrhythmia triggers.
+Other arrhythmias, too
+The findings extend beyond patients with long QT syndrome to patients with arrhythmias from other causes, Silva says.
+“We propose that combination therapy with common pore blockers, enhanced by allosteric channel modulation could dramatically alter the landscape for antiarrhythmic therapy by adding an additional dimension to the parameter space of drug efficacy,” Silva says.
+“This would expand the number of patients who would receive clinical benefit from existing therapeutics and allow for a lower concentration of drugs to be used, decreasing off-target side effects.”
+The work builds on Silva’s previous research to investigate the efficacy of mexiletine on patients with long QT syndrome type 3, where they found that the Domain III voltage-sensing domain correlated to the drug’s effect.
+The National Institutes of Health supported the work.
+
+Source: Beth Miller for Washington University in St. Louis
+
+Original Study DOI: 10.1016/j.jacbts.2019.06.002
+
+Related
+
+
+
+
+
+
+",en,"
+
+
+
+
+
+
+
+
+
+
+
+Math explains why arrhythmia drug doesn’t work for everyone
+01 Nov 2019, 15:35 by Brandie Jefferson-WUSTL
+A new mathematical model may offer a way to improve outcomes for people with irregular heartbeats, or arrhythmia, researchers say.
+As reported in the Journal of the American College of Cardiology: Basic to Translational Science, researchers developed the first computational model that shows the molecular groundwork of a popular drug’s effectiveness in a variety of ways.
+Current treatment for arrhythmia is the drug mexiletine, which is designed to block the extra current that travels through the sodium channel in the heart that causes it to beat too fast, too slow, or irregularly.
+However, the drug is not effective for every patient—and researchers are not clear why. The new model provides some answers.
+“What we found is that it doesn’t work because part of the channel is getting in the way,” says Jonathan Silva, associate professor of biomedical engineering in the McKelvey School of Engineering at Washington University in St. Louis.
+“What this study allowed us to do is use a computational model to give us insight to say if we pull that part (of the channel) out of the way, then the drug can come in and do its job.”
+Math and mexiletine
+The team used a model with two genetic mutations that cause arrhythmia in patients with long QT type 3 syndrome. One of the mutations, R1626P, allows the drug to work, while the other, M1652R, changes the channel to impede the drug’s access and makes the channel insensitive to the drug.
+The team is the first to use mathematical equations that show how the movements in the sodium channel open and close, and how those movements control where the drug blocks. The model showed that this shift in the voltage sensing domain is critical for the drug’s effectiveness.
+“That mathematical description at the molecular level then lets us take that and put it into a higher-level model and not only understand how those molecular movements affect the channel opening and closing,” Silva says, “as well as how the myocyte fires, how the arrhythmia happens, and how drugs can prevent an arrhythmia.”
+The researchers then put the model into practice to develop another model of a “booster” that made mexiletine perform better at reducing the amount of current coming through the sodium channel, even in the genetic mutation that does not allow the drug to work.
+Theoretically, administering this booster along with the drug to patients with arrhythmia would reduce or even stop the arrhythmia triggers.
+Other arrhythmias, too
+The findings extend beyond patients with long QT syndrome to patients with arrhythmias from other causes, Silva says.
+“We propose that combination therapy with common pore blockers, enhanced by allosteric channel modulation could dramatically alter the landscape for antiarrhythmic therapy by adding an additional dimension to the parameter space of drug efficacy,” Silva says.
+“This would expand the number of patients who would receive clinical benefit from existing therapeutics and allow for a lower concentration of drugs to be used, decreasing off-target side effects.”
+The work builds on Silva’s previous research to investigate the efficacy of mexiletine on patients with long QT syndrome type 3, where they found that the Domain III voltage-sensing domain correlated to the drug’s effect.
+The National Institutes of Health supported the work.
+
+Source: Beth Miller for Washington University in St. Louis
+
+Original Study DOI: 10.1016/j.jacbts.2019.06.002
+
+Related
+
+
+
+
+
+
+"

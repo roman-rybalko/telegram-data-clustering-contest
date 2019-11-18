@@ -1,0 +1,72 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Se avete un OnePlus 7/7T o Essential Phone potete provare la modalità Desktop di Android 10 (foto)
+01 Nov 2019, 18:02 by Matteo Bottin
+Agli inizi dello sviluppo di Android 10 abbiamo trovato una interessante novità: la modalità desktop. Sono passati i mesi e di questa modalità se ne è persa traccia. Anzi, non è corretto: Google la ha presa e la ha nascosta sotto al tappeto. Fortunatamente, alcuni smartphone supportano l’uscita video e hanno Android 10 (come gli OnePlus 7/7 Pro e 7T/7T Pro e Essential Phone), dunque è possibile lavorare per farla funzionare in maniera “decente”.
+Tutto il procedimento è descritto su XDA Developers, ma cercheremo di riassumerlo brevemente. I requisiti per questa modalità sono:
+
+Lo smartphone deve avere Android 10
+Lo smartphone deve supportare la DisplayPort Alt Mode (qui una lista parziale). Non tutti gli smartphone sono compatibili, perché il produttore potrebbe aver disabilitato la funzione (come accade con Pixel 4, vero Google?)
+È necessario un adattatore USB-C/HDMI. Inoltre, per facilitarvi la vita, dovreste tenere a portata di mano un mouse e una tastiera bluetooth.
+
+Come lanciare la modalità desktop nascosta di Android 10
+
+Abilitare le opzioni sviluppatore andando in Impostazioni > Informazioni sul telefono e toccando 7 volte la Versione build
+Entrate nelle impostazioni sviluppatore e cercate la sezione “APPS”. Qui abilitate “enable freeform windows” e “force desktop mode” (in italiano le voci potrebbero cambiare)
+Riavviate il telefono
+Installate questo APK (è una versione modificata di Lewnchair launcher)
+Impostate Lawnchair come launcher principale (Impostazioni > App e notifiche > App di default)
+Collegate il telefono al monitor usando l’adattatore
+Dopo qualche secondo dovreste veder comparire la modalità desktop sullo schermo. Accettate i permessi richiesti per mostrare la barra inferiore e le app recenti
+
+In questo modo potrete godervi una rudimentale modalità desktop (come la si vede nella prima immagine in galleria). Se voleste raffinare il tutto, potreste farlo tramite alcuni comandi di ADB. Quest’ultimo passaggio è più complesso e non adatto a tutti: se voleste comunque darci un’occhiata, vi lasciamo alla spiegazione dettagliata di XDA.
+Fonte: XDA Developers
+
+
+",it,"
+
+
+
+
+
+
+
+
+
+
+
+If you have a OnePlus 7 / 7T or Essential Phone you can try the Android 10 Desktop mode (photo)
+01 Nov 2019, 18:02 by Matteo Bottin
+At the beginning of the development of Android 10 we found an interesting novelty: the desktop mode. The months have passed and this mode has lost track of it. Indeed, it is not correct: Google has taken it and has hidden it under the rug. Fortunately, some smartphones support video output and have Android 10 (like the OnePlus 7/7 Pro and 7T / 7T Pro and Essential Phone), so you can work to make it work in a ""decent"" way.
+The whole procedure is described on XDA Developers, but we will try to summarize it briefly. The requirements for this mode are:
+
+The smartphone must have Android 10
+The smartphone must support the DisplayPort Alt Mode (here a partial list). Not all smartphones are compatible, because the manufacturer may have disabled the feature (as happens with Pixel 4, true Google?)
+A USB-C / HDMI adapter is required. Also, to make your life easier, you should have a mouse and a Bluetooth keyboard on hand.
+
+How to launch the hidden desktop mode of Android 10
+
+Enable the developer options by going to Settings> About phone and tapping the build version 7 times
+Enter the developer settings and look for the ""APPS"" section. Here enable ""enable freeform windows"" and ""force desktop mode"" (in Italian the entries may change)
+Restart the phone
+Install this APK (it's a modified version of Lewnchair launcher)
+Set Lawnchair as the main launcher (Settings> Apps and notifications> Default apps)
+Connect the phone to the monitor using the adapter
+After a few seconds you should see the desktop mode appear on the screen. Accept the required permissions to show the bottom bar and recent apps
+
+This way you can enjoy a rudimentary desktop mode (as seen in the first image in the gallery). If you wanted to refine everything, you could do it through some ADB commands. This last step is more complex and not suitable for everyone: if you still want to take a look, we leave you with the detailed explanation of XDA.
+Source: XDA Developers
+
+
+"

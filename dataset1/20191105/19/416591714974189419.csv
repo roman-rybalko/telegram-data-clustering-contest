@@ -1,0 +1,62 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Rede Neural Israelense cria animações com apenas uma imagem fonte
+SinGAN pode ser usada para reordenar e editar objetos, harmonizar um novo objeto com o restante da cena, aprimorar a resolução de uma imagem borrada e até criar animações
+05 Nov 2019, 19:49 by Rafael Rigues
+O uso de redes neurais para manipulação de imagens não é novidade, mas geralmente elas precisam ser “treinadas” com uma grande quantidade de amostras para que possam produzir bons resultados. Mas uma nova rede neural desenvolvida pelo Technion, o Instituto de Tecnologia de Israel, promete resolver o problema: com a SinGAN basta uma única imagem de entrada para gerar manipulações ou até mesmo animações convincentes.
+De acordo com seus criadores, a SinGAN pode ser usada para transformar um clipart em uma imagem realista, reordenar e editar objetos, harmonizar um novo objeto com o restante da cena ou aprimorar a resolução de uma imagem borrada, entre outras tarefas. Em todas elas a rede precisa de apenas uma imagem de entrada e é treinada da mesma forma, sem que sejam necessários ajustes ou mudanças em sua arquitetura.
+
+
+
+Um paper detalhando o funcionamento da rede, bem como material suplementar e código-fonte, estão disponíveis no site do projeto. O código-fonte em Python está disponível no GitHub, junto com instruções de uso.
+Fonte: Página do projeto SinGAN
+
+
+
+
+
+
+
+
+",pt,"
+
+
+
+
+
+
+
+
+
+
+
+Israeli Neural Network creates animations with only one source image
+SinGAN can be used to reorder and edit objects, harmonize a new object with the rest of the scene, enhance the resolution of a blurred image, and even create animations.
+05 Nov 2019, 19:49 by Rafael Rigues
+Using neural networks for image manipulation is not new, but they usually need to be “trained” with a large amount of samples in order to produce good results. But a new neural network developed by Technion, the Israel Institute of Technology, promises to solve the problem: with SinGAN a single input image is enough to generate compelling manipulations or even animations.
+According to its creators, SinGAN can be used to transform a clipart into a realistic image, reorder and edit objects, harmonize a new object with the rest of the scene, or enhance the resolution of a blurred image, among other tasks. In all of them the network needs only one input image and is trained in the same way, without requiring adjustments or changes in its architecture.
+
+
+
+A paper detailing the operation of the network, as well as supplemental material and source code, is available on the project website. Python source code is available on GitHub, along with instructions for use.
+Source: SinGAN Project Page
+
+
+
+
+
+
+
+
+"

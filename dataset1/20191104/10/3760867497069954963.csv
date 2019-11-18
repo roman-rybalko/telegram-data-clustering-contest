@@ -1,0 +1,74 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Adiós a las notificaciones al visitar una web: Firefox será el primero en ocultarlas por defecto
+04 Nov 2019, 10:03 by Alberto García
+Cuando visitamos una página web por primera vez, recibimos una cantidad enorme de mensajes, notificaciones y alertas sobre contenido que tenemos que aceptar, incluyendo notificaciones, cookies, aceptación del uso de datos para la RGPD, suscripción a newsletter, y un larguísimo y tedioso etcétera. Por ello, Mozilla Firefox va a ser el primer navegador que las oculte por defecto.
+Firefox 72 ocultará las notificaciones por defecto, y ahora aparecerán con un icono
+Será a partir de Firefox 72 cuando las notificaciones estén ocultadas por defecto. Con esto se pretende evitar el uso constante de la Notifications API por parte de las páginas web, donde algunas abusan de ello y las muestran en el navegador incluso después de haber cerrado esas páginas.
+
+
+
+Inicialmente, esta función fue pensada como una opción más para las páginas web para informar a los usuarios sobre actualizaciones o noticias importantes, pero pronto empezó a usarse de manera abusiva por multitud de páginas web que envían hasta decenas de notificaciones al día en lugar de enviar una cada cierto tiempo.
+Por ello, Mozilla hizo un experimento este año para determinar cómo interactúan los usuarios con las notificaciones que reciben en el navegador, donde todos tienen que elegir si quieren o no recibirlas cuando entran a una web por primera vez cuando todavía ni la conocen ni saben si las van a querer en un futuro.
+En el experimento, el 97% de los usuarios cerraron la notificación inmediatamente, o incluso fueron más allá y bloquearon la opción de que la web pudiese mostrar notificaciones. Esta posibilidad está disponible desde Firefox 59, donde en el menú de configuración podemos activar la opción de «Bloquear nuevas solicitudes de emisión de notificaciones» para evitar que una página web solicite permiso para enviarnos notificaciones.
+Firefox 72 estará disponible a partir del 7 de enero
+Esta opción no será necesaria a partir de Firefox 72. En lugar de que aparezca una pequeña ventana emergente preguntándonos si queremos recibir notificaciones, en su lugar aparecerá un nuevo icono en la barra de direcciones en forma de bocadillo en la que el usuario podrá elegir si quiere o no recibir notificaciones de esa web, pero ya no aparecerá la ventana emergente preguntándonos si queremos darle permiso o queremos bloquearlo.
+
+
+
+De esta forma, ya no será posible abusar de esta opción, y el usuario que realmente quiera recibir notificaciones tendrá la opción de hacerlo. Al entrar en la web, el icono de notificación aparecerá haciendo un ligero movimiento de izquierda a derecha para indicarnos que hay una notificación. Al pinchar en el botón, aparecerá la ventana desplegable que nos dará la opción de elegir si queremos recibirlas.
+
+
+
+La función ya puede probarse en la última nightly de Firefox 72, cuya versión estable estará disponible el 7 de enero de 2020.
+Google Chrome actualmente ofrece también la opción de bloquear todas las notificaciones, pero no lo hace por defecto. Para ello, es necesario ir a Configuración del sitio web – Notificaciones. Ahí podemos desactivar la pestaña superior, mostrándose «Bloqueado» para todas las notificaciones.
+
+
+",es,"
+
+
+
+
+
+
+
+
+
+
+
+Goodbye to notifications when visiting a website: Firefox will be the first to hide them by default
+04 Nov 2019, 10:03 by Alberto García
+When we visit a web page for the first time, we receive a huge amount of messages, notifications and alerts about content that we have to accept, including notifications, cookies, acceptance of the use of data for the GDPR, subscription to newsletter, and a very long and tedious etc. . Therefore, Mozilla Firefox will be the first browser to hide them by default.
+Firefox 72 will hide the default notifications, and now they will appear with an icon
+It will be from Firefox 72 when notifications are hidden by default. This is intended to avoid the constant use of the Notifications API by web pages, where some abuse it and display it in the browser even after closing those pages.
+
+
+
+Initially, this function was thought of as another option for web pages to inform users about important updates or news, but it soon began to be used abusively by a multitude of web pages that send up to dozens of notifications a day instead of sending One every so often.
+Therefore, Mozilla did an experiment this year to determine how users interact with the notifications they receive in the browser, where everyone has to choose whether or not to receive them when they enter a website for the first time when they do not even know or know if They will love them in the future.
+In the experiment, 97% of users closed the notification immediately, or even went further and blocked the option that the web could show notifications. This possibility is available from Firefox 59, where in the configuration menu we can activate the option ""Block new requests for issuing notifications"" to prevent a web page from requesting permission to send us notifications.
+Firefox 72 will be available from January 7
+This option will not be necessary as of Firefox 72. Instead of a small pop-up window asking if we want to receive notifications, instead a new icon will appear in the address bar in the form of a sandwich in which the user can choose whether wants or not to receive notifications from that website, but the pop-up window will no longer appear asking if we want to give it permission or want to block it.
+
+
+
+In this way, it will no longer be possible to abuse this option, and the user who really wants to receive notifications will have the option to do so. Upon entering the web, the notification icon will appear making a slight movement from left to right to indicate that there is a notification. When you click on the button, the drop-down window will appear that will give us the option to choose if we want to receive them.
+
+
+
+The function can now be tested in the latest nightly of Firefox 72, whose stable version will be available on January 7, 2020.
+Google Chrome currently also offers the option of blocking all notifications, but it does not do so by default. To do this, it is necessary to go to Website Settings - Notifications. There we can deactivate the top tab, showing ""Blocked"" for all notifications.
+
+
+"

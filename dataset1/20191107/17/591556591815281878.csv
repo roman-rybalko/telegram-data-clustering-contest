@@ -1,0 +1,74 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Amazon intros new flexible payment options for AWS compute services
+07 Nov 2019, 17:00 by Natalie Gagliordi
+
+Simply called Savings Plans, the purchase option functions as a flexible discount model that gives customers the same discounts as Reserved Instances.
+
+Amazon has announced a new purchase option for AWS compute services. Simply called Savings Plans, the purchase option functions as a flexible discount model that gives customers the same discounts as Reserved Instances, in exchange for a commitment to use a specific amount of compute power over a one or three year period. 
+Customers can choose from two Savings Plans options. The Compute Savings Plans provide more flexibility and may help customers reduce costs by up to 66%, according to AWS. The EC2 Instance Savings Plans apply to a specific instance family within a region and provide discounts of up to 72%. AWS has a Cost Explorer tool designed to help customers to choose the Savings Plan option that makes the most sense.""Every type of compute usage has an On Demand price and a (lower) Savings Plan price,"" AWS evangelist Jeff Barr wrote in a blog post. ""After you commit to a specific amount of compute usage per hour, all usage up to that amount will be covered by the Saving Plan, and anything past it will be billed at the On Demand rate.""Savings Plans are now available in all AWS regions outside of China.
+RELATED:
+
+
+AWS vs. Microsoft Azure will be about sales scale, AI, multi-cloud realities
+
+
+AWS provides update on Outposts launch, supported services
+
+
+Can AWS be caught? Here's how its cloud computing rivals can improve their chances
+
+
+AWS brings EC2 G4 instances into general availability
+
+
+
+
+",en,"
+
+
+
+
+
+
+
+
+
+
+
+Amazon intros new flexible payment options for AWS compute services
+07 Nov 2019, 17:00 by Natalie Gagliordi
+
+Simply called Savings Plans, the purchase option functions as a flexible discount model that gives customers the same discounts as Reserved Instances.
+
+Amazon has announced a new purchase option for AWS compute services. Simply called Savings Plans, the purchase option functions as a flexible discount model that gives customers the same discounts as Reserved Instances, in exchange for a commitment to use a specific amount of compute power over a one or three year period. 
+Customers can choose from two Savings Plans options. The Compute Savings Plans provide more flexibility and may help customers reduce costs by up to 66%, according to AWS. The EC2 Instance Savings Plans apply to a specific instance family within a region and provide discounts of up to 72%. AWS has a Cost Explorer tool designed to help customers to choose the Savings Plan option that makes the most sense.""Every type of compute usage has an On Demand price and a (lower) Savings Plan price,"" AWS evangelist Jeff Barr wrote in a blog post. ""After you commit to a specific amount of compute usage per hour, all usage up to that amount will be covered by the Saving Plan, and anything past it will be billed at the On Demand rate.""Savings Plans are now available in all AWS regions outside of China.
+RELATED:
+
+
+AWS vs. Microsoft Azure will be about sales scale, AI, multi-cloud realities
+
+
+AWS provides update on Outposts launch, supported services
+
+
+Can AWS be caught? Here's how its cloud computing rivals can improve their chances
+
+
+AWS brings EC2 G4 instances into general availability
+
+
+
+
+"

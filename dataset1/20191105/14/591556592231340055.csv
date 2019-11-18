@@ -1,0 +1,68 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Microsoft: Here's why we just stored the whole Superman movie inside a bit of glass
+05 Nov 2019, 14:53 by Daphne Leprince-Ringuet
+
+Ignite 2019: Microsoft says its latest collaboration with Warner Bros could help store data for generations to come.
+
+
+
+
+
+
+
+The world has been hard at work trying to find solutions to store the 100 zettabytes of data that are expected to hit the cloud by 2023. Microsoft and Warner Bros, for their part, have just demonstrated why they think they are ahead of the game – in both protecting past archives, and in storing those to come.At Microsoft's Ignite conference, CEO Satya Nadella showed off a piece of quartz glass the size of a drink coaster. Within the glass was stored a 143-minute Warner Bros movie – fittingly, the film was Superman. SEE: Sensor'd enterprise: IoT, ML, and big data (ZDNet special report) | Download the report as a PDF (TechRepublic)The technology is the result of Microsoft Research's Project Silica, which was set up to design new storage systems for the cloud. 
+Project Silica's researchers have been working on developing ultrafast laser optics, which they used to encode the entire film in glass.Using an ultrafast pulse laser they wrote 'voxels' inside the glass – that is, the three-dimensional equivalent of the pixels that make up an image. Each voxel, therefore, has its own unique orientation, depth, and size, making it a unique encoder for the movie. 
+Because voxels are engraved at the nano-scale level, they can be written in multiple layers throughout the glass. A two-millimeter piece, for example, can contain more than 100 layers of voxels, making for high-density storage. 
+
+
+At Microsoft's Ignite conference last Monday, the company's CEO Satya Nadella unveiled a brand-new technology in the form of a piece of quartz glass the size of a drink coaster.  Image: Jonathan Banks for Microsoft
+
+According to Microsoft, the glass and the data it contains can resist being boiled in water, baked in an oven, microwaved, flooded, scoured, and demagnetized. By permanently changing the structure of the glass, the laser ensures that the information is securely printed for potentially thousands of years.Ant Rowstron, deputy lab director at Microsoft Research Cambridge, said: ""One big thing we wanted to eliminate is this expensive cycle of moving and rewriting data to the next generation.""""We really wanted something you can put on the shelf for 50 or 100 or 1,000 years and forget about until you need it."" To carry out Project Silica, Microsoft partnered with the University of Southampton in the UK, where scientists had already developed a laser-writing technology to record data back in 2016, which they claimed could have ""a virtually unlimited lifetime at room temperature"".Peter Kazansky, who worked on the project, said at the time that this would open a new era of data archiving. ""This technology can secure the last evidence of our civilization: all we've learnt will not be forgotten,"" he said.For a media company like Warner Bros, this could have huge implications. Storing its 100-year long film and television archives is indeed currently causing it some headaches. The company keeps three copies of each asset stored in various locations around the world. It has plans in place in case an earthquake, a hurricane or a fire struck one of its storage locations. And every three to five years, it migrates its digital content to stay ahead of degradation issues.The company's chief technology officer, Vicky Colf, said: ""Imagine if a title like The Wizard of Oz or a show like Friends wasn't available for generation after generation to enjoy… That's why we take the job of preserving and archiving our content extremely seriously.""As intriguing as storing data on glass may seem, though, the technology is not made for users to be able to play films at home on a specially-made quartz glass DVD player. The voxels encoded by the laser in the glass can only be read by a computer-controlled microscope that uses machine learning to decode and reconstruct the patterns that come out when polarized light is shone through the glass. So, the data stored in the new technology won't be information that needs to be accessed regularly. Rather, Microsoft spoke of it as 'cold data', or archival data that companies are required to maintain but don't need to see for months or years. SEE: Why making is so important to IT professionals in small and large-sized businessesCold data includes media archives like those held by Warner Bros, but also medical data, or legal contracts, or even urban building plans that cities have to retain.""We are not trying to build things that you put in your house or play movies from,"" said Rowstron. ""We are building storage that operates at the cloud scale"".In other words, Microsoft is interested in technology that exists exclusively for the cloud – something that it previously outlined in its mission statement for Project Silica, in which it said that its research was not concerned with the deployment of information outside the cloud, such as offices, homes, mobile phones or enterprise data centers. Microsoft cautions that there is much work ahead before physical quartz-glass archives can be used at scale. To do so, Microsoft engineers would need to speed up data encoding, as well as increase the data density. 
+
+
+",en,"
+
+
+
+
+
+
+
+
+
+
+
+Microsoft: Here's why we just stored the whole Superman movie inside a bit of glass
+05 Nov 2019, 14:53 by Daphne Leprince-Ringuet
+
+Ignite 2019: Microsoft says its latest collaboration with Warner Bros could help store data for generations to come.
+
+
+
+
+
+
+
+The world has been hard at work trying to find solutions to store the 100 zettabytes of data that are expected to hit the cloud by 2023. Microsoft and Warner Bros, for their part, have just demonstrated why they think they are ahead of the game – in both protecting past archives, and in storing those to come.At Microsoft's Ignite conference, CEO Satya Nadella showed off a piece of quartz glass the size of a drink coaster. Within the glass was stored a 143-minute Warner Bros movie – fittingly, the film was Superman. SEE: Sensor'd enterprise: IoT, ML, and big data (ZDNet special report) | Download the report as a PDF (TechRepublic)The technology is the result of Microsoft Research's Project Silica, which was set up to design new storage systems for the cloud. 
+Project Silica's researchers have been working on developing ultrafast laser optics, which they used to encode the entire film in glass.Using an ultrafast pulse laser they wrote 'voxels' inside the glass – that is, the three-dimensional equivalent of the pixels that make up an image. Each voxel, therefore, has its own unique orientation, depth, and size, making it a unique encoder for the movie. 
+Because voxels are engraved at the nano-scale level, they can be written in multiple layers throughout the glass. A two-millimeter piece, for example, can contain more than 100 layers of voxels, making for high-density storage. 
+
+
+At Microsoft's Ignite conference last Monday, the company's CEO Satya Nadella unveiled a brand-new technology in the form of a piece of quartz glass the size of a drink coaster.  Image: Jonathan Banks for Microsoft
+
+According to Microsoft, the glass and the data it contains can resist being boiled in water, baked in an oven, microwaved, flooded, scoured, and demagnetized. By permanently changing the structure of the glass, the laser ensures that the information is securely printed for potentially thousands of years.Ant Rowstron, deputy lab director at Microsoft Research Cambridge, said: ""One big thing we wanted to eliminate is this expensive cycle of moving and rewriting data to the next generation.""""We really wanted something you can put on the shelf for 50 or 100 or 1,000 years and forget about until you need it."" To carry out Project Silica, Microsoft partnered with the University of Southampton in the UK, where scientists had already developed a laser-writing technology to record data back in 2016, which they claimed could have ""a virtually unlimited lifetime at room temperature"".Peter Kazansky, who worked on the project, said at the time that this would open a new era of data archiving. ""This technology can secure the last evidence of our civilization: all we've learnt will not be forgotten,"" he said.For a media company like Warner Bros, this could have huge implications. Storing its 100-year long film and television archives is indeed currently causing it some headaches. The company keeps three copies of each asset stored in various locations around the world. It has plans in place in case an earthquake, a hurricane or a fire struck one of its storage locations. And every three to five years, it migrates its digital content to stay ahead of degradation issues.The company's chief technology officer, Vicky Colf, said: ""Imagine if a title like The Wizard of Oz or a show like Friends wasn't available for generation after generation to enjoy… That's why we take the job of preserving and archiving our content extremely seriously.""As intriguing as storing data on glass may seem, though, the technology is not made for users to be able to play films at home on a specially-made quartz glass DVD player. The voxels encoded by the laser in the glass can only be read by a computer-controlled microscope that uses machine learning to decode and reconstruct the patterns that come out when polarized light is shone through the glass. So, the data stored in the new technology won't be information that needs to be accessed regularly. Rather, Microsoft spoke of it as 'cold data', or archival data that companies are required to maintain but don't need to see for months or years. SEE: Why making is so important to IT professionals in small and large-sized businessesCold data includes media archives like those held by Warner Bros, but also medical data, or legal contracts, or even urban building plans that cities have to retain.""We are not trying to build things that you put in your house or play movies from,"" said Rowstron. ""We are building storage that operates at the cloud scale"".In other words, Microsoft is interested in technology that exists exclusively for the cloud – something that it previously outlined in its mission statement for Project Silica, in which it said that its research was not concerned with the deployment of information outside the cloud, such as offices, homes, mobile phones or enterprise data centers. Microsoft cautions that there is much work ahead before physical quartz-glass archives can be used at scale. To do so, Microsoft engineers would need to speed up data encoding, as well as increase the data density. 
+
+
+"

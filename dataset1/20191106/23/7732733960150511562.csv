@@ -1,0 +1,78 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Adobe's About Face AI can identify if a photo was altered
+Heat map show what pixels were changed, but unfortunately, it only works on pictures changed with Photoshop
+06 Nov 2019, 23:19 by Cal Jeffrey
+
+
+
+In the pipe: On Tuesday, we got a sneak peek at an Adobe Audition experimental feature called Project Awesome Audio, which can clean up noise from an audio recording with just one click. In addition to this “sneak,” as Adobe calls them, the company revealed several others at its MAX keynote yesterday, including one that can detect altered photos.
+Working with researchers at the University of California, Berkeley, Adobe has created a tool that uses its signature Sensei AI to detect if and how a photo has been altered. The company claims that it is twice as accurate at detecting manipulation as humans.
+Codenamed “Project About Face” because it focuses on facial images, the machine learning algorithms examine a photo pixel-by-pixel and generate a heat map showing which ones have been altered. So not only does it detect fakes, it shows where and by how much an image has been changed (pictured below).
+The researchers trained the AI by feeding it thousands of pictures gathered from the internet. In lab experiments, they found that it was able to detect altered images with about 99-percent accuracy. A human test group was only able to succeed 53 percent of the time.
+
+
+
+We have seen a rise in the capabilities of machine learning to be used to create bogus images and “deepfake” videos with strikingly realistic results. Adobe’s technology could be used to identify and expose such fakery. However, there is one downside preventing that use.
+About Face only works on images that have been made with Adobe Photoshop. Not only that, the picture has to have been altered with the program’s Face-Aware Liquify tool. This limitation significantly diminishes its usefulness. Perhaps because of this factor, the tool can also undo Liquify alterations.
+That said, the technology is only a prototype and is still in its infancy. Adobe said that it plans to keep working and developing the AI so that it can work on any image no matter what was used to change it.
+Unlike Project Awesome Audio, the chances of Project About Face showing up in an Adobe product in the immediate future are pretty slim. Adobe posted a blog of all the sneaks it revealed if you are interested in other cool, but not-ready-for-primetime features it has in the pipeline.
+
+Related Reads
+
+
+
+
+
+
+
+",en,"
+
+
+
+
+
+
+
+
+
+
+
+Adobe's About Face AI can identify if a photo was altered
+Heat map show what pixels were changed, but unfortunately, it only works on pictures changed with Photoshop
+06 Nov 2019, 23:19 by Cal Jeffrey
+
+
+
+In the pipe: On Tuesday, we got a sneak peek at an Adobe Audition experimental feature called Project Awesome Audio, which can clean up noise from an audio recording with just one click. In addition to this “sneak,” as Adobe calls them, the company revealed several others at its MAX keynote yesterday, including one that can detect altered photos.
+Working with researchers at the University of California, Berkeley, Adobe has created a tool that uses its signature Sensei AI to detect if and how a photo has been altered. The company claims that it is twice as accurate at detecting manipulation as humans.
+Codenamed “Project About Face” because it focuses on facial images, the machine learning algorithms examine a photo pixel-by-pixel and generate a heat map showing which ones have been altered. So not only does it detect fakes, it shows where and by how much an image has been changed (pictured below).
+The researchers trained the AI by feeding it thousands of pictures gathered from the internet. In lab experiments, they found that it was able to detect altered images with about 99-percent accuracy. A human test group was only able to succeed 53 percent of the time.
+
+
+
+We have seen a rise in the capabilities of machine learning to be used to create bogus images and “deepfake” videos with strikingly realistic results. Adobe’s technology could be used to identify and expose such fakery. However, there is one downside preventing that use.
+About Face only works on images that have been made with Adobe Photoshop. Not only that, the picture has to have been altered with the program’s Face-Aware Liquify tool. This limitation significantly diminishes its usefulness. Perhaps because of this factor, the tool can also undo Liquify alterations.
+That said, the technology is only a prototype and is still in its infancy. Adobe said that it plans to keep working and developing the AI so that it can work on any image no matter what was used to change it.
+Unlike Project Awesome Audio, the chances of Project About Face showing up in an Adobe product in the immediate future are pretty slim. Adobe posted a blog of all the sneaks it revealed if you are interested in other cool, but not-ready-for-primetime features it has in the pipeline.
+
+Related Reads
+
+
+
+
+
+
+
+"

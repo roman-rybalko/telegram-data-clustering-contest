@@ -1,0 +1,192 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Why Azure Arc Is A Game Changer For Microsoft
+05 Nov 2019 by Janakiram MSV
+At Ignite 2019, Satya Nadella, CEO of Microsoft, announced a slew of new hybrid cloud products and services. The most significant announcement from Satya’s keynote is Azure Arc, the hybrid and multi-cloud platform from Microsoft. 
+
+
+Satya Nadella, CEOMICROSOFT
+
+Though a major revamp of the hybrid strategy was expected by the analysts and partners of Microsoft, Azure Arc has sprung many surprises. Compared to its counterparts in the market, Azure Arc stands out for its unique approach and design. 
+Before I explain why Azure Arc is a game changer, let me dissect the architecture and the design for you.
+
+Azure Architecture in Plain English
+
+Since its debut a decade ago, Microsoft has been continuously improving the control plane of Azure which is responsible for managing the lifecycle of resources such as virtual machines, database instances, Hadoop clusters and Kubernetes clusters.
+In technical nomenclature, the control plane is called the Azure Fabric Controller. Each time a resource like a VM is provisioned, scaled, stopped, or terminated, the operation goes through the Fabric Controller. 
+Every resource in Azure constantly reports its state to the Fabric Controller. For example, in the case of  Azure VMs, the communication is initiated and managed by an agent (VM Agent) running within the virtual machine. 
+In between the fabric controller and the resources, there is another layer called the Azure Resource Manager (ARM) that automates the resource lifecycle. Microsoft has built resource providers for each of the services running within Azure. For example, VMs, SQL Database, Azure Kubernetes Service act as resource providers.  Customers can declare the configuration of these resources through an ARM template - a simple text file the defines the desired state of a resource.
+
+Azure Arc as an Extension of Azure Control Plane
+
+With Azure Arc, Microsoft has expanded the support for ARM to resources running outside of Azure. This means, a physical server running in a data center looks like a compute resource in the eyes of the Fabric Controller. Even VMs running on top of VMware vSphere, Amazon EC2, and Google Compute Engine can be registered with the Azure Resource Manager. Any Windows or Linux server - even those running behind a firewall and proxy - can be registered with ARM. The external VMs run a similar software like the agent that runs inside Azure VMs.
+Apart from VMs, Azure ARC can also register Kubernetes clusters. Once onboard, any external Kubernetes cluster can be managed like Azure’s own Kubernetes service, AKS. That means a Pivotal Kubernetes Service cluster running on vSphere within the datacenter and mainstream managed Kubernetes services like Amazon EKS, Google Kubernetes Engine, and IBM Kubernetes Service can be registered with Azure Arc. 
+What’s more interesting is the fact that Azure Arc can run managed database services in hybrid and multi-cloud environments. At the time of the announcement, two databases, Azure SQL Database and PostgreSQL Hyperscale, can be run outside of Azure. Some of the core benefits of managed databases such as automated updates, patching, security audits, no-touch upgrades are passed onto Azure data services. 
+Finally, customers can deploy modern, cloud-native applications packaged as microservices to either VMs or Kubernetes clusters that are a part of Azure Arc. Application services take advantage of the recent investments in open source projects such as Rudr and Dapr. 
+
+
+Azure ArcJANAKIRAM MSV
+
+In summary, Microsoft is enabling Azure to manage the below services deployed externally:
+
+Windows and Linux servers running in bare metal, VMs, and public cloud IaaS
+Kubernetes clusters 
+Data services based on SQL Azure and PostgreSQL Hyperscale
+Applications packaged and deployed as microservices running on Kubernetes
+
+
+Azure Arc - Why Care?
+
+What does this mean to customers? How can enterprises benefit from Azure Arc? 
+Let me attempt to answer these questions.
+With Azure Arc, customers can manage resources deployed within Azure and outside of Azure through the same control plane. They can take advantage of the automation capabilities available through ARM templates and Azure API.
+For example, one ARM template can rollout a set of public-facing virtual machines in Azure while provisioning the VMs in the data center that run legacy databases. It makes it possible to apply RBAC, tagging, and identity policies to resources. 
+Enterprises can use Azure Security Center to ensure compliance of all the resources registered with Azure Arc irrespective of where they are deployed. They can quickly patch the operating systems running in VMs as soon as a vulnerability is found. Customers can encrypt file systems across all the VMs with a push of a button. Policies can be defined once and automatically applied to all the resources across Azure, data center, and even to VMs running in other cloud platforms. 
+All the resources registered with Azure Arc send the logs to the central, cloud-based Azure Monitor. This is a very powerful approach in deriving insights from highly distributed and disparate infrastructure environments. 
+Finally, Azure Automation service can be used to perform mundane to advanced maintenance operations across the public cloud, hyrbid cloud and multi-cloud environments.
+Azure Arc customers can use Azure Portal, Azure CLI, SDK, and 3rd party tools like Terraform to automate resource management similar to the way public cloud resources are managed.
+
+Azure Arc as the Game Changer
+
+With Azure Arc, Microsoft is enabling enterprises with legacy infrastructure to join the hybrid cloud bandwagon. A physical x86 server running a decade-old version of Oracle on Linux can easily register itself with Azure Arc to show up in the Azure Portal in the same resource group and same region that runs a modern, elastic web application that talks to the legacy database. 
+Microsoft is not alienating customers running legacy hardware and VMs from the hybrid cloud. VMs are treated as first-class citizens in the world of Azure Arc. 
+With AKS and Kubernetes, Azure Arc makes it easy to run greenfield applications packaged and deployed as containers. More recently, Microsoft and Alibaba have jointly published a specification called Open Application Model which simplifies modelling microservices composed of multiple containers. Rudr, an implementation of OAM will become the abstraction layer to target Kubernetes infrastructure.    
+So, with support for VMs and Kubernetes, Microsoft is going to simplify application modernization and digital transformation with Azure Arc without much tradeoff.
+Microsoft is also one of the first to bring managed data services to the hybrid cloud. Since these database services are packaged as containers and run on top of Kubernetes, managing them from the centralized Azure control plane becomes efficient. 
+Azure Arc is all set to become the overarching management layer for the newly announced hybrid cloud offerings including Azure Stack Hub, Azure Stack HCI, and Azure Stack Edge. Depending on the footprint and the capability, they can run one or more supported Azure services through Azure Arc. 
+With Azure Arc and Azure Stack portfolio, Microsoft got the combination of hardware and software strategy right.
+
+Azure Arc vs AWS Outposts
+
+AWS Outposts are purpose-built, Amazon-designed, hyper-converged infrastructure appliances comprising compute, memory, storage and networking. Since AWS Outposts appliances are based on the AWS Nitro System, they come in custom configurations.
+Amazon customers subscribe to Outposts service just like they consume EC2 instances. They don’t own the infrastructure.
+AWS Outposts customers choose from two different stacks -  AWS-only flavour with the familiar AWS APIs and control plane or a VMware variant that runs vSphere, vSAN, and NSX as a part of VMware SDDC stack. 
+Some of the AWS managed services such as Application Load Balancer (ALB), Amazon ECS and Amazon EKS for containers, Amazon EMR for big data and Amazon RDS for databases run on AWS Outposts. 
+When compared to AWS Outposts, Microsoft Azure Arc doesn’t need proprietary hardware. Any Linux or Windows VM can be registered and managed through Azure.  AWS Outposts are comparable to Azure Stack Hub managed through Azure Arc. 
+Though Outposts run container infrastructure through ECS and EKS, unlike Azure Arc, AWS cannot manage external clusters to roll out policies and configuration. 
+AWS Outposts is an extension of EC2 that can run some of the AWS managed services. Azure Arc is a much broader hybrid cloud platform with support for a variety of compute environments running in the enterprise data center. If the environment is capable of running a managed Kubernetes cluster, Azure Arc can deploy data services.
+
+Azure Arc vs Google Anthos
+
+Anthos from Google is a hybrid cloud platform built using modern infrastructure building blocks such as Kubernetes, Istio, and Knative. It’s a logical extension of Google Kubernetes Engine that runs in the customer environment. 
+Through the acquisition of Velostrata, Google has built tools that convert traditional virtual machines to containers running on Kubernetes. Though technically Anthos can run VMs and containers side-by-side, Google encourages customers to modernize the apps through containerization. 
+Google is slowly but steadily porting some of the managed services such as Dataproc, Cloud Run, and Kubeflow to Anthos. Other services from the data and AI portfolio are expected to be ported to Anthos in the future. 
+Anthos can also manage 3rd party Kubernetes clusters through a single control plane. It can also apply and manage configuration policies and security settings through a central location. 
+There are quite a few similarities between Google Anthos and Azure Arc.  Both can register external clusters and manage them through the same control plane. Both platforms can deploy applications across multiple clusters. Like Anthos, Azure Arc takes advantage of the Kubernetes foundation to run managed data services. 
+But the key difference with Azure Arc is the first-class support for VMs. Customers can easily mix and match physical servers, VMs, and Kubernetes clusters within the hybrid environment. 
+Google is yet to bring managed database services such as Cloud SQL and Bigtable to Anthos. Azure Arc runs SQL and PostgreSQL Hyperscale from day one. 
+Anthos includes Cloud Run and Knative to simplify the developer experience of dealing with Kubernetes. Azure Arc encourages developers to embrace OAM design and deploy applications based on Rudr and Dapr. 
+
+Summary
+
+The definition of a hybrid cloud is extended to include multi-cloud capabilities. AWS with Outposts, Google with Anthos, IBM and Red Hat with OpenShift and CloudPaks, VMware with Project Pacific and Tanzu are battling it out to win the mindshare and market share. 
+Built on the solid foundation of ARM, Microsoft’s hybrid strategy based on Azure Arc and Azure Stack looks compelling and convincing. Azure Arc’s key differentiation lies in the balance between traditional, VM-based workloads and modern containerized workloads that operate in the same context of the hybrid and multi-cloud environments. 
+
+
+",en,"
+
+
+
+
+
+
+
+
+
+
+
+Why Azure Arc Is A Game Changer For Microsoft
+05 Nov 2019 by Janakiram MSV
+At Ignite 2019, Satya Nadella, CEO of Microsoft, announced a slew of new hybrid cloud products and services. The most significant announcement from Satya’s keynote is Azure Arc, the hybrid and multi-cloud platform from Microsoft. 
+
+
+Satya Nadella, CEOMICROSOFT
+
+Though a major revamp of the hybrid strategy was expected by the analysts and partners of Microsoft, Azure Arc has sprung many surprises. Compared to its counterparts in the market, Azure Arc stands out for its unique approach and design. 
+Before I explain why Azure Arc is a game changer, let me dissect the architecture and the design for you.
+
+Azure Architecture in Plain English
+
+Since its debut a decade ago, Microsoft has been continuously improving the control plane of Azure which is responsible for managing the lifecycle of resources such as virtual machines, database instances, Hadoop clusters and Kubernetes clusters.
+In technical nomenclature, the control plane is called the Azure Fabric Controller. Each time a resource like a VM is provisioned, scaled, stopped, or terminated, the operation goes through the Fabric Controller. 
+Every resource in Azure constantly reports its state to the Fabric Controller. For example, in the case of  Azure VMs, the communication is initiated and managed by an agent (VM Agent) running within the virtual machine. 
+In between the fabric controller and the resources, there is another layer called the Azure Resource Manager (ARM) that automates the resource lifecycle. Microsoft has built resource providers for each of the services running within Azure. For example, VMs, SQL Database, Azure Kubernetes Service act as resource providers.  Customers can declare the configuration of these resources through an ARM template - a simple text file the defines the desired state of a resource.
+
+Azure Arc as an Extension of Azure Control Plane
+
+With Azure Arc, Microsoft has expanded the support for ARM to resources running outside of Azure. This means, a physical server running in a data center looks like a compute resource in the eyes of the Fabric Controller. Even VMs running on top of VMware vSphere, Amazon EC2, and Google Compute Engine can be registered with the Azure Resource Manager. Any Windows or Linux server - even those running behind a firewall and proxy - can be registered with ARM. The external VMs run a similar software like the agent that runs inside Azure VMs.
+Apart from VMs, Azure ARC can also register Kubernetes clusters. Once onboard, any external Kubernetes cluster can be managed like Azure’s own Kubernetes service, AKS. That means a Pivotal Kubernetes Service cluster running on vSphere within the datacenter and mainstream managed Kubernetes services like Amazon EKS, Google Kubernetes Engine, and IBM Kubernetes Service can be registered with Azure Arc. 
+What’s more interesting is the fact that Azure Arc can run managed database services in hybrid and multi-cloud environments. At the time of the announcement, two databases, Azure SQL Database and PostgreSQL Hyperscale, can be run outside of Azure. Some of the core benefits of managed databases such as automated updates, patching, security audits, no-touch upgrades are passed onto Azure data services. 
+Finally, customers can deploy modern, cloud-native applications packaged as microservices to either VMs or Kubernetes clusters that are a part of Azure Arc. Application services take advantage of the recent investments in open source projects such as Rudr and Dapr. 
+
+
+Azure ArcJANAKIRAM MSV
+
+In summary, Microsoft is enabling Azure to manage the below services deployed externally:
+
+Windows and Linux servers running in bare metal, VMs, and public cloud IaaS
+Kubernetes clusters 
+Data services based on SQL Azure and PostgreSQL Hyperscale
+Applications packaged and deployed as microservices running on Kubernetes
+
+
+Azure Arc - Why Care?
+
+What does this mean to customers? How can enterprises benefit from Azure Arc? 
+Let me attempt to answer these questions.
+With Azure Arc, customers can manage resources deployed within Azure and outside of Azure through the same control plane. They can take advantage of the automation capabilities available through ARM templates and Azure API.
+For example, one ARM template can rollout a set of public-facing virtual machines in Azure while provisioning the VMs in the data center that run legacy databases. It makes it possible to apply RBAC, tagging, and identity policies to resources. 
+Enterprises can use Azure Security Center to ensure compliance of all the resources registered with Azure Arc irrespective of where they are deployed. They can quickly patch the operating systems running in VMs as soon as a vulnerability is found. Customers can encrypt file systems across all the VMs with a push of a button. Policies can be defined once and automatically applied to all the resources across Azure, data center, and even to VMs running in other cloud platforms. 
+All the resources registered with Azure Arc send the logs to the central, cloud-based Azure Monitor. This is a very powerful approach in deriving insights from highly distributed and disparate infrastructure environments. 
+Finally, Azure Automation service can be used to perform mundane to advanced maintenance operations across the public cloud, hyrbid cloud and multi-cloud environments.
+Azure Arc customers can use Azure Portal, Azure CLI, SDK, and 3rd party tools like Terraform to automate resource management similar to the way public cloud resources are managed.
+
+Azure Arc as the Game Changer
+
+With Azure Arc, Microsoft is enabling enterprises with legacy infrastructure to join the hybrid cloud bandwagon. A physical x86 server running a decade-old version of Oracle on Linux can easily register itself with Azure Arc to show up in the Azure Portal in the same resource group and same region that runs a modern, elastic web application that talks to the legacy database. 
+Microsoft is not alienating customers running legacy hardware and VMs from the hybrid cloud. VMs are treated as first-class citizens in the world of Azure Arc. 
+With AKS and Kubernetes, Azure Arc makes it easy to run greenfield applications packaged and deployed as containers. More recently, Microsoft and Alibaba have jointly published a specification called Open Application Model which simplifies modelling microservices composed of multiple containers. Rudr, an implementation of OAM will become the abstraction layer to target Kubernetes infrastructure.    
+So, with support for VMs and Kubernetes, Microsoft is going to simplify application modernization and digital transformation with Azure Arc without much tradeoff.
+Microsoft is also one of the first to bring managed data services to the hybrid cloud. Since these database services are packaged as containers and run on top of Kubernetes, managing them from the centralized Azure control plane becomes efficient. 
+Azure Arc is all set to become the overarching management layer for the newly announced hybrid cloud offerings including Azure Stack Hub, Azure Stack HCI, and Azure Stack Edge. Depending on the footprint and the capability, they can run one or more supported Azure services through Azure Arc. 
+With Azure Arc and Azure Stack portfolio, Microsoft got the combination of hardware and software strategy right.
+
+Azure Arc vs AWS Outposts
+
+AWS Outposts are purpose-built, Amazon-designed, hyper-converged infrastructure appliances comprising compute, memory, storage and networking. Since AWS Outposts appliances are based on the AWS Nitro System, they come in custom configurations.
+Amazon customers subscribe to Outposts service just like they consume EC2 instances. They don’t own the infrastructure.
+AWS Outposts customers choose from two different stacks -  AWS-only flavour with the familiar AWS APIs and control plane or a VMware variant that runs vSphere, vSAN, and NSX as a part of VMware SDDC stack. 
+Some of the AWS managed services such as Application Load Balancer (ALB), Amazon ECS and Amazon EKS for containers, Amazon EMR for big data and Amazon RDS for databases run on AWS Outposts. 
+When compared to AWS Outposts, Microsoft Azure Arc doesn’t need proprietary hardware. Any Linux or Windows VM can be registered and managed through Azure.  AWS Outposts are comparable to Azure Stack Hub managed through Azure Arc. 
+Though Outposts run container infrastructure through ECS and EKS, unlike Azure Arc, AWS cannot manage external clusters to roll out policies and configuration. 
+AWS Outposts is an extension of EC2 that can run some of the AWS managed services. Azure Arc is a much broader hybrid cloud platform with support for a variety of compute environments running in the enterprise data center. If the environment is capable of running a managed Kubernetes cluster, Azure Arc can deploy data services.
+
+Azure Arc vs Google Anthos
+
+Anthos from Google is a hybrid cloud platform built using modern infrastructure building blocks such as Kubernetes, Istio, and Knative. It’s a logical extension of Google Kubernetes Engine that runs in the customer environment. 
+Through the acquisition of Velostrata, Google has built tools that convert traditional virtual machines to containers running on Kubernetes. Though technically Anthos can run VMs and containers side-by-side, Google encourages customers to modernize the apps through containerization. 
+Google is slowly but steadily porting some of the managed services such as Dataproc, Cloud Run, and Kubeflow to Anthos. Other services from the data and AI portfolio are expected to be ported to Anthos in the future. 
+Anthos can also manage 3rd party Kubernetes clusters through a single control plane. It can also apply and manage configuration policies and security settings through a central location. 
+There are quite a few similarities between Google Anthos and Azure Arc.  Both can register external clusters and manage them through the same control plane. Both platforms can deploy applications across multiple clusters. Like Anthos, Azure Arc takes advantage of the Kubernetes foundation to run managed data services. 
+But the key difference with Azure Arc is the first-class support for VMs. Customers can easily mix and match physical servers, VMs, and Kubernetes clusters within the hybrid environment. 
+Google is yet to bring managed database services such as Cloud SQL and Bigtable to Anthos. Azure Arc runs SQL and PostgreSQL Hyperscale from day one. 
+Anthos includes Cloud Run and Knative to simplify the developer experience of dealing with Kubernetes. Azure Arc encourages developers to embrace OAM design and deploy applications based on Rudr and Dapr. 
+
+Summary
+
+The definition of a hybrid cloud is extended to include multi-cloud capabilities. AWS with Outposts, Google with Anthos, IBM and Red Hat with OpenShift and CloudPaks, VMware with Project Pacific and Tanzu are battling it out to win the mindshare and market share. 
+Built on the solid foundation of ARM, Microsoft’s hybrid strategy based on Azure Arc and Azure Stack looks compelling and convincing. Azure Arc’s key differentiation lies in the balance between traditional, VM-based workloads and modern containerized workloads that operate in the same context of the hybrid and multi-cloud environments. 
+
+
+"

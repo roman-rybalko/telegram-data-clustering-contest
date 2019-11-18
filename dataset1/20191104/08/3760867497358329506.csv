@@ -1,0 +1,62 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Google recula y vuelve a incluir una función en Chrome que había eliminado
+04 Nov 2019, 08:55 by Alberto García
+Normalmente estamos acostumbrados a que Google incluya nuevas funciones en Google Chrome, pero en las últimas semanas lo que la compañía ha hecho en su lugar es eliminar algunas funciones útiles que usaban bastantes usuarios del navegador. Por suerte, la compañía se ha dado cuenta de su error, y ahora van a volver a incluir al menos una de esas funciones.
+Cerrar el resto de pestañas vuelve a Google Chrome
+Hablamos de la función de Cerrar el resto de pestañas (Close other tabs) que lleva años disponible en Google Chrome. Google decidió eliminarla del navegador en la versión 78 porque había poca gente que la utilizaba, además de otras funciones. En concreto, eliminó la opción de “Guardar todas las pestañas en marcadores” porque sólo la usaba un 0,64% de los usuarios. La de «Cerrar el resto de pestañas» sólo la usaba un 2,2% de usuarios, mientras que la de «Cerrar todas las pestañas a la derecha» la usaba un 6,06%.
+
+
+
+Por ello, Google decidió eliminar las dos primeras, dejando la última como opción en el caso de que quisiéramos mantener una única pestaña. Con esto, se nos obligaba a mover la pestaña que queríamos mantener a la izquierda para cerrar el resto de pestañas a la derecha. Una tontería y una verdadera incomodidad, donde está claro que la opción que tendrían que haber dejado es la de Cerrar el resto de pestañas para poder cerrarlas independientemente de dónde se encuentre la que queramos mantener. No había opción de activarla ni siquiera en un flag en el caso de que quisiéramos tenerla.
+La función de guardar en marcadores las pestañas abiertas no volverá (de momento)
+Así, los desarrolladores de Google recibieron las múltiples quejas de los usuarios, y por ello han decidido volver a incluir la función en la última versión de Chrome Canary 80. El pasado día 1 de noviembre apareció un commit en el que se confirmaba la vuelta de la función, y ahora la han incluido de nuevo en Chrome Canary 80 (build 80.0.3959.0), apareciendo incluso sólo en inglés porque todavía no han tenido tiempo ni de incluir la traducción correspondiente.
+
+
+
+Como vemos, Google ha intentado simplificar los menús y opciones que aparecen cuando hacemos click derecho en las pestañas, pero ha fracasado en el intento, ya que simplificar para ellos implica eliminar funciones útiles que usan millones de usuarios al mes sin ofrecer ninguna alternativa.
+Por desgracia, de momento no hay ningún plan de volver a incluir la opción de guardar todas las pestañas abiertas a la vez, por lo que no se podrá guardar todo el contenido que tengamos abierto para poder volver a seguir viéndolo más adelante, teniendo que recurrir al historial o a guardar una a una las pestañas que tengamos abiertas. Esperemos que Google recapacite en el futuro y devuelva esa función al navegador.
+
+
+",es,"
+
+
+
+
+
+
+
+
+
+
+
+Google recycles and re-includes a feature in Chrome that it had removed
+04 Nov 2019, 08:55 by Alberto García
+Normally we are used to Google including new features in Google Chrome, but in recent weeks what the company has done instead is to eliminate some useful features that were used by many browser users. Luckily, the company has realized its mistake, and now they will include at least one of those functions.
+Close the rest of the tabs back to Google Chrome
+We talked about the function of Close the rest of tabs (Close other tabs) that has been available for years in Google Chrome. Google decided to remove it from the browser in version 78 because there were few people using it, in addition to other functions. Specifically, it eliminated the option of “Save all tabs in bookmarks” because only 0.64% of users used it. The ""Close all other tabs"" was used only by 2.2% of users, while the ""Close all tabs on the right"" was used by 6.06%.
+
+
+
+Therefore, Google decided to eliminate the first two, leaving the last one as an option in case we wanted to keep a single tab. With this, we were forced to move the tab that we wanted to keep to the left to close the rest of the tabs to the right. Nonsense and real discomfort, where it is clear that the option they should have left is to close the rest of the tabs to be able to close them regardless of where the one we want to keep is located. There was no option to activate it even in a flag if we wanted to have it.
+The function to bookmark open tabs will not return (for now)
+Thus, Google developers received multiple complaints from users, and therefore they have decided to return to include the function in the latest version of Chrome Canary 80. On November 1, a commit appeared confirming the return of the function, and now they have included it again in Chrome Canary 80 (build 80.0.3959.0), appearing even only in English because they have not yet had time to include the corresponding translation.
+
+
+
+As we see, Google has tried to simplify the menus and options that appear when we right-click on the tabs, but it has failed in the attempt, since simplifying for them implies eliminating useful functions that millions of users use per month without offering any alternative.
+Unfortunately, at the moment there is no plan to include the option of saving all open tabs at once, so you can not save all the content that we have open to be able to continue seeing it later, having to resort to the history or to keep one by one the tabs that we have open. Hopefully Google reconsiders in the future and return that function to the browser.
+
+
+"

@@ -1,0 +1,54 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Sandworm Book Review
+02 Nov 2019 by Richard Stiennon
+
+
+Powerlines and lightning123rf stock image
+
+Andy Greenberg’s Sandworm has achieved what I thought was no longer possible: it scares me. Sandworm is the story of the Russian GRU hacking team that has evolved in a few short years into the most methodical, persistent, and destructive intelligence agency cyber warriors. After reading Sandworm you will not doubt those superlatives. You certainly cannot dispute “most destructive,” since Sandworrm is responsible for NotPetya, a viral scourge that caused over $10 billion in real damages around the world in June, 2017. You have probably read Greenberg’s Wired article about the NotPetya attack against Ukraine that spilled over into much of the rest of the world. From his early writing here at Forbes, where he covered technology and the internet and morphed into a security journalist (Andy was the one who invited me to become a contributor to Forbes), to his long form reporting at Wired, Greenberg has become a valuable source of original reporting. In Sandworm: A New Era of Cyberwar and the Hunt for the Kremlin’s Most Dangerous Hackers, available November 5, 2019, Greenberg hunts down the researchers on the front line who experienced the trail of destruction left by these hackers, and provides their personal stories. He makes the irrefutable connection to the GRU, the intelligence arm of the Russian military, the same unit that Crowdstrike identified as infiltrating the DNC, although not the ones who eventually stole and leaked the emails. That was a group dubbed FancyBear.
+NotPetya gets most of the attention in the enterprise because it impacted so many companies, from Maersk, the shipping giant, to Merk, the pharma company, to TNT in Europe. Greenberg adds to our understanding of the destruction NotPetya caused, including to US medical centers, many of which relied on a medical transcription service that was disabled for weeks, causing havoc for patients and doctors.
+By far the scariest attacks attributed to Sandworm are the two attacks on Ukraine’s power grid, the first just after Christmas, 2015, the second in 2016. After his research and reporting Greenberg assigned himself the sobriquet of Cassandra. He puts himself in the same camp as Rob Lee, founder of Dragos, and Michael Assante at SANS, both of whom rang the alarm after the Christmas attack on Ukraine that shut off three separate power distribution companies. The long predicted “attack on critical infrastructure” had occurred, yet DHS and the Whitehouse did not give it the attention it deserved.
+IT security people, who often say they don’t care to know anything about threat actors and their motivations, just the attacks and how to thwart them, may change their perspective after reading Sandworm. Knowing that there is a large team of experienced hackers that are willing to release a destructive worm on the world just to disrupt an adversary causes you to re-think your risk models. Certainly, the founder of M.E.Doc, the financial accounting software company in Ukraine that was used as an intermediary in the NotPetya attack, did not think a state sponsored hacker would infiltrate them over a year and then use their update servers to wreak havoc on the world through its customers. It’s the “I am not a target” mentality that mirrors the “I have nothing to hide” stance that many people take when presented with the threats that surveillance poses.
+In addition to taking us on a journey of understanding of the events around multiple attacks by Sandworm, Greenberg takes a stab at answering these bigger questions. What motivates the Sandworm hackers? Why is the response from those in charge of protecting critical infrastructure so tepid? What lessons have we learned?
+Greenberg’s Sandworm has earned a position beside Cliff Stoll’s Cuckoo’s Egg, and Kim Zetter’s Count Down to Zero Day, both in university curricula and your bookshelf.
+
+
+",en,"
+
+
+
+
+
+
+
+
+
+
+
+Sandworm Book Review
+02 Nov 2019 by Richard Stiennon
+
+
+Powerlines and lightning123rf stock image
+
+Andy Greenberg’s Sandworm has achieved what I thought was no longer possible: it scares me. Sandworm is the story of the Russian GRU hacking team that has evolved in a few short years into the most methodical, persistent, and destructive intelligence agency cyber warriors. After reading Sandworm you will not doubt those superlatives. You certainly cannot dispute “most destructive,” since Sandworrm is responsible for NotPetya, a viral scourge that caused over $10 billion in real damages around the world in June, 2017. You have probably read Greenberg’s Wired article about the NotPetya attack against Ukraine that spilled over into much of the rest of the world. From his early writing here at Forbes, where he covered technology and the internet and morphed into a security journalist (Andy was the one who invited me to become a contributor to Forbes), to his long form reporting at Wired, Greenberg has become a valuable source of original reporting. In Sandworm: A New Era of Cyberwar and the Hunt for the Kremlin’s Most Dangerous Hackers, available November 5, 2019, Greenberg hunts down the researchers on the front line who experienced the trail of destruction left by these hackers, and provides their personal stories. He makes the irrefutable connection to the GRU, the intelligence arm of the Russian military, the same unit that Crowdstrike identified as infiltrating the DNC, although not the ones who eventually stole and leaked the emails. That was a group dubbed FancyBear.
+NotPetya gets most of the attention in the enterprise because it impacted so many companies, from Maersk, the shipping giant, to Merk, the pharma company, to TNT in Europe. Greenberg adds to our understanding of the destruction NotPetya caused, including to US medical centers, many of which relied on a medical transcription service that was disabled for weeks, causing havoc for patients and doctors.
+By far the scariest attacks attributed to Sandworm are the two attacks on Ukraine’s power grid, the first just after Christmas, 2015, the second in 2016. After his research and reporting Greenberg assigned himself the sobriquet of Cassandra. He puts himself in the same camp as Rob Lee, founder of Dragos, and Michael Assante at SANS, both of whom rang the alarm after the Christmas attack on Ukraine that shut off three separate power distribution companies. The long predicted “attack on critical infrastructure” had occurred, yet DHS and the Whitehouse did not give it the attention it deserved.
+IT security people, who often say they don’t care to know anything about threat actors and their motivations, just the attacks and how to thwart them, may change their perspective after reading Sandworm. Knowing that there is a large team of experienced hackers that are willing to release a destructive worm on the world just to disrupt an adversary causes you to re-think your risk models. Certainly, the founder of M.E.Doc, the financial accounting software company in Ukraine that was used as an intermediary in the NotPetya attack, did not think a state sponsored hacker would infiltrate them over a year and then use their update servers to wreak havoc on the world through its customers. It’s the “I am not a target” mentality that mirrors the “I have nothing to hide” stance that many people take when presented with the threats that surveillance poses.
+In addition to taking us on a journey of understanding of the events around multiple attacks by Sandworm, Greenberg takes a stab at answering these bigger questions. What motivates the Sandworm hackers? Why is the response from those in charge of protecting critical infrastructure so tepid? What lessons have we learned?
+Greenberg’s Sandworm has earned a position beside Cliff Stoll’s Cuckoo’s Egg, and Kim Zetter’s Count Down to Zero Day, both in university curricula and your bookshelf.
+
+
+"

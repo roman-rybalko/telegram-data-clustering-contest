@@ -1,0 +1,52 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+I ricercatori hanno sviluppato un nuovo protocollo per estendere la portata del Wi-Fi
+01 Nov 2019, 16:51 by Daniel Aka
+Un semplice aggiornamento del software potrebbe estendere la copertura della rete in tutta la casa, ma questo trucco sarebbe utile solo per oggetti connessi che scambiano pochissimi dati.
+Un sistema teoricamente compatibile con tutti i router attuali
+I ricercatori della Brigham Young University hanno sviluppato la tecnologia On-Off Noise Power Communication (ONPC), che credono possa aumentare la portata del segnale WiFi di circa 60 metri.
+Questo nuovo sistema è un semplice aggiornamento software e può essere applicato a tutti i router senza le necessarie modifiche tecniche. ”  È davvero interessante con questa tecnologia: tutto è fatto nel software  ” , afferma entusiasta Phil Lundrigan, assistente professore di ingegneria informatica e uno dei leader di questo progetto di ricerca.
+Tecnologia WiFi complementare per alcune soluzioni domotiche
+I router WiFi richiedono attualmente almeno 1 Mbps per mantenere il segnale con un dispositivo. ONPC abbassa questo valore a 1 bit al secondo. Questo valore basso consente a un oggetto di continuare a indicare al router che sta funzionando e trasmettendo i dati a bassa velocità.
+Per rilevare questo segnale, il dispositivo utilizzato per i test preliminari è stato programmato per inviare rumore wireless oltre ai suoi dati, sotto forma di una serie di 1 e 0, attivando e disattivando il segnale secondo un modello specifico.
+”  Se il router sente questo codice, dice” OK, so che il sensore è ancora vivo e sta provando a contattarmi, è appena fuori portata “. Invia solo 1 bit di informazione per dire che è vivo Dice Neal Patwari, un altro ricercatore coinvolto nello sviluppo.
+La tecnologia ONPC non aumenterà la portata del WiFi per i dispositivi di dati di consumo come un computer o uno smartphone, ma sarà molto utile per oggetti connessi e soluzioni di automazione domestica che inviano pochissimi dati, come aperture delle porte o controllo della qualità dell’aria.
+
+
+",it,"
+
+
+
+
+
+
+
+
+
+
+
+Researchers have developed a new protocol to extend the reach of Wi-Fi
+01 Nov 2019, 16:51 by Daniel Aka
+A simple software update could extend the coverage of the network throughout the home, but this trick would only be useful for connected objects that exchange very little data.
+A system theoretically compatible with all current routers
+Researchers at Brigham Young University have developed On-Off Noise Power Communication (ONPC) technology, which they believe can increase the range of the WiFi signal by about 60 meters.
+This new system is a simple software update and can be applied to all routers without the necessary technical modifications. ""It's really interesting with this technology: everything is done in the software,"" enthuses Phil Lundrigan, assistant professor of computer engineering and one of the leaders of this research project.
+Complementary WiFi technology for some home automation solutions
+WiFi routers currently require at least 1 Mbps to maintain the signal with a device. ONPC lowers this value to 1 bit per second. This low value allows an object to continue to indicate to the router that it is running and transmitting data at low speed.
+To detect this signal, the device used for the preliminary tests has been programmed to send wireless noise in addition to its data, in the form of a series of 1 and 0, activating and deactivating the signal according to a specific model.
+""If the router hears this code, it says"" OK, I know the sensor is still alive and is trying to contact me, it's just out of reach. "" Send only 1 bit of information to say he is alive. Says Neal Patwari, another researcher involved in the development.
+The ONPC technology will not increase the WiFi range for consumer data devices such as a computer or a smartphone, but it will be very useful for connected objects and home automation solutions that send very little data, such as door openings or quality control of the air.
+
+
+"

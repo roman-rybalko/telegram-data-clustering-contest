@@ -1,0 +1,96 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Se confirma que el coche autónomo de Uber que mató a una mujer no estaba programado para detectar y actuar ante peatones imprudentes
+07 Nov 2019 by Diario Tecnología
+Han pasado 15 meses desde el accidente donde un coche autónomo de Uber atropelló y mató a Elaine Herzberg, de 49 años de edad, mientras cruzaba la calle en la noche con su bicicleta. Y tal y como se había adelantado en el informe preliminar de la Junta Nacional de Seguridad en el Transporte de Estados Unidos (NTSB), no se trató de un fallo en los sistemas sino de un error en la programación del software.
+La NTSB publicó el informe final donde recaban toda la información del accidente y los registros de Uber, donde se confirma que el coche autónomo no estaba programado para identificar y actuar ante peatones imprudentes, ya que Elaine decidió cruzar por donde no era un paso peatonal.
+Antes del accidente fatal, Uber había tenido 37 accidentes con sus coches autónomos
+De acuerdo al documento de la NTSB, el coche autónomo de Uber tenía serias fallas de software, donde se incluía la incapacidad de reconocer a las personas que cruzan la calle en zonas no autorizadas. Según la agencia, el coche de Uber no identificó a Elaine como persona sino hasta 1,2 segundos antes del impacto, cuando ya era demasiado tarde.
+
+
+
+En Xataka Año y medio después del primer atropello por un coche autónomo: menos grandilocuencia, más investigación y nuevas preguntas
+La NTSB descubrió que el coche de Uber ""no incluía una consideración para los peatones que cruzan la calle"".
+""Aunque el sistema detectó al peatón casi seis segundos antes del impacto, nunca lo clasificó como peatón, porque estaba cruzando en un lugar sin un cruce peatonal y el diseño del sistema no incluía una consideración para los peatones que cruzan a pie por otras zonas.""
+Además, el software del coche estaba programado con un retraso de un segundo para iniciar el frenado después de detectar un objeto en la carretera, esto con el objetivo de descartar posibles falsos negativos, calcular rutas alternativas o dejar que el conductor de seguridad tomara el control. Uber ya confirmó que este retraso intencional ya ha sido eliminado del software.
+Uber también decidió configurar al mínimo el umbral de sensibilidad para evitar falsos-positivos, y así los sistemas sólo reaccionarían ante ""objetos sólidos de gran tamaño que representaran una amenaza real"" y no ante bolsas u otros objetos aparentemente inofensivos. Esto significó que también se desactivaron los sistemas de seguridad que la propia Volvo había instalado a su XC90, ya que Uber buscaba que no interfirieran con la operación de sus sistemas.
+
+
+
+Según la NTSB, después del accidente, Uber hizo simulaciones con el software ya corregido usando los sensores del coche involucrado en el accidente. Bajo este escenario se percataron que el sistema habría sido capaz de detectar al peatón 88 metros o 4,5 segundos antes del impacto a una velocidad de 69,5 km/h. Tras esta detección, el coche habría frenado a los 4 segundos antes del impacto.
+Es decir, si los sistemas de Uber hubieran estado bien configurados, el accidente se habría evitado, ya que la distancia promedio de frenado ante la presencia de una persona es de aproximadamente 39,62 metros a esa velocidad de casi 70 km/h. Incluso habría habido suficiente tiempo para que los sistemas calcularán una maniobra evasiva o el conductor de seguridad tomara el control de la situación.
+Adicional a esto, la NTSB descubrió que 18 meses antes del accidente fatal, Uber sufrió un total de 37 accidentes con sus coches autónomos, donde 33 de éstos fueron de otros coches chocando contra el vehículo autónomo de pruebas. Pero dos de estos accidentes son los que llaman la atención, ya que están relacionados con el escenario que llevó al atropello y posterior muerte de Elaine.
+
+
+
+En Xataka El otro gran reto de los vehículos autónomos: aclarar las responsabilidades en caso de siniestro
+En el primero de estos accidentes, el coche de Uber chocó contra uno de los postes que evitan que los vehículos pasen al carril bici, ya que estaba doblado y parte de éste invadía un carril. En el segundo accidente, el conductor de seguridad tuvo que tomar el control para evitar un vehículo que invadió su carril y que los sistemas no detectaron, pero al cambiar de carril terminó chocando contra un coche aparcado.
+La NTSB informó que han pasado una serie de recomendaciones a Uber en varias áreas de seguridad relevantes que encontraron durante toda la investigación. La agencia se reunirá de nueva cuenta el próximo 19 de noviembre para determinar la causa probable del accidente y poner punto final a este tema.
+Cabe señalar que en marzo de este año los fiscales de Arizona dijeron que Uber no era responsable en el accidente automovilístico, y fue absuelto de responsabilidad penal. Pero todavía se está contemplando presentar cargos penales por posible homicidio involuntario en contra la conductora del coche autónomo, Rafaela Vásquez. Y es que de acuerdo a la investigación, y el vídeo del accidente, Vásquez no estaba prestando atención a la carretera por estar mirando su smartphone.
+Sarah Abboud, portavoz de la división de coches autónomos de Uber, mencionó:
+""Hemos adoptado mejoras críticas en el programa para dar mayor prioridad a la seguridad. Valoramos profundamente la minuciosidad de la investigación de la NTSB sobre el accidente y esperamos revisar sus recomendaciones.""
+Fotos | Dllu
+
+Artículo original
+
+
+
+",es,"
+
+
+
+
+
+
+
+
+
+
+
+It is confirmed that the Uber autonomous car that killed a woman was not programmed to detect and act against reckless pedestrians
+07 Nov 2019 by Diario Tecnología
+It has been 15 months since the accident where an autonomous Uber car ran over and killed Elaine Herzberg, 49, while crossing the street at night with her bicycle. And as anticipated in the preliminary report of the National Transportation Safety Board of the United States (NTSB), it was not a system failure but an error in software programming.
+The NTSB published the final report where they collect all the information about the accident and the Uber records, confirming that the autonomous car was not programmed to identify and act against reckless pedestrians, since Elaine decided to cross where it was not a pedestrian crossing.
+Before the fatal accident, Uber had had 37 accidents with his autonomous cars
+According to the NTSB document, Uber's autonomous car had serious software failures, which included the inability to recognize people crossing the street in unauthorized areas. According to the agency, Uber's car did not identify Elaine as a person until 1.2 seconds before the impact, when it was too late.
+
+
+
+In Xataka Year and a half after the first run over by an autonomous car: less grandiloquence, more research and new questions
+The NTSB discovered that Uber's car ""did not include a consideration for pedestrians crossing the street.""
+""Although the system detected the pedestrian almost six seconds before the impact, it never classified it as a pedestrian, because it was crossing in a place without a crosswalk and the system design did not include a consideration for pedestrians crossing on foot through other areas. ""
+In addition, the car software was programmed with a delay of one second to start braking after detecting an object on the road, this in order to rule out possible false negatives, calculate alternative routes or let the safety driver take control . Uber has already confirmed that this intentional delay has already been removed from the software.
+Uber also decided to set the sensitivity threshold to a minimum to avoid false-positives, and thus the systems would only react to ""large solid objects that represent a real threat"" and not to bags or other seemingly harmless objects. This meant that the security systems that Volvo itself had installed on its XC90 were also deactivated, since Uber wanted them not to interfere with the operation of its systems.
+
+
+
+According to the NTSB, after the accident, Uber made simulations with the software already corrected using the sensors of the car involved in the accident. Under this scenario, they realized that the system would have been able to detect the pedestrian 88 meters or 4.5 seconds before the impact at a speed of 69.5 km / h. After this detection, the car would have braked at 4 seconds before impact.
+That is, if Uber's systems had been well configured, the accident would have been avoided, since the average braking distance in the presence of a person is approximately 39.62 meters at that speed of almost 70 km / h. There would even have been enough time for the systems to calculate an evasive maneuver or the safety driver to take control of the situation.
+In addition to this, the NTSB discovered that 18 months before the fatal accident, Uber suffered a total of 37 accidents with its autonomous cars, where 33 of these were from other cars crashing into the autonomous test vehicle. But two of these accidents are the ones that attract attention, since they are related to the scenario that led to the outrage and subsequent death of Elaine.
+
+
+
+In Xataka The other major challenge of autonomous vehicles: clarifying responsibilities in case of accident
+In the first of these accidents, Uber's car crashed into one of the posts that prevent vehicles from passing the bike lane, as it was bent and part of it was invading a lane. In the second accident, the security driver had to take control to avoid a vehicle that invaded his lane and that the systems did not detect, but when changing lanes he ended up crashing into a parked car.
+The NTSB reported that they have passed a series of recommendations to Uber in several relevant security areas they found throughout the investigation. The agency will meet again on November 19 to determine the probable cause of the accident and put an end to this issue.
+It should be noted that in March this year Arizona prosecutors said that Uber was not responsible in the car accident, and was acquitted of criminal responsibility. But criminal charges are still being considered for possible involuntary manslaughter against the driver of the autonomous car, Rafaela Vásquez. And according to the investigation, and the video of the accident, Vasquez was not paying attention to the road because he was looking at his smartphone.
+Sarah Abboud, spokesman for the Uber autonomous car division, mentioned:
+""We have adopted critical improvements in the program to give greater priority to safety. We deeply value the thoroughness of the NTSB's investigation into the accident and hope to review its recommendations.""
+Photos | Dllu
+
+Original article
+
+
+
+"

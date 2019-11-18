@@ -1,0 +1,118 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Il film di Superman è finito in un pezzo di vetro. Ecco Project Silica di Microsoft
+Warner Bros e Microsoft avevano un obiettivo comune: conservare i dati il più a lungo possibile e proteggerli dalle intemperie. Il Project Silica di Microsoft ha la soluzione: mettere i dati in un vetro indistruttibile. Ci sono riusciti con il film “Superman” del 1978.
+04 Nov 2019, 18:37 by Sergio Donato
+Il film “Superman” del 1978 è finito in pezzettino di vetro. No, non si tratta della zona fantasma che ha imprigionato il generale Zod e i suoi scagnozzi, ma del Project Silica: un progetto di Microsoft Research che ha copiato il film con Christopher Reeve, nei panni del superuomo di Krypton, codificandolo su scala nanometrica in un pezzo di vetro delle dimensioni di un sottobicchiere. La tecnologia servirà per il futuro dell’archiviazione cloud.
+75 mm x 75 mm e con uno spessore di soli 2 mm, ecco le dimensioni esatte del vetrino in cui è stato “compresso” il film della Warner Bros, che ha collaborato con Microsoft per la realizzazione del progetto.
+
+
+ Brad Collar e  Vicky Colf della Warner Bros dimostrano il contrasto tra la conservazione su 22 bobine di pellicola e un pezzo di vetro del Project Silica
+
+ 
+Project Silica: iceberg di vetro formano dati
+La “memoria di massa” usata dal progetto è il Silica Glass, che può sopportare di essere bollito in acqua calda, cotto in forno, al microonde, bagnato, raschiato, smagnetizzato e una serie di altre minacce ambientali che in molti altri casi possono distruggere preziosi archivi storici o tesori culturali.
+I laser a infrarossi di Project Silica codificano i dati in ""voxels"", l'equivalente tridimensionale dei pixel che compongono un'immagine piatta. A differenza di altri supporti ottici che scrivono dati sulla superficie di qualcosa, Project Silica memorizza i dati all'interno del vetro stesso creando strati di reticoli e deformazioni su scala nanometrica tridimensionale a varie profondità e angolazioni. Un pezzo di vetro di 2 mm di spessore, ad esempio, può contenere più di 100 strati di voxel.
+I dati vengono codificati in ogni voxel cambiando la forza e l'orientamento degli intensi impulsi laser che deformano fisicamente il vetro. È un po' come creare iceberg capovolti a livello di nanoscala, con profondità e dimensioni e scanalature diverse in base ai dati che devono essere copiati.
+
+
+
+Per leggere i dati, gli algoritmi di apprendimento automatico decodificano i modelli creati quando la luce polarizzata attraversa il vetro. A differenza della memorizzazione su nastro, per esempio - che richiede tempo per raggiungere il punto che si desidera leggere - gli algoritmi possono raggiungere in tempo zero qualsiasi punto all'interno del quadrato di vetro, riducendo il tempo di ritardo nel recupero delle informazioni.
+Quando si parla di Silica Glass, si intende qualcosa di davvero resistente. Il gruppo di ricerca ha provato a cuocere un vetro già carico di dati in un forno a 500 gradi, poi con le microonde, poi ha provato a bollirlo, poi lo ha grattato con la lana d'acciaio. Quando il team ha riprovato a rileggere di nuovo i dati, erano ancora tutti lì: intatti e perfettamente leggibili.
+Nel caso di “Superman”, però, né Warner né Microsoft hanno fornito altre informazioni sulla scrittura dei voxels e soprattutto se la stessa è avvenuta senza perdita di informazioni o con una perdita contenuta. Si sa che sono stati registrati dati per 75,6 GB.
+
+
+Una delle celle frigorifere di stoccaggio della Warner
+
+ 
+Perché Warner Bros si vuole affidare al vetro
+La Warner ha in atto piani di “ridondanza” per gestire molteplici scenari avversi: un terremoto o un uragano che colpisce una delle coste, un incendio in cui i sistemi di soppressione non intervengono, o un guasto al controllo del clima che permette all'umidità di accumularsi e rovinare soprattutto lo stock di pellicole dei film più vecchi.
+L'obiettivo finale è quello di avere tre copie d'archivio di ogni materiale video e audio conservato in luoghi diversi in tutto il mondo: due copie digitalizzate separate, insieme alla copia fisica originale su qualsiasi supporto sia stato creato un contenuto cinematografico o televisivo oppure un cartone animato.
+Sebbene i negativi su pellicola originale dureranno per secoli se conservati nelle giuste condizioni, la copia fisica originale di alcuni programmi televisivi più vecchi ha una durata di conservazione limitata che richiede la migrazione verso formati più recenti. E per i film e gli spettacoli televisivi di oggi girati in digitale, la terza copia di qualità archivistica ha un ciclo di migrazione molto breve di tre-cinque anni, che è difficile da gestire.
+A oggi, per le uscite nelle sale cinematografiche girate in digitale, la Warner crea una terza copia d'archivio convertendola di nuovo in pellicola analogica. Suddivide il filmato finale in tre componenti a colori - ciano, magenta e giallo - e trasferisce ciascuno su negativi in bianco e nero che non sbiadiscono come le pellicole a colori.
+Questi negativi sono messi in un archivio di conservazione frigorifera. In queste camere blindate, la temperatura e l'umidità sono strettamente controllate, con anche “annusatori d'aria” artificiali che scandagliano l’ambiente alla ricerca di segni di decomposizione chimica delle pellicole.
+Si tratta di un processo costoso, e al mondo sono rimasti solo pochi laboratori cinematografici in grado di farlo. ""Il processo, inoltre, non è ideale da un punto di vista qualitativo"", ha detto Brad Collar, vicepresidente senior della Warner Bros: “Quando riprendiamo qualcosa in digitale - con zeri e uno che rappresentano i pixel sullo schermo - e lo stampiamo su un supporto analogico come la pellicola, si distruggono i valori originali dei pixel. È un processo che dà buoni risultati, ma non è reversibile.”
+Ecco perché Warner Bros è così interessata alla ricerca di Project Silica: perché vuole creare un’archiviazione fisica permanente per memorizzare i contenuti digitali e fornire copie di backup durevoli. Tra l’altro, il vetro era stato già utilizzato dai tecnici delle Warner nella metà del secolo scorso per registrare le serie radiofoniche di Superman. Ma i pezzi di vetro erano di dimensioni abnormi. Nonostante ciò, Warner è riuscita a trovare dei lettori per queste “vetrate” e a digitalizzare gli episodi.
+
+
+
+ 
+ 
+Il Project Silica per formare ""nuvole di vetro""
+Project Silica è un investimento di Microsoft Azure al fine sviluppare tecnologie di archiviazione costruite specificamente per i modelli di cloud computing.
+Le informazioni nella cloud vengono memorizzate fisicamente su hardware in una posizione remota, consentendovi di accedervi da più dispositivi, ma la quantità di dati che l'umanità sta cercando di memorizzare - dalle cartelle cliniche ai video dei gattini - è in crescita esponenziale.
+I costi di archiviazione a lungo termine sono aumentati a causa della necessità di trasferire ripetutamente i dati su supporti più recenti prima che le informazioni vadano perse. Le unità disco rigido possono usurarsi dopo tre o cinque anni. Il nastro magnetico può durare solo da cinque a sette anni. I formati di file diventano obsoleti e gli aggiornamenti sono costosi.
+L'archiviazione su vetro ha il potenziale per diventare un'opzione a basso costo, perché si scrivono i dati sul vetro solo una volta. I laser a femtosecondi cambiano permanentemente la struttura del vetro, in modo che i dati possano essere conservati per secoli.
+“Una delle attività che volevamo eliminare è questo costoso ciclo di spostamento e riscrittura dei dati alla generazione successiva. Vogliamo qualcosa che si può mettere sullo scaffale per 50 o 100 o 1.000 anni e dimenticare fino a quando non ne se ne ha bisogno"", ha detto infine Ant Rowstron, vice direttore del laboratorio di Microsoft Research Cambridge, che ha collaborato con l'Università di Southampton per sviluppare il progetto Silica.
+
+
+",it,"
+
+
+
+
+
+
+
+
+
+
+
+Superman's film is finished in a piece of glass. Here is Project Silica from Microsoft
+Warner Bros and Microsoft had a common goal: to keep data as long as possible and to protect it from the elements. The Project Silica from Microsoft has the solution: to put the data in an indestructible glass. They succeeded with the 1978 film ""Superman"".
+04 Nov 2019, 18:37 by Sergio Donato
+The film ""Superman"" of 1978 ended up in small pieces of glass. No, this is not the phantom area that imprisoned General Zod and his henchmen, but of Project Silica: a project by Microsoft Research that copied the film with Christopher Reeve, in the role of Krypton's superman, codifying it on a nanometric scale in a piece of glass the size of a coaster. The technology will serve for the future of cloud storage.
+75 mm x 75 mm and with a thickness of only 2 mm, here is the exact dimensions of the slide in which the Warner Bros film, which collaborated with Microsoft for the realization of the project, was “compressed”.
+
+
+Brad Collar and Vicky Colf of Warner Bros show the contrast between the conservation on 22 film reels and a piece of Project Silica glass
+
+
+Project Silica: glass icebergs form data
+The ""mass memory"" used by the project is Silica Glass, which can withstand being boiled in hot water, baked in the microwave, wet, scraped, demagnetized and a series of other environmental threats that in many other cases can destroy precious historical archives or cultural treasures.
+Project Silica's infrared lasers encode data into ""voxels"", the three-dimensional equivalent of the pixels that make up a flat image. Unlike other optical media that write data on the surface of something, Project Silica stores data within the glass itself creating layers of lattices and deformations on a three-dimensional nanometric scale at various depths and angles. A piece of glass 2 mm thick, for example, can contain more than 100 layers of voxel.
+The data is encoded in each voxel by changing the strength and orientation of the intense laser pulses that physically deform the glass. It's a bit like creating upside-down icebergs at the nanoscale level, with different depths and dimensions and grooves based on the data that needs to be copied.
+
+
+
+To read the data, machine learning algorithms decode the patterns created when polarized light passes through the glass. Unlike tape storage, for example - which takes time to reach the point you want to read - the algorithms can reach any point inside the glass square in zero time, reducing the delay in information retrieval.
+When we talk about Silica Glass, we mean something really durable. The research group tried to bake a glass already loaded with data in a 500 degree oven, then with microwaves, then tried to boil it, then scratched it with steel wool. When the team tried to re-read the data again, they were all still there: intact and perfectly legible.
+In the case of ""Superman"", however, neither Warner nor Microsoft have provided any other information on the writing of voxels and above all if it occurred without loss of information or with a limited loss. It is known that data were recorded for 75.6 GB.
+
+
+One of Warner's storage cold rooms
+
+
+Because Warner Bros wants to rely on glass
+Warner has ""redundancy"" plans in place to manage multiple adverse scenarios: an earthquake or a hurricane that hits one of the coasts, a fire in which the suppression systems do not intervene, or a failure to control the climate that allows humidity to accumulate and ruin above all the stock of films from older films.
+The ultimate goal is to have three archival copies of each video and audio material stored in different locations around the world: two separate digitized copies, along with the original physical copy on any medium a film or television content has been created or a cartoon.
+Although the original film negatives will last for centuries if stored in the right conditions, the original physical copy of some older television programs has a limited shelf life that requires migration to newer formats. And for today's digital movies and TV shows, the third archival quality copy has a very short migration cycle of three to five years, which is difficult to manage.
+To date, for digital movie theatrical releases, Warner creates a third archive copy by converting it back into analogue film. It splits the final movie into three color components - cyan, magenta and yellow - and transfers each to black and white negatives that don't fade like color films.
+These negatives are placed in a cold storage archive. In these vaults, temperature and humidity are strictly controlled, with even artificial ""air sniffers"" that scan the environment for signs of chemical decomposition of the films.
+This is an expensive process, and there are only a few film labs in the world that can do it. ""Furthermore, the process is not ideal from a qualitative point of view,"" said Brad Collar, senior vice president of Warner Bros: ""When we shoot something digitally - with zeroes and one representing the pixels on the screen - and we print it on an analog support like the film, the original pixel values are destroyed. It is a process that gives good results, but it is not reversible. ""
+That's why Warner Bros is so interested in the research of Project Silica: because it wants to create a permanent physical storage to store digital content and provide durable backup copies. Among other things, glass had already been used by Warner technicians in the middle of the last century to record Superman radio series. But the pieces of glass were of abnormal size. Despite this, Warner was able to find readers for these ""windows"" and to digitize the episodes.
+
+
+
+
+
+The Project Silica to form ""glass clouds""
+Project Silica is a Microsoft Azure investment to develop storage technologies built specifically for cloud computing models.
+The information in the cloud is physically stored on hardware in a remote location, allowing you to access it from multiple devices, but the amount of data that humanity is trying to memorize - from medical records to kittens' videos - is growing exponentially.
+Long-term storage costs have increased due to the need to repeatedly transfer data to more recent media before information is lost. Hard disk drives may wear out after three or five years. Magnetic tape can last only five to seven years. File formats become obsolete and updates are expensive.
+Archiving on glass has the potential to become a low-cost option, because data is written to the glass only once. Femtosecond lasers permanently change the structure of the glass, so that the data can be stored for centuries.
+""One of the activities we wanted to eliminate is this expensive data transfer and rewrite cycle to the next generation. ""We want something you can put on the shelf for 50 or 100 or 1,000 years and forget until you need it,"" said Ant Rowstron, deputy director of the Microsoft Research Cambridge lab, who collaborated with the University. of Southampton to develop the Silica project.
+
+
+"

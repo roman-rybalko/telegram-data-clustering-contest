@@ -1,0 +1,206 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Jak se vyvíjí trh x86 procesorů? Intel v Q3 oslabil, podíl AMD stoupl ve všech oblastech
+07 Nov 2019, 06:29 by Jan Olšan
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+VŠECHNY FOTOGRAFIE
+
+V poslední době se opět na veřejnost začaly dostávat údaje o tržním podílu AMD a Intelu na trhu procesorů x86, respektive alespoň jejich odhady na základě průzkumů trhu analytické firmy Mercury Research. Momentálně máme dobu, kdy se dost mění pozice obou firem, AMD posiluje díky náskoku ve výrobním procesu u TSMC, zatímco Intel se potýká s problémy vlastní 10nm technologie. Tato data jsou proto hodně zajímavá. Nyní se dostaly ven údaje za třetí čtvrtletí, takže máme konečně možnost vidět, jestli příchod 7nm čipů od AMD nějak zapůsobil.
+Údaje ze zprávy Mercury Research (jež je celá placená a poměrně drahá, neboť je určená pro firmy, ne pro média) poskytlo AMD. Je třeba říct, že čísla se soustředí výlučně na to, jaký podíl získala tato firma. Ovšem vzhledem k tomu, že ostatní výrobci (VIA/Zhaoxin) budou mít stále mizivý podíl, můžeme z těchto čísel vztáhnout podíl Intelu coby zbytek a brát je tak jako neutrální údaje o tržním podílu obou firem.
+Intel ztratil podíl ve všech segmentech, ovšem pohyb je pomalý
+V krátkosti lze říct, že v Q3 2019 pro AMD pokračovala úspěšná vlna. Pokud začneme v desktopu (mělo by jít dohromady o retail i OEM počítače, ovšem mimo oblast IoT zařízení), tam mělo AMD v prvním a druhém kvartálu podle Mercury Research beze změny 17,1 %, pokud si vzpomínáte na poslední data za Q2. Vydání Ryzenů 3000 ale toto stagnování prolomilo, ještě v Q3 podíl stoupl na 18,0 %, takže Intel by měl držet 82 %. Mimochodem, pokud vás zajímá meziroční srovnání, tak po Q3 2018 mělo AMD podíl jen 13,0 %.
+
+
+Tržní podíly AMD a Intelu na trhu x86 CPU pro desktop (Zdroj: Tom’s Hardware)
+
+Také v noteboocích AMD přibralo. V Q2 2019 mělo podíl 14,1 %, nyní v Q3 2019 podle Mercury Research 14,7 %. Intel by tedy měl mít okolo 85,3 % trhu. Toto je jinak růst nikoliv díky 7nm procesu, ten ještě v notebookových čipech AMD nemá (měly by asi přijít v generaci Ryzen 4000, snad už začátkem roku 2020). Strav před rokem byl 10,9 % pro AMD, takže meziroční nárůst je 3,8 %.
+
+
+Tržní podíly AMD a Intelu na trhu x86 CPU pro notebooky (Zdroj: Tom’s Hardware)
+
+AMD Epyc získal 4,3 % serverů
+Nejmenší záběr má AMD (a opačně Intel největší dominanci) stále na serverovém trhu. Zde získalo do předchozího kvartálu AMD 3,4 %, nyní po Q3 2019 hlásí Mercury Research nárůst o necelý procentní bod na 4,3 %. Intel by tedy stále měl mít 95,7 % prodejů x86 procesorů v serverech.
+
+
+Tržní podíly AMD a Intelu na trhu x86 CPU v serverech (Zdroj: Tom’s Hardware)
+
+Toto rozdělení trhu by už mělo zahrnovat dopad vydání 7nm Epyců 7002, ale asi jenom omezený. Prodeje v serveru se pravděpodobně budou rozbíhat dost pozvolna a AMD nové procesory oficiálně vydalo teprve v srpnu. Velká část serverových prodejů budou určitě ještě 14nm Epycy první generace (7001). Vzhledem ke konkurenční výhodě vyššího výkonu, efektivity díky 7nm procesu a také lepší konektivity Epycu 7002 by asi podíl měl stoupat i v následujících kvartálech.
+Galerie: Odhalení 7nm procesorů AMD Epyc 7002 (Rome), prezentace
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+VŠECHNY FOTOGRAFIE
+
+Intel má stále 85 % trhu
+Celkové podíly nemůžeme moc dobře srovnat, protože AMD/Mercury Research uvádí nyní trošku jinak definovaný údaj. Celkově na trhu x86 procesorů má AMD nyní mít 14,6 %, což má být mezikvartálně zlepšení o 0,7 % bodu, ale meziročně o čtyři procentní body (takže po Q3 2018 byl jeho podíl 10,6 %). Intel by tedy nyní měl mít 85,4 % trhu procesorů x86. Pokud by se počítaly jen PC, čili klientský segment bez serverů, byl by podíl 15,8 % pro AMD a 84,2 % pro Intel.
+
+
+Procesor Ryzen, 14nm čip Raven Ridge (Foto: Fritzchens Fritz)
+
+Jak podotýká Tom’s Hardware, který zprávu od AMD převzal, dominantní postavení Intelu vede k tomu, že ztráty pozic jsou pro něj velmi pozvolné a trh má vysokou setrvačnost. Tento efekt bude pravděpodobně nadále přetrvávat, takže ačkoliv je pravděpodobné, že toto posilování podílu procesorů AMD na úkor Intelu bude dál pokračovat, je na místě očekávat, že se to bude dít spíše v podobném pomalejším tempu. Intel má zřejmě přes neúspěch s 10nm technologií (který u rovnocenných konkurentů asi byl pro jednu stranu hodně poškozující) i v následujících letech pořád svoje jisté. Pravda, dříve nemyslitelné slevy CPU naznačují, že se možná bude musit začít snažit například více konkurovat atraktivní cenou, nicméně setrvačnost a výhody plynoucí z dominantního postavení a finanční síly budou pohyby v neprospěch Intelu asi stále hodně brzdit.
+
+SOUVISEJÍCÍ ČLÁNKY
+
+
+
+
+
+
+
+
+",cs,"
+
+
+
+
+
+
+
+
+
+
+
+How does the x86 processor market evolve? Intel weakened in Q3, AMD's share increased in all areas
+07 Nov 2019, 06:29 by Jan Olsan
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ALL PHOTOS
+
+Recently, data on AMD and Intel's market share in the x86 processor market, or at least their estimates based on market research conducted by Mercury Research, began to be released to the public. Currently, we have a time when the positions of both companies are changing significantly, AMD is strengthening due to the lead in the production process at TSMC, while Intel is facing problems with its own 10nm technology. These data are therefore very interesting. Now the data for the third quarter have come out, so we finally have a chance to see if the arrival of the 7nm chips from AMD had any effect.
+Data from the Mercury Research report (which is all paid and relatively expensive as it is for businesses, not media) was provided by AMD. It is necessary to say that the numbers focus exclusively on the share of this company. However, given that the remaining manufacturers (VIA / Zhaoxin) will still have a negligible share, we can relate Intel's share as a remainder of these figures and take them as neutral market share data for both companies.
+Intel lost share in all segments, but the movement is slow
+In short, a successful wave continued in Q3 2019 for AMD. Starting from the desktop (both retail and OEM, but outside of IoT devices), AMD had 17.1% unchanged in the first and second quarters, according to Mercury Research, if you remember the latest Q2 data. The release of Ryzens 3000, however, broke this stagnation, still in Q3 share rose to 18.0%, so Intel should hold 82%. By the way, if you are interested in year-on-year comparison, after Q3 2018 AMD had a share of only 13.0%.
+
+
+AMD and Intel Market Share on x86 CPU Desktop (Source: Tom’s Hardware)
+
+Also AMD notebooks have gained weight. In Q2 2019 it had a 14.1% share, now in Q3 2019 according to Mercury Research 14.7%. Intel should have around 85.3% of the market. This is otherwise growth not thanks to the 7nm process, which still has AMD laptop chips (they should probably come in the Ryzen 4000 generation, perhaps early 2020). Diet a year ago was 10.9% for AMD, so the year-on-year increase is 3.8%.
+
+
+AMD and Intel Market Share on x86 CPU for Notebooks (Source: Tom’s Hardware)
+
+AMD Epyc acquired 4.3% of servers
+AMD (and Intel, on the other hand, has the smallest footprint) still has the server market. Here, AMD gained 3.4% to the previous quarter, and now after Q3 2019 Mercury Research reports an increase of less than a percentage point to 4.3%. So Intel should still have 95.7% of x86 processor sales in servers.
+
+
+AMD and Intel Market Share on x86 CPU Market in Servers (Source: Tom’s Hardware)
+
+This market division should already include the impact of the 7nm release of the 7002, but probably only limited. Sales on the server are likely to start slowly and AMD officially released the new processors only in August. Most of the server sales will certainly be 14nm Epycy first generation (7001). Given the competitive advantage of higher performance, efficiency thanks to the 7nm process, as well as improved connectivity of the Epyc 7002, the share should probably increase in the coming quarters.
+Gallery: Unveiling 7nm AMD Epyc 7002 (Rome) processors, presentation
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ALL PHOTOS
+
+Intel still has 85% of the market
+We cannot compare the total shares very well because AMD / Mercury Research is now giving a slightly differently defined figure. Overall, in the x86 processor market, AMD is now expected to have 14.6%, which is a quarter-on-quarter improvement of 0.7%, but four percentage points year on year (so its share was 10.6% after Q3 2018). Intel should now have 85.4% of the x86 processor market. If only the PC, or the client segment without servers, were counted, the share would be 15.8% for AMD and 84.2% for Intel.
+
+
+Ryzen processor, 14nm Raven Ridge chip (Photo: Fritzchens Fritz)
+
+As Tom’s Hardware, who received the message from AMD, remarks, Intel's dominant position is that the loss of positions is very slow for him and the market has a high inertia. This effect is likely to continue, so although it is likely that this strengthening of AMD's share of Intel will continue at the expense of Intel, it should be expected that this will happen at a similar slower pace. Despite the failure with 10nm technology (which was probably damaging to one side for equivalent competitors), Intel still has its certainty in the coming years. True, previously unthinkable CPU discounts suggest that it may have to start trying to compete more attractive price, but the inertia and benefits of dominance and financial strength will probably hinder movements to the detriment of Intel.
+
+RELATED ARTICLES
+
+
+
+
+
+
+
+
+"

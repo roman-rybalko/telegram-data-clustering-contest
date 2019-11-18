@@ -1,0 +1,66 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Total Commander offline installieren / updaten mithilfe einer Batch-Datei
+07 Nov 2019, 08:03 by moinmoin
+Viele von euch nutzen immer noch gerne den Total Commander. Ein Datei Manager, der vieles schnell und besser erledigt als der Windows-eigene Datei Explorer. Aber ab und an hat der Online-Installer der Beta (totalcmdbetainst.exe) so seine Probleme.
+Grendelbox hat uns dazu eine Anleitung geschickt, wie man den Total Commander auch offline installieren oder auch updaten kann. Auf der Webseite, aktuell die 9.50 Beta findet ihr mehrere Dateien. Der Link ändert sich mit einer neuen Beta. Schaut also immer oben nach der neuen Beta-Version Und so geht es:
+
+
+
+
+totalcmdbetainst.exe
+tcmain.inf
+totalcmd950b4x32_64.cab (aktuelles 32/64Bit-Beta 4 Combi-CAB File) herunterladen. Ändert sich natürlich mit jeder neuen Version.
+
+Nun wird eine Batchdatei erstellt. Diese wird dann als tc.bat abgespeichert. Alle Dateien kommen nun in einen Ordner und dort wird dann Batch-Datei gestartet.
+@echo offcd /d %0\..totalcmdbetainst.exe tcmain.inf
+Ist eine neue Beta erschienen, reicht es aus die INF & CAB Datei herunterzuladen und im Ordner zu ersetzen. Somit dürfte das Problem der Installation / Update einer Beta vom Total Commander behoben sein.
+
+Danke an Grendelbox.
+
+
+
+",de,"
+
+
+
+
+
+
+
+
+
+
+
+Install / update Total Commander offline using a batch file
+07 Nov 2019, 08:03 by moinmoin
+Many of you still enjoy using Total Commander. A file manager that does a lot faster and better than the Windows file explorer. But now and then the online installer of the beta (totalcmdbetainst.exe) has its problems.
+Grendelbox has sent us a tutorial on how to install the Total Commander offline or even update. On the website, currently the 9.50 Beta you will find several files. The link changes with a new beta. So always look up to the new beta version And this is how it works:
+
+
+
+
+totalcmdbetainst.exe
+tcmain.inf
+download totalcmd950b4x32_64.cab (current 32 / 64bit-beta 4 Combi-CAB file). Of course it changes with every new version.
+
+Now a batch file will be created. This is then saved as tc.bat. All files are now in a folder and there batch file is started.
+@echo offcd / d% 0 \ .. totalcmdbetainst.exe tcmain.inf
+If a new beta has been released, it is sufficient to download the INF & CAB file and replace it in the folder. Thus, the problem of installing / updating a beta of Total Commander should be resolved.
+
+Thanks to Grendelbox.
+
+
+
+"

@@ -1,0 +1,48 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Atomwaffenforschung: Großbritannien baut Supercomputer mit AMDs Epyc 7542
+Auf circa 5000 Epyc-7542-Prozessoren lässt das britische Atomic Weapons Establishment künftig ihre Simulationen für die Atomwaffenforschung laufen.
+06 Nov 2019, 17:12 by Mark Mantel
+AMD hat mit seinen Server-Prozessoren der Serie Epyc 7002 alias Rome einen weiteren Großauftrag an Land gezogen. Der Supercomputer Vulcan des britischen Atomic Weapons Establishment (AWE) soll mit Tausenden Epyc-7542-CPUs eine Rechenleistung von 7 PetaFLOPS erreichen. Das AWE ist Teil des britischen Verteidigungsministeriums und entwickelt unter anderem neue Nuklearwaffen – entsprechende Berechnungen laufen künftig auf Vulcan.
+Das AWE hat sich für den 32-Kern-Prozessor Epyc 7542 und gegen größere 48- oder 64-Kerner von AMD entschieden. Mit einer Verteilung der Rechenkerne auf mehr Cluster lassen sich die Menge des Arbeitsspeichers und die Übertragungsrate vergrößern. Rein rechnerisch bräuchte es circa 5000 Epyc 7542 beziehungsweise 160.000 Rechenkerne, um die anvisierten 7 PetaFLOPS zu erreichen. Die HPE-Tochter Cray baut Vulcan mit seiner Shasta-Plattform und dem Slingshot-Interconnect.
+Aktuell unterhält das AWE den Supercomputer Damson aus dem Jahr 2017 mit 6324 Intel-Prozessoren des Typs Xeon E5-2697v4 (Broadwell-EP, je 18 Kerne / 36 Threads, 2,3-3,6 GHz). Die Spitzenrechenleistung liegt gemäß der Top-500-Listung bei 3,8 PetaFLOPS, womit Damson aktuell Platz 63 der weltweit schnellsten Supercomputer belegt.
+Zweiter britischer Supercomputer mit AMDs Epyc 7002
+Erst im Oktober hat die britische Regierungsbehörde UK Research and Innovation (UKRI) den Bau des Supercomputers Archer2 angekündigt, in dem knapp 12.000 64-Kerner aus AMDs Epyc-7002-Familie werkeln werden. Mit Archer2 visiert Großbritannien eine Rechenleistung von 28 PetaFLOPS an.
+Unterdessen plant das US-amerikanische Department of Energy (DOE) den Bau des Supercomputers El Capitan für seine Atomwaffenforschung. Er soll für 600 Millionen US-Dollar in die Exascale-Klasse vordringen, allerdings ist die verwendete Hardware noch nicht bekannt. Im Gegensatz zum britischen Supercomputer Vulcan werden in El Capitan auch GPU-Beschleuniger zum Einsatz kommen. (mma)
+
+
+",de,"
+
+
+
+
+
+
+
+
+
+
+
+Nuclear research: Britain builds supercomputer with AMD's Epyc 7542
+In the future, the British Atomic Weapons Establishment will run their simulations for nuclear weapons research on approximately 5,000 Epyc 7542 processors.
+06 Nov 2019, 17:12 by Mark Mantel
+AMD has pulled with its server processors of the series Epyc 7002 alias Rome another large contract to land. The supercomputer Vulcan of the British Atomic Weapons Establishment (AWE) is said to reach a computing power of 7 PetaFLOPS with thousands of Epyc 7542 CPUs. The AWE is part of the British Ministry of Defense and develops among other new nuclear weapons - calculations are now running on Vulcan.
+The AWE has opted for the Epyc 7542 32-core processor and AMD's larger 48- or 64-Kerner. Distributing the cores to more clusters can increase the amount of memory and transfer rate. From a purely mathematical point of view, it would take about 5000 Epyc 7542 or 160,000 computing cores to reach the targeted 7 PetaFLOPS. The HPE subsidiary Cray builds Vulcan with its Shasta platform and the Slingshot interconnect.
+Currently the AWE maintains the supercomputer Damson from the year 2017 with 6324 Intel processors of the type Xeon E5-2697v4 (Broadwell EP, 18 cores / 36 threads, 2.3-3.6 GHz each). Top-notch performance is 3.8 PetaFLOPS according to the Top 500 listing, putting Damson in 63rd place in the world's fastest supercomputer.
+Second British supercomputer with AMD's Epyc 7002
+Only in October, UK Research and Innovation (UKRI) announced the construction of the supercomputer Archer2, which will be home to nearly 12,000 64-core AMDs from the Epyc 7002 family. With Archer2, Great Britain aims at a computing power of 28 PetaFLOPS.
+Meanwhile, the US Department of Energy (DOE) plans to build the supercomputer El Capitan for its nuclear weapons research. He is to penetrate for 600 million US dollars in the Exascale class, but the hardware used is not yet known. In contrast to the British supercomputer Vulcan, GPU accelerators will also be used in El Capitan. (MMA)
+
+
+"

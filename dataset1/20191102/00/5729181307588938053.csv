@@ -1,0 +1,56 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+¿Por qué la seguridad informática debe ser un asunto de Estado?
+
+02 Nov 2019, 00:07
+
+Nos encontramos atravesando lo que se llama la era de la información, que se caracteriza por la soberanía de los datos como el activo más valioso. Pero, a pesar de la disponibilidad, no estamos haciendo un uso racional de esta información.
+La necesidad de publicar cosas compulsivamente, la sobreexposición en línea y la visibilidad completa de nuestras actividades y rutinas son prácticas que están arraigadas en nuestra vida cotidiana. Sin embargo, cuando éste tipo de prácticas las transportamos a las empresas y compañías, se torna complejo el lugar que ocupa el empleado como custodio de la información.
+Existen empresas que resultan un blanco relevante para los hackers, aquellas cuya razón de ser tiene que ver con el procesamiento de información, análisis de datos, manejos de grandes volúmenes de contactos, compañías basadas en la propiedad intelectual, aquellas que manejan información confidencial de pacientes, financiera y datos bancarios. Su posición jerárquica en el manejo de este tipo de datos, la vuelve un objetivo primordial para los ciberdelincuentes. Y cuando algo de esa información sale por fuera de la compañía, se convierte en una valiosísima mercancía.
+Asimismo, existen objetivos que, aunque se encuentran en una escala inferior del target objetivo, son cada vez más susceptibles de ser atacados porque los sistemas utilizados para controlarlos no se encuentran lo suficientemente custodiados para evitar hackeos. Hace poco más de una década se comenzó a debatir sobre seguridad informática a nivel industrial, su notoriedad es mucho más reciente que la seguridad informática en general. Y, si bien las compañías están entendiendo la problemática y la delicadeza que implica el manejo de datos y la exposición de estos equipos al exterior, aún no asumen la rigurosidad que demanda su manipulación.
+Recientemente, se ha revelado que han atacado una central termoeléctrica en Ucrania, una modalidad que podría generar daños irreversibles en la vida de las personas y el medioambiente. Con pequeñas variaciones en la secuencia de giro de la turbina, variaciones casi imperceptibles para los sensores que permitían restar revoluciones. Las consecuencias fueron más severas de lo que inicialmente se suponía, a raíz de ese complicado desempeño, de las vueltas por minuto que daba la máquina, se dañó el eje que generaba la potencia necesaria para producir energía. El cambio de eje demandó alrededor de 3 meses para que la máquina vuelva a estar operativa, primero, se debió esperar a que se enfríe, se desarmó y reparó, luego se volvió a armar y se puso nuevamente en funcionamiento. Mientras, dejó una parte de la ciudad sin energía eléctrica. Este tipo de hackeos está cada vez más presente en personas malintencionados, que no hacen más daño no porque no pueden, sino porque no quieren.
+Si bien existen muchas empresas con tecnología que permite un reconocimiento de la red, saber qué activos se están trabajando y mediante qué protocolos, para detectar cualquier activo que está por fuera del inventario o realizando variaciones a los dispositivos de control. El caso de la central termoeléctrica nos lleva a reflexionar sobre el alcance que debería tener la ciberseguridad, particularmente aplicada a establecimientos capaces de generar daños irreversibles o terminar con la vida, y en este sentido, aún hay mucho camino por recorrer.
+La seguridad informática en la industria no debe ser tomada a la ligera, con dispositivos que se conectan cada vez más y requieren actualizaciones. Es que la conexión con el mundo exterior se vuelve fundamental para tomar estadísticas de producción, mediciones de estado de salud de la plataforma, reportes hacia una unidad central. Esas conexiones empiezan a estar cada vez más vinculadas. Y aquí viene toda una nueva cuestión a tener en cuenta, cómo vamos a hacer para tener actualizados estos sistemas sin quedar expuestos a ataques cibernéticos, a sabiendas que los sistemas de control todavía, en muchos casos, hacen uso de sistemas operativos o aplicativos de gran vulnerabilidad y están obsoletos. Esto es realmente preocupante, es algo que nos está haciendo trabajar mucho. Una empresa a la cual se le descifra la información y le piden un rescate, en el peor de los casos, busca un back up y podría llegar a perder como mucho los últimos días de trabajo; ahora, una red industrial en la que alguien toma el control y altera los valores de medición de una válvula de presión, eventualmente podría hacer que esa válvula no corte, no compute o no tome acciones en el momento adecuado, puede provocar no sólo un grave daño en la producción de la planta, podría poner en riesgo muchas vidas humanas.
+Maximiliano Galante
+Gerente de operaciones de Neo Secure
+
+
+",es,"
+
+
+
+
+
+
+
+
+
+
+
+Why should computer security be a matter of state?
+
+02 Nov 2019, 00:07
+
+We are going through what is called the information age, which is characterized by data sovereignty as the most valuable asset. But, despite the availability, we are not making rational use of this information.
+The need to publish things compulsively, online overexposure and complete visibility of our activities and routines are practices that are rooted in our daily lives. However, when these types of practices are transported to companies and companies, the place occupied by the employee as custodian of the information becomes complex.
+There are companies that are a relevant target for hackers, those whose raison d'etre has to do with information processing, data analysis, handling of large volumes of contacts, companies based on intellectual property, those that handle confidential patient information , financial and bank details. Its hierarchical position in handling this type of data makes it a primary objective for cybercriminals. And when some of that information comes out of the company, it becomes a very valuable merchandise.
+There are also objectives that, although they are on a lower scale of the target target, are increasingly susceptible to attack because the systems used to control them are not sufficiently guarded to avoid hacking. A little over a decade ago, computer security began to be discussed at an industrial level, its notoriety is much more recent than computer security in general. And, although companies are understanding the problems and delicacy of data management and exposure of these devices abroad, they still do not assume the rigor that their manipulation demands.
+Recently, it has been revealed that they have attacked a thermoelectric power station in Ukraine, a modality that could generate irreversible damage to people's lives and the environment. With small variations in the turbine rotation sequence, almost imperceptible variations for the sensors that allowed to subtract revolutions. The consequences were more severe than initially assumed, due to this complicated performance, the turns per minute that the machine gave, the axis that generated the power needed to produce energy was damaged. The change of axis required about 3 months for the machine to be operational again, first, it had to wait for it to cool, it was disassembled and repaired, then it was reassembled and put into operation again. Meanwhile, he left a part of the city without electricity. This type of hacking is increasingly present in malicious people, who do no more harm not because they can't, but because they don't want to.
+Although there are many companies with technology that allows recognition of the network, knowing what assets are being worked on and by what protocols, to detect any assets that are outside the inventory or making variations to the control devices. The case of the thermoelectric plant leads us to reflect on the scope that cybersecurity should have, particularly applied to establishments capable of generating irreversible damage or ending life, and in this sense, there is still a long way to go.
+Computer security in the industry should not be taken lightly, with devices that are increasingly connected and require updates. It is that the connection with the outside world becomes fundamental to take production statistics, measurements of the health status of the platform, reports to a central unit. These connections are becoming increasingly linked. And here comes a whole new issue to consider, how are we going to do to keep these systems up to date without being exposed to cyber attacks, knowing that the control systems still, in many cases, make use of large operating or application systems vulnerability and are obsolete. This is really worrying, it is something that is making us work hard. A company to which the information is decrypted and asked for a rescue, in the worst case, seeks a back up and could lose at most the last days of work; Now, an industrial network in which someone takes control and alters the measurement values of a pressure valve, could eventually cause that valve not to cut, not compute or take action at the right time, can cause not only serious damage to the production of the plant, could put many human lives at risk.
+Maximiliano Galante
+Neo Secure Operations Manager
+
+
+"

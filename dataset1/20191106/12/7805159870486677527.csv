@@ -1,0 +1,84 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Tasker update adds Logcat detection, allowing for a lot of new automation possibilities
+06 Nov 2019, 12:39 by Mishaal Rahman
+For power users who want to customize every part of their phone, there are a few must-have apps. Apps like MacroDroid, Automate, and Llama all provide automation features, but in my view, none of them hold a candle to Tasker. While it might not have the best UI, Tasker is my personal favorite automation app because of how active the developer is, how many plugins are available for it, and how active the community is. Even though Android APIs are becoming more and more restricted with each new release, the Tasker developer and community have found ways around the restrictions. The latest v5.9.beta.8 release, for example, has added a new feature that opens up a whole new realm of possible automation use cases: logcat detection.
+
+Logcat Detection
+
+Last month, the developer of Tasker released a new beta that enabled clipboard monitoring on Android 10. Since Android 10 prevents background apps from reading the clipboard, you might be wondering how this was possible. The answer is through reading the logcat. Logcat is a shell tool that pulls a log of all system events and other events contributed by apps. Whenever a new clipboard entry is written, the corresponding system log will contain the clipboard text. By reading this log, Tasker is able to detect what the current clipboard entry is.
+Normally, apps aren’t allowed to read system logs, and they also can’t ask the user to grant them permission to do so. That’s because sensitive data may exist in the log, and allowing any app the ability to read logs opens up a whole can of worms related to privacy and security. However, it’s possible for a user to manually grant an app permission to read logs. If an app like Tasker declares the READ_LOGS permission, then the user can grant this permission manually via ADB. When you install the latest Tasker beta, it’ll ask you to do just that.
+So what can you do with the new Logcat Entry event in Tasker? The developer himself gives you a few examples:
+
+   •  Augment Pixel 4’s motion gestures   •  Do different stuff for each finger when unlocking the device   •  React to snoozing an alarm   •  Do different stuff for when you unlock your device with your finger or with a pattern   •  React to the Back button being held for 1 second in any app   •  React to the software keyboard being shown/hidden   •  Do different actions on Samsung devices depending on if the power button was double-clicked or the Bixby button was pressed
+
+These are all just different use cases that the developer thought up, but this is far from a comprehensive list of things you can do with logcat detection.
+Here’s a video demonstrating how to use Tasker to capture and filter the logcat for a desired entry:
+
+
+
+The two issues with logcat detection are that setting it up is far from user-friendly and it’s subject to change at any time if developers tweak the logs their apps send. Getting this set up will require a bit of trial and error, but once you’ve set something up, you probably won’t have to make changes to your configuration that often.
+
+New Shortcut Action
+
+The current developer of Tasker is actually not the original developer of the app. The current dev used to primarily work on a suite of Tasker plugins called AutoApps, so when he took over development work on Tasker, he started migrating the functionality of some of his plugins into the main Tasker app. The latest Tasker beta release essentially deprecates the AutoShortcut plugin by adding a new Shortcut action.
+
+
+
+
+The new logcat entry detection and shortcut action are the two biggest changes in the latest beta release, but there are other minor changes such as an improved Get Location action, variable previewing, and bug fixes for two long-standing bugs. You can read the full changelog here. You can sign up for the Tasker beta on Google Play or download the APK right now.
+
+
+",en,"
+
+
+
+
+
+
+
+
+
+
+
+Tasker update adds Logcat detection, allowing for a lot of new automation possibilities
+06 Nov 2019, 12:39 by Mishaal Rahman
+For power users who want to customize every part of their phone, there are a few must-have apps. Apps like MacroDroid, Automate, and Llama all provide automation features, but in my view, none of them hold a candle to Tasker. While it might not have the best UI, Tasker is my personal favorite automation app because of how active the developer is, how many plugins are available for it, and how active the community is. Even though Android APIs are becoming more and more restricted with each new release, the Tasker developer and community have found ways around the restrictions. The latest v5.9.beta.8 release, for example, has added a new feature that opens up a whole new realm of possible automation use cases: logcat detection.
+
+Logcat Detection
+
+Last month, the developer of Tasker released a new beta that enabled clipboard monitoring on Android 10. Since Android 10 prevents background apps from reading the clipboard, you might be wondering how this was possible. The answer is through reading the logcat. Logcat is a shell tool that pulls a log of all system events and other events contributed by apps. Whenever a new clipboard entry is written, the corresponding system log will contain the clipboard text. By reading this log, Tasker is able to detect what the current clipboard entry is.
+Normally, apps aren’t allowed to read system logs, and they also can’t ask the user to grant them permission to do so. That’s because sensitive data may exist in the log, and allowing any app the ability to read logs opens up a whole can of worms related to privacy and security. However, it’s possible for a user to manually grant an app permission to read logs. If an app like Tasker declares the READ_LOGS permission, then the user can grant this permission manually via ADB. When you install the latest Tasker beta, it’ll ask you to do just that.
+So what can you do with the new Logcat Entry event in Tasker? The developer himself gives you a few examples:
+
+   •  Augment Pixel 4’s motion gestures   •  Do different stuff for each finger when unlocking the device   •  React to snoozing an alarm   •  Do different stuff for when you unlock your device with your finger or with a pattern   •  React to the Back button being held for 1 second in any app   •  React to the software keyboard being shown/hidden   •  Do different actions on Samsung devices depending on if the power button was double-clicked or the Bixby button was pressed
+
+These are all just different use cases that the developer thought up, but this is far from a comprehensive list of things you can do with logcat detection.
+Here’s a video demonstrating how to use Tasker to capture and filter the logcat for a desired entry:
+
+
+
+The two issues with logcat detection are that setting it up is far from user-friendly and it’s subject to change at any time if developers tweak the logs their apps send. Getting this set up will require a bit of trial and error, but once you’ve set something up, you probably won’t have to make changes to your configuration that often.
+
+New Shortcut Action
+
+The current developer of Tasker is actually not the original developer of the app. The current dev used to primarily work on a suite of Tasker plugins called AutoApps, so when he took over development work on Tasker, he started migrating the functionality of some of his plugins into the main Tasker app. The latest Tasker beta release essentially deprecates the AutoShortcut plugin by adding a new Shortcut action.
+
+
+
+
+The new logcat entry detection and shortcut action are the two biggest changes in the latest beta release, but there are other minor changes such as an improved Get Location action, variable previewing, and bug fixes for two long-standing bugs. You can read the full changelog here. You can sign up for the Tasker beta on Google Play or download the APK right now.
+
+
+"

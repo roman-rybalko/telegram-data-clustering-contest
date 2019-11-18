@@ -1,0 +1,88 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+US Census Expands Its Tech Use To Improve Efficiency, Accuracy
+04 Nov 2019 by Rob Preston
+The US Census Bureau is taking advantage of the latest technologies and data sources for its 2020 count of the US population, as it looks to overcome a range of demographic, financial, logistical, and other challenges for what it characterizes as “the largest single civilian undertaking by the US federal government.”The census, required by the US Constitution every 10 years, started in 1790 and continues in 2020 with one major goal:  “Count everyone once, only once, and in the right place,” said Atri Kalluri, the Census Bureau’s senior advocate for response security and data integrity.
+
+
+To help ensure an accurate tally of everyone living in the US, Census Bureau employees have begun address canvassing in preparation for the 2020 count.Courtesy of US Census Bureau
+
+Here’s just one example of the technology opportunity. By using satellite imagery, digital maps, and other tools, the Census Bureau was able to verify 65% of addresses in-office—meaning its people had to visit only 35% of the nation’s addresses in self-response areas, compared with 100% for the 2010 count.
+Even more important than efficiency is accuracy, as the 2020 Census will apportion political representation among the 50 states; be used to draw congressional and state legislative districts, school districts, and voting precincts; help dictate how the federal government distributes more than $675 billion annually to the states; inform federal, state, tribal, and local government planning decisions; and inform business and non-profit decisions, such as where to locate and which markets to target.
+
+Challenges Ahead
+
+In a presentation at Oracle OpenWorld 2019, Kalluri laid out the key challenges of the 2020 Census. Among them: an increasingly mobile and diverse population, increasingly complex housing arrangements, the populace’s rapidly changing use of technology, and declining survey response rates.
+The Census Bureau plans to complete the 2020 count using 248 area offices and six regional offices nationwide—down from about 500 and 12, respectively, in 2010, thanks mostly to the expected technology-based efficiency gains outlined below.
+It’s applying a variety of technologies and tech-based innovations in five main areas: establish where to count, encourage people to respond, allow for self-response, follow up with those who didn’t respond, and tabulate the data and release the results. And do so as securely as possible, Kalluri said at Oracle OpenWorld.
+1. Establish where to count. As noted, the Census Bureau is turning to satellite imagery, digital maps, and data from the US Postal Service to help its in-office people review the addresses and locations of about 146 million households and identify changes since the 2010 Census. Those households—every one of which must be delivered a questionnaire to produce statistics on populations and their characteristics, such as age, sex, race, and housing status—include multifamily homes, apartments, and transitional residences such as hotels, boats, nursing homes, military bases, and correctional facilities.
+The goal is to reduce the cost of having to assign field workers called “address listers” to that task.
+Where those workers must still knock on doors to verify addresses, the Census Bureau is equipping them with route-optimization software to minimize the miles they have to travel, as well as tablets and laptops (purchased under a device-as-a-service contract) to collect the address data, which they ultimately upload to a cloud database. Meantime, it’s employing software to eliminate duplication of addresses.
+2. Encourage people to respond. “It’s not enough to just have an address list,” Kalluri said. “We need to ensure that when we send the forms and the letters asking people to respond, they are motivated to respond.”
+The Census Bureau is tapping a variety of conventional and digital channels to raise awareness, including print, TV, radio, and website ads, as well as social media and emails, with messages tailored by channel to specific demographic and geographic groups of people. On a section of the 2020 Census website, it’s even encouraging individuals to spread the word on their own social channels.
+3. Optimize self-response. The only self-response option used to be the paper surveys mailed to each household. But starting with the 2020 Census, people can fill out the questionnaires on a cloud-based Census Bureau website or do so over the phone with a contact center interviewer. Both internet and telephone response are available in 13 languages, Kalluri said.
+One innovation for the 2020 Census is “non-ID Response.” That capability lets people respond on the internet or phone any time, anywhere they want, Kalluri said, even if they don’t have their household’s unique census ID number handy, thanks to technology that dynamically matches addresses entered into the system against the addresses the Census Bureau has on file.
+4. Follow up. “Even with all of that, there will be non-responses,” Kalluri acknowledged.
+Enter the “enumerators,” also known as census takers—temporary employees assigned to designated areas by a system that also manages the number of contact attempts. This field operational control system analyzes administrative records and other data to determine the best time to go to each housing unit and the main language the occupants speak in order to cut down on repeat visits.
+Equipped with the same routing software provided to address listers, as well as an enumeration app on their iPhone 8s (also purchased under a device-as-a-service contract), the enumerators go door-to-door collecting the needed household and demographic information. For the 2010 count, the Census Bureau had to bring in more than 700,000 field workers, a number it hopes to reduce to 500,000 for 2020, while also implementing a program to train and pay them online.
+5. Tabulate data, release results. The Census Bureau will use a variety of software to process 2020 data, and it will also make software available to its stakeholders to help them process and use the data.
+For example, the open source Census and Survey Processing System (CSPro), used in more than 160 countries, will help the US Census Bureau—as well as companies, non-governmental organizations, colleges and universities, and hospitals—enter, edit, tabulate, and disseminate census information. Demographic Analysis and Population Projection System (DAPPS) software will help users analyze and produce population projections. Population Analysis System (PAS) software, developed by the Census Bureau, lays out frequently used procedures for analyzing data on age structure, mortality, fertility, migration, distribution of population, urbanization, and population projections.
+The US Constitution mandates that apportionment counts be delivered to the president on time—in the case of the 2020 Census, by December 31, 2020. The Census Bureau must send redistricting data to the states by April 1, 2021. In addition, it releases the reams of data it collects to the general public on data.census.gov via a range of tools and formats, including tables, maps, data visualizations, mobile apps, and interactive web apps, and it also hosts training and workshops.
+Kalluri noted that 35 operations and 52 systems support the entire 2020 Census, which extends to the remotest parts of the country.  “We can’t leave out anyone,” he said. “And then there’s the technical integration—we have to bring it all together. It has to work as one system of systems. I’m proud to say we’ve made humongous progress, both in terms of technical integration and performance and scalability.”
+
+
+",en,"
+
+
+
+
+
+
+
+
+
+
+
+US Census Expands Its Tech Use To Improve Efficiency, Accuracy
+04 Nov 2019 by Rob Preston
+The US Census Bureau is taking advantage of the latest technologies and data sources for its 2020 count of the US population, as it looks to overcome a range of demographic, financial, logistical, and other challenges for what it characterizes as “the largest single civilian undertaking by the US federal government.”The census, required by the US Constitution every 10 years, started in 1790 and continues in 2020 with one major goal:  “Count everyone once, only once, and in the right place,” said Atri Kalluri, the Census Bureau’s senior advocate for response security and data integrity.
+
+
+To help ensure an accurate tally of everyone living in the US, Census Bureau employees have begun address canvassing in preparation for the 2020 count.Courtesy of US Census Bureau
+
+Here’s just one example of the technology opportunity. By using satellite imagery, digital maps, and other tools, the Census Bureau was able to verify 65% of addresses in-office—meaning its people had to visit only 35% of the nation’s addresses in self-response areas, compared with 100% for the 2010 count.
+Even more important than efficiency is accuracy, as the 2020 Census will apportion political representation among the 50 states; be used to draw congressional and state legislative districts, school districts, and voting precincts; help dictate how the federal government distributes more than $675 billion annually to the states; inform federal, state, tribal, and local government planning decisions; and inform business and non-profit decisions, such as where to locate and which markets to target.
+
+Challenges Ahead
+
+In a presentation at Oracle OpenWorld 2019, Kalluri laid out the key challenges of the 2020 Census. Among them: an increasingly mobile and diverse population, increasingly complex housing arrangements, the populace’s rapidly changing use of technology, and declining survey response rates.
+The Census Bureau plans to complete the 2020 count using 248 area offices and six regional offices nationwide—down from about 500 and 12, respectively, in 2010, thanks mostly to the expected technology-based efficiency gains outlined below.
+It’s applying a variety of technologies and tech-based innovations in five main areas: establish where to count, encourage people to respond, allow for self-response, follow up with those who didn’t respond, and tabulate the data and release the results. And do so as securely as possible, Kalluri said at Oracle OpenWorld.
+1. Establish where to count. As noted, the Census Bureau is turning to satellite imagery, digital maps, and data from the US Postal Service to help its in-office people review the addresses and locations of about 146 million households and identify changes since the 2010 Census. Those households—every one of which must be delivered a questionnaire to produce statistics on populations and their characteristics, such as age, sex, race, and housing status—include multifamily homes, apartments, and transitional residences such as hotels, boats, nursing homes, military bases, and correctional facilities.
+The goal is to reduce the cost of having to assign field workers called “address listers” to that task.
+Where those workers must still knock on doors to verify addresses, the Census Bureau is equipping them with route-optimization software to minimize the miles they have to travel, as well as tablets and laptops (purchased under a device-as-a-service contract) to collect the address data, which they ultimately upload to a cloud database. Meantime, it’s employing software to eliminate duplication of addresses.
+2. Encourage people to respond. “It’s not enough to just have an address list,” Kalluri said. “We need to ensure that when we send the forms and the letters asking people to respond, they are motivated to respond.”
+The Census Bureau is tapping a variety of conventional and digital channels to raise awareness, including print, TV, radio, and website ads, as well as social media and emails, with messages tailored by channel to specific demographic and geographic groups of people. On a section of the 2020 Census website, it’s even encouraging individuals to spread the word on their own social channels.
+3. Optimize self-response. The only self-response option used to be the paper surveys mailed to each household. But starting with the 2020 Census, people can fill out the questionnaires on a cloud-based Census Bureau website or do so over the phone with a contact center interviewer. Both internet and telephone response are available in 13 languages, Kalluri said.
+One innovation for the 2020 Census is “non-ID Response.” That capability lets people respond on the internet or phone any time, anywhere they want, Kalluri said, even if they don’t have their household’s unique census ID number handy, thanks to technology that dynamically matches addresses entered into the system against the addresses the Census Bureau has on file.
+4. Follow up. “Even with all of that, there will be non-responses,” Kalluri acknowledged.
+Enter the “enumerators,” also known as census takers—temporary employees assigned to designated areas by a system that also manages the number of contact attempts. This field operational control system analyzes administrative records and other data to determine the best time to go to each housing unit and the main language the occupants speak in order to cut down on repeat visits.
+Equipped with the same routing software provided to address listers, as well as an enumeration app on their iPhone 8s (also purchased under a device-as-a-service contract), the enumerators go door-to-door collecting the needed household and demographic information. For the 2010 count, the Census Bureau had to bring in more than 700,000 field workers, a number it hopes to reduce to 500,000 for 2020, while also implementing a program to train and pay them online.
+5. Tabulate data, release results. The Census Bureau will use a variety of software to process 2020 data, and it will also make software available to its stakeholders to help them process and use the data.
+For example, the open source Census and Survey Processing System (CSPro), used in more than 160 countries, will help the US Census Bureau—as well as companies, non-governmental organizations, colleges and universities, and hospitals—enter, edit, tabulate, and disseminate census information. Demographic Analysis and Population Projection System (DAPPS) software will help users analyze and produce population projections. Population Analysis System (PAS) software, developed by the Census Bureau, lays out frequently used procedures for analyzing data on age structure, mortality, fertility, migration, distribution of population, urbanization, and population projections.
+The US Constitution mandates that apportionment counts be delivered to the president on time—in the case of the 2020 Census, by December 31, 2020. The Census Bureau must send redistricting data to the states by April 1, 2021. In addition, it releases the reams of data it collects to the general public on data.census.gov via a range of tools and formats, including tables, maps, data visualizations, mobile apps, and interactive web apps, and it also hosts training and workshops.
+Kalluri noted that 35 operations and 52 systems support the entire 2020 Census, which extends to the remotest parts of the country.  “We can’t leave out anyone,” he said. “And then there’s the technical integration—we have to bring it all together. It has to work as one system of systems. I’m proud to say we’ve made humongous progress, both in terms of technical integration and performance and scalability.”
+
+
+"

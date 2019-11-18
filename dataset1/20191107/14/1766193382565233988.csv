@@ -1,0 +1,56 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Schwachstellen in Nvidias GPU-Treiber und Geforce Experience gefährden Windows
+Angreifer könnten Schlupflöcher in Software von Nvidia ausnutzen, um sich höhere Rechte anzueignen oder sogar Schadcode auszuführen. Updates sind verfügbar.
+07 Nov 2019, 14:05 by Dennis Schirrmacher
+Nvidia hat den aktuellen Grafikkartentreiber 441.12 nicht nur für das lang erwartete Windows-PC-Spiel ""Red Dead Redemption 2 optimiert, sondern auch einige Sicherheitslücken beseitigt. Darüber hinaus haben sie noch ihr Optimierungstool Geforce Experience aktualisiert und die abgesicherte Ausgabe 3.20.1 veröffentlicht. Alle vorigen Versionen sollen bedroht sein.
+""Hoch"", nicht ""kritisch""
+Wer die Software nicht aktualisiert riskiert, dass Angreifer sich mit Schadcode auf Windows-Computern breit machen könnten. Die gefährlichsten Schwachstellen hat Nvidia mit dem Bedrohungsgrad ""hoch"" eingestuft.
+Aus den Warnmeldungen zum GPU-Treiber und Geforce Experience geht hervor, dass Angriffe nicht ohne Weiteres aus der Ferne möglich sind. Deswegen gilt die Bedrohung auch nicht als kritisch.
+Hat ein Angreifer lokalen Zugriff und kann seinen Exploit erfolgreich platzieren, könnte er DoS-Attacken ausüben, sich höhere Nutzerrechte verschaffen. Auch die Ausführung von Schadcode ist in einigen Fällen vorstellbar.
+Der abgesicherte Treiber ist bereits für Karten der Geforce-Serie und für einige der Quadro-Reihe verfügbar. Für die verbleibenden Quadro-Karten und die Tesla-Reihe soll der Treiber in der Woche ab 18.11.2019 erscheinen.
+
+[UPDATE, 07.11.2019 15:30 Uhr]
+
+Beurteilung des Bedrohungsgrad im Fließtext angepasst. (des)
+
+
+",de,"
+
+
+
+
+
+
+
+
+
+
+
+Vulnerabilities in Nvidia's GPU driver and Geforce Experience threaten Windows
+Attackers could use loopholes in Nvidia software to gain higher rights or even execute malicious code. Updates are available.
+07 Nov 2019, 14:05 by Dennis Schirrmacher
+Nvidia has not only optimized the current video card driver 441.12 for the long-awaited Windows PC game ""Red Dead Redemption 2"", but also fixed some vulnerabilities, updated its Geforce Experience optimizer, and released secure version 3.20.1 previous versions should be threatened.
+""High"", not ""critical""
+Those who do not update the software risk being attacked by malicious code on Windows computers. The most dangerous vulnerabilities have classified Nvidia with the threat level ""high"".
+The warnings about the GPU driver and Geforce Experience show that attacks are not easily possible remotely. That's why the threat is not considered critical.
+If an attacker has local access and can successfully place his exploit, he could do DoS attacks, gain more user rights. The execution of malicious code is also conceivable in some cases.
+The secured driver is already available for Geforce cards and for some of the Quadro series. For the remaining Quadro maps and the Tesla series the driver is to appear in the week starting from 18.11.2019.
+
+[UPDATE, 07.11.2019 15:30]
+
+Assessment of the degree of threat in the body text adapted. (of)
+
+
+"

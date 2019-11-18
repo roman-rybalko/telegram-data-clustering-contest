@@ -1,0 +1,150 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Linux drivers confirm high-end Radeon Navi GPUs, detail new budget cards
+AMD is finally completing its line-up
+02 Nov 2019, 14:48 by Isaiah Mayersen
+In a nutshell: AMD’s superb 5700 and 5700XT have a few friends incoming, according to some recent Linux driver updates. They finally confirm the long-rumored Navi 22 and 23 GPUs, reconfirm the Navi 12 and 21 and their Lite versions, and gives us some insight into the three additional Navi 14 cards. In total, we’re looking at nine unreleased variants, but precisely what they are is still a little unclear.
+Starting in the budget category, it appears AMD has five Navi 14 GPUs in the works. The driver lists the Navi 14 XT, XTM, XL, XLM, and the XTX. The first two are the previously announced 5500 and 5500M (the mobile version). The codenames indicate the next two are a cheaper variant and its accompanying mobile version, probably the 5300 we saw listed in an unreleased HP gaming PC last September. For the 5700-series, the XTX codename denoted the overclocked 50th Anniversary Edition card, so we’ll have to wait and see how that works for Navi 14.
+The driver also contained various numbers that aligned with the base clocks for the 5500 and 5500M, so we’ve interpreted them as being base clocks for the other three cards too. They’re about what you’d expect. While we don’t have any information about core count, it seems the 5300 cards would likely have slightly less than the 5500’s 1408.
+
+
+Model
+Name
+Core Count
+Base Clock
+Boost Clock
+
+
+AMD Navi 14 XT
+Radeon 5500
+1408
+1670 MHz
+1845 MHz
+
+
+AMD Navi 14 XTM
+Radeon 5500M
+1408
+1448 MHz
+1645 MHz
+
+
+AMD Navi 14 XL
+Radeon 5300
+?
+1448 MHz
+?
+
+
+AMD Navi 14 XLM
+Radeon 5300M
+?
+1181 MHz
+?
+
+
+AMD Navi 14 XTX
+?
+?
+1717 MHz
+?
+
+
+Specifications unconfirmed.
+In a different piece of code, we have a passing reference to the Navi 22 and 23, which we’ve heard rumors about for a long time. The sum of those rumors suggests they’re the flagship Navi cards Lisa Su said were in development last August, and that the “2” denotes these are the first RDNA 2.0 cards. If those rumors are true, that would be exciting, but ultimately there’s no evidence to conclude this is the case, so we’ll have to be patient.
+Lastly, we have the Navi 12 and Navi 21 and their accompanying “Lite” versions. These have appeared in two Linux drivers now. Additionally, a listing on the Korean National Radio Research Agency’s website confirmed Navi 21. There have been suggestions that Navi 12 is more powerful while Navi 21 is a budget card, but quite frankly, AMD’s outrageously inconsistent naming scheme has got us stumped on how they might fit into the larger line-up.
+
+Related Reads
+
+
+
+
+
+
+
+",en,"
+
+
+
+
+
+
+
+
+
+
+
+Linux drivers confirm high-end Radeon Navi GPUs, detail new budget cards
+AMD is finally completing its line-up
+02 Nov 2019, 14:48 by Isaiah Mayersen
+In a nutshell: AMD’s superb 5700 and 5700XT have a few friends incoming, according to some recent Linux driver updates. They finally confirm the long-rumored Navi 22 and 23 GPUs, reconfirm the Navi 12 and 21 and their Lite versions, and gives us some insight into the three additional Navi 14 cards. In total, we’re looking at nine unreleased variants, but precisely what they are is still a little unclear.
+Starting in the budget category, it appears AMD has five Navi 14 GPUs in the works. The driver lists the Navi 14 XT, XTM, XL, XLM, and the XTX. The first two are the previously announced 5500 and 5500M (the mobile version). The codenames indicate the next two are a cheaper variant and its accompanying mobile version, probably the 5300 we saw listed in an unreleased HP gaming PC last September. For the 5700-series, the XTX codename denoted the overclocked 50th Anniversary Edition card, so we’ll have to wait and see how that works for Navi 14.
+The driver also contained various numbers that aligned with the base clocks for the 5500 and 5500M, so we’ve interpreted them as being base clocks for the other three cards too. They’re about what you’d expect. While we don’t have any information about core count, it seems the 5300 cards would likely have slightly less than the 5500’s 1408.
+
+
+Model
+Name
+Core Count
+Base Clock
+Boost Clock
+
+
+AMD Navi 14 XT
+Radeon 5500
+1408
+1670 MHz
+1845 MHz
+
+
+AMD Navi 14 XTM
+Radeon 5500M
+1408
+1448 MHz
+1645 MHz
+
+
+AMD Navi 14 XL
+Radeon 5300
+?
+1448 MHz
+?
+
+
+AMD Navi 14 XLM
+Radeon 5300M
+?
+1181 MHz
+?
+
+
+AMD Navi 14 XTX
+?
+?
+1717 MHz
+?
+
+
+Specifications unconfirmed.
+In a different piece of code, we have a passing reference to the Navi 22 and 23, which we’ve heard rumors about for a long time. The sum of those rumors suggests they’re the flagship Navi cards Lisa Su said were in development last August, and that the “2” denotes these are the first RDNA 2.0 cards. If those rumors are true, that would be exciting, but ultimately there’s no evidence to conclude this is the case, so we’ll have to be patient.
+Lastly, we have the Navi 12 and Navi 21 and their accompanying “Lite” versions. These have appeared in two Linux drivers now. Additionally, a listing on the Korean National Radio Research Agency’s website confirmed Navi 21. There have been suggestions that Navi 12 is more powerful while Navi 21 is a budget card, but quite frankly, AMD’s outrageously inconsistent naming scheme has got us stumped on how they might fit into the larger line-up.
+
+Related Reads
+
+
+
+
+
+
+
+"

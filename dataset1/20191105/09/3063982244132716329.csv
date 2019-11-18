@@ -1,0 +1,44 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Microsoft stellt Preise für Visual Studio Online vor
+Visual Studio Online kann seit kurzem von interessierten Entwicklern getestet werden. Diese bekommen auch einen Einblick in die Preisvorstellung, die Microsoft für Cloudumgebungen hat. Die Software soll sich aber auch an selbst verwaltete Umgebungen anbinden lassen.
+05 Nov 2019, 09:52 by Oliver Nickel
+Auf der Entwicklermesse Ignite 2019 hat Microsoft seine Web-Entwicklungsumgebung Visual Studio Online für öffentliche Tester freigegeben. Nutzer können sich über eine entsprechende Webseite für das Programm anmelden. Zudem gibt das Unternehmen einen Einblick in die Kosten, die auf Kunden für die Nutzung des Dienstes zukommen. Die Web-IDE ermöglicht nämlich das Nutzen von Cloud-Ressourcen für vorgefertigte oder selbst erstellte Cloudumgebungen.
+Die Abrechnung summiert sich durch die benötigten Umgebungseinheiten, die sich wiederum aus den konfigurierten Ressourcen zusammensetzen. Sie enthalten Kosten für Netzwerktraffic, Rechenzeit und auch von Microsoft automatisch generierte Snapshots der genutzten Daten. Microsoft gibt zwei Beispiele an: Eine Instanz mit vier CPU-Kernen, 8 GByte RAM und einer 64 GByte großen HDD benötigt 125 Umgebungseinheiten pro Stunde. Bei einem Preis von 0,00395 Euro pro Einheit und Stunde ergibt sich ein Mietpreis von 0,49 Euro pro Stunde. Bei acht CPU-Kernen, 16 GByte RAM und einer 64-GByte-HDD werden 0,956 Euro fällig.
+Dabei sollte beachtet werden, dass bei Nichtnutzung einer Umgebung trotzdem anscheinend zwei Einheiten pro Stunde berechnet werden. Es soll allerdings auch möglich sein, Visual Studio Online mit selbst gehosteten Umgebungen - etwa im eigenen Rechenzentrum - zu nutzen, was gerade in großen Unternehmen Mietkosten sparen kann. Dazu stellt Microsoft den Visual Studio Live Share Agent bereit, der auf eigener Hardware installiert wird und anschließend auf Verbindungen wartet. Die Nutzung der Software an sich soll kostenlos bleiben.
+Vorgestellt wurde die Online-IDE bereits auf der Build 2019 im Sommer. Der Editor soll sich an Visual Studio Code anlehnen. Mittlerweile kann er mit Programmiersprachen wie Node.js, Python, .Net, C++, C# und anderen genutzt werden.
+
+
+",de,"
+
+
+
+
+
+
+
+
+
+
+
+Microsoft Introduces Pricing for Visual Studio Online
+Visual Studio Online has recently been tested by interested developers. These also get an insight into the asking price that Microsoft has for cloud environments. The software should also be connected to self-managed environments.
+05 Nov 2019, 09:52 by Oliver Nickel
+At the developer fair Ignite 2019, Microsoft released its web development environment Visual Studio Online for public testers. Users can register for the program via a corresponding website. In addition, the company gives an insight into the costs that customers incur for using the service. The Web IDE enables the use of cloud resources for pre-built or self-built cloud environments.
+Billing adds up to the required environmental units, which in turn are composed of the configured resources. They include costs for network traffic, computing time and also automatically generated snapshots of the data used by Microsoft. Microsoft gives two examples: An instance with four CPU cores, 8 GB of RAM, and a 64 GB HDD requires 125 environments per hour. At a price of 0.00395 euros per unit and hour results in a rental price of 0.49 euros per hour. With eight CPU cores, 16 GB of RAM and a 64 GB HDD 0.955 euros are due.
+It should be noted that when one environment is not used, it seems that two units are calculated per hour. However, it should also be possible to use Visual Studio Online with self-hosted environments - such as in its own data center - which can save rental costs, especially in large companies. To do this, Microsoft provides the Visual Studio Live Share Agent, which installs on its own hardware and then waits for connections. The use of the software itself should remain free.
+The online IDE was already presented at Build 2019 in the summer. The editor should lean on Visual Studio code. Meanwhile it can be used with programming languages like Node.js, Python, .Net, C ++, C # and others.
+
+
+"

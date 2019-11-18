@@ -1,0 +1,68 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Google привлёк ESET и Lookout для сканирования Android-приложений
+07 Nov 2019, 09:36 by Олег Иванов
+
+
+
+Google привлёк три компании, специализирующиеся на кибербезопасности — ESET, Lookout и Zimperium, — для более эффективного сканирования официального магазина Android-приложений Play Store.
+В результате появился новый проект — App Defense Alliance, задача которого — объединить движки для сканирования вредоносных программ и других киберугроз.
+По мнению Google, такая реализация повысит эффективность санирования приложений для Android на этапе проверки (до того, как они будут опубликованы в официальном магазине).
+На сегодняшний день присылаемые разработчиками приложения проверяют сотрудники Google с помощью системы Bouncer и инструмента Google Play Protect.
+Интернет-гигант ранее утверждал, что такой подход позволяет детектировать тысячи вредоносных Android-приложений, пытающихся пробраться в Google Play Store.
+Однако всем понятно, что свои недостатки при таком сканировании всё же были. Тому подтверждением являются участившиеся в последнее время случаи проникновения в магазин откровенно злонамеренных программ.
+При этом злоумышленники, естественно, затачивают свои инструменты под обход Bouncer и Play Protect. Именно поэтому Google решил привлечь ESET, Lookout и Zimperium, с чьей помощью корпорация планирует повысить безопасность Play Store.
+На прошлой неделе эксперты компании Bitdefender решили описать все методы, помогающие злоумышленникам обходить защитные меры Google Play Store.
+
+Читайте также
+
+
+
+
+
+
+",ru,"
+
+
+
+
+
+
+
+
+
+
+
+Google hired ESET and Lookout to crawl Android apps
+07 Nov 2019, 09:36 by Oleg Ivanov
+
+
+
+Google hired three cybersecurity companies - ESET, Lookout, and Zimperium - to more effectively crawl the official Play Store Android app store.
+As a result, a new project appeared - the App Defense Alliance, whose task is to combine engines for scanning malware and other cyber threats.
+According to Google, such an implementation will increase the efficiency of sanitizing Android applications at the verification stage (before they are published in the official store).
+To date, applications sent by developers are checked by Google employees using the Bouncer system and the Google Play Protect tool.
+The Internet giant previously claimed that this approach can detect thousands of malicious Android applications trying to get into the Google Play Store.
+However, everyone understands that there were still drawbacks with such scanning. This is confirmed by recent cases of penetration of frankly malicious programs into the store.
+At the same time, attackers naturally hone their tools bypassing Bouncer and Play Protect. That is why Google decided to attract ESET, Lookout and Zimperium, with whose help the corporation plans to increase the security of the Play Store.
+Last week, Bitdefender experts decided to describe all the methods that help attackers circumvent the protective measures of the Google Play Store.
+
+Read also
+
+
+
+
+
+
+"

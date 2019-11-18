@@ -1,0 +1,142 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+HMS Core: así es el ecosistema de Huawei en el que invertirán 1.000 millones de dólares para resistir sin los servicios de Google
+06 Nov 2019, 15:31 by Enrique Pérez
+Huawei busca superar su dependencia con Google. Y para demostrarlo están creando una potente alternativa: los Huawei Mobile Services Core. Durante la celebración del congreso Web Summit 2019, en Lisboa, la compañía china ha dado a conocer cuál es su estrategia en el software de cara a los próximos años. Una serie de proyectos y herramientas para no depender de empresas norteamericanas como Google.
+El bloqueo de los EE.UU se ha notado especialmente en el Mate 30 Pro, su último buque insignia que ha llegado a España sin acceso a Google Play. En su lugar encontramos la tienda de aplicaciones AppGallery y distintas aplicaciones de Huawei. ¿Son estas suficientes para convertirse en una alternativa a todo lo que ofrece Google en Android? Lo cierto es que todavía no, pero Huawei ya tiene preparadas casi 1.000 APIs distintas para los desarrolladores de su ecosistema.
+Aquí os explicamos cómo funcionan los nuevos HMS Core, qué ventajas ofrece Huawei respecto a Google y cómo pretenden crear un ecosistema suficiente fuerte de cara a los futuros móviles de la compañía.
+Cómo funcionan los Huawei Mobile Services (HMS) Core
+
+
+
+Un móvil es mucho más que sus aplicaciones. Un ejemplo bastante sencillo para entenderlo es utilizar Google Maps. La fortaleza del servicio de mapas no es únicamente la aplicación, sino que los servicios de ubicación de otras aplicaciones utilizan los datos de Google para saber dónde estás. Es decir, Google no solo ofrece un mapa, sino un servicio de localización para otras aplicaciones. Y de la misma manera que tenemos esto, también hay otros servicios en el móvil como los pagos, la identificación, la sincronización entre juegos o la información en la nube.
+Debido a esto, cuando el Huawei Mate 30 no tiene acceso a Google Play, también pierde acceso a todos los servicios de Google asociados. Y esto es un problema, pues no solo dejamos de poder utilizar las apps de Google, también perdemos gran parte de las características utilizadas por miles de aplicaciones. Para corregir esto, Huawei nos presenta sus propios HMS Core, una alternativa a los Play Services de Google.
+
+
+
+
+
+
+¿Cuáles son las herramientas que Huawei ofrece actualmente? En concreto tenemos 9 kits de desarrollo especializados desde mediados de agosto. Vamos a ver cuáles son y qué nos ofrecen:
+
+Account Kit: Permite a los usuarios crear un perfil y registrarse en distintas aplicaciones sin necesidad de añadir otra vez el número o la contraseña.
+Location Kit: Combina el GPS, Wi-Fi, Bluetooth y las estaciones cercanas para obtener la ubicación. Distintas API para acceder de forma precisa, rápida y con bajo consumo a la localización. Próximamente se añadirán opciones como localización indoor o geo-fencing.
+Map Kit: Cobertura global en 150 países, 150 millones de direcciones y la posibilidad de personalizar los mapas mostrados. Una alternativa a Google Maps para terceros que de momento no está disponible como aplicación propia.
+Drive Kit: El nombre del servicio evoca directamente con su rival de Google. Se trata del servicio para almacenamiento en la nube, donde los archivos se mantienen cifrados y se pueden acceder de manera rápida desde el móvil. Por el momento no disponemos de compartir archivos, ni búsqueda inteligente, ni colaboración entre distintos usuarios. Pero Huawei ha asegurado que estas funciones estarán próximamente.
+Game Service: La alternativa a los Play Games Services. Huawei permite a los desarrolladores ofrecen premios en forma de regalos o crear rankings y logros. En el futuro también se permitirá analizar estadísticas del juego o obtener datos de eventos concretos dentro del juego.
+Push Kit: Los servicios de Huawei también llegan para poder configurar las notificaciones. Con Push Kit se ofrece un sistema con un alto nivel de fiabilidad, compatibilidad entre distintos dispositivos y al igual que Google, también permite enviar notificaciones expandidas, con imágenes y más información.
+Analytics Kit: Todos los desarrolladores necesitan conocer cómo se utiliza su aplicación. Aquí es donde se encuentra Analytics Kit, que ofrece herramientas de depuración, análisis de retención y un dashboard personalizado donde encontrar estadísticas de uso.
+In-app purchases Kit: Fuera de China, Huawei ofrece compras dentro de la aplicación a través de VISA/MasterCard/Paypal y otros servicios de terceros. Además de estas compras, la compañía también ofrece la posibilidad de realizar suscripciones.
+Ads Kit: El último en llegar es el servicio de anuncios, que permitirá a los desarrolladores que trabajen en la AppGallery crecer económicamente y ofrecer recompensas concretas por referidos.
+
+
+
+
+Durante la realización del evento, Huawei ha explicado que más de 50.000 aplicaciones son compatibles con los HMS Core y cuentan con 1,07 millones de desarrolladores registrados. Uno de los aspectos que Huawei ha promocionado de sus servicios es la facilidad para crear una aplicación compatible, necesitando únicamente tres días de desarrollo para adaptarla.
+Además de los HMS Core, la apuesta de Huawei por el software se basa en las aplicaciones de la compañía como AppGallery, AppTouch, Huawei Themes, Huawei Ability Gallery o QuickApp, su propia contrapartida a las Instant Apps de Google. Así como en Huawei HiAI, el asistente inteligente que próximamente se extenderá por los dispositivos de la compañía. Se trata de un asistente con funciones como el reconocimiento del texto, reconocimiento de imágenes, de códigos, reconocimiento facial y resumen de vídeo. Un asistente que ya se encuentra integrado en aplicaciones como WPS, StorySign o PocketVision.
+'Shining Star', un programa de 1.000 millones de dólares para atraer desarrolladores
+
+
+Guo Ping, presidente rotativo de Huawei, durante el Web Summit 2019.
+
+Huawei dispone de 570 millones de usuarios activos. Así lo ha anunciado Guo Ping, presidente rotativo de Huawei durante su conferencia en el Web Summit de este año. La compañía ha enfatizado en el desarrollo de aplicaciones y el software para ""explotar todo el potencial de los dispositivos"" y ha colocado a los dispositivos móviles y la nube como una de las área de trabajo más relevantes para Huawei en los próximos años.
+Entre las novedades anunciadas se encuentran varios programas para apoyar a estos desarrolladores. Por un lado tenemos el Programa de Desarrolladores de Huawei 2.0, con una inversión de 1.500 millones de dólares para expandirlo y alcanzar hasta 5 millones de desarrolladores. Por otro lado, se encuentra el denominado Programa ""Shining-Star"". Se trata de una inversión de 1.000 millones de dólares con el objetivo de ""poder atraer a una gama más amplia de aplicaciones de alta calidad al ecosistema de Servicios Móviles de Huawei"".
+Actualmente, los usuarios de Huawei pueden acceder a estos servicios a través de la tienda Huawei AppGallery, preinstalada en sus últimos móviles. Según los últimos datos de la compañía, AppGallery cuenta con 390 millones de usuarios activos en todo el mundo y 180.000 millones de descargas al año.
+Huawei describe su apuesta con el lema ""1+8+N"", donde el móvil está en el centro del ecosistema con otros ocho dispositivos distintos como las tablets, smartwatches, el ordenador, el televisor o el coche. Unos dispositivos que a su vez permitirán acceder al resto del Internet de las Cosas.
+Una apuesta total para alejarse de los servicios de Google
+Jervis Su, vicepresidente de Servicios Móviles de la Unidad de Negocio de Consumo de Huawei, ha repasado lo que la compañía tiene preparado para sus HMS Core, incidiendo en su importancia ""no solo en el ecosistema de Huawei"". Para ello, la compañía ha anunciado que a finales de año estarán disponibles 24 kits de desarrollo para los HMS Core.
+
+
+Los HMS Core recibirán múltiples herramientas adicionales a finales de año.
+
+Entre ellos nos encontraremos algunos como Wallet Kit, para gestionar nuestras compras, DRM Kit, para que las aplicaciones puedan proteger su contenido o Health Kit, para sincronizar los datos de salud. Nuevas API que ya tienen su contrapartida en Google pero que ayudarán a Huawei a que los usuarios y desarrolladores no pierdan funciones con el cambio.
+Además de las novedades en los Huawei Mobile Services, la compañía ha anunciado que DevEco Studio, su propio IDE de desarrollo, estará disponible en 2020. Por el momento, los desarrolladores podrán seguir utilizando Java y Android Studio como suele ser habitual en el entorno de programación Android. Porque más allá de las herramientas, los desarrolladores también necesitan incentivos económicos. Es por ello que AppGallery ofrece el 85% de los beneficios a los creadores de aplicaciones, en vez del 70% habitual en Google Play.
+
+
+
+El objetivo de Huawei es superar el varapalo que supone haberse quedado sin los servicios de Google en sus dispositivos. Hemos de tener en cuenta que en AppGallery, por el momento tampoco se encuentran aplicaciones de origen norteamericano como WhatsApp o Instagram. Desconocemos el estado de las negociaciones y el desarrollo con estas apps en concreto, pero su llegada a AppGallery significaría que estos desarrolladores adaptarían sus sistemas a los de Huawei. Si nos fijamos por ejemplo en WhatsApp, esto supondría apostar por Drive Kit y no Google Drive para la realización de las copias de seguridad.
+Se desconoce qué ocurrirá con el bloqueo de los EE.UU. Y es que aunque en unas semanas podría levantarse, desde Huawei ya plantean su futuro alejado de Google independientemente de lo que llegue a ocurrir. La compañía está buscando posibles aliados en Europa para potenciar el despliegue de sus HMS Core y envían el mensaje de que están preparados para rivalizar contra Google también en el software. El tiempo dirá si logran conseguir el apoyo de los desarrolladores y los usuarios o si, en caso de levantarse el veto, todo vuelve a la situación previa.
+
+
+",es,"
+
+
+
+
+
+
+
+
+
+
+
+HMS Core: this is the ecosystem of Huawei in which they will invest 1 billion dollars to resist without Google services
+06 Nov 2019, 15:31 by Enrique Pérez
+Huawei seeks to overcome its dependence with Google. And to prove it they are creating a powerful alternative: the Huawei Mobile Services Core. During the celebration of the Web Summit congress 2019, in Lisbon, the Chinese company has announced its software strategy for the coming years. A series of projects and tools not to depend on American companies like Google.
+The US blockade has been especially noticed in the Mate 30 Pro, its latest flagship that has arrived in Spain without access to Google Play. Instead we find the AppGallery application store and different Huawei applications. Are these enough to become an alternative to everything Google offers on Android? The truth is that not yet, but Huawei already has prepared almost 1,000 different APIs for the developers of its ecosystem.
+Here we explain how the new HMS Core works, what advantages Huawei offers compared to Google and how they intend to create a strong enough ecosystem for the company's mobile futures.
+How the Huawei Mobile Services (HMS) Core work
+
+
+
+A mobile is much more than its applications. A fairly simple example to understand is to use Google Maps. The strength of the map service is not just the application, but the location services of other applications use Google data to know where you are. That is, Google not only offers a map, but a location service for other applications. And in the same way that we have this, there are also other services on the mobile such as payments, identification, synchronization between games or information in the cloud.
+Because of this, when the Huawei Mate 30 does not have access to Google Play, it also loses access to all associated Google services. And this is a problem, because not only do we stop using Google apps, we also lose much of the features used by thousands of applications. To correct this, Huawei presents its own HMS Core, an alternative to Google Play Services.
+
+
+
+
+
+
+What are the tools that Huawei currently offers? Specifically we have 9 specialized development kits since mid-August. Let's see what they are and what they offer us:
+
+Account Kit: Allows users to create a profile and register in different applications without adding the number or password again.
+Location Kit: Combine GPS, Wi-Fi, Bluetooth and nearby stations to get the location. Different APIs to access the location precisely, quickly and with low consumption. Soon options such as indoor location or geo-fencing will be added.
+Map Kit: Global coverage in 150 countries, 150 million addresses and the ability to customize the displayed maps. An alternative to Google Maps for third parties that is currently not available as its own application.
+Drive Kit: The service name evokes directly with your Google rival. This is the service for cloud storage, where files are kept encrypted and can be accessed quickly from the mobile. At the moment we do not have file sharing, or intelligent search, or collaboration between different users. But Huawei has assured that these functions will be coming soon.
+Game Service: The alternative to Play Games Services. Huawei allows developers to offer prizes in the form of gifts or create rankings and achievements. In the future it will also be allowed to analyze game statistics or obtain data from specific events within the game.
+Push Kit: Huawei services also arrive to configure notifications. With Push Kit we offer a system with a high level of reliability, compatibility between different devices and like Google, it also allows you to send expanded notifications, with images and more information.
+Analytics Kit: All developers need to know how their application is used. This is where Analytics Kit is located, which offers debugging tools, retention analysis and a custom dashboard where to find usage statistics.
+In-app purchases Kit: Outside of China, Huawei offers in-app purchases through VISA / MasterCard / Paypal and other third-party services. In addition to these purchases, the company also offers the possibility of making subscriptions.
+Ads Kit: The last to arrive is the ad service, which will allow developers working on the AppGallery to grow economically and offer specific rewards for referrals.
+
+
+
+
+During the event, Huawei explained that more than 50,000 applications are compatible with HMS Core and have 1.07 million registered developers. One of the aspects that Huawei has promoted of its services is the ease to create a compatible application, needing only three days of development to adapt it.
+In addition to the HMS Core, Huawei's commitment to software is based on the company's applications such as AppGallery, AppTouch, Huawei Themes, Huawei Ability Gallery or QuickApp, its own counterpart to Google Instant Apps. As in Huawei HiAI, the smart assistant that will soon be extended by the company's devices. It is an assistant with functions such as text recognition, image recognition, codes, facial recognition and video summary. A wizard that is already integrated into applications such as WPS, StorySign or PocketVision.
+'Shining Star', a $ 1 billion program to attract developers
+
+
+Guo Ping, rotating president of Huawei, during the Web Summit 2019.
+
+Huawei has 570 million active users. This was announced by Guo Ping, rotating president of Huawei during his conference at this year's Web Summit. The company has emphasized the development of applications and software to ""exploit the full potential of devices"" and has placed mobile devices and the cloud as one of the most relevant work areas for Huawei in the coming years.
+Among the news announced are several programs to support these developers. On the one hand we have the Huawei 2.0 Developer Program, with an investment of 1.5 billion dollars to expand it and reach up to 5 million developers. On the other hand, there is the so-called ""Shining-Star"" Program. It is an investment of 1 billion dollars with the aim of ""being able to attract a wider range of high quality applications to the Huawei Mobile Services ecosystem.""
+Currently, Huawei users can access these services through the Huawei AppGallery store, preinstalled on their latest phones. According to the latest data from the company, AppGallery has 390 million active users worldwide and 180,000 million downloads per year.
+Huawei describes its bet with the motto ""1 + 8 + N"", where the mobile is in the center of the ecosystem with eight other different devices such as tablets, smartwatches, the computer, the television or the car. Some devices that in turn will allow access to the rest of the Internet of Things.
+A total bet to get away from Google services
+Jervis Su, vice president of Mobile Services of the Huawei Consumer Business Unit, has reviewed what the company has prepared for its HMS Core, emphasizing its importance ""not only in the Huawei ecosystem."" For this, the company has announced that by the end of the year 24 development kits will be available for the HMS Core.
+
+
+Core HMS will receive multiple additional tools at the end of the year.
+
+Among them we will find some such as Wallet Kit, to manage our purchases, DRM Kit, so that applications can protect their content or Health Kit, to synchronize health data. New APIs that already have their counterpart in Google but that will help Huawei so that users and developers do not lose functions with the change.
+In addition to the news in the Huawei Mobile Services, the company has announced that DevEco Studio, its own development IDE, will be available in 2020. At the moment, developers will be able to continue using Java and Android Studio as usual in the environment of Android programming Because beyond the tools, developers also need economic incentives. That is why AppGallery offers 85% of the benefits to application creators, instead of the usual 70% on Google Play.
+
+
+
+The goal of Huawei is to overcome the blow that means having run out of Google services on their devices. We have to take into account that in AppGallery, for the moment there are no applications of North American origin such as WhatsApp or Instagram. We do not know the state of negotiations and development with these apps in particular, but their arrival at AppGallery would mean that these developers would adapt their systems to those of Huawei. If you look for example in WhatsApp, this would involve betting on the Drive Kit and not Google Drive for making backup copies.
+It is unknown what will happen with the US blockade. And it is that although in a few weeks it could rise, from Huawei they already raise their future away from Google regardless of what happens. The company is looking for possible allies in Europe to enhance the deployment of its HMS Core and send the message that they are prepared to rival Google also in the software. Time will tell if they get the support of developers and users or if, in case the veto is lifted, everything returns to the situation.previous ion.
+
+
+"

@@ -1,0 +1,74 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+Ryzen 9 3950X, la CPU con 16 core e 32 thread arriva il 25 novembre
+07 Nov 2019, 13:01 by Manolo De Agostini
+Ryzen 9 3950X sarà disponibile dal 25 novembre. Il nuovo processore di punta mainstream di AMD, con 16 core e 32 thread, annunciato in occasione dell’E3 2019 e slittato rispetto all’iniziale data di uscita di settembre, è finalmente pronto a “sconquassare” il mercato.
+
+
+
+AMD lo definisce il “processore desktop a 16 core più potente al mondo” e conferma le specifiche tecniche già note: oltre al citato numero di core e thread, ecco una frequenza base di 3,5 GHz, una frequenza di boost di 4,7 GHz e un totale di 72 MB di cache (L2+L3), il tutto in un TDP di 105 watt. La CPU è compatibile con le motherboard AM4 X570, X470 e B450, anche se AMD consiglia di verificare che la motherboard abbia un VRM adeguato. Un altro requisito è un firmware basato sull’AGESA 1.0.0.4B.
+Il prezzo di listino – esentasse – è di 749 dollari, 250 dollari in più dell’attuale top di gamma con 12 core e 24 thread Ryzen 9 3900X. AMD afferma che la nuova soluzione garantisce il 22% di prestazioni single-thread in più del Ryzen 7 2700X, validissimo top di gamma della scorsa generazione (oggi acquistabile a meno di 200 euro!).
+
+
+
+Per quanto riguarda il gaming – ambito dove Intel rivendica la scarsa necessità di CPU oltre gli 8 core -, il Ryzen 9 3950X offre prestazioni simili al 9900K di Intel, andando così a confermare le affermazioni della casa di Santa Clara. È tuttavia più veloce di un Core i9-9920X, CPU con 12 core di fascia HEDT.
+
+
+
+È nella produttività, ossia con i carichi in cui si muovono i creatori di contenuti, che il Ryzen 9 3950X promette faville con prestazioni mediamente superiori del 27% al Core i9-9920X e intorno al 50% in più rispetto al 9900K.
+AMD sottolinea altri due aspetti di questa CPU: il supporto al PCI Express 4.0 (utile soprattutto per le prestazioni di archiviazione sequenziali) e l’efficienza energetica, con prestazioni per watt 2,34 volte migliori rispetto al Core i9-9920X. Nonostante l’efficienza, la casa di Sunnyvale consiglia di raffreddare il 3950X con un dissipatore a liquido AIO da 280 mm o superiore. Nella scatola non vi sarà infatti alcun dissipatore boxato, diversamente dai modelli già sul mercato.
+
+
+
+Per la nuova CPU, AMD ha pensato di creare anche una Eco Mode che limita il TDP a 65 watt, al fine di consentire anche a chi ha un PC di dimensioni più minute di installare il processore. Secondo AMD con questa modalità si conservano fino al 77% delle prestazioni massime, la temperatura scende di 7 °C e il consumo si abbassa del 44%.
+La buona notizia è che questa Eco Mode sarà disponibile anche sulle altre CPU Ryzen 3000, previo update del BIOS all’AGESA 1.0.0.4B. Sarà quindi possibile impostare un TDP di 65 watt anche con le CPU da 95 watt, mentre le soluzioni da 65 watt potranno scendere a 45 watt. L’Eco Mode sarà accessibile dal software Ryzen Master.
+
+
+",it,"
+
+
+
+
+
+
+
+
+
+
+
+Ryzen 9 3950X, the CPU with 16 cores and 32 threads arrives on November 25th
+07 Nov 2019, 13:01 by Manolo De Agostini
+Ryzen 9 3950X will be available from November 25th. The new AMD mainstream flagship processor, with 16 cores and 32 threads, announced at E3 2019 and shifted with respect to the initial release date in September, is finally ready to ""shatter"" the market.
+
+
+
+AMD defines it as the ""most powerful 16-core desktop processor in the world"" and confirms the technical specifications already known: in addition to the aforementioned number of cores and threads, here is a base frequency of 3.5 GHz, a boost frequency of 4.7 GHz and a total of 72 MB of cache (L2 + L3), all in a TDP of 105 watts. The CPU is compatible with AM4 X570, X470 and B450 motherboards, although AMD recommends verifying that the motherboard has an adequate VRM. Another requirement is a firmware based on AGES 1.0.0.4B.
+The list price - tax-free - is $ 749, $ 250 more than the current top of the range with 12 cores and 24 Ryzen 9 threads 3900X. AMD states that the new solution guarantees 22% more single-threaded performance than the Ryzen 7 2700X, the very top of the range of the last generation (available today for less than 200 euros!).
+
+
+
+As for gaming - an area where Intel claims the low need for CPUs over 8 cores -, the Ryzen 9 3950X offers similar performance to Intel's 9900K, thus confirming the claims made by the Santa Clara company. However, it is faster than a Core i9-9920X, CPU with 12 HEDT core cores.
+
+
+
+It is in the productivity, that is with the loads in which the content creators move, that the Ryzen 9 3950X promises sparks with an average performance that is 27% higher than the Core i9-9920X and around 50% more than the 9900K.
+AMD emphasizes two other aspects of this CPU: support for PCI Express 4.0 (especially useful for sequential storage performance) and energy efficiency, with performance per watt 2.34 times better than the Core i9-9920X. Despite the efficiency, the Sunnyvale company recommends cooling the 3950X with a 280 mm AIO liquid cooler or higher. In the box there will in fact be no boxed heat sink, unlike the models already on the market.
+
+
+
+For the new CPU, AMD has decided to also create an Eco Mode that limits the TDP to 65 watts, in order to allow even those with a smaller PC to install the processor. According to AMD with this mode up to 77% of maximum performance is conserved, the temperature drops by 7 ° C and consumption is reduced by 44%.
+The good news is that this Eco Mode will also be available on the other Ryzen 3000 CPUs, after updating the BIOS to AGES 1.0.0.4B. It will therefore be possible to set a TDP of 65 watts even with the 95 watt CPUs, while the 65 watt solutions will be able to drop to 45 watts. The Eco Mode will be accessible from the Ryzen Master software.
+
+
+"

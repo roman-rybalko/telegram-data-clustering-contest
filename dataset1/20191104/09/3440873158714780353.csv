@@ -1,0 +1,102 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+""Бизнес должен содержать себя сам"". Зампред EFC о введении платы за портал госзакупок
+
+04 Nov 2019, 09:00
+
+С 1 января этого года в Казахстане введен в действие новый закон о государственных и квазигосударственных закупках. Изменениям, обещающим усовершенствовать область госфинансов, подвергся и сам электронный портал. Об итогах 10-летней работы, проблемах и планах портала ЭГЗ рассказал заместитель председателя ""Центра электронных финансов"", крупнейшего поставщика IT-решений для госорганов, Дархан Биржанов.
+TN : Как мы знаем, портал государственных закупок Республики Казахстан был запущен в 2009 году. Какие стадии развития он прошел за эти 10 лет? Как менялся и дополнялся его функционал?Дархан Биржанов:
+Вспомним хронологию исторических событий, когда у нас было газетное издание ""Бюллетень бухгалтера"", в котором публиковались объявления о госзакупках, а все процедуры государственных закупок осуществлялись строго в бумажном формате.
+С совершенствованием законодательства ""О государственных закупках"" и внедрением новых IT-технологий нами был создан первый портал, где были реализованы электронные объявления о госзакупках, а затем переведены в электронный формат первые закупки – способом запроса ценовых предложений. Это позволило потенциальным поставщикам с использованием электронной цифровой подписи подписывать ценовые предложения.
+После в 2011 году была закуплена зарубежная IT-платформа, на которой были запущены два способа закупок – конкурс и аукцион. Но по мере использования этого решения на практике мы увидели в нем технологические и функциональные ограничения.
+В связи с этим в 2015 году было принято решение, что портал требует реинжинирига с использованием технологий Open Source. И с 2016 года портал госзакупок функционирует на основе этой платформы.
+Сегодня у нас 100 процентов процедур закупок – все переведено в электронный формат. При этом мы автоматизировали не только процедуры госзакупок, а полностью автоматизировали процесс: от объявления о госзакупке до заключения договоров и подписания актов выполненных работ. Отмечаю, что для проверки квалификации поставщика реализовано порядка 20 интеграций с информационными системами государственных органов.
+TN : Насколько прозрачным стал процесс государственных закупок в стране с началом использования портала ЭГЗ?Дархан Биржанов:
+У нас есть статистика, что до 2016 года среднее количество потенциальных поставщиков, участвующих в конкурентной среде, составляло ~1,3 поставщика на один лот. По итогам 2018 года мы можем заявить, что эта цифра выросла до ~3,9 поставщика, участвующих в одном лоте, то есть четыре участника на конкурс. Это стало возможным благодаря проводимой Министерством финансов работе в части прозрачности закупочных процедур и исключения барьеров для бизнеса.
+С 2017 года введена специальная норма, согласно которой перед объявлением приема заявок на конкурс-аукцион осуществляется предварительное обсуждение конкурсной документации, где потенциальные поставщики, при наличии, видят так называемые заточки в технических спецификациях и могут подать электронную жалобу для проверяющих. При этом у ревизоров имеется техническая возможность на портале моментально отреагировать на жалобу посредством электронного камерального контроля без выезда к организатору госзакупки.
+В совокупности это позволяет исключить контакт ревизора с объектом контроля, предупреждая коррупционные риски.
+TN : Глава государства в своем Послании акцентировал внимание на высокой доле закупок способом из одного источника и поручил принять меры по снижению данного показателя. Как планируется это регулировать и насколько технически возможно в рамках портала ЭГЗ?Дархан Биржанов:
+Действительно, на конец 2018 года доля одного источника составила 65 процентов. Предвидя это, Минфин проводит работу по внесению изменений в законодательство. Во-первых, предполагается сокращение оснований заказчикам для закупок из одного источника. Сейчас действует порядка 50 оснований, позволяющих использовать закупки из одного источника, это в основном текущие расходы на закуп коммунальных, финансовых и иных услуг, где имеется естественная монополия. Кроме того, есть закупки из одного источника, которые закупаются у субъектов интеллектуальной собственности, у лиц, определенных законами, и других. Но есть большая часть закупок до 100 МРП, где заказчикам также позволительно закупать из одного источника. Здесь мы предложили норму ""Электронного магазина"", где заказчики могут покупать любые товары, но уже в конкурентной среде.
+
+
+
+TN : В чем была необходимость внедрения платы за использование веб-портала в этом году? Чему это поспособствовало и что изменилось в сравнении с прошлым годом?Дархан Биржанов:
+Давайте начнем с причин, почему портал госзакупок стал платным. Несмотря на то что портал был создан на бюджетные средства, на его содержание государство ежегодно тратило порядка 2 миллиардов тенге. Деньги шли на содержание серверов в дата-центрах, аренду вычислительных мощностей, контакт-центры, на техподдержку серверного и программного обеспечения. Мы ведь понимаем, что это деньги налогоплательщиков. И с учетом того, что у нас бюджет социально направленный, тратить деньги налогоплательщиков на содержание портала без разбора несправедливо. Ведь только бизнесмены извлекают выгоду или прибыль из участия в госзакупках! А как же те, кто не является таковыми?!
+Вместе с тем из года в год мы стали понимать, что не можем реализовать дополнительные ""фичи"" (feature, англ. – дополнительная возможность, фишка – прим. ред.). Причина – не пропишешь их в законе. К примеру, как можно прописать норму СМС-информирования потенциальных поставщиков"".
+Поэтому государство совместно с НПП ""Атамекен"" приняло решение: пусть бизнес сам содержит портал госзакупок и выдвигает требования по его совершенствованию.
+Для справедливости мы сделали дифференцированную тарификацию платности участия в госзакупках, разделив поставщиков на малый, средний и крупный бизнес. Малый бизнес, совершающий покупки до 1 миллиона тенге, платит 1 МРП в год. Следующие – по 10 МРП и, соответственно, выше в год. Эти две группы, участвующие до 10 миллионов тенге, занимают 70 процентов всех потенциальных поставщиков. 20 процентов – это участники закупок до 100 миллионов тенге. Оставшиеся 10 процентов участвуют в закупках на сумму свыше 100 миллионов тенге.
+Если говорить об изменениях, то это обновление серверного оборудования портала, которое было закуплено в 2011 году, функционирование круглосуточного контакт-центра, повышение KPI по доступности портала до 99 процентов. В ближайшее время мы запускаем СМС-информирование поставщиков о важных событиях по закупке, где он принимает участие, например, то, что его заявку отклонила конкурсная комиссия или он стал победителем конкурса и ему требуется подписать договор на портале.
+TN : Портал ЭГЗ генерирует большой объем данных, которые могут быть использованы в проведении аналитических и других исследований. Как обстоят дела с доступом к этим данным для сторонних организаций?Дархан Биржанов:
+С 2017 года мы запустили унифицированные сервисы, и 90 процентов данных портала госзакупок стало доступно любым организациям, желающим получить доступ к данным. Процесс организован так: организация пишет письмо-заявку с указанием цели в Минфин и в течение дня мы предоставляем доступ.
+На сегодня зарегистрировано более 150 пользователей, желающих получить данные. Постоянно этими данными пользуются 70 компаний: подразделения акиматов, квазисектор, проверяющие органы, бизнес. Вся информация публична.
+
+
+
+TN : Какие планы относительно портала государственных закупок РК? Что планируется изменить, будут ли новшества?Дархан Биржанов:
+Портал ЭГЗ уже стал частью бюджетного процесса. Мы создали прогнозную базу данных цен для использования в системе госпланирования. Иначе говоря, в будущем мы не будем позволять планировать выше, чем средние цены портала госзакупок. Второе – у нас в разработке есть один интересный проект ""База данных электронных паспортов товаров"". К слову, проект обещает создать настоящий бум интереса для бизнес-сообщества. Из предстоящих проектов на портале – это виртуальные помощники, которые появятся уже в первой половине будущего года; автоматизация части процессов закупок для квазисектора.
+TN : Расскажите подробнее о базе данных ""Электронные паспорта товаров"" (ЭТП).Дархан Биржанов:
+Эта база создается для способа закупок ""электронный магазин"" с целью снижения закупок из одного источника. Это аналог MarketPlace, где любые магазины будут размещать свои прайс-листы с фото, выбирая товарные позиции из каталога. По заданным характеристикам заказчикам будет предоставлена возможность приобрести товары через этот электронный магазин. Новшество, которое мы планируем запустить к июлю 2020 года, сократит долю одного источника по товарам. При этом в дальнейшем эту базу данных ЭТП мы будем распространять для рынка с целью создания ими новых сервисов для населения.
+
+
+",ru,"
+
+
+
+
+
+
+
+
+
+
+
+""A business must support itself."" EFC Deputy Chairman on the introduction of fees for the public procurement portal
+
+04 Nov 2019, 09:00
+
+Starting January 1 of this year, Kazakhstan introduced a new law on state and quasi-state procurements. The changes, promising to improve the field of public finances, have undergone the electronic portal itself. Darkhan Birzhanov, deputy chairman of the Center for Electronic Finance, the largest provider of IT solutions for government agencies, spoke about the results of 10 years of work, the problems and plans of the EGZ portal.
+TN: As we know, the government procurement portal of the Republic of Kazakhstan was launched in 2009. What stages of development has it gone through these 10 years? How did its functionality change and complement? Darkhan Birzhanov:
+Let us recall the chronology of historical events when we had the newspaper publication “Accountant's Bulletin”, in which public procurement announcements were published, and all public procurement procedures were carried out strictly in paper format.
+With the improvement of the law ""On Public Procurement"" and the introduction of new IT technologies, we created the first portal where electronic public procurement announcements were implemented, and then the first procurements were transferred to electronic format - by way of requesting price offers. This allowed potential suppliers using electronic digital signature to sign price offers.
+After in 2011, a foreign IT platform was purchased, on which two procurement methods were launched - a tender and an auction. But as we use this solution in practice, we saw technological and functional limitations in it.
+In this regard, in 2015, it was decided that the portal requires reengineering using Open Source technologies. And since 2016, the public procurement portal has been operating on the basis of this platform.
+Today we have 100 percent of procurement procedures - everything has been transferred to electronic format. At the same time, we automated not only public procurement procedures, but also completely automated the process: from the announcement of public procurement to the conclusion of contracts and the signing of acts of completion. I note that about 20 integrations with information systems of state bodies have been implemented to verify the qualifications of the supplier.
+TN: How transparent was the process of public procurement in the country with the start of using the EGZ portal? Darhan Birzhanov:
+We have statistics that, until 2016, the average number of potential suppliers participating in the competitive environment was ~ 1.3 suppliers per lot. According to the results of 2018, we can declare that this figure has grown to ~ 3.9 suppliers participating in one lot, that is, four participants for the competition. This was made possible thanks to the work carried out by the Ministry of Finance regarding transparency of procurement procedures and the elimination of barriers to business.
+Since 2017, a special norm has been introduced, according to which, before the announcement of the acceptance of applications for the competitive auction, a preliminary discussion of the tender documentation is carried out, where potential suppliers, if available, see the so-called sharpening in the technical specifications and can file an electronic complaint with the inspectors. At the same time, the auditors have the technical ability on the portal to immediately respond to the complaint through electronic cameral control without going to the organizer of public procurement.
+Together, this allows to exclude the contact of the auditor with the object of control, preventing corruption risks.
+TN: The Head of State in his Address focused on the high share of purchases from one source and instructed to take measures to reduce this indicator. How is it planned to regulate and how technically possible within the framework of the EGZ portal? Darkhan Birzhanov:
+Indeed, at the end of 2018, the share of one source amounted to 65 percent. Anticipating this, the Ministry of Finance is working to amend the legislation. Firstly, it is supposed to reduce the basis for customers to purchase from a single source. Now there are about 50 reasons that allow the use of procurement from a single source, these are mainly current expenses for the purchase of utilities, financial and other services, where there is a natural monopoly. In addition, there are purchases from one source, which are purchased from intellectual property subjects, from persons defined by laws, and others. But there is a large part of purchases up to 100 MCI, where customers are also allowed to purchase from one source. Here we proposed the norm of the ""Electronic Store"", where customers can buy any goods, but in a competitive environment.
+
+
+
+TN: What was the need to introduce a fee for using the web portal this year? What has contributed to this and what has changed compared to last year? Darkhan Birzhanov:
+Let's start with the reasons why the public procurement portal has become paid. Despite the fact that the portal was created with budgetary funds, the government spent about 2 billion tenge annually on its maintenance. The money went to the maintenance of servers in data centers, the rental of computing power, contact centers, technical support for server and software. We understand that this is taxpayer money. And given that we have a socially targeted budget, it’s unfair to spend taxpayer money on the content of the portal indiscriminately. After all, only businessmen profit or profit from participation in public procurement! But what about those who are not?
+At the same time, from year to year, we began to realize that we could not implement additional ""features"" (feature, English - an additional feature, a chip - approx.ed.). The reason - you will not write them in the law. For example, how can you set the standard for SMS informing potential suppliers. ""
+Therefore, the state, together with the Atameken NPP, decided: let the business itself contain a public procurement portal and put forward requirements for its improvement.
+To be fair, we made a differentiated tariffication of paid participation in public procurement, dividing suppliers into small, medium and large businesses. A small business that purchases up to 1 million tenge pays 1 MCI per year. The following - 10 MCI and, accordingly, higher per year. These two groups, participating up to 10 million tenge, occupy 70 percent of all potential suppliers. 20 percent are participants in purchases of up to 100 million tenge. The remaining 10 percent participate in procurement worth over 100 million tenge.
+If we talk about changes, this is an update of the portal server hardware, which was purchased in 2011, the operation of a round-the-clock contact center, and an increase in KPI in portal accessibility to 99 percent. In the near future we will launch SMS informing of suppliers about important procurement events, where he takes part, for example, that his bid was rejected by the tender committee or he became the winner of the tender and he needs to sign an agreement on the portal.
+TN: The EGZ portal generates a large amount of data that can be used in analytical and other studies. What about access to this data for third-party organizations? Darkhan Birzhanov:
+Since 2017, we launched unified services, and 90 percent of the data on the public procurement portal has become available to any organization that wants to access data. The process is organized as follows: the organization writes a letter of request indicating the purpose to the Ministry of Finance and during the day we provide access.
+To date, more than 150 users are registered who want to receive data. 70 companies constantly use this data: akimat units, quasi-sector, inspection bodies, and business. All information is public.
+
+
+
+TN: What are your plans for the Kazakhstan government procurement portal? What is planned to change, will there be innovations? Darkhan Birzhanov:
+The EGZ portal has already become part of the budget process. We have created a forecast price database for use in the state planning system. In other words, in the future we will not allow planning higher than the average prices of the government procurement portal. Secondly, we have one interesting project in development: ""Database of electronic passports of goods."" By the way, the project promises to create a real boom of interest for the business community. Of the upcoming projects on the portal, these are virtual assistants that will appear in the first half of next year; automation of part of the procurement processes for the quasisector.
+TN: Tell us more about the database ""Electronic Passports of Goods"" (ETP). Darkhan Birzhanov:
+This database is created for the procurement method ""electronic store"" in order to reduce purchases from a single source. This is an analogue of MarketPlace, where any stores will place their price lists with photos, choosing commodity items from the catalog. According to the specified characteristics, customers will be given the opportunity to purchase goods through this electronic store. The innovation that we plan to launch by July 2020 will reduce the share of one source for goods. Moreover, in the future we will distribute this database of ETP for the market in order to create new services for the population.
+
+
+"

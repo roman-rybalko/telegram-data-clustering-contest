@@ -1,0 +1,58 @@
+,src,lang,text
+0,"
+
+
+
+
+
+
+
+
+
+
+
+[Tech] 엔비디아, 초소형 엣지 AI 슈퍼컴퓨터 '젯슨 자비에 NX' 공개
+07 Nov 2019, 01:48 by 이두현 기자
+
+
+
+엔비디아가 엣지(edge)단의 로봇과 임베디드 컴퓨팅 디바이스를 위한 세계에서 가장 강력한 초소형 AI 슈퍼컴퓨터 ‘젯슨 자비에 NX(Jetson Xavier™ NX)’를 발표했다.
+신용카드 크기 보다도 작은 소형 폼팩터로 높은 에너지 효율성을 제공하는 젯슨 자비에 NX 모듈은 21 TOPS(초당 테라 연산)에 이르는 서버 수준의 성능을 제공해 최신 AI 워크로드를 실행한다. 반면, 전력 소비량은 불과 10와트 밖에 되지 않는다.
+젯슨 자비에 NX는 강력한 성능을 요구하면서도, 크기, 중량, 전력예산, 비용 등의 제약을 받는 임베디드 엣지 컴퓨팅 디바이스 분야에 새로운 지평을 열 것으로 기대된다. 여기에는 소형 상업용 로봇, 드론, 공장 물류 및 생산라인용 지능형 고해상도 센서, 광학검사, 네트워크 동영상 리코더, 휴대용 의료기기, 기타 산업용 IoT 시스템 등이 포함된다.
+디푸 탈라(Deepu Talla) 엔비디아 엣지 컴퓨팅 사업부 부사장 겸 총괄은 “AI는 업계를 혁신하는 최신 로봇과 임베디드 디바이스를 구현하는 기반이 됐다. 이 같은 디바이스들은 대부분 소형 폼팩터와 저전력을 기반으로 하기 때문에 AI기능을 추가하는데 제약이 많았다. 하지만, 젯슨 자비에 NX는 엔비디아 고객 및 파트너들이 디바이스의 크기나 전력 소모량을 늘리지 않고도 AI 성능을 획기적으로 높일 수 있도록 한다”고 설명했다.
+젯슨 자비에 NX는 10W로 최대 14 TOPS 또는 15W로 21 TOPS의 성능을 제공하여 여러 뉴럴 네트워크를 병렬로 처리할 뿐 아니라, 70mmx45mm 크기의 나노 폼팩터에서 다양한 고해상도 센서로부터 수집된 데이터를 동시에 처리한다. 또한, 이미 임베디드 머신을 개발중인 기업들을 위해 젯슨 자비에 NX는 모든 젯슨 제품군과 동일한 쿠다-X AI(CUDA-X AI™) 소프트웨어 아키텍처를 적용하여 시장출시 기간을 단축하고 개발 비용을 절감하도록 한다. 엔비디아의 단일 소프트웨어 아키텍처 접근방식의 일환으로, 젯슨 자비에 NX는 컴퓨터 비전, 컴퓨터 그래픽, 멀티미디어는 물론 복잡한 AI 네트워크와 딥러닝용 가속 라이브러리 등을 실행할 수 있는 완전한 AI 소프트웨어 스택인 엔비디아 젯팩(NVIDIA JetPack™) SDK가 지원된다.
+엔비디아는 최근 AI 훈련 벤치마크 테스트에서 높은 성능을 입증한데 이어, 데이터센터와 엣지에서 AI 추론 성능을 측정하는 5개 벤치마크 테스트 기준을 모두 충족했다. 업계 최초의 독립적인 AI 추론 벤치마크 테스트인 이번 MLPerf Inference 0.5의 결과는 데이터센터용 엔비디아 튜링(Turing) GPU와 엣지 컴퓨팅용 엔비디아 젯슨 자비에(Jetson Xavier) 시스템온칩(SoC)의 우수한 성능을 명확히 보여준다. 젯슨 자비에 NX 모듈은 해당 벤치마크에 사용된 자비에 SoC의 저전력 버전이다.
+젯슨 자비에 NX는 젯슨 나노(Jetson Nano™), 젯슨 AGX 자비에(Jetson AGX Xavier™) 시리즈와 젯슨 TX2 시리즈(Jetson TX2 series) 등이 포함된 젯슨 제품군의 최신 제품이다. 젯슨 자비에 NX는 고속 CSI와 PCIe에서 저속 I2C와 GPIO에 이르는 다양한 IO를 제공한다. 많은 주변기기 및 센서와의 호환성은 소형 폼팩터, 강력한 성능과 함께 임베디드 AI와 산업용 IoT 시스템에 새로운 능력을 제공할 것으로 기대된다.
+한편, 젯슨 자비에 NX는 젯슨 나노와 상호 핀 호환이 가능해 하드웨어 설계를 공유하고, 젯슨 나노의 캐리어 보드와 시스템을 젯슨 자비에 NX로 업그레이드할 수 있다. 이 외에도, 텐서플로우(TensorFlow), 파이토치(PyTorch), MxNet, 카페(Caffe) 등 모든 주요 AI 프레임워크를 지원한다.
+젯슨 자비에 NX는 대량생산 엣지 시스템을 개발하고자 하는 기업들을 위해 엔비디아의 유통채널을 통해 2020년 3월부터 399달러에 판매된다. 개발자들은 젯슨 자비에 NX를 본뜬 소프트웨어 패치가 포함된 젯슨 AGX 자비에 개발자 키트를 이용해 애플리케이션 개발을 시작할 수 있다.
+
+
+",ko,"
+
+
+
+
+
+
+
+
+
+
+
+NVIDIA Unveils Jetson Xavier NX
+07 Nov 2019, 01:48 by Lee Du-hyun
+
+
+
+NVIDIA unveils Jetson Xavier ™ NX, the world's most powerful miniature AI supercomputer for edge robots and embedded computing devices.
+Offering high energy efficiency in a small form factor smaller than a credit card size, the Jetson Xavier NX module delivers server-level performance of up to 21 TOPS (Tera Operations per Second) to run the latest AI workloads. On the other hand, power consumption is only 10 watts.
+Jetson Xavier NX is expected to open new horizons for embedded edge computing devices that demand strong performance and are constrained by size, weight, power budget and cost. This includes small commercial robots, drones, intelligent high-resolution sensors for factory logistics and production lines, optical inspection, network video recorders, portable medical devices, and other industrial IoT systems.
+""AI has been the foundation for implementing the latest robots and embedded devices that revolutionize the industry,"" said Depu Talla, vice president and general manager of NVIDIA Edge Computing. Many of these devices were based on small form factors and low power, which made it difficult to add AI functionality. However, Jetson Xavier NX enables NVIDIA customers and partners to dramatically increase AI performance without increasing device size or power consumption. ”
+Jetson Xavier NX offers performance of up to 14 TOPS at 10W or 21 TOPS at 15W, processing multiple neural networks in parallel, and simultaneously processing data collected from various high-resolution sensors in a 70mmx45mm nano form factor. For companies already developing embedded machines, Jetson Xavier NX employs the same CUDA-X AI ™ software architecture as all Jetson product lines, helping to reduce time-to-market and development costs. As part of NVIDIA's single software architecture approach, Jetson Xavier NX is the NVIDIA JetPack ™, a complete AI software stack that can run computer vision, computer graphics and multimedia, as well as complex AI networks and accelerated libraries for deep learning. ) SDK is supported.
+NVIDIA has recently demonstrated high performance in AI training benchmark tests, and has met all five benchmark tests that measure AI inference performance at data centers and edges. MLPerf Inference 0.5, the industry's first independent AI inference benchmark test, demonstrates the superior performance of NVIDIA Turing GPUs for data centers and NVIDIA Jetson Xavier System-on-Chip (SoC) for edge computing. . The Jetson Xavier NX module is a low-power version of the Xavier SoC used in the benchmark.
+Jetson Xavier NX is the latest addition to the Jetson family of products, including the Jetson Nano ™, the Jetson AGX Xavier ™ series and the Jetson TX2 series. Jetson Xavier NX offers a wide range of IOs, from high-speed CSI and PCIe to low-speed I2C and GPIO. Compatibility with many peripherals and sensors is expected to bring new capabilities to embedded AI and industrial IoT systems with small form factors and robust performance.
+Meanwhile, the Jetson Xavier NX is pin-compatible with the Jetson Nano to share hardware designs and upgrade the Jetson Nano's carrier boards and systems to the Jetson Xavier NX. In addition, it supports all major AI frameworks, including TensorFlow, PyTorch, MxNet, and Caffe.
+Jetson Xavier NX will be available from March 2020 for $ 399 through NVIDIA's distribution channel for companies seeking to develop mass production edge systems. Developers can start developing applications using the Jetson AGX Xavier Developer Kit, which includes software patches that mimic NX in Jetson Xavi.
+
+
+"
