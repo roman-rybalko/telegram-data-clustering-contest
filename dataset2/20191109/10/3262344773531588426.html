@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://www.dday.it/redazione/33015/pixel-4-la-verita-sullassenza-del-4k-a-60-fps-non-e-per-lo-spazio-e-un-limite-tecnico"/>
+    <meta property="og:site_name" content="DDay.it"/>
+    <meta property="article:published_time" content="2019-11-09T10:58:00+00:00"/>
+    <meta property="og:title" content="Pixel 4, la verità sull'assenza del 4K a 60 fps. Non è per lo spazio, è un limite tecnico"/>
+    <meta property="og:description" content="Il consumo di spazio sembra essere la giustificazione commerciale alla mancanza del 4K a 60 fps sul Pixel 4. In realtà la vera motivazione è tecnica."/>
+  </head>
+  <body>
+    <article>
+      <h1>Pixel 4, la verità sull'assenza del 4K a 60 fps. Non è per lo spazio, è un limite tecnico</h1>
+      <h2>Il consumo di spazio sembra essere la giustificazione commerciale alla mancanza del 4K a 60 fps sul Pixel 4. In realtà la vera motivazione è tecnica.</h2>
+      <address><time datetime="2019-11-09T10:58:00+00:00">09 Nov 2019, 10:58</time> by <a rel="author">Roberto Pezzali</a></address>
+      <p>L’assenza del 4K a 60 fps sui Google Pixel ha fatto discutere, e Google si è giustificata dicendo che quel formato viene poco usato, oltre a consumare molto spazio. Ora si scopre che la motivazione può anche essere questa, ma che c’è anche un limite tecnico che impedisce al Pixel di registrare a 4K@60: <b>il processore non riesce a farlo se si vogliono mantenere alcuni benefici. </b></p>
+      <p>Lo hanno notato alcuni sviluppatori che, dopo aver effettuato il root del dispositivo, hanno provato ad aggiungere il 4K a 60 fps all’interno della GCam. Si può, l’opzione compare ma <b>le registrazioni non arrivano a 60 fps, si fermano prima, circa a 38 fps</b>. Com’è possibile questo? Abbiamo cercato di capirlo.</p>
+      <p>Google ha dovuto fare una scelta: fornire il 4K a 60 fps con la sola fotocamera principale oppure fare agli utenti uno zoom fluido da 1x a 5x anche quando si registra un video. Ed effettivamente, quando si prova a registrare un video con il Pixel, <b>lo zoom si può usare senza interruzioni passando da una camera all’altra.</b> </p>
+      <p>Per fare questo i due moduli fotocamera devono essere collegati contemporaneamente, e il processore Spectra 380 dello Snapdragon 855 <b>non può gestire più di 22 megapixel in modalità dual camera a 30 fps.</b></p>
+      <figure>
+        <img src="https://cdn.dday.it/system/uploads/picture/image/58551/content_small_Schermata_2019-11-09_alle_10.59.28.png"/>
+      </figure>
+      <p>Google deve usare due camere in contemporanea, cosa necessaria per poter fornire uno zoom seamless senza staccare i due flussi, quindi deve usare la modalità Dual Camera dello Spectra 380 e non può passare un limite prefissato. Per capirlo bastano un paio di semplici calcoli.</p>
+      <p>Partiamo dalla banda necessaria per registrare in 4K@60 fps con entrambe le camere connesse: se moltiplichiamo 3840 x 2160, che è la risoluzione, per i 60 frame al secondo escono <b>497.664.000</b>, questi sono i milioni di pixel che arrivano da una singola camera. Due fotocamere a 4K@60 connesse insieme inviano allo allo Spectra 380 quasi un miliardo di pixel al secondo, 995.328.000 per la precisione. E non riesce a gestirli, perché può supportare al massimo 22 megapixel a 30 fps, e il calcolo (22.000.000 x 30) restituisce <b>660.000.000. </b></p>
+      <p>Il numero massimo di fotogrammi al secondo che si possono gestire è circa 38: 3840 x 2160 x 38, moltiplicato per le due fotocamere, come risultato restituisce <b>630.374.400</b>, siamo al limite della capacità di banda dell'Image Processor dello Snapdragon.</p>
+      <p>Google poteva offrire la registrazione 4K@60 fps solo disabilitando lo zoom senza interruzioni da una camera all’altra, e ha scelto di non farlo. Apple lo ha fatto invece:<b> l’iPhone 11 Pro ha lo zoom “seamless”, quindi senza interruzioni, solo quando si registra a 4K@30 o a risoluzioni inferiori.</b> Se si usa il 4K a 60 fps non si può sfruttare la funzionalità, i moduli fotografici vengono gestiti singolarmente e un modulo viene spento in prossimità del cambio di zoom per attivare il modulo successivo. </p>
+      <figure>
+        <iframe src="https://www.youtube.com/embed/aDpP-PrZvY0" width="640" height="360" data-service="Youtube" scrolling="no"/>
+      </figure>
+      <p>Spesso gli utenti criticano le scelte delle aziende, ma in molti casi ci sono motivazioni tecniche dietro alcune scelte, e questo è uno. Si poteva fare, ma si perdeva una funzione che forse ad alcuni interessava di più.</p>
+    </article>
+  </body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://www.heise.de/developer/meldung/Das-Warten-hat-ein-Ende-Rust-1-39-erhaelt-planmaessig-async-await-Feature-4582294.html"/>
+    <meta property="og:site_name" content="Developer"/>
+    <meta property="article:published_time" content="2019-11-08T10:34:00+00:00"/>
+    <meta property="og:title" content="Das Warten hat ein Ende: Programmiersprache Rust 1.39 erhält async/await-Feature"/>
+    <meta property="og:description" content="Die neue Version von Mozillas Programmiersprache Rust kann dank async/await nun asynchrone, nichtblockende Funktionen verwenden."/>
+  </head>
+  <body>
+    <article>
+      <h1>Das Warten hat ein Ende: Programmiersprache Rust 1.39 erhält async/await-Feature</h1>
+      <h2>Die neue Version von Mozillas Programmiersprache Rust kann dank async/await nun asynchrone, nichtblockende Funktionen verwenden.</h2>
+      <address><time datetime="2019-11-08T10:34:00+00:00">08 Nov 2019, 10:34</time> by <a rel="author">Björn Bohn</a></address>
+      <p>Pünktlich zum geplanten Erscheinungsdatum hat Mozilla mit Rust 1.39 die neue Version der Programmiersprache veröffentlicht. Die größte Änderung ist dabei keine Überraschung mehr: Wie bereits <a href="https://www.heise.de/meldung/Programmiersprache-async-await-Feature-landet-in-Rust-4543647.html">vor gut einem Monat angekündigt</a>, erhält das Pattern async/await Einzug in die Syntax der Sprache. Damit reiht sich Rust neben Sprachen wie C#, Python, Dart, Kotlin oder JavaScript ein, die das Konzept der nebenläufigen Programmierung bereits umgesetzt haben. Darüber hinaus haben die Entwickler an den <code>match</code>-Ausdrücken gearbeitet und das Zusammenspiel zwischen Attributes und Funktionsparametern verbessert.</p>
+      <h3>So funktioniert async/await in Rust</h3>
+      <p>Vereinfacht gesagt dient async/await dazu, Funktionen zu pausieren und später wieder aufzugreifen. So können Programme beispielsweise Code ausführen, während der ursprüngliche Code auf dessen Ausführung wartet. Um das Feature zu nutzen, müssen Entwickler <code>async fn</code> anstelle von <code>fn</code> schreiben:</p>
+      <pre>async fn first_function() -&gt; u32 { .. }</pre>
+      <p>Die Funktion hat keine direkte Auswirkung, sondern gibt ein Future zurück, das darauf wartet, ausgeführt zu werden. Dazu dient dann der Operator <code>.await</code>:</p>
+      <pre>async fn another_function() {<br/>    // Create the future:<br/>    let future = first_function();<br/><br/>    // Await the future, which will execute it (and suspend<br/>    // this function if we encounter a need to wait for I/O): <br/>    let result: u32 = future.await;<br/>    ...<br/>}</pre>
+      <p>Anders als bei anderen Sprachen schreibt man in Rust <code>future.await</code> statt <code>await future</code>, da dies laut den Rust-Entwicklern besser mit dem <code>?</code>-Operator harmoniert. Weitere Informationen zu async/await bietet <a href="https://blog.rust-lang.org/2019/11/07/Async-await-stable.html">ein spezieller Blogbeitrag des Rust-Teams</a>.</p>
+      <h3>Änderungen bei match und Attributes für Funktionsparameter</h3>
+      <p>Zuvor hatte Rust es nicht gestattet, gemeinsame Referenzen auf by-move-Bindings in den <code>if</code>-Guards von <code>match</code>-Ausdrücken zu verwenden. Folglich kam es bei einigen Codebeispielen zu Fehlern, die Rust in Version 1.39 nun aber nicht mehr aufwirft. Dadurch erhofft sich das Rust-Team eine konsistentere Nutzererfahrung mit <code>match</code>.</p>
+      <p>Außerdem können Attribute in Rust 1.39 nun auf Funktionen, Closures und Function Pointer angewendet werden. Eine vollständige <a href="https://blog.rust-lang.org/2019/11/07/Rust-1.39.0.html">Liste der Neuerungen findet sich im Blogbeitrag zum Release</a>.</p>
+      <p>
+        <i>Siehe dazu auf heise Developer:</i>
+      </p>
+      <ul>
+        <li>
+          <a href="https://www.heise.de/developer/artikel/Rust-als-sichere-Programmiersprache-fuer-systemnahe-und-parallele-Software-4155591.html">Rust als sichere Programmiersprache für systemnahe und parallele Software</a>
+        </li>
+        <li>
+          <a href="https://www.heise.de/developer/artikel/Task-und-Datenparallelitaet-mit-Rust-4452915.html">Task- und Datenparallelität mit Rust</a>
+        </li>
+        <li>
+          <a href="https://www.heise.de/developer/artikel/Jan-Erik-Rediger-Entwickler-aus-allen-Programmiersprachen-kommen-zu-Rust-4440960.html">Jan-Erik Rediger: Entwickler aus allen Programmiersprachen kommen zu Rust</a>
+        </li>
+      </ul>
+      <p>(<a href="mailto:bbo@ix.de">bbo</a>)</p>
+    </article>
+  </body>
+</html>

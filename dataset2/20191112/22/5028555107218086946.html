@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://arstechnica.com/gadgets/2019/11/how-plume-convinces-big-isps-to-use-its-wi-fi-hardware/"/>
+    <meta property="og:site_name" content="Ars Technica"/>
+    <meta property="article:published_time" content="2019-11-12T22:23:21+00:00"/>
+    <meta property="og:title" content="How does Plume get all these ISP partnerships? Open source software"/>
+    <meta property="og:description" content="Simplified device management might be more attractive than Wi-Fi mesh itself."/>
+  </head>
+  <body>
+    <article>
+      <h1>How does Plume get all these ISP partnerships? Open source software</h1>
+      <h2>Simplified device management might be more attractive than Wi-Fi mesh itself.</h2>
+      <address><time datetime="2019-11-12T22:23:21+00:00">12 Nov 2019, 22:23</time> by <a rel="author">Jim Salter</a></address>
+      <slideshow>
+        <figure>
+          <img src="https://cdn.arstechnica.net/wp-content/uploads/2019/11/opensync-cloud-diagram-1.png"/>
+          <figcaption>This is the most basic overview of what OpenSync is and where it fits in a network diagram—it's a bridge from Wi-Fi devices to a cloud-based management and control system. <a href="https://www.plume.com/">Plume</a></figcaption>
+        </figure>
+        <figure>
+          <img src="https://cdn.arstechnica.net/wp-content/uploads/2019/11/opensync-diagram-2.png"/>
+          <figcaption>This slightly more detailed version of the OpenSync network diagram shows individual devices connected via a gateway device to a cloud controller. It also shows "management" connected to the controller—largely meaning a virtual NOC can be accessed by supporting technicians and engineers using a Web UI or mobile app front end. <a href="https://www.plume.com/">Plume</a></figcaption>
+        </figure>
+        <figure>
+          <img src="https://cdn.arstechnica.net/wp-content/uploads/2019/11/opensync-diagram-3.png"/>
+          <figcaption>OpenSync blends telemetry, control, and networking into a tasty network bouillabaisse built on MQTT, Protobuf, OVSDB, and Open vSwitch. <a href="https://www.plume.com/">Plume</a></figcaption>
+        </figure>
+      </slideshow>
+      <p>Yesterday, Charter Communications*—the second-largest ISP in the United States—<a href="https://newsroom.charter.com/press-releases/charter-adopts-opensync-the-fastest-growing-open-sourced-framework-for-spectrums-advanced-in-home-wifi/">announced</a> its adoption of the OpenSync software platform for Spectrum's advanced in-home Wi-Fi. This raises a few questions, first of which is "what's OpenSync?"</p>
+      <p>The short answer is "Plume," which in turn means that Plume now has partnerships with the first- and second-largest ISPs in the United States, as well as the first- and second-largest in Canada—and also with the National Cable Television Collective (<a href="https://www.nctconline.org/index.php/about-nctc">NCTC</a>), a membership organization comprising several hundred independent US cable companies.</p>
+      <p>Earlier this month, we <a href="https://arstechnica.com/gadgets/2019/11/plume-takes-another-step-toward-fixing-isps-crappy-wi-fi-worldwide/">covered</a> the announcement of a Plume partnership with J:COM, Japan's largest ISP. In that coverage, we referenced tighter integration into ISPs' existing infrastructure than better-known mesh alternatives such as Eero, Google (now <a href="https://arstechnica.com/gadgets/2019/11/ars-puts-googles-new-nest-wi-fi-to-the-test/">Nest</a>) Wi-Fi, or Orbi can provide. OpenSync is where that tighter integration comes from.</p>
+      <h3>It’s all about the cloud</h3>
+      <p>From its infancy, Plume has insisted that its cloud optimizer is the magic sauce that makes its little pods great. The cloud optimizer uses machine-learning techniques to analyze telemetry from customer-deployed pod and superpod networks. The optimizer determines which topologies and which uses of Wi-Fi channels are optimal to support each customer's client devices in that customer's specific environment.</p>
+      <p>The cloud optimizer can route around congestion from neighboring networks as well as minimize its own congestive problems. The cloud optimizer—and its massive ingestion of client telemetry—also gives Plume information about broad classes of device, identifiable by BSSID or MAC address, that have consistent problems of their own. This has enabled the company to create proprietary, device-specific rulesets for devices such as iPhones and iPads that tend to have particular problems with common Wi-Fi issues such as roaming or use of DFS spectrum.</p>
+      <figure>
+        <img src="https://cdn.arstechnica.net/wp-content/uploads/2018/06/plume-superpods-NOC-postDFS-cropped.png"/>
+        <figcaption>Plume's cloud optimizer makes predictions about near-future service needs based on telemetry taken from its Wi-Fi pods, and it changes the pods' configuration accordingly.<br/>Plume</figcaption>
+      </figure>
+      <p>This does help make your Wi-Fi better, but from an ISP's perspective, that's just a bonus. The real value proposition for ISPs is better support, with faster and cheaper ISP development pipelines. Plume's virtual NOC makes it easy for a support technician to see just what's going on in a customer's network and, therefore, make helpful and accurate assessments about problems. If a customer calls in to complain that their Apple TV, Fire Stick, or Roku keeps buffering, a technician can see at a glance whether the problem is low signal strength or congestion, and they can offer advice accordingly.</p>
+      <h3>Connecting all the things</h3>
+      <p>Fitting existing cable modems and routers into this kind of enhanced support infrastructure is a big challenge for an ISP. It's one thing to offer pods (or Eero routers and beacons) to customers, but it's another thing entirely to blend that infrastructure in seamlessly with the existing Wi-Fi capabilities of the hundreds of thousands—or millions—of existing cable or DSL modem/router gateways the company has already deployed.</p>
+      <p>ISPs don't want to have to support two different infrastructures—a "basic" one for "just the modem" customers and an "advanced" one for customers who paid a little extra for mesh. ISPs also don't want to leave money on the table by disabling perfectly capable Wi-Fi APs built into their gateway devices and plugging in a separate "router" device where the modem/gateway already is. That's where OpenSync comes in.</p>
+      <p>Plume has always envisioned its cloud infrastructure being largely hardware-independent and able to use non-Plume hardware as additional access points in a Plume network. In its earlier days of building ISP partnerships, the company offered to do the software integration—building its front end into the firmware on ISPs' modems and gateway devices—directly. This created a significant pain point, as there were intellectual property concerns involved on both sides.</p>
+      <p>In response, Plume re-developed OpenSync as a more generic front-end framework, and it offered the entire codebase directly to its partners. This allowed ISPs to do their own integration into firmware, solving two problems—the ISPs no longer needed to develop and maintain massive cloud infrastructure to manage and support their customers' Wi-Fi effectively, and they no longer needed to do anywhere near as much firmware customization on each new model of gateway device.</p>
+      <h3>Hedging bets and increasing adoption with OSS</h3>
+      <p>Releasing Plume's front end as open source software (OSS) does more than accelerate the development pipeline for ISPs. It also overcomes a potential objection to adoption—vendor lock-in.</p>
+      <p>Plume's tentacles aren't just spreading into major ISPs—they're even reaching Wi-Fi chipset vendors themselves. OpenSync is being adopted into <a href="https://wiki.rdkcentral.com/display/RDK/RDK-B+Overview">RDK-B</a>, the Reference Design Kit for Broadband. RBK-B is itself a collaborative open source initiative designed to standardize software functionality in modem and gateway devices, spearheaded by Arris and Cisco. OpenSync is also finding its way into Wi-Fi SoCs themselves, such as Quantenna's <a href="https://www.globenewswire.com/news-release/2019/02/25/1741250/0/en/Quantenna-and-Plume-Showcase-World-s-First-OpenSync-Wi-Fi-6-Integration-at-MWC.html">QSR5GU-AX Plus</a>, a Wi-Fi 6 SoC released earlier this year.</p>
+      <p>This wouldn't likely be possible without the assurances against vendor lock-in that open source software provides. Plume CEO Fahri Diner told Ars on a call that "Plume wants to be friends with everybody," meaning in part that the company envisions itself as providing Wi-Fi support infrastructure for as many organizations as possible. Opening up the software and APIs necessary for both the front end and back end of the cloud infrastructure connection makes this considerably more feasible.</p>
+      <p>Although Plume is currently the only big cloud infrastructure you can connect an OpenSync-enabled client to, that won't be the case forever. In the call, Diner alluded to at least one organization that's currently building out a back-end infrastructure that can be connected to with the OpenSync front end. Diner doesn't see this as a threat—or at least, not enough of a threat to offset the obvious advantages of reference software frameworks and even Wi-Fi SoCs that can be connected to Plume's cloud just by dropping in a couple of lines in a config file.</p>
+      <h3>Is it really open source?</h3>
+      <figure>
+        <img src="https://cdn.arstechnica.net/wp-content/uploads/2019/11/opensync-license.png"/>
+        <figcaption>OpenSync is released under the BSD 3-clause license. Effectively, this license makes the software itself available while protecting the project's branding.<br/>Jim Salter</figcaption>
+      </figure>
+      <p>OpenSync is <a href="https://github.com/plume-design/opensync/">available</a> under the BSD <a href="https://choosealicense.com/licenses/bsd-3-clause/">3-Clause</a> license. This is an Open Source Initiative-<a href="https://opensource.org/licenses/BSD-3-Clause">approved</a> open source license which falls into the general category of "weak" OSS licenses. That means, in effect, that modifications made to the original project are not required to be open source themselves. A weakly licensed project can even be redistributed as fully proprietary software, with no distribution of or access to the source code required.</p>
+      <p>Unlike the more-popular MIT <a href="https://choosealicense.com/licenses/mit/">license</a>, the BSD 3-clause license specifically protects the original project's branding. Redistribution of the original project requires the retention of the original copyright notice, in both source code and documentation, while also restricting redistributors from promoting derived products without explicit written consent from the project owners.</p>
+      <p>
+        <i>* The Advance/Newhouse Partnership, which owns 13 percent of Charter, is part of Advance Publications. Advance Publications owns Condé Nast, which owns Ars Technica.</i>
+      </p>
+      <p>
+        <i>Listing image by Plume</i>
+      </p>
+      <related>
+        <h4>Further Reading</h4>
+        <a href="https://arstechnica.com/information-technology/2019/10/is-the-software-world-taking-too-much-from-the-open-source-community/"/>
+      </related>
+    </article>
+  </body>
+</html>

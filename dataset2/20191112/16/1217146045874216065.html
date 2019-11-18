@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://www.bleepingcomputer.com/news/security/mcafee-patches-privilege-escalation-flaw-in-antivirus-software/"/>
+    <meta property="og:site_name" content="BleepingComputer"/>
+    <meta property="article:published_time" content="2019-11-12T16:00:00+00:00"/>
+    <meta property="og:title" content="McAfee Patches Privilege Escalation Flaw in Antivirus Software"/>
+    <meta property="og:description" content="McAfee patched a security vulnerability discovered in all editions of its Antivirus software for Windows and enabling potential attackers to escalate privileges and execute code using SYSTEM privileges."/>
+  </head>
+  <body>
+    <article>
+      <h1>McAfee Patches Privilege Escalation Flaw in Antivirus Software</h1>
+      <address><time datetime="2019-11-12T16:00:00+00:00">12 Nov 2019, 16:00</time> by <a rel="author" href="https://www.bleepingcomputer.com/author/sergiu-gatlan/" target="_blank">Sergiu Gatlan</a></address>
+      <figure>
+        <img src="https://www.bleepstatic.com/content/hl-images/2019/07/10/mcafee-header.jpg"/>
+      </figure>
+      <p>McAfee patched a security vulnerability discovered in all editions of its Antivirus software for Windows and enabling potential attackers to escalate privileges and execute code using SYSTEM privileges.</p>
+      <p>McAfee Total Protection (MTP), McAfee Anti-Virus Plus (AVP), and McAfee Internet Security (MIS) up to and including 16.0.R22 are all impacted by this local privilege escalation (LPE) bug.</p>
+      <h3>Privilege escalation bug patched by McAfee</h3>
+      <p>The LPE flaw now tracked as <a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-3648">CVE-2019-3648</a> requires attackers to have Administrator privileges for exploitation according to SafeBreach Labs security researcher Peleg Hadar who discovered the vulnerability.</p>
+      <p>While the level of severity for this type of security is not immediately obvious, they usually receive medium and high severity CVSS 3.x base scores [<a href="https://nvd.nist.gov/vuln/detail/CVE-2019-17093">1</a>, <a href="https://nvd.nist.gov/vuln/detail/CVE-2019-17093">2</a>].</p>
+      <p>Threat actors regularly exploit DLL search-order hijacking flaws such as this as part of later stages of attacks after a machine was already infiltrated, when needing to elevate permissions to establish persistence and further compromise the targeted machine.</p>
+      <p>After exploitation, it can be used "to bypass McAfee’s Self-Defense mechanism; and achieve defense evasion and persistence by loading an arbitrary unsigned DLL into multiple services that run as NT AUTHORITY\SYSTEM," Hadar says.</p>
+      <p>The company is <a href="https://service.mcafee.com/webcenter/portal/cp/home/articleview?articleId=TS102984">rolling out the 16.0.R22 Refresh 1 version</a> which addresses the issue <a href="https://safebreach.com/Post/McAfee-All-Editions-MTP-AVP-MIS-Self-Defense-Bypass-and-Potential-Usages-CVE-2019-3648">says the SafeBreach Labs security researcher in his report</a>.</p>
+      <h3>Arbitrary unsigned DLL loading from CWD</h3>
+      <p>The SafeBreach Labs researcher says that CVE-2019-3648 is caused because the antivirus solution is attempting to load a DLL from its current working directory (CWD) instead of its actual location and by not validating if the DLLs it's trying to load is signed with a digital certificate.</p>
+      <p>Hadar found that the McAfee software running as NT AUTHORITY\SYSTEM tries to import the wbemcomn.dll from its CWD, the C:\Windows\System32\Wbem directory, instead of its actual location, in the System32 folder.</p>
+      <figure>
+        <img src="https://www.bleepstatic.com/images/news/u/1109292/November%202019/Loading%20an%20arbitrary%20unsigned%20DLL.png"/>
+      </figure>
+      <p>By abusing this bug, one could easily load an arbitrary unsigned DLL into these processes if already has Administrator privileges on the system, thus bypassing McAfee Antivirus' self-defense mechanism.</p>
+      <p>As part of a proof-of-concept demonstration, Hadar was able to implant an unsigned proxy DLL in the C:\Windows\System32\Wbem folder, load it, and execute it within several McAfee signed processes as NT AUTHORITY\SYSTEM, bypassing the self-defense mechanism of the McAfee Antivirus just as expected.</p>
+      <figure>
+        <img src="https://www.bleepstatic.com/images/news/u/1109292/November%202019/Proof%20of%20concept.png"/>
+      </figure>
+      <p>"The vulnerability gives attackers the ability to load and execute malicious payloads using multiple signed services, within the context of McAfee’s signed processes," Hadar says.</p>
+      <p>"This ability might be abused by an attacker for different purposes such as execution and evasion, for example: Application Whitelisting Bypass. The antivirus might not detect the attacker’s binary, because it tries to load it without any verification against it."</p>
+      <p>Exploiting the CVE-2019-3648 bug on devices running unpatched versions of McAfee Antivirus could also allow attackers to load and launch malicious payloads each time the McAfee services are loading, gaining persistence between system restarts.</p>
+      <p>More details on how the vulnerability was discovered, a detailed analysis of its root cause, and a full disclosure timeline are available at the end of the SafeBreach Labs report.</p>
+      <h3>More LPE flaws reported to security vendors</h3>
+      <p>This is not the first local privilege escalation security issue Hadar reported to a security vendor, since he also found more affecting <a href="https://www.bleepingcomputer.com/news/security/trend-micro-fixes-privilege-escalation-bug-in-password-manager/">Trend Micro's Password Manager</a>, <a href="https://www.bleepingcomputer.com/news/security/check-point-patches-privilege-escalation-flaw-in-endpoint-client/">Check Point Software's Endpoint Security Initial Client</a>, <a href="https://www.bleepingcomputer.com/news/security/bitdefender-fixes-privilege-escalation-bug-in-free-antivirus-2020/">the free version of Bitdefender Antivirus</a>, <a href="https://safebreach.com/Post/Avira-Antivirus-2019-4-Services-DLL-Preloading-and-Potential-Abuses-CVE-2019-17449">Avira's Antivirus 2019 software</a>, and <a href="https://safebreach.com/Post/Avast-Antivirus-AVG-Antivirus-DLL-Preloading-into-PPL-and-Potential-Abuses">Avast Software's AVG Antivirus and Avast Antivirus</a>.</p>
+      <p>Each of them could be exploited by attackers to drop and execute malicious payloads in a persistent way, as well as evading detection during later stages of an attack on machines running unpatched software.</p>
+      <p>Trend Micro, Check Point Software, Bitdefender, Avira, and Avast patched the security flaws (tracked as CVE-2019-14684, CVE-2019-8461, CVE-2019-15295, CVE-2019-17449, and  CVE-2019-17093) after receiving Hadar's disclosure report, with users receiving the security updates via the automatic update features built within the apps.</p>
+    </article>
+  </body>
+</html>

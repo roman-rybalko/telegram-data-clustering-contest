@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://www.zdnet.com/article/windows-linux-get-options-to-disable-intel-tsx-to-prevent-zombieload-v2-attacks/"/>
+    <meta property="og:site_name" content="ZDNet"/>
+    <meta property="article:published_time" content="2019-11-14T14:44:43+00:00"/>
+    <meta property="og:title" content="Windows &amp; Linux get options to disable Intel TSX to prevent Zombieload v2 attacks"/>
+    <meta property="og:description" content="Disclosure of new Zombieload v2 vulnerability prompts OS makers to react with ways to disable Intel's TSX technology."/>
+  </head>
+  <body>
+    <article>
+      <h1>Windows &amp; Linux get options to disable Intel TSX to prevent Zombieload v2 attacks</h1>
+      <address><time datetime="2019-11-14T14:44:43+00:00">14 Nov 2019, 14:44</time> by <a rel="author" href="https://www.zdnet.com/meet-the-team/us/catalin.cimpanu/" target="_blank">Catalin Cimpanu</a></address>
+      <p>
+        <b>Disclosure of new Zombieload v2 vulnerability prompts OS makers to react with ways to disable Intel's TSX technology.</b>
+      </p>
+      <figure>
+        <img src="https://zdnet1.cbsistatic.com/hub/i/2019/02/12/c46abe6a-1a68-4029-9424-9f318b67e367/e08a3129c61292966e8ec48257dfcad2/intel.jpg"/>
+      </figure>
+      <p>Both Microsoft and the Linux kernel teams have added ways to disable support for Intel Transactional Synchronization Extensions (TSX).<br/><br/>TSX is the Intel technology that opens the company's CPUs to attacks via the Zombieload v2 vulnerability.<br/><br/><a href="https://www.zdnet.com/article/intels-cascade-lake-cpus-impacted-by-new-zombieload-v2-attack/">Zombieload v2</a> is the codename of a vulnerability that allows malware or a malicious threat actor to extract information processed inside a CPU, information to which they normally shouldn't be able to access due to the security walls present inside modern-day CPUs.<br/><br/>This new vulnerability was disclosed earlier this week. Intel said it would release microcode (CPU firmware) updates -- available on the company's <a href="https://www.intel.com/content/www/us/en/support.html">Support &amp; Downloads center</a>.<br/><br/>But, the reality of a real-world production environment is that performance matters. Past microcode updates for other attacks, such as Meltdown, Spectre, Foreshadow, Fallout, and Zombieload v1, have been known to introduce performance hits of up to 40%.</p>
+      <p>Seeing that all the CPU attacks listed above are not only theoretical but also hard to pull off, some companies don't see this performance hit as an option.<br/><br/>Many skip on applying the microcode updates, or even if they do, they also disable the technology that allows the attack surface, if they're not using it, just to be sure they're not impacted by any attacks or performance slowdowns.</p>
+      <p>Earlier this week, Microsoft published <a href="https://support.microsoft.com/en-us/help/4531006/guidance-for-disabling-intel-transactional-synchronization-extensions">guidance</a> on how system administrators can do so with Intel's TSX, using registry keys.<br/><br/>They can disable TSX via the following registry setting:<br/><br/><i>reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Kernel" /v DisableTsx /t REG_DWORD /d 1 /f</i><br/><br/>When they need TSX again, they can re-enable it via the following:<br/><br/><i>reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Kernel" /v DisableTsx /t REG_DWORD /d 0 /f</i><br/><br/>On Linux systems where administrators have applied Intel's microcode updates, there is also now a model-specific register (MSR) that can be used to disable TSX. Details <a href="https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=c2955f270a84762343000f103e0640d29c7a96f3">here</a>.<br/><br/>TSX has been shipping with Intel CPUs since the release of the Haswell line in 2013. <a href="https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-00270.html">According to Intel's official security advisory</a>, the following CPU series are impacted:</p>
+      <table bordered="">
+        <tr>
+          <td>
+            <b>Product Collection</b>
+          </td>
+          <td>
+            <b>Product Names</b>
+          </td>
+          <td>
+            <b>Vertical Segment</b>
+          </td>
+          <td>
+            <b>CPUID</b>
+          </td>
+          <td>
+            <b>Platform ID</b>
+          </td>
+        </tr>
+        <tr>
+          <td>10th Generation Intel® Core™ Processor Family</td>
+          <td>Intel® Core™ Processor i7-10510Y, i5-10310Y<br/>Intel® Core™ Processor i5-10210Y, i5-10110Y<br/><br/>Intel® Core™ Processor i7-8500Y<br/><br/>Intel® Core™ Processor i5-8310Y, i5-8210Y, i5-8200Y<br/>Intel® Core™ Processor m3-8100Y</td>
+          <td>Mobile</td>
+          <td>806EC</td>
+          <td>94</td>
+        </tr>
+        <tr>
+          <td>2nd Generation Intel® Xeon® Scalable Processors</td>
+          <td>Intel® Xeon® Platinum Processor 8253, 8256, 8260, 8260L, 8260M, 8260Y, 8268, 8270, 8276, 8276L, 8276M, 8280, 8280L, 8280M, 9220, 9221, 9222, 9242, 9282<br/><br/>Intel® Xeon® Gold Processor 5215, 5215L, 5215M, 5215R, 5217, 5218, 5218B, 5218N, 5218T, 5220, 5220R, 5220S, 5220T, 5222, 6222V, 6226, 6230, 6230N, 6230T, 6234, 6238, 6238L, 6238M, 6238T, 6240, 6240L, 6240M, 6240Y, 6242, 6244, 6246, 6248, 6252, 6252N, 6254, 6262V<br/><br/>Intel® Xeon® Silver Processor 4208, 4208R, 4209T, 4210, 4210R, 4214, 4214C, 4214R, 4214Y, 4215, 4216, 4216R<br/><br/>Intel® Xeon® Bronze Processor 3204, 3206R</td>
+          <td>Server</td>
+          <td>50657</td>
+          <td>BF</td>
+        </tr>
+        <tr>
+          <td>Intel® Xeon® W Processor Family</td>
+          <td>Intel® Xeon® Processor W-3275M, W-3275, W-3265M, W-3265, W-3245M, W-3245, W-3235, W-3225, W-3223, W-2295, W-2275, W-2265, W-2255, W-2245, W-2235, W-2225, W-2223</td>
+          <td>Workstation</td>
+          <td>50657</td>
+          <td>BF</td>
+        </tr>
+        <tr>
+          <td>9th Generation Intel® Core™ Processor Family</td>
+          <td>Intel® Core™ Processor i9-9980HK, 9880H<br/>Intel® Core™ Processor i7-9850H, 9750HF<br/>Intel® Core™ Processor i5-9400H, 9300H</td>
+          <td>Mobile</td>
+          <td>906ED</td>
+          <td>22</td>
+        </tr>
+        <tr>
+          <td>9th Generation Intel® Core™ Processor Family</td>
+          <td>Intel® Core™ Processor i9-9900K, i9-9900KF<br/><br/>Intel® Core™ Processor i7-9700K, i7-9700KF<br/><br/>Intel® Core™ Processor i5-9600K, i5-9600KF, i5-9400, i5-9400F</td>
+          <td>Desktop</td>
+          <td>906ED</td>
+          <td>22</td>
+        </tr>
+        <tr>
+          <td>Intel® Xeon® Processor E Family</td>
+          <td>Intel® Xeon® Processor E-2288G, E-2286M, E-2278GEL, E-2278GE, E-2278G</td>
+          <td>Workstation/ Server /  AMT Server</td>
+          <td>906ED</td>
+          <td>22</td>
+        </tr>
+        <tr>
+          <td>10th Generation Intel® Core™ Processor Family<br/><br/>Intel® Pentium® Gold Processor Series<br/><br/>Intel® Celeron® Processor 5000 Series</td>
+          <td>Intel® Core™ Processor i7-10510U<br/><br/>Intel® Core™ Processor i5-10210U<br/><br/>Intel® Pentium® Gold Processor 6405U<br/><br/>Intel® Celeron® Processor 5305U</td>
+          <td>Mobile</td>
+          <td>806EC</td>
+          <td>94</td>
+        </tr>
+        <tr>
+          <td>8th Generation Intel® Core™ Processors</td>
+          <td>Intel® Core™ Processor i7-8565U, i7-8665U<br/><br/>Intel® Core™ Processor i5-8365U, i5-8265U</td>
+          <td>Mobile</td>
+          <td>806EC</td>
+          <td>94</td>
+        </tr>
+      </table>
+    </article>
+  </body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://www.heise.de/developer/meldung/Kubernetes-Paketmanager-Helm-3-verzichtet-auf-Tiller-4586105.html"/>
+    <meta property="og:site_name" content="Developer"/>
+    <meta property="article:published_time" content="2019-11-14T16:58:00+00:00"/>
+    <meta property="og:title" content="Kubernetes-Paketmanager: Helm 3 verzichtet auf Tiller"/>
+    <meta property="og:description" content="Version 3 des Tools zum Verwalten von Kubernetes-Anwendungen bringt einige grundlegende Änderungen in der Architektur mit."/>
+  </head>
+  <body>
+    <article>
+      <h1>Kubernetes-Paketmanager: Helm 3 verzichtet auf Tiller</h1>
+      <h2>Version 3 des Tools zum Verwalten von Kubernetes-Anwendungen bringt einige grundlegende Änderungen in der Architektur mit.</h2>
+      <address><time datetime="2019-11-14T16:58:00+00:00">14 Nov 2019, 16:58</time> by <a rel="author">Rainald Menge-Sonnentag</a></address>
+      <p>Die Cloud Native Computing Foundation hat Version 3 des Kubernetes-Paketmanagers Helm freigegeben. Das Werkzeug ist seit Sommer 2018 ein Top-Level-Projekt bei der Stiftung. Das Release bringt maßgebliche Änderungen mit: Es verzichtet auf die serverseitige Komponente Tiller und führt ein erweitertes Modell für Merge-Patches ein. Außerdem verzichtet es auf standardmäßige Repositorys und hat eine kompaktere Struktur für Helm-Chart-Dateien.</p>
+      <p>Tiller war eine zentrale Komponente in Helm 2 zur Verwaltung der Historie von Deployments. Sie war vor allem bei der Arbeit von Teams auf einem geteilten Cluster wichtig, da sie verschiedenen Operatoren ermöglichte, mit denselben Releases zusammenzuarbeiten. Tiller war quasi ein zentraler Hub zum Verwalten der Helm-Releaseinformationen.</p>
+      <h3>Probleme bei der Zugriffskontrolle</h3>
+      <p>Schwierig wurde die Arbeit von beziehungsweise mit Tiller bereits Anfang 2017 <a href="https://www.heise.de/meldung/Container-Kubernetes-verbessert-Zugriffskontrolle-und-Skalierbarkeit-3668507.html">mit dem Release von Kubernetes 1.6</a>, das standardmäßig auf rollenbasierte Zugriffskontrolle (Role Based Access Control, RBAC) setzt. Seitdem können Administratoren unterschiedliche Zugriffsrechte anhand von Namespaces vergeben. Was die allgemeine Sicherheit verbessert, wurde im Zusammenspiel mit Tiller zur Herausforderung, und das Helm-Team setzte auf eine großzügige Rechtevergabe, um den Ausschluss von Nutzern zu verhindern.</p>
+      <p>Die Standardeinstellung bot aber potenziell Nutzern zu großzügigen Zugriff, sodass Administratoren für die Installation von Tiller in einem mandantenfähigen Cluster komplexe Konfigurationen vornehmen mussten. Bei der Suche nach einem Ausweg haben die Helm-Entwickler laut <a href="https://helm.sh/docs/faq/#changes-since-helm-2">der FAQ zu Helm 3</a> festgestellt, dass sie völlig auf Tiller verzichten und die benötigten Release-Informationen über den Kubernetes-API-Server abrufen können.</p>
+      <h3>Angenehme Nebenwirkungen</h3>
+      <p>Durch das Ablegen von Tiller und den für den Einsatz benötigten Security-Verrenkungen kann Helm alle in Kubernetes vorgesehen Funktionen für Security, Identitätsmanagement und Autorisierung verwenden, und das System bestimmt die Freigaben anhand der <i>kubeconfig</i>-Datei.</p>
+      <p>Als Nebeneffekt speichert Helm nun die Releaseinformationen in demselben Namespace wie das jeweilige Release, wodurch Entwickler beziehungsweise Administratoren denselben Namen mehrfach verwenden können, wenn die Releases in unterschiedlichen Namensräumen angesiedelt sind. Helm 2 hatte die Releaseinformationen stets im Namespace von Tiller abgelegt, womit eine doppelte Verwendung desselben Namens auch in zwei unterschiedlichen Namensräumen nicht möglich war.</p>
+      <h3>Drei Wege sind besser als zwei</h3>
+      <p>Eine weitere wesentliche Neuerung betrifft die Merge Patches, mit der Helm Upgrades einspielt. Helm 3 setzt dafür auf ein Dreiwegesystem, während der Vorgänger nur zwei kannte. Helm 2 hat für Merge Patches die Unterschiede zwischen dem aktuellsten Chart-Manifest aus dem letzten <code>helm upgrade</code> und dem Manifest für das Update verglichen.</p>
+      <p>Dabei hat Helm jedoch potenziell manuell beispielsweise über <code>kubectl edit</code> vorgenommene Änderungen ignoriert. Das rächte sich, wenn Ressourcen später einen Rollback benötigten, da Helm nicht den tatsächlichen Zustand, sondern lediglich das jüngste Manifest kannte. Helm 3 verwendet stattdessen jetzt einen Dreiwegeansatz für Strategic Merge Patches, in dem es neben den beiden Manifesten auch den Istzustand beim Einspielen berücksichtigt.</p>
+      <h3>Erweiterte Charts</h3>
+      <p>Das Format der Helm Charts, in denen Entwickler die jeweiligen Kubernetes-Objekte beschreiben, hat sich ebenfalls geändert. Das Speichern erfolgt in <i>chart.yaml</i>-Dateien. Mit Helm 3 tragen die Charts nun die API-Versionsnummer <code>v2</code>, statt wie bisher <code>v1</code>. Der Befehl <code>helm create</code> erstellt standardmäßig Charts im neuen Format. Clients können optional beide API-Varianten unterstützen und müssen dafür jeweils das Feld <code>apiVersion</code> in <i>charts.yaml</i> abfragen.</p>
+      <p>Das neue Format ist kompakter und erlaubt neuerdings das Einbinden von Library Charts. Dabei handelt es sich um geteilte Charts. Diese dürfen keine eigenen Release-Artefakte erstellen, sondern nur <code>define</code>-Elemente enthalten. Auf die Weise können Entwickler Definitionen beziehungsweise Codeabschnitte wiederverwenden.</p>
+      <h3>Weitere Aufräumarbeiten</h3>
+      <p>Helm 3 bringt darüber hinaus zahlreiche Anpassungen und Ergänzungen mit und trennt sich neben Tiller auch von anderen Altlasten. So entfällt künftig <code>helm serve</code>. Die Helm-Macher hatten das damit ausgeführte lokale Repository als Hilfe beim Verwalten von Sourcecode vorgesehen, das Entwickler aber offensichtlich wenig genutzt haben. Wer es verwenden möchte, findet es nach wie vor als Plug-in.</p>
+      <p>Einige Kommandozeilenbefehle haben andere Namen: <code>helm uninstall</code> ersetzt <code>helm delete</code>, <code>helm inspect</code> heißt <code>helm show</code> und statt <code>helm fetch</code> gilt nun <code>helm pull</code>. Die alten Befehle bleiben jedoch vorerst mit jeweils derselben Funktion erhalten.</p>
+      <p>Weitere Neuerungen lassen sich <a href="https://github.com/helm/helm/releases">dem GitHub-Repository</a> und <a href="https://helm.sh/blog/helm-3-released/">dem Helm-Blog</a> entnehmen. Auf der Helm-Site findet sich zudem <a href="https://helm.sh/docs/topics/v2_v3_migration/">ein umfangreicher Migrationsleitfaden</a>. Wer lieber Erfolgsmeldungen und CTO-Zitate als technische Informationen lesen möchte, wird <a href="https://www.cncf.io/news/2019/11/13/helm-reaches-version-3/">bei der offiziellen Ankündigung</a> der Cloud Native Computing Foundation fündig.</p>
+      <p><i>Siehe dazu auf heise Developer</i>:</p>
+      <ul>
+        <li>
+          <a href="https://www.heise.de/developer/artikel/Die-Werkzeugkiste-1-Helm-Kubernetes-Deployments-richtig-gemacht-4219375.html">Die Werkzeugkiste #1: Helm – Kubernetes-Deployments richtig gemacht</a>
+        </li>
+      </ul>
+      <p>(<a href="mailto:rme@ct.de">rme</a>)</p>
+    </article>
+  </body>
+</html>

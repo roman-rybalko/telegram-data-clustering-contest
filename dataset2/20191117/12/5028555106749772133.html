@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://arstechnica.com/information-technology/2019/11/microsoft-sends-a-new-kind-of-ai-processor-into-the-cloud/"/>
+    <meta property="og:site_name" content="Ars Technica"/>
+    <meta property="article:published_time" content="2019-11-17T12:05:43+00:00"/>
+    <meta property="og:title" content="Microsoft sends a new kind of AI processor into the cloud"/>
+    <meta property="og:description" content="Innovative chip from Graphcore could push AI applications to greater heights."/>
+  </head>
+  <body>
+    <article>
+      <h1>Microsoft sends a new kind of AI processor into the cloud</h1>
+      <h2>Innovative chip from Graphcore could push AI applications to greater heights.</h2>
+      <address><time datetime="2019-11-17T12:05:43+00:00">17 Nov 2019, 12:05</time> by <a rel="author">Will Knight, wired.com</a></address>
+      <p>Microsoft rose to dominance during the '80s and '90s thanks to the success of its Windows operating system running on Intel’s processors, a cosy relationship nicknamed “<a href="https://en.wikipedia.org/wiki/Wintel">Wintel</a>”.</p>
+      <p>Now Microsoft hopes that another another hardware–software combo will help it recapture that success—and catch rivals Amazon and Google in the race to provide cutting-edge artificial intelligence through the cloud.</p>
+      <p>Microsoft hopes to extend the popularity of its <a href="https://azure.microsoft.com/en-us/">Azure cloud platform</a> with a new kind of computer chip designed for the age of AI. Starting today, Microsoft is providing Azure customers with access to chips made by the British startup <a href="https://www.graphcore.ai/">Graphcore</a>.</p>
+      <p>Graphcore, founded in Bristol, UK, in 2016, has attracted considerable attention among AI researchers—and several hundred million dollars in investment—on the promise that its chips will accelerate the computations required to make AI work. Until now it has not made the chips publicly available or shown the results of trials involving early testers.</p>
+      <figure>
+        <img src="https://cdn.arstechnica.net/wp-content/uploads/2019/02/wired-logo.png"/>
+      </figure>
+      <p>Microsoft, which put its own money into Graphcore last December as part of a $200 million funding round, is keen to find hardware that will make its cloud services more attractive to the growing number of customers for AI applications.</p>
+      <p>Unlike most chips used for AI, Graphcore’s processors were designed from scratch to support the calculations that help machines to <a href="https://www.wired.com/story/facial-recognition-everywhere-should-you-worry/">recognize faces</a>, <a href="https://www.wired.com/story/google-made-truly-usable-voice-assistant/">understand speech</a>, <a href="https://www.wired.com/story/computers-are-learning-to-read-but-theyre-still-not-so-smart/">parse language</a>, <a href="https://www.wired.com/story/future-of-transportation-self-driving-cars-reality-check/">drive cars</a>, and <a href="https://www.wired.com/story/dont-just-lecture-robotsmake-them-learn/">train robots</a>. Graphcore expects it will appeal to companies running business-critical operations on AI, such as self-driving-car startups, trading firms, and operations that process large quantities of video and audio. Those working on next-generation AI algorithms may also be keen to explore the platform’s advantages.</p>
+      <p>Microsoft and Graphcore today published benchmarks that suggest the chip matches or exceeds the performance of the top AI chips from Nvidia and Google using algorithms written for those rival platforms. Code written specifically for Graphcore’s hardware may be even more efficient.</p>
+      <p>The companies claim that certain image-processing tasks work many times faster on Graphcore’s chips, for example, than on its rivals using existing code. They also say they were able to train a popular AI model for language processing, called BERT, at rates matching those of any other existing hardware.</p>
+      <p>BERT has become hugely important for AI applications involving language. Google <a href="https://www.wired.com/story/google-search-advancing-grade-reading/">recently said</a> that it is using BERT to power its core search business. Microsoft says it is now using Graphcore’s chips for internal AI research projects involving natural language processing.</p>
+      <p><a href="http://www.moorinsightsstrategy.com/karl-freund-biography/">Karl Freund</a>, who tracks the AI chip market at Moor Insights, says the results show the chip is cutting-edge but still flexible. A highly-specialized chip could outperform one from Nvidia or Google but would not be programmable enough for engineers to develop new applications. “They’ve done a good job making it programmable, he says. “Good performance in both training and inference is something they've always said they would do, but it is really, really hard.”</p>
+      <p>Freund adds that the deal with Microsoft is crucial for Graphcore’s business, because it provides an on-ramp for customers to try the new hardware. The chip may well be superior to existing hardware for some applications, but it takes a lot of effort to redevelop AI code for a new platform. With a couple of exceptions, Freund says, the chip’s benchmarks are not eye-popping enough to lure companies and researchers away from the hardware and software they are already comfortable using.</p>
+      <p>Graphcore has created a software framework called Poplar, which allows existing AI programs to be ported to its hardware. Plenty of existing algorithms may still be better-suited to software that runs on top of rival hardware, though. Google’s <a href="https://www.tensorflow.org/">Tensorflow</a> AI software framework has become the de facto standard for AI programs in recent years, and it was written specifically for Nvidia and Google chips. Nvidia is also expected to release a new AI chip next year, which is likely to have better performance.</p>
+      <figure>
+        <img src="https://cdn.arstechnica.net/wp-content/uploads/2019/11/graphcore-2-640x437.jpg"/>
+        <figcaption>Graphcore</figcaption>
+      </figure>
+      <p>Nigel Toon, cofounder and CEO of Graphcore, says the companies began working together a year after his company’s launch, through Microsoft Research Cambridge in the UK. His company’s chips are especially well-suited to tasks that involve very large AI models or temporal data, he says. One customer in finance supposedly saw a 26-fold performance boost in an algorithm used to analyze market data thanks to Graphcore’s hardware.</p>
+      <p>A handful of other, smaller companies also announced today that they are working with Graphcore chips through Azure. This includes <a href="https://www.citadel.com/">Citadel</a>, which will use the chips to analyze financial data, and <a href="https://www.qwant.com/?l=en">Qwant</a>, a European search engine that wants the hardware to run an image-recognition algorithm known as ResNext.</p>
+      <p>The AI boom has already shaken up the market for computer chips in recent years. The best algorithms perform parallel mathematical computations, which can be done more effectively on a graphics chips (or GPUs) that have hundreds of simple processing cores as opposed to conventional chips (CPUs) that have a few complex processing cores.</p>
+      <p>The GPU-maker Nvidia has ridden the AI wave to riches, and Google announced in 2017 that it would <a href="https://www.wired.com/2017/05/google-rattles-tech-world-new-ai-chip/">develop its own chip,</a> the Tensor Processing Unit, which is architecturally similar to a GPU but optimized for Tensorflow.</p>
+      <p>Graphcore’s chips, which it calls intelligence processing units (IPUs), have many more cores than GPUs or TPUs. They also feature memory on the chip itself, which removes a bottleneck that comes with moving data onto a chip for processing and off again.</p>
+      <p>Facebook is also working on its own AI chips. Microsoft has <a href="https://www.wired.com/story/microsoft-charts-its-own-path-on-artificial-intelligence/">previously touted</a> reconfigurable chips made by Intel and customized by its engineers for AI applications. A year ago, Amazon revealed it was also <a href="https://www.wired.com/story/new-amazon-chips-cloud-computing/">getting into chipmaking</a>, but with a more general-purpose processor optimized for Amazon’s cloud services.</p>
+      <p>More recently, the AI boom has sparked a flurry of startup hardware companies to develop more specialized chips. Some of these are optimized for specific applications such as autonomous driving or surveillance cameras. Graphcore and a few others offer much more flexible chips, which are crucial for developing AI applications but also much more challenging to produce. The company’s last investment round gave the company a valuation of $1.7 billion.</p>
+      <p>Graphcore’s chips might first find traction with top AI experts who are able to write the code needed to exploit their benefits. Several prominent AI researchers have invested in Graphcore, including Demis Hassabis, cofounder of DeepMind, <a href="http://mlg.eng.cam.ac.uk/zoubin/">Zoubin Ghahramani</a>, a professor at the University of Cambridge and the head of Uber’s AI lab, and Peiter Abbeel, a professor at UC Berkeley who specializes in AI and robotics. In <a href="https://www.wired.com/story/googles-ai-guru-computers-think-more-like-brains/">an interview with WIRED</a>last December, AI visionary Geoffrey Hinton discussed the potential for Graphcore chips to advance fundamental research.</p>
+      <p>Before long, companies may be tempted to try out the latest thing, too. As Graphcore’s CEO Toon says, “Everybody's trying to innovate, trying to find an advantage.”</p>
+      <p>
+        <i>This story originally appeared on <a href="https://www.wired.com/story/microsoft-sends-a-new-kind-of-ai-processor-into-the-cloud/">wired.com</a>.</i>
+      </p>
+      <p>
+        <i>Listing image by Graphcore</i>
+      </p>
+    </article>
+  </body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://www.sciencedaily.com/releases/2019/11/191114124048.htm"/>
+    <meta property="og:site_name" content="ScienceDaily"/>
+    <meta property="article:published_time" content="2019-11-14T00:00:00+00:00"/>
+    <meta property="og:title" content="Design flaw could open Bluetooth devices to hacking"/>
+    <meta property="og:description" content="Mobile apps that work with Bluetooth devices have an inherent design flaw that makes them vulnerable to hacking, new research has found."/>
+  </head>
+  <body>
+    <article>
+      <h1>Design flaw could open Bluetooth devices to hacking</h1>
+      <h2>New research shows the way devices 'talk' to apps leaves them vulnerable</h2>
+      <address>
+        <time datetime="2019-11-14T00:00:00+00:00">14 Nov 2019</time>
+      </address>
+      <table bordered="">
+        <tr>
+          <td>Source:</td>
+          <td>Ohio State University</td>
+        </tr>
+        <tr>
+          <td>Summary:</td>
+          <td>Mobile apps that work with Bluetooth devices have an inherent design flaw that makes them vulnerable to hacking, new research has found.</td>
+        </tr>
+      </table>
+      <p>
+        <b>Mobile apps that work with Bluetooth devices have an inherent design flaw that makes them vulnerable to hacking, new research has found.</b>
+      </p>
+      <p>The problem lies in the way Bluetooth Low Energy devices — a type of Bluetooth used by most modern gadgets — communicate with the mobile apps that control them, said Zhiqiang Lin, associate professor of computer science and engineering at The Ohio State University. Lin presented the findings this week at the Association for Computing Machinery's Conference on Computer and Communications Security (ACM CCS 2019).</p>
+      <p>"There is a fundamental flaw that leaves these devices vulnerable — first when they are initially paired to a mobile app, and then again when they are operating," Lin said. "And while the magnitude of that vulnerability varies, we found it to be a consistent problem among Bluetooth low energy devices when communicating with mobile apps."</p>
+      <p>Consider a wearable health and fitness tracker, smart thermostat, smart speaker or smart home assistant. Each first communicates with the apps on your mobile device by broadcasting something called a UUID — a universally unique identifier. That identifier allows the corresponding apps on your phone to recognize the Bluetooth device, creating a connection that allows your phone and device to talk to one another.</p>
+      <p>But that identifier itself is also embedded into the mobile app code. Otherwise, mobile apps would not be able to recognize the device. However, such UUIDs in the mobile apps make the devices vulnerable to a fingerprinting attack, Lin and his research team found.</p>
+      <p>"At a minimum, a hacker could determine whether you have a particular Bluetooth device, such as a smart speaker, at your home, by identifying whether or not your smart device is broadcasting the particular UUIDs identified from the corresponding mobile apps," Lin said. "But in some cases in which no encryption is involved or encryption is used improperly between mobile apps and devices, the attacker would be able to 'listen in' on your conversation and collect that data."</p>
+      <p>Still, that doesn't mean you should throw your smartwatch away.</p>
+      <p>"We think the problem should be relatively easy to fix, and we've made recommendations to app developers and to Bluetooth industry groups," he said.</p>
+      <p>After Lin and his team realized Bluetooth devices had this built-in vulnerability, they wanted to see how widespread it might be in the real world. They built a "sniffer" — a hacking device that can identify Bluetooth devices based on the broadcasting messages sent by the devices.</p>
+      <p>"The typical understanding is that Bluetooth Low Energy devices have signals that can only travel up to 100 meters," he said. "But we found that with a simple receiver adapter and amplifier, the signal can be 'sniffed' (or electronically found) much farther — up to 1,000 meters away."</p>
+      <p>They then drove the "sniffer" around a 1.28-square-mile area near Ohio State's campus to field-test the vulnerability. They found more than 5,800 Bluetooth Low Energy devices. Of those, about 5,500 — 94.6 percent — were able to be "fingerprinted" (or identified) by an attack and 431 — 7.4 percent — were vulnerable to unauthorized access or eavesdropping attacks.</p>
+      <p>Those that were vulnerable to unauthorized access had issues with the initial "fingerprinting" between device and phone app that put them at risk of hacking. "It was in the initial app-level authentication, the initial pairing of the phone app with the device, where that vulnerability existed," Lin said. If app developers tightened defenses in that initial authentication, he said, the problem could be resolved.</p>
+      <p>The team reported their findings to developers of vulnerable apps and to the Bluetooth Special Interest Group, and created an automated tool to evaluate all of the Bluetooth Low Energy apps in the Google Play Store — 18,166 at the time of their research. In addition to building the databases directly from mobile apps of the Bluetooth devices in the market, the team's evaluation also identified 1,434 vulnerable apps that allow unauthorized access, a number that surprised Lin. Their analysis did not include apps in the Apple Store.</p>
+      <p>"It was alarming," he said. "The potential for privacy invasion is high."</p>
+      <p>These devices know a lot about us — they are the wearable technologies that track our steps and our heart rates; the speakers that "hear" us and play songs we want to hear, or give us an easy way to order new things off the internet.</p>
+      <p>Lin's research focuses on vulnerabilities in tech, trying to identify those potential security gaps before they become true security problems. Earlier this summer, he and researchers at the Georgia Institute of Technology found more than 1,600 vulnerabilities in the support ecosystem behind the top 5,000 free apps in the Google Play Store.</p>
+      <p>This work was supported in part by the National Science Foundation.</p>
+      <p>make a difference: sponsored opportunity</p>
+      <details open="">
+        <summary>
+          <b>Story Source:</b>
+        </summary>
+        <p><a href="https://news.osu.edu/design-flaw-could-open-bluetooth-devices-to-hacking/">Materials</a> provided by <a href="http://www.osu.edu/"><b>Ohio State University</b></a>. Original written by Laura Arenschield. <br/><i>Note: Content may be edited for style and length.</i></p>
+      </details>
+      <details>
+        <summary><b>Cite This Page</b>:</summary>
+        <table bordered="">
+          <tr>
+            <td>
+              <a href="https://www.sciencedaily.com/releases/2019/11/191114124048.htm#citation_mla">MLA</a>
+            </td>
+            <td>Ohio State University. "Design flaw could open Bluetooth devices to hacking: New research shows the way devices 'talk' to apps leaves them vulnerable." ScienceDaily. ScienceDaily, 14 November 2019. &lt;www.sciencedaily.com/releases/2019/11/191114124048.htm&gt;.</td>
+          </tr>
+          <tr>
+            <td>
+              <a href="https://www.sciencedaily.com/releases/2019/11/191114124048.htm#citation_apa">APA</a>
+            </td>
+            <td>Ohio State University. (2019, November 14). Design flaw could open Bluetooth devices to hacking: New research shows the way devices 'talk' to apps leaves them vulnerable. <i>ScienceDaily</i>. Retrieved November 18, 2019 from www.sciencedaily.com/releases/2019/11/191114124048.htm</td>
+          </tr>
+          <tr>
+            <td>
+              <a href="https://www.sciencedaily.com/releases/2019/11/191114124048.htm#citation_chicago">Chicago</a>
+            </td>
+            <td>Ohio State University. "Design flaw could open Bluetooth devices to hacking: New research shows the way devices 'talk' to apps leaves them vulnerable." ScienceDaily. www.sciencedaily.com/releases/2019/11/191114124048.htm (accessed November 18, 2019).</td>
+          </tr>
+        </table>
+      </details>
+      <related>
+        <h4>Related Stories</h4>
+        <a href="https://www.sciencedaily.com/releases/2019/02/190225192119.htm"/>
+        <a href="https://www.sciencedaily.com/releases/2015/11/151116141743.htm"/>
+        <a href="https://www.sciencedaily.com/releases/2015/10/151017152519.htm"/>
+        <a href="https://www.sciencedaily.com/releases/2015/01/150128125418.htm"/>
+      </related>
+      <related>
+        <h4>Related Terms</h4>
+        <a href="https://www.sciencedaily.com/terms/user_interface_design.htm"/>
+        <a href="https://www.sciencedaily.com/terms/mobile_phone_radiation_and_health.htm"/>
+        <a href="https://www.sciencedaily.com/terms/electric_power.htm"/>
+        <a href="https://www.sciencedaily.com/terms/ubiquitous_computing.htm"/>
+        <a href="https://www.sciencedaily.com/terms/cyber-bullying.htm"/>
+        <a href="https://www.sciencedaily.com/terms/three-phase_electric_power.htm"/>
+        <a href="https://www.sciencedaily.com/terms/architecture.htm"/>
+        <a href="https://www.sciencedaily.com/terms/mobile_phone.htm"/>
+      </related>
+    </article>
+  </body>
+</html>

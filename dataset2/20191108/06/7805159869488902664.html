@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://www.xda-developers.com/android-10-manifest-flag-developers-retain-app-data-before-uninstalling/"/>
+    <meta property="og:site_name" content="XDA Developers"/>
+    <meta property="article:published_time" content="2019-11-08T06:54:00+00:00"/>
+    <meta property="og:title" content="Android 10 lets developers ask users if they want to retain app data before uninstalling"/>
+    <meta property="og:description" content="Android 10 introduces a Manifest flag for app developers that when enabled, allows the user to retain app data when uninstalling the app. Read on for more!"/>
+  </head>
+  <body>
+    <article>
+      <h1>Android 10 lets developers ask users if they want to retain app data before uninstalling</h1>
+      <address><time datetime="2019-11-08T06:54:00+00:00">08 Nov 2019, 06:54</time> by <a rel="author" href="https://www.xda-developers.com/author/aamirsiddiqui/" target="_blank">Aamir Siddiqui</a></address>
+      <p><a href="https://www.xda-developers.com/tag/android10">Android 10</a> is the latest update to Android from Google, bringing along a <a href="https://www.xda-developers.com/android-10-new-features-video/">fair few improvements to the mature OS</a>. Most changes and new features on the newest update either get <a href="https://www.xda-developers.com/android-q-new-features/">highlighted by Google themselves</a> during Google I/O or are <a href="https://www.xda-developers.com/google-android-10-dsu-try-ota-updates-without-committing/">found shortly</a> after <a href="https://www.xda-developers.com/android-10-source-code-aosp/">public source release</a>. But some notable changes do tend to slip under the radar, surfacing months later when someone accidentally stumbles upon them. That is what is happening in this case because as it turns out, Android 10 allows developers to ask their users if they want to retain app data before their app is uninstalled.</p>
+      <p>A recent <a href="https://www.androidpolice.com/2019/11/06/some-apps-like-whatsapp-offer-to-save-app-data-when-uninstalled-in-android-10/">report from <i>AndroidPolice</i></a> highlighted this functionality. Apps like <a href="https://play.google.com/store/apps/details?id=com.whatsapp">WhatsApp</a> and <a href="https://play.google.com/store/apps/details?id=com.nll.asr">ASR Voice Recorder</a> have begun offering Android 10 users an option to retain the data of an app that is about to be uninstalled.</p>
+      <figure>
+        <img src="https://www.xda-developers.com/files/2019/11/Android_10_Retain_Data_on_Uninstall.jpg"/>
+      </figure>
+      <p>Checking the box shown above retains the app data on the phone despite the app being uninstalled. When you reinstall the app, you will be back to the same state within the app as if you had never uninstalled it in the first place.</p>
+      <p>Mishaal did a little investigating on what is happening behind the scenes. To understand that, you need to understand first how apps on Android can store files on your device, and there are three main locations for storing files:</p>
+      <ul>
+        <li>App-specific Directory in the internal (user-inaccessible without root) storage: These folders are located at <i>/data/data</i> and are not accessible to other apps, or when the user ordinarily plugs their phone into a PC. Apps do not need permission to write files to their own app-specific directory in this location.</li>
+        <li>App-specific Directory in the external (user-accessible) storage: These folders are located at <i>/data/media/{user}/Android/data </i>and are accessible to other apps with the right permission, and to the user when they ordinarily plug in their phone to a computer. Apps do not need permission to write files to their own app-specific directory in this location, but they do need permission to access data from other apps, as mentioned previously.</li>
+        <li>Any directory in the external (user-accessible) storage: Apps can request permission to access the external storage, allowing the app to create whatever folder it needs to on the external storage to store whatever it wants to store here.</li>
+      </ul>
+      <p>Extending WhatsApp’s example, WhatsApp’s app-specific directory in internal storage resides at <i>/data/data/com.whatsapp</i>; its app-specific directory in external storage resides at <i>/data/media/{user}/Android/data/com.whatsapp</i>; and its custom directory in external storage resides at <i>/data/media/{user}/WhatsApp</i>.</p>
+      <p>Prior to Android 10 and prior to developers enabling this for their apps, when a user uninstalls an app, its app-specific directories in both internal (<i>/data/data</i>) and external (<i>/data/media</i>) storage are deleted by default. The extra directories on external storage are not deleted, and you need to manually get rid of them or use an app like <a href="https://play.google.com/store/apps/details?id=eu.thedarken.sdm">SD Maid</a> to do it for you.</p>
+      <p>With Android 10, app developers can add a special flag to their Manifest called “<i><a href="https://developer.android.com/reference/android/R.attr#hasFragileUserData">hasFragileUserData</a></i>” that allows them to ask the user if they want to retain the app’s data upon app uninstallation, which is what you see above in the screenshot. When you do uninstall an app with the checkbox toggled to retain the app data, Android will retain and not delete the app-specific directories in the internal and external storage. We confirmed this by checking the directories for apps that have not added the Manifest flag, and those like WhatsApp that have added the Manifest flag.</p>
+      <hr/>
+      <p>On the surface, having the option makes sense as users can temporarily uninstall apps and still go back to their previous state upon re-installation, which should save some hassles of backing up and restoring the app on the same device. But, keep in mind that <i>/data/data</i> is not accessible without root, so you as a user cannot use this process for root-free backup and restore across devices. It is also not possible for users to delete the files left behind in <i>/data/data</i> without root; so if you do want to clear the files in the future, you would need to reinstall the app, and then uninstall it without ticking the checkbox. Use this option for too many apps, and you’ll likely forget which apps you as a user had chosen. Since this is optional for developers to include, and then optional for users to choose, we do feel this is an overall positive change that gives more power to the end user.</p>
+    </article>
+  </body>
+</html>

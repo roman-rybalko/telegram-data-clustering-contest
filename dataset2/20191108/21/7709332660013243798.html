@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://css-tricks.com/two-value-display-syntax-and-sometimes-three/"/>
+    <meta property="og:site_name" content="CSS-Tricks"/>
+    <meta property="article:published_time" content="2019-11-08T21:17:57+00:00"/>
+    <meta property="og:title" content="Two-Value Display Syntax (and Sometimes Three)"/>
+    <meta property="og:description" content="You know the single-value syntax: .thing { display: block; }. The value &quot;block&quot; being a single value. There are lots of single values for display. For"/>
+  </head>
+  <body>
+    <article>
+      <h1>Two-Value Display Syntax (and Sometimes Three)</h1>
+      <p>Easily manage projects with <a href="https://synd.co/2JziuUL">monday.com</a></p>
+      <p>You know the single-value syntax: <code>.thing { display: block; }</code>. The value "block" being a single value. There are <i>lots</i> of single values for <a href="https://css-tricks.com/almanac/properties/d/display/"><code>display</code></a>. For example, <code>inline-flex</code>, which is like <code>flex</code> in that it becomse a flex container, but behaves like an inline-level element rather than a block-level element. Somewhat intuitive, but much better served by a two-value system that can apply that same concept more broadly and just as intuitively.</p>
+      <p>For a deep look, you should read Rachel Andrew's blog post <a href="https://hacks.mozilla.org/2019/10/the-two-value-syntax-of-the-css-display-property/">The two-value syntax of the CSS Display property</a>. <a href="https://drafts.csswg.org/css-display/">The spec</a> is also a decent read, as is this video from Miriam:</p>
+      <figure>
+        <iframe src="https://www.youtube.com/embed/4Clyc38U-MA" width="560" height="315" data-service="Youtube" scrolling="no"/>
+      </figure>
+      <h3>This is how it maps in my brain</h3>
+      <figure>
+        <img src="https://css-tricks.com/wp-content/uploads/2019/11/display-values.png"/>
+        <figcaption>Choose <code>block</code> or <code>inline</code>, then choose <code>flow</code>, <code>flow-root</code>, <code>flex</code>, <code>grid</code>, or <code>table</code>. If it's a <code>list-item</code> that's a third thing.</figcaption>
+      </figure>
+      <p>You essentially pick one from each column to describe the layout you want. So the existing values we use all the time map out something like this:</p>
+      <figure>
+        <img src="https://css-tricks.com/wp-content/uploads/2019/11/mapping.png"/>
+      </figure>
+      <p>Another way to think about those two columns I have there is <b>"outside" and "inside"</b> display values. Outside, as in, how it flows with other elements around it. Inside, as in, how layout happens inside those elements.</p>
+      <h3>Can you actually use it?</h3>
+      <p>Not really. Firefox 70 is first out of the gate with it, and there are no other signals for support from Chrome-land or Safari-land that I know about. It's a great evolution of CSS, but as far as day-to-day usage, it'll be years out. Something as vital as layout isn't something you wanna let fail just for this somewhat minor descriptive benefit. Nor is it probably worth the trouble to progressively enhance with <code>@supports</code> and such.</p>
+      <h3>Tidbits</h3>
+      <ul>
+        <li>Check out the <a href="https://drafts.csswg.org/css-display/#transformations">automatic transformations</a> bit. Just because you set an element to a particular display, doesn't mean it might not be overruled by a certain situation. I'm assuming it's mostly talking about an element being forced to be a flex item or grid item.</li>
+        <li>There is implied shorthand. Like if you <code>inline list-item</code>, that's really <code>inline flow list-item</code> whereas <code>list-item</code> is <code>block flow list-item</code>. Looks all fairly intuitive.</li>
+        <li>You still use stuff like <code>table-row</code> and <code>table-header-group</code>. Those are single-value deals, as is <code>contents</code> and <code>none</code>.</li>
+        <li>Column one technically includes <code>run-in</code> too, but as far as I know, no browser has ever supported <code>run-in</code> display.</li>
+        <li>Column two technically includes <code>ruby</code>, but I have never understood what that even is.</li>
+      </ul>
+      <h3>How we talk about CSS</h3>
+      <p>I like how Rachel ties this change to a more rational mental and teaching model:</p>
+      <blockquote>... They properly explain the interaction of boxes with other boxes, in terms of whether they are block or inline, plus the behavior of the children. For understanding what display is and does, I think they make for a very useful clarification. As a result, I’ve started to teach display using these two values to help explain what is going on when you change formatting contexts. It is always exciting to see new features being implemented, I hope that other browsers will also implement these two-value versions soon. And then, in the not too distant future we’ll be able to write CSS in the same way as we now explain it, clearly demonstrating the relationship between boxes and the behavior of their children.</blockquote>
+    </article>
+  </body>
+</html>

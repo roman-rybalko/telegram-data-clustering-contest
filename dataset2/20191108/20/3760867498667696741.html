@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://www.adslzone.net/2019/11/08/dns-doh-ecs-caracteristicas/"/>
+    <meta property="og:site_name" content="ADSLZone"/>
+    <meta property="article:published_time" content="2019-11-08T20:00:02+00:00"/>
+    <meta property="og:title" content="Las dos características que debes mirar antes de elegir unos DNS"/>
+    <meta property="og:description" content="Explicamos dos características que han añadido este año los DNS y que te ayudarán a resolver las direcciones y navegar más rápido por Internet."/>
+  </head>
+  <body>
+    <article>
+      <h1>Las dos características que debes mirar antes de elegir unos DNS</h1>
+      <address><time datetime="2019-11-08T20:00:02+00:00">08 Nov 2019, 20:00</time> by <a rel="author">Alberto García</a></address>
+      <p><a href="https://www.adslzone.net/reportajes/dns-2019"><b>Cambiar los DNS</b></a> es una de las cosas más recomendables que podemos hacer para acelerar nuestra navegación por Internet, además de recibir otras mejoras adicionales como saltarnos bloqueos por DNS impuestos en algunos países hacia alguna webs. Sin embargo, hay dos características adicionales que actualmente sólo tienen <b>tres servidores de DNS</b>, lo que nos debe hacer decantarnos por ellos.</p>
+      <p>Hace dos años no había duda: los mejores DNS que podíamos tener para nuestra conexión eran los de Google. Sin embargo, desde entonces han aparecido dos grandes competidores: Quad9 (9.9.9.9), de IBM; y 1.1.1.1, de Cloudflare. Ambos DNS no sólo apuestan por la seguridad y eliminan los datos de navegación pasadas unas horas, sino que además son más rápidos. Además, Quad9 ya tiene servidores en España desde principios de año (dos en Madrid y uno en Barcelona), al igual que Cloudflare, que también tiene servidores en España.</p>
+      <figure>
+        <img src="https://www.adslzone.net/app/uploads/2019/11/dns.jpg"/>
+      </figure>
+      <p>Hemos hecho pruebas con <b>DNS Benchmark</b> y <b>DNS Jumper</b> en Málaga, Alicante y Madrid, y en todas han salido los DNS de Cloudflare los primeros, seguidas de las de IBM y luego de las de Google. Ya es cuestión personal cuál de ellas elegir, pero hay dos detalles importantes que debes tener en cuenta y que, según nuestras pruebas, puede decantar la balanza en favor de Quad9.</p>
+      <h3>DNS-over-HTTPS (DoH): sólo tres DNS son compatibles actualmente</h3>
+      <p>El primero es la compatibilidad con <b>DNS-over-HTTPS</b>, o DNS por HTTPS. Sobre esto ya hemos hablado largo y tendido, pero es el futuro por el que van a pasar nuestras conexiones a Internet en nuestros navegadores. Google usará sus DNS para ello, mientras que Mozilla recurrirá a Cloudflare para Firefox por defecto, aunque en ambos navegadores podremos usar la que queramos para resolver nuestras URL a través de un canal cifrado de manera que el operador no sepa qué página web estamos visitando. Actualmente, sólo los DNS de Google, OpenDNS, CleanBrowsing, AdGuard, Quad9, y Cloudflare son compatibles con DNS por HTTPS.</p>
+      <h3>EDNS Client Subnet (ECS): tu ubicación permite resolver más rápido los DNS</h3>
+      <p>El segundo es <b>EDNS Client Subnet (ECS)</b>. Esta característica sólo la tienen los DNS de Google, Quad9 y OpenDNS, y permite resolver más rápidamente una petición de DNS. Esta DNS utiliza la <b>geolocalización</b> desde la que se genera la solicitud para llevarnos al servidor que tengamos más cerca, por lo que la latencia es menor.</p>
+      <p>Con una DNS normal, como 9.9.9.9, el servidor no sabe desde dónde estamos haciendo la petición, sino que nos mandará hacia la misma dirección IP y se encargará ya de resolverla por la vía más rápida sin conocer nuestra ubicación. Sin embargo, con ECS, se añade información adicional sobre nuestra ubicación a través de la IP para <b>facilitar el enrutado de la solicitud</b>. Con ello, el tiempo que tarda en procesarse la solicitud es menor ya que usa un CDN más cercano a nosotros para enrutar mejor la solicitud.</p>
+      <p>Para probarlo, sólo tenéis que usar como DNS la dirección 9.9.9.11 en lugar de 9.9.9.9. Haciendo una simple prueba de ping podemos ver que la latencia es de <b>2 ms menor</b> en mi caso. Aunque esto pueda suponer dudas sobre nuestra privacidad, hay que tener en cuenta, como apuntan en <a href="http://portalvasco.com/blog/2019/05/quad9-dns-geolocalizacion-edns-client-subnet-ecs/">Portalvasco</a>, que sólo se está enviando información del segmento de red del usuario, y no la dirección IP completa.</p>
+      <figure>
+        <img src="https://www.adslzone.net/app/uploads/2019/11/2019-11-08_143818.png"/>
+      </figure>
+      <p>Recordamos las direcciones de los DNS que hemos mencionado:</p>
+      <ul>
+        <li>IBM Quad9 – 9.9.9.9 y 149.112.112.112</li>
+        <li>IBM Quad9 con ECS – 9.9.9.9 y 149.112.112.11</li>
+        <li>Google – 8.8.8.8 y 8.8.4.4</li>
+        <li>Cloudflare – 1.1.1.1 y 1.0.0.1</li>
+        <li>OpenDNS – 208.67.222.222 y 208.67.220.220</li>
+      </ul>
+      <p>Por ello, al final lo mejor que puedes hacer es usar programas como DNS Benchmark, DNS Jumper, o hacer ping manualmente a las direcciones de DNS desde Símbolo del sistema. Los DNS que menor latencia tengan serán los que deberás usar, ya que dependiendo de la parte de España en la que estemos, nos vendrán mejor unos u otros. Desde Madrid por ejemplo, Cloudflare suele ser la mejor opción, pero desde otras partes de España puede que nos convenga más usar los de Google o Quad9.</p>
+    </article>
+  </body>
+</html>

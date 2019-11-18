@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://www.adslzone.net/2019/11/12/problema-windows-10-cambio-icono-unidad-usb/"/>
+    <meta property="og:site_name" content="ADSLZone"/>
+    <meta property="article:published_time" content="2019-11-12T15:00:14+00:00"/>
+    <meta property="og:title" content="Un extraño error de Windows 10 cambia el icono de las unidades USB"/>
+    <meta property="og:description" content="Todos los detalles sobre el extraño error de Windows 10 que cambia el icono de las unidades USB y muestra uno diferente"/>
+  </head>
+  <body>
+    <article>
+      <h1>Un extraño error de Windows 10 cambia el icono de las unidades USB</h1>
+      <address><time datetime="2019-11-12T15:00:14+00:00">12 Nov 2019, 15:00</time> by <a rel="author">Claudio Valero</a></address>
+      <p>Los errores de Windows 10 suelen protagonizar al menos una noticia todas las semanas. Algunos problemas son menores y ligeramente molestos para el usuario, como el que nos ocupa en esta noticia, otros, por su parte, son más complejos y devastadores. En este caso, el problema se ha detectado en Windows 10 1903, más conocida como la actualización <a href="https://www.adslzone.net/esenciales/windows-10/guia-actualizar-windows-10/">Windows 10 May 2019 Update</a>. Esta actualización del sistema operativo de la compañía con sede en Redmond tiene un extraño problema para algunos usuarios que <b>cambia el icono de las unidades USB</b> y muestra uno diferente. Os damos todos los detalles a continuación.</p>
+      <p>Un nuevo error ha sido detectado en la versión 1903 del sistema operativo Windows 10 que hace que las<b> unidades USB (los pendrive)</b> muestren el icono incorrecto en el explorador de archivos. Eso sí, pese a mostrar el icono que no les corresponde, el funcionamiento de la unidad es el esperado y se trata únicamente de una cuestión estética.</p>
+      <h3>Así se ve el extraño error de Windows 10 y las unidades USB</h3>
+      <p>Cuando tenemos el sistema operativo actualizado a esta<b> última versión</b> (Windows 10 November 2019 llegará en breve) e insertamos una unidad USB en el ordenador, el explorador de archivos de Windows nos la mostrará sin problemas y con el icono habitual al que estamos acostumbrados.</p>
+      <figure>
+        <img src="https://www.adslzone.net/app/uploads/2019/11/usb-windows-10.jpg"/>
+      </figure>
+      <p>El problema viene cuando pasan unos minutos y el icono de la unidad USB en el explorador de archivos de Windows cambia por el una unidad de almacenamiento genérica <b>sin más explicación.</b> Como se puede ver en la imagen superior, a la izquierda tenemos el comportamiento normal nada más insertar el pendrive y a la derecha el icono que se muestra pasados unos minutos.</p>
+      <p>Eso sí, hay que dejar claro que, pese al cambio de icono, la unidad USB<b> funciona perfectamente en el sistema</b>. Descubierto el fallo por primera vez por BornCity.com, más tarde ha sido reportado tanto a la comunidad de Microsoft como a Reddit. No se ha podido precisar desde cuándo ocurre este cambio de icono, pero los comentarios se remontan a los últimos 4 o 5 días.</p>
+      <p>Parece que todo está relacionado con la descarga automática de iconos de fabricantes de Internet. Para <b>solucionar el problema</b>, hasta que Microsoft intervenga, podemos navegar hasta:</p>
+      <p>
+        <i>%PROGRAMDATA%\Microsoft\Windows\DeviceMetadataCache\dmrccache</i>
+      </p>
+      <p>Ordenar por fecha y buscar la carpeta modificada recientemente. Una vez localizada, <b>borraremos la carpeta</b> y el problema debería ser solucionado. A algunos usuarios les ha funcionado mientras otros señalan que esto no corrige el problema.</p>
+      <p>¿Os habéis encontrado con este problema?</p>
+    </article>
+  </body>
+</html>

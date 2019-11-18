@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://www.bleepingcomputer.com/news/security/microsoft-office-365-admins-targeted-by-ongoing-phishing-campaign/"/>
+    <meta property="og:site_name" content="BleepingComputer"/>
+    <meta property="article:published_time" content="2019-11-16T15:30:00+00:00"/>
+    <meta property="og:title" content="Microsoft Office 365 Admins Targeted by Ongoing Phishing Campaign"/>
+    <meta property="og:description" content="A new phishing campaign is actively targeting Microsoft Office 365 administrators with the end goal of compromising their entire domain and using newly created accounts on the domain to deliver future phishing emails."/>
+  </head>
+  <body>
+    <article>
+      <h1>Microsoft Office 365 Admins Targeted by Ongoing Phishing Campaign</h1>
+      <address><time datetime="2019-11-16T15:30:00+00:00">16 Nov 2019, 15:30</time> by <a rel="author" href="https://www.bleepingcomputer.com/author/sergiu-gatlan/" target="_blank">Sergiu Gatlan</a></address>
+      <figure>
+        <img src="https://www.bleepstatic.com/content/hl-images/2019/11/01/Microsoft_account_phishing.jpg"/>
+      </figure>
+      <p>A new phishing campaign is actively targeting Microsoft Office 365 administrators with the end goal of compromising their entire domain and using newly created accounts on the domain to deliver future phishing emails.</p>
+      <p>The attackers use phishing emails designed to look like they are coming from Microsoft, with the Office 365 logo shown at the top, and delivered using "validated domains" "from a legitimate organization’s Office 365 infrastructure" as PhishLabs found.</p>
+      <p>They also use "Services admin center" as the sender name for the phishing messages delivered through this ongoing campaign as an attempt to spoof the legitimate Microsoft 365 admin center support team, and "Action Required" or "We placed a hold on your account" subjects to persuade their targets to act first and think later.</p>
+      <p>With the help of this tactic, the threat actors take advantage of a common email filtering solution feature that uses the sender domain's reputation to decide if an email should be blocked or not. </p>
+      <p>"Well established domains with a track record of sending benign messages are less likely to be quickly blocked by these systems," <a href="https://info.phishlabs.com/blog/active-office-365-phishing-campaign-targeting-admin-credentials">PhishLabs says</a>. "This increases the deliverability and efficiency of phishing lures."</p>
+      <figure>
+        <img src="https://www.bleepstatic.com/images/news/u/1109292/November%202019/Phishing%20email%20sample.png"/>
+        <figcaption>Phishing email sample <i>(Image: PhishLabs)</i></figcaption>
+      </figure>
+      <p>The phishing emails ask the targets to sign into their account on the Office 365 Admin center to update their payment information, and it even has links to Microsoft's privacy statement and an unsubscribe option at the bottom of the message. </p>
+      <p>Admins are also invited to choose the release track for their org and use the settings to join "First Release" if they haven't done it already. </p>
+      <p>Once they click the sign-in link embedded in the phishing email, the targets are sent to a fake Microsoft login page that requires them to enter their email or phone to proceed.</p>
+      <p>The attackers used accounts they created on previously compromised Office 365 domains for sending the phishing messages, this strategy allowing them to both evade detection by secure email gateways (SEGs) and avoid being spotted while maintaining their presence on a legitimate org's domain.</p>
+      <p>Using a freshly created Office 365 account, makes it possible for them to go about their business without having to worry that the other users can spot their malicious activity "either by observing outgoing mail or receiving automated responses from failed delivery attempts."</p>
+      <figure>
+        <img src="https://www.bleepstatic.com/images/news/u/1109292/November%202019/Phishing%20landing%20page.png"/>
+        <figcaption>Phishing landing page <i>(Image: PhishLabs)</i></figcaption>
+      </figure>
+      <p>Having already used compromised Office 365 domains to spread their phishing scam to more targets hints at the possibility that any domains they manage to infiltrate using this method will also be utilized to launch new attacks, abusing the identity of the successfully compromised organization to spoof future spam messages.</p>
+      <p>While the campaign operators focused their phishing attempts on a very specific type of Office 365 user, they don't target a particular industry sector when it comes to the organizations the phishing emails aim for.</p>
+      <p>A list of indicators of compromise (IOCs) including phishing kit hosting domains and phishing URLs, as well as some of the subject lines used in this phishing campaign are available at the end of PhishLabs' report.</p>
+    </article>
+  </body>
+</html>

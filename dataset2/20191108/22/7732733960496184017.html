@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://www.techspot.com/news/82702-apple-plans-fix-siri-bug-stored-encrypted-macos.html"/>
+    <meta property="og:site_name" content="TechSpot"/>
+    <meta property="article:published_time" content="2019-11-08T22:24:00+00:00"/>
+    <meta property="og:title" content="Apple plans to fix Siri bug that stored encrypted macOS emails in plaintext"/>
+    <meta property="og:description" content="Apple has always been known as one of the most privacy-focused tech giants, but no company is perfect. IT Specialist Bob Gendler on Wednesday published a Medium blog post that claims Apple's encrypted email technology is perhaps not as encrypted&amp;hellip;"/>
+  </head>
+  <body>
+    <article>
+      <h1>Apple plans to fix Siri bug that stored encrypted macOS emails in plaintext</h1>
+      <h2>Siri's 'Suggestions' feature has some security risks</h2>
+      <address><time datetime="2019-11-08T22:24:00+00:00">08 Nov 2019, 22:24</time> by <a rel="author">Cohen Coberly</a></address>
+      <p>Apple has always been known as one of the most privacy-focused tech giants, but no company is perfect. IT Specialist Bob Gendler on Wednesday published a Medium blog post that claims Apple's encrypted email technology is perhaps <a href="https://medium.com/@boberito/apple-mail-stores-encrypted-emails-in-plain-text-database-fix-included-3c2369ce26d4">not as encrypted</a> as you might think.</p>
+      <p>While investigating the link between macOS and Siri -- particularly, the contact and information suggestion features of the latter -- Gendler found a process called "suggestd," and a "Suggestions" folder. Suggestions was stored inside the easily-accessible, "user-level" Library folder, which isn't particularly concerning in and of itself.</p>
+      <p>However, within this folder, Gendler made an interesting discovery: a file called "snippets.db" was storing his "S/MIME" macOS emails in plaintext; without any form of encryption. Even with Siri disabled and the private key -- which is usually necessary for an encrypted message to be readable -- removed, these emails were still being stored in the same manner. A separate database file stored unencrypted names, emails, and phone numbers for your contacts.</p>
+      <figure>
+        <img src="https://static.techspot.com/images2/news/bigimage/2019/11/2019-11-08-image-20.jpg"/>
+      </figure>
+      <p>As concerning as this information is, it may not be worth getting too distressed yet. First, you'd need to be using Apple Mail instead of any other email client for this to be a problem. Second, though Gendler claims that disabling Siri as a whole doesn't stop the email storing, visiting your Siri Suggestions &amp; Privacy menu and unchecking the box for Apple Mail should "mitigate" the issue.</p>
+      <p>Existing emails won't automatically disappear from the database after doing so, but deleting the snippets.db file will remove them, and the behavior shouldn't continue in the future. Gendler also states that having FileVault enabled offers "another layer of protection."</p>
+      <p>With that said, if you aren't particularly tech-savvy, it would probably be pretty easy to miss the previously-mentioned mitigations. Fortunately, this behavior is clearly not intentional, and Apple plans to fix the issue in a coming software patch, though we don't have an exact timeline yet. Notably, this bug was present in the past four versions of macOS, including Catalina, Mojave, High Sierra, and Sierra.</p>
+      <p>
+        <sub>Lead image credit: <a href="https://www.techradar.com/reviews/apple-macbook-air-2019">TechRadar</a></sub>
+      </p>
+      <related>
+        <h4>Related Reads</h4>
+        <a href="https://www.techspot.com/news/82658-malwarebytes-40-now-available-download.html"/>
+        <a href="https://www.techspot.com/article/1923-playstation-4-controller-on-pc/"/>
+        <a href="https://www.techspot.com/news/82434-microsoft-ecured-core-pc-initiative-aims-protect-windows.html"/>
+        <a href="https://www.techspot.com/news/82252-macbook-users-can-only-use-catalina-sidecar-feature.html"/>
+      </related>
+    </article>
+  </body>
+</html>

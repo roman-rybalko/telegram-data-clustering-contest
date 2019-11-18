@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://www.heise.de/security/meldung/Angriffe-auf-Trusted-Platform-Modules-von-Intel-und-STMicroelectronics-4585573.html"/>
+    <meta property="og:site_name" content="Security"/>
+    <meta property="article:published_time" content="2019-11-14T07:01:00+00:00"/>
+    <meta property="og:title" content="Angriffe auf Trusted Platform Modules von Intel und STMicroelectronics"/>
+    <meta property="og:description" content="&quot;TPM-Fail&quot; extrahiert geheime ECDSA-Schlüssel aus dem vermeintlich geschützten Speicher von Intels fTPM 2.0 und einem ST33-TPM von STMicroelectronics."/>
+  </head>
+  <body>
+    <article>
+      <h1>Angriffe auf Trusted Platform Modules von Intel und STMicroelectronics</h1>
+      <h2>"TPM-Fail" extrahiert geheime ECDSA-Schlüssel aus dem vermeintlich geschützten Speicher von Intels fTPM 2.0 und einem ST33-TPM von STMicroelectronics.</h2>
+      <address><time datetime="2019-11-14T07:01:00+00:00">14 Nov 2019, 07:01</time> by <a rel="author">Christof Windeck</a></address>
+      <p>Abermals weisen Sicherheitsforscher bedenkliche Schwachstellen in zertifizierten Trusted Platform Modules (TPMs) nach. Der Angriff TPM-Fail kratzt am grundsätzlichen TPM-Konzept. Denn erstens soll ein solches TPM kryptografische Geheimnisse besonders sicher schützen, und zwar als zusätzliche Instanz unabhängig von Hauptprozessor und Betriebssystem. Zweitens durchlaufen derartige TPMs aufwendige Zertifizierungen in Speziallabors, die sie auf Schwachstellen abklopfen.</p>
+      <p>TPM-Fail weist nun am Beispiel des TPM-Chips STMicroelectronics ST33TPHF2ESPI und des weit verbreiteten Firmware-TPMs Intel fTPM 2.0 nach, dass der Schutz zu schwach ist: Den Experten gelang es jeweils, den geheimen Schlüssel für den Elliptic Curve Digital Signature Algorithm (ECDSA) durch eine im Prinzip altbekannte Timing-Attacke auszulesen.</p>
+      <p><b>[2. Update:]</b> Mittlerweile sind <a href="https://www.heise.de/meldung/Schwachstelle-TPM-Fail-Erste-Updates-und-Testsoftware-von-Intel-4587272.html">erste BIOS- und Firmware-Updates sowie Prüfsoftware</a> für Intel-Systeme verfügbar.</p>
+      <h3>Übersehene Schwachstellen</h3>
+      <p>Außerdem haben Zertifizierungen diese Schwachstellen übersehen: Beide TPM-Implementierungen erfüllen laut ihren Herstellern die Vorgaben von FIPS 140-2, das <a href="https://www.st.com/content/st_com/en/products/secure-mcus/authentication/authentication/st33tphf2espi.html">ST33TPHF2ESPI</a> zusätzlich die nach Common Criteria Evaluation Assurance Level 4+ (CC EAL 4+).</p>
+      <p>Schließlich zeigen die Reaktionen von Intel und STMicroelectronics (ST), dass trotz koordinierter Veröffentlichung mit langen Geheimhaltungsfristen noch Firmware-Updates fehlen – ganz abgesehen davon, dass das Patchen der Firmware sehr aufwendig sein kann.</p>
+      <p>Die praktischen Auswirkungen von TPM-Fail hängen von der Nutzung des betroffenen Schlüsselalgorithmus ab. Microsoft hat das <a href="https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/ADV190024">Security Advisory ADV190024 zu TPM-Fail</a> herausgegeben und stellt klar, dass Windows keine ECDSA-Schlüssel nutzt, beispielsweise nicht für BitLocker. Daher ist Windows nicht direkt von TPM-Fail betroffen. Windows-Software, die ECSDA-Schlüsseln des TPM vertraut, kann aber betroffen sein.</p>
+      <p>Beispielsweise lässt sich OpenSSL für VPN-Verbindungen so konfigurieren, dass es <a href="https://github.com/tpm2-software/tpm2-tss-engine">ECDSA-Signaturen des TPM</a> verwendet. Dann gelang es den TPM-Fail-Entdeckern, über eine schnelle Netzwerkverbindung im Laufe von mehreren Stunden dermaßen viele Zugriffe auszuführen, dass sich aus winzigen Zeitunterschieden bei der ECDSA-Verarbeitung auf den geheimen Schlüssel im TPM schließen ließ.</p>
+      <h3>Ältere TPM-Lücke bekannt</h3>
+      <p>Bereits 2017 war die <a href="https://www.heise.de/meldung/Hunderttausende-Infineon-Sicherheits-Chips-weisen-RSA-Schwachstelle-auf-3864691.html">ROCA-Lücke im RSA-Algorithmus von TPM-1.2-Chips von Infineon</a> bekannt geworden. Das Einspielen von Firmware-Updates mit Patches war bei manchen Systemen sehr aufwendig, weil TPM-Chips als Hardware-Vertrauensanker (Root of Trust, RoT) in exponierten Embedded Systems stecken oder weil bei Windows-Rechnern <a href="https://support.microsoft.com/de-de/help/4096377/windows-10-update-security-processor-tpm-firmware">zunächst die BitLocker-Verschlüsselung umgestellt werden musste</a>, um Updates ohne Datenverlust einzuspielen.</p>
+      <h3>TPM-2.0-Fail</h3>
+      <p>Die neue Schwachstelle namens TPM-Fail betrifft nur bestimmte TPM-2.0-Chips der Firma STMicroelectronics sowie Intels weit verbreitete Firmware-TPM-Implementierung (fTPM 2.0) in den meisten PCs, Notebooks, Tablets, Servern und Embedded Systems mit aktuellen Intel-Chips.</p>
+      <p>Das TPM ST33TPHF2ESPI mit SPI-Anschluss – es gibt auch eine Variante mit I²C – kommt laut den TPM-Fail-Entdeckern in manchen Lenovo-Notebooks zum Einsatz.</p>
+      <figure>
+        <img src="https://www.heise.de/imgs/18/2/7/8/7/8/9/6/TPM-Fail-3-9bd2538605ed62f0.png"/>
+        <figcaption>Timing-Attacke: Bei TPM-Fail misst der Angreifer die Zeit aus, die das TPM für die Verarbeitung gezielter Signaturanfragen benötigt. <br/>(Bild: TPM-Fail)</figcaption>
+      </figure>
+      <p>Intel hat am 12. November eine <a href="https://www.heise.de/meldung/Intel-fixt-Sicherheitsluecken-und-enthuellt-nebenbei-eine-neue-ZombieLoad-Variante-4584543.html">riesige Liste von Sicherheitsupdates</a> veröffentlicht, darin unter <a href="https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-00241.html">Intel Security Advisory SA-00241</a> (CVE-2019-11090) auch Firmware-Updates für betroffene fTPM-2.0-Implementierungen. Verwirrend ist dabei, dass das fTPM je nach Plattform Teil verschiedener Firmware-Pakete ist.</p>
+      <ul>
+        <li>Bei <b>Core-i-Prozessoren</b> spricht Intel von Platform Trust Technology (PTT), hier sind Firmware-Versionen ab 11.8.65, 11.11.65, 11.22.65, 12.0.35, 13.0.1201 beziehungsweise 14.0.10 geschützt.</li>
+        <li>Bei <b>(Xeon-)Servern</b> spricht Intel von Intel Server Platform Services (SPS), geschützt sind Firmware-Versionen ab SPS_E5_04.01.04.297.0, SPS_E3_04.01.04.083.0, SPS_SoC-X_04.00.04.101.0 und SPS_SoC-A_04.00.04.193.0.</li>
+        <li>Bei <b>Atom-Chips, Atom-Celerons und Pentium Silver</b> spricht Intel von Trusted Execution Engine (TXE), geschützt sind Firmware-Versionen ab 3.1.65 und 4.0.15.</li>
+      </ul>
+      <p>Die nötigen Firmware-Updates lassen sich je nach System entweder in Form eines BIOS-Updates einspielen (Supermicro pflegt etwa eine <a href="https://www.supermicro.com/en/support/security_Intel_IPU2019.2_Update">Liste betroffener Server-Mainboards</a>) oder über (Windows-)Software, die die ME-Firmware erneuert.</p>
+      <p>Dabei stiftet Intel zusätzliche Verwirrung, weil es nicht immer konkret den PTT-Firmware-Stand erwähnt, sondern den der ME-Firmware (Management Engine). Intels Marketing bevorzugt für die ME wiederum den Begriff CSME (Converged Security and Management Engine). Für aktuelle Mini-PCs der NUC-Familie scheint es jedenfalls noch keine Updates zu geben, die aktuelle BIOS-Version für mehrere NUC8i-Typen ist 0075 vom 23. Oktober und enthält <a href="https://downloadmirror.intel.com/29189/eng/BE_0075_ReleaseNotes.pdf">laut Release Notes</a> noch die "ME Firmware 12.0.32.1421".</p>
+      <p>Eine <a href="https://www.intel.de/content/www/de/de/support/articles/000031784/technologies.html">Software zum Auslesen der CSME-Version</a> ist zwar verfügbar, aber auch noch nicht an SA-00241 angepasst.</p>
+      <h3>ST-Firmware-Update</h3>
+      <p><a href="https://www.st.com/content/st_com/en/campaigns/tpm-update.html">ST informiert bisher nur sehr knapp</a> über die Möglichkeit, die betroffenen TPM-Chips per Firmware-Update zu schützen (CVE-2019-16863). Eine neue, wiederum zertifizierte Firmware stehe bereit. Das TPM-Fail-Team bestätigt, dass aktuelle ST33-Chips nicht von der Lücke betroffen sind.</p>
+      <p><b>[Update:]</b> Die <a href="https://www.commoncriteriaportal.org/files/epfiles/anssi-cc-2019_53fr.pdf">Zertifizierung des ST33TPHF2E</a> erfolgte durch das französische Labor Thales TCS-CNES. Welche Prüfungen grundsätzlich erfolgen können, erklärt der <a href="https://www.heise.de/select/ct/2018/5/1520028386174688">Bericht über einen Besuch bei TÜViT</a>. [/Update]</p>
+      <p>
+        <i>Paper zu TPM-Fail:</i>
+      </p>
+      <ul>
+        <li>Daniel Moghimi, Berk Sunar (Worcester Polytechnic Institute), Thomas Eisenbarth (Uni Lübeck), Nadia Heninger (University of California San Diego): <a href="http://tpm.fail/">TPM-Fail, TPM meets Timing and Lattice Attacks</a></li>
+      </ul>
+      <p>(<a href="mailto:ciw@ct.de">ciw</a>)</p>
+    </article>
+  </body>
+</html>

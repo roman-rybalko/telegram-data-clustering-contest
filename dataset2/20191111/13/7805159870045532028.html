@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://www.xda-developers.com/google-announces-chrome-developer-tools-reduce-page-loads-native-app-experiences/"/>
+    <meta property="og:site_name" content="XDA Developers"/>
+    <meta property="article:published_time" content="2019-11-11T13:15:00+00:00"/>
+    <meta property="og:title" content="Google announces new Chrome developer tools to reduce page loads and build native app-like experiences"/>
+    <meta property="og:description" content="At the Chrome Dev Summit 2019, Google announced new tools for developers to improve the user experience, reduce load times, and increase safety on the web."/>
+  </head>
+  <body>
+    <article>
+      <h1>Google announces new Chrome developer tools to reduce page loads and build native app-like experiences</h1>
+      <address><time datetime="2019-11-11T13:15:00+00:00">11 Nov 2019, 13:15</time> by <a rel="author" href="https://www.xda-developers.com/author/tusharmehta/" target="_blank">Tushar Mehta</a></address>
+      <p>Two decades ago, Google started off as a web search engine, but today, it dominates how we experience and interact with the web. Google Search, in itself, hugely commands most of the online usage, but other products like the world’s most popular browser – <a href="https://www.xda-developers.com/tag/google-chrome/">Google Chrome</a> – as well as the most used mobile operating system – Android – has put Google in the lead among other stakeholders of the web. The percentage of users going online using mobile devices has increased and so has the internet giant’s emphasis on reducing load times to ensure stickiness. AMP or <a href="https://www.xda-developers.com/accelerated-mobile-pages-what-are-they-and-how-do-i-implement-them/">accelerated mobile pages</a> was one step Google took to ensure faster loading of webpages. Last year, it also introduced a web element known as “<a href="https://www.xda-developers.com/google-portals-revamp-browsing-mobile-websites/">Portals</a>” to optimize “seamless” switching between webpages.</p>
+      <p>With the vision to “<i>make loading disappear</i>,” Google today announced new developer tools at the <a href="https://developer.chrome.com/devsummit/">Chrome Dev Summit 2019</a> to make the web safer and more user-friendly while also improving the chances of helping developers boost their user base as well as revenues.</p>
+      <h3>Portals</h3>
+      <p>Google demonstrated the progress that <b>Portals </b>has made since they launched it at Google I/O earlier this year and implemented behind a flag in Chrome Canary. To refresh your memory, Portals allows developers to embed certain content or entire webpages into another webpage just like an iframe. In order to eliminate any wait time, the content inside the Portal or the frame loads while users are still browsing the initial webpage.</p>
+      <figure>
+        <video src="https://www.xda-developers.com/files/2019/11/Fandango_rotateright.mp4?_=1"/>
+      </figure>
+      <p>Google has shared an example of movie ticketing service Fandango in which the landing page for a particular movie (<i>Joker</i> in the example) is bound inside a Portal. When a user taps on Joker, the next page is rendered already fully loaded.</p>
+      <h3>Web Bundles</h3>
+      <p>Google is announcing <b>Web Bundles</b> which is created to help web developers share their web content with others through a variety of mediums, including but not limited to email, USB, or FTP. Developers will be able to effectively cache the entire web content intended to be shared using APIs like <b>Background Periodic Sync</b> and <b>Content Indexing</b> and then selectively render the required content even if the end-user is not connected to the internet. To enable web developers to utilize this functionality, Google is making Web Bundles available behind a Chrome flag while the two APIs will be available as <a href="https://github.com/GoogleChrome/OriginTrials/blob/gh-pages/developer-guide.md">origin trials</a>.</p>
+      <h3>Native-like web experience</h3>
+      <p>While being aware that plenty of users use their mobile phones to go online, Google also acknowledges the cross-device usage patterns across the world. For more than a couple of years, Google has been pushing <a href="https://www.xda-developers.com/progressive-web-apps-replace-google-chrome-apps/">Progressive Web Apps</a> (PGAs) as a substitute for native Android apps with the objective of reducing loading time and data consumption.</p>
+      <figure>
+        <video src="https://www.xda-developers.com/files/2019/11/Login_OTP_Flow_Swiggy.mp4?_=2" autoplay="" loop=""/>
+      </figure>
+      <p>To align the applications on the web with native apps, Google is announcing three new features for developers. These are:</p>
+      <ol>
+        <li><b>SMS Receiver</b>, which will allow web apps to fetch SMS-based authentication codes just like apps can. In the video above, you can see how seamlessly the web version of Swiggy, an Indian food ordering service, suggests the user to leverage the verification code received via SMS.</li>
+        <li><b>Contact Picker</b>, which will let users upload contacts on to web apps in a fashion similar to the contact sharing on messaging apps like <a href="https://forum.xda-developers.com/t/whatsapp">WhatsApp</a>.</li>
+        <li><b>Native File System API</b>, which will give web apps the permission and the facility to read files and folders from a user’s device and save changes to them directly. Potential applications of this feature may include online text editors, photo and video editors, even web-based IDEs, and more.</li>
+      </ol>
+      <p>These APIs will also be available as origin trials for Google Chrome.</p>
+      <h3>New metrics and guidance for developers</h3>
+      <p>To help contextualize the general “health of the web,” Google has announced a project called <a href="https://almanac.httparchive.org/en/2019/">The Web Almanac</a> in partnership with the <a href="https://httparchive.org/">HTTP Archive</a>. With guidance from 85 experts, the project is aimed at seeking insights and visualizing trends on actionable data about the best and the worst practices on the web.</p>
+      <p>The mission involved reviewing nearly 6 million websites, after which these experts have condensed their conclusions on ways to improve user experience in <a href="https://almanac.httparchive.org/en/2019/table-of-contents">20 chapters</a>. This practice will be repeated as an “annual tradition” so that the Almanac remains a resourceful guide for web developers.</p>
+      <p>Along with this, Google is also introducing two new metrics to help developers optimize their websites for the best practices. These are:</p>
+      <ol>
+        <li><a href="https://web.dev/lcp/"><b>Largest Contentful Paint (LCP)</b></a>, which the “perceived” loading time of a webpage. Simply put, it is the loading time of the “largest element visible in the viewpoint.” This will quantify how quickly are the key elements on a webpage loaded so that developers can eliminate any sort of lag. The LCP is calculated for the time before the user interacts with the page so the intent here is to minimize the loading delay as much as possible.</li>
+        <li><b><a href="https://web.dev/cls/">Cumulative Layout Shift (CLS)</a></b>, which is used the gauge the stability of webpages. It can help developers determine how often elements like buttons or a particular image changes its location on the viewable part while the page is loading. Thus, CLS can help developers eliminate this frustrating issue of elements changing their position while the page loads. This metric relies on “layout shift score” which measures the tendency of page elements to shift while loading, thereby troubling users. The layout shift score should be ideally zero – or at least as close to zero as possible – to ensure an hassle-free experience for the users.</li>
+      </ol>
+      <p>With the objective of helping developers achieve the best performance, accessibility, and efficiency on their websites, Google is expanding the scope of <a href="https://github.com/GoogleChrome/lighthouse-stack-packs">Lighthouse Stack Packs</a> to a variety of frameworks. Besides WordPress and Next.js, which is already supported by Lighthouse, Google is adding support for frameworks such as AMP, Angular, React, as well as Magento, the CMS catering exclusively to e-commerce websites.</p>
+      <h3>Improve memory management, better privacy, and greater control</h3>
+      <p>Google claims to be investing time, effort, and money into remedying one of the biggest complaints with Google Chrome and that is memory consumption. Besides working on improving memory management, they are also constantly improving the performance of Chrome to ensure that the web remains accessible to all irrespective of “<i>their device type or internet speed or purchasing power.</i>”</p>
+      <p>In terms of privacy, the next version of Google Chrome i.e. ver79 will be improving how cookies are handled. This includes a new toggle on the New Tabs Page in the Incognito mode to help users control third-party cookies much better. The Settings page will also be tweaked to make this toggle easily accessible in the regular mode.</p>
+      <p>Google is furthering its efforts into the development of <a href="https://www.blog.google/products/chrome/building-a-more-private-web/">Privacy Sandbox</a>, which is defined as the set of open standards laid out to improve privacy online. The Privacy Sandbox is aimed at allowing websites to deploy cookies without making users feel overwhelmed or insecure due to ads while also finding ways to block fingerprinting.</p>
+    </article>
+  </body>
+</html>

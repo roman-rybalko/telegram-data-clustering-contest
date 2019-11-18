@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://habr.com/en/post/475136/"/>
+    <meta property="og:site_name" content="Habr"/>
+    <meta property="article:published_time" content="2019-11-09T10:16:32+00:00"/>
+    <meta property="og:title" content="Machine Learning for your flat hunt. Part 3: The final push"/>
+    <meta property="og:description" content="Photo by Dugan Arnett on Boston Globe Are you still looking for a new flat? Ready to make the last attempt? If so  -  follow me and I show you how to reach the..."/>
+  </head>
+  <body>
+    <article>
+      <h1>Machine Learning for your flat hunt. Part 3: The final push</h1>
+      <address><time datetime="2019-11-09T10:16:32+00:00">09 Nov 2019, 10:16</time> by <a rel="author" href="https://habr.com/en/users/veesot/" target="_blank">veesot</a></address>
+      <figure>
+        <img src="https://habrastorage.org/webt/yj/dy/xa/yjdyxaijfwrdh4wzjpx1fyphbuw.jpeg"/>
+        <figcaption>Photo by Dugan Arnett on Boston Globe</figcaption>
+      </figure>
+      <p>Are you still looking for a new flat? Ready to make the last attempt? If so  -  follow me and I show you how to reach the finish line.</p>
+      <h3>Short introduction and references</h3>
+      <p>It is the third part of the cycle directed to explain how could you find the optimal flat on the real estate market. In a few words the main idea - find the best offer among apartments in Yekaterinburg, where I lived before. But I think the same idea can be considered in the context of another city.</p>
+      <p>If you have not read the previous parts, it would be a good idea to read them <a href="https://habr.com/en/post/468053/">Part1</a> and <a href="https://habr.com/en/post/470710/">Part2</a>.</p>
+      <p>Also, you could find out Ipython-notebooks <a href="https://github.com/VeeSot/flats">over there</a>.<br/>This part had to be much shorter than previous ones, but the devil is in details.</p>
+      <h3>Consequences</h3>
+      <p>As a result of all actions, we got an ML model (Random Forest) which works quite well. Not so good as we expected (the score is above 87%), but for real data, it is good enough. And… let me be honest, that thoughts about result had a strange affect on me. I wanted more score, the gap between the result which was expected and the real prediction was smaller than 3%. Optimism mixed with greed has gone to my head</p>
+      <figure>
+        <img src="https://habrastorage.org/webt/9l/m9/lk/9lm9lkw5g9pcbkeeolew26yakkw.jpeg"/>
+        <figcaption>I want more <s>gold</s> accuracy</figcaption>
+      </figure>
+      <p>It is widely known, if you want to improve something there will be probably opposite approaches. Usually, it looks like a choice between:</p>
+      <ul>
+        <li>Evolution vs revolution</li>
+        <li>Quantity vs quality</li>
+        <li>Extensive vs intensive</li>
+      </ul>
+      <p>And because of a lack of will to change horses in midstream, I decided to use RF (Random Forest) with adding a few new features.</p>
+      <p>It seemed like an idea, "we just need more features" for making the score better. At least that is what I thought.</p>
+      <h3>Per aspera ad astra (through hardships to the stars)</h3>
+      <p>Let try to think about related features, which could influence a flat's price. There are features of flat like balcony or age of house and geo-related features like distance to the nearest metro/bus station. What could be next for the same approach with RF?</p>
+      <h4>Idea #1. Distance to centre</h4>
+      <p>We could reuse longitude and latitude (flat coordinates). Base on this information we could count the distance to the centre of the city. The same idea was used for districts, the far we flat located from the centre, the cheaper it should be. And guess what… it works! Not such big growth (<b>+1%</b> of score), but it is better than nothing.</p>
+      <p>Only one problem is there, the same idea does not make sense for districts which are very far. If you lived outside a city, you could know that there are other rules for the price.</p>
+      <p>It will not be easy for interpretation if we extrapolate that approach.</p>
+      <h4>Idea #2. Near metro</h4>
+      <p>The metro has a significant influence on price. Especially when it placed in a zone of walking distance. But the meaning of "a walking distance" is not clear. Each person can interpret that parameter in different ways. I could set the limit by manually, but an increase of score would not be over <b>0.2%</b></p>
+      <p>At the same time, it does not work with flat from the previous idea. There is no metro nearby.</p>
+      <h4>Idea #3. Rationality and equilibrium of the market</h4>
+      <p>The equilibrium of the market is a combination of demand and offer. Adam Smith talked about it. Of course, the market can be overblown. But in general, this idea works well. At least for houses which in the process of construction.</p>
+      <p>In other words - the more competitors do you have the less probability that people buy your flat (other things being equal). And this produces a supposition - "if around me are placed other flats I need to decrease the price for getting more buyers".</p>
+      <p>And It sounds like a quite logical conclusion, is not it?</p>
+      <p>So I counted SIMILAR flats near each of them, in the same house and within radius 200 meters. The measures were made for date of selling. Which result would you expect to take? Only <b>0.1%</b> on cross-validation. Sad but true.</p>
+      <hr/>
+      <h3>Rethinking</h3>
+      <blockquote>Quitting Is … sometimes to take one step backward to take two steps forward.<br/><br/>— an unknown wise person</blockquote>
+      <p>Okay, a head-on attack does not work. Let's consider this situation from another angle.</p>
+      <p>Let suppose you are a person who wants to buy a flat near-by river far from the noisy city. You have three variants of advertisement which are similar to each other and price the same (more or less). Formal metrics which describing flat gives you nothing about the environment, they are only metrics on a screen. But there is something important.</p>
+      <figure>
+        <img src="https://habrastorage.org/webt/zg/9j/jm/zg9jjmx04quhqfqcwqiko-q_hna.png"/>
+        <figcaption>A description of a flat is a terrific opportunity.</figcaption>
+      </figure>
+      <p>A flat description could provide everything that you need. It could tell you a story about flat, about neighbours and amazing opportunities related to that specific living place. And sometime one description could make more sense than boring numbers.<br/>But in real life is slightly different from our expectation. Let me show you what will/will not work and why.</p>
+      <h4>What will not work and why?</h4>
+      <p><b>Expectations</b> - "Whoa! I can try to classify text and find 'good' and 'bad' flats. I will use the same method which usually used for sentiment analyse".</p>
+      <p><b>Reality</b> - "No, you will not do it. People write nothing bad against their flat. There can be glossing over a real situation or lie"</p>
+      <p><b>Expectations</b> - "Okay. Then I can try to find patterns and find the target audience for a flat. For instance, it could be elderly people or students".</p>
+      <p><b>Reality</b> - "No, you will not do it. Sometimes one advertisement has a mention about different ages and social groups, it is just marketing"</p>
+      <h4>What probably would work and why</h4>
+      <p><b>Some keywords</b> - There are words which point out at specific things or moments related to flat. For example, when it is a studio, price would be lower. In general, verbs are useless, but nouns and adverbs can give more context.</p>
+      <p><b>The alternative source of information</b> - Using description for filling empty or NaN-values more correct. Sometimes the description contains more information than formal features of advertisement.</p>
+      <p>I suspect it based on human laziness to fill not required fields like "balcony". Putting everything in the description seems like a more preferable idea</p>
+      <h3>Getting information</h3>
+      <p>I skip describing of the typical process of tokenisation/lemmatization/stemming. Also, I believe that there are authors able to describe it better than me.</p>
+      <p>Although I think there should be a mention of the toolset used for extracting features. In nutshell, it looks like.</p>
+      <figure>
+        <img src="https://habrastorage.org/webt/lr/e8/53/lre853kpee2cyuwnu6wqo8y6sio.png"/>
+        <figcaption>separating-&gt;matching by part of speech</figcaption>
+      </figure>
+      <p>After pre-processing of advertisement text I got a set of Russian words like these.</p>
+      <figure>
+        <img src="https://habrastorage.org/webt/sb/0q/lx/sb0qlxyhx4n_50go7u4ryofkg_m.png"/>
+        <figcaption>The original text is placed <a href="https://pastebin.com/Pxh8zVe3">https://pastebin.com/Pxh8zVe3</a></figcaption>
+      </figure>
+      <p>I tried to use the approach from Word2Vec, but there was not a special dictionary for flats and advertisements, so the general picture looked weird</p>
+      <figure>
+        <img src="https://habrastorage.org/webt/uh/we/ls/uhwelsmg_mgtfamtjdtuncts9lo.png"/>
+        <figcaption>the distance between words does not suitable to expectations</figcaption>
+      </figure>
+      <p>Therefore I kept it as simple as possible and decided to make several new columns for dataset</p>
+      <hr/>
+      <h3>A little less conversation, a little more action</h3>
+      <p>Time to get our hands dirty and do some practical things. Find out new features. Several important factors were separated by an influence on price.</p>
+      <h4>positive impact</h4>
+      <ul>
+        <li><b>furniture</b>  —  sometimes people could leave a bed, a washer and so on.</li>
+        <li><b>luxury</b>  -  flats with luxurious things like jacuzzi, or an exclusive interior</li>
+        <li><b>video-control</b>  -  it makes people feel safe, frequently it considers it as advantage</li>
+      </ul>
+      <h4>negative impact</h4>
+      <ul>
+        <li><b>dorm</b> -  yes, sometimes it is a flat in a dorm. Not s o popular, but significantly cheaper than an average flat</li>
+        <li><b>rush</b>  -  when people rush to sell out their flat usually they are ready to decrease price.</li>
+        <li><b>studio</b>  -  as I said before - they are cheaper than their flats-analogues.</li>
+      </ul>
+      <p>Let's collect them in something universal</p>
+      <pre>df3 = pd.read_csv('flats3.csv')<br/><br/>positive_impact = ['мебель', 'luxury','видеонаблюдение']<br/>negative_impact  = ['studio', 'rush','dorm']<br/>geo_features = ['metro','num_of_stops_1km','num_of_shops_1km','num_of_kindergarden_1km',          'num_of_medical_1km','center_distance']<br/>flat_features=['total_area', 'repair','balcony_y', 'walls_y','district_y', 'age_y']<br/>competitors_features = ['distance_200m', 'same_house']<br/>cols = ['cost']<br/>cols+=flat_features<br/>cols+=geo_features<br/>cols+=competitors_features<br/>cols+=positive_impact<br/>cols+=negative_impact<br/>df3 = df3[cols]</pre>
+      <h4>general impact</h4>
+      <p>it is just a combination of negative and positive features. Initially, for every flat, it equals 0. For example, studio with video-control will still have general impact equals 0(<i>1[positive]–1[negative]=0</i>)</p>
+      <pre>df3['impact'] = 0<br/>for i, row in df3.iterrows():<br/>    impact = 0<br/>    for positive in  positive_impact:<br/>        if row[positive]:<br/>             impact+=1<br/>    for negative in  negative_impact:<br/>        if row[negative]:<br/>            impact-=1<br/>    df3.at[i, 'impact'] = impact</pre>
+      <p>Okay, we have a data, new features and old target with 10% of mean error for prediction. Do some typical operation as we did before</p>
+      <pre>y = df3.cost<br/>X = df3.drop(columns=['cost'])<br/><br/>X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2,                                                random_state=42)</pre>
+      <h3>Old approach(extensive growth of features)</h3>
+      <p>We will make a new model based on old ideas</p>
+      <pre>data = []<br/>max_features =  int(X.shape[1]/2)<br/>for x in range(1,20):<br/>    regressor = RandomForestRegressor(verbose=0,<br/>                                      n_estimators=128,<br/>                                      max_features=max_features, <br/>                                      max_depth=x,<br/>                                      random_state=42)<br/>    model =   regressor.fit(X_train, y_train)<br/>    score = do_cross_validation(X, y, model)<br/>    data.append({'max_depth':x,'score':score})<br/>data = pd.DataFrame(data)<br/>f, ax = plot.subplots(figsize=(10, 10))<br/>sns.lineplot(x="max_depth", y="score", data=data)<br/>max_result = data.loc[data['score'].idxmax()]<br/><br/>ax.set_title(f'Max score - {max_result.score}\nDepth {max_result.max_depth} ')</pre>
+      <p>And the result was slightly… unexpected.</p>
+      <figure>
+        <img src="https://habrastorage.org/webt/us/et/xv/usetxvj9vr4pjrsfnx-7jzcruqm.png"/>
+      </figure>
+      <p>92% is overwhelming result. I mean, to say I was shocked would be an understatement.</p>
+      <p>But why it worked so well? Let's have a look at new features.</p>
+      <pre>regressor = RandomForestRegressor(random_state=42,<br/>                                  max_depth=max_result.max_depth,<br/>                                  n_estimators=128,<br/>                                  max_features=max_features)<br/>rf3 =   regressor.fit(X_train, y_train)<br/>feat_importances = pd.Series(rf3.feature_importances_, index=X.columns)<br/>feat_importances.nlargest(X.shape[1]).plot(kind='barh')</pre>
+      <figure>
+        <img src="https://habrastorage.org/webt/lj/27/a8/lj27a8esi5qhxqdycqwgduvq1ki.png"/>
+        <figcaption>
+          <b>Importance all features for our model</b>
+        </figcaption>
+      </figure>
+      <p>The importance does not give information about the contribution of features(that is a different story ), it is only showing how active model use one or another feature. But for the current situation, it looks informative. Some of the new features are more important than previous ones, others almost useless.</p>
+      <h3>New approach(intensive work with data)</h3>
+      <p>Well… the finish line is crossed, the result is achieved. Could it be better?<br/>Short answer - <i>"Yes, it could"</i></p>
+      <ul>
+        <li>First, we could reduce the depth of a tree. It will lead to a smaller time for training and prediction as well.</li>
+        <li>Second, we could a little bit increase a score of prediction.</li>
+      </ul>
+      <p>For both moments we will use <b>XGBoost</b>. Sometimes people prefer to use other boosters like <b>LightGBM</b> or <b>CatBoost</b>, but my humble opinion - the first one is good enough when you have a lot of data, a second one is better if you have work with categorical variables. And as a bonus - XGBoost just seems faster</p>
+      <pre>from xgboost import XGBRegressor,plot_importance<br/>data = []<br/>for x in range(3,10):<br/>    regressor = XGBRegressor(verbose=0,<br/>                             reg_lambda=10,<br/>                             n_estimators=1000,     <br/>                             objective='reg:squarederror', <br/>                             max_depth=x,<br/>                             random_state=42)<br/><br/>    model =   regressor.fit(X_train, y_train)<br/>    score = do_cross_validation(X, y, model)<br/>    data.append({'max_depth':x,'score':score})<br/>data = pd.DataFrame(data)<br/>f, ax = plot.subplots(figsize=(10, 10))<br/>sns.lineplot(x="max_depth", y="score", data=data)<br/>max_result = data.loc[data['score'].idxmax()]<br/><br/>ax.set_title(f'Max score-{max_result.score}\nDepth {max_result.max_depth} ')</pre>
+      <figure>
+        <img src="https://habrastorage.org/webt/zb/23/4j/zb234jravshc6z1zepkcc90gd0a.png"/>
+      </figure>
+      <p>
+        <i>The result is better than the previous one.</i>
+      </p>
+      <p>Of course, it is the not big difference between Random Forest and XGBoost. And each of them could be used as a good tool for resolving our problem with prediction. It is up to you.</p>
+      <h3>Conclusion</h3>
+      <p>Is the result achieved? Definitely yes.</p>
+      <p>The solution is available <a href="https://sotnikov.io/flaty/">there</a> and can be used anyone for free. If you are interested in the evaluation of an apartment using this approach, please do not hesitate and contact me.</p>
+      <p>As prototype it placed <a href="https://sotnikov.io/flaty/prediction">there</a></p>
+      <p><b>Thank you for reading!</b>.</p>
+      <related>
+        <h4>Similar posts</h4>
+        <a href="https://habr.com/en/post/441138/"/>
+        <a href="https://habr.com/en/post/436218/"/>
+        <a href="https://habr.com/en/post/431326/"/>
+      </related>
+    </article>
+  </body>
+</html>

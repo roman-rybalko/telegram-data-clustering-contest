@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://www.zdnet.com/article/officials-warn-about-the-dangers-of-using-public-usb-charging-stations/"/>
+    <meta property="og:site_name" content="ZDNet"/>
+    <meta property="article:published_time" content="2019-11-14T19:44:00+00:00"/>
+    <meta property="og:title" content="Officials warn about the dangers of using public USB charging stations"/>
+    <meta property="og:description" content="Travelers should use only AC charging ports, use USB no-data cables, or &quot;USB condom&quot; devices."/>
+  </head>
+  <body>
+    <article>
+      <h1>Officials warn about the dangers of using public USB charging stations</h1>
+      <address><time datetime="2019-11-14T19:44:00+00:00">14 Nov 2019, 19:44</time> by <a rel="author" href="https://www.zdnet.com/meet-the-team/us/catalin.cimpanu/" target="_blank">Catalin Cimpanu</a></address>
+      <p>
+        <b>Travelers should use only AC charging ports, use USB no-data cables, or "USB condom" devices.</b>
+      </p>
+      <p>Travelers are advised to avoid using public USB power charging stations in airports, hotels, and other locations because they may contain dangerous malware, the Los Angeles District Attorney said in a security alert published last week.<br/><br/>USB connections were designed to work as both data and power transfer mediums, with no strict barrier between the two. As smartphones became more popular in the past decade, security researchers figured out they could abuse USB connections that a user might think was only transferring electrical power to hide and deliver secret data payloads.<br/><br/>This type of attack received its own name, as "juice jacking."<br/><br/>Across the years, several proofs-of-concept were created. The most notorious is <a href="https://media.blackhat.com/us-13/US-13-Lau-Mactans-Injecting-Malware-into-iOS-Devices-via-Malicious-Chargers-WP.pdf">Mactans</a>, presented at the Black Hat 2013 security conference, which was a malicious USB wall charger that could deploy malware on iOS devices.<br/><br/>Three years later, in 2016, security researcher Samy Kamkar took the concept further with <a href="https://samy.pl/keysweeper/">KeySweeper</a>, a stealthy Arduino-based device, camouflaged as a functioning USB wall charger that wirelessly and passively sniffs, decrypts, logs, and reports back (over GSM) all keystrokes from any Microsoft wireless keyboard in the vicinity.</p>
+      <p>Following Kamkar's release of KeySweeper, <a href="https://news.softpedia.com/news/fbi-warns-against-wireless-keystroke-loggers-disguised-as-usb-chargers-504435.shtml">the FBI sent out a nation-wide alert</a> at the time, warning organizations against the use of USB chargers and asking companies to review if they had any such devices in use.<br/><br/>Also, in 2016, another team of researchers developed another proof-of-concept malicious USB wall charger. This one could record and mirror the screen of a device that was plugged in for a charge. The technique become known as "<a href="https://krebsonsecurity.com/2016/08/road-warriors-beware-of-video-jacking/">video jacking</a>."</p>
+      <p>The LA District Attorney's warning [<a href="http://da.lacounty.gov/sites/default/files/pdf/110819_Fraud_Friday_USB_Charger_Scam_ENGLISH_FLIER.pdf">PDF</a>] covers many attack vectors, because there's different ways that criminals can abuse USB wall chargers.<br/><br/>The most common way is via "pluggable" USB wall chargers. These are portable USB charging devices that can be plugged into an AC socket, and criminals can easily leave some of these behind "by accident" in public places, at public charging stations.<br/><br/>There are also USB chargers encased directly inside power charging stations installed in public places, were the user only has access to a USB port. However, LA officials say criminals can load malware onto public charging stations, so users should avoid using the USB port, and stick to using the AC charging port instead.<br/><br/>But the LA DA's warning also applies to USB cables that have been left behind in public places. Microcontrollers and electronic parts have become so small these days that criminals can hide mini-computers and malware inside a USB cable itself. One such example is the <a href="https://mg.lol/blog/omg-cable/">O.MG Cable</a>. Something as benign as a USB cable can hide malware nowadays.</p>
+      <figure>
+        <iframe data-src="https://twitter.com/_MG_/status/1116830138195304449?ref_src=twsrc%5Etfw" data-embed-type="twitter-tweet" width="100%" height="0" data-service="Twitter" scrolling="no" nowide=""/>
+      </figure>
+      <p>Taking all these into account, LA officials recommend that travelers:</p>
+      <ul>
+        <li>Use an AC power outlet, not a USB charging station.</li>
+        <li>Take AC and car chargers for your devices when traveling.</li>
+        <li>Consider buying a portable charger for emergencies.</li>
+      </ul>
+      <p>But there are also other countermeasures that users can deploy. One of them is that device owners can buy USB "no-data transfer" cables, where the USB pins responsible for the data transfer channel have been removed, leaving only the power transfer circuit in place. Such cables can be found on Amazon and other online stores.<br/><br/>There are also so-called "USB condoms" that act as an intermediary between an untrusted USB charger and a user's device.<br/><br/>Two such devices are <a href="http://syncstop.com/">SyncStop</a> (formerly known as USB Condom) and <a href="https://www.chargedefense.com/product/juice-jack-defender-turbo/">Juice-Jack Defender</a>. Many others also exist, and at one point, even Kaspersky researchers tried to build one -- called <a href="https://www.kickstarter.com/projects/1554074090/purecharger">Pure.Charger</a> -- but their Kickstarter fundraiser failed to raise the needed funds.</p>
+      <figure>
+        <img src="https://zdnet2.cbsistatic.com/hub/i/r/2019/11/14/f9ff0e79-b651-4665-8562-5e472deabdd4/resize/370xauto/814d469ff752bee256aff80daa07441b/charge-defender.png"/>
+        <figcaption>Image: ChargeDefense LLC</figcaption>
+      </figure>
+      <p><b>Update, November 15:</b> After the publication of this article, there has been a wave of criticism from security researchers and the cyber-security community, who did not believe the LA DA's security alert was adequate, as there have been no known cases of "juice jacking" incidents detected in the real world, and beyond experimental work presented at security conferences. Furthermore, many have pointed out that since the first juice jacking demos back in 2013, both Android and iOS have now incorporated popups in their user interface to alert a user when a USB port is attempting to transfer data, rather than just electrical power.<br/><br/>US authorities usually issue security alerts based on reports and threats they see in the real world. After failing to respond to a phone call yesterday, the LA DA told fellow tech news site TechCrunch today that the security alert was <a href="https://twitter.com/zackwhittaker/status/1195349710720163841">part of an educational campaign</a>, and not based on juice jacking attacks they've detected in the wild. The original LA DA advisory is still labeled as a "fraud alert" and "PSA" on the LA DA's website, though, with no evidence this is part of an educational campaign. However, the advice given to travelers is in no way bad or incorrect, and users should follow it.</p>
+    </article>
+  </body>
+</html>

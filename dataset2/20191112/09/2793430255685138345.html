@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://habr.com/en/post/475482/"/>
+    <meta property="og:site_name" content="Habr"/>
+    <meta property="article:published_time" content="2019-11-12T09:16:15+00:00"/>
+    <meta property="og:title" content="How's test task became a production library"/>
+    <meta property="og:description" content="Hello everyone! Today I'm going to tell about how is test task to job interview became the library Image Comparison. It's an open-source library, which is..."/>
+  </head>
+  <body>
+    <article>
+      <h1>How's test task became a production library</h1>
+      <address><time datetime="2019-11-12T09:16:15+00:00">12 Nov 2019, 09:16</time> by <a rel="author" href="https://habr.com/en/users/romankh3/" target="_blank">romankh3</a></address>
+      <p>Hello everyone!<br/><br/>Today I'm going to tell about how is test task to job interview became the library <a href="https://github.com/romankh3/image-comparison">Image Comparison</a>. It's an open-source library, which is hosting on GitHub.<br/><br/>Before I start, let me introduce myself. My name is Roman. I'm a husband and father. I'm a software engineer in Epam Systems with 4 years of experience in IT. <br/><br/>The main idea of this topic is to tell, that creating an open-source product it's not wasting time, no! It's an amazing experience, which is going from all the open-source community. It's a time when you're a developer, project manager, product manager in one head. <br/><br/>While this library is growing I have been working with people from more than 10(!!) countries, such as the USA, Germany, Chine, India, Russia, Ukraine, etc.<br/><br/>Let's move on from the start of this story…</p>
+      <h3>Test task to the job interview. August 2017.</h3>
+      <p>At the beginning of August 2017, I had an interview in one IT company, where is the first step was to do the test task.<br/><br/>The task was to create the program in Java that compares any 2 images with the same sizes and shows the difference visually by drawing rectangles. A detailed requirement can be found <a href="https://github.com/romankh3/image-comparison/tree/v1.0">here</a>.<br/><br/>I decided that I want to do my best. For this purpose, I decided to host my test task on GitHub. I wanted to kill two birds with one stone: provide the solution, which as open-source and research how GitHub works. <br/><br/>After some time, I found Marketplace on GitHub, which has a lot of services to use with the GitHub repositories. For open-source projects all free. It's the first time, where I've got that the open-source is the best community. <br/><br/>I've added the next services:</p>
+      <ul>
+        <li>Codacy — is a code quality service.</li>
+        <li>Travis CI — Continuous Integration tool.</li>
+        <li>Coveralls — test coverage history &amp; statistics</li>
+        <li>BetterCodeHub — code quality service.</li>
+      </ul>
+      <p>The results of these services can be added to README as a barge. In my opinion, it's making more interesting to read README.<br/><br/>When the test task was done, I've sent it and waited for feedback. I've got several issues, which were important and were added to the ISSUE section to the repository.<br/><br/>One of them — overlapping rectangles… <br/><i>Rectangles can overlap and be included one-into-one. This behavior leads to some garbage on the resulting image. Desired effect: merge rectangles which included one-into-one to one rectangle.</i></p>
+      <h3>Test task as a Library. July 2018</h3>
+      <p>After some time, I explored that many people visit my library on GitHub. Really, I didn't think that someone interested in my test project.</p>
+      <h4>Logo</h4>
+      <p>Next, I found that someone proposed a logo. It was a graphic designer dee-y. I wasn't in the open-source community before and this proposal was really strange for me. Why someone wants to do it for free. But he told me that he loved contributing to open-source projects. Kind of a life goals thing. It's really amazing.<br/><br/>Logo for the project — it's a cool idea and I accepted it. There were many options. <br/><br/>From</p>
+      <figure>
+        <img src="https://user-images.githubusercontent.com/36637989/41949799-da405f9e-79ba-11e8-8cd4-0af3ac36567e.jpg"/>
+      </figure>
+      <p>To</p>
+      <figure>
+        <img src="https://user-images.githubusercontent.com/36637989/41961987-d564bf20-79eb-11e8-9cc5-b5dd15e166be.jpg"/>
+      </figure>
+      <p>Final</p>
+      <figure>
+        <img src="https://user-images.githubusercontent.com/36637989/41973027-a965090a-7a0b-11e8-922b-0fb4b4e47eb8.jpg"/>
+      </figure>
+      <p>It was the first time when I communicated in the open-source community. The new experience, a new acquaintance.</p>
+      <h4>The first bug from the community</h4>
+      <p>After some time I found an open GitHub issue with the bug. It was a developer from China. <br/>The bug was about the problem with big images. He used large images and have got StackOverflowError. I was surprised, that someone used my code and found the bug, moreover, the developer created an issue.<br/><br/>It was my first challenge. Challenge to understand how to resolve this bug. <br/><br/>After some time, the QA automation engineer from Russia proposed a solution to this bug, but I declined it because the Pull-Request wasn't prepared as it must. It was my fault, I needed to see and try to understand the solution. It could help me to resolve it much faster. <br/><br/>By that time I'd had two major issues, which were critical.</p>
+      <h4>Command Line usage. Fall of 2018</h4>
+      <p>The next stage in the development was working with Renato Athaydes, he's a software developer from Stockholm, Sweden. <br/><br/>He proposed changes by allowing using image-comparison as a traditional CLI. It was so exciting to hear, that someone wants to extend the usage of the image-comparison and open a new niche in development. <br/><br/>Renato resolved all the comments, which I created and I've added new release — v2.0. I started to create releases in the GitHub repository. This is really useful, because of the reason, that I can quickly get all the changes, which was in a specific release, all the description of the release, who is contributing it, etc.<br/><br/>Next, Renato asked me to add image-comparison to Maven Central. I haven't had any experience with publishing libraries to Maven Central and Renato pleased to add all the needed changes to the project for publishing. Publishing to Maven Central allows adding the library as a dependency without any problems. One big problem was to publish it.<br/><br/>But before publishing, I had to fix two major bugs in the system. I spent much time to fix them and in April 2019 I have added new release — v.2.0.2.</p>
+      <h4>Publishing in Maven Central. April 2019</h4>
+      <p>To properly publish the library, you need to deal with versioning. After researching this issue, I began to adhere to the following scheme: MAJOR.MINOR.PATCH<br/><br/>where:<br/><br/><b>MAJOR</b> — version when makes incompatible API changes<br/><b>MINOR</b> — version when adds functionality in a backward-compatible manner<br/><b>PATCH</b> — version when makes backward-compatible bug fixes.<br/><br/>The next step is to understand how to properly configure artifactId and groupId. <br/><br/>I updated all my packages:<br/><b>from</b> ua.comparison.image<br/><b>to</b> com.github.romankh3.image.comparison<br/><br/>It makes more understandable for search where the codebase is.<br/>And the result was release — v2.1.0.</p>
+      <h4>New contributor from Sweden. May 2019</h4>
+      <p>I've received an email, where an independent consultant and the contractor asked me to see a new contribution from Mika. It's a developer from Sweden.<br/><br/>He said that people with bad eyesight have problems to see the diff rectangles if they are too thin. I liked this idea and added it to the project.<br/><br/>With these changes, I've been added a contribution made by a friend of mine, which wanted to practice using GitHub flow.<br/><br/>As a result, I've released a new version v2.2.0.</p>
+      <h4>The new step of the library. May 2019</h4>
+      <p>I've got an issue from TobseF from Karlsruhe, Germany. He wanted to use image-comparison as a library for tests. But he wanted more functionality.<br/><br/>At that time, the library had the main method compareImages() which returned new images as a result. <br/><br/>TobseF proposed to update the return value of compareImages() method to return ComparisonResult object with images under comparison, ComparisonState(match, missmatch, sizemissmatch). It will help to use in tests.<br/><br/>Also, he proposed to add a few configuration options, which would help him.<br/><br/>I liked these propositions, but changes weren't backward-compatible and removed part of the codebase, which I wanted to stay as it was. That's why I rejected changes.<br/><br/>Nevertheless, I decided to implement it by myself. It was a great idea for improving image-comparison.<br/><br/>Also, Mika proposed new changes — add areas, which can be ignored in the comparison. It's helpful for testing, too. That's why these changes were added, too.<br/><br/>As a result, v3.0.0 has released.<br/><br/>Version 3.0.0 became a real library, which can be useful for developers. I was so great, that image-comparison grows.</p>
+      <h4>Using in production. June 2019</h4>
+      <p>At the beginning of June, I've received an email from an automation QA engineer, which had several questions about image-comparison. He said, that he wanted to use it in automation QA tests for production. <br/><br/>Production tests! I was so excited to hear it. It wasn't a pet-project on GitHub, It was a real production. Great! I described all I could.<br/><br/>He said, that image-comparison was the only library which he found, which could compare two images with excluded areas. But excluded areas functionality didn't work as he wanted.<br/><br/>We have been working together for two months to make image-comparison better.<br/><br/>As a result, it was v3.1.1 release.</p>
+      <h4>Niche search. July 2019</h4>
+      <p>I understood that image-comparison can be useful for an automation QA engineer to use it in tests.<br/><br/>That's why I found aqa-forum, where I published an article about image-comparison. I've got useful feedback and released v3.2.0 and v3.3.0.<br/><br/>Please, if you know another forum, where can be shown image-comparison — write it on comments. It will help image-comparison to be better than it is.<br/><br/>Next, I found GitHub repositories, which contain useful links to the libraries and added image-comparison to them.</p>
+      <h4>Now. November 2019</h4>
+      <p>Image-comparison has 60 starts, 33 forks, 10 usages on Github as a dependency.<br/>I think that this is a great result of the open-source community which helps me to bring a new library.<br/><br/>It's a long way and I believe this is only the beginning. <br/><br/>I'd like to say thank you all the contributors, which are building image-comparison with me.<br/><br/>Thanks for reading.<br/><br/>Best regards,<br/>Roman.</p>
+      <related>
+        <h4>Similar posts</h4>
+        <a href="https://habr.com/en/post/446008/"/>
+        <a href="https://habr.com/en/post/445674/"/>
+        <a href="https://habr.com/en/post/439234/"/>
+      </related>
+    </article>
+  </body>
+</html>

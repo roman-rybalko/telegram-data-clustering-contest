@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://dtf.ru/gamedev/80908-krugom-sploshnoy-obman"/>
+    <meta property="og:site_name" content="DTF"/>
+    <meta property="article:published_time" content="2019-11-11T13:43:33+00:00"/>
+    <meta property="og:title" content="Кругом сплошной обман"/>
+    <meta property="og:description" content="«Эффект Хитрого койота» в игре и его создание."/>
+  </head>
+  <body>
+    <article>
+      <h1>Кругом сплошной обман</h1>
+      <address><time datetime="2019-11-11T13:43:33+00:00">11 Nov 2019, 13:43</time> by <a rel="author">Андрей Верещагин</a></address>
+      <p>«Эффект Хитрого койота» в игре и его создание.</p>
+      <figure>
+        <iframe data-src="https://twitter.com/mattstark256/status/1192420658216624129" data-embed-type="twitter-tweet" width="100%" height="0" data-service="Twitter" scrolling="no" nowide=""/>
+      </figure>
+      <p>Шотландский инди-разработчик Мэтт Старк в своём Твиттере разместил видео, демонстрирующие то, что сам он назвал «эффектом Хитрого койота», в честь персонажа мультсериала Warner Bros. В нём койот, преследующий кукушку-подорожника по имени «Дорожный бегун», иногда врезался в стену, на которой был нарисован, например, сквозной туннель. Примерно такой же обман происходит и в ролике Старка. В своём блоге разработчик <a href="https://matt.stark.scot/2019/11/06/wile-e-coyote-effect.html">рассказал</a>, как работает этот эффект.</p>
+      <figure>
+        <iframe src="https://www.youtube.com/embed/Z_RQenPprUc" width="640" height="360" data-service="Youtube" scrolling="no"/>
+      </figure>
+      <p>В каждом дверном проёме на локации находится скрытая стена, которая становится видимой, когда персонаж игрока запускает триггер. В то же время, камера генерирует текстуру и применяет её к появившейся стене. Вот так это выглядит со стороны.</p>
+      <figure>
+        <video src="https://leonardo.osnova.io/bad5e08c-096d-1495-8d64-3b2d5bc255e3/-/format/mp4/" autoplay="" loop=""/>
+      </figure>
+      <p>Чтобы эффект работал вне зависимости от того, куда смотрит сам игрок, разработчик добавил «временную камеру». Она находится там же, где и персонаж пользователя, но всегда направлена в на объект, который будет меняться. Подходящий угол поля зрения выбирается через итерации по углам ограничивающего параллелепипеда.</p>
+      <p>float maxAngle = 0; Vector3 min = meshFilter.sharedMesh.bounds.min; Vector3 max = meshFilter.sharedMesh.bounds.max; // Iterate through each of the 8 corners of the bounding box foreach (float bx in new float[] { min.x, max.x }) { foreach (float by in new float[] { min.y, max.y }) { foreach (float bz in new float[] { min.z, max.z }) { // Get the corner's position in camera space Vector3 cornerInCameraSpace = cam.transform.InverseTransformPoint(transform.TransformPoint(new Vector3(bx, by, bz))); // Find the horizontal and vertical angles between the camera's forward vector and the corner's position float horizontalAngle = Mathf.Abs(Mathf.Atan(cornerInCameraSpace.x / cornerInCameraSpace.z)); float verticalAngle = Mathf.Abs(Mathf.Atan(cornerInCameraSpace.y / cornerInCameraSpace.z)); // If either angle is greater than the stored value, replace it maxAngle = Mathf.Max(maxAngle, horizontalAngle, verticalAngle); } } } // Set the camera's field of view based on maxAngle. MaxAngle is in radians so must be converted to degrees. Maxangle also only represents the angle between forward and the edge of the view, but field of view is the angle between the top and bottom of the view, so it must be multiplied by two. cam.fieldOfView = maxAngle * Mathf.Rad2Deg * 2;</p>
+      <p>После этого камера рендерит нужную текстуру, однако важно правильно разместить её на объекте. Если сделать это с помощью UV-координат, то результат получится таким.</p>
+      <figure>
+        <img src="https://leonardo.osnova.io/d0a6141f-c675-884c-c5e0-599e99f994c2/"/>
+      </figure>
+      <p>Старк проецирует позиции вершин объекта в экранное пространство «временной камеры». Они используются для создания текстуры.</p>
+      <p>Перед удалением «временной камеры» просчитывается матрица, которая конвертирует значения по мировой системе координат в систему координат отсечения.</p>
+      <p>camMatrix = cam.projectionMatrix * cam.worldToCameraMatrix;</p>
+      <p>Эта матрица передаётся шейдеру вместе с текстурой. Позиции вершин проецируются сперва по мировой системе, а затем по системе отсечения «временной камеры».</p>
+      <p>// Project the vertex into world space float3 worldPos = mul(unity_ObjectToWorld, v.vertex); // Project the world space position into the temporary camera's clip space o.clipPos = mul(_WorldToCam, float4(worldPos, 1));</p>
+      <p>Во фрагментарном шейдере позиция по системе отсечения конвертируется в UV-координаты, которые используются для наложения текстуры.</p>
+      <p>// Get the UV coordinate float2 uv = i.clipPos.xy / i.clipPos.w; uv = (uv + float2(1, 1)) / 2; // Convert it from the range -1 to 1 to the range 0 to 1 // Sample the texture fixed4 col = tex2D(_CamTex, uv);</p>
+      <figure>
+        <img src="https://leonardo.osnova.io/0e33ebf1-9538-b5ad-98d6-a515e4d6e3d1/"/>
+      </figure>
+    </article>
+  </body>
+</html>

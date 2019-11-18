@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://www.nextinpact.com/brief/encore-de-nouvelles-failles-sur-les-processeurs-intel--les-correctifs-sont-disponibles-10297.htm"/>
+    <meta property="og:site_name" content="Next INpact"/>
+    <meta property="article:published_time" content="2019-11-13T10:10:23+00:00"/>
+    <meta property="og:title" content="Encore de nouvelles failles sur les processeurs Intel, les correctifs sont disponibles"/>
+    <meta property="og:description" content="Selon Intel, la première faille TSX Asynchronous Abort (TAA) est « similaire » à une autre brèche dévoilée en mai dernier : Microarchitectural Data Sampling (MDS), liée à l'exécution spéculative des processeurs Intel. Les deux brèches touchent ainsi les mêmes mémoires tampons : Store buffers, Fill buffers et Load ports."/>
+  </head>
+  <body>
+    <article>
+      <h1>
+        <a href="https://www.nextinpact.com/brief/encore-de-nouvelles-failles-sur-les-processeurs-intel--les-correctifs-sont-disponibles-10297.htm">Encore de nouvelles failles sur les processeurs Intel, les correctifs sont disponibles</a>
+      </h1>
+      <address>
+        <time datetime="2019-11-13T10:10:23+00:00">13 Nov 2019, 10:10</time>
+      </address>
+      <p><a href="https://software.intel.com/security-software-guidance/insights/deep-dive-intel-transactional-synchronization-extensions-intel-tsx-asynchronous-abort">Selon Intel</a>, la première faille TSX Asynchronous Abort (TAA) est « similaire » à une autre brèche <a href="https://www.nextinpact.com/news/107874-mds-encore-importante-faille-dans-processeurs-intel-premiers-correctifs-sont-la.htm">dévoilée en mai dernier</a> : Microarchitectural Data Sampling (MDS), liée à l'exécution spéculative des processeurs Intel. Les deux brèches touchent ainsi les mêmes mémoires tampons : Store buffers, Fill buffers et Load ports.</p>
+      <p>Là encore, un utilisateur authentifié avec un accès local pourrait récupérer des informations via une attaque par canal auxiliaire. TAA dispose d'un numéro CVE différent de MDS – CVE-2019-11135 – car « <i>elle utilise un nouveau mécanisme pour exploiter</i> » cette vulnérabilité. De plus amples détails techniques sont disponibles <a href="https://software.intel.com/security-software-guidance/insights/deep-dive-intel-transactional-synchronization-extensions-intel-tsx-asynchronous-abort">par ici</a>.</p>
+      <p>Le fondeur dévoile également d'autres failles, comme la CVE-2018-12207, alias <a href="https://software.intel.com/security-software-guidance/insights/deep-dive-machine-check-error-avoidance-page-size-change-0">Intel Processor Machine Check Error</a>, pouvant faire planter une machine avec le code d'erreur 0150H. Elle ne concerne visiblement que la virtualisation. </p>
+      <p>Enfin, deux failles concernent l'IGP i915 : <a href="https://people.canonical.com/~ubuntu-security/cve/2019/CVE-2019-0154.html?_ga=2.234285982.1880251638.1573622935-1809405612.1568869222">CVE-2019-0154</a> et CVE-2019-0155. La première peut provoquer un déni de service, tandis que la seconde permettrait à un attaquant avec un accès local de « <i>récupérer des données sensibles ou éventuellement élever ses privilèges</i> ».</p>
+      <p>Les brèches et correctifs ont été signalés en amont, ce qui explique qu'une vague de mise à jour se déverse ces dernières heures. <a href="https://support.microsoft.com/fr-fr/help/4525233/windows-7-update-kb4525233">Windows</a>, <a href="https://ubuntu.com/blog/ubuntu-updates-to-mitigate-latest-intel-hardware-vulnerabilities">Ubuntu</a> et <a href="https://access.redhat.com/solutions/tsx-asynchronousabort">Red Hat</a> ont d'ores et déjà commencé le déploiement. </p>
+    </article>
+  </body>
+</html>

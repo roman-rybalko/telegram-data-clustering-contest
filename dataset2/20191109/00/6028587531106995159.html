@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://www.forbes.com/sites/daveywinder/2019/11/09/siri-feature-can-leave-apple-mail-encrypted-text-unencryptedheres-the-fix/"/>
+    <meta property="og:site_name" content="Forbes"/>
+    <meta property="article:published_time" content="2019-11-09T00:00:00+00:00"/>
+    <meta property="og:title" content="Siri ‘Feature’ Can Leave Apple Mail Encrypted Text Unencrypted—Here’s The Fix"/>
+    <meta property="og:description" content="A Siri feature that improves the suggestions it makes to users can also leave some encrypted email text unencrypted and readable. Here's what is known, and how to fix it."/>
+  </head>
+  <body>
+    <article>
+      <h1>Siri ‘Feature’ Can Leave Apple Mail Encrypted Text Unencrypted—Here’s The Fix</h1>
+      <address><time datetime="2019-11-09T00:00:00+00:00">09 Nov 2019</time> by <a rel="author">Davey Winder</a></address>
+      <figure>
+        <img src="https://specials-images.forbesimg.com/imageserve/1169909901/960x0.jpg?fit=scale"/>
+        <figcaption>Encrypted Apple Mail messages might not be as private as you think<cite>SOPA Images/LightRocket via Getty Images</cite></figcaption>
+      </figure>
+      <p>A specialist in Apple IT, Bob Gendler, was curious as to how Siri suggests contacts and other information to macOS users. Naturally, he rolled his sleeves up and started digging into the tech. Writing on Medium, Gendler explained how this led him to discover a "suggestions" folder containing multiple files. The significant discovery, however, came when he looked into some of these macOS database files that stored information from applications such as Apple Mail. One of them, snippets.db, contained "scraped" data that helps Siri get better at providing relevant information to the user. So far, so par for the voice assistant learning course. However, Gendler found that this database was storing some of the text from encrypted Apple Mail emails in readable, unencrypted, plaintext form. "Even with Siri disabled on the Mac," Gendler wrote, "it still stores unencrypted messages in this database."</p>
+      <h3>The unencrypted Apple Mail email vulnerability timeline</h3>
+      <p>Gendler said that he made the unencrypted emails database discovery on July 25, with further testing and confirmations taking until July 29. Gendler reported his findings to Apple starting July 29, updating across the following two days as he confirmed that the vulnerability existed in macOS 10.12.6, 10.13.6, 10.14 and 10.15 (beta) versions. On August 1, Apple product security confirmed that the issue was being investigated.</p>
+      <p>Fast-forward to September 4, and Gendler sent Apple an update as he said the problem was still there in the macOS Catalina beta versions. On October 9, Gendler contacted Apple product security to confirm the vulnerability existed in the final public release of Catalina, and that the supplemental updates to Mojave failed to address it as well. After some further updates, on November 5 Gendler said he received "information from Enterprise Support on disabling learning from Apple Mail through System Preferences|Siri."</p>
+      <p>With 100 days having passed, Gendler decided to go public and <a href="https://medium.com/@boberito/apple-mail-stores-encrypted-emails-in-plain-text-database-fix-included-3c2369ce26d4">posted his disclosure</a> on Medium.</p>
+      <h3>What does Apple say?</h3>
+      <p>An Apple spokesperson told <a href="https://www.theverge.com/2019/11/8/20954130/apple-mail-encrypted-unencrypted-email-macos-siri-text">The Verge</a> that it is "aware of the issue and says it will address it in a future software update." Apple also said that only "portions of emails" are stored.</p>
+      <h3>How can you fix the Apple Mail encrypted email exposure issue?</h3>
+      <p>Apple told The Verge and Gendler, that to stop encrypted emails from being collected in the "snippets" database in the meantime, users should go to System Preferences|Siri|Siri Suggestions &amp; Privacy|Mail from where they can disable the "Learn from this App" setting.</p>
+      <p>You can prevent the plaintext email snippets from being read by other apps, although the exact method through which they might do this is unclear, by not giving them "full disk access" in macOS Catalina. Gendler has <a href="https://medium.com/@boberito/apple-mail-stores-encrypted-emails-in-plain-text-database-fix-included-3c2369ce26d4">further suggestions</a> for disabling these learning processes in Apple Mail for enterprise users without elevated privileges and system-level configuration profile options for all users.</p>
+      <h3>Who does this vulnerability impact?</h3>
+      <p>Although the storing of supposedly encrypted text in unencrypted form, albeit partial email messages rather than the whole thing, is a severe issue whichever way you look at it, there are some mitigating factors at play.</p>
+      <p>It would appear that this only applies under certain circumstances, namely that you are using macOS and Apple Mail (not a third-party mail client) to send your encrypted emails. If you have FileVault enabled, to encrypt the whole system, then those email snippets will not be available in plaintext format. From the security perspective, a potential attacker would not only have to have already got access to your system to be able to access the files concerned but would need to know where to look. The latter is a given seeing as the vulnerability has been publicly disclosed now, but the former is game over on the security front anyway.</p>
+      <h3>Final thoughts</h3>
+      <p>So, while this issue isn't going to impact everyone, is it fair to consider this a serious problem, nonetheless? "This is a big deal. This is a big deal for governments, corporations and regular people who use encrypted email and expect the contents to be protected,” Gendler said, "For a company that prides itself on security and privacy, the lack of attention to detail on an issue like this completely and totally surprises me."</p>
+    </article>
+  </body>
+</html>

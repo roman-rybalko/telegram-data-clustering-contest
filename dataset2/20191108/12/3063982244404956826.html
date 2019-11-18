@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://www.golem.de/news/virtualisierung-qemu-bekommt-microvm-fuer-container-1911-144880.html"/>
+    <meta property="og:site_name" content="Golem.de"/>
+    <meta property="article:published_time" content="2019-11-08T12:14:01+00:00"/>
+    <meta property="og:title" content="Qemu bekommt Microvm für Container"/>
+    <meta property="og:description" content="Die Virtualisierungslösung Qemu bekommt mit der sogenannten Microvm eine besonders kleine Umgebung, die sich für Container eigenen soll. Inspiriert ist dies von Amazons"/>
+  </head>
+  <body>
+    <article>
+      <h1>Qemu bekommt Microvm für Container</h1>
+      <h2>Die Virtualisierungslösung <a href="https://www.golem.de/specials/qemu/">Qemu</a> bekommt mit der sogenannten Microvm eine besonders kleine Umgebung, die sich für Container eigenen soll. Inspiriert ist dies von Amazons Firecracker.</h2>
+      <address><time datetime="2019-11-08T12:14:01+00:00">08 Nov 2019, 12:14</time> by <a rel="author">Sebastian Grüner</a></address>
+      <p>Das freie Emulations- und Virtualisierungswerkzeug Qemu hat den Maschinentyp Microvm erhalten, wie der für die Arbeiten zuständige Entwickler <a href="https://twitter.com/slpnix/status/1192369406061535232">Sergio López auf Twitter</a> mitteilt. Dabei handelt es sich um eine besonders reduzierte Umgebung, die sich für leichtgewichtige Virtualisierungen eigenen soll, insbesondere aber für Container. Die kleinen virtuellen Maschinen (VMs) dienen dabei als Host für die Container.</p>
+      <p>Die Arbeiten an der Microvm sind laut López von <a href="https://www.golem.de/news/firecracker-amazon-legt-mini-vms-und-hypervisor-fuer-container-offen-1811-137942.html">Amazons Firecracker</a> inspiriert. Ziel des Firecracker-Projektes ist es, die Vorteile von Containern, die schnell starten und vergleichsweise klein sind, mit VMs zu verbinden, die durch eine strikte Isolierung und eben echte Virtualisierung eine größere Sicherheit bieten sollen als Container. Auch das Projekt <a href="https://www.golem.de/news/openstack-foundation-kata-containers-1-0-bringt-einheitliche-vm-fuer-container-1805-134533.html">Kata Containers</a> verfolgt dieses Konzept und kann inzwischen <a href="https://www.golem.de/news/virtualisierung-kata-container-unterstuetzen-amazons-firecracker-hypervisor-1901-139008.html">mit Firecracker genutzt werden</a>.</p>
+      <p>Die Microvm-Umgebung von Qemu ist <a href="https://github.com/qemu/qemu/blob/master/docs/microvm.rst">laut der Dokumentation des Projektes</a> ähnlich zu den Genannten auf eine besonders schnelle Startzeit optimiert und soll nur wenige Ressourcen belegen. Auch sollen die damit genutzten Gastsysteme keine lange Lebensdauer haben. Erreicht wird dies unter anderem durch den Verzicht auf PCI und ACPI. Ebenso werden weder irgendwelche Arten von Hotplug-Events noch Live-Migrationen zwischen Qemu-Versionen unterstützt.</p>
+      <p>In der Dokumentation finden sich weiter ausführliche Erläuterungen zur Benutzung des neuen Maschinentyps in Qemu. So lässt sich etwa auf weitere verschiedene Hardware-Bestandteile unter bestimmten Umständen verzichten, um die Microvm noch kleiner zu machen. Es gibt zudem Beispiele von Kommandos zum Starten der Microvm.</p>
+    </article>
+  </body>
+</html>

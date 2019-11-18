@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://www.anti-malware.ru/news/2019-11-15-1447/31310"/>
+    <meta property="og:site_name" content="Anti-Malware"/>
+    <meta property="article:published_time" content="2019-11-15T13:08:00+00:00"/>
+    <meta property="og:title" content="В Windows и Linux реализовали возможности защиты от Zombieload v2"/>
+    <meta property="og:description" content="Команды разработчиков Microsoft и Linux реализовали дополнительные способы отключения технологии Intel Transactional Synchronization Extensions (TSX). TSX является основной причиной уязвимости"/>
+  </head>
+  <body>
+    <article>
+      <h1>В Windows и Linux реализовали возможности защиты от Zombieload v2</h1>
+      <address><time datetime="2019-11-15T13:08:00+00:00">15 Nov 2019, 13:08</time> by <a rel="author">Олег Иванов</a></address>
+      <figure>
+        <img src="https://www.anti-malware.ru/files/styles/imagesize400w/public/images/source/snimok_ekrana_2019-11-15_v_13.02.14.png?itok=ksgjRl_u"/>
+      </figure>
+      <p>Команды разработчиков <a href="https://www.anti-malware.ru/companies/microsoft">Microsoft</a> и Linux реализовали дополнительные способы отключения технологии <a href="https://www.anti-malware.ru/companies/intel">Intel</a> Transactional Synchronization Extensions (TSX). TSX является основной причиной уязвимости процессоров Intel перед новой атакой Zombieload v2.</p>
+      <p><a href="https://www.anti-malware.ru/news/2019-11-13-1447/31283">Zombieload v2</a> позволяет атакующему получить информацию, обрабатываемую внутри CPU, чего при нормальных обстоятельствах не должны допустить защитные меры, реализованные в современных процессорах.</p>
+      <p>Новый вектор атаки эксперты обнаружили на этой неделе, к счастью, Intel успела поработать над микропатчем, который в настоящее время доступен для загрузки на официальном сайте компании.</p>
+      <p>Несмотря на наличие патча, есть ещё более действенный способ обезопасить свою систему от Zombieload v2 — просто отключить саму технологию, создающую вектор атаки.</p>
+      <p>Например, Microsoft опубликовала инструкцию, которой могут воспользоваться системные администраторы для отключения TSX с помощью ключей реестра ОС. Для этого нужно будет добавить следующий ключ:</p>
+      <p>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Kernel" /v DisableTsx /t REG_DWORD /d 1 /f</p>
+      <p>Если вы захотите включить TSX обратно, можно изменить на следующее:</p>
+      <p>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Kernel" /v DisableTsx /t REG_DWORD /d 0 /f</p>
+      <p>В системах Linux также есть возможность отключить TSX, для этого используется моделезависимый регистр. Соответствующий алгоритм отключения можно найти <a href="https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=c2955f270a84762343000f103e0640d29c7a96f3">здесь</a>.</p>
+      <related>
+        <h4>Читайте также</h4>
+        <a href="https://www.anti-malware.ru/news/2019-11-13-111332/31291"/>
+        <a href="https://www.anti-malware.ru/news/2019-11-13-1447/31283"/>
+        <a href="https://www.anti-malware.ru/news/2019-11-12-1447/31278"/>
+      </related>
+    </article>
+  </body>
+</html>

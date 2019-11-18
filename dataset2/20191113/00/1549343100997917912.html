@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://www.overclockers.ua/news/hardware/2019-11-13/125652/"/>
+    <meta property="og:site_name" content="Overclockers.ua"/>
+    <meta property="article:published_time" content="2019-11-13T00:00:00+00:00"/>
+    <meta property="og:title" content="В процессорах Intel Cascade Lake обнаружена уязвимость Zombieload v2"/>
+    <meta property="og:description" content="Серия обнаруженных аппаратных уязвимостей сыпется на Intel как из рога изобилия. Недавно команда исследователей обнаружила новый вариант уязвимости Zombieload v2, которая может быть использована злоумышленниками на процессорах семейства Intel Cascade Lake. В него..."/>
+  </head>
+  <body>
+    <article>
+      <h1>В процессорах Intel Cascade Lake обнаружена уязвимость Zombieload v2</h1>
+      <address><time datetime="2019-11-13T00:00:00+00:00">13 Nov 2019</time> by <a rel="author">Klamath</a></address>
+      <p>Серия обнаруженных аппаратных уязвимостей сыпется на Intel как из рога изобилия. Недавно команда исследователей обнаружила новый вариант уязвимости Zombieload v2, которая может быть использована злоумышленниками на процессорах семейства Intel Cascade Lake. В него входят как HEDT-чипы Cascade Lake-X в исполнении LGA2066, так и серверные варианты Cascade Lake-SP/AP.</p>
+      <figure>
+        <img src="https://www.overclockers.ua/news/cpu/125652-intel-root-trust.jpg"/>
+      </figure>
+      <p>О первой версии Zombieload стало известно в мае этого года вместе с рядом других проблем: Fallout, RIDL (Rogue In-Flight Data Load) и Store-to-Leak Forwarding. Что характерно, процессоры Cascade Lake были частично защищены аппаратной заплаткой от Zombieload v1, но, как видим, этого оказалось недостаточно.</p>
+      <p>Intel называет уязвимость Transactional Asynchronous Abort или TAA. Новый вариант атаки Zombieload позволяет хакерам считывать пользовательские данные, хранящиеся в оперативной памяти. Уязвимость лежит в механизме предсказания переходов. Он ускоряет работу процессора, но его некорректная реализация позволяет злоумышленникам извлекать потенциально конфиденциальные данные.</p>
+      <p>Компания Intel вчера выпустила набор исправлений микрокода в рамках ежемесячного обновления <a href="https://blogs.intel.com/technology/2019/11/ipas-november-2019-intel-platform-update-ipu/">Intel Platform Update</a>. Всего известно о 77 уязвимостях, десять из которых обнаружили сторонние исследователи, а подавляющее большинство — сотрудники Intel. Помимо Zombieload v2 можно упомянуть еще проблему JCC Erratum.</p>
+      <p>Её исправление негативно влияет на быстродействие современных CPU на величину до 5%. С подробными тестами производительности с заплатками и без них в среде Linux можно ознакомиться на сайте <a href="https://www.phoronix.com/scan.php?page=article&amp;item=intel-jcc-microcode&amp;num=1">Phoronix</a>.</p>
+    </article>
+  </body>
+</html>

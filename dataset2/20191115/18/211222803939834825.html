@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://xakep.ru/2019/11/15/qsee-problems/"/>
+    <meta property="og:site_name" content="«Хакер»"/>
+    <meta property="article:published_time" content="2019-11-15T18:49:43+00:00"/>
+    <meta property="og:title" content="Уязвимости в чипах Qualcomm приводят к раскрытию критических данных на устройствах"/>
+    <meta property="og:description" content="Эксперты Check Point обнаружили, что проблемы в Qualcomm Secure Execution Environment (QSEE) угрожают десяткам миллионов Android-устройств."/>
+  </head>
+  <body>
+    <article>
+      <h1>Уязвимости в чипах Qualcomm приводят к раскрытию критических данных на устройствах</h1>
+      <address><time datetime="2019-11-15T18:49:43+00:00">15 Nov 2019, 18:49</time> by <a rel="author" href="https://xakep.ru/" target="_blank">Мария Нефёдова</a></address>
+      <p>Эксперты Check Point <a href="https://research.checkpoint.com/the-road-to-qualcomm-trustzone-apps-fuzzing/">обнаружили</a>, что проблемы в Qualcomm Secure Execution Environment угрожают десяткам миллионов Android-устройств. Уязвимости позволяют атакующим похищать критические данные, хранящиеся в защищенных частях устройства.</p>
+      <p>Qualcomm Secure Execution Environment (QSEE), представляет собой имплементацию безопасной среды Trusted Execution Environment (TEE), основанной  на технологии ARM TrustZone. По сути, это аппаратно изолированная область процессора, которая защищает важные данные и имеет безопасную среду выполнения доверенных приложений (Trusted Applications), которые изолированы друг от друга. Так, именно в QSEE, как правило, содержатся приватные ключи шифрования, пароли, данные банковских карт и так далее.</p>
+      <figure>
+        <img src="https://xakep.ru/wp-content/uploads/2019/11/248373/Figure1.png#26152461"/>
+      </figure>
+      <p>Работа QSEE основана на принципе наименьших привилегий, поэтому системные модули уровня Normal World (драйверы и приложения) не могут получить доступ к защищенным областям без необходимости, даже если они обладают rot-доступом. В свою очередь, доступ к данным в Secure World практически невозможен. Однако аналитики Check Point сумели выявить ряд проблем, после того как несколько месяцев изучали популярные коммерческие реализации TEE, в том числе:</p>
+      <ul>
+        <li>QSEE, используемую на устройствах Pixel, LG, Xiaomi, Sony, HTC, OnePlus, Samsung и многих других;</li>
+        <li>Kinibi от Trustronic, используемый на устройствах Samsung на рынках Европы и Азии;</li>
+        <li>ядро ​​HiSilicon, используемое на большинстве устройств Huawei.</li>
+      </ul>
+      <p>В итоге, после применения фаззинга были обнаружены следующие уязвимости:</p>
+      <ul>
+        <li>dxhdcp2 (LVE-SMP-190005)</li>
+        <li>sec_store (SVE-2019-13952)</li>
+        <li>authnr (SVE-2019-13949)</li>
+        <li>esecomm (SVE-2019-13950)</li>
+        <li>kmota (CVE-2019-10574)</li>
+        <li>tzpr25 (проблема признана Samsung)</li>
+        <li>prov (Motorola работает над иправлением)</li>
+      </ul>
+      <p>Исследователи рассказывают, что проблемы в QSEE, в сочетании с эксплоитами для старых уязвимостей (включая CVE-2015-6639 и CVE-2016-2431), позволяют злоумышленникам запускать доверенные приложения на уровне Normal World, запускать «подправленные» трастлеты в Secure World, обходить механизм Qualcomm Chain Of Trust, и  даже адаптировать доверенные приложения для работы на устройствах других производителей.</p>
+      <figure>
+        <img src="https://xakep.ru/wp-content/uploads/2019/11/248373/Qualcomm-hacking.png#26152461"/>
+      </figure>
+      <p>Компания предупредила производителей о проблемах еще в июне текущего года, и по данным Check Point, к настоящему моменту Samsung уже исправила три из четырех уязвимостей, LG решила одну проблему, и Motorola только сообщила о намерении выпустить патч (хотя в компании сообщили, что исправления уже готовы и вышли в составе патчей уровня 2017-04-05 и 2019-05-05 для Android). Представители Qualcomm, в свою очередь, <a href="https://www.zdnet.com/article/qualcomms-secure-world-virtual-processor-leaks-mobile-payment-data/">сообщили СМИ</a>, что уязвимость CVE-2019-10574 была устранена в октябре текущего года, а баг, связанный с Widevine и вовсе был исправлен еще в 2014 году.</p>
+    </article>
+  </body>
+</html>

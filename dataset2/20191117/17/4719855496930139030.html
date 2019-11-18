@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://www.xataka.com/videojuegos/como-hacer-videojuego-para-sega-mega-drive-original-pleno-2019"/>
+    <meta property="og:site_name" content="Xataka"/>
+    <meta property="article:published_time" content="2019-11-17T17:00:27+00:00"/>
+    <meta property="og:title" content="Cómo hacer un videojuego para la SEGA Mega Drive original en pleno 2019"/>
+    <meta property="og:description" content="A día de hoy, la gente sigue creando nuevos videojuegos para consolas que llevan mucho tiempo descatalogadas, algo que en inglés se conoce como homebrew y que..."/>
+  </head>
+  <body>
+    <article>
+      <h1>Cómo hacer un videojuego para la SEGA Mega Drive original en pleno 2019</h1>
+      <address><time datetime="2019-11-17T17:00:27+00:00">17 Nov 2019, 17:00</time> by <a rel="author" href="https://www.xataka.com/autor/doctor-ludos" target="_blank">Doctor Ludos</a></address>
+      <p><b>A día de hoy, la gente sigue creando nuevos videojuegos para consolas que llevan mucho tiempo descatalogadas</b>, algo que en inglés se conoce como <i>homebrew</i> y que muchas veces sirve para cumplir un sueño de la infancia creando un juego para la consola que tenías cuando eras pequeño.</p>
+      <p>Pero también se trata de un divertido desafío para cualquier persona que se dedique al diseño o desarrollo de videojuegos: <b>El hardware retro tiene muchas restricciones que desafiarán tu creatividad</b>. En los años 90, dichas restricciones eran todo un embrollo para los desarrolladores profesionales. Sin embargo, hoy en día contamos con mejores herramientas y la creación de juegos para esas consolas es mucho más accesible.</p>
+      <p>El año pasado escribí un artículo sobre <a href="https://www.xataka.com/videojuegos/como-hacer-un-juego-para-la-game-boy-en-2018-sheep-it-up">cómo hacer un juego para la Game Boy</a> y hoy quiero compartir mi experiencia a la hora de <b>crear tres videojuegos para la videoconsola SEGA Mega Drive</b>. Probablemente se trate de la videoconsola más fácil a la hora de hacer un videojuego <i>homebrew</i>, gracias a las potentes herramientas disponibles. Por ejemplo, conseguí crear un juego (muy básico) en 60 minutos que funciona en la consola.</p>
+      <h3>Los juegos</h3>
+      <p>El año pasado, con motivo del 30 aniversario de la Mega Drive, hice un videojuego titulado <a href="http://cotegamers.com/shop/en/genesis-mega-drive/43-test.html">'30 Years of Nintendon't.'</a>: obviamente un tributo a los mejores juegos de la videoconsola y a la agresiva estrategia de márketing que SEGA llevó a cabo en su momento (con el eslogan "Genesis Does what Nintendon't."). Genesis era el nombre con el que se conocía a la Mega Drive en Norteamérica.</p>
+      <figure>
+        <img src="https://i.blogs.es/36e713/30yearsofnintendont-console2/1366_2000.jpg"/>
+      </figure>
+      <p>En este juego eres un evangelista de la SEGA que debe convencer a otros jugadores a dejar sus videoconsolas NES y SNES porque la Mega Drive tiene mejores juegos. El juego fue publicado online de forma gratuita durante el 30 aniversario de la consola y <a href="https://drludos.itch.io/30-years-of-nintendont">se puede jugar aquí</a>.</p>
+      <figure>
+        <img src="https://i.blogs.es/ed606c/30yearsofnintendont-screenshot/1366_2000.png"/>
+      </figure>
+      <p>Desde entonces, también he creado otros dos (pequeños) juegos arcade para la videoconsola:</p>
+      <p><a href="http://cotegamers.com/shop/en/genesis-mega-drive/43-test.html">'Break An Egg'</a> (<i>Rompe un huevo</i>)</p>
+      <p><a href="http://cotegamers.com/shop/en/genesis-mega-drive/43-test.html">'MeteoRain'</a> (<i>Lluvia de meteoritos</i>)</p>
+      <figure>
+        <iframe src="https://giphy.com/embed/gFo8cVoTHXGXnjtZF8" width="640" height="360" data-service="Giphy" scrolling="no"/>
+      </figure>
+      <p>Estos tres videojuegos están ahora disponibles en <a href="http://cotegamers.com/shop/en/genesis-mega-drive/43-test.html">un cartucho publicado por Cote Gamers</a>. Viene en una preciosa caja de plástico como los videojuegos vintage reales y trae una serie de postales de regalo.</p>
+      <figure>
+        <img src="https://i.blogs.es/04a89f/30yearsnintendontboxed/1366_2000.jpg"/>
+      </figure>
+      <h3>¿Puedo usar Unity, Unreal Engine o Godot?</h3>
+      <p>Siento decir que, desafortunadamente, dichos motores de juego no pueden exportar videojuegos a la SEGA Mega Drive (o por lo menos de momento). Pero no hay problema, puesto que existe otra herramienta que es <b>tan útil como esos otros motores de juego más populares</b> y que está hecha a medida para los juegos de Mega Drive: <a href="https://github.com/Stephane-D/SGDK"><b>SGDK</b></a>. Se trata de una herramienta que te permite escribir código para esta máquina en lenguaje C.</p>
+      <p>Es mucho más sencillo y rápido de aprender que el lenguaje Assembly que era obligatorio en los 90. Pero la cosa no acaba aquí y SGDK también viene con varias herramientas para facilitar la creación de los gráficos y de sonidos.</p>
+      <p>Puedes hacer tus propios gráficos con tu editor de gráficos en 2D favorito (desde Photoshop a GIMP o Asesprite) y se convertirán automáticamente al formato adecuado siempre y cuando respetes las limitaciones del hardware (hablaré de esto en más detalle más adelante).</p>
+      <p>Lo mismo vale para el sonido: puedes crear tus propios efectos de sonido en archivos .wav y para la música puedes utilizar varias herramientas de seguimiento. Además, SGDK tiene un potente "Sprite Engine" que simplificará la mayor parte de las tareas técnicas para reproducir imágenes en movimiento en la pantalla. <b>¿Cómo de fácil es todo esto en realidad?</b> En este artículo te daré mi opinión personal sobre este asunto.</p>
+      <h3>Aquí llega el "blast processing"</h3>
+      <p>Como te diría cualquier programador de juegos vintage, escribir un programa en C en vez de Assembly tendrá un coste en el rendimiento de tu videojuego, y es verdad. Sin embargo, el coste cambia significativamente de una videoconsola retro a otra. Depende de la CPU que utilicen y también de la eficacia de los compiladores modernos a la hora de crear código para procesadores tan antiguos.</p>
+      <p>Afortunadamente, la Mega Drive utiliza un procesador <b>Motorola 68000</b> que está bien adaptado para procesar las particularidades del lenguaje C. Esto resulta especialmente cierto si lo comparamos con otras CPUs como la 65819 de la SNES. Si bien se trata de un procesador bastante potente por sí mismo, la CPU de la SNES tiene problemas a la hora de ejecutar programas escritos en C a una velocidad razonable. Así que cuando se trata del desarrollo de videojuegos <i>homebrew</i> en lenguaje C, el "blast processing" ya no es simplemente un mito de márketing, sino toda una realidad.</p>
+      <h3>¿Cómo de rápido se puede ejecutar tu código en C?</h3>
+      <p>A modo de ejemplo personal, muestro un gif animado de mi juego 'MeteoRain' con 45 partes de meteoritos moviéndose sin problemas a 60fps:</p>
+      <figure>
+        <iframe src="https://giphy.com/embed/KB1DSzDiBvY0dY1YOJ" width="640" height="360" data-service="Giphy" scrolling="no"/>
+      </figure>
+      <p>Aquí otro ejemplo de una explosión a base de 40 partículas moviéndose a 60fps en mi videojuego 'Break An Egg':</p>
+      <figure>
+        <iframe src="https://giphy.com/embed/ZedpnEdcsomHMzoyUR" width="640" height="360" data-service="Giphy" scrolling="no"/>
+      </figure>
+      <p>Si echamos un vistazo a los videojuegos vintage, un buen ejemplo de la potencia de la CPU de la Mega Drive es <b>'Contra Hard Corps'</b>. Si bien el juego fue desarrollado en Assembly y no en C (eran los 90), los desarrolladores fueron capaces de utilizar la gran potencia de procesamiento para mover muchos <i>sprites</i> por la pantalla, creando jefes inolvidables con muchas partes en movimiento y grandes explosiones.</p>
+      <figure>
+        <img src="https://i.blogs.es/7ef8d0/contra---hard-corps010/1366_2000.jpg"/>
+      </figure>
+      <p>A modo de comparación, <b>'Contra III'</b> para la SNES se vio limitado por la potencia de la CPU y en vez de mover muchos <i>sprites</i> en la pantalla Konami tuvo que conformarse con otros efectos gráficos que eran exclusivos del chip de vídeo de la SNES, como la transparencia.</p>
+      <figure>
+        <img src="https://i.blogs.es/dd3d48/contra-iii/1366_2000.jpg"/>
+      </figure>
+      <p>Si bien ambos juegos se pueden disfrutar al mismo nivel, <b>son un buen ejemplo de las diferencias técnicas entre la SNES y la Mega Drive</b>. Puedes leer más detalles sobre cómo Konami adaptó cada videojuego para su respectiva plataforma en el artículo <i>"Making of Contra III and Hard Corps"</i> de la <a href="https://www.myfavouritemagazines.co.uk/retro-gamer-print-back-issues/Retro-Gamer-Issue-176.html">Retro Gamer #176</a>.</p>
+      <h3>Limitaciones gráficas</h3>
+      <p>Teniendo en cuenta que la potencia de procesamiento no es un problema, el principal escollo de la Mega Drive para desarrolladores <i>homebrew</i> son sus limitaciones gráficas, sobre todo el limitado número de colores que puede mostrar en pantalla.</p>
+      <p>Aunque la consola puede generar 512 colores únicos en total, <b>solamente se pueden mostrar 64 colores al mismo tiempo en la pantalla</b>. ¡Ay!. En comparación, la SNES puede mostrar 256 colores al mismo tiempo a partir de una paleta de 32768 colores únicos. Así que los artistas gráficos tenían que tener mucho talento para hacer que los juegos de la SEGA tuvieran un aspecto tan bueno como los de la competencia y en muchas ocasiones lo lograron.</p>
+      <p>Muchos de los videojuegos vintage de la Mega Drive se veían tan bien como los de la competencia a pesar de las limitaciones de color: es el caso de videojuegos como 'Comix Zone', 'The Story of Thor', 'Streets of Rage II', 'Ranger-X', 'Gunstar Heroes', 'Sonic 1-2-3', etc.</p>
+      <figure>
+        <img src="https://i.blogs.es/519e98/34/1366_2000.png"/>
+        <figcaption>Comix Zone (1995)</figcaption>
+      </figure>
+      <p>Pero en otras ocasiones los videojuegos de la Mega Drive tenían un aspecto bastante soso en comparación con las versiones para la SNES. Uno de los ejemplos más famosos es <b>'Street Fighter II'</b>, donde las limitaciones de color en la videoconsola hablan por sí solas:</p>
+      <figure>
+        <img src="https://i.blogs.es/920263/sf2_snesvsmd/1366_2000.jpg"/>
+      </figure>
+      <p>Hacer un buen uso de las limitadas paletas de color disponibles (4 paletas de 16 colores para la Mega Drive vs. 16 paletas de 16 colores en la SNES) era todo un reto para los desarrolladores que normalmente contaban con un tiempo muy limitado para completar sus proyectos. Hoy en día, algunos miembros de la comunidad SEGA con mucho talento son capaces de arreglar algunos juegos para mejorar el uso que hacen de los colores. Por ejemplo, <a href="http://www.sega-16.com/forum/showthread.php?28100-Gabriel-Pyron-s-Color-Hacks!!!-(Golden-Axe-Street-Fighter-II-Final-Fight-CD-etc)">Gabriel Pyron</a> está haciendo maravillas en juegos como <b>'Castlevania Blood Lines'</b>, <b>'Golden Axe'</b>, <b>'Outrun'</b> o el anteriormente nombrado <b>'Street Fighter II’</b>:</p>
+      <figure>
+        <img src="https://i.blogs.es/af9bf3/pyronhack_sf2bis/1366_2000.png"/>
+        <figcaption>(La parte de arriba es la paleta de colores original y la parte de abajo es la paleta de colores modificada por Gabriel Pyron)</figcaption>
+      </figure>
+      <p>Teniendo eso en cuenta, puedes utilizar tu programa favorito de edición de gráficos para crear tus imágenes siempre y cuando tengas mucho cuidado a la hora de elegir los colores. Si no se corresponden con la paleta real de 512 colores establecida en el hardware, no es un problema: <b>SGDK automáticamente convertirá tu imagen a la paleta de la Mega Drive</b>. Pero cuando se trata del número total de colores utilizados y mostrados en la pantalla, eso ya es tu problema.</p>
+      <h3>Hacer que las cosas se muevan</h3>
+      <p>Para mostrar algo en la pantalla primero tienes que copiar los datos gráficos de la ROM a la RAM de vídeo. De hecho, el procesador gráfico no tiene acceso directo a los datos de la ROM, pero puede leer datos de la RAM. Así que para hacer el fondo o las animaciones de los <i>sprites</i> <b>tienes que copiar de forma regular los nuevos datos de la ROM a la RAM</b> y la cantidad total de RAM de vídeo (VRAM) disponible es limitada: 64KB. No es mucho en comparación con tamaños de ROM de videojuegos que van de los 512KB a los 8MB.</p>
+      <h4>Escollo #1: Transferencia de VRAM</h4>
+      <p>Si estás creando un juego muy pequeño con pocos elementos gráficos, puedes simplemente cargarlos todos a la vez al arrancar el juego, pero la mayoría de los videojuegos necesitan tener los datos gráficos constantemente actualizados a la VRAM para mostrar muchas animaciones diferentes, ¡lo que normalmente se traduce en muchos problemas!</p>
+      <p>De hecho, <b>la cantidad de datos gráficos que puedes enviar de la ROM a la VRAM por cada fotograma (a saber, 60 veces por segundo) es limitada</b>. Para ser exactos, se trata de 7524 bytes por fotograma, lo que equivale a unos 7KB. Si quieres que se muestren <i>sprites</i> animados gigantes además de fondos animados, como en 'Street Fighter II', vas a tener muchos problemas con esta limitación y es solamente el primer de los problemas.</p>
+      <h4>Escollo #2: Limitaciones en los sprites</h4>
+      <p>Con las consolas de 8/16 bits, otra dificultad reside en el número total de <i>sprites</i> que puede mostrar el hardware. Normalmente existen dos límites: uno para el <b>número total de <i>sprites</i> en la pantalla</b> y otro para el <b>número total de <i>sprites</i> en la misma línea horizontal</b>. Para videoconsolas como la NES y la Master System, estas limitaciones son extremas: no más de <b>8 <i>sprites</i> por línea horizontal</b> y un número total de <b>64 <i>sprites</i></b>.</p>
+      <p>¿Significa que podemos mostrar 64 veces a Sonic o a Mario en la pantalla? No, de lo que estamos hablando aquí son de los <i>sprites</i> de hardware que son más pequeños de lo que normalmente llamaríamos un <i>sprite</i>. Aquí va un ejemplo de 'Super Mario Bros' para la NES donde <b>hace falta utilizar varios <i>sprites</i> de hardware de 8x8 píxeles para mostrar un solo "<i>sprite</i> de Mario".</b></p>
+      <figure>
+        <img src="https://i.blogs.es/80088f/sprite-cutting-mario/1366_2000.png"/>
+        <figcaption>
+          <a href="https://nesdoug.com/2018/09/05/06-sprites/">Fuente</a>
+        </figcaption>
+      </figure>
+      <p>Con las consolas de 16 bits, los límites en los <i>sprites</i> se relajaron un poco. En el caso de la Mega Drive puedes mostrar <b>80 <i>sprites</i> de hardware en total</b>, pero un solo <i>sprite</i> de hardware puede ser <b>tan grande como 32x32 píxeles (en comparación con los 8x8 píxeles anteriores)</b>. A modo de ejemplo, dejo varios casos punteros de "<i>sprite</i> de hardware" para la Mega Drive. <b>¿Te has dado cuenta de que Sonic se representa con solamente 2 <i>sprites</i> de hardware, mientras que hacían falta 8 <i>sprites</i> para Mario en la NES?</b></p>
+      <figure>
+        <img src="https://i.blogs.es/616d86/sprites-cutting/1366_2000.png"/>
+        <figcaption>
+          <a href="https://www.patreon.com/posts/new-resource-and-26847248">Fuente</a>
+        </figcaption>
+      </figure>
+      <h4>Escollo #3: Prioridades de los sprites</h4>
+      <p>Como si eso no fuera lo suficientemente complicado, la Mega Drive tiene otra peculiaridad: <b>la cadena de <i>sprites</i></b>. Cuando dos <i>sprites</i> se solapan, la consola tiene que decidir cuál de los dos mostrar sobre el otro. En la Master System y en la mayoría de las consolas de Nintendo (NES, Game Boy, SNES), los <i>sprites</i> se definen en una tabla grande y <b>su orden en la tabla se utiliza para establecer la prioridad de representación</b>. No hace falta decir que se trata de una herramienta de uso complejo, puesto que hace falta <b>redefinir constantemente la tabla para modificar las prioridades de los <i>sprites</i></b>.</p>
+      <p>En el caso de la Mega Drive, SEGA optó por un sistema más flexible y sencillo. Al igual que en las otras videoconsolas, todos los <i>sprites</i> cuentan con un número de índice en una tabla grande, pero no se utiliza para establecer la prioridad de los <i>sprites</i>. En cambio, <b>cada <i>sprite</i> tiene una referencia en relación al siguiente <i>sprite</i> representado</b> y al final la consola crea una cadena de <i>sprites</i>, comenzando con el <i>sprite</i> 0.</p>
+      <p>Cada <i>sprite</i> solamente tiene como referencia el siguiente <i>sprite</i>, lo que te permite modificar con más facilidad las prioridades de los <i>sprites</i> sin tener que reordenar todos tus <i>sprites</i> en la gran "tabla de referencia de <i>sprites</i>". Pero siendo sinceros, aunque sea más fácil de utilizar, sigue siendo una traba a la hora de hacer un videojuego donde las prioridades de los <i>sprites</i> cambian a menudo, como puede ser en un juego de lucha (los <i>beat'em up</i> en inglés).</p>
+      <h3>La forma "fácil": el SGDK sprite engine</h3>
+      <p>Hacer que aparezcan en la pantalla los <i>sprites</i> y los fondos en movimiento es todo un reto con tales problemas. Todos los desarrolladores de los 90 lo tenían complicado y muchos de los desarrolladores <i>homebrew</i> siguen teniendo problemas.</p>
+      <p>Por ejemplo, <b>Matt Philips</b> sacó el brillante juego <a href="https://tanglewoodgame.com/">'Tanglewood'</a> en 2018 utilizando solamente herramientas de los 90. Programó el videojuego en lenguaje Assembly y utilizo el kit de desarrollo de hardware oficial que había sido diseñado hace 30 años. Se trataba de una decisión voluntaria por su parte para tener una experiencia completa de cómo era el desarrollo de un juego vintage.</p>
+      <figure>
+        <img src="https://i.blogs.es/9a01de/tanglewood_devkit/1366_2000.jpg"/>
+        <figcaption>Sega Mega CD Devkit</figcaption>
+      </figure>
+      <p>Pero para aquellos que no sean tan buenos ni tan pacientes como Matt Philips, <b>las herramientas modernas probablemente sean de ayuda a la hora de tratar con las limitaciones técnicas del hardware</b>.</p>
+      <p>Ya hemos mencionado cómo <b>el lenguaje C es mucho más sencillo de utilizar que Assembly</b>. Y también podemos decir que utilizar un emulador de la Mega Drive es muy preciso, como por ejemplo el <a href="https://www.retrodev.com/blastem/">'Blast’em'</a>. Este emulador, en combinación con un cartucho Everdrive para probarlo en el hardware original hace que el desarrollo de un juego sea mucho más llevadero en comparación con utilizar un emulador de hardware in-circuit activado por un conjunto de herramientas basadas en DOS. Sin embargo, una vez más, el mayor regalo que pone sobre la mesa los tiempos en los que vivimos se llama SGDK.</p>
+      <figure>
+        <img src="https://i.blogs.es/c134d9/mega-everdrive-x7/1366_2000.jpg"/>
+        <figcaption>Pon tu juego en un cartucho SD, mételo en una Mega Everdrive y podrás probarlo en hardware real</figcaption>
+      </figure>
+      <p>De hecho, junto con otras opciones, <b>SGDK también viene con un "Motor de <i>sprites</i>" bastante potente</b> que te hará las cosas más fáciles. Se trata de un conjunto de opciones para lidiar con la visualización de los <i>sprites</i> como lo harías en cualquier programa moderno.</p>
+      <p>Para empezar, <b>ya no tendrás que preocuparte por el número de <i>sprites</i> de hardware</b> necesarios para cada fotograma de animación: SGDK lo hará automáticamente por ti. Además, cuando se trata de las prioridades de los <i>sprites</i>, <b>no tendrás que definir manualmente la cadena de <i>sprites</i></b> porque SGDK lo hará por ti utilizando un valor simple de "prioridades de <i>sprites</i>" que puedes asignar a cada <i>sprite</i> como en cualquier programa moderno.</p>
+      <p>Por último, <b>¡SGDK también puede gestionar todas las transferencias de VRAM automáticamente!</b> Sí, has oído bien: con el motor de <i>sprites</i>, no tienes que preocuparte de la VRAM para nada. Simplemente puedes indicar en SGDK que se muestre "la animación X en el sprite Y" y el programa hará todo el trabajo técnico y complejo por ti. Si alguna vez has tenido que lidiar con este tipo de cosas de forma manual, te parecerá magia, ni más ni menos.</p>
+      <p>Solamente la funcionalidad del motor de <i>sprites</i> del SGDK es lo que hace de la Mega Drive <b>la consola retro más sencilla a la hora de desarrollar videojuegos</b>, sobre todo si tienes algo de experiencia con el software de programación de videojuegos de las plataformas modernas. <b>SGDK es gratis y de código abierto</b>, pero si quieres ayudar a su autor <b>Stéphane Dallongeville</b> para que siga creando magia en el mundo retro, puedes <a href="https://www.patreon.com/SGDK/">darle una ayuda en Patreon</a>.</p>
+      <h3>Audio</h3>
+      <p>El audio en el hardware retro también es todo un reto por sí mismo y cada videoconsola es bastante diferente en este aspecto. En el caso de la Mega Drive cuenta con un procesador Z80 dedicado a esta tarea, puesto que está conectado directamente al hardware de audio. Así que para <b>hacer los sonidos y la música en esta videoconsola primero tienes que escribir un "controlador de sonido"</b>: un programa para el procesador Z80.</p>
+      <p>En los 90, cada estudio de producción de videojuegos desarrolló su propio controlador de sonido, adaptándolo a cada videojuego. En los últimos años comerciales de la videoconsola, aparecieron algunos controladores estándar, como los GEMS de Sega of America que fueron utilizados en cerca de cien juegos de desarrolladores occidentales.</p>
+      <p>Crear un buen audio en las consolas de 8/16 bits <b>no solo implica tener destrezas musicales, sino también destrezas de programación</b>. Algunos videojuegos con buena música o buenos efectos de sonido fueron masacrados por tener un controlador de sonido malo.</p>
+      <p>El ejemplo más famoso es, de nuevo, <b>'Street Fighter II’</b>. El controlador de sonido de este videojuego cuenta con bugs que distorsionan todas las voces en el juego. Muchos años más tarde. <b>Stéphane Dallongeville</b> (creador de SGDK. Recordemos que es un mago) reescribió el controlador de sonido con ingeniería inversa y arregló los bugs. Como resultado, ahora puedes jugar a 'Street Fighter II’ con un "¡Hadoken!" claro y alto. Aquí dejo un vídeo donde puedes apreciar la diferencia:</p>
+      <figure>
+        <iframe src="https://www.youtube.com/embed/-iE5GJNkOqs" width="1000" height="563" data-service="Youtube" scrolling="no"/>
+      </figure>
+      <p>Volvamos al tema del desarrollo de videojuegos <i>homebrew</i> y a nuestro adorado SGDK. El programa viene con <b>una variada selección de controladores de sonido</b>, dependiendo de lo que necesites hacer en el juego. Por ejemplo, existe <b>el controlador PCM</b> para reproducir un solo efecto de sonido una vez con una calidad de sonido muy alta (como pueden ser las voces). Pero también tienes el <b>controlador XGM.</b> que puede reproducir una pista de audio y 4 efectos de sonido al mismo tiempo.</p>
+      <p>La mejor función es que <b>puedes cambiar el controlador de sonido que utilizas durante el juego</b>, dependiendo de tus necesidades. Por ejemplo, en '30 Years of Nintendon’t', las muestras de voz de la pantalla de inicio y de la pantalla de game over se reproducen utilizando el controlador PCM para una mayor calidad de sonido, pero durante el juego en sí, puesto que necesitaba tener varios efectos de sonido al mismo tiempo, utilicé el controlador XGM.</p>
+      <p>En cuanto a los audios, puedes usar herramientas modernas para su creación. En el caso de los efectos de sonidos, tal y como mencionaba anteriormente, <b>puedes simplemente usar archivos .wav</b> que se convertirán automáticamente al formato adecuado. En el caso de la música, la herramienta de referencia es <a href="http://www.deflemask.com/"><b>Deflemask</b></a>, un tracker que puede <b>crear música para el hardware de audio de varias videoconsolas de 8/16 bits</b>.</p>
+      <p>No tengo mucha experiencia en cuanto a creación de música, puesto que las canciones que utilicé en mis videojuegos procedían de artistas chiptune con mucho talento: <b>Minerscale</b> (Break An Egg) y <b>Warlord</b> (MeteoRain). Ambos utilizaron Deflemask y exportaron sus creaciones al formato VGM que SGDK puede convertir para su utilización con sus propios controladores de sonido.</p>
+      <h3>¿Hacer un juego para la Mega Drive en 60 minutos? ¡Desafío aceptado!</h3>
+      <p>Las <i>game jams</i> son una forma excelente de practicar tus destrezas en el diseño y desarrollo de videojuegos, poniendo a prueba tus capacidades a la hora de crear un juego de cero en un tiempo limitado (normalmente 48 o 72 horas).</p>
+      <p>En cuanto al tiempo, la <i>game jam</i> más brutal probablemente sea la <a href="http://0hgame.eu/"><b>0h Game Jam</b></a>. Tal y como implica su nombre, se lleva a cabo todos los años durante el cambio de horario de invierno. Tienes que empezar a crear tu juego a las 2 de la mañana de la noche en la que se atrasa el reloj y una vez que han pasado 60 minutos, tienes que publicar tu juego en Internet justo en el momento en el que el reloj pasa de marcar las 3 a marcar las 2 de la mañana.</p>
+      <p>El año pasado decidí participar en esta <i>jam</i> poco después de haber completado '30 Years of Nintendon’t', por lo que ya tenía algo de experiencia a la hora de hacer un videojuego para la Mega Drive y ya apreciaba mucho la simplicidad del SGDK. <b>¿Pero SGDK puede facilitarme tanto las cosas como para hacer un juego <i>homebrew</i> de 16 bits en solo 60 minutos?</b></p>
+      <p><a href="https://drludos.itch.io/break-an-egg">Aquí tenéis la respuesta</a>:</p>
+      <figure>
+        <img src="https://i.blogs.es/cce059/breakanegg_0hgamejam_genesisb/1366_2000.jpg"/>
+        <figcaption>60 minutos de trabajo</figcaption>
+      </figure>
+      <p>Siendo sinceros, el resultado se queda bastante corto. El equilibrio del juego es desastroso y hay un bug muy grande en el generador de aleatorio que hace que el juego sea imposible de pasar después del quinto huevo. Tampoco tiene ni fondo ni sonido, etc. Pero se trata de un juego nuevo para la Mega Drive creado desde cero en 60 minutos y que funciona en la consola real. No sé qué pensarás tú, ¡pero para mí es todo un logro!</p>
+      <p>Además, pensé que la idea principal del juego tenía potencial, <b>así que seguí trabajando en el juego durante muchas horas y acabé teniendo un juego arcade bastante divertido <a href="https://drludos.itch.io/breakanegg">al que puedes jugar aquí</a></b>. También está disponible en el <a href="http://cotegamers.com/shop/en/genesis-mega-drive/43-test.html">cartucho de '30 Years of Nintendon’t'</a> junto con un tercer juego que solamente está disponible en esta edición física: 'MeteoRain'.</p>
+      <figure>
+        <iframe src="https://giphy.com/embed/IeLOagmknO2LcsMUo9" width="640" height="360" data-service="Giphy" scrolling="no"/>
+      </figure>
+      <p>¡Muchas más horas de trabajo después!</p>
+      <h3>Pasando de homebrew a indie</h3>
+      <p>Aunque los juegos <i>homebrew</i> normalmente son un nicho para aficionados (como yo), <b>algunas consolas siguen siendo una plataforma comercialmente viable para los estudios de programación independientes a día de hoy</b>. Existen dos juegos recientes que son un buen ejemplo: por un lado, <a href="https://tanglewoodgame.com/index.html">'Tanglewood'</a> fue desarrollado en su totalidad en el lenguaje Assembly, tal y como se trabajaba en los 90, haciendo que el resultado final sea aún más impresionante.</p>
+      <p>Por otro lado, <a href="https://www.kickstarter.com/projects/1676714319/xeno-crisis-a-new-game-for-the-sega-genesis-mega-d?lang=fr">'Xeno Crisis'</a> es un juego igual de impresionante que fue desarrollado utilizando SGDK y que se aprovechó de todas las ventajas en cuanto a confort y facilidades que ponen sobre la mesa las herramientas modernas.</p>
+      <figure>
+        <img src="https://i.blogs.es/04baa0/1_orig/1366_2000.png"/>
+        <figcaption>Tanglewood (2018)</figcaption>
+      </figure>
+      <figure>
+        <img src="https://i.blogs.es/ae2781/a85254af659e0c1bfe3c1eaa9dab5c5e_original/1366_2000.jpg"/>
+        <figcaption>Xeno Crisis (2019)</figcaption>
+      </figure>
+      <p>Así que si te gustan los videojuegos retro, ¿Por qué no crear hoy tu primer juego para la Mega Drive? Al fin y al cabo, <a href="https://github.com/Stephane-D/SGDK">SGDK lo tienes a un solo clic</a>.</p>
+      <blockquote>Este artículo se trata de una republicación íntegra del artículo <a href="https://www.gamasutra.com/blogs/DoctorLudos/20191019/352537/Making_a_SEGA_Mega_Drive__Genesis_game_in_2019.php">"Making a SEGA Mega Drive / Genesis game in 2019"</a> escrito por Doctor Ludos en <a href="http://www.gamasutra.com/">Gamasutra</a>.<br/><b>Doctor Ludos</b> es un diseñador de videojuegos indie/amateur y miembro de <a href="http://www.ludoscience.com/">Ludoscience</a>, un laboratorio de investigación científica dedicado al estudio de los videojuegos. Tiene un <a href="https://www.patreon.com/drludos">Patreon</a> donde puedes apoyar su desarrollo de juegos y también edita una <a href="https://ludoscience.us17.list-manage.com/subscribe/post?u=75ad2256496b82df9f9c498a2&amp;id=12fc75b764">newsletter</a> con sus lanzamientos. Puedes encontrar todos sus videojuegos retro <a href="http://drludos.itch.io/">aquí.</a></blockquote>
+      <p>Foto | Pixabay<br/>Traducción | Silvestre Urbón</p>
+    </article>
+  </body>
+</html>

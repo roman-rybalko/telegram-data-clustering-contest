@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://www.bleepingcomputer.com/news/security/youtube-bitcoin-videos-pushing-predator-info-stealing-trojan/"/>
+    <meta property="og:site_name" content="BleepingComputer"/>
+    <meta property="article:published_time" content="2019-11-12T11:04:11+00:00"/>
+    <meta property="og:title" content="YouTube BitCoin Videos Pushing Predator Info-Stealing Trojan"/>
+    <meta property="og:description" content="A new scam is underway on YouTube that uses videos to promote a tool that can allegedly generate the private key for a bitcoin address. The attackers then claim this key would then allow you to gain access to the bitcoins stored in the bitcoin address, when in reality the victims will be infected with a password stealing Trojan."/>
+  </head>
+  <body>
+    <article>
+      <h1>YouTube BitCoin Videos Pushing Predator Info-Stealing Trojan</h1>
+      <address><time datetime="2019-11-12T11:04:11+00:00">12 Nov 2019, 11:04</time> by <a rel="author" href="https://www.bleepingcomputer.com/author/lawrence-abrams/" target="_blank">Lawrence Abrams</a></address>
+      <figure>
+        <img src="https://www.bleepstatic.com/content/hl-images/2019/05/07/youtube-rectangle_headpic.jpg"/>
+      </figure>
+      <p>A new scam is underway on YouTube that uses videos to promote a tool that can allegedly generate the private key for a bitcoin address. The attackers then claim this key would then allow you to gain access to the bitcoins stored in the bitcoin address, when in reality the victims will be infected with a password and data stealing Trojan.</p>
+      <p>This campaign was discovered by security researcher <a href="https://twitter.com/0xFrost">Frost</a> who routinely monitors YouTube videos for cryptocurrency scams that lead to malware, which in this particular case is the Predator the Thief information-stealing Trojan</p>
+      <figure>
+        <img src="https://www.bleepstatic.com/images/news/scams/youtube-btc-key-predator/tweet.jpg"/>
+      </figure>
+      <p>In this scam, the attacker is uploading videos that promotes a fake bitcoin address private key generator that can be used to steal other people's bitcoins.</p>
+      <figure>
+        <img src="https://www.bleepstatic.com/images/news/scams/youtube-btc-key-predator/crypto-world.jpg"/>
+        <figcaption>Uploaded Videos</figcaption>
+      </figure>
+      <p>In the video's description will also be links to download the trojanized program from Yandex, Google Drive, and Mega.</p>
+      <figure>
+        <img src="https://www.bleepstatic.com/images/news/scams/youtube-btc-key-predator/youtube-video.jpg"/>
+        <figcaption>Video Promoting Trojan</figcaption>
+      </figure>
+      <p>The file being offered is called <b>Crypto World.zip</b> and when extracted contains a setup.exe file, which includes a password-protected ZIP file containing the Predator the Thief executable.  This setup.exe file currently has 1/71 detections <a href="https://www.virustotal.com/gui/file/569031e4102469daf0ded1f43bf1fef9332639b842139ce1dff4824702f9f84e/detection">on VirusTotal</a>.</p>
+      <figure>
+        <img src="https://www.bleepstatic.com/images/news/scams/youtube-btc-key-predator/exstracted-zip-file.jpg"/>
+        <figcaption>CryptoWorld.zip files</figcaption>
+      </figure>
+      <p>This setup.exe program is a Trojan that will unzip a file to the .\language\templates\temp folder as license.exe.</p>
+      <figure>
+        <img src="https://www.bleepstatic.com/images/news/scams/youtube-btc-key-predator/source-code-extractor.jpg"/>
+        <figcaption>Extracting Predator the Thief installer</figcaption>
+      </figure>
+      <p>The license.exe file will then be executed and the Predator the Thief information stealing Trojan will be installed and executed on the computer.</p>
+      <p>Once running, Predator the Thief will communicate with the malware's command and control server to download further components, other malware, and to send information back to the attackers.</p>
+      <figure>
+        <img src="https://www.bleepstatic.com/images/news/scams/youtube-btc-key-predator/fiddler-traffic.jpg"/>
+        <figcaption>Predator Network Traffic</figcaption>
+      </figure>
+      <p>This Trojan can steal a variety of information and passwords from a computer, including copying the victim's clipboard, recording over the webcam, and stealing files from the victim.</p>
+      <p>According to <a href="https://securelist.com/a-predatory-tale/89779/">Kaspersky</a>, Predator the Thief v3 has the following features and this version may be newer.</p>
+      <p><b>Location</b> <b>Data stolen</b> Games Osu<br/>Battle.net FTP WinSCP VPN NordVPN 2FA Authy Messengers Pidgin<br/>Skype Operating System Webcam<br/>HWID<br/>Clipboard<br/>Specific document files (Grabber)<br/><b>Project filenames*</b> Browsers IE/Edge</p>
+      <p>If you have been infected with this Trojan, you should immediately change all passwords for your financial accounts, web sites, chat services such as Discord, and gaming services such as Steam and Battle.net. </p>
+      <p>As always, you should use a password manager in order to create unique and strong passwords for every account you visit and never download programs off of YouTube, especially ones that claim to generate free money or cryptocurrency.</p>
+    </article>
+  </body>
+</html>

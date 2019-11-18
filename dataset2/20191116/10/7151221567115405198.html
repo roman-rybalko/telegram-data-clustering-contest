@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://dou.ua/lenta/digests/devops-digest-27/"/>
+    <meta property="og:site_name" content="ДОУ"/>
+    <meta property="article:published_time" content="2019-11-16T10:00:00+00:00"/>
+    <meta property="og:title" content="DevOps дайджест #27: Docker Enterprise, Helm 3.0, ClusterAPI и дайте свой email"/>
+    <meta property="og:description" content="В выпуске: скандалы-интриги-расследования о Docker Enterprise, почему лучше не использовать очереди в PostgreSQL, как получить первый опыт работы с клаудами, почему у Gitlab скоро будет больше вакансий, как быстро запустить что угодно на Google Cloud Run, посмотреть доклад Envoy as TCP Proxy и много-много интересностей."/>
+  </head>
+  <body>
+    <article>
+      <h1>DevOps дайджест #27: Docker Enterprise, Helm 3.0, ClusterAPI и дайте свой email</h1>
+      <address><time datetime="2019-11-16T10:00:00+00:00">16 Nov 2019, 10:00</time> by <a rel="author" href="https://dou.ua/users/oleg-mikolaychenko/" target="_blank">Oleg Mykolaichenko</a></address>
+      <p>
+        <i>В выпуске: скандалы-интриги-расследования о Docker Enterprise, почему лучше не использовать очереди в PostgreSQL, как получить первый опыт работы с клаудами, почему у Gitlab скоро будет больше вакансий, как быстро запустить что угодно на Google Cloud Run, посмотреть доклад Envoy as TCP Proxy и много-много интересностей.</i>
+      </p>
+      <figure>
+        <img src="https://s.dou.ua/storage-files/image2_V85LihH.png"/>
+        <figcaption>
+          <i>Docker Enterpsise теперь Mirantis</i>
+        </figcaption>
+      </figure>
+      <h3>Что случилось с Docker Enterprise?</h3>
+      <p>Для того чтобы понять, что случилось с Docker, нужно читать статьи именно в такой последовательности.</p>
+      <p>
+        <a href="https://www.mirantis.com/company/press-center/company-news/mirantis-acquires-docker-enterprise/">Mirantis Acquires Docker Enterprise Platform Business</a>
+      </p>
+      <p>
+        <a href="https://www.docker.com/press-release/docker-new-direction">Docker new direction</a>
+      </p>
+      <p>
+        <a href="https://www.docker.com/blog/docker-next-chapter-advancing-developer-workflows-for-modern-apps/">Docker’s Next Chapter: Advancing Developer Workflows for Modern Apps</a>
+      </p>
+      <p>В двух словах:</p>
+      <ul>
+        <li>Mirantis купил Docker Enterprise, для того чтобы развивать свой Kubernetes-as-a-Service. Даже учитывая то, что треть компаний из Fortune 100 использовала Docker Enterprise, — он был не особо прибыльным.</li>
+        <li>Docker Inc. продала Docker Enterprise и сразу получила $35 Million инвестиций для рекапитализации и усиления своей финансовой позиции.</li>
+        <li>Docker’s Next Chapter: они сфокусируются на улучшении взаимодействия с программистами, будут строить новые процессы и улучшения в области сборки контейнеров, их дистрибуции и запуска.</li>
+        <li>У Docker Inc. теперь новый СЕО.</li>
+      </ul>
+      <h3>Мнения и интересности</h3>
+      <p><a href="http://dvps.blog/postgresql-missusage/">Сказ о PostgreSQL и сложности инфраструктуры</a><br/>Новая статья в блоге Всеволода Полякова о том, как не нужно решать инженерные задачи на примере «просто решения» с очередями в PostgreSQL. Какие проблемы после этого появляются? Можно ли использовать PostgreSQL как message queue? Ответы в статье.</p>
+      <p><a href="https://www.allthingsdistributed.com/2019/08/modern-applications-at-aws.html">Modern applications at AWS</a><br/>CTO из Amazon делится своим подходом и виденьем о том, как делать приложения. Интересные моменты, которые я заметил: one DB per microservice и безопасность — it’s not SecOps job, it’s everyone’s job. В статье есть чему поучиться, рекомендую к прочтению.</p>
+      <p><a href="https://www.conjur.org/blog/stop-bashing-bash/">Stop Bashing Bash — Pattern for Sharing Bash</a><br/>Признавайтесь, что вы тоже пишете bash-скрипты. И да, их достаточно много, и большая часть из них — это ужас. Эта библиотека — попытка вынести общие проблемы всех bash developers в общую библиотеку. Сейчас пока что функций маловато: покрыт Git, Kubernetes, тестирование скриптов и еще по мелочи. Думаю, в будущем туда добавят побольше удобностей, и можно будет инклудить в каждую тулу. Обратите внимание на Bash Links в статье — там перечислены классные мануалы, на них опирались создатели библиотеки.</p>
+      <figure>
+        <img src="https://s.dou.ua/storage-files/image3_K0hTVuK.png"/>
+        <figcaption>
+          <i>В Netflix по пятницам принято не деплоить</i>
+        </figcaption>
+      </figure>
+      <p><a href="https://hackernoon.com/deploy-on-fridays-or-dont-qg2y32jk">Deploy on Fridays, or Don’t.</a><br/>Если вы деплоите по пятницам — почитайте. А если не деплоите — тоже почитайте. Мое мнение: деплой в пятницу — это норма. Автоматизированный, покрытый тестами, предсказуемый деплой. Обычный, который вы запускаете три раза каждый день, к которому вы привыкли. Деплой, который меняет схему самой большой таблички в БД, деплой с фичей, которая разрабатывалась параллельно с проектом пару месяцев, миграция стореджа или какие-то большие изменения — не норм. Потому что при таком подходе выходных не будет, результат — овертайм, выгорание, смена компании. Зачем?</p>
+      <p><a href="https://www.reddit.com/r/devops/comments/df40nx/how_do_you_get_cloud_experience/">How do you get cloud experience?</a><br/>В основном работаете с bare metal и очень хочется пощупать Cloud? Или постоянно работаете с AWS, но очень интересно посмотреть, как оно там в Google Cloud или Azure? Вы не одни такие. В этой теме на Reddit автору дают советы о том, как получить этот самый опыт с Cloud. Конечно же, основной совет — бери и пробуй :) Но есть еще много советов, например: где можно взять Free Cloud credits, какие есть Education предложения у Cloud провайдеров.</p>
+      <p><a href="https://gitlab.com/gitlab-com/www-gitlab-com/issues/5555">GitLab hiring ban by Country</a><br/>GitLab рассматривает вопрос о прекращении найма SRE и Support инженеров в России и Китае. Аргументируют обеспокоенностью некоторых Enterprise клиентов и геополитическим климатом. HackerNews сообщество <a href="https://news.ycombinator.com/item?id=21437334">отреагировало</a> очень по-разному. Если вы SRE из других стран — посмотрите вакансии Gitlab, думаю, в скорости их может стать больше.</p>
+      <p><a href="https://charity.wtf/2019/10/18/the-real-11-reasons-i-dont-hire-you/">The (real) 11 reasons I don’t hire you</a><br/>Что делать с этими причинами: вывернуть наоборот, обработать и сделать так, чтобы наняли.</p>
+      <p><a href="https://docs.google.com/drawings/d/1MtWL8qRTs6PlnJrW4dh8135_S9e2SaawT410bJuoBPk/edit">kube-proxy iptables «nat» control flow</a><br/><a href="https://twitter.com/thockin">Tim Hockin</a> из Google cделал шпаргалку по kube-proxy iptables nat таблице, когда kube-proxy работает в iptables режиме. Хардкор!</p>
+      <p><a href="https://github.com/Mykolaichenko/devops_digest/blob/master/027">New from Universe 2019: GitHub</a><br/>Недавно прошел Github Universe, на котором объявили о создании мобильного приложения, возможности <a href="https://archiveprogram.github.com/">архивации open-source проектов на 1000 лет</a> (лол), секьюрити фичи. Больше можно прочитать <a href="https://github.blog/2019-11-13-universe-day-one/">здесь</a>.</p>
+      <p><a href="https://sso.tax/">The SSO Wall of Shame: выбираем провайдера</a><br/>Список сервисов и цены, за которые они продают <a href="https://sso.tax/">SSO</a>. Местами за базовую секьюрити фичу цены отличаются до 5 раз. И сюда же сразу небольшой гайд: <a href="https://developer.okta.com/blog/2019/10/21/illustrated-guide-to-oauth-and-oidc">An Illustrated Guide to OAuth and OpenID Connect</a> от Okta с картинками, все как вы любите.</p>
+      <p>
+        <a href="https://medium.com/faun/the-importance-of-soft-skills-in-it-aee3248b043f">The importance of soft skills in IT</a>
+      </p>
+      <p>Коротенькая статья от одного из наших соавторов про то, почему и какие софт скиллы важно выработать у себя, чтобы преуспеть. Будет полезно для инженеров разных уровней и направлений :)</p>
+      <h3>Видео с конференций</h3>
+      <p><a href="https://www.youtube.com/playlist?list=PLvk9Yh_MWYuwXC0iU5EAB1ryI62YpPHR9">Devops Enterprise Summit 2019: Keynotes</a><br/>Если вы не в Los Angeles, то это не беда — видео с местного Devops Enterprise Summit можно посмотреть на YouTube. По ссылке будет плейлист с Keynotes.</p>
+      <p><a href="https://vimeo.com/channels/1510248/videos">Monitorama 2019: видео с конференции</a><br/>Опять же, если не удалось попасть в США на Monitorama — всегда можно посмотреть видео. По ссылке — плейлист и 17 докладов.</p>
+      <p><a href="https://promcon.io/2019-munich/">PromCon Munich 2019: онлайн трансляция</a><br/>Два дня видео с PromCon в Munich. Очень радует этот месяц обильным количеством классных доступных конференций.</p>
+      <p><a href="https://acloud.guru/series/serverlessconf-nyc-2019/view/yaml-better">YAML Is Better than Your Favorite Language: Fightin’ words about Infrastructure as code</a><br/>Видео о YAML: почему он лучше всех остальных DSL для IaC, по мнению автора, и как правильно готовить, чтобы не больно было.</p>
+      <h3>Руководства и инструкции</h3>
+      <p><a href="https://phrenetic.se/deploy-traefik-as-ingress-controller/">Deploy Traefik as Ingress Controller</a><br/>Туториал о том, как задеплоить Traefik в качестве ingress в DO Kubernetes кластере.</p>
+      <figure>
+        <img src="https://s.dou.ua/storage-files/image1_1Y4LExZ.png"/>
+        <figcaption>
+          <i>Serverless Go application in Google Cloud Run</i>
+        </figcaption>
+      </figure>
+      <p><a href="https://bartfokker.com/posts/cloud-run/">Running a serverless Go web application in Google Cloud Run</a><br/>Интересный туториал о том, как легче всего запустить serverless приложение. Автор показывает пример постой Go программы, упаковывает ее в Docker и запускает в Google Cloud Run. И действительно, выглядит очень быстро и просто.</p>
+      <p><a href="https://medium.com/condenastengineering/clusterapi-a-guide-on-how-to-get-started-ff9a81262945">ClusterAPI — A Guide on How to Get Started</a><br/>ClusterAPI — это проект для Kubernetes, который призван объединить все варианты инсталляций Kubernetes в одном API и позволять управлять ими через один интерфейс. У нас в компании за эту штуку очень топит Саша Милушев, и даже есть <a href="https://www.pango.co/careers/post/?gh_jid=779768">вакансия</a> в его команду. Если вы хотите в Pango — лучше напишите мне в личку, чтобы мне дали бонус. А в статье рассматриваются основы ClusterAPI.</p>
+      <p><a href="https://dev.to/kenfdev/continuously-enforce-policies-on-your-configs-with-conftest-and-circleci-1afd">Continuously enforce policies on your configs with Conftest and CircleCI</a><br/>Если вы задумывались, как делать unit-тестирование ваших Kubernetes манифестов с помощью Open Policy Agent — статья будет полезной, новой и интересной. Если вы о таком задумывались, напишите, пожалуйста, в личку — вероятно, я бы взял интервью у такого человека.</p>
+      <p><a href="https://www.datadoghq.com/blog/amazon-mq-monitoring/">Как мониторить Amazon MQ</a> и <a href="https://www.datadoghq.com/blog/collecting-amazon-mq-metrics-and-logs/">какие метрики собирать в Amazon MQ</a><br/>Две очень хорошие комплексные статьи о том, как правильно мониторить и какие метрики собирать в Amazon MQ. Datadog очень хорошо умеют делать качественные tutorials.</p>
+      <p><a href="https://medium.com/@ikshitijsharma/blessing-away-ssh-worries-ultimate-practical-guide-to-setup-netflix-bless-in-under-60-minutes-d6880f2a8e23">BLESSing away SSH worries</a><br/><a href="https://github.com/Netflix/bless">Netflix Bless</a> — это SSH Certificate Authority, запущенный на AWS Lambda и его задача — подписывать SSH ключи в вашей компании. В целом это уже давно популярная практика — не переписывать authorized_keys, а настроить хост, чтобы он доверял вашей SSH CA. Резюмируя, если вы все еще патчите authorized_keys — перестаньте так делать и сделайте Netflix Bless по этому мануалу.</p>
+      <h3>Обзор DevOpsStage 2019</h3>
+      <p>
+        <a href="https://devopsstage.com/">DevOpsStage Kyiv 2019: какие доклады посмотреть</a>
+      </p>
+      <p>Посмотрите эти доклады сейчас, а если не сейчас, то на выходных (полезно и с пользой):</p>
+      <ol>
+        <li><a href="https://youtu.be/vXsJlSOOn0o">Envoy as TCP proxy</a> — конечно, это мой доклад, который я анонсировал немногим ранее. История о том, как мы решили проблему трафика между сервисами в небезопасном интернете, обзор решений + еще хайринг к нам в Pango :)</li>
+        <li><a href="https://youtu.be/JX2eoK5GT6A">Kubernetes Navigation Stories</a> — интересно о Kubernetes в thredUP (большой онлайн-секонд с разработкой в Украине).</li>
+        <li><a href="https://youtu.be/osQx1sbjFLw">Hacking Terraform for fun and profit</a> — Антон Бабенко о Terraform, много хороших рекомендаций по этому докладу.</li>
+        <li><a href="https://youtu.be/UfuyLl0st_4">Make Architects aligned with business needs</a> — Дима Лавриненко о том, как стать архитектором (мы с ним выступали параллельно, и он в шутку порекомендовал мой трек :))</li>
+        <li><a href="https://youtu.be/q3zueXj_LGY">Premature automatization</a> — Сева Поляков о том, как не нужно делать автоматизацию. Я попал под конец доклада, и очень даже зашло.</li>
+      </ol>
+      <h3>Конференция HAProxyConf 2019 (Amsterdam)</h3>
+      <p>12-13 ноября в Амстердаме проходила <a href="https://www.haproxyconf.com/">HAProxyConf</a>, где выступал один из наших соавторов. Было очень много интересных тем: GitHub, Booking.com, Vimeo делились опытом создания своих отказоустойчивых систем и какую роль в них играет HAProxy.</p>
+      <p>Анонсировали и рассказывали о HAProxy One — CDN + ADN + Firewall + WAF + красивый UI. Ребята хотят предоставлять клиентам All in One решение и потеснить... Судя по описанию фич выше, вы, думаю, сами поняли, кто конкуренты ;)</p>
+      <p>Забавный факт о докладах про Kubernetes: все production-решения пока используют HAProxy как Standalone solution, а на Ingress Controller только посматривают, пробуют.</p>
+      <p>К следующему дайджесту опубликуем ссылки на самые интересные доклады.</p>
+      <h3>Наконец-то Helm 3.0</h3>
+      <p>
+        <a href="https://helm.sh/blog/helm-3-released/">Helm 3.0.0 has been released!</a>
+      </p>
+      <p>И это большая, очень хорошая новость. Вот основные изменения:</p>
+      <ol>
+        <li>Removal of Tiller — его больше нет, и устанавливать его в кластер не нужно. Его функции распределили: рендерингом темплейтов занимается клиент, а релиз конфигурация и информация хранится в Kubernetes API. Tiller теперь просто не нужен.</li>
+        <li>Improved Upgrade Strategy — теперь Helm понимает и видит больше изменений как в upgrade, так и в rollback. Покрыто много кейсов, в которых раньше было больно.</li>
+        <li>Release Names — теперь можно делать релизы с одинаковым названием в разных неймспейсах.</li>
+      </ol>
+      <h3>Все DevOps-related идут на XP Days</h3>
+      <p>
+        <a href="https://xpdays.com.ua/?utm_source=devopsdigest">XP Days Ukraine 2019 (22-23 ноября)</a>
+      </p>
+      <p>Я как раз вернусь с отдыха, чтобы послушать Ярослава Молочко с докладом <a href="https://xpdays.com.ua/programs/self-healing-in-prod-do-you-really-need-ai-for-that/">Self-healing in prod do you really need AI for that?</a> — уверен, будет пушка. По инсайдерской информации знаю, что будет реальный опыт, как очень просто развалить супер-хай-авейлбл-селф-хилинг Hashicorp Vault кластер в Kubernetes с Etcd бекендом (выглядит так, что это невозможно, а на самом деле — карточный домик).</p>
+      <p>И еще там будут такие известные личности как Paul Stack, Philipp Krenn, Vsevolod Poliakov, Igor Borodin, Dmytro Lavrinenko — очень хороший набор спикеров. И классное завершение осени таким звёздным составом!</p>
+      <p>Кстати, в телеграм канале <a href="https://t.me/devopsengineer">ДевОпс инженер</a> есть промо на −10%, а сюда код попросили не выкладывать. Не знаю почему так, все равно кому нужно — перейдут в канал и без проблем найдут.</p>
+      <h3>В этом выпуске также участвовали:</h3>
+      <ul>
+        <li>
+          <a href="https://medium.com/@vvol">Vlad Voloshyn</a>
+        </li>
+        <li>
+          <a href="https://github.com/gdm">Dmytro Gorbunov</a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/aasiutin/">Oleksii Asiutin</a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/andrew-savelyev-791526127/">Andrew Savelyev</a>
+        </li>
+      </ul>
+      <h3>Дайте свой email</h3>
+      <p>В общем, я подумал, что круто было бы сделать The DevOps Digest Monthly с email-рассылкой. Да, это прямо как DevOps Weekly, Monitoring Weekly, etc weekly, только monthly. Польза очевидна: вы точно не пропустите новый релиз Helm, не забудете обновить Grafana и абсолютно точно будете знать, что можно вкрутить Netflix Bless, и будет круто. И акцент на англоязычный сегмент. Суть — сделать worldwide дайджест, для всех DevOps Engineer’s in the whole world.</p>
+      <p>Сначала я думал сделать лендос для сбора email и вкрутить SendGrid. Прокрастинировал на этой идее пару недель и понял: нужно действовать по концепции Lean Startup.</p>
+      <p>Для этого я придумал сделать самую простую <a href="https://docs.google.com/forms/d/e/1FAIpQLSebfl8QBkWDRi4Etj0KA-k2lotcB_nalnjRrmDx2BBJchQsHA/viewform">форму</a>.</p>
+      <p>Если вы добавите туда свой имейл — я буду знать, что гипотеза верна, это полезно и нужно. Лучшая благодарность за дайджест — ваша поддержка. Всем чмоки в этом чате!</p>
+      <p>← Предыдущий выпуск: <a href="http://dou.ua/lenta/digests/devops-digest-26/">DevOps дайджест #26</a></p>
+      <p>Темы: <a href="https://dou.ua/lenta/tags/DevOps/">DevOps</a>, <a href="https://dou.ua/lenta/tags/DevOps%20%D0%B4%D0%B0%D0%B9%D0%B4%D0%B6%D0%B5%D1%81%D1%82/">DevOps дайджест</a></p>
+    </article>
+  </body>
+</html>

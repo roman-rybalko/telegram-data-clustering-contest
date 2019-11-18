@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://www.cbronline.com/news/bytecode-alliance"/>
+    <meta property="og:site_name" content="Computer Business Review"/>
+    <meta property="article:published_time" content="2019-11-13T13:57:44+00:00"/>
+    <meta property="og:title" content="Mozilla, Red Hat and Intel Create Bytecode Alliance To Move WebAssembly Past Browsers"/>
+    <meta property="og:description" content="This week Mozilla, Red Hat, Fastly and Intel have formed an open source Bytecode Alliance that aims to move WebAssembly past browsers and into..."/>
+  </head>
+  <body>
+    <article>
+      <h1>Mozilla, Red Hat and Intel Create Bytecode Alliance To Move WebAssembly Past Browsers</h1>
+      <h2>“Bytecode Alliance technologies can help developers extend software using a wide selection of languages, building upon the full capabilities of leading-edge compute platforms”</h2>
+      <address>
+        <time datetime="2019-11-13T13:57:44+00:00">13 Nov 2019, 13:57</time>
+      </address>
+      <p>This week Mozilla, Red Hat, Fastly and Intel have formed an open source Bytecode Alliance that wants to expand the binary format standard WebAssembly past its browser origin so developers can create cross-platform runtimes that work on desktop, mobile and server environments.</p>
+      <p>At the core of the Alliance is the binary format standard WebAssembly (Wasm), which is supported by all major browsers as of 2017.</p>
+      <p>This standard was first developed to optimise the delivery of web resources from a server to a browser. Rather than a browser receiving hundreds of CSS, HTML and JavaScript files that had to be loaded, WebAssembly crunched all of this down into a Wasm bytecode file, thus increasing browser speeds.</p>
+      <p>The file format is widely used by developers to circumvent JavaScript frustrations, because Wasm is a binary format developers can simple create an application in languages such as RUST or C++, load it into WebAssembly and run it in the browser.</p>
+      <p>The <a href="https://blog.mozilla.org/press/2019/11/new-bytecode-alliance-brings-the-security-ubiquity-and-interoperability-of-the-web-to-the-world-of-pervasive-computing/">Bytecode Alliance</a> wants to create a secure environment using WebAssembly standards that allows: “Application developers and service providers to confidently run untrusted code, on any infrastructure, for any operating system or device, leveraging decades of experience doing so inside web browsers.”</p>
+      <p>At its heart the Bytecode Alliance wants to create secure foundations that make it safe to use untrusted code, be that in the cloud, on hardware or IoT devices. Wasm is not a JavaScript replacement, rather it works alongside it. Wasm code is intended to run inside the virtual machine present in modern browsers. As such WebAssembly enables untrusted code to interact with trusted code components in a sandboxed environment.</p>
+      <p>Using this technology the Bytecode Alliance is collaboration on and creating new runtime components and language tools. So far the Alliance has released the following projects;</p>
+      <h3>Runtimes:</h3>
+      <ul>
+        <li><a href="https://github.com/bytecodealliance/wasmtime">Wasmtime</a> is a stand-alone WebAssembly runtime that can be used as a CLI tool or embedded into other systems. It’s very configurable and scalable so that it can serve as the base for many use-case specific runtimes, from small IoT devices all the way up to cloud data centers.</li>
+        <li><a href="https://github.com/bytecodealliance/lucet">Lucet</a> is an example of a use-case specific runtime. It’s ideal for fast CDNs and Edge Compute, using AOT compilation and other techniques to provide low-latency and high-concurrency. We are refactoring it to use Wasmtime at its core.</li>
+        <li><a href="https://github.com/bytecodealliance/wasm-micro-runtime">WebAssembly Micro Runtime</a> (WAMR) is another use-case specific runtime. It’s ideal for small embedded devices that have extremely limited resources. It provides a small footprint and uses an interpreter to keep memory overhead low.</li>
+      </ul>
+      <h3>Runtime components:</h3>
+      <ul>
+        <li>Cranelift is emerging as a state-of-the-art code generator. It is designed to generate optimized machine code very quickly because it parallelizes compilation on a function-by-function level.</li>
+        <li>WASI common is a standalone implementation of the WebAssembly System Interface that runtimes can use.</li>
+      </ul>
+      <h3>Language Tooling</h3>
+      <ul>
+        <li><a href="https://github.com/bytecodealliance/cargo-wasi">cargo-wasi</a> is a lightweight Cargo subcommand that compiles Rust code to target WebAssembly and the WebAssembly System Interface for outside-the-browser use.</li>
+        <li><a href="https://github.com/bytecodealliance/wat">wat</a> and <a href="https://github.com/bytecodealliance/wasmparser.rs">wasmparser</a> parse WebAssembly. wat parses the text format, and wasmparser is an event-driven library for parsing the binary format.</li>
+      </ul>
+      <p>Mark Skarpness VP of Intel Architecture, Graphics, and Software commented in the <a href="https://blog.mozilla.org/press/2019/11/new-bytecode-alliance-brings-the-security-ubiquity-and-interoperability-of-the-web-to-the-world-of-pervasive-computing/">release</a> that: “Intel is joining the Bytecode Alliance as a founding member to help extend WebAssembly’s performance and security benefits beyond the browser to a wide range of applications and servers. Bytecode Alliance technologies can help developers extend software using a wide selection of languages, building upon the full capabilities of leading-edge compute platforms”</p>
+      <related>
+        <a href="https://www.cbronline.com/news/xilinx-try-our-free-fgpa-programming-software-platform-its-easy-promise"/>
+      </related>
+      <related>
+        <h4>Related News</h4>
+        <a href="https://www.cbronline.com/opinion/data-warehouse-rebirth"/>
+        <a href="https://www.cbronline.com/news/aws-data-exchange"/>
+        <a href="https://www.cbronline.com/news/devops-pro-2020-diversity"/>
+      </related>
+    </article>
+  </body>
+</html>

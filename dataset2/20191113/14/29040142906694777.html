@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://www.androidcentral.com/google-fast-pair-bluetooth?utm_source=feedburner&amp;utm_medium=feed&amp;utm_campaign=Feed%3A+androidcentral+%28Android+Central%29"/>
+    <meta property="og:site_name" content="Android Central"/>
+    <meta property="article:published_time" content="2019-11-13T14:00:02+00:00"/>
+    <meta property="og:title" content="A closer look at Google's Fast Pair technology: How it builds on Bluetooth"/>
+    <meta property="og:description" content="Google's Fast Pair helps with pairing, but does so much more to enhance the Bluetooth audio experience on Android."/>
+  </head>
+  <body>
+    <article>
+      <h1>A closer look at Google's Fast Pair technology: How it builds on Bluetooth</h1>
+      <address>
+        <time datetime="2019-11-13T14:00:02+00:00">13 Nov 2019, 14:00</time>
+      </address>
+      <figure>
+        <img src="https://www.androidcentral.com/sites/all/themes/mbn2_twig/assets/images/4x3.png"/>
+      </figure>
+      <figure>
+        <img src="https://www.androidcentral.com/sites/androidcentral.com/files/styles/large_wm_brw/public/article_images/2018/07/bose-qc35-ii-review-4.jpg?itok=WQaLTOi4"/>
+      </figure>
+      <p>
+        <i>Source: Android Central</i>
+      </p>
+      <figure>
+        <img src="https://www.androidcentral.com/sites/all/themes/mbn2_twig/assets/images/1x1.png"/>
+      </figure>
+      <figure>
+        <img src="https://www.androidcentral.com/sites/androidcentral.com/files/styles/medium/public/article_images/2019/11/spotlight-bluetooth.png?itok=K_kfcHF0"/>
+      </figure>
+      <p>Bluetooth has <i>a lot</i> of user experience issues, but one of the most annoying is the process of getting devices paired together. Google took it upon itself to address the problem, at least with Android phones connecting to Bluetooth audio devices, by launching what it calls "Fast Pair."</p>
+      <p><a href="https://android-developers.googleblog.com/2017/10/announcing-fast-pair-effortless.html">Fast Pair was announced in late 2017</a>, and has been an understandably under-the-radar feature considering its seamless operation and how infrequently it's used with any given pair of headphones. However, in the subsequent years, a considerable number of popular headphone (and speaker) companies have included Fast Pair across their lineup, and that's great for everyone who has an Android phone.</p>
+      <figure>
+        <img src="https://www.androidcentral.com/sites/all/themes/mbn2_twig/assets/images/16x9.png"/>
+      </figure>
+      <figure>
+        <video src="https://www.androidcentral.com/sites/androidcentral.com/files/article_images/2019/11/image1.gif?itok=m-MmG359" autoplay="" loop=""/>
+      </figure>
+      <p>
+        <i>Source: Google</i>
+      </p>
+      <p><a href="https://www.androidcentral.com/how-use-fast-pair-connect-wireless-headphones">With Fast Pair</a>, the process of getting your headphones (or speaker) connected to a phone for the first time is effortless. Turn on the headphones in range of your phone, and the phone will prompt you to pair with a notification — tap, and you're done. You'll even get another notification to install a companion app for the headphones, if there is one. That's several steps — and in some cases several minutes — faster than the traditional process. It couldn't be simpler.</p>
+      <figure>
+        <img src="https://www.androidcentral.com/sites/all/themes/mbn2_twig/assets/images/9x16.png"/>
+      </figure>
+      <figure>
+        <img src="https://www.androidcentral.com/sites/androidcentral.com/files/styles/large/public/article_images/2019/07/fast-pair-details-screen.jpg?itok=lwp5MptW"/>
+      </figure>
+      <p>
+        <i>Source: Google</i>
+      </p>
+      <p>But Fast Pair isn't <i>only</i> about the initial pairing process. Google uses the Fast Pair umbrella to refer to an entire bundle of advanced Bluetooth audio-related features. The company released <a href="https://android-developers.googleblog.com/2019/07/whats-new-with-fast-pair.html">fresh features for Fast Pair in mid-2019</a>, adding support for <a href="https://www.androidcentral.com/best-true-wireless-headphones">true wireless headphones</a> to broadcast individual battery levels of earbuds and the case, notifications for when the case is opened and closed, and more detailed connection and device information in the Bluetooth settings screen.</p>
+      <p>Best of all, Google rolled out Fast Pair using Google Play Services, meaning it works with all phones on Android 6.0 and newer (though some advanced features require Android 10).</p>
+      <p>Where the bottleneck comes in is on the accessory side. Headphone and speaker companies have to do a little work on their end to make sure their devices work with Fast Pair, and that means you need to buy <i>specific</i> headphones to get this seamless pairing and management experience.</p>
+      <blockquote>Fast Pair helps with pairing, but does <i>so</i> much more to enhance the Bluetooth audio experience.</blockquote>
+      <p>Fast Pair support is easy to add, but isn't a fully software solution. It has to be <a href="https://developers.google.com/nearby/fast-pair/chipsets">included at the Bluetooth chipset level</a>, but that doesn't mean companies need to make their own chips. Big names like <a href="https://www.qualcomm.com/news/releases/2019/05/09/qualcomm-expands-smart-headset-platform-include-support-google-assistant">Qualcomm</a> and Mediatek (and many others that you've never heard of) include Fast Pair on many of their all-in-one audio chipset solutions that companies build their products around — and in many cases companies were already using these chipsets, so simply using the latest version gives them Fast Pair for free. That takes the onus almost entirely off of the brand-name company selling the end product.</p>
+      <blockquote>Fast Pair requires a specific audio chipset, which limits its availability but is critical to its implementation.</blockquote>
+      <p>Fast Pair requires a specific chipset implementation because there's quite a bit of complicated work happening in the background. <a href="https://developers.google.com/nearby/fast-pair/spec">Google has to approve each Fast Pair accessory (headphones or speaker)</a> and generate a public/private key pair to ensure devices that broadcast themselves as Fast Pair devices are actually officially sanctioned and aren't being spoofed. If Google didn't require the key system, Fast Pair would be a security risk because it would make it incredibly easy to get an unsuspecting user to accidentally pair to a malicious pair of "headphones." So while this limits the availability of Fast Pair devices, it's a necessary step — and it also unifies the experience to be the <i>exact</i> same no matter what phone or audio device you're using.</p>
+      <p>Google doesn't maintain a comprehensive list of Fast Pair compatible headphones and speakers, but there's a good variety of headphone styles — many from popular companies — to choose from. Here's a list (again, non-complete) of Fast Pair headphones you can look for:</p>
+      <ul>
+        <li>
+          <a href="https://www.amazon.com/1MORE-Headphones-Bluetooth-Cancellation-Microphone/dp/B07H24D18W/?tag=androidcentralb-20&amp;ascsubtag=UUacUdUnU81849YYw">1More Dual Driver BT ANC</a>
+        </li>
+        <li>
+          <a href="https://www.amazon.com/AIAIAI-TMA-2-Modular-Wireless-Preset/dp/B076FTC9VD?tag=androidcentralb-20&amp;ascsubtag=UUacUdUnU81849YYw">AiAiAi TMA-2</a>
+        </li>
+        <li>
+          <a href="https://www.amazon.com/Headphones-Soundcore-SweatGuard-Technology-Bluetooth/dp/B07BMV5T2N?tag=androidcentralb-20&amp;ascsubtag=UUacUdUnU81849YYw">Anker Spirit Pro GVA</a>
+        </li>
+        <li>
+          <a href="https://www.amazon.com/Soundcore-Portable-Bluetooth-Waterproof-Radiators/dp/B07F7VJN1G/?tag=androidcentralb-20&amp;ascsubtag=UUacUdUnU81849YYw">Anker SoundCore Flare+</a>
+        </li>
+        <li>
+          <a href="https://www.amazon.com/Bose-QuietComfort-Wireless-Headphones-Cancelling/dp/B0756CYWWD?tag=androidcentralb-20&amp;ascsubtag=UUacUdUnU81849YYw">Bose QuiteComfort 35 II</a>
+        </li>
+        <li>
+          <a href="https://www.amazon.com/Cleer-Wireless-Extended-Bluetooth-Headphones/dp/B07R8WT9N3/?tag=androidcentralb-20&amp;ascsubtag=UUacUdUnU81849YYw">Cleer Ally Plus</a>
+        </li>
+        <li>
+          <a href="https://goto.walmart.com/c/159229/612734/9383?sharedid=1943169&amp;subId1=UUacUdUnU81849YYw&amp;subId2=dac&amp;u=https%3A%2F%2Fwww.walmart.com%2Fip%2FGoogle-Pixel-Buds-In-Ear-Wireless-Headphones-Just-Black%2F116324630%3Fwmlspartner%3Dimp_159229%26selectedSellerId%3D0%26adid%3D22222222227134231575%26wl0%3D%26wl1%3Dg%26wl2%3Dc%26wl3%3D242047435567%26wl4%3Dpla-451045717847%26wl5%3D1027719%26wl6%3D%26wl7%3D%26wl8%3D%26wl9%3Dpla%26wl10%3D8175035%26wl11%3Donline%26wl12%3D116324630%26veh%3Daff%26gclid%3DCj0KCQiA-4nuBRCnARIsAHwyuPoTzbjYUMbA1pFORRpwdq96mKvy1neW-LTBCQ371TnpKN-l5J2KswcaAs_oEALw_wcB%26irgwc%3D1%26sourceid%3Dimp_xVn3k50zHxyORV9wUx0Mo34BUknwtWVFxztSWI0%26clickid%3DxVn3k50zHxyORV9wUx0Mo34BUknwtWVFxztSWI0">Google Pixel Buds</a>
+        </li>
+        <li>
+          <a href="https://www.amazon.com/Jaybird-Tarah-Wireless-Sport/dp/B07H72WMLN?tag=androidcentralb-20&amp;ascsubtag=UUacUdUnU81849YYw">Jaybird Tarah Sport</a>
+        </li>
+        <li>
+          <a href="https://www.amazon.com/JBL-Live-Neckband-Wireless-Headphone/dp/B07S4GQLT2/?tag=androidcentralb-20&amp;ascsubtag=UUacUdUnU81849YYw">JBL Live 220BT</a>
+        </li>
+        <li>
+          <a href="https://www.amazon.com/JBL-Live-400BT-Wireless-Headphones/dp/B07PFXTW2N?tag=androidcentralb-20&amp;ascsubtag=UUacUdUnU81849YYw">JBL Live 400/500/650BT</a>
+        </li>
+        <li>
+          <a href="https://www.amazon.com/LG-Bluetooth-Wireless-Headset-HBS-SL5/dp/B07WDRPXLB/?tag=androidcentralb-20&amp;ascsubtag=UUacUdUnU81849YYw">LG HBS-SL5</a>
+        </li>
+        <li>
+          <a href="https://www.amazon.com/LG-Bluetooth-Wireless-Headset-HBS-SL6S/dp/B07WQFMQ1G/?tag=androidcentralb-20&amp;ascsubtag=UUacUdUnU81849YYw">LG HBS-SL6S</a>
+        </li>
+        <li>
+          <a href="https://www.amazon.com/Libratone-Wireless-Cancelling-Headphones-Stormy/dp/B01NAHRH9X/?tag=androidcentralb-20&amp;ascsubtag=UUacUdUnU81849YYw">Libratone Q Adapt on-ear</a>
+        </li>
+        <li>
+          <a href="https://www.amazon.com/Plantronics-Voyager-Bluetooth-Headset-Canceling/dp/B073YNM9P2/?tag=androidcentralb-20&amp;ascsubtag=UUacUdUnU81849YYw">Plantronics Voyager 8200 UC</a>
+        </li>
+      </ul>
+      <p>And whether you specifically pick headphones to get Fast Pair or just happen to get some after choosing them for another reason, it's a win-win solution that really improves the quality of the Bluetooth audio experience on Android.</p>
+      <h3>The best headphones that support Fast Pair</h3>
+      <figure>
+        <img src="https://www.androidcentral.com/sites/all/themes/mbn2_twig/assets/images/1x1.png"/>
+      </figure>
+      <figure>
+        <img src="https://www.androidcentral.com/sites/androidcentral.com/files/article_images/2019/04/bose-qc35-ii-render.png?itok=V4HRPxnx"/>
+      </figure>
+      <h4><a href="https://www.amazon.com/Bose-QuietComfort-Wireless-Headphones-Cancelling/dp/B0756CYWWD?tag=androidcentralb-20&amp;ascsubtag=UUacUdUnU81849YYw">Bose QuietComfort 35 II</a> ($350 at Amazon)</h4>
+      <p>Truly premium headphones through and through, the Bose QC35 II deliver excellent sound, powerful noise-canceling, up to 30 hours of battery life, and incredible comfort.</p>
+      <figure>
+        <img src="https://www.androidcentral.com/sites/all/themes/mbn2_twig/assets/images/1x1.png"/>
+      </figure>
+      <figure>
+        <img src="https://www.androidcentral.com/sites/androidcentral.com/files/article_images/2018/12/jaybird-tarah-render-cropped.png?itok=8toL7FBT"/>
+      </figure>
+      <h4><a href="https://www.amazon.com/Jaybird-Tarah-Wireless-Sport/dp/B07H72WMLN?tag=androidcentralb-20&amp;ascsubtag=UUacUdUnU81849YYw">Jaybird Tarah Sport</a> ($80 at Amazon)</h4>
+      <p>The Jaybird Tarah were made with active lifestyles in mind. In addition to surprisingly great sound for such a small package, you also get six hours of battery, sweat and water resistance, and a highly customizable EQ.</p>
+      <figure>
+        <img src="https://www.androidcentral.com/sites/all/themes/mbn2_twig/assets/images/1x1.png"/>
+      </figure>
+      <figure>
+        <img src="https://www.androidcentral.com/sites/androidcentral.com/files/article_images/2019/11/anker-spirit-headphones-render.jpg?itok=MMByv_1T"/>
+      </figure>
+      <h4><a href="https://www.amazon.com/Headphones-Soundcore-SweatGuard-Technology-Bluetooth/dp/B07BMV5T2N?tag=androidcentralb-20&amp;ascsubtag=UUacUdUnU81849YYw">Anker Spirit Pro</a> ($40 at Amazon)</h4>
+      <p>You don't have to spend a ton to get solid wireless headphones. Anker's a known quantity in the Bluetooth accessory game, and its headphones strike a great balance between performance and cost.</p>
+      <figure>
+        <img src="https://www.androidcentral.com/sites/all/themes/mbn2_twig/assets/images/1x1.png"/>
+      </figure>
+      <figure>
+        <img src="https://www.androidcentral.com/sites/androidcentral.com/files/article_images/2019/11/cleer-ally-wireless-headphones-render.jpg?itok=2KaBEFWg"/>
+      </figure>
+      <h4><a href="https://www.amazon.com/Cleer-Wireless-Extended-Bluetooth-Headphones/dp/B07R8WT9N3/?tag=androidcentralb-20&amp;ascsubtag=UUacUdUnU81849YYw">Cleer Ally Wireless Earbuds</a> ($150 at Amazon)</h4>
+      <p>Cleer has one of the few pairs of truly wireless headphones that work with Fast Pair. They don't have the tiny case of some newer models, but they have good sound, long battery life and a competitive price.</p>
+      <figure>
+        <img src="https://www.androidcentral.com/sites/all/themes/mbn2_twig/assets/images/3x1.png"/>
+      </figure>
+      <figure>
+        <img src="https://www.androidcentral.com/sites/androidcentral.com/files/styles/large/public/article_images/2019/11/spotlight-bluetooth.png?itok=K_kfcHF0"/>
+      </figure>
+      <p>All 20 stories from our 2019 Spotlight on Bluetooth package, all in one place. Whether it's a spot of Bluetooth history, a bit of humor from wireless memes, or some thoughtful analysis on the future of the short-range tech, you'll find it right here, courtesy of the folks at Android Central, iMore and Windows Central.</p>
+      <h4>General Bluetooth</h4>
+      <ul>
+        <li>
+          <a href="https://www.androidcentral.com/spotlight-bluetooth-introduction">Introduction to our 2019 Spotlight on Bluetooth</a>
+        </li>
+        <li>
+          <a href="https://www.windowscentral.com/where-did-bluetooth-name-and-logo-come">Where did the Bluetooth name and logo come from?</a>
+        </li>
+        <li>
+          <a href="https://www.androidcentral.com/history-major-bluetooth-releases-and-updates">A history of all the major Bluetooth releases and updates</a>
+        </li>
+        <li>
+          <a href="https://www.windowscentral.com/future-bluetooth">Where Bluetooth is headed, and the challenges it must overcome to get there</a>
+        </li>
+        <li>
+          <a href="https://www.androidcentral.com/bluetooth-5-it-actually-better-and-do-you-need-it">Bluetooth 5: Is it actually better, and do you need it?</a>
+        </li>
+        <li>
+          <a href="https://www.imore.com/bluetooth-week-meme-edition">Why Bluetooth is so great (and so terrible): A story told via memes</a>
+        </li>
+        <li>
+          <a href="https://www.imore.com/why-bluetooth-your-car-sucks-and-always-will">Why the Bluetooth in your car sucks (and always will)</a>
+        </li>
+        <li>
+          <a href="https://www.androidcentral.com/weird-bluetooth-gadgets">12 weird Bluetooth gadgets the Mobile Nations team uses every day</a>
+        </li>
+      </ul>
+      <h4>Android</h4>
+      <ul>
+        <li>
+          <a href="https://www.androidcentral.com/google-fast-pair-bluetooth">A closer look at Google's Fast Pair technology and how it builds on Bluetooth</a>
+        </li>
+        <li>
+          <a href="https://www.androidcentral.com/bluetooth-android-top-tips-getting-your-devices-work-properly">Top tips for getting your Android devices to play nicely with Bluetooth</a>
+        </li>
+        <li>
+          <a href="https://www.androidcentral.com/bluetooth-sucks-it-was-still-good-enough-kill-headphone-jack-phones">Yes, Bluetooth sucks, but it was good enough to kill the headphone jack on phones</a>
+        </li>
+      </ul>
+      <h4>Windows</h4>
+      <ul>
+        <li>
+          <a href="https://www.windowscentral.com/major-bluetooth-miletones-microsoft">5 major Bluetooth milestones at Microsoft</a>
+        </li>
+        <li>
+          <a href="https://www.windowscentral.com/how-master-bluetooth-windows-10">How to master Bluetooth on Windows 10</a>
+        </li>
+        <li>
+          <a href="https://www.windowscentral.com/so-why-doesnt-xbox-one-use-bluetooth-anyway">Why Xbox One (still) doesn't use Bluetooth</a>
+        </li>
+        <li>
+          <a href="https://www.windowscentral.com/why-wireless-gaming-mice-still-use-rf-receivers-instead-bluetooth">Why wireless gaming mice still use RF receivers instead of Bluetooth</a>
+        </li>
+        <li>
+          <a href="https://www.windowscentral.com/our-favorite-bluetooth-gadgets-all-time">Windows Central staff's favorite Bluetooth gadgets right now</a>
+        </li>
+      </ul>
+      <h4>Apple and iOS</h4>
+      <ul>
+        <li>
+          <a href="https://www.youtube.com/watch?v=a3Z6035QzJQ">The secret to Apple's ecosystem (video)</a>
+        </li>
+        <li>
+          <a href="https://www.imore.com/tips-and-tricks-getting-bluetooth-work-your-iphone-ipad-apple-watch-and-mac">How to solve common Bluetooth issues on iPhone, iPad and Apple Watch and Mac</a>
+        </li>
+        <li>
+          <a href="https://www.imore.com/bluetooth-vs-airplay-whats-difference-and-which-works-better">Bluetooth vs AirPlay 2: Which is the superior wireless technology?</a>
+        </li>
+        <li>
+          <a href="https://www.imore.com/rene-ritchie-and-lory-gils-favorite-bluetooth-accessories">iMore staff's favorite Bluetooth tech</a>
+        </li>
+      </ul>
+      <p>We may earn a commission for purchases using our links. <a href="https://www.mobilenations.com/external-links">Learn more</a>.</p>
+      <figure>
+        <img src="https://www.androidcentral.com/sites/all/themes/mbn2_twig/assets/images/1x1.png"/>
+      </figure>
+      <figure>
+        <img src="https://www.androidcentral.com/sites/androidcentral.com/files/styles/w200h150crop/public/article_images/2019/11/fitbit-versa-2-fitbit-os-4-1-update.jpg?itok=024zAVC9"/>
+      </figure>
+      <p>
+        <a href="https://www.androidcentral.com/new-fitbit-os-update-finally-lets-you-change-your-watch-face-device"><b>Fitbit OS 4.1</b> The new Fitbit OS update finally lets you change your watch face on-device Fitbit OS 4.1 is heading to Fitbit's smartwatches on December 3, bringing an on-device watch face switcher, an Agenda app, a better Exercise app, and much more.</a>
+      </p>
+      <figure>
+        <img src="https://www.androidcentral.com/sites/all/themes/mbn2_twig/assets/images/1x1.png"/>
+      </figure>
+      <figure>
+        <img src="https://www.androidcentral.com/sites/androidcentral.com/files/styles/w200h150crop/public/field/image/2017/03/playstation-vr-psvr-greyback-01-a63b.jpg?itok=LCBlVFHm"/>
+      </figure>
+      <p>
+        <a href="https://www.androidcentral.com/best-playstation-vr-controller"><b>All your options</b> Best PlayStation VR Controller There are four options when it comes to which controller you can use with the PlayStation VR. Here's a rundown of all the options, which one is the best for what, and how to determine which one you need to add to your collection!</a>
+      </p>
+      <figure>
+        <img src="https://www.androidcentral.com/sites/all/themes/mbn2_twig/assets/images/1x1.png"/>
+      </figure>
+      <figure>
+        <img src="https://www.androidcentral.com/sites/androidcentral.com/files/styles/w200h150crop/public/article_images/2019/09/sonos-move-review-11.jpg?itok=EuX4VwMy"/>
+      </figure>
+      <p>
+        <a href="https://www.androidcentral.com/sonos-speakers-finally-get-spotify-free-streaming-support"><b>Great news</b> Sonos speakers finally get Spotify Free streaming support Sonos is adding support for Spotify Free streaming to its speakers with a software update.</a>
+      </p>
+      <figure>
+        <img src="https://www.androidcentral.com/sites/all/themes/mbn2_twig/assets/images/1x1.png"/>
+      </figure>
+      <figure>
+        <img src="https://www.androidcentral.com/sites/androidcentral.com/files/styles/w200h150crop/public/article_images/2019/10/tile-slim-2020-hero.jpg?itok=HYGJMhYH"/>
+      </figure>
+      <p>
+        <a href="https://www.androidcentral.com/weird-bluetooth-gadgets"><b>Strange Places</b> 12 weird Bluetooth gadgets the Mobile Nations team use every day We've rounded up our favorite weird and wonderful Bluetooth devices the Mobile Nations staff are proud (or not so proud) to own.</a>
+      </p>
+    </article>
+  </body>
+</html>

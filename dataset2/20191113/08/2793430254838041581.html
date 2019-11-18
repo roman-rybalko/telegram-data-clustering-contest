@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://habr.com/en/company/redmadrobot/blog/475112/"/>
+    <meta property="og:site_name" content="Habr"/>
+    <meta property="article:published_time" content="2019-11-13T08:39:36+00:00"/>
+    <meta property="og:title" content="Authenticate me. If you can…"/>
+    <meta property="og:description" content="I frequently hear questions like &quot;How to implement authentication in an Android app?&quot;, &quot;Where to store a PIN?&quot;, &quot;Hey man, will I be secure if I implement an..."/>
+  </head>
+  <body>
+    <article>
+      <h1>Authenticate me. If you can…</h1>
+      <address><time datetime="2019-11-13T08:39:36+00:00">13 Nov 2019, 08:39</time> by <a rel="author" href="https://habr.com/en/users/Fi5t/" target="_blank">Fi5t</a></address>
+      <figure>
+        <img src="https://habrastorage.org/webt/p9/kd/qs/p9kdqsyke71dvzl72vxr24da0yc.jpeg"/>
+      </figure>
+      <p>I frequently hear questions like "How to implement authentication in an Android app?", "Where to store a PIN?", "Hey man, will I be secure if I implement an authentication feature in such a way?" and a lot of the kind. I got really tired answering these questions so I decided to write all my thoughts about it once to share with all questioners.</p>
+      <h3>Table of contents</h3>
+      <ul>
+        <li>
+          <a href="https://habr.com/en/company/redmadrobot/blog/475112/#why-do-I-have-to-do-it">Authentication: Why do I have to do it?</a>
+        </li>
+        <li>
+          <a href="https://habr.com/en/company/redmadrobot/blog/475112/#simple-way">Simple way</a>
+        </li>
+        <li>
+          <a href="https://habr.com/en/company/redmadrobot/blog/475112/#lets-make-it-better">Let's make it better</a>
+        </li>
+        <li>
+          <a href="https://habr.com/en/company/redmadrobot/blog/475112/#the-right-way">The right way</a>
+        </li>
+        <li>
+          <a href="https://habr.com/en/company/redmadrobot/blog/475112/#what-about-biometrics">But wait, what about biometrics?</a>
+        </li>
+        <li>
+          <a href="https://habr.com/en/company/redmadrobot/blog/475112/#am-i-completely-protected">Am I completely protected?</a>
+        </li>
+      </ul>
+      <anchor name="why-do-I-have-to-do-it">
+        <h3>Authentication: Why do I have to do it?</h3>
+        <p>Let's start from the definition. <b>Authentication</b> (from Greek: αὐθεντικός authentikos, "real, genuine", from αὐθέντης authentes, "author") is the act of proving an assertion, such as the identity of a computer system user.</p>
+        <p>So, if your application has sensitive information (any user's information are sensitive IMHO) you have to add an authentication scenario to the app to prevent unauthorized access to this information.</p>
+        <p>The most popular authentication scenarios are as follows:</p>
+        <ul>
+          <li>Login + Password</li>
+          <li>Master password</li>
+          <li>PIN (4 or more digits)</li>
+          <li>Biometrics</li>
+        </ul>
+        <p>Naturally, <b>login&amp;password</b> authentication comes to your application from a back-end and the security of this mechanism we'll leave to the back-end security assurance team ;) Just don't forget to implement <a href="https://www.owasp.org/index.php/Certificate_and_Public_Key_Pinning">Public Key Pinning</a>.</p>
+        <p><b>Master password</b> authentication is very rarely used and only in apps that require a high level of security (e.g. password managers).</p>
+        <p>Thus, we have only two most popular scenarios: a <b>PIN</b> and <b>Biometrics</b>. They are quite user-friendly and relatively easy in implementation (actually they aren't...). In this article we'll cover the main aspects of the correct implementation of these features.</p>
+        <anchor name="simple-way">
+          <h3>Simple way</h3>
+          <p>Just imagine, you're an Android developer and your code prints you money. You don't worry about anything, and you ain't got much need in serious mobile apps security expertise. But one day, a manager comes to you and gives a task to "Implement an additional authentication via a PIN and a fingerprint in our application". The story begins here...</p>
+          <p>To implement PIN authentication you would create a couple of screens like these:</p>
+          <figure>
+            <img src="https://habrastorage.org/webt/7i/fe/0u/7ife0uw4kwm-yybqkot0pkvwue8.png"/>
+          </figure>
+          <p>  </p>
+          <figure>
+            <img src="https://habrastorage.org/webt/mp/bl/ou/mpblouhttk5kpu9u5haezm6659i.png"/>
+          </figure>
+          <p>And write such code for creating and checking your PIN</p>
+          <pre>fun savePin(pin: String) {<br/>    preferences.edit().putString(StorageKey.PIN, pin).apply()<br/>}</pre>
+          <pre>fun authenticate(pin: String) {<br/>    authenticationState.value = if (pinIsValid(pin)) {<br/>        AuthenticationState.AUTHENTICATED<br/>    } else {<br/>        AuthenticationState.INVALID_AUTHENTICATION<br/>    }<br/>}<br/><br/>private fun pinIsValid(pin: String): Boolean {<br/>    return preferences.getString(StorageKey.PIN, null) == pin<br/>}</pre>
+          <p>That's all! Now, you have a cool authentication system via a PIN. Congratulations. It was so easy, wasn't it?</p>
+          <p>Of course, you've already caught the irony in my words. This way is terribly bad because a PIN is stored as plaintext. If malware somehow gets access to the internal application storage, it'll get the user PIN as is. You can ask me "Why is it so bad? It's just a PIN from local authentication...". Yeah, but users tend to set the same PIN everywhere. Therefore, knowledge of a user PIN allows an intruder to expand the attack surface.</p>
+          <p>Moreover, such authentication scheme doesn't allow you to implement user data encryption based on a PIN in a secure manner (we'll talk about it later).</p>
+          <anchor name="lets-make-it-better">
+            <h3>Let's make it better</h3>
+            <p>How can we improve our previous implementation? The first and evident approach is taking a hash from your PIN and storing this hash.</p>
+            <blockquote>A <b>hash function</b> is any function that can be used to map data of arbitrary size to fixed-size values. The values returned by a hash function are called hash values, hash codes, digests, or simply hashes. The values are used to index a fixed-size table called a hash table. Use of a hash function to index a hash table is called hashing or scatter storage addressing.</blockquote>
+            <p>There are lots of available hash functions in Android Framework (in <a href="https://docs.oracle.com/javase/7/docs/technotes/guides/security/crypto/CryptoSpec.html">Java Cryptography Architecture</a>, to be precise), but today not each of them is considered secure. I don't recommend using <a href="https://en.wikipedia.org/wiki/MD5#Collision_vulnerabilities">MD5</a> and <a href="https://security.googleblog.com/2017/02/announcing-first-sha1-collision.html">SHA-1</a> due to collisions. SHA-256 is a good choice for most tasks.</p>
+            <pre>fun sha256(byteArray: ByteArray): ByteArray {<br/>    val digest = try {<br/>        MessageDigest.getInstance("SHA-256")<br/>    } catch (e: NoSuchAlgorithmException) {<br/>        MessageDigest.getInstance("SHA")<br/>    }<br/><br/>    return with(digest) {<br/>            update(byteArray)<br/>            digest()<br/>        }<br/>}</pre>
+            <p>Let's modify our <code>savePin(...)</code> method to store the hashed PIN</p>
+            <pre>fun savePin(pin: String) {<br/>    val hashedPin = sha256(pin.toByteArray())<br/>    val encodedHash = Base64.encodeToString(hashedPin, Base64.DEFAULT)<br/><br/>    preferences.edit().putString(StorageKey.PIN, encodedHash).apply()<br/>}</pre>
+            <p>Using hash is a good start, but bare hash is not enough for our task. In the real life an attacker has already <a href="http://bugcharmer.blogspot.com/2012/06/passwords-matter.html">pre-computed</a> all the 4-digit PIN hashes. He will be able to decrypt all those stolen hashed PINs quite easily. There is an approach to deal with it — a <a href="https://en.wikipedia.org/wiki/Salt_(cryptography)">salt</a>.</p>
+            <blockquote>In cryptography, a <b>salt</b> is random data that is used as an additional input to a one-way function that "hashes" data, a password or passphrase. Salts are used to safeguard passwords in storage. Historically a password was stored in plaintext on a system, but over time additional safeguards developed to protect a user's password against being read from the system. A salt is one of those methods.</blockquote>
+            <p>To add a salt to our security mechanism we need to change the code shown above in such a way</p>
+            <pre>fun generate(lengthByte: Int = 32): ByteArray {<br/>    val random = SecureRandom()<br/>    val salt = ByteArray(lengthByte)<br/><br/>    random.nextBytes(salt)<br/><br/>    return salt<br/>}</pre>
+            <pre>fun savePin(pin: String) {<br/>    val salt = Salt.generate()<br/>    val saltedPin = pin.toByteArray() + salt<br/><br/>    val hashedPin = Sha256.hash(saltedPin)<br/>    val encodedHash = Base64.encodeToString(hashedPin, Base64.DEFAULT)<br/>    val encodedSalt = Base64.encodeToString(salt, Base64.DEFAULT)<br/><br/>    preferences.edit()<br/>            .putString(StorageKey.PIN, encodedHash)<br/>            .putString(StorageKey.SALT, encodedSalt)<br/>            .apply()<br/>}</pre>
+            <p>Note, you have to store the salt together with the PIN because you need to compute resulted hash (using salt) every time when checking the PIN from user input.</p>
+            <pre>private fun pinIsValid(pin: String): Boolean {<br/>    val encodedSalt = preferences.getString(StorageKey.SALT, null)<br/>    val encodedHashedPin = preferences.getString(StorageKey.PIN, null)<br/><br/>    val salt = Base64.decode(encodedSalt, Base64.DEFAULT)<br/>    val storedHashedPin = Base64.decode(encodedHashedPin, Base64.DEFAULT)<br/><br/>    val enteredHashedPin = Sha256.hash(pin.toByteArray() + salt)<br/><br/>    return storedHashedPin contentEquals enteredHashedPin<br/>}</pre>
+            <p>As you can see, the code is still not so hard to understand, but the security of this solution has become much stronger. I'll say even more, this approach is quite production ready for the most applications that don't require a high level of security.</p>
+            <p>"But what if I need a much more secure solution?", you ask. Ok, follow me.</p>
+            <anchor name="the-right-way">
+              <h3>The right way</h3>
+              <p>Let's discuss several improvement points for our authentication approach.</p>
+              <p>Firstly, the main flaw of "ordinary hashes" (and even "salted ordinary hashes") is relatively high speed of a brute-force attack (about <a href="https://dusted.codes/sha-256-is-not-a-secure-password-hashing-algorithm">billions of hashes per minute</a>). To eliminate this flaw we've got to use a special KDF-function like <a href="https://en.wikipedia.org/wiki/PBKDF2">PBKDF2</a> which is natively supported by the Android Framework. Of course, there is some difference between KDF functions and you'll probably want to choose the other one, but it's out of this article scope. I'll give you several useful links about this topic at the end of the article.</p>
+              <p>Secondly, we have no user data encryption at this point. There are a lot of ways to implement it and I'll show the simplest and the most reliable one. It'll be a set of two libraries and some code around them.</p>
+              <p>Let's write a PBKDF2 key creating factory to begin with.</p>
+              <pre>object Pbkdf2Factory {<br/>    private const val DEFAULT_ITERATIONS = 10000<br/>    private const val DEFAULT_KEY_LENGTH = 256<br/><br/>    private val secretKeyFactory by lazy {<br/>        if (Build.VERSION.SDK_INT &lt; Build.VERSION_CODES.O) {<br/>            SecretKeyFactory.getInstance("PBKDF2withHmacSHA1")<br/>        } else {<br/>            SecretKeyFactory.getInstance("PBKDF2withHmacSHA256")<br/>        }<br/>    }<br/><br/>    fun createKey(<br/>        passphraseOrPin: CharArray,<br/>        salt: ByteArray,<br/>        iterations: Int = DEFAULT_ITERATIONS,<br/>        outputKeyLength: Int = DEFAULT_KEY_LENGTH<br/>    ): SecretKey {<br/>        val keySpec = PBEKeySpec(passphraseOrPin, salt, iterations, outputKeyLength)<br/>        return secretKeyFactory.generateSecret(keySpec)<br/>    }<br/>}</pre>
+              <p>Now armed with this factory we've got to refactor our <code>savePin()</code> and <code>pinIsValid()</code> methods</p>
+              <pre>fun savePin(pin: String) {<br/>    val salt = Salt.generate()<br/>    val secretKey = Pbkdf2Factory.createKey(pin.toCharArray(), salt)<br/><br/>    val encodedKey = Base64.encodeToString(secretKey.encoded, Base64.DEFAULT)<br/>    val encodedSalt = Base64.encodeToString(salt, Base64.DEFAULT)<br/><br/>    preferences.edit()<br/>        .putString(StorageKey.KEY, encodedKey)<br/>        .putString(StorageKey.SALT, encodedSalt)<br/>        .apply()<br/><br/>    pinIsCreated.value = true<br/>}</pre>
+              <pre>private fun pinIsValid(pin: String): Boolean {<br/>    val encodedSalt = preferences.getString(StorageKey.SALT, null)<br/>    val encodedKey = preferences.getString(StorageKey.KEY, null)<br/><br/>    val salt = Base64.decode(encodedSalt, Base64.DEFAULT)<br/>    val storedKey = Base64.decode(encodedKey, Base64.DEFAULT)<br/><br/>    val enteredKey = Pbkdf2Factory.createKey(pin.toCharArray(), salt)<br/><br/>    return storedKey contentEquals enteredKey.encoded<br/>}</pre>
+              <p>Thus, we've just mitigated the main flaw of our previous solution. It's good, and now we've got to add user data encryption. To implement it, we'll take these libraries:</p>
+              <ul>
+                <li><a href="https://github.com/google/tink">Tink</a> — A multi-language, cross-platform library that provides cryptographic APIs that are secure, easy to use correctly, and hard(er) to misuse.</li>
+                <li><a href="https://developer.android.com/topic/security/data">Jetpack Security</a> — Read and write encrypted files and shared preferences by following security best practices.</li>
+              </ul>
+              <p>To get a good encrypted storage, we've got to write such code:</p>
+              <pre>class App : Application() {<br/>    ...<br/>    val encryptedStorage by lazy {<br/>        EncryptedSharedPreferences.create(<br/>            "main_storage",<br/>            "main_storage_key",<br/>            this,<br/>            EncryptedSharedPreferences.PrefKeyEncryptionScheme.AES256_SIV,<br/>            EncryptedSharedPreferences.PrefValueEncryptionScheme.AES256_GCM<br/>        )<br/>    }<br/>    ...<br/>}</pre>
+              <p>That's all. Later, we can work with it as if it were regular <code>SharedPreferences</code>, but all data will be encrypted. Now we can easily replace the previous implementation.</p>
+              <pre>class CreatePinViewModel(application: Application) : AndroidViewModel(application) {<br/>    ...<br/>    private val preferences by lazy {<br/>            getApplication&lt;App&gt;().encryptedStorage<br/>    }<br/>    ...<br/>}</pre>
+              <pre>class InputPinViewModel(application: Application) : AndroidViewModel(application) {<br/>    ...<br/>    private val preferences by lazy {<br/>        getApplication&lt;App&gt;().encryptedStorage<br/>    }<br/>    ...<br/>}</pre>
+              <p>Let's summarize the subtotal. We have quite a secure key derived from a PIN, and a fairly reliable approach to store it. That looks cool, but not enough. What if we assume that the attacker has got access to our device and has extracted the whole data from it. In theory, he has all components to decrypt the data at this moment. To solve this problem, we've got to achieve two things:</p>
+              <ul>
+                <li>a PIN isn't stored at all</li>
+                <li>encryption operations are based on the PIN</li>
+              </ul>
+              <p>How can we achieve these goals without rewriting the whole code? It's easy! Insofar as we're using Tink, we can apply its encryption feature named as associated data.</p>
+              <blockquote>Associated data to be authenticated, but not encrypted. Associated data is optional, so this parameter can be null. In this case the null value is equivalent to an empty (zero-length) byte array. For successful decryption the same associatedData must be provided along with the ciphertext.</blockquote>
+              <p>That's it! We can use a PIN as associated data to achieve our designated goals. Thus, possibility or impossibility to decrypt the user data will act as an indicator of the PIN correctness. This scheme usually works as follows:</p>
+              <figure>
+                <img src="https://habrastorage.org/webt/gt/b8/lp/gtb8lp4qsvavlqyyopgju6pmyxy.png"/>
+              </figure>
+              <p>If a user enters an incorrect PIN, you'll receive <b>GeneralSecurityException</b> when trying to decrypt the access token. So, the final implementation might look like this:</p>
+              <details>
+                <summary>Show the code</summary>
+                <pre>class CreatePinViewModel(application: Application): AndroidViewModel(application) {<br/> ...<br/> private val fakeAccessToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzZWNyZXQiOiJXZSdyZSBoaXJpbmcgOykifQ.WZrEWG-l3VsJzJrbnjn2BIYO68gHIGyat6jrw7Iu-Rw"<br/><br/> private val preferences by lazy { getApplication&lt;App&gt;().encryptedStorage }<br/><br/> private val aead by lazy { getApplication&lt;App&gt;().pinSecuredAead }<br/> ...<br/> fun savePin(pin: String) {<br/>  val salt = Salt.generate()<br/>  val secretKey = Pbkdf2Factory.createKey(pin.toCharArray(), salt)<br/><br/>  val encryptedToken = aead.encrypt(<br/>    fakeAccessToken.toByteArray(), <br/>    secretKey.encoded<br/>  )<br/><br/>  preferences.edit {<br/>   putString(StorageKey.TOKEN, Base64.encodeToString(<br/>     encryptedToken, <br/>     Base64.DEFAULT<br/>   ))<br/><br/>   putString(StorageKey.SALT, Base64.encodeToString(salt, Base64.DEFAULT))<br/>   putBoolean(StorageKey.PIN_IS_ENABLED, true)<br/>  }<br/>  ...<br/> }<br/>}</pre>
+                <pre>class InputPinViewModel(application: Application) : AndroidViewModel(application) {<br/> ...<br/> private val preferences by lazy { getApplication&lt;App&gt;().encryptedStorage }<br/> private val aead by lazy { getApplication&lt;App&gt;().pinSecuredAead }<br/><br/> fun authenticate(pin: String) {<br/>  authenticationState.value = if (pinIsValid(pin)) {<br/>   AuthenticationState.AUTHENTICATED<br/>  } else {<br/>   AuthenticationState.INVALID_AUTHENTICATION<br/>  }<br/> }<br/><br/> private fun pinIsValid(pin: String): Boolean {<br/>  val salt = Base64.decode(<br/>    preferences.getString(StorageKey.SALT, null), Base64.DEFAULT<br/>  )<br/>  val secretKey = Pbkdf2Factory.createKey(pin.toCharArray(), salt)<br/><br/>  val token = try {<br/>   val encryptedToken = Base64.decode(<br/>     preferences.getString(StorageKey.TOKEN, null), Base64.DEFAULT<br/>   )<br/><br/>   aead.decrypt(encryptedToken, secretKey.encoded)<br/>  } catch (e: GeneralSecurityException) {<br/>   null<br/>  }<br/><br/>  return token?.isNotEmpty() ?: false<br/> }<br/>}    <br/></pre>
+              </details>
+              <p>Nice result! Now we are not storing the PIN anymore, and all data is encrypted by default. Of course, there are a lot of ways to improve this implementation if you want to. I've just shown the basic principle.</p>
+              <anchor name="what-about-biometrics">
+                <h3>But wait, what about biometrics?</h3>
+                <p>I don't think that "biometrics" is about security. I'd rather name it "a very convenient user feature". And it's a terribly old holy war between convenience and security. But most users like this kind of authentication and we as developers have to implement it as secure as possible.</p>
+                <p>Unfortunately, biometric auth implementation is quite tricky. That's why I'll start with showing you some common implementation principle and give some explanations. After this we'll dive deep into the code.</p>
+                <figure>
+                  <img src="https://habrastorage.org/webt/v-/dn/et/v-dnetfch9xp5ixpzghi-f1t1co.png"/>
+                </figure>
+                <p>This scheme contains one important nuance: <b>The secret key is saved on the disk</b>. Of course not as a plain text, but nonetheless.</p>
+                <p>As you can see, we have created a new encryption key in the keystore and we use this key to encrypt our secret key that is derived from a PIN. Such a scheme allows us not to re-encrypt all data when changing an authentication method. Moreover, we still have the ability to enter a PIN if biometric authentication had failed for any reasons. Ok, let's write a lot of code.</p>
+                <p>Firstly, I'll show the changes in the PIN creation flow:</p>
+                <details>
+                  <summary>Show the code</summary>
+                  <pre>class CreatePinViewModel(application: Application): AndroidViewModel(application) {<br/> companion object {<br/>  private const val ANDROID_KEY_STORE = "AndroidKeyStore"<br/>  private const val KEY_NAME = "biometric_key"<br/> }<br/> ...<br/> val biometricEnableDialog = MutableLiveData&lt;SingleLiveEvent&lt;Unit&gt;&gt;()<br/> val biometricParams = MutableLiveData&lt;BiometricParams&gt;()<br/><br/> val authenticationCallback = object : BiometricPrompt.AuthenticationCallback() {<br/>  override fun onAuthenticationError(errorCode: Int, errString: CharSequence) {<br/>   super.onAuthenticationError(errorCode, errString)<br/>  }<br/><br/>  override fun onAuthenticationSucceeded(result: AuthenticationResult) {<br/>   super.onAuthenticationSucceeded(result)<br/><br/>   val encryptedSecretKey = result.cryptoObject?.cipher?.doFinal(<br/>    secretKey.encoded<br/>   )<br/><br/>   preferences.edit {<br/>    putString(StorageKey.KEY, Base64.encodeToString(<br/>     encryptedSecretKey, Base64.DEFAULT<br/>    ))<br/>   }<br/><br/>   pinIsCreated.postValue(true)<br/>  }<br/><br/>  override fun onAuthenticationFailed() {<br/>   super.onAuthenticationFailed()<br/>  }<br/> }<br/> ...<br/> private val biometricManager by lazy { getApplication&lt;App&gt;().biometricManager }<br/><br/> private val keyStore = KeyStore.getInstance(ANDROID_KEY_STORE)<br/><br/> private lateinit var secretKey: SecretKey<br/> ...<br/> fun enableBiometric(isEnabled: Boolean) {<br/>  generateKey()<br/><br/>  val cipher = createCipher().also {<br/>   preferences.edit {<br/>    putString(StorageKey.KEY_IV, Base64.encodeToString(it.iv, Base64.DEFAULT))<br/>   }<br/>  }<br/><br/>  val promptInfo = createPromptInfo()<br/>  val cryptoObject = BiometricPrompt.CryptoObject(cipher)<br/><br/>  if (isEnabled) {<br/>   biometricParams.value = BiometricParams(isEnabled, promptInfo, cryptoObject)<br/>  } else {<br/>   pinIsCreated.value = true<br/>  }<br/> }<br/><br/> private fun createPromptInfo(): BiometricPrompt.PromptInfo {<br/>  return BiometricPrompt.PromptInfo.Builder()<br/>   .setTitle("Create biometric authorization")<br/>   .setSubtitle("Touch your biometric sensor")<br/>   .setNegativeButtonText("Cancel")<br/>   .build()<br/> }<br/><br/> private fun generateKey() {<br/>  try {<br/>   keyStore.load(null)<br/><br/>   val keyProperties = PURPOSE_ENCRYPT or PURPOSE_DECRYPT<br/>   val builder = KeyGenParameterSpec.Builder(KEY_NAME, keyProperties)<br/>    .setBlockModes(BLOCK_MODE_CBC)<br/>    .setUserAuthenticationRequired(true)<br/>    .setEncryptionPaddings(ENCRYPTION_PADDING_NONE)<br/><br/>   val keyGenerator = KeyGenerator.getInstance(<br/>       KEY_ALGORITHM_AES, <br/>       ANDROID_KEY_STORE<br/>   )<br/><br/>   keyGenerator.run {<br/>    init(builder.build())<br/>    generateKey()<br/>   }<br/>  } catch (e: Exception) {<br/>   authenticationCallback.onAuthenticationError(<br/>    BiometricConstants.ERROR_NO_DEVICE_CREDENTIAL,<br/>    e.localizedMessage<br/>   )<br/>  }<br/> }<br/><br/> private fun createCipher(): Cipher {<br/>  val key = with(keyStore) {<br/>   load(null)<br/>   getKey(KEY_NAME, null)<br/>  }<br/><br/>  return Cipher.getInstance(<br/>      "$KEY_ALGORITHM_AES/$BLOCK_MODE_CBC/$ENCRYPTION_PADDING_NONE"<br/>    ).apply {<br/>    init(Cipher.ENCRYPT_MODE, key)<br/>   }<br/> }<br/>}<br/></pre>
+                </details>
+                <p>I would be glad if Google included Tink in Biometrics, but… We have to write this boilerplate code with Cipher and KeyStore. This code is quite familiar to those people who work with cryptography in Android, but I want to pay your attention to encryption paddings. Yes, to prevent <a href="https://en.wikipedia.org/wiki/Padding_oracle_attack">Padding Oracle attack</a> we don't use padding at all. Thus, we mitigate risks when storing the secret key on the disk.</p>
+                <p>The code for biometric checking is very similar:</p>
+                <details>
+                  <summary>Show the code</summary>
+                  <pre>class InputPinViewModel(application: Application) : AndroidViewModel(application) {<br/> companion object {<br/>  private const val ANDROID_KEY_STORE = "AndroidKeyStore"<br/>  private const val KEY_NAME = "biometric_key"<br/> }<br/> ...<br/> val biometricErrorMessage = MutableLiveData&lt;SingleLiveEvent&lt;String&gt;&gt;()<br/><br/> val biometricParams = MutableLiveData&lt;BiometricParams&gt;()<br/> ...<br/> private val biometricManager by lazy { getApplication&lt;App&gt;().biometricManager }<br/><br/> private val keyStore = KeyStore.getInstance(ANDROID_KEY_STORE)<br/><br/> val authenticationCallback = object : BiometricPrompt.AuthenticationCallback() {<br/>  override fun onAuthenticationError(errorCode: Int, errString: CharSequence) {<br/>   super.onAuthenticationError(errorCode, errString)<br/>  }<br/><br/>  override fun onAuthenticationSucceeded(result: AuthenticationResult) {<br/>   super.onAuthenticationSucceeded(result)<br/><br/>   val encryptedSecretKey = Base64.decode(<br/>    preferences.getString(StorageKey.KEY, ""), <br/>    Base64.DEFAULT<br/>   )<br/>   val secretKey = result.cryptoObject?.cipher?.doFinal(encryptedSecretKey)<br/><br/>   val token = try {<br/>    val encryptedToken = Base64.decode(<br/>     preferences.getString(StorageKey.TOKEN, null), <br/>     Base64.DEFAULT<br/>    )<br/><br/>    aead.decrypt(encryptedToken, secretKey)<br/>   } catch (e: GeneralSecurityException) {<br/>    null<br/>   }<br/><br/>   val state = if (token?.isNotEmpty() == true) {<br/>    AuthenticationState.AUTHENTICATED<br/>   } else {<br/>    AuthenticationState.INVALID_AUTHENTICATION<br/>   }<br/><br/>   authenticationState.postValue(state)<br/>  }<br/><br/>  override fun onAuthenticationFailed() {<br/>   super.onAuthenticationFailed()<br/>  }<br/> }<br/> ...<br/> fun biometricAuthenticate() {<br/>  if (preferences.contains(StorageKey.KEY)) {<br/>   when (biometricManager.canAuthenticate()) {<br/>    BiometricManager.BIOMETRIC_SUCCESS -&gt; {<br/>     val promptInfo = createPromptInfo()<br/>     val cryptoObject = BiometricPrompt.CryptoObject(createCipher())<br/><br/>     biometricParams.value = BiometricParams(promptInfo, cryptoObject)<br/>    }<br/>   }<br/>  } else {<br/>   biometricErrorMessage.value = SingleLiveEvent(<br/>    "Biometric authentication isn't configured"<br/>   )<br/>  }<br/> }<br/> ...<br/> private fun createPromptInfo(): BiometricPrompt.PromptInfo {<br/>  return BiometricPrompt.PromptInfo.Builder()<br/>   .setTitle("Biometric login for my app")<br/>   .setSubtitle("Log in using your biometric credential")<br/>   .setNegativeButtonText("Cancel")<br/>   .build()<br/> }<br/><br/> private fun createCipher(): Cipher {<br/>  val key = with(keyStore) {<br/>   load(null)<br/>   getKey(KEY_NAME, null)<br/>  }<br/><br/>  return Cipher.getInstance(<br/>      "$KEY_ALGORITHM_AES/$BLOCK_MODE_CBC/$ENCRYPTION_PADDING_NONE"<br/>   ).apply {<br/>   val iv = Base64.decode(<br/>    preferences.getString(StorageKey.KEY_IV, null), <br/>    Base64.DEFAULT<br/>   )<br/><br/>   init(Cipher.DECRYPT_MODE, key, IvParameterSpec(iv))<br/>  }<br/> }<br/>}<br/></pre>
+                </details>
+                <p>Pay your attention to the <code>authenticationCallback.onAuthenticationSucceeded</code>, it contains the key logic of post-biometric authentication. In fact, this is an alternative implementation of the <code>pinIsValid()</code> method. If you have no strong understanding of what's happening in two previous code blocks, please refer to the <a href="https://developer.android.com/training/sign-in/biometric-auth">biometric official documentation</a>.</p>
+                <anchor name="am-i-completely-protected">
+                  <h3>Am I completely protected?</h3>
+                  <p>We've done a lot of cool things to realize authentication with a PIN and biometrics, but is it so reliable and secure? Of course, we've done our best, but there is a couple of points to take into account.</p>
+                  <p>A classic PIN has only four digits and the <a href="https://en.wikipedia.org/wiki/Entropy_(information_theory)">entropy</a> of it is too low. So, such kind of code isn't quite secure to use. Despite everything we've done, there is a chance that an intruder can crack this code. Yeah, he has to fulfil the reverse engineering of your application and understand how you're encrypting user's data, but nonetheless. If an attacker is motivated enough he'll do it without hesitation.</p>
+                  <p>The second point is about rooted smartphones. When it comes to rooted devices, you can throw away all your security assurance attempts. Any malware with root access is able to bypass all security mechanisms. Therefore, you have to add extra security features and checks to the application. I suggest you two most simple things to mitigate these flaws:</p>
+                  <ul>
+                    <li><a href="https://developer.android.com/training/safetynet/">SafetyNet</a> — it provides a set of services and APIs that help protect your app against security threats, including device tampering, bad URLs, potentially harmful apps, and fake users</li>
+                    <li><a href="https://en.wikipedia.org/wiki/Obfuscation_(software)">Obfuscation</a> — <b>please remember</b> that ProGuard <b>is not</b> an obfuscation tool! ProGuard is about minifying and resource shrinking, not obfuscation or security. Use something like DexGuard, DexProtector, etc.</li>
+                  </ul>
+                  <p>Usage of SafetyNet and obfuscation are a good next step after applying approaches from this article. If you note inaccuracies, security flaws or other bullshit, please let me know. You can find all the code from the article on <a href="https://github.com/Fi5t/authenticate-me">GitHub</a>.</p>
+                  <p>And next time I'll show you how to implement a PIN authentication using back-end. Stay tuned.</p>
+                  <h4>Useful links</h4>
+                  <ul>
+                    <li>KDF functions: <a href="https://en.wikipedia.org/wiki/Argon2">Argon2</a>, <a href="https://en.wikipedia.org/wiki/Scrypt">scrypt</a></li>
+                    <li>
+                      <a href="https://github.com/Fi5t/advanced-tink">An alternative approach to encrypt shared preferences (RU)</a>
+                    </li>
+                    <li>
+                      <a href="https://www.youtube.com/watch?v=R4OlXb9aTvQ">Information Entropy</a>
+                    </li>
+                    <li>
+                      <a href="https://developer.android.com/topic/security/data">Work with data more securely</a>
+                    </li>
+                  </ul>
+                  <related>
+                    <h4>Similar posts</h4>
+                    <a href="https://habr.com/en/post/463459/"/>
+                  </related>
+                </anchor>
+              </anchor>
+            </anchor>
+          </anchor>
+        </anchor>
+      </anchor>
+    </article>
+  </body>
+</html>

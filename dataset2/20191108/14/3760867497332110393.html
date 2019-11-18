@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://www.adslzone.net/2019/11/08/troyano-email-factura-mercadona-phishing/"/>
+    <meta property="og:site_name" content="ADSLZone"/>
+    <meta property="article:published_time" content="2019-11-08T14:00:04+00:00"/>
+    <meta property="og:title" content="Retraso en pago de factura de Mercadona, así intentan colarnos un troyano por email"/>
+    <meta property="og:description" content="Todo los detalles sobre el nuevo timo de Mercadona que llega por email aludiendo a un retraso en el pago de factura"/>
+  </head>
+  <body>
+    <article>
+      <h1>Retraso en pago de factura de Mercadona, así intentan colarnos un troyano por email</h1>
+      <address><time datetime="2019-11-08T14:00:04+00:00">08 Nov 2019, 14:00</time> by <a rel="author">Claudio Valero</a></address>
+      <p>El phishing es una técnica bastante efectiva para infectar al usuario con malware o conseguir sus datos sin demasiado esfuerzo. Básicamente, se basa en replicar la apariencia de una comunicación de una empresa legítima ya sea por SMS o por correo electrónico, incluso replicando la apariencia de su página web con un dominio que suele ser bastante parecido. El último caso que hemos conocido está relacionado con <b>Mercadona</b> y un supuesto retraso en el pago de factura. Evidentemente, el único objetivo es hacernos pinchar en el enlace para robar nuestros datos.</p>
+      <p>Debemos extremar las precauciones a la hora de <b>abrir los emails que recibimos</b>. Está claro que los responsables de estos timos tienen bastante experiencia en llamar nuestra atención, utilizando para ello empresas muy conocidas con las que seguro estamos relacionados (Mercadona en este caso) y con mensajes muy llamativos (deuda no cobrada, retraso en factura, regalo, etc.).</p>
+      <figure>
+        <img src="https://www.adslzone.net/app/uploads/2018/05/mercadona-nueva-web-almacen-tienda-online.jpg"/>
+      </figure>
+      <h3>Estafa con Mercado: “Retraso en pago de factura – Regularización!”</h3>
+      <p>Con el llamativo mensaje “Retraso en pago de factura – Regularización!”, este email cuenta con el logo de Mercadona en la parte superior y utilizar su característico color verde para intentar ser más creíble. El asunto, que a buen seguro nos llama la atención, da paso <b>al siguiente texto:</b></p>
+      <p>
+        <i>“Tuvimos que suspender tu cuenta porque detectamos un comportamiento irregular en tus operaciones.</i>
+      </p>
+      <p>
+        <i>Le recordamos que tiene pagos pendientes con nosotros y que puede regularizar su situación. Evitando que los valores continúen siendo corregidos y aumentados!</i>
+      </p>
+      <p>
+        <i>El pago de la cuota de entrada o la cuota única de este acuerdo es la formalización de su aceptación de esta negociación y sus condiciones, que se detallan a continuación.”</i>
+      </p>
+      <p>Al final incluye un enlace a <b>“Regularizar la situación!”</b> e incluso tenemos información legal de Mercado como “© Mercadona S.A. A46103834. Todos los derechos reservados”. El problema viene al pinchar en el enlace que incluso Gmail catalogo de sospechoso y nos advierte:</p>
+      <p>“Enlace sospechoso Este enlace te llevaría a un sitio web no fiable. ¿Seguro que quieres ir a citropocos.com.br?”</p>
+      <figure>
+        <img src="https://www.adslzone.net/app/uploads/2019/11/screenshot.22.jpg"/>
+      </figure>
+      <p>Sólo con eso bastaría para salir corriendo, pero es posible que alguno sea de dedo rápido y termine entrando en la falsa web. Nada más abrirla, se nos descargará el fichero “VoucherCarrefourSpainEUR.zip” que no debemos descomprimir bajo ningún concepto. Basta con “pasar” el fichero por <b>Virustotal</b> para que detecte varias amenazas. Sin ir más lejos los troyanos:</p>
+      <ul>
+        <li>Win32/TrojanDownloader.Banload</li>
+        <li>Win32/Fuery.C!cl</li>
+        <li>Zpevdo</li>
+      </ul>
+      <p>Por todo ello, si recibimos este supuesto email de Mercadona <b>más vale que lo borremos sin ni siquiera abrirlo</b>. Es básicamente un intento de colarlos un troyano en el ordenador utilizando para ello el phishing y la imagen de la conocida cadena de supermercados.</p>
+    </article>
+  </body>
+</html>

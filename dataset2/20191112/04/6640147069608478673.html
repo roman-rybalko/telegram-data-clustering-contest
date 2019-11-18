@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://www.tomshw.it/hardware/bug-windows-10-icona-sbagliata-unita-usb/"/>
+    <meta property="og:site_name" content="Tom's Hardware"/>
+    <meta property="article:published_time" content="2019-11-12T04:51:00+00:00"/>
+    <meta property="og:title" content="Windows 10 “impazzisce”, mostra l’icona sbagliata delle unità USB"/>
+    <meta property="og:description" content="Un nuovo bug di Windows 10 mostra un'icona sbagliata per le unità USB all'interno di Esplora File."/>
+  </head>
+  <body>
+    <article>
+      <h1>Windows 10 “impazzisce”, mostra l’icona sbagliata delle unità USB</h1>
+      <address><time datetime="2019-11-12T04:51:00+00:00">12 Nov 2019, 04:51</time> by <a rel="author">Giulio Bagnato</a></address>
+      <p><b>Un nuovo bug</b> di <b>Windows 10 1903</b> (<a href="http://www.tomshw.it/hardware/windows-10-may-2019-update-novita/">May 2019 Update</a>) porta le <b>unità USB</b> a mostrare un’<b>icona sbagliata</b> in File Explorer (Esplora File), pur essendo correttamente rilevate.</p>
+      <p>Il problema è alquanto strano e curioso: inserendo una chiavetta USB nel computer, <b>Windows in un primo momento visualizza l’icona corretta</b>, ma dopo alcuni minuti File Explorer ne mostra una sbagliata, un’icona generica raffigurante un dispositivo di archiviazione. La prima icona che vedete è quella corretta, quella sotto è quella generica:</p>
+      <figure>
+        <img src="https://www.tomshw.it/images/images/2019/11/windows-10-3905-usb-bug-62395.jpg"/>
+      </figure>
+      <figure>
+        <img src="https://www.tomshw.it/images/images/2019/11/windows-10-3905-usb-bug-62394.jpg"/>
+      </figure>
+      <p>Nonostante la sostituzione dell’icona, Windows 10<b> continua a rilevare correttamente il dispositivo</b>, sia nel caso in cui si tratti di un’unità di archiviazione fissa che un dispositivo portatile.</p>
+      <p>Questo nuovo bug di Windows 10 1903 è stato portato alla luce per la <a href="https://borncity.com/win/2019/11/11/windows-10-v1903-shows-suddenly-generic-usb-drive-icons/">prima volta da Günter Born</a> di Borncity.com, dopo la segnalazione di un utente nei commenti del suo blog. In seguito si è scoperto – tramite post su <a href="https://answers.microsoft.com/en-us/windows/forum/all/weird-cpu-like-looking-icon-on-windows-10-on-my/a58ddbd5-9e47-4bd1-911f-f36fc38f2903">Microsoft Answers Community</a> e <a href="https://www.reddit.com/r/Windows10/comments/dt34zw/the_icon_that_displays_in_explorer_for_flash/">Reddit</a> – che interessa più utenti.</p>
+      <p>Non si sa esattamente quando questo problema abbia iniziato a verificarsi, ma le segnalazioni degli utenti sono iniziate ad avvenire nel corso degli <b>ultimi 4-5 giorni</b>, lasciando intendere che si tratti di un bug particolarmente recente.</p>
+      <figure>
+        <img src="https://www.tomshw.it/images/images/2019/11/windows-10-3905-usb-bug-62393.768x432.jpg"/>
+        <figcaption>L'unità USB viene correttamente rilevata come dispositivo di archiviazione USB</figcaption>
+      </figure>
+      <p>Il bug è stato replicato con successo da <a href="https://www.bleepingcomputer.com/news/microsoft/windows-10-bug-causes-usb-drives-to-show-the-wrong-icon/">BleepingComputer</a> che ha eseguito il test usando l’ultimo aggiornamento cumulativo di Windows 10 KB4522355, che ha portato Windows 10 alla build 18362.449. Dalle ulteriori indagini sembra che il problema emerga quando la funzionalità per scaricare icone personalizzate e metadati per i dispositivi installati è abilitata in “Impostazioni installazione dispositivo” (vedi screenshot seguente).</p>
+      <figure>
+        <img src="https://www.tomshw.it/images/images/2019/11/bug-windows-10-icona-usb-62422.768x432.jpg"/>
+      </figure>
+      <p><b>L’ipotesi è che Microsoft abbia fatto un qualche cambiamento lato server</b> che scarica un’icona errata per i dispositivi collegati alle porte USB. <b>Disattivare l’opzione non ripristina la vecchia icona</b>, ma secondo l’utente Twitter “<a href="https://twitter.com/SeriouslySenpai">Seriously Senpai</a>” è possibile correggere il problema andando nella cartella “%PROGRAMDATA%\Microsoft\Windows\DeviceMetadataCache\dmrccache” al fine di ritrovare la cartella relativa alla lingua modificata più di recente.</p>
+      <p>Basterebbe infatti ordinare le cartelle per data al fine di trovare quella in cui sono stati modificati per ultimi i metadati della cache ed eliminarla. Per non sbagliare basta entrare in quella cartella e vedere se l’icona corrisponde a quella che state vedendo. Quindi non resta che eliminare quella cartella.</p>
+      <p><b>Questo metodo però non ha dato i risultati sperati</b> al sito Bleepingcomputer, e in fin dei conti si tratta di una semplice icona: forse meglio non toccare nulla e attendere l’intervento di Microsoft.</p>
+    </article>
+  </body>
+</html>

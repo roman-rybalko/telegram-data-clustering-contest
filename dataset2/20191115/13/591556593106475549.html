@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://www.zdnet.com/article/when-one-isnt-enough-this-shady-malware-will-infect-your-pc-with-two-trojans/"/>
+    <meta property="og:site_name" content="ZDNet"/>
+    <meta property="article:published_time" content="2019-11-15T13:17:57+00:00"/>
+    <meta property="og:title" content="When one isn’t enough: This shady malware will infect your PC with dual Trojans"/>
+    <meta property="og:description" content="Low detection rates and the drop of not one, but two Trojans, spells trouble."/>
+  </head>
+  <body>
+    <article>
+      <h1>When one isn’t enough: This shady malware will infect your PC with dual Trojans</h1>
+      <address><time datetime="2019-11-15T13:17:57+00:00">15 Nov 2019, 13:17</time> by <a rel="author" href="https://www.zdnet.com/meet-the-team/us/charlie-osborne/" target="_blank">Charlie Osborne</a></address>
+      <p>
+        <b>Low detection rates and the drop of not one, but two Trojans, spells trouble.</b>
+      </p>
+      <figure>
+        <video src="http://android-streaming.techrepublic.com/media/2019/08/28/1594288707758/2019-08-28-wochit-new-variant-of-trojan-malware-puts-your-personal-information-at-risk_1921739_740.mp4"/>
+      </figure>
+      <figure>
+        <img src="https://zdnet2.cbsistatic.com/hub/i/r/2019/08/28/fc325e42-89c9-409c-b742-98ab36201360/thumbnail/570x322/a897e5332de063ff3990e21d46b37a00/new-variant-of-trojan-malware-puts-your-5d6508c7d187350001653617-1-aug-28-2019-11-48-36-poster.jpg"/>
+      </figure>
+      <p>A new malware variant with a low detection rate able to deliver multiple Trojans to infected systems has been disclosed by researchers.  <br/><br/>This week, the cybersecurity team at Fortinet said <a href="https://www.fortinet.com/blog/threat-research/malware-analysis-revenge-rat-sample.html">a recent sample</a> of the dropper reveals the new malware is designed to drop both RevengeRAT and WSHRAT on vulnerable Windows systems. </p>
+      <p>The sample dropper begins the infection process with JavaScript code and URL-encoded information contained in a text editor. Once decoded, the team found VBScript obfuscated with character replacements. <br/><br/>This VBScript code is then able to call a Shell.Application object that generates a new script file, A6p.vbs, which fetches a payload -- an additional VBScript -- from an external source.  <br/><br/>The strings in the new code, which are also obfuscated in a likely attempt to avoid detection, pull a script file called Microsoft.vbs from a remote server and saves it in the Windows temporary folder. </p>
+      <p>"Once the aforementioned code is executed, it creates a new WScript.Shell object and collects OS environment and hardcoded data, which will eventually end in running the newly created script (GXxdZDvzyH.vbs) by calling the VBScript interpreter with the "//B" parameter," the researchers say. "This enables "batch-mode" and disables any potential warnings or alerts that can occur during execution." <br/><br/>A new key is then added to the Windows registry, PowerShell commands are executed to bypass execution policies, and the Revenge RAT payload is deployed. </p>
+      <p><b>See also: </b><a href="https://www.zdnet.com/article/danabot-banking-trojan-jumps-from-australia-to-german-targets/">DanaBot banking Trojan jumps from Australia to Germany in quest for new targets</a> <br/><br/>Revenge RAT is a Trojan previously <a href="https://www.cyber.nj.gov/threat-profiles/trojan-variants/revenge">connected to campaigns</a> targeting financial establishments, governments, and IT companies.  <br/><br/>Once deployed by the new malware dropper, Revenge RAT connects to two command-and-control (C2) servers and collects system data from the victim before transferring this information to the C2s.  <br/><br/>IP addresses, volume data, machine names, user names, whether or not a webcam has been detected, CPU data, language, and information relating to antivirus products and firewall installations are stolen.  <br/><br/>The Trojan is also able to receive commands from a C2 to load malicious ASM code in memory for additional exploits.  <br/><br/>However, the deployment of one Trojan is not the end of the attack chain. The malware dropper also executes WSH RAT as a payload, using same Microsoft.vbs script -- with a few tweaks.  <br/><br/>WSH RAT is often actively distributed in <a href="https://cofense.com/houdini-worm-transformed-new-phishing-attack/">phishing messages</a> masquerading as well-known banks. The Trojan is being sold publicly online on a subscription basis to threat actors.  <br/><br/><b>CNET: </b><a href="https://www.cnet.com/news/demonstrators-to-scan-public-faces-in-dc-to-show-lack-of-facial-recognition-laws/?ftag=CMG-01-10aaa1b">Demonstrators scan public faces in DC to show lack of facial recognition laws</a> <br/><br/>Version 1.6 of WSH RAT is loaded and this malware contains more functionality than its counterpart; including methods to maintain persistence, data theft, and information processing.  <br/><br/>Among 29 functions is the facility to check the current user's rights, and "depending on which ones are used, it will remain as is or elevate itself (startupElevate()) to a higher user access level," the researchers say.  <br/><br/>The Trojan will also perform a security check to disable the current security context. <br/><br/><b>TechRepublic: </b><a href="https://www.techrepublic.com/article/new-phishing-email-campaign-impersonates-us-postal-service-to-deliver-malware/?ftag=CMG-01-10aaa1b">New phishing email campaign impersonates US postal service to deliver malware</a> <br/><br/>WSH RAT focuses on stealing information harvested from popular browsers including Google Chrome and Mozilla Firefox. However, the malware also contains other features, such as executing files, rebooting the victim machine, uninstalling programs, and keylogging.  <br/><br/>Also of note in the malware space this month is the <a href="https://www.zdnet.com/article/emotet-resurgence-packs-in-new-binaries-malicious-functions/">emergence of Emotet</a> with new functionality. The modular malware, which has proven popular with cybercriminals, now appears to be utilizing stealth tactics once employed by Trickbot.</p>
+      <h3>Previous and related coverage</h3>
+      <ul>
+        <li>
+          <a href="https://www.zdnet.com/article/emotet-resurgence-packs-in-new-binaries-malicious-functions/">Emotet resurgence packs in new binaries, Trickbot functions</a>
+        </li>
+        <li>
+          <a href="https://www.zdnet.com/article/a-huge-android-trojan-malware-campaign-was-discovered-after-the-gang-behind-it-made-basic-security-mistakes/">This huge Android trojan malware campaign was discovered after the gang behind it made basic security mistakes</a>
+        </li>
+        <li>
+          <a href="https://www.zdnet.com/article/new-saefko-trojan-focuses-on-stealing-your-credit-card-details/">New Saefko Trojan focuses on stealing your credit card details, crypto wallets</a>
+        </li>
+      </ul>
+      <hr/>
+      <p><b>Have a tip?</b> Get in touch securely via WhatsApp | Signal at +447713 025 499, or over at Keybase: charlie0</p>
+      <hr/>
+    </article>
+  </body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://9to5mac.com/2019/11/08/netatmo-weather-station-hands-on/"/>
+    <meta property="og:site_name" content="9to5Mac"/>
+    <meta property="article:published_time" content="2019-11-08T13:30:13+00:00"/>
+    <meta property="og:title" content="Hands-on: Netatmo Weather Station combines indoor and outside sensors with excellent HomeKit integration"/>
+    <meta property="og:description" content="The Netatmo Weather Station has existed as a product for a while, but only recently added HomeKit support, which is what piqued my interest. I’ve been testing the Netatmo Weather Station for about a week, and I think it is really great. Any drawbacks originate from weaknesses in the HomeKit standard; these are Apple’s problems […]"/>
+  </head>
+  <body>
+    <article>
+      <h1>Hands-on: Netatmo Weather Station combines indoor and outside sensors with excellent HomeKit integration</h1>
+      <address><time datetime="2019-11-08T13:30:13+00:00">08 Nov 2019, 13:30</time> by <a rel="author" href="https://9to5mac.com/author/benjaminmayo/" target="_blank">Benjamin Mayo</a></address>
+      <p>The <a href="https://amzn.to/2qz03d4">Netatmo Weather Station</a> has existed as a product for a while, but only recently <a href="https://9to5mac.com/2019/10/22/netatmo-homekit/">added HomeKit support</a>, which is what piqued my interest. I’ve been testing the Netatmo Weather Station for about a week, and I think it is really great. Any drawbacks originate from weaknesses in the HomeKit standard; these are Apple’s problems to fix.</p>
+      <p>The Weather Station is really a modular ecosystem of accessories. However, you get a lot of mileage out of just the <a href="https://amzn.to/2qz03d4">core product</a> — which is what I’ve been using.</p>
+      <p>In the box, you get a base station and an outdoor sensor module. The base station connects to your home WiFi to communicate with the app and the web, and it also contains room sensors.</p>
+      <p>The base station is powered by a wire to the wall, the outdoor module relies on AAA batteries. The outdoor module communicates with the base station over a private radio frequency, with a quoted range up to 100 meters.</p>
+      <figure>
+        <img src="https://9to5mac.com/wp-content/uploads/sites/6/2019/11/IMG_7980.jpg?quality=82&amp;strip=all&amp;w=655"/>
+      </figure>
+      <p>I hid the base station in the corner of the living room, behind the TV cabinet, and put the outdoor module in the garden. The company advises placing the outdoor unit in a place where it is not subject to direct rainfall even though it is obviously designed to be water-resistant.</p>
+      <p>The unit is a bit ugly — a black finish would be more discreet than silver — but it is small enough that it should be straightforward to position it out of sight. I used the included velcro restraints to strap mine to the leg of an outside coffee table. The tabletop obscures it from view and stops raindrops hitting it head-on.</p>
+      <p>You use the Netatmo app to set up the whole system; the standard affair of typing in WiFi passwords and doing a software update. The HomeKit support is still “rolling out” over the next month or so, I got the alert to add to Apple Home after a couple of days.</p>
+      <p>What information do you get from these two canisters of sensors? For the indoor sensors in the base station, there’s temperature and humidity. You also have sensors for CO² (measured in parts per million) and an overall air quality detector. In Apple Home, you can trigger automations in response to changes from the carbon dioxide or air quality sensors. You can also get push notification alerts delivered to your phone for the carbon dioxide sensor, again through the standard Home app integration.</p>
+      <figure>
+        <img src="https://9to5mac.com/wp-content/uploads/sites/6/2019/11/grouped-separated-tiles.jpg?quality=82&amp;strip=all&amp;w=655"/>
+      </figure>
+      <p>By default, iOS 13 presents the accessory as a combined single tile. This means you get one platter in the Home app to look at and a summary of the state of all accessories when you long-press to see the details. Whilst the combined summary screen isn’t bad, the main tile is useless in this state, offering no dynamic information.</p>
+      <p>Thankfully, with iOS 13.2, you can choose to “Show as Separate Tiles”. This splits every accessory up and puts all the information for a room available at a glance. (Even when separated out, the Carbon Dioxide tile is unhelpfully static. If you long press on it to see details, it can show you your latest ppm measurement. Apple Home just doesn’t include that information on the tile itself.)</p>
+      <figure>
+        <img src="https://9to5mac.com/wp-content/uploads/sites/6/2019/11/home-app-separate-tiles-option.jpg?quality=82&amp;strip=all&amp;w=655"/>
+      </figure>
+      <p>This setting does not sync between users of the HomeKit home, so you have to do it separately for everyone. You may also want to customize which sensors appear in the status section on the main screen of the Home app. I stopped most of the sensors from showing up to reduce clutter but left the indoor temperature visible.</p>
+      <figure>
+        <img src="https://9to5mac.com/wp-content/uploads/sites/6/2019/11/garden-sensor.jpg?quality=82&amp;strip=all&amp;w=655"/>
+      </figure>
+      <p>For the outdoor module, you get humidity and temperature readouts. You can pair additional indoor modules to track data for additional rooms in the house but you can only have one outdoor sensor. I have been really pleased with the precision of the data and the speed at which the accessories refresh in the Home app. (The indoor Air Quality sensor keeps firing ‘Inferior’ warnings which is the only thing that seems out of line, although I’m not really sure how to really verify the accuracy.)</p>
+      <p>If you notice in the Garden room screenshot above, there’s a tile for “Rain Gauge”. This is an <a href="https://amzn.to/32smoGs">add-on option</a> for the Weather Station. Unfortunately, the accessory is not supported in Apple Home due to deficiencies in the HomeKit platform. However, Netatmo has committed to releasing software updates for the Weather Station as Apple expands the universe of possible HomeKit integrations.</p>
+      <p>If you look in the dedicated Netatmo app, you will find the Weather Station also records noise levels (in decibels) and atmospheric pressure. These metrics are also currently unavailable to be exposed to HomeKit. Like all other HomeKit accessories, historical readings and charts are not part of HomeKit protocol but are offered in the Netatmo app if you are interested in digging in deeper.</p>
+      <p>There’s a lot of capability on display and a lot of untapped potential to be incorporated as Apple expands the HomeKit standard. I wholeheartedly recommend the <a href="https://amzn.to/2qz03d4">Netatmo Weather Station</a> if you are in the market for HomeKit-integrated room sensors. Find out more information on the <a href="https://www.netatmo.com/weather/weatherstation">company’s website</a>.</p>
+      <p><i>FTC: We use income earning auto affiliate links.</i> <a href="https://9to5mac.com/about/#affiliate">More.</a></p>
+      <figure>
+        <img src="https://9to5mac.com/wp-content/uploads/sites/6/2020/10/owc-9to5mac-dockdeal-750x150.jpg?quality=82&amp;strip=all"/>
+      </figure>
+    </article>
+  </body>
+</html>

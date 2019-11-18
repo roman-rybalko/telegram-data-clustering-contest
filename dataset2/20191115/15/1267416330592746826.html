@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://mobilesyrup.com/2019/11/15/google-chrome-broke-businesses-experiment/"/>
+    <meta property="og:site_name" content="mobilesyrup"/>
+    <meta property="article:published_time" content="2019-11-15T15:54:50+00:00"/>
+    <meta property="og:title" content="Google broke businesses’ Chrome for two days with experimental update"/>
+    <meta property="og:description" content="IT admins are understandably upset after a silent Chrome update broke the browser for two days. Google has rolled back the change."/>
+  </head>
+  <body>
+    <article>
+      <h1>Google broke businesses’ Chrome for two days with experimental update</h1>
+      <h2>A silent update conflicted with virtual machine systems like those offered by Citrix, making Chrome unusable</h2>
+      <address><time datetime="2019-11-15T15:54:50+00:00">15 Nov 2019, 15:54</time> by <a rel="author" href="https://mobilesyrup.com/author/jonathan-lamont" target="_blank">Jonathan Lamont</a></address>
+      <p>Google pushed out a silent Chrome update that left thousands of businesses with broken browsers, stumping and angering IT admins.</p>
+      <p>According to <a href="https://www.theverge.com/2019/11/15/20966237/google-chrome-white-tab-screen-crash-experiment-it-admins"><i>The Verge</i></a>, Google pushed out a silent, experimental change to the stable channel of Chrome earlier this week. Unfortunately, the experiment caused the browser to display blank white screens when opening new tabs for users accessing Chrome through virtual machine environments like Citrix. The blank pages essentially blocked access to Chrome and left it totally unresponsive.</p>
+      <p>Further, IT admins were confused by the issue, as typically businesses manage and control Chrome updates.</p>
+      <p>As complaints swirled, Google revealed the launch of its experimental change. The Chrome team flipped the switch on a flag — a hidden Chrome setting used to modify browser behaviour — which enabled the new ‘<a href="https://docs.google.com/document/d/1tPuJE0Vws7oskjjqrawNfMkwFtGxyHV33yQagiplVfY/edit#heading=h.7nki9mck5t64">WebContents Occlusion</a>‘ feature. It suspends Chrome tabs when you move other apps on top of them to reduce resource usage when the browser isn’t in use.</p>
+      <p>Google software engineer David Bienvenu posted to a <a href="https://bugs.chromium.org/p/chromium/issues/detail?id=1024837#c52">Chromium bug thread</a> about the issue, noting that the experiment was in beta for about five months.</p>
+      <p>“It was turned on for stable (e.g., m77, m78) via an experiment that was pushed to released Chrome Tuesday morning. Prior to that, it had been on for about one percent of M77 and M78 users for a month with no reports of issues, unfortunately,” wrote Bienvenu.</p>
+      <p>Google rolled back the Chrome change late Thursday night following complaints from several businesses with thousands of users affects. Bienvenu noted in the bug thread that he’ll “try to figure out how to deal with Citrix.”</p>
+      <h3>IT admins want Google to notify them about changes</h3>
+      <p>However, IT admins are still upset over the issue. Many took to the bug thread to complain, writing that Google needs to offer some kind of opt-out option as well as announce when it makes changes like this. Many of the admins had spent upwards of two days trying to fix the problem when the issue wasn’t something they could even change.</p>
+      <p>One IT admin told <i>The Verge </i>that it’s “a shady thing that Google can update Chrome silently without announcing anything and can impact 100,000+ people on a whim.”</p>
+      <p>Whether for corporate users or consumers, silent updates can be a problem, especially when something breaks. If people don’t know there was an update, it can difficult to troubleshoot issues the update can cause.</p>
+      <p>Source: <a href="https://bugs.chromium.org/p/chromium/issues/detail?id=1024837#c52">Chromium Bugs</a> Via: <a href="https://www.theverge.com/2019/11/15/20966237/google-chrome-white-tab-screen-crash-experiment-it-admins">The Verge </a></p>
+      <related>
+        <a href="https://mobilesyrup.com/2018/07/04/google-experiment-home-button-chrome-android/"/>
+        <a href="https://mobilesyrup.com/2019/11/11/google-chrome-notify-site-load-slowly/"/>
+        <a href="https://mobilesyrup.com/2018/08/02/whatsapp-business-facebook-monetize/"/>
+        <a href="https://mobilesyrup.com/2019/11/02/chrome-78-file-system-sms-api/"/>
+      </related>
+    </article>
+  </body>
+</html>

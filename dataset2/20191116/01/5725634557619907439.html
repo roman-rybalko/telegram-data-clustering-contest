@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://seekingalpha.com/article/4307215-earn-20-percent-annualized-b-riley-financial-bond-7-months"/>
+    <meta property="og:site_name" content="Seeking Alpha"/>
+    <meta property="article:published_time" content="2019-11-16T01:04:19+00:00"/>
+    <meta property="og:title" content="How To Earn 20% + Annualized From B. Riley Financial Bond In 7 Months"/>
+    <meta property="og:description" content="Explaining the usage of leverage.Explaining the hedging reaction.Explaining the yield to hold curve.All the calculations we need."/>
+  </head>
+  <body>
+    <article>
+      <h1>How To Earn 20% + Annualized From B. Riley Financial Bond In 7 Months</h1>
+      <address><time datetime="2019-11-16T01:04:19+00:00">16 Nov 2019, 01:04</time> by <a rel="author">Arbitrage Trader</a></address>
+      <p>Summary</p>
+      <ul>
+        <li>Explaining the usage of leverage.</li>
+        <li>Explaining the hedging reaction.</li>
+        <li>Explaining the yield to hold curve.</li>
+        <li>All the calculations we need.</li>
+      </ul>
+      <p>
+        <b>Introduction</b>
+      </p>
+      <p>The title sounds like a clickbait one, but in fact, this is a real idea with the promised return. The baby bond in question this time will be B. Riley Financial (<a href="https://seekingalpha.com/symbol/RILY">RILY</a>), 7.375% Senior Notes Due 5/31/2023 (NASDAQ:<a href="https://seekingalpha.com/symbol/RILYH">RILYH</a>).</p>
+      <p>
+        <b>Roadmap of the article:</b>
+      </p>
+      <ol>
+        <li>RILYH return potential explained</li>
+        <li>Leveraged returns explained</li>
+        <li>Why is RILYH mispriced against its own family, hedging reaction</li>
+        <li>RILY positive developments and options hedging credit risk</li>
+        <li>Trying to find a similar baby bond in our database</li>
+        <li>Conclusion</li>
+      </ol>
+      <p>
+        <b>
+          <b>The return of RILYH alone</b>
+        </b>
+      </p>
+      <p>At a current price of 25.96, here are the basic metrics of this bond:</p>
+      <figure>
+        <img src="https://static.seekingalpha.com/uploads/2019/11/3/30934865-15727794955608013.png"/>
+      </figure>
+      <p>Source: subscribers spreadsheet with YTC being calculated separately</p>
+      <p>What is very important about this baby bond is that its call price changes with time. Here is the quote from the <a href="https://www.sec.gov/Archives/edgar/data/1464790/000161577418003948/s110197_424b5.htm">prospectus</a>:</p>
+      <blockquote>The Notes will mature on May 31, 2023. We may redeem the Notes for cash in whole or in part at any time at our option (I) on or after May 31, 2020 and prior to May 31, 2021, at a price equal to $25.75 per note, plus accrued and unpaid interest to, but excluding, the date of redemption, (II) on or after May 31, 2021 and prior to May 31, 2022, at a price equal to $25.375 per note, plus accrued and unpaid interest to, but excluding, the date of redemption, and (III) on or after May 31, 2022 and prior to maturity, at a price equal to 100% of their principal amount, plus accrued and unpaid interest to, but excluding, the date of redemption.</blockquote>
+      <p>Based on this information, we need to make calculations for each call scenario. Here you can see the dates and cash flows, assuming RILYH being called at different call prices and different call dates:</p>
+      <figure>
+        <img src="https://static.seekingalpha.com/uploads/2019/11/3/30934865-15727800827803676.png"/>
+      </figure>
+      <p>Source: subscribers' spreadsheet</p>
+      <p>Call dates at which call price changes and the maturity date is 1 month after payment date, which means that the bond will accrue around 15 cents on top of its redemption price. To calculate the returns for each scenario, we use the XIRR function:</p>
+      <figure>
+        <img src="https://static.seekingalpha.com/uploads/2019/11/3/30934865-1572780208737333.png"/>
+      </figure>
+      <p>Source: subscribers' spreadsheet</p>
+      <p>If RILYH gets redeemed on its first possible call date, the investor buying at 25.94 tomorrow will generate a 6.12% yield to call annualized. This number changes slightly in the different redemption scenarios. What is very important to understand is that the less time to maturity the lower the yield to call and the yield to maturity will be, so that the resulting yield to hold for shorter periods may outperform the numbers in the table if the bond is being sold earlier on a capital appreciation event. Another point one has to consider is that RILY is not able to redeem a 7.375% yielding security before 2022, because the company has to pay a premium over Par. The Internal rate of return from a company's point of view can be seen here:</p>
+      <figure>
+        <img src="https://static.seekingalpha.com/uploads/2019/11/3/30934865-15727842869236732.png"/>
+      </figure>
+      <p>Source: subscribers' spreadsheet</p>
+      <p>If the company decides to redeem RILYH at 25.75 on 5/31/2020, it is actually buying a 6.66%(creepy) yield to maturity. This lowers the redemption probability for RILYH, but in no way lowers our return target because the company finances lower and most likely RILYH will be pinned to par. Once we are informed about the potential return of RILYH, it is time to find a way to boost it.</p>
+      <p>
+        <b>
+          <b>Using leverage on a safe bet</b>
+        </b>
+      </p>
+      <p>If, for example, you are good at penalties and you score 9 out of 10 times and someone is willing to bet against you in such a manner that you lose $100 for every penalty missed and make $100 for every penalty scored and you have only $20 in savings. I am almost certain you will gather all your friends and ask them for a fast credit. In finance, it works like this, but with slightly worse returns. As of the moment, one using a portfolio margin account can buy RILYH on margin, and for every $100 margin, one could get an additional $567. Here are the interest costs as per IB website:</p>
+      <figure>
+        <img src="https://static.seekingalpha.com/uploads/2019/11/3/30934865-1572786713506839.png"/>
+      </figure>
+      <p>Source: Interactive Broker</p>
+      <p>The smallest portfolio margin account easily borrows at 2.67% ($567000 borrowed). Now, let's imagine a hypothetical (actually not so hypothetical) position of $667K taken on margin:</p>
+      <figure>
+        <img src="https://static.seekingalpha.com/uploads/2019/11/3/30934865-15727873213823764.png"/>
+      </figure>
+      <p>Source: subscribers' spreadsheet</p>
+      <p>The expected return of RILYH, as we know, is around 6% and with the cost of leverage at 2.67%, we get the following numbers:</p>
+      <figure>
+        <img src="https://static.seekingalpha.com/uploads/2019/11/3/30934865-15727876580807893.png"/>
+      </figure>
+      <p>Source: subscribers' spreadsheet</p>
+      <p>If we really end up earning 6% from RILYH, this will result in 22% gross ROE. Keep in mind using leverage is not risk-free. When and if you decide to use leverage, you need to understand that losing money is easier than making money. A leveraged entity cannot afford to be wrong in evaluating risks, because all equity is easily wiped out. You need to clearly understand the strategy, and all the hedging reaction that needs to be taken in case the thesis is wrong.</p>
+      <p>
+        <b>
+          <b>RILYH family and hedging reaction</b>
+        </b>
+      </p>
+      <figure>
+        <img src="https://static.seekingalpha.com/uploads/2019/11/5/30934865-15729494122237117.png"/>
+      </figure>
+      <p>
+        <i>Source: author's database.</i>
+      </p>
+      <p>As we can see in the database, RILY was able to issue a 6.5% bond most recently. The 6.75% RILYO is currently trading at $26, which definitely shows the value of RILYH even more. If RILYH is not redeemed the yield to maturity is around 6.36% with a duration of 3.14 years. RILYO has a duration of 3.93 years and a yield to maturity of 5.9%, which in fact is lower even than the yield to call of RILYH. On top of that, it is very important to note that if, for any reason, the market decides to value RILY bonds with a higher risk premium or if there is a shift in the yield curve, RILYO is exposed to a higher capital loss. Assume the market demands 7.37% from RILY bonds. In this scenario, RILYH will trade at $25 stripped price while RILYO would have to trade at $24.60. The arbitrages here are not as big as they would be in longer-duration bonds and this is just another plus for us. As long as credit quality remains stable, one can expect extremely low volatility from these instruments. For RILYH to have a yield to maturity of 5.8%, it would have to trade at $26.40. This is how the yield to call curve of RILYH looks like if it is to trade at $26.40:</p>
+      <figure>
+        <img src="https://static.seekingalpha.com/uploads/2019/11/5/30934865-15729507192374027.png"/>
+      </figure>
+      <p>Source: subscribers' spreadsheet</p>
+      <p>This is what we consider to be its normal yield curve. Another very important note about this investment is that every penny matters. You cannot just jump on this baby bond and buy 10 or 20 cents higher thinking it does not matter. 20 cents change the entire picture. This is not one of those ideas where you front-run the crowd, but you want to buy your size understanding the whole point and bidding at the right price. If for example, you buy your size at $26.40 today and leverage it to the max you will hardly break even if the security is redeemed at its first possible call date.</p>
+      <p>
+        <b>
+          <b>The company and its credit quality</b>
+        </b>
+      </p>
+      <p>Let's start with the common stock chart:</p>
+      <figure>
+        <img src="https://static.seekingalpha.com/uploads/2019/11/5/30934865-157295108887888.png"/>
+      </figure>
+      <p>Source: Google Finance</p>
+      <p>The company has tripled its price, and this is not some "GPRO popularity" event. We are talking about a company that earns its price. Very recently, RILY even announced a special dividend to common stockholders. As much as we want to see this money retained, we cannot close our eyes to the great results the company posted:</p>
+      <figure>
+        <img src="https://static.seekingalpha.com/uploads/2019/11/6/30934865-15730302639165967.png"/>
+      </figure>
+      <p>Source: Company's filling</p>
+      <p>They are starting to earn serious money. In fact, their balance sheet is very similar to this of an investment bank:</p>
+      <figure>
+        <img src="https://static.seekingalpha.com/uploads/2019/11/6/30934865-15730308993715215.png"/>
+      </figure>
+      <p>Source: Company's filling</p>
+      <p>What is very important to note is that the market values RILY common stock at almost $780 mln. If we use this number instead of the book value number, the long-term debt equals the equity of the company. For the type of business, RILY has, this is quite defensive. Management understands this, and they are willing to leverage further. This is why they distribute a special dividend and announce their share repurchase program. Many people view leverage as something bad in general, but this is not always the case. The optimal capital structure for some companies requires leverage. Goldman Sachs (NYSE:<a href="https://seekingalpha.com/symbol/GS">GS</a>) probably knows how to run business and their Market capitalization is one-third of their long-term debt. The more profitable the company becomes, the most likely it is to leverage further and this will make perfect sense and at the moment we are able to buy 6% for such a short duration while the company is a long way from its desired leverage ratios. As long as the market is correct in valuing RILY common stock, there is quite a big cushion for bondholders. We are in a situation in which the common stock market tells us that the company is investment-grade, while the bonds offer us yields that one can hardly find in B rated companies for such a short duration. There is one thing that any investor should always check as a "market credit rating check". Imagine you want to hedge a credit event in which the company may go bankrupt fast like ENRON, for example. This event has a very low probability, and the way to hedge such an event should be very cheap the higher the credit quality. The way to create your own credit default swap is to buy out of the money puts. Now, let's make a simple comparison between RILY and Morgan Stanley (NYSE:<a href="https://seekingalpha.com/symbol/MS">MS</a>).</p>
+      <p>The way to hedge our $100K margin in RILY bonds from a catastrophic event is to buy 51 RILY put options with a strike price of $20, expiration date 4/17/2020 at a bid price $0.15 per contract for a total amount of $765 total risk if the options expire worthlessly. The identical hedge for MS would be to buy 38 contracts with a strike price of $33 (33/48.77 is almost equal to 20/29.66). Here are the option tables for the 2 identical strategies:</p>
+      <figure>
+        <img src="https://static.seekingalpha.com/uploads/2019/11/6/30934865-15730353745526164.png"/>
+      </figure>
+      <p>You hardly see such close results in option tables if the market does not think the 2 companies are quite identical. Yes, the market treats MS as a higher credit rating, but very slightly. The spread in bond yields is insane if the common stock price movements probabilities are as identical as shown in the picture above. There is no way to miss RILYH at 6%. Now, go and try to find a way to earn some money by leveraging MS short-term bonds. It is impossible. Even if you are scared of some sudden catastrophic event from RILY, the yields that RILYH provides are so great that the cost of hedging is laughable. If you buy the put options in the example your leveraged ROE goes down from 22% to 21%. This is Alpha at its best. The hedge is as cheap as MS, but the return is probably 7-10 times higher. This is the typical MS 2023 bond:</p>
+      <figure>
+        <img src="https://static.seekingalpha.com/uploads/2019/11/6/30934865-15730359890392792.png"/>
+      </figure>
+      <p>Source: FINRA</p>
+      <p>2.775% yield to worst. And just for the record, MS is more leveraged. It is laughable to compare a company with $2 bln in assets to one of the biggest investment banks in the world. This is true, but somehow, the option chain which is quite arbitrated treats them in a similar matter, and we are not saying that a 2.77% RILY bond is better than a 2.77% MS bond. We are saying that a 6% RILY bond is better than a 2.77% MS bond. And learning from MS and GS, we want to leverage this "Alpha" as much as possible.</p>
+      <p>
+        <b>
+          <b>The world of baby bonds in several charts</b>
+        </b>
+      </p>
+      <p>45 bonds with call risk:</p>
+      <figure>
+        <img src="https://static.seekingalpha.com/uploads/2019/11/7/30934865-15731490200389144.png"/>
+      </figure>
+      <p>Source: author's database.</p>
+      <p>20 bonds trading lower than Par:</p>
+      <figure>
+        <img src="https://static.seekingalpha.com/uploads/2019/11/7/30934865-15731490750363235.png"/>
+      </figure>
+      <p>Source: author's database.</p>
+      <p>114 bonds trading as most probable redemptions:</p>
+      <figure>
+        <img src="https://static.seekingalpha.com/uploads/2019/11/7/30934865-15731491491256158.png"/>
+      </figure>
+      <p>Source: author's database.</p>
+      <p>Comparable to RILYH bonds:</p>
+      <figure>
+        <img src="https://static.seekingalpha.com/uploads/2019/11/7/30934865-15731510448485332.png"/>
+      </figure>
+      <p>Source: author's database.</p>
+      <p>We have scrolled through our database and the only thing comparable is funny enough another bond from RILY - RILYG, that has almost the same logic and is in my buy list as well.</p>
+      <p>
+        <b>
+          <b>Conclusion</b>
+        </b>
+      </p>
+      <p>RILYH is one of the few remaining "Alpha" bonds. We view it as a quite safe investment that is suitable for being leveraged because of its low credit risk and very short expected duration.</p>
+      <p>
+        <b>Trade With Beta Marketplace</b>
+      </p>
+      <p>This article was originally published on November 07, 2019, and, as such, some figures and charts might not be entirely up to date. If you want to understand with priority about other opportunities with such a potential Trade With Beta is the best marketplace for you. I will be happy to discuss with you personally the ideas and whether they are suitable for your portfolio. Eager to see you there!</p>
+      <p>
+        <b>Trade With Beta</b>
+      </p>
+      <p>At <a href="https://seekingalpha.com/account/research/subscribe?slug=arbitrage-trader&amp;sasource=auth_profile_header_ad">Trade With Beta</a>, we also pay close attention to closed-end funds and are always keeping an eye on them for directional and arbitrage opportunities created by market price deviations. As you can guess, timing is crucial in these kinds of trades; therefore, you are welcome to join us for early access and the discussions accompanying these kinds of trades.</p>
+      <p><b>Disclosure:</b> I am/we are long RILYH. I wrote this article myself, and it expresses my own opinions. I am not receiving compensation for it (other than from Seeking Alpha). I have no business relationship with any company whose stock is mentioned in this article.</p>
+    </article>
+  </body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://www.androidworld.it/2019/11/11/google-deciso-epurare-android-11-delle-api-piu-utilizzate-680599/"/>
+    <meta property="og:site_name" content="AndroidWorld"/>
+    <meta property="article:published_time" content="2019-11-11T18:55:54+00:00"/>
+    <meta property="og:title" content="Google ha deciso di epurare da Android 11 una delle API più utilizzate"/>
+    <meta property="og:description" content="Se non siete sviluppatori e non vi siete mai trovati ad avere a che fare col codice probabilmente non avrete..."/>
+  </head>
+  <body>
+    <article>
+      <h1>Google ha deciso di epurare da Android 11 una delle API più utilizzate</h1>
+      <address><time datetime="2019-11-11T18:55:54+00:00">11 Nov 2019, 18:55</time> by <a rel="author" href="https://www.androidworld.it/author/rob-art7/" target="_blank">Roberto Artigiani</a></address>
+      <p>Se non siete sviluppatori e non vi siete mai trovati ad avere a che fare col codice probabilmente non avrete familiarità col <b>concetto di task asincrono</b> (spieghiamo di che si tratta nell’ultimo paragrafo). Per quanto sia una logica da macchina <b>è qualcosa con cui tutti abbiamo a che fare tutti i giorni e avviene tramite specifiche API</b>. In particolare, se siete sviluppatori stagionati o se vi trovate alle prime armi, ci sono buone probabilità che vi imbattiate nelle <b>API AsyncTask</b>.</p>
+      <p>Si tratta di una serie di procedure pensate per semplificare le <b>interazioni tra l’interfaccia di un’app e le operazioni che avvengono in background</b>. Purtroppo anche se si tratta di uno strumento utile non svolge il suo lavoro in maniera impeccabile (ci arriviamo tra un attimo), motivo per cui <b><a href="https://www.androidworld.it/tag/google/">Google</a> ha deciso di rimuoverlo dall’<a href="https://www.androidworld.it/tag/aosp/">AOSP</a></b> (<a href="https://android-review.googlesource.com/c/platform/frameworks/base/+/1156409">qui</a> il commit). A meno di rilasci di manutenzione quindi nella <a href="https://www.androidworld.it/tag/android-11/">prossima versione di Android</a>, non vedremo AyncTask. Per colmare il vuoto, BigG suggerisce di utilizzare il framework Concurrency di Java o Coroutines di Kotlin, entrambe alternative più che valide.</p>
+      <p>La logica asincrona è piuttosto elementare: ogni volta che un applicazione deve <b>raccogliere informazioni da un server remoto</b> di solito compie una richiesta, ma per evitare che l’app rimanga in attesa della risposta, il tutto <b>avviene in maniera asincrona</b>. Una volta che i dati sono arrivati e sono pronti per essere mostrati, bisogna verificare che l’interfaccia da popolare sia ancora attiva <b>altrimenti si possono generare crash o bug</b>.</p>
+      <p><b>Ad AsyncTask manca una protezione per evitare quest’ultimo scenario</b>, per cui gli sviluppatori sono obbligati a gestire manualmente simili situazioni. Evidentemente tutti le correzioni effettuate nel tempo da Google non sono stati sufficienti e ora non c’è altro da fare che avviarle verso il <b>pensionamento anticipato</b>. Per gli utenti finali non cambierà nulla, ma per molti sviluppatori si tratta di una novità rilevante.</p>
+      <p>Via: <a href="https://www.xda-developers.com/asynctask-deprecate-android-11/">XDA Developers</a></p>
+    </article>
+  </body>
+</html>

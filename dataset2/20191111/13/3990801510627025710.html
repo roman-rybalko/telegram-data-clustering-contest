@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://thenextweb.com/podium/2019/11/11/machine-learning-algorithms-and-the-art-of-hyperparameter-selection/"/>
+    <meta property="og:site_name" content="Podium | The Next Web"/>
+    <meta property="article:published_time" content="2019-11-11T13:41:48+00:00"/>
+    <meta property="og:title" content="Machine learning algorithms and the art of hyperparameter selection"/>
+    <meta property="og:description" content="Wokring in AI? Here's a review of the power of an optimization strategy and an overview of four commonly used optimization strategies."/>
+  </head>
+  <body>
+    <article>
+      <h1>Machine learning algorithms and the art of hyperparameter selection</h1>
+      <h2>A review of four optimization strategies</h2>
+      <address><time datetime="2019-11-11T13:41:48+00:00">11 Nov 2019, 13:41</time> by <a rel="author">Mischa Lisovyi and Rosaria Silipo</a></address>
+      <p>Machine learning algorithms are used everywhere from a smartphone to a spacecraft. They tell you the weather forecast for tomorrow, translate from one language into another, and suggest what TV series you might like next on Netflix.</p>
+      <p>These algorithms automatically adjust (learn) their internal parameters based on data. However, there is a subset of parameters that is not learned and that have to be configured by an expert. Such parameters are often referred to as “hyperparameters” — and they have a big impact on our lives as the use of AI increases.</p>
+      <p>For example, the tree depth in a decision tree model and the number of layers in an artificial neural network are typical hyperparameters. The performance of a model can drastically depend on the choice of its hyperparameters. A decision tree can yield good results for moderate tree depth and have very bad performance for very deep trees.</p>
+      <p>The choice of the optimal hyperparameters is more art than science, if we want to run it manually. Indeed, the optimal selection of the hyperparameter values depends on the problem at hand.</p>
+      <p>Since the algorithms, the goals, the data types, and the data volumes change considerably from one project to another, there is no single best choice for hyperparameter values that fits all models and all problems. Instead, hyperparameters must be optimized within the context of each machine learning project.</p>
+      <p>In this article, we’ll start with a review of the power of an optimization strategy and then provide an overview of four commonly used optimization strategies:</p>
+      <ul>
+        <li>Grid search</li>
+        <li>Random search</li>
+        <li>Hill climbing</li>
+        <li>Bayesian optimization</li>
+      </ul>
+      <h3>The optimization strategy</h3>
+      <p>Even with in-depth domain knowledge by an expert, the task of manual optimization of the model hyperparameters can be very time-consuming. An alternative approach is to set aside the expert and adopt an automatic approach. An automatic procedure to detect the optimal set of hyperparameters for a given model in a given project in terms of some performance metric is called an optimization strategy.</p>
+      <p>A typical optimization procedure defines the possible set of hyperparameters and the metric to be maximized or minimized for that particular problem. Hence, in practice, any optimization procedure follows these classical steps:</p>
+      <ul>
+        <li><b>1)</b> Split the data at hand into training and test subsets</li>
+        <li>
+          <p><b>2)</b> Repeat optimization loop a fixed number of times or until a condition is met:</p>
+          <ul>
+            <li><b>a)</b> Select a new set of model hyperparameters</li>
+            <li><b>b)</b> Train the model on the training subset using the selected set of hyperparameters</li>
+            <li><b>c)</b> Apply the model to the test subset and generate the corresponding predictions</li>
+            <li><b>d)</b> Evaluate the test predictions using the appropriate scoring metric for the problem at hand, such as accuracy or mean absolute error. Store the metric value that corresponds to the selected set of hyperparameters</li>
+          </ul>
+        </li>
+        <li><b>3)</b> Compare all metric values and choose the hyperparameter set that yields the best metric value</li>
+      </ul>
+      <p>The question is how to pass from step 2d back to step 2a for the next iteration; that is, how to select the next set of hyperparameters, making sure that it is actually better than the previous set. We would like our optimization loop to move toward a reasonably good solution, even though it may not be the optimal one. In other words, we want to be reasonably sure that the next set of hyperparameters is an improvement over the previous one.</p>
+      <p>A typical optimization procedure treats a machine learning model as a black box. That means at each iteration for each selected set of hyperparameters, all we are interested in is the model performance as measured by the selected metric. We do not need (want) to know what kind of magic happens inside the black box. We just need to move to the next iteration and iterate over the next performance evaluation, and so on.</p>
+      <p>The key factor in all different optimization strategies is how to select the next set of hyperparameter values in step 2a, depending on the previous metric outputs in step 2d. Therefore, for a simplified experiment, we omit the training and testing of the black box, and we focus on the metric calculation (a mathematical function) and the strategy to select the next set of hyperparameters. In addition, we have substituted the metric calculation with an arbitrary mathematical function and the set of model hyperparameters with the function parameters.</p>
+      <p>In this way, the optimization loop runs faster and remains as general as possible. One further simplification is to use a function with only one hyperparameter to allow for an easy visualization. Below is the function we used to demonstrate the four optimization strategies. We would like to emphasize that any other mathematical function would have worked as well.</p>
+      <blockquote>f(x) = sin(x/2) + 0.5⋅sin(2⋅x) +0.25⋅cos(4.5⋅x)</blockquote>
+      <p>This simplified setup allows us to visualize the experimental values of the one hyperparameter and the corresponding function values on a simple x-y plot. On the x axis are the hyperparameter values and on the y axis the function outputs. The (x,y) points are then colored according to a white-red gradient describing the point position in the generation of the hyperparameter sequence.</p>
+      <p>Whiter points correspond to hyperparameter values generated earlier in the process; redder points correspond to hyperparameter values generated later on in the process. This gradient coloring will be useful later to illustrate the differences across the optimization strategies.</p>
+      <p>The goal of the optimization procedure in this simplified use case is to find the one hyperparameter that maximizes the value of the function.</p>
+      <p>Let’s begin our review of four common optimization strategies used to identify the new set of hyperparameter values for the next iteration of the optimization loop.</p>
+      <h3>Grid search</h3>
+      <p>This is a basic <a href="https://en.wikipedia.org/wiki/Hyperparameter_optimization#Grid_search">brute-force strategy</a>. If you do not know which values to try, you try them all. All possible values within a range with a fixed step are used in the function evaluation.</p>
+      <p>For example, if the range is [0, 10] and the step size is 0.1, then we would get the sequence of hyperparameter values (0, 0.1, 0.2, 0.3, … 9.5, 9.6, 9.7, 9.8, 9.9, 10). In a grid search strategy, we calculate the function output for each and every one of these hyperparameter values. Therefore, the finer the grid, the closer we get to the optimum — but also the higher the required computation resources.</p>
+      <figure>
+        <img src="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/11/image3-2-796x597.png"/>
+        <figcaption>Figure 1: Grid search of the hyperparameter values on a [0, 10] range with step 0.1. The color gradient reflects the position in the generated sequence of hyperparameter candidates. Whiter points correspond to hyperparameter values generated earlier on in the process; red points correspond to hyperparameter values generated later on.</figcaption>
+      </figure>
+      <p>As Figure 1 shows, the range of the hyperparameter is scanned from small to large values.</p>
+      <p>The grid search strategy can work well in the case of a single parameter, but it becomes very inefficient when multiple parameters have to be optimized simultaneously.</p>
+      <h3>Random search</h3>
+      <p>For the <a href="https://en.wikipedia.org/wiki/Random_search">random search</a> strategy, the values of the hyperparameters are selected randomly, as the name suggests. This strategy is typically preferred in the case of multiple hyperparameters, and it is particularly efficient when some hyperparameters affect the final metric more than others.</p>
+      <p>Again, the hyperparameter values are generated within a range [0, 10]. Then, a fixed number N of hyperparameters is randomly generated. The fixed number N of predefined hyperparameters to experiment with allows you to control the duration and speed of this optimization strategy. The larger the N, the higher the probability to get to the optimum — but also the higher the required computation resources.</p>
+      <figure>
+        <img src="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/11/image2-2-796x597.png"/>
+        <figcaption>Figure 2: Random search of the hyperparameter values on a [0, 10] range. The color gradient reflects the position in the generated sequence of hyperparameter candidates. Whiter points correspond to hyperparameter values generated earlier on in the process; red points correspond to hyperparameter values generated later on.</figcaption>
+      </figure>
+      <p>As expected, the hyperparameter values from the generated sequence are used in no decreasing or increasing order: white and red dots mix randomly in the plot.</p>
+      <h3>Hill climbing</h3>
+      <p>The <a href="https://en.wikipedia.org/wiki/Hill_climbing">hill climbing</a> approach at each iteration selects the best direction in the hyperparameter space to choose the next hyperparameter value. If no neighbor improves the final metric, the optimization loop stops.</p>
+      <p>Note that this procedure is different from the grid and random searches in one important aspect: selection of the next hyperparameter value takes into account the outcomes of previous iterations.</p>
+      <figure>
+        <img src="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/11/image4-2-796x597.png"/>
+        <figcaption>Figure 3: Hill climbing search of the hyperparameter values on a [0, 10] range. The color gradient reflects the position in the generated sequence of hyperparameter candidates. Whiter points correspond to hyperparameter values generated earlier on in the process; red points correspond to hyperparameter values generated later on.</figcaption>
+      </figure>
+      <p>Figure 3 shows that the hill climbing strategy applied to our function started at a random hyperparameter value, <i>x=8.4</i>, and then moved toward the function maximum y=0.4 at <i>x=6.9</i>. Once the maximum was reached, no further increase in the metric was observed in the next neighbor, and the search procedure stopped.</p>
+      <p>This example illustrates a caveat related to this strategy: it can get stuck in a secondary maximum. From the other plots, we can see that the global maximum is located at <i>x=4.0</i> with corresponding metric value of <i>1.6</i>. This strategy does not find the global maximum but gets stuck into a local one. A good rule of thumb for this method is to run it multiple times with different starting values and to check whether the algorithm converges to the same maximum.</p>
+      <h3>Bayesian optimization</h3>
+      <p>The <a href="https://en.wikipedia.org/wiki/Bayesian_optimization">Bayesian optimization</a> strategy selects the next hyperparameter value based on the function outputs in the previous iterations, similar to the hill climbing strategy. Unlike hill climbing, Bayesian optimization looks at past iterations globally and not only at the last one.</p>
+      <p>There are typically two phases in this procedure:</p>
+      <ul>
+        <li>During the first phase, called warm-up, hyperparameter values are generated randomly. After a user-defined number N of such random generations of hyperparameters, the second phase kicks in.</li>
+        <li>In the second phase, at each iteration, a “surrogate” model of type <i>P(output | past hyperparameters)</i> is estimated to describe the conditional probability of the output values on the hyperparameter values from past iterations. This surrogate model is much easier to optimize than the original function. Thus, the algorithm optimizes the surrogate and suggests the hyperparameter values at the maximum of the surrogate model as the optimal values for the original function as well. A fraction of the iterations in the second phase is also used to probe areas outside of the optimal region. This is to avoid the problem of local maxima.</li>
+      </ul>
+      <figure>
+        <img src="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/11/Screenshot-2019-11-11-at-12.51.56.png"/>
+        <figcaption>Figure 4: Bayesian optimization of the hyperparameter values on a [0, 10] range. The color gradient reflects the position in the generated sequence of hyperparameter candidates. Whiter points correspond to hyperparameter values generated earlier on in the process; red points correspond to hyperparameter values generated later on. The gray points are generated in the first random phase of the strategy.</figcaption>
+      </figure>
+      <p>Figure 4 demonstrates that the Bayesian optimization strategy uses the warm-up phase to define the most promising area and then selects the next values for the hyperparameters in that area.</p>
+      <p>You can also see that intense red points are clustered closer to the maximum, while pale red and white points are scattered. This demonstrates that the definition of the optimal region is improved with each iteration of the second phase.</p>
+      <h3>Summary</h3>
+      <p>We all know the importance of hyperparameter optimization while training a machine learning model. Since manual optimization is time-consuming and requires specific expert knowledge, we have explored four common automatic procedures for hyperparameter optimization.</p>
+      <p>In general, an automatic optimization procedure follows an iterative procedure in which at each iteration, the model is trained on a new set of hyperparameters and evaluated on the test set. At the end, the hyperparameter set corresponding to the best metric score is chosen as the optimal set. The question is how to select the next set of hyperparameters, ensuring that this is actually better than the previous set.</p>
+      <p>We have provided an overview of four commonly used optimization strategies: grid search, random search, hill climbing, and Bayesian optimization. They all have pros and cons, and we have briefly explained the differences by illustrating how they work on a simple toy use case. Now you are all set to go and try them out in a real-world machine learning problem.</p>
+    </article>
+  </body>
+</html>

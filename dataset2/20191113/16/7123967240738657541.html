@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://www.cybeout.it/2019/11/mcafee-lantivirus-ha-un-enorme-buco-nella-sicurezza/"/>
+    <meta property="og:site_name" content="CybeOut"/>
+    <meta property="article:published_time" content="2019-11-13T16:56:31+00:00"/>
+    <meta property="og:title" content="McAfee: l’antivirus ha un enorme buco nella sicurezza"/>
+    <meta property="og:description" content="Una nuova vulnerabilità critica riguarda tre edizioni dell’antivirus McAfee: McAfee Total Protection (MTP), Anti-Virus Plus (AVP) e Internet Security (MIS) fino alla versione 16.0.R22 . Il di…"/>
+  </head>
+  <body>
+    <article>
+      <h1>McAfee: l’antivirus ha un enorme buco nella sicurezza</h1>
+      <address><time datetime="2019-11-13T16:56:31+00:00">13 Nov 2019, 16:56</time> by <a rel="author" href="https://www.cybeout.it/author/danielsandj/" target="_blank">Daniel Aka</a></address>
+      <p>Una nuova vulnerabilità critica riguarda tre edizioni dell’antivirus McAfee: <b>McAfee Total Protection (MTP), Anti-Virus Plus (AVP) e Internet Security (MIS) fino alla versione 16.0.R22</b> . Il difetto, scoperto da SafeBreach Labs, è stato rilasciato come CVE-2019-3648 – <b>McAfee ha già avuto il tempo di risolvere il problema nella versione 16.0.R22 </b>delle sue applicazioni.</p>
+      <p>Questo difetto è particolarmente grave perché trasforma l’antivirus in un vettore di attacco. Per questo, l’attaccante deve modificare la macchina target con i privilegi di amministratore, che può ottenere in vari modi, ad esempio ripristinando il login o eseguendo il suo attacco sfruttando altri difetti di sicurezza.</p>
+      <h3>Una DLL scarsamente gestita genera discordia</h3>
+      <p>In particolare, il problema deriva da un bug nella gestione di una DLL antivirus, wbemprox.dll. Questo chiama un’altra DLL, wbemcomn.dll che consente il caricamento nel contesto della sua directory di lavoro piuttosto che un modo esatto e predefinito per una maggiore sicurezza. La libreria non richiede che la DLL sia firmata.</p>
+      <p>Di conseguenza, sostituendo questa DLL con un file appositamente modificato, è possibile eseguire codice arbitrario in processi critici, gestiti come componenti di sistema di Windows. Gli aggressori possono anche prendere il controllo dell’antivirus e inserire il loro codice dannoso in una lista bianca. O rendere persistente il loro malware all’avvio del computer.</p>
+      <p>Per risolvere il problema sul tuo computer, si consiglia vivamente di aggiornare il tuo antivirus il prima possibile se non è già così: gli sviluppatori di SafeSearch Labs hanno infatti lasciato abbastanza tempo a McAfee per l’editore può correggere il difetto prima che venga pubblicato.</p>
+    </article>
+  </body>
+</html>

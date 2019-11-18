@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://linux.slashdot.org/story/19/11/16/0056214/debian-project-drafts-general-resolution-on-init-system-diversity?utm_source=rss1.0mainlinkanon&amp;utm_medium=feed"/>
+    <meta property="og:site_name" content="linux.slashdot.org"/>
+    <meta property="article:published_time" content="2019-11-16T10:34:00+00:00"/>
+    <meta property="og:title" content="Debian Project Drafts General Resolution on Init-System Diversity"/>
+    <meta property="og:description" content="Debian &quot;is heading toward a new general resolution to decide at what level init systems other than systemd should be supported,&quot; reports LWN.net. &quot;I'm absolutely convinced we've reached a point where in order to respect the people trying to get work done, we need to figure out where we are as a ..."/>
+  </head>
+  <body>
+    <article>
+      <h1>Debian Project Drafts General Resolution on Init-System Diversity</h1>
+      <address><time datetime="2019-11-16T10:34:00+00:00">16 Nov 2019, 10:34</time> by <a rel="author">EditorDavid</a></address>
+      <p>Debian "is heading toward a new general resolution to <a href="https://lwn.net/SubscriberLink/804254/71240d6b83844653/">decide at what level init systems other than systemd should be supported</a>," reports LWN.net. <br/><br/>"I'm absolutely convinced we've reached a point where in order to respect the people trying to get work done, we need to figure out where we are as a project," <a href="https://lwn.net/ml/debian-devel-announce/tsl36fbpj4q.fsf@suchdamage.org/">writes Debian project leader Sam Hartman</a>. "We can either decide that this is work we want to facilitate, or work that we as a project decide is not important."<br/><br/>LWN.net reports: <i>The immediate motivation for a reconsideration would appear to be <a href="https://linux.slashdot.org/story/19/09/21/042213/debian-may-need-to-re-evaluate-its-interest-in-init-system-diversity">the proposed addition of elogind</a>, a standalone fork of the systemd-logind daemon, to Debian. Elogind would provide support for systemd's D-Bus-based login mechanism -- needed to support small projects like the GNOME desktop -- without the need for systemd itself. The addition of elogind has been controversial; it is a difficult package to integrate for a number of reasons. Much of the discussion has evidently been carried out away from the mailing lists, but some context on the problem can be found <a href="https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=934132">in this bug report</a>. In short: merging elogind appears to be complex enough that it would be hard to justify in the absence of a strong commitment to the support of non-systemd init systems. It seems possible that this commitment no longer exists across the distribution as a whole; the purpose of a general resolution would be to determine whether that is the case or not. <br/><br/>Unsurprisingly, Debian developers have a variety of opinions on this issue. <a href="https://lwn.net/ml/debian-devel/87a79jjiug.fsf@hope.eyrie.org/">This response from Russ Allbery is worth reading</a> in its entirety. He argues that the 2014 decision (of which he was a part) never really nailed down the project's position toward other init systems. That was a necessary compromise at the time, he said, but it is causing stress now: "while I feel somewhat vindicated by the fact that this didn't immediately fall apart and has sort of worked, I think it's becoming increasingly untenable".... Josh Triplett <a href="https://lwn.net/ml/debian-devel/20191030121402.GA14450@localhost/">zeroed in on one of the issues</a> that is testing the init-system peace now. There is, he said, an increasingly long list of features that are only available with systemd, and application developers want to use those features... The responses to this argument took a couple of different approaches. Ted Ts'o <a href="https://lwn.net/ml/debian-devel/20191030193017.GA3309@mit.edu/">described those features</a> as "the 'embrace, extend, and extinguish' phenomenon of systemd which caused so much fear and loathing."</i> <br/>There's much more information in LWN.net's 1,600-word article -- but where do things stand now? Hartman <a href="https://lwn.net/ml/debian-vote/tslk18bd0m3.fsf@suchdamage.org/">posted a draft general resolution last week with three choices</a>.</p>
+      <ul>
+        <li>Affirm <i>init</i> diversity</li>
+        <li>Support "exploring" alternatives to systemd, "but believing <i>sysvinit</i> <a href="https://lwn.net/ml/debian-vote/tslftivmz96.fsf_-_@suchdamage.org/">is a distraction in achieving that</a>." <i>[Marco d'Itri later noted that <a href="https://lwn.net/ml/debian-devel/20191031092738.GC21773@bongo.bofh.it/">less than 1% of new installs use <i>sysvinit</i></a>]</i></li>
+        <li>"Systemd without diversity as a priority." There would be no requirement to support anything but systemd in Debian.</li>
+      </ul>
+      <p>"It should be noted, though, that this is explicitly a draft," concludes LWN.net. "It is likely to evolve considerably before it reaches the point where the project will vote on it."</p>
+      <aside>
+        <b>
+          <a href="https://lwn.net/SubscriberLink/804254/71240d6b83844653/">(lwn.net)</a>
+        </b>
+      </aside>
+    </article>
+  </body>
+</html>

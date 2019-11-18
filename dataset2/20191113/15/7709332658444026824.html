@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://css-tricks.com/an-early-look-at-the-vue-3-composition-api-in-the-wild/"/>
+    <meta property="og:site_name" content="CSS-Tricks"/>
+    <meta property="article:published_time" content="2019-11-13T15:20:35+00:00"/>
+    <meta property="og:title" content="An Early Look at the Vue 3 Composition API in the Wild"/>
+    <meta property="og:description" content="I recently had an opportunity to try the new Vue Composition API in a real project to check where it might be useful and how we could use it in the"/>
+  </head>
+  <body>
+    <article>
+      <h1>An Early Look at the Vue 3 Composition API in the Wild</h1>
+      <p>Easily manage projects with <a href="https://synd.co/2JziuUL">monday.com</a></p>
+      <p>I recently had an opportunity to try the new <a href="https://vue-composition-api-rfc.netlify.com/">Vue Composition API</a> in a real project to check where it might be useful and how we could use it in the future.</p>
+      <p>Until now, when we were creating a new component we were using <a href="https://vuejs.org/v2/api/#Options-Data">Options API</a>. That API forced us to separate the component’s code by options, meaning that we needed to have all reactive data in one place (<code>data</code>), all computed properties in one place (<code>computed</code>), all methods in one place (<code>methods</code>), and so on.</p>
+      <p>As it is handy and readable for smaller components, it becomes painful when the component gets more complicated and deals with multiple functionalities. Usually, logic related to one specific functionality contains some reactive data, computed property, a method or a few of them; sometimes it also involves using component lifecycle hooks. That makes you constantly jump between different options in the code when working on a single logical concern.</p>
+      <p>The other issue that you may have encountered when working with Vue is how to extract a common logic that can be reused by multiple components. Vue already has few options to do that, but all of them have their own drawbacks (e.g. <a href="https://vuejs.org/v2/guide/mixins.html">mixins</a>, and <a href="https://vuejs.org/v2/guide/components-slots.html#Scoped-Slots">scoped-slots</a>).</p>
+      <p>The Composition API brings a new way of creating component, separating code and extracting reusable pieces of code.</p>
+      <p>Let’s start with code composition within a component.</p>
+      <h3>Code composition</h3>
+      <p>Imagine you have a main component that sets up few things for your whole Vue app (like <a href="https://nuxtjs.org/guide/views#layouts">layout in Nuxt</a>). It deals with the following things:</p>
+      <ul>
+        <li>setting locale</li>
+        <li>checking if the user is still authenticated and redirects them if not</li>
+        <li>preventing the user from reloading the app too many times</li>
+        <li>tracking user activity and reacting when the user is inactive for specific period of time</li>
+        <li>listening on an event using EventBus (or window object event)</li>
+      </ul>
+      <p>Those are just a few things the component can do. You can probably imagine a more complex component, but this will serve the purpose of this example. For the sake of readability, I am just using names of the props without the actual implementation.</p>
+      <p>This is how the component would look like using Options API:</p>
+      <pre>&lt;template&gt; <br/>  &lt;div id="app"&gt; <br/>    ... <br/>  &lt;/div&gt; <br/>&lt;/template&gt; <br/><br/>&lt;script&gt; <br/>export default { <br/>  name: 'App', <br/><br/>  data() { <br/>    return { <br/>      userActivityTimeout: null, <br/>      lastUserActivityAt: null, <br/>      reloadCount: 0 <br/>    } <br/>  }, <br/><br/>  computed: { <br/>    isAuthenticated() {...} <br/>    locale() {...} <br/>  }, <br/><br/>  watch: { <br/>    locale(value) {...}, <br/>    isAuthenticated(value) {...} <br/>  }, <br/><br/>  async created() { <br/>    const initialLocale = localStorage.getItem('locale') <br/>    await this.loadLocaleAsync(initialLocale) <br/>  }, <br/><br/>  mounted() { <br/>    EventBus.$on(MY_EVENT, this.handleMyEvent) <br/><br/>    this.setReloadCount() <br/>    this.blockReload() <br/><br/>    this.activateActivityTracker() <br/>    this.resetActivityTimeout() <br/>  }, <br/><br/>  beforeDestroy() { <br/>    this.deactivateActivityTracker() <br/>    clearTimeout(this.userActivityTimeout) <br/>    EventBus.$off(MY_EVENT, this.handleMyEvent) <br/>  }, <br/><br/>  methods: { <br/>    activateActivityTracker() {...}, <br/>    blockReload() {...}, <br/>    deactivateActivityTracker() {...}, <br/>    handleMyEvent() {...}, <br/>    async loadLocaleAsync(selectedLocale) {...} <br/>    redirectUser() {...} <br/>    resetActivityTimeout() {...}, <br/>    setI18nLocale(locale) {...}, <br/>    setReloadCount() {...}, <br/>    userActivityThrottler() {...}, <br/>  } <br/>} <br/>&lt;/script&gt;</pre>
+      <p>As you can see, each option contains parts from all functionalities. There is no clear separation between them and that makes the code hard to read, especially if you are not the person who wrote it and you are looking at it for the first time. It is very hard to find which method is used by which functionality.</p>
+      <p>Let’s look at it again but identify the logical concerns as comments. Those would be:</p>
+      <ul>
+        <li>Activity tracker</li>
+        <li>Reload blocker</li>
+        <li>Authentication check</li>
+        <li>Locale</li>
+        <li>Event Bus registration</li>
+      </ul>
+      <pre>&lt;template&gt; <br/>  &lt;div id="app"&gt; <br/>    ... <br/>  &lt;/div&gt; <br/>&lt;/template&gt; <br/><br/>&lt;script&gt; <br/>export default { <br/>  name: 'App', <br/><br/>  data() { <br/>    return { <br/>      userActivityTimeout: null, // Activity tracker <br/>      lastUserActivityAt: null, // Activity tracker <br/>      reloadCount: 0 // Reload blocker <br/>    } <br/>  }, <br/><br/>  computed: { <br/>    isAuthenticated() {...} // Authentication check <br/>    locale() {...} // Locale <br/>  }, <br/><br/>  watch: { <br/>    locale(value) {...}, <br/>    isAuthenticated(value) {...} // Authentication check <br/>  }, <br/><br/>  async created() { <br/>    const initialLocale = localStorage.getItem('locale') // Locale <br/>    await this.loadLocaleAsync(initialLocale) // Locale <br/>  }, <br/><br/>  mounted() { <br/>    EventBus.$on(MY_EVENT, this.handleMyEvent) // Event Bus registration <br/><br/>    this.setReloadCount() // Reload blocker <br/>    this.blockReload() // Reload blocker <br/><br/>    this.activateActivityTracker() // Activity tracker <br/>    this.resetActivityTimeout() // Activity tracker <br/>  }, <br/><br/>  beforeDestroy() { <br/>    this.deactivateActivityTracker() // Activity tracker <br/>    clearTimeout(this.userActivityTimeout) // Activity tracker <br/>    EventBus.$off(MY_EVENT, this.handleMyEvent) // Event Bus registration <br/>  }, <br/><br/>  methods: { <br/>    activateActivityTracker() {...}, // Activity tracker <br/>    blockReload() {...}, // Reload blocker <br/>    deactivateActivityTracker() {...}, // Activity tracker <br/>    handleMyEvent() {...}, // Event Bus registration <br/>    async loadLocaleAsync(selectedLocale) {...} // Locale <br/>    redirectUser() {...} // Authentication check <br/>    resetActivityTimeout() {...}, // Activity tracker <br/>    setI18nLocale(locale) {...}, // Locale <br/>    setReloadCount() {...}, // Reload blocker <br/>    userActivityThrottler() {...}, // Activity tracker <br/>  } <br/>} <br/>&lt;/script&gt;</pre>
+      <p>See how hard it is to untangle all of those? 🙂</p>
+      <p>Now imagine you need to make a change in one functionality (e.g. activity tracking logic). Not only do you need to know which elements are related to that logic, but even when you know, you still need to jump up and down between different component options.</p>
+      <p>Let’s use the Composition API to separate the code by logical concerns. To do that we create a single function for each logic related to a specific functionality. This is what we call a <i>composition function</i>.</p>
+      <pre>// Activity tracking logic <br/>function useActivityTracker() { <br/>  const userActivityTimeout = ref(null) <br/>  const lastUserActivityAt = ref(null) <br/><br/>  function activateActivityTracker() {...} <br/>  function deactivateActivityTracker() {...} <br/>  function resetActivityTimeout() {...} <br/>  function userActivityThrottler() {...} <br/><br/>  onBeforeMount(() =&gt; { <br/>    activateActivityTracker() <br/>    resetActivityTimeout() <br/>  }) <br/><br/>  onUnmounted(() =&gt; { <br/>    deactivateActivityTracker() <br/>    clearTimeout(userActivityTimeout.value) <br/>  }) <br/>}</pre>
+      <pre>// Reload blocking logic <br/>function useReloadBlocker(context) { <br/>  const reloadCount = ref(null) <br/><br/>  function blockReload() {...} <br/>  function setReloadCount() {...} <br/><br/>  onMounted(() =&gt; { <br/>    setReloadCount() <br/>    blockReload() <br/>  }) <br/>}</pre>
+      <pre>// Locale logic <br/>function useLocale(context) { <br/>  async function loadLocaleAsync(selectedLocale) {...} <br/>  function setI18nLocale(locale) {...} <br/><br/>  watch(() =&gt; { <br/>    const locale = ... <br/>    loadLocaleAsync(locale) <br/>  }) <br/><br/>  // No need for a 'created' hook, all logic that runs in setup function is placed between beforeCreate and created hooks <br/>  const initialLocale = localStorage.getItem('locale') <br/>  loadLocaleAsync(initialLocale) <br/>}</pre>
+      <pre>// Event bus listener registration <br/>import EventBus from '@/event-bus' <br/><br/>function useEventBusListener(eventName, handler) { <br/>  onMounted(() =&gt; EventBus.$on(eventName, handler)) <br/>  onUnmounted(() =&gt; EventBus.$off(eventName, handler)) <br/>}</pre>
+      <p>As you can see, we can declare reactive data (<code>ref</code> / <code>reactive</code>), computed props, methods (plain functions), watchers (<code>watch</code>) and lifecycle hooks (<code>onMounted</code> / <code>onUnmounted</code>). Basically everything you normally use in a component.</p>
+      <p>We have two options when it comes to where to keep the code. We can leave it inside the component or extract it into a separate file. Since the Composition API is not officially there yet, there are no best practices or rules on how to deal with it. The way I see it, if the logic is tightly coupled to a specific component (i.e. it won’t be reused anywhere else), and it can’t live without the component itself, I suggest leaving it within the component. On the flip side, if it is general functionality that will likely be reused, I suggest extracting it to a separate file. However, if we want to keep it in a separate file, we need to remember to export the function from the file and import it in our component.</p>
+      <p>This is how our component will look like using newly created composition functions:</p>
+      <pre>&lt;template&gt; <br/>  &lt;div id="app"&gt; <br/><br/>  &lt;/div&gt; <br/>&lt;/template&gt; <br/><br/>&lt;script&gt; <br/>export default { <br/>  name: 'App', <br/><br/>  setup(props, context) { <br/>    useEventBusListener(MY_EVENT, handleMyEvent) <br/>    useActivityTracker() <br/>    useReloadBlocker(context) <br/>    useLocale(context) <br/><br/>    const isAuthenticated = computed(() =&gt; ...) <br/><br/>    watch(() =&gt; { <br/>      if (!isAuthenticated) {...} <br/>    }) <br/><br/>    function handleMyEvent() {...}, <br/><br/>    function useLocale() {...} <br/>    function useActivityTracker() {...} <br/>    function useEventBusListener() {...} <br/>    function useReloadBlocker() {...} <br/>  } <br/>} <br/>&lt;/script&gt;</pre>
+      <p>This gives us a single function for each logical concern. If we want to use any specific concern, we need to call the related composition function in the new <code>setup</code> function.</p>
+      <p>Imagine again that you need to make some change in activity tracking logic. Everything related to that functionality lives in the <code>useActivityTracker</code> function. Now you instantly know where to look and jump to the right place to see all the related pieces of code. Beautiful!</p>
+      <h3>Extracting reusable pieces of code</h3>
+      <p>In our case, the Event Bus listener registration looks like a piece of code we can use in any component that listens to events on Event Bus.</p>
+      <p>As mentioned before, we can keep the logic related to a specific functionality in a separate file. Let’s move our Event Bus listener setup into a separate file.</p>
+      <pre>// composables/useEventBusListener.js <br/>import EventBus from '@/event-bus' <br/><br/>export function useEventBusListener(eventName, handler) { <br/>  onMounted(() =&gt; EventBus.$on(eventName, handler)) <br/>  onUnmounted(() =&gt; EventBus.$off(eventName, handler)) <br/>}</pre>
+      <p>To use it in a component, we need to make sure we export our function (named or default) and import it in a component.</p>
+      <pre>&lt;template&gt; <br/>  &lt;div id="app"&gt; <br/>    ... <br/>  &lt;/div&gt; <br/>&lt;/template&gt; <br/><br/>&lt;script&gt; <br/>import { useEventBusListener } from '@/composables/useEventBusListener' <br/><br/>export default { <br/>  name: 'MyComponent', <br/><br/>  setup(props, context) { <br/>    useEventBusListener(MY_EVENT, myEventHandled) <br/>    useEventBusListener(ANOTHER_EVENT, myAnotherHandled) <br/>  } <br/>} <br/>&lt;/script&gt;</pre>
+      <p>That’s it! We can now use that in any component we need.</p>
+      <h3>Wrapping up</h3>
+      <p>There is an ongoing discussion about the Composition API. This post has no intention to promote any side of the discussion. It is more about showing when it might be useful and in what cases it brings additional value.</p>
+      <p>I think it is always easier to understand the concept on a real life example like above. There are more use cases and, the more you use the new API, the more patterns you will see. This post is merely a few basic patterns to get your started.</p>
+      <p>Let’s go again through the presented use cases and see where the Composition API can be useful:</p>
+      <h4>General features that can live on its own without tight coupling with any specific component</h4>
+      <ul>
+        <li>All logic related to a specific feature in one file</li>
+        <li>Keep it in <code>@/composables/*.js</code> and import it in components</li>
+        <li>Examples: Activity Tracker, Reload Blocker, and Locale</li>
+      </ul>
+      <h4>Reusable features that are used in multiple components</h4>
+      <ul>
+        <li>All logic related to a specific feature in one file</li>
+        <li>Keep it in <code>@/composables/*.js</code> and import in components</li>
+        <li>Examples: Event Bus listener registration, window event registration, common animation logic, common library usage</li>
+      </ul>
+      <h4>Code organization within component</h4>
+      <ul>
+        <li>All logic related to a specific feature in one function</li>
+        <li>Keep the code in a composition function within the component</li>
+        <li>The code related to the same logical concern is in the same place (i.e. there’s no need to jump between data, computed, methods, lifecycle hooks, etc.)</li>
+      </ul>
+      <h3>Remember: This is all a work-in-progress!</h3>
+      <p>The Vue Composition API is currently at work in progress stage and is subject to future changes. Nothing mentioned in the examples above is sure, and both syntax and use cases may change. It is intended to be shipped with Vue version 3.0. In the meantime, you can check out <a href="https://www.npmjs.com/package/vue-use-web">view-use-web</a> for a collection of composition functions that are expected to be included in Vue 3 but can be used with the Composition API in Vue 2.</p>
+      <p>If you want to experiment with the new API you can use the <a href="https://github.com/vuejs/composition-api/">@vue/composition library</a>.</p>
+    </article>
+  </body>
+</html>

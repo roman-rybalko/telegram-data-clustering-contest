@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://venturebeat.com/2019/11/14/ibms-lambada-ai-generates-training-data-for-text-classifiers/"/>
+    <meta property="og:site_name" content="VentureBeat"/>
+    <meta property="article:published_time" content="2019-11-14T21:44:48+00:00"/>
+    <meta property="og:title" content="IBM’s Lambada AI generates training data for text classifiers"/>
+    <meta property="og:description" content="IBM Research's novel Lambada system generates text data on which natural language understanding AI models can be trained with high accuracy."/>
+  </head>
+  <body>
+    <article>
+      <h1>IBM’s Lambada AI generates training data for text classifiers</h1>
+      <address><time datetime="2019-11-14T21:44:48+00:00">14 Nov 2019, 21:44</time> by <a rel="author" href="https://venturebeat.com/author/kylewiggers/" target="_blank">Kyle Wiggers</a></address>
+      <p>What’s a data scientist to do if they lack sufficient data to train a machine learning model? One potential avenue is synthetic data generation, which researchers at IBM Research advocate in a newly published <a href="https://arxiv.org/pdf/1911.03118.pdf">preprint paper</a>. They used a pretrained machine learning model to artificially synthesize new labeled data for text classification tasks. They claim that their method, which they refer to as language-model-based data augmentation (Lambada for short), improves classifiers’ performance on a variety of data sets and <i>significantly </i>improves upon state-of-the-art techniques for data augmentation.</p>
+      <p>“Depending upon the problem at hand, getting a good fit for a classifier model may require abundant labeled data. However, in many cases, and especially when developing <a href="https://venturebeat.com/category/ai/">AI</a> systems for specific applications, labeled data is scarce and costly to obtain,” wrote the paper’s coauthors. “Depending upon the problem at hand, getting a good fit for a classifier model may require abundant labeled data. However, in many cases, and especially when developing AI systems for specific applications, labeled data is scarce and costly to obtain.”</p>
+      <p>Generating synthetic training data tends to be more challenging in the text domain than the visual domain, the researchers note, because the transformations used in simpler methods usually distort the text, making it grammatically and semantically incorrect. That’s why most text data augmentation techniques — including those detailed in the paper — involve replacing a single word with a synonym, deleting a word, or changing the word order.</p>
+      <p>Lambada leverages a generative model (OpenAI’s GPT) that’s pretrained on large bodies of text, enabling it to capture the structure of language such that it produces coherent sentences. The researchers fine-tuned their model on an existing, small data set, and used the fine-tuned model to synthesize new labeled sentences. Independently, they trained a classifier on the aforementioned data set and had it filter the synthesized corpus, retaining only data that appeared to be “qualitative enough” before re-training the classifier on both the existing and synthesized data.</p>
+      <p>To validate their approach, the researchers tested three different classifiers — BERT, a support vector machine, and a long short-term memory network — on three data sets by running experiments in which they varied the training samples per class. The corpora in question contained queries on flight-related information, open-domain and fact-based questions in several categories, and data from telco customer support systems.</p>
+      <p>They report that Lambada statically improved all three classifiers’ performance on small data sets, which they attribute in part to its controls over the number of samples per class. Said controls allowed them to invest more time in generating samples for classes that are under-represented in the original data set, they said.</p>
+      <p>“Our augmentation framework does not require additional unlabeled data … Surprisingly, for most classifiers, LAMBADA achieves better accuracy compared to a simple weak labeling approach,” wrote the coauthors. “Clearly, the generated data set contributes more to improving the accuracy of the classifier than … samples taken from the original data set.”</p>
+    </article>
+  </body>
+</html>

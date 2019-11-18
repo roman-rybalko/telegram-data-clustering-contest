@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://www.iphoneitalia.com/718568/shortcuts-104-iphone-11-foto"/>
+    <meta property="og:site_name" content="iPhone Italia"/>
+    <meta property="article:published_time" content="2019-11-15T21:00:01+00:00"/>
+    <meta property="og:title" content="Shortcuts #104: iPhone 11 Lens Inspector"/>
+    <meta property="og:description" content="Nella puntata numero 104 della nostra rubrica sugli Shortcuts vediamo come poter individuare le foto fatte con i nuovi iPhone 11."/>
+  </head>
+  <body>
+    <article>
+      <h1>Shortcuts #104: iPhone 11 Lens Inspector</h1>
+      <address>
+        <time datetime="2019-11-15T21:00:01+00:00">15 Nov 2019, 21:00</time>
+      </address>
+      <p>Appuntamento numero 104 della nostra rubrica sugli Shortcuts in cui andiamo a giocare un po’ più da vicino con le nuove fotocamere degli ultimi iPhone 11.</p>
+      <p><b>Cosa permette di fare questo Shortcut</b>?<br/>Di avere a disposizione uno strumento tramite il quale potremmo andare ad interrogare sin da subito quale lente è stata utilizzata e sfruttata per realizzare la fotografia che abbiamo preso in esame.</p>
+      <p>Come <b>impostazioni</b> abbiamo adottato:</p>
+      <ul>
+        <li>menù del widget dedicato: <b>abilitato</b>;</li>
+        <li>menù di condivisione di iOS: <b>abilitato</b>;</li>
+        <li>richiamo vocale con Siri: <b>disabilitato</b>.</li>
+      </ul>
+      <h4>Riassunto degli step dello Shortcuts:</h4>
+      <ul>
+        <li><b>Step 1</b>: configurazione ed elaborazione del contenuto.</li>
+      </ul>
+      <figure>
+        <img src="https://static.iphoneitalia.com/wp-content/uploads/2019/11/Shortcuts-104-800x573.png"/>
+      </figure>
+      <h3>Step 1:</h3>
+      <p>Come anticipato in apertura dei nostri step, dovremmo andare ad impostare che si possano andare ad accettare dei file tramite la configurazione iniziale del nostro Comando. Per farlo non dovremo fare altro che abilitare e fargli accettare le immagini come elementi condivisi. Mi raccomando andate a limitare e circoscrivere a questo genere di file per evitare delle incongruenza con il processo che andremo a realizzare successivamente.</p>
+      <p>Fatto questo iniziamo per davvero ed andiamo a prendere la voce <b>Ottieni</b> all’interno della sezione <i>Programmazione</i> fra quelle a noi disponibili. Fatto questo andiamo ad inserire al suo interno <i>Valore</i> come prima opzione di analisi da interrogare. Successivamente impostiamo, dopo la parola <i>Per</i> il contenuto <i>‌{Exif}.LensModel</i> e come riferimento mettiamo sempre il nostro <i>Input comando rapido</i>. In questo modo cosa avremmo fatto? Semplicemente saremmo andati ad interrogare quello che è il valore EXIF della nostra fotografia su cui poi potremmo operare in sequenza per poter ottenere i dati da noi desiderati.</p>
+      <p>Perfetto ora non possiamo che proseguire e per farlo non dvoremo fare altro che prendere la voce <b>Se</b> che troveremo ancora una volta all’interno della sezione <i>Programmazione</i> fra quelle a noi disponibili. Impostiamo <i>Valore dizionario</i> come elemento di analisi ed è poi molto importante che si vada a selezionare che al suo interno non sia presente nulla. Per cui mettiamo come valore <i>non contiene nessun valore</i>. Se questa opzione verrà confermata allora il nostro processo proseguirà e quindi dovremmo avere a disposizione un <b>Mostra avviso</b> in cui andare ad inserire il testo <i>‌Questa foto non contiene dei metadata EXIF. Riprova con un’altra foto.</i> Spostiamoci poi subito sotto alla voce <b>Altrimenti</b> e prendiamo la voce <b>Testo</b>. Al suo interno dovremmo andare ad inserire la variabile <i>Valore dizionario</i> che potremmo ottenere dal basso o dalla nostra <i>bacchetta magica</i>.</p>
+      <p>Subito dopo dovremmo aprire un secondo ciclo if, per cui prendiamo ancora una volta la voce <b>Se</b> questa volta andando ad impostare come variabile interna quella <i>Testo</i> ed impostiamo come elemento di controllo la variabile <i>come</i> ed infine mettiamo il testo <i>1.54mm f/2.4</i>. Farà il check in questo caso con la focale ed i dettagli tipici della seconda lente degli iPhone 11. Se andrà a buon fine, allora potremmo prendere la voce <b>Mostra</b> nella sezione <i>Programmazione</i> ed andiamo ad inserire il testo da noi scelto come <i>Questa foto è stata scattata con la lente ultra-wide.</i></p>
+      <p>Spostiamoci sotto la voce <b>Altrimenti</b> per proseguire ma anche per continuare ad aprire anche un altro ciclo if, ancora. Prendiamo quindi questa voce, <b>Se</b>, mettendo al suo interno ancora una volta la variabile <i>Testo</i>, utilizziamo sempre <i>Contiene</i> e questa volta inseriamo come elemento di analisi finale il testo <i>6mm f/2</i>. Per dare conferma, nel caso il nostro processo sia stato completato, prendiamo ancora una volta la voce <b>Mostra</b> nella sezione <i>Programmazione</i> ed andiamo ad inserire un testo a nostra scelta come ad esempio <i>Questa foto è stata scattata con la lente tele.</i></p>
+      <p>Se tutto è andato a buon fine, dovremmo avere qui la nostra ultima voce <b>Altrimenti</b> che chiude tutte quante le voci che abbiamo aperto fino ad ora. Se i conti poi non ci ingannano, dovremmo avere ben quattro voci <b>Fine del blocco “se”</b> che saranno messe tutte in sequenza l’una all’altra.</p>
+      <p>A questo punto il nostro <b>Shortcuts è già bello che completo</b>. Se avete dubbi con la fotografia scattata, potrete tranquillamente convalidare il tutto con questo semplice comando. Certo è uno di quegli Shortcuts che non userete tutti i giorni ma che potrà rimanere tranquillamente lì nella vostra libreria senza troppi problemi e, nel caso, tornare poi utile.</p>
+      <p>Per scaricare lo Shortcut mostrato in questo articolo potete farlo direttamente da questo <a href="https://www.icloud.com/shortcuts/6146c6cfc57f402d8a6777fa28472612">link</a> così da avere questo Shortcut già pronto e disponibile nella vostra libreria.</p>
+      <p>In questo caso non c’è alcuna <b>automazione</b> da attivare per cui non è necessario proseguire oltre nei vari menù.</p>
+      <p>Nel caso abbiate problemi per <b>l’installazione dello Shortcuts</b>, seguite questi passaggi:</p>
+      <ul>
+        <li>Aprite l’applicazione Impostazioni;</li>
+        <li>Spostiamoci nel quinto blocco dove troveremo Comandi rapidi;</li>
+        <li>Ora abilitiamo la voce Consenti comandi rapidi non attendibili presente nella sezione Sicurezza e condivisione.</li>
+      </ul>
+      <p>Il comando è stato creato da <a href="https://www.iphoneitalia.com/718568/macstories.net">MacStories.net</a> a cui vanno tutti i crediti del caso. Noi di iPhone Italia ci siamo occupati della spiegazione nel caso specifico e di riportare a voi utenti questa guida di installazione. Inoltre abbiamo tradotto il messaggio finale che prima era in inglese.</p>
+      <p>Clicca <a href="https://www.iphoneitalia.com/680738/come-utilizzare-shortcuts-apple-comandi">qui per la guida completa a Siri Shortcuts.</a></p>
+      <p>Clicca <a href="https://www.iphoneitalia.com/migliori-shortcuts-scorciatoie-siri">qui per la raccolta completa a tutti i nostri Siri Shortcuts.</a></p>
+      <p>
+        <b>
+          <i>Hai degli Shortcuts da suggerirci per le prossime puntate? Ne hai creati di nuovi e vuoi far parte di questa rubrica? Invia una e-mail a <a href="https://www.iphoneitalia.com/718568/shortcuts@spinblog.it">shortcuts@spinblog.it</a> e partecipa alla community Shortcuts di iPhoneItalia!</i>
+        </b>
+      </p>
+      <p>
+        <a href="https://www.iphoneitalia.com/category/siri-shortcuts">Siri Shortcuts</a>
+      </p>
+      <ul>
+        <li/>
+        <li/>
+        <li/>
+        <li/>
+      </ul>
+      <p>0</p>
+    </article>
+  </body>
+</html>

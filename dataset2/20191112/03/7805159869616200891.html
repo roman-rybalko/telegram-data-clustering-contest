@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://www.xda-developers.com/digital-wellbeing-tests-auto-enabling-wind-down-plug-in-charge-night/"/>
+    <meta property="og:site_name" content="XDA Developers"/>
+    <meta property="article:published_time" content="2019-11-12T03:02:00+00:00"/>
+    <meta property="og:title" content="Digital Wellbeing tests auto-enabling Wind Down when you plug-in at night"/>
+    <meta property="og:description" content="Digital Wellbeing is testing an addition to scheduling options for the Wind Down feature, allowing users to set it to auto-enable at night while charging."/>
+  </head>
+  <body>
+    <article>
+      <h1>Digital Wellbeing tests auto-enabling Wind Down when you plug-in at night</h1>
+      <address><time datetime="2019-11-12T03:02:00+00:00">12 Nov 2019, 03:02</time> by <a rel="author" href="https://www.xda-developers.com/author/aamirsiddiqui/" target="_blank">Aamir Siddiqui</a></address>
+      <p>This year, we have seen phone companies refocus their efforts on ensuring that users do not spend too much time on their smartphones. Google <a href="https://www.xda-developers.com/digital-wellbeing-google-pixel-xl-google-pixel-2-xl/">introduced Digital Wellbeing as a Pixel-exclusive</a> and then <a href="https://www.xda-developers.com/google-digital-wellbeing-parental-controls-required-android/">made it a requirement</a> for all Android devices, prompting OEMs to include it in their ROMs. <a href="https://www.xda-developers.com/tag/digitalwellbeing/">Digital Wellbeing</a> essentially informs the user just how much they use their smartphone, and provide tools that can help them scale it down through timers, and get less distracted by the phone towards the end of the day through the Wind Down function. Now, Google is exploring the possibility of automatically enabling Wind Down function when a phone is plugged in to charge at night.</p>
+      <p>
+        <i>
+          <b>An APK teardown can often predict features that may arrive in a future update of an application, but it is possible that any of the features we mention here may not make it in a future release. This is because these features are currently unimplemented in the live build and may be pulled at any time by the developers in a future build.</b>
+        </i>
+      </p>
+      <p>The <a href="https://www.xda-developers.com/digital-wellbeing-wind-down-days-of-the-week/">Wind Down feature</a> within Digital Wellbeing can be set to turn your display grayscale and enable Do Not Disturb mode. These can be set to be enabled automatically either on a set schedule, or follow the Night Light schedule (sunset to sunrise). Digital Wellbeing v1.0.279068912.beta contains strings that indicate that an additional scheduling option will be added to the app.</p>
+      <p>
+        <code>&lt;string name="power_state_item_description"&gt;If you plug-in your phone between 9pm - 8am, your phone will start Wind Down. It will end whenever you unplug.&lt;/string&gt; &lt;string name="power_state_item_label"&gt;Plug-in to unplug&lt;/string&gt;PASTE YOUR CODE HERE</code>
+      </p>
+      <p>Thus, Wind Down will be enabled when you plug in your phone at night and end whenever you unplug. This will be particularly handy for those who like to use their phone in bed while it is charging by their bedside, as that is the perfect time when Wind Down should commence in order to serve its purpose of weaning you off your phone. And if you do need the full functionality of your phone, you can simply unplug it and not have to worry about changing any setting or flipping any toggle.</p>
+      <p>We managed to surface the setting in the Beta to get you a screenshot:</p>
+      <figure>
+        <img src="https://www.xda-developers.com/files/2019/11/Digital_Wellbeing_Plug-in_to_unplug.jpg"/>
+      </figure>
+      <p>We expect the feature to be rolled out to the stable release channel soon.</p>
+      <hr/>
+      <p>
+        <i>Thanks to PNF Software for providing us a license to use <a href="https://www.pnfsoftware.com/?aid=xdadev">JEB Decompiler</a>, a professional-grade reverse engineering tool for Android applications.</i>
+      </p>
+    </article>
+  </body>
+</html>

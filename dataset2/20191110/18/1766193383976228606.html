@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://www.heise.de/developer/meldung/Programmiersprache-Go-feiert-zehnten-Geburtstag-4583503.html"/>
+    <meta property="og:site_name" content="Developer"/>
+    <meta property="article:published_time" content="2019-11-10T18:12:00+00:00"/>
+    <meta property="og:title" content="Programmiersprache: Go feiert zehnten Geburtstag"/>
+    <meta property="og:description" content="Was vor zehn Jahren die Bühne betrat, ist heute eine der erfolgreichsten jüngeren Programmiersprachen – insbesondere in der Cloud-Community."/>
+  </head>
+  <body>
+    <article>
+      <h1>Programmiersprache: Go feiert zehnten Geburtstag</h1>
+      <h2>Was vor zehn Jahren die Bühne betrat, ist heute eine der erfolgreichsten jüngeren Programmiersprachen – insbesondere in der Cloud-Community.</h2>
+      <address><time datetime="2019-11-10T18:12:00+00:00">10 Nov 2019, 18:12</time> by <a rel="author">Frank Müller</a></address>
+      <p>Es ist nun 10 Jahre her, dass ein Google-Team rund um Robert Griesemer, Rob Pike und Ken Thompson die Programmiersprache Go vorstellte. Zwei Jahre hatten sie bis dahin investiert, um eine schnelle, einfache und zeitgemäße Sprache für vernetzte Systeme zu entwickeln. Der Erfolg war unklar.</p>
+      <p><a href="https://www.heise.de/meldung/TIOBE-Sprach-Index-Googles-Go-mit-dem-groessten-Zuwachs-900556.html">Doch schon Anfang 2010 kürte der TIOBE-Programmiersprachenindex Go zur Sprache des Jahres 2009</a>, so groß war das Interesse. Dabei gab es noch viele Einschränkungen. Die Sprache sah bereits ähnlich wie heute aus, nutzte allerdings noch vermehrt Semikola. Und das praktische <code>go</code>-Kommando gab es noch nicht, dafür in Abhängigkeit von der Architektur Compiler und Linker in der Form <code>6g</code> und <code>6l</code>. Sie waren manuell oder in Makefiles anzuwenden. Ein lockeres <code>go build</code> so wie heute funktionierte noch nicht. Dazu wurden auch nur Linux und macOS als Betriebssysteme sowie x86-Architekturen mit 32 und 64 Bit sowie ARM mit 32 Bit bedient. Immerhin funktionierte schon das Cross Compiling, um zum Beispiel auf dem Mac zu entwickeln und ein Binary für den Linux-Server zu erzeugen.</p>
+      <p>In Sachen Geschwindigkeit erreicht Go bereits von Anfang an ein hohes Niveau, speziell bei der Kompilierung. 10 Sekunden für 584 Dateien mit einem Binary als Ergebnis waren ein ganz neues Gefühl. So werden Programme ohne Abhängigkeiten von externen Bibliotheken erzeugt, ein praktisches Feature für das Deployment auf Server. Und auch die Ausführungsgeschwindigkeit war von Beginn an fast so gut wie die von C, wurde in den ersten Tagen allerdings immer wieder von der Garbage Collection ausgebremst.</p>
+      <h3>Doch was war an der Sprache besonders?</h3>
+      <p>Eigentlich nichts – was daher bei so manchem auch zu einer strikten Ablehnung geführt hat. Der Fokus der Entwickler lag auf Einfachheit und Pragmatismus. Go war im Kern imperativ, ihre Objektorientierung kannte zwar Methoden und Interfaces, verzichtete jedoch auf Vererbung. Die Sprache verfügte über Funktionstypen, anonyme Funktionen und Closures, reichte aber nicht an vollwertige funktionale Sprachen heran. Dazu kam noch der Verzicht auf Threads, für die Go allerdings eine "leichtgewichtige" Nebenläufigkeit mit Goroutinen und Channels einführte.</p>
+      <p>Für die Nähe zu dynamischen Sprachen kam neben der oben genannten Garbage Collection eine gleichzeitige Deklaration und Zuweisung von Variablen via <code>:=</code>. Hiermit waren Ausdrücke wie <code>n, err := myFile.Write(myBytes)</code> möglich. <code>n</code> als Anzahl der geschriebenen Bytes und <code>err</code> als potentieller Fehler waren nicht zuvor via <code>var</code> zu deklarieren, auch wenn das ebenfalls erlaubt war.</p>
+      <p>Interfaces generell waren seinerzeit nichts Unbekanntes, jedoch oft so, dass implementierende Typen dies bekannt geben mussten. So entstehen Abhängigkeiten zum definierenden Package. Go verfolgte stattdessen von Beginn an eher das Duck Typing. Ein Interface wird durch den Nutzer definiert und reduziert sich auf so wenige Methoden wie möglich. Implementierende Typen müssen ihre Interfaces nicht angeben. Diese Art der Nutzung von Interfaces lässt bis heute die fehlende Vererbung nicht vermissen. Ein Beispiel ist das Interface<code> fmt.Stringer</code> für alle Typen mit der Methode <code>String() string</code>. Die Funktionen des Packages nutzen diese Methode für die Repräsentation der jeweiligen Instanz als Zeichenkette.</p>
+      <p>Zudem gab es auch von Anfang an übergreifende Konzepte, die sich durch das ganze System zogen. So verfügte das Package <code>io</code> unter anderem über die Interfaces <code>Reader</code> und <code>Writer</code>. Sie definieren nur jeweils eine Methode zum Schreiben oder Lesen von Bytes. Doch sie werden in vielen Packages genutzt und ziehen sich durch das System. So für die Dateien oder Puffer, für das Networking und die Kryptographie, für das Encoding und die Compression, sie spielen zusammen. Ein schönes Beispiel für das Zusammenspiel von Funktionstypen und Interfaces ist auch das Package <code>http</code>. Es verfügt über das Interface <code>Handler</code>, das der <code>Server</code> nutzt. Es definiert einzig die Methode <code>ServeHTTP()</code>. Der Server ist also mit allem zufrieden, was diese Methode implementiert, etwa den Funktionstyp <code>HandlerFunc</code>. Dessen <code>ServeHTTP()</code> ruft einfach nur die Funktion selbst auf, diese ist also auch automatisch ein Handler.</p>
+      <h3>Bei Nebenläufigkeit weit vorne</h3>
+      <p>Die oben genannte Nebenläufigkeit war bis dato auch nur in wenigen Sprachen vorhanden. Erlang/OTP kannte sie schon, wenn auch in der Form des Versands von Nachrichten an leichtgewichtige Prozesse, die durch die Laufzeitumgebung auf Threads verteilt werden. <a href="https://blog.golang.org/share-memory-by-communicating">Go führte hingegen Goroutinen und die Kommunikation via Channels ein</a>, basierend auf den Arbeiten von Tony Hoare zu Communicating Sequential Processes. Sie verfolgte ähnlich zu Erlang/OTP die Idee, dass leichtgewichtige Prozesse Zustände durch sequenzielle Verarbeitung konsistent verwalten. Sie wurden in Go durch über Kanäle zugesandte Signale und Daten verändert und ebenso Informationen an den Sender zurückgegeben. Damit erhielt auch diese Sprache die Möglichkeit, Tausende nebenläufiger Prozesse arbeiten zu lassen, ohne sich um Semaphoren beziehungsweise Mutexe zu kümmern.</p>
+      <h3>Heute und morgen</h3>
+      <p>Heute, 10 Jahre später, hat sich am Umfang der Sprache nicht viel geändert. Sie trägt die Version 1.13, und das Versprechen der Entwickler lautet Syntaxkompatabilität bei gleicher Hauptversionsnummer. Dafür wurde die Standardbibliothek erweitert und verbessert, die Laufzeitumgebung wurde schneller und bedient nun zwölf Betriebssysteme sowie zehn Rechnerarchitekturen. Und auch die Speicherverwaltung ist inzwischen auf dem aktuellen Stand der Technik.</p>
+      <p>Daneben hat sich auch das Tooling weiter entwickelt. Dreh- und Angelpunkt ist das Kommando <code>go</code> mit seinen Unterkommandos für die Formatierung der Quellen, dem Umgang mit Modulen, Builds, temporäre Läufe, Installationen, Tests, Benchmarks und einigem anderen mehr. Die besagten Module greifen allerdings gerade erst in der Welt der Go-Projekte um sich. Sie enthalten im Umgang mit Hauptversionen einige Regeln, die in der Community noch diskutiert werden.</p>
+      <p>Während aktuell an der Go 1.14 gearbeitet wird, etwa alle sechs Monate erscheint eine neue Unterversion, wird auch bereits rund um die zukünftige Hauptversion 2 diskutiert. Neben kleineren Punkten sind es speziell zwei Themen, die der Community wichtig sind. Ersteres ist die Einführung von Generics für flexiblere Datenstrukturen, das zweite soll das Error Handling in Funktionen und Methoden erleichtern. Beides sind schöne Erweiterungen, deren Code sich jedoch dann nicht mehr in 1.x-Projekten einsetzen lässt.</p>
+      <h3>Im Einsatz</h3>
+      <p>Wie bei vielen jungen Sprachen war 2009 noch nicht klar, wie und wo sich Go etablieren würde. Doch heute ist der Markt recht klar. <a href="https://research.swtch.com/gophercount">Die Community wird aktuell auf etwas unter zwei Millionen Entwickler weltweit geschätzt</a>, die Tendenz ist kontinuierlich steigend. In den Rankings bewegt sich Go weit hinter JavaScript, Python und Java, was jedoch dem Einsatzgebiet geschuldet ist. Es lassen sich zwar auch sehr gut kommerzielle Systeme als Microservices entwickeln, doch hier hat sich die Sprache nie durchgesetzt.</p>
+      <p>Das Ziel der Autoren der Sprache waren skalierende, vernetzte Systeme – heute auch gerne kurz und knapp als Cloud-native bezeichnet. Und hier fühlt sich Go wohl, es findet sich in vielen Systemen für den Aufbau und die Verwaltung von Cloud-Umgebungen wieder. Hier sind Docker und Kubernetes die bekanntesten Vertreter, aber auch Etcd, Prometheus, Terraform, Istio, CoreDNS, containerd und Juju.</p>
+      <p>Wer in dieser Systemwelt tätig ist, kann den Erfolg von Go hierin nachvollziehen. Der pragmatische Ansatz, die geradlinige Sprache, die schnellen Turnaround-Zeiten von der Quelle über das Compiling bis zu den Tests, der sehr gute Support von Netzwerken und Kryptographie sowie letztlich die elastische Skalierbarkeit bis zu einer hohen Anzahl von Kernen auf einem System machen Spaß.</p>
+      <p>Hiervon könnten, wie gesagt, auch kommerzielle Systeme profitieren. Wünschen wir Go also alles Gute zum runden Geburtstag und eine erfolgreiche Zukunft auch über die Welt der Cloud-native-Anwendungen hinaus. Happy Birthday, kleiner Gopher (= das Maskottechen der Programmiersprache).</p>
+      <p>
+        <i>Siehe dazu auf iX ud heise Developer:</i>
+      </p>
+      <ul>
+        <li>
+          <a href="https://www.heise.de/developer/artikel/Ein-Einstieg-in-die-Programmiersprache-Go-Teil-1-4282998.html">Ein Einstieg in die Programmiersprache Go, Teil 1</a>
+        </li>
+        <li>
+          <a href="https://www.heise.de/developer/artikel/Ein-Einstieg-in-die-Programmiersprache-Go-Teil-2-4317947.html">Ein Einstieg in die Programmiersprache Go, Teil 2</a>
+        </li>
+        <li>
+          <a href="https://www.heise.de/select/ix/2019/10/1910615271815409132">Go-Anwendungen um eine RESTful API erweitern</a>
+        </li>
+        <li>
+          <a href="https://www.heise.de/developer/artikel/MapReduce-in-Googles-Go-1201324.html">MapReduce in Googles Go</a>
+        </li>
+        <li>
+          <a href="https://www.heise.de/meldung/Go-Googles-Programmiersprache-fuer-Abenteuerlustige-855912.html">Go: Googles Programmiersprache für Abenteuerlustige</a>
+        </li>
+      </ul>
+      <p>(<i>Frank Müller</i>) / (<a href="mailto:ane@heise.de">ane</a>)</p>
+    </article>
+  </body>
+</html>

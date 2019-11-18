@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://hackaday.com/2019/11/14/audio-processing-in-rust/"/>
+    <meta property="og:site_name" content="Hackaday"/>
+    <meta property="article:published_time" content="2019-11-14T00:00:00+00:00"/>
+    <meta property="og:title" content="Audio Processing In Rust"/>
+    <meta property="og:description" content="[Michael] volunteers with emergency services, and sometimes has to monitor radio traffic. Sometimes there’s a lot to review, and to make it easier he wrote a noise gate — think of it as…"/>
+  </head>
+  <body>
+    <article>
+      <h1>Audio Processing In Rust</h1>
+      <address><time datetime="2019-11-14T00:00:00+00:00">14 Nov 2019</time> by <a rel="author" href="https://hackaday.com/author/wd5gnr1/" target="_blank">Al Williams</a></address>
+      <p>[Michael] volunteers with emergency services, and sometimes has to monitor radio traffic. Sometimes there’s a lot to review, and to make it easier he wrote <a href="http://adventures.michaelfbryan.com/posts/audio-processing-for-dummies/">a noise gate</a> — think of it as a squelch — to break apart recorded audio into parts. Rust has been gaining popularity for writing low level software, and that’s the language he uses. However, you’ll see even if you don’t know Rust, it is pretty easy to figure out.</p>
+      <p>For test data, [Michael] took some publicly-available recordings of air traffic control. Using some ready-made audio processing functions and a simple state machine makes the code easy to write.</p>
+      <p>The code allows you to set a threshold the signal has to exceed to start a new grouping. It also lets you set a decay time. If the signal goes below the threshold for that amount of time, it will cause the gate to close and close the current recording.</p>
+      <p>Typical noise gates also have an attack time to reject larger spikes from getting through the gate, however, this code appears to react immediately to a signal above the threshold.</p>
+      <p>The main function reads the input file and applies the algorithm. When the state machine triggers, it copies audio data to the sink which writes it out. It is that simple.</p>
+      <p>We see Rush more and more in <a href="https://hackaday.com/2019/10/21/a-diy-computer-programmed-in-pure-rust/">small systems</a>. If you want to read more about that trend, we’ve talked about it at length.</p>
+    </article>
+  </body>
+</html>

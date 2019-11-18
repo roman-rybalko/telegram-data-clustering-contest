@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://www.bleepingcomputer.com/news/software/google-fixes-white-screen-problem-in-chrome-admins-furious/"/>
+    <meta property="og:site_name" content="BleepingComputer"/>
+    <meta property="article:published_time" content="2019-11-15T14:10:59+00:00"/>
+    <meta property="og:title" content="Google Fixes White Screen Problem in Chrome, Admins Furious"/>
+    <meta property="og:description" content="Google has rolled back an experimental WebContent Occlusion feature that caused major disruption for enterprise users using Chrome in a multi-user terminal server environment. While the issue is now fixed, enterprise admins are furious that this feature was enabled in the first place without their knowledge or permission."/>
+  </head>
+  <body>
+    <article>
+      <h1>Google Fixes White Screen Problem in Chrome, Admins Furious</h1>
+      <address><time datetime="2019-11-15T14:10:59+00:00">15 Nov 2019, 14:10</time> by <a rel="author" href="https://www.bleepingcomputer.com/author/lawrence-abrams/" target="_blank">Lawrence Abrams</a></address>
+      <figure>
+        <img src="https://www.bleepstatic.com/content/hl-images/2019/03/14/header-image.jpg"/>
+      </figure>
+      <p>Google has rolled back an experimental WebContent Occlusion feature that caused major disruption for enterprise users using Chrome in a multi-user terminal server environment. While the issue is now fixed, enterprise admins are furious that this feature was enabled in the first place without their knowledge or permission.</p>
+      <p>For approximately 5 months, Google has been experimenting with a feature called WebContent Occlusion that hides the content of not-visible tabs so that they use less resources and cause less battery drain. </p>
+      <p>A Chrome developer <a href="https://bugs.chromium.org/p/chromium/issues/detail?id=1024837#c22">stated</a> that this feature caused no problems in their period of testing and on Tuesday morning Google quietly enabled it for users in Chrome 78 Stable release.</p>
+      <p>"The experiment/flag has been on in beta for ~5 months. It was turned on for stable (e.g., m77, m78) via an experiment that was pushed to released Chrome Tuesday morning. Prior to that, it had been on for about 1% of M77 and M78 users for a month with no reports of issues, unfortunately. - chrome://flags shows you experiments."</p>
+      <p>Once the feature was enabled, all hell broke loose for enterprise users in terminal server environments such as Citrix and Windows Terminal Server when they discovered that Chrome became unusable.</p>
+      <h3>Chrome meltdown on terminal servers</h3>
+      <p>When <a href="http://docs.google.com/document/d/1tPuJE0Vws7oskjjqrawNfMkwFtGxyHV33yQagiplVfY/edit#heading=h.w5782xqp7ab4">WebContent Occlusion</a> is enabled, Chrome will detect when a tab is not being used and make its content hidden to reduce resources and cause less battery drain.</p>
+      <p>While this feature was being tested on Chrome Beta users for some time, it was not properly tested in enterprise terminal server environments.</p>
+      <p>This became evident in Citrix or Terminal Server environments when a user locked their screen, every other user on that server would have their Chrome tabs suddenly become a white screen.</p>
+      <figure>
+        <img src="https://www.bleepstatic.com/images/news/web-browsers/chrome/web-occlusion-issue/chrome-screen-white-s.jpg"/>
+        <figcaption>Chrome White Screen Issue (Source: Cody)</figcaption>
+      </figure>
+      <p>This happened because web occlusion was enabled in the browser for the locked screen and hid their browser content. At the same time, it also caused the content in tabs for every other user on the same terminal server to become hidden as well.</p>
+      <p>The only way to fix this was to unlock the screen, but this issue was constantly repeated as other users on the Terminal Server would once again lock their screen as they left their desk.</p>
+      <p>As you can imagine this was a nightmare for large organizations with large terminal server environments.</p>
+      <p>An admin named Cody who works for a company with 800 employees shared the issue with BleepingComputer last night and told us it came out of nowhere and that they had no idea what was going on at first.</p>
+      <p>"It was seemingly random until we noticed a pattern. If another user on the same server locked their workstation, (Win Key + L) other users on the same server would have all the content in their Chrome tabs turn white. Chrome was completely responsive during this time, just the content area of Chrome was blank. Re-launching Chrome would temporarily resolve the issue, until another user locked their workstation."</p>
+      <p>This could not have come at a worse time as companies gear up for the holiday season. For example, a Costco employee posted in the <a href="https://bugs.chromium.org/p/chromium/issues/detail?id=1024837#c26">Chrome bug report</a> and stated that 1,300 call centers were impacted by this problem.</p>
+      <p>"We have over 1300 Call Center agents ramping up for the holiday season that were affected."</p>
+      <p>After hundreds of reports from enterprise users who were affected by this, Chrome developer David Bienvenu stated he rolled back the change and disabled the feature.</p>
+      <figure>
+        <img src="https://www.bleepstatic.com/images/news/web-browsers/chrome/web-occlusion-issue/chrome-dev-comment.jpg"/>
+      </figure>
+      <p>For the rollback to take effect, users are required to restart the Chrome browser in order to pull down the new configuration.</p>
+      <h3>Enterprise admins are furious</h3>
+      <p>Enterprise admins are furious that Google has the ability to quietly enable features in their environment without even a heads up and provide no way for admins to block these changes.</p>
+      <p>System admins try to run a tight ship where any changes are carefully thought out and tested before going live. For a company to be able to reach into their organization and make undetectable changes without their permission or knowledge is extremely frustrating to administrators.</p>
+      <p>This is even more frustrating for companies who have invested in change control and monitoring software, which as Cody explained, did not detect these changes.</p>
+      <p>"Even in environments that have change controls and change monitoring software, Google was able to silently make changes to "stable" versions (Chrome 77 and 78 were the versions affected) of Chrome without anyone ever knowing."</p>
+      <p>In the Chrome bug ticket about this issue, this frustration was clearly evident by many of the admins who stated that Google needs to add a new policy that could be enabled to block these silent feature changes.</p>
+      <p>Bienvenu did not think it is currently possible, but said it will most likely be discussed.</p>
+      <p>"I hear you loud and clear bout being able to opt out of these experiments. I don't know if it's currently possible, but if not, I'm sure it will be discussed."</p>
+      <h3>How to disable the WebContent Occlusion feature</h3>
+      <p>As Google has already pushed the change to disable WebContent Occlusion, most users should no longer be affected by this bug. If they are, all users of a terminal server should close Chrome and restarted it.</p>
+      <p>Once restarted, Chrome should pull down the new changes and have WebContent Occlusion disabled.</p>
+      <p>If you are still affected, though, you can manually disable this feature by going into chrome://flags and setting the <b>#web-contents-occlusion</b> and <b>#calculate-native-win-occlusion</b> flags to disabled.</p>
+      <figure>
+        <img src="https://www.bleepstatic.com/images/news/web-browsers/chrome/web-occlusion-issue/chrome-occlusion-flags.jpg"/>
+      </figure>
+      <p>Users can also fix this issue by running the Chrome process with the <code>--disable-backgrounding-occluded-windows</code> argument.</p>
+    </article>
+  </body>
+</html>

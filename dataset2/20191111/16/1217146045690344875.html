@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://www.bleepingcomputer.com/news/security/sodinokibi-ransomware-targeting-asia-via-the-rig-exploit-kit/"/>
+    <meta property="og:site_name" content="BleepingComputer"/>
+    <meta property="article:published_time" content="2019-11-11T16:56:14+00:00"/>
+    <meta property="og:title" content="Sodinokibi Ransomware Targeting Asia via the RIG Exploit Kit"/>
+    <meta property="og:description" content="A new malvertising campaign being used on low quality web games and blogs is redirecting Asian victims to the RIG exploit kit, which is then quietly installing the Sodinokibi Ransomware."/>
+  </head>
+  <body>
+    <article>
+      <h1>Sodinokibi Ransomware Targeting Asia via the RIG Exploit Kit</h1>
+      <address><time datetime="2019-11-11T16:56:14+00:00">11 Nov 2019, 16:56</time> by <a rel="author" href="https://www.bleepingcomputer.com/author/lawrence-abrams/" target="_blank">Lawrence Abrams</a></address>
+      <figure>
+        <img src="https://www.bleepstatic.com/content/hl-images/2019/08/30/Sodinokibi.jpg"/>
+      </figure>
+      <p>A new malvertising campaign being used on low quality web games and blogs is redirecting Asian victims to the RIG exploit kit, which is then quietly installing the Sodinokibi Ransomware.</p>
+      <p>First spotted by exploit kit researcher <a href="https://twitter.com/tkanalyst">mol69</a>, this new malvertising campaign is targeting Internet Explorer users from Vietnam, Korea, Malaysia and possibly other Asian countries.</p>
+      <p>When browsing the web, the malvertising campaign will redirect users to a RIG exploit kit gateway that will attempt to exploit Flash vulnerabilities in the browser. If successful, a user will see Internet Explorer begin to crash and various alerts from the Windows Script Host as shown below.</p>
+      <figure>
+        <img src="https://www.bleepstatic.com/images/news/ransomware/s/Sodinokibi/rig-asia/internet-explorer-rig-ek.jpg"/>
+        <figcaption>RIG Exploit kit in Internet Explorer</figcaption>
+      </figure>
+      <p>This is because the exploit kit will execute a JScript command that downloads an obfuscated VBScript script.</p>
+      <figure>
+        <img src="https://www.bleepstatic.com/images/news/ransomware/s/Sodinokibi/rig-asia/wscript-command.jpg"/>
+        <figcaption>Exploit executing wscript</figcaption>
+      </figure>
+      <p>This VBScript will then download and install the Sodinokibi Ransomware, also known as REvil, on the victim's computer. Once executed, the ransomware will begin to encrypt the victim's files.</p>
+      <figure>
+        <img src="https://www.bleepstatic.com/images/news/ransomware/s/Sodinokibi/rig-asia/portion-of-vbscript.jpg"/>
+        <figcaption>Portion of script that installs Sodinokibi</figcaption>
+      </figure>
+      <p>As the exploit kit will install the ransomware without the user's knowledge, other than the suspicious Internet Explorer crash, most users will not know they are infected until the ransomware has finished.</p>
+      <p>They will then notice that they are unable to access their documents and that their desktop wallpaper has been changed to instructions telling the victim to open the ransom note.</p>
+      <figure>
+        <img src="https://www.bleepstatic.com/images/news/ransomware/s/Sodinokibi/rig-asia/revil-ransom-note.jpg"/>
+        <figcaption>REvil/Sodinokibi  Ransom Note</figcaption>
+      </figure>
+      <p>Unfortunately, there is no free method of decrypting the Sodinokibi/REvil Ransomware at this time. Users are advised to restore from backups if at all possible rather than paying the ransom.</p>
+      <p>As always, to protect yourself from exploit kits, users should always have the latest Windows updates installed, their programs update, and to upgrade any web applications that require Internet Explorer as the RIG exploit kit only targets this outdated browser.</p>
+    </article>
+  </body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://www.heise.de/security/meldung/Sicherheitsupdates-VMware-sichert-ESXi-Fusion-und-Workstation-ab-4585874.html"/>
+    <meta property="og:site_name" content="Security"/>
+    <meta property="article:published_time" content="2019-11-14T14:04:00+00:00"/>
+    <meta property="og:title" content="Sicherheitsupdates: VMware sichert ESXi, Fusion und Workstation ab"/>
+    <meta property="og:description" content="Angreifer könnten mit VMware-Anwendungen betriebene virtuelle Maschinen attackieren. Abgesicherte Versionen stehen zum Download bereit."/>
+  </head>
+  <body>
+    <article>
+      <h1>Sicherheitsupdates: VMware sichert ESXi, Fusion und Workstation ab</h1>
+      <h2>Angreifer könnten mit VMware-Anwendungen betriebene virtuelle Maschinen attackieren. Abgesicherte Versionen stehen zum Download bereit.</h2>
+      <address><time datetime="2019-11-14T14:04:00+00:00">14 Nov 2019, 14:04</time> by <a rel="author">Dennis Schirrmacher</a></address>
+      <p>Die VMware-Anwendungen ESXi, Fusion und Workstation sind verwundbar. Angreifer könnten verschiedene Sicherheitslücken ausnutzen, um beispielsweise aus virtuellen Maschinen auszubrechen und Schadcode auszuführen.</p>
+      <p>Für die gefährlichste Schwachstelle (CVE-2019-5541) in Fusion (macOS) und Workstation (alle Systeme) gilt das Angriffsrisiko als "<b>hoch</b>". Nutzt ein Angreifer die Lücke erfolgreich aus, könnte er virtuelle Maschinen zum Absturz bringen oder sogar Schadcode ins Host-System bringen und ausführen. Davon sind die Versionsstränge 15.x von Workstation und 11.x von Fusion betroffen. Abgesichert sind die Ausgaben <b>15.5.1 und 11.5.1</b>.</p>
+      <p><a href="https://www.vmware.com/security/advisories/VMSA-2019-0021.html">Aus einer Warnmeldung von VMware geht hervor, dass die Entwickler in diesen Versionen noch zwei weitere Schwachstellen (CVE-2019-5540, CVE-2019-5542) geschlossen haben</a>. Setzten Angreifer an diesen an, könnten sie auf eigentlich abgeschottete Informationen vom Host-Systemen zugreifen und VMs via DoS-Attacke abschießen.</p>
+      <h3>Noch mehr Sicherheitslücken</h3>
+      <p>Des Weiteren ist ESXi über zwei Lücken angreifbar. Beide Schwachstellen sind mit dem Bedrohungsgrad "<b>mittel</b>" versehen. Das Ausnutzen einer Lücke (CVE-2018-12207) kann DoS-Zustände herbeiführen. Über die andere Schwachstelle (CVE-2019-11135) könnten Daten leaken. Sie bedroht auch Fusion und Workstation. Angreifer können sie aber nur Ausnutzen, wenn die zweite Generation von Intel-Xeon-Scalable-Prozessoren zum Einsatz kommen und sie lokalen Zugriff haben, <a href="https://www.vmware.com/security/advisories/VMSA-2019-0020.html">schreiben die VMware-Entwickler in einer Mitteilung</a>.</p>
+      <p>Von ESXi sind die Versionen 6.0, 6.5 und 6.7 angreifbar. In den Ausgaben <b>ESXi670-201911401-BG und ESXi670-201911402-BG</b> haben die Entwickler die Fehler beseitigt. (<a href="mailto:des@heise.de">des</a>)</p>
+    </article>
+  </body>
+</html>

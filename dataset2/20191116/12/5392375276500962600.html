@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://www.gizchina.com/2019/11/16/an-experiment-on-google-chrome-burned-millions-of-dollars/"/>
+    <meta property="og:site_name" content="Gizchina"/>
+    <meta property="article:published_time" content="2019-11-16T12:39:01+00:00"/>
+    <meta property="og:title" content="An experiment on Google Chrome burned millions of dollars"/>
+    <meta property="og:description" content="An experiment carried out on Google Chrome went very badly and crashed the browser on thousands of enterprise networks for nearly two days."/>
+  </head>
+  <body>
+    <article>
+      <h1>An experiment on Google Chrome burned millions of dollars</h1>
+      <address><time datetime="2019-11-16T12:39:01+00:00">16 Nov 2019, 12:39</time> by <a rel="author">Abdullah</a></address>
+      <p>An experiment on Google Chrome burned millions of dollars<br/>3.2 (63.64%) 11 votes</p>
+      <p>An experiment carried out on Google Chrome went very badly this week and crashed the browser on thousands, if not more, enterprise networks for nearly two days.</p>
+      <p>As <a href="https://www.zdnet.com/article/google-chrome-experiment-crashes-browser-tabs-impacts-companies-worldwide/">Zdnet</a> explains, the problem first appeared on Wednesday 13 November and involved only Chrome browsers running on Windows Server “Terminal Server” setups – a very common installation in enterprise networks.</p>
+      <p>According to hundreds of reports, users have claimed that Chrome’s tabs were going blank, suddenly. Giving rise to an error known as “White Screen of Death” (WSOD). A problem that has caused many damages and inconveniences.</p>
+      <p>According to many system administrators, thousands of employees could not use Chrome to access the Internet, as the browser’s active tab remained blank. In tightly controlled business environments, many employees could not change browsers and work. Furthermore, system administrators could not replace Chrome with another browser right away.</p>
+      <figure>
+        <img src="https://www.gizchina.com/wp-content/uploads/images/2019/10/Google-Chrome-browser-update.jpg"/>
+      </figure>
+      <h3>The problem impacts companies worldwide</h3>
+      <p>“This has had a huge impact for all our Call Center agents. We are not being able to chat with our members”. Someone with a Costco email address said in a bug report. “We spent the last day and a half trying to figure this out.”</p>
+      <p>“Our organization with multiple large retail brands had 1000 call center agents and many IT people affected for 2 days. This had a very large financial impact,” said another user.</p>
+      <p>“Like many others, this has had a significant impact on our organization with our entire Operations. Over 500 employees working in a RDS environment with Google Chrome as the primary browser,” said another system administrator.</p>
+      <p>“4000 impacted in my environment. Working on trying to fix it for 12 hours,” said another.</p>
+      <p>“Medium sized call center for a local medical office lost a day and a half of work for 40-60 employees,” added another.</p>
+      <p>“Same issue experienced, hundreds of users impacted – hours spent attempting to isolate the cause,” said another user.</p>
+      <p>Hundreds of complaints poured in via Google’s support forum, Chrome bug tracker, and Reddit. One impacted sysadmin told ZDNet that they initially mistook the Chrome blank tabs as a sign of malware and reacted accordingly, starting network-wide security audits.</p>
+      <h3>GOOGLE SHIPS A FIX</h3>
+      <p>However, with time, the root cause of the bug was eventually found. And traced back to a feature called “WebContents Occlusion.”</p>
+      <p>According to Google Chrome design document, this is an experimental feature that suspends Chrome tabs when users move other app windows on top of Chrome. Treating the active Chrome tab as a background tab.</p>
+      <p>The feature, meant to improve Chrome’s resource usage when not in active use, had been under testing in Chrome Canary and Chrome Beta releases all year.</p>
+      <p>However, this week, <a href="https://www.gizchina.com/tag/Google">Google</a> decided to test it in the main Stable release, so it could get more feedback on how it behaved.</p>
+      <p>The Chrome team said they pushed a new Chrome configuration file to all Chrome users and disabled the experiment.</p>
+      <footer><b>Source :</b> <a href="https://www.zdnet.com/article/google-chrome-experiment-crashes-browser-tabs-impacts-companies-worldwide/">ZDNet</a></footer>
+      <related>
+        <a href="https://www.gizchina.com/2019/11/12/google-camera-now-also-scan-copy-and-translate-texts/"/>
+      </related>
+    </article>
+  </body>
+</html>

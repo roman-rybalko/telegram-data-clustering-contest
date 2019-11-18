@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://pplware.sapo.pt/linux/navegue-de-forma-anonima-via-rede-tor-e-privoxy-usando-qualquer-browser/"/>
+    <meta property="og:site_name" content="Pplware"/>
+    <meta property="article:published_time" content="2019-11-09T17:02:00+00:00"/>
+    <meta property="og:title" content="Esconda-se na Internet! Use a rede TOR e o Privoxy"/>
+    <meta property="og:description" content="Para este tutorial vamos usar o Linux Kali como sistema operativo. Para instalar o Tor e o Privoxy devem usar o seguinte comando:"/>
+  </head>
+  <body>
+    <article>
+      <h1>Esconda-se na Internet! Use a rede TOR e o Privoxy</h1>
+      <address><time datetime="2019-11-09T17:02:00+00:00">09 Nov 2019, 17:02</time> by <a rel="author">Pedro Pinto</a></address>
+      <p>Aceder à rede Tor é hoje uma tarefa bastante simples. Para isso basta que usem o <a href="https://pplware.sapo.pt/internet/tor-browser-navegar-escondido-na-internet/">Tor Browser,</a> que inclui nativamente todas as configurações necessárias.</p>
+      <p>No entanto, quem pretender usar outros browsers pode sempre configurar um proxy na própria máquina. Saiba como podem instalar o Privoxy e configurar para usar a rede Tor.</p>
+      <figure>
+        <img src="https://pplware.sapo.pt/wp-content/uploads/2019/11/TOr_capa.jpg"/>
+      </figure>
+      <p>Navegar de forma anónima não é uma tarefa fácil especialmente porque tudo aquilo que fazemos fica registado. No entanto, é possível “proteger” a nossa privacidade online através de ferramentas adicionais que nos ajudam a esconder a nossa identidade..</p>
+      <p>Para este tutorial vamos usar o Linux Kali como sistema operativo. Para instalar o Tor e o Privoxy devem usar o seguinte comando:</p>
+      <p>
+        <code>sudo apt-get install tor privoxy</code>
+      </p>
+      <p>sudo apt-get install tor privoxy</p>
+      <p>Depois de instalado, devem ir à configuração do Privoxy em /etc/privoxy/config e inserir a seguinte linha:</p>
+      <p>
+        <code>forward-socks5 / 127.0.0.1:9050 .</code>
+      </p>
+      <p>forward-socks5 / 127.0.0.1:9050 .</p>
+      <figure>
+        <img src="https://pplware.sapo.pt/wp-content/uploads/2019/11/tor_05.jpg"/>
+      </figure>
+      <p>O próximo passo é iniciar o serviço tor e o privoxy</p>
+      <p>
+        <code>sudo service tor start sudo service privoxy start</code>
+      </p>
+      <p>sudo service tor start sudo service privoxy start</p>
+      <h3>Como testar usando o Firefox?</h3>
+      <p>Usando o browser Firefox, vamos agora dar indicações que as comunicações fluem via Proxy. Para isso vamos às Definições do Firefox e depois <b>Preferences</b>.</p>
+      <figure>
+        <img src="https://pplware.sapo.pt/wp-content/uploads/2019/11/tor_06.jpg"/>
+      </figure>
+      <p>Em seguida, em <b>Network Proxy</b> escolham a opção <b>Manual proxy configuration</b> e definam o HTTP Proxy: localhost 8181</p>
+      <figure>
+        <img src="https://pplware.sapo.pt/wp-content/uploads/2019/11/tor_07.jpg"/>
+      </figure>
+      <p>Salvem a configuração e testem se está tudo operacional. Para isso basta que abram o browser novamente e acedam ao endereço https://check.torproject.org/. O resultado deverá ser idêntico ao seguinte.</p>
+      <figure>
+        <img src="https://pplware.sapo.pt/wp-content/uploads/2019/11/TOr.jpg"/>
+      </figure>
+      <p>Configurar o Privoxy para a rede Tor é relativamente simples. Este proxy tem outras funcionalidades bastante interessantes que podem ser analisadas e testadas através do ficheiro de configuração (/etc/privoxy/config). Se têm um Linux aí por perto, experimentem.</p>
+    </article>
+  </body>
+</html>

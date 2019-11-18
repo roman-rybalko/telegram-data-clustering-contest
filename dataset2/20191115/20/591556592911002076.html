@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://www.zdnet.com/article/android-malware-disguises-as-ad-blocker-but-then-pesters-users-with-ads/"/>
+    <meta property="og:site_name" content="ZDNet"/>
+    <meta property="article:published_time" content="2019-11-15T20:54:47+00:00"/>
+    <meta property="og:title" content="Android malware disguises as ad blocker, but then pesters users with ads"/>
+    <meta property="og:description" content="Oh, the irony!"/>
+  </head>
+  <body>
+    <article>
+      <h1>Android malware disguises as ad blocker, but then pesters users with ads</h1>
+      <address><time datetime="2019-11-15T20:54:47+00:00">15 Nov 2019, 20:54</time> by <a rel="author" href="https://www.zdnet.com/meet-the-team/us/catalin.cimpanu/" target="_blank">Catalin Cimpanu</a></address>
+      <p>
+        <b>Oh, the irony!</b>
+      </p>
+      <p>Security researchers have discovered a new Android malware strain that's currently being distributed as an ad blocker for Android users, but, ironically, once installed, it pesters victims with ads through multiple methods at every couple of minutes.<br/><br/>Named FakeAdsBlock, this new strain has already infected at least 500 users, according to Malwarebytes, the antivirus maker who spotted the malware.<br/><br/>Its distribution vector is via third-party app stores, where it's available for download as an ad-blocking app named Ads Blocker, said Nathan Collier, Senior Malware Intelligence Analyst.<br/><br/>This, however, might change in the future. Collier said they already found evidence that the same FakeAdsBlock malware was also available hidden in apps named "Hulk (2003).apk," "Guardians of the Galaxy.apk," and "Joker (2019).apk." The researcher says this suggests that the malware's creators were in the midst of shifting their distribution pattern to a bogus movie streaming portal.<br/><br/>Users looking to watch pirated movies would eventually end up installing a malicious app infected with FakeAdsBlock. This distribution vector isn't new and has been often seen being used before -- especially with apps that pertain to grant access to adult movies.</p>
+      <h3>FakeAdsBlock modus operandi</h3>
+      <p>As for the malware itself, FakeAdsBlock is something else, especially in the brash way it bombards users with ads.<br/><br/>All of this starts with its installation process, where the Ads Blocker app (in which the malware is hidden) asks for permission to display content over other apps.</p>
+      <p>This is an odd permission to request, especially for an app with a stated goal of removing content, and not showing something on top.<br/><br/>But the shady things continue. The app also requests access to install a VPN connection, which, again, is very odd.<br/><br/>"To clarify, the app doesn't actually connect to any VPN," <a href="https://blog.malwarebytes.com/android/2019/11/stealthy-new-android-malware-poses-as-ad-blocker-serves-up-ads-instead/">Collier said</a>. "Instead, by clicking OK, users actually allow the malware run in the background at all times."</p>
+      <figure>
+        <img src="https://zdnet3.cbsistatic.com/hub/i/2019/11/15/77c67c38-e38f-4567-88b3-ecdd8ee236c6/ef0d750c9f7da2fbd50c363c66a76544/fakeadsblock-install.png"/>
+        <figcaption>Image: Malwarebytes</figcaption>
+      </figure>
+      <p>Yet, the shady things don't stop here. The FakeAdsBlock malware also requests access to show a widget on the device's home screen. This makes no technical sense, as an ad blocker does not need to show widgets -- but more on this later.<br/><br/>Once all this finishes, the app shows a screen with some text scrolling down and then disappears for good. The malware then removes its icon, and the ad bombardments begin. These appear everywhere, in different forms.<br/><br/>There are fullscreen ads, notifications spam, and websites that open out of the blue, prompting the user to enable new notifications here too.</p>
+      <figure>
+        <img src="https://zdnet3.cbsistatic.com/hub/i/2019/11/15/ec90144a-0468-4b4a-a18f-339ba3336a64/cd1ade0a4687e9dbdbbba11bc76c1a2f/fakeadsblock-ads.png"/>
+        <figcaption>Image: Malwarebytes</figcaption>
+      </figure>
+      <p>But the novel and the most perfidious trick is the use of a home screen widget to show ads, something not seen before.<br/><br/>According to Collier, the FakeAdsBlock malware uses a transparent widget inside which it loads ads at regular intervals. Because the ads are shown inside a widget, they can't be dismissed unless the user removes the widget. But since the user can't see the widget on their screen, they never know the widget is there, in the first place.</p>
+      <figure>
+        <img src="https://zdnet3.cbsistatic.com/hub/i/r/2019/11/15/557749d6-fe96-4df2-a45b-49c0e12301de/resize/370xauto/83518b0f14b63db4cc06b3512f931345/fakeadsblock-widget.png"/>
+        <figcaption>Image: Malwarebytes</figcaption>
+      </figure>
+      <p>"Ads Blocker is inordinately hard to find on the mobile device once installed," Collier said. "To start, there is no icon for Ads Blocker. However, there are some hints of its existence, for example, a small key icon status bar." [see image above]<br/><br/>"This key icon was created after accepting the fake VPN connection message, as shown above. As a result, this small key is proof that the malware is running the background," the Malwarebytes researcher added.<br/><br/>But once users get an idea that something might be wrong, they can head over to the Android OS' apps section, from where they can remove it like any other app. Here, the app should be easy to spot, as it's the only one without an icon or a name. The FakeAdsBlocker authors thought they were smart by hiding these two details, but they actually made it stand out further.</p>
+      <figure>
+        <img src="https://zdnet3.cbsistatic.com/hub/i/r/2019/11/15/9f43669d-b0dd-4dac-9b67-3bdf1648680c/resize/370xauto/4e16d84588d0725078af75e95d44d234/fakeadsblock-uninstall.png"/>
+        <figcaption>Image: Malwarebytes</figcaption>
+      </figure>
+    </article>
+  </body>
+</html>

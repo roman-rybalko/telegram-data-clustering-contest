@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://hackaday.com/2019/11/17/arduino-does-multitouch/"/>
+    <meta property="og:site_name" content="Hackaday"/>
+    <meta property="article:published_time" content="2019-11-17T00:00:00+00:00"/>
+    <meta property="og:title" content="Arduino Does Multitouch"/>
+    <meta property="og:description" content="A lot of consumer gadgets use touch sensors now. It is a cheap and reliable way to replace a variety of knobs and switches on everything from headphones to automobiles. However, creating a custom t…"/>
+  </head>
+  <body>
+    <article>
+      <h1>Arduino Does Multitouch</h1>
+      <address><time datetime="2019-11-17T00:00:00+00:00">17 Nov 2019</time> by <a rel="author" href="https://hackaday.com/author/wd5gnr1/" target="_blank">Al Williams</a></address>
+      <p>A lot of consumer gadgets use touch sensors now. It is a cheap and reliable way to replace a variety of knobs and switches on everything from headphones to automobiles. However, creating a custom touch controller for a one-off project can be daunting. A recent ACM paper shows how just about <a href="https://dl.acm.org/citation.cfm?doid=3332165.3347895">any capacitive sensor can work as a multitouch sensor</a> with nothing more than an Arduino although a PC running processing interprets the data for higher-level functions.</p>
+      <p>The key is that the Arduino excites the grid using PWM and then examines the signal coming out of the grid. Finger poking changes the response quite a bit and the Arduino can sense it using the analog to digital converters onboard. You can find the actual <a href="https://hci.cs.uni-saarland.de/multi-touch-kit/">software kit online</a>. The tutorial <a href="https://github.com/HCI-Lab-Saarland/MultiTouchKitDoc/blob/master/MTK_Tutorial.pdf">document</a> is probably more interesting than the ACM paper if you only want to use the kit.</p>
+      <p>The optimum drive frequency is 10 MHz. The examples rely on harmonics of a lower frequency PWM signal to get there. The analog conversion, of course, isn’t that fast but since your finger touch rate is relatively slow, they treat the signal as an amplitude-modulated input which is very easy to decode.</p>
+      <p>The sensors can be conductive ink, thread, or copper strips. There are several example applications, including a 3D printed bunny you can pet, a control panel on a sleeve, and an interactive greeting card.</p>
+      <p>The sensor forms an image and OpenCV detects the actual touch configuration. It appears you can use the raw data from the Arduino, too, but it might be a little harder.</p>
+      <p>We imagine <a href="https://hackaday.com/2015/11/30/conjuring-capacitive-touch-sensors-from-paper-and-aluminum-foil/">aluminum foil</a> would work with this technique. If you get to the point of laying out a PCB, <a href="https://hackaday.com/2013/12/04/easy-capacitive-touch-sensors-in-eagle/">this might come in handy</a>.</p>
+    </article>
+  </body>
+</html>

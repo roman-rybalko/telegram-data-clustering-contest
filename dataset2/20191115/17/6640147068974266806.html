@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://www.tomshw.it/hardware/un-esperimento-su-google-chrome-ha-bruciato-milioni-di-dollari/"/>
+    <meta property="og:site_name" content="Tom's Hardware"/>
+    <meta property="article:published_time" content="2019-11-15T17:02:00+00:00"/>
+    <meta property="og:title" content="Un esperimento su Google Chrome ha bruciato milioni di dollari | Tom's Hardware"/>
+    <meta property="og:description" content="Un test condotto da Google su Chrome ha creato non pochi problemi in ambito aziendale causando milioni di dollari di danni."/>
+  </head>
+  <body>
+    <article>
+      <h1>Un esperimento su Google Chrome ha bruciato milioni di dollari | Tom's Hardware</h1>
+      <address>
+        <time datetime="2019-11-15T17:02:00+00:00">15 Nov 2019, 17:02</time>
+      </address>
+      <p><b>Un esperimento svolto su Google Chrome è andato molto male</b> questa settimana e ha <b>mandato in crash il browser su migliaia, se non più, reti aziendali per quasi due giorni.</b> Ne parla Zdnet in questo <a href="https://www.zdnet.com/article/google-chrome-experiment-crashes-browser-tabs-impacts-companies-worldwide/">interessante articolo</a>.</p>
+      <p>Il problema è apparso per la prima volta mercoledì 13 novembre e ha coinvolto solo i browser Chrome in esecuzione su configurazioni “Terminal Server” di Windows Server – un’installazione molto comune nelle reti aziendali.</p>
+      <p>Secondo centinaia di segnalazioni, gli utenti hanno affermato che <b>le schede di Chrome sono diventate vuote, all’improvviso, dando vita a un errore noto come “White Screen of Death” (WSOD).</b> Un problema che, per quanto bizzarro, ha causato non pochi danni e inconvenienti.</p>
+      <figure>
+        <img src="https://www.tomshw.it/images/images/2019/02/google-chrome-17478.768x432.jpg"/>
+      </figure>
+      <p>Secondo molti amministratori di sistema, migliaia di dipendenti non hanno potuto usare Chrome per accedere a Internet, in quanto la scheda attiva del browser continuava a rimanere bianca. In ambienti aziendali strettamente controllati, molti dipendenti non potevano cambiare browser e lavorare. Inoltre gli amministratori di sistema non potevano sostituire Chrome con un altro browser in in quattro e quattr’otto.</p>
+      <p>“Questo ha avuto un impatto enorme per tutti i dipendenti del call center, impossibilitati a chattare con i nostri membri”, ha scritto qualcuno con un indirizzo e-mail Costco in una segnalazione sul bug. “<b>Abbiamo trascorso l’ultimo giorno e mezzo a cercare di comprendere l’accaduto</b>“.</p>
+      <p>“La nostra azienda che gestisce grandi marchi del settore retail ha visto 1000 dipendenti del call center e molti amministratori IT bloccati per due giorni. Ciò ha causato <b>un enorme danno finanziario</b>“, ha scritto un altro utente.</p>
+      <p>“Come molti altri, questo ha avuto un impatto significativo sulla nostra organizzazione con oltre 500 dipendenti che lavorano in un ambiente RDS con Google Chrome come browser principale”, ha affermato un altro amministratore di sistema.</p>
+      <p>Centinaia di lamentele sono arrivate al <a href="https://support.google.com/chrome/thread/19713332?hl=en">forum di supporto di Google</a>, tramite il <a href="https://bugs.chromium.org/p/chromium/issues/detail?id=1024837">Chrome bug tracker</a> e Reddit [<a href="https://old.reddit.com/r/chrome/comments/dw1wgb/chrome_78_having_intermittent_tab_hangs_crashes/">1</a>, <a href="https://old.reddit.com/r/chrome/comments/dwjg0b/getting_a_bit_miffed_with_chrome_at_the_moment/">2</a>]. Un amministratore di sistema ha dichiarato a ZDNet di aver inizialmente <b>scambiato le schede vuote di Chrome per un malware e di aver reagito di conseguenza, avviando controlli di sicurezza su tutta la rete.</b></p>
+      <p><b>La causa del problema però era un’altra, una funzionalità chiamata “<a href="https://docs.google.com/document/d/1tPuJE0Vws7oskjjqrawNfMkwFtGxyHV33yQagiplVfY/edit#">WebContents Occlusion</a>“.</b> Si tratta di una funzione sperimentale che sospende le schede di Chrome quando gli utenti spostano altre finestre di un’app sopra Chrome, facendo diventare la scheda di Chrome attiva come una scheda di sfondo.</p>
+      <p><b>La funzione, pensata per migliorare l’uso delle risorse da parte di Chrome quando non si trova in uso attivo</b>, è stata sottoposta a test nelle versioni di Chrome Canary e Chrome Beta per tutto l’anno. Tuttavia, questa settimana, Google ha deciso di testarla nella versione principale stabile, in modo da ottenere maggiori feedback. Dire che si sia trattato di un fallimento è un eufemismo.</p>
+      <p>Un ingegnere di Chrome ha spiegato che finora nei test non erano emersi problemi, ma la prova su larga scala e diverse configurazioni ha dato un esito totalmente diverso. Così molti lavoratori si sono ritrovati a <b>perdere il lavoro che stavano svolgendo in quel momento, oltre a mandare nel panico i reparti IT.</b></p>
+      <p>Il team di Chrome ha dichiarato di aver inviato un nuovo file di configurazione a tutti gli utenti di Chrome e di aver disabilitato l’esperimento. Gli ingegneri di Chrome usano un sistema chiamato Finch che gli consente di inviare le impostazioni di Chrome aggiornate a installazioni attive, per abilitare o disabilitare funzioni sperimentali.</p>
+      <p>Se la correzione non funzionasse, è possibile disabilitare manualmente i seguenti due flag sperimentali:</p>
+      <p>
+        <i>chrome://flags/#web-contents-occlusion</i>
+        <br/>
+        <i>chrome://flags/#calculate-native-win-occlusion</i>
+      </p>
+      <p>Un metodo alternativo per risolvere questo problema è avviare Google Chrome con il seguente argomento da riga di comando: <i>–disable-backgrounding-occluded-windows</i></p>
+      <p><b>Molti amministratori di sistema non hanno preso bene l’intervento di Google</b>. In tanti non sapevano che gli ingegneri di Chrome potessero svolgere esperimenti sulle loro installazioni di Chrome, per non parlare della possibilità di inviare modifiche ai browser senza alcuna approvazione preventiva.</p>
+      <p>“Vedete l’impatto che avete creato a migliaia di noi senza alcun preavviso o spiegazione? <b>Non siamo le vostre cavie</b>“, ha scritto un amministratore di sistema arrabbiato. “Quante decine di migliaia di dollari è costato questo imprevisto? Sembra si tratti del più grande passo falso mai fatto da Google”, ha aggiunto un altro. Come dargli torto?</p>
+    </article>
+  </body>
+</html>

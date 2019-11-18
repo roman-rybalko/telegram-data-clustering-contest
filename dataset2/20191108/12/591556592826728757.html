@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://www.zdnet.com/article/nvidia-patches-severe-geforce-gpu-vulnerabilities/"/>
+    <meta property="og:site_name" content="ZDNet"/>
+    <meta property="article:published_time" content="2019-11-08T12:59:39+00:00"/>
+    <meta property="og:title" content="Nvidia patches severe GeForce, GPU vulnerabilities"/>
+    <meta property="og:description" content="The worst bugs paved the way for code execution and information leaks."/>
+  </head>
+  <body>
+    <article>
+      <h1>Nvidia patches severe GeForce, GPU vulnerabilities</h1>
+      <address><time datetime="2019-11-08T12:59:39+00:00">08 Nov 2019, 12:59</time> by <a rel="author" href="https://www.zdnet.com/meet-the-team/us/charlie-osborne/" target="_blank">Charlie Osborne</a></address>
+      <p>
+        <b>The worst bugs paved the way for code execution and information leaks.</b>
+      </p>
+      <figure>
+        <video src="http://android-streaming.techrepublic.com/media/2019/08/19/1589101635755/2019-08-19-wochit-nvidia-claims-world-records-in-conversational-ai-training_1915300_740.mp4"/>
+      </figure>
+      <figure>
+        <img src="https://zdnet2.cbsistatic.com/hub/i/r/2019/08/19/4db2cebf-ce9a-4bfc-9bd8-8d1390d0b429/thumbnail/570x322/f34451df2f4ec5729ca494d04450766b/nvidia-claims-world-records-in-conversat-5d555880bac36000019f86e5-1-aug-19-2019-21-14-06-poster.jpg"/>
+      </figure>
+      <p>Nvidia has patched a set of serious security vulnerabilities in the GeForce Experience graphics software and GPU Display Driver. <br/><br/>On Thursday, the technology giant published two separate security advisories (<a href="https://nvidia.custhelp.com/app/answers/detail/a_id/4860">1</a>, <a href="https://nvidia.custhelp.com/app/answers/detail/a_id/4907">2</a>) detailing the vulnerabilities, the worst of which could lead to code execution or information disclosure. </p>
+      <p>Three vulnerabilities have been resolved in GeForce Experience. The first, CVE‑2019‑5701, is a problem within GameStream. When enabled, an attacker with local access can load Intel graphics driver DLLs without path validation, potentially leading to arbitrary code execution, privilege escalation, denial-of-service (DoS), or information disclosure. <br/><br/>The second bug, CVE‑2019‑5689, is present within the GeForce downloader. Given local access, an attacker can craft and execute code to transfer and save malicious files, also potentially resulting in code execution, DoS, or information leaks.  <br/><br/>The third security flaw, CVE‑2019‑5695, was found in the GeForce local service provider component. An attacker would need local and privileged access to exploit this vulnerability, but if achieved, it is possible to use incorrect Window system DLL loading to cause DoS or data theft. </p>
+      <p><b>CNET: </b><a href="https://www.cnet.com/news/lasers-can-seemingly-hack-alexa-google-home-and-siri/?ftag=CMG-01-10aaa1b">Lasers can seemingly hack Alexa, Google Home and Siri</a> <br/><br/>Six vulnerabilities have also been resolved In the Nvidia Windows GPU Display driver. The most critical of these issues, CVE‑2019‑5690, is a kernel mode layer handler issue in which input size is not validated, leading to DoS or privilege escalation. </p>
+      <p>In addition, CVE‑2019‑5691 has been found in the same system in which null pointer errors can be exploited for the same purposes.  <br/><br/>Two other bugs, CVE‑2019‑5692 and CVE‑2019‑5693, both of which are also in the kernel mode layer handler, have also been resolved. The first is related to untrusted input when calculating or using an array index, leading to privilege escalation or denial of service, whereas the second security flaw relates to how the program accesses or uses pointers. If exploited, this problem can lead to service denial.  <br/><br/><b>See also: </b><a href="https://www.zdnet.com/article/nvidia-vmware-partner-to-offer-virtualized-gpus/">Nvidia, VMware partner to offer virtualized GPUs</a> <br/><br/>The display driver also contained CVE‑2019‑5694 and CVE‑2019‑5695, incorrect DLL loading problems that could be exploited for DoS or information disclosure.  <br/><br/>Nvidia has also resolved three vulnerabilities in the Virtual GPU Manager. CVE‑2019‑5696 is a security flaw that can lead to out-of-bound access by a guest VM, whereas CVE‑2019‑5697 can be exploited to give a guest access to memory that it does not own, leading to DoS or information leaks. <br/><br/>The final bug, CVE‑2019‑5698, is in the vGPU plugin and relates to incorrect validation of input index values. If exploited, this security flaw, too, can lead to denial of service.  <br/><br/><b>TechRepublic: </b><a href="https://www.techrepublic.com/article/how-boot-camps-may-fill-the-need-for-more-white-hats-in-the-us/?ftag=CMG-01-10aaa1b">How boot camps may fill the need for more white hats in the US</a> <br/><br/>All versions of Nvidia GeForce Experience on Windows prior to 3.20.1 are affected. Nvidia Quadro, NVS R440 versions prior to 441.12, R430, and R418, Tesla R440 and R418, and Quadro 390 are also impacted. Patches will be released for Tesla R440 and R418, and Quadro NVS R430, R418, and R390 next week. <br/><br/>Researchers from ACTIVELabs, the Chengdu University of Technology, and SafeBreach Labs have been thanked for reporting the vulnerabilities. </p>
+      <h3>Previous and related coverage</h3>
+      <ul>
+        <li>
+          <a href="https://www.zdnet.com/article/nvidia-wins-new-ai-inference-benchmark-for-data-center-and-edge-soc-workloads/">Nvidia wins new AI inference benchmark for data center and edge SoC workloads</a>
+        </li>
+        <li>
+          <a href="https://www.zdnet.com/article/us-postal-service-adopts-nvidia-ai-to-improve-delivery-systems/">US Postal Service adopts Nvidia AI to improve delivery systems</a>
+        </li>
+        <li>
+          <a href="https://www.zdnet.com/article/nvidia-kings-college-london-debut-privacy-focused-way-to-train-neural-networks/">Nvidia, King's College London debut privacy-focused way to train neural networks</a>
+        </li>
+      </ul>
+      <hr/>
+      <p><b>Have a tip?</b> Get in touch securely via WhatsApp | Signal at +447713 025 499, or over at Keybase: charlie0</p>
+      <hr/>
+    </article>
+  </body>
+</html>

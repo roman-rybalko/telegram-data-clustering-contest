@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://www.forbes.com/sites/udinachmany/2019/11/12/how-containers-are-changing-ownership-of-application-security/"/>
+    <meta property="og:site_name" content="Forbes"/>
+    <meta property="article:published_time" content="2019-11-12T00:00:00+00:00"/>
+    <meta property="og:title" content="How Containers Are Changing Ownership Of Application Security"/>
+    <meta property="og:description" content="Cloud-native technologies are challenging existing security models by shifting ownership &quot;to the left&quot;—but how far to the right should shift-left go? In this post I examine what viable developer-minded models might look like."/>
+  </head>
+  <body>
+    <article>
+      <h1>How Containers Are Changing Ownership Of Application Security</h1>
+      <address><time datetime="2019-11-12T00:00:00+00:00">12 Nov 2019</time> by <a rel="author">Udi Nachmany</a></address>
+      <p>In an <a href="https://www.forbes.com/sites/udinachmany/2019/05/28/containers-put-the-dev-back-in-devsecops/#4f4c968f6b9a">earlier piece</a>, I claimed that the increasing use of containers and cloud-native tools for enterprise applications introduces disruption to existing security models, in four main ways:</p>
+      <ol>
+        <li>Breaking an application down into microservices means there is less central control over the content and update frequency of each part;</li>
+        <li>Packaging into a container happens within the developer workflow;</li>
+        <li>Providing developers with access to native APIs for tools such as Kubernetes increases the blast radius of any action; and</li>
+        <li>Using containers inherently introduces much more third-party (open source) code into a company’s proprietary codebase.</li>
+      </ol>
+      <h3>Shifting left? Not so soon</h3>
+      <p>According to <a href="https://www.gartner.com/smarterwithgartner/6-best-practices-for-creating-a-container-platform-strategy/">Gartner</a>, by 2022 more than 75% of global organizations will be running containerized applications in production. On the other hand, <a href="https://snyk.io/blog/shifting-docker-security-left/">Snyk’s container security report</a> earlier this year found that there has been a surge in container vulnerabilities, while 80% of developers polled didn’t test their container images during development.</p>
+      <p>Other reports, such as highlighted in a piece by Forbes contributor <a href="https://www.forbes.com/sites/tonybradley/2019/01/07/disconnect-between-container-adoption-and-confidence-in-container-security/#3b5a6fc81600">Tony Bradley</a>, show a concerning level of short-sightedness by security engineering teams—while most of the worry seems to be around misconfigurations, which occur during the build stage, most of the investment focus seems to be around runtime, which in terms of lifecycle is inefficient if not just too late.</p>
+      <p>Putting it all together, it’s clear that shifting security left by giving developers more ownership on the security of their own application is a good thing—but how much ownership should or could they be given? And what kinds of tools and processes need to be in place for this transition to be a success?</p>
+      <figure>
+        <img src="https://specials-images.forbesimg.com/imageserve/5dc9a078417d360006da0885/960x0.jpg?fit=scale"/>
+        <figcaption>A developer workstation secured by a storm trooper<cite>Photo by Liam Tucker on Unsplash</cite></figcaption>
+      </figure>
+      <h3>Andreessen, revisited</h3>
+      <p>In 2011, Netscape pioneer and current VC Marc Andreessen famously said that software is eating the world. If everything is becoming software defined, security is no exception: recall when endpoint and network security used to be delivered by hardware appliances, not as software, as they are today. Application security is no different, especially since the people that know applications best, and that are best placed to keep up with their evolution, are developers.</p>
+      <p>Easier said than done, when successful developer adoption is such an art. Obviously, empowering developers to secure their applications means meeting them where they are without friction (close integration to the tools developers actually use)—while keeping them out of trouble with security engineering teams and others who are used to the “us &amp; them” mentality of yesteryear.</p>
+      <p>However, we can break that down even further: to succeed, developer-led security tools should look and feel like developer tools that are delight to use; embrace community contribution and engagement, even if they are not in themselves open-source; be easy to self-consume but also to scale in an enterprise; and of course, protect against what matters with the proper security depth and intelligence.</p>
+      <h3>How far to the right should shift-left go?</h3>
+      <p>A large part of the promise of cloud-native technologies for IT organizations is encapsulated in the phrase, “you build it, you run it”. Making security both more efficient and more effective is a huge opportunity that is at every technology executive’s door these days. To truly empower developers to own the security of their own applications, CSOs and CIOs should think about this in a broader sense: “you build it, you run it, <i>and you secure it</i>”.</p>
+      <p>What this means is to give developers the tools they need to both build<i> and run</i> secure containers, including <a href="https://snyk.io/blog/secure-your-kubernetes-applications-with-snyk-container/">monitoring Kubernetes workloads for vulnerabilities</a>. In this case, instead of a Security or Operations person shutting down vulnerable workloads, both identification and remediation would be <i>still within the developer’s workflow</i>—with the operations crowd focusing on policy creation, enforcement and audit.</p>
+      <p>Following this brave but existential choice will help enterprises to drastically reduce the risk inherent in growing their container infrastructure, and to efficiently scale security best practice. Wrapping top-of-the-line security with a coat of delightful developer experiences is something possible today, and a direction that is inevitable. As <a href="https://redmonk.com/rstephens/author/rstephens/">Rachel Stephens</a> of analyst firm Redmonk has written, <a href="https://redmonk.com/rstephens/2019/10/25/devops-tools-can-lead-the-culture-change/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=devops-tools-can-lead-the-culture-change">tools can play a lead role in culture change</a>.</p>
+    </article>
+  </body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://www.heise.de/developer/meldung/Visual-Studio-Code-Aufraeumarbeiten-zum-Vierzigsten-4583554.html"/>
+    <meta property="og:site_name" content="Developer"/>
+    <meta property="article:published_time" content="2019-11-11T10:22:00+00:00"/>
+    <meta property="og:title" content="Visual Studio Code: Aufräumarbeiten zum Vierzigsten"/>
+    <meta property="og:description" content="Die Entwicklergemeinde von Visual Studio Code hat sich für Version 1.40 auf Aufräumarbeiten konzentriert und offene Issues beseitigt."/>
+  </head>
+  <body>
+    <article>
+      <h1>Visual Studio Code: Aufräumarbeiten zum Vierzigsten</h1>
+      <h2>Die Entwicklergemeinde von Visual Studio Code hat sich für Version 1.40 auf Aufräumarbeiten konzentriert und offene Issues beseitigt.</h2>
+      <address><time datetime="2019-11-11T10:22:00+00:00">11 Nov 2019, 10:22</time> by <a rel="author">Rainald Menge-Sonnentag</a></address>
+      <p>Microsoft hat Visual Studio Code 1.40 veröffentlicht. Da für das aktuelle Release des Sourcecodeeditors der Fokus auf dem Abarbeiten offener Issues lag, bleiben die Neuerungen überschaubar. Unter der Haube profitiert das Werkzeug von TypeScript 3.7 und Electron 6. Zu den nennenswerten Änderungen an der Oberfläche gehören eine anpassbare Größe der Minimap und nach Programmsprache konfigurierbare Zeilenendezeichen. Außerdem sollen unter anderem ein Indikator in der Activity Bar und farblich anpassbare Fensterrahmen die Übersicht verbessern.</p>
+      <p>Nach der Veröffentlichung von Visual Studio Code 1.39 <a href="https://github.com/microsoft/vscode/issues/82194">hatte das Team bereits in GitHub festgelegt</a>, sich für das jetzt veröffentlichte Release auf das Abarbeiten von Issues zu konzentrieren. Die sogenannte Annual Issue House Keeping Iteration soll die anfallenden GitHub Issues und Pull Requests reduzieren. Dazu führt die Community ähnlich wie eine WG einen als <a href="https://github.com/microsoft/vscode/wiki/Issue-Grooming">"Issue Grooming Guide"</a> geführten Aufräumplan. Immerhin konnte das Team insgesamt 4622 Issues schließen, denen allerdings 2195 gegenüberstehen, die im selben Zeitraum hinzukamen.</p>
+      <h3>Feinschliff für die Übersicht</h3>
+      <p>Angesichts der Aufräumarbeiten fehlen große Neuerungen im aktuellen Release. Nennenswert sind unter anderem einige Konfigurationsmöglichkeiten. So lässt sich in der Konfigurationsdatei über <code>files.eol</code> die Zeichensequenz für das Zeilenende für jede Programmiersprache einzeln festlegen. Als Standard gilt <code>\n</code>, und die Konfiguration gilt nur für neue Dateien. Für existierende greift weiterhin der Befehl <code>Change End Of Line Sequence</code>.</p>
+      <p>Die Größe der Minimap, die einen Überblick über den Sourcecode innerhalb des Editorfensters anzeigt, lässt sich ebenfalls anpassen: Die Einstellung <code>editor.minimap.scale</code> erlaubt eine Reihe konstanter Werte zum Festlegen der Skalierung. Die neue Einstellung <code>workbench.editor.splitSizing</code> legt fest, ob die Workbench einzelne Fenster beim Splitten wie bisher gleichmäßig aufteilt oder das aktuelle Fenster in der Größe halbiert und die restlichen Fenster nicht verändert.</p>
+      <figure>
+        <img src="https://www.heise.de/imgs/18/2/7/8/6/2/9/4/vscode-split-cd68059c12fadda0.png"/>
+        <figcaption>Beim Splitten kann VS Code neuerdings das aktuelle Fenster in der Größe halbieren.<cite>(Bild: Microsoft)</cite></figcaption>
+      </figure>
+      <p>Neu sind zudem die Farbkonfigurationen <code>window.activeBorder</code> und <code>window.inactiveBorder</code>, über die sich ein Rahmen um die einzelnen Fenster herum anzeigen lässt. Ersterer Wert legt eine Rahmenfarbe für das aktive Fenster und letzterer für die inaktiven fest. Um Rahmen anzuzeigen, müssen die Farben in einem Theme oder über die <code>workbench.colorCustomizations</code> angegeben sein, da sie nicht von anderen Werten erben.</p>
+      <h3>Aktivitäten und Tastatursteuerung</h3>
+      <p>Die Activity Bar hebt nun das aktive Element stärker hervor und nimmt gleichzeitig die inaktiven in der Farbgebung zurück. Die neue Einstellung gibt die Farbe für das aktive Element vor, die sich optional durch eine zusätzlich über <code>activityBar.activeBackground</code> einstellbare Hintergrundfarbe begleiten lässt.</p>
+      <figure>
+        <img src="https://www.heise.de/imgs/18/2/7/8/6/2/9/4/vscode-activity-bar-indicator-4a0eaf979df9a5df.png"/>
+        <figcaption>Das Beispielbild aus dem Blogbeitrag zu den Activity-Farben bringt einen mehr oder weniger subtilen Bezug zu Halloween in der Suche mit.<cite>(Bild: Microsoft)</cite></figcaption>
+      </figure>
+      <p>Zwei Ergänzungen sind vor allem für die Entwickler gedacht, die beim Arbeiten die Maus weitgehend meiden möchten. Sie können nun über die Tastenkombination Strg plus Richtungstasten Listen und Baumansichten vertikal und sofern vorgesehen auch horizontal scrollen. Der neue Befehl <code>Show Definition Preview Hover</code> zeigt detaillierte Informationen zu dem Bereich unter der Maus an und erweitert das bisherige Kommando <code>Show Hover</code>.</p>
+      <h3>Aufgefrischter Unterbau</h3>
+      <p>Unter der Haube bringt Visual Studio Code 1.40 gleich zwei Aktualisierungen mit: Das <a href="https://www.heise.de/meldung/Cross-Plattform-mit-JavaScript-Electron-6-0-setzt-weiter-auf-Promises-4483994.html">Electron-Framework 6.0</a> ist zwar bereits seit Ende Juli verfügbar, aber erst jetzt komplett in einem stabilen Release des Sourcecodeeditors enthalten. Derweil hat das <a href="https://www.heise.de/meldung/Developer-Snapshots-Programmierer-News-in-ein-zwei-Saetzen-4565581.html">Electron-Team bereits Ende Oktober Version 7 veröffentlicht</a>, das jedoch wenige große Änderungen mitbringt. Es soll in Kürze die Grundlage für die Insider-Builds von Visual Studio Code bilden.</p>
+      <p>Wie üblich setzt Visual Studio Code auf das jüngste <a href="https://www.heise.de/meldung/TypeScript-3-7-Die-und-der-uebersichtlichere-Code-4578944.html">TypeScript-Release, und Version 3.7 des JavaScript-Supersets</a> hat mit Optional Chaining eine Ergänzung an Bord, die die VS-Code-Entwickler für ihre Codebasis verwenden. Wer selbst die Neuerungen von TypeScript 3.7 nutzen möchte, zu denen auch der Nullish-Coalescing-Operator gehört, muss die Erweiterung <a href="https://marketplace.visualstudio.com/items?itemName=ms-vscode.vscode-typescript-next">"JavaScript and TypeScript Nightly"</a> installieren.</p>
+      <p>Weitere Neuerungen und Details zu Visual Studio Code 1.40 lassen sich dem <a href="https://code.visualstudio.com/updates/v1_40">Blogbeitrag zur Veröffentlichung</a> entnehmen. Der <a href="https://www.heise.de/download/product/visual-studio-code-96653">Sourcecodeeditor ist über heise Download</a> für diverse Betriebssysteme verfügbar. Der <a href="https://github.com/Microsoft/vscode">Quellcode liegt auf GitHub</a>. (<a href="mailto:rme@ct.de">rme</a>)</p>
+    </article>
+  </body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://www.xda-developers.com/google-pixel-4-ambient-eq-tweak/"/>
+    <meta property="og:site_name" content="XDA Developers"/>
+    <meta property="article:published_time" content="2019-11-11T14:25:00+00:00"/>
+    <meta property="og:title" content="How to Completely Take Control of Ambient EQ on the Google Pixel 4"/>
+    <meta property="og:description" content="Ambient EQ on the Google Pixel 4 is an automatic white balance adjustment feature, but it isn't as effective as Apple's True Tone. Here's how to tweak it."/>
+  </head>
+  <body>
+    <article>
+      <h1>How to Completely Take Control of Ambient EQ on the Google Pixel 4</h1>
+      <address><time datetime="2019-11-11T14:25:00+00:00">11 Nov 2019, 14:25</time> by <a rel="author" href="https://www.xda-developers.com/author/mishaalrahman/" target="_blank">Mishaal Rahman</a></address>
+      <p>When Google announced the Pixel 4 last month, one of the features <a href="https://www.xda-developers.com/google-pixel-4-automatic-white-balance-true-tone/">I was most excited to try out</a> was Ambient EQ. Ambient EQ is what Google calls its automatic white balance adjustment feature. Using a sensor capable of measuring the color temperature of the ambient lighting (the <a href="https://ams.com/tmd3702vc">TMD3702VC</a>), Ambient EQ “dynamically adjusts the display [white balance] based on surrounding light levels.” Sadly, Ambient EQ on the Pixel 4 <i>barely</i> adjusts the color temperature of the display, leading to what I feel is an underwhelming experience.</p>
+      <figure>
+        <img src="https://www.xda-developers.com/files/2019/11/Pixel-4-Display-Settings.jpg"/>
+        <figcaption>Ambient EQ toggle in Display settings on the <a href="https://forum.xda-developers.com/pixel">Google Pixel</a> 4</figcaption>
+      </figure>
+      <p>The reason for including such a feature in the first place is because the “perceived white balance of [a] display changes with the color of the ambient lighting around you,” according to <a href="https://www.xda-developers.com/author/dylan-raga/">Dylan Raga</a>, XDA’s Display Analyst. For example, “screens often appear overly-blue when viewed under warmer lighting.” In order to “[make] the screen appear consistent regardless of the color of ambient lighting,” smartphones “should change [their display] color temperature towards the color of the ambient lighting.”</p>
+      <p>Google’s first product with an automatic white balance adjustment feature was the Nest Hub, where the feature is <a href="https://support.google.com/googlenest/answer/9137130?hl=en">also called Ambient EQ</a>. On the Nest Hub, Ambient EQ is nothing short of magic. Looking at images on the Nest Hub display, no matter the current lighting condition, is like looking at printed photos. You don’t get that kind of experience with Ambient EQ on the Pixel 4, which, to be fair, makes sense since smartphones are used for more than just looking at images.</p>
+      <slideshow>
+        <figure>
+          <img src="https://www.xda-developers.com/files/2019/11/Google-Nest-Hub-Cool-Ambient-Lighting.jpg"/>
+        </figure>
+        <figure>
+          <img src="https://www.xda-developers.com/files/2019/11/Google-Nest-Hub-Warm-Ambient-Lighting.jpg"/>
+        </figure>
+      </slideshow>
+      <p>
+        <i>Google Nest Hub in different lighting conditions. Ambient EQ is tied to the “automatic brightness” setting on the device. It’s a bit difficult to capture the effect here—you really need to see it for yourself.</i>
+      </p>
+      <p>The Pixel 4 is far from the only mobile device with automatic white balance adjustment, though, which means we can compare how other tech companies have implemented the feature. Both Apple and Samsung have similar features, though Apple’s True Tone is more well-known thanks to better marketing. From the numerous complaints I’ve seen on online forums like Reddit, not everyone is a fan of how yellow the iPhone display looks with True Tone enabled. This is why I believe Google capped how low Ambient EQ can adjust the white point on the Pixel 4—they wanted the effect to be subtle and more color accurate so people don’t turn it off. That’s also likely why True Tone is disabled by default on the iPhone while Ambient EQ is enabled by default on the Pixel 4.</p>
+      <p>In their goal to please everybody, though, I think Google was a little too conservative in picking Ambient EQ’s range on the Pixel 4. I’m personally a big fan of how True Tone looks on the iPhone and iPad, so I was disappointed to learn that the Pixel 4’s white point average ranges from a minimum of 6300K to a maximum of 7450K corresponding to ambient color temperatures of 5300K and 8000K respectively. Under these default settings, I barely notice changes in the display when compared to an iPhone or iPad. In comparison, the 2016 9.7″ Apple iPad Pro can dip down to 5388K at 3000K ambient lighting, according to measurements done by <a href="https://www.anandtech.com/show/10265/understanding-the-97-ipad-pros-true-tone-display"><i>AnandTech</i></a>.</p>
+      <h3>Tweaking Ambient EQ on the Pixel 4</h3>
+      <p>Before the comments start flying that I think I know more than Google, I wanted to explain why I think it’s worth adjusting Ambient EQ. People’s tastes differ when it comes to display quality. Some people like warmer colors while others like cooler colors. Some people want their displays to always be color accurate while others care more about comfort. Like all other features on the Pixel 4, Google designed Ambient EQ to appeal to a majority of users. However, if you want to play around with the feature to get something that <i>you</i> think looks better <i>for you</i>, then that’s what I’m here to show you how to do.</p>
+      <p>And yes, <a href="https://www.xda-developers.com/tag/google-pixel4/">as is the case with many features on the Pixel 4</a>, it is possible to tweak Ambient EQ on the Pixel 4, provided <a href="https://www.xda-developers.com/google-pixel-4-root-magisk/">you have root access</a>. I’ve been using custom parameters for over a week now, and I feel that not only has it made reading text more pleasant in warmer ambient lighting, but it has also reduced eye strain. <b>The Pixel 4 has become the smartphone I’m most comfortable using.</b> Before I show you how to tweak Ambient EQ, though, you’ll need to understand how its parameters are controlled.</p>
+      <table bordered="">
+        <tr>
+          <th>Ambient Color Temperature</th>
+          <th>Display Color Temperature</th>
+          <th>Decrease/Increase Thresholds</th>
+        </tr>
+        <tr>
+          <td>5300</td>
+          <td>6300</td>
+          <td>0.007874</td>
+        </tr>
+        <tr>
+          <td>6000</td>
+          <td>6400</td>
+          <td>0.0075472</td>
+        </tr>
+        <tr>
+          <td>7000</td>
+          <td>6850</td>
+          <td>0.006993</td>
+        </tr>
+        <tr>
+          <td>8000</td>
+          <td>7450</td>
+          <td>0.0067114</td>
+        </tr>
+      </table>
+      <p>
+        <i>Stock Ambient EQ parameters on the Pixel 4 and Pixel 4 XL.</i>
+      </p>
+      <p>The above table shows the most important parameters for Ambient EQ on the Pixel 4. The first two columns show the Pixel 4’s base display color temperature (column #2) with respect to the ambient color temperature (column #1). Using a calculation involving the decrease/increase thresholds as well as some other parameters, the Pixel 4 can adjust its display color temperature to any value in-between the minimum (6300K) and maximum (7450K). If you’re interested in reading how these in-between values are calculated, I recommend <a href="https://android.googlesource.com/platform/frameworks/base/+/master/core/res/res/values/config.xml">reading the descriptions for each setting in AOSP</a>. Search for “config_displayWhiteBalance” to find all of the relevant Ambient EQ parameters and their descriptions.</p>
+      <p>With this knowledge, I tweaked Ambient EQ to use a mix of known Apple True Tone values (thanks to <i>Anandtech</i>) and stock Pixel 4 values to create the following changes:</p>
+      <table bordered="">
+        <tr>
+          <th>Ambient Color Temperature</th>
+          <th>Display Color Temperature</th>
+          <th>Decrease/Increase Thresholds</th>
+        </tr>
+        <tr>
+          <td>3000</td>
+          <td>5388</td>
+          <td>0.008</td>
+        </tr>
+        <tr>
+          <td>5000</td>
+          <td>6404</td>
+          <td>0.0076981</td>
+        </tr>
+        <tr>
+          <td>6000</td>
+          <td>6700</td>
+          <td>0.0075472</td>
+        </tr>
+        <tr>
+          <td>7000</td>
+          <td>6850</td>
+          <td>0.006993</td>
+        </tr>
+        <tr>
+          <td>8000</td>
+          <td>7450</td>
+          <td>0.0067114</td>
+        </tr>
+      </table>
+      <p>
+        <i>Custom Ambient EQ parameters on my Pixel 4.</i>
+      </p>
+      <p>Are these values perfect? No, of course not—quality is subjective. Do I personally prefer how the Pixel 4 looks with these values? You bet. If I could get a full list of True Tone ambient/display color values, I would expand my tweak to better match the iPhone. If I had better display equipment with me, I could create a set of values that makes the Pixel 4 appear color-accurate in all ambient lighting conditions. And if I wanted to, I could expand Ambient EQ’s color range to make it a total replacement for Night Light. All it takes is a bit of trial and error, and that’s why I’m sharing what I’ve learned with the community.</p>
+      <p>Here’s a <a href="https://forum.xda-developers.com/apps/magisk">Magisk</a> Module I made containing the custom Ambient EQ values in the table shown above. Simply download it from the link below and install the Module in Magisk Manager.</p>
+      <p>
+        <b>
+          <a href="https://www.androidfilehost.com/?fid=4349826312261626370">Download AmbientEQTweak Magisk Module</a>
+        </b>
+      </p>
+      <p>If you’re interested in customizing Ambient EQ on your own, you’ll need to do the following:</p>
+      <ol>
+        <li>
+          <p>Create a Runtime Resource Overlay (RRO) targeting the Android Framework (package name: “android”). <a href="https://hastebin.com/eguzabufos.xml">Here’s the AndroidManifest.xml from my overlay.</a></p>
+          <ul>
+            <li>Create an arrays.xml with the custom parameters you want. For example, config_displayWhiteBalanceAmbientColorTemperatures is the integer array that corresponds to column #1 in the above table while config_displayWhiteBalanceBaseThresholds and config_displayWhiteBalanceDisplayColorTemperatures correspond to column #2 in the above table. Note that config_displayWhiteBalanceDecreaseThresholds and config_displayWhiteBalanceIncreaseThresholds must be the same length as config_displayWhiteBalanceBaseThresholds. <a href="https://hastebin.com/olafebepet.xml">Here’s the arrays.xml I used in my overlay.</a></li>
+            <li>Create an integers.xml file if you want to have a new minimum or maximum display color temperature. Set your minimum in config_displayWhiteBalanceColorTemperatureMin and your maximum in config_displayWhiteBalanceColorTemperatureMax. <a href="https://hastebin.com/exidabozug.xml">Here’s the integers.xml I used in my overlay.</a></li>
+            <li>Create a dimens.xml if you want to change what color temperature Ambient EQ will bias toward in low-lighting conditions. This is done by changing the value of config_displayWhiteBalanceLowLightAmbientColorTemperature. Note that the low-light threshold is a range of lux values in the array config_displayWhiteBalanceLowLightAmbientBrightnesses which can be overridden in arrays.xml. (I overrode the default 10-50 range with 10 so the Pixel 4 would drop down to 5388K when the ambient brightness was below 10 lux.) <a href="https://hastebin.com/pinekivoqa.xml">Here’s the dimens.xml I used in my overlay</a>.</li>
+          </ul>
+        </li>
+        <li>Compile and sign your overlay package and create a Magisk Module to place this overlay in /vendor/overlay.</li>
+      </ol>
+      <p>You can use the <a href="https://github.com/substratum/template">Substratum</a> and <a href="https://github.com/topjohnwu/magisk-module-installer">Magisk Module</a> templates or you can just extract my Magisk Module and decompile the overlay I made to use as a base. If you come up with a set of values you’re happy with, please do share your work in the comments below or on the XDA forums.</p>
+      <p><b><a href="https://forum.xda-developers.com/pixel-4">Google Pixel 4 Forums</a></b> ||| <b><a href="https://forum.xda-developers.com/pixel-4-xl">Google Pixel 4 XL Forums</a></b></p>
+      <p>Lastly, if you want to go the trial-and-error route, I recommend using the following two <a href="https://www.xda-developers.com/install-adb-windows-macos-linux/">adb</a> shell commands:</p>
+      <ul>
+        <li><code>adb shell dumpsys color_display</code> – Use this to see if your minimum and maximum color temperature overrides are working and to see what the current display color temperature is set to.</li>
+        <li><code>adb shell dumpsys display</code> – Look for the “AmbientColorTemperatureSensor” output to see what the TMD3702VC color sensor is reporting the current ambient color temperature as. The events history lists the recorded ambient color temperature and the time, in Unix epoch milliseconds, that the value was recorded.</li>
+      </ul>
+    </article>
+  </body>
+</html>

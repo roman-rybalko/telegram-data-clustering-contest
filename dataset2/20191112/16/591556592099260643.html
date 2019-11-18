@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://www.zdnet.com/article/mcafee-antivirus-software-impacted-by-code-execution-vulnerability/"/>
+    <meta property="og:site_name" content="ZDNet"/>
+    <meta property="article:published_time" content="2019-11-12T16:05:19+00:00"/>
+    <meta property="og:title" content="McAfee antivirus software impacted by code execution vulnerability"/>
+    <meta property="og:description" content="The severe security flaw can bypass self-defense mechanisms."/>
+  </head>
+  <body>
+    <article>
+      <h1>McAfee antivirus software impacted by code execution vulnerability</h1>
+      <address><time datetime="2019-11-12T16:05:19+00:00">12 Nov 2019, 16:05</time> by <a rel="author" href="https://www.zdnet.com/meet-the-team/us/charlie-osborne/" target="_blank">Charlie Osborne</a></address>
+      <p>
+        <b>The severe security flaw can bypass self-defense mechanisms.</b>
+      </p>
+      <figure>
+        <video src="http://android-streaming.techrepublic.com/media/2019/10/15/1623579715910/2019-10-15-wochit-academics-find-eight-vulnerabilities-in-androids-voip-components_1952103_740.mp4"/>
+      </figure>
+      <figure>
+        <img src="https://zdnet2.cbsistatic.com/hub/i/r/2019/10/15/45844af3-4572-4a4f-89e6-a9f7b7ee7083/thumbnail/570x322/6ae6da45f269f040b7fc5e6a33950733/academics-find-eight-vulnerabilities-in-5d9b8a13dc406100013b1d38-1-oct-15-2019-13-46-47-poster.jpg"/>
+      </figure>
+      <p>Researchers have revealed a serious code execution vulnerability impacting all editions of McAfee software.  <br/><br/>On Tuesday, the SafeBreach Labs cybersecurity team said that <a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-3648">CVE-2019-3648</a> can be used to bypass McAfee's self-defense mechanisms, potentially <a href="https://safebreach.com/Post/McAfee-All-Editions-MTP-AVP-MIS-Self-Defense-Bypass-and-Potential-Usages-CVE-2019-3648">leading to further attacks</a> on a compromised system.</p>
+      <p>The vulnerability exists due to a failure to validate whether or not loading DLLs have been signed, and a path issue in which wbemprox.dll attempts to load wbemcomn.dll from its working directory, rather than its actual location in the System32 folder.<br/><br/>As a result, arbitrary, unsigned DLLs can be loaded into multiple services that run as NT AUTHORITY\SYSTEM. <br/><br/><b>See also: </b><a href="https://www.zdnet.com/article/these-software-vulnerabilities-top-mitres-most-dangerous-list-in-2019/">These software vulnerabilities top MITRE's most dangerous list</a></p>
+      <p>Attackers need to have administrator privileges to take advantage of this security flaw. However, if this is achieved, as multiple parts of the software run as a Windows service with system-level permissions, arbitrary code execution can be achieved within the context of McAfee services.  <br/><br/>According to SafeBreach Labs, there are three main ways in which the vulnerability can be exploited in an attack chain. </p>
+      <p>The bug permits attackers to load and execute malicious payloads using multiple signed services within the context of McAfee software, and this ability can, furthermore, be used for application whitelisting bypass and avoiding detection by protective software. <br/><br/><b>CNET: </b><a href="https://www.cnet.com/how-to/alexa-delete-what-i-just-said-heres-how-to-keep-amazon-from-listening-in/?ftag=CMG-01-10aaa1b">Alexa, delete what I just said! Here's how to keep Amazon from listening in</a>  <br/><br/>"The antivirus might not detect the attacker's binary, because it tries to load it without any verification against it," the researchers say.  <br/><br/>In addition, malicious code can be set to reload each time a service is launched in order to maintain persistence on a vulnerable system.  <br/><br/>McAfee Total Protection (MTP), Anti-Virus Plus (AVP), and Internet Security (MIS) up to and including version 16.0.R22 are impacted. Version 16.0.R22 Refresh 1 is being released to resolve the security flaw.  <br/><br/><b>TechRepublic: </b><a href="https://www.techrepublic.com/article/vmware-rolls-out-new-carbon-black-security-suite-and-dell-partnership/?ftag=CMG-01-10aaa1b">VMware rolls out new Carbon Black security suite and Dell partnership</a> <br/><br/>The vulnerability was first reported to McAfee on August 5 through the HackerOne bug bounty platform. The cybersecurity vendor responded on August 21 and later confirmed the validity of the security problem on September 3 after performing triage.  <br/><br/>By October 8, McAfee shared a fix deployment timescale with SafeBreach Labs, leading to the reservation of CVE-2019-3648. <br/><br/>ZDNet has reached out to McAfee but has not heard back at the time of publication. </p>
+      <h3>Previous and related coverage</h3>
+      <ul>
+        <li>
+          <a href="https://www.zdnet.com/article/nvidia-patches-severe-geforce-gpu-vulnerabilities/">Nvidia patches severe GeForce, GPU vulnerabilities</a>
+        </li>
+        <li>
+          <a href="https://www.zdnet.com/article/firm-charged-for-flogging-chinese-spy-equipment-to-us-govt-with-known-security-vulnerabilities/">Aventura charged for flogging Chinese spy equipment to US gov't with security vulnerabilities</a>
+        </li>
+        <li>
+          <a href="https://www.zdnet.com/article/reel-her-in-what-happens-when-tech-journalists-fall-prey-to-spear-phishing-campaigns/">Hook, line and sinker: How I fell victim to phishing attacks - again and again</a>
+        </li>
+      </ul>
+      <hr/>
+      <p><b>Have a tip?</b> Get in touch securely via WhatsApp | Signal at +447713 025 499, or over at Keybase: charlie0</p>
+      <hr/>
+    </article>
+  </body>
+</html>

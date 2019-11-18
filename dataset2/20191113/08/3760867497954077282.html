@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://www.adslzone.net/2019/11/13/intel-zombieload-v2-rendimiento/"/>
+    <meta property="og:site_name" content="ADSLZone"/>
+    <meta property="article:published_time" content="2019-11-13T08:39:25+00:00"/>
+    <meta property="og:title" content="Nuevas vulnerabilidades en procesadores Intel: tu CPU perderá rendimiento"/>
+    <meta property="og:description" content="Zombieload v2 es una nueva vulnerabilidad descubierta en procesadores de Intel cuyo parche hace que tu CPU pierda rendimiento."/>
+  </head>
+  <body>
+    <article>
+      <h1>Nuevas vulnerabilidades en procesadores Intel: tu CPU perderá rendimiento</h1>
+      <address><time datetime="2019-11-13T08:39:25+00:00">13 Nov 2019, 08:39</time> by <a rel="author">Alberto García</a></address>
+      <p>Es de sobra conocido que los procesadores de Intel son un coladero de vulnerabilidades. En los últimos dos años han aparecido más de una decena de vulnerabilidades debido a fallos de diseño en sus chips, y casi que ni sorprende que se hayan encontrado hasta nuevas vulnerabilidades a raíz de un nuevo fallo que hacen que el procesador pierda rendimiento.</p>
+      <h3>Zombieload v2: tu procesador perderá rendimiento con el parche que lo soluciona</h3>
+      <p>El pasado mes de mayo se anunció el descubrimiento de una<b> nueva vulnerabilidad</b> llamada<b> Zombieload</b>, llamadas también ataques MDS. Este tipo de ataque es similar a Meltdown y Spectre, y se aprovechaba de la <b>ejecución especulativa</b>, que es una técnica que Intel usa en sus procesadores Core para mejorar el rendimiento y la velocidad de procesamiento de datos a través de la predicción de cuál va a ser el próximo contenido que va a procesar.</p>
+      <figure>
+        <img src="https://www.adslzone.net/app/uploads/2019/09/intel-agujero-seguridad.jpg"/>
+      </figure>
+      <p>Desde entonces, se han descubierto muchos ataques que permiten aprovecharse de esa función. Zombieload es uno de ellos, con una diferencia con respecto a los anteriores. Mientras Meltdown, Spectre y Foreshadow atacaban los datos presentes en la caché L1, MDS atacaba las estructuras de datos de la microarquitectura, de ahí su nombre de Microarchitectural Data Sampling (MDS). Entre esos datos se incluye la carga y almacenamiento de los datos que la CPU usa para leer y escribir rápidamente los datos que se están procesando por el procesador en un momento dado.</p>
+      <p>Este ataque es <b>el más grave</b> descubierto hasta la fecha relacionado con la ejecución especulativa, ya que es el que más datos permite obtener. Relacionadas con el ataque había cuatro vulnerabilidades: <b>CVE-2018-12126</b> (también llamada Fallout), CVE-<b>2018-12127, CVE-2018-12130 </b>y <b>CVE-2019-11091.</b> Sin embargo, había un quinto ataque que no había sido publicado porque Intel no había lanzado todavía un parche para él: <b>CVE-2019-11135</b>.</p>
+      <p>También llamado <b>Zombieload v2</b>, esta nueva versión es una variante que además funciona en los <b>procesadores más modernos de Intel</b>, los cuales la compañía afirmaba que ya eran inmunes ante estos ataques mediante unas <b>protecciones</b> que habían implementado <b>a nivel de hardware.</b></p>
+      <p>Zombieload v2 ataca las operaciones<b> Intel Transactional Synchronization Extensions (TSX) Asynchronous Abort</b>, más conocidas como TAA, donde el ataque hace que el procesador tenga un conflicto a nivel interno sobre la información que lee, y finalmente acaba provocando que se filtren datos que se están procesando en la CPU.</p>
+      <h3>Zombieload v2 ya está parcheado desde ayer en Windows 10</h3>
+      <p>Esta función está disponible en chips de Intel desde 2013 con los procesadores Haswell de cuarta generación, por lo que todo lo que fue lanzado después está afectado. <b>El ataque funciona en chips como un i9-9900K</b> o un Xeon Gold 5218, que supuestamente eran inmunes a estos ataques a nivel de hardware. También están afectados los chips Cascade Lake lanzados en abril de este año.</p>
+      <p>Estos ataques son bastante difíciles de llevar a cabo, pero la dificultad no es un impedimento para los hackers en la actualidad. Por ello, es conveniente actualizar nuestro ordenadores lo antes posible, aunque instalar los parches correspondientes supone una disminución del rendimiento del procesador que no podemos evitar de ninguna forma. También puede desactivarse TSX, pero la pérdida de rendimiento será similar.</p>
+      <p>Además, el equipo descubrió que los parches para las anteriores cuatro vulnerabilidades tienen un fallo, ya que la solución que implementaron está incompleta y puede ser esquivada por un atacante. Intel se ha defendido diciendo que el parche buscaba «hacer más difícil» que un hacker pudiera aprovecharse de ella, y no buscaban bloquearla por completo.</p>
+      <p>Si tienes Windows 10, Microsoft ha incorporado los parches en el <b>último Patch Tuesday</b> lanzado ayer martes a las 19:00, por lo que si ya has instalado el parche, estás<b> protegido</b> y probablemente tu procesador Intel ya rinda menos. AMD no está afectada.</p>
+    </article>
+  </body>
+</html>

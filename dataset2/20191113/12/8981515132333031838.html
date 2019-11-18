@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://tproger.ru/articles/react-context-in-5-min/"/>
+    <meta property="og:site_name" content="Tproger"/>
+    <meta property="article:published_time" content="2019-11-13T12:38:46+00:00"/>
+    <meta property="og:title" content="React Context за 5 минут: что это и как использовать"/>
+    <meta property="og:description" content="Что такое React Context и как с ним работать? Быстрый и понятный разбор на примере."/>
+  </head>
+  <body>
+    <article>
+      <h1>React Context за 5 минут: что это и как использовать</h1>
+      <address><time datetime="2019-11-13T12:38:46+00:00">13 Nov 2019, 12:38</time> by <a rel="author">Александр Ланский</a></address>
+      <p>Перевод статьи <a href="https://www.freecodecamp.org/news/react-context-in-5-minutes/">«React Context in 5 Minutes»</a></p>
+      <p>React Context для многих стал привычным способом управления состоянием, заменив собой Redux. В этой статье вы узнаете о React Context и научитесь его использовать.</p>
+      <p>
+        <a href="https://tproger.ru/translations/react-communication-between-components/">Способы передачи данных между компонентами в Reacttproger.ru</a>
+      </p>
+      <p>Рассмотрим работу Context на примере такого дерева. Нижние блоки можно представить как отдельные компоненты:</p>
+      <figure>
+        <img src="https://cdn.tproger.ru/wp-content/uploads/2019/11/gevur92qwoxvdjnm12dw.jpg"/>
+      </figure>
+      <p>Допустим, вам нужно добавить свойство какому-то из нижних блоков — это несложно. Но что делать, если это свойство нужно передать соседнему (т. е. отдельному) блоку? Пока единственное решение — передать это свойство блоку-родителю, откуда его можно передать необходимому дочернему блоку.</p>
+      <figure>
+        <img src="https://cdn.tproger.ru/wp-content/uploads/2019/11/u20r26dtxyr6ek6krzsb.jpg"/>
+      </figure>
+      <p>Если вдруг вам понадобится передать свойство соседнему родителю, вы, опять же, просто переносите его на уровень выше, а потом «спускаете» обратно к нужному блоку.</p>
+      <figure>
+        <img src="https://cdn.tproger.ru/wp-content/uploads/2019/11/wtlykrxnx8xi12h4wek4.jpg"/>
+      </figure>
+      <p>Решение довольно простое, а главное — рабочее. Но что делать, если нужно передать свойство дальнему блоку?</p>
+      <figure>
+        <img src="https://cdn.tproger.ru/wp-content/uploads/2019/11/g3xrvthcw24izllvb58w.jpg"/>
+      </figure>
+      <p>Для этого нужно «поднять» свойство по всему дереву вверх до самого первого блока, а потом «спустить» обратно к нужному дочернему блоку. Проблема в том, что это свойство будет проходить через кучу промежуточных компонентов. Этот утомительный и трудоёмкий процесс известен как <i>пробрасывание</i> (англ. <i>prop drilling</i>).</p>
+      <figure>
+        <img src="https://cdn.tproger.ru/wp-content/uploads/2019/11/ey25z0hvmy31xiiqqwgq.jpg"/>
+      </figure>
+      <p>Именно на этом этапе задействуется Context API. Он даёт возможность передавать свойства отдельным блокам дерева без сложных манипуляций с родительскими и дочерними блоками.</p>
+      <figure>
+        <img src="https://cdn.tproger.ru/wp-content/uploads/2019/11/ckfpokb2cz3ffmn8238i.jpg"/>
+      </figure>
+      <p>В качестве примера использования React Context возьмём вот такой забавный переключатель дня и ночи:</p>
+      <figure>
+        <video src="https://cdn.tproger.ru/wp-content/uploads/2019/11/3evdww.gif" autoplay="" loop=""/>
+      </figure>
+      <p>Полный код можно посмотреть <a href="https://scrimba.com/c/czkvE4sw">здесь</a>.</p>
+      <h3>Создание Context</h3>
+      <p>Вначале нужно сделать так, чтобы всё приложение имело доступ к Context. Для этого в <code>index.js</code> нужно обернуть всё приложение в <code>ThemeContext.Provider</code>. Ещё стоит передать ему свойство <code>value</code>. В нём будет храниться состояние: день или ночь.</p>
+      <pre>import React from "react";<br/>import ReactDOM from "react-dom";<br/>import ThemeContext from "./themeContext";<br/><br/>import App from "./App";<br/><br/>ReactDOM.render(<br/>  &lt;ThemeContext.Provider value={"Day"}&gt;<br/>    &lt;App /&gt;<br/>  &lt;/ThemeContext.Provider&gt;,<br/>  document.getElementById("root")<br/>);</pre>
+      <h3>Получение свойств от Context через contextType</h3>
+      <p>Пока что в <code>App.js</code> возвращается компонент <code>&lt;Image /&gt;</code>.</p>
+      <pre>import React from "react";<br/>import Image from "./Image";<br/><br/>class App extends React.Component {<br/>  render() {<br/>    return (<br/>      &lt;div className="app"&gt;<br/>        &lt;Image /&gt;<br/>      &lt;/div&gt;<br/>    );<br/>  }<br/>}<br/><br/>export default App;</pre>
+      <p>Нам нужно с помощью Context менять <code>className</code> в <code>Image.js</code> с <code>Day</code> на <code>Night</code> и обратно. Для этого нужно добавить к компоненту статическое свойство <code>ContextType</code>. Потом, используя интерполяцию строки, нужно передать это свойство в <code>className</code> в объекте <code>&lt;Image /&gt;</code>.</p>
+      <p>Теперь свойство <code>className</code> содержит строку из <code>value</code>:</p>
+      <pre>import React from "react";<br/>import Button from "./Button";<br/>import ThemeContext from "./themeContext";<br/><br/>class Image extends React.Component {<br/>  render() {<br/>    const theme = this.context;<br/>    return (<br/>      &lt;div className={`${theme}-image image`}&gt;<br/>        &lt;div className={`${theme}-ball ball`} /&gt;<br/>        &lt;Button /&gt;<br/>      &lt;/div&gt;<br/>    );<br/>  }<br/>}<br/><br/>Image.contextType = ThemeContext;<br/><br/>export default Image;</pre>
+      <h3>Получение свойств из Context</h3>
+      <p>К сожалению, способ выше работает только с классовыми компонентами. Но благодаря <a href="https://www.freecodecamp.org/news/react-hooks-in-5-minutes/">хукам</a> с помощью функциональных компонентов теперь можно сделать всё что угодно. Так что для полноты картины нужно конвертировать имеющиеся компоненты в функциональные и использовать <code>ThemeContext.Consumer</code>, чтобы передать информацию между ними.</p>
+      <p>
+        <a href="https://tproger.ru/translations/react-hooks/">Пишем приложение со списком дел при помощи React Hookstproger.ru</a>
+      </p>
+      <p>Это можно сделать, обернув элементы в экземпляр <code>&lt;ThemeContext.Consumer&gt;</code>. Внутри него нужно предоставить функцию, возвращающую элементы. В данном случае будет использоваться паттерн «render props», который позволяет передать компоненту в качестве children любую функцию, которая возвращает JSX код.</p>
+      <pre>import React from "react";<br/>import Button from "./Button";<br/>import ThemeContext from "./themeContext";<br/><br/>function Image(props) {<br/>  // Это больше не нужно<br/>  // const theme = this.context<br/><br/>  return (<br/>    &lt;ThemeContext.Consumer&gt;<br/>      {theme =&gt; (<br/>        &lt;div className={`${theme}-image image`}&gt;<br/>          &lt;div className={`${theme}-ball ball`} /&gt;<br/>          &lt;Button /&gt;<br/>        &lt;/div&gt;<br/>      )}<br/>    &lt;/ThemeContext.Consumer&gt;<br/>  );<br/>}<br/><br/>// Это больше не нужно<br/>// Image.contextType = ThemeContext;<br/><br/>export default Image;</pre>
+      <p>Примечание <code>&lt;Button /&gt;</code> тоже нужно обернуть в <code>&lt;ThemeContext.Consumer&gt;</code> — в будущем это добавит функциональности кнопке.</p>
+      <pre>import React from "react";<br/>import ThemeContext from "./themeContext";<br/><br/>function Button(props) {<br/>  return (<br/>    &lt;ThemeContext.Consumer&gt;<br/>      {context =&gt; (<br/>        &lt;button className="button"&gt;<br/>          Switch<br/>          &lt;span role="img" aria-label="sun"&gt;<br/>            🌞<br/>          &lt;/span&gt;<br/>          &lt;span role="img" aria-label="moon"&gt;<br/>            🌚<br/>          &lt;/span&gt;<br/>        &lt;/button&gt;<br/>      )}<br/>    &lt;/ThemeContext.Consumer&gt;<br/>  );<br/>}<br/><br/>export default Button;</pre>
+      <h3>Вынесение свойств из Context</h3>
+      <p>На текущем этапе в приложении передаётся заранее прописанное значение, но наша цель — переключать день и ночь кнопкой. Для этого нужно переместить <code>&lt;Provider&gt;</code> в отдельный файл и обернуть его в собственный компонент <code>ThemeContextProvider</code>.</p>
+      <pre>import React, { Component } from "react";<br/>const { Provider, Consumer } = React.createContext();<br/><br/>class ThemeContextProvider extends Component {<br/>  render() {<br/>    return &lt;Provider value={"Day"}&gt;{this.props.children}&lt;/Provider&gt;;<br/>  }<br/>}<br/><br/>export { ThemeContextProvider, Consumer as ThemeContextConsumer };</pre>
+      <p>Примечание Теперь свойство <code>value</code> обрабатывается и в новом файле <code>ThemeContext.js</code>, поэтому обработку этого значения из файла <code>index.js</code> нужно убрать.</p>
+      <h3>Изменение Context</h3>
+      <p>Чтобы подвязать кнопку, сначала нужно добавить состояния <code>state</code> в <code>ThemeContextProvider</code>:</p>
+      <pre>import React, { Component } from "react";<br/>const { Provider, Consumer } = React.createContext();<br/><br/>// Примечание: ещё вы можете использовать хуки, чтобы определять состояние <br/>// и преобразовывать его в функциональный компонент<br/>class ThemeContextProvider extends Component {<br/>  state = {<br/>    theme: "Day"<br/>  };<br/>  render() {<br/>    return &lt;Provider value={"Day"}&gt;{this.props.children}&lt;/Provider&gt;;<br/>  }<br/>}<br/><br/>export { ThemeContextProvider, Consumer as ThemeContextConsumer };</pre>
+      <p>Потом нужно добавить метод переключения между днём и ночью:</p>
+      <pre>toggleTheme = () =&gt; {<br/>  this.setState(prevState =&gt; {<br/>    return {<br/>      theme: prevState.theme === "Day" ? "Night" : "Day"<br/>    };<br/>  });<br/>};</pre>
+      <p>После этого нужно изменить значение <code>value</code> на <code>this.state.theme</code>, чтобы свойство устанавливалось из состояния:</p>
+      <pre> render() {<br/>    return &lt;Provider value={this.state.theme}&gt;{this.props.children}&lt;/Provider&gt;;<br/>  }</pre>
+      <p>Теперь нужно изменить <code>value</code> на объект, содержащий <code>{theme: this.state.theme, toggleTheme: this.toggleTheme}</code>, а также заменить использование <code>value</code> на получение поля <code>theme</code> из объекта. То есть нужно каждое <code>theme</code> заменить на <code>context</code>, а каждую ссылку на <code>theme</code> — на <code>context.theme</code>.</p>
+      <p>И под конец на кнопку нужно повесить слушатель события <code>onClick</code>. При нажатии кнопки должен вызываться <code>context.toggleTheme</code> — в таком случае будут обновляться Consumer’ы, которые используют состояние от Provider’ов. Код кнопки будет выглядеть примерно так:</p>
+      <pre>import React from "react";<br/>import { ThemeContextConsumer } from "./themeContext";<br/><br/>function Button(props) {<br/>  return (<br/>    &lt;ThemeContextConsumer&gt;<br/>      {context =&gt; (<br/>        &lt;button onClick={context.toggleTheme} className="button"&gt;<br/>          Switch<br/>          &lt;span role="img" aria-label="sun"&gt;<br/>            🌞<br/>          &lt;/span&gt;<br/>          &lt;span role="img" aria-label="moon"&gt;<br/>            🌚<br/>          &lt;/span&gt;<br/>        &lt;/button&gt;<br/>      )}<br/>    &lt;/ThemeContextConsumer&gt;<br/>  );<br/>}<br/><br/>export default Button</pre>
+      <p>Теперь эта кнопка переключает день и ночь.</p>
+      <figure>
+        <video src="https://cdn.tproger.ru/wp-content/uploads/2019/11/3evdww.gif" autoplay="" loop=""/>
+      </figure>
+      <h3>Рекомендации к работе с Context</h3>
+      <p>Хоть в этом коде всё работает отлично, всё же есть некоторые аспекты с работой Context:</p>
+      <ul>
+        <li>Не используйте Context, если он заменяет пробрасывание всего на один-два уровня. Этот инструмент — отличный способ, если нужно распространить состояние на множество компонентов, находящихся в «дереве» далеко друг от друга. Но если вам нужно просто опуститься или подняться на пару уровней, то пробрасывание будет легче и быстрее.</li>
+        <li>Постарайтесь не использовать Context для сохранения локального состояния. Например, если вам нужно сохранить введённые в форму данные, то лучше использовать локальное свойство.</li>
+        <li>Всегда оборачивайте родителя в Provider’а на как можно более низком уровне — не стоит использовать самую верхушку «дерева».</li>
+        <li>Наконец, если вы решили пересылать свойства таким способом, важно помнить про наблюдение за производительностью и рефакторингом. Но это скорее всего не понадобится, если просадки в производительности не будут сильно заметны.</li>
+      </ul>
+      <p>
+        <a href="https://tproger.ru/translations/javascript-code-cleanup-how-to-refactor-using-classes/">Рефакторинг через классы: вычищаем свой JavaScript-кодtproger.ru</a>
+      </p>
+      <blockquote>Не смешно? А здесь смешно: <a href="https://tproger.ru/tg/ithumor">@ithumor</a></blockquote>
+    </article>
+  </body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://www.bleepingcomputer.com/news/microsoft/microsoft-fixes-windows-10-missing-deferred-update-settings-bug/"/>
+    <meta property="og:site_name" content="BleepingComputer"/>
+    <meta property="article:published_time" content="2019-11-11T20:35:43+00:00"/>
+    <meta property="og:title" content="Microsoft Fixes Windows 10 Missing Deferred Update Settings Bug"/>
+    <meta property="og:description" content="Microsoft has finally fixed a bug that caused the Windows 10 1903 settings to disappear that allowed you to defer Windows updates to a later date. This was quietly fixed in the optional KB4522355 cumulative update and will hopefully make it into tomorrow's Patch Tuesday updates."/>
+  </head>
+  <body>
+    <article>
+      <h1>Microsoft Fixes Windows 10 Missing Deferred Update Settings Bug</h1>
+      <address><time datetime="2019-11-11T20:35:43+00:00">11 Nov 2019, 20:35</time> by <a rel="author" href="https://www.bleepingcomputer.com/author/lawrence-abrams/" target="_blank">Lawrence Abrams</a></address>
+      <figure>
+        <img src="https://www.bleepstatic.com/content/hl-images/2019/03/13/Windows_10_Space.png"/>
+      </figure>
+      <p>Microsoft has finally fixed a bug that caused the Windows 10 1903 settings to disappear that allowed you to defer Windows updates to a later date. This was quietly fixed in the optional KB4522355 cumulative update and will hopefully make it into tomorrow's Patch Tuesday updates.</p>
+      <p>Windows 10 1903 has an advanced Windows update option that allows you to defer a new feature update for 365 days or a quality update for 30 days.</p>
+      <figure>
+        <img src="https://www.bleepstatic.com/images/news/Microsoft/Windows-10/d/defer-updates-missing/defer-updates-settings.jpg"/>
+        <figcaption>Defer updates settings</figcaption>
+      </figure>
+      <p>An unacknowledged bug, would cause these settings to disappear on reboot if you change either of them to a non-zero value.  Even though the settings would be gone, Windows 10 would still honor the values you previously selected, but no longer provider you an easy way to change them.</p>
+      <figure>
+        <img src="https://www.bleepstatic.com/images/news/Microsoft/Windows-10/d/defer-updates-missing/defer-updates-settings-missing.jpg"/>
+        <figcaption>Missing defer updates settings</figcaption>
+      </figure>
+      <p>When users encountered this bug, the only way they could change the settings would be to do it from the Windows Registry "DeferFeatureUpdatesPeriodInDays" and "DeferQualityUpdatesPeriodInDays" values under the HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\WindowsUpdate\UX\Settings key.</p>
+      <figure>
+        <img src="https://www.bleepstatic.com/images/news/Microsoft/Windows-10/d/defer-updates-missing/registry-settings.jpg"/>
+        <figcaption>Deferred update Windows Registry settings</figcaption>
+      </figure>
+      <p>Woody Leanhord, who has been <a href="https://www.computerworld.com/article/3452525/disappearing-windows-update-deferral-pane-suddenly-reappears.html">tracking this bug</a> for quite some time, recently learned that this issue is fixed in the latest Windows 10 1903 KB4522355 cumulative update released on October 24th, 2019.</p>
+      <p>According to <a href="https://www.tenforums.com/windows-updates-activation/142625-strange-case-missing-pause-feature-update-setting.html#post1754080">TenForums user Bree</a> and confirmed by BleepingComputer, installing the KB4522355 update will fix the issue and the settings will become visible again.</p>
+      <figure>
+        <img src="https://www.bleepstatic.com/images/news/Microsoft/Windows-10/d/defer-updates-missing/deferred-update-settings-fixed.jpg"/>
+        <figcaption>Deferred updates settings fixed</figcaption>
+      </figure>
+      <p>As the KB4522355 update is optional, it is expected (hoped?) that this fix will make it into all Windows 10 machines tomorrow on the November 12th Patch Tuesday.</p>
+    </article>
+  </body>
+</html>

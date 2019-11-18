@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://www.zdnet.com/article/macos-catalina-warning-dont-upgrade-if-you-rely-on-a-drobo-8d/"/>
+    <meta property="og:site_name" content="ZDNet"/>
+    <meta property="article:published_time" content="2019-11-14T16:44:00+00:00"/>
+    <meta property="og:title" content="macOS Catalina warning: Don't upgrade if you rely on a Drobo 8D"/>
+    <meta property="og:description" content="Here's a quick note of caution. Your Drobo drive array may be unstable if you upgrade to Catalina. Whenever there's the potential for data loss, we have to advise you to just say no."/>
+  </head>
+  <body>
+    <article>
+      <h1>macOS Catalina warning: Don't upgrade if you rely on a Drobo 8D</h1>
+      <address><time datetime="2019-11-14T16:44:00+00:00">14 Nov 2019, 16:44</time> by <a rel="author" href="https://www.zdnet.com/meet-the-team/us/david-gewirtz/" target="_blank">David Gewirtz</a></address>
+      <p>
+        <b>Here's a quick note of caution. Your Drobo drive array may be unstable if you upgrade to Catalina. Whenever there's the potential for data loss, we have to advise you to just say no.</b>
+      </p>
+      <figure>
+        <video src="http://android-streaming.techrepublic.com/media/2019/07/03/1562689603914/2019-07-03-wochit-macos-catalina-beta-hands-on-apples-veteran-desktop-os-can-still-learn-new-tricks_1885418_740.mp4"/>
+      </figure>
+      <figure>
+        <img src="https://zdnet3.cbsistatic.com/hub/i/r/2019/07/03/0e0ecdbb-8f0c-4880-b6db-3d729940a3cd/thumbnail/570x322/f33006f9ee58ee03031429e9458a8763/macos-catalina-beta-hands-on-apples-vete-5d1b614cbd785600c33293a9-1-jul-03-2019-20-40-49-poster.jpg"/>
+      </figure>
+      <p><b>November 14 Update: </b>We originally published this article on October 10. Since then, we've gotten a statement from Rod Harrison, VP of Engineering at StorCentric, parent company of Drobo:</p>
+      <blockquote>macOS Catalina has reported issues with multiple external devices from various manufacturers. We have reported this to Apple in regards to Drobo specifically and we are still awaiting an update from the company. We will share an update with all of our customers as soon as we receive this. However, as this is a broader issue across multiple external devices, we do not believe that this should prevent Drobo users from upgrading to Catalina.</blockquote>
+      <blockquote>Drobo is also planning to release an updated Dashboard that supports Catalina later this month, which will enable users to upgrade firmware, gather diagnostics and format new volumes. We will share this with all of our customers as soon as it is available.</blockquote>
+      <blockquote>Customers should note, the Drobo Support Knowledge Base on Catalina can be found here. Drobo Dashboard can be made to work currently by manually adding privileges through 'System Preferences'. Customers can also reach out to Drobo's support team directly via the support portal (https://myproducts.drobo.com/cc/cpSignIn.html) for assistance at any time."</blockquote>
+      <p>Personally, I'm a little concerned with the premise that because "this is a broader issue across multiple external devices, we do not believe that this should prevent Drobo users from upgrading to Catalina." I'm going to hold off for a while on my upgrade, at least until Catalina gets a few more point upgrades. Let me know if you've upgraded with your 8D and how things are working out. In the meantime, don't forget to back to another device (and since there are external device issues, it might not hurt to make that backup destination a network device, like the <a href="https://www.zdnet.com/article/nas-wars-2017-we-test-the-synology-diskstation-ds1817-raid/">Synology NAS I reviewed</a>).<br/><br/><b>Original article below:</b><br/><br/>Yesterday, ZDNet's storage guru Robin Harris reported that <a href="https://www.zdnet.com/article/macos-catalina-hold-off-for-a-couple-of-weeks/">he went ahead and upgraded his Mac to macOS Catalina</a> as soon as it was released. As Robin told us, it was a mistake.</p>
+      <p>He described how many of his 300+ apps were not yet compatible with Catalina. That's no surprise. Every big OS upgrade causes some incompatibility. However, the Catalina upgrade has bigger potential to upset because <a href="https://www.zdnet.com/article/here-are-235-apps-that-will-not-run-with-macos-catalina/">Apple has finally eliminated support for 32-bit apps</a>.</p>
+      <p>So far, most of the coverage about Catalina has been about software incompatibilities. But now, we've got a bigger warning for you. Some storage may be compromised. <br/><br/>Late last year, I gave you a look at <a href="https://www.zdnet.com/article/first-look-drobo-8d-thunderbolt-3-direct-attached-raid-array/">Drobo's latest direct-attached storage array, the Drobo 8D</a>. What made the 8D stand out was that it was Drobo's first Thunderbolt 3-based device. I've been using it all year and am very satisfied with its performance.</p>
+      <p>But now, Drobo has issued a warning. Buried in <a href="https://www.drobo.com/upgrade-guide-for-macos-catalina/">the company's Upgrade Guide for macOS Catalina</a>, where it discusses how to properly backup and then upgrade most Drobo storage arrays, was this warning:</p>
+      <blockquote>We have noticed an issue with connectivity over Thunderbolt 3 on macOS Catalina 10.15 and are actively working with Apple. For now, we recommend 5D3 customers to use the USB C port, and for Drobo 8D customers to wait on upgrading.</blockquote>
+      <p>The 5D3 comes with one USB C port and two Thunderbolt 3 ports. While not necessarily ideal because USB C is slower than Thunderbolt 3, switching cables from Thunderbolt 3 to USB C is not a big hassle. <br/><br/>On the other hand, the wonderfully beefy Drobo 8D only has Thunderbolt 3 ports. Since Drobo has "noticed an issue with connectivity," there's no real way to re-route the 8D to a USB C port. That's why Drobo is recommending you "wait on upgrading." <br/><br/>That's it for this article. I rely on the 8D Drobo sent me, so I'm not going to upgrade to Catalina for a while. Hopefully, Drobo will release an upgrade to the 8D (and their other devices with Thunderbolt 3 support) that overcomes whatever "issue with connectivity" it's having before anyone loses any data. <br/><br/>Have you upgraded to Catalina yet? What challenges or successes have you had? Let us know in the comments below. I always wait months before I do any upgrades to mission-critical systems. I probably won't brave Catalina until the new year. What about you?</p>
+      <hr/>
+      <p>
+        <i>You can follow my day-to-day project updates on social media. Be sure to follow me on Twitter at <a href="https://twitter.com/davidgewirtz">@DavidGewirtz</a>, on Facebook at <a href="https://www.facebook.com/davidgewirtz">Facebook.com/DavidGewirtz</a>, on Instagram at <a href="https://www.instagram.com/DavidGewirtz/">Instagram.com/DavidGewirtz</a>, and on YouTube at <a href="https://www.youtube.com/user/DavidGewirtzTV">YouTube.com/DavidGewirtzTV</a>.</i>
+      </p>
+    </article>
+  </body>
+</html>

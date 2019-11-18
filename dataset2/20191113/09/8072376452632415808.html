@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://www.cbronline.com/news/microsoft-security-updates-patch-tuesday"/>
+    <meta property="og:site_name" content="Computer Business Review"/>
+    <meta property="article:published_time" content="2019-11-13T09:29:08+00:00"/>
+    <meta property="og:title" content="Microsoft Pushes Out Patches for 13 Critical Vulnerabilities, Spanning IE, Hypervisor Escape, More"/>
+    <meta property="og:description" content="It's Patch Tuesday again, with Microsoft security updates landing to address 74 vulnerabilities; 13 of them labeled critical, including..."/>
+  </head>
+  <body>
+    <article>
+      <h1>Microsoft Pushes Out Patches for 13 Critical Vulnerabilities, Spanning IE, Hypervisor Escape, More</h1>
+      <h2>“The bulletin does not state what level of privileges are required to exploit…”</h2>
+      <address>
+        <time datetime="2019-11-13T09:29:08+00:00">13 Nov 2019, 09:29</time>
+      </address>
+      <p>Patch Tuesday looks a little more substantial this month, with Microsoft security updates now available to address a total of 74 vulnerabilities, 13 of them labelled critical, including one zero day being actively exploited in the wild.</p>
+      <p>The fixes are up from last month’s 60 CVEs; nine of which were critical. Security teams are being urged to update their systems as soon as possible.</p>
+      <p>One of the patches (<a href="https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2019-1429">CVE-2019-1429</a>) is for a remote code execution vulnerability exists in the way that the scripting engine handles objects in memory in Internet Explorer. This has been reported by Microsoft as being actively attacked in the wild.</p>
+      <related>
+        <a href="https://www.cbronline.com/news/oracle-patches-nosql-vulnerability"/>
+      </related>
+      <p>Chris Goettl, Director of Security Solutions at <a href="https://www.ivanti.co.uk/">Ivanti</a> said in an emailed comment: “The vulnerability only gains them equal access to the current user, so proper privilege management would mitigate the attacker’s ability to take full control of the system without using additional elevation of privilege exploits.</p>
+      <p>He added: “For attack vectors, an attacker could craft a website or embed an ActiveX control marked with ‘safe for initialisation’ in an application or Office document that hosts the IE rendering engine. Security training on common phishing and user-targeted attack methods could further reduce the risk of this vulnerability being exploited. But since it is already being exploited in the wild, it is highly recommended to get the patch rolled out quickly to resolve the vulnerability completely.”</p>
+      <h3>Microsoft Security Updates Span 13 Critical Vulns</h3>
+      <figure>
+        <img src="https://www.cbronline.com/wp-content/uploads/2019/11/patch2.jpg"/>
+      </figure>
+      <p>Of the 13 critical vulnerabilities, five are for browsers and scripting engines.</p>
+      <p>Out of the eight other critical vulnerabilities, four are potential hypervisor escapes in Hyper-V.</p>
+      <p>There are also vulnerabilities in Microsoft Exchange, Win32k, Windows Media Foundations, and OpenType, Microsoft said <a href="https://portal.msrc.microsoft.com/en-us/security-guidance/releasenotedetail/164aa83e-499c-e911-a994-000d3a33c573">in its monthly update</a>.</p>
+      <p>The critical vulnerability (<a href="https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2019-1373">CVE-2019-1373</a>) in Microsoft Exchange also stands out, but scant details have emerged. As Jimmy Graham, Senior Director of Product Management at Qualys notes: “The bulletin states that the user must execute PowerShell cmdlets against the Exchange server, but the bulletin does not state what level of privileges are required to exploit. With this being unknown at this time, it is recommended that this patch be prioritized for any Microsoft Exchange servers.”</p>
+      <p>Ivanti’s Goettl adds: “Microsoft has resolved a publicly disclosed vulnerability (<a href="https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2019-1457">CVE-2019-1457</a>) in Excel that could bypass security features.</p>
+      <p>“An attacker could embed a control in an Excel worksheet that specifies a macro should be run. Whatever is executed in the macro that was triggered by bypassing the security settings of Excel would be the real risk of this vulnerability. This vulnerability is not currently being exploited in the wild, but since it has been publicly disclosed, threat actors have had a jump start on being able to develop an exploit to take advantage of the CVE. This puts the vulnerability at higher risk of exploitation.”</p>
+      <related>
+        <a href="https://www.cbronline.com/news/microsoft-servicing-stack-update"/>
+      </related>
+      <related>
+        <h4>Related News</h4>
+        <a href="https://www.cbronline.com/news/magento-security-warning"/>
+        <a href="https://www.cbronline.com/news/penetration-testing-scope"/>
+        <a href="https://www.cbronline.com/news/sextortion-malware"/>
+      </related>
+    </article>
+  </body>
+</html>

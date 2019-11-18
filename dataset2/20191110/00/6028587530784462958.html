@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://www.forbes.com/sites/janakirammsv/2019/11/10/the-curious-case-of-mlperf-inferencing-benchmark-results/"/>
+    <meta property="og:site_name" content="Forbes"/>
+    <meta property="article:published_time" content="2019-11-10T00:00:00+00:00"/>
+    <meta property="og:title" content="The Curious Case Of MLPerf Inferencing Benchmark Results"/>
+    <meta property="og:description" content="As MLPerf evolves, it has the potential to become the most sought after benchmark to assess the performance of ML training and inference hardware."/>
+  </head>
+  <body>
+    <article>
+      <h1>The Curious Case Of MLPerf Inferencing Benchmark Results</h1>
+      <address><time datetime="2019-11-10T00:00:00+00:00">10 Nov 2019</time> by <a rel="author">Janakiram MSV</a></address>
+      <p>In February 2018, AI engineers and machine learning researchers from Baidu, Google, Harvard University, Stanford University and the University of California Berkeley launched a forum called <a href="https://mlperf.org/">MLPerf</a>. </p>
+      <figure>
+        <img src="https://specials-images.forbesimg.com/imageserve/5dc7e5f92c886a0007ebcca2/960x0.jpg?fit=scale"/>
+        <figcaption>Speed<cite>PIXABAY</cite></figcaption>
+      </figure>
+      <p>Based on the lines of System Performance Evaluation Consortium (<a href="https://www.spec.org/">SPEC</a>) benchmark for general-purpose computing and the Transaction Processing Council (<a href="http://www.tpc.org/">TPC</a>) benchmark for database systems, MLPerf aims to become a credible benchmark for measuring the training and inferencing performance of machine learning models. </p>
+      <p>MLPerf working group chair includes representatives from well-known hardware and software organizations such as Facebook, HP, Intel, Microsoft, and NVIDIA. </p>
+      <p>Having published the results for its first <a href="https://mlperf.org/training-results-0-6/">ML training benchmark</a>, MLPerf recently announced the results from the <a href="https://www.mlperf.org/inference-results">first inferencing benchmarking</a> exercise. </p>
+      <p>Before delving into the results from the benchmark, let me set some context and background. </p>
+      <p>Machine learning models have two lives - training and inference. Training deals with the correlation of large datasets with complex algorithms to find hidden patterns and relationships among multiple data points. The outcome of training is a machine learning model which contains the identified pattern that can be used to predict or classify unknown data. Inferencing is the next phase of machine learning where a fully-trained model is used in applications to perform predictions through classification, detection or segmentation techniques. Since the power of ML is realized through inferencing, it is as important as the training process. </p>
+      <p>Both training and inferencing demand massive compute power to perform intense mathematical calculations. General-purpose CPUs may not be sufficient to handle these calculations. To complement CPUs, a new generation of chips in the form of Graphics Processing Unit (GPU), FPGA (Field Programmable Gate Array) and Application Specific Integrated Circuit (ASIC) have emerged. Google, Intel, NVIDIA, Qualcomm are some of the vendors manufacturing these chips that accelerate the performance of training and inference. </p>
+      <p>The new AI accelerators need purpose-built software to exploit the hardware capabilities. For example, NVIDIA GPUs can be accessed through <a href="https://developer.nvidia.com/cuda-zone">CUDA</a> during training and inferencing. Intel’s CPU, FPGA, and ASICs work with optimized versions of mainstream training toolkits and <a href="https://software.intel.com/en-us/openvino-toolkit">OpenVINO Toolkit</a> for inferencing. Google’s Tensor Processing Unit (<a href="https://cloud.google.com/tpu/">TPU</a>) is optimized for <a href="https://www.tensorflow.org/">TensorFlow</a>, the most popular deep learning toolkit and framework. </p>
+      <p>AI engineers deal with a disparate stack of software during the training and inferencing phases of machine learning models. </p>
+      <p>The performance of a training job is measured in terms of how fast the model evolves from a large dataset. Similarly, inferencing is measured on the accuracy and speed at which the predictions are made by a model when fed with one or more data points. </p>
+      <p>The most recent results published by MLPerf measured the inference performance of AI accelerators in multiple scenarios and environments. </p>
+      <p>The benchmark tested the hardware in two environments across three scenarios. Image classification, object detection, and machine translation are the scenarios while server and edge are the environments used by the benchmark. Even within the server environment, the test measured the performance of inferencing while accessing offline dataset and responding to an online request. Within the edge environment, the scenarios included single stream and multiple streams of data which roughly translates to an edge device inferencing from a single camera vs multiple cameras.</p>
+      <figure>
+        <img src="https://specials-images.forbesimg.com/imageserve/5dc7e762e0af7b0006b0fd08/960x0.jpg?fit=scale"/>
+        <figcaption>MLPerf Metrics<cite>MLPerf</cite></figcaption>
+      </figure>
+      <p>MLPerf used popular datasets such as ImageNet, COCO and WMT E-G with mainstream neural network architectures including MobileNet, ResNet and NMT.</p>
+      <p>The benchmark measured the results of single stream inferencing in milliseconds, multistream in no. streams, server inferencing in queries per second (QPS) and offline scenario in the number of inputs processed in a second.</p>
+      <p>Half-a-dozen companies submitted their results for each of these scenarios and environments. The participants included Alibaba Cloud, Centaur Technology, Dell EMC, dividiti, FuriosaAI, Google, Habana Labs, Hailo, Intel, NVIDIA and Qualcomm. </p>
+      <p>Each submission disclosed the system, CPU, AI accelerator and the software stack used for the benchmark. It’s not surprising to see Intel Xeon and Skylake processors are most preferred CPUs. AI accelerators differed widely between each submission. </p>
+      <p>Intel used Xeon Scalable processors with OpenVINO Toolkit while Google ran the benchmark on Compute Engine instances powered by Intel Skylake CPU and Cloud TPU v3 accelerator with TensorFlow toolkit. NVIDIA relied on Intel Xeon Platinum 8280 CPU and Tesla T4 GPU based on TensorRT software. Some of the tests used TITAN RTX and Xavier SOC GPUs with TensorRT. Qualcomm went with SDM855 QRD system powered by Qualcomm Kryo485 CPU and Qualcomm Hexagon 690 AI accelerator with Snapdragon Neural Processing Engine software toolkit. </p>
+      <p>When we look at the results, it becomes evident that not every vendor submitted their results for all the scenarios and environments. They conveniently excused themselves from benchmarks not aligned with their strengths.  For example, Google didn’t include Edge TPU - the counterpart of Cloud TPU for the edge - from the single and multi-stream test cases. Same is the case with Intel which didn’t submit results for the multi-stream scenario.</p>
+      <p>Surprisingly, NVIDIA is the only vendor to submit the results across all scenarios and environments. For use cases based on server, it used T4 GPUs while using Jetson Xavier for edge scenarios. </p>
+      <p>Given that this is the first version of MLPerf inferencing benchmarks, it’s hard to call out the winner. The scope is too broad for anyone to claim victory. But, NVIDIA not only has submissions across every category, but it also performed better than its competitors. </p>
+      <figure>
+        <img src="https://specials-images.forbesimg.com/imageserve/5dc7e661ea103f0006521a3d/960x0.jpg?fit=scale"/>
+        <figcaption>NVIDIA Turning results from MLPerf Benchmark<cite>NVIDIA</cite></figcaption>
+      </figure>
+      <p>NVIDIA topped all five benchmarks for both data center scenarios (offline and server), with Turing GPUs providing the highest performance per processor among commercially available products.</p>
+      <figure>
+        <img src="https://specials-images.forbesimg.com/imageserve/5dc7e69cea103f0006521a41/960x0.jpg?fit=scale"/>
+        <figcaption>NVIDIA Xavier results from MLPerf Benchmark<cite>NVIDIA</cite></figcaption>
+      </figure>
+      <p>Google did well in scaling the infrastructure to process large dataset in the offline server scenarios. It demonstrated linear scalability going from 1 to 32 Cloud TPU devices rapidly. According to Google, the Cloud TPU ResNet-50 v1.5 offline submission demonstrates that just 32 Cloud TPU v3 devices can collectively process more than one million images per second. To understand that scale and speed, if all 7.7 billion people on Earth uploaded a single photo, you could classify this entire global photo collection in under 2.5 hours and do so for less than $600. Google claims that it is the price/performance leader for inferencing in the cloud. </p>
+      <figure>
+        <img src="https://specials-images.forbesimg.com/imageserve/5dc7e6c1ea103f0006521a45/960x0.jpg?fit=scale"/>
+        <figcaption>Google TPU MLPerf Results<cite>GOOGLE</cite></figcaption>
+      </figure>
+      <p>In the preview category, Intel submitted results based on the upcoming Nervana Neural Network Processor for Inference (NNP-I). Running two pre-production Intel Nervana NNP-I processors on pre-alpha software based on the Open Neural Network Exchange (<a href="https://onnx.ai/">ONNX</a>) toolkit, Intel demonstrated that it could process 10,567 images/sec in the offline scenario and 10,263 images/sec in server scenario. </p>
+      <p>Intel Xeon Scalable processors dealt with 9,468 images/sec in the offline scenario and 5,262 images/sec in server scenario for object detection when using the OpenVINO toolkit. For image classification code running on PyTorch, the systems based on Intel Xeon Scalable CPU processed 29,203 images/sec in the offline scenario and 27,245 images/sec in the server scenario. Intel claims that it had the lowest latency in single-stream measurement among all submissions. </p>
+      <p>With the imminent launch of discrete GPU, general availability of Nervana Neural Network Processors and the OneAPI software stack, we can expect Intel to participate in all the scenarios and environments of MLPerf’s future benchmarks. </p>
+      <p>Like other industry benchmarks, MLPerf has multiple scenarios and parameters which may match the strengths of a specific vendor. To make the benchmark results tangible for enterprises and end-user organizations, MLPerf should have a well-defined submission criterion that places the participating vendors on a level playing field. For example, there should be separate benchmarks to measure the effective performance of inferencing in the cloud, enterprise data center, and edge environments, Combining all of this into one and including all the vendors make it hard to fathom the outcome and results of the benchmark. </p>
+      <p>The key takeaway from these results is that NVIDIA is the clear winner irrespective how the results are parsed. NVIDIA Turing 4 GPUs on the server and Jetson family of GPUs at the edge have done exceptionally well. Even the competitors of NVIDIA are forced to offer T4 GPUs in their respective platforms. </p>
+      <p>As MLPerf evolves, it has the potential to become the most sought after benchmark to assess the performance of ML training and inference hardware.</p>
+    </article>
+  </body>
+</html>

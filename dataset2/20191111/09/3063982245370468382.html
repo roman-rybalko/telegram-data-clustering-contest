@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://www.golem.de/news/av1-encoder-rav1e-erscheint-erstmals-offiziell-1911-144899.html"/>
+    <meta property="og:site_name" content="Golem.de"/>
+    <meta property="article:published_time" content="2019-11-11T09:13:02+00:00"/>
+    <meta property="og:title" content="Encoder Rav1e erscheint erstmals offiziell"/>
+    <meta property="og:description" content="Der in Rust geschriebene Encoder Rav1e der Videolan- und Xiph-Community ist in Version 0.1 erschienen. Wie der Name andeutet, ist das Projekt für den freien Videocodec AV1"/>
+  </head>
+  <body>
+    <article>
+      <h1>Encoder Rav1e erscheint erstmals offiziell</h1>
+      <h2>Der in Rust geschriebene Encoder Rav1e der Videolan- und Xiph-Community ist in Version 0.1 erschienen. Wie der Name andeutet, ist das Projekt für den freien Videocodec <a href="https://www.golem.de/specials/av1/">AV1</a> gedacht.</h2>
+      <address><time datetime="2019-11-11T09:13:02+00:00">11 Nov 2019, 09:13</time> by <a rel="author">Sebastian Grüner</a></address>
+      <p>Der freie AV1-Encoder Rav1e ist in der ersten <a href="https://github.com/xiph/rav1e/releases/tag/0.1.0">offiziellen Version 0.1 erschienen</a>, zuvor hat das Team nur Schnappschüsse des Entwicklungscodes veröffentlicht. Der Name Rav1e steht schlicht für Rust AV1-Encoder, da die Software in der Programmiersprache Rust erstellt wird. Betreut und entwickelt wird das Projekt von der Xiph-Community mit Unterstützung aus dem Videolan-Projekt.</p>
+      <p>Zusätzlich zu Rav1e bietet die Referenzimplementierung von AV1 der Alliance for Open Media natürlich einen Encoder an. Ziel von Rav1e ist es laut einem Vortrag von Hauptentwickler Thomas Daede (<a href="https://people.xiph.org/~tdaede/rav1e_vdd_2018.pdf">PDF</a>), künftig schneller zu sein und auch eine bessere Qualität zu liefern als dieser. Damit folgt das Team ähnlichen Ansprüchen, wie die Community sie bereits für die Encoder x264 und x265 umgesetzt hat. Darüber hinaus <a href="https://www.golem.de/news/svt-av1-intel-und-netflix-kooperieren-fuer-av1-encoder-1904-140556.html">kooperieren Netflix und Intel</a> bei der Arbeit an einem Open-Source-Encoder für den freien Videocodec.</p>
+      <p>Vor allem im Vergleich zu den Arbeiten der großen genannten Unternehmen ist das kleine Community-Projekt Rav1e noch nicht besonders weit fortgeschritten und auch entsprechend langsam. Seit einigen Monaten kann Rav1e jedoch auch ein <a href="https://blog.rom1v.com/2019/04/implementing-tile-encoding-in-rav1e/">sogenanntes Tile-Encoding</a> verwenden. Dabei wird das Bild in verschiedene Teilbereiche aufgeteilt, die einzeln codiert werden. Das lässt sich parallelisieren, um den Encoder zu beschleunigen.</p>
+      <p>Die nun verfügbare Version 0.1 unterstützt außerdem viele grundsätzliche Funktionen von AV1. Dazu gehören Farbtiefen von 8, 10 und 12 Bit, eine Farbunterabtastung von 4:2:0 sowie beschränkt auch für 4:2:2 und 4:4:4. Ebenso kann aus elf Geschwindigkeitsstufen gewählt werden, und der Encoder unterstützt Rate Control sowie <a href="https://en.wikipedia.org/wiki/Rate%E2%80%93distortion_optimization">RDO</a> (Rate-distortion optimization).</p>
+    </article>
+  </body>
+</html>

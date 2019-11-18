@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://blog.ethereum.org/2019/11/08/eth2-quick-update-no-3/"/>
+    <meta property="og:site_name" content="blog.ethereum.org"/>
+    <meta property="article:published_time" content="2019-11-08T00:00:00+00:00"/>
+    <meta property="og:title" content="eth2 quick update no. 3"/>
+    <meta property="og:description" content="Welcome to the third installment of eth2 quick update. tldr; Harden fork choice defences in response to audits Introducing challenges.ethereum.org Herumi grant for a super-fast BLS implementation Fork choice defenses This week, we hardened the defenses of the Phase 0 fork choice rule. Much of our time is spent analyzing..."/>
+  </head>
+  <body>
+    <article>
+      <h1>eth2 quick update no. 3</h1>
+      <address><time datetime="2019-11-08T00:00:00+00:00">08 Nov 2019</time> by <a rel="author">Danny Ryan</a></address>
+      <figure>
+        <img src="https://blog.ethereum.org/img/2019/10/kumiko_background.jpeg"/>
+      </figure>
+      <p>Welcome to the third installment of <i>eth2 quick update</i>.</p>
+      <p>tldr;</p>
+      <ul>
+        <li>Harden fork choice defences in response to audits</li>
+        <li>Introducing <a href="https://challenges.ethereum.org/">challenges.ethereum.org</a></li>
+        <li>Herumi grant for a super-fast BLS implementation</li>
+      </ul>
+      <h3>Fork choice defenses</h3>
+      <p>This week, we hardened the defenses of the Phase 0 fork choice rule. Much of our time is spent analyzing eth2 to ensure that the system can remain stable even under adverse conditions (e.g. a large attacker, a major network outage or partition, etc). With any large engineering project, the aim is to find as many potential issues and harden against these scenarios prior to release. This is why we’ve engaged with many external teams and researchers to perform audits, economic analysis, and formal verification of eth2, but at the same time as we move toward release, we must remain vigilant and flexible to respond to unforseen attacks in production (e.g. the Shanghai DoS attacks of 2016).</p>
+      <p>Helping in this effort, a consensus researcher, Ryuya Nakamura, has analyzed eth2’s consensus algorithm (Casper FFG) and fork choice rule (LMD GHOST) to better determine how these two pieces of the protocol can in some scenarios be exploited. He has a number of excellent write-ups on <a href="https://ethresear.ch/">ethresearch.ch</a> discussing in detail some attack vectors and recommended solutions. Check out <a href="https://ethresear.ch/t/decoy-flip-flop-attack-on-lmd-ghost/6001">Decoy-flip-flop attack on LMD GHOST</a>, <a href="https://ethresear.ch/t/analysis-of-bouncing-attack-on-ffg/6113">Analysis of bouncing attack on FFG</a>, and <a href="https://ethresear.ch/t/prevention-of-bouncing-attack-on-ffg/6114">Prevention of bounding attack on FFG</a> for some informative and fun reads.</p>
+      <p>Fortunately, the recommended solutions to the decoy-flip-flop and bouncing attacks are both simple modifications to the fork choice specification of Phase 0. The decoy-flip-flop attack is solved by only considering validator attestations from the current and previous epoch when <i>adding</i> attestations to the view of the fork choice. You can see the PR making this change to the spec <a href="https://github.com/ethereum/eth2.0-specs/pull/1466">here</a>. The bounce attack is solved by only updating the latest justified checkpoint within the fork choice during the first <code>k</code> slots of an epoch. After <code>k</code> slots, you defer the inclusion of a new justified checkpoint into the fork choice until the next epoch boundary. You can check out this modification <a href="https://github.com/ethereum/eth2.0-specs/pull/1465">here</a>.</p>
+      <p>A number of other components of the Phase 0 specification are out for audit currently. Although we don’t expect anything major, we do expect to a small number of additional post-audit suggested changes to make it to PRs in the coming months.</p>
+      <h3>challenges.ethereum.org</h3>
+      <p>We just released <a href="https://challenges.ethereum.org/">challenges.ethereum.org</a>. This site is a single source for all of the current bounties hosted by the Ethereum Foundation and/or related to Ethereum research and development. The bounties range from finding vulnerabilities in existing Ethereum infrastructure to finding collisions in new hash functions. Something for everyone :)</p>
+      <p>We will continue building out EF’s bounty program in the coming months so check back for more opportunities.</p>
+      <h3>Herumi BLS grant</h3>
+      <p>We’ve given out a grant to Shigeo Mitsunari, the maintainer of the super-fast Herumi <a href="https://github.com/herumi/mcl">pairing library</a> and <a href="https://github.com/herumi/bls">BLS signature library</a>. This grant is to bring the libraries up to spec with the new BLS standard (<a href="https://tools.ietf.org/html/draft-irtf-cfrg-hash-to-curve-05">new hash-to-G2</a>, constant-time signing, etc) as well as to help accomplish some more practical items for eth2 usability (Rust integration, fuzzing work, etc).</p>
+      <p>In addition to the feature component of the grant, there is also a performance component. The Herumi library is already 2-3x faster than the next best BLS option, but because signature verification is one of the main bottlenecks in eth2, any additional gains here would be excellent, enabling eth2 to run under even higher load and in more adverse scenarios. Shigeo will spend some additional time and effort further optimizing the library to ensure it runs <i>as fast as possible</i> 🚀.</p>
+    </article>
+  </body>
+</html>

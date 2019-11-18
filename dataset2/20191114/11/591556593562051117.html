@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://www.zdnet.com/article/qualcomms-secure-world-virtual-processor-leaks-mobile-payment-data/"/>
+    <meta property="og:site_name" content="ZDNet"/>
+    <meta property="article:published_time" content="2019-11-14T11:03:00+00:00"/>
+    <meta property="og:title" content="Gaping 'hole' in Qualcomm’s Secure World mobile vault leaked sensitive data"/>
+    <meta property="og:description" content="Updated: Researchers found a “gaping hole” in what was thought to be an extremely secure area in our mobile devices."/>
+  </head>
+  <body>
+    <article>
+      <h1>Gaping 'hole' in Qualcomm’s Secure World mobile vault leaked sensitive data</h1>
+      <address><time datetime="2019-11-14T11:03:00+00:00">14 Nov 2019, 11:03</time> by <a rel="author" href="https://www.zdnet.com/meet-the-team/us/charlie-osborne/" target="_blank">Charlie Osborne</a></address>
+      <p>
+        <b>Updated: Researchers found a “gaping hole” in what was thought to be an extremely secure area in our mobile devices.</b>
+      </p>
+      <figure>
+        <video src="https://techrepublicvideo.cbsistatic.com/vr/2019/11/11/1639857219545/2019-11-11-wochit-the-scariest-hacks-and-vulnerabilities-of-2019_1974782_742.mp4"/>
+      </figure>
+      <figure>
+        <img src="https://zdnet2.cbsistatic.com/hub/i/r/2019/11/11/4906c7db-b588-480d-8804-c8f520dbee10/thumbnail/570x322/cdfd1a798df51a9d3b6a60478c1e7718/the-scariest-hacks-and-vulnerabilities-o-5db9bb142b536d00015c8e3f-1-nov-11-2019-15-40-59-poster.jpg"/>
+      </figure>
+      <p>A severe "hole" in the Qualcomm Secure World virtual processor, now patched, has been disclosed by researchers.  <br/><br/>According to cybersecurity researchers from Check Point, the Secure World safe compartment -- used to house sensitive data in our mobile devices -- could be exploited to leak financial information. </p>
+      <p>Secure World is part of Qualcomm's hardware-backed Trusted Execution Environment (TEE), based on ARM TrustZone, involving security extensions on ARM architecture including a secure virtual processor.  <br/><br/>The tech giant's <a href="https://www.qualcomm.com/media/documents/files/guard-your-data-with-the-qualcomm-snapdragon-mobile-platform.pdf">Secure World facility</a> (.PDF) consists only of the Qualcomm TEE and trusted apps. The system has been designed so anyone "who does not have the device hardware keys must not be able to access Qualcomm Trusted Execution Environment data and services unless they are intentionally exposed," according to the firm.  <br/><br/>Movement from a mobile device's Rich Execution Environment (REE) to TEE is handled by specialized, trusted components to prevent the hardware-based security capabilities of the TEE from becoming compromised by apps or software outside of the trusted zone. </p>
+      <p>However, a four-month study concluded that it is not impossible to crack the system.  <br/><br/>Throughout the research, Check Point's aim was to "reverse" the Secure World operating system and fuzzing provided the means to do so. </p>
+      <p>Fuzzing involves hitting a system with massive amounts of random data in the hopes of causing a crash in order to uncover coding or programming errors which may be used to bypass security protections.  <br/><br/>"A trusted app is a good target for fuzzing-based research," the <a href="https://research.checkpoint.com/the-road-to-qualcomm-trustzone-apps-fuzzing/">researchers say</a>. "The command handler of a trusted app expects to receive a data blob from the normal world which will then be parsed and used according to the app's purpose and the requested command." <br/><br/><b>See also: </b><a href="https://www.zdnet.com/article/whatsapp-vulnerability-exploited-through-malicious-gifs-to-hijack-chat-sessions/">WhatsApp vulnerability exploited through malicious GIFs to hijack chat sessions</a> <br/><br/>Qualcomm's trusted app (trustlet) is a signed executable and ELF file extended by a hash table. When loaded, the Qualcomm trusted OS authenticates the trustlet using hash blocks, and secure boot protection means that it is not possible to directly patch TrustZone components.  <br/><br/>Therefore, the team decided to focus on the trustlet verification algorithm. Check Point wanted to tamper with the code responsible for calculating hash block signatures or for comparing segments of hashes with verified ones to trigger an exploit.  <br/><br/>It was only possible to do so by exploiting a 1-day vulnerability to break TrustZone partitions, made up of a chain of two bugs, <a href="https://nvd.nist.gov/vuln/detail/CVE-2015-6639">CVE-2015-6639</a> and <a href="https://nvd.nist.gov/vuln/detail/CVE-2016-2431">CVE-2016-2431</a>. <br/><br/>The vulnerabilities could be used to patch a code segment and replace a trustlet's hash block after verification, leading to the loading of trusted app in a 'normal' environment.  <br/><br/><b>CNET: </b><a href="https://www.cnet.com/news/us-border-search-of-suspicionless-travelers-devices-is-unconstitutional-court-finds/?ftag=CMG-01-10aaa1b">US border search of suspicionless travelers' devices is unconstitutional, court finds</a> <br/><br/>Combined with a CPU emulator and the fuzzing tool, the team was able to crash Qualcomm's prov trustlet on a Nexus 6 device running Android 7.1.2, as well as Moto G4/G4 Plus devices. It was also possible to adapt Samsung trustlets for exploit.  <br/><br/>Check Point's custom fuzzing tool was tested on Samsung, LG, and Motorola devices. Overall, Samsung's trusted code contained four vulnerabilities, Motorola and LG contained one each, and another bug was found that was connected to LG.  <br/><br/>All of the code, however, was sourced from Qualcomm. If exploited, the attack chain could result in the leak of data stored in Secure World, including financial information.<br/><br/><b>TechRepublic: </b><a href="https://www.techrepublic.com/article/tracking-endpoints-and-ensuring-device-security-a-vexing-problem-for-healthcare-cios/?ftag=CMG-01-10aaa1b">Tracking endpoints and ensuring device security a vexing problem for healthcare CIOs</a> <br/><br/>After reaching out with their findings in June, the researchers say that Samsung has, so far, patched three out of four vulnerabilities, LG has resolved one issue, and Motorola intends to patch.  <br/><br/>When it comes to Qualcomm, Check Point says that the US chip giant has acknowledged and patched the issue, tracked as <a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-10574">CVE-2019-10574</a>. A Qualcomm spokesperson told ZDNet:</p>
+      <blockquote>"Providing technologies that support robust security and privacy is a priority for Qualcomm. The vulnerabilities publicized by Check Point have been patched, one in early October 2019 and the other in November 2014. We have seen no reports of active exploitation, though we encourage end users to update their devices with patches available from OEMs."</blockquote>
+      <p><b>Update 12.08 GMT</b>: A Motorola spokesperson said:</p>
+      <blockquote>"The Motorola team regularly cooperates with security researchers, and this has also been the case here. We can confirm that the vulnerabilities were patched according to public availability of chipset vendors' base software worldwide, and the Android Security Patches 2017-04-05 and 2019-05-05 contain the fixes."</blockquote>
+      <p>ZDNet has reached out to Samsung and LG but has not heard back at the time of publication.</p>
+      <h3>Previous and related coverage</h3>
+      <ul>
+        <li>
+          <a href="https://www.zdnet.com/article/mcafee-antivirus-software-impacted-by-code-execution-vulnerability/">McAfee antivirus software impacted by code execution vulnerability</a>
+        </li>
+        <li>
+          <a href="https://www.zdnet.com/article/these-software-vulnerabilities-top-mitres-most-dangerous-list-in-2019/">These software vulnerabilities top MITRE's most dangerous list</a>
+        </li>
+        <li>
+          <a href="https://www.zdnet.com/article/tpm-fail-vulnerabilities-impact-tpm-chips-in-desktops-laptops-servers/">TPM-FAIL vulnerabilities impact TPM chips in desktops, laptops, servers</a>
+        </li>
+      </ul>
+      <hr/>
+      <p><b>Have a tip?</b> Get in touch securely via WhatsApp | Signal at +447713 025 499, or over at Keybase: charlie0</p>
+      <hr/>
+    </article>
+  </body>
+</html>

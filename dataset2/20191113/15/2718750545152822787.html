@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://www.vulture.com/2019/11/holly-herndon-on-proto-an-album-made-with-ai.html"/>
+    <meta property="og:site_name" content="VULTURE"/>
+    <meta property="article:published_time" content="2019-11-13T15:00:08+00:00"/>
+    <meta property="og:title" content="Inside the World’s First Mainstream Album Made With AI"/>
+    <meta property="og:description" content="Holly Herndon on Proto, her album made with artificial intelligence. Here, she walks us through how she did it."/>
+  </head>
+  <body>
+    <article>
+      <h1>Inside the World’s First Mainstream Album Made With AI</h1>
+      <address><time datetime="2019-11-13T15:00:08+00:00">13 Nov 2019, 15:00</time> by <a rel="author">Andy Beta</a></address>
+      <p>
+        <i>
+          <i><i>This article is part of </i>New York<i>'s Future Issue, a collection of predictions about the near future as seen through the recent past.</i><a href="http://nymag.com/intelligencer/2019/11/2029-predictions-based-on-2019.html"> Click here to read more.</a></i>
+        </i>
+      </p>
+      <hr/>
+      <p>
+        <i>On June 21, 2017, electronic musician Holly Herndon and her husband, writer/philosopher/teacher</i>
+        <a href="https://thecreativeindependent.com/people/philosopher-and-digital-artist-mat-dryhurst-on-redesigning-the-system/">
+          <i> Mat Dryhurst</i>
+        </a>
+        <i>, welcomed a new addition to their family. They named it Spawn. “She’s an inhuman child,” Herndon tells me one afternoon, while seated in the offices of her record label, 4AD.</i>
+      </p>
+      <p>
+        <i>Spawn is nascent machine intelligence, or AI. There’s artificial intelligence being deployed for self-driving 18-wheelers, Netflix user-preference predictors, customer service preferences, handwriting recognition, and cyber-security to fight hackers using AI to create malware. Machine learning’s future infiltration into music production isn’t a question of “if” but is one of “when,” and significant inroads are already being made. There’s AI that can replicate </i>
+        <a href="https://youtu.be/5GDWQv66Le0">
+          <i>Bach</i>
+        </a>
+        <i> and make up </i>
+        <a href="https://qz.com/790523/daddys-car-the-first-song-ever-written-by-artificial-intelligence-is-actually-pretty-good/">
+          <i>Beatles’ songs</i>
+        </a>
+        <i>, </i>
+        <a href="https://youtu.be/XUs6CznN8pw">
+          <i>gimmicky YouTube uploads of robo-pop</i>
+        </a>
+        <i>, </i>
+        <a href="https://soundcloud.com/sevenism">
+          <i>ambient producers</i>
+        </a>
+        <i> that use AI to churn out new albums every week, even an algorithm </i>
+        <a href="https://www.theverge.com/2019/3/27/18283084/warner-music-algorithm-signed-ambient-music-endel">
+          <i>signed to a major label</i>
+        </a>
+        <i>. Engineering teams at Google, IBM, and Spotify are working tirelessly to advance AI further into the realm of music-making.</i>
+      </p>
+      <p><i>But Herndon’s 2019 album, </i>Proto<i>, contains the first recorded debut of an AI on a pop-music album. Here, she explains how she did it.</i></p>
+      <hr/>
+      <p>So much of the research into AI is trained on a very particular era of music — 1850–1950 in the western canon — where pitch and note length and rhythm are the most important. It’s really dull because it ties us to this particular time that’s no longer of the moment. We wanted Spawn to reflect our community, and we wanted to use peoples’ voices that were specific to it. </p>
+      <p>The first six months were pretty uninteresting. With AI, you have a training canon; the AI extracts a rule set from the canon and applies it to something else. It can never go outside the canon. When that’s applied to a voice, the AI tries to understand the rule set of the voice — the logic of the voice. We started training it with my voice and Mat’s voice, both of which are in the hundreds of megabytes of Spawn’s training info. After six months, we got slightly more interesting results. That started to happen when I stopped using <a href="https://www.tensorflow.org/">TensorFlow</a>, a program mostly for visual learning. (If you wanted to have your portrait done in the style of Van Gogh, you would use this.) This involves turning sound files into spectragrams so that AI can “see” them. But in terms of timbre, it was very lo-fi and it all sounded the same. There was nothing exciting about the output. We switched to SampleRNN, which is used for voice recognition. With SampleRNN, it takes whatever is in the training canon and then it tries to understand — If this sample is happening, what would most likely come next? The one snag is, if it’s training on my voice, it tends to get stuck on vowels. When we speak, we elongate our vowels, so the program tries to guess for how long exactly — and then it gets stuck.</p>
+      <p>
+        <i>An early example of playing with SampleRNN, in which Spawn gets somewhere imitating Holly’s voice model:</i>
+      </p>
+      <figure>
+        <iframe src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/711317851&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true" width="100%" height="166" data-service="SoundCloud" scrolling="no" nowide=""/>
+      </figure>
+      <p>Spawn’s first words and sounds only came when we switched to a third, voice-model method. It required way more audio. We used hours of my voice. It takes my voice speaking and singing and creates a model of what it sounds like. I made a data set where I sang random phrases within a comfortable range for me, like: </p>
+      <p>
+        <i>Aluminium cutlery can often be flimsy.</i>
+        <br/>
+        <i> </i>
+        <br/>
+        <i>She wore warm, fleecy, woolen overalls.</i>
+        <br/>
+        <i> </i>
+        <br/>
+        <i>Alfalfa is healthy for you.</i>
+      </p>
+      <p>Spawn would digest that information, which could take anywhere from 1 to 20 minutes. We’d all be on Slack together and we’d get updates like: “Spawn released a new track.” She would do that all the time. We’d click through and listen to it and, most of the time, our response was, <i>eh</i>. And then I clicked on the one used for “Birth” and went, “Yes!” That was the first time I was excited by the outcome.<b> </b>Because generally, Spawn has such a limited perspective. It’s both super-impressive and like … terrible. It’s like <i>God, you’re so dumb!</i></p>
+      <p>Spawn has very real limitations. Reverb is really difficult. It couldn’t understand the difference between the shapes of the sounds and their echoes. It’s looking for difference, so it really likes that the audience clapping or shaking keys, or tapping beer bottles, or finger-snapping — all of that sounded really cool through Spawn. </p>
+      <p>
+        <i>Spawn imitates an audience clapping:</i>
+      </p>
+      <figure>
+        <iframe src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/711320755&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true" width="100%" height="166" data-service="SoundCloud" scrolling="no" nowide=""/>
+      </figure>
+      <p>She likes transients. Percussion instruments have the biggest transients of the whole instrument family, in that the beginning of the sound is big and then it quickly decays. She saw a snare, and thought, <i>That is a bit like this bit I recall from when Holly says “T,”</i> and tried to reproduce the snare with a “T” sound. That, to us, is new. The result is somewhat clever, logical, and most importantly, unexpected. It surprised us.</p>
+      <p>
+        <i>Spawn performs the rhythm section of the song “Frontier.” You can hear how it pulls different ideas from Holly’s vocal model:</i>
+      </p>
+      <figure>
+        <iframe src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/711318193&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true" width="100%" height="166" data-service="SoundCloud" scrolling="no" nowide=""/>
+      </figure>
+      <p>That’s why when you listen to “Godmother,” it sounds like beatboxing, which is a combination of singing and speech. I wasn’t training her with beatboxing. It’s so embarrassing that this is what she spat out! I don’t know if it was a good idea, but it was an idea. It wasn’t something I told her specifically to do. I tried singing “Godmother,” and I just can’t. It’s too fast. Spawn outperforms me. </p>
+      <figure>
+        <iframe src="https://www.youtube.com/embed/sc9OjL6Mjqo" width="640" height="360" data-service="Youtube" scrolling="no"/>
+      </figure>
+      <p>Pretty soon, we’ll have very accurate voice models of past vocalists, and that’s going to open up questions about what we do with our forefathers’ and foremothers’ voices.<b> </b>I used to say we’ll have infinite Michael Jackson records, but that probably won’t happen anymore. Infinite Aretha Franklin records may be the better example!</p>
+      <related>
+        <a href="http://nymag.com/intelligencer/2019/11/2029-predictions-based-on-2019.html"/>
+        <a href="https://www.vulture.com/2019/11/future-digital-actors.html"/>
+      </related>
+    </article>
+  </body>
+</html>

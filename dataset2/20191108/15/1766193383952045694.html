@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://www.heise.de/security/meldung/Cisco-Updates-sollen-Sicherheitsprobleme-und-Firmware-Maengel-beheben-4582530.html"/>
+    <meta property="og:site_name" content="Security"/>
+    <meta property="article:published_time" content="2019-11-08T15:15:00+00:00"/>
+    <meta property="og:title" content="Cisco: Updates sollen Sicherheitsprobleme und Firmware-Mängel beheben"/>
+    <meta property="og:description" content="Cisco hat diverse Software-Schwachstellen mit &quot;High&quot;- und &quot;Medium&quot;-Einstufung beseitigt und schlampig programmierte Router-Firmware aktualisiert."/>
+  </head>
+  <body>
+    <article>
+      <h1>Cisco: Updates sollen Sicherheitsprobleme und Firmware-Mängel beheben</h1>
+      <h2>Cisco hat diverse Software-Schwachstellen mit "High"- und "Medium"-Einstufung beseitigt und schlampig programmierte Router-Firmware aktualisiert.</h2>
+      <address><time datetime="2019-11-08T15:15:00+00:00">08 Nov 2019, 15:15</time> by <a rel="author">Olivia von Westernhagen</a></address>
+      <p>Netzwerkausrüster Cisco hat acht Sicherheitshinweise zu Schwachstellen veröffentlicht, von denen nach seiner Einschätzung ein hohes Risiko ausgeht. Sie betreffen (abhängig von Soft- und Firmware-Versionen) die <b>Small Business Router RV016, RV042, RV042G, RV082, RV320 und RV325, Cisco Wireless LAN Controller, Web Security Appliance (WSA), Cisco Prime Infrastructure (PI)</b> sowie <b>mehrere WebEx- und TelePresence-Komponenten</b>.</p>
+      <p>Weitere sechs Lücken in <b>WSA, WebEx, Managed Services Accelerator (MSX), Industrial Network Director (IND)</b> und <b>IP-Telefonen der Serie Small Business SPA500</b> stuft Cisco als "Medium" ein.</p>
+      <p>Es stehen Updates bereit, die Cisco-Kunden zügig einspielen sollten. Insbesondere für Besitzer der genannten Router ist ein zügiges Update auf aktuelle Firmware-Versionen ratsam: Sie beheben weitere potenzielle Sicherheitsrisiken, die Cisco in separaten Hinweisen aufgeschlüsselt hat.</p>
+      <p>Eine Übersicht über alle Security Advisories sowie "Informational Advisories" zur Router-Firmware liefert <a href="https://tools.cisco.com/security/center/Search.x?publicationTypeIDs=1&amp;firstPublishedStartDate=2019%2F11%2F06&amp;firstPublishedEndDate=2019%2F11%2F06">eine entsprechend gefilterte Suchanfrage auf Ciscos Webseite</a> zurück. Den Advisories sind die jeweils betroffenen Versionen sowie die entsprechenden Update-Hinweise zu entnehmen.</p>
+      <h3>Nachlässige Firmware-Entwicklung</h3>
+      <p>Die besagten Informational Advisories umschreiben, dass die Entwicklerteams der Firmware für die Small-Business-Router <a href="https://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20191106-rv0x2">RV016, RV042, RV042G und RV082 (erstes Advisory)</a> beziehungsweise <a href="https://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20191106-rv32x">RV320 und RV325 (zweites Advisory)</a> geschlampt haben. Zwei externe Scherheitsforscher entdeckten die Mängel und meldeten sie an Cisco.</p>
+      <p>Offenbar enthielt der Firmware-Programmcode einen statischen SSH-Host-Key sowie mehrere statische X.509-Zertifikate nebst Schlüsselpaaren, die zu Testzwecken verwendet und bei der Auslieferung in der Firmware "vergessen" wurden. Cisco betont allerdings, dass diese Relikte im Live-Betrieb nicht mehr zum Einsatz kamen ("All shipping versions of this firmware use dynamically created certificates instead").</p>
+      <p>Außerdem entdeckten die Forscher, dass die Datei <i>/etc/shadow</i> hardgecodete Passwort-Hashes für <i>root</i> (und im Falle von RV016, RV042, RV042G und RV082 zusätzlich für <i>cisco</i> und <i>lldpd</i>) enthielt. Eine große Gefahr sieht Cisco offenbar auch darin nicht, da die Firmware zur Nutzerauthentifizierung nicht auf <i>/etc/shadow </i>zurückgreife<i>. </i>Zwar hätte sich ein Angreifer mit Zugriff zum Betriebssystem betroffener Geräte auf diesem Wege theoretisch Root-Rechte verschaffen können; allerdings sei dem Unternehmen kein Weg bekannt, auf dem er diesen Betriebssystemzugriff hätte erlangen können.</p>
+      <p>Von den Mängeln betroffen waren alle <b>Firmware-Versionen vor 1.5.1.05 (RV320/RV325</b>) beziehungsweise <b>vor 4.2.3.10 (RV016, RV042, RV042G und RV082)</b>. Update-Hinweise sind auch hier den oben verlinkten Advisories zu entnehmen. (<a href="mailto:ovw@heise.de">ovw</a>)</p>
+    </article>
+  </body>
+</html>
