@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://www.bleepingcomputer.com/news/security/trickbot-trojan-getting-ready-to-steal-openssh-and-openvpn-keys/"/>
+    <meta property="og:site_name" content="BleepingComputer"/>
+    <meta property="article:published_time" content="2019-11-23T08:00:00+00:00"/>
+    <meta property="og:title" content="TrickBot Trojan Getting Ready to Steal OpenSSH and OpenVPN Keys"/>
+    <meta property="og:description" content="The Trickbot banking trojan keeps evolving according to researchers who spotted this week an updated password grabber module that could be used to steal OpenSSH private keys and OpenVPN passwords and configuration files."/>
+  </head>
+  <body>
+    <article>
+      <h1>TrickBot Trojan Getting Ready to Steal OpenSSH and OpenVPN Keys</h1>
+      <address><time datetime="2019-11-23T08:00:00+00:00">23 Nov 2019, 08:00</time> by <a rel="author" href="https://www.bleepingcomputer.com/author/sergiu-gatlan/" target="_blank">Sergiu Gatlan</a></address>
+      <figure>
+        <img src="https://www.bleepstatic.com/content/hl-images/2019/11/22/TrickBot.jpg"/>
+      </figure>
+      <p>The Trickbot banking trojan keeps evolving according to researchers who spotted this week an updated password grabber module that could be used to steal OpenSSH private keys and OpenVPN passwords and configuration files.</p>
+      <p>TrickBot (also known as Trickster, TrickLoader, and TheTrick) is a modular and constantly updated malware continuously upgraded with new capabilities and modules since October 2016 when it was initially spotted in the wild.</p>
+      <p>Even though the first detected variants only came with banking Trojan capabilities it used to collect and exfiltrate sensitive data to its masters, TrickBot is now also a popular malware dropper observed while infecting systems with other, some times more dangerous, malware strains.</p>
+      <h3>Newly targeted OpenSSH and OpenVPN apps</h3>
+      <p>Trickbot just-updated password grabbing module that now targets the OpenSSH and OpenVPN applications was discovered by researchers at Palo Alto Networks' Unit 42 on a compromised 64-bit Windows 7 device on November 8.</p>
+      <p>The pwgrab64 password grabber module they found is not a new addition, as it was <a href="https://blog.trendmicro.com/trendlabs-security-intelligence/trickbot-shows-off-new-trick-password-grabber-module/">spotted</a> by researchers back in November 2018 while analyzing a variant capable of looting passwords from several web browsers and apps like Google Chrome, Mozilla Firefox, Internet Explorer, Microsoft Edge, Microsoft Outlook, Filezilla, and WinSCP.</p>
+      <p>In February, this <a href="https://www.bleepingcomputer.com/news/security/trickbot-banking-trojan-now-steals-rdp-vnc-and-putty-credentials/">password stealer module got upgraded</a> to grab credentials utilized to authenticate to remote servers using VNC, PuTTY, and Remote Desktop Protocol (RDP).</p>
+      <figure>
+        <img src="https://www.bleepstatic.com/images/news/u/1109292/November%202019/Trickbot%20HTTP%20POST%20requests.jpg"/>
+        <figcaption>Trickbot password grabber HTTP POST requests<i> </i>(<i>Unit 42</i>)</figcaption>
+      </figure>
+      <p>The Unit 42 researchers now discovered that Trickbot is now using HTTP POST requests to send OpenSSH private keys and OpenVPN passwords and configuration files to its command and control (C2) servers.</p>
+      <p>However, as they later found after taking a closer look at the malware's C2 traffic on infected Windows 7 and Windows 10 hosts, the Trojan does not actually exfiltrate any data yet, hinting at the fact that its creators are only testing this newly added capability.</p>
+      <p>As they further determined, this new Trickbot variant is still as dangerous as ever seeing that it can still grab private keys from SSH-related applications such as PuTTY and deliver them to its operators.</p>
+      <p>"These updated traffic patterns demonstrate Trickbot continues to evolve. However, best security practices like running fully-patched and up-to-date versions of Microsoft Windows will hinder or stop Trickbot infections," the <a href="https://unit42.paloaltonetworks.com/trickbot-updates-password-grabber-module/">Unit 42 research team concluded</a>.</p>
+      <h3>Regularly upgraded banking Trojan</h3>
+      <p>TrickBot is also one of today's most aggressive malware after replacing Emotet as the most distributed strain via malspam until the latter was revived during August [<a href="https://www.bleepingcomputer.com/news/security/emotet-botnet-is-back-servers-active-across-the-world/">1</a>, <a href="https://www.bleepingcomputer.com/news/security/emotet-revived-with-large-spam-campaigns-around-the-world/">2</a>].</p>
+      <p>In August, Trickbot operators <a href="https://www.bleepingcomputer.com/news/security/new-trickbot-variant-targets-verizon-t-mobile-and-sprint-users/">targeted Verizon Wireless, T-Mobile, and Sprint users</a> attempting to steal their PIN codes via dynamic webinjects and also used the Google Docs online word processor to <a href="https://www.bleepingcomputer.com/news/security/trickbot-bypasses-secure-email-gateway-using-google-docs-phishing/">infect unsuspecting victims using executables camouflaged as PDF documents</a>.</p>
+      <figure>
+        <iframe data-src="https://twitter.com/abuse_ch/status/1161313895887376384?ref_src=twsrc%5Etfw" data-embed-type="twitter-tweet" width="100%" height="0" data-service="Twitter" scrolling="no" nowide=""/>
+      </figure>
+      <p>TrickBot also got updated with Windows Defender circumventing capabilities, was upgraded with a <a href="https://www.bleepingcomputer.com/news/security/trickbot-trojan-gets-icedid-proxy-module-to-steal-banking-info/">new IcedID proxy module for stealing banking info</a>, and its creators introduced a new <a href="https://www.bleepingcomputer.com/news/security/trickbot-trojan-now-has-a-separate-cookie-stealing-module/">module for stealing browser cookies</a> during July.</p>
+      <p>During January, <a href="https://www.bleepingcomputer.com/news/security/ryuk-ransomware-partners-with-trickbot-to-gain-access-to-infected-networks/">FireEye and CrowdStrike researchers discovered</a> that TrickBot moved into the Access-as-a-Service business, enabling other actors to get access to networks it had previously infected, providing them with reverse shells to infiltrate the rest of the network and dropping their payloads.</p>
+      <p>Even further back, in July 2017, Trickbot <a href="https://www.bleepingcomputer.com/news/security/banking-trojans-add-self-spreading-worm-components-because-wannacry/">became capable of self-propagation</a> via a self-spreading component that improved its capability to rapidly spread over entire networks.</p>
+    </article>
+  </body>
+</html>

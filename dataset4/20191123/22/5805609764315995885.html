@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://techviral.net/disable-lock-screen-in-windows-10/"/>
+    <meta property="og:site_name" content="Tech Viral"/>
+    <meta property="article:published_time" content="2019-11-23T22:15:42+00:00"/>
+    <meta property="og:title" content="How to Disable the Lock Screen in Windows 10"/>
+    <meta property="og:description" content="Time to Disable the Lock Screen in Windows 10 with the help of 3 methods that we are discussed here that will help you to directly get on your PC"/>
+  </head>
+  <body>
+    <article>
+      <h1>How to Disable the Lock Screen in Windows 10</h1>
+      <address><time datetime="2019-11-23T22:15:42+00:00">23 Nov 2019, 22:15</time> by <a rel="author">Karanpreet Singh</a></address>
+      <p>When it comes to the desktop operating system, Microsoft’s Windows 10 usually steals the show. Compared to the previous version of Windows, Windows 10 provides users far more features. Not only features, but the entire interface of Windows 10 is different.</p>
+      <p>If you have been using Windows 10 for a while, then you might know that the operating system has a lock screen that greets with stunning wallpapers whenever we turn on our laptop or computer. Well, it’s an important security feature, but it also increases the startup time.</p>
+      <p>Some users find the Windows 10 lock screen as a waste. Well, if you also want to disable the lock screen and Windows and directly want to reach the actual sign-in screen, then this article is for you. In this article, we are going to share a few best methods to disable the lock screen in Windows 10.</p>
+      <p><b>Contents</b> <a href="https://techviral.net/disable-lock-screen-in-windows-10/#">show</a></p>
+      <h3><anchor name="How_to_Disable_the_Lock_Screen_in_Windows_10"/>How to Disable the Lock Screen in Windows 10</h3>
+      <p>Before exploring the methods, please keep in mind that you can only disable the lock screen as long as you are running the Creator updates or latest build of Windows 10. So, let’s check out the best methods to disable the lock screen in Windows 10 computer.</p>
+      <related>
+        <a href="https://techviral.net/enable-full-disk-encryption-in-windows-10/"/>
+      </related>
+      <h4><anchor name="1_Using_the_Registry_Editor"/>#1 Using the Registry Editor</h4>
+      <p>Well, in this method, we are going to use the Registry Editor to disable the lock screen in Windows 10. So, follow some of the simple steps given below to disable the lock screen.</p>
+      <p><b>Step 1.</b> First of all, press <b>Win+R </b>button on your keyboard and then type <b>regedit </b>and press enter.</p>
+      <figure>
+        <img src="https://techviral.net/wp-content/uploads/2016/10/Disable-the-Lock-Screen-in-Windows-101.jpg"/>
+        <figcaption>Disable the Lock Screen in Windows 10</figcaption>
+      </figure>
+      <p><b>Step 2.</b> There you need to browse to directory <b>HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows</b>.</p>
+      <p><b>Step 3.</b> There you need to right-click on the directory named “<b>Windows</b>” and then select <b>Key -&gt; New </b>to create new key there.</p>
+      <figure>
+        <img src="https://techviral.net/wp-content/uploads/2016/10/Disable-the-Lock-Screen-in-Windows-102.jpg"/>
+        <figcaption>Disable the Lock Screen in Windows 10</figcaption>
+      </figure>
+      <p><b>Step 4.</b> Rename the key as <b>Personalization</b>. Right-click on the newly created folder and then select <b>new </b>and then select <b>DWORD (32-bit) Value</b>.</p>
+      <figure>
+        <img src="https://techviral.net/wp-content/uploads/2016/10/Disable-the-Lock-Screen-in-Windows-103.jpg"/>
+        <figcaption>Disable the Lock Screen in Windows 10</figcaption>
+      </figure>
+      <p><b>Step 5.</b> Rename this folder with the name <b>NoLockScreen</b>. Now double click on the file and change its value to <b>1</b>.</p>
+      <figure>
+        <img src="https://techviral.net/wp-content/uploads/2016/10/Disable-the-Lock-Screen-in-Windows-104.jpg"/>
+        <figcaption>Disable the Lock Screen in Windows 10</figcaption>
+      </figure>
+      <p>That’s it, you are done! Now just restart your computer and you won’t see the lock screen anymore.</p>
+      <related>
+        <a href="https://techviral.net/set-notification-priorities-for-apps-in-windows-10/"/>
+      </related>
+      <h4><anchor name="2_Renaming_the_Lock_Screen_App_Folder"/>#2 Renaming the Lock Screen App Folder</h4>
+      <p>Well, if you don’t want to manually edit the registry file, then you can try this method. However, this method doesn’t work on every Windows 10 build.</p>
+      <p><b>Step 1.</b> First of all navigate to folder <b>C:\Windows\SystemApps</b>.</p>
+      <p><b>Step 2.</b> Now there you will see the folder named <b>Microsoft.LockApp_cw5n1h2txyewy </b>right click on that folder and select rename.</p>
+      <figure>
+        <img src="https://techviral.net/wp-content/uploads/2016/10/Disable-the-Lock-Screen-in-Windows-105.jpg"/>
+        <figcaption>Disable the Lock Screen in Windows 10</figcaption>
+      </figure>
+      <p><b>Step 3.</b> Now you can just add <b>.off </b>after the name of the folder to disable the lock screen.</p>
+      <p>That’s it, you are done! This is how you can rename the lock screen app folder to disable the Windows 10 lock screen.</p>
+      <related>
+        <a href="https://techviral.net/free-up-disk-space-by-moving-windows-10-apps-to-external-media/"/>
+      </related>
+      <h4><anchor name="3_Using_Group_Policy_Editor"/>#3 Using Group Policy Editor</h4>
+      <p>You can also use Local Group Policy Editor to disable the lock screen in Windows 10 computer. To do that, follow some of the simple steps given below.</p>
+      <p><b>Step 1.</b> First of all press <b>Win+R </b>button and then type <b>gpedit.msc </b>and press enter.</p>
+      <figure>
+        <img src="https://techviral.net/wp-content/uploads/2016/10/Disable-the-Lock-Screen-in-Windows-106.jpg"/>
+        <figcaption>Disable the Lock Screen in Windows 10</figcaption>
+      </figure>
+      <p><b>Step 2.</b> Now you need to navigate to folder <b>Computer Configuration\Administrative Templates\Control Panel\Personalization</b>. Now double click on the option “<b>Do not display the lock screen”</b></p>
+      <figure>
+        <img src="https://techviral.net/wp-content/uploads/2016/10/Disable-the-Lock-Screen-in-Windows-107.jpg"/>
+        <figcaption>Disable the Lock Screen in Windows 10</figcaption>
+      </figure>
+      <p><b>Step 3.</b> Now there select the option <b>Enabled </b>and click on apply changes.</p>
+      <figure>
+        <img src="https://techviral.net/wp-content/uploads/2016/10/Disable-the-Lock-Screen-in-Windows-108.jpg"/>
+        <figcaption>Disable the Lock Screen in Windows 10</figcaption>
+      </figure>
+      <p>That’s it, you are done! This is how you can use the Local Group Policy editor to bypass the lock screen in Windows 10.</p>
+      <related>
+        <a href="https://techviral.net/how-to-speed-up-pc/"/>
+      </related>
+      <p>So the above discussion is all about <b>How to Disable the Lock Screen in Windows 10</b>. With this method, you can easily disable the Windows lock screen and directly get into your PC. I hope you like the guide, do share with others too. Leave a comment below if you have any related queries with this.</p>
+    </article>
+  </body>
+</html>

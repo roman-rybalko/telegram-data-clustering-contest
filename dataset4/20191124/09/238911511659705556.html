@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://www.cnbeta.com/articles/soft/914119.htm"/>
+    <meta property="og:site_name" content="cnBeta"/>
+    <meta property="article:published_time" content="2019-11-24T09:00:00+00:00"/>
+    <meta property="og:title" content="HTTPZ - 将 HTTP 链接转到 HTTPS 的 Firefox 插件"/>
+    <meta property="og:description" content="如今大多数站点都支持HTTPS，并且在用户访问站点时就默认转到HTTPS协议上。如果站点位于支持HTTPS的站点数据库中，则 HTTPSEverywhere 之类的扩展程序会自动请求将HTTP转到HTTPS。DuckDuckGo 搜索引擎最近就在其应用和扩展中启动了一项名为“智能加密”的新功能，该功能会根据搜索引擎数据自动将连接转到HTTPS。"/>
+  </head>
+  <body>
+    <article>
+      <h1>HTTPZ - 将 HTTP 链接转到 HTTPS 的 Firefox 插件</h1>
+      <address><time datetime="2019-11-24T09:00:00+00:00">24 Nov 2019, 09:00</time> by <a rel="author">ugmbbc</a></address>
+      <p>
+        <a href="https://www.cnbeta.com/topics/128.htm">
+          <pic src="https://static.cnbetacdn.com/topics/2c66bd05e4cc91b.png"/>
+        </a>
+      </p>
+      <p>如今大多数站点都支持 HTTPS，并且在用户访问站点时就默认转到 HTTPS 协议上。如果站点位于支持 HTTPS 的站点数据库中，则 <a href="https://www.ghacks.net/2017/06/01/https-everywhere-webextension-for-firefox/">HTTPS Everywhere</a> 之类的扩展程序会自动请求将 HTTP 转到 HTTPS。DuckDuckGo 搜索引擎最近就在其应用和扩展中启动了一项名为“智能加密”的新功能，该功能会根据搜索引擎数据自动将连接转到 HTTPS。</p>
+      <hr/>
+      <p>而有一些 Web 浏览器（例如 Tor）并不会试图将用户的连接从 HTTP 直接自动转到更安全的 HTTPS 协议，如果单击一个已经迁移到 HTTPS（或者同时支持 HTTP 与 HTTPS）的网站上的旧文章中的 HTTP 链接，那么它就则会使用 HTTP 加载资源，而不是转到 HTTPS。</p>
+      <p>而 Firefox 则有一个 <a href="https://addons.mozilla.org/firefox/addon/httpz/">HTTPZ</a> 扩展可以实现自动将 HTTP 转到 HTTPS 访问。</p>
+      <figure>
+        <img src="https://oscimg.oschina.net/oscnet/783dc429f745ad646bbdae17e8d7b2f47d3.png"/>
+      </figure>
+      <p>HTTPZ 不依赖于支持 HTTPS 的站点数据库，它会尝试自动将连接升级到 HTTPS，如果 HTTPS 连接抛出错误，它将恢复为 HTTP。HTTPZ 的介绍是这样写的：</p>
+      <ul>
+        <li>如果 HTTPS 升级无效，则将回退 HTTP。</li>
+        <li>如果站点从 HTTPS 重定向到 HTTP，则显示警告。</li>
+        <li>启用代理兼容模式。</li>
+        <li>设置 HTTPS 连接尝试超时。</li>
+        <li>可记住成功进行 HTTPS 升级的高速缓存，以加快将来的连接速度。</li>
+        <li>为不支持 HTTP 的网站配置忽略行为。</li>
+        <li>……</li>
+      </ul>
+      <p>HTTPZ 当前有一些能力限制，比如它不会尝试将子资源链接转到 HTTPS，例如 HTTPS 站点中加载的元素。</p>
+    </article>
+  </body>
+</html>

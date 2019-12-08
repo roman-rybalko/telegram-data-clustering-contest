@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://hackaday.com/2019/11/24/cheating-at-bowling-the-hacker-way/"/>
+    <meta property="og:site_name" content="Hackaday"/>
+    <meta property="article:published_time" content="2019-11-24T00:00:00+00:00"/>
+    <meta property="og:title" content="Cheating At Bowling, The Hacker Way"/>
+    <meta property="og:description" content="Anyone who has ever gone to a bowling alley will know the preferred (but ineffective) technique to telepathically control a bowling ball. [Mark Rober] and [James Bruton] decided to change that and …"/>
+  </head>
+  <body>
+    <article>
+      <h1>Cheating At Bowling, The Hacker Way</h1>
+      <address><time datetime="2019-11-24T00:00:00+00:00">24 Nov 2019</time> by <a rel="author" href="https://hackaday.com/author/danieconradie/" target="_blank">Danie Conradie</a></address>
+      <p>Anyone who has ever gone to a bowling alley will know the preferred (but ineffective) technique to telepathically control a bowling ball. [Mark Rober] and [James Bruton] decided to change that and <a href="https://www.youtube.com/watch?v=wM5NHC97JBw">hacked a bowling ball that can be steered remotely</a> (and discreetly), simply by leaning your body.</p>
+      <figure>
+        <video src="https://hackaday.com/wp-content/uploads/2019/11/guidedbowling.gif?w=400" autoplay="" loop=""/>
+      </figure>
+      <p>They started with a standard bowling ball, that was cut in half and hollowed out on a lathe. A beam sits on the centre line of the ball, mounted on a bearing in each half to allow the ball to spin around it. Steering done by shifting the centre of mass, by moving a steel pendulum that hangs below the beam side to side with heavy-duty servo. The servo is controlled with an Arduino, and an IMU to detects the balls orientation. Power is provided by and RC Lipo battery. The wireless controller is a sneaky little device that is taped to [Mark]’s back and covered with clothing, and steers the ball by detecting how far he leans with an IMU module. The brain is an Arduino Mini and an NRF24L01 provides the RF link.</p>
+      <p>While it’s not an easy build, it’s a fairly simple system electronically, with off the shelf electronics modules and perfboard. The genius is in the implementation and its entertainment value. The look on the kids faces when [Mark] “telepathically” controls the ball, after showing off the fact that he has zero natural ability, is absolutely priceless. [Mark Rober], a former NASA engineer, has made a name for himself with viral Youtube videos on cool projects like a <a href="https://hackaday.com/2018/12/17/hacker-makes-a-flawless-booby-trap-strikes-back-against-package-thieves/">glitter booby trap for package thieves</a> and a <a href="https://hackaday.com/2017/12/08/fill-your-hot-tub-with-sand-for-science/">liquid sand hot tub</a>. [James Bruton], a former toy designer is known for his robotics prowess that he has put on display with <a href="https://hackaday.com/2018/06/11/james-bruton-is-making-a-dog-opendog-project/">OpenDog</a> and <a href="https://hackaday.com/2016/12/10/speed-run-james-brutons-star-wars-builds/">functional Star Wars robots</a>.</p>
+      <p>For us this hack is a perfect example of one that entertains and inspires, a powerful combination for young and old alike. Check out the awesome video after the break.</p>
+      <figure>
+        <iframe src="https://www.youtube.com/embed/wM5NHC97JBw" width="800" height="480" data-service="Youtube" scrolling="no"/>
+      </figure>
+    </article>
+  </body>
+</html>

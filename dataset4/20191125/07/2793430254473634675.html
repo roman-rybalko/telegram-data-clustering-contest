@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://habr.com/en/company/microsoft/blog/475990/?utm_source=habrahabr&amp;utm_medium=rss&amp;utm_campaign=475990"/>
+    <meta property="og:site_name" content="Habr"/>
+    <meta property="article:published_time" content="2019-11-25T07:00:02+00:00"/>
+    <meta property="og:title" content="Building Modern Cloud Applications using Pulumi and .NET Core"/>
+    <meta property="og:description" content="We are excited to announce .NET Core support for Pulumi! This announcement means you can declare cloud infrastructure — including all of Azure, such as K..."/>
+  </head>
+  <body>
+    <article>
+      <h1>Building Modern Cloud Applications using Pulumi and .NET Core</h1>
+      <address><time datetime="2019-11-25T07:00:02+00:00">25 Nov 2019, 07:00</time> by <a rel="author" href="https://habr.com/en/users/dotnetteam/" target="_blank">dotnetteam</a></address>
+      <p>We are excited to announce .NET Core support for Pulumi! This announcement means you can declare cloud infrastructure — including all of Azure, such as Kubernetes, Functions, AppService, Virtual Machines, CosmosDB, and more — using your favorite .NET language, including C#, VB.NET, and F#. This brings the entire cloud to your fingertips without ever having to leave your code editor, while using production-ready «infrastructure as code» techniques.</p>
+      <figure>
+        <img src="https://habrastorage.org/webt/xk/ec/sz/xkecszy_jtbxkn8yu6un4-ihuii.png"/>
+      </figure>
+      <p>Infrastructure has become more relevant these days as modern cloud capabilities such as microservices, containers, serverless, and data stores permeate your application’s architecture. The term «infrastructure» covers all of the cloud resources your application needs to run. Modern architectures require thinking deeply about infrastructure while building your application, instead of waiting until afterwards. Pulumi’s approach helps developers and infrastructure teams work together to deliver innovative new functionality that leverages everything the modern cloud has to offer.<br/><br/>Pulumi launched a little over a year ago and recently reached a stable 1.0 milestone. After working with hundreds of companies to get cloud applications into production, .NET has quickly risen to one of Pulumi’s most frequently community requested features. Especially since many of us on the Pulumi team are early .NET ex-pats, we are thrilled today to make Pulumi available on .NET Core for your cloud engineering needs.</p>
+      <h3>What is Pulumi?</h3>
+      <p>Pulumi lets you use real languages to express your application’s infrastructure needs, using a powerful technique called «infrastructure as code.» Using infrastructure as code, you declare desired infrastructure, and an engine provisions it for you, so that it’s automated, easy to replicate, and robust enough for demanding production requirements. Pulumi takes this approach a step further by leveraging real languages and making modern cloud infrastructure patterns, such as containers and serverless programs, first class and easy.<br/><br/>With Pulumi for .NET you can:</p>
+      <ul>
+        <li>Declare infrastructure using C#, VB.NET, or F#.</li>
+        <li>Automatically create, update, or delete cloud resources using Pulumi’s infrastructure as code engine, removing manual point-and-clicking in the Azure UI and ad-hoc scripts.</li>
+        <li>Use your favorite IDEs and tools, including Visual Studio and Visual Studio Code, taking advantage of features like auto-completion, refactoring, and interactive documentation.</li>
+        <li>Catch mistakes early on with standard compiler errors, Roslyn analyzers, and an infrastructure-specific policy engine for enforcing security, compliance, and best practices.</li>
+        <li>Reuse any existing NuGet library, or distribute your own, whether that’s for infrastructure best practices, productivity, or just general programming patterns.</li>
+        <li>Deploy continuously, predictably, and reliably using Azure DevOps Pipelines, GitHub Actions, or one of over a dozen integrations.</li>
+        <li>Build scalable cloud applications using classic infrastructure cloud native technologies like Kubernetes, Docker containers, serverless functions, and highly scalable databases such as CosmosDB into your core development experience, bringing them closer to your application code.</li>
+      </ul>
+      <p>Pulumi’s free open source SDK, which includes a CLI and assortment of libraries, enables these capabilities. Pulumi also offers premium features for teams wanting to use Pulumi in production, such as Azure ActiveDirectory integration for identity and advanced policies.</p>
+      <h3>An example: global database with serverless app</h3>
+      <p>Let’s say we want to build a new application that uses Azure CosmosDB for global distribution of data so that performance is great for customers no matter where in the world they are, with a C# serverless application that automatically scales alongside our database. Normally we’d use some other tools to create the infrastructure, such as JSON, YAML, a DSL, or manually point-and-click in the Azure console. This approach is par for the course, but also daunting — it’s complex, unrepeatable, and means we need an infrastructure expert just to even get started.<br/><br/>The Pulumi approach is to just write code in our favorite .NET language and the Pulumi tool will handle the rest. For example, this C# code creates an Azure CosmosDB databases with a serverless Azure AppService FunctionApp that automatically scales alongside the database:</p>
+      <pre>using System;<br/>using System.Collections.Generic;<br/><br/>using Pulumi;<br/>using Pulumi.Azure.AppService;<br/>using Pulumi.Azure.Core;<br/>using Pulumi.Azure.CosmosDB;<br/><br/>class Program<br/>{<br/>    static Task&lt;int&gt; Main(string[] args)<br/>    {<br/>        return Deployment.RunAsync(() =&gt; {<br/>            var locations = new[] { "WestUS", "WestEurope", "SouthEastAsia" };<br/><br/>            var rg = new ResourceGroup("myapp-rg", new ResourceGroupArgs {<br/>                Location = locations[0],<br/>            });<br/><br/>            var app = new CosmosApp("myapp", new CosmosAppArgs {<br/>                 ResourceGroup = resourceGroup,<br/>                 Locations = locations,<br/>                 DatabaseName = "pricedb",<br/>                 ContainerName = "prices",<br/>                 Factory = (location, db) =&gt; {<br/>                     var func = new ArchiveFunctionApp("myapp-func",<br/>                          new ArchiveFunctionAppArgs {<br/>                              Location = location,<br/>                              Archive = new FileArchive("app"),<br/>                              AppSettings = new Dictionary&lt;string, string&gt; {<br/>                                  ["COSMOSDB_ENDPOINT"] = db.Endpoint,<br/>                              },<br/>                          },<br/>                      );<br/>                      return func.App.ID;<br/>                 },<br/>            });<br/>        });<br/>    }<br/><br/>    // Definitions of CosmosApp and ArchiveFunctionApp elided for brevity.<br/>    // Actual runtime application code is stored in the "app" directory.<br/>    // See link to the full example at the end of this article.<br/>}</pre>
+      <p><a href="https://gist.github.com/terrajobst/d3c82a5df99de1f10de81fd13d4f605a/raw/2616cc92ddca69aa9ecc6d1d8c0ae96f40b2ec5b/Program.cs">view raw</a><a href="https://gist.github.com/terrajobst/d3c82a5df99de1f10de81fd13d4f605a#file-program-cs">Program.cs</a> hosted with by <a href="https://github.com/">GitHub</a><br/><br/>After writing this code, you run the Pulumi CLI with the pulumi up command and it will first show you a preview of the infrastructure resources it plans on creating. After confirming, it will deploy your whole application and its required infrastructure in just a few minutes.</p>
+      <figure>
+        <img src="https://habrastorage.org/getpro/habr/post_images/ea2/880/706/ea28807060259dfcba9777eaa1dec8cd.png"/>
+      </figure>
+      <p>Later on, if you need to make any changes, you just edit your program, rerun the CLI, and it will make the necessary incremental changes to update your infrastructure accordingly. A full history of your deployments is recorded so you can easily see what changes have been made.</p>
+      <h3>Why is .NET great for infrastructure too?</h3>
+      <p>Many of us love using .NET to author our applications, so why not use it for infrastructure as code too? We’ve in fact already seen above some of the advantages above to doing so. Many of these are probably evident if you already know and love .NET, however, let’s briefly recap.<br/><br/>By using any .NET language, you get many helpful features for your infrastructure code:</p>
+      <ul>
+        <li>Familiarity: No need to learn DSLs or markup templating languages.</li>
+        <li>Expressiveness: Use loops, conditionals, pattern matching, LINQ, async code, and more, to dynamically create infrastructure that meets the target environment’s needs.</li>
+        <li>Abstraction: Encapsulate common patterns into classes and functions to hide complexity and avoid copy-and-pasting the same boilerplate repeatedly.</li>
+        <li>Sharing and reuse: Tap into a community of cloud applications and infrastructure experts, by sharing and reusing NuGet libraries with your team or the global community.</li>
+        <li>Productivity: Use your favorite IDE and get statement completion, go to definition, live error checking, refactoring, static analysis, and interactive documentation.</li>
+        <li>Project organization: Use common code structuring techniques such as assemblies and namespaces to manage your infrastructure across one or more projects.</li>
+        <li>Application lifecycle: Use existing ALM systems and techniques to manage and deploy your infrastructure projects, including source control, code review, testing, and continuous integration (CI) and delivery (CD).</li>
+      </ul>
+      <p>Pulumi unlocks access to the entire .NET ecosystem — something that’s easy to take for granted but is missing from other solutions based on JSON, YAML, DSLs, or CLI scripts. Having access to a full language was essential to enabling the CosmosApp example above, which is a custom component that internally uses classes, loops, lambdas, and even LINQ. This approach also helps developers and operators work better together using a shared foundation. Add all of the above together, and you get things done faster and more reliably.</p>
+      <h3>Join the community and get started</h3>
+      <p>Today we’ve released the first preview of Pulumi for .NET, including support for the entire Azure breath of services. To give Pulumi a try, <a href="https://pulumi.com/dotnet">visit the Pulumi for .NET homepage</a>.<br/><br/>There you will find several instructions on installing and getting started with Pulumi for .NET. The following resources provide additional useful information:</p>
+      <ul>
+        <li>
+          <a href="https://github.com/pulumi/examples/tree/master/azure-cs-cosmosapp-component">Full CosmosApp example code</a>
+        </li>
+        <li>
+          <a href="https://www.pulumi.com/docs/get-started/azure/">Getting started with Pulumi for Azure</a>
+        </li>
+        <li>
+          <a href="https://www.pulumi.com/docs/get-started/kubernetes/">Getting started with Pulumi for Kubernetes</a>
+        </li>
+        <li>Integrating Pulumi with <a href="https://www.pulumi.com/docs/guides/continuous-delivery/azure-devops/">Azure DevOps Pipelines</a> and <a href="https://www.pulumi.com/docs/guides/continuous-delivery/github-actions/">GitHub Actions</a></li>
+        <li>
+          <a href="https://www.pulumi.com/docs/intro/concepts/">General Pulumi overview (concepts and architecture)</a>
+        </li>
+        <li>
+          <a href="https://www.pulumi.com/pricing/">Overview of premium Pulumi features for teams and Enterprises</a>
+        </li>
+      </ul>
+      <p>Although Pulumi for .NET is listed in «preview» status, it supports all of the most essential Pulumi programming model features (and the rest is on its way). Our goal is to gather feedback and over the next few weeks, and we will be working hard to improve the .NET experience across the board, including more examples and better documentation.<br/><br/>Please <a href="https://slack.pulumi.com/">join the community in Slack</a> to discuss your scenarios, ideas, and to get any needed assistance from the team and other end users. Pulumi is also <a href="https://github.com/pulumi/pulumi">open source on GitHub</a>.<br/><br/>This is an exciting day for the Pulumi team and our community. Pulumi was started by some of .NET’s earliest people and so it’s great to get back to our roots and connect with the .NET community, helping developers, infrastructure teams, and operators build better cloud software together.<br/><br/>We look forward to seeing the new and amazing cloud applications you build with Pulumi for .NET!</p>
+      <related>
+        <h4>Similar posts</h4>
+        <a href="https://habr.com/en/post/456224/"/>
+        <a href="https://habr.com/en/post/455325/"/>
+        <a href="https://habr.com/en/post/446508/"/>
+      </related>
+    </article>
+  </body>
+</html>

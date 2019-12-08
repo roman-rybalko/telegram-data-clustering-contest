@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://hackaday.com/2019/11/25/mike-harrison-knows-everything-about-leds/"/>
+    <meta property="og:site_name" content="Hackaday"/>
+    <meta property="article:published_time" content="2019-11-25T00:00:00+00:00"/>
+    <meta property="og:title" content="Mike Harrison Knows Everything About LEDs"/>
+    <meta property="og:description" content="Driving an LED and making it flash is probably the first project that most people will have attempted when learning about microprocessor control of hardware. The Arduino and similar boards have an …"/>
+  </head>
+  <body>
+    <article>
+      <h1>Mike Harrison Knows Everything About LEDs</h1>
+      <address><time datetime="2019-11-25T00:00:00+00:00">25 Nov 2019</time> by <a rel="author" href="https://hackaday.com/author/jennylist/" target="_blank">Jenny List</a></address>
+      <p>Driving an LED and making it flash is probably the first project that most people will have attempted when learning about microprocessor control of hardware. The Arduino and similar boards have an LED fitted, and turning it on and off is a simple introduction to code. So it’s fair to say that many of us will think we have a pretty good handle on driving an LED; connect it to a I/O pin via a resistor and that’s it. If this describes you, then <a href="https://www.youtube.com/watch?v=5SQt1f4PsRU">Mike Harrison’s talk at the recent Hackaday Superconference</a> (embedded below) will be an education.</p>
+      <p>Mike has appeared on these pages multiple times as he pushes LEDs and PCB techniques to their limits, even designing our 2017 Superconference badge, and his many years of work in the upper echelons of professional LED installations have given him an unrivaled expertise. He has built gigantic art projects for airports, museums, and cities. A talk billed as covering everything he’s learned about LEDs them promises to be a special one.</p>
+      <p>If there’s a surprise in the talk, it’s that he’s talking very little about LEDs themselves. Instead we’re treated to a fundamental primer in how to drive a lot of LEDs, how to do so efficiently, with good brightness and colour resolution, and without falling into design traps. It’s obvious that some of his advice such at that of relying on DIP switches rather than software for configuration of multi-part installations has been learned the hard way.</p>
+      <figure>
+        <img src="https://hackaday.com/wp-content/uploads/2019/11/mike-harrison-led-driver.jpg?w=400"/>
+        <figcaption>Multiple LEDs at once from your driver chip, using a higher voltage.</figcaption>
+      </figure>
+      <p>We are taken through a bit of the background to perceived intensity and gamma correction for the human eyesight. This segues neatly into the question of resolution, for brightness transitions to appear smooth it is necessary to have at least 12 bits, and to deliver that he reaches into his store of microcontroller and driver tips for how to generate PWM at the right bitrate. His favoured driver chip is the <a href="http://www.ti.com/product/TLC5971">Texas TLC5971</a>, so we’re treated to a primer on its operation. A useful tip is to use multiple smaller LEDs rather than a single big one in the quest for brightness, and he shows us how he drives series chains of LEDs from a higher voltage using just the TI chip.</p>
+      <p>Given the content of the talk this shouldn’t come as a shock, but at the end he reminds us that he doesn’t use all-in-one addressable LEDs such as the WS2932 or APA102. These are  the staple of so many projects, but as he points out they are designed for toy type applications and lack the required reliability for a multi-thousand LED install.</p>
+      <p>Conference talks come in many forms and are always fascinating to hear, but it’s rare to see one that covers such a wide topic from a position of experience. He should write it into a book, we’d buy it!</p>
+      <figure>
+        <iframe src="https://www.youtube.com/embed/5SQt1f4PsRU" width="800" height="480" data-service="Youtube" scrolling="no"/>
+      </figure>
+    </article>
+  </body>
+</html>

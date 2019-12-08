@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://www.forbes.com/sites/zakdoffman/2019/11/24/critical-flaw-in-android-ios-phone-app-left-150-million-users-at-risk/"/>
+    <meta property="og:site_name" content="Forbes"/>
+    <meta property="article:published_time" content="2019-11-24T00:00:00+00:00"/>
+    <meta property="og:title" content="Security Flaw In Android, iOS Phone App: ‘Immediate Fix’ For 150 Million Users"/>
+    <meta property="og:description" content="A popular multi-platform calling app has confirmed it has now fixed a security flaw that opened its users to being hacked."/>
+  </head>
+  <body>
+    <article>
+      <h1>Security Flaw In Android, iOS Phone App: ‘Immediate Fix’ For 150 Million Users</h1>
+      <address><time datetime="2019-11-24T00:00:00+00:00">24 Nov 2019</time> by <a rel="author">Zak Doffman</a></address>
+      <figure>
+        <img src="https://specials-images.forbesimg.com/imageserve/1090978218/960x0.jpg?fit=scale"/>
+        <figcaption>
+          <cite>Getty</cite>
+        </figcaption>
+      </figure>
+      <p>Popular call-blocking app Truecaller has rushed out a fix after a security flaw was identified by an independent researcher, exposing user data as well as system and location information. The researcher developed a POC showing that a “malicious link” could be planted in place of a profile picture to potentially target attacks on other users clicking on the profile. An attack could be executed with any user knowledge. Truecaller confirmed the issue to me, explaining that “it was recently brought to our attention that there was a small bug in our app services which allowed the modification of one's own profile in an unintended way. We thank the security researcher for bringing this to our notice and collaborating with us. The bug was immediately fixed.” The fix was applied to the core APIs within the platform itself, even so, all users should ensure they update to the latest versions of Truecaller apps.</p>
+      <figure>
+        <img src="https://specials-images.forbesimg.com/imageserve/5dda6962e0af7b0006b22a83/960x0.jpg?fit=scale"/>
+        <figcaption>
+          <cite>Google Play Store</cite>
+        </figcaption>
+      </figure>
+      <p>Truecaller was developed in Sweden to manage the challenge of SPAM calls and screening unknown callers. The platform is available globally, but is especially popular in India, where the company says it has become the most used communication tool after the social media giants. Globally, the company boasts 500 million downloads for its cross-platform apps and 150 million daily active users.</p>
+      <p>India-based researcher Ehraz Ahmed discovered the flaw, disclosing it to local media and the company and waiting for a fix before going public. He explained to me that “the flaw allows an attacker to inject his malicious link as the profile URL. The user viewing the attacker’s profile by search or through a popup gets exploited.” Ahmed has said the flaw could be used to mount serious attacks on target machines, although this was not the scope of the proof of concept and has been played down by the company.</p>
+      <p>What Ahmed did manage through his POC was “to fetch a user's information like IP address, User-Agent, and time. The user visiting the profile would not notice this as it all happens in the background, and for the user, it would look like any other profile.” With the now-patched flaw impacting Truecaller’s API, it is a potential threat to all apps and platforms.</p>
+      <p>Truecaller has been hit by security issues before, including an <a href="https://qz.com/africa/1714872/nigeria-investigates-truecaller-amid-lagging-data-protection-laws/">investigation</a> into privacy breaches in Nigeria and the <a href="https://www.indiatoday.in/technology/news/story/personal-data-of-millions-of-truecaller-users-available-on-dark-web-1531969-2019-05-22">alleged</a> sale of Indian user data on the dark web, both earlier this year. These followed other reports of cyberattacks and security lapses earlier in the product’s history.</p>
+      <p>This time around, despite this seeming a blatant flaw that should not have made it onto the platform, the company can be applauded for acting quickly. As messaging apps shift into payment solutions—with the likes of Facebook poised to shape the market, Truecaller sees this as a <a href="https://qz.com/india/1741164/truecaller-is-competing-with-paytm-google-others-in-india/">major focus</a> for its own future revenues. As such, security and trust become even more paramount</p>
+      <p>“We are humbled to welcome all contributions from the security research community,” the company told me. “We have partnered with a community of researchers and will shortly announce a bounty program where we, as a transparent and responsible organisation, will also reward researchers for their contributions."</p>
+      <p>Given this issue, a bug bounty programme to root out others seems like a good move.</p>
+    </article>
+  </body>
+</html>

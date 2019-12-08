@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://www.notebookcheck.net/Nvidia-working-on-driver-level-checkerboard-multiGPU-mode.443973.0.html"/>
+    <meta property="og:site_name" content="Notebookcheck"/>
+    <meta property="article:published_time" content="2019-11-22T00:00:00+00:00"/>
+    <meta property="og:title" content="Nvidia working on driver-level checkerboard multiGPU mode"/>
+    <meta property="og:description" content="Nvidia recently implemented a checkerboard multiGPU rendering option in its graphics drivers. This enables multiGPU scaling in any DX 10+ game, including those without SLI support"/>
+  </head>
+  <body>
+    <article>
+      <h1>Nvidia working on driver-level checkerboard multiGPU mode</h1>
+      <address><time datetime="2019-11-22T00:00:00+00:00">22 Nov 2019</time> by <a rel="author" href="https://www.notebookcheck.net/Editors.212978.0.html?tx_nbc2journalist_pi1%5Bmode%5D=show&amp;tx_nbc2journalist_pi1%5Buid%5D=283" target="_blank">Arjun Krishna Lal</a></address>
+      <p>
+        <b>Nvidia recently implemented a checkerboard multiGPU rendering option in its graphics drivers. This enables multiGPU scaling in any DX 10+ game, including those without SLI support</b>
+      </p>
+      <p>Nvidia appears to have quietly enabled a new driver-level multiGPU rendering mode for Turing cards. An eagle-eyed user on the <a href="https://www.forum-3dcenter.org/vbulletin/showpost.php?p=12144578&amp;postcount=3586">3DCenter forums</a> noticed that the new rendering mode could be enabled using the Nvidia Inspector tool.</p>
+      <p>Unlike traditional SLI, which uses alternate frame rendering (AFR), the new multiGPU mode, called CFR, uses a checkerboard rendering approach. This allows multiple GPUs to render parts of the same frame instead of separate frames, addressing a key issue with SLI.</p>
+      <p>With AFR, each GPU in an SLI setup renders a whole frame. Because rendering time varies with each frame, AFR frequently results in "micro-stutter," making games feel jerky, even at high framerates. In contrast, CFR works similar to the checkerboard technique used in many <a href="https://www.notebookcheck.net/Hands-On-PS4-Death-Stranding-Limited-Edition-Console.442858.0.html">console games</a>. Each GPU renders a separate grid of pixels in a single frame. </p>
+      <p>Preliminary tests indicate that CFR delivers 30-60 percent performance scaling. This isn't as good as the best AFR implementations. <a href="https://www.notebookcheck.net/Rise-of-the-Tomb-Raider-Notebook-Benchmarks.158810.0.html">Rise of the Tomb Raider</a>, for example, delivers close to <a href="https://www.notebookcheck.net/NVIDIA-GeForce-GTX-1070-SLI-Desktop-Benchmarks-and-Specs.240028.0.html">90 percent scaling</a> on SLI setups. What's crucial, though, is that CFR works in <i>any </i>DX10+ game. There's no need for explicit developer support. And, as mentioned, it helps micro-stutter, the biggest drawback to conventional SLI. </p>
+      <p>Nvidia's been very quiet about the new feature, with no official announcement. With Moore's Law slowing down, though, <a href="https://www.notebookcheck.net/Intel-previews-the-Foveros-3D-packaging-technology-in-upcoming-Lakefield-hybrid-CPUs.410884.0.html">Intel</a>, <a href="https://www.notebookcheck.net/Nvidia-intends-to-make-the-leap-to-multi-GPU-design.232294.0.html">Nvidia</a>, and <a href="https://www.notebookcheck.net/AMD-Ryzen-3000-s-MCM-design-enables-optimal-utilization-of-the-7-nm-process.414980.0.html">AMD </a>have all been talking about multi-chip scaling as the path to greater performance. Nvidia's CFR rendering tech benefits SLI setups in the here and now. But in the near future, it could potentially power massive, multi-die GPUs built on MCM (multi-chip modules).</p>
+      <figure>
+        <img src="https://www.notebookcheck.net/fileadmin/Notebooks/News/_nc3/sli_cfr.png"/>
+        <figcaption>Nvidia Inspector CFR Mode (Image Source: Blair on the 3DCenter Forums)</figcaption>
+      </figure>
+      <h3>Source(s)</h3>
+      <p>
+        <a href="https://www.forum-3dcenter.org/vbulletin/showpost.php?p=12144578&amp;postcount=3586">3DCenter Forums</a>
+      </p>
+      <related>
+        <h4>Related Articles</h4>
+        <a href="https://www.notebookcheck.net/NVIDIA-releases-its-latest-Game-Ready-Driver-update.444694.0.html"/>
+        <a href="https://www.notebookcheck.net/AMD-confirms-CrossFire-is-no-longer-a-focus-next-gen-Threadripper-to-be-revealed-soon.431301.0.html"/>
+        <a href="https://www.notebookcheck.net/AMD-Ryzen-3000-s-MCM-design-enables-optimal-utilization-of-the-7-nm-process.414980.0.html"/>
+        <a href="https://www.notebookcheck.net/Intel-previews-the-Foveros-3D-packaging-technology-in-upcoming-Lakefield-hybrid-CPUs.410884.0.html"/>
+      </related>
+    </article>
+  </body>
+</html>

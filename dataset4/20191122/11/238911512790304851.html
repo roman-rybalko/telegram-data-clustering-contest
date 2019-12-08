@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://www.cnbeta.com/articles/tech/913621.htm"/>
+    <meta property="og:site_name" content="cnBeta"/>
+    <meta property="article:published_time" content="2019-11-22T11:08:00+00:00"/>
+    <meta property="og:title" content="最快的核心闲置不用 是Ryzen Master还是Windows 10的锅？"/>
+    <meta property="og:description" content="自从半个月前国外有人发布了一个可以改善三代锐龙处理器性能的Windows电源计划以来，就不断有人讨论到底是Windows10还是RyzenMaster用错了核心，导致程序会把最快的核心晾在一边。有人认为是RyzenMaster的锅，同一时间也有人认为Windows10基于错误的CPPC（CollaborativePowerPerformanceControl）信息而导致的锅。"/>
+  </head>
+  <body>
+    <article>
+      <h1>最快的核心闲置不用 是Ryzen Master还是Windows 10的锅？</h1>
+      <address><time datetime="2019-11-22T11:08:00+00:00">22 Nov 2019, 11:08</time> by <a rel="author">study875</a></address>
+      <p>
+        <a href="https://www.cnbeta.com/topics/42.htm">
+          <pic src="https://static.cnbetacdn.com/topics/0a650ccf6b9da27.png"/>
+        </a>
+      </p>
+      <p>自从半个月前国外有人发布了一个可以改善三代锐龙处理器性能的Windows电源计划以来，就不断有人讨论到底是<a href="http://www.expreview.com/exp_new/exp4_search.php?action=search&amp;category=all&amp;keyword=Windows+10">Windows 10</a>还是Ryzen Master用错了核心，导致程序会把最快的核心晾在一边。有人认为是Ryzen Master的锅，同一时间也有人认为Windows 10基于错误的CPPC（Collaborative Power Performance Control）信息而导致的锅。</p>
+      <hr/>
+      <figure>
+        <img src="https://static.cnbetacdn.com/article/2019/1122/8c355ecb32d2ca4.jpg"/>
+      </figure>
+      <p>Ryzen Master</p>
+      <p>AMD其实在这段时间也一直在研究这一个问题，并且今天发表了<a href="https://www.reddit.com/r/Amd/comments/dzjs7i/fastest_cores_is_windows_right_or_ryzen_master/">一份声明</a>来说明这个问题。简天言之，上面的两个说法都不完全是错的。事实上，Ryzen Master对CPU核心进行排序的方式与CPPC的方式不同，而<a href="https://microsoft.pvxt.net/x9Vg1">Windows</a> Scheduler正正是遵循后者的排序。Ryzen Master会标明客观上来说最快的某个特定核心，但是Windows Scheduler不会基于哪个核心是最快的就用哪个。相反，它会选择在同一个CCX内平均速度最快的两个核心。</p>
+      <p>看起来很复杂和难以理解，但出现这种情况是因为Windows Scheduler需要两个核心来分担单线程任务，这样它可以在两个核心之间自由切换任务，减少单一核心的热量来确保两个核心都可以尽量提高频率。因此所选的两个核心必须在同一个CCX中，不然两个核心之间切换任务的高延迟会损失不少性能，并且抵消切换核心的好处。</p>
+      <p>AMD建议，如果用户想获得最佳性能的话，最好做到第一，BIOS中的全局C-states及CPPC设为“自动开启”或强制打开；第二，升级到Windows 10 May 2019 Update版本；安装包含AGESA 1.0.0.2微码或更高的BIOS版本；以及使用2019年7月之后的AMD X570芯片驱动程序。</p>
+      <p>为了解决任何潜在的困扰，AMD目前正在为Ryzen Master进行更新，更新之后将会显示与CPPC2数据匹配的信息。</p>
+    </article>
+  </body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://venturebeat.com/2019/11/25/amazon-researchers-use-nlp-data-set-to-improve-alexas-answers/"/>
+    <meta property="og:site_name" content="VentureBeat"/>
+    <meta property="article:published_time" content="2019-11-25T16:27:24+00:00"/>
+    <meta property="og:title" content="Amazon researchers use NLP data set to improve Alexa’s answers"/>
+    <meta property="og:description" content="Amazon researchers recently introduced a new data set to improve voice assistants' ability to answer domain-specific questions."/>
+  </head>
+  <body>
+    <article>
+      <h1>Amazon researchers use NLP data set to improve Alexa’s answers</h1>
+      <address><time datetime="2019-11-25T16:27:24+00:00">25 Nov 2019, 16:27</time> by <a rel="author" href="https://venturebeat.com/author/kylewiggers/" target="_blank">Kyle Wiggers</a></address>
+      <p>Improving the quality of voice assistants’ responses to questions is of interest to tech giants like Google, Apple, and Microsoft, who seek to address shortfalls in their respective natural language processing (NLP) technologies. They’ve plenty in the way of motivation — more than 50% of U.S. smart speaker owners say they ask questions of their devices, according to a <a href="https://www.cnbc.com/2019/02/26/what-do-people-use-smart-speakers-for-asking-fun-questions.html">survey</a> conducted last year by Adobe.</p>
+      <p>To this end, Amazon scientists sought to train an NLP model to select answers to questions from a set of answer candidates better than a baseline. They say their Transfer and Adapt (TANDA) approach, which builds on Google’s Transformer, can be effectively adapted to new domains with a small amount of training data while achieving higher accuracy than traditional techniques.</p>
+      <p>By way of refresher, Transformers are a type of neural architecture introduced in a <a href="https://papers.nips.cc/paper/7181-attention-is-all-you-need.pdf">paper</a> coauthored by researchers at Google Brain, Google’s AI research division. As do all deep neural networks, they contain functions (neurons) arranged in interconnected layers that transmit signals from input data and slowly adjust the synaptic strength (weights) of each connection. That’s how all AI models extract features and learn to make predictions, but Transformers uniquely have attention such that every output element is connected to every input element. The weightings between them are calculated dynamically, in effect.</p>
+      <p>TANDA, then, is a two-part training methodology that (1) adapts the Transformer model to a question-answering task and (2) tailors it to specific types of questions and answers. A large-scale, general-purpose data set — Answer Sentence Natural Questions, or ASNQ — is used to prime the system, after which a fine-tuning step adapts it to a target domain. As the researchers explain, ASNQ — which is derived from the Google Natural Questions data set — is much larger in size than existing corpora of its kind, with 57,242 questions in a set used for training the AI models and 2,672 questions in a validation set. And it contains negative examples in addition to positive examples, which help the model learn to identify best answers to given questions out of similar but incorrect ones.</p>
+      <p>To validate their approach, the Amazon researchers first tapped two popular NLP frameworks — Google’s BERT and Facebook’s RoBERTa — and measured accuracy with mean average precision and mean reciprocal recall, using the entire set of candidates for each question. They report that both the BERT and RoBERTa models with fine-tuning on TANDA provide a “large improvement” over state of the art, and that they’re “an order of magnitude” less affected by the insertion of noisy data.</p>
+      <p>In a second experiment, the team built four different corpora with questions sampled from <a href="https://venturebeat.com/2019/10/11/amazon-explains-how-alexa-learns-new-languages/">Alexa</a> customers’ interactions. They say that using TANDA with the aforementioned RoBERTa produces an “even higher” improvement than with BERT, and that TANDA remains robust against noise.</p>
+      <p>“Interesting future work can be devoted to address the question about the applicability and generalization of the TANDA approach to other NLP tasks,” wrote the study’s coauthors. “It would be interesting to test if ASNQ can produce the same benefits for related but clearly different tasks, e.g., paraphrasing or textual entailment, where the relation between the members of text pairs are often different from those occurring between questions and answers.”</p>
+    </article>
+  </body>
+</html>

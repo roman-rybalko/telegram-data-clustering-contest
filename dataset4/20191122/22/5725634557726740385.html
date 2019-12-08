@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://seekingalpha.com/article/4308739-tqqq-sidestepping-recessions-leverage"/>
+    <meta property="og:site_name" content="Seeking Alpha"/>
+    <meta property="article:published_time" content="2019-11-22T22:01:21+00:00"/>
+    <meta property="og:title" content="TQQQ: Sidestepping Recessions With Leverage"/>
+    <meta property="og:description" content="Leverage always leads to an increase in the risk of a portfolio, right? Well, not necessarily.In this article, I introduce the idea of using TQQQ to replicate the results of the stock market while pro"/>
+  </head>
+  <body>
+    <article>
+      <h1>TQQQ: Sidestepping Recessions With Leverage</h1>
+      <address><time datetime="2019-11-22T22:01:21+00:00">22 Nov 2019, 22:01</time> by <a rel="author">D.M. Martins Research</a></address>
+      <p>Summary</p>
+      <ul>
+        <li>Leverage always leads to an increase in the risk of a portfolio, right? Well, not necessarily.</li>
+        <li>In this article, I introduce the idea of using TQQQ to replicate the results of the stock market while protecting the portfolio against sizable losses.</li>
+        <li>Exploring (and eventually adopting) the "bulkhead strategy" to investing could lead to substantially better results over time.</li>
+      </ul>
+      <p>It's a widely-accepted fact that leverage increases the risk of a portfolio. On the surface, the idea makes sense. Think of an investment in the ProShares UltraPro QQQ ETF (NASDAQ:<a href="https://seekingalpha.com/symbol/TQQQ">TQQQ</a>) that has 3x exposure to the Nasdaq 100 (NASDAQ:<a href="https://seekingalpha.com/symbol/QQQ">QQQ</a>). Each day that the stock index is down 1%, TQQQ should be down 3%. Compound the results over a not-so-bullish and volatile period of time and a leveraged portfolio can easily end up in the gutter.</p>
+      <p>But, today, I want to explore one particular use of leverage that can actually decrease the risk of a portfolio substantially. I will call this strategy the "<a href="https://en.wikipedia.org/wiki/Bulkhead_%28partition%29">bulkhead</a>" approach, an analogy to the partitions within the hull of a ship that can prevent the vessel from sinking by containing leakage to one single compartment. This strategy should allow a portfolio to participate in the upside of the stock market one-for-one, while protecting the downside against sizable losses - for instance, during a recession.</p>
+      <figure>
+        <img src="https://static.seekingalpha.com/uploads/2019/11/22/saupload_MoneyMagpie_Income-Savings-Protection-Insurance-Graphic-Cartoon-1-730x395_thumb1.jpg"/>
+      </figure>
+      <p>Credit: <a href="https://www.moneymagpie.com/manage-your-money/8-ways-to-protect-your-money-this-year">moneymagpie.com</a></p>
+      <p>
+        <b>TQQQ + Cash = QQQ</b>
+      </p>
+      <p>Here's an interesting fact that may seem useless at first: An investor can roughly replicate the performance of the Nasdaq 100 by holding a portfolio that is allocated one-third to TQQQ and two-thirds to cash. The logic is simple: Three times the Nasdaq divided by three should be equal the unlevered index. Portfolio Visualizer provides a good depiction of how this particular portfolio would have performed since 2010 (TQQQ's inception year) compared to the benchmark - see table and chart below.</p>
+      <p>Notice that the one-third, two-thirds portfolio rebalanced quarterly would have actually produced slightly lower annual returns than a pure investment in QQQ over the past 10 years: 16.9% vs. 17.8%. Part of the reason is the leveraged ETF's hefty management fee of 0.95% per year that one would not need to pay if simply holding a Nasdaq 100 fund. But, generally speaking, the portfolio's performance would have approximated that of the benchmark.</p>
+      <figure>
+        <img src="https://static.seekingalpha.com/uploads/2019/11/21/40779175-1574362128834604.png"/>
+      </figure>
+      <p>Source: montage using images from <a href="https://www.portfoliovisualizer.com/backtest-portfolio#analysisResults">portfoliovisualizer.com</a></p>
+      <p>As a side note, an investor could have easily closed the performance gap by allocating two-thirds of the portfolio to equal parts short-term treasuries (<a href="https://seekingalpha.com/symbol/SHY">SHY</a>) and short-term corporate notes (<a href="https://seekingalpha.com/symbol/VCSH">VCSH</a>) instead of cash, for barely any additional risk or extra volatility.</p>
+      <p>
+        <b>But so what?</b>
+      </p>
+      <p>While mirroring the performance of QQQ by combining TQQQ and cash may seem pointless at first glance, there's one benefit to doing so that's not obvious:</p>
+      <blockquote>Only one third of the portfolio would ever be exposed to the risk of total loss. This is the "bulkhead effect" at play.</blockquote>
+      <p>Think about the dot-com crash, when the Nasdaq 100 lost 83% of its total value between the March 2000 peak and the October 2002 trough. The TQQQ position in a one-third, two-thirds portfolio (if the ETF existed back then, that is) would have been virtually wiped out. However, nothing would have happened to the other 66.7% of the portfolio that had been invested in cash. In other words, the strategic use of leverage in this case would have fully protected the investment against losses of more than 33.3%.</p>
+      <figure>
+        <img src="https://static.seekingalpha.com/uploads/2019/11/21/40779175-15743668782852278.png"/>
+      </figure>
+      <p>Credit: <a href="https://www.google.com/url?sa=i&amp;source=images&amp;cd=&amp;cad=rja&amp;uact=8&amp;ved=2ahUKEwiKkMi0jfzlAhXEHDQIHbHKD5EQjB16BAgBEAM&amp;url=https%3A%2F%2Flshipdesign.blogspot.com%2F2016%2F11%2Fbriefly-exploring-damage-stability-of.html&amp;psig=AOvVaw35AEu-8UG5rE2iBmn4VKYT&amp;ust=1574453092151816">Learn Ship Design</a></p>
+      <p>To explore the idea further, let's backtest the following "bulkhead" strategy over the past 20 years:</p>
+      <ul>
+        <li>$1,000 hypothetical investment that is allocated 33.3% to a TQQQ-like leveraged Nasdaq 100 fund and 66.7% to cash</li>
+        <li>rebalance every two years at the end of odd years (i.e. 1999, 2001, etc.)</li>
+      </ul>
+      <p>The infrequent rebalancing serves two purposes. First, it allows the bulkhead portfolio to stay protected against sharp drops in the equity benchmark over longer periods of time. Were the portfolio to be rebalanced daily, for example, the protection would all but vanish. This is the case because exposure to the Nasdaq would be continuously added to the portfolio during bear periods and recessions, as the benchmark dug deeper toward the bottom.</p>
+      <p>Second, infrequent rebalances allow the bulkhead portfolio to be more exposed to the Nasdaq when the benchmark is in bull mode. In other words, as stocks rise, the portfolio benefits by tilting more heavily toward the strong asset class. This creates a very similar, desirable effect to the "buy high, sell low" approach that I discussed at length in <a href="https://seekingalpha.com/article/4307308-tqqq-mastering-art-leverage">my most recent TQQQ article</a>.</p>
+      <p>For clarity, different rebalancing rules could be used, such as doing so once per year or once at the end of each even year (i.e. 2000, 2002, etc.). Each approach would have produced different results over the past couple of decades. The key point, however, is that rebalancing should be done infrequently enough in order for the bulkhead effect to be meaningful.</p>
+      <p>
+        <b>The results</b>
+      </p>
+      <p>The graphs below illustrate how the bulkhead portfolio would have performed during the painful selloffs of 2000-2002 (dot-com crash) and 2007-2009 (the Great Recession). Note that the yellow line is a plain investment in the Nasdaq 100, while the blue line is the bulkhead portfolio.</p>
+      <figure>
+        <img src="https://static.seekingalpha.com/uploads/2019/11/21/40779175-15743652332754736.png"/>
+      </figure>
+      <p>Source: DM Martins Research, using data from Yahoo Finance</p>
+      <p>It may help to analyze the graphs one piece at a time, using the labeled red circles above:</p>
+      <ul>
+        <li><b>Circle A</b>: As the Nasdaq pushed for all-time highs very quickly in late 1999, the bulkhead portfolio would have been progressively more exposed to stocks. Its returns would have been better than the benchmark's, effectively due to the portfolio being leveraged at a factor of more than 1x.</li>
+        <li><b>Circle B</b>: The Nasdaq would have begun its sharp descend in March 2000, and the bulkhead portfolio would have been hurt even worse at first - remember, as a result of it being effectively leveraged at more than 1x due to the recent run-up in stock prices. But as the benchmark continued to tank in 2001, the bulkhead portfolio would have seen its losses slow down and eventually halt. By mid-2001, the bulkhead portfolio's market value would have been made up almost entirely of its cash position.</li>
+        <li><b>Circle C</b>: At the end of 2001 (i.e. an odd year), the bulkhead portfolio would have rebalanced. Because the Nasdaq still had quite a bit to go before hitting rock bottom, the portfolio would have participated in the decline of the following nine to 10 months. But, fortunately, at that point, the investment would already have sidestepped the bulk of the dot-com crash.</li>
+        <li><b>Circle D</b>: Fast forward to 2007. Both the Nasdaq and the bulkhead portfolio have been heading higher earlier in the year, but November marks the start of the unwind. By September 2008, stocks begin to decline sharply. The losses in the bulkhead portfolio stall once again as the leveraged Nasdaq position virtually hits zero, while the benchmark continues to fall apart.</li>
+        <li><b>Circle E</b>: By the end of 2009, both the Nasdaq and the bulkhead portfolio have recovered from the 2007-2009 slump. However, the latter suffered much less from the greatest recession of the past 75 years, having lost only 34% of its value from peak to trough vs. the Nasdaq 100's 52% nosedive.</li>
+      </ul>
+      <p>As the narrative above suggests, using a leveraged instrument plus cash to replicate the performance of the stock market can limit the damage done to a portfolio during severe bear periods. By preventing an investment from losing too much of its value during stock market unwinds, the portfolio can eventually recover off a higher base.</p>
+      <p>In addition to minimizing investor anxiety during painful bear periods, a bulkhead portfolio could even end up producing better absolute and risk-adjusted returns over time. This would have been the case since 1999, as the chart below depicts.</p>
+      <figure>
+        <img src="https://static.seekingalpha.com/uploads/2019/11/21/40779175-15743681044790385.png"/>
+      </figure>
+      <p>Source: DM Martins Research, using data from Yahoo Finance</p>
+      <p>Maybe, now, the wise words of some of the most successful investors begin to make more sense:</p>
+      <blockquote>Rule No.1: Never lose money. Rule No.2: Never forget rule No.1. - <a href="https://www.forbes.com/sites/zackfriedman/2018/10/04/warren-buffett-best-quotes/"><i>Warren Buffett</i></a> The most important rule of trading is to play great defense, not offense - <i><a href="https://www.marcellagerwerf.com/15-trading-rules-paul-tudor-jones/">Paul Tudor Jones</a></i></blockquote>
+      <p>
+        <b>Final words</b>
+      </p>
+      <p>Buying TQQQ for the long run and rebalancing the portfolio infrequently, on the surface, sounds like a terrible approach to investing. It seems counterintuitive and perhaps irresponsible to some, until one stops to think through the approach with more care and dig deeper into the math.</p>
+      <p>Most investors will likely never use the bulkhead approach to manage their portfolios, since it's so novel and uncommon. However, I believe that exploring (and eventually adopting) the strategy could lead to substantially better results over time.</p>
+      <p>"Thinking outside the box" is what I try to do everyday alongside my <a href="https://seekingalpha.com/checkout?service_id=mp_1078">Storm-Resistant Growth</a> (or SRG) premium community on Seeking Alpha. Since 2017, I have been working diligently to generate market-like returns with lower risk through multi-asset class diversification. To become a member of this community and further explore the investment opportunities, <a href="https://seekingalpha.com/checkout?service_id=mp_1078">click here</a> to take advantage of the 14-day free trial today.</p>
+      <figure>
+        <img src="https://static.seekingalpha.com/uploads/2019/3/9/40779175-1552165496067289.png"/>
+      </figure>
+      <p><b>Disclosure:</b> I/we have no positions in any stocks mentioned, and no plans to initiate any positions within the next 72 hours. I wrote this article myself, and it expresses my own opinions. I am not receiving compensation for it (other than from Seeking Alpha). I have no business relationship with any company whose stock is mentioned in this article.</p>
+    </article>
+  </body>
+</html>

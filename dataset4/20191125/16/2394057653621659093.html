@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://www.gram.pl/artykul/2019/11/25/premiera-amd-ryzen-threadripper-3960x-intel-nie-ma-szans.shtml"/>
+    <meta property="og:site_name" content="Gram.pl"/>
+    <meta property="article:published_time" content="2019-11-25T16:30:00+00:00"/>
+    <meta property="og:title" content="Test AMD Ryzen Threadripper 3960X – Intel nie ma szans!"/>
+    <meta property="og:description" content="AMD Ryzen Threadripper 3960X to 24-rdzeniowy procesor, który w testach przebija znacznie droższe propozycje od Intel."/>
+  </head>
+  <body>
+    <article>
+      <h1>Test AMD Ryzen Threadripper 3960X – Intel nie ma szans!</h1>
+      <h2>AMD Ryzen Threadripper 3960X to 24-rdzeniowy procesor, który w testach przebija znacznie droższe propozycje od Intel.</h2>
+      <address><time datetime="2019-11-25T16:30:00+00:00">25 Nov 2019, 16:30</time> by <a rel="author">Paweł Rudy</a></address>
+      <p>Test AMD Ryzen Threadripper 3960X przyniósł mi sporo niespodzianek. Największą z nich jest fakt, że 24-rdzeniowa jednostka zachowuje się w grach wzorowo, czego o poprzedniku nie dało się powiedzieć. NUMA, UMA, długie czasy bootowania systemu, to wszystko odeszło w niepamięć.</p>
+      <figure>
+        <img src="https://img7.gram.pl/pkdk20191125162431493zevu.jpg"/>
+      </figure>
+      <p>Wchodząc pierwszy raz do BIOS w MSI TRX40 Creator miałem wrażenie, jakbym obcował z nieco rozwiniętym X570. Nie mówię tego w kategoriach przytyku, wręcz przeciwnie! Uważam, że tak przyjemny i łatwy w obsłudze BIOS powinien stosować każdy producent.</p>
+      <h3>AMD Ryzen Threadripper 3960X - specyfikacja</h3>
+      <p>AMD Ryzen Threadripper 3960X na pokładzie ma 24 rdzenie i 48 wątków, połączonych za pomocą Infinity Fabric (IE). Jest to podstawa architektury ZEN, która z roku na rok daje coraz lepszą wydajność. Wszystko to za sprawą wyższych taktowań IE, które dodatkowo trzeba regulować. Warto pamiętać też o mnożniku IE, który wchodzi w życie, gdy przebije się taktowaniem jego wartości.</p>
+      <figure>
+        <img src="https://img7.gram.pl/sicr20191125162451016prep.jpg"/>
+      </figure>
+      <p>Sumarycznie AMD Ryzen Threadripper 3960X ma 142,25 cache, z czego 128 MB to L3, 12 MB L2, a L1 to tylko 2,25. Taka ilość bardzo pomaga mu w grach.</p>
+      <h3>Nie musisz być specem od OC, żeby sięgnąć po wydajność u AMD!</h3>
+      <p>Przygotowania do testu zacząłem od przewertowania Reviewer’s Guide, czyli dokumentacji sporządzonej przez producenta, w której znajdują się między innymi wyniki wewnętrznych testów i informacje o tym, jak postępować z platformą.</p>
+      <figure>
+        <img src="https://img7.gram.pl/opzq20191125162515824ovzb.jpg"/>
+      </figure>
+      <p>Dość praktyczną informacją był rezultat z Cinebench R20.060, bo dał mi cel, do którego powinienem dążyć, by uzyskać prawidłowe wyniki z reszty zaplanowanych gier i aplikacji. Zacząłem od najgorszego możliwego przebiegu konfiguracji, czyli uruchomiłem bezmyślnie profil A-XMP na czterech kościach G.SKILL Trident Z, udając kogoś, kto kupił szybkie RAMy i myśli, że to wystarczy.<br/>Okazało się, że wystarczyło, bo w pierwszych 5 przebiegach Cinebench R20 oscylowałem w marginesie błędu statystycznego wyniku z Reviewer’s Guide. To nie zmieniło jednak faktu, że przy CL19 opóźnienia dostępu do RAM byłyby straszne dla wydajności w grach, nawet ze 140 MB L2+L3 cache. <br/>W związku z tym zabrałem się do starego, dobrego, ręcznego ustawiania pamięci z timingami, napięciem, UCLK i FCLK. Te dwa ostatnie są bardzo ważne dla niskich opóźnień, które AMD potrzebuje, by lśnić mocą. W tym przypadku najlepiej sprawdza się synchronizacja UCLK i FCLK przy jak najniższym CL. Dzielna czwórka pamięci od G.SKILL z serii Trident Z pozwoliła mi na stabilną pracę przy 3600 MHz i CL15, operując przy tym z FCLK 1800 MHz.<br/>Po podniesieniu napięć na kościach RAM do 1.4 V uzyskałem punkt stabilności systemu, w którym lekko przebiłem wyniki podane w skrypcie od AMD. Zadowolony ze swojego osiągnięcia przeszedłem do zakładki procesora, by uruchomić Precision Boost Overdrive. Przy okazji podniosłem też limit mocy dla procesora do 600 W, bo nie chciałem, żeby się dławił z braku prądu. <br/>Po tych paru podstawowych ruchach byłem gotów do testów. Co prawda nie wycisnąłem z MSI TRX40 Creator każdego grama potencjału, bo na procedurę miałem niecałe dwa dni, niemniej ostatecznie załapałem się na wytyczne, więc mogłem nieśmiało kontynuować.</p>
+      <h3>Test AMD Ryzen Threadripper 3960X - platforma</h3>
+      <p>AMD Ryzen Threadripper 3960X w pełnym obciążeniu potrafi pobrać ponad 300 W mocy. W związku z tym wymagane jest chłodzenie wodne, które poradzi sobie z odprowadzeniem takiej ilości ciepła. Przy powietrzu musiałbyś kupić coś bardzo mocnego, a i tak nie jest powiedziane, że taki Dark Rock 4 Pro, Cryorig R1 czy Noctua NH-U14S TR4-SP3 podołają zadaniu.</p>
+      <figure>
+        <img src="https://img7.gram.pl/qqvp20191125162537056fysi.jpg"/>
+      </figure>
+      <p>Skończyło się więc na NZXT Kraken X62 280 mm, które podczas testów nie pozwalało przekraczać Threadripper-owi 96 stopni Celsjusza, trzymając go raczej w marginesie 94 na najgorętszym krzemie.<br/>Do tego wysiłku dokładała się także obudowa z zasilaczem, bo są to podstawy, na który nie powinno się szczędzić grosza. 1300-watowa jednostka od Antec z certyfikatem Platinum była gotowa na znacznie więcej niż jedną kartę graficzną. Szkoda, że nie trafiła mi się jakaś parka na NVLINK. Z chęcią sprawdziłbym dogłębniej wyższe rozdzielczości.<br/>Be quiet! Dark Base 700 z tacką zamontowaną odwrotnie i w bieli też trafił mi się fartownie, bo to przestronna i dobrze wykonana konstrukcja. Zbudowanie w niej platformy nie zajęło wiele czasu, choć łączyło się z lekką prowizorką. Niestety nie miałem czasu na przekładkę, więc kable puściłem dość umownie, bez specjalnego zarządzania.</p>
+      <figure>
+        <img src="https://img7.gram.pl/qcig20191125162602158emyi.jpg"/>
+      </figure>
+      <p>Chcąc skorzystać z jednej z najnowszych funkcjonalności platformy TR4, do testowanego AMD Ryzen Threadripper 3960X dołożyłem dysk Corsair MP600, operujący w standardzie PCI-E 4.0. Był on jednym z wielu czynników, które zadecydowały o stworzeniu nowego socketa dla Threadrippera.<br/>MSI TRX40 Creator to jedna z lepiej wykonanych płyt pod HEDT od AMD. Świetny, żeberkowy radiator na potężnej, 16-fazowej sekcji zasilania sprawa, że 300 W poboru przez długi okres czasu nie wzrusza tą konstrukcją.</p>
+      <figure>
+        <img src="https://img7.gram.pl/afui20191125162619886cjik.jpg"/>
+      </figure>
+      <p>Nigdy nie udało mi się przebić 71 stopni Celsjusza na sekcji pomimo intensywnego katowania testem obciążenia systemu w AIDA64 Engineering i wielokrotnych powtórzeń Blendera. Całkiem niezły wynik, jak na ograniczony przepływ powietrza.</p>
+      <figure>
+        <img src="https://img7.gram.pl/vgoi20191125162638387kmjd.jpg"/>
+      </figure>
+      <p>Dobrym rozwiązaniem w MSI TR40X Creator jest podwójny BIOS oraz możliwość uruchamiania płyty z przycisku na jej dolnej krawędzi. Znalazł się tam nawet Reset, więc producent z nadzieją patrzy na sprzedać pod test-benche. <br/>Nie mówię, że to zły pomysł, po prostu takie smaczki pojawiają się przeważnie w segmencie premium, więc jeżeli nie miałeś z nim styczności, to mógłbyś tego nie docenić. Ja natomiast przyjąłem małe czerwone guziczki z wielką radością, bo oszczędziły mi podpinania kabli od obudowy.<br/>Płyta główna dla entuzjastów od MSI ma oprócz tego 8 slotów pamięci RAM, dodatkową kartę na PCI-E, odgrywającą rolę wentylowanego huba dla czterech dodatkowych dysków M.2 NVMe, Wi-Fi 6, 10G Super Lan, port Lightning 20G, półpasywny wentylator chipsetu i znane już radiatory na dyski M.2.<br/>Mając 88 linii PCI-E 4.0 AMD Ryzen Threadripper 3960X poradzi sobie z potężną ilością rozszerzeń, takich jak dyski, karty graficzne czy dźwiękowe. Właściwie nie widzę dzisiaj scenariusza, w którym komuś ich zabraknie, nawet licząc spore macierze RAID.</p>
+      <h3>AMD Ryzen Threadripper 3960X – wyniki testów w aplikacjach</h3>
+      <p>Wyniki testów AMD Ryzen Threadripper 3960X w aplikacjach są wręcz powalające, szczególnie patrząc z perspektywy 1399 dolarów, które trzeba za niego zapłacić. 7-nanometrowy proces produkcyjny FinFET od TSMC połączony z architekturą chiplet, w której to nawet kontrolery pamięci mogą być selektami, dają solidnego kuksańca dotychczasowemu liderowi na tym rynku. Zresztą, zobaczcie sam.</p>
+      <table bordered="">
+        <tr>
+          <td valign="top">
+            <b>Program</b>
+          </td>
+          <td colspan="2" valign="top">
+            <b>Wyniki</b>
+          </td>
+        </tr>
+        <tr>
+          <td valign="top">
+            <b>Tryb</b>
+          </td>
+          <td valign="top">
+            <b>Jeden rdzeń</b>
+          </td>
+          <td valign="top">
+            <b>Wszystkie rdzenie</b>
+          </td>
+        </tr>
+        <tr>
+          <td valign="top">
+            <b>Geekbench 4.0</b>
+          </td>
+          <td valign="top">5861</td>
+          <td valign="top">68564</td>
+        </tr>
+        <tr>
+          <td valign="top">
+            <b>Cinebench R20.060</b>
+          </td>
+          <td valign="top">523</td>
+          <td valign="top">13780</td>
+        </tr>
+        <tr>
+          <td valign="top">
+            <b>Cinebench R15.0</b>
+          </td>
+          <td valign="top">208</td>
+          <td valign="top">5973</td>
+        </tr>
+        <tr>
+          <td valign="top">
+            <b>CPU-Z</b>
+          </td>
+          <td valign="top">528.6</td>
+          <td valign="top">16371.3</td>
+        </tr>
+        <tr>
+          <td valign="top">
+            <b>Corona 1.3</b>
+          </td>
+          <td colspan="2" valign="top">37 sekund (12953300 Rays)</td>
+        </tr>
+        <tr>
+          <td valign="top">
+            <b>Blender 2.81 BMW</b>
+          </td>
+          <td colspan="2" valign="top">01:02.34</td>
+        </tr>
+        <tr>
+          <td valign="top">
+            <b>Blender 2.81 Classroom</b>
+          </td>
+          <td colspan="2" valign="top">02:57.69</td>
+        </tr>
+        <tr>
+          <td valign="top">
+            <b>Blender 2.79b BMW</b>
+          </td>
+          <td colspan="2" valign="top">01:27.99</td>
+        </tr>
+        <tr>
+          <td valign="top">
+            <b>Blender 2.79b Classroom</b>
+          </td>
+          <td colspan="2" valign="top">04:22.99</td>
+        </tr>
+      </table>
+      <h3>AMD Ryzen Threadripper 3960X – wyniki w grach</h3>
+      <p>AMD Ryzen Threadripper 3960X zrobił na mnie świetne wrażenie w grach. Wysokie zegary dzięki Precision Boost Overdrive (PBO) pomagają praktycznie w każdym przypadku, a pozbycie się NUMA i UMA to już tylko wisienka na torcie.<br/>Dodatkowo Threadripper 3. generacji jest bestią do nagrywania przez OBS. Nie myślałem, że uda mi się nim nagrać płynnie Metro Exodus w 2160p, a test zagrał kompletnie inną melodię. W tej sekcji nagrywanie odbywało się na ustawieniu Medium w 1440p z 50 000 bitrate.</p>
+      <table bordered="">
+        <tr>
+          <td valign="top">
+            <b>Gra</b>
+          </td>
+          <td valign="top">
+            <b>1440p Średnie FPS</b>
+          </td>
+          <td valign="top">
+            <b>1440p Min. FPS</b>
+          </td>
+          <td valign="top">
+            <b>1440p Średnie FPS z OBS</b>
+          </td>
+          <td valign="top">
+            <b>1440p Min. FPS z OBS</b>
+          </td>
+        </tr>
+        <tr>
+          <td valign="top">
+            <b>Hitman 2 (Wysokie)</b>
+          </td>
+          <td valign="top">96</td>
+          <td valign="top">65</td>
+          <td valign="top">80</td>
+          <td valign="top">55</td>
+        </tr>
+        <tr>
+          <td valign="top">
+            <b>Shadow of the Tomb Raider (Wysokie)</b>
+          </td>
+          <td valign="top">108</td>
+          <td valign="top">90</td>
+          <td valign="top">91</td>
+          <td valign="top">73</td>
+        </tr>
+        <tr>
+          <td valign="top">
+            <b>Rainbow Six Siege (Wysokie)</b>
+          </td>
+          <td valign="top">242</td>
+          <td valign="top">183</td>
+          <td valign="top">208</td>
+          <td valign="top">137</td>
+        </tr>
+        <tr>
+          <td valign="top">
+            <b>The Division 2 (Wysokie)</b>
+          </td>
+          <td colspan="2" valign="top">10400</td>
+          <td colspan="2" valign="top">9025</td>
+        </tr>
+        <tr>
+          <td valign="top">
+            <b>Battlefield V 64v64 Rotterdam (Wysokie)</b>
+          </td>
+          <td valign="top">128</td>
+          <td valign="top">81</td>
+          <td valign="top">107</td>
+          <td valign="top">62</td>
+        </tr>
+        <tr>
+          <td valign="top">
+            <b>PUBG (Wysokie)</b>
+          </td>
+          <td valign="top">141</td>
+          <td valign="top">94</td>
+          <td valign="top">106</td>
+          <td valign="top">61</td>
+        </tr>
+        <tr>
+          <td valign="top">
+            <b>Metro Exodus (Wysokie)</b>
+          </td>
+          <td valign="top">94</td>
+          <td valign="top">67</td>
+          <td valign="top">76</td>
+          <td valign="top">54</td>
+        </tr>
+        <tr>
+          <td valign="top">
+            <b>Apex Legends (Ultra)</b>
+          </td>
+          <td valign="top">138</td>
+          <td valign="top">94</td>
+          <td valign="top">113</td>
+          <td valign="top">79</td>
+        </tr>
+      </table>
+      <p>Przy nagrywaniu w 1440p procesor miał wciąż spory zapas mocy. Uznałem, że dobrym dopełnieniem testu byłoby sprawdzenie jak ta bestia radzi sobie z 2160p. Tym razem z trybu nagrywania Medium zszedłem na Fast, bo inaczej spotykałem się z częstymi ścięciami na nagraniach.</p>
+      <table bordered="">
+        <tr>
+          <td valign="top">
+            <b>Gra</b>
+          </td>
+          <td valign="top">
+            <b>2160p Średnie FPS</b>
+          </td>
+          <td valign="top">
+            <b>2160p Min. FPS</b>
+          </td>
+          <td valign="top">
+            <b>2160p Średnie FPS z OBS</b>
+          </td>
+          <td valign="top">
+            <b>2160p Min. FPS z OBS</b>
+          </td>
+        </tr>
+        <tr>
+          <td valign="top">
+            <b>Hitman 2 (Średnie)</b>
+          </td>
+          <td valign="top">62</td>
+          <td valign="top">23</td>
+          <td valign="top">46</td>
+          <td valign="top">21</td>
+        </tr>
+        <tr>
+          <td valign="top">
+            <b>Rainbow Six Siege (Średnie)</b>
+          </td>
+          <td valign="top">163</td>
+          <td valign="top">65</td>
+          <td valign="top">133</td>
+          <td valign="top">50</td>
+        </tr>
+        <tr>
+          <td valign="top">
+            <b>Metro Exodus (Średnie)</b>
+          </td>
+          <td valign="top">66</td>
+          <td valign="top">53</td>
+          <td valign="top">50</td>
+          <td valign="top">26</td>
+        </tr>
+        <tr>
+          <td valign="top">
+            <b>The Division 2 (Średnie)</b>
+          </td>
+          <td colspan="2" valign="top">6875</td>
+          <td colspan="2" valign="top">5250</td>
+        </tr>
+        <tr>
+          <td valign="top">
+            <b>Battlefield V 64v64 Rotterdam (Średnie)</b>
+          </td>
+          <td valign="top">83</td>
+          <td valign="top">69</td>
+          <td valign="top">61</td>
+          <td valign="top">40</td>
+        </tr>
+      </table>
+      <h3>AMD Ryzen Threadripper 3960X – temperatury, pobory prądu i napięcia</h3>
+      <p>Najlepszym sposobem na sprawdzenie stabilności działania systemu jest długotrwałe, pełne obciążenie. W tym miejscu zebrałem wszystkie dane z HWInfo, które mają znaczenie, zebrane po 4 godzinach i 41 minutach:</p>
+      <ul>
+        <li>Max Core - 4550 MHz</li>
+        <li>Max Tdie - 93 stopnie Celsjusza</li>
+        <li>Max CPU Package Power - 312 W</li>
+        <li>Max MOBO - 56 stopni Celsjusza</li>
+        <li>Max VCORE - 1,432 V</li>
+        <li>Max VR MOS - 70 stopni Celsjusza</li>
+        <li>Max Chipset - 86,8 stopni Celsjusza</li>
+      </ul>
+      <figure>
+        <img src="https://img7.gram.pl/flqz20191125162701310psyq.jpg"/>
+      </figure>
+      <p>Jak na obudowę komputerową z jednym wentylatorem z tyłu takie wyniki są bardzo dobre. Co prawda na froncie operowały też dwa śmigła od chłodzenia CPU, niemniej powietrze z nich zawsze było ogrzane. W końcu ponad 300 W to masa ciepła do odebrania.</p>
+      <h3>AMD Ryzen Threadripper 3960X to bardzo udany procesor</h3>
+      <p>Na AMD Ryzen Threadripper 3960X nie ma dzisiaj na rynku odpowiedzi. Wypuszczenie Intel Core i9-10980XE 6 godzin przed zejściem embarga na ten materiał pokazuje jasno, że Niebiescy nie są gotowi na bezpośrednie porównanie w aplikacjach z wieloma wątkami.<br/>Przewaga Ryzenów wzrosła dodatkowo przez cenę, bo słabszy Intel jest sprzedawany za 1999 USD, podczas gdy za wydajniejsze AMD trzeba zapłacić tylko 1399 USD. Świat trochę staje na głowie i to przy niemałej widowni. Teraz jestem jeszcze bardziej ciekaw, dokąd prowadzi Lisa Su i co jest jej głównym celem. Ja tymczasem się z Wami żegnam, do zobaczenia na łamach tego portalu.</p>
+    </article>
+  </body>
+</html>

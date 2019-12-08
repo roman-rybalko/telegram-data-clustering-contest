@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://www.theverge.com/2019/11/25/20977734/instagram-ai-algorithm-explore-tab-machine-learning-method"/>
+    <meta property="og:site_name" content="The Verge"/>
+    <meta property="article:published_time" content="2019-11-25T15:00:00+00:00"/>
+    <meta property="og:title" content="Instagram explains how it uses AI to choose content for your Explore tab"/>
+    <meta property="og:description" content="Instagram shares the recipe for its AI secret sauce."/>
+  </head>
+  <body>
+    <article>
+      <h1>Instagram explains how it uses AI to choose content for your Explore tab</h1>
+      <h2>A peek behind the algorithmic scenes</h2>
+      <address><time datetime="2019-11-25T15:00:00+00:00">25 Nov 2019, 15:00</time> by <a rel="author" href="https://www.theverge.com/authors/james-vincent" target="_blank">James Vincent</a></address>
+      <p>Instagram has <a href="https://ai.facebook.com/blog/powered-by-ai-instagrams-explore-recommender-system/">shared new details</a> on how its app uses machine learning to surface content for users, stressing that, when making recommendations, it focuses on finding accounts it thinks people will enjoy, rather than individual posts.</p>
+      <p>The blog post is technical in nature and contains no big surprises, but it offers an interesting behind-the-scenes perspective at a time when algorithmic recommendation systems are <a href="https://www.theverge.com/interface/2019/4/3/18293293/youtube-extremism-criticism-bloomberg">under scrutiny</a> for pushing users toward dangerous, hateful, and extremist content.</p>
+      <aside>Algorithmic recommendations are under scrutiny</aside>
+      <p>While Instagram has not been criticized with the same ferocity as YouTube (dubbed “the Great Radicalizer” <a href="https://www.nytimes.com/2018/03/10/opinion/sunday/youtube-politics-radical.html">by <i>The New York Times</i></a>), it certainly has its share of problems. Hateful content and misinformation <a href="https://www.theatlantic.com/technology/archive/2019/03/instagram-is-the-internets-new-home-for-hate/585382/">thrive on the platform</a> as much as any other social network, and certain mechanisms in the app (like its suggested follows feature) have been shown to push users toward extreme viewpoints for topics <a href="https://www.vice.com/en_us/article/vbwkvm/10-seconds-instagram-recommends-anti-vaxx-vaccine-accounts">like anti-vaccination</a>.</p>
+      <p>In its blog post, though, Instagram’s engineers explain the operation of the Explore tab while steering clear of thorny political issues. “This is the first time we’re going into heavy detail on the foundational building blocks that help us provide personalized content at scale,” Instagram software engineer Ivan Medvedev told <i>The Verge </i>over email. (You can read about how Instagram organizes content on the main feed in <a href="https://www.theverge.com/2018/6/1/17418254/instagram-algorithm-how-it-works-posts-downrank">this story</a> from last year.)</p>
+      <p>The post emphasizes that Instagram is huge, and the content it contains is extremely varied, “with topics varying from Arabic calligraphy to model trains to slime.” This presents a challenge for recommending content, which Instagram overcomes by focusing not on what posts users might like to see, but on what accounts might interest them instead.</p>
+      <p>Instagram identifies accounts that are similar to one another by adapting a common machine learning method known as “word embedding.” Word embedding systems study the order in which words appear in text to measure how related they are. So, for example, a word embedding system would note that the word “fire” often appears next to the words “alarm” and “truck,” but less frequently next to the words “pelican” or “sandwich.” Instagram uses a similar process to determine how related any two accounts are to one another.</p>
+      <figure>
+        <img src="https://cdn.vox-cdn.com/thumbor/WgPWO5SbYNGFRhqhVeG9_ZU3rJQ=/0x0:2040x1360/1920x0/filters:focal(0x0:2040x1360):no_upscale()/cdn.vox-cdn.com/uploads/chorus_asset/file/10668149/akrales_180402_2435_0093_2.jpg"/>
+        <figcaption>
+          <i>Content on Instagram is varied, so the company looks more at what accounts you might like rather than posts.</i>
+          <cite>Photo by Amelia Holowaty Krales / The Verge</cite>
+        </figcaption>
+      </figure>
+      <p>To make its recommendations, the Explore system begins by looking at “seed accounts,” which are accounts that users have interacted with in the past by liking or saving their content. It identifies accounts similar to these, and from them, it selects 500 pieces of content. These candidates are filtered to remove spam, misinformation, and “likely policy-violating content,” and the remaining posts are ranked based on how likely a user is to interact with each one. Finally, the top 25 posts are sent to the first page of the user’s Explore tab.</p>
+      <p>There are a few things to note here. First, Instagram is not being completely transparent about its process. There are no details on what signals are used to identify spam or misinformation, and that’s not too surprising considering that explaining this would help individuals who want to spread this sort of content. The company is also unclear about to what degree machine learning is used to filter inappropriate content, a key detail given that Facebook often presents AI as a magic bullet for moderation (while <a href="https://www.theverge.com/2018/4/5/17202886/facebook-fake-news-moderation-ai-challenges">experts disagree</a>).</p>
+      <aside>It’s still unclear whether AI can really tackle misinformation</aside>
+      <p>Take the example of anti-vax content. Instagram has cracked down on this but mainly leveraging manual methods. It blocks hashtags that contain what it says is “verifiably false information” like “#vaccinescauseaids” and relies on health agencies like the World Health Organization to flag dangerous posts, which it takes down.</p>
+      <p>Will AI be useful? It’s not clear, but Medvedev says the company is working on it. “We are also training AI models to proactively detect vaccine misinformation and take automatic action,” he says.</p>
+      <p>The second takeaway from the post is that, by Instagram’s own telling, the best way for users to shape what content they see in the Explore tab is by interacting with the stuff they like. (That is good for Instagram, I guess!) If you <i>don’t </i>want to see certain sorts of posts, then your best bet is to use the “see fewer posts like this” tool, which you can access by clicking the three-dot menu in the top-right corner of each post. The algorithm <i>will</i> notice.</p>
+    </article>
+  </body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://www.heise.de/developer/meldung/Machine-Learning-Google-Coral-lernt-zu-sortieren-4595497.html"/>
+    <meta property="og:site_name" content="Developer"/>
+    <meta property="article:published_time" content="2019-11-25T10:52:00+00:00"/>
+    <meta property="og:title" content="Machine Learning: Google Coral lernt zu sortieren"/>
+    <meta property="og:description" content="Die ML-Plattform bekommt eine Anbindung an das Framework MediaPipe zum Verarbeiten von Audio- und Videostreams."/>
+  </head>
+  <body>
+    <article>
+      <h1>Machine Learning: Google Coral lernt zu sortieren</h1>
+      <h2>Die ML-Plattform bekommt eine Anbindung an das Framework MediaPipe zum Verarbeiten von Audio- und Videostreams.</h2>
+      <address><time datetime="2019-11-25T10:52:00+00:00">25 Nov 2019, 10:52</time> by <a rel="author">Rainald Menge-Sonnentag</a></address>
+      <p>Google hat seine aus Hard- und Softwarekomponenten zusammengesetzten Machine-Learning-Plattform (ML) Coral aktualisiert. Neben einer neuen Betriebssystemsversion ist vor allem die Anbindung an das ML-Framework MediaPipe nennenswert. Außerdem finden Entwickler vortrainierte Modelle für Coral auf TensorFlow Hub und ein frisches Tutorial zum Bau einer Sortiermaschine.</p>
+      <p>Die neue Version 4.0 von Mendel Linux zielt vor allem auf verbesserte Performance und Stabilität. Mendel Linux ist eine schlanke, angepasste Variante von Debian, die speziell auf die Coral-Entwicklerboards zugeschnitten ist. Wie bis zu Android 9 vergibt Google den Releases zusätzlich zur Nummer Namen nach dem Alphabet, wenn auch nicht nach Süßigkeiten. Der Beiname für das aktuelle Linux-Mendel-Release lautet "Day". Als Grundlage dient Debian 10 Buster, und beim Linux Kernel ist Coral derzeit auf Version 4.14.</p>
+      <h3>Blick auf die Pipeline</h3>
+      <p>Das Cross-Plattform-Framework MediaPipe dient zur Verarbeitung von Daten wie Audio- und Videostreams über eine ML-Perception-Pipeline. Es ist vor allem auf das Prototyping ausgelegt. Ein <a href="https://ai.googleblog.com/2019/08/on-device-real-time-hand-tracking-with.html">Beispiel aus dem Google AI-Blog</a> zeigt den Einsatz zum Tracken einer Hand inklusive der Details wie der einzelnen Gelenke in einem Video.</p>
+      <p>Entwickler können MediaPipe-Graphen auf dem Desktop erstellen und für das Coral-Board konvertieren, um es dort als TensorFlow-Lite-Modell auszuführen. Im Zuge der Umsetzung für das Coral Board sind speziell zugeschnittene Beispiele für die Gesichts- und Objekterkennung <a href="https://github.com/google/mediapipe/tree/master/mediapipe/examples/coral">im GitHub-Repository von MediaPipe</a> verfügbar.</p>
+      <p>Das Framework befindet sich derzeit noch im Alpha-Stadium, und laut <a href="https://mediapipe.readthedocs.io/en/latest/">der MediaPipe-Projektseite</a> sind durchaus noch Breaking Changes bis zum 1.0-Release zu erwarten. Auch die Anbindung an das Coral Board gilt als experimentell.</p>
+      <h3>Gut sortiertes Frühstück</h3>
+      <p>Google hat zudem ein Beispielprojekt als Einstiegshilfe für den Einsatz von Coral veröffentlicht: Der "Teachable Sorter" nutzt Bildklassifizierung für das Sortieren von Gegenständen. Entwickler können ihr eigenes Modell trainieren und auf das Board übertragen, um Objekte nach Kategorie zu sortieren. Als mehr oder weniger schmackhafte Basis zeigt ein Video das Sortieren von Frühstücksflocken in die Kategorien "Marshmallows" und "keine Marshmallows".</p>
+      <figure>
+        <iframe src="https://www.youtube.com/embed/ydzJPeeMiMI" width="640" height="360" data-service="Youtube" scrolling="no"/>
+        <figcaption>Beispiel einer Sortiermaschine zum Erkennen von Marshmallows in Frühstücksflocken</figcaption>
+      </figure>
+      <p>Modelle für das Board wird Google weiterhin auf der Coral-Site veröffentlichen. Neuerdings sind sie auch über TensorFlow Hub, die zentrale Anlaufstelle für vortrainierte TensorFlow-Modelle verfügbar.</p>
+      <h3>Das Wachstum der Koralle</h3>
+      <p>Google hatte Coral im März diesen Jahres erstmals <a href="https://www.heise.de/meldung/Kuenstliche-Intelligenz-Rundumschlag-zu-TensorFlow-4328044.html">im Rahmen des TensorFlow Dev Summit</a> vorgestellt. Nach gut sechs Monaten <a href="https://www.heise.de/meldung/Machine-Learning-Google-Coral-verlaesst-die-Betaphase-4566102.html">hat die Plattform Ende Oktober die Betaphase verlassen</a>. Das Coral System on Module (SOM) setzt auf den Koprozessor Google Edge TPU als ML-Beschleuniger und hat als CPU einen NXP i.MX 8M SoC (System on a Chip).</p>
+      <p>Es hat ein GByte RAM und acht GByte Flash-Speicher. Hinzu kommt ein WiFi- und ein Bluetooth-Modul. Die TPU soll bis zu vier Billionen Operationen pro Sekunde (TOPS, Tera-ops per second) verarbeiten können. Dabei ist er auf Energieeffizienz optimiert und ist auf zwei TOPS/Watt ausgelegt.</p>
+      <details>
+        <summary>Machine Learning bei heise Developer</summary>
+        <p>Die <a href="https://www.m3-konferenz.de/index.php/?source=13">ML-Konferenz Minds Mastering Machines</a> von heise Developer und dem dpunkt.verlag geht nächstes Jahr in die dritte Runde. Der <a href="https://www.m3-konferenz.de/call_for_proposals.php?source=13">Call for Proposals</a>, bei dem Experten ihre Vortragsvorschläge einreichen können, läuft noch bis zum 17. Januar 2020.</p>
+        <p>Nächstes Jahr startet zudem <a href="https://ml-essentials.de/?source=13">mit den ML-Essentials</a> eine neue Veranstaltung, die 18 dreistündige Deep-Dive-Trainings an insgesamt drei Tagen bietet und <a href="https://ml-essentials.de/programm.php?source=13">in ihrem Programm</a> einen tiefen Einblick sowohl in Einsteiger- als auch fortgeschrittene Themen bietet.</p>
+      </details>
+      <p>Coral setzt auf TensorFlow Lite: Entwickler können entsprechende Modelle quantisieren und kompilieren, damit sie direkt auf der Edge TPU arbeiten. Neben vortrainierten Modellen bietet Google Werkzeuge zum erweiterten Training der Modelle an.</p>
+      <p>Weitere Details lassen sich <a href="https://developers.googleblog.com/2019/11/updates-from-coral-mendel-linux-4.html">dem Entwicklerblog bei Google</a> entnehmen. (<a href="mailto:rme@ct.de">rme</a>)</p>
+    </article>
+  </body>
+</html>

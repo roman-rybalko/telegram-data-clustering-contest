@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://www.techradar.com/news/behind-the-tech-that-saved-youtube-from-a-scalability-nightmare"/>
+    <meta property="og:site_name" content="TechRadar"/>
+    <meta property="article:published_time" content="2019-11-22T20:00:20+00:00"/>
+    <meta property="og:title" content="Behind the tech that saved YouTube from a scalability nightmare"/>
+    <meta property="og:description" content="We spoke with PlanetScale's Sugu Sougoumarane and Mike Soloman at this year's Percona Live Conference Europe."/>
+  </head>
+  <body>
+    <article>
+      <h1>Behind the tech that saved YouTube from a scalability nightmare</h1>
+      <address><time datetime="2019-11-22T20:00:20+00:00">22 Nov 2019, 20:00</time> by <a rel="author" href="https://www.techradar.com/author/mayank-sharma" target="_blank">Mayank Sharma</a></address>
+      <h3>Behind the tech that saved YouTube from a scalability nightmare</h3>
+      <p>No need to use keystore databases if all you need is scalability</p>
+      <p>(Image credit: Shutterstock)</p>
+      <p>Back in 2010, YouTube was in a fix. The platform was growing fast and its infrastructure couldn’t match its pace. Pumping in more CPU and memory wasn’t helping; it was still falling apart at the seams. </p>
+      <p>That’s when two YouTube engineers, Sugu Sougoumarane and Mike Soloman decided to take a step back and analyse the problem from a different perspective: “When we actually sat down and wrote a huge spreadsheet of all problems and solutions, and when we looked at all that, it was obvious that we needed to build something that sits between the application and the MySQL layer, and moderate all these queries,” says Sugu in a sit-down with <i>TechRadar Pro</i> on the sidelines of the Percona Live Conference Europe 2019 in Amsterdam. </p>
+      <p>The solution to the problem came in the form of Vitess, which essentially makes it easy to scale and manage large clusters of MySQL databases. Sugu tells us that the project has grown quite a bit since its inception at YouTube. Back in the day Vitess was mostly just addressing scalability problems: “But over time, as soon as this proxy came in the middle, people started asking for more and more features. And we kind of organically grew into where we are today.”</p>
+      <ul>
+        <li>Databases are <a href="https://www.techradar.com/news/databases-are-migrating-to-the-cloud">migrating to the cloud</a></li>
+        <li><a href="https://www.techradar.com/news/multi-database-and-multi-cloud-deployments-are-the-new-norm">Multi-database and multi-cloud deployments</a> are the new norm</li>
+        <li>Also check out the <a href="https://www.techradar.com/news/best-cloud-database">best cloud databases</a></li>
+      </ul>
+      <h4>Transparent routing</h4>
+      <p>Sugu says that its users prefer Vitess over MySQL clustering because of the flexibility it offers: “MySQL clustering has challenges with scale out. So when you want to scale out, you want pieces to be more loosely coupled. But if you use [MySQL] clustering then you don't get that flexibility to move things around more easily. So I think that's the reason why Vitess is preferred by users.”</p>
+      <p>A key requirement to scaling a database is to manage how a database is partitioned or sharded in DBA speak. One of the reasons for Vitess’ popularity is its effective sharding scheme. VTGate, one of the two main proxies in Vitess, that started as a connection consolidator, is now becoming an important piece of the solution: “When we first built Vitess, we required the application to be shard aware. So the application had to say “I want to send this query, I want to send it to this shard.” Which meant that if you decided to use Vitess, you had to rewrite your app to basically make shard aware calls and Vitess manages the cluster for you.” </p>
+      <p>That changed in 2013 when VTGate took on the ability to route standard queries to the correct shard: “This meant that the application no longer needs to be shard aware…. any database driver could now use Vitess.” Sugu tells us that the Walmart-owned Indian e-commerce vendor Flipkart was the first one to take note of that feature and built a JDBC driver for Vitess, which then allowed them to easily port their application to Vitess. This one feature that Sugu claims was relatively easy to implement, changed the outlook for the project.</p>
+      <figure>
+        <img src="https://cdn.mos.cms.futurecdn.net/bXy3nBdbNkadCFnRDiEgT4.jpg"/>
+        <figcaption>(Image credit: Pixabay)</figcaption>
+      </figure>
+      <h4>Cloud-native solution</h4>
+      <p>Vitess bills itself as a “cloud-native” solution. Sceptical, we quiz Sugu whether there’s more to it than just being buzzword compliant. He says the credit to Vitess’ cloud-ready nature can be traced back to Google’s cluster manager called Borg. </p>
+      <p>Vitess was originally built to run on YouTube’s data centers until 2013 when Google decided to move them in-house within Google: </p>
+      <p>“Google's Borg is a beast because it's an environment that’s sort of hostile to storage systems. We had to actually make Vitess work in that environment where Borg will, at will, come and take down your pod and wipe your data and you had to survive in that environment.” </p>
+      <p>This meant the developers had to build resiliency features within Vitess to ensure the pods resurrect themselves after being taken down by Borg: </p>
+      <p>“And essentially, those are the same rules that Kubernetes has. In Kubernetes, if a pod goes down, your data is lost. So we were basically ready for Kubernetes, before Kubernetes was born.”</p>
+      <p>Furthermore, they also had to make subtle changes to the Vitess code since the lifecycle of deployments in the cloud is very different from their lifecycle on bare metal: “In bare metal you could have a master for six months. In Google a week would be a miracle because Google continuously rescheduled pods and it will take down your pod eventually.” </p>
+      <p>There was another aspect of this rescheduling that helped make Vitess ready for the ever changing cloud environments: “When it (Google’s scheduler) rescheduled sometimes it will put something else on the same address. For example, it could reschedule one shard and schedule in another shard. You won't even know because the schema is correct, you send a query and it will send you responses. So we had to build protection against those things.”</p>
+      <figure>
+        <img src="https://cdn.mos.cms.futurecdn.net/23q9sr2n5pzV3Vbed9S9UX.jpg"/>
+        <figcaption>(Image credit: Image credit: Shutterstock/ Imilian)</figcaption>
+      </figure>
+      <h4>Open Source</h4>
+      <p>Like all good engineers, Sugu and his co-developer were in no mood of reimplementing their scalability solution from scratch, if and when their career took them elsewhere. So they seeked approval from Google for open sourcing Vitess, who approved the request after making sure there wasn’t anything proprietary in their code.</p>
+      <p>Open Sourcing Vitess is what eventually led to Sugu leaving YouTube to start a services company around Vitess called PlanetScale: </p>
+      <p>“YouTube, at some point of time was happy with where Vitess was. But what had happened is the community had taken notice of the project and there was a big interest of people wanting to adopt it and there was a huge request for features.” </p>
+      <p>So on the one hand you had a company that wasn’t interested in pooling resources for essentially building an infrastructure component and on the other you had a skeptical community hesitant to commit to a project from a company whose core competency is not infrastructure. </p>
+      <p>“So that's when we kind of came to the conclusion that this project has gained momentum and for it to be healthy, it needs to have somebody to take care of it dedicated. The way we worked it out is YouTube donated the project to CNCF (Cloud Native Computing Foundation) and then I left to start PlanetScale with my co-founder.”</p>
+      <h4>Reversing the trend</h4>
+      <p>When asked about some of the teething troubles with Vitess, Sugu said that the biggest one for them at the moment is that Vitess is still not a drop in replacement: “If you move to Vitess 90% of your queries will work, [but] you do have to address that 10% in some form or the other.”</p>
+      <p>He also mentioned that Vitess doesn’t yet support OLAP (Online Analytical Processing) queries. But it’s not something they are hugely worried about since users usually just export the data into an OLAP system like Snowflake, Pinot, or Presto: “So it's not a huge pain point, but they do want a unified solution.” </p>
+      <p>Sugu is excited about a new feature called VReplication, which allows users “to basically materialise a table from one key space into another key space.” Sugu points out that since the rules of materialisation are completely flexible, the number of applications for this feature are enormous: “And it also solves some core problems that sharding itself has. For example, if you have a hierarchical relationship, then it's easy to shard. But it isn’t so simple if you have many to many relationships. VReplication solves that problem by allowing you to materialise the same table in multiple places.” The feature has about half a dozen use cases that Sugu illustrated in his talk at the event.</p>
+      <p>As we end our conversation, Sugu says both he and his co-founder believe that the database industry took the wrong decision when they turned away from relational databases into key value stores: “It was a necessity because the relational databases refused to answer the demand of scalability. If they had answered that demand, people would not have gone to key value stores. Our vision is to hopefully reverse that trend to the extent possible since now you can scale relational databases.”</p>
+      <ul>
+        <li>We've also rounded up the <a href="https://www.techradar.com/best/best-database-software">best database software</a></li>
+      </ul>
+      <p>
+        <a href="https://www.techradar.com/news/computing">See more Computing news</a>
+      </p>
+    </article>
+  </body>
+</html>

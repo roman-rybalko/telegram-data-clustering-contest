@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://fivethirtyeight.com/features/how-do-you-find-good-nfl-defenders-by-measuring-whats-not-there/"/>
+    <meta property="og:site_name" content="FiveThirtyEight"/>
+    <meta property="article:published_time" content="2019-11-25T12:04:18+00:00"/>
+    <meta property="og:title" content="How Do You Find Good NFL Defenders? By Measuring What’s Not There."/>
+    <meta property="og:description" content="Thanks to player-tracking data, we can visualize the absence of defensive activity."/>
+  </head>
+  <body>
+    <article>
+      <h1>How Do You Find Good NFL Defenders? By Measuring What’s Not There.</h1>
+      <address><time datetime="2019-11-25T12:04:18+00:00">25 Nov 2019, 12:04</time> by <a rel="author">Michael Chiang</a></address>
+      <p>The New England Patriots’ Stephon Gilmore is widely considered one of the best cornerbacks in the NFL. Through Week 11, he had given up a <a href="https://www.pro-football-reference.com/players/G/GilmSt00.htm#detailed_defense::none">47.1 passer rating</a> when targeted this year — to put that into perspective, a 39.6 passer rating is awarded to a quarterback who spikes the ball on every play. (Through Week 11, no qualifying starting QB in 2019 had a passer rating lower than 70.) Because of his prowess, offensive coordinators and QBs don’t even look his way: Of the <a href="https://www.pro-football-reference.com/teams/nwe/2019_advanced.htm#advanced_defense::none">326 passing attempts</a> against the Patriots this year, only 64 (19.6 percent) came against Gilmore.</p>
+      <p>When it comes to measuring this aspect of defensive performance, we’re only beginning to scratch the surface. That’s because individual defense is inherently difficult to assess: A player’s defensive impact may be more significant in the <i>absence </i>of activity, but we can only count things that do happen. To measure a defensive player, we’re always chasing ghosts, trying to count things that <i>don’t</i>.</p>
+      <aside>Mallepalle created a computer vision algorithm to parse publicly released pass-target charts into x-y coordinates.</aside>
+      <p>But thanks to the NFL’s Next Gen Stats tracking data — and the impressive work of researchers such as Baltimore Ravens personnel analyst Sarah Mallepalle<a href="https://fivethirtyeight.com/features/how-do-you-find-good-nfl-defenders-by-measuring-whats-not-there/#fn-1"><sup>1</sup></a> — we can visualize that absence of activity.</p>
+      <aside>The data from Next Gen Stats includes plays from 119 games through Week 8. We’re missing all plays from Bills-Bengals on Sept. 22 and Packers-Lions on Oct. 14. In the Titans-Bills game on Oct. 6, we’re missing Buffalo’s offensive plays.</aside>
+      <p>A useful example involves where on the field opponents choose to attack a defense. Every week, coaches huddle around game film, analyzing defensive schemes and players, planning how to exploit what they see. The results of that game-planning show up in the tracking data. Here are charts that show where every team’s pass defense was the most and least vulnerable in the first eight weeks of the season:<a href="https://fivethirtyeight.com/features/how-do-you-find-good-nfl-defenders-by-measuring-whats-not-there/#fn-2"><sup>2</sup></a></p>
+      <figure>
+        <img src="https://fivethirtyeight.com/wp-content/uploads/2019/11/chiang.PASSING-DEFENSE-AFC-NEW.1125.1.png"/>
+      </figure>
+      <figure>
+        <img src="https://fivethirtyeight.com/wp-content/uploads/2019/11/chiang.PASSING-DEFENSE-AFC-NEW-mobile.1125.1.png"/>
+      </figure>
+      <figure>
+        <img src="https://fivethirtyeight.com/wp-content/uploads/2019/11/chiang.PASSING-DEFENSE-NFC-NEW.1125.2.png"/>
+      </figure>
+      <figure>
+        <img src="https://fivethirtyeight.com/wp-content/uploads/2019/11/chiang.PASSING-DEFENSE-NFC-NEW-mobile.1125.2.png"/>
+      </figure>
+      <p>The charts shown are scaled from blue to white and white to red, with red representing the locations where offenses attempted the most passes against the defenses, blue representing the fewest pass attempts and white representing the average number of passes. In theory, the blue areas are places where the absence of activity reveals defensive strength.</p>
+      <p>In practice, it’s more complicated to solve the problem than simply plotting the distribution of all passing attempts or completions. Some offenses pass in unique ways because of their schemes and the skill sets of their quarterbacks and receivers. Take the Seattle Seahawks, for example:</p>
+      <figure>
+        <img src="https://fivethirtyeight.com/wp-content/uploads/2019/11/chiang.PASSING-DEFENSE-SEA.1125.3.png"/>
+      </figure>
+      <aside>The left when facing the line of scrimmage.</aside>
+      <p>Seattle QB Russell Wilson’s pass attempts are skewed to the left.<a href="https://fivethirtyeight.com/features/how-do-you-find-good-nfl-defenders-by-measuring-whats-not-there/#fn-3"><sup>3</sup></a> Why? This is likely because of the inability of D.K. Metcalf, the Seahawks’ rookie wide receiver and 2019 second-round pick, to run a full tree of routes. During the season’s first two weeks, <a href="https://nextgenstats.nfl.com/charts/list/type/team/season/week">he was targeted</a> only while lining up on the left side of the field. Through the first half of the season, Metcalf had been targeted 45 times, and only 10 were on the right side of the field.</p>
+      <aside>The right side of a defense lines up against the left side of an offense.</aside>
+      <p>Given that the Seattle passing attack is skewed, we don’t want to penalize any defense’s right side<a href="https://fivethirtyeight.com/features/how-do-you-find-good-nfl-defenders-by-measuring-whats-not-there/#fn-4"><sup>4</sup></a> just because those defenders had to match up against Metcalf. So to normalize for an opposing offense’s usual tendencies, I compared an offense’s pass distribution against the defense in question with that offense’s distributions against the other defenses it has faced during the 2019 season. We can consider the difference to be the defense’s relative effect on a typical offense’s gameplan.</p>
+      <p>Let’s take a deeper look at the Buffalo Bills.</p>
+      <figure>
+        <img src="https://fivethirtyeight.com/wp-content/uploads/2019/11/chiang.PASSING-DEFENSE-BUF.1125.4.png"/>
+      </figure>
+      <p>The Bills defense has been outstanding, giving up <a href="http://www.nfl.com/stats/team">304.1 total yards and 197.8 passing yards</a> per game through Week 11 — third best in the league in both categories. But we can see a clear disparity in how opposing offenses are attacking starting cornerbacks Tre’Davious White and Levi Wallace. White’s reputation and production seem to have discouraged offenses from throwing in his direction. So far this season, White has given up a 58.9 passer rating on 66 targets, compared with a 101.2 passer rating on 79 targets for Wallace.</p>
+      <p>The beauty of the Bills’ defense is that their star cornerbacks don’t “shadow” or follow specific opposing WRs wherever they line up. Instead, they mainly stay on one side of the field, no matter who lines up there. Through Week 8, White had lined up on the left side of the field for 97 percent of his snaps, and Wallace <a href="https://g.espncdn.com/s/ffldraftkit/19/NFLDK2019_CS_WRCBchartWeek5fly.pdf?addata=2019=WRCB_chtsht_week5fly_xxx">lined up on the right side of the field</a> for 96 percent of his snaps.</p>
+      <p>Our chart reflects that, as well as which cornerback scares off opposing QBs and where on the field that is. Opposing offenses target the left side of the field significantly more against Buffalo (to challenge Wallace, the weaker corner) than when they play against other defenses.</p>
+      <p>This approach to analyzing defense assumes that teams react rationally to defensive weaknesses they see on tape. That assumption may not always hold true, but taking note of changing tendencies is still one of the best ways to look for those hidden absences of activity that are key to identifying good individual defense.</p>
+      <p>We still don’t know if these splits have any predictive power. But this is the next logical step in understanding passing: analyzing the horizontal level. At a minimum, these new visualizations provide an interesting new insight into how offenses change in order to attack defenses.</p>
+      <p>
+        <i>Check out our latest </i>
+        <a href="https://projects.fivethirtyeight.com/2019-nfl-predictions/?ex_cid=endlink">
+          <i>NFL predictions</i>
+        </a>
+        <i>.</i>
+      </p>
+    </article>
+  </body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://bandageek.com/2019/11/seleccion-de-caracteristicas-feature-selection/"/>
+    <meta property="og:site_name" content="BandaGeek"/>
+    <meta property="article:published_time" content="2019-11-23T20:10:29+00:00"/>
+    <meta property="og:title" content="Selección de Características (Feature Selection) | BandaGeek"/>
+    <meta property="og:description" content="La seleccion de caracteristicas es un paso de suma importancia.Esto hara que a un algoritmo le tome la menor cantidad de tiempo obtener una buena exactitud en la tarea que realizara."/>
+  </head>
+  <body>
+    <article>
+      <h1>Selección de Características (Feature Selection) | BandaGeek</h1>
+      <address><time datetime="2019-11-23T20:10:29+00:00">23 Nov 2019, 20:10</time> by <a rel="author" href="https://bandageek.com/author/jotavalo/" target="_blank">Juan Otavalo</a></address>
+      <p>Cuando quieres hacer que un algoritmo aprenda una serie de patrones que le permitan diferenciar entre un objeto y otro se utiliza comúnmente las redes neuronales. Para que la red neuronal aprenda acerca de las características de los diferentes objetos (por ejemplo) se ingresan diferentes y variados tipos de objetos a la red neuronal. Mientras mayor sea la variación de los objetos el algoritmo podrá diferenciarlos con mayor exactitud. A esta primera variedad de objetos se los llama conjunto de entrenamiento. Sin embargo, existen también otro conjunto de objetos con los que se podría probar que tan bueno es el algoritmo clasificador de objetos. Este ultimo conjunto de objetos se lo llama conjunto de prueba.</p>
+      <p>                Con el primer conjunto se entrena el algoritmo y con el segundo se comprueba que tan bien se hizo el entrenamiento. Todo esto es medido mediante la exactitud de clasificación de la red neuronal. Obtener esta exactitud depende de muchos parámetros como son los pesos de cada neurona, el bias y la topología de la red neuronal. En este texto se enfocará en la cantidad de datos a procesar. Los conjuntos de entrada a la red neuronal pueden ser inmensos haciendo que la red neuronal tarde mucho en obtener una buena clasificación.</p>
+      <p>Existen métodos que permiten la mejor selección de datos sobre un conjunto de datos. ¿A qué se refiere esto? Si se tiene por ejemplo 5 características y se quere que estas se representen en solo 3 se usan el Wrapper Method. Este método selecciona las mejores 3 características de las 5. No hay perdida de datos en el entrenamiento de la red neuronal con la reducción de datos. Sin embargo, se debe conocer el porcentaje de exactitud en la selección de las mejores características.</p>
+      <p>                ¿Pero para que se reducen los datos? Imagina que se tienen 1000 imágenes que son el conjunto de prueba de una red neuronal y que cada imagen es de 250*250 pixeles. La cantidad de pixeles que tendría que procesar el computador seria de 1000*250*250. Pero si se reducen los pixeles a los más importantes por ejemplo se podría tener 50*50*1000. Lo cual requiere una cantidad menor de computo para procesar esa cantidad de datos.</p>
+    </article>
+  </body>
+</html>

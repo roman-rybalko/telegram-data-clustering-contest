@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://www.dday.it/redazione/33170/android-kernel-linux-sicurezza"/>
+    <meta property="og:site_name" content="DDay.it"/>
+    <meta property="article:published_time" content="2019-11-22T10:30:00+00:00"/>
+    <meta property="og:title" content="Android vuole il kernel puro di Linux, ma rischia di rendere Linux meno sicuro"/>
+    <meta property="og:description" content="Google ha mostrato un esemplare funzionante di uno smarpthone Android girare con una versione quasi pura del kernel Linux. Un'ottima notizia per il futuro degli aggiornamenti di Android, che però mette a rischio la sicurezza e la stabilità di Linux stesso."/>
+  </head>
+  <body>
+    <article>
+      <h1>Android vuole il kernel puro di Linux, ma rischia di rendere Linux meno sicuro</h1>
+      <h2>Google ha mostrato un esemplare funzionante di uno smarpthone Android girare con una versione quasi pura del kernel Linux. Un'ottima notizia per il futuro degli aggiornamenti di Android, che però mette a rischio la sicurezza e la stabilità di Linux stesso.</h2>
+      <address><time datetime="2019-11-22T10:30:00+00:00">22 Nov 2019, 10:30</time> by <a rel="author">Franco Aquini</a></address>
+      <p>Che il più grande problema di Android sia la cosiddetta frammentazione delle versioni, non è certo una novità. Per questo Google sta lavorando a un progetto ambizioso che è entrato finalmente in una fase avanzata: <b>utilizzare il kernel di Linux al posto di quello personalizzato che sta alla base di Android</b>.</p>
+      <p>Il tema non è dei più facili, ma vediamo di semplificarlo: il kernel è il cuore di un sistema operativo. Come molti sapranno, <b>Android affonda le sue radici dentro Linux utilizzandone il kernel, che poi viene "arricchito" di una serie di caratteristiche specifiche per Android</b>.</p>
+      <p>Dal Kernel LTS (Long Term Support) puro, si arriva così all'Android Common Kernel. A questo punto il Common Kernel viene inviato ai produttori di SoC, come Qualcomm, che aggiunge tutto il necessario per sfruttare i processori contenuti nel SoC. Si parla a questo punto di SoC Kernel, che viene ulteriormente rivisto dal produttore finale del dispositivo, il quale ci metterà sopra le patch e i driver specifici per l'hardware (grafica, fotocamera, sicurezza, ecc.).</p>
+      <p><b>Il risultato finale, dopo ben quattro passaggi, è il Device Kernel, che risulta come la complessa sovrapposizione di strati</b>. Facile capire, a questo punto, il perché spesso i dispositivi Android non vengano aggiornati così frequentemente.</p>
+      <figure>
+        <img src="https://cdn.dday.it/system/uploads/picture/image/58928/content_small_17-1.jpg"/>
+        <figcaption>Esempio del percorso di evoluzione del Kernel di un dispositivo come il Samsung S10 pubblicato da <a href="https://arstechnica.com/gadgets/2019/11/google-outlines-plans-for-mainline-linux-kernel-support-in-android/">Ars Technica</a></figcaption>
+      </figure>
+      <p>C'è un altro dettaglio che renderebbe l'uso del kernel puro di Linux un enorme vantaggio. Con questa lunga serie di passaggi, diventa praticamente impossibile modificare o aggiornare, una volta che il dispositivo è stato realizzato, il Linux Kernel. <b>Un dispositivo, in altre parole, nascerà e morirà con la stessa versione di Linux Kernel, anche se tutti gli strati superiori verranno aggiornati</b>. Questo fatto genera delle vere e proprie aberrazioni. Tanto per fare un esempio,<b> il recentissimo PIxel 4, lanciato da appena un mese, monta il Linux Kernel 4.14, una versione uscita a novembre 2017</b>, ovvero due anni fa. Basti pensare che una versione di Android deve supportare solitamente kernel di almeno tre anni. Android 10, per fare un altro esempio, arriva a supportare la versione 4.9 del Linux Kernel, datata addirittura 2016. </p>
+      <p> </p>
+      <h3>Gli sviluppatori Linux non sono contenti</h3>
+      <p>La buona notizia quindi c'è: <b>Google sta facendo di tutto per affrontare il problema e rendere le fondamenta del suo Android meno traballanti</b>. Un kernel con meno strati sarebbe più facile da aggiornare e più facile da integrare nei dispositivi di tutti i produttori, ma qual è lo stato delle cose?</p>
+      <figure>
+        <img src="https://cdn.dday.it/system/uploads/picture/image/58927/content_small_ABI_Monitoring.pdf_-_Google_Chrome-980x537.png"/>
+      </figure>
+      <p>L'anno scorso Google annunciò di essere in fase "investigativa"; quest'anno invece <b>ha mostrato un primo prototipo di smartphone non prodotto da Google, un Poco F1 di Xiaomi per l'esattezza, che fa girare Android su un mainline Linux</b>, ovvero su un Kernel di Linux puro (o quasi).</p>
+      <p>Il tutto però non è esente da lati negativi. Per arrivare allo scopo finale, Google infatti dovrebbe inserire parte del supporto all'hardware specifico dei dispositivi finali, direttamente all'interno del kernel Linux, il che non incontra il favore degli sviluppatori del sistema operativo.</p>
+      <p>Sviluppatori i quali, preoccupati dalla necessità di Android di dover continuare a supportare periferiche ritenute superate (leggasi USB), <b>temono che diventerà più difficile risolvere problemi di sicurezza</b> del kernel con conseguenze nefaste anche sulla stabilità di Linux stesso.</p>
+      <p>La scelta da fare diventa quindi se rendere Android un po' più pulito o Linux un po' più sporco. Vedremo come andrà a finire, ma dietro l'angolo c'è sempre il futuro <a href="https://www.dday.it/redazione/29155/google-fuchsia-app-android">Fuchsia, un altro sistema operativo su cui Google sta investendo molto</a>. Magari proprio per sostituire, in un prossimo futuro, lo stesso Android.</p>
+    </article>
+  </body>
+</html>

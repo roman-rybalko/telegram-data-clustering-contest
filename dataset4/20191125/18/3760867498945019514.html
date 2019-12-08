@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://www.adslzone.net/2019/11/25/direcciones-ipv4-reservas-agotadas/"/>
+    <meta property="og:site_name" content="ADSLZone"/>
+    <meta property="article:published_time" content="2019-11-25T18:00:33+00:00"/>
+    <meta property="og:title" content="Ahora sí: entregan el último bloque de direcciones IPv4"/>
+    <meta property="og:description" content="El RIPE ha anunciado que las reservas de direcciones IPv4 se han agotado y han dejado de asignar nuevas direcciones IP de manera directa. Ahora hay lista de espera."/>
+  </head>
+  <body>
+    <article>
+      <h1>Ahora sí: entregan el último bloque de direcciones IPv4</h1>
+      <address><time datetime="2019-11-25T18:00:33+00:00">25 Nov 2019, 18:00</time> by <a rel="author">Alberto García</a></address>
+      <p>El <b>RIPE</b> es el <b>Registro Regional de Internet para Europa, Oriente Medio y Asia Central.</b> Este <b>RIR</b> (<b>Regional Internet Access</b>) es el encargado de <b>asignar las direcciones IP </b>en los territorios mencionados. Actualmente son los encargados de entregar a operadores y empresas las direcciones IPv4 que usan, pero hoy, oficialmente el lunes 25 de noviembre de 2019 a las 16:35 hora española, <b>se han quedado sin direcciones IP nuevas</b>.</p>
+      <h3>Agotadas las reservas de direcciones IPv4 del RIPE</h3>
+      <p>En 2016 se asignaron todas las direcciones IPv4, y el pasado mes de julo de 2019 se anunció que ahora había una larga lista de espera y asignaciones mínimas de 256 direcciones de un vez (bloques completos /24). Hoy, el RIPE ha anunciado que no tiene más direcciones disponibles.</p>
+      <figure>
+        <img src="https://www.adslzone.net/app/uploads/2019/11/ipv4.jpg"/>
+      </figure>
+      <p>Aunque se hayan quedado sin direcciones, el RIPE afirma que<b> seguirán recuperando direcciones IPv4 en el futuro</b> de organizaciones que hayan cerrado, o de redes que han devuelto direcciones que ya no usan. Estas direcciones irán siendo asignadas a quienes estén en la lista de espera.</p>
+      <p>Sin embargo, aunque esperan estar ofreciéndolas durante un tiempo (al menos un año o año y medio), estas direcciones no son suficientes para la demanda de millones de direcciones que tienen. Además, sólo los Registradores de Internet Local (LIR en inglés) que no hayan recibido direcciones IPv4 de cualquier tamaño podrán solicitar nuevas direcciones, y sólo podrán recibir un bloque de 256 direcciones.</p>
+      <p>El RIPE ha creado una nueva sección para mostrar un gráfico de los LIR que están en <a href="https://www.ripe.net/manage-ips-and-asns/ipv4/ipv4-waiting-list">lista de espera</a> para recibir direcciones IPv4 recuperadas en la que se puede ver lo grave del asunto: <b>ahora mismo el RIPE no tiene direcciones IP para asignar</b> a esas empresas de la lista de espera. Todas las nuevas direcciones IPv4 que haya nuevas a partir de ahora habrán sido usadas al menos una vez por otra empresa u operador.</p>
+      <figure>
+        <img src="https://www.adslzone.net/app/uploads/2019/11/ipv4-lista-de-espera.jpg"/>
+      </figure>
+      <p>En el <a href="https://www.ripe.net/manage-ips-and-asns/ipv4/ipv4-pool">segundo gráfico</a> podemos ver cómo el RIPE ha ido perdiendo direcciones, donde empezaron el año con 6 millones en sus reservas.</p>
+      <figure>
+        <img src="https://www.adslzone.net/app/uploads/2019/11/ripe-direcciones.png"/>
+      </figure>
+      <p>En la línea azul oscuro inferior, vemos los últimos bloques de /8 que asignaron (185.0.0.0). En azul claro, en la línea de en medio, podemos ver las direcciones que tenían en sus reservas, donde había tanto direcciones no asignadas hasta ahora como otras previamente asignadas que han recibido de vuelta a través del IANA. Esas son las que hoy se han agotado.</p>
+      <h3>El RIPE pide a voces el salto a IPv6</h3>
+      <p>La solución a este problema es sencilla: pasar a <a href="https://www.adslzone.net/reportajes/internet/que-es-ipv6-caracteristicas/"><b>IPv6</b></a>. Sin embargo, los operadores no han dado todavía el paso en casi ningún país, y donde sólo el 23,7% de las 1.000 webs más visitadas son compatibles con IPv6.</p>
+      <p>La solución para hacer el cambio es sencilla: usar<b> DS-Lite</b>, una especie de CG-NAT donde cientos de ordenadores se agrupen bajo una misma IP externa para acceder a webs y servicios IPv4, y el resto que accedan de manera directa mediante IPv6 en servicios y webs compatibles. El RIPE afirma que el uso de CG-NAT ha permitido paliar un poco los efectos de la escasez, pero eso no deja de esconder el grave problema al que se enfrenta Internet. No sería raro que en el futuro los operadores tuvieran que recurrir al CG-NAT ante la escasez, o darle de una vez al interruptor que nos ponga direcciones IPv6 a todos.</p>
+    </article>
+  </body>
+</html>

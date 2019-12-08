@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://hackaday.com/2019/11/24/ai-phone-app-learns-baseball-signals/"/>
+    <meta property="og:site_name" content="Hackaday"/>
+    <meta property="article:published_time" content="2019-11-24T00:00:00+00:00"/>
+    <meta property="og:title" content="AI Phone App Learns Baseball Signals"/>
+    <meta property="og:description" content="Watching a sport can be a bit odd if you aren’t familiar with it. Most Americans, for example, would think a cricket match looked funny because they don’t know the rules. If you were no…"/>
+  </head>
+  <body>
+    <article>
+      <h1>AI Phone App Learns Baseball Signals</h1>
+      <address><time datetime="2019-11-24T00:00:00+00:00">24 Nov 2019</time> by <a rel="author" href="https://hackaday.com/author/wd5gnr1/" target="_blank">Al Williams</a></address>
+      <p>Watching a sport can be a bit odd if you aren’t familiar with it. Most Americans, for example, would think a cricket match looked funny because they don’t know the rules. If you were not familiar with baseball, you might wonder why one of the coaches was waving his hands around, touching his nose, his ears, and his hat seemingly at random. Those in the know however understand that this is a secret signal to the player. The coach might be telling the player to steal a base or bunt. The other team tries to decode the signals, but if you don’t know the code that is notoriously difficult. Unless you have the <a href="https://github.com/Jabrils/Uncle-Rober-Baseball-Predictor">machine learning phone app</a> you can see in the video below.</p>
+      <p>If you are not a baseball fan, it works like this. The coach will do a number of things. Perhaps touch his cap, then his nose, brush his left forearm, and touch his lips. However, the code is often as simple as knowing one attention signal and one action signal. For example, the coach might tell you that if they touch their nose and then their lips, you should steal. Touching their nose and then their ear is a bunt. Touching their nose and then the bill of their cap is something else. Anything they do that doesn’t start with touching their nose means nothing at all. If the signal is this easy, you really don’t even need machine learning to decode it. But if it were more complicated — say, the gesture that occurs third after they touch their nose unless they also kick dirt at which point it means nothing — it would be much harder for a human to figure out.</p>
+      <p>The code uses <a href="https://github.com/Jabrils/SDEC">SDEC</a> (Sequence-Domain Encompassed Correlations) to look for patterns in an ASCII string. We couldn’t help but think this would probably be applicable to a lot of other things where you were looking for a sequence of things.</p>
+      <p>The video has a pretty good Sunday supplement explanation of machine learning. It includes some details like hidden layers without getting bogged down too much in math or actual coding. If you haven’t dug into machine learning yet, this won’t make you an expert, but it will give you some orientation.</p>
+      <p>If you want a more detailed explanation of how machine learning works, <a href="https://hackaday.com/2019/02/22/foundations-for-machine-learning-in-english-or-russian/">try this one</a>. Even the <a href="https://hackaday.com/2019/06/30/blisteringly-fast-machine-learning-on-an-arduino-uno/">Arduino</a> can get in on the act.</p>
+      <figure>
+        <iframe src="https://www.youtube.com/embed/PmlRbfSavbI" width="800" height="480" data-service="Youtube" scrolling="no"/>
+      </figure>
+      <p> </p>
+    </article>
+  </body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://hackaday.com/2019/11/25/robotic-skin-sees-when-and-how-youre-touching-it/"/>
+    <meta property="og:site_name" content="Hackaday"/>
+    <meta property="article:published_time" content="2019-11-25T00:00:00+00:00"/>
+    <meta property="og:title" content="Robotic Skin Sees When (and How) You’re Touching It"/>
+    <meta property="og:description" content="Cameras are getting less and less conspicuous. Now they’re hiding under the skin of robots. A team of researchers from ETH Zurich in Switzerland have recently created a multi-camera optical t…"/>
+  </head>
+  <body>
+    <article>
+      <h1>Robotic Skin Sees When (and How) You’re Touching It</h1>
+      <address><time datetime="2019-11-25T00:00:00+00:00">25 Nov 2019</time> by <a rel="author" href="https://hackaday.com/author/sharonlin/" target="_blank">Sharon Lin</a></address>
+      <p>Cameras are getting less and less conspicuous. Now they’re hiding under the skin of robots.</p>
+      <p>A team of researchers from ETH Zurich in Switzerland have recently created a <a href="https://arxiv.org/abs/1910.14526">multi-camera optical tactile sensor</a> that is able to monitor the space around it based on contact force distribution. The sensor uses a stack up involving a camera, LEDs, and three layers of silicone to optically detect any disturbance of the skin.</p>
+      <figure>
+        <img src="https://hackaday.com/wp-content/uploads/2019/11/vision-based-robot-skin-stack-up.png?w=800"/>
+      </figure>
+      <p>The scheme is modular and in this example uses four cameras but can be scaled up from there. During manufacture, the camera and LED circuit boards are placed and a layer of firm silicone is poured to about 5 mm in thickness. Next a 2 mm layer doped with spherical particles is poured before the final 1.5 mm layer of black silicone is poured. The cameras track the particles as they move and use the information to infer the deformation of the material and the force applied to it. The sensor is also able to reconstruct the forces causing the deformation and create a contact force distribution. The demo uses fairly inexpensive cameras — Raspberry Pi cameras monitored by an NVIDIA Jetson Nano Developer Kit — that in total provide about 65,000 pixels of resolution.</p>
+      <p>Apart from just providing more information about the forces applied to a surface, the sensor also has a larger contact surface and is thinner than other camera-based systems since it doesn’t require the use of reflective components. It regularly recalibrates itself based on a convolutional neural network pre-trained with data from three cameras and updated with data from all four cameras. Possible future applications include soft robotics, improving touch-based sensing with the aid of computer vision algorithms.</p>
+      <p>While self-aware robotic skins may not be on the market quite so soon, this certainly opens the possibility for robots that can detect when too much force is being applied to their structures — the machine equivalent sensation to pain.</p>
+      <figure>
+        <iframe src="https://www.youtube.com/embed/lbavqAlKl98" width="800" height="480" data-service="Youtube" scrolling="no"/>
+      </figure>
+      <p>[Thanks Qes for the tip!]</p>
+    </article>
+  </body>
+</html>

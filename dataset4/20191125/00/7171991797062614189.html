@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://hackaday.com/2019/11/25/tales-from-the-sysadmin-dumped-into-the-grub-command-line/"/>
+    <meta property="og:site_name" content="Hackaday"/>
+    <meta property="article:published_time" content="2019-11-25T00:00:00+00:00"/>
+    <meta property="og:title" content="Tales From The Sysadmin: Dumped Into The Grub Command Line"/>
+    <meta property="og:description" content="Today I have a tale of mystery, of horror, and of hope. The allure of a newer kernel and packages was too much to resist, so I found myself upgrading to Fedora 30. All the packages had downloaded, …"/>
+  </head>
+  <body>
+    <article>
+      <h1>Tales From The Sysadmin: Dumped Into The Grub Command Line</h1>
+      <address><time datetime="2019-11-25T00:00:00+00:00">25 Nov 2019</time> by <a rel="author" href="https://hackaday.com/author/jonathanbennett492054495/" target="_blank">Jonathan Bennett</a></address>
+      <p>Today I have a tale of mystery, of horror, and of hope. The allure of a newer kernel and packages was too much to resist, so I found myself upgrading to Fedora 30. All the packages had downloaded, all that was left was to let DNF reboot the machine and install all the new packages. I started the process and meandered off to find a cup of coffee: black, and darker than the stain this line of work leaves on the soul. After enough time had elapsed, I returned, expecting the warming light of a newly upgraded desktop. Instead, all that greeted me was the harsh darkness of a <code>grub</code> command line. Something was amiss, and it was bad.</p>
+      <p>(An aside to the reader, I had this experience on two different machines, stemming from two different root problems. One was a wayward setting, and the other an unusual permissions problem.)</p>
+      <p>How does the fledgling Linux sysadmin recover from such a problem? The <code>grub</code> command line is an inscrutable mystery to the uninitiated, but once you understand the basics, it’s not terribly difficult to boot your system and try to restore the normal boot process. This depends on what has broken, of course. If the disk containing your root partition has crashed, then sorry, this article won’t help.</p>
+      <p>In order to get a system booting, what exactly needs to happen? How does booting Linux work, even? Two components need to be loaded into memory: the kernel, and the <code>initramfs</code>. Once these two elements are loaded into memory, <code>grub</code> performs a jump into the kernel code, which takes over and finishes the machine’s boot. There is one more important detail that we care about — the kernel needs to know where to find the root partition. This is typically part of the kernel parameters, specified on the kernel boot line.</p>
+      <p>When working with an unfamiliar shell, the help command is a good starting point. <code>grub</code> runs in a very limited environment, and running the help command scrolls most of the text off the screen. There is an environment variable that helps out here, enabling output paging:<code>set pager=1.</code></p>
+      <h3>Finding What You’re Looking For</h3>
+      <p><code>ls</code> is your friend. Don’t know which drive is which? <code>ls</code> to the rescue. <code>grub</code> uses a unique nomenclature for accessing partitions. You might see entries like (HD0,0) or (hd0,msdos1). A modern <code>grub</code> will even let you list the files and folders contained in that partition using a command like <code>ls (hd0,msdos1)/</code>.</p>
+      <p>We want to start by figuring out which partition stores the kernel and <code>initrd</code> files. Those files might be in a boot folder, or just in one of the partitions. The kernel is generally named vmlinuz-kernel_version.architecture so for example: <code>vmlinuz-5.3.7-200.fc30.x86_64</code>. The initrd we need will match the kernel’s version. Something like <code>initramfs-5.3.7-200.fc30.x86_64.img</code>.</p>
+      <p>The last needed bit of information, the root filesystem location, can be a bit trickier to find. While searching through partitions, you may find one with a root filesystem layout, containing <code>boot</code>, <code>bin</code>, <code>etc</code>, <code>home</code>, etc. You can likely figure out what the kernel will call the partition based on the name in <code>grub.</code><br/><code>hd0</code> is probably <code>sda</code>, <code>hd1</code> is probably <code>sdb</code>. The second half of <code>grub's</code> name tells you which partition it is, so <code>(hd0,msdos1)</code>is likely <code>sda1</code>.</p>
+      <h3>Putting It Together</h3>
+      <p>To actually boot, we issue three commands in <code>grub</code>. The first command sets the kernel image and any kernel boot options. The one required option is setting the root location:<code>linux (hd0,msdos1)/boot/vmlinuz-4.19.0-6-amd64 root=/dev/sda1</code><br/>Next we set the initrd option:<code>initrd (hd0,msdos1)/boot/initrd.img-4.19.0-6-amd64</code></p>
+      <p>Once those options are set, we can tell <code>grub</code> to try to boot the kernel. It a simple command:<code>boot</code></p>
+      <p>Assuming we set the right options, and the system isn’t otherwise terribly broken, that should boot your machine back into normalcy. Time to troubleshoot what caused <code>grub</code> to go off the rails to begin with. That however, is for another time.</p>
+      <p>Since we’re here, there are a few other tricks worth knowing about <code>grub</code> and booting. The most useful is probably single user mode, which is enabled by adding a “1” to the boot options.<br/><code>linux (hd0,msdos1)/boot/vmlinuz-4.19.0-6-amd64 root=/dev/sda1 1</code></p>
+      <p>On some distributions, this even bypasses the need to know a root password, which is useful if you find yourself locked out of a system. Many modern systems still require logging in as root to proceed. Still, single-user mode is helpful for troubleshooting other boot and system problems.<br/>One more trick to have up your sleeve is the ability to blacklist a driver. Adding <code>blacklist amdgpu</code>, for example, would prevent the <code>amdgpu</code> driver from loading at all, regardless of the hardware present. If a buggy or misconfigured driver is causing a crash during boot, blacklisting it will likely let you successfully boot.</p>
+      <p>Hopefully this is enough to give you the edge next time you’re debugging a Linux boot problem, and adds a couple tools to your repertoire. Happy hacking.</p>
+    </article>
+  </body>
+</html>

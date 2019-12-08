@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://mybroadband.co.za/news/internet/329539-massive-ddos-attacks-south-african-internet-providers-crippled.html"/>
+    <meta property="og:site_name" content="MyBroadband"/>
+    <meta property="article:published_time" content="2019-11-25T00:00:00+00:00"/>
+    <meta property="og:title" content="Massive DDoS attacks – South African Internet providers crippled"/>
+    <meta property="og:description" content="Internet service providers in South Africa fell prey to massive distributed denial of service (DDoS) attacks this past weekend."/>
+  </head>
+  <body>
+    <article>
+      <h1>Massive DDoS attacks – South African Internet providers crippled</h1>
+      <address><time datetime="2019-11-25T00:00:00+00:00">25 Nov 2019</time> by <a rel="author" href="https://mybroadband.co.za/news/author/jan-vermeulen" target="_blank">Jan Vermeulen</a></address>
+      <p>Internet service providers in South Africa fell prey to massive distributed denial of service (DDoS) attacks this past weekend.</p>
+      <p>RSAWEB subscribers were among the first to feel it, with the company issuing a notice at 01:56 on Friday morning stating that it was under attack. By 12:38, RSAWEB reported that the DDoS attack had abated and that services were stable.</p>
+      <p>Cool Ideas was next to be hit. It sent out a notice to subscribers on Saturday morning to say that it was experiencing problems on its network.</p>
+      <p>It later confirmed that it was facing the largest DDoS attack it had ever seen on its network. Cool Ideas co-founder Paul Butschi told MyBroadband that the size of the attack <a href="https://mybroadband.co.za/news/internet/329369-cool-ideas-facing-attack-of-over-300gbps.html"><b>exceeded 300Gbps</b></a>.</p>
+      <p>Butschi said the attack traffic statistics came from Cogent Communications and Hurricane Electric in London. Of the total traffic hitting their network, roughly 40Gbps was legitimate.</p>
+      <h3>Attack on Afrihost, Axxess, and Webafrica</h3>
+      <p>On the evening of Saturday, 23 November, the upstream provider supplying services to Afrihost, Axxess, and Webafrica came under attack. All three ISPs use <a href="https://mybroadband.co.za/news/business-telecoms/306330-big-network-upgrade-for-webafrica-fibre-and-adsl.html"><b>Echo Service Provider</b></a>.</p>
+      <p>Echo, in turn, appears to have a partnership with Liquid Telecom for international transit — Internet traffic that goes outside South Africa.</p>
+      <p>During previous attacks on Echo SP, <a href="https://mybroadband.co.za/news/internet/324965-liquid-telecom-fighting-off-massive-ddos-attack-over-100gbps.html"><b>Liquid Telecom helped to mitigate the attack</b></a>. MyBroadband asked Liquid Telecom for details regarding the attack that crippled Afrihost, Axxess, and Webafrica on Saturday.</p>
+      <p>“Liquid Telecommunications can confirm that during the course of [Saturday] night an attack was initiated against one of our South African clients,” a spokesperson for the company said.</p>
+      <p>“This attack was similar in size and scale to previous attacks reported on. The attack was mitigated within minutes of being seen and the network has been stable without incident since the mitigation was performed.”</p>
+      <p>The previous attack on Echo SP on 27 October was in excess of 100Gbps. Liquid Telecom’s comments suggest that the most recent attack was around the same size.</p>
+      <p><a href="https://mybroadband.co.za/forum/threads/afrihost-pure-fibre-feedback-thread.1037731/page-169"><b>Afrihost clients continued to complain</b></a> that they were having trouble connecting to international services on Saturday evening.</p>
+      <p>On Sunday morning, MyBroadband forum members noticed that outbound international traffic from Afrihost was <a href="https://mybroadband.co.za/forum/threads/afrihost-pure-fibre-feedback-thread.1037731/post-24489465"><b>no longer flowing over Liquid Telecom’s network</b></a>, but Telkom’s.</p>
+      <p>Another forum member found that Echo SP had <a href="https://mybroadband.co.za/forum/threads/afrihost-pure-fibre-feedback-thread.1037731/post-24490237"><b>only switched away from Liquid Telecom</b></a> for outbound international traffic from South Africa. Inbound traffic from international sources was still being routed over Liquid Telecom’s network.</p>
+      <p>MyBroadband asked Afrihost, Webafrica, and Echo Service Provider for comment, but they did not respond by the time of publication.</p>
+      <h3>Distributed denial of service and carpet bombing</h3>
+      <p>A DDoS attack is a flood of garbage Internet traffic sent to servers, routers, and other computers on a network with the aim of making it impossible to communicate with them.</p>
+      <p>Under ordinary circumstances, generating 100Gbps or 300Gbps of traffic would require tremendous resources.</p>
+      <p>However, techniques such as DNS Amplification have made it easier and cheaper for attackers to generate large volumes of attack traffic than ever before.</p>
+      <p>DNS Amplification attacks, also referred to as DNS reflection, use improperly configured Domain Name System (DNS) servers to flood computers with network traffic. If the flood of bogus traffic is able to overwhelm the computer, it can’t respond to legitimate requests and appears offline to anyone on the Internet trying to reach it.</p>
+      <p>Reflection attacks work by requesting information from a server on the Internet, but then tricking it to send its response to the target computer the attacker wants to flood.</p>
+      <p>DNS servers are a popular choice for such attacks because they are critical Internet infrastructure designed to field millions of requests per second. They are also usually connected to high-bandwidth links to enable them to deal with large amounts of traffic.</p>
+      <p>Most importantly, attackers can often cause a DNS server to generate a response that is several times larger than their spoofed request. In other words, attackers use DNS servers to amplify their attack bandwidth. Hence the term “DNS Amplification”.</p>
+      <p>When the target of such an attack is a web server or critical network infrastructure, such a DDoS attack causes an outage. Network providers have developed methods to mitigate such attacks, and so attackers have found new ways of launching effective assaults.</p>
+      <p>One such technique is “<a href="https://mybroadband.co.za/news/internet/321802-the-carpet-bombing-of-cool-ideas.html"><b>carpet bombing</b></a>“, where an Internet service provider’s individual customers are sent large volumes of garbage network traffic.</p>
+      <p>In some cases, the individual connections of customers are flooded. However, even when the traffic is not enough to flood a subscriber’s connection, the overall traffic on the network eventually adds up to a point where the ISP’s core network infrastructure can not cope with the load.</p>
+      <p>Carpet bombing attacks are specifically used against organisations like ISPs with the aim of bringing down their whole network.</p>
+      <p>Data centre operators, web hosting companies, and large corporate networks – anyone who runs their own pool of IP addresses – are also examples of potential targets of carpet bombing attacks.</p>
+      <related>
+        <a href="https://mybroadband.co.za/news/internet/320931-edu-za-being-used-to-send-insane-amounts-of-ddos-attack-traffic.html"/>
+      </related>
+    </article>
+  </body>
+</html>

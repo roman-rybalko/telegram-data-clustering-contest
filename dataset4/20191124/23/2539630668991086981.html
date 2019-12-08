@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://www.omgubuntu.co.uk/2019/11/stadia-on-ubuntu-linux-mint"/>
+    <meta property="og:site_name" content="OMG! Ubuntu!"/>
+    <meta property="article:published_time" content="2019-11-24T23:10:22+00:00"/>
+    <meta property="og:title" content="Does Stadia Work on Ubuntu? Well Yeah, Kinda…"/>
+    <meta property="og:description" content="Does Stadia work on Ubuntu? Yes, in both Google Chrome and Chromium. In this post we look at one users' experience playing Destiny on Stadia."/>
+  </head>
+  <body>
+    <article>
+      <h6 class="kicker">Google's game streaming service is here — but is it playable on Linux?</h6>
+      <h1>Does Stadia Work on Ubuntu? Well Yeah, Kinda…</h1>
+      <address><time datetime="2019-11-24T23:10:22+00:00">24 Nov 2019, 23:10</time> by <a rel="author">By Joey Sneddon</a></address>
+      <figure>
+        <img src="https://149366088.v2.pressablecdn.com/wp-content/uploads/2017/07/tux-gaming-linux-750x421.jpg"/>
+      </figure>
+      <p>
+        <b>Good news for fans of <a href="https://stadia.google.com/">Google’s game streaming</a> service <a href="https://www.omgubuntu.co.uk/2019/03/googles-new-game-service-is-based-on-linux-open-source-tech">Stadia</a>: it works on Ubuntu!</b>
+      </p>
+      <p>That’s <a href="https://www.reddit.com/r/Stadia/comments/e02zj9/stadia_on_ubuntu/">according to Redditors</a> lucky enough to be able to try the recently-launched service on their Ubuntu machines (note: it’s <a href="https://support.google.com/stadia/answer/9338852?hl=en-GB">not available in every country</a> yet).</p>
+      <p>Admittedly this “news” isn’t unexpected.</p>
+      <p>Stadia is a cloud-based gaming service powered by Linux, and is advertised to work on Chromebooks (which are Linux-based machines) as well as via the Google Chromecast Ultra.</p>
+      <p>So, in a shock to that one person who was asleep most of the summer, I hear that Stadia DOES work in the Google Chrome web browser on Ubuntu.</p>
+      <p>Just, er, not very well, it seems…</p>
+      <h3>Playing Stadia on Ubuntu</h3>
+      <p>Now, before you let your eyes venture on down past this section. let me stress that I, personally, have not tried to play Stadia on Ubuntu.</p>
+      <aside>Stadia works in Google Chrome on Linux …Just not very well — and Google’s to blame!</aside>
+      <p>And I haven’t tried it because a) I am not a Stadia subscriber (backer? founder?) and b) when it comes to gaming I secretly still consider the 32-bit era of gaming to be a modern fad 😆 — #snes4ever.</p>
+      <p>BUT, lots of users have been sharing their experiences on using the service over on the opinion smorgasbord we all know as Reddit.</p>
+      <p>Among them Stadia subscriber <a href="https://www.reddit.com/user/Xzaninou/">~Xzaninou</a>, who recounts his experience of playing Destiny on Stadia in Google Chrome on an Ubuntu machine:</p>
+      <p><i>“I’m on a Dell XPS 15 with Ubuntu with a good internet connection […] but when I actually tried to play for real, Destiny was unplayable,</i>” he writes.</p>
+      <p>“<i>I had ~1sec delay between input and game actually responding! Plus, my computer fans were going crazy…”</i></p>
+      <p>His issue, it turns out, is that Google Chrome on Ubuntu does not support hardware acceleration (nor does it on other Linux distros, either) — a glaring omission that <a href="https://www.omgubuntu.co.uk/2018/10/hardware-acceleration-chrome-linux">we’ve mentioned on this site before</a>.</p>
+      <p>But, naturally, this is open source and there are workarounds.</p>
+      <h4>Chromium Snap App</h4>
+      <p>Installing a Snap version of the Chromium web browser with a <code>vaapi</code> (i.e. hardware acceleration) patch applied does wonders to the performance of Stadia.</p>
+      <p>As does toggling the <code>override software rendering list</code> flag on in <code>chromium://flags</code>, resulting in an eminently playable experience:</p>
+      <p>
+        <i>”I logged in with my Google account and launched Destiny 2, my computer CPUs were not all 100% like before (more like 30%) and the game was actually playable with barely noticeable lags.”</i>
+      </p>
+      <p>Sadly the unstable patched Chromium Snap app this user tried? It has issues with USB devices which may affect the ability to play with game pads.</p>
+      <p>One workaround to the workaround (for now) is to use <a href="https://launchpad.net/~saiarcot895/+archive/ubuntu/chromium-dev">saiarcot895’s Chromium builds PPA</a> (and yes: the usual caveats about PPAs still apply).</p>
+      <p>As with anything Stadia related never overlook your network performance (be it your actual connection, your router, or your desktop config) as a factor.</p>
+      <p>Do you use Stadia on Linux? Share your experiences below!</p>
+      <p>
+        <i>H/T Benjamin!</i>
+      </p>
+    </article>
+  </body>
+</html>

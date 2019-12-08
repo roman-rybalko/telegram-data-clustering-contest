@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://www.xataka.com/inteligencia-artificial/usan-machine-learning-para-averiguar-cuanto-shakespeare-hay-realmente-obra-enrique-viii-shakespeare"/>
+    <meta property="og:site_name" content="Xataka"/>
+    <meta property="article:published_time" content="2019-11-22T13:01:58+00:00"/>
+    <meta property="og:title" content="Usan machine learning para averiguar cuánto de Shakespeare hay realmente en la obra 'Enrique VIII' de Shakespeare"/>
+    <meta property="og:description" content="'Enrique VIII' es una de las tantísimas obras de teatro escritas por William Shakespeare, y tiene una historia interesante detrás. Shakespeare era el..."/>
+  </head>
+  <body>
+    <article>
+      <h1>Usan machine learning para averiguar cuánto de Shakespeare hay realmente en la obra 'Enrique VIII' de Shakespeare</h1>
+      <address><time datetime="2019-11-22T13:01:58+00:00">22 Nov 2019, 13:01</time> by <a rel="author" href="https://www.xataka.com/autor/jose-garcia-nieto" target="_blank">José García Nieto</a></address>
+      <p>'<a href="http://shakespeare.mit.edu/henryviii/full.html">Enrique VIII</a>' es una de las tantísimas <b>obras de teatro escritas por William Shakespeare</b>, y tiene una historia interesante detrás. Shakespeare era el dramaturgo principal de la compañía de teatro King's Men y cuando murió en 1616 fue sustituido por John Fletcher, otro autor que había colaborado con el dramaturgo británico en otras ocasiones, pero que <b>no se sabía si lo había hecho también en 'Enrique VIII'</b>. En un primer momento la autoría se atribuyó a Shakespeare, pero James Spedding, editor de Sir Francis Bacon, dijo que <a href="http://news.bbc.co.uk/2/hi/entertainment/8679613.stm">había evidencias</a> de que ciertas escenas y versos tenían rasgos propios de Shakespeare y otras tantas de Fletcher.</p>
+      <p>Algunos ejemplos serían que Fletcher usa "ye" en lugar de "you" o "em" en lugar de "them", así que basándose en estos patrones, James Spedding propuso una <a href="https://es.wikipedia.org/wiki/Enrique_VIII_(teatro)#Autor%C3%ADa">separación por escenas</a> que, en posteriores estudios, ha sido cuestionada. Ahora <a href="https://arxiv.org/search/cs?searchtype=author&amp;query=Plech%C3%A1%C4%8D%2C+P">Petr Plecháč</a>, un investigador de la Academia Checa de Ciencias de Praga, parece haber dado con la respuesta y lo ha hecho usando un <b>modelo de machine learning</b>. Y <a href="https://arxiv.org/pdf/1911.05652.pdf">ha ido más lejos</a> que la división por escenas, puesto que, afirma, es capaz de "determinar la autoría de fragmentos de texto, sin respetar la división de escenas".</p>
+      <h3>Spedding no se equivocaba demasiado</h3>
+      <figure>
+        <img src="https://i.blogs.es/b4ea9c/analisis/1366_2000.jpg"/>
+        <figcaption>Lo primero fue entrenar al algoritmo usando cuatro obras con estilos similares de cada autor. Como puede comprobarse, el sistema detecta correctamente las obras escritas por Shakespeare (morado) y las escritas por Fletcher (verde).</figcaption>
+      </figure>
+      <p>Para ejecutar el modelo de machine learning, Plecháč ha hecho algo que hemos visto en otras ocasiones: e<b>ntrenar al modelo usando la bibliografía de los autores</b>, siempre teniendo en cuenta que sean obras con un estilo parecido. En este caso hablamos de Shakespeare y Fletcher, así que las obras elegidas han sido las siguientes:</p>
+      <ul>
+        <li><b>Shakespeare</b>: 'Coriolano', 'Cimbelino', 'Cuento de invierno' y 'La tempestad'.</li>
+        <li><b>Fletcher</b>: 'Valentiniano', 'Monsieur Thomas', 'El precio de la mujer' y 'Bonduca'.</li>
+      </ul>
+      <p>Una vez el algoritmo había analizado cada obra y "aprendido" el estilo de cada autor (basándose en las 500 frecuencias rítmicas y las 500 palabras más frecuentes) se expuso a la obra 'Enrique VIII' usando un <a href="https://es.wikipedia.org/wiki/Ventana_deslizante">mecanismo de ventana deslizante</a>. Combinando lo aprendido y <b>analizando la obra de teatro</b>, el algoritmo devolvió el resultado que puedes ver bajo estas líneas.</p>
+      <figure>
+        <img src="https://i.blogs.es/af950b/rolling-attribution-of-h8-based-on-500-most-frequent-rhythmic-types-and-500-most-frequent/1366_2000.jpg"/>
+        <figcaption>Cada línea vertical simboliza la separación por escenas. El color morado muestra lo escrito por Shakespeare y el color verde lo escrito por Fletcher.</figcaption>
+      </figure>
+      <p>Cada una de las líneas verticales se corresponde a una escena. En morado aparecen los fragmentos escritos por Shakespeare y en verde los escritos por Fletcher. De acuerdo al autor, "<b>apoya una vez más la atribución de Spedding en gran medida</b>", aunque su modelo es todavía más preciso, puesto que permite descubrir que la autoría no solo cambia por escenas, sino también al final de la escena anterior, algo que podría servir para dar cierta concordancia a los estilos entre escenas.</p>
+      <related>
+        <a href="https://www.xataka.com/especiales/estado-arte-software-para-transcribir-entrevistas-clases-magistrales-juicios"/>
+      </related>
+      <p>El autor pone algunos ejemplos en su artículo: "la escena 3.2 se suele atribuir tanto a Shakespeare como a Fletcher. Los tres conjuntos de modelos apoyan esto. Mientras Spedding y otros autores localizan el cambio a la línea 2081, <b>todos nuestros modelos indican que ocurrió más tarde</b>. Los modelos combinados lo sitúan con precisión en la línea 2200". Otro caso: "las escenas 2.3 y 2.4 están, de acuerdo con todos los conjuntos de modelos, creados por Shakespeare. Los tres conjuntos de modelos indican que el cambio se produjo al final de la escena 2.4", por ello el modelo afirma que "la escena 3.1 (la siguiente) fue escrita por Fletcher".</p>
+      <aside>El modelo del autor coincide en gran medida con el de Spedding, aunque difiere en la autoría de las dos escenas del cuarto acto</aside>
+      <p>En pocas palabras, las principales diferencias con la división propuesta por Spedding y la obtenida por el investigador residen en las <b>dos escenas del cuarto acto</b>. Spedding se las atribuye íntegramente a Fletcher, pero el modelo de Plecháč arroja resultados ambivalentes. Basta con ver la gráfica para comprobar que en las escenas 4.1 y 4.2 ambos autores están a la par, lo que podría indicar una autoría mixta.</p>
+      <p>Finalmente, Plecháč concluye afirmando que la combinación de modelos basados en versificación y modelos basados en palabras "entrenados en el drama inglés del siglo XVII" dan como resultado "una alta precisión en el reconocimiento de la autoría". Dicho esto, Plecháč opina que 'Enrique VIII' es, "con gran fiabilidad", <b>el resultado de la colaboración entre William Shakespeare y John Fletcher</b>.</p>
+      <p>Vía | <a href="https://www.technologyreview.com/s/614742/machine-learning-has-revealed-exactly-how-much-of-a-shakespeare-play-was-written-by-someone/">MIT Technology Review</a></p>
+    </article>
+  </body>
+</html>

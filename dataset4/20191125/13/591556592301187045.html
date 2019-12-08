@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://www.zdnet.com/article/exploit-code-published-for-dangerous-apache-solr-remote-code-execution-flaw/"/>
+    <meta property="og:site_name" content="ZDNet"/>
+    <meta property="article:published_time" content="2019-11-25T13:21:35+00:00"/>
+    <meta property="og:title" content="Exploit code published for dangerous Apache Solr remote code execution flaw"/>
+    <meta property="og:description" content="Solr team initially thought the bug was harmless, but it turns out the bug was more dangerous than anyone thought."/>
+  </head>
+  <body>
+    <article>
+      <h1>Exploit code published for dangerous Apache Solr remote code execution flaw</h1>
+      <address><time datetime="2019-11-25T13:21:35+00:00">25 Nov 2019, 13:21</time> by <a rel="author" href="https://www.zdnet.com/meet-the-team/us/catalin.cimpanu/" target="_blank">Catalin Cimpanu</a></address>
+      <p>
+        <b>Solr team initially thought the bug was harmless, but it turns out the bug was more dangerous than anyone thought.</b>
+      </p>
+      <figure>
+        <img src="https://zdnet1.cbsistatic.com/hub/i/2019/11/25/68e2e51f-d8b1-40eb-ae85-ac106f1ea199/fc320bb28e59d4b427284511960e5954/apache-solr-logo.png"/>
+      </figure>
+      <p>Confusion still surrounds a security bug that the Apache Solr team patched over the summer, which turns out it's actually much more dangerous than anyone thought.<br/><br/>Apache Solr is a Java-based open-source search engine, initially developed to add search functionality to the CNET website.<br/><br/>The project was donated to the Apache Software Foundation in 2006, from where it gained worldwide usage due to its speed and expanded feature-set.</p>
+      <h3>Issue reported months ago</h3>
+      <p>Over the summer, a user named "jnyryan" <a href="https://issues.apache.org/jira/browse/SOLR-13647">reported</a> to the Solr project that the default <i>solr.in.sh</i> configuration file that is included with all new Solr instances contained an insecure option.<br/><br/>The default config shipped with the E<i>NABLE_REMOTE_JMX_OPTS</i> option set to enabled, which, in turn, exposed port 8983 to remote connections.</p>
+      <p>At the time it was reported, the Apache Solr team didn't see the issue as a big deal, and developers thought an attacker could only access (useless) Solr monitoring data, and nothing else.<br/><br/>Things turned out to be much worse when, on October 30, a user published <a href="https://gist.github.com/s00py/a1ba36a3689fa13759ff910e179fc133">proof-of-concept code on GitHub</a> showing how an attacker could abuse the very same issue for "remote code execution" (RCE) attacks. The proof-of-concept code used the exposed 8983 port to enable support for Apache Velocity templates on the Solr server and then used this second feature to upload and run malicious code.</p>
+      <p><a href="https://github.com/jas502n/solr_rce">A second, more refined proof-of-concept code</a> was published online two days later, making attacks even easier to execute.<br/><br/>It was only after the publication of this code that the Solr team realized how dangerous this bug really was. On November 15, they issued <a href="https://lucene.apache.org/solr/news.html">an updated security advisory</a>. In its updated alert, the Solr team recommended that Solr admins set the <i>ENABLE_REMOTE_JMX_OPTS</i> option in the solr.in.sh config file to "<i>false</i>" on every Solr node and then restart Solr.<br/><br/>They also recommend that users keep Solr servers behind firewalls, as these systems were never designed to sit exposed on the internet, but only part of closed and tightly monitored internal networks.<br/><br/>The Solr team said that only Solr versions running on Linux are impacted.<br/><br/>However, there is still some mystery about what versions are impacted. In its security advisory, the Solr team said that only v8.1.1 and v8.2.0 are vulnerable, but, <a href="https://www.tenable.com/blog/apache-solr-vulnerable-to-remote-code-execution-zero-day-vulnerability">in a blog post last week</a>, the Tenable research team said that the impact is much greater, with the vulnerability affecting all Solr versions from v7.7.2 to v8.3, the latest version.</p>
+      <h3>No attacks detected, but are expected</h3>
+      <p>The good news is that at the time of writing, no attacks have been detected in the wild. However, this is only a matter of time.<br/><br/>Apache Solr instances usually have access to large computational resources and, historically, have been highly sought after targets by malware gangs.<br/><br/>For example, <a href="https://morphuslabs.com/apache-solr-the-new-target-for-cryptominers-6e852fcf5543">CVE-2017-12629</a> and <a href="https://www.alibabacloud.com/blog/solr-dataimport-vulnerability-becomes-a-new-attack-method-for-mining-organizations_595311">CVE-2019-0193</a> were targeted by hackers within weeks after details and exploit code became public. In both instances, attackers used the two vulnerabilities to gain access to Solr servers and plant cryptocurrency-mining malware on unpatched servers.<br/><br/>Because we already know this new Solr bug can lead to remote code execution and we have readily-available public exploit code, experts expect this security flaw to come under active attacks within days or weeks.<br/><br/>This new Solr bug is tracked as <b>CVE-2019-12409</b>.</p>
+    </article>
+  </body>
+</html>

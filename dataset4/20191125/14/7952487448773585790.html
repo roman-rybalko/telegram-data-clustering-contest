@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://www.profesionalreview.com/2019/11/25/intel-core-i9-10980xe-review/"/>
+    <meta property="og:site_name" content="Profesional Review"/>
+    <meta property="article:published_time" content="2019-11-25T14:01:40+00:00"/>
+    <meta property="og:title" content="Intel Core i9-10980XE Review en Español (Análisis completo)"/>
+    <meta property="og:description" content="Review del procesador Intel Core i9-10980XE. 18 núcleos físicos y 36 lógicos a 4,8 GHz desbloqueados. Características y test de rendimiento."/>
+  </head>
+  <body>
+    <article>
+      <h1>Intel Core i9-10980XE Review en Español (Análisis completo)</h1>
+      <address><time datetime="2019-11-25T14:01:40+00:00">25 Nov 2019, 14:01</time> by <a rel="author">Miguel Ángel Navas</a></address>
+      <p>Tras un sinfín de noticias y test previos no demasiado espectaculares, tenemos con nosotros el nuevo flagship para la gama HEDT del gigante azul. No es otro que el <b>Intel Core i9-10980XE</b>, un procesador que pertenece a la <b>10ª generación</b> y actualiza su <b>arquitectura a Cascade Lake-X</b>, aun conservando claro, los 14 nm en proceso de fabricación. Eso sí, <b>disminuyen mucho los precios</b> con respecto a la anterior generación para así competir con una AMD desatada.</p>
+      <p>Estamos deseando conocer de primera mano los resultados que va a dar esta CPU con las nuevas placas X299X. Una que tiene <b>18 núcleos y 36 subprocesos</b> capaces de llegar a los <b>4,8 GHz con Turbo Boost</b> y a priori una buena capacidad de overclocking por encima de los 5,0 GHz. ¿Le será esto suficiente para acercarse a los Threadripper 3000 y desbancar a los Ryzen 9? Pues ahora mismo lo comprobaremos, así que vamos allá.</p>
+      <p>Y antes de seguir, agradecemos a <b>Intel</b> su confianza en nosotros al cedernos esta CPU para hacer nuestro análisis.</p>
+      <figure>
+        <img src="https://www.profesionalreview.com/wp-content/uploads/2019/11/1280px-Intel-logo.svg.png"/>
+      </figure>
+      <h3>Intel Core i9-10980XE características técnicas</h3>
+      <figure>
+        <img src="https://www.profesionalreview.com/wp-content/uploads/2019/11/Intel-Core-i9-10980XE-caracteristicas.png"/>
+      </figure>
+      <h3>Unboxing</h3>
+      <p>Tras haberse hecho ya el anuncio oficial y su salida a la venta, publicamos este análisis en donde veremos todo lo que nos ofrece en cuanto a rendimiento este <b>Intel Core i9-10980XE</b>. Pero vamos a comenzar por su <b>Unboxing</b>, el cual utiliza una caja al más puro estilo de la generación anterior, negra con una enorme “X” y el distintivo “Core i9” bien visible.</p>
+      <blockquote>Aunque a nosotros siempre nos llega con una caja muy pequeña de ingeniería.</blockquote>
+      <p>En el interior nos encontramos con el procesador perfectamente metido dentro de una cubierta de plástico duro para asegurar su integridad y la correspondiente garantía del fabricante. Al igual que otros procesadores HEDT, éste <b>no incluye solución térmica</b>, por lo que necesitaremos adquirir una aparte, que al menos tenga una capacidad de 165W de TDP.</p>
+      <h3>Diseño y plataforma</h3>
+      <p>Antes de ver sus características técnicas demos un breve repaso al diseño de este <b>Intel Core i9-10980XE</b>. Una CPU que no cambia un ápice respecto a las generaciones Skylake-X y Caby Lake-R al ir instalado en el mismo <b>socket LGA 2066</b> que utilizan los anteriores citados.</p>
+      <figure>
+        <img src="https://www.profesionalreview.com/wp-content/uploads/2019/11/intel-core-i9-10980xe-review.jpg"/>
+      </figure>
+      <p>Tenemos un notorio IHS <b>construido en cobre y aluminio</b> en la parte superior cuya especificación y capacidad térmica se sitúa en los <b>165W de TDP</b> (Thermal Design Power). Un encapsulado que está pegado al sustrato mediante resina y <b>soldado a los DIE internos</b> de este procesador como no podría ser de otra forma.</p>
+      <p>En la cara posterior tenemos toda la matriz de contactos tipo LGA con 2066 contactos chapados en oro para conseguir una correcta trasferencia de energía. A pesar de haber refrescado la arquitectura, no ha sido necesaria una modificación física del socket, lo que nos da buenas posibilidades de mantener la misma placa X299 para esta nueva generación.</p>
+      <figure>
+        <img src="https://www.profesionalreview.com/wp-content/uploads/2019/11/intel-core-i9-10980xe-review00.jpg"/>
+      </figure>
+      <p>Pero antes, <b>debemos considerar un importante detalle respecto a esta compatibilidad</b>. Debido a este cambio de arquitectura, entre otras cosas ha <b>permitido aumentar el número de líneas PCIe 3.0 a 48 </b>en el procesador. Esto ha hecho necesario optimizar el microcódigo del chipset para hacerlo compatible con los nuevos i9-10000. El problema que se planteaba con las placas existentes era la <b>falta de espacio para el microcódigo</b> en el chipset X299 para implementar todas las tecnologías existentes. Esto en muchos casos puede hacer que Kaby Lake-R quede inutilizable en según qué placas. Es algo similar a lo que ha pasado con el B450 de AMD para los Ryzen 3000.</p>
+      <figure>
+        <img src="https://www.profesionalreview.com/wp-content/uploads/2019/11/intel-core-i9-10980xe-review02.jpg"/>
+      </figure>
+      <p>La solución adoptada por los fabricantes de placas ha sido la de <b>ampliar este espacio para instrucciones en el chipset y así pasar a denominarlas X299X</b>. De esta forma tenemos unas placas optimizados para la arquitectura <b>Cascade Lake-X</b> y además compatibles con Kaby Lake-X y Skylake-X. Ojo, esto no significa que estas placas sean obligatorias para montar estos procesadores nuevos, pero <b>ciertamente están optimizadas para ellos</b>. En todo caso tendremos que echar un vistazo a la lista de soporte de las placas anteriores para verificar si nuestra placa (la que tengáis) es compatible con estas nuevas CPU.</p>
+      <p>Dicho esto, es extensible tanto para este <b>Intel Core i9-10980XE</b> como para los demás procesadores presentados, independientemente de los carriles PCI que tengan y la cantidad de núcleos.</p>
+      <p>Respecto a la solución térmica, <b>Intel</b> <b>recomienda un sistema de refrigeración líquida de 120 mm con una capacidad mínima de 165W</b> que es lo que generará el procesador a máximo rendimiento. Esto no contempla su posible capacidad de overclocking, que como ya veremos es bastante elevada en esta nueva arquitectura. Con esto podemos considerar que <b>lo ideal será un sistema de al menos 220W de TDP</b> sea una refrigeración líquida y disipador por aire.</p>
+      <h3>Características y especificaciones</h3>
+      <p>Ahora pasaremos a ver las características técnicas de este <b>Intel Core i9-10980XE</b> y las versiones que junto a él se han presentado.</p>
+      <p>Este procesador es nada menos que <b>la versión más potente que Intel ha lanzado</b> de esta nueva remesa de procesadores orientados a la plataforma entusiasta o HEDT. Estos procesadores están orientados principalmente a trabajos de diseño en donde la cantidad de núcleos tiene una mayor importancia de carga a la megatarea y al renderizado de vídeos. Pero sus frecuencias se han aumentado considerablemente, <b>así como su capacidad de overclocking</b>, por lo que serán la solución definitiva de cara al gaming.</p>
+      <figure>
+        <img src="https://www.profesionalreview.com/wp-content/uploads/2019/11/intel-core-i9-10980xe-review03.jpg"/>
+      </figure>
+      <p>Su arquitectura ha sido actualizada a Cascade Lake-X, manteniendo un <b>proceso de fabricación de 14nm en sus transistores.</b> Con esta renovación se han instalado un total de <b>18 núcleos con 36 lógicos gracias a la tecnología HyperTheading</b>. Éstos serán capaces de trabajar a una base de 3,00 GHz igual que sus predecesores, pero ahora podrán llegar <b>hasta los 4,8 GHz</b> con la tecnología <b>Turbo Boost Max 3.0</b>. Recordemos que el i9-9980XE solo era capaz de llegar a los 4,4 GHz, por lo que el aumento ha sido considerable. Además, sus núcleos están desbloqueados, y test previos han demostrado que sus 16 núcleos son capaces de llegar hasta los 5,1 GHz, cifras brutales para tal cantidad de núcleos.</p>
+      <p>Respecto a la configuración de memoria caché tenemos la misma que en los modelos de la anterior generación. Comenzando por la <b>caché L1</b>, se distribuye en <b>bloques L1I y L1D de 32 KB</b> por cada núcleo. La memoria <b>caché L2</b> también está dedicada a <b>cada núcleo en una cantidad de 1 MB</b>, hacen un total de 18 MB. Finalmente, la <b>caché L3</b> es de 11 vías con un total de <b>24,75 MB</b> para todos los núcleos. Aquí sin embargo AMD está un paso por delante, ya que la arquitectura basada en chiplets permite implementar mucha mayor cantidad, llegando hasta los 128 MB en su 3960X.</p>
+      <figure>
+        <img src="https://www.profesionalreview.com/wp-content/uploads/2019/11/intel-core-i9-10980xe-review01.jpg"/>
+      </figure>
+      <p>En donde sí tenemos novedades es en su <b>interfaz I/O</b> o puente norte, ya que su capacidad de direccionamiento se eleva hasta las <b>48 líneas PCIe 3.0</b>, mientras que el 9980XE llegaba hasta las 44. Este aumento le permitirá conectar más periféricos, por ejemplo, una ranura M.2, mientras que el chipset X299X permanece aún en los 24 carriles de capacidad. <b>En total tendremos 72 carriles disponibles</b>, la misma cantidad que las Threadripper 3000 si quitamos los 16 carriles que éstos utilizan para la comunicación CPU + Chipset. En su caso el <b>Intel Core i9-10980XE </b>seguirá utilizando la <b>interfaz DMI 3.0 con 8 GB/s</b> para esta comunicación.</p>
+      <p>Y también tenemos novedades en la zona del bus de comunicación con la memoria RAM, ya que su capacidad nativa se eleva hasta los <b>256 GB a una velocidad de 2933 MHz</b>, cifra que hasta ahora siempre había permanecido en los 2666 MHz. Esta configuración se puede hacer en <b>Quad Channel</b> y con memorias Non-ECC compatibles con perfiles XMP superiores a los 4600 MHz.</p>
+      <p>La temperatura máxima admisible de sus núcleos también ha aumentado hasta los <b>86</b><b>⁰C,</b> mientras que la generación anterior permanecía en 84⁰C. No es una gran diferencia, pero sí una importante para demostrar que la estabilidad de los transistores es superior. Estos procesadores son compatibles de forma nativa con <b>Wi-Fi 6 e Intel Optane Memory</b>.</p>
+      <h3>Banco de pruebas y test de rendimiento</h3>
+      <table bordered="">
+        <tr>
+          <td colspan="2" valign="top">
+            <b>BANCO DE PRUEBAS</b>
+          </td>
+        </tr>
+        <tr>
+          <td valign="top">
+            <b>Procesador:</b>
+          </td>
+          <td valign="top">Intel Core i9-10980xe</td>
+        </tr>
+        <tr>
+          <td valign="top"><b>Placa Base</b>:</td>
+          <td valign="top">Asus ROG Rampage VI Extreme Encore</td>
+        </tr>
+        <tr>
+          <td valign="top">
+            <b>Memoria RAM:</b>
+          </td>
+          <td valign="top">G.Skill Royal X 32 GB</td>
+        </tr>
+        <tr>
+          <td valign="top">
+            <b>Disipador</b>
+          </td>
+          <td valign="top">Corsair H100i V2</td>
+        </tr>
+        <tr>
+          <td valign="top">
+            <b>Disco Duro</b>
+          </td>
+          <td valign="top">SSD Samsung 860 EVO</td>
+        </tr>
+        <tr>
+          <td valign="top">
+            <b>Tarjeta Gráfica</b>
+          </td>
+          <td valign="top">Nvidia RTX 2060</td>
+        </tr>
+        <tr>
+          <td valign="top">
+            <b>Fuente de Alimentación</b>
+          </td>
+          <td valign="top">Corsair RM1000X</td>
+        </tr>
+      </table>
+      <p> </p>
+      <h4>Benchmarks (Tests sintéticos)</h4>
+      <p>Hemos probado el rendimiento con la plataforma entusiasta y los test típicos de <b>benchmark</b> que siempre elegimos.</p>
+      <ul>
+        <li>Cinebench R15 (Puntuación CPU).</li>
+        <li>Cinebench R20 (Puntuación CPU).</li>
+        <li>AIDA64</li>
+        <li>3DMARK Fire Strike y Time Spy.</li>
+        <li>VRMARK</li>
+        <li>PCMark 8</li>
+        <li>Blender Robot</li>
+        <li>WPrime 32M</li>
+      </ul>
+      <figure>
+        <img src="https://www.profesionalreview.com/wp-content/uploads/2019/11/i9-10980xe-review-cinebench-r15.jpg"/>
+      </figure>
+      <figure>
+        <img src="https://www.profesionalreview.com/wp-content/uploads/2019/11/i9-10980xe-review-cinebench-r15-mono.jpg"/>
+      </figure>
+      <figure>
+        <img src="https://www.profesionalreview.com/wp-content/uploads/2019/11/i9-10980xe-review-cinebench-r20.jpg"/>
+      </figure>
+      <figure>
+        <img src="https://www.profesionalreview.com/wp-content/uploads/2019/11/i9-10980xe-review-cinebench-r20-mono.jpg"/>
+      </figure>
+      <figure>
+        <img src="https://www.profesionalreview.com/wp-content/uploads/2019/11/i9-10980xe-review-aida64.jpg"/>
+      </figure>
+      <figure>
+        <img src="https://www.profesionalreview.com/wp-content/uploads/2019/11/i9-10980xe-review-aida64-latencia.jpg"/>
+      </figure>
+      <figure>
+        <img src="https://www.profesionalreview.com/wp-content/uploads/2019/11/i9-10980xe-review-3dmark.jpg"/>
+      </figure>
+      <figure>
+        <img src="https://www.profesionalreview.com/wp-content/uploads/2019/11/i9-10980xe-review-timespy.jpg"/>
+      </figure>
+      <figure>
+        <img src="https://www.profesionalreview.com/wp-content/uploads/2019/11/i9-10980xe-review-vrmark.jpg"/>
+      </figure>
+      <figure>
+        <img src="https://www.profesionalreview.com/wp-content/uploads/2019/11/i9-10980xe-review-wprime-multi.jpg"/>
+      </figure>
+      <figure>
+        <img src="https://www.profesionalreview.com/wp-content/uploads/2019/11/i9-10980xe-review-wprime-mono.jpg"/>
+      </figure>
+      <figure>
+        <img src="https://www.profesionalreview.com/wp-content/uploads/2019/11/i9-10980xe-review-pcmark8.jpg"/>
+      </figure>
+      <h4>Pruebas en juegos</h4>
+      <p>De igual forma, hemos probado este <b>Intel Core i9-10980XE</b> con los 6 juegos que venimos utilizado desde hace algún tiempo, para así tener una referencia con el resto de modelos analizados.</p>
+      <ul>
+        <li><b>Shadow of the Tomb Rider</b>, Alto, TAA + Anisotropico x4, DirectX 12</li>
+        <li><b>Far Cry 5</b>, Alto, TAA, DirectX 12</li>
+        <li><b>DOOM</b>, Ultra, TAA, Open GL 4.5</li>
+        <li><b>Final Fantasy XV</b>, standard, TAA, DirectX 12</li>
+        <li><b>Deus EX Mankind Divided</b>, Alto, Anisotropico x4, DirectX 12</li>
+        <li><b>Metro Exodus</b>, Alto, Anisotropico x16, DirectX 12 (sin RT)</li>
+      </ul>
+      <figure>
+        <img src="https://www.profesionalreview.com/wp-content/uploads/2019/11/intel-core-i9-10980xe-review-juegos-1080.jpg"/>
+      </figure>
+      <figure>
+        <img src="https://www.profesionalreview.com/wp-content/uploads/2019/11/intel-core-i9-10980xe-review-juegos-1440.jpg"/>
+      </figure>
+      <figure>
+        <img src="https://www.profesionalreview.com/wp-content/uploads/2019/11/intel-core-i9-10980xe-review-juegos-4k.jpg"/>
+      </figure>
+      <h3>Overclock en el Intel Core i9-10980XE</h3>
+      <p>Si este microprocesador peca de algo, es de una<b> baja frecuencia</b>. Esos<b> 3.000 MHz</b> en todos sus núcleos, menos en los dos más “rápidos”, nos parece un paso atrás. Y más cuando vemos que el <b>AMD Threadripper 3960X</b> llega pisando muy fuerte. Lo ideal es que Intel hubiera optado por una frecuencia de 4 GHz, aunque hubieran empeorado las temperaturas y el consumo.</p>
+      <figure>
+        <img src="https://www.profesionalreview.com/wp-content/uploads/2019/11/i9-10980xe-overclock-1.jpg"/>
+      </figure>
+      <p>¡Pero no pasa nada! Aquí estamos para jugar y trastear ;) Decidimos subir a una<b> frecuencia de 4.900 MHz y un voltaje de 1.30v</b>. Aunque creemos que podríamos haberlo bajado un poco, hemos conseguido mejorar <b>Cinebench R15 de 3286 hasta los 4490 cb</b>. ¡Genial! El equipo evidentemente va más suelto corriendo aplicaciones y juegos.</p>
+      <p>Igualmente intentamos llegar a los 5 GHz, pero el equipo no era estable ni aguantaba las temperaturas, ya que subían a más de 95 ºC. Decidimos dejarlo en 4.9 GHz y 1.3v.</p>
+      <h3>Consumo y temperatura</h3>
+      <p>El proceso de estrés al que hemos sometido el <b>Intel Core i9-10980XE</b> ha sido de <b>12 horas</b> ininterrumpidas, cuyas temperaturas han sido monitorizadas por <b>HWiNFO</b>. De igual forma, el consumo obtenido ha sido con el conjunto completo tanto con el procesador al 100% como con <b>GPU + CPU sometidas a estrés con Prime95 y Furmark </b>(lo indicamos en el texto).</p>
+      <figure>
+        <img src="https://www.profesionalreview.com/wp-content/uploads/2019/11/i9-10980xe-temperatura.jpg"/>
+      </figure>
+      <p>Obtenemos en reposo unos <b>fantásticos 29 ºC de media en todos sus núcleos</b>. También se ha comportado muy bien en el estrés de<b> máxima potencia con 51 ºC</b>. Hay que tener en cuenta que este <b>procesador funciona de serie a 3000 MHz</b>, con algunas excepciones de <i>1 ó 2 cores a +4300 MHz,</i> es totalmente normal que tenga unas temperaturas tan fresquitas.</p>
+      <p>Cuando hacemos overclocking al procesador (4.900 MHz) obtenemos <b>33 ºC en reposo y 72 ºC</b> <b>a máximo rendimiento</b>. Creemos que son temperaturas más que aceptables, pero si subimos a más de 1.3 voltios, las temperaturas se disparan a más de 95 ºC.</p>
+      <figure>
+        <img src="https://www.profesionalreview.com/wp-content/uploads/2019/11/i9-10980xe-consumo.jpg"/>
+      </figure>
+      <p>La cosa se pone más interesante en el consumo de este nuevo i9. En<b> stock obtenemos 99W en reposo, 199W</b> a máxima potencia cuando estresamos solamente el procesador. Aunque si le metemos caña a la gráfica obtenemos<b> 367W en total</b>.</p>
+      <p>Cuando aplicamos el overclock, <b>subimos a 101 W en reposo, a 450W a máxima carga solo el procesador y a 624 W  con la RTX 2060</b>. ¿Qué cifras llegaríamos con una gráfica que consuma mucho más que esta eficiente RTX 2060?</p>
+      <h3>Palabras finales y conclusión acerca de Intel Core i9-10980XE</h3>
+      <p>Intel nos deja un poco frío con el lanzamiento del <b>Intel Core i9-10980XE</b> de <b>18 núcleos y 36 hilos</b>,<b> frecuencia base de 3 GHz</b>, 4.6 GHz en turbo, 24.75 MB de caché y un TDP de 165W. Esta baja frecuencia de base, nos parece escasa en los tiempos que corren. Al menos 4 GHz era lo idóneo.</p>
+      <p>Nuestras pruebas en los <b>tests sintéticos y juegos el banco de pruebas ha respondido muy bien</b>. Pero cuando <b>hemos hecho overclock a 4.9 GHz,</b> el procesador se nota muchísimo más suelto y da gusto trabajar con él. Pero también se ha calentado mucho más y el consumo se ha disparado.</p>
+      <p>Te recomendamos la lectura de nuestra guía sobre los <a href="https://www.profesionalreview.com/hardware/mejores-procesadores/"><b>mejores procesadores del mercado</b></a></p>
+      <p>En definitiva, tenemos uno de los <b>mejores CPU que ha fabricado Intel</b>. Es casi calcado al i9-9980XE que analizamos ya hace un tiempo, ya que la única diferencia la encontramos en su frecuencia turbo que son + 100 MHz y en el precio.</p>
+      <p>Gracias a la competencia lo encontramos por 999 euros (la mitad que el anterior) y es una gran opción si ya tienes una placa base X299 ;) ¿Qué te parece esta CPU? ¿Crees que merece la pena? ¡Queremos saber tu opinión!</p>
+      <table bordered="">
+        <tr>
+          <td valign="top">
+            <b>VENTAJAS</b>
+          </td>
+          <td valign="top">
+            <b>INCONVENIENTES</b>
+          </td>
+        </tr>
+        <tr>
+          <td valign="top">
+            <b>– BUEN RENDIMIENTO EN MULTI-HILO</b>
+          </td>
+          <td valign="top">
+            <b>– FRECUENCIA BASE A 3 GHZ, NOS PARECE BASTANTE BAJA </b>
+          </td>
+        </tr>
+        <tr>
+          <td valign="top">
+            <b>– 18 NUCLEOS Y 36 HILOS</b>
+          </td>
+          <td valign="top">
+            <b>– CUANDO HACES OVERCLOCK, SE DISPARA EL CONSUMO</b>
+          </td>
+        </tr>
+        <tr>
+          <td valign="top">
+            <b>– MUY BUENA CAPACIDAD DE OVERCLOCK</b>
+          </td>
+          <td valign="top"/>
+        </tr>
+        <tr>
+          <td valign="top">
+            <b>– TEMPERATURA Y CONSUMO BUENOS EN STOCK</b>
+          </td>
+          <td valign="top"/>
+        </tr>
+        <tr>
+          <td valign="top">
+            <b>– COMPATIBLE CON PLACAS X299 DE HACE UNOS AÑOS</b>
+          </td>
+          <td valign="top"/>
+        </tr>
+      </table>
+      <p>El equipo de Profesional Review le otorga la medalla de oro:</p>
+      <figure>
+        <img src="https://www.profesionalreview.com/wp-content/uploads/2015/10/medalla-oro-profesionalreview.jpg"/>
+      </figure>
+    </article>
+  </body>
+</html>

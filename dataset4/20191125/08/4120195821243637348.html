@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://www.techbang.com/posts/74472-intel-core-i9-10980xe-processor-review-avx-512-plus-vnni-cut-price-in-half-better-value-hedt-platform"/>
+    <meta property="og:site_name" content="T客邦"/>
+    <meta property="article:published_time" content="2019-11-25T08:01:00+00:00"/>
+    <meta property="og:title" content="Intel Core i9-10980XE 處理器評測，AVX-512 加料 VNNI 又降價，更超值的 HEDT 平台處理器誕生"/>
+    <meta property="og:description" content="Intel HEDT 平台改朝換代，這次不是 Skylake 伺服器級微架構 refresh 再更新時脈加強版，而是導入 Cascade Lake 微架構，並同步感受到競爭對手 AMD 步步進逼，Core i9-10980XE 價格對半砍，讓想要進入 HEDT 市場的消費者有著更划算的選擇。"/>
+  </head>
+  <body>
+    <article>
+      <h1>Intel Core i9-10980XE 處理器評測，AVX-512 加料 VNNI 又降價，更超值的 HEDT 平台處理器誕生</h1>
+      <address><time datetime="2019-11-25T08:01:00+00:00">25 Nov 2019, 08:01</time> by <a rel="author">R.F.</a></address>
+      <p><pic src="https://cdn1.techbang.com/system/excerpt_images/74472/inpage/4b49afab27174f6f0505613116c300b6.jpg?1574662265"/><br/>Intel HEDT 平台改朝換代，這次不是 Skylake 伺服器級微架構 refresh 再更新時脈加強版，而是導入 Cascade Lake 微架構，並同步感受到競爭對手 AMD 步步進逼，Core i9-10980XE 價格對半砍，讓想要進入 HEDT 市場的消費者有著更划算的選擇。</p>
+      <hr/>
+      <h4>降價成最大優勢</h4>
+      <p>HEDT 平台市場，Intel 與 AMD 均有相關產品推出，雖然前者被後者的多晶片封裝殺手鐧影響，不得不推出實體十二核心以上的產品型號，定位詭異的 Kaby Lake X 也快快下架，卻也依靠較為先進的微架構設計，支撐產品售價不至於崩落。</p>
+      <p>隸屬 Skylake 微架構的前、後代 Core i9-7980XE 和 Core i9-9980XE 處理器，每千顆的單顆建議售價均為美金 1,979 元，折合新台幣 60,550 元左右。最新一代 Core i9-10980XE 則是大降價至美金 979 元，折合約新台幣 29,950 元，比腰斬一半還要多出些許，一方面是受到 AMD 第三代 Ryzen Threadripper chiplet 設計，SP3/TRX4 腳位可以塞入 64 個實體核心，另一方面則是 Zen 2 微架構 AVX2 執行單元寬度已進步成 256bit，不若 Zen/Zen+ 採用 128bit 寬度執行 2 次。</p>
+      <figure>
+        <img src="https://cdn0.techbang.com/system/images/537669/original/cb508c204bf6bef5623edd1418ea6dc7.png?1574634671"/>
+        <figcaption> ▲ Intel Core i9-10000X/XE 與前一世代 Core 9000X/XE 規格比較表。（註：不含 AVX，點圖放大）</figcaption>
+      </figure>
+      <h4>AVX-512、DL Boost/VNNI</h4>
+      <p>對於消費市場而言，Cascade Lake 微架構內部相較於 Skylake（伺服器級）並沒有太大的變動，除了執行單元因應新指令集稍作調整，其餘前端、執行單元、記憶體子系統均沒有變化，Optane DC Persistent Memory 支援性在 HEDT 市場被拔除，但已修復先前多個重大硬體漏洞。Cascade Lake 另外一個和消費市場沒有太大關係的演進，能夠透過 2 個實體 28 核心 XCC 配置晶粒共同封裝，藉由 UPI 相互連結打造單一封裝、56 核心、112 執行緒處理器。</p>
+      <p>要理解 Cascade Lake FMA 執行單元新增的 VNNI 指令集（Vector Neural Network Instructions），須從 AVX 指令集（Advanced Vector Extensions）開始說起。AVX 為 SSE（Streaming SIMD Extensions）的延伸，如同文字敘述，採用單指令多資料流向量處理方式，特別適合平行處理多媒體內容。AVX 之所以是 SSE 的擴展，主要是因為 AVX 把處理資料寬度從 128bit 提升 1 倍達 256bit，並支援 3 元運算，AVX2 則是把整數命令也擴展至 256bit。</p>
+      <figure>
+        <img src="https://cdn0.techbang.com/system/images/537670/original/03231e30975b7a79e013ca7ea932ddf2.png?1574634671"/>
+        <figcaption> ▲ Cascade Lake 加入 Deep Learning Boost/AVX-512_VNNI 指令集，可加速深度學習經常使用的矩陣運算。</figcaption>
+      </figure>
+      <p>Intel 並未把處理寬度擴展成 512bit 的 AVX 指令集稱為 AVX3，而是一眼就可看穿的 AVX-512，從 Xeon Phi 代號 Knights Landing 開始支援 AVX-512 F/CD/ER/PF 等子集，並支援 4 運算元。Cascade Lake Port 0 和 Port 1 各自的 256bit 合併成 512bit 即可支援 AVX-512，Port 5 則有獨立的 512bit FMA，此外 Intel 還在擴展 AVX-512 指令集的階段，市場推廣口號 DL Boost 的 VNNI 即為一例。</p>
+      <p>VNNI 新增 4 個指令，包含 VPDPBUSD、VPDPBUSDS、VPDPWSSD、VPDPWSSDS，前 2 者為無符號/有符號 8bit 位元組（byte）的乘與加，後 2 者為無符號/有符號 16bit 字組（word）的乘與加，單一指令相對於過往需要 VPMADDUBSW＋VPMADDWD＋VPADDD 等 3 個指令，VNNI 可加速整數量化矩陣運算。</p>
+      <h4>PCIe 通道與供電同步加強</h4>
+      <p>Cascade Lake 硬體部分沒有太大變化，規格部分倒是變化不少。記憶體等效時脈從前一世代的 DDR4-2666 往上躍升一級來到 DDR4-2933，單通道理論頻寬為 23466MB/s，四通道理論頻寬即為 91.7GB/s 左右。另外，Cascade Lake 消費市場層級產品額外拉出 4 條 PCIe 3.0 通道，達 48 條，這部分需要新款 X299 晶片組主機板才可享受。（VROC 仍舊需要另外買授權）</p>
+      <figure>
+        <img src="https://cdn2.techbang.com/system/images/537671/original/e2f1ea324d3838a4390a1edc863ef60c.png?1574634672"/>
+        <figcaption> ▲ Cascade Lake 相對 Skylake（伺服器級）多出 4 條 PCIe 3.0 通道共 48 條，需換裝新款 X299 晶片組主機板才享受得到。</figcaption>
+      </figure>
+      <p>受限於產品開發時程，Intel 2.5Gbps 乙太網路控制晶片 I-255V 並未能夠搭上這股 X299 晶片組主機板更新熱潮，但主機板廠商也會依據產品定位額外加裝支援 802.3bz 2.5Gbps 或是 5Gbps 的網路控制晶片，10Gbps 802.3ab 規格支援自然不在話下；無線網路部分，還是那 101 個 Intel Wi-Fi 6 AX200 無線網路卡，2.4GHz 和 5GHz 均可支援 Wi-Fi 6/802.11ax 雙空間流。</p>
+      <p>AMD 第一代 Ryzen Threadripper 推出之時，殺得 Intel HEDT 平台措手不及，逼得 Intel 也不得不推出實體十二核心以上的產品，相信大家還記憶猶新。由於推出 Core i9-7980XE 並不在原本的計畫之中，致使部分 X299 晶片組主機板不太能應付這款產品及其繼任者 Core i9-9980XE。這次 X299 晶片組主機板 refresh，眾廠商也都加強處理器供電轉換規模，加上 Core i9-10980XE 處理器價格對半砍，先前已覬覦此平台的玩家，不妨趁此機會逢低買進。</p>
+      <figure>
+        <img src="https://cdn0.techbang.com/system/images/537672/original/48b37dbe84b749df82a192f995c801de.png?1574634673"/>
+        <figcaption> ▲ 早買早享受、晚買享折扣，Intel HEDT 平台頂級處理器 Core i9-9980XE、Core i9-10980XE 前後世代相隔 1 年，價格直接腰斬！</figcaption>
+      </figure>
+      <figure>
+        <img src="https://cdn2.techbang.com/system/images/537673/original/469233a20e1c7e91a000acd6eb8dbdf4.png?1574634673"/>
+        <figcaption> ▲ Core i9-10980XE Tjunction 從 i9-9980XE 的 84℃ 提升至 86℃。</figcaption>
+      </figure>
+      <h4>14nm 能源效率提升</h4>
+      <p>縱使市場經常拿 Intel 的 14nm 製程普拉斯開玩笑，但每一代處理器產品推出之時，總會有些不相同。下列平台耗電量與處理器溫度測試，Core i9-7980XE 和 Core i9-10980XE 均採用 Asus Prime X299 Edition 30 主機板與 GIGABYTE AORUS Liquid Cooler 240 一體式水冷散熱器，測試結果可說明製程演進變化，至於 Ryzen Threadripper 2990WX 則是使用 Enermax LIQTECH TR4 240。</p>
+      <p>Core i9-7980XE 和 Core i9-10980XE 均為實體十八核心，後者基礎與自動超頻時脈均多出 400MHz，但是平台耗電量與處理器溫度表現卻更加優秀（註：測試時，Core i9-7980XE 已將內部熱界面材料替換成液態金屬合金），AIDA64 與 Blender Benchmark 燒機可下降 10W 左右，溫度則是下降 2℃。</p>
+      <figure>
+        <img src="https://cdn1.techbang.com/system/images/537674/original/818d76577de5407b52effd564d1128d6.png?1574634674"/>
+        <figcaption> ▲ Core i9-10980XE 時脈相對 Core i9-7980XE 更高，耗電量與溫度表現卻更好，說明 Intel 透過 14nm 製程打造的處理器不盡相同，越晚推出的產品擁有比較好的表現。（室溫 25℃，Ryzen Threadripper 2990WX 為 Tjunction 溫度。）</figcaption>
+      </figure>
+      <p>（下一頁：Core i9-10980XE 實測對比）</p>
+      <p>上一頁 <i>1</i> <a href="https://www.techbang.com/posts/74472-intel-core-i9-10980xe-processor-review-avx-512-plus-vnni-cut-price-in-half-better-value-hedt-platform?page=2">2</a> <a href="https://www.techbang.com/posts/74472-intel-core-i9-10980xe-processor-review-avx-512-plus-vnni-cut-price-in-half-better-value-hedt-platform?page=2">下一頁</a></p>
+    </article>
+  </body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://css-tricks.com/weekly-platform-news-contrast-ratio-range-replaceall-method-native-file-system-api/"/>
+    <meta property="og:site_name" content="CSS-Tricks"/>
+    <meta property="article:published_time" content="2019-11-22T07:33:48+00:00"/>
+    <meta property="og:title" content="Weekly Platform News: Contrast Ratio Range, replaceAll Method, Native File System API"/>
+    <meta property="og:description" content="In this week's roundup: Firefox's new contrast checker, a simpler way to lasso substrings in a string, and a new experimental API that will let apps"/>
+  </head>
+  <body>
+    <article>
+      <h1>Weekly Platform News: Contrast Ratio Range, replaceAll Method, Native File System API</h1>
+      <p>Easily manage projects with <a href="https://synd.co/2JziuUL">monday.com</a></p>
+      <p>In this week's roundup: Firefox's new contrast checker, a simpler way to lasso substrings in a string, and a new experimental API that will let apps fiddle with a user's local files.</p>
+      <h3>Firefox shows the contrast ratio range for text on a multicolored background</h3>
+      <p>According to <a href="https://w3c.github.io/wcag/21/guidelines/#contrast-minimum">Success Criterion 1.4.3</a> of the Web Content Accessibility Guidelines (WCAG), text should have a contrast ratio of at least 4.5. (A lower contrast ratio is acceptable only if the text is 24px or larger.)</p>
+      <p>If the background of the text is not a solid color but a color gradient or photograph, you can use the special element picker in Firefox’s Accessibility panel to get a range of contrast ratios based on the element’s actual background.</p>
+      <figure>
+        <video src="https://css-tricks.com/wp-content/uploads/2019/11/firefox-accessibility-picker.mp4" autoplay="" loop=""/>
+      </figure>
+      <p>(via <a href="https://twitter.com/simevidas/status/1181941591826685954">Šime Vidas</a>)</p>
+      <h3>Replacing all instances of a substring in a string</h3>
+      <p>The new JavaScript <code>replaceAll</code> method makes it easier to replace all instances of a substring in a string without having to convert the substring to a regex first, which is “hard to get right since JavaScript doesn’t offer a built-in mechanism to escape regular expression patterns.”</p>
+      <pre>// BEFORE <br/>str = str.replace(/foo/g, "bar"); <br/><br/>// AFTER <br/>str = str.replaceAll("foo", "bar");</pre>
+      <p>This new string method has not yet shipped in browsers, but you can start using it today via Babel (since it’s automatically polyfilled by <a href="https://babeljs.io/docs/en/babel-preset-env">@babel/preset-env</a>).</p>
+      <p>(via <a href="https://twitter.com/mathias/status/1193917548875501568">Mathias Bynens</a>)</p>
+      <h3>Try out the Native File System API in Chrome</h3>
+      <p>The Native File System API, which is <a href="https://groups.google.com/a/chromium.org/d/msg/blink-dev/noan0cgEBGQ/t8DuK8_hDwAJ">experimentally supported in Chrome</a>, allows web apps to read or save changes directly to local files on the person’s computer. The app is granted permission to view and edit files in a specific folder <a href="https://twitter.com/simevidas/status/1196243432554950656">via two separate prompts</a>.</p>
+      <figure>
+        <img src="https://css-tricks.com/wp-content/uploads/2019/11/file-system-prompt.png"/>
+      </figure>
+      <p>You can try out this new feature by visiting <a href="https://labs.vaadin.com/native-fs/">labs.vaadin.com</a> in Chrome on desktop.</p>
+      <p>(via <a href="https://twitter.com/tomayac/status/1194715245781979136">Thomas Steiner</a>)</p>
+      <h3>More news...</h3>
+      <p>sunday-issue-18.png</p>
+      <figure>
+        <img src="https://css-tricks.com/wp-content/uploads/2019/11/sunday-issue-18.png"/>
+      </figure>
+      <p>Read more news in my weekly newsletter for web developers. Pledge as little as $2 per month to get the latest news from me via email every Monday.</p>
+      <p>
+        <a href="https://www.patreon.com/posts/sunday-issue-18-31699106">More News →</a>
+      </p>
+    </article>
+  </body>
+</html>

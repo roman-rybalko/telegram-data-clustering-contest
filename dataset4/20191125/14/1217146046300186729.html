@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://www.bleepingcomputer.com/news/microsoft/microsoft-fixes-windows-10-qualcomm-wi-fi-driver-update-block/"/>
+    <meta property="og:site_name" content="BleepingComputer"/>
+    <meta property="article:published_time" content="2019-11-25T14:23:59+00:00"/>
+    <meta property="og:title" content="Microsoft Fixes Windows 10 Qualcomm Wi-Fi Driver Update Block"/>
+    <meta property="og:description" content="Microsoft has removed a compatibility hold that prevents users from upgrading to Windows 10 1903 and Windows 1909 if they are using older Qualcomm Wi-Fi drivers."/>
+  </head>
+  <body>
+    <article>
+      <h1>Microsoft Fixes Windows 10 Qualcomm Wi-Fi Driver Update Block</h1>
+      <address><time datetime="2019-11-25T14:23:59+00:00">25 Nov 2019, 14:23</time> by <a rel="author" href="https://www.bleepingcomputer.com/author/lawrence-abrams/" target="_blank">Lawrence Abrams</a></address>
+      <figure>
+        <img src="https://www.bleepstatic.com/content/hl-images/2019/05/27/Windows_10.jpg"/>
+      </figure>
+      <p>Microsoft has removed a compatibility hold that prevents users from upgrading to Windows 10 1903 and Windows 1909 if they are using older Qualcomm Wi-Fi drivers.</p>
+      <p>Redmond first applied this update block on May 21, 2019, after users were reporting that they were experiencing sporadic loss of Wi-Fi connectivity after upgrading to Windows 10 1903.</p>
+      <p>Those affected by the hold would no longer be offered the May 2019 Update (Windows 10 1903) and now the November 2019 Update (Windows 10 1909) when checking for new updates.</p>
+      <p>Users would also be shown a message if they attempted to use the Windows 10 Upgrade Assistant or the Media Creation Tool explaining that they need to install a new version of the Qualcomm wifi drive in order to continue.</p>
+      <figure>
+        <img src="https://www.bleepstatic.com/images/news/Microsoft/Windows-10/h/holds/qualcomm-wifi-hold.jpg"/>
+        <figcaption>Qualcomm Wi-Fi Hold</figcaption>
+      </figure>
+      <p>To resolve this issue, Microsoft has started pushing out an updated Qualcomm Wi-Fi driver to affected users that will allow them to install the latest Windows 10 feature updates.</p>
+      <p>"This issue was resolved with an updated Qualcomm Wifi driver and the safeguard hold has been removed. "</p>
+      <p>While Microsoft has <a href="http://docs.microsoft.com/en-us/windows/release-information/status-windows-10-1909#231msgdesc">removed the the safeguard hold</a>, customers should know that "it can take up to 48 hours before you can update to offered Windows 10, version 1903 or Windows Server, version 1903."</p>
+      <p>If users are not automatically offered the driver, you can try the following steps as another method to receive the updated wifi driver.</p>
+      <ol>
+        <li>Select <b>Start </b>or the <b>search box </b>in the task bar.</li>
+        <li>Type "device manager" in the search field and select <b>Device Manager</b> when it appears.</li>
+        <li>Within <b>Device Manager</b>, find <b>Network adapters</b> and expand it to see all the currently installed adapters.</li>
+        <li>Right-click the Qualcomm adapter and select <b>Update driver</b>.</li>
+        <li>When prompted, select <b>Search automatically for updated drivers </b>on the dialog that opens.</li>
+        <li>Wait for the update fo finish. If it says, "The best driver for your device are already installed." then the driver was not updated.  If the driver was updated, you should now be able to <b>Check for Updates</b> and install the newer version of Windows 10.</li>
+      </ol>
+      <p>If this still doesn't work, you can read <a href="https://support.microsoft.com/en-us/help/4531941/updating-to-a-new-version-of-windows-10-on-devices-with-some-driver-ve">this guide</a> from Microsoft to learn about an alternative method of receiving the Qualcomm driver.</p>
+      <p>This past week, Microsoft also placed a compatibility hold on users of <a href="https://www.bleepingcomputer.com/news/microsoft/windows-10-upgrades-blocked-if-using-old-versions-of-avg-avast/">older versions of Avast and AVG Antivirus</a>. To resolve that safeguard, users are required to upgraded to newer versions of the antivirus software.</p>
+      <p><b>Updated 11/25/19</b>: Added info about Microsoft guide.</p>
+    </article>
+  </body>
+</html>

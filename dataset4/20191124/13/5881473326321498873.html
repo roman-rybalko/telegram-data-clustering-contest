@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://forklog.com/sostoyalsya-reliz-bitcoin-core-0-19-0-s-generatsiej-bech32-adresov-po-umolchaniyu/"/>
+    <meta property="og:site_name" content="ForkLog"/>
+    <meta property="article:published_time" content="2019-11-24T13:31:52+00:00"/>
+    <meta property="og:title" content="Состоялся релиз Bitcoin Core 0.19.0 с генерацией bech32-адресов по умолчанию"/>
+    <meta property="og:description" content="24 ноября разработчики наиболее популярного клиента для сети биткоина Bitcoin Core объявили о выходе новой версии ПО. Bitcoin Core 0.19.0(.1) was released! Release notes:"/>
+  </head>
+  <body>
+    <article>
+      <h1>Состоялся релиз Bitcoin Core 0.19.0 с генерацией bech32-адресов по умолчанию</h1>
+      <address>
+        <time datetime="2019-11-24T13:31:52+00:00">24 Nov 2019, 13:31</time>
+      </address>
+      <p>24 ноября разработчики наиболее популярного клиента для сети биткоина Bitcoin Core объявили о выходе новой версии ПО.</p>
+      <figure>
+        <iframe data-src="https://twitter.com/bitcoincoreorg/status/1198559459401965568?ref_src=twsrc%5Etfw" data-embed-type="twitter-tweet" width="100%" height="0" data-service="Twitter" scrolling="no" nowide=""/>
+      </figure>
+      <p>Версия 0.19.0.1 уже доступна для скачивания. Она совместима с операционными системами Linux kernel, macOS 10.10 (+ более новые версии) и Windows 7 (+ более новые версии). В Bitcoin Core подчеркнули, что отныне клиент не поддерживает версии macOS старше 10.10, но в нем еще не добавлена поддержка темной темы в macOS.</p>
+      <p>В версию 0.19.0 включена функция <i>reduce memory</i>, которая улучшает конфигурацию клиента для запуска на устройстве с ограниченной памятью.</p>
+      <p>Разработчики добавили три удаленных вызова процедур (RPC):</p>
+      <ul>
+        <li>getbalances — для проверки подтвержденных и неподтвержденных балансов вместо использования разных RPC;</li>
+        <li>setwalletflag — для включения и отключения свойств конкретного кошелька;</li>
+        <li>getblockfilter — реализация фильтра BIP158 для указанного блока с использованием конфигурации blockfilterindex.</li>
+      </ul>
+      <p>Среди новых функций —<i>blockfilterindex</i>, обеспечивающий фильтры для блокчейна в соответствии с BIP158.</p>
+      <p>В новой версии GUI генерирует адреса формата bech32 по умолчанию, но пользователь может вручную изменить тип адреса. Также по умолчанию отключена поддержка BIP70.</p>
+      <p>Единственным известным сервисом, использующим BIP70, <a href="https://forklog.com/razrabotchiki-bitkoina-predlozhili-otkazatsya-ot-bip70-eto-ugrozhaet-protsessingu-bitpay/">является</a> крупнейший в мире криптовалютный процессинг BitPay. Многие пользователи не могут оплатить инвойсы сервиса, поскольку их кошельки не поддерживают протокол, который большинство поставщиков услуг давно заменили на схему BIP21.</p>
+      <p>Напомним, еще в мае более 44% нод в сети биткоина <a href="https://forklog.com/na-bolee-chem-44-polnyh-nod-v-seti-bitkoina-ustanovlen-klient-s-kriticheskoj-uyazvimostyu/">работали</a> на ПО с критической уязвимостью.</p>
+    </article>
+  </body>
+</html>

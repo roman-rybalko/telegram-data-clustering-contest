@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://thenextweb.com/security/2019/11/22/psa-twitter-finally-ditches-sms-for-two-factor-authentication/?utm_campaign=tweet6"/>
+    <meta property="og:site_name" content="The Next Web"/>
+    <meta property="article:published_time" content="2019-11-22T08:25:05+00:00"/>
+    <meta property="og:title" content="PSA: Twitter finally ditches SMS for two-factor authentication"/>
+    <meta property="og:description" content="Twitter is finally allowing users to enroll for two-factor authentication (2FA) without requiring a phone number."/>
+  </head>
+  <body>
+    <article>
+      <h1>PSA: Twitter finally ditches SMS for two-factor authentication</h1>
+      <address><time datetime="2019-11-22T08:25:05+00:00">22 Nov 2019, 08:25</time> by <a rel="author" href="https://thenextweb.com/author/ravie/" target="_blank">Ravie Lakshmanan</a></address>
+      <p>Twitter has finally done the impossible: it’s allowing users to enroll for its <a href="https://help.twitter.com/en/managing-your-account/two-factor-authentication">two-factor authentication (2FA) program</a> without requiring a phone number. What’s more, it’s also providing an option to disable SMS-based 2FA, which is known to be <a href="https://en.wikipedia.org/wiki/Signalling_System_No._7#Protocol_security_vulnerabilities">flawed and insecure</a>.</p>
+      <p>The decoupling comes in the <a href="https://thenextweb.com/twitter/2019/10/08/twitter-2fa-info-advertising/">wake of revelations</a> that the social blogging platform “accidentally” targeted ads at some users by way of their email addresses and phone numbers, which they provided only for account security purposes.</p>
+      <p>Twitter admitted it didn’t know exactly how many were impacted by the inadvertent error, but said the issue was fixed as of September.</p>
+      <p>To setup your Twitter account for 2FA, all you need to do is download an authenticator app — such as <a href="https://authy.com/">Authy</a> — that <a href="https://en.wikipedia.org/wiki/Google_Authenticator">generates randomized six-digit one-time passwords</a> to <a href="https://authy.com/guides/twitter/">authenticate your identity</a> when signing in. Another alternative is to use Yubico’s <a href="https://www.yubico.com/">YubiKey</a>.</p>
+      <figure>
+        <img src="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/11/twitter-2fa.png"/>
+        <figcaption>Credit: <a href="https://authy.com/guides/twitter/">Authy</a><br/>Setting up 2FA</figcaption>
+      </figure>
+      <p>2FA is the most effective means to safeguard your accounts from phishing and credential-stuffing attacks, where passwords stolen from previous data breaches are used on another site.</p>
+      <p>Although this can be done in a lot of ways — SMS, using an authenticator app, biometrics, or even a <a href="https://thenextweb.com/security/2019/10/18/windows-users-can-now-use-yubicos-security-keys-to-log-in-to-their-pcs/">hardware security key</a> — SMS-based verification has proven to be a risky proposition, what with a rising wave of <a href="https://www.vice.com/en_us/article/vbqax3/hackers-sim-swapping-steal-phone-numbers-instagram-bitcoin">SIM swapping attacks</a> — thereby allowing cybercriminals to hijack the very SMS messages meant to keep your account safe.</p>
+      <figure>
+        <iframe data-src="https://twitter.com/TwitterSafety/status/1197621020229804054?ref_src=twsrc%5Etfw" data-embed-type="twitter-tweet" width="100%" height="0" data-service="Twitter" scrolling="no" nowide=""/>
+      </figure>
+      <p>Things took a turn for the worse in September when hackers allegedly employed a SIM swap attack to <a href="https://thenextweb.com/security/2019/09/05/twitter-suspends-sms-feature-after-ceo-dorseys-account-was-hi-jack-ed/">gain access to the Twitter account of Jack Dorsey</a>, the company’s CEO, after which it suspended the ability to tweet via SMS messages.</p>
+      <p>What made Twitter‘s 2FA setup even more egregious was the prerequisite that made phone numbers mandatory even if you were to use an authenticator app or a physical key for 2FA — effectively defeating the purpose of avoiding SMS-based authentication.</p>
+      <p>Other major sites, including Google, Facebook, and GitHub, don’t lock users into giving their phone numbers when turning on 2FA.</p>
+      <p>“Whose idea was it to use a valuable advertising identifier as an input to a security system. This is like using raw meat to secure your tent against bears,” <a href="https://twitter.com/matthew_d_green/status/1181677968273412099">cybersecurity expert Matthew Green tweeted</a> following the incident.</p>
+      <p>Although adding a layer of SMS-based verification to your logins is better than relying on a password alone, it’s no longer the best way to do it. Viewed in that light, Twitter‘s decision to unlink the phone number from 2FA is a belated acknowledgement of the vulnerabilities associated with the SMS-based system.</p>
+    </article>
+  </body>
+</html>

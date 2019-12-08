@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://www.wwdmag.com/scada/safeguarding-scada-systems"/>
+    <meta property="og:site_name" content="WATER &amp; WASTES DIGEST"/>
+    <meta property="article:published_time" content="2019-11-23T00:00:00+00:00"/>
+    <meta property="og:title" content="Safeguarding SCADA Systems"/>
+    <meta property="og:description" content="Supervisory control and data acquisition (SCADA) systems are an integral factor for operating any modern water collection, treatment or distribution operation. SCADA systems may consist of a few local controllers and operator interfaces or may be far more complex configurations that include networking, radio telemetry,"/>
+  </head>
+  <body>
+    <article>
+      <h1>Safeguarding SCADA Systems</h1>
+      <address><time datetime="2019-11-23T00:00:00+00:00">23 Nov 2019</time> by <a rel="author">Stephen Goldsworth</a></address>
+      <p>
+        <b>This article originally appeared in Water &amp; Wastes Digest November 2019 issue as "Safeguarding SCADA"</b>
+      </p>
+      <figure>
+        <img src="https://www.wwdmag.com/sites/wwd/files/cover_3.jpg"/>
+      </figure>
+      <p>Supervisory control and data acquisition (SCADA) systems are an integral factor for operating any modern water collection, treatment or distribution operation. SCADA systems may consist of a few local controllers and operator interfaces or may be far more complex configurations that include networking, radio telemetry, distributed computers and other elements. These systems invariably combine multiple different hardware, software, networking and communications technologies. This can make systems difficult to maintain in perfect working order.</p>
+      <p>Figure 1 indicates some root causes of unplanned outages in 2016 for data centers. Cyber attacks are a notable percentage but perhaps not as high on the list as one might expect based on recent reports.</p>
+      <figure>
+        <img src="https://www.wwdmag.com/sites/wwd/files/inline-images/1_0.jpg"/>
+        <figcaption>Figure 1: Outages occur for many reasons, and cyber-attacks are a growing concern. Reference: Cost of Data Center Outages Jan. 2016 Data Center Performance Benchmark Series, Sponsored by VertivTM, Independently Conducted by Ponemon Institute LLC. </figcaption>
+      </figure>
+      <p>Whether there are isolated failures or a larger disaster strikes, every facility needs to develop and follow a comprehensive disaster recovery (DR) plan that includes backup and recovery strategies, as well as methods for testing and continuous evolution of the plan. DR plans also are useful for restoring operation after planned downtime for maintenance and upgrades. </p>
+      <h3>Business Life Cycle Continuity</h3>
+      <p>Without a comprehensive DR plan and proactive testing, SCADA system recovery will be slow, disorganized and expensive. The goal is to maintain business continuity so critical services can quickly be restored. Creating a DR plan is one step in the never-ending business continuity life cycle (Figure 2).</p>
+      <figure>
+        <img src="https://www.wwdmag.com/sites/wwd/files/inline-images/2_2.jpg"/>
+        <figcaption>Figure 2: Creating a disaster recovery plan is one step in the business continuity life cycle.</figcaption>
+      </figure>
+      <p>The following sections examine how this life cycle approach applies to SCADA systems, usually beginning with the “identify” step.</p>
+      <h3>Identify Existing Conditions</h3>
+      <p><b>Documentation</b>: Accurate as-built documentation is a neglected aspect of automation projects. Sometimes the design information is not properly updated when construction and commissioning is completed, or modifications and upgrades are performed without permanent documentation updates. Weak documentation hinders daily operation and maintenance efforts, and thwarts quick recovery from more serious problems. Documentation includes any sort of specifications, drawings, databases or anything else used to design, build, configure and test the automation system.</p>
+      <p><b>Risk Assessment</b>: As challenging as it can be to document the existing system, it can be even more difficult to assess the risks. Every asset must be evaluated as critical or non-critical by a multi-discipline team, with consideration as to whether equipment can be operated manually in the event of SCADA failure. Some risks are internal, like network cabling failures on site, while others are external, like loss of utility power. Single points of failure (SPOF) deserve specific attention—whether they are related to mechanical, electrical or automation elements—because SPOF issues cause the majority of outages.</p>
+      <h3>Analyze Goals &amp; Costs</h3>
+      <p>Once the SCADA system is documented and failure risks are known, consequences can be evaluated. Outages cause a loss of revenue, service disruptions to customers and decreased productivity. Other possible impacts include violating laws or compliance regulations and the inability to meet service-level agreements.</p>
+      <p>Water and wastewater end users must identify recovery goals and costs. Obvious goals are to minimize the number and duration of disruptions, prevent damage and plan alternative methods of preserving operation. Installing redundancy provisions, developing a DR plan, training personnel, performing preventative maintenance and periodic testing all support smooth and rapid restoration service; however, each comes with a cost. Comparing the cost of disruption and the cost to recovery is part of a business impact analysis, revealing the acceptable cost balance point (Figure 3).</p>
+      <figure>
+        <img src="https://www.wwdmag.com/sites/wwd/files/inline-images/3_4.jpg"/>
+        <figcaption>Figure 3: End users must analyze the costs of recovery versus disruption to determine the right balance point for their SCADA system. Reference: This image is recreated from NIST SP800-34 Rev. 1, Contingency Planning Guide for Federal Information Systems, p. 18.</figcaption>
+      </figure>
+      <p>Extensive redundancy provisions can significantly reduce the disruption time but can be expensive additions to a SCADA system. Costs include initial hardware and software expenses, ongoing licensing and support and manpower. Once the cost of disruption is understood, it is possible to design strategies to reduce downtime.</p>
+      <h3>Design Redundant Strategies</h3>
+      <p>While a basic failure could entail just one component going bad, a disaster-level event, such as a fire or flood is much larger and could disable significant amounts of the SCADA system. The most resilient systems are designed with built-in redundancy in multiple areas, including additional geographic locations.</p>
+      <p>A normal operational primary production system on site can be backed up by an entire secondary parallel SCADA system, including computers, networks and power (Figure 4). In addition to operational backups, end user system administrators should create and archive periodic backups of all component configuration files, including software installation files, firmware, virtual machines, programmable logic controller (PLC) code, SCADA applications, network equipment configurations and historical data.</p>
+      <figure>
+        <img src="https://www.wwdmag.com/sites/wwd/files/inline-images/4_1.jpg"/>
+        <figcaption>Figure 4: The most resilient SCADA architectures include provisions for safely providing backup operation and archives from geographically remote locations.</figcaption>
+      </figure>
+      <p>There is not a single superior architecture, but rather there are many factors demanding consideration when developing an appropriate architecture for a system. For example, a secondary system could be installed on the same site and in the same building, but it is far better to install the secondary system in a separate building some distance away if the appropriate security and environmental conditions are available.</p>
+      <p>Varying levels of redundant functionality are possible. “Hot” backups at secondary sites can take over automatically, whereas “warm” backups require some user intervention. Another option is “cold” backups, which typically require some effort to bring online. Virtualized infrastructure can add resiliency, make management of geographically distributed systems easier and improve recovery strategies by backing up entire host computers as data.</p>
+      <h3>What Role Does the Cloud Play? </h3>
+      <p>It is possible to host primary and secondary systems in the cloud. However, this method binds the end user to services they cannot directly control and introduces cybersecurity concerns, so this should be approached with caution. The cloud could be an excellent additional option for backup and data storage.</p>
+      <p>One of the obvious redundancy constraints is cost. Other variables factoring into architecture design include:</p>
+      <p>• Hardware/software platform age and functional capabilities;</p>
+      <p>• Process requirements;</p>
+      <p>• Site distribution and geography; and</p>
+      <p>• Networking and telemetry.</p>
+      <p>A full redundancy plan should address multiple components, including the SCADA servers, I/O servers, historians, alarm notification systems, PLCs and operator workstations. It deals with many aspects of networking with a high availability approach for devices, including routers, switches, firewalls, RF telemetry infrastructure and even ISP services that are leveraged for remote access or communication between automation system components. The typical goal for networking is to provide alternate communication paths for critical components. </p>
+      <h3>Backup the Data</h3>
+      <p>The settings of any configurable system devices must be backed up, and this can include field instruments, variable speed drives, controllers, PCs and network components. Software backups may include operating systems, drivers, applications, control programs, visualization configurations, historical data, alarm/event logs and more.</p>
+      <p>There are sometimes automated provisions for backups, but many must be handled manually. Virtualization can facilitate PC-based backups, and some SCADA vendors offer native backup functionality.</p>
+      <p>Storage media and locations are important. End users should strive to follow the software and data backup 3-2-1 rule:</p>
+      <p>• Create three copies (one primary and two backup);</p>
+      <p>• Store copies on at least two different media types (hard drive, tape, cloud, etc.); and</p>
+      <p>• Keep one of those copies off site.</p>
+      <p>Creating procedures dictating who performs backups, what is backed up, where it is backed up to and how often backups are performed is critical for a successful DR plan. The next part of the life cycle is documenting all this information.</p>
+      <h3>Create &amp; Execute the DR Plan</h3>
+      <p>Once the conditions are identified, the risks are assessed and the strategies are determined, the DR plan can be created, resulting in materials to guide personnel on what to do during various failure types. Due to the wide variety of technologies and operations involved, it is important to define the roles and responsibilities necessary to execute the plan and the associated levels of authority. In basic terms, who is going to do what?</p>
+      <p>The DR plan must contain or point to all necessary system documentation needed for recovery, and it requires clear technical procedures to restore any failed SCADA elements. In addition, it should provide guidance regarding how to continue operating certain processes in a manual mode during a DR event. Other useful information may include supporting vendor contacts.</p>
+      <p>Beyond the actual recovery steps, a DR plan also must offer direction on how to periodically maintain SCADA hardware, software, and test the redundancy and backup systems. This also includes procedures to verify the backup and restoration methods are valid.</p>
+      <h3>Measure by Training, Testing &amp; Maintaining</h3>
+      <p>The last step of a business continuity life cycle is to measure the SCADA DR plan effectiveness, which is best to do under controlled conditions instead of during a crisis. This will help ensure the team is ready in the event of a failure.</p>
+      <p>Make sure staff are trained on the DR plan, and then prove out both the training and the plan itself by executing test scenarios and attempted recoveries. Good test plans will use actual backup media to confirm they are viable and will proactively exercise redundant components, systems, and sites by triggering failovers from primary to backup elements. Redundancy systems and elements must be maintained just like any other mechanical or electrical equipment.</p>
+      <p>Close the cycle by updating the DR plan and other documentation as discrepancies are discovered or changes are made. Be aware of and capture subtle underlying changes like software, firmware or hardware upgrades. Recognize changes coming from any source, whether they are a major process area reconfiguration or a small utility system upgrade.</p>
+      <h3>Seek DR Plan Expertise From a System Integrator</h3>
+      <p>Developing a DR plan can be a daunting activity due to the massive scope of the endeavor, especially because SCADA systems require a large team to develop a comprehensive DR plan.</p>
+      <p>Because of this, end users should consider engaging a system integrator that understands the automation technologies, the processes being automated and proven best practices necessary for creating an effective DR plan. A trusted system integration partner with the right experience can help end users build a solid DR plan with the right balance of technical options addressing the cost impacts. </p>
+    </article>
+  </body>
+</html>

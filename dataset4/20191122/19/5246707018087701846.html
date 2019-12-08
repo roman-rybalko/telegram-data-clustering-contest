@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="http://www.nintendolife.com/news/2019/11/feature_the_story_behind_new_super_mario_land_the_homebrew_marvel_intended_as_a_christmas_gift"/>
+    <meta property="og:site_name" content="Nintendo Life"/>
+    <meta property="article:published_time" content="2019-11-22T19:00:00+00:00"/>
+    <meta property="og:title" content="Feature: The Story Behind New Super Mario Land, The Homebrew Marvel Intended As A Christmas Gift"/>
+    <meta property="og:description" content="&quot;As far as I'm concerned, the project is terminated already&quot;"/>
+  </head>
+  <body>
+    <article>
+      <h1>Feature: The Story Behind New Super Mario Land, The Homebrew Marvel Intended As A Christmas Gift</h1>
+      <h2>"As far as I'm concerned, the project is terminated already"</h2>
+      <address><time datetime="2019-11-22T19:00:00+00:00">22 Nov 2019, 19:00</time> by <a rel="author" href="http://www.nintendolife.com/users/Damo" target="_blank">Damien McFerran</a></address>
+      <figure>
+        <img src="http://images.nintendolife.com/27a2e02901813/screenshot-2019-11-22-at-18-35-59.original.jpg"/>
+      </figure>
+      <p>Yesterday's news that a talented modder had managed to 'update' (if such a term could be used) <b><a href="http://www.nintendolife.com/games/gameboy/super_mario_land">Super Mario Land</a></b> in the form of <b><a href="http://www.nintendolife.com/news/2019/11/random_super_mario_land_has_been_ported_to_the_snes_and_it_looks_amazing">New Super Mario Land</a></b> – and get it working on a SNES, no less – caused quite a stir online. We've been lucky enough to not only play this incredible feat of programming but also talk to the person behind the project. They've asked to remain anonymous, but have otherwise given us a very candid and honest insight into the project. Enjoy!</p>
+      <p>
+        <b>Nintendo Life: How did the project come about? Why did you choose Super Mario Land for this?</b>
+      </p>
+      <p>Nintendo games have been a central part of my life; first in my youth on the Game Boy, then on the SNES. I've owned all the subsequent systems with declining enthusiasm, but the SNES left the biggest impression. I started collecting SNES/Super Famicom games and when that didn't satisfy me anymore, I started writing games for the system.</p>
+      <p>This game was intended as a personal Christmas gift for my Nintendo-loving friends to commemorate the 30th anniversary of Super Mario Land, which may not be the best, but is the first Mario game I owned, and it definitely was a game-changer for seven-year-old me. I produced 30 cartridges and I have sent most of these out via mail by now.</p>
+      <blockquote>This game was intended as a personal Christmas gift for my Nintendo-loving friends to commemorate the 30th anniversary of Super Mario Land</blockquote>
+      <p>I do not get to play a lot of video games these days, and when I do, it's usually a couple of friends and me having a beer and busting out the old SNES on a lazy weekend afternoon every now and then. That's where the idea of fusing Super Mario Land and <b>New Super Mario Bros.</b> together came from; having a blast developing it, reliving childhood memories and having a laid-back simultaneous multiplayer experience with the buddies.</p>
+      <p>Ultimately, the idea isn't even all that original. I think there's even <b><a href="http://www.nintendolife.com/games/snes/super_mario_world">Super Mario World</a></b> hacks with the same name and I believe there have been people recreating Mario Land in New Super Mario Bros. It just differs in the execution. The cherry on top for me is being able to deliver that not on some cheap bootleg or butchered cartridge, but on <i>official</i> Nintendo hardware: the kiosk-reprogrammable "Nintendo Power" cartridge, which was recently reverse-engineered not by me, but by members of the excellent SNES emulation community.</p>
+      <p>Years ago, I bought a bunch of these Nintendo Power carts in the hope of someday being able to release something on them. I feel like this game is the perfect match. In an alternate universe, it could've been the swan song to the Nintendo Power Service that shut down in 2007.</p>
+      <figure>
+        <iframe src="https://www.youtube.com/embed/Egx3d8sI9fI" width="640" height="360" data-service="Youtube" scrolling="no"/>
+      </figure>
+      <p>
+        <b>How many people worked on the project, and what were their roles?</b>
+      </p>
+      <p>I had a couple of friends give me regular feedback on the multiplayer aspect. Apart from that, it's been me, myself and I developing the game in solitary confinement. Of course, that is a problem for a game because unless you're some kind of prodigy, it usually takes a team of specialist members pushing each other to achieve true excellence, and I think the game lacks in that regard.</p>
+      <p>In my experience, keeping together such a team for what amounts to a hobbyist project is difficult, especially when working remotely, because enthusiasm can fade, real-life gets in the way of team members and so on. Maybe that's just me, but working alone at my own pace has been most productive and fun for me so far.</p>
+      <p>
+        <b><b>Can you explain how the game is built, and w</b>hat tools are used?</b>
+      </p>
+      <p>Just to be perfectly clear, this is not a ROM-hack or modification of an existing game. I also did not reuse any data or code from the original Super Mario Land. The game itself was developed just like the bulk of commercial SNES games were developed back in the nineties: programmed from scratch in Assembly language using a text editor on a PC, with custom-made tools to convert data such as graphics, music and levels into a format the SNES is able to use. The crucial difference is that today, we have powerful SNES emulators that speed up the build and test iteration and have tons of useful debugging features.</p>
+      <p>The tools used were the excellent SNES emulator bsnes, Blender for 3D modelling and animation, Gimp for graphics editing, Tiled for level editing, MilkyTracker for music composition and so forth. Also used was a Map Editor called Land Forger for the original Super Mario Land as a reference to make sure the level design and enemy placement was faithful.</p>
+      <blockquote>Just to be perfectly clear, this is not a ROM-hack or modification of an existing game. I also did not reuse any data or code from the original Super Mario Land</blockquote>
+      <p>Furthermore, I keep a variety of different revisions of SNES/SFC consoles for testing to make sure the game works fine on every version of real hardware. I have never developed a modern game, so I can't speak with confidence on this one, but nowadays in the age of engines like Unity, all the low-level-stuff is usually taken care of and you can concentrate on actually implementing your game.</p>
+      <p>The library/framework situation on the SNES ranges from dire to nonexistent in comparison. Even by contemporary standards, the slow SNES CPU doesn't help either and makes generalization and adding abstraction layers difficult because you usually have to hand-optimize your code pretty aggressively to your specific use case to get even moderate performance.</p>
+      <p>You will also have to understand the quite large variety of registers of the SNES' custom chips to produce decent effects – or display anything at all, for that matter. I won't lie though, I actually enjoy this kind of bare metal programming; it's something you don't see a lot anymore with modern systems.</p>
+      <p>
+        <b>How difficult was it to get the same 'feel' as the original game?</b>
+      </p>
+      <p>I'll let others be the judge of whether I actually succeeded in recreating the feel of the original. To me, Super Mario Land was a game with an unusual setting and spartan presentation, so what the different worlds represented was left to the player's imagination to some extent. New Super Mario Land represents what the game felt like to me. Regarding the physics and gameplay, the original always felt a bit rigid and stiff to me, so I tried to give it a more fluent and flowing vibe.</p>
+      <figure>
+        <img src="http://images.nintendolife.com/c049177486f5c/screenshot-2019-11-22-at-18-35-22.original.jpg"/>
+      </figure>
+      <figure>
+        <img src="http://images.nintendolife.com/8e1f5060fb46b/screenshot-2019-11-22-at-18-35-34.original.jpg"/>
+      </figure>
+      <figure>
+        <img src="http://images.nintendolife.com/1df7796267c21/screenshot-2019-11-22-at-18-36-15.original.jpg"/>
+      </figure>
+      <figure>
+        <img src="http://images.nintendolife.com/24109e6ac71a8/screenshot-2019-11-22-at-18-36-29.original.jpg"/>
+      </figure>
+      <p>Naturally, this creates a problem with the original level design that often hinders that kind of flow, which I tried to mitigate to some extent. Historically, every Mario game feels and controls a bit different. I can imagine some people liking and some disliking the gameplay in this one depending on where they are coming from. It may not be perfect, but ultimately, I chose a style that felt good and fun to me.</p>
+      <p>
+        <b>What issues did you run into when running on original hardware?</b>
+      </p>
+      <p>Apart from the usual myriad of self-inflicted bugs, tuning the gameplay and keeping the framerate at somewhat acceptable levels is what most of the effort went into. It still dips down pretty hard in 4 player expert mode at times, but we've all seen worse on the SNES. Also, the camera system posed a problem, because I can't easily zoom out if players move away from each other, like <b><a href="http://www.nintendolife.com/games/wii/new_super_mario_bros_wii">New Super Mario Bros.</a></b> on Wii does.</p>
+      <p>
+        <b>What made you choose to go with the New Super Mario Bros. art style instead of a more standard pixel art style, similar to that of <a href="http://www.nintendolife.com/games/snes/super_mario_all_stars">All-Stars</a> or World?</b>
+      </p>
+      <p>It's not everyone's cup of tea, but I really enjoy the fluid, prerendered aesthetics that the <b><a href="http://www.nintendolife.com/games/snes/donkey_kong_country">Donkey Kong Country</a></b> series pioneered, and the clean looks of the New Super Mario Bros. games.</p>
+      <blockquote>Generally speaking, hand-drawn pixel art is king, of course, but I just don't possess the necessary skill.</blockquote>
+      <p>To be perfectly honest, the low-poly prerendered look makes it very easy to achieve acceptable-looking, fluid animations with little effort using 3D modelling software. It's much less effort than drawing everything by hand for sure, so you could say it was an economical decision. Generally speaking, hand-drawn pixel art is king, of course, but I just don't possess the necessary skill.</p>
+      <p>
+        <b>Do you have any plans to remake anything else in the future in a similar style?</b>
+      </p>
+      <p>Not at all, I usually like to try my hand at different things once in a while. Maybe something original for a change.</p>
+      <p>
+        <b>Has anyone from Nintendo been in touch at all? If not, are you concerned that the project might be shut down?</b>
+      </p>
+      <p>No, they haven't. Games like these are problematic from a legal standpoint, no matter the intentions. In case this gets blown out of proportion on the internet and they are required to react, I'll have to face the consequences. I developed the game to completion in solitude, put it on a couple of dozen cartridges and sent these out as gifts, so as far as I'm concerned, the project is terminated already. I haven't made it available to the public, I haven't made profits from it in any way whatsoever, and the game <i>explicitly</i> states that there's no affiliation with Nintendo.</p>
+      <p>Frankly speaking, I do not think the game will make all that much of an impact. It's a hobbyist remake of a 30-year-old game for a 29-year-old system; a fun little anecdote for fans of the original, but I think the average consumer couldn't care less.</p>
+      <hr/>
+      <p>
+        <i>Thanks to ChronoMoogle for making this interview possible.</i>
+      </p>
+      <h3>Related Games<br/>   •  <a href="http://www.nintendolife.com/games/gameboy/super_mario_land"><b>Super Mario Land</b> (GB)</a></h3>
+      <related>
+        <h4>Related Articles</h4>
+        <a href="http://www.nintendolife.com/news/2019/11/random_super_mario_land_has_been_ported_to_the_snes_and_it_looks_amazing"/>
+        <a href="http://www.nintendolife.com/news/2019/11/luigi_almost_looked_very_different_in_super_mario_odyssey"/>
+        <a href="http://www.nintendolife.com/news/2019/11/feature_the_story_behind_new_super_mario_land_the_homebrew_marvel_intended_as_a_christmas_gift"/>
+        <a href="http://www.nintendolife.com/news/2019/11/nintendos_tokyo_store_is_set_to_open_this_friday_and_its_looking_amazing"/>
+        <a href="http://www.nintendolife.com/news/2019/11/random_so_someone_made_a_portable_snes_out_of_a_snes"/>
+      </related>
+    </article>
+  </body>
+</html>

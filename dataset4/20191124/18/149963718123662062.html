@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://www.zive.cz/clanky/shodan-uz-10-let-smiruje-internet-podivali-jsme-se--mozna-i-k-vam-domu-a-zcela-ovladli-korejskou-tiskarnu/sc-3-a-201337/default.aspx"/>
+    <meta property="og:site_name" content="Živě.cz"/>
+    <meta property="article:published_time" content="2019-11-24T18:32:00+00:00"/>
+    <meta property="og:title" content="Shodan už 10 let šmíruje internet. Podívali jsme se možná i k vám domů a zcela ovládli korejskou tiskárnu"/>
+    <meta property="og:description" content="Webový vyhledávač internetu věcí slaví 10. narozeniny • Bezpečnost se od té doby moc nezlepšila • Průnik do cizí sítě je otázkou několika sekund"/>
+  </head>
+  <body>
+    <article>
+      <h1>Shodan už 10 let šmíruje internet. Podívali jsme se možná i k vám domů a zcela ovládli korejskou tiskárnu</h1>
+      <address><time datetime="2019-11-24T18:32:00+00:00">24 Nov 2019, 18:32</time> by <a rel="author">Jakub Čížek</a></address>
+      <ul>
+        <li>Webový vyhledávač internetu věcí slaví 10. narozeniny</li>
+        <li>Bezpečnost se od té doby moc nezlepšila</li>
+        <li>Průnik do cizí sítě je otázkou několika sekund</li>
+      </ul>
+      <p>Vyhledávač <a href="https://www.shodan.io/">Shodan</a> o víkendu oslavil desáté narozeniny a svým fanouškům, kteří bedlivě čtou jeho twitterový účet, nadělil nečekaný dárek. Během 24 hodin jste si mohli koupit jeho prémiový účet za pouhý jeden americký dolar.</p>
+      <p>Proboha, kdo by v roce 2019 platil za vyhledávač? Nu, Shodan má trošku jiného indexovacího robota. Zatímco na Googlu najdete všechno a na Seznamu – když má blbý den – <a href="https://www.zive.cz/clanky/seznamcz-ma-problem-na-bezny-dotaz-zobrazi-zcela-iracionalne-pedofilni-fotky/sc-3-a-201277/default.aspx">nahé děti</a>, Shodan je tu od toho, abyste na něm našli třeba tu sousedovu síťovou tiskárnu, která je zvesela dostupná i z veřejného internetu.</p>
+      <figure>
+        <iframe data-src="https://twitter.com/shodanhq/status/1198033142130581505?ref_src=twsrc%5Etfw" data-embed-type="twitter-tweet" width="100%" height="0" data-service="Twitter" scrolling="no" nowide=""/>
+      </figure>
+      <p>Shodan je totiž vyhledávač internetu věcí, který průběžně prochází všechny dostupné veřejné IP adresy a pokouší se zjistit, které TCP porty jsou na nich otevřené a které služby na nich běží. Když tedy narazí na IP adresu třeba našeho hypotetického souseda, prošmejdí otevřené porty, a pokud mu na některém z nich odpoví nějaká služba, pokusí se ji identifikovat.</p>
+      <h3>Miliony síťových krabiček na jednom místě</h3>
+      <p>V databázi Shodanu jsou dnes takových IP adres miliony a díky tomu, že obsahuje fulltextový vyhledávač včetně hromady filtrů, snadno si můžete zobrazit třeba některé typické služby, které používají konkrétní TCP port, a zkoumat, zdali nemají děravé zabezpečení.</p>
+      <figure>
+        <img src="https://www.zive.cz/GetThumbNail.aspx?id_file=90157861&amp;width=300&amp;height=166&amp;q=80"/>
+        <figcaption>Kde všude už byl indexovací robot Shodanu. Možná i u vás doma.</figcaption>
+      </figure>
+      <p>Díky tomu, že už Shodan prošmejdil valnou část všemožných krabiček internetu věcí, v jeho nitru dnes snadno vyhledáte i špatně zabezpečené webkamery a chůvičky, které jsou dostupné z veřejného internetu, protože jejich majitele nejspíše vůbec nenapadlo, že na statickou veřejnou IP adresu domácího internetu může narazit i někdo cizí.</p>
+      <h3>Na hraně, ale legální</h3>
+      <p>Přitom je třeba konstatovat, že je Shodan zcela legitimní internetovou službou, která se sice v některých aspektech pohybuje přinejmenším na hraně etiky, avšak jeho poslání je jasné: Nemá bezpečnost internetu a IoT snižovat, ale naopak zvyšovat – právě tím, že upozorňuje na jejich slabiny.</p>
+      <p>Stručně řečeno, pokud se o nějaké té chabě zabezpečené krabičce internetu věcí dozvěděl Shodan a zcela transparentně se tím pochlubil ve své rostoucí databázi, znamená to, <b>že se o stejné krabičce nejspíše dozvěděl i celý zástup dalších internetových robotů, kteří už mají jediný cíl: aktivně škodit, krást data aj</b>.</p>
+      <h3>České routery Turris</h3>
+      <p>Pojďme si kouzlo Shodanu vyzkoušet na několika příkladech. O moji domácí síť se stará český router Turris Omnia. Možná si vzpomínáte na jeho první generaci, kterou CZ.NIC rozdával zdarma za účelem experimentálního měření kvality tuzemského internetu.</p>
+      <p>Turris se tedy dodnes stará o internet i LAN v mnoha českých domácnostech, zároveň to ale nebude žádná velká masovka jako třeba TP-Link a další. A tak jsme dali Shodanu za úkol vyhledat všechna zařízení, v jejichž odpovědi se vyskytovalo slovíčko turris.</p>
+      <figure>
+        <img src="https://www.zive.cz/GetThumbNail.aspx?id_file=63729206&amp;width=300&amp;height=146&amp;q=80"/>
+        <figcaption>.</figcaption>
+      </figure>
+      <p>Vyskočilo na nás pouze 19 zařízení, což je dobrá zpráva. Znamená to, že na všech ostatních routerech nebyly do veřejného internetu otevřené žádné porty, jejichž služby by na sebe vše vykecaly – třeba webové administrace routeru jako na obrázku výše.</p>
+      <h3>Mapa IP adres</h3>
+      <p>Jak vidno z výpisu, Shodan v rychlém přehledu zobrazuje i úryvky komunikace, takže hned na prvním místě figuruje mašina s francouzskou IP adresou a FTP serverem <b>ProFTPD</b>. Další ze Španělska o několik příček níže zase hlásí, že i na této IP adrese běží FTP server – tentokrát <b>FileZilla</b>.</p>
+      <figure>
+        <img src="https://www.zive.cz/GetThumbNail.aspx?id_file=68295519&amp;width=300&amp;height=146&amp;q=80"/>
+        <figcaption>Tak kdepak jste, panáčkové?</figcaption>
+      </figure>
+      <p>My se ale přepneme na mapu a podíváme se na Česko, kde těch puntíků svítí jen pár. Vybrali jsme si jeden z nich a po klepnutí nás zaujala hromada otevřených TCP portů. Více otevřených portů, více Adid… Chci říct větší šance, že na některém z nich bude poslouchat něco zajímavého.</p>
+      <figure>
+        <img src="https://www.zive.cz/GetThumbNail.aspx?id_file=136927674&amp;width=300&amp;height=164&amp;q=80"/>
+        <figcaption>Po klepnutí na puntík se zobrazí bublina s rychlým přehledem a zástupem otevřených portů. To je skvělá zpráva, na každém z nich totiž bude poslouchat nějaká internetová služba.</figcaption>
+      </figure>
+      <p>A taky že ano. Na portu 80 běží webové rozhraní QTS diskového úložiště QNAP. Přístup k souborům je naštěstí chráněný heslem, QTS je ale <i>vtipálek</i> a ve výchozím stavu nechrání heslem přístup do galerie. Rázem na nás vyskočí fotografie malých dětí. Kdybych nebyl Čížek, ale pedofilní indexovací bot, mám několik nových úlovků do sbírky.</p>
+      <slideshow>
+        <figure>
+          <a href="https://www.zive.cz/getthumbnail.aspx?q=60&amp;height=100000&amp;width=100000&amp;id_file=593538157">
+            <img src="https://www.zive.cz/getthumbnail.aspx?q=60&amp;height=100000&amp;width=100000&amp;id_file=593538157"/>
+          </a>
+        </figure>
+        <figure>
+          <a href="https://www.zive.cz/getthumbnail.aspx?q=60&amp;height=100000&amp;width=100000&amp;id_file=639719282">
+            <img src="https://www.zive.cz/getthumbnail.aspx?q=60&amp;height=100000&amp;width=100000&amp;id_file=639719282"/>
+          </a>
+        </figure>
+        <figcaption>Toto webové rozhraní NASu od QNAPu by asi chtělo lépe zabezpečit</figcaption>
+      </slideshow>
+      <h3>Mám torrentové doupě! Ale zapomněl jsem ho zabezpečit</h3>
+      <p>Koukněme se na další červený puntík na mapě a opět na nás vyskočí záplava otevřených portů, na kterých i tentokrát bude poslouchat něco zajímavého. Některé porty vypadají povědomě a Shodan naše podezření potvrzuje.</p>
+      <figure>
+        <img src="https://www.zive.cz/GetThumbNail.aspx?id_file=372735204&amp;width=300&amp;height=215&amp;q=80"/>
+        <figcaption>Ha, na IP adrese poslouchá na portu 9091 webový klient bittorrentového programu Transmission. Zdalipak bude dostupný i pro anonymní návštěvu?</figcaption>
+      </figure>
+      <p>Ale, ale, tady někomu v domácí síti běží bittorentový webový klient Transmission. Jistě ale bude chráněný heslem!</p>
+      <p>Aha, není…</p>
+      <figure>
+        <img src="https://www.zive.cz/GetThumbNail.aspx?id_file=631164623&amp;width=300&amp;height=146&amp;q=80"/>
+        <figcaption>Jaj...</figcaption>
+      </figure>
+      <p>Tak co si stáhneme? Nakonec nic, nabídka multimediálního warezu v čele s epizodami slovenského seriálu Horná Dolná nás nezaujala, a tak si alespoň ještě ověříme, jestli jako anonym nemáme pouze práva ke čtení. Nemáme! Můžeme všechny torrenty smazat, stáhnout nové, změnit konfiguraci a také se můžeme podívat na statistiku.</p>
+      <figure>
+        <img src="https://www.zive.cz/GetThumbNail.aspx?id_file=592845714&amp;width=300&amp;height=142&amp;q=80"/>
+        <figcaption>Ještě jedno a mnohem hlasitější jaj...</figcaption>
+      </figure>
+      <p>Transmission od své instalace před necelým rokem sdílel skoro 10 TB dat (!) a stáhnul 774 GB. Jedná se tedy o poměrně slušnou seedovací mašinu, jejíž autor je docela odvážný a riskuje. Pokud jsme totiž jeho zcela otevřený Transmission odhalili během několika desítek sekund my, protipirátský indexovací bot by měl být stejně úspěšný.</p>
+      <h3>Děravé MQTT</h3>
+      <p>Ale pojďme dál. Mnoho systémů chytré domácnosti používá populární komunikační protokol <a href="http://mqtt.org/">MQTT</a>, přičemž větší, než malé množství majitelů podobných chytrých domácnosti zapomnělo svůj server MQTT jakkoliv zabezpečit a ještě k němu povolilo přístup z veřejného internetu. Loni jsme si to ostatně názorně ukázali <a href="https://www.zive.cz/clanky/odposlouchavali-jsme-deravou-domacnost-katka-z-brightonu-prave-sedi-doma-zatimco-jeji-manzel-hraje-asi-golf/sc-3-a-194628/default.aspx">na příkladu jisté rodiny z britského Brightonu</a>, kterou jsme téměř dokonale odposlouchávali.</p>
+      <figure>
+        <img src="https://www.zive.cz/getthumbnail.aspx?q=90&amp;crop=1&amp;height=100&amp;width=200&amp;id_file=958409746"/>
+        <figcaption>
+          <a href="https://www.zive.cz/clanky/odposlouchavali-jsme-deravou-domacnost-katka-z-brightonu-prave-sedi-doma-zatimco-jeji-manzel-hraje-asi-golf/sc-3-a-194628/default.aspx">Odposlouchávali jsme děravou domácnost: Katka z Brightonu právě sedí doma, zatímco její manžel hraje asi golf</a>
+        </figcaption>
+      </figure>
+      <p>Co se od té doby změnilo? Nic… V Shodanu stačí vyhledat slovíčko mqtt a případně i vyfiltrovat otevřené TCP porty na čísle 1883, na kterém zpravidla běží MQTT server (tzv. broker) Mosquitto. MQTT funguje na principu stručných zpráv, které mezi sebou mohou posílat krabičky chytré domácnosti a k jejichž odběru se mohou přihlásit i ostatní klienti.</p>
+      <figure>
+        <img src="https://www.zive.cz/GetThumbNail.aspx?id_file=860612392&amp;width=300&amp;height=62&amp;q=80"/>
+        <figcaption>Základní princip MQTT brokeru, který sbírá zprávy (topic) z koncových zařízení (publisher) a poskytuje je přihlášeným klientům (subscriber)</figcaption>
+      </figure>
+      <p>Správný broker, pokud už musí být vystavený do veřejného internetu, by měl být nakonfigurovaný tak, aby používal přinejmenším šifrovaný přenos dat a vyžadoval heslo, k hromadě brokerů indexovaných Shodanem se ale můžete bez problému připojit skrze jakýkoliv MQTT klient.</p>
+      <p>Pak už jen stačí pokusit se přihlásit k odběru všech zpráv, které má daný broker k dispozici, a pokud budete mít štěstí, rázem na vás budou vyskakovat údaje třeba z domácí meteostanice aj.</p>
+      <h3>Zdravíme na horskou chatu </h3>
+      <p>Obyvatele Brightonu jsme tentokrát nechali na pokoj a podívali se na jeden zajímavý broker svítící do internetu z IP adresy kdesi v Southamptonu. Na IP adrese běžela hromada dalších webových služeb včetně webového serveru s prezentací hezké horské chaty <a href="http://www.chaletlouis.eu/">Chalet Louis Winter Ski</a> poblíž Ženevy. Majitelem je jistý britský pár, proto ta southamptonská IP adresa.</p>
+      <slideshow>
+        <figure>
+          <a href="https://www.zive.cz/getthumbnail.aspx?q=60&amp;height=100000&amp;width=100000&amp;id_file=474620305">
+            <img src="https://www.zive.cz/getthumbnail.aspx?q=60&amp;height=100000&amp;width=100000&amp;id_file=474620305"/>
+          </a>
+        </figure>
+        <figure>
+          <a href="https://www.zive.cz/getthumbnail.aspx?q=60&amp;height=100000&amp;width=100000&amp;id_file=366250824">
+            <img src="https://www.zive.cz/getthumbnail.aspx?q=60&amp;height=100000&amp;width=100000&amp;id_file=366250824"/>
+          </a>
+        </figure>
+        <figcaption>Zdravíme do Southamptonu. Tak copak vám běží na této IP adrese? Aha, webový server, ze kterého se dozvím, oč se jedná, a nezabezpečený MQTT broker Mosquitto.</figcaption>
+      </slideshow>
+      <p>Ale co ten broker? Zdá se, že Julie a Mike mají na své chaloupce, kterou pronajímají lyžařům, k internetu připojenou meteostanici, když totiž jejich MQTT broker poprosím o odběr všech zpráv, které nabízí, v záplavě systémových dat na mě vyskočí i dvě zajímavé zprávy <b>/Chalet_Outside/Chalet_Outside/Temperature</b> a <b>/Chalet_Outside/Chalet_Outside/Humidity </b>(názvy zpráv v systému MQTT mají stromovou strukturu).</p>
+      <figure>
+        <img src="https://www.zive.cz/GetThumbNail.aspx?id_file=18897035&amp;width=300&amp;height=193&amp;q=80"/>
+        <figcaption>Odpovědi brokeru při požadavku na odběr všech zpráv, které má k dispozici</figcaption>
+      </figure>
+      <p>Jedná se tedy o venkovní teplotu a vlhkost vzduchu u chalupy, které zatím žádné zimní radovánky neslibují, ve 12 °C se totiž moc dobře nelyžuje.</p>
+      <figure>
+        <img src="https://www.zive.cz/GetThumbNail.aspx?id_file=947357191&amp;width=300&amp;height=39&amp;q=80"/>
+      </figure>
+      <aside><b>Jak broker poprosit o odběr všech zpráv</b><br/>Pomůže nám několik řádků kódu v Pythonu a knihovna pro MQTT <a href="https://pypi.org/project/paho-mqtt/">paho-mqtt</a>. Skript spion.py, který, se pokusí přihlásit k odběru všech dostupných zpráv, které pak začne v nekonečné smyčce průběžně vypisovat, může vypadat třeba takto:<br/><code>import paho.mqtt.client as mqtt import sys def on_connect(client, userdata, flags, rc): print("Spojeni otevreno!") client.subscribe('#', qos = 1) client.subscribe('$SYS/#') def on_message(client, userdata, msg): print("Topic: " + msg.topic) print(" → Data: " + msg.payload.decode()) client = mqtt.Client(client_id = "MqttClient") client.on_connect = on_connect client.on_message = on_message if len(sys.argv) == 3: ip = sys.argv[1] port = int(sys.argv[2]) client.connect(ip, port, 60) client.loop_forever() else: print("Pouziti: python3 mqtt.py ip port")</code><br/>Skript pak spustíme příkazem <b>python3 spion.py ip port</b>. Pokud bude vše fungovat a MQTT broker na druhé straně přijme náš anonymní požadavek, bude textový výstup  v terminálu/příkazové řádce vypadat takto:<br/><br/>Anonymní spojení se vzdáleným brokerem navázáno!<br/>(Ne)bezpečností MQTT brokerů dostupných na Shodanu se v minulosti věnoval třeba Morfeus Labs, který i je původním autorem skriptu výše a detailně jej <a href="https://morphuslabs.com/hacking-the-iot-with-mqtt-8edaf0d07b9b">rozebírá na svém blogu</a>. </aside>
+      <h3>Ahoj do Koreje, mohl bych si vypůjčit váš HP OfficeJet Pro?</h3>
+      <p>Ale pojďme dál. Do evropských chat už se raději nabourávat nebudeme – autor tohoto článku nechce v příštích několika měsících umývat špinavé talíře kdesi ve vazební věznici, a tak zamíříme do Asie.</p>
+      <p>Proč do Asie? Protože tentokrát v Shodanu vyhledáme tyto textové řetězce:</p>
+      <p>
+        <b>"Serial Number:" "Built:" "Server: HP HTTP"</b>
+      </p>
+      <p>Naši bystří čtenáři už asi tuší, že tentokrát se pokoušíme vyhledat IP adresy, na kterých indexovací robot Shodanu objevil veřejný webový server tiskárny Hewlett-Packard. Zaujala nás jedna v Koreji, která svítí do okolí tolika otevřenými TCP porty jako brněnské vánoční kolo.</p>
+      <figure>
+        <img src="https://www.zive.cz/GetThumbNail.aspx?id_file=348932935&amp;width=300&amp;height=146&amp;q=80"/>
+        <figcaption>Ahoj, tady 4 540 síťových tiskáren od HP. Chcete si něco vytisknout? </figcaption>
+      </figure>
+      <p>A tentokrát je to opravdu trefa do černého, Shodan totiž napovídá, že je na standardním portu 80 dostupná webová administrace mašinky HP OfficeJet Pro 8210! Klikáme na tlačítko a v prohlížeči rázem vidíme naprosto vše.</p>
+      <figure>
+        <img src="https://www.zive.cz/GetThumbNail.aspx?id_file=370475252&amp;width=300&amp;height=146&amp;q=80"/>
+        <figcaption>Webová administrace síťové tiskárny dostupná z veřejného internetu a bez jakéhokoliv zabezpečení. Je libo něco vytisknout?</figcaption>
+      </figure>
+      <p>Webová administrace síťové tiskárny není nijak zabezpečená, a jelikož si dalo HP záležet, dokonce na nás vykouklo české rozhraní. Drobným testem ověříme, že se nejedná pouze o přehled ke čtení (read-only) bez práv k jakýmkoliv změnám. Ano, kdesi v korejském Seongnamu právě teď leze z tiskárny zkušební list papíru.</p>
+      <figure>
+        <img src="https://www.zive.cz/GetThumbNail.aspx?id_file=423114449&amp;width=300&amp;height=146&amp;q=80"/>
+        <figcaption>Tomu se nám nechce věřit. Změnit můžeme naprosto vše. V podstatě můžeme celou tiskárnu uloupit pro sebe a zabezpečit vlastním heslem. Ještě je tu plamínek naděje, že se jedná o falešnou vábničku.</figcaption>
+      </figure>
+      <p>Tiskárnu můžeme vypnout, odpojit, samozřejmě nechybí změna práv, abychom na korejské tiskárně mohli nadále tisknout jen my a nikdo jiný a tak dále. Je to naprosto k nevíře, ale do internetu svítí bez jakékoliv ochrany její kompletní administrace. I v tomto případě nejspíše majitele vůbec nenapadlo, že indexovací robot jednoduše prochází jednu IP adresu za druhou, takže i když její číslo nikomu nesdělí, robot na ni dříve či později zákonitě narazí!</p>
+      <figure>
+        <img src="https://www.zive.cz/GetThumbNail.aspx?id_file=529909792&amp;width=300&amp;height=134&amp;q=80"/>
+        <figcaption>Tisková úloha odeslána!</figcaption>
+      </figure>
+      <h3>Na Shodanu najdete jakoukoliv síťovou elektroniku počínaje multimediálním centrem a konče 3D tiskárnou </h3>
+      <p>Podobných osvětových lumpáren bychom mohli demonstrovat ještě mnohem více, přičemž do veřejného internetu svítí i hromada nezabezpečených domácích NASů s povoleným anonymním přístupem, multimediální Plex servery (obdoba populárního Kodi), síťové tiskárny a multifunkce prakticky všech výrobců, domácí chytré reproduktory s Wi-Fi...</p>
+      <figure>
+        <img src="https://www.zive.cz/GetThumbNail.aspx?id_file=963137956&amp;width=300&amp;height=143&amp;q=80"/>
+        <figcaption>) </figcaption>
+      </figure>
+      <p>A taky chromecasty, 3D tiskárny s kamerou namířenou na extruder a s možností dálkového přerušení tisku (!), těžební servery kryptoměn, špatně zabezpečené vzdálené plochy počítačů, otevřené SMB/CIFS disková úložiště, zástup nejrůznějších tenkých terminálů, nezabezpečených telnetů, SSH serverů, CRM a dalších podnikových systémů…</p>
+      <p>Vlastně cokoliv, co vás napadne. A tak není divu, že se dnes v hackerské komunitě těší velké popularitě vedle Shodanu také weby, které evidují úspěšné vyhledávací fráze. Některé jsme dnes vyzkoušeli i my a ty další najdete třeba na githubové stránce s příznačným názvem <a href="https://github.com/jakejarvis/awesome-shodan-queries">Awesome Shodan Queries</a>.</p>
+      <p>Jak už jsme si ale řekli v úvodu, <b>cílem není kohokoliv cíleně poškodit, ale dát veřejnosti najevo její laxní přístup k bezpečnosti, který výhledově zavání pořádným průšvihem</b>.</p>
+      <p>Síťových krabiček internetu věcí exponenciálně přibývá a jejich přinejmenším základní zabezpečení by mělo být esenciální samozřejmostí.</p>
+    </article>
+  </body>
+</html>

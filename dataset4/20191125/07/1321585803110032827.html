@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://www.pctipp.ch/tipps-tricks/kummerkasten/windows-10/artikel/windows-dateinamen-minimaler-laenge-suchen-93375/"/>
+    <meta property="og:site_name" content="PCtipp.ch"/>
+    <meta property="article:published_time" content="2019-11-25T07:00:00+00:00"/>
+    <meta property="og:title" content="Windows: Dateinamen minimaler Länge suchen"/>
+    <meta property="og:description" content="Sie suchen alle JPG-Dateien, die mit «DSC_» anfangen und dahinter genau vier Zeichen besitzen. Oder mehr als vier. Oder anderes. Suchtipps für Windows!"/>
+  </head>
+  <body>
+    <article>
+      <h1>Windows: Dateinamen minimaler Länge suchen</h1>
+      <h2>Sie suchen alle JPG-Dateien, die mit «DSC_» anfangen und dahinter genau vier Zeichen besitzen. Oder mehr als vier. Oder anderes. Suchtipps für Windows!</h2>
+      <address><time datetime="2019-11-25T07:00:00+00:00">25 Nov 2019, 07:00</time> by <a rel="author">Gaby Salvisberg</a></address>
+      <p>Der Windows-Explorer kennt einige Möglichkeiten, Dateien bestimmter Art zu suchen. Sie haben zum Beispiel haufenweise Fotodateien mit Endung «.jpg». Die meisten heissen z.B. «DSC_xxxx.jpg», wobei anstelle von xxxx eine vierstellige Nummer steht. Wie finden Sie diese? Die Beispiele wurden unter Windows 7 verwendet, sollten aber unter Windows 10 weitgehend gleich funktionieren.</p>
+      <p>Und was, wenn Sie nur jene finden wollen, denen Sie nach der Nummer noch eine Bezeichnung hinzufügt haben?</p>
+      <p><b>Lösung:</b> Bemühen Sie hierfür das Suchfeld oben rechts in jedem Explorer-Fenster. </p>
+      <p>Suche nach allen Dateien, die mit DSC_ anfangen und eine Endung .jpg haben. Das ist noch einfach:</p>
+      <p>Geben Sie ein: <b>dsc_*.jpg</b></p>
+      <p>Erklärung: Das Sternchen (*) dient als Platzhalter für eine beliebige Anzahl Zeichen.</p>
+      <figure>
+        <img src="https://www.pctipp.ch/typo3temp/pics/42ada8293a.jpg"/>
+        <figcaption>Das Sternchen ist der klassische Platzhalter für eine beliebige Anzahl Zeichen<cite>© pctipp.ch</cite></figcaption>
+      </figure>
+      <p>Suche nach allen JPG-Dateien, die nach DSC_ genau vier Zeichen aufweisen.</p>
+      <p>Geben Sie ein: <b>dsc_????.jpg</b></p>
+      <p>Erklärung: Das Fragezeichen ist auch ein Platzhalter, allerdings steht dieser für genau ein beliebiges Zeichen. Wenn es genau vier Zeichen sein sollen, verwenden Sie vier Fragezeichen.</p>
+      <figure>
+        <img src="https://www.pctipp.ch/typo3temp/pics/84fb2b375b.jpg"/>
+        <figcaption>Das Fragezeichen steht für genau ein beliebiges Zeichen<cite>© pctipp.ch</cite></figcaption>
+      </figure>
+      <p>Suche nach allen Dateien, die <i>nicht</i> dem exakten Suchmuster dsc_????.jpg entsprechen.</p>
+      <p>Geben Sie ein: <b>NOT dsc_????.jpg</b></p>
+      <p>Erklärung: Der Operator NOT erlaubt Ihnen, Windows beizubringen, was Sie nicht wollen.</p>
+      <figure>
+        <img src="https://www.pctipp.ch/typo3temp/pics/59338412a3.jpg"/>
+        <figcaption>Mit dem Operator NOT schliessen Sie Dateien von der Suche aus<cite>© pctipp.ch</cite></figcaption>
+      </figure>
+      <p>Und wie wäre es mit allen .jpg-Dateien, die mit dsc_ anfangen, aber nicht jene, die nach dem dsc_ nur vier Zeichen haben. Voilà!</p>
+      <p>Geben Sie ein: <b>dsc_* AND NOT dsc_????.jpg</b></p>
+      <p>Erklärung: Mit AND lassen sich Suchmuster auch mit weiteren Suchmustern verknüpfen.</p>
+      <figure>
+        <img src="https://www.pctipp.ch/typo3temp/pics/0f0a5e83ab.jpg"/>
+        <figcaption>Der Operator AND verknüpft mehrere Suchmuster<cite>© pctipp.ch</cite></figcaption>
+      </figure>
+      <p>Wenn Sie nicht auf Bordmittel angewiesen sind, können Sie auch zu einer international beliebten, voll funktionsfähigen, seit vielen Jahren entwickelten Shareware aus der Schweiz greifen: Der <a href="https://www.ghisler.com/ddownload.htm">Total Commander</a> bietet vielerlei Suchfunktionen. <i>(<a href="https://www.pctipp.ch/forum/showthread.php?42888-Suche-von-Dateinamen-mit-bestimmter-minimaler-L%C3%A4nge">PCtipp-Forum</a>)</i></p>
+      <related>
+        <h4>Artikel zum Thema:</h4>
+        <a href="https://www.pctipp.ch/tipps-tricks/kummerkasten/windows-10/artikel/windows-volltextsuche-genau-wie-sie-es-wollen-93289/"/>
+        <a href="https://www.pctipp.ch/tipps-tricks/kummerkasten/windows-10/artikel/windows-10-suchfeld-ausblenden-92270/"/>
+        <a href="https://www.pctipp.ch/tipps-tricks/kummerkasten/windows-10/artikel/cooles-gratis-tool-uebertrifft-die-windows-suche-82638/"/>
+      </related>
+    </article>
+  </body>
+</html>

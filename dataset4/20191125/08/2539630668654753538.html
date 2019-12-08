@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://www.omgubuntu.co.uk/2019/11/linux-5-4-kernel-release-features"/>
+    <meta property="og:site_name" content="OMG! Ubuntu!"/>
+    <meta property="article:published_time" content="2019-11-25T08:24:00+00:00"/>
+    <meta property="og:title" content="Linux Kernel 5.4 Released, This is What’s New"/>
+    <meta property="og:description" content="Linux 5.4 kernel is out. The latest Linux kernel update adds support for several ARM-based laptops, has better files system encryption, and lots more."/>
+  </head>
+  <body>
+    <article>
+      <h6 class="kicker">Update adds plenty, including ARM laptop support</h6>
+      <h1>Linux Kernel 5.4 Released, This is What’s New</h1>
+      <address><time datetime="2019-11-25T08:24:00+00:00">25 Nov 2019, 08:24</time> by <a rel="author">By Joey Sneddon</a></address>
+      <figure>
+        <img src="https://149366088.v2.pressablecdn.com/wp-content/uploads/2019/11/linux-5.4.jpg"/>
+      </figure>
+      <p>
+        <b>The new Linux 5.4 kernel brings a raft of notable changes and improvements to the fore, just like every kernel release does.</b>
+      </p>
+      <aside>Linux 5.5 is now open for development, but Linus cautions that Thanksgiving (and his 3 kids) may slow him down</aside>
+      <p>Linux Founder Linus Torvalds announced the Linux 5.4 release on the Linux Kernel Mailing List (lkml) saying: <i>“Not a lot happened this last week, which is just how I like it.”</i></p>
+      <p>With 5.4 out the merge window for Linux 5.5 is now open. But Linus cautions that the American tradition of <i>Thanksgiving</i> may get in the way.</p>
+      <p>But what are the changes in this latest kernel update? Read on for a summary of key Linux 5.4 features and changes.</p>
+      <h3>Linux 5.4 Features</h3>
+      <p>The headline addition in Linux 5.4 is a <b>new kernel lockdown mode </b>that aims to improve the separation of UID 0 (aka root) and the kernel.</p>
+      <p>The feature, implemented as a Linux Security Module, isn’t enabled by default but can be configured (with the understanding that anything relying on low-level access (be it hardware or the kernel) may be impacted.</p>
+      <p>Elsewhere, there’s ample dose of AMD related additions. This includes <b>support for AMD Navi 12 and 14 GPUs</b>, AMD Arcturus graphics cards, and the AMD Dali APU and <b>AMD 2020 APU</b> platforms.</p>
+      <p>Linux 5.4 also introduces (early) support for <b>Intel Tiger Lake hardware</b> and improves <b>display colour management </b>under the Nouveau open source driver.</p>
+      <p>ARM fans will appreciate the inclusion of <b>mainline Linux support for the Qualcomm Snapdragon 855</b>‘s reference board. Sadly, no products using this particular chipset are currently supported, but a solid foundation towards that ability is now in place.</p>
+      <p>A bunch of <b>ARM-based laptops</b> running the Snapdragon 835 SoC are supported by Linux 5.4, including the <i>ASUS NovaGo</i>, <i>HP Envy X2</i> and the <i>Lenovo Miix 630</i>.</p>
+      <p>Support for the <i>Lenovo Yoga C360</i>, based on the Snapdragon 850 SoC, also features.</p>
+      <p>Staying with Snapdragon, Linux 5.4 adds mainline support for phones based on the <a href="https://www.qualcomm.com/products/snapdragon-processors-410">Snapdragon 410</a>. This includes devices like the Samsung Galaxy A3 and A5 — though don’t expect to see desktop Linux distributions running on them just yet.</p>
+      <p>Improvements to the way cryptographic keys are added, removed and/or derived in <code>fscrypt</code>, the encryption API used in <code>ext4</code>/<code>f2fs</code>/<code>ubifs</code> file system encryption help improve security.</p>
+      <p>Also on the file system front, there’s optional case-insensitive file and folder handling available in <code>f2fs</code>.</p>
+      <p>Other Linux 5.4 changes:</p>
+      <ul>
+        <li>
+          <b>Faster large directory modifications on XFS</b>
+        </li>
+        <li>
+          <b>exFAT drivers in staging</b>
+        </li>
+        <li><b>VirtIO-FS</b> <b>merged for improved VM folder sharing</b></li>
+        <li>
+          <b>AMD Ryzen 3000 temperature reporting</b>
+        </li>
+        <li>
+          <b>Support for RTL8125 network device</b>
+        </li>
+        <li>
+          <b>RK3288 VP8 decoding</b>
+        </li>
+        <li><b>ASpeed <a href="https://www.aspeedtech.com/products.php?fPath=20&amp;rId=633">AST2600</a> (server management processor)</b> <b>support</b></li>
+        <li>
+          <b>Support for Intel Ice Lake Thunderbolt</b>
+        </li>
+        <li>
+          <b>Power management tweaks, inc. Intel TCC thermal offset</b>
+        </li>
+        <li>
+          <b><a href="https://github.com/thesofproject">Sound Open Firmware</a> improvements</b>
+        </li>
+      </ul>
+      <p>Among the devices, peripherals and hardware that should “just work” with the Linux 5.4 kernel:</p>
+      <ul>
+        <li>
+          <b>MobileStudio Pro 13 graphic tablet</b>
+        </li>
+        <li><b>Logitech G700(s) receiver</b>s</li>
+        <li>
+          <b>Logitech Lightspeed receiver</b>
+        </li>
+        <li>
+          <b>Creative SB0540 IR receivers</b>
+        </li>
+        <li>
+          <b>Smart Tech touchscreen panel</b>
+        </li>
+        <li>
+          <b>Mygica T230C TV tuner</b>
+        </li>
+        <li>
+          <b>OLPC-XO</b>
+        </li>
+      </ul>
+      <p>You can learn even more about this kernel version over the terrific <a href="https://kernelnewbies.org/">Kernel Newbies wiki</a>.</p>
+      <h3>Install Linux 5.4 on Ubuntu?</h3>
+      <p>All of the improvements listed above probably have you wondering about how to install Linux 5.4 on your system.</p>
+      <p>Generally speaking you should always. <b>wait for your distribution to package and distribute this kernel release</b>.</p>
+      <p>But most Linux distros do not issue new kernel releases as a regular update; they’re held over for new releases.</p>
+      <p><a href="https://www.omgubuntu.co.uk/2019/10/ubuntu-20-04-release-features">Ubuntu 20.04</a>, due in April, will include a kernel version later than 5.4 (and that kernel update should find its way back to Ubuntu 18.04 LTS through the Hardware Enablement Stack).</p>
+      <p>You can <a href="https://wiki.ubuntu.com/Kernel/MainlineBuilds#How_do_I_install_an_upstream_kernel.3F">install a mainline kernel on Ubuntu</a>, Linux Mint and other Linux distributions but it is <b>not recommended</b>.</p>
+      <p>If want to ignore that caution and do it any way you can find the relevant kernel downloads <a href="https://kernel.ubuntu.com/~kernel-ppa/mainline/?C=N;O=D">in this Ubuntu repo</a> (though they have NOT been tested or checked for stability).</p>
+    </article>
+  </body>
+</html>

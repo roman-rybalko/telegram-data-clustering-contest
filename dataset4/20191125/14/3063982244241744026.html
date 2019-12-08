@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://www.golem.de/news/threadripper-3970x-3960x-im-test-amd-wird-uneinholbar-1911-144997.html"/>
+    <meta property="og:site_name" content="Golem.de"/>
+    <meta property="article:published_time" content="2019-11-25T14:00:01+00:00"/>
+    <meta property="og:title" content="AMD wird uneinholbar"/>
+    <meta property="og:description" content="7-nm-Fertigung, Zen-2-Architektur und dank Chiplet-Design keine Scheduler-Probleme unter Windows 10: AMDs Threadripper v3 überzeugen auf voller Linie, die CPUs wie die Plattform."/>
+  </head>
+  <body>
+    <article>
+      <h1>AMD wird uneinholbar</h1>
+      <h2>7-nm-Fertigung, Zen-2-Architektur und dank Chiplet-Design keine Scheduler-Probleme unter <a href="https://www.golem.de/specials/windows10/">Windows 10</a>: AMDs Threadripper v3 überzeugen auf voller Linie, die CPUs wie die Plattform. <a href="https://www.golem.de/specials/intel/">Intel</a> hat im HEDT-Segment dem schlicht nichts entgegenzusetzen. Einzig Aufrüster dürften sich ärgern.</h2>
+      <address><time datetime="2019-11-25T14:00:01+00:00">25 Nov 2019, 14:00</time> by <a rel="author">Marc Sauter</a></address>
+      <p>Nachdem Intel heute Morgen mit dem <a href="https://www.golem.de/news/core-i9-10980xe-im-test-intel-rettet-sich-ueber-den-preis-1911-145162.html">Core i9-10980XE (Test)</a> eine direkte Konfrontation mit AMDs Threadripper v3 alias Castle Peak noch vermieden hatte, muss sich der einstige Marktführer nun stellen: Der 32-kernige Threadripper 3970X und der 24-kernige Threadripper 3960X sind zwar teurer, aber auch drastisch schneller und die Plattform ist moderner ausgestattet.</p>
+      <p>Die beiden Prozessoren stellen dabei eine Mischung aus den im Consumer-Bereich verfügbaren Ryzen wie dem <a href="https://www.golem.de/news/ryzen-9-3950x-im-test-amds-konkurrenzlose-16-kerne-1911-143929.html">3950X (Test)</a> und den <a href="https://www.golem.de/news/epyc-7002-alias-rome-amds-64-kernige-server-cpus-sind-episch-1908-143063.html">Epyc 7002</a> für Server dar. Dieses Segment bezeichnen die Hersteller gerne als HEDT (Highend Desktop), welches sich an Enthusiasten richtet und in vielerlei Hinsicht einer Workstation entspricht. Die Threadripper v3 eignen sich problemlos für größere 4K- oder aufwendige Render-Projekte, da auch 256 GByte Arbeitsspeicher und multiple schnelle SSDs installiert werden können.</p>
+      <ul>
+        <li>Auf Seite 1 sprechen wir über die Specs der Threadripper v3.</li>
+        <li>Auf Seite 2 erläutern wir das Chiplet-Design und Sockel TR4+.</li>
+        <li>Auf Seite 3 folgen Benchmarks unter Win10 und unter Linux.</li>
+        <li>Auf Seite 4 ziehen wir ein Fazit zum TR 3970X und zum TR 3960X.</li>
+      </ul>
+      <slideshow>
+        <figure>
+          <img src="https://scr3.golem.de/screenshots/1911/Threadripper-v3-Test/thumb620/01-blender-v2.80-(classroom)-chart.png"/>
+          <figcaption>RTX 2080 Super, 32 GB DDR4, Seasonic TX-1000, Win10 v1909, GF 441.20 (Bild: Golem.de)</figcaption>
+        </figure>
+        <figure>
+          <img src="https://scr3.golem.de/screenshots/1911/Threadripper-v3-Test/thumb620/02-luxmark-v3.1-(complex,-c)-chart.png"/>
+          <figcaption>RTX 2080 Super, 32 GB DDR4, Seasonic TX-1000, Win10 v1909, GF 441.20 (Bild: Golem.de)</figcaption>
+        </figure>
+        <figure>
+          <img src="https://scr3.golem.de/screenshots/1911/Threadripper-v3-Test/thumb620/03-7-zip-v19.00-(5gb-compression,-lzma2-ultra,-aes-256)-chart.png"/>
+          <figcaption>RTX 2080 Super, 32 GB DDR4, Seasonic TX-1000, Win10 v1909, GF 441.20 (Bild: Golem.de)</figcaption>
+        </figure>
+        <figure>
+          <img src="https://scr3.golem.de/screenshots/1911/Threadripper-v3-Test/thumb620/04-adobe-lightroom-classic-cc-v9.0-(100x-150-mpix-dng-to-jpeg,-3333-pix,-sharpening)-chart.png"/>
+          <figcaption>RTX 2080 Super, 32 GB DDR4, Seasonic TX-1000, Win10 v1909, GF 441.20 (Bild: Golem.de)</figcaption>
+        </figure>
+        <figure>
+          <img src="https://scr3.golem.de/screenshots/1911/Threadripper-v3-Test/thumb620/05-adobe-premiere-pro-cc-v14.0.0-(wr-kw1018,-youtube-4k-preset,-h.264,-cuda)-chart.png"/>
+          <figcaption>RTX 2080 Super, 32 GB DDR4, Seasonic TX-1000, Win10 v1909, GF 441.20 (Bild: Golem.de)</figcaption>
+        </figure>
+        <figure>
+          <img src="https://scr3.golem.de/screenshots/1911/Threadripper-v3-Test/thumb620/06-av1-encoding-(tears-of-steel,-dci-4k24-10b,-avt-av1-v0.7.0)-chart.png"/>
+          <figcaption>RTX 2080 Super, 32 GB DDR4, Seasonic TX-1000, Win10 v1909, GF 441.20 (Bild: Golem.de)</figcaption>
+        </figure>
+        <figure>
+          <img src="https://scr3.golem.de/screenshots/1911/Threadripper-v3-Test/thumb620/07-h.265-encoding-(netflix-narrator,-dci-4k60-10b,-x265-v3.2)-chart.png"/>
+          <figcaption>RTX 2080 Super, 32 GB DDR4, Seasonic TX-1000, Win10 v1909, GF 441.20 (Bild: Golem.de)</figcaption>
+        </figure>
+        <figure>
+          <img src="https://scr3.golem.de/screenshots/1911/Threadripper-v3-Test/thumb620/08-ue-v4.23.1-building-lighting-(infiltrator-demo,-preview-quality)-chart.png"/>
+          <figcaption>RTX 2080 Super, 32 GB DDR4, Seasonic TX-1000, Win10 v1909, GF 441.20 (Bild: Golem.de)</figcaption>
+        </figure>
+        <figure>
+          <img src="https://scr3.golem.de/screenshots/1911/Threadripper-v3-Test/thumb620/09-v-ray-next-benchmark-v4.10.07-chart.png"/>
+          <figcaption>RTX 2080 Super, 32 GB DDR4, Seasonic TX-1000, Win10 v1909, GF 441.20 (Bild: Golem.de)</figcaption>
+        </figure>
+        <figure>
+          <img src="https://scr3.golem.de/screenshots/1911/Threadripper-v3-Test/thumb620/10-y-cruncher-v0.7.8.9503-(5-billion-digits)-chart.png"/>
+          <figcaption>RTX 2080 Super, 32 GB DDR4, Seasonic TX-1000, Win10 v1909, GF 441.20 (Bild: Golem.de)</figcaption>
+        </figure>
+        <figure>
+          <img src="https://scr3.golem.de/screenshots/1911/Threadripper-v3-Test/thumb620/11-cinebench-r20-chart.png"/>
+          <figcaption>RTX 2080 Super, 32 GB DDR4, Seasonic TX-1000, Win10 v1909, GF 441.20 (Bild: Golem.de)</figcaption>
+        </figure>
+        <figure>
+          <img src="https://scr3.golem.de/screenshots/1911/Threadripper-v3-Test/thumb620/12-cinebench-r15-chart.png"/>
+          <figcaption>RTX 2080 Super, 32 GB DDR4, Seasonic TX-1000, Win10 v1909, GF 441.20 (Bild: Golem.de)</figcaption>
+        </figure>
+        <figure>
+          <img src="https://scr3.golem.de/screenshots/1911/Threadripper-v3-Test/thumb620/13-system-power-consumption-chart.png"/>
+          <figcaption>RTX 2080 Super, 32 GB DDR4, Seasonic TX-1000, Win10 v1909, GF 441.20 (Bild: Golem.de)</figcaption>
+        </figure>
+        <figure>
+          <img src="https://scr3.golem.de/screenshots/1911/Threadripper-v3-Test/thumb620/Threadripper-v3-01.jpg"/>
+          <figcaption>Threadripper 3970X (Bild: Marc Sauter/Golem.de)</figcaption>
+        </figure>
+        <figure>
+          <img src="https://scr3.golem.de/screenshots/1911/Threadripper-v3-Test/thumb620/Threadripper-v3-02.jpg"/>
+          <figcaption>Threadripper 3970X (Bild: Marc Sauter/Golem.de)</figcaption>
+        </figure>
+        <figure>
+          <img src="https://scr3.golem.de/screenshots/1911/Threadripper-v3-Test/thumb620/Threadripper-v3-03.jpg"/>
+          <figcaption>Threadripper 3970X (Bild: Marc Sauter/Golem.de)</figcaption>
+        </figure>
+        <figure>
+          <img src="https://scr3.golem.de/screenshots/1911/Threadripper-v3-Test/thumb620/Threadripper-v3-04.png"/>
+          <figcaption>Die Threadripper v3 nutzen fünf Chiplets. (Bild: AMD)</figcaption>
+        </figure>
+        <figure>
+          <img src="https://scr3.golem.de/screenshots/1911/Threadripper-v3-Test/thumb620/Threadripper-v3-05.png"/>
+          <figcaption>Ein I/O-Die wird mit vier CPU-Dies kombiniert. (Bild: AMD)</figcaption>
+        </figure>
+        <figure>
+          <img src="https://scr3.golem.de/screenshots/1911/Threadripper-v3-Test/thumb620/Threadripper-v3-06.png"/>
+          <figcaption>Diese Topology hilft unter Windows 10. (Bild: AMD)</figcaption>
+        </figure>
+        <figure>
+          <img src="https://scr3.golem.de/screenshots/1911/Threadripper-v3-Test/thumb620/Threadripper-v3-07.png"/>
+          <figcaption>Blockdiagramm der sTRX4-Plattform (Bild: AMD)</figcaption>
+        </figure>
+      </slideshow>
+      <p>Technisch, zumindest was die Fertigung und die Microarchitektur anbelangt, entsprechen die Threadripper v3 den bisherigen Ryzen 3000: AMD kombiniert mehrere Chips zu einem Prozessor, wobei einer mit 12 nm und vier mit 7 nm produziert werden. Die eigentlichen CPU-Kerne nutzen die Zen-2-Technik: Hier gibt es eine Perceptron-basierte Sprungvorhersage und eine Tage-Sprungvorhersage, der L1-Instruktionen-Cache wurde zugunsten des verdoppelten Micro-Op-Caches halbiert.</p>
+      <p>Im Backend existieren mehr Einheiten, die Bandbreite für Lade-/Speichereinheiten und L1-Daten-Cache stieg massiv an. Das ist wichtig, denn die Gleitkomma-Pipelines arbeiten nun mit 256 Bit statt mit 128 Bit und können AVX2-Befehle in einem Takt abarbeiten. Viele Encoder- und Render-Anwendungen nutzen mittlerweile derartige Operationen, um die Berechnungen zu beschleunigen.</p>
+      <p>Auf CPU-Chip-Ebene wurde zudem der L3-Cache von 8 MByte auf 16 MByte verdoppelt und der Speichercontroller kann nun offiziell mit DDR4-3200 statt DDR4-2933 umgehen. AMD spricht auf die CPU-Kerne bezogen von einer um 15 Prozent höheren IPC, die Verbesserung beim L3-Cache und beim Speicher sowie dem Takt steigern die Leistung noch weiter. Die Threadripper v3 haben in 7 nm gefertigte Cores, weshalb AMD die Frequenz verglichen mit den Threadrippern 1000/2000 steigern konnte.</p>
+      <table>
+        <tr>
+          <th/>
+          <th>Kerne</th>
+          <th>L3-Cache</th>
+          <th>Basistakt</th>
+          <th>Boost</th>
+          <th>Speicher</th>
+          <th>TDP</th>
+          <th>Launch-Preis</th>
+        </tr>
+        <tr>
+          <th>Threadripper 3990X</th>
+          <td>64 + SMT</td>
+          <td>256 MByte</td>
+          <td>(?)</td>
+          <td>(?)</td>
+          <td>DDR4-3200</td>
+          <td>280W</td>
+          <td>(?)</td>
+        </tr>
+        <tr>
+          <th>Threadripper 3970X</th>
+          <td>32 + SMT</td>
+          <td>128 MByte</td>
+          <td>3,7 GHz</td>
+          <td>4,5 GHz</td>
+          <td>DDR4-3200</td>
+          <td>280W</td>
+          <td>2.000 USD (2.160 Euro)</td>
+        </tr>
+        <tr>
+          <th>Threadripper 3960X</th>
+          <td>24 + SMT</td>
+          <td>128 MByte</td>
+          <td>3,8 GHz</td>
+          <td>4,5 GHz</td>
+          <td>DDR4-3200</td>
+          <td>280W</td>
+          <td>1.400 USD (1.510 Euro)</td>
+        </tr>
+      </table>
+      <p>Spezifikationen von AMDs Threadripper 3000 (Castle Peak)</p>
+      <p>Beide Threadripper v3 erreichen in der Spitze kurzfristig bis zu 4,5 GHz und damit so viel wie ein <a href="https://www.golem.de/news/ryzen-7-3800x-im-test-der-schluckt-zu-viel-1909-143736.html">Ryzen 7 3800X (Test)</a>. AMD setzt auf zwei besonders hoch taktende Kerne, diese befinden sich im sogenannten CCD4. Damit sind die Compute Cache Dies gemeint, denn jeder Threadripper v3 besteht aus fünf Chiplets.</p>
+      <h3>Fünf Chiplets auf TR4+</h3>
+      <p>Die älteren HEDT-Modelle wie der 32-kernige <a href="https://www.golem.de/news/threadripper-2990wx-und-2950x-im-test-viel-hilft-nicht-immer-viel-1808-135832.html">Threadripper 2990WX (Test)</a> setzen sich aus vier Dies zusammen: Ein jedes hat acht Kerne und zwei Speicherkanäle, der Sockel TR4 führt aber nur vier Channels nach außen. Zwei der CPU-Chips sind daher reine Compute-Dies und müssen sich Daten über die beiden anderen besorgen. Das hat Nachteile bei Bandbreite und Latenz und zu allem Übel kann der Task-Scheduler unter Windows 10 mit einem solchen Quad-NUMA-Node-Design nicht umgehen.</p>
+      <p>Für die Threadripper v3, genauso wie bei den Ryzen 3000 und den Epyc 7002, verwendet AMD daher ein zentrales I/O-Die: Darin befinden sich die vier Speichercontroller, weshalb die vier Compute-Cache-Dies alle mit der gleichen Latenz darauf zugreifen und der Windows-Scheduler mit diesem Single-NUMA-Node-Design keine Probleme mehr hat. Alleine durch diesen Kniff ist der Threadripper 3970X teilweise doppelt so schnell wie der Threadripper 2990WX, einfach weil das Betriebssystem keinen Ärger macht.</p>
+      <p>Unter Windows 10 muss für volle Performance der aktuelle Chipsatztreiber installiert sein, welcher den Ryzen-Balanced-Energiesparplan enthält. Ab v1903 wird damit CPPC2 (Collaborative Power Performance Control 2) verwendet, bei Intel heißt das Speed Shift. Hier übernimmt die CPU selbst die Kontrolle über ihre P-States, statt das Betriebssystem dies steuern zu lassen. Dadurch kann ein Kern viel schneller hohe Taktraten erzielen, was Burst-Workloads hilft. Mit <a href="https://www.golem.de/news/19h2-update-microsoft-veroeffentlicht-windows-10-v1909-1911-144966.html">Windows 10 v1909</a> werden favorisierte CPU-Cores laut Microsoft noch besser angesprochen.</p>
+      <slideshow>
+        <figure>
+          <img src="https://scr3.golem.de/screenshots/1911/Threadripper-v3-Test/thumb620/01-blender-v2.80-(classroom)-chart.png"/>
+          <figcaption>RTX 2080 Super, 32 GB DDR4, Seasonic TX-1000, Win10 v1909, GF 441.20 (Bild: Golem.de)</figcaption>
+        </figure>
+        <figure>
+          <img src="https://scr3.golem.de/screenshots/1911/Threadripper-v3-Test/thumb620/02-luxmark-v3.1-(complex,-c)-chart.png"/>
+          <figcaption>RTX 2080 Super, 32 GB DDR4, Seasonic TX-1000, Win10 v1909, GF 441.20 (Bild: Golem.de)</figcaption>
+        </figure>
+        <figure>
+          <img src="https://scr3.golem.de/screenshots/1911/Threadripper-v3-Test/thumb620/03-7-zip-v19.00-(5gb-compression,-lzma2-ultra,-aes-256)-chart.png"/>
+          <figcaption>RTX 2080 Super, 32 GB DDR4, Seasonic TX-1000, Win10 v1909, GF 441.20 (Bild: Golem.de)</figcaption>
+        </figure>
+        <figure>
+          <img src="https://scr3.golem.de/screenshots/1911/Threadripper-v3-Test/thumb620/04-adobe-lightroom-classic-cc-v9.0-(100x-150-mpix-dng-to-jpeg,-3333-pix,-sharpening)-chart.png"/>
+          <figcaption>RTX 2080 Super, 32 GB DDR4, Seasonic TX-1000, Win10 v1909, GF 441.20 (Bild: Golem.de)</figcaption>
+        </figure>
+        <figure>
+          <img src="https://scr3.golem.de/screenshots/1911/Threadripper-v3-Test/thumb620/05-adobe-premiere-pro-cc-v14.0.0-(wr-kw1018,-youtube-4k-preset,-h.264,-cuda)-chart.png"/>
+          <figcaption>RTX 2080 Super, 32 GB DDR4, Seasonic TX-1000, Win10 v1909, GF 441.20 (Bild: Golem.de)</figcaption>
+        </figure>
+        <figure>
+          <img src="https://scr3.golem.de/screenshots/1911/Threadripper-v3-Test/thumb620/06-av1-encoding-(tears-of-steel,-dci-4k24-10b,-avt-av1-v0.7.0)-chart.png"/>
+          <figcaption>RTX 2080 Super, 32 GB DDR4, Seasonic TX-1000, Win10 v1909, GF 441.20 (Bild: Golem.de)</figcaption>
+        </figure>
+        <figure>
+          <img src="https://scr3.golem.de/screenshots/1911/Threadripper-v3-Test/thumb620/07-h.265-encoding-(netflix-narrator,-dci-4k60-10b,-x265-v3.2)-chart.png"/>
+          <figcaption>RTX 2080 Super, 32 GB DDR4, Seasonic TX-1000, Win10 v1909, GF 441.20 (Bild: Golem.de)</figcaption>
+        </figure>
+        <figure>
+          <img src="https://scr3.golem.de/screenshots/1911/Threadripper-v3-Test/thumb620/08-ue-v4.23.1-building-lighting-(infiltrator-demo,-preview-quality)-chart.png"/>
+          <figcaption>RTX 2080 Super, 32 GB DDR4, Seasonic TX-1000, Win10 v1909, GF 441.20 (Bild: Golem.de)</figcaption>
+        </figure>
+        <figure>
+          <img src="https://scr3.golem.de/screenshots/1911/Threadripper-v3-Test/thumb620/09-v-ray-next-benchmark-v4.10.07-chart.png"/>
+          <figcaption>RTX 2080 Super, 32 GB DDR4, Seasonic TX-1000, Win10 v1909, GF 441.20 (Bild: Golem.de)</figcaption>
+        </figure>
+        <figure>
+          <img src="https://scr3.golem.de/screenshots/1911/Threadripper-v3-Test/thumb620/10-y-cruncher-v0.7.8.9503-(5-billion-digits)-chart.png"/>
+          <figcaption>RTX 2080 Super, 32 GB DDR4, Seasonic TX-1000, Win10 v1909, GF 441.20 (Bild: Golem.de)</figcaption>
+        </figure>
+        <figure>
+          <img src="https://scr3.golem.de/screenshots/1911/Threadripper-v3-Test/thumb620/11-cinebench-r20-chart.png"/>
+          <figcaption>RTX 2080 Super, 32 GB DDR4, Seasonic TX-1000, Win10 v1909, GF 441.20 (Bild: Golem.de)</figcaption>
+        </figure>
+        <figure>
+          <img src="https://scr3.golem.de/screenshots/1911/Threadripper-v3-Test/thumb620/12-cinebench-r15-chart.png"/>
+          <figcaption>RTX 2080 Super, 32 GB DDR4, Seasonic TX-1000, Win10 v1909, GF 441.20 (Bild: Golem.de)</figcaption>
+        </figure>
+        <figure>
+          <img src="https://scr3.golem.de/screenshots/1911/Threadripper-v3-Test/thumb620/13-system-power-consumption-chart.png"/>
+          <figcaption>RTX 2080 Super, 32 GB DDR4, Seasonic TX-1000, Win10 v1909, GF 441.20 (Bild: Golem.de)</figcaption>
+        </figure>
+        <figure>
+          <img src="https://scr3.golem.de/screenshots/1911/Threadripper-v3-Test/thumb620/Threadripper-v3-01.jpg"/>
+          <figcaption>Threadripper 3970X (Bild: Marc Sauter/Golem.de)</figcaption>
+        </figure>
+        <figure>
+          <img src="https://scr3.golem.de/screenshots/1911/Threadripper-v3-Test/thumb620/Threadripper-v3-02.jpg"/>
+          <figcaption>Threadripper 3970X (Bild: Marc Sauter/Golem.de)</figcaption>
+        </figure>
+        <figure>
+          <img src="https://scr3.golem.de/screenshots/1911/Threadripper-v3-Test/thumb620/Threadripper-v3-03.jpg"/>
+          <figcaption>Threadripper 3970X (Bild: Marc Sauter/Golem.de)</figcaption>
+        </figure>
+        <figure>
+          <img src="https://scr3.golem.de/screenshots/1911/Threadripper-v3-Test/thumb620/Threadripper-v3-04.png"/>
+          <figcaption>Die Threadripper v3 nutzen fünf Chiplets. (Bild: AMD)</figcaption>
+        </figure>
+        <figure>
+          <img src="https://scr3.golem.de/screenshots/1911/Threadripper-v3-Test/thumb620/Threadripper-v3-05.png"/>
+          <figcaption>Ein I/O-Die wird mit vier CPU-Dies kombiniert. (Bild: AMD)</figcaption>
+        </figure>
+        <figure>
+          <img src="https://scr3.golem.de/screenshots/1911/Threadripper-v3-Test/thumb620/Threadripper-v3-06.png"/>
+          <figcaption>Diese Topology hilft unter Windows 10. (Bild: AMD)</figcaption>
+        </figure>
+        <figure>
+          <img src="https://scr3.golem.de/screenshots/1911/Threadripper-v3-Test/thumb620/Threadripper-v3-07.png"/>
+          <figcaption>Blockdiagramm der sTRX4-Plattform (Bild: AMD)</figcaption>
+        </figure>
+      </slideshow>
+      <p>Alle fünf Chiplets auf dem Prozessorträger kommunizieren über das IFOP, das Infinity Fabric On Package. Jedes Compute-Cache-Die liest mit 51,2 GByte/s und schreibt mit 25,6 GByte/s in das I/O-Die. Die überarbeitete Version des Infinity Fabric soll satte 27 Prozent weniger Energie bei gleicher Geschwindigkeit benötigen. Dadurch erhalten die CPU-Kerne mehr Power-Budget und können höher takten, denn der Uncore-Teil machte unter Volllast bisher gut 60 Watt aus. Zudem hat AMD die thermische Verlustleistung für die Threadripper v3 nominell von 250 Watt auf 280 Watt gesteigert.</p>
+      <p>Neben den CPUs aktualisiert AMD auch die Plattform, weshalb Nutzer einer X399-Platine mit Sockel TR4 (SP3r2) nicht auf die Threadripper v3 umrüsten können. Die neue Fassung wird als sTRX4 alias TR4+ (SP3r3) alias LGA 4096 bezeichnet: Sie ist mechanisch kompatibel, elektrisch aber inkompatibel, denn AMD bindet den Chipsatz anders an. Der ältere X399 hat nur PCIe-Gen3-Lanes und wird mit vier davon mit dem Prozessor verknüpft. Beim TRX40 - er entspricht dem <a href="https://www.golem.de/news/ryzen-3900x-3700x-im-test-amds-7-nm-cpus-lassen-intel-hinter-sich-1907-141399-3.html">X570</a> - kommen hingegen PCIe-Gen4-Lanes und gleich acht davon zum Einsatz. Das resultiert in der vierfachen Bandbreite zwischen CPU und Chipsatz.</p>
+      <p>Die Threadripper v3 selbst integrieren 56 frei verfügbare PCIe-Gen4-Lanes für Grafikkarten und NVMe-SSDs, wie üblich können Mainboardhersteller davon acht auch in Sata-6-GBit/s-Ports umwandeln. Hinzu kommen vier USB 3.2 Gen2, weitere acht stecken im TRX40-Chipsatz. Der hat überdies noch 16 (umwandelbare) PCIe-Gen4-Lanes, vier dedizierte Sata-6-GBit/s- und vier USB-2.0-Ports.</p>
+      <slideshow>
+        <figure>
+          <img src="https://scr3.golem.de/screenshots/1911/Threadripper-v3-Test/thumb620/01-blender-v2.80-(classroom)-chart.png"/>
+          <figcaption>RTX 2080 Super, 32 GB DDR4, Seasonic TX-1000, Win10 v1909, GF 441.20 (Bild: Golem.de)</figcaption>
+        </figure>
+        <figure>
+          <img src="https://scr3.golem.de/screenshots/1911/Threadripper-v3-Test/thumb620/02-luxmark-v3.1-(complex,-c)-chart.png"/>
+          <figcaption>RTX 2080 Super, 32 GB DDR4, Seasonic TX-1000, Win10 v1909, GF 441.20 (Bild: Golem.de)</figcaption>
+        </figure>
+        <figure>
+          <img src="https://scr3.golem.de/screenshots/1911/Threadripper-v3-Test/thumb620/03-7-zip-v19.00-(5gb-compression,-lzma2-ultra,-aes-256)-chart.png"/>
+          <figcaption>RTX 2080 Super, 32 GB DDR4, Seasonic TX-1000, Win10 v1909, GF 441.20 (Bild: Golem.de)</figcaption>
+        </figure>
+        <figure>
+          <img src="https://scr3.golem.de/screenshots/1911/Threadripper-v3-Test/thumb620/04-adobe-lightroom-classic-cc-v9.0-(100x-150-mpix-dng-to-jpeg,-3333-pix,-sharpening)-chart.png"/>
+          <figcaption>RTX 2080 Super, 32 GB DDR4, Seasonic TX-1000, Win10 v1909, GF 441.20 (Bild: Golem.de)</figcaption>
+        </figure>
+        <figure>
+          <img src="https://scr3.golem.de/screenshots/1911/Threadripper-v3-Test/thumb620/05-adobe-premiere-pro-cc-v14.0.0-(wr-kw1018,-youtube-4k-preset,-h.264,-cuda)-chart.png"/>
+          <figcaption>RTX 2080 Super, 32 GB DDR4, Seasonic TX-1000, Win10 v1909, GF 441.20 (Bild: Golem.de)</figcaption>
+        </figure>
+        <figure>
+          <img src="https://scr3.golem.de/screenshots/1911/Threadripper-v3-Test/thumb620/06-av1-encoding-(tears-of-steel,-dci-4k24-10b,-avt-av1-v0.7.0)-chart.png"/>
+          <figcaption>RTX 2080 Super, 32 GB DDR4, Seasonic TX-1000, Win10 v1909, GF 441.20 (Bild: Golem.de)</figcaption>
+        </figure>
+        <figure>
+          <img src="https://scr3.golem.de/screenshots/1911/Threadripper-v3-Test/thumb620/07-h.265-encoding-(netflix-narrator,-dci-4k60-10b,-x265-v3.2)-chart.png"/>
+          <figcaption>RTX 2080 Super, 32 GB DDR4, Seasonic TX-1000, Win10 v1909, GF 441.20 (Bild: Golem.de)</figcaption>
+        </figure>
+        <figure>
+          <img src="https://scr3.golem.de/screenshots/1911/Threadripper-v3-Test/thumb620/08-ue-v4.23.1-building-lighting-(infiltrator-demo,-preview-quality)-chart.png"/>
+          <figcaption>RTX 2080 Super, 32 GB DDR4, Seasonic TX-1000, Win10 v1909, GF 441.20 (Bild: Golem.de)</figcaption>
+        </figure>
+        <figure>
+          <img src="https://scr3.golem.de/screenshots/1911/Threadripper-v3-Test/thumb620/09-v-ray-next-benchmark-v4.10.07-chart.png"/>
+          <figcaption>RTX 2080 Super, 32 GB DDR4, Seasonic TX-1000, Win10 v1909, GF 441.20 (Bild: Golem.de)</figcaption>
+        </figure>
+        <figure>
+          <img src="https://scr3.golem.de/screenshots/1911/Threadripper-v3-Test/thumb620/10-y-cruncher-v0.7.8.9503-(5-billion-digits)-chart.png"/>
+          <figcaption>RTX 2080 Super, 32 GB DDR4, Seasonic TX-1000, Win10 v1909, GF 441.20 (Bild: Golem.de)</figcaption>
+        </figure>
+        <figure>
+          <img src="https://scr3.golem.de/screenshots/1911/Threadripper-v3-Test/thumb620/11-cinebench-r20-chart.png"/>
+          <figcaption>RTX 2080 Super, 32 GB DDR4, Seasonic TX-1000, Win10 v1909, GF 441.20 (Bild: Golem.de)</figcaption>
+        </figure>
+        <figure>
+          <img src="https://scr3.golem.de/screenshots/1911/Threadripper-v3-Test/thumb620/12-cinebench-r15-chart.png"/>
+          <figcaption>RTX 2080 Super, 32 GB DDR4, Seasonic TX-1000, Win10 v1909, GF 441.20 (Bild: Golem.de)</figcaption>
+        </figure>
+        <figure>
+          <img src="https://scr3.golem.de/screenshots/1911/Threadripper-v3-Test/thumb620/13-system-power-consumption-chart.png"/>
+          <figcaption>RTX 2080 Super, 32 GB DDR4, Seasonic TX-1000, Win10 v1909, GF 441.20 (Bild: Golem.de)</figcaption>
+        </figure>
+        <figure>
+          <img src="https://scr3.golem.de/screenshots/1911/Threadripper-v3-Test/thumb620/Threadripper-v3-01.jpg"/>
+          <figcaption>Threadripper 3970X (Bild: Marc Sauter/Golem.de)</figcaption>
+        </figure>
+        <figure>
+          <img src="https://scr3.golem.de/screenshots/1911/Threadripper-v3-Test/thumb620/Threadripper-v3-02.jpg"/>
+          <figcaption>Threadripper 3970X (Bild: Marc Sauter/Golem.de)</figcaption>
+        </figure>
+        <figure>
+          <img src="https://scr3.golem.de/screenshots/1911/Threadripper-v3-Test/thumb620/Threadripper-v3-03.jpg"/>
+          <figcaption>Threadripper 3970X (Bild: Marc Sauter/Golem.de)</figcaption>
+        </figure>
+        <figure>
+          <img src="https://scr3.golem.de/screenshots/1911/Threadripper-v3-Test/thumb620/Threadripper-v3-04.png"/>
+          <figcaption>Die Threadripper v3 nutzen fünf Chiplets. (Bild: AMD)</figcaption>
+        </figure>
+        <figure>
+          <img src="https://scr3.golem.de/screenshots/1911/Threadripper-v3-Test/thumb620/Threadripper-v3-05.png"/>
+          <figcaption>Ein I/O-Die wird mit vier CPU-Dies kombiniert. (Bild: AMD)</figcaption>
+        </figure>
+        <figure>
+          <img src="https://scr3.golem.de/screenshots/1911/Threadripper-v3-Test/thumb620/Threadripper-v3-06.png"/>
+          <figcaption>Diese Topology hilft unter Windows 10. (Bild: AMD)</figcaption>
+        </figure>
+        <figure>
+          <img src="https://scr3.golem.de/screenshots/1911/Threadripper-v3-Test/thumb620/Threadripper-v3-07.png"/>
+          <figcaption>Blockdiagramm der sTRX4-Plattform (Bild: AMD)</figcaption>
+        </figure>
+      </slideshow>
+      <p>Zusammengerechnet sind das 72 PCIe-Gen4-Lanes bei den Threadripper v3, wohingegen Intels X299-Plattform die gleiche Anzahl bei halber Geschwindigkeit aufweist, davon aber 24 PCIe-Gen3-Lanes am Chipsatz hängen, der wiederum nur per x4-Link mit der CPU kommuniziert. Kommen wir zu den Benchmarks.</p>
+      <h3>Intels i9 ist chancenlos</h3>
+      <p>Wir testen die Threadripper v3 auf einem Asus Zenith II Extreme (TRX40, Firmware v0601) sowie einem MSI Creator TRX40 (Firmware v112N1), die bisherigen Threadripper auf einem Asus Zenith Extreme (X399, Firmware v2001), den Ryzen 9 3950X auf einem Asus Crosshair VIII Hero (X570, Firmware v1105) und die Intel-Chips auf einem Asus Prime X299 Deluxe (Firmware v2002). Wir verwenden 32 GByte DDR4-Speicher, das Bild liefert eine Geforce RTX 2080 Super Founder's Edition. Unser Windows 10 v1909 liegt auf einer WD Black SN750, unser Ubuntu-Linux 19.10 auf einer Samsung 970 Evo Plus.</p>
+      <p>Beginnen wir mit einem der zumindest unter Windows 10 wichtigsten Punkte: Der Threadripper 2990WX wird vom Scheduler und von Software wie dem x265-Encoder als Chip mit vier NUMA-Nodes erkannt, was die Performance in einigen Fällen drastisch reduziert. Ein Threadripper 1950X ist dann trotz nur der Hälfte der Kerne schneller. Beim neuen Threadripper 3970X und Threadripper 3960X hingegen handelt es sich um Single-NUMA-Node-Designs, daher treten keine derartigen Leistungseinbrüche mehr auf.</p>
+      <p>Dort, wo alle Cores rechnen, schlägt der Threadripper 3970X den Threadripper 2990X bereits um satte 40 bis 50 Prozent, etwa in Blender, im Luxmark oder in y-Cruncher. Allerdings nutzen längst nicht alle Anwendungen die 32 Kerne und 64 Threads aus, beispielsweise die Unreal Engine 4 beim Erstellen der Lichtinformationen in der <a href="https://www.unrealengine.com/marketplace/en-US/slug/infiltrator-demo">Infiltrator-Demo</a>. Selbiges gilt für unsere AV1- und H.265-Encoding-Messungen, aber auch Adobe Premiere und Adobe Lightroom sowie 7-Zip. Hier steigt der Abstand auf teils 60 bis 70 Prozent, teils halbiert sich gar die Berechnungsdauer, weil der Windows-Scheduler nicht dazwischenfunkt.</p>
+      <slideshow>
+        <figure>
+          <img src="https://scr3.golem.de/screenshots/1911/Threadripper-v3-Test/thumb620/01-blender-v2.80-(classroom)-chart.png"/>
+          <figcaption>RTX 2080 Super, 32 GB DDR4, Seasonic TX-1000, Win10 v1909, GF 441.20 (Bild: Golem.de)</figcaption>
+        </figure>
+        <figure>
+          <img src="https://scr3.golem.de/screenshots/1911/Threadripper-v3-Test/thumb620/02-luxmark-v3.1-(complex,-c)-chart.png"/>
+          <figcaption>RTX 2080 Super, 32 GB DDR4, Seasonic TX-1000, Win10 v1909, GF 441.20 (Bild: Golem.de)</figcaption>
+        </figure>
+        <figure>
+          <img src="https://scr3.golem.de/screenshots/1911/Threadripper-v3-Test/thumb620/03-7-zip-v19.00-(5gb-compression,-lzma2-ultra,-aes-256)-chart.png"/>
+          <figcaption>RTX 2080 Super, 32 GB DDR4, Seasonic TX-1000, Win10 v1909, GF 441.20 (Bild: Golem.de)</figcaption>
+        </figure>
+        <figure>
+          <img src="https://scr3.golem.de/screenshots/1911/Threadripper-v3-Test/thumb620/04-adobe-lightroom-classic-cc-v9.0-(100x-150-mpix-dng-to-jpeg,-3333-pix,-sharpening)-chart.png"/>
+          <figcaption>RTX 2080 Super, 32 GB DDR4, Seasonic TX-1000, Win10 v1909, GF 441.20 (Bild: Golem.de)</figcaption>
+        </figure>
+        <figure>
+          <img src="https://scr3.golem.de/screenshots/1911/Threadripper-v3-Test/thumb620/05-adobe-premiere-pro-cc-v14.0.0-(wr-kw1018,-youtube-4k-preset,-h.264,-cuda)-chart.png"/>
+          <figcaption>RTX 2080 Super, 32 GB DDR4, Seasonic TX-1000, Win10 v1909, GF 441.20 (Bild: Golem.de)</figcaption>
+        </figure>
+        <figure>
+          <img src="https://scr3.golem.de/screenshots/1911/Threadripper-v3-Test/thumb620/06-av1-encoding-(tears-of-steel,-dci-4k24-10b,-avt-av1-v0.7.0)-chart.png"/>
+          <figcaption>RTX 2080 Super, 32 GB DDR4, Seasonic TX-1000, Win10 v1909, GF 441.20 (Bild: Golem.de)</figcaption>
+        </figure>
+        <figure>
+          <img src="https://scr3.golem.de/screenshots/1911/Threadripper-v3-Test/thumb620/07-h.265-encoding-(netflix-narrator,-dci-4k60-10b,-x265-v3.2)-chart.png"/>
+          <figcaption>RTX 2080 Super, 32 GB DDR4, Seasonic TX-1000, Win10 v1909, GF 441.20 (Bild: Golem.de)</figcaption>
+        </figure>
+        <figure>
+          <img src="https://scr3.golem.de/screenshots/1911/Threadripper-v3-Test/thumb620/08-ue-v4.23.1-building-lighting-(infiltrator-demo,-preview-quality)-chart.png"/>
+          <figcaption>RTX 2080 Super, 32 GB DDR4, Seasonic TX-1000, Win10 v1909, GF 441.20 (Bild: Golem.de)</figcaption>
+        </figure>
+        <figure>
+          <img src="https://scr3.golem.de/screenshots/1911/Threadripper-v3-Test/thumb620/09-v-ray-next-benchmark-v4.10.07-chart.png"/>
+          <figcaption>RTX 2080 Super, 32 GB DDR4, Seasonic TX-1000, Win10 v1909, GF 441.20 (Bild: Golem.de)</figcaption>
+        </figure>
+        <figure>
+          <img src="https://scr3.golem.de/screenshots/1911/Threadripper-v3-Test/thumb620/10-y-cruncher-v0.7.8.9503-(5-billion-digits)-chart.png"/>
+          <figcaption>RTX 2080 Super, 32 GB DDR4, Seasonic TX-1000, Win10 v1909, GF 441.20 (Bild: Golem.de)</figcaption>
+        </figure>
+        <figure>
+          <img src="https://scr3.golem.de/screenshots/1911/Threadripper-v3-Test/thumb620/11-cinebench-r20-chart.png"/>
+          <figcaption>RTX 2080 Super, 32 GB DDR4, Seasonic TX-1000, Win10 v1909, GF 441.20 (Bild: Golem.de)</figcaption>
+        </figure>
+        <figure>
+          <img src="https://scr3.golem.de/screenshots/1911/Threadripper-v3-Test/thumb620/12-cinebench-r15-chart.png"/>
+          <figcaption>RTX 2080 Super, 32 GB DDR4, Seasonic TX-1000, Win10 v1909, GF 441.20 (Bild: Golem.de)</figcaption>
+        </figure>
+        <figure>
+          <img src="https://scr3.golem.de/screenshots/1911/Threadripper-v3-Test/thumb620/13-system-power-consumption-chart.png"/>
+          <figcaption>RTX 2080 Super, 32 GB DDR4, Seasonic TX-1000, Win10 v1909, GF 441.20 (Bild: Golem.de)</figcaption>
+        </figure>
+        <figure>
+          <img src="https://scr3.golem.de/screenshots/1911/Threadripper-v3-Test/thumb620/Threadripper-v3-01.jpg"/>
+          <figcaption>Threadripper 3970X (Bild: Marc Sauter/Golem.de)</figcaption>
+        </figure>
+        <figure>
+          <img src="https://scr3.golem.de/screenshots/1911/Threadripper-v3-Test/thumb620/Threadripper-v3-02.jpg"/>
+          <figcaption>Threadripper 3970X (Bild: Marc Sauter/Golem.de)</figcaption>
+        </figure>
+        <figure>
+          <img src="https://scr3.golem.de/screenshots/1911/Threadripper-v3-Test/thumb620/Threadripper-v3-03.jpg"/>
+          <figcaption>Threadripper 3970X (Bild: Marc Sauter/Golem.de)</figcaption>
+        </figure>
+        <figure>
+          <img src="https://scr3.golem.de/screenshots/1911/Threadripper-v3-Test/thumb620/Threadripper-v3-04.png"/>
+          <figcaption>Die Threadripper v3 nutzen fünf Chiplets. (Bild: AMD)</figcaption>
+        </figure>
+        <figure>
+          <img src="https://scr3.golem.de/screenshots/1911/Threadripper-v3-Test/thumb620/Threadripper-v3-05.png"/>
+          <figcaption>Ein I/O-Die wird mit vier CPU-Dies kombiniert. (Bild: AMD)</figcaption>
+        </figure>
+        <figure>
+          <img src="https://scr3.golem.de/screenshots/1911/Threadripper-v3-Test/thumb620/Threadripper-v3-06.png"/>
+          <figcaption>Diese Topology hilft unter Windows 10. (Bild: AMD)</figcaption>
+        </figure>
+        <figure>
+          <img src="https://scr3.golem.de/screenshots/1911/Threadripper-v3-Test/thumb620/Threadripper-v3-07.png"/>
+          <figcaption>Blockdiagramm der sTRX4-Plattform (Bild: AMD)</figcaption>
+        </figure>
+      </slideshow>
+      <p>Zwischen dem 32-kernigen Threadripper 3970X und dem 24-kernigen Threadripper 3960X fällt die Differenz zumindest im Mittel relativ gering aus. Ein Drittel mehr Cores resultieren im besten Fall in gut einem Viertel mehr Leistung, oft aber beträgt die Differenz keine zehn Prozent. Intels neuer Core i9-10980XE ist im direkten Duell chancenlos, was bei 18 Kernen ein wenig verwundert. Einzig bei Adobe-Software hält er mit, hier dürften schlicht entsprechende Optimierungen den Ausschlag zugunsten des 10980XE geben. Selbst der 3.300 Euro teure <a href="https://www.golem.de/news/xeon-w-3175x-ausprobiert-schneller-als-ein-threadripper-zum-preis-von-zwei-1904-140290.html">Xeon W-3175X (Test)</a> mit 28 Cores macht unseren früheren Benchmarks zufolge übrigens keinen Stich gegen den Threadripper 3970X.</p>
+      <p>Unter Linux sind die Resultate noch eindeutiger als unter Windows 10: Hier schlägt bereits der 16-kernige Ryzen 9 3950X den 18-kernigen Core i9-10980XE durchweg, egal ob Compiling, Encoding oder Rendering, die beiden Threadripper v3 sind außer Reichweite. Um deren System überhaupt mit Linux starten zu können, mussten wir Boot-Option mce=off in der Kernel-Kommandozeile nutzen. Damit wird die Behandlung sogenannter Machine Check Exceptions deaktiviert - Probleme mit dem System konnten wir trotz der Option allerdings nicht feststellen.</p>
+      <table>
+        <tr>
+          <th/>
+          <th>SVT-AV1 (DCI-4K 10b)</th>
+          <th>x265 (DCI-4K 10b)</th>
+          <th>Blender v2.80 (Classroom)</th>
+          <th>GCC Compiling (Qt 5.12)</th>
+        </tr>
+        <tr>
+          <th>Threadripper 3970X</th>
+          <td>112 sec</td>
+          <td>135 sec</td>
+          <td>122 sec</td>
+          <td>141 sec</td>
+        </tr>
+        <tr>
+          <th>Threadripper 3960X</th>
+          <td>121 sec</td>
+          <td>142 sec</td>
+          <td>156 sec</td>
+          <td>149 sec</td>
+        </tr>
+        <tr>
+          <th>Ryzen 9 3950X</th>
+          <td>165 sec</td>
+          <td>164 sec</td>
+          <td>241 sec</td>
+          <td>188 sec</td>
+        </tr>
+        <tr>
+          <th>Core i9-10980XE</th>
+          <td>167 sec</td>
+          <td>185 sec</td>
+          <td>273 sec</td>
+          <td>213 sec</td>
+        </tr>
+        <tr>
+          <th>Core i9-7980XE</th>
+          <td>180 sec</td>
+          <td>197 sec</td>
+          <td>277 sec</td>
+          <td>224 sec</td>
+        </tr>
+      </table>
+      <p>Linux-Performance von Threadripper v3</p>
+      <p>Hinsichtlich der Leistungsaufnahme haben uns die Threadripper v3 positiv überrascht: Die komplette Plattform benötigt mit knapp 400 Watt unter CPU-Last kaum mehr als das System mit dem Threadripper 2990WX. Zwar haben die neuen Prozessoren nominell ein höheres Power-Budget, reizen diese aber nicht aus und der TRX40-Chip ist ebenfalls sparsamer als der X399. Damit weiter zum Resümee.</p>
+      <h3>Verfügbarkeit und Fazit</h3>
+      <p>AMD verkauft den Threadripper 3970X offiziell für 2.160 Euro und den Threadripper 3960X für 1.510 Euro. Die Verfügbarkeit der Prozessoren soll in den nächsten Wochen gegeben sein, angesichts der schlechten Liefersituation beim Ryzen 3950X und Ryzen 3900X sind wir diesbezüglich jedoch etwas skeptisch. Hauptplatinen wie das Asus Zenith II Extreme und das MSI Creator TRX40 kosten rund 750 Euro, was deutlich teurer ist als die (schlechter ausgestatteten) Vorgänger. Günstigere Platinen starten bei unter 500 Euro.</p>
+      <h4>Fazit</h4>
+      <p>Schon der 16-kernige <a href="https://www.golem.de/news/ryzen-9-3950x-im-test-amds-konkurrenzlose-16-kerne-1911-143929.html">Ryzen 9 3950X (Test)</a> ist mit Intels 18-kernigem <a href="https://www.golem.de/news/core-i9-10980xe-im-test-intel-rettet-sich-ueber-den-preis-1911-145162.html">Core i9-10980XE (Test)</a> nahezu gleichauf, die beiden Threadripper v3 sind daher mal eben eine eigene Liga: Der 24-kernige Threadripper 3960X ist unterm Strich fast 30 Prozent flotter, der 32-kernige Threadripper 3970X gleich 45 Prozent - denn in einigen Fällen rendert er doppelt so schnell wie der 10980XE.</p>
+      <p>Die 7-nm-Technik kombiniert mit der Zen-2-Architektur und dem Chiplet-Design macht die Threadripper v3 nicht nur äußerst flott, sondern auch kompatibler: Hatte der Scheduler unter Windows 10 beim Threadripper 2990WX und Threadripper 2970WX noch so seine Probleme, fällt dieses Ärgernis bei den neuen Prozessoren weg. Nutzer müssen daher nicht mehr befürchten, dass ein Ryzen 3950X trotz weniger Kerne eine höhere Leistung abliefert als ein Threadripper.</p>
+      <figure>
+        <video src="https://video.golem.de/download/23823?q=medium&amp;cpxl=0&amp;rd=rlmob_amp"/>
+      </figure>
+      <p>Neben der reinen Performance gefällt uns die TRX40-Plattform: Die setzt zwar auf den Sockel TR4+ und ist inkompatibel zu den älteren Threadrippern, wurde aber deutlich verbessert. Alle 72 Lanes arbeiten mit Gen4-Geschwindigkeit und die Anbindung zum Chipsatz hat die vierfache Bandbreite. Damit eignet sich die Plattform gut als Basis für viele Grafikkarten und NVMe-SSDs, zumal auch moderne mit PCIe Gen4 nicht ausgebremst werden. Intels X299-Systeme haben die gleiche Lane-Anzahl, aber die halbe Datenrate und meisten Bahnen sind über den schmalen x4-Link des Chipsatzes angebunden.</p>
+      <p>Wer sich also einen neuen HEDT-Rechner (Highend Desktop) zulegen möchte, für den führt kaum ein Weg an AMDs Threadripper v3 vorbei: Die Chips sind extrem schnell, dennoch effizient und können mit viel Speicher- sowie Storage-Kapazität verbunden werden. Die Plattform an sich ist dank PCIe Gen4 und nativem USB 3.2 Gen2 modern, auch 10-Gigabit-Ethernet und ax-WLAN alias Wi-Fi 6 gehören zur Ausstattung.</p>
+      <p>Und als wäre das nicht schon genug: Im Januar 2020 folgt der Threadripper 3990X, der erste HEDT-Prozessor mit 64 Kernen. Das ist mehr, als Intels beste Server-CPU derzeit aufweist und mehr, als für nächstes Jahr mit Cooper Lake und Ice Lake geplant ist.</p>
+    </article>
+  </body>
+</html>

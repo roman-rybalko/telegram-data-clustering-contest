@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://www.xda-developers.com/google-pay-tests-safetynet-status-protecting-online-purchases-pin/"/>
+    <meta property="og:site_name" content="XDA Developers"/>
+    <meta property="article:published_time" content="2019-11-22T15:06:00+00:00"/>
+    <meta property="og:title" content="Google Pay tests showing SafetyNet status on the home page and protecting Online Purchases with a PIN"/>
+    <meta property="og:description" content="The latest version of the Google Pay app tests showing a SafetyNet Attestation check on the home page and PIN protecting online purchases."/>
+  </head>
+  <body>
+    <article>
+      <h1>Google Pay tests showing SafetyNet status on the home page and protecting Online Purchases with a PIN</h1>
+      <address><time datetime="2019-11-22T15:06:00+00:00">22 Nov 2019, 15:06</time> by <a rel="author" href="https://www.xda-developers.com/author/mishaalrahman/" target="_blank">Mishaal Rahman</a></address>
+      <p>Google Pay is slowly becoming a full wallet replacement as it adds support for more forms of payment, more banks, and more card types. To satisfy financial institutions and protect users’ financial data, the Google Pay app uses the <a href="https://forum.xda-developers.com/apps/magisk/guide-magisk-troubleshooting-t3641417/post73145987#post73145987">SafetyNet</a> Attestation API to verify that the app isn’t running on a device with tampered software. Of course, <a href="https://forum.xda-developers.com/apps/magisk">Magisk root</a> is designed to bypass these checks, but the SafetyNet API checks aren’t static and users may accidentally install a mod or edit a file that causes the API to report a failure in attestation. Due to the way that Google Pay checks the SNet status, users may not know that their device no longer passes SNet until they actually go to make a payment. That could change in the near future, however, as the Google Pay app could add a built-in SafetyNet status checker on the home page.</p>
+      <p>
+        <i>
+          <b>An APK teardown can often predict features that may arrive in a future update of an application, but it is possible that any of the features we mention here may not make it in a future release. This is because these features are currently unimplemented in the live build and may be pulled at any time by the developers in a future build.</b>
+        </i>
+      </p>
+      <p>
+        <b>SafetyNet Checker</b>
+      </p>
+      <p>Back in July, we <a href="https://www.xda-developers.com/google-pay-safetynet-checker-pixel-4-face-authentication/">spotted strings</a> for a new attestation check notification in the Google Pay app. This feature is now fully functional in the latest version. Once it goes live, if your device fails the Attestation API check for whatever reason, you’ll see a message in the home tab that tells you your phone “can’t make contactless payments.” If you tap to “check software,” you’ll receive a more detailed message about why you can’t use Google Pay. For instance, I disabled MagiskHide on my rooted <a href="https://forum.xda-developers.com/pixel-2-xl">Pixel 2 XL</a> and received the following messages:</p>
+      <slideshow>
+        <figure>
+          <img src="https://www.xda-developers.com/files/2019/11/Google-Pay-SafetyNet-Checker-1.jpg"/>
+        </figure>
+        <figure>
+          <img src="https://www.xda-developers.com/files/2019/11/Google-Pay-SafetyNet-Checker-2.jpg"/>
+        </figure>
+      </slideshow>
+      <p>When this feature goes live, you can check your device’s SNet status in the Google Pay app beforehand, so you won’t be surprised at the counter when you can’t make a contactless payment. There are plenty of third-party apps on Google Play that can do this, not to mention Magisk Manager’s own built-in SafetyNet checker, but this is just one more way to check if your device passes.</p>
+      <p>
+        <b>PIN Protect Online Purchases</b>
+      </p>
+      <p>This next feature, which was first spotted by <a href="https://twitter.com/wongmjane/status/1182202109753614337">Jane Manchun Wong</a>, will allow you to toggle PIN protection for every online purchase you make using your <a href="https://support.google.com/accounts/answer/6164209?hl=en">Google Account PIN</a>. I was able to surface this setting, but even after entering my Google Account PIN, I was unable to keep this setting enabled through the Google Pay app.</p>
+      <figure>
+        <img src="https://www.xda-developers.com/files/2019/11/Google-Pay-Online-Purchases-Security-1.jpg"/>
+      </figure>
+      <p>As usual, these features aren’t yet accessible for the general public in the latest version of the app from Google Play. Once these features go live, we’ll let you know.</p>
+      <hr/>
+      <p>
+        <i>Thanks to PNF Software for providing us a license to use <a href="https://www.pnfsoftware.com/?aid=xdadev">JEB Decompiler</a>, a professional-grade reverse engineering tool for Android applications.</i>
+      </p>
+    </article>
+  </body>
+</html>

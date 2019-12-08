@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://www.cbronline.com/news/mit-soft-robotics"/>
+    <meta property="og:site_name" content="Computer Business Review"/>
+    <meta property="article:published_time" content="2019-11-22T12:53:58+00:00"/>
+    <meta property="og:title" content="MIT Soft Robotics Control Training Reduces Simulations From 30,000 to 400"/>
+    <meta property="og:description" content="MIT Researchers next month will detail a &quot;soft robots&quot; control and design training simulation that hugely outpaces traditional methods. MIT soft robotics..."/>
+  </head>
+  <body>
+    <article>
+      <h1>MIT Soft Robotics Control Training Reduces Simulations From 30,000 to 400</h1>
+      <h2>In future soft robots could be 3D printed with varying levels of stiffness…</h2>
+      <address>
+        <time datetime="2019-11-22T12:53:58+00:00">22 Nov 2019, 12:53</time>
+      </address>
+      <p>At the Conference on Neural Information Processing Systems in Vancouver next month MIT researchers will detail a soft robots control and design training simulation that beats traditional methods which can require 30,000 simulations, while the new approach needs only 400 simulations.</p>
+      <p>The field of soft robotics is somewhat new, but it could be instrumental in areas such as surgery where nano-scale robots are tasked with moving through our bodies internally without damaging soft tissue. Soft robots are typically made of elastic, highly pliable or even organic materials that open up opportunities for their deployment in roles for which conventional rigid robots are not viable.</p>
+      <p>They will also most likely become critical components in manufacturing and warehouse environments, with their flexibility.</p>
+      <p>The researchers at MIT have created a way to optimize the control and design of soft robots so that they can fulfil tasks that have proven difficult to complete in the past due to their heavy reliance on computational power.</p>
+      <p>Given that soft robots are extremely flexible and can stretch and manipulate their shapes, from a computational point of view this means that they have an infinite amount of ways to move; taxing for computers to programme.</p>
+      <p>Andrew Spielberg, first of author of the soft robot research and graduate at the Computer Science and Artificial Intelligence Laboratory (CSAIL) commented in a <a href="https://news.mit.edu/2019/model-design-control-robots-target-1122">blog</a>: “Soft robots are infinite-dimensional creatures that bend in a billion different ways at any given moment, but in truth, there are natural ways soft objects are likely to bend. We find the natural states of soft robots can be described very compactly in a low-dimensional description. We optimize control and design of soft robots by learning a good description of the likely states.”</p>
+      <figure>
+        <iframe src="https://www.youtube.com/embed/uuKyDTgyklI" width="1170" height="658" data-service="Youtube" scrolling="no"/>
+      </figure>
+      <h3>MIT Soft Robotics Learning-in-the-Loop Optimisation</h3>
+      <p>In order to train and develop applications for their soft robots the researchers created a simulation that trained 2D and 3D soft robotics to complete tasks like reaching an object and manipulating their form.</p>
+      <p>In the simulation a programme known as the ‘observer’ computes all the variables and oversees how well a soft robotic is completing its assigned task. Previously researchers had designed clusters of particles that held information that detailed the movement the robot could make, if the robot tried to move past those limitations it was overruled by the actuators resisting the movement. Yet manually setting all of these rules by hand is incredibly time consuming.</p>
+      <p>To get around this the researchers created a “learning-in-the-loop optimization” in which all parameters are learned over a single feedback loop within multiple simulations.</p>
+      <p>MIT notes: “The model employs a technique called a material point method (MPM), which simulates the behavior of particles of continuum materials, such as foams and liquids, surrounded by a background grid. In doing so, it captures the particles of the robot and its observable environment into pixels or 3D pixels, known as voxels, without the need of any additional computation.”</p>
+      <p>All of the information from the simulation is processed by machine learning which then creates a compressed low-dimensional representation of the particle grid that can then be used to serve as robot state representations. These can then be used by a controller to adjust the optimal stiffness of each particle optimising the robot’s movement. In future soft robots could be 3D printed with varying levels of stiffness designed for specific tasks.</p>
+      <figure>
+        <iframe src="https://www.youtube.com/embed/cwxl3957Ysc" width="1170" height="658" data-service="Youtube" scrolling="no"/>
+      </figure>
+      <related>
+        <a href="https://www.cbronline.com/news/revenue-and-benefits-system-open-source"/>
+      </related>
+      <related>
+        <h4>Related News</h4>
+        <a href="https://www.cbronline.com/news/half-life-alyx"/>
+        <a href="https://www.cbronline.com/news/revenue-and-benefits-system-open-source"/>
+        <a href="https://www.cbronline.com/news/5g-network-threats"/>
+      </related>
+    </article>
+  </body>
+</html>

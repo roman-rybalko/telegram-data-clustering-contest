@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://www.bleepingcomputer.com/news/security/the-week-in-ransomware-november-22nd-2019-leaky-files/"/>
+    <meta property="og:site_name" content="BleepingComputer"/>
+    <meta property="article:published_time" content="2019-11-22T23:57:26+00:00"/>
+    <meta property="og:title" content="The Week in Ransomware - November 22nd 2019 - Leaky Files"/>
+    <meta property="og:description" content="This week the biggest news was Maze Ransomware escalating the ransomware threat releasing a victim's stolen data because they did not pay the ransom."/>
+  </head>
+  <body>
+    <article>
+      <h1>The Week in Ransomware - November 22nd 2019 - Leaky Files</h1>
+      <address><time datetime="2019-11-22T23:57:26+00:00">22 Nov 2019, 23:57</time> by <a rel="author" href="https://www.bleepingcomputer.com/author/lawrence-abrams/" target="_blank">Lawrence Abrams</a></address>
+      <figure>
+        <img src="https://www.bleepstatic.com/content/hl-images/2018/09/21/cyber-lock.jpg"/>
+      </figure>
+      <p>This week the biggest news was Maze Ransomware escalating the ransomware threat releasing a victim's stolen data because they did not pay the ransom.</p>
+      <p>For years, various ransomware families and affiliates have been threatening to publicly release stolen data if a ransom is not paid, but never have never gone through with the threat. With <a href="https://www.bleepingcomputer.com/news/security/allied-universal-breached-by-maze-ransomware-stolen-data-leaked/">Maze's actions</a>, we may have reached another level where ransomware actors use the release of stolen data as leverage to get users to pay.</p>
+      <p>We have also seen more <a href="https://www.bleepingcomputer.com/news/security/louisiana-government-suffers-outage-due-to-ransomware-attack/">ransomware attacks in Louisiana</a>, a <a href="https://www.bleepingcomputer.com/news/security/buran-ransomware-infects-pcs-via-microsoft-excel-web-queries/">spam campaign pushing Buran</a>, and an alert from Microsoft saying that ransomware is <a href="https://www.bleepingcomputer.com/news/security/microsoft-warns-customers-of-doppelpaymer-ransomware-threat/">not being installed via Microsoft Teams</a>.</p>
+      <p>Other than that it has been mostly more releases of new variants of existing ransomware and decryptors released by Emsisoft.</p>
+      <p>Contributors and those who provided new ransomware information and stories this week include: <a href="https://twitter.com/fwosar">@fwosar</a>, <a href="https://twitter.com/malwareforme">@malwareforme</a>, <a href="https://twitter.com/jorntvdw">@jorntvdw</a>, <a href="https://twitter.com/demonslay335">@demonslay335</a>, <a href="https://twitter.com/DanielGallagher">@DanielGallagher</a>, <a href="https://twitter.com/FourOctets">@FourOctets</a>, <a href="https://twitter.com/LawrenceAbrams">@LawrenceAbrams</a>, <a href="https://twitter.com/Seifreed">@Seifreed</a>, <a href="https://twitter.com/BleepinComputer">@BleepinComputer</a>, <a href="https://twitter.com/malwrhunterteam">@malwrhunterteam</a>, <a href="https://twitter.com/struppigel">@struppigel</a>, <a href="https://twitter.com/PolarToffee">@PolarToffee</a>, <a href="https://twitter.com/serghei">@serghei</a>, <a href="https://twitter.com/VK_Intel">@VK_Intel </a>, <a href="https://twitter.com/Nyotron">@Nyotron</a>, <a href="https://twitter.com/y_advintel">@y_advintel</a>, <a href="https://twitter.com/IntelAdvanced">@IntelAdvanced</a>, <a href="https://twitter.com/Trustwave">@Trustwave</a>, <a href="https://twitter.com/GroupIB">@GroupIB</a>, <a href="https://twitter.com/killamjr">@killamjr</a>, <a href="https://twitter.com/siri_urz">@siri_urz</a>, <a href="https://twitter.com/DFNCERT">@DFNCERT</a>, <a href="https://twitter.com/raby_mr">@raby_mr</a>, <a href="https://twitter.com/emsisoft">@emsisoft</a>, <a href="https://twitter.com/John_Fokker">@John_Fokker</a>, and <a href="https://twitter.com/malwareforme">@malwareforme</a>.</p>
+      <h3>November 18th 2019</h3>
+      <h4>
+        <a href="https://www.bleepingcomputer.com/news/security/louisiana-government-suffers-outage-due-to-ransomware-attack/">Louisiana Government Suffers Outage Due to Ransomware Attack</a>
+      </h4>
+      <p>The state government of Louisiana was hit by a ransomware attack today that impacted numerous state services including the Office of Motor Vehicles, the Department of Health, and the Department of Transportion and Development.</p>
+      <h4>
+        <a href="https://www.bleepingcomputer.com/news/security/buran-ransomware-infects-pcs-via-microsoft-excel-web-queries/">Buran Ransomware Infects PCs via Microsoft Excel Web Queries</a>
+      </h4>
+      <p>A new spam campaign has been spotted distributing the Buran Ransomware through IQY file attachments. When opened, these Microsoft Excel Web Query attachments will execute a remote command that installs the ransomware onto a victim's computer.</p>
+      <figure>
+        <img src="https://www.bleepstatic.com/images/news/ransomware/b/buran/iqy-distribution/malspam.jpg"/>
+      </figure>
+      <h4>
+        <a href="https://twitter.com/demonslay335/status/1196420296691126272">New MBED and KODG Stop Djvu variants</a>
+      </h4>
+      <p><a href="https://twitter.com/demonslay335">Michael Gillespie</a> found new Stop Djvu ransomware variants that append the <b>.mbed </b>or <b>.kodg </b>extensions to encrypted files.</p>
+      <h4>
+        <a href="https://twitter.com/siri_urz/status/1196348832054939648">New SpartCript Ransomware</a>
+      </h4>
+      <p><a href="https://twitter.com/siri_urz">S!Ri</a> found the new SpartCript ransomware that appends the <b>.spartcrypt</b> extension to encrypted files. They should decide on a spelling.</p>
+      <figure>
+        <img src="https://www.bleepstatic.com/images/news/columns/week-in-ransomware/2019/november/22/spartcript.png"/>
+      </figure>
+      <h4>
+        <a href="https://twitter.com/DFNCERT/status/1196413696895049728">Jigsaw variant found in 1.4K hard-coded SMTP creds</a>
+      </h4>
+      <p>Germany's <a href="https://twitter.com/DFNCERT">DFN-CERT</a> found a Jigsaw Ransomware variant with 1.4K hardcoded SMTP credentials.</p>
+      <h3>November 19th 2019</h3>
+      <h4>
+        <a href="https://www.bleepingcomputer.com/news/security/critical-windows-update-spam-fails-at-delivering-ransomware/">Critical Windows Update Spam Fails at Delivering Ransomware</a>
+      </h4>
+      <p>A new spam campaign pretending to be a 'Critical Microsoft Windows Update' has been discovered that attempts to deliver the Cyborg Ransomware, but turns out to be an utter failure.</p>
+      <h4>
+        <a href="https://www.bleepingcomputer.com/news/security/shade-ransomware-is-the-most-actively-distributed-malware-via-email/">Shade Ransomware Is the Most Actively Distributed Malware via Email</a>
+      </h4>
+      <p>During the first half of 2019, the Shade Ransomware (also known as Troldesh) was the most actively distributed malware via malicious email phishing campaigns according to Singapore-based Group-IB security outfit.</p>
+      <h4>
+        <a href="https://twitter.com/raby_mr/status/1196688018574323712">New Kharma Dharma Ransomware variant</a>
+      </h4>
+      <p><a href="https://twitter.com/raby_mr">Raby</a> found a new variant of the Dharma Ransomware that appends the <b>.kharma </b>extension to encrypted files.</p>
+      <h4>New DeathRansom Ransomware</h4>
+      <p>GrujaRS found the new DeathRansom ransomware that appends the <b>.wctc </b>extension and drops a ransom note named <b>read_me.txt email</b>.</p>
+      <figure>
+        <img src="https://www.bleepstatic.com/images/news/ransomware/c/cryptomix/clop/apt/deathransom.png"/>
+      </figure>
+      <h4>
+        <a href="https://blog.emsisoft.com/en/34636/emsisoft-releases-new-decryptor-for-jigsaw-ransomware/">Emsisoft releases new decryptor for Jigsaw ransomware</a>
+      </h4>
+      <p><a href="https://twitter.com/emsisoft">Emsisoft</a> released a new decryptor for the Jigsaw Ransomware.</p>
+      <h3>November 20th 2019</h3>
+      <h4>
+        <a href="https://www.bleepingcomputer.com/news/security/microsoft-warns-customers-of-doppelpaymer-ransomware-threat/">Microsoft Warns Customers of DoppelPaymer Ransomware Threat</a>
+      </h4>
+      <p>The Microsoft Security Response Center (MSRC) warned customers of the threat behind ongoing DoppelPaymer ransomware attacks and reminded them about misleading info on how it spreads.</p>
+      <h4>
+        <a href="https://www.bleepingcomputer.com/news/security/ransomware-gangs-adopt-apt-tactics-in-targeted-attacks/">Ransomware Gangs Adopt APT Tactics in Targeted Attacks</a>
+      </h4>
+      <p>Ransomware operators are moving away from mass volume attacks and partnering with specialists who use APT techniques to provide stealthy infiltration and network-wide encryption capabilities.</p>
+      <h4>
+        <a href="https://twitter.com/demonslay335/status/1197186386136387586">New French Jigsaw Ransomware discovered</a>
+      </h4>
+      <p>Michael Gillespie found a new Jigsaw Ransomware targeting French users and appending the <b>.fun</b> extension.</p>
+      <figure>
+        <img src="https://www.bleepstatic.com/images/news/ransomware/c/cryptomix/clop/apt/EJ1CeO-X0AIymZU[1].png"/>
+      </figure>
+      <h3>November 21st 2019</h3>
+      <h4>
+        <a href="https://www.bleepingcomputer.com/news/security/allied-universal-breached-by-maze-ransomware-stolen-data-leaked/">Allied Universal Breached by Maze Ransomware, Stolen Data Leaked</a>
+      </h4>
+      <p>After a deadline was missed for receiving a ransom payment, the group behind Maze Ransomware has published almost 700 MB worth of data and files stolen from security staffing firm Allied Universal. We are told this is only 10% of the total files stolen and the rest will be released if a payment is not made.</p>
+      <h4>
+        <a href="https://www.bleepingcomputer.com/news/security/new-riplace-bypass-evades-windows-10-av-ransomware-protection/">New RIPlace Bypass Evades Windows 10, AV Ransomware Protection</a>
+      </h4>
+      <p>A new ransomware bypass technique called RIPlace requires only a few lines of code to bypass ransomware protection features built into many security products and Windows 10.​​​</p>
+      <figure>
+        <img src="https://www.bleepstatic.com/images/news/security/r/RIPlace/riplace-encrypting.jpg"/>
+      </figure>
+      <h4>
+        <a href="https://www.virusbulletin.com/virusbulletin/2019/11/vb2019-paper-different-ways-cook-crab-gandcrab-ransomware-service-raas-analysed-indepth/">VB2019 paper: Different ways to cook a crab: GandCrab ransomware-as-a-service (RaaS) analysed in depth</a>
+      </h4>
+      <p>McAfee's <a href="https://twitter.com/John_Fokker">John Fokker</a> and Alexandre Mundo Alguacil publish their in-depth analysis of the GandCrab Ransomware as a Service.</p>
+      <h4>
+        <a href="https://blog.emsisoft.com/en/34716/emsisoft-releases-a-new-decryptor-for-hakbit-ransomware/">Emsisoft releases a new decryptor for Hakbit ransomware</a>
+      </h4>
+      <p>We just released a new free decryption tool for the Hakbit ransomware strain. Hakbit has multiple confirmed victims, including home users and businesses in the United States and Europe.</p>
+      <h3>November 22nd 2019</h3>
+      <h4>
+        <a href="https://www.bleepingcomputer.com/news/security/clop-ransomware-tries-to-disable-windows-defender-malwarebytes/">Clop Ransomware Tries to Disable Windows Defender, Malwarebytes</a>
+      </h4>
+      <p>In order to successfully encrypt a victim's data, the Clop CryptoMix Ransomware is now attempting to disable Windows Defender as well as remove the Microsoft Security Essentials and Malwarebytes' standalone Anti-Ransomware programs.</p>
+      <figure>
+        <img src="https://www.bleepstatic.com/images/news/ransomware/c/cryptomix/clop/clop-ransom-note.jpg"/>
+      </figure>
+      <h4>
+        <a href="https://www.bleepingcomputer.com/news/security/fbi-warns-of-cyber-attacks-targeting-us-automotive-industry/">FBI Warns of Cyber Attacks Targeting US Automotive Industry</a>
+      </h4>
+      <p>The U.S. Federal Bureau of Investigation (FBI) Cyber Division warned private industry partners of incoming cyberattacks against the US automotive industry targeting sensitive corporate and enterprise data.</p>
+      <h4>
+        <a href="https://twitter.com/malwrhunterteam/status/1197867501432037376">New HiddenTear Ransomware found</a>
+      </h4>
+      <p><a href="https://twitter.com/malwrhunterteam">MalwareHunterTeam</a> found a new HiddenTear Ransomware variant.</p>
+      <figure>
+        <img src="https://www.bleepstatic.com/images/news/ransomware/c/cryptomix/clop/apt/hiddentear.jpg"/>
+      </figure>
+      <h4>
+        <a href="https://twitter.com/malwareforme/status/1197935663850459136">New TurkStatik Ransomware discovered</a>
+      </h4>
+      <p><a href="https://twitter.com/malwareforme">Jack</a> found a new ransomware called TurkStatik that appends the <b>.ciphered </b>extension to encrypted files and drops a Turkish language ransom note named <b>README_DONT_DELETE.txt</b>.</p>
+      <h4>
+        <a href="https://www.emsisoft.com/ransomware-decryption-tools/turkstatik">Emsisoft Decryptor for TurkStatik</a>
+      </h4>
+      <p>Now that was fast! Emsisoft released a decryptor for the TurkStatik Ransomware:</p>
+      <p>The TurkStatik ransomware targets Turkish victims and encrypts their files using Rijndael 256. It appends the ".ciphered" extension to the encrypted files.</p>
+      <h4>That's it for this week! Hope everyone has a nice weekend!</h4>
+    </article>
+  </body>
+</html>
