@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://arstechnica.com/information-technology/2019/11/google-will-pay-1-5-million-for-the-severest-android-exploits/"/>
+    <meta property="og:site_name" content="Ars Technica"/>
+    <meta property="article:published_time" content="2019-11-21T17:00:15+00:00"/>
+    <meta property="og:title" content="Google will pay $1.5 million for the most severe Android exploits"/>
+    <meta property="og:description" content="Big bump coincides with investments Google has poured into securing its Pixel phone."/>
+  </head>
+  <body>
+    <article>
+      <h1>Google will pay $1.5 million for the most severe Android exploits</h1>
+      <h2>Big bump coincides with investments Google has poured into securing its Pixel phone.</h2>
+      <address><time datetime="2019-11-21T17:00:15+00:00">21 Nov 2019, 17:00</time> by <a rel="author">Dan Goodin</a></address>
+      <p>Google will pay up to $1.5 million for the most severe hacks of its Pixel line of Android phones, a more than seven-fold increase over the previous top Android reward, the company said.</p>
+      <p>Effective immediately, Google will pay $1 million for a “full chain remote code execution exploit with persistence which compromises the Titan M secure element on Pixel devices,” the company said in a <a href="https://security.googleblog.com/2019/11/expanding-android-security-rewards.html">post published on Thursday</a>. The company will also pay $500,000 for exploits that exfiltrate data out of a Pixel or bypass its lock screen.</p>
+      <p>Google will offer a 50 percent bonus to any of its rewards if the exploit works on specific developer preview versions of Android. That means a critical Titan M hack on a developer preview could fetch $1.5 million, and a data exfiltration or lockcscreen bypass on a developer preview could earn $750,000, and so on. Previously, rewards for the most severe Android exploits topped out at $200,000 if they involved the <a href="https://source.android.com/security/trusty">trusted execution environment</a>—an independent OS within Android for handling payments, multi-factor authentication, and other sensitive functions—and $150,000 if they involved compromise only on the Android kernel.</p>
+      <h3>Putting Titan M to the test</h3>
+      <p>The big reward bump coincides with the investments Google has poured into securing the Pixel. The <a href="https://www.blog.google/products/pixel/titan-m-makes-pixel-3-our-most-secure-phone-yet/">Titan M</a> is a Google-designed chip that’s physically segregated from the main chipset of the device. In many respects, it’s analogous to the <a href="https://en.wikipedia.org/wiki/IOS#Secure_Enclave">Secure Enclave</a> in iPhones or the <a href="https://developer.arm.com/ip-products/security-ip/trustzone">TrustZone</a> in devices running an Arm processor. The Titan M is a mobile version of the <a href="https://cloud.google.com/blog/products/gcp/titan-in-depth-security-in-plaintext">Titan chip</a> Google introduced in 2017.</p>
+      <p>The Titan M carries out four core functions, including:</p>
+      <ul>
+        <li>Storing the last known safe version of Android to ensure hackers can’t cause the bootloader—which is the program that validates and loads Android when the phone turns on—to call a malicious or out-of-date version</li>
+        <li>Verifying the lock screen passcode or pattern, limiting the number of unsuccessful login attempts that can be made, and securing the device’s disk encryption key</li>
+        <li>Storing private keys and securing sensitive operations of third-party apps, such as those used to make payments</li>
+        <li>Preventing changes to the firmware unless a passcode or pattern is entered</li>
+      </ul>
+      <p>Titan M was first introduced in 2018 with the roll out of the Pixel 3. It’s also in the recently released Pixel 3a, and will also be included in the just-released Pixel 4. Pixel 2 models relied on a less robust <a href="https://www.blog.google/products/android-enterprise/how-pixel-2s-security-module-delivers-enterprise-grade-security/">dedicated tamper-resistant hardware security module</a>. In-the-wild exploits <a href="https://arstechnica.com/information-technology/2019/10/attackers-exploit-0day-vulnerability-that-gives-full-control-of-android-phones/">disclosed last month</a> were able to remotely execute malicious code on an array of Android phones, including the Pixel 1, Pixel 1 XL, Pixel 2, and Pixel 2 XL, but not the Pixel 3. The Titan M wasn't responsible for stopping that attack, however. Instead, the reason was that the Pixel 3 and 3a received Linux patches that the vulnerable Pixels had not.</p>
+      <p>In the four years since the <a href="https://www.google.com/about/appsecurity/android-rewards/">Android Security Rewards Program</a> was introduced, it has paid out more than $4 million from more than 1,800 reports. More than $1.5 million of that came in the past 12 months. The top reward this year was $161,337, which was paid to <a href="https://twitter.com/oldfresher">Guang Gong</a> of Qihoo 360 Technology’s Alpha Lab for a one-click remote code execution exploit chain on a Pixel 3. (Gong’s exploit received an additional $40,000 from the Chrome Rewards Program.)</p>
+      <p>The new rewards come almost three months after third-party exploit broker Zerodium started <a href="https://arstechnica.com/information-technology/2019/09/for-the-first-time-ever-android-0days-cost-more-than-ios-exploits/">paying $2.5 million for zero-day attacks compromising Android</a>, a 25-percent premium over comparable exploits for iOS. As tempting as it is to contrast the Zerodium’s top Android payouts to those from Google, don’t. The talent and amount of work required to develop a weaponized exploit for Zerodium are considerably higher than what Google demands, making for an apples-to-oranges comparison.</p>
+      <p><b>Update:</b> Security researcher Saleem Rashid makes a good case why Google's bump in rewards is significant, and in some important ways beats out prices paid by Zerodium:</p>
+      <figure>
+        <iframe data-src="https://twitter.com/saleemrash1d/status/1197588534519095296?ref_src=twsrc%5Etfw" data-embed-type="twitter-tweet" width="100%" height="0" data-service="Twitter" scrolling="no" nowide=""/>
+      </figure>
+      <figure>
+        <iframe data-src="https://twitter.com/saleemrash1d/status/1197590566705541121?ref_src=twsrc%5Etfw" data-embed-type="twitter-tweet" width="100%" height="0" data-service="Twitter" scrolling="no" nowide=""/>
+      </figure>
+      <related>
+        <h4>Further Reading</h4>
+        <a href="https://arstechnica.com/information-technology/2019/10/attackers-exploit-0day-vulnerability-that-gives-full-control-of-android-phones/"/>
+        <a href="https://arstechnica.com/information-technology/2019/09/for-the-first-time-ever-android-0days-cost-more-than-ios-exploits/"/>
+      </related>
+    </article>
+  </body>
+</html>

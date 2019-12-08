@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://www.forbes.com/sites/zakdoffman/2019/11/21/google-security-failure-2-billion-facebook-wechat-apps-at-risk-from-hackers-report/"/>
+    <meta property="og:site_name" content="Forbes"/>
+    <meta property="article:published_time" content="2019-11-21T00:00:00+00:00"/>
+    <meta property="og:title" content="New Google Android Alert: 2 Billion Facebook, WeChat Installs Contain Unpatched Security Threats"/>
+    <meta property="og:description" content="A &quot;shock&quot; new report claims security failures have led to billions of unpatched installs of famous apps from Google Play Store, putting Android users at risk."/>
+  </head>
+  <body>
+    <article>
+      <h1>New Google Android Alert: 2 Billion Facebook, WeChat Installs Contain Unpatched Security Threats</h1>
+      <address><time datetime="2019-11-21T00:00:00+00:00">21 Nov 2019</time> by <a rel="author">Zak Doffman</a></address>
+      <figure>
+        <img src="https://specials-images.forbesimg.com/imageserve/1014924650/960x0.jpg?fit=scale"/>
+        <figcaption>
+          <cite>Getty</cite>
+        </figcaption>
+      </figure>
+      <p>It takes a lot to surprise the information security community these days, but how about this: Facebook and WeChat—two of the most popular apps on Google’s Play Store, with more than 2 billion installs between them–are shipping with malicious security vulnerabilities onboard, at least according to a new <a href="http://research.checkpoint.com/long-known-vulnerabilities-in-high-profile-android-applications">report</a>. Researchers say they have found known threats from years ago that remain unpatched, meaning “hackers can alter posts on Facebook and read messages on WeChat.”The issue has been <a href="http://research.checkpoint.com/long-known-vulnerabilities-in-high-profile-android-applications">exposed</a> by the cybersecurity sleuths at Check Point. “There are dozens of vulnerabilities found every day,” Yaniv Balmas, Check Point’s head of cyber research, explains. “Some in apps, others in the shared code libraries reused within apps. Updating those libraries is a big deal—it’s hard to do. So we asked ourselves how many apps inside Google Play are using vulnerable libraries. We scraped Google Play to look for matches. The results were surprising. We expected some—but we found thousands of apps with known vulnerabilities. It’s a poor state of security. It shows the failure in the way Google plays gatekeeper.”</p>
+      <p>Google says it is now investigating the report. Meanwhile, Facebook disputes the findings—saying the vulnerabilities cannot be exploited by attackers. The initial Check Point report suggested Instagram was also vulnerable, but Facebook says this has now been patched. For its part, Check Point says the vulnerabilities do present a potential opening for an attack, pointing out that this is the tip of an iceberg, that there will be many more vulnerabilities buried within the countless libraries in use. And with recent successful attacks on social media and messaging platforms, this is a warning that will most likely resonate.</p>
+      <p>Check Point selected three known and patched vulnerabilities: <a href="https://nvd.nist.gov/vuln/detail/CVE-2015-8962">CVE-2014-8962</a> (2014), <a href="https://nvd.nist.gov/vuln/detail/CVE-2015-8271">CVE-2015-8271</a> (2015), <a href="https://nvd.nist.gov/vuln/detail/CVE-2016-3062">CVE-2016-3062</a> (2016), two of the issues are rated high-risk, the third is critical, and all three carry the potential threat of remote code execution (RCE). The team scanned the Play Store for those malicious code strains. The highest-profile vulnerable libraries and apps are detailed below. According to Check Point, this undermines “the perception that if a person constantly maintains the most up-to-date version of an application they are safe from hacker exploitation.”</p>
+      <figure>
+        <img src="https://specials-images.forbesimg.com/imageserve/5dd4e09ae0af7b0006b1c9ee/960x0.jpg?fit=scale"/>
+        <figcaption>
+          <cite>Check Point Research</cite>
+        </figcaption>
+      </figure>
+      <p>The team found malicious code inside more than 800 apps with more than 5 billion downloads between them—apps available on the Play Store at the time they were scanned earlier this year. Check Point has taken the issue to Google, which is investigating—the implication is that the problem has been overlooked because it’s hard to fix. But now the issue is in the public domain it can’t be ignored—the risk to users has increased significantly. Between 1 and 2 billion Android devices will have malicious code on their devices—code that provides a opening for an attack.</p>
+      <figure>
+        <img src="https://specials-images.forbesimg.com/imageserve/5dd4e0bd2c886a0007ec9176/960x0.jpg?fit=scale"/>
+        <figcaption>
+          <cite>Check Point Research</cite>
+        </figcaption>
+      </figure>
+      <p>All of the libraries themselves have been updated since the vulnerabilities were disclosed, essentially there are newer versions of those libraries that are patched, but those newer versions have not found their way into all the apps using the libraries. And, according to Check Point, this means that “threat actors can still execute code on the latest versions of the applications—despite the updates those mobile apps have pushed to people.”</p>
+      <figure>
+        <img src="https://specials-images.forbesimg.com/imageserve/5dd4e0dae0af7b0006b1c9f2/960x0.jpg?fit=scale"/>
+        <figcaption>
+          <cite>Check Point Research</cite>
+        </figcaption>
+      </figure>
+      <p>Fixing the issue isn’t easy, Balmas tells me. It’s resource-intensive for developers and for Google to enforce the required level of security could lead to disruption—the problem is that widespread. “If Google was much stricter,” he says, “there would be an impact, but then everybody would put in more effort. Facebook, for example, has the resources to fix this. They don’t because they don’t see the need.”</p>
+      <p>So are users genuinely at risk? “I think so, yes,” Balmas tells me. Exploitation is “not that easy,” it would take time to move from crashing an app to an RCE. “But we have thousands of vulnerable apps—some will be more trivial than others to exploit.” What he means is that with some effort this opens a backdoor. “The fact that apps do not update libraries, that they ship old vulnerable libraries to users, this is a problem.”</p>
+      <p>Check Point says it has disclosed its findings to all impacted vendors, that Google and Facebook have taken the issue away to explore further, that it is being taken seriously. "Check Point reached out to us about this issue and informed us that affected developers have been notified,” a Google spokesperson confirmed. “We are currently working to investigate their findings. Additionally, we recently <a href="https://android-developers.googleblog.com/2019/08/expanding-bug-bounties-on-google-play.html">expanded the scope</a> of our Google Play Security Reward Program to encourage further collaboration between app developers and the security community.”</p>
+      <p>A Facebook spokesperson told me “people using Facebook services are not vulnerable to any of the issues highlighted by Check Point due to the design of our systems that use this code." The company also confirmed to me that the Instagram vulnerability in the initial report relating to CVE-2016-3062 has been patched. WeChat developer Tencent was also approached for comments on this story, but had not responded at the time of publication.</p>
+      <p>For Balmas and the Check Point team, the issue they want to highlight is the concept, the gaping security hole, not the three specific vulnerabilities, not even the specific marquee apps. “I have done a lot of offensive research in my career,” Balmas says. “If you hired me to find a way into someone’s phone, I could look for a zero day—but that costs me time and resources. Instead, I look for low hanging fruit. This is low hanging fruit. I look for existing vulnerabilities. This is how offensive minds think.”</p>
+      <p>This issue, in reality, is more relevant for a targeted attack than a mass vulnerability. An attacker wanting to target an Android device can assume that device will be running at least one of the top marquee apps. Understanding the vulnerabilities within those apps and then working up an expanded exploit or a combination of exploits gives the attacker a way in, without having to start from scratch and identify a new zero-day. This is why the fact the issue impacts such ubiquitous apps presents such a risk. This is an attack vector that is right in Check Point’s focus area–sophisticated, often state-sponsored attackers targeting devices using mainstream vulnerabilities with sophisticated add-ons.</p>
+      <p>And so despite the marquee apps taking the headlines from this report, the issue is much wider. It points to gaping holes in the integrity of the app software supply chain. And, with the issue in the public domain, it becomes an invitation for threat actors to craft exploits. “There’s no easy solution for this,” Balmas warns. “Normally users can do this or that—but there's nothing a user can do here. They trust Google to do the gatekeeping, but it’s not happening. So what should they do? Not use Facebook or Instagram? No. You keep using them. Somebody or a lot of somebodies need to look at this, to build a better security process.”</p>
+      <p>The libraries housing these vulnerabilities are the low level worker bees of the system. The code inside these components is often open source or includes elements of open source—and these components will always be much harder to patch and update than the core apps themselves. This is supply chain risk. And while flagship app developers can ring fence libraries to prevent such code escaping their sand box, it’s better that the code isn’t allowed onto devices in the first place. Users might consider an antivirus app as an additional safeguard—beyond that, the issue needs fixing at source.</p>
+      <p>Check Point is clear where the failing lies, “it comes as a shock,” its report says, “when the app maintainers neglect to incorporate security fixes into their versions of popular components.” Check Point acknowledges that “keeping track of all security updates in all external components of a sophisticated mobile app is a tedious task,” but that’s not an acceptable excuse. “Can you imagine,” the team asks, “how many popular apps an attacker can target if he scans Google Play for a hundred known vulnerabilities?”</p>
+    </article>
+  </body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://www.bleepingcomputer.com/news/microsoft/microsoft-is-adding-dns-over-https-doh-to-windows-10/"/>
+    <meta property="og:site_name" content="BleepingComputer"/>
+    <meta property="article:published_time" content="2019-11-18T22:32:50+00:00"/>
+    <meta property="og:title" content="Microsoft Is Adding DNS-Over-HTTPS (DoH) to Windows 10"/>
+    <meta property="og:description" content="Microsoft announced that it's working on adding support for the privacy-focused DNS over HTTPS (DoH) protocol in a future Windows 10 release, while also keeping the addition of DNS over TLS (DoT) on the table."/>
+  </head>
+  <body>
+    <article>
+      <h1>Microsoft Is Adding DNS-Over-HTTPS (DoH) to Windows 10</h1>
+      <address><time datetime="2019-11-18T22:32:50+00:00">18 Nov 2019, 22:32</time> by <a rel="author" href="https://www.bleepingcomputer.com/author/sergiu-gatlan/" target="_blank">Sergiu Gatlan</a></address>
+      <figure>
+        <img src="https://www.bleepstatic.com/content/hl-images/2019/11/18/Windows_10_DoH_DNS-Over-HTTPS.jpg"/>
+      </figure>
+      <p>Microsoft announced that it's working on adding support for the privacy-focused DNS over HTTPS (DoH) protocol in a future Windows 10 release, while also keeping the addition of DNS over TLS (DoT) on the table.</p>
+      <p>DoH is designed to allow DNS resolution over encrypted HTTPS connections, while DoT encrypts and wraps DNS queries via the Transport Layer Security (TLS) protocol instead of using plain text DNS lookups.</p>
+      <p>By adding DoH to the Windows 10 Core Networking, Microsoft wants to boost its customers' security and privacy on the Internet by encrypting all the DNS queries they make and thus removing the plain-text domain names normally appearing in unsecured web traffic.</p>
+      <p>"There is an assumption by many that DNS encryption requires DNS centralization. This is only true if encrypted DNS adoption isn’t universal," Microsoft said.</p>
+      <p>"To keep the DNS decentralized, it will be important for client operating systems (such as Windows) and Internet service providers alike to widely adopt encrypted DNS."</p>
+      <h3>Microsoft DoH adoption principles</h3>
+      <p>Redmond is currently prioritizing the adoption of DoH in Windows 10 since it considers it the choice that will "provide immediate value to everyone," while it will also make it possible for the company to make use of already existing HTTPS infrastructure for faster DNS encryption rollout.</p>
+      <p>"As a platform, Windows Core Networking seeks to enable users to use whatever protocols they need, so we’re open to having other options such as DNS over TLS (DoT) in the future," Microsoft added.</p>
+      <p>The company also highlighted the following principles it used to decide exactly what DNS encryption protocol support to built within Windows 10 as well as the way to configure it:</p>
+      <p>• <b>Windows DNS needs to be as private and functional as possible by default without the need for user or admin configuration because Windows DNS traffic represents a snapshot of the user’s browsing history.</b> To Windows users, this means their experience will be made as private as possible by Windows out of the box. For Microsoft, this means we will look for opportunities to encrypt Windows DNS traffic without changing the configured DNS resolvers set by users and system administrators.<br/>• <b>Privacy-minded Windows users and administrators need to be guided to DNS settings even if they don't know what DNS is yet.</b> Many users are interested in controlling their privacy and go looking for privacy-centric settings such as app permissions to camera and location but may not be aware of or know about DNS settings or understand why they matter and may not look for them in the device settings.<br/>• <b>Windows users and administrators need to be able to improve their DNS configuration with as few simple actions as possible.</b> We must ensure we don't require specialized knowledge or effort on the part of Windows users to benefit from encrypted DNS. Enterprise policies and UI actions alike should be something you only have to do once rather than need to maintain.<br/>• <b>Windows users and administrators need to explicitly allow fallback from encrypted DNS once configured.</b> Once Windows has been configured to use encrypted DNS, if it gets no other instructions from Windows users or administrators, it should assume falling back to unencrypted DNS is forbidden.</p>
+      <h3>The first milestone</h3>
+      <p>As part of the first step to implementing DoH in Windows 10, Microsoft will automatically encrypt DNS queries for users if the DNS resolvers they use come with support for encryption over HTTPS.</p>
+      <p>However, Redmond also says that it will not change the DNS servers on any Windows 10 devices, leaving it to the users and the device or enterprise administrators to choose the DNS servers they want to use to resolve their DNS queries.</p>
+      <p>"Many people use ISP or public DNS content filtering to do things like block offensive websites," Microsoft <a href="https://techcommunity.microsoft.com/t5/Networking-Blog/Windows-will-improve-user-privacy-with-DNS-over-HTTPS/ba-p/1014229">says</a> while listing the benefits behind their chosen pathway to implementing Windows 10 DoH support.</p>
+      <p>"Silently changing the DNS servers trusted to do Windows resolutions could inadvertently bypass these controls and frustrate our users. We believe device administrators have the right to control where their DNS traffic goes."</p>
+      <p>They list the following advantages users and admins will get after the initial DoH support milestone is reached:</p>
+      <p>• <b>We will not be making any changes to which DNS server Windows was configured to use by the user or network.</b> Today, users and admins decide what DNS server to use by picking the network they join or specifying the server directly; this milestone won’t change anything about that. <br/>• <b>Many users and applications that want privacy will start getting the benefits without having to know about DNS. </b>In line with principle 1, the DNS queries become more private with no action from either apps or users. When both endpoints support encryption, there’s no reason to wait around for permission to use encryption!<br/>• <b>We can start seeing the challenges in enforcing the line on preferring resolution failure to unencrypted fallback. </b>In line with principle 4, this DoH use will be enforced so that a server confirmed by Windows to support DoH will not be consulted via classic DNS. If this preference for privacy over functionality causes any disruption in common web scenarios, we’ll find out early.</p>
+      <p> As part of future milestones, Windows 10 users and admins will also be able to set up DoH servers explicitly using a dedicated interface within the Windows DNS settings.</p>
+      <p>"Why announce our intentions in advance of DoH being available to Windows Insiders? With encrypted DNS gaining more attention, we felt it was important to make our intentions clear as early as possible," Microsoft concluded.</p>
+      <p>"We don’t want our customers wondering if their trusted platform will adopt modern privacy standards or not."</p>
+    </article>
+  </body>
+</html>

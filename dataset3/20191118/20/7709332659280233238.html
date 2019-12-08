@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://css-tricks.com/the-kind-of-development-i-like/"/>
+    <meta property="og:site_name" content="CSS-Tricks"/>
+    <meta property="article:published_time" content="2019-11-18T20:39:31+00:00"/>
+    <meta property="og:title" content="The Kind of Development I Like"/>
+    <meta property="og:description" content="I'm turning 40 next year (yikes!) and even though I've been making websites for over 25 years, I feel like I'm finally beginning to understand the kind of"/>
+  </head>
+  <body>
+    <article>
+      <h1>The Kind of Development I Like</h1>
+      <address>
+        <time datetime="2019-11-18T20:39:31+00:00">18 Nov 2019, 20:39</time>
+      </address>
+      <p>I'm turning 40 next year (yikes!) and even though I've been making websites for over 25 years, I feel like I'm finally beginning to understand the kind of development I like. Expectedly, these are not new revelations and my views can be summed up by two older Computer Science adages that pre-date my career.</p>
+      <ol>
+        <li>Composition over inheritance</li>
+        <li>Convention over configuration</li>
+      </ol>
+      <p>Allow me to take you on a short journey. In modern component-driven web development, I often end up with or see structures like this:</p>
+      <pre>&lt;ComponentA&gt; <br/>  &lt;ComponentB&gt; <br/>    &lt;ComponentC /&gt; <br/>  &lt;/ComponentB&gt; <br/>&lt;/ComponentA&gt;</pre>
+      <p>Going down this route is a system where everything is nested child components and props or data are passed down from parent components. It works, but for me, it zaps the fun out of programming. It feels more like plumbing than programming.</p>
+      <p>Seeing Mozilla's new <a href="https://blog.mozvr.com/introducing-ecsy/">ECSY framework</a> targeted at 2D games and 3D virtual reality scenes, I immediately found myself gravitating towards its programming model where Components chain their behaviors onto objects called Entities.</p>
+      <pre>EntityA <br/>  .addComponent('ComponentA') <br/>  .addComponent('ComponentB')</pre>
+      <p>Hey! That looks like a chained jQuery method. I like this and not just for nostalgia's sake. It's the "composition" of functionality that I like. I know CSS is fraught with inheritance problems, but it reminds me of adding well-formed CSS classes. I gravitate towards that. Knowing I personally favor composition actually helped me resolve some weird inconsistent feelings on why I genuinely like React Hooks (composition) even though I'm not particularly fond of the greater React ecosystem (inheritance).</p>
+      <p>I think I must confess and apologize for a lot of misplaced anger at React. As a component system, it's great. I used it on a few projects but never really bonded with it. I think I felt shame that I didn't enjoy this very popular abstraction and felt out of sync with popular opinion. Now I think I understand more about why.</p>
+      <p>I should apologize to webpack too. As a bundling and tree shaking tool, it does a great job. It's even better when all the configuration is hidden inside tools like Angular CLI and Nuxt. My frustrations were real, but as I learn more about myself, I realized it might be something else...</p>
+      <p>My frustrations with modern web development have continued to tumble downwards in levels of abstraction. I now think about npm and wonder if it's somewhat responsible for some of the pain points of modern web development today. Fact is, npm is a server-side technology that we've co-opted on the client and I think we're feeling those repercussions in the browser.</p>
+      <p>The Unix Philosophy encourages us to write small micro libraries that do one thing and do it well. The Node.js Ecosystem did this in spades. This works great on the server where importing a small file has a very small cost. On the client, however, this has enormous costs. So we build processes and tools to bundle these 46,000 scripts together. But that obfuscates the end product. It's not uncommon that a site could be using <code>fetch</code>, <code>axios</code>, and <code>bluebird</code> all at the same time and all of <code>lodash</code> just to write a <code>forEach</code> loop.</p>
+      <p>In an "<code>npm install</code> your problems away" world, I feel like we do less programming and more configuring things we installed from the Internet. As dependencies grow in features and become more flexible, they allow you to configure some of the option flags. As a one-off, configs are a great feature. But cumulatively, even on a "simple" project, I can find myself managing and battling over a half dozen config files. One day while swimming in a sea of JSON configs it dawned on me: I don't like configuration.</p>
+      <p><i>"Convention over configuration"</i> was a set of ideals popularized by David Heinemeier Hansson (<a href="https://twitter.com/dhh">@DHH</a>) and it guided a lot of the design of Ruby on Rails. While the saying has waned in popularity some, I think it sums up the kind of development I like, especially when frameworks are involved. Frameworks should try to be a collection of best practices, to save others from having to overthink decisions. I've said it before, but <a href="https://daverupert.com/2019/07/what-i-like-about-vue/">I think Nuxt does this really well</a>. When I step into a system of predefined conventions and minor configuration, I'm much happier than the opposite system of no conventions and lots of configuration.</p>
+      <p>It's a little weird to be turning 40 and discovering so much about the job I do on a daily basis. But it's nice to have found some vocabulary and principles for what I like about development. Your list of things you like may be different than mine and that's a good thing. I'd love to know more about the kind of development you like. What do you like to build? What are you optimizing for? What is your definition of success?</p>
+    </article>
+  </body>
+</html>

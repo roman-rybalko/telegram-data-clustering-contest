@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://dtf.ru/hard/82526-kak-vyglyadit-red-dead-redemption-2-na-samyh-nizkih-nastroykah-grafiki"/>
+    <meta property="og:site_name" content="DTF"/>
+    <meta property="article:published_time" content="2019-11-19T15:35:08+00:00"/>
+    <meta property="og:title" content="Как выглядит Red Dead Redemption 2 на самых низких настройках графики"/>
+    <meta property="og:description" content="Прямиком из эпохи PS1."/>
+  </head>
+  <body>
+    <article>
+      <h1>Как выглядит Red Dead Redemption 2 на самых низких настройках графики</h1>
+      <address><time datetime="2019-11-19T15:35:08+00:00">19 Nov 2019, 15:35</time> by <a rel="author">Artyom Kaleev</a></address>
+      <p>Прямиком из эпохи PS1.</p>
+      <p>Red Dead Redemption 2 на ПК <a href="https://dtf.ru/hard/79697-poyavilis-pervye-testy-proizvoditelnosti-red-dead-redemption-2-na-pk">оказалась</a> довольно требовательной — даже флагманские видеокарты не «тянут» игру в 4К и 60 fps. Впрочем, как в случае и с GTA V, ничто не мешает заглянуть в конфигурационные файлы и настроить графику, местами преобразив её до неузнаваемости.</p>
+      <p>Этим и занялись каналы <a href="https://youtu.be/lSpGV5bEr4k">LowSpecGamer</a> и <a href="https://youtu.be/rKZ41SO9tQQ">GameSpot</a> в рамках рубрики Potato Mode. Выбрали главное из их роликов с экспериментами над картинкой RDR 2.</p>
+      <figure>
+        <img src="https://leonardo.osnova.io/c6b1434b-ddfb-938b-f581-e1f841f8e642/"/>
+      </figure>
+      <p>Все манипуляции с конфигом производились по следующему пути:</p>
+      <p>Документы/Rockstar Games/Red Dead Redemption 2/Settings/system.xml</p>
+      <p>В Red Dead Redemption 2 очень много графических опций, однако далеко не все из них можно занизить до минимума в настройках самой игры.</p>
+      <p>К примеру, отражения в воде: если заменить значение нужной строчки (указана в описании под скриншотом) на false, то объекты близ рек больше не будут видны на водной глади.</p>
+      <figure>
+        <img src="https://leonardo.osnova.io/6b8ea7b7-cfae-ba6a-a7ab-219ae7766e5a/"/>
+        <figcaption>&lt;waterReflectionSSR value="false" /&gt;</figcaption>
+      </figure>
+      <p>Самый низкий показатель настроек, при которых трава всё ещё прогружается — 0. Если прописать в строчке -1, то она пропадает совсем.</p>
+      <figure>
+        <img src="https://leonardo.osnova.io/1b8c446c-f153-08c4-d11b-42ed62d7e0d0/"/>
+      </figure>
+      <p>LowSpecGamer попытался таким же образом снизить качество прорисовки транспорта — однако стоило прописать -1, и он пропадал из игры вообще. На повозки всё ещё можно было сесть, но игра будто бы перестала их рендерить.</p>
+      <figure>
+        <img src="https://leonardo.osnova.io/3cee8bf5-43a5-c5a0-8ec2-f3c5a1270e80/"/>
+      </figure>
+      <p>При изменении значения строчки, отвечающей за прорисовку персонажей, они превратились в треугольных низкополигональных существ. Это коснулось всех — игрока, NPC, даже лошадей.</p>
+      <figure>
+        <img src="https://leonardo.osnova.io/31cf3e27-fe4c-552b-c746-e8b49ed09e8b/"/>
+      </figure>
+      <figure>
+        <img src="https://leonardo.osnova.io/1b16b97d-5795-03b4-c8a4-2e4c3d728240/"/>
+      </figure>
+      <figure>
+        <img src="https://leonardo.osnova.io/f3cfc4f8-4843-0707-c155-c0d904e4dd34/"/>
+      </figure>
+      <p>Также персонажи переставали правильно держать объекты.</p>
+      <figure>
+        <img src="https://leonardo.osnova.io/705279c6-4cbf-120d-9dd9-2b5020ed0dbf/"/>
+      </figure>
+      <p>Причём, во время катсцен «даунгрейд» происходил не всегда — какие-то из персонажей сменяли модель, а какие-то нет. В итоге получились самые абсурдные ситуации.</p>
+      <figure>
+        <video src="https://giant.gfycat.com/AbsoluteNeighboringAnaconda.mp4" autoplay="" loop=""/>
+      </figure>
+      <figure>
+        <img src="https://leonardo.osnova.io/2bd0b07e-07e3-4f2b-fefd-e9e97b45c269/"/>
+      </figure>
+      <p>А в тот момент, когда катсцена заканчивается, можно заметить, как «качественная» модель меняется обратно на треугольную. При нормальных условиях в игре, скорее всего, тоже так происходит — просто игрок этого не замечает.</p>
+      <figure>
+        <video src="https://giant.gfycat.com/AllWildBurro.mp4" autoplay="" loop=""/>
+      </figure>
+      <p>Также полигональная модель пропадала при переходе в фоторежим. Причём, в нём у Артура почему-то приподнималась шляпа.</p>
+      <figure>
+        <video src="https://giant.gfycat.com/ColorlessImprobableHomalocephale.mp4" autoplay="" loop=""/>
+      </figure>
+      <p>Если выставить значение -1 в строчке качества прорисовки, то тогда поверхность мира перестаёт рендериться. Как и в случае с повозками, в таком виде Red Dead Redemption 2 уже вряд ли играбельна.</p>
+      <figure>
+        <img src="https://leonardo.osnova.io/7d6e8e90-aea7-25e9-c3b7-620c2bb4b577/"/>
+      </figure>
+      <p>А если оставить значение повыше, то зеркала начинают отрисовываться вот так. Похоже, окружение в отражении просто перестаёт рендериться.</p>
+      <figure>
+        <img src="https://leonardo.osnova.io/1276b647-9f76-eb7d-9b26-8b1b05c88cf4/"/>
+      </figure>
+      <figure>
+        <img src="https://leonardo.osnova.io/25876d00-844f-81fe-ed49-b07865478e19/"/>
+      </figure>
+      <p>Самое любопытное, что игра крашится, стоит написать значение меньше 0.75 — однако с -1 и ниже она уже начинает работать. Правда, без игрового мира.</p>
+      <p>А если в таком состоянии попытаться поездить по земле, то будут видны эффекты — например, «пробуксовывание» повозки.</p>
+      <figure>
+        <video src="https://giant.gfycat.com/RaggedCostlyFanworms.mp4" autoplay="" loop=""/>
+      </figure>
+      <p>Далее LowSpecGamer начал смотреть на производительность игры с ПК, характеристики которого далеко за гранью минимальных. Те настройки, без которых играть уже становится трудно — та же прорисовка карет или поверхности, — блогер не менял.</p>
+      <p>Процессор — двухядерный Athlon 200GE, с интегрированным видеочипом Vega 3. Внутриигровое разрешение же было выставлено на 720p с масштабированием до 50 процентов.</p>
+      <p>В итоге RDR 2 была на удивление играбельной — fps держался в районе 30 всё время, даже в перестрелках.</p>
+      <figure>
+        <video src="https://giant.gfycat.com/ConcernedFreeGuanaco.mp4" autoplay="" loop=""/>
+        <figcaption>Правда, вряд ли с таким разрешением получится нормально прицеливаться</figcaption>
+      </figure>
+      <p>LowSpecGamer отметил, что на данный момент вряд ли подобные манипуляции с конфигом помогут тем, кто хочет оптимизировать RDR 2 для своего ПК — потому что очень много настроек (вроде прогрузки теней) скрыты в файлах. А в таком виде, как на картинках выше, игру вряд ли кто-то захочет пробовать.</p>
+      <p>Скорее всего, ситуация изменится с появлением первых утилит для моддинга, и ждать их долго не придётся.</p>
+    </article>
+  </body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://venturebeat.com/2019/11/19/microsoft-announces-confidential-computing-for-kubernetes-ipv4-ipv6-dual-stack-and-keda-1-0/"/>
+    <meta property="og:site_name" content="VentureBeat"/>
+    <meta property="article:published_time" content="2019-11-19T18:15:10+00:00"/>
+    <meta property="og:title" content="Microsoft announces Confidential Computing for Kubernetes, IPv4/IPv6 dual-stack, and KEDA 1.0"/>
+    <meta property="og:description" content="At KubeCon North America, Microsoft announced Confidential Computing for Kubernetes, IPv4/IPv6 dual-stack support, and the release of KEDA 1.0."/>
+  </head>
+  <body>
+    <article>
+      <h1>Microsoft announces Confidential Computing for Kubernetes, IPv4/IPv6 dual-stack, and KEDA 1.0</h1>
+      <address><time datetime="2019-11-19T18:15:10+00:00">19 Nov 2019, 18:15</time> by <a rel="author" href="https://venturebeat.com/author/emil-protalinski/" target="_blank">Emil Protalinski</a></address>
+      <p>At KubeCon North America in San Diego today, Microsoft announced several <a href="https://venturebeat.com/2018/05/06/kubernetes-and-microservices-a-developers-movement-to-make-the-web-faster-stable-and-more-open/">Kubernetes</a> updates. The company is bringing Confidential Computing to Kubernetes, supporting both IPv4 and IPv6 addresses for the same Pods; releasing KEDA 1.0; and debuting Azure Event Grid support for CloudEvents 1.0.</p>
+      <p>Kubernetes is an open source container-orchestration system for automating application deployment, scaling, and management. At Kubecon EU in May, Microsoft <a href="https://venturebeat.com/2019/05/21/microsoft-service-mesh-interface-visual-studio-code-kubernetes-extension-virtual-kubelet/">launched the Service Mesh Interface (SMI) specification</a>, its new community project for collaboration around Service Mesh infrastructure. While the announcements today are more iterative, they’re still relevant for developers, IT pros, and businesses investing in their infrastructure.</p>
+      <h3>Confidential Computing</h3>
+      <p>Confidential Computing for Kubernetes helps secure the entire supply chain via Kubernetes. It is complementary to projects like gVisor and Firecracker, which handle security for sensitive workloads at a higher level. Furthermore, confidential computing lets organizations protect integrity while data is processed in the public cloud. This means sensitive data remains confidential for scenarios ranging from line of business workloads, such as payments processing, to novel workloads, such as multi-party machine learning for medical research.</p>
+      <p>Trusted Execution Environments (TEEs) or “enclaves” are a hardware-backed secure execution environment that can ensure processes and their memory are secure while they execute. Microsoft is bringing TEEs to Kubernetes via the Open Enclave SDK. The company is also releasing the Open Enclave Kubernetes device plugin (in alpha) that makes Encrypted Page Cache RAM a resource that the Kubernetes scheduler can use for scheduling decisions.</p>
+      <p>The Open Enclave SDK allows you to verifiably guarantee that your data, secrets, and code are isolated by the hardware itself. Kubernetes developers who want to enable data confidentiality for their workloads can use the Open Enclave SDK inside their containers now. This means that pods in these clusters can use the SDK inside containers to create TEEs and leverage the benefits of confidential hardware for their computation. Microsoft donated the Open Enclave SDK to the <a href="https://confidentialcomputing.io/">Confidential Compute Consortium</a>, a community effort under the Linux Foundation to secure data in use.</p>
+      <p>The Open Enclave Kubernetes device plugin allows Kubernetes app developers to use hardware-backed TEEs to ensure that their processes and data are secure, even during execution. The number of enclaves on a CPU is limited, and the plugin ensures that Pods that need enclaves will be guaranteed to land on a node with an enclave available.</p>
+      <h3>IPv4/IPv6 dual-stack, KEDA 1.0, and more</h3>
+      <p>Next up, <a href="https://kubernetes.io/docs/concepts/services-networking/dual-stack/">IPv4/IPv6 dual-stack</a> is now in alpha with Kubernetes 1.16, allowing Kubernetes Pods and Services to utilize both IPv4 and IPv6 IP addressing simultaneously. This lets developers provide larger blocks of contiguous IPv6 address space and present services via both IPv4 and IPv6 addressing.</p>
+      <p>The Kubernetes Event-Driven Autoscaler (<a href="https://venturebeat.com/2019/05/06/microsoft-and-red-hat-launch-kubernetes-autoscaling-project/">KEDA</a>) is an open source collaboration between Azure Functions, Red Hat, and others. KEDA has now hit the 1.0 milestone, meaning it is stable and ready for production use. Developers can scale apps to and from zero, and rapidly scale out based on the rate of events.</p>
+      <p>In related news, the Cloud Native Compute Foundation (CNCF) recently released CloudEvents 1.0. Microsoft has now added support for version 1.0 to Azure Event Grid. Last week, Microsoft released <a href="https://cloudblogs.microsoft.com/opensource/2019/11/13/helm-3-available-simpler-more-secure/">Helm 3.0</a> — Helm 3.0 alpha arrived at Kubecon EU. Arguably the biggest improvement is the removal of Tiller from the cluster, making Charts more Kubernetes native and more secure by default.</p>
+    </article>
+  </body>
+</html>

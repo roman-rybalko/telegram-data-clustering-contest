@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://www.zdnet.com/article/attackers-using-whatsapp-vulnerability-triggered-by-video-files-can-remotely-execute-code/"/>
+    <meta property="og:site_name" content="ZDNet"/>
+    <meta property="article:published_time" content="2019-11-18T09:56:03+00:00"/>
+    <meta property="og:title" content="Attackers using WhatsApp MP4 video files vulnerability can remotely execute code"/>
+    <meta property="og:description" content="The buffer overflow flow bug has been disclosed by Facebook."/>
+  </head>
+  <body>
+    <article>
+      <h1>Attackers using WhatsApp MP4 video files vulnerability can remotely execute code</h1>
+      <address><time datetime="2019-11-18T09:56:03+00:00">18 Nov 2019, 09:56</time> by <a rel="author" href="https://www.zdnet.com/meet-the-team/us/charlie-osborne/" target="_blank">Charlie Osborne</a></address>
+      <p>
+        <b>The buffer overflow flow bug has been disclosed by Facebook.</b>
+      </p>
+      <figure>
+        <video src="https://techrepublicmedia.akamaized.net/media/2019/06/12/1536278083596/2019-06-12-wochit-apple-and-whatsapp-fight-proposal-to-let-spies-tap-encrypted-comms_1872219_740.mp4"/>
+      </figure>
+      <figure>
+        <img src="https://zdnet3.cbsistatic.com/hub/i/r/2019/06/12/324321ed-6f63-46b6-b022-32e8a0baab50/thumbnail/570x322/e5e76b9e5605890192cc5ffc5947f313/apple-and-whatsapp-fight-proposal-to-let-5cffa64d2f64e300c31f32af-1-jun-12-2019-19-53-11-poster.jpg"/>
+      </figure>
+      <p>Facebook has disclosed the existence of a severe vulnerability leading to remote code execution attacks in WhatsApp messaging software. <br/><br/>Last week, the technology giant said in <a href="https://www.facebook.com/security/advisories/cve-2019-11931">a security advisory</a> that the WhatsApp bug, tracked as <a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-11931">CVE-2019-11931</a>, is a stack-based buffer overflow issue which can be triggered by attackers sending crafted .MP4 video files to victims. </p>
+      <p>While there are not many technical details available, Facebook said that the problem was caused by how the encrypted messaging app parses .MP4 elementary stream metadata. <br/><br/>If exploited, the vulnerability can lead to denial-of-service (DoS) or remote code execution (RCE) attacks.  <br/><br/><b>See also: </b><a href="https://www.zdnet.com/article/whatsapp-vulnerabilities-puts-words-in-your-mouth-lets-hackers-tamper-with-text/">WhatsApp vulnerabilities 'put words in your mouth,' lets hackers take over conversations</a></p>
+      <p>WhatsApp versions prior to 2.19.274 on Android and iOS versions prior to 2.19.100 are affected. Business users of WhatsApp prior to 2.19.104 on Android and 2.19.100 on iOS are also susceptible to attack. <br/><br/>Enterprise Client versions prior to 2.25.3 and Windows Phone versions of WhatsApp including 2.18.368 and below are also impacted.</p>
+      <p>It is recommended that users update their software builds to mitigate the risk of exploit. However, there does not appear to be any reports of the vulnerability being actively exploited in the wild. <br/><br/>"WhatsApp is constantly working to improve the security of our service," a <a href="https://thehackernews.com/2019/11/whatsapp-hacking-vulnerability.html">Facebook spokesperson said</a>. "We make public reports on potential issues we have fixed consistent with industry best practices. In this instance, there is no reason to believe that users were impacted." <br/><br/><b>CNET: </b><a href="https://www.cnet.com/news/android-users-beware-146-bugs-found-in-pre-installed-apps/?ftag=CMG-01-10aaa1b">Android users beware: 146 bugs found in preinstalled apps</a> <br/><br/>WhatsApp has previously been central to a controversy relating to the Israeli company NSO Group, the makers of the Pegasus "lawful intercept" tool. In May, the WhatsApp team was made aware of a vulnerability used to <a href="https://www.zdnet.com/article/update-whatsapp-now-bug-lets-snoopers-put-spyware-on-your-phone-with-just-a-call/">deploy the spyware</a> on the handsets of WhatsApp users.  <br/><br/><b>TechRepublic: </b><a href="https://www.techrepublic.com/article/how-can-you-protect-yourself-from-hackers-an-ibm-social-engineer-offers-advice/?ftag=CMG-01-10aaa1b">How can you protect yourself from hackers? An IBM social engineer offers advice</a><br/><br/>In October, a cybersecurity researcher uncovered a double-free vulnerability, <a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-11932">CVE-2019-11932</a>, which could be used in attacks for compromising chat sessions, files, and messages.  <br/><br/>The security flaw could be triggered through a malicious application already installed on a target device or through the sending of a crafted, <a href="https://www.zdnet.com/article/whatsapp-vulnerability-exploited-through-malicious-gifs-to-hijack-chat-sessions/">malicious .GIF file</a>. If exploited, the bug could result in the remote execution of code and was patched in WhatsApp version 2.19.244.  <br/><br/>Another set of interesting vulnerabilities in the messaging app was disclosed by Check Point <a href="https://www.zdnet.com/article/whatsapp-vulnerabilities-puts-words-in-your-mouth-lets-hackers-tamper-with-text/">a month prior</a>. The set of bugs "could allow threat actors to intercept and manipulate messages sent in both private and group conversations," the researchers said, and could be weaponized to exploit group "quote" features, replies, and private messages. </p>
+      <h3>Previous and related coverage</h3>
+      <ul>
+        <li>
+          <a href="https://www.zdnet.com/article/recent-wave-of-hijacked-whatsapp-accounts-traced-back-to-voicemail-hacking/">Recent wave of hijacked WhatsApp accounts traced back to voicemail hacking</a>
+        </li>
+        <li>
+          <a href="https://www.zdnet.com/article/whatsapp-launches-fingerprint-security-lock-support-for-android-devices/">WhatsApp launches fingerprint security lock support for Android devices</a>
+        </li>
+        <li>
+          <a href="https://www.zdnet.com/article/whatsapp-vulnerability-exploited-through-malicious-gifs-to-hijack-chat-sessions/">WhatsApp vulnerability exploited through malicious GIFs to hijack chat sessions</a>
+        </li>
+      </ul>
+      <hr/>
+      <p><b>Have a tip?</b> Get in touch securely via WhatsApp | Signal at +447713 025 499, or over at Keybase: charlie0</p>
+      <hr/>
+    </article>
+  </body>
+</html>

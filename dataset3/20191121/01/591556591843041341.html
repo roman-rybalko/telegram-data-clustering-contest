@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://www.zdnet.com/article/microsoft-rebukes-rumors-that-microsoft-teams-is-being-used-in-ransomware-attacks/"/>
+    <meta property="og:site_name" content="ZDNet"/>
+    <meta property="article:published_time" content="2019-11-21T01:30:00+00:00"/>
+    <meta property="og:title" content="Microsoft rebukes rumors that Microsoft Teams is being used in ransomware attacks"/>
+    <meta property="og:description" content="Microsoft also knocks down rumor that hackers are using the BlueKeep exploit to install the DoppelPaymer ransomware."/>
+  </head>
+  <body>
+    <article>
+      <h1>Microsoft rebukes rumors that Microsoft Teams is being used in ransomware attacks</h1>
+      <address><time datetime="2019-11-21T01:30:00+00:00">21 Nov 2019, 01:30</time> by <a rel="author" href="https://www.zdnet.com/meet-the-team/us/catalin.cimpanu/" target="_blank">Catalin Cimpanu</a></address>
+      <p>
+        <b>Microsoft also knocks down rumor that hackers are using the BlueKeep exploit to install the DoppelPaymer ransomware.</b>
+      </p>
+      <figure>
+        <img src="https://zdnet2.cbsistatic.com/hub/i/2019/09/20/71154639-c01a-4477-87cb-bcbf979eb012/14015c28d4cf60f175d52523ea6656a3/istock-1061357610.jpg"/>
+        <figcaption>Getty Images/iStockphoto</figcaption>
+      </figure>
+      <p>In a statement published today, Microsoft has rebuffed rumors that its Microsoft Teams communication and collaboration platform is being used by cyber-criminal gangs to plant ransomware on enterprise networks.<br/><br/>Like all rumors, its origin is unknown, but this rumor began circulating online in early November after <a href="https://www.zdnet.com/article/ransomware-hits-spanish-companies-sparking-wannacry-panic/">several companies across Spain were infected with ransomware</a>. The rumor that Microsoft Teams was the infection point for the attacks was put forward online by Twitter accounts not involved in the official investigation, and was taken at face value by various Spanish news outlets, helping it gain more momentum, without any merit.</p>
+      <figure>
+        <iframe data-src="https://twitter.com/kampitofreak/status/1191739512810020864?ref_src=twsrc%5Etfw" data-embed-type="twitter-tweet" width="100%" height="0" data-service="Twitter" scrolling="no" nowide=""/>
+      </figure>
+      <p>"Microsoft has been investigating recent attacks by malicious actors using the Dopplepaymer ransomware," <a href="https://msrc-blog.microsoft.com/2019/11/20/customer-guidance-for-the-dopplepaymer-ransomware/">said Simon Pope</a>, Director of Incident Response at the Microsoft Security Response Center (MSRC).<br/><br/>"There is misleading information circulating about Microsoft Teams, along with references to RDP (BlueKeep), as ways in which this malware spreads," Pope added.<br/><br/>"Our security research teams have investigated and found no evidence to support these claims," the Microsoft exec said. "In our investigations we found that the malware relies on remote human operators using existing Domain Admin credentials to spread across an enterprise network."</p>
+      <p>Pope is referring here to a tactic where ransomware gangs gain access to one computer on a company's internal network through various methods, extract credentials for the local domain admin, and spread laterally to more computers, encrypting their data along the way.<br/><br/>Besides rejecting rumors that somehow Microsoft Teams was involved in the recent attacks, Pope also addressed a second set of rumors that has also been going around on social media and some tech news sites.</p>
+      <p>These second rumors claimed that cyber-criminals might have used the BlueKeep RDP vulnerability to install the DoppelPaymer ransomware, also in reference to the same attacks detected across Spain, and subsequent ones, such as those that hit Mexican state oil company PEMEX.</p>
+      <figure>
+        <iframe data-src="https://twitter.com/GossiTheDog/status/1197308096462442496?ref_src=twsrc%5Etfw" data-embed-type="twitter-tweet" width="100%" height="0" data-service="Twitter" scrolling="no" nowide=""/>
+      </figure>
+      <p>This is a first-of-its-kind move from the company. Microsoft has never until today issued such a stern statement to correct (such blatantly false) online rumors.<br/><br/>In hindsight, both rumors should have never caught on as they did, with some being repeated in some news media articles, and could have been easily disproved. <br/><br/>First, the DoppelPaymer ransomware is <a href="https://www.crowdstrike.com/blog/doppelpaymer-ransomware-and-dridex-2/">a version of the BitPaymer ransomware</a>, and, historically, has been exclusively distributed via the Dridex botnet or the Emotet botnets (or both).<br/><br/>Computers infected with either the Dridex or Emotet malware are in some cases used to provide ransomware gangs with manual access to companies' internal networks. Here, as Pope explained above, attackers extract credentials for the company's internal network to spread laterally to other systems and then install DoppelPaymer on as many systems as they can.<br/><br/>Second, all the attacks were the BlueKeep vulnerability was deployed had the end goal of installing a cryptocurrency miner, something that was made clear by the two researchers who spotted and investigated the initial BlueKeep attacks [<a href="https://doublepulsar.com/bluekeep-exploitation-activity-seen-in-the-wild-bd6ee6e599a6">1</a>, <a href="https://www.kryptoslogic.com/blog/2019/11/bluekeep-cve-2019-0708-exploitation-spotted-in-the-wild/">2</a>], and <a href="https://www.microsoft.com/security/blog/2019/11/07/the-new-cve-2019-0708-rdp-exploit-attacks-explained/">even Microsoft itself</a>.<br/><br/>There has yet to be a publicly documented case where BlueKeep has been used to install ransomware.<br/><br/>As security researcher Kevin Beaumont and Rapid7 Chief Data Scientist Bob Rudis have said on many occasions, most of the malicious RDP traffic today is RDP brute-force attacks -- where attackers try to guess the RDP connection password-- rather than BlueKeep-related exploitation traffic.</p>
+      <figure>
+        <iframe data-src="https://twitter.com/hrbrmstr/status/1197306672970108928?ref_src=twsrc%5Etfw" data-embed-type="twitter-tweet" width="100%" height="0" data-service="Twitter" scrolling="no" nowide=""/>
+      </figure>
+    </article>
+  </body>
+</html>

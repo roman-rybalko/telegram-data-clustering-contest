@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://css-tricks.com/how-do-you-remove-unused-css-from-a-site/"/>
+    <meta property="og:site_name" content="CSS-Tricks"/>
+    <meta property="article:published_time" content="2019-11-19T15:24:11+00:00"/>
+    <meta property="og:title" content="How Do You Remove Unused CSS From a Site?"/>
+    <meta property="og:description" content="Here's what I'd like you to know upfront: this is a hard problem. If you've landed here because you're hoping to be pointed at a tool you can run that"/>
+  </head>
+  <body>
+    <article>
+      <h1>How Do You Remove Unused CSS From a Site?</h1>
+      <p>Easily manage projects with <a href="https://synd.co/2JziuUL">monday.com</a></p>
+      <p>Here's what I'd like you to know upfront: <b>this is a hard problem.</b> If you've landed here because you're hoping to be pointed at a tool you can run that tells you exactly what CSS you can delete from your project, well... there are tools out there, but I'm warning you to be very careful with them because <a href="https://css-tricks.com/heres-the-thing-about-unused-css-tools/">none of them can ever tell you the complete story</a>.</p>
+      <p>I know what you want. You want to run the tool, delete what it tells you, and you have a faster site in 2.2 minutes. I'm sorry, but I'm going to disappoint you.</p>
+      <p>I think you should have a healthy level of skepticism for any tool like that. None of them are exactly <i>lying</i> to you — they often just don't have enough information to give you results that are safe and actionable. That's not to say you can't use them or it can't be done. Let's take a walk.</p>
+      <h3>The motivation</h3>
+      <p>I imagine the #1 driver for the desire to remove unused CSS is this:</p>
+      <p>
+        <b>You used a CSS framework (e.g. Bootstrap), included the framework's entire CSS file, and you only used a handful of the patterns it provides.</b>
+      </p>
+      <p>I can empathize with that. CSS frameworks often don't provide simple ways to opt-in to only what you are using, and customizing the source to work that way might require a level of expertise that your team doesn't have. That might even be the reason you reached for a framework to begin with.</p>
+      <p>Say you're loading 100 KB of CSS. I'd say that's a lot. (As I write, this site has ~23 KB, and there are quite a lot of pages and templates. I don't do anything special to reduce the size.) You have a suspicion, or some evidence, that you aren't using a portion of those bytes. I can see the cause for alarm. If you had a 100 KB JPG that you could compress to 20 KB by dropping it onto some tool, that's awesome and totally worth it. <b>But the gain in doing that for CSS is even more important because CSS is loaded in the head and is render blocking</b>. The JPG is not.</p>
+      <h3>😬 Looking at "coverage"</h3>
+      <p>Chrome's DevTools has a "Coverage" tab that will tell you how much of your CSS and JavaScript is in use. For example, if I visit the homepage of CSS-Tricks right now...</p>
+      <figure>
+        <img src="https://css-tricks.com/wp-content/uploads/2019/10/css-coverage.png"/>
+      </figure>
+      <p>It tells me that 70.7% of my <code>style.css</code> file is unused. I imagine it's right, and that the rest of the CSS is used elsewhere. I didn't just dump a big style library onto this site; I wrote each line of that by hand, so I have my doubts that more than 2/3 of it is unused globally.</p>
+      <p>I assumed I could start "recording" then click around different areas of the site and watch that unused number go down as different pages with different HTML are rendered, but alas, when the page refreshes, so does the Coverage tab. It's not very useful in getting a multi-page look at CSS coverage, unless you have a Single Page App I guess?</p>
+      <p>I hate to say it but I find looking at code coverage pretty useless. For me, it paints a dire picture of all this unused code on the site, which preys upon my doubts, but all I can do is worry about it.</p>
+      <p>This might be the very thing that's given you the idea that unused CSS needs to be discovered and deleted in the first place.</p>
+      <h3>My primary concern</h3>
+      <p>My biggest concern is that you look at something like code coverage and see your unused lines:</p>
+      <figure>
+        <img src="https://css-tricks.com/wp-content/uploads/2019/10/unused-css-lines.png"/>
+      </figure>
+      <p>And you go, <i>Perfect! I'll delete that CSS!</i> And you do, only to find out it wasn't unused at all and you caused big styling problems throughout the site. Here's the thing: you don't actually know if a CSS selector is unused unless you:</p>
+      <ol>
+        <li>check coverage on every single page of your entire site...</li>
+        <li>while executing all JavaScript...</li>
+        <li>under every possible combination of state...</li>
+        <li>in every possible combination of media queries you've used.</li>
+      </ol>
+      <p>Checking your homepage doesn't count. Checking all your top-level pages doesn't count. You gotta dig through <i>every</i> page, including states that aren't always top-of-mind, not to mention all of the edge-case scenarios. Otherwise, you might end up deleting the dropdown styling for the credit card choice dropdown in the pop-up modal that appears for users with a disabled account who've logged in during their grace period that also have a gift card to apply.</p>
+      <p>This is too complex for automated tooling to promise their approach works perfectly, particularly when factoring in the unknowns of browser context (different screen sizes, different capabilities, different browsers) and third parties.</p>
+      <p>Here's an example of my concern playing out:</p>
+      <h3>PurifyCSS Online takes some URLs and instantly provides a copy-pasteable chunk of CSS to use</h3>
+      <p>Here's me dropping my css-tricks.com into <a href="https://purifycss.online/">PurifyCSS Online</a> and getting new CSS.</p>
+      <p>Oooops!</p>
+      <figure>
+        <img src="https://css-tricks.com/wp-content/uploads/2019/10/oops.png"/>
+        <figcaption>On the left, CSS-Tricks as normal. On the right, I applied the new "purified" CSS, which deleted a bunch of CSS necessary for other pages.</figcaption>
+      </figure>
+      <p>It gave me the opportunity to put in other URLs (which is nice) but there are tens of thousands of URLs on CSS-Tricks. Many of them are fairly similar, but all of them have the potential of having selectors that are used. I get the impression it didn't execute JavaScript, because anything that came onto the page via JavaScript was left unstyled. It even deleted my <code>:hover</code> states.</p>
+      <p>Perhaps you can see why my trust in these tools is so low.</p>
+      <h3>Part of a build process</h3>
+      <p><a href="https://github.com/purifycss/purifycss">PurifyCSS</a> is probably more regularly used as a build process tool rather than the online interface. Their docs have instructions for Grunt, Gulp, and webpack. For example, globbing files to check and process them:</p>
+      <pre>var content = ['**/src/js/*.js', '**/src/html/*.html']; <br/>var css = ['**/src/css/*.css']; <br/><br/>var options = { <br/>  // Will write purified CSS to this file. <br/>  output: './dist/purified.css' <br/>}; <br/><br/>purify(content, css, options);</pre>
+      <p>This gives you a lot more opportunity for accuracy. That content blob could be a list of every single template, partial, and JavaScript file that builds your site. That might be a pain to maintain, but you'll certainly get more accuracy. It doesn't account for content in data stores (e.g. this blog post that lives in a database) and third-party JavaScript, but maybe that doesn't matter to you or you can account for it some other way.</p>
+      <p>PurgeCSS, a competitor to PurifyCSS, <a href="https://www.purgecss.com/comparison">warns</a> about its comparison technique:</p>
+      <blockquote>PurifyCSS can work with any file type, not just HTML or JavaScript. PurifyCSS works by looking at all of the words in your files and comparing them with the selectors in your CSS. Every word is considered a selector, which means that a lot of selectors can be erroneously consider used. For example, you may happen to have a word in a paragraph that matches a selector in your CSS.</blockquote>
+      <p>So keep that in mind as well. It's dumb in the way it compares potential selector matches, which is both clever and dangerous.</p>
+      <h3>UnusedCSS is an online service that crawls your site for you</h3>
+      <p>Manually configuring a tool to look at every page on your site from every angle is certainly a chore and something that will need to be kept in sync day-to-day as your codebase evolves. Interestingly, the online service <a href="https://unused-css.com/">UnusedCSS</a> tries to overcome this burden by crawling the site itself based on a single URL you give it.</p>
+      <p>I signed up for the <b>paid</b> service and pointed it at CSS-Tricks. I admit, with just a glance at the results, it feels a lot more accurate to me:</p>
+      <figure>
+        <img src="https://css-tricks.com/wp-content/uploads/2019/10/unused-css.png"/>
+        <figcaption>It's telling me I'm using 93% of my CSS, which feels more inline to me as hand-author of all the CSS on this site.</figcaption>
+      </figure>
+      <p>It also lets you download the cleaned file and offers lots of customization, like checking/unchecking selectors you actually want/don't want (e.g. you see a class name it doesn't think you need, but you know for sure you actually do need it) as well as prefixing and removing duplicate selectors.</p>
+      <p>I enjoyed the increased accuracy of the online crawling service, <b>but there was a lot of noise, and I also can't see how I'd incorporate it practically into a day-to-day build and release process</b>.</p>
+      <h3>Tooling is generally used post-processing</h3>
+      <p>Say your CSS is built with Less or Sass, then uses a postprocessor to compile it into CSS. You'd probably incorporate automated unused CSS cleaning at the very end of whatever other CSS preprocessing you do. Like...</p>
+      <ol>
+        <li>Sass</li>
+        <li>PostCSS / Autoprefixer</li>
+        <li>
+          <b>[ Clean Unsued CSS ]</b>
+        </li>
+        <li>Production CSS</li>
+      </ol>
+      <p>That both makes sense and is slightly funny to me. You don't actually <i>fix</i> the styling that generates unused CSS. Instead, you just wipe it away at the end of the build. I suppose JavaScript has been doing that kind of thing with tree shaking for a while, so there is a precedent, but it still feels weird to me because a CSS codebase is so directly hands-on. This setup almost encourages you to dump CSS wherever because there is no penalty for overdoing. It removes any incentive to understand how CSS is applied and used.</p>
+      <h3>PurgeCSS is another tool that takes explicit input and gives you the results</h3>
+      <p><a href="https://www.purgecss.com/">PurgeCSS</a> is another player in the unused CSS market. One tangential thing I like about it is that it <a href="https://www.purgecss.com/comparison">clearly explains how it differs</a> from other tools. For example, compared to PurifyCSS:</p>
+      <blockquote>The biggest flaw with PurifyCSS is its lack of modularity. However, this is also its biggest benefit. PurifyCSS can work with any file type, not just HTML or JavaScript. PurifyCSS works by looking at all of the words in your files and comparing them with the selectors in your CSS. Every word is considered a selector, which means that a lot of selectors can be erroneously consider used. For example, you may happen to have a word in a paragraph that matches a selector in your CSS. PurgeCSS fixes this problem by providing the possibility to create an extractor. An extractor is a function that takes the content of a file and extracts the list of CSS selectors used in it. It allows a perfect removal of unused CSS.</blockquote>
+      <p>PurgeCSS seems like the big dog at the moment. Lots of people are using it and writing about it.</p>
+      <ul>
+        <li><a href="https://medium.com/dwarves-foundation/remove-unused-css-styles-from-bootstrap-using-purgecss-88395a2c5772">Nghia Pham wrote about</a> how to use it specifically with Bootstrap,</li>
+        <li><a href="https://www.viget.com/articles/a-better-approach-for-using-purgecss-with-tailwind/">Greg Kohn wrote a post</a> warning that it doesn't delete selectors in unusual circumstances with whitelists.</li>
+        <li><a href="https://flaviocopes.com/tailwind-setup/">Flavio Copes wrote about</a> running it with npm scripts and PostCSS.</li>
+        <li><a href="https://frontstuff.io/how-i-dropped-250-kb-of-dead-css-weight-with-purgecss">Sarah Dayan carefully details</a> how it works with Tailwind.</li>
+      </ul>
+      <p>Despite PurgeCSS needing special configuration to work with Tailwind, it seems like Tailwind and PurgeCSS are two peas in a pod. In fact, <a href="https://tailwindcss.com/docs/controlling-file-size/">their docs recommend using them together</a> and provides <a href="https://www.purgecss.com/cli">a CLI</a> for using it in a build process.</p>
+      <p>I believe the gist of it is this: Tailwind produces this big CSS file full of utility selectors. But they don't intend for you to use the entire thing. You use these utility selectors in your HTML to do all your styling, then use PurgeCSS to look at all your HTML and shake out the unused utility selectors in your production CSS.</p>
+      <p>Still, it will be an ongoing maintenance issue to teach it about every single template on your site — JavaScript, HTML, or otherwise — while manually configuring anything that relies on third-party resources and knowing that any data that comes from a data store probably cannot be looked at during a build process, making it something to account for manually.</p>
+      <h3>My favorite technique: have someone who is really familiar with your CSS codebase be aware of the problem and aim to fix it over time</h3>
+      <p>Perhaps this feels like the approach of an old-timer who needs to get with the times, but hey, this just feels like the most practical approach to me. Since this problem is so hard, I think hard work is the answer to it. It's understanding the problem and working toward a solution over time. A front-end developer that is intimately involved in your front end will have an understanding about what is used and usused in CSS-land after time and can whittle it down.</p>
+      <p>An extreme testing approach I've seen is using a (i.e. <code>background-image: url(/is-this-being-used.gif?selector);</code>) in the CSS block and then checking server logs over time to see if that image has been accessed. If it is accessed, it was used; if not, it wasn't.</p>
+      <p>But perhaps my favorite tool in the potential toolbox is this:</p>
+      <h3>Visual regression testing</h3>
+      <p>You screenshot as much of your site as possible — like all of the most important pages and those pages manipulated into different states — plus across different browsers and screen sizes. Those screenshots are created from your master branch on Git.</p>
+      <p>Then, before any branches gets merged into Master, you take all those screenshots of them and compare those to the screenshots in master. Not manually, but programmatically.</p>
+      <p>That's exactly what <a href="https://percy.io/">Percy</a> does, so watch this:</p>
+      <figure>
+        <iframe src="https://www.youtube.com/embed/Vbg81kc56FU" width="560" height="315" data-service="Youtube" scrolling="no"/>
+      </figure>
+      <p>There have been other stabs at visual regression testing tools over the years, but Percy is the only one I've seen that makes clear sense to me. I don't just need to take screenshots; I want them compared so I can see visual differences between them. I don't just want to see the differences; I want to approve or disapprove them. I also want that approval to block or allow merges and I want to be able to control the browser before the screenshot is taken. I don't want to manually update the comparison images. That's all bread-and-butter Percy stuff.</p>
+      <p><b>Full disclosure:</b> Percy has sponsored things here on CSS-Tricks here before — including that video above — but not this post.</p>
+      <h3>The relation to Atomic CSS and CSS-in-JS</h3>
+      <p>I'm sure there are lots of people reading this that would say: I don't have unused CSS because the tooling I use generates the exact CSS it needs and nothing more.</p>
+      <p>Hey, that's kinda cool.</p>
+      <p>Maybe that's <a href="https://acss.io/guides/atomizer.html">Atomizer</a>. Maybe that's <a href="https://tachyons.io/">Tachyons</a> that you also run through <a href="https://github.com/uncss/uncss">UnCSS</a> and you are super careful about it. Maybe it's the <a href="https://tailwindcss.com/">Tailwind</a> + <a href="https://www.purgecss.com/">PurgeCSS</a> combo that's all the rage right now.</p>
+      <p>Maybe you tackle styles some other way. If you're tightly coupling JavaScript components and styles, like React and Emotion, or even just using CSS modules with whatever, less unused CSS is an advantage of CSS-in-JS. And because tree-shaking and code-splitting come along for the ride in many JavaScript-based build processes, you not only have less CSS but only load what you need at the moment. <a href="https://css-tricks.com/the-differing-perspectives-on-css-in-js/">There are tradeoffs</a> to all this though.</p>
+      <h3>How do you avoid unused CSS in future projects?</h3>
+      <p>I think the future of styling is an intentional split between global and componentized styles. Most styles are scoped to components, but there are global styling choices that are made that take clear advantage of the cascade (e.g. global typography defaults).</p>
+      <p>If most styling is left scoped to components, I think there is less opportunity for unused styles to build up as it's much easier to wrap your mind around a small block of HTML and a small block of CSS that directly relate to each other. And when components die or evolve, the styling dies or evolves with it. CSS bundles are made from components that are actually used.</p>
+      <p>CSS-in-JS solutions naturally head in this direction as styles are bound to components. That's the main point, really. But it's not required. I like the generic approach of <a href="https://github.com/css-modules/css-modules">CSS modules</a>, which is pretty much entirely for style scoping and doesn't mandate that you use some particular JavaScript framework.</p>
+      <p>If all that seems theoretical or out-of-reach, and you just have a Bootstrap site where you're trying to reduce the size of all that Bootstrap CSS, I'd recommend starting by using Bootstrap from the source instead of the final default distributed bundle. The source is SCSS and built from a bunch of high-level includes, so if you don't need particular parts of Bootstrap, you can remove them.</p>
+      <figure>
+        <img src="https://css-tricks.com/wp-content/uploads/2019/11/removing-stuff-from-bootstrap.png"/>
+        <figcaption>Removing dropdowns, badges, and breadcrumbs from Bootstrap before the build.</figcaption>
+      </figure>
+      <p>Good luck out there, gang.</p>
+    </article>
+  </body>
+</html>

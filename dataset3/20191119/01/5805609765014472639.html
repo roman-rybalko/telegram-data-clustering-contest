@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://techviral.net/hide-items-from-the-control-panel-in-windows/"/>
+    <meta property="og:site_name" content="Tech Viral"/>
+    <meta property="article:published_time" content="2019-11-19T01:15:09+00:00"/>
+    <meta property="og:title" content="How to Hide Items from the Control Panel in Windows"/>
+    <meta property="og:description" content="Learn how to Hide Items from the Control Panel in Windows with the help of local group policy editor on Windows 10, Windows 7, and Windows 8."/>
+  </head>
+  <body>
+    <article>
+      <h1>How to Hide Items from the Control Panel in Windows</h1>
+      <address><time datetime="2019-11-19T01:15:09+00:00">19 Nov 2019, 01:15</time> by <a rel="author">Karanpreet Singh</a></address>
+      <p>If you have been using Windows 10 for a while, then you might be well aware of the Control Panel. It’s a centralized hub from where you can excess different Windows settings. Not just settings, but adding/removing programs were also done through the Control Panel.</p>
+      <p>Although you can uninstall programs from the app drop-down list on Windows 10, still Control Panel is the easiest way to add/remove new programs. If your computer is shared with others, then you may not want users to access certain items of Control Panel as through the control panel, one can modify the registry, modify system files, etc.</p>
+      <p><b>Contents</b> <a href="https://techviral.net/hide-items-from-the-control-panel-in-windows/#">show</a></p>
+      <h3><anchor name="How_to_Hide_Items_from_the_Control_Panel_in_Windows"/>How to Hide Items from the Control Panel in Windows</h3>
+      <p>So, if your computer is used by others also, then you can always stop others from changing certain settings on the Control Panel. In this article, we are going to share a working method that would let you hide Control Panel Settings on Windows 10 operating system.</p>
+      <related>
+        <a href="https://techviral.net/add-floating-windows-in-android/"/>
+      </related>
+      <h4><anchor name="Hide_Items_from_the_Control_Panel_in_Windows"/>Hide Items from the Control Panel in Windows:</h4>
+      <p><b>Step 1.</b> First of all, open Run dialog box on your Windows 10 operating system.</p>
+      <p><b>Step 2.</b> On the RUN dialog box, enter ‘gpedit.msc’ and hit enter.</p>
+      <figure>
+        <img src="https://techviral.net/wp-content/uploads/2016/12/Hide-Items-from-the-Control-Panel-in-Windows-1.png"/>
+        <figcaption>Hide Items from the Control Panel</figcaption>
+      </figure>
+      <p><b>Step 3.</b> This will open the Local Group Policy Editor. There you need to browse to the User <b>Configuration &gt; Administrative Templates &gt; Control Panel</b>. There double click on the ‘Hide specified control panel items’ from the right-hand side panel.</p>
+      <figure>
+        <img src="https://techviral.net/wp-content/uploads/2016/12/Hide-Items-from-the-Control-Panel-in-Windows-2.png"/>
+        <figcaption>Hide Items from the Control Panel</figcaption>
+      </figure>
+      <p><b>Step 4.</b> In the next window, you need to enable the ‘Hide Specified Control Panel Items’ and clock on the ‘Show’ button near the List of disallowed control panel items.</p>
+      <figure>
+        <img src="https://techviral.net/wp-content/uploads/2016/12/Hide-Items-from-the-Control-Panel-in-Windows-3.png"/>
+        <figcaption>Hide Items from the Control Panel</figcaption>
+      </figure>
+      <p><b>Step 5.</b> In the next window, you need to add the Canonical name of the Control Panel item which you want to hide. Below we have shared a list of Canonical name for any specific control panel item.</p>
+      <figure>
+        <img src="https://techviral.net/wp-content/uploads/2016/12/Hide-Items-from-the-Control-Panel-in-Windows-4.png"/>
+        <figcaption>Hide Items from the Control Panel</figcaption>
+      </figure>
+      <p><b>Step 6.</b> Once added, close the opened window and restart your computer.</p>
+      <table bordered="">
+        <tr>
+          <th>Control Panel Item</th>
+          <th>Canonical Name</th>
+        </tr>
+        <tr>
+          <td>Action Center</td>
+          <td>Microsoft.ActionCenter</td>
+        </tr>
+        <tr>
+          <td>Administrative Tools</td>
+          <td>Microsoft.AdministrativeTools</td>
+        </tr>
+        <tr>
+          <td>AutoPlay</td>
+          <td>Microsoft.AutoPlay</td>
+        </tr>
+        <tr>
+          <td>Backup and Restore</td>
+          <td>Microsoft.BackupAndRestore</td>
+        </tr>
+        <tr>
+          <td>Biometric Devices</td>
+          <td>Microsoft.BiometricDevices</td>
+        </tr>
+        <tr>
+          <td>BitLocker Drive Encryption</td>
+          <td>Microsoft.BitLockerDriveEncryption</td>
+        </tr>
+        <tr>
+          <td>Color Management</td>
+          <td>Microsoft.ColorManagement</td>
+        </tr>
+        <tr>
+          <td>Credential Manager</td>
+          <td>Microsoft.CredentialManager</td>
+        </tr>
+        <tr>
+          <td>Date and Time</td>
+          <td>Microsoft.DateAndTime</td>
+        </tr>
+        <tr>
+          <td>Default Location</td>
+          <td>Microsoft.DefaultLocation</td>
+        </tr>
+        <tr>
+          <td>Default Programs</td>
+          <td>Microsoft.DefaultPrograms</td>
+        </tr>
+        <tr>
+          <td>Desktop Gadgets</td>
+          <td>Microsoft.DesktopGadgets</td>
+        </tr>
+        <tr>
+          <td>Device Manager</td>
+          <td>Microsoft.DeviceManager</td>
+        </tr>
+        <tr>
+          <td>Devices and Printers</td>
+          <td>Microsoft.DevicesAndPrinters</td>
+        </tr>
+        <tr>
+          <td>Display</td>
+          <td>Microsoft.Display</td>
+        </tr>
+        <tr>
+          <td>Ease of Access Center</td>
+          <td>Microsoft.EaseOfAccessCenter</td>
+        </tr>
+        <tr>
+          <td>Folder Options</td>
+          <td>Microsoft.FolderOptions</td>
+        </tr>
+        <tr>
+          <td>Fonts</td>
+          <td>Microsoft.Fonts</td>
+        </tr>
+        <tr>
+          <td>Game Controllers</td>
+          <td>Microsoft.GameControllers</td>
+        </tr>
+        <tr>
+          <td>Get Programs</td>
+          <td>Microsoft.GetPrograms</td>
+        </tr>
+        <tr>
+          <td>Getting Started</td>
+          <td>Microsoft.GettingStarted</td>
+        </tr>
+        <tr>
+          <td>HomeGroup</td>
+          <td>Microsoft.HomeGroup</td>
+        </tr>
+        <tr>
+          <td>Indexing Options</td>
+          <td>Microsoft.IndexingOptions</td>
+        </tr>
+        <tr>
+          <td>Infrared</td>
+          <td>Microsoft.Infrared</td>
+        </tr>
+        <tr>
+          <td>Internet Options</td>
+          <td>Microsoft.InternetOptions</td>
+        </tr>
+        <tr>
+          <td>iSCSI Initiator</td>
+          <td>Microsoft.iSCSIInitiator</td>
+        </tr>
+        <tr>
+          <td>Keyboard</td>
+          <td>Microsoft.Keyboard</td>
+        </tr>
+        <tr>
+          <td>Location and Other Sensors</td>
+          <td>Microsoft.LocationAndOtherSensors</td>
+        </tr>
+        <tr>
+          <td>Mouse</td>
+          <td>Microsoft.Mouse</td>
+        </tr>
+        <tr>
+          <td>Network and Sharing Center</td>
+          <td>Microsoft.NetworkAndSharingCenter</td>
+        </tr>
+        <tr>
+          <td>Notification Area Icons</td>
+          <td>Microsoft.NotificationAreaIcons</td>
+        </tr>
+        <tr>
+          <td>Offline Files</td>
+          <td>Microsoft.OfflineFiles</td>
+        </tr>
+        <tr>
+          <td>Parental Controls</td>
+          <td>Microsoft.ParentalControls</td>
+        </tr>
+        <tr>
+          <td>Pen and Touch</td>
+          <td>Microsoft.PenAndTouch</td>
+        </tr>
+        <tr>
+          <td>People Near Me</td>
+          <td>Microsoft.PeopleNearMe</td>
+        </tr>
+        <tr>
+          <td>Performance Information and Tools</td>
+          <td>Microsoft.PerformanceInformationAndTools</td>
+        </tr>
+        <tr>
+          <td>Personalization</td>
+          <td>Microsoft.Personalization</td>
+        </tr>
+        <tr>
+          <td>Phone and Modem</td>
+          <td>Microsoft.PhoneAndModem</td>
+        </tr>
+        <tr>
+          <td>Power Options</td>
+          <td>Microsoft.PowerOptions</td>
+        </tr>
+        <tr>
+          <td>Programs and Features</td>
+          <td>Microsoft.ProgramsAndFeatures</td>
+        </tr>
+        <tr>
+          <td>Recovery</td>
+          <td>Microsoft.Recovery</td>
+        </tr>
+        <tr>
+          <td>Region and Language</td>
+          <td>Microsoft.RegionAndLanguage</td>
+        </tr>
+        <tr>
+          <td>RemoteApp and Desktop Connections</td>
+          <td>Microsoft.RemoteAppAndDesktopConnections</td>
+        </tr>
+        <tr>
+          <td>Scanners and Cameras</td>
+          <td>Microsoft.ScannersAndCameras</td>
+        </tr>
+        <tr>
+          <td>Sound</td>
+          <td>Microsoft.Sound</td>
+        </tr>
+        <tr>
+          <td>Speech Recognition</td>
+          <td>Microsoft.SpeechRecognition</td>
+        </tr>
+        <tr>
+          <td>Sync Center</td>
+          <td>Microsoft.SyncCenter</td>
+        </tr>
+        <tr>
+          <td>System</td>
+          <td>Microsoft.System</td>
+        </tr>
+        <tr>
+          <td>Tablet PC Settings</td>
+          <td>Microsoft.TabletPCSettings</td>
+        </tr>
+        <tr>
+          <td>Taskbar and Start Menu</td>
+          <td>Microsoft.TaskbarAndStartMenu</td>
+        </tr>
+        <tr>
+          <td>Text to Speech</td>
+          <td>Microsoft.TextToSpeech</td>
+        </tr>
+        <tr>
+          <td>Troubleshooting</td>
+          <td>Microsoft.Troubleshooting</td>
+        </tr>
+        <tr>
+          <td>User Accounts</td>
+          <td>Microsoft.UserAccounts</td>
+        </tr>
+        <tr>
+          <td>Windows Anytime Upgrade</td>
+          <td>Microsoft.WindowsAnytimeUpgrade</td>
+        </tr>
+        <tr>
+          <td>Windows CardSpace</td>
+          <td>Microsoft.CardSpace</td>
+        </tr>
+        <tr>
+          <td>Windows Defender</td>
+          <td>Microsoft.WindowsDefender</td>
+        </tr>
+        <tr>
+          <td>Windows Firewall</td>
+          <td>Microsoft.WindowsFirewall</td>
+        </tr>
+        <tr>
+          <td>Windows Mobility Center</td>
+          <td>Microsoft.MobilityCenter</td>
+        </tr>
+        <tr>
+          <td>Windows SideShow</td>
+          <td>Microsoft.WindowsSideShow</td>
+        </tr>
+        <tr>
+          <td>Windows Update</td>
+          <td>Microsoft.WindowsUpdate</td>
+        </tr>
+      </table>
+      <related>
+        <a href="https://techviral.net/best-free-windows-software/"/>
+      </related>
+      <p>So, this article is all about How to Hide Items from the Control Panel in Windows. By following the method given above, you can easily hide any items from the Control Panel. I hope this article helped you! Share it with your friends also. If you have any doubts related to this, let us know in the comment box below.</p>
+    </article>
+  </body>
+</html>

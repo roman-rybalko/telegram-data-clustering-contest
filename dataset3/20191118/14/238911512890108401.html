@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://www.cnbeta.com/articles/tech/911929.htm"/>
+    <meta property="og:site_name" content="cnBeta"/>
+    <meta property="article:published_time" content="2019-11-18T14:56:00+00:00"/>
+    <meta property="og:title" content="展望2021：英特尔或为Aurora超算提供双路CPU+六GPU节点"/>
+    <meta property="og:description" content="近年来，超算界一直在努力探讨“exascale”（10^18）的算力愿景，其有望奠定未来十年的发展基调。英特尔与阿贡国家实验室合作打造的Aurora超级计算机，亦正在向着这个目标挺进。据悉，两家公司签订合同已有一段时间，但随着市场的变化、以及硬件制造商的挫折，项目进展并不是很顺利。"/>
+  </head>
+  <body>
+    <article>
+      <h1>展望2021：英特尔或为Aurora超算提供双路CPU+六GPU节点</h1>
+      <address><time datetime="2019-11-18T14:56:00+00:00">18 Nov 2019, 14:56</time> by <a rel="author">raymon725</a></address>
+      <p>
+        <a href="https://www.cnbeta.com/topics/32.htm">
+          <pic src="https://static.cnbetacdn.com/topics/18315c240ecef87.png"/>
+        </a>
+      </p>
+      <p>近年来，超算界一直在努力探讨“exascale”（10^18）的算力愿景，其有望奠定未来十年的发展基调。<b>英特尔与阿贡国家实验室合作打造的 Aurora 超级计算机，亦正在向着这个目标挺进。</b>据悉，两家公司签订合同已有一段时间，但随着市场的变化、以及硬件制造商的挫折，项目进展并不是很顺利。</p>
+      <hr/>
+      <figure>
+        <img src="https://static.cnbetacdn.com/article/2019/1118/2e04ed134910031.jpg"/>
+      </figure>
+      <p>（题图 via <a href="https://www.anandtech.com/show/15120/intels-2021-exascale-vision-in-aurora-two-sapphire-rapids-cpus-with-six-ponte-vecchio-gpus">AnandTech</a>）</p>
+      <p>Aurora 超算的硬件部分，原本希望 Argonne、Cray 和<a href="https://c.duomai.com/track.php?site_id=242986&amp;euid=&amp;t=https://intel.jd.com/">英特尔</a>能够在 2020 年实现交付。其围绕着英特尔的 Xeon Phi 平台构建，可通过 <a href="https://c.duomai.com/track.php?site_id=242986&amp;euid=&amp;t=https://intel.jd.com/">Intel</a> 的 AVX-512 指令和 10nm Knights Hill 架构来提高吞吐量和加速。</p>
+      <p>遗憾的是，上述计划是在人工智能（AI）加速革命之前所制订的。英特尔随后在其服务器处理器中添加了 AVX-512 支持，并终结至强融核平台（短命的 Knights Mill）。</p>
+      <p>基于此，英特尔不得不重新考虑 Aurora 要如何构建，以及如何融入自家的 CPU 和 Xe GPU 。作为今日公告的一部分，英特尔披露了 Aurora 超算的一些基础信息。</p>
+      <figure>
+        <img src="https://static.cnbetacdn.com/article/2019/1118/49875365f60be07.jpg"/>
+      </figure>
+      <p>虽未透露架构的核心数量、内存类型等信息，但至少可知标准节点将包含双路下一代 CPU 和六路下一代 GPU 硬件，且其通过全新的连接标准进行协作。</p>
+      <p>计划采用的 Sapphire Rapids CPU，是英特尔继 Ice Lake 至强处理器之后的第二代 10 纳米服务器处理器。今日公告重申了该处理器有望在 2021 年下半年推出，同时 Ice Lake 将在 2020 年末实现量产。</p>
+      <p>参数方面，每颗 Sapphire Rapids 处理器支持 8 通道内存，且具有足够连接至三路 GPU 的 I/O 。在单个 Aurora 计算节点中，双路 Sapphire Rapids 处理器可协同工作，并支持下一代傲腾 DCPMM 持久性存储。</p>
+      <figure>
+        <img src="https://static.cnbetacdn.com/article/2019/1118/7162fdba55f9ffd.jpg"/>
+      </figure>
+      <p>另有消息人士称，Sapphire Rapids 或许支持 DDR5，但尚未得到英特尔方面的证实。GPU 方面，每个 Aurora 节点将支持六卡协作（英特尔 7nm Ponte Vecchio Xe GPU）。</p>
+      <p>其基于 Xe 架构的微体系架构打造，采用英特尔大量的关键封装技术，如 Foveros 芯片堆叠、嵌入式多芯片互连桥（EMIB）、以及高带宽现存（HBM）等。</p>
+      <p>功能方面，英特尔仅声称 PV 将具有矢量矩阵单元和高双精度性能，这可能是 Argonne 进行的研究所必需的。</p>
+      <figure>
+        <img src="https://static.cnbetacdn.com/article/2019/1118/792ee15ce7a7b42.jpg"/>
+      </figure>
+      <p>Aurora 节点中的另一项核心技术，就是采用了全新的 CXL 连接标准。其允许 CPU 和 GPU 直接连接在一起，并在统一的内存空间中工作。</p>
+      <p>每个 Aurora 节点将具有 8 个 Fabric 端点，从而提供了大量的拓扑连接选项。随着 Cray 部分的构建加入，连接系统将成为其 Slingshot 网络体系结构的一个版本。</p>
+      <p>同时，该体系结构也将用于其它 2020 年代初期的美国超算项目。英特尔表示，Slingshot 将为 Aurora 提供大约 200 个机架的连接，共有 10 PB 内存和 230 PB 的存储。</p>
+      <figure>
+        <img src="https://static.cnbetacdn.com/article/2019/1118/8ac930fbbc21ecf.jpg"/>
+      </figure>
+      <p>
+        <b>综上所述，可简单估计 Aurora 超算有如下特点：</b>
+      </p>
+      <blockquote>支持 200 个机架协同工作；<br/><br/>每个机架可能都采用标准的 42U 配置；<br/><br/>每个 Aurora 节点都是一个标准的 2U 配置；<br/><br/>系统或总共有 200 个机架；<br/><br/>每个机架支持 6U 和联网特性；<br/><br/>其中 1/3 可用于存储和其它系统；<br/><br/>四舍五入可得 2400 个 Aurora 超算节点（2394）。</blockquote>
+      <p>若真如此，整个 Aurora 超算系统将只采用 5000 颗英特尔 Sapphire Rapids CPU 和 15000 个 Ponte Vecchio GPU 。</p>
+      <p>假设将 ExaFLOP 均摊到 15000 个子单元商，则每个 GPU 的平均算力为 66.6 TeraFLOP 。不过当前的 GPU，其 FP32 性能仅在 14 TeraFlops 左右。</p>
+      <p>若英特尔能够将 HPC 的单 GPU 性能提升约 5 倍，这样的提升也是相当惊人的（假设不考虑功耗限制的话）。</p>
+    </article>
+  </body>
+</html>

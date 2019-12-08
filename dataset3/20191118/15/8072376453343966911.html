@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://www.cbronline.com/news/microsoft-encrypted-dns"/>
+    <meta property="og:site_name" content="Computer Business Review"/>
+    <meta property="article:published_time" content="2019-11-18T15:04:38+00:00"/>
+    <meta property="og:title" content="Microsoft Jumps on the DoH Train – Company to Introduce Encrypted DNS"/>
+    <meta property="og:description" content="Microsoft is set to start offering encrypted DNS resolution services (HTTPS-over-DNS, or DoH) joining Cloudflare and Google. Microsoft encrypted DNS will..."/>
+  </head>
+  <body>
+    <article>
+      <h1>Microsoft Jumps on the DoH Train – Company to Introduce Encrypted DNS</h1>
+      <h2>“Providing encrypted DNS support without breaking existing Windows device admin configuration won’t be easy”</h2>
+      <address>
+        <time datetime="2019-11-18T15:04:38+00:00">18 Nov 2019, 15:04</time>
+      </address>
+      <p>Microsoft is set to start offering encrypted DNS resolution services (DNS-over-HTTPS, or “DoH”) joining Cloudflare and Google in introducing the service, which has drawn public policy maker ire for obfuscating/securing end-user traffic.</p>
+      <p>DoH encrypts DNS traffic and requires authentication of the server. As the Internet Engineering Task Force (IETF) <a href="https://tools.ietf.org/html/rfc8484#page-12">notes</a>, this mitigates both passive surveillance and active attacks that attempt to divert DNS traffic to rogue servers.</p>
+      <p>“We are making plans to adopt <a href="https://tools.ietf.org/html/rfc8484">DNS over HTTPS</a> (or DoH) in the Windows DNS client”, Microsoft said on Sunday. “As a platform, Windows Core Networking seeks to enable users to use whatever protocols they need, so we’re open to having other options such as DNS over TLS (DoT) in the future. For now, we’re prioritizing DoH support as the most likely to provide immediate value to everyone.”</p>
+      <p>The company did not specify when the service will be available.</p>
+      <p>“We believe Windows adoption of encrypted DNS will help make the overall Internet ecosystem healthier,” the company added in a networking blog.</p>
+      <related>
+        <a href="https://www.cbronline.com/news/encrypted-dns"/>
+      </related>
+      <p>The move comes six months after the Sunday Times reported that British government figures were in crisis talks over plans for the broad rollout of the technology by the leading DNS resolution service providers, which problematises the bulk surveillance allowed by the 2016 “Snooper’s Charter”, or Investigatory Powers Act, which requires ISPs to store their customers’ internet activity for 12 months.</p>
+      <p>Mozilla said in September that its Firefox browser would start defaulting to Cloudflare’s DoH service, <a href="https://www.cbronline.com/news/firefox-dns-over-https">although initially</a> just in a small-scale pilot.</p>
+      <p>Currently, even if users are visiting a site using HTTPS, their DNS query is sent over an unencrypted connection: anyone listening to packets on the network knows which website an internet user is attempting visit.</p>
+      <p>In the UK, this includes all internet service providers (ISPs).</p>
+      <h3>Microsoft Encrypted DNS to Start with a “Simple Change”… </h3>
+      <p>Microsoft said: “We’ll start with a simple change: use DoH for DNS servers Windows is already configured to use. There are now several public DNS servers that support DoH, and if a Windows user or device admin configures one of them today, Windows will just use classic DNS (without encryption) to that server.</p>
+      <p>“However, since these servers and their DoH configurations are well known, Windows can automatically upgrade to DoH while using the same server” the company’s Tommy Jensen, Ivan Pashov, and Gabriel Montenegro said in a <a href="https://techcommunity.microsoft.com/t5/Networking-Blog/Windows-will-improve-user-privacy-with-DNS-over-HTTPS/ba-p/1014229">blog</a>.</p>
+      <p>Microsoft will “not be making any changes to which DNS server Windows was configured to use by the user or network” they added.</p>
+      <figure>
+        <img src="https://www.cbronline.com/wp-content/uploads/2019/11/wall-3365556_1920.jpg"/>
+        <figcaption>Their DNS is encrypted? DoH! Image credit: Pixabay, Creative Commons</figcaption>
+      </figure>
+      <p>Paul Gagliardi, Director of Threat Intelligence at SecurityScorecard told Computer Business Review in an earlier comment in response to Mozilla’s move: “On one hand I don’t want ISPs selling my internet behavior or censoring it, on the other it is currently hard to implement basic censoring. Ultimately, content (DNS in this case) cannot be secured/monitored without having the ability to observe it.</p>
+      <p>“Just as companies/organizations inspect their HTTPS traffic, the same needs to happen with encrypted DNS/DoH. Decrypting DoH would be the exact same mechanism as observing HTTPS traffic, using a Man in the Middle proxy to decrypt traffic on the fly and implement security mechanisms. There are no shortage of commercial solutions for this, however, things get more complicated in BYOD environments.”</p>
+      <p>He added: “DoH forces the privacy vs security defense debate to be more localized. A company or organization can balance those decisions in their network differently than a private individual. Unfortunately for those organizations/companies, the ability to censor traffic is now more technical and requires more investment on their part. In short I think we’ll see more HTTPS MiTM and prohibition of BYoD.”</p>
+      <p>Microsoft’s networking team noted: “Providing encrypted DNS support without breaking existing Windows device admin configuration won’t be easy.</p>
+      <p>“However, <a href="https://news.microsoft.com/speeches/satya-nadella-microsoft-inspire-2019/">at Microsoft we believe that</a> “we have to treat privacy as a human right. We have to have end-to-end cybersecurity built into technology.”</p>
+      <related>
+        <a href="https://www.cbronline.com/news/digital-peace-microsoft"/>
+      </related>
+      <related>
+        <h4>Related News</h4>
+        <a href="https://www.cbronline.com/list/slaughter-and-may-tsb"/>
+        <a href="https://www.cbronline.com/news/cloud-back-up"/>
+        <a href="https://www.cbronline.com/news/azure-cost-management"/>
+      </related>
+    </article>
+  </body>
+</html>

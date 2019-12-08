@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://www.eurekalert.org/pub_releases/2019-11/miot-bcb112019.php"/>
+    <meta property="og:site_name" content="EurekAlert!"/>
+    <meta property="article:published_time" content="2019-11-20T05:00:00+00:00"/>
+    <meta property="og:title" content="Bot can beat humans in multiplayer hidden-role games"/>
+    <meta property="og:description" content="MIT researchers have developed a bot equipped with artificial intelligence that can beat human players in tricky online multiplayer games where player roles and motives are kept secret."/>
+  </head>
+  <body>
+    <article>
+      <h1>Bot can beat humans in multiplayer hidden-role games</h1>
+      <h2>Using deductive reasoning, the bot identifies friend or foe to ensure victory over humans in certain online games.</h2>
+      <address><time datetime="2019-11-20T05:00:00+00:00">20 Nov 2019, 05:00</time> by <a rel="author">Massachusetts Institute of Technology</a></address>
+      <p>MIT researchers have developed a bot equipped with artificial intelligence that can beat human players in tricky online multiplayer games where player roles and motives are kept secret.</p>
+      <p>Many gaming bots have been built to keep up with human players. Earlier this year, a team from Carnegie Mellon University developed the world's first bot that can beat professionals in multiplayer poker. DeepMind's AlphaGo made headlines in 2016 for besting a professional Go player. Several bots have also been built to beat professional chess players or join forces in cooperative games such as online capture the flag. In these games, however, the bot knows its opponents and teammates from the start.</p>
+      <p>At the Conference on Neural Information Processing Systems next month, the researchers will present DeepRole, the first gaming bot that can win online multiplayer games in which the participants' team allegiances are initially unclear. The bot is designed with novel "deductive reasoning" added into an AI algorithm commonly used for playing poker. This helps it reason about partially observable actions, to determine the probability that a given player is a teammate or opponent. In doing so, it quickly learns whom to ally with and which actions to take to ensure its team's victory.</p>
+      <p>The researchers pitted DeepRole against human players in more than 4,000 rounds of the online game "The Resistance: Avalon." In this game, players try to deduce their peers' secret roles as the game progresses, while simultaneously hiding their own roles. As both a teammate and an opponent, DeepRole consistently outperformed human players.</p>
+      <p>"If you replace a human teammate with a bot, you can expect a higher win rate for your team. Bots are better partners," says first author Jack Serrino '18, who majored in electrical engineering and computer science at MIT and is an avid online "Avalon" player.</p>
+      <p>The work is part of a broader project to better model how humans make socially informed decisions. Doing so could help build robots that better understand, learn from, and work with humans.</p>
+      <p>"Humans learn from and cooperate with others, and that enables us to achieve together things that none of us can achieve alone," says co-author Max Kleiman-Weiner, a postdoc in the Center for Brains, Minds and Machines and the Department of Brain and Cognitive Sciences at MIT, and at Harvard University. "Games like 'Avalon' better mimic the dynamic social settings humans experience in everyday life. You have to figure out who's on your team and will work with you, whether it's your first day of kindergarten or another day in your office."</p>
+      <p>Joining Serrino and Kleiman-Weiner on the paper are David C. Parkes of Harvard and Joshua B. Tenenbaum, a professor of computational cognitive science and a member of MIT's Computer Science and Artificial Intelligence Laboratory and the Center for Brains, Minds and Machines.</p>
+      <p>
+        <b>Deductive bot</b>
+      </p>
+      <p>In "Avalon," three players are randomly and secretly assigned to a "resistance" team and two players to a "spy" team. Both spy players know all players' roles.</p>
+      <p>During each round, one player proposes a subset of two or three players to execute a mission. All players simultaneously and publicly vote to approve or disapprove the subset. If a majority approve, the subset secretly determines whether the mission will succeed or fail. If two "succeeds" are chosen, the mission succeeds; if one "fail" is selected, the mission fails. Resistance players must always choose to succeed, but spy players may choose either outcome.</p>
+      <p>The resistance team wins after three successful missions; the spy team wins after three failed missions.</p>
+      <p>Winning the game basically comes down to deducing who is resistance or spy, and voting for your collaborators. But that's actually more computationally complex than playing chess and poker. "It's a game of imperfect information," Kleiman-Weiner says. "You're not even sure who you're against when you start, so there's an additional discovery phase of finding whom to cooperate with."</p>
+      <p>DeepRole uses a game-planning algorithm called "counterfactual regret minimization" (CFR) -- which learns to play a game by repeatedly playing against itself -- augmented with deductive reasoning. At each point in a game, CFR looks ahead to create a decision "game tree" of lines and nodes describing the potential future actions of each player. Game trees represent all possible actions (lines) each player can take at each future decision point. In playing out potentially billions of game simulations, CFR notes which actions had increased or decreased its chances of winning, and iteratively revises its strategy to include more good decisions. Eventually, it plans an optimal strategy that, at worst, ties against any opponent.</p>
+      <p>CFR works well for games like poker, with public actions -- such as betting money and folding a hand -- but it struggles when actions are secret. The researchers' CFR combines public actions and consequences of private actions to determine if players are resistance or spy.</p>
+      <p>The bot is trained by playing against itself as both resistance and spy. When playing an online game, it uses its game tree to estimate what each player is going to do. The game tree represents a strategy that gives each player the highest likelihood to win as an assigned role. The tree's nodes contain "counterfactual values," which are basically estimates for a payoff that player receives if they play that given strategy.</p>
+      <p>At each mission, the bot looks at how each person played in comparison to the game tree. If, throughout the game, a player makes enough decisions that are inconsistent with the bot's expectations, then the player is probably playing as the other role. Eventually, the bot assigns a high probability for each player's role. These probabilities are used to update the bot's strategy to increase its chances of victory.</p>
+      <p>Simultaneously, it uses this same technique to estimate how a third-person observer might interpret its own actions. This helps it estimate how other players may react, helping it make more intelligent decisions. "If it's on a two-player mission that fails, the other players know one player is a spy. The bot probably won't propose the same team on future missions, since it knows the other players think it's bad," Serrino says.</p>
+      <p>
+        <b>Language: The next frontier</b>
+      </p>
+      <p>Interestingly, the bot did not need to communicate with other players, which is usually a key component of the game. "Avalon" enables players to chat on a text module during the game. "But it turns out our bot was able to work well with a team of other humans while only observing player actions," Kleiman-Weiner says. "This is interesting, because one might think games like this require complicated communication strategies."</p>
+      <p>Next, the researchers may enable the bot to communicate during games with simple text, such as saying a player is good or bad. That would involve assigning text to the correlated probability that a player is resistance or spy, which the bot already uses to make its decisions. Beyond that, a future bot might be equipped with more complex communication capabilities, enabling it to play language-heavy social-deduction games -- such as a popular game "Werewolf" --which involve several minutes of arguing and persuading other players about who's on the good and bad teams.</p>
+      <p>"Language is definitely the next frontier," Serrino says. "But there are many challenges to attack in those games, where communication is so key."</p>
+      <hr/>
+      <p>
+        <b>Related links</b>
+      </p>
+      <p>Paper: "Finding Friend and Foe in Multi-Agent Games."</p>
+      <p>
+        <a href="http://arxiv.org/pdf/1906.02330.pdf">http://arxiv.​org/​pdf/​1906.​02330.​pdf</a>
+      </p>
+    </article>
+  </body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://css-tricks.com/jamstack-fugu-and-houdini/"/>
+    <meta property="og:site_name" content="CSS-Tricks"/>
+    <meta property="article:published_time" content="2019-11-19T18:49:52+00:00"/>
+    <meta property="og:title" content="JAMstack, Fugu, and Houdini"/>
+    <meta property="og:description" content="What has me really excited about building websites recently is the fact that we, as front-end developers, have the power to do so much more. Only a few"/>
+  </head>
+  <body>
+    <article>
+      <h1>JAMstack, Fugu, and Houdini</h1>
+      <address>
+        <time datetime="2019-11-19T18:49:52+00:00">19 Nov 2019, 18:49</time>
+      </address>
+      <p>What has me really excited about building websites recently is the fact that we, as front-end developers, have the power to do so much more. Only a few years ago, I would need a whole team of developers to accomplish what can now be done with just a few amazing tools.</p>
+      <p>Although the projects/tools/technologies are almost endless, in this article I'd like to talk about the top three that have me the most excited about building websites today, and for the future.</p>
+      <h3>Serverless and the JAMstack</h3>
+      <p>Serverless functions, which are really just server-side functions that you don't host yourself, have been around for a few years, but they've really picked up in the past year or so. They allow us to host simple node functions that don't require a permanent state and can be called from a frontend website the way we would call any other server-side API.</p>
+      <p>Serverless functions have really changed the game for me and I like to think that they did for frontend developers what sites like Squarespace did for non-developers. For the latter group, they no longer need a developer to build something simple like a portfolio website. For us frontend developers, we no longer need a backend developer to accomplish tasks like creating a contact form on a website. Things that really we should never have needed a whole API to do in the first place!</p>
+      <p>The popularity of serverless functions has led to the creation of a new tech stack: JavaScript, APIs, and Markup (<a href="https://jamstack.org/">JAMstack</a>). I really love the concept of the JAMstack because it’s a move to more static, performant, websites, which I’m a big fan of. If you want to learn more about this stack, <a href="https://jamstackconf.com/">JAMstack_conf</a> is a great conference to attend. I spoke at this year's conference in San Francisco about using headless Chrome and Cloudinary to create progressively enhanced dynamic content (long title, I know). You can watch my talk below.</p>
+      <figure>
+        <iframe src="https://www.youtube.com/embed/rm58d5proWI" width="560" height="315" data-service="Youtube" scrolling="no"/>
+      </figure>
+      <h3>Project Fugu</h3>
+      <p><a href="https://www.chromium.org/teams/web-capabilities-fugu">Project Fugu</a> is an initiative started by the Chromium team to bring to the web as many capabilities that are available to native applications as possible. A lot of these features are small and incremental, but the sum of the parts is going to make a huge change in the way we build progressive web applications.</p>
+      <p>One of the APIs I'm really looking forward to is the <a href="https://wicg.github.io/native-file-system/">Native File System API</a>, which will allow users of websites the ability to grant access to files on their system. A great use case for this would be Figma, the online interface design tool. Instead of having files "saved" online-only, they could directly work with files on your machine, the same way that native applications do!<br/>Some other APIs I think are interesting are:</p>
+      <ul>
+        <li>Wake Lock API - will allow websites to prevent the device from dimming or falling asleep</li>
+        <li>Contacts Picker API - will allow websites to access contacts from the user’s device</li>
+        <li>Get Installed Related Apps API - will allow websites to check if a native application is ins</li>
+      </ul>
+      <p>You can <a href="https://goo.gle/fugu-api-tracker">view the full list of APIs</a>.</p>
+      <h3>CSS Houdini</h3>
+      <p>Although Houdini <a href="https://ishoudinireadyyet.com/">isn't exactly ready yet</a>, it's probably the technology I am most excited for as a lover of CSS because I believe it will be a true game-changer in how we build websites.</p>
+      <p>Houdini is a collection of APIs that exposes "hooks" into certain parts of the browser's rendering engine. This gives us low-level access to the different stages that which CSS is applied, allowing us to essentially create our own CSS!</p>
+      <p>A great example of this is using the Layout Houdini API to create the infamous <a href="https://googlechromelabs.github.io/houdini-samples/layout-worklet/masonry/">masonry layout</a> as a new value for the display property. Once these APIs are out, the possibilities for what we will be able to create will be endless!</p>
+    </article>
+  </body>
+</html>

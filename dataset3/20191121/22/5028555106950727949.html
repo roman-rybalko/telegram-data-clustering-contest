@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://arstechnica.com/information-technology/2019/11/louisiana-was-hit-by-ryuk-triggering-another-cyber-emergency/"/>
+    <meta property="og:site_name" content="Ars Technica"/>
+    <meta property="article:published_time" content="2019-11-21T22:15:48+00:00"/>
+    <meta property="og:title" content="Louisiana was hit by Ryuk, triggering another cyber-emergency"/>
+    <meta property="og:description" content="From Nunavut to Campeche, ransomware rolls along."/>
+  </head>
+  <body>
+    <article>
+      <h1>Louisiana was hit by Ryuk, triggering another cyber-emergency</h1>
+      <h2>From Nunavut to Campeche, ransomware rolls along.</h2>
+      <address><time datetime="2019-11-21T22:15:48+00:00">21 Nov 2019, 22:15</time> by <a rel="author">Sean Gallagher</a></address>
+      <p>In October, the <a href="https://arstechnica.com/information-technology/2019/10/fbi-warns-of-major-ransomware-attacks-as-criminals-go-big-game-hunting/">Federal Bureau of Investigation issued a warning</a> of increased targeting by ransomware operators of "big game"—targets with deep pockets and critical data that were more likely to pay ransoms to restore their systems. The past week has shown that warning was for good reason.</p>
+      <p>On November 18, a ransomware attack caused Louisiana's Office of Technology Services to shut down parts of its network, including the systems of several major state agencies. These included the governor's office, the Department of Health (including Medicare systems), the Department of Children and Family Services, the Department of Motor Vehicles, and the Department of Transportation. Louisiana Governor John Bel Edwards activated the state's cybersecurity response team.</p>
+      <figure>
+        <iframe data-src="https://twitter.com/LouisianaGov/status/1196558129753919488?ref_src=twsrc%5Etfw" data-embed-type="twitter-tweet" width="100%" height="0" data-service="Twitter" scrolling="no" nowide=""/>
+      </figure>
+      <p>While some services have been brought back online—in some cases, within hours—others are still in the process of being restored. Most of the interrupted services were caused by "our aggressive actions to combat the attack," according to Louisiana Commissioner of Administration Jay Dardenne. "We are confident we did not have any lost data, and we appreciate the public's patience as we continue to bring services online over the next few days."</p>
+      <h3>We will Ryuk you (or DopplelPaymer you)</h3>
+      <p>The state did not pay the ransom demanded by attackers, who—based on the analysis of several researchers—were using a variant of the same Ryuk ransomware used in attacks on several Louisiana school districts' networks in July. That attack prompted Gov. Edwards to <a href="https://arstechnica.com/tech-policy/2019/07/louisiana-declares-state-emergency-in-response-to-ransomware-attack/">declare a state of emergency</a> to allow for state agencies to assist local governments in their recovery from the attack. Ryuk attacks this summer also affected <a href="https://arstechnica.com/information-technology/2019/07/ryuk-ryuk-ryuk-georgias-courts-hit-by-ransomware/">Georgia's court system and at least two Florida cities</a>.</p>
+      <p>On November 15, the Charles-Nicolle University (CHU) Hospital in Rouen, France, <a href="https://www.lemonde.fr/pixels/article/2019/11/18/frappe-par-une-cyberattaque-massive-le-chu-de-rouen-force-de-tourner-sans-ordinateurs_6019650_4408996.html">was hit by ransomware that spread across five sites</a>. The hospital was forced to shut down its networks to prevent the malware from spreading, according to a report from Le Monde, and staff were forced to use paper and pencil for tracking patients. While there were reports of a demand of a ransom payment of 1,500 euros for each of the over 6,000 computers affected at the hospital, a hospital spokesperson denied that a ransom demand had been made and said none would be paid. As of November 18, about 25% of the hospital's applications had been restored.</p>
+      <p>Also on November 15, the government of the Canadian territory of Nunavut suffered a ransomware outbreak that affected about 5,000 computers territory-wide. That attack, according to Nunavut government spokesperson Chris Puglia, used a variant of DoppelPaymer ransomware; the same malware hit <a href="https://www.bleepingcomputer.com/news/security/mexicos-pemex-oil-suffers-ransomware-attack-49-million-demanded/">Mexico's state-owned oil company PEMEX</a> on November 12.</p>
+      <figure>
+        <img src="https://cdn.arstechnica.net/wp-content/uploads/2019/11/tor-payment-site.jpg"/>
+        <figcaption>The PEMEX Tor payment site was widely posted on social media.</figcaption>
+      </figure>
+      <p>Despite documentation of the Pemex attack, company executives have continued to deny the company was affected.</p>
+      <figure>
+        <iframe data-src="https://twitter.com/Pemex/status/1195869919000375296?ref_src=twsrc%5Etfw" data-embed-type="twitter-tweet" width="100%" height="0" data-service="Twitter" scrolling="no" nowide=""/>
+      </figure>
+      <p>According to security researcher Vitali Kremez, both the Nunavut and PEMEX ransomware attacks used the same Tor "hidden service" Web portal. Within the portal, the actors behind the ransomware left the note rationalizing their attack: "We don't care who you are and why this happens. No one died. That's all."</p>
+      <p>While they may or may not use the same type of communications with victims as opportunistic attacks—DoppelPaymer uses a Web portal similar to those used by opportunistic attacks, while Ryuk keeps its communications over email—both of these attacks were targeted rather than opportunistic. While they may use similar initial compromise methods as opportunistic attacks (phishing, automated vulnerability scanning and exploitation, or attacks using Remote Desktop Protocol), targeted attacks are the product of researching a compromised network and releasing the ransomware only after determining who the target is (and how likely they will be to pay). As a result, they require less work for attackers because they reduce the number of victims they need to communicate with.</p>
+      <h3>Diminishing returns due to backups</h3>
+      <p>While it's not certain whether PEMEX did or did not pay the ransom demanded from the company, the others did not pay—largely because they had disaster recovery and backup systems in place and were able to restore functionality after it was interrupted. And that, according to senior FBI cyber officials, is a key to ending the continuing growth of targeted ransomware attacks.</p>
+      <p>In a press briefing attended by Ars Technica, senior cyber officials of the FBI speaking on background said that the only real way to stop ransomware attacks was improved "cyber hygiene." That includes backups and software updates. As part of its effort to help raise state and local agencies' awareness around ransomware, the FBI recently <a href="https://www.cyberscoop.com/fbi-ransomware-summit/">hosted a ransomware summit in Pittsburgh</a> at Carnegie Mellon University.</p>
+      <p>But because of a number of issues, state and local agencies, as well as hospitals, have been an easy target for ransomware operators because of their reliance on legacy systems and lack of organic information security skills. This year alone, there have been over 100 reported ransomware attacks against state and local governments.</p>
+      <related>
+        <h4>Further Reading</h4>
+        <a href="https://arstechnica.com/information-technology/2019/07/ryuk-ryuk-ryuk-georgias-courts-hit-by-ransomware/"/>
+      </related>
+    </article>
+  </body>
+</html>

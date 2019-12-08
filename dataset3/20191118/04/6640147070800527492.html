@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://www.tomshw.it/hardware/intel-ponte-vecchio-gpu-architettura-xe/"/>
+    <meta property="og:site_name" content="Tom's Hardware"/>
+    <meta property="article:published_time" content="2019-11-18T04:50:00+00:00"/>
+    <meta property="og:title" content="Ponte Vecchio, l'acceleratore Intel basato su GPU Intel Xe per supercomputer exascale | Tom's Hardware"/>
+    <meta property="og:description" content="Intel ha svelato i primi dettagli su Ponte Vecchio, acceleratore a 7 nanometri basato su architettura Xe, destinato ai supercomputer exascale in arrivo nel 2021."/>
+  </head>
+  <body>
+    <article>
+      <h1>Ponte Vecchio, l'acceleratore Intel basato su GPU Intel Xe per supercomputer exascale | Tom's Hardware</h1>
+      <address>
+        <time datetime="2019-11-18T04:50:00+00:00">18 Nov 2019, 04:50</time>
+      </address>
+      <p>Sul finire del 2017 <b>Intel</b> annunciò l’intenzione di tornare nel mondo delle <b>GPU dedicate</b>, dando in mano le chiavi dell’intera operazione a <b>Raja Koduri</b>, ex capo del Radeon Technologies Group di AMD. Koduri, da allora chief architect di Intel e senior vice president del nuovo Core e Visual Computing Group, ha lavorato in questi anni su quella che conosciamo come<b> architettura Xe</b>, un progetto in grado di scalare dai computer ultramobile fino ai supercomputer exascale e all’allenamento di intelligenze artificiali, il tutto sfruttando un unico modello di programmazione.</p>
+      <figure>
+        <img src="https://www.tomshw.it/images/images/2019/11/intel-ponte-vecchio-63552.768x432.jpg"/>
+      </figure>
+      <p>Intel non è ancora pronta a discutere nel dettaglio come applicherà l’architettura Xe a tutti i segmenti di mercato, ma in queste ore ha diffuso le prime informazioni su “<b>Ponte Vecchio</b>”, il suo <b>primo acceleratore di classe exascale in arrivo nel 2021 dedicata al settore HPC, quello dei supercomputer. </b>Ponte Vecchio come uno dei simboli della città di Firenze, il caratteristico ponte che attraversa il fiume Arno.</p>
+      <p><b>Tre i tratti “hardware” distintivi</b> di Intel Ponte Vecchio: l’uso del <b>processo produttivo a 7 nanometri per la realizzazione dei chiplet</b>, le tecnologie di packaging <b>Foveros ed EMIB</b> e l’interconnessione <b>Xe Link</b> (basata sullo standard <a href="http://www.tomshw.it/hardware/compute-express-link-cxl/">CXL</a> – Compute Express Link -, a sua volta derivato dal PCIe 5.0) per il collegato tra GPU.</p>
+      <p>Passando all’architettura Xe, almeno in questa incarnazione, troviamo un <i>flexible data-parallel vector matrix engine</i> cruciale per le operazioni di intelligenza artificiale. Xe assicura inoltre un throughput con calcoli in virgola mobile a doppia precisione (FP64) elevato, requisito importante non per l’ambito AI ma per carichi tradizionali come le simulazioni meteo, la ricerca di combustibili fossili, ecc. Infine una <b>quantità elevata di cache e bandwidth di memoria </b>(probabilmente grazie all’uso di memoria HBM), che in base alla slide sarà collegata direttamente ai singoli chiplet di calcolo.</p>
+      <slideshow>
+        <figure>
+          <img src="https://www.tomshw.it/images/images/2019/11/intel-ponte-vecchio-63550.768x432.jpg"/>
+        </figure>
+        <figure>
+          <img src="https://www.tomshw.it/images/images/2019/11/intel-ponte-vecchio-63551.768x432.jpg"/>
+        </figure>
+      </slideshow>
+      <p>Vedremo Ponte Vecchio a bordo del <b>supercomputer Aurora</b> che sarà installato presso l’Argonne National Laboratory nel <b>2021</b>, ma anche in HPC creati da Atos e Lenovo. Si tratterà di un sistema exascale, ossia capace di svolgere almeno un exaFLOP di calcoli al secondo (un miliardo di miliardi di operazioni al secondo).</p>
+      <p>In un singolo nodo di Aurora ci saranno <b>due CPU Xeon Scalabile “Sapphire Rapids” </b>(architettura post Ice Lake a 10 nanometri) e <b>sei GPU Ponte Vecchio</b> unite da un’architettura di memoria unificata e una connettività pensata per garantire bassa latenza e alto bandwidth. Complessivamente si parla di oltre 10 petabyte di memoria, 230 petabyte di archiviazione e oltre 200 rack.</p>
+      <figure>
+        <img src="https://www.tomshw.it/images/images/2019/11/intel-ponte-vecchio-63549.768x432.jpg"/>
+      </figure>
+      <p>Il tutto funzionerà insieme grazie <b>OneAPI</b>, un <b>modello di programmazione unificato basati</b> su standard industriali e specifiche aperte pensato per semplificare lo sviluppo tra diverse architetture. Facilità d’uso e prestazioni, ma anche l’addio a differenti codici base e linguaggi di programmazione, nonché strumenti e flussi di lavoro diversi.</p>
+      <p>Più nello specifico One API contiene un nuovo linguaggio di programmazione diretto e aperto, Data Parallel C++ (DPC++). È basato su C++, incorpora SYCL di Kronos Group ed estensioni sviluppate tramite un processo aperto insieme alla comunità.</p>
+      <p>Una scelta coraggiosa e ambiziosa quella di Intel, che però sembra quasi una strada obbligata visto che a differenza di altre realtà sta perseguendo, specie nel mondo delle intelligenza artificiali, una strategia basata su più prodotti: CPU, GPU, FPGA e acceleratori specializzati. Il tutto è definito dall’azienda xPU.</p>
+      <slideshow>
+        <figure>
+          <img src="https://www.tomshw.it/images/images/2019/11/intel-ponte-vecchio-63556.768x432.jpg"/>
+        </figure>
+        <figure>
+          <img src="https://www.tomshw.it/images/images/2019/11/intel-ponte-vecchio-63554.768x432.jpg"/>
+        </figure>
+        <figure>
+          <img src="https://www.tomshw.it/images/images/2019/11/intel-ponte-vecchio-63555.768x432.jpg"/>
+        </figure>
+        <figure>
+          <img src="https://www.tomshw.it/images/images/2019/11/intel-ponte-vecchio-63553.768x432.jpg"/>
+        </figure>
+      </slideshow>
+      <p>L’azienda ha reso disponibile OneAPI su Intel DevCloud, una sandbox di sviluppo per mettere a punto, testare e svolgere vari carichi di lavoro su CPU, GPU e FPGA. L’obiettivo è quello di permettere agli sviluppatori di prendere confidenza con OneAPI. Intel ha infine creato uno tool di migrazione che converte il codice CUDA in OneAPI, un chiaro tentativo di fare concorrenza al linguaggio di programmazione di Nvidia.</p>
+    </article>
+  </body>
+</html>

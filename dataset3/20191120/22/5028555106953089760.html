@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://arstechnica.com/gaming/2019/11/interview-with-guilty-gear-creator-daisuke-ishiwatari/"/>
+    <meta property="og:site_name" content="Ars Technica"/>
+    <meta property="article:published_time" content="2019-11-20T22:09:18+00:00"/>
+    <meta property="og:title" content="Ars talks fighting games with Guilty Gear creator Daisuke Ishiwatari"/>
+    <meta property="og:description" content="Daisuke talks netcode, game development, and the future of the franchise"/>
+  </head>
+  <body>
+    <article>
+      <h1>Ars talks fighting games with Guilty Gear creator Daisuke Ishiwatari</h1>
+      <h2>Daisuke talks netcode, game development, and the future of the franchise</h2>
+      <address><time datetime="2019-11-20T22:09:18+00:00">20 Nov 2019, 22:09</time> by <a rel="author">Aurich Lawson</a></address>
+      <p>A little over 20 years ago, when Daisuke Ishiwatari created <i>Guilty Gear</i>, popular fighting games like <i>Street Fighter</i> or <i>King of Fighters</i> tended to have a similar premise: gather the strongest warriors in the world and pit them against each other in a test of skill. Daisuke wanted a fighting game that was less grounded in the real world and reflected the wilder possibilities of manga and anime. (<i>Guilty Gear</i> was less grounded in a literal sense, too: characters could practically fly about the screen with mid-air moves, later leading to people referring to this style of anime-based fighters as "air dashers.") His vision was a war-torn future, full of magic, man-made bioweapons that turned on their creators (the eponymous Gears), and a diverse cast of heavy-metal-inspired characters players could choose from.</p>
+      <p><i>Guilty Gear</i> games are both very difficult to master and also very rewarding for those who put in the hours of study. If fighting games are music, <i>Guilty Gear</i> is jazz, free form and technical, allowing players to improvise and develop their own styles and personalities. It's beautiful in motion but difficult for outsiders to follow, and the hardcore reputation has led to many feeling intimidated about learning or following the games.</p>
+      <p>In summer 2019, a new <i>Guilty Gear</i> game was announced, and Daisuke began hinting that this time around, the game would be simpler and more accessible. He wanted more players to pick up the game, more people to be able to follow along with tournaments and play. That perhaps comes as welcome news for those curious about the game but put off by the effort required to learn. The long-time player base, however, expressed consternation. Was the game they know and love going to be dumbed down? Was the freedom of expression they adore going to be removed?</p>
+      <p>Last weekend's <a href="https://www.arcsystemworks.com/awt2019/en/">ArcRevo World Tour</a> in Irvine, California, was the final stop of a world tour for <i>Guilty Gear</i> and other Arc System Works games. There, the public got a first hands-on with a beta the new game, titled <i>Guilty Gear Strive</i>. I played a few sets but not enough to give detailed impressions (look for that in a later article when I get more time with it). I did get to sit down with Daisuke and talk about where he sees the series going, how to balance making the game accessible for new players while still keeping the hardcore happy, and what he thought about the <a href="https://arstechnica.com/gaming/2019/10/explaining-how-fighting-games-use-delay-based-and-rollback-netcode/">state of fighting-game netcode</a>.</p>
+      <p>You can watch the announcement trailer below, featuring the first six characters revealed for the game, and get a sense for how the game looks in motion (in a word, gorgeous) before reading Daisuke's thoughts.</p>
+      <figure>
+        <iframe src="https://www.youtube.com/embed/DQSC4w_zMWQ" width="980" height="550" data-service="Youtube" scrolling="no"/>
+      </figure>
+      <p>
+        <i>(This interview was conducted through a Japanese translator and has been lightly edited for clarity).</i>
+      </p>
+      <p>
+        <b><i>You've been working on </i>Guilty Gear<i> for over 20 years. As the original creator, can you talk about what the game means to you now? What keeps it fresh and interesting to you as a creator?</i></b>
+      </p>
+      <p>For me—and this is gonna be kind of fighting games in general, and I think <i>Guilty Gear</i> is definitely part of that—in the PlayStation One era it was really kind of an extension of action games. And in fact, internally, we would call games like fighting games, what we know of them as now, more of like a "battle tool." It's like a tool, a programming tool, specifically for the battle portion of something. But nowadays, I really feel fighting games have turned into a tool to connect people and to make friends. So like here, the reason I am able to come to the US right now, we have people from around the world gathered here trying to make friends and building a community. I think it's a tool to connect people, especially with the Internet and networks evolving the way they have. So that's kind of what I think keeps it fresh for me.</p>
+      <figure>
+        <video src="https://cdn.arstechnica.net/wp-content/uploads/2019/11/sol-idle.gif" autoplay="" loop=""/>
+      </figure>
+      <p>
+        <b><i>As the arcades becoming less relevant in Japan and the home audience becomes the primary focus for fighting games, does that affect how you think about developing </i>Guilty Gear<i>?</i></b>
+      </p>
+      <p>I wouldn't necessarily say what I'm doing is related to the arcade's performance. Really what it was for me was when I went to a lot of overseas events because of <i>Guilty Gear's</i> rising popularity. I saw a lot of fans who were, of course, not Japanese. And then these fans would then come to Japanese events and meet other people. And the way they were making friends to me was really kind of the purpose and the big motivator of how I felt this was a tool to connect people, not necessarily what was happening with the arcade.</p>
+      <p>
+        <b><i>When designing a new </i>Guilty Gear<i>, how do you think about the balance of bringing back old characters versus making new ones?</i></b>
+      </p>
+      <p>Especially for the existing characters, when we consider the balance, like with Sol or Ky, I think people have a way they imagine they're supposed to be played, a way that they feel that they're designed to be played. And when we make a completely new <i>Guilty Gear</i> like this one, I think we need to both shift and kind of reset that mindset. So it kind of opens up the possibility of, well, maybe Sol could be played like this, or maybe he's more of a character that would do those type of things. With a new game, it's a reexamination of all the existing characters and then adding other ways to play the game in addition. So that's how we maintain overall balance.</p>
+      <p>
+        <b><i>Was it tempting to throw the old characters out, like Capcom did with </i><a href="https://arstechnica.com/tag/street-fighter/">Street Fighter</a> III<i>, when it was Ken and Ryu returning and everyone else was new?</i></b>
+      </p>
+      <p>Incidentally, <i>Street Fighter III</i> is one of my favorite fighting games. And I wouldn't necessarily say we're going to that extent. Kind of the approach for this is—let's say you take Ryu, the protagonist of the story, something we imagine a lot of the players are going to pick. And he was kind of really based around his shoryuken [Ryu's dragon-punch uppercut]. So the idea is, well, what if we take that away from his toolkit? And I'm sure most of the conversation would be "No, it's impossible, etc." But at least posing those questions and seeing what they might lead to is kind of the process we're going through.</p>
+      <p>
+        <b>Guilty Gear<i> players are very passionate about the game, and some have been playing for 20 years. What do you think keeps them playing it?</i></b>
+      </p>
+      <p>That might frankly go a little bit beyond my understanding of human psychology [laughs]. What we are creating is a very honed and a very fine-tuned game, stuff for the true mania of the world. I think the people who are able to follow that development and evolution are the ones who are naturally attracted to it.</p>
+      <blockquote>“The high-level concept is to make it look easy, make it easier to spectate. But by no means does that mean that we're shaving away level of depth.”</blockquote>
+      <p>
+        <i>
+          <b>If I was a long-time player who was worried that the game is changing too much, what would you say to me?</b>
+        </i>
+      </p>
+      <p>I think in a lot of interviews and when we speak with the public, the words "simple" or "simplified" or "accessibility" have been tossed around a lot. That's not necessarily the intent of the development team. I think that's just, in the limited language and vocabulary that exists, the only way that we were able to describe what's actually going on. That's certainly not the dev team's intent or my intent. I think it's very important to kind of understand the difference which feel we like we really do, in terms of what makes our games different from other company's games. So the high-level concept is to make it look easy, make it easier to spectate. But by no means does that mean that we're shaving away level of depth. That's not our solution to make it easier to watch. That's a big topic of discussion for the development team.</p>
+      <p>
+        <b><i>To follow that up, if I'm a new player, not a </i>Guilty Gear<i> player, what's your pitch to me? Why should I play your game?</i></b>
+      </p>
+      <p>Because we're dealing with a video game, I believe that it's impossible to convince someone or pitch someone strictly verbally to bring them onto the side of playing <i>Guilty Gear</i>. I don't think there's any amount of explanation or pitches that's going to work. My suggestion would be, as they walk past, they see the game play. And they'll want to play it. I think that the old style of Arc System Works games and how we made them would fail in that department. Especially because it's overly complex, the HUD is overwhelming, you can't tell what is happening on the screen. A large part of our current development philosophy is simplifying it for the spectator. Making it look really fun, and that's the thing I think that's going to attract players.</p>
+      <figure>
+        <img src="https://cdn.arstechnica.net/wp-content/uploads/2019/11/guilty-gear-strive-logo.jpg"/>
+        <figcaption><i>Guilty Gear Strive</i>'s name is a bit of a visual pun; being the fourth game in the series, the IV in the logo is highlighted.</figcaption>
+      </figure>
+      <p>
+        <b><i>Not just </i>Guilty Gear—<i>you've been thinking about fighting games for 20 years. ArcSys is also making games like </i>GranBlue Fantasy Versus<i> and </i>Dragon Ball Fighterz<i>. How do you get more people to not be scared of trying fighting games?</i></b>
+      </p>
+      <p>I think there are a lot of people who just by looking at a game, with it being a fighting game, will say, "Nah, I don't do fighting games." You really can't explain it to someone and expect them to want to play something. It's kind of related to the previous question as well. My job is, I feel, is to show people that it's accessible. It's like, "Oh, well, I think I could do what that guy just did on the screen." So while they're spectating, give them the perception that "Oh, this is more possible than I thought it was."</p>
+      <p>
+        <b><i>You said in a <a href="https://www.destructoid.com/daisuke-ishiwatari-creator-of-guilty-gear-opens-up-about-arc-s-legacy-his-crazy-inspirations-and-the-switch-487855.phtml">2018 interview with Destructoid</a> that "</i>Dragon Ball Fighterz<i> was developed based on the lessons learned through previous </i>Guilty Gear<i> and </i>BlazBlue<i> titles." Were there lessons from those games that informed the new </i>Guilty Gear<i>?</i></b>
+      </p>
+      <p>I would probably say "no," at least with respect to the gameplay aspects. Each director and person overseeing their project has their own policy, if you will, on how they want to sculpt the game and shape the experience. So in terms of that infusing itself back into <i>Guilty Gear</i>, I would say there isn't much. If anything, it's more the experience of the game itself, like lobbies for example, or match-making. We'll share that type of information, the stuff that isn't related to once you enter the game, the overall experience. And that is something that they'll say, "hey, you know I tried this kind of style and it worked" or "this wasn't very effective." And that kind of information we share.</p>
+      <blockquote>“If you ask me personally, I'm the guy who definitely errs on the side of hardcore.”</blockquote>
+      <p>
+        <i>
+          <b>The big hot topic in the fighting-game community now is rollback netcode. I interviewed French Bread battle director Kamone Serizawa earlier this year at Evo, and he said that adding rollback netcode to his company's game would require a "super programmer." What is the ArcSys response to the demand for rollback netcode?</b>
+        </i>
+      </p>
+      <p>Where we are right now at ArcSys, in terms of rollback netcode, is we haven't really arrived at the conclusion that we'll need a super programmer as much, as the engineering team is kind of divided, actually. There are some that say this would be really good and others that say, you know, implementing this wouldn't really work with the <i>Guilty Gear</i> system. And it makes sense for a game like <i>Street Fighter</i>, but how <i>Guilty Gear</i> is designed—this wouldn't really fit the bill. So we're actually right in the middle of investigating on the engineering team how that might look.</p>
+      <p>[The current game, <i>Guilty Gear Xrd</i>, used delay-based netcode, which creates generally inferior results to rollback netcode. For more on the differences, and how rollback works, you can <a href="https://arstechnica.com/gaming/2019/10/explaining-how-fighting-games-use-delay-based-and-rollback-netcode/">check out our deep dive</a>. Here's a video clip from that article showing how the frame delay can fluctuate.]</p>
+      <figure>
+        <video src="https://cdn.arstechnica.net/wp-content/uploads/2019/10/UnripeCheapIbisbill.mp4?_=1" autoplay="" loop=""/>
+        <figcaption><i>Guilty Gear Xrd</i> changes the input delay on the fly to hopefully avoid needing to pause the game and wait for inputs. Sometimes the fluctuations are small, and sometimes they can get out of control.</figcaption>
+      </figure>
+      <p>
+        <b><i>Another big conversation in the fighting game community right now, partially because of the new </i>Guilty Gear<i>, is the topic of chip kill [dying when you have no health left and are hit by a special move even when you are blocking] and how chip kill has been taken out of this build of </i>Guilty Gear<i>, even though there are defensive tools to mitigate it, and it feels too simple. You are a </i>Street Fighter: Third Strike<i> fan, and the big famous moment in that game, <a href="https://www.youtube.com/watch?v=JzS96auqau0">Evo Moment 37</a>—the Daigo parry versus Justin Wong—only occurred because of the threat of chip kill. What's the thinking behind removing it?</i></b>
+      </p>
+      <p>Again, nothing you see in this game is completely locked in. So to your point, it's still in a very experimental stage, and really, we're kind of testing a lot of different angles. If you ask me personally, I'm the guy who definitely errs on the side of hardcore. So I love these complex mechanics and systems, and you know, with everything kind of going into a lot of network-based fighting and communities, we accept the input queue, like pre-inputs [referring to modern fighting games having a larger input buffer, making button timing less strict] which you didn't need in the arcades. And that's something that I personally kind of like. So I think there's definitely two schools of thought with regard to this. But you know, we're always trying to balance the hardcore experience versus the easy-to-spectate side of things. We're experimenting—we're taking surveys and seeing where the consensus is going to be. It's just one experiment for now.</p>
+      <figure>
+        <img src="https://cdn.arstechnica.net/wp-content/uploads/2019/11/guilty-gear-strive-ui.jpg"/>
+        <figcaption>The beta build of <i>Guilty Gear Strive</i>'s UI is not "close to being final whatsoever," and it shows.</figcaption>
+      </figure>
+      <p>
+        <i>
+          <b>How final is the user interface right now? Is it very, very early? Is it too early to talk about? Are there things that are being tried that might stay?</b>
+        </i>
+      </p>
+      <p>With respect to the thought process behind the interface, what I had told our UI design team was that I want something that, again, goes back to the very high-level philosophy and concept of being easy to spectate and watch. It's kind of become <i>Guilty Gear's</i> identity, but the very complex HUD, you know, it's very intricate and very detailed. We're trying to deviate from that a bit and see what a different approach might be. With respect to the version you see right now, I don't think that's close to being final whatsoever. But to kind of explain the thought process or the inception of that, it is to make it easier to watch for the viewer.</p>
+      <p>
+        <i>
+          <b>The one question I will ask, then, and then we can leave the UI topic since it's unfinished: what is the thinking behind having the character portrait move with the life bar?</b>
+        </i>
+      </p>
+      <p>With the <i>Guilty Gear</i> interface, especially with <i>Guilty Gear</i> players—I don't know where this was done, but I read an article or a survey that found that <i>Guilty Gear</i> players compared to other fighting games have a tendency to look all around the screen at any given time. They have the most eye movement of any other fighting game. We thought this was because there is a lot of vital information scattered across screen. So one thing we're trying to do—and to their credit, this is probably what makes <i>Guilty Gear</i> players <i>Guilty Gear</i> players, they're able to look around and absorb all the information and make decisions—but with that said, we're trying to reduce the number of focal points on the screen at any given time. So this is, again, another experiment to bring everything toward a more single focal point.</p>
+      <figure>
+        <video src="https://cdn.arstechnica.net/wp-content/uploads/2019/11/kykiske-xrd-stance.gif" autoplay="" loop=""/>
+      </figure>
+      <p>
+        <b><i>Last question, and then I think I've probably taken enough of your time. When </i>Guilty Gear Xrd<i> first game out, it was very cutting-edge with regards to doing 3D graphics that looked like hand-drawn sprites. That was taken a little further with </i>Dragon Ball Fighterz<i>, which almost looks better than the source anime. With the new </i>Guilty Gear<i>, the engine is obviously being taken a step further. What sort of things are you exploring visually that you couldn't do before?</i></b>
+      </p>
+      <p>That's a very interesting and good point that you bring up because I agree with you that <i>Dragon Ball Fighterz</i> and even <i>Granblue Versus</i> are kind of evolution of what we've done with <i>Xrd</i>. So if you take that expression and then crank it up to 11, that's what you're going to get. With that said, you know, it's already been done. So there's no point in <i>Guilty Gear</i> going back to that point, and we needed to find a new form of expression, something else that we could do. Unlike <i>Xrd</i>, where we relied heavily on anime-type expressions, the big reference point has been live-action movies. We're really trying to push the seamless experience really hard. So we won't suddenly cut to the character's face; [instead] we're trying to make all the camera movement dynamic and seamless. That I think is a huge step in our visual expression and experimentation.</p>
+      <p>
+        <i>
+          <b>Thank you very much for your time!</b>
+        </i>
+      </p>
+      <p><i>Guilty Gear Strive</i> is currently expected for release in late 2020.</p>
+    </article>
+  </body>
+</html>

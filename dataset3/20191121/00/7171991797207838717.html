@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://hackaday.com/2019/11/21/training-bats-in-the-random-forest-with-the-confusion-matrix/"/>
+    <meta property="og:site_name" content="Hackaday"/>
+    <meta property="article:published_time" content="2019-11-21T00:00:00+00:00"/>
+    <meta property="og:title" content="Training Bats In The Random Forest With The Confusion Matrix"/>
+    <meta property="og:description" content="When exploring the realm of Machine Learning, it’s always nice to have some real and interesting data to work with. That’s where the bats come in – they’re fascinating anima…"/>
+  </head>
+  <body>
+    <article>
+      <h1>Training Bats In The Random Forest With The Confusion Matrix</h1>
+      <address><time datetime="2019-11-21T00:00:00+00:00">21 Nov 2019</time> by <a rel="author" href="https://hackaday.com/author/patrickwhetman/" target="_blank">Pat Whetman</a></address>
+      <p>When exploring the realm of Machine Learning, it’s always nice to have some real and interesting data to work with. That’s where the bats come in – they’re fascinating animals that emit very particular ultrasonic calls that can be recorded and analysed with computer software to get a fairly good idea of what species they are. When analysed with an FFT spectogram, we can see the individual call shapes very clearly.</p>
+      <slideshow>
+        <figure>
+          <img src="https://i0.wp.com/hackaday.com/wp-content/uploads/2019/10/noctules_03.png?w=196&amp;h=196&amp;crop=1&amp;ssl=1"/>
+          <figcaption>Nyctalus noctula (noctule bat)</figcaption>
+        </figure>
+        <figure>
+          <img src="https://i1.wp.com/hackaday.com/wp-content/uploads/2019/10/nattereri_01.png?w=196&amp;h=196&amp;crop=1&amp;ssl=1"/>
+          <figcaption>Myotis nattereri (natterera’s bat)</figcaption>
+        </figure>
+        <figure>
+          <img src="https://i2.wp.com/hackaday.com/wp-content/uploads/2019/10/plecotus_01.png?w=196&amp;h=196&amp;crop=1&amp;ssl=1"/>
+          <figcaption>Plecotus auritus (brown long eared)</figcaption>
+        </figure>
+        <figure>
+          <img src="https://i2.wp.com/hackaday.com/wp-content/uploads/2019/10/comm_pip.png?w=196&amp;h=196&amp;crop=1&amp;ssl=1"/>
+          <figcaption>Pipistrellus pipistrellus (common pipistrelle)</figcaption>
+        </figure>
+      </slideshow>
+      <p>Creating an open source classifier for bats is also potentially useful for the world outside of Machine Learning as it could not only enable us to more easily monitor bats themselves, but also the knock on effects of modern farming methods on the natural environment. Bats feed on moths and other night flying insects which themselves have been decimated in numbers. Even in the depths of the countryside here in the UK these insects are a fraction of the population that they used to be 30 years ago, but nobody seems to have monitored this decline.</p>
+      <p>So getting back to our spectograms, it would be perfectly reasonable to throw these images at a convolutional neural network (CNN) and use an image feature-recognition strategy. But I wanted to explore the depths of the mysterious Random Forest.</p>
+      <figure>
+        <img src="https://hackaday.com/wp-content/uploads/2019/10/Classification-Random-Forest-Random-Forest-In-R-Edureka-2-381x300.png?w=250"/>
+      </figure>
+      <p>And what exactly is a Random Forest? As expected, the forest is comprised of trees, decision trees. It’s like playing a game of twenty questions. Sequential decisions are made, and each of these rule out some possible classifications. If each game of twenty questions is a tree, the Random Forest (RF) in the example below is composed of 4,000 trees and is like asking 4,000 people to play the game for you. We apply some kind of averaging formula to collate all the answers together and get a method for making the final decision that’s markedly better than if we’d done it alone.</p>
+      <figure>
+        <img src="https://hackaday.com/wp-content/uploads/2019/10/8.png?w=165"/>
+      </figure>
+      <p>When you play twenty questions, you ask about the defining features of the thing in question. The obvious place to start is the point in the call where the call is the loudest (shown in black in image on left), which would give us a frequency. So in the case of the brown eared bat, the number would be something like 30 kHz. We don’t even have to call it anything else – the trees will just process blindly all the numbers in a column of data not needing to know what they mean in the real world. However, as sentient beings, we can actually see the data if we want to and even see what features of the spectogram were most important. Maybe the maximum amplitude frequency is also important? We don’t know yet – we’ll let the decision trees decide that for themselves. The red line in the image on the left shows the distinctive shape of the pipistrelle echo location call, filtered by the software to produce a nice thin line from which we can now derive values for things such as upward slope and steepness.</p>
+      <p>Extracting the relevant features like this is incredibly important. A data scientist, in conjunction with a bat call expert, would now look at the whole range of bat calls and make educated guesses as to which features are worth looking at – maybe the way the call slopes or if it starts with a ‘bang’ of amplitude or not? They might produce several hundred different columns for the data set and prune them down to about twenty, discarding all the ones that the trees themselves decide not to use very much.</p>
+      <h3>Bring in the Bat Experts</h3>
+      <p>After a few false starts, I finally settled on <a href="https://github.com/paddygoat/bioacoustics/tree/master/Train_and_deploy_bats">this system</a> authored by Jean Marchal, Francois Fabianek and Christopher Scott. It’s basically a feature extraction package written in <code>R</code> that has been specifically targeted at bat and bird calls. There’s an easy to follow tutorial that downloads bird data and classifies one single bird and as someone of absolutely no previous experience with <code>R</code>, I was easily able to use it to cobble together a multi-class version that classified all the six species of bat that live near my home. I’m sure that there’s a more elegant way to implement in Random Forest, but I just classified each species separately and then combined the results. Please feel free to improve my method, but it does seem to work well.</p>
+      <p>The system is best run in <code>Rstudio</code> on Windows 10 and the whole thing installs seamlessly from start to finish. I also got it working in Ubuntu 18, but only from the command line using ‘$ Rscript Train_bats.R‘ . I never actually completed the official tutorial and found the data structure rather confusing to begin with. Thankfully, it turned out to be very simple. It seems that the system I created is a series of ‘binary classifiers’ that spits out a new confusion matrix for each species, which is trained against all the other species in the ‘data’ directory.</p>
+      <figure>
+        <img src="https://hackaday.com/wp-content/uploads/2019/10/confusion_matrix_3.png?w=294"/>
+      </figure>
+      <p>The species under investigation is the common pipistrelle – c_pip. During the automatic training and testing process, 1435 data points that were actually ‘not c_pip’ were correctly predicted as being ‘not c_pip’ … which is good! Furthermore, 880 labels which were actually c_pip were correctly predicted to be c_pip, which is also good. Unfortunately, 33 of the actual c_pip bats were wrongly predicted as not being that species and, even worse, 28 that were actually not c_pip were incorrectly predicted as being c_pip – damn! Thankfully, the percentages of incorrect predictions are fairly low – 2.2% and 3.1% respectively, in spite of only having 320 MB of bat data.</p>
+      <p>The results may be improved by working with more data, so if you’ve got any full spectrum <code>.wav</code> files lurking on your USB drives for the 17 species of UK bats, please send them to me! The recordings need to be in the order of 384 ks per sec (192 KHz) and not be distorted / clipped. Faint recordings are OK as they represent real life conditions. The other thing to mention is that the same species of bat in a different geographical location may well have different calls so it’s important to add one’s own local bat calls to the data for good results.</p>
+      <p>My own data is offered license free from Google Drive <a href="https://github.com/paddygoat/bioacoustics/blob/master/Train_and_deploy_bats/readme">here</a>. Use it any way you see fit! The species were identified with the help of experts in bat echo location on the Facebook group: <a href="https://www.facebook.com/groups/437808079587006/">Bat Call Sound Analysis Workshop.</a> (Thanks guys!)</p>
+      <p>So we’ve got about 320 MB of training data, a working classifier in <code>Rstudio</code> and a recording of a bat from the previous evening using an <a href="https://www.dodotronic.com/product/ultramic-384k-ble/?v=79cba1185463">UltraMic384K</a> mic. It’s now simply a case of finding the directory Bioacoustics/unknown_bat_audio/, deleting any existing files and pasting in our unknown bat. Simple! Hit the ‘run’ button ……..</p>
+      <figure>
+        <img src="https://hackaday.com/wp-content/uploads/2019/10/Final_results2-1.jpg?w=284"/>
+      </figure>
+      <p>It’s very probably a plecotus auritus, the eminently cute brown long eared bat! Sometimes the classifier does struggle – particularly if the recordings are indistinct. Also, bats within the Myotis genus tend to have very similar calls to each other and actually overlap so are often impossible to classify without physically catching the creature and extracting DNA, or such like. This is not recommended by myself and if you really must do it, check if a license from the Feds is required and don’t get bitten – bats can carry some deadly diseases.</p>
+      <p>So what’s next? Maybe port the classifier to a Raspberry Pi and send the results out through a LoRa connection? Or if there’s a 2G cell phone signal, send it via HTTP? Or a hand held bat detector that speaks out the name of the bat. “Hey folks. There goes Barry the Brown Eared Bat, and he’s in the mood to party!”</p>
+      <p> </p>
+    </article>
+  </body>
+</html>

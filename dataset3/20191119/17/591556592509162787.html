@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://www.zdnet.com/article/official-monero-website-compromised-with-malware-that-steals-funds/"/>
+    <meta property="og:site_name" content="ZDNet"/>
+    <meta property="article:published_time" content="2019-11-19T17:08:00+00:00"/>
+    <meta property="og:title" content="Official Monero website compromised with malware that steals funds"/>
+    <meta property="og:description" content="Official Linux CLI binary for the Monero cryptocurrency compromised with malware that steals users' funds."/>
+  </head>
+  <body>
+    <article>
+      <h1>Official Monero website compromised with malware that steals funds</h1>
+      <address><time datetime="2019-11-19T17:08:00+00:00">19 Nov 2019, 17:08</time> by <a rel="author" href="https://www.zdnet.com/meet-the-team/us/catalin.cimpanu/" target="_blank">Catalin Cimpanu</a></address>
+      <p>
+        <b>Official Linux CLI binary for the Monero cryptocurrency compromised with malware that steals users' funds.</b>
+      </p>
+      <figure>
+        <img src="https://zdnet4.cbsistatic.com/hub/i/2019/11/19/d758149d-8d6c-45fb-9527-e5961e770769/ada5b75425c937742b0f56931c2cc94c/monero-site-compromised.png"/>
+        <figcaption>Compromised Monero file, highlighted in red<br/><br/>Image: ZDNet</figcaption>
+      </figure>
+      <p>The official website of the Monero cryptocurrency has been compromised to deliver a malware-infected file that steals funds from account owners.<br/><br/>The compromise happened yesterday, November 18. A user spotted the compromised filed and <a href="https://github.com/monero-project/monero/issues/6151">reported the issue on GitHub</a>, with the Monero team <a href="https://twitter.com/monero/status/1196654342809489408">confirming the hack in a tweet</a> earlier today.<br/><br/>The hack was discovered after the user downloaded a 64-bit Linux binary for working with Monero cryptocurrency from the Linux command-line interface.<br/><br/>After downloading the installer from the official website, the user noticed that the SHA256 hash for the downloaded file did not match the SHA256 hash listed on the official site -- meaning that the file had been altered.</p>
+      <h3>Monero team confirms hack, still investigating</h3>
+      <p>"It's strongly recommended to anyone who downloaded the CLI wallet from this website between Monday 18th 2:30 AM UTC and 4:30 PM UTC, to check the hashes of their binaries. If they don't match the official ones, delete the files and download them again. <b>Do not run the compromised binaries for any reason</b>," the Monero team said in a blog post earlier today.</p>
+      <p>Although the Monero team claims it intervened to take down the compromised file, at least one user reported losing funds.<br/><br/>"I can confirm that the malicious binary is stealing coins. Roughly 9 hours after I ran the binary a single transaction drained the wallet of all $7000," said a user in a Reddit comment.</p>
+      <figure>
+        <img src="https://zdnet2.cbsistatic.com/hub/i/2019/11/19/48af5343-ad79-4758-9a0d-671ce4f8cf67/1b8fd3229ea6268cb6baf595d2c46589/monero-stealer.png"/>
+        <figcaption>Image: ZDNet</figcaption>
+      </figure>
+      <p>At the time of writing, the Monero team said it was still investigating how the hacker (group) compromised its download server. Downloads should be safe now, they said, as they're being delivered from a "fallback source."<br/><br/>While it's unclear how many users lost funds in this hack, the incident shows how important a simple action like verifying file hashes for recently downloaded files can sometimes be -- a practice that very few people follow.<br/><br/>A version of the malware-infected Monero Linux CLI binary is available for download from <a href="https://anonfile.com/bbq8h9Bdn7/monero-wallet-cli">here</a> (for reverse-engineering purposes, DON'T RUN). A VirusTotal scan is available <a href="https://www.virustotal.com/gui/file/7ab9afbc5f9a1df687558d570192fbfe9e085712657d2cfa5524f2c8caccca31/detection">here</a>.<br/><br/><i>Article updated on November 19, 03:00pm ET, with new statement from Monero team, widening the site compromise window from 35 minutes to 14 hours. Article updated again at 07:00am ET to add <a href="https://bartblaze.blogspot.com/2019/11/monero-project-compromised.html">a link to an analysis</a> of the malware that was found in the Monero Linux CLI binary. The researcher points out that he also found a Windows version of the malware on an attacker's server, yet there are no reports that the Windows CLI tools binaries on the Monero site have been compromised as well.</i></p>
+    </article>
+  </body>
+</html>

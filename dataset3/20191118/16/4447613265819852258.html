@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://hacks.mozilla.org/2019/11/__trashed/"/>
+    <meta property="og:site_name" content="Mozilla Hacks – the Web developer blog"/>
+    <meta property="article:published_time" content="2019-11-18T16:51:24+00:00"/>
+    <meta property="og:title" content="Creating UI Extensions for WebThings Gateway – Mozilla Hacks - the Web developer blog"/>
+    <meta property="og:description" content="Version 0.10 of Mozilla’s WebThings Gateway brings support for extension-type add-ons. Released last week, this powerful new capability lets developers modify the user interface (UI) to their liking with JavaScript ..."/>
+  </head>
+  <body>
+    <article>
+      <h1>Creating UI Extensions for WebThings Gateway – Mozilla Hacks - the Web developer blog</h1>
+      <address><time datetime="2019-11-18T16:51:24+00:00">18 Nov 2019, 16:51</time> by <a rel="author">Michael Stegeman</a></address>
+      <p><a href="https://hacks.mozilla.org/2019/11/thermostats-locks-and-extension-add-ons-webthings-gateway-0-10/">Version 0.10</a> of Mozilla’s <a href="https://iot.mozilla.org/gateway/">WebThings Gateway</a> brings support for extension-type add-ons. Released last week, this powerful new capability lets developers modify the user interface (UI) to their liking with JavaScript and CSS.</p>
+      <p>Although the initial set of extension APIs is fairly minimal, we believe that they will already enable a large amount of functionality. To go along with the UI extensions, developers can also extend the gateway’s REST API with their own handlers, allowing for back-end analytics, for example.</p>
+      <p>In this post, we’ll walk through a simple example to get you started with building your own extension.</p>
+      <h3>The Basics</h3>
+      <p>If you’re completely new to building add-ons for the WebThings Gateway, there are a couple things you should know.</p>
+      <p>An add-on is a set of code that runs alongside the gateway. In the case of extensions, the code runs as part of the UI in the browser. Add-ons can provide all sorts of functionality, including support for new devices, the ability to notify users via some outlet, and now, extending the user interface.</p>
+      <p>Add-ons are <a href="https://github.com/mozilla-iot/addon-list/blob/master/manifest.md">packaged up</a> in a specific way and can then be published to the <a href="https://github.com/mozilla-iot/addon-list">add-on list</a>, so that they can be installed by other users. For best results, developers should abide by these <a href="https://github.com/mozilla-iot/addon-list/blob/master/guidelines.md">basic guidelines</a>.</p>
+      <p>Furthermore, add-ons can theoretically be written in any language, as long as they know how to speak to the gateway via IPC (interprocess communication). We provide libraries for <a href="https://github.com/mozilla-iot/gateway-addon-node">Node.js</a> and <a href="https://github.com/mozilla-iot/gateway-addon-python">Python</a>.</p>
+      <h3>The New APIs</h3>
+      <p>There are two new groups of APIs you should know about.</p>
+      <p>First, the <i>front end</i> APIs. Your extension should extend the <a href="https://github.com/mozilla-iot/gateway/blob/master/static/js/extension.js">Extension class</a>, which is global to the browser window. This gives you access to all of the new APIs. In this 0.10 release, extensions can add new entries to the top-level menu and show and hide top-level buttons. Each extension gets an empty block element that they can draw to as they please, which can be accessed via the menu entry or some other means.</p>
+      <p>Second, the <i>back end</i> APIs. An add-on can register a new <a href="https://github.com/mozilla-iot/gateway-addon-node/blob/master/lib/api-handler.js">APIHandler</a>. When an authenticated request is made to <code>/extensions/&lt;extension-id&gt;/api/*</code>, your API handler will be invoked with request information. It should send back the appropriate response.</p>
+      <h3>Basic Example</h3>
+      <p>Now that we’ve covered the basics, let’s walk through a simple example. You can find the code for this example on <a href="https://github.com/mozilla-iot/example-extension">GitHub</a>. Want to see the example in Python, instead of JavaScript? It’s available <a href="https://github.com/mrstegeman/example-extension/tree/python">here</a>.</p>
+      <p>This next example is really basic: create a form, submit the form, and echo the result back as JSON.</p>
+      <p>Let’s go ahead and create our API handler. For this example, we’ll just echo back what we received.</p>
+      <pre>const {APIHandler, APIResponse} = require('gateway-addon');<br/>const manifest = require('./manifest.json');<br/><br/>/**<br/>* Example API handler.<br/>*/<br/>class ExampleAPIHandler extends APIHandler {<br/>  constructor(addonManager) {<br/>    super(addonManager, manifest.id);<br/>    addonManager.addAPIHandler(this);<br/>  }<br/><br/>  async handleRequest(request) {<br/>    if (request.method !== 'POST' || request.path !== '/example-api') {<br/>      return new APIResponse({status: 404});<br/>    }<br/><br/>    // echo back the body<br/>    return new APIResponse({<br/>      status: 200,<br/>      contentType: 'application/json',<br/>      content: JSON.stringify(request.body),<br/>    });<br/>  }<br/>}<br/>module.exports = ExampleAPIHandler;</pre>
+      <p>The <code>gateway-addon</code> library provides nice wrappers for the API requests and responses. You fill in the basics: status code, content type, and content. If there is no content, you can omit those fields.</p>
+      <p>Now, let’s create a UI that can actually use the new API we’ve just made.</p>
+      <pre>(function() {<br/>  class ExampleExtension extends window.Extension {<br/>    constructor() {<br/>      super('example-extension');<br/>      this.addMenuEntry('Example Extension');<br/><br/>      this.content = '';<br/>      fetch(`/extensions/${this.id}/views/content.html`)<br/>        .then((res) =&gt; res.text())<br/>        .then((text) =&gt; {<br/>          this.content = text;<br/>        })<br/>        .catch((e) =&gt; console.error('Failed to fetch content:', e));<br/>    }<br/><br/>    show() {<br/>      this.view.innerHTML = this.content;<br/><br/>      const key =<br/>        document.getElementById('extension-example-extension-form-key');<br/>      const value =<br/>        document.getElementById('extension-example-extension-form-value');<br/>      const submit =<br/>        document.getElementById('extension-example-extension-form-submit');<br/>      const pre =<br/>        document.getElementById('extension-example-extension-response-data');<br/><br/>      submit.addEventListener('click', () =&gt; {<br/>        window.API.postJson(<br/>          `/extensions/${this.id}/api/example-api`,<br/>          {[key.value]: value.value}<br/>        ).then((body) =&gt; {<br/>          pre.innerText = JSON.stringify(body, null, 2);<br/>        }).catch((e) =&gt; {<br/>          pre.innerText = e.toString();<br/>        });<br/>      });<br/>    }<br/>  }<br/><br/>  new ExampleExtension();<br/>})();</pre>
+      <p>The above code does the following things:</p>
+      <ol>
+        <li>Adds a top-level menu entry for our extension.</li>
+        <li>Loads some HTML asynchronously from the server.</li>
+        <li>Sets up an event listener for the form to submit it and display the results.</li>
+      </ol>
+      <p>The HTML loaded from the server is not a full document, but rather a snippet, since we’re using it to fill in a <code>&lt;section&gt;</code> tag. You could do all this synchronously within the JavaScript, but it can be nice to keep the view content separate. The manifest for this add-on instructs the gateway which resources to load, and which are allowed to be accessed via the web:</p>
+      <pre>{<br/>  "author": "Mozilla IoT",<br/>  "content_scripts": [<br/>    {<br/>      "css": [<br/>        "css/extension.css"<br/>      ],<br/>      "js": [<br/>        "js/extension.js"<br/>      ]<br/>    }<br/>  ],<br/>  "description": "Example extension add-on for Mozilla WebThings Gateway",<br/>  "gateway_specific_settings": {<br/>    "webthings": {<br/>      "exec": "{nodeLoader} {path}",<br/>      "primary_type": "extension",<br/>      "strict_max_version": "*",<br/>      "strict_min_version": "0.10.0"<br/>    }<br/>  },<br/>  "homepage_url": "https://github.com/mozilla-iot/example-extension",<br/>  "id": "example-extension",<br/>  "license": "MPL-2.0",<br/>  "manifest_version": 1,<br/>  "name": "Example Extension",<br/>  "short_name": "Example",<br/>  "version": "0.0.3",<br/>  "web_accessible_resources": [<br/>    "css/*.css",<br/>    "images/*.svg",<br/>    "js/*.js",<br/>    "views/*.html"<br/>  ]<br/>}</pre>
+      <p>The <code>content_scripts</code> property of the manifest tells the gateway which CSS and JavaScript files to load into the UI. Meanwhile, the <code>web_accessible_resources</code> tells it which files can be accessed by the extension over HTTP. This format is based on the <a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/manifest.json">WebExtension manifest.json format</a>, so if you’ve ever built a browser extension, it may look familiar to you.</p>
+      <p>As a quick note to developers, this new manifest.json format is required for <i>all</i> add-ons now, as it replaces the old package.json format.</p>
+      <h3>Testing the Add-on</h3>
+      <p>To test, you can do the following on your Raspberry Pi or development machine.</p>
+      <ol>
+        <li>Clone the repository: <code>cd ~/.mozilla-iot/addons git clone https://github.com/mozilla-iot/example-extension</code></li>
+        <li>Restart the gateway: <code>sudo systemctl restart mozilla-iot-gateway</code></li>
+        <li>Enable the add-on by navigating to <i>Settings -&gt; Add-ons</i> in the UI. Click the <i>Enable</i> button for “Example Extension”. You then need to refresh the page for your extension to show up in the UI, as extensions are loaded when the page first loads.</li>
+      </ol>
+      <figure>
+        <img src="https://2r4s9p1yi1fa2jd7j43zph8r-wpengine.netdna-ssl.com/files/2019/11/settings-enable-500x424.png"/>
+      </figure>
+      <figure>
+        <img src="https://2r4s9p1yi1fa2jd7j43zph8r-wpengine.netdna-ssl.com/files/2019/11/menu-entry-1-500x424.png"/>
+      </figure>
+      <figure>
+        <img src="https://2r4s9p1yi1fa2jd7j43zph8r-wpengine.netdna-ssl.com/files/2019/11/form-500x424.png"/>
+      </figure>
+      <h3>Wrapping Up</h3>
+      <p>Hopefully this has been helpful. The example itself is not very useful, but it should give you a nice skeleton to start from.</p>
+      <p>Another possible use case we’ve identified is creating a custom UI for complex devices, where the auto-generated UI is less than ideal. For instance, an adapter add-on could add an <a href="https://github.com/mozilla-iot/weather-adapter/blob/c2e5e4848975604801be66a0a5892dc5cd8786b8/lib/weather-device.js#L193-L199">alternate UI link</a> which just links to the extension, e.g. <code>/extensions/&lt;extension-id&gt;</code>. When accessed, the UI will bring up the extension’s interface.</p>
+      <p>If you have more questions, you can always reach out on <a href="https://discourse.mozilla.org/c/iot">Discourse</a>, <a href="https://github.com/mozilla-iot">GitHub</a>, or <a href="https://wiki.mozilla.org/IRC">IRC (#iot)</a>. We can’t wait to see what you build!</p>
+    </article>
+  </body>
+</html>

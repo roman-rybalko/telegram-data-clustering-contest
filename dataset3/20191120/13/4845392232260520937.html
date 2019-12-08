@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://hbr.org/2019/11/4-ways-to-address-gender-bias-in-ai"/>
+    <meta property="og:site_name" content="Harvard Business Review"/>
+    <meta property="article:published_time" content="2019-11-20T13:25:32+00:00"/>
+    <meta property="og:title" content="4 Ways to Address Gender Bias in AI"/>
+    <meta property="og:description" content="To start, machine learning teams must quantify fairness."/>
+  </head>
+  <body>
+    <article>
+      <h1>4 Ways to Address Gender Bias in AI</h1>
+      <address><time datetime="2019-11-20T13:25:32+00:00">20 Nov 2019, 13:25</time> by <a rel="author">Josh Feast</a></address>
+      <p>Any examination of bias in AI needs to recognize the fact that these biases mainly stem from humans’ inherent biases. The models and systems we create and train are a reflection of ourselves.</p>
+      <p>So it’s no surprise to find that AI is learning gender bias from humans. For instance, natural language processing (NLP), a critical ingredient of common AI systems like Amazon’s Alexa and Apple’s Siri, among others, <a href="https://papers.nips.cc/paper/6228-man-is-to-computer-programmer-as-woman-is-to-homemaker-debiasing-word-embeddings.pdf">has been found to show gender biases</a> – and this is not a standalone incident. There have been several high profile cases of gender bias, including computer vision systems for gender recognition that <a href="http://proceedings.mlr.press/v81/buolamwini18a/buolamwini18a.pdf">reported higher error rates</a> for recognizing women, specifically those with darker skin tones. In order to produce technology that is more fair, there must be a concerted effort from researchers and machine learning teams across the industry to correct this imbalance. Fortunately, we are starting to see new work that looks at exactly how that can be accomplished.</p>
+      <p>Of particular note is the bias research being carried out with respect to word-embeddings, which is when words are converted to numerical representations, which are then used as inputs in natural language processing models. Word-embeddings represent words as a sequence, or a vector of numbers. If two words have similar meanings, their associated embeddings will be close to each other — in a mathematical sense. The embeddings encode this information by assessing the context in which a word occurs. For example, AI has the ability to objectively fill in the word “queen” in the sentence “Man is to king, as woman is to X.” The underlying issue arises in cases where AI fills in sentences like “Father is to doctor as mother is to nurse.” The inherent gender bias in the remark reflects an outdated perception of women in our society that is not based in fact or equality.</p>
+      <p>Few studies have assessed the effects of gender bias in speech with respect to emotion — and emotion AI is starting to play a more prominent role in the future of work, marketing, and almost every industry you can think of. In humans, bias occurs when a person misinterprets the emotions of one demographic category more often than another — for instance, mistakenly thinking that one gender category is angry more often than another. This same bias is now being observed in machines and how they misclassify information related to emotions. To understand why this is, and how we can fix it, it’s important to first look at the causes of AI bias.</p>
+      <p>
+        <b>What Causes AI Bias?</b>
+      </p>
+      <p>In the context of machine learning, bias can mean that there’s a greater level of error for certain demographic categories. Because there is no one root cause of this type of bias, there are numerous variables that researchers must take into account when developing and training machine-learning models, with factors that include:</p>
+      <ul>
+        <li><i>An incomplete or skewed training dataset:</i> This happens when demographic categories are missing from the training data. Models developed with this data can then fail to scale properly when applied to new data containing those missing categories. For instance, if female speakers make up just 10% of your training data, then when you apply a trained machine learning model to females, it is likely to produce a higher degree of errors.</li>
+        <li><i>Labels used for training:</i> The vast majority of commercial AI systems use supervised machine learning, meaning that the training data is labeled in order to teach the model how to behave. More often than not, humans come up with these labels, and given that people frequently exhibit bias (both conscious and unconscious), they can be unintentionally encoded into the resulting machine-learning models. Given that the machine-learning models are trained to estimate these labels, this misclassification and unfairness towards the particular gender category will be encoded into the model, leading to bias.</li>
+        <li><i>Features and modeling techniques: </i>The measurements used as inputs for machine-learning models, or the actual model training itself, can also introduce bias. For instance, over many decades, field speech synthesis — that is, text-to-speech technology (e.g., Stephen Hawking’s voice) and automatic speech recognition — speech-to-text technology (e.g., closed captioning) — <a href="https://www.jstor.org/stable/44526232?seq=1#page_scan_tab_contents">performed poorly for female speakers as compared to males</a>. This is attributed to the fact that the way speech was analyzed and modeled was more accurate for taller speakers with longer vocal cords and lower-pitched voices. As a result, speech technology was most accurate for speakers with these characteristics – which are typically males – and far less accurate for those with higher pitched voices – which are typically female.</li>
+      </ul>
+      <p>
+        <b>Four Best Practices for Machine-Learning Teams to Avoid Gender Bias</b>
+      </p>
+      <p>Like many things in life, the causes and solutions of AI bias are not black and white. <a href="https://hbr.org/2019/11/how-machine-learning-pushes-us-to-define-fairness">Even “fairness” itself must be quantified</a> to help mitigate the effects of unwanted bias. For executives who are interested in tapping into the power of AI, but are concerned about bias, it’s important to ensure that the following happens on your machine-learning teams:</p>
+      <ul>
+        <li>Ensure diversity in the training samples (e.g. use roughly as many female audio samples as males in your training data).</li>
+        <li>Ensure that humans labeling the audio samples come from diverse backgrounds.</li>
+        <li>Encourage machine-learning teams to measure accuracy levels separately for different demographic categories and to identify when one category is being treated unfavorably.</li>
+        <li>Solve for unfairness by collecting more training data associated with sensitive groups. From there, apply modern machine learning de-biasing techniques that offer ways to penalize not just for errors in recognizing the primary variable, but that also have additional penalties for producing unfairness.</li>
+      </ul>
+      <p>Although examining these causes and solutions is an important first step, there are still many open questions to be answered. Beyond machine-learning training, the industry needs to develop more holistic approaches that address the three main causes of bias, as outlined above. Additionally, future research should consider data with a broader representation of gender variants, such as transgender, non-binary, etc., to help expand our understanding of how to handle expanding diversity.</p>
+      <p>We have an obligation to create technology that is effective and fair for everyone. I believe the benefits of AI will outweigh the risks if we can address them collectively. It’s up to all practitioners and leaders in the field to collaborate, research, and develop solutions that reduce bias in AI for all.</p>
+    </article>
+  </body>
+</html>

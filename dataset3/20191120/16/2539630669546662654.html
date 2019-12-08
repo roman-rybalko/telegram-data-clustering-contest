@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://www.omgubuntu.co.uk/2019/11/google-wants-to-bring-android-closer-to-the-mainline-linux-kernel"/>
+    <meta property="og:site_name" content="OMG! Ubuntu!"/>
+    <meta property="article:published_time" content="2019-11-20T16:55:29+00:00"/>
+    <meta property="og:title" content="Google Wants to Bring Android Closer to the Mainline Linux Kernel"/>
+    <meta property="og:description" content="Google wants to bring Android &quot;as close as possible&quot; to the mainline Linux kernel, stabilising the kernel ABI and making hardware support modular."/>
+  </head>
+  <body>
+    <article>
+      <h6 class="kicker">A wild proposal appears</h6>
+      <h1>Google Wants to Bring Android Closer to the Mainline Linux Kernel</h1>
+      <address><time datetime="2019-11-20T16:55:29+00:00">20 Nov 2019, 16:55</time> by <a rel="author">By Joey Sneddon</a></address>
+      <figure>
+        <img src="https://149366088.v2.pressablecdn.com/wp-content/uploads/2018/08/android-phone.jpeg"/>
+      </figure>
+      <p><b>Google wants to bring Android “as close as possible” to the mainline Linux kernel</b>.</p>
+      <p>This noble goal, <a href="https://www.androidpolice.com/2019/11/19/google-wants-android-to-use-regular-linux-kernel-potentially-improving-updates-and-security">reported by Android Police</a>, was expanded on by Google engineers speaking at the <a href="https://www.linuxplumbersconf.org/">Linux Plumbers Conference</a> 2019.</p>
+      <p>Though Android is built on top of <b>a</b> Linux kernel, it’s not built atop the same Linux kernel that most desktop Linux distributions use.</p>
+      <p>Instead, it uses something called the <a href="https://source.android.com/devices/architecture/kernel/android-common">Android common kernel</a>. This is heavily modified LTS version that incorporates a bunch of “out of tree” code from chip makers, hardware partners, and Google itself, as well as firmware drivers, quirk workarounds, and other miscellaneous patches.</p>
+      <p>Repeat the process for every Android phone out there and you can an idea of how divergent things currently are.</p>
+      <h3>Android Linux Kernel</h3>
+      <p>Ubuntu Phone, Canonical’s failed attempt at bringing Ubuntu to smartphones, relied heavily on co-opting existing Android devices <i>because</i> it re-used the existing Android Linux kernel available.</p>
+      <p>But a new bread of ARM-based smartphones, including the Librem 5 and the PinePhone, are targeting mainline Linux support as a feature.</p>
+      <p>And Google is clearly thinking along the same lines.</p>
+      <p>Just don’t confuse Google’s wishes with reality. This is something they’ve been <a href="https://lwn.net/Articles/771974/">talking about for a while</a>, and are making plenty of progress on.</p>
+      <p>But this all remains some way off happening.</p>
+      <h4>“Major technical and political changes”</h4>
+      <p>Switching Android to run on the mainline Linux kernel would be a huge undertaking, one that would inevitably major technical and political changes changes to the way the Linux kernel is currently developed.</p>
+      <p>Instead of each Android device shipping its own device-specific Linux kernel, Google’s idea is to upstream as much code as possible, and stabilize Linux’s in-kernel ABI so that there’s stable interface for Linux kernel and hardware vendors to target.</p>
+      <p>In short, <a href="https://arstechnica.com/gadgets/2019/11/google-outlines-plans-for-mainline-linux-kernel-support-in-android/">as Ars Ron Amadeo sums up</a>, ‘Google wants to decouple the Linux kernel from its hardware support’.</p>
+      <p>And that’s unlikely to happen overnight, if ever.</p>
+      <footer>(via: <a href="https://www.androidpolice.com/2019/11/19/google-wants-android-to-use-regular-linux-kernel-potentially-improving-updates-and-security">Android Police</a>)</footer>
+    </article>
+  </body>
+</html>

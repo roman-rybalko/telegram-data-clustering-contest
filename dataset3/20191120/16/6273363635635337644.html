@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://venturebeat.com/2019/11/20/deepminds-muzero-teaches-itself-how-to-win-at-atari-chess-shogi-and-go/"/>
+    <meta property="og:site_name" content="VentureBeat"/>
+    <meta property="article:published_time" content="2019-11-20T16:42:55+00:00"/>
+    <meta property="og:title" content="DeepMind’s MuZero teaches itself how to win at Atari, chess, shogi, and Go"/>
+    <meta property="og:description" content="In a preprint paper, researchers at Alphabet's DeepMind detail MuZero, an algorithm that effectively teaches itself how to play Atari and board games."/>
+  </head>
+  <body>
+    <article>
+      <h1>DeepMind’s MuZero teaches itself how to win at Atari, chess, shogi, and Go</h1>
+      <address><time datetime="2019-11-20T16:42:55+00:00">20 Nov 2019, 16:42</time> by <a rel="author" href="https://venturebeat.com/author/kylewiggers/" target="_blank">Kyle Wiggers</a></address>
+      <p>In a paper published in the journal <i>Science </i>late last year, Google parent company Alphabet’s DeepMind detailed <a href="https://venturebeat.com/2018/12/06/google-deepmind-alphazero-chess-shogi-go/">AlphaZero</a>, an AI system that could teach itself how to master the game of chess, a Japanese variant of chess called shogi, and the Chinese board game Go. In each case, it beat a world champion, demonstrating a knack for learning two-person games with perfect information — that is to say, games where any decision is informed of all the events that have previously occurred.</p>
+      <p>But AlphaZero had the advantage of knowing the rules of games it was tasked with playing. In pursuit of a performant machine learning model capable of teaching <i>itself </i>the rules, a team at DeepMind devised MuZero, which combines a tree-based search (where a <i>tree</i> is a data structure used for locating information from within a set) with a learned model. MuZero predicts the quantities most relevant to game planning, such that it achieves industry-leading performance on 57 different Atari games and matches the performance of AlphaZero in Go, chess, and shogi.</p>
+      <p>The researchers say MuZero paves the way for learning methods in a host of real-world domains, particularly those lacking a simulator that communicates rules or environment dynamics.</p>
+      <p>“Planning algorithms … have achieved remarkable successes in artificial intelligence … However, these planning algorithms all rely on knowledge of the environment’s dynamics, such as the rules of the game or an accurate simulator,” wrote the scientists in a <a href="https://arxiv.org/pdf/1911.08265.pdf">preprint paper</a> describing their work. “Model-based … learning aims to address this issue by first learning a model of the environment’s dynamics, and then planning with respect to the learned model.”</p>
+      <h3>Model-based reinforcement learning</h3>
+      <p>Fundamentally, MuZero receives observations — i.e., images of a Go board or Atari screen — and transforms them into a hidden state. This hidden state is updated iteratively by a process that receives the previous state and a hypothetical next action, and at every step the model predicts the policy (e.g., the move to play), value function (e.g., the predicted winner), and immediate reward (e.g., the points scored by playing a move).</p>
+      <figure>
+        <img src="https://venturebeat.com/wp-content/uploads/2019/11/training_muzero.png?w=653&amp;resize=653%2C347&amp;strip=all"/>
+        <figcaption>Above: Evaluation of MuZero throughout training in chess, shogi, Go, and Atari. The y-axis shows Elo rating.</figcaption>
+      </figure>
+      <p>Intuitively, MuZero internally invents game rules or dynamics that lead to accurate planning.</p>
+      <p>As the DeepMind researchers explain, one form of reinforcement learning — the technique that’s at the heart of MuZero and AlphaZero, in which rewards drive an AI agent toward goals — involves models. This form models a given environment as an intermediate step, using a state transition model that predicts the next step and a reward model that anticipates the reward.</p>
+      <p>Commonly, model-based reinforcement learning focuses on directly modeling the observation stream at the pixel level, but this level of granularity is computationally expensive in large-scale environments. In fact, no prior method has constructed a model that facilitates planning in visually complex domains such as Atari; the results lag behind well-tuned model-free methods, even in terms of data efficiency.</p>
+      <figure>
+        <img src="https://venturebeat.com/wp-content/uploads/2019/11/training-time.png?w=623&amp;resize=623%2C259&amp;strip=all"/>
+        <figcaption>Above: Comparison of MuZero against previous agents in Atari.</figcaption>
+      </figure>
+      <p>For MuZero, DeepMind instead pursued an approach focusing on end-to-end prediction of a value function, where an algorithm is trained so that the expected sum of rewards matches the expected value with respect to real-world actions. The system has no semantics of the environment state but simply outputs policy, value, and reward predictions, which an algorithm similar to AlphaZero’s search (albeit generalized to allow for single-agent domains and intermediate rewards) uses to produce a recommended policy and estimated value. These in turn are used to inform an action and the final outcomes in played games.</p>
+      <h3>Training and experimentation</h3>
+      <p>The DeepMind team applied MuZero to the classic board games Go, chess, and shogi as benchmarks for challenging planning problems, and to all 57 games in the open source Atari Learning Environment as benchmarks for visually complex reinforcement learning domains. They trained the system for five hypothetical steps and a million mini-batches (i.e., small batches of training data) of size 2,048 in board games and size 1,024 in Atari, which amounted to 800 simulations per move for each search in Go, chess, and shogi and 50 simulations for each search in Atari.</p>
+      <p>With respect to Go, MuZero slightly exceeded the performance of AlphaZero despite using less overall computation, which the researchers say is evidence it might have gained a deeper understanding of its position. As for Atari, MuZero achieved a new state of the art for both mean and median normalized score across the 57 games, outperforming the previous state-of-the-art method (R2D2) in 42 out of 57 games and outperforming the previous best model-based approach in all games.</p>
+      <figure>
+        <img src="https://venturebeat.com/wp-content/uploads/2019/11/deepmind_muzero.png?w=625&amp;resize=625%2C486&amp;strip=all"/>
+        <figcaption>Above: Evaluations of MuZero on Go (A), all 57 Atari Games (B), and Ms. Pac-Man (C-D).</figcaption>
+      </figure>
+      <p>The researchers next evaluated a version of MuZero — MuZero Reanalyze — that was optimized for greater sample efficiency, which they applied to 75 Atari games using 200 million frames of experience per game in total. They report that it managed a 731% median normalized score compared to 192%, 231%, and 431% for previous state-of-the-art model-free approaches IMPALA, Rainbow, and LASER, respectively, while requiring substantially less training time (12 hours versus Rainbow’s 10 days).</p>
+      <p>Lastly, in an attempt to better understand the role the model played in MuZero, the team focused on Go and Ms. Pac-Man. They compared search in AlphaZero using a perfect model to the performance of search in MuZero using a learned model, and they found that MuZero matched the performance of the perfect model even when undertaking larger searches than those for which it was trained. In fact, with only six simulations per move — fewer than the number of simulations per move than is enough to cover all eight possible actions in Ms. Pac-Man — MuZero learned an effective policy and “improved rapidly.”</p>
+      <p>“Many of the breakthroughs in artificial intelligence have been based on either high-performance planning,” wrote the researchers. “In this paper we have introduced a method that combines the benefits of both approaches. Our algorithm, MuZero, has both matched the superhuman performance of high-performance planning algorithms in their favored domains — logically complex board games such as chess and Go — and outperformed state-of-the-art model-free [reinforcement learning] algorithms in their favored domains — visually complex Atari games.”</p>
+    </article>
+  </body>
+</html>

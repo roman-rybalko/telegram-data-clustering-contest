@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://hackaday.com/2019/11/18/optical-keyboards-have-us-examining-typing-at-light-speed-ish/"/>
+    <meta property="og:site_name" content="Hackaday"/>
+    <meta property="article:published_time" content="2019-11-18T00:00:00+00:00"/>
+    <meta property="og:title" content="Optical Keyboards Have Us Examining Typing At Light Speed-ish"/>
+    <meta property="og:description" content="There’s a newish development in the world of keyboards; the optical switch. It’s been around for a couple years in desktop keyboards, and recently became available on a laptop keyboard …"/>
+  </head>
+  <body>
+    <article>
+      <h1>Optical Keyboards Have Us Examining Typing At Light Speed-ish</h1>
+      <address><time datetime="2019-11-18T00:00:00+00:00">18 Nov 2019</time> by <a rel="author" href="https://hackaday.com/author/bobbaddeley/" target="_blank">Bob Baddeley</a></address>
+      <p>There’s a newish development in the world of keyboards; the optical switch. It’s been around for a couple years in desktop keyboards, and recently became available on a laptop keyboard as well. These are not replacements for your standard $7 keyboard with rubber membrane switches intended for puttering around on your raspberry pi. Their goal is the gamer market.</p>
+      <p>The question, though, is are these the equivalent of Monster Cables for audiophiles: overpriced status symbols? Betteridge would be proud; the short answer is that no, there is a legitimate advantage, and for certain types of use, it makes a lot of sense.</p>
+      <h3>Background</h3>
+      <slideshow>
+        <figure>
+          <img src="https://i1.wp.com/hackaday.com/wp-content/uploads/2019/11/membrane_switch_rubber_dome.jpg?w=453&amp;h=339&amp;ssl=1"/>
+          <figcaption>A single sheet of rubbery material provides the spring force for each switch.</figcaption>
+        </figure>
+        <figure>
+          <img src="https://i1.wp.com/hackaday.com/wp-content/uploads/2017/11/bluemx.png?w=339&amp;h=339&amp;crop=1&amp;ssl=1"/>
+          <figcaption>The Cherry MX Blue keyswitch is a mechanical switch with metal contacts.</figcaption>
+        </figure>
+      </slideshow>
+      <p>We <a href="https://hackaday.com/2017/11/22/a-passion-for-the-best-is-in-mechanical-keyboards/">delved into this topic a bit before</a>. Keyboards come in a variety of flavors, with the cheapest being membrane/rubber dome switches. These rely on a rubber dome that provides the spring force, and a small conductive pad on the underside of the dome makes contact with the PCB/membrane when pressed, connecting two traces. There’s no travel after the actuation; you press until the contact is made and you can press no further. Rubber dome switches are rated for about 5 million keystrokes.</p>
+      <p>Mechanical switches are the next step up. These have a spring that pushes the key up, and the key presses two metal strips together, but in such a way that contact is made before the travel is complete, so it’s possible to ride the key on the edge and press more rapidly. Of course, when writing a Hackaday article, this doesn’t matter, but when destroying your enemies with rapid fire in the comments section of a Hackaday article, it’s critical. These kinds of switches are rated for 20-50 million keystrokes. The keyboards are also known for their click-iness, and are popular at home and extremely unpopular in open offices.</p>
+      <figure>
+        <video src="https://hackaday.com/wp-content/uploads/2019/11/animated_switch.gif?w=400" autoplay="" loop=""/>
+        <figcaption>Switches can either make or break the beam when closed.</figcaption>
+      </figure>
+      <p>The shiny new thing is the optical switch. It is similar to the mechanical switch with the spring, but instead of having two metal contacts that touch, it has a piece of plastic that just moves up and down. On the PCB directly underneath is an IR LED and IR receiver. When the switch is pressed it breaks a beam and registers the keypress. By eliminating the metal components, they claim a lifespan of 100 million keystrokes.</p>
+      <p>There’s another technology called the optical analog switch, and as the name implies, it returns an analog value instead of a digital one, allowing you to measure the depth the key is pressed, and using it for turning a steering wheel or walking faster, or tuning the depth of stroke for a keypress register. Only a few keyboards have this, and some only have it on a few of the keys.</p>
+      <h3>An Awful Lot of Keystrokes</h3>
+      <p>A million keystrokes is a lot. People’s usage habits vary significantly, so it’s hard to say in hours or years how long the keyboard will last, but let’s just ballpark. If you rapid-fire a key 4 times a second, you’d have to do that for 347 hours to hit 5 million keystrokes and wear out your membrane keyboard. The King James Bible has 783,137 words, with a space after each one, so you’d have to type out the full thing more than 6 times before you wear out your space bar. In other words, 5 million is a LOT of keystrokes, but it’s not impossible. If you’re into games like osu!, though, you may be hitting the millions pretty quickly. If you’re curious about how long it’ll take you with your usage, try out <a href="https://whatpulse.org/">WhatPulse</a> to get your own statistics.</p>
+      <h3>Speed Traps: From Debounce to the OS</h3>
+      <p>Purveyors of the optical switch talk about switching at the speed of light.  Optical switches can be faster than mechanical switches because there’s no need for debounce. This can shave a few milliseconds off because most microcontrollers will wait for a bit to allow the contacts to settle before accepting that the switch has changed state to prevent multiple keypresses. The bigger impact is the keyboard’s scanning and processing speed, though. Keyboards have a microcontroller that doesn’t have an input for every key. Instead it uses multiplexing and scans through each key rapidly. If it’s taking a long time to scan the matrix because it only has a few GPIO and must multiplex a bunch of things, then it may take longer to process the keys pressed. A cheap membrane keyboard won’t have the better microcontroller found on gaming keyboards.</p>
+      <p>The keyboard processor might not be the greatest source of latency, either. USB 2.0 has a max polling rate of 1000Hz, but for most keyboards that use low-speed USB, that polling frequency is 125Hz, or 8ms delay. Then of course there’s the delay by the operating system and the application handling the keyboard inputs, plus the timing involved with the display and rendering the output or the thing causing the reaction keystroke. On games where rhythm matters, it’s common to have configuration options that are adjusted to synchronize the audio, video, and input, eliminating the latency of the system as a problem.</p>
+      <p>Another option is to use a USB to PS/2 adapter, which some keyboards support. Since PS/2 is interrupt driven, it can be faster than the 125Hz polling of USB, but fewer and fewer motherboards have PS/2 options, and it’s not a guarantee that it will be faster.</p>
+      <p>For anyone using a keyboard for writing, speed doesn’t matter. Any keyboard would be more than capable of handling the fastest typists. For people looking to maximize their edge in games of speed and accuracy, where tuning equipment down to the millisecond matters, then mechanical keyboards have an edge, and optical keyboards have an even greater edge.</p>
+      <p>However, for the gamers who play speed-clicking games, an optical keypad with only a few keys is a much smaller and cheaper option with all of the speed benefits.</p>
+      <h3>Longevity</h3>
+      <figure>
+        <img src="https://hackaday.com/wp-content/uploads/2019/11/keyboard_layers.jpg?w=400"/>
+        <figcaption>The rubber sheet covers three plastic layers. Two have metal traces deposited, and an inner layer acts as a separator.</figcaption>
+      </figure>
+      <p>We know how rubber dome membrane keyboards fail. They are pretty robust and tolerant of liquids and dirt. When they fail it’s because the rubber has suffered fatigue and cracked or gotten “mushy” and lost its spring. Sadly because the whole keyboard is a single piece, replacement of an individual switch is difficult, but because of its simplicity it’s pretty easy to keep clean.</p>
+      <p>Mechanical keyboards fail, too, usually because the metal contacts become corroded. While it’s possible to replace the individual keys, that typically requires desoldering the defective ones. But at least it can be done, and the whole keyboard doesn’t have to be scrapped because of a single fault.</p>
+      <p>The big unknown here is non-mechanical component failure. With optical keys, no mechanical contact means one less failure point. Further, the keys can be replaced entirely, without soldering, making repair much more accessible. However, if the failure is of the electronics themselves, then the board is destroyed, and we know that IR LEDs fade, or get covered by debris, or are damaged through a spill. Assuming that an IR LED will fade to 50% brightness and start to cause detection problems after 50,000 hours, that’s 10 years at 12 hours/day (the LED has to be on, whether the key is pressed or not). Less if it’s driven outside of spec. Yes, it’s a long time, but the point is that optical keyboards won’t last forever.</p>
+      <h3>Feel</h3>
+      <p>Rubber dome switches, and their related cousin the scissor switch, which is more common for laptops and thin portable keyboards, have a similar feel. They don’t press until the end of their travel, they all have similar sounds, and the force is pretty much the same. Mechanical keyboards offer a wide variety of options, including loudness, actuation force, and travel distance. Optical switches are designed similar to the mechanical ones with an equivalent range of features. This is purely a matter of personal taste.</p>
+      <h3>Features</h3>
+      <figure>
+        <img src="https://hackaday.com/wp-content/uploads/2016/06/cherrymxkeypad1_thumbnail.png?w=400"/>
+        <figcaption>
+          <a href="https://hackaday.com/2016/06/12/quickie-usb-keyboard-device/">Make your own keypad to try it out.</a>
+        </figcaption>
+      </figure>
+      <p>Membrane keyboards are cheap, and effort is made to only include features that are cheap. That’s why they don’t have an RGB under every keycap. However, the switches themselves don’t add much to the cost of the unit, so membrane keyboards are usually full keyboards with numpads and media keys. Optical and mechanical keyboard switches are expensive for each key, so they often have fewer keys, but make up for it with bright configurable patterns underneath. The analog optical keyboards have many more features, including the ability to set multiple actions for a single key based on distance pressed, or have adjustable press distance.</p>
+      <h3>Conclusion</h3>
+      <p>Like any other sport or hobby, the vast majority are served well by basic gear. For those in the upper levels of performance, or those who just want to own the best of the best, there exists a whole category of computer equipment. Get a mechanical keyboard if you like the feeling of the switches. Get an optical keyboard if you’re a hardcore gamer who needs every millisecond of reaction time and operate at the highest levels of gaming. There’s definitely a difference, and the math and experiments bear that out. Be prepared to spend some time tuning, though, as there are a lot of steps on the path from the finger to the screen. For everybody else, though, cheap keyboards are a great deal that last a really long time and have performance that meets most needs. Of course, you could always make your own <a href="https://hackaday.com/2017/02/10/a-guide-for-building-rubber-dome-keyboards/">rubber dome keyboard</a>, <a href="https://hackaday.com/2016/10/04/custom-keyboard-makes-the-case-for-concrete/">mechanical keyboard</a>, or <a href="https://hackaday.com/2019/04/23/reaction-video-build-your-own-custom-fortnite-controller-for-a-raspberry-pi/">tiny keyboard</a>.</p>
+    </article>
+  </body>
+</html>

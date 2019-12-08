@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://www.heise.de/newsticker/meldung/Top500-der-Supercomputer-Neues-vor-allem-von-AMD-und-ARM-4588665.html"/>
+    <meta property="og:site_name" content="heise online"/>
+    <meta property="article:published_time" content="2019-11-18T15:02:00+00:00"/>
+    <meta property="og:title" content="Top500 der Supercomputer: Neues vor allem von AMD und ARM"/>
+    <meta property="og:description" content="AMD Epyc 7002 &quot;Rome&quot; und insbesondere Fujitsus A64FX glänzen mit hoher Energieeffizienz."/>
+  </head>
+  <body>
+    <article>
+      <h1>Top500 der Supercomputer: Neues vor allem von AMD und ARM</h1>
+      <h2>AMD Epyc 7002 "Rome" und insbesondere Fujitsus A64FX glänzen mit hoher Energieeffizienz.</h2>
+      <address><time datetime="2019-11-18T15:02:00+00:00">18 Nov 2019, 15:02</time> by <a rel="author">Andreas Stiller</a></address>
+      <p>Die zu Beginn der <a href="https://sc19.supercomputing.org/">Supercomputer 2019</a> in Denver veröffentlichte<a href="https://www.top500.org/"> neue 54. Top500-Liste der Supercomputer</a> zeigt vor allem auf, dass sich auf dem Gebiet der Supercomputer derzeit fast nichts tut, insbesondere nicht bei den Spitzensystemen. Doch versteckt findet man in dieser Liste einige Highlights. Dazu gehört insbesondere Fujitsus Prototyp-System des geplanten Fugaku (alias Post-K) mit dem ARM-Prozessor A64FX mit seiner skalierbaren Vektoreinheit SVE. Der Prototyp belegt mit 2 PFlops zwar nur Platz 159, setzt aber mit 16,9 GFlops/Watt neue Maßstäbe bei der Energieeffizienz ohne Zusatzbeschleuniger und ist damit neuer Spitzenreiter in der Green500-Liste.</p>
+      <p>Ein damit bestückter Exascale-Rechner würde "nur" noch 60 Megawatt verbrauchen – also etwas weniger als das ältere NSA-Rechenzentrum in Bluffdale/Utah heute schon –, die Betreiber solcher speziellen Rechner melden natürlich ebensowenig wie Google und Co. irgendwelche Rechnerdetails oder Linpack-Werte.</p>
+      <p>Man erwartet zudem auf der SC19 weitere Ankündigungen zur <a href="https://www.heise.de/meldung/Cray-und-Fujitsu-bauen-gemeinsam-Exascale-Supercomputer-mit-ARM-Prozessoren-4587915.html">Kollaboration von HPE/Cray mit Fujitsu</a> und auch Nvidia will spektakuläre Neuigkeiten zu ARM-Supercomputern berichten.</p>
+      <p>Ganz so effizient wie Fujitsus Neuling sind die beiden ebenfalls neu in die Liste eingezogenen französischen Rechner von Bull/Atos mit AMD Eypc 7002 "Rome" zwar nicht, aber der kleinere Spartan (mit 1,2 PFlops auf Platz 433) kann mit 5,78 GFlops/W immerhin nahezu alle unbeschleunigten Intel-Systeme abhängen, obwohl er AVX512 nicht beherrscht. Nur ein einziges System mit Intels Xeon Gold liegt ganz knapp voraus, das die chinesische Akademie der Wissenschaften auf 5,84 GFlops/W tunen konnte. Ansonsten dominieren bei der Energieeffizienz zwischen A64FX und Epyc-Rome die Systeme mit Beschleunigern, fast alle mit NVidia-GPUs bestückt.</p>
+      <h3>Ruhe in der Upper Class</h3>
+      <p>In der Upper Class der oberen 25 hat sich fast nichts verändert, außer dass zwei Uralt-Systeme wegen Altersschwäche abgeschaltet wurden: der noch mit Opteron bestückte Titan am Oak Ridge National Lab aus dem Jahre 2012 und der K-Computer in Tokio von 2011. Beide hatten zu ihrer Zeit auch teilweise länger die Spitzenposition inne.</p>
+      <p>Der erste Neuling im vorderen Bereich ist der AiMOS vom Rensselaer Polytechnic Institute Center for Computational Innovations (CCI) mit IBM Power9, der mit 8 Pflops Platz 24 belegt.</p>
+      <p>Die Rangfolge der Top10 bleibt unverändert mit den beiden IBM-Power9-Systemen Sierra (149 PFlops) und Summit (85 PFlops) an der Spitze vor dem schon etwas betagten chinesischen Sunway Taihu Light (93 PFlops). Weiter unten gab es schon mehr Änderungen, insgesamt sind rund 102 neue Systeme eingezogen. Die haben die Einstiegsperformance aber nur wenig auf 1,05 PFlops gesteigert.</p>
+      <figure>
+        <img src="https://www.heise.de/imgs/18/2/7/9/0/2/6/6/Performancezuwachs1-54-9fd3c55ea944f3e8.png"/>
+        <figcaption>Der Schweinezyklus bei den Supercomputern. Der Performacezuwachs wird danach bald wieder deutlich steigen, aber so niedrig wie jetzt war er noch nie.<cite>(Bild: Andreas Stiller)</cite></figcaption>
+      </figure>
+      <p>Und lagen früher die Wachstumsraten gemessen an der Gesamtleistung aller in der Liste verzeichneten System in jedem Halbjahr so im Schnitt bei 30 Prozent, liegt die Steigerung aktuell mit äußerst bescheidenen 5,5 Prozent auf dem absoluten Tiefpunkt seit Bestehen der nunmehr 54 mal aktualisierten Liste.</p>
+      <h3>China mit den meisten Systemen, USA mit den schnellsten</h3>
+      <p>Es halten sich aber die Gerüchte, dass sich China mit Ergebnissen der schon wesentlich weiterentwickelten Prototypsysteme der drei vom Staat unterstützen Exascale-Linien (PreE) zurückhält, um die Verhandlungen über die chinesisch-amerikanischen Handelsbeziehungen nicht zu stören. Zu viele Meldungen über chinesische Dominanz könnten kontraproduktiv sein. Aber es reicht ja auch so, jedenfalls rein stückzahlmäßig. Da hat China weiterhin rund doppelt so viele Systeme (228 zuvor 219) in der Liste wie die USA (117 zuvor 116), hauptsächlich anonyme Industriesysteme von Sugon, Inspur und Huawei.</p>
+      <p>Doch dank der beiden alten und neuen Spitzenreiter Summit und Sierra mit zusammengerechnet 250 PFlops halten die USA noch mit insgesamt 611 PFlops die Spitze der installierten Linpack-Performance vor China mit 532 PFlops. Dahinter kommt lange Zeit nichts, dann Japan mit 29 Systemen (zuvor auch 29) mit jetzt 109 PFlops. Frankreich (18 zuvor 19, 69 Pflops), und Deutschland (16 zuvor 14, 67 Pflops) liefern sich ein Kopf-an-Kopf-Rennen.</p>
+      <p>Stückzahlmäßig haben sich in den letzten Jahren Liste um Liste zwei kleinere europäische Länder gut nach vorne entwickelt. Die Niederlande, die vor nicht allzu langer Zeit auch mal gar kein System in der Liste hatten, trumpft mit 15 (zuvor 13) auf, und Irland mit 14 (zuvor 13). Dann erst folgt Großbritannien mit nur noch 11 (von zuvor 18) – das Land hat derzeit wohl andere Probleme, als sich um Wissenschaft und Supercomputer zu kümmern. Immerhin sind die 11 vorhandenen mit 32 PFlops etwas kräftiger als die der kleineren europäischen Nachbarn.</p>
+      <p>Der leistungsfähigste Europäer steht weiterhin in Lugano: der schweizerische Piz Daint (Cray XC50) mit 21,2 PFlops auf Platz 6. Der für Ende 2019 erwartete Hawk mit AMD Rome am HLR in Stuttgart hat es noch nicht in die Liste geschafft – das HPE-Apollo-9000-System dürfte etwa im Frühjahr 2020 einsatzbereit sein. Mit rund 27 PFlops theoretischer Rechenleistung wird er bezüglich Linpack den Piz Daint wohl nicht vom Sockel stürzen können – die Linpack-Effizienz des Rome ist nicht so berühmt, liegt derzeit maximal bei 67 Prozent.</p>
+      <p>Aber das andere Mitglied im Gauss Center in Jülich <a href="https://www.heise.de/meldung/SC-Juelich-Booster-mit-70-Pflops-im-naechsten-Jahr-4586737.html">will bald mit dem Booster, bestückt mit der nächsten Nvidia-GPU-Generation, eingreifen</a> und hat angekündigt, im nächsten Jahr mit etwa 70 PFlops theoretischer Leistung die Spitzenposition anzustreben – jedenfalls, falls die Schweizer oder die Franzosen oder ein anderer Europäer bis dahin nicht kontern.</p>
+      <p>Das Leibniz-Rechenzentrum wartet derweil ab, was Intel in der Aurora-Linie ab 2021 zu bieten hat. Zu seinen drei SuperMUC-Rechnern in der Liste muss man allerdings anmerken, dass der dort immer noch aufgeführte erste SuperMUC Phase 1 schon längst abgeschaltet und abgebaut ist. Hier ackern derweil der SuperMUC-Phase 2 (mit 2,8 PFlops auf Platz 86) und <a href="https://www.heise.de/meldung/SuperMUC-NG-Bayern-in-der-Champions-League-der-Supercomputer-4171864.html">der SuperMUC-NG</a>, der mit 19,5 PFlops auf Platz 9 liegt.</p>
+      <h3>Lise und Emmy</h3>
+      <p>Drei deutsche Rechner sind neu in die Liste eingezogen, insbesondere der nach Lise Meitner benannte, von Atos/Bull aufgebaute Rechner des Norddeutschen Verbunds für Hoch- und Höchstleistungsrechnen (HLRN) am Standort Berlin mit 5,4 PFlops (ohne Beschleuniger) auf Platz 40. Das etwa gleichstarke zweite Standbein des HLRN namens Emmy (von Emmy Noether) soll demnächst in Göttingen aufgebaut werden. Der Standort wurde ja von Hannover nach Göttingen verlegt, vorgeblich weil man sich wirtschaftliche Vorteile davon versprach. Aber so wirtschaftlich sieht es aktuell nicht gerade aus. Offenbar hat das mit dem vorgesehenen neuen Rechnergebäude nicht geklappt: "Zu diesem Zeitpunkt stehen – entgegen der ursprünglichen Planung – keine ausreichenden Flächen im Bestand zur Verfügung", heißt es in der <a href="https://ausschreibungen-deutschland.de/591995_Erstellung_eines_skalierbaren_modularen_Rechenzentrums_zum_Betrieb_des_HLRN-IV_am_Standort_2019_Goettingen">von der EU vorgeschriebenen Ausschreibung</a>, und so hat man eben für 1,8 Millionen Euro ein skalierbares, modulares Rechenzentrum in Containern bei Atos nachgeordert.</p>
+      <h3>Hersteller-Ranking</h3>
+      <p>Bei den Herstellern liegt Lenovo weiterhin mit 174 (zuvor 173) ganz klar vorne, darunter tummeln sich auf den Plätzen 249 bis 334 86 völlig identische, anonyme Industriesysteme C1040 mit 1,6 PFlops (Cloud Provider, Hosting Services, Software Companies) – keines davon in China, Lenovo ist weltweit aufgestellt. Dahinter folgt <a href="https://www.heise.de/meldung/Supercomputing-Hewlett-Packard-schluckt-Cray-4425138.html">dank Zukaufs von Cray</a> – der jetzt in trockenen Tüchern ist [ --] HPE mit zusammen 73 vor Sugon (71), Inspur (66) und Atos/Bull(23).</p>
+      <p>Intel als marktbeherrschender Prozessorhersteller muss einen marginalen Rückgang durch drei neue IBM-Power9-Systeme (jetzt 10 mit Power, dazu noch 4 alte Bluegenes) und die beiden neuen AMD-Systeme einstecken, "nur" noch 474 (zuvor 478) der 500 Rechner in der Top500 sind mit Intel-Prozessoren bestückt. Dominanter ist nur noch das Betriebssystem: die Spalte "OS-Family" können sich die Top500-Macher schenken – es gibt nur noch Linux.</p>
+      <table bordered="">
+        <tr>
+          <td colspan="9" align="center">Top 10 der 54. Top500-Liste der Supercomputer</td>
+        </tr>
+        <tr>
+          <td align="left">Platz (vor. Liste)</td>
+          <td align="left">Rechner (Hersteller)</td>
+          <td align="left">Betreiber</td>
+          <td align="left">Land</td>
+          <td align="left">CPU-Cores</td>
+          <td align="left">GPU-Cores</td>
+          <td align="left">Linpack Rmax (PFlops)</td>
+          <td align="left">Energie-effizienz (GFlops/W)</td>
+          <td align="left">HPCG (TFlops)</td>
+        </tr>
+        <tr>
+          <td align="left">1 (1) upgrade</td>
+          <td align="left">Summit (IBM)</td>
+          <td align="left">Oak Ridge National Lab</td>
+          <td align="left">USA</td>
+          <td align="left">9216 × 22 Power9, 3,07 GHz</td>
+          <td align="left">27.648 × 80 Tesla V100</td>
+          <td align="left">148,6</td>
+          <td align="left">14,72</td>
+          <td align="left">2925,75</td>
+        </tr>
+        <tr>
+          <td align="left">2 (2)</td>
+          <td align="left">Sierra (IBM)</td>
+          <td align="left">Lawrence Livermore National Lab</td>
+          <td align="left">USA</td>
+          <td align="left">8640 × 22 Power9, 3,1 Ghz</td>
+          <td align="left">17.280 × 80 Tesla V100</td>
+          <td align="left">94,64</td>
+          <td align="left">12,72</td>
+          <td align="left">1795,67</td>
+        </tr>
+        <tr>
+          <td align="left">3 (3)</td>
+          <td align="left">Sunway TaihuLight (NRCPC)</td>
+          <td align="left">National Supercomputing Center in Wuxi</td>
+          <td align="left">China</td>
+          <td align="left">40.960 × 260 ShenWei 26010, 1,45 GHz</td>
+          <td align="left">0</td>
+          <td align="left">93,01</td>
+          <td align="left">6,05</td>
+          <td align="left">480,84</td>
+        </tr>
+        <tr>
+          <td align="left">4 (4)</td>
+          <td align="left">Tianhe-2A (NUDT)</td>
+          <td align="left">National Supercomputing Center in Guangzhou</td>
+          <td align="left">China</td>
+          <td align="left">35.584 × 12 Xeon E5-2692v2, 2,2 GHz</td>
+          <td align="left">35.584 × 128 Matrix 2000</td>
+          <td align="left">61,44</td>
+          <td align="left">3,33</td>
+          <td align="left">k.A.</td>
+        </tr>
+        <tr>
+          <td align="left">5(-)</td>
+          <td align="left">Frontera (DellEMC)</td>
+          <td align="left">Texas Advanced Computing Center (TACC)</td>
+          <td align="left">USA</td>
+          <td align="left">16016 x 28 Xeon Platinum 8280, 2,7 GHz</td>
+          <td align="left">0</td>
+          <td align="left">23,52</td>
+          <td align="left">k.A.</td>
+          <td align="left">k.A.</td>
+        </tr>
+        <tr>
+          <td align="left">6 (5)</td>
+          <td align="left">Piz Daint (Cray)</td>
+          <td align="left">Centro Svizzero di Calculo Scientifico (CSCS)</td>
+          <td align="left">Schweiz</td>
+          <td align="left">5704 × 12 Xeon E5-2690v3, 2,6 GHz (+2862 × 18 Xeon E5-2695v4)</td>
+          <td align="left">5704 × 56 Tesla P100</td>
+          <td align="left">21,2</td>
+          <td align="left">10,4</td>
+          <td align="left">486,39</td>
+        </tr>
+        <tr>
+          <td align="left">7 (6)</td>
+          <td align="left">Trinity (Cray)</td>
+          <td align="left">DOE/NNSA/LANL/SNL</td>
+          <td align="left">USA</td>
+          <td align="left">unbekannte Anzahl Xeon E5 + Xeon Phi 7250. 979.072 Kerne insgesamt</td>
+          <td align="left">0</td>
+          <td align="left">20,2</td>
+          <td align="left">2,66</td>
+          <td align="left">546,12</td>
+        </tr>
+        <tr>
+          <td align="left">8 (7)</td>
+          <td align="left">ABCI</td>
+          <td align="left">AIST</td>
+          <td align="left">Japan</td>
+          <td align="left">2176 × 20 Xeon Gold 6148, 2,4 Ghz</td>
+          <td align="left">4352 × 80 Tesla V100</td>
+          <td align="left">19,88</td>
+          <td align="left">12,05</td>
+          <td align="left">k.A.</td>
+        </tr>
+        <tr>
+          <td align="left">9 (8)</td>
+          <td align="left">SuperMUC-NG</td>
+          <td align="left">Leibniz-Rechenzentrum</td>
+          <td align="left">Deutschland</td>
+          <td align="left">12.744 x 24 Xeon Platinum 8174</td>
+          <td align="left">0</td>
+          <td align="left">19,48</td>
+          <td align="left">k.A.</td>
+          <td align="left">207,84</td>
+        </tr>
+        <tr>
+          <td align="left">10 (11) upgrade</td>
+          <td align="left">Lassen (IBM)</td>
+          <td align="left">Lawrence Livermore National Lab</td>
+          <td align="left">USA</td>
+          <td align="left">1584 x 22 IBM Power9</td>
+          <td align="left">3168 x 80 Tesla V100</td>
+          <td align="left">18,20</td>
+          <td align="left">13,07</td>
+          <td align="left">k.A.</td>
+        </tr>
+      </table>
+      <p>(<a href="mailto:as@ct.de">as</a>)</p>
+    </article>
+  </body>
+</html>

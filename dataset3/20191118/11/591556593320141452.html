@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://www.zdnet.com/article/google-patches-awesome-xss-vulnerability-in-gmail/"/>
+    <meta property="og:site_name" content="ZDNet"/>
+    <meta property="article:published_time" content="2019-11-18T11:18:02+00:00"/>
+    <meta property="og:title" content="Google patches ‘awesome’ XSS vulnerability in Gmail dynamic email feature"/>
+    <meta property="og:description" content="The bug bounty hunter who disclosed the issue says the bug is a prime example of DOM Clobbering."/>
+  </head>
+  <body>
+    <article>
+      <h1>Google patches ‘awesome’ XSS vulnerability in Gmail dynamic email feature</h1>
+      <address><time datetime="2019-11-18T11:18:02+00:00">18 Nov 2019, 11:18</time> by <a rel="author" href="https://www.zdnet.com/meet-the-team/us/charlie-osborne/" target="_blank">Charlie Osborne</a></address>
+      <p>
+        <b>The bug bounty hunter who disclosed the issue says the bug is a prime example of DOM Clobbering.</b>
+      </p>
+      <figure>
+        <video src="https://techrepublicvideo.cbsistatic.com/vr/2019/11/11/1639850563741/2019-11-11-wochit-google-says-goodbye-to-flash-will-stop-indexing-flash-content-in-search_1974757_742.mp4"/>
+      </figure>
+      <figure>
+        <img src="https://zdnet3.cbsistatic.com/hub/i/r/2019/11/11/eb66fb23-13fa-4573-ab0e-001a5cb92c9c/thumbnail/570x322/8baccd50c2abd2d01b5f80cd834f7285/google-says-goodbye-to-flash-will-stop-i-5dc1670da99ca3000127891a-1-nov-11-2019-15-30-07-poster.jpg"/>
+      </figure>
+      <p>Google has resolved an XSS vulnerability in Gmail described by the tech giant's own team as "awesome." <br/><br/>On Monday, Michał Bentkowski, Chief Security Researcher at <a href="https://securitum.pl/">Securitum</a>, disclosed the vulnerability through a responsible disclosure process after the bug had been resolved. </p>
+      <p><a href="https://research.securitum.com/xss-in-amp4email-dom-clobbering/">In a blog post</a>, Bentkowski said the security flaw was present in AMP4Email, a feature in Gmail pushed out to general availability in July. <br/><br/>AMP4Email, also known as <a href="https://gsuiteupdates.googleblog.com/2019/06/dynamic-email-in-gmail-becoming-GA.html">dynamic email</a>, was implemented to make it easier for dynamic content to show up in emails, such as comment threads or event invitations. <br/><br/>AMP4Email does have a validation system in place to prevent cross-site scripting (XSS) attacks from being used to abuse the feature. Certain tags and attributes are whitelisted, and should someone attempt to add another element or attribute that is not permitted, errors occur.</p>
+      <p>However, the security researcher noticed that the id attribute is not disallowed in tags, leading to an investigation into whether or not AMP4Email could be subject to <a href="https://fastmail.blog/2015/12/20/sanitising-html-the-dom-clobbering-issue/">DOM Clobbering</a>.  <br/><br/><b>See also: </b><a href="https://www.zdnet.com/article/these-software-vulnerabilities-top-mitres-most-dangerous-list-in-2019/">These software vulnerabilities top MITRE's most dangerous list</a></p>
+      <p>Document Object Model (DOM) Clobbering has been caused by the gradual increase in complexity when it comes to digital messaging. Emails are rarely now only text-based, and while attempting to facilitate additional content, sanitization has become crucial -- but, sometimes, issues in whitelisting can be exploited to deploy XSS attacks.  <br/><br/>"DOM Clobbering is a legacy feature of web browsers that just keeps causing trouble in many applications," the researcher says. "When you create an element in HTML (for instance) and then you wish to reference it from JavaScript, you would usually use a function like document .getElementById('username') or document .querySelector('#username'). The legacy way is to just access it via a property of global window object. So window.username is in this case exactly the same as document.getElementById('username')." <br/><br/>In AMP4Email, some values for the id attribute are restricted. However, when in AMP_MODE, an error caused a 404 if the function tried to load JS files, causing an 'undefined' portion in the resultant URL.  <br/><br/><b>CNET: </b><a href="https://www.cnet.com/news/most-americans-dont-think-its-possible-to-keep-their-data-private-report-says/?ftag=CMG-01-10aaa1b">Most Americans don't think it's possible to keep their data private, report says</a> <br/><br/>"AMP tries to get a property of AMP_MODE to put it in the URL," the researcher says. "Because of DOM Clobbering, the expected property is missing, hence undefined." <br/><br/>The code responsible for the undefined element checks to see if AMP_MODE.test and window.testLocation are truthy, but it was noticed that the URL could be controlled by writing a payload to overload window.testLocation. <br/><br/>In a real-world scenario, however, a Content Security Policy (CSP) function in AMP stopped the code from fully executing.  <br/><br/><b>TechRepublic: </b><a href="https://www.techrepublic.com/article/cybersecurity-remains-the-top-concern-for-middle-market-companies/?ftag=CMG-01-10aaa1b">Cybersecurity remains the top concern for middle market companies</a> <br/><br/>The vulnerability was reported via the Google Vulnerability Reward Program on 15 August 2019.  A day later, Google's team accepted the report, and by 10 September, the team said: "The bug is awesome, thanks for reporting!"  <br/><br/>The tech giant notified Bentkowski on 12 October that the bug had been resolved, leading to public disclosure.  <br/><br/>ZDNet has reached out to Google but has not heard back at the time of publication. </p>
+      <h3>Previous and related coverage</h3>
+      <ul>
+        <li>
+          <a href="https://www.zdnet.com/article/tpm-fail-vulnerabilities-impact-tpm-chips-in-desktops-laptops-servers/">TPM-FAIL vulnerabilities impact TPM chips in desktops, laptops, servers</a>
+        </li>
+        <li>
+          <a href="https://www.zdnet.com/article/google-researchers-disclose-vulnerabilities-for-interactionless-ios-attacks/">Google researchers disclose vulnerabilities for 'interactionless' iOS attacks</a>
+        </li>
+        <li>
+          <a href="https://www.zdnet.com/article/whatsapp-vulnerabilities-puts-words-in-your-mouth-lets-hackers-tamper-with-text/">WhatsApp vulnerabilities 'put words in your mouth,' lets hackers take over conversations</a>
+        </li>
+      </ul>
+      <hr/>
+      <p><b>Have a tip?</b> Get in touch securely via WhatsApp | Signal at +447713 025 499, or over at Keybase: charlie0</p>
+      <hr/>
+    </article>
+  </body>
+</html>

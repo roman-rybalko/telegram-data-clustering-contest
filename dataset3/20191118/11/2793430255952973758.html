@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://habr.com/en/post/476308/?utm_source=telegram&amp;utm_medium=social&amp;utm_campaign=-angloyazychnoe-za-den-19-noyabrya."/>
+    <meta property="og:site_name" content="Habr"/>
+    <meta property="article:published_time" content="2019-11-18T11:05:29+00:00"/>
+    <meta property="og:title" content="Top 5 Software Development Practices to Follow in 2020"/>
+    <meta property="og:description" content="Though it seems we are just a few months away from reaching 2020, these months are also important in the field of software development. Here in this article,..."/>
+  </head>
+  <body>
+    <article>
+      <h1>Top 5 Software Development Practices to Follow in 2020</h1>
+      <address><time datetime="2019-11-18T11:05:29+00:00">18 Nov 2019, 11:05</time> by <a rel="author" href="https://habr.com/en/users/kristencarter7519/" target="_blank">kristencarter7519</a></address>
+      <figure>
+        <img src="https://habrastorage.org/webt/y4/id/ae/y4idae8qyd30oaqirhivwqa0ogq.jpeg"/>
+      </figure>
+      <p>Though it seems we are just a few months away from reaching 2020, these months are also important in the field of software development. Here in this article, we will see how the coming year 2020 will change the lives of software developers!</p>
+      <h3>Future Software Development Is Here!</h3>
+      <p>Traditional software development is about developing software by writing code and following some fixed rules. But the present-day software development witnessed a paradigm shift with advances in Artificial Intelligence, Machine Learning, and Deep Learning. With the integration of these three technologies, developers will be able to build software solutions that learn the instructions and add extra features and patterns in data that are needed for the desired outcome.</p>
+      <h3>Let’s Try Out With Some Code</h3>
+      <p>Over time, the neural network software development systems have become more complex in terms of integrations as well as layers of functionality and interfaces. Developers can build a very simple neural network with Python 3.6. Here’s an example of a program that does binary classification with 1 or 0. <br/><br/><b>Of course, we can start by creating a neural network class:<br/></b><br/><br/>import numpy as np</p>
+      <pre>X=np.array([[0,1,1,0],[0,1,1,1],[1,0,0,1]])<br/>y=np.array([[0],[1],[1]])<br/></pre>
+      <p>
+        <b>Applying the Sigmoid function:</b>
+      </p>
+      <pre>def sigmoid ():<br/>   return 1/(1 + np.exp(-x))<br/>def derivatives_sigmoid ():<br/>   return x * (1-x)</pre>
+      <p>
+        <b>Training the Model With Initial Weights and Biases:</b>
+      </p>
+      <pre>epoch=10000<br/>lr=0.1<br/>inputlayer_neurons = X.shape[1]<br/>hiddenlayer_neurons = 3<br/>output_neurons = 1<br/><br/>wh=np.random.uniform(size=(inputlayer_neurons,hiddenlayer_neurons))<br/>bh=np.random.uniform(size=(1,hiddenlayer_neurons))<br/>wout=np.random.uniform(size=(hiddenlayer_neurons,output_neurons))<br/>bout=np.random.uniform(size=(1,output_neurons))</pre>
+      <p>For beginners, if you need help regarding neural networks, you can get in touch with <a href="https://www.valuecoders.com/">top software development company</a>.Or, you can hire AI/ML developers to work on your project.<br/><br/><b>Modifying Code With the Output Layer Neuron</b></p>
+      <pre>hidden_layer_input1=np.dot(X,wh)<br/>hidden_layer_input=hidden_layer_input1 + bh<br/>hiddenlayer_activations = sigmoid(hidden_layer_input)<br/>output_layer_input1=np.dot(hiddenlayer_activations,wout)<br/>output_layer_input= output_layer_input1+ bout<br/>output = sigmoid(output_layer_input)<br/></pre>
+      <p>
+        <b>Calculating Error for the Hidden Layer of Codes</b>
+      </p>
+      <pre>E = y-output<br/>slope_output_layer = derivatives_sigmoid(output)<br/>slope_hidden_layer = derivatives_sigmoid(hiddenlayer_activations)<br/>d_output = E * slope_output_layer<br/>Error_at_hidden_layer = d_output.dot(wout.T)<br/>d_hiddenlayer = Error_at_hidden_layer * slope_hidden_layer<br/>wout += hiddenlayer_activations.T.dot(d_output) *lr<br/>bout += np.sum(d_output, axis=0,keepdims=True) *lr<br/>wh += X.T.dot(d_hiddenlayer) *lr<br/>bh += np.sum(d_hiddenlayer, axis=0,keepdims=True) *lr<br/></pre>
+      <p>
+        <b>Output:</b>
+      </p>
+      <pre>print (output)<br/><br/>[[0.03391414]<br/>[0.97065091]<br/>[0.9895072 ]]</pre>
+      <p>While it is always wise to keep abreast of the latest programming languages and coding techniques, programmers should also know about many new tools that help make their apps relevant to new users.<br/><br/>In 2020, software developers should consider incorporating these 5 software development tools into their products regardless of what programming language they use:</p>
+      <h3>1. Natural Language Processing (NLP)</h3>
+      <p>With chatbot powering up customer service, NLP is getting the attention of programmers working on modern software development. They apply <a href="https://www.techopedia.com/definition/30343/natural-language-toolkit-nltk">NLTK Toolkits</a> like Python’s <a href="http://www.nltk.org/">NLTK</a> to quickly incorporate NLP into chatbots, digital assistants, and digital products. By mid of 2020 or soon, you will see NLP become more important on everything from retail business to autonomous vehicles, and devices throughout the home and office.<br/><br/>Going forward with the best software development tools and technologies, you can expect software developers to use NLP in a number of ways from voice-driven user interface to far easier to navigate menus, sentiment analysis, context identification, emotion, and data accessibility. All would be available to the most users and businesses can achieve upto $430 billion in productivity gains by 2020, as per IDC data cited by Deloitte.</p>
+      <h3>2. GraphQL Replacing REST Apis</h3>
+      <p>According to developers at my firm which is an offshore software development company, the REST API is losing its dominance over the application universe because of its slow data loading that needs to be done from multiple URLs individually.<br/><br/>GraphQL is the new trend and best alternative to Rest-based architecture that pulls all relevant data from multiple sites with a single request. It improves client-server interactions and reduces the latency that makes the app much more responsive to the user. <br/><br/>You can improve your software development skills when you use GraphQL for software development. It also requires less coding than REST Api and allows enabling complex queries within a few simple lines. It can also be supplied with a number of <a href="https://www.investopedia.com/terms/b/blockchainasaservice-baas.asp">Backend as a Service (BaaS)</a> offerings that make it easier for software developers to use it on different programming languages including Python, Node.js, C++, and Java. <br/><br/><b>Currently, the GraphQL support the developers’ community by:</b></p>
+      <ul>
+        <li>Enabling no over and under fetching problems</li>
+        <li>Validation and type checking of codes</li>
+        <li>Auto Generating API documentation</li>
+        <li>By providing detailed error messages</li>
+        <li>Add additional operation to the table: “subscriptions” to receive real-time messages from the server</li>
+      </ul>
+      <h3>3. Low/No Code</h3>
+      <p>All low code software development tools provide many benefits. It should be as efficient as possible in writing many programs from scratch. The low or no-code provide preconfigured code that can be embedded into larger programs. This allows even non programmers to create complex products quickly and easily and speed up the modern development ecosystem.<br/><br/>According to a report shared by <a href="https://www.techrepublic.com/article/low-code-platforms-a-cheat-sheet/">TechRepublic</a>, the no/low-code tools are already being deployed in web portals, software systems, mobile applications and other areas. The market of low code tools will grow up to $15 billion by 2020. These tools are handling everything like managing the workflow logic, data filter, import, and export. Here are the best low/no code platforms to follow in 2020:</p>
+      <ul>
+        <li>MicroSoft PowerApps</li>
+        <li>Mendix</li>
+        <li>Outsystems</li>
+        <li>Zoho Creator</li>
+        <li>Salesforce App Cloud</li>
+        <li>Quick Base</li>
+        <li>Spring Boot</li>
+      </ul>
+      <h3>4. The 5G Wave</h3>
+      <p>5G connectivity will greatly impact mobile/software development, web development as well. After all, in technology like IoT everything is connected. So, the device software will leverage high-speed wireless assets to their fullest potential with 5G.<br/><br/>In a recent interview with <a href="https://www.digitaltrends.com/mobile/2025-how-5g-changed-our-lives/">Digital Trends</a>, Dan Dery, product vice president at Motorola, stated that “In coming years, 5G will deliver faster data sharing, higher bandwidth, and speeds up the phone software to 10 times faster than existing wireless technology.” <br/><br/>In this light, software development companies will be working to incorporate 5G into modern applications. The 5G rollout moving fast, more than 20 operators have announced upgrades to their networks. So, the developers will now start working on taking the proper <a href="https://www.techopedia.com/definition/24407/application-programming-interface-api">APIs</a> to take advantage of 5G. The technology will dramatically improve the following:</p>
+      <ul>
+        <li>Security of network program, especially for network slicing.</li>
+        <li>Will provide new ways for handling user identities.</li>
+        <li>Will allow to add new functionalities to applications with low latency rate.</li>
+        <li>Will have an impact on the development of the AR/VR enabled system.</li>
+      </ul>
+      <h3>5. Effortless “Authentication”</h3>
+      <p>Authentication increasingly becoming an effective process at protecting sensitive data. The sophisticated technology not only vulnerable to hacking software, but also supports artificial intelligence and even quantum computing. But the software development market is already seeing a plethora of new types of authentication, such as voice analysis, biometrics, and facial recognition. <br/><br/>At this point, hackers are finding different ways to subvert online user identities and passwords. As mobile users are already accustomed to accessing their smartphones with a thumb or finger impression or with a facial scan, so with authentication tools they will not need new capabilities for validation, as well as chances of cyber theft will become less. Here are some multi factor authentication tools with SSL encryption.</p>
+      <ul>
+        <li>Soft Tokens turn your smartphones into convenient multi factor authenticators.</li>
+        <li>EGrid patterns is an easy-to-use and popular form of authenticators in the industry.</li>
+        <li>Some of the best authentication software for businesses are: RSA SecurID Access, OAuth, Ping Identity, Authx, and Aerobase.</li>
+      </ul>
+      <p>There are software development companies in India and USA performing extensive research in the science of authentication and biometrics with advances to AI to deliver excellent voice, face, behavioral, and biometric authentication software. Now, you can secure digital channels and improve the capabilities of platforms.</p>
+      <h3>Endnotes</h3>
+      <p>It appears that life for programmers in 2020 will become less complicated as the pace of software development is likely to speed up. The available tools will become easier to use. Ultimately, this advancement will lead to creating a vibrant world heading into a new digital age.</p>
+      <related>
+        <h4>Similar posts</h4>
+        <a href="https://habr.com/en/post/465273/"/>
+        <a href="https://habr.com/en/post/455966/"/>
+        <a href="https://habr.com/en/post/441768/"/>
+      </related>
+    </article>
+  </body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://www.heise.de/developer/meldung/HashiCorp-Vault-1-3-erleichtert-das-Credential-Management-4590947.html"/>
+    <meta property="og:site_name" content="Developer"/>
+    <meta property="article:published_time" content="2019-11-19T11:19:00+00:00"/>
+    <meta property="og:title" content="HashiCorp Vault 1.3 erleichtert das Credential-Management"/>
+    <meta property="og:description" content="In der neuen Version bietet Vault erweiterte Funktionen für das Berechtigungsmanagement über Dienste wie Active Directory und Kubernetes."/>
+  </head>
+  <body>
+    <article>
+      <h1>HashiCorp Vault 1.3 erleichtert das Credential-Management</h1>
+      <h2>In der neuen Version bietet Vault erweiterte Funktionen für das Berechtigungsmanagement über Dienste wie Active Directory und Kubernetes.</h2>
+      <address><time datetime="2019-11-19T11:19:00+00:00">19 Nov 2019, 11:19</time> by <a rel="author">Matthias Parbel</a></address>
+      <p>HashiCorp hat Version 1.3 seines auf das Verwalten schützenswerter Informationen zugeschnittenen Open-Source-Werkzeugs Vault veröffentlicht. In das neue Release sind eine Reihe von Verbesserungen sowie neue Funktionen eingeflossen, die zum Teil – wie im Fall der Entropie-Augmentation und den Pfadfiltern – aber der kostenpflichtigen Enterprise-Edition vorbehalten sind. Für das Credential-Management in Compliance-regulierten Multi-Cloud-Umgebungen stehen Vault-Nutzern erweiterte Optionen für Dienste wie Active Directory und Kubernetes zur Verfügung.</p>
+      <h3>Active-Directory-Credentials im Team teilen</h3>
+      <p>Den Umgang mit statischen Credentials-Systemen unterstützt Vault bereits seit Version 1.1. Die neue Funktion "Check In / Check Out" ermöglicht Nutzern die Verwaltung ganzer Sätze von Active-Directory-Credentials eines Systems, sodass diese auch innerhalb von Teams geteilt und abwechselnd verwendet werden können – mit rotierenden Passwörtern.</p>
+      <p>Die für Enterprise-Kunden im vorangegangenen Release eingeführte Secret Engine, die den Einsatz von Vault als KMIP-Server (<b>Key Management Interoperability Protocol</b>) erlaubt, wurde weiter ausgebaut. Um Vault auch als vollwertige externe Schlüsselverwaltung nutzen zu können, unterstützt das Tool nun erweiterte KMIP-Funktionen, die auch Prozesse zur Registrierung von extern abgeleiteten Schlüsseln umfassen. Neben den bewährten Mount-Filtern stehen in Vault Enterprise nun auch Pfad-Filter zur Verfügung, die ein Mounten geheimer Informationen in Namespaces ermöglichen und gleichzeitig eine Replikation verhindern, die gegen Compliance-Anforderungen verstoßen würde.</p>
+      <h3>Bereit für schärfere Kryptografie-Regularien</h3>
+      <p>Entropie-Augmentation erlaubt Vault-Anwendern darüber hinaus, auch schärfere Kryptografie-Regularien wie NIST SP800-90B zu erfüllen. Über die <code>seal</code>-Schnittstelle kann Vault nun die Entropie, die als Maß für die Zufälligkeit kryptographischer Operationen dient, auch von einer externen Quelle prüfen. Dadurch lassen sich beispielsweise auch hardwarebasierte Zufallszahlengeneratoren einbinden.</p>
+      <p>Zu den weiteren Neuerungen in Vault 1.3 zählen ein Debug-Befehl, der beim Sammeln von Metriken über den Health-Status von Nodes hilft, sowie Verbesserung des internen Speichers (Raft Storage Backend), die allerdings noch Beta-Status haben. Einen detaillierte Überblick <a href="https://www.hashicorp.com/blog/vault-1-3/">bietet der Blogbeitrag zum Release</a>, die vollständige Liste der Änderungen <a href="https://github.com/hashicorp/vault/blob/master/CHANGELOG.md">findet sich im Changelog</a> auf GitHub. (<a href="mailto:map@heise.de">map</a>)</p>
+    </article>
+  </body>
+</html>

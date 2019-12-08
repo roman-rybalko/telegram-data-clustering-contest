@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://arstechnica.com/information-technology/2019/11/microsoft-announces-plans-to-support-encrypted-dns-requests-eventually/"/>
+    <meta property="og:site_name" content="Ars Technica"/>
+    <meta property="article:published_time" content="2019-11-19T17:11:54+00:00"/>
+    <meta property="og:title" content="Microsoft says yes to future encrypted DNS requests in Windows"/>
+    <meta property="og:description" content="In highly hedged post, Microsoft pledges support for DoH and other schemes, eventually."/>
+  </head>
+  <body>
+    <article>
+      <h1>Microsoft says yes to future encrypted DNS requests in Windows</h1>
+      <h2>In highly hedged post, Microsoft pledges support for DoH and other schemes, eventually.</h2>
+      <address><time datetime="2019-11-19T17:11:54+00:00">19 Nov 2019, 17:11</time> by <a rel="author">Sean Gallagher</a></address>
+      <p>In <a href="https://techcommunity.microsoft.com/t5/Networking-Blog/Windows-will-improve-user-privacy-with-DNS-over-HTTPS/ba-p/1014229">a post yesterday </a>to the Microsoft Tech Community blog, Microsoft Windows Core Networking team members Tommy Jensen, Ivan Pashov, and Gabriel Montenegro announced that Microsoft is planning to adopt support for <a href="https://arstechnica.com/information-technology/2018/04/how-to-keep-your-isps-nose-out-of-your-browser-history-with-encrypted-dns/">encrypted Domain Name System queries</a> in order to "close one of the last remaining plain-text domain name transmissions in common web traffic."</p>
+      <p>That support will first take the form of integration with DNS over HTTPS (DoH), a standard proposed by the <a href="https://tools.ietf.org/html/rfc8484">Internet Engineering Task Force</a> and supported by Mozilla, Google, and Cloudflare, among others. "As a platform, Windows Core Networking seeks to enable users to use whatever protocols they need, so we’re open to having other options such as DNS over TLS (DoT) in the future," wrote Jensen, Pashov, and Montenegro. "For now, we're prioritizing DoH support as the most likely to provide immediate value to everyone. For example, DoH allows us to reuse our existing HTTPS infrastructure."</p>
+      <p>But Microsoft is being careful about how it deploys this compatibility given the current political fight over DoH being waged by Internet service providers concerned that they'll lose a lucrative source of customer behavior data.</p>
+      <p>ISPs give a number of reasons for their opposition to DoH. Since it prevents them from viewing plain-text DNS requests, it prevents filtering and blocking of some content—including, in the United Kingdom, the enforcement of content-filtering requirements placed on them by UK law. Because of its adoption of DoH as part of the Firefox Web browser, the UK's Internet Services Providers Association named Mozilla an "Internet Villain."</p>
+      <p>In the US, ISP lobbyists <a href="https://arstechnica.com/tech-policy/2019/11/isps-lied-to-congress-to-spread-confusion-about-encrypted-dns-mozilla-says/">have pressed Congress to prevent Google from deploying DoH</a> on Chrome on antitrust grounds. Part of that lobbying is based on claims that Google would, as a letter from Comcast to members of Congress put it, "centraliz[e] a majority of worldwide DNS data with Google" and "give one provider control of Internet traffic routing and vast amounts of new data about consumers and competitors."</p>
+      <h3>Administrator’s choice</h3>
+      <p>According to the authors of the Microsoft post, the Windows implementation of DoH support will not change the status quo for corporate users or many ISP customers. "We will not be making any changes to which DNS server Windows was configured to use by the user or network," Jensen et al wrote:</p>
+      <blockquote>…[W]e will look for opportunities to encrypt Windows DNS traffic without changing the configured DNS resolvers set by users and system administrators. <br/><br/>Today, users and admins decide what DNS server to use by picking the network they join or specifying the server directly; this milestone won’t change anything about that. Many people use ISP or public DNS content filtering to do things like block offensive websites. Silently changing the DNS servers trusted to do Windows resolutions could inadvertently bypass these controls and frustrate our users. We believe device administrators have the right to control where their DNS traffic goes.</blockquote>
+      <p>However, Microsoft's implementation will also not "get in the way" of applications that use DoH or other encrypted DNS requests themselves. And it will have to provide for fallbacks when DoH requests fail. "DoH use will be enforced so that a server confirmed by Windows to support DoH will not be consulted via classic DNS," the Core Networking team members wrote. "If this preference for privacy over functionality causes any disruption in common Web scenarios, we’ll find out early."</p>
+      <p>All of this is for the future, however. Microsoft is announcing its intent now before making early versions of the capability available to Windows Insiders, because, as the three wrote, "With encrypted DNS gaining more attention, we felt it was important to make our intentions clear as early as possible. We don’t want our customers wondering if their trusted platform will adopt modern privacy standards or not."</p>
+      <p>It also seems that Microsoft is staking out a position friendly to ISPs—and to enterprises as well, where what might be hiding in encrypted DNS traffic from individual computers might be a security concern.</p>
+    </article>
+  </body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://techxplore.com/news/2019-11-people-personalities.html"/>
+    <meta property="og:site_name" content="Tech Xplore"/>
+    <meta property="article:published_time" content="2019-11-19T15:01:26+00:00"/>
+    <meta property="og:title" content="Predicting people's driving personalities"/>
+    <meta property="og:description" content="Self-driving cars are coming. But for all their fancy sensors and intricate data-crunching abilities, even the most cutting-edge cars lack something that (almost) every 16-year-old with a learner's permit ..."/>
+  </head>
+  <body>
+    <article>
+      <h1>Predicting people's driving personalities</h1>
+      <address><time datetime="2019-11-19T15:01:26+00:00">19 Nov 2019, 15:01</time> by <a rel="author">Adam Conner-Simons, Massachusetts Institute of Technology</a></address>
+      <p>Self-driving cars are coming. But for all their fancy sensors and intricate data-crunching abilities, even the most cutting-edge cars lack something that (almost) every 16-year-old with a learner's permit has: social awareness.</p>
+      <p>While autonomous technologies have improved substantially, they still ultimately view the <a href="https://techxplore.com/tags/drivers/">drivers</a> around them as obstacles made up of ones and zeros, rather than human beings with specific intentions, motivations, and personalities.</p>
+      <p>But recently a team led by researchers at MIT's Computer Science and Artificial Intelligence Laboratory (CSAIL) has been exploring whether self-driving cars can be programmed to classify the social personalities of other drivers, so that they can better predict what different cars will do—and, therefore, be able to drive more safely among them.</p>
+      <p>In a new paper, the scientists integrated tools from social psychology to classify driving behavior with respect to how selfish or selfless a particular driver is.</p>
+      <p>Specifically, they used something called social value orientation (SVO), which represents the degree to which someone is selfish ("egoistic") versus altruistic or cooperative ("prosocial"). The system then estimates drivers' SVOs to create real-time driving trajectories for self-driving cars.</p>
+      <p>Testing their algorithm on the tasks of merging lanes and making unprotected left turns, the team showed that they could better predict the behavior of other cars by a factor of 25 percent. For example, in the left-turn simulations their car knew to wait when the approaching car had a more egoistic driver, and to then make the turn when the other car was more prosocial.</p>
+      <p>While not yet robust enough to be implemented on real roads, the system could have some intriguing use cases, and not just for the cars that drive themselves. Say you're a human driving along and a car suddenly enters your blind spot—the system could give you a warning in the rear-view mirror that the car has an aggressive driver, allowing you to adjust accordingly. It could also allow self-driving cars to actually learn to exhibit more human-like behavior that will be easier for human drivers to understand.</p>
+      <p>"Working with and around humans means figuring out their intentions to better understand their behavior," says graduate student Wilko Schwarting, who was lead author on the new paper that will be published this week in the latest issue of the <i>Proceedings of the National Academy of Sciences</i>. "People's tendencies to be collaborative or competitive often spills over into how they behave as drivers. In this paper, we sought to understand if this was something we could actually quantify."</p>
+      <p>Schwarting's co-authors include MIT professors Sertac Karaman and Daniela Rus, as well as research scientist Alyssa Pierson and former CSAIL postdoc Javier Alonso-Mora.</p>
+      <p>A central issue with today's self-driving cars is that they're programmed to assume that all humans act the same way. This means that, among other things, they're quite conservative in their decision-making at four-way stops and other intersections.</p>
+      <p>While this caution reduces the chance of fatal accidents, it also creates bottlenecks that can be frustrating for other drivers, not to mention hard for them to understand. (This may be why the majority of traffic incidents have involved getting rear-ended by impatient drivers.)</p>
+      <p>"Creating more human-like behavior in autonomous vehicles (AVs) is fundamental for the safety of passengers and surrounding vehicles, since behaving in a predictable manner enables humans to understand and appropriately respond to the AV's actions," says Schwarting.</p>
+      <p>To try to expand the car's <a href="https://techxplore.com/tags/social+awareness/">social awareness</a>, the CSAIL team combined methods from social psychology with game theory, a theoretical framework for conceiving social situations among competing players.</p>
+      <p>The team modeled road scenarios where each driver tried to maximize their own utility and analyzed their "best responses" given the decisions of all other agents. Based on that small snippet of motion from other cars, the team's algorithm could then predict the surrounding cars' behavior as cooperative, altruistic, or egoistic—grouping the first two as "prosocial." People's scores for these qualities rest on a continuum with respect to how much a person demonstrates care for themselves versus care for others.</p>
+      <p>In the merging and left-turn scenarios, the two outcome options were to either let somebody merge into your lane ("prosocial") or not ("egoistic"). The team's results showed that, not surprisingly, merging cars are deemed more competitive than non-merging cars.</p>
+      <p>The system was trained to try to better understand when it's appropriate to exhibit different behaviors. For example, even the most deferential of human drivers knows that certain types of actions—like making a lane change in heavy traffic—require a moment of being more assertive and decisive.</p>
+      <p>For the next phase of the research, the team plans to work to apply their model to pedestrians, bicycles, and other agents in driving environments. In addition, they will be investigating other robotic systems acting among humans, such as household robots, and integrating SVO into their prediction and decision-making algorithms. Pierson says that the ability to estimate SVO distributions directly from observed motion, instead of in laboratory conditions, will be important for fields far beyond autonomous driving.</p>
+      <p>"By modeling driving personalities and incorporating the models mathematically using the SVO in the decision-making module of a robot car, this work opens the door to safer and more seamless road-sharing between human-driven and robot-driven cars," says Rus.</p>
+      <table bordered="">
+        <tr>
+          <td><b>More information:</b> Wilko Schwarting el al., "Social behavior for autonomous vehicles," <i>PNAS</i> (2019). <a href="https://www.pnas.org/cgi/doi/10.1073/pnas.1820676116">www.pnas.org/cgi/doi/10.1073/pnas.1820676116<br/></a><b>Journal information:</b> <a href="https://techxplore.com/journals/proceedings-of-the-national-academy-of-sciences/">Proceedings of the National Academy of Sciences</a></td>
+        </tr>
+      </table>
+      <p>Provided by <a href="https://techxplore.com/partners/massachusetts-institute-of-technology/">Massachusetts Institute of Technology</a></p>
+      <related>
+        <h4>Related Stories</h4>
+        <a href="https://techxplore.com/news/2019-11-cooperating-result-self-driving.html"/>
+        <a href="https://techxplore.com/news/2019-11-autonomous-tricky-intersections.html"/>
+        <a href="https://techxplore.com/news/2019-05-driverless-cars-traffic.html"/>
+        <a href="https://techxplore.com/news/2019-10-future-intent-automated-car.html"/>
+        <a href="https://techxplore.com/news/2018-05-driverless-cars-lanes-humans.html"/>
+        <a href="https://phys.org/news/2019-06-cars-increasingly-driverless-people-analogue.html"/>
+      </related>
+    </article>
+  </body>
+</html>

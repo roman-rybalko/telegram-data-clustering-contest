@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://venturebeat.com/2019/11/18/facebooks-moco-closes-the-gap-between-supervised-and-unsupervised-learning-in-vision-tasks/"/>
+    <meta property="og:site_name" content="VentureBeat"/>
+    <meta property="article:published_time" content="2019-11-18T17:18:09+00:00"/>
+    <meta property="og:title" content="Facebook’s MoCo closes the gap between supervised and unsupervised learning in vision tasks"/>
+    <meta property="og:description" content="Facebook claims its new contrastive loss (MoCo) approach to computer vision tasks closes the gap between supervised and unsupervised learning techniques."/>
+  </head>
+  <body>
+    <article>
+      <h1>Facebook’s MoCo closes the gap between supervised and unsupervised learning in vision tasks</h1>
+      <address><time datetime="2019-11-18T17:18:09+00:00">18 Nov 2019, 17:18</time> by <a rel="author" href="https://venturebeat.com/author/kylewiggers/" target="_blank">Kyle Wiggers</a></address>
+      <p>Unsupervised representation learning — the set of techniques that allows an AI system to automatically discover the representations needed to classify raw data — is becoming widely used in <a href="https://venturebeat.com/2018/11/02/google-open-sources-bert-a-state-of-the-art-training-technique-for-natural-language-processing/">natural language processing</a>. But it’s not yet gained traction in computer vision, perhaps because the raw signals in tasks like image classification are in a continuous, high-dimensional space that isn’t structured for human communication.</p>
+      <p>This spurred researchers at Facebook to pursue a <i>contrastive loss </i>approach, where keys (or tokens) are sampled from image data and represented by an encoder that’s trained to match queries to a dictionary. To this end, they developed Momentum Contrast, which pre-trains representations that can be transferred to tasks by fine-tuning. In a test involving seven tasks related to detection or segmentation and a corpus of roughly one billion photos from Instagram, they say that MoCo in some cases surpassed a supervised baseline by “nontrivial” margins.</p>
+      <p>“These results show that MoCo largely closes the gap between unsupervised and supervised representation learning in many computer vision tasks, and can serve as an alternative to … supervised pre-training in several applications,” wrote the researchers in a <a href="https://arxiv.org/pdf/1911.05722.pdf">paper</a> detailing their work.</p>
+      <p>MoCo cleverly maintains the above-described key dictionary as a queue of data samples, which enables it to reuse encoded keys. This in turn allows the dictionary to be larger than is typical, and to be set both “flexibly” and “independently” as a hyperparameter (i.e., an AI model parameter that’s estimated without using observed data). It’s a <i>dynamic</i> dictionary in the sense that its samples are progressively replaced, but the researchers note that it always represents a sampled subset of all data.</p>
+      <p>To evaluate MoCo, the team tapped ImageNet and Instagram-1B, data sets containing 1.28 million images in 1,000 classes and 940 million public Instagram images related to the ImageNet categories, respectively. (Perhaps unsurprisingly given its size, it took six days and 64 graphics cards to train an image classification model on the Instagram corpora.) They report that MoCo pre-trained on the Instagram corpora performed consistently better than on the ImageNet samples, indicating that it’s well-suited to large-scale and relatively uncurated data.</p>
+      <p>“MoCo has largely closed the gap between unsupervised and supervised representation learning in multiple vision tasks,” wrote the researchers. “Beyond the simple instance discrimination task, it is possible to adopt MoCo for pretext tasks like masked auto-encoding, e.g., in language and in vision. We hope MoCo will be useful with other pretext tasks that involve contrastive learning.”</p>
+    </article>
+  </body>
+</html>

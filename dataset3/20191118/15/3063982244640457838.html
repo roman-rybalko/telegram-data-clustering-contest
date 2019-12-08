@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://www.golem.de/news/microsoft-windows-bekommt-native-unterstuetzung-fuer-dns-ueber-https-1911-145059.html"/>
+    <meta property="og:site_name" content="Golem.de"/>
+    <meta property="article:published_time" content="2019-11-18T15:55:02+00:00"/>
+    <meta property="og:title" content="Windows bekommt native Unterstützung für DNS über HTTPS"/>
+    <meta property="og:description" content="Der DNS-Client in Windows bekommt Unterstützung für das verschlüsselte DNS über HTTPS (DoH). Nutzer sollen dabei ähnlich wie im Chrome-Browser auf den DOH-Server ihres"/>
+  </head>
+  <body>
+    <article>
+      <h1>Windows bekommt native Unterstützung für DNS über HTTPS</h1>
+      <h2>Der DNS-Client in <a href="https://www.golem.de/specials/windows/">Windows</a> bekommt Unterstützung für das verschlüsselte DNS über HTTPS (DoH). Nutzer sollen dabei ähnlich wie im Chrome-Browser auf den DOH-Server ihres bisherigen <a href="https://www.golem.de/specials/dns/">DNS</a>-Server migriert werden, falls verfügbar.</h2>
+      <address><time datetime="2019-11-18T15:55:02+00:00">18 Nov 2019, 15:55</time> by <a rel="author">Sebastian Grüner</a></address>
+      <p>Das für das Core Networking in Windows zuständige Entwicklerteam hat <a href="https://techcommunity.microsoft.com/t5/Networking-Blog/Windows-will-improve-user-privacy-with-DNS-over-HTTPS/ba-p/1014229">in seinem Blog angekündigt</a>, künftig das verschlüsselte DNS-Protokoll DNS über HTTPS (DoH) im Standard-DNS-Client des Betriebssystems zu unterstützen. Microsoft macht das, weil <i>"die Unterstützung verschlüsselter DNS-Abfragen in Windows eine der letzten verbleibenden Klartext-Übertragungen von Domänennamen im allgemeinen Webverkehr schließen soll"</i>, wie es in der Ankündigung heißt.</p>
+      <p>Bei DoH handelt es sich, wie der Name sagt, um ein Protokoll zur Übertragung von DNS-Anfragen und -Antworten per HTTPS an einen entsprechenden Server, der schließlich die Namensauflösung durchführt. Dank der Verwendung von HTTPS kann einerseits die bestehende HTTP-Infrastruktur wiederverwendet werden, andererseits geschieht die Übertragung verschlüsselt, im Gegensatz zum bisherigen DNS.</p>
+      <p>Der DoH-Support von Windows soll laut Microsoft dabei zunächst so funktional wie möglich gestaltet werden, so dass weder Nutzer noch Admins etwas an ihrer bisherigen Konfiguration ändern müssen. Um dieses Ziel umzusetzen, sollen DoH-Server nur dann auch tatsächlich als Resolver genutzt werden, wenn diese Resolver schon jetzt von den Nutzern über das alte DNS verwendet werden. Windows kann diese Migration nun automatisch durchführen.</p>
+      <h4>DoH nach den Browser auch im Betriebssystem</h4>
+      <p>Dieses Vorgehen erinnert dabei an jenes, das auch <a href="https://www.golem.de/news/browser-google-will-chrome-nutzer-testweise-auf-doh-upgraden-1909-143792.html">Google für seinen Chrome-Browser benutzt</a>. Im Gegensatz dazu wird Firefox-Hersteller Mozilla <a href="https://www.golem.de/news/mozilla-firefox-wird-doh-fuer-alle-us-nutzer-aktivieren-1909-143735.html">sämtliche seiner US-Nutzer künftig auf DoH migrieren</a>, wobei standardmäßig die Dienste von Cloudflare als Resolver genutzt werden. Das auf Sicherheit fokussierte Projekt <a href="https://www.golem.de/news/wegen-cloudflare-openbsd-deaktiviert-doh-im-firefox-browser-1909-143884.html">OpenBSD hat deshalb die Nutzung von DoH im Firefox deaktiviert</a>.</p>
+      <p>Die OpenBSD-Entwickler und andere kritisieren außerdem den Alleingang der Browser, die die DNS-Auflösung am Betriebssystem vorbei durchführen. Microsoft bietet aber als erster großer Hersteller auch DoH zur DNS-Auflösung über Boardmittel an. Wann der Code erstmals in einem Insider-Build von Windows bereitstehen wird, ist noch offen. Das Team wollte möglichst früh über seine Pläne informieren und Feedback sammeln.</p>
+    </article>
+  </body>
+</html>

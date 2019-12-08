@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://www.pcgamer.com/witness-the-body-horror-that-allows-rust-players-to-look-down-and-see-their-legs/"/>
+    <meta property="og:site_name" content="PC Gamer"/>
+    <meta property="article:published_time" content="2019-11-20T23:29:02+00:00"/>
+    <meta property="og:title" content="Witness the body horror that allows Rust players to look down and see their legs"/>
+    <meta property="og:description" content="To look down and see your legs in Rust, your upper body has to turn into taffy."/>
+  </head>
+  <body>
+    <article>
+      <h1>Witness the body horror that allows Rust players to look down and see their legs</h1>
+      <address><time datetime="2019-11-20T23:29:02+00:00">20 Nov 2019, 23:29</time> by <a rel="author" href="https://www.pcgamer.com/author/christopher-livingston/" target="_blank">Christopher Livingston</a></address>
+      <p>It's fun to get a look at how the sausage is made in games, and <a href="https://rust.facepunch.com/">Rust</a> developer Garry Newman opened the doors to his butcher shop in a blog post today. <a href="https://garry.tv/rusty-legs">The post</a> reveals that Newman has wanted for years to let players look down in first-person and see their own legs while playing Rust, rather than traveling through the world as a disembodied camera in the same manner as most first-person games.</p>
+      <p>"We have a skeleton with the player model on it (which is what casts the localplayer shadow)," the post reads. "We want to show it, but we also want to manipulate the bones in a way that they don't conflict with the player's view. But if we do that the shadow would be all fucked."</p>
+      <p>The solution Newman finally came up with? Rendering a different model. "So what we do is basically copy the third person model (which creates the shadows) and manipulate the bones. The manipulation isn't anything complicated, it's just a case of tucking shit behind the camera," Newman writes.</p>
+      <figure>
+        <iframe src="https://gfycat.com/ifr/glamorousbrokenibadanmalimbe" width="500" height="600" data-service="Gfycat" scrolling="no"/>
+      </figure>
+      <p>
+        <i>Above: </i>
+        <a href="https://garry.tv/rusty-legs">
+          <i>Gif made from video at Garry.tv</i>
+        </a>
+      </p>
+      <p>"There's a couple of extra things we have to do. When you're crouched and look down, we pull the viewmodel back so it doesn't clip through your knees."</p>
+      <p>While that solution does indeed look convincing from a first-person perspective (above), it's both funny and a little alarming to see what's happening behind the scenes to achieve it:</p>
+      <figure>
+        <iframe src="https://gfycat.com/ifr/decenttiredhammerkop" width="500" height="600" data-service="Gfycat" scrolling="no"/>
+      </figure>
+      <p>
+        <i>Above: </i>
+        <a href="https://garry.tv/rusty-legs">
+          <i>Gif made from video at Garry.tv</i>
+        </a>
+      </p>
+      <p>As you can see, the player's shadow is intact and both it and their body will look perfectly normal to them, but "tucking shit behind the camera" technically turns the player into a weird stretched taffy monster. It's reminiscent of <a href="https://www.reddit.com/r/gaming/comments/2an7rt/third_person_crouching_in_crysis_2/">the disturbing gymnastics required to let players peer over cover in Crysis</a>.</p>
+      <p>You can read the full post for more behind-the-scenes magic (there's a reason the models above don't show the player's arms) <a href="https://garry.tv/rusty-legs">at Newman's blog</a>. And while we're on the topic of Rust, we also learned this week that it'll release its first paid DLC next month, which will contain <a href="https://www.pcgamer.com/rust-is-getting-its-first-paid-dlc-musical-instruments/">10 new playable musical instruments</a>.</p>
+    </article>
+  </body>
+</html>

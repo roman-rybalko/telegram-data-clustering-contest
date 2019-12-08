@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://www.bleepingcomputer.com/news/security/nsa-publishes-advisory-addressing-encrypted-traffic-inspection-risks/"/>
+    <meta property="og:site_name" content="BleepingComputer"/>
+    <meta property="article:published_time" content="2019-11-19T22:26:25+00:00"/>
+    <meta property="og:title" content="NSA Publishes Advisory Addressing Encrypted Traffic Inspection Risks"/>
+    <meta property="og:description" content="The National Security Agency (NSA) published an advisory that addresses the risks behind Transport Layer Security Inspection (TLSI) and provides mitigation measures for weakened security in organizations that use TLSI products."/>
+  </head>
+  <body>
+    <article>
+      <h1>NSA Publishes Advisory Addressing Encrypted Traffic Inspection Risks</h1>
+      <address><time datetime="2019-11-19T22:26:25+00:00">19 Nov 2019, 22:26</time> by <a rel="author" href="https://www.bleepingcomputer.com/author/sergiu-gatlan/" target="_blank">Sergiu Gatlan</a></address>
+      <figure>
+        <img src="https://www.bleepstatic.com/content/hl-images/2017/02/09/NSA.jpg"/>
+      </figure>
+      <p>The National Security Agency (NSA) published an advisory that addresses the risks behind Transport Layer Security Inspection (TLSI) and provides mitigation measures for weakened security in organizations that use TLSI products.</p>
+      <p>TLSI (aka TLS break and inspect) is the process through which enterprises can inspect encrypted traffic with the help of a dedicated product such as a proxy device, a firewall, intrusion detection or prevention systems (IDS/IPS) that can decrypt and re-encrypt traffic encrypted with TLS.</p>
+      <p>While some enterprises use this technique for monitoring potential threats such as data exfiltration, active command and control (C2) communication channels, or malware delivery via encrypted traffic, this will also introduce risks.</p>
+      <p>Enterprise TLSI products that don't properly validate transport layer security (TLS) certificates, for instance, will weaken the end-to-end protection provided by the TLS encryption to the end-users, drastically increasing the likelihood that threat actors will target them in man-in-the-middle attack (MiTMP) attacks.</p>
+      <figure>
+        <img src="https://www.bleepstatic.com/images/news/u/1109292/November%202019/TLSI.png"/>
+      </figure>
+      <h3>Forward proxies misbehaving</h3>
+      <p>The use of a not properly functioning forward proxy with TLSI capabilities can lead to unexpected consequences such as rerouting decrypted network traffic to an external network, traffic that can be intercepted by third party inspection devices that can get unauthorized access to sensitive data.</p>
+      <p>"Deploying firewalls and monitoring network traffic flow on all network interfaces to the forward proxy helps protect a TLSI implementation from potential exploits," the NSA says.</p>
+      <p>"Implementing analytics on the logs helps ensure the system is operating as expected. Both also help detect intentional and unintentional abuse by security administrators as well as misrouted traffic."</p>
+      <p>When it's essential to use a TLSI product, the NSA recommends independently validated products that can properly implement data flow, TLS, and CA functions.</p>
+      <p>Moreover, <a href="https://www.niap-ccevs.org/Profile/PP.cfm?">products validated</a> by the National Information Assurance Partnership (NIAP) "and configured according to the vendor’s instructions used during validation" should meet the requirements.</p>
+      <h3>TLS sessions and CAs</h3>
+      <p>Since TLSI will take place in real-time and, to work, TLSI products have to manage two separate TLS connections, this could and will, in most cases, lead to TLS chaining issues that cause TLS protection downgrade problems, eventually leading to potential exploitation of weaker cipher suites and TLS versions.</p>
+      <p>TLSI forward proxy devices also come with a built-in certification authority (CA) function used for creating and signing new certificates, an embedded and trusted CA that could be used by bad actors "to sign malicious code to bypass host IDS/IPSs or to deploy malicious services that impersonate legitimate enterprise services to the hosts" upon a successful attack.</p>
+      <p>Attackers could also directly exploit the TLSI devices where the traffic is decrypted thus gaining access to plaintext traffic, while an insider threat such as an authorized security admin "could abuse their access to capture passwords or other sensitive data visible in the decrypted traffic."</p>
+      <p>"To minimize the risks described above, breaking and inspecting TLS traffic should only be conducted once within the enterprise network," the NSA advisory adds.</p>
+      <p>"Redundant TLSI, wherein a client-server traffic flow is decrypted, inspected, and re-encrypted by one forward proxy and is then forwarded to a second forward proxy for more of the same, should not be performed."</p>
+      <figure>
+        <img src="https://www.bleepstatic.com/images/news/u//1109292/November%202019/Compromised%20CA.png"/>
+      </figure>
+      <h3>TLSI risk mitigation measures</h3>
+      <p>More measures to mitigate risks stemming from the use of TLSI devices in an enterprise network are provided by the NSA as part of its security advisory on <i><a href="https://media.defense.gov/2019/Nov/18/2002212783/-1/-1/0/MANAGING%20RISK%20FROM%20TLS%20INSPECTION_20191106.PDF">Managing risk from Transport Layer Security Inspection</a></i> [PDF].</p>
+      <p>"The mitigations described above can reduce the risks introduced by a TLSI capability, provide indicators that alert administrators if the TLSI implementation may have been exploited, and minimize unintended blocking of legitimate network activity," the NSA adds.</p>
+      <p>"In this way, security administrators can successfully add TLSI to their arsenal and continue to step up their methods to combat today’s adversaries and TTPs."</p>
+      <p>The Cybersecurity and Infrastructure Security Agency (CISA) also issued an alert on risks associated with HTTPS inspection in March 2017, stating that "in general, organizations considering the use of HTTPS inspection should carefully consider the pros and cons of such products before implementing."</p>
+      <p>"Organizations should also take other steps to secure end-to-end communications, as presented in US-CERT Alert TA15-120A" on <a href="https://www.us-cert.gov/ncas/alerts/TA15-120A">securing end-to-end communications</a> CISA says.</p>
+      <p>A list of potentially affected software used for TLSI compiled by CERT/CC vulnerability analyst <a href="https://twitter.com/wdormann">Will Dormann</a> is available <a href="https://insights.sei.cmu.edu/cert/2015/03/the-risks-of-ssl-inspection.html">here</a> while a simple tool for checking if a TLSI product is correctly verifying certificate chains can be found at <a href="https://badssl.com/">badssl.com</a>.</p>
+    </article>
+  </body>
+</html>

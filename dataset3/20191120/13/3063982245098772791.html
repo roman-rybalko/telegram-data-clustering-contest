@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://www.golem.de/news/linux-google-will-einheits-kernel-fuer-alle-android-geraete-1911-145114.html"/>
+    <meta property="og:site_name" content="Golem.de"/>
+    <meta property="article:published_time" content="2019-11-20T13:20:01+00:00"/>
+    <meta property="og:title" content="Google will Einheits-Kernel für alle Android-Geräte"/>
+    <meta property="og:description" content="Bisher nutzen die Android-Geräte verschiedene, speziell angepasste Versionen des Linux-Kernel. Google will stattdessen künftig ein einheitliches Image mit stabiler API für"/>
+  </head>
+  <body>
+    <article>
+      <h1>Google will Einheits-Kernel für alle Android-Geräte</h1>
+      <h2>Bisher nutzen die Android-Geräte verschiedene, speziell angepasste Versionen des <a href="https://www.golem.de/specials/linux-kernel/">Linux-Kernel</a>. Google will stattdessen künftig ein einheitliches Image mit stabiler API für Hardware-Treiber nutzen.</h2>
+      <address><time datetime="2019-11-20T13:20:01+00:00">20 Nov 2019, 13:20</time> by <a rel="author">Sebastian Grüner</a></address>
+      <p>Im Sommer 2019 hat das Android-Entwicklerteam von Google <a href="https://www.golem.de/news/project-mainline-und-apex-google-bringt-ueberall-android-updates-ausser-am-kernel-1907-142340-2.html">vage Ideen für ein generisches Kernel-Abbild (GKI)</a> für sämtliche Android-Geräte vorgestellt. <a href="https://linuxplumbersconf.org/event/4/sessions/67/#20190910">Auf der diesjährigen Linux-Plumbers-Konferenz</a>, <a href="https://www.youtube.com/watch?v=f2C-gA8jEyY">deren Videoaufzeichnungen nun öffentlich bereitstehen</a>, haben die zuständigen Entwickler ihre Pläne weiter ausgeführt. Klares Ziel ist demnach ein einheitlicher Kernel für alle Geräte - oder wie es <a href="https://linuxplumbersconf.org/event/4/contributions/402/attachments/320/544/Solving_issues_associated_with_modules_and_supplier-consumer_dependencies.pdf">in der Präsentation</a> heißt: <i>"Ein Kernel, sie alle zu booten."</i></p>
+      <p>Dieses generische Image soll aus den sogenannten Common-Kerneln erstellt werden. Darin pflegt Google einheitliche Linux-Versionen für seine Hardwarepartner. Geplant ist dieses Image demnach für sämtliche ARM64-Geräte. Die für einen Großteil der Hardware notwendigen Treiber sollen jedoch unabhängig von diesem GKI wie bisher auch durch die Hardware- beziehungsweise SoC-Hersteller gepflegt werden.</p>
+      <h4>Stabile Schnittstellen pro Version</h4>
+      <p>Erreicht werden soll diese Trennung <a href="https://linuxplumbersconf.org/event/4/contributions/403/attachments/319/543/ABI_Monitoring.pdf">durch eine stabile Kernel-Binärschnittstelle</a> im Linux-Kernel selbst. Die Upstream-Linux-Community spricht sich eigentlich komplett gegen solch ein Vorgehen aus. Denn dadurch, dass die Kernel-Schnittstellen keine garantierte Stabilität aufweisen, können auch tiefgreifende und weitreichende Änderungen innerhalb der Treiberinfrastruktur des Kernels vergleichsweise einfach umgesetzt werden.</p>
+      <p>Google plant jedoch, diese Stabilität der Schnittstellen jeweils nur für einzelne Hauptzweige aufrechtzuerhalte, also zum Beispiel jeweils für die Versionen 4.14 oder 4.19. Zwischen diesen Versionen sollen sich die Schnittstellen jedoch weiter verändern können. Dieses Vorgehen erinnert an jenes, das auch große Linux-Distributoren wie Red Hat, Suse oder Canonical für ihre Distributions-Kernel umsetzen.</p>
+      <h4>Viel Arbeit an Kernel und Werkzeugen</h4>
+      <p>Die <a href="https://linuxplumbersconf.org/event/4/contributions/401/attachments/318/542/GKI_Progress.pdf">Arbeiten an dem GKI</a> mit dieser Trennung zielen derzeit noch auf reine Entwicklergeräte wie das virtualisierte Cuttlefish oder das Dragonboard 845c sowie auf die notwendige Umsetzung der Werkzeuge. Dazu gehört der eigentlich Build-Vorgang mit einheitlicher Konfiguration sowie auch die Überwachung der API selbst, damit Google diese auch wirklich stabil halten kann.</p>
+      <p>Darüber hinaus hat das Team noch einige Probleme zu lösen, wie etwa das Stabilisieren bestimmter Userspace-APIs im eigenen Image. Ebenso muss der Android-Kernel angepasst werden, um etwa mit dem Laden von externen Modulen und deren Abhängigkeiten zurechtzukommen oder auch, um eine geteiltes Initramfs verwenden zu können.</p>
+      <p>Langfristig könnte Google dieses Konstrukt des Android-Kernels dazu nutzen, sowohl die Nutzung der üblichen APIs innerhalb des Linux-Kernels als auch der üblichen Userspace-APIs für Hersteller-Treiber zu forcieren. Bisher schreiben diese oft eigene Schnittstellen und arbeiten damit große Teile des Kernels für ihre Treiber um.</p>
+      <p>Mit den forcierten Schnittstellen von Google sind die Hardware-Hersteller jedoch eben gezwungen, bestimmten Richtlinien für ihre Treiber zu folgen. Mittelfristig sollten sich diese Treiber damit den Konzepten des Upstream-Kernels anpassen. Das wiederum könnte dann auch das Einpflegen dieser bisher extern entwickelten Treiber in den Hauptzweig zumindest etwas vereinfachen. Google <a href="https://www.golem.de/news/linux-android-geraete-sollen-kuenftig-standard-kernel-api-benutzen-1811-137816.html">versucht dies etwa bereits mit der Grafikschnittstelle</a> umzusetzen.</p>
+    </article>
+  </body>
+</html>

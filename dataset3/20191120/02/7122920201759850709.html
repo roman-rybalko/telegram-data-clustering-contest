@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://www.blog.google/technology/health/google-health-provider-tools-launch/"/>
+    <meta property="og:site_name" content="Google"/>
+    <meta property="article:published_time" content="2019-11-20T02:15:00+00:00"/>
+    <meta property="og:title" content="Tools to help healthcare providers deliver better care"/>
+    <meta property="og:description" content="Google Health is offering tools to help doctors, nurses, and other providers take better care of patients."/>
+  </head>
+  <body>
+    <article>
+      <h1>Tools to help healthcare providers deliver better care</h1>
+      <address><time datetime="2019-11-20T02:15:00+00:00">20 Nov 2019, 02:15</time> by <a rel="author">Dr. David Feinberg</a></address>
+      <p>There has been a lot of interest around our collaboration with <a href="https://healthcare.ascension.org/">Ascension</a>. As a physician, I understand. Health is incredibly personal, and your health information should be private to you and the people providing your care. </p>
+      <p>That’s why I want to clarify what our teams are doing, why we’re doing it, and how it will help your healthcare providers—and you. </p>
+      <p>Doctors and nurses love caring for patients, but aren’t always equipped with the tools they need to thrive in their mission. We have all seen headlines like "<a href="https://www.newyorker.com/magazine/2018/11/12/why-doctors-hate-their-computers">Why doctors hate their computers</a>," with complaints about having to use "<a href="https://khn.org/news/death-by-a-thousand-clicks/">a disconnected patchwork</a>" that makes finding critical health information like finding <a href="https://www.statnews.com/2019/10/31/emr-changed-doctor-patient-duet-into-menage-a-trois/">a needle in the haystack</a>. The average U.S. health system has <a href="https://www.healthcareitnews.com/news/why-ehr-data-interoperability-such-mess-3-charts">18</a> electronic medical record systems, and our doctors and nurses feel like they are "<a href="https://www.amazon.com/Digital-Doctor-Hope-Medicines-Computer/dp/1260019608">data clerks</a>" rather than healers. </p>
+      <p>Google has spent two decades on similar problems for consumers, building products such as Search, Translate and Gmail, and we believe we can adapt our technology to help. That’s why we’re building an intelligent suite of tools to help doctors, nurses, and other providers take better care of patients, leveraging our expertise in organizing information. </p>
+      <p>One of those tools aims to make health records more useful, more accessible and more searchable by pulling them into a single, easy-to-use interface for doctors. I mentioned this during my presentation last month at the<a href="https://www.youtube.com/watch?v=21A1CdmFcwE&amp;feature=youtu.be"> HLTH Conference</a>. Ascension is the first partner where we are working with the frontline staff to pilot this tool.</p>
+      <p>This effort is challenging. Health information is incredibly complex—there are misspellings, different ways of saying the same thing, handwritten scribbles, and <a href="https://www.vox.com/health-care/2017/10/30/16228054/american-medical-system-fax-machines-why">faxes</a>. Healthcare IT systems also don’t talk well to each other and this keeps doctors and nurses from taking the best possible care of you. </p>
+      <p>Policymakers and regulators across the world (e.g., <a href="https://www.cms.gov/newsroom/press-releases/speech-remarks-administrator-seema-verma-2019-himss-conference">CMS</a>, <a href="https://www.hhs.gov/about/news/2019/04/19/hhs-announces-next-steps-in-advancing-interoperability-of-health-information.html">HHS</a>, the <a href="https://www.england.nhs.uk/digitaltechnology/connecteddigitalsystems/interoperability/">NHS</a>, and <a href="https://ec.europa.eu/digital-single-market/en/interoperability-standardisation-connecting-ehealth-services">EC</a><a href="https://www.healthit.gov/topic/interoperability">) </a>have called this out as an important issue. We’ve <a href="https://cloud.google.com/blog/topics/inside-google-cloud/apis-take-root-as-the-path-for-healthcare-interoperability">committed to help</a>, and it’s why we built this system on <a href="https://www.hl7.org/fhir/overview.html">interoperable standards</a>. </p>
+      <p>To deliver such a tool to providers, the system must operate on patients' records. This is what people have been asking about in the context of our Ascension partnership, and why we want to clarify how we handle that data.</p>
+      <p>As we noted <a href="https://cloud.google.com/blog/topics/inside-google-cloud/our-partnership-with-ascension">in an earlier post</a>, our work adheres to strict regulations on handling patient data, and our <a href="https://www.hhs.gov/hipaa/for-professionals/privacy/guidance/business-associates/index.html">Business Associate Agreement</a> with Ascension ensures their patient data cannot be used for any other purpose than for providing our services—this means it’s never used for advertising. We’ve also <a href="https://services.google.com/fh/files/misc/google_security_wp.pdf">published a white paper</a> around how customer data is encrypted and isolated in the cloud. </p>
+      <p>To ensure that our tools are safe for Ascension doctors and nurses treating real patients, members of our team might come into contact with identifiable patient data. Because of this, we have strict controls for the limited Google employees who handle such data:</p>
+      <ul>
+        <li>We develop and test our system on synthetic (fake) data and openly available datasets.</li>
+        <li>To configure, test, tune and maintain the service in a clinical setting, a limited number of screened and qualified Google staff may be exposed to real data. These staff undergo HIPAA and medical ethics training, and are individually and explicitly approved by Ascension for a limited time.</li>
+        <li>We have technical controls to further enhance data privacy. Data is accessible in a strictly controlled environment with audit trails—these controls are designed to prevent the data from leaving this environment and access to patient data is monitored and auditable.</li>
+        <li>We will further prioritize the development of technology that reduces the number of engineers that need access to patient data (similar to our external redaction<a href="https://cloud.google.com/dlp/"> technology</a>).</li>
+        <li>We also participate in external certifications, like <a href="https://cloud.google.com/security/compliance/iso-27001/">ISO 27001</a>, where independent third-party auditors come and check our processes, including information security controls for these tools.</li>
+      </ul>
+      <p>I graduated from medical school in 1989. I've seen tremendous progress in healthcare over the ensuing decades, but this progress has also brought with it challenges of information overload that have taken doctors’ and nurses’ attentions away from the patients they are called to serve. I believe technology has a major role to play in reversing this trend, while also improving how care is delivered in ways that can save lives. </p>
+      <related>
+        <h4>Related Articles</h4>
+        <a href="https://www.blog.google/technology/health/deepmind-health-joins-google-health/"/>
+        <a href="https://www.blog.google/technology/health/lung-cancer-prediction/"/>
+        <a href="https://www.blog.google/technology/health/new-milestones-helping-prevent-eye-disease-verily/"/>
+      </related>
+    </article>
+  </body>
+</html>

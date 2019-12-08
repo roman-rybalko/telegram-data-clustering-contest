@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://techxplore.com/news/2019-11-machine-algorithms-safety-fairness.html"/>
+    <meta property="og:site_name" content="Tech Xplore"/>
+    <meta property="article:published_time" content="2019-11-21T19:00:04+00:00"/>
+    <meta property="og:title" content="New algorithms train AI to avoid specific bad behaviors"/>
+    <meta property="og:description" content="Artificial intelligence has moved into the commercial mainstream thanks to the growing prowess of machine learning algorithms that enable computers to train themselves to do things like drive cars, control ..."/>
+  </head>
+  <body>
+    <article>
+      <h1>New algorithms train AI to avoid specific bad behaviors</h1>
+      <address><time datetime="2019-11-21T19:00:04+00:00">21 Nov 2019, 19:00</time> by <a rel="author">Stanford University</a></address>
+      <p>Artificial intelligence has moved into the commercial mainstream thanks to the growing prowess of machine learning algorithms that enable computers to train themselves to do things like drive cars, control robots or automate decision-making.</p>
+      <p>But as AI starts handling sensitive tasks, such as helping pick which prisoners get bail, policy makers are insisting that computer scientists offer assurances that automated systems have been designed to minimize, if not completely avoid, unwanted outcomes such as excessive risk or racial and gender bias.</p>
+      <p>A team led by researchers at Stanford and the University of Massachusetts Amherst published a paper Nov. 22 in <i>Science</i> suggesting how to provide such assurances. The paper outlines a new technique that translates a fuzzy goal, such as avoiding gender bias, into the precise mathematical criteria that would allow a machine-learning algorithm to train an AI application to avoid that behavior.</p>
+      <p>"We want to advance AI that respects the values of its human users and justifies the trust we place in autonomous systems," said Emma Brunskill, an assistant professor of computer science at Stanford and senior author of the paper.</p>
+      <p>
+        <b>Avoiding misbehavior</b>
+      </p>
+      <p>The work is premised on the notion that if "unsafe" or "unfair" outcomes or behaviors can be defined mathematically, then it should be possible to create algorithms that can learn from data on how to avoid these unwanted results with high confidence. The researchers also wanted to develop a set of techniques that would make it easy for users to specify what sorts of unwanted behavior they want to constrain and enable machine learning designers to predict with confidence that a system trained using past data can be relied upon when it is applied in real-world circumstances.</p>
+      <p>"We show how the designers of machine learning algorithms can make it easier for people who want to build AI into their products and services to describe unwanted outcomes or behaviors that the AI system will avoid with high-probability," said Philip Thomas, an assistant professor of computer science at the University of Massachusetts Amherst and first author of the paper.</p>
+      <figure>
+        <video src="https://scx2.b-cdn.net/gfx/video/2019/1-newalgorithm.mp4"/>
+        <figcaption>Robots, self-driving cars and other intelligent machines could become better-behaved thanks to a new way to help machine-learning designers build AI applications with safeguards against specific, undesirable outcomes such as racial and gender bias.<cite>Credit: Deboki Chakravarti</cite></figcaption>
+      </figure>
+      <p>
+        <b>Fairness and safety</b>
+      </p>
+      <p>The researchers tested their approach by trying to improve the fairness of algorithms that predict GPAs of college students based on exam results, a common practice that can result in gender bias. Using an experimental dataset, they gave their algorithm mathematical instructions to avoid developing a predictive method that systematically overestimated or underestimated GPAs for one gender. With these instructions, the algorithm identified a better way to predict student GPAs with much less systematic gender bias than existing methods. Prior methods struggled in this regard either because they had no fairness filter built-in or because algorithms developed to achieve fairness were too limited in scope.</p>
+      <p>The group developed another algorithm and used it to balance safety and performance in an automated insulin pump. Such pumps must decide how big or small a dose of insulin to give a patient at mealtimes. Ideally, the pump delivers just enough insulin to keep blood sugar levels steady. Too little insulin allows blood sugar levels to rise, leading to short term discomforts such as nausea, and elevated risk of long-term complications including cardiovascular disease. Too much and blood sugar crashes—a potentially deadly outcome.</p>
+      <figure>
+        <img src="https://scx2.b-cdn.net/gfx/news/hires/2019/5dd6801c91fdc.jpg"/>
+        <figcaption>Diagram depicting paper’s framework.<cite>Credit: Philip Thomas</cite></figcaption>
+      </figure>
+      <p>Machine learning can help by identifying subtle patterns in an individual's blood sugar responses to doses, but existing methods don't make it easy for doctors to specify outcomes that automated dosing algorithms should avoid, like low blood sugar crashes. Using a blood glucose simulator, Brunskill and Thomas showed how pumps could be trained to identify dosing tailored for that person—avoiding complications from over- or under-dosing. Though the group isn't ready to test this algorithm on real people, it points to an AI approach that might eventually improve quality of life for diabetics.</p>
+      <p>In their <i>Science</i> paper, Brunskill and Thomas use the term "Seldonian algorithm" to define their approach, a reference to Hari Seldon, a character invented by science fiction author Isaac Asimov, who once proclaimed three laws of robotics beginning with the injunction that "A robot may not injure a human being or, through inaction, allow a human being to come to harm."</p>
+      <p>While acknowledging that the field is still far from guaranteeing the three laws, Thomas said this Seldonian framework will make it easier for machine learning designers to build behavior-avoidance instructions into all sorts of algorithms, in a way that can enable them to assess the probability that trained systems will function properly in the real world.</p>
+      <p>Brunskill said this proposed framework builds on the efforts that many computer scientists are making to strike a balance between creating powerful algorithms and developing methods to ensure that their trustworthiness.</p>
+      <p>"Thinking about how we can create algorithms that best respect values like safety and fairness is essential as society increasingly relies on AI," Brunskill said.</p>
+      <table bordered="">
+        <tr>
+          <td><b>More information:</b> P.S. Thomas el al., "Preventing undesirable behavior of intelligent machines," <i>Science</i> (2019). <a href="https://science.sciencemag.org/lookup/doi/10.1126/science.aag3311">science.sciencemag.org/lookup/ … 1126/science.aag3311<br/></a><b>Journal information:</b> <a href="https://techxplore.com/journals/science/">Science</a></td>
+        </tr>
+      </table>
+      <p>Provided by <a href="https://techxplore.com/partners/stanford-university/">Stanford University</a></p>
+      <related>
+        <h4>Related Stories</h4>
+        <a href="https://phys.org/news/2019-09-chemists-bias-crop-machine-algorithm.html"/>
+        <a href="https://phys.org/news/2018-07-algorithm-limits-bias-machine.html"/>
+        <a href="https://techxplore.com/news/2019-11-hiring-algorithms-fair-theyre-opaque.html"/>
+        <a href="https://techxplore.com/news/2019-11-artificial-intelligence-algorithm-laws-quantum.html"/>
+        <a href="https://medicalxpress.com/news/2019-09-algorithm-accurately-differences-cancerous-lung.html"/>
+        <a href="https://techxplore.com/news/2018-05-fairness-algorithmic-decision-making-experts.html"/>
+      </related>
+    </article>
+  </body>
+</html>

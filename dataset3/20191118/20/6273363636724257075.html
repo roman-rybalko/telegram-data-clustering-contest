@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://venturebeat.com/2019/11/18/deepminds-ai-now-powers-google-play-store-app-recommendations/"/>
+    <meta property="og:site_name" content="VentureBeat"/>
+    <meta property="article:published_time" content="2019-11-18T20:54:30+00:00"/>
+    <meta property="og:title" content="Google details DeepMind AI’s role in Play Store app recommendations"/>
+    <meta property="og:description" content="Alphabet subsidiary DeepMind supplied the AI and machine learning models behind the Google Play Store's app recommender algorithms."/>
+  </head>
+  <body>
+    <article>
+      <h1>Google details DeepMind AI’s role in Play Store app recommendations</h1>
+      <address><time datetime="2019-11-18T20:54:30+00:00">18 Nov 2019, 20:54</time> by <a rel="author" href="https://venturebeat.com/author/kylewiggers/" target="_blank">Kyle Wiggers</a></address>
+      <p>AI and machine learning model architectures developed by Alphabet’s DeepMind have substantially improved the Google Play Store’s discovery systems, according to Google. In a <a href="https://deepmind.com/blog/article/Advanced-machine-learning-helps-Play-Store-users-discover-personalised-apps">blog post</a> this morning, DeepMind detailed a collaboration to bolster the recommendation engine underpinning the Play Store, the app and game marketplace that’s actively used by over two billion Android users monthly. It claims that as a result, app recommendations are now more personalized than they used to be.</p>
+      <p>In an email, a Google spokesperson told VentureBeat that the new system was deployed this year.</p>
+      <p>It’s not the first time the DeepMind team has contributed its expertise to the Android side of Google’s business, it’s worth noting. The U.K.-based subsidiary created on-device learning systems to boost Android battery performance, and its <a href="https://venturebeat.com/2019/09/18/google-assistant-gains-9-new-voices-generated-by-ai/">WaveNet</a> system was used to generate voices that are now served to Google Assistant users. But it’s a particularly stark illustration of how embedded London-based DeepMind, which Google paid $400 million to acquire in January 2014, has become with Google’s ventures.</p>
+      <p>Google Play’s recommendation system contains three main models, as DeepMind explains: a candidate generator, a reranker, and an AI model to optimize for multiple objectives. The candidate generator can analyze more than a million apps and retrieve the most suitable ones, while the reranker predicts the user’s preferences along “multiple” dimensions. The predictions serve as the input to the aforementioned optimization model, whose solution gives the most suitable candidates to the user.</p>
+      <figure>
+        <img src="https://venturebeat.com/wp-content/uploads/2019/11/ezgif-6-c6f017af8405.jpg?w=800&amp;resize=800%2C450&amp;strip=all"/>
+        <figcaption>Above: A schematic illustrating the Google Play Store’s recommender system, which was architected by DeepMind.</figcaption>
+      </figure>
+      <p>In the pursuit of a superior recommender framework, DeepMind initially deployed to Google Play a long short-term model (LSTM), a type of model capable of learning long-term dependencies. But it says that while the LSTM led to significant accuracy gains, its hefty computational requirements introduced a delay.</p>
+      <p>To address this, DeepMind replaced the LSTM with a Transformer model, which further improved model performance but which increased the training cost. The third and final solution was an efficient additive attention model that learns which apps a user is more likely to install based on their Google Play history.</p>
+      <p>In order to avoid introducing bias, the additive attention model incorporates importance weighting, which takes into account the impression-to-install rate (i.e., how often an app is shown versus how often it’s downloaded) of each app in comparison with the median impression-to-install rate. Through the weighting, the candidate generator downweights or upweights apps on the Play Store based on installs.</p>
+      <p>The next step in the recommender pipeline — the reranker model — learns the relative importance of a pair of apps that have been shown to a user at the same time. Each of the pair is assigned a positive or negative label, and the model attempts to minimize the number of inversions in ranking.</p>
+      <p>As for the Play Store’s optimization model, it tries to achieve a primary recommendation object subject to constraints of secondary objectives. DeepMind notes that these goals might shift according to users’ needs – for example, a person who had previously been interested in housing search apps might have found a new flat, and so is now interested in home decor apps. The model, then, makes per-request recommendations based on objectives during recommendation-serving time, and it finds the trade-offs between secondary objectives along a curve so as not to affect the first objective.</p>
+      <p>“One of our key takeaways from this collaboration is that when implementing advanced machine learning techniques for use in the real world, we need to work within many practical constraints,” wrote DeepMind. “Because the Play Store and DeepMind teams worked so closely together and communicated on a daily basis, we were able to take product requirements and constraints into consideration throughout the algorithm design, implementation, and final testing phases, resulting in a more successful product.”</p>
+    </article>
+  </body>
+</html>

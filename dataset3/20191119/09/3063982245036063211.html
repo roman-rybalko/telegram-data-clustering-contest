@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://www.golem.de/news/vpn-krypto-api-des-linux-kernels-fuer-wireguard-angepasst-1911-145073.html"/>
+    <meta property="og:site_name" content="Golem.de"/>
+    <meta property="article:published_time" content="2019-11-19T09:15:01+00:00"/>
+    <meta property="og:title" content="Krypto-API des Linux-Kernels für Wireguard angepasst"/>
+    <meta property="og:description" content="Statt der eigenen Kryptobibliothek Zinc wird das neue Wireguard-VPN künftig die Krypto-API des Linux-Kernels verwenden. Die notwendigen Anpassungen dazu sind nun im Kernel"/>
+  </head>
+  <body>
+    <article>
+      <h1>Krypto-API des Linux-Kernels für Wireguard angepasst</h1>
+      <h2>Statt der eigenen Kryptobibliothek Zinc wird das neue Wireguard-VPN künftig die Krypto-API des <a href="https://www.golem.de/specials/linux-kernel/">Linux-Kernels</a> verwenden. Die notwendigen Anpassungen dazu sind nun im Kernel gelandet.</h2>
+      <address><time datetime="2019-11-19T09:15:01+00:00">19 Nov 2019, 09:15</time> by <a rel="author">Sebastian Grüner</a></address>
+      <p>Die neue und moderne VPN-Technik Wireguard könnte nach mehreren Jahren Arbeit nun unerwartet schnell in den Linux-Kernel eingepflegt werden. Denn der für die kryptographischen Operationen zuständige Code wurde von dem dazu zuständigen Entwickler <a href="https://lore.kernel.org/linux-crypto/20191115060727.eng4657ym6obl4di@gondor.apana.org.au/">Herbert Xu in seinen Entwicklungszweig für Linux</a> aufgenommen. Der Kryptocode dürfte damit mit Linux 5.5 erscheinen, das Ende Januar 2020 veröffentlicht werden soll.</p>
+      <p>Der Umgang mit den kryptographischen Routinen war einer der großen Streitpunkte zwischen Wireguard-Hauptentwickler Jason Donenfeld und mehreren anderen Linux-Kernel-Entwicklern. So sollte Wireguard ursprünglich die eigene Kryptobibliothek Zinc verwenden. Zinc bricht allerdings mit dem bisherigen Konzept des Krypto-APIs im Kernel und führt stattdessen neue Schnittstellen ein.</p>
+      <p>Dieses Nebeneinander wollten jedoch mehrere Entwickler verhindern oder wenigstens so weit es geht minimieren. Die Diskussion dazu verlief dabei teils unsachlich und auf persönlicher Ebene. Diese Streitigkeiten haben Donenfeld letztlich dazu bewogen, vor wenigen Monaten anzukündigen, <a href="https://www.golem.de/news/linux-wireguard-soll-doch-kernel-krypto-api-nutzen-1909-144107.html">auf die eigene Kryptobibliothek verzichten</a> und stattdessen das Kernel-Krypto-API verwenden zu wollen.</p>
+      <p>Der langjährige Kernel-Entwickler Ard Biesheuvel hat möglicherweise als Reaktion auf diese Ankündigung oder schlicht aus eigener Motivation <a href="https://lore.kernel.org/linux-crypto/20190925161255.1871-1-ard.biesheuvel@linaro.org/">das bisherige Krypto-API derart erweitert</a>, dass Wireguard dieses einfach nutzen könnte. Ziel ist es laut Biesheuvel damit explizit, Wireguard einfacher in den Hauptzweig des Linux-Kernels einpflegen zu können. Wann es dazu kommen wird, ist derzeit aber noch nicht klar, da der Wireguard-Code selbst noch an den nun eingepflegten Kryptocode angepasst werden muss. Das sollte nun aber eben nicht mehr allzu kompliziert sein.</p>
+      <h4>Nachtrag vom 21. November 2019, 12:25 Uhr</h4>
+      <p>Donenfeld hat inzwischen eine angepasste Version des <a href="https://lore.kernel.org/netdev/20191120203538.199367-1-Jason@zx2c4.com/t/#mbbccd1231745f75c12c95d10329c181a87f407cc">Wireguard-Codes auf der Kernel-Mailing-Liste</a> veröffentlicht, die auf dem neuen Kryptocode basiert.</p>
+    </article>
+  </body>
+</html>

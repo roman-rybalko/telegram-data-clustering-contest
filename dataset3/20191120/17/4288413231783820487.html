@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://petapixel.com/2019/11/20/massive-android-exploit-lets-hackers-control-your-camera-affects-hundreds-of-millions-of-users/?utm_source=feedburner&amp;utm_medium=feed&amp;utm_campaign=Feed%3A+PetaPixel+%28PetaPixel%29&amp;hl=en"/>
+    <meta property="og:site_name" content="Petapixel"/>
+    <meta property="article:published_time" content="2019-11-20T17:24:03+00:00"/>
+    <meta property="og:title" content="Massive Android Exploit Lets Hackers Control Your Camera, Affects ‘Hundreds of Millions’ of Users"/>
+    <meta property="og:description" content="A security firm has discovered a major Android exploit that would allow hackers to take control of your smartphone’s camera in the background and use it to take pictures or record video while the phone is locked. The security report reveals that the exploit affects Google and Samsung smartphones, bringing the tally of affected users into the “hundreds of millions.”"/>
+  </head>
+  <body>
+    <article>
+      <h1>Massive Android Exploit Lets Hackers Control Your Camera, Affects ‘Hundreds of Millions’ of Users</h1>
+      <address><time datetime="2019-11-20T17:24:03+00:00">20 Nov 2019, 17:24</time> by <a rel="author" href="https://petapixel.com/author/dlcade/" target="_blank">DL Cade</a></address>
+      <p>A security firm has discovered a major Android exploit that would allow hackers to take control of your smartphone’s camera in the background and use it to take pictures or record video while the phone is locked. The security report reveals that the exploit affects Google and Samsung smartphones, bringing the tally of affected users into the “hundreds of millions.”</p>
+      <p>According to <a href="https://www.forbes.com/sites/daveywinder/2019/11/19/google-confirms-android-camera-security-threat-hundreds-of-millions-of-users-affected/#7587bd364f4e"><i>Forbes</i></a>, security research firm <a href="https://info.checkmarx.com/wp-vulnerability-report-android-camera-app">Checkmarx</a> discovered the Android vulnerability—the “biggest to date”—in early July, and has been working with Google and Samsung to patch the exploit before making their findings public this week.</p>
+      <p>In essence, the researchers found that a user could take advantage of vulnerabilities in the stock Google Camera app to bypass several very important permissions, taking control of the camera, the microphone, and location data remotely by requesting only one “permission” from the user: Storage Access. Full technical details about the exploit can be found <a href="https://info.checkmarx.com/wp-vulnerability-report-android-camera-app">here</a>, but Checkmarx director Erez Yalon summed it up for <a href="https://www.forbes.com/sites/daveywinder/2019/11/19/google-confirms-android-camera-security-threat-hundreds-of-millions-of-users-affected/#7587bd364f4e"><i>Forbes</i></a>:</p>
+      <blockquote>A malicious app running on an Android smartphone that can read the SD card not only has access to past photos and videos, but with this new attack methodology, can be directed to take new photos and videos at will.</blockquote>
+      <p>Uh oh…</p>
+      <p>After discovering these vulnerabilities, the Checkmarx team developed a fake “weather” app as proof of concept. Once a user installed the app and allowed it “storage access,” it would allow the hackers persistent access to the phone, even if the app was closed. Using this access, hackers could take a photo, record video, record calls <i>while</i> recording video, pull GPS tags from all photos taken after the app was installed, and even access stored photos and videos.</p>
+      <p>All of this could take place silently, in the background, even if the phone was locked.</p>
+      <p>This was revealed to Google on July 4th, classified as “high severity” by the Android Security team on July 23rd, and on August 1st, Google officially confirmed that this was an ecosystem vulnerability that affected other Android smartphone manufacturers as well.</p>
+      <p>The good news is, if you’re regularly updating your smartphone, you should already have the patch installed. A Google spokesperson <a href="https://www.forbes.com/sites/daveywinder/2019/11/19/google-confirms-android-camera-security-threat-hundreds-of-millions-of-users-affected/#7587bd364f4e">told <i>Forbes</i></a> that a patch was pushed out in late July and made available to “all partners” shortly thereafter. The bad news? This is one of the most extreme and extensive vulnerabilities anybody has ever discovered in a smartphone, ostensibly worth hundreds of thousands of dollars on the black market.</p>
+      <p>Thank goodness the Checkmarx team are researchers and not hackers.</p>
+      <p>(via <a href="https://www.diyphotography.net/google-and-samsung-confirm-massive-android-camera-exploit-affecting-hundreds-of-millions-of-users/">DIY Photography</a>)</p>
+      <hr/>
+      <p>
+        <i><b>Image credits</b>: Header photo by <a href="http://www.pathumd.tk/index.html">Pathum Danthanarayana</a>, CC0</i>
+      </p>
+    </article>
+  </body>
+</html>

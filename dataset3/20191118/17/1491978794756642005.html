@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://www.theguardian.com/science/2019/nov/18/did-you-solve-it-the-two-child-problem"/>
+    <meta property="og:site_name" content="the Guardian"/>
+    <meta property="article:published_time" content="2019-11-18T17:00:39+00:00"/>
+    <meta property="og:title" content="Did you solve it? The two child problem"/>
+    <meta property="og:description" content="The solutions to today’s puzzles"/>
+  </head>
+  <body>
+    <article>
+      <h1>Did you solve it? The two child problem</h1>
+      <address><time datetime="2019-11-18T17:00:39+00:00">18 Nov 2019, 17:00</time> by <a rel="author" href="https://www.theguardian.com/profile/alexbellos" target="_blank">Alex Bellos</a></address>
+      <p>
+        <i>The solutions to today’s puzzles</i>
+      </p>
+      <p>Earlier today <a href="https://www.theguardian.com/science/2019/nov/18/can-you-solve-it-the-two-child-problem">I set you the following four questions</a>:</p>
+      <p>
+        <b>1. Mrs Smith has two children. The eldest one is a boy. What’s the chance that both are boys.</b>
+      </p>
+      <p>
+        <b>2. Mrs Jones has two children. At least one is a boy. What’s the chance that both are boys?</b>
+      </p>
+      <p>
+        <b>3. Mrs Robinson has two children. At least one is a boy born on a Monday. What’s the chance that both are boys?</b>
+      </p>
+      <p>
+        <b>4. Mrs Taylor has two children. At least one is a boy called Oscar. What’s the chance that both are boys?</b>
+      </p>
+      <p>(Assume Mrs Smith, Jones, Robinson and Taylor are each chosen randomly from the population of families with exactly two children. The phrase ‘at least one is a boy’ is understood in the literal sense, i.e. in this case either one child is a boy, or both children are boys.)</p>
+      <p>The answers are: <b>1. </b>1/2 or 50 per cent, <b>2.</b> 1/3 or 33.3 per cent, <b>3. </b>13/27 or about 48 per cent, <b>4. </b>very very close to 1/2 or 50 per cent</p>
+      <p>Yes, the answers are all different. It does make a difference when you mention the child’s day of birth, or name.</p>
+      <p>We’ll get to the workings later. First, the results of the questionnaire I asked parents of exactly two children to fill in.</p>
+      <p>1. Two child families where eldest child is a boy. Total submissions: 4949. Of these families, the percentage with two boys was 44.9 per cent.</p>
+      <p>2. Two child families where at least one child is a boy. Total submissions: 6060. Of these families, the percentage with two boys was 39.5 per cent.</p>
+      <p>3. Two child families where at least one child is a boy born on a Monday. Of these families, the percentage with two boys was 54.0 per cent.</p>
+      <p>4. Two child families where eldest child is a boy named Oscar. Total submissions: 1961. Of these families, the percentage with two boys was 55.6 per cent.</p>
+      <p>In an ideal world, in which two-parent families are selected genuinely randomly, in large enough numbers and respond truthfully, we’d expect the percentages of ‘families with two boys’ to approximate the answers to the questions.</p>
+      <p>And they sort of do. [There is a large margin of error, but, pleasingly, <b>2 </b>is closest to 33 per cent, and the others all hover around 50 per cent. A surprising percentage of total respondents have sons called Oscar, although I guess I did, shamelessly and unscientifically, suggest you could submit for friends who had a son called Oscar.]</p>
+      <p>Most people find it hard to believe that the probabilities change when you mention the week day or name. I hope the questionnaire might give a little insight as to why it might be the case.</p>
+      <p>Let’s now get to the nitty gritty. In the proofs below, we are assuming that the chance of a boy or a girl is 50/50. And also that the chance of being born on any day of the week is equal. (Neither of these might be true, as readers have said BTL.)</p>
+      <p>
+        <b>1. Mrs Smith has two children. The eldest one is a boy. What’s the chance that both are boys.</b>
+      </p>
+      <p>If the eldest one is a boy, the youngest one is either a boy or a girl, with a 50/50 chance of each. So the chance both are boys is 1 in 2, or 50 per cent.</p>
+      <p>
+        <b>2. Mrs Jones has two children. At least one is a boy. What’s the chance that both are boys?</b>
+      </p>
+      <p>If at least one is a boy, there are three possible equally likely gender-assignations of two siblings. boy-boy, boy-girl, or girl-boy. Only 1 in 3 cases, or 33 per cent are both boys. The lesson here is that when considering equally likely scenarios we must consider birth order. If the birth order of the boy is not specified – i.e. if we don’t know if he is the eldest or the youngest – the probability of two boys drops to 1 in 3.</p>
+      <p>
+        <b>3. Mrs Robinson has two children. At least one is a boy born on a Monday. What’s the chance that both are boys?</b>
+      </p>
+      <p>There are many ways to solve this. I think the easiest to understand is by considering frequencies. Imagine selecting 196 two-children families at random. (It will later become clear why I chose this number).</p>
+      <p>We’d expect the following frequencies of the four possible pairs of siblings, BB, BG, GB, GG, because each of the four sets is equally likely. (B is boy, G is girl. Eldest child is first one, youngest child is second one)</p>
+      <ul>
+        <li>BG 49</li>
+        <li>GB 49</li>
+        <li>BB 49</li>
+        <li>GG 49</li>
+      </ul>
+      <p>Now let B<sub>M </sub>be a boy born on a Monday, and B<sub>NM</sub> be a boy not born on a Monday. Our expected frequencies become</p>
+      <ul>
+        <li>B<sub>M</sub>G 7</li>
+        <li>BN<sub>M</sub>G 42</li>
+        <li>GB<sub>M </sub>7</li>
+        <li>GBN<sub>M</sub> 42</li>
+        <li>B<sub>M</sub>B<sub>M </sub>1</li>
+        <li>B<sub>NM</sub>B<sub>M</sub> 6</li>
+        <li>B<sub>M</sub>B<sub>NM</sub> 6</li>
+        <li>B<sub>NM</sub>B<sub>NM</sub> 36</li>
+        <li>GG 49</li>
+      </ul>
+      <p>The number of families with a boy born on a Monday is 7 + 7 + 1 + 6 + 6 = 27. Of these, 13 have two boys, so the probability of having two boys is 13/27, which is about 48 per cent.</p>
+      <p>
+        <b>4. Mrs Taylor has two children. At least one is a boy called Oscar. What’s the chance that both are boys?</b>
+      </p>
+      <p>Here the unknown is the chance of a boy being called Oscar. I’d say, even among Guardian readers, it is going to be quite low. Say, 1 in 500 boys. We now do the same calculation as in part <b>3</b> but instead of a 1/7 chance of a particular day, there is a 1/500 of a particular name. The result is going to be very close <i>but not equal to </i>1 in 2. (If anyone wants to fill in the dots of the calculation below, please do.)</p>
+      <p>To summarise, when no information is specified apart from the child’s gender (part <b>2</b>) the chances of two boys is 33 per cent. The more information that is supplied about the child – such as day of birth (part <b>3)</b>, and name (part <b>4)</b> – the more the chances of two boys approaches 50 per cent. When birth order is specified (part <b>1)</b>, the chances are exactly 50 per cent.</p>
+      <p>Some mathematicians love this problem, because the answer is so counter-intuitive. Others don’t like it, because they feel the language is misleading, or that there is no realistic situation when anyone would ever meaningfully state that ‘at least one’ of their children is a boy. Rob Eastaway explores that question<a href="http://www.robeastaway.com/blog/tuesday-boy-puzzle"> in his blogpost here</a>.</p>
+      <p>I hope you enjoyed today’s puzzle. I’ll be back in two weeks.</p>
+      <figure>
+        <img src="https://i.guim.co.uk/img/media/b6d13212d260ce7ca1ed165647cda436eaa71446/0_0_3822_5000/master/3822.jpg?width=140&amp;quality=45&amp;auto=format&amp;fit=max&amp;dpr=2&amp;s=a8799b1753fbcd052647771aabb9f7b4"/>
+        <figcaption>So You Think You’ve Got Problems?</figcaption>
+      </figure>
+      <p>
+        <i>If you need a puzzle fix before then, my new book <a href="https://guardianbookshop.com/so-you-think-you-ve-got-problems-9781783351909.html">So You Think You’ve Got Problems?</a> is just out. It’s a compendium of 200 or so brainteasers with the stories behind them. One of the problems is the one discussed in today’s column, with added material about the history and development of probability ‘paradoxes’ from the nineteenth century to the present day. The other puzzles span wordplay, logic, geometry, linguistics, topology and many other fields. It’s for all abilities: there are very simple teasers that children will be able to do and utterly baffling ones for only the sharpest minds. Would make a great Christmas gift!</i>
+      </p>
+      <p>
+        <i>I set a puzzle here every two weeks on a Monday. I’m always on the look-out for great puzzles. If you would like to suggest one, <a href="mailto:bellospuzzle@gmail.com">email me</a>.</i>
+      </p>
+    </article>
+  </body>
+</html>

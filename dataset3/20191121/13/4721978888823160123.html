@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://www.iphoneitalia.com/718977/bug-sicurezza-fotocamera-microfono-android"/>
+    <meta property="og:site_name" content="iPhone Italia"/>
+    <meta property="article:published_time" content="2019-11-21T13:00:38+00:00"/>
+    <meta property="og:title" content="Un bug di Android consente l’accesso a videocamera e microfono degli smartphone"/>
+    <meta property="og:description" content="Chechmarx ha reso nota una importante vulnerabilità di Android che ha permesso ad app malevole di spiare gli utenti tramite videocamera e microfono."/>
+  </head>
+  <body>
+    <article>
+      <h1>Un bug di Android consente l’accesso a videocamera e microfono degli smartphone</h1>
+      <address>
+        <time datetime="2019-11-21T13:00:38+00:00">21 Nov 2019, 13:00</time>
+      </address>
+      <p>Un bug di sicurezza scoperto su Android ha permesso ad alcune app di registrare video, scattare foto e acquisire audio senza che l’utente se ne accorgesse.</p>
+      <p>Tutti i contenuti catturati da queste app venivano caricati su un server remoto, senza ovviamente l’autorizzazione dell’utente. La vulnerabilità è stata scoperta dalla società di sicurezza Checkmarx ed è stata evidenziata da <a href="https://arstechnica.com/information-technology/2019/11/google-samsung-fix-android-spying-flaw-other-makers-may-still-be-vulnerable/">Ars Technica</a>. Il bug aveva il potenziale di <b>lasciare fotocamere e microfoni aperti alla possibilità di registrare illegalmente dallo smartphone tutto l’ambiente circostante</b>.</p>
+      <p>Android prevede un sistema che impedisce alle app di accedere alla videocamera e al microfono dello smartphone senza l’autorizzazione dell’utente, ma con questo particolare exploit, <b>un’app poteva utilizzare la videocamera e il microfono per acquisire video e audio senza il consenso espresso dell’utente</b>. Tutto ciò che un’app doveva fare era ottenere l’autorizzazione ad accedere allo spazio di archiviazione di un dispositivo, che è comunemente concessa da tutti gli utenti quando un’app la richiede.</p>
+      <p>Per dimostrare la presenza di questo bug, Checkmarx ha creato un’app di prova che offriva previsioni meteo, ma in realtà raccoglieva tantissimi dati privati in bakcground.  <b>L’app è stata in grado di scattare foto e registrare video anche quando lo schermo del telefono era spento</b> o l’app era chiusa, oltre ad accedere ai dati sulla posizione dalle foto. Era in grado anche di funzionare in modalità invisibile, eliminando il suono dell’otturatore della fotocamera e poteva registrare conversazioni telefoniche bidirezionali. Tutti i dati sono stati caricati su un server remoto.</p>
+      <p>Quando l’exploit è stato utilizzato, lo schermo dello smartphone attaccato mostrava la videocamera durante la registrazione di video o lo scatto di una foto. Per evitare che l’utente potesse accorgersene, l’app poteva essere attivata quando il telefono era lontano dalla vista del suo proprietario o, sfruttando i sensori di prossimità, solo quando lo smartphone era rivolto verso il basso.</p>
+      <p>Google ha risolto la vulnerabilità nei suoi smartphone Pixel attraverso un aggiornamento della fotocamera lanciato a luglio. Anche Samsung ha risolto il bug con un aggiornamento, ma non è chiaro quando sia stato rilasciato.</p>
+      <p>Queste le parole di <b>Google</b>: “<i>Apprezziamo che Checkmarx abbia portato questo problema alla nostra attenzione e abbia collaborato con i partner di Google e Android per coordinarne la divulgazione. Il problema è stato risolto sui dispositivi Google colpiti tramite un aggiornamento del Play Store all’applicazione Google Camera a luglio 2019. È stata inoltre resa disponibile una patch per tutti i partner”</i>.</p>
+      <p>Google ha affermato che anche i telefoni Android di altri produttori potrebbero essere vulnerabili al problema, quindi potrebbero esserci ancora alcuni dispositivi aperti agli attacchi. Google non ha divulgato produttori e modelli specifici.</p>
+      <p>Poiché si tratta di un bug Android, i dispositivi iOS non sono interessati da questo bug di sicurezza.</p>
+      <p>
+        <a href="https://www.iphoneitalia.com/category/news">News</a>
+      </p>
+      <ul>
+        <li/>
+        <li/>
+        <li/>
+        <li/>
+      </ul>
+      <p>0</p>
+    </article>
+  </body>
+</html>

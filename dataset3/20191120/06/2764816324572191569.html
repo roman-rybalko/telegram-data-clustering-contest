@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://www.cnews.cz/next-gen-x86-procesor-centaur-zhaoxin-kx-7000-predstaveni-ai-koprocesor"/>
+    <meta property="og:site_name" content="Cnews.cz"/>
+    <meta property="article:published_time" content="2019-11-20T06:00:34+00:00"/>
+    <meta property="og:title" content="Next-gen x86 procesor Zhaoxin/Centaur představen: 16nm osmijádro s AI koprocesorem"/>
+    <meta property="og:description" content="Zhaoxin KX-7000 má osm jader s prstencovou sběrnicí, čtyřkanálovou pamětí a 44 linkami PCIe podobně jako platforma LGA 2011, ale také AI koprocesor NCore."/>
+  </head>
+  <body>
+    <article>
+      <h1>Next-gen x86 procesor Zhaoxin/Centaur představen: 16nm osmijádro s AI koprocesorem</h1>
+      <address><time datetime="2019-11-20T06:00:34+00:00">20 Nov 2019, 06:00</time> by <a rel="author" href="https://www.cnews.cz/lide/jan-olsan/" target="_blank">Jan Olšan</a></address>
+      <slideshow>
+        <figure>
+          <a href="https://www.cnews.cz/next-gen-x86-procesor-centaur-zhaoxin-kx-7000-predstaveni-ai-koprocesor/galerie-179373-1">
+            <img src="https://www.cnews.cz/wp-content/uploads/2019/11/Prezentace-next-gen-x86-architektury-Centaur-Zhaoxin-KX-7000-01.png"/>
+          </a>
+        </figure>
+        <figure>
+          <a href="https://www.cnews.cz/next-gen-x86-procesor-centaur-zhaoxin-kx-7000-predstaveni-ai-koprocesor/galerie-179373-2">
+            <img src="https://www.cnews.cz/wp-content/uploads/2019/11/Prezentace-next-gen-x86-architektury-Centaur-Zhaoxin-KX-7000-02.png"/>
+          </a>
+        </figure>
+        <figure>
+          <a href="https://www.cnews.cz/next-gen-x86-procesor-centaur-zhaoxin-kx-7000-predstaveni-ai-koprocesor/galerie-179373-3">
+            <img src="https://www.cnews.cz/wp-content/uploads/2019/11/Prezentace-next-gen-x86-architektury-Centaur-Zhaoxin-KX-7000-03.png"/>
+          </a>
+        </figure>
+        <figure>
+          <a href="https://www.cnews.cz/next-gen-x86-procesor-centaur-zhaoxin-kx-7000-predstaveni-ai-koprocesor/galerie-179373-4">
+            <img src="https://www.cnews.cz/wp-content/uploads/2019/11/Prezentace-next-gen-x86-architektury-Centaur-Zhaoxin-KX-7000-04.png"/>
+          </a>
+        </figure>
+      </slideshow>
+      <p>
+        <a href="https://www.cnews.cz/next-gen-x86-procesor-centaur-zhaoxin-kx-7000-predstaveni-ai-koprocesor/galerie-179373-1">VŠECHNY FOTOGRAFIE</a>
+      </p>
+      <p>Před týdnem a něco jsme psali o <a href="https://www.cnews.cz/procesor-via-zhaoxin-kx-7000-unik-geekbench-2ghz/">připravované nové (a výrazně výkonnější než doteď) architektuře, chystané pro procesory VIA/Zhaoxin</a>, což je třetí existující výrobce x86-kompatibilních procesorů po Intelu a AMD. Tu by pro ně, ačkoliv jde nyní o čínský projekt s nádechem národního protekcionismu, zřejmě stále měla vyvíjet americká firma Centaur Technology. A právě ta nyní přišla s prvním veřejným odhalením těchto budoucích CPU. Kromě nové architektury jader, která bude ve finále také hodně důležitá, je to ovšem také první x86 procesor s integrovaným speciálním („ASIC“) akcelerátorem pro umělou inteligenci, byť takové jednotky jsou už chvíli normou u mobilních čipů ARM.</p>
+      <h3>Osmijádrové CPU s ringbusem podobným Intelu, hlavně pro servery?</h3>
+      <p>Centaur nebude přímo procesor prodávat, ačkoliv ho teď vlastně oznámil, takže je vysoce pravděpodobné, že zde bylo poodhaleno to, co čínská strana bude prodávat jako Zhaoxin KX-7000, pod kterýmžto označením jsme dosud „next-gen“ procesor VIA/Zhaoxin s novou architekturou znali. Centaur o návrhu tohoto čipu mluví jako o čipu s kódoým označením „CHA“ a jeho jádra měla interní kódové označení „CNS“. Budeme ale operovat s předpokladem, že na trh to přijde jako Zhaoxin KX-7000.</p>
+      <p>Podle slajdů a zveřejněných informací jde o procesor s osmi jádry CNS, jenž má na 16nm procesu TSMC plochu 195 mm². Pro srovnání, to je něco málo přes 90 % také osmijádrového Zenu od AMD, čipu Zeppelin použitého ve 14nm Ryzenech a Epycích. Doposud jsme trošku předpokládali, že KX-7000 by mohly být 7nm čipy, nicméně to vypadá, že byl konzervativněji zvolen levnější 16nm FinFETový proces. Vyvinout takový čip je také o dost menší investice.</p>
+      <figure>
+        <a href="https://www.cnews.cz/next-gen-x86-procesor-centaur-zhaoxin-kx-7000-predstaveni-ai-koprocesor/galerie-179373-2">
+          <img src="https://www.cnews.cz/wp-content/uploads/2019/11/Prezentace-next-gen-x86-architektury-Centaur-Zhaoxin-KX-7000-02.png"/>
+        </a>
+      </figure>
+      <p>Procesor bude mít jádra propojená prstencovou sběrnicí, každé z osmi jader bude spolu s přídrzženým 2MB blokem L3 cache jednou zastávkou, další bude představovat integrovaný řadič PCI Expressu a dalšího IO („Southbridge“) a paměťový řadič. A separátním klientem přímo na tomto ringbusu bude také onen AI koprocesor. Tato architektura je hodně podobná současným klientským (a starším serverovým) procesorům Intel. Mimochodem, ve schématu chybí integrovaná grafika, takže tento čp asi nebude určený pro běžná PC. Podle všeho je jeho hlavním cílem server, nicméně sekundárně by mohl sloužit v desktopu.</p>
+      <figure>
+        <img src="https://www.cnews.cz/wp-content/uploads/2019/11/Diagram-procesoru-Centaur-Zhaoxin-KX-7000.jpg"/>
+        <figcaption>Diagram procesoru Centaur Zhaoxin KX-7000</figcaption>
+      </figure>
+      <h4>Čtyřkanálová DDR4 a 44 linek PCI Express</h4>
+      <p>Centaur se pochlubil, že již má funkční referenční platformu, v níž toto cpu běží na 2,5 GHz, což ale ještě nemusí být frekvence finální. Jak už bylo řečeno, dohromady má CPU 16 MB L3 cache, řadič PCI Expressu poskytuje 44 linek, u nichž je vynechána informace o tom, jaké generace jsou. Řadič pamětí je čtyřkanálový s podporou DDR4-3200, což opět ukazuje na vyšší výkonové ambice, ale není řečeno, jaká je použita technologie. Ve <a href="https://www.cnews.cz/roadmapa-procesoru-viazhaoxin-kx-7000-slibuje-vykon-jako-zen-2-skonci-duopol-v-x86/">starších roadmapách Zhaoxinu</a> bylo, že by KX-7000 už mohl používat DDR5 a <a href="https://www.cnews.cz/pci-express-4-0-byl-oficialne-vydan-verze-5-0-tu-bude-rychleji-uz-v-roce-2019/">PCI Express 4.0</a>, takže je možné, že třeba PCIe 4.0 už CPU umí. Nicméně to také může záviset na tom, zda se povede validace, pročež to možná zatím firma Centaur závazně neslibuje.</p>
+      <p>Mimochodem, všimněte si, že řadič PCI Expressu a DDR dost v parametrech odpovídá platformě LGA 2011. Na fotkách zveřejněných firmou Centaur, které mají zachycovat práci ve firmě, <a href="https://www.cnews.cz/procesor-via-zhaoxin-kx-7000-unik-geekbench-nova-architektura-vysoke-ipc/">jsou vidět inženýři pracující s procesory a deskami se socketem LGA 2011</a> (přesněji LGA 2011-3, jenž používají Haswelly-E/Broadwelly-E s pamětmi DDR4). Je teoreticky možné, že Centaur a Zhaoxin zrecyklují fyzický design socketu od Intelu, aby se výroba usnadnila.</p>
+      <h4>Galerie: Vzorky Zhaoxinu KX-7000 a desky v laboratořích Centaur Technology</h4>
+      <slideshow>
+        <figure>
+          <a href="https://www.cnews.cz/next-gen-x86-procesor-centaur-zhaoxin-kx-7000-predstaveni-ai-koprocesor/galerie-179371-1">
+            <img src="https://www.cnews.cz/wp-content/uploads/2019/09/Procesor-Zhaoxin-CentaurTech-04.jpg"/>
+          </a>
+        </figure>
+        <figure>
+          <a href="https://www.cnews.cz/next-gen-x86-procesor-centaur-zhaoxin-kx-7000-predstaveni-ai-koprocesor/galerie-179371-2">
+            <img src="https://www.cnews.cz/wp-content/uploads/2019/09/Procesor-Zhaoxin-CentaurTech-06.jpg"/>
+          </a>
+        </figure>
+        <figure>
+          <a href="https://www.cnews.cz/next-gen-x86-procesor-centaur-zhaoxin-kx-7000-predstaveni-ai-koprocesor/galerie-179371-3">
+            <img src="https://www.cnews.cz/wp-content/uploads/2019/09/Procesor-Zhaoxin-CentaurTech-05.jpg"/>
+          </a>
+        </figure>
+        <figure>
+          <a href="https://www.cnews.cz/next-gen-x86-procesor-centaur-zhaoxin-kx-7000-predstaveni-ai-koprocesor/galerie-179371-4">
+            <img src="https://www.cnews.cz/wp-content/uploads/2019/09/Procesor-Zhaoxin-na-videu-CentaurTech-01.jpg"/>
+          </a>
+        </figure>
+      </slideshow>
+      <p>
+        <a href="https://www.cnews.cz/next-gen-x86-procesor-centaur-zhaoxin-kx-7000-predstaveni-ai-koprocesor/galerie-179371-1">VŠECHNY FOTOGRAFIE</a>
+      </p>
+      <h4>AVX-512, poprvé mimo Intel</h4>
+      <p>O jádrech CMS se toho bohužel moc konkrétního (třeba kolik mají ALU) nedozvídáme, ovšem slajdy mluví o vysokém IPC, které podle prvních úniků v Geekbench může být okolo 80 % jader jako Intel Skylake a AMD Zen 2. Avšak není asi dobré posuzovat to jen podle tohoto mírně nevyzpytatelného benchmarku, nakonec to tedy může být trochu jinak.</p>
+      <p>Co je ale velmi zajímavá novinka: tato nová jádra budou umět instrukce AVX-512 s 512bitovými vektory (a registry ZMMx). Není jasné, jak široké budou reálně výpočetní jednotky a zda tedy dojde k velkému zrychlení proti SSE a/nebo AVX2, avšak i samotná kompatibilita by měla být užitečná. Uvidíme tedy, zda nakonec Zhaoxin/Centaur nebude první s podporou AVX-512 mimo Intel. U AMD zatím totiž nemáme žádné informace o tom, zda/kdy tyto instrukce ve svých procesorech nabídne. Je teoreticky možné, že to může být třeba už u Zenu 3 příští rok, ale zatím tomu nic nenasvědčuje.</p>
+      <figure>
+        <img src="https://www.cnews.cz/wp-content/uploads/2019/11/Zhaoxin-KX-7000-referencni-platforma-2.jpg"/>
+        <figcaption>Referenční server s procesorem Zhaoxin KX-7000</figcaption>
+      </figure>
+      <h3>NCore, Centaur AI Coprocessor</h3>
+      <p>Nás asi nejvíce bude zajímat samotné CPU, nicméně toto odhalení ze všeho nejvíc klade důraz právě na zmíněný AI akcelerátor, kódově označený NCore, o jehož existenci jsme stručně psali už předminulý víkend. Centaur se pochlubil tím, že spolupracoval na novém benchmarků aplikací umělé inteligence (neuronových sítí) MLPerf a do jeho databáze výsledků už přispěl měřeními tohoto nového procesoru a jeho AI jednotky. Ty nicméně ještě nemají finální výkon. Kromě toho, že by frekvence čipu mohly stoupnout, firma uvádí, že použitý software ještě není úplně zralý a další optimalizace by mohly zvýšit výkon pro AI aplikace až trojnásobně.</p>
+      <p>Jak už bylo řečeno, koprocesor NCore je v procesoru klientem ústřední prstencové sběrnice, což dovoluje prakticky okamžitou komunikaci s CPU jádry, latence bude mnohem nižší, než u externího akcelerátoru pro PCI Express. I takové ovšem platforma bude moci používat (viz oněch 44 linek PCIe). Integrovaná jednotka má být relativně silná, ale nebude mít až takový výkon, jako velká highendová GPU, FPGA či ASICy se spotřebou ve stovkách wattů.</p>
+      <h4>Široký SIMD vektor a integrovaná SRAM</h4>
+      <p>Zatímco většina AI akcelerátorů (včetně tensor jader Nvidie, pokud vím) používá pro akceleraci AI velké množství jednotek FMAC či MAC (multiply-acumulate), protože drtivé množství operací strojového učení nic jiného nedělá, Centaur použil pro NCore trochu jinou architekturu – velmi širokou jednotku typu SIMD. Ta pracuje s vektorem o šířce 32 kilobitů (32 768 bitů). Je uvedeno, že je možné provést 4096 výpočtů za cyklus, což asi znamená s 8bitovými hodnotami (patrně INT8). Tato architektura je organizována do vertikálních „řezů“, takže šířku má být velmi snadné změnit.</p>
+      <figure>
+        <a href="https://www.cnews.cz/next-gen-x86-procesor-centaur-zhaoxin-kx-7000-predstaveni-ai-koprocesor/galerie-179373-3">
+          <img src="https://www.cnews.cz/wp-content/uploads/2019/11/Prezentace-next-gen-x86-architektury-Centaur-Zhaoxin-KX-7000-03.png"/>
+        </a>
+      </figure>
+      <p>Zmíněný 32Kb vektor by měl mít 16 řezů po 2048 bitech (256 bajtů). Jak to u SIMD jednotek chodí, ve všech „pruzích“ či položkách vektoru by vždy měla být prováděna tatáž operace. Pracovním prostorem je 16MB paměť integrovaná přímo v této jednotce, patrně tedy SRAM. Na každý řez připadá tedy 1 MB. Na jeden pruh/hodnotu v SIMD vektoru je to 4 KB. Agregovaná propustnost má údajně být 20 TB/s pro všechny jednotky, tedy asi 1,25 TB/s pro každý řez. Tedy alespoň při frekvenci 2,5 GHz. Teoretický výpočetní výkon jednotky má být okolo 20 TOPS, tedy tera operací za sekundu (jako TFLOPS, ale s celočíselnými 8bitovými místo floating-point hodnot).</p>
+      <figure>
+        <a href="https://www.cnews.cz/next-gen-x86-procesor-centaur-zhaoxin-kx-7000-predstaveni-ai-koprocesor/galerie-179373-4">
+          <img src="https://www.cnews.cz/wp-content/uploads/2019/11/Prezentace-next-gen-x86-architektury-Centaur-Zhaoxin-KX-7000-04.png"/>
+        </a>
+      </figure>
+      <p>Jako softwarový framework bude pro tento komprocesor používán ovladač (uvádí se, že pro Linux, nyní při testování Ubuntu) a nízkoúrovňové knihovny, pro uživatele ale bude exponováno rozhraní kompatibilní se standardní platformou TensorFlow. Pracuje se i na podpoře PyTorch.</p>
+      <figure>
+        <a href="https://www.cnews.cz/next-gen-x86-procesor-centaur-zhaoxin-kx-7000-predstaveni-ai-koprocesor/galerie-179373-5">
+          <img src="https://www.cnews.cz/wp-content/uploads/2019/11/Prezentace-next-gen-x86-architektury-Centaur-Zhaoxin-KX-7000-05.png"/>
+        </a>
+      </figure>
+      <h4>NCore zabírá asi šestinu čipu</h4>
+      <p>Podle Centauru nebude výkon NCore tak vysoký, jako u rychlých přídavných akcelerátorů AI. Například Intel Nervana NNP-I (což je <a href="https://www.cnews.cz/intel-nnp-i-je-druhy-10nm-cip-ice-lake-modul-m-2-pro-umelou-inteligenci/">zajímavý akcelerátor vzniklý adaptováním procesoru Ice Lake s přidanými akceleračními bloky v modulu M.2</a> se spotřebou 10–50 W) od Intelu má být ekvivalentem 12 bloků NCORE, ale podle Centauru má v MLPerf jen 4,3× vyšší skóre. Integrování takovéto jednotky je ale podle firmy mnohem efektivnější, než přidávání AI instrukčních rozšíření přímo do jader CPU, jako to dělá Intel s instrukcemi DLBoost, protože jejich vektory jsou mnohem užší. Intel by podle Centauru pro výkon jednoho jádra NCore potřeboval 23 jader x86. Mimochodem, plocha jádra NCore je 34,4 mm², tedy asi 17,6 % velikosti čipu.</p>
+      <figure>
+        <img src="https://www.cnews.cz/wp-content/uploads/2019/11/Zhaoxin-KX-7000-referencni-platforma-1.jpg"/>
+        <figcaption>Referenční server s procesorem Zhaoxin KX-7000/next-gen čipem Centauru, použitý pro demo AI analýzy videa</figcaption>
+      </figure>
+      <p>Procesor jak už bylo řečeno existuje a běží ve stádiu vzorků, firma ho spolu s referenční platformou/serverem ukazuje na konferenci ISC East 2019 v těchto dnech. Nicméně jde asi zatím opravdu jen o vzorky a kdy se dostane reálně na trh, není moc známo. Pokud platí, že prodávat se bude jako Zhaoxin KX-7000, pak je tu navíc ten problém, že nemusí být na západě distribuován. V současnosti se desky a PC se Zhaoxiny mimo komunistickou Čínu prakticky sehnat nedají, takže těžko říct, zda bude možné tuto platformu u nás koupit a bude relevantní jako něco víc, než jen kuriozita.</p>
+      <h4>Galerie: Představení next-gen procesoru Centaur/Zhaoxin KX-7000 s AI koprocesorem NCore</h4>
+      <slideshow>
+        <figure>
+          <a href="https://www.cnews.cz/next-gen-x86-procesor-centaur-zhaoxin-kx-7000-predstaveni-ai-koprocesor/galerie-179373-1">
+            <img src="https://www.cnews.cz/wp-content/uploads/2019/11/Prezentace-next-gen-x86-architektury-Centaur-Zhaoxin-KX-7000-01.png"/>
+          </a>
+        </figure>
+        <figure>
+          <a href="https://www.cnews.cz/next-gen-x86-procesor-centaur-zhaoxin-kx-7000-predstaveni-ai-koprocesor/galerie-179373-2">
+            <img src="https://www.cnews.cz/wp-content/uploads/2019/11/Prezentace-next-gen-x86-architektury-Centaur-Zhaoxin-KX-7000-02.png"/>
+          </a>
+        </figure>
+        <figure>
+          <a href="https://www.cnews.cz/next-gen-x86-procesor-centaur-zhaoxin-kx-7000-predstaveni-ai-koprocesor/galerie-179373-3">
+            <img src="https://www.cnews.cz/wp-content/uploads/2019/11/Prezentace-next-gen-x86-architektury-Centaur-Zhaoxin-KX-7000-03.png"/>
+          </a>
+        </figure>
+        <figure>
+          <a href="https://www.cnews.cz/next-gen-x86-procesor-centaur-zhaoxin-kx-7000-predstaveni-ai-koprocesor/galerie-179373-4">
+            <img src="https://www.cnews.cz/wp-content/uploads/2019/11/Prezentace-next-gen-x86-architektury-Centaur-Zhaoxin-KX-7000-04.png"/>
+          </a>
+        </figure>
+      </slideshow>
+      <p>
+        <a href="https://www.cnews.cz/next-gen-x86-procesor-centaur-zhaoxin-kx-7000-predstaveni-ai-koprocesor/galerie-179373-1">VŠECHNY FOTOGRAFIE</a>
+      </p>
+      <related>
+        <h4>SOUVISEJÍCÍ ČLÁNKY</h4>
+        <a href="https://www.cnews.cz/half-life-alyx-prvni-informace-trailer-video"/>
+        <a href="https://www.cnews.cz/intel-7nm-gpu-ponte-vecchio-architektura-xe-hpc-aurora-odhaleni"/>
+        <a href="https://www.cnews.cz/nejlepsi-knihy-geeky-vanoce-2019"/>
+        <a href="https://www.cnews.cz/google-android-linux-mainline-moduly"/>
+        <a href="https://www.cnews.cz/tcl-televizory-alexander-hemala-qled-cina/"/>
+      </related>
+    </article>
+  </body>
+</html>

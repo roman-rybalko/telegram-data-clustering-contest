@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://www.cnbeta.com/articles/tech/912973.htm"/>
+    <meta property="og:site_name" content="cnBeta"/>
+    <meta property="article:published_time" content="2019-11-21T00:01:00+00:00"/>
+    <meta property="og:title" content="Intel揭秘7nm GPU芯片：全新Xe架构 整合HBM显存"/>
+    <meta property="og:description" content="在SC19超算大会上，Intel正式宣布了他们为高性能计算打造的Xe架构GPU——PonteVecchio（维琪奥桥），同时它也会首发Intel的7nm工艺，2021年会用于Intel花了50亿美元给美国国防部建造的Aurora极光超算上。"/>
+  </head>
+  <body>
+    <article>
+      <h1>Intel揭秘7nm GPU芯片：全新Xe架构 整合HBM显存</h1>
+      <address><time datetime="2019-11-21T00:01:00+00:00">21 Nov 2019, 00:01</time> by <a rel="author">ugmbbc</a></address>
+      <p>
+        <a href="https://www.cnbeta.com/topics/32.htm">
+          <pic src="https://static.cnbetacdn.com/topics/18315c240ecef87.png"/>
+        </a>
+      </p>
+      <p>在SC 19超算大会上，Intel正式宣布了他们为高性能计算打造的Xe架构GPU——Ponte Vecchio（维琪奥桥），同时它也会首发Intel的7nm工艺，2021年会用于Intel花了50亿美元给美国国防部建造的Aurora极光超算上。</p>
+      <hr/>
+      <p>Xe GPU架构是一个非常灵活、扩展性极强的统一架构，并针对性地划分成多个微架构，从而可用于几乎所有计算、图形领域，包括百亿亿次高性能计算、深度学习与训练、云服务、多媒体编辑、工作站、游戏、轻薄笔记本、便携设备等等。</p>
+      <p>具体到HPC用的Xe架构上，<b>它的EU单元可以大幅扩充到1000个</b>，而且每个单元都是全新设计的，FP64双精度浮点计算能力是现在的40倍。</p>
+      <p>Xe HPC架构中，EU单元对外通过XEMF(Xe Memory Fabric)总线连接HBM高带宽显存，<b>同时集成大容量的一致性缓存“Rambo”，CPU和GPU均可访问，并借此将多个GPU连接在一起，提供极致的显存带宽和FP64浮点性能</b>，且支持显存/缓存ECC纠错、至强级RAS。</p>
+      <p>封装方面，EMIB用于连接GPU与HBM，Foveros则用于互连Rambo缓存，由多个GPU在同一中介层上共享。二者都会大大提升带宽效率和密度。</p>
+      <figure>
+        <img src="https://static.cnbetacdn.com/article/2019/1121/590af919af5a423.png"/>
+      </figure>
+      <p>在发布会现场，<a href="https://c.duomai.com/track.php?site_id=242986&amp;euid=&amp;t=https://intel.jd.com/">Intel</a>的PPT中没能清楚地展示出Ponte Vecchio GPU的内部构造，今天Intel首席架构师、主管高性能GPU项目的副总裁Raja Koduri放出了Ponte Vecchio芯片的内部结构图，<b>可以看到左右两侧各有8组Xe计算核心</b>，目前只知道是7nm工艺制造的，里面的具体信息还缺公布。</p>
+      <p>在Xe计算核心之外，四周还有Rambo Cache缓存及HBM显存，辅以Intel为百亿亿次计算开发的CXL总线、XEMF总线，还有EMIB、Foveros封装等技术，Ponte Vecchio GPU的技术含量实在是高。</p>
+    </article>
+  </body>
+</html>

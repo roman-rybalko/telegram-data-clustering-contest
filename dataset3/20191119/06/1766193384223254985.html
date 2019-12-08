@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://www.heise.de/developer/artikel/Der-Weg-zu-einer-Cloud-nativen-Architektur-4588019.html"/>
+    <meta property="og:site_name" content="Developer"/>
+    <meta property="article:published_time" content="2019-11-19T06:15:00+00:00"/>
+    <meta property="og:title" content="Der Weg zu einer Cloud-nativen Architektur"/>
+    <meta property="og:description" content="Es gibt unterschiedlichste Ansätze, um Cloud-native Anwendungen zu entwickeln. Architekten stehen deshalb in einem Spannungsfeld aus verschiedenen Bewertungskriterien, um aus den möglichen Architekturen den passenden Ansatz für ihren Anwendungskontext zu finden."/>
+  </head>
+  <body>
+    <article>
+      <h1>Der Weg zu einer Cloud-nativen Architektur</h1>
+      <h2>Es gibt unterschiedlichste Ansätze, um Cloud-native Anwendungen zu entwickeln. Architekten stehen deshalb in einem Spannungsfeld aus verschiedenen Bewertungskriterien, um aus den möglichen Architekturen den passenden Ansatz für ihren Anwendungskontext zu finden. </h2>
+      <address><time datetime="2019-11-19T06:15:00+00:00">19 Nov 2019, 06:15</time> by <a rel="author">Michael Schäfer, Carol Gutzeit</a></address>
+      <p>Cloud-Native Architecture (CNA) bezeichnet Architekturen, die explizit für den Einsatz in der Cloud konzipiert sind. Sie bilden die Grundlage für im Internet angebotene Produkte und Services. Im Kontext der Cloud erhalten dabei zwei nichtfunktionale Anforderungen eine besondere Bedeutung: Elastizität und Resilienz. Cloud-native Architekturen versprechen, diese Anforderungen ideal zu erfüllen.</p>
+      <p>Elastizität ist die Fähigkeit eines Systems, mit unerwarteten Lastsituationen umzugehen, ohne dass Anwender etwas davon mitbekommen. Abhängig von der Lastsituation, etwa den Serviceaufrufen pro Sekunde, schaltet eine Cloud-Native Architecture automatisch Ressourcen hinzu und heraus. Resilienz ist die Fähigkeit, unerwartete Fehlersituationen ohne Auswirkungen auf die Anwender zu handhaben. Analog dazu erkennt die Cloud-Native Architecture automatisch Fehler, schaltet zusätzliche Ressourcen hinzu und heraus.</p>
+      <p>Das Kundenverhalten und die Art der Anwendungen im Internet erzwingen das dynamische Verhalten. Denn die Kunden erwarten konstant kurze Antwortzeiten und die ständige Verfügbarkeit aller Produkte und Services.</p>
+      <h4>Mit Netflix und Amazon fing es an</h4>
+      <p>Pioniere der Cloud-Native Architecture sind Netflix und Amazon, die bereits 2010 die erste Streaming-Anwendung von Netflix in die Amazon-Cloud brachten. Netflix konnte die erhöhten</p>
+      <p>Skalierungsanforderungen seiner Streaming-Anwendung nicht mehr konventionell mit der eigenen Infrastruktur abdecken. Insbesondere bei Blockbustern, die zu bestimmten Zeiten ein extrem hohes Abrufverhalten aufwiesen und damit ein sehr dynamisches Lastverhalten nach sich zogen, zeigte sich das Problem besonders deutlich.</p>
+      <p>Amazon konnte bereits 2006 Infrastruktur als Dienst anbieten. Also gingen Amazon und Netflix eine Partnerschaft ein, die bis heute Bestand hat, beide Unternehmen eng zusammenarbeiten lässt und dazu führte, dass Netflix mittlerweile die gesamte Streaming-Anwendung in die Amazon-Cloud migriert hat.</p>
+      <p>Im Rahmen dieser Zusammenarbeit etablierten Amazon und Netflix auch eine Architektur für die Cloud, die die genannten Anforderungen an dynamischer Skalierung und Resilienz erfüllt. Hierbei sind insbesondere Adrian Cockcroft von Amazon und Neil Hunt von Netflix als führende Architekten zu nennen. Den Begriff der Cloud-Native Architecture verwendeten sie dafür allerdings noch nicht. Erst Matt Stine von Pivotal prägte ihn 2014 in seinem Buch „Migrating to Cloud-Native Application Architecture“ [1]. Seitdem haben prominente Architekten wie <a href="https://martinfowler.com/articles/talk-about-platforms.html">Martin Fowler</a>, Chris Richardson [2] oder <a href="https://www.youtube.com/watch?v=7oCSFcUW-Qk">Sam Ramji</a> den Begriff der Cloud-Native Architecture adaptiert. Sogar Organisationen wie die <a href="https://www.cncf.io/">Cloud-Native Computing Foundation (CNCF)haben ihn aufgegriffen und kultiviert</a>.</p>
+      <h4>Die Prinzipien der Architektur</h4>
+      <p>Es sind unterschiedliche Definitionen für eine Cloud-Native Architecture entstanden, etwa die der CNCF. Aus dieser Definition lassen sich bestimmte Werte und Regeln ableiten, die sich in den Architekturmaximen und -prinzipien niederschlagen. Werden sie eingehalten, sind die Anforderungen an die Cloud-Native Architecture erfüllt.</p>
+      <p>Die Cloud-Native Architecture folgt vier Maximen:</p>
+      <ol>
+        <li>Teile und herrsche (Modularisierung)</li>
+        <li>Autonomie (Separation of Concerns, Self-Contained, Bounded-Context)</li>
+        <li>Klein (kleine Verantwortung)</li>
+        <li>verbunden (API-getrieben)</li>
+      </ol>
+      <p>Die Architekturprinzipien setzen diese Maximen um. Sie sind in Tabelle 1 aufgeführt und genauer beschrieben.</p>
+      <table bordered="">
+        <tr>
+          <td align="left">
+            <b>Prinzip</b>
+          </td>
+          <td align="left">
+            <b>Beschreibung</b>
+          </td>
+        </tr>
+        <tr>
+          <td align="left">Cloud Computing</td>
+          <td align="left">konsequente Nutzung der Cloud-Services für die Bereitstellung der Infrastruktur, z.B. mit Amazon</td>
+        </tr>
+        <tr>
+          <td align="left">Microservices</td>
+          <td align="left">Anwendung der Microservice-Architektur bei der Entwicklung der Anwendung, z.B. mit Spring Boot</td>
+        </tr>
+        <tr>
+          <td align="left">Containerisierung</td>
+          <td align="left">Installation und Betrieb von Microservices in Containern, z.B. mit Docker</td>
+        </tr>
+        <tr>
+          <td align="left">Scheduling &amp; Orchestrierung</td>
+          <td align="left">Scheduling und Orchestrierung der Container-Rechnerknoten, z.B. mit Kubernetes oder Docker Swarm</td>
+        </tr>
+        <tr>
+          <td align="left">Clustering</td>
+          <td align="left">Verwaltung, Ausfallsicherheit und Skalierung der Rechnerknoten, z.B. mit Consul</td>
+        </tr>
+        <tr>
+          <td align="left">Service-Mesh</td>
+          <td align="left">Ein Service-Mesh ist eine dezidierte Infrastrukturschicht, die die Service-zu-Service-Kommunikation sicher, schnell und zuverlässig macht, z.B. mit Istio</td>
+        </tr>
+        <tr>
+          <td align="left">CI/CD</td>
+          <td align="left">kontinuierliche Integration und Auslieferung der Microservices, z.B. mit Jenkins oder Helm</td>
+        </tr>
+        <tr>
+          <td colspan="2" align="left">Tabelle 1: CNA-Architekturprinzipien</td>
+        </tr>
+      </table>
+      <h3>Cloud-Ansätze und -Prinzipien</h3>
+      <p>Die Cloud-Native Architecture steht für die konsequente Nutzung von Cloud-Services. Sie umfassen dabei alle Dienste, die ihrerseits unterschiedliche Aspekte der Cloud-Native Architecture unterstützen. Beispiele dafür sind Services, die den Microservices den Zugriff auf Datenbanken bereitstellen. Oder unterstützende Services zur Auslieferung der Microservices, beispielsweise Jenkins.<br/>Aufgrund der Vielzahl der Cloud-Services betrachtet dieser Artikel nur diejenigen, die den Microservices die Laufzeitumgebung zur Verfügung stellen. Hierbei lassen sich fünf verschiedene unterliegende Cloud-Ansätze von IaaS bis SaaS unterscheiden (s. Abb. 1). Sie stellen jeweils einen anderen Umfang an IT-Ressourcen für den Aufbau der Laufzeitumgebung bereit. Die Frage ist also: Welcher Cloud-Ansatz für die Laufzeitumgebung ist der beste für die individuell benötigte Cloud-Native Architecture?</p>
+      <figure>
+        <img src="https://www.heise.de/developer/imgs/06/2/7/8/9/8/6/4/abbildung-001-723e82d6b1318add.jpg"/>
+        <figcaption>Mit IaaS, CaaS, PaaS, FaaS und SaaS lassen sich mittlerweile fünf Cloud-Ansätze unterscheiden (Abb. 1)</figcaption>
+      </figure>
+      <p>Nur vier der in der Einführung vorgestellten sieben Prinzipien der Cloud-Native Architecture sind für die Auswahl des richtigen Cloud-Ansatzes überhaupt von Bedeutung. Dazu gehören Service-Mesh, Containerisierung, Scheduling und Orchestrierung sowie Clustering. Alle anderen Prinzipien sind durch eine andere Art von Cloud-Service abgedeckt (Abb. 2).</p>
+      <figure>
+        <img src="https://www.heise.de/developer/imgs/06/2/7/8/9/8/6/4/abbildung-002-3205f0644c3750b5.png"/>
+        <figcaption>Der Zusammenhang zwischen Cloud-Ansatz, Laufzeitumgebung und Microservices (Abb. 2)</figcaption>
+      </figure>
+      <p>Bevor sich die unterschiedlichen Cloud-Ansätze überhaupt bewerten lassen, ist noch eine Abgrenzung notwendig. Der Artikel betrachtet stets eine Public Cloud, wie sie beispielsweise Amazon, Google oder Microsoft anbieten. Entscheidend ist, dass diese Cloud-Provider versprechen, quasi unbegrenzt Ressourcen bereitzustellen. Exakt diese Anforderung stellt die Cloud-Native Architecture, womit die Public Cloud die einzig sinnvolle Wahl ist.</p>
+      <p>Folglich lässt der Artikel Private Clouds, die von Unternehmen On-Premise oder von anderen Anbietern aufgebaut sind, außer Acht. Sie sind meist nicht in der Lage, unbegrenzt Ressourcen anzubieten, und daher in ihren Möglichkeiten eingeschränkt.</p>
+      <p>Als Referenz für eine Public Cloud dienen im Artikel die Amazon Web Services (AWS), da sie mit 33 Prozent den größten Marktanteil besitzen und <a href="https://www.srgresearch.com/articles/cloud-growth-rate-increased-again-q1-amazon-maintains-market-share-dominance">sich andere Anbieter teilweise daran orientieren</a>.</p>
+      <h4>Der Dogmatismus</h4>
+      <p>Viele Unternehmen setzen dogmatisch auf den Cloud-Ansatz der Infrastructure as a Service (IaaS), um ihren Microservices eine Laufzeitumgebung bereitzustellen. Damit müssen sie die gesamte Laufzeitumgebung für Containerisierung, Scheduling und Orchestrierung, Clustering und Service-Mesh selbst aufbauen. Denn IaaS liefert lediglich Computer- und Network-Services. Dieser Ansatz hat Vorteile, etwa die damit verbundene Flexibilität, aber auch Nachteile, etwa die gestiegene Komplexität. Vermutlich setzt sich dieser Cloud-Ansatz deshalb häufig durch, weil IaaS bereits als typischer Baustein gilt – oder aber die IT damit ihren politischen Einfluss im Unternehmen stärken kann.<br/>Aus Sicht der IT-Architektur ist der IaaS-Ansatz aber nicht immer die beste Wahl. Schon gar nicht, wenn ausschließlich dieser über das gesamte Unternehmen ausgerollt wird. Denn auch andere Kriterien, beispielsweise Kosten oder benötigte Zeit für den Aufbau der Laufzeitumgebung, sollten berücksichtigt sein. Schließlich erfordern der Aufbau und der Betrieb von Laufzeitumgebungen eben viel Zeit, was wiederum das Budget belastet.</p>
+      <h4>Bewertungsmatrix</h4>
+      <p>Finden lässt sich der passende Cloud-Ansatz für die Laufzeitumgebung ganz klassisch: Indem die IT-Architekten genauso vorgehen wie in allen anderen Auswahlsituationen auch. In der Regel treffen sie mittels einer Bewertungsmatrix die Auswahl der passenden Technik. Für das Erstellen einer solchen Matrix müssen die verschiedenen Cloud-Ansätze hinsichtlich möglichst objektiver Kriterien bewertet werden. Liegt dann eine fertige Bewertungsmatrix vor, können IT-Architekten die Bewertungen abhängig vom eigenen Anwendungskontext gewichten und eine Auswahl treffen.</p>
+      <h3>Die Bewertungskriterien</h3>
+      <p>Die vier Bewertungskriterien Kosten, Flexibilität, Komplexität und Geschwindigkeit sind allgemein und relevant genug, um die Basis der Bewertungsmatrix zu bilden. Sicherlich sind in einigen Fällen auch noch mehr oder andere Kriterien passender. Mit den vier hier gewählten Kriterien ist aber eine erste, gute Objektivierung möglich. Schließlich stehen die vier Kriterien sowohl für ganz unterschiedliche Bewertungsaspekte, etwa Organisation, Prozess und Technik, als auch teilweise diametral zueinander, was zu einer besseren Ausleuchtung des Lösungsraums beiträgt.</p>
+      <p>An erster Stelle stehen die Kosten, die sich in OpEx- und CapEx-Kosten unterscheiden lassen. Die OpEx-Kosten sind die Kosten, die bei der Nutzung der Cloud-Services entstehen, um die Laufzeitumgebung bereitzustellen. Die OpEx-Kosten sind transparent und können für jeden Cloud-Provider bestimmt werden. Allgemein gilt, dass die OpEx-Kosten um so höher ausfallen, je mehr Cloud-Services zum Einsatz kommen. Die CapEx-Kosten werden nicht berücksichtigt, da die Cloud und die Cloud-Services nicht selbst aufgebaut werden sollen.</p>
+      <p>Die Komplexität lässt sich mit der Kompetenz und den Experten gleichsetzen, die benötigt werden, um die Laufzeitumgebung mit dem gewählten Cloud-Ansatz zu konfigurieren. Je mehr Cloud-Services Verwendung finden, desto geringer ist die Komplexität, da wenig individuell aufgebaut werden muss. Natürlich wird auch für die Konfiguration der Cloud-Services Kompetenz benötigt, allerdings viel weniger, als wenn die Cloud-Services selbst aufzubauen wären.</p>
+      <p>Proportional zur Komplexität verhält sich die Flexibilität. Sie repräsentiert die Autonomie der IT bei der Gestaltung der Laufzeitumgebung, etwa der Auswahl spezieller Prozessortypen. Oder die Flexibilität, die Versionen, die Updates oder die Konfiguration der verwendeten Software selbst bestimmen zu können.</p>
+      <p>Die Geschwindigkeit ist ein Maß dafür, wie schnell man die Laufzeitumgebung bereitstellen kann. Je mehr Cloud-Services einsetzbar sind, desto schneller kann die Laufzeitumgebung zur Verfügung stehen, da keine individuellen Aufbauten notwendig sind.</p>
+      <p>Für jedes Bewertungskriterium lässt sich nun eine relative Einschätzung hinsichtlich des verwendeten Cloud-Ansatzes von IaaS bis SaaS für den Aufbau der Laufzeitumgebung vornehmen. Die gewählten Bewertungsstufen sind hoch, mittel und niedrig (Tabelle 2), aber beliebig durch andere wie T-Shirt-Größen oder Farben ersetzbar.</p>
+      <table bordered="">
+        <tr>
+          <td align="left">
+            <b>Ansatz</b>
+          </td>
+          <td align="left">
+            <b>Kosten</b>
+          </td>
+          <td align="left">
+            <b>Komplexität</b>
+          </td>
+          <td align="left">
+            <b>Flexibilität</b>
+          </td>
+          <td align="left">
+            <b>Geschwindigkeit</b>
+          </td>
+        </tr>
+        <tr>
+          <td align="left">IaaS</td>
+          <td align="left">niedrig</td>
+          <td align="left">hoch</td>
+          <td align="left">hoch</td>
+          <td align="left">niedrig</td>
+        </tr>
+        <tr>
+          <td align="left">CaaS</td>
+          <td align="left">niedrig</td>
+          <td align="left">mittel</td>
+          <td align="left">mittel</td>
+          <td align="left">mittel</td>
+        </tr>
+        <tr>
+          <td align="left">PaaS</td>
+          <td align="left">niedrig</td>
+          <td align="left">niedrig</td>
+          <td align="left">niedrig</td>
+          <td align="left">hoch</td>
+        </tr>
+        <tr>
+          <td align="left">FaaS</td>
+          <td align="left">niedrig</td>
+          <td align="left">niedrig</td>
+          <td align="left">niedrig</td>
+          <td align="left">hoch</td>
+        </tr>
+        <tr>
+          <td align="left">SaaS</td>
+          <td align="left">entfällt</td>
+          <td align="left">entfällt</td>
+          <td align="left">entfällt</td>
+          <td align="left">entfällt</td>
+        </tr>
+        <tr>
+          <td colspan="5" align="left">Tabelle 2: Bewertungskriterien</td>
+        </tr>
+      </table>
+      <h4>Der IaaS-Ansatz</h4>
+      <p>Der Infrastructure-as-a-Service-Ansatz kümmert sich ausschließlich um Computer und Netzwerk, wie in Abbildung 1 dargestellt. Er ist der älteste Cloud-Ansatz. Die Kosten sind niedrig, weil sich nur wenige Services für den Aufbau der Laufzeitumgebung nutzen lassen. Amazon liefert dafür etwa EC2 sowie Networking, VPN, Routing, Route53 und Security. Die Komplexität des IaaS-Ansatzes ist allerdings hoch, denn Containerisierung, Scheduling und Orchestrierung, Clustering und Service-Mesh müssen Unternehmen komplett selbständig aufbauen und pflegen. Als Container-Techniken lassen sich dann beispielsweise Docker, Docker-Swarm oder Kubernetes und das Service-Meshes wie Linkerd oder Istio umsetzen. Der individuelle Aufbau benötigt Zeit, was sich negativ auf die Geschwindigkeit auswirkt. Die Belohnung für die Investition ist eine hohe Flexibilität, denn die verwendeten Produkte sind passgenau ausgesucht, konfiguriert und aktualisiert.</p>
+      <h4>Der CaaS-Ansatz</h4>
+      <p>Container as a Service liefert, wie Abbildung 1 darstellt, zusätzlich zu Computer und Netzwerk auch Betriebssystem und Container. CaaS bietet damit alles rund um die Container-Techniken an, also Containerisierung, Scheduling und Orchestrierung sowie Clustering. Der CaaS-Ansatz ist ein junger Cloud-Ansatz. Erste Cloud-Services wurden 2015 von Unternehmen wie Cycle bereitgestellt.<br/>Amazon bietet für die Anwendung dieser Container-Techniken die Services Elastic Container Services (ECS), Elastic Container Repositories (ECR) und Elastic Kubernetes Services (EKS). Zwar bringen die genannten Dienste wichtige Mesh-Features wie Load Balancer, Proxy oder API Gateway mit, allerdings sind sie in der Regel nicht ausreichend und man muss sie um Monitoring, Tracing oder Metriken ergänzen. Mit dem Produkt AWS App Mesh lassen sich die Container-Services um ein Service-Mesh samt Monitoring, Traffic-Control und anderer Features ergänzen oder ersetzen.</p>
+      <p>Trotz des CaaS-Komforts steigen die Kosten gegenüber dem IaaS-Ansatz nicht. Denn für die Nutzung der Container-Services stehen die gleichen Kosten wie für IaaS auf der Rechnung. Die Komplexität sinkt wiederum beträchtlich, denn die Produkte, von Docker über Kubernetes bis Istio, müssen Firmen nicht mehr selbst aufsetzen und pflegen. Der Komfort schmälert auch die Flexibilität nicht wesentlich, denn es lassen sich alle Konfigurationen, APIs und Tools wie Command Line Interpreter der darunter liegenden Open-Source-Produkte verwenden. Ebenso lässt sich Einfluss auf die Versionen und Updates nehmen, sodass neue Features immer zur Verfügung stehen. Zudem profitiert das Kriterium der Geschwindigkeit, weil sich die Services recht einfach aufsetzen lassen.</p>
+      <h4>Der PaaS-Ansatz</h4>
+      <p>Die Application Runtime, Tools sowie Bibliotheken sind die Domäne der Platform as a Service. Den PaaS-Ansatz gibt es bereits seit 2009. Pioniere sind die Open-Source-Softwareentwickler von Cloud Foundry die später unter der Schirmherrschaft der Cloud Foundry Foundation von Unternehmen wie IBM Unterstützung erhielten.</p>
+      <p>Dieser Ansatz kapselt das Thema Container-Techniken vollständig. Der Microservice wird lediglich noch in ein geeignetes Format überführt, in der Java-Welt beispielsweise als JAR oder WAR. Anschließend lässt er sich per API und mit einem CLI-Befehl in die Cloud übertragen und ausführen. Ein Zitat von Onsi Fakhouri, CTO von Pivotal, illustriert diese Einfachheit: “Here is my source code, run it on the cloud for me. I do not care how!” [4]</p>
+      <p>Die PaaS bringt in der Regel den Service-Mesh gleich mit. Beispielsweise liefert die Pivotal Cloud Foundry mit Istio einen Service-Mesh-Stack. Amazon stellt mit Beanstalk eine PaaS zur Verfügung, die auch Service-Mesh unterstützt. Man kann sie außerdem mit weiteren Services wie AWS App Mesh erweitern. Auch hier gilt: Trotz des PaaS-Komforts steigen die Kosten gegenüber des IaaS-Ansatzes nicht, weil für Beanstalk selbst keine zusätzlichen Kosten anfallen. Außer die, die für IaaS sowieso benötigt werden. Der PaaS-Ansatz reduziert die Komplexität stark und die Zeit bis zur Bereitstellung der Laufzeitumgebung sinkt deutlich.</p>
+      <p>Der einzige Nachteil ist, dass Flexibilität verloren geht. Lediglich über eine Konfigurationsdatei besteht noch partiell Einfluss auf die Infrastruktur. Auf die in Beanstalk verwendeten Produkte, Versionen und Updates haben die Unternehmen dann gar keinen Einfluss mehr.</p>
+      <h4>Der FaaS-Ansatz</h4>
+      <p>FaaS, Functions as a Servive oder auch Serverless Computing, adressiert Service-Mesh und Service-Events und ist der jüngste Ansatz unter allen anderen. Einer der Pioniere auf dem Gebiet ist AWS, die 2018 ihren ersten Cloud-Services mit AWS Lambda anbieten konnten. Dieser steht unter dem Motto "Run Code, Not Servers".</p>
+      <p>FaaS kapselt dazu die Container- und Service-Mesh-Techniken vollständig. Im Zentrum von FaaS steht die Ausführung einzelner Funktionen. Dabei nimmt der Service den Sourcecode der Funktion direkt entgegen und führt ihn aus. Die Funktionen lassen sich dann miteinander zu einer Anwendung vernetzen. Die Kommunikation zwischen den Services erfolgt über Service-Events.</p>
+      <p>Die Kosten mit dem Einsatz von Amazon Lambda steigen gegenüber Ansätzen wir IaaS, CaaS und PaaS. Neben den IaaS-Kosten fallen bei jedem Funktionsaufruf nämlich Kosten für die Ausführungszeit der Funktion an. Dafür sinkt die Komplexität, denn der Service kapselt die Laufzeitumgebung komplett. Selbst die Skalierung läuft automatisch ab. Damit konvergiert die Flexibilität gegen Null. Der Einfluss auf die für die Laufzeitumgebung verwendeten Produkte, Versionen oder Updates geht komplett verloren. Die Geschwindigkeit bleibt vergleichbar mit einem PaaS-Ansatz. So ist ein Beanstalk-Service genauso schnell eingerichtet wie ein Lambda-Service – die Installation und Ausführung der Anwendungen läuft über API- oder CLI-Befehle ab.</p>
+      <h4>Der SaaS-Ansatz</h4>
+      <p>Software as a Service liefert bereits fertige Applikationen und Services. Salesforce ist hier sicherlich als SaaS-Pionier zu bezeichnen. Das Unternehmen bietet vollständige Anwendungen aus verschiedenen Unternehmensbereichen, von Marketing bis Vertrieb, in der Cloud an. Im Kontext der Cloud-Native Architecture werden über SaaS-Ansätze auch APIs über beispielsweise REST oder GraphQL im Internet angeboten, die sich durch andere Apps oder APIs konsumieren lassen.</p>
+      <p>Das ist ein signifikanter Unterschied zu den anderen vier Cloud-Ansätzen. Denn im Gegensatz zu diesen liefert SaaS somit nicht nur die Laufzeitumgebung aus, sondern deren Anwendung gleich mit. Ein Vergleich mit den Alternativen ist dabei schwierig. Insbesondere erkennbar an den signifikant höheren Kosten, deren Großteil sich auf die fachliche Nutzung der Services zurückzuführen lässt und nicht auf die Kosten für die Bereitstellung der Laufzeitumgebung. Daher ist dieser Ansatz zwar in der Bewertungsmatrix aufgenommen, die Bewertung entfällt allerdings.</p>
+      <h3>Das Ergebnis</h3>
+      <p>Die aus der Bewertung der Cloud-Ansätze hervorgegangene Matrix ist in Tabelle 2 zu sehen. Abhängig vom Anwendungskontext müssen IT-Architekten zunächst die Kriterien Kosten, Komplexität, Flexibilität, Geschwindigkeit und Sicherheit gewichten. Es empfehlen sich dabei anfangs grobe Einstufungen wie hoch, mittel und tief. Auf Basis der Bewertungsmatrix lässt sich dann der Cloud-Ansatz auswählen, der am besten mit der individuellen Gewichtung der Kriterien übereinstimmt.</p>
+      <p>Es ist möglich, dass in einem Unternehmen mehrere Cloud-Ansätze gefahren werden. In großen Unternehmen, die ganz unterschiedliche Anwendungstypen haben, ist das normal. Es ist auch möglich, dass sich die Gewichtung der individuellen Kriterien im Laufe der Zeit verschiebt. Steht am Anfang noch die Geschwindigkeit im Vordergrund, weil die Anwendung schnell auf den Markt muss, könnte am Ende die Flexibilität wichtiger sein, um die Nachhaltigkeit zu sichern. Wie auch immer sich der Anwendungskontext darstellt: Die Wahl des Cloud-Ansatzes ist bewusst zu treffen .</p>
+      <h4>Zusammenfassung</h4>
+      <p>Die Cloud-Native Architecture (CNA) spielt für alle Formen von Unternehmen eine zunehmend wichtigere Rolle, wenn es darum geht, die eigenen Produkte und Services im Internet anzubieten. Die sieben Prinzipien Cloud Computing, Microservices, Containerisierung, Scheduling und Orchesteierung, Clustering, Service-Mesh und CI/CD sind die Grundlage jeder Cloud-Native Architecture. Dabei stehen Unternehmen vor der Herausforderung, die Laufzeitumgebung für ihre Microservices damit auzubauen.<br/>Mit Cloud-Ansätzen wie IaaS, CaaS, PaaS und FaaS lässt sich eine entsprechende Laufzeitumgebung realisieren. Dabei tendieren viele Unternehmen pauschal zum IaaS-Ansatz, der nicht immer die passende Wahl darstellt. Stattdessen ist immer der Anwendungskontext in Betracht zu ziehen, der dann den passenden Cloud-Ansatz vorgibt. Eine Bewertungsmatrix, die Kosten, Komplexität, Flexibilität, Geschwindigkeit und Sicherheit bewertet, vereinfacht und argumentiert die Wahl für den einen oder anderen Cloud-Ansatz. (<a href="mailto:bbo@ix.de">bbo</a>)</p>
+      <h4>Literatur und Links</h4>
+      <p>[1] Matt Stine;Migrating to Cloud-Native Application Architectures ; O'Reilly, 2015<br/>[2] Chris Richardson; Microservice Patterns: With examples in Java : Manning, 2018.<br/>[3] Duncan C. E. Winn;Cloud Foundry: The Cloud-Native Platform; O'Reilly, 2016<br/>[4] Tom Laszewski, Tom;Cloud Native Architecture: Design high-availability and cost-effective applications for the cloud;Packt Publishing, 2018, S.</p>
+      <p>
+        <i>Michael Schäfer<br/>Michael Schäfer ist Principal IT Consultant bei msg. Sein Themenbereich sind Systems of Engagement, sowohl deren technische Umsetzung als auch ihre marktwirtschaftliche Relevanz. Zudem ist er in der Welt von Java und dem Spring-​Ökosystem zu Hause.</i>
+      </p>
+      <p>
+        <i>Carol Gutzeit<br/>Carol Gutzeit ist Principal IT Consultant bei msg. Als Enterprise Architect entwickelt und verantwortet er Unternehmens-IT-Lösungen. Gleichzeitig vermittelt er das entsprechende Architekturwissen in Schulungen. Zu seinem Themenbereich gehören auch künstliche Intelligenz, insbesondere Machine Learning.</i>
+      </p>
+    </article>
+  </body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://www.xatakandroid.com/seguridad/vulnerabilidad-camara-google-samsung-permitia-acceso-a-apps-maliciosas?utm_source=feedburner&amp;utm_medium=feed&amp;utm_campaign=Feed%3A+Xatakandroid+%28Xatakandroid%29"/>
+    <meta property="og:site_name" content="Xataka Android"/>
+    <meta property="article:published_time" content="2019-11-20T13:31:24+00:00"/>
+    <meta property="og:title" content="Una vulnerabilidad en la cámara de Google y Samsung permitía el acceso a apps maliciosas"/>
+    <meta property="og:description" content="Android y el software malicioso mantienen una relación que anda arrojando numerosas víctimas. Y no porque el sistema sea inseguro de por sí, más bien por los..."/>
+  </head>
+  <body>
+    <article>
+      <h1>Una vulnerabilidad en la cámara de Google y Samsung permitía el acceso a apps maliciosas</h1>
+      <address><time datetime="2019-11-20T13:31:24+00:00">20 Nov 2019, 13:31</time> by <a rel="author" href="https://www.xatakandroid.com/autor/ivan-linares" target="_blank">Iván Linares</a></address>
+      <p><a href="https://www.xatakandroid.com/seguridad/xhelper-malware-para-android-que-se-reinstala-incluso-restablecer-dispositivo-fabrica">Android y el software malicioso</a> mantienen una relación que anda arrojando numerosas víctimas. Y no porque el sistema sea inseguro de por sí, más bien por los miles de millones de personas que lo utilizan en sus dispositivos a diario. Con tanto parque de teléfonos, <b>resulta complicado poner un escudo a cada aplicación</b>, componente o driver; de ahí que errores como el localizado en las <b>apps de cámara de Samsung y Google</b> sean tan graves.</p>
+      <p>Para empezar, debemos decir que <b>el error de la cámara ha sido corregido</b>: tanto Samsung como Google arreglaron sus aplicaciones de captura. Ahora bien, supuso un grave problema de seguridad ya que cualquier aplicación sin buenas intenciones podía acceder a la cámara para tomar fotografías y vídeos <b>sin consentimiento del usuario</b> y sin que este percibiese actividad extraña en la cámara.</p>
+      <h3>Una app podía acceder a la cámara con sólo pedir acceso al almacenamiento</h3>
+      <figure>
+        <img src="https://i.blogs.es/65e1ed/malware-android/1366_2000.jpg"/>
+      </figure>
+      <p><a href="https://www.xatakandroid.com/sistema-operativo/asi-como-android-q-mejorara-nuestra-privacidad-nos-avisara-cuando-app-este-usando-permisos-sensibles">Mediante los permisos</a>, Android ofrece acceso a los distintos componentes de hardware y software <b>dependiendo de los riesgos de seguridad y privacidad</b>. La cámara supone un notable riesgo; de ahí que dicho acceso deba autorizarlo manualmente el usuario porque, de esta manera, se evita que cualquier aplicación pueda retratarle sin su consentimiento. El problema es que <b>las apps de cámara de Samsung y de Google no tenían bien cubiertas las peticiones ajenas</b>.</p>
+      <aside>Para acceder a la cámara no hacía falta el permiso explícito, sólo tener acceso al almacenamiento del móvil</aside>
+      <p><a href="https://www.checkmarx.com/blog/how-attackers-could-hijack-your-android-camera">Como demostraron en Checkmarx</a>, una firma especializada en seguridad de software, las citadas aplicaciones de cámara permitían el acceso al hardware <b>incluso a aplicaciones que ni siquiera tenían dicho permiso</b>. La clave se encontraba en un atajo a través del permiso de almacenamiento, que este sí que lo pedían. Y para ello <a href="https://developer.android.com/guide/components/intents-filters">utilizaban los intents de Android</a>, un objeto que se comparte entre aplicaciones y que permite intercambiar información que va desde una foto que está guardada en la galería a un tweet que se desea transmitir por WhatsApp.</p>
+      <related>
+        <a href="https://www.xatakandroid.com/seguridad/google-se-alia-eset-lookout-zimperium-para-evitar-que-malware-llegue-a-google-play"/>
+      </related>
+      <p>Las aplicaciones de cámara de Google y de Samsung permitían que cualquier petición de intents tuviese acceso no sólo a la galería multimedia del dispositivo, <b>también a la toma de fotografías y de vídeo</b>. Esto dejaba abierta la puerta al uso de la cámara sin el <a href="https://developer.android.com/reference/android/Manifest.permission?hl=Es#CAMERA">permiso explícito de este componente</a>; dando como resultado que cualquier app maliciosa pudiese hacer una brecha enorme en la seguridad y privacidad del usuario.</p>
+      <figure>
+        <iframe src="https://www.youtube.com/embed/XJAMJOVoVyw" width="650" height="366" data-service="Youtube" scrolling="no"/>
+      </figure>
+      <p>Como ha remarcado <b>Checkmark</b>, esta vulnerabilidad ya está corregida en las marcas citadas, Google y Samsung. En concreto, Google la parcheó en julio de 2019; y seguramente Samsung también la corrigiese por esas fechas. Aun así, <b>todavía hay fabricantes que permiten el acceso a la cámara a través de los intents de Android</b>, pero Checkmark no ha dado detalles de cuáles son. Dado que es un error que atañe a la personalización de cada dispositivo, es la marca la que debe solucionar la vulnerabilidad.</p>
+      <p>Vía | <a href="https://www.xda-developers.com/google-samsung-camera-app-exposed-video-intents-third-party-apps/">XDA Developers</a></p>
+    </article>
+  </body>
+</html>

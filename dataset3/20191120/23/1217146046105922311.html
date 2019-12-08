@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://www.bleepingcomputer.com/news/security/linux-webmin-servers-being-attacked-by-new-p2p-roboto-botnet/"/>
+    <meta property="og:site_name" content="BleepingComputer"/>
+    <meta property="article:published_time" content="2019-11-20T23:57:18+00:00"/>
+    <meta property="og:title" content="Linux Webmin Servers Being Attacked by New P2P Roboto Botnet"/>
+    <meta property="og:description" content="Linux servers running unpatched Webmin installations are under attack and slowly getting added to a new peer-to-peer (P2P) botnet dubbed Roboto by security researchers at 360 Netlab who tracked it for roughly three months. "/>
+  </head>
+  <body>
+    <article>
+      <h1>Linux Webmin Servers Being Attacked by New P2P Roboto Botnet</h1>
+      <address><time datetime="2019-11-20T23:57:18+00:00">20 Nov 2019, 23:57</time> by <a rel="author" href="https://www.bleepingcomputer.com/author/sergiu-gatlan/" target="_blank">Sergiu Gatlan</a></address>
+      <figure>
+        <img src="https://www.bleepstatic.com/content/hl-images/2019/09/09/Botnet.jpg"/>
+      </figure>
+      <p>Linux servers running unpatched Webmin installations are under attack and slowly getting added to a new peer-to-peer (P2P) botnet dubbed Roboto by security researchers at 360 Netlab who tracked it for roughly three months. </p>
+      <p>360 Netlab's researchers were able to capture the botnet's bot and downloader modules, with P2P control and vulnerability scanner modules also in use but not retrieved and analyzed so far.</p>
+      <p>After examining the malware components captured so far, 360 Netlab found that the Roboto bots support seven functions, including reverse shell, self uninstall, system command execution, harvesting and exfiltrating process and network information, run encrypted payloads from remote URLs, and launch DDoS attacks.</p>
+      <p>While the researchers found that the DDoS module supports four types of DDoS attack methods — ICMP Flood, HTTP Flood, TCP Flood, and UDP Flood — depending on the system permissions it can gain on the compromised Linux servers, not even a single Roboto DDoS attack was detected since they started tracking it.</p>
+      <figure>
+        <img src="https://www.bleepstatic.com/images/news/u/1109292/November%202019/Roboto%20botnet.png"/>
+        <figcaption>Roboto botnet (<i>Image: 360 Netlab</i>)</figcaption>
+      </figure>
+      <h3>Scanning and compromising Linux Webmin Servers</h3>
+      <p>To compromise new systems and add them to the botnet, Roboto exploits a <a href="https://www.virtualmin.com/node/66890">Webmin RCE vulnerability</a> tracked as <a href="https://nvd.nist.gov/vuln/detail/CVE-2019-15107">CVE-2019-15107</a> to drop its downloader module on Linux servers running vulnerable installations of Unix Webmin web-based system administration tool — the security flaw can be mitigated by updating to Webmin 1.930 or disabling the 'user password change' option.</p>
+      <p>To have an idea of how many devices are exposed to Roboto attacks at the moment, Webmin says on the <a href="https://github.com/webmin/webmin#about">project's GitHub page</a> that it has "over 1,000,000 installations worldwide," while Shodan <a href="https://www.shodan.io/search?query=http.title%3Awebmin">reports over 232,000</a> reachable servers and BinaryEdge <a href="https://app.binaryedge.io/services/query?query=Webmin&amp;page=1">a little over 470,000</a> — not all reachable Webmin servers run Linux or a vulnerable version.</p>
+      <p>The 360 Netlab report also notes that the server that attacked their Anglerfish honeypot to drop the Roboto downloader was also running a Webmin service on the TCP/10000 port, hinting at the fact that the operators are using previously infected systems to scan for and compromise other devices.</p>
+      <p>"At the same time, it also uses Curve25519, Ed25519, TEA, SHA256, HMAC-SHA256 and other algorithms to ensure the integrity and security of its components and P2P network, create the corresponding Linux self-starting script based on the target system, and disguise its own files and processes name to gain persistence control," <a href="https://blog.netlab.360.com/the-awaiting-roboto-botnet-en/">360 Netlab also found</a>.</p>
+      <h3>New P2P botnet growing in size</h3>
+      <p>While P2P botnets are definitely quite exotic, they have been making rounds since at least the beginning of 2006, with <a href="https://www.usenix.org/system/files/login/articles/526-stover.pdf">Nugache and Storm</a> (aka Peacomm), <a href="https://www.symantec.com/connect/sites/default/files/sality_peer_to_peer_viral_network.pdf#Sality%20Story%20of%20a%20Peer-to-Peer%20Viral%20Network.indd%3A.33422">Sality P2P</a>, <a href="https://ieeexplore.ieee.org/document/5494343/">Waledac</a>, <a href="https://www.virusbulletin.com/conference/vb2011/abstracts/same-botnet-same-guys-new-code">Kelihos</a> (aka Hlux), <a href="https://botnetlegalnotice.com/zeroaccess/files/Ex_14_Decl_Anselmi.pdf">ZeroAccess</a> (aka Sirefef), <a href="https://securelist.com/the-miner-botnet-bitcoin-mining-goes-peer-to-peer/30863/">Miner</a>, and <a href="https://www.cert.pl/wp-content/uploads/2015/12/2013-06-p2p-rap_en.pdf">Zeus P2P</a> slowly amassing bots to raise huge armies for their masters.</p>
+      <p>Later embodiments of P2P botnets such as <a href="https://www.bleepingcomputer.com/news/security/hide-and-seek-botnet-adds-infection-vector-for-android-devices/">Hide 'N Seek</a> (aka HNS) and <a href="https://www.bleepingcomputer.com/news/security/hajime-botnet-makes-a-comeback-with-massive-scan-for-mikrotik-routers/">Hajime</a> are still hunting for vulnerable devices to compromise and zombify one by one.</p>
+      <p>Hide 'N Seek for instance <a href="https://www.bleepingcomputer.com/news/security/new-hns-iot-botnet-has-already-amassed-14k-bots/">grew to over 90,000 devices in just a few days</a> in September 2018, while Hajime <a href="https://www.bleepingcomputer.com/news/security/security-experts-worry-as-hajime-botnet-grows-to-300-000-bots/">'collected' an impressive number of 300,000 infected devices</a> in under six months after first being spotted during the fall of 2016.</p>
+      <p>Although P2P botnets are known to be very resilient against sinkholing attacks used to disrupt them, there are examples such as the Kelihos and ZeroAccess botnets that are vulnerable.</p>
+      <p>Till more details about Roboto surface and it gets examined for potential weaknesses, there's very little info if sinkholing it is even an option. Until then, it has everything it needs to grow larger and larger if Linux admins leave their Webmin servers unpatched.</p>
+      <p>More info on the inner workings of the Roboto botnet and indicators of compromised (IOCs) including malware sample hashes, server addresses, and hardcoded peer IPs are available at the end of the 360 Netlab report.</p>
+    </article>
+  </body>
+</html>

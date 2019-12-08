@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://www.techradar.com/news/dont-download-this-windows-10-update-its-packed-with-ransomware"/>
+    <meta property="og:site_name" content="TechRadar"/>
+    <meta property="article:published_time" content="2019-11-19T20:39:15+00:00"/>
+    <meta property="og:title" content="Don't download this Windows 10 update – it's packed with ransomware"/>
+    <meta property="og:description" content="Researchers discover new campaign looking to spread Cyborg ransomware via fake Windows updates."/>
+  </head>
+  <body>
+    <article>
+      <h1>Don't download this Windows 10 update – it's packed with ransomware</h1>
+      <address><time datetime="2019-11-19T20:39:15+00:00">19 Nov 2019, 20:39</time> by <a rel="author" href="https://www.techradar.com/author/anthony-spadafora" target="_blank">Anthony Spadafora</a></address>
+      <h3>Don't download this Windows 10 update – it's packed with ransomware</h3>
+      <p>If you get an email claiming to be from Microsoft about a Windows update, don't open it</p>
+      <p>(Image credit: Shutterstock)</p>
+      <p>Security researchers from Trustwave's <a href="https://www.techradar.com/news/top-wi-fi-routers-have-major-security-flaws">SpiderLabs</a> have discovered a new malicious campaign which spoofs urgent update emails from Microsoft to infect user's systems with the Cyborg ransomware.</p>
+      <p>Targeted users first receive an email with either the subject line 'Install Latest Microsoft Windows Update now!' or 'Critical Microsoft Windows Update!' which is already suspicious as Microsoft pushes Windows updates through its operating system and never through emails.</p>
+      <p>The email itself contains just one line of text which reads: “Please install the latest critical update from Microsoft attached to this email”. While the fake update attachment has “.jpg” file extension, it is actually not a picture but instead is an executable file.</p>
+      <ul>
+        <li><a href="https://www.techradar.com/news/trump-and-clinton-themed-ransomware-lands">Donald Trump ransomware</a> spreads dangerous malware</li>
+        <li>Also check out the <a href="https://www.techradar.com/news/the-best-free-anti-ransomware-tools">best free anti-ransomware</a> software</li>
+        <li><a href="https://www.techradar.com/news/ransomware-mutations-double-in-2019">Ransomware mutations</a> double in 2019</li>
+      </ul>
+      <p>This executable file is a malicious .NET download that the attackers have designed to deliver malware to the infected system.</p>
+      <h4>Cyborg ransomware</h4>
+      <p>Upon clicking on the email's attachment, the executable hidden within it downloads a file called 'bitcoingenerator.exe' from a <a href="https://www.techradar.com/news/github-raises-bug-bounty-prize">GitHub</a> account with the name misterbtc2020. Just like with the attachment itself, this file is a .NET compiled malware known as the Cyborg ransomware.</p>
+      <p>Once activated, the ransomware encrypts all of the files on the infected user's system and appends their filenames with its own file extension, 777. A ransom note with the filename 'Cyborg_DECRYPT.txt' is then left on the desktop of the compromised machine. Finally the ransomware leaves a copy of itself called 'bot.exe' hidden at the root of the infected drive.</p>
+      <p>In an effort to better understand the variants of the Cyborg ransomware, Trustwave researchers searched for the original filename of the ransomware they obtained and searched for it in <a href="https://www.techradar.com/news/chronicle-launches-paid-version-of-virustotal-for-the-enterprise">VirusTotal</a>. There they found three other samples of this ransomware and discovered that a builder for it exists online.</p>
+      <p>The researchers also found a GitHub account with the name Cyborg-Ransomware that contained a repository with the ransomware builder binaries as well as a second repository with a link to the Russian version of the same builder hosted on another site.</p>
+      <p>Trustwave's Diana Lopera explained why the Cyborg ransomware poses a serious threat to individuals and businesses in a blog post, saying:</p>
+      <p>“The Cyborg Ransomware can be created and spread by anyone who gets hold of the builder. It can be spammed using other themes and be attached in different forms to evade email gateways. Attackers can craft this ransomware to use a known ransomware file extension to mislead the infected user from the identity of this ransomware.”</p>
+      <ul>
+        <li>Protect your devices from the latest cyber threats with the <a href="https://www.techradar.com/best/best-antivirus">best antivirus</a> software</li>
+      </ul>
+      <p>
+        <a href="https://www.techradar.com/news/computing">See more Computing news</a>
+      </p>
+    </article>
+  </body>
+</html>

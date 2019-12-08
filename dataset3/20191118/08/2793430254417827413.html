@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://habr.com/en/company/pvs-studio/blog/476268/"/>
+    <meta property="og:site_name" content="Habr"/>
+    <meta property="article:published_time" content="2019-11-18T08:20:20+00:00"/>
+    <meta property="og:title" content="Solutions to Bug-Finding Challenges Offered by the PVS-Studio Team at Conferences in 2018-2019"/>
+    <meta property="og:description" content="Hi! Though the 2019 conference season is not over yet, we'd like to talk about the bug-finding challenges we offered to visitors at our booth during the past..."/>
+  </head>
+  <body>
+    <article>
+      <h1>Solutions to Bug-Finding Challenges Offered by the PVS-Studio Team at Conferences in 2018-2019</h1>
+      <address><time datetime="2019-11-18T08:20:20+00:00">18 Nov 2019, 08:20</time> by <a rel="author" href="https://habr.com/en/users/n0mo/" target="_blank">n0mo</a></address>
+      <figure>
+        <img src="https://habrastorage.org/getpro/habr/post_images/701/9e4/589/7019e458975e9931a108882b6fd126a8.png"/>
+      </figure>
+      <p>Hi! Though the 2019 conference season is not over yet, we'd like to talk about the bug-finding challenges we offered to visitors at our booth during the past conferences. Starting with the fall of 2019, we've been bringing a new set of challenges, so we can now reveal the solutions to the previous tasks of 2018 and the first half of 2019 – after all, many of them came from previously posted articles, and we had a link or QR code with information about the respective articles printed on our challenge leaflets.<br/><br/>If you attended events where we participated with a booth, you probably saw or even tried to solve some of our challenges. These are snippets of code from real open-source projects written in C, C++, C#, or Java. Each snippet contains a bug, and the guests are challenged to try to find it. A successful solution (or simply participation in the discussion of the bug) is rewarded with a prize: a spiral-bound desktop status, a keychain, and the like:</p>
+      <figure>
+        <img src="https://habrastorage.org/getpro/habr/post_images/2d9/aff/240/2d9aff24000a4a61dd4eac65fef38083.jpg"/>
+      </figure>
+      <p>Want some too? Then welcome to drop by our booth at the upcoming events.<br/><br/>By the way, in the articles "<a href="https://www.viva64.com/en/b/0608/">Conference Time! Summing up 2018</a>" and "<a href="https://www.viva64.com/en/b/0648/">Conferences. Sub-totals for the first half of 2019</a>", we share our experience of participating in the events held earlier this year and in 2018.<br/><br/>Okay, let's play our «Find the bug» game. First we'll take a look at the earlier challenges of 2018, grouped by language.</p>
+      <h3>2018</h3>
+      <h4>C++</h4>
+      <p>
+        <b>Chromium bug</b>
+      </p>
+      <pre>static const int kDaysInMonth[13] = {<br/>  0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31<br/>};<br/>bool ValidateDateTime(const DateTime&amp; time) {<br/>  if (time.year &lt; 1 || time.year &gt; 9999 ||<br/>      time.month &lt; 1 || time.month &gt; 12 ||<br/>      time.day &lt; 1 || time.day &gt; 31 ||<br/>      time.hour &lt; 0 || time.hour &gt; 23 ||<br/>      time.minute &lt; 0 || time.minute &gt; 59 ||<br/>      time.second &lt; 0 || time.second &gt; 59) {<br/>    return false;<br/>  }<br/>  if (time.month == 2 &amp;&amp; IsLeapYear(time.year)) {<br/>    return time.month &lt;= kDaysInMonth[time.month] + 1;<br/>  } else {<br/>    return time.month &lt;= kDaysInMonth[time.month];<br/>  }<br/>}</pre>
+      <details>
+        <summary>Solution</summary>
+        <p>This bug found in Chromium was probably the most «long-running» challenge; we were offering it all the way through 2018 and included it in several presentations as well.</p>
+        <pre>if (time.month == 2 &amp;&amp; IsLeapYear(time.year)) {<br/>  return time.month &lt;= kDaysInMonth[time.month] + 1;  // &lt;= day<br/>} else {<br/>  return time.month &lt;= kDaysInMonth[time.month];      // &lt;= day<br/>}</pre>
+        <p>The body of the last <i>If-else</i> block contains typos in the return statements: <i>time.month </i>was accidentally written for a second time instead of <i>time.day</i>. This mistake makes the function return <i>true</i> all the time. The bug is discussed in detail in the article "<a href="https://www.viva64.com/en/b/0550/">February 31</a>" and is a cool example of a bug that isn't easily spotted by code review. This case is also a good demonstration of how we use dataflow analysis.</p>
+      </details>
+      <p>
+        <b>Unreal Engine bug</b>
+      </p>
+      <pre>bool VertInfluencedByActiveBone(<br/>  FParticleEmitterInstance* Owner,<br/>  USkeletalMeshComponent* InSkelMeshComponent,<br/>  int32 InVertexIndex,<br/>  int32* OutBoneIndex = NULL);<br/><br/>void UParticleModuleLocationSkelVertSurface::Spawn(....)<br/>{<br/>  ....<br/>  int32 BoneIndex1, BoneIndex2, BoneIndex3;<br/>  BoneIndex1 = BoneIndex2 = BoneIndex3 = INDEX_NONE;<br/><br/>  if(!VertInfluencedByActiveBone(<br/>        Owner, SourceComponent, VertIndex[0], &amp;BoneIndex1) &amp;&amp;<br/>     !VertInfluencedByActiveBone(<br/>        Owner, SourceComponent, VertIndex[1], &amp;BoneIndex2) &amp;&amp; <br/>     !VertInfluencedByActiveBone(<br/>        Owner, SourceComponent, VertIndex[2]) &amp;BoneIndex3)<br/>  {<br/>  ....<br/>}</pre>
+      <details>
+        <summary>Solution</summary>
+        <p>The first thing to notice here is that the last argument of the <i>VertInfluencedByActiveBone()</i> function has a default value and is not required to be specified. Now look at the <i>if</i> block in a simplified form:</p>
+        <pre>if (!foo(....) &amp;&amp; !foo(....) &amp;&amp; !foo(....) &amp; arg)</pre>
+        <p>The bug is now clearly visible. Because of the typo, the third call of the <i>VertInfluencedByActiveBone()</i> function is performed with three arguments instead of four, with the return value then participating in a <i>&amp; </i>operation (bitwise AND: the left operand is the value of type <i>bool </i>returned by <i>VertInfluencedByActiveBone()</i>, and the right operand is the integer variable <i>BoneIndex3</i>). The code is still compilable. This is the fixed version (a comma added, the closing parenthesis moved to the end of the expression):</p>
+        <pre>if(!VertInfluencedByActiveBone(<br/>      Owner, SourceComponent, VertIndex[0], &amp;BoneIndex1) &amp;&amp;<br/>   !VertInfluencedByActiveBone(<br/>      Owner, SourceComponent, VertIndex[1], &amp;BoneIndex2) &amp;&amp; <br/>   !VertInfluencedByActiveBone(<br/>      Owner, SourceComponent, VertIndex[2], &amp;BoneIndex3))</pre>
+        <p>This error was originally mentioned in the article "<a href="https://www.viva64.com/en/b/0249/">A Long-Awaited Check of Unreal Engine 4</a>", where it was titled «the nicest error», which I totally agree with.</p>
+      </details>
+      <p>
+        <b>Android bugs</b>
+      </p>
+      <pre>void TagMonitor::parseTagsToMonitor(String8 tagNames) {<br/>  std::lock_guard&lt;std::mutex&gt; lock(mMonitorMutex);<br/><br/>  // Expand shorthands<br/>  if (ssize_t idx = tagNames.find("3a") != -1) {<br/>    ssize_t end = tagNames.find(",", idx);<br/>    char* start = tagNames.lockBuffer(tagNames.size());<br/>    start[idx] = '\0';<br/>    ....<br/>  }<br/>  ....<br/>}</pre>
+      <details>
+        <summary>Solution</summary>
+        <p>The programmer had wrong assumptions about the precedence of operations in the condition of the <i>if </i>block. This code doesn't work as expected:</p>
+        <pre>if (ssize_t idx = (tagNames.find("3a") != -1))</pre>
+        <p>The <i>idx </i>variable will be assigned the value 0 or 1, and whether the condition is true or false will depend on this value, which is a mistake. This is the fixed version:</p>
+        <pre>ssize_t idx = tagNames.find("3a");<br/>if (idx != -1)</pre>
+        <p>This bug was mentioned in the article "<a href="https://www.viva64.com/en/b/0579/">We Checked the Android Source Code by PVS-Studio, or Nothing is Perfect</a>".</p>
+      </details>
+      <p>Here's another non-trivial challenge with an Android bug:</p>
+      <pre>typedef int32_t  GGLfixed;<br/>GGLfixed gglFastDivx(GGLfixed n, GGLfixed d)<br/>{<br/>  if ((d&gt;&gt;24) &amp;&amp; ((d&gt;&gt;24)+1)) {<br/>    n &gt;&gt;= 8;<br/>    d &gt;&gt;= 8;<br/>  }<br/>  return gglMulx(n, gglRecip(d));<br/>}</pre>
+      <details>
+        <summary>Solution</summary>
+        <p>The problem is in the <i>(d &gt;&gt; 24) + 1</i> expression.<br/><br/>The programmer wanted to check that the 8 most significant bits of the <i>d </i>variable are set to 1 but not all of them at a time. In other words, they wanted to check that the most significant byte stores any value except 0x00 and 0xFF. First the programmer checks the most significant bits for null using the (d&gt;&gt;24) expression. Then they shift the eight most significant bits to the least significant byte, expecting the most significant sign bit to get duplicated in all the other bits. That is, if the d variable has the value 0b11111111'00000000'00000000'00000000, it will turn into 0b11111111'11111111'11111111'11111111 after the shift. By adding 1 to the <i>int </i>value 0xFFFFFFFF, the programmer is expecting to get 0 (-1+1=0). Thus, the <i>((d&gt;&gt;24)+1)</i> expression is used to check that not all of the eight most significant bits are set to 1.<br/><br/>However, the most significant sign bit does not necessarily get «spread» when shifted. This is what the standard says: «The value of E1 &gt;&gt; E2 is E1 right-shifted E2 bit positions. If E1 has an unsigned type or if E1 has a signed type and a non-negative value, the value of the result is the integral part of the quotient of E1/2^E2. <i>If E1 has a signed type and a negative value, the resulting value is implementation-defined</i>».<br/><br/>So, this is an example of implementation-defined behavior. How exactly this code will work depends on the CPU architecture and compiler implementation. The most significant bits may well end up as zeroes after the shift, and the <i>((d&gt;&gt;24)+1)</i> expression would then always return a value other than 0, i.e. an always true value.<br/><br/>That, indeed, is a non-trivial challenge. Like the previous bug, this one was originally discussed in the article "<a href="https://www.viva64.com/en/b/0579/">We Checked the Android Source Code by PVS-Studio, or Nothing is Perfect</a>".</p>
+      </details>
+      <h3>2019</h3>
+      <h4>C++</h4>
+      <p>
+        <b>«It's all GCC's fault»</b>
+      </p>
+      <pre>int foo(const unsigned char *s)<br/>{<br/>  int r = 0;<br/>  while(*s) {<br/>    r += ((r * 20891 + *s *200) | *s ^ 4 | *s ^ 3) ^ (r &gt;&gt; 1);<br/>    s++;<br/>  }<br/>  return r &amp; 0x7fffffff;<br/>}</pre>
+      <p>The programmer blames the GCC 8 compiler for the bug. Is it really GCC's fault?</p>
+      <details>
+        <summary>Solution</summary>
+        <p>The function returns negative values since the compiler doesn't generate code for the bitwise AND (&amp;). The bug has to do with undefined behavior. The compiler notices that the <i>r </i>variable is used to calculate and store a sum, with only positive values involved. The <i>r </i>variable shouldn't overflow because that would be undefined behavior, which the compiler is not bound to reckon with at all. So it concludes that since <i>r </i>can't have a negative value at the end of the loop, the operation<i> r &amp; 0x7fffffff</i>, which clears the sign bit, is unnecessary, so it simply tells the function to return the value of <i>r</i>.<br/><br/>This error was described in the article "<a href="https://www.viva64.com/en/b/0585/">PVS-Studio 6.26 Released</a>".</p>
+      </details>
+      <p>
+        <b>QT bug</b>
+      </p>
+      <pre>static inline const QMetaObjectPrivate *priv(const uint* data)<br/>{ return reinterpret_cast&lt;const QMetaObjectPrivate*&gt;(data); }<br/><br/>bool QMetaEnum::isFlag() const<br/>{<br/>  const int offset = priv(mobj-&gt;d.data)-&gt;revision &gt;= 8 ? 2 : 1;<br/>  return mobj &amp;&amp; mobj-&gt;d.data[handle + offset] &amp; EnumIsFlag;<br/>}</pre>
+      <details>
+        <summary>Solution</summary>
+        <p>The <i>mobj </i>pointer is handled in an unsafe way: first dereferenced, then checked. A classic.<br/><br/>The bug was mentioned in the article "<a href="https://www.viva64.com/en/b/0584/">A Third Check of Qt 5 with PVS-Studio</a>".</p>
+      </details>
+      <h4>C#</h4>
+      <p>
+        <b>Infer.NET bug</b>
+      </p>
+      <pre>public static void <br/>  WriteAttribute(TextWriter writer,<br/>                 string name,<br/>                 object defaultValue, <br/>                 object value, <br/>                 Func&lt;object, string&gt; converter = null)<br/>{<br/>  if (   defaultValue == null &amp;&amp; value == null <br/>      || value.Equals(defaultValue))<br/>  {<br/>    return;<br/>  }<br/>  string stringValue = converter == null ? value.ToString() : <br/>                                           converter(value);<br/>  writer.Write($"{name}=\"{stringValue}\" ");<br/>}</pre>
+      <details>
+        <summary>Solution</summary>
+        <p>Null dereference of the <i>value </i>variable may occur when evaluating the <i>value.Equals(defaultValue)</i> expression. This will happen when the variables' values are such that <i>defaultValue != null</i> and <i>value == null</i>.<br/><br/>This bug is from the article "<a href="https://www.viva64.com/en/b/0590/">What Errors Lurk in Infer.NET Code?</a>"</p>
+      </details>
+      <p>
+        <b>FastReport bug</b>
+      </p>
+      <pre>public class FastString<br/>{<br/>  private const int initCapacity = 32;<br/>  private void Init(int iniCapacity)<br/>  { sb = new StringBuilder(iniCapacity); .... }<br/>  public FastString() { Init(initCapacity); }<br/>  public FastString(int iniCapacity) { Init(initCapacity); }<br/>  public StringBuilder StringBuilder =&gt; sb;<br/>}<br/>....<br/>Console.WriteLine(new FastString(256).StringBuilder.Capacity);</pre>
+      <p>What will the program output in the console? What's wrong with the <i>FastString</i> class?</p>
+      <details>
+        <summary>Solution</summary>
+        <p>The program will output the value 32. The reason is the misspelled name of the variable passed to the <i>Init </i>method in the constructor:</p>
+        <pre>public FastString(int iniCapacity){ Init(initCapacity); }</pre>
+        <p>The constructor parameter <i>iniCapacity </i>won't be used; what gets passed instead is the constant <i>initCapacity</i>.<br/><br/>The bug was discussed in the article "<a href="https://www.viva64.com/en/b/0595/">The Fastest Reports in the Wild West — and a Handful of Bugs...</a>"</p>
+      </details>
+      <p>
+        <b>Roslyn bug</b>
+      </p>
+      <pre>private SyntaxNode GetNode(SyntaxNode root)<br/>{<br/>  var current = root;<br/>  ....<br/>  while (current.FullSpan.Contains(....))<br/>  {<br/>    ....<br/>    var nodeOrToken = current.ChildThatContainsPosition(....);<br/>    ....<br/>    current = nodeOrToken.AsNode();<br/>  }<br/>  ....<br/>}<br/><br/>public SyntaxNode AsNode()<br/>{<br/>  if (_token != null)<br/>  {<br/>    return null;<br/>  }<br/><br/>  return _nodeOrParent;<br/>}</pre>
+      <details>
+        <summary>Solution</summary>
+        <p>Potential null dereference of <i>current </i>in the <i>current.FullSpan.Contains(....)</i> expression. The <i>current </i>variable can be assigned a null value as a result of invoking the <i>nodeOrToken.AsNode()</i> method.<br/><br/>This bug is from the article "<a href="https://www.viva64.com/en/b/0622/">Checking the Roslyn Source Code</a>".</p>
+      </details>
+      <p>
+        <b>Unity bug</b>
+      </p>
+      <pre>....<br/>staticFields = packedSnapshot.typeDescriptions<br/>               .Where(t =&gt; <br/>                      t.staticFieldBytes != null &amp; <br/>                      t.staticFieldBytes.Length &gt; 0)<br/>               .Select(t =&gt; UnpackStaticFields(t))<br/>               .ToArray()<br/>....</pre>
+      <details>
+        <summary>Solution</summary>
+        <p>A typo: the <i>&amp; </i>operator is used instead of <i>&amp;&amp;</i>. This results in executing the <i>t.staticFieldBytes.Length &gt; 0</i> check all the time, even if the <i>t.staticFieldBytes </i>variable is <i>null</i>, which, in its turn, leads to a null dereference.<br/><br/>This bug was originally shown in the article "<a href="https://www.viva64.com/en/b/0423/">Discussing Errors in Unity3D's Open-Source Components</a>".</p>
+      </details>
+      <h4>Java</h4>
+      <p>
+        <b>IntelliJ IDEA bug</b>
+      </p>
+      <pre>private static boolean checkSentenceCapitalization(@NotNull String value) {<br/>  List&lt;String&gt; words = StringUtil.split(value, " ");<br/>  ....<br/>  int capitalized = 1;<br/>  ....<br/>  return capitalized / words.size() &lt; 0.2; // allow reasonable amount of<br/>                                           // capitalized words<br/>}</pre>
+      <p>Why does the program incorrectly calculate the number of capitalized words?</p>
+      <details>
+        <summary>Solution</summary>
+        <p>The function is expected to return <i>true </i>if the number of capitalized words is less than 20%. But the check doesn't work because of the integer division, which evaluates only to 0 or 1. The function will return <i>false </i>only if all the words are capitalized. Otherwise, the division will result in 0 and the function will return <i>true</i>.<br/><br/>This bug is from the article "<a href="https://www.viva64.com/en/b/0603/">PVS-Studio for Java</a>".</p>
+      </details>
+      <p>
+        <b>SpotBugs bug</b>
+      </p>
+      <pre>public static String getXMLType(@WillNotClose InputStream in) throws IOException<br/>{<br/>  ....<br/>  String s;<br/>  int count = 0;<br/>  while (count &lt; 4) {<br/>    s = r.readLine();<br/>    if (s == null) {<br/>      break;<br/>    }<br/>    Matcher m = tag.matcher(s);<br/>    if (m.find()) {<br/>      return m.group(1);<br/>    }<br/>  }<br/>  throw new IOException("Didn't find xml tag");<br/>  ....<br/>}</pre>
+      <p>What's wrong with the search of the xml tag?</p>
+      <details>
+        <summary>Solution</summary>
+        <p>The <i>count &lt; 4 </i>condition will be always true since the variable <i>count </i>is not incremented inside the loop. The xml tag was meant to be searched for in the first four lines of the file, but because of the lacking increment, the program will be reading the entire file.<br/><br/>Like the previous bug, this one was described in the article "<a href="https://www.viva64.com/en/b/0603/">PVS-Studio for Java</a>".</p>
+      </details>
+      <p>That's all for today. Come see us at the upcoming events – look for the unicorn. We'll be offering new interesting challenges and, of course, giving prizes. See you!</p>
+      <related>
+        <h4>Similar posts</h4>
+        <a href="https://habr.com/en/post/467561/"/>
+        <a href="https://habr.com/en/post/467357/"/>
+        <a href="https://habr.com/en/post/466993/"/>
+      </related>
+    </article>
+  </body>
+</html>

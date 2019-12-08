@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://www.heise.de/security/meldung/Ransomware-NextCry-greift-Nextcloud-Server-an-4588421.html"/>
+    <meta property="og:site_name" content="Security"/>
+    <meta property="article:published_time" content="2019-11-18T17:14:00+00:00"/>
+    <meta property="og:title" content="Ransomware &quot;NextCry&quot; greift Nextcloud-Server an"/>
+    <meta property="og:description" content="Eine Linux-Malware attackiert Nextcloud-Server, um Dateien zu verschlüsseln und Lösegeld zu fordern. Einfallstor ist möglicherweise eine NGINX/PHP-FPM-Lücke."/>
+  </head>
+  <body>
+    <article>
+      <h1>Ransomware "NextCry" greift Nextcloud-Server an</h1>
+      <h2>Eine Linux-Malware attackiert Nextcloud-Server, um Dateien zu verschlüsseln und Lösegeld zu fordern. Einfallstor ist möglicherweise eine NGINX/PHP-FPM-Lücke.</h2>
+      <address><time datetime="2019-11-18T17:14:00+00:00">18 Nov 2019, 17:14</time> by <a rel="author">Olivia von Westernhagen</a></address>
+      <p>Derzeit soll es ein Linux-spezifischer Verschlüsselungstrojaner auf Nextcloud-Server abgesehen haben. , "NextCry" verschlüsselt Dateien im Cloudspeicher mit der Blockchiffre AES (Schlüssellänge 265 Bit) und erzeugt anschließend eine Lösegeldforderung, berichtet <a href="https://www.bleepingcomputer.com/news/security/new-nextcry-ransomware-encrypts-data-on-nextcloud-linux-servers/">die IT-News-Webseite Bleeping Computer</a>. Die Forderung liegt bei 0,025 Bitcoin, was umgerechnet derzeit knapp 191 Euro entspricht. Im Vorfeld der Verschlüsselung soll NextCry zudem mehrere Ordner löschen, die dem Opfer die Wiederherstellung der Daten ohne Lösegeldzahlung ermöglichen könnten.</p>
+      <figure>
+        <img src="https://www.heise.de/imgs/18/2/7/9/0/1/3/3/note-d56755dc03776b80.png"/>
+        <figcaption>
+          <cite>(Bild: id-ransomware.blogspot.com)</cite>
+        </figcaption>
+      </figure>
+      <h3>Schlechte Erkennung und wenig Hoffnung auf Entschlüsselung</h3>
+      <p>Wie verbreitet der Schädling tatsächlich ist, ist nicht bekannt; ebenso wenig gibt es Informationen darüber, ob auch Nutzer in Deutschland betroffen sind. Threads zu NextCry finden sich sowohl <a href="https://www.bleepingcomputer.com/forums/t/707580/help-needed-decrypting-nextcry/">in Bleeping Computers Security-Forum</a> als auch in <a href="https://help.nextcloud.com/t/nextcry-encrypted-all-files-through-my-instance/64154">Nextclouds Supportbereich</a>.</p>
+      <p>Eine <a href="https://www.virustotal.com/gui/file/027d5f87ab71044a4bbac469b6a3bf5e02571c4661939699d9050a4300d10230/detection">Analyse eines NextCry-Samples auf der Online-Analyseplattform VirusTotal</a> (MD5 <i>8c6ed96e6df3d8a9cda39aae7e87330c</i> / SHA-1 <i>fea280e7f3c06fdeb322b6548bb16a45c4298261</i>) zeigt, dass derzeit nur 18 von 58 Antiviren-Engines den Schädling (oder zumindest dieses spezifische Sample) erkennen.</p>
+      <p>Mehrere Nutzer aus dem Bleeping-Computer-Forum haben den NextCry-Code – ein zu einer ELF-Datei kompiliertes Python-Skript – näher unter die Lupe genommen. Ihr Fazit: <a href="https://www.bleepingcomputer.com/forums/t/707580/help-needed-decrypting-nextcry/#entry4903268">Der Verschlüsselungsmechanismus der Malware sei intakt</a> und "sicher" und eine Entschlüsselung ohne Lösegeldzahlung somit nicht möglich.</p>
+      <h3>CVE-2019-11043 als Angriffsvektor?</h3>
+      <p>Bleeping Computer weist darauf hin, dass der erste Nutzer, der am 9. November im Forum der News-Website von der Infektion berichtete, angab, Nextcloud mit NGINX als Reverse-Proxy zu nutzen.</p>
+      <p>In diesem Zusammenhang ist ein bereits <a href="https://help.nextcloud.com/t/urgent-security-issue-in-nginx-php-fpm/62665">Ende Oktober von Nextcloud veröffentlichter Sicherheitshinweis interessant</a>. Er betrifft eine mittlerweile gefixte Sicherheitslücke im (für NGINX gebräuchlichen) FastCGI-Prozessmanager PHP-FPM (CVE-2019-11043), <a href="https://www.heise.de/meldung/Updates-fuer-PHP7-NGINX-Server-mit-PHP-FPM-waren-aus-der-Ferne-angreifbar-4570800.html">die entfernten Angreifern unter eng gesteckten Voraussetzungen die Codeausführung auf verwundbaren Webservern ermöglichte</a>. Exploit-Code ist öffentlich verfügbar.</p>
+      <p>Nextcloud-Admins können ihre Systeme gegen CVE-2019-11043 absichern, indem sie (wie im Hinweis beschrieben) die PHP-Packages und die NGINX-Konfigurationsdatei updaten. Ob das Update auch vor NextCry schützt oder ob dem Schädling nicht doch eine (möglicherweise noch ungefixte) Schwachstelle in NextCloud als Angriffsvektor dient, ist aber unklar.</p>
+      <p>Der wirkungsvollste Schutz der eigenen Daten dürfte – wie bei jeder anderen Ransomware auch – in einem regelmäßigen separaten Backup bestehen.</p>
+      <p>
+        <b>[Update 19.11.19, 14:45:]</b>
+      </p>
+      <h3>Offizielles Statement von Nextcloud</h3>
+      <p>
+        <a href="https://nextcloud.com/blog/nextcry-or-how-a-hacker-tried-to-exploit-a-nginx-issue-with-2-nextcloud-servers-out-of-300-000-hit-and-no-payout/">Mittlerweile hat Nextcloud ein offizielles Statement veröffentlicht.</a>
+      </p>
+      <p>Darin zeigen sich die Entwickler davon überzeugt<b>, </b>dass die PHP-Lücke CVE-2019-11043 NextCry als Einfallstor diente. Sie weisen auch darauf hin, dass nur wenige Nextcloud-Nutzer NGINX nutzen und die meisten die verwundbaren Packages wohl schon aktualisiert hätten. Zudem gebe es lediglich zwei ausführliche Angriffsschilderungen.</p>
+      <p>Obwohl die Angriffe nicht über eine Lücke in Nextcloud selbst stattgefunden habe, hat das Team nach eigenen Angaben Admins über verschiedene Kanäle auf die Gefahr hingewiesen. Weitere Informationen sind dem Statement zu entnehmen<b>.</b></p>
+      <p>
+        <b>[/Update]</b>
+      </p>
+      <p>
+        <i>Mehr zum Thema:</i>
+      </p>
+      <ul>
+        <li>
+          <a href="https://www.heise.de/ct/artikel/So-gelingt-das-Backup-ganz-einfach-4247928.html">So gelingt das Backup ganz einfach</a>
+        </li>
+      </ul>
+      <p>(<a href="mailto:ovw@heise.de">ovw</a>)</p>
+    </article>
+  </body>
+</html>

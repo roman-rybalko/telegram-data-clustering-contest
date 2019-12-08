@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://www.muycomputer.com/2019/11/18/las-radeon-rx-con-trazado-de-rayos-seran-presentadas-en-el-ces/"/>
+    <meta property="og:site_name" content="MC"/>
+    <meta property="article:published_time" content="2019-11-18T00:00:00+00:00"/>
+    <meta property="og:title" content="Las Radeon RX con trazado de rayos serán presentadas en el CES"/>
+    <meta property="og:description" content="AMD nos dio toda una sorpresa con las Radeon RX serie 5000, una línea de tarjetas gráficas que marcó el salto a la arquitectura RDNA y que representa, como sabemos, el principio del final de la arquitectura GCN. Debo decir que ya era hora, dicha arquitectura llevaba con nosotros desde 2012 y aunque había recibido […]"/>
+  </head>
+  <body>
+    <article>
+      <h1>Las Radeon RX con trazado de rayos serán presentadas en el CES</h1>
+      <address><time datetime="2019-11-18T00:00:00+00:00">18 Nov 2019</time> by <a rel="author">Isidro Ros</a></address>
+      <p>AMD nos dio toda una sorpresa con las Radeon RX serie 5000, una línea de tarjetas gráficas que marcó el salto a la arquitectura RDNA y que representa, como sabemos, el principio del final de la arquitectura GCN. Debo decir que ya era hora, dicha arquitectura <b>llevaba con nosotros desde 2012</b> y aunque había recibido algunos lavados de cara sus limitaciones eran claras, tanto a nivel de motores de sombreado como de geometría.</p>
+      <p>Sé que no todo el mundo se conoce las arquitecturas GPU de AMD de cabeza, así que vamos a explicar mejor este tema con datos concretos pero sencillos. La arquitectura GCN tocó techo en su configuración de 64 unidades de computación. Cada una de ellas suma 64 shaders, lo que nos deja <b>un máximo de 4.096 shaders</b>, 256 unidades de texturizado y 64 unidades de rasterizado. Gracias al uso de memoria HBM2 y a los aumentos de frecuencia de trabajo AMD pudo apurar al máximo dicha arquitectura y la afinó para una despedida a lo grande con la <a href="https://www.muycomputer.com/2019/06/23/radeon-vii-analisis-gcn-rtx-2080/">Radeon VII</a>.</p>
+      <figure>
+        <img src="https://www.muycomputer.com/wp-content/uploads/2019/11/Radeon-RX-trazado-de-rayos.jpg"/>
+      </figure>
+      <p>Pues bien, la arquitectura RDNA mantiene una base en común con la arquitectura GCN, ya que mantiene el conteo de 64 shaders por cada unidad de computación, pero <b>dobla los motores de geometría</b>. Las Radeon RX 5700 y RX 5700 XT cuentan con 64 unidades de rasterizado a pesar de ser modelos de gama media-alta y gama alta, respectivamente, mientras que las Radeon RX 570 y RX 580 viene con 32 unidades de rasterizado.</p>
+      <p>La diferencia es clara, y se encuentra presente también en la Radeon RX 5500, una tarjeta gráfica de gama media que vendría a suceder a la Radeon RX 560 y que cuenta con el doble de unidades de rasterizado comparada con aquella (16 frente a 32). Además de esas mejoras a nivel de arquitectura AMD ha conseguido <b>un aumento del IPC</b> <b>que ronda el 25%</b>, lo que ha permitido que la Radeon RX 5700 XT quede muy cerca de la Radeon VII a pesar de contar con menos shaders (2.560 frente a 3.840).</p>
+      <p>Los números no mienten, pero lo mejor está por llegar. <a href="https://wccftech.com/amd-2nd-gen-rdna-navi-gpu-radeon-rx-graphics-card-ces-2020-rumor/">Varias fuentes sugieren</a> que AMD está preparando la presentación de la <b>arquitectura RDNA 2 para principios de 2020</b>, y aseguran que la compañía que dirige Lisa Su quiere aprovechar el marco del CES para realizar un primer anuncio. No tenemos una fecha definitiva de lanzamiento, pero si esta previsión se cumple lo normal sería un retraso de unos pocos meses hasta que se produzca la llegada de las primeras tarjetas gráficas basadas en dicha arquitectura.</p>
+      <h3>Radeon RX basadas en RDNA 2: ¿por qué son tan importantes?</h3>
+      <p>En primer lugar porque hablamos de la generación gráfica que <b>dará vida a PS5 y Xbox Scarlett</b>, las consolas de próxima generación de Sony y Microsoft. En segundo lugar porque RDNA 2 marcará el debut de la tecnología de <b>trazado de rayos</b> acelerado por hardware, y por último porque supondrá, además, la llegada de una nueva generación de tarjetas gráficas tope de gama que estarán preparadas para c<b>ompetir con las RTX 2080 y RTX 2080 Ti</b> de NVIDIA.</p>
+      <p>La GPU más potente que llegará bajo esta nueva arquitectura será <a href="https://www.muycomputer.com/2019/08/10/amd-navi-2-nvidia-killer-trazado-de-rayos/"><b>Navi 23</b></a>, un núcleo gráfico que según las últimas estimaciones podría contar con <b>5.120 shaders</b>, 320 unidades de texturizado, 128 ROPs y hasta 16 GB de memoria gráfica GDDR6 con un bus de 384 bits, aunque se baraja también la posibilidad de que AMD utilice memoria HBM2. Es más cara y más difícil de integrar, pero a cambio ofrece un ancho de banda enorme, lo que podría traducirse en un mayor rendimiento.</p>
+      <figure>
+        <img src="https://www.muycomputer.com/wp-content/uploads/2019/11/Radeon-RX-arquitectura.jpg"/>
+      </figure>
+      <p>Sabemos que AMD va a utilizar el <b><a href="https://www.muycomputer.com/2019/09/11/amd-ya-trabaja-en-gpus-radeon-rdna-2-fabricadas-en-7-nm/">proceso de 7 nm+</a> de TSMC</b> para dar forma a sus nuevas tarjetas gráficas, pero no tenemos claro cómo piensan acelerar el trazado de rayos a nivel de hardware. Tenemos varias opciones, de hecho la compañía que dirige Lisa Su patentó diferentes soluciones que contemplaban desde un enfoque híbrido a apoyado en la nube hasta otras ideas que recurrían a una capa de software que utilizaría de una manera conjunta, y especial, los shaders y las unidades de texturizado, haciendo que ambos operen en tándem para realizar todo el trabajo necesario para crear texturas con trazado de rayos «pre-aplicado».</p>
+      <p>No hay duda de que la compañía de Sunnyvale ha hecho un buen trabajo con las Radeon RX serie 5000, sobre todo en relación precio-prestaciones,  pero AMD tiene una cuenta pendiente con el público entusiasta, y desde luego va siendo hora de saldarla. Si RDNA 2 cumple con las expectativas que ha generado<b> las cosas se van a poner muy serias</b>, tanto que NVIDIA tendrá que responder con nuevos productos o con una bajada de precios.</p>
+      <p>Antes de terminar os recuerdo que la generación actual todavía no está completa, falta una de las tarjetas gráficas más esperadas por el sector al que se dirige:<b> la <a href="https://www.muycomputer.com/2019/07/13/amd-radeon-rx-5600-navi-gama-media/">Radeon RX 5600</a></b>, que en teoría posicionará entre la GTX 1660 Ti y la RTX 2060, y cuyo precio será de unos <b>249 euros. </b></p>
+    </article>
+  </body>
+</html>

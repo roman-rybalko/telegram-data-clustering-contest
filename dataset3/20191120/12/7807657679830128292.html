@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://www.windowscentral.com/how-check-hard-drive-model-serial-number-firmware-version-and-more-using-command-prompt"/>
+    <meta property="og:site_name" content="Windows Central"/>
+    <meta property="article:published_time" content="2019-11-20T12:00:03+00:00"/>
+    <meta property="og:title" content="Need hard drive model, serial, and other info? Here's how on Windows 10."/>
+    <meta property="og:description" content="In this guide, we'll show you the steps to quickly find out essential information about the hard drive on your device, such as manufacturer, model, serial number, firmware version, media type, and many other details using Command Prompt on Windows 10."/>
+  </head>
+  <body>
+    <article>
+      <h1>Need hard drive model, serial, and other info? Here's how on Windows 10.</h1>
+      <h2>Yes, you can find out the model, serial number, and other info about the hard drive without pulling it out of the PC, and in this guide, we'll show you how on Windows 10.</h2>
+      <address><time datetime="2019-11-20T12:00:03+00:00">20 Nov 2019, 12:00</time> by <a rel="author" href="https://www.windowscentral.com/author/Mauro%20Huculak" target="_blank">Mauro Huculak</a></address>
+      <p>
+        <i>Source: Windows Central</i>
+      </p>
+      <p>On Windows 10, there could be a lot of reasons you may need to determine specific details (such as serial number, model, firmware version, etc.) about the hard drive on your computer. For instance, when you need to contact technical support to troubleshoot issues or start the process to get a replacement. You're planning to build an array and want to make sure the new drives are the same make and model. Or you're building a detailed inventory of your devices, need to update its firmware, and more.</p>
+      <p>Of course, a lot of this information you can find it on the label attached to the drive. When the drive is already installed on your computer, you can save a lot of steps and hassles by querying the details you need using the Windows Management Interface Command (wmic) tool with Command Prompt available on <a href="https://www.windowscentral.com/windows-10">Windows 10</a>.</p>
+      <p>In this <a href="https://www.windowscentral.com/windows-10-help">Windows 10 guide</a>, we'll walk you through the steps to get information about the hard drives (and removable drives) connected to your device. Additionally, we'll also show you the steps to export the details to text files that you can keep for personal records or send to technical support.</p>
+      <ul>
+        <li>
+          <a href="https://www.windowscentral.com/how-check-hard-drive-model-serial-number-firmware-version-and-more-using-command-prompt#check_hdd_info_cmd_windows10">How to check hard drive information using Command Prompt</a>
+        </li>
+        <li>
+          <a href="https://www.windowscentral.com/how-check-hard-drive-model-serial-number-firmware-version-and-more-using-command-prompt#export_txt_hdd_info_cmd_windows10">How to export hard drive information to text file using Command Prompt</a>
+        </li>
+      </ul>
+      <p>
+        <anchor name="check_hdd_info_cmd_windows10"/>
+      </p>
+      <h3>How to check hard drive information using Command Prompt</h3>
+      <p>If you need to find out the hard drive serial number, model, firmware version, and other information, you can use the wmic with Command Prompt.</p>
+      <h4>Basic hard drive info</h4>
+      <p>To determine some basic information about the hard drive installed on your device, use these steps:</p>
+      <figure>
+        <img src="https://www.windowscentral.com/sites/wpcentral.com/files/styles/large/public/field/image/2019/11/wmic-harddrive-model-serial-info-windows-10.jpg?itok=qfqImYs6"/>
+      </figure>
+      <ol>
+        <li>Open <b>Start</b>.</li>
+        <li>Search for <b>Command Prompt</b> and click the top result to open the app.</li>
+        <li>Type the following command to check the name, brand, model, and serial number information and press <b>Enter</b>: <code>wmic diskdrive get model,serialNumber,size,mediaType</code> <i>Source: Windows Central</i></li>
+      </ol>
+      <p>Once you complete the steps, the command will return the manufacturer, model, serial number, size (bytes), including removable drives like external hard drives and USB flash drives.</p>
+      <p>You could also add the "manufacturer" and "name" options, but they usually don't return any additional information already available with the option specified in the above command.</p>
+      <h4>Advanced hard drive info</h4>
+      <p>If you need more advanced information about the hard drive, use these steps:</p>
+      <figure>
+        <img src="https://www.windowscentral.com/sites/wpcentral.com/files/styles/large/public/field/image/2019/11/hard-drive-cmd-windows-10-advanced.jpg?itok=4Vo92DEy"/>
+      </figure>
+      <ol>
+        <li>Open <b>Start</b>.</li>
+        <li>Search for <b>Command Prompt</b> and click the top result to open the app.</li>
+        <li>Type the following command to name, brand, model, and serial number information and press <b>Enter</b>: <code>wmic diskdrive get model,index,firmwareRevision,status,interfaceType,totalHeads,totalTracks,totalCylinders,totalSectors,partitions</code> <i>Source: Windows Central</i></li>
+      </ol>
+      <p>After you complete the steps, the command will output all the information requested formatted in an easy to digest table, including manufacturer, model, serial number, and physical location (port) of all the drives connected to your computer.</p>
+      <p>Also, you'll be able to determine if any hard drives are reporting hardware problems. The version of the firmware that controls the drive. The type of interface the device is using to connect to the motherboard, as well as the number of partitions and the number of heads, tracks, cylinders, and sectors.</p>
+      <p>If you're looking to upgrade the storage on your device, we recommend the 860 EVO 500GB Solid-State Drive (SSD) from Samsung because of its reliability, fast read and write speeds and price.</p>
+      <h4>Our pick</h4>
+      <figure>
+        <img src="https://www.windowscentral.com/sites/wpcentral.com/files/field/image/2019/02/samsung-860-evo-cropped.jpg?itok=VuOEjauP"/>
+      </figure>
+      <h4>
+        <a href="https://www.amazon.com/Razer-DeathAdder-Elite-Mechanical-Ergonomic/dp/B01LXC1QL0/?tag=wpcentralb-20&amp;ascsubtag=UUwpUdUnU71882YYw">Samsung 860 EVO 500GB</a>
+      </h4>
+      <p>This hard drive is reliable and has a proven track record of quality. Its 550MB/s read and 520MB/s write speeds are enough for the majority of users. The price listed here is for the 500GB model, but you can get up to 4TB. <a href="https://www.amazon.com/Samsung-500GB-Internal-MZ-76E500B-AM/dp/B0786QNSBD/?tag=wpcentralb-20&amp;ascsubtag=UUwpUdUnU71882YYw">$70 at Amazon</a></p>
+      <ul>
+        <li>
+          <a href="https://www.amazon.com/Razer-DeathAdder-Elite-Mechanical-Ergonomic/dp/B01LXC1QL0/?tag=wpcentralb-20&amp;ascsubtag=UUwpUdUnU71882YYw">$70 at Amazon</a>
+        </li>
+      </ul>
+      <p>Although we're showing you the steps to query specific hard drive information, you can edit the command to find out only the details you need.</p>
+      <p>Here's the <a href="https://docs.microsoft.com/en-us/windows/win32/cimwin32prov/win32-diskdrive?redirectedfrom=MSDN">full list</a> of available options:</p>
+      <ul>
+        <li>Availability.</li>
+        <li>BytesPerSector.</li>
+        <li>Capabilities.</li>
+        <li>CapabilityDescriptions.</li>
+        <li>Caption.</li>
+        <li>CompressionMethod.</li>
+        <li>ConfigManagerErrorCode.</li>
+        <li>ConfigManagerUserConfig.</li>
+        <li>CreationClassName.</li>
+        <li>DefaultBlockSize.</li>
+        <li>Description.</li>
+        <li>DeviceID.</li>
+        <li>ErrorCleared.</li>
+        <li>ErrorDescription.</li>
+        <li>ErrorMethodology.</li>
+        <li>FirmwareRevision.</li>
+        <li>Index.</li>
+        <li>InstallDate.</li>
+        <li>InterfaceType.</li>
+        <li>LastErrorCode.</li>
+        <li>Manufacturer.</li>
+        <li>MaxBlockSize.</li>
+        <li>MaxMediaSize.</li>
+        <li>MediaLoaded.</li>
+        <li>MediaType.</li>
+        <li>MinBlockSize.</li>
+        <li>Model.</li>
+        <li>Name.</li>
+        <li>NeedsCleaning.</li>
+        <li>NumberOfMediaSupported.</li>
+        <li>Partitions.</li>
+        <li>PNPDeviceID.</li>
+        <li>PowerManagementCapabilities.</li>
+        <li>PowerManagementSupported.</li>
+        <li>SCSIBus.</li>
+        <li>SCSILogicalUnit.</li>
+        <li>SCSIPort.</li>
+        <li>SCSITargetId.</li>
+        <li>SectorsPerTrack.</li>
+        <li>SerialNumber.</li>
+        <li>Signature.</li>
+        <li>Size.</li>
+        <li>Status.</li>
+        <li>StatusInfo.</li>
+        <li>SystemCreationClassName.</li>
+        <li>SystemName.</li>
+        <li>TotalCylinders.</li>
+        <li>TotalHeads.</li>
+        <li>TotalSectors.</li>
+        <li>TotalTracks.</li>
+        <li>TracksPerCylinder.</li>
+      </ul>
+      <p>
+        <anchor name="export_txt_hdd_info_cmd_windows10"/>
+      </p>
+      <h3>How to export hard drive information to text file using Command Prompt</h3>
+      <p>If you want to export the hard drive details to a text file that you can share easily, use these steps:</p>
+      <figure>
+        <img src="https://www.windowscentral.com/sites/wpcentral.com/files/styles/large/public/field/image/2019/11/export-info-hdd-text-command-line.jpg?itok=X_U_Q2sw"/>
+      </figure>
+      <ol>
+        <li>Open <b>Start</b>.</li>
+        <li>Search for <b>Command Prompt</b> and click the top result to open the app.</li>
+        <li>Type the following command to name, brand, model, and serial number information and press <b>Enter</b>: <code>wmic diskdrive get model,serialNumber,index,mediaType &gt; C:\PATH\TO\TEXT.TXT</code> This example exports the hard drive details to the current user's folder: <code>wmic diskdrive get model,serialNumber,index,mediaType &gt; C:\Users\user1\Documents\hdd-info.txt</code> <i>Source: Windows Central</i></li>
+      </ol>
+      <p>Once you complete the steps, the information you specified will export to a text file that you can then send to technical support or keep for your records.</p>
+      <p>We're focusing this guide on Command Prompt, but you can also use these commands with PowerShell.</p>
+      <h4>More Windows 10 resources</h4>
+      <p>For more helpful articles, coverage, and answers to common questions about Windows 10, visit the following resources:</p>
+      <ul>
+        <li>
+          <a href="https://www.windowscentral.com/windows-10">Windows 10 on Windows Central – All you need to know</a>
+        </li>
+        <li>
+          <a href="https://www.windowscentral.com/windows-10-help">Windows 10 help, tips, and tricks</a>
+        </li>
+        <li>
+          <a href="http://forums.windowscentral.com/windows-10/">Windows 10 forums on Windows Central</a>
+        </li>
+      </ul>
+      <p>We may earn a commission for purchases using our links. <a href="https://www.mobilenations.com/external-links">Learn more</a>.</p>
+      <figure>
+        <img src="https://www.windowscentral.com/sites/wpcentral.com/files/styles/w200h150crop/public/field/image/2019/11/fortnite-dungeons-hero.jpg?itok=PG9j_H08"/>
+      </figure>
+      <p>
+        <a href="https://www.windowscentral.com/fortnites-save-world-dungeons-pulled-me-board-hype-train"><b>Crawlin' Dungeons</b> Fortnite dungeons are here, and I can't resist the hype anymore I've managed to resist Fortnite's beckoning for this long, but I'm close to throwing caution to the wind now that I can do some dungeon crawling in "Save the World."</a>
+      </p>
+      <figure>
+        <img src="https://www.windowscentral.com/sites/wpcentral.com/files/styles/w200h150crop/public/field/image/2019/04/windows-update-hero-2019.jpg?itok=zUTgWQUl"/>
+      </figure>
+      <p>
+        <a href="https://www.windowscentral.com/how-does-windows-10-november-2019-update-work"><b>Flipping switches</b> How is the Windows 10 November 2019 Update so… small? Why is the November 2019 Update so small, and how does it differ from previous Windows 10 feature updates? You have questions, and we have the answers. Version 1909 is a new type of Windows 10 feature update for Microsoft, as all its features are actually already built-in to the previous version of Windows 10, but are off until you install version 1909.</a>
+      </p>
+      <figure>
+        <img src="https://www.windowscentral.com/sites/wpcentral.com/files/styles/w200h150crop/public/field/image/2019/07/dell-xps-15-7590-video-01.jpg?itok=X6tv3nnv"/>
+      </figure>
+      <p>
+        <a href="https://www.windowscentral.com/best-15-inch-laptop"><b>Buyer's guide</b> The Dell XPS 15 is our choice for best 15-inch laptop For a lot of people, a 15-inch laptop is a perfect size that offers enough screen for multitasking, and in a lot of cases, some extra performance from powerful hardware. We've rounded up the best of the best at this size.</a>
+      </p>
+      <figure>
+        <img src="https://www.windowscentral.com/sites/wpcentral.com/files/styles/w200h150crop/public/field/image/2016/01/ideacentre-stick-300-3.jpg?itok=Gz-LGCH1"/>
+      </figure>
+      <p>
+        <a href="https://www.windowscentral.com/best-stick-pcs"><b>Honey I shrunk the computer!</b> These are the best PC sticks for when you're on the move Instant computer, just add a screen! That’s the general idea of the ultra-portable PC Compute Sticks, but it can be hard to know which one you want. Relax, we’ve got you covered.</a>
+      </p>
+    </article>
+  </body>
+</html>

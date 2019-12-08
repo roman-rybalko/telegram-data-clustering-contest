@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://mobilesyrup.com/2019/11/19/android-camera-flaw-take-video-photos-without-permission/"/>
+    <meta property="og:site_name" content="mobilesyrup"/>
+    <meta property="article:published_time" content="2019-11-19T20:51:53+00:00"/>
+    <meta property="og:title" content="Android camera flaw let apps take, upload photos, video without permission"/>
+    <meta property="og:description" content="Google and Samsung have both patched the flaw, but the search giant suggests phones from other manufacturers may still be vulnerable."/>
+  </head>
+  <body>
+    <article>
+      <h1>Android camera flaw let apps take, upload photos, video without permission</h1>
+      <h2>Google, Samsung patched the issue, but other manufacturers' camera apps could still be vulnerable</h2>
+      <address><time datetime="2019-11-19T20:51:53+00:00">19 Nov 2019, 20:51</time> by <a rel="author" href="https://mobilesyrup.com/author/jonathan-lamont" target="_blank">Jonathan Lamont</a></address>
+      <p>Researchers from security firm Checkmarx have <a href="https://www.checkmarx.com/blog/how-attackers-could-hijack-your-android-camera">disclosed an Android camera flaw</a> that allowed rogue apps to record video and audio, as well as upload images to an attacker-controlled server.</p>
+      <p>The disclosure comes after the release of patches for the flaws. Primarily, Google and Samsung’s camera apps were affected. Google pushed a patch to its app in July, but it’s not clear when Samsung fixed its app. However, Google says camera apps from other manufacturers may still be susceptible.</p>
+      <p>According to Checkmarx, Google designed Android to bar apps from accessing cameras and microphones without permission to do so from the user. However, the security firm found it easy to bypass these security restrictions and record video and audio without getting permission from users. Further, to upload captured images to a server, an app only needed permission to access a device’s storage — one of the most commonly given permissions.</p>
+      <p>Additionally, the flaw allowed attackers to track a user’s physical location through GPS data embedded in images or videos.</p>
+      <p>Checkmarx created a proof-of-concept weather app that exploited the flaw to do the following:</p>
+      <ul>
+        <li>Take pictures and record videos, regardless if the phone was locked, the screen was off, or the app was closed.</li>
+        <li>Acquire GPS data embedded into any photo or video stored on the device.</li>
+        <li>Eavesdrop and record two-way phone conversations while simultaneously capturing images or videos.</li>
+        <li>Silence the camera shutter to make it harder to detect.</li>
+        <li>Transfer any photo or video on the device to an attacker-controlled server.</li>
+        <li>List and download and JPG image or MP4 video stored on the phone’s SD card.</li>
+      </ul>
+      <h3>Attacks wouldn’t go unnoticed; phones would display the camera when in use</h3>
+      <p>Granted, an attack of this nature wouldn’t be completely unnoticeable. For example, an exploited device would still show the camera when recording video or capturing images. Users would notice if an attacker tried to carry out an attack while they were looking at the phone. However, that doesn’t prevent attackers from taking advantage of the flaw when the display is out of sight. Attackers could leverage a device’s proximity sensor to detect if a device were face down and the screen not visible.</p>
+      <p>Checkmarx’s app was also able to use the proximity sensor to detect if the phone was held to a user’s ear and then record a phone call. It could take pictures or videos at the same time.</p>
+      <p>Google officials told <i><a href="https://arstechnica.com/information-technology/2019/11/google-samsung-fix-android-spying-flaw-other-makers-may-still-be-vulnerable/">Ars Technica</a> </i>in a statement that they “appreciate Checkmarx bringing this to [their] attention and working with Google and Android partners to coordinate disclosure.” Additionally, it made a patch available to all its partners. Samsung confirmed to <i>Ars </i>that it had released a patch to all potentially affected models.</p>
+      <p>Further, Checkmarx suggested to <i>Ars </i>that the flaw may have been the result of Google making the camera work with Assistant, but it’s not sure why apps were able to access the camera without permission.</p>
+      <h3>Pixel owners can quickly check if they’re affected</h3>
+      <p>If you’re using a Pixel device, you can check if you’re vulnerable by long-pressing the Camera app icon, tapping the ‘i’ icon in a circle, tapping ‘Advanced’ and then ‘App details.’ This will bounce you to the source of the installation, which should be the Play Store. Make sure you’re running the latest version, but as long as you’re using a version newer than July 2019, you should be safe.</p>
+      <p>On phones from other manufacturers, checking for the flaw is significantly more difficult. According to <i>Ars</i>, you’ll need a computer with Android Debug Bridge (ADB), and you’ll need to connect your phone and run some commands to test for the flaw. If you’re confident in your ability to use tools like ADB, you can <a href="https://arstechnica.com/information-technology/2019/11/google-samsung-fix-android-spying-flaw-other-makers-may-still-be-vulnerable/">find the instructions here</a>.</p>
+      <p>Thankfully, due to the nature of the flaw, it takes a fair amount of skill and luck to execute it. As such, it likely isn’t feasible to use against the majority of Android users. That said, it could be a powerful spying tool when used against specific users. Coupled with how easy it is for malicious apps to get on the Play Store, it probably wouldn’t be too difficult for a determined attacker to pull off.</p>
+      <p>Source: <a href="https://www.checkmarx.com/blog/how-attackers-could-hijack-your-android-camera">Checkmarx</a> Via: <a href="https://arstechnica.com/information-technology/2019/11/google-samsung-fix-android-spying-flaw-other-makers-may-still-be-vulnerable/">Ars Technica</a></p>
+      <related>
+        <a href="https://mobilesyrup.com/2019/11/18/samsung-camera-new-camera-modes-teardown/"/>
+        <a href="https://mobilesyrup.com/2019/11/18/146-security-flaws-android-apps/"/>
+        <a href="https://mobilesyrup.com/2019/11/19/samsung-galaxy-watch-active-touch-bezel-navigations/"/>
+        <a href="https://mobilesyrup.com/2019/11/15/apple-bans-all-vaping-related-apps-ios-app-store-health-concerns/"/>
+      </related>
+    </article>
+  </body>
+</html>

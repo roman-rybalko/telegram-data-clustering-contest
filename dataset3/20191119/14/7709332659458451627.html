@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://css-tricks.com/the-tools-are-here/"/>
+    <meta property="og:site_name" content="CSS-Tricks"/>
+    <meta property="article:published_time" content="2019-11-19T14:22:08+00:00"/>
+    <meta property="og:title" content="The Tools are Here"/>
+    <meta property="og:description" content="Heading into 2020, it occurs to me that I've now been making websites for 20 years. Looking back on that time, it seems as though our practices have been"/>
+  </head>
+  <body>
+    <article>
+      <h1>The Tools are Here</h1>
+      <address>
+        <time datetime="2019-11-19T14:22:08+00:00">19 Nov 2019, 14:22</time>
+      </address>
+      <p>Heading into 2020, it occurs to me that I've now been making websites for 20 years. Looking back on that time, it seems as though our practices have been in near-constant churn, and that our progress did not always seem linear. But ultimately, even the missteps and tangents along the way have contributed to a pattern of refinement, and now for the first time, it feels like we'll have a standard pattern for most of the technical challenges we face. I think 2020 looks to be a stabilizing moment for web standards.</p>
+      <p>Given that delivery is inherent to our medium, many of our challenges have come from network constraints. Early on, networks offered limited bandwidth, so we developed tools and practices to reduce the physical size of our files. Soon enough, bandwidth er… widened, and latency–the time spent making trips between servers and devices–became our next bottleneck. To mitigate latency, we developed techniques to deliver more code in fewer trips, like combining like-files, splitting our resources across many domains to allow more downloads at a given time, and inlining unlike-files into our HTML to avoid waiting for additional requests. We also learned to distribute our code around the world on CDNs, as physical proximity always helps. But latency itself is improving now, especially with the arrival of 5G, and advancements in how browsers communicate with servers now allow us to request any number of files at a time, or even push files to the browser before it asks for them. All of this has simplified our ability to deliver quickly and reliably, and it's only just recently become available without complicated workarounds.</p>
+      <p>Device differences used to confound us as well. In the early years of the mobile web, we had to find creative and often clumsy workarounds to deliver contextually appropriate features and assets, but nowadays we have fantastic tools to deliver device-appropriate experiences. We can use media queries to fluidly adapt our visual layouts across screen sizes, and we can build those layouts using proper design tools like grid and flexbox. We can use standard feature queries to test if we can rely on a particular tool before using it, or even to decide whether to load costly files in the first place. For media delivery, we now have powerful options for delivering appropriately sized images and videos to any device. All of this required less-ideal or non-standard practices only a few years ago, but things have changed for the better.</p>
+      <p>Accessibility has become simpler to achieve too, which is timely since awareness of its importance has likely never been greater. Standards have given us tools to better communicate the meaning and state of our components to assistive technology, and browsers and OSs have dramatically improved their interaction with those standards.</p>
+      <p>I don't mean to suggest that we don't still face hard technical problems, but I think it is increasingly our own practices and assumptions that create those problems, rather than any forces beyond our control. For example, we still see few sites that smoothly reconcile fast delivery with smooth responsiveness during runtime, particularly in the average devices that people are using worldwide. But problems like that aren't absolute–they're caused by faults in our own priorities, or in over-relying on patterns we already know to be costly.</p>
+      <p><b>In short, the tools we need to do our jobs well are here.</b> <i>Except for container queries. We still really need container queries to do our jobs well, and it's frankly ridiculous that in 2020 we—</i>ahem. Where was I? Oh, right.</p>
+      <p>So heading into 2020, it feels like we finally have a well-rounded standard toolset for building and analyzing our sites. Nowadays, if a site is slow or expensive to deliver, or slow to respond to user interaction, or inaccessible to assistive technology, or poorly designed on a particular screen, we can take comfort in knowing that it's probably our own fault and that we can fix it. And that's great because the web has much bigger, more pressing, non-technical problems that need our attention much more.</p>
+    </article>
+  </body>
+</html>

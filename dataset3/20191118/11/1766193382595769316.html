@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://www.heise.de/newsticker/meldung/Festgefahrene-Wireguard-Aufnahme-kommt-mit-Linux-5-5-endlich-in-Gang-4588112.html"/>
+    <meta property="og:site_name" content="c't Magazin"/>
+    <meta property="article:published_time" content="2019-11-18T11:27:00+00:00"/>
+    <meta property="og:title" content="Linux 5.5: Festgefahrene Wireguard-Aufnahme kommt endlich in Gang"/>
+    <meta property="og:description" content="Linux 5.5 bringt wahrscheinlich eine Infrastruktur, durch die die Furore machende VPN-Technik Wireguard nun endlich in den Kernel einfließen kann."/>
+  </head>
+  <body>
+    <article>
+      <h1>Linux 5.5: Festgefahrene Wireguard-Aufnahme kommt endlich in Gang</h1>
+      <h2>Linux 5.5 bringt wahrscheinlich eine Infrastruktur, durch die die Furore machende VPN-Technik Wireguard nun endlich in den Kernel einfließen kann.</h2>
+      <address><time datetime="2019-11-18T11:27:00+00:00">18 Nov 2019, 11:27</time> by <a rel="author">Thorsten Leemhuis</a></address>
+      <p>Die Linux-Entwickler legen endlich Unstimmigkeiten um den Kryptographie-Code bei, die einer Aufnahme der viel diskutierten und gelobten VPN-Technik Wireguard lange im Wege standen. Das gelingt mit Umbauten, durch die eine erst im September verkündete Marschrichtung schon wieder hinfällig ist.</p>
+      <p>Wireguard macht seit mehr als zwei Jahren Furore und hat viele Fans. Darunter ist sogar Linus Torvalds, der <a href="https://lore.kernel.org/lkml/CA+55aFz5EWE9OTbzDoMfsY2ez04Qv9eg0KQhwKfyJY0vFvoD3g@mail.gmail.com/">die Technik im August 2018 öffentlich lobte</a>: Im Vergleich zu den Gräueln, die OpenVPN und IPSec darstellten, sei <a href="https://www.wireguard.com/">Wireguard</a> ein Kunstwerk.</p>
+      <figure>
+        <img src="https://www.heise.de/imgs/18/2/7/8/9/9/4/5/Bildschirmfoto_von_2019-11-18_09-05-55-ce6f1cd34cad7d60.png"/>
+        <figcaption>Linus Torvalds lobte Wireguard im August 2018 deutlich.</figcaption>
+      </figure>
+      <h3>Krypto-Entwickler stellen sich quer</h3>
+      <p>Ganz ungewohnt setzte der Linux-Vater dabei sogar Betreuer von Teilbereichen des Kernel-Codes unter Druck, denn er erwähnte in dem Zug seine Hoffnung, dass der Kernel-Code zur Unterstützung von Wireguard bald in Linux einziehen könne. Trotz des Drucks von ganz oben kam es dazu aber bislang nicht. Das liegt an den Entwicklern des Kryptographie-Codes von Linux: Denen war der "Zinc" genannte Code von Wireguard ein Dorn im Auge, bei dem es sich um eigens für Wireguard entwickelten und zwingend von der VPN-Technik benötigten Crypto-Code handelt, der eine eigene API mitbringt.</p>
+      <p>Zinc setzt etwas anders an, wodurch es unter anderem leichter zu nutzen ist und Performance-Vorteile bieten kann, harmoniert aber nicht mit Crypto-Beschleuniger-Chips. Letztlich sahen die für das Crypto-Subsystem zuständigen Kernel-Entwickler nicht genug gute Gründe für die Aufnahme von Zinc. Sie wollten vor allem keine zweite API pflegen – eine im Kernel-Bereich häufiger anzustreffende Einstellung. Hin und wieder wurden Ansätze zur Lösung der Umstimmigkeiten mit dem leitenden Wireguard-Entwickler Jason A. Donenfeld diskutiert, aber die Programmierer kamen lange nicht überein; einige Details dazu erläutern die LWN.net-Artikel "<a href="https://lwn.net/Articles/761939/">WireGuarding the mainline</a>" und "<a href="https://lwn.net/Articles/783973/">Whither WireGuard?</a>".</p>
+      <h3>Hürde beseitigt</h3>
+      <p>Diese festgefahrene Situation löst sich gerade, denn der Betreuer des Crypto-Codes von Linux hat gerade Änderungen in seinen Entwicklerzweig integriert, die alles wesentliche auf eine Art nachrüsten, die Wireguard entgegen kommt. Dafür sorgt eine <a href="https://lore.kernel.org/linux-crypto/20191108122240.28479-1-ardb@kernel.org/">34 Patches umfassende Patchserie des langjährigen Kernel-Entwicklers Ard Biesheuvel</a>, die den bestehenden Crypto-Code etwas umbaut, erweitert und dabei so abstrahiert, dass Wireguard leicht darauf aufbauen kann. Biesheuvel arbeitet unabhängig vom Wireguard-Projekt und offenbar aus anderer Motivation; Donenfeld hat sich an der Begutachtung der Änderungen beteiligt und ist mit dem Lösungsansatz offenbar weitgehend zufrieden.</p>
+      <p>Durch die Aufnahme in den <a href="https://git.kernel.org/pub/scm/linux/kernel/git/herbert/cryptodev-2.6.git/log/">Entwicklerzweig des Crypto-Codes</a> taucht der Code jetzt in Kürze in Linux-next auf und dürfte höchstwahrscheinlich in Linux 5.5 einfließen. Die Entwicklung des am 27. Januar oder 3. Februar erwarteten Kernels beginnt vermutlich schon nächsten Montag, denn dann dürfte das sich derzeit noch in Entwicklung befindliche Linux 5.4 erscheinen.</p>
+      <p>Nach jetzigem Stand ist Wireguard selbst bei 5.5 noch nicht dabei, denn das muss jetzt noch ein wenig an die neuen Gegebenheiten angepasst werden und dann von den Betreuern des Netzwerksubsystems begutachtet und für gut befunden werden. Es ist durchaus möglich, dass das innerhalb der nächsten Tage im Schnellverfahren passiert, aber eher unwahrscheinlich.</p>
+      <h3>Hin und her</h3>
+      <p>Kurioserweise lösen sich die Unstimmigkeiten jetzt im Sinne von Wireguard, kurz nachdem Donenfeld <a href="https://www.heise.de/meldung/Linux-VPN-WireGuard-will-nun-doch-auf-Kernel-Krypto-API-umsteigen-4540323.html">im September angekündigt hatte</a>, die Bemühungen mit Zinc aufzugeben und Wireguard auf das ältere Crypto-API zu portieren. Keine Stunde später wurde der Wireguard-Entwickler aber schon vom <a href="https://lore.kernel.org/lkml/20190925.113928.2046484827308019751.davem@davemloft.net/">Betreuer des Netzwerk-Subsystems wieder zurückgepfiffen</a>, mit dem Donenfeld direkt vorher über die Integration geredet hatte.</p>
+      <p>Viele Medien hatten darüber berichtet, aber übersehen, dass Biesheuvel nur wenige Stunden nach diesen Hin und Her <a href="https://lore.kernel.org/linux-crypto/20190925161255.1871-1-ard.biesheuvel@linaro.org/">eine erste Fassung der nun integrierten Patches veröffentlichte</a>, durch die sich die Situation nun viel eleganter und ohne umfangreiche Umbauten am Kernel-Code von Wireguard löst. Seine damalige Mail und <a href="https://lore.kernel.org/linux-crypto/20190929173850.26055-1-ard.biesheuvel@linaro.org/">ein Post mit der ersten, nur weniger Tage später veröffentlichten Überarbeitung des Ansatzes</a> liefern weitere Details zu den Crypto-Infrastruktur-Umbauten für Wireguard, die in Linux 5.5 einziehen dürften.</p>
+      <p>
+        <i>Zur Entwicklung des Linux-Kernels siehe auch auf ct.de:</i>
+      </p>
+      <ul>
+        <li>
+          <i>
+            <a href="https://www.heise.de/ct/artikel/Linux-5-4-Support-fuer-neue-AMD-GPUs-und-mit-Windows-ausgelieferte-ARM-Notebooks-4541639.html">Das Kernel-Log zu den vielen Neuerungen von Linux 5.4</a>
+          </i>
+        </li>
+      </ul>
+      <p>(<a href="mailto:thl@ct.de">thl</a>)</p>
+    </article>
+  </body>
+</html>

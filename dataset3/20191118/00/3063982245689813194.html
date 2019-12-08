@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://www.golem.de/news/intel-ponte-vecchio-sechs-7-nm-xe-gpus-pro-aurora-node-1911-145021.html"/>
+    <meta property="og:site_name" content="Golem.de"/>
+    <meta property="article:published_time" content="2019-11-18T00:00:02+00:00"/>
+    <meta property="og:title" content="16 Chiplets bilden eine Xe-GPU für Supercomputer"/>
+    <meta property="og:description" content="Intel hat seine 7-nm-Xe-Grafikmodule erläutert: Die heißen intern Ponte Vecchio, nutzen diverse Packaging-Techniken sowie Stapelspeicher und werden in multipler Form gekoppelt."/>
+  </head>
+  <body>
+    <article>
+      <h1>16 Chiplets bilden eine Xe-GPU für Supercomputer</h1>
+      <h2><a href="https://www.golem.de/specials/intel/">Intel</a> hat seine 7-nm-Xe-Grafikmodule erläutert: Die heißen intern Ponte Vecchio, nutzen diverse Packaging-Techniken sowie Stapelspeicher und werden in multipler Form gekoppelt. Zusammen mit Sapphire-Rapids-CPUs bilden sie die Basis des Aurora-Exaflops-Supercomputers.</h2>
+      <address><time datetime="2019-11-18T00:00:02+00:00">18 Nov 2019</time> by <a rel="author">Marc Sauter</a></address>
+      <p>Ein paar Informationen vorneweg: Das, was Intel als Xe alias Gen12 bezeichnet, ist die Architektur für die ersten eigenen modernen dedizierten Grafikchips seit dem i740 von 1998. Derzeit befinden sich mehrere Modelle in Entwicklung, wovon wenigstens vom DG1 (Discrete Graphics 1) bereits lauffähiges Silizium existiert. Für Supercomputer entwickelt Intel einen 7-nm-Ableger, dieser trägt Ponte Vecchio als Codename und steckt im kommenden <a href="https://www.golem.de/news/usa-aurora-wird-der-erste-1-exaflop-supercomputer-1903-140086.html">Aurora</a>, dem ersten Exaflops-Supercomputer in den USA.</p>
+      <p>Auf der derzeit im US-amerikanischen Denver stattfindenden Supercomputing 2019 hat Intel ein paar Details zum Aurora und zum <a href="https://newsroom.intel.com/news-releases/intel-unveils-new-gpu-architecture-optimized-for-hpc-ai-oneapi/">Ponte Vecchio</a> genannt: Das System soll mehr als ein Exaflops erreichen und wird im Auftrag des US-Energieministeriums (Department of Energy, DoE) entwickelt, es soll 2021 im Argonne National Laboratory in Chicago in Betrieb genommen werden. Jeder Rechenknoten des Aurora besteht dabei aus sechs 7-nm-Xe-Beschleunigern und zwei Xeon-CPUs, hierfür nutzt Intel seine Sapphire Rapids mit 10++ nm Fertigung. Die Prozessoren binden DDR5-Arbeitsspeicher und nicht flüchtigen <a href="https://www.golem.de/news/apache-pass-so-funktioniert-intels-optane-dc-persistent-memory-1904-140384.html">Optane DC Persistant Memory</a> an.</p>
+      <p>Jeder Ponte Vecchio kann direkt mit jedem Ponte Vecchio kommunizieren, Intel verwendet dazu eine Version des Compute Express Link (CXL) und verknüpft so Cache-kohärent auch die beiden Sapphire Rapids mit den 7-nm-Xe-Beschleunigern. Die basieren auf einer Mischung aus 2.5D- und 3D-Packaging, genauer Intels eigenem EMIB (Embedded Multi Die Interconnect Bridge) und Foveros. Wie so etwas aussehen kann, zeigte Intel bereits im Juli 2019 anhand von <a href="https://www.golem.de/news/emib-trifft-foveros-intel-kombiniert-3d-mit-2-5d-stacking-1907-142445.html">Designs mit HBM2-Stapelspeicher und mehreren Logik-Dies</a> auf einem Träger. Für Ponte Vecchio spricht der Hersteller generell von sehr viel und sehr schnellem On-Package-Cache alias Codename Rambo per Foveros und externem HBM2E oder HBM3 per EMIB.</p>
+      <figure>
+        <video src="https://video.golem.de/download/22632?q=medium&amp;cpxl=0&amp;rd=rlmob_amp"/>
+      </figure>
+      <p>Zu den weiteren Eigenschaften von Xe für Supercomputer hielt sich Intel zurück, allerdings werden die Chips die für das HPC-Segment unabdingbare Unterstützung von Berechnungen mit doppelter Präzision (Double Precision, FP64) bei hoher Geschwindigkeit aufweisen. Hinzu kommen flexible Matrix- und Vector-Engines, hier wird Intel typische Algorithmen wie Int8 und Bfloat16 für maschinelles Lernen in Hardware beschleunigen. Auf dem Aurora läuft Intels OneAPI-Software-Stack, welcher von CPUs über FPGAs und GPUs allerhand Beschleuniger anspricht.</p>
+      <h4>Nachtrag vom 18. November 2019, 8:30 Uhr</h4>
+      <p>Auf der HPC Devcon 2019 hat Intel mehr zu Xe gesagt, das berichtet <a href="https://www.anandtech.com/show/15123/raja-koduri-at-intel-hpc-devcon-keynote-live-blog-4pm-mt-11pm-utc">Anandtech</a> von vor Ort: Erstmals unterschied der Hersteller öffentlich zwischen Xe(LP) für Notebooks, Xe(HP) als dediziertem Chip und Xe(HPC) für Server. Ein Ponte Vecchio besteht aus zwei 8er-Blöcken für zusammen 16 Chiplets, wobei die Anzahl an Execution Units offen bleibt. Die GPUs werden per Xe-Link verbunden, dahinter verbirgt sich ein dedizierter Chip.</p>
+    </article>
+  </body>
+</html>

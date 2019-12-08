@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://www.heise.de/developer/meldung/Programmiersprache-Kotlin-1-3-60-bringt-zahlreiche-Optimierungen-4589931.html"/>
+    <meta property="og:site_name" content="Developer"/>
+    <meta property="article:published_time" content="2019-11-19T11:17:00+00:00"/>
+    <meta property="og:title" content="Programmiersprache: Kotlin 1.3.60 bringt zahlreiche Optimierungen"/>
+    <meta property="og:description" content="Vor allem im Zusammenspiel mit IntelliJ IDEA bringt die Programmiersprache einige Verbesserungen unter anderem beim Umwandeln von Java-Code mit."/>
+  </head>
+  <body>
+    <article>
+      <h1>Programmiersprache: Kotlin 1.3.60 bringt zahlreiche Optimierungen</h1>
+      <h2>Vor allem im Zusammenspiel mit IntelliJ IDEA bringt die Programmiersprache einige Verbesserungen unter anderem beim Umwandeln von Java-Code mit.</h2>
+      <address><time datetime="2019-11-19T11:17:00+00:00">19 Nov 2019, 11:17</time> by <a rel="author">Rainald Menge-Sonnentag</a></address>
+      <p>Knapp drei Monate nach der Freigabe von Kotlin 1.3.50 hat JetBrains nun das sechste Minor Release der 1.3-Serie veröffentlicht. Die Neuerungen beziehen sich vor allem auf die Werkzeuge zum Debuggen und das Konvertieren von Java zu Kotlin. Kotlin/Native kennt neue Zielplattformen und aktualisierte Anbindung an externe Tools. Das generische Kommadozeilenwerkzeug <code>kotlinx.cli</code> hat eine komplette Überarbeitung erhalten.</p>
+      <p>Bei den APIs und der Programmiersprache gibt es keine Neuerungen, aber die Entwickler haben die Vergleichsfunktion für <code>inline</code>-Klassen optimiert. Der Compiler erzeugt dafür eine spezielle statische Methode. Für die Klasse <code>kotlin.Result</code> greift die Optimierung jedoch aus Kompatibilitätsgründen aber erst ab Kotlin 1.4.</p>
+      <h3>In der Entwicklungsumgebung</h3>
+      <p>Besonders bei der Integration in die ebenfalls von JetBrains herausgegebenen Entwicklungsumgebung IntelliJ IDEA gibt es einige Verbesserungen. Entwickler können nun Method beziehungsweise Function Breakpoints in Kotlin-Code setzen. Der Debugger stoppt die Ausführung beim Einsprung und/oder Verlassen der jeweiligen Funktion. Zusätzlich lässt sich eine Bedingung angeben, die beim Einsprung gegeben sein muss.</p>
+      <figure>
+        <img src="https://www.heise.de/imgs/18/2/7/9/1/0/3/1/kotlin-function-breakpoint-55867b34e944b31c.png"/>
+        <figcaption>Der Debugger von IntelliJ IDEA kann neuerdings auch für Kotlin-Funktionen Breakpoints anlegen.<cite>(Bild: JetBrains)</cite></figcaption>
+      </figure>
+      <p><a href="https://www.heise.de/meldung/Programmiersprache-Kotlin-1-3-50-kann-Java-Code-besser-umwandeln-4503272.html">Kotlin 1.3.50 hatte</a> einen neuen Java-to-Kotlin-Konverter für IntelliJ IDEA an Bord, den das aktuelle Release weiter verfeinert. Vor allem in einigen Sonderfällen wie beim Umwandeln statischer Importanweisungen soll die Umwandlung nun konsistenter sein. Zudem untersucht der Konverter genauer die Verwendung von Collections in Java, um festzustellen, ob er daraus in Kotlin eine veränderbare (mutable) oder eine Read-only Collection erzeugt.</p>
+      <p>Für die Anbindung an die Eclipse-IDE bringt Kotlin 1.3.60 eine Unterstützung für das inkrementelle Kompilieren mit. Das Vorgehen ist auf einzelne Module begrenzt und gilt derzeit als experimentell. Entwickler können sie über den Bereich Kotlin | Building in den Eclipse-Propertys aktivieren.</p>
+      <h3>Uhren und Fernsehen für Kotlin/Native</h3>
+      <p>Im vergangenen Release hat JetBrains Kotlin/Native hinsichtlich der Versionierung an Kotlin angeglichen. Mit Kotlin/Native lassen sich Binaries statt Code für die JVM erstellen. Die Motivation für den Einsatz ist vor allem das Verwenden der Programmiersprache für Plattformen, die nicht von Haus aus eine JVM mitbringen, was vor allem für Apples Produktportfolio gilt.</p>
+      <p>Das aktuelle Release kennt gleich mehrere neue Plattformen: Bei watchOS sind es die Varianten für x86 sowie 32-Bit und 64-Bit ARM, und für tvOS sind x64 sowie ARM64 hinzugekommen. Auch wenn unter Android der typische Weg mit Kotlin über die JVM führt, sind neuerdings auch x86 und x64 als Build-Ziele für Kotlin/Native verfügbar. Hinsichtlich der angebundenen Werkzeuge ist das Release mit XCode 11 und LLVM 8.0 kompatibel.</p>
+      <h3>Performance und Kommandozeile</h3>
+      <p>Die Kotlin-Macher haben zudem die Performance für die native Kotlin-Variante optimiert. So sollen bei der Ausführung nun Interface-Aufrufe bis zu fünffach schneller sein und Type Checks sogar bis zu 50 mal. Die Kompilierzeit für große Projekte reduziert sich ebenfalls, da die Toolchain native Librarys aus klibs statt dem Sourcecode erzeugt.</p>
+      <p>Das Werkzeug <code>kotlinx.cli</code> ist ein separates gepflegtes Open-Source-Projekt <a href="https://github.com/Kotlin/kotlinx.cli">mit einem eigenen GitHub-Repository</a>. Der generische Kommandozeilen-Parser ist komplett in Kotlin geschrieben. Er lässt sich sowohl für die JVM- als auch die native Variante von Kotlin verwenden. Die Entwickler haben das Werkzeug wohl fast vollständig neu geschrieben, und es ist in Kotlin 1.3.60 zusammen mit dem Kotlin/Native-Compiler an Bord.</p>
+      <h3>Anbindung an JavaScript</h3>
+      <p>Kotlin/JS zum Erstellen von JavaScript-Code aus Kotlin bietet ein paar Ergänzungen, die vor allem bei der Fehlersuche und beim Testing helfen. So erstellt das Gradle-Plug-in nun automatisch Source Maps. Damit lassen sich lesbare Stack-Traces erstellen, die bei der Fehlersuche helfen.</p>
+      <figure>
+        <img src="https://www.heise.de/imgs/18/2/7/9/1/0/3/1/source-maps-2255d1ae34d77ac1.png"/>
+        <figcaption>Source Maps geben einen besseren Einblick in Kotlin/JS-Code.<cite>(Bild: JetBrains)</cite></figcaption>
+      </figure>
+      <p>Zudem helfen die Source Maps bei Tests, da die Gradle Reports nun die passenden Dateinamen und Zeilennummern den über die Standardausgabekanäle <code>log</code>, <code>warn</code> und <code>error</code> ausgegebenen Meldungen zuordnen. Neuerdings lassen sich zudem für Kotlin/JS selektive Tests über die Kommandozeilenoption <code>--tests</code> von Gradle durchführen.</p>
+      <h3>Vorschau auf Kotlin 1.4</h3>
+      <p>Änderungen an der API sind erst für Kotlin 1.4 geplant, das im Lauf des kommenden Jahres erscheinen soll. Allerdings können Entwickler bereits in Kotlin 1.3.60 einige der für Version1.4 geplanten Neuerungen testen, indem sie <code>languageVersion = "1.4"</code> und optional zusätzlich <code>apiVersion = "1.4"</code> setzen.</p>
+      <p>Letzteres wirft unter anderem eine passende <code>NullPointerException</code> statt einer <code>IllegalStateException</code> für Aufrufe, die den entsprechenden Ausnahmezustand eines Nullzeigers auslösen. Als Neuerung in der Sprache ist vorgesehen, dass innerhalb von <code>when</code>-Blöcken sowohl <code>break</code> als auch <code>continue</code> ohne Label erlaubt sind.</p>
+      <p>Weitere Neuerungen in Koltin 1.3.60 wie die verbesserten Fehlermeldungen des Compilers <a href="https://blog.jetbrains.com/kotlin/2019/11/kotlin-1-3-60-released/">lassen sich dem Kotlin-Blog entnehmen</a>. (<a href="mailto:rme@ct.de">rme</a>)</p>
+    </article>
+  </body>
+</html>

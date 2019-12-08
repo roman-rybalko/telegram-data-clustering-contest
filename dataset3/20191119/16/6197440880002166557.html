@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://9to5google.com/2019/11/19/android-camera-flaw-attackers/"/>
+    <meta property="og:site_name" content="9to5Google"/>
+    <meta property="article:published_time" content="2019-11-19T16:25:38+00:00"/>
+    <meta property="og:title" content="Android flaw allowed apps to take and upload pictures, some devices still vulnerable"/>
+    <meta property="og:description" content="A flaw with Android's camera code allowed malicious parties to have apps both take and upload photos without the needed permissions."/>
+  </head>
+  <body>
+    <article>
+      <h1>Android flaw allowed apps to take and upload pictures, some devices still vulnerable</h1>
+      <address><time datetime="2019-11-19T16:25:38+00:00">19 Nov 2019, 16:25</time> by <a rel="author" href="https://9to5google.com/author/nexusben1/" target="_blank">Ben Schoon</a></address>
+      <p>A recently-revealed flaw that affected all Android devices at one point allowed attacker applications to take pictures and upload them to servers without user permission. Thankfully, this Android camera flaw has been patched on some devices.</p>
+      <p>Detailed by <a href="https://www.checkmarx.com/blog/how-attackers-could-hijack-your-android-camera"><i>CheckMarx</i></a> (via <a href="https://arstechnica.com/information-technology/2019/11/google-samsung-fix-android-spying-flaw-other-makers-may-still-be-vulnerable/"><i>ArsTechnica</i></a>), this issue allowed apps to use the camera to take photos without user permission.</p>
+      <p>For quite some time – since Marshmallow – Android has used pop-ups to allow permissions for apps including the ability to access the camera. To get around that, this method used the camera application already on the device. Both the Google Camera app on Pixels and the Samsung Camera app were proved vulnerable.</p>
+      <p>Using this method, the vulnerable camera apps would take a photo which the malicious app could then see the EXIF and GPS data on to even determine the user’s location. The photos could also be uploaded to a remote server.</p>
+      <p>Of course, for this, the app would need to be given storage access by the user, but that is one of the most commonly provided permissions. Since the app is controlling other camera apps on the device, the attack also can’t take place while the user is looking at the device since it would be an obvious giveaway.</p>
+      <p>With a proof of concept app, <i>CheckMarx </i>was able to take a picture while the app was closed and the screen was off, pull the GPS data from that photo, eavesdrop on a two-way phone call, silence the camera shutter, transfer those photos and videos to an external server, and pull the images and videos already stored on the phone. The app also used the proximity sensor to know when it was placed face-down to as a way to avoid the user seeing the attack in progress.</p>
+      <p>Luckily, Google and Samsung have both fixed these issues on their camera apps. This Android flaw was fixed in the Google Camera app on Pixel devices back in July when the issue was first reported while Samsung patched the issue at a later date. Google says:</p>
+      <blockquote>We appreciate Checkmarx bringing this to our attention and working with Google and Android partners to coordinate disclosure. The issue was addressed on impacted Google devices via a Play Store update to the Google Camera Application in July 2019. A patch has also been made available to all partners.</blockquote>
+      <p>Android partners have access to a patch for this issue as Google has said, but it’s unclear if all partners have adopted it. All Pixel and Galaxy smartphones are immune at this point but Google implied to <i>CheckMarx</i> that some of its partners have yet to fix the issue. The company has not publicly confirmed this or mentioned who that might include, though.</p>
+      <h3>More on Android:</h3>
+      <ul>
+        <li>
+          <a href="https://9to5google.com/2019/11/16/assistant-ambient-mode-phones/">Google Assistant Ambient Mode rolling out to more phones [Gallery]</a>
+        </li>
+        <li>
+          <a href="https://9to5google.com/2019/11/15/google-oracle-supreme-court/">Supreme Court to hear Google v. Oracle case over Android’s Java usage</a>
+        </li>
+        <li>
+          <a href="https://9to5google.com/2019/11/14/android-failed-backups-google-drive-issue/">Some Android users have had failed Google Drive backups for months, no fix yet</a>
+        </li>
+      </ul>
+      <p><i>FTC: We use income earning auto affiliate links.</i> <a href="https://9to5mac.com/about/#affiliate">More.</a></p>
+    </article>
+  </body>
+</html>

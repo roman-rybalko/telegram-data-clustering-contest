@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://www.zdnet.com/article/popular-apps-on-google-play-linked-to-old-remote-code-execution-bugs/"/>
+    <meta property="og:site_name" content="ZDNet"/>
+    <meta property="article:published_time" content="2019-11-21T11:11:00+00:00"/>
+    <meta property="og:title" content="Popular apps on Google Play linked to old remote code execution bugs"/>
+    <meta property="og:description" content="Vulnerabilities dating back to 2014 were linked to the latest versions of high-profile mobile applications, potentially unpatched."/>
+  </head>
+  <body>
+    <article>
+      <h1>Popular apps on Google Play linked to old remote code execution bugs</h1>
+      <address><time datetime="2019-11-21T11:11:00+00:00">21 Nov 2019, 11:11</time> by <a rel="author" href="https://www.zdnet.com/meet-the-team/us/charlie-osborne/" target="_blank">Charlie Osborne</a></address>
+      <p>
+        <b>Vulnerabilities dating back to 2014 were linked to the latest versions of high-profile mobile applications, potentially unpatched.</b>
+      </p>
+      <figure>
+        <video src="https://techrepublicvideo.cbsistatic.com/vr/2019/11/11/1639801923523/2019-11-11-wochit-bill-gates-i-messed-up-microsofts-chance-to-beat-android_1974628_742.mp4"/>
+      </figure>
+      <figure>
+        <img src="https://zdnet3.cbsistatic.com/hub/i/r/2019/11/11/20e02357-a110-4e22-bf9a-3b6763079b85/thumbnail/570x322/9b1420beb3924fdfa92e9344602a0e37/bill-gates-i-messed-up-microsofts-chance-5dc9425d415e54000148cd05-1-nov-11-2019-13-14-17-poster.jpg"/>
+      </figure>
+      <p>The latest versions of popular apps hosted on Google Play are harboring known vulnerabilities that could subject users to Remote Code Execution (RCE) attacks.  <br/><br/>When we download apps from official repositories, we may assume that security updates have already been applied -- or once installed, software updates will make sure the app is up-to-date with fixes. However, on Thursday, cybersecurity researchers from Check Point said that patches issued to resolve years-old flaws for popular applications may not have been applied to versions available in Google Play. </p>
+      <p>In <a href="https://research.checkpoint.com/2019/long-known-vulnerabilities-in-high-profile-android-applications/">a blog post</a>, Check Point documented the results of a month-long study, conducted in May, into the presence of known vulnerabilities in popular mobile applications. The results suggested that the use of third-party components and open source resources, including libraries, may have led to old, vulnerable code still being present in apps.<br/><br/>"When a vulnerability is found and fixed in an open source project, its maintainers typically have no control over the native libraries which may be affected by the vulnerability, nor the apps using these native libraries," Check Point says. "This is how an app may keep using the outdated version of the code even years after the vulnerability is discovered." <br/><br/>Specifically, the researchers examined the mobile apps in question for three RCE vulnerabilities dating from 2014, 2015 and 2016. Each bug was assigned two signatures and hundreds of apps were scanned in the Google Play Store. </p>
+      <p>The first vulnerability scanned for, tracked as <a href="https://nvd.nist.gov/vuln/detail/CVE-2014-8962">CVE-2014-8962</a>, is described as a stack-based buffer overflow problem in libFLAC before 1.3.1 which permits attackers to achieve RCE via a crafted .flac file. <br/><br/><b>See also: </b><a href="https://www.zdnet.com/article/android-vulnerability-lets-rogue-apps-take-photos-record-video-even-if-your-phone-is-locked/">Android flaw lets rogue apps take photos, record video even if your phone is locked</a></p>
+      <p>The FLAC audio codec vulnerability and libraries using vulnerable code were found in apps including LiveXLive, Moto Voice BETA, and four Yahoo! apps -- Transit, Browser, Map, and Car navigation.   </p>
+      <figure>
+        <img src="https://zdnet3.cbsistatic.com/hub/i/r/2019/11/21/31c84b24-ce1b-4b2b-b73b-c8ffe2e674f8/resize/470xauto/c8437bea4d2853b93dbd3f88aa44f62b/screenshot-2019-11-21-at-11-13-14.png"/>
+      </figure>
+      <p>The second vulnerability examined by the team was <a href="https://nvd.nist.gov/vuln/detail/CVE-2015-8271">CVE-2015-8271</a>, an RCE exploit in RTMPDump 2.4 which is used for FFmpeg RTMP video streaming. This old bug was connected to apps including Facebook, Facebook Messenger, ShareIt, and WeChat.</p>
+      <figure>
+        <img src="https://zdnet4.cbsistatic.com/hub/i/r/2019/11/21/b1b5cf12-4ce4-47e2-86f4-9c9c01afffc3/resize/470xauto/b1947d4e001855f1d3273d656a2d4360/screenshot-2019-11-21-at-11-13-22.png"/>
+      </figure>
+      <p>The final security flaw, <a href="https://nvd.nist.gov/vuln/detail/CVE-2016-3062">CVE-2016-3062</a>, is a function issue in Libav before 11.7 and FFmpeg before 0.11 which can be exploited to cause denial-of-service (DoS) or RCE.  <br/><br/>Apps on the Google Play Store including AliExpress, Video MP3 Converter, and Lazada are believed to be affected. All of the applications mentioned have been downloaded millions of times.</p>
+      <figure>
+        <img src="https://zdnet4.cbsistatic.com/hub/i/r/2019/11/21/2a87686c-5a05-43b3-a953-48a1584a66ea/resize/470xauto/2b04e869ec40be94326ff59124e8de4c/screenshot-2019-11-21-at-11-13-29.png"/>
+      </figure>
+      <p>When it comes to this vulnerability, the Instagram application also originally appeared to be impacted by the Libav security flaw. However, when Check Point connected to Instagram's security team to discuss the scan, the Instagram team said:<br/><br/>"Confusingly there were two different patches created for this issue, <a href="https://github.com/FFmpeg/FFmpeg/commit/689e59b7ffed34eba6159dcc78e87133862e3746">one for FFmpeg 7 years ago</a> (which wasn't a CVE) and one for libav 3 years ago (which was a CVE), and then it appears that FFmpeg pulled the <a href="https://github.com/FFmpeg/FFmpeg/commit/7e01d48cfd168c3dfc663f03a3b6a98e0ecba328">second fix from libav</a> and now carries <a href="https://github.com/FFmpeg/FFmpeg/blame/master/libavformat/mov.c#L594,L588">both patches</a>, while either one would be sufficient."<br/><br/><b>CNET: </b><a href="https://www.cnet.com/news/best-password-managers-for-2019/?ftag=CMG-01-10aaa1b">The best password managers for 2019 and how to use them</a> <br/><br/>Despite all of these vulnerabilities being fixed years ago, due to failures to update aging libraries, they may remain a risk to today's users if developers fail to apply them.   <br/><br/>"Keeping track of all security updates in all external components of a sophisticated mobile app is a tedious task, and it's no surprise that few maintainers are willing to expend the effort," Check Point says. "Mobile app stores and security researchers do proactively scan apps for malware patterns, but devote less attention to long-known critical vulnerabilities. Unfortunately, this means there's not much the end-user can do to keep his mobile device fully secure."<br/><br/>Check Point Research notified the developers of the vulnerable applications, along with Google. Google requested that the research publication date was postponed by two weeks to give the company time to investigate, of which Check Point accepted. <br/><br/>Speaking to ZDNet, Check Point researcher Slava Makkaveev said:</p>
+      <blockquote>"We reported our findings to relevant apps' developers but none replied with information about the planned or applied fixes. We currently still don't have information about issued fixes."</blockquote>
+      <p>"Check Point reached out to us about this issue and informed us that affected developers have been notified. We are currently working to investigate their findings," a Google spokesperson told ZDNet. "Additionally, we recently <a href="https://android-developers.googleblog.com/2019/08/expanding-bug-bounties-on-google-play.html">expanded the scope</a> of our Google Play Security Reward Program to encourage further collaboration between app developers and the security community." <br/><br/><b>TechRepublic: </b><a href="https://www.techrepublic.com/article/how-can-you-protect-yourself-from-hackers-an-ibm-social-engineer-offers-advice/?ftag=CMG-01-10aaa1b">How can you protect yourself from hackers? An IBM social engineer offers advice</a> <br/><br/>Facebook disputed the findings, telling us, "People using Facebook services are not vulnerable to any of the issues highlighted by Check Point due to the design of our systems that use this code."<br/><br/>In related news this week, researchers from Checkmarx <a href="https://www.zdnet.com/article/android-vulnerability-lets-rogue-apps-take-photos-record-video-even-if-your-phone-is-locked/">disclosed vulnerabilities</a> in the Android ecosystem which could be exploited to hijack smartphone cameras to covertly take images and videos, even if a device is locked. Google confirmed the existence of the security flaws and issued a patch to resolve the bugs.</p>
+      <h3>Previous and related coverage</h3>
+      <ul>
+        <li>
+          <a href="https://www.zdnet.com/article/chameleon-gambling-apps-wiped-from-ios-store-google-play/">Chameleon gambling apps wiped from App Store, Google Play</a>
+        </li>
+        <li>
+          <a href="https://www.zdnet.com/article/gaming-photo-apps-in-google-play-infect-android-handsets-with-malware/">Gaming, photo apps in Google Play infect Android handsets with malware</a>
+        </li>
+        <li>
+          <a href="https://www.zdnet.com/article/this-is-how-malicious-android-apps-avoid-googles-security-vetting/">This is how malicious Android apps avoid Google's security vetting</a>
+        </li>
+      </ul>
+      <hr/>
+      <p><b>Have a tip?</b> Get in touch securely via WhatsApp | Signal at +447713 025 499, or over at Keybase: charlie0</p>
+      <hr/>
+    </article>
+  </body>
+</html>

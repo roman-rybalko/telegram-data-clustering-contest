@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://www.itworld.com/article/3455136/emergent-android-banking-trojan-shows-app-overlay-attacks-are-still-effective.html"/>
+    <meta property="og:site_name" content="ITworld"/>
+    <meta property="article:published_time" content="2019-11-21T11:11:00+00:00"/>
+    <meta property="og:title" content="Emergent Android banking Trojan shows app overlay attacks are still effective"/>
+    <meta property="og:description" content="By taking code from another Android Trojan, Anubis, the Ginp malware has enhanced itself and has begun targeting banks."/>
+  </head>
+  <body>
+    <article>
+      <h1>Emergent Android banking Trojan shows app overlay attacks are still effective</h1>
+      <address><time datetime="2019-11-21T11:11:00+00:00">21 Nov 2019, 11:11</time> by <a rel="author" href="https://www.itworld.com/author/Lucian-Constantin/" target="_blank">Lucian Constantin</a></address>
+      <p>Researchers are tracking an Android Trojan that’s been rapidly improving over the past several months. It uses overlay attacks to steal login credentials and payment card details from users of banking and other applications.</p>
+      <p>Dubbed Ginp, the Trojan was first spotted in October 2019, but has been in the wild since at least June, according to researchers from Dutch cybersecurity company ThreatFabric. During the past five months, the malware has received numerous improvements, including some features borrowed from an older commercial banking Trojan called Anubis.</p>
+      <h3>Ginp a developing threat</h3>
+      <p>Ginp started out as a new Trojan built from scratch that masqueraded as an app called Google Play Verificator. It stole incoming and outgoing SMS messages from devices. A later version, released in August added overlay attacks, which involves the display of windows on top of other applications when they’re opened.</p>
+      <p>Initially, the Trojan used a generic overlay window that asked users for payment card information when opening popular apps like Google Play, Facebook, WhatsApp, Chrome, Skype, Instagram and Twitter. Yet another iteration added payload obfuscation to make detection harder and added Snapchat and Viber to the targeted apps list, as well as dedicated overlays for specific banking apps.</p>
+      <p>The latest and current version of the Trojan, released earlier this month, brought major changes. The authors copied code from another Android Trojan called Anubis, leaked earlier this year, to enhance its overlay attacks. It now targets 24 apps from seven Spanish banks with unique overlays for each app that are dynamically loaded from a command-and-control server. The older generic overlay approach is still used, but only for Google Play. The other social and utility apps are no longer targeted.</p>
+      <p>The November 2019 version marks a change of modus operandi for the attackers, from an indiscriminate targeting of social app users to specific targeting of online banking customers. The focus is on Spanish banks for now, but this might change as attackers build overlays for other banking apps.</p>
+      <p>“Although the actual targets are Spanish banking applications, looking at the path used in the inject requests, it is noticeable that the path of the overlays includes the country code of the</p>
+      <p>target institution,” the ThreatFabric researchers said in <a href="https://www.threatfabric.com/blogs/ginp_a_malware_patchwork_borrowing_from_anubis.html">a report</a> published today. “This could indicate that actor(s) already have plans in expanding the target to applications from different countries and regions.”</p>
+      <h3>Overlay attacks continue</h3>
+      <p>Android malware has long used full-screen overlay attacks to phish credentials. Trojans use overlays that mimic the legitimate login screens of the targeted applications to trick users that they’ve been logged out and need to re-input their credentials or that they need to pass various verification steps, which involve providing personal and financial information.</p>
+      <p>To launch such attacks, Ginp and other malicious apps attempt to register themselves as accessibility services on devices and this step requires users’ approval. Therefore, it’s important for users to be careful about which apps they give accessibility permissions to.</p>
+      <p>The Android Accessibility Service API was designed to help users with visual, hearing and other types of disabilities. Among other things, it allows apps with this privilege to observe user actions on the phone, such as when they’re opening other applications and to inspect the windows of those applications. From an attacker perspective, this permission is required to determine when and which overlay to inject, such as when the user opens a specific app.</p>
+      <p>Once the Accessibility privilege is acquired, Ginp abuses it to grant itself additional permissions without user interaction such as the ability to make calls and send messages.</p>
+      <p>The Trojan’s overlays occur in two steps per application. First, the victims are asked to input their credentials for the targeted apps and then a second overlay is used to ask for payment card details, allegedly for identity verification purposes. If the user inputs the requested information, the apps are whitelisted by the Trojan and are not targeted again.</p>
+      <p>Google has been trying to crack down on overlay attacks for some time by marking injected windows more clearly and by tweaking and restricting the permissions required to make them work. However, the company needs to maintain a balance between security and usability.</p>
+      <p>For example, one permission that’s required to draw overlays is called SYSTEM_ALERT_WINDOW and this has legitimate uses, like the chat head bubbles used by Facebook Messenger. In Android Q (Android 10), which was released in September 2019, this permission will be active only for 30 seconds for sideloaded apps and until the system is rebooted for apps installed through Google Play.</p>
+      <p>The Android developers plan to completely deprecate this functionality in a future version of Android. However, giving <a href="https://developer.android.com/about/dashboards">the ecosystem’s version fragmentation</a>, a large percentage of devices will never be updated to Android Q or later versions, so overlay attacks are likely to remain a popular attack with criminals.</p>
+      <h3>Don’t sideload apps</h3>
+      <p>Android users should only install applications from Google Play, if the Play store is available in their country. Many Android Trojans are distributed through spam emails and fake web-based alerts and require users to sideload them -- installing apps manually after disabling the default security setting that blocks apps for untrusted sources.</p>
+      <p>That said, Google Play is not completely free of malware either, as attackers occasionally find ways to bypass Google’s scans and validation process. That is why it’s important to also inspect app ratings, user reviews and how long they’ve been in the store before deciding to install them. The use of anti-malware products for Android is also recommended as they provide an extra layer of protection and could detect malware that Google Play misses.</p>
+      <p>“The actual version of Ginp has the same capabilities as most other Android banking Trojans, such as the use of overlay attacks, SMS control and contact list harvesting,” the ThreatFabric researchers said. “Overall, it has a fairly common feature list, but it’s expected to expand during future updates. Since some of the code from the Anubis Trojan was already reused in Ginp, it's quite likely that new features, such as back-connect proxy, screen-streaming and Remote Access Trojan will also be added.”</p>
+      <p>
+        <i>This story, "Emergent Android banking Trojan shows app overlay attacks are still effective" was originally published by </i>
+        <a href="http://www.csoonline.com/">
+          <i>CSO</i>
+        </a>
+        <i>.</i>
+      </p>
+    </article>
+  </body>
+</html>

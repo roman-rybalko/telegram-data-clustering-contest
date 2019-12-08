@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://www.cnbeta.com/articles/tech/912043.htm"/>
+    <meta property="og:site_name" content="cnBeta"/>
+    <meta property="article:published_time" content="2019-11-18T20:43:00+00:00"/>
+    <meta property="og:title" content="改动寥寥几行代码：AMD锐龙Matlab性能暴涨最多258％"/>
+    <meta property="og:description" content="我们知道，一款硬件产品性能如何，不仅仅取决于硬件本身的设计，也要看驱动、软件的支持与优化，很多时候一些简单的优化调整就可以带来意想不到的效果。比如说流行、权威的数学计算环境Matlab，就针对Intel处理器有一项特殊优化，检测到是Intel处理器后就会利用IntelMKL(路径内核库)，并调用AVX2指令集，获得理想性能。"/>
+  </head>
+  <body>
+    <article>
+      <h1>改动寥寥几行代码：AMD锐龙Matlab性能暴涨最多258％</h1>
+      <address><time datetime="2019-11-18T20:43:00+00:00">18 Nov 2019, 20:43</time> by <a rel="author">ugmbbc</a></address>
+      <p>
+        <a href="https://www.cnbeta.com/topics/42.htm">
+          <pic src="https://static.cnbetacdn.com/topics/0a650ccf6b9da27.png"/>
+        </a>
+      </p>
+      <p>我们知道，一款硬件产品性能如何，不仅仅取决于硬件本身的设计，也要看驱动、软件的支持与优化，很多时候一些简单的优化调整就可以带来意想不到的效果。比如说<b>流行、权威的数学计算环境Matlab，就针对Intel处理器有一项特殊优化，检测到是Intel处理器后就会利用Intel MKL(路径内核库)，并调用AVX2指令集，获得理想性能。</b></p>
+      <hr/>
+      <p>
+        <b>而对于非<a href="https://c.duomai.com/track.php?site_id=242986&amp;euid=&amp;t=https://intel.jd.com/">Intel</a>处理器，比如说检测到是<a href="https://c.duomai.com/track.php?site_id=242986&amp;euid=&amp;t=https://amd-cpu.jd.com/">AMD</a>，Matlab就只会使用古老的SSE指令集，结果就是性能天差地别。</b>
+      </p>
+      <figure>
+        <img src="https://static.cnbetacdn.com/article/2019/1118/2888200536ec258.jpg"/>
+      </figure>
+      <p>Reddit网友Nedflanders1976研究后发现，AMD锐龙、线程撕裂者处理器在Matlab上也能开启AVX2指令集，从而获得性能暴涨！</p>
+      <p>根据这位网友给出的<a href="https://c.duomai.com/track.php?k=iRyUSQzUycwRHdo1Ddm0DZpVXZmkDN2ITPklWYmYDO5IDNy0DZp9VZ0l2cmUmchdHdm92cGJTJjZkMl42Yu02bj5SZy9GdzRnZvN3byNWat5yd3dnRyU">教程</a>，方法非常简单。<a href="https://microsoft.pvxt.net/x9Vg1">Windows</a>系统下可以创建一个只有如下四行代码的bat批处理文件，AMD处理器用户通过它启动Matlab，就可以开启AVX2指令集。</p>
+      <p>
+        <i>@echo off</i>
+      </p>
+      <p>
+        <i>set MKL_DEBUG_CPU_TYPE=5</i>
+      </p>
+      <p>
+        <i>call "%MKLROOT%\bin\mklvars.bat" MKL_DEBUG_CPU_TYPE=5</i>
+      </p>
+      <p>
+        <i>matlab.exe</i>
+      </p>
+      <figure>
+        <img src="https://static.cnbetacdn.com/article/2019/1118/a5b26ac3e65d8a4.jpg"/>
+      </figure>
+      <p>以上是临时方法，如果想永久生效，只需在高级系统属性里找到<i>MKL_DEBUG_CPU_TYPE</i>，将这个环境变量的值改为5，但注意任何使用MKL的程序都会受到影响。</p>
+      <figure>
+        <img src="https://static.cnbetacdn.com/article/2019/1118/2a0ec2f8011521b.png"/>
+      </figure>
+      <p>Linux用户也很简单，临时方法是输入以下命令并启动Matlab，永久方法则是编辑配置脚本并加入以下命令：</p>
+      <p>
+        <i>export MKL_DEBUG_CPU_TYPE=5 </i>
+      </p>
+      <p>
+        <b>根据实测，AMD锐龙处理器经过这样一番修改后，Matlab性能可以提升少则17％，多则258％！</b>
+      </p>
+      <figure>
+        <img src="https://static.cnbetacdn.com/article/2019/1118/f9c8ca7d66f80d1.png"/>
+      </figure>
+      <figure>
+        <img src="https://static.cnbetacdn.com/article/2019/1118/759613badb10d2a.jpg"/>
+      </figure>
+    </article>
+  </body>
+</html>

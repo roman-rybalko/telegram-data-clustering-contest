@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://www.bleepingcomputer.com/news/security/new-riplace-bypass-evades-windows-10-av-ransomware-protection/"/>
+    <meta property="og:site_name" content="BleepingComputer"/>
+    <meta property="article:published_time" content="2019-11-21T14:00:00+00:00"/>
+    <meta property="og:title" content="New RIPlace Bypass Evades Windows 10, AV Ransomware Protection"/>
+    <meta property="og:description" content="A new ransomware bypass technique called RIPlace requires only a few lines of code to bypass ransomware protection features built into many security products and Windows 10.​​​"/>
+  </head>
+  <body>
+    <article>
+      <h1>New RIPlace Bypass Evades Windows 10, AV Ransomware Protection</h1>
+      <address><time datetime="2019-11-21T14:00:00+00:00">21 Nov 2019, 14:00</time> by <a rel="author" href="https://www.bleepingcomputer.com/author/lawrence-abrams/" target="_blank">Lawrence Abrams</a></address>
+      <figure>
+        <img src="https://www.bleepstatic.com/content/hl-images/2018/09/21/cyber-lock.jpg"/>
+      </figure>
+      <p>A new ransomware bypass technique called RIPlace requires only a few lines of code to bypass ransomware protection features built into many security products and Windows 10.​​​</p>
+      <p>With ransomware being such an epidemic for consumers and businesses, security software and Windows have built ransomware protections features into their software.</p>
+      <p>A new technique called RIPlace was disclosed today by security researchers Daniel Prizmant, Guy Meoded, Freddy Ouzan, and Hanan Natan at endpoint protection firm <a href="http://www.nyotron.com/">Nyotron</a> that encrypts files in a way that these ransomware protection solutions miss and thus the files become encrypted.</p>
+      <p>Discovered in 2018, Nyotron responsibly disclosed the RIPlace bypass technique to security software vendors and Microsoft, but the researchers were told that since no ransomware was using, it was seen as a non-issue.</p>
+      <p>"Nyotron followed responsible disclosure practices by informing security vendors of the issue – six months ago. However, only one vendor was responsive and prompt, addressing the issue in all its products. The rest of the industry (including one major tech vendor) seem to view RIPlace as a non-issue because it has not yet been seen in the wild. "</p>
+      <p>Nyotron told BleepingComputer that they tested RIPlace against over a dozen vendors including Microsoft, Symantec, Sophos, McAfee, Carbon Black, Kaspersky, Crowdstrike, PANW Traps, Trend Micro, Cylance, SentinelOne, and Malwarebytes.</p>
+      <p>Only Kaspersky and Carbon Black modified their software to prevent this technique.</p>
+      <p>BleepingComputer only verified that the RIPlace technique can bypass CFA as demonstrated below.</p>
+      <h3>The RIPlace ransomware protection bypass</h3>
+      <p>According to Nyotron, ransomware will encrypt a victim's files and replace them with encrypted data using one of the three methods below. In our experience working with ransomware, methods #1 and #2 are the most common.</p>
+      <ol>
+        <li>Writing the encrypted data from memory to the original file.</li>
+        <li>Writing the encrypted data from memory to a new file and then deleting the old one.</li>
+        <li>Writing the encrypteddata from memory to a new file and then using the Rename call to replace the original file.</li>
+      </ol>
+      <p>For a ransomware protection feature to properly work, all three options must be protected by the security software's filter-driver.</p>
+      <p>Unfortunately, Nyotron discovered that performing option three to replace files, and doing it in a special way, allows the bypassing of the protection feature as illustrated below.</p>
+      <figure>
+        <img src="https://www.bleepstatic.com/images/news/security/r/RIPlace/flowhcart.jpg"/>
+        <figcaption>Different methods of saving encrypted files<br/>(Click to enlarge)</figcaption>
+      </figure>
+      <p>RIPlace works by using the <a href="https://docs.microsoft.com/en-us/windows/win32/api/fileapi/nf-fileapi-definedosdevicew">DefineDosDevice</a> function to create a DOS device, such as <code><b>\\.\RIPlace,</b></code> that links to the file being encrypted. This DOS device is then passed as the target path for a Rename function, and as a DOS device name are not expected, it returns an error.</p>
+      <p>As the ransomware protection's MiniFilter driver sees an error, nothing is blocked, but the Rename still succeeds.</p>
+      <p>If prior to calling Rename, we call DefineDosDevice (a legacy function that creates a symlink), we can pass an arbitrary name as the device name, and the original file path, as the target to point on. This way we can get our device "XY" to refer to "C:\passwords.txt".</p>
+      <p>The RIPlace discovery is that in the callback function filter driver fails to parse the destination path when using the common routine FltGetDestinationFileNameInformation. It returns an error when passing a DosDevice path (instead of returning the path, postprocessed); however, the Rename call succeeds.</p>
+      <p>What this all comes down to, is that a ransomware developer simply needs to change a few lines of code in order to bypass ransomware protection features.</p>
+      <p>While the changes are fairly simple, this may create a bit more overhead compared to using the normal methods, but this would need to be further tested to know for sure.</p>
+      <h3>RIPlace against Windows 10 Controlled Folder Access</h3>
+      <p>When researchers come out with a new technique that reportedly works against a wide variety of security program's ransomware protection features, I knew I had to give it a test of my own.</p>
+      <p>Nyotron provided BleepingComputer a copy of their PoC program prior to their report being published and we tested it against Microsoft's <a href="https://www.bleepingcomputer.com/news/microsoft/windows-10s-controlled-folder-access-anti-ransomware-feature-is-now-live/">Controlled Folder Access</a> (CFA) ransomware protection feature.</p>
+      <p>As you can see below, Controlled Folder Access is enabled and running on the latest version of Windows 10 1909, with all updates installed.</p>
+      <figure>
+        <img src="https://www.bleepstatic.com/images/news/security/r/RIPlace/cfa-enabled.jpg"/>
+        <figcaption>Controlled Folder Access enabled in Windows 10</figcaption>
+      </figure>
+      <p>For our test, we created a 'test' folder on our desktop and added it as a protected folder in CFA.</p>
+      <figure>
+        <img src="https://www.bleepstatic.com/images/news/security/r/RIPlace/protected-test-folder.jpg"/>
+        <figcaption>Protecting the Test folder</figcaption>
+      </figure>
+      <p>This folder contains four JPG images that I will use to test the RIPlace ransomware protection bypass.</p>
+      <figure>
+        <img src="https://www.bleepstatic.com/images/news/security/r/RIPlace/image-folder.jpg"/>
+        <figcaption>Folder containing images</figcaption>
+      </figure>
+      <p>The RIPlace demo tool will use encrypt the file using XOR and then use the RIPlace technique to replace the files without being blocked by Controlled Folder Access.</p>
+      <p>For this test, I used it to encrypt the error-screen.jpg shown in the folder above.</p>
+      <figure>
+        <img src="https://www.bleepstatic.com/images/news/security/r/RIPlace/riplace-encrypting.jpg"/>
+        <figcaption>Encrypting a file in with RIPlace</figcaption>
+      </figure>
+      <p>After pressing yes, RIPlace was successfully able to encrypt the file as indicated by the thumbnail no longer being visible in the folder.</p>
+      <figure>
+        <img src="https://www.bleepstatic.com/images/news/security/r/RIPlace/file-encrypted.jpg"/>
+        <figcaption>File Encrypted</figcaption>
+      </figure>
+      <p>Furthermore, when we hex edited the file, all of the data was encrypted.</p>
+      <figure>
+        <img src="https://www.bleepstatic.com/images/news/security/r/RIPlace/hex-edit.jpg"/>
+        <figcaption>Hex edit of encrypted file</figcaption>
+      </figure>
+      <p>When we asked Microsoft about this technique, they told BleepingCmputer that this technique is not considered a vulnerability and as CFA is a defense-in-depth feature, it does not satisfy their <a href="http://www.microsoft.com/en-us/msrc/windows-security-servicing-criteria?rtc=1">security servicing criteria</a>.</p>
+      <p>"The technique described is not a security vulnerability and does not satisfy our Security Servicing Criteria. Controlled folder access is a defense-in-depth feature and the reported technique requires elevated permissions on the target machine."</p>
+      <p>While this may not satisfy Microsoft security servicing criteria, it would make sense for this issue to be fixed proactively rather than wait for customer's files to be encrypted even when CFA is enabled.</p>
+      <p>Nyotron created a video demonstrating the CFA bypass as well, which can be viewed below. Nyotron has also created a section on their site with <a href="https://www.nyotron.com/riplace/">more information</a> about this bypass.</p>
+      <figure>
+        <iframe src="https://www.youtube.com/embed/S2On-R6ecik" width="640" height="360" data-service="Youtube" scrolling="no"/>
+      </figure>
+    </article>
+  </body>
+</html>

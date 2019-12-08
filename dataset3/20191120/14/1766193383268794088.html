@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://www.heise.de/newsticker/meldung/Optimierte-Rechenfunktionen-AVX2-Fix-befluegelt-AMDs-Ryzen-Prozessoren-4592620.html"/>
+    <meta property="og:site_name" content="heise online"/>
+    <meta property="article:published_time" content="2019-11-20T14:33:00+00:00"/>
+    <meta property="og:title" content="Optimierte Rechenfunktionen: AVX2-Fix beflügelt AMDs Ryzen-Prozessoren"/>
+    <meta property="og:description" content="Intels Programmierbibliothek Math Kernel Library benachteiligt AMD-Prozessoren, wenn man sie unbedacht nutzt."/>
+  </head>
+  <body>
+    <article>
+      <h1>Optimierte Rechenfunktionen: AVX2-Fix beflügelt AMDs Ryzen-Prozessoren</h1>
+      <h2>Intels Programmierbibliothek Math Kernel Library benachteiligt AMD-Prozessoren, wenn man sie unbedacht nutzt.</h2>
+      <address><time datetime="2019-11-20T14:33:00+00:00">20 Nov 2019, 14:33</time> by <a rel="author">Mark Mantel</a></address>
+      <p>Die Programmierbibliothek Math Kernel Library (MKL) von Intel setzt je nach vorhandenem Prozessor unterschiedliche CPU-Instruktionen ein. Intels aktuelle Modelle laufen mit effizienten Advanced Vector Extensions (AVX2 und AVX-512). Bei AMD-CPUs fällt MKL stets auf die alten Streaming SIMD Extensions (SSE) zurück, obwohl Ryzen-Prozessoren AVX(2) beherrschen. Wenige Zeilen Code in einer Batch-Datei beheben das Problem unter Windows und beschleunigen Ryzen-CPUs deutlich – teilweise ist die Rede von 400 Prozent.</p>
+      <p>Die Batch-Datei forciert unabhängig vom eingebauten Prozessor die Nutzung von AVX2-Instruktionen in einer MKL-Anwendungen und hebelt somit den SSE-Fallback-Modus aus. <a href="https://www.reddit.com/r/matlab/comments/dxn38s/howto_force_matlab_to_use_a_fast_codepath_on_amd/">Auf Reddit gibt es eine Anleitung</a> zur Erstellung. Alternativ ist die Einstellung per Systemvariable möglich.</p>
+      <h3>Unter anderem Matlab, NumPy und SymPy betroffen</h3>
+      <p>Entwickler setzen MKL bei mathematischen Anwendungen wie Matlab, NumPy und SymPy ein. AMD stellt eine eigene, optimierte Programmierbibliothek unter anderem mit den betroffenen Basic Linear Algebra Subprograms (BLAS) ausschließlich für Linux-Betriebssysteme und nicht für Windows bereit – <a href="https://developer.amd.com/amd-aocl/">AMD Optimizing CPU Libraries (AOCL) genannt</a>.</p>
+      <p>Das Problem mit MKL auf AMD-Prozessoren ist schon seit etwa 10 Jahren bekannt. Schon <a href="https://www.agner.org/optimize/blog/read.php?i=49#49">2009 berichtete der anerkannte Experte Agner Fog über das Problem</a>. Die Benachteiligung von AMD-Prozessoren durch Intel-Compiler wurde zudem <a href="http://www.heise.de/ct/artikel/Prozessorgefluester-890110.html">von der US-Wettbewerbsaufsicht FTC untersucht</a>, weshalb Intel seither darauf hinweisen muss. Dass die optimierte Intel-MKL trotzdem in gängigen Programmpaketen zum Einsatz kommt, liegt letztlich in der Verantwortung von deren Entwicklern.</p>
+      <p>Das Thema erhält jetzt neue Beachtung, nachdem AMD die Ryzen-3000-Prozessoren vorgestellt und die <a href="https://www.heise.de/meldung/Ryzen-Threadripper-3000-32-Kern-Prozessor-kommt-fuer-2000-US-Dollar-4579648.html">Ryzen Threadripper 3000 angekündigt hat</a>. Die Zen-2-Rechenkerne beider CPU-Serien haben gegenüber den Vorgängern breitere Gleitkomma-Einheiten für schnellere AVX2-Berechnungen erhalten. (<a href="mailto:mma@heise.de">mma</a>)</p>
+    </article>
+  </body>
+</html>
