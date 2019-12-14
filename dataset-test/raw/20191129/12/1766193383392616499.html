@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://www.heise.de/newsticker/meldung/Windows-Server-2012-Update-Installationsschleife-nach-November-Patchday-4599265.html"/>
+    <meta property="og:site_name" content="heise online"/>
+    <meta property="article:published_time" content="2019-11-29T12:28:00+00:00"/>
+    <meta property="og:title" content="Windows Server 2012: Update-Installationsschleife nach November-Patchday"/>
+    <meta property="og:description" content="Einige Administratoren kämpfen derzeit mit dem Problem, dass ihre Windows Server 2012 in einer Update-Installationsschleife festhängen. Es gibt aber Abhilfe."/>
+  </head>
+  <body>
+    <article>
+      <h1>Windows Server 2012: Update-Installationsschleife nach November-Patchday</h1>
+      <h2>Einige Administratoren kämpfen derzeit mit dem Problem, dass ihre Windows Server 2012 in einer Update-Installationsschleife festhängen. Es gibt aber Abhilfe.</h2>
+      <address><time datetime="2019-11-29T12:28:00+00:00">29 Nov 2019, 12:28</time> by <a rel="author">Günter Born</a></address>
+      <p>Seit einiger Zeit berichten Admins in diversen Internetforen von Fällen, in denen Server mit Windows Server 2012 beim Installieren der November-Updates in eine Installations-Schleife geraten. Eine offizielle Bestätigung des Problems oder gar Lösungsvorschläge von Microsoft gibt es bislang nicht – wohl aber Workarounds sowie Empfehlungen dazu, wie sich das Problem möglicherweise von vornherein vermeiden lässt.</p>
+      <figure>
+        <img src="https://www.heise.de/imgs/18/2/7/9/7/6/3/2/Update-Loop-a43bb323ab32c2f6.png"/>
+        <figcaption>
+          <cite>(Bild: Screenshot)</cite>
+        </figcaption>
+      </figure>
+      <p>Dem Autor dieses Beitrags wurde das Problem bereits Anfang November von einem betroffenen Administrator und später auch von weiteren Betroffenen gemeldet. Dieser bemerkte bei einigen Windows-Server 2012-Instanzen beim Neustart nach einer Update-Installation, dass die Updates im Updateverlauf mit dem Status "Pending restart" aufgeführt wurden, obwohl bereits ein Neustart ausgeführt worden war.</p>
+      <p>In <a href="https://social.technet.microsoft.com/Forums/en-US/d1a9bf15-99e9-458f-b942-e387308ad1a6/windows-server-2012-stuck-in-reboot-loop-8220configuring-updates-stage-2-of-4quot?forum=winserver8gen">Microsofts Technet-Forum beschreibt ein Betroffener</a> das gleiche Fehlerbild. Dort blieben ca. 80% der betreuten Systeme mit Windows Server 2012 bei der Update-Installation während des Neustarts mit der Meldung "Configuring Updates: Stage 2 of 4" hängen.</p>
+      <h3>Zwei Workarounds zum Beenden der Update-Schleife</h3>
+      <p>Im Internet beschreiben mehrere Admins einen einfachen Workaround: Er besteht darin, die betreffenden Windows-Server 2012-Instanzen im abgesicherten Modus (Safe Mode) starten zu lassen, in dem sie die Installation dann tatsächlich erfolgreich abschlossen. Der abgesicherte Modus bewirkt, dass nur grundlegende Windows-Funktionen mit einem begrenzten Satz an Dateien und Treibern ausgeführt werden. <a href="https://support.microsoft.com/de-de/help/12376/windows-10-start-your-pc-in-safe-mode">Der Aufruf des abgesicherten Modus wird in diesem Microsoft-Dokument beschrieben</a>.</p>
+      <p><a href="https://www.borncity.com/blog/2019/11/27/windows-server-2012-geht-in-update-schleife/">Im Blog des Artikelautors skizzierten betroffene Administratoren einen zweiten Ansatz zur Lösung des Installationsproblems</a>. Dabei ist zuerst die Installation der Updates anzustoßen. Vor dem Neustart zum Abschließen der Installation setzt man den Dienst "Windows Modules Installer" auf "Automatisch". Wird nun der Neustart eingeleitet, beginnt die Fertigstellung der Update-Installation, wobei es (abhängig von der Zahl der anstehenden Updates) zu weiteren Neustarts kommen kann. In einigen Fällen kann es auch sehr lange dauern, bis die Installation erfolgreich durchgelaufen ist.</p>
+      <h3>Mögliche Vorsorgemaßnahme: SSUs einzeln installieren</h3>
+      <p>Als Ursache für die Update-Installationsschleife ist ein fehlendes aktuelles Servicing Stack Update (SSU) denkbar.</p>
+      <p>Microsoft stellt zwar regelmäßig solche SSUs bereit, die jeweils vor den übrigen Updates installiert werden sollten, um möglichen Installationsproblemen vorzubeugen. Bei einer automatischen Update-Installation kommt es aber zu dem Problem, dass die Installationsreihenfolge der Patches nicht mehr passt: Dann wird das Rollup-Update (also das aktuelle Update-Paket) vor dem Servicing Stack Update (SSU) zur Installation eingeplant und der Vorgang schlägt fehl. In vielen Fällen korrigiert sich dies dadurch, dass Windows nach dem Scheitern der Installation erneut die Updates anbietet und beim nächsten Durchlauf das SSU zur Installation vorzieht.</p>
+      <p>In <a href="https://www.borncity.com/blog/2019/11/27/windows-server-2012-geht-in-update-schleife/#comment-81056">einem Kommentar im Blog des Autors</a> berichtet ein Betroffener, dass er die (zuvor auch von ihm beobachtete) Update-Schleife durch eine strikte, separate Vorab-Installation des Servicing Stack Update für den betreffenden Monat erfolgreich umgehen konnte. In den <a href="https://www.catalog.update.microsoft.com/ScopedViewInline.aspx?updateid=5fa2a68f-e7cd-43c7-a48a-5e080472cb77">Update-Details für das Servicing Stack Update KB4523208</a> weist Microsoft explizit darauf hin, dass dieses separat installiert werden muss.</p>
+      <h3>Weitere vermutete Problemursachen</h3>
+      <p>Der Admin, der den Autor dieser Meldung initial kontaktierte, äußerte die Vermutung, dass die Update-Schleife mit dem Feature "Desktop Experience" zusammenhängen könnte.</p>
+      <p>Weiterhin nennt <a href="https://social.technet.microsoft.com/Forums/en-US/d1a9bf15-99e9-458f-b942-e387308ad1a6/windows-server-2012-stuck-in-reboot-loop-8220configuring-updates-stage-2-of-4quot?forum=winserver8gen">im Technet-Forum</a> ein Administrator das Microsoft Tool zum Entfernen bösartiger Software (Malicious Software Removal Tool, MSRT), welches monatlich als Update KB890830 verteilt wird, als (auf seinem System) reproduzierbare Ursache für das Problem. Die Installationsschleife trat seinen Beobachtungen zufolge auf allen Servern auf, wenn das MSRT per Windows Server Update Services (WSUS) freigegeben und zusammen mit anderen Updates auf den Server-Instanzen installiert wurde. Auf Maschinen, auf denen das MSRT zur Installation gesperrt wurde, habe die Update-Installation hingegen problemlos geklappt.</p>
+      <p>Letztlich bleibt abzuwarten, ob sich Microsoft noch zu dem Problem äußern und die Ursache(n) benennen wird. (<a href="mailto:ovw@heise.de">ovw</a>)</p>
+    </article>
+  </body>
+</html>

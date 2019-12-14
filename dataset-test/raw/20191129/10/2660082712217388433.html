@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://virgool.io/@p.kalantar.n/%D8%A2%D9%85%D9%88%D8%B2%D8%B4-react-native-%D9%82%D8%B3%D9%85%D8%AA-%D9%87%D9%81%D8%AA%D9%85-zts8bxpnzyyp"/>
+    <meta property="og:site_name" content="ویرگول"/>
+    <meta property="article:published_time" content="2019-11-29T10:17:34+00:00"/>
+    <meta property="og:title" content="آموزش React native-قسمت هفتم"/>
+    <meta property="og:description" content="سلام این قسمت آموزش React native کامپوننت ها Component ها و API هاکدهای پلتفرم محور برای React Native Apps وتصاویر در React Native"/>
+  </head>
+  <body>
+    <article>
+      <h1>آموزش React native-قسمت هفتم</h1>
+      <address><time datetime="2019-11-29T10:17:34+00:00">29 Nov 2019, 10:17</time> by <a rel="author" href="https://virgool.io/@p.kalantar.n" target="_blank">p.kalantar.n</a></address>
+      <figure>
+        <img src="https://files.virgool.io/upload/users/67887/posts/zts8bxpnzyyp/lqq9d7qqkb6q.gif"/>
+      </figure>
+      <p>
+        <b>
+          <a href="https://virgool.io/@p.kalantar.n/%D8%A2%D9%85%D9%88%D8%B2%D8%B4-react-native-hfoayjfnpyds">بخش اول آموزش React Native</a>
+        </b>
+      </p>
+      <p>سلام در<a href="https://virgool.io/@p.kalantar.n/%D8%A2%D9%85%D9%88%D8%B2%D8%B4-react-native-%D9%82%D8%B3%D9%85%D8%AA-%D8%B4%D8%B4%D9%85-h6tx5d1ore1i"> <i>بخش ششم آموزش React Native</i></a><a href="https://virgool.io/@p.kalantar.n/%D8%A2%D9%85%D9%88%D8%B2%D8%B4-react-native-%D8%A8%D8%AE%D8%B4-%D8%B3%D9%88%D9%85-vkhlqrgcyybs"> </a><b>استفاده از Fetch , Web Socket, کتابخانه های معروف ,تنظیماتی برای بهبود عملکرد Flat list و لیست List item ها در React Native</b> را یاد گرفتیم .<b> حال با بخش ششم با ما همراه باشید:</b></p>
+      <p>
+        <b>کامپوننت ها Component ها و API ها در React Native:</b>
+      </p>
+      <p>ری اکت React Native چندین component built-in دارد. لیست کاملی از component ها و API ها در این سایت موجود است. اگر نمی دانید از کجا شروع کنید، یکی از دسته بندی های زیر مناسب است:</p>
+      <p>· کامپوننت های component های پایه</p>
+      <p>· رابط کاربری User Interface</p>
+      <p>· لیست List View ها</p>
+      <p>· کامپوننت component های اختصاصی iOS</p>
+      <p>· کامپوننت component های اختصاصی android</p>
+      <p>· کامپوننت component های دیگر</p>
+      <p>
+        <b>
+          <a href="http://www.tahlildadeh.com/CourseDetails/1176/%d8%af%d9%88%d8%b1%d9%87-%d8%a2%d9%85%d9%88%d8%b2%d8%b4-React-Native.aspx">آموزش React Native</a>
+        </b>
+      </p>
+      <p>البته شما محدود به component ها و API های React Native نیستید. React Native جامعه ای از توسعه دهندگان است. اگر دنبال کتابخانه ای با کاربردی مشخص می گردید، می توانید npm registry را برای package های <a href="https://www.npmjs.com/search?q=react-native&amp;page=1&amp;ranking=optimal">React Native</a> نگاه کنید. و یا نگاهی به <a href="http://www.awesome-react-native.com/">Awesome React Native</a> بیندازید.</p>
+      <p>کامپوننت <b>component های پایه</b></p>
+      <p>اغلب application ها از یکی از این component ها استفاده می کنند. اگر تازه با React Native آشنا شده اید، بهتر است با آن ها آشنا شوید.</p>
+      <p>چشم انداز View: اساسی ترین component برای ساخت یک UI</p>
+      <p>متن Text: component برای نمایش متن</p>
+      <p>عکس Image: component برای نمایش عکس</p>
+      <p>ورودی متن TextInput: component برای دریافت متن از طریق keyboard</p>
+      <p>اسکرول ScrollView: یک container با قابلیت scroll که می تواند چندین View و component را درخود نگه دارد.</p>
+      <p>استایل StyleSheet: یک لایه انتزاعی مشابه stylesheet های CSS</p>
+      <p>
+        <b>User Interface</b>
+      </p>
+      <p>از طریق این component ها می توان المان های کنترلی را render کرد.</p>
+      <p>دکمه Button: یک component پایه ی button برای دریافت تعاملات کاربر از طریق touch صفحه</p>
+      <p>جمع کننده Picker: یک component Picker native در iOS و android</p>
+      <p>اسلایدر Slider: component برای انتخاب یک مقدار از بین بازه ای از مقادیر</p>
+      <p>سوییچ Switch: برای دریافت ورودی های Boolean</p>
+      <p>
+        <b>List View ها</b>
+      </p>
+      <p>برخلاف ScrollView، این component ها فقط المان هایی که در لحظه در صفحه نمایش داده می شود را render می کنند و برای لیست هایی با دیتای زیاد مناسب هستند.</p>
+      <p>فلت FlatList: component با قابلیت scroll برای نمایش لیست</p>
+      <p>لیست SectionList: مشابه FlatList با امکان بخش بندی لیست و افزودن تیتر به هر بخش</p>
+      <p>
+        <b>کامپوننت component ها و API های ویژه iOS</b>
+      </p>
+      <p>اغلب این component ها در حقیقت به عنوان wrapper برای کلاس های رایج UIKit عمل می کنند.</p>
+      <p>اکشن ActionSheetIOS: برای نمایش یک action sheet یا share sheet</p>
+      <p>آلرت AlertIOS: یک alert dialog به همراه پیام یا یک notification برای دریافت ورودی از کاربر</p>
+      <p>دیت DatePickerIOS: یک date/time picker (selector) برای iOS render می کند.</p>
+      <p>عکس ImagePickerIOS: یک image picker برای iOS render می کند.</p>
+      <p>پیمایش NavigatorIOS: یک wrapper برای کلاس UINavigationController، که می توانید با آن یک navigation stack بسازید.</p>
+      <p>پیشرفت ProgressViewIOS: یک UIProgressView برای iOS render می کند.</p>
+      <p>پوش PushNotificationIOS: notification ها، شامل مدیریت مجوزها و icon badge number، را برای application مدیریت می کند.</p>
+      <p>سگمنت SegmentedControlIOS: یک UISegmentedControl برای iOS render می کند.</p>
+      <p>TabBarIOS:</p>
+      <p>یک UITabViewController را برای iOS render می کند. به همراه TabBarIOS.Item استفاده شود.</p>
+      <p>
+        <b>کامپوننت ها component ها و API های ویژه android</b>
+      </p>
+      <p>اغلب این component ها در حقیقت به عنوان wrapper برای کلاس های رایج androidعمل می کنند.</p>
+      <p>BackHandler:</p>
+      <p>دکمه سخت افزاری بازگشت را شناسایی می کند.</p>
+      <p>DatePickerAndroid:</p>
+      <p>یک date picker استاندارد android را باز می کند.</p>
+      <p>DrawerLayoutAndroid:</p>
+      <p>یک DrawerLayout android را render می کند.</p>
+      <p>PermissionsAndroid:</p>
+      <p>امکان کار با مدل permission های معرفی شده در Android M را می دهد.</p>
+      <p>ProgressBarAndroid:</p>
+      <p>یک ProgressBar android را render می کند.</p>
+      <p>TimePickerAndroid:</p>
+      <p>یک time picker استاندارد android باز می کند.</p>
+      <p>ToastAndroid:</p>
+      <p>یک notification Toast android می سازد.</p>
+      <p>ToolbarAndroid:</p>
+      <p>یک Toolbar android را render میکند.</p>
+      <p>ViewPagerAndroid:</p>
+      <p>یک container برای حرکت به چپ و راست بین child view ها</p>
+      <p>
+        <b>کامپوننت component های دیگر</b>
+      </p>
+      <p>این component ها برای کاربردهای خاصی استفاده می شوند. برای لیست کامل <b>component ها و API ها، </b>بخش مربوطه را ببینید.</p>
+      <p>ActivityIndicator:</p>
+      <p>یک نشانگر دایره ای برای loading نمایش می دهد.</p>
+      <p>Alert:</p>
+      <p>یک صفحه هشدار با تیتر و متن خاص نمایش می دهد.</p>
+      <p>Animated:</p>
+      <p>کتابخانه ای برای ایجاد انیمیشن که براحتی قابل ساخت و استفاده هستند</p>
+      <p>Clipboard:</p>
+      <p>واسطی برای دریافت و مقداردهی به محتوای clipboard در android و iOS</p>
+      <p>Dimensions:</p>
+      <p>واسطی برای دریافت ابعاد device</p>
+      <p>KeyboardAvoidingView:</p>
+      <p>یک view که به صورت خودکار در صورت وجود keyboard مجازی، کنار می رود.</p>
+      <p>Linking:</p>
+      <p>یک واسط کلی برای کار با link هایی که به application وارد می شوند و یا link هایی که از application خارج می شود.</p>
+      <p>Modal:</p>
+      <p>روشی برای نمایش محتوا روی یک view</p>
+      <p>PixelRatio:</p>
+      <p>امکان دسترسی به pixel density device را می دهد.</p>
+      <p>RefreshControl:</p>
+      <p>این component درون یک ScrollView استفاده می شود.</p>
+      <p>StatusBar:</p>
+      <p>کامپوننت component برای کنترل status bar application</p>
+      <p>WebView:</p>
+      <p>کامپوننت component که محتوای تحت وب را درون یک view native نمایش می دهد.</p>
+      <p>
+        <a href="http://www.tahlildadeh.com/CourseDetails/1176/%d8%af%d9%88%d8%b1%d9%87-%d8%a2%d9%85%d9%88%d8%b2%d8%b4-React-Native.aspx">آموزش React Native</a>
+      </p>
+      <h3>کدهای پلتفرم - محور برای React Native Apps</h3>
+      <p>هنگام ساخت یک application که روی پلتفرم های مختلف قابلیت اجرا دارد، می خواهیم تا جایی که ممکن است از کدهای یکسان در بخش های مختلف بارها استفاده کنیم. با این حال، سناریوهای زیادی ممکن است پیش بیاید که در آن کدها باید متفاوت باشند، برای مثال ممکن است بخواهیم المان های بصری متفاوتی برای application android و iOS خود استفاده کنیم.</p>
+      <p>ری اکت React Native دو روش برای سازماندهی به کد و جدا کردن آن براساس پلتفرم در اختیار می گذارد:</p>
+      <p>· استفاده از Platform module</p>
+      <p>· استفاده از platform-specific file extensions</p>
+      <p>بعضی component ها ممکن است ویژگی هایی داشته باشند که فقط روی یک پلتفرم کار کند. همه این ویژگی ها با @platform نشانه گذاری شده اند.</p>
+      <p>ری اکت React Native ماژولی در اختیار می گذارد که پلتفرمی که application در آن درحال اجراست را، شناسایی می کند. می توانید از این منطق برای نوشتن کدهای پلتفرم - محور خود استفاده کنید. این روش را فقط زمانی بکار ببرید که بخش کوچکی از component پلتفرم - محور است.</p>
+      <p>
+        <b>import {Platform, StyleSheet} from 'react-native';</b>
+      </p>
+      <p>
+        <b>const styles = StyleSheet.create({</b>
+      </p>
+      <p>
+        <b>height: Platform.OS === 'ios' ? 200 : 100,</b>
+      </p>
+      <p>
+        <b>});</b>
+      </p>
+      <p>هنگام اجرای application روی iOS، Platform.OS برابر ios خواهد بود و هنگام اجرا روی android برابر android خواهد بود.</p>
+      <p>همچنین یک متد Platform.select هم موجود است، که اگر object حاوی Platform.OS ، به عنوان ورودی به آن بدهیم، مقداری را برمی گرداند که مختص پلتفرمی است که کد روی آن درحال اجراست.</p>
+      <p>
+        <b>import {Platform, StyleSheet} from 'react-native';</b>
+      </p>
+      <p>
+        <b>const styles = StyleSheet.create({</b>
+      </p>
+      <p>
+        <b>container: {</b>
+      </p>
+      <p>
+        <b>flex: 1,</b>
+      </p>
+      <p>
+        <b>...Platform.select({</b>
+      </p>
+      <p>
+        <b>ios: {</b>
+      </p>
+      <p>
+        <b>backgroundColor: 'red',</b>
+      </p>
+      <p>
+        <b>},</b>
+      </p>
+      <p>
+        <b>android: {</b>
+      </p>
+      <p>
+        <b>backgroundColor: 'blue',</b>
+      </p>
+      <p>
+        <b>},</b>
+      </p>
+      <p>
+        <b>}),</b>
+      </p>
+      <p>
+        <b>},</b>
+      </p>
+      <p>
+        <b>});</b>
+      </p>
+      <p>نتیجه ی این کد یک container است که روی هر دو پلتفرم flex: 1 دارد، و روی iOS یک background قرمز، و روی application یک background آبی خواهد داشت.</p>
+      <p>از آنجا که هر مقداری می گیرد، می توانید از آن برای برگرداندن component هم استفاده کنید، برای مثال:</p>
+      <p>
+        <b>const Component = Platform.select({</b>
+      </p>
+      <p>
+        <b>ios: () =&gt; require('ComponentIOS'),</b>
+      </p>
+      <p>
+        <b>android: () =&gt; require('ComponentAndroid'),</b>
+      </p>
+      <p>
+        <b>})();</b>
+      </p>
+      <p>
+        <b>&lt;Component /&gt;;</b>
+      </p>
+      <p>
+        <b>تشخیص version application</b>
+      </p>
+      <p>در application، ماژول Platform میتواند برای شناسایی نسخه android که application روی آن درحال اجراست، استفاده شود.</p>
+      <p>
+        <b>import {Platform} from 'react-native';</b>
+      </p>
+      <p>
+        <b>if (Platform.Version === 25) {</b>
+      </p>
+      <p>
+        <b>console.log('Running on Nougat!');</b>
+      </p>
+      <p>
+        <b>}</b>
+      </p>
+      <p>
+        <b>تشخیص version iOS</b>
+      </p>
+      <p>در iOS، Version خروجی -[UIDevice systemVersion] است، که رشته ای حاوی version فعلی OS آن است. یک نمونه از version سیستم "10.3" است. برای مثال، برای تشخیص major version number در iOS:</p>
+      <p>
+        <b>import {Platform} from 'react-native';</b>
+      </p>
+      <p>
+        <b>const majorVersionIOS = parseInt(Platform.Version, 10);</b>
+      </p>
+      <p>
+        <b>if (majorVersionIOS &lt;= 9) {</b>
+      </p>
+      <p>
+        <b>console.log('Work around a change in behavior');</b>
+      </p>
+      <p>
+        <b>}</b>
+      </p>
+      <p>
+        <b>Platform-specific extensions</b>
+      </p>
+      <p>وقتی کد پلتفرم - محور پیچیده ای دارید، بهتر است کدها را در فایل های جداگانه بگذارید. React Native فایل های با پسوند .ios. و .android. را تشخیص می دهد و هنگام نیاز، آن ها را در پلتفرم مختص خودشان load می کند.</p>
+      <p>برای مثال، فرضا دو فایل زیر را در پروژه خود دارید:</p>
+      <p>BigButton.ios.js</p>
+      <p>BigButton.android.js</p>
+      <p>می توانید component را به صورت زیر به کار ببرید:</p>
+      <p>import BigButton from './BigButton';</p>
+      <p>ری اکت React Native به صورت اتوماتیک براساس پلتفرمی که کد روی آن درحال اجراست، فایل مناسب را استفاده می کند.</p>
+      <p>
+        <b>نیتیو Native-specific extensions (اشتراک کد با NodeJS و وب)</b>
+      </p>
+      <p>هنگامی که می خواهید یک ماژول بین NodeJs/Web و React Native مشترکا استفاده شود، اما درمورد Android/iOS بودن پلتفرم حساسیتی ندارید، می توانید از پسوند .native.js استفاده کنید. این مورد بخصوص هنگامی کاربرد دارد که پروژه ای کد مشترک بین React Native و ReactJS دارد.</p>
+      <p>برای مثال، فایل های زیر را در پروژه ای دارید:</p>
+      <p>
+        <b>Container.js # picked up by Webpack, Rollup or any other Web bundler</b>
+      </p>
+      <p>
+        <b>Container.native.js # picked up by the React Native bundler for both Android and iOS (Metro)</b>
+      </p>
+      <p>می توانید همچنان آن را بدون پسوند .native، اصطلاحا require کنید:</p>
+      <p>import Container from './Container';</p>
+      <p>نکته :برای اینکه از داشتن کدهای بی استفاده در فاز تولید پروژه جلوگیری کنید، Web bundler خود را به گونه ای config کنید که پسوند .native.js را نادیده بگیرد. این کار موجب کاهش سایز bundle نیز می شود.</p>
+      <p>
+        <b>حرکت بین صفحات (Navigation) در React Native</b>
+      </p>
+      <p>اپلیکیشن application های موبایل معمولا تک صفحه ای نیستند. مدیریت نمایش و حرکت بین چندین صفحه معمولا توسط navigator انجام می شود.</p>
+      <p>این بخش آموزش، component های موجود در React Native، که مناسب این کار را بررسی می کند. اگر تازه با این مبحث آشنا شده اید، بهتر است از کتابخانه ی <a href="https://facebook.github.io/react-native/docs/navigation#react-navigation">React Navigation</a> استفاده کنید. این کتابخانه راه حل ساده ای ارائه می دهد، و هردو شیوه ی stack navigation و tabbed navigation را در هردو سیستم عامل android و iOS پشتیبانی می کند.</p>
+      <p>اگر می خواهید application تان شبیه یک native application ها به نظر برسد، یا می خواهید React Native را به یک application که به صورت native حرکت بین صفحات را مدیریت می کند، اضافه کنید، کتابخانه ی <a href="https://github.com/wix/react-native-navigation">react-native-navigation</a> مناسب کار شماست.</p>
+      <p>
+        <b>React Navigation</b>
+      </p>
+      <p>راه حل رایج بین توسعه دهندگان React، کتابخانه ی مستقل React Navigation است که به توسعه دهندگان امکان راه اندازی چندین صفحه در app با چند خط کد را می دهد.</p>
+      <p>گام اول نصب این کتابخانه در پروژه است:</p>
+      <p>
+        <b>npm install --save react-navigation</b>
+      </p>
+      <p>گام دوم نصب react-native-gesture-handler است:</p>
+      <p>yarn add react-native-gesture-handler</p>
+      <p># or with npm</p>
+      <p># npm install --save react-native-gesture-handler</p>
+      <p>حال باید react-native را به react-native-gesture-handler ارتباط دهیم:</p>
+      <pre>react-native link react-native-gesture-handler</pre>
+      <p>سپس میتوانیم به راحتی یک application با یک صفحه Home، و یک صفحه profile بسازیم:</p>
+      <p>import {createStackNavigator, createAppContainer} from 'react-navigation';</p>
+      <p>const MainNavigator = createStackNavigator({</p>
+      <p>Home: {screen: HomeScreen},</p>
+      <p>Profile: {screen: ProfileScreen},</p>
+      <p>});</p>
+      <p>const App = createAppContainer(MainNavigator);</p>
+      <p>export default App;</p>
+      <p>هر component صفحه می تواند navigation options هایی مثل title برای عنوان صفحه، set کند. می تواند روی navigation prop رویدادهایی استفاده کند که صفحه را به صفحات دیگر ارتباط دهد:</p>
+      <p>class HomeScreen extends React.Component {</p>
+      <p>static navigationOptions = {</p>
+      <p>title: 'Welcome',</p>
+      <p>};</p>
+      <p>render() {</p>
+      <p>const {navigate} = this.props.navigation;</p>
+      <p>return (</p>
+      <p>&lt;Button</p>
+      <p>title="Go to Jane's profile"</p>
+      <p>onPress={() =&gt; navigate('Profile', {name: 'Jane'})}</p>
+      <p>/&gt;</p>
+      <p>);</p>
+      <p>}}</p>
+      <p>
+        <a href="http://www.tahlildadeh.com/CourseDetails/1176/%d8%af%d9%88%d8%b1%d9%87-%d8%a2%d9%85%d9%88%d8%b2%d8%b4-React-Native.aspx">آموزش React Native</a>
+      </p>
+      <p>با وجود React Navigation router ها، تغییر در الگوی حرکات کار آسانی است. از آنجا که router ها می توانند درون هم قرار بگیرند، می توانید الگوی حرکات را برای قسمتی از application تغییر دهید بدون اینکه کل آن تغییر کند.</p>
+      <p>چشم انداز viewها در کتابخانه React Navigation از component های native و کتابخانه ی Animated برای ارائه ی انمیشن های fps 60 استفاده می کنند. بعلاوه، انیمیشن ها و حرکات به راحتی می تواند به شکل مورد نظر شما، سفارشی شود.</p>
+      <p>برای مطالعه کامل درمورد React Navigation، این <a href="https://reactnavigation.org/docs/getting-started.html">لینک</a> را بیبنید و یا سری به مستندات دیگر مثل <a href="https://expo.io/@react-navigation/Navigatiground">مقدمه ای بر Navigator ها</a>، بزنید.</p>
+      <h3>تصاویر در React Native</h3>
+      <p>تصاویر با Resource ثابت</p>
+      <p>ری اکت React Native روشی یکپارچه برای مدیریت عکس ها و دیگر فایل های media در application android و iOS فراهم می آورد. برای افرودن یک عکس ثابت به application، آن را جایی در کنار فایل source code بگذارید و به شکل زیر به آن دسترسی پیدا کنید:</p>
+      <p>&lt;Image source={require('./my-icon.png')} /&gt;</p>
+      <p>نام عکس به شیوه ای مشابه ماژول های جاوااسکریپت، resolve می شود. در مثال بالا، packager در پوشه ی آن component که می خواهد به آن دسترسی پیدا کند ( و آن را require کرده) به دنبال my-icon.png می گردد. همچنین اگر فایل های icon.ios.png و my-icon.android.png داشته باشید، فایل مناسب پلتفرم اجرایی را، انتخاب می کند.</p>
+      <p>می توانید از پسوندهای @2x و @3x برای عکس های صفحات با تراکم پیکسلی (screen density) متفاوت، استفاده کنید. اگر ساختار فایلی مشابه زیر داشته باشید:</p>
+      <p>.</p>
+      <p>├── button.js</p>
+      <p>└── img</p>
+      <p>├── check.png</p>
+      <p>├── <a href="mailto:check@2x.png">check@2x.png</a></p>
+      <p>└── <a href="mailto:check@3x.png">check@3x.png</a></p>
+      <p>و یک کد button.js حاوی :</p>
+      <p>&lt;Image source={require('./img/check.png')} /&gt;</p>
+      <p>پکیج Packager عکس مناسب با تراکم پیکسلی صفحه را، آماده نمایش می کند. برای مثال، فایل <a href="mailto:check@2x.png">check@2x.png</a> در یک iPhone 7 استفاده می شود، درحالی که فایل <a href="mailto:check@3x.png">check@3x.png</a> در iPhone 7 Plus یا Nexus 5 استفاده می شود. اگر عکسی مناسب تراکم پیکسلی صفحه موجود نباشد، بهترین گزینه ممکن انتخاب می شود.</p>
+      <p>در Windows بهتر است پس از افزودن عکس های جدید به پروژه، packager را restart کنید.</p>
+      <p>کار با عکس ها در React ویژگی های خوبی دارد:</p>
+      <p>1. در iOS و android سیستم یکسانی دارد.</p>
+      <p>2. عکس ها در همان پوشه ای قرار دارند که کد جاوااسکریپت هست. هر component مستقل و کافی است.</p>
+      <p>3.گلوبال global namespace وجود ندارد، لازم نیست نگران یکسان بودن تصادفی نام عکس ها باشید.</p>
+      <p>4. فقط عکس هایی که در واقعا لازم هستند، برای application آماده می شود.</p>
+      <p>5. افزودن و تغییر عکس ها نیاز به compile دوباره ی application ندارد، فقط کافی است شبیه ساز را restart کنید.</p>
+      <p>6. پکیجpackager ابعاد عکس را می داند، لازم نیست آن را در کد قرار دهید.</p>
+      <p>7. عکس ها را می توان در package های npm توزیع کرد.</p>
+      <p>برای اینکه این شیوه جواب بدهد نام عکس در require مقداری ثابت باشد:</p>
+      <p>
+        <b>// GOOD</b>
+      </p>
+      <p>
+        <b>&lt;Image source={require('./my-icon.png')} /&gt;;</b>
+      </p>
+      <p>
+        <b>// BAD</b>
+      </p>
+      <p>
+        <b>var icon = this.props.active ? 'my-icon-active' : 'my-icon-inactive';</b>
+      </p>
+      <p>
+        <b>&lt;Image source={require('./' + icon + '.png')} /&gt;;</b>
+      </p>
+      <p>
+        <b>// GOOD</b>
+      </p>
+      <p>
+        <b>var icon = this.props.active</b>
+      </p>
+      <p>
+        <b>? require('./my-icon-active.png')</b>
+      </p>
+      <p>
+        <b>: require('./my-icon-inactive.png');</b>
+      </p>
+      <p>
+        <b>&lt;Image source={icon} /&gt;;</b>
+      </p>
+      <p>توجه کنید که تصاویری که به این شیوه require می شوند، حاوی اطلاعات width و height تصویر هستند. اگر می خواهید عکس را پویا scale کنید ( توسط flex) باید دستی { width: undefined, height: undefined } را روی style attribute مقدار دهی کنید.</p>
+      <p>
+        <b>منابع Resource های ثابت دیگر به غیر از تصویر</b>
+      </p>
+      <p>نیاز syntax require که بالا نشان دادیم می تواند برای افزودن فایل صوتی، ویدئو و فایل های متنی در پروژه هم استفاده شود. انواع رایج فایل هایی که پشتیبانی می شوند عبارتند از html، mav، mp4، mov، و pdf. برای لیست کامل، این <a href="https://github.com/facebook/metro/blob/master/packages/metro-config/src/defaults/defaults.js#L14-L44">لینک</a> را ببینید.</p>
+      <p>می توانید پشتیبانی از انواع دیگر فایل را با افزودن <a href="https://facebook.github.io/metro/docs/en/configuration#assetexts">assetExts resolver option</a> به <a href="https://facebook.github.io/metro/docs/en/configuration">Metro configuration</a> اضافه کنید.</p>
+      <p>توجه کنید برای ویدئوها باید به جای flexGrow از absolute positioning استفاده کنید، چرا که اطلاعات مربوط به سایز فعلا برای resource<b> </b>های غیر از عکس، در دسترس نیست. این محدودیت برای ویدئوهایی که مستقیما به Xcode یا پوشه ی Assets در android، reference داده شده اند، وجود ندارد.</p>
+      <p>
+        <b>تصاویر برای application های hybrid</b>
+      </p>
+      <p>اگر application hybrid دارید (به این معنا که بخشی از UI آن با React Native و بخشی از کد مختص android/iOS نوشته شده)، می توانید از عکس های آن ها استفاده کنید. برای عکس هایی که توسط Xcode asset catalogs یا پوشه ی drawable در android به application اضافه شده اند، نام عکس را بدون پسوند استفاده کنید :</p>
+      <pre>&lt;Image source={{uri: 'app_icon'}} style={{width: 40, height: 40}} /&gt;</pre>
+      <p>برای عکس هایی که در پوشه ی assets android هستند، از الگوی asset:/ استفاده کنید. به عهده شماست که وجود عکس ها در application را تضمین کنید. بعلاوه ابعاد عکس را باید دستی تنظیم کنید.</p>
+      <p>
+        <b>تصاویر از منابع موجود در شبکه</b>
+      </p>
+      <p>بسیاری از عکس هایی که در application استفاده می کنید تا زمان کامپایل در دسترس نیستند، و یا ممکن است بخواهید برای پایین نگه داشتن حجم فایل اجرایی، آن ها را dynamic به application اضافه کنید. برخلاف عکسهای resource ثابت، باید دستی ابعاد عکس را مشخص کنید. توصیه می شود به دلیل محدودیت <a href="https://facebook.github.io/react-native/docs/running-on-device#app-transport-security">App Transport Security</a> مخصوص iOS، از https استفاده کنید.</p>
+      <p>
+        <b>// GOOD</b>
+      </p>
+      <p>
+        <b>&lt;Image source={{uri: 'https://facebook.github.io/react/logo-og.png'}}</b>
+      </p>
+      <p>
+        <b>style={{width: 400, height: 400}} /&gt;</b>
+      </p>
+      <p>
+        <b>// BAD</b>
+      </p>
+      <p>
+        <b>&lt;Image source={{uri: 'https://facebook.github.io/react/logo-og.png'}} /&gt;</b>
+      </p>
+      <p>
+        <b>درخواست request برای تصویر</b>
+      </p>
+      <p>اگر مایلید همراه request<b> </b>برای تصویر، HTTP-Verb، Header یا Body تعیین کنید، می توانید آن ها را بصورت property روی object source تعریف کنید:</p>
+      <p>
+        <b>&lt;Image</b>
+      </p>
+      <p>
+        <b>source={{</b>
+      </p>
+      <p>
+        <b>uri: 'https://facebook.github.io/react/logo-og.png',</b>
+      </p>
+      <p>
+        <b>method: 'POST',</b>
+      </p>
+      <p>
+        <b>headers: {</b>
+      </p>
+      <p>
+        <b>Pragma: 'no-cache',</b>
+      </p>
+      <p>
+        <b>},</b>
+      </p>
+      <p>
+        <b>body: 'Your Body goes here',</b>
+      </p>
+      <p>
+        <b>}}</b>
+      </p>
+      <p>
+        <b>style={{width: 400, height: 400}}</b>
+      </p>
+      <p>
+        <b>/&gt;</b>
+      </p>
+      <p>
+        <a href="http://www.tahlildadeh.com/CourseDetails/1176/%d8%af%d9%88%d8%b1%d9%87-%d8%a2%d9%85%d9%88%d8%b2%d8%b4-React-Native.aspx">آموزش React Native</a>
+      </p>
+      <p>
+        <b>عکس های بصورت داده در Uri</b>
+      </p>
+      <p>
+        <b>ممکن است تصویر را به صورت دیتایی encode شده از REST API بگیرید. می توانید برای استفاده از این تصاویر از الگوی 'iVBORw0KGgoAAAANSUhEUgAAADMAAAAzCAYAAAA6oTAqAAAAEXRFWHRTb2Z0d2FyZQBwbmdjcnVzaEB1SfMAAABQSURBVGje7dSxCQBACARB+2/ab8BEeQNhFi6WSYzYLYudDQYGBgYGBgYGBgYGBgYGBgZmcvDqYGBgmhivGQYGBgYGBgYGBgYGBgYGBgbmQw+P/eMrC5UTVAAAAABJRU5ErkJggg==',</b>
+      </p>
+      <p>
+        <b>}}</b>
+      </p>
+      <p>
+        <b>/&gt;</b>
+      </p>
+      <p>
+        <b>کنترل Cache Control (مخصوص iOS)</b>
+      </p>
+      <p>گاهی فقط می خواهیم اگر عکس در local cache موجود است، آن را نمایش دهیم. برای مثال، می خواهیم تا زمانی که تصویر با resolution بالا موجود نیست، یک عکس با resolution پایین load کنیم. گاهی می خواهیم عکس update نشده را نشان دهیم تا در پهنای باند صرفه جویی شود. property cache در source، امکان مدیریت تعامل بین شبکه و Cacheرا میدهد.</p>
+      <p>default:</p>
+      <p>استراتژی پیش فرض پلتفرم native (android/iOS ) را استفاده می کند.</p>
+      <p>reload:</p>
+      <p>دیتا از source address دریافت می شود و از cache استفاده نمی شود.</p>
+      <p>force-cache:</p>
+      <p>دیتای cache شده ی موجود استفاده می شود، بدون توجه عمر آن یا expiration date آن.</p>
+      <p>only-if-cached:</p>
+      <p>دیتای cache شده ی موجود استفاده می شود، بدون توجه عمر آن یا expiration date آن. اگر دیتایی مرتبط با request در cache موجود نباشد، تلاشی برای دریافت دیتا از شبکه نخواهد شد.</p>
+      <p>
+        <b>&lt;Image</b>
+      </p>
+      <p>
+        <b>source={{</b>
+      </p>
+      <p>
+        <b>uri: 'https://facebook.github.io/react/logo-og.png',</b>
+      </p>
+      <p>
+        <b>cache: 'only-if-cached',</b>
+      </p>
+      <p>
+        <b>}}</b>
+      </p>
+      <p>
+        <b>style={{width: 400, height: 400}}</b>
+      </p>
+      <p>
+        <b>/&gt;</b>
+      </p>
+      <p>
+        <b>عکس های درون Local Filesystem</b>
+      </p>
+      <p>بخش <a href="https://github.com/react-native-community/react-native-cameraroll">CameraRoll</a> را برای مثالی از استفاده از local resource هایی که خارج از Images.xcassets هستند، ببینید.</p>
+      <p>آیiOS چندین سایز برای یک عکس در دوربین ذخیره می کند، برای performance بهتر، انتخاب کوچکترین عکس ها اهمیت دارد. وقتی می خواهید یک thumbnail در سایز X200200 استفاده کنی، نباید از عکسی با کیفیت بالای 3264x2448 به عنوان source استفاده کنید. اگر مورد کاملا مناسب برای آن باشد، React Native آن را برمی دارد. در غیر این صورت عکسی را انتخاب میک ند که حداقل 50 درصد بزرگتر است تا هنگام کوچک شدن، تار نشود. همه ی این موارد خودکار انجام می شود بدون اینکه لازم باشد یک خط کد برای آن بنویسید.</p>
+      <p>
+        <b>چرا سایز همه چیز را اتوماتیک تعیین نکنیم؟</b>
+      </p>
+      <p>در مرورگر اگر به عکسی سایز دقیق ندهید، یک المان 0x0 ، render می شود، عکس دانلود می شود و سپس عکس با سایز درست render می شود. بزرگترین مشکل این شیوه، این است که UI در طول load عکس ها دائم تغییر می کند که تجربه کاربری خوبی نیست.</p>
+      <p>در React Native این رفتار عمدا پیاده سازی نشده است. کار توسعه دهندگان بیشتر می شود چرا که باید ابعاد عکسی را که قرار است load شود بدانند، ولی تجربه کاربری را بهبود می بخشد. عکس های static که توسط دستور require('./my-icon.png') ،load می شوند می توانند اتوماتیک اندازه دهی شوند، چرا که ابعادشان به محض load در دسترس است.</p>
+      <p>برای مثال، نتیجه ی اجرایrequire('./my-icon.png') می تواند این باشد:</p>
+      <p>
+        <b>{"__packager_asset":true,"uri":"my-icon.png","width":591,"height":573}</b>
+      </p>
+      <p>
+        <b>منابع Source به عنوان یک object</b>
+      </p>
+      <p>در React Native، src در واقع source نامیده شده و یک string نمی پذیرد، بلکه یک object با property uri می پذیرد.</p>
+      <p>&lt;Image source={{uri: 'something.jpg'}} /&gt;</p>
+      <p>از دیدگاه زیرساختی، این پیاده سازی به ما اجازه می دهد به این object، metadata اضافه کنیم. برای مثال هنگامی که از require('./my-icon.png') استفاده می کنید، اطلاعاتی درمورد مکان دقیق و سایز آن به object اضافه می شود. این رویه برای پیاده سازی های بعدی هم خوب است، برای مثال ممکن است بخواهیم از sprite پشتیبانی کنیم، به جای {uri: ...} می توانیم {uri: ..., crop: {left: 10, top: 50, width: 20, height: 40}} داشته باشیم.</p>
+      <p>سمت کاربر، امکان افزودن مقادیری برای ابعاد سایز وجود خواهد داشت. همچنین می توانید از هر data structure دیگری برای نگه داری اطلاعات درمورد تصاویرتان استفاده کنید.</p>
+      <p>
+        <b>عکس background با Nesting</b>
+      </p>
+      <p>یک قابلیت که همواره توسعه دهنگان سمت وب خواهان آن بوده اند، تصویر پس زمینه است. برای این کار، می توانید از component &lt;ImageBackground&gt; استفاده کنید، که prop هایی مشابه component &lt;Image&gt; دارد، ومی توانید هرالمانی به عنوان child به آن اضافه کنید، که روی آن نمایش داده شود.</p>
+      <p>ممکن است در مواردی نخواهید از &lt;ImageBackground&gt; استفاده کنید، چرا که پیاده سازی آن بسیار ساده است. می توانید برای ساخت component سفارشی برای هدف مورد نظر خود، به <a href="https://facebook.github.io/react-native/docs/imagebackground">مستندات</a> مربوط به آن مراجعه کنید.</p>
+      <p>return (</p>
+      <p>&lt;ImageBackground source={...} style={{width: '100%', height: '100%'}}&gt;</p>
+      <p>&lt;Text&gt;Inside&lt;/Text&gt;</p>
+      <p>&lt;/ImageBackground&gt;</p>
+      <p>);</p>
+      <p>توجه کنید تعیین style هایی چون width و height اجباری است.</p>
+      <p>
+        <b>iOS Border Radius Styles</b>
+      </p>
+      <p>این property ها که برای style دهی به حاشیه component ها استفاده می شود فعلا در component image برای iOS، کار نمی کند:</p>
+      <p>· borderTopLeftRadius</p>
+      <p>· borderTopRightRadius</p>
+      <p>· borderBottomLeftRadius</p>
+      <p>· borderBottomRightRadius</p>
+      <p>
+        <b>فرایند decoding روی thread غیر از main thread</b>
+      </p>
+      <p>دکود decode کردن عکس ها زمان بر است. یکی از دلایل اساسی از دست رفتن فریم ها در وب این است که فرایند decoding روی thread اصلی انجام می شود. در React Native، این فرایند در thread دیگری انجام می شود. در عمل، باید راهکارهایی برای نمایش جایگزینی برای عکسی که درحال دانلود شدن است، پیاده سازی کنید. نمایش یک placeholder درحالی که عکس درحال decode شدن است ساده است و تغییر زیادی در کد نمی خواهد.</p>
+      <p>پایان بخش هفتم <a href="http://www.tahlildadeh.com/CourseDetails/1176/%d8%af%d9%88%d8%b1%d9%87-%d8%a2%d9%85%d9%88%d8%b2%d8%b4-React-Native.aspx">آموزش React Native</a></p>
+      <p>با ادامه آموزش هشتم همراه با باشید</p>
+    </article>
+  </body>
+</html>

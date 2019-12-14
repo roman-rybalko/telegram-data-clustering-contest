@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://www.cybeout.it/2019/11/stadia-come-giocare-su-android-con-uno-smartphone-con-root/"/>
+    <meta property="og:site_name" content="CybeOut"/>
+    <meta property="article:published_time" content="2019-11-29T12:48:32+00:00"/>
+    <meta property="og:title" content="Stadia: come giocare su Android con uno smartphone con root"/>
+    <meta property="og:description" content="Ufficialmente, Google Stadia è attualmente riservato a Pixel 4/3 / 3a / 2. Per altri, dobbiamo aspettare, Google deve specificare nelle sue pagine di aiuto che &quot;altri dispositivi&quot; verranno a"/>
+  </head>
+  <body>
+    <article>
+      <h1>Stadia: come giocare su Android con uno smartphone con root</h1>
+      <address><time datetime="2019-11-29T12:48:32+00:00">29 Nov 2019, 12:48</time> by <a rel="author" href="https://www.cybeout.it/author/danielsandj/" target="_blank">Daniel Aka</a></address>
+      <p>Ufficialmente, <a href="https://www.cybeout.it/2019/11/google-stadia-lancia-la-sua-app-sul-play-store/">Google Stadia</a> è attualmente riservato a Pixel 4/3 / 3a / 2. Per altri, dobbiamo aspettare, Google deve specificare nelle sue pagine di aiuto che  <i>“altri dispositivi”</i> verranno aggiunti in seguito e  <i>“puoi acquistare giochi e gestire i tuoi contenuti da qualsiasi Dispositivo iOS 11 o Android M (o successivo) che può eseguire l’applicazione Stadia. </i></p>
+      <p>Quindi essere in grado di installare l’app Stadia non significa che puoi giocare sul tuo dispositivo. Ma per fortuna, gli sviluppatori XDA hanno scoperto come aggirare questa limitazione sugli smartphone con root. Tutto quello che devi fare è seguire i loro passi su <a href="https://www.xda-developers.com/how-to-install-magisk/">uno smartphone già rootato con Magisk</a> (ci sono molti tutorial adattati al tuo specifico modello di smartphone).</p>
+      <h3>Come cambiare il tuo smartphone per lanciare i giochi Stadia</h3>
+      <p>È quindi possibile seguire il loro metodo. Devi prima assicurarti che l’applicazione Stadia sia installata e che tu abbia un PC a portata di mano con la suite ADB :</p>
+      <ol>
+        <li>Apri <b>MagiskManager</b> sul tuo smartphone e cerca il modulo di <i>configurazione MagiskHide Props</i></li>
+        <li>Installa <i>MagiskHide Props Config </i> e riavvia lo smartphone</li>
+        <li>Collega il tuo smartphone al PC e apri un prompt dei comandi o un Terminale</li>
+        <li>Digitare <i>adb shell </i> quindi  <i>oggetti di scena </i> o solo  <i>oggetti di scena a </i> seconda del caso</li>
+        <li>Tipo <b>5</b> (aggiungi / modifica oggetti di scena personalizzati)</li>
+        <li>Digitare <b>n</b> quindi <b>ro . prodotto . modello</b></li>
+        <li>Digitare <b>Pixel 4</b>  come valore per <i>ro . prodotto . modello</i></li>
+        <li>Digitare  <b>y </b> per accettare</li>
+        <li>Digita di  nuovo <b>n </b></li>
+        <li>Ripeti gli stessi passaggi per impostare questa volta <b>ro.product.manufacturer</b> su  <b>Google</b></li>
+        <li>Riavvia lo smartphone e verifica digitando i comandi <i>getprop ro.product.model</i> e <i>getprop ro.product.manufacturer </i> che le proprietà sono state modificate</li>
+      </ol>
+      <p>Alla fine di questi passaggi, l’applicazione Stadia penserà che si accende un Pixel 4 e ti permetterà di giocare normalmente ai giochi della piattaforma.</p>
+      <h4>Condividi:</h4>
+      <ul>
+        <li>
+          <a href="https://www.cybeout.it/2019/11/stadia-come-giocare-su-android-con-uno-smartphone-con-root/?share=facebook">Fai clic per condividere su Facebook (Si apre in una nuova finestra)</a>
+        </li>
+        <li>
+          <a href="https://www.cybeout.it/2019/11/stadia-come-giocare-su-android-con-uno-smartphone-con-root/?share=jetpack-whatsapp">Fai clic per condividere su WhatsApp (Si apre in una nuova finestra)</a>
+        </li>
+        <li>
+          <a href="https://www.cybeout.it/2019/11/stadia-come-giocare-su-android-con-uno-smartphone-con-root/?share=twitter">Fai clic qui per condividere su Twitter (Si apre in una nuova finestra)</a>
+        </li>
+        <li>
+          <a href="https://www.cybeout.it/2019/11/stadia-come-giocare-su-android-con-uno-smartphone-con-root/?share=reddit">Fai clic qui per condividere su Reddit (Si apre in una nuova finestra)</a>
+        </li>
+        <li>
+          <a href="https://www.cybeout.it/2019/11/stadia-come-giocare-su-android-con-uno-smartphone-con-root/?share=tumblr">Fai clic qui per condividere su Tumblr (Si apre in una nuova finestra)</a>
+        </li>
+        <li>
+          <a href="https://www.cybeout.it/2019/11/stadia-come-giocare-su-android-con-uno-smartphone-con-root/?share=telegram">Fai clic per condividere su Telegram (Si apre in una nuova finestra)</a>
+        </li>
+        <li>
+          <a href="https://www.cybeout.it/2019/11/stadia-come-giocare-su-android-con-uno-smartphone-con-root/#print">Fai clic qui per stampare (Si apre in una nuova finestra)</a>
+        </li>
+        <li/>
+      </ul>
+    </article>
+  </body>
+</html>

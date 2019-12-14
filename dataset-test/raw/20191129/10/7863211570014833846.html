@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://dev.by/news/sostoyalsya-reliz-php-7-4"/>
+    <meta property="og:site_name" content="dev.by"/>
+    <meta property="article:published_time" content="2019-11-29T10:28:00+00:00"/>
+    <meta property="og:title" content="Состоялся релиз PHP 7.4"/>
+    <meta property="og:description" content="После года разработки представлен релиз языка программирования PHP 7.4, пишет OpenNET. Новая ветка включает серию новых возможностей, а также несколько изменений, нарушающих совместимость."/>
+  </head>
+  <body>
+    <article>
+      <h1>Состоялся релиз PHP 7.4</h1>
+      <address><time datetime="2019-11-29T10:28:00+00:00">29 Nov 2019, 10:28</time> by <a rel="author">Александра Кукуть</a></address>
+      <p>После года разработки<a href="https://www.php.net/archive/2019.php#2019-11-28-1"> представлен</a> релиз языка программирования<a href="http://php.net/"> PHP 7.4</a>, пишет OpenNET. Новая ветка включает серию новых возможностей, а также несколько изменений, нарушающих совместимость.</p>
+      <p>Ключевые<a href="https://www.php.net/manual/ru/migration74.php"> улучшения</a> в PHP 7.4:</p>
+      <ul>
+        <li><a href="https://wiki.php.net/rfc/spread_operator_for_array">типизированные свойства</a> — свойства классов теперь могут включать объявления типов;</li>
+        <li><a href="https://wiki.php.net/rfc/arrow_functions_v2">сокращённый</a> синтаксис определения функций «fn(parameter_list) =&gt; expr» с привязкой области видимости по значению;</li>
+        <li><a href="https://wiki.php.net/rfc/null_coalesce_equal_operator">сокращённый оператор присвоения</a> «? =», который может использоваться для определения значения по умолчанию;</li>
+        <li>ограниченная<a href="https://wiki.php.net/rfc/covariant-returns-and-contravariant-parameters"> возможность</a> сохранения иерархии наследования типов в производных от них типах возвращаемых значений или возможность преобразования иерархии исходных типов на противоположную в производных типах аргументов;</li>
+        <li>оператор распаковки внутри массивов «…$var»,<a href="https://wiki.php.net/rfc/spread_operator_for_array"> позволяющий</a> выполнять подстановку существующих массивов при определении нового массива;</li>
+        <li><a href="https://wiki.php.net/rfc/numeric_literal_separator">возможность</a> наглядного оформления больших чисел с разделителями в числовых литералах (1_000_000_00);</li>
+        <li>поддержка<a href="https://ru.wikipedia.org/wiki/%D0%A1%D0%BB%D0%B0%D0%B1%D0%B0%D1%8F_%D1%81%D1%81%D1%8B%D0%BB%D0%BA%D0%B0"> слабых ссылок</a>, позволяющих сохранить ссылку на объект, но не блокирующих удаление связанного объекта сборщиком мусора;</li>
+        <li>новый<a href="https://wiki.php.net/rfc/custom_object_serialization"> механизм</a> сериализации объектов (комбинация Serializable и __sleep()/__wakeup()), пришедший на смену интерфейсу Serializable, который будет объявлен устаревшим;</li>
+        <li>разрешена генерация исключений из метода<a href="https://www.php.net/manual/ru/language.oop5.magic.php#object.tostring"> __toString()</a>;</li>
+        <li>добавлена поддержка упреждающей загрузки кэша объектного кода. Для настройки добавлен параметр<a href="https://www.php.net/manual/en/opcache.configuration.php#ini.opcache.preload"> opcache.preload</a>, через который можно указать PHP-скрипт, который будет скомпилирован и запущен при запуске сервера. Данный скрипт может загрузить опкод других файлов через их прямое включение или при помощи функции opcache_compile_file();</li>
+        <li>в расширение Hash добавлена функция crc32c для вычисления контрольных сумм с использованием полинома Кастаньоли;</li>
+        <li>в функцию password_hash() добавлена поддержка методов хэширования паролей argon2i и argin2id, в реализации библиотеки Sodium, если PHP собирается без libargon;</li>
+        <li>добавлена функция mb_str_split(), аналогичная str_split(), но оперирующая не байтами, а позициями символов в многобайтовой строке;</li>
+        <li>в функции strip_tags() добавлена возможность передачи массива с именами тегов;</li>
+        <li>в proc_open() разрешено перечисление операндов в массиве, вместо указания строки для запуска, а также реализована возможность перенаправления потоков и поддержка нулевого файлового дескриптора;</li>
+        <li>из базовой поставки исключены расширения Firebird/Interbase, Recode и WDDX. Данные расширения теперь распространяются через PECL;</li>
+        <li>ряд функций и возможностей переведён в разряд<a href="https://www.php.net/manual/ru/migration74.deprecated.php"> устаревших</a>.</li>
+      </ul>
+      <hr/>
+      <p>31 вакансия для <a href="https://jobs.dev.by/?filter%5Bspecialization_title%5D=PHP&amp;utm_source=dev.by.ads&amp;utm_medium=link&amp;utm_campaign=bottom_sostoyalsya_reliz_php_7_4&amp;utm_content=php">PHP-разработчиков</a> с зарплатой до 4000$.</p>
+      <hr/>
+      <footer>Источник: <a href="https://www.opennet.ru/opennews/art.shtml?num=51944">OpenNet</a></footer>
+    </article>
+  </body>
+</html>

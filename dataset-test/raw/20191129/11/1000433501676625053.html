@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://www.01net.com/actualites/rcs-le-futur-du-sms-pourrait-s-accompagner-de-failles-de-securite-d-un-autre-temps-1815374.html"/>
+    <meta property="og:site_name" content="01net"/>
+    <meta property="article:published_time" content="2019-11-29T11:44:27+00:00"/>
+    <meta property="og:title" content="RCS : le futur du SMS pourrait s'accompagner de failles de sécurité d'un autre temps"/>
+    <meta property="og:description" content="De plus en plus d’opérateurs adoptent ce nouveau standard de communication, mais certaines implémentations permettent de facilement intercepter les messages et usurper l’identité des utilisateurs."/>
+  </head>
+  <body>
+    <article>
+      <h1> RCS : le futur du SMS pourrait s'accompagner de failles de sécurité d'un autre temps </h1>
+      <h2>De plus en plus d’opérateurs adoptent ce nouveau standard de communication, mais certaines implémentations permettent de facilement intercepter les messages et usurper l’identité des utilisateurs.</h2>
+      <address>
+        <time datetime="2019-11-29T11:44:27+00:00">29 Nov 2019, 11:44</time>
+      </address>
+      <figure>
+        <img src="https://img.bfmtv.com/c/630/420/742/21b46f12146981523e5740408c44b.jpg"/>
+      </figure>
+      <p>C’est un progrès en trompe-l’œil. Les opérateurs télécoms sont en train d’adopter massivement le standard <a href="https://www.01net.com/actualites/google-et-les-operateurs-mobiles-veulent-relancer-rcs-le-successeur-du-sms-953824.html">Rich Communication Services (RCS)</a> afin de remplacer le bon vieux SMS par une technologie plus évoluée, alliant messagerie instantanée, VoIP, géolocalisation et indicateurs de présence. Un futur parfait ?</p>
+      <p>Pas forcément. La manière dont ce standard est implémenté fait froid dans le dos. Les chercheurs en sécurité de Security Research Labs (SRLabs) se sont penchés sur ces implémentations et ont trouvé d’énormes failles de sécurité, tellement évidentes qu’ils ont eu l’impression de se retrouver dans les années 90. Elles exposeraient, selon SRLabs, des centaines de millions de personnes dans le monde.</p>
+      <p>L’une des failles les plus critiques concerne le fichier de configuration de l’application RCS, contenant notamment le login et le mot de passe pour accéder à ce service. Celui-ci est envoyé par l’opérateur sur le terminal de l’utilisateur, après une phase d’authentification. Mais celle-ci est parfois totalement bancale. Ainsi, certains opérateurs ne s’appuient que sur l’adresse IP et rien d’autre.</p>
+      <blockquote>Résultat : <i>« N’importe quelle appli mobile installée sur l’appareil, même si elle n’a aucun droit d’accès, peut récupérer ce fichier. N’importe quelle appli peut donc avoir le login et le mot de passe pour accéder à vos messages texte et vos appels audio »</i>, explique Karsten Nohl, directeur de SRLabs, auprès de <i>Vice</i>.</blockquote>
+      <h3>Attaque par force brute</h3>
+      <p>Dans un autre exemple, l’authentification est sécurisée par un code à usage unique à six chiffres, envoyé par l’opérateur. Le souci, c’est que le champ d’entrée n’est pas limité en nombre d’essais, permettant de réaliser facilement une attaque par force brute. <i>« Il faut cinq minutes pour réaliser un million d’essais »</i>, souligne Karsten Nohl.<br/>Un autre scénario d’attaque est relayé par <i>Süddeutsche Zeitung</i>, qui a également interrogé les chercheurs. Ainsi, un utilisateur pourrait, dans certains cas, se faire voler son fichier de configuration simplement en surfant sur un site Web piégé, sans qu'il n’ait besoin de faire une quelconque action supplémentaire. Une manière d'amener l'utilisateur sur un tel site piégé serait, par exemple, en créant un faux hotspot Wi-Fi.</p>
+      <p>Une fois en possession du fichier de configuration, le pirate peut lire tous les messages, passés ou futurs. Il peut également géolocaliser l’utilisateur et usurper son identité pour envoyer de faux messages. Ce qui ouvre la porte à de multiples scénarios d’arnaque.<br/>Les chercheurs vont présenter tous les détails de leur recherche le 4 décembre prochain, à l’occasion de la conférence Black Hat Europe 2019.</p>
+      <p><b>Sources </b>: <a href="https://www.vice.com/en_us/article/j5ywxb/rcs-rich-communications-services-text-call-interception">Vice</a>, <a href="https://www.sueddeutsche.de/digital/sms-ausspionieren-rcs-handynetz-unsicher-1.4701524">Süddeutsche Zeitung</a></p>
+    </article>
+  </body>
+</html>

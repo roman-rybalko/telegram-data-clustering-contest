@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://www.itmedia.co.jp/pcuser/articles/1911/29/news081.html"/>
+    <meta property="og:site_name" content="ITmedia PC USER"/>
+    <meta property="article:published_time" content="2019-11-29T12:00:00+00:00"/>
+    <meta property="og:title" content="第3世代Ryzenの最上位モデル：ついに発売！　16コア32スレッド「Ryzen 9 3950X」の使い所を考える (1/4)"/>
+    <meta property="og:description" content="間もなくAMDからRyzen 9 3950Xが販売開始される。メインストリーム向けのソケットに対応する製品でありながら、16コアというこれまで上位プラットフォームでしか利用できなかったコア数を手に入れられる製品だ。第3世代Ryzen発表時から予告されていたが、ようやく発売される。メインストリーム向け初となる、16コアCPUのパフォーマンスを調べてみよう。"/>
+  </head>
+  <body>
+    <article>
+      <h1>第3世代Ryzenの最上位モデル：ついに発売！　16コア32スレッド「Ryzen 9 3950X」の使い所を考える (1/4)</h1>
+      <h2>間もなくAMDからRyzen 9 3950Xが販売開始される。メインストリーム向けのソケットに対応する製品でありながら、16コアというこれまで上位プラットフォームでしか利用できなかったコア数を手に入れられる製品だ。第3世代Ryzen発表時から予告されていたが、ようやく発売される。メインストリーム向け初となる、16コアCPUのパフォーマンスを調べてみよう。</h2>
+      <address><time datetime="2019-11-29T12:00:00+00:00">29 Nov 2019, 12:00</time> by <a rel="author">石川ひさよし，ITmedia</a></address>
+      <p>　ソケットAM4の第3世代Ryzenでは、「チップレット」が取り入れられている。チップレットは、「CCD」と「cIOD」で構成され、CCDはCPUコア、cIODはこれを接続するI/Oダイだ。この仕組みとCPUコアをいくつ有効／無効（歩留まりとも関連する）とするかによって、エントリーからハイエンドまでスケーラブルに製品ラインアップを展開できる。</p>
+      <figure>
+        <img src="https://image.itmedia.co.jp/pcuser/articles/1911/29/ht1129_ih01.jpg"/>
+        <figcaption>Ryzen 9 3950Xのパッケージ</figcaption>
+      </figure>
+      <figure>
+        <img src="https://image.itmedia.co.jp/pcuser/articles/1911/29/ht1129_ih21.jpg"/>
+        <figcaption>CCDとcIODで構成される</figcaption>
+      </figure>
+      <h3>第3世代Ryzenの最上位モデルが発売</h3>
+      <p>　8コアを超える上位モデルの場合、CCDは2つ内蔵される。これまで最上位だったRyzen 9 3900XもCCDは2つだ。ただし1つのCCDあたり、有効化されていたのは6／8なので12コア24スレッドにとどまっていた。Ryzen 9 3950Xは8／8、つまりCCDの8コアすべてが有効化された、ソケットAM4版第3世代Ryzenの完全形と言える。</p>
+      <table bordered="">
+        <tr>
+          <th colspan="3">第3世代Ryzenの主なスペック</th>
+        </tr>
+        <tr>
+          <th>モデル名</th>
+          <td>3950X</td>
+          <td>3900X</td>
+        </tr>
+        <tr>
+          <th>コア</th>
+          <td>16</td>
+          <td>12</td>
+        </tr>
+        <tr>
+          <th>スレッド</th>
+          <td>32</td>
+          <td>24</td>
+        </tr>
+        <tr>
+          <th>ベースクロック</th>
+          <td>3.5GHz</td>
+          <td>3.8GHz</td>
+        </tr>
+        <tr>
+          <th>最大ブーストクロック</th>
+          <td>4.7GHz</td>
+          <td>4.6GHz</td>
+        </tr>
+        <tr>
+          <th>L1キャッシュ</th>
+          <td>1MB</td>
+          <td>768KB</td>
+        </tr>
+        <tr>
+          <th>L2キャッシュ</th>
+          <td>8MB</td>
+          <td>6MB</td>
+        </tr>
+        <tr>
+          <th>L3キャッシュ</th>
+          <td colspan="2">64MB</td>
+        </tr>
+        <tr>
+          <th>TDP</th>
+          <td colspan="2">105W</td>
+        </tr>
+        <tr>
+          <th>付属CPUクーラー</th>
+          <td>−</td>
+          <td>Wraith Prism with RGB LED</td>
+        </tr>
+        <tr>
+          <td colspan="3"/>
+        </tr>
+      </table>
+      <p>　仕様表の通り、Ryzen 9 3900Xとの違いはコア／スレッド数と、それに伴うL1〜L2までのキャッシュ容量、そして動作クロックだ。L1〜L2に関してはコアに数に依存するものなので分かりやすい。動作クロックはベースクロック側がRyzen 9 3950Xの方が低く、ブーストクロック側は高い。矛盾しているようにも見えるが、より多くのコアが活性化するベース側はコア数の多いRyzen 9 3950Xの方がTDPの関係から抑えられ、Ryzen 9 3950Xが選別コアの可能性を考慮すると、シングルスレッドのターボ時クロックは高めに設定できるとすれば筋が通る。</p>
+      <p>　1つ、Ryzen 9 3950XにはCPUクーラーが付属しない。ユーザーは自前でCPUクーラーを用意することになるが、このクラスのCPUを求める人であれば、それなりにCPUクーラーへのこだわりもあるだろう。そして、発売前からAMDが公言しているように、クーラーの冷却性能はそれなりに気を使うことになるだろう。AMDはRyzen 9 3950Xに組み合わせるCPUクーラーに、「280mm以上の簡易水冷クーラー」を推奨している。</p>
+      <figure>
+        <img src="https://image.itmedia.co.jp/pcuser/articles/1911/29/ht1129_ih02.jpg"/>
+        <figcaption>パッケージもクーラーが付属しない専用のもので、通常の第3世代Ryzenのものよりひと回り小さい。パッケージを開くと分かるが、CPUは上部のわずかな窪み部分に格納されている</figcaption>
+      </figure>
+      <p>　Ryzen 9 3950Xは、Ryzen 9 3900Xと同じ105WのTDP枠だ。それもおそらくRyzen 9 3950Xは選別されたコアだろう。それでも2コア4スレッド分の増加は、選別コアでカバーできる限度を超えているようだ。105WのTDP枠の中で上限により近い、マージンが少ないものであろうことが想像される。</p>
+      <figure>
+        <img src="https://image.itmedia.co.jp/pcuser/articles/1911/29/ht1129_ih03.jpg"/>
+        <figcaption>Ryzen 9 3950Xの刻印。これにより16コア32スレッドがソケットAM4で利用可能になる</figcaption>
+      </figure>
+      <p>　簡易水冷ラジエーターを搭載できないミニケースや、スモールフォームファクターで使いたい、空冷CPUクーラーを組み合わせたいといったニーズに対して、AMDは「Eco-Mode」を用意することで対応しようとしている。</p>
+      <p>　Ryzen Masterから利用可能なEco-Modeは、TDP上限を105Wから65Wへと引き下げる。上限が65W、40W分引き下げられれば当然クロックが抑えられる。Ryzen 9 3950Xのパフォーマンスを100％引き出すことはできなくなるが、ノーマルのRyzen 9 3950Xとはまた異なるワット／パワーのCPUとして活用できることになる。</p>
+      <figure>
+        <img src="https://image.itmedia.co.jp/pcuser/articles/1911/29/ht1129_ih04.jpg"/>
+        <figcaption>CPU-Zから見たRyzen 9 3950X</figcaption>
+      </figure>
+      <p>　それでは、ベンチマークテストでパフォーマンスを見ていこう。</p>
+      <p>
+        <a href="https://www.itmedia.co.jp/pcuser/articles/1911/29/news081_2.html">マルチスレッドでのアドバンテージは大きいが…</a>
+      </p>
+      <p>　　　　　　 <b>1</b>|<a href="https://www.itmedia.co.jp/pcuser/articles/1911/29/news081_2.html">2</a>|<a href="https://www.itmedia.co.jp/pcuser/articles/1911/29/news081_3.html">3</a>|<a href="https://www.itmedia.co.jp/pcuser/articles/1911/29/news081_4.html">4</a> <a href="https://www.itmedia.co.jp/pcuser/articles/1911/29/news081_2.html">次のページへ</a></p>
+      <p>この記事が気に入ったら<br/>ITmedia PC USER に「いいね！」しよう</p>
+      <p>
+        <a href="https://twitter.com/itm_pcuser">@itm_pcuserさんをフォロー</a>
+      </p>
+    </article>
+  </body>
+</html>
