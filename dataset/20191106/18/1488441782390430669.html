@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://www.androidworld.it/2019/11/06/file-manager-android-dovranno-chiedere-permesso-google-esistere-foto-video-679072/"/>
+    <meta property="og:site_name" content="AndroidWorld"/>
+    <meta property="article:published_time" content="2019-11-06T18:37:57+00:00"/>
+    <meta property="og:title" content="I File Manager di Android dovranno chiedere il permesso a Google per esistere (foto e video)"/>
+    <meta property="og:description" content="Ricordate la storia dei vincoli a SMS e chiamate introdotti da Google lo scorso anno e applicati alle app pubblicate..."/>
+  </head>
+  <body>
+    <article>
+      <h1>I File Manager di Android dovranno chiedere il permesso a Google per esistere (foto e video)</h1>
+      <address><time datetime="2019-11-06T18:37:57+00:00">06 Nov 2019, 18:37</time> by <a rel="author" href="https://www.androidworld.it/author/robottin/" target="_blank">Matteo Bottin</a></address>
+      <p>Ricordate la storia dei <a href="https://www.androidworld.it/2018/10/09/google-protegge-vostro-registro-chiamate-ed-sms-restringendone-laccesso-alle-app-terze-parti-586210/">vincoli a SMS e chiamate</a> introdotti da Google lo scorso anno e applicati alle app pubblicate sul Play Store? Una storia simile si è ripetuta con la funzionalità <a href="https://www.androidworld.it/2019/04/28/la-beta-3-android-q-mettera-stand-by-la-funzionalita-scoped-storage-cose-perche-importante-627905/">Scoped Storage</a> introdotta con la <a href="https://www.androidworld.it/2019/04/03/disponibile-la-beta-2-android-q-bubbles-smartphone-pieghevoli-tutti-623216/">Beta 2 di Android 10</a>. Nella pratica, gli sviluppatori non potevano aver accesso a tutta la memoria interna del telefono ma solamente a quella relativa alla propria app.</p>
+      <p>Per accedere ad altre parti della memoria, l’app deve richiedere il permesso <b>READ_EXTERNAL_STORAGE</b> delle <b>API MediaStore</b>, ma questo permesso si riferisce solamente a foto, video e audio posizionati in località specifiche definite all’interno dell’API.</p>
+      <p>Va da sé che le app file manager, per come stanno le cose, non possono funzionare. E quindi, che soluzioni abbiamo? Una delle opzioni disponibili è l’utilizzo delle <b>API Storage Access Framework</b> (SAF). Purtroppo, però, queste API forniscono prestazioni scadenti, hanno una pessima documentazione e sono poco affidabili.</p>
+      <p>Un’altra opzione viene <b>fornita da Google</b>, e <b>arriverà con Android 11</b> (ricordiamo che gli sviluppatori hanno tempo fino al 1° novembre 2020 per preparare le proprie app a gestire Android 10). Tuttavia, si tratta di una opzione semplicemente assurda, ma che è l’unica al momento disponibile.</p>
+      <p>Come presentato nel video che trovate a fine articolo (minuto 9:01), <b>accessi speciali verranno forniti da Google alle app che proveranno di avere “chiaro bisogno” di accedere alla memoria interna del dispositivo</b>. Come è possibile ricevere questi accessi? Semplice: <b>compilando un modulo di dichiarazione e inviandolo a Google</b>.</p>
+      <p>Insomma, a partire dal prossimo anno i file manager presenti nel Play Store potrebbero cambiare completamente. Sì, perché <b>uno dei vincoli</b> presentati da Google è la impossibilità di accedere a cartelle di app esterne. Insomma, dovrete dire addio alle mod.</p>
+      <figure>
+        <iframe src="https://www.youtube.com/embed/UnJ3amzJM94" width="640" height="360" data-service="Youtube" scrolling="no"/>
+      </figure>
+      <p>Via: <a href="https://www.xda-developers.com/google-file-manager-devs-submit-form-broad-file-storage-access-android-11/">XDA Developers</a></p>
+    </article>
+  </body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://www.deskmodder.de/blog/2019/11/13/deaktivieren-der-intel-transactional-synchronization-extensions-tsx-in-der-registry/"/>
+    <meta property="og:site_name" content="Deskmodder.de"/>
+    <meta property="article:published_time" content="2019-11-13T09:09:26+00:00"/>
+    <meta property="og:title" content="Deaktivieren der Intel Transactional Synchronization Extensions (TSX) in der Registry"/>
+    <meta property="og:description" content="TSX (Transactional Synchronization Extensions) wurde in den Intel CPUs der Haswell, Broadwell, Skylake Reihe integriert damit der Code parallel ausgeführt werden kann. Dadurch können Anwendungen sc…"/>
+  </head>
+  <body>
+    <article>
+      <h1>Deaktivieren der Intel Transactional Synchronization Extensions (TSX) in der Registry</h1>
+      <address><time datetime="2019-11-13T09:09:26+00:00">13 Nov 2019, 09:09</time> by <a rel="author" href="https://www.deskmodder.de/blog/author/moinmoin/" target="_blank">moinmoin</a></address>
+      <p>TSX (Transactional Synchronization Extensions) wurde in den Intel CPUs der Haswell, Broadwell, Skylake Reihe integriert damit der Code parallel ausgeführt werden kann. Dadurch können Anwendungen schneller ausgeführt werden. Dies wurde nachträglich aber wieder per UEFI-Update deaktiviert.</p>
+      <p>Dies steht in Zusammenhang mit den sicherheitsrelevanten Updates stehen, die gestern (12.11) bereitgestellt wurden und dem <a href="https://software.intel.com/security-software-guidance/software-guidance/intel-transactional-synchronization-extensions-intel-tsx-asynchronous-abort">Intel Sicherheitsbeitrag</a>. Hier wurde eine neue spekulative Schwachstelle gefunden mit dem Namen ZombieLoad 2 die auf die TSX Funktion abzielt.</p>
+      <p><b>Die aktuelle Liste von Intel, welche CPUs betroffen sind:</b> <a href="https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-00270.html">intel.com/security-center/advisory/intel-sa-00270.html</a></p>
+      <figure>
+        <img src="https://www.deskmodder.de/blog/wp-content/uploads/2019/11/intel-transactional-synchronization-extensions-tsx-500x318.jpg"/>
+      </figure>
+      <p>Microsoft hat nun einen Supportbeitrag zur Verfügung gestellt, der diese Funktion auch in der Registry deaktiviert oder aktiviert. Diese Änderung in der Registry betrifft Windows 10, Windows 8.1 und 7 sowie die Server Versionen.</p>
+      <p>
+        <i>„Für Prozessoren, die die notwendige Prozessorunterstützung zum Deaktivieren der Intel® Transactional Synchronization Extensions (Intel® TSX) Funktion bereitstellen, folgen Sie bitte den unten aufgeführten Anweisungen zur Registry-Einstellung, um sie zu deaktivieren.“</i>
+      </p>
+      <ul>
+        <li>
+          <b>Deaktivieren</b>
+        </li>
+        <li>Eingabeaufforderung als Administrator starten und diesen Befehl einfügen und Enter drücken:</li>
+        <li/>
+      </ul>
+      <pre>reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Kernel" /v DisableTsx /t REG_DWORD /d 1 /f</pre>
+      <ul>
+        <li>
+          <b>Wieder aktivieren</b>
+        </li>
+        <li/>
+      </ul>
+      <pre>reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Kernel" /v DisableTsx /t REG_DWORD /d 0 /f</pre>
+      <p>Quelle: <a href="https://support.microsoft.com/de-de/help/4531006/guidance-for-disabling-intel-transactional-synchronization-extensions">support.microsoft</a>, <a href="https://portal.msrc.microsoft.com/en-us/security-guidance/releasenotedetail/164aa83e-499c-e911-a994-000d3a33c573">/portal.msrc.microsoft</a></p>
+    </article>
+  </body>
+</html>

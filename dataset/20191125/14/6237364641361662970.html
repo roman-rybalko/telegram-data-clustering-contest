@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://www.anandtech.com/show/15044/the-amd-ryzen-threadripper-3960x-and-3970x-review-24-and-32-cores-on-7nm"/>
+    <meta property="og:site_name" content="AnandTech"/>
+    <meta property="article:published_time" content="2019-11-25T14:00:00+00:00"/>
+    <meta property="og:title" content="The AMD Ryzen Threadripper 3960X and 3970X Review: 24 and 32 Cores on 7nm"/>
+    <meta property="og:description" content="One of the constant themes of 2019 has been to ask AMD employees about the future of its Threadripper line of products. Since the start of the year we’ve seen AMD advertise for a new head of workstation products, we’ve seen AMD accidentally use an old roadmap slide which didn’t have Threadripper listed (leading to speculation it was canceled), and during August I was promised that we would hear more this year. Today that time has come, with AMD launching its 3rd Generation Threadripper platform for the high-end desktop market. With two processors and 12+ motherboards available, AMD is going above and beyond the previous definition of high-end desktop."/>
+  </head>
+  <body>
+    <article>
+      <h1>The AMD Ryzen Threadripper 3960X and 3970X Review: 24 and 32 Cores on 7nm</h1>
+      <address><time datetime="2019-11-25T14:00:00+00:00">25 Nov 2019, 14:00</time> by <a rel="author">Dr. Ian Cutress, Gavin Bonshor, Andrei Frumusanu</a></address>
+      <details>
+        <summary>The AMD Ryzen Threadripper 3960X and 3970X Review</summary>
+        <ul>
+          <li>
+            <a href="https://www.anandtech.com/show/15044/the-amd-ryzen-threadripper-3960x-and-3970x-review-24-and-32-cores-on-7nm">The AMD Ryzen Threadripper 3960X and 3970X Review</a>
+          </li>
+          <li>
+            <a href="https://www.anandtech.com/show/15044/the-amd-ryzen-threadripper-3960x-and-3970x-review-24-and-32-cores-on-7nm/2">Power Consumption: 6-13W Per Core</a>
+          </li>
+          <li>
+            <a href="https://www.anandtech.com/show/15044/the-amd-ryzen-threadripper-3960x-and-3970x-review-24-and-32-cores-on-7nm/3">Zen2 Platform for HEDT - Improvements over Last-Gen</a>
+          </li>
+          <li>
+            <a href="https://www.anandtech.com/show/15044/the-amd-ryzen-threadripper-3960x-and-3970x-review-24-and-32-cores-on-7nm/4">Test Bed and Setup</a>
+          </li>
+          <li>
+            <a href="https://www.anandtech.com/show/15044/the-amd-ryzen-threadripper-3960x-and-3970x-review-24-and-32-cores-on-7nm/5">CPU Performance: Rendering Tests</a>
+          </li>
+          <li>
+            <a href="https://www.anandtech.com/show/15044/the-amd-ryzen-threadripper-3960x-and-3970x-review-24-and-32-cores-on-7nm/6">CPU Performance: System Tests</a>
+          </li>
+          <li>
+            <a href="https://www.anandtech.com/show/15044/the-amd-ryzen-threadripper-3960x-and-3970x-review-24-and-32-cores-on-7nm/7">CPU Performance: Encoding Tests</a>
+          </li>
+          <li>
+            <a href="https://www.anandtech.com/show/15044/the-amd-ryzen-threadripper-3960x-and-3970x-review-24-and-32-cores-on-7nm/8">CPU Performance: Web and Legacy Tests</a>
+          </li>
+          <li>
+            <a href="https://www.anandtech.com/show/15044/the-amd-ryzen-threadripper-3960x-and-3970x-review-24-and-32-cores-on-7nm/9">Gaming: World of Tanks enCore</a>
+          </li>
+          <li>
+            <a href="https://www.anandtech.com/show/15044/the-amd-ryzen-threadripper-3960x-and-3970x-review-24-and-32-cores-on-7nm/10">Gaming: Final Fantasy XV</a>
+          </li>
+          <li>
+            <a href="https://www.anandtech.com/show/15044/the-amd-ryzen-threadripper-3960x-and-3970x-review-24-and-32-cores-on-7nm/11">Gaming: Shadow of War</a>
+          </li>
+          <li>
+            <a href="https://www.anandtech.com/show/15044/the-amd-ryzen-threadripper-3960x-and-3970x-review-24-and-32-cores-on-7nm/12">Gaming: Strange Brigade (DX12, Vulkan)</a>
+          </li>
+          <li>
+            <a href="https://www.anandtech.com/show/15044/the-amd-ryzen-threadripper-3960x-and-3970x-review-24-and-32-cores-on-7nm/13">Gaming: Grand Theft Auto V</a>
+          </li>
+          <li>
+            <a href="https://www.anandtech.com/show/15044/the-amd-ryzen-threadripper-3960x-and-3970x-review-24-and-32-cores-on-7nm/14">Gaming: F1 2018</a>
+          </li>
+          <li>
+            <a href="https://www.anandtech.com/show/15044/the-amd-ryzen-threadripper-3960x-and-3970x-review-24-and-32-cores-on-7nm/15">History is Written By The Victors</a>
+          </li>
+        </ul>
+      </details>
+      <p>One of the constant themes of 2019 has been to ask AMD employees about the future of its Threadripper line of products. Since the start of the year we’ve seen AMD advertise for a new head of workstation products, we’ve seen AMD accidentally use an old roadmap slide which didn’t have Threadripper listed (leading to speculation it was canceled), and during August I was promised that we would hear more this year. Today that time has come, with AMD launching its 3<sup>rd</sup> Generation Threadripper platform for the high-end desktop market. With two processors and 12+ motherboards available, AMD is going above and beyond the previous definition of high-end desktop.</p>
+      <h3>Threadripper: Redefining HEDT Yet Again</h3>
+      <p>AMD’s march on the high-end desktop market since the launch of the first generation of Ryzen has been somewhat brutal. In a market where we were barely moving up by an average of less than 2 cores a generation, in the last three years AMD has slapped 8-cores in the mainstream and 16 for HEDT, swiftly followed up by 32 in HEDT then moving mainstream up to 16, all while the competition rushed to get something up to 18 cores available. The first generations of products, on the Zen and Zen+ microarchitecture, were about AMD being aggressive in pricing and core counts in order to provide high parallel throughput machines. With the launch of Zen 2 for the Threadripper series today, AMD is now going after raw throughput, and combining that with almost double the number of cores that Intel can offer.</p>
+      <p>When Threadripper as a brand came to market, AMD promoted it as a product that could tackle any high-parallel throughput tasks. Thread + Ripper was a clever play on words: anything that had plenty of threads, the hardware was designed to ‘rip’ through the workload. The only downsides to this hardware was the lack of true AVX2 support (a key addition for some of these workloads), that the per-MHz performance was still a little behind, and that the way the hardware was arranged led to memory access variances that didn’t work great in all scenarios. With the third generation Threadripper being launched today, all of those issues go away: we get AVX2, we get better per-MHz performance, and a more unified memory solution. That’s on top of PCIe 4.0 support, more PCIe lanes, and faster DRAM. On paper alone, one has to ask what the flaws are.</p>
+      <p>Today’s launch covers two products: the 24-core TR 3960X and the 32-core TR 3970X. Both of these processors are built from four Zen 2 chiplets paired with a single I/O die, with each chiplet having 6 cores or 8 cores respectively. Both CPUs support 64 PCIe 4.0 lanes, four DDR4-3200 memory channels, and are built on a new sTRX4 socket with a new all-AMD TRX40 chipset.</p>
+      <figure>
+        <img src="https://images.anandtech.com/doci/15044/3960X%20CPU%20Run-0-Base-1-CPU-Z-1-CPU_575px.jpg"/>
+      </figure>
+      <p> </p>
+      <figure>
+        <img src="https://images.anandtech.com/doci/15044/TR3%203970X%20CPU%20Run%201-0-Base-1-CPU-Z-1-CPU_575px.jpg"/>
+        <figcaption>AMD Threadripper 3960X and AMD Threadripper 3970X</figcaption>
+      </figure>
+      <p>AMD has also <a href="https://www.anandtech.com/show/15151/amd-preannounces-64-core-threadripper-3990x">lifted the lid on an upcoming 64-core variant, called the TR 3990X</a>. We’re covering that news in a separate post, but in a nutshell AMD is bringing its high-frequency variant of the 280 W EPYC 7H12 to the mass market in 2020, with potential room for a 48-core version as well. Just don’t ask how much that one will cost: the ‘slow’ 225W version of the 7H12 has an MSRP of $6950, so the Threadripper version is going to be at least 2x the 32-core $1999 price.</p>
+      <table>
+        <tr>
+          <td colspan="8">AMD HEDT SKUs</td>
+        </tr>
+        <tr>
+          <td>
+            <i>AnandTech</i>
+          </td>
+          <td>Cores/<br/>Threads</td>
+          <td>Base/<br/>Turbo</td>
+          <td>L3</td>
+          <td>DRAM<br/>1DPC</td>
+          <td>PCIe</td>
+          <td>TDP</td>
+          <td>SRP</td>
+        </tr>
+        <tr>
+          <td colspan="8">Third Generation Threadripper</td>
+        </tr>
+        <tr>
+          <td>TR 3970X</td>
+          <td>32 / 64</td>
+          <td>3.7 / 4.5</td>
+          <td>128 MB</td>
+          <td>4x3200</td>
+          <td>64</td>
+          <td>280 W</td>
+          <td>$1999</td>
+        </tr>
+        <tr>
+          <td>TR 3960X</td>
+          <td>24 / 48</td>
+          <td>3.8 / 4.5</td>
+          <td>128 MB</td>
+          <td>4x3200</td>
+          <td>64</td>
+          <td>280 W</td>
+          <td>$1399</td>
+        </tr>
+        <tr>
+          <td colspan="8">Second Generation Threadripper</td>
+        </tr>
+        <tr>
+          <td>TR 2990WX</td>
+          <td>32 / 64</td>
+          <td>3.0 / 4.2</td>
+          <td>64 MB</td>
+          <td>4x2933</td>
+          <td>64</td>
+          <td>250 W</td>
+          <td>
+            <a href="https://redirect.viglink.com/?key=8a27173f1d0514db88df01b1c3d4a370&amp;u=https%3A%2F%2Fwww.newegg.com%2FProduct%2FProduct.aspx%3FItem%3DN82E16819113541">$1799</a>
+          </td>
+        </tr>
+        <tr>
+          <td>TR 2970WX</td>
+          <td>24 / 48</td>
+          <td>3.0 / 4.2</td>
+          <td>64 MB</td>
+          <td>4x2933</td>
+          <td>64</td>
+          <td>250 W</td>
+          <td>$1299</td>
+        </tr>
+        <tr>
+          <td>TR 2950X</td>
+          <td>16 / 32</td>
+          <td>3.5 / 4.4</td>
+          <td>32 MB</td>
+          <td>4x2933</td>
+          <td>64</td>
+          <td>180 W</td>
+          <td>$899</td>
+        </tr>
+        <tr>
+          <td>TR 2920X</td>
+          <td>12 / 24</td>
+          <td>3.5 / 4.3</td>
+          <td>32 MB</td>
+          <td>4x2933</td>
+          <td>64</td>
+          <td>180 W</td>
+          <td>$649</td>
+        </tr>
+        <tr>
+          <td colspan="8">Ryzen 3000</td>
+        </tr>
+        <tr>
+          <td>Ryzen 9 3950X</td>
+          <td>16 / 32</td>
+          <td>3.5 / 4.7</td>
+          <td>32 MB</td>
+          <td>2x3200</td>
+          <td>24</td>
+          <td>105 W</td>
+          <td>$749</td>
+        </tr>
+      </table>
+      <p>Both of our new TR CPUs have a 280W TDP, which means they will require substantial cooling regardless of the system they are in. This is a step higher than the peak 250W TDP we saw with previous generation Threadripper processors, as we are probably approaching a realistic limit as to how high consumer processor power numbers should go without sticking them into a server. This means that the new TRX40 motherboards are built to be hard and tough, and also support overclocking.</p>
+      <figure>
+        <img src="https://images.anandtech.com/doci/15044/3970X%20Task%20Manager%202_575px.jpg"/>
+      </figure>
+      <p>AMD is pricing these two processors at $1399 and $1999, which also means that AMD’s high-end desktop processors start at a price (and a core count) above where Intel’s HEDT market finishes. Intel’s best chip in this market is the Core i9-10980XE, which has 18 cores and an OEM price of $979, which is a way below the TR 3960X with 24 cores and a retail price of $1399. For the first time in living memory, AMD and Intel are launching their CPUs on the same day, and you can catch our <a href="https://www.anandtech.com/show/15039/the-intel-core-i9-10980xe-review">separate Core i9-10980XE review</a> at AnandTech today.</p>
+      <h4>New Socket: sTRX4</h4>
+      <p>One of the key messaging when AMD launched its first Ryzen processors was set to be the longevity of its consumer platforms. Technically the mainstream Ryzen AM4 socket has now gone through four generations of products, and if it weren’t for some poor BIOS choices in the early days, every AM4 motherboard should have been able to support the oldest to the newest AM4 processor. But it does mean a single socket has scaled from a peak of 4 cores when it was first launched all the way to 16 cores.</p>
+      <p>With Threadripper, it has been a little different. The transition from PCIe 3.0 to PCIe 4.0 has been a tough one to manage, especially when trying to keep parity with sockets and chipset compatibility. The main issue has been PCIe 4.0 validation: supporting PCIe 4.0 with the traces on a motherboard is difficult to the point that the board has to be built with PCIe 4.0 in mind in order to adequately qualify. On top of that, AMD has seen an opportunity to usurp the competition, and has changed the CPU-to-chipset bandwidth link from PCIe 3.0 x4 to PCIe 4.0 x8, quadrupling the total amount of CPU-to-chipset bandwidth available. This is ultimately what breaks compatibility between the previous Threadripper motherboards and the new Threadripper motherboards.</p>
+      <figure>
+        <img src="https://images.anandtech.com/doci/15044/AMD%20TRX40%20Chipset%20Image%203%20%281%29_575px.jpg"/>
+      </figure>
+      <p>In order to cater for Zen 2, there are also some pin-out changes, however AMD stated that they kept the physical socket the same. What was surprising is that AMD stated that they kept the keying, the little notches that make it easier to see if a CPU is/isn’t supported, the same as well. This means that you can physically fit a new TR CPU in an old motherboard and vice versa. When asked what would happen if you did, AMD said that the system will just refuse to boot. I won’t be the first one to try that, in case the magic smoke appears.</p>
+      <p>From our pre-briefings, we’ve identified 12 new sTRX4 motherboards bearing the TRX40 name for new TR3 users to get hold of. These are all pretty expensive, in order to both support the CPUs and have the latest technology, and we will have our overview report on these out later this week. Stay tuned for that.</p>
+      <h4>Competition for 3<sup>rd</sup> Generation Threadripper</h4>
+      <p>In each of these reviews, we try and take a look at what CPUs our new hardware is going to compete against. In this instance, AMD has zero competition from Intel without going into Intel’s enterprise range of hardware. When AMD starts at 24-cores and $1399, while Intel finishes at 18-cores and $979, there is no overlap here – the price difference is substantial enough for each side of the equation not to be involved with each other. If we started looking into the Xeon range from Intel, we’re adding in RDIMM support which TR3 doesn’t have, and the added cost of RAS features and vPro etc.</p>
+      <table>
+        <tr>
+          <td colspan="4">Intel vs AMD<br/>HEDT</td>
+        </tr>
+        <tr>
+          <td>Core<br/>i9-10980XE</td>
+          <td>
+            <i>AnandTech</i>
+          </td>
+          <td>TR<br/>3960X</td>
+          <td>TR<br/>3970X</td>
+        </tr>
+        <tr>
+          <td>18 / 36</td>
+          <td>Cores / Threads</td>
+          <td>24 / 48</td>
+          <td>32 / 64</td>
+        </tr>
+        <tr>
+          <td>3.0 GHz</td>
+          <td>Base Frequency</td>
+          <td>3.8 GHz</td>
+          <td>3.5 GHz</td>
+        </tr>
+        <tr>
+          <td>4.6 / 4.8 GHz</td>
+          <td>Turbo Frequency</td>
+          <td>4.5 GHz</td>
+          <td>4.7 GHz</td>
+        </tr>
+        <tr>
+          <td>18 MB</td>
+          <td>L2 Cache</td>
+          <td>12 MB</td>
+          <td>16 MB</td>
+        </tr>
+        <tr>
+          <td>24.75 MB</td>
+          <td>L3 Cache</td>
+          <td>128 MB</td>
+          <td>128 MB</td>
+        </tr>
+        <tr>
+          <td>256 GB</td>
+          <td>DRAM Capacity</td>
+          <td>512 GB</td>
+          <td>512 GB</td>
+        </tr>
+        <tr>
+          <td>DDR4-2933</td>
+          <td>DRAM Frequency</td>
+          <td>DDR4-3200</td>
+          <td>DDR4-3200</td>
+        </tr>
+        <tr>
+          <td>48</td>
+          <td>PCIe Lanes</td>
+          <td>64</td>
+          <td>64</td>
+        </tr>
+        <tr>
+          <td>165 W</td>
+          <td>TDP</td>
+          <td>280 W</td>
+          <td>280 W</td>
+        </tr>
+        <tr>
+          <td>$979 (1ku)</td>
+          <td>Price</td>
+          <td>$1399</td>
+          <td>$1999</td>
+        </tr>
+      </table>
+      <p>Technically I’m going to pull one CPU out here, the Xeon W-3175X. This is a 28-core unlocked processor that Intel launched last year to much fanfare, but with four less cores than the 3970X and another +50% in cost, well, the benchmarks speak for themselves.</p>
+      <table>
+        <tr>
+          <td colspan="5">CPU Pricing</td>
+        </tr>
+        <tr>
+          <td valign="middle">AMD<br/>(MSRP Pricing)</td>
+          <td valign="middle">Cores</td>
+          <td valign="middle">
+            <i>AnandTech</i>
+          </td>
+          <td valign="middle">Cores</td>
+          <td valign="middle">Intel*<br/>(OEM Pricing)</td>
+        </tr>
+        <tr>
+          <td valign="middle"> </td>
+          <td valign="middle"> </td>
+          <td valign="middle">$2000+</td>
+          <td valign="middle">28/56</td>
+          <td valign="middle"><a href="https://www.anandtech.com/show/13748/the-intel-xeon-w-3175x-review-28-unlocked-cores-2999-usd">Xeon W-3175X</a> ($2999)</td>
+        </tr>
+        <tr>
+          <td valign="middle">TR 3970X ($1999)</td>
+          <td valign="middle">32/64</td>
+          <td valign="middle">$1750-$1999</td>
+          <td valign="middle"> </td>
+          <td valign="middle"> </td>
+        </tr>
+        <tr>
+          <td valign="middle"> </td>
+          <td valign="middle"> </td>
+          <td valign="middle">$1500-$1749</td>
+          <td valign="middle"> </td>
+          <td valign="middle"> </td>
+        </tr>
+        <tr>
+          <td valign="middle">TR 3960X ($1399)</td>
+          <td valign="middle">24/48</td>
+          <td valign="middle">$1250-$1499</td>
+          <td valign="middle"> </td>
+          <td valign="middle"> </td>
+        </tr>
+        <tr>
+          <td valign="middle"> </td>
+          <td valign="middle"> </td>
+          <td valign="middle">$1000-$1249</td>
+          <td valign="middle"> </td>
+          <td valign="middle"> </td>
+        </tr>
+        <tr>
+          <td valign="middle"> </td>
+          <td valign="middle"> </td>
+          <td valign="middle">$900-$999</td>
+          <td valign="middle">18/36</td>
+          <td valign="middle">Core i9-10980XE ($979)</td>
+        </tr>
+        <tr>
+          <td valign="middle"> </td>
+          <td valign="middle"> </td>
+          <td valign="middle">$800-$899</td>
+          <td valign="middle"> </td>
+          <td valign="middle"> </td>
+        </tr>
+        <tr>
+          <td valign="middle"><a href="https://www.anandtech.com/show/15043/the-amd-ryzen-9-3950x-review-16-cores-on-7nm-with-pcie-40">Ryzen 9 3950X</a> ($749)</td>
+          <td valign="middle">16/32</td>
+          <td valign="middle">$700-$799</td>
+          <td valign="middle">14/28</td>
+          <td valign="middle">Core i9-10940X ($784)</td>
+        </tr>
+        <tr>
+          <td valign="middle"> </td>
+          <td valign="middle"> </td>
+          <td valign="middle">$600-$699</td>
+          <td valign="middle">12/24</td>
+          <td valign="middle">Core i9-10920X ($689)</td>
+        </tr>
+        <tr>
+          <td valign="middle"> </td>
+          <td valign="middle"> </td>
+          <td valign="middle">$550-$599</td>
+          <td valign="middle">10/20</td>
+          <td valign="middle">Core i9-10900X ($590)</td>
+        </tr>
+        <tr>
+          <td valign="middle"> </td>
+          <td valign="middle"> </td>
+          <td valign="middle">$500-$549</td>
+          <td valign="middle">8/16</td>
+          <td valign="middle"><a href="https://www.anandtech.com/show/14979/the-intel-core-i9-9900ks-review">Core i9-9900KS</a> ($513)</td>
+        </tr>
+        <tr>
+          <td valign="middle">Ryzen 9 3900X ($499)</td>
+          <td valign="middle">12/24</td>
+          <td valign="middle">$450-$499</td>
+          <td valign="middle">8/16</td>
+          <td valign="middle">Core i9-9900K/F ($488)</td>
+        </tr>
+        <tr>
+          <td valign="middle"> </td>
+          <td valign="middle"> </td>
+          <td valign="middle">$400-$449</td>
+          <td valign="middle"> </td>
+          <td valign="middle"> </td>
+        </tr>
+        <tr>
+          <td valign="middle">Ryzen 7 3800X ($399)</td>
+          <td valign="middle">8/16</td>
+          <td valign="middle">$350-$399</td>
+          <td valign="middle">8/8</td>
+          <td valign="middle">Core i7-9700K/F ($374)</td>
+        </tr>
+        <tr>
+          <td valign="middle">Ryzen 7 3700X ($329)</td>
+          <td valign="middle">8/16</td>
+          <td valign="middle">$300-$349</td>
+          <td valign="middle"> </td>
+          <td valign="middle"> </td>
+        </tr>
+        <tr>
+          <td valign="middle"> </td>
+          <td valign="middle"> </td>
+          <td valign="middle">$250-$299</td>
+          <td valign="middle">6/6</td>
+          <td valign="middle">Core i5-9600K ($262)</td>
+        </tr>
+        <tr>
+          <td valign="middle">Ryzen 5 3600X ($249)</td>
+          <td valign="middle">6/12</td>
+          <td valign="middle">$200-$249</td>
+          <td valign="middle"> </td>
+          <td valign="middle"> </td>
+        </tr>
+        <tr>
+          <td valign="middle">Ryzen 5 3600 ($199)</td>
+          <td valign="middle">6/12</td>
+          <td valign="middle">Below $200</td>
+          <td valign="middle">4/4</td>
+          <td valign="middle">Core i3-9350K ($173)</td>
+        </tr>
+        <tr>
+          <td colspan="5" align="left" valign="middle">
+            <b>*Intel quotes OEM/tray pricing. Retail pricing will sometimes be $20-$50 higher.</b>
+          </td>
+        </tr>
+      </table>
+      <p>Ultimately AMD’s competition for the new Threadripper processors are the old Threadripper processors: the 32-core 3970X can compete against the 32-core 2990WX. But this isn’t so much of a competition as an evolution: the 3970X has a newer Zen 2 core for more IPC, a higher frequency, a unified memory system, and supports PCIe 4.0. On paper, you’d say that previous Threadripper processors pale in comparison. There’s going to be a lot of that in our following benchmarks.</p>
+      <p>
+        <a href="https://www.anandtech.com/show/15044/the-amd-ryzen-threadripper-3960x-and-3970x-review-24-and-32-cores-on-7nm/2">Power Consumption: 6-13W Per Core</a>
+      </p>
+      <details>
+        <summary>The AMD Ryzen Threadripper 3960X and 3970X Review</summary>
+        <ul>
+          <li>
+            <a href="https://www.anandtech.com/show/15044/the-amd-ryzen-threadripper-3960x-and-3970x-review-24-and-32-cores-on-7nm">The AMD Ryzen Threadripper 3960X and 3970X Review</a>
+          </li>
+          <li>
+            <a href="https://www.anandtech.com/show/15044/the-amd-ryzen-threadripper-3960x-and-3970x-review-24-and-32-cores-on-7nm/2">Power Consumption: 6-13W Per Core</a>
+          </li>
+          <li>
+            <a href="https://www.anandtech.com/show/15044/the-amd-ryzen-threadripper-3960x-and-3970x-review-24-and-32-cores-on-7nm/3">Zen2 Platform for HEDT - Improvements over Last-Gen</a>
+          </li>
+          <li>
+            <a href="https://www.anandtech.com/show/15044/the-amd-ryzen-threadripper-3960x-and-3970x-review-24-and-32-cores-on-7nm/4">Test Bed and Setup</a>
+          </li>
+          <li>
+            <a href="https://www.anandtech.com/show/15044/the-amd-ryzen-threadripper-3960x-and-3970x-review-24-and-32-cores-on-7nm/5">CPU Performance: Rendering Tests</a>
+          </li>
+          <li>
+            <a href="https://www.anandtech.com/show/15044/the-amd-ryzen-threadripper-3960x-and-3970x-review-24-and-32-cores-on-7nm/6">CPU Performance: System Tests</a>
+          </li>
+          <li>
+            <a href="https://www.anandtech.com/show/15044/the-amd-ryzen-threadripper-3960x-and-3970x-review-24-and-32-cores-on-7nm/7">CPU Performance: Encoding Tests</a>
+          </li>
+          <li>
+            <a href="https://www.anandtech.com/show/15044/the-amd-ryzen-threadripper-3960x-and-3970x-review-24-and-32-cores-on-7nm/8">CPU Performance: Web and Legacy Tests</a>
+          </li>
+          <li>
+            <a href="https://www.anandtech.com/show/15044/the-amd-ryzen-threadripper-3960x-and-3970x-review-24-and-32-cores-on-7nm/9">Gaming: World of Tanks enCore</a>
+          </li>
+          <li>
+            <a href="https://www.anandtech.com/show/15044/the-amd-ryzen-threadripper-3960x-and-3970x-review-24-and-32-cores-on-7nm/10">Gaming: Final Fantasy XV</a>
+          </li>
+          <li>
+            <a href="https://www.anandtech.com/show/15044/the-amd-ryzen-threadripper-3960x-and-3970x-review-24-and-32-cores-on-7nm/11">Gaming: Shadow of War</a>
+          </li>
+          <li>
+            <a href="https://www.anandtech.com/show/15044/the-amd-ryzen-threadripper-3960x-and-3970x-review-24-and-32-cores-on-7nm/12">Gaming: Strange Brigade (DX12, Vulkan)</a>
+          </li>
+          <li>
+            <a href="https://www.anandtech.com/show/15044/the-amd-ryzen-threadripper-3960x-and-3970x-review-24-and-32-cores-on-7nm/13">Gaming: Grand Theft Auto V</a>
+          </li>
+          <li>
+            <a href="https://www.anandtech.com/show/15044/the-amd-ryzen-threadripper-3960x-and-3970x-review-24-and-32-cores-on-7nm/14">Gaming: F1 2018</a>
+          </li>
+          <li>
+            <a href="https://www.anandtech.com/show/15044/the-amd-ryzen-threadripper-3960x-and-3970x-review-24-and-32-cores-on-7nm/15">History is Written By The Victors</a>
+          </li>
+        </ul>
+      </details>
+    </article>
+  </body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://www.bleepingcomputer.com/news/security/australian-govt-warns-of-active-emotet-and-bluekeep-threats/"/>
+    <meta property="og:site_name" content="BleepingComputer"/>
+    <meta property="article:published_time" content="2019-11-07T19:16:09+00:00"/>
+    <meta property="og:title" content="Australian Govt Warns of Active Emotet and BlueKeep Threats"/>
+    <meta property="og:description" content="The Australian Signals Directorate's Australian Cyber Security Centre (ACSC) together with state and territory partners warns businesses and people of Emotet and BlueKeep threats being active in the wild."/>
+  </head>
+  <body>
+    <article>
+      <h1>Australian Govt Warns of Active Emotet and BlueKeep Threats</h1>
+      <address><time datetime="2019-11-07T19:16:09+00:00">07 Nov 2019, 19:16</time> by <a rel="author" href="https://www.bleepingcomputer.com/author/sergiu-gatlan/" target="_blank">Sergiu Gatlan</a></address>
+      <figure>
+        <img src="https://www.bleepstatic.com/content/hl-images/2019/11/07/Australia_ACSC_ASD_(4).jpg"/>
+      </figure>
+      <p>The Australian Signals Directorate’s Australian Cyber Security Centre (ACSC) together with state and territory partners warns businesses and people of Emotet and BlueKeep threats being active in the wild.</p>
+      <p>The ACSC urges vigilance as attackers exploiting the Windows BlueKeep vulnerability have started attacking unpatched systems to infect them with coin miners.</p>
+      <p>Also, while the Emotet campaigns the ACSC previously notified about in late October had slowly winded down during the last week, it still represents a significant threat for both organizations and the general population.</p>
+      <p>"There are two concerning cyber security threats in the wild. While we have seen a drop in the number of Emotet infections in the last week, people and businesses should remain vigilant," Head of the ACSC, Rachel Noble PSM said.</p>
+      <p>"We are also concerned about reports cybercriminals are exploiting the BlueKeep vulnerability to access computers and control them without the users’ knowledge."</p>
+      <h3>Ongoing Emotet and BlueKeep campaigns</h3>
+      <p>News about hackers actively exploiting Windows devices not patched against the BlueKeep vulnerability broke on November 2 after security researcher Kevin Beaumont <a href="https://twitter.com/GossiTheDog/status/1190656348700258310?s=20">noticed</a> that his honeypots were crashing because of BlueKeep attacks, as later <a href="https://twitter.com/malwaretechblog/status/1190730471321112577">confirmed</a> by security researcher Marcus Hutchins.</p>
+      <p><a href="https://www.bleepingcomputer.com/news/security/microsoft-fixes-critical-remote-desktop-flaw-blocks-worm-malware/">BlueKeep (CVE-2019-0708)</a> is a serious security issue affecting Windows 7, Windows Server 2008 R2, and Windows Server 2008 that can enable malware to spread between connected systems without user intervention. The issue was patched by Microsoft on May 14, with security companies and governments issuing a wave of alerts about its severity.</p>
+      <p>While private and expensive BlueKeep exploit modules are already available for the <a href="https://www.bleepingcomputer.com/news/security/metasploit-module-created-for-bluekeep-flaw-private-for-now/">Metasploit</a> and <a href="https://www.bleepingcomputer.com/news/security/bluekeep-rce-exploit-module-added-to-penetration-testing-tool/">CANVAS</a> penetration testing tools, the patch rate for enterprise systems reached 83% in June.</p>
+      <p>However, home users' vulnerable Windows systems are not currently tracked and, at the moment, they are potentially the most exposed to attacks given that security is not always at the top of the list for consumers.</p>
+      <figure>
+        <img src="https://www.bleepstatic.com/images/news/u/1100723/BlueKeepExploit_tweet-MalwareTech.png"/>
+      </figure>
+      <p>The second cybersecurity threat the ACSC warns about is Emotet, a banking trojan first spotted during 2014 that has evolved into a dangerous botnet used to drop numerous other malware strains like the Trickbot banking Trojan (known for delivering Ryuk ransomware payloads).</p>
+      <p>Security researchers speculate that the Emotet botnet is being operated by a threat actor tracked as TA542 by <a href="https://www.proofpoint.com/us/threat-insight/post/threat-actor-profile-ta542-banker-malware-distribution-service">ProofPoint</a> and as Mummy Spider by <a href="https://www.crowdstrike.com/blog/meet-crowdstrikes-adversary-of-the-month-for-february-mummy-spider/">CrowdStrike</a>. The group "rents" the botnet to other actors as <a href="https://www.bleepingcomputer.com/news/security/ryuk-ransomware-partners-with-trickbot-to-gain-access-to-infected-networks/">it was the case</a> with the group behind TrickBot that rented distribution from the Emotet botnet.</p>
+      <p>The Emotet botnet's command and control (C2) servers resumed activity and <a href="https://www.bleepingcomputer.com/news/security/emotet-botnet-is-back-servers-active-across-the-world/">started delivering malware payloads again on August 22</a> after a short hiatus since the beginning of June.</p>
+      <p>Following this, the ACSC announced that Australia’s Cyber Incident Management Arrangements (<a href="https://www.cyber.gov.au/sites/default/files/2019-03/cima_2018_A4.pdf">CIMA</a>) to Level 3 – ‘Alert’ on October 25, "in response to the widespread exploitation of vulnerable systems by the Emotet malware."</p>
+      <p>"The threat posed by this malicious software required immediate action at the national level to ensure Australian organisations, from critical infrastructure providers to small businesses, receive mitigation advice to protect their networks," <a href="https://www.cyber.gov.au/news/national-cyber-security-committee-urges-vigilance-two-concerning-cyber-security-threats-are-wild">Noble added</a>.</p>
+      <p>On September 16, after less than a month since its C2 servers reactivated, the <a href="https://www.bleepingcomputer.com/news/security/emotet-revived-with-large-spam-campaigns-around-the-world/">Emotet botnet started delivering malspam</a> around the globe, with emails distributing Emotet payloads being spotted in attacks targeting individuals, business, and government entities from the U.S., Germany, the United Kingdom, Poland, and Italy. </p>
+      <p>Cofense told BleepingComputer that spam messages were coming from 3,362 compromised senders, and the total count of unique domains used in the attacks reaching 1,875 and covering over 400 TLDs.</p>
+      <figure>
+        <iframe data-src="https://twitter.com/CofenseLabs/status/1164629884439879680?ref_src=twsrc%5Etfw" data-embed-type="twitter-tweet" width="100%" height="0" data-service="Twitter" scrolling="no" nowide=""/>
+      </figure>
+      <p>The ACSC provides <a href="https://www.cyber.gov.au/threats/advisory-2019-131a-emotet-malware-campaign">technical advice on Emotet</a> that should allow you to protect against malware and ransomware threats, while Microsoft provides its own recommendations for <a href="https://www.microsoft.com/security/blog/2019/08/08/protect-against-bluekeep/">protecting against attacks designed to exploit the BlueKeep vulnerability</a>.</p>
+      <p>The U.S. Cybersecurity and Infrastructure Security Agency (CISA) published a list of <a href="https://www.bleepingcomputer.com/news/security/us-govt-achieves-bluekeep-remote-code-execution-issues-alert/">BlueKeep mitigation measures</a> in June and urges Windows admins and users to review the <a href="https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2019-0708">Microsoft BlueKeep Security Advisory</a> and the <a href="https://support.microsoft.com/en-us/help/4500705/customer-guidance-for-cve-2019-0708">Microsoft Customer Guidance for CVE-2019-0708</a> for more info.</p>
+      <p>"While you are watching your TV or eating dinner with your family, a cybercriminal can use your computer to mine and profit from untraceable digital currency, and you may never know that this has occurred," Noble added.</p>
+      <p>"The unfortunate truth is that once a cybercriminal can access your computer, they can control your computer. If they find valuable data, like your personal information and photos, they can steal it."</p>
+    </article>
+  </body>
+</html>

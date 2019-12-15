@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://css-tricks.com/thoughts-after-looking-at-the-web-almanacs-chapter-on-css/"/>
+    <meta property="og:site_name" content="CSS-Tricks"/>
+    <meta property="article:published_time" content="2019-11-13T15:20:59+00:00"/>
+    <meta property="og:title" content="Thoughts After Looking at the Web Almanac’s Chapter on CSS"/>
+    <meta property="og:description" content="Woah, I didn't see this coming! The HTTP Archive dropped this big &quot;state of the web&quot; report called Web Almanac with guest writers exploring data from 5.8"/>
+  </head>
+  <body>
+    <article>
+      <h1>Thoughts After Looking at the Web Almanac’s Chapter on CSS</h1>
+      <p>Easily manage projects with <a href="https://synd.co/2JziuUL">monday.com</a></p>
+      <p>Woah, I didn't see this coming! The HTTP Archive dropped this big "state of the web" report called Web Almanac with guest writers exploring data from 5.8 million websites.</p>
+      <p>Una Kravetz and Adam Argyle wrote <a href="https://almanac.httparchive.org/en/2019/css">the CSS chapter</a>. The point is to squeeze a digestible amount of insight out of a mountain's worth of data. So there is some irony here with me squeezing in my thoughts about this chapter for an even quicker read, but hey, here we go.</p>
+      <ul>
+        <li><b>83% of sites make use of <code>rgba()</code> but only 22% use <code>rgb()</code>.</b> That entirely makes sense to me, as <code>rgb()</code> isn't a particularly useful color format, if you ask me. It's the "a" (alpha) that gives the format the ability control transparency, which is only recently available in the most popular format, Hex, in the form of <a href="https://css-tricks.com/8-digit-hex-codes/">8-Digit Hex Codes</a>. But even then, it isn't as nice as <code>rgba()</code>. <code>hsla()</code> is arguably the nicest color format.</li>
+        <li><b>Definitely not surprising that white and black are the two most popular named colors.</b> I use them, by name, a lot. I even change CSS commits to use <code>white</code> instead of <code>#FFF</code> and <code>black</code> instead of <code>#000</code> because I think there is less mental overhead to it.</li>
+        <li><b><code>em</code> is twice as popular as <code>rem</code>.</b> Wow. I'm a <code>rem</code> guy myself, just because I find it less finicky and more predictable. In theory, I still like the idea of <a href="https://css-tricks.com/rems-ems/">px at the Root, rem for Components, and em for Text Elements</a>, but I'm not sure I've ever pulled it off that cleanly.</li>
+        <li><b>Classes are by far the leader in selector types.</b> Factoring how <i>many</i> are used, they have over a 10x lead over anything else. I like to see that. They have a low-but-not-too-low specificity value. They have nice APIs for manipulating them. Their entire purpose is to be a styling hook. They are element-agnostic. It's just the right way to do styling. The flatter you keep styles, the less headaches you'll have., A little more surprisingly to me is the fact that the average number of classes per element is one. Makes me really wanna know the decimal though. Was it 1.1? 1.4? 1.00001?</li>
+        <li><b>Holy buckets. Flexbox on half of sites and grid only on two percent?!</b> The browser support isn't <i>that</i> different. I'm well aware they are both very useful and can be used together and are for different things, but I find grid generally more useful and personally use it more often than flexbox.</li>
+        <li><b>I would have guessed the median number of <i>loaded</i> fonts on a site to average to 0, but it's 3!</b> I think of CSS-Tricks as having one (which is Rubik at time of writing and used only for titles. The body font of this site is <code>system-ui</code>.) But really, it's 4, because of preloading and subsetting and bold versus regular and such. I wonder when variable fonts will start having an impact. I would think it would lower this number over time. Open Sans and Roboto are triple any other loaded font, and the whole list is Google Font stuff, other than some instances of Font Awesome.</li>
+        <li><b>It's funny how some major libraries can skew stats at such a global/universal scale for their use of certain features.</b> I remember how YouTube's play button used to "morph" into a pause button using an SVG technology called <a href="https://css-tricks.com/guide-svg-animations-smil/">SMIL</a>. But because YouTube is so huge, it could look like a very high percentage of internet traffic includes SMIL, when it's really just one button on one site. <code>filter</code> is in that report. While filters are cool, it's really the fact that it happens to be within YouTube embeds and Font Awesome's stylesheet that the percentage of sites using it (78%) looks astonishingly high.</li>
+        <li><b>Of pages that make super heavy use of transitions and animations, transitions are about twice as heavily used, but, transitions are used six times more at the 50th percentile.</b> That feels about right to me. Transitions are generally more useful, but the more animation you are doing, the more you reach for advanced tools like keyframes.</li>
+        <li><b>Looks like most websites have approximately 45 media queries on them.</b> It's not totally clear if those are <i>different</i> media queries, or if they could be the same media queries repeated elsewhere in the stylesheet. That seems like a lot if they are all different, so I suspect it's just a tooling thing where people use nested media queries for authoring clarity and they bubble out but don't get combined because that's too weird with specificity. I'd be interested to see how many unique media queries people use. The most fascinating thing to me about the media query data is that <code>min-width</code> and <code>max-width</code> are neck-and-neck in usage. I would have put <code>max-width</code> far ahead if I was guessing.</li>
+        <li><b>About six stylesheets per site.</b> It's probably too hard to tell because assets like this are so often hosted on CDNs, but I'd love to know how many are hand-authored for the site, and how many are from third parties. Is the distribution like three and three or like one and five?</li>
+      </ul>
+      <p>There is a lot more in <a href="https://almanac.httparchive.org/en/2019/css">the report</a>, and CSS is just one of twenty chapters. So go digging!</p>
+    </article>
+  </body>
+</html>

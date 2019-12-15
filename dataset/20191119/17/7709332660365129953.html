@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://css-tricks.com/oh-the-places-javascript-will-go/"/>
+    <meta property="og:site_name" content="CSS-Tricks"/>
+    <meta property="article:published_time" content="2019-11-19T17:06:50+00:00"/>
+    <meta property="og:title" content="Oh, the Places JavaScript Will Go"/>
+    <meta property="og:description" content="I tend to be pretty vocal about the problems client-side JavaScript cause from a performance perspective. We're shipping more JavaScript than ever to our"/>
+  </head>
+  <body>
+    <article>
+      <h1>Oh, the Places JavaScript Will Go</h1>
+      <address>
+        <time datetime="2019-11-19T17:06:50+00:00">19 Nov 2019, 17:06</time>
+      </address>
+      <p>I tend to be pretty vocal about the problems client-side JavaScript cause from a performance perspective. We're shipping more JavaScript than ever to our user's devices and the result is increasingly brittle and resource-intensive experiences. It's... not great.</p>
+      <p>But that doesn't mean I don't like JavaScript. On the contrary, I enjoy working in JavaScript quite a bit. I just wish we were a little more selective about <i>where</i> we use it.</p>
+      <p>What excites me is when JavaScript starts reaching into parts of the technical stack where it didn't live before. Both server-side programming and the build tool process weren't exactly off-limits to front-end developers, but before Node.js and tools like Grunt, Gulp, webpack, and Parcel came along, they required different languages to be used. There are a lot of improvements (asset optimizations, test running, server-side adjustments necessary for improved front-end performance, etc) that required server-side languages, which meant most front-end developers tended not to go there. Now that those tools are powered by JavaScript, it's far more likely that front-end developers can make those changes themselves.</p>
+      <p>Whenever we take a part of the technology stack and make it more approachable to a wider audience, we'll start to see an explosion of creativity and innovation. That's exactly what's happened with build processes and bundlers. There's been an explosion of innovation in no small part thanks to extending where front-end developers can reach.</p>
+      <p>That's why I'm really excited about edge computing solutions.</p>
+      <p>Using a CDN is one of the most valuable things you can do to improve performance and extend your reach. But configuring that CDN and getting the maximum amount of value has been out of reach for most front-end teams.</p>
+      <p>That's changing.</p>
+      <p>Cloudflare has <a href="https://workers.cloudflare.com/">Cloudflare Workers</a>, powered by JavaScript. Akamai has <a href="https://developer.akamai.com/akamai-edgeworkers-overview">EdgeWorkers</a>, powered by JavaScript. Amazon has <a href="https://aws.amazon.com/lambda/edge/">Lambda@Edge</a>, powered by JavaScript. Fastly just announced <a href="https://www.fastly.com/products/edge-compute/beta">Compute@Edge</a> which is powered by WebAssembly. You can't write JavaScript at the moment for Compute@Edge (you can write TypeScript if that's your thing), but I suspect it's only a matter of time before that changes.</p>
+      <p>Each of these tools provides a programmable layer between your CDN and the people visiting your site, enabling you to transform your content at the edge before it ever gets to your users. Critically, all of these tools make doing these things much more approachable to front-end developers.</p>
+      <p>For example, instead of making the client do all the work for A/B testing, you can use any one of these tools to handle all the logic on the CDN instead, helping to make client-side A/B testing (an annoyance of every performance-minded engineer ever) a thing of the past. Optimizely's already using this <a href="https://blog.optimizely.com/2019/09/12/performance-edge/">technology to do just that for their own A/B testing solution</a>.</p>
+      <p>Using a third-party resource? Edge computing makes it much easier to <a href="https://blog.cloudflare.com/fast-google-fonts-with-cloudflare-workers/">proxy those requests through your own CDN</a>, sparing you the extra connection cost and helping eliminate single point of failures.</p>
+      <p>Custom error messages? Sure. User authentication? You betcha. Personalization? Yup. There's even been some pretty <a href="https://salt.agency/blog/research-can-service-workers-solve-technical-seo-problems/">creative technical SEO work</a> happening thanks to edge computing.</p>
+      <p>Some of this work was achievable before, but often it required digging through archaic user interfaces to find the right setting or using entirely different languages and tools like ESI or Varnish which don't really exist outside of this little sliver of space they operate in.</p>
+      <p>Making these things approachable to anyone with a little JavaScript knowledge has the potential to help be a release valve of sorts, making it easier for folks to move some of that heavy work away from client devices and back to a part of the tech stack that is much more predictable and reliable. Like Node.js and JavaScript-driven build tools, they extend the reach of front-end developers further.</p>
+      <p>I can't wait to see all the experimentation that happens.</p>
+    </article>
+  </body>
+</html>

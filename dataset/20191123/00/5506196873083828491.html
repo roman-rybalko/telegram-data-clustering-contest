@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://3dtoday.ru/blogs/alex-45/prostaya-peredelka-ramps-pod-arduino-due-32-bita-marlin-2x-i-12864-smart-controller"/>
+    <meta property="og:site_name" content="3dtoday.ru"/>
+    <meta property="article:published_time" content="2019-11-23T00:00:00+00:00"/>
+    <meta property="og:title" content="Простая переделка Рампс под Arduino due: 32 бита, Marlin 2.x и 12864 smart controller"/>
+    <meta property="og:description" content="В общем собрал я недавно новый принтер под Марлин 2 в него напихал всякого в частности термокамеру и двойной экструдер. В целом все стабильно работает, но при старте печати (а печатаю я только с карты памяти) в начале печати наблюдается стабильный зависон меню прошивки что несколько не удобно - трудно поменять параметры перед печатью. И в этот момент я примерно понял где мы подходим к пределу электроники 8 бит и решил новий принтер собирать уже на дуньке. "/>
+  </head>
+  <body>
+    <article>
+      <h1>Простая переделка Рампс под Arduino due: 32 бита, Marlin 2.x и 12864 smart controller</h1>
+      <address><time datetime="2019-11-23T00:00:00+00:00">23 Nov 2019</time> by <a rel="author" href="https://3dtoday.ru/blogs/alex-45" target="_blank">ALEX_45</a></address>
+      <figure>
+        <img src="https://3dtoday.ru/cache/870x/posts/main/ZVU0LLQBLq5lVzUVvKH6w4NK2yYKbFDM8wHLqjfL.jpeg"/>
+      </figure>
+      <p>В общем собрал я недавно новый принтер под Марлин 2 в него напихал всякого в частности термокамеру и двойной экструдер. В целом все стабильно работает, но при старте печати (а печатаю я только с карты памяти) в начале печати наблюдается стабильный зависон меню прошивки что несколько не удобно - трудно поменять параметры перед печатью. И в этот момент я примерно понял где мы подходим к пределу электроники 8 бит и решил новий принтер собирать уже на дуньке. </p>
+      <p>Платы для принтера на ее основе обоснованно показались мне слишком дорогими и поскольку паяльник в руку не вчера взял присмотрелся к переделкам Рампс.</p>
+      <p>Статтей на эту тему есть не так уж мало: (не реклама)</p>
+      <p>
+        <a href="https://3dtoday.ru/blogs/lenivo/implementation-of-32bit-to-15-ramps-and-arduino-due/">https://3dtoday.ru/blogs/lenivo/implementation-of-32bit-to-15-ramps-and-arduino-due/</a>
+      </p>
+      <p>
+        <a href="https://3dtoday.ru/blogs/dimosus/budget-swap-on-a-32bit-electronics/">https://3dtoday.ru/blogs/dimosus/budget-swap-on-a-32bit-electronics/</a>
+      </p>
+      <p>
+        <a href="https://3dtoday.ru/blogs/dimosus/eeprom-for-ramps4due/">https://3dtoday.ru/blogs/dimosus/eeprom-for-ramps4due/</a>
+      </p>
+      <p>
+        <a href="https://3dtoday.ru/blogs/lenivo/implementation-of-32bit-to-15-ramps-and-arduino-due/">https://3dtoday.ru/blogs/lenivo/implementation-of-32bit-to-15-ramps-and-arduino-due/</a>
+      </p>
+      <p>Лучшая из них на мой взгляд эта:</p>
+      <p>
+        <a href="https://3deshnik.ru/blogs/anry777/hacked-ramps-1-4-arduino-due-reprapdiscount-smart-controller">https://3deshnik.ru/blogs/anry777/hacked-ramps-1-4-arduino-due-reprapdiscount-smart-controller</a>
+      </p>
+      <figure>
+        <img src="https://3dtoday.ru/cache/870x/posts/main/hSrFoi6zAa50bhjiqgcKsEI1DwXuQNjMdj1IzyDx.jpeg"/>
+      </figure>
+      <p>Самый главный момент в том что нижнюю дорожку нужно резать по этой картинкеесли перерезать ее чуть выше, над гребенкой, как в других источниках  то на дисплей не будет подаваться питание 5в, он будет только светится но не показывать</p>
+      <p>Самое главное что переделка по этой статье позволит запустить дисплей 12864, 2004 и им подобные в стандартной комплектации _Smart_Controller а не как тут к примеру <a href="https://3dtoday.ru/blogs/lenivo/implementation-of-32bit-to-15-ramps-and-arduino-due/">https://3dtoday.ru/blogs/lenivo/implementation-of-32bit-to-15-ramps-and-arduino-due/</a></p>
+      <p>Еще если будет использоваться 2й экструдер необходима дополнительная перемычка: (отмечена черным снизу справа)</p>
+      <figure>
+        <img src="https://3dtoday.ru/cache/870x/posts/main/v5W9lkPgRUWD1DtktRcpYqgy9crpmzLf5pWEQplE.jpeg"/>
+      </figure>
+      <p>она подключает термистор Т2 к пину А11 его же и нужно указать в прошивке.</p>
+      <p>Все инструкции говорят прошивать либо  Mk4duo либо Repitier. Не удивительно, ведь до недавнего времени Марлин не поддерживал DUE. Посему привожу свои инструкции как настроить прошивку:</p>
+      <p>Прошивал Марлин 2.1. поскольку 2.0. на текущий момент не компилируется в конфигурацию под DUE (явно баг когда нить исправят(багрепорт пока лень писать)) </p>
+      <p>в качестве платы поставил #define MOTHERBOARD BOARD_RAMPS4DUE_EEB</p>
+      <p>в файле pins_RAMPS4DUE.h меняем #define TEMP_1_PIN -1 на #define TEMP_1_PIN 11 для 2го екструдера</p>
+      <p>этот файл подгружает пины из обычного конфига RAMPS под Мегу2560 что можно видеть в строчке #include "../ramps/pins_RAMPS.h" так что если нужно менять другие пины переходим туда.</p>
+      <p>Для первого теста в файле Configuration.h выбрал </p>
+      <p>#define PSU_CONTROL</p>
+      <p>для контроля БП ATX</p>
+      <p>#define ENDSTOP_INTERRUPTS_FEATURE </p>
+      <p>позволяет задействовать фичу дуины - аппаратное прерывания на каждом пине и разгрузит МК от опроса концевиков в цикле</p>
+      <p>#define LCD_LANGUAGE ru</p>
+      <p>#define DISPLAY_CHARSET_HD44780 CYRILLIC</p>
+      <p>#define SDSUPPORT</p>
+      <p>#define REPRAP_DISCOUNT_FULL_GRAPHIC_SMART_CONTROLLER</p>
+      <p>поддержка Русского, дисплея 12864 и СД карты</p>
+      <p>Вопреки опасениям СД карта завелась без проблем без перепайки контактов к апаратному SPI как тут <a href="https://3dtoday.ru/blogs/dimosus/budget-swap-on-a-32bit-electronics/">https://3dtoday.ru/blogs/dimosus/budget-swap-on-a-32bit-electronics/</a> видимо как то програмно в прошивке реализовано взаимодействие... Нам же лучше) </p>
+      <p>Остальное пока оставил без изменений. проверил работу одного драйвера ШД и одного мосфета все штатно крутит и греет. Мосфеты выпаял из старых материнок они вроде на 3.3в если не ошибаюсь) Посмотрим, будут греется - поменяю)</p>
+      <figure>
+        <img src="https://3dtoday.ru/cache/870x/posts/main/5XrIFcGIO0sMU939y4F8qgZBtoglUYce3YRgKKIp.jpeg"/>
+      </figure>
+      <p>При експериментах будьте крайне внимательны и осторожны) Дунька 32 - очень нежное создание и абсолютно нетолерантна ко всяким 5-вольтовым приходам куда не надо, посему смотрите куда их суете и все перепроверяйте несколько раз. Я вот только что, пока писал статью сообразил что зеленый провод включения БП по идее нельзя подключать к ней напрямую, как у меня, ведь именно к 5 вольтам он по идее внутри БП подтягивается, и только потому у меня еще не сгорела дунька что подтяжка высокоомная)</p>
+      <p>Далее еще несколько "лайвхаков" Линейным стабилизаторам типа АМС я не доверяю (перегреваются и взрываются), посему всегда выпаивал диод на VIN из рампс и подавал 5в на Ардуино напрямую с дежурки БП. так же поступил и тут (фиолетовый провод возле разъема EXP2) Но поскольку дежурка таки 5-вольтовая АМS3.3 тут все равно на дуньке задействован посему для надежности крайне рекомендую поставить на него радиатор а я вдобавок прикрутил провод 3.3 БП (3пин разъем возле кнопки резет Рампс, там же и зеленый провод включения БП), чтобы когда он включен разгружал несчастную АМСку.</p>
+      <p>Пока все) Задавайте вопросы в комментах, всем Бобра)</p>
+    </article>
+  </body>
+</html>

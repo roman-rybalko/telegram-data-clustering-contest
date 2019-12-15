@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://hackaday.com/2019/11/21/jackpot-the-trials-and-tribulations-of-turning-a-slot-machine-into-an-atm/"/>
+    <meta property="og:site_name" content="Hackaday"/>
+    <meta property="article:published_time" content="2019-11-21T00:00:00+00:00"/>
+    <meta property="og:title" content="Jackpot!: The Trials And Tribulations Of Turning A Slot Machine Into An ATM"/>
+    <meta property="og:description" content="Have you ever wished that slot machines dispensed money as easily as an ATM? Well so did [Scotty Allen] from Strange Parts, so in collaboration with his friend [Matt] decided to combine the two. Af…"/>
+  </head>
+  <body>
+    <article>
+      <h1>Jackpot!: The Trials And Tribulations Of Turning A Slot Machine Into An ATM</h1>
+      <address><time datetime="2019-11-21T00:00:00+00:00">21 Nov 2019</time> by <a rel="author" href="https://hackaday.com/author/danieconradie/" target="_blank">Danie Conradie</a></address>
+      <p>Have you ever wished that slot machines dispensed money as easily as an ATM? Well so did [Scotty Allen] from Strange Parts, so in collaboration with his friend [Matt] decided to combine the two. After a four-month journey fraught with magic smoke and frustration, they managed to build a fully functional <a href="https://www.youtube.com/watch?v=nHDpzczgdo0">ATM slot machine</a>.</p>
+      <p>The basic idea is that you insert your card and enter your pin like on a normal ATM, select your winning amount, and pull the lever. This sets wheels spinning, which come to a stop with three-of-a-kind every time, and you win your own money as a bucket load of coins with all the accompanying fanfare. The project took way longer than [Scotty] expected, and he ended up missing his original deadline to show off the machine at DEF CON.</p>
+      <p>They started with an old broken Japanese slot machine, and replaced the control board with an Arduino Due after a lot of reverse engineering and hacking. [Scotty] did a cool video just on <a href="https://www.youtube.com/watch?v=cy6o8TrDUFU">getting the original vacuum fluorescent display working</a>. Integrating the ATM parts proved to be the biggest challenge, with number of very expensive parts releasing their magic smoke or getting bricked in the process. [Scotty] came up with an ingeniously simple hack to interface the ATM hardware with the Arduino. The cash note dispenser uses multiple sensors to detect if there are notes loaded and if one is successfully dispensed. These were spoofed by the Arduino, which controls two coin hoppers instead to dispense appropriate amount of quarters or pennies. The build was rounded off with some very neat custom graphics on the glass panels, and the machine was finally showed off at a local arcade.</p>
+      <p>This was an awesome project, and we can appreciate the fact that [Scotty] made no attempt to hide the real emotional roller coaster that anyone who has worked on a large project knows, but is rarely documented in logs. [Scotty] has made a name for himself by <a href="https://hackaday.com/2018/03/27/scotty-allen-visits-strange-parts-builds-an-iphone/">building his own iPhone</a> from parts and <a href="https://hackaday.com/2018/06/12/scotty-allens-pcb-fab-tour-is-like-willy-wonkas-for-hardware-geeks/">touring Shenzhen’s many factories</a>. Check out the videos after the break</p>
+      <figure>
+        <iframe src="https://www.youtube.com/embed/nHDpzczgdo0" width="800" height="480" data-service="Youtube" scrolling="no"/>
+      </figure>
+      <figure>
+        <iframe src="https://www.youtube.com/embed/QIuVINz4lFQ" width="800" height="480" data-service="Youtube" scrolling="no"/>
+      </figure>
+    </article>
+  </body>
+</html>

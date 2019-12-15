@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://www.techbang.com/posts/74473-amd-ryzen-threadripper-3960x-3970x-processor-review-trx4-deluxe-banquet-upgrade-on-the-table"/>
+    <meta property="og:site_name" content="T客邦"/>
+    <meta property="article:published_time" content="2019-11-25T14:00:00+00:00"/>
+    <meta property="og:title" content="AMD Ryzen Threadripper 3960X/3970X 處理器評測，TRX4 豪華饗宴升級上桌！"/>
+    <meta property="og:description" content="Zen 微架構發表以來，伺服器、工作站、桌上型電腦處理器均為同一套晶片設計，單一封裝整合多個晶粒即為 HEDT、工作站、伺服器產品，如今 AMD HEDT 平台也進入 Zen 2 微架構時代，先行推出實體 24 核心與 32 核心的 Ryzen Threadripper 3960X 和 3970X。"/>
+  </head>
+  <body>
+    <article>
+      <h1>AMD Ryzen Threadripper 3960X/3970X 處理器評測，TRX4 豪華饗宴升級上桌！</h1>
+      <address><time datetime="2019-11-25T14:00:00+00:00">25 Nov 2019, 14:00</time> by <a rel="author">R.F.</a></address>
+      <p><pic src="https://cdn1.techbang.com/system/excerpt_images/74473/inpage/9b8188796782b782bba02bb951ed9061.jpg?1574663564"/><br/>Zen 微架構發表以來，伺服器、工作站、桌上型電腦處理器均為同一套晶片設計，單一封裝整合多個晶粒即為 HEDT、工作站、伺服器產品，如今 AMD HEDT 平台也進入 Zen 2 微架構時代，先行推出實體 24 核心與 32 核心的 Ryzen Threadripper 3960X 和 3970X。</p>
+      <hr/>
+      <h4>chiplet 設計發威</h4>
+      <p>以 AMD 的財力與公司規模而言，能夠在 x86 處理器市場與 Intel 纏鬥多年，從多家爭鳴到現今僅存 2 強（VIA 表示……），實屬津津樂道的典範，但也因為公司規模不比 Intel，在某些設計必須要更有彈性，重複利用手中擁有的資源，從 Zen 微架構發表以來，無時無刻都可以看到類似的範例。</p>
+      <p>Zen、Zen+ 採用稱為 Zeppelin 的晶片設計（APU 版本除外），該設計具備完整 SoC 功能，不若 Intel x86 處理器須強制搭配晶片組才能使用（Atom 類小核心 x86 設計除外），4 個 x86 處理核心接上 1 個共用 L3 快取，稱之為 1 個 CCX（Core Complex），單一 Zeppelin 包含 2 組 CCX。</p>
+      <p>Zeppelin 為完整 SoC 設計，因此除了 x86 核心以外，也包含記憶體控制器、PCIe/SATA/USB 等高速通道，以及 LPC、SPI、I2C 等低速介面，這些不同區塊透過由 HyperTransport 發展而來的 Infinity Fabric 互連架構相互連接。順帶一提，Zen 微架構之後的 APU 也是透過 Infinity Fabric 與 Vega 顯示繪圖區塊相互溝通。</p>
+      <p>Infinity Fabric 互連架構除了讓 Zeppelin 內部相互溝通，也可以讓 Zeppelin 與 Zeppelin 之間互通有無，這就是第一代消費市場 HEDT 平台 Ryzen Threadripper 與伺服器市場 EPYC 處理器的原理，TR4/SP3 腳位封裝可納入 4 個 Zeppelin 晶粒，再依據目標市場不同，分別開啟 Zeppelin 內部功能與對外通道數量多寡。</p>
+      <figure>
+        <img src="https://cdn1.techbang.com/system/images/537685/original/6a00a1e8aa41e5c9dc70948b29cac73d.png?1574648481"/>
+        <figcaption> ▲ AMD HEDT 平台第一代和第二代 Ryzen Threadripper，以及伺服器市場的 EPYC，均採用多晶封裝的方式整合 4 個 Zeppelin 晶粒，接著再依據目標市場開放內部功能與通道數量多寡。</figcaption>
+      </figure>
+      <p>進入 Zen 2 微架構，Infinity Fabric 仍是連接各功能部位的中堅份子，版本連帶提升來到第二代 Infinity Fabric 2，但此時處理器封裝內部有所變化，HEDT 平台版本不再是完整 SoC 功能 Zeppelin 晶粒複數形式，而是改採單一 IOD 晶粒加上多顆 CCD 晶粒 chiplet 設計，單一 CCD 包含 2 組 CCX，IOD 則吸納記憶體控制器、高、低速通道等功能。若是讀者有興趣，可以參考我們先前對 <a href="https://www.techbang.com/posts/70867">Zen 2 微架構</a>的說明。</p>
+      <p>CCD 設計橫跨消費級至企業級產品，無論是第三代桌上型 Ryzen 或是 EPYC 2 系列，處理器封裝內部均含有 TSMC 7nm 製程生產的 CCD，再配上功能、通道數量不同的 IOD。AM4 處理器封裝最多可吸納 1 個 IOD 和 2 個 CCD，SP3 與本篇要說明的 TRX4 封裝腳位，則可安裝 1 個包含更多高速通道的 IOD，以及最高 8 個 CCD。</p>
+      <figure>
+        <img src="https://cdn1.techbang.com/system/images/537686/original/c9fa52439b69d510338c3c717c03c4c0.jpg?1574648482"/>
+        <figcaption> ▲ 透過 chiplet 設計，SP3 與 TRX4 封裝內部最多可包含 1 個 IOD 以及 8 個 CCD。</figcaption>
+      </figure>
+      <h4>24 核心與 32 核心先登場</h4>
+      <p>第三代 Ryzen 桌上型處理器最高階型號為 Ryzen 9 3950X，實體核心數量相對前一代翻倍來到 16 核心，因此也壓縮到第三代 Ryzen Threadripper 處理器核心數量起跑線劃設。AMD 先行推出封裝內部包含 4 個 CCD 的型號，分別為單一 CCD 開啟 6 個核心，總計 24 核心 48 執行緒的 Ryzen Threadripper 3960X，以及單一 CCD 開啟全部 8 個核心，總計 32 核心 64 執行緒的 Ryzen Threadripper 3970X。</p>
+      <figure>
+        <img src="https://cdn1.techbang.com/system/images/537819/original/c17cdaae2914a07ef5ef1b8c61fd6513.png?1574690954"/>
+      </figure>
+      <p> ▲ AMD 第三代 Ryzen Threadripper 3960X、3970X、3990X 與第二代產品的規格比較表。（點圖放大）</p>
+      <p>第三代 Ryzen Threadripper 4 個 CCD 型號發表的同時，AMD 同時確認 8 個 CCD 核心數量全開達 64 核心 128 執行緒版本將於 2020 年推出，型號一如外界預測為 Ryzen Threadripper 3990X。至於是否會推出 8 個 CCD，單一 CCD 開啟 6 個核心，共計 48 核心 96 執行緒的產品，AMD 表示不方便對未公布產品發表意見。</p>
+      <figure>
+        <img src="https://cdn0.techbang.com/system/images/537714/original/50e94b57e5e996900c05bd02cd4c6ec9.jpg?1574663487"/>
+        <figcaption> ▲ 第三代 Ryzen Threadripper 又換另外一種包裝，外層為紙盒，中央開孔可見到處理器本體。</figcaption>
+      </figure>
+      <figure>
+        <img src="https://cdn2.techbang.com/system/images/537715/original/ad3b5db6367ff8d708a5ebf4d5813535.jpg?1574663487"/>
+        <figcaption> ▲ 移除外盒上蓋，即可發現處理器位於內部的塑膠盒當中。</figcaption>
+      </figure>
+      <figure>
+        <img src="https://cdn1.techbang.com/system/images/537716/original/d43cc932dc02f000b7833ac2573b13f1.jpg?1574663488"/>
+        <figcaption> ▲ 第三代 Ryzen Threadripper 塑膠盒下半部仍舊擺放說明書、貼紙、相容 Asetek 一體式水冷系統的扣具、扭力板手（負責主機板處理器插槽的開啟與鎖緊）。</figcaption>
+      </figure>
+      <figure>
+        <img src="https://cdn2.techbang.com/system/images/537717/original/8063cae96b81ba0bf5957d952d1d2f39.jpg?1574663488"/>
+        <figcaption> ▲ Ryzen Threadripper 3960X 與 Ryzen Threadripper 3970X 處理器。</figcaption>
+      </figure>
+      <figure>
+        <img src="https://cdn0.techbang.com/system/images/537718/original/2ad4ae8e491645cdfa7521787f24cebc.jpg?1574663489"/>
+        <figcaption> ▲ 第三代 Ryzen Threadripper 處理器封裝外型不變，金手指觸點也是 4094 個，但因腳位定義改變，並不相容前一世代 X399 晶片組主機板。</figcaption>
+      </figure>
+      <figure>
+        <img src="https://cdn0.techbang.com/system/images/537703/original/3bdf439b065c778af3c62b61411391e8.jpg?1574648625"/>
+        <figcaption> ▲ 是的，AMD 會推出實體 64 核心 Ryzen Threadripper 3990X，並維持 TDP 280W，至於實體 48 核心的產品不好說……</figcaption>
+      </figure>
+      <h4>TR4 與 TRX4 不相容</h4>
+      <p>AMD 於 Zen 2 微架構時代導入 PCIe 4.0 規格，由於該標準實體層使用 16GHz 頻率傳輸，以往電路板經常採用的 FRP4 規格損耗太高，因此雖然第三代 Ryzen 桌上型處理器相容先前 400 系列晶片組主機板，但 AMD 為確保傳輸品質，後續遂於 AGESA 鎖住 400 系列、300 系列晶片組主機板使用 PCIe 4.0 的可能性。</p>
+      <p>當 HEDT 平台也進入 Zen 2 世代，PCIe 4.0 訊號完整性同樣是考量重點之一，AMD 決定第三代 Ryzen Threadripper 處理器與 TRX40 晶片組主機板，無法交叉相容第一、第二代 Ryzen Threadripper 處理器與 X399 晶片組主機板。AMD 官方對此作出解釋，由於受到內部 chiplet 封裝位置的影響，封裝腳位定義相較先前世代有所變更，因此雖然安裝機構相容、金手指觸點同樣為 4094 個，但雙方並不相容。</p>
+      <figure>
+        <img src="https://cdn2.techbang.com/system/images/537689/original/1366b593e687833e6f129f86f2ab8678.jpg?1574648485"/>
+        <figcaption> ▲ 第一、第二代 Ryzen Threadripper 處理器與 X399 晶片組主機板 TR4 腳位插槽，無法與第三代 Ryzen Threadripper 處理器與 TRX40 晶片組主機板交叉相容，AMD 亦為此將腳位插槽重新命名為 TRX4。</figcaption>
+      </figure>
+      <p>另外一項與封裝有關的細節，在於 Ryzen Threadripper 3960X 和 3970X 內部具備 4 個 CCD 晶粒，其中第四個 CCD 的體質較好、運作頻率較高，並銜接於 IOD 延遲最小的 Infinity Fabric 2 通道。另外，由於記憶體控制器集中於 IOD 身上，不若前一世代分散於 2 個 Zeppelin，因此使用者無需考慮 UMA 和 NUMA 架構差異，Ryzen Threadripper 2970WX/2990WX 的 Dynamic Local Mode 更不會出現，但 Ryzen Master 還是保留 Legacy Mode，關閉 2 個 CCD 將時脈、功耗、散熱餘裕灌輸在開啟的 2 個 CCD 身上。</p>
+      <figure>
+        <img src="https://cdn2.techbang.com/system/images/537690/original/395fb823f930cfb58e8053e78c90c2ce.png?1574648487"/>
+        <figcaption> ▲ Ryzen Threadripper 3960X 和 3970X 內部第 4 個 CCD 晶粒的體質較好、運作頻率較高，並銜接至 IOD 延遲最低的 Infinity Fabric 2 通道。</figcaption>
+      </figure>
+      <p>不必考慮與先前世代的相容性，AMD 替第三代 Ryzen Threadripper 處理器增添不少好康，譬如處理器本身 PCIe 通道數量增加至 64 條，其中 8 條保留連接至 TRX40 晶片組，尚有 56 條可以使用；TRX40 晶片組則可另外接出 16 條 PCIe 通道，因此 TRX40 平台最高可提供 72 條 PCIe 4.0 通道。</p>
+      <figure>
+        <img src="https://cdn0.techbang.com/system/images/537691/original/0756e9f56cf350ab49a928b3163ced74.png?1574648489"/>
+        <figcaption> ▲ AMD TRX40 晶片組主機板包含處理器在內，整個平台最多可提供 72 條 PCIe 4.0 通道予玩家使用，但由於部分通道可設定為 PCIe 或是 SATA 功能，實際數量依據各家主機板不同而有所變化。</figcaption>
+      </figure>
+      <p>AMD 表示，Zen 2 世代 I/O 區塊採用模組化設計，無論是處理器封裝內部的 IOD，或是外部晶片組 X570、TRX40，可依據市場需求以及生產考量進行增減，玩家們能夠觀察到 TRX40 規格很像 2 顆 X570 拼裝的原因在此，實際卸除 TRX40 晶片組上方的散熱片，即可得知仍為單一晶片封裝。</p>
+      <h4>平台燒機耗電量 400W</h4>
+      <p>第三代 Ryzen Threadripper 處理器 TDP 上升至 280W，就實測而言確實如此，無論是 Ryzen Threadripper 3960X 或是 Ryzen Threadripper 3970X，AIDA64 FPU 燒機測試與前一世代 Ryzen Threadripper 2990WX 同樣維持在 400W 左右，Blender Benchmark 大約上升 30W～40W 左右，來到 433W～437W。</p>
+      <p>燒機溫度表現同樣受到 TDP 影響，溫度隨之上升不少，但還在 Enermax LIQTECH TR4 240 一體式水冷控制範圍之內，沒有出現過熱觸發 T state 的現象。當然，相對於 TDP 保持在 165W 的 Core i9-10980XE，第三代 Ryzen Threadripper 耗電量與溫度表現都高出一截，倘若將核心數量加入一同計算，Ryzen Threadripper 3970X 單核電力效率則偏高一些。</p>
+      <figure>
+        <img src="https://cdn1.techbang.com/system/images/537692/original/c9d7a983ae1da458c1933b6253105018.png?1574648490"/>
+        <figcaption> ▲ Ryzen Threadripper 3960X 和 Ryzen Threadripper 3970X 燒機耗電量略為上升，但依靠 TSMC 7nm 製程，後者單核心能源效率比值相對 Core i9-10980XE 高出些許。（室溫 25℃，Core i9-10980XE 使用 GIGABYTE AORUS Liquid Cooler 240 一體式水冷。）</figcaption>
+      </figure>
+      <p>Ryzen Threadripper 3960X 和 Ryzen Threadripper 3970X 燒機耗電量略為上升，TRX40 晶片組主機板平台又提供相當多的 PCIe 通道，加上 AMD 大方開放使用 ECC 記憶體，因此不少人應該已經打算入手 AMD 新一代 HEDT 平台，加裝繪圖卡作為 3D 渲染農場使用。</p>
+      <p>若使用者想替 TRX40 晶片組主機板加裝多張顯示卡、繪圖卡，別忘了選購 1 顆功率瓦數不亞於 1000W 的電源供應器，光是第三代 Ryzen Threadripper 處理器即可輕易消耗 400W 以上的功率，加上 2～4 張高階顯示卡、繪圖卡，更需要充足的能源供應。當然，電源供應器製造商更是笑得樂開懷，因為自從 NVIDIA 和 AMD 限縮 4 張顯示卡串聯運算 3D 畫面，1000W 以上的電源供應器就逐漸乏人問津。</p>
+      <p>（下一頁：值得你期待的效能表現）</p>
+      <p>上一頁 <i>1</i> <a href="https://www.techbang.com/posts/74473-amd-ryzen-threadripper-3960x-3970x-processor-review-trx4-deluxe-banquet-upgrade-on-the-table?page=2">2</a> <a href="https://www.techbang.com/posts/74473-amd-ryzen-threadripper-3960x-3970x-processor-review-trx4-deluxe-banquet-upgrade-on-the-table?page=2">下一頁</a></p>
+    </article>
+  </body>
+</html>

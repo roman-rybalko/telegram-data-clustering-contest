@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://www.heise.de/newsticker/meldung/Chrome-Experiment-fuehrte-zu-Browser-Abstuerzen-in-Firmen-4586985.html"/>
+    <meta property="og:site_name" content="heise online"/>
+    <meta property="article:published_time" content="2019-11-15T12:16:00+00:00"/>
+    <meta property="og:title" content="Chrome-Experiment führte zu Browser-Abstürzen in Firmen"/>
+    <meta property="og:description" content="In vielen Firmen kam es zu Problemen mit Chrome – plötzlich verschwanden Webseiten und das Browser-Tab blieb leer. Grund war eine experimentelle Funktion."/>
+  </head>
+  <body>
+    <article>
+      <h1>Chrome-Experiment führte zu Browser-Abstürzen in Firmen</h1>
+      <h2>In vielen Firmen kam es zu Problemen mit Chrome – plötzlich verschwanden Webseiten und das Browser-Tab blieb leer. Grund war eine experimentelle Funktion.</h2>
+      <address><time datetime="2019-11-15T12:16:00+00:00">15 Nov 2019, 12:16</time> by <a rel="author">Daniel Berger</a></address>
+      <p>Das Chrome-Team hat mit einem Experiment für Probleme und viel Ärger gesorgt. Zahlreiche Admins berichteten in den vergangenen Tagen von einem "White Screen of Death" – Browser-Tabs in Chrome blieben einfach leer und Inhalte verschwanden. Betroffen waren nur Chrome-Browser, die in bestimmten Windows-Server-Setups liefen. Hunderte bis Tausende Nutzer in Firmen konnten den Browser nicht mehr vernünftig verwenden. Ein einfacher Wechsel auf einen anderen Browser war in vielen IT-Umgebungen nicht möglich, auch die Systemadmins konnten einen Wechsel nicht immer fix einleiten.</p>
+      <p>Die Auswirkungen sind in zahlreichen Bugreports zu lesen: In diversen Callcentern etwa konnten Mitarbeiter stundenlang ihre Arbeit nicht machen, es habe finanzielle Auswirkungen gegeben. Viel Zeit ging auch für die Suche des Fehlers verloren. In zwei Tagen sind Hunderte Beschwerden in Googles <a href="https://support.google.com/chrome/thread/19713332?hl=en">Support-Forum</a> aufgelaufen, ebenso im <a href="https://bugs.chromium.org/p/chromium/issues/detail?id=1024837">Bugtracker</a> von Chrome. <a href="https://www.zdnet.com/article/google-chrome-experiment-crashes-browser-tabs-impacts-companies-worldwide/">ZDNet berichtet</a>, dass ein Systemadmin zunächst an einen Malware-Befall dachte und daraufhin umfangreiche Sicherheitsmaßnahmen einleitete. Schuld an dem ärgerlichen Bug war aber keine Attacke, sondern das Chrome-Team.</p>
+      <h3>Bug in experimenteller Chrome-Funktion</h3>
+      <p>Verursacht wurden die massiven Probleme durch eine Funktion namens "WebContents Occlusion". Sie soll eigentlich Chrome-Tabs "stilllegen", wenn der Nutzer ein anderes Windows-Programm in den Vordergrund holt und es über das Browser-Fenster legt. <a href="https://www.heise.de/thema/Chrome">Chrome</a> sollte so Ressourcen sparen, wenn der Browser nicht in Benutzung war. Die Funktion befand sich noch im Teststadium und war Teil von "Chrome Canary" und "Chrome Beta".</p>
+      <p>In dieser Woche aber entschied Google, den Test auch in der stabilen Chrome-Version zu starten, um mehr Feedback einzuholen. Am Dienstag ging das Experiment live, berichtet Chrome-Entwickler David Bienvenu gegenüber ZDNet. Zuvor war die neue Funktion für ein Prozent der Nutzer für einen Montag lang aktiviert gewesen. In dieser Zeit habe es "leider" keine Problemberichte gegeben, erklärt Bienvenu. Die kamen erst, als auch Windows-Nutzer in Terminal-Server-Setups betroffen waren. Statt das inaktive Browser-Tab stillzulegen, wenn Nutzer eine andere Windows-App verwendeten, löschte Chrome den Inhalt und hinterließ ein weißes Tab. Die Nutzer mussten es neu laden, wobei oftmals wichtige Informationen verloren gingen.</p>
+      <p>Die Probleme dauerten mindestens zwei Tage an. Das Chrome-Team hat inzwischen reagiert und eine neue Browser-Konfiguration veröffentlicht, die das Experiment abschaltet. Manuell lässt sich die Funktion über die Flags <code>chrome://flags/#web-contents-occlusion</code> und <code>chrome://flags/#calculate-native-win-occlusion</code> deaktivieren. Viele Admins sind nun aber auch verärgert, da ihnen nicht bewusst war, dass Chrome-Entwickler einfach Experimente ohne vorherige Genehmigung starten können. Viele fühlen sich als "Versuchskaninchen", die nun viel Zeit verloren haben. Zudem sind finanzielle Schäden nicht auszuschließen. (<a href="mailto:dbe@ct.de">dbe</a>)</p>
+    </article>
+  </body>
+</html>

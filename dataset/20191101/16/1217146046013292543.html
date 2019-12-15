@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://www.bleepingcomputer.com/news/security/gandcrab-raas-was-a-training-ground-for-malware-distributors/"/>
+    <meta property="og:site_name" content="BleepingComputer"/>
+    <meta property="article:published_time" content="2019-11-01T16:33:31+00:00"/>
+    <meta property="og:title" content="GandCrab RaaS Was a Training Ground for Malware Distributors"/>
+    <meta property="og:description" content="GandCrab operators changed the ransomware business from the ground up, establishing a model that is embraced and continued by other cybercriminals."/>
+  </head>
+  <body>
+    <article>
+      <h1>GandCrab RaaS Was a Training Ground for Malware Distributors</h1>
+      <address><time datetime="2019-11-01T16:33:31+00:00">01 Nov 2019, 16:33</time> by <a rel="author" href="https://www.bleepingcomputer.com/author/ionut-ilascu/" target="_blank">Ionut Ilascu</a></address>
+      <figure>
+        <img src="https://www.bleepstatic.com/content/posts/2019/11/01/Truniger.png"/>
+      </figure>
+      <p>GandCrab operators changed the ransomware business from the ground up, establishing a model that is embraced and continued by other cybercriminals.</p>
+      <p>Instead of keeping the operation private, limited to a small circle of experienced cybercriminals, they opened the doors to newcomers, advertised, built a relationship with customers and affiliates, and communicated with victims and researchers to stay on top of the game.</p>
+      <h3>Shaping a new breed of cybercriminals</h3>
+      <p>For many GandCrab partners, this was the first experience with ransomware and some grew to develop their own business. By following the same principles, some threat actors have reached new levels of financial success.</p>
+      <p>New ransomware collectives have formed, seeking affiliates to spread malware like <a href="https://www.bleepingcomputer.com/news/security/new-nemty-ransomware-may-spread-via-compromised-rdp-connections/">Nemty</a> and <a href="https://www.bleepingcomputer.com/news/security/jsworm-20-ransomware-decryptor-gets-your-files-back-for-free/">JSworm</a>. REvil/Sodinokibi is the RaaS that appears to have filled GandCrab's shoes, <a href="https://www.bleepingcomputer.com/news/security/a-look-inside-the-highly-profitable-sodinokibi-ransomware-business/">promoted</a> by respected veterans on underground forums, such as Lalartu a former GandCrab affiliate.</p>
+      <p>Another player involved in the ransomware business is "truniger." Currently a team of more than 10 individuals, the actor started in the summer of 2018 as a one-man show.</p>
+      <p>Initially, they were interested in credit card fraud but money started coming in when they switched to intrusions via a remote connection (RDP brute forcing and exploits).</p>
+      <p>Yelisey Boguslavskiy, director of security research at Advanced Intelligence (<a href="https://www.advanced-intel.com/">AdvIntel</a>)​​​​​​, says that in June 2018 'truniger' partnered with Rapid ransomware operators and by August they had encrypted data on over 1,800 systems.</p>
+      <p>This feat did not go unnoticed by the GandCrab team, who added 'truniger' to their affiliate program.</p>
+      <p>"After several months with GandCrab, truniger began building a ransomware collective similar to the one they saw established by their teacher. Through the next several months, the team massively expanded, hiring technical support for ransomware operations."</p>
+      <h3>Help needed, attractive salary</h3>
+      <p>In November 2018, the threat actor started to look for penetration testers (for moving stealthily through compromised networks), programmers, system administrators, spammers, and specialists in spear phishing.</p>
+      <p>They offered a monthly salary and sweetened the proposition as the business made more money and needed better-skilled personnel. In November, a penetration tester working for 'truniger' was promised a salary of up to $4,000.</p>
+      <p>In December someone focused privilege escalation within corporate networks would get at least $5,000. A Metasploit expert proficient in obtaining domain control access was promised at least $10,000 in March 2019.</p>
+      <figure>
+        <img src="https://www.bleepstatic.com/images/news/u/1100723/truniger-evolution_AdvIntel.png"/>
+      </figure>
+      <h3>Tools of the trade</h3>
+      <p>According to Boguslavskiy, this actor learned the tactics for ransomware distribution from GandCrab operators. They use RDP brute forcing to get into networks and rely on a custom tool for the job, called RDP Brute and developed by someone using the alias 'z668.'</p>
+      <p>RDP Brute is used during the initial engagement system. Once a stable foothold was established and the network assessed to make sure that as many computers as possible can be infected, the actor executes the file-encrypting malware on the victim's systems.</p>
+      <figure>
+        <img src="https://www.bleepstatic.com/images/news/u/1100723/RDPBrute_AdvIntel.png"/>
+      </figure>
+      <p>In a <a href="https://www.advanced-intel.com/post/digital-pharmacusa-part-ii-the-gandcrab-paradigm-shift">report</a> published today, Boguslavskiy says that in June 2019 'truniger' announced a change in their attack vector, from RDP compromise to botnet.</p>
+      <p>'truniger' relies on the 'mimikatz' post-exploitation tool to extract passwords from a Windows system's memory and in a private chat they described part of their tactics:</p>
+      <p>
+        <i>"We have a loader, first we deliver the loader [via targeted email phishing] and then upload the bot, and then, by using the bot we upload all the meta and move further within the network. ... We are currently focusing on dedicated servers [and compromised RDPs] .... [we are] interested in macro and Dynamic Data Exchange (DDE) for our purposes."</i>
+      </p>
+      <p>The loader mentioned in the conversation is <a href="https://www.bleepingcomputer.com/news/security/amadey-botnet-targets-us-taxpayers-with-tax-refund-notice/">Amadey</a>, quite popular on some underground forums for the low detection rate.</p>
+      <p>Despite a simple interface, Amadey provides a lot of information to the botnet administrator, who can see where victims are located, the operating system they use, the antivirus solution installed, and the time and date they were online.</p>
+      <figure>
+        <img src="https://www.bleepstatic.com/images/news/u/1100723/AmadeyInterface_AdvIntel0.jpg"/>
+      </figure>
+      <p>Although strong evidence of a connection with REvil/Sodinokibi is lacking at the moment, AdvIntel's researcher says that there are clues suggesting that 'truniger' cooperates with the operators of this ransomware family on some level, possibly distribution.</p>
+      <p>The group keeps a secret which file-encrypting malware they're distributing, but it is certain that it is not one they developed. Some details disclosed in a <a href="https://www.bleepingcomputer.com/news/security/revil-ransomware-affiliates-partner-with-corporate-intruders/">previous report</a> from AdvIntel indicates that they may be spreading REvil/Sodinokibi, given that a team member named -TMT-, specialized in corporate access, was introduced to this ransomware group by Lalartu.</p>
+      <h3>Keeping the audience engaged</h3>
+      <p>It seems that 'truniger' knows how to keep their business humming and gain some reputation points from fellow cybercriminals. While the group is all for making money, occasionally they share for free data collected from their hacking endeavors.</p>
+      <p>Nothing of significant importance is released, though. Boguslavskiy note in the post today that the group shared at the end of April data from German IT company CityComp, provider of IT infrastructure for various companies.</p>
+      <p>They credited an unnamed group for the hack that aimed to get a ransom for not leaking the files. The victim did not pay and the dump became public. High-profile users on the forum assessed that the files were of little value, though.</p>
+      <p>Media outlets announced the breach a few days after 'truniger' had dumped the files, reporting that the theft included data from big-name companies like Oracle, SAP, BT, Porsche, Toshiba, Volkswagen, and Airbus. CityComp <a href="https://www.citycomp.de/English/enterprise/stellungnahme.html">confirmed</a> the blackmail attempt in a statement.</p>
+      <p>The incident was attributed to a group calling themselves Team Snatch but in private conversations 'truniger' gave details saying that the "data was kept on a server, after a while, we just leaked them because they became redundant."</p>
+      <figure>
+        <img src="https://www.bleepstatic.com/images/news/u/1100723/Truniger-AV-AdvIntel.png"/>
+      </figure>
+      <p>This was not the only instance when the group leaked details collected from their victims. On May 23, they published 13GB of insurance checks, bank transfer information and personally identifiable details of Italian citizens. The source was an Italian insurance company.</p>
+      <p>They also set up an auction, for full access with admin privileges on the network of a city's administration in Italy. The starting price was 1 bitcoin ($8,000), with a step-up of 0.2 bitcoin, and a blitz sale at 5 bitcoins; and someone paid.</p>
+      <p>"There are more than 200 machines, servers, and workstations in the network, more than 10 class-C subnetworks, subnetworks for VoIP," the announcement read.</p>
+      <p>In a more recent advertisement from July 17, 'truniger' offered access to a KIA dealership in Canada for $3,000. Having limited privileges and not being able to deploy malware on the network is the reason 'truniger' makes offers like this.</p>
+      <p>These operations and the quick rise of the group are clearly the result of GandCrab's influence. It's not just the business model that matters in achieving success; social interaction with fellow cybercriminals, potential employees and partners are also part of the game.</p>
+      <p>head image source: AdvIntel</p>
+    </article>
+  </body>
+</html>

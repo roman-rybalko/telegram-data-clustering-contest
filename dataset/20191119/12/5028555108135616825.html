@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://arstechnica.com/information-technology/2019/11/google-samsung-fix-android-spying-flaw-other-makers-may-still-be-vulnerable/"/>
+    <meta property="og:site_name" content="Ars Technica"/>
+    <meta property="article:published_time" content="2019-11-19T12:32:17+00:00"/>
+    <meta property="og:title" content="Google &amp; Samsung fix Android spying flaw. Other makers may still be vulnerable"/>
+    <meta property="og:description" content="Camera and mic could be controlled by any app, no permission required."/>
+  </head>
+  <body>
+    <article>
+      <h1>Google &amp; Samsung fix Android spying flaw. Other makers may still be vulnerable</h1>
+      <h2>Camera and mic could be controlled by any app, no permission required.</h2>
+      <address><time datetime="2019-11-19T12:32:17+00:00">19 Nov 2019, 12:32</time> by <a rel="author">Dan Goodin</a></address>
+      <p>Until recently, weaknesses in Android camera apps from Google and Samsung made it possible for rogue apps to record video and audio and take images and then upload them to an attacker-controlled server—without any permissions to do so. Camera apps from other manufacturers may still be susceptible.</p>
+      <p>The weakness, which was discovered by researchers from security firm Checkmarx, represented a potential privacy risk to high-value targets, such as those preyed upon by nation-sponsored spies. Google carefully designed its Android operating system to bar apps from accessing cameras and microphones without explicit permission from end users. An <a href="https://www.checkmarx.com/blog/how-attackers-could-hijack-your-android-camera">investigation published Tuesday</a> showed it was trivial to bypass those restrictions. The investigation found that an app needed no permissions at all to cause the camera to shoot pictures and record video and audio. To upload the images and video—or any other image and video stored on the phone—to an attacker-controlled server, an app needed only permission to access storage, which is among one of the most commonly given usage rights.</p>
+      <p>The weakness, which is tracked as CVE-2019-2234, also allowed would-be attackers to track the physical location of the device, assuming GPS data was embedded into images or videos. Google closed the eavesdropping hole in its Pixel line of devices with a camera update that became available in July. Checkmarx said Samsung has also fixed the vulnerability, although it wasn't clear when that happened. Checkmarx said Google has indicated that Android phones from other manufacturers may also be vulnerable. The specific makers and models haven't been disclosed.</p>
+      <p>"The ability for an application to retrieve input from the camera, microphone, and GPS location is considered highly invasive by Google themselves," Checkmarx Director of Security Research Erez Yalon wrote in Tuesday's analysis. "As a result, <a href="https://source.android.com/">AOSP</a> created a specific set of <a href="https://source.android.com/devices/tech/config">permissions</a> that an application must request from the user."</p>
+      <p>To demonstrate the risk, Checkmarx developed a proof-of-concept rogue app that exploited the weakness. It masqueraded as a simple weather app. Hidden inside were functions that could:</p>
+      <ul>
+        <li>Take pictures and record videos, even when the phone was locked, the screen was off, or the app was closed</li>
+        <li>Pull GPS data embedded into any photo or video stored on the phone</li>
+        <li>Eavesdrop and record two-way phone conversations and simultaneously record video or take images</li>
+        <li>Silence the camera shutter to make the spying harder to detect</li>
+        <li>Transfer any photo or video stored on the phone to an attacker-controlled server</li>
+        <li>List and download any JPG image or MP4 video stored on the phone's SD card</li>
+      </ul>
+      <p>An attack wouldn't be completely surreptitious. The screen of an exploited device would display the camera as it recorded video or shot an image. That would tip off anyone who was looking at the handset at the time the attack was being carried out. Still, the attack would be able to capture video, sound, and images at times when a phone display was out of eyesight, such as when the device was placed screen down. The app was able to use the proximity sensor to determine when the device is face down.</p>
+      <p>Checkmarx's PoC app was also able to use a phone's proximity sensor to detect when it was held to a target's ear, as often happens during phone calls. The app was able to record both sides of the conversation. It could also record video or take images, a useful capability in the event the back of the phone was facing a whiteboard or something else of interest to an attacker. Checkmarx's report includes a video demonstrating the capabilities of the PoC app.</p>
+      <p>In a statement, Google officials wrote: "We appreciate Checkmarx bringing this to our attention and working with Google and Android partners to coordinate disclosure. The issue was addressed on impacted Google devices via a Play Store update to the Google Camera Application in July 2019. A patch has also been made available to all partners."</p>
+      <p>Samsung officials wrote: "Since being notified of this issue by Google, we have subsequently released patches to address all Samsung device models that may be affected. We value our partnership with the Android team that allowed us to identify and address this matter directly."</p>
+      <p>The statement didn't say when Samsung released the fix or how Samsung customers can check if the patch has been installed.</p>
+      <p>Checkmarx said Google has privately indicated that other makers of Android phones besides Samsung may also be vulnerable. Google's statement didn't directly confirm this or say if any other manufacturers have installed an update.</p>
+      <p>In an email, Checkmarx's Yalon said it wasn't clear why apps could access the camera without the user providing permission. He speculated that the weakness may be the result of Google making the camera work with the voice-activated Google Assistant and other manufacturers following suit.</p>
+      <p>Users of Pixel phones can confirm they aren't vulnerable by accessing Apps and Notifications from the settings menu, choosing Camera &gt; Advanced &gt; and App details. The screen should show that the app has been updated since July (and ideally much more recently than that).</p>
+      <p>Checking if other Android phones are susceptible will be difficult for most users. Those who are more technically skilled can run the following command:</p>
+      <blockquote>
+        <code>$ adb shell am start-activity -n<br/>com.google.android.GoogleCamera/com.android.camera.CameraActivity --ez<br/>extra_turn_screen_on true -a android.media.action.VIDEO_CAMERA --ez<br/>android.intent.extra.USE_FRONT_CAMERA true</code>
+      </blockquote>
+      <p>The above command will force the phone to take video. The following command will force the phone to take a photo:</p>
+      <blockquote>
+        <code>$ adb shell am start-activity -n<br/>com.google.android.GoogleCamera/com.android.camera.CameraActivity --ez<br/>extra_turn_screen_on true -a android.media.action.STILL_IMAGE_CAMERA -<br/>-ez android.intent.extra.USE_FRONT_CAMERA true --ei<br/>android.intent.extra.TIMER_DURATION_SECONDS 3</code>
+      </blockquote>
+      <p>The skill and luck required to make the attack work reliably and without detection are high enough that this type of exploit isn't likely to be used against the vast majority of Android users. Still, the ease of sneaking malicious apps into the Google Play store suggests it wouldn't be hard for a determined and sophisticated attacker to pull off something like this. No wonder phones and other electronics are <a href="https://arstechnica.com/tech-policy/2019/10/republicans-storm-ultra-secure-scif-some-with-cellphones-blazing/">barred from SCIFs</a> and other sensitive environments.</p>
+      <related>
+        <h4>Further Reading</h4>
+        <a href="https://arstechnica.com/tech-policy/2019/10/republicans-storm-ultra-secure-scif-some-with-cellphones-blazing/"/>
+      </related>
+    </article>
+  </body>
+</html>

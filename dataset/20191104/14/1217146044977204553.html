@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://www.bleepingcomputer.com/news/microsoft/office-365-breach-detection-capabilities-now-in-public-preview/"/>
+    <meta property="og:site_name" content="BleepingComputer"/>
+    <meta property="article:published_time" content="2019-11-04T14:00:00+00:00"/>
+    <meta property="og:title" content="Office 365 Breach Detection Capabilities Now in Public Preview"/>
+    <meta property="og:description" content="Microsoft announced the release of a new Office 365 Advanced Threat Protection (ATP) features designed to detect breaches, dubbed enhanced compromise detection and response."/>
+  </head>
+  <body>
+    <article>
+      <h1>Office 365 Breach Detection Capabilities Now in Public Preview</h1>
+      <address><time datetime="2019-11-04T14:00:00+00:00">04 Nov 2019, 14:00</time> by <a rel="author" href="https://www.bleepingcomputer.com/author/sergiu-gatlan/" target="_blank">Sergiu Gatlan</a></address>
+      <figure>
+        <img src="https://www.bleepstatic.com/content/hl-images/2019/09/27/Office-365.jpg"/>
+      </figure>
+      <p>Microsoft announced the release of a new Office 365 Advanced Threat Protection (ATP) feature designed to detect breaches, dubbed enhanced compromise detection and response.</p>
+      <p>The new feature makes it easier to quickly detect unusual behavior by "the breadth of signal across Office 365, including email flow patterns and other activities" and alert the organization's security team of potential intrusions.</p>
+      <p>This Office 365 ATP capability also allows Security Operations (SecOps) teams to automatically detect and investigate suspicious users and remediate hacked accounts.</p>
+      <p>Over 90% of phishing attacks are orchestrated over email with the sole purpose of causing users and organizations harm by compromising identities, moving laterally, exfiltrating data and/or causing disruptions. Hackers launch these attacks using meticulously constructed campaigns that morph continuously. Security teams need advanced threat defenses that recognize campaigns, prevent and detect compromise, and quickly put response measures in place to limit impact in the event of a breach. - Microsoft</p>
+      <h3>Additional info on compromised accounts</h3>
+      <p>"With the new playbook for detecting compromised users, security teams can automatically identify, mitigate, and contain threats due to these user accounts, reducing potential damages significantly," Microsoft <a href="https://www.microsoft.com/en-us/microsoft-365/roadmap?filters=&amp;searchterms=55742">says</a>.</p>
+      <p>"The playbook will trigger automatic investigations for users with abnormal sending patterns or users restricted from sending email."</p>
+      <p>The newly added capability also provides an organization's SecOps team with important info on the attack besides the automated responses that should drastically reduce potential security issues triggered by a hacked user account:</p>
+      <p>• <b>How the user was compromised</b>: if the user clicked on a bad link or it changed state, or if the user performed some malicious activity, such as sending phish or malware.<br/>• <b>What they did after that</b>: for example, if they set up delegates or mail forwarding rules or changed other settings<br/>• <b>What actions the security team performed</b>: such as cleaning up malicious messages, investigating URLs that changed verdict, removing delegates and inbox rules, and so on</p>
+      <p>The new <a href="http://aka.ms/DetectCompromisewithOATP">Office 365 ATP enhanced compromise detection and response capability</a> is currently available in Public Preview for Office 365 customers.</p>
+      <figure>
+        <img src="https://www.bleepstatic.com/images/news/u/1109292/September%202019/Automated%20investigations%20page.png"/>
+        <figcaption>Automated investigations page<i> (Microsoft)</i></figcaption>
+      </figure>
+      <h3>Automated response to breaches </h3>
+      <p>Security teams can pair this new feature with automated playbooks available via the <a href="https://www.bleepingcomputer.com/news/microsoft/office-365-atp-automated-incident-response-now-generally-available/">Office 365 ATP Automated Incident Response</a> (AIR) capability, generally available since September 9, with both manually and automatically triggered investigations being provided for inclusion within security incident response workflows.</p>
+      <p>"The automation enhances the security of organizations, by drastically reducing the time and effort required to respond to threats. It allows security teams to scale better and reduce the potential impact of a breach," Microsoft adds.</p>
+      <p>AIR allows security departments to sort through the huge amounts of daily alerts using security playbooks that provide them with all the steps needed to "comprehensively investigate an alert and offer a set of recommended actions for containment and mitigation."</p>
+      <p>"Automated playbooks automatically investigate the alerts, look for possible sources of compromise, assess impact, and recommend actions for remediation," Microsoft says. "The automation also integrates other identity signals to improve confidence of the detection and offers a comprehensive assessment."</p>
+      <h3>Automated Incident Response security playbooks</h3>
+      <p>These are the original scenarios AIR came with on launch for which a security playbook automatically initiates when an alert is triggered:</p>
+      <p>• <b>User-reported phishing emails</b>—When a user reports what they believe to be a phishing email, an alert is raised triggering an automatic investigation.<br/>• <b>User clicks a malicious link with changed verdict</b>—An alert is raised when a user clicks a URL, which is wrapped by Office 365 ATP Safe Links, and is determined to be malicious through detonation (change in verdict). Or if the user clicks through the Office 365 ATP Safe Links warning pages an alert is also raised. In both cases, the automated investigation kicks in as soon as the alert is raised.<br/>• <b>Malware detected post-delivery (Malware Zero-Hour Auto Purge (ZAP))</b>—When Office 365 ATP detects and/or ZAPs an email with malware, an alert triggers an automatic investigation.<br/>• <b>Phish detected post-delivery (Phish ZAP)</b>—When Office 365 ATP detects and/or ZAPs a phishing email previously delivered to a user’s mailbox, an alert triggers an automatic investigation.</p>
+    </article>
+  </body>
+</html>

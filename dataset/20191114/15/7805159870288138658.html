@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://www.xda-developers.com/magisk-manager-canary-biometricprompt-pixel-4-face-unlock/"/>
+    <meta property="og:site_name" content="XDA Developers"/>
+    <meta property="article:published_time" content="2019-11-14T15:52:00+00:00"/>
+    <meta property="og:title" content="Magisk Manager Canary now supports BiometricPrompt for Pixel 4 Face Unlock"/>
+    <meta property="og:description" content="The latest Magisk Manager Canary release has added BiometricPrompt support for superuser requests, so you can authenticate with the Pixel 4 Face Unlock."/>
+  </head>
+  <body>
+    <article>
+      <h1>Magisk Manager Canary now supports BiometricPrompt for Pixel 4 Face Unlock</h1>
+      <address><time datetime="2019-11-14T15:52:00+00:00">14 Nov 2019, 15:52</time> by <a rel="author" href="https://www.xda-developers.com/author/mishaalrahman/" target="_blank">Mishaal Rahman</a></address>
+      <p><a href="https://forum.xda-developers.com/apps/magisk">Magisk</a> has basically become synonymous with root access on Android, and that’s because it’s the easiest way to gain root without directly modifying the system partition. Part of Magisk’s appeal is its companion app, Magisk Manager, which makes managing superuser access and installing Modules—archives packed with apps, scripts, and other files that systemlessly modify your device—super simple. XDA Recognized Developer <a href="https://forum.xda-developers.com/member.php?u=4470081">topjohnwu</a>, the creator of Magisk, maintains Stable, Beta, and Canary channels for his superuser tool and companion app, and he has announced a new feature for the Manager app: Biometric Authentication, specifically Face Unlock, for superuser requests.</p>
+      <p>Currently, Magisk Manager supports locking superuser requests behind fingerprint authentication when “Automatic Response” for superuser requests was set to “Prompt” and “Enable Fingerprint Authentication” was enabled in Settings. The app used the FingerprintManager API to show a custom fingerprint authentication dialog whenever an app requests superuser access. This API was deprecated in Android 9 Pie in favor of BiometricPrompt, a more generic API that presents a system dialog and works with any recognized, secure biometric authentication hardware.</p>
+      <p>In Android 10, secure facial recognition hardware is now recognized as a valid authentication method in BiometricPrompt, so apps using this API can present face authentication dialogs. Since the new Pixel 4 doesn’t have a fingerprint scanner, topjohnwu <a href="https://www.xda-developers.com/google-pixel-4-users-wait-developers-add-face-unlock-support/">needed to update the Manager app</a> so <a href="https://www.xda-developers.com/google-pixel-4-root-magisk/">rooted Pixel 4 devices</a> could use face authentication for superuser requests. If you have a Pixel 4 and download the latest Magisk Manager Canary version, you’ll notice that “Enable Fingerprint Authentication” has been replaced by the “Enable Biometric Authentication” setting. Turn this on and you’ll be able to use your face to authenticate superuser requests.</p>
+      <slideshow>
+        <figure>
+          <img src="https://www.xda-developers.com/files/2019/11/Magisk-Manager-Canary-BiometricPrompt-2.jpg"/>
+        </figure>
+        <figure>
+          <img src="https://www.xda-developers.com/files/2019/11/Magisk-Manager-Canary-BiometricPrompt-1.jpg"/>
+        </figure>
+      </slideshow>
+      <p>If any of your favorite apps haven’t updated to use BiometricPrompt yet, you can use the <a href="https://www.xda-developers.com/use-google-pixel-4-face-unlock-any-app/">Fingerface Xposed Module</a> to force face unlock support in all apps as a stopgap solution.</p>
+      <p>
+        <b>
+          <a href="https://forum.xda-developers.com/apps/magisk/dev-magisk-canary-channel-bleeding-edge-t3839337/">Magisk Manager Canary Forum Thread</a>
+        </b>
+      </p>
+    </article>
+  </body>
+</html>

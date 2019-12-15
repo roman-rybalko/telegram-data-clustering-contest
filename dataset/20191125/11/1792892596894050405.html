@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://www.techzine.be/nieuws/workplace/49395/microsoft-vindt-oorzaak-voor-g-app-die-afsluiten-windows-10-voorkomt/"/>
+    <meta property="og:site_name" content="Techzine"/>
+    <meta property="article:published_time" content="2019-11-25T11:25:09+00:00"/>
+    <meta property="og:title" content="Microsoft vindt oorzaak voor ‘G’-app die afsluiten Windows 10 voorkomt"/>
+    <meta property="og:description" content="Microsoft heeft een verklaring gegeven voor een mysterieuze app met de naam ‘G’, die voorkomt dat Windows 10-gebruikers hun systeem kunnen afsluiten. De softwarereus heeft het probleem verholpen in de preview van Windows 10 20H1, de feature-update die volgend jaar uitkomt. Windows 10-gebruikers maken zich al meer dan een jaar zorgen om de mysterieuze ‘G’-app. […]"/>
+  </head>
+  <body>
+    <article>
+      <h1>Microsoft vindt oorzaak voor ‘G’-app die afsluiten Windows 10 voorkomt</h1>
+      <address><time datetime="2019-11-25T11:25:09+00:00">25 Nov 2019, 11:25</time> by <a rel="author">Zamire Willems</a></address>
+      <p>
+        <b>Microsoft heeft een verklaring gegeven voor een mysterieuze app met de naam ‘G’, die voorkomt dat Windows 10-gebruikers hun systeem kunnen afsluiten. De softwarereus heeft het probleem verholpen in de preview van Windows 10 20H1, de feature-update die volgend jaar uitkomt.</b>
+      </p>
+      <p>Windows 10-gebruikers maken zich al meer dan een jaar zorgen om de mysterieuze ‘G’-app. Foutmeldingen gerelateerd aan ‘G’ zorgden ervoor dat velen dachten met malware te maken te hebben. Toch vonden antivirusscans geen malware. Daarbij zorgden het ontbreken van een .exe-naam voor de app ook voor de nodige vraagtekens, aldus <a href="https://www.zdnet.com/article/windows-10-microsoft-unmasks-the-mysterious-g-app-stopping-you-shut-down/">ZDNet</a>.</p>
+      <p>Microsoft onderzocht meerdere gebruikersrapporten en wist het probleem uiteindelijk te achterhalen. Niet malware, maar een eigenaardigheid in hoe Windows omgaat met de Windows Graphics Device Interface (GDI+) was de oorzaak. GDI+ is een grafische component, die oorspronkelijk geschreven is voor Windows 98.</p>
+      <p>“We hebben een probleem gevonden, waarbij vensters gerelateerd aan GDI+ enkel werden aangeduid als ‘G’. We hebben dit nu opgelost en in het vervolg luistert het naar de naam ‘ ‘GDI+ Window (&lt;exe name&gt;)’, waarbij &lt;exe name&gt; de naam toont van de app die gebruik maakt van GDI+”, aldus een woordvoerder van het Windows Insider-team.</p>
+      <h3>Unicode en ANSI</h3>
+      <p>Gezien de onrust het afgelopen jaar en de hoeveelheid aan klachten over de ‘G’-app, geeft Raymond Chen <a href="https://devblogs.microsoft.com/oldnewthing/20191030-00/?p=103036">gedetailleerder uitleg</a> over het inmiddels opgeloste probleem. Volgens de Microsoft-veteraan, die al meer dan twee decennia aan Windows werkt, verscheen ‘G’ in Windows omdat een bug de Unicode-tekst verkeerd interpreteerde als ANSI. Doorgaans wordt dit alleen als het eerste teken van een app weergegeven. “Als je je Unicode-berichten doorgeeft aan DefWindowProcA, zul je merken dat veel tekenreeksen worden afgekapt bij hun eerste karakter”, aldus Chen.</p>
+      <p>Zoals al aangegeven is de GDI+-library ooit geschreven ter ondersteuning van Windows 98. Dit oude besturingssysteem had slechts beperkte ondersteuning voor Unicode. Tijdens opeenvolgende opschoningspraktijken hebben de ontwikkelaars GDI+ opnieuw gecompileerd als een Unicode-component. Dat had dus eigenlijk een ANSI-component moeten zijn. </p>
+      <h3>DefWindowProc</h3>
+      <p>“De<i> </i>meldingvensterprocedure<i> </i>bevatte een expliciete oproep aan DefWindowProcA. Nu zouden de meeste tekenset-mismatches<i> </i>door de compiler worden opgevangen vanwege een type mismatch. Maar de afhankelijkheid van de tekenset in DefWindowProc is niet gecodeerd in de parametertypes. Het is impliciet in hoe de Windows 10-gebruiker het bericht ontving.”</p>
+      <p>“Deze mismatch werd niet opgemerkt door de compiler of tijdens het testen, omdat het meldingsvenster nu eenmaal geen tekstverwerking uitvoert. De titel van het venster werd om die reden afgekapt van ‘GDI+ Hook Window’ naar gewoon ‘G’. De foutmelding deed er alleen niet toe, omdat de titel ‘G’ nergens voor wordt gebruikt. Overigens is de venstertitel nooit zichtbaar voor de gebruiker. Behalve wanneer het, zoals nu, wel gebeurt”, legt Chen uit. </p>
+      <h3>Blocked Shutdown Resolver</h3>
+      <p>De oorzaak waarom Windows 10 niet kon worden afgesloten, is volgens hem dan ook gerelateerd aan het <i>Blocked Shutdown Resolver</i>-scherm. “Wanneer een programma een gebruiker verhindert om uit te loggen of af te sluiten, zoekt Windows naar een zichtbaar venster dat bij dat programma hoort. Het gebruikt dat venster om het in het scherm Blocked Shutdown Resolver (BSDR) weer te geven. Maar als het programma geen zichtbare vensters heeft, neemt BSDR elk venster dat bij het programma hoort: zichtbaar of niet. Dat gold dus ook voor het onzichtbare venster genaamd ‘G'”, aldus Chen.</p>
+    </article>
+  </body>
+</html>

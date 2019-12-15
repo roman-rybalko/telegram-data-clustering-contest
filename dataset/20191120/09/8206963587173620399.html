@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://www.xatakandroid.com/sistema-operativo/google-quiere-kernel-generico-para-android-actualizaciones-rapidas-mayor-seguridad?utm_source=feedburner&amp;utm_medium=feed&amp;utm_campaign=Feed%3A+Xatakandroid+%28Xatakandroid%29"/>
+    <meta property="og:site_name" content="Xataka Android"/>
+    <meta property="article:published_time" content="2019-11-20T09:53:09+00:00"/>
+    <meta property="og:title" content="Google quiere un kernel genérico para Android: actualizaciones más rápidas y mayor seguridad"/>
+    <meta property="og:description" content="No es que Android sea un sistema operativo de código abierto al completo u Open Source ya que, pese a estar basado en el kernel de Linux, y aunque exista una..."/>
+  </head>
+  <body>
+    <article>
+      <h1>Google quiere un kernel genérico para Android: actualizaciones más rápidas y mayor seguridad</h1>
+      <address><time datetime="2019-11-20T09:53:09+00:00">20 Nov 2019, 09:53</time> by <a rel="author" href="https://www.xatakandroid.com/autor/ivan-linares" target="_blank">Iván Linares</a></address>
+      <p>No es que Android sea un sistema operativo de código abierto al completo u Open Source ya que, pese a estar <b>basado en el kernel de Linux</b>, y aunque exista una versión de sistema completamente libre (<a href="https://www.xataka.com/aplicaciones/aosp-asi-al-android-open-source-google-que-queda-como-opcion-para-huawei">Android Open Source Project o AOSP</a>), Google incluye en los <b>dispositivos certificados</b> una serie de aplicaciones y servicios propietarios. Aun así, <b>Android mantiene la base de Linux</b>, su kernel o núcleo; sin que sea el mismo kernel que se utiliza en distros de Linux ya que empresas y fabricantes lo modifican para que se adapte mejor a móviles, tablets y otros aparatos.</p>
+      <p>Todos sabemos la <a href="https://www.xatakandroid.com/xatakandroid/google-mano-dura-android-que-sus-nuevas-exigencias-beneficiosas-para-usuarios">enorme fragmentación de Android</a> y las dificultades que arrastra el sistema en términos de actualización, por ejemplo. Google ha ido puliendo estos inconvenientes de manera notable hasta evolucionar el sistema incluyendo <a href="https://www.xatakandroid.com/mercado/google-informa-que-project-treble-exito-adopcion-android-9-fue-doble-rapida-que-android-8">mejoras como Project Treble</a>, una capa genérica de sistema que se encuentra <b>separada de las personalizaciones de cada fabricante</b>. De esta manera, cada marca sólo debe modificar su capa; lo que, en teoría, debía agilizar las actualizaciones. ¿Funcionó? Sí, pero aún hay mucho margen de mejora. Y Google está dispuesta a ir más allá.</p>
+      <h3>Un kernel genérico de Linux agilizaría las actualizaciones y mejoraría la seguridad en Android</h3>
+      <figure>
+        <img src="https://i.blogs.es/8e9fa6/kernel-capas-android/1366_2000.jpg"/>
+      </figure>
+      <p>El kernel o núcleo es la capa encargada de gestionar el sistema y sus recursos, de ahí que sea una parte tan vital del firmware. Y, dado que Android está orientado principalmente a los teléfonos, <b>Google y el resto de las empresas introducen cambios en el kernel</b> para así facilitar la ejecución en los distintos dispositivos compatibles. Con un inconveniente: esto complica procesos como el de las actualizaciones ya que las marcas deben comprobar que cada cambio funciona de manera correcta en los distintos modelos. Si extrapolamos esto a la enorme cantidad de teléfonos con Android, podemos intuir el problema.</p>
+      <related>
+        <a href="https://www.xatakandroid.com/sistema-operativo/despues-treble-llega-apex-android-modular-para-combatir-fragmentacion"/>
+      </related>
+      <p>Con <b>Treble</b>, Google separó la personalización de los fabricantes en una capa propia para que así cualquier dispositivo con Android 8 Oreo y superior pudiese instalar una actualización sin la necesidad de que la marca revisase por completo todo el firmware: <b>le bastaba con adaptar su personalización</b>. No ocurre lo mismo con el kernel: Google, Qualcomm, Samsung... Cada empresa añade sus propios cambios al núcleo. <a href="https://linuxplumbersconf.org/event/4/sessions/67/#20190910.detailed">Y Google parece decidida a finiquitarlo</a>.</p>
+      <aside>Con un núcleo genérico los fabricantes sólo tendrían que personalizar la capa de módulos destinada al hardware concreto de cada teléfono</aside>
+      <p>Pese a que la empresa no ha asegurado que Android adoptará finalmente el núcleo genérico de Linux, sí ha mostrado interés por este paso. Y las mejoras serían notables: con un núcleo genérico los fabricantes sólo tendrían que <b>personalizar la capa de módulos destinada al hardware concreto de cada teléfono</b>. De esta manera, habría un <b>núcleo "estándar" destinado a procesadores ARM 64</b> del que no sólo se beneficiarían dispositivos como smartphones o tablets, también ordenadores portátiles con ese tipo de SoC que tengan instalada una distro de Linux.</p>
+      <h3>No es seguro que Google utilice finalmente un kernel genérico de Linux en Android</h3>
+      <figure>
+        <img src="https://i.blogs.es/6003a6/boot-unico-android/1366_2000.jpg"/>
+      </figure>
+      <p>Pese a las mejoras que esto tendría, con la <b>rapidez en las actualizaciones, mayor seguridad o menor gasto de batería</b>, Google no ha asegurado que finalmente vaya a utilizar un núcleo genérico de Linux en Android. Esto aliviaría la carga de trabajo de cada marca ya que no tendría que modificar el núcleo de sistema: le bastaría con agregar un módulo con todos los controladores necesarios para el dispositivo.</p>
+      <aside>Algunos desarrolladores de la comunidad Linux no están de acuerdo con el kernel genérico</aside>
+      <p>Pese a las mejoras notables del kernel genérico, no toda la comunidad de Linux está de acuerdo en la idea. <a href="https://arstechnica.com/gadgets/2019/11/google-outlines-plans-for-mainline-linux-kernel-support-in-android/">Como apuntan en Ars Technica</a>, los desarrolladores independientes no podrían localizar errores y corregirlos ya que <b>los módulos estarían fuera del kernel y bajo el criterio de los distintos fabricantes</b>.</p>
+      <p>Vía | <a href="https://www.androidpolice.com/2019/11/19/google-wants-android-to-use-regular-linux-kernel-potentially-improving-updates-and-security/">Android Police</a></p>
+    </article>
+  </body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://pcpress.rs/lazni-windows-update-instalira-ransomware-na-racunare/"/>
+    <meta property="og:site_name" content="PC Press"/>
+    <meta property="article:published_time" content="2019-11-21T09:01:10+00:00"/>
+    <meta property="og:title" content="Lažni Windows update instalira ransomware na računare"/>
+    <meta property="og:description" content="Hakeri su počeli da koriste novu tehniku za napade na računare korisnika. Nedavno su započeli kampanju, u kojoj se predstavljaju kao Microsoft i zahtevaju od korisnika da instalira Windows update, …"/>
+  </head>
+  <body>
+    <article>
+      <h1>Lažni Windows update instalira ransomware na računare</h1>
+      <address><time datetime="2019-11-21T09:01:10+00:00">21 Nov 2019, 09:01</time> by <a rel="author" href="https://pcpress.rs/author/bbubanja/" target="_blank">Branislav Bubanja</a></address>
+      <p>Hakeri su počeli da koriste novu tehniku za napade na računare korisnika. Nedavno su započeli <b>kampanju, u kojoj se predstavljaju kao Microsoft i zahtevaju od korisnika da instalira Windows update, koji je u stvari ransomware softver</b>.</p>
+      <figure>
+        <img src="https://i0.wp.com/pcpress.rs/wp-content/uploads/2019/11/cyborg-ransomware.jpg"/>
+      </figure>
+      <p>Istraživači iz <a href="https://pcpress.rs/PCout/?url=https://www.trustwave.com/en-us/company/about-us/spiderlabs/">Trustwave SpiderLabs</a>-a, otkrili su <b>spam poruke koje imaju dramatične naslove</b> kao što su „Odmah instalirajte Microsoft Windows Update!“ ili „Kritični Microsoft Windows Update!“, <b>čiji je cilj da „navuku“ korisnike da kliknu na linkove „update-a“ unutar email-a</b>. U porukama se nalazi samo jedna rečenica, a interesantno je da su prva dva slova napisana velikim slovima. Tako „nepismen“ mail teško da bi poslao Microsoft, a da ne ulazimo u to da update nikad ne bi zahtevao preko email-a, s obzirom da ima mnogo direktnije načine da korisnike „natera“ na nadogradnju OS-a..</p>
+      <p>U pomenutim porukama, <b>od korisnika se traži da klikne na prilog u poruci kako bi preuzeo „update“.</b> Iako je taj fajl prividno ima .JPG ekstenziju, u stvari je izvršni .NET downloader, koji će umesto update-a instalirati ransomware na računar i zaraziti sistem. Klikom na taj fajl, preuzeće se novi izvršni fajl (bitcoingenerator.exe) sa Github naloga misterbtc2020 (već je uklonjen sa sistema), koji je u stvari .NET kompajlirani Cyborg ransomware.</p>
+      <related>
+        <a href="https://pcpress.rs/kuciste-koje-ce-windows-racunarima-podariti-mac-pro-izgled/"/>
+      </related>
+      <p>Kao i svi ostali programi tog tipa i <b>bitcoingenerator.exe kriptuje podatke na hard disku i menja im ekstenziju u .777</b>. Takođe, pravi i kopiju sebe pod imenom bot.exe, koji se krije u root-u inficiranog drajva. <b>Na desktopu kriptovanog računara pojaviće se fajl „Cybor_DECRYPT.txt“ u okviru kojeg stoji zahtev za otkupom podataka, a za to korisnik mora da plati 500 dolara</b>.</p>
+      <p>Kada su istraživači detaljnije pogledali ransomware, pronašli su tri slična primera, kao i builder za ransomware softver. Otkrili su i YouTube video koji pokazuje linkove ka builder-u na Github-u sa dva repozitorija – ka binarnom ransomware builder-u, u engleskoj i ruskoj verziji.</p>
+      <p>Izvor: <a href="https://pcpress.rs/PCout/?url=https://www.techspot.com/news/82850-fake-windows-update-installs-ransomware-pcs.html">TechSpot</a></p>
+      <p>Tagovi: <a href="https://pcpress.rs/tag/cyborg/">cyborg</a>, <a href="https://pcpress.rs/tag/github/">GitHub</a>, <a href="https://pcpress.rs/tag/hakeri/">Hakeri</a>, <a href="https://pcpress.rs/tag/microsoft/">Microsoft</a>, <a href="https://pcpress.rs/tag/ransomware/">ransomware</a>, <a href="https://pcpress.rs/tag/windows/">Windows</a>, <a href="https://pcpress.rs/tag/windows-update/">Windows Update</a></p>
+      <related>
+        <h4>
+          <i>Možda će vas zanimati:</i>
+        </h4>
+        <a href="https://pcpress.rs/ransomware-je-nova-digitalna-posast/"/>
+        <a href="https://pcpress.rs/kako-do-bezbedne-komunikacije-forcepoint-za-siguran-e-mail/"/>
+        <a href="https://pcpress.rs/ransomware-kao-lazni-update-za-adobe-flash-player/"/>
+      </related>
+    </article>
+  </body>
+</html>

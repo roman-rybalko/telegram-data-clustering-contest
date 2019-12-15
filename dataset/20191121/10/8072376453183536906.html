@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://www.cbronline.com/news/google-cloud-encryption-byok"/>
+    <meta property="og:site_name" content="Computer Business Review"/>
+    <meta property="article:published_time" content="2019-11-21T10:04:33+00:00"/>
+    <meta property="og:title" content="GCP Touts New “Lock Google Out” Encryption Offerings"/>
+    <meta property="og:description" content="Two new Google Cloud encryption tools will, used together, let users &quot;deny Google the ability to decrypt your data for any reason&quot;"/>
+  </head>
+  <body>
+    <article>
+      <h1>GCP Touts New “Lock Google Out” Encryption Offerings</h1>
+      <h2>GCP: You can use third-party key management and set tight access controls…</h2>
+      <address>
+        <time datetime="2019-11-21T10:04:33+00:00">21 Nov 2019, 10:04</time>
+      </address>
+      <p>Two new Google Cloud encryption tools will let users “deny Google the ability to decrypt your data for any reason” – and let customers create, use and store their own encryption keys outside of GCP’s infrastructure.</p>
+      <p>(Azure lets customers “bring your own key”, or BYOK, but it <a href="https://docs.microsoft.com/en-us/azure/information-protection/byok-price-restrictions">must be stored</a> in Azure Key Vault. To use an Hardware Security Module-protected key, customers have to fork out for a premium service tier. With AWS, BYOK is also possible, but <a href="https://aws.amazon.com/blogs/security/tag/byok/">storage</a> is via AWS’s key management service).</p>
+      <p>The external key manager programme and complementary “key access justifications” toolkit are coming to beta and alpha releases “soon” GCP said, without naming a specific date – suggesting work is still ongoing to finesse the offering; which will initially just be available for two GCP services.</p>
+      <h3>The New Google Cloud Encryption Tools</h3>
+      <figure>
+        <img src="https://www.cbronline.com/wp-content/uploads/2019/01/ncipher2.png"/>
+        <figcaption>An nCipher HSM</figcaption>
+      </figure>
+      <h4>External Key Manager</h4>
+      <p>The first of the two is an external key manager offering, dubbed – unsurprisingly – “External Key Manager”.</p>
+      <p>This lets users encrypt data in the cloud provider’s <a href="https://cloud.google.com/bigquery/">BigQuery</a> and <a href="https://cloud.google.com/compute/">Compute Engine</a>, with encryption keys stored and managed in a third-party key management system deployed outside Google’s infrastructure.</p>
+      <p>GCP is teaming up with five key management vendors to launch the offering: <a href="https://blog.equinix.com/?p=24398">Equinix</a>, <a href="https://www.fortanix.com/blog/2019/11/keeping-the-keys-to-your-kingdom-google-and-fortanix-partner-to-deliver-byokms/">Fortanix</a>, <a href="https://ionic.com/media/ionic-machina-and-google-clouds-external-key-manager-make-the-cloud-simple-to-trust">Ionic</a>, <a href="https://www.thalesgroup.com/en">Thales</a> and <a href="https://www.prnewswire.com/news-releases/unbound-tech-now-integrated-with-new-google-cloud-platform-external-key-management-solution-300961795.html?tc=eml_cleartime">Unbound</a>, it said.</p>
+      <related>
+        <a href="https://www.cbronline.com/feature/old-truman-brewery-interxion"/>
+      </related>
+      <p>The launch comes as many cloud users remain sceptical about the security of cloud services and indeed, of the cloud providers themselves: co-location data centres like Interxion and Equinix typically already provide “key guardian” services – hosted Hardware Security Module (HSM) units so customers can manage their cryptographic keys on-site – and facilitating tighter integrations with cloud-hosted data or infrastructure is a logical next step.</p>
+      <h4>Key Access Justifications</h4>
+      <p>The second new offering, <a href="https://cloud.google.com/blog/products/identity-security/control-access-to-gcp-data-with-key-access-justifications">Key Access Justifications</a> provides a “detailed justification each time one of your keys is requested to decrypt data, along with a mechanism for you to explicitly approve or deny providing the key using an automated policy that you set.”</p>
+      <p>Key Access Justifications is coming “soon” to alpha for BigQuery, and Compute Engine/Persistent Disk and covers the transition from data-at-rest to data-in-use, GCP said, with early adopters able to <a href="https://docs.google.com/forms/d/e/1FAIpQLSeloex6S9zjzs5ihjrRmVXpx_xa4B8i2mLdXXRlmQ0HxVTORw/viewform?usp=sf_link">sign up here</a>.</p>
+      <p>The company has <a href="https://cloud.google.com/blog/products/identity-security/control-access-to-gcp-data-with-key-access-justifications">promised</a> further technical details and Computer Business Review will update this piece when we see them.</p>
+      <p>BYOK and increasingly customisable encryption offerings are increasingly popular and both SaaS and IaaS vendors are racing to provide more offerings.</p>
+      <p>Slack in March <a href="https://www.cbronline.com/news/slack-security-encryption">announced</a> that it would let customers bring their own encryption keys, while MongoDB earlier this year trumpeted its new “Field Level Encryption” that lets users encrypt specific database fields with their own key, whilst allowing application code to run unmodified for most database read and write operations so devs don’t need to modify their query code.</p>
+      <related>
+        <a href="https://www.cbronline.com/news/field-level-encryption"/>
+      </related>
+      <related>
+        <h4>Related News</h4>
+        <a href="https://www.cbronline.com/uncategorised/delivering-exceptional-customer-experience-4/"/>
+        <a href="https://www.cbronline.com/analysis/aws-outage-overheating"/>
+        <a href="https://www.cbronline.com/list/api-life-cycle-management"/>
+      </related>
+    </article>
+  </body>
+</html>

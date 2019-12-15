@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://9to5google.com/2019/11/01/pixel-4-root-mods-force-face-unlock-motion-sense/"/>
+    <meta property="og:site_name" content="9to5Google"/>
+    <meta property="article:published_time" content="2019-11-01T20:14:51+00:00"/>
+    <meta property="og:title" content="Pixel 4 mods enable face unlock in any app, Motion Sense in more regions for rooted users"/>
+    <meta property="og:description" content="If you have a rooted Pixel 4, the limitations on what apps can use Face Unlock and which regions allow Motion Sense can be bypassed with mods."/>
+  </head>
+  <body>
+    <article>
+      <h1>Pixel 4 mods enable face unlock in any app, Motion Sense in more regions for rooted users</h1>
+      <address><time datetime="2019-11-01T20:14:51+00:00">01 Nov 2019, 20:14</time> by <a rel="author" href="https://9to5google.com/author/skylled/" target="_blank">Kyle Bradshaw</a></address>
+      <p>With the recent launch of the Google Pixel 4, many were excited by all of the things that the flagship phone could do, like Face Unlock and Motion Sense gestures. Unfortunately, we quickly found out that these features had some serious limitations. If you have a rooted Pixel 4, however, the limitations on what apps can use Face Unlock and which regions allow Motion Sense can be bypassed with mods.</p>
+      <p>Before the Google Pixel 4 <a href="https://amzn.to/322Jnb7">reached stores</a> around the world last month, the tech community dug in and found that there were some serious limitations in place on both Face Unlock and Motion Sense. Namely, there are only a <a href="https://9to5google.com/2019/10/21/pixel-4-face-unlock-apps-support/">small handful of apps</a> on the Play Store with support for using Face Unlock as an authentication method, and Motion Sense is only allowed to run in <a href="https://9to5google.com/2019/09/29/pixel-4-motion-sense-38-countries/">certain regions</a> around the world.</p>
+      <p>For power users and Android enthusiasts though, it was only a matter of time before these were bypassed. The Pixel 4 root and Xposed communities have worked to create mods that open Motion Sense to all and bring Face Unlock to more apps.</p>
+      <h3>Use Pixel 4 Face Unlock in any app</h3>
+      <p>When fingerprint authentication was brought to Android, back in the Marshmallow days, it was introduced as a fingerprinting-specific API, “FingerprintManager.” As of Android 10, there’s now a more general “BiometricManager” API that handles fingerprint authentication along with other forms like the Pixel 4’s Face Unlock. However, most apps that use fingerprints still use the older FingerprintManager.</p>
+      <p>While Google is doing their best to <a href="https://9to5google.com/2019/10/31/google-android-biometric-api/">encourage developers</a> to use the newer biometric APIs through AndroidX, in the meantime, rooted Pixel 4 owners can install a mod that tricks apps into using Face Unlock. Shared by <a href="https://www.xda-developers.com/use-google-pixel-4-face-unlock-any-app/"><i>XDA-Developers</i></a>, an Xposed Module with the crudely clever name of “<a href="https://github.com/topjohnwu/Fingerface">Fingerface</a>” —developed by <a href="https://forum.xda-developers.com/member.php?u=5384808">SemonCat</a> then improved by John Wu — does two simple tricks under the hood to enable Face Unlock everywhere that uses fingerprinting.</p>
+      <p>First, if an app checks if your phone has a fingerprint sensor, which the Pixel 4 does not, Fingerface tricks that app into thinking that it does. Second, when the app calls for the FingerprintManager API, Fingerface redirects that call through to BiometricManager, which should handle your Pixel 4’s Face Unlock — or any other biometric authentication options — as normal. As you can see in a provided example video, the results are almost too good to be true.</p>
+      <figure>
+        <iframe src="https://www.youtube.com/embed/CYN3XBapqfM" width="1000" height="563" data-service="Youtube" scrolling="no"/>
+      </figure>
+      <p>Of course, there are still a number of issues with this plan. The first, of course, is that installing an Xposed Module, especially one that affects your device’s authentication, can be a risky proposition. Beyond that, <i>XDA</i> notes that getting the Pixel 4 rooted then installing the <a href="https://forum.xda-developers.com/pixel-4-xl/how-to/xposed-discussion-thread-t3992607">Xposed Framework</a> is currently not a simple task, for the inexperienced.</p>
+      <h3>Use Pixel 4 Motion Sense in any region</h3>
+      <p>While the Pixel 4’s Face Unlock limitations are only a matter of getting Android developers to update their apps, where you can and cannot use Motion Sense is a far more complicated issue. Motion Sense, and its underlying Project Soli sensor, uses radar technology to detect gestures and is therefore regulated on a national level by government agencies <a href="https://9to5google.com/2019/01/01/fcc-approves-google-project-soli/">like the FCC</a>. With that in mind…</p>
+      <p><b>Disclaimer:</b> Enabling Motion Sense for the Pixel 4 in a location where Google does not already allow it is <b>most likely illegal</b>, and therefore we <i>thoroughly recommend</i> that you <b>do not</b> enable Motion Sense in an unsupported country.</p>
+      <p>Earlier this week, Redditors, via <a href="https://www.androidpolice.com/2019/11/01/pixel-4-root-users-can-now-enable-motion-sense-in-restricted-countries/"><i>Android Police</i></a>, discovered that Google left a <a href="https://www.reddit.com/r/GooglePixel/comments/dprq4c/how_to_enable_soli_in_any_country_root_needed/">Motion Sense debugging option</a> in the final retail release of the Pixel 4. By using one of two simple adb commands, Motion Sense can be enabled on a rooted Pixel 4 regardless of its physical location.</p>
+      <p>To temporarily enable Pixel 4’s Motion Sense gestures, until the next device restart, this command can be used:</p>
+      <blockquote>adb shell setprop pixel.oslo.allowed_override true</blockquote>
+      <p>To have the Motion Sense override persist between restarts, there’s a different command available:</p>
+      <blockquote>adb shell “setprop persist.pixel.oslo.allowed_override true; setprop ctl.restart zygote”</blockquote>
+      <p>Or, if you’ve already managed to install Xposed on your Pixel 4 for use with Fingerface above, there’s a <a href="https://forum.xda-developers.com/pixel-4-xl/themes/success-enable-soli-china-t3994917">simple mod</a> available to enable Motion Sense, though, reading through the comments, there seems to still be some inconsistencies being worked on between versions of Xposed.</p>
+      <p>Admittedly though, Motion Sense gestures are not worth breaking the law to use, by any stretch of the imagination, with our Damien Wilde <a href="https://9to5google.com/2019/10/31/google-pixel-4-xl-review/">referring to Motion Sense</a> as a “really lame party trick.”</p>
+      <p><i>FTC: We use income earning auto affiliate links.</i> <a href="https://9to5mac.com/about/#affiliate">More.</a></p>
+    </article>
+  </body>
+</html>

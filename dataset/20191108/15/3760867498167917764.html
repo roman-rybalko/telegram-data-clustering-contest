@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://www.adslzone.net/2019/11/08/archivos-zip-virus-email/"/>
+    <meta property="og:site_name" content="ADSLZone"/>
+    <meta property="article:published_time" content="2019-11-08T15:00:42+00:00"/>
+    <meta property="og:title" content="Los hackers ahora usan archivos ZIP para esconder virus y meterlos en tu PC"/>
+    <meta property="og:description" content="Un grupo de investigadores ha descubierto que se están usando archivos ZIP modificados para esconder malware y que se salte los filtros de tu proveedor de correo electrónico como Gmail.com"/>
+  </head>
+  <body>
+    <article>
+      <h1>Los hackers ahora usan archivos ZIP para esconder virus y meterlos en tu PC</h1>
+      <address><time datetime="2019-11-08T15:00:42+00:00">08 Nov 2019, 15:00</time> by <a rel="author">Alberto García</a></address>
+      <p>Cuando recibimos <b>emails</b> y <b>descargamos archivos</b>, normalmente pasan por diversos filtros. Por ejemplo, en el email, la propia Google escanea el archivo en busca de contenido malicioso, además de luego el antivirus que tengamos en el ordenador. El problema llega cuando con sólo comprimir el <b>archivo en ZIP</b>, un hacker puede <b>colarnos un virus</b> en el ordenador.</p>
+      <h3>Un archivo ZIP que esconde un troyano en su interior</h3>
+      <p>Esta es la técnica que está usando una nueva campaña de hackeo descubierta por investigadores de Trustwave, la cual busca distribuir el malware media phishing. Con ella, consiguen saltarse los filtros de los portales de correo electrónico para distribuir el malware NanoCore RAT.</p>
+      <figure>
+        <img src="https://www.adslzone.net/app/uploads/2019/11/gmail-email-zip.jpg"/>
+      </figure>
+      <p>El email de phishing que llega se hace pasar por una supuesta información de seguimiento de un paquete operado por la <b>Export Operation Specialist</b> de<b> USCO Logistics</b>. En el correo se dice que el usuario tiene que hacer unos trámites y descargar un archivo llamado «<b>SHIPPING_MX00034900_PL_INV_pdf.zip</b>«.</p>
+      <p>Curiosamente, el tamaño del archivo ZIP comprimido es mayor que el de los archivos que lleva en su interior, lo cual llamó la atención de los investigadores. Después de analizar el archivo en 010 Editor, comprobaron que había dos estructuras <b>ZIDENDLOCATOR</b> en lugar de una como deben tener estos archivos, lo cual indicaba que el archivo ZIP había sido diseñado para contener dos estructuras de archivos.</p>
+      <p>La primera estructura se correspondía con un archivo que hacía de señuelo, llamado order.jpg, y que no tenía ningún malware. En la segunda estructura, sin embargo, se encontraba un archivo llamado <b>SHIPPING_MX00034900_PL_INV_pdf.exe</b>, que es el que contiene el malware NanoCore RAT, un troyano.</p>
+      <h3>WinRAR es el único de los grandes descompresores que se lo traga</h3>
+      <p>Según creen los investigadores, los filtros de los servicios de email no podían descomprimir el malware, sino que en su lugar descomprimían el archivo JPG. Dependiendo del extractor de archivos utilizado, el resultado es diferente. Con el que lleva incorporado Windows 10, el archivo da error y no se descomprime. Con 7Zip se advierte de que hay datos adicionales, pero sólo descomprime el JPG. WinRAR, sin embargo, se lo tragó, y descomprimió el archivo que contenía el malware sin mostrar ninguna alerta.</p>
+      <figure>
+        <img src="https://www.adslzone.net/app/uploads/2019/11/7-zip.jpg"/>
+      </figure>
+      <figure>
+        <img src="https://www.adslzone.net/app/uploads/2019/11/windows-extract.jpg"/>
+      </figure>
+      <figure>
+        <img src="https://www.adslzone.net/app/uploads/2019/11/extracted-nanocore-file-715x400.jpg"/>
+      </figure>
+      <p>Por tanto, dependiendo del motor de descompresión que se utilice, se obtiene un archivo diferente, o se genera un error. Sólo en el caso de que se use el de WinRAR, el de PowerArchiver, o el de una versión antigua de 7-ZIP, se detectaría el virus al descomprimir el archivo. Con el resto no sería posible. Sea como sea, el malware puede pasar desapercibido por los motores usados por servicios de correo, lo cual es realmente peligroso.</p>
+      <p>Al sólo funcionar con versiones concretas de descompresores, el número de infecciones se reduce, pero aumenta la probabilidad de infectar a usuarios que tengan WinRAR o versiones antiguas de 7Zip. Además, el archivo también tendría que saltarse la protección activa del antivirus, lo cual es bastante difícil.</p>
+    </article>
+  </body>
+</html>

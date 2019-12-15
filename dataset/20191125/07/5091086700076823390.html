@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://www.zdnet.de/88373707/weiterer-bypass-fuer-microsofts-kernel-schutz-patchguard-veroeffentlicht/"/>
+    <meta property="og:site_name" content="ZDNet.de"/>
+    <meta property="article:published_time" content="2019-11-25T07:15:51+00:00"/>
+    <meta property="og:title" content="Weiterer Bypass für Microsofts Kernel-Schutz PatchGuard veröffentlicht"/>
+    <meta property="og:description" content="Microsoft behebt diese Fehler nur zögerlich. Es betont, dass nur Nutzer mit Administratorrechten Schadcode per PatchGuard-Bypass einschleusen können. Trotzdem öffnen sie eine Tür für die Entwicklung von Rootkits."/>
+  </head>
+  <body>
+    <article>
+      <h1>Weiterer Bypass für Microsofts Kernel-Schutz PatchGuard veröffentlicht</h1>
+      <address><time datetime="2019-11-25T07:15:51+00:00">25 Nov 2019, 07:15</time> by <a rel="author">Stefan Beiersmann</a></address>
+      <p>
+        <b>Microsoft behebt diese Fehler nur zögerlich. Es betont, dass nur Nutzer mit Administratorrechten Schadcode per PatchGuard-Bypass einschleusen können. Trotzdem öffnen sie eine Tür für die Entwicklung von Rootkits.</b>
+      </p>
+      <p>Ein Sicherheitsforscher hat Beispielcode für einen Exploit veröffentlicht, mit dem sich die Windows-Sicherheitsfunktion Kernel Patch Protection (KPP) – auch PatchGuard genannt – <a href="https://www.zdnet.com/article/new-bypass-disclosed-in-microsoft-patchguard-kpp/">umgehen lässt</a>. <a href="https://blog.can.ac/2019/10/19/byepg-defeating-patchguard-using-exception-hooking/">ByePg</a> ist bereits der zweite Bypass, der in weniger als sechs Monaten entdeckt und veröffentlicht wurde. Seit Juli steht ein Proof-of-Concept für „InfinityHook“ zur Verfügung.</p>
+      <figure>
+        <img src="https://www.zdnet.de/wp-content/uploads/2017/03/Sicherheit_shutterstock-250x188.jpg"/>
+      </figure>
+      <p><a href="https://www.zdnet.de/unternehmen/microsoft/">Microsoft</a> hatte PatchGuard 2005 für Windows XP eingeführt. Die Sicherheitsfunktion ist jedoch auf 64-Bit-Versionen von Windows beschränkt. Sie soll verhindern, dass Apps den Kernel patchen, sprich die wohl wichtigste Komponente des Betriebssystems unerlaubt verändern.</p>
+      <p>Vor der Einführung von PatchGuard nutzen vor allem Antivirenprogramme, aber auch anrüchige Treiber oder Cheats für Spiele die Möglichkeit, den Kernel an ihre Bedürfnisse anzupassen. Im Bereich der Cyberkriminalität waren indes Entwickler von Rootkits große Freunde dieser klaffenden Hintertür, um ein System vollständig unter ihre Kontrolle zu bringen. Allerdings war PatchGuard nicht von Anfang an erfolgreich. Erst zusätzliche Sicherheitsfunktionen von <a href="https://www.zdnet.de/themen/windows-10/">Windows 10</a> brachten das Aus für Rootkits.</p>
+      <p>Sicherheitsforscher hörten jedoch nie auf, sich mit PatchGuard zu beschäftigen. 2017 fand CyberArk eine GhostHook genannte Schwachstelle, die eine Funktion in <a href="https://www.zdnet.de/unternehmen/intel/">Intel</a>-Prozessoren ausnutzte, um den Kernel zu verändern. Der Bypass Infinity Hook wiederum missbrauchte die Programmierschnittstelle NtTraceEvent.</p>
+      <p>ByePg wurde bereits im vergangenen Monat vom türkischen Forscher Can Bölük entdeckt. Er fand eine Möglichkeit, den HalPrivateDispatchTable einzusetzen, damit eine gefährliche App in den Kernel eingreifen kann.</p>
+      <p>Vom Schweregrad her sollte ByePg seine Vorgänger übertrumpfen, denn die Schwachstelle erlaubt es auch, die Sicherheitsfunktion Hypervisor-Protected Code Integrity (HVCI) zu umgehen. Mit dieser Funktion setzt Microsoft gefährliche Treiber auf eine schwarze Liste.</p>
+      <p>Alle drei Exploits haben jedoch etwas gemeinsam: Microsoft weigerte sich bisher, Fixes für die Anfälligkeiten zu entwickeln. Nach Angaben des Unternehmens benötigt ein Angreifer Administratorrechte, um auch tatsächlich Schadcode ausführen zu können. Wer jedoch Administratorrechte auf einem System besitzt, kontrolliert es bereits vollständig.</p>
+      <p>Auch wenn diese Argumentation richtig erscheint, klafft darin doch eine große Lücke: PatchGuard soll nämlich auch verhindern, dass legitime Anwendungen, die mit hohen Systemrechten agieren, den Kernel verändern. Die Forscher unterstellen sogar, dass dies der eigentliche Zweck von PatchGuard sei, der nun nicht mehr gewährleistet sei. Zudem seien Bugs, die eine nicht autorisierte Ausweitung von Nutzerrechten ermöglichten, heute keine Seltenheit. In Kombination mit ByePG oder InfinityHook sei es nun also wieder möglich, Rootkits für Windows zu entwickeln und so Malware dauerhaft unter Windows einzurichten.</p>
+      <p>Tatsächlich wurden die Schwachstellen, die GhostHook und InfinityHook ermöglichten, inzwischen beseitigt. Microsoft betonte, dass es die jeweiligen Bugs nicht als sicherheitsrelevant eingestuft und somit nicht unverzüglich beseitigt habe.</p>
+      <p>Im Gespräch mit ZDNet USA erklärte Bölük, Microsoft spiele das von diesen Exploits ausgehende Risiko herunter und verzögere die Patches, was eine Tür für mögliche Angriffe öffne. Ein weiterer Nebeneffekt von Microsofts Einstufung der Bugs als nicht sicherheitsrelevant: Sie fallen nicht unter Microsofts Bug-Bounty-Programm. Die Entdecker wurden also nicht für ihre Arbeit entlohnt.</p>
+    </article>
+  </body>
+</html>

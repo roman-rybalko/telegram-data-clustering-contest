@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://www.bleepingcomputer.com/news/security/latest-intel-cpus-affected-by-new-tsx-speculative-attack/"/>
+    <meta property="og:site_name" content="BleepingComputer"/>
+    <meta property="article:published_time" content="2019-11-13T08:15:04+00:00"/>
+    <meta property="og:title" content="Latest Intel CPUs Affected by New TSX Speculative Attack"/>
+    <meta property="og:description" content="A new speculative vulnerability called ZombieLoad 2, or TSX Asynchronous Abort, has been disclosed today that targets the Transactional Synchronization Extensions (TSX) feature in Intel processors."/>
+  </head>
+  <body>
+    <article>
+      <h1>Latest Intel CPUs Affected by New TSX Speculative Attack</h1>
+      <address><time datetime="2019-11-13T08:15:04+00:00">13 Nov 2019, 08:15</time> by <a rel="author" href="https://www.bleepingcomputer.com/author/lawrence-abrams/" target="_blank">Lawrence Abrams</a></address>
+      <figure>
+        <img src="https://www.bleepstatic.com/content/hl-images/2019/11/12/Zombieload.jpg"/>
+      </figure>
+      <p>A new speculative vulnerability called ZombieLoad 2, or TSX Asynchronous Abort, has been disclosed today that targets the Transactional Synchronization Extensions (TSX) feature in Intel processors.</p>
+      <p>Using this vulnerability, local attackers or malware can steal sensitive data from the operating system kernel or other processes.</p>
+      <p>Performance in modern CPUs is increased through speculative execution, a feature that runs instructions in advance of knowing if they are needed or not. If they are required, the task completes faster, otherwise the data is discarded.</p>
+      <p>Attacks that target this feature are called speculative execution side-channel attacks.</p>
+      <p>In May 2019, new speculative execution attacks called <a href="https://www.bleepingcomputer.com/news/security/new-ridl-and-fallout-attacks-impact-all-modern-intel-cpus/">RIDL, Fallout, and ZombieLoad</a> were disclosed that could allow a malicious program to steal sensitive data from memory locations that normally they could not access. This is demonstrated in the ZombieLoad video below.</p>
+      <p>While microcodes and software-based protections were released to mitigate these older vulnerabilities, it was disclosed today that a new version of the ZombieLoad attacks can bypass current defenses and even affect processors in the Intel Cascade Lake CPU family.</p>
+      <h3>Targeting Intel Transactional Synchronization Extensions</h3>
+      <p>In a new MDS attack titled "Transaction Asynchronous Abort" (TAA) being assigned CVE-2019-11135, the same researchers who discovered the ZombieLoad attacks also found a similar weakness in the Intel Transactional Synchronization Extensions (Intel TSX).</p>
+      <p>Intel TSX is a CPU feature that aims to improve performance by adding hardware transactional memory where all of the shared memory and the data it stores used altogether, discarded, or aborted altogether. This allows read and write operations to shared data without the performance overhead of lock-based memory access.</p>
+      <p>According to an <a href="https://software.intel.com/security-software-guidance/software-guidance/intel-transactional-synchronization-extensions-intel-tsx-asynchronous-abort">advisory by Intel</a>, aborting memory transactions may permit  processes to compute the data found in other running processes; this includes the operating system kernel. In this context, sensitive data such as encryption keys, passwords, or other important information to be accessed by a malicious program or an attacker.</p>
+      <p>Intel TSX supports atomic memory transactions that are either committed or aborted. When an Intel TSX memory transaction is aborted, either synchronously or asynchronously, all earlier memory writes inside the transaction are rolled back to the state before the transaction start. While an Intel TSX asynchronous abort (TAA) is pending, certain loads inside the transaction that are not yet completed may read data from microarchitectural structures and speculatively pass that data to dependent operations. This may cause microarchitectural side effects, which can later be measured to infer the value of the data in the microarchitectural structures.</p>
+      <p>The weakness is in the abort stage, which also gives the name of the vulnerability, "Transaction Asynchronous Abort".</p>
+      <p>Intel <a href="https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-00270.html">states</a> that this bug affects a wide range of Intel CPUs, including their Cascade Lake line of processors, which are not affected by other Microarchitectural Data Sampling (MDS) vulnerabilities such as Fallout and RIDL.</p>
+      <p>A demonstration of the ZombieLoad MDS attacks can be seen in the video below.</p>
+      <figure>
+        <iframe src="https://player.vimeo.com/video/372763488" width="640" height="360" data-service="Vimeo" scrolling="no"/>
+      </figure>
+      <p>With today's November 2019 Patch Tuesday, Microsoft has <a href="https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2019-11135">released security updates</a> that mitigate these vulnerabilities in Windows Server and Windows Client OS Editions.</p>
+      <p>The list of CPUs that Intel states are vulnerable can be found in the table below.</p>
+      <p>
+        <b>Product Collection</b>
+      </p>
+      <p>
+        <b>Product Names</b>
+      </p>
+      <p>
+        <b>Vertical Segment</b>
+      </p>
+      <p>
+        <b>CPUID</b>
+      </p>
+      <p>
+        <b>Platform ID</b>
+      </p>
+      <p>10th Generation Intel® Core™ Processor Family</p>
+      <p>Intel® Core™ Processor i7-10510Y, i5-10310Y<br/>Intel® Core™ Processor i5-10210Y, i5-10110Y</p>
+      <p>Intel® Core™ Processor i7-8500Y</p>
+      <p>Intel® Core™ Processor i5-8310Y, i5-8210Y, i5-8200Y<br/>Intel® Core™ Processor m3-8100Y</p>
+      <p>Mobile</p>
+      <p>806EC</p>
+      <p>94</p>
+      <p>2<sup>nd</sup> Generation Intel® Xeon® Scalable Processors</p>
+      <p>Intel® Xeon® Platinum Processor 8253, 8256, 8260, 8260L, 8260M, 8260Y, 8268, 8270, 8276, 8276L, 8276M, 8280, 8280L, 8280M, 9220, 9221, 9222, 9242, 9282</p>
+      <p>Intel® Xeon® Gold Processor 5215, 5215L, 5215M, 5215R, 5217, 5218, 5218B, 5218N, 5218T, 5220, 5220R, 5220S, 5220T, 5222, 6222V, 6226, 6230, 6230N, 6230T, 6234, 6238, 6238L, 6238M, 6238T, 6240, 6240L, 6240M, 6240Y, 6242, 6244, 6246, 6248, 6252, 6252N, 6254, 6262V</p>
+      <p>Intel® Xeon® Silver Processor 4208, 4208R, 4209T, 4210, 4210R, 4214, 4214C, 4214R, 4214Y, 4215, 4216, 4216R</p>
+      <p>Intel® Xeon® Bronze Processor 3204, 3206R</p>
+      <p>Server</p>
+      <p>50657</p>
+      <p>BF</p>
+      <p>Intel® Xeon® W Processor Family</p>
+      <p>Intel® Xeon® Processor W-3275M, W-3275, W-3265M, W-3265, W-3245M, W-3245, W-3235, W-3225, W-3223, W-2295, W-2275, W-2265, W-2255, W-2245, W-2235, W-2225, W-2223</p>
+      <p>Workstation</p>
+      <p>50657</p>
+      <p>BF</p>
+      <p>9<sup>th</sup> Generation Intel® Core™ Processor Family</p>
+      <p>Intel® Core™ Processor i9-9980HK, 9880H<br/>Intel® Core™ Processor i7-9850H, 9750HF<br/>Intel® Core™ Processor i5-9400H, 9300H</p>
+      <p>Mobile</p>
+      <p>906ED</p>
+      <p>22</p>
+      <p>9<sup>th</sup> Generation Intel® Core™ Processor Family</p>
+      <p>Intel® Core™ Processor i9-9900K, i9-9900KF</p>
+      <p>Intel® Core™ Processor i7-9700K, i7-9700KF</p>
+      <p>Intel® Core™ Processor i5-9600K, i5-9600KF, i5-9400, i5-9400F</p>
+      <p>Desktop</p>
+      <p>906ED</p>
+      <p>22</p>
+      <p>Intel® Xeon® Processor E Family</p>
+      <p>Intel® Xeon® Processor E-2288G, E-2286M, E-2278GEL, E-2278GE, E-2278G</p>
+      <p>Workstation/ Server /  AMT Server</p>
+      <p>906ED</p>
+      <p>22</p>
+      <p>10<sup>th</sup> Generation Intel® Core™ Processor Family</p>
+      <p>Intel® Pentium® Gold Processor Series</p>
+      <p>Intel® Celeron® Processor 5000 Series</p>
+      <p>Intel® Core™ Processor i7-10510U</p>
+      <p>Intel® Core™ Processor i5-10210U</p>
+      <p>Intel® Pentium® Gold Processor 6405U</p>
+      <p>Intel® Celeron® Processor 5305U</p>
+      <p>Mobile</p>
+      <p>806EC</p>
+      <p>94</p>
+      <p>8<sup>th</sup> Generation Intel® Core™ Processors</p>
+      <p>Intel® Core™ Processor i7-8565U, i7-8665U</p>
+      <p>Intel® Core™ Processor i5-8365U, i5-8265U</p>
+      <p>Mobile</p>
+      <p>806EC</p>
+      <p>94</p>
+    </article>
+  </body>
+</html>

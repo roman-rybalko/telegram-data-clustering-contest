@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://www.bleepingcomputer.com/news/security/ublock-origin-now-blocks-sneaky-first-party-trackers-in-firefox/"/>
+    <meta property="og:site_name" content="BleepingComputer"/>
+    <meta property="article:published_time" content="2019-11-20T18:32:37+00:00"/>
+    <meta property="og:title" content="uBlock Origin Now Blocks Sneaky First-Party Trackers in Firefox"/>
+    <meta property="og:description" content="uBlock Origin on Firefox can now block first-party tracking scripts that attempt to bypass filters and rules by utilizing DNS CNAME records to load scripts from a third-party domain."/>
+  </head>
+  <body>
+    <article>
+      <h1>uBlock Origin Now Blocks Sneaky First-Party Trackers in Firefox</h1>
+      <address><time datetime="2019-11-20T18:32:37+00:00">20 Nov 2019, 18:32</time> by <a rel="author" href="https://www.bleepingcomputer.com/author/lawrence-abrams/" target="_blank">Lawrence Abrams</a></address>
+      <figure>
+        <img src="https://www.bleepstatic.com/content/hl-images/2019/11/20/ublock-origin.jpg"/>
+      </figure>
+      <p>uBlock Origin on Firefox can now block first-party tracking scripts that attempt to bypass filters and rules by utilizing DNS CNAME records to load scripts from a third-party domain.</p>
+      <p>A first-party tracker is when the tracking script is located on the same domain as the web site, while a third-party tracker is when the tracking script is located on another domain.</p>
+      <p>As browsers begin to block third-party trackers as part of their tracking protection features, some web sites have switched to first-party trackers in order to bypass these protections.</p>
+      <p>In a <a href="https://github.com/uBlockOrigin/uBlock-issues/issues/780">new issue</a> posted to the uBlock Origin ad blocker's GitHub issues page, a user posted a new issue about a web site loading tracking scripts from a subdomain of the site, which makes it look like a first-party tracker.</p>
+      <p>According to the user, though, this subdomain was actually a DNS CNAME record that resolves to a different domain that provide tracking services.</p>
+      <p>As uBlock Origin is seeing these as a first party tracking scripts being loaded from the website's domain, it does not block them and allows them to run.</p>
+      <h3>First-party tracker protection only available in Firefox</h3>
+      <p>In order to block first-party trackers that utilize CNAME records, uBlock Origin would first need to perform a DNS lookup of the hostname loading a script  to determine the underlying domain that it resolves to.</p>
+      <p>For example, if a script is being loaded from the user's domain, the ad blocker will perform a DNS lookup and check if it resolves to known tracking domains, and if so, block them.</p>
+      <p>Unfortunately, Chrome does not provide an API that allows an extension to perform DNS lookups, but uBlock Origin developer Raymond Hill <a href="https://github.com/uBlockOrigin/uBlock-issues/issues/780#issuecomment-552465524">was able to find</a> an API in Firefox that could perform this function.</p>
+      <p>"I am looking at <a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/dns/resolve">https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/dns/resolve</a>, it can be used to expose the CNAME:"</p>
+      <p>Hill later <a href="https://github.com/gorhill/uBlock/releases/tag/1.24.1b1">released uBlock Origin 1.24.1b0</a> that <a href="https://github.com/uBlockOrigin/uBlock-issues/issues/780">contains a new feature</a> that will "uncloak" CNAME records in order to block first-party tracking that utilizes scripts on third-party domains.</p>
+      <p>"If using 1.24.1b0 and above, to "uncloak" actual (canonical, CNAME) hostname, set advanced setting <code>cnameAliasList</code> to <code>*</code>.</p>
+      <p>Network requests for which the actual hostname differs from the original hostname will be replayed through uBO's filtering engine using the actual hostname. When I started developing the feature I could spot <code>eulerian.net</code> in the logger when visiting <code>https://www.liberation.fr/</code>, but I can no longer reproduce this. Regardless, uBO is now equipped to deal with 3rd-party disguised as 1st-party as far as Firefox's <code>browser.dns</code> allows it."</p>
+      <p>With this new feature added, if using uBlock Origin version 1.24.1b0 or newer, when installing the extension it will require a new DNS permission described as "Access IP address and hostname information", which will be used by the extension resolve the CNAME records.</p>
+      <figure>
+        <img src="https://www.bleepstatic.com/images/news/software/u/ublock-origin/cname-unmasking/new-dns-permission.jpg"/>
+        <figcaption>New DNS permission added</figcaption>
+      </figure>
+      <p>Users can then enable this feature by following these steps:</p>
+      <figure>
+        <img src="https://www.bleepstatic.com/images/news/software/u/ublock-origin/cname-unmasking/advanced-settings-icon.jpg"/>
+      </figure>
+      <ol>
+        <li>Go into the extension's <b>Settings</b>.</li>
+        <li>Put a checkmark in the "<b>I am an advanced user (required reading</b>)" checkbox and click on the  icon.</li>
+        <li>When the Advanced settings page opens, find the <b>cnameAliasList </b>setting and change it from '<b>unset</b>' to '<b>*</b>'.</li>
+      </ol>
+      <p>When finished making the changes, it should look like the image below.</p>
+      <figure>
+        <img src="https://www.bleepstatic.com/images/news/software/u/ublock-origin/cname-unmasking/cnamealiaslist.jpg"/>
+        <figcaption>New cnameAliasList Setting</figcaption>
+      </figure>
+      <p>With this new setting enabled, any first-party trackers that use CNAMES to third-party domains will be unmasked and blocked.</p>
+    </article>
+  </body>
+</html>

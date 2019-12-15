@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://www.bleepingcomputer.com/news/security/new-megacortex-ransomware-changes-windows-passwords-threatens-to-publish-data/"/>
+    <meta property="og:site_name" content="BleepingComputer"/>
+    <meta property="article:published_time" content="2019-11-05T20:18:36+00:00"/>
+    <meta property="og:title" content="New Megacortex Ransomware Changes Windows Passwords, Threatens to Publish Data"/>
+    <meta property="og:description" content="A new version of the MegaCortex Ransomware has been discovered that not only encrypts your files, but now changes the logged in user's password and threatens to publish the victim's files if they do not pay the ransom."/>
+  </head>
+  <body>
+    <article>
+      <h1>New Megacortex Ransomware Changes Windows Passwords, Threatens to Publish Data</h1>
+      <address><time datetime="2019-11-05T20:18:36+00:00">05 Nov 2019, 20:18</time> by <a rel="author" href="https://www.bleepingcomputer.com/author/lawrence-abrams/" target="_blank">Lawrence Abrams</a></address>
+      <figure>
+        <img src="https://www.bleepstatic.com/content/hl-images/2019/11/05/megacortex.jpg"/>
+      </figure>
+      <p>A new version of the MegaCortex Ransomware has been discovered that not only encrypts your files, but now changes the logged in user's password and threatens to publish the victim's files if they do not pay the ransom.</p>
+      <p>For those not familiar with <a href="https://www.bleepingcomputer.com/news/security/elusive-megacortex-ransomware-found-here-is-what-we-know/">MegaCortex</a>, it is a targeted ransomware installed through network access provided by trojans such as Emotet. Once the MegaCortex actors gain access, they then push the ransomware out to machines on the network via an active directory controller or post-exploitation kits.</p>
+      <h3>Significant changes in new MegaCortex version</h3>
+      <p>In a new sample of the ransomware discovered by <a href="https://twitter.com/malwrhunterteam">MalwareHunterTeam</a>, reverse engineered by <a href="https://twitter.com/VK_Intel">Vitali Kremez</a>, and further analyzed by BleepingComputer, we see a new version of MegaCortex that has substantial changes from previous variants.</p>
+      <p>The most obvious change seen by victims is the new <b>.m3g4c0rtx</b> extension being used by the ransomware as shown below.</p>
+      <figure>
+        <img src="https://www.bleepstatic.com/images/news/ransomware/m/megacortex/v4/encrypted-files.jpg"/>
+        <figcaption>MegaCortex Encrypted Files</figcaption>
+      </figure>
+      <p>In addition, MegaCortex will now configure a legal notice on the encrypted machine so that it displays a basic "Locked by MegaCortex" ransom message with email contacts before a user even logs in.</p>
+      <figure>
+        <img src="https://www.bleepstatic.com/images/news/ransomware/m/megacortex/v4/legal-notice.jpg"/>
+        <figcaption>MegaCortex Legal Notice</figcaption>
+      </figure>
+      <h3>Behind the scenes, quite a bit has changed</h3>
+      <p>When the main MegaCortex launcher is executed, it will extract two DLL files and three CMD scripts to C:\Windows\Temp. This launcher is currently signed with a Sectigo certificate for an Australia company named "MURSA PTY LTD".</p>
+      <figure>
+        <img src="https://www.bleepstatic.com/images/news/ransomware/m/megacortex/v4/temp-folder.jpg"/>
+        <figcaption>C:\Windows\Temp Folder</figcaption>
+      </figure>
+      <p>These CMD files will execute a variety of commands that removes shadow volume copies, uses the Cipher command to wipe all free space on the C:\ drive, sets the Legal Notice, and then cleans up all the files used to encrypt the computer.</p>
+      <figure>
+        <img src="https://www.bleepstatic.com/images/news/ransomware/m/megacortex/v4/cmd-0.jpg"/>
+        <figcaption>First CMD Script</figcaption>
+      </figure>
+      <p>Kremez told BleepingComputer in conversations that the two DLL files are used to encrypt the files on the computer. One DLL file is a file iterator that looks for file to encrypt and the other DLL will be used to encrypt the file.</p>
+      <p>These DLLs are not injected into any processes, but rather run via Rundll32.exe.</p>
+      <p>When done, victims will find a ransom note on the desktop titled <b>!-!_README_!-!.rtf</b> that contains some interesting comments that at first we dismissed as idle threats.</p>
+      <figure>
+        <img src="https://www.bleepstatic.com/images/news/ransomware/m/megacortex/v4/ransom-note-r.jpg"/>
+        <figcaption>MegaCortex Ransom Note</figcaption>
+      </figure>
+      <p>After further analysis, we determined that at least one of the threats is true; the ransomware does indeed change the victim's password for their Windows account.</p>
+      <h3>MegaCortex changes the victim's Windows password</h3>
+      <p>It is not uncommon for ransomware developers to make threats that are not carried out in order to scare victims into paying. </p>
+      <p>Due to this, when we saw that the ransom note stated that a victim's credentials have been changed, we dismissed it.</p>
+      <p>"All of your user credentials have been changed and your files have been encrypted."</p>
+      <p>After testing the ransomware and rebooting the encrypted computer, I discovered that I was unable to login to my account.</p>
+      <p>Further analysis of the code by Kremez confirmed that MegaCortex is indeed changing the password for the victim's Windows account.</p>
+      <p>It does this by executing the net user command when the ransomware is executed.</p>
+      <figure>
+        <img src="https://www.bleepstatic.com/images/news/ransomware/m/megacortex/v4/net-user.jpg"/>
+        <figcaption>Net user command</figcaption>
+      </figure>
+      <p>This also explains why the attackers added a legal notice that is shown at the login prompt as the user will no longer be able to log in to access their desktop.</p>
+      <h3>Threatens to publish victim's data</h3>
+      <p>In addition to the proven claims of changing user credentials, the attackers have also changed the ransom note to state that victim's data has been copied to a secure location.</p>
+      <p>They then threaten to make this data public if a victim does not pay the ransom.</p>
+      <p>"We have also downloaded your data to a secure location. In the unfortunate event of us not coming to an agreement we will have no choice but to make this data public.<br/>Once the transaction is finalized all of copies of data we have downloaded will be erased."</p>
+      <p>It is not confirmed if attackers have actually copied victims' files, but this threat should not be dismissed and victim's may want to confirm that the attackers actually have their files as stated when communicating with them.</p>
+      <p>If the MegaCortex actors are actually copying data, though, victims will now have to treat these attacks as a data breach going forward instead of just a ransomware infection.</p>
+      <p>This will ultimately add a whole new layer of complexity and risks to these types of attacks.</p>
+      <p><b>Update 11/7/19: </b>Sectigo told BleepingComputer that they have revoked the certificate used by this malware on November 5th at 4:20 PM ET.</p>
+      <h3>IOCs:</h3>
+      <h4>Hashes:</h4>
+      <pre>ca0d1e770ca8b36f6945a707be7ff1588c3df2fd47031aa471792a1480b8dd53 [Launcher] <br/>5ff14746232a1d17e44c7d095e2ec15ede4bd01f35ae72cc36c2596274327af9 [DLL] <br/>e362d6217aff55572dc79158fae0ac729f52c1fc5356af4612890b9bd84fbcde [DLL]</pre>
+      <h4>Associated files:</h4>
+      <pre>!-!_README_!-!.rtf <br/></pre>
+      <h4>Ransom note text:</h4>
+      <pre>Your company's network has been breached and infected with MegaCortex Malware.  <br/><br/>All of your user credentials have been changed and your files have been encrypted. <br/>We ensure that the only way to retrieve your data swiftly and securely is with our software.  <br/>Restoration of your data requires a private key which only we possess.  <br/><br/>To confirm that our decryption software works email to us 2 files from random computers.  <br/>You will receive further instructions after you send us the test files.  <br/><br/>After receiving payment we will provide you with the decryptor including its full source code and credentials to your computers. <br/>We have also downloaded your data to a secure location. In the unfortunate event of us not coming to an agreement we will have no choice but to make this data public. <br/>Once the transaction is finalized all of copies of data we have downloaded will be erased. <br/>We will provide any assistance if needed.  <br/><br/><br/>Contact emails: <br/>redacted@redacted.com <br/>or <br/>redacted@redacted.com</pre>
+    </article>
+  </body>
+</html>

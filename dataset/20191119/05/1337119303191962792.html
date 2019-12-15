@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://www.theverge.com/2019/11/18/20970743/roku-pokemon-sword-and-shield-crashing-boot-loop-fix"/>
+    <meta property="og:site_name" content="The Verge"/>
+    <meta property="article:published_time" content="2019-11-19T05:51:00+00:00"/>
+    <meta property="og:title" content="Roku releases fix after new Pokémon games for Nintendo Switch cause crashing issues"/>
+    <meta property="og:description" content="Update your Roku stick or Roku TV to avoid problems."/>
+  </head>
+  <body>
+    <article>
+      <h1>Roku releases fix after new Pokémon games for Nintendo Switch cause crashing issues</h1>
+      <h2>Pokémon Sword and Shield presented a strange problem for Roku</h2>
+      <address><time datetime="2019-11-19T05:51:00+00:00">19 Nov 2019, 05:51</time> by <a rel="author" href="https://www.theverge.com/authors/chris-welch" target="_blank">Chris Welch</a></address>
+      <p>Playing the latest <i>Pokémon</i> games might send your Roku hardware into a fritz. It’s been confirmed by Roku that<i> </i><a href="https://www.theverge.com/2019/11/13/20962722/pokemon-sword-shield-review-nintendo-switch-launch-date"><i>Pokémon Sword </i>and<i> Shield</i></a> are causing interference issues for some of the company’s products. The problem can be severe enough to crash Roku hardware or send Roku TVs into a boot loop. Players started noticing problems over the weekend, and <a href="https://www.cnet.com/news/pokemon-sword-and-shield-are-making-rokus-crash-nintendo-switch/"><i>CNET </i>also reported on the issue</a>. Thankfully, a fix was quickly rolled out this morning.</p>
+      <p>“We are aware of an issue when using Nintendo Switch and the latest <i>Pokémon</i> game impacting a limited number of Roku devices,” a Roku spokesperson told <i>The Verge</i> by email. “We are rolling out a software update to resolve it and impacted users can check for the update by going into Settings &gt; System &gt; Software Update.”</p>
+      <p>Affected devices include select Roku streaming sticks and Roku TVs from brands such as Insignia. A nearby Switch running the games is all that’s necessary for <a href="https://www.reddit.com/r/pokemon/comments/dxc5yg/psa_pokemon_swordshield_causes_roku_devices_on/?sort=new">some Roku owners to run into trouble</a> — even if the console isn’t in their actual home or apartment.</p>
+      <figure>
+        <iframe data-src="https://twitter.com/TylerGlaiel/status/1196145880509734912?ref_src=twsrc%5Etfw" data-embed-type="twitter-tweet" width="100%" height="0" data-service="Twitter" scrolling="no" nowide=""/>
+      </figure>
+      <p><a href="https://support.roku.com/article/115012351368">Roku has published instructions</a> for updating to the fixed firmware. If your product is currently stuck in a boot loop, the company recommends turning off your Switch (or putting it into airplane mode) and then powering your Roku on to get back up and running, after which you can install the update.</p>
+      <p>The <a href="https://www.reddit.com/r/ProgrammerHumor/comments/dy0p86/how_do_you_even_begin_to_debug_something_like_this/f7xzay7/?sort=new">leading theory</a> for why this problem arose is<i> Pokemon Sword </i>and<i> Shield’s</i> constant search for nearby Switch consoles and players. The data they send out to detect Switches is apparently very close to Roku’s own, and this familiar code is what threw a wrench into things.</p>
+      <blockquote><i>Pokémon</i> sends a network discovery packet to each device on port 26037. Roku also listen on that port for LAN based updates so that multiple devices on the same network can update each other. It was an obvious decision. Saved Roku around a quarter million dollars in CDN traffic costs. Roku is popular in the commercial space where it’s often used as a media source to control sometimes 100s of TVs on the same network. It just so happens that <i>Pokémon</i>’s network discovery packet shares the exact same bytes as Roku’s signed bytecode to reboot.<br/>The odds are astronomically low. We could have wound up with an alien planet full of Justin Timberlake clones, but the universe decided this was our colossal fluke.</blockquote>
+      <p>Sometimes there are just those really bizarre bugs that no one saw coming.</p>
+    </article>
+  </body>
+</html>

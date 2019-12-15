@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://tjournal.ru/tech/124543-neyroset-nauchili-razdelyat-vokal-i-fonovuyu-muzyku-v-pesnyah"/>
+    <meta property="og:site_name" content="TJ"/>
+    <meta property="article:published_time" content="2019-11-06T13:23:04+00:00"/>
+    <meta property="og:title" content="Нейросеть научили разделять вокал и фоновую музыку в песнях"/>
+    <meta property="og:description" content="Теперь можно самому создать партию для караоке из любой известной песни."/>
+  </head>
+  <body>
+    <article>
+      <h1>Нейросеть научили разделять вокал и фоновую музыку в песнях</h1>
+      <address><time datetime="2019-11-06T13:23:04+00:00">06 Nov 2019, 13:23</time> by <a rel="author">Дамир Камалетдинов</a></address>
+      <p>Теперь можно самому создать партию для караоке из любой известной песни.</p>
+      <p>Стриминговый сервис Deezer запустил инструмент Spleeter, который позволяет разделить музыку на составляющие. Библиотека на основе нейросетей доступна всем желающим бесплатно — её <a href="https://github.com/deezer/spleeter">опубликовали</a> на GitHub.</p>
+      <p>Одну песню можно разделить максимум на пять составляющих: вокал, бас, ударные, пианино и всё остальное. Для этого достаточно загрузить в Spleeter любой аудиофайл, в ответ он выдаст несколько файлов.</p>
+      <figure>
+        <iframe src="https://www.youtube.com/embed/KPlmrq_rAzQ" width="640" height="360" data-service="Youtube" scrolling="no"/>
+      </figure>
+      <p>Разделение звука в Spleeter на примере Дэвида Боуи</p>
+      <p>Как <a href="https://waxy.org/2019/11/fast-and-free-music-separation-with-deezers-machine-learning-library/">рассказал</a> разработчик Энди Байо, Spleeter работает на модели TensorFlow, которую обучили на «десятках тысяч песен». По словам Байо, пока сервис работает неидеально: на дорожках остаются некоторые артефакты, а вокал иногда становится похож на робоголос, но это всё равно лучше других решений.</p>
+      <p>Для использования Spleeter понадобятся некоторые технические навыки. Пользователям, которые никогда не использовали Python и инструмент TensorFlow, придётся загрузить несколько программ, чтобы всё заработало. Кроме того, взаимодействовать с Spleeter нужно через командную строку — у библиотеки пока нет графического интерфейса.</p>
+      <p>В Deezer пояснили, что это не первый раз, когда люди используют машинное обучения для автоматизации подобных задач, а разработка компании основана на огромном количестве предыдущих исследований. В разговоре с The Verge представители сервиса <a href="https://www.theverge.com/2019/11/5/20949338/vocal-isolation-ai-machine-learning-deezer-spleeter-automated-open-source-tensorflow">отметили</a>, что натренировали систему на 20 тысячах композиций разных жанров с заранее изолированным вокалом.</p>
+      <p>Компания не собирается превращать Spleeter в потребительский инструмент. Однако так как библиотеку выпустили с открытым исходным кодом — сторонние разработчики могут её доработать.</p>
+      <p>Spleeter разработали в первую очередь для использования внутри Deezer. С помощью инструмента сервис решает сложные задачи вроде распределения композиций по категориям, транскрибирования и распознавания языка.</p>
+      <figure>
+        <iframe src="https://www.youtube.com/embed/nxJfIsus0Ig" width="640" height="360" data-service="Youtube" scrolling="no"/>
+      </figure>
+      <p>Другие примеры использования Spleeter можно посмотреть в блогах TJ.</p>
+      <related>
+        <a href="https://tjournal.ru/u/68856-denis-shiryaev/124536-neyronnaya-set-kotoraya-delit-pesnyu-na-vokal-i-akkompanement?ref=tjournal.ru"/>
+      </related>
+    </article>
+  </body>
+</html>

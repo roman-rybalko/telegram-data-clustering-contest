@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://www.androidpolice.com/2019/11/04/pixel-4-90fps-only-above-75-brightness-workaround/"/>
+    <meta property="og:site_name" content="Android Police"/>
+    <meta property="article:published_time" content="2019-11-04T19:50:55+00:00"/>
+    <meta property="og:title" content="Pixel 4 Smooth Display 90Hz feature now works at more brightness levels (Updated)"/>
+    <meta property="og:description" content="The Pixel 4 and 4 XL have already been in the hands of reviewers and customers for a while now. With the first real-word reports coming up, we were"/>
+  </head>
+  <body>
+    <article>
+      <h1>Pixel 4 Smooth Display 90Hz feature now works at more brightness levels (Updated)</h1>
+      <address><time datetime="2019-11-04T19:50:55+00:00">04 Nov 2019, 19:50</time> by <a rel="author" href="https://www.androidpolice.com/author/manuel-vonau/" target="_blank">Manuel Vonau</a></address>
+      <p>
+        <a href="https://www.androidpolice.com/2019/11/04/pixel-4-90fps-only-above-75-brightness-workaround/#1">Update 1: 2019/10/23 5:27pm PDT<br/>Google says a fix is coming<br/></a>
+        <a href="https://www.androidpolice.com/2019/11/04/pixel-4-90fps-only-above-75-brightness-workaround/#2"> Update 2: 2019/10/24 10:33pm PDT<br/>An Android commit explains the limitation<br/></a>
+        <a href="https://www.androidpolice.com/2019/11/04/pixel-4-90fps-only-above-75-brightness-workaround/#3"> Update 3: 2019/11/04 11:51am PST<br/>Smooth Display works at more brightness levels in latest update<br/></a>
+        <a href="https://www.androidpolice.com/2019/11/04/pixel-4-90fps-only-above-75-brightness-workaround/#4"> Update 4: 2019/11/04 3:29pm PST<br/>Pixel 4 and 4 XL behave differently</a>
+      </p>
+      <p>The Pixel 4 and 4 XL have already been in the hands of reviewers and customers for a while now. With the first real-word reports coming up, we were stunned to see huge discrepancies between battery usage statistics and ominous <a href="https://www.youtube.com/watch?v=mfbSqTB74xM">60Hz screen refresh rate lock-ins</a> for some people who seemingly couldn't get the 90Hz <a href="https://www.androidpolice.com/2019/10/15/pixel-4-announcement/">Smooth Display mode</a> working. A recent finding shines light into the issue: The display only switches to 90Hz with a screen brightness set above 75%.</p>
+      <p>A <a href="https://www.reddit.com/r/GooglePixel/comments/dlt375/does_it_look_like_smooth_display_is_turning_off/">Reddit user noticed</a> his Pixel 4 turned off Smooth Display at this arbitrary threshold when they monitored logs via ADB. Our own Artem Russakovskii and <a href="https://twitter.com/MishaalRahman/status/1186850803258200065">XDA Developer's Mishaal Rahman</a> could confirm this with their phones.</p>
+      <figure>
+        <iframe data-src="https://twitter.com/MishaalRahman/status/1186850803258200065?ref_src=twsrc%5Etfw" data-embed-type="twitter-tweet" width="100%" height="0" data-service="Twitter" scrolling="no" nowide=""/>
+      </figure>
+      <p>Luckily, there are workarounds. The simplest method is heading to <i>Settings &gt; System &gt; Developer options</i> and looking for a "force 90Hz" option that does just what its name implies. (If you haven't activated Developer options already, you first need to go to <i>About phone </i>and tap the build number five times.) You can also use Mishaal Rahman's <a href="https://taskernet.com/shares/?user=AS35m8kqHfc2QatEJk%2BqYTVVIBuiS1l%2BhCIZlNI5vIQ7E5PxFZMAB3LxyEzqDIBYxD2UAqq%2F&amp;id=Task%3AForce+90Hz">Tasker recipe</a>. It adds a Quick Settings tile to your notification shade that lets you quickly turn on and off the "force 90Hz" option without heading to Settings each time. It's also possible to change the 75% threshold to any other <a href="https://twitter.com/MishaalRahman/status/1186860070165979137">when you have root access</a>. Remember that sticking with 90Hz for extended periods of time might reduce the already abmysal battery life, though.</p>
+      <slideshow>
+        <figure>
+          <img src="https://www.androidpolice.com/wp-content/uploads/2019/10/pixel-4-90-fps-brightness-1.png"/>
+        </figure>
+        <figure>
+          <img src="https://www.androidpolice.com/wp-content/uploads/2019/10/pixel-4-90-fps-brightness-2.png"/>
+        </figure>
+      </slideshow>
+      <p>
+        <i><b>Left:</b> Display refresh rate above 75% brightness according to <a href="http://testufo.com/">testufo.com</a>. <b>Right:</b> Refresh rate below 75% brightness.</i>
+      </p>
+      <p>It's unclear why Google decided to add this complication to its ability to display 90Hz content. It might be a battery saving option, as you're not <a href="https://en.wikipedia.org/wiki/Flicker_fusion_threshold">as likely to notice the difference between 90Hz and 60Hz on lower brightness levels</a>. This theory is supported by the fact that the Pixel 4 does switch to 90Hz below the 75% display brightness threshold <a href="https://twitter.com/jspring86az/status/1186861404990558208">when it senses bright ambient light</a>, which is when it's more likely that you'll notice the difference, too.</p>
+      <p>Still, positioning the cutoff at 75% seems harsh in this context, as phone displays often don't get that bright indoors. At least we can pinpoint the problem now and there are options to mitigate it, but it still seems like an arbitrary limitation.</p>
+      <anchor name="1">
+        <p>
+          <a href="https://www.androidpolice.com/2019/11/04/pixel-4-90fps-only-above-75-brightness-workaround/#1">Update 1: 2019/10/23 5:27pm PDT by Ryne Hager</a>
+        </p>
+        <p>
+          <b>Google says a fix is coming</b>
+        </p>
+        <p>Google has informed The Verge that an update will be landing "In the coming weeks" that will fix this issue, at least in "more brightness conditions." It isn't immediately clear if that means we'll see 90Hz at all brightness levels, or if there will be some new but lower brightness boundary for the transition, but an update is coming in some form that addresses this problem.</p>
+        <p>The full statement provided by Google is just below:</p>
+        <blockquote>We designed Smooth Display so that users could enjoy the benefits of 90Hz for improved UI interactions and content consumption, while also preserving battery when higher refresh rates are not critical by lowering back down to 60Hz.<br/><br/><br/>In some conditions or situations, however, we set the refresh rate to 60Hz. Some of these situations include: when the user turns on battery saver, certain content such as video (as it’s largely shot at 24 or 30fps), and even various brightness or ambient conditions. We constantly assess whether these parameters lead to the best overall user experience. We have previously planned updates that we’ll roll out in the coming weeks that include enabling 90hz in more brightness conditions.</blockquote>
+        <p>End of Update</p>
+        <anchor name="2">
+          <p>
+            <a href="https://www.androidpolice.com/2019/11/04/pixel-4-90fps-only-above-75-brightness-workaround/#2">Update 2: 2019/10/24 10:33pm PDT by Rita El Khoury</a>
+          </p>
+          <p>
+            <b>An Android commit explains the limitation</b>
+          </p>
+          <p><a href="https://www.xda-developers.com/google-pixel-4-why-90hz-limited-brightness/">XDA Developers</a> found <a href="https://android.googlesource.com/platform/frameworks/base/+/bc841b029311400ef2602bafe9b3776310d5e8a7%5E%21/#F0">an Android commit</a> that sheds a light onto the situation. The latter explains that the Pixel 4's display, like most displays, has "different gamma curves for different refresh rates" and it's difficult to guarantee the same brightness at different refresh rates. That means the default mode Google uses, where it dynamically switches between 60Hz and 90Hz depending on your screen's content and interactions, would result in flickers each time it hopped between one and the other. (If you force 90Hz on all the time, it wouldn't happen.)</p>
+          <p>The flicker would be much more noticeable if the screen brightness is low, and even more so if you're in a dark environment, as that's where your eyes are most sensitive to brightness changes. That's why the 90Hz refresh rate is only supported when the display brightness is above a certain threshold, and that limit is even higher in a darker setting.</p>
+          <p>It's a logical reason and we wonder why Google didn't give it from the get-go, instead of skating by it. Most users would much rather have a smooth experience than see a flicker on their screen each time they touched it while watching a video.</p>
+          <p>End of Update</p>
+          <anchor name="3">
+            <p>
+              <a href="https://www.androidpolice.com/2019/11/04/pixel-4-90fps-only-above-75-brightness-workaround/#3">Update 3: 2019/11/04 11:51am PST by Ryne Hager</a>
+            </p>
+            <p>
+              <b>Smooth Display works at more brightness levels in latest update</b>
+            </p>
+            <p>As of the <a href="https://www.androidpolice.com/2019/11/04/googles-november-patches-out-first-update-for-pixel-4-2016-pixels-left-behind/">November 2019</a> update, this behavior has been changed, as Google promised. The Pixel 4 now appears to switch between 60/90Hz at around 45% brightness in our testing.</p>
+            <slideshow>
+              <figure>
+                <img src="https://www.androidpolice.com/wp-content/uploads/2019/10/Screenshot_20191104-143156.png"/>
+              </figure>
+              <figure>
+                <img src="https://www.androidpolice.com/wp-content/uploads/2019/10/Screenshot_20191104-143209.png"/>
+              </figure>
+            </slideshow>
+            <p>
+              <i>The line is somewhere between these two settings. </i>
+            </p>
+            <p>There could be other factors that might tweak that behavior in some circumstances, but the hard line between the two modes has been adjusted down substantially, expanding the circumstances in which you'll see a 90Hz refresh rate. Note that even so, this is a different approach on the smaller Pixel 4 than other OEMs like OnePlus provide, where you get 90Hz at all brightness levels.</p>
+            <p>End of Update</p>
+            <anchor name="4">
+              <p>
+                <a href="https://www.androidpolice.com/2019/11/04/pixel-4-90fps-only-above-75-brightness-workaround/#4">Update 4: 2019/11/04 3:29pm PST by Ryne Hager</a>
+              </p>
+              <p>
+                <b>Pixel 4 and 4 XL behave differently</b>
+              </p>
+              <p>Turns out, the smaller Pixel 4 doesn't behave the same as the larger Pixel 4 XL. In details dug up by XDA Developer's <a href="https://twitter.com/MishaalRahman/status/1191444117345185794?s=20">Mishaal Rahman</a>, although the smaller model switches from 90 to 60Hz at precisely <a href="https://android.googlesource.com/device/google/coral/+/2308b0f1dde9839219be15fabdf58ccac625e274%5E%21/#F0">42%</a>, the larger Pixel 4 XL is able to run at a <a href="https://android.googlesource.com/device/google/coral/+/edcc366866472db9294f0dafc683a2648090ab20%5E%21/#F0">constant 90Hz</a> down to minimum brightness.</p>
+              <p>Like the <a href="https://www.androidpolice.com/2018/10/17/ifixits-pixel-3-xl-teardown-reveals-samsung-made-screen/">last</a> <a href="https://www.androidpolice.com/2017/10/23/google-acknowledges-pixel-2-xl-display-issue-actively-investigating/">two years</a>,  it would appear that the screens in the two phones aren't made equal: Google gave the Pixel 4 XL a better display.</p>
+              <p>End of Update</p>
+              <p><b>Source: <br/></b><a href="https://www.reddit.com/r/GooglePixel/comments/dlt375/does_it_look_like_smooth_display_is_turning_off/">Reddit</a>, <br/><a href="https://twitter.com/MishaalRahman/status/1186850803258200065">@MishaalRahman</a></p>
+            </anchor>
+          </anchor>
+        </anchor>
+      </anchor>
+    </article>
+  </body>
+</html>

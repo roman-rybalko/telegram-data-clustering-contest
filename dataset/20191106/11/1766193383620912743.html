@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://www.heise.de/developer/meldung/In-Memory-Data-Grid-Hazelcast-4-erweitert-das-CP-Subsystem-4579157.html"/>
+    <meta property="og:site_name" content="Developer"/>
+    <meta property="article:published_time" content="2019-11-06T11:22:00+00:00"/>
+    <meta property="og:title" content="In-Memory Data Grid: Hazelcast 4 erweitert das CP-Subsystem"/>
+    <meta property="og:description" content="Das auf Datenkorrektheit ausgelegte CP-Subsystem lässt sich in der nun als Beta vorliegenden neuen Version des IMDG offenbar flexibler nutzen."/>
+  </head>
+  <body>
+    <article>
+      <h1>In-Memory Data Grid: Hazelcast 4 erweitert das CP-Subsystem</h1>
+      <h2>Das auf Datenkorrektheit ausgelegte CP-Subsystem lässt sich in der nun als Beta vorliegenden neuen Version des IMDG offenbar flexibler nutzen.</h2>
+      <address><time datetime="2019-11-06T11:22:00+00:00">06 Nov 2019, 11:22</time> by <a rel="author">Matthias Parbel</a></address>
+      <p>Sechs Jahre nach dem letzten Major-Release legt der Anbieter des gleichnamigen In-Memory Data Grid (IMDG) die vierte Vollversion vor: Die Beta von Hazelcast 4.0 ist ab sofort mit zahlreichen Überarbeitungen und neuen Funktionen verfügbar.</p>
+      <p>Neben wohl höherer Performance und besserer Zuverlässigkeit versprechen die Macher hinter dem IMDG eine flexiblere Nutzung des auf Datenkorrektheit ausgelegten CP-Subsystems (Consistency und Partition Tolerance).</p>
+      <h3>Mehr Performance in der Kommunikation</h3>
+      <p>Dank des überarbeiteten Inter-Client-Protokolls sollen Anwender durch die Vermeidung überflüssiger Sprünge im Netzwerk von einer bis zu 30 Prozent höheren Schreibgeschwindigkeit profitieren. Auch die Performance bei der Client-Server- und der TLS-Kommunikation (Transport Layer Security) will Hazelcast deutlich verbessert haben – bis auf das Doppelte. Anwender der Enterprise-Edition des IMDG erhalten darüber hinaus die Option, Intels SSD-Speicher Optane DC Persistent Memory als Alternative zu RAM zu nutzen, um HPC- und Echtzeit-Anwendungen zu beschleunigen.</p>
+      <h3>Konsistenz- und Ausfallgarantien</h3>
+      <p>Um grundsätzlich höhere Datenkorrektheit gewährleisten zu können, hatte Hazelcast das IMDG im Jahresverlauf um ein CP-Subsystem erweitert, das sich an den Consistency- und Partition-Tolerance-Garantien des CAP-Theorem für verteilte Systeme orientiert. Voraussetzung für eine sinnvolle Nutzung des Subsystems war bisher jedoch der Einsatz von mindestens drei Nodes. Diese Anforderung erschwert allerdings das Testen und Entwickeln neuer Anwendungen. Daher bietet Nutzern mit der Hazelcast-4.0-Beta, die in bestimmten Fällen auf die erweiterten Sicherheitsgarantien verzichten können, die Option eines sogenannten CP Subsystem Unsafe Mode. Dieser Modus erlaubt auch bei nur ein oder zwei Nodes den Zugriff auf CP-Datenstrukturen und ersetzt die in Hazelcast 3.12 als "deprecated" gekennzeichneten Datenstrukturen ILock, IdGenerator, IAtomicLong, IAtomicReference, ICountDownLatch und ISemaphore.</p>
+      <p>Für mehr Zuverlässigkeit und verbesserte Wiederherstellung nach Cluster- oder Member-Crash-Szenarien bietet die neue Funktion CP Subsystem Persistence Anwendern die Möglichkeit, lokale Zustände auf stabilem, persistentem Speicher abzulegen. Diese Option ist allerdings auf die Enterprise-Edition des IMDG beschränkt.</p>
+      <p>Einen detaillierten Überblick aller weiteren Verbesserungen sowie der wichtigsten Neuerungen in Hazelcast IMDG 4.0 Beta <a href="https://hazelcast.com/blog/hazelcast-imdg-4-0-beta/">bietet der Blogbeitrag zur Ankündigung</a>, eine komplette Liste aller Änderungen <a href="https://github.com/hazelcast/hazelcast/wiki/4.0">findet sich außerdem im Wiki auf der GitHub-Projektseite</a>. Neben der frei verfügbaren Open-Source-Version steht Hazelcast in einer Enterprise Edition bereit, die einen erweiterten Funktionsumfang für den Einsatz in geschäftskritischen Umgebungen bietet. (<a href="mailto:map@heise.de">map</a>)</p>
+    </article>
+  </body>
+</html>

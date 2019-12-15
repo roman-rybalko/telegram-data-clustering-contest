@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://androidcommunity.com/pixel-4-has-hidden-high-brightness-mode-needs-root-access-20191107/"/>
+    <meta property="og:site_name" content="Android Community"/>
+    <meta property="article:published_time" content="2019-11-07T21:30:14+00:00"/>
+    <meta property="og:title" content="Pixel 4 has Hidden High Brightness Mode, needs root access"/>
+    <meta property="og:description" content="The Pixel 4 has been highly anticipated the past few months leading up to the series’ official launch last month. As early as February, we were told the phone would have improved functions an…"/>
+  </head>
+  <body>
+    <article>
+      <h1>Pixel 4 has Hidden High Brightness Mode, needs root access</h1>
+      <address><time datetime="2019-11-07T21:30:14+00:00">07 Nov 2019, 21:30</time> by <a rel="author">Rei Padla</a></address>
+      <p>The Pixel 4 has been highly anticipated the past few months leading up to the series’ official launch last month. As early as February, we were told the phone would have improved functions and features, especially with Android Q. Soon, more rumors and speculations surfaced with Google even joining the fun by sending out its own teaser of the smartphone. The latest Pixel devices were made official mid-October. We then learned more about the new features that are also coming to other Pixel models.</p>
+      <p>Unfortunately, but like the old Pixels, the Pixel 4 isn’t without any issue. We have reported a few including original quality uploads to <a href="https://androidcommunity.com/original-quality-uploads-to-google-photos-from-pixel-may-be-over-20191016/">Google Photos from Pixel may be over</a>, phones <a href="https://androidcommunity.com/pixel-4-series-phones-not-rolling-out-in-india-20191017/">not rolling out in India</a>, and the Face Unlock working <a href="https://androidcommunity.com/pixel-4-face-unlock-works-even-when-eyes-are-closed-unintended-20191018/">even when eyes are closed or unintended</a>. It was also discovered Pixel 4 doesn’t have 5G because technology isn’t fully ready yet.</p>
+      <p>The Pixel 4 was also discovered to be <a href="https://androidcommunity.com/pixel-4-switches-between-60hz90hz-depending-on-screen-brightness-20191023/">switching between 60Hz and 90Hz</a> depending on screen brightness. After a few days, the phone was <a href="https://androidcommunity.com/pixel-4-showing-some-signs-of-system-app-lags-after-a-few-days-20191028/">showing some signs of system and app lags</a>. The recent <a href="https://androidcommunity.com/pixel-4-xl-durability-test-see-if-its-worth-the-price-tag-20191106/">Durability Test</a> doesn’t help either because the results were unfavorable.</p>
+      <p>Google’s Pixel 4 also shows what is described by others as an awful Screen Brightness. There is a fix for that: <i>Hidden High Brightness Mode</i>. The phone has a maximum brightness level but it’s not all good–reaching only ~450 nits of maximum luminance. That is low compared to other flagship phones and it’s already at 100% screen brightness.</p>
+      <p>The High Brightness Mode is available but it’s hidden. You need root access to enable the setting. Once this is enabled, max luminance can reach ~610 nits. That will make the display already readable when outdoors.</p>
+      <p>It’s easy to enable, just root the Pixel 4 or Pixel 4 XL and enter the shell commands below:</p>
+      <p>
+        <i>su<br/>echo on &gt;&gt; /sys/class/backlight/panel0-backlight/hbm_mode</i>
+      </p>
+      <p>Make sure you reset Adaptive Brightness right after doing the steps. Head on to <i>Settings &gt; Apps &amp; notifications &gt; All apps &gt; Device Health Services &gt; Storage &amp; cache &gt; Clear storage</i>.</p>
+      <related>
+        <h4>Story Timeline</h4>
+        <a href="https://androidcommunity.com/pixel-4-switches-between-60hz90hz-depending-on-screen-brightness-20191023/"/>
+        <a href="https://androidcommunity.com/pixel-4-showing-some-signs-of-system-app-lags-after-a-few-days-20191028/"/>
+        <a href="https://androidcommunity.com/pixel-4-xl-durability-test-see-if-its-worth-the-price-tag-20191106/"/>
+      </related>
+    </article>
+  </body>
+</html>

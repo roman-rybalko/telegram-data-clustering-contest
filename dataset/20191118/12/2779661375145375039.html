@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://www.macg.co/mac/2019/11/passage-macos-catalina-sans-encombre-pour-mon-hackintosh-109807"/>
+    <meta property="og:site_name" content="MacGeneration"/>
+    <meta property="article:published_time" content="2019-11-18T12:00:00+00:00"/>
+    <meta property="og:title" content="Passage à macOS Catalina sans encombre pour mon Hackintosh"/>
+    <meta property="og:description" content="Cet article fait suite à une série sur le hackintosh que j’ai monté il y a deux ans et demi et qui me sert de Mac principal depuis. Si vous voulez en savoir plus, vous retrouverez tous les articles"/>
+  </head>
+  <body>
+    <article>
+      <h1>Passage à macOS Catalina sans encombre pour mon Hackintosh</h1>
+      <address><time datetime="2019-11-18T12:00:00+00:00">18 Nov 2019, 12:00</time> by <a rel="author">Nicolas Furno</a></address>
+      <blockquote>Cet article fait suite à une série sur le hackintosh que j’ai monté il y a deux ans et demi et qui me sert de Mac principal depuis. Si vous voulez en savoir plus, vous retrouverez tous les articles précédents <a href="http://www.macg.co/tags/nicolas-monte-un-hackintosh">à cette adresse</a>.</blockquote>
+      <p>Je n’avais pas donné de nouvelle de mon hackintosh depuis près d’un an, quand j’avais fait le <a href="https://www.macg.co/mac/2018/11/hackintosh-passer-une-carte-graphique-amd-simplifie-ma-vie-104389">bilan de l’installation d’une carte graphique AMD</a> à la place de <a href="https://www.macg.co/mac/2016/07/monter-un-hackintosh-choix-des-composants-95027">celle de Nvidia installée initialement</a>. Ce n’est pas parce que je n’utilise plus l’ordinateur, c’est tout le contraire en fait. Ce Mac monté à l’été 2016 est toujours mon ordinateur principal depuis plus de trois ans et je n’ai pas grand-chose à dire de plus, tant son utilisation est tranquille et sans histoire.</p>
+      <p>J’ai pu le confirmer à nouveau hier, en passant sans problème à macOS Catalina. Les mises à jour majeures sont toujours une source de problèmes potentiels pour l’utilisateur de hackintosh, car Apple pourrait apporter des changements sous-jacents si importants que l’installation de la nouvelle version pourrait être compromise. Avec cette version, on savait depuis les premières bêtas que <a href="https://www.macg.co/macos/2019/06/macos-catalina-ne-fait-pas-peur-au-hackintosh-106428">ce ne serait pas le cas</a> et en effet, la mise à jour se fait très bien à condition de respecter les règles de base.</p>
+      <figure>
+        <img src="https://cdn.mgig.fr/2019/11/mg-39862b01-0dc0-435c-9c47-w1000h731-sc.jpg"/>
+        <figcaption>Le hackintosh sur macOS Catalina (et sur un bureau beaucoup plus propre qu’à la normale).</figcaption>
+      </figure>
+      <p>L’essentiel est de mettre à jour tout ce qui permet à macOS de tourner sur un matériel qui n’a pas été conçu par Apple, à savoir Clover et les extensions kernel associées. Clover est une brique indispensable, un logiciel qui s’active dès le lancement de l’ordinateur et qui simule un Mac. J’ai mis à jour ce programme avec la <a href="https://sourceforge.net/projects/cloverefiboot/">dernière version disponible</a>, ce qui se fait très simplement, en quelques clics seulement. Les versions récentes changent la structure des dossiers, mais la mise à jour se chargera normalement d’appliquer les changements pour vous.</p>
+      <p>Autre étape indispensable, mettre à jour les extensions du noyau, <i>kernel extensions</i> en anglais, ou encore <i>kext</i> pour aller plus vite. Si vous avez installé votre hackintosh en utilisant Clover et non un outil tout-en-un comme Multibeast<anchor name="fnref:1"><a href="https://www.macg.co/mac/2019/11/passage-macos-catalina-sans-encombre-pour-mon-hackintosh-109807#fn:1"><sup>1</sup></a></anchor>, vous avez sûrement placé ces fichiers dans la partition EFI, puis le dossier <code>EFI/CLOVER/kexts/Other/</code>. Je vous conseille de toujours utiliser le dossier « Other », il fonctionnera ainsi avec n’importe quelle version de macOS.</p>
+      <figure>
+        <img src="https://cdn.mgig.fr/2019/11/mg-734fe391-49db-430f-93ae-w1000h426-sc.jpg"/>
+        <figcaption>Les extensions du noyau mises à jour dans la partition EFI (gauche), les fichiers de mises à jour à droite.</figcaption>
+      </figure>
+      <p>La mise à jour des <i>kexts</i> est très simple : ouvrez le dossier, copiez le nom de chaque élément et collez-le dans votre moteur de recherche préféré pour retrouver la source et télécharger la dernière version. Dans mon cas, à l’exception de FakeSMC qui n’a pas été mis à jour depuis des années, et d’une extension que j’avais créée moi-même pour prendre en charge les ports USB de la carte-mère<anchor name="fnref:2"><a href="https://www.macg.co/mac/2019/11/passage-macos-catalina-sans-encombre-pour-mon-hackintosh-109807#fn:2"><sup>2</sup></a></anchor>, j’avais une nouvelle version à installer pour toutes mes extensions. Les autres fichiers ont été mis à jour à partir des projets sur GitHub, ou éventuellement d’<a href="https://www.insanelymac.com/">InsanelyMac</a> ou de <a href="https://www.tonymacx86.com/">tonymacx86</a>, les deux gros forums du hackintosh qui hébergent certains éléments.</p>
+      <p>En général, j’ai uniquement téléchargé la dernière version et remplacé le fichier que j’avais auparavant. La seule exception concerne l’extension BrcmPatchRAM qui me sert à configurer la carte Wi-Fi et Bluetooth installée dans la tour. Elle a été modifiée de manière plus significative que les autres pour continuer à fonctionner avec macOS Catalina et il m’a fallu ajouter deux autres fichiers dans le dossier des extensions. Pour savoir ce qui était nécessaire, j’ai simplement suivi les <a href="https://github.com/acidanthera/BrcmPatchRAM/blob/master/README.md">instructions données ici</a>.</p>
+      <p>Avant de procéder à l’installation de Catalina, j’ai redémarré le hackintosh pour vérifier que je n’avais rien cassé. Entre la mise à jour de Clover et celle des extensions du noyau, il y avait la possibilité de configurer quelque chose de travers, ce qui aurait bloqué le bon fonctionnement de macOS. Après le redémarrage, j’ai lancé l’installation de macOS 10.15.1 comme sur un vrai Mac, en passant par les Préférences Système, puis l’installateur de macOS.</p>
+      <figure>
+        <img src="https://cdn.mgig.fr/2019/11/mg-2b84d80d-4acf-4631-9bac-w1000h629-sc.jpg"/>
+        <figcaption>Installation en cours de macOS Catalina sur Mojave, avant le redémarrage.</figcaption>
+      </figure>
+      <p>L’installation elle-même s’est déroulée normalement, sauf que j’avais oublié que Catalina pouvait prendre beaucoup de temps à l’étape « Estimation du temps restant ». Après une bonne demi-heure et constatant que le curseur ne progressait pas, j’ai forcé le redémarrage et activé le mode « <i>verbose</i> » de Clover, pour vérifier s’il n’y avait pas une erreur. Il fallait en fait juste faire preuve de patience et après une bonne heure de travail, macOS Catalina était installé !</p>
+      <p>La nouvelle version du système tourne depuis hier et je n’ai aucun problème notable à signaler. Toutes les fonctions sont bien prises en charge, y compris Sidecar qui transforme un iPad en écran externe. Le Wi-Fi et le Bluetooth, indispensables aux fonctions de Continuité, sont correctement pris en charge, je peux accéder aux réglages protégés des Préférences Système <a href="https://www.macg.co/macos/2019/06/avec-macos-catalina-et-watchos-6-lapple-watch-devient-le-sesame-du-mac-106557">avec ma montre</a>… bref, tout fonctionne ! Et contrairement aux premières bêtas estivales, macOS 10.15.1 n’est pas trop pénible, je n’ai quasiment eu qu’à autoriser à nouveau toutes les apps à afficher des notifications.</p>
+      <figure>
+        <img src="https://cdn.mgig.fr/2019/11/mg-98372ba9-c540-4de5-a9e6-w1000h674-sc.jpg"/>
+        <figcaption>Hackintosh ou pas, macOS Catalina va demander votre permission pour faire certaines choses, notamment afficher les notifications des apps.</figcaption>
+      </figure>
+      <p>Monter un hackintosh reste un exercice nettement plus difficile que d’acheter un nouveau Mac, il faut en avoir conscience. Au-delà de la partie matérielle, la configuration initiale peut effrayer et la moindre erreur peut bloquer tout le processus. Mais si vous arrivez à passer ce cap, c’est une solution viable au quotidien <i>à condition de choisir les bons composants</i>.</p>
+      <p>J’insiste sur ce point, c’est un choix minutieux des composants qui me permet aujourd’hui d’avoir un hackintosh qui ne pose aucun problème, ni au quotidien, ni lors de l’installation d’une mise à jour majeure. Les cartes graphiques Nvidia ont leurs avantages, mais elles ne sont pas prises en charge officiellement et posent de multiples problèmes, contrairement aux cartes AMD. Certaines cartes-mères sont beaucoup plus simples à utiliser que d’autres et c’est un choix déterminant pour la stabilité du système. Mieux vaut s’en tenir aussi à un processeur Intel de la même famille que ceux utilisés par Apple. Et soignez le choix des composants sans-fil, se passer totalement de Continuité est un sacrifice difficile à faire dans l’écosystème Apple.</p>
+      <p>Avec la bonne sélection côté matériel et un minimum de soin apporté à la configuration côté logiciel, travailler au quotidien avec un hackintosh est possible et c’est exactement ce que je fais depuis plus de trois ans. Avec tout de même deux astérisques. D’une part, je sais que je peux prendre une demi-journée sur mon temps de travail en cas de problème, et j’ai toujours un MacBook Pro de secours à portée de mains en cas d’incident majeur. Travailler avec un hackintosh et aucun plan B n’est peut-être pas la meilleure idée qui soit.</p>
+      <p>Et puis Apple pourrait bloquer irrémédiablement les hackintosh si elle le souhaitait, ou plutôt si elle s’éloignait des composants de PC standards que l’on utilise pour monter ces machines. Cela n’a jamais été le cas depuis le passage aux processeurs Intel en 2006, mais peut-être qu’un passage à ARM lui donnerait cette opportunité ? Quand bien même, on aura sans doute une solution pour quelques années de plus, mais c’est un risque à prendre, léger à mon avis, mais que l’on ne peut pas complètement oublier pour autant.</p>
+      <hr/>
+      <ol>
+        <li>
+          <anchor name="fn:1">
+            <p>Cet outil est plus simple pour débuter et c’est d’ailleurs celui que j’avais utilisé <a href="https://www.macg.co/mac/2016/09/comment-installer-os-x-sur-un-hackintosh-95551">il y a trois ans</a>. Tout configurer avec Clover demande toutefois à peine plus de temps et c’est une garantie d’éviter les problèmes à l’avenir. Je recommande désormais cette méthode, détaillée dans <a href="https://www.macg.co/mac/2017/03/nuckintosh-un-hackintosh-defaut-dun-nouveau-mac-mini-97616">cet autre article</a>. <a href="https://www.macg.co/mac/2019/11/passage-macos-catalina-sans-encombre-pour-mon-hackintosh-109807#fnref:1"> ↩</a></p>
+          </anchor>
+        </li>
+        <li>
+          <anchor name="fn:2">
+            <p>Cette étape <a href="https://www.macg.co/mac/2016/09/comment-installer-os-x-sur-un-hackintosh-95551#usb">détaillée ici</a> peut être évitée en installant le <i>kext</i> <a href="https://github.com/RehabMan/OS-X-USB-Inject-All">OS-X-USB-Inject-All</a>. C’est plus « propre » de configurer les ports USB à la main, mais ça ne change rien à l’usage et c’est plus compliqué, alors honnêtement… <a href="https://www.macg.co/mac/2019/11/passage-macos-catalina-sans-encombre-pour-mon-hackintosh-109807#fnref:2"> ↩</a></p>
+          </anchor>
+        </li>
+      </ol>
+    </article>
+  </body>
+</html>

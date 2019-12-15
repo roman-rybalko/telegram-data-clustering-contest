@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://www.heise.de/newsticker/meldung/Nvidia-sieht-sich-bei-KI-Chips-in-Fuehrung-und-bringt-Roboter-Rechenmodul-4578623.html"/>
+    <meta property="og:site_name" content="c't Magazin"/>
+    <meta property="article:published_time" content="2019-11-06T19:00:00+00:00"/>
+    <meta property="og:title" content="Nvidia sieht sich bei KI-Chips in Führung und bringt Roboter-Rechenmodul"/>
+    <meta property="og:description" content="Trotz vieler KI-Chip-Startups liegen Nvidia-Chips in &quot;MLPerf&quot;-Benchmarks vorne; der Jetson Xavier NX mit 15 Watt ist für Roboter mit KI gedacht."/>
+  </head>
+  <body>
+    <article>
+      <h1>Nvidia sieht sich bei KI-Chips in Führung und bringt Roboter-Rechenmodul</h1>
+      <h2>Trotz vieler KI-Chip-Startups liegen Nvidia-Chips in "MLPerf"-Benchmarks vorne; der Jetson Xavier NX mit 15 Watt ist für Roboter mit KI gedacht.</h2>
+      <address><time datetime="2019-11-06T19:00:00+00:00">06 Nov 2019, 19:00</time> by <a rel="author">Christof Windeck</a></address>
+      <p>Nvidia hat am Mittwoch erste Ergebnisse für den Machine-Learning-Benchmark MLPerf Inference 0.5 veröffentlicht. Nach Einschätzung des Chipherstellers gibt es derzeit rund 130 Firmen, die an Hardware-Beschleunigern für KI-Algorithmen arbeiten. Von diesen Konkurrenten beteiligen sich aber bisher nur wenige am Machine-Learning-(ML-)Benchmark MLPerf.</p>
+      <h3>Training und Inferencing</h3>
+      <p>Der Benchmark hat zwei Hauptkategorien: Training und Inferencing. Während es von Nvidia, Intel und Google bereits <a href="https://www.heise.de/meldung/Developer-Snapshots-Programmierer-News-in-ein-zwei-Saetzen-4466000.html">Resultate für MLPerf Training 0.6 gibt</a>, erscheinen nun auch welche für MLPerf Inference 0.5. Und beim Inferencing, also bei Chips für die Anwendung bereits trainierter Netze wie ResNet und MobileNet, sieht Nvidia die eigenen Tesla- und Xavier-Chips mit großem Abstand in Führung.</p>
+      <p>KI-Inferencing läuft einerseits in (Cloud-)Servern, um Datenmassen zu klassifizieren, Objekte in Bildern zu erkennen, geschriebene Texte zu übersetzen oder gesprochene Sprache zu erkennen. Andererseits kommt KI-Inferencing in Echtzeit etwa zur Objekterkennung in Kamerabildern in Fahrzeug-Assistenzsystemen oder Robotern zum Einsatz.</p>
+      <figure>
+        <img src="https://www.heise.de/imgs/18/2/7/8/3/0/6/9/MLPerf-Inf-05-b24a128fce0608f3.png"/>
+        <figcaption>Nvidia sieht die eigenen Tesla- beziehungsweise Turing-GPUs bei Machine Learning in Führung.<cite>(Bild: Nvidia)</cite></figcaption>
+      </figure>
+      <h3>Inferencing-Server</h3>
+      <p>Fürs Inferencing im Rechenzentrum empfiehlt Nvidia die hauseigenen Tesla-Karten mit Turing-GPUs, etwa die <a href="https://www.heise.de/meldung/Nvidia-Tesla-P4-K-I-Beschleuniger-mit-8-TFlops-bei-75-Watt-Leistungsaufnahme-4164684.html">Tesla T4</a> (75 Watt) oder auch die deutlich stärkere <a href="https://www.heise.de/meldung/Titan-RTX-Nvidia-verlangt-2700-Euro-fuer-Turing-Grafikkarte-mit-24-GByte-RAM-4238285.html">Titan RTX</a> (280 Watt). Die Tesla T4 schafft bei der Verarbeitung von INT8-Daten bis zu 130 Tops.</p>
+      <p>Im <a href="https://mlperf.org/inference-results/">MLPerf Inference v0.5</a> "Closed" liegt die Titan RTX laut Nvidia um Längen vor Intels x86-Prozessor <a href="https://www.heise.de/meldung/Cascade-Lake-Intels-zweite-Xeon-SP-Generation-mit-bis-zu-56-Prozessorkernen-4355839.html">Xeon Platinum 9282</a>, aber auch deutlich vor <a href="https://www.heise.de/meldung/Nitro-Corsica-TPU-Spezial-Hardware-in-Rechenzentren-4499997.html">Googles TPU v3</a> oder dem <a href="https://www.heise.de/select/ct/2019/5/1551439059879983">PCIe-Beschleuniger Habana Goya</a>. Nach eigenen Angaben hat auch nur Nvidia Resultate für alle fünf Teildisziplinen Bildklassifizierung (MobileNet v1, ResNet-50 v1.5), Objekterkennung (<a href="https://www.heise.de/meldung/Maschinelles-Lernen-Google-veroeffentlicht-eine-API-zur-Objekterkennung-3746644.html">SSD-MobileNet v1</a>, ResNet-34) und Sprachübersetzung (GNMT) eingereicht. Die Konkurrenten beschränkten sich jeweils auf weniger Disziplinen.</p>
+      <h3>Jetson Xavier NX für Roboter</h3>
+      <figure>
+        <img src="https://www.heise.de/imgs/18/2/7/8/3/0/6/9/Xavier-NX-ea2021c01813fa54.png"/>
+        <figcaption>Der Nvidia Jetson Xavier NX hat dieselbe Bauform wie der Jetson Nano.<cite>(Bild: Nvidia)</cite></figcaption>
+      </figure>
+      <p>Für KI in Fahrzeugen, Robotern oder auch Drohnen entwickelt Nvidia Systems-on-Chip (SoCs) mit ARM-Kernen, GPUs, Kamera-Interfaces sowie Video-De- und Encodern wie <a href="https://www.heise.de/meldung/Nvidia-Jetson-TX2-Embedded-Modul-mit-Pascal-GPU-3646929.html">Parker</a> (Pascal-GPU) und <a href="https://www.heise.de/meldung/Nvidia-Xavier-20-Watt-Kombiprozessor-fuer-autonome-Autos-3336186.html">Xavier</a> (Volta-GPU). Diese SoCs verkauft Nvidia auch auf kompakten "Jetson"-Rechenmodulen.</p>
+      <p>Ab März 2020 will Nvidia das neue Modul Jetson Xavier NX für 399 US-Dollar verkaufen. Es handelt sich dabei um eine abgespeckte und für niedrige Leistungsaufnahme (10 bis 15 Watt) optimierte Version des teureren <a href="https://www.heise.de/select/ct/2019/2/1546858154521071">Jetson AGX Xavier</a>.</p>
+      <p>Entwickler können mit einem Software-Patch die Performance des Jetson AGX Xavier begrenzen, um schon jetzt Code für den Jetson Xavier NX zu testen. Letzterer soll bei INT8 bis zu 21 Tops erreichen, bei FP16 bis zu 6 TFlops. Das Steckmodul im Format 70 mm × 45 mm passt in dieselben Fassungen wie der <a href="https://www.heise.de/meldung/GTC-2019-Nvidia-Jetson-Nano-Entwicklerkit-fuer-99-US-Dollar-4339564.html">Jetson Nano mit Tegra X1</a>.</p>
+      <h3>Sechs ARM-Kerne und JetPack-SDK</h3>
+      <p>Der Jetson Xavier NX ist mit 8 GByte LPDDR4X-SDRAM bestückt. Sein Xavier-SoC enthält eine Volta-GPU mit 384 CUDA-Kernen, 48 Tensor-Kernen und 2 <a href="https://www.heise.de/meldung/Nvidia-spendiert-der-ML-Hardwarearchitektur-NVDLA-einen-Open-Source-Compiler-4521308.html">Deep Learning Accelerators (NVDLA)</a>. Zudem stehen sechs ARMv8-Kerne (Nvidia Carmel) bereit.</p>
+      <p>Über 12 MIPI-CSI-2-Lanes lassen sich 6 Kameras direkt anschließen. Der Video-Decoder verarbeitet zwei 4K-Streams mit 60 Hz gleichzeitig. Nvidia stellt dazu das <a href="https://docs.nvidia.com/jetson/jetpack/introduction/index.html">JetPack SDK</a> bereit, das unter anderem ein Ubuntu-verwandtes Linux als Betriebssystem umfasst sowie Bibliotheken wie CUDA (<a href="https://docs.nvidia.com/jetson/archives/jetpack-archived/jetpack-421/release-notes/index.html">10.0.326</a>), <a href="https://www.heise.de/meldung/Machine-Learning-TensorFlow-1-15-bereitet-den-Umstieg-auf-Version-2-vor-4559516.html">TensorRT</a> (5.1.6.1), cuDNN (7.5.0.56), VisionWorks und <a href="https://www.heise.de/meldung/OpenCV-4-0-liegt-vollstaendig-als-C-11-Bibliothek-vor-4224710.html">OpenCV</a>. Im Unterschied zum Jetson AGX Xavier ist der VLIW Vision Accelerator beim Xavier NX nicht nutzbar. (<a href="mailto:ciw@ct.de">ciw</a>)</p>
+    </article>
+  </body>
+</html>

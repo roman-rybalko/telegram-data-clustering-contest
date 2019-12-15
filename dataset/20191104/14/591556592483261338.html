@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://www.zdnet.com/article/power-bi-gets-new-data-protection-features/"/>
+    <meta property="og:site_name" content="ZDNet"/>
+    <meta property="article:published_time" content="2019-11-04T14:33:00+00:00"/>
+    <meta property="og:title" content="Microsoft Ignite 2019: Power BI gets new data protection features"/>
+    <meta property="og:description" content="Power BI adds new data protection features, that extend all the way to documents containing Power BI exports. Combined with new data lineage and recently-added dataset endorsement features, this feature puts Power BI onto the data governance on-ramp."/>
+  </head>
+  <body>
+    <article>
+      <h1>Microsoft Ignite 2019: Power BI gets new data protection features</h1>
+      <address><time datetime="2019-11-04T14:33:00+00:00">04 Nov 2019, 14:33</time> by <a rel="author" href="https://www.zdnet.com/meet-the-team/us/andrew-brust/" target="_blank">Andrew Brust</a></address>
+      <p>
+        <b>Power BI adds new data protection features, that extend all the way to documents containing Power BI exports. Combined with new data lineage and recently-added dataset endorsement features, this feature puts Power BI onto the data governance on-ramp.</b>
+      </p>
+      <p>At its <a href="https://www.microsoft.com/ignite">Ignite</a> technology conference in Orlando today, Microsoft is announcing new data protection features for its <a href="https://powerbi.microsoft.com/">Power BI</a> business intelligence platform. Along with data lineage and impact analysis features announced just last week, and its recently-added dataset endorsement features, Power BI is starting to get serious about data governance. Power BI doesn't offer a beefy data catalog facility, nor is it trying to. It is, however, weaving governance into common BI use cases and workflows, which may amplify and support more formal governance initiatives.</p>
+      <h3>For your own protection</h3>
+      <p>Power BI data protection is based on the same <a href="https://www.microsoft.com/security/technology/information-protection">Microsoft Information Protection</a> technology built into Office. Here's how data protection works:</p>
+      <ul>
+        <li>Sensitivity labels are first defined by security administrators in the Microsoft Security and Compliance center (shown in the animated GIF below), and they apply to both Power BI and all Office 365 apps across the organization</li>
+        <li>Data owners can then assign sensitivity labels for Power BI dashboards, reports, datasets, and dataflows.</li>
+        <li>With that policy in place, any Power BI data exported to Excel, PowerPoint or PDF file will carry that sensitivity label with it, and only authorized, authenticated users will be able to access the exported data</li>
+      </ul>
+      <figure>
+        <video src="https://zdnet3.cbsistatic.com/hub/i/r/2019/11/04/4ad2a505-8a31-47d3-9533-3b2323be0320/resize/470xauto/dee938d533c90198e9858b9ca8d12991/setsensitivitylevel.gif" autoplay="" loop=""/>
+        <figcaption>Setting Sensitivity Level on a Power BI report<br/><br/>Credit: Microsoft</figcaption>
+      </figure>
+      <p>Also read: <a href="https://www.zdnet.com/article/power-bi-delivers-ai-power/">Power BI delivers AI power</a><br/><br/>Power BI data protection is different from data security facilities on other BI platforms. Those offerings tend to focus on role-based access to the data itself, something already covered by Power BI's row-level security feature. Power BI data protection on the other hand, acknowledges, and indeed embraces, the fact that BI insights are often shared in spreadsheets, slide decks and PDF documents, often sent as email attachments. For many platforms, such dissemination of BI assets goes outside their contemplated security boundaries, and is effectively treated as a rogue scenario. But Power BI can now tolerate and, for that matter, encourage such sharing, allowing it to take place in a governed framework. </p>
+      <h3>Oh, no you don't</h3>
+      <p>And, because Power BI data protection is also integrated with <a href="https://www.microsoft.com/microsoft-365/enterprise-mobility-security/cloud-app-security">Microsoft Cloud App Security</a>, downloads of protected documents will be blocked altogether for users on un-managed devices (shown below). Furthermore, administrators can leverage Microsoft Cloud App Security to closely monitor and control risky sessions in Power BI, including access from an uncommon location, or a suspicious sharing of a Power BI report.</p>
+      <figure>
+        <video src="https://zdnet1.cbsistatic.com/hub/i/r/2019/11/04/fb3075bc-3618-4e26-bd71-ec4cd12f77bc/resize/470xauto/dd0bf82c12dbceb98aff22a010048ca5/unmanageddevice.gif" autoplay="" loop=""/>
+        <figcaption>Downloads of Power BI protected data is blocked on un-managed devices<br/><br/>Credit: Microsoft</figcaption>
+      </figure>
+      <h3>Artifact lineage and endorsed datasets</h3>
+      <p>Power BI offers other newly-added data governance features. For example, Microsoft announced just last week a new Lineage View that visualizes the relationships between the dashboards, reports, datasets, dataflows and connections in a Power BI workspace. Lineage View is available simply as an toggled alternative to the separate list-style views of datasets, dashboards, reports and data flows. Artifacts in the lineage view offers contextual options, like metadata display and dataset refresh. And Microsoft says it plans to implement a cross-workspace dataset impact analysis feature as well.<br/><br/>Another recently added feature, dataset endorsement, allows individual datasets to be tagged as "Promoted" or Certified" by the dataset owner or administrator, respectively. Later, when users select the Get Data option in Power BI Desktop, then connect to Power BI datasets, they'll see a listing of all datasets in the workspace, with Certified, then Promoted ones listed first.</p>
+      <h3>What does it all mean?</h3>
+      <p>Much data governance technology has required a detour: in order to govern data, analysts have had to put aside analysis work, move over to a security or data catalog platform, and dedicate a bunch of time to inventorying, organizing and securing data. This can add friction, effectively discouraging good governance practices among those in analyst (as opposed to data steward) roles. The sort of embedded governance features that have been added to the Power BI platform reduce that friction. These features aren't meant to replace more formal governance platforms or the initiatives to implement them, but rather to support those platforms and initiatives, and perhaps influence rank-and-file buy-in to them.<br/><br/>Whether it works out that way is another question. Regardless, a move to imbue the analytics workflow with good data governance practices, and the features to support them, is a positive development, in and of itself.</p>
+      <p>
+        <i>Brust is a Microsoft Data Platform MVP and has done work for the Power BI product team.</i>
+      </p>
+    </article>
+  </body>
+</html>

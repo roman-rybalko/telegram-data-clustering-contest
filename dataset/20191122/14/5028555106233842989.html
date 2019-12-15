@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://arstechnica.com/information-technology/2019/11/scammers-try-a-new-way-to-steal-online-shoppers-payment-card-data/?utm_medium=social&amp;utm_brand=ars&amp;utm_social-type=owned&amp;utm_source=twitter"/>
+    <meta property="og:site_name" content="Ars Technica"/>
+    <meta property="article:published_time" content="2019-11-22T14:00:10+00:00"/>
+    <meta property="og:title" content="Scammers try a new way to steal online shoppers’ payment-card data"/>
+    <meta property="og:description" content="Skimmers host fraudulent third-party processor that looks just like the real thing."/>
+  </head>
+  <body>
+    <article>
+      <h1>Scammers try a new way to steal online shoppers’ payment-card data</h1>
+      <h2>Skimmers host fraudulent third-party processor that looks just like the real thing.</h2>
+      <address><time datetime="2019-11-22T14:00:10+00:00">22 Nov 2019, 14:00</time> by <a rel="author">Dan Goodin</a></address>
+      <p>Thieves have devised a new way to steal payment-card data from online shoppers—or at least it's new to the researcher who found it. Rather than infecting a merchant's checkout page with malware that skims the information, the thieves trick users into thinking they've been redirected to an authorized third-party payment processor.</p>
+      <p>So-called payment-service platforms are common in the world of ecommerce, particularly for smaller sites that don't have the resources to harden their servers against sophisticated attacks. That includes the <a href="https://arstechnica.com/information-technology/2019/03/a-new-rash-of-highly-covert-card-skimming-malware-infects-ecommerce-sites/">rash of hacks</a> coming from so-called Magecart groups that target the Magento ecommerce Web platform. Rather than assuming the considerable risk of hacks that steal passwords, payment card details, or other sensitive data, sites can offload the payment card charges to experienced PSPs.</p>
+      <p>Jérôme Segura, head of threat intelligence at security provider Malwarebytes, said he recently found an attack that targets sites that use this type of arrangement. By infecting the merchant site and adding a line or two of code, the attackers redirect users to a fake PSP rather than the legitimate one, at the time of purchase. The ruse works similarly to a phishing attack. Graphics that mimic real services, custom-created domain names, and other sleights of hand trick end users into thinking they've landed on a genuine third-party processor.</p>
+      <h3>Convincing replica</h3>
+      <figure>
+        <img src="https://cdn.arstechnica.net/wp-content/uploads/2019/11/fake-psp-640x694.jpg"/>
+        <figcaption>A compromised merchant website redirects shoppers to this fake third-party processor.<br/>Malwarebytes</figcaption>
+      </figure>
+      <p>"This is simply a way for them [the attackers] to adjust to whatever method of payment an ecommerce site uses," Segura wrote in an email. "If the merchant takes payments themselves, they [the attackers] will use the typical skimmer that looks for specific fields, and if the merchant instead relies on an external payment gateway, they can deploy that fraudulent page designed like a phish to collect the data."</p>
+      <p>A compromised merchant website redirects shoppers to this fake third-party processor.[/ars_img]So far, Segura has found only one instance of this ruse. It compromised an online store in Australia that used the <a href="https://www.prestashop.com/en">PrestaShop</a> content-management system. As the image to the right shows, the fake PSP was hosted at payment-mastercard[.]com. The side-by-side comparison below shows how carefully it mimicked Australia's Commonwealth Bank, which was the authentic PSP for the online merchant. Under the hood, however, the fake one harvested the payment-card data so it could be used in fraudulent transactions.</p>
+      <figure>
+        <img src="https://cdn.arstechnica.net/wp-content/uploads/2019/11/side-by-side-1280x674.png"/>
+        <figcaption>A side-by-side comparison shows how similar the fake processor looks to the real one.<br/>Malwarebytes</figcaption>
+      </figure>
+      <p>"The scheme consists of swapping the legitimate e-banking page with the fraudulent one in order to collect the victims' credit card details," Segura explained in a <a href="https://blog.malwarebytes.com/web-threats/2019/11/web-skimmer-phishes-credit-card-data-via-rogue-payment-service-platform/">post published on Thursday</a>. "We also noticed that the fake page did something we don't always see with standard skimmers in that it checked that all fields were valid and informed the user if they weren't."</p>
+      <p>Once the fake PSP has collected the data, it redirects buyers to the legitimate PSP and includes the purchase amount.</p>
+      <p>While Segura is aware of only one active attack using this method, he believes it may be a trial run before the scammers start more widespread scams. He said he has seen one skimmer group create dozens of domains that resemble legitimate banking institutions. He previously wondered why skimmers would bother. After seeing the attack against the Australian merchant, he said he may have found the reason.</p>
+      <p>One of the few ways for users without a background in online security to detect this type of scam is to take note of the fake PSP redirecting to the real one after accepting the payment card data. Someone who is truly attentive will not only notice that the card data is being sought for a second time. They will also notice the difference in the domains between the two services (see the side-by-side comparison above). Malwarebytes antivirus—and possibly other security programs—make detection easier by automatically flagging the fake PSP. Thursday's post also provides indicators of compromise people can use to determine if they've been targeted.</p>
+      <related>
+        <h4>Further Reading</h4>
+        <a href="https://arstechnica.com/information-technology/2019/03/a-new-rash-of-highly-covert-card-skimming-malware-infects-ecommerce-sites/"/>
+      </related>
+    </article>
+  </body>
+</html>

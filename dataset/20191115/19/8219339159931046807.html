@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://9to5mac.com/2019/11/15/homekit-secure-video-what-to-know/"/>
+    <meta property="og:site_name" content="9to5Mac"/>
+    <meta property="article:published_time" content="2019-11-15T19:24:45+00:00"/>
+    <meta property="og:title" content="Using HomeKit Secure Video in iOS 13.2 with Logitech Circle 2 cameras"/>
+    <meta property="og:description" content="HomeKit Secure Video from Apple is a real feature that you can actually use with iOS 13 thanks to Logitech Circle 2 cameras. Logitech promised an update for Logi Circle 2 Wired cameras earlier this summer right after Apple unveiled its new approach to home security camera software. A new app update and beta camera firmware […]"/>
+  </head>
+  <body>
+    <article>
+      <h1>Using HomeKit Secure Video in iOS 13.2 with Logitech Circle 2 cameras</h1>
+      <address><time datetime="2019-11-15T19:24:45+00:00">15 Nov 2019, 19:24</time> by <a rel="author" href="https://9to5mac.com/author/apollozac/" target="_blank">Zac Hall</a></address>
+      <p>HomeKit Secure Video from Apple is a real feature that you can actually use with iOS 13 thanks to <a href="https://amzn.to/2pqumm8">Logitech Circle 2 cameras</a>.</p>
+      <p>Logitech promised an update for Logi Circle 2 Wired cameras <a href="https://9to5mac.com/2019/06/14/logitech-homekit-secure-video/">earlier this summer</a> right after Apple unveiled its new approach to home security camera software. A new app update and beta camera firmware <a href="https://9to5mac.com/2019/11/14/logitech-cirlce-2-homekit-secure-video/">released this week</a> fulfilled that promise, making Logitech Circle 2 Wired cameras the only hardware to work with the new HomeKit Secure Video.</p>
+      <p>Apple’s Home app has supported home security cameras for years, but HomeKit Secure Video raises the bar for privacy while introducing new recording features for certain iCloud subscribers. Here’s what you should know about HomeKit Secure Video now that the feature is in the wild.</p>
+      <h3>What is HomeKit Secure Video?</h3>
+      <p>This is Apple’s <a href="https://www.apple.com/ios/home/">official description</a> and pitch:</p>
+      <blockquote>Footage from home security cameras contains your most personal and sensitive data. With HomeKit Secure Video, activity detected by supported cameras is privately analyzed by your home hub using on‑device intelligence to determine if people, pets, or cars are present. When important activity is detected, you and anyone you share your Home app with will receive a rich notification that lets you view the clip right from the Lock Screen. Recorded video is available to view for ten days from the Home app. It’s securely stored for free in supported iCloud accounts and doesn’t count against your storage limit.</blockquote>
+      <p>Apple adds that Eufy, Logitech, and Netatmo are committed to supporting HomeKit Secure Video, but only Logitech has released working software so far.</p>
+      <h3>How it works</h3>
+      <p>The way HomeKit Secure Video setup works is rather surprising.</p>
+      <p>For example, Logitech Circle 2 cameras are configured and updated through Logitech’s Circle app for iPhone, iPad, Android, and streams are also viewable on the web. Circle 2 has also worked with basic HomeKit support for a while which let you view snapshots of motion captured and live streaming video.</p>
+      <p>When converting Circle 2 cameras to HomeKit Secure Video cameras, the Circle app totally removes converted cameras from Logitech’s control (removing Android and web support). All camera management is totally moved to Apple’s Home app, including controlling status indicator lights and night vision.</p>
+      <figure>
+        <img src="https://9to5mac.com/wp-content/uploads/sites/6/2019/11/IMG_1732.png"/>
+      </figure>
+      <p>If you’re a paying Logitech Circle Safe subscriber, you also have to agree to cancel your monthly subscription on your own after converting to HomeKit Secure Video. That’s because HomeKit Secure Video cameras can’t be reached by Logitech, and the monthly cloud recording feature is replaced by features in Apple’s Home app.</p>
+      <p>This effectively turns the Logitech Circle 2 cameras into Apple HomeKit cameras. Reverting from HomeKit Secure Video cameras requires contacting Logitech customer service.</p>
+      <h3>What you need</h3>
+      <p>HomeKit Secure Video has a few must-have requirements before getting started.</p>
+      <ul>
+        <li>iPhone, iPad, or iPod touch running <a href="https://9to5mac.com/2019/10/28/ios-13-2-now-available-emoji-more/">iOS 13.2 or iPadOS 13.2</a> or later</li>
+        <li>iPad, Apple TV, or HomePod <a href="https://support.apple.com/kb/HT207057">used as a home hub</a></li>
+        <li>200GB ($2.99/month) or 2TB ($9.99/month) iCloud storage plan</li>
+      </ul>
+      <p>HomeKit Secure Video won’t work without a dedicated home hub on your Wi-Fi network, and free 5GB and 99¢/month 50GB iCloud storage plans won’t support HomeKit Secure Video.</p>
+      <p>You can still stream video using HomeKit like before, but subject detection and cloud recordings won’t be supported. HomeKit Secure Video won’t count against iCloud storage space on plans it does support.</p>
+      <p>You also need a compatible HomeKit Secure Video security camera. I’ve personally been a big fan of <a href="https://amzn.to/2pqumm8">Logitech Circle 2 Wired cameras</a> (I own three) for a while, and being the first and only HomeKit Secure Video cameras on the market makes that even more true.</p>
+      <figure>
+        <img src="https://9to5mac.com/wp-content/uploads/sites/6/2019/11/circle-2-accessories.jpg?quality=82&amp;strip=all"/>
+      </figure>
+      <p>Logitech makes these cameras more versatile in terms of placement with special accessories including:</p>
+      <ul>
+        <li><a href="https://amzn.to/2XiktDl">Circle 2 Magnetic Moun</a>t – $19.99</li>
+        <li><a href="https://amzn.to/373kKPf">Circle 2 Plug Mount</a> – $29.99</li>
+        <li><a href="https://amzn.to/378ylVt">Circle 2 Window Mount</a> – $39.99</li>
+      </ul>
+      <p>You can’t use HomeKit with Logitech’s wireless version of Circle 2, but all three accessories work with the wired version and HomeKit Secure Video. More options are expected to be on the market in the future.</p>
+      <p>Note that HomeKit Secure Video only supports <b>up to five cameras</b>. There’s no option for paying for additional cameras or more than 2TB storage.</p>
+      <h3>Customizing alerts and managing recordings</h3>
+      <p>When you finally get the chance to dive in and see what all HomeKit Secure Video can do, I highly recommend spending some time adjusting the default settings on each HomeKit Secure Video camera before letting them loose.</p>
+      <p>HomeKit generally has some curious default settings, and HomeKit Secure Video is just begging to be customized from the out-of-the-box defaults. Explore the settings for each camera to understand exactly what you can change and how it will affect the experience.</p>
+      <p>Here’s how I’m handling notification settings:</p>
+      <ul>
+        <li>Allow snapshots in notifications: on</li>
+        <li>Status change notifications: on</li>
+        <li>Activity notifications: on</li>
+        <li>Time: Any</li>
+        <li>People: When nobody is home</li>
+        <li>When a clip is recorded</li>
+      </ul>
+      <p>I suspect I will adjust some of these settings for outdoor versus indoor cameras over time, but it’s a manageable starting point for now.</p>
+      <p>You can also adjust streaming and recording options for when you’re home, when you’re away, and in general. Options include off, detect activity, stream, and stream &amp; allow recording. For now, I’m using stream &amp; allow recording for each HomeKit Secure Video camera.</p>
+      <figure>
+        <img src="https://9to5mac.com/wp-content/uploads/sites/6/2019/11/IMG_1768.png"/>
+      </figure>
+      <p>General recording options let you record when any motion is detected (the old fashioned method) or when specific motion is detected. This can be based on people detection, animal detection, and vehicle detection. For example, you may want to ignore cars from an outside camera or ignore pets from an indoor camera, but always want to be notified by people detection.</p>
+      <p>Recording options also let you enable or disable audio recording, and you can tap a button to erase all recordings from a specific camera here.</p>
+      <p>HomeKit Secure Video records up to 10 days of motion footage (cameras can stream all footage but only motion detection triggers recording) and older clips will automatically be deleted on a rolling basis.</p>
+      <p>For Logitech Circle 2, each camera also has a toggle for controlling the camera’s status light and night vision light.</p>
+      <figure>
+        <img src="https://9to5mac.com/wp-content/uploads/sites/6/2019/11/HomeKit-Secure-Video-screenshots.jpg?quality=82&amp;strip=all"/>
+      </figure>
+      <p>After you’ve finished setting up and customizing how your HomeKit Secure Videos work, the only thing left to master is how to view and share recordings.</p>
+      <p>The process isn’t exactly obvious, and the interface is one that could be improved for usability in future software updates. For now, this is how it works:</p>
+      <ul>
+        <li>Open the Home app and tap a HomeKit Secure Video camera to view the stream</li>
+        <li>Tap the screen to view the on-screen controls including a timeline scrubber along the bottom of the screen</li>
+        <li>Drag the timeline from left to right to go back in time and see recorded clips</li>
+        <li>A date picker will appear at the top of the screen when viewing older clips</li>
+        <li>Tap the action button (arrow coming out of a box) to share or save a specific clip when it view</li>
+        <li>Tap next in the top right corner when you find the clip you want to share or save</li>
+      </ul>
+      <p>Sharing a video can be done with the share sheet using AirDrop, Messages, Mail, or most other sharing methods familiar to other apps. You can also select save video to add the clip to your photo library. Clips are automatically tagged with the date and time of capture in the file name without viewing metadata.</p>
+      <figure>
+        <img src="https://9to5mac.com/wp-content/uploads/sites/6/2019/11/IMG_1770.png"/>
+      </figure>
+      <p>HomeKit Secure Video will use icons to explain what type of motion was detected to start recording the clip, and you can “play” a full day of clips for viewing at all captured clips in order.</p>
+      <p>If you believe motion was captured that shouldn’t have been, you can even share a clip to Apple for review to improve its detection features.</p>
+      <p>You do miss out on some of Logitech’s app-specific features like creating a timelapse video of all captured clips throughout the day, but HomeKit Secure Video includes up to 10 days of footage with a decent level of intelligence.</p>
+      <p>The new feature will make HomeKit cameras more useful for a lot of customers, and some will even be able to save money on monthly subscriptions to Logitech and other camera makers.</p>
+      <p>Shop for Logitech’s HomeKit Secure Video camera <a href="https://amzn.to/2pqumm8">here</a>, and find out more about how HomeKit Secure Video works <a href="https://support.apple.com/en-us/HT210538">here</a>.</p>
+      <p><i>FTC: We use income earning auto affiliate links.</i> <a href="https://9to5mac.com/about/#affiliate">More.</a></p>
+      <figure>
+        <img src="https://9to5mac.com/wp-content/uploads/sites/6/2019/11/Hyper_9to5_GaN_Battery_Banner_2-02.jpg?quality=82&amp;strip=all"/>
+      </figure>
+    </article>
+  </body>
+</html>

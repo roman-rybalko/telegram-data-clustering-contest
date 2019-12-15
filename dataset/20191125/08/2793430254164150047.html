@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://habr.com/en/company/pvs-studio/blog/477324/"/>
+    <meta property="og:site_name" content="Habr"/>
+    <meta property="article:published_time" content="2019-11-25T08:50:22+00:00"/>
+    <meta property="og:title" content="Why You Should Choose the PVS-Studio Static Analyzer to Integrate into Your Development Process"/>
+    <meta property="og:description" content="PVS-Studio is a tool for detecting bugs and potential vulnerabilities in the source code of programs written in C, C++, C#, or Java, and is also a Static..."/>
+  </head>
+  <body>
+    <article>
+      <h1>Why You Should Choose the PVS-Studio Static Analyzer to Integrate into Your Development Process</h1>
+      <address><time datetime="2019-11-25T08:50:22+00:00">25 Nov 2019, 08:50</time> by <a rel="author" href="https://habr.com/en/users/Andrey2008/" target="_blank">Andrey2008</a></address>
+      <figure>
+        <img src="https://habrastorage.org/getpro/habr/post_images/6b8/b57/a2f/6b8b57a2fb64b484b201b2d8cba6cabb.png"/>
+      </figure>
+      <p>PVS-Studio is a tool for detecting bugs and potential vulnerabilities in the source code of programs written in C, C++, C#, or Java, and is also a Static Application Security Testing (SAST) tool. It is meant to be used as part of the CI practice and allows the user to detect bugs at the earliest development stages, where they cost almost nothing to fix.</p>
+      <h3>Static code analysis</h3>
+      <p>As software projects develop, they grow in size. Compare:</p>
+      <ul>
+        <li>Linux kernel 1.0.0: 176,000 LOC</li>
+        <li>Linux kernel 5.0: 26,000,000 LOC</li>
+        <li>Photoshop 1.0: 128,000 LOC</li>
+        <li>Photoshop CS 6: 10,000,000 LOC</li>
+      </ul>
+      <p>As the project grows, its complexity grows faster than linearly. This explains why error density <a href="https://www.viva64.com/en/b/0158/">grows</a> along with the codebase. One of the ways to make up for the growing complexity is to use static code analysis tools.<br/><br/>A static analyzer is a software tool that performs preliminary code review and points out code fragments that are very likely to contain errors. This allows developers to fix most bugs at the earliest development stage, where they are cheapest to fix.<br/><br/><a href="https://www.viva64.com/en/t/0046/">Static analysis</a> does not replace – but rather complements – other bug-detecting practices such as code review, unit testing, dynamic analysis, regression testing, manual testing, and so on.<br/><br/>Take <a href="https://www.viva64.com/en/t/0073/">code review</a>, for example. A much better scenario is to have a software analyzer find the most trivial bugs for you so that you could focus on more useful high-level checks of the algorithm rather than figuring out <a href="https://www.viva64.com/en/b/0509/">comparison functions</a> – all the more so since, as our <a href="https://www.viva64.com/en/b/0587/">experience</a> proves, the human eye is bad at noticing many of the bugs and they are very likely to be overlooked during code review.<br/><br/>Another advantage of static analysis tools is the extensive error pattern base. They can find defects that many programmers may not even know of, such as <a href="https://www.viva64.com/en/w/v698/">V698</a>, <a href="https://www.viva64.com/en/w/v718/">V718</a>, <a href="https://www.viva64.com/en/w/v1023/">V1023</a>.</p>
+      <h3>PVS-Studio</h3>
+      <p>We recommend choosing PVS-Studio, a static code analyzer developed by our team. It runs on 64-bit Windows, Linux, and macOS systems and can check the source code of programs for 32-bit, 64-bit, and embedded ARM platforms.<br/><br/>As of this writing, the analyzer supports the following languages and compilers:</p>
+      <ul>
+        <li>Windows. Visual Studio 2010-2019 C, C++, C++/CLI, C++/CX (WinRT), C#</li>
+        <li>Windows. IAR Embedded Workbench, C/C++ Compiler for ARM C, C++</li>
+        <li>Windows. QNX Momentics, QCC C, C++</li>
+        <li>Windows/Linux. Keil µVision, DS-MDK, ARM Compiler 5/6 C, C++</li>
+        <li>Windows/Linux. Texas Instruments Code Composer Studio, ARM Code Generation Tools C, C++</li>
+        <li>Windows/Linux/macOS. GNU Arm Embedded Toolchain, Arm Embedded GCC compiler, C, C++</li>
+        <li>Windows/Linux/macOS. Clang C, C++</li>
+        <li>Linux/macOS. GCC C, C++</li>
+        <li>Windows. MinGW C, C++</li>
+        <li>Windows/Linux/macOS. Java</li>
+      </ul>
+      <p>The analyzer comes with detailed <a href="https://www.viva64.com/en/m/">documentation</a> in English and Russian. The descriptions of diagnostic rules include examples of correct and incorrect code. They also comprise links to code snippets from real open-source programs.<br/><br/>For those specialists who are going to use PVS-Studio as a <a href="https://www.viva64.com/en/sast/">SAST tool</a>, the diagnostics are mapped to the Common Weakness Enumeration, SEI CERT Coding Standards, and MISRA standard. Here are the mapping tables of PVS-Studio diagnostics to different standards:</p>
+      <ul>
+        <li>
+          <a href="https://www.viva64.com/en/cwe/">CWE mapping</a>
+        </li>
+        <li>
+          <a href="https://www.viva64.com/en/cwe/">SEI CERT mapping</a>
+        </li>
+        <li>
+          <a href="https://www.viva64.com/en/cwe/">MISRA mapping</a>
+        </li>
+      </ul>
+      <p>The analyzer can be used both as a standalone tool and as a plugin for Visual Studio and IntelliJ IDEA. Some of our customers have also been using PVS-Studio as part of SonarQube lately. When used as a <a href="https://www.viva64.com/en/m/0037/">plugin</a> for SonarQube, the analyzer provides additional diagnostic messages.<br/><br/>We have developed a number of scenarios of using PVS-Studio with CI systems. As observing all the scenarios is outside the scope of this article, please refer to the documentation. Here are just a few links to give you the general idea:</p>
+      <ul>
+        <li>
+          <a href="https://www.viva64.com/en/b/0670/">PVS-Studio in the Clouds: Azure DevOps</a>
+        </li>
+        <li>
+          <a href="https://www.viva64.com/en/b/0636/">PVS-Studio in the Clouds: Travis CI</a>
+        </li>
+        <li>
+          <a href="https://www.viva64.com/en/b/0676/">PVS-Studio in the Clouds: CircleCI</a>
+        </li>
+        <li>
+          <a href="https://www.viva64.com/en/b/0686/">PVS-Studio in the Clouds: GitLab CI/CD</a>
+        </li>
+        <li>
+          <a href="https://www.viva64.com/en/m/0048/">Running PVS-Studio in Jenkins</a>
+        </li>
+        <li>
+          <a href="https://www.viva64.com/en/b/0567/">Features of PVS-Studio setting and running in Docker on the example of Azure Service Fabric code</a>
+        </li>
+      </ul>
+      <p>PVS-Studio effectively detects a wide range of flaws from <a href="https://www.viva64.com/en/b/0260/">typos</a> to <a href="https://www.viva64.com/en/b/0543/">memory leaks</a>. This is possible thanks to the dataflow analysis, symbolic execution, pattern matching, and method annotation (including automated annotation). To learn more about the working principles behind the analyzer, see the article "<a href="https://www.viva64.com/en/b/0592/">Technologies used in the PVS-Studio code analyzer for finding bugs and potential vulnerabilities</a>".</p>
+      <h3>Why you should use PVS-Studio</h3>
+      <p>Integrating PVS-Studio into your development process will make many of the bugs cheaper to fix, thus helping to save time, which you will be able to invest into implementing a new feature or carrying out more thorough high-level testing.<br/><br/>If used regularly, the analyzer will eventually help you enhance your code's quality, thus making it easier to maintain. Regular bug fixing and the practice of writing high-quality code will make it less susceptible to Zero-day vulnerabilities. This subject is discussed in more detail in the article "<a href="https://www.viva64.com/en/b/0514/">How Can PVS-Studio Help in the Detection of Vulnerabilities?</a>".<br/><br/>PVS-Studio is most cost-effective when used by teams of five members and more. The ROI estimate is given in the article "<a href="https://www.viva64.com/en/b/0606/">PVS-Studio ROI</a>".<br/><br/>Integrating PVS-Studio into projects developed by a couple of enthusiasts would probably be impractical, but even small projects can benefit from it – all the more so since we provide <a href="https://www.viva64.com/en/b/0614/">free</a> licensing options for students, open-source developers, and so on.<br/><br/>Our new <a href="https://www.viva64.com/en/customers/#tab-all">customers</a> will typically purchase a one-year license. When it expires, they're already happy about our analyzer's capabilities and user support service and will renew the license for two or three years, which is much cheaper than the one-year license. You can request the prices and ask for advice on licensing <a href="https://www.viva64.com/en/order/">here</a>.<br/><br/>Become our clients and let PVS-Studio make your development process more mature, bug-fixing cheaper, and your code better.<br/><br/>In our turn, we'll provide you with fast and competent support. Your questions will be addressed directly by the programmers developing the particular modules in question. This guarantees getting an answer even in the most complicated situations. Here's one such example: "<a href="https://www.viva64.com/en/b/0612/">False Positives in PVS-Studio: How Deep the Rabbit Hole Goes</a>".</p>
+      <h3>Responding to criticism</h3>
+      <p>Programmers are sometimes negative about the idea of including static code analysis into their development process and criticize the static analysis method in general or PVS-Studio in particular. As you start digging deeper, it turns out their criticism is unfounded and is simply the product of their reluctance to change anything in the established development process. Let's see what typical arguments for not changing the situation they resort to and what's wrong with them.</p>
+      <h4>«Static analysis will be taking up some amount of your working time»</h4>
+      <p>Out of context, the statement «static analysis will be taking up some amount of your working time» is true. It does take time to regularly examine the warnings output by the analyzer for newly written or modified code. But that idea needs to be continued: «but it will be taking up much less time than other bug-detecting methods do.»<br/><br/>Why do people believe that examining a static analyzer's report is time-consuming?<br/><br/>Those programmers who are not yet familiar with the code analysis method confuse one-time test runs and regular use. When run for the first few times, any analyzer will output a huge list of warnings, with a high rate of false positives. This happens because the tool hasn't been customized yet. With the settings tweaked to meet your exact needs, you won't be seeing many false positives if you run the analyzer regularly. In other words, with regular use, most of the analyzer's diagnostics will be detecting genuine flaws or smelling code. You only have to do that tweaking.<br/><br/>The article "<a href="https://www.viva64.com/en/b/0669/">Handling Objections: Static Analysis Will Take up Part of Working Time</a>" elaborates on the subject.</p>
+      <h4>«Static analyzers produce too much noise (i.e. too many false positives)»</h4>
+      <p>Again, this statement is true when you haven't properly customized the tool. Once you've tweaked PVS-Studio's settings as needed, you can expect the false positives rate to drop down to 10-20%. That is, out of every five warnings, four will be pointing to genuine bugs or code that is very likely to become the source of bugs in the future. The article "<a href="https://www.viva64.com/en/b/0523/">Characteristics of PVS-Studio Analyzer by the Example of EFL Core Libraries, 10-15% of False Positives</a>" shows an example of analyzer customization.<br/><br/>Another source of misconceptions is the temptation to turn on as many diagnostics as possible, without knowing their exact purpose. For instance, if you turn on the MISRA rule set, which was designed for embedded systems, when checking a classic Windows application, the analyzer will generate hundreds of thousands of warnings, none of which will be of any use to you. Irrelevant diagnostics are especially harmful when you are only getting started with the tool since you may get the wrong impression about its diagnostic capabilities. The article "<a href="https://www.viva64.com/en/b/0633/">How to quickly check out interesting warnings given by the PVS-Studio analyzer for C and C++ code?</a>" will help you avoid the disappointment.</p>
+      <h4>«Integrating static analysis into the development process is too costly in terms of effort, time, and money»</h4>
+      <p>This concern is vividly illustrated by the following comment:<br/><br/><i>Unfortunately, static analyzers themselves are nothing more than toys. It's a hell of a job trying to make them part of your routine work process, and it requires assigning some of the staff to examine and filter the analysis results. Any attempt to place this burden on ordinary developers is usually to no avail.</i><br/><br/>It's not that horrible. There are at least three practices to smoothly integrate static analysis even into large old projects.<br/><br/><b>Practice 1.</b> «Ratcheting», which is nicely explained by Ivan Ponomarev in his article "<a href="https://habr.com/en/post/440610/">Introduce Static Analysis in the Process, Don't Just Search for Bugs with It</a>".<br/><br/><b>Practice 2.</b> To help our users get started quickly, we recommend using the "<a href="https://www.viva64.com/en/m/0032/">suppression base</a>". In a nutshell, the idea is that you run the analyzer and get multiple warnings. Since the project has been in development for many years and is still alive, evolving, and profitable, you are not likely to get many warnings pointing at critical defects. In other words, most of the critical bugs have been already fixed using other – more expensive – means or in response to users' feedback. In that case, whatever bugs were found during the first check, they can be viewed as technical debt, which would be unreasonable to rush to fix immediately.<br/><br/>You can tell PVS-Studio to treat these warnings as irrelevant (thus putting off the resolving of the technical debt until later) and not show them again. The analyzer will create a special file storing the information about currently irrelevant bugs and will be outputting warnings only for freshly written or modified code. The mechanism is pretty smart. For instance, if you add an empty line at the beginning of some .cpp file, the analyzer will understand that this line doesn't make any difference, and keep silent. The suppression file can be version-controlled. It's large, but it doesn't matter because you don't need to version-control it often.<br/><br/>After that, every programmer on your team will be getting only the warnings triggered by freshly written or modified code. From the next day on, you will be able to use the analyzer as part of your routine work. As for the technical debt, you'll be able to get to it later and gradually fix the bugs and adjust the analyzer's settings as needed.<br/><br/><b>Practice 3. </b>You can delegate the task of setting up and integrating PVS-Studio to our team by drawing up a contract with us. One example of this practice is described in the article "<a href="https://www.viva64.com/en/b/0330/">How the PVS-Studio Team Improved Unreal Engine's Code</a>".</p>
+      <h4>«We ran the analyzer but found nothing of interest»</h4>
+      <p>This scenario is quite possible but it still doesn't mean that the analyzer isn't going to be of any use. The problem is that the bugs have already been found and fixed using other, more expensive, means. It's like feeding a text already checked by a bunch of proofreaders to Microsoft Word to see if its built-in spell check could find anything. It would find just a few mistakes, if any at all, but that doesn't mean Word's spell check is useless when writing new texts.<br/><br/>This subject is discussed in more detail in the article "<a href="https://www.viva64.com/en/b/0534/">Philosophy of Static Code Analysis: We Have 100 Developers, the Analyzer Found Few Bugs, Is Analyzer Useless?</a>".</p>
+      <h4>«A static analyzer is an expensive tool; we'd better hire an additional programmer/tester»</h4>
+      <p>What this argument really says is that the person doesn't want to change anything. After all, their team has been growing and hiring new programmers and testers for some time already, but that didn't help to achieve a more mature development process. That said, we should still elaborate on this argument.<br/><br/>First, hiring another person for bug searching is much more expensive than buying a static analyzer. Just calculate the new employee's annual payroll and add the taxes and expenses on setting up a new workspace. Considering the resulting figures, the argument about a software analyzer being too expensive doesn't seem an argument at all. Besides, a static analyzer, unlike humans, won't take a vacation or go on sick leave or leave the company altogether. For a large team, say, 100 people, you would have to hire not one but several new employees to achieve any noticeable result. In that case, buying a static analyzer becomes an even more favorable solution.<br/><br/>Second, the best result is achieved through the synergy between various bug-detecting techniques used in combination. Some bugs are better diagnosed through unit testing, others through manual testing, and so on. Imagine having 10 programmers working on a project, with lots of unit tests but not a single tester. The users aren't satisfied with the project's quality, so it occurs to you to hire a tester, but you don't do so because «we'd better hire an additional programmer, let there be even more unit tests!» That can't be called a wise decision, can it? In this scenario, the QA process is obviously one-legged and would only gain by adding manual testing. The same is true for static analysis.</p>
+      <h4>«Dynamic analysis is better than static analysis»</h4>
+      <p>Some bugs are better diagnosed by static analyzers, others by dynamic analyzers. These types of tools <a href="https://www.viva64.com/en/b/0643/">complement</a> each other, so you don't have to choose only one.<br/><br/>For example, dynamic analyzers can't detect unreachable code and many of the bugs caused by typos. Some of the types of bugs dynamic analysis has a difficult time finding are described in the article "<a href="https://www.viva64.com/en/b/0504/">Checking the code of Valgrind dynamic analyzer by a static analyzer</a>".</p>
+      <h4>«Unit testing is better than static analysis»</h4>
+      <p>If you were to choose between writing unit tests and using static analysis, I'd say the tests are more important and valuable. But you don't have to choose; you should use both unit testing and static analysis. These techniques work very well together.<br/><br/>Here are the arguments for using static analysis along with unit testing:</p>
+      <ol>
+        <li>Tests themselves are not tested and often contain errors. In our articles, we show lots of examples of bugs found in unit tests in real projects. Static analysis can find bugs in tests, which, in their turn, can find bugs in the main code.</li>
+        <li>It's difficult to cover the entire code with tests, especially those parts that deal with exception handling. Unlike them, static analyzers check the entire code.</li>
+        <li>Some bugs are extremely difficult, if possible at all, to detect through unit tests. <a href="https://www.viva64.com/en/w/v597/">V597 (CWE-14)</a> is one such example.</li>
+        <li>Some bugs manifest themselves only when the program works with large amounts of data, so it's impractical to simulate such situations in unit tests. One such example is an overflow of a 32-bit variable in a 64-bit program (<a href="https://www.viva64.com/en/w/v108/">V108</a>, <a href="https://www.viva64.com/en/w/v127/">V127</a>).</li>
+        <li>When a test doesn't pass, the error can be found more easily and quickly by running the static analyzer than by debugging. Sure, unit tests would find more bugs but when you can catch them using a cheaper technique (i.e. static analysis), why not do so?</li>
+        <li>We find <a href="https://www.viva64.com/en/examples/">piles of bugs</a> in various projects. Many of them are heavily covered with tests but, as you can see, they don't help much. So there's just no reason why you shouldn't adopt static analysis in addition to unit testing to enhance your code's quality and reliability.</li>
+      </ol>
+      <h4>«Contemporary free compilers can find the same bugs that PVS-Studio can»</h4>
+      <p>Sure, compilers are evolving and acquiring new warnings, which can detect bugs. But you can't expect much of compilers in comparison with professional proprietary solutions such as PVS-Studio.<br/><br/>Reasons to go for PVS-Studio:</p>
+      <ol>
+        <li>Efficient user support</li>
+        <li>Highly developed infrastructure (integration with other products)</li>
+        <li>Powerful diagnostic capabilities</li>
+      </ol>
+      <p>The first two reasons are already enough to tip the scale toward choosing PVS-Studio, but let's talk about the diagnostics too. We are constantly improving our product to stay ahead of other vendors. For instance, our tool can detect an interesting bug described in the article "<a href="https://www.viva64.com/en/b/0550/">February 31</a>".<br/><br/>Being aware that all said above is not enough to make skeptics change their mind, we check compilers every now and then to show that they, too, have bugs, which PVS-Studio can detect:</p>
+      <ul>
+        <li>
+          <a href="http://www.viva64.com/en/b/0108/">LLVM checked in 2011</a>
+        </li>
+        <li>
+          <a href="http://www.viva64.com/en/b/0155/">LLVM checked in 2012</a>
+        </li>
+        <li>
+          <a href="http://www.viva64.com/en/b/0425/">GCC checked in 2016</a>
+        </li>
+        <li>
+          <a href="http://www.viva64.com/en/b/0446/">LLVM checked in 2016</a>
+        </li>
+        <li>
+          <a href="https://www.viva64.com/en/b/0622/">Roslyn (.NET Compiler Platform) checked in 2019</a>
+        </li>
+        <li>
+          <a href="https://www.viva64.com/en/b/0629/">LLVM checked in 2019</a>
+        </li>
+      </ul>
+      <h3>P.S.</h3>
+      <p>If you still doubt whether you should use PVS-Studio, just look at this list of the <a href="https://www.viva64.com/en/examples/">bugs it has found in various projects</a>.</p>
+      <h3>References</h3>
+      <ol>
+        <li>PVS-Studio: <a href="https://www.viva64.com/en/pvs-studio/">homepage</a>, <a href="https://www.viva64.com/en/m/">documentation</a>, <a href="https://www.viva64.com/en/pvs-studio-download/">download</a>, <a href="https://www.viva64.com/en/order/">buy</a>.</li>
+        <li>Arguments in favor of PVS-Studio: <a href="https://www.viva64.com/en/inspections/">projects checked</a>, <a href="https://www.viva64.com/en/customers/">customers</a>, <a href="https://www.viva64.com/en/b/0606/">ROI</a>.</li>
+        <li>
+          <a href="https://www.viva64.com/en/b/0633/">How to quickly check out interesting warnings given by the PVS-Studio analyzer for C and C++ code?</a>
+        </li>
+        <li>
+          <a href="https://www.viva64.com/en/b/0625/">Briefly about PVS-Studio as SAST a solution</a>
+        </li>
+        <li>
+          <a href="https://www.viva64.com/en/b/0659/">PVS-Studio: Engine of Progress</a>
+        </li>
+        <li>
+          <a href="https://www.viva64.com/en/b/0675/">For professors' note: use PVS-Studio to get students familiar with code analysis tools</a>
+        </li>
+        <li>
+          <a href="https://www.viva64.com/en/b/0637/">Why We Don't Write Articles Comparing PVS-Studio with Other Static Analyzers</a>
+        </li>
+        <li>
+          <a href="https://www.viva64.com/en/b/0514/">How Can PVS-Studio Help in the Detection of Vulnerabilities?</a>
+        </li>
+        <li>
+          <a href="https://www.viva64.com/en/l/full/">Lessons on development of 64-bit C/C++ applications</a>
+        </li>
+        <li>
+          <a href="https://www.viva64.com/en/b/0592/">Technologies used in the PVS-Studio code analyzer for finding bugs and potential vulnerabilities</a>
+        </li>
+        <li>
+          <a href="https://www.viva64.com/en/b/0603/">PVS-Studio for Java</a>
+        </li>
+      </ol>
+      <related>
+        <h4>Similar posts</h4>
+        <a href="https://habr.com/en/post/469915/"/>
+        <a href="https://habr.com/en/post/460121/"/>
+        <a href="https://habr.com/en/post/449020/"/>
+      </related>
+    </article>
+  </body>
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://virgool.io/flutter-community/flutter-learning-dio-vf5wsjfeti47"/>
+    <meta property="og:site_name" content="ویرگول"/>
+    <meta property="article:published_time" content="2019-11-24T18:39:52+00:00"/>
+    <meta property="og:title" content="آموزش فلاتر ( Flutter ) - ارتباط با سرور Dio"/>
+    <meta property="og:description" content="تو این قسمت واسه اتصال به اینترنت و ارتباط با سرور از کتابخونه Dio استفاده میکنیم و تون رو مورد بررسی قرار میدیم"/>
+  </head>
+  <body>
+    <article>
+      <h1>آموزش فلاتر ( Flutter ) - ارتباط با سرور Dio</h1>
+      <address><time datetime="2019-11-24T18:39:52+00:00">24 Nov 2019, 18:39</time> by <a rel="author" href="https://virgool.io/flutter-community/@payam-zahedi" target="_blank">Payam Zahedi</a></address>
+      <figure>
+        <img src="https://files.virgool.io/upload/users/35634/posts/vf5wsjfeti47/enkyu3ce2xug.png"/>
+      </figure>
+      <p>چند وقتی میشه با فلاتر آشنا شدم. نسبت به تجربه‌ای که تو اندروید داشتم طراحی UI تو فلاتر خیلی آسون‌تره واسه همین تصمیم گرفتم یه پروژه با فلاتر درست کنم و تصمیم دارم پروژمو این جا با شما به اشتراک بزارم. تو این مجموعه از پست‌ها چند تا از مهم‌ترین موضوعات فلاتر رو باهم بررسی می‌کنیم و در نهایت یک پروژه کامل رو به پایان می‌رسونیم. این پست چهارمین پست از این سری هستش و در اون به ارتباط با سرور با استفاده کتابخونه Dio می‌پردازیم. برای دیدن قسمت قبل می‌تونید به این <a href="https://virgool.io/flutter-community/flutter-learning-abstract-zcj0phhevl5v">لینک </a>مراجعه کنید.</p>
+      <h3>مطالبی که تو این مجموعه یاد می‌گیریم به چند قسمت تقسیم میشن:</h3>
+      <ul>
+        <li>
+          <a href="https://virgool.io/@payam-zahedi/flutter-learning-abstract-zcj0phhevl5v">مقدمه.</a>
+        </li>
+        <li>
+          <a href="https://virgool.io/flutter-community/flutter-learning-ui-oljoppi6tbvw">طراحی UI اولیه اپلیکیشن.</a>
+        </li>
+        <li>
+          <a href="https://virgool.io/@payam-zahedi/flutter-json-serialization-pcmzkabozti5">ساخت مدل‌ها و کدهای مربوط به تبدیل اون به Json (از کتابخونه معروف json_serializable استفاده می‌کنیم).</a>
+        </li>
+        <li>
+          <b>
+            <i>ارتباط با سرور (از کتابخونه Dio تو این قسمت استفاده شده).</i>
+          </b>
+        </li>
+        <li>استفاده از کتابخونه cached_network_image برای گرفتن عکس از اینترنت و کش کردن اون.</li>
+        <li>استفاده از انیمیشن در فلاتر.</li>
+        <li>ساخت launcher icon دلخواه برای android و ios در فلاتر.</li>
+      </ul>
+      <hr/>
+      <h3>ساخت سرور فیک</h3>
+      <p>خوب قبل از این که یه راست بریم سراغ کتابخونه Dio باید یه سرور داشته باشیم که بتونیم داده‌هارو از روی اون بخونیم. تو این اپ ما از سرور فیک <a href="https://jsonplaceholder.typicode.com/">JSONPlaceholder </a>استفاده کردیم. این سایت به ما این امکان رو میده که از API ها از پیش آماده شدش استفاده کنیم، علاوه بر اون با استفاده از یک فایل Json این امکان رو به ما میده که سرور API فیک خودمون رو هم بسازیم. از طریق این <a href="https://my-json-server.typicode.com/">لینک </a>می‌تونید به قسمتی برید که آموزش میده سرور فیک خودتون رو بسازید. در این پروژه هم از<a href="https://github.com/payam-zahedi/featured-food-sample/blob/master/db.json"> این فایل json </a>به عنوان منبع سرور فیک استفاده شده. بیشتر از این توضیحی نمیدیم و میریم سر اصل مطلب. اگر خواستید می‌تونید دایکیومنت‌های سایت رو بررسی کنید و سرورفیک خودتون رو بسازید.</p>
+      <hr/>
+      <h3>کتابخانه Dio</h3>
+      <p>کتابخانه Dio قابلیت‌های زیادی از جمله پشتیبانی از Interceptor ها، تنظیمات(پیکربندی) سراسری، کنسل کردن درخواست‌ها، دانلود فایل‌ها و ... داره. توضیحات خود کتابخونه Dio:</p>
+      <blockquote>A powerful Http client for Dart, which supports Interceptors, Global configuration, FormData, Request Cancellation, File downloading, Timeout etc.</blockquote>
+      <p>واسه استفاده از این کتابخونه اول باید اون رو به پروژه اضافه کنید. پس کد زیر رو به فایل pubspec.yaml اضافه کنید.</p>
+      <pre>dependencies:<br/>        dio: 3.x.x  #latest version</pre>
+      <p>دستور flutter pub get رو اجرا کنید و دیگه همه چیز آمادس.</p>
+      <h3>متدهای GET , POST , PUT , DELETE</h3>
+      <p>
+        <b>متد GET</b>
+      </p>
+      <p>کد زیر یک نمونه ساده از دریافت داده با استفاده از متد GET هستش.</p>
+      <pre>import 'package:dio/dio.dart';<br/>void getHttp() async {<br/>  try {<br/>      Dio dio= Dio();<br/>      Response response = await dio.get(&amp;quothttp://www.google.com&amp;quot);<br/>      print(response);<br/>  } catch (e) {<br/>      print(e)<br/>  }<br/>}</pre>
+      <p>در کد بالا یه در خواست با متد GET ارسال شده که نمونه Dio درخواست رو ارسال میکنه و منتظر میمونه تا جوابو دریافت کنه و بعد جواب رو تو کنسول چاپ میکنه. و همچنین سایت google در اولین پارمتر به عنوان url برای متد فرستاده میشه.</p>
+      <p>
+        <b>متد POST</b>
+      </p>
+      <p>از متد POST زمانی استفاده می‌کنیم که به عنوان مثال بخوایم چیزی رو برای سرور ارسال کنیم.</p>
+      <pre>import 'package:dio/dio.dart';<br/>void postHttp() async {<br/>  try {<br/>      Dio dio= Dio();<br/>      Response response = dio.post(&amp;quoturl.com&amp;quot, data: {&amp;quotid&amp;quot: 12, &amp;quotname&amp;quot: &amp;quotwendu&amp;quot});<br/>      print(response);<br/>  } catch (e) {<br/>      print(e)<br/>  }<br/>}</pre>
+      <p>تو این متد از روش پست استفاده کردیم و علاوه بر آدرس پارامتر data رو هم برای Dio ارسال کردیم. این پارامتر همون داده‌هایی هست که تو متدها POST و PUT برای API خودمون ارسال می‌کنیم. اگه از نرم‌افزار postman برای تست استفاده کرده باشین میتونین این پارامتر‌هارو تو تب body اضافه کنید.</p>
+      <p>
+        <b>متد PUT</b>
+      </p>
+      <p>متد PUT معمولا زمانی استفاده میشه که می‌خواید مقادیری رو اپدیت کنید.</p>
+      <pre>import 'package:dio/dio.dart';<br/>void putHttp() async {<br/>  try {<br/>      Dio dio= Dio();<br/>      Response response = dio.put(&amp;quoturl.com&amp;quot, data: {&amp;quotid&amp;quot: 12, &amp;quotname&amp;quot: &amp;quotwendu&amp;quot});<br/>      print(response);<br/>  } catch (e) {<br/>      print(e)<br/>  }<br/>}</pre>
+      <p>این متد هم دقیقا مثل متد POST نوشته میشه.</p>
+      <p>
+        <b>متد DELETE</b>
+      </p>
+      <p>زمانی استفاده میشه که بخوایم یه مقدار رو حذف کنیم.</p>
+      <pre>import 'package:dio/dio.dart';<br/>void deleteHttp() async {<br/>  try {<br/>      Dio dio= Dio();<br/>      Response response = dio.delete(&amp;quoturl.com/2&amp;quot);<br/>      print(response);<br/>  } catch (e) {<br/>      print(e)<br/>  }<br/>}</pre>
+      <p>تو این مثال درواقع داریم آیتمی با id دو رو حذف می‌کنیم. خوب تا اینجا که به نظرم کار خیلی ساده بود.</p>
+      <hr/>
+      <h3>رسیدگی به Error ها</h3>
+      <p>ارور ها و اکسپشن ها مربوط به Dio با استفاده از کلاس DioError مورد بررسی قرار میگره. این به این معنیه که وقتی اررور یا اکسپشنی اتفاق میوفته در عبارت try-catch، یه ابجکت DioError پرتاپ میشه و ما با استفاده از catch اون رو مورد بررسی قرار میدیم. به تیکه کد زیر توجه کنید.</p>
+      <pre>try {<br/>    //404<br/>    await dio.get(&amp;quothttps://wendux.github.io/xsddddd&amp;quot);<br/>} on DioError catch(e) {<br/>    if(e.response) {<br/>        print(e.response.data)<br/>        print(e.response.headers)<br/>        print(e.response.request)<br/>    } else{<br/>        print(e.request)<br/>        print(e.message)<br/>    }<br/>}</pre>
+      <p>در کد بالا ما ابجک DioError رو گرفتیم و داده ها داخلش رو پرینت کردیم شما هم میتونید این کار رو انجام بدید. اما یه نکته مهم درمورد اررور ها وجود داره. اررور ها به دو دسته تقسیم میشن:</p>
+      <ul>
+        <li>ارور های سیستمی</li>
+        <li>ارور های response(پاسخ)</li>
+      </ul>
+      <p>از ارورای سیستمی میشه به خاموش بود کانکشن های اینترنت (مثل WiFi و دیتا) یا قطع بودن اینترنت اشاره کرد و ....</p>
+      <p>و از اررور های پاسخ میشه به اررور 404 اشارده کرد( در واقع Dio هر ریسپانسی که status کدش بین 200 تا 300 نباشه رو به صورت یک اررور برمیگردونه- البته این اپشین قابل تنظیمه).</p>
+      <hr/>
+      <h3>کلاس Request Option</h3>
+      <p>این کلاس زمانی استفاده میشه که میخواید با استفاده از Dio یه درخواستی رو ارسال کنید. کار با این کلاس خیلی مهمه و با استفاده ازش میتونید درخواست هاتون رو شخصی سازی کنید. این کلاس از متغیر هایی زیر تشکیل شده</p>
+      <pre>Request Option<br/>{<br/>/// Http method.<br/>String method;<br/><br/>/// Request base url, it can contain sub path, like: &amp;quothttps://www.google.com/api/&amp;quot.<br/>String baseUrl;<br/><br/>/// Http request headers.<br/>Map&lt;String, dynamic&gt; headers;<br/><br/>/// Timeout in milliseconds for opening  url.<br/>int connectTimeout;<br/><br/>///  Whenever more than [receiveTimeout] (in milliseconds) passes between two events from response stream, [Dio] will throw the [DioError] with [DioErrorType.RECEIVE_TIMEOUT].<br/>int receiveTimeout;<br/><br/>/// Request data, can be any type.<br/>T data;<br/><br/>/// path will be added to base url<br/>String path=&amp;quot&amp;quot<br/><br/>/// request content type<br/>String contentType;<br/><br/>/// request Response type<br/>ResponseType responseType;<br/><br/>  /// `validateStatus` defines whether the request is successful<br/>  ValidateStatus validateStatus;<br/><br/>  Map&lt;String, dynamic&gt; extra;<br/><br/>  /// Common query parameters<br/>  Map&lt;String, dynamic /*String|Iterable&lt;String&gt;*/ &gt; queryParameters;  <br/>  }</pre>
+      <p>
+        <b>توضیحات مختصری درمورد هرکدوم از مقادیر بالا:</b>
+      </p>
+      <ul>
+        <li>متغیر Method: به عنوان نوع نوع درخواست http میشه ازش استفاده کرد. (Post, Put, Delete,Get)</li>
+        <li>متغیر BaseUrl: به عنوان آدرس اصلی استفاده میشه. مثلا اگه دامنه Api هاتون مشخصه میشه این متغیر رو ثابت تعریف کنید.</li>
+        <li>متغیر Headers: که با استفاده از یه Map میتونید هدر های درخواستتون رو مشخص کنید.</li>
+        <li>متغیر connectTimeout و receiveTimeout: اولی برای تا زمان اتمام برقراری ارتباط و دومی برای زمان ارتباط دریافت جواب هستش.</li>
+        <li>و مواردی که کاملا مشخص هستند و خودتون میتونید مطالعه کنید و از بحث این آموزش خارجه.</li>
+      </ul>
+      <p>با استفاده از این کلاس میتونید درخواست هاتون رو شخصی سازی کنید. همچنین میتونید یه ابجکت ثابت برای همه ی درخواست هاتون استفاده کنید. برای اینکار میتونید یه requestOption درست کنید و به وقتی دارین ابجکت Dio رو میسازید به این ابجکت پاسش کنید. به کد زیر نگاه کنید.</p>
+      <hr/>
+      <h3>استفاده از Dio در این پروژه</h3>
+      <p>ما در این پروژه از Dio استفاده کردیم، و یه کلاس به اسم سرویس درست کردیم تا کارهای مربوط به ارتباط با سرور مون رو اونجا پیاده سازی کنیم. میتونید به آدرس زیر برید و با توجه به چیز هایی که یاد گرفتید کد مربوط به پیاده سازی Api رو مطاله کنید.</p>
+      <p>
+        <i>
+          <a href="https://github.com/payam-zahedi/featured-food-sample/blob/master/lib/api/service.dart">لینک کلاس</a>
+        </i>
+      </p>
+      <hr/>
+      <p>تو کلاس بالا مهم ترین بخش، متد دریافت اطلاعات مربوط به غذاهاست. اگر به کد زیر نگاه کنید متوجه میشید که با استفاده از متد <b>GET</b>، یه درخواست به فایل /db ارسال کردیم و بعد از پارس کردن <b>json </b>یه لیستی از غذا هارو برمیگردونیم.</p>
+      <pre>static Future&lt;FoodList&gt; fetchData() async {<br/>  try {<br/>    Response response = await getInstance().get(&amp;quot/db&amp;quot);<br/>    if (response.statusCode == 200) {<br/>      // If server returns an OK response, parse the JSON.<br/>      var jsonString = json.encode(response.data);<br/>      Map userMap = jsonDecode(jsonString);<br/>      return FoodList.fromJson(userMap);<br/>    } else {<br/>      // If that response was not OK, throw an error.<br/>      throw DioError(message :'exception throwed in Try');<br/>    }<br/>  } on DioError catch(e) {<br/>      throw Exception(&amp;quotSomeThing is Wrong: \n ${_checkError(e)}&amp;quot);<br/>  }<br/>}</pre>
+      <p>
+        <b>اگر پیشهاد، انتقاد یا نظری دارید خوشحال میشم که با به اشتراک گزاشتنش باعث بحبود عملکردم بشید ممنون.</b>
+      </p>
+      <hr/>
+      <h3>منابع</h3>
+      <p>
+        <a href="https://pub.dev/packages/dio">https://pub.dev/packages/dio</a>
+      </p>
+      <p>
+        <a href="https://medium.com/flutter-community/dio-interceptors-in-flutter-17be4214f363">https://medium.com/flutter-community/dio-interceptors-in-flutter-17be4214f363</a>
+      </p>
+      <p>
+        <a href="https://blog.usejournal.com/flutter-http-requests-with-dio-rxdart-and-bloc-da325ca5fe33">https://blog.usejournal.com/flutter-http-requests-with-dio-rxdart-and-bloc-da325ca5fe33</a>
+      </p>
+    </article>
+  </body>
+</html>

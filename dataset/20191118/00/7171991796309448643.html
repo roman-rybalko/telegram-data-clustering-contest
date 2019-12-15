@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://hackaday.com/2019/11/18/colorizing-images-with-the-help-of-ai/"/>
+    <meta property="og:site_name" content="Hackaday"/>
+    <meta property="article:published_time" content="2019-11-18T00:00:00+00:00"/>
+    <meta property="og:title" content="Colorizing Images With The Help Of AI"/>
+    <meta property="og:description" content="The world was never black and white – we simply lacked the technology to capture it in full color. Many have experimented with techniques to take black and white images, and colorize them. [A…"/>
+  </head>
+  <body>
+    <article>
+      <h1>Colorizing Images With The Help Of AI</h1>
+      <address><time datetime="2019-11-18T00:00:00+00:00">18 Nov 2019</time> by <a rel="author" href="https://hackaday.com/author/lewinday/" target="_blank">Lewin Day</a></address>
+      <p>The world was never black and white – we simply lacked the technology to capture it in full color. Many have experimented with techniques to take black and white images, and colorize them. <a href="https://www.pyimagesearch.com/2019/02/25/black-and-white-image-colorization-with-opencv-and-deep-learning/">[Adrian Rosebrock] decided to put an AI on the job, with impressive results.</a></p>
+      <p>The method involves training a Convolutional Neural Network (CNN) on a large batch of photos, which have been converted to the Lab colorspace. In this colorspace, images are made up of 3 channels – lightness, a (red-green), and b (blue-yellow). This colorspace is used as it better corresponds to the nature of the human visual system than RGB. The model is then trained such that when given a lightness channel as an input, it can predict the likely a &amp; b channels. These can then be recombined into a colorized image, and converted back to RGB for human consumption.</p>
+      <p>It’s a technique capable of doing a decent job on a wide variety of material. Things such as grass, countryside, and ocean are particularly well dealt with, however more complicated scenes can suffer from some aberration. Regardless, it’s a useful technique, and far less tedious than manual methods.</p>
+      <p>CNNs are doing other great things too, from <a href="https://hackaday.com/2018/04/26/neural-network-names-nightshades/">naming tomatoes</a> to <a href="https://hackaday.com/2019/08/15/home-automation-at-a-glance-using-ai-glasses/">helping out with home automation.</a> Video after the break.</p>
+      <figure>
+        <iframe src="https://www.youtube.com/embed/r3Mmh_k2F0E" width="800" height="480" data-service="Youtube" scrolling="no"/>
+      </figure>
+      <p>GE</p>
+    </article>
+  </body>
+</html>

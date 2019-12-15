@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://www.bleepingcomputer.com/news/security/new-stealthy-backdoor-used-by-platinum-apt-in-recent-attacks/"/>
+    <meta property="og:site_name" content="BleepingComputer"/>
+    <meta property="article:published_time" content="2019-11-08T17:53:10+00:00"/>
+    <meta property="og:title" content="New Stealthy Backdoor Used by Platinum APT in Recent Attacks"/>
+    <meta property="og:description" content="The advanced persistent threat (APT) group tracked by Microsoft as Platinum is using a new stealthy backdoor malware dubbed Titanium to infiltrate and take control of their targets' systems."/>
+  </head>
+  <body>
+    <article>
+      <h1>New Stealthy Backdoor Used by Platinum APT in Recent Attacks</h1>
+      <address><time datetime="2019-11-08T17:53:10+00:00">08 Nov 2019, 17:53</time> by <a rel="author" href="https://www.bleepingcomputer.com/author/sergiu-gatlan/" target="_blank">Sergiu Gatlan</a></address>
+      <figure>
+        <img src="https://www.bleepstatic.com/content/hl-images/2019/11/08/MAlware_(2).jpg"/>
+      </figure>
+      <p>The advanced persistent threat (APT) group tracked by Microsoft as Platinum is using a new stealthy Trojan-backdoor malware dubbed Titanium to infiltrate and take control of their targets' systems.</p>
+      <p>What makes Titanium stand out is its use of various methods of hiding in plain sight by camouflaging as security solutions, sound drivers, or software commonly used to create DVDs.</p>
+      <p>Platinum (also tracked as <a href="https://www.kaspersky.com/blog/danti/5594/">TwoForOne</a> by Kaspersky) has been active since at least 2009 in the APAC region, targeting "governmental organizations, defense institutes, intelligence agencies, diplomatic institutions, and telecommunication providers in South and Southeast Asia," as per <a href="https://download.microsoft.com/download/2/2/5/225BFE3E-E1DE-4F5B-A77B-71200928D209/Platinum%20feature%20article%20-%20Targeted%20attacks%20in%20South%20and%20Southeast%20Asia%20April%202016.pdf">Microsoft</a>.</p>
+      <p>Microsoft also discovered in 2017 that Platinum started using the Intel Active Management Technology (AMT) Serial-over-LAN (SOL) channel for communication thus <a href="https://www.microsoft.com/security/blog/2017/06/07/platinum-continues-to-evolve-find-ways-to-maintain-invisibility">evading conventional traffic monitoring</a> and filtering solution running compromised devices.</p>
+      <p>As part of the Titanium campaign, Platinum used a multi-step infection sequence that employs several downloading, dropping, and installing stages to infect victims from South and Southeast Asia with the final backdoor payload as researchers at <a href="https://securelist.com/titanium-the-platinum-group-strikes-again/94961/">Kaspersky found during recent analysis</a>.</p>
+      <figure>
+        <img src="https://www.bleepstatic.com/images/news/u/1109292/November%202019/Targeted%20countries.png"/>
+        <figcaption>Targeted countries (<i>Kaspersky</i>)</figcaption>
+      </figure>
+      <h3>Convoluted infection process</h3>
+      <p>The hacking group employed multiple artifacts during these attacks, with each of them using the following specific distribution sequence:</p>
+      <p>• an exploit capable of executing code as a SYSTEM user<br/>• a shellcode to download the next downloader<br/>• a downloader to download an SFX archive that contains a Windows task installation script<br/>• a password-protected SFX archive with a Trojan-backdoor installer<br/>• an installer script (ps1)<br/>• a COM object DLL (a loader)<br/>• the Trojan-backdoor itself</p>
+      <p>Platinum apparently uses local intranet websites to deliver the malicious artifacts during the infection process or a shellcode that gets injected into a system process via a yet unknown method according to Kaspersky's research team.</p>
+      <p>The shellcode's only purpose is of gaining an initial foothold on a target's machine by downloading encrypted payloads from a command and control server, decrypting them, and launching the next payload in the infection chain.</p>
+      <figure>
+        <img src="https://www.bleepstatic.com/images/news/u/1109292/November%202019/Titanium%20C2%20communication.png"/>
+        <figcaption>Titanium C2 communication (<i>Kaspersky</i>)</figcaption>
+      </figure>
+      <p>After compromising a system, the malware will go through the other steps needed to drop the final payload, downloading the files it needs using the Windows Background Intelligent Transfer Service (BITS) service and making use of the legitimate cURL tool to communicate with the C2 server.</p>
+      <p>The Titanium payload will be loaded into memory and launched using a payload loader that makes heavy use of obfuscation via Windows API calls and loops to "bypass some simple AV emulation engines."</p>
+      <p>To initiate C2 server command stream, Titanium sends "a base64-encoded request that contains a unique SystemID, computer name, and hard disk serial number. After that, the malware starts receiving commands."</p>
+      <h3>Backdoor comes with an interactive mode</h3>
+      <p>The received commands are steganographically hidden data within PNG files and they allow the attackers to perform a wide range of tasks including but not limited to:</p>
+      <p>• Read any file from a file system and send it to the C&amp;C<br/>• Drop or delete a file in the file system<br/>• Drop a file and run it<br/>• Run a command line and send execution results to the C&amp;C<br/>• Update configuration parameters (except the AES encryption key)<br/>• Interactive mode – allows to the attacker to receive input from console programs and send their output at the C&amp;C</p>
+      <p>The infiltration scheme used by the Platinum APT group to infect their victims "involves numerous steps and requires good coordination between all of them," Kaspersky concluded.</p>
+      <p>"In addition, none of the files in the file system can be detected as malicious due to the use of encryption and fileless technologies."</p>
+    </article>
+  </body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://www.golem.de/news/programmiersprache-rust-1-39-erscheint-mit-async-await-1911-144872.html"/>
+    <meta property="og:site_name" content="Golem.de"/>
+    <meta property="article:published_time" content="2019-11-08T09:22:01+00:00"/>
+    <meta property="og:title" content="Rust 1.39 erscheint mit Async/Await"/>
+    <meta property="og:description" content="Nach über drei Jahren Arbeit ist die Async-Await-Technik in der nun verfügbaren Version 1.39 der Sprache Rust offiziell stabilisiert. Zudem gibt der neue Borrow-Checker erstmals"/>
+  </head>
+  <body>
+    <article>
+      <h1>Rust 1.39 erscheint mit Async/Await</h1>
+      <h2>Nach über drei Jahren Arbeit ist die Async-Await-Technik in der nun verfügbaren Version 1.39 der Sprache <a href="https://www.golem.de/specials/rust/">Rust</a> offiziell stabilisiert. Zudem gibt der neue Borrow-Checker erstmals Fehler in Rust aus.</h2>
+      <address><time datetime="2019-11-08T09:22:01+00:00">08 Nov 2019, 09:22</time> by <a rel="author">Sebastian Grüner</a></address>
+      <p>Die <a href="https://blog.rust-lang.org/2019/11/07/Rust-1.39.0.html">Version 1.39 der Programmiersprache Rust</a> ist erschienen. Damit ist Technik für die Async-Await-Syntax erstmals offiziell stabil verfügbar. Begonnen haben die Arbeiten daran bereits vor mehr als drei Jahren, wie das Team selbst in einem zusätzlichen <a href="https://blog.rust-lang.org/2019/11/07/Async-await-stable.html">Blogeintrag zu der Technik</a> schreibt. Mit der Version 1.36, die im Sommer dieses Jahres erschienen ist, hat das Entwicklerteam bereits wichtige Vorarbeiten dafür durchgeführt.</p>
+      <p>Die nun verfügbare Implementierung bezeichnet das Team als Minimal Viable Product (MVP) und geht entsprechend davon aus, dass sich die Technik künftig noch stark weiter entwickeln werde. Mit Hilfe der neuen Syntax lassen sich Funktionen und Codeblöcke als <i>async</i> markieren und mit <i>.await</i> kann auf deren Fertigstellung gewartet werden. Der Rückgabewert einer Async-Funktion ist dabei ein Future. Letzteres wiederum beschreiben die Entwickler von Rust als <i>"ausgesetzte Berechnung"</i>.</p>
+      <p>Die Technik lässt sich einfach mit dem Ziel beschreiben, Funktionen auch pausieren zu können. Ähnliche Techniken gibt es auch in anderen Sprachen wie etwa Javascript oder C#. Die Rust-Entwickler weisen aber explizit darauf hin, dass sich das eigene Ausführungsmodell von denen in wichtigen Details unterscheide.</p>
+      <h4>Neuer Borrow-Checker wird eingeführt</h4>
+      <p>Mit Rust 1.39 ändert das Team außerdem das Verhalten <a href="https://blog.rust-lang.org/2019/11/01/nll-hard-errors.html">des neu eingeführten Borrow-Checkers</a> für die Veröffentlichung von Rust 2018. Die alte Technik hatte einige Probleme, die unsichere Speicherzugriffe ermöglichte, was Rust eigentlich verhindern soll. Die neue Implementierung hat zwar diese Probleme behoben, jedoch für einige Fehler in produktivem Code gesorgt.</p>
+      <p>Bisher hat das Team das geänderte Verhalten lediglich als Warnungen angezeigt. Mit der nun veröffentlichten Version 1.39 werden daraus harte Fehler in Rust 2018. Mit der kommenden Version 1.40 soll das auch für Rust 2015 umgesetzt werden, so dass der alte Borrow-Checker entfernt werden kann.</p>
+      <p>Entwickler können mit Rust 1.39 Attribute in Funktionsparametern nutzen. Außerdem sind einige Funktionen aus der Standardbibliothek als <i>const fn</i> verfügbar, dazu gehören etwa <i>Vec::new</i>, <i>String::new</i>, <i>LinkedList::new</i> oder auch <i>str::len</i>. Diese lassen sich in <i>const</i>-Umgebungen aufrufen, also etwa um einen konstanten Vektor zu erzeugen. Weitere Neuerungen listet die Ankündigung.</p>
+    </article>
+  </body>
+</html>

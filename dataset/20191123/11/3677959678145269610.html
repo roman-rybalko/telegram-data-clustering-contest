@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://wccftech.com/multi-gpu-checkerboard-rendering-silently-added-by-nvidia/"/>
+    <meta property="og:site_name" content="Wccftech"/>
+    <meta property="article:published_time" content="2019-11-23T11:01:03+00:00"/>
+    <meta property="og:title" content="Multi-GPU Checkerboard Rendering Silently Added by NVIDIA in Drivers"/>
+    <meta property="og:description" content="Multi-GPU Checkerboard Rendering (CFR) was silently added by NVIDIA in a recent driver release, allowing performance improvements for SLI."/>
+  </head>
+  <body>
+    <article>
+      <h1>Multi-GPU Checkerboard Rendering Silently Added by NVIDIA in Drivers</h1>
+      <address><time datetime="2019-11-23T11:01:03+00:00">23 Nov 2019, 11:01</time> by <a rel="author" href="https://wccftech.com/author/alessio/" target="_blank">Alessio Palumbo</a></address>
+      <figure>
+        <img src="https://cdn.wccftech.com/wp-content/uploads/2019/11/RTX-2080-Ti-SLI-NVLink.jpg"/>
+      </figure>
+      <p>Multi-GPU configurations aren't very popular these days, that's for sure. It doesn't mean NVIDIA isn't working to provide improvements to SLI users, though.</p>
+      <p>3DCenter user Blaire, creator of the popular SLI Compatibility Bits Thread on that forum, <a href="https://www.forum-3dcenter.org/vbulletin/showpost.php?p=12144578&amp;postcount=3586">recently discovered</a> that NVIDIA introduced Multi-GPU Checkerboard Rendering with a recent driver release.</p>
+      <p>
+        <a href="https://wccftech.com/nvidia-geforce-rtx-2080-ti-and-rtx-2080-specs-leak/">NVIDIA GeForce RTX 2080 Ti 11 GB and RTX 2080 8 GB Graphics Cards Core Specifications Confirmed – 2080 Ti With TU102 GPU Rocks 4352 CUDA Cores, 2080 With TU104 Rocks 2944 CUDA Cores</a>
+      </p>
+      <p>It did so ever so silently. In order to enable this feature, you will need to do it via the NVIDIA Inspector Profile tool by changing the settings to be the same as in the screenshot below.</p>
+      <figure>
+        <img src="https://cdn.wccftech.com/wp-content/uploads/2019/11/sli-cfr-bits.png"/>
+      </figure>
+      <blockquote>On the basis of my tests, it is apparently one <u>Checkerboard rendering</u>-based MultiGPU-Render method, which allows more efficient data / memory accesses (P2P) between two suitable NVIDIA "Turing" graphics cards with NVLink interface, with the special feature that it also copes with DirectX 12 games / applications! And that's what makes it so interesting! The new mode apparently replaces the old Split-Frame-Rendering mode (it is activated with the same Setting ID) which was not officially available for some time via NVIDIA Driver Control Panel, but the new CFR-Mode works for all current ones DirectX API's, from DX10 upwards!</blockquote>
+      <p>You might remember that Checkerboard Rendering became popular <a href="https://wccftech.com/ubisoft-figured-fit-lot-stuff-esram/">after its use in Rainbow Six: Siege</a> and then as a staple of PlayStation 4 Pro's 4K games. The difference is that the technique was used there to display even pixels on one frame and odd pixels on another frame to save performance; for multi-GPU configurations, the goal is to allow one graphics card to draw even pixels and the other to take care of odd pixels, all in the same frame.</p>
+      <p>3DCenter's Blaire tested the feature in several games, noting that it can potentially work on DX10/DX11/DX12 titles, though it depends on the individual game. A few like Monster Hunter World and GRID just crash after enabling Multi-GPU Checkerboard Rendering; others, such as Quantum Break and The Elder Scrolls V Skyrim Special Edition, do not benefit at all.</p>
+      <p>Still, when it worked, Multi-GPU Checkerboard Rendering yielded interesting results. As you can see below, for some reason Crysis 3 works better with the old Alternate Frame Rendering (AFR) mode, though CFR does provide higher minimum frames per second.</p>
+      <p>
+        <a href="https://wccftech.com/detroit-become-human-checkerboard-4k/">Detroit: Become Human Uses Checkerboard 4K on PlayStation 4 Pro, Features TAA &amp; Volumetric Lighting</a>
+      </p>
+      <figure>
+        <img src="https://cdn.wccftech.com/wp-content/uploads/2019/11/crysis3-comparison.png"/>
+      </figure>
+      <p>In the other tests, however, Multi-GPU Checkerboard Rendering comes out the clear winner. Chernobylite registered modest improvements with CFR over AFR2 mode for average frames per second (76 vs 72,3) and maximum frames per second (96,2 vs 90,6) but made a massive 14fps jump for minimum frames per second (55,8 vs 41,8).</p>
+      <figure>
+        <img src="https://cdn.wccftech.com/wp-content/uploads/2019/11/chernobylite-comparison.png"/>
+      </figure>
+      <p>Meanwhile, A Plague Tale: Innocence doesn't work with AFR at all, which means Multi-GPU Checkerboard Rendering provides a significant performance boost for all SLI users.</p>
+      <figure>
+        <img src="https://cdn.wccftech.com/wp-content/uploads/2019/11/a-plague-tale-innocence-comparison.png"/>
+      </figure>
+      <p>Blaire even captured gameplay footage of Metro Exodus (DX12; DLSS isn't compatible) and <a href="https://wccftech.com/neon-noir-cryengine-hardware-api-agnostic-ray-tracing-demo-tested-and-available-now/">the new CRYENGINE powered Neon Noir ray tracing tech demo</a> to showcase SLI CFR in action.</p>
+      <figure>
+        <iframe src="https://www.youtube.com/embed/PBO1jDM3atA" width="500" height="281" data-service="Youtube" scrolling="no"/>
+      </figure>
+      <figure>
+        <iframe src="https://www.youtube.com/embed/v7_wsdoUaO8" width="500" height="281" data-service="Youtube" scrolling="no"/>
+      </figure>
+      <p>The fact that NVIDIA hasn't officially said a word about it easily explains why the compatibility list of Multi-GPU Checkerboard Rendering is currently rather short. That said, its addition proves NVIDIA is working to improve the SLI gaming experience. There's even speculation that this could be applied to the <a href="https://wccftech.com/nvidia-hopper-gpu-mcm-leaked/">rumored 'Hopper' line of GPUs</a> since it's supposed to feature a multi-chip-module (MCM) design.</p>
+      <p>That's quite a way off, anyway, as it'll only release after Ampere (expected next year). Perhaps we'll learn more about Multi-GPU CFR sooner than that in an official capacity.</p>
+    </article>
+  </body>
+</html>

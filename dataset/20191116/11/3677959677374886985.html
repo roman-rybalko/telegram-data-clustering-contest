@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://wccftech.com/nvidia-hopper-gpu-mcm-leaked/?utm_source=dlvr.it&amp;utm_medium=twitter"/>
+    <meta property="og:site_name" content="Wccftech"/>
+    <meta property="article:published_time" content="2019-11-16T11:01:44+00:00"/>
+    <meta property="og:title" content="NVIDIA Next Generation Hopper GPU Leaked – Based On MCM Design, Launching After Ampere"/>
+    <meta property="og:description" content="NVIDIA's upcoming next-generation Hopper GPU has leaked out and represents a huge step up in performance over Turing and Ampere graphics cards."/>
+  </head>
+  <body>
+    <article>
+      <h1>NVIDIA Next Generation Hopper GPU Leaked – Based On MCM Design, Launching After Ampere</h1>
+      <address><time datetime="2019-11-16T11:01:44+00:00">16 Nov 2019, 11:01</time> by <a rel="author" href="https://wccftech.com/author/usmanpirzada/" target="_blank">Usman Pirzada</a></address>
+      <figure>
+        <img src="https://cdn.wccftech.com/wp-content/uploads/2019/11/nvidia-hopper-featured-image-2060x1160.jpg"/>
+      </figure>
+      <p>Ladies and gentlemen, we have what is probably the biggest and most exciting rumor of 2019 with NVIDIA's Hopper MCM GPU. This GPU is supposedly going to succeed Ampere and will consist of a family of incredibly powerful graphics cards with multiple dies in a single package (ergo Multi-Chip-Module or MCM). It goes without saying that since this is the first time we are hearing about it, and until we have further verification, this is going to be marked rumor and to be taken with a pinch of salt - although I do want to say this sounds very plausible and would be in line with technological trends of the industry.</p>
+      <h3>NVIDIA Hopper GPU: Very powerful MCM-based architecture that will come after Ampere</h3>
+      <p>NVIDIA's architectures are always based on computer pioneers and this one appears to be no different. Nvidia's Hopper architecture is based on Grace Hopper who was one of the pioneers of computer science and one of the first programmers of Harvard Mark 1 and inventor of the first linkers. She also popularized the idea of machine-independent programming languages which led to the development of COBOL - an early high-level programming language still in use today. She enlisted in the Navy and helped the American War efforts during World War II.</p>
+      <figure>
+        <img src="https://cdn.wccftech.com/wp-content/uploads/2019/11/grace-hopper.jpg"/>
+      </figure>
+      <p>An MCM-based design is arguably the next step in GPU evolution considering we are now being limited by the reticle size of most EUV scanners. Architectural improvements and MCM-design is the next logical frontier and since AMD has already executed on it on the CPU front, it makes sense that GPUs would be the next step in their grand plan - which would explain why NVIDIA would want to get a headstart on it all and beat them to the punch. The leak occurred from a well-known twitter account and the tweets have since been deleted but not before the Twitterati caught it and posted about it (over at <a href="https://www.3dcenter.org/news/hardware-und-nachrichten-links-des-1112-november-2019">3DCenter.org</a>).</p>
+      <h3>NVIDIA Hopper: exploring the multi-chip module die philosophy for GPUs</h3>
+      <figure>
+        <img src="https://cdn.wccftech.com/wp-content/uploads/2017/10/AMD-Navi-GPU-Launching-in-2018-Could-Be-MCM-Based-1030x635.png"/>
+      </figure>
+      <p>AMD has already proven itself to be exceptionally good at creating MCM based products. The Threadripper and Ryzen series has been absolutely disruptive to the HEDT market space. They single-handedly turned what was usually a 6-core and very expensive affair to a 16 core affordable combo using an MCM package. The power of servers and Xeons was finally in the hands of average consumers, so why can't the same philosophy work for GPUs as well? I am sure you already know that NVIDIA can use the MCM-philosophy to beat the reticle size of scanners and build truly monstrous GPUs exceeding a net surface area of 1000mm² but are there other advantages as well?<br/>Well, theoretically speaking, it should work better in all regards for GPUs which are parallel devices than for CPUs which are serial devices. Not only that but you are looking at massive yield gains from just shifting to an MCM based approach instead of a monolithic die. A single huge die has abysmal yields, is expensive to produce and usually has high wastage. Multiple chips totaling the same die size would offer yield increases straight of the bat. This is a great argument in favor of the NVIDIA Hopper GPU.</p>
+      <figure>
+        <img src="https://cdn.wccftech.com/wp-content/uploads/2019/11/die-size-comparison-mcm-gpu-medium-chip.jpg"/>
+      </figure>
+      <p>I took the liberty to do some rough approximations using the lovely <a href="http://www.silicon-edge.co.uk/j/index.php/resources/die-per-wafer">Silicon Edge </a>tool and was not surprised to see instant yield gains. Taking a die measuring 484mm² (eg: Vega 64) which equates to a die measuring 22mm by 22mm. Splitting this monolithic die into 4x 11mm by 11mm gives you the same net surface area  (484mm²) and will also result in yield gains. How much? Let's see. According to the approximation, a 300mm wafer should be able to produce 114 monolithic dies (22x22) or 491 smaller dies (11x11). Since we need 4 smaller dies to equal 1 monolithic part, we end up with 122 484mm² MCM dies. That's a yield gain of 7.6% right there.</p>
+      <figure>
+        <img src="https://cdn.wccftech.com/wp-content/uploads/2019/11/die-size-comparison-mcm-gpu-large-chip.jpg"/>
+      </figure>
+      <p>The yield gains are even larger for bigger chips. The upper limit of lithographic techniques (with reasonable yields) is roughly 815mm². On a single 300mm wafer, we can get about 64 of these (28.55x28.55) or 285 smaller dies (14.27x14.27). That gives us a total of 71 MCM based dies for a yield increase of roughly 11%. Now full disclosure, this is a very rough approximation and does not take into account several factors such as packaging yields, rectangular die and other shape-based optimization of the wafer etc but the basic idea holds well. Conversely, it also does not take into account increased gains by lowered wastage - a faulty 815mm² monolithic die is much more wasteful than a single 203mm² one! This means this approach has the added benefit of minimizing the impact of defective dies - which will add on to these yield numbers once you factor in unusable dies.</p>
+      <p>Long story short, NVIDIA is perfectly capable of creating an MCM based GPU and would even get some serious yield benefits out of this if it chooses to run with this for Hopper GPUs. Considering the 7nm node is now entering a mature stage with EUV, etches are going to be very clear and should be able to support a concept like this with ease but are still limited by the reticle size. Switching to an MCM based design would allow NVIDIA to build monstrous GPUs with a net die size of more than 815mm² (the sky is the limit with MCM - as AMD has proven)! So if it wants to continue on its non-linear performance increase trend that has made it so successful, it might not have any other option but to adopt this.</p>
+      <p>
+        <b>What do you think of the MCM GPU philosophy?</b>
+      </p>
+      <ul>
+        <li>Only works for CPUs.</li>
+        <li>The next logical step after MCM CPUs/Exciting!</li>
+        <li>Meh, who cares.</li>
+      </ul>
+      <p><a href="https://wccftech.com/nvidia-hopper-gpu-mcm-leaked/javascript:void(0);">View Results</a>Poll Options are limited because JavaScript is disabled in your browser.</p>
+    </article>
+  </body>
+</html>

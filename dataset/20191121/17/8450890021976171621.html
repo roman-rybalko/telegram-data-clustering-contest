@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://www.computerworld.com/article/3454625/android-camera-vulnerability.html"/>
+    <meta property="og:site_name" content="Computerworld"/>
+    <meta property="article:published_time" content="2019-11-21T17:21:00+00:00"/>
+    <meta property="og:title" content="The 5 true takeaways from Android's camera vulnerability circus"/>
+    <meta property="og:description" content="Are sophisticated attackers hijacking your phone's camera and stealing your most precious secrets? Um, yeah — about that...."/>
+  </head>
+  <body>
+    <article>
+      <h1>The 5 true takeaways from Android's camera vulnerability circus</h1>
+      <h2>Are sophisticated attackers hijacking your phone's camera and stealing your most precious secrets? Um, yeah — about that....</h2>
+      <address><time datetime="2019-11-21T17:21:00+00:00">21 Nov 2019, 17:21</time> by <a rel="author">JR Raphael</a></address>
+      <p>I don't know if you've read much news this week, but it seems the sky is falling and we're all terribly doomed.</p>
+      <p>No, I'm not talking about <i>that</i> news — as usual, that's another column for another publication — but rather the news that a security flaw in some Android camera apps could turn our phones into privacy-plundering spy portals and bring an end to human life as we know it.</p>
+      <p>I mean, have you <i>seen</i> some of these headlines?!</p>
+      <ul>
+        <li>"Hundreds of millions of Android phone cameras can be hijacked by spyware"</li>
+        <li>"Android flaw lets rogue apps take photos, record video even if your phone is locked"</li>
+        <li>"An Android flaw lets apps secretly access people's cameras and upload the videos to an external server"</li>
+      </ul>
+      <p>Holy hibiscus, Henry! Even <i>I'm </i>trembling from all of that, and I <i>know</i> it's a bunch of misguided, sensationalized hooey.</p>
+      <p>Let's back up for a sec and provide some context to all of this: A company called Checkmarx (one guess <a href="https://www.checkmarx.com/products/software-security-platform">how it makes its money</a>) released <a href="https://www.checkmarx.com/blog/how-attackers-could-hijack-your-android-camera">a report</a> this week detailing a vulnerability it found in certain Android device-makers' camera applications. That weakness allowed the firm's researchers to create an app that could capture and collect photos from a phone without its owner's consent. And, yes, that vulnerability <i>could have</i> affected hundreds of millions of people.</p>
+      <p>As usual with these sorts of stories, though, there are some big, juicy buts involved. And those ample, glistening buts are key to understanding what this story really tells us, what we should take away from it, and — critically — why we <i>shouldn't</i> be cowering in carefully covered bunkers until further notice.</p>
+      <p>Let's break it down, shall we?</p>
+      <h3>1. The app at the center of all this was a proof-of-concept creation, with no known real-world implementation.</h3>
+      <p>Before you soil those beautiful britches of yours, remember first and foremost that this whole thing was a security company's <i>demonstration</i> — an act of researchers actively seeking out a vulnerability to exploit and, y'know, also then use to promote their own product (funny <a href="https://www.computerworld.com/article/3411440/android-security-scares.html#1">how that always works out</a>, isn't it?).</p>
+      <p>It was not, as far as anyone is aware, an actual act of data being stolen in the real world.</p>
+      <h3>2. That aside, the setup would have required you to download and install a random (theoretical) app in order to operate.</h3>
+      <p>This isn't a situation where your phone would just suddenly start spewing out personal photos to some random server in the Caspian Sea. (Those sea-dwelling mermaid-servers are the worst, aren't they?) The vulnerability in the camera apps was exploitable only through careful manipulation conducted by a <i>secondary</i> app — something explicitly created for that purpose and something you'd have to go out of your way to download and install before it could do any damage.</p>
+      <p>Such an app never actually existed, outside of this controlled experiment. And even if it did, again, <i>you'd have to download it before it could do anything</i>.</p>
+      <h3>3. The vulnerability was reported to Google and Samsung, both of whom promptly patched the bug.</h3>
+      <p>After discovering this prickly porcupine of a problem, the Checkmarx chums passed the heaping pot of goulash over to Google — and soon after also to Samsung, as it was discovered <i>its </i>camera app was also affected. Both companies worked to correct the code in question and have since reportedly rolled out patches to fix the flaw.</p>
+      <p>As for that bit about "hundreds of millions" of phones being affected? Yeah, that was referring to the Samsung phones — which, again, <i>had been patched by the time this whole thing became public</i>. Contrary to what some lazy, sensational headlines are suggesting, there's nothing to indicate that hundreds of millions of people are actively at risk from this in any way.</p>
+      <h3>4. This is exactly how security should force software to evolve.</h3>
+      <p>Any software — desktop operating systems, mobile operating systems, apps on any platform, you name it — is inherently imperfect. That's the nature of the beast; vulnerabilities are always gonna come up, whether the software is controlled by Google, Samsung, Apple, or anyone else imaginable.</p>
+      <p>That, in fact, is why so many companies actively seek out and sometimes even <i>pay</i> people to hunt for security flaws in their software — so they can find 'em, fix 'em, and continue to strengthen their programs. (Google is doing just that today, in fact, with its <a href="https://security.googleblog.com/2019/11/expanding-android-security-rewards.html">just-announced expansion</a> of its <a href="https://www.google.com/about/appsecurity/android-rewards/">Android Security Rewards</a> program, now with a maximum prize of $1.5 million for anyone who uncovers a particularly problematic bug.) It's a never-ending evolution, and it's the same story for Google as it is for every major software company.</p>
+      <p>What ultimately matters is that the company in question <i>responds</i> to issues that are identified and then patches them promptly — ideally before any real damage is done. And that's precisely what we're seeing play out in this scenario.</p>
+      <h3>5. This is a reminder of why timely updates matter — and why you shouldn't use phones from companies that don't provide 'em.</h3>
+      <p>While Google and especially Samsung were called out as being the primary concerns from this problem, Checkmarx says the vulnerabilities it uncovered could potentially impact the camera apps on other phone-makers' devices — and that "multiple vendors were contacted" with the same information more than a month ago.</p>
+      <p>Now, again, remember what we just talked about: There's no reason to believe <i>any</i> phone is in any sort of imminent, realistic danger from this. But, clearly, this isn't the sort of vulnerability — theoretical and download-requiring as it may be — that you'd want to leave present on your personal technology.</p>
+      <p>More than anything, then, this serves as a strong reminder of just how important it is to have a phone whose manufacturer actually takes security seriously and sends out timely updates, not only in app-specific situations like this but also when it comes to Android's monthly patches — which address similar sorts of flaws on a system level — <i>and</i> Android OS updates, which <a href="https://www.computerworld.com/article/3366218/android-q.html">include countless privacy and security improvements</a> and are about <a href="https://www.computerworld.com/article/3339621/android-upgrades-matter.html">much more than just fresh paint and features</a>.</p>
+      <p>If you aren't using a phone whose manufacturer consistently delivers on all those fronts (and, let's be honest, there <a href="https://www.computerworld.com/article/3336930/android-upgrade-report-card-pie.html">aren't many device-makers that do</a>), you're opting yourself in to less-than-optimal security in exchange for, what? Some flashy hardware, maybe, or a brand name you've bought into before? And, as always, it's hard to see how that's in any way advisable, especially when excellent update-friendly options are readily available <a href="https://www.computerworld.com/article/3395480/pixel-3a-google.html">for as little as a few hundred bucks</a>.</p>
+      <p>But still, all things in perspective: The sky isn't falling, Chicken Little — and whatever fascinating sights might be seen through your phone's camera lens are, in all likelihood, not being secretly recorded or shared with any would-be voyeurs pining for a peep.</p>
+      <p>A little critical thinking and a <a href="https://www.computerworld.com/article/3411440/android-security-scares.html">few simple questions</a> go a long way when it comes to getting past the melodramatic headline hype in situations like this. And, as this latest foofaraw reminds us, there's rarely a cause for panic — no matter how sensational a scare may initially seem.</p>
+      <p>
+        <i>Sign up for <a href="https://www.androidintel.net/">my weekly newsletter</a> to get more practical tips, personal recommendations, and plain-English perspective on the news that matters.</i>
+      </p>
+      <figure>
+        <a href="https://www.androidintel.net/">
+          <img src="https://images.idgesg.net/images/article/2018/09/ai-newsletter-new2-100774017-large.jpg"/>
+        </a>
+      </figure>
+      <p>
+        <b>[<a href="https://www.computerworld.com/video/series/8536/android">Android Intelligence videos at Computerworld</a>]</b>
+      </p>
+    </article>
+  </body>
+</html>

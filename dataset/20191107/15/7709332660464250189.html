@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://css-tricks.com/query-json-documents-in-the-terminal-with-groq/"/>
+    <meta property="og:site_name" content="CSS-Tricks"/>
+    <meta property="article:published_time" content="2019-11-07T15:23:46+00:00"/>
+    <meta property="og:title" content="Query JSON documents in the Terminal with GROQ"/>
+    <meta property="og:description" content="With GROQ you can query JSON and project exactly what you need."/>
+  </head>
+  <body>
+    <article>
+      <h1>Query JSON documents in the Terminal with GROQ</h1>
+      <p>Easily manage projects with <a href="https://synd.co/2JziuUL">monday.com</a></p>
+      <p>JSON documents are everywhere today, but they are rarely structured the way <i>you</i> want them to be. They often include <a href="https://css-tricks.com/meeting-graphql-at-a-cocktail-mixer/">too much data</a>, have weirdly named fields, or place the data in unnecessary nested objects. <a href="https://github.com/sanity-io/groq">Graph-Relational Object Queries</a> (GROQ) is a query language (like SQL, but different) which is designed to work directly on JSON documents. It basically lets you write queries you can quickly filter and then reformat JSON documents to get them into the most convenient shape.</p>
+      <p>GROQ was developed by <a href="https://www.sanity.io/">Sanity.io</a> (where it’s used as the primary query language). It’s <a href="https://www.sanity.io/blog/we-re-open-sourcing-groq-a-query-language-for-json-documents">open source</a> and it gives us built-in ways to use it in <a href="https://github.com/sanity-io/groq-js">JavaScript</a> and the <a href="https://github.com/sanity-io/groq-cli">command line</a> on any JSON source. Together, we’ll add GROQ to the terminal toolkit, which will save you time whenever you need to wrangle some JSON data on a poject.</p>
+      <h3>Let’s install GROQ</h3>
+      <p>Like most things, we need to install the GROQ CLI tool and can do so with with npm (or Yarn) in the terminal:</p>
+      <pre>$ npm install -g groq-cli</pre>
+      <p>In order to play with it, we need to have a JSON file available. We’ll use curl to download an example dataset of todo data:</p>
+      <pre>$ curl -o todos.json https://jsonplaceholder.typicode.com/todos</pre>
+      <p>Let's take a quick look at a sample item in the data:</p>
+      <pre>{ <br/>  "userId": 1, <br/>  "id": 1, <br/>  "title": "delectus aut autem", <br/>  "completed": false <br/>},</pre>
+      <p>Pretty straightforward. We have a user ID, a todo item ID, a todo title and a boolean specifying whether the todo item is completed or not.</p>
+      <p>Now let’s run a basic GROQ query: finding all completed todos, but only return the todo titles and user IDs. It’s OK to copy/paste this line because we’ll walk through what it means in a bit.</p>
+      <pre>$ cat todos.json | groq '*[completed == true]{title, userId}' --pretty</pre>
+      <p>The <code>groq</code> command line tools accept a JSON document on <a href="http://www.linfo.org/standard_input.html">standard input</a>. This works very nicely with the Unix philosophy of “doing one thing and work on a text stream.” In order to read JSON from a <i>file</i> we’ll use the <code><a href="https://en.wikipedia.org/wiki/Cat_(Unix)">cat</a></code> command. Also note that <code>groq</code> will output a minimal JSON on a single line by default, but by passing <code>--pretty</code>, we get a nicely indented and highlighted syntax.</p>
+      <p>To store the result, we can pipe it to a new file using <code>&gt;</code>:</p>
+      <pre>$ cat todos.json | groq '*[completed == true]{title, userId}' &gt; result.json</pre>
+      <p>The query itself consists of three parts:</p>
+      <ul>
+        <li><code>*</code> refers to the dataset (i.e. the data in the JSON file).</li>
+        <li><code>[completed == true]</code> is a <i>filter</i> that removes items that are marked as incomplete.</li>
+        <li><code>{title, userId}</code> is a <i>projection</i> that causes the query to only return the <code>"title"</code> and <code>"userId"</code> properties.</li>
+      </ul>
+      <h4>Let’s warm up with some exercises</h4>
+      <p>You probably didn’t think you’d need to exercise to get through this post! Well, the good news is that we’re only exercising the mind with a few things to try out with GROQ before we get into more details.</p>
+      <ol>
+        <li>What happens if you remove <code>[completed == true]</code> and/or <code>{title, userId}</code>?</li>
+        <li>How can you change the query to find all todos by the user with an ID of 2?</li>
+        <li>How can you change the query to find <i>uncompleted</i> todos by the user with an ID of 2?</li>
+        <li>What happens if the filter in the original query example swaps places with the projection?</li>
+        <li>How would you write a single command (with pipes) that downloads the JSON and processes it with GROQ?</li>
+      </ol>
+      <p>We’ll put the answers at the end of the post for you to reference.</p>
+      <h3>Querying the Nobel prize winners</h3>
+      <p>The todo data is nice for a warmup, but let’s be honest: It’s not very motivating to look at a list that uses Latin as placeholder content. However, the <a href="https://www.nobelprize.org/">Nobel Prize</a> has a <a href="http://api.nobelprize.org/v1/laureate.json">dataset of all past laureates</a> available to use publicly.</p>
+      <p>Here’s a sample return:</p>
+      <pre>{ <br/>  "laureates": [ <br/>    { <br/>      "id": "1", <br/>      "firstname": "Wilhelm Conrad", <br/>      "surname": "Röntgen", <br/>      "born": "1845-03-27", <br/>      "died": "1923-02-10", <br/>      "bornCountry": "Prussia (now Germany)", <br/>      "bornCountryCode": "DE", <br/>      "bornCity": "Lennep (now Remscheid)", <br/>      "diedCountry": "Germany", <br/>      "diedCountryCode": "DE", <br/>      "diedCity": "Munich", <br/>      "gender": "male", <br/>      "prizes": [...], <br/>    }, <br/>    // ... <br/>  ] <br/>}</pre>
+      <p>Ah! This is much more interesting! Let’s download the dataset and find the first name of all Norwegian laureates. Here, we’re going to use <code>--output</code> flag for curl to save the data to a file.</p>
+      <pre>$ curl --output laureate.json http://api.nobelprize.org/v1/laureate.json <br/>$ cat laureate.json | groq '*.laureates[bornCountryCode == "NO"]{firstname}' --pretty</pre>
+      <p>What do you get back? I received 12 Norwegian Nobel laureates. Not bad!</p>
+      <p>Note that this query is not quite like the first query we wrote. We have an extra <code>.laureates</code> in this one. When we used <code>*</code> in the todo dataset, it represents the whole JSON document which is contained in an array at the top-level of the todo dataset. On the other hand, the laureate file uses an <i>object</i> at the top-level where the list of laureates is stored in the <code>"laureates"</code> property.</p>
+      <p>To access a specific item, we can use the filter <code>[0]</code> and return just the first name. That ought to tell us who the first Norwegian was to win a Nobel prize.</p>
+      <pre>$ cat laureate.json | groq '*.laureates[bornCountryCode == "NO"]{firstname}[0]' --pretty <br/><br/>// Returned object <br/>{ <br/>  "firstname": "Ivar" <br/>}</pre>
+      <h4>More exercises!</h4>
+      <p>We’d be remiss not to play around with this new dataset a bit to see how the queries work.</p>
+      <ol>
+        <li>Write a query to find all Nobel laureates from your own country.</li>
+        <li>Write a query to return the <i>last</i> Norwegian laureate. Hint: <code>-1</code> refers to the last item.</li>
+        <li>What happens if you try to filter directly on the root object? <code>*[bornCountryCode == "NO"]</code>?</li>
+        <li>What’s the difference between <code>*.laureates\[bornCountryCode == "NO"\][0]</code> and <code>*.laureates\[0\][bornCountryCode == "NO"]</code>?</li>
+      </ol>
+      <p>Like last time, answers will be at the end of this post.</p>
+      <h3>Working with filters</h3>
+      <p>Now we know that in total there have been 12 Norwegian Nobel laureates, how many of them were born after 1950? That’s no problem figuring out with GROQ:</p>
+      <pre>$ cat laureate.json | groq '*.laureates[bornCountryCode == "NO" &amp;&amp; born &gt;= "1950-01-01"]{firstname}' --pretty <br/><br/>// Sample return <br/>[ <br/>  { <br/>    "firstname": "May-Britt" <br/>  }, <br/>  { <br/>    "firstname": "Edvard I." <br/>  } <br/>]</pre>
+      <p>In fact, GROQ has a rich set of operators we can use inside a filter. We can compare numbers and strings with equal (<code>==</code>), not equal (<code>!=</code>), greater than (<code>&gt;</code>), greater than or equal ( <code>&gt;=</code>), less than (<code>&lt;</code>), and less than or equal (<code>&lt;=</code>). Plus, comparisons can be combined with AND (<code>&amp;&amp;</code>), OR (<code>||</code>) and NOT (<code>!</code>). The <code>in</code> operator even makes it possible to check for many cases at once (e.g. <code>bornCountryCode in ["NO", "SE", "DK"]</code>). And the <code>defined</code> function allows us to see if a field exists (e.g. <code>defined(diedCountry)</code>).</p>
+      <h4>Even more exercises!</h4>
+      <p>You know the drill: try playing with filters a bit to see how they work with the dataset. Answers are at the end, of course.</p>
+      <ol>
+        <li>Write a query that returns living laureates.</li>
+        <li>Is there a difference between the filters <code>[bornCountryCode == "NO"][born &gt;= "1950-01-01"]</code> and <code>[bornCountryCode == "NO" &amp;&amp; born &gt;= "1950-01-01"]</code>?</li>
+        <li>Can you find all laureates that won a prize in 1973?</li>
+      </ol>
+      <h3>Working with projections</h3>
+      <p>The Nobel Prize dataset separates the first name and the surname for each laureate, but what if we want to combine them together into one field? Projections in GROQ can do exactly that!</p>
+      <pre>*.laureates[bornCountryCode == "NO" &amp;&amp; born &gt;= "1950-01-01"]{ <br/>  "name": firstname + " " + surname,  <br/>  born, <br/>  "prizeCount": count(prizes), <br/>}</pre>
+      <p>Running this query tells us that <a href="https://no.wikipedia.org/wiki/May-Britt_Moser">May-Britt Moser</a> and <a href="https://no.wikipedia.org/wiki/Edvard_Moser">Edvard Moser</a> received one prize (which was, in fact, the same prize):</p>
+      <pre>[ <br/>  { <br/>    "name": "May-Britt Moser", <br/>    "born": "1963-01-04", <br/>    "prizeCount": 1 <br/>  }, <br/>  { <br/>    "name": "Edvard I. Moser", <br/>    "born": "1962-04-27", <br/>    "prizeCount": 1 <br/>  } <br/>]</pre>
+      <p>What happened here? Well, when we write a projection in GROQ what we’re really writing is a JSON object. Previously, we had simple projections (like <code>{firstname}</code>), but this is a shortcut way of writing <code>{"firstname": firstname}</code>. By using the expanded object syntax, we can both rename keys and transform the values.</p>
+      <p>GROQ has a rich set of operators and functions for transforming data, including string concatenation, arithmetic operators (<code>+</code>, <code>-</code>, <code>*</code>, <code>/</code>, <code>%</code>, <code>**</code>), counting arrays (<code>count(prizes)</code>), and rounding numbers (<code>round(num, &lt;amount of decimals&gt;</code>).</p>
+      <h4>Exercises</h4>
+      <p>Hopefully, you’re getting a good feel for things at this point, but here are some more ways to practice working with projections:</p>
+      <ol>
+        <li>Find all laureates who have won two or more prizes.</li>
+        <li>Find how many prizes have been won by women.</li>
+        <li>Format a <code>fullname</code> key that combines <code>lastname</code> and <code>firstname</code> in the result.</li>
+      </ol>
+      <h3>Doing more at once</h3>
+      <p>Watch this:</p>
+      <pre>$ cat laureate.json | groq --pretty ' <br/>{ <br/>  "count": count(*.laureates), <br/>  "norwegians": *.laureates[bornCountryCode == "NO"]{firstname},  <br/>} <br/>'</pre>
+      <p>The result:</p>
+      <pre>{ <br/>  "count": 928, <br/>  "norwegians": [ <br/>    { <br/>      "firstname": "Ivar" <br/>    }, <br/>    { <br/>      "firstname": "Lars" <br/>    }, <br/>    … <br/>  ] <br/>}</pre>
+      <p>Catch that? A GROQ query doesn’t have to start with <code>*</code>. In this query, we’re creating a JSON object where the values are results from separate queries. This provides a lot of flexibility in what we can produce with GROQ. Maybe you want the total number of incomplete todos together with a list of the five last ones. Or maybe you want to split the todos into two separate lists: one for completed and one for incomplete. Or maybe you need to wrap everything inside an object because that is what another tool/library/framework expects. Whatever the case, GROQ has you covered.</p>
+      <p>Let’s try one last exercise. Can you project an object where <code>laureates</code> contains an array with a rounded percentage of the total number of prizes that each laureate has run, returning the laureates’ first name? Then, try outputting the total number handed out.</p>
+      <h3>Summary</h3>
+      <p>There isn’t much you need to learn before getting some good use out of GROQ. If you have followed the exercises, you’re on a great path to becoming a GROQ guru. Naturally, this introduction doesn’t touch on all the different features and aspects of GROQ, so feel free to explore <a href="https://sanity-io.github.io/GROQ/">the specification</a> and <a href="https://github.com/sanity-io/groq">the project itself on GitHub</a>. And feel free to reach out to the team at <a href="https://twitter.com/@sanity_io">Sanity.io</a> if you have questions about data wrangling with GROQ.</p>
+      <hr/>
+      <h3>Exercise answers</h3>
+      <p>Exercise 1</p>
+      <h4>Question 1</h4>
+      <p>If you remove <code>[completed == true]</code> you will get all todos, not only those that are completed. If you remove <code>{title, userId}</code> you will get all properties.</p>
+      <h4>Question 2</h4>
+      <pre>*[userId == 2]</pre>
+      <h4>Question 3</h4>
+      <pre>*[userId == 2 &amp;&amp; completed == false] or *[userId == 2 &amp;&amp; !completed]</pre>
+      <h4>Question 4</h4>
+      <p>If you change the order of the filter and the projection you will do the projection first and <i>then</i> apply the filter. This means that you’re filtering on a list of todos that only contain <code>title</code> and <code>userId</code>, and <code>completed == true</code> can never be true.</p>
+      <h4>Question 5</h4>
+      <pre>curl https://jsonplaceholder.typicode.com/todos | groq '*[completed == true]{title, userId}' &gt; result.json</pre>
+      <p>Exercise 2</p>
+      <h4>Question 1</h4>
+      <pre>*.laureates[bornCountryCode == "INSERT-YOUR-COUNTRY-HERE"]</pre>
+      <h4>Question 2</h4>
+      <pre>*.laureates\[bornCountryCode == "NO"\][-1]</pre>
+      <h4>Question 3</h4>
+      <p><code>*[bornCountryCode == "NO"]</code> will try to filter on an object. This doesn’t make any sense, so you’ll get <code>null</code> as the answer.</p>
+      <h4>Question 4</h4>
+      <p><code>*.laureates\[0\][bornCountryCode == "NO"]</code> doesn’t work as you might think. This will first find the <i>first</i> laureate (which happens to be Wilhelm Conrad) and then it will try to “filter” the object. This makes no sense so the answer is <code>null</code>.</p>
+      <p>Exercise 3</p>
+      <h4>Question 1</h4>
+      <pre>*.laureates[died == "0000-00-00"]</pre>
+      <h4>Question 2</h4>
+      <p>There’s no difference between the filters <code>\[bornCountryCode == "NO"\][born &gt;= "1950-01-01"]</code> and <code>[bornCountryCode == "NO" &amp;&amp; born &gt;= "1950-01-01"]</code>. The first one does the filtering in two “passes” but the end result is the same.</p>
+      <h4>Question 3</h4>
+      <pre>*.laureates["1973" in prizes[].year]</pre>
+      <p>Exercise 4</p>
+      <h4>Question 1</h4>
+      <pre>*.laureates[count(prizes) &gt;= 2]</pre>
+      <h4>Question 2</h4>
+      <pre>count(*.laureates[gender == "female"])</pre>
+      <h4>Question 3</h4>
+      <pre>*.laureates{"fullname": surname + ", " + firstname}</pre>
+      <p>Exercise 5</p>
+      <pre>*.laureates{"laureates": {firstname, "percentage": round(count(prizes) / count(*.laureates[].prizes), 3) * 100}, "total": count(*.laureates[].prizes)}</pre>
+    </article>
+  </body>
+</html>

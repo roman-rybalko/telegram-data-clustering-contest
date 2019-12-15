@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://www.forbes.com/sites/moorinsights/2019/11/18/blaize-ai-emerges-from-stealth/"/>
+    <meta property="og:site_name" content="Forbes"/>
+    <meta property="article:published_time" content="2019-11-18T00:00:00+00:00"/>
+    <meta property="og:title" content="Blaize AI Emerges From Stealth"/>
+    <meta property="og:description" content="Analyst Karl Freund takes a look at newly-unveiled AI startup Blaize."/>
+  </head>
+  <body>
+    <article>
+      <h1>Blaize AI Emerges From Stealth</h1>
+      <address><time datetime="2019-11-18T00:00:00+00:00">18 Nov 2019</time> by <a rel="author">Moor Insights and Strategy</a></address>
+      <p>Throughout 2020, a wave of <a href="https://www.forbes.com/sites/moorinsights/2019/01/24/a-cambrian-explosion-in-deep-learning-part-2-the-startups/#6bcabcb47840">AI hardware startups</a> will launch their companies and products. <a href="https://www.forbes.com/sites/moorinsights/2019/08/19/cerebras-unveils-ai-supercomputer-on-a-chip/#5c4bb1ff2fe8">Cerebras started this wave</a> with its wafer-scale engine last September. This week, Intel announced its AI chips from Nervana, Groq (founded by the inventors of Google TPU) announced its quadrillion ops per second TSP, and Graphcore announced that its chip is available on Microsoft Azure and Dell servers. Last week, a startup named “Blaize,” previously named “Thinci,” emerged from stealth, having already reached key milestones in four areas: innovative hardware, a comprehensive software stack, a staff of over 325 employees, and most importantly, 15 pilot projects underway in the USA, Europe and Asia. Let’s take a closer look at what Blaize is doing. I will cover Intel, Groq, and Graphcore in subsequent blogs, so stay tuned.<b>The Blaize Graph Streaming Processor</b></p>
+      <p>Architectural innovation forms the core of every AI HW startup. Simply adding more multiply/accumulate registers or on-die memory will be inadequate for most high-performance applications. Blaize’s team built a general-purpose graph processor which can natively process graph-based applications, including, but not limited to the Deep Neural Networks which lie at the heart of most modern AI work. While the company claims this architecture can deliver massive gains in efficiency, we will need to await production-ready silicon next year to evaluate how well it performs against other engines that are coming to market.</p>
+      <figure>
+        <img src="https://specials-images.forbesimg.com/imageserve/5dd30eef2c886a0007ec6fc5/960x0.jpg?fit=scale"/>
+        <figcaption>Figure 1: The Blaize Graph Streaming Processor creates a connected graph of processing elements for ... [+] each task, using on-die buffers to transfer activations from one layer of the network to the next, reducing the overhead associated with using DRAM or HBM.<cite>Blaize</cite></figcaption>
+      </figure>
+      <p>Inference processing is rapidly becoming quite complex, requiring multiple models to deliver accurate results. One of the key differentiators Blaize hopes to cultivate is the ability to simultaneously deploy and stream multiple tasks onto the GSP, consequently accelerating the entire application. NVIDIA supports this by providing various engines on an SOC, as seen on the <a href="https://www.forbes.com/sites/moorinsights/2018/08/24/nvidia-reveals-xavier-soc-details/#489f05147e56">NVIDIA Drive AGX Xavier SOC</a>, and Xilinx is heading in a similar direction with its flexible <a href="https://d.docs.live.net/10303be17cc95c15/Documents/Karl's%20Notebook">Versal ACAP</a>. Time will tell if Blaize’s approach of task-level parallelism can deliver superior performance and power efficiency.</p>
+      <figure>
+        <img src="https://specials-images.forbesimg.com/imageserve/5dd30f29ea103f000652b80a/960x0.jpg?fit=scale"/>
+        <figcaption>Figure 2: Targeting the automotive ADAS market, Blaize points to the need to accelerate multiple ... [+] neural networks simultaneously on the GSP.<cite>Blaize</cite></figcaption>
+      </figure>
+      <p>Blaize initially targets three markets: autonomous transportation, enterprise AI applications and smart vision devices. In fact, Blaize is pursuing a multi-application approach in each, with the hopes that its generalized graph processing capability can increase the opportunity footprint in each of these markets. For example, in automotive, Blaize is tackling in-cabin monitoring, infotainment, intelligent telematics and vision pre- and post-processing, in addition to ADAS and safety. In smart vision, Blaize clients are evaluating the GSP in detection/classification, smart retail, smart city, factory automation and robotics.</p>
+      <p>
+        <b>Blaize Picasso software</b>
+      </p>
+      <p>An area worth noting is the Blaize software platform, called Picasso. To help optimize a neural network for deployment efficiency on the GSP, the Netdeploy tool can prune the net, quantize the layers of the network for optimal precision and generate the streaming data flow graph programs for execution. Most startups have to develop these tools, which can require as many software engineers as the hardware engineers who design the chip itself.</p>
+      <figure>
+        <img src="https://specials-images.forbesimg.com/imageserve/5dd30f742c886a0007ec6fcb/960x0.jpg?fit=scale"/>
+        <figcaption>Figure 3: The Blaize Picasso software platform includes all the prerequisite tools and frameworks ... [+] needed to build AI applications on the GSP. Of particular interest are the Netdeploy package and library of pre-built DNN models.<cite>Blaize</cite></figcaption>
+      </figure>
+      <p>
+        <b>Blaize customer traction</b>
+      </p>
+      <p>Early customer engagement is typically a weak point for many AI startups until they are close to having a working production platform. Blaize, on the other hand, has been working together with marquee clients in its target markets since the early conception of the firm. This has two significant benefits: co-design of the hardware and software based on specific customer needs, and early traction when hardware is production ready. Some of these early engagements produced strategic capital investments as well as early prototyping, from the likes of Samsung, Denso, and Daimler. I see a lot of startups’ pitches, but very few if any can match the scope of Blaize’s early client engagement.</p>
+      <figure>
+        <img src="https://specials-images.forbesimg.com/imageserve/5dd30fbfe0af7b0006b1a604/960x0.jpg?fit=scale"/>
+        <figcaption>Figure 4: Blaize shared this image which summarizes their current market reach enabled by their ... [+] development kit.<cite>Blaize</cite></figcaption>
+      </figure>
+      <p>
+        <b>Conclusions</b>
+      </p>
+      <p>I don’t normally blog about pre-silicon startups, preferring to wait (and wait, and wait, and wait) for production silicon and benchmark tests. However, in Blaize I see a startup that has invested as much in software and in early customer co-design engagements as it has in innovative hardware design. This approach makes it somewhat unique in the industry. Of course, it needs to tape out its chip and support its extensive customer pilot program with the attention and field engineering needed to turn them into design wins. That said, Blaize’s approach could help it stand out in the crowd and pave the way for success.</p>
+      <p>
+        <b>
+          <i>Disclosure:</i>
+        </b>
+        <i> Moor Insights &amp; Strategy, like all research and analyst firms, provides or has provided research, analysis, advising and/or consulting to many high-tech companies in the industry mentioned in this article. The author holds no investment positions with any of the companies cited above.</i>
+      </p>
+    </article>
+  </body>
+</html>

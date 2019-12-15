@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://thenextweb.com/apps/2019/11/12/facebook-camera-ios-iphone/"/>
+    <meta property="og:site_name" content="The Next Web"/>
+    <meta property="article:published_time" content="2019-11-12T08:35:27+00:00"/>
+    <meta property="og:title" content="Facebook is secretly using your iPhone’s camera as you scroll your feed"/>
+    <meta property="og:description" content="iPhone owners, beware. It appears Facebook might be actively using your camera without your knowledge while you're scrolling your feed."/>
+  </head>
+  <body>
+    <article>
+      <h1>Facebook is secretly using your iPhone’s camera as you scroll your feed</h1>
+      <address><time datetime="2019-11-12T08:35:27+00:00">12 Nov 2019, 08:35</time> by <a rel="author" href="https://thenextweb.com/author/dimitarmihov/" target="_blank">Mix</a></address>
+      <p>iPhone owners, beware. It appears Facebook might be actively using your camera without your knowledge while you’re scrolling your feed.</p>
+      <p>The issue has come to light after a user going by the name Joshua Maddux took to Twitter to report the unusual behavior, which occurs in the Facebook app for iOS. In footage he shared, you can see his camera actively working in the background as he scrolls through his feed.</p>
+      <p>The problem becomes evident due to a bug that shows the camera feed in a tiny sliver on the left side of your screen, when you open a photo in the app and swipe down. TNW has since been able to independently reproduce the issue.</p>
+      <p>Here’s what this looks like:</p>
+      <figure>
+        <iframe data-src="https://twitter.com/JoshuaMaddux/status/1193434937824702464?ref_src=twsrc%5Etfw" data-embed-type="twitter-tweet" width="100%" height="0" data-service="Twitter" scrolling="no" nowide=""/>
+      </figure>
+      <p>Maddux adds he found the same issue on five iPhone devices running iOS 13.2.2, but was unable to reproduce it on iOS 12. “I will note that iPhones running iOS 12 don’t show the camera (not to say that it’s not being used),” he said.</p>
+      <p>The findings are consistent with our own attempts. While iPhones running iOS 13.2.2 indeed show the camera actively working in the background, the issue doesn’t appear to affect iOS 13.1.3. We further noticed the issue only occurs if you have given the Facebook app access to your camera. If not, it appears the Facebook app tries to access it, but iOS blocks the attempt.</p>
+      <p>It remains unclear if this is expected behavior or simply a bug in the software for iOS (we all know what Facebook will say; spoiler: “Muh, duh, guh, it’s a bug. We sorry.”). For what it’s worth, we’ve been unable to reproduce the issue on Android (version 10, used on Google Pixel 4).</p>
+      <p>Whatever the reason for it, though, this behavior is particularly concerning — especially considering Facebook‘s atrocious track record when it comes to user privacy (<a href="https://thenextweb.com/facebook/2018/03/21/facebook-and-cambridge-analytica-heres-what-you-need-to-know/">remember Cambrdige Analytica?</a>).</p>
+      <p>By now, everyone should be well aware that any iOS app that has been granted access to your camera <a href="https://thenextweb.com/apple/2017/10/26/iphone-camera-permissions-google-ios/">can secretly record you</a>. Back in 2017, researcher Felix Krause spoke to TNW about the same issue.</p>
+      <p>At the time, the researcher noted one way to deal with this privacy concern is to revoke camera access (though that arguably doesn’t make for a smooth software experience). Another thing he suggested is covering up your camera — like former FBI director James Comey and Facebook‘s own emperor Mark Zuckerberg do. Learn from the pros I guess.</p>
+      <p>We’ve reached out to Facebook for further comment, and will update this piece accordingly if we hear back.</p>
+      <p><b>Update November 13, 7:20AM UTC:</b> Facebook has confirmed the issue, calling it a bug (who would’ve guessed, right?).</p>
+      <p>“We recently discovered our iOS app incorrectly launched in landscape. In fixing that last week in v246 we inadvertently introduced a bug where the app partially navigates to the camera screen when a photo is tapped,” Facebook VP of Integrity Guy Rosen <a href="https://twitter.com/guyro/status/1194329353770790913?s=21">tweeted</a>. “We have no evidence of photos/videos uploaded due to this.”</p>
+      <p>So, at least that.</p>
+      <p>In the meantime, Rosen says Facebook is submitting a fix to the App Store.</p>
+    </article>
+  </body>
+</html>

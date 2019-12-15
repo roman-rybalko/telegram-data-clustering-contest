@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://www.bleepingcomputer.com/news/security/tpm-fail-security-flaws-impact-modern-devices-with-intel-cpus/"/>
+    <meta property="og:site_name" content="BleepingComputer"/>
+    <meta property="article:published_time" content="2019-11-13T16:19:10+00:00"/>
+    <meta property="og:title" content="TPM-FAIL Security Flaws Impact Modern Devices With Intel CPUs"/>
+    <meta property="og:description" content="Researchers discovered two new vulnerabilities known as TPM-FAIL in Intel firmware-based TPM (fTPM) and STMicroelectronics' TPM chips that could be used by hackers to steal their targets' cryptographic keys."/>
+  </head>
+  <body>
+    <article>
+      <h1>TPM-FAIL Security Flaws Impact Modern Devices With Intel CPUs</h1>
+      <address><time datetime="2019-11-13T16:19:10+00:00">13 Nov 2019, 16:19</time> by <a rel="author" href="https://www.bleepingcomputer.com/author/sergiu-gatlan/" target="_blank">Sergiu Gatlan</a></address>
+      <figure>
+        <img src="https://www.bleepstatic.com/content/posts/2019/11/13/TPM-Fail.jpg"/>
+      </figure>
+      <p>Researchers discovered two new vulnerabilities known as TPM-FAIL in Intel firmware-based TPM (fTPM) and STMicroelectronics' TPM chips that could be used by hackers to steal their targets' cryptographic keys.</p>
+      <p>TPM (short for Trusted Platform Module) is a chip used as a root of trust for a device's OS that can store highly sensitive data such as security keys, protecting them from malicious tools such as implanted rootkits or malware dropped by a threat actor.</p>
+      <p>TPMs can also be firmware-based solutions (fTPM) that run on separate 32-bit microcontrollers inside a CPU, as is the case of Intel processors starting with the Haswell generation (2013).</p>
+      <p>The two vulnerabilities allow hackers to circumvent this security shield and steal the data stored within a TPM. Once they have their hands on your signing keys, the attackers can forge digital signatures that can be used to tamper with the operating systems or to bypass authentication on the compromised machine.</p>
+      <h3>TPM-FAIL attacks are practical</h3>
+      <p>The TPM-FAIL side-channel attacks <a href="http://tpm.fail/">demonstrated by the researchers</a> take advantage of a "leakage of the length of the nonce, which can easily be exploited using a lattice attack."</p>
+      <p>Timing leakage issues affect both Intel's firmware-based TPM (fTPM) and STMicroelectronics' TPM chip, with both platforms exhibiting flawed cryptographic signature generation with secret-dependent execution times.</p>
+      <p>While the sensitive information should never leave the TPM, the hackers are able to recover 256-bit private keys for ECDSA and ECSchnorr signatures from elliptic curves-based digital signature schemes as <a href="http://tpm.fail/">the research team from the Worcester Polytechnic Institute, the University of Lübeck, and the University of California, San Diego further discovered.</a></p>
+      <figure>
+        <img src="https://www.bleepstatic.com/images/news/u/1109292/November%202019/Key%20recovery%20results.png"/>
+        <figcaption>Key recovery results</figcaption>
+      </figure>
+      <p>The attacks are practical seeing that, according to the researchers, "a local adversary can recover the ECDSA key from Intel fTPM in 4-20 minutes depending on the access level."</p>
+      <p>Attackers can also abuse TPM-FAIL vulnerable devices remotely on a fast network to recover the authentication key of a virtual private network (VPN) server in roughly five hours as demonstrated in the research.</p>
+      <p>The researchers were able to "recover ECDSA keys from an fTPM-endowed server runningStrongSwan VPN over a noisy network as measured by a client."</p>
+      <h3>What devices are affected by TPM-FAIL</h3>
+      <p>Most laptops, desktop, and server computers are vulnerable to TPM-FAIL attacks because they either use an Intel CPU with a firmware-based TPM (fTPM) or come with dedicated but unprotected TPM chips. However, TPM chips are also used for storing sensitive data by other computing devices like embedded devices and smartphones.</p>
+      <p>The vulnerable Intel fTPM, for instance, is used by the vast majority of computer manufacturers, including but not limited to Dell, HP, and Lenovo.</p>
+      <p>Also, numerous laptop manufacturers usually prefer to use the integrated Intel fTPM within CPUs rather than adding extra hardware, either for cutting down costs or based on trusting that Intel's fTPM will do a good job at protecting the users' information.</p>
+      <p>Last but not least, Intel's fTPM is also widely used by <a href="https://www.intel.com/content/www/us/en/internet-of-things/overview.html">Intel Internet of Things (IoT) Platform</a> family of products used in industry, healthcare, smart cities, and connected vehicles.</p>
+      <p>STMicroelectronics's <a href="https://www.st.com/en/secure-mcus/st33tphf20i2c.html">ST33TPHF2ESPI TPM chip</a> tested by the researchers is also a highly popular hardware solution used in personal computing devices, server platforms, and embedded systems.</p>
+      <figure>
+        <img src="https://www.bleepstatic.com/images/news/u/1109292/November%202019/Tested%20Intel%20fTPM%20and%20STMicro%20TPM%20platforms.png"/>
+        <figcaption>Tested Intel fTPM and STMicro TPM platforms</figcaption>
+      </figure>
+      <h3>TPM-FAIL vulnerabilities patched</h3>
+      <p>Both companies issued patches for the TPM-FAIL vulnerabilities, either by releasing security patches or by issuing new TPM chips.</p>
+      <p>Intel <a href="https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-00241.html">upgraded their fTPM firmware</a> to fix the security issue tracked as CVE-2019-11090 and STMicroelectronics <a href="https://www.st.com/content/st_com/en/campaigns/tpm-update.html">issuing a new TPM chip</a> to address the CVE-2019-16863 vulnerability, chips resistant against TPM-FAIL exploitation as the research team confirmed.</p>
+      <p>The researchers disclosed their findings to the Intel Product Security Incident ResponseTeam (iPSIRT) on February 1, 2019, which "issued a firmware update for Intel Manage-ment Engine (ME) including patches to address this issue on November 12, 2019."</p>
+      <p>STMicroelectronics was informed of the  TPM chip flaw on May 15, 2019, and provided an updated ST33TPHF2ESPI TPM chip which was found to be resistant to TPM-FAIL attacks on September 12, 2019.</p>
+      <p>More information on these vulnerabilities is available in the <a href="http://tpm.fail/tpmfail.pdf"><i>TPM-FAIL: TPM meets Timing and Lattice Attacks</i></a> technical paper.</p>
+      <p>The team behind TPM-FAIL will also present the research at the <a href="https://rwc.iacr.org/2020/contributed.html">Real World Crypto 2020, New York (January 8-10, 2020)</a> and the <a href="https://www.usenix.org/conference/usenixsecurity20/presentation/moghimi">29th USENIX Security Symposium, Boston (August 12-14, 2020)</a>.</p>
+    </article>
+  </body>
+</html>

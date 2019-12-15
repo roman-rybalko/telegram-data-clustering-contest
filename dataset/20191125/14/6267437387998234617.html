@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://canaltech.com.br/seguranca/golpistas-estao-usando-nova-tecnica-para-roubar-dados-de-pagamento-online-156041/"/>
+    <meta property="og:site_name" content="Canaltech"/>
+    <meta property="article:published_time" content="2019-11-25T14:43:00+00:00"/>
+    <meta property="og:title" content="Golpistas estão usando nova técnica para roubar dados de pagamento online"/>
+    <meta property="og:description" content="Chefe de firma de segurança digital encontrou um ataque que mudou o código de uma plataforma de pagamento online para redirecionar os dados dos consumidores."/>
+  </head>
+  <body>
+    <article>
+      <h1>Golpistas estão usando nova técnica para roubar dados de pagamento online</h1>
+      <address><time datetime="2019-11-25T14:43:00+00:00">25 Nov 2019, 14:43</time> by <a rel="author">Claudio Yuge</a></address>
+      <p>Usar interfaces falsas para obter dados sensíveis e bancários de usuários é uma prática bastante conhecida em golpes de <a href="https://canaltech.com.br/seguranca/O-que-e-Phishing/">phishing</a>. Agora, contudo, os ladrões encontraram uma forma de deixar isso mais sofisticado a partir da invasão de sistemas de pagamentos online. </p>
+      <p>As plataformas financeiras de terceiros são amplamente utilizadas por vários marketplaces e demais comerciantes virtuais, especialmente os de pequeno porte, que não costumam ter muitos recursos para proteger seus servidores contra ataques mais complexos. </p>
+      <p>Um exemplo disso são os grupos conhecidos como Magecart, que buscam explorar serviços como o Magento. Em vez de tentar roubar senhas, detalhes do cartão ou outras informações comerciais, suas páginas maliciosas podem transferir aos valores da cobrança para seus próprios destinos.</p>
+      <figure>
+        <img src="https://imagens.canaltech.com.br/278591.526005-golpe.jpg"/>
+        <figcaption>
+          <i>Note que é preciso muito pouco para alterar o destino dos dados bancários (Imagem: Reprodução/ArsTechnica)</i>
+        </figcaption>
+      </figure>
+      <p>A Malwarebytes encontrou recentemente um ataque que se encaixa nessa descrição. Ao infectar o site do comerciante e adicionar uma ou duas linhas de código, os hackers redirecionam os consumidores para uma interface falsa no momento da compra. Os gráficos imitam serviços reais, nomes de domínio criados sob medida e outros truques manuais que podem enganar até mesmo os usuários mais atentos.</p>
+      <h3>Réplicas muito convincentes</h3>
+      <p>Jérôme Segura, chefe de segurança na Malwarebytes, disse que encontrou um desses ataques em um site comercial que redireciona o pagamento para um falso processador de plataformas de terceiros. Isso aconteceu em uma loja virtual baseada na Austrália, que usava o gerenciamento da PrestaShop.</p>
+      <p>Nas imagens abaixo você pode ver como a interface do golpe é muito parecido com a legítima. E o esquema é sofisticado, pois possui uma URL que parece autêntica e faz algo inédito até então: “Observamos que a página falsa fazia algo que nem sempre vemos com os golpistas padrão, pois ela verificava se todos os campos eram válidos e informava o usuário caso não fossem".</p>
+      <figure>
+        <img src="https://imagens.canaltech.com.br/278589.526003-golpe.jpg"/>
+        <figcaption>
+          <i>(Imagem: Reprodução/ArsTechnica)</i>
+        </figcaption>
+      </figure>
+      <p>Embora Segura tenha encontrado apenas um golpe dessa natureza, ele acredita que esse pode ser um teste antes que os cibercriminosos espalhem o novo método. Ele observou um grupo criar dezenas de domínios que se assemelham a instituições bancárias.</p>
+      <h3>O que fazer para identificar esse golpe?</h3>
+      <p>Uma das poucas maneiras detectar esse tipo de golpe é observar um redirecionamento após a aprovação dos dados de pagamento. Esse é o momento que a interface falsa envia o usuário para a plataforma original, que vai exigir os dados do cartão mais uma vez.</p>
+      <p>Há também uma diferença nos domínios entre os dois serviços e, embora não seja possível comparar se você não sabe que está caindo em uma armadilha, vários apps de segurança possuem uma seção que aponta as páginas com problemas de segurança.</p>
+      <footer>Fonte: <a href="https://arstechnica.com/information-technology/2019/11/scammers-try-a-new-way-to-steal-online-shoppers-payment-card-data/">Ars Technica</a></footer>
+    </article>
+  </body>
+</html>

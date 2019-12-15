@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://www.techspot.com/article/1934-the-state-of-ray-tracing/"/>
+    <meta property="og:site_name" content="TechSpot"/>
+    <meta property="article:published_time" content="2019-11-04T11:11:00+00:00"/>
+    <meta property="og:title" content="The State of Nvidia RTX Ray Tracing: One Year Later"/>
+    <meta property="og:description" content="Time to revisit the state of ray tracing. It's been months since we last discussed ray tracing in detail, when we tested it on early titles such as Battlefield V, and the latest releases of Metro and Tomb Raider, so there's plenty of fresh stuff to go over, more benchmarks, more experience playing those games and quite a few opinions. This is bound to be a long one, so strap yourselves in."/>
+  </head>
+  <body>
+    <article>
+      <h1>The State of Nvidia RTX Ray Tracing: One Year Later</h1>
+      <h2>"Just Buy It"... or Maybe Not?</h2>
+      <address><time datetime="2019-11-04T11:11:00+00:00">04 Nov 2019, 11:11</time> by <a rel="author">Tim Schiesser</a></address>
+      <p>Time to revisit the state of ray tracing. It’s been months since we last discussed ray tracing in detail, when we tested it on early titles such as Battlefield V, and the latest releases of Metro and Tomb Raider, so there’s plenty of fresh stuff to go over, more benchmarks, more experience playing those games and quite a few opinions. This is bound to be a long one, so strap yourselves in.</p>
+      <p>We'll do a recap of the entire first year of Nvidia’s ray tracing efforts. A look at the games that came out with RTX support, the games that didn’t, and just how the ecosystem has evolved in the space of twelve months. Has performance improved? Have some of the visual issues been sorted out? Has Nvidia delivered on their launch day promises?</p>
+      <p>Starting from the beginning, Nvidia released the first consumer GPU with hardware accelerated ray tracing on September 20, 2018 in the <a href="https://www.techspot.com/review/1701-geforce-rtx-2080/">GeForce RTX 2080</a>. That was quickly followed by the RTX 2080 Ti, RTX 2070 and then in January 2019, the RTX 2060. Fast forward until July, we’ve had even more RTX GPUs hit the market with the Super line-up, so there’s no shortage of RTX products available at a range of price points from $350 and above.</p>
+      <figure>
+        <img src="https://static.techspot.com/articles-info/1934/images/2019-11-03-image.jpg"/>
+      </figure>
+      <p>As we were working on this feature, a few new games joined the fray but those won’t be covered today like Call of Duty: Modern Warfare and an indie title called Deliver us the Moon. We’ll leave those to future RTX roundups, today we'll focus on the games that were roughly available during the first year of RTX ownership, which was roughly until late September. To our knowledge those games are as follows: <a href="https://www.techspot.com/review/1749-battlefield-ray-tracing-benchmarks/">Battlefield V</a>, <a href="https://www.techspot.com/article/1814-sotr-ray-tracing/">Shadow of the Tomb Raider</a>, <a href="https://www.techspot.com/article/1793-metro-exodus-ray-tracing-benchmark/">Metro Exodus</a>, <a href="https://www.techspot.com/review/1901-control-game/">Control</a>, <a href="https://www.techspot.com/downloads/7177-quake-2-rtx.html">Quake II</a> and <a href="https://store.steampowered.com/app/1081330/Stay_in_the_Light/">Stay in the Light</a>. However, as Stay in the Light is an early access title with a total sum of 25 reviews on Steam, we won't cover it either.</p>
+      <aside>RTX games released in the first year are as follows: Battlefield V, Shadow of the Tomb Raider, Metro Exodus, Control, Quake II and Stay in the Light.</aside>
+      <p>Overall in one year of RTX we’ve had five major releases. There have been plenty of other announcements, including Wolfenstein Youngblood, Minecraft, and several others, but as of late September, none of those other games actually have RTX modes that you can play right now.</p>
+      <h3>Battlefield V with ray tracing</h3>
+      <p><a href="https://www.techspot.com/review/1759-ray-tracing-benchmarks-vol-2/">Battlefield V</a> was the first of the bunch and ray tracing in this game was a <a href="https://www.techspot.com/review/1749-battlefield-ray-tracing-benchmarks/">fail at launch</a>. Half of the game’s four RTX modes didn’t work properly, there were visual artifacts, and performance was horrendous. Using an expensive RTX 2080 Ti at 1080p, performance was halved from DXR Off to DXR Low, and much worse on the Ultra mode. Luckily there was a significant RTX overhaul in a December patch, about a month after the game launched. That fixed most of these problems. That first implementation of ray tracing should never have seen the light of day, we think it set expectations in the wrong place and put buyers of RTX cards offside because the performance was so horrible on $1,000+ GPUs. That situation has probably led to what we have today with so many games promising ray tracing but not providing it at launch.</p>
+      <figure>
+        <img src="https://static.techspot.com/articles-info/1934/images/S-1.jpg"/>
+      </figure>
+      <figure>
+        <img src="https://static.techspot.com/articles-info/1934/images/S-2.jpg"/>
+      </figure>
+      <p>This BFV patch <a href="https://www.techspot.com/review/1759-ray-tracing-benchmarks-vol-2/">addressed some</a> of the visual concerns and most importantly, improved performance. At that point with an RTX 2080 at 1440p, ray tracing on low settings became playable with about a 30% drop, and while the Ultra mode delivered a greater than 40% reduction to frame rates, Ultra actually ended up faster than Low in the original version of the game. The drop is still significant and there were persistent noise issues throughout the game from the low ray count implementation of DXR reflections.</p>
+      <p>But how does the game stack up today?</p>
+      <p>Ray traced reflections in this game vary depending on the environment. On some maps there are virtually no reflective surfaces, so there's no benefit, in others like the Rotterdam city map, huge amounts of reflections to enjoy.</p>
+      <figure>
+        <img src="https://static.techspot.com/articles-info/1934/images/S-3.jpg"/>
+      </figure>
+      <figure>
+        <img src="https://static.techspot.com/articles-info/1934/images/S-4.jpg"/>
+      </figure>
+      <p>Our overall impression hasn’t changed much. Ray traced reflections look okay, they’re certainly more accurate than screen space reflections the game uses otherwise, which are plagued by horrible artifacts. But at the same time, Battlefield V’s screen space reflections are worse than average, and the fast-paced nature of a multiplayer shooter like Battlefield means you often aren’t even paying attention to the nice looking reflections which makes the feature unimportant.</p>
+      <p>When you’re dashing around the maps, honestly it’s hard to tell the difference between ray traced and screen spaced reflections, it’s only when you stop and look at the environments that you notice the benefits. Given the performance hit, it's not a feature we believe is worth using for this sort of game. Don’t get us wrong, ray tracing looks good in Battlefield V, it’s just not a game best suited to this effect.</p>
+      <figure>
+        <img src="https://static.techspot.com/articles-info/1934/images/S-5.jpg"/>
+      </figure>
+      <figure>
+        <img src="https://static.techspot.com/articles-info/1934/images/S-8.jpg"/>
+      </figure>
+      <p>As for the visual noise we saw when evaluating Battlefield V back in December... that’s still present. It looks bad in some situations, especially the water found throughout some maps, even on the Ultra ray tracing setting. It doesn’t look like any further work has been done to clean it up, which is a shame.</p>
+      <p>Performance looks to be unchanged as well. Here are fresh numbers taken with Nvidia’s new Super cards at 1440p with a variety of ray tracing modes. Latest drivers, latest game updates, latest OS updates, but no real performance changes over the December version. Moving from no RTX to Low RTX at 1440p results in about a 30% reduction in performance, or about 48% moving to Ultra. Very consistent performance loss across all three cards, and while Low RTX is playable at this resolution, Ultra is below 60 FPS which is ideal for a shooter.</p>
+      <figure>
+        <img src="https://static.techspot.com/articles-info/1934/images/1.png"/>
+      </figure>
+      <p>Even the RTX 2060 is normally an 86 FPS card without ray tracing, reduced to just barely 60 FPS with minimal ray tracing, the performance hit here is still too high.</p>
+      <h3>Shadow of the Tomb Raider RTX</h3>
+      <p>This is in our opinion the least impressive implementation of ray tracing we’ve seen so far. Not because of performance or graphical glitches, but because the visual upgrade is minimal.</p>
+      <p><a href="https://www.techspot.com/article/1814-sotr-ray-tracing/">Shadow of the Tomb Raider</a> uses ray tracing for shadows, unlike other games which so far have mostly stuck to reflections or global illumination. Ray tracing shadows allows for a more accurate representation of lighting in the game, with better distance-based shadow softening as you’d see in real life, as well as better point light shadows.</p>
+      <figure>
+        <img src="https://static.techspot.com/articles-info/1934/images/S-9.jpg"/>
+      </figure>
+      <figure>
+        <img src="https://static.techspot.com/articles-info/1934/images/S-10.jpg"/>
+      </figure>
+      <p>This is all nice, but consider that standard rasterization techniques have reached a point where shadows are one of the best lighting effects in modern games. Shadow of the Tomb Raider looks great with Ultra, non ray traced shadows, it looks a little better with ray traced shadows, a bit more accurate, but it’s not a “woah, that looks miles better” type upgrade.</p>
+      <p>There are also several issues that remain in the game as of today. The High mode features an obvious cut draw distance cut off point for ray tracing as we mentioned in our initial investigation, it’s not quite as bad as it was when we first tested the game, but it’s still obvious enough that we probably wouldn’t want to use the High mode. Meanwhile, Ultra still suffers from shadow pop in and some weird or incorrect shadowing, particularly for roofing. If you want to learn more about how this game looks, check our <a href="https://www.techspot.com/article/1814-sotr-ray-tracing/">previous coverage</a>.</p>
+      <figure>
+        <img src="https://static.techspot.com/articles-info/1934/images/S-11.jpg"/>
+      </figure>
+      <figure>
+        <img src="https://static.techspot.com/articles-info/1934/images/S-12.jpg"/>
+      </figure>
+      <figure>
+        <img src="https://static.techspot.com/articles-info/1934/images/S-13.jpg"/>
+      </figure>
+      <p>Performance has improved slightly since the initial release, although that’s mostly optimizing the High mode to be less performance intensive. Previously we found High resulted in a ~40% drop to frame rates, now that’s down at about 30% in the game’s most intense areas. Ultra is a little faster as well, but we’re talking a 38% hit versus 42%, not exactly earth shattering.</p>
+      <figure>
+        <img src="https://static.techspot.com/articles-info/1934/images/2.png"/>
+      </figure>
+      <p>Aside from performance and visuals, Shadow of the Tomb Raider’s RTX launched six months <i>after </i>the game came out, so most people had already played through the entire game.</p>
+      <h3>Metro Exodus with ray tracing</h3>
+      <p>Metro Exodus is the first game we played where we felt like ray tracing was providing something decent from a visual standpoint. There were no major artifact issues -- no grain like in Battlefield or pop in like in Shadow of the Tomb Raider -- and in general it delivered what it set out to: ray traced global illumination.</p>
+      <figure>
+        <img src="https://static.techspot.com/articles-info/1934/images/S-14.jpg"/>
+      </figure>
+      <p>As we mentioned in our <a href="https://www.techspot.com/article/1793-metro-exodus-ray-tracing-benchmark/">first investigation</a>, the game with ray tracing enabled is different artistically. In indoor environments, global illumination removes the random and inaccurate fill light you get in most scenes, so the game can be darker, while you get almost the opposite effect outdoors. Some people like this effect, others don’t, and we can totally see both sides to the argument.</p>
+      <aside>... having played more of Metro Exodus than in our initial review – we’ve now finished the entire game – what struck me about RTX wasn’t necessarily how it looked when it was on, but how the game looks when you turn it off.</aside>
+      <figure>
+        <img src="https://static.techspot.com/articles-info/1934/images/S-15.jpg"/>
+      </figure>
+      <figure>
+        <img src="https://static.techspot.com/articles-info/1934/images/S-16.jpg"/>
+      </figure>
+      <figure>
+        <img src="https://static.techspot.com/articles-info/1934/images/S-17.jpg"/>
+      </figure>
+      <p>Personally, having played more of Metro Exodus than in our initial review – we’ve now finished the entire game – what struck me about RTX wasn’t necessarily how it looked when it was on, but how the game looks when you turn it off. Especially in the various train scenes, the game looks natural and well lit with RTX on, but when you turn it off after having it on for a period of time, it looks a bit strange and flat due to that unnatural fill light.</p>
+      <p>Metro has also received a DLC called The Two Colonels which adds an additional RTX feature: global illumination for emissive lights. This means that any light in the scene, such as fire or light bulbs, will also factor in to global illumination, casting hues or shadows as appropriate. It adds further to the global illumination experience and we’re glad to see 4A Games continuing to improve RTX in this title.</p>
+      <figure>
+        <img src="https://static.techspot.com/articles-info/1934/images/S-19.jpg"/>
+      </figure>
+      <figure>
+        <img src="https://static.techspot.com/articles-info/1934/images/S-20.jpg"/>
+      </figure>
+      <figure>
+        <img src="https://static.techspot.com/articles-info/1934/images/S-21.jpg"/>
+      </figure>
+      <p>Performance of the game seems largely unchanged since launch, although we tested Nvidia’s Super cards in a different, more intensive area than the first time. At 1440p, we see about a 25% performance reduction turning RTX on High, and 40% turning on Ultra. This is similar to most other games but the effect and result is better looking overall.</p>
+      <figure>
+        <img src="https://static.techspot.com/articles-info/1934/images/3.png"/>
+      </figure>
+      <p>With the extra global illumination from emissive lights in The Two Colonels DLC, performance is a little worse. We saw up to a 48% performance decrease with RTX on Ultra, which is no great surprise as adding more rays will inevitably hit performance harder.</p>
+      <figure>
+        <img src="https://static.techspot.com/articles-info/1934/images/4.png"/>
+      </figure>
+      <h3>Control RTX</h3>
+      <p>Control is one of the games we picked as one of <a href="https://www.techspot.com/bestof/pc-games/">the best releases of 2019</a>, and have played the entire way through with ray tracing enabled. It’s pretty good, we do recommend it from a gameplay standpoint – and the ray tracing is certainly quite interesting.</p>
+      <p>There are two ray tracing presets in the game but five overall settings. Medium enables both reflection options for ray traced reflections and ray traced transparent reflections, while High adds into the mix indirect diffuse lighting and contact shadows, plus applies ray tracing to debris. Essentially the High mode has both ray traced reflections and global illumination, while Medium is just reflections.</p>
+      <figure>
+        <img src="https://static.techspot.com/articles-info/1934/images/S-22.jpg"/>
+      </figure>
+      <figure>
+        <img src="https://static.techspot.com/articles-info/1934/images/S-23.jpg"/>
+      </figure>
+      <figure>
+        <img src="https://static.techspot.com/articles-info/1934/images/S-24.jpg"/>
+      </figure>
+      <p>And reflections are the key effect in this game. There are lots of reflective surfaces throughout the brutalist architecture in the game, whether it’s on the expansive polished concrete surfaces, or throughout the windows in the various office areas. Some people have said the reflections are a bit overboard in this game but we disagree, heaps of reflections are present whether you have ray tracing on or off, so we think it’s an artistic choice from the developers that we quite like.</p>
+      <p>With ray traced reflections enabled, the differences are quite obvious. On ground surfaces, ray traced reflections are more striking than their screen space counterparts, as well as more accurate. They also show details that aren’t always visible in the frame, which naturally is impossible with screen space reflections. The bigger improvements are on window reflections, which are completely absent with ray tracing off, but quite striking with ray tracing enabled. Not only can you often see what’s behind you, but you can see yourself in the reflections.</p>
+      <p>The developers could have achieved a more limited version of this effect with cube maps but it’s time consuming to align those properly, we’re sure ray tracing these is easier on development once the ray tracing system is implemented.</p>
+      <p>That’s not to say the reflections are perfect. They are far less grainy than what we get with Battlefield V, but there are some weird temporal issues with how they are rendered. For example when you move around, the reflections on non-transparent surfaces seem to lag a bit behind where they should be, almost like a rolling shutter effect on a camera with a bit of a settling time after you stop moving. Perhaps rendering over time like this is a trade off for less grain, but it’s definitely not present with screen space reflections.</p>
+      <figure>
+        <img src="https://static.techspot.com/articles-info/1934/images/S-25.jpg"/>
+      </figure>
+      <figure>
+        <img src="https://static.techspot.com/articles-info/1934/images/S-26.jpg"/>
+      </figure>
+      <figure>
+        <img src="https://static.techspot.com/articles-info/1934/images/S-27.jpg"/>
+      </figure>
+      <p>The ray tracing indirect and contact shadows are less impressive and give a more subtle feel to the game overall. They’re also even more prone to temporal issues than the reflections; we saw shadows pop in over time just by moving around the mouse, which can be a bit distracting. We also feel like these techniques could possibly be done just as well with regular shadowing and ambient occlusion, perhaps not as accurately, but without the performance hit.</p>
+      <p>We think the medium setting is the most appropriate in this game and despite a few issues, generally looks really good, it’s the most striking improvement we’ve seen yet and adds quite a bit to the visuals in this game.</p>
+      <p>As for performance? While Control has some of the most impressive effects, the performance impact isn’t overly different to other titles. Using medium ray tracing sees a 25 to 30 percent drop or thereabouts, while enabling High sees about a 40 to 45 percent drop. The issue here is Control doesn’t deliver high frame rates on maximum settings as is, so often this 30 percent drop using medium ray tracing takes you from 60 to 40 FPS at 1440p on an RTX 2080 Super, which let’s be honest, isn’t really the performance you’d want from a $700 GPU.</p>
+      <figure>
+        <img src="https://static.techspot.com/articles-info/1934/images/5.png"/>
+      </figure>
+      <p>That said, Nvidia’s Super cards are marginally faster at ray tracing than the non Super models, roughly in line with the performance increase we see in non ray tracing scenarios. The difference between RTX on and off with non Super cards is also similar, which makes sense since Nvidia didn’t enable a proportionally higher amount of RT cores with the Super cards.</p>
+      <h3>Quake II RTX</h3>
+      <p>An interesting RTX implementation that we feel is more of a tech demo than something designed to be played (but hey, it's a classic title so don't let us stop you). The lighting system with RTX is significantly overhauled, significantly better, much more accurate, you’re getting decent reflections, shadows, global illumination and so on. It’s a huge overhaul.</p>
+      <figure>
+        <img src="https://static.techspot.com/articles-info/1934/images/S-28.jpg"/>
+      </figure>
+      <p>The reason we say this feels more like a demonstration is that Nvidia has crammed in every RTX feature they can to a really high level, which has affected performance. There’s virtually no grain, no temporal artifacts, all the ray traced elements are rendered to a very high quality level unlike other RTX titles which often sacrifice quality in order not to tank the frame rate.</p>
+      <p>This is a game that runs at over 500 FPS -- normally 1000 FPS -- on an RTX GPU in its original state. But at 1440p, this drops to as low as 40 FPS with the default settings that include medium global illumination. And when disabling GI, this only increases to around 60 FPS at 1440p. In a title where every other element in the game can be rendered in about 1ms.</p>
+      <figure>
+        <img src="https://static.techspot.com/articles-info/1934/images/S-29.jpg"/>
+      </figure>
+      <p>Now of course, Quake II is an extremely fast paced shooter, playing this game at even 60 FPS feels so sluggish compared to 150+ FPS and when you can toggle between the two options it’s just so noticeable. The game looks a lot better, but like many other titles the performance hit is just insane.</p>
+      <figure>
+        <img src="https://static.techspot.com/articles-info/1934/images/6.png"/>
+      </figure>
+      <p>However we don’t want to entirely slag off Quake II because we think the idea here is promising, it just needs the same level of optimization as other titles like Control and Metro Exodus. Rather than going all out on an extremely high level of ray tracing, cutting a few corners like we see in modern games such as Control could have delivered better performance. And then we’re basically be getting a remastered version of the game that still runs really well, we’re be hoping for at least 120 FPS at 1440p, but with hugely overhauled lighting. That would be a really great usage of RTX.</p>
+      <h3>RTX or not to RTX?</h3>
+      <p>Ray tracing is delivering better visuals, at least in some instances. It might not be delivering the style of visuals that all gamers like or are used to, but there is no doubting that both Metro Exodus and Control look better with ray tracing enabled. In fact, Control looks significantly better and some of the reflection effects add to the unique visual style the developers were going for.</p>
+      <p>It’s also clear at this point that using ray tracing for global illumination or reflections are the best uses for this technology. Control’s reflections are more accurate than screen space reflections and can do things for actual gameplay that other techniques can’t.</p>
+      <aside>Control’s reflections are more accurate than screen space reflections and can do things for actual gameplay that other techniques can’t.</aside>
+      <figure>
+        <img src="https://static.techspot.com/articles-info/1934/images/S-30.jpg"/>
+      </figure>
+      <p>Global illumination is a more subtle effect but adds realism to the game world. As we mentioned before, in Metro Exodus the game looks kind of strange with ray tracing disabled, while RTX on has a natural, realistic presentation that we quite like, even if some scenes are darker. Metro’s ray tracing isn’t as much of a massive overhaul as with Control, but it’s a decent visual upgrade and especially with the Two Colonels DLC you can see where it is headed and how even more realistic lighting effects are possible.</p>
+      <figure>
+        <img src="https://static.techspot.com/articles-info/1934/images/S-32.jpg"/>
+      </figure>
+      <p>At this point we’re not convinced about shadowing. In Shadow of the Tomb Raider the upgrade isn’t overly significant and we think this is because we’ve already got awesome shadowing techniques available to us that don’t need ray tracing with a marginal penalty. Tomb Raider’s implementation is definitely the weakest so far in our opinion.</p>
+      <h3>Making Progress</h3>
+      <p>As we’ve gone from Battlefield V to Control, we get the impression that with each RTX implementation things have improved for gamers. Battlefield V’s initial offering was bad, but Control’s is by far the best. Clearly Nvidia and developers are learning the best ways to use ray tracing in games, and we fully expect that next year’s worth of ray traced games will step that up even further.</p>
+      <figure>
+        <img src="https://static.techspot.com/articles-info/1934/images/S-30.jpg"/>
+      </figure>
+      <p>We’re also big fans of <a href="https://www.techspot.com/news/82326-nvidia-bringing-ray-tracing-support-more-remastered-pc.html">remastering older titles</a> with RTX. This could be a really good use case for ray tracing because there’s a bigger performance buffer available. <a href="https://www.techspot.com/downloads/7177-quake-2-rtx.html">Quake II</a> was a good pick due to its history and relevance but perhaps wasn't the best example of what could be done for actual gameplay. We'd love to see what ray tracing could achieve in games like Elder Scrolls Oblivion, Star Wars Knights of the Old Republic, Half-Life, you know, those classics that run at hundreds of FPS these days.</p>
+      <p>Watch some live gameplay from the aforementioned games on the HUB video below</p>
+      <figure>
+        <iframe src="https://www.youtube.com/embed/1nDsj6Yy1K4" width="560" height="390" data-service="Youtube" scrolling="no"/>
+      </figure>
+      <h3>The Ugly</h3>
+      <p>When RTX debuted in Battlefield V, we thought the bad would be performance and visuals. A 2x performance hit for grainy reflections and plenty of other technical issues wasn’t the best experience you could ask for. But after a year, we don’t think that’s the biggest problem, but the lack of releases.</p>
+      <p>Early adopters will tell you that comes with the territory, but it's far from ideal.</p>
+      <p>In the first year of RTX cards, we’ve had six titles to play. One is an indie early access game. Another is a remastered classic that’s more of an RTX demo. Another game didn’t integrate RTX until six months after launch, and the debut game had to get fixes weeks after release to get it working properly. What we're left with is two games that launched with RTX in great usable state, in one year.</p>
+      <p>Our main criticism here fits into two categories: the first, we’ve had several RTX game announcements, without RTX actually launching with the game. A good portion of gamers -- especially those paying a premium for high-end GPUs -- will want to play the games around the launch window or within the first month. So pushing out Shadow of the Tomb Raider with ray tracing six months after release is somewhat pointless. As of writing, Wolfenstein <a href="https://www.techspot.com/news/81095-wolfenstein-youngblood-arrives-day-early-pc-players-but.html">Youngblood’s RTX patch</a> hasn’t arrived. The game launched in July and there’s no word on when the patch will be available. Most people who wanted to play it, already have. Aside from going back to do a bit of a tech demo, we doubt many people go and replay these games for the visuals.</p>
+      <figure>
+        <img src="https://static.techspot.com/articles-info/1934/images/S-33.jpg"/>
+      </figure>
+      <p>This will be less of an issue with <a href="https://www.techspot.com/news/81504-minecraft-receive-official-ray-tracing-support.html">Minecraft RTX</a>, though Nvidia has said this won’t be available until 2020.</p>
+      <p>The second criticism is the list that Nvidia proudly touted at the launch of the GeForce 20 series. It looked like there were plenty of games coming, with more getting RTX down the line. Of the launch titles, we have eventually seen four of those, but what about the others? Assetto Corsa Competizione cancelled ray tracing support. Atomic Heart has no firm release date. MechWarrior 5 and Enlisted are supposed to come out this year. Justice and JX3 are Asia-specific, and the status of ProjectDH is unclear.</p>
+      <p>We suspect the second year of ray tracing will be better, games like Call of Duty Modern Warfare are launching with RTX, and there are some big names to come, like Cyberpunk 2077, Doom Eternal, and Dying Light 2. We’re skeptical of how many will launch with decent RTX functionality out of the box, but the list is a promising one.</p>
+      <aside>Performance, while less of a concern than it once was, remains a big factor.</aside>
+      <figure>
+        <img src="https://static.techspot.com/articles-info/1934/images/S-34.jpg"/>
+      </figure>
+      <p>Roughly speaking, using entry level ray tracing options will deliver a straight 30% performance hit, a little less at 1080p, a little more at 4K. That’s a substantial drop to frame rates, and a lot of times we feel the visual improvements don’t justify that sort of hit.</p>
+      <p>Even in a game like Metro Exodus with decent ray tracing… a 25 to 30 percent hit is significant given the changes to lighting effects can be subtle in some situations. More realistic? Sure. But is that enough to justify going from a 60 FPS experience into the mid 40s, sometimes with dips into the 30s? Probably not.</p>
+      <p>In Control, the game looks spectacular with RTX reflections, but on our RTX 2080 Ti at 3440 x 1440 we were regularly dipping below 40 FPS, sometimes below 30 FPS, using the medium ray tracing setting. Switching ray tracing off was less visually stunning, but a 50+ FPS experience.</p>
+      <h3>Where do we go from here?</h3>
+      <p>Nvidia has a number of responses to the ray tracing performance problem. One of them is that most gamers have a 1080p display, so it’s perfectly fine that ray tracing targets 1080p 60 FPS. In our opinion, that’s rubbish. Yes, if you play these titles at 1080p with an <a href="https://www.techspot.com/review/1931-radeon-5700-xt-vs-geforce-2060-super/">RTX 2060 Super</a> and the entry level ray tracing modes, often you get playable frame rates around 60 FPS, as you can see on the chart below. Control is not quite at that level, but sure, in general the RTX 2060 Super and above are going to deliver 60 FPS at 1080p.</p>
+      <p>But there’s a reason we ran most of our tests at 1440p. These GPUs are 1440p class cards. You are spending $400 on an RTX 2060 Super, that’s a lot of money to get a 1080p 60 FPS experience. What about the RTX 2070 or RTX 2080? You can’t possibly say a $500+ GPU is designed for 1080p 60 FPS gaming. If that was the target you could have just as well bought a <a href="https://www.techspot.com/review/1935-nvidia-geforce-gtx-1660-super/">GTX 1660</a> which <i>is </i>a 1080p 60 FPS level GPU. The reason people spend the big bucks on these higher priced cards is to play at higher resolutions and frame rates. If ray tracing is to succeed, it has to fit into that picture.</p>
+      <figure>
+        <img src="https://static.techspot.com/articles-info/1934/images/2019-11-03-image.png"/>
+      </figure>
+      <p>Nvidia’s other response is to either turn down other graphics settings, or use DLSS. We don’t buy the idea of turning down settings to enable ray tracing. This is a premium graphics feature, a cherry on top when you’ve already been playing on Ultra settings. We don’t want to reduce our preset to medium to enable ray tracing, that makes little sense.</p>
+      <p>DLSS, or other forms of resolution scaling... sure, these will improve your frame rate when ray tracing is enabled. But they also improve your frame rate when ray tracing is disabled, they don’t fundamentally close that performance gap. So you will always have the choice between significantly higher performance, or ray tracing, regardless of whether you are resolution scaling or not. And that’s only scratching the surface of <a href="https://www.techspot.com/review/1903-dlss-vs-freestyle-vs-ris/">that discussion</a>.</p>
+      <figure>
+        <img src="https://static.techspot.com/articles-info/1934/images/S-35.jpg"/>
+      </figure>
+      <p>That’s not to say there is no time when enabling ray tracing make sense. If you have an <a href="https://www.techspot.com/review/1902-geforce-rtx-2070-super-vs-radeon-5700-xt/">RTX 2070</a> or <a href="https://www.techspot.com/review/1881-geforce-rtx-2080-super/">RTX 2080</a> and you do play at 1080p, you’re probably playing most games on Ultra settings at 1080p well above 100 FPS. You’ve bought the card for 1080p high refresh gaming, that’s fair enough. If you turn on ray tracing and get 80 FPS, that’s going to be fine most of the time, especially for slower paced and non-competitive titles. Same situation with the RTX 2080 Ti at 1440p.</p>
+      <p>Fundamentally though, a 30% performance hit for ray tracing is too high a price for a basic effect, and up to 50% for "ultra" ray tracing is really pushing it. We need faster hardware with better ray tracing acceleration to reasonably play games with the feature enabled. If the performance hit was in the 15 to 20 percent range -- which is still very significant -- we think it would be easier to justify, but that would require a big step up in the amount of RT hardware on these cards.</p>
+      <p>Intertwined with this issue is that many games are cutting corners with these effects, using low ray counts. That means introducing artifacts that are not present with non ray traced presentations of the game, which depending on the effect can be a downgrade from ray tracing disabled.</p>
+      <p>Putting all of these elements together, we believe the first year of RTX ray tracing has been a disappointment. Not many games to play, big performance hits, and effects that while visually impressive in some instances, are still in their infancy.</p>
+      <p>Perhaps the situation would have been easier to swallow if Nvidia had marketed RTX differently. They went on to push ray tracing as a headline feature, the reason to buy these new GPUs and pay a big premium, especially at launch. Instead Nvidia could have focused on traditional gaming performance, more mature features, and value.</p>
+      <p>After all, while some of these RTX cards are expensive, they’re still pretty darn powerful. Ray tracing is a neat bonus that we've been able to demo on these powerful gaming GPUs while the ecosystem matures. Because honestly, when you look at it as a demo and the future of gaming graphics, there’s a ton of promise there. We suspect and hope this coming year of ray tracing will be a lot better than the first.</p>
+      <h4>Shopping Shortcuts:</h4>
+      <ul>
+        <li>GeForce RTX 2080 Ti on <a href="https://www.amazon.com/EVGA-GeForce-Gaming-Graphics-11G-P4-2281-KR/dp/B07KSPW8HQ/ref=sr_1_7?keywords=GeForce+RTX+2080+Ti&amp;qid=1563858336&amp;s=gateway&amp;sr=8-7&amp;tag=httpwwwtechsp-20">Amazon</a></li>
+        <li>GeForce RTX 2080 Super on <a href="https://www.amazon.com/s?k=GeForce+RTX+2080+super&amp;ref=nb_sb_noss&amp;tag=httpwwwtechsp-20">Amazon</a></li>
+        <li>GeForce RTX 2070 Super on <a href="https://www.amazon.com/s?k=GeForce+RTX+2070+super&amp;ref=nb_sb_noss&amp;tag=httpwwwtechsp-20">Amazon</a></li>
+        <li>GeForce RTX 2060 Super on <a href="https://www.amazon.com/s?k=GeForce+RTX+2070+super&amp;ref=nb_sb_noss_2&amp;tag=httpwwwtechsp-20">Amazon</a></li>
+        <li>AMD Radeon RX 5700 XT on <a href="https://www.amazon.com/s?k=AMD+Radeon+RX+5700+XT&amp;ref=nb_sb_noss_2&amp;tag=httpwwwtechsp-20">Amazon</a></li>
+        <li>AMD Radeon RX 5700 on <a href="https://www.amazon.com/s?k=AMD+Radeon+RX+5700&amp;ref=nb_sb_noss_2&amp;tag=httpwwwtechsp-20">Amazon</a></li>
+        <li>GeForce GTX 1660 Super on <a href="https://www.amazon.com/s?k=geforce+gtx+1660+super&amp;ref=nb_sb_noss_2&amp;tag=httpwwwtechsp-20">Amazon</a></li>
+        <li>AMD Ryzen 9 3900X on <a href="https://www.amazon.com/s?k=Ryzen+9+3900X&amp;ref=nb_sb_noss&amp;tag=httpwwwtechsp-20">Amazon</a></li>
+        <li>AMD Ryzen 5 3600 on <a href="https://www.amazon.com/AMD-Ryzen-3600-12-Thread-Processor/dp/B07STGGQ18/ref=sr_1_11?keywords=AMD+Ryzen+5+3600&amp;qid=1562647764&amp;s=gateway&amp;sr=8-11&amp;tag=httpwwwtechsp-20">Amazon</a></li>
+      </ul>
+    </article>
+  </body>
+</html>

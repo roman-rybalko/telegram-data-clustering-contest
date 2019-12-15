@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://www.blendernation.com/2019/11/11/behind-the-scenes-fallout-76-car/"/>
+    <meta property="og:site_name" content="BlenderNation"/>
+    <meta property="article:published_time" content="2019-11-11T16:55:55+00:00"/>
+    <meta property="og:title" content="Behind the Scenes: Fallout 76 Car"/>
+    <meta property="og:description" content="Introduction In the following article I will describe to you my personal workflow for creating this vehicle. But first of all, I will start off telling you a bit about myself. My name is Lutz Rohlfing, I am 19 years old and from Germany. Currently, I am studying mechanical engineering in the city of OsnabrückRead More"/>
+  </head>
+  <body>
+    <article>
+      <h1>Behind the Scenes: Fallout 76 Car</h1>
+      <address>
+        <time datetime="2019-11-11T16:55:55+00:00">11 Nov 2019, 16:55</time>
+      </address>
+      <h3>Introduction</h3>
+      <p>In the following article I will describe to you my personal workflow for creating this vehicle. But first of all, I will start off telling you a bit about myself. My name is Lutz Rohlfing, I am 19 years old and from Germany. Currently, I am studying mechanical engineering in the city of Osnabrück in my third semester. With Blender and 3D modeling, I started out about 3.5 years ago, back in school when a friend asked me if I could make him a few 3D models. I was interested so he gave me a tutorial DVD and I downloaded Blender and started out. In the beginning I learned a lot through the tutorials of Andrew Price and Gleb Alexandrov, where I started with small and simple projects. Over the course of the years, I finished more advanced projects and improved my skills continuously in order to be at the level that I am now.</p>
+      <h3>Idea for the Car</h3>
+      <p>The concept for the car was inspired by the game Fallout 76, which I was convinced by a friend to play. While exploring the open world we discovered the wreckage of the car and we both really liked the design. I always liked the style of cars from the 50s and 60s, and this car was a nice combination of that style with a slightly futuristic touch.</p>
+      <h3>Software I Used</h3>
+      <p>Modeling, rendering and compositing were all done in Blender. For organizing my reference images I used PureRef.</p>
+      <h3>Modeling</h3>
+      <p>The first step of creating this car was searching for blueprints, which is something I always start off with for this kind of project. Unfortunately, there was not one that was sufficient for my purposes, though I found an orthographic side view in the wiki of the game. Then I searched for more reference pictures and also took some screenshots of the car in the game. For arranging the pictures I often use PureRef; it is easy to use and you get all your reference pictures in one view. After I was finished collecting the necessary references, I started modeling. I started off with the car’s body to lay out the general shape and proportion. The individual parts are all shrinkwrapped on a guide mesh to keep the curvature, which would otherwise be lost when splitting the car body into different parts.</p>
+      <p>Here is a first test render:</p>
+      <figure>
+        <img src="https://media.blendernation.com/wp-content/uploads/2019/11/image1-2-1024x576.png"/>
+      </figure>
+      <figure>
+        <img src="https://media.blendernation.com/wp-content/uploads/2019/11/image1-2-1024x576.png"/>
+      </figure>
+      <p>After working on the wheels, which I find is a very important feature for the appearance, I worked my way through the different details on the outside of the car. On this project, the front turned out to be quite difficult because the entrance of the thrust (see picture) entails complicated booleans and shapes.</p>
+      <figure>
+        <img src="https://media.blendernation.com/wp-content/uploads/2019/11/image4-1-1024x576.png"/>
+      </figure>
+      <figure>
+        <img src="https://media.blendernation.com/wp-content/uploads/2019/11/image4-1-1024x576.png"/>
+      </figure>
+      <p>In my workflow I only start on the inside of the vehicle when I am finished on the outside; if there is a need to correct the car’s shape, it can affect the inside, too, and creates extra work. On this specific project, I had more artistic freedom on the inside than on the outside, which had been supplied through the game. I found only a few images showing the interior. So I tried to stick to what I could find and imagined the rest. Important for me was that the doors with the spherical window could really be opened because that is one of the defining features of the car. That is the reason why I had to consider which parts of the interior should be moved with the doors and the window and which should not. After that, I modelled the general interior shapes like the sidewalls or the seat. After that the details came in, for example, small levers or additional displays and ventilation. With that, the modelling was finally finished and I could start with the materials.</p>
+      <slideshow>
+        <figure>
+          <img src="https://media.blendernation.com/wp-content/uploads/2019/11/image8-1024x576.png"/>
+        </figure>
+        <figure>
+          <img src="https://media.blendernation.com/wp-content/uploads/2019/11/image8-1024x576.png"/>
+        </figure>
+        <figure>
+          <img src="https://media.blendernation.com/wp-content/uploads/2019/11/image4-2-1024x473.jpg"/>
+        </figure>
+        <figure>
+          <img src="https://media.blendernation.com/wp-content/uploads/2019/11/image4-2-1024x473.jpg"/>
+        </figure>
+      </slideshow>
+      <h3>Materials</h3>
+      <p>The materials on this project were relatively easy. This is the node setup for the body:</p>
+      <figure>
+        <img src="https://media.blendernation.com/wp-content/uploads/2019/11/image1-1-1024x555.png"/>
+      </figure>
+      <figure>
+        <img src="https://media.blendernation.com/wp-content/uploads/2019/11/image1-1-1024x555.png"/>
+      </figure>
+      <p>I used a voronoi texture with a color ramp to recreate the little flakes on the car’s paint that you can see in a close-up. First, I set a turquoise color, but then decided for red. However, that could easily be changed with a hue saturation node. The other hue saturation nodes are for different color variations. All the other materials are just as or even less complicated than this one because I aimed for a look that makes it seem like the car was fresh out of production. Therefore there was no rust, dirt, or scratches. For the lighting I used an HDR sphere. For compositing, I made two node sets, one simple for the studio look, and a second one with some smudges and dirt on the picture for a more postcard-like look.</p>
+      <h3>Final Renders</h3>
+      <slideshow>
+        <figure>
+          <img src="https://media.blendernation.com/wp-content/uploads/2019/11/image2-1024x576.png"/>
+        </figure>
+        <figure>
+          <img src="https://media.blendernation.com/wp-content/uploads/2019/11/image2-1024x576.png"/>
+        </figure>
+        <figure>
+          <img src="https://media.blendernation.com/wp-content/uploads/2019/11/image5-1024x576.png"/>
+        </figure>
+        <figure>
+          <img src="https://media.blendernation.com/wp-content/uploads/2019/11/image5-1024x576.png"/>
+        </figure>
+      </slideshow>
+      <h3>About the Author</h3>
+      <figure>
+        <img src="https://media.blendernation.com/wp-content/uploads/2019/11/image3-1024x768.jpg"/>
+      </figure>
+      <figure>
+        <img src="https://media.blendernation.com/wp-content/uploads/2019/11/image3-1024x768.jpg"/>
+      </figure>
+      <p><b>Lutz Rohlfing</b>, hobby 3D artist, motorcyclist, mechanical engineering student</p>
+      <p> </p>
+      <p> </p>
+      <h3>Link</h3>
+      <ul>
+        <li>
+          <a href="https://blenderartists.org/t/fallout-76-car/1181744">Fallout 76 Car on Blenderartists</a>
+        </li>
+      </ul>
+    </article>
+  </body>
+</html>

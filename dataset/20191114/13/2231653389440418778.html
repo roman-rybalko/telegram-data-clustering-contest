@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://searchengineland.com/tired-of-manually-checking-for-google-merchant-center-disapprovals-this-script-has-you-covered-325070?utm_source=feedburner&amp;utm_medium=feed&amp;utm_campaign=feed-main"/>
+    <meta property="og:site_name" content="Search Engine Land"/>
+    <meta property="article:published_time" content="2019-11-14T13:44:44+00:00"/>
+    <meta property="og:title" content="Tired of manually checking for Google Merchant Center disapprovals? This script has you covered"/>
+    <meta property="og:description" content="Search Engine Land is the leading industry source for daily, must-read news and in-depth analysis about search engine technology."/>
+  </head>
+  <body>
+    <article>
+      <h1>Tired of manually checking for Google Merchant Center disapprovals? This script has you covered</h1>
+      <h2>This script emails you when the percentage of disapproved products in your feed has exceeded the limit you’ve set it, saving you the time and tediousness of manually vetting the Google Merchant Center.</h2>
+      <address><time datetime="2019-11-14T13:44:44+00:00">14 Nov 2019, 13:44</time> by <a rel="author" href="https://searchengineland.com/author/daniel-gilbert" target="_blank">Daniel Gilbert</a></address>
+      <p>If you run Google Shopping activity, you’ll be familiar with the Google Merchant Center. It houses all your product fees, which are bumper lists of all of the products you sell. As Google Shopping matches search queries to your feed rather than keywords, this bumper list should be complete with all of the information that Google needs to create your shopping ads. </p>
+      <p>Each product in your feed has to be approved in order to show ads for it. Unfortunately, there are plenty of things that can, and often do, go wrong. You could have gaps in your feed, a mismatch between your product information and the listing on your site, or Google might be struggling to crawl your images… the list goes on and on. </p>
+      <p>These errors and policy violations lead to ad disapprovals, which you can find out about in the Google Merchant Center. But checking your Google Merchant Center Diagnostics on a regular basis is, simply put, pretty tedious. Because it doesn’t do much more than house your feeds, it’s easy to forget to check for problems.</p>
+      <p>But neglecting to check means running the risk of loads of products being disapproved without your knowledge. That means you’re not running all your Google Shopping ads. Imagine leaving significant gaps in your feed for a Black Friday promotion, for example, and not noticing for hours on end. Not good.</p>
+      <p>As luck would have it, our Google Merchant Center Disapproval Checker Script will keep up constant vigilance for you. </p>
+      <h3>What does it do?</h3>
+      <p>The script is an automated early warning system to let you know when something isn’t right, allowing you to respond quickly to issues that arise without constantly having to check for problems manually. </p>
+      <p>By automating the process of checking for product disapprovals, you don’t need to manually examine your feed “just in case.” If the number of disapproved products in your feed exceeds the percentage threshold you feed it, it will email you an alert detailing the number of problem products, along with this figure as a percentage of your total feed. </p>
+      <p>It can be scheduled to run repeatedly, so you can sit back and wait until you get an email alert. These alerts allow you to troubleshoot issues quickly in the Google Merchant Center and can explain sudden fluctuations in Google Shopping traffic. </p>
+      <h3>How to use it</h3>
+      <p>In the account where you’d like it to run, navigate to <b>Tools &amp; Settings</b> &gt; <b>Bulk Actions</b> &gt; <b>Scripts </b>in the Google Ads interface and click the blue plus button to create a new script. Once you’ve given it authorization to read your account, click <b>Advanced APIs </b>on the top bar and enable <b>“Shopping content</b>.” </p>
+      <p>Then copy and paste all of <a href="https://github.com/Brainlabs-Digital/Google-Ads-Scripts/blob/master/Monitoring/gmc-disapproval-checker.js">the code</a> below into the input box. </p>
+      <p>You’ll need to input the following to ensure the script functions as desired:</p>
+      <ul>
+        <li>the email address where you’d like to receive the alerts</li>
+        <li>the ID of the Merchant Center you’re checking</li>
+        <li>the disapproval threshold to a percentage value. If, for example, you’d like to be alerted only when 70% or more of your products are disapproved (not advised!), ensure it reads: <i>var threshold = 70</i>. Do not input a percentage sign. </li>
+      </ul>
+      <p>As standard, the script will check every product in your account. If you’d like to filter for only specific products, you can include their product IDs as a string within the Filters section e.g. [“123″, “456”, “789”]. </p>
+      <p>You can use the same system to exclude products from the alerts. This would allow you to set up multiple checks – for example, one script to check for BAU products and another for promotions. </p>
+      <p>The script is most effective as a warning system when running on a schedule. To set this up, save your script at the bottom right of the window, navigate back to the <b>Scripts </b>page in the Google Ads interface and find the one you just created. Here you can specify when and how often you would like it to run by modifying the <b>Frequency</b> setting in the third column. This can be either hourly, daily, weekly or monthly. My recommendation is to set it to an hourly schedule. </p>
+      <p>When the script runs and detects disapproved products exceeding the threshold you have specified, you will receive a “GMC Disapproval Alert Email” detailing the number of disapproved listings along with this figure as a percentage of all the products in your feed. </p>
+      <p>Make sure to hurry over to the Google Merchant Center to troubleshoot whatever’s gone wrong! </p>
+      <hr/>
+      <p>
+        <i>Opinions expressed in this article are those of the guest author and not necessarily Search Engine Land. Staff authors are listed <a href="https://searchengineland.com/staff">here</a>.</i>
+      </p>
+    </article>
+  </body>
+</html>

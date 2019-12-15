@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://xakep.ru/2019/11/14/pmxdrv/"/>
+    <meta property="og:site_name" content="«Хакер»"/>
+    <meta property="article:published_time" content="2019-11-14T16:30:52+00:00"/>
+    <meta property="og:title" content="Уязвимость в драйвере Intel может предоставить злоумышленникам полный доступ к устройству"/>
+    <meta property="og:description" content="Инженеры Intel выпустили обновленные версии pmxdrvx64.sys и pmxdrv.sys, исправляя уязвимости, которые позволяют атакующему установить полный контроль над устройством."/>
+  </head>
+  <body>
+    <article>
+      <h1>Уязвимость в драйвере Intel может предоставить злоумышленникам полный доступ к устройству</h1>
+      <address><time datetime="2019-11-14T16:30:52+00:00">14 Nov 2019, 16:30</time> by <a rel="author" href="https://xakep.ru/" target="_blank">Мария Нефёдова</a></address>
+      <p>Минувшим летом, на конференции DEF CON 27 в Лас-Вегасе специалисты компании Eclypsium <a href="https://media.defcon.org/DEF%20CON%2027/DEF%20CON%2027%20presentations/DEFCON-27-Jesse-Michael-Get-off-the-kernel-if-you-cant-drive.pdf">рассказали</a>, что провели глобальную проверку безопасности драйверов ядра Windows. Тогда они сообщили об обнаружении более чем 40 уязвимостей в <a href="https://github.com/eclypsium/Screwed-Drivers/blob/master/DRIVERS.md">драйверах ядра от 20 различных производителей</a>. Однако летом была обнародована информация только о 39 драйверах, так как остальные бреши на тот момент еще не были закрыты.</p>
+      <p>Теперь эксперты Eclypsium сообщил, что минувшим летом Intel устранила не все проблемы. Так, ранее компания уже патчила  <a href="https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-00281.html">Intel Processor Identification Utility</a> и <a href="https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-00283.html">Intel Computing Improvement Program</a>, но теперь очередь дошла и до исправления Intel PMx Driver (PMxDrv), ошибки в котором ранее находились под эмбарго.</p>
+      <p>Исследователи <a href="https://eclypsium.com/2019/11/12/mother-of-all-drivers/">рассказывают</a>, что PMxDrv обладает широкими возможностями, и эти легитимные функции могут использовать и злоумышленники. Так, среди возможностей драйвера:</p>
+      <ul>
+        <li>чтение/запись в физическую память;</li>
+        <li>чтение/запись в Model Specific Registers (MSR);</li>
+        <li>чтение/запись в управляющие регистры;</li>
+        <li>чтение/запись в таблицу векторов прерываний (Interrupt Descriptor Table, IDT)  и глобальную таблица дескрипторов (Global Descriptor Table, GDT);</li>
+        <li>чтение/запись в записи регистры отладки;</li>
+        <li>произвольное получение доступа I/O;</li>
+        <li>произвольное получение доступа PCI.</li>
+      </ul>
+      <p>Хотя обычно злоумышленнику требуются права администратора для доступа к функциям драйвера ядра, аналитики Eclypsium объясняют, что многие производители не защищают свои драйверы должным образом, разрешая приложениям из пользовательского пространства обращаться к функциям драйвера ядра без каких-либо ограничений. Именно так произошло и с Intel PMx Driver.</p>
+      <p>Проблема заключается в том, что данный драйвер входил в состав многих инструментов, связанных с Intel ME и BIOS, которые Intel выпускала в последние два десятилетия, начиная с 1999 года. К примеру, драйвер можно обнаружить в составе <a href="https://www.intel.com/content/www/us/en/support/articles/000025619/software.html">detection tool</a>, выпущенном Intel в 2017 году, чтобы помочь администраторам определить, были ли их системы уязвимы перед серьезной проблемой в Intel Management Engine.</p>
+      <p>Теперь инженеры Intel выпустили обновленные версии pmxdrvx64.sys и pmxdrv.sys, однако специалисты полагают, что на распространение этих исправлений, к сожалению, могут уйти долгие месяцы или даже годы.</p>
+    </article>
+  </body>
+</html>

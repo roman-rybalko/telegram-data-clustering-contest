@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://www.androidpolice.com/2019/11/11/usb-and-bluetooth-accessories-can-be-used-to-attack-android-phones-and-spy-on-owners/"/>
+    <meta property="og:site_name" content="Android Police"/>
+    <meta property="article:published_time" content="2019-11-11T09:27:13+00:00"/>
+    <meta property="og:title" content="USB and Bluetooth accessories can be used to attack Android phones and spy on owners"/>
+    <meta property="og:description" content="A group of security researchers has discovered an exploit that lets Bluetooth and USB accessories wreak all sorts of havoc on multiple Android"/>
+  </head>
+  <body>
+    <article>
+      <h1>USB and Bluetooth accessories can be used to attack Android phones and spy on owners</h1>
+      <address><time datetime="2019-11-11T09:27:13+00:00">11 Nov 2019, 09:27</time> by <a rel="author" href="https://www.androidpolice.com/author/david-oh/" target="_blank">David Oh</a></address>
+      <p>A group of security researchers has discovered an exploit that lets Bluetooth and USB accessories wreak all sorts of havoc on multiple Android smartphones. In both cases, the door of entry was the cellphone modem, or baseband, which is found inside all smartphones.</p>
+      <p>Once a phone has been compromised via the baseband, multiple kinds of disruptions can be heaped on it: complete blockage of all incoming phone calls, selective call blocking, call forwarding to a different number, cutting off of cellular internet connectivity (e.g., 3G/4G), interception of phone calls and text messages, and owner location and activity tracking.</p>
+      <p>According to the researchers, this exploit is possible due to the way some Android smartphones allow Bluetooth and USB accessories, such as headphones, to communicate with the baseband, which is normally cordoned off from other parts of the device (such as apps).</p>
+      <p>The baseband firmware of the phones in the study, which is supposed to exclusively accept special commands (called AT commands), was tricked by a hacking app developed by the researchers called <a href="https://github.com/Imtiazkarimik23/ATFuzzer">ATFuzzer</a>.  Using ATFuzzer, they discovered 14 commands that worked on 10 different Android smartphones across six different vendors.</p>
+      <p>In some cases, the disruption was minor — the Nexus 5 and Pixel 2 had their internet cut off after a DoS command was sent to them. The Nexus 6 and Nexus 6P both fared a bit worse, undergoing a downgrade (also known as bidding-down) that made them vulnerable to over-the-air (OTA) man-in-the-middle attacks in cellular networks. The worst-case scenario of complete privacy loss was demonstrated in three Samsung phones — Galaxy Note 2, Galaxy S3, and Galaxy S8+. After getting these phones to leak their IMEI and IMSI, all phone calls and text messages could become intercepted, and user locations and activities tracked down.</p>
+      <p>The research team says the baseband processors' failure to correctly parse and filter out anomalous commands is the reason for this security vulnerability, and the only way to stop this type of attack is by completely stripping away Bluetooth and USB access to the baseband.</p>
+      <p>Fortunately, there is a silver lining in all this. Since the exploit works through a wireless Bluetooth or physical USB connection, Android owners can easily avoid the situation by not connecting their smartphones to suspicious or unknown accessories, such as charging stations often found inside malls or coffee shops. With the exception of the Galaxy S8+ and Pixel 2 (which are about two years old), the rest of the targeted phones are quite ancient, and not as pertinent to savvy and up-to-date smartphone owners like our AP readership. But if you happen to own or know someone that still uses those older devices, a device upgrade is strongly encouraged — even a cheap new $80-100 Nokia or Redmi is more secure than those ancient devices.</p>
+      <p>As for the device manufacturers mentioned in the study, they have all been notified of the vulnerabilities by the research team. In response to TechCrunch's inquiry, for instance, Samsung stated that patches are forthcoming. Google responded back saying none of its Pixel phones with the latest patches applied are vulnerable. Huawei did not comment.</p>
+      <p><b>Source: <br/></b><a href="https://techcrunch.com/2019/11/08/android-baseband-flaws/">TechCrunch</a>, <br/><a href="https://www.documentcloud.org/documents/6543391-ATFuzzer.html">Research document</a></p>
+    </article>
+  </body>
+</html>

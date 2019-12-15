@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://andro4all.com/noticias/android/google-usar-kernel-linux-principal-android"/>
+    <meta property="og:site_name" content="Andro4all"/>
+    <meta property="article:published_time" content="2019-11-21T15:01:00+00:00"/>
+    <meta property="og:title" content="Qué significa que Google quiera usar el kernel “principal” de Linux en Android, y cómo cambiaría por completo la situación del sistema"/>
+    <meta property="og:description" content="Google planea comenzar a utilizar el kernel principal de Linux en Android. Te explicamos qué significa, y por qué es un cambio tan importante."/>
+  </head>
+  <body>
+    <article>
+      <h1>Qué significa que Google quiera usar el kernel “principal” de Linux en Android, y cómo cambiaría por completo la situación del sistema</h1>
+      <address><time datetime="2019-11-21T15:01:00+00:00">21 Nov 2019, 15:01</time> by <a rel="author">Christian Collado</a></address>
+      <p>Si llevas tiempo inmerso en el <i>mundillo</i> Android, probablemente sepas que el sistema operativo de Google <b>está basado en el kernel de Linux</b>. Lo que quizá no supieras, es que <b>cada dispositivo existente cuenta con una versión altamente modificada</b> de este software, y que precisamente esa es una de las causas de la elevada fragmentación que existe en la plataforma móvil más usada en el mundo.</p>
+      <p>De hecho, <b>antes de llegar a tu móvil, el kernel Linux pasa por tres fases distintas</b> en las que sufre distintas modificaciones. En primer lugar, Google toma el <a href="https://andro4all.com/2017/09/android-actualizaciones-kernel-linux">kernel LTS –Long Term Support– de Linux</a>, y realiza las modificaciones necesarias para convertirlo en el <b>Android Common Kernel</b>. Más tarde, como especifican en <a href="https://arstechnica.com/gadgets/2019/11/google-outlines-plans-for-mainline-linux-kernel-support-in-android/"><i>ArsTechnica</i></a>, este Android Common Kernel llega a manos del fabricante del SoC encargado de dar vida al dispositivo en cuestión –por ejemplo, Qualcomm o MediaTek–, e introduce los cambios necesarios de modo que el kernel incluya <b>añadidos específicos para el hardware</b>. Y finalmente, el fabricante del smartphone recibe este kernel modificado, para <b>introducir su propio código específico</b> con el que dar soporte al resto de hardware con el que contará este dispositivo.</p>
+      <p>Una vez finalizado este largo proceso, obtenemos el <b>kernel definitivo que estará integrado en el sistema operativo de nuestro smartphone</b>. Pero, ¿y si existiera una forma de reducir al mínimo el esfuerzo necesario a la hora de desarrollar un kernel para cada dispositivo Android?</p>
+      <p>Precisamente ese es el objetivo que Google persigue a través de un plan <a href="https://www.linuxplumbersconf.org/">anunciado durante la pasada Linux Plumbers Conference</a>, donde varios ingenieros de la firma comentaron su intención de <b>acercar el kernel de Android lo máximo posible al kernel “mainline” o “regular” de Linux</b>, reduciendo así notablemente el trabajo necesario tanto de Google como del resto de fabricantes, y potencialmente mejorando la situación del sistema operativo en lo relativo a actualizaciones y seguridad.</p>
+      <h3>Un mismo kernel Linux para todos los dispositivos Android</h3>
+      <p>Lo cierto es que Google ya había dejado clara su intención al respecto de esta medida durante la edición del año pasado de esta misma conferencia. No obstante, no ha sido hasta esta nueva entrega cuando <b>los ingenieros de la compañía han demostrado el progreso</b> realizado a lo largo de este año.</p>
+      <p>A grandes rasgos, <b>la propuesta consiste es desarrollar una medida similar a la arquitectura <a href="https://andro4all.com/2018/05/project-treble-ventajas-actualizaciones-android-p">Project Treble</a></b>. Este sistema, integrado en el sistema a partir de 2017, permite <b>separar los drivers específicos del dispositivo del resto de código de Android</b>, de modo que el proceso de desarrollo de cada nueva versión del sistema sea más sencillo de cara a los fabricantes.</p>
+      <figure>
+        <img src="https://andro4all.com/files/2019/11/Android-Nuevo-Kernel-Linux.jpg"/>
+      </figure>
+      <p>En el caso que nos ocupa, sin embargo, el objetivo de Google es <b>crear una interfaz dentro del propio kernel de Linux</b> en la que los fabricantes pudieran incorporar su código específico en forma de módulos añadidos, de forma que <b>el kernel principal no fuera modificado en ningún momento</b>.</p>
+      <p>Y lo cierto es que la idea comienza a dar sus frutos. En una demostración llevada a cabo durante la LPC 2019 se mostró un <b><a href="https://andro4all.com/2018/10/pocophone-f1-analisis-mes-de-uso">Xiaomi POCO F1</a> ejecutando Android 10 sobre un kernel “mainline” de Linux</b>, y si bien algunas de las funciones del teléfono quedaron inoperativas, los avances en este sentido son claros.</p>
+      <figure>
+        <img src="https://andro4all.com/files/2019/11/Linux-Kernel-Mainline-en-un-POCO-F1-e1574335711103.jpg"/>
+      </figure>
+      <p>Aunque aún queda mucho trabajo por delante, y muchos problemas que resolver, <b>la posible existencia de un único kernel “general” que elimine la necesidad de un kernel específico para cada terminal</b> se traduciría en una mayor rapidez de cara a los fabricantes a la hora de desarrollar y liberar actualizaciones del sistema y de seguridad para sus dispositivos, y por tanto una mejor situación general de la plataforma. No obstante, esta es una medida que podría llevar años, y no hay que olvidar que <a href="https://andro4all.com/2019/01/google-fuchsia-informacion">Google sigue trabajando en Fuchsia</a>, un sistema operativo basado en <b>zircon, un nuevo kernel</b> que, precisamente, carece de las desventajas y los inconvenientes que el uso del kernel Linux en Android ha supuesto desde los inicios del sistema operativo.</p>
+      <p><a href="https://www.instagram.com/">Síguenos en Instagram</a> <a href="https://t.me/andro4all">Únete a nuestro canal de Telegram</a></p>
+    </article>
+  </body>
+</html>

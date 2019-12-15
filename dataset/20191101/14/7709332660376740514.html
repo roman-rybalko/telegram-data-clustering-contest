@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://css-tricks.com/a-look-at-jamstacks-speed-by-the-numbers/"/>
+    <meta property="og:site_name" content="CSS-Tricks"/>
+    <meta property="article:published_time" content="2019-11-01T14:29:44+00:00"/>
+    <meta property="og:title" content="A Look at JAMstack’s Speed, By the Numbers"/>
+    <meta property="og:description" content="People say JAMstack sites are fast — let’s find out why by looking at real performance metrics! We’ll cover common metrics, like Time to First Byte"/>
+  </head>
+  <body>
+    <article>
+      <h1>A Look at JAMstack’s Speed, By the Numbers</h1>
+      <p>Easily manage projects with <a href="https://synd.co/2JziuUL">monday.com</a></p>
+      <p>People say JAMstack sites are fast — let’s find out why by looking at real performance metrics! We’ll cover common metrics, like Time to First Byte (TTFB) among others, then compare data across a wide section of sites to see how different ways to slice those sites up compare.</p>
+      <p>First, I’d like to present a small analysis to provide some background. According to the <a href="https://httparchive.org/reports/loading-speed#fcp">HTTPArchive metrics report on page loading</a>, users wait an average of <b>6.7 seconds</b> to see primary content.</p>
+      <blockquote>First Contentful Paint (FCP) - measures the point at which text or graphics are first rendered to the screen.</blockquote>
+      <figure>
+        <img src="https://css-tricks.com/wp-content/uploads/2019/10/jamspeed-01.png"/>
+        <figcaption>The FCP distribution for the 10th, 50th and 90th percentile values as reported on August 1, 2019.</figcaption>
+      </figure>
+      <p>If we are talking about engagement with a page (Time to Interactive), <a href="https://httparchive.org/reports/loading-speed#ttci">users wait even longer</a>. The average time to interactive is <b>9.3 seconds</b>.</p>
+      <blockquote>Time to Interactive (TTI) - a time when user can interact with a page without delay.</blockquote>
+      <figure>
+        <img src="https://css-tricks.com/wp-content/uploads/2019/10/jamspeed-02.png"/>
+        <figcaption>TTI distribution for the 10th, 50th and 90th percentile values as reported on August 1, 2019.</figcaption>
+      </figure>
+      <h3>State of the real user web performance</h3>
+      <p>The data above is from lab monitoring and doesn't fully represent real user experience. Real users data based taken from the <a href="https://developers.google.com/web/tools/chrome-user-experience-report/">Chrome User Experience Report (CrUX)</a> shows an even wider picture.</p>
+      <p>​​I’ll use data aggregated from users who use mobile devices. Specifically, we will use metrics like:</p>
+      <ul>
+        <li>
+          <a href="https://css-tricks.com/a-look-at-jamstacks-speed-by-the-numbers/#jamspeed-01">Time To First Byte (TTFB)</a>
+        </li>
+        <li>
+          <a href="https://css-tricks.com/a-look-at-jamstacks-speed-by-the-numbers/#jamspeed-02">First Contentful Paint (FCP)</a>
+        </li>
+        <li>
+          <a href="https://css-tricks.com/a-look-at-jamstacks-speed-by-the-numbers/#jamspeed-03">First Input Delay (FID)</a>
+        </li>
+      </ul>
+      <hr/>
+      <h4>Time To First Byte</h4>
+      <p>TTFB represents the time browser waits to receive first bytes of the response from server. TTFB takes from 200ms to 1 second for users around the world. It’s a pretty long time to receive the first chunks of the page.</p>
+      <figure>
+        <img src="https://css-tricks.com/wp-content/uploads/2019/10/jamspeed-13.png"/>
+        <figcaption>TTFB mobile speed distribution (CrUX, July 2019)</figcaption>
+      </figure>
+      <hr/>
+      <h4>First Contentful Paint</h4>
+      <p>FCP happens after 2.5 seconds for 23% of page views around the world.</p>
+      <figure>
+        <img src="https://css-tricks.com/wp-content/uploads/2019/10/jamspeed-03.png"/>
+        <figcaption>FCP mobile speed distribution (CrUX, July 2019)</figcaption>
+      </figure>
+      <hr/>
+      <h4>First Input Delay</h4>
+      <p>FID metrics show how fast web pages respond to user input (e.g. click, scroll, etc.).</p>
+      <p>CrUX doesn’t have TTI data due to different restrictions, but has FID, which is even better can reflect page interactivity. Over 75% of mobile user experiences have input delay for 50ms and users didn't experience any jank.</p>
+      <figure>
+        <img src="https://css-tricks.com/wp-content/uploads/2019/10/jamspeed-04.png"/>
+        <figcaption>FID mobile speed distribution (CrUX, July 2019)</figcaption>
+      </figure>
+      <hr/>
+      <p>You can use the queries below and play with them <a href="https://bigquery.cloud.google.com/table/chrome-ux-report">on this site</a>.</p>
+      <p>Data from July 2019</p>
+      <pre>[ <br/>    { <br/>      "date": "2019_07_01", <br/>      "timestamp": "1561939200000", <br/>      "client": "desktop", <br/>      "fastTTFB": "27.33", <br/>      "avgTTFB": "46.24", <br/>      "slowTTFB": "26.43", <br/>      "fastFCP": "48.99", <br/>      "avgFCP": "33.17", <br/>      "slowFCP": "17.84", <br/>      "fastFID": "95.78", <br/>      "avgFID": "2.79", <br/>      "slowFID": "1.43" <br/>    }, <br/>    { <br/>      "date": "2019_07_01", <br/>      "timestamp": "1561939200000", <br/>      "client": "mobile", <br/>      "fastTTFB": "23.61", <br/>      "avgTTFB": "46.49", <br/>      "slowTTFB": "29.89", <br/>      "fastFCP": "38.58", <br/>      "avgFCP": "38.28", <br/>      "slowFCP": "23.14", <br/>      "fastFID": "75.13", <br/>      "avgFID": "17.95", <br/>      "slowFID": "6.92" <br/>    } <br/>  ]</pre>
+      <p>BigQuery</p>
+      <pre>#standardSQL <br/>  SELECT <br/>    REGEXP_REPLACE(yyyymm, '(\\d{4})(\\d{2})', '\\1_\\2_01') AS date, <br/>    UNIX_DATE(CAST(REGEXP_REPLACE(yyyymm, '(\\d{4})(\\d{2})', '\\1-\\2-01') AS DATE)) * 1000 * 60 * 60 * 24 AS timestamp, <br/>    IF(device = 'desktop', 'desktop', 'mobile') AS client, <br/>    ROUND(SUM(fast_fcp) * 100 / (SUM(fast_fcp) + SUM(avg_fcp) + SUM(slow_fcp)), 2) AS fastFCP, <br/>    ROUND(SUM(avg_fcp) * 100 / (SUM(fast_fcp) + SUM(avg_fcp) + SUM(slow_fcp)), 2) AS avgFCP, <br/>    ROUND(SUM(slow_fcp) * 100 / (SUM(fast_fcp) + SUM(avg_fcp) + SUM(slow_fcp)), 2) AS slowFCP, <br/>    ROUND(SUM(fast_fid) * 100 / (SUM(fast_fid) + SUM(avg_fid) + SUM(slow_fid)), 2) AS fastFID, <br/>    ROUND(SUM(avg_fid) * 100 / (SUM(fast_fid) + SUM(avg_fid) + SUM(slow_fid)), 2) AS avgFID, <br/>    ROUND(SUM(slow_fid) * 100 / (SUM(fast_fid) + SUM(avg_fid) + SUM(slow_fid)), 2) AS slowFID <br/>  FROM <br/>    `chrome-ux-report.materialized.device_summary` <br/>  WHERE <br/>    yyyymm = '201907' <br/>  GROUP BY <br/>    date, <br/>    timestamp, <br/>    client <br/>  ORDER BY <br/>    date DESC, <br/>    client</pre>
+      <h3>State of Content Management Systems (CMS) performance</h3>
+      <p>CMSs <i>should</i> have become our saviors, helping us build faster sites. But looking at the data, that is not the case. The current state of CMS performance around the world is not so great.</p>
+      <figure>
+        <img src="https://css-tricks.com/wp-content/uploads/2019/10/jamspeed-05.png"/>
+        <figcaption>TTFB mobile speed distribution comparison between all web and CMS (CrUX, July 2019)</figcaption>
+      </figure>
+      <p>Data from July 2019</p>
+      <p>
+        <code>[ { "freq": "1548851", "fast": "0.1951", "avg": "0.4062", "slow": "0.3987" } ]</code>
+      </p>
+      <p>BigQuery</p>
+      <pre>#standardSQL <br/>  SELECT <br/>    COUNT(DISTINCT origin) AS freq, <br/><br/>    ROUND(SUM(IF(ttfb.start &lt; 200, ttfb.density, 0)) / SUM(ttfb.density), 4) AS fastTTFB, <br/>    ROUND(SUM(IF(ttfb.start &gt;= 200 AND ttfb.start &lt; 1000, ttfb.density, 0)) / SUM(ttfb.density), 4) AS avgTTFB, <br/>    ROUND(SUM(IF(ttfb.start &gt;= 1000, ttfb.density, 0)) / SUM(ttfb.density), 4) AS slowTTFB <br/><br/>  FROM <br/>    `chrome-ux-report.all.201907`, <br/>    UNNEST(experimental.time_to_first_byte.histogram.bin) AS ttfb <br/>  JOIN ( <br/>    SELECT <br/>      url, <br/>      app <br/>    FROM <br/>      `httparchive.technologies.2019_07_01_mobile` <br/>    WHERE <br/>      category = 'CMS' <br/>    ) <br/>  ON CONCAT(origin, '/') = url <br/>  ORDER BY <br/>    freq DESC</pre>
+      <p>And here are the FCP results:</p>
+      <figure>
+        <img src="https://css-tricks.com/wp-content/uploads/2019/10/jamspeed-06.png"/>
+        <figcaption>FCP mobile speed distribution comparison between all web and CMS (CrUX, July 2019)</figcaption>
+      </figure>
+      <p>At least the FID results are a bit better:</p>
+      <figure>
+        <img src="https://css-tricks.com/wp-content/uploads/2019/10/jamspeed-07.png"/>
+        <figcaption>FID mobile speed distribution comparison between all web and CMS (CrUX, July 2019)</figcaption>
+      </figure>
+      <p>Data from July 2019</p>
+      <pre>[ <br/>    { <br/>      "freq": "546415", <br/>      "fastFCP": "0.2873", <br/>      "avgFCP": "0.4187", <br/>      "slowFCP": "0.2941", <br/>      "fastFID": "0.8275", <br/>      "avgFID": "0.1183", <br/>      "slowFID": "0.0543" <br/>    } <br/>  ]</pre>
+      <p>BigQuery</p>
+      <pre>#standardSQL <br/>  SELECT <br/>    COUNT(DISTINCT origin) AS freq, <br/>    ROUND(SUM(IF(fcp.start &lt; 1000, fcp.density, 0)) / SUM(fcp.density), 4) AS fastFCP, <br/>    ROUND(SUM(IF(fcp.start &gt;= 1000 AND fcp.start &lt; 2500, fcp.density, 0)) / SUM(fcp.density), 4) AS avgFCP, <br/>    ROUND(SUM(IF(fcp.start &gt;= 2500, fcp.density, 0)) / SUM(fcp.density), 4) AS slowFCP, <br/>    ROUND(SUM(IF(fid.start &lt; 50, fid.density, 0)) / SUM(fid.density), 4) AS fastFID, <br/>    ROUND(SUM(IF(fid.start &gt;= 50 AND fid.start &lt; 250, fid.density, 0)) / SUM(fid.density), 4) AS avgFID, <br/>    ROUND(SUM(IF(fid.start &gt;= 250, fid.density, 0)) / SUM(fid.density), 4) AS slowFID <br/>  FROM <br/>    `chrome-ux-report.all.201907`, <br/>    UNNEST(first_contentful_paint.histogram.bin) AS fcp, <br/>    UNNEST(experimental.first_input_delay.histogram.bin) AS fid <br/>  JOIN ( <br/>    SELECT <br/>      url, <br/>      app <br/>    FROM <br/>      `httparchive.technologies.2019_07_01_mobile` <br/>    WHERE <br/>      category = 'CMS' <br/>    ) <br/>  ON CONCAT(origin, '/') = url <br/>  ORDER BY <br/>    freq DESC</pre>
+      <p>As you can see, sites built with a CMS perform not much better than the overall performance of sites on web.</p>
+      <p>You can find performance distribution across different CMSs on <a href="https://discuss.httparchive.org/t/cms-performance/1468">this HTTPArchive forum discussion</a>.</p>
+      <p>E-Commerce websites, a good example of sites that are typically built on a CMS, have really bad stats for page views:</p>
+      <ul>
+        <li>~40% - 1second for TTFB</li>
+        <li>~30% - more than 1.5 second for FCP</li>
+        <li>~12% - lag for page interaction.</li>
+      </ul>
+      <p>I faced clients who requested support of IE10-IE11 because the traffic from those users represented 1%, which equalled millions of dollars in revenue. Please, calculate your losses in case 1% of users leave immediately and never came back because of bad performance. If users aren’t happy, business will be unhappy, too.</p>
+      <p>To get more details about how web performance correlates with revenue, check out <a href="https://wpostats.com/">WPO Stats</a>. It’s a list of case studies from real companies and their success after improving performance.</p>
+      <h3>JAMstack helps improve web performance</h3>
+      <figure>
+        <img src="https://css-tricks.com/wp-content/uploads/2019/10/jamspeed-08.png"/>
+        <figcaption>Credit: <a href="https://snipcart.com/blog/jamstack">Snipcart</a></figcaption>
+      </figure>
+      <p>With JAMstack, developers do as little rendering on the client as possible, instead using server infrastructure for most things. Not to mention, most JAMstack workflows are great at handling deployments, and helping with scalability, among other benefits. Content is stored statically on a static file hosts and provided to the users via CDN.</p>
+      <p>Read Mathieu Dionne's <a href="https://snipcart.com/blog/jamstack">"New to JAMstack? Everything You Need to Know to Get Started"</a> for a great place to become more familiar with JAMstack.</p>
+      <p>I had two years of experience working with one of the popular CMSs for e-commerce and we had a lot of problems with deployments, performance, scalability. The team would spend days and fixing them. It’s not what customers want. These are the sorts of big issues JAMstack solves.</p>
+      <p>Looking at the CrUX data, JAMstack sites performance looks really solid. The following values are based on sites served by <a href="https://www.netlify.com/">Netlify</a> and <a href="https://github.com/">GitHub</a>. There is <a href="https://discuss.httparchive.org/t/define-jamstack-sites-performance/1713">some discussion on the HTTPArchive forum</a> where you can participate to make data more accurate.</p>
+      <p>Here are the results for TTFB:</p>
+      <figure>
+        <img src="https://css-tricks.com/wp-content/uploads/2019/10/jamspeed-09.png"/>
+        <figcaption>TTFB mobile speed distribution comparison between all web, CMS and JAMstack sites (CrUX, July 2019)</figcaption>
+      </figure>
+      <p>Data from July 2019</p>
+      <pre>[ <br/>  { <br/>    "n": "7627", <br/>    "fastTTFB": "0.377", <br/>    "avgTTFB": "0.5032", <br/>    "slowTTFB": "0.1198" <br/>  } <br/>]</pre>
+      <p>BigQuery</p>
+      <pre>#standardSQL <br/>SELECT <br/>  COUNT(DISTINCT origin) AS n, <br/>  ROUND(SUM(IF(ttfb.start &lt; 200, ttfb.density, 0)) / SUM(ttfb.density), 4) AS fastTTFB, <br/>  ROUND(SUM(IF(ttfb.start &gt;= 200 AND ttfb.start &lt; 1000, ttfb.density, 0)) / SUM(ttfb.density), 4) AS avgTTFB, <br/>  ROUND(SUM(IF(ttfb.start &gt;= 1000, ttfb.density, 0)) / SUM(ttfb.density), 4) AS slowTTFB <br/>FROM <br/>  `chrome-ux-report.all.201907`, <br/>  UNNEST(experimental.time_to_first_byte.histogram.bin) AS ttfb <br/>JOIN <br/>  (SELECT url, REGEXP_EXTRACT(LOWER(CONCAT(respOtherHeaders, resp_x_powered_by, resp_via, resp_server)), <br/>      '(netlify|x-github-request)') <br/>    AS platform <br/>  FROM `httparchive.summary_requests.2019_07_01_mobile`) <br/>ON <br/>  CONCAT(origin, '/') = url <br/>WHERE <br/>  platform IS NOT NULL <br/>ORDER BY <br/>  n DESC</pre>
+      <p>Here's how FCP shook out:</p>
+      <figure>
+        <img src="https://css-tricks.com/wp-content/uploads/2019/10/jamspeed-10.png"/>
+        <figcaption>FCP mobile speed distribution comparison between all web, CMS and JAMstack sites (CrUX, July 2019)</figcaption>
+      </figure>
+      <p>Now let's look at FID:</p>
+      <figure>
+        <img src="https://css-tricks.com/wp-content/uploads/2019/10/jamspeed-11.png"/>
+        <figcaption>FID mobile speed distribution comparison between all web, CMS and JAMstack sites (CrUX, July 2019)</figcaption>
+      </figure>
+      <p>Data from July 2019</p>
+      <pre>[ <br/>    { <br/>      "n": "4136", <br/>      "fastFCP": "0.5552", <br/>      "avgFCP": "0.3126", <br/>      "slowFCP": "0.1323", <br/>      "fastFID": "0.9263", <br/>      "avgFID": "0.0497", <br/>      "slowFID": "0.024" <br/>    } <br/>  ]</pre>
+      <p>BigQuery</p>
+      <pre>#standardSQL <br/>  SELECT <br/>    COUNT(DISTINCT origin) AS n, <br/>    ROUND(SUM(IF(fcp.start &lt; 1000, fcp.density, 0)) / SUM(fcp.density), 4) AS fastFCP, <br/>    ROUND(SUM(IF(fcp.start &gt;= 1000 AND fcp.start &lt; 2500, fcp.density, 0)) / SUM(fcp.density), 4) AS avgFCP, <br/>    ROUND(SUM(IF(fcp.start &gt;= 2500, fcp.density, 0)) / SUM(fcp.density), 4) AS slowFCP, <br/>    ROUND(SUM(IF(fid.start &lt; 50, fid.density, 0)) / SUM(fid.density), 4) AS fastFID, <br/>    ROUND(SUM(IF(fid.start &gt;= 50 AND fid.start &lt; 250, fid.density, 0)) / SUM(fid.density), 4) AS avgFID, <br/>    ROUND(SUM(IF(fid.start &gt;= 250, fid.density, 0)) / SUM(fid.density), 4) AS slowFID <br/>  FROM <br/>    `chrome-ux-report.all.201907`, <br/>    UNNEST(first_contentful_paint.histogram.bin) AS fcp, <br/>    UNNEST(experimental.first_input_delay.histogram.bin) AS fid <br/>  JOIN <br/>    (SELECT url, REGEXP_EXTRACT(LOWER(CONCAT(respOtherHeaders, resp_x_powered_by, resp_via, resp_server)), <br/>        '(netlify|x-github-request)') <br/>      AS platform <br/>    FROM `httparchive.summary_requests.2019_07_01_mobile`) <br/>  ON <br/>    CONCAT(origin, '/') = url <br/>  WHERE <br/>    platform IS NOT NULL <br/>  ORDER BY <br/>    n DESC</pre>
+      <p>The numbers show the performance of JAMstack sites is the best. The numbers are pretty much the same for mobile and desktop which is even more amazing!</p>
+      <h3>Some highlights from engineering leaders</h3>
+      <p>Let me show you a couple of examples from some prominent folks in the industry:</p>
+      <figure>
+        <iframe data-src="https://twitter.com/paulcalvano/status/1167143641124675586?ref_src=twsrc%5Etfw" data-embed-type="twitter-tweet" width="100%" height="0" data-service="Twitter" scrolling="no" nowide=""/>
+      </figure>
+      <p>JAMstack sites are generally CDN-hosted and mitigate TTFB. Since the file hosting is handled by infrastructures like Amazon Web Services or similar, all sites performance can be improved in one fix.</p>
+      <p>One more real investigation says that it is better to deliver static HTML for better FCP.</p>
+      <figure>
+        <iframe data-src="https://twitter.com/zachleat/status/1169998370041208832?ref_src=twsrc%5Etfw" data-embed-type="twitter-tweet" width="100%" height="0" data-service="Twitter" scrolling="no" nowide=""/>
+      </figure>
+      <p>Here's a comparison for all results shown above together:</p>
+      <figure>
+        <img src="https://css-tricks.com/wp-content/uploads/2019/10/jamspeed-12.png"/>
+        <figcaption>Mobile speed distribution comparison between all web, CMS and JAMstack sites (CrUX, July 2019)</figcaption>
+      </figure>
+      <p>JAMstack brings better performance to the web by statically serving pages with CDNs. This is important because a fast back-end that takes a long time to reach users will be slow, and likewise, a slow back-end that is quick to reach users will also be slow.</p>
+      <p>JAMstack hasn’t won the perf race yet, because the number of sites built with it not so huge as for example for CMS, but the intention to win it is really great.</p>
+      <p>Adding these metrics to a <a href="https://timkadlec.com/2014/11/performance-budget-metrics/">performance budget</a> can be one way make sure you are building good performance into your workflow. Something like:</p>
+      <ul>
+        <li>TTFB: 200ms</li>
+        <li>FCP: 1s</li>
+        <li>FID: 50ms</li>
+      </ul>
+      <p>Spend it wisely 🙂</p>
+      <hr/>
+      <p><b>Editor’s note:</b> Artem Denysov is from Stackbit, which is a service that helps tremendously with spinning up JAMstack sites and more upcoming tooling to smooth out some of the workflow edges with JAMstack sites and content. Artem told me he’d like to thank Rick Viscomi, Rob Austin, and Aleksey Kulikov for their help in reviewing the article.</p>
+    </article>
+  </body>
+</html>

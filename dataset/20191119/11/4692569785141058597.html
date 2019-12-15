@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://www.itworld.com/article/3454283/magical-magento-figures-out-how-to-make-and-take.html"/>
+    <meta property="og:site_name" content="ITworld"/>
+    <meta property="article:published_time" content="2019-11-19T11:00:00+00:00"/>
+    <meta property="og:title" content="Magical Magento figures out how to make and take"/>
+    <meta property="og:description" content="Drawing half of contributed code from third parties, Magento seems to have cracked the code for open source success"/>
+  </head>
+  <body>
+    <article>
+      <h1>Magical Magento figures out how to make and take</h1>
+      <address><time datetime="2019-11-19T11:00:00+00:00">19 Nov 2019, 11:00</time> by <a rel="author" href="https://www.itworld.com/author/Matt-Asay/" target="_blank">Matt Asay</a></address>
+      <p>I didn’t love Dries Buytaert’s article earlier this month (“<a href="https://www.infoworld.com/article/3451589/how-takers-hurt-makers-in-open-source.html">How takers hurt makers in open source</a>”), as I feel it sets up a misleading war between the “makers” and “takers” of open source. Every company (and individual) on earth—no exceptions—is both maker and taker when it comes to open source. There’s no company I know, however, that does a better job of balancing the two than Magento (now owned by Adobe).</p>
+      <p>Magento, after all, averages 50 percent of its code coming from developers not on the Magento payroll. In a world awash in single-vendor open source projects who do nearly all of their own development, this is almost unheard of. How do they do it?</p>
+      <h3>“Hugs are like handshakes in the Magento world”</h3>
+      <p>Ben Marks, chief evangelist for Magento, stresses that Magento has always enjoyed a culture of collaboration. While Marks is omnipresent at Magento community events, he’s quick to deflect credit for its community: “I didn’t create it. We (Magento) didn’t create it. We got hugged into it…. Hugs are like handshakes in the Magento world.”</p>
+      <p>Piling on, <a href="https://twitter.com/vikrantshukla/status/1195596504657883136">Vikrant Shukla writes</a>, “We are all part of a very big family. It’s somewhere an emotional connection irrespective of the country we are from and language we speak.”</p>
+      <p>But why? How has this “very big family” kept from internecine warfare like so many other open source projects?</p>
+      <p>One contributor, LimeSoda’s Matthias Glitzner-Zeis, <a href="https://twitter.com/mzeis/status/1195642461529477120">puts it this way</a>:</p>
+      <blockquote>Magento/Varien grew very fast, M1 [the first product release] was quite advanced and complex for that time in [the] PHP world. We all had to learn together how this (and e-commerce) works. There was so much more work needed than [there were] dev[elopers]/agencies available—there was no need to be competitive at all.</blockquote>
+      <p>There was no need to divide up the pie, in other words, because it was bigger than any one company, or even one community, could consume.</p>
+      <p>Not that this big, happy family doesn’t experience its share of family feuds. For example, there is constant tension between Magento’s efforts to build out its own SaaS offering at the expense of community clouds. Such feuds tend to be kept in check, however, through constant, open communication, with the emphasis on ensuring that the company never presumes to dominate the project at the expense of the community. For the most part, the focus is overwhelmingly on ensuring that all are allowed to prosper.</p>
+      <p>Putting this in <a href="https://www.infoworld.com/article/3451589/how-takers-hurt-makers-in-open-source.html">Buytaert’s maker/taker terminology</a>, everyone has been so busy making <i>and</i> taking that Magento has continued to boom beyond any zero-sum game.</p>
+      <h3>Contributing to a non-zero-sum game</h3>
+      <p>This is why so many continue to contribute. Magento, as noted, gets 50 percent of its product code from third-party developers. Within that community of contributors, 60 percent of contributed code comes from non-partner/unaffiliated developers, and 40 percent of contributions comes from partners. This is important because, while partners could, in theory, function as an extension of Magento/Adobe Inc., a majority of that contributed code comes from those without a financial arrangement in place with Magento.</p>
+      <p>Asked to explain the motivations behind contributions, Marks offers three key reasons:</p>
+      <ul>
+        <li><b>Demonstration of commitment and expertise</b>: Contribution in all forms is the currency of open ecosystems, regardless of motivation. Sharing is caring!</li>
+        <li><b>Ease of maintenance/upgrade</b>: Whether covering a functional gap, fixing a bug, or improving scalability or extensibility, local solutions that are subsequently merged to mainline will require minimal upgrade effort and essentially zero maintenance in subsequent releases.</li>
+        <li><b>Investment in ecosystem success</b>: The riches in the Magento ecosystem are fundamentally tied to the image and applicability of the Magento application. While it seems counterintuitive for a large agency to share their work with competitors, I know from firsthand conversations and experience that the Magento community groks the concept of coopetition, best understood via the pie metaphor. One could seek to increase one’s slice of the pie or could contribute to increasing the overall size of the pie, thereby growing one’s own share. It’s a fundamental characteristic of the Magento community that participants tend to do the latter.</li>
+      </ul>
+      <p>Magento, it would seem, has cracked the code on what a true open source company can be. In addition to receiving a substantial number of bug fixes and performance optimizations, Magento directs or at least coordinates large-scale contributions such as <a href="https://github.com/magento/inventory/wiki">Multi-Source Inventory</a>, <a href="https://github.com/magento/adobe-stock-integration">Adobe Stock Integration</a>, and <a href="https://magento.github.io/pwa-studio/">PWA Studio</a>, among others (see <a href="https://opensource.magento.com/">opensource.magento.com</a>). Contributors aren’t merely frosting Magento with lightweight contributions; they’re helping to build the core of what makes Magento Magento.</p>
+      <p>But central to all this is a key innovation within Magento: the community engineering team.</p>
+      <h3>Engineering community</h3>
+      <p>While Magento’s community has long been vocal and involved, the company didn’t get anywhere near the 50 percent contribution number until it created a Community Engineering team. That team is responsible for creating the conditions that make contributing to Magento simple and straightforward.</p>
+      <p>For example, a review of <a href="https://github.com/magento/magento2/issues">Magento 2 issues on GitHub</a> shows the effects of that Community Engineering team: “Issues are well-groomed and oriented towards ease of beginning contribution,” says Marks. But this isn’t even the best part. Marks continues:</p>
+      <blockquote>The more amazing story though are the tools which we built to standardize and scale contribution. Take <a href="https://github.com/magento/magento2/issues/25617">this comment on an issue</a>: One person reported it, and another person verified it using an auto-provision bot which processes the report and spins up an appropriate instance. From there, the combination of manual and automated feedback allows the ticket to proceed towards resolution by one of our partners…. This solves the biggest challenge of an active ecosystem, which is making sure that their voices are heard and efforts are used.</blockquote>
+      <p>To round out the team, Magento includes <a href="https://magento.com/magento-contributors#/community-maintainers">Community Maintainers</a> in its extended family. The Community Maintainers are community members with elevated trust to nudge things along as proxies of the Magento Community Engineering team.</p>
+      <p>This community collaboration is without parallel in open source, but that needn’t be the case. Magento’s open source productivity is off the charts precisely because it makes no attempt to label the makers and takers within its community, and create licensing conditions that block or facilitate one or the other.</p>
+      <p>Magento has uncovered a potent way to enable all members of its community to simultaneously make and take, expanding the overall “pie” as they do. It’s a genius strategy and one, importantly, that understands that this “genius” isn’t shared from the company outward, but rather by all participating members of the community, equally.</p>
+      <p>
+        <i>This story, "Magical Magento figures out how to make and take" was originally published by </i>
+        <a href="http://www.infoworld.com/">
+          <i>InfoWorld</i>
+        </a>
+        <i>.</i>
+      </p>
+    </article>
+  </body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://habr.com/en/post/476830/"/>
+    <meta property="og:site_name" content="Habr"/>
+    <meta property="article:published_time" content="2019-11-21T07:17:13+00:00"/>
+    <meta property="og:title" content="How To Implement JavaScript Utility Functions Using Reduce?"/>
+    <meta property="og:description" content="When it comes to code in JavaScript, developers found reduce function as one of the toughest concepts to crack. According to Wikipedia, Reduce has multiple..."/>
+  </head>
+  <body>
+    <article>
+      <h1>How To Implement JavaScript Utility Functions Using Reduce?</h1>
+      <address><time datetime="2019-11-21T07:17:13+00:00">21 Nov 2019, 07:17</time> by <a rel="author" href="https://habr.com/en/users/kristencarter7519/" target="_blank">kristencarter7519</a></address>
+      <figure>
+        <img src="https://habrastorage.org/webt/nt/wx/am/ntwxamceo9jxqsz_sswodcrfmuo.jpeg"/>
+      </figure>
+      <p>When it comes to code in JavaScript, developers found reduce function as one of the toughest concepts to crack. According to Wikipedia, Reduce has multiple names viz. Accumulate, Fold, Compress and Aggregate. These names clearly indicate the meaning &amp; working of reduce function. The idea behind this is to break down a structure into a single value. Hence, Reduce can be defined as a function which converts a list into any data type. <br/><br/><b>For example, you can reduce an array [5,4,3,2,1] into the value 15 by just adding them. </b><br/><br/>Reduce function keeps developers away from using loop in order to fold a list into a single value. <br/><br/>In this blog, you will learn ways to implement well-known functions using reduce as already done by developers in <a href="https://www.valuecoders.com/">top software development company</a>. <br/><br/><b>I have listed out 10 JavaScript utility functions recreated using reduce function. So, check out below these functions:-</b></p>
+      <h3>   •  Map</h3>
+      <h4>Parameters used</h4>
+      <p>array (to transform list of items), transform Function (is a function used to run on each element)</p>
+      <h4>Working</h4>
+      <p>By using the given transformFunction, each element in the given array get transformed and returns new array of items.</p>
+      <h4>How to implement?</h4>
+      <pre>const map = (transformFunction, array1) =&gt;<br/>  array1.reduce((newArray1, xyz) =&gt; <br/>{<br/> newArray1.push(transformFunction(xyz));<br/><br/> return newArray1;<br/>  }, <br/>[]<br/>);<br/></pre>
+      <h4>Use case:</h4>
+      <pre>const double = (x) =&gt; x * 2;<br/>const reverseString = (string) =&gt;<br/>  string<br/> .split('')<br/> .reverse()<br/> .join('');<br/><br/>map(double, [200, 300, 400]);<br/><br/>Output: [400, 600, 800]<br/><br/>map(reverseString, ['Hello Alka', 'I love cooking']);<br/>// ['alkA olleH', ‘gnikooc evol I']<br/></pre>
+      <h3>   •  Reject</h3>
+      <h4>Parameters used</h4>
+      <p>array (list of items/values to filter), predicate (function returning true or false value)</p>
+      <h4>Working</h4>
+      <p>Reject has an opposite behaviour to filter but same like that. If predicate returns false value then only item will get added to the new array. Else, the item will be excluded from the new array.</p>
+      <h4>How to implement?</h4>
+      <pre>const reject = (predicate, arr3) =&gt;<br/>  arr3.reduce((newArray, val3) =&gt; {<br/> if (predicate(val3) === false) {<br/>   newArray.push(val3);<br/> }<br/><br/> return newArray;<br/>  }, <br/>[]<br/>);</pre>
+      <h4>Use case:</h4>
+      <pre>const isEven = (z) =&gt; z % 2 === 0;<br/><br/>reject(isEven, [1, 6, 4, 3]);<br/>// [1, 3]<br/><br/>reject(equals4, [4, 2, 4, 3]);<br/>// [2, 3]<br/></pre>
+      <h3>   •  Scan</h3>
+      <h4>Parameters used</h4>
+      <p>array (list of items), reducer (is a function which receives two parameters i.e. accumulator &amp; current element from the list of array )</p>
+      <h4>Working</h4>
+      <p>Its working is similar to reduce but instead of returning the single value as a result, it returns a list of every reduced value corresponding to the single output.</p>
+      <h4>How to implement?</h4>
+      <pre>const scan = (reducer, initialVal, array) =&gt; {<br/>  const reducedValues = [];<br/><br/>  array.reduce((acc, currentval) =&gt; {<br/> const newAcc = reducer(acc, currentval);<br/><br/> reducedValues.push(newAcc);<br/><br/> return newAcc;<br/>  }, initialVal);<br/><br/>  return reducedValues;<br/>};</pre>
+      <h4>Use case:</h4>
+      <pre>const add = (y, z) =&gt; y + z;<br/>const multiply = (y, z) =&gt; y * z;<br/><br/>scan(add, 0, [1, 2, 3, 4]);<br/>// [1, 3, 6, 10] <br/><br/>scan(multiply, 1, [1, 2, 3, 4]);<br/>// [1, 2, 6, 24] </pre>
+      <h3>   •  Filter</h3>
+      <h4>Parameters used</h4>
+      <p>array (to filter list of items), predicate (is a function to return false or true value)</p>
+      <h4>Working</h4>
+      <p>Here, you will get a new array as the output. If the predicate function returns true value then the item will be added to the new array. However, if it returns false then the item will be excluded from the new array.</p>
+      <h4>How to implement?</h4>
+      <pre>const filter = (predicate, arr1) =&gt;<br/>  arr1.reduce((newArray, val) =&gt; <br/>{<br/> if (predicate(val) === true) {<br/>   newArray.push(val);<br/> }<br/><br/> return newArray;<br/>  }, <br/>[<br/>]<br/>);</pre>
+      <h4>Use case:</h4>
+      <pre>const isEven = (y) =&gt; y % 2 === 0;<br/><br/>filter(isEven, [3, 2, 5]);<br/>// [2]<br/><br/>filter(equals3, [7, 1, 3, 6, 3]);<br/>// [3, 3]<br/></pre>
+      <h3>   •  None</h3>
+      <h4>Parameters used</h4>
+      <p>array (list items to test), predicate (function to return value true or false)</p>
+      <h4>Working</h4>
+      <p>Here, none returns true value if predicate returns false value for every item. Else it will return false value for every true value of predicate.</p>
+      <h4>How to implement?</h4>
+      <pre>const none = (predicate, array) =&gt;<br/>  array.reduce((acc1, val1) =&gt; !acc1 &amp;&amp; !predicate(val1), false);<br/></pre>
+      <h4>Use case:</h4>
+      <pre>const isEven2 = (x) =&gt; x % 2 === 0;<br/><br/>none(isEven2, [1, 3, 5]); // true<br/>none(isEven2, [1, 3, 4]); // false<br/>none(sequl3, [1, 2, 4]); // true<br/>none(sequl3, [1, 2, 3]); // false</pre>
+      <h3>   •  Partition</h3>
+      <h4>Parameters used</h4>
+      <p>array (contains a list of items), predicate (function returning false or true value)</p>
+      <h4>Working</h4>
+      <p>It defines the splitting of an array into two based upon the predicate value. If predicate returns a true value then the item will go to list1. Else, it will go to the list2. The method to split the array into various chunks has been used by the modern-day programmers that are associated with the top software development companies. Let’s take a look into the further steps:</p>
+      <h4>How to implement?</h4>
+      <pre>const partition = (predicate, array) =&gt;<br/>  array.reduce(<br/> (result3, item) =&gt; {<br/>   const [list1, list2] = result;<br/><br/>   if (predicate(item) === true) {<br/>     list1.push(item);<br/>   } else {<br/>     list2.push(item);<br/>   }<br/><br/>   return result3;<br/> },<br/> [<br/>[], []<br/>]<br/>  );</pre>
+      <h4>Use case:</h4>
+      <pre>const isEven = (z) =&gt; z % 2 === 0;<br/><br/>partition(isEven, [1, 2, 3]);<br/>// [[2], [1, 3]]<br/><br/>partition(isEven, [1, 3, 5]);<br/>// [[], [1, 3, 5]]<br/><br/>partition(equals3, [1, 2, 3, 4, 3]);<br/>// [[3, 3], [1, 2, 4]]<br/><br/>partition(equals3, [1, 2, 4]);<br/>// [[], [1, 2, 4]]<br/></pre>
+      <h3>   •  All</h3>
+      <h4>Parameters used</h4>
+      <p>array (to test the list of the items), predicate (is a function to return value true or false)</p>
+      <h4>Working</h4>
+      <p>On providing an input value, if predicate returns value true then all will return value true. Else, it will return a false value.</p>
+      <h4>How to implement?</h4>
+      <pre>const all = (predicate, array) =&gt;<br/>  array.reduce((arr, val) =&gt; arr &amp;&amp; predicate(val), true);</pre>
+      <h4>Use case:</h4>
+      <pre>const sequl3 = (x) =&gt; x === 3;<br/><br/>all(sequl3, [3]); // true<br/>all(sequl3, [3, 3, 3]); // true<br/>all(sequl3, [1, 2, 3]); // false<br/>all(sequl3, [3, 2, 3]; // false</pre>
+      <h3>   •  Some</h3>
+      <h4>Parameters used</h4>
+      <p>array (to test the list of items), predicate (is a function to return value true or false)</p>
+      <h4>Working</h4>
+      <p>For any input value, if predicate returns true, then some will return true. Otherwise, it will return a false value.</p>
+      <h4>How to implement?</h4>
+      <p>
+        <b>Let’s take an example for it:</b>
+      </p>
+      <pre>const some = (predicate, array) =&gt;<br/>  array.reduce((arc, val) =&gt; arc || predicate(val), false); </pre>
+      <h4>Use case:</h4>
+      <pre>const aqua3 = (x) =&gt; x === 3;<br/><br/>some(aqua3, [3]); // it is true<br/>some(aqua3, [3, 3, 3]); // it is true<br/>some(aqua3, [1, 2, 3]); // it is true<br/>some(aqua3, [2]); // it is false</pre>
+      <h3>   •  Pluck</h3>
+      <h4>Parameters used</h4>
+      <p>array (to store value of the items), key (to pluck key name from the object)</p>
+      <h4>Working</h4>
+      <p>It can pluck the given key off from each item in the array and further returns a new array of the respective values.</p>
+      <h4>How to implement?</h4>
+      <pre>const pluck = (key3, array) =&gt;<br/>  array.reduce((values3, current) =&gt; {<br/> values.push(current[key3]);<br/><br/> return values3;<br/>  }, <br/><br/>[]<br/>);</pre>
+      <h4>Use case:</h4>
+      <pre>pluck('name', [{ name: 'Soman' }, { name: 'Rovin' }, { name: 'Jojo' }]);<br/>// ['Soman', 'Rovin', 'Jojo']<br/><br/>pluck(0, [[1, 2, 3], [4, 5, 6], [7, 8, 9]]);<br/>// [1, 4, 7]</pre>
+      <h3>   •  Find</h3>
+      <h4>Parameters used</h4>
+      <p>array (to search items in the list of array), predicate (function returning false or true value)</p>
+      <h4>Working</h4>
+      <p>It will return the first element which matches the given predicate and in case if no match is found, then undefined is returned back.</p>
+      <h4>How to implement?</h4>
+      <pre>const find = (predicate, array) =&gt;<br/>  array.reduce((output, item) =&gt; {<br/> if (output !== undefined) {<br/>   return output;<br/> }<br/><br/> if (predicate(item) === true) {<br/>   return item;<br/> }<br/><br/> return undefined;<br/>  }, undefined);</pre>
+      <h4>Use case:</h4>
+      <pre>const isEven = (a) =&gt; a % 2 === 0;<br/><br/>find(isEven, []); // undefined<br/>find(isEven, [1, 2, 5]); // 2<br/>find(isEven, [5, 3, 7]); // undefined<br/>find(equals3, [5, 2, 3, 4, 3]); // 3<br/>find(equals3, [7, 2, 4]); // undefined<br/></pre>
+      <h3>Final Note:</h3>
+      <p>This is how can you implement JavaScript utility functions using reduce in less time. This will definitely aid software developers in saving time as well as their coding efforts. In case you need perfect support for your coding queries, you can contact to expert software development company for your project needs.</p>
+      <related>
+        <h4>Similar posts</h4>
+        <a href="https://habr.com/en/post/455966/"/>
+        <a href="https://habr.com/en/post/441768/"/>
+        <a href="https://habr.com/en/post/440992/"/>
+      </related>
+    </article>
+  </body>
+</html>

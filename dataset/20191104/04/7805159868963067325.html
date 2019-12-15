@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://www.xda-developers.com/magisk-v20-1-magisk-manager-v7-4-0-introduces-new-hiding-mode-for-android-9-devices/"/>
+    <meta property="og:site_name" content="XDA Developers"/>
+    <meta property="article:published_time" content="2019-11-04T04:36:00+00:00"/>
+    <meta property="og:title" content="Magisk v20.1 and Magisk Manager v7.4.0 introduces new hiding mode for Android 9+ devices"/>
+    <meta property="og:description" content="Magisk v20.1 and Magisk Manager v7.4.0 get an updated hiding mode for devices running Android 9 and higher along with bug fixes."/>
+  </head>
+  <body>
+    <article>
+      <h1>Magisk v20.1 and Magisk Manager v7.4.0 introduces new hiding mode for Android 9+ devices</h1>
+      <address><time datetime="2019-11-04T04:36:00+00:00">04 Nov 2019, 04:36</time> by <a rel="author" href="https://www.xda-developers.com/author/tusharmehta/" target="_blank">Tushar Mehta</a></address>
+      <p><a href="https://www.xda-developers.com/what-is-magisk/">Magisk</a> is an incredible tool for Android rooting enthusiasts. It is a systemless interface created by XDA’s Recognized Developer <i><a href="https://forum.xda-developers.com/member.php?u=4470081">topjohnwu</a> </i>and can be used for much more than just rooting your devices. The interface helps users tinker with the system settings without actually making changes to the system files. Besides allowing the installation of a wide range of modules, Magisk is immensely popular because its ability to bypass Google’s <a href="https://forum.xda-developers.com/apps/magisk/guide-magisk-troubleshooting-t3641417/post73145987#post73145987">SafetyNet</a> which prevents games, OTT and banking applications, etc from running on rooted devices. Last month, <a href="https://forum.xda-developers.com/member.php?u=4470081">topjohnwu</a> introduced <a href="https://www.xda-developers.com/magisk-v20-stable-release-android-10-support/">Magisk V20.0 with full compatibility for Android 10</a> including devices with A-only partitioning scheme. Now, they have released v20.1 along with Magisk Manager 7.4 with a log of bug fixes and a new hiding mode for devices running Android 9 Pie and upwards.</p>
+      <p>The new hiding mode part of the Magisk Manager v7.4.0 ensures that associated packages remain undetected by means of a “<i>heavily obfuscated stub APK</i>.” The resources required to run the Manager will be downloaded into its internal files of the stub app and loaded whenever you need to use the full Manager app. You can also change the name of the app while hiding it.</p>
+      <p>The developer notes that since this hiding mode requires “<i>a special way to communicate with the app</i>,” it might not work in the case of certain custom Android skins or overlays. The updated version, thus, has a new feature to check compatibility for the new hiding mode.</p>
+      <p>The update also fixes some bugs from the previous version and here’s the complete changelog:</p>
+      <p>
+        <i><b>Magisk v20.1<br/></b>   •  [MagiskSU] Support component name agnostic communication (for stub APK)<br/>   •  [MagiskBoot] Set proper header_size in boot image headers (fix vbmeta error on Samsung devices)<br/>   •  [MagiskHide] Scan zygote multiple times<br/>   •  [MagiskInit] Support recovery images without /sbin/recovery binary. This will fix some A/B devices unable to boot to recovery after flashing Magisk<br/>   •  [General] Move acct to prevent daemon being killed<br/>   •  [General] Make sure “–remove-modules” will execute uninstall.sh after removal<br/><b>Magisk Manager v7.4.0<br/></b>   •  Hide Magisk Manager with stub APKs on <a href="https://www.xda-developers.com/tag/androidpie/">Android 9.0</a>+<br/>   •  Allow customizing app name when hiding Magisk Manager<br/>   •  Generate random keys to sign the hidden Magisk Manager to prevent signature detections<br/>   •  Fix fingerprint UI infinite loop</i>
+      </p>
+      <p>To make use of the new hiding mode, you’ll have to update Magisk as well as the Manager app. If you’ve already hidden the Manager, tap on an app named “Unhide Magisk Manager” from your app drawer, update the app, and then reboot the smartphone.</p>
+      <hr/>
+      <p>
+        <b>Source 1: <a href="https://forum.xda-developers.com/showpost.php?p=68966755&amp;postcount=2">XDA Forums thread</a> / Source 2: <a href="https://github.com/topjohnwu/magisk_files/blob/6f94236b1407bd0c162647db75dfa2ac956163ca/notes.md">GitHub</a></b>
+      </p>
+    </article>
+  </body>
+</html>

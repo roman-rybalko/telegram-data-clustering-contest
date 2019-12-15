@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://www.xda-developers.com/google-samsung-camera-app-exposed-video-intents-third-party-apps/"/>
+    <meta property="og:site_name" content="XDA Developers"/>
+    <meta property="article:published_time" content="2019-11-20T05:47:00+00:00"/>
+    <meta property="og:title" content="Google Camera and Samsung Camera apps exposed camera and video intents to third-party apps"/>
+    <meta property="og:description" content="Google Camera and the Samsung Camera apps exposed their Camera and Video intents to third party apps, giving rise to a permission bypass vulnerability."/>
+  </head>
+  <body>
+    <article>
+      <h1>Google Camera and Samsung Camera apps exposed camera and video intents to third-party apps</h1>
+      <address><time datetime="2019-11-20T05:47:00+00:00">20 Nov 2019, 05:47</time> by <a rel="author" href="https://www.xda-developers.com/author/aamirsiddiqui/" target="_blank">Aamir Siddiqui</a></address>
+      <p>When compared to iOS, Android provides applications a lot of ways to interact with each other, enabling developers to build some of the more common Android features we have come to expect and love. This is made possible thanks to Android’s Intent system, which allows any app to send any intent it wants, and allows receiver apps to handle these intents in creative manners. But as it turns out, the <a href="https://www.xda-developers.com/tag/google-camera/">Google Camera</a> app and the Samsung Camera app have left their camera and video intents exposed to third-party apps, which leaves the door open for potential misuse by bypassing critical permissions, as demonstrated by the security researchers at <i><a href="https://www.checkmarx.com/blog/how-attackers-could-hijack-your-android-camera">Checkmarx</a></i>.</p>
+      <p><a href="https://developer.android.com/guide/components/intents-filters">Intents on Android</a> are described as “<i>messaging objects that facilitate communication between app components</i>“, which in simpler terms means that Intent allows apps to send data to each other. For example, when you attempt to share a file from within a file manager to an app like <a href="https://forum.xda-developers.com/t/whatsapp">WhatsApp</a>, you are sending an intent to WhatsApp with the files as the data. Any app can send any intent it wants, and it is up to the receiving app to decide which intents it wants to listen for, by defining the same in its Manifest file. The receiving app also decides how to react to those intents. Further, the receiving app can also ensure that actions are performed only when an intent is sent from specific whitelisted apps (explicit intents) or from apps that hold certain permissions (protected intents). As it turns out, unprotected intents in the aforementioned camera apps can be exploited by bad actors.</p>
+      <p><i>Checkmarx</i> found that the Google Camera app and the Samsung Camera app had unprotected intents to trigger actions like taking a photo and recording a video. An unprotected intent in this context means that the receiving app is not checking if the app sending the intent has the requisite permission to undertake the action itself — <i>android.permission.CAMERA </i>in this case. The camera activity, <i>com.google.android.GoogleCamera/com.android.camera.CameraActivity</i>, was also an exported activity, meaning that other apps could call for it. The unprotected intent and the exported activity thus lead to a permission bypass vulnerability.</p>
+      <p>A malicious app could thus be constructed which would not have the CAMERA permission, yet would still be able to operate certain camera functions by routing them through these camera apps and taking advantage of their unprotected intents and exported activity.</p>
+      <p>As a proof-of-concept, <i>Checkmarx</i> created a dummy weather application that did not have the CAMERA permission, but it did come with a single STORAGE permission, one that did not appear out of order for a weather app. Without the camera permission, the weather app was able to trigger Google Camera and Samsung Camera to take photos and record videos. The STORAGE permission comes into play in accessing this and as well as all other photos and videos saved at /DCIM — it isn’t needed for the actions of clicking photos and recording videos.</p>
+      <figure>
+        <iframe src="https://www.youtube.com/embed/XJAMJOVoVyw" width="900" height="506" data-service="Youtube" scrolling="no"/>
+      </figure>
+      <p>In a worst-case scenario, this vulnerability can be exploited to do things like record the user’s video during a call, scrape location information from GPS metadata of photos if the location tagging is enabled in the camera app (and effectively get the phone’s current location), and more.</p>
+      <p>Granted, the UI does indicate that the camera is being accessed, but this can also be worked around by making use of the proximity sensor to gauge when the phone’s display is switched off, and thus, escape the user’s attention. A malicious app could also mute the volume of the phone and effectively silence the device when it is taking a photo or recording a video.</p>
+      <p><i>Checkmarx</i> claims that the vulnerability, labeled CVE-2019-2234, also exists in camera apps from other smartphone vendors. But the researchers did not name which vendors and devices were affected, outside of Google and Samsung’s. If other Camera apps have exported activities to start photo capture and video recording, and have unprotected intents that do not check for the permission available to the calling app, they are also affected.</p>
+      <p>Since this is not a vulnerability within the Android platform or the Linux kernel, it cannot be included and rolled out as a part of the <a href="https://www.xda-developers.com/november-2019-android-security-patches/">Android Security Bulletin</a>. The vulnerability was fixed in the Google Camera app through an app update in July 2019, and the same has also been fixed in the Samsung Camera app, though there is no specific information on when this update was rolled out.</p>
+      <p>On unpatched versions of Google Camera, you can force a video to be taken through this vulnerability by running the following <a href="https://www.xda-developers.com/install-adb-windows-macos-linux/">ADB</a> command:</p>
+      <p>
+        <code>adb shell am start-activity -n com.google.android.GoogleCamera/com.android.camera.CameraActivity --ez extra_turn_screen_on true -a android.media.action.VIDEO_CAMERA --ez android.intent.extra.USE_FRONT_CAMERA true</code>
+      </p>
+      <p>If you use Google Camera or Samsung Camera, ensure that you update to the latest camera app version on your device, rolled out through the Play Store, or through an OTA, as the case may be.</p>
+    </article>
+  </body>
+</html>

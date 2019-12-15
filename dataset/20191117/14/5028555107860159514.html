@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://arstechnica.com/information-technology/2019/11/absolutely-relentless-ad-blocker-plasters-users-with-you-guessed-it-ads/"/>
+    <meta property="og:site_name" content="Ars Technica"/>
+    <meta property="article:published_time" content="2019-11-17T14:00:28+00:00"/>
+    <meta property="og:title" content="Unrelenting “ad blocker” plasters users with—you guessed it—ads"/>
+    <meta property="og:description" content="Ads Blocker uses several tricks to covertly and constantly bombard users with ads."/>
+  </head>
+  <body>
+    <article>
+      <h1>Unrelenting “ad blocker” plasters users with—you guessed it—ads</h1>
+      <h2>Ads Blocker uses several tricks to covertly and constantly bombard users with ads.</h2>
+      <address><time datetime="2019-11-17T14:00:28+00:00">17 Nov 2019, 14:00</time> by <a rel="author">Dan Goodin</a></address>
+      <p>A fake ad blocker available outside of Google Play is bombarding Android users with ads, many of them vulgar, and to make matters worse, the cleverly hidden adware is hard to uninstall.</p>
+      <p>As <a href="https://blog.malwarebytes.com/android/2019/11/stealthy-new-android-malware-poses-as-ad-blocker-serves-up-ads-instead/">documented by antimalware provider Malwarebytes</a>, Ads Blocker, as the app is called, employs several tricks to surreptitiously and constantly bombard users with ads. The first is to simply ask for usage rights to display over other apps. Next, it makes a connection request to "set up a VPN connection that allows it to monitor network traffic." Finally, it seeks permission to add a widget to the homescreen.</p>
+      <p>In fact, approving the VPN connection—a standard requirement for some legitimate ad blockers—allows Ads Blocker to run in the background at all times. Combined with the permission to display over other apps, the app is free to plaster ads in a variety of aggressive and annoying ways. It displays full-page ads across the screen. It delivers ads in the default browser. It includes ads in notifications. And it places ads in the homescreen widget.</p>
+      <figure>
+        <img src="https://cdn.arstechnica.net/wp-content/uploads/2019/11/missing-icon.png"/>
+        <figcaption>There's no Ads Blocker icon.</figcaption>
+      </figure>
+      <p>"This Android malware is absolutely relentless in its ad-serving capabilities and frequency," Malwarebytes researcher Nathan Collier wrote. "As a matter of fact, while writing this blog, it served up numerous ads on my test device at a frequency of about once every couple minutes."</p>
+      <p>The content of the ads is wide-ranging, including some, Collier wrote, that are "unsavory" or even "vulgar."</p>
+      <p>Equally annoying is the difficulty in removing the fake ad blocker from devices. Ads Blocker has no icon. There's no mention of Ads Blocker on the App info section of the Android settings, because the app shields the name with a white box. The concealment leaves many people struggling to uninstall the app. Another white box appears over the notification box. Pressing the box causes a dialog box to appear asking for permission to install yet more apps.</p>
+      <figure>
+        <img src="https://cdn.arstechnica.net/wp-content/uploads/2019/11/app-info.png"/>
+        <figcaption>The name of the fake ad blocker is removed from Android's App Info section.<br/>Malwarebytes</figcaption>
+      </figure>
+      <p>Collier went on to describe a simple way to remove the app—by looking for an entry with storage size of 6.57 megabytes in the App Info section of the Android settings. Users can then select that entry and use the uninstall button.</p>
+      <p>This method didn't appear to work on Android 10, since the App Info box doesn't display storage sizes (at least not on the device I was using). An alternate method in that case may be accessing Storage in the Android settings and choosing the Apps tab. While the Ads Blocker name and icon won't appear, its use of 6.57MB should still be displayed. Users can then press the 6.57MB entry, click the screen immediately above the "clear storage" and "clear cache" icons, and choose uninstall. People can also use the free version of <a href="https://play.google.com/store/apps/details?id=org.malwarebytes.antimalware">Malwarebytes for Android</a> to remove the app.</p>
+      <p>Malwarebytes researchers still don't know how Ads Blocker is getting distributed. Data in malware-scanning service VirusTotal suggests the app is spreading in the United States, most likely when people look for an ad blocker from a third-party app store. A forum post on a French website and a file name written in the German language provide evidence the app may also be distributed in Europe.</p>
+      <p>So far, the Malwarebytes app has detected only 500 infections. After collecting more than 1,800 samples of the app, company researchers suspect the total number of infections is much higher.</p>
+    </article>
+  </body>
+</html>

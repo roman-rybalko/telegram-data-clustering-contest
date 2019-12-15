@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://hackaday.com/2019/11/17/the-esp32-laid-bare/"/>
+    <meta property="og:site_name" content="Hackaday"/>
+    <meta property="article:published_time" content="2019-11-17T00:00:00+00:00"/>
+    <meta property="og:title" content="The ESP32, Laid Bare"/>
+    <meta property="og:description" content="Most readers will be familiar with the ESP32, Espressif’s dual-core processor with integrated WiFi and Bluetooth. Few of us though will have explored all of its features, including its built-…"/>
+  </head>
+  <body>
+    <article>
+      <h1>The ESP32, Laid Bare</h1>
+      <address><time datetime="2019-11-17T00:00:00+00:00">17 Nov 2019</time> by <a rel="author" href="https://hackaday.com/author/jennylist/" target="_blank">Jenny List</a></address>
+      <p>Most readers will be familiar with the ESP32, Espressif’s dual-core processor with integrated WiFi and Bluetooth. Few of us though will have explored all of its features, including its built-in encryption facilities and secure booting capability. With these, a developer can protect and secure their code, and keep their devices secure.</p>
+      <p>That sense of security may now be illusory though, thanks to [LimitedResults] who has developed a series of attacks on the chip that compromise its <a href="https://limitedresults.com/2019/08/pwn-the-esp32-crypto-core/">crypto core</a>, <a href="https://limitedresults.com/2019/09/pwn-the-esp32-secure-boot/">secure boot</a>, and <a href="https://limitedresults.com/2019/11/pwn-the-esp32-forever-flash-encryption-and-sec-boot-keys-extraction/">flash encryption</a>. This enables both the chance of arbitrary code execution and firmware extraction on locked-down ESP32 devices.</p>
+      <p>To achieve all this he used a glitching technique on the device’s power supply, inserting a carefully timed glitch in the rail to coincide with a particular instruction being executed. For those of us who are not experts in this technique, he provides a basic primer with <a href="https://limitedresults.com/2019/05/pwn-mbedtls-on-esp32-dfa-warm-up/">a description</a> of his home-made glitcher made using a CMOS switch chip.</p>
+      <p>It appears that there is no solution to this attack short of new silicon, however, it should be borne in mind that it’s something that depends upon a specialist hacker with a well-equipped bench, and is thus only likely to be a significant headache to manufacturers. But it undermines a key feature of a major line of microcontrollers, and as such it remains a significant piece of work.</p>
+    </article>
+  </body>
+</html>

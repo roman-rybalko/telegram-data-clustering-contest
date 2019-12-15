@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://overclockers.ru/blog/Jora/show/31955/nvidia-planiruet-optimizirovat-svoju-multi-gpu-tehnologiju"/>
+    <meta property="og:site_name" content="Overclockers.ru"/>
+    <meta property="article:published_time" content="2019-11-25T17:01:00+00:00"/>
+    <meta property="og:title" content="Nvidia планирует оптимизировать свою мульти-GPU-технологию"/>
+    <meta property="og:description" content="Видимо, Nvidia работает над новой графической технологией под названием CFR - Checkered Frame Rendering."/>
+  </head>
+  <body>
+    <article>
+      <h1>Nvidia планирует оптимизировать свою мульти-GPU-технологию</h1>
+      <address><time datetime="2019-11-25T17:01:00+00:00">25 Nov 2019, 17:01</time> by <a rel="author" href="https://overclockers.ru/blog/Jora" target="_blank">Rollo Stethem</a></address>
+      <p>Начислено вознаграждение<br/>Эта новость написана посетителем сайта, и за неё начислено <a href="https://overclockers.ru/about/blogs">вознаграждение</a>.</p>
+      <p>Видимо, Nvidia работает над новой графической технологией под названием CFR - Checkered Frame Rendering.</p>
+      <figure>
+        <img src="https://st.overclockers.ru/legacy/blog/379416/148810_O.jpeg"/>
+      </figure>
+      <figure>
+        <img src="https://st.overclockers.ru/legacy/blog/379416/148811_O.jpeg"/>
+      </figure>
+      <h3>реклама</h3>
+      <p>Пользователь форума 3DCenter заметил дополнительную запись в драйверах для мульти-GPU рендеринга, этот метод называется CFR и в основном разрезает кадр на множество мелких фрагментов, чтобы GPU могли рендерить их параллельно.<br/><br/>По сути, этот метод позволяет разделить изображения на небольшие блоки, которые графические процессоры могут рендерить с помощью алгоритма или просто FIFO, "вначале", "на выходе", что может повысить производительность масштабирования и свести к минимуму ошибки изображения. Основой, конечно же, является существующая технология, которая используется во многих решениях. Однако NVIDIA хочет использовать его для многопроцессорного рендеринга.</p>
+      <h3>реклама</h3>
+      <p>
+        <b>Как работает технология рендеринга клетчатых рам (CFR)?</b>
+      </p>
+      <p>CFR-рамка разделена на небольшие квадратные плитки, как шахматная доска.  Четные и нечетные числа представлены одной видеокартой, а парами - другой, в отличие от AFR (Alternate Frame Rendering), где выделенная память каждого GPU содержит копию всех ресурсов, необходимых для визуализации кадра, такие методы, как CFR и SFR (Split Frame Rendering) оптимизируют распределение ресурсов.</p>
+      <h3>реклама</h3>
+      <figure>
+        <img src="https://st.overclockers.ru/legacy/blog/379416/148812_O.jpeg"/>
+      </figure>
+      <figure>
+        <img src="https://st.overclockers.ru/legacy/blog/379416/148813_O.jpeg"/>
+      </figure>
+      <p>Технология CFR, как оказалось, будет совместима только с DirectX во всех его вариантах (DX10, DX11, DX12), OpenGL и Vulkan на данный момент не будут поддерживаться. Кроме того, она будет использоваться только видеокартами Turing и графическими процессорами нового поколения Ampere, поскольку требует NVLink.</p>
+    </article>
+  </body>
+</html>

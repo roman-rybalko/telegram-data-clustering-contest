@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://www.xda-developers.com/walmarts-cheap-android-pie-onn-tablets-get-a-twrp-port/"/>
+    <meta property="og:site_name" content="XDA Developers"/>
+    <meta property="article:published_time" content="2019-11-11T16:24:00+00:00"/>
+    <meta property="og:title" content="Walmart’s cheap Android Pie Onn tablets get a TWRP port"/>
+    <meta property="og:description" content="Starting at just $64, the Walmart Onn are decent non-Amazon options for a cheap tablets. Now, thanks to some developments, you can get TWRP on them."/>
+  </head>
+  <body>
+    <article>
+      <h1>Walmart’s cheap Android Pie Onn tablets get a TWRP port</h1>
+      <address><time datetime="2019-11-11T16:24:00+00:00">11 Nov 2019, 16:24</time> by <a rel="author" href="https://www.xda-developers.com/author/joefedewa/" target="_blank">Joe Fedewa</a></address>
+      <p>Back in May, <a href="https://www.xda-developers.com/walmart-android-pie-tablets/">Walmart launched two ultra-affordable</a> (okay, let’s say “cheap”) Android tablets. If you don’t remember this announcement, you’re likely not the only one. The Onn tablets are extremely barebones, but they do come with a keyboard cover accessory and run fairly clean Android 9 Pie builds. Plus, starting at just $64, they’re a decent non-Amazon Fire option for a cheap tablet. Now, thanks to some developers on our forums, you can get <a href="https://www.xda-developers.com/how-to-install-twrp/">TWRP</a> on the Onn tablets.</p>
+      <p>This is not your typical “TWRP ported to BLANK device” story, though. On basically all devices, TWRP requires an unlocked bootloader to install. The lack of an unlockable bootloader is what holds back loads of devices from being able to go deep into modding and customizing. Without an unlocked bootloader, you can’t flash TWRP, which means you can’t go down the road of custom ROMs and so much more. The interesting thing about booting TWRP on the Walmart Onn tablets is that you don’t need an unlocked bootloader.</p>
+      <p>
+        <b>
+          <a href="https://forum.xda-developers.com/walmart-onn-tablets">Walmart Onn Tablets XDA Forums</a>
+        </b>
+      </p>
+      <p>As the developer of the port writes: “This TWRP build does not need the bootloader unlocked or VBMeta verification disabled.” This is highly unusual to see and means that the tablets are incredibly insecure out-of-the-box. Typically, a locked bootloader means you can’t boot an unsigned boot image or a boot image signed by anyone other than the OEM. VBMeta is the partition that contains the Verified Boot keys; it’s what verifies the integrity of protected partitions like system and vendor. Essentially, the door is locked, but you can push it open.</p>
+      <p>Apparently, this total lack of basic security isn’t a super rare thing to see for extremely cheap Android devices. According to XDA Recognized Developer <a href="https://forum.xda-developers.com/member.php?u=4222965">deadman96385</a>, “normally on these cheap devices the bootloader isn’t fully implemented, so it’s reporting everything the system needs but it’s static and never changes so if you can flash the partitions without <a href="https://www.xda-developers.com/google-releases-separate-adb-and-fastboot-binary-downloads/">fastboot</a> via SP Flash Tool then you’re golden.” We’re not sure why these devices are able to pass CTS and receive Google certification despite this clear security hole, but this is clearly an oversight that should be fixed.</p>
+      <p>In any case, even though you can get TWRP up and running without unlocking the bootloader, the developer recommends you don’t do that. It’s safer to just unlock the bootloader so you won’t ever lock yourself out of the device by flashing the wrong thing. As mentioned, the Walmart Onn tablets already run a very clean, near-stock build of Android 9 Pie, but some people have already been able to install custom Generic System Images (GSIs). If you’re looking for a cheap device to mod, this may be the ticket.</p>
+      <p>
+        <b>
+          <a href="https://forum.xda-developers.com/walmart-onn-tablets/walmart-onn-tablets-general/recovery-twrp-onn-android-tablets-t3999621">Read more about TWRP on the Walmart Onn Tablets</a>
+        </b>
+      </p>
+    </article>
+  </body>
+</html>

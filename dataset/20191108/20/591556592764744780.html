@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://www.zdnet.com/article/technology-containers-short-lifespans-are-getting-even-shorter/"/>
+    <meta property="og:site_name" content="ZDNet"/>
+    <meta property="article:published_time" content="2019-11-08T20:59:00+00:00"/>
+    <meta property="og:title" content="Most technology containers live less than five minutes, and lifespans are getting even shorter"/>
+    <meta property="og:description" content="Survey shows how quickly containers do their jobs and then vaporize -- often within seconds."/>
+  </head>
+  <body>
+    <article>
+      <h1>Most technology containers live less than five minutes, and lifespans are getting even shorter</h1>
+      <address><time datetime="2019-11-08T20:59:00+00:00">08 Nov 2019, 20:59</time> by <a rel="author" href="https://www.zdnet.com/meet-the-team/us/joe-mckendrick/" target="_blank">Joe McKendrick</a></address>
+      <p>
+        <b>Survey shows how quickly containers do their jobs and then vaporize -- often within seconds.</b>
+      </p>
+      <p>A majority of container instances, 54%, are only around for five minutes or less. And these average lifespans keep getting even shorter. </p>
+      <figure>
+        <img src="https://zdnet3.cbsistatic.com/hub/i/r/2019/11/08/70262769-2d55-4ac3-b050-b4f64d53f41c/resize/270xauto/3c00f87c134a85ea386413655dfd6792/ship-freighter-san-francisco-ca-cropped-october-2013-photo-by-joe-mckendrick.jpg"/>
+        <figcaption>Photo: Joe McKendrick</figcaption>
+      </figure>
+      <p>Comparing container lifespans now versus a year ago, a recent <a href="https://sysdig.com/blog/sysdig-2019-container-usage-report/">study</a> from Sysdig finds that the number of containers that are alive for 10 seconds or less has doubled, from 11% to 22%. The number of containers that live for five minutes or less more than doubled as well, from 20% in 2018 to 54% this year.   <br/><br/>"It's well known that containers are ephemeral. What's surprising is that over half of containers are alive for less than five minutes," the survey's authors point out. They add that these extremely short lifespans have implications for security, requiring a DevOps approach. "Many containers need to only live long enough to execute a function and then terminate when it's complete. Seconds may seem short, but for some processes, it's all that is required. We expect the number of containers with short lifespans to increase, especially on serverless platforms that are well-suited to running short term tasks."</p>
+      <blockquote><b>Container LIfespans<br/></b>   •  &lt;=10 seconds       22%<br/>   •  &lt;=1 minute      17%<br/>   •  &lt;=5 minutes       15%<br/>   •  &lt;=10 minutes      9%<br/>   •  &lt;=30 minutes       10%<br/>   •  &lt;=1 hour       4%<br/>   •  &lt;=6 hours       6%<br/>   •  &lt;=1 day       3%<br/>   •  &lt;=1 week      8%<br/>   •  &lt;=2 weeks       4%<br/>   •  &gt;2 weeks       4%</blockquote>
+      <p>At one week, there is a spike in containers stopping (8%), the study's authors observe. "We investigated why this might be the case and found that we can correlate this to Kubernetes doing its job of auto-scaling up and down. During the weekend, as demand on services decrease, Kubernetes reduces number of running instances per service." The survey shows that Kubernetes is the clear orchestrator of choice, employed at 77% of the sites surveyed.  <br/><br/>In addition, the survey also shows that half of container images get replaced - also known as churn - in a week or less. "For most if not all of today's businesses, speed to market matters and makes all the difference in maintaining competitiveness," the study's authors state. "Code deployment is being deployed more frequently, which in turn means new container images. Containers support what businesses need to turn great ideas into reality, fast."</p>
+      <p>Services -- defined as "the functional software components of applications like database software, load balancers, and custom code" -- are around for much longer periods, the Sysdig study also shows. These numbers are relatively unchanged from the 2018 study.  "Underneath, containers will start and stop to support scaling and other operations, but applications will remain up."</p>
+      <blockquote><b>Service LIfespans<br/></b>   •  &lt;=10 seconds       0%<br/>   •  &lt;=1 minute      1%<br/>   •  &lt;=5 minutes       3%<br/>   •  &lt;=10 minutes      3%<br/>   •  &lt;=30 minutes       6%<br/>   •  &lt;=1 hour       6%<br/>   •  &lt;=6 hours       6%<br/>   •  &lt;=1 day       3%<br/>   •  &lt;=1 week      12%<br/>   •  &lt;=2 weeks       6%<br/>   •  &gt;2 weeks       53%</blockquote>
+      <p>"Containers are a perfect companion to the agile movement," the researchers state. "They help accelerate the development and release of code, often as containerized microservices. We found that over half of container images are replaced - aka churn - in a week or less. This reflects the reduction in the time between code releases. Further, it indicates that CI/CD pipelines are helping developer teams deliver software updates at a faster cadence than ever before."</p>
+    </article>
+  </body>
+</html>

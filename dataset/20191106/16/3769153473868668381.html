@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://www.blendernation.com/2019/11/06/behind-the-scenes-ship-in-rough-sea/"/>
+    <meta property="og:site_name" content="BlenderNation"/>
+    <meta property="article:published_time" content="2019-11-06T16:55:08+00:00"/>
+    <meta property="og:title" content="Behind the Scenes: Ship in Rough Sea"/>
+    <meta property="og:description" content="Background My name is Novak Miler and I got into visual effects as a compositor in 2008/2009 working primarily in After Effects for Sinister Studio in South Africa, after completing my degree in Fine Arts at Rhodes University. I took an interest in some 3D packages but found that Blender suited me best when IRead More"/>
+  </head>
+  <body>
+    <article>
+      <h1>Behind the Scenes: Ship in Rough Sea</h1>
+      <address>
+        <time datetime="2019-11-06T16:55:08+00:00">06 Nov 2019, 16:55</time>
+      </address>
+      <h3>Background</h3>
+      <p>My name is Novak Miler and I got into visual effects as a compositor in 2008/2009 working primarily in After Effects for <a href="http://www.sinisterstudio.co.za/">Sinister Studio</a> in South Africa, after completing my degree in Fine Arts at Rhodes University.</p>
+      <p>I took an interest in some 3D packages but found that Blender suited me best when I started learning about it in 2015. YouTube has been my primary source of education in Blender and when I had any spare time, I would find myself watching tutorials. As time went on, I started implementing Blender more and more into my jobs.</p>
+      <p>Now I would probably refer to myself as a generalist, working directly with agencies and directors on-set for VFX supervision, generating the 3D assets, and working on the final compositing with most jobs that I am involved in.</p>
+      <h3>Inspiration</h3>
+      <p>Many years ago, my father bought a model of a ship, which was always displayed in the sitting room while I was growing up. Soon after my father’s passing, my mother asked that I take the model, and it now sits in my own sitting room.</p>
+      <p>A few years back, I took a keen interest in photography but was especially influenced by the works of <a href="https://www.hernandezdreamphography.com/">Felix Hernandez</a>, who is truly a master of his craft. I wanted to simulate what Hernandez does, but enhance it in a slightly different way by using Blender.</p>
+      <p>I was also always impressed by classic paintings of old ships in rough seas...the depth and mood these skilled painters evoked would fill me with awe and fear of nature's power.</p>
+      <figure>
+        <img src="https://media.blendernation.com/wp-content/uploads/2019/11/image3-1.png"/>
+      </figure>
+      <figure>
+        <img src="https://media.blendernation.com/wp-content/uploads/2019/11/image3-1.png"/>
+      </figure>
+      <p><a href="https://www.wikiart.org/en/ivan-aivazovsky">Ivan Aivazovsky</a> 1866</p>
+      <h3>Process</h3>
+      <p>I had the real model, a keen interest in photography, and Blender. I now had to put it all together.</p>
+      <h4>Photography</h4>
+      <p>The first step was to photograph the ship in a way that I could extract it and light it in a real environment to create some mood.</p>
+      <figure>
+        <img src="https://media.blendernation.com/wp-content/uploads/2019/11/image2-1-1024x768.jpg"/>
+      </figure>
+      <figure>
+        <img src="https://media.blendernation.com/wp-content/uploads/2019/11/image2-1-1024x768.jpg"/>
+      </figure>
+      <p>I didn't have any sort of chroma screen at home so I simply mounted the ship up against a wall in my living room. I knew that extracting the ship was going to be long and painful, but with the use of Photoshop and its background erase tool, things went quicker than expected.</p>
+      <h4>Modeling/Texturing</h4>
+      <p>With the ship extracted, I now had an image on an alpha matte that I could bring into Blender. The rest of the process was the fun bit. The hard parts were now out of the way.</p>
+      <p>I saved a second image of the extracted ship as a black and white image which I could use to drive displacement in Blender. I didn’t want a flat image in the scene. Small amounts of displacement allow for the 3D model to react to lighting in the scene more realistically when compared to a flat image that has to be matched to in Blender.</p>
+      <figure>
+        <img src="https://media.blendernation.com/wp-content/uploads/2019/11/image1-1024x720.jpg"/>
+      </figure>
+      <figure>
+        <img src="https://media.blendernation.com/wp-content/uploads/2019/11/image1-1024x720.jpg"/>
+      </figure>
+      <p>To get detailed displacement, I had to subdivide the image of the ship to quite a high level. I made around 10 subdivisions before I was happy with the level of detail being displayed.</p>
+      <figure>
+        <img src="https://media.blendernation.com/wp-content/uploads/2019/11/image5-1-1024x576.jpg"/>
+      </figure>
+      <figure>
+        <img src="https://media.blendernation.com/wp-content/uploads/2019/11/image5-1-1024x576.jpg"/>
+      </figure>
+      <p>I added a color ramp node to the black and white image to crush/remove any errors I had made in removing the ship from the background of the original photo.</p>
+      <figure>
+        <img src="https://media.blendernation.com/wp-content/uploads/2019/11/image7-1024x952.jpg"/>
+      </figure>
+      <figure>
+        <img src="https://media.blendernation.com/wp-content/uploads/2019/11/image7-1024x952.jpg"/>
+      </figure>
+      <p>I then added a plane with the ocean modifier to generate an ocean.</p>
+      <p>The ocean plane was textured with an image of foamy water, and I added a second plane behind the ship that was textured with some dark and moody clouds.</p>
+      <h4>Lighting</h4>
+      <p>The final steps in Blender involved adding one spot light above the ship to match the direction of the light, and changing the world material to act as a volume so that I could get a light streak in the scene.</p>
+      <p>This allowed the one spot light to isolate the ship in the scene compositionally.</p>
+      <p>I rendered the scene out in Cycles and brought it into Photoshop for any final clean-ups and grading, as well as adding a splash at the bow of the ship to make it look like a wave had just impacted the hull.</p>
+      <h3>Final Image</h3>
+      <figure>
+        <img src="https://media.blendernation.com/wp-content/uploads/2019/11/image4-1024x576.jpg"/>
+      </figure>
+      <figure>
+        <img src="https://media.blendernation.com/wp-content/uploads/2019/11/image4-1024x576.jpg"/>
+      </figure>
+      <h3>About the Author</h3>
+      <figure>
+        <img src="https://media.blendernation.com/wp-content/uploads/2019/11/image8-1.jpg"/>
+      </figure>
+      <figure>
+        <img src="https://media.blendernation.com/wp-content/uploads/2019/11/image8-1.jpg"/>
+      </figure>
+      <p><b>Novak Miler,</b> VFX artist at SinisterStudio</p>
+      <p> </p>
+      <p> </p>
+      <p> </p>
+      <h3>Links</h3>
+      <ul>
+        <li>
+          <a href="https://vimeo.com/119433496">Sinister Studio Showreel on Vimeo</a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/sinisterstudio_jhb/">Sinister Studio on Instagram</a>
+        </li>
+        <li>
+          <a href="https://blenderartists.org/t/ship-in-rough-sea/1175088">Ship in Rough Sea on Blenderartists</a>
+        </li>
+      </ul>
+    </article>
+  </body>
+</html>

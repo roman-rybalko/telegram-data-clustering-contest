@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://www.bleepingcomputer.com/news/security/darkuniverse-apt-stayed-hidden-for-8-years-updated-regularly/"/>
+    <meta property="og:site_name" content="BleepingComputer"/>
+    <meta property="article:published_time" content="2019-11-06T10:06:07+00:00"/>
+    <meta property="og:title" content="DarkUniverse APT Stayed Hidden for 8 Years, Updated Regularly"/>
+    <meta property="og:description" content="Security researchers today published technical details about malware used by a new threat actor that matches a signature in a scanner likely built by the U.S. National Security Agency and leaked more than two years ago."/>
+  </head>
+  <body>
+    <article>
+      <h1>DarkUniverse APT Stayed Hidden for 8 Years, Updated Regularly</h1>
+      <address><time datetime="2019-11-06T10:06:07+00:00">06 Nov 2019, 10:06</time> by <a rel="author" href="https://www.bleepingcomputer.com/author/ionut-ilascu/" target="_blank">Ionut Ilascu</a></address>
+      <figure>
+        <img src="https://www.bleepstatic.com/content/posts/2019/11/05/DarkUniverse.jpg"/>
+      </figure>
+      <p>Security researchers today published technical details about malware used by a new threat actor that matches a signature in a scanner likely built by the U.S. National Security Agency and leaked more than two years ago.</p>
+      <p>The new threat received the name DarkUniverse and was active for at least eight years, between 2009 and 2017. It was identified last year, but the NSA knew about it long before.</p>
+      <h3>The DarkUniverse framework</h3>
+      <p>In 2017, a group called the Shadow Brokers published the <a href="https://www.bleepingcomputer.com/news/security/shadow-brokers-release-new-files-revealing-windows-exploits-swift-attacks/">Lost in Translation</a> cache of tools believed to be from NSA's digital armory. Among them was a script - sigs.py - with functions that look for unique malware signatures on a compromised system.</p>
+      <p>In total, sigs.py includes 44 entries, not all of them are known to the private sector security community. Researchers from Kaspersky found in 2018 the DarkUniverse APT (advanced threat from a nation-state) matching a function in the scanner.</p>
+      <figure>
+        <img src="https://www.bleepstatic.com/images/news/u/1100723/APT/DarkUniverse/DarkUniverseSigScript.png"/>
+      </figure>
+      <p>"We assess with medium confidence that DarkUniverse is connected with the ItaDuke set of activity due to unique code overlaps," they write in a <a href="https://securelist.com/apt-trends-report-q3-2019/94530/">report</a> in October.</p>
+      <p>ItaDuke has been active since at least 2013, described by <a href="https://www.fireeye.com/blog/threat-research/2013/02/the-number-of-the-beast.html">FireEye</a> and <a href="https://securelist.com/new-uyghur-and-tibetan-themed-attacks-using-pdf-exploits/35465/">Kaspersky</a> as leveraging PDF zero-day vulnerabilities.</p>
+      <p>Looking at the samples from 2017 from this group, researchers note that the last ones "are totally different from the first ones," which were dated to 2009.</p>
+      <p>Kaspersky malware analyst Alexander Fedotov told BleepingComputer in an email that the DarkUniverse adversary is likely resourceful enough, since they afforded to keep the framework updated for such a long time.</p>
+      <h3>C2s assigned per victim</h3>
+      <p>DarkUniverse is delivered via emails carrying a malicious Microsoft Office document, tailored for each victim specifically to stir interest and open the file.</p>
+      <p><a href="https://securelist.com/darkuniverse-the-mysterious-apt-framework-27/94897/">Analysis from Kaspersky</a> determined that the malware samples were compiled shortly before delivery and had the newest version of the executable.</p>
+      <p>Two files (updater.mod and glue30.dll) are extracted on a compromised machine, responsible for establishing communication with the command and control (C2) server, persistence, integrity, and keylogging capabilities.</p>
+      <p>To keep the malware on the system, the .MOD file places a link file in the startup folder so that the threat executes at reboot, and restores it whenever it becomes corrupted.</p>
+      <p>Sending commands and malicious modules to victims is done through the <a href="https://www.mydrive.ch/">myDrive</a> cloud storage service, with accounts being created for each compromised machine. All components of the framework are encrypted using a custom algorithm, seen in the image below.</p>
+      <figure>
+        <img src="https://www.bleepstatic.com/images/news/u/1100723/APT/DarkUniverse/DarkUniverseModEncryption.png"/>
+      </figure>
+      <p>This way, the actor could upload additional malware modules and a configuration file. The same storage is also used for sending information collected from the victim system.</p>
+      <p>This indicates that the threat actor can adapt its activity according to what they need to do on the victim computer.</p>
+      <p>Some of the modules analyzed by Kaspersky can prepare data for exfiltration, run commands from the C2, steal email credentials and messages. Among the clients targeted are Outlook, Eudora, Thunderbird.</p>
+      <p>The most functional module in the DarkUniverse framework is 'dfrgntfs5.sqt.' It can handle a large list of commands from the C2.</p>
+      <p>Its capabilities include deleting itself, taking screenshots, inject shellcode into Internet Explorer, scanning the local network, login brute-forcing, exfiltrating data, or setting DHCP and DNS settings.</p>
+      <p>Kaspersky discovered about 20 victims from civilian and military organizations. They are from Syria, Iran, Afghanistan, Tanzania, Ethiopia, Sudan, Russia, Belarus, and the United Arab Emirates.</p>
+      <p>Provided the longevity of DarkUniverse, the researchers believe that the number of victims is "much larger." For the time being, no activity has been recorded from this threat actor.</p>
+      <p>"The suspension of DarkUniverse operations may be related to the publishing of the ‘Lost in Translation’ leak, or the attackers may simply have decided to switch to more modern approaches and start using more widely available artifacts for their operations." - Alexander Fedotov</p>
+    </article>
+  </body>
+</html>

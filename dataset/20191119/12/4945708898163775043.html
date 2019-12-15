@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://techxplore.com/news/2019-11-algorithm-brain-controlled-prostheses-exoskeletons.html"/>
+    <meta property="og:site_name" content="Tech Xplore"/>
+    <meta property="article:published_time" content="2019-11-19T12:17:59+00:00"/>
+    <meta property="og:title" content="Algorithm may improve brain-controlled prostheses and exoskeletons"/>
+    <meta property="og:description" content="A team of researchers at the MIT Media Lab has devised an algorithm that promises to vastly improve the simultaneous tracking of any number of magnets. This has significant implications for prostheses, ..."/>
+  </head>
+  <body>
+    <article>
+      <h1>Algorithm may improve brain-controlled prostheses and exoskeletons</h1>
+      <address><time datetime="2019-11-19T12:17:59+00:00">19 Nov 2019, 12:17</time> by <a rel="author">Stephanie Strom, Massachusetts Institute of Technology</a></address>
+      <p>A team of researchers at the MIT Media Lab has devised an algorithm that promises to vastly improve the simultaneous tracking of any number of magnets. This has significant implications for prostheses, augmented reality, robotics, and other fields.</p>
+      <p>Graduate student Cameron Taylor, lead researcher on the approach in the Media Lab's Biomechatronics group, says the algorithm dramatically reduces the time it takes for sensors to determine the positions and orientations of magnets embedded in the body, wood, ceramics, and other materials.</p>
+      <p>"I've been dreaming for years about a minimally invasive approach to controlling prostheses, and magnets offer that potential," says Hugh Herr, professor of media arts and sciences at MIT and head of the Biomechatronics group. "But previous techniques were too slow to track tissue movement in real time at high bandwidth."</p>
+      <p>The work, "Low-Latency Tracking of Multiple Permanent Magnets," has been published by <i>IEEE Sensors Journal</i>. MIT undergraduate Haley Abramson is also a co-author.</p>
+      <p>
+        <b>Real-time tracking</b>
+      </p>
+      <p>For years, prostheses have relied on electromyography to interpret messages from a user's peripheral nervous system. Electrodes attached to the skin adjacent to muscles measure impulses delivered by the brain to activate them.</p>
+      <p>It's a less-than-perfect system. The ability of electrodes to sense signals that change over time, as well as to estimate the length and speed of muscle movement, is limited, and wearing the devices can be uncomfortable.</p>
+      <p>Scientists have long attempted to figure out a way of using magnets, which can be embedded in the body indefinitely, to control high-speed robotics. But they kept running into a big hurdle: It took computers too long to determine precisely where the magnets were and initiate a reaction.</p>
+      <p>"The software needs to guess at where the magnets are, and in what orientation," Taylor said. "It checks how good its guess is given the <a href="https://techxplore.com/tags/magnetic+field/">magnetic field</a> it sees, and when it's wrong, it guesses again and again until it homes in on the location."</p>
+      <p>That process, which Taylor compares to a game of Hot and Cold, takes a lot of calculation, which delays movement. "Robotic control systems require very high speeds in terms of reactiveness," Herr says. "If the time between sensing and actuation by an engineered platform is too long, device instability can occur."</p>
+      <p>To decrease the time delay in magnet tracking, a computer would need to quickly identify which direction was "warmest" before making a guess about a magnet's location. Taylor was lying on the floor at home one day pondering this problem when it struck him that the "warmest" direction could be calculated very quickly using simple computer coding techniques.</p>
+      <p>"I knew immediately that it was possible, which was extremely exciting. But I still had to validate it," he says.</p>
+      <figure>
+        <iframe src="https://www.youtube.com/embed/z83NOA68D8E" width="640" height="360" data-service="Youtube" scrolling="no"/>
+        <figcaption>Researchers in the Biomechatronics group at the MIT Media Lab developed an improved method of tracking magnets, which extends magnet tracking technology to new high-speed applications. These include enhanced reflexive control of prostheses and exoskeletons, simplified magnetic levitation, and improved interactions with augmented and virtual reality devices.<cite>Credit: MIT Media Lab and IEEE Sensors Journal/IEEE</cite></figcaption>
+      </figure>
+      <p>Once validated, Taylor and members of his research team had to solve another problem that complicates magnet tracking: disturbance from the Earth's magnetic field. Traditional methods of eliminating that interference weren't practical for the type of compact, mobile system needed for prostheses and exoskeletons.</p>
+      <p>The team landed on an elegant solution by programming their computer software to search for the Earth's magnetic field as if it is simply another magnetic signal.</p>
+      <p>They then tested their algorithm using a system with an array of magnetometers tracking as many as four tiny, pearl-like magnets. The test demonstrated that, in comparison to state-of-the-art magnet tracking systems, the <a href="https://techxplore.com/tags/new+algorithm/">new algorithm</a> increased maximum bandwidths by 336 percent, 525 percent, 635 percent, and 773 percent when used to simultaneously track one, two, three, and four magnets respectively.</p>
+      <p>Taylor stressed that a handful of other researchers have used the same derivative approach for tracking, but did not demonstrate the tracking of multiple moving magnets in real time. "This is the first time a team has demonstrated this technique for real-time tracking of several permanent magnets at once," he says.</p>
+      <p>And such tracking has never been deployed in the past as a means of speeding up magnetic tracking. "All implementations in the past have used high-level computer languages without the techniques we use to enhance speed," Taylor says.</p>
+      <p>The new algorithm means, according to Taylor and Herr, that magnetic target tracking can be extended to high-speed, real-time applications that require tracking of one or more targets, eliminating the need for a fixed magnetometer array. Software enabled with the new algorithm could greatly enhance reflexive control of prostheses and exoskeletons, simplify magnetic levitation, and improve interaction with augmented and virtual reality devices.</p>
+      <p>"All kinds of technology exists to implant into the nervous system or muscles for controlling mechatronics, but typically there is a wire across the skin boundary or electronics embedded inside the body to do transmission," Herr says. "The beauty of this approach is that you're injecting small passive magnetic beads into the body, and all the technology stays outside the body."</p>
+      <p>
+        <b>Numerous applications</b>
+      </p>
+      <p>The Biomechatronics group is primarily interested in using its new findings to improve control of prostheses, but Hisham Bedri, a graduate of the Media Lab who works in augmented reality, says potential applications of the advances are huge in the consumer market. "If you wanted to step into the virtual reality world and, say, kick a ball, this is super useful for something like that," Bedri says. "This brings that future closer to a reality."</p>
+      <p>People are already injecting themselves with tiny magnets in hopes of using them to enhance the body's natural performance, and this raises an interesting question about public policy, Herr says. "When 'normal' people want to be implanted with magnets to improve bodily function, how do we think about that?" he says. "It's not a medical device or application, so under what regulatory body will we allow Joe and Suzy to do that? We need a vigorous policy discussion around this question."</p>
+      <p>The group has applied for a patent on its algorithm and its method for using magnets to track muscle movement. It is also working with the U.S. Food and Drug Administration on guidance for the transition of high-speed, broad bandwidth magnetic tracking into the clinical realm.</p>
+      <p>Now the researchers are preparing to do preclinical work to validate that this technique will work for tracking human tissues and controlling prostheses and exoskeletons. "I think it's possible we would begin human testing as soon as next year," Herr says. "This isn't something that's 10 years out at all."</p>
+      <p>Beyond that? "Our long-term vision for the future is that we inject these magnets into you and me and use them to operate a non-militant Iron Man suit—everyone would be walking around with superhero strength," Taylor says, only half in jest. "Seriously, though, I do think this is the missing piece to let us finally take magnet tracking and move it to a place where it can be used far more widely."</p>
+      <table bordered="">
+        <tr>
+          <td><b>More information:</b> Cameron R. Taylor et al. Low-Latency Tracking of Multiple Permanent Magnets, <i>IEEE Sensors Journal</i> (2019). <a href="http://dx.doi.org/10.1109/JSEN.2019.2936766">DOI: 10.1109/JSEN.2019.2936766</a></td>
+        </tr>
+      </table>
+      <p>Provided by <a href="https://techxplore.com/partners/massachusetts-institute-of-technology/">Massachusetts Institute of Technology</a></p>
+      <related>
+        <h4>Related Stories</h4>
+        <a href="https://phys.org/news/2019-08-scientists-potential-path-samarium-cobalt-magnets.html"/>
+        <a href="https://techxplore.com/news/2019-11-cube-shaped-magnetic-blocks-soft-robotics.html"/>
+        <a href="https://phys.org/news/2019-06-waltz-lhc-magnets-begun.html"/>
+        <a href="https://phys.org/news/2016-10-magnets-d-printer.html"/>
+        <a href="https://techxplore.com/news/2015-12-electromagnets-sensors-track-motions-fingers.html"/>
+        <a href="https://phys.org/news/2018-04-rare-earth-magnet-recycling-simpler.html"/>
+      </related>
+    </article>
+  </body>
+</html>

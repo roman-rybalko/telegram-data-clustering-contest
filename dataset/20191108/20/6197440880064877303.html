@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://9to5google.com/2019/11/08/stadia-app-data-usage-player-limits-demos/"/>
+    <meta property="og:site_name" content="9to5Google"/>
+    <meta property="article:published_time" content="2019-11-08T20:11:55+00:00"/>
+    <meta property="og:title" content="Google Stadia app reveals data usage, player limits, demos, more [APK Insight]"/>
+    <meta property="og:description" content="While we can't yet sign in to the Stadia app, our team uncovered a treasure trove of info about Google Stadia including data usage &amp; player limits."/>
+  </head>
+  <body>
+    <article>
+      <h1>Google Stadia app reveals data usage, player limits, demos, more [APK Insight]</h1>
+      <address><time datetime="2019-11-08T20:11:55+00:00">08 Nov 2019, 20:11</time> by <a rel="author" href="https://9to5google.com/author/skylled/" target="_blank">Kyle Bradshaw</a></address>
+      <p>Earlier today, the Google Stadia app <a href="https://9to5google.com/2019/11/07/google-stadia-app-play-store-download/">arrived on the Play Store</a>, less than two weeks ahead of the service’s official launch. While you cannot sign in and use the Stadia app without your Founders or Premiere Edition code, our APK Insight team was able to uncover a treasure trove of information about Google Stadia through the new app including data usage, player limits, and more.</p>
+      <p><b>About APK Insight</b>: In this “APK Insight” post, we’ve decompiled the latest version of an application that Google uploaded to the Play Store. When we decompile these files (called APKs, in the case of Android apps), we’re able to see various lines of code within that hint at possible future features. Keep in mind that Google may or may not ever ship these features, and our interpretation of what they are may be imperfect. We’ll try to enable those that are closer to being finished, however, to show you how they’ll look in the case that they do ship. With that in mind, read on.</p>
+      <h3>Assistant features at launch</h3>
+      <p>One of the more interesting features of the official Google Stadia controller is its inclusion of a dedicated Google Assistant button. When Stadia was first publicly shown at GDC 2019, Google demonstrated using the button to ask the Assistant for help with completing a section of a game, and the Assistant pulled up a video tutorial of that particular section.</p>
+      <p>One thing we’re not currently sure about, however, is whether the Google Assistant will be available through Stadia at launch. According to a string found in the app, it’s possible the Google Assistant may not be accessible through the Stadia Controller on Day 1.</p>
+      <blockquote>Google Assistant on Stadia is coming soon</blockquote>
+      <p>Elsewhere in the app’s strings, we learn a little bit more about how Stadia will make it obvious — both on-screen and on the controller itself — when the Google Assistant is listening.</p>
+      <blockquote>The Stadia Controller has a microphone near the headset jack. With Google Assistant enabled, the mic will turn on when you press the Assistant button. While the Assistant is listening, the status light on your controller will blink in a series of two short flashes followed by a pause. You’ll also see an Assistant indicator on the screen where you’re playing.</blockquote>
+      <p>Early on, it also doesn’t seem like the Assistant integration will be able to give you in-game help and tutorials. We found a string offering a pair of suggested ways to use the Assistant with Stadia, which seem admittedly simple and do not reference asking for help with a difficult game.</p>
+      <blockquote>Description on how to use Assistant on Stadia<br/>– Roll the dice<br/>– Play Destiny 2</blockquote>
+      <p>“Roll the dice” has long been possible through the Google Assistant, and was even recently expanded to <a href="https://9to5google.com/2019/08/15/google-search-roll-dice/">include RPG dice</a>. “Play Destiny 2” however, is definitely new functionality for the Assistant, and seems to allow an easy way to switch Stadia games.</p>
+      <p>Additionally, at launch, Stadia’s Google Assistant integration will not be available to minors and those using a supervised Family Link account.</p>
+      <blockquote>Text that informs a user that is a minor that they cannot use Google Assistant<br/>Google Assistant isn’t currently available for supervised accounts.</blockquote>
+      <h3>Chromecast Ultra firmware update</h3>
+      <p>When the Stadia Founders Edition hit the Google Store for preorder, many questioned why Google wouldn’t sell the Founders kit <i>without</i> a Chromecast Ultra, especially for those who already have an Ultra in their homes. The Stadia app may actually have an explanation for this.</p>
+      <blockquote>This Chromecast Ultra isn’t ready to use with Stadia, but an update is on the way. Please use the Chromecast Ultra that came with your Stadia Controller for now</blockquote>
+      <p>From this quote, it seems possible that, during the launch period, those who already own a Chromecast Ultra may need to swap it for the one included in the Founders Edition kit as it will be on a newer firmware update.</p>
+      <p>Thankfully, if this is indeed the case it should only be a temporary problem, which should resolve itself once Google rolls out any necessary firmware updates more widely.</p>
+      <h3>Possible cross-play</h3>
+      <p>In recent years, the major gaming platforms have been opening up to each other to allow cross-play of games like Rocket League and Fortnite between different consoles. Google hasn’t confirmed cross-play capabilities for any Stadia game yet, but there are hints that this may be possible in the near future.</p>
+      <blockquote>Games that allows players to play on different video game hardware simultaneously.</blockquote>
+      <p>There is more than one way to interpret “video game hardware” here, so we can’t yet say with confidence that Stadia will offer cross-play.</p>
+      <h3>Google Stadia data usage</h3>
+      <p>One major concern many have raised about Google Stadia is the seemingly high amounts of data usage the service will incur, especially for those who have limited bandwidth. It appears these concerns are somewhat justified, as the Stadia app includes a warning of how much data streaming at 4K can use.</p>
+      <blockquote>Play with high-quality graphics up to 4K resolution. Data usage might reach 20 gigabytes per hour. Stadia Pro only.</blockquote>
+      <p>If you have a 1 TB monthly bandwidth limit from your ISP, streaming Stadia at 4K will chew through that limit in as little as<b> 50 hours</b>. It looks like this is the <i>maximum</i>, though, not the average. We should have a better idea of the average data usage once Stadia properly launches later this month.</p>
+      <p>Folks on the <a href="https://www.reddit.com/r/Stadia/comments/dtfvn9/there_are_interesting_hints_for_different_stadia/">Google Stadia subreddit</a> have also done some digging of their own and found that the Stadia app will offer multiple quality settings to allow you to reduce your data usage. By capping the video stream at 720p, you can reduce your usage by over 75%, allowing you to get over 200 hours of game time per month with some bandwidth left over for the rest of your family.</p>
+      <blockquote>Limit your data usage to 4.5 gigabytes per hour. Visual quality will be capped at 720p resolution.<br/>This string is an item of a menu of game performance settings. This means the user wants an in-game experience that’s a balance between visual quality and data usage. Character limit is 35.<br/>This string is an item of a menu of game performance settings. This means the user wants to prioritize high-quality graphics over data usage. Character limit is 35.<br/>This string is an item of a menu of game performance settings. This means the user wants to prioritize saving data over the game’s visual quality. Character limit is 35.</blockquote>
+      <h3>Server limits</h3>
+      <p>Data usage may not be the only thing holding players back from hopping on to Google Stadia. According to one string, Google is prepared for the possibility of their servers in an area being overwhelmed with too many players.</p>
+      <blockquote>Our servers in your area can’t support any more players at the moment. Please try again in a few minutes.</blockquote>
+      <p>While Google almost certainly has more than enough data centers around the world to handle Stadia’s global workload, for the sake of decreased latency, you’re only allowed to connect to a data center that you’re geographically close to. It should be interesting to see whether Stadia Founders in populated areas like Los Angeles and New York City are ever faced with overloaded servers.</p>
+      <h3>Trials and demos</h3>
+      <p>Once you buy a game on Google Stadia, or unlock it via Stadia Pro, it’s instantly available for you to play without downloading or installing. By that same token, it should be entirely easy for Stadia to offer an instant, limited-time demo of almost any game.</p>
+      <p>While Google has yet to confirm whether Stadia will indeed offer free demos, the app is ready to display just games that offer trials and demos.</p>
+      <blockquote>Games available for demos.<br/>Games given for trials.<br/>No buy flow for free trial.</blockquote>
+      <h3>Founders Badge</h3>
+      <p>Those who pre-ordered the Stadia Founders Edition (not the Premiere Edition) will be given the opportunity to register a unique Stadia name, next to which will display a “Founders Badge.” Non-founders will not be limited to unique names, but are instead given a number.</p>
+      <p>One aspect of the Founders Edition that had remained something of a mystery up to this point is what this “Founders Badge” would actually look like in the wild. The Stadia app’s visual assets includes a few previews of how this badge will appear, including a comparison to non-founders.</p>
+      <slideshow>
+        <figure>
+          <img src="https://9to5google.com/wp-content/uploads/sites/4/2019/11/stadia-founders-badge.png"/>
+        </figure>
+        <figure>
+          <img src="https://9to5google.com/wp-content/uploads/sites/4/2019/11/stadia-founders-badge-comparison.png"/>
+        </figure>
+      </slideshow>
+      <p>Elsewhere in the app, we find that the Founders Badge is stored as an animation file, so it’s possible the badge will be animated. For now, we were unable to get the animation to work correctly to preview it.</p>
+      <h3>Controller detection</h3>
+      <p>Elsewhere in the app, we found a section of code that references “SONY,” “NINTENDO,” “YETI,” and “GENERIC.” With some digging, we found that this code has to do with recognizing the different kinds of game controllers that you may connect to the Stadia app.</p>
+      <p>Sony and Nintendo are referenced here because their controllers feature different button layouts than the Stadia controller. While Nintendo controllers feature the same ABXY buttons, they’re in different positions, and PlayStation controllers, of course, feature symbols instead of letters. Microsoft’s Xbox controllers, by comparison, feature the same face buttons in the same positions as seen on the Stadia Controller.</p>
+      <p>
+        <i><a href="https://9to5google.com/author/evowizzfr/">Dylan Roussel</a> and <a href="https://9to5google.com/author/ryankovatch/">Ryan Kovatch</a> contributed to this article.</i>
+      </p>
+      <p><i>FTC: We use income earning auto affiliate links.</i> <a href="https://9to5mac.com/about/#affiliate">More.</a></p>
+    </article>
+  </body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://www.adslzone.net/2019/11/07/ring-vulnerabilidad-amazon-wifi/"/>
+    <meta property="og:site_name" content="ADSLZone"/>
+    <meta property="article:published_time" content="2019-11-07T17:30:27+00:00"/>
+    <meta property="og:title" content="El timbre inteligente de Amazon ha estado revelando tu contraseña WiFi a cualquiera"/>
+    <meta property="og:description" content="Una vulnerabilidad en los timbres inteligentes Ring de Amazon ha permitido a un atacante conocer la contraseña del WiFi de nuestra casa."/>
+  </head>
+  <body>
+    <article>
+      <h1>El timbre inteligente de Amazon ha estado revelando tu contraseña WiFi a cualquiera</h1>
+      <address><time datetime="2019-11-07T17:30:27+00:00">07 Nov 2019, 17:30</time> by <a rel="author">Alberto García</a></address>
+      <p>Los <b>timbres inteligentes</b> están ganando cada vez más popularidad en todo el mundo. No sólo puedes abrir la puerta de tu casa con el móvil mediante NFC o usando la huella, sino que también la mayoría cuentan con una cámara para grabar a quien intente acercarse a nuestra casa. Sin embargo, no todos son 100% seguros, y ahora los de <b>Amazon</b> han estado revelando tu <b>contraseña.</b></p>
+      <h3>Cuidado con el tipo de conexión que utilizas para los dispositivos IoT</h3>
+      <p>Así lo ha revelado hoy Bitdefender, donde los timbres inteligentes de Amazon, bajo su submarca Ring, estaban expuestos a una vulnerabilidad que podía permitir a un hacker acceder a nuestra contraseña WiFi. La vulnerabilidad ha sido publicada hoy. La vulnerabilidad fue descubierta en junio, donde Bitdefender pidió a Amazon un canal seguro de comunicación para detallarle la vulnerabilidad. El 16 de agosto, el caso fue cerrado y marcado como duplicado. El 5 de noviembre se lanzó un parche que solucionaba la vulnerabilidad, y no ha sido hasta hoy cuando han anunciado su existencia.</p>
+      <figure>
+        <img src="https://www.adslzone.net/app/uploads/2019/11/ring-timbre-inteligente-wifi.jpg"/>
+      </figure>
+      <p>Bitdefender decidió analizar la seguridad del Ring Video Doorbell Pro tras una petición de PCMag para encontrar vulnerabilidades en él. Este modelo es el más caro que Amazon vende en España, costando <a href="https://www.amazon.es/Ring-Video-Doorbell-Pro-Videoportero/dp/B072KLVTQP/?tag=adslzone-21">279 euros</a> frente a los <a href="https://www.amazon.es/Ring-Video-Doorbell-Videoportero-bidireccional/dp/B071JF2ZRR?tag=adslzone-21">99 euros del modelo base</a> y a los <a href="https://www.amazon.es/Ring-Video-Doorbell-Videoportero-bidireccional/dp/B0758975BR?tag=adslzone-21">199 euros del Doorbell 2.</a></p>
+      <p>El fallo tiene que ver con la forma en la que se realiza la conexión. Para poder conectar el <b>Ring Video Doorbell Pro</b> a nuestra red WiFi es necesario recurrir a <b>WPS</b>, que ya ha desaparecido en Android entre detrimento de <b>Wi-Fi Easy Connect</b>, y lo irá haciendo en el futuro en más dispositivos debido a su inseguridad, ya que <b>envía la contraseña WiFi en texto plano</b> y permite conectarse a cualquier persona que esté cerca de nuestro router.</p>
+      <h3>WPS era el principal culpable: evita usarlo siempre que puedas</h3>
+      <p>Es difícil que justo haya un atacante pendiente de que le demos a WPS. El problema es que se puede forzar que la conexión existente falle. Para ello, sólo necesitan hacer una especie de ataque DDoS al router con una instrucción para desautorizar al timbre como miembro de la red. Y todo sin que el atacante conozca la contraseña de la red.</p>
+      <figure>
+        <img src="https://www.adslzone.net/app/uploads/2019/11/2019-11-07_162104.jpg"/>
+      </figure>
+      <p>Finalmente, tras enviar el mensaje infinidad de veces, el dispositivo aparece como desconectado a ojos del router. El timbre sigue sonando, pero no envía notificaciones a la red. El dueño puede tardar en darse cuenta, y ahí el atacante puede estar cerca para capturar las credenciales de la red. Además, se conectan a la red haciendo spoofing de una dirección MAC de un dispositivo ya existente en la red, de manera que es casi imposible saber que el atacante está dentro de nuestra red, el cual además puede reconfigurar el timbre para poder abrirlo desde su móvil.</p>
+      <figure>
+        <img src="https://www.adslzone.net/app/uploads/2019/11/spoofing-wifi-ring.jpg"/>
+      </figure>
+      <p>Para solucionar la vulnerabilidad, Amazon ha cambiado por completo el proceso de configuración inicial del timbre. Ahora el Ring envía una <b>señal WiFi a la que nos conectamos con el móvil</b>, y usa una <b>conexión HTTPS</b>. En lugar de usar una contraseña (la cual no tiene el dispositivo), lo que se usa es un certificado digital firmado por la compañía y validado por la app.</p>
+    </article>
+  </body>
+</html>

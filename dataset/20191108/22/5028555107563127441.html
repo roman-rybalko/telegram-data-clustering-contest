@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://arstechnica.com/information-technology/2019/11/newly-discovered-titanium-backdoor-employs-clever-ways-to-go-undetected/"/>
+    <meta property="og:site_name" content="Ars Technica"/>
+    <meta property="article:published_time" content="2019-11-08T22:18:32+00:00"/>
+    <meta property="og:title" content="One of the world’s most advanced hacking groups debuts new Titanium backdoor"/>
+    <meta property="og:description" content="Malware hides at every step by mimicking common software in long multi-stage execution."/>
+  </head>
+  <body>
+    <article>
+      <h1>One of the world’s most advanced hacking groups debuts new Titanium backdoor</h1>
+      <h2>Malware hides at every step by mimicking common software in long multi-stage execution.</h2>
+      <address><time datetime="2019-11-08T22:18:32+00:00">08 Nov 2019, 22:18</time> by <a rel="author">Dan Goodin</a></address>
+      <p>One of the world’s most most technologically advanced hacking groups has a new backdoor that’s every bit as sophisticated as its creators.</p>
+      <p>Dubbed Titanium by the Kaspersky Lab security researchers who discovered it, the malware is the final payload delivered in a long and convoluted attack sequence. The attack chain uses a host of clever tricks to evade antivirus protection. Those tricks include encryption, mimicking of common device drivers and software, memory-only infections, and a series of droppers that execute the malicious code a multi-staged sequence. Yet another means of staying under the radar is hidden data delivered <a href="https://en.wikipedia.org/wiki/Steganography">steganographically</a> in a PNG image.</p>
+      <p>Named after a password used to encrypt a malicious archive, Titanium was developed by Platinum, a so-called advanced persistent threat group that focuses hacks on the Asia-Pacific region, most likely on behalf of a nation.</p>
+      <p>“The Titanium APT has a very complicated infiltration scheme,” Kaspersky Lab researchers <a href="https://securelist.com/titanium-the-platinum-group-strikes-again/94961/">wrote in a post</a>. “It involves numerous steps and requires good coordination between all of them. In addition, none of the files in the file system can be detected as malicious due to the use of encryption and fileless technologies. One other feature that makes detection harder is the mimicking of well-known software.”</p>
+      <p>Titanium uses several different methods to initially infect its targets and spread from computer to computer. One is a local intranet that has already been compromised with malware. Another vector is an <a href="https://en.wikipedia.org/wiki/SFX_(software)">SFX</a> archive containing a Windows installation task. A third is shellcode that gets injected into the winlogon.exe process (it’s still unknown how this happens). The end result is a stealthy and full-featured back door that can:</p>
+      <ul>
+        <li>Read any file from a file system and send it to an attacker-controlled server</li>
+        <li>Drop a file onto or delete it from the file system</li>
+        <li>Drop a file and run it</li>
+        <li>Run a command line and send execution results to the attacker’s control server</li>
+        <li>Update configuration parameters (except the AES encryption key)</li>
+      </ul>
+      <p>Platinum has been operating since at least 2009, according to a <a href="https://download.microsoft.com/download/2/2/5/225BFE3E-E1DE-4F5B-A77B-71200928D209/Platinum%20feature%20article%20-%20Targeted%20attacks%20in%20South%20and%20Southeast%20Asia%20April%202016.pdf">detailed report Microsoft published in 2016</a>. The group is primarily focused on the theft of sensitive intellectual property related to government interests. Platinum often relies on spear phishing and zero-day exploits.</p>
+      <p>Interestingly, Kaspersky Lab says it has yet to detect any current activity related to Titanium. It’s not clear if that’s because the malware isn’t in use or if it’s just too hard to detect infected computers.</p>
+    </article>
+  </body>
+</html>

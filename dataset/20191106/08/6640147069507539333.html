@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://www.tomshw.it/hardware/ryzen-3000-1usmus-custom-power-plan/"/>
+    <meta property="og:site_name" content="Tom's Hardware"/>
+    <meta property="article:published_time" content="2019-11-06T08:24:00+00:00"/>
+    <meta property="og:title" content="Ryzen 3000 alla massima frequenza? Spunta la “mod” amatoriale"/>
+    <meta property="og:description" content="Yuri &quot;1usmus&quot; Bubily ha creato &quot;1usmus Custom Power Plan&quot;, un profilo energetico per Windows 10 che sembra portare i Ryzen 3000 (specie i Ryzen 9) a operare alle frequenze di boost pubblicizzate."/>
+  </head>
+  <body>
+    <article>
+      <h1>Ryzen 3000 alla massima frequenza? Spunta la “mod” amatoriale</h1>
+      <address><time datetime="2019-11-06T08:24:00+00:00">06 Nov 2019, 08:24</time> by <a rel="author">Manolo De Agostini</a></address>
+      <p>In queste settimane i produttori di motherboard AMD stanno rilasciando i <a href="https://www.tomshw.it/hardware/ryzen-3000-con-il-nuovo-firmware-frequenze-di-boost-ancora-piu-alte/">BIOS basati sull’AGESA 1.0.0.4B</a> per piattaforme <b>Ryzen 3000</b> con molti correttivi che dovrebbero permettere alle CPU Ryzen 3000, <a href="https://www.tomshw.it/hardware/firmware-agesa-1004-ryzen-3000-tempo-avvio/">tra le altre cose</a>, di raggiungere le <b>frequenze previste in boost.</b></p>
+      <p>Un problema che, se ci avete letto nelle scorse settimane, era emerso grazie a <a href="https://www.tomshw.it/hardware/sondaggio-der8auer-ryzen-3000-boost-clock/">un sondaggio dell’overclocker der8auer</a>, in un <a href="https://www.tomshw.it/hardware/ryzen-3000-boost-test/">test dei nostri colleghi statunitensi</a> e infine <a href="https://www.tomshw.it/hardware/amd-conferma-ryzen-3000-frequenza-boost-problema/">confermato da AMD</a>.</p>
+      <figure>
+        <img src="https://www.tomshw.it/images/images/2019/07/banchetto-di-prova-amd-ryzen-3000-41512.768x432.jpg"/>
+      </figure>
+      <p>L’AGESA 1.0.3.3ABBA doveva risolvere la situazione, ma così non è stato e quindi la speranza è che l’AGESA 1.0.0.4 vada a chiudere definitivamente la faccenda – non così grave da influenzare negativamente una decisione di acquisto. <b>Sembra però che si possa fare persino meglio</b>, o almeno è quello che ha dimostrato il creatore di Ryzen DRAM Calculator, Yuri “<b>1usmus</b>” Bubily.</p>
+      <p><b>1usmus ha creato un piano energetico personalizzato per Windows</b> – chiamato 1usmus Custom Power Plan – che permette alle CPU Ryzen 3000 di operare a frequenze ancora più alte rispetto al piano ufficiale di AMD, il Ryzen Balanced distribuito dall’azienda con i driver per il chipset. Un piano creato nel 2017 per risolvere problemi simili con le frequenze di clock e il core parking, al fine di impedire ai core di entrare in uno stato di idle troppo profondo – se non necessario.</p>
+      <p>1usmus ha pubblicato un <a href="https://www.techpowerup.com/review/1usmus-custom-power-plan-for-ryzen-3000-zen-2-processors/">articolo su TechPowerUp</a> (dove potete anche <a href="https://www.techpowerup.com/download/1usmus-custom-power-plan-ryzen-3000-zen-2/">scaricare il piano energetico</a>) in cui descrive come funziona il profilo e i risultati dei suoi test. Dai grafici <b>si può vedere come un Ryzen 9 3900X passi dai 4,4 GHz raggiunti senza il piano ai 4,6 GHz previsti da AMD</b>. Un miglioramento dovuto, secondo lo sviluppatore, alla capacità del piano di “sfruttare i core preferiti persino prima che Microsoft offra agli utenti questa possibilità con Windows 10 19H2 (<a href="http://www.tomshw.it/hardware/windows-10-1909-19h2-novita/">qui tutte le novità</a>, ndr)”.</p>
+      <figure>
+        <img src="https://www.tomshw.it/images/images/2019/11/1usmus-custom-power-plan-risultati-60979.768x432.jpg"/>
+        <figcaption>Crediti: TechpowerUp</figcaption>
+      </figure>
+      <p>Come le soluzioni amatoriali, seppur creata da una persona competente, bisogna tenere in considerazione che potrebbe portare a problemi imprevisti con il processore o il PC, visto che non è stata testata e validata su un ampio numero di computer. Insomma se il vostro PC Ryzen 3000 vi soddisfa, vi suggeriamo di non installare il piano e di attenervi solo alle soluzioni ufficiali, a meno che non siate molto curiosi (attenzione, la curiosità a volte si paga!).</p>
+      <p>“Il piano <b>modifica il modo in cui processore e Windows parlano l’un l’altro riguardo le richieste prestazionali chiamate CPPC</b> (Collaborative Processor Performance Control), portando a quello che credo sia il modo in cui Precision Boost dovrebbe funzionare secondo AMD: veloce e reattivo ma con la capacità di distinguere carichi di lavoro legittimi dal rumore di fondo. <b>Questo piano di alimentazione dovrebbe essere particolarmente utile agli utenti con chip Ryzen serie 9</b>, come Ryzen 9 3900X e l’imminente Ryzen 9 3950X e i processori Ryzen Threadripper di terza generazione in arrivo”.</p>
+      <p>“La distribuzione dei carichi di lavoro che sfruttano meno i thread è ora allocata a un numero inferiore di core, che sono noti per essere migliori a livello fisico e che salgono a frequenze più alte, producendo una migliore gestione dell’alimentazione, della reattività e delle prestazioni”.</p>
+      <figure>
+        <img src="https://www.tomshw.it/images/images/2019/11/1usmus-custom-power-plan-risultati-60978.768x432.jpg"/>
+        <figcaption>Crediti: TechpowerUp</figcaption>
+      </figure>
+      <p>Affinché il piano personalizzato funzioni <b>è necessario impostare anche alcuni parametri nel BIOS</b>, come indicato nella seconda pagina dell’articolo su TechpowerUp. La sintesi è che AMD sembrerebbe avere alcune frecce al proprio arco per affrontare i problemi di clock in boost dei Ryzen 3000, ma allo stesso tempo forse si mantiene conservativa per questioni di affidabilità del processore sul lungo termine.</p>
+      <p>AMD in futuro potrebbe tentare di realizzare un nuovo piano energetico oppure sta semplicemente aspettando la nuova versione di Windows 10 per mettere tutti i tasselli al proprio posto. AMD è comunque concentrata al 100% sul “problema”, quindi aspettiamoci novità nel prossimo futuro.</p>
+    </article>
+  </body>
+</html>

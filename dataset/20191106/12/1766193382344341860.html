@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://www.heise.de/developer/meldung/TypeScript-3-7-Die-und-der-uebersichtlichere-Code-4578944.html"/>
+    <meta property="og:site_name" content="Developer"/>
+    <meta property="article:published_time" content="2019-11-06T12:37:00+00:00"/>
+    <meta property="og:title" content="TypeScript 3.7: Die ??? und der übersichtlichere Code"/>
+    <meta property="og:description" content="Das aktuelle Release der Skriptsprache führt den Nullish-Coalescing-Operator und das Optional Chaining ein."/>
+  </head>
+  <body>
+    <article>
+      <h1>TypeScript 3.7: Die ??? und der übersichtlichere Code</h1>
+      <h2>Das aktuelle Release der Skriptsprache führt den Nullish-Coalescing-Operator und das Optional Chaining ein.</h2>
+      <address><time datetime="2019-11-06T12:37:00+00:00">06 Nov 2019, 12:37</time> by <a rel="author">Rainald Menge-Sonnentag</a></address>
+      <p>Microsoft hat turnusmäßig TypeScript 3.7 veröffentlicht. Das JavaScript-Superset bringt im aktuellen Release zahlreiche sprachliche Neuerungen mit und nimmt damit erneut einige kommende Features von ECMAScript vorab in die Syntax auf. Sowohl Optional Chaining als auch der Nullish-Coalescing-Operator sind Bestandteil des neuen TypeScript-Release, und beide sollen Einzug in den Kern von JavaScript halten.</p>
+      <h3>Ein Fragezeichen zum Verketten</h3>
+      <p>Das Optional Chaining gehört zu den ältesten Wünschen der Entwickler für TypeScript. Das <a href="https://github.com/microsoft/TypeScript/issues/16">zugehörige Issue hat die Nummer 16</a> von derzeit gut 23.000 Issues und existiert seit fünf Jahren. Optional Chaining, also die optionale Verkettung, soll auch Bestandteil von ECMAScript werden und <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Optional_chaining">gilt in JavaScript derzeit als experimentell</a>.</p>
+      <p>Die zugehörige Syntax sieht ein Fragezeichen vor, das innerhalb einer verketteten Anweisung eine <code>null</code>-Prüfung vornimmt. So ersetzt folgende Codezeile aus dem TypeScript-Blog</p>
+      <pre>let x = foo?.bar.baz();</pre>
+      <p>folgenden Block:</p>
+      <pre>let x = (foo === null || foo === undefined) ?<br/>  undefined :<br/>  foo.bar.baz();</pre>
+      <p>Konkret testet das <code>?</code>, ob <code>foo</code> definiert ist und führt nur dann die weitere Berechnung durch. Ansonsten gibt die Anweisung <code>undefined</code> zurück. Erwähnenswert ist, dass die Prüfung sich nur auf den Wert vor dem <code>?</code> bezieht. Sollte <code>foo.bar</code> nicht definiert sein, führt die Zeile zur einer Fehlermeldung.</p>
+      <h3>Zwei Fragezeichen für die Null</h3>
+      <p>Der Nullish-Coalescing-Operator soll ebenfalls Bestandteil von ECMAScript werden und befindet sich <a href="https://github.com/tc39/proposal-nullish-coalescing">derzeit in der dritten und damit vorletzten Stufe</a> (Candidate Stage) beim TC39-Komitee. In anderen Programmiersprachen heißt der Binäroperator auch Null Coalescing und existiert in unterschiedlichen Schreibweisen. Für TypeScript ist ebenso wie in ECMAScript ein doppeltes Fragezeichen dafür vorgesehen. Der Operator ersetzt undefinierte Werte durch einen Standardwert.</p>
+      <p>Folgende Codezeile</p>
+      <pre>let x = foo ?? bar();</pre>
+      <p>weist der Variable <code>x</code> den Wert von <code>foo</code> zu, wenn er weder <code>null</code> noch <code>undefined</code> ist. Ansonsten erhält <code>x</code> das Ergebnis des Aufrufs von <code>bar()</code>.</p>
+      <p>Somit ersetzt die Zeile den folgenden Codeblock:</p>
+      <pre>let x = (foo !== null &amp;&amp; foo !== undefined) ?<br/>  foo :<br/>  bar();</pre>
+      <h3>Zusicherung und Funktionen ohne Rückkehr</h3>
+      <p>Außerdem bietet TypeScript 3.7 eine bessere Implementierung von Assertions und setzt dafür auf zwei Signaturen: Eine prüft, ob eine beliebige Bedingung <code>true</code> ergibt:</p>
+      <pre>function assert(condition: any, msg?: string): asserts condition {<br/>  if (!condition) {<br/>    throw new AssertionError(msg)<br/>  }<br/>}</pre>
+      <p>und die andere prüft den Typ einer Variablen. Die Syntax ist an die der <code>assert</code>-Funktion von Node.js angelehnt.</p>
+      <p>Außerdem kann TypeScript nun Funktionen korrekt behandeln, die <code>never</code> zurückgeben, also den Programmfluss abbrechen. Der Typ selbst ist seit TypeScript 2.0 Bestandteil der Sprache. TypeScript erkennt nun den Einfluss auf den Programmfluss und behandelt die Funktionen entsprechend. Codebeispiele dazu und zu den Assertions finden sich in dem <a href="https://github.com/microsoft/TypeScript/pull/32695">zugehörigen Pull Request auf GitHub</a>.</p>
+      <p>Weitere Neuerungen in TypeScript 3.7 wie zusätzliche rekursive Type Aliases und die neuerdings erlaubte Kombination der Flags <code>--declaration</code> und <code>--allowJs</code>, die sich bisher gegenseitig ausgeschlossen haben, <a href="https://devblogs.microsoft.com/typescript/announcing-typescript-3-7/">lassen sich dem TypeScript-Blog entnehmen</a>. (<a href="mailto:rme@ct.de">rme</a>)</p>
+    </article>
+  </body>
+</html>

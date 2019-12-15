@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://developers.slashdot.org/story/19/11/04/1620223/apple-now-rejects-electron-apps-from-mac-app-store"/>
+    <meta property="og:site_name" content="developers.slashdot.org"/>
+    <meta property="article:published_time" content="2019-11-04T11:45:00+00:00"/>
+    <meta property="og:title" content="Apple Now Rejects Electron Apps from Mac App Store"/>
+    <meta property="og:description" content="Mac developers are reporting that apps made using Electron (which is a framework that allows companies to ship web apps in a native app wrapper) are now being rejected by the automated Mac App Store review process. From a report: The apps in question are getting flagged because of their usage of pri..."/>
+  </head>
+  <body>
+    <article>
+      <h1>Apple Now Rejects Electron Apps from Mac App Store</h1>
+      <address><time datetime="2019-11-04T11:45:00+00:00">04 Nov 2019, 11:45</time> by <a rel="author">msmash</a></address>
+      <p>Mac developers are reporting that apps made using Electron (which is a framework that allows companies to ship web apps in a native app wrapper) are <a href="https://david.dev/you-cannot-submit-an-electron-6-or-7-app-to-the-apple-store">now being rejected by the automated Mac App Store review process</a>. From a report:<i> The apps in question are getting flagged <a href="https://9to5mac.com/2019/11/04/electron-app-rejections/">because of their usage of private API calls</a>. These API calls are not in the app itself, but part of the underlying Electron framework. The detected private API symbols include:" CAContext CALayerHost NSAccessibilityRemoteUIElement NSNextStepFrame NSThemeFrame NSURLFileTypeMappings." Apparently, the Electron framework has used these APIs for years. What has happened is that Apple has upgraded its server-side app review processes to detect more violations of its App Review guidelines, and now this private API usage is being identified. Individual Electron app makers are a bit helpless as the issue can only really be fixed by pushing changes in the Electron code itself. It does not appear that Electron is doing anything extreme, certainly nothing malicious. App Review doesn't care about why an app is using private API, it's a hard and fast rule (at least in theory).</i></p>
+      <aside>
+        <b>
+          <a href="https://david.dev/you-cannot-submit-an-electron-6-or-7-app-to-the-apple-store">(david.dev)</a>
+        </b>
+      </aside>
+    </article>
+  </body>
+</html>

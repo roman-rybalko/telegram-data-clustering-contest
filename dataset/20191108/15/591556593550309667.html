@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://www.zdnet.com/article/platinum-apts-new-titanium-backdoor-mimics-popular-pc-software-to-stay-hidden/"/>
+    <meta property="og:site_name" content="ZDNet"/>
+    <meta property="article:published_time" content="2019-11-08T15:56:24+00:00"/>
+    <meta property="og:title" content="Platinum APT’s new Titanium backdoor mimics popular PC software to stay hidden"/>
+    <meta property="og:description" content="The group uses encryption, fileless technologies, and mimicry to stay under the radar."/>
+  </head>
+  <body>
+    <article>
+      <h1>Platinum APT’s new Titanium backdoor mimics popular PC software to stay hidden</h1>
+      <address><time datetime="2019-11-08T15:56:24+00:00">08 Nov 2019, 15:56</time> by <a rel="author" href="https://www.zdnet.com/meet-the-team/us/charlie-osborne/" target="_blank">Charlie Osborne</a></address>
+      <p>
+        <b>The group uses encryption, fileless technologies, and mimicry to stay under the radar.</b>
+      </p>
+      <figure>
+        <video src="http://android-streaming.techrepublic.com/media/2019/08/28/1594288707758/2019-08-28-wochit-new-variant-of-trojan-malware-puts-your-personal-information-at-risk_1921739_740.mp4"/>
+      </figure>
+      <p>The Platinum advanced persistent threat (APT) cyberattack group has developed a new backdoor with interesting concealment techniques.  <br/><br/>Platinum has been tracked since 2012 and generally targets government, military, and political targets across the APAC region. </p>
+      <p>In recent years, the hacking group has become linked to the use of novel attack techniques, such as the abuse of a now-deprecated Windows feature called hotpatching and fileless code deployment, as <a href="https://www.zdnet.com/article/platinum-apt-hides-backdoor-communication-in-text/">well as steganography</a> to hide Powershell and exploit code in plain text. <br/><br/><b>See also: </b><a href="https://www.zdnet.com/article/facebook-enjoys-rare-court-win-over-privacy-breach/">Facebook enjoys rare court win over privacy breach, investor claims</a> <br/><br/>A past backdoor connected to Platinum uses text steganography to hide command-and-control (C2) communication. Now, the APT appears to have added a new backdoor, dubbed Titanium, to its arsenal. </p>
+      <p>Named after a password to one of its archives, Titanium "hides at every step by mimicking common software" including protection-related, sound driver software, and video creation tools, <a href="https://securelist.com/titanium-the-platinum-group-strikes-again/94961/">according to Kaspersky researchers</a>.  <br/><br/>In attack chains tracked by the team, Platinum will deploy Titanium as the last stage of infection. </p>
+      <p><b>CNET: </b><a href="https://www.cnet.com/news/lasers-can-seemingly-hack-alexa-google-home-and-siri/?ftag=CMG-01-10aaa1b">Lasers can seemingly hack Alexa, Google Home and Siri</a> <br/><br/>Each example found involved the use of an exploit for executing code as a system-level user and shellcode to download an additional downloader. Platinum targets winlogon.exe but Kaspersky does not know how the injection occurs.  <br/><br/>The deployment of an SFX archive containing a Windows task installation script is then underway. This password-protected, encrypted archive is downloaded via BITS Downloader, and its main task is to install a Windows task to maintain persistence.  <br/><br/>The attack chain will then involve the launch of a further archive containing an installer, a COM object DLL, and the Titanium backdoor itself. Titanium's paths all masquerade as a common software installer, such as for DVD creation software or as an audio driver, and the backdoor will then seek a connection to its C2 once executed.  <br/><br/>To establish a connection with its C2, Titanium will send a base64-encoded request containing a system ID, computer name, and the hard disk's serial number.  <br/><br/><b>TechRepublic: </b><a href="https://www.techrepublic.com/article/youve-got-malware-malicious-actors-are-waiting-in-your-inbox/?ftag=CMG-01-10aaa1b">You've got malware: Malicious actors are waiting in your inbox</a> <br/><br/>When pinging the C2 for commands, the malware will be answered with PNG files containing steganographically hidden data, containing directions for the malicious code. Commands may include reading system files, deleting content, dropping and executing files, running command line queries and sending the results to the C2, and update configuration requests.  <br/><br/>Kaspersky is unaware of any active campaigns, at present.<br/><br/>"The Titanium APT has a very complicated infiltration scheme. It involves numerous steps and requires good coordination between all of them. In addition, none of the files in the file system can be detected as malicious due to the use of encryption and fileless technologies," the researchers say. "One other feature that makes detection harder is the mimicking of well-known software."</p>
+    </article>
+  </body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://www.electronicsweekly.com/blogs/engineer-in-wonderland/3d-printing-i-think-i-discovered-folk-trouble-dual-drive-extruders-2019-11/"/>
+    <meta property="og:site_name" content="Electronics Weekly.com"/>
+    <meta property="article:published_time" content="2019-11-21T17:09:42+00:00"/>
+    <meta property="og:title" content="3d printing: I think I have discovered why folk are having trouble with ‘dual-drive’ extruders"/>
+    <meta property="og:description" content="On a ‘fused filament’ 3d printer, the filament ‘extuder’ comes in two parts:"/>
+  </head>
+  <body>
+    <article>
+      <h1>3d printing: I think I have discovered why folk are having trouble with ‘dual-drive’ extruders</h1>
+      <address><time datetime="2019-11-21T17:09:42+00:00">21 Nov 2019, 17:09</time> by <a rel="author" href="https://www.electronicsweekly.com/author/steve-bush/" target="_blank">Steve Bush</a></address>
+      <p>
+        <b>On a ‘fused filament’ 3d printer, the filament ‘extuder’ comes in two parts:</b>
+      </p>
+      <p>The ‘hot-end’ which melts printing filament and delivers this to the thing being created</p>
+      <p>And something that forces filament into the hot-end, which tends to get called ‘the extruder’</p>
+      <p>By the way, these can be bolted together (‘direct drive’), or, to save moving weight, can be separated by a flexible but longitudinally-rigid tube (‘the <a href="https://en.wikipedia.org/wiki/Ernest_Monnington_Bowden">Bowden</a>‘).</p>
+      <figure>
+        <img src="https://static.electronicsweekly.com/wp-content/uploads/2019/11/21153011/Simple-extruder-extruder.jpg"/>
+      </figure>
+      <p>The extruder part of the extruder (which I shall call the extruder from here onward… or should I …) generally has a stepper motor which drives a cylinder (toothed brass in the photo on the right), and the filament is forced against this cylinder by spring pressure, allowing rotation of the cylinder to force the filament (black in photo) along (from left to right in the photo).</p>
+      <p>The in the photo is ‘single-drive’ because spring pressure is transferred using an idler wheel (silver).</p>
+      <figure>
+        <img src="https://static.electronicsweekly.com/wp-content/uploads/2019/11/21162129/DualDrive-extruder-parts.jpg"/>
+      </figure>
+      <p>Most extruders are like this, but some better machines have ‘dual-drive’ extruders where the idler wheel is replaced by a second drive cylinder (see left) – with a simple gear at the bottom of each cylinder transferring rotation from one to the other. The gear teeth (not to be confused with the toothy filament drive serrations in the photo above) are quite chunky, allowing a bit of movement between cylinders for the spring to do its work. In this case the filament is driven by the serrated groove – there is a matching one on the stepper motor shaft (not shown).</p>
+      <p>Anyway, just recently a cheaper form of dual-drive has appeared (from several manufactures) and I got one (<a href="https://www.youtube.com/watch?v=QnrH2Sk7y40">prompted by this Chuck Hellebuyck video</a> – note, my standard single-drive metal extruder in the top right photo turned out not to have any slipping problems at all when driving PETg filament).</p>
+      <p>Then I found out that lots of folk, including Chuck, are having problems with wear under one side of the driven drive cylinder (that would be under the lower (teeth end) right of the cylinder in the photo above left) – prompting suggestions there need to be a hard washer under that cylinder.</p>
+      <p>Now, this may be true, but I have found something else – someone has been saving slightly too much money in making these dual-drive extruders. Mine is made by Zeelo, cost under £20, and is the one in the top left photo), but looking at photos on the web suggests even the £40 Creality might be the same – check for yourself as all of these manufacturers might be sorting this our.</p>
+      <figure>
+        <img src="https://static.electronicsweekly.com/wp-content/uploads/2019/11/21162126/DualDrive-cylinder-bearing-and-bolt.jpg"/>
+      </figure>
+      <p>
+        <b>How the bearing is</b>
+      </p>
+      <p>The second cylinder has a simple roller bearing in the middle consisting of eight rollers in a neat caged assembly. Through the centre of this, there should be a smooth (or even ground) 3mm shaft supporting it between upper and lower mounting holes, but instead there is a fully threaded bolt.</p>
+      <figure>
+        <img src="https://static.electronicsweekly.com/wp-content/uploads/2019/11/21162128/DualDrive-cylinder-with-nice-ground-3mm-shaft.jpg"/>
+      </figure>
+      <p>
+        <b>How it should be</b>
+      </p>
+      <p>Even without wear, this thread is ~2.8mm in diameter, which allows the forces acting on the filament to shove the lower part of the cylinder hard into the aluminium below – causing the gouging.</p>
+      <p>It looks to me that whoever originated this design intended a special bolt to be made up with a smooth cylindrical centre section, but somewhere along the line this became simple M3 screw.</p>
+      <p>Also, the bottom mounting hole is threaded (M3), so doing the bolt up too tight can pull the top and bottom supports together a fraction, trapping the cylinder and jamming it  – and this is exactly what happens.</p>
+      <figure>
+        <img src="https://static.electronicsweekly.com/wp-content/uploads/2019/11/21163809/DualDrive-large-top-hole-alows-further-misalignment.jpg"/>
+      </figure>
+      <p>Also also, the top hole is 3.3mm – not 3mm – <b>even further allowing the cylinder to tilt to its gouging positional</b> (photo right), made even worse (could it get worse…?) because the bolt cannot be done up tight enough to stop this because the cylinder will jam.</p>
+      <p>
+        <b>My theory</b>
+      </p>
+      <p>Now, 3.3mm happens to be the pilot hole size for cutting an M4 (4mm) thread. This and the other bits above lead me to believe that the upper hole was supposed to be M4 threaded, and the lower hole was supposed to be a plain 3mm hole.</p>
+      <p>This theory (my dear Watson) is supported by the upper support being thicker (3mm, see photo) for better for threading, while the lower support is a bit thin (2.7mm) even for its M3 thread.</p>
+      <p><b>Against my pet theory</b>, there is very little metal left around the 3.3mmm hole in which to cut an M4 thread (see photo above right).</p>
+      <p>But given an M4 top hole and a 3mm bottom hole, and then a special bolt with a short M4 thread just under the head plus a nice smooth 3mm extension, the bolt would screw fit nicely through the holes and both properly support the cylinder against movement that could cause gouging, and have no possibility of jamming by over-tightning.</p>
+      <p>Even had they made both holes 3mm it would be possible to drop a length of 3mm rod into the assembly. Sadly, that pesky 3.3mm hole means a special assembly – at lease a 3mm rod with a short 3.3mm diameter section, threaded to M3 at the very end of the M3 thread if the lower hole is not to be reamed out.</p>
+      <p>To avoid the jamming issue, and not have to drill or tap the extruder metalwork, perhaps the best bet is to make up a special screw with no head that is almost all 3mm rod (at least as long as the cylinder), expanded to 3.3mm at the top end and threaded to M3 at the bottom end.</p>
+      <p>The thread would have to be short enough to just fit in, and pull-up tight in, the lower 2.7mm thickness, and the parallel 3.3mm top bit would just slide up and down it the top hole – not pulling together the top and bottom supports.</p>
+      <p>I tiny screwdriver slot (or a head formed well clear above the top support) would allow assembly.</p>
+      <p>Anyone got a lathe?</p>
+    </article>
+  </body>
+</html>

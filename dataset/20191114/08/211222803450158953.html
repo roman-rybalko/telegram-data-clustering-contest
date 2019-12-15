@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://xakep.ru/2019/11/14/mcafee-av-bug/"/>
+    <meta property="og:site_name" content="«Хакер»"/>
+    <meta property="article:published_time" content="2019-11-14T08:30:33+00:00"/>
+    <meta property="og:title" content="В антивирусных продуктах McAfee нашли опасный баг"/>
+    <meta property="og:description" content="Специалисты компании SafeBreach обнаружили опасный баг, затрагивающий McAfee Total Protection, Anti-Virus Plus и Internet Security. Уязвимость помогает обойти защитные механизмы антивирусных продуктов и может помощь злоумышленнику получить контроль над системой."/>
+  </head>
+  <body>
+    <article>
+      <h1>В антивирусных продуктах McAfee нашли опасный баг</h1>
+      <address><time datetime="2019-11-14T08:30:33+00:00">14 Nov 2019, 08:30</time> by <a rel="author" href="https://xakep.ru/" target="_blank">Мария Нефёдова</a></address>
+      <p>Специалисты компании SafeBreach <a href="https://safebreach.com/Post/McAfee-All-Editions-MTP-AVP-MIS-Self-Defense-Bypass-and-Potential-Usages-CVE-2019-3648">обнаружили</a> опасный баг CVE-2019-3648, затрагивающий защитные решения McAfee Total Protection (MTP), McAfee Anti-Virus Plus (AVP) и McAfee Internet Security (MIS).</p>
+      <p>Корень проблемы заключается в том, что продукты McAfee пытаются загрузить файл DLL (wbemcomn.dll), используя неверный путь к файлу. В итоге злоумышленник получает возможность создать собственную вредоносную версию wbemcomn.dll, поместить ее в каталог, где антивирус пытается обнаружить файл, что в итоге приведет к загрузке файла и его запуску без каких-либо проверок.</p>
+      <p>Для эксплуатации уязвимости понадобятся права администратора. Если это условие было соблюдено, баг позволяет обойти защитные механизмы антивирусных продуктов McAfee и загрузить неподписанные DLL в различные службы, работающие с правами NT AUTHORITY\SYSTEM. Это обеспечит атакующему устойчивое присутствие в системе, ведь вредоносный код из DLL будет выполняться с каждым перезапуском служб.</p>
+      <p>Исследователи сообщили специалистам McAfee о проблеме еще в августе текущего года, и к настоящему моменту уязвимость уже <a href="https://service.mcafee.com/webcenter/portal/cp/home/articleview?articleId=TS102984">была устранена</a>. Пользователям уязвимых продуктов рекомендуется обновиться до версии 16.0.R22 Refresh 1.</p>
+    </article>
+  </body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://xakep.ru/2019/11/14/purelocker/"/>
+    <meta property="og:site_name" content="«Хакер»"/>
+    <meta property="article:published_time" content="2019-11-14T18:15:16+00:00"/>
+    <meta property="og:title" content="Эксперты нашли связь между вымогателем PureLocker и хак-группами Cobalt и FIN6"/>
+    <meta property="og:description" content="Специалисты Intezer и и IBM X-Force изучили шифровальщика PureLocker, который способен атаковать Windows, Linux и macOS. Интересно, что операторы малвари, похоже, пользовались услугами того же MaaS-провайдера, что и хак-группы Cobalt и FIN6."/>
+  </head>
+  <body>
+    <article>
+      <h1>Эксперты нашли связь между вымогателем PureLocker и хак-группами Cobalt и FIN6</h1>
+      <address><time datetime="2019-11-14T18:15:16+00:00">14 Nov 2019, 18:15</time> by <a rel="author" href="https://xakep.ru/" target="_blank">Мария Нефёдова</a></address>
+      <p>Специалисты Intezer и IBM X-Force <a href="https://www.intezer.com/blog-purelocker-ransomware-being-used-in-targeted-attacks-against-servers/">изучили шифровальщика PureLocker</a>, который написан на PureBasic и способен атаковать Windows, Linux и macOS. Интересно, что операторы малвари, похоже, пользовались услугами того же MaaS-провайдера, что и хак-группы Cobalt и FIN6.</p>
+      <p>PureLocker оставлялся незамеченным на протяжении нескольких месяцев, так как авторы малвари различными способами уклонялись от внимания исследователей. К примеру, образец для Windows маскировался под криптографическую библиотеку C++ под названием Crypto++, и использовал функции, обычно встречающиеся в библиотеках для воспроизведения музыки. В итоге малварь оставалась незамеченной антивирусными решениями на VirusTotal в течение нескольких недель. Кроме того, PureLocker не проявляет вредоносное и подозрительное поведение, если работает в песочнице или отладочном окружении. Более того, в таком случае пейлоад вообще удаляется после выполнения.</p>
+      <figure>
+        <img src="https://xakep.ru/wp-content/uploads/2019/11/248211/pasted-image-0-4.png#26759185"/>
+      </figure>
+      <p>Если говорить о шифровании файлов, здесь PureLocker мало отличается от других вымогателей, хотя и стремиться заразить не максимальное количество жертв, а используется для скрытных, направленных атак. Он меняет расширение файлов на .CR1 и использует алгоритмы AES и RSA, не оставляя жертвам возможности восстановления данных, удаляя теневые копии. Вредонос не блокирует все файлы в скомпрометированной системе, избегая исполняемых файлов.</p>
+      <p>Изучив малварь более  детально, эксперты заметили кое-что интересное: вредонос, конечно, не имеет никакого отношения к Crypto++, и хотя по большей части он оказался уникальным, в нем также был замечен код, присущий другим семействам малвари, в основном связанным с хак-группой Cobalt.</p>
+      <figure>
+        <img src="https://xakep.ru/wp-content/uploads/2019/11/248211/pasted-image-0-8.png#26759185"/>
+      </figure>
+      <p>Как оказалось, PureLocker использует в работе бэкдор More_Eggs, который продается в даркнете и также известен под названиями Terra Loader и SpicyOmelette. Исследователи давно связывают этот бэкдор с провайдером MaaS (Malware-as-a-Service), чьими услугами пользуются группировки <a href="https://medium.com/@quoscient/golden-chickens-uncovering-a-malware-as-a-service-maas-provider-and-two-new-threat-actors-using-61cf0cb87648">Cobalt</a> и <a href="https://securityintelligence.com/posts/more_eggs-anyone-threat-actor-itg08-strikes-again/">FIN6</a>.</p>
+      <p>В итоге аналитики Intezer выдвинули предположение, что за созданием More_Eggs и PureLocker стоят одни и те же люди.Так, компоненты COM Server DLL в обоих случаях написаны на PureBasic, стадия атаки перед пейлоадом выглядит практически идентично (как с точки зрения функциональности, так и с точки зрения кода), да и методы кодирования и декодирования тоже практически одинаковы.</p>
+      <figure>
+        <img src="https://xakep.ru/wp-content/uploads/2019/11/248211/pasted-image-0.png#26759185"/>
+      </figure>
+    </article>
+  </body>
+</html>

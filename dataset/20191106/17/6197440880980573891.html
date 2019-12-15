@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://9to5google.com/2019/11/06/pixel-4-root-mod-motion-sense-gestures-tasker/"/>
+    <meta property="og:site_name" content="9to5Google"/>
+    <meta property="article:published_time" content="2019-11-06T17:59:29+00:00"/>
+    <meta property="og:title" content="Pixel 4 root mod lets you connect Motion Sense gestures to Tasker"/>
+    <meta property="og:description" content="On rooted a Google Pixel 4, you can now connect Motion Sense to Tasker, allowing you to use motion gestures with almost any app."/>
+  </head>
+  <body>
+    <article>
+      <h1>Pixel 4 root mod lets you connect Motion Sense gestures to Tasker</h1>
+      <address><time datetime="2019-11-06T17:59:29+00:00">06 Nov 2019, 17:59</time> by <a rel="author" href="https://9to5google.com/author/skylled/" target="_blank">Kyle Bradshaw</a></address>
+      <p>Despite being one of the signature features of the Google Pixel 4, Motion Sense has many, many limitations. Even if you live in <a href="https://9to5google.com/2019/09/29/pixel-4-motion-sense-38-countries/">one of the regions</a> where Motion Sense is allowed, only <a href="https://9to5google.com/2019/09/29/motion-sense-pixel-4-9-music-apps/">certain apps</a> and <a href="https://9to5google.com/2019/10/15/ustwo-motion-sense-game-headed-south-pixel-4/">games</a> can use the gestures. Thankfully, on rooted a Pixel 4, you can now connect Motion Sense to Tasker, creating nearly infinite possibilities.</p>
+      <p>Under the hood, we’ve found there are two ways that Motion Sense gestures can work. The first is that the Motion Sense app itself can <a href="https://9to5google.com/2019/09/30/everything-pixel-4-motion-sense-can-do/">recognize certain gestures</a> and directly handle them, which is how skipping tracks and silencing alarms works.</p>
+      <p>The second way, and the one we’re more interested in, is that certain very specific apps can connect to a “<a href="https://9to5google.com/2019/10/09/pixel-4-motion-sense-app-game-developers/">Motion Sense Bridge</a>” app to receive information about incoming gestures and handle them accordingly. This is how games like <i>Pokémon Wave Hello</i> and <i>Headed South</i> work, but unfortunately, <a href="https://9to5google.com/2019/10/31/google-has-no-plans-to-open-api-for-motion-sense-on-pixel-4-to-developers/">Google has stated</a> that they have no plans to open this Motion Sense Bridge to more developers.</p>
+      <p>As you might expect though, this sort of arbitrary limitation won’t stop those with rooted phones. Ashergray, via <a href="https://www.xda-developers.com/remap-pixel-4-motion-sense-gestures/"><i>XDA-Developers</i></a>, has <a href="https://forum.xda-developers.com/pixel-4-xl/themes/magisk-motion-sense-soli-oslo-mod-t3993877">created a modified version</a> of the Motion Sense Bridge app as a Magisk mod for rooted Pixel 4 devices, which allows any app to have access to the gesture data, including Tasker. For the uninitiated, <a href="https://play.google.com/store/apps/details?id=net.dinglisch.android.taskerm">Tasker is a handy app</a> that allows you to automate <i>almost anything</i> on your Android phone based on nearly any trigger.</p>
+      <p>Once you’ve set up the modded Motion Sense Bridge, you can use the included app “OsloBridger” to select the types of gestures you want to transmit and calibrate them to be more or less sensitive.</p>
+      <slideshow>
+        <figure>
+          <img src="https://9to5google.com/wp-content/uploads/sites/4/2019/11/OsloBridger-App-2.jpg?quality=82&amp;strip=all"/>
+          <figcaption>Image: XDA-Developers</figcaption>
+        </figure>
+        <figure>
+          <img src="https://9to5google.com/wp-content/uploads/sites/4/2019/11/OsloBridger-App-1.jpg?quality=82&amp;strip=all"/>
+          <figcaption>Image: XDA-Developers</figcaption>
+        </figure>
+      </slideshow>
+      <p>With that done, you’re all set to connect Tasker to your now-public Motion Sense gestures. Simply tell Tasker to use <a href="https://github.com/jcarletto27/magisk_module_motionsense_mod#gesture-types">one of the four intents</a> from OsloBridger as a trigger for whatever action you think fits.</p>
+      <slideshow>
+        <figure>
+          <img src="https://9to5google.com/wp-content/uploads/sites/4/2019/11/Motion-Sense-Remap-1.png"/>
+          <figcaption>Image: XDA-Developers</figcaption>
+        </figure>
+        <figure>
+          <img src="https://9to5google.com/wp-content/uploads/sites/4/2019/11/Motion-Sense-Remap-2.png"/>
+          <figcaption>Image: XDA-Developers</figcaption>
+        </figure>
+      </slideshow>
+      <p>Keep in mind, though, that the default Motion Sense gestures, like skipping tracks and ignoring phone calls, will continue to work exactly as they had before, as they do not use the bridge app at all. Because of this, you may wish to disable Motion Sense gestures in Settings app, under System, then Motion Sense.</p>
+      <p><i>FTC: We use income earning auto affiliate links.</i> <a href="https://9to5mac.com/about/#affiliate">More.</a></p>
+    </article>
+  </body>
+</html>

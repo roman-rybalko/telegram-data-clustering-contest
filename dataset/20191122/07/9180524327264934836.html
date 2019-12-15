@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://prohardver.hu/hir/amd_miert_nem_mindig_legjobb_mag_fut.html"/>
+    <meta property="og:site_name" content="PROHARDVER!"/>
+    <meta property="article:published_time" content="2019-11-22T07:52:00+00:00"/>
+    <meta property="og:title" content="Elmagyarázta az AMD, hogy miért nem mindig a &quot;legjobb magon&quot; fut egy alkalmazás"/>
+    <meta property="og:description" content="Az egy szálon terhelő programoknál sokszor láthatja a felhasználó, hogy nem a leggyorsabb magon futnak, de a cég szerint ennek oka van."/>
+  </head>
+  <body>
+    <article>
+      <h1>Elmagyarázta az AMD, hogy miért nem mindig a "legjobb magon" fut egy alkalmazás</h1>
+      <address><time datetime="2019-11-22T07:52:00+00:00">22 Nov 2019, 07:52</time> by <a rel="author" href="https://prohardver.hu/tag/abu85.html" target="_blank">Abu85</a></address>
+      <p>Manapság a rendkívül sok maggal rendelkező processzorok éráját éljük, de azért még mindig lehet találni olyan alkalmazásokat, amelyek csupán egy szálat terhelnek, bár ehhez már nagyon keresgélni kell. Ahhoz, hogy a gyártók a lehető legjobban kezeljék ezt a lehetőséget, számos új technikát vetnek be. Az egyik ilyen a legújabb Windows frissítésben bevetett favored core, amely funkció hatékony működéséhez szükség van arra, hogy a processzor pontosan meg tudja mondani az operációs rendszernek, hogy melyik mag a leggyorsabb.</p>
+      <h3>H﻿i﻿r﻿d﻿et﻿és</h3>
+      <figure>
+        <a href="https://track.adform.net/C/?bn=33708157;C=0">
+          <img src="https://track.adform.net/adfserve/?bn=33708157;srctype=4;ord=[timestamp]"/>
+        </a>
+      </figure>
+      <p>A favored core koncepciója azonban nem újdonság, az AMD a Ryzen Masterben már bevetette a best core koncepciót, amely minden CCD-n belüli CCX-en csillaggal jelöli a legjobb, illetve ponttal a második legjobb magokat, valamint a CCD-kre nézve egy-egy arany csillaggal jelölt mag is van, amelyek az egész processzor tekintetében a leggyorsabbnak számítanak.</p>
+      <p>Mindez eddig világos is volt, de többen felfedezték, hogy az egyes, egy szálon futó alkalmazások nem feltétlenül az arany csillaggal jelölt magon futnak, amiből logikus módon azt következtethető, hogy a rendszerben kihasználatlan teljesítmény lapul.</p>
+      <figure>
+        <img src="https://prohardver.hu/dl/cnt/2019-11/156559/amdbestcore.jpg"/>
+      </figure>
+      <p>Az AMD szerint a kérdés nem ilyen egyszerű, és valójában a Windows 10 ütemezője is jó, illetve a Ryzen Master sem téved. A vállalat elmondta, hogy a processzorba táplált adatok alapján az UEFI generál egy sorrendet a magok teljesítményéről, és ezeket a CPPC2 interfészen keresztül elérhető adatokat használja fel a Windows 10. A Ryzen Master azonban az SMU API-n keresztül éri el ezeket, és a beolvasás tekintetében igen nagy az esélye annak, hogy a Windows 10 és a Ryzen Master nem ugyanazt a magot jelzi a leggyorsabbnak. Ennek az oka az, hogy másképp dönt a két rendszer erről.</p>
+      <p>A Ryzen Master az SMU firmware-be töltött adatokat éri el, amely a gyártás végén lesz minden processzorba beégetve, és tartalmazza az egyes magok elektronikai karakterisztikáit. Ezt minden legyártott CPU esetében megmérik, vagyis az adat gyakorlatilag minden terméknél eltérő lehet. A Windows 10 az AGESA-ba töltött információkat szerzi meg a CPPC2 interfészen át, és ezek már nem az elektronikai karakterisztikák alapján lesznek meghatározva, hanem némileg belenyúl a sorrendbe az AMD, hogy alkalmazkodni tudjanak a Windows ütemezőjének a működéséhez, méghozzá úgy, hogy figyelembe veszik a saját hardverük felépítését is. Ez az oka annak, amiért a Windows 10 esetleg nem ugyanazt a magot tekinti a legjobbnak, mint a Ryzen Master. Ugyanakkor ez nem jelenti azt, hogy teljesítmény maradna a rendszerben, mert a Windows ütemezőjéhez való igazodás fontosabb, mint konkrétan a leggyorsabb magon futtatni az alkalmazást. Egyszerűen így gyorsabb.</p>
+      <p>Annak érdekében, hogy a fentiek a jövőben ne okozzanak kérdéseket a felhasználókban, az AMD úgy alakítja át a Ryzen Mastert, hogy a Windows 10 favored core adataihoz igazodjon, tehát pontosan azt jelezze vissza, amit az operációs rendszer kap. Ezzel a program elveszti azt a képességet, hogy a valóban leggyorsabb magot jelölje meg egy arany csillaggal, de végeredményben ez csak a tuning szempontjából fontos, ha valaki órajelrekordokat szeretne dönteni. Az operációs rendszert figyelembe véve, azonban sokkal komplexebbé válik a kérdés, amit nehéz lenne érthetően elmagyarázni a felhasználók számára, így inkább a tuningprogram módosítása mellett döntött a cég.</p>
+    </article>
+  </body>
+</html>

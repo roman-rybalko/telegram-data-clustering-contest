@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://www.omgubuntu.co.uk/2019/11/libreoffice-gtk-dialogs-update"/>
+    <meta property="og:site_name" content="OMG! Ubuntu!"/>
+    <meta property="article:published_time" content="2019-11-01T14:00:23+00:00"/>
+    <meta property="og:title" content="LibreOffice 6.4 Will Ship With Native GTK Dialogs on Linux"/>
+    <meta property="og:description" content="LibreOffice completes work on porting dialogs to native GTK, and LibreOffice 6.4 will make 'no direct uses' of the cross-platform VCL toolkit."/>
+  </head>
+  <body>
+    <article>
+      <h6 class="kicker">Effort to complete toolkit transition reaches major milestone</h6>
+      <h1>LibreOffice 6.4 Will Ship With Native GTK Dialogs on Linux</h1>
+      <address><time datetime="2019-11-01T14:00:23+00:00">01 Nov 2019, 14:00</time> by <a rel="author">By Joey Sneddon</a></address>
+      <p>
+        <b>The next major release of LibreOffice is going to look more at home on Linux desktops.</b>
+      </p>
+      <p>For the past few years developers working on the open source productivity suite have been <a href="https://www.omgubuntu.co.uk/2018/03/libreoffice-gtk-dialogs-on-linux-desktops">busy porting</a> LibreOffice’s many (many) dialogs from <a href="https://wiki.openoffice.org/wiki/VCL">VCL</a> (a cross platform UI toolkit) to GTK.</p>
+      <p>That work has come along nicely, with recent versions of LibreOffice for Linux sporting a mix of VCL message dialogs (with GTK theming applied where possible) and native GTK dialogs.</p>
+      <p>But the GTK dialog effort just hit a major milestone.</p>
+      <p>In an <a href="https://caolanm.blogspot.com/2019/10/native-gtk-dialogs-in-libreoffice.html">update posted on his blog</a>, LibreOffice developer <i>Caolán McNamara</i> explains that: <i>“over the last few major releases the GTK version of LibreOffice has increasingly had true GTK dialogs and less VCL dialogs and in master.”</i></p>
+      <p>And, he adds that as of this week:<i>“there are now no direct uses of the VCL dialog APIs”.</i></p>
+      <figure>
+        <video src="https://1.bp.blogspot.com/-u7x6fPxPVq8/XbsGQL26zCI/AAAAAAAAU8k/Xx2WmQx6PHAYoWlefaQ2_pKrA_Sb_DpBACLcBGAsYHQ/s1600/Options-animation.gif" autoplay="" loop=""/>
+        <figcaption>Native GTK dialogs in LibreOffice (master) with Adwaita</figcaption>
+      </figure>
+      <p>This <i>should</i> mean that LibreOffice 6.4 (due for release in January 2020) will look grade-a on Linux desktops, inheriting and displays all the correct cues and colours from whatever GTK theme is in use.</p>
+      <p>Scrollbars, buttons, checkboxes and frames will also look as intended on GTK systems.</p>
+      <p>But switching to <b>native GTK dialogs also improves consistency in the user experience</b>. For instance, the animations and visual feedback given when switching between tabs in a dialog, pressing a button, or dragging a slider.</p>
+      <p>The effort required was huge as LibreOffice has hundreds of dialogs and thousands of XML UI definition files.</p>
+      <p>So while natively handled dialogs may sound like a small improvement for such a colossal software project to make, it hasn’t been a trivial one.</p>
+    </article>
+  </body>
+</html>

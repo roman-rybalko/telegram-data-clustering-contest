@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://www.techradar.com/news/why-zephyr-is-not-just-another-real-time-os"/>
+    <meta property="og:site_name" content="TechRadar"/>
+    <meta property="article:published_time" content="2019-11-25T17:00:16+00:00"/>
+    <meta property="og:title" content="Why Zephyr is not just another real-time OS"/>
+    <meta property="og:description" content="The Linux Foundation's Kate Stewart explains everything you need to know about the real-time OS Zephyr."/>
+  </head>
+  <body>
+    <article>
+      <h1>Why Zephyr is not just another real-time OS</h1>
+      <address><time datetime="2019-11-25T17:00:16+00:00">25 Nov 2019, 17:00</time> by <a rel="author" href="https://www.techradar.com/author/mayank-sharma" target="_blank">Mayank Sharma</a></address>
+      <h3>Why Zephyr is not just another real-time OS</h3>
+      <p>It’s not Linux but it’s picked up a trick or two from it</p>
+      <p>(Image credit: Zephyr)</p>
+      <p>Right from the moment it debuted as a Linux Foundation project back in 2016, the Zephyr project has been raising eyebrows. It incorporates no Linux code in it and is one of the many open source real-time OS’s out there. </p>
+      <p>Very early in the morning on the second day of the Open Source Summit Europe 2019, we met Kate Stewart, Senior Director of Strategic Programs at the Linux Foundation, to understand the motivations behind the initiative and how it’s grown in the three years since its induction. The project started at Wind River before it was acquired by Intel and eventually open sourced. When it was launched the project supported four boards and now it supports over 200 across 10 architectures. </p>
+      <p>Security was a recurrent theme during our conversation: “We're seeing more and more people using data to make intelligent decisions. And if we don't secure the endpoints of that information it’s going to be garbage in garbage out; we're not gonna get the intelligent decisions we're looking for with the sensors. So being able to have that information secured from where it's being collected, to who's consuming it, you don't want someone to tamper with it, so you need security on the whole chain. You also need the security that no one's going to intercept the data.” </p>
+      <ul>
+        <li>The OpenJS Foundation aims to be the <a href="https://www.techradar.com/news/the-openjs-foundation-aims-to-be-the-home-of-all-javascript-development">home of all JavaScript development</a></li>
+        <li>Microsoft is bringing its <a href="https://www.techradar.com/news/microsoft-is-bringing-its-exfat-patents-to-linux-and-open-source">exFAT patents to Linux and open source</a></li>
+        <li>Microsoft, Intel and others are doubling down on <a href="https://www.techradar.com/news/microsoft-intel-and-others-are-doubling-down-on-open-source-linux-security">open source Linux security</a></li>
+      </ul>
+      <p>Kate also repeatedly described the embedded space as a very “fragmented ecosystem”. When asked to explain it to us as outsiders, she said that there were a lot of options that are only a part of the solution and none was ever quite consistent enough: “The biggest alternative for a long time is just grow your own and there's still a lot of people doing grow your own. But as these new technologies come into play, and as people start to care more about security and things being connected, it was a lot of technology that's required to pull it all together to make that secure. So at Zephyr we're really trying to collaborate in getting that put together.”</p>
+      <p>One of the things that Kate is really proud of is that Zephyr was one of the first three open source projects to get the CII gold badge. The project is also a CVE Numbering Authority and has a security team that is actively monitoring and resolving security issues. </p>
+      <h4>Small is beautiful</h4>
+      <p>So how small is Zephyr? Kate points out that it actually depends on how it is used, but Zephyr can be anywhere between 8K and 512K depending what you compile into it. Everything in Zephyr is statically compiled, which allows implementers to keep it very tight and concise: </p>
+      <p>“The size is very much dependent on what you want to do. If you need to use Bluetooth you can put Bluetooth stack in and if you want to use a different communication protocol, you can put that in instead.”</p>
+      <p>Zephyr doesn’t use any Linux code but has taken a few pointers from the project. One of the big ones is to do Long Term Support (LTS) releases that help reduce the rate of change to the project, which makes it more suitable to roll into devices. They also come with a two year support and security update commitment.</p>
+      <p>The first update to the LTS release v 1.14.1 was released less than a month before the Open Source Summit that addressed a security vulnerability in the Bluetooth 5.1 specification: “So we're walking the talk and putting these pieces into play. By having those updates there, it's a good signal for those who are basing products off the LTS that okay, they can go and look at how this vulnerability impacts them, and then decide to update or not.” </p>
+      <p>Besides doing LTS releases, the project has also been keeping a very close eye on its licensing to make sure it is consistent and compliant: “So it’ll be easy for people to use it to make products, not having to worry about something coming to hit them later.”</p>
+      <figure>
+        <iframe src="https://www.youtube.com/embed/xi_GzD4L4Uk" width="640" height="360" data-service="Youtube" scrolling="no"/>
+      </figure>
+      <h4>Embedded devices</h4>
+      <p>The one topic that Kate absolutely loves to talk about are the devices that use Zephyr. She unpacked the new version of PHYTEC’s reel board that now has an extender board and allows you to swap out the chip that’s driving it. </p>
+      <p>Besides the reel board, Kate says at the moment the project is seeing a lot of use in wearables.  She talked about a hearing aid from Oticon, which is one of the Platinum sponsors of the project as well as an ear tag for tracking reindeer in Scandinavia. There’s also the Nordic Thingy 91 protyping board that uses Zephyr in its SDK by default and Kate expects that most of the interesting things that emerge with the Thingie will be running Zephyr.</p>
+      <ul>
+        <li>We've also highlighted the <a href="https://www.techradar.com/best/best-linux-distro-for-developers">best Linux distro for developers</a></li>
+      </ul>
+      <p>
+        <a href="https://www.techradar.com/news/computing">See more Computing news</a>
+      </p>
+    </article>
+  </body>
+</html>

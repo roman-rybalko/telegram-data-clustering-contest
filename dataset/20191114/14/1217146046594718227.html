@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://www.bleepingcomputer.com/news/security/new-threat-actor-impersonates-govt-agencies-to-deliver-malware/"/>
+    <meta property="og:site_name" content="BleepingComputer"/>
+    <meta property="article:published_time" content="2019-11-14T14:05:16+00:00"/>
+    <meta property="og:title" content="New Threat Actor Impersonates Govt Agencies to Deliver Malware"/>
+    <meta property="og:description" content="A new threat actor is using email to impersonate government agencies in the United States, Germany, and Italy to deliver ransomware, backdoors, and banking Trojans through malicious attachments."/>
+  </head>
+  <body>
+    <article>
+      <h1>New Threat Actor Impersonates Govt Agencies to Deliver Malware</h1>
+      <address><time datetime="2019-11-14T14:05:16+00:00">14 Nov 2019, 14:05</time> by <a rel="author" href="https://www.bleepingcomputer.com/author/lawrence-abrams/" target="_blank">Lawrence Abrams</a></address>
+      <figure>
+        <img src="https://www.bleepstatic.com/content/hl-images/2019/10/17/Phishing3.jpg"/>
+      </figure>
+      <p>A new threat actor is using email to impersonate government agencies in the United States, Germany, and Italy to deliver ransomware, backdoors, and banking Trojans through malicious attachments.</p>
+      <p>Since the end of October, Proofpoint researchers detected a new threat actor who has been impersonating the United States Postal Service, the German Federal Ministry of Finance, and the Italian Revenue Agency in malicious spam campaigns that deliver a variety of malware.</p>
+      <p>"Between October 16 and November 12, 2019, Proofpoint researchers observed the actor sending malicious email messages to organizations in Germany, Italy, and the United States, targeting no particular vertical but with recipients that were heavily weighted towards business and IT services, manufacturing, and healthcare," Proofpoint stated in <a href="https://www.proofpoint.com/us/threat-insight/post/ta2101-plays-government-imposter-distribute-malware-german-italian-and-us">a report</a> published today.</p>
+      <h3>Multiple campaigns targeting Germany</h3>
+      <p>Through October and into November, 2019, this threat actor has targeted Germany with malspam that impersonates the German Federal Ministry of Finance called "Bundeszentralamt fur Steuern",</p>
+      <p>These emails pretend to be a notification that the user is owed a tax refund and contains malicious Word document attachments that state they have information on how to request a refund.</p>
+      <figure>
+        <img src="https://www.bleepstatic.com/images/news/security/phishing/g/govt-agencies/Bundeszentralamt-s.jpg"/>
+        <figcaption>Bundeszentralamt fur Steuern malspam</figcaption>
+      </figure>
+      <p>If a user opens this attachment and enables its macros, Proofpoint states that Cobalt Strike, a legitimate pentesting tool commonly used by attackers as a backdoor, as well as the <a href="https://www.bleepingcomputer.com/news/security/maze-ransomware-now-delivered-by-spelevo-exploit-kit/">Maze Ransomware</a> will be installed on the victim's computer.</p>
+      <p>The researchers also stated that the campaign targeted IT support companies, which may have been an attempt to get backdoor access to an MSP so that the Maze Ransomware could be pushed out to the MSP's clients.</p>
+      <p>Further campaigns in October and November continued to target German recipients with similar phishing emails, with one campaign impersonating the German internet service provider 1&amp;1 Internet AG.</p>
+      <h3>Impersonating the Italian Ministry of Taxation</h3>
+      <p>On October 29th, Proofpoint detected a new campaign from this threat actor, but this time targeting users in Italy by impersonating the Italian Revenue Agency, or the Agenzia delle Entrate, </p>
+      <p>This email pretends to be about new tax and revenue guidelines that business and consumers must follow and advises recipients to open the attachment VERDI.doc to read about them.</p>
+      <figure>
+        <img src="https://www.bleepstatic.com/images/news/security/phishing/g/govt-agencies/agenzia-delle-entrate.jpg"/>
+        <figcaption>Agenzia delle Entrate malspam</figcaption>
+      </figure>
+      <p>When the user opens the malicious document, it will state that it is encrypted using RSA encryption and that the user must enable the content in order to decrypt the file.</p>
+      <figure>
+        <img src="https://www.bleepstatic.com/images/news/ransomware/m/maze/maze-ransomware/maldoc.jpg"/>
+        <figcaption>Malicious attachment</figcaption>
+      </figure>
+      <p>Once a user enables the content, the malicious macros execute that install the Maze Ransomware on to the victim's machine.</p>
+      <figure>
+        <img src="https://www.bleepstatic.com/images/news/ransomware/m/maze/maze-ransomware/desktop-background.jpg"/>
+        <figcaption>Maze desktop wallpaper</figcaption>
+      </figure>
+      <p>We <a href="https://www.bleepingcomputer.com/news/security/maze-ransomware-attacks-italy-in-new-email-campaign/">reported on this campaign in detail</a> when it occurred as it was quite large and was noticed by many security researchers.</p>
+      <h3>Fake United States Postal Service deliver banking Trojans</h3>
+      <p>Just recently, on November 12th, Proofpoint once again noticed a campaign from this same threat actor, but this time targeting the healthcare vertical in the USA.</p>
+      <p>In this campaign, the actor was sending emails that pretended to be from the United States Postal Service (USPS) that contained malicious Word doc attachments named "USPS_Delivery.doc".</p>
+      <p>Like the previous Italy campaign, this campaign's malicious documents pretended to be RSA encrypted and that the only way to view them was to "enable content".</p>
+      <figure>
+        <img src="https://www.bleepstatic.com/images/news/security/phishing/g/govt-agencies/usps.jpg"/>
+        <figcaption>Malicious USPS-themed document</figcaption>
+      </figure>
+      <p>If a user enabled the macros in this campaign, they would have the IceID banking Trojan installed on their computer, which will attempt to steal online banking credentials.</p>
+      <h3>Impersonating govt agencies is successful</h3>
+      <p>Using malspam campaigns that impersonate government agencies, convincing stolen branding, and look-alike domains to impersonate government websites have proven to be effective for this user.</p>
+      <p>"These spoofs are notable for using convincing stolen branding and lookalike domains of European taxation agencies and other public-facing entities such as Internet service providers. Most recently, the actor has attacked US organizations spoofing the United States Postal Service. The increasing sophistication of these lures mirrors improved social engineering and a focus on effectiveness over quantity appearing in many campaigns globally across the email threat landscape."</p>
+      <p>It is important to remember that government agencies will not communicate about sensitive information such as tax refunds via email.</p>
+      <p>If you receive an email with attachments that claims to be a government agency, it should immediately be considered suspicious and it is advised that you call the agency directly before opening any attachments or calling any numbers that may be listed.</p>
+    </article>
+  </body>
+</html>

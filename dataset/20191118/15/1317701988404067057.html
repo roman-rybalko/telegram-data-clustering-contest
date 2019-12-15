@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://www.deskmodder.de/blog/2019/11/18/nvidia-441-28-whql-studio-und-quadro-treiber-stehen-zum-download-bereit/"/>
+    <meta property="og:site_name" content="Deskmodder.de"/>
+    <meta property="article:published_time" content="2019-11-18T15:36:57+00:00"/>
+    <meta property="og:title" content="Nvidia 441.28 WHQL Studio und Quadro Treiber stehen zum Download bereit"/>
+    <meta property="og:description" content="Nvidia hat seinen Studio und Quadro Treiber auf die Version 441.28 aktualisiert. Gegenüber dem Game Ready Treiber richtet sich der Studio-Treiber eher an Designer und diejenigen, die mit Spielen ni…"/>
+  </head>
+  <body>
+    <article>
+      <h1>Nvidia 441.28 WHQL Studio und Quadro Treiber stehen zum Download bereit</h1>
+      <address><time datetime="2019-11-18T15:36:57+00:00">18 Nov 2019, 15:36</time> by <a rel="author" href="https://www.deskmodder.de/blog/author/moinmoin/" target="_blank">moinmoin</a></address>
+      <p>Nvidia hat seinen Studio und Quadro Treiber auf die Version 441.28 aktualisiert. Gegenüber dem Game Ready Treiber richtet sich der Studio-Treiber eher an Designer und diejenigen, die mit Spielen nichts am Hut haben.</p>
+      <figure>
+        <img src="https://www.deskmodder.de/blog/wp-content/uploads/2019/11/nvidia-44128-whql-375x360.jpg"/>
+      </figure>
+      <ul>
+        <li>[Avid Media Composer][OpenCL][OpenGL]: Der OpenGL / OpenCL-Treiber kann beim Beenden der Anwendung hängen bleiben. (Auch Quadro-Treiber)</li>
+        <li>[V-Ray][OptiX]: Leistungsrückgang mit V-Ray-Rendering (Auch Quadro-Treiber)</li>
+        <li>[IRay]: Einige Anwendungen, die IRay verwenden, stürzen ab, wenn sie in einer Multi-GPU-Konfiguration verwendet werden.</li>
+        <li>[OptiX]: OptiX kann keine GPUs für die Verwendung auswählen, wenn sich alle GPUs im System im TCC-Modus befinden</li>
+        <li>[OptiX]: Anwendungen, die mit OptiX SDK 7.0.0 erstellt wurden, geben bei Verwendung von OptixBuildInputTriangleArray::preTransform eine Fehlermeldung aus</li>
+        <li>[OptiX denoiser]: Bei der Verwendung des Denoisers und der Angabe von Color + Albedo + Normal treten Fehler auf.</li>
+        <li>[OptiX denoiser]: Der Alpha-Denoising-Pfad unterstützt keinen Mischmodus.</li>
+        <li>[OptiX]: OptiX-Fehler treten bei der Angabe von Normalen + Albedo für die Eingabe auf.</li>
+        <li>[OptiX]: Noinline-Funktionsaufrufe verwenden kein benutzerdefiniertes ABI.</li>
+        <li>[OptiX]: Die Handhabung der Rauschunterdrückung verhindert die Benutzerkontrolle.</li>
+        <li>[OptiX denoiser]: OptiX Denoiser erzeugt kleine Farbwerte für schwarze Pixel und Zero Alpha.</li>
+      </ul>
+      <h3>Info und Download:</h3>
+      <ul>
+        <li>
+          <a href="http://us.download.nvidia.com/Windows/441.28/441.28-win10-nsd-release-notes.pdf">Studio 441.28-win10-nsd-release-notes.pdf</a>
+        </li>
+        <li>
+          <a href="http://us.download.nvidia.com/Windows/Quadro_Certified/441.28/441.28-win10-win8-win7-quadro-release-notes.pdf">Quadro 441.28/441.28-win10-win8-win7-quadro-release-notes.pdf</a>
+        </li>
+        <li><b>Quadro:</b> <a href="http://de.download.nvidia.com/Windows/Quadro_Certified/441.28/441.28-quadro-desktop-notebook-win10-64bit-international-whql.exe">441.28-quadro-desktop-notebook-win10-64bit-international-whql.exe</a></li>
+        <li><b>Studio Standard</b> <a href="http://international.download.nvidia.com/Windows/441.28/441.28-desktop-win10-64bit-international-nsd-whql.exe">441.28-desktop-win10-64bit-international-nsd-whql.exe</a></li>
+        <li><b>Studio DCH</b> <a href="http://international.download.nvidia.com/Windows/441.28/441.28-desktop-win10-64bit-international-nsd-dch-whql.exe">441.28-desktop-win10-64bit-international-nsd-dch-whql.exe</a></li>
+        <li><b>Studio Notebook Standard</b> <a href="http://international.download.nvidia.com/Windows/441.28/441.28-notebook-win10-64bit-international-nsd-whql.exe">441.28-notebook-win10-64bit-international-nsd-whql.exe</a></li>
+        <li><b>Studio Notebook DCH</b> <a href="http://international.download.nvidia.com/Windows/441.28/441.28-notebook-win10-64bit-international-nsd-dch-whql.exe">441.28-notebook-win10-64bit-international-nsd-dch-whql.exe</a></li>
+        <li>Auswahl: <a href="https://www.geforce.com/drivers">geforce.com/drivers</a></li>
+        <li>
+          <a href="https://nvidia.custhelp.com/app/answers/detail/a_id/4828">nvidia.custhelp.com</a>
+        </li>
+        <li>Wer seinen Treiber selbst zusammen basteln will: <a href="https://www.deskmodder.de/blog/2018/10/01/nvslimmer-entfernt-nvidia-grafiktreiber-komponenten/">NVSlimmer entfernt Nvidia Grafiktreiber Komponenten</a></li>
+        <li>Auch interessant: <a href="https://www.deskmodder.de/wiki/index.php?title=Alte_Treiber_richtig_l%C3%B6schen_DriverStore_Explorer_Windows_10">Alte Treiber richtig löschen DriverStore Explorer Windows 10</a></li>
+        <li><b>Als Info:</b> Der Standardtreiber ist der, den ihr selbst installiert habt. Der DCH Treiber (Declarative Componentized Hardware supported apps) ist ein neues Windows 10 Treiberpaket, das von OEMS vorinstalliert wurde und über Windows Update aktualisiert wird. Die Komponenten sind in beiden Paketen gleich. Nur wenn man einen Standard Treiber installiert hat, kann man nicht den DCH Treiber installieren und umgekehrt. Dann muss dieser erst vollständig deinstalliert werden.</li>
+      </ul>
+    </article>
+  </body>
+</html>

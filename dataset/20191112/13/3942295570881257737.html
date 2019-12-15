@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://www.anti-malware.ru/news/2019-11-12-1447/31278"/>
+    <meta property="og:site_name" content="Anti-Malware"/>
+    <meta property="article:published_time" content="2019-11-12T13:03:00+00:00"/>
+    <meta property="og:title" content="Microsoft устранила баг Windows, скрывающий функцию отсрочки обновлений"/>
+    <meta property="og:description" content="Microsoft устранила баг Windows 10 1903, благодаря которому в настройках не отображалась опция, позволяющая отложить установку обновлений Windows на более поздний срок. Ожидается, что патч выйдет"/>
+  </head>
+  <body>
+    <article>
+      <h1>Microsoft устранила баг Windows, скрывающий функцию отсрочки обновлений</h1>
+      <address><time datetime="2019-11-12T13:03:00+00:00">12 Nov 2019, 13:03</time> by <a rel="author">Олег Иванов</a></address>
+      <figure>
+        <img src="https://www.anti-malware.ru/files/styles/imagesize400w/public/images/source/snimok_ekrana_2019-11-12_v_12.51.35.png?itok=jnIEYP_5"/>
+      </figure>
+      <p><a href="https://www.anti-malware.ru/companies/microsoft">Microsoft</a> устранила баг Windows 10 1903, благодаря которому в настройках не отображалась опция, позволяющая отложить установку обновлений Windows на более поздний срок. Ожидается, что патч выйдет сегодня.</p>
+      <p>Накопительное обновление, устраняющее вышеописанную проблему, отслеживается под номером KB4522355. Предполагается, что оно должно выйти с набором ежемесячных патчей во второй вторник ноября.</p>
+      <p>Многие знакомы с опцией отсрочки установки обновлений в Windows 10 1903. С её помощью можно отложить установку апдейтов, добавляющих новые функции, на срок до 365 дней.</p>
+      <figure>
+        <img src="https://www.anti-malware.ru/files/defer-updates-settings.jpg"/>
+      </figure>
+      <p>Пользователи этой версии операционной системы обратили внимание на баг, из-за которого этот пункт просто пропадал из настроек.</p>
+      <figure>
+        <img src="https://www.anti-malware.ru/files/defer-updates-settings-missing.jpg"/>
+      </figure>
+      <p>Чтобы устранить последствия бага, пользователям сейчас приходится задействовать реестр Windows: значения «DeferFeatureUpdatesPeriodInDays» и «DeferQualityUpdatesPeriodInDays» в ключе HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\WindowsUpdate\UX\Settings.</p>
+      <figure>
+        <img src="https://www.anti-malware.ru/files/registry-settings.jpg"/>
+      </figure>
+      <p>Разработчики обещают, что с выходом KB4522355 данная проблема больше не будет беспокоить пользователей. Поскольку этот апдейт, судя по всему, будет необязательным, всем затронутым юзерам надо следить, чтобы он был инсталлирован в ОС.</p>
+      <p>Также на днях был обнаружен новый баг в Windows 10 версии 1903 — <a href="https://www.anti-malware.ru/news/2019-11-12-1447/31275">некорректно отображаются иконки подключённых USB-накопителей в Проводнике</a>. Такое поведение ОС может проявляться даже в том случае, если накопитель подключён абсолютно правильно.</p>
+      <related>
+        <h4>Читайте также</h4>
+        <a href="https://www.anti-malware.ru/news/2019-11-06-111332/31230"/>
+        <a href="https://www.anti-malware.ru/news/2019-11-06-1447/31221"/>
+        <a href="https://www.anti-malware.ru/news/2019-11-08-1447/31244"/>
+      </related>
+    </article>
+  </body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://www.bleepingcomputer.com/news/software/google-begins-testing-extension-manifest-v3-in-chrome-canary/"/>
+    <meta property="og:site_name" content="BleepingComputer"/>
+    <meta property="article:published_time" content="2019-11-01T21:06:34+00:00"/>
+    <meta property="og:title" content="Google Begins Testing Extension Manifest V3 in Chrome Canary"/>
+    <meta property="og:description" content="Google has begun testing their upcoming extension manifest V3 in the the latest Chrome Canary build, and with this initial 'alpha' release, developers can begin testing their extensions under the upcoming specification."/>
+  </head>
+  <body>
+    <article>
+      <h1>Google Begins Testing Extension Manifest V3 in Chrome Canary</h1>
+      <address><time datetime="2019-11-01T21:06:34+00:00">01 Nov 2019, 21:06</time> by <a rel="author" href="https://www.bleepingcomputer.com/author/lawrence-abrams/" target="_blank">Lawrence Abrams</a></address>
+      <figure>
+        <img src="https://www.bleepstatic.com/content/hl-images/2017/08/17/GoogleChrome.png"/>
+      </figure>
+      <p>Google has begun testing their upcoming extension manifest V3 in the the latest Chrome Canary build, and with this initial 'alpha' release, developers can begin testing their extensions under the upcoming specification.</p>
+      <p>In a <a href="https://groups.google.com/a/chromium.org/forum/#!topic/chromium-extensions/hG6ymUx7NoQ">post</a> to the Chromium Extensions Google group, Simeon Vincent, a Google Developer Advocate for Chrome Extensions, stated that as of October 31st a developer preview of the extension manifest v3 is now available in the Chrome 80 Canary build.</p>
+      <p>"Think of it as an early alpha. The "dev preview" is the first opportunity for extensions developers to start experimenting with a work-in-progress version of the MV3 platform.</p>
+      <p>We're far from finished with the implementation work on the MV3 platform, so first and foremost expect changes. </p>
+      <p>As for what's changing, the four big-ticket items in MV3 are:</p>
+      <ul>
+        <li>Host permissions changes</li>
+        <li>Blocking webRequest -&gt; declarativeNetRequest</li>
+        <li>Background page -&gt; service workers</li>
+        <li>Remotely hosted code restrictions"</li>
+      </ul>
+      <p>The <b>declarativeNetRequest</b> API has already been available for experimentation in Chrome Canary and we're continuing to iterate on it's capabilities</p>
+      <p>As part of this launch, Google has created a <a href="https://developer.chrome.com/extensions/migrating_to_manifest_v3">Migrating to Manifest V3 guide</a> that developers can use to migrate their existing extensions.</p>
+      <p>The most controversial aspect of the extension manifest v3 is the upcoming changes to the webRequest API. In v3, Google has changed the API so that extensions can only monitor browser connections, but not modify any of the content before it's displayed.</p>
+      <p>Instead Google wants developers to use the declarativeNetRequest API, which has the browser, not the extension, strip content or resources from a visited web sites.  This API, though, has a limit of 30,000 rules that can be created.</p>
+      <p>Unfortunately, this change will break popular ad blockers <a href="https://www.bleepingcomputer.com/news/security/chrome-extension-manifest-v3-may-break-ublock-origin-content-blocker/">such as uBlock Origin</a>, which rely on the original functionality of the webRequest API and need more rules than are available in the declarativeNetRequest API.</p>
+      <h3>Testing changes in extension manifest v3</h3>
+      <p>If you are using the current Chrome Canary build you can test the new changes by creating your own extension and setting its manifest version to 3.</p>
+      <p>BrowserNative.com, who <a href="https://browsernative.com/chrome-extension-maifest-v3-4861/">first reported</a> about the developer preview launch, shared with BleepingComputer a test extension that can be used to test the new changes.</p>
+      <p>For example, in the extension manifest.json file below, the version has been set to 3 and it's using a background.scripts call.</p>
+      <figure>
+        <img src="https://www.bleepstatic.com/images/news/web-browsers/chrome/chrome-80/manifest-v3/background-scripts-manifest.jpg"/>
+        <figcaption>Background.scripts manifest</figcaption>
+      </figure>
+      <p>As background.scripts is no longer supported, trying to load the extension will generate an error, as shown below, that states you need to "use the "background.service_worker" key instead".</p>
+      <figure>
+        <img src="https://www.bleepstatic.com/images/news/web-browsers/chrome/chrome-80/manifest-v3/background-scripts-error.jpg"/>
+        <figcaption>Error when using unsupported APIs</figcaption>
+      </figure>
+      <p>If you switch the extension to use a service_worker instead then the extension loads properly into Google Chrome.</p>
+      <figure>
+        <img src="https://www.bleepstatic.com/images/news/web-browsers/chrome/chrome-80/manifest-v3/background-service-worker-manifest.jpg"/>
+        <figcaption>Background.service_worker manifest</figcaption>
+      </figure>
+      <p>All extension developers should consult the migration guide to make sure their extensions will work properly with the upcoming manifest v3 changes.</p>
+      <p>While they are now in preview, Google expects the manifest v3 to go live in 2020 with the v2 end of life to be determined in the future.</p>
+    </article>
+  </body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://edge9.hwupgrade.it/news/cloud/google-cloud-next-tutte-le-novita-presentate-a-londra_85675.html"/>
+    <meta property="og:site_name" content="Hardware Upgrade"/>
+    <meta property="article:published_time" content="2019-11-22T19:21:01+00:00"/>
+    <meta property="og:title" content="Google Cloud Next: tutte le novità presentate a Londra"/>
+    <meta property="og:description" content="Durante il Cloud Day di Londra Google ha annunciato le nuove funzionalità di sicurezza, gli aggiornamenti a G Suite ed Explainable AI, un prodotto che che aiuta gli sviluppatori a comprendere gli output dei modelli di machine learning"/>
+  </head>
+  <body>
+    <article>
+      <h1>Google Cloud Next: tutte le novità presentate a Londra</h1>
+      <address><time datetime="2019-11-22T19:21:01+00:00">22 Nov 2019, 19:21</time> by <a rel="author">Alberto Falchi</a></address>
+      <p>
+        <b>Durante il Cloud Day di Londra Google ha annunciato le nuove funzionalità di sicurezza, gli aggiornamenti a G Suite ed Explainable AI, un prodotto che che aiuta gli sviluppatori a comprendere gli output dei modelli di machine learning</b>
+      </p>
+      <p>L'edizione UK del Google Cloud Day 19 è iniziata con il keynote di <b>Thomas Kurian, CEO di Google Cloud</b>, che ha colto l'occasione per rimarcare l'impegno dell'azienda in Europa, anche per quanto riguarda le <b>soluzioni cloud</b>. Durante l'anno è stata lanciata una nuova Region europea, a Zurigo, ed è già prevista la successiva, in <b>Polonia</b>.</p>
+      <figure>
+        <iframe src="https://www.youtube.com/embed/jJ1C43A90fE" width="600" height="388" data-service="Youtube" scrolling="no"/>
+      </figure>
+      <p>Un'espansione necessaria a soddisfare la crescente richiesta ma a anche a garantire il rispetto delle norme europee: i dati dei clienti in Europa non possono uscire dai confini UE. Per garantire il controllo di queste informazioni, Google ha migliorato il suo <b>sistema di gestione delle chiavi crittografiche</b> introducendo <a href="https://cloud.google.com/blog/products/identity-security/new-security-tools-for-google-cloud-and-g-suite">External Key Manager</a>, che presto sarà disponibile in versione beta. </p>
+      <figure>
+        <img src="https://www.hwupgrade.it/immagini/GCP_key_manager.png"/>
+      </figure>
+      <h3>Google Cloud è sempre più sicuro</h3>
+      <p><b>External Key Manager</b> lavora in parallelo con <a href="https://cloud.google.com/kms/">Cloud KMS</a> e consente di cifrare i dati in <a href="https://cloud.google.com/bigquery/">BigQuery</a> and <a href="https://cloud.google.com/compute/">Compute Engine</a> mantenendo le chiavi crittografiche su un sistema <b>esterno all'infrastruttura di Google</b>. Un approccio che migliora la sicurezza dal momento che permette di separare i dati dalle loro chiavi d'accesso. La funzionalità <a href="https://cloud.google.com/blog/products/identity-security/control-access-to-gcp-data-with-key-access-justifications">Key Acces Justifications</a> di External Key Manager impone di dare una giustificazione ogni volta che viene richiesto l'accesso alle chiavi di decriptazioni, fondamentalmente permettendo agli amministratori di <b>approvare o negare ogni singola richiesta</b>, anche attraverso procedure di automazione. <br/><br/>Sempre in ambito sicurezza è interessante notare che ora Google Cloud Armor può contare su <b>nuove funzionalità WAF</b> (Web Application Firewall) che include una serie di regole predefinite per <b>mitigare i principali rischi di sicurezza delle web app</b>.</p>
+      <figure>
+        <img src="https://www.hwupgrade.it/immagini/cloud_armor.png"/>
+      </figure>
+      <p>Il nuovo servizio di <b><a href="https://cloud.google.com/vpc/docs/packet-mirroring">Packet Mirroring </a></b>è invece studiato per <b>analizzare a fondo il traffico di rete alla ricerca di potenziali minacce</b>, ed è compatibile con soluzioni esterne, come quelle proposte da <a href="https://awakesecurity.com/technology-partners/google-cloud/">Awake Security</a>, <a href="https://www.checkpoint.com/products/iaas-public-cloud-security/">Check Point</a>, <a href="https://www.cisco.com/go/stealthwatch-cloud">Cisco</a>, <a href="https://www.corelight.com/">Corelight</a>, <a href="https://www.cpacket.com/products/ccloud/">cPacket Networks</a>, <a href="http://extrahop.com/gcp">ExtraHop Networks</a>, <a href="https://www.flowmon.com/en/solutions/network-and-cloud-operations/cloud-traffic-visibility">Flowmon</a>, <a href="https://www.ixiacom.com/products/cloudlens-saas">Ixia by Keysight</a>, <a href="https://www.netscout.com/gcp/packetmirroring">Netscout</a>, e <a href="https://live.paloaltonetworks.com/gcp">Palo Alto Networks</a>.</p>
+      <figure>
+        <iframe src="https://www.youtube.com/embed/3CI27ge-R5s" width="600" height="388" data-service="Youtube" scrolling="no"/>
+      </figure>
+      <h3>Explainable AI, uno strumento per aiutare noi umani a capire come "pensano" le AI</h3>
+      <p>L'intelligenza artificiale è sempre più usata dalle aziende di ogni dimensione ma non sempre è semplice integrare i modelli di machine learning all'interno di un business, in particolare in quelle situazioni dove la certezza del risultato è di importanza critica. I sistemi basati su AI sono in grado di analizzare e trovare correlazioni all'interno di una mole enorme di dati ma non sempre è facile comprendere perché il modello abbia suggerito certe decisioni. Le nuove funzioni di <b>AI Explanations</b> permettono di <b>quantificare il peso di ogni singolo fattore nelle scelte effettuate</b> <b>da un sistema di machine learning</b>, consentendo ai programmatori di comprendere il motivo delle scelte e, se necessario, di adeguare il modello così da avere output più precisi. </p>
+      <p>Per incrementare la trasparenza dei modelli di AI e aiutare gli sviluppatori a comprendere meglio pregi e difetti dei modelli di apprendimento, Google ha introdotto le <b><a href="https://modelcards.withgoogle.com/about">Model Cards</a></b>, dei <b>documenti che accompagnano i modelli di machine learning</b> e che ne indicano <b>sia performance sia le limitazioni</b>, andando in contro agli sviluppatori che avranno ulteriori basi per prendere decisioni informate.</p>
+      <h3>Google Cloud Next 19: le novità di G Suite </h3>
+      <p>Fra i servizi cloud di Google, <b>G Suite</b> è probabilmente quello più noto e utilizzato, sia da aziende sia da privati, e la grande G continua a investire per migliorarlo. Le funzionalità recentemente introdotte nella G-Suite si <b>basano sull'AI</b>. La prima di queste è <b><a href="https://services.google.com/fb/forms/smartcomposeindocsbeta/">Smart Compose</a></b>, un'evoluzione della funzione di auto-completamento delle frasi introdotta un annetto fa con Gmail e che ha permesso ai suoi utenti di <b>risparmiare, complessivamente, 2 miliardi di "battute" a settimana.</b></p>
+      <p>Grazie all'uso di reti neurali, il <b>correttore automatico diventerà sempre più efficace</b> e a breve verranno introdotte nuove funzioni che si appoggiano a <b>Google Search</b> così da apprendere costantemente nuoti termini, frasi e modi di dire, per lo meno in inglese, che sarà la prima lingua supportata. </p>
+      <p>L'assistente vocale, Google Assistant, a breve sarà in grado di integrarsi più profondamente con G Suite, e consentirà di usare comandi vocali per gestire il calendario (per esempio per riprogrammare un appuntamento, o per crearne uno nuovo). L'assistente vocale sarà infine disponibile anche per <a href="https://gsuite.google.com/products/hangouts-meet-hardware/">Asus Hangout Meet Hardware</a>, che potrà essere comodamente gestito tramite <b>comandi vocali</b>.</p>
+      <figure>
+        <img src="https://www.hwupgrade.it/immagini/meet%20hardware.jpg"/>
+      </figure>
+    </article>
+  </body>
+</html>

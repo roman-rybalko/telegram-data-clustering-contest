@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://blog.ethereum.org/2019/11/21/eth2-quick-update-no-4/"/>
+    <meta property="og:site_name" content="blog.ethereum.org"/>
+    <meta property="article:published_time" content="2019-11-21T00:00:00+00:00"/>
+    <meta property="og:title" content="eth2 quick update no. 4"/>
+    <meta property="og:description" content="Welcome to the fourth installment of eth2 quick update. There are a lot of moving pieces to talk about this week. Other than the heroic eth2 client development going on, these are the highlights: tldr; Grant to Sigma Prime for eth2 differential fuzzing Light Client Task Force is formed Some..."/>
+  </head>
+  <body>
+    <article>
+      <h1>eth2 quick update no. 4</h1>
+      <address><time datetime="2019-11-21T00:00:00+00:00">21 Nov 2019</time> by <a rel="author">Danny Ryan</a></address>
+      <figure>
+        <img src="https://blog.ethereum.org/img/2019/10/kumiko_background.jpeg"/>
+      </figure>
+      <p>Welcome to the fourth installment of <i>eth2 quick update</i>. There are a lot of moving pieces to talk about this week. Other than the heroic eth2 client development going on, these are the highlights:</p>
+      <p>tldr;</p>
+      <ul>
+        <li>Grant to Sigma Prime for <a href="https://github.com/sigp/beacon-fuzz/">eth2 differential fuzzing</a></li>
+        <li><a href="https://medium.com/chainsafe-systems/ethereum-light-client-task-force-go-99485011b095">Light Client Task Force</a> is formed</li>
+        <li>Some notes on the uni-directional bridge between eth1 and eth2</li>
+      </ul>
+      <h3>Differential fuzzing grant</h3>
+      <p>Sigma Prime has been awarded a grant to lead the <a href="https://github.com/sigp/beacon-fuzz/">differential fuzzing effort</a> for eth2 clients. This effort is critical to the success of launching a multi-client network by aiding in catching consensus issues prior to mainnet.</p>
+      <p>The act of “fuzzing” is the act of throwing many random inputs at a piece of software to see how it reacts. When fuzzing a single piece of software, the goal is often to find inputs that lead to unexpected crashes. When we find such inputs, we then figure out what went wrong and harden the software to this type of input.</p>
+      <p><i>Differential</i> fuzzing is a bit different. Instead of explicitly looking for crashes, we look for instances in which different implementations of a protocol have a different output for the same input. In a blockchain context, we use differential fuzzing to find cases in which a series of blocks leads to a different resulting state on two different clients. Ideally in production there are no such cases.</p>
+      <h3>Light client task force</h3>
+      <p>Chainsafe/<a href="https://github.com/ChainSafe/lodestar">Lodestar</a>, the recipients of an Ethereum Foundation grant for research and development on eth2 light clients, has formed the <a href="https://medium.com/chainsafe-systems/ethereum-light-client-task-force-go-99485011b095">Light Client Task Force</a>. This group has tasked themselves with ensuring that light clients are first class citizens in eth2. To this end, they are hosting a <a href="https://github.com/ChainSafe/lodestar/issues/555">monthly call</a> aimed at driving light client research, standards, specs, and education.</p>
+      <p>The need for a rich ecosystem of light clients and light client servers is only amplified in a sharded protocol like eth2. Even if a client is syncing some subset of the protocol (e.g. just a couple of shards), a user will very often need to get information about accounts, contracts, and the general state of things on another shard. A client could inefficiently sync the entire additional shard, but more often than not, lightly requesting information about specific accounts on the shard with succinct proofs will be the way to go.</p>
+      <p>Tune in to the next <a href="https://github.com/ChainSafe/lodestar/issues/555">Light Client Task Force call</a> to stay up-to-date on all things light in eth2.</p>
+      <h3>eth1 -&gt; eth2</h3>
+      <p>In the early days of eth2, the transfer of ether from the existing ethereum chain (eth1) into the new beacon chain (eth2) will be uni-directional. That is, the ether moved into staking on eth2 will not be transferable (to start) back to eth1. The choice of a single directional transfer into validation is in an effort to minimize the risk profile that eth2 induces upon eth1, and to allow for a quicker development cycle on eth2 without having to fork eth1 in the process. There is some movement around creating a bi-directional bridge, but I’ll save discussion of the bridge mechanics and the trade-offs for a later post. Today, I’d like to get more into <i>how</i> this uni-directional transfer works and how it can be safely implemented without changing eth1.</p>
+      <p>On the existing ethereum PoW chain, we will deploy the <a href="https://github.com/ethereum/eth2.0-specs/blob/master/deposit_contract/contracts/validator_registration.v.py">eth2 validator contract</a>. This contract has a single function called <code>deposit</code> which takes in a number of parameters to initialize a new validator (e.g. public key, withdrawal credentials, an ETH deposit, etc). There is no <code>withdrawal</code> function on this contract. Barring a fork to add in a bi-directional bridge, this deposited ETH now only exists in eth2 on the beacon chain.</p>
+      <p>It is then the validators’ responsibility on the beacon chain to come to consensus on the state of this contract such that new deposits can be processed. This is done by eth2 block proposers embedding recent eth1 data into a beacon block field called <code>eth1_data</code>. When enough block proposers during a voting period agree on recent <code>eth1_data</code>, this data is enshrined in the beacon chain state allowing for new deposits to be processed.</p>
+      <p>An important note about this mechanism is that the <code>eth1_data</code> is deep in the eth1 PoW chain – ~1000 blocks of “follow distance”. This follow distance induces a high latency in processing new validator deposits, but provides a high degree of safety in the coupling of these two systems. The eth1 chain would have to re-org deeper than 1000 blocks to break the link, and in such a case would require some manual intervention to overcome.</p>
+      <p>We are researching and prototyping the utilization of the beacon chain to finalize eth1 (i.e. the finality gadget). This would require eth1 to defer its fork choice ultimately to the beacon chain, gaining security from the PoS validators, and allowing for a much quicker eth1 to eth2 deposits. The finality gadget also opens up other fun things such as the bi-directional bridge and exposing the eth2 data-layer to eth1. More on all of this in a later post :rocket:.</p>
+    </article>
+  </body>
+</html>

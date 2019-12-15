@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://www.muyseguridad.net/2019/11/20/dns-sobre-https-windows-10/"/>
+    <meta property="og:site_name" content="MuySeguridad"/>
+    <meta property="article:published_time" content="2019-11-19T23:03:46+00:00"/>
+    <meta property="og:title" content="Microsoft habilitará DNS sobre HTTPS directamente en Windows 10"/>
+    <meta property="og:description" content="Microsoft soportará DNS sobre HTTPS directamente en Windows 10, ofreciendo mayor privacidad en Internet desde el sistema operativo"/>
+  </head>
+  <body>
+    <article>
+      <h1>Microsoft habilitará DNS sobre HTTPS directamente en Windows 10</h1>
+      <address><time datetime="2019-11-19T23:03:46+00:00">19 Nov 2019, 23:03</time> by <a rel="author">Juan Ranchal</a></address>
+      <p>DNS sobre HTTPS es un -controvertido- protocolo de seguridad en Internet que <b>cifra las conexiones DNS y las oculta sobre el tráfico HTTPS común</b>, haciendo imposible que los ISP espíen el tráfico de Internet y sepan qué sitios web está visitando un cliente. Hay que recordar que actualmente y de manera general las solicitudes de DNS se envían a través de conexiones UDP de texto sin formato. </p>
+      <p>Además de los aspectos de <b>mejora de la privacidad</b>, prevención de las escuchas ilegales y la manipulación de los datos del DNS a través de <a href="https://es.wikipedia.org/wiki/Ataque_de_intermediario">ataques de intermediario</a>, esta tecnología también mejora el rendimiento sobre las resoluciones de los sistemas de nombres de dominio de los ISP, a veces muy lentas. </p>
+      <p>El protocolo <a href="https://es.wikipedia.org/wiki/DNS_mediante_HTTPS">DNS sobre HTTPS</a> (DpH – IETF RFC8484) puede integrarse directamente en las aplicaciones, lo que permite que cada una de ellas use sus propios solucionadores de DNS en lugar de depender del sistema operativo. La tecnología se está probando actualmente en el navegador web <a href="https://www.muyseguridad.net/2019/01/11/google-dns/">Chrome de Google</a> y ya está disponible en el <a href="https://www.muycomputer.com/2019/09/08/firefox-habilitar-dns-over-https/">Firefox de Mozilla</a>. </p>
+      <p>Ahora, Microsoft <a href="https://techcommunity.microsoft.com/t5/Networking-Blog/Windows-will-improve-user-privacy-with-DNS-over-HTTPS/ba-p/1014229">ha anunciado</a> que ingenieros de Windows Core Networking desarrollarán esta tecnología directamente en Windows 10 y lo implementarán a nivel de sistema operativo, <i>«cerrando una de las últimas transmisiones de nombres de dominio de texto sin formato en el tráfico web común»</i>.</p>
+      <p>Microsoft señala que la adopción del DNS cifrado en Windows <b>ayudará a mejorar el ecosistema general de Internet</b>. <i>«Muchos suponen que el cifrado de DNS requiere la centralización de DNS. Esto solo es cierto si la adopción de DNS cifrado no es universal. Para mantener el DNS descentralizado, será importante que los sistemas operativos del cliente (como Windows) y los proveedores de servicios de Internet </i><i><a href="https://www.eff.org/deeplinks/2019/09/encrypted-dns-could-help-close-biggest-privacy-gap-internet-why-are-some-groups">adopten ampliamente el DNS encriptado</a>«</i>.</p>
+      <p>En Firefox, actualmente, los usuarios pueden configurar Cloudflare como su proveedor de DNS sobre HTTPS, eliminando completamente a los ISP del conocimiento del tráfico de su red. Las empresas que ofrecen una política de resolución de DNS legalmente vinculante que limita estrictamente su uso y la retención de datos pueden unirse a la lista. Los usuarios pueden deshabilitar DoH en Firefox para manejar ciertas situaciones. </p>
+      <h3>Protocolo controvertido</h3>
+      <p><b>La tecnología es controvertida</b>, ya que podría evitar que las empresas administren el tráfico de su red, pero Microsoft señala que vale la pena el precio, explicando que <i>«deben tratar la privacidad como un derecho humano y tener una seguridad cibernética integrada en los productos»</i>.</p>
+      <p>En países como Reino Unido, esta tecnología de privacidad tiene una <a href="https://www.ispa.org.uk/ispa-announces-finalists-for-2019-internet-heroes-and-villains-trump-and-mozilla-lead-the-way-as-villain-nominees/">fuerte oposición</a> de los ISP o los servicios de seguridad, ya que «pasaría por <i>alto las obligaciones de filtrado del Reino Unido y los controles parentales, socavando los estándares de seguridad de Internet en el Reino Unido». </i>El servicio de seguridad GCHQ del Reino Unido <i>«ha comentado que impedirá las investigaciones policiales y socavará las leyes que obligan a los ISP a bloquear ciertos sitios web»</i>. </p>
+      <p>Es seguro que este DNS sobre HTTPS directamente en Windows 10 no va a gustar en ciertos ámbitos y ciertamente convendría resolver su potencial problemática de seguridad sobretodo en empresas, pero la <a href="https://www.muyseguridad.net/?s=privacidad">privacidad</a> se ha convertido de un tiempo a esta parte en una <b>exigencia de la mayoría de usuarios</b> ante los desmanes de espionaje masivo y los proveedores de software tienen que garantizar un derecho fundamental en Internet.</p>
+    </article>
+  </body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://www.adslzone.net/esenciales/whatsapp/abrir-copia-seguridad-whatsapp-pc/"/>
+    <meta property="og:site_name" content="ADSLZone"/>
+    <meta property="article:published_time" content="2019-11-10T15:00:13+00:00"/>
+    <meta property="og:title" content="Cómo leer los mensajes de una copia de seguridad de WhatsApp desde el ordenador"/>
+    <meta property="og:description" content="Tutorial con los pasos a seguir para leer los mensajes de una copia de seguridad de WhatsApp desde el ordenador"/>
+  </head>
+  <body>
+    <article>
+      <h1>Cómo leer los mensajes de una copia de seguridad de WhatsApp desde el ordenador</h1>
+      <address><time datetime="2019-11-10T15:00:13+00:00">10 Nov 2019, 15:00</time> by <a rel="author">Roberto Adeva</a></address>
+      <p>El hecho de que <b>WhatsApp</b> se haya convertido en el método más utilizado para comunicarnos con nuestros familiares, amigos o compañeros desde el móvil, ha provocado que muchos usuarios guarden <b>información importante o confidencial en sus chats</b>. Información que probablemente no quieran perder, en cuyo caso, es importante comprobar que tengamos programada una copia de seguridad de WhatsApp a diario. Por defecto, la aplicación de mensajería realiza una copia de seguridad diaria de nuestros mensajes que se guarda en la nube y que también guarda una copia en el almacenamiento interno de nuestro teléfono para que podamos recuperar nuestros mensajes en un momento determinado. Sin embargo, es probable que en algún momento te hayas planteado<b> cómo abrir una copia de seguridad en el PC</b> para leer los mensajes desde el ordenador. Si quieres saber cómo hacerlo, te lo mostramos a continuación.</p>
+      <p>Las copias de seguridad que se realizan de forma automática y que se guardan en Google Drive o iCloud, en función de la plataforma de nuestro móvil, sirven para recuperar todos nuestros mensajes cuando cambiamos de teléfono o reinstalamos WhatsApp en nuestro móvil. Sin embargo, si accedemos a nuestra cuenta de Google Drive o iCloud, esa copia de seguridad <b>no es visible</b> y por lo tanto, no podremos descargarla ni acceder a ella.</p>
+      <p>Por otro lado, la copia de seguridad que se guarda en la memoria interna de nuestro teléfono está encriptada, por lo que tampoco resulta fácil acceder a ella ni desde el móvil ni desde el PC para leer los mensajes guardados en ella. Si somos usuarios de iPhone, lo cierto es que el entorno de Apple no nos ofrece manera de hacer esto, mientras que si nuestro smartphone cuenta con sistema operativo <b>Android</b>, tenemos algunas alternativas para poder <b>abrir una copia de seguridad de Whatsapp en nuestro PC</b>.</p>
+      <h3>Cómo abrir una copia de seguridad de WhatsApp en el PC sin root</h3>
+      <p>En el caso de que no hayamos hecho root en nuestro móvil Android, estos es todo lo que vamos a necesitar para poder leer los mensajes de una copia de seguridad de WhatsApp desde el PC:</p>
+      <ul>
+        <li><b>Java</b> instalado en el equipo</li>
+        <li>Tener <a href="https://codeload.github.com/EliteAndroidApps/WhatsApp-Key-DB-Extractor/zip/master">ADB</a> (Android Debug Bridge) instalado en el PC</li>
+        <li>Descargar el script <a href="https://codeload.github.com/EliteAndroidApps/WhatsApp-Key-DB-Extractor/zip/master">WhatsAppKeyDBExtractor</a></li>
+        <li>Descargar e instalar <a href="https://github.com/andreas-mausch/whatsapp-viewer/releases/tag/v1.12">WhatsApp Viewer</a> en el ordenador</li>
+        <li>Con con<b> Android 7 o una versión anterior</b> en el móvil</li>
+      </ul>
+      <p>Básicamente, lo que necesitamos para poder abrir una copia de seguridad de WhatsApp en el PC es la <b>base de datos del backup</b> (donde se encuentran todos los mensajes) y el <b>archivo Key</b> que nos permite descifrar dicha base de datos. Para conseguir esto, debemos seguir básicamente estos pasos:</p>
+      <ul>
+        <li>Conectar el móvil al PC</li>
+        <li>Indicar que vamos a realizar una<b> transferencia de datos</b></li>
+        <li>Descargar el archivo<b> msgstore.db.crypt12</b> con la base de datos de los mensajes de la copia de seguridad</li>
+        <li>Activar el <b>modo desarrollador</b> en el móvil</li>
+        <li>Activar el modo <b>DEBUG</b></li>
+        <li>Ejecutar el <b>script</b> o usar la herramienta ADB para descargar el archivo Key</li>
+        <li>Abrir <b>WhatsApp Viewer</b></li>
+        <li>Subir el archivo de la base de datos y el archivo <b>Key</b></li>
+        <li><b>Descifrar</b> la copia de seguridad</li>
+      </ul>
+      <p>Lo primero que vamos a hacer es descargar el archivo de la <b>base de datos de la copia de seguridad</b> que queremos abrir. Para ello, conectamos el móvil a nuestro PC e indicamos que queremos realizar una transferencia de archivos. Una vez hecho esto, desde el explorador vamos al teléfono y accedemos a la memoria interna o ruta donde tengamos instalado WhatsApp para navegar hasta la carpeta <b>WhatsApp\Databases</b>. Ahí encontraremos el archivo <b>msgstore.db.crypt12</b>, que debemos copiar y pegar en una ruta de nuestro PC, por ejemplo el escritorio.</p>
+      <figure>
+        <img src="https://www.adslzone.net/app/uploads/2019/11/basedatos-281x500.jpg"/>
+      </figure>
+      <p>Lo siguiente es <b>conseguir el archivo Key de WhatsApp</b> con el que poder descifrar los mensajes. Hasta la versión 7, Android permitía descargar el archivo Key de WhatsApp para descifrar los mensajes de la copia de seguridad o bien haciendo uso de la herramienta ADB o con el script que hemos indicado arriba.</p>
+      <p>Si no nos manejamos bien con ADB, entonces lo mejor será ejecutar el script WhatsAppKeyDBExtractor.bat que encontramos en la carpeta descargada. Eso sí, antes de ejecutar el script, debemos tener conectado el móvil a nuestro ordenador en modo depuración USB. Para ello, abrimos los <b>ajustes &gt; Sistema &gt; Acerca del teléfono</b> y pulsamos varias veces seguidas sobre la opción <b>Número de compilación</b>. Una vez que nos sale el mensaje de que ya somos desarrollador, volvemos a <b>Ajustes &gt; Sistema &gt; Opciones de desarrollador</b> y activamos el interruptor <b>Depuración USB</b>.</p>
+      <figure>
+        <img src="https://www.adslzone.net/app/uploads/2019/11/script-715x478.jpg"/>
+      </figure>
+      <p>Ahora ya podemos ejecutar el script, que descargará una versión más antigua de WhatsApp para instalarla en nuestro equipo y poder extraer la Key con facilidad. Una vez hecho esto, nos aparecerá un mensaje indicando si queremos realizar una copia de seguridad de nuestros datos y por último, comenzará el proceso para extraer el archivo Key.</p>
+      <p>Si todo va bien, al finalizar el script ya podemos ir a la carpeta <b>WhatsAppKeyDBExtractor\extracted</b> y comprobar que tenemos el archivo Key. Con este archivo y el que descargamos anteriormente con la base de datos de todos los mensajes de la copia de seguridad de WhatsApp, ya tenemos todo listo para abrir<b> WhatsApp Viewer</b>.</p>
+      <p>Si lo preferimos, también podemos usar ADB desde la línea de comandos de nuestro PC para acceder a la ruta <b>data\data\files\com.whatsapp\key\</b> y descargar el archivo Key que nos permite descifrar la base de datos de la copia de seguridad de WhatsApp. Si el archivo tiene un nombre tipo whatsapp.key, debemos renombrarlo para que se llame simplemente key.</p>
+      <figure>
+        <img src="https://www.adslzone.net/app/uploads/2019/11/kay-715x355.jpg"/>
+      </figure>
+      <p>De cualquier forma, con el archivo Key y la base de datos descargados en nuestro PC, abrimos WhatsApp Viewer y vamos a la opción de menú <b>File &gt; Decrypt .crypt12</b>. Esto nos abrirá una pequeña ventana en la que tenemos que añadir el archivo <b>msgstore.db.crypt12</b> en Data file, el archivo <b>Key</b> en el campo de debajo y pulsar sobre el botón Decrypt. En unos instantes, se nos cargará en la interfaz de WhatsApp Viewer todos los mensajes de la copia de seguridad de WhatsApp elegida y ya podremos leer todos los mensajes desde el ordenador en cualquier momento.</p>
+      <figure>
+        <img src="https://www.adslzone.net/app/uploads/2019/11/viewer-684x500.jpg"/>
+      </figure>
+      <h3>Pasos a seguir para abrir una copia de seguridad de WhatsApp con root</h3>
+      <p>Si hemos hecho root en nuestro móvil Android, entonces la cosa es mucho más sencilla ya que tendremos acceso al archivo Key de WhatsApp con el simple hecho de navegar por las carpetas del almacenamiento de nuestro smartphone. Y es que el hecho de tener permisos <b>root</b>, hace que podamos acceder a este archivo con el simple hecho de tener un explorador de archivos en el teléfono. Además, si contamos con <b>Android 8 o superior</b>, esta es la manera de conseguir abrir una copia de seguridad de WhatsApp en el PC.</p>
+      <figure>
+        <img src="https://www.adslzone.net/app/uploads/2019/11/root-250x500.jpg"/>
+      </figure>
+      <p>Por lo tanto, lo pasos a seguir en este caso son:</p>
+      <ul>
+        <li>Descargar en el PC el archivo <b>msgstore.db.crypt12</b> de nuestro teléfono</li>
+        <li>Descargar el <b>archivo Key</b> de WhatsApp de la ruta data\data\files\com.whatsapp\key de nuestro móvil al PC</li>
+        <li>Descargar e instalar en el ordenador <b>WhatsApp Viewer</b></li>
+        <li>Ejecutamos <b>WhatsApp Viewer</b></li>
+        <li>Subir el archivo de la <b>base de datos</b> y el <b>archivo Key</b></li>
+        <li><b>Descifrar</b> la copia de seguridad</li>
+      </ul>
+      <p>Como podemos ver, el procedimiento es más rápido y sencillo. Lo único que tenemos que hacer es enviar o compartir los archivos de la base de datos con la copia de seguridad de WhatsApp y el archivo Key desde nuestro móvil al PC y una vez ahí, instalamos y ejecutamos WhatsApp Viewer para realizar el descifrado. Como en el caso anterior, abrimos la herramienta y desde la opción de menú <b>File</b>, seleccionamos la opción <b>Decrypt .crypt12</b>. Esto nos abrirá una pequeña ventana en la que tenemos que seleccionar los archivos archivo msgstore.db.crypt12 y key y por último, pulsamos sobre el botón <b>Decrypt</b>. Automáticamente, veremos cómo se muestran en WhatsApp Viewer todos los mensajes y ya podemos leerlos desde el PC sin ningún problema.</p>
+    </article>
+  </body>
+</html>
