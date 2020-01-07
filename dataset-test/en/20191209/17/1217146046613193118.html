@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://www.bleepingcomputer.com/news/microsoft/tool-illegally-enables-windows-7-extended-security-updates/"/>
+    <meta property="og:site_name" content="BleepingComputer"/>
+    <meta property="article:published_time" content="2019-12-09T17:50:02+00:00"/>
+    <meta property="og:title" content="Tool Illegally Enables Windows 7 Extended Security Updates"/>
+    <meta property="og:description" content="A method has been discovered that allows Windows 7 users to bypass eligibility checks and receive Extended Security Updates even if they have not paid for a license."/>
+  </head>
+  <body>
+    <article>
+      <h1>Tool Illegally Enables Windows 7 Extended Security Updates</h1>
+      <address><time datetime="2019-12-09T17:50:02+00:00">09 Dec 2019, 17:50</time> by <a rel="author" href="https://www.bleepingcomputer.com/author/lawrence-abrams/" target="_blank">Lawrence Abrams</a></address>
+      <figure>
+        <img src="https://www.bleepstatic.com/content/hl-images/2019/01/10/windows-7-update.jpg"/>
+      </figure>
+      <p>A method has been discovered that allows Windows 7 users to bypass eligibility checks and receive Extended Security Updates even if they have not paid for a license.</p>
+      <p>On January 14, 2020, Windows 7 will reach end of support (EoS), which normally means that Microsoft will no longer offer security updates for the operating system.</p>
+      <p>As many business and enterprise users are not able to switch from Windows 7 before EoS, Microsoft introduced a paid-for service called Extended Security Updates (ESU) that allows licensed users to continue to receive security updates.</p>
+      <p>While some devices, such as <a href="https://www.bleepingcomputer.com/news/microsoft/windows-7-voting-systems-to-get-free-security-updates-through-2020-elections/">voting systems</a>, can get this service for free for a limited time, other business users who have a volume licensing agreement would need to <a href="https://www.bleepingcomputer.com/news/microsoft/new-docs-show-pricing-for-windows-7-extended-security-updates/">purchase a license</a> for $25 to $200 per device depending on the Windows and the year of the program.</p>
+      <h3>Users created bypass to get free Extended Security Updates</h3>
+      <p>To use the Windows 7 Extended Security Updates service, users need to <a href="https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/How-to-get-Extended-Security-Updates-for-eligible-Windows/ba-p/917807">activate ESU</a> on their Windows 7 devices using the license key issued to them by Microsoft.</p>
+      <figure>
+        <img src="https://www.bleepstatic.com/images/news/Microsoft/windows-7/esu-bypass/esu-enabled.jpg"/>
+        <figcaption>Extended Security Updates Enabled</figcaption>
+      </figure>
+      <p>In a post to the MyDigitalLife forums, a user has uploaded a tool called BypassESU that bypasses the ESU license checks so that users can get the updates for free.</p>
+      <p>It does this by patching the operating system so that ESU license checks always return true, meaning that the device is properly licensed..</p>
+      <figure>
+        <img src="https://www.bleepstatic.com/images/news/Microsoft/windows-7/esu-bypass/esubypass-readme.jpg"/>
+        <figcaption>BypassESU Readme.txt</figcaption>
+      </figure>
+      <p>This bypass has been tested and shown to work by utilizing the Windows 7 KB4528069 update, which is used to test whether the device is properly configured to receive Extended Security Updates.</p>
+      <p>When installed, if ESU is not properly setup on the device, the update will fail to install. On the other hand, if ESU is configured or the bypass is run, the update will install successfully.</p>
+      <figure>
+        <img src="https://www.bleepstatic.com/images/news/Microsoft/windows-7/esu-bypass/esu-test-installed.jpg"/>
+        <figcaption>Install successful</figcaption>
+      </figure>
+      <h3>This tool is illegal</h3>
+      <p>While it may be tempting to use this bypass in order to continue to receive Windows 7 security updates after EoS, it is important to remember that using the bypass is illegal.</p>
+      <p>By using this tool, users are circumventing license restrictions placed by Microsoft in order to get a paid-for product for free.</p>
+      <p>Instead of using this crack, Windows 7 users should upgrade to Windows 10, which can <a href="https://www.bleepingcomputer.com/news/microsoft/you-can-still-upgrade-to-windows-10-for-free-heres-how/">still be done for free</a>.</p>
+      <p>Furthermore, by using scripts like these that install DLLs and make modifications to the proper operation of the operating system, you are putting yourself at risk for malware or other types of attacks.</p>
+      <p>
+        <i>H/T <a href="https://www.ghacks.net/2019/12/07/someone-found-a-way-to-bypass-windows-7-extended-security-updates-checks/">Ghacks.net</a></i>
+      </p>
+    </article>
+  </body>
+</html>

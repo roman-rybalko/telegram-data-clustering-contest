@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://www.cnbeta.com/articles/tech/919461.htm"/>
+    <meta property="og:site_name" content="cnBeta"/>
+    <meta property="article:published_time" content="2019-12-09T11:26:00+00:00"/>
+    <meta property="og:title" content="oneAPI进展：Intel公布裸机oneAPI零级接口"/>
+    <meta property="og:description" content="Intel公布了旗下oneAPI的零级（LevelZero）接口规范，提供了对加速器的裸机（bare-metal）访问，补全了oneAPI中基于API的直接编程模型。oneAPI是Intel在11月中发布的，针对异构系统而设的开放式编程模型。"/>
+  </head>
+  <body>
+    <article>
+      <h1>oneAPI进展：Intel公布裸机oneAPI零级接口</h1>
+      <address><time datetime="2019-12-09T11:26:00+00:00">09 Dec 2019, 11:26</time> by <a rel="author">study875</a></address>
+      <p>
+        <a href="https://www.cnbeta.com/topics/32.htm">
+          <pic src="https://static.cnbetacdn.com/topics/18315c240ecef87.png"/>
+        </a>
+      </p>
+      <p>Intel<a href="https://www.phoronix.com/scan.php?page=news_item&amp;px=oneAPI-Level-0-Specification">公布</a>了旗下oneAPI的零级（Level Zero）接口规范，提供了对加速器的裸机（bare-metal）访问，补全了oneAPI中基于API的直接编程模型。oneAPI是Intel在11月中发布的，针对异构系统而设的开放式编程模型。</p>
+      <hr/>
+      <figure>
+        <img src="https://static.cnbetacdn.com/article/2019/1209/a73986d2ebdc403.jpg"/>
+      </figure>
+      <p>图片来源：Intel</p>
+      <p>oneAPI的目标是为那些重视性能的跨架构应用程序提供一个统一的编程模型。它可以重用代码，旨在消除独立代码库、多工具、工作流程的复杂性。oneAPI的Beta版本已经在11月份推出，并且将会用在Aurora百亿亿次超级计算机当中。</p>
+      <p>oneAPI是基于行业标准以及开放性规范而成的，它包含了行业共识以及Intel自己对于oneAPI的执行（implementation）而成。行业共识中的“对所有硬件供货商开放”表明需要使用一种直接编程语言 - 基于C ++和SYCL跨平台抽象层的Data Parallel C ++ ，以及基于API的编程来加速专注于领域（Domain-focused）的功能。这其中很多部分都是开源的，例如软件开发商Codeplay已经宣布正在开发对oneAPI的Nvidia GPU支持。</p>
+      <p>Intel的oneAPI开发工具包新增了诸如针对CUDA的兼容性工具、Intel自己的Python分发、FPGA附加工具以及调试用的工具。这套工具目前支持Intel自家的Core、Xeon以及Atom处理器、Intel的集显以及Arria FPGAs。</p>
+      <p>根据<a href="https://www.phoronix.com/scan.php?page=news_item&amp;px=oneAPI-Level-0-Specification">Phoronix</a>的报导，这些直接及API库的编程模型也是一种低级别（Low-level）及DTM（Direct-to-metal）的接口，可以用于本周发布的加速硬件。</p>
+      <p>零级API可以有双重用途。虽然它提供了对多个低级别功能的精细访问，但大部分的应用程序都用不上如此准确的控制。因此，零级API同时也提供对高级别运行时（Runtime）API及库的控制。</p>
+    </article>
+  </body>
+</html>

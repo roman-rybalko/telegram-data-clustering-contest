@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://www.gamasutra.com/blogs/ArturGanszyniec/20191209/355300/Emotional_Context_In_Decision_Design.php"/>
+    <meta property="og:site_name" content="GAMASUTRA"/>
+    <meta property="article:published_time" content="2019-12-09T10:49:00+00:00"/>
+    <meta property="og:title" content="Emotional Context In Decision Design"/>
+    <meta property="og:description" content="The following blog post, unless otherwise noted, was written by a member of Gamasutra's community. The thoughts and opinions expressed are those of the writer and not Gamasutra or its parent company. Adding Personal Perspective To Interactive Travel Literature Wanderlust Travel Stories is an anthology of interactive travel literature we published in fall 2019, and it’s the first release of our small studio called Different Tales. Before going indie, my business partner Jacek and I worked in lead roles on both AAA and mobile titles, and applying the things we learned over the last dozen years to our own product was an experience both fascinating and humbling."/>
+  </head>
+  <body>
+    <article>
+      <h1>Emotional Context In Decision Design</h1>
+      <address><time datetime="2019-12-09T10:49:00+00:00">09 Dec 2019, 10:49</time> by <a rel="author">Artur Ganszyniec</a></address>
+      <p>
+        <b>
+          <i>The following blog post, unless otherwise noted, was written by a member of Gamasutra's community.<br/>The thoughts and opinions expressed are those of the writer and not Gamasutra or its parent company.</i>
+        </b>
+      </p>
+      <hr/>
+      <p>
+        <b>Adding Personal Perspective To Interactive Travel Literature</b>
+      </p>
+      <p>Wanderlust Travel Stories is an anthology of interactive travel literature we published in fall 2019, and it’s the first release of our small studio called Different Tales. Before going indie, my business partner Jacek and I worked in lead roles on both AAA and mobile titles, and applying the things we learned over the last dozen years to our own product was an experience both fascinating and humbling.</p>
+      <p>In this article, I’ll share how we used context and personal perspective to make choices relevant for the player and easier to implement.</p>
+      <h3>Our Goals</h3>
+      <p>In May 2018 we decided to make a story game about travel. We wanted to keep it real, introspective and minimalistic.</p>
+      <p>To make a game grounded in real experiences we took on board a team of travel journalists, writers, and anthropologists, and put a lot of effort into research, interviews, photographic documentation, etc. This gave us a solid framework for the story, but also limited the possible choice-space.</p>
+      <p>We wanted to show not the, sometimes boring, logistics of travel but, above all, the feelings and emotions of a traveler. To do this we constructed a cast of characters representing very different ideas about traveling and wrote a collection of stories from their personal perspectives—a kind of interactive memoirs.</p>
+      <p>Wanderlust Travel Stories is a literary experience, and we made sure nothing distracts you away from the text. The static photos and illustrative soundscapes are there just to bring back memories or stir your imagination. The user interface is also very basic, its most important elements are stress, fatigue, and mood—showing the emotional state of the character and its influence on the story. This mechanism is described in the next sections of this text.</p>
+      <h3>On Decisions</h3>
+      <p>In the heart of every good scene is a dilemma the hero must face. By observing the hero in action we learn who they really are. The action changes the situation and creates consequences, often resulting in another dilemma.</p>
+      <p>What makes games unique, is that the designers set up a dilemma, but it is the player who makes the decision and is responsible for who the hero turns out to be. To make an informed choice the player has to be able to imagine possible outcomes. In well-written stories, the player can also compare the projected consequences with what really happened, and learn.</p>
+      <p>If this topic interests you, I wholeheartedly recommend John Yorke’s book Into the Woods, on how the learning process in our brain coexist with and shapes the stories we tell.</p>
+      <h3>On Context</h3>
+      <p>If we stick to the above-mentioned rules, every scene should include such elements:</p>
+      <ul>
+        <li>setting the dilemma,</li>
+        <li>presenting options,</li>
+        <li>decision,</li>
+        <li>delivering consequences.</li>
+      </ul>
+      <p>If we want to make the story interactive, the first thing that usually comes to mind is to present more options. But they branch into many consequences, exponentially exploding the story tree. There are many industry standards to deal with the problem (ex. <a href="https://emshort.blog/2019/11/29/storylets-you-want-them/">this great article</a> by Emily Short), and we knew that we needed something very streamlined. Our time, budget and research, gave us a very tight set of constraints. We decided to focus less on shaping the world, and more on experiencing it.</p>
+      <p>That brings us to a crucial element of any decision-making process: context. Do you want a glass of water? There are two simple ways to answer, to default options: yes and no. Yet the answer would heavily depend on whether you are in a desert, dying of thirst, or on an important meeting, and really needing to go to the loo. There are moments when the context is everything.</p>
+      <p>So, we decided to highlight the subjective and personal nature of travel, to modify and multiply rather the contexts than the options. To do this, we reached for emotions.</p>
+      <h3>On Emotions</h3>
+      <p>As many travelers would tell you, sometimes the world is what it is, but usually emotions color the perception. When tired or stressed you experience the world differently.</p>
+      <p>Wanting to show how stress and fatigue influence how we feel about the places we visit, we implemented a very simple emotional simulator. It was based on a model described in Christophe André’s book about moods called "Les États d'âme : Un apprentissage de la sérénité."</p>
+      <p>We simplified the model a bit, and this is how it works in Wanderlust Travel Stories:</p>
+      <table>
+        <caption>Table: stress and fatigue levels shape the character’s mood</caption>
+        <tr>
+          <th>
+            <u>Mood</u>
+          </th>
+          <th>Low fatigue</th>
+          <th>Normal fatigue</th>
+          <th>High fatigue</th>
+        </tr>
+        <tr>
+          <th>Low stress</th>
+          <td>cheerful</td>
+          <td>optimistic</td>
+          <td>peaceful</td>
+        </tr>
+        <tr>
+          <th>Normal stress</th>
+          <td>energetic</td>
+          <td>calm</td>
+          <td>sad</td>
+        </tr>
+        <tr>
+          <th>High stress</th>
+          <td>annoyed</td>
+          <td>worried</td>
+          <td>hopeless</td>
+        </tr>
+      </table>
+      <p>The player’s decisions, apart from branching the story from time to time, usually influenced stress and fatigue. The resulting mood was being fed back to the story, modifying the context of every following decision.</p>
+      <p>The idea was to have every scene opening and summary written in at least three (up to nine) versions, reflecting the character’s possible moods. The more important the scene was to the main story arc, the higher emotional fidelity it had. Additionally, some options were available only in certain moods. We did not always manage to do that, but that was what we aimed for.</p>
+      <h3>Case Study: One Night in Paris</h3>
+      <p>As an example, I chose a scene in Paris, one that is not spoilery and designed well enough to dissect in the public. Our hero steps off the train and has his first experience with the capital of France. What he sees and what options are available depends on his stress and fatigue.</p>
+      <p>The way players approach the available options, depends on the context they were given, or at least that was the idea behind the design.</p>
+      <figure>
+        <img src="https://www.gamasutra.com/ckfinder/userfiles/33647873/355300/paris1.png"/>
+      </figure>
+      <p>When the character is peaceful, he sees Paris “as it is,” just another European city near a train station. The main choice in this scene is how to proceed, whether to take a taxi or walk. Because Tomek is fatigued, an extra option appears “I was hungry.” We can expect that most players will eat something (to regain some strength) and then decide whether to walk or call a taxi.</p>
+      <figure>
+        <img src="https://www.gamasutra.com/ckfinder/userfiles/33647873/355300/paris2.png"/>
+      </figure>
+      <p>The situation changes when the character is hopeless. High stress and high fatigue render the world hostile, and the character focus on possible dangers: drunks, shouting, a reeking dumpster. The main call-a-taxi-or-walk choice remains the same, and there are two extra options: “I was hungry,” and “I needed a drink,” the later triggered by high stress. Eating is still a valid option gameplay-wise, but in the presence of a smelly dumpster, many players lose their appetite and just call a taxi to get out of that awful place.</p>
+      <figure>
+        <img src="https://www.gamasutra.com/ckfinder/userfiles/33647873/355300/paris3.png"/>
+      </figure>
+      <p>When a character is calm the place looks normal and the choice boils down to picking the best way to proceed. Curious players will probably take a walk, while the “optimizers” would probably call a taxi to save their strength for the future.</p>
+      <figure>
+        <img src="https://www.gamasutra.com/ckfinder/userfiles/33647873/355300/paris4.png"/>
+      </figure>
+      <p>An optimistic character sees the city in its most glamorous form, full of light and excitement. It looks inviting, making the taxi seem like a less interesting choice.</p>
+      <p>The graph of the scene looks like this:</p>
+      <figure>
+        <img src="https://www.gamasutra.com/ckfinder/userfiles/33647873/355300/Zrzut%20ekranu%202019-12-06%2017_21_40.png"/>
+      </figure>
+      <p>As far as the branching goes, the situation is quite simple—we make a decision, and at the end of the scene we either walk down one branch or sit in a taxi going down another branch of the story tree. Sometimes there are extra diversions available, in the form of short scenes in a bar and/or in a bistro, but they feed back to the main choice.</p>
+      <p>But when we look at the mood-dependent contexts, the situation gets more interesting. Although the number of outcomes stays the same, the number of personal situations framing the decision multiply. Taking a taxi to escape a hostile environment is a different decision than giving up on an otherwise alluring walk to save strength for another day. A quick snack before a night stroll is something different than a forced meal in a dive near a smelly dumpster.</p>
+      <p>We learned the nuances of this technique as we went, so not all instances you’ll find in the game, work perfectly, but we found it a great production tool. It allowed us to save on extensive (and expensive) branching we were prone to, and to keep the story within our research-based limits, while allowing for extensive personalization of the events. We set most scenes in the mood-depending context, and as a result, the number of personal decision-making situations available to players became much higher than the actual scene count.</p>
+      <h3>On Personalization</h3>
+      <p>The mood simulator was just a specific, and the most universal, case when we used variables to personalize the story. In short, it worked like this: the main decision in a scene branched the story, but some of the decisions also changed a variable value (be it fatigue, the strength of a relationship with another character, or just noting that a certain event took place). The variable then fed back to scenes down the story-tree, no matter which of the branches we explored.</p>
+      <p>We used this simple and effective mechanism both to personalize small details of the stories and to decide about the outcomes of whole character arcs.</p>
+      <p>The details can be as small as whether Henriette is a tea or a coffee person. The first choice the player makes about their favorite beverage reflects on the whole long sailing to Antarctica—with a steaming cup of tea (or coffee) in hand. Sometimes the changes are about people. Depending on how the player directs Adília’s relation with her husband, she talks about him using his name “Jose” or coldly calls him “the husband.” The mechanism is crucial in the story’s finale, when the available options that shape Adília’s future, are gated by variables reflecting her relationships with various people in her life.</p>
+      <h3>Looking Back</h3>
+      <p>We wanted to tell stories that were real and personal, and we knew that we would be working in a small team and within the limits set by our research. Those factors advised against extensive branching of the story (which was our first idea), yet we wanted to keep the experience varied among different players, and we wanted it to feel personal.</p>
+      <p>The solution we reached for, was to use the player’s decision points not only to branch the story but also to set different variables, which then fed back to the following scenes, modifying them to reflect how the player directed the character.</p>
+      <p>The most universal and crucial of the variables, were stress and fatigue, which we used to track the mood of the characters. The mood then influenced how surroundings were described, providing changing and personal context for every decision. Thanks to this, using a limited number of story branching points, we aimed to create a significantly higher number of unique decision situations.</p>
+      <p>We learned how to use the mechanisms as the production progressed, so the implementation is not perfect, but we believed the idea was interesting enough to share it with you.</p>
+      <p>
+        <i>If you have similar (or totally different) experiences from your productions, I would love to share stories.</i>
+      </p>
+      <p>
+        <i>And, while you're here, you might be interested in my post on <a href="https://www.gamasutra.com/blogs/ArturGanszyniec/20190624/345350/In_Praise_of_Slow_Games.php">Slow Gaming</a>, a philosophy we try to put in motion in our games.</i>
+      </p>
+    </article>
+  </body>
+</html>

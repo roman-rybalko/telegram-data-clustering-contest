@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://www.numerama.com/tech/578245-google-bert-comprendre-ce-qui-va-changer-sur-le-moteur-de-recherche-en-5-questions.html"/>
+    <meta property="og:site_name" content="Numerama"/>
+    <meta property="article:published_time" content="2019-12-09T12:52:44+00:00"/>
+    <meta property="og:title" content="Google BERT : comprendre ce qui va changer sur le moteur de recherche en 5 questions"/>
+    <meta property="og:description" content="Avec la mise à jour BERT, Google entend mieux comprendre les requêtes des internautes, en saisissant le sens des mots utilisés et le contexte dans lequel ils sont employés. Déjà déployée pour la langue anglaise, BERT s'ouvre désormais au français."/>
+  </head>
+  <body>
+    <article>
+      <h1>Google BERT : comprendre ce qui va changer sur le moteur de recherche en 5 questions</h1>
+      <address><time datetime="2019-12-09T12:52:44+00:00">09 Dec 2019, 12:52</time> by <a rel="author" href="https://www.numerama.com/author/julienl/" target="_blank">Julien Lausson</a></address>
+      <p>Avec la mise à jour BERT, Google entend mieux comprendre les requêtes des internautes, en saisissant le sens des mots utilisés et le contexte dans lequel ils sont employés. Déjà déployée pour la langue anglaise, BERT s'ouvre désormais au français.</p>
+      <h3>Qu’est-ce que BERT ?</h3>
+      <p>BERT (acronyme de « Bidirectional Encoder Representations from Transformers ») est le surnom donné par Google à un changement majeur dans la manière dont fonctionne son moteur de recherche. Avec cette mise à jour, l’entreprise américaine souhaite répondre plus efficacement aux requêtes des internautes, en tenant compte des mots-clés utilisés et surtout de la manière dont ils sont agencés les uns aux autres.</p>
+      <p>Fondamentalement, BERT doit permettre de comprendre le « sens » d’une requête et, donc, la signification des mots qui sont utilisés dans un contexte précis. En somme, il ne s’agit plus de prendre les termes isolément, mais de les comprendre selon leur voisinage. Or, cela nécessite de tenir compte de certains éléments d’une requête qui étaient jusqu’à présent délaissés, parce que jugés secondaires.</p>
+      <figure>
+        <img src="https://www.numerama.com/content/uploads/2019/12/bert-1024x611.png"/>
+        <figcaption>Les résultats de BERT dans un test de questions/réponses destiné à évaluer et entraîner des algorithmes en traitement automatique de la langue. // Source : <a href="https://ai.googleblog.com/2018/11/open-sourcing-bert-state-of-art-pre.html">Google</a></figcaption>
+      </figure>
+      <p>BERT est considéré comme l’une des plus grandes mises à jour du fonctionnement de Google depuis plusieurs années, à la fois par son ampleur (l’entreprise estime qu’entre une requête sur dix et une requête sur cinq sera désormais concernée par ce changement) et par sa technicité.  La dernière en date à avoir connu une telle attention est sans doute RankBrain, qui se focalise sur les <a href="https://www.numerama.com/sciences/128510-google-fait-appel-a-lia-pour-les-requetes-ambigues.html">requêtes ambiguës ou inconnues</a>.</p>
+      <p>Mais avant d’être une mise à jour d’un moteur de recherche, BERT est le fruit d’<a href="https://ai.googleblog.com/2018/11/open-sourcing-bert-state-of-art-pre.html">un travail de recherche</a> sur le traitement automatique du langage naturel, qui a donné lieu <a href="https://arxiv.org/abs/1810.04805">à un papier scientifique</a> sur Arxiv, en octobre 2018. Ces recherches <a href="https://github.com/google-research/bert">sont disponibles sur GitHub</a>, sous une licence ouverte. Cette documentation pourrait d’ailleurs intéresser d’autres moteurs concurrents pour affiner leurs propres résultats.</p>
+      <h3>Qu’est-ce que ça donne ?</h3>
+      <p>Pandu Nayak, le vice-président de la recherche au sein de Google, donne un exemple assez clair du changement que BERT induit : auparavant, dans une requête demandant à Google s’il est possible d’aller récupérer un médicament à la pharmacie pour un tiers, le moteur de recherche se focalisait sur « récupérer », « médicament » et « pharmacie ». Il ne tenait pas compte d’un passage pourtant clé : « autrui ».</p>
+      <p>Désormais, BERT est capable de comprendre que le retrait d’un traitement n’est pas pour vous, mais de toute évidence pour un proche. Par conséquent, le résultat qui sera mis en avant sera une page du ministère américain de la Santé et des Services sociaux, qui répond justement à cette interrogation. Et cela, même si elle peut être très ancienne : en l’espèce, Google a montré que cela a fait remonter une page de 2002.</p>
+      <figure>
+        <img src="https://www.numerama.com/content/uploads/2019/12/pandu-nayak-1024x579.jpg"/>
+        <figcaption>Pandu Nayak.</figcaption>
+      </figure>
+      <p>Un autre exemple : en tapant les mots « livres d’exercices de maths pour adultes », Google avait tendance à zapper la dernière partie, celle pour les adultes. Or là encore, ce ne sont pas n’importe quels manuels qui sont recherchés ici : ce sont des bouquins qui s’adressent à un public précis. La mise à jour des algorithmes de classement doit ainsi répondre plus finement aux attentes du public, en liant les mots les uns aux autres autres.</p>
+      <p>Ces exemples peuvent évidemment sembler triviaux pour un esprit humain, qui sait très bien donner du sens aux mots en les faisant résonner entre eux. Mais c’est une autre paire de manches que de transcrire cela dans un programme informatique. Surtout lorsque les internautes n’utilisent pas forcément les termes les plus justes pour exprimer ce qu’ils ont en tête.</p>
+      <p>Pour illustrer ce point, Pandu Nayak prend l’exemple du verbe « changer », qui est employé à toutes les sauces : « comment changer la luminosité de mon écran », au lieu d’ajuster ; « comment changer une ampoule », au lieu de remplacer ; ou encore, « comment changer les réglages de ma configuration », au lieu de modifier. C’est toute la difficulté des mots, qui peuvent être synonymes, polysémiques et ambigus.</p>
+      <h3>Dois-je mieux formuler mes requêtes ?</h3>
+      <p>Dans la mesure où BERT est censé mieux comprendre le langage naturel, c’est-à-dire le sens d’une recherche en tenant compte des différents termes employés, est-ce que cela veut dire qu’il va falloir arrêter de se prendre pour monsieur Jourdain et de jeter vos mots-clés dans n’importe quel ordre ? En fait, la réponse à cette question peut être à la fois oui… et non.</p>
+      <p>Évidemment, plus vous formulerez une requête précise avec des termes adéquats, plus Google sera capable de vous apporter des résultats correspondant à votre demande. Mais pour autant, même si vous placez vos termes de manière désordonnée, Google restera en mesure de les traiter. Interrogé à ce sujet par Numerama, Pandu Nayak le confirme : les autres outils de compréhension de Google restent d’actualité.</p>
+      <p>D’ailleurs, toutes les requêtes ne vont pas bénéficier de BERT. Google estime qu’entre 10 et 20 % des recherches le seront, ce qui est une portion plutôt modeste. C’est toutefois loin d’être anodin au regard des milliards de demandes auxquelles l’entreprise fait face chaque jour et au fait que BERT bénéficiera aussi aux contenus affichés dans des encarts dédiés (les « snippets »).</p>
+      <h3>Quelles limites ?</h3>
+      <p>Si BERT va indéniablement améliorer l’expérience des recherches web, Google admet que son outil n’est pas forcément utile dans toutes les circonstances. Pandu Nayak donne le cas par exemple d’une recherche sur « tartan » qui est, <a href="https://fr.wikipedia.org/wiki/Tartan">rappelle Wikipédia</a>, une étoffe de laine à carreaux de couleurs, typique des peuples celtes. Avec BERT, les résultats étaient plutôt textuels, alors qu’un support visuel peut être plus utile.</p>
+      <p>Dans d’autres cas de figure, BERT n’a pas toujours bien saisi le sens de la question. À l’internaute qui demande « quel est l’État au sud du Nebraska », BERT ne donnait plus la réponse « Nebraska », avec un extrait de la page Wikipédia dans lequel on pouvait lire que le Kansas est l’État au sud. À la place, BERT évoquait « South Nebraska », une localité qui se trouve en… Floride.</p>
+      <figure>
+        <img src="https://www.numerama.com/content/uploads/2019/12/tartan-1024x579.jpg"/>
+        <figcaption>Parfois, une image est plus pratique qu’une liste de résultats en texte. // Source : <a href="https://commons.wikimedia.org/wiki/File:Three_tartans.jpg?uselang=fr">Dreamyshade</a></figcaption>
+      </figure>
+      <p>Dernier cas de figure donné exemple par Pandu Nayak : Google s’est rendu compte que sur une recherche classique en espagnol, les résultats sont d’ordinaire donnés en espagnol. Mais avec BERT, ce sont aussi des pages en anglais qui ont été retournées, alors que la formulation de l’internaute suggère qu’il comprend l’espagnol et qu’il peut donc avoir une réponse dans cette langue.</p>
+      <p>Afin de ne pas affaiblir la qualité de recherche, Google a d’abord procédé à des essais pour déterminer s’il y avait un recul quelconque, en demandant une évaluation entre le résultat d’avant et celui proposé par BERT. C’est en tenant compte de ces mesures que la mise à jour proposée par Google, bien qu’importante, a un périmètre d’action plutôt restreint. Du moins, pour le moment.</p>
+      <h3>Quand BERT sera-t-il déployé ?</h3>
+      <p>BERT est d’ores et déjà actif sur les requêtes passées en anglais, depuis octobre 2019. Concernant les autres langues, Google a commencé le lundi 9 décembre <a href="https://twitter.com/searchliaison/status/1204152379777650689">à déployer la mise à jour</a>. Pandu Nayak indique que le déploiement nécessite quelques jours. Plus de 70 langues seront concernées par BERT, dont le français, le russe, l’italien, le japonais, l’espagnol, le coréen, l’allemand ou encore le portugais.</p>
+    </article>
+  </body>
+</html>

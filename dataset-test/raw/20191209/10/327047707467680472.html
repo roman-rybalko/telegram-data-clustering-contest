@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://techworld.idg.se/2.2524/1.727814/natfiske-bifogar-landningssida?utm_source=feedburner&amp;utm_medium=feed&amp;utm_campaign=Feed%3A+idg%2FETkj+%28IDG.se%3A+IDG.se+-+100+senaste%29"/>
+    <meta property="og:site_name" content="TechWorld"/>
+    <meta property="article:published_time" content="2019-12-09T10:38:00+00:00"/>
+    <meta property="og:title" content="Nytt smart nätfiske – bifogar landningssidan på fil"/>
+    <meta property="og:description" content="Ett listigt sätt att undvika att skapa falska landningssidor online har upptäckts i en ny nätfiskekampanj. Angriparna bifogar landningssidan som en html-fil med dold javascript."/>
+  </head>
+  <body>
+    <article>
+      <h1>Nytt smart nätfiske – bifogar landningssidan på fil</h1>
+      <address>
+        <time datetime="2019-12-09T10:38:00+00:00">09 Dec 2019, 10:38</time>
+      </address>
+      <p>
+        <i>Ett listigt sätt att undvika att skapa falska landningssidor online har upptäckts i en ny nätfiskekampanj. Angriparna bifogar landningssidan som en html-fil med dold javascript.</i>
+      </p>
+      <p>En nyligen upptäckt nätfiskekampanj använder ett listigt sätt att undvika att skapa och driva landningssidor för att lura av mottagarna deras inloggningsuppgifter, skriver <a href="https://www.bleepingcomputer.com/news/security/clever-microsoft-phishing-scam-creates-a-local-login-form/">Bleeping Computer</a>.</p>
+      <p>I normala fall länkar angriparna till en landningssida på nätet som det avgörande steget för att lura av offren deras inloggningsuppgifter. Innan dess ska förstås mottagaren ha gått på bluffen i själva e-postmeddelandet.</p>
+      <h3>Kan gå att spåra angriparna</h3>
+      <p>Det är riskabelt för de cyberkriminella att tillhandahålla sina falska landningssidor online – de kommer förr eller senare att upptäckas och tas bort, det finns en risk att det går att spåra angriparna genom landningssidan, och det är närmast omöjligt för cyberkriminella att komma över äkta domäner – det är nästan alltid något misstänkt med landningssidans url och/eller certifikat.</p>
+      <p>I en nätfiskekampanj som nyligen upptäckts av buggjägaren Jan Kopriva på ISC har angriparna istället bifogat en html-fil med e-postmeddelandet så att landningssidan genereras direkt av webbläsaren på mottagarens dator. I meddelandet står att mottagaren tagit emot en kopia av ett betalningsmeddelande ”Please find attached a copy of your payment notification" och den bifogade filen heter ”payment.html”.</p>
+      <h3>I stället för att skicka mottagaren till en sajt</h3>
+      <p>Html-filen innehåller en stor mängd dold eller förvrängd javascript-kod, och det är naturligtvis den som är hemligheten i detta upplägg. När mottagaren öppnar html-filen skapar javascriptet ett loginformulär till ”Microsoft Docs” direkt i användarens webbläsare istället för att skicka mottagaren till en sajt.</p>
+      <p>Inloggningsformuläret låter användaren logga in med flera olika inloggningsalternativ som Gmail, Office365, Yahoo och Hotmail. När användaren klickar på Login skickar javascriptet i bakgrunden iväg inloggningsuppgifterna till en server, utan att användaren märker något. Efter detta blir mottagaren länkad till en sajt som visar ett falskt betalningsmeddelande. Det senare är dock något av ett mysterium då angriparna lika väl kunde ha skapat betalningsmeddelandet med hjälp av javascript-koden och en base64-kodad bild i den bifogade filen.</p>
+      <p>
+        <b>Läs också:</b>
+        <br/>
+        <a href="https://computersweden.idg.se/2.2683/1.727225/black-friday-natfiske">Black Friday högsäsong för nätfiske – här är e-handlarna som inte skyddar kunderna</a>
+        <br/>
+        <a href="https://techworld.idg.se/2.2524/1.726552/natfiske-office-365">Ny kampanj fiskar Office 365-administratörer</a>
+      </p>
+    </article>
+  </body>
+</html>

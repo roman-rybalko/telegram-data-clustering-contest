@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://www.bleepingcomputer.com/news/security/trickbot-trojan-abuses-google-suite-baits-with-annual-bonuses/"/>
+    <meta property="og:site_name" content="BleepingComputer"/>
+    <meta property="article:published_time" content="2019-12-09T16:56:53+00:00"/>
+    <meta property="og:title" content="TrickBot Trojan Abuses Google Suite, Baits With Annual Bonuses"/>
+    <meta property="og:description" content="A recently active malicious campaign baited targets with phishing messages promising annual bonuses, abusing Google Suite cloud services to infect them with Trickbot banking Trojan payloads."/>
+  </head>
+  <body>
+    <article>
+      <h1>TrickBot Trojan Abuses Google Suite, Baits With Annual Bonuses</h1>
+      <address><time datetime="2019-12-09T16:56:53+00:00">09 Dec 2019, 16:56</time> by <a rel="author" href="https://www.bleepingcomputer.com/author/sergiu-gatlan/" target="_blank">Sergiu Gatlan</a></address>
+      <figure>
+        <img src="https://www.bleepstatic.com/content/hl-images/2017/09/03/TrickBot-Logo.png"/>
+      </figure>
+      <p>A recently active malicious campaign baited targets with phishing messages promising annual bonuses, abusing Google Suite cloud services to infect them with Trickbot banking Trojan payloads.</p>
+      <p><a href="https://www.bleepingcomputer.com/tag/trickbot/">TrickBot</a> (aka TrickLoader, Trickster, and TheTrick) is a modular information stealer regularly upgraded with new capabilities and modules since October 2016 when it was <a href="https://blog.malwarebytes.com/threat-analysis/2016/10/trick-bot-dyrezas-successor/">first spotted</a> in the wild by Malwarebytes Labs' malware analyst Jérôme Segura.</p>
+      <p>This campaign's bait emails were sent using the legitimate SendGrid cloud-based email delivery platform in an attempt to conceal their malicious nature, as well as to obfuscate the links used throughout the infection chain as researchers at Palo Alto Networks' Unit 42 found.</p>
+      <p>The attackers employed embedded links to legitimate Google Docs documents that redirected the potential victims to a Google Drive download link. By clicking this link, the targets would be served with a downloader tool designed to drop the final Trickbot payload on the victims' computers.</p>
+      <figure>
+        <img src="https://www.bleepstatic.com/images/news/u/1109292/December%202019/Infection%20chain.png"/>
+        <figcaption>
+          <i>Image: Palo Alto Networks' Unit 42</i>
+        </figcaption>
+      </figure>
+      <h3>Delivering the Trickbot payload</h3>
+      <p>The attackers used compromised .edu emails to send the phishing emails through SendGrid's Email Delivery Service (EDS) and bypass Secure Email Gateways (SEG) deployed on their targets' networks.</p>
+      <p>"The body of the emails contained lure text consistent with the subject lines and links that utilized a SendGrid function called Click Tracking which sends a notification back to the sender of the email for tracking purposes," the <a href="https://unit42.paloaltonetworks.com/trickbot-campaign-uses-fake-payroll-emails-to-conduct-phishing-attacks/">Unit 42 researchers discovered</a>.</p>
+      <p>To deliver the Trickbot payloads, the campaign operators used two downloader variants, based on the phishing email's theme: <i>StatementReport.exe</i> in the case of annual bonus baits and <i>Preview_Report.exe</i> for payroll phishing messages.</p>
+      <p>"Due to default settings in most Windows deployments of not displaying file extensions, these files will not appear as obvious executables to a victim," the researchers add.</p>
+      <p>Once executed, the downloaders would display an "IMPORTANT" decoy pop-up asking the victims to update their Microsoft Word installation or to open the document on another computer.</p>
+      <figure>
+        <img src="https://www.bleepstatic.com/images/news/u/1109292/December%202019/Phishing-email-sample.png"/>
+        <figcaption>
+          <i>Image: Palo Alto Networks' Unit 42</i>
+        </figcaption>
+      </figure>
+      <h3>Trojan burrows deep into victims' computers</h3>
+      <p>Regardless of what the victim does (dismisses the pop-up or not), the Trickbot payload gets dropped from first stage command and control (C2) servers owned by legitimate organizations — another attempt to avoid detection — to the Temp folder and gets executed.</p>
+      <p>Once launched, the Trickbot Trojan will load itself into memory using <a href="https://attack.mitre.org/techniques/T1093/">process hollowing</a> after spawning a svchost.exe process to camouflage as a legitimate program and further attempt to evade detection.</p>
+      <p>Next, the malware starts collecting system information which it sends to its second stage C2 server and requests additional modules, while also gaining persistence by creating a "System cache service" scheduled task that auto-starts on logon and checks every 11 minutes if it's already running on a compromised system.</p>
+      <p>A full list of indicators of compromise (IOCs) related to this campaign and including downloader and payload samples, as well as Trickbot payload URLs are available at the end of <a href="https://unit42.paloaltonetworks.com/trickbot-campaign-uses-fake-payroll-emails-to-conduct-phishing-attacks/">Unit 42's report</a>.</p>
+      <h3>Continuously evolving banking Trojan</h3>
+      <p>Last month, Unit 42's research team also spotted an <a href="https://www.bleepingcomputer.com/news/security/trickbot-trojan-getting-ready-to-steal-openssh-and-openvpn-keys/">updated Trickbot password grabber module</a> that could be used to harvest OpenSSH private keys and OpenVPN passwords and configuration files.</p>
+      <p>The Google Docs online word processor was <a href="https://www.bleepingcomputer.com/news/security/trickbot-bypasses-secure-email-gateway-using-google-docs-phishing/">previously used in Trickbot campaigns</a> as discovered by Cofense researchers in August when Trickbot payloads were delivered onto unsuspecting victims' devices via executables camouflaged as PDF documents with .pdf.exe extensions.</p>
+      <p>The phishing messages delivered via that malspam campaign used legitimate messages generated by sharing a Google Docs document with the targets, containing fake 404 error messages and links to the malicious payloads.</p>
+      <p>TrickBot is one of today's <a href="https://twitter.com/abuse_ch/status/1161313895887376384">most aggressive malware</a> after switching places with Emotet as the most distributed strain via malspam before the latter was revived during August [<a href="https://www.bleepingcomputer.com/news/security/emotet-botnet-is-back-servers-active-across-the-world/">1</a>, <a href="https://www.bleepingcomputer.com/news/security/emotet-revived-with-large-spam-campaigns-around-the-world/">2</a>].</p>
+    </article>
+  </body>
+</html>

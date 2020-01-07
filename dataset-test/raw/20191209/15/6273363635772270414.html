@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://venturebeat.com/2019/12/09/intel-labs-unveils-cryogenic-control-chip-for-quantum-computing/"/>
+    <meta property="og:site_name" content="VentureBeat"/>
+    <meta property="article:published_time" content="2019-12-09T15:00:58+00:00"/>
+    <meta property="og:title" content="Intel Labs unveils cryogenic control chip for quantum computing"/>
+    <meta property="og:description" content="Intel Labs unveiled a first-of-its-kind cryogenic control chip, code-named Horse Ridge, that will speed up the development of quantum computing systems."/>
+  </head>
+  <body>
+    <article>
+      <h1>Intel Labs unveils cryogenic control chip for quantum computing</h1>
+      <address><time datetime="2019-12-09T15:00:58+00:00">09 Dec 2019, 15:00</time> by <a rel="author" href="https://venturebeat.com/author/dean-takahashi/" target="_blank">Dean Takahashi</a></address>
+      <p><a href="https://www.intel.com/content/www/us/en/research/quantum-computing.html">Intel Labs</a> unveiled a first-of-its-kind cryogenic control chip — code-named Horse Ridge — that will speed up the development of <a href="https://venturebeat.com/2019/03/15/probeat-ai-and-quantum-computing-continue-to-collide/">quantum computing</a> systems.</p>
+      <p>Horse Ridge will enable control of multiple quantum bits (qubits) and set a clear path toward scaling larger systems — a major milestone on the path to quantum practicality. The challenge of quantum computing is that it only really works at near-freezing temperatures right now. Intel is trying to change that, but the control chip is a step toward enabling control at very low temperatures, as it eliminates hundreds of wires going into a refrigerated case that houses the quantum computer.</p>
+      <p>Developed in partnership with Intel’s research collaborators at QuTech at Delft University of Technology, Horse Ridge is fabricated using Intel’s 22-nanometer FinFET manufacturing technology. The in-house fabrication of these control chips at Intel will dramatically accelerate the company’s ability to design, test, and optimize a commercially viable quantum computer, the company said.</p>
+      <p>A lot of research has gone into qubits, which can do simultaneous calculations. But Intel saw that controlling the qubits created another big challenge to developing large-scale commercial quantum systems, said Jim Clarke, director of quantum hardware, at an Intel press event. This kind of work has been going on for more than five years at Intel’s research campus in Ronler Acres, Oregon.</p>
+      <p>“It’s pretty unique in the community, as we’re going to take all these racks of electronics you see in a university lab and miniaturize that with our 22-nanometer technology and put it inside of a fridge,” said Clarke. “And so we’re starting to control our qubits very locally without having a lot of complex wires for cooling.”</p>
+      <h3>Why it matters</h3>
+      <figure>
+        <img src="https://venturebeat.com/wp-content/uploads/2019/12/intel-2.jpg?resize=1024%2C683&amp;strip=all"/>
+        <figcaption>Above: A July 2018 photo shows a dilution refrigerator at QuTech’s quantum computing lab. QuTech at Delft University of Technology is Intel Corporation’s quantum computing research partner in the Netherlands.</figcaption>
+      </figure>
+      <p>In the race to realize the power and potential of quantum computers, researchers have focused extensively on qubit fabrication, building test chips that demonstrate the exponential power of a small number of qubits operating in superposition.</p>
+      <p>However, in early quantum hardware developments — including design, testing, and characterization of Intel’s silicon spin qubit and superconducting qubit systems — Intel identified a major bottleneck toward realizing commercial-scale quantum computing: interconnects and control electronics.</p>
+      <p>With Horse Ridge, Intel introduces a solution that will enable the company to control multiple qubits and set a clear path toward scaling future systems to larger qubit counts — a major milestone on the path to quantum practicality.</p>
+      <p>“We’re looking at what it’s going to take to scale quantum systems to a large number of qubits,” said Richard Uhlig, managing director of Intel Labs, in an interview with VentureBeat. “And we need to get there because until you get to thousands or millions of qubits, you’re not really going to be solving the interesting problems. If you want to do that, you have to have a strategy for configuring, reading out the state of qubits in large numbers. And today, those control electronics need to run at higher temperatures than the qubits themselves.”</p>
+      <h3>What quantum practicality is</h3>
+      <figure>
+        <img src="https://venturebeat.com/wp-content/uploads/2019/12/intel-3.jpg?resize=450%2C668&amp;strip=all"/>
+        <figcaption>Above: Jim Clarke, Intel Corporation’s director of quantum hardware, holds an Intel 49-qubit quantum test chip, called “Tangle Lake,” in front of a dilution refrigerator at QuTech’s quantum computing lab inside Delft University of Technology in July 2018.</figcaption>
+      </figure>
+      <p>Quantum computers promise the potential to tackle problems that conventional computers can’t handle by leveraging a phenomenon of quantum physics that allows qubits to exist in multiple states simultaneously. As a result, qubits can conduct a large number of calculations at the same time — dramatically speeding up complex problem-solving.</p>
+      <p>Intel acknowledged that the quantum research community is still at mile one of a marathon toward demonstrating quantum practicality, a benchmark for determining whether a quantum system can deliver game-changing performance to solve real-world problems. Intel’s investment in quantum computing covers the full hardware and software stack in pursuit of the development and commercialization of a practical, commercially viable quantum system.</p>
+      <p>“Qubits run at low temperatures because they’re fragile,” Uhlig said. “Any noise, like thermal noise, will cause them to de-cohere. The control electronics therefore have to run at low temperatures too, unless you want to send a bunch of wires into it.”</p>
+      <h3>Why Horse Ridge is important</h3>
+      <p>To date, researchers have been focused on building small-scale quantum systems to demonstrate the potential of quantum devices. In these efforts, researchers have relied upon existing electronic tools and high-performance computing rack-scale instruments to connect the quantum system inside the cryogenic refrigerator to the traditional computational devices regulating qubit performance and programming the system.</p>
+      <p>These devices are often custom designed to control individual qubits, requiring hundreds of connective wires into and out of the refrigerator. However, this extensive control cabling for each qubit hinders the ability to scale the quantum system to the hundreds or thousands of qubits required to demonstrate quantum practicality, not to mention the millions of qubits required for a commercially viable quantum solution.</p>
+      <p>With Horse Ridge, Intel radically simplifies the control electronics required to operate a quantum system. Replacing these bulky instruments with a highly integrated system-on-chip (SoC) will simplify system design and allow for sophisticated signal processing techniques to accelerate set-up time, improve qubit performance, and enable the system to efficiently scale to larger qubit counts.</p>
+      <p>“One option is to run the control electronics at room temperature and run coax cables down to configure the qubits. But you can immediately see that you’re going to run into a scaling problem because you get to hundreds or thousands of cables and it’s not going to work,” Uhlig said. “What we’ve done with Horse Ridge — that’s the code name for this cryo CMOS controller — is that it’s able to run at temperatures that are much closer to the qubits themselves. It runs at about 4 degrees Kelvin. The innovation is that we solved the challenges around getting CMOS to run at that at those temperatures and still have a lot of flexibility in how the qubits are controlled and configured.”</p>
+      <h3>More about Horse Ridge</h3>
+      <figure>
+        <img src="https://venturebeat.com/wp-content/uploads/2019/12/Stefano-Pellerano-Principal-Engineer-at-Intel-Labs-holds-Horse-Ridge_Hi-Res-1.jpg?resize=700%2C394&amp;strip=all"/>
+        <figcaption>Above: Stefano Pellerano, principal engineer at Intel Labs, holds Horse Ridge. The new cryogenic control chip will speed the development of full-stack quantum computing systems, marking a milestone in the development of a commercially viable quantum computer.</figcaption>
+      </figure>
+      <p>Horse Ridge is a highly integrated mixed-signal SoC that brings the qubit controls into the quantum refrigerator — as close as possible to the qubits themselves. It effectively reduces the complexity of quantum control engineering from hundreds of cables running into and out of a refrigerator to a single unified package operating near the quantum device.</p>
+      <p>Designed to act as a radio frequency (RF) processor to control the qubits operating in the refrigerator, Horse Ridge is programmed with instructions that correspond to basic qubit operations. It translates those instructions into electromagnetic microwave pulses that can manipulate the state of the qubits.</p>
+      <p>Named for one of the coldest regions in Oregon, the Horse Ridge control chip was designed to operate at cryogenic temperatures — approximately 4 degrees Kelvin. To put this in context, 4 Kelvin is only 7 degrees Fahrenheit and 4 degrees Celsius warmer than absolute zero — a temperature so cold that atoms nearly stop moving.</p>
+      <p>Intel said this feat is particularly exciting as Intel progresses its research into silicon spin qubits, which have the potential to operate at slightly higher temperatures than current quantum systems require.</p>
+      <p>Today, a quantum computer operates at in the millikelvin range — just a fraction of a degree above absolute zero. But silicon spin qubits have properties that could allow them to operate at 1 degree Kelvin or higher temperatures, which would dramatically reduce the challenges of refrigerating the quantum system.</p>
+      <p>As research progresses, Intel aims to have cryogenic controls and silicon spin qubits operate at the same temperature level. This will enable the company to create a solution with the qubits and controls in one streamlined package.</p>
+      <p>“It’s a fully working controller, one that we’ve demonstrated at at at those temperatures,” Uhlig said. “And, you know, we’ve been able to show that it works successfully, with full flexibility on the waveforms that you can even send down to the qubits for the purpose of control and readout.”</p>
+    </article>
+  </body>
+</html>

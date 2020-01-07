@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://www.golem.de/news/vpn-technik-wireguard-in-linux-kernel-eingepflegt-1912-145437.html"/>
+    <meta property="og:site_name" content="Golem.de"/>
+    <meta property="article:published_time" content="2019-12-09T15:26:02+00:00"/>
+    <meta property="og:title" content="Wireguard in Linux-Kernel eingepflegt"/>
+    <meta property="og:description" content="Nach der Aufnahme des angepassten Krypto-Codes ist auch die VPN-Technik Wireguard in einen wichtigen Entwicklungszweig des Linux-Kernels eingepflegt worden. Wireguard erscheint"/>
+  </head>
+  <body>
+    <article>
+      <h1>Wireguard in Linux-Kernel eingepflegt</h1>
+      <h2>Nach der Aufnahme des angepassten Krypto-Codes ist auch die VPN-Technik Wireguard in einen wichtigen Entwicklungszweig des <a href="https://www.golem.de/specials/linux-kernel/">Linux-Kernels</a> eingepflegt worden. Wireguard erscheint damit im kommenden Frühjahr wohl erstmals mit Linux 5.6.</h2>
+      <address><time datetime="2019-12-09T15:26:02+00:00">09 Dec 2019, 15:26</time> by <a rel="author">Sebastian Grüner</a></address>
+      <p>Der für den Netzwerkcode des Linux-Kernels zuständige Entwickler David Miller hat die VPN-Technik <a href="https://git.kernel.org/pub/scm/linux/kernel/git/davem/net-next.git/commit/?id=e7096c131e5161fa3b8e52a650d7719d2857adfd">Wireguard in seinen Net-Next-Entwicklungszweig aufgenommen</a>. Das gilt als Voraussetzung für die Übernahme in den Hauptentwicklungszweig von Linux, der durch Linus Torvalds betreut wird. Läuft alles nach Plan, wird Wireguard damit Teil des kommenden Linux 5.6, das vermutlich Mitte April 2020 erscheinen wird.</p>
+      <p>Wireguard wurde durch dessen Initiator und Hauptentwickler Jason Donenfeld <a href="https://www.golem.de/news/security-wireguard-vpn-zur-aufnahme-in-linux-kernel-vorgeschlagen-1808-135783.html">erstmals im vergangenen Sommer zur Aufnahme in den Linux-Kernel vorgeschlagen</a>. Der wohl größte Vorteil der Technik im Vergleich zu bisherigen Lösungen besteht vor allem in der extrem geringen Anzahl an Codezeilen der Technik. So umfasst die Kernel-Technik selbst weniger als 10.000 Zeilen Code. Die bisher zu Verfügung stehenden Alternativen wie OpenVPN oder auch IPSec umfassen dagegen mehrere Hunderttausend Zeilen Code.</p>
+      <p>Eine der grundlegenden Ideen von Wireguard ist zudem, die Technik als normale Netzwerkschnittstelle des Systems bereitzustellen. Sämtliche Werkzeuge, die bisher etwa Schnittstellen wie eth0 und wlan0 verwalten, können so theoretisch auch sehr einfach die Wireguard-Schnittstelle wg0 verwalten. Vor allem diese Einfachheit bescherte dem Projekt schnell viele Unterstützer, darunter auch Linus Torvalds.</p>
+      <h4>Langwierige Diskussionen und Arbeit</h4>
+      <p>Die von Wireguard-Entwickler Donenfeld zunächst vorgeschlagene Implementierung der Technik sorgte aber für teils heftige Kritik der Kernel-Entwickler. Vor allem der Umgang mit den kryptographischen Routinen war einer der großen Streitpunkte. So bricht die von Donenfeld erstellte Kryptobibliothek Zinc mit dem Konzept der Krypto-APIs im Kernel und führt stattdessen neue Schnittstellen ein.</p>
+      <p>Dieses Problem wurde jedoch inzwischen gelöst, da letztlich die bisherige Krypto-API derart erweitert wurden, dass Wireguard diese einfach nutzen kann. Dieser <a href="https://www.golem.de/news/vpn-krypto-api-des-linux-kernels-fuer-wireguard-angepasst-1911-145073.html">neue Krypto-Code findet sich inzwischen im Hauptzweig</a> des Linux-Kernels und wird mit der kommenden Version 5.5 erscheinen. Der eingepflegte Wireguard-Code basiert auf diesem angepassten Krypto-Code.</p>
+      <p>Donenfeld zeigt sich <a href="https://lore.kernel.org/wireguard/CAHmME9oRJqvMWF9rnSZejWe9J6ONUMbk108VkH1Qfy513Vp=dg@mail.gmail.com/T/#u">in seiner Ankündigungs-E-Mail</a> sehr erfreut über den erreichten Meilenstein und dankt allen Beteiligten. Als nächster Schritt soll das Entwicklungsmodell von Wireguard an das übliche Prozedere des Linux-Kernels angepasst werde, <a href="https://lore.kernel.org/wireguard/CAHmME9oUfp_1udMFNMpeXPeoa7aacdNp9Q31eKvoTBpu+G5rpQ@mail.gmail.com/T/">wie Donenfeld schreibt</a>. Die bisher regelmäßig veröffentlichten Snapshots des Codes sollen damit langfristig abgelöst werden.</p>
+    </article>
+  </body>
+</html>

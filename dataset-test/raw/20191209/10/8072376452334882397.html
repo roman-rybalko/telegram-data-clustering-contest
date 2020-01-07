@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://www.cbronline.com/answer/what-is-aws-wavelength"/>
+    <meta property="og:site_name" content="Computer Business Review"/>
+    <meta property="article:published_time" content="2019-12-09T10:31:40+00:00"/>
+    <meta property="og:title" content="AWS Wavelength: The Cloud Comes to Your 5G Network"/>
+    <meta property="og:description" content="What is AWS Wavelength? One of the most-hyped announcements at Re:Invent 2019, AWS Wavelength is a bid to bring the cloud right to the telco edge. But..."/>
+  </head>
+  <body>
+    <article>
+      <h1>AWS Wavelength: The Cloud Comes to Your 5G Network</h1>
+      <h2>“Even if they could get that capacity, it would be nearly impossible to have a common way to manage across all those providers…”</h2>
+      <address>
+        <time datetime="2019-12-09T10:31:40+00:00">09 Dec 2019, 10:31</time>
+      </address>
+      <p>What is AWS Wavelength? Among a flurry of product announcements at AWS Re:Invent, one drew arguably the most buzz from attendees on the conference floor: AWS Wavelength. Born of four initial partnerships with telecommunications businesses <a href="https://www.verizon.com/">Verizon</a>, <a href="https://www.vodafone.co.uk/">Vodafone</a>, South Korea’s <a href="https://www.sktelecom.com/index_en.html">SK Telecom,</a> and Japan’s <a href="https://www.kddi.com/english/">KDDI</a>, the new service — primed for release in 2020 — aims to bring AWS’s compute and storage services “to the edge of 5G networks”. But what does that really mean?</p>
+      <p>Computer Business Review took a closer look.</p>
+      <figure>
+        <img src="https://www.cbronline.com/wp-content/uploads/2018/09/5g5.png"/>
+      </figure>
+      <h3>What is AWS Wavelength?</h3>
+      <p>There is no magic here — to an end-user the cloud is after all simply services running on third-party infrastructure — and reading between the lines, AWS Wavelength looks set to involve embedding Amazon’s servers at the telco “edge”, from base stations to telco data centres: anywhere it makes sense to put hardware to cut latency.</p>
+      <p>Emerging interactive applications like game streaming, virtual reality, and real-time rendering among others require lower latency than “classical” cloud services can manage, AWS noted, and even with 5G, if application traffic has to make too many hops before it hits an AWS data centre, latency suffers as a result.</p>
+      <p>“Today, application traffic has to travel from a device to a cell tower to metro aggregation sites to regional aggregation sites and to the Internet before it can access resources running in AWS. These network hops can result in latencies of more than 100 milliseconds. This prevents developers from realizing the full potential of 5G to address low-latency use-cases”, AWS explained in its release notes.</p>
+      <related>
+        <a href="https://www.cbronline.com/news/graviton2-aws-arm"/>
+      </related>
+      <p>By teaming up with telcos to embed AWS hardware in their infrastructure, users will get access to AWS services (initially just Amazon EC2, Amazon ECS, and Amazon EKS, with more to follow) as close as possible to the point of use.</p>
+      <p>AWS’s Chris Barclay (principle product manager, tech, EC2) explained to Computer Business Review: “An extension of the AWS cloud within the telco environment, AWS Wavelength uses <a href="https://aws.amazon.com/outposts/">AWS Outposts</a> as a building block to place AWS capacity into these telco facilities and provide AWS services.</p>
+      <p>“What’s unique about AWS Wavelength is the ability to create an EC2 instance directly within a telco provider’s network. This would be incredibly difficult, if not impossible, for customers. Imagine having to contact different telcos, and asking for access to capacity in each of their 5G locations.</p>
+      <related>
+        <a href="https://www.cbronline.com/news/aws-managed-cassandra"/>
+      </related>
+      <p>“And, even if they could get that capacity, it would be nearly impossible to have a common way to manage across all those providers. Wavelength eliminates all this complexity and lets customers use the same familiar AWS APIs, tools, and functionality they use today, to deliver-low latency applications at the edge of 5G networks around the world…</p>
+      <p>“[by embedding] AWS compute and storage services within the network operators’ datacenters at the edge of the 5G network, application traffic only needs to travel from the device to a cell tower to a Wavelength Zone running in a metro aggregation site. By creating a subnet in one or more Wavelength Zones, such as Verizon Chicago, and launching resources like EC2 instances in that subnet, we give customers the same development experience that they’re used to.</p>
+      <figure>
+        <img src="https://www.cbronline.com/wp-content/uploads/2019/12/wavelength5g.jpg"/>
+      </figure>
+      <p>He added: “AWS is responsible for the service. AWS Wavelength Zones are managed by the same control plane as AWS Availability Zones.”</p>
+      <p>Customers will use the same AWS APIs that they’re used to, and won’t need to know anything about the telco provider’s infrastructure or APIs.</p>
+      <p>Pressed on whether there are ways AWS is looking to tie Wavelength more broadly into telco efforts to switch to more cloud-native network functions, Barclay said the service is “an extension of the region for running applications in multi-tenant mode, and does not directly tie into cloud-native functions.”</p>
+      <p>He added: “However, the underlying technology in AWS Wavelength, which is the ability to run AWS virtual infrastructure in telco sites at the edge of 5G networks, can be used for running cloud-native telco workloads. We are actively evaluating and validating various telco network workloads on our edge infrastructure.”</p>
+      <related>
+        <a href="https://www.cbronline.com/news/canonical-charmed-osm"/>
+      </related>
+      <related>
+        <h4>Related News</h4>
+        <a href="https://www.cbronline.com/in-depth/bp-cloud-migration-interview"/>
+        <a href="https://www.cbronline.com/opinion/powering-the-real-time-business"/>
+        <a href="https://www.cbronline.com/opinion/cloud-sprawl"/>
+      </related>
+    </article>
+  </body>
+</html>

@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://www.tomshw.it/hardware/installare-windows-su-mac/"/>
+    <meta property="og:site_name" content="Tom's Hardware"/>
+    <meta property="article:published_time" content="2019-12-09T09:30:00+00:00"/>
+    <meta property="og:title" content="Come installare Windows su un Mac | Tom's Hardware"/>
+    <meta property="og:description" content="Installare Windows su Mac è possibile ed esistono almeno due modi per farlo, di cui uno fornito dalla stessa Apple. Ecco una guida passo - passo che vi spiega come gare."/>
+  </head>
+  <body>
+    <article>
+      <h1>Come installare Windows su un Mac | Tom's Hardware</h1>
+      <address>
+        <time datetime="2019-12-09T09:30:00+00:00">09 Dec 2019, 09:30</time>
+      </address>
+      <p>Installare un sistema operativo <b>Microsoft</b> su un computer <b>Apple</b> è un pensiero che potrebbe far storcere il naso a qualcuno, tuttavia possono esserci situazioni dove <b>alcune applicazioni richiedono necessariamente l’ambiente Windows</b>, per esempio molti giochi, o programmi per usi specifici che non dispongono di uno sviluppo fiorente. Perciò innanzitutto è utile sapere che <b>è possibile dotare il Mac di Windows</b>, e per farlo esistono due metodi.</p>
+      <h3>Assistente Boot Camp per installare Windows sul Mac</h3>
+      <p>Il primo che vedremo è già integrato in macOS e prevede l’uso di <b>Assistente Boot Camp</b>. Quest’app prepara lo spazio dedicato a Windows e scarica i driver necessari per usarlo sul dispositivo Apple. È un’app nativa, quindi riceve automaticamente eventuali aggiornamenti. Inoltre crea un dual-boot, rendendo i sistemi operativi completamente indipendenti per quanto riguarda l’uso delle risorse (RAM, CPU, scheda video se dedicata).</p>
+      <p>Proprio per questo, però, il passaggio da un ambiente all’altro richiederà sempre un riavvio, e lo scambio di dati da uno all’altro può non essere del tutto immediato.</p>
+      <h4>Mac compatibili</h4>
+      <p>Ad oggi, l’installazione di Windows con Boot Camp è garantita su:</p>
+      <ul>
+        <li><a href="https://support.apple.com/it-it/HT201608">MacBook</a> introdotti a partire dal 2015 *</li>
+        <li><a href="https://support.apple.com/it-it/HT201862">MacBook Air</a> introdotti a partire dal 2012 *</li>
+        <li><a href="https://support.apple.com/it-it/HT201300">MacBook Pro</a> introdotti a partire dal 2012 *</li>
+        <li><a href="https://support.apple.com/it-it/HT201894">Mac mini</a> introdotti a partire dal 2012</li>
+        <li><a href="https://support.apple.com/it-it/HT201634">iMac</a> introdotti a partire dal 2012  *</li>
+        <li>iMac Pro (tutti i modelli) *</li>
+        <li><a href="https://support.apple.com/it-it/HT202888">Mac Pro</a> introdotti a fine 2013 *</li>
+      </ul>
+      <h4>Requisiti</h4>
+      <p>Prima di cominciare, vediamo cosa è necessario avere/fare:</p>
+      <ul>
+        <li>almeno 64 GB di spazio sul disco di destinazione, anche se è consigliabile averne almeno 128. Inoltre, qualora la memoria RAM sia superiore a 128 GB, lo spazio libero dovrà essere uguale o superiore alla sua quantità.</li>
+        <li>un’unità USB da almeno 16 GB formattata in MS-DOS (FAT) con partizionamento MBR. NOTA: i modelli marcati con (*) nella lista sopra, nelle loro versioni dal 2015 in avanti, NON richiedono l’unità esterna.</li>
+        <li>un product key di Windows per versione completa, non per aggiornamento.</li>
+      </ul>
+      <p>Anche se non necessario <b>è caldamente raccomandato fare un bel backup dei dati</b>, magari con Time Machine. Verificati tutti i requisiti, entriamo nel vivo della procedura.</p>
+      <h4>Passo 1 – Procurarsi un’immagine disco di Windows</h4>
+      <p>Giustamente, nulla sarebbe possibile senza una copia verificata di Windows. Quindi visitiamo l’<a href="https://www.microsoft.com/it-it/software-download/windows10?tduid=(3d32a0a7c7c15258345da3982a19e131)(259740)(2542549)(UUimUdUnU24145)()">area download Microsoft dedicata</a> e nella parte inferiore della pagina, sotto alla voce <b>“Seleziona l’edizione”</b>, scegliere la versione più recente di <b>“Windows 10”</b> e premere <b>“Conferma”</b>. Dal menù a tendina successivo selezionare la lingua desiderata e confermare di nuovo. A questo punto, selezionando la <b>versione a 64 bit</b> ci verrà chiesto dove salvare il file ISO. Salviamolo sul Mac, magari nella classica Scrivania. Una volta terminato il download, passiamo oltre.</p>
+      <slideshow>
+        <figure>
+          <img src="https://www.tomshw.it/images/images/2019/11/scarica-windows-10-64381.768x432.jpg"/>
+        </figure>
+        <figure>
+          <img src="https://www.tomshw.it/images/images/2019/11/scarica-windows-10-64382.768x432.jpg"/>
+        </figure>
+        <figure>
+          <img src="https://www.tomshw.it/images/images/2019/11/scarica-windows-10-64383.768x432.jpg"/>
+        </figure>
+      </slideshow>
+      <h4>Passo 2 – Aprire Assistente Boot Camp</h4>
+      <p>Apriamo l’<b>Assistente Boot Camp </b>da <b>Launchpad &gt; Altro </b>(oppure cerchiamolo con Spotlight &gt; <b>⌘</b><b> CMD + barra spaziatrice &gt; digitare “Boot Camp”</b>) e fare clic su <b>“Continua”</b>. Nell’eventualità che si debba liberare dello spazio per proseguire, la prossima schermata mostrerà ciò che è possibile eliminare (ad esempio istantanee di Time Machine meno recenti e file di iCloud nella cache). Questa procedura potrebbe richiedere tempo, una volta finita o in caso non sia necessaria, nella schermata successiva selezionare tutte le attività e fare clic su <b>“Continua”</b>. Se non abbiamo ancora inserito l’unità USB da usare come disco d’installazione facciamolo, o il sistema ci impedirà di proseguire.</p>
+      <p>In caso il dispositivo supporti Boot Camp senza l’uso di unità esterne il prossimo passaggio non è necessario.</p>
+      <slideshow>
+        <figure>
+          <img src="https://www.tomshw.it/images/images/2019/11/bootcamp-guida-mac-os-64407.768x432.jpg"/>
+        </figure>
+        <figure>
+          <img src="https://www.tomshw.it/images/images/2019/11/bootcamp-guida-mac-os-64408.768x432.jpg"/>
+        </figure>
+        <figure>
+          <img src="https://www.tomshw.it/images/images/2019/11/bootcamp-guida-mac-os-64409.768x432.jpg"/>
+        </figure>
+        <figure>
+          <img src="https://www.tomshw.it/images/images/2019/11/bootcamp-guida-mac-os-64410.768x432.jpg"/>
+        </figure>
+        <figure>
+          <img src="https://www.tomshw.it/images/images/2019/11/bootcamp-guida-mac-os-64411.768x432.jpg"/>
+        </figure>
+        <figure>
+          <img src="https://www.tomshw.it/images/images/2019/11/bootcamp-guida-mac-os-64412.768x432.jpg"/>
+        </figure>
+      </slideshow>
+      <h4>Passo 3 – Creazione dell’unità USB (per computer che la richiedono)</h4>
+      <p>A questo punto macOS dovrebbe riconoscere automaticamente il percorso della ISO da usare, in caso contrario bisogna selezionarlo, al pari dell’unità USB di destinazione <i>(ATTENZIONE: verrà cancellato tutto il contenuto!)</i>. Una volta confermate le scelte con <b>“Continua”</b>, partirà la creazione del disco d’installazione. Il processo potrebbe richiedere un po’ di tempo.</p>
+      <slideshow>
+        <figure>
+          <img src="https://www.tomshw.it/images/images/2019/11/bootcamp-guida-mac-os-64413.768x432.jpg"/>
+        </figure>
+        <figure>
+          <img src="https://www.tomshw.it/images/images/2019/11/bootcamp-guida-mac-os-64414.768x432.jpg"/>
+        </figure>
+        <figure>
+          <img src="https://www.tomshw.it/images/images/2019/11/bootcamp-guida-mac-os-64415.768x432.jpg"/>
+        </figure>
+      </slideshow>
+      <h4>Passo 4 – Partizionamento del disco di avvio</h4>
+      <p>Creata l’unità d’installazione è il momento di decidere quanto spazio riservare alla porzione Windows del computer. Quindi muoviamo il cursore fino al raggiungimento dello spazio desiderato e facciamo clic su <b>“Installa”</b>. Durante il processo verrà richiesta più volte la password di amministrazione. Al termine, il Mac sarà riavviato e partirà automaticamente l’installazione di Windows.</p>
+      <slideshow>
+        <figure>
+          <img src="https://www.tomshw.it/images/images/2019/11/bootcamp-guida-mac-os-64416.768x432.jpg"/>
+        </figure>
+        <figure>
+          <img src="https://www.tomshw.it/images/images/2019/11/bootcamp-guida-mac-os-64417.768x432.jpg"/>
+        </figure>
+      </slideshow>
+      <h4>Passo 5 – Installazione di Windows</h4>
+      <p>Questo passaggio non differisce molto da una normale installazione di Windows 10 su PC. L’unica differenza consiste nell’<i>obbligo assoluto</i> di selezionare quando richiesto la partizione appositamente creata, che si chiama <b>BOOTCAMP</b>. Solitamente, è già selezionata all’apertura della pagina.</p>
+      <p>
+        <i>Attenzione a selezionare quella partizione e a non creare, formattare o eliminarne altre: si rischia la perdita totale dei dati!</i>
+      </p>
+      <figure>
+        <img src="https://www.tomshw.it/images/images/2019/11/selezione-partizione-bootcamp-64404.768x432.jpg"/>
+      </figure>
+      <h4>Passo 6 – Installazione di Boot Camp su Windows</h4>
+      <p>Terminata la configurazione di Windows (lingua, reti, account, Cortana eccetera) ed al primo login nel sistema operativo, dovrebbe avviarsi il programma d’installazione di Boot Camp. Se così non fosse, apriamo <b>l’unità esterna</b> usata per l’installazione e poi la <b>cartella BootCamp.</b></p>
+      <p>Eseguiamo quindi il file <b>“Setup.exe”</b>. Premiamo <b>“Avanti”</b> nella finestra di benvenuto e attendiamo che l’installazione sia completa. Se il Controllo account utente dovesse chiedere la password, inseriamola, e allo stesso tempo autorizziamo le modifiche al sistema qualora ci venga chiesto. Così facendo verranno installati sul Mac tutti i driver necessari per farlo funzionare con Windows. Alla fine, sarà richiesto un riavvio.</p>
+      <slideshow>
+        <figure>
+          <img src="https://www.tomshw.it/images/images/2019/11/installa-bootcamp-win-64385.768x432.jpg"/>
+        </figure>
+        <figure>
+          <img src="https://www.tomshw.it/images/images/2019/11/installa-bootcamp-win-64384.768x432.jpg"/>
+        </figure>
+        <figure>
+          <img src="https://www.tomshw.it/images/images/2019/11/bootcamp-guida-windows-64418.768x432.jpg"/>
+        </figure>
+        <figure>
+          <img src="https://www.tomshw.it/images/images/2019/11/bootcamp-guida-windows-64419.768x432.jpg"/>
+        </figure>
+        <figure>
+          <img src="https://www.tomshw.it/images/images/2019/11/bootcamp-guida-windows-64420.768x432.jpg"/>
+        </figure>
+        <figure>
+          <img src="https://www.tomshw.it/images/images/2019/11/bootcamp-guida-windows-64421.768x432.jpg"/>
+        </figure>
+      </slideshow>
+      <h3>Gestione del Dual Boot</h3>
+      <p>La procedura è sostanzialmente finita, ma allo stato attuale il Mac si riavvierà sempre in Windows, quindi vediamo come gestire questo aspetto.</p>
+      <p>Anzitutto, il sistema operativo desiderato può essere sempre selezionato <b>all’accensione del computer, tenendo premuto il tasto </b><b>⌥</b><b> ALT</b> (a volte indicato come “option”) fino a che non apparirà la schermata Startup Manager; a quel punto sarà sufficiente scegliere la partizione macOS o Boot Camp con i tasti direzionali e premere Invio.</p>
+      <figure>
+        <img src="https://www.tomshw.it/images/images/2019/11/selezione-so-avvio-64406.768x432.jpg"/>
+      </figure>
+      <p>Se vogliamo rendere la nostra scelta permanente le strade sono le seguenti:</p>
+      <ul>
+        <li>in <b>Windows</b>, apriamo le opzioni di Boot Camp che si trovano nella <b>tray bar</b>. Andiamo quindi ad estenderla, e facciamo clic sull’<b>icona a rombo</b> per aprire il <b>“Pannello di controllo Boot Camp”.</b> Facciamo la nostra scelta nella scheda <b>“Disco di Avvio”</b>; in alternativa, se invece di aprire il pannello di controllo clicchiamo su <b>“Riavvia in OSX” </b>il Mac effettuerà un riavvio in macOS <b>e lo ripristinerà come predefinito</b>. Quest’opzione non sempre funziona, in caso utilizzare gli altri metodi.</li>
+      </ul>
+      <slideshow>
+        <figure>
+          <img src="https://www.tomshw.it/images/images/2019/11/opzioni-bootcamp-64424.768x432.jpg"/>
+        </figure>
+        <figure>
+          <img src="https://www.tomshw.it/images/images/2019/11/opzioni-bootcamp-64425.768x432.jpg"/>
+        </figure>
+        <figure>
+          <img src="https://www.tomshw.it/images/images/2019/11/opzioni-bootcamp-64426.768x432.jpg"/>
+        </figure>
+      </slideshow>
+      <ul>
+        <li>Da <b>macOS</b>, aprire menù <b>Mela &gt; Preferenze di Sistema &gt; Disco di Avvio</b> e sbloccare le modifiche con il lucchetto e la password amministratore, poi selezionare il disco desiderato. È disponibile un tasto <b>“Riavvia…” </b>che consente il riavvio immediato nel sistema operativo selezionato.</li>
+      </ul>
+      <slideshow>
+        <figure>
+          <img src="https://www.tomshw.it/images/images/2019/10/macos-catalina-screentime-56560.768x432.jpg"/>
+        </figure>
+        <figure>
+          <img src="https://www.tomshw.it/images/images/2019/11/opzioni-bootcamp-64422.768x432.jpg"/>
+        </figure>
+        <figure>
+          <img src="https://www.tomshw.it/images/images/2019/11/opzioni-bootcamp-64423.768x432.jpg"/>
+        </figure>
+      </slideshow>
+      <p>Dal pannello di controllo Boot Camp in Windows è possibile accedere anche ad altre opzioni utili riguardo tastiera e trackpad, come il comportamento dei tasti funzione, la luminosità e le impostazioni dei clic.</p>
+      <slideshow>
+        <figure>
+          <img src="https://www.tomshw.it/images/images/2019/11/opzioni-bootcamp-64427.768x432.jpg"/>
+        </figure>
+        <figure>
+          <img src="https://www.tomshw.it/images/images/2019/11/opzioni-bootcamp-64428.768x432.jpg"/>
+        </figure>
+      </slideshow>
+      <h3>Passaggio di file tra macOS e Windows</h3>
+      <p>Partiamo dalla cosa più semplice. Recuperare file <b>dalla partizione BOOTCAMP mentre stiamo usando macOS </b>è possibile senza alcun artificio. Apple infatti concede ai suoi sistemi operativi l’accesso in sola lettura alle partizioni NTFS (vedere immagine sotto, non vengono mostrate opzioni di creazione o modifica alla pressione del tasto destro del mouse), quindi sarà sufficiente accedere all’unità BOOTCAMP con il Finder e copiare ciò che ci serve nella partizione macOS.</p>
+      <figure>
+        <img src="https://www.tomshw.it/images/images/2019/11/sola-lettura-ntfs-64405.768x432.jpg"/>
+      </figure>
+      <p>Per il processo inverso purtroppo dovremo ricorrere a degli <i>escamotage</i>. Ad oggi, le installazioni di Windows fatte con Boot Camp non consentono neanche la visualizzazione in sola lettura delle partizioni di macOS, per lo meno quelle formattate nel recentemente introdotto file system APFS. quel che si può fare oltre a ricorrere alla classica chiavetta USB, se lo spazio sul disco lo consente, è ritagliare una partizione di scambio formattata in exFAT o FAT32 (MS-DOS, come chiamato in macOS), ove entrambi i sistemi operativi possano leggere e scrivere senza problemi.</p>
+      <figure>
+        <img src="https://www.tomshw.it/images/images/2019/11/bootcamp-scambio-dati-64386.768x432.jpg"/>
+      </figure>
+      <h3>Eliminazione della partizione Windows</h3>
+      <p>E se non servisse più avere Windows? Anzitutto <i>non bisogna assolutamente ricorrere a metodi fai-da-te</i> con programmi di partizionamento o simili. Inoltre, prima di procedere è bene <b>salvare eventuali dati</b> d’interesse presenti nella partizione BOOT CAMP, che verrà eliminata insieme a tutto ciò che contiene.</p>
+      <p>Una volta pronti, questi sono i passaggi da seguire:</p>
+      <ul>
+        <li>Avviare il Mac in macOS</li>
+        <li>Aprire Assistente Boot Camp</li>
+        <li>Se vengono visualizzate le attività va spuntato soltanto <b>“Rimuovi Windows 10 o versione successiva”</b>, quindi fare clic su <b>“Continua”</b></li>
+        <li>In questo passaggio Assistente Boot Camp ricorda nuovamente che la procedura è irreversibile; se abbiamo recuperato tutti i dati di nostro interesse possiamo fare clic su <b>“Ripristina”</b> ed attendere il termine della procedura. Nel caso il Mac abbia più dischi, dovremo selezionare quello che contiene Windows.</li>
+      </ul>
+      <slideshow>
+        <figure>
+          <img src="https://www.tomshw.it/images/images/2019/11/cancella-bootcamp-64376.768x432.jpg"/>
+        </figure>
+        <figure>
+          <img src="https://www.tomshw.it/images/images/2019/11/cancella-bootcamp-64377.768x432.jpg"/>
+        </figure>
+      </slideshow>
+      <h3>Usare VirtualBox per virtualizzare Windows 10 in macOS</h3>
+      <p>Dopo aver visto come <i>installare </i>Windows 10 sul nostro Mac, vediamo ora un’alternativa: la virtualizzazione. Per chi non ci fosse mai passato, consiste nel creare una macchina virtuale <i>all’interno</i> del sistema operativo nativo (o <i>host</i>), nel nostro caso macOS.</p>
+      <p>Di conseguenza, avvieremo la macchina virtuale direttamente da macOS, senza riavviare e senza modificare l’unità principale con il partizionamento. Questo metodo rende Windows 10 maggiormente accessibile e pronto all’uso, il rovescio della medaglia è che la virtual machine condividerà le risorse (RAM, processore, disco fisso ed eventuale scheda video dedicata) con macOS, quindi potrebbe avere un impatto importante sulle prestazioni globali del computer. Queste impostazioni però, sono personalizzabili.</p>
+      <p>Esistono diversi software per questo scopo, uno dei più blasonati è sicuramente <a href="https://www.parallels.com/it/products/desktop/">Parallels Desktop</a>, che è ben sviluppato e curato, si integra perfettamente nell’ambiente MacOS ma è a pagamento (esiste la possibilità di provarlo). Il software che vedremo è gratuito ed open source, si chiama VirtualBox, è molto conosciuto nell’ambiente e funziona piuttosto bene.</p>
+      <h4>Passo 1 – Procurarsi un’immagine disco di Windows</h4>
+      <p>Questo passo è identico a quello precedentemente descritto per Boot Camp, quindi è utilizzabile <a href="https://www.tomshw.it/hardware/installare-windows-su-mac/#ISO_WINDOWS">il punto primo della guida precedente</a>. Ugualmente, servirà un codice product key in caso volessimo usare stabilmente questa macchina virtuale.</p>
+      <h4>Passo 2 – Installare VirtualBox</h4>
+      <p>Per procurarsi questo programma visitiamo l’area download del <a href="https://www.virtualbox.org/wiki/Downloads">sito ufficiale</a>, e clicchiamo la voce “OS X hosts”. Partirà immediatamente il download dell’immagine disco. Una volta terminato, apriamo il file scaricato e apriamo il pacchetto <b>VirtualBox.pkg </b>per avviare l’installazione del programma. In seguito, basterà cliccare su <b>“Continua”</b> e <b>“Installa”</b>.</p>
+      <p>Se il sistema bloccasse l’installazione delle estensioni di sistema, basterà aprire le preferenze direttamente dalla finestra di dialogo, sbloccare le modifiche con il lucchetto e consentire il caricamento del software Oracle. Nonostante il messaggio di installazione non riuscita, con questo passaggio sarà tutto ok. Per terminare la procedura, clicchiamo su <b>“Chiudi</b><b>” </b>e <b>“Non spostarlo” </b>(il disco virtuale di installazione può servire di nuovo).</p>
+      <slideshow>
+        <figure>
+          <img src="https://www.tomshw.it/images/images/2019/11/passo-2-65972.768x432.jpg"/>
+        </figure>
+        <figure>
+          <img src="https://www.tomshw.it/images/images/2019/11/passo-2-65973.768x432.jpg"/>
+        </figure>
+        <figure>
+          <img src="https://www.tomshw.it/images/images/2019/11/passo-2-65974.768x432.jpg"/>
+        </figure>
+        <figure>
+          <img src="https://www.tomshw.it/images/images/2019/11/passo-2-65975.768x432.jpg"/>
+        </figure>
+        <figure>
+          <img src="https://www.tomshw.it/images/images/2019/11/passo-2-65976.768x432.jpg"/>
+        </figure>
+        <figure>
+          <img src="https://www.tomshw.it/images/images/2019/11/passo-2-65977.768x432.jpg"/>
+        </figure>
+        <figure>
+          <img src="https://www.tomshw.it/images/images/2019/11/passo-2-65978.768x432.jpg"/>
+        </figure>
+        <figure>
+          <img src="https://www.tomshw.it/images/images/2019/11/passo-2-65979.768x432.jpg"/>
+        </figure>
+      </slideshow>
+      <h4>Passo 3 – Creare la macchina virtuale</h4>
+      <p>Terminata l’installazione, possiamo avviare VirtualBox da Launchpad o, come sempre, cercarlo con Spotlight (<b>⌘</b><b> CMD + barra spaziatrice</b>). Una volta aperto facciamo clic su <b>“Nuova”</b> e nel menù che si apre scegliamo un nome per la futura macchina virtuale, il tipo (<b>Windows </b>in questo caso) e <b>Windows 10 </b>32 o 64 bit a seconda della ISO in nostro possesso.</p>
+      <slideshow>
+        <figure>
+          <img src="https://www.tomshw.it/images/images/2019/11/vb-passo-3-65980.768x432.jpg"/>
+        </figure>
+        <figure>
+          <img src="https://www.tomshw.it/images/images/2019/11/vb-passo-3-65981.768x432.jpg"/>
+        </figure>
+        <figure>
+          <img src="https://www.tomshw.it/images/images/2019/11/vb-passo-3-65982.768x432.jpg"/>
+        </figure>
+      </slideshow>
+      <p>Nel passaggio successivo si può scegliere il quantitativo di RAM da destinare alla nostra macchina virtuale. Se possibile, è consigliabile lasciare almeno il minimo scelto dal programma. Fatta la nostra scelta col cursore o digitando nello spazio, proseguiamo con <b>“Continua”</b>.</p>
+      <figure>
+        <img src="https://www.tomshw.it/images/images/2019/11/vb-passo-3-65983.768x432.jpg"/>
+      </figure>
+      <p>Oltre alla RAM, avremo bisogno di un disco fisso virtuale, quindi selezioniamo <b>“Crea subito un disco fisso virtuale” </b>e clicchiamo <b>“Crea”</b>. Nella schermata che segue possiamo scegliere il tipo di disco virtuale, e come suggerisce il programma stesso, se non abbiamo esigenze di condivisione con altri programmi, possiamo lasciare <b>“VDI”</b>, che è il formato nativo (gli altri, nell’ordine, sono proprietari di <b>Windows (VHD) </b>e <b>VMWare (VMDK)</b>, un altro programma di virtualizzazione).</p>
+      <slideshow>
+        <figure>
+          <img src="https://www.tomshw.it/images/images/2019/11/vb-passo-3-65984.768x432.jpg"/>
+        </figure>
+        <figure>
+          <img src="https://www.tomshw.it/images/images/2019/11/vb-passo-3-65985.768x432.jpg"/>
+        </figure>
+      </slideshow>
+      <p>Il prossimo passaggio relativo al disco è la scelta dell’<b>allocazione dinamica</b> o di una <b>dimensione fissa.</b> Se manteniamo la prima opzione, il programma destinerà alla macchina virtuale soltanto lo spazio richiesto in funzione dell’utilizzo. Proseguendo, sceglieremo la soglia massima fisicamente occupabile dalla virtual machine. Di nuovo, Catalina potrebbe richiedere autorizzazioni, che devono essere concesse.</p>
+      <slideshow>
+        <figure>
+          <img src="https://www.tomshw.it/images/images/2019/11/vb-passo-3-65986.768x432.jpg"/>
+        </figure>
+        <figure>
+          <img src="https://www.tomshw.it/images/images/2019/11/vb-passo-3-65987.768x432.jpg"/>
+        </figure>
+        <figure>
+          <img src="https://www.tomshw.it/images/images/2019/11/vb-passo-3-65988.768x432.jpg"/>
+        </figure>
+      </slideshow>
+      <p><b>Adesso che la macchina virtuale esiste</b>, non rimane che installarci il sistema operativo, ma prima di tutto… <b>va accesa</b>. Facciamo <b>doppio clic su di essa </b>e come di consueto concediamo le autorizzazioni richieste da macOS. In questo primo avvio il programma ci guiderà al montaggio della ISO di Windows, quindi clicchiamo il simbolo della cartella e navighiamo fino al suo percorso esatto. A questo punto premiamo <b>“Avvia”</b>.</p>
+      <slideshow>
+        <figure>
+          <img src="https://www.tomshw.it/images/images/2019/11/vb-passo-3-65989.768x432.jpg"/>
+        </figure>
+        <figure>
+          <img src="https://www.tomshw.it/images/images/2019/11/vb-passo-3-65990.768x432.jpg"/>
+        </figure>
+        <figure>
+          <img src="https://www.tomshw.it/images/images/2019/11/vb-passo-3-65991.768x432.jpg"/>
+        </figure>
+        <figure>
+          <img src="https://www.tomshw.it/images/images/2019/11/vb-passo-3-65992.768x432.jpg"/>
+        </figure>
+        <figure>
+          <img src="https://www.tomshw.it/images/images/2019/11/vb-passo-3-65993.768x432.jpg"/>
+        </figure>
+      </slideshow>
+      <p>In caso uscissimo per sbaglio dalla procedura, seguire i passaggi per <a href="https://www.tomshw.it/hardware/installare-windows-su-mac/#UNITA_OTTICHE">montare le unità ottiche</a>, al termine della guida. Altrimenti non sarà possibile riprendere l’installazione!</p>
+      <h4>Passo 4 – Installazione di Windows</h4>
+      <p>Anche in questo caso, la procedura è la medesima di <a href="https://www.tomshw.it/hardware/installazione-di-windows-10/">un’installazione comune</a> di Windows 10. Differentemente da Boot Camp, <b>non c’è pericolo di sbagliare la partizione</b> da destinare al sistema operativo Microsoft, ci sarà soltanto lo spazio libero dell’hard disk virtuale che abbiamo creato. Servirà come in precedenza un codice product key per una versione completa di Windows.</p>
+      <slideshow>
+        <figure>
+          <img src="https://www.tomshw.it/images/images/2019/11/vb-passo-4-65999.768x432.jpg"/>
+        </figure>
+        <figure>
+          <img src="https://www.tomshw.it/images/images/2019/11/vb-passo-4-66000.768x432.jpg"/>
+        </figure>
+        <figure>
+          <img src="https://www.tomshw.it/images/images/2019/11/vb-passo-4-66001.768x432.jpg"/>
+        </figure>
+      </slideshow>
+      <h4>Passo 5 – Installazione delle “guest addictions”</h4>
+      <p>Tecnicamente l’installazione di Windows è fatta, ma è caldamente consigliato installare il pacchetto delle <b>Guest Addictions</b>, per garantire un funzionamento migliore della macchina virtuale e una maggiore integrazione con macOS. Per farlo, andiamo nel menù “<b>Dispositivi”</b> e clicchiamo l’opzione <b>“Inserisci l’immagine del CD delle Guest Addictions”</b>.</p>
+      <p>Successivamente andiamo nella nostra macchina virtuale, apriamo l’unità CD che contiene appunto le Guest Addictions e avviamo uno tra gli eseguibili <b>VBoxWindowsAdditions-amd64.exe</b> o <b>VBoxWindowsAdditions-x86.exe</b>, a seconda dell’architettura scelta per la macchina virtuale. Chiaramente dobbiamo autorizzare l’installazione dei driver se necessario. Al termine della procedura, ci viene richiesto un riavvio della virtual machine.</p>
+      <slideshow>
+        <figure>
+          <img src="https://www.tomshw.it/images/images/2019/11/vb-passo-5-66002.768x432.jpg"/>
+        </figure>
+        <figure>
+          <img src="https://www.tomshw.it/images/images/2019/11/vb-passo-5-66003.768x432.jpg"/>
+        </figure>
+        <figure>
+          <img src="https://www.tomshw.it/images/images/2019/11/vb-passo-5-66004.768x432.jpg"/>
+        </figure>
+        <figure>
+          <img src="https://www.tomshw.it/images/images/2019/11/vb-passo-5-66005.768x432.jpg"/>
+        </figure>
+        <figure>
+          <img src="https://www.tomshw.it/images/images/2019/11/vb-passo-5-66006.768x432.jpg"/>
+        </figure>
+        <figure>
+          <img src="https://www.tomshw.it/images/images/2019/11/vb-passo-5-66007.768x432.jpg"/>
+        </figure>
+        <figure>
+          <img src="https://www.tomshw.it/images/images/2019/11/vb-passo-5-66008.768x432.jpg"/>
+        </figure>
+        <figure>
+          <img src="https://www.tomshw.it/images/images/2019/11/vb-passo-5-66009.768x432.jpg"/>
+        </figure>
+        <figure>
+          <img src="https://www.tomshw.it/images/images/2019/11/vb-passo-5-66010.768x432.jpg"/>
+        </figure>
+        <figure>
+          <img src="https://www.tomshw.it/images/images/2019/11/vb-passo-5-66011.768x432.jpg"/>
+        </figure>
+      </slideshow>
+      <h3>Gestione della macchina virtuale</h3>
+      <p>Ora che la macchina virtuale è completamente funzionante, vediamo alcuni aggiustamenti e finezze. Sicuramente è chiaro come accenderla, ma per spegnerla? Funziona all’incirca come un computer “in carne ed ossa”, ovvero mediante il menù <b>“Arresta” </b>che troviamo all’interno dello <b>“Start”</b>. Un altro metodo è usare il pallino rosso che useremmo per chiudere qualsiasi app o finestra del Mac, in alto a sinistra.</p>
+      <p>Quest’azione aprirà un menù con tre opzioni: <b>“Salvare lo stato della macchina”, “Invia il segnale di arresto”, “Spegni la macchina”</b>. La prima è una sorta di ibernazione; la macchina si spegnerà ma tutto ciò che stiamo facendo rimarrà salvato, per essere recuperato al prossimo riavvio. La seconda equivale ad arrestare il sistema in modo canonico. L’ultima è un arresto forzato.</p>
+      <p>Per accedere alle <b>impostazioni</b> della macchina virtuale, basta selezionarla e cliccare sulle voci a destra, oppure selezionare <b>“Impostazioni”</b> in alto.</p>
+      <figure>
+        <img src="https://www.tomshw.it/images/images/2019/11/vb-passo-3-65989.768x432.jpg"/>
+      </figure>
+      <h3>Condivisione degli appunti / Drag and drop</h3>
+      <p>Se avessimo la necessità di copiare un testo da macOS ed incollarlo nella nostra virtual machine con Windows 10, dobbiamo attivare l’opzione <b>“Appunti condivisi”</b>, raggiungibile dalla scheda <b>“Generale” </b>e nel sottomenù <b>“Avanzate”</b>. È possibile abilitare la condivisione bidirezionale o soltanto da un sistema all’altro.</p>
+      <p>L’opzione sottostante, <b>“Trascina e rilascia”</b>, come suggerisce il nome abilita il supporto al drag and drop, anch’esso gestibile in una o entrambe le direzioni.</p>
+      <figure>
+        <img src="https://www.tomshw.it/images/images/2019/11/vb-gen-66063.768x432.jpg"/>
+      </figure>
+      <h3>Condivisione delle cartelle tra i sistemi operativi</h3>
+      <p>Nel caso in cui avessimo bisogno di uno scambio frequente di dati fra Windows e macOS, è possibile attivare questa funzione tramite la scheda <b>“Cartelle condivise”</b>. Al suo interno troviamo spazio per l’eventuale lista di cartelle condivise e tre pulsanti sulla destra. Facendo clic sul primo in alto si aprirà il menù di scelta, ove scegliere il percorso della cartella da condividere, abilitare il montaggio in sola lettura e/o automatico, specificare una lettera o un percorso per il montaggio nella virtual machine. Per modificare queste impostazioni una volta configurate, il pulsante è il secondo, mentre per eliminare le cartelle il terzo.</p>
+      <slideshow>
+        <figure>
+          <img src="https://www.tomshw.it/images/images/2019/11/vb-gen-66071.768x432.jpg"/>
+        </figure>
+        <figure>
+          <img src="https://www.tomshw.it/images/images/2019/11/vb-gen-66072.768x432.jpg"/>
+        </figure>
+        <figure>
+          <img src="https://www.tomshw.it/images/images/2019/11/vb-gen-66070.768x432.jpg"/>
+        </figure>
+      </slideshow>
+      <h3>Gestione delle risorse dedicate (CPU/unità di archiviazione)</h3>
+      <p>In fase di creazione della macchina virtuale abbiamo deciso le porzioni di RAM e disco fisso dedicate, nella scheda <b>“Sistema”</b> è possibile modificare queste opzioni ed anche <b>dedicare più o meno core della CPU</b>. Gli slide che controllano l’allocazione delle risorse sono colorati di verde e rosso, per indicare i limiti per cui, secondo VirtualBox, il PC potrebbe risentire in prestazioni (VERDE=sicuro; ROSSO=sconsigliato).</p>
+      <slideshow>
+        <figure>
+          <img src="https://www.tomshw.it/images/images/2019/11/vb-gen-66065.768x432.jpg"/>
+        </figure>
+        <figure>
+          <img src="https://www.tomshw.it/images/images/2019/11/vb-gen-66064.768x432.jpg"/>
+        </figure>
+        <figure>
+          <img src="https://www.tomshw.it/images/images/2019/11/vb-gen-66066.768x432.jpg"/>
+        </figure>
+      </slideshow>
+      <h3>Montaggio unità ottiche</h3>
+      <p>Qualora dovessimo installare un programma che necessita di un CD o DVD, o di una ISO, possiamo aggiungere un’unità virtuale dalla scheda <b>“Archiviazione”</b>. Per farlo, clicchiamo sull’icona del <b>CD con il +</b>, scegliamo <b>“Scegli disco”</b> e nel menù successivo selezioniamo il lettore fisico sul Mac o il percorso di un’eventuale ISO con il tasto <b>“Aggiungi”</b>. Questa procedura potrebbe tornare utile se, per sbaglio, in fase di <a href="https://www.tomshw.it/hardware/installare-windows-su-mac/#RITORNO_A_INST_WIN">creazione della virtual machine</a> usciamo dalla configurazione guidata <b>PRIMA </b>di aver indicato la ISO di Windows 10.</p>
+      <slideshow>
+        <figure>
+          <img src="https://www.tomshw.it/images/images/2019/11/vb-gen-66073.768x432.jpg"/>
+        </figure>
+        <figure>
+          <img src="https://www.tomshw.it/images/images/2019/11/vb-gen-66072.768x432.jpg"/>
+        </figure>
+      </slideshow>
+      <h3>Cancellazione della macchina virtuale</h3>
+      <p>In questo caso, liberarci della virtual machine richiede molte meno premure rispetto a Boot Camp: nella pagina principale di VirtualBox è sufficiente cliccare col tasto destro del mouse su di essa e fare <b>“Rimuovi”</b>. L’opzione <b>“Rimuovi solo” </b>consente di mantenere il disco virtuale per poter essere eventualmente riutilizzato, se invece si volesse rimuovere tutto basta fare clic su <b>“Elimina tutti i file”</b>.</p>
+      <h3>Quale metodo usare?</h3>
+      <p>Entrambi i metodi danno lo stesso risultato, un’installazione di Windows 10 sul Mac, ed hanno entrambi lati positivi e negativi. Vediamoli riassunti in una tabella.</p>
+      <table bordered="">
+        <tr>
+          <td colspan="2" align="center">
+            <i>
+              <b>Boot Camp</b>
+            </i>
+          </td>
+          <td colspan="2" align="center">
+            <i>
+              <b>VirtualBox</b>
+            </i>
+          </td>
+        </tr>
+        <tr>
+          <td align="center">
+            <b>PRO</b>
+          </td>
+          <td align="center">
+            <b>CONTRO</b>
+          </td>
+          <td align="center">
+            <b>PRO</b>
+          </td>
+          <td align="center">
+            <b>CONTRO</b>
+          </td>
+        </tr>
+        <tr>
+          <td align="center">incluso in macOS</td>
+          <td align="center">il passaggio a Windows<br/>richiede il riavvio</td>
+          <td align="center">consente l’esecuzione di<br/>Windows durante l’uso di macOS</td>
+          <td align="center">l’esecuzione della virtual machine grava sulle prestazioni di macOS</td>
+        </tr>
+        <tr>
+          <td align="center">procedura guidata</td>
+          <td align="center">il trasferimento dati può<br/>essere macchinoso</td>
+          <td align="center">maggiore facilità di<br/>scambio dati</td>
+          <td align="center"/>
+        </tr>
+        <tr>
+          <td align="center">risorse a completa<br/>disposizione di Windows</td>
+          <td align="center"/>
+          <td align="center">flessibilità delle impostazioni</td>
+          <td align="center"/>
+        </tr>
+        <tr>
+          <td align="center">aggiornato da Apple</td>
+          <td align="center"/>
+          <td align="center"/>
+          <td align="center"/>
+        </tr>
+      </table>
+      <p>Alla luce di ciò,<b> il principale discriminante nella scelta potrebbe essere la destinazione d’uso di Windows</b>; se dobbiamo usarlo per gestire carichi pesanti, può essere più conveniente usare Boot Camp. Dove invece è più necessaria l’interoperabilità fra i sistemi operativi, o se le applicazioni non sono particolarmente esigenti, VirtualBox può essere la scelta meno invadente.</p>
+    </article>
+  </body>
+</html>

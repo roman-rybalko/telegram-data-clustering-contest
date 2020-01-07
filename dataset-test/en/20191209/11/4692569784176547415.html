@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://www.itworld.com/article/3488816/how-a-nuclear-plant-got-hacked.html"/>
+    <meta property="og:site_name" content="ITworld"/>
+    <meta property="article:published_time" content="2019-12-09T11:00:00+00:00"/>
+    <meta property="og:title" content="How a nuclear plant got hacked"/>
+    <meta property="og:description" content="India's Kudankulam Nuclear Power Plant (KNPP) publicly admitted they discovered malware on their networks. It likely could have been easily avoided."/>
+  </head>
+  <body>
+    <article>
+      <h1>How a nuclear plant got hacked</h1>
+      <address><time datetime="2019-12-09T11:00:00+00:00">09 Dec 2019, 11:00</time> by <a rel="author" href="https://www.itworld.com/author/J.M.-Porup/" target="_blank">J.M. Porup</a></address>
+      <p>If you think attacking civilian infrastructure is a war crime, you'd be right, but spies from countries around the world are fighting a silent, dirty war to pre-position themselves on civilian infrastructure — like energy-producing civilian nuclear plants — to be able to commit sabotage during a moment of geopolitical tension.</p>
+      <p>What follows is an explanation of how India's Kudankulam Nuclear Power Plant (KNPP) got hacked — and how it could have been easily avoided.</p>
+      <h3>The KNPP hack</h3>
+      <p>The news came to light, as it so often does these days, on Twitter. Pukhraj Singh (@RungRage), a "noted cyber intelligence specialist" who was "instrumental in setting up of the cyber-warfare operations centre of the National Technical Research Organisation (NTRO)," <a href="https://www.newindianexpress.com/states/tamil-nadu/2019/oct/29/has-kudankulam-nuclear-plant-come-under-cyber-attack-2054303.html">according to The New Indian Express,</a> <a href="https://twitter.com/RungRage/status/1188853620541775872">tweeted</a>: "So, it's public now. Domain controller-level access Kudankulam Nuclear Power Plant. The government was notified way back. Extremely mission-critical targets were hit," noting in a quote tweet that he was aware of the attack as early as September 7, 2019, calling it a "causus belli" (an attack sufficiently grave to provoke a war).</p>
+      <p>In a later tweet, Singh <a href="https://twitter.com/RungRage/status/1189019122924806145">clarified that he did not discover the malware himself</a>. A third party "contacted me &amp; I notified National Cyber Security Coordinator on Sep 4 (date is crucial). The 3rd party then shared the IoCs with the NCSC's office over the proceeding days. Kaspersky reported it later, called it DTrack."</p>
+      <p>At first the Nuclear Power Plant Corporation of India (NPCI) denied it. In a press release they decried "false information" on social media and insisted the KNPP nuclear power plant is "stand alone and not connected to outside cyber network and internet" and that "any cyber attack on the Nuclear Power Plant Control System is not possible."</p>
+      <p>Then they backtracked. On October 30, the <a href="https://www.scribd.com/document/432687853/NPCIL-statement">NPCI confirmed</a> that <a href="https://www.csoonline.com/article/3295877/what-is-malware-viruses-worms-trojans-and-beyond.html">malware</a> was in fact discovered on their systems, and that CERT-India first noticed the attack on September 4, 2019. In their statement, they claimed the infected PC was connected to the administrative network, which they say is "isolated from the critical internal network."</p>
+      <p>"Investigation also confirms that the plant systems are not affected," their statement concludes.</p>
+      <h3>A targeted attack</h3>
+      <p>Contrary to some initial reporting, the malware appears to have been targeted specifically at the KNPP facility, according to researchers at <a href="https://www.cyberbit.com/blog/endpoint-security/dtrack-apt-malware-found-in-nuclear-power-plant/">CyberBit</a>. Reverse-engineering of the malware sample revealed hard-coded administrator credentials for KNPP's networks (username: /user:KKNPP\\administrator password: su.controller5kk) as well as RFC 1918 IP addresses (172.22.22.156, 10.2.114.1, 172.22.22.5, 10.2.4.1, 10.38.1.35), which are by definition not internet-routable.</p>
+      <p>That means it is highly likely the attacker previously broke into KNPP networks, scanned for NAT'ed devices, stole admin credentials, and then incorporated those details into this new malware, a second-stage payload designed for deeper and more thorough reconnaissance of KNPP's networks.</p>
+      <p>"This was a very targeted attack on just this plant," Hod Gavriel, a malware analyst at CyberBit, tells CSO. "Probably this was the second stage of an attack."</p>
+      <p>The malware discovered, however, did not include <a href="https://www.csoonline.com/article/3218104/what-is-stuxnet-who-created-it-and-how-does-it-work.html">Stuxnet</a>-like functionality to destroy any of KNPP's systems. "This phase was only for collection of information, it wasn't sabotageware," Gavriel says.</p>
+      <h3>Was North Korea responsible?</h3>
+      <p>Numerous security researchers downloaded and analyzed the malware from VirusTotal, and many noted the code similarities with malware previously attributed to North Korea's Lazarus group. A <a href="https://securelist.com/my-name-is-dtrack/93338/">Kaspersky analyst noted similarities</a> dating back to 2013, writing "The vast amount of Dtrack samples that we were able to find shows that the Lazarus group is one of the most active <a href="https://www.csoonline.com/article/2615666/5-signs-youve-been-hit-with-an-apt.html">APT</a> groups in terms of malware development."</p>
+      <p>However, given that North Korea has little geopolitical interest in India, the possibility of a false flag operating using stolen North Korean code to muddle attribution seems quite likely.</p>
+      <h3>Analysis of the malware</h3>
+      <p>The malware hid inside of modified copies of legitimate programs, such as 7Zip or VNC. This technique often successfully escapes notice by antivirus scanners. Adequate checking of program signatures would have mitigated this attack vector; the modified program hash would have differed from the software vendor's signed hash. The fact that this attack was successful strongly suggests that KNPP was not checking software signatures of file hashes.</p>
+      <p>Passively detecting this kind of attack is very difficult, Gavriel notes. "Effective detection of this type of highly targeted malware is likely to generate false-positives that requires skilled analysts." Targeted critical infrastructure security teams need to engage in constant network monitoring for suspicious activity to hunt threats and root them out before they can do any damage.</p>
+      <p>
+        <i>This story, "How a nuclear plant got hacked" was originally published by </i>
+        <a href="http://www.csoonline.com/">
+          <i>CSO</i>
+        </a>
+        <i>.</i>
+      </p>
+    </article>
+  </body>
+</html>

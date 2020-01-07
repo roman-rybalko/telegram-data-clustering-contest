@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://www.cbronline.com/in-depth/bp-cloud-migration-interview"/>
+    <meta property="og:site_name" content="Computer Business Review"/>
+    <meta property="article:published_time" content="2019-12-09T16:27:09+00:00"/>
+    <meta property="og:title" content="“You’ve Got to Have Courage!” BP on Going “All-In” on the Cloud"/>
+    <meta property="og:description" content="The initial business case for a BP cloud migration was tight, admits Stewart Fry, BP's global VP for enterprise IT, with a laugh. But going all-in on AWS..."/>
+  </head>
+  <body>
+    <article>
+      <h1>“You’ve Got to Have Courage!” BP on Going “All-In” on the Cloud</h1>
+      <h2>“We’ve rationalised 30% of our applications…”</h2>
+      <address>
+        <time datetime="2019-12-09T16:27:09+00:00">09 Dec 2019, 16:27</time>
+      </address>
+      <p>An “all in” BP cloud migration will see the energy supermajor shut down its two mammoth Canary Wharf data centres in favour of shifting 900+ mission critical applications to Amazon Web Services (AWS)’s infrastructure.</p>
+      <p>The project is no lift-and-shift of a few customer-facing apps.</p>
+      <p>The software being moved to the cloud from January 2020 will include real-time oil and gas trading applications handling billions of pounds of transactions and running on custom hardware (“thankfully, no mainframes!” says BP’s Stewart Fry – the man in charge – wryly).</p>
+      <p>It will include SAP software handling HR and finance functions for a 17,500-strong global workforce; databases capturing metrics on everything from European spark spreads to upstream oil production in Angola.</p>
+      <p>What drove BP to make this <a href="https://www.businesswire.com/news/home/20191204005777/en/BP-All-In-AWS-European-Mega-Data-Centers">move</a>, after having taken a “dual-cloud” approach using both AWS and Azure in the US? And how did the project team build a business case?</p>
+      <p>Computer Business Review joined Stewart Fry, BP’s global VP for enterprise IT and security at Re:Invent in Las Vegas, for a refreshingly frank conversation about the motivations for and challenges of the shift.</p>
+      <figure>
+        <img src="https://www.cbronline.com/wp-content/uploads/2019/12/BPstewartfry.jpg"/>
+        <figcaption>Stewart Fry, BP’s global VP for enterprise IT&amp;S</figcaption>
+      </figure>
+      <related>
+        <a href="https://www.cbronline.com/news/aws-and-bp"/>
+      </related>
+      <p>Anticipating what it will cost to run nearly 1,000 applications in the cloud instead of on-premises is no mean feat, irrespective of the oil and gas industry’s notoriously robust ability to to crunch the numbers of high CAPEX, long life-cycle projects.</p>
+      <p>Stewart admits that early on some guesswork was involved – and keeping executives informed with rolling updates as the project evolved was crucial: “We did our first data centre exit in 2016, we’re just finishing that (our Houston data centre).</p>
+      <h3>“When did the original economics, it really was based on like-for-like IaaS comparison”</h3>
+      <p>“When did the original economics, it really was based on like-for-like IaaS comparison between what it would cost you to run your on-premise data centre – you do the OpEx, the people, the power – mapping that to what you think that would cost you in the cloud. And of course, it isn’t easy: it was tight! (Laughs).</p>
+      <p>“But we knew if we just picked up the existing on-premise environment and put it on the cloud it would be more expensive and there was a bunch of things that we knew we couldn’t hope to guess. So with leadership internally we developed a rolling plan: ‘this is how we’ll start with…’, and kept checking in to report what we were learning. And out of our US data centre, we’ve rationalised 30 percent of our applications.</p>
+      <p>“We guessed that into our business case and [made it happen] by forcing it through. We’d tried rationalisation programmes before and this was the most effective…”</p>
+      <figure>
+        <img src="https://www.cbronline.com/wp-content/uploads/2019/12/BP1.jpg"/>
+      </figure>
+      <h3>Computer Business Review: Can you give a few examples of applications you got rid of?</h3>
+      <p>“Just small things that hung around, doing internal processing work… they may not of cost anything but just consumed a virtual slice somewhere, and held data that was all locked down for a small transactional bit of one [BP] unit.</p>
+      <p>“When we’ve moved to the cloud, we’ve looked at groupings of those [semi-dormant or highly siloed applications]together and standardised on single applications, or brought datasets together.</p>
+      <p>“What’s really interesting is that 70 percent of our workloads on the cloud now aren’t what we migrated. They’re new things. The enablement of the move has opened people’s minds to the art of the possible. Because how could you have hoped, in 2016, to know Kinesis [Ed: An AWS data streaming service] and all these other new cloud feastures was coming along and what you could do with that?</p>
+      <p>“Ultimately though, if you’ve got a base case that looks pretty good, all the rest is extra value. The rolling plan we’ve had with the executive has really helped us.”</p>
+      <figure>
+        <img src="https://www.cbronline.com/wp-content/uploads/2019/12/BP2-1.jpg"/>
+      </figure>
+      <h3>How much of an opportunity was this for to rethink the applications you are running – and how much of a database shift was there, as a result?</h3>
+      <p>“A massive one. On-premises, we used to buy services from vendors with a lot of application maintenance: we were one of the most outsourced [companies] you could be.</p>
+      <p>“Our partners didn’t do anything wrong: we’d asked them to do it, but databases were sort of managed with the applications. As we move to the cloud, we’ve moved to database as a service and so we’ve sought to standardise our offerings around things like RDS [Amazon Relational Database Service].</p>
+      <p>“What this has allowed us to do is to pull workloads  together, provision the right fit-for-purpose capabilities for the demand workloads. And the other interesting thing is that all of our partners were managing the databases slightly differently.</p>
+      <h3>Which databases have you gone for?</h3>
+      <figure>
+        <img src="https://www.cbronline.com/wp-content/uploads/2019/12/bp3.jpg"/>
+      </figure>
+      <p>“Wherever, wherever we can, we want to go to open source. Clearly, like for many others, we have to use Microsoft, we use Oracle, we use Hana for SAP…</p>
+      <p>But we’ve been able to get our own management of the databases far more in control.”</p>
+      <h3>You say you’re starting your “all-in” move to AWS in Europe in January 2020. What does the current environment look like?</h3>
+      <p>Some of our most complex applications are Europe, and that’s going to be critical to our migration path. Just due to the types of technology that they have been running on; proprietary hardware that is not transferable in its current state to an AWS landing zone…</p>
+      <p>We have two major European data centres in Canary Wharf, and a secondary centre in Watford. That covers Europe and actually pulls in some non-European workloads; we do some work for Angola and services the a whole bunch of the Middle East and Africa.</p>
+      <p>“We’ve got a whole floor of a [co-located] global switch environment: but we owned all of the equipment; all the infrastructure… it’s a heavy, capital-intensive world and when we decided not to be hybrid it was a relief.</p>
+      <p>In the US we’re close to shutting off our first data centre now and the ‘big rock’s are always at the end, as we call them, the most complex big things that we’re trying to innovate on. But AWS love a problem: they’ve got really smart engineers, we’ve got really smart engineers and they’re working together to solve some of the problems that no one else has and you can navigate through that.</p>
+      <p>In the US, we’re one of the top three traders in the world of oil and gas and we’ve successfully moved all of our trading applications out of Houston onto AWS. We’ve moved over 2000 applications already.</p>
+      <figure>
+        <img src="https://www.cbronline.com/wp-content/uploads/2019/12/bp4.jpg"/>
+      </figure>
+      <h3>How much have partners been part of this process?</h3>
+      <p>And I meet a lot of vendors who tell me they’ve got a silver bullet for fixing my migration problems. But we’ve got great partners who work with us. We know we don’t have all the answers. But with the right partners and our own teams will we’ll find a way through the solutions.</p>
+      <h3>It sounds challenging…</h3>
+      <p>“You have to have courage. The energy industry has changed many times over the past 100 years. We fix big, complex problems. We don’t shy away from it. That’s been that’s our culture as an engineering company or as a technology company.</p>
+      <h3>“We’re moving away from what was a traditional application maintenance agreement, which has run its course, to partners joining our squads”</h3>
+      <p>“When we declared our cloud-first strategy in 2016, <a href="https://www.cloudreach.com/en/home/">CloudReach</a> really helped us, supplement our engineering teams and build out our regions, with our technical design patterns; and billing.</p>
+      <p>“(Our businesses tell me all the time they don’t want an allocation of a share of a box. They want to pay for what they consume: they’re happy to pay more if they consume more, but they want to pay less if they consume less. Getting billing right has been crucial for everyone…)</p>
+      <p>“The other two vendors we’ve worked with a lot are <a href="https://www.wipro.com/">Wipro</a> and <a href="https://www.wipro.com/">Veeam</a>; <a href="https://www.accenture.com/gb-en">Accenture</a> have also helped on the SAP environments.</p>
+      <p>“We’ve been building and growing talent internally though a lot.</p>
+      <p>“AWS have really worked with us on training, so we have programmes from the very basic to ‘cloud ninja’. We’ve also had to really retrain our management teams so that they think differently about managing the products they’re responsible for.</p>
+      <p>“We operate everything in BP as a service. We’ve put everything into a service team, and there are squads within that. These squads are nearly always a blend of BP and partners. We’re moving away from what was a traditional application maintenance agreement, which has somewhat run its course, to partners joining our squads.</p>
+      <p>“In that way, we may buy partners in as an FTE, as a sprint, as an outcome we’ve defined. But partners have to be part of our squads.</p>
+      <figure>
+        <img src="https://www.cbronline.com/wp-content/uploads/2019/12/bp5.jpg"/>
+      </figure>
+      <h3>“What does the final model of the BP Cloud Migration look like?</h3>
+      <p>When we first built our cloud environments [in the US], we basically stretched our VPN out around them. We had a big central hub… we set strict rules.</p>
+      <p>“We were learning and didn’t want anarchy to reign, so we said ‘these are the security rules, these are the builds you can have; if you want new features, we’ll put it into our central teams and they’ll release them’. Of course, the team could never keep up with AWS nor our own application teams’ demands of what they wanted.</p>
+      <h3>“We didn’t wanted anarchy to reign…”</h3>
+      <p>What we’re moving to now is a hub and spoke model where the security and the access sit out on the spokes.</p>
+      <p>We have a few core rules that we know matter: security, types of build, billing approach, some break-class capabilities for patching. (Applications [team] needs to decide but if they haven’t done it in a certain time we break the glass and do it).</p>
+      <p>But now the ‘spokes’ are able to innovate at pace, as they are not constrained by a central hub; they can accelerate away. I wouldn’t move away from the journey we’ve been on as we’ve learned it was constraining, and we needed to change it, although some teams still want and get an internal managed service.</p>
+      <figure>
+        <img src="https://www.cbronline.com/wp-content/uploads/2019/12/bp6.jpg"/>
+      </figure>
+      <h3>A lot of the application migration examples given in your original announcement seemed to be downstream ones. Why not the upstream? </h3>
+      <p>A lot of our upstream activity is on Azure.</p>
+      <p>We’ve just found it a natural better fit in terms of the partnerships we’ve formed. Then again, Shell have put their’s [upstream applications] on AWS…</p>
+      <p>“Having a dual-cloud strategy works for us. If you’re doing a lot of engineering upwards, we find AWS great; for a lot of the ready-made platforms we find Azure good for that. And it boils down to how partnerships are forming.</p>
+      <figure>
+        <img src="https://www.cbronline.com/wp-content/uploads/2017/07/hywind-scotland-pilot-floating-wind-park-overview.jpg"/>
+      </figure>
+      <h3>How much of that had to do with your energy supply agreement? (Under which BP will provide over 170 megawatts of green energy annually to AWS)</h3>
+      <p>In Europe we’ve come to a fantastic solution.</p>
+      <p>We had to test ourselves on why we didn’t go with a dual-cloud strategy, but we pulled together something unique.</p>
+      <p>Partnerships are changing: everybody has got to lean in to the fact that the world is changing and test boundaries… the days of just being a buyer and a seller are changing and AWS were open to a different kind of partnership.</p>
+      <p>“We were looking for a partnership that was that was bigger than just an IaaS Migration, which is why we announced the power agreement. Data centres are massive power hungry things, and we’ve got a renewables business… It made sense.”</p>
+      <related>
+        <h4>Related News</h4>
+        <a href="https://www.cbronline.com/news/space-debris"/>
+        <a href="https://www.cbronline.com/qa/five-questions-stephen-brobst-teradata"/>
+        <a href="https://www.cbronline.com/opinion/robots-dreamy-businesses"/>
+      </related>
+    </article>
+  </body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="https://www.cnbeta.com/articles/tech/919371.htm"/>
+    <meta property="og:site_name" content="cnBeta"/>
+    <meta property="article:published_time" content="2019-12-09T08:56:00+00:00"/>
+    <meta property="og:title" content="AWS Ubuntu 18.04 镜像采用滚动内核模型"/>
+    <meta property="og:description" content="Canonical 方面宣布，Ubuntu18.04LTSAMI（AmazonMachineImages）中的默认Linux内核正在转向滚动内核模型。据悉，到目前为止，AWS 的 Ubuntu 镜像一直使用普通的Linux内核，只要有新的安全更新可用，它就会进行更新。"/>
+  </head>
+  <body>
+    <article>
+      <h1>AWS Ubuntu 18.04 镜像采用滚动内核模型</h1>
+      <address><time datetime="2019-12-09T08:56:00+00:00">09 Dec 2019, 08:56</time> by <a rel="author">ugmbbc</a></address>
+      <p>
+        <a href="https://www.cnbeta.com/topics/317.htm">
+          <pic src="https://static.cnbetacdn.com/topics/55009e39a340cfe.png"/>
+        </a>
+      </p>
+      <p>Canonical 方面<a href="https://ubuntu.com/blog/introducing-the-ubuntu-aws-rolling-kernel">宣布</a>，Ubuntu 18.04 LTS AMI（Amazon Machine Images）中的默认 Linux 内核正在转向滚动内核模型。据悉，到目前为止，AWS 的 <a href="https://linux.softpedia.com/downloadTag/Ubuntu">Ubuntu</a> 镜像一直使用普通的 Linux 内核，只要有新的安全更新可用，它就会进行更新。</p>
+      <hr/>
+      <figure>
+        <img src="https://static.cnbetacdn.com/article/2019/1209/0c8d1c94a873a63.png"/>
+      </figure>
+      <p>使用新的滚动模型，Ubuntu AWS 镜像中的内核会在上游可用时立即从上游获取所有最新修复，性能调整和安全补丁。</p>
+      <p>Canonical 表示：“ Ubuntu 滚动内核模型在任务调度，I/O 调度，网络，虚拟机管理程序来宾和容器方面为用户提供了最新的上游错误修复和性能改进，”。“ Canonical 已经在其他云环境中采用这种模型已有一段时间了，发现它是在继续提供 LTS 级别稳定性的同时提供这些好处的绝佳方法。”</p>
+      <p>滚动内核模型将应用于 Ubuntu 18.04 LTS（Bionic Beaver）Amazon Machine Images，它将用户从常规 Linux 4.15 内核升级到 Ubuntu 19.04（Disco Dingo）发行版的 Linux 5.0 内核。可作为 linux-aws-edge 内核进行预览，建议仅在非生产部署中使用。</p>
+      <p>那些想要在 Ubuntu AWS 机器上安装 Linux 5.0 rolling kernel 的用户需要在终端窗口中运行以下命令。成功安装后，必须使用下面列出的第二个命令集重新引导计算机，并且重新启动之后，可以使用下面的第三条命令查看正在运行哪个内核。</p>
+      <pre>ubuntu@ip-xxx-xxx-xxx-xxx$ sudo apt updateubuntu@ip-xxx-xxx-xxx-xxx$ sudo apt install -y linux-aws-edge</pre>
+      <pre>ubuntu@ip-xxx-xxx-xxx-xxx$ sudo reboot</pre>
+      <pre>ubuntu@ip-xxx-xxx-xxx-xxx$ uname -r</pre>
+      <p>此外，如果不想使用滚动内核，而又想切换回常规 Ubuntu 18.04 LTS 内核的话，则要做的就是运行下面列出的命令，然后重新启动。</p>
+      <pre>ubuntu@ip-xxx-xxx-xxx-xxx$ sudo apt updateubuntu@ip-xxx-xxx-xxx-xxx$ sudo apt install linux-aws-lts-18.04</pre>
+      <figure>
+        <img src="https://static.cnbetacdn.com/article/2019/1205/8833aceebc38aea.png"/>
+      </figure>
+      <p>参考消息：</p>
+      <p>
+        <a href="https://ubuntu.com/blog/introducing-the-ubuntu-aws-rolling-kernel">https://ubuntu.com/blog/introducing-the-ubuntu-aws-rolling-kernel</a>
+      </p>
+      <related>
+        <h4>相关文章:</h4>
+        <a href="https://www.cnbeta.com/articles/tech/912659.htm"/>
+        <a href="https://www.cnbeta.com/articles/tech/916377.htm"/>
+        <a href="https://www.cnbeta.com/articles/tech/918241.htm"/>
+      </related>
+    </article>
+  </body>
+</html>
